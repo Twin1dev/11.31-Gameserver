@@ -1,0 +1,79 @@
+#pragma once
+
+// Dumped by Twin1dev || Dumper-8
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x01)
+#endif
+
+namespace SDK
+{
+//---------------------------------------------------------------------------------------------------------------------
+// CLASSES
+//---------------------------------------------------------------------------------------------------------------------
+
+// 0x0 (0x28 - 0x28)
+// Class ProceduralMeshComponent.KismetProceduralMeshLibrary
+class UKismetProceduralMeshLibrary : public UBlueprintFunctionLibrary
+{
+public:
+
+	static class UClass* StaticClass()
+	{
+		static class UClass* Clss = UObject::FindClassFast("KismetProceduralMeshLibrary");
+		return Clss;
+	}
+
+	void SliceProceduralMesh(class UProceduralMeshComponent* InProcMesh, const struct FVector& PlanePosition, const struct FVector& PlaneNormal, bool bCreateOtherHalf, class UProceduralMeshComponent** OutOtherHalfProcMesh, enum class EProcMeshSliceCapOption CapOption, class UMaterialInterface* CapMaterial);
+	void GetSectionFromStaticMesh(class UStaticMesh* InMesh, int32 LODIndex, int32 SectionIndex, TArray<struct FVector>* Vertices, TArray<int32>* Triangles, TArray<struct FVector>* Normals, TArray<struct FVector2D>* UVs, TArray<struct FProcMeshTangent>* Tangents);
+	void GetSectionFromProceduralMesh(class UProceduralMeshComponent* InProcMesh, int32 SectionIndex, TArray<struct FVector>* Vertices, TArray<int32>* Triangles, TArray<struct FVector>* Normals, TArray<struct FVector2D>* UVs, TArray<struct FProcMeshTangent>* Tangents);
+	void GenerateBoxMesh(const struct FVector& BoxRadius, TArray<struct FVector>* Vertices, TArray<int32>* Triangles, TArray<struct FVector>* Normals, TArray<struct FVector2D>* UVs, TArray<struct FProcMeshTangent>* Tangents);
+	void CreateGridMeshWelded(int32 NumX, int32 NumY, TArray<int32>* Triangles, TArray<struct FVector>* Vertices, TArray<struct FVector2D>* UVs, float GridSpacing);
+	void CreateGridMeshTriangles(int32 NumX, int32 NumY, bool bWinding, TArray<int32>* Triangles);
+	void CreateGridMeshSplit(int32 NumX, int32 NumY, TArray<int32>* Triangles, TArray<struct FVector>* Vertices, TArray<struct FVector2D>* UVs, TArray<struct FVector2D>* UV1s, float GridSpacing);
+	void CopyProceduralMeshFromStaticMeshComponent(class UStaticMeshComponent* StaticMeshComponent, int32 LODIndex, class UProceduralMeshComponent* ProcMeshComponent, bool bCreateCollision);
+	void ConvertQuadToTriangles(TArray<int32>& Triangles, int32 Vert0, int32 Vert1, int32 Vert2, int32 Vert3);
+	void CalculateTangentsForMesh(TArray<struct FVector>& Vertices, TArray<int32>& Triangles, TArray<struct FVector2D>& UVs, TArray<struct FVector>* Normals, TArray<struct FProcMeshTangent>* Tangents);
+};
+
+// 0x70 (0x470 - 0x400)
+// Class ProceduralMeshComponent.ProceduralMeshComponent
+class UProceduralMeshComponent : public UMeshComponent
+{
+public:
+	uint8                                        Pad_1D73[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	bool                                         bUseComplexAsSimpleCollision;                      // 0x408(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bUseAsyncCooking;                                  // 0x409(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_1D74[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	class UBodySetup*                            ProcMeshBodySetup;                                 // 0x410(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FProcMeshSection>              ProcMeshSections;                                  // 0x418(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	TArray<struct FKConvexElem>                  CollisionConvexElems;                              // 0x428(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	struct FBoxSphereBounds                      LocalBounds;                                       // 0x438(0x1C)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
+	uint8                                        Pad_1D75[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	TArray<class UBodySetup*>                    AsyncBodySetupQueue;                               // 0x458(0x10)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	uint8                                        Pad_1D76[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+
+	static class UClass* StaticClass()
+	{
+		static class UClass* Clss = UObject::FindClassFast("ProceduralMeshComponent");
+		return Clss;
+	}
+
+	void UpdateMeshSection_LinearColor(int32 SectionIndex, TArray<struct FVector>& Vertices, TArray<struct FVector>& Normals, TArray<struct FVector2D>& UV0, TArray<struct FVector2D>& UV1, TArray<struct FVector2D>& UV2, TArray<struct FVector2D>& UV3, TArray<struct FLinearColor>& VertexColors, TArray<struct FProcMeshTangent>& Tangents);
+	void UpdateMeshSection(int32 SectionIndex, TArray<struct FVector>& Vertices, TArray<struct FVector>& Normals, TArray<struct FVector2D>& UV0, TArray<struct FColor>& VertexColors, TArray<struct FProcMeshTangent>& Tangents);
+	void SetMeshSectionVisible(int32 SectionIndex, bool bNewVisibility);
+	bool IsMeshSectionVisible(int32 SectionIndex);
+	int32 GetNumSections();
+	void CreateMeshSection_LinearColor(int32 SectionIndex, TArray<struct FVector>& Vertices, TArray<int32>& Triangles, TArray<struct FVector>& Normals, TArray<struct FVector2D>& UV0, TArray<struct FVector2D>& UV1, TArray<struct FVector2D>& UV2, TArray<struct FVector2D>& UV3, TArray<struct FLinearColor>& VertexColors, TArray<struct FProcMeshTangent>& Tangents, bool bCreateCollision);
+	void CreateMeshSection(int32 SectionIndex, TArray<struct FVector>& Vertices, TArray<int32>& Triangles, TArray<struct FVector>& Normals, TArray<struct FVector2D>& UV0, TArray<struct FColor>& VertexColors, TArray<struct FProcMeshTangent>& Tangents, bool bCreateCollision);
+	void ClearMeshSection(int32 SectionIndex);
+	void ClearCollisionConvexMeshes();
+	void ClearAllMeshSections();
+	void AddCollisionConvexMesh(const TArray<struct FVector>& ConvexVerts);
+};
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif

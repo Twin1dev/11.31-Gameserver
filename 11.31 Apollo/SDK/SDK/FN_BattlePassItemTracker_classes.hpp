@@ -1,0 +1,46 @@
+#pragma once
+
+// Dumped by Twin1dev || Dumper-8
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x01)
+#endif
+
+namespace SDK
+{
+//---------------------------------------------------------------------------------------------------------------------
+// CLASSES
+//---------------------------------------------------------------------------------------------------------------------
+
+// 0x29 (0x291 - 0x268)
+// WidgetBlueprintGeneratedClass BattlePassItemTracker.BattlePassItemTracker_C
+class UBattlePassItemTracker_C : public UAthenaBattlePassItemTracker
+{
+public:
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x268(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                      InitialState;                                      // 0x270(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                      SetNumberVisible;                                  // 0x278(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                      IntroAnim;                                         // 0x280(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                      Increase;                                          // 0x288(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	bool                                         IsSecondary;                                       // 0x290(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+
+	static class UClass* StaticClass()
+	{
+		static class UClass* Clss = UObject::FindClassFast("BattlePassItemTracker_C");
+		return Clss;
+	}
+
+	void HandleInitialState(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
+	void HandleNumberVisible(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
+	void HandleIncrease(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
+	void HandleIntro(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
+	void OnInterpEnded(class UCommonNumericTextBlock* NumericTextBlock, bool HadCompleted);
+	void OnInterpStarted();
+	void ExecuteUbergraph_BattlePassItemTracker(int32 EntryPoint, class UCommonNumericTextBlock* K2Node_Event_NumericTextBlock, bool K2Node_Event_HadCompleted);
+};
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif
