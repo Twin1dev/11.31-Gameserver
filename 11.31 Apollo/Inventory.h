@@ -1,28 +1,37 @@
 #pragma once
 #include "Includes.h"
 
-static UFortWorldItem* GivePCItem(AFortPlayerController* PC, UFortItemDefinition* ItemDef, int Count = 1, int LoadedAmmo = 0)
+UFortWorldItem* GivePCItem(AFortPlayerController* PC, UFortItemDefinition* ItemDef, int Count = 1, int LoadedAmmo = 0)
 {
 	auto NewItem = (UFortWorldItem*)ItemDef->CreateTemporaryItemInstanceBP(Count, 1);
 
-	auto Inventory = PC->WorldInventory->Inventory;
-
-	auto ItemInstances = Inventory.ItemInstances;
+	auto& ItemInstances = PC->WorldInventory->Inventory.ItemInstances;
 	
 	NewItem->ItemEntry.Count = Count;
-	if (LoadedAmmo > 0)
-		NewItem->ItemEntry.LoadedAmmo = LoadedAmmo;
+	NewItem->ItemEntry.LoadedAmmo = LoadedAmmo;
+
 	NewItem->SetOwningControllerForTemporaryItem(PC);
+	NewItem->OwnerInventory = PC->WorldInventory;
 
 	ItemInstances.Add(NewItem);
-	auto& RepEntry = Inventory.ReplicatedEntries.Add(NewItem->ItemEntry);
-	if (LoadedAmmo > 0)
-		RepEntry.LoadedAmmo = LoadedAmmo;
+	auto& RepEntry = PC->WorldInventory->Inventory.ReplicatedEntries.Add(NewItem->ItemEntry);
+	RepEntry.LoadedAmmo = LoadedAmmo;
 
-	Inventory.MarkItemDirty(NewItem->ItemEntry);
-	Inventory.MarkItemDirty(RepEntry);
+	//PC->WorldInventory->Inventory.MarkItemDirty(NewItem->ItemEntry);
+	//PC->WorldInventory->Inventory.MarkItemDirty(RepEntry);
 
 	return NewItem;
+}
+
+UFortItemDefinition* FindItemDefFromGuid(FGuid Guid, AFortPlayerController* PC)
+{
+	for (int i = 0; i < PC->WorldInventory->Inventory.ReplicatedEntries.Num(); i++)
+	{
+		if (PC->WorldInventory->Inventory.ReplicatedEntries[i].ItemGuid == Guid)
+			return PC->WorldInventory->Inventory.ReplicatedEntries[i].ItemDefinition;
+	}
+
+	return nullptr;
 }
 
 static void Update(AFortPlayerController* PC)

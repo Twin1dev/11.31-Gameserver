@@ -1,8 +1,5 @@
 #pragma once
 #include "Includes.h"
-#define CREATEHOOK(Address, Hook, Og) \
-MH_CreateHook((void*)(Address), Hook, (void**)(Og)); \
-MH_EnableHook((void*)(Address));
 namespace NetHooks
 {
 	__int64 GetNetMode(UWorld* a1)
@@ -21,17 +18,24 @@ namespace NetHooks
 	inline void (*TickFlush)(UNetDriver*);
 	inline void TickFlushHook(UNetDriver* Driver)
 	{
-		if (Driver && Driver->ClientConnections.Num() > 0)
-			ServerReplicateActors(Driver->ReplicationDriver);
+		auto NetDriver = GetWorld()->NetDriver;
+		if (NetDriver->ReplicationDriver)
+			reinterpret_cast<void(*)(UReplicationDriver*)>(NetDriver->ReplicationDriver->Vft[0x59])(NetDriver->ReplicationDriver);
+		
+		if (GetAsyncKeyState(VK_F6) & 1)
+		{
+			auto GameMode = (AFortGameModeAthena*)GetWorld()->AuthorityGameMode;
+			static void (*StartAircraft)(AFortGameModeAthena*, bool) = decltype(StartAircraft)(BaseAddress() + 0x154e080);
+			StartAircraft(GameMode, false);
+			//GetDefaultObject<UKismetSystemLibrary>()->ExecuteConsoleCommand(GetWorld(), L"startaircraft", nullptr);
+		}
 
-			TickFlush(Driver);
+		return TickFlush(NetDriver);
 	}
 
 
 	inline void Init()
 	{
-		CREATEHOOK(BaseAddress() + 0x3b76fe0, GetNetMode, nullptr);
 
-		CREATEHOOK(BaseAddress() + 0x34af6c0, GetNetModeActor, nullptr);
 	}
 }

@@ -10,3 +10,7 @@
 #include "SDK/SDK.hpp"
 using namespace SDK;
 using namespace Params;
+
+#define CREATEHOOK(Address, Hook, Og) \
+MH_CreateHook((void*)(Address), Hook, (void**)(Og)); \
+MH_EnableHook((void*)(Address));

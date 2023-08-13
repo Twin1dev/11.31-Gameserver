@@ -14,9 +14,14 @@ static UWorld* GetWorld()
 
 static __forceinline uintptr_t BaseAddress()
 {
-    return reinterpret_cast<uintptr_t>(GetModuleHandle(0));
+	return reinterpret_cast<uintptr_t>(GetModuleHandle(0));
 }
 
+template <typename T>
+inline T* CheckAndCast(UObject*)
+{
+
+}
 
 template <typename T>
 inline T* GetDefaultObject()

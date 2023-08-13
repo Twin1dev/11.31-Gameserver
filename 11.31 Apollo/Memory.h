@@ -6,6 +6,15 @@ namespace Sigs
 
 }
 
+static void VirtualHook(void** vft, int idx, void* newfunc)
+{
+	DWORD dwProt;
+	VirtualProtect(&vft[idx], 8, PAGE_EXECUTE_READWRITE, &dwProt);
+	vft[idx] = newfunc;
+	DWORD dwTemp;
+	VirtualProtect(&vft[idx], 8, dwProt, &dwTemp);
+}
+
 uintptr_t SigScan(const char* signature, bool bRelative = false, uint32_t offset = 0) {
 	uintptr_t base_address = reinterpret_cast<uintptr_t>(GetModuleHandle(NULL));
 	static auto patternToByte = [](const char* pattern)
