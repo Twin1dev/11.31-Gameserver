@@ -28,7 +28,7 @@ UFortItemDefinition* FindItemDefFromGuid(FGuid Guid, AFortPlayerController* PC)
 	for (int i = 0; i < PC->WorldInventory->Inventory.ReplicatedEntries.Num(); i++)
 	{
 		if (PC->WorldInventory->Inventory.ReplicatedEntries[i].ItemGuid == Guid)
-			return PC->WorldInventory->Inventory.ReplicatedEntries[i].ItemDefinition;
+			return PC->WorldInventory->Inventory.ReplicatedEntries.GetRef(i)->ItemDefinition;
 	}
 
 	return nullptr;

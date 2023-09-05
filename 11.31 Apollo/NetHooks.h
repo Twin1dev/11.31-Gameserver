@@ -18,19 +18,26 @@ namespace NetHooks
 	inline void (*TickFlush)(UNetDriver*);
 	inline void TickFlushHook(UNetDriver* Driver)
 	{
-		auto NetDriver = GetWorld()->NetDriver;
-		if (NetDriver->ReplicationDriver)
-			reinterpret_cast<void(*)(UReplicationDriver*)>(NetDriver->ReplicationDriver->Vft[0x59])(NetDriver->ReplicationDriver);
+		if (Driver->ReplicationDriver && Driver->ClientConnections.Num() > 0 && !Driver->ClientConnections[0]->InternalAck)
+			reinterpret_cast<void(*)(UReplicationDriver*)>(Driver->ReplicationDriver->Vft[0x59])(Driver->ReplicationDriver);
 		
 		if (GetAsyncKeyState(VK_F6) & 1)
 		{
 			auto GameMode = (AFortGameModeAthena*)GetWorld()->AuthorityGameMode;
-			static void (*StartAircraft)(AFortGameModeAthena*, bool) = decltype(StartAircraft)(BaseAddress() + 0x154e080);
-			StartAircraft(GameMode, false);
+			auto GameState = (AFortGameStateAthena*)GetWorld()->GameState;
+		/*	GameState->WarmupCountdownEndTime = GetDefaultObject<UGameplayStatics>()->GetTimeSeconds(GetWorld()) + 11.f;
+			GameMode->WarmupCountdownDuration = 11.f;
+
+			GameState->WarmupCountdownStartTime = GetDefaultObject<UGameplayStatics>()->GetTimeSeconds(GetWorld());
+			GameMode->WarmupEarlyCountdownDuration = 11.f;*/
+
+			// im not even sure
+			static void (*StartAircraftPhaseOriginal)(AFortGameModeAthena*, bool bDoNotSpawnAircraft) = decltype(StartAircraftPhaseOriginal)(BaseAddress() + 0x154e080);
+			StartAircraftPhaseOriginal(GameMode, false);
 			//GetDefaultObject<UKismetSystemLibrary>()->ExecuteConsoleCommand(GetWorld(), L"startaircraft", nullptr);
 		}
 
-		return TickFlush(NetDriver);
+		return TickFlush(Driver);
 	}
 
 

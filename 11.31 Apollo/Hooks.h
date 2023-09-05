@@ -28,38 +28,10 @@ namespace Hooks {
 
 		if (FuncName == "ReadyToStartMatch")
 		{
+		
 
-
-			
-			if (!RTSM)
-			{
-				RTSM = true;
-				auto GameState = (AFortGameStateAthena*)GetWorld()->GameState;
-				auto GameMode = (AFortGameModeAthena*)pObject;
-
-				LOG("ReadyToStartMatch");
-
-				// "scuffed" - milxnor https://img.freepik.com/premium-vector/nerd-face-emoji-clever-emoticon-with-glasses-geek-student_3482-1193.jpg?w=2000
-
-				UFortPlaylistAthena* Playlist = StaticFindObject<UFortPlaylistAthena>("/Game/Athena/Playlists/Playlist_DefaultSolo.Playlist_DefaultSolo");
-
-				GameState->CurrentPlaylistInfo.BasePlaylist = Playlist;
-				GameState->CurrentPlaylistInfo.OverridePlaylist = Playlist;
-				GameState->CurrentPlaylistInfo.PlaylistReplicationKey++;
-
-			
-				GameState->CurrentPlaylistInfo.MarkArrayDirty();
-				GameState->OnRep_CurrentPlaylistInfo();
-				GameState->OnRep_CurrentPlaylistId();
-
-			
-				GameState->GamePhase = EAthenaGamePhase::Warmup;
-				GameState->OnRep_GamePhase(EAthenaGamePhase::Setup);
-			}
-
-			
-
-			TArray<AActor*> Acts;
+		
+	/*		TArray<AActor*> Acts;
 			GetDefaultObject<UGameplayStatics>()->GetAllActorsOfClass(GetWorld(), AFortPlayerStartWarmup::StaticClass(), &Acts);
 
 			int ActNum = Acts.Num();
@@ -69,78 +41,100 @@ namespace Hooks {
 			if (ActNum == 0)
 			{
 				return ProcessEvent(pObject, pFunction, pParams);
-			}
-			else {
-				LOG("Maybeloaded");
-			}
+			}*/
 
-			if (!afterPre)
-				afterPre = true;
-			else 
-				return ProcessEvent(pObject, pFunction, pParams);
-			
-			auto GameState = (AFortGameStateAthena*)GetWorld()->GameState;
-			auto GameMode = (AFortGameModeAthena*)pObject;
-			auto Params = (AGameMode_ReadyToStartMatch_Params*)pParams;
-
-			// frick milxnor
-
-
-
-			static UNetDriver* (*CreateNetDriver)(UEngine*, UWorld*, FName) = decltype(CreateNetDriver)(SigScan("48 89 5C 24 ? 57 48 83 EC 20 49 8B D8 48 8B F9 E8 ? ? ? ? 48 8B D0 4C 8B C3 48 8B CF 48 8B 5C 24 ? 48 83 C4 20 5F E9 ? ? ? ?"));
-
-			auto NewNetDriver = CreateNetDriver(GetEngine(), GetWorld(), GetDefaultObject<UKismetStringLibrary>()->Conv_StringToName(L"GameNetDriver"));
-
-			GameMode->GameSession->MaxPlayers = 100;
-
-			if (NewNetDriver)
+			if (!RTSM)
 			{
-				NewNetDriver->World = GetWorld();
-				NewNetDriver->NetDriverName = GetDefaultObject<UKismetStringLibrary>()->Conv_StringToName(L"GameNetDriver");
-
-				FString Err;
-				auto Url = FURL();
-				Url.Port = 7777;
-
-				static char (*InitListen)(UNetDriver*, void*, FURL&, bool, FString&) = decltype(InitListen)(BaseAddress() + 0x8EFBA0);
-				static void (*SetWorld)(UNetDriver*, UWorld*) = decltype(SetWorld)(BaseAddress() + 0x3882f50);
-
-				InitListen(NewNetDriver, GetWorld(), Url, true, Err);
-				SetWorld(NewNetDriver, GetWorld());
+				RTSM = true;
 
 
-				GetWorld()->NetDriver = NewNetDriver;
 
-				for (int i = 0; i < GetWorld()->LevelCollections.Num(); i++)
+
+				LOG("ReadyToStartMatch");
+
+				auto GameMode = (AFortGameModeAthena*)GetWorld()->AuthorityGameMode;
+				auto GameState = (AFortGameStateAthena*)GetWorld()->GameState;
+				auto Params = (AGameMode_ReadyToStartMatch_Params*)pParams;
+
+				UFortPlaylistAthena* Playlist = StaticFindObject<UFortPlaylistAthena>("/Game/Athena/Playlists/Playlist_DefaultSolo.Playlist_DefaultSolo");
+
+				GameState->CurrentPlaylistInfo.BasePlaylist = Playlist;
+				GameState->CurrentPlaylistInfo.OverridePlaylist = Playlist;
+				GameState->CurrentPlaylistInfo.PlaylistReplicationKey++;
+				GameState->CurrentPlaylistInfo.MarkArrayDirty();
+
+				GameMode->CurrentPlaylistId = GameState->CurrentPlaylistInfo.BasePlaylist->PlaylistId;
+				GameMode->CurrentPlaylistName = GameState->CurrentPlaylistInfo.BasePlaylist->PlaylistName;
+				GameState->OnRep_CurrentPlaylistInfo();
+
+
+
+
+				static UNetDriver* (*CreateNetDriver)(UEngine*, UWorld*, FName) = decltype(CreateNetDriver)(SigScan("48 89 5C 24 ? 57 48 83 EC 20 49 8B D8 48 8B F9 E8 ? ? ? ? 48 8B D0 4C 8B C3 48 8B CF 48 8B 5C 24 ? 48 83 C4 20 5F E9 ? ? ? ?"));
+
+				auto NewNetDriver = CreateNetDriver(GetEngine(), GetWorld(), GetDefaultObject<UKismetStringLibrary>()->Conv_StringToName(L"GameNetDriver"));
+
+				GameMode->GameSession->MaxPlayers = 100;
+
+				if (NewNetDriver)
 				{
-					GetWorld()->LevelCollections[i].NetDriver = NewNetDriver;
+					NewNetDriver->World = GetWorld();
+					NewNetDriver->NetDriverName = GetDefaultObject<UKismetStringLibrary>()->Conv_StringToName(L"GameNetDriver");
+
+					FString Err;
+					auto Url = FURL();
+					Url.Port = 7777;
+
+					static char (*InitListen)(UNetDriver*, void*, FURL&, bool, FString&) = decltype(InitListen)(BaseAddress() + 0x8EFBA0);
+					static void (*SetWorld)(UNetDriver*, UWorld*) = decltype(SetWorld)(BaseAddress() + 0x3882f50);
+
+					InitListen(NewNetDriver, GetWorld(), Url, true, Err);
+					SetWorld(NewNetDriver, GetWorld());
+
+
+					GetWorld()->NetDriver = NewNetDriver;
+
+					for (int i = 0; i < GetWorld()->LevelCollections.Num(); i++)
+					{
+						GetWorld()->LevelCollections[i].NetDriver = NewNetDriver;
+					}
+
+					NetHooks::ServerReplicateActors = decltype(NetHooks::ServerReplicateActors)(NewNetDriver->ReplicationDriver->Vft[0x59]);
+
+					LOG("Listening on Port 7777");
+
 				}
 
-				NetHooks::ServerReplicateActors = decltype(NetHooks::ServerReplicateActors)(NewNetDriver->ReplicationDriver->Vft[0x59]);
 
-				LOG("Listening on Port 7777");
 
+			//	GameMode->WarmupRequiredPlayerCount = 1;
+
+				GameState->WarmupCountdownEndTime = GetDefaultObject<UGameplayStatics>()->GetTimeSeconds(GetWorld()) + 99999.9f;
+				GameMode->WarmupCountdownDuration = 99999.9f;
+
+				GameState->WarmupCountdownStartTime = GetDefaultObject<UGameplayStatics>()->GetTimeSeconds(GetWorld());
+				GameMode->WarmupEarlyCountdownDuration = 99999.9f;
+
+				GameMode->bWorldIsReady = true;
+
+				GameMode->StartMatch();
+				GameMode->StartPlay();
+
+				Params->ReturnValue = true;
+				GameMode->ReadyToStartMatch();
 			}
 
-			GameMode->CurrentPlaylistId = GameState->CurrentPlaylistInfo.BasePlaylist->PlaylistId;
-			GameMode->CurrentPlaylistName = GameState->CurrentPlaylistInfo.BasePlaylist->PlaylistName;
 
 
-			GameState->WarmupCountdownEndTime = GetDefaultObject<UGameplayStatics>()->GetTimeSeconds(GetWorld()) + 99999.9f;
-			GameMode->WarmupCountdownDuration = 99999.9f;
+	
 
-			GameState->WarmupCountdownStartTime = GetDefaultObject<UGameplayStatics>()->GetTimeSeconds(GetWorld());
-			GameMode->WarmupEarlyCountdownDuration = 99999.9f;
+	/*		bool ret = ReadyToStartMatch(GameMode);
 
+			if (!ret)
+				LOG("What the fuck");
 
-			GameMode->bWorldIsReady = true;
-
-
-			GameMode->StartMatch();
-			GameMode->StartPlay();
-
-			Params->ReturnValue = true;
-			GameMode->ReadyToStartMatch();
+			return ret;*/
+	
 		}
 
 		if (FuncName == "ServerExecuteInventoryItem")
@@ -255,6 +249,11 @@ namespace Hooks {
 		}
 		return ProcessEvent(pObject, pFunction, pParams);
 	}
+	//static inline bool (*ReadyToStartMatch)(AFortGameModeAthena*);
+	//bool ReadyToStartMatchHook(AFortGameModeAthena* GameMode)
+	//{
+	//
+	//}
 
 
 	void GameSessionDetour()
@@ -293,6 +292,7 @@ namespace Hooks {
 		auto DefaultGameMode = StaticFindObject<AFortGameModeAthena>("/Script/FortniteGame.Default__FortGameModeAthena");
 
 		CREATEHOOK(BaseAddress() + Offsets::ProcessEvent, ProcessEventHook, &ProcessEvent);
+	//	VirtualHook(DefaultGameMode->Vft, 254, ReadyToStartMatchHook);
 		CREATEHOOK(BaseAddress() + 0x19b1660, GameSessionDetour, nullptr);
 		VirtualHook(DefaultAbilityComp->Vft, 0xF7, InternalServerTryActivateAbilityHook);
 		CREATEHOOK(SigScan("40 55 53 41 54 41 57 48 8D 6C 24 ? 48 81 EC ? ? ? ? 45 33 E4 48 8B DA 44 89 65 50"), ValidationDetour, &ValidationFailure);

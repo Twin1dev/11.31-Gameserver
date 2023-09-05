@@ -1,12 +1,7 @@
 #include "Includes.h"
 #include "Hooks.h"
-// GO INTO INCLUDES.h TO DEFINE YOUR SDK!
 
-/*
-Usage:
-    When you make a new file include Includes.h
-    Uncomment out the sdk definition in Includes.h also
-*/
+
 DWORD WINAPI Main(LPVOID)
 {
     AllocConsole();
@@ -17,13 +12,7 @@ DWORD WINAPI Main(LPVOID)
 
     MH_Initialize();
 
-    /*
-    UObject::GObjects = decltype(UObject::GObjects)();
-    FNameToString = decltype(FNameToString)();
-    FMemory_Free = decltype(FMemory_Free)();
-    FMemory_Realloc = decltype(FMemory_Realloc)();
-    FMemory_Malloc = decltype(FMemory_Malloc)();
-    */    
+    Sleep(5000);
 
     InitGObjects();
 
