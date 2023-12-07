@@ -6,8 +6,11 @@ namespace Sigs
 
 }
 
-static void VirtualHook(void** vft, int idx, void* newfunc)
+static void VirtualHook(void** vft, int idx, void* newfunc, void** OG = nullptr)
 {
+	if (OG)
+		*OG = vft[idx];
+
 	DWORD dwProt;
 	VirtualProtect(&vft[idx], 8, PAGE_EXECUTE_READWRITE, &dwProt);
 	vft[idx] = newfunc;

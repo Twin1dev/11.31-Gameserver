@@ -294,7 +294,7 @@ public:
 	int32                                        C;                                                 // 0x8(0x4)(Edit, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        D;                                                 // 0xC(0x4)(Edit, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-	bool operator==(const FGuid& Guid)
+	bool operator==(FGuid& Guid)
 	{
 		return A == Guid.A && B == Guid.B && C == Guid.C && D == Guid.D;
 	}
@@ -308,6 +308,22 @@ public:
 	float                                        X;                                                 // 0x0(0x4)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Y;                                                 // 0x4(0x4)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Z;                                                 // 0x8(0x4)(Edit, BlueprintVisible, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+	FVector operator*(const float A)
+	{
+		return FVector{ this->X * A, this->Y * A, this->Z * A };
+	}
+
+	FVector operator+(const FVector& A)
+	{
+		return FVector{ this->X + A.X, this->Y + A.Y, this->Z + A.Z };
+	}
+
+	FVector operator-(const FVector& A)
+	{
+		return FVector{ this->X - A.X, this->Y - A.Y, this->Z - A.Z };
+	}
+
 };
 
 // 0x10 (0x10 - 0x0)

@@ -82,6 +82,15 @@
     <ClInclude Include="NetHooks.h">
       <Filter>FN\Gameplay</Filter>
     </ClInclude>
+    <ClInclude Include="Gamemode.h">
+      <Filter>FN\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Looting.h">
+      <Filter>FN\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="UE.h">
+      <Filter>SDK\SDK</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="F:\Fortnite Builds\11.31\FortniteGame\Binaries\Win64\offsets.log">

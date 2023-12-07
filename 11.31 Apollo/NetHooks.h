@@ -1,48 +1,41 @@
 #pragma once
 #include "Includes.h"
-namespace NetHooks
+
+// https://docs.unrealengine.com/4.26/en-US/API/Runtime/Engine/Engine/ENetMode/
+enum ENetMode
 {
-	__int64 GetNetMode(UWorld* a1)
-	{
-		return 1;
-	}
+	NM_Standalone,
+	NM_DedicatedServer,
+	NM_ListenServer,
+	NM_Client,
+	NM_MAX,
+};
 
-	__int64 GetNetModeActor(AActor* a1)
-	{
-		return 1;
-	}
+// We return DedicatedServer because in the docs it says its used for: Dedicated server: server with no local players.
+constexpr ENetMode NetMode = ENetMode::NM_DedicatedServer;
 
-	inline void (*ServerReplicateActors)(UReplicationDriver*);
+static ENetMode GetNetModeWorld()
+{
+	return NetMode;
+}
 
+static ENetMode GetNetModeActor()
+{
+	return NetMode;
+}
 
-	inline void (*TickFlush)(UNetDriver*);
-	inline void TickFlushHook(UNetDriver* Driver)
-	{
-		if (Driver->ReplicationDriver && Driver->ClientConnections.Num() > 0 && !Driver->ClientConnections[0]->InternalAck)
-			reinterpret_cast<void(*)(UReplicationDriver*)>(Driver->ReplicationDriver->Vft[0x59])(Driver->ReplicationDriver);
-		
-		if (GetAsyncKeyState(VK_F6) & 1)
-		{
-			auto GameMode = (AFortGameModeAthena*)GetWorld()->AuthorityGameMode;
-			auto GameState = (AFortGameStateAthena*)GetWorld()->GameState;
-		/*	GameState->WarmupCountdownEndTime = GetDefaultObject<UGameplayStatics>()->GetTimeSeconds(GetWorld()) + 11.f;
-			GameMode->WarmupCountdownDuration = 11.f;
+static char (*InitListen)(UNetDriver*, void*, FURL&, bool, FString&) = decltype(InitListen)(BaseAddress() + 0x8EFBA0);
+static void (*SetWorld)(UNetDriver*, UWorld*) = decltype(SetWorld)(BaseAddress() + 0x3882f50);
 
-			GameState->WarmupCountdownStartTime = GetDefaultObject<UGameplayStatics>()->GetTimeSeconds(GetWorld());
-			GameMode->WarmupEarlyCountdownDuration = 11.f;*/
+static UNetDriver* (*CreateNetDriver)(UEngine*, UWorld*, FName) = decltype(CreateNetDriver)(SigScan("48 89 5C 24 ? 57 48 83 EC 20 49 8B D8 48 8B F9 E8 ? ? ? ? 48 8B D0 4C 8B C3 48 8B CF 48 8B 5C 24 ? 48 83 C4 20 5F E9 ? ? ? ?"));
 
-			// im not even sure
-			static void (*StartAircraftPhaseOriginal)(AFortGameModeAthena*, bool bDoNotSpawnAircraft) = decltype(StartAircraftPhaseOriginal)(BaseAddress() + 0x154e080);
-			StartAircraftPhaseOriginal(GameMode, false);
-			//GetDefaultObject<UKismetSystemLibrary>()->ExecuteConsoleCommand(GetWorld(), L"startaircraft", nullptr);
-		}
+inline void (*ServerReplicateActors)(UReplicationDriver*);
 
-		return TickFlush(Driver);
-	}
+void (*TickFlush)(UNetDriver*);
+void TickFlushHook(UNetDriver* Driver)
+{
+	if (Driver->ReplicationDriver)
+		reinterpret_cast<void(*)(UReplicationDriver*)>(Driver->ReplicationDriver->Vft[0x59])(Driver->ReplicationDriver);
 
-
-	inline void Init()
-	{
-
-	}
+	return TickFlush(Driver);
 }

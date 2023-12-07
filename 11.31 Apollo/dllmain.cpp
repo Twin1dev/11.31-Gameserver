@@ -1,4 +1,13 @@
 #include "Includes.h"
+
+#include "Globals.h"
+#include "Memory.h"
+#include "Abilities.h"
+#include "Inventory.h"
+#include "Util.h"
+#include "NetHooks.h"
+
+#include "Gamemode.h"
 #include "Hooks.h"
 
 
@@ -16,7 +25,45 @@ DWORD WINAPI Main(LPVOID)
 
     InitGObjects();
 
-    Hooks::Init();
+    CREATEHOOK(BaseAddress() + 0x3b76fe0, GetNetModeWorld, nullptr);
+
+    CREATEHOOK(SigScan("40 55 53 41 54 41 57 48 8D 6C 24 ? 48 81 EC ? ? ? ? 45 33 E4 48 8B DA 44 89 65 50"), ValidationDetour, &ValidationFailure);
+    CREATEHOOK(BaseAddress() + 0x372fb80, KickPlayerHook, &KickPlayer);
+
+    CREATEHOOK(BaseAddress() + 0x34af6c0, GetNetModeActor, nullptr);
+
+    GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
+
+    GetDefaultObject<UKismetSystemLibrary>()->ExecuteConsoleCommand(GetWorld(), L"open Apollo_Terrain", nullptr);
+
+    // ChangeGameSessionID
+    auto func = BaseAddress() + 0x19b1660;
+
+    DWORD dwProtection;
+    VirtualProtect((PVOID)func, 1, PAGE_EXECUTE_READWRITE, &dwProtection);
+
+    *(uint8_t*)func = 0xC3;
+
+    DWORD dwTemp;
+    VirtualProtect((PVOID)func, 1, dwProtection, &dwTemp);
+
+    //
+
+
+    auto DefaultAbilityComp = UObject::FindObjectSlow<UFortAbilitySystemComponentAthena>("Default__FortAbilitySystemComponentAthena");
+    auto DefaultFortPlayerController = StaticFindObject<AFortPlayerController>("/Script/FortniteGame.Default__FortPlayerController");
+    auto DefaultGameMode = StaticFindObject<AFortGameModeAthena>("/Script/FortniteGame.Default__FortGameModeAthena");
+
+    CREATEHOOK(BaseAddress() + Offsets::ProcessEvent, ProcessEventHook, &ProcessEvent);
+    VirtualHook(DefaultGameMode->Vft, 254, ReadyToStartMatchHook, (PVOID*)&ReadyToStartMatch);
+    VirtualHook(DefaultGameMode->Vft, 197, SpawnDefaultPawnForHook);
+    VirtualHook(DefaultGameMode->Vft, 203, HandleStartingNewPlayerHook, (PVOID*)&HandleStartingNewPlayer);
+
+    VirtualHook(DefaultAbilityComp->Vft, 0xF7, InternalServerTryActivateAbilityHook);
+
+    CREATEHOOK(BaseAddress() + 0xe2bf70, DispatchRequestHook, &DispatchRequest);
+
+    CREATEHOOK(BaseAddress() + 0x3883cd0, TickFlushHook, &TickFlush);
 
     return 0;
 }

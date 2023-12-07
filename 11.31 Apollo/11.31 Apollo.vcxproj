@@ -149,14 +149,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Abilities.h" />
+    <ClInclude Include="Gamemode.h" />
     <ClInclude Include="Globals.h" />
     <ClInclude Include="Hooks.h" />
     <ClInclude Include="Includes.h" />
     <ClInclude Include="Inventory.h" />
+    <ClInclude Include="Looting.h" />
     <ClInclude Include="Memory.h" />
     <ClInclude Include="NetHooks.h" />
     <ClInclude Include="SDK\PropertyFixup.hpp" />
     <ClInclude Include="SDK\SDK.hpp" />
+    <ClInclude Include="UE.h" />
     <ClInclude Include="Util.h" />
   </ItemGroup>
   <ItemGroup>
