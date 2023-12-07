@@ -25,16 +25,16 @@ namespace NetHooks
 		{
 			auto GameMode = (AFortGameModeAthena*)GetWorld()->AuthorityGameMode;
 			auto GameState = (AFortGameStateAthena*)GetWorld()->GameState;
-		/*	GameState->WarmupCountdownEndTime = GetDefaultObject<UGameplayStatics>()->GetTimeSeconds(GetWorld()) + 11.f;
+			GameState->WarmupCountdownEndTime = GetDefaultObject<UGameplayStatics>()->GetTimeSeconds(GetWorld()) + 11.f;
 			GameMode->WarmupCountdownDuration = 11.f;
 
 			GameState->WarmupCountdownStartTime = GetDefaultObject<UGameplayStatics>()->GetTimeSeconds(GetWorld());
-			GameMode->WarmupEarlyCountdownDuration = 11.f;*/
+			GameMode->WarmupEarlyCountdownDuration = 11.f;
 
 			// im not even sure
 			static void (*StartAircraftPhaseOriginal)(AFortGameModeAthena*, bool bDoNotSpawnAircraft) = decltype(StartAircraftPhaseOriginal)(BaseAddress() + 0x154e080);
 			StartAircraftPhaseOriginal(GameMode, false);
-			//GetDefaultObject<UKismetSystemLibrary>()->ExecuteConsoleCommand(GetWorld(), L"startaircraft", nullptr);
+			GetDefaultObject<UKismetSystemLibrary>()->ExecuteConsoleCommand(GetWorld(), L"startaircraft", nullptr);
 		}
 
 		return TickFlush(Driver);

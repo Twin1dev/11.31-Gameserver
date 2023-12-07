@@ -31,7 +31,7 @@ namespace Hooks {
 		
 
 		
-	/*		TArray<AActor*> Acts;
+			TArray<AActor*> Acts;
 			GetDefaultObject<UGameplayStatics>()->GetAllActorsOfClass(GetWorld(), AFortPlayerStartWarmup::StaticClass(), &Acts);
 
 			int ActNum = Acts.Num();
@@ -41,7 +41,7 @@ namespace Hooks {
 			if (ActNum == 0)
 			{
 				return ProcessEvent(pObject, pFunction, pParams);
-			}*/
+			}
 
 			if (!RTSM)
 			{
@@ -249,11 +249,11 @@ namespace Hooks {
 		}
 		return ProcessEvent(pObject, pFunction, pParams);
 	}
-	//static inline bool (*ReadyToStartMatch)(AFortGameModeAthena*);
-	//bool ReadyToStartMatchHook(AFortGameModeAthena* GameMode)
-	//{
-	//
-	//}
+	static inline bool (*ReadyToStartMatch)(AFortGameModeAthena*);
+	bool ReadyToStartMatchHook(AFortGameModeAthena* GameMode)
+	{
+	
+	}
 
 
 	void GameSessionDetour()
