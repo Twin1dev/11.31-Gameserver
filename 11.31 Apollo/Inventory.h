@@ -6,7 +6,7 @@ UFortWorldItem* GivePCItem(AFortPlayerController* PC, UFortItemDefinition* ItemD
 	auto NewItem = (UFortWorldItem*)ItemDef->CreateTemporaryItemInstanceBP(Count, 1);
 
 	auto& ItemInstances = PC->WorldInventory->Inventory.ItemInstances;
-	
+
 	NewItem->ItemEntry.Count = Count;
 	NewItem->ItemEntry.LoadedAmmo = LoadedAmmo;
 
@@ -27,7 +27,7 @@ UFortItemDefinition* FindItemDefFromGuid(FGuid Guid, AFortPlayerController* PC)
 {
 	for (int i = 0; i < PC->WorldInventory->Inventory.ReplicatedEntries.Num(); i++)
 	{
-			return PC->WorldInventory->Inventory.ReplicatedEntries.GetRef(i)->ItemDefinition;
+			return PC->WorldInventory->Inventory.ReplicatedEntries[i].ItemDefinition;
 	}
 
 	return nullptr;
