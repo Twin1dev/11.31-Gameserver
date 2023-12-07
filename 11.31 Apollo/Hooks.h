@@ -39,29 +39,26 @@ void ProcessEventHook(UObject* pObject, UFunction* pFunction, void* pParams)
 		Pawn->OnRep_CosmeticLoadout();
 	}
 
-	//if (FuncName == "OnBuildingActorInitialized")
-	//{
-	//	auto Params = (ABuildingActor_OnBuildingActorInitialized_Params*)pParams;
-	//	auto BuildingActor = (ABuildingActor*)pObject;
+	if (FuncName == "OnBuildingActorInitialized")
+	{
+		auto Params = (ABuildingActor_OnBuildingActorInitialized_Params*)pParams;
+		auto BuildingActor = (ABuildingActor*)pObject;
 
-	//	
+		
 
-	//	if (BuildingActor->GetFullName().contains("FloorLoot"))
-	//	{
-	//		auto BuildingContainer = (ABuildingContainer*)BuildingActor;
+		if (BuildingActor->GetFullName().contains("FloorLoot"))
+		{
+			auto BuildingContainer = (ABuildingContainer*)BuildingActor;
 
-	//		std::vector<FFortItemEntry> LootDrops = PickLootDrops(BuildingContainer->SearchLootTierGroup);
+			auto Location = BuildingContainer->K2_GetActorLocation();
+		Location.Z += 50;
 
-	//		auto Location = BuildingContainer->K2_GetActorLocation();
-	//		Location.Z += 50;
+		
+		{
 
-	//		if (LootDrops.size())
-	//		{
-	//			for (auto& LootDrop : LootDrops)
-	//				SpawnPickup(LootDrop.ItemDefinition, Location, LootDrop.Count, 0, EFortPickupSourceTypeFlag::FloorLoot);
-	//		}
-	//	}
-	//}
+			}
+		}
+	}
 
 
 	if (FuncName == "ServerLoadingScreenDropped")
@@ -109,4 +106,3 @@ char __fastcall ValidationDetour(__int64* a1, __int64 a2)
 
 static bool nomcphook() { return true; }
 bool cghook() { return true; }
-
