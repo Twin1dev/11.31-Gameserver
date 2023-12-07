@@ -142,9 +142,11 @@ namespace Hooks {
 			auto Params = (AFortPlayerController_ServerExecuteInventoryItem_Params*)pParams;
 			auto PC = (AFortPlayerControllerAthena*)pObject;
 			auto Pawn = (AFortPlayerPawnAthena*)PC->Pawn;
-
+			if (!Pawn)
+				return ProcessEvent(pObject, pFunction, pParams); // credits jyzo is my bb
 			auto ItemDef = FindItemDefFromGuid(Params->ItemGuid, PC);
-
+			if (!ItemDef)
+				return ProcessEvent(pObject, pFunction, pParams); // credits jyzo is my bb
 			Pawn->EquipWeaponDefinition((UFortWeaponItemDefinition*)ItemDef, Params->ItemGuid);
 		}
 	
