@@ -4,7 +4,7 @@ static bool bRTSM = false;
 bool (*ReadyToStartMatch)(AFortGameModeAthena* GameMode);
 bool ReadyToStartMatchHook(AFortGameModeAthena* GameMode)
 {
-	
+
 	TArray<AActor*> WarmupActors;
 	GetDefaultObject<UGameplayStatics>()->GetAllActorsOfClass(GetWorld(), AFortPlayerStartWarmup::StaticClass(), &WarmupActors);
 
@@ -70,13 +70,7 @@ bool ReadyToStartMatchHook(AFortGameModeAthena* GameMode)
 			ABuildingContainer* Container = (ABuildingContainer*)SpawnIslandActors[i];
 
 			auto Location = Container->K2_GetActorLocation() + Container->GetActorForwardVector() * Container->LootSpawnLocation_Athena.X + Container->GetActorRightVector() * Container->LootSpawnLocation_Athena.Y + Container->GetActorUpVector() * Container->LootSpawnLocation_Athena.Z;
-			
-			auto LootDrops = PickLootDrops(SpawnIslandTierGroup);
 
-			for (auto& LootDrop : LootDrops)
-			{
-				SpawnPickup(LootDrop.ItemDefinition, Location, LootDrop.Count, 0, EFortPickupSourceTypeFlag::FloorLoot);
-			}
 		}
 
 		for (int i = 0; i < BRIslandActors.Num(); i++)
@@ -85,12 +79,6 @@ bool ReadyToStartMatchHook(AFortGameModeAthena* GameMode)
 
 			auto Location = Container->K2_GetActorLocation() + Container->GetActorForwardVector() * Container->LootSpawnLocation_Athena.X + Container->GetActorRightVector() * Container->LootSpawnLocation_Athena.Y + Container->GetActorUpVector() * Container->LootSpawnLocation_Athena.Z;
 
-			auto LootDrops = PickLootDrops(BRIslandTierGroup);
-
-			for (auto& LootDrop : LootDrops)
-			{
-				SpawnPickup(LootDrop.ItemDefinition, Location, LootDrop.Count, 0, EFortPickupSourceTypeFlag::FloorLoot);
-			}
 		}
 
 		GetGameMode()->WarmupRequiredPlayerCount = 1;
