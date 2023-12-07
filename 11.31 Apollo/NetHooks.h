@@ -22,8 +22,9 @@ namespace NetHooks
 			reinterpret_cast<void(*)(UReplicationDriver*)>(Driver->ReplicationDriver->Vft[0x59])(Driver->ReplicationDriver);
 		
 		static bool bStarted = false;
-		if (!bStarted && GetAsyncKeyState(VK_F6) & 0x1)
+		if (!bStarted && GetAsyncKeyState(VK_F6) & 0x1) // Skunky wayback gs
 		{
+			bStarted = true;
 			auto GameMode = (AFortGameModeAthena*)GetWorld()->AuthorityGameMode;
 			auto GameState = (AFortGameStateAthena*)GetWorld()->GameState;
 				GameState->WarmupCountdownEndTime = GetDefaultObject<UGameplayStatics>()->GetTimeSeconds(GetWorld()) + 11.f;
