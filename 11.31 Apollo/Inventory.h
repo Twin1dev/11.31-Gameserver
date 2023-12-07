@@ -27,7 +27,6 @@ UFortItemDefinition* FindItemDefFromGuid(FGuid Guid, AFortPlayerController* PC)
 {
 	for (int i = 0; i < PC->WorldInventory->Inventory.ReplicatedEntries.Num(); i++)
 	{
-		if (PC->WorldInventory->Inventory.ReplicatedEntries[i].ItemGuid == Guid)
 			return PC->WorldInventory->Inventory.ReplicatedEntries.GetRef(i)->ItemDefinition;
 	}
 
@@ -38,4 +37,18 @@ static void Update(AFortPlayerController* PC)
 {
 	PC->WorldInventory->HandleInventoryLocalUpdate();
 	PC->WorldInventory->Inventory.MarkArrayDirty();
+}
+
+FFortItemEntry* FindItemEntry(AFortPlayerController* PC, FGuid& OtherGuid)
+{
+	if (!PC || !PC->WorldInventory)
+		return nullptr;
+	for (int i = 0; i < PC->WorldInventory->Inventory.ReplicatedEntries.Num(); ++i)
+	{
+		if (PC->WorldInventory->Inventory.ReplicatedEntries[i].ItemGuid == OtherGuid)
+		{
+			return &PC->WorldInventory->Inventory.ReplicatedEntries[i];
+		}
+	}
+	return nullptr;
 }
