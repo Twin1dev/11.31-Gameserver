@@ -62,25 +62,6 @@ bool ReadyToStartMatchHook(AFortGameModeAthena* GameMode)
 		GetDefaultObject<UGameplayStatics>()->GetAllActorsOfClass(GetWorld(), SpawnIsland_FloorLoot, &SpawnIslandActors);
 		GetDefaultObject<UGameplayStatics>()->GetAllActorsOfClass(GetWorld(), BRIsland_FloorLoot, &BRIslandActors);
 
-		auto SpawnIslandTierGroup = GetDefaultObject<UKismetStringLibrary>()->Conv_StringToName(L"Loot_AthenaFloorLoot_Warmup");
-		auto BRIslandTierGroup = GetDefaultObject<UKismetStringLibrary>()->Conv_StringToName(L"Loot_AthenaFloorLoot");
-
-		for (int i = 0; i < SpawnIslandActors.Num(); i++)
-		{
-			ABuildingContainer* Container = (ABuildingContainer*)SpawnIslandActors[i];
-
-			auto Location = Container->K2_GetActorLocation() + Container->GetActorForwardVector() * Container->LootSpawnLocation_Athena.X + Container->GetActorRightVector() * Container->LootSpawnLocation_Athena.Y + Container->GetActorUpVector() * Container->LootSpawnLocation_Athena.Z;
-
-		}
-
-		for (int i = 0; i < BRIslandActors.Num(); i++)
-		{
-			ABuildingContainer* Container = (ABuildingContainer*)BRIslandActors[i];
-
-			auto Location = Container->K2_GetActorLocation() + Container->GetActorForwardVector() * Container->LootSpawnLocation_Athena.X + Container->GetActorRightVector() * Container->LootSpawnLocation_Athena.Y + Container->GetActorUpVector() * Container->LootSpawnLocation_Athena.Z;
-
-		}
-
 		GetGameMode()->WarmupRequiredPlayerCount = 1;
 	}
 
