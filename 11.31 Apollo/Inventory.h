@@ -99,3 +99,20 @@ static void Update(AFortPlayerController* PC)
 	PC->WorldInventory->HandleInventoryLocalUpdate();
 	PC->WorldInventory->Inventory.MarkArrayDirty();
 }
+//code to remove item
+void RemoveItem(AFortPlayerController* Player, UFortItemDefinition* ItemDef, int Count = -1)
+{
+	for (int j = 0; j < Player->WorldInventory->Inventory.ReplicatedEntries.Num(); j++)
+	{
+		if (Player->WorldInventory->Inventory.ReplicatedEntries[j].ItemDefinition == ItemDef)
+		{
+			if (Count == -1 || Count >= Player->WorldInventory->Inventory.ReplicatedEntries[j].Count)
+			{
+				Player->WorldInventory->Inventory.ReplicatedEntries.Remove(j);
+				break;
+			}
+
+			Player->WorldInventory->Inventory.ReplicatedEntries[j].Count -= Count;
+			return;
+		}
+	}
