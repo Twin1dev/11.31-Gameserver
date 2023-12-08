@@ -17,3 +17,4 @@
  - editing no work
  - no looting
  - src is lagggy asf
+discord https://discord.gg/VeptRzDkDu
