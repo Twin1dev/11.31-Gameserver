@@ -111,8 +111,80 @@ void RemoveItem(AFortPlayerController* Player, UFortItemDefinition* ItemDef, int
 				Player->WorldInventory->Inventory.ReplicatedEntries.Remove(j);
 				break;
 			}
-
-			Player->WorldInventory->Inventory.ReplicatedEntries[j].Count -= Count;
 			return;
 		}
 	}
+
+	for (int i = 0; i < Player->WorldInventory->Inventory.ItemInstances.Num(); i++)
+	{
+		if (Player->WorldInventory->Inventory.ItemInstances[i]->ItemEntry.ItemDefinition == ItemDef)
+		{
+			Player->WorldInventory->Inventory.ItemInstances.Remove(i);
+
+			break;
+		}
+	}
+	Update(Player);
+}
+
+void RemoveItem(AFortPlayerController* Player, FGuid& ItemGuid, int Count = -1)
+{
+	for (int j = 0; j < Player->WorldInventory->Inventory.ReplicatedEntries.Num(); j++)
+	{
+		if (Player->WorldInventory->Inventory.ReplicatedEntries[j].ItemGuid == ItemGuid)
+		{
+			if (Count == -1 || Count >= Player->WorldInventory->Inventory.ReplicatedEntries[j].Count)
+			{
+				Player->WorldInventory->Inventory.ReplicatedEntries.Remove(j);
+				break;
+			}
+			return;
+		}
+	}
+
+	for (int i = 0; i < Player->WorldInventory->Inventory.ItemInstances.Num(); i++)
+	{
+		if (Player->WorldInventory->Inventory.ItemInstances[i]->ItemEntry.ItemGuid == ItemGuid)
+		{
+			Player->WorldInventory->Inventory.ItemInstances.Remove(i);
+
+			break;
+		}
+	}
+	Update(Player);
+}
+
+	UFortWorldItem* CreateItem(AFortPlayerController * Player, UFortItemDefinition * ItemDef, int Count = 1)
+	{
+		auto WorldItem = (UFortWorldItem*)ItemDef->CreateTemporaryItemInstanceBP(Count, 0);
+		WorldItem->SetOwningControllerForTemporaryItem(Player);
+		return WorldItem;
+	}
+
+	FFortItemEntry* AddItem(AFortPlayerController* Player, UFortItemDefinition* ItemDef, int Count = 1, int LoadedAmmo = -1, bool bForceCreate = false)
+	{
+		if (!ItemDef || !Player || !Player->WorldInventory)
+			return nullptr;
+
+		if (!bForceCreate)
+		{
+			if (auto FoundEntry = Inventory::FindItemEntry(Player, ItemDef))
+			{
+				if (ItemDef->MaxStackSize <= 1)
+				{
+					return AddItem(Player, ItemDef, Count, LoadedAmmo, true);
+				}
+
+				int NewCount = FoundEntry->Count + Count;
+				if (NewCount > ItemDef->MaxStackSize)
+				{
+					// stinky bozo L
+					FoundEntry->Count = ItemDef->MaxStackSize;				}
+				else
+				{
+					FoundEntry->Count = NewCount;
+				}
+
+				return FoundEntry;
+			}
+		}
