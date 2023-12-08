@@ -1,24 +1,25 @@
 #pragma once
 
-static inline void (*ServerCreateBuildingActor)(UObject* Context, FFrame* Stack, void* Ret);
-void ServerCreateBuildingActorHook(UObject* Context, FFrame* Stack, void* Ret)
+static inline void (*ServerCreateBuildingActor)(UObject* Context, FFrame* Stack);
+void ServerCreateBuildingActorHook(UObject* Context, FFrame* Stack)
 {
 	auto PC = (AFortPlayerControllerAthena*)Context;
 
 	if (!PC)
-		return ServerCreateBuildingActor(Context, Stack, Ret);
+		return ServerCreateBuildingActor(Context, Stack);
 
 	auto CreateBuildingData = (FCreateBuildingActorData*)Stack->Locals;
 
-	if (!PC->BroadcastRemoteClientInfo->RemoteBuildableClass.Get())
-		return ServerCreateBuildingActor(Context, Stack, Ret);
+	AFortBroadcastRemoteClientInfo* BroadcastRemoteClientInfo = *(AFortBroadcastRemoteClientInfo**)(__int64(PC) + 0x2ED0);
+	if (!BroadcastRemoteClientInfo->RemoteBuildableClass.Get())
+		return ServerCreateBuildingActor(Context, Stack);
 
 	static __int64 (*CantBuild)(UObject*, UObject*, FVector, FRotator, char, TArray<ABuildingSMActor*>*, char*) = decltype(CantBuild)(BaseAddress() + 0x19ee0e0);
 
 	TArray<ABuildingSMActor*> ExistingBuildings;
 	char Gangster;
 
-	bool bCanBuild = !CantBuild(GetWorld(), PC->BroadcastRemoteClientInfo->RemoteBuildableClass.Get(), CreateBuildingData->BuildLoc, CreateBuildingData->BuildRot, CreateBuildingData->bMirrored, &ExistingBuildings, &Gangster);
+	bool bCanBuild = !CantBuild(GetWorld(), BroadcastRemoteClientInfo->RemoteBuildableClass.Get(), CreateBuildingData->BuildLoc, CreateBuildingData->BuildRot, CreateBuildingData->bMirrored, &ExistingBuildings, &Gangster);
 
 	if (bCanBuild)
 	{
@@ -29,11 +30,10 @@ void ServerCreateBuildingActorHook(UObject* Context, FFrame* Stack, void* Ret)
 			ExistingBuilding->K2_DestroyActor();
 		}
 
-		auto NewBuilding = SpawnActor<ABuildingSMActor>(CreateBuildingData->BuildLoc, CreateBuildingData->BuildRot, PC->BroadcastRemoteClientInfo->RemoteBuildableClass.Get());
+		auto NewBuilding = SpawnActor<ABuildingSMActor>(CreateBuildingData->BuildLoc, CreateBuildingData->BuildRot, BroadcastRemoteClientInfo->RemoteBuildableClass.Get());
 
 		if (NewBuilding)
 		{
-			ExistingBuildings.Free();
 
 			NewBuilding->bPlayerPlaced = true;
 			NewBuilding->SetTeam(((AFortPlayerStateAthena*)PC->PlayerState)->TeamIndex);
@@ -44,15 +44,16 @@ void ServerCreateBuildingActorHook(UObject* Context, FFrame* Stack, void* Ret)
 
 	}
 	else {
-		ExistingBuildings.Free();
-		return ServerCreateBuildingActor(Context, Stack, Ret);
+		return ServerCreateBuildingActor(Context, Stack);
 	}
+	ExistingBuildings.Free();
 
 
-	return ServerCreateBuildingActor(Context, Stack, Ret);
+	return ServerCreateBuildingActor(Context, Stack);
 }
 
-// holy frickin proper!
+// add my code becouse twin dev one is ass
+
 static void ServerBeginEditingBuildingActorHook(AFortPlayerController* PlayerController, ABuildingSMActor* BuildingActorToEdit)
 {
 	// for some reason this happens where i cant edit the building anymore
@@ -100,13 +101,34 @@ static void ServerBeginEditingBuildingActorHook(AFortPlayerController* PlayerCon
 
 	if (!EditTool)
 	{
-		LOG("No EditTool");
+		LOG("");
 		return;
 	}
 
 	EditTool->EditActor = BuildingActorToEdit;
 	EditTool->OnRep_EditActor();
+	if (Pawn && BuildingActorToEdit)
+	{
+		static auto EditToolDef = StaticFindObject<UFortItemDefinition>("/Game/Items/Weapons/BuildingTools/EditTool.EditTool");
+		if (Pawn->CurrentWeapon->WeaponData != EditToolDef)
+		{
+			auto EditTool = (AFortWeap_EditingTool*)Pawn->CurrentWeapon;			EditTool->EditActor = BuildingActorToEdit;
+			EditTool->EditActor = BuildingActorToEdit;
+			EditTool->OnRep_EditActor();
+			BuildingActorToEdit->EditingPlayer = (AFortPlayerStateAthena*)PlayerState;
+			BuildingActorToEdit->OnRep_EditingPlayer();
+		}
+
+		auto EditTool = (AFortWeap_EditingTool*)Pawn->CurrentWeapon;
+		EditTool->EditActor = BuildingActorToEdit;
+		EditTool->OnRep_EditActor();
+		BuildingActorToEdit->EditingPlayer = (AFortPlayerStateAthena*)PlayerState;
+		BuildingActorToEdit->OnRep_EditingPlayer();
+	}
 }
+
+
+
 
 static inline void (*ServerEditBuildingActor)(UObject*, FFrame&, void*);
 static void ServerEditBuildingActorHook(UObject* Context, FFrame& Stack, void* Ret)
@@ -166,7 +188,7 @@ static void ServerEndEditingBuildingActor(AFortPlayerController* PlayerControlle
 	auto EditTool = Cast<AFortWeap_EditingTool>(Pawn->CurrentWeapon);
 
 	BuildingActorToStopEditing->EditingPlayer = nullptr;
-	//BuildingActorToStopEditing->OnRep_EditingPlayer();
+	BuildingActorToStopEditing->OnRep_EditingPlayer();
 
 	if (EditTool)
 	{
@@ -175,4 +197,16 @@ static void ServerEndEditingBuildingActor(AFortPlayerController* PlayerControlle
 	}
 
 
+}
+
+//equiping code prob worst code recode later
+void ServerExecuteInventoryItem(AFortPlayerController* PC, FGuid& ItemGuid)
+{
+	if (auto Pawn = (AFortPlayerPawn*)PC->Pawn)
+	{
+		if (auto ItemEntry = Inventory::FindItemEntry(PC, ItemGuid))
+		{
+			Pawn->EquipWeaponDefinition((UFortWeaponItemDefinition*)ItemEntry->ItemDefinition, ItemEntry->ItemGuid);
+		}
+	}
 }

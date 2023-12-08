@@ -60,3 +60,20 @@ void InternalServerTryActivateAbilityHook(UAbilitySystemComponent* ASC, FGamepla
 	}
 
 }
+static __int64 (*Fgameplauyabilirtyspecctor)(void*, void*, char, int, void*) = decltype(Fgameplauyabilirtyspecctor)(BaseAddress() + 0xB9AF40);
+
+FGameplayAbilitySpec* GrantAbility(AFortPlayerStateAthena* PlayerState, UClass* AbilityClass, UObject* SourceObj = nullptr, bool ActivateOnce = false)
+{
+	if (!PlayerState || !AbilityClass)
+		return nullptr;
+	if (!PlayerState->AbilitySystemComponent)
+		return nullptr;
+
+	FGameplayAbilitySpec TEST{};
+	Fgameplauyabilirtyspecctor(&TEST, AbilityClass->DefaultObject, 1, -1, SourceObj);
+	TEST.RemoveAfterActivation = ActivateOnce;
+
+	GiveAbility(PlayerState->AbilitySystemComponent, &TEST.Handle, TEST);
+
+	return &TEST;
+}

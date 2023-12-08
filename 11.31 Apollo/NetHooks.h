@@ -32,7 +32,7 @@ static UNetDriver* (*CreateNetDriver)(UEngine*, UWorld*, FName) = decltype(Creat
 inline void (*ServerReplicateActors)(UReplicationDriver*);
 
 void (*TickFlush)(UNetDriver*);
-void TickFlushHook(UNetDriver* Driver)
+void TickFlushHook(UNetDriver* Driver) //worst code
 {
 	if (Driver->ReplicationDriver)
 		reinterpret_cast<void(*)(UReplicationDriver*)>(Driver->ReplicationDriver->Vft[0x59])(Driver->ReplicationDriver);

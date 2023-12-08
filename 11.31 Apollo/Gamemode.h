@@ -144,3 +144,4 @@ APawn* SpawnDefaultPawnForHook(AGameModeBase* GameMode, AController* NewPlayer, 
 
 	return NewPawn;
 }
+

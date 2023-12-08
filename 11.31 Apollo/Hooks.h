@@ -1,6 +1,5 @@
 #pragma once
 
-
 // temp
 
 static bool RTSM = false;
@@ -11,7 +10,7 @@ void ProcessEventHook(UObject* pObject, UFunction* pFunction, void* pParams)
 	auto FuncName = pFunction->GetName();
 	auto FullName = pFunction->GetFullName();
 
-	
+
 	if (FuncName == "ServerExecuteInventoryItem")
 	{
 		auto Params = (AFortPlayerController_ServerExecuteInventoryItem_Params*)pParams;
@@ -21,11 +20,13 @@ void ProcessEventHook(UObject* pObject, UFunction* pFunction, void* pParams)
 		if (!Pawn)
 			return ProcessEvent(pObject, pFunction, pParams);
 
-		auto ItemDef = FindItemDefFromGuid(Params->ItemGuid, PC);
+		auto ItemDef = FindItemDefFromGuid(PC,Params->ItemGuid);
+		if(!ItemDef)
+			return ProcessEvent(pObject, pFunction, pParams);
 
 		Pawn->EquipWeaponDefinition((UFortWeaponItemDefinition*)ItemDef, Params->ItemGuid);
 	}
-	
+
 	if (FuncName == "ServerAcknowledgePossession")
 	{
 		auto Params = (APlayerController_ServerAcknowledgePossession_Params*)pParams;
@@ -37,6 +38,13 @@ void ProcessEventHook(UObject* pObject, UFunction* pFunction, void* pParams)
 
 		Pawn->CosmeticLoadout = PC->CosmeticLoadoutPC;
 		Pawn->OnRep_CosmeticLoadout();
+	}
+
+	if (FuncName == "ServerAttemptAircraftJump") //jump bus YAY!!! credits jyzo i love u thx all
+	{
+		auto PC = Cast<AController>(((UActorComponent*)pObject)->GetOwner()); //jump bus YAY!!! credits jyzo i love u thx all
+		if (PC)
+			GetGameMode()->RestartPlayer(PC); //jump bus YAY!!! credits jyzo i love u thx all
 	}
 
 	//if (FuncName == "OnBuildingActorInitialized")
@@ -69,7 +77,7 @@ void ProcessEventHook(UObject* pObject, UFunction* pFunction, void* pParams)
 		auto PC = (AFortPlayerControllerAthena*)pObject;
 		auto PlayerState = (AFortPlayerStateAthena*)PC->PlayerState;
 		auto Pawn = (AFortPlayerPawnAthena*)PC->Pawn;
-			
+
 		GetDefaultObject<UFortKismetLibrary>()->UpdatePlayerCustomCharacterPartsVisualization(PlayerState);
 
 		PlayerState->ForceNetUpdate();
@@ -77,6 +85,7 @@ void ProcessEventHook(UObject* pObject, UFunction* pFunction, void* pParams)
 		PC->ForceNetUpdate();
 
 		GivePCItem(PC, StaticFindObject<UAthenaPickaxeItemDefinition>("/Game/Athena/Items/Cosmetics/Pickaxes/DefaultPickaxe.DefaultPickaxe")->WeaponDefinition, 1);
+
 		Update(PC);
 	}
 	return ProcessEvent(pObject, pFunction, pParams);
@@ -109,4 +118,3 @@ char __fastcall ValidationDetour(__int64* a1, __int64 a2)
 
 static bool nomcphook() { return true; }
 bool cghook() { return true; }
-

@@ -10,7 +10,13 @@
 #include "Player.h"
 #include "Gamemode.h"
 #include "Hooks.h"
+#include "Farming.h"
 
+void (*CollectGarbageOG)(); //credits jyzo i love u
+void CollectGarbage() //credits jyzo i love u
+{
+    return;
+}
 
 DWORD WINAPI Main(LPVOID)
 {
@@ -18,7 +24,7 @@ DWORD WINAPI Main(LPVOID)
     FILE* fptr;
     freopen_s(&fptr, "CONOUT$", "w+", stdout);
 
-    SetConsoleTitleA("Apollo 11.31");
+    SetConsoleTitleA("pasted asff 11.31");
 
     MH_Initialize();
 
@@ -69,14 +75,14 @@ DWORD WINAPI Main(LPVOID)
     HookExec(ServerEditBuildingActorFn, ServerEditBuildingActorHook, (PVOID*)&ServerEditBuildingActor);
 
     VirtualHook(DefaultFortPlayerController->Vft, 565, ServerEndEditingBuildingActor);
-
     VirtualHook(DefaultAbilityComp->Vft, 0xF7, InternalServerTryActivateAbilityHook);
 
     CREATEHOOK(BaseAddress() + 0xe2bf70, DispatchRequestHook, &DispatchRequest);
 
     CREATEHOOK(BaseAddress() + 0x3883cd0, TickFlushHook, &TickFlush);
 
-
+    CREATEHOOK(BaseAddress() + 0x27C47A0, CollectGarbage, &CollectGarbageOG); //credits jyzo i love u
+	CREATEHOOK(BaseAddress() + 0x2176a20, h_OnDamageServer, &o_OnDamageServer);
 
     return 0;
 }
