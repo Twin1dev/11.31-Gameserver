@@ -210,3 +210,14 @@ void ServerExecuteInventoryItem(AFortPlayerController* PC, FGuid& ItemGuid)
 		}
 	}
 }
+//ServerAttemptInventoryDrop
+void ServerAttemptInventoryDropHook(AFortPlayerController* PC, FGuid& ItemGuid, int32 Count)
+{
+	if (auto Pawn = PC->Pawn)
+	{
+		if (auto ItemEntry = Inventory::FindItemEntry(PC, ItemGuid))
+		{
+			if (Count > ItemEntry->Count)
+				return;
+		}
+	}
