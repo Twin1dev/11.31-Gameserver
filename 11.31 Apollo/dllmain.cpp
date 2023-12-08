@@ -7,6 +7,7 @@
 #include "Util.h"
 #include "NetHooks.h"
 
+#include "Player.h"
 #include "Gamemode.h"
 #include "Hooks.h"
 
@@ -59,11 +60,23 @@ DWORD WINAPI Main(LPVOID)
     VirtualHook(DefaultGameMode->Vft, 197, SpawnDefaultPawnForHook);
     VirtualHook(DefaultGameMode->Vft, 203, HandleStartingNewPlayerHook, (PVOID*)&HandleStartingNewPlayer);
 
+    static auto ServerCreateBuildingActorFn = StaticFindObject<UFunction>("/Script/FortniteGame.FortPlayerController.ServerCreateBuildingActor");
+    HookExec(ServerCreateBuildingActorFn, ServerCreateBuildingActorHook, (PVOID*)&ServerCreateBuildingActor);
+
+    VirtualHook(DefaultFortPlayerController->Vft, 567, ServerBeginEditingBuildingActorHook);
+
+    static auto ServerEditBuildingActorFn = StaticFindObject<UFunction>("/Script/FortniteGame.FortPlayerController.ServerEditBuildingActor");
+    HookExec(ServerEditBuildingActorFn, ServerEditBuildingActorHook, (PVOID*)&ServerEditBuildingActor);
+
+    VirtualHook(DefaultFortPlayerController->Vft, 565, ServerEndEditingBuildingActor);
+
     VirtualHook(DefaultAbilityComp->Vft, 0xF7, InternalServerTryActivateAbilityHook);
 
     CREATEHOOK(BaseAddress() + 0xe2bf70, DispatchRequestHook, &DispatchRequest);
 
     CREATEHOOK(BaseAddress() + 0x3883cd0, TickFlushHook, &TickFlush);
+
+
 
     return 0;
 }

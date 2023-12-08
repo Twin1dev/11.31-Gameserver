@@ -85,11 +85,8 @@
     <ClInclude Include="Gamemode.h">
       <Filter>FN\Gameplay</Filter>
     </ClInclude>
-    <ClInclude Include="Looting.h">
+    <ClInclude Include="Player.h">
       <Filter>FN\Gameplay</Filter>
-    </ClInclude>
-    <ClInclude Include="UE.h">
-      <Filter>SDK\SDK</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -270,6 +270,7 @@ public:
 		return Clss;
 	}
 
+	void*& GetFunc() { return *(void**)(__int64(this) + 0xc0); }
 };
 
 // 0x0 (0xC8 - 0xC8)

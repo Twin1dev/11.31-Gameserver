@@ -1,6 +1,19 @@
 #pragma once
 #include "Includes.h"
 
+
+UFortWorldItem* FindItemInstanceByDef(AFortPlayerController* PC, UFortItemDefinition* Def)
+{
+	for (int i = 0; i < PC->WorldInventory->Inventory.ItemInstances.Num(); i++)
+	{
+		if (PC->WorldInventory->Inventory.ItemInstances[i]->ItemEntry.ItemDefinition == Def)
+			return PC->WorldInventory->Inventory.ItemInstances[i];
+	}
+
+	return nullptr;
+}
+
+
 UFortWorldItem* GivePCItem(AFortPlayerController* PC, UFortItemDefinition* ItemDef, int Count = 1, int LoadedAmmo = 0)
 {
 	auto NewItem = (UFortWorldItem*)ItemDef->CreateTemporaryItemInstanceBP(Count, 1);

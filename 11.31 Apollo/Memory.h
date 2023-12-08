@@ -6,6 +6,16 @@ namespace Sigs
 
 }
 
+static void HookExec(UFunction* Function, void* Hook, void** OG = nullptr)
+{
+	auto& Exec = Function->GetFunc();
+
+	if (OG)
+		*OG = Exec;
+
+	Exec = Hook;
+}
+
 static void VirtualHook(void** vft, int idx, void* newfunc, void** OG = nullptr)
 {
 	if (OG)

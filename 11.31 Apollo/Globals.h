@@ -7,7 +7,14 @@ static void LOG(std::string message)
 }
 
 
-
+struct FFrame
+{
+    char pad[0x10];
+    class UFunction* Node;
+    UObject* Object;
+    uint8* Code;
+    uint8* Locals;
+};
 inline UObject* (*StaticFindObject_)(UClass* Class, UObject* Package, const wchar_t* OrigInName, bool ExactClass) = decltype(StaticFindObject_)(__int64(GetModuleHandleW(0)) + Offsets::FindObject);
 inline UObject* (*StaticLoadObject_)(UClass* Class, UObject* InOuter, const TCHAR* Name, const TCHAR* Filename, uint32_t LoadFlags, UObject* Sandbox, bool bAllowObjectReconciliation) = decltype(StaticLoadObject_)(__int64(GetModuleHandleW(0)) + Offsets::LoadObject);
 template <typename T>
