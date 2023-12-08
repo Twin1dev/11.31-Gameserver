@@ -1,6 +1,45 @@
 #pragma once
 #include "Includes.h"
 
+namespace Inventory
+{
+	FFortItemEntry* FindItemEntry(AFortPlayerController* PC, FGuid& OtherGuid)
+	{
+		if (!PC || !PC->WorldInventory)
+			return nullptr;
+		for (int i = 0; i < PC->WorldInventory->Inventory.ReplicatedEntries.Num(); ++i)
+		{
+			if (PC->WorldInventory->Inventory.ReplicatedEntries[i].ItemGuid == OtherGuid)
+			{
+				return &PC->WorldInventory->Inventory.ReplicatedEntries[i];
+			}
+		}
+		return nullptr;
+	}
+
+	FFortItemEntry* FindItemEntry(AFortPlayerController* PC, UFortItemDefinition* ItemDef)
+	{
+		if (!PC || !PC->WorldInventory || !ItemDef)
+			return nullptr;
+		for (int i = 0; i < PC->WorldInventory->Inventory.ReplicatedEntries.Num(); ++i)
+		{
+			if (PC->WorldInventory->Inventory.ReplicatedEntries[i].ItemDefinition == ItemDef)
+			{
+				return &PC->WorldInventory->Inventory.ReplicatedEntries[i];
+			}
+		}
+		return nullptr;
+	}
+
+	UFortWorldItem* CreateItem(AFortPlayerController* Player, UFortItemDefinition* ItemDef, int Count = 1)
+	{
+		auto WorldItem = (UFortWorldItem*)ItemDef->CreateTemporaryItemInstanceBP(Count, 0);
+		WorldItem->SetOwningControllerForTemporaryItem(Player);
+		return WorldItem;
+	}
+}
+
+
 UFortWorldItem* FindItemInstanceByDef(AFortPlayerController* PC, UFortItemDefinition* Def)
 {
 	for (int i = 0; i < PC->WorldInventory->Inventory.ItemInstances.Num(); i++)
