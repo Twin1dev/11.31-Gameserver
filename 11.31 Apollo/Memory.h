@@ -31,23 +31,23 @@ static void VirtualHook(void** vft, int idx, void* newfunc, void** OG = nullptr)
 uintptr_t SigScan(const char* signature, bool bRelative = false, uint32_t offset = 0) {
 	uintptr_t base_address = reinterpret_cast<uintptr_t>(GetModuleHandle(NULL));
 	static auto patternToByte = [](const char* pattern)
-	{
-		auto bytes = std::vector<int>{};
-		const auto start = const_cast<char*>(pattern);
-		const auto end = const_cast<char*>(pattern) + strlen(pattern);
-
-		for (auto current = start; current < end; ++current)
 		{
-			if (*current == '?')
+			auto bytes = std::vector<int>{};
+			const auto start = const_cast<char*>(pattern);
+			const auto end = const_cast<char*>(pattern) + strlen(pattern);
+
+			for (auto current = start; current < end; ++current)
 			{
-				++current;
-				if (*current == '?') ++current;
-				bytes.push_back(-1);
+				if (*current == '?')
+				{
+					++current;
+					if (*current == '?') ++current;
+					bytes.push_back(-1);
+				}
+				else { bytes.push_back(strtoul(current, &current, 16)); }
 			}
-			else { bytes.push_back(strtoul(current, &current, 16)); }
-		}
-		return bytes;
-	};
+			return bytes;
+		};
 
 	const auto dosHeader = (PIMAGE_DOS_HEADER)base_address;
 	const auto ntHeaders = (PIMAGE_NT_HEADERS)((std::uint8_t*)base_address + dosHeader->e_lfanew);

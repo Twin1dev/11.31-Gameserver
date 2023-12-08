@@ -20,8 +20,8 @@ void ProcessEventHook(UObject* pObject, UFunction* pFunction, void* pParams)
 		if (!Pawn)
 			return ProcessEvent(pObject, pFunction, pParams);
 
-		auto ItemDef = FindItemDefFromGuid(PC,Params->ItemGuid);
-		if(!ItemDef)
+		auto ItemDef = FindItemDefFromGuid(PC, Params->ItemGuid);
+		if (!ItemDef)
 			return ProcessEvent(pObject, pFunction, pParams);
 
 		Pawn->EquipWeaponDefinition((UFortWeaponItemDefinition*)ItemDef, Params->ItemGuid);

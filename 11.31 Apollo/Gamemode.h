@@ -4,7 +4,7 @@ static bool bRTSM = false;
 bool (*ReadyToStartMatch)(AFortGameModeAthena* GameMode);
 bool ReadyToStartMatchHook(AFortGameModeAthena* GameMode)
 {
-	
+
 	TArray<AActor*> WarmupActors;
 	GetDefaultObject<UGameplayStatics>()->GetAllActorsOfClass(GetWorld(), AFortPlayerStartWarmup::StaticClass(), &WarmupActors);
 
@@ -144,4 +144,3 @@ APawn* SpawnDefaultPawnForHook(AGameModeBase* GameMode, AController* NewPlayer, 
 
 	return NewPawn;
 }
-

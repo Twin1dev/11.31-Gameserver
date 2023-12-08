@@ -31,7 +31,7 @@ void h_OnDamageServer(ABuildingActor* Actor, float Damage, FGameplayTagContainer
 
 							PC->ClientReportDamagedResourceBuilding(BuildingActor, BuildingActor->ResourceType, ToGive, false, WeakSpot);
 
-							if(auto Found = FindItemEntry(PC, Definition))
+							if (auto Found = FindItemEntry(PC, Definition))
 							{
 								Found->Count += ToGive;
 								PC->WorldInventory->Inventory.MarkItemDirty(*Found);

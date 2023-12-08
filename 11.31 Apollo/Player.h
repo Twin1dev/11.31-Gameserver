@@ -198,26 +198,3 @@ static void ServerEndEditingBuildingActor(AFortPlayerController* PlayerControlle
 
 
 }
-
-//equiping code prob worst code recode later
-void ServerExecuteInventoryItem(AFortPlayerController* PC, FGuid& ItemGuid)
-{
-	if (auto Pawn = (AFortPlayerPawn*)PC->Pawn)
-	{
-		if (auto ItemEntry = Inventory::FindItemEntry(PC, ItemGuid))
-		{
-			Pawn->EquipWeaponDefinition((UFortWeaponItemDefinition*)ItemEntry->ItemDefinition, ItemEntry->ItemGuid);
-		}
-	}
-}
-//ServerAttemptInventoryDrop
-void ServerAttemptInventoryDropHook(AFortPlayerController* PC, FGuid& ItemGuid, int32 Count)
-{
-	if (auto Pawn = PC->Pawn)
-	{
-		if (auto ItemEntry = Inventory::FindItemEntry(PC, ItemGuid))
-		{
-			if (Count > ItemEntry->Count)
-				return;
-		}
-	}

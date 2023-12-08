@@ -75,6 +75,7 @@ DWORD WINAPI Main(LPVOID)
     HookExec(ServerEditBuildingActorFn, ServerEditBuildingActorHook, (PVOID*)&ServerEditBuildingActor);
 
     VirtualHook(DefaultFortPlayerController->Vft, 565, ServerEndEditingBuildingActor);
+
     VirtualHook(DefaultAbilityComp->Vft, 0xF7, InternalServerTryActivateAbilityHook);
 
     CREATEHOOK(BaseAddress() + 0xe2bf70, DispatchRequestHook, &DispatchRequest);
@@ -82,14 +83,14 @@ DWORD WINAPI Main(LPVOID)
     CREATEHOOK(BaseAddress() + 0x3883cd0, TickFlushHook, &TickFlush);
 
     CREATEHOOK(BaseAddress() + 0x27C47A0, CollectGarbage, &CollectGarbageOG); //credits jyzo i love u
-	CREATEHOOK(BaseAddress() + 0x2176a20, h_OnDamageServer, &o_OnDamageServer);
+    CREATEHOOK(BaseAddress() + 0x2176a20, h_OnDamageServer, &o_OnDamageServer);
 
     return 0;
 }
-BOOL APIENTRY DllMain( HMODULE hModule,
-                       DWORD  ul_reason_for_call,
-                       LPVOID lpReserved
-                     )
+BOOL APIENTRY DllMain(HMODULE hModule,
+    DWORD  ul_reason_for_call,
+    LPVOID lpReserved
+)
 {
     switch (ul_reason_for_call)
     {
@@ -98,4 +99,3 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     }
     return TRUE;
 }
-
