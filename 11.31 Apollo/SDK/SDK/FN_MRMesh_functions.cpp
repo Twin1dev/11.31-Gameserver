@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,24 +12,54 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class MRMesh.MeshReconstructorBase
+// (None)
+
+class UClass* UMeshReconstructorBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MeshReconstructorBase");
+
+	return Clss;
+}
+
+
+// MeshReconstructorBase MRMesh.Default__MeshReconstructorBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMeshReconstructorBase* UMeshReconstructorBase::GetDefaultObj()
+{
+	static class UMeshReconstructorBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMeshReconstructorBase*>(UMeshReconstructorBase::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MRMesh.MeshReconstructorBase.StopReconstruction
 // (Native, Public, BlueprintCallable)
 // Parameters:
 
 void UMeshReconstructorBase::StopReconstruction()
 {
-	static auto Func = Class->GetFunction("MeshReconstructorBase", "StopReconstruction");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshReconstructorBase_StopReconstruction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshReconstructorBase", "StopReconstruction");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -43,18 +70,20 @@ void UMeshReconstructorBase::StopReconstruction()
 
 void UMeshReconstructorBase::StartReconstruction()
 {
-	static auto Func = Class->GetFunction("MeshReconstructorBase", "StartReconstruction");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshReconstructorBase_StartReconstruction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshReconstructorBase", "StartReconstruction");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -65,18 +94,20 @@ void UMeshReconstructorBase::StartReconstruction()
 
 void UMeshReconstructorBase::PauseReconstruction()
 {
-	static auto Func = Class->GetFunction("MeshReconstructorBase", "PauseReconstruction");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshReconstructorBase_PauseReconstruction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshReconstructorBase", "PauseReconstruction");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -88,18 +119,21 @@ void UMeshReconstructorBase::PauseReconstruction()
 
 bool UMeshReconstructorBase::IsReconstructionStarted()
 {
-	static auto Func = Class->GetFunction("MeshReconstructorBase", "IsReconstructionStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshReconstructorBase_IsReconstructionStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshReconstructorBase", "IsReconstructionStarted");
+
+	Params::UMeshReconstructorBase_IsReconstructionStarted_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -113,18 +147,21 @@ bool UMeshReconstructorBase::IsReconstructionStarted()
 
 bool UMeshReconstructorBase::IsReconstructionPaused()
 {
-	static auto Func = Class->GetFunction("MeshReconstructorBase", "IsReconstructionPaused");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshReconstructorBase_IsReconstructionPaused_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshReconstructorBase", "IsReconstructionPaused");
+
+	Params::UMeshReconstructorBase_IsReconstructionPaused_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -137,18 +174,20 @@ bool UMeshReconstructorBase::IsReconstructionPaused()
 
 void UMeshReconstructorBase::DisconnectMRMesh()
 {
-	static auto Func = Class->GetFunction("MeshReconstructorBase", "DisconnectMRMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshReconstructorBase_DisconnectMRMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshReconstructorBase", "DisconnectMRMesh");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -160,20 +199,51 @@ void UMeshReconstructorBase::DisconnectMRMesh()
 
 void UMeshReconstructorBase::ConnectMRMesh(class UMRMeshComponent* Mesh)
 {
-	static auto Func = Class->GetFunction("MeshReconstructorBase", "ConnectMRMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshReconstructorBase_ConnectMRMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshReconstructorBase", "ConnectMRMesh");
+
+	Params::UMeshReconstructorBase_ConnectMRMesh_Params Parms{};
 
 	Parms.Mesh = Mesh;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class MRMesh.MockDataMeshTrackerComponent
+// (SceneComponent)
+
+class UClass* UMockDataMeshTrackerComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MockDataMeshTrackerComponent");
+
+	return Clss;
+}
+
+
+// MockDataMeshTrackerComponent MRMesh.Default__MockDataMeshTrackerComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMockDataMeshTrackerComponent* UMockDataMeshTrackerComponent::GetDefaultObj()
+{
+	static class UMockDataMeshTrackerComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMockDataMeshTrackerComponent*>(UMockDataMeshTrackerComponent::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -188,9 +258,12 @@ void UMeshReconstructorBase::ConnectMRMesh(class UMRMeshComponent* Mesh)
 
 void UMockDataMeshTrackerComponent::OnMockDataMeshTrackerUpdated__DelegateSignature(int32 Index, TArray<struct FVector>& Vertices, TArray<int32>& Triangles, TArray<struct FVector>& Normals, TArray<float>& Confidence)
 {
-	static auto Func = Class->GetFunction("MockDataMeshTrackerComponent", "OnMockDataMeshTrackerUpdated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMockDataMeshTrackerComponent_OnMockDataMeshTrackerUpdated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MockDataMeshTrackerComponent", "OnMockDataMeshTrackerUpdated__DelegateSignature");
+
+	Params::UMockDataMeshTrackerComponent_OnMockDataMeshTrackerUpdated__DelegateSignature_Params Parms{};
 
 	Parms.Index = Index;
 	Parms.Vertices = Vertices;
@@ -210,19 +283,22 @@ void UMockDataMeshTrackerComponent::OnMockDataMeshTrackerUpdated__DelegateSignat
 
 void UMockDataMeshTrackerComponent::DisconnectMRMesh(class UMRMeshComponent* InMRMeshPtr)
 {
-	static auto Func = Class->GetFunction("MockDataMeshTrackerComponent", "DisconnectMRMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::UMockDataMeshTrackerComponent_DisconnectMRMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MockDataMeshTrackerComponent", "DisconnectMRMesh");
+
+	Params::UMockDataMeshTrackerComponent_DisconnectMRMesh_Params Parms{};
 
 	Parms.InMRMeshPtr = InMRMeshPtr;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -234,20 +310,51 @@ void UMockDataMeshTrackerComponent::DisconnectMRMesh(class UMRMeshComponent* InM
 
 void UMockDataMeshTrackerComponent::ConnectMRMesh(class UMRMeshComponent* InMRMeshPtr)
 {
-	static auto Func = Class->GetFunction("MockDataMeshTrackerComponent", "ConnectMRMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::UMockDataMeshTrackerComponent_ConnectMRMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MockDataMeshTrackerComponent", "ConnectMRMesh");
+
+	Params::UMockDataMeshTrackerComponent_ConnectMRMesh_Params Parms{};
 
 	Parms.InMRMeshPtr = InMRMeshPtr;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class MRMesh.MRMeshComponent
+// (SceneComponent, PrimitiveComponent)
+
+class UClass* UMRMeshComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MRMeshComponent");
+
+	return Clss;
+}
+
+
+// MRMeshComponent MRMesh.Default__MRMeshComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMRMeshComponent* UMRMeshComponent::GetDefaultObj()
+{
+	static class UMRMeshComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMRMeshComponent*>(UMRMeshComponent::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -258,18 +365,21 @@ void UMockDataMeshTrackerComponent::ConnectMRMesh(class UMRMeshComponent* InMRMe
 
 bool UMRMeshComponent::IsConnected()
 {
-	static auto Func = Class->GetFunction("MRMeshComponent", "IsConnected");
+	static class UFunction* Func = nullptr;
 
-	Params::UMRMeshComponent_IsConnected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MRMeshComponent", "IsConnected");
+
+	Params::UMRMeshComponent_IsConnected_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -282,18 +392,20 @@ bool UMRMeshComponent::IsConnected()
 
 void UMRMeshComponent::ForceNavMeshUpdate()
 {
-	static auto Func = Class->GetFunction("MRMeshComponent", "ForceNavMeshUpdate");
+	static class UFunction* Func = nullptr;
 
-	Params::UMRMeshComponent_ForceNavMeshUpdate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MRMeshComponent", "ForceNavMeshUpdate");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -304,23 +416,23 @@ void UMRMeshComponent::ForceNavMeshUpdate()
 
 void UMRMeshComponent::Clear()
 {
-	static auto Func = Class->GetFunction("MRMeshComponent", "Clear");
+	static class UFunction* Func = nullptr;
 
-	Params::UMRMeshComponent_Clear_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MRMeshComponent", "Clear");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
-
-}
+	Func->FunctionFlags = Flgs;
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+}
+
+

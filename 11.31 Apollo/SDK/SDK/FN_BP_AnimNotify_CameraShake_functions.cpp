@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_AnimNotify_CameraShake.BP_AnimNotify_CameraShake_C
+// (None)
+
+class UClass* UBP_AnimNotify_CameraShake_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_AnimNotify_CameraShake_C");
+
+	return Clss;
+}
+
+
+// BP_AnimNotify_CameraShake_C BP_AnimNotify_CameraShake.Default__BP_AnimNotify_CameraShake_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBP_AnimNotify_CameraShake_C* UBP_AnimNotify_CameraShake_C::GetDefaultObj()
+{
+	static class UBP_AnimNotify_CameraShake_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBP_AnimNotify_CameraShake_C*>(UBP_AnimNotify_CameraShake_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_AnimNotify_CameraShake.BP_AnimNotify_CameraShake_C.Received_Notify
@@ -30,9 +55,12 @@ namespace SDK
 
 bool UBP_AnimNotify_CameraShake_C::Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, class AActor* CallFunc_GetOwner_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("BP_AnimNotify_CameraShake_C", "Received_Notify");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_AnimNotify_CameraShake_C_Received_Notify_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_AnimNotify_CameraShake_C", "Received_Notify");
+
+	Params::UBP_AnimNotify_CameraShake_C_Received_Notify_Params Parms{};
 
 	Parms.MeshComp = MeshComp;
 	Parms.Animation = Animation;
@@ -51,6 +79,4 @@ bool UBP_AnimNotify_CameraShake_C::Received_Notify(class USkeletalMeshComponent*
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,18 +15,13 @@ class UF5PlayerSettings : public UDeveloperSettings
 {
 public:
 	bool                                         bUseLegacyMediaSource;                             // 0x38(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_18DA[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_40B[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("F5PlayerSettings");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UF5PlayerSettings* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

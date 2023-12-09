@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_Ranged_Ashton_Indigo_Athena.B_Ranged_Ashton_Indigo_Athena_C
+// (Actor)
+
+class UClass* AB_Ranged_Ashton_Indigo_Athena_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Ranged_Ashton_Indigo_Athena_C");
+
+	return Clss;
+}
+
+
+// B_Ranged_Ashton_Indigo_Athena_C B_Ranged_Ashton_Indigo_Athena.Default__B_Ranged_Ashton_Indigo_Athena_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Ranged_Ashton_Indigo_Athena_C* AB_Ranged_Ashton_Indigo_Athena_C::GetDefaultObj()
+{
+	static class AB_Ranged_Ashton_Indigo_Athena_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Ranged_Ashton_Indigo_Athena_C*>(AB_Ranged_Ashton_Indigo_Athena_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function B_Ranged_Ashton_Indigo_Athena.B_Ranged_Ashton_Indigo_Athena_C.ShowReticle
@@ -24,9 +49,12 @@ namespace SDK
 
 void AB_Ranged_Ashton_Indigo_Athena_C::ShowReticle(class AController* CallFunc_GetInstigatorController_ReturnValue, class AFortPlayerControllerZone* K2Node_DynamicCast_AsFort_Player_Controller_Zone, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "ShowReticle");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_ShowReticle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "ShowReticle");
+
+	Params::AB_Ranged_Ashton_Indigo_Athena_C_ShowReticle_Params Parms{};
 
 	Parms.CallFunc_GetInstigatorController_ReturnValue = CallFunc_GetInstigatorController_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Controller_Zone = K2Node_DynamicCast_AsFort_Player_Controller_Zone;
@@ -46,9 +74,12 @@ void AB_Ranged_Ashton_Indigo_Athena_C::ShowReticle(class AController* CallFunc_G
 
 void AB_Ranged_Ashton_Indigo_Athena_C::HideReticle(class AController* CallFunc_GetInstigatorController_ReturnValue, class AFortPlayerControllerZone* K2Node_DynamicCast_AsFort_Player_Controller_Zone, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "HideReticle");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_HideReticle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "HideReticle");
+
+	Params::AB_Ranged_Ashton_Indigo_Athena_C_HideReticle_Params Parms{};
 
 	Parms.CallFunc_GetInstigatorController_ReturnValue = CallFunc_GetInstigatorController_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Controller_Zone = K2Node_DynamicCast_AsFort_Player_Controller_Zone;
@@ -65,12 +96,14 @@ void AB_Ranged_Ashton_Indigo_Athena_C::HideReticle(class AController* CallFunc_G
 
 void AB_Ranged_Ashton_Indigo_Athena_C::CenterReset__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "CenterReset__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_CenterReset__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "CenterReset__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -81,12 +114,14 @@ void AB_Ranged_Ashton_Indigo_Athena_C::CenterReset__FinishedFunc()
 
 void AB_Ranged_Ashton_Indigo_Athena_C::CenterReset__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "CenterReset__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_CenterReset__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "CenterReset__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -97,12 +132,14 @@ void AB_Ranged_Ashton_Indigo_Athena_C::CenterReset__UpdateFunc()
 
 void AB_Ranged_Ashton_Indigo_Athena_C::CenterSize__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "CenterSize__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_CenterSize__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "CenterSize__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -113,12 +150,14 @@ void AB_Ranged_Ashton_Indigo_Athena_C::CenterSize__FinishedFunc()
 
 void AB_Ranged_Ashton_Indigo_Athena_C::CenterSize__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "CenterSize__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_CenterSize__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "CenterSize__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -129,12 +168,14 @@ void AB_Ranged_Ashton_Indigo_Athena_C::CenterSize__UpdateFunc()
 
 void AB_Ranged_Ashton_Indigo_Athena_C::Intensity__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "Intensity__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_Intensity__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "Intensity__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -145,12 +186,14 @@ void AB_Ranged_Ashton_Indigo_Athena_C::Intensity__FinishedFunc()
 
 void AB_Ranged_Ashton_Indigo_Athena_C::Intensity__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "Intensity__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_Intensity__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "Intensity__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -163,9 +206,12 @@ void AB_Ranged_Ashton_Indigo_Athena_C::Intensity__UpdateFunc()
 
 void AB_Ranged_Ashton_Indigo_Athena_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondaryFire)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "OnPlayWeaponFireFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_OnPlayWeaponFireFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "OnPlayWeaponFireFX");
+
+	Params::AB_Ranged_Ashton_Indigo_Athena_C_OnPlayWeaponFireFX_Params Parms{};
 
 	Parms.bPersistentFire = bPersistentFire;
 	Parms.bSecondaryFire = bSecondaryFire;
@@ -181,12 +227,14 @@ void AB_Ranged_Ashton_Indigo_Athena_C::OnPlayWeaponFireFX(bool bPersistentFire, 
 
 void AB_Ranged_Ashton_Indigo_Athena_C::OnStopWeaponFireFX()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "OnStopWeaponFireFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_OnStopWeaponFireFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "OnStopWeaponFireFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -197,12 +245,14 @@ void AB_Ranged_Ashton_Indigo_Athena_C::OnStopWeaponFireFX()
 
 void AB_Ranged_Ashton_Indigo_Athena_C::K2_OnUnEquip()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "K2_OnUnEquip");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_K2_OnUnEquip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "K2_OnUnEquip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -213,12 +263,14 @@ void AB_Ranged_Ashton_Indigo_Athena_C::K2_OnUnEquip()
 
 void AB_Ranged_Ashton_Indigo_Athena_C::OnWeaponAttached()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "OnWeaponAttached");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_OnWeaponAttached_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "OnWeaponAttached");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -229,12 +281,14 @@ void AB_Ranged_Ashton_Indigo_Athena_C::OnWeaponAttached()
 
 void AB_Ranged_Ashton_Indigo_Athena_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -247,9 +301,12 @@ void AB_Ranged_Ashton_Indigo_Athena_C::ReceiveBeginPlay()
 
 void AB_Ranged_Ashton_Indigo_Athena_C::HandFired(enum class EDualWeaponHand Hand, bool bPersistantFire)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "HandFired");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_HandFired_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "HandFired");
+
+	Params::AB_Ranged_Ashton_Indigo_Athena_C_HandFired_Params Parms{};
 
 	Parms.Hand = Hand;
 	Parms.bPersistantFire = bPersistantFire;
@@ -265,12 +322,14 @@ void AB_Ranged_Ashton_Indigo_Athena_C::HandFired(enum class EDualWeaponHand Hand
 
 void AB_Ranged_Ashton_Indigo_Athena_C::BindOnHandFired()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "BindOnHandFired");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_BindOnHandFired_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "BindOnHandFired");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -282,9 +341,12 @@ void AB_Ranged_Ashton_Indigo_Athena_C::BindOnHandFired()
 
 void AB_Ranged_Ashton_Indigo_Athena_C::OnSetTargeting(bool bNewIsTargeting)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "OnSetTargeting");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_OnSetTargeting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "OnSetTargeting");
+
+	Params::AB_Ranged_Ashton_Indigo_Athena_C_OnSetTargeting_Params Parms{};
 
 	Parms.bNewIsTargeting = bNewIsTargeting;
 
@@ -300,9 +362,12 @@ void AB_Ranged_Ashton_Indigo_Athena_C::OnSetTargeting(bool bNewIsTargeting)
 
 void AB_Ranged_Ashton_Indigo_Athena_C::OnSpawnProjectile(class AFortProjectileBase* SpawnProjectile)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "OnSpawnProjectile");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_OnSpawnProjectile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "OnSpawnProjectile");
+
+	Params::AB_Ranged_Ashton_Indigo_Athena_C_OnSpawnProjectile_Params Parms{};
 
 	Parms.SpawnProjectile = SpawnProjectile;
 
@@ -317,12 +382,14 @@ void AB_Ranged_Ashton_Indigo_Athena_C::OnSpawnProjectile(class AFortProjectileBa
 
 void AB_Ranged_Ashton_Indigo_Athena_C::LockOnStart()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "LockOnStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_LockOnStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "LockOnStart");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -333,12 +400,14 @@ void AB_Ranged_Ashton_Indigo_Athena_C::LockOnStart()
 
 void AB_Ranged_Ashton_Indigo_Athena_C::LockOnEnd()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "LockOnEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_LockOnEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "LockOnEnd");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -349,12 +418,14 @@ void AB_Ranged_Ashton_Indigo_Athena_C::LockOnEnd()
 
 void AB_Ranged_Ashton_Indigo_Athena_C::NewTarget()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "NewTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_NewTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "NewTarget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -366,9 +437,12 @@ void AB_Ranged_Ashton_Indigo_Athena_C::NewTarget()
 
 void AB_Ranged_Ashton_Indigo_Athena_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "ReceiveTick");
+
+	Params::AB_Ranged_Ashton_Indigo_Athena_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -416,9 +490,12 @@ void AB_Ranged_Ashton_Indigo_Athena_C::ReceiveTick(float DeltaSeconds)
 
 void AB_Ranged_Ashton_Indigo_Athena_C::ExecuteUbergraph_B_Ranged_Ashton_Indigo_Athena(int32 EntryPoint, bool CallFunc_HasAuthority_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable, bool Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable, bool Temp_bool_IsClosed_Variable, bool K2Node_Event_bPersistentFire, bool K2Node_Event_bSecondaryFire, enum class EDualWeaponHand K2Node_CustomEvent_Hand, bool K2Node_CustomEvent_bPersistantFire, bool Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable_1, bool K2Node_Event_bNewIsTargeting, class AFortProjectileBase* K2Node_Event_SpawnProjectile, class AB_Prj_Ashton_Indigo_C* K2Node_DynamicCast_AsB_Prj_Ashton_Indigo, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, TScriptInterface<class IFortProjectileMovementInterface> CallFunc_SetHomingStyle_self_CastInput, bool Temp_bool_Has_Been_Initd_Variable_1, TScriptInterface<class IFortProjectileMovementInterface> CallFunc_SetHomingTurnSpeedMax_self_CastInput, float CallFunc_Subtract_FloatFloat_ReturnValue, TScriptInterface<class IFortProjectileMovementInterface> CallFunc_SetHomingTurnSpeedMin_self_CastInput, TScriptInterface<class IFortProjectileMovementInterface> CallFunc_SetHomingLockTargetDistanceThreshold_self_CastInput, TScriptInterface<class IFortProjectileMovementInterface> CallFunc_SetHomingTimeUntilMaxTurnSpeed_self_CastInput, TScriptInterface<class IFortProjectileMovementInterface> CallFunc_SetHomingTarget_self_CastInput, class UAshton_Indigo_LockOnWidget_C* CallFunc_Create_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsLocallyControlled_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_IsValid_ReturnValue_2, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, float K2Node_Event_DeltaSeconds, bool Temp_bool_IsClosed_Variable_1)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "ExecuteUbergraph_B_Ranged_Ashton_Indigo_Athena");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Ashton_Indigo_Athena_C_ExecuteUbergraph_B_Ranged_Ashton_Indigo_Athena_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Ashton_Indigo_Athena_C", "ExecuteUbergraph_B_Ranged_Ashton_Indigo_Athena");
+
+	Params::AB_Ranged_Ashton_Indigo_Athena_C_ExecuteUbergraph_B_Ranged_Ashton_Indigo_Athena_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -460,6 +537,4 @@ void AB_Ranged_Ashton_Indigo_Athena_C::ExecuteUbergraph_B_Ranged_Ashton_Indigo_A
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

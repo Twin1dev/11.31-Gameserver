@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -26,11 +23,8 @@ public:
 	float                                        RotationSpeed;                                     // 0x248(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        BoundsScale;                                       // 0x24C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BP_StormMeshRotator_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ABP_StormMeshRotator_C* GetDefaultObj();
 
 	void UserConstructionScript(class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1, class ABP_SafeZoneStorm_C* CallFunc_GetActorOfClass_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_2, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_3);
 	void ReceiveBeginPlay();
@@ -39,6 +33,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,24 +12,54 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class SubtitlesWidgets.FortMediaSubtitlesPlayer
+// (None)
+
+class UClass* UFortMediaSubtitlesPlayer::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FortMediaSubtitlesPlayer");
+
+	return Clss;
+}
+
+
+// FortMediaSubtitlesPlayer SubtitlesWidgets.Default__FortMediaSubtitlesPlayer
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UFortMediaSubtitlesPlayer* UFortMediaSubtitlesPlayer::GetDefaultObj()
+{
+	static class UFortMediaSubtitlesPlayer* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFortMediaSubtitlesPlayer*>(UFortMediaSubtitlesPlayer::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SubtitlesWidgets.FortMediaSubtitlesPlayer.Stop
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 
 void UFortMediaSubtitlesPlayer::Stop()
 {
-	static auto Func = Class->GetFunction("FortMediaSubtitlesPlayer", "Stop");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortMediaSubtitlesPlayer_Stop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortMediaSubtitlesPlayer", "Stop");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -44,19 +71,22 @@ void UFortMediaSubtitlesPlayer::Stop()
 
 void UFortMediaSubtitlesPlayer::SetSubtitles(class UOverlays* Subtitles)
 {
-	static auto Func = Class->GetFunction("FortMediaSubtitlesPlayer", "SetSubtitles");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortMediaSubtitlesPlayer_SetSubtitles_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortMediaSubtitlesPlayer", "SetSubtitles");
+
+	Params::UFortMediaSubtitlesPlayer_SetSubtitles_Params Parms{};
 
 	Parms.Subtitles = Subtitles;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -67,18 +97,20 @@ void UFortMediaSubtitlesPlayer::SetSubtitles(class UOverlays* Subtitles)
 
 void UFortMediaSubtitlesPlayer::Play()
 {
-	static auto Func = Class->GetFunction("FortMediaSubtitlesPlayer", "Play");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortMediaSubtitlesPlayer_Play_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortMediaSubtitlesPlayer", "Play");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -90,20 +122,51 @@ void UFortMediaSubtitlesPlayer::Play()
 
 void UFortMediaSubtitlesPlayer::BindToMediaPlayer(class UMediaPlayer* InMediaPlayer)
 {
-	static auto Func = Class->GetFunction("FortMediaSubtitlesPlayer", "BindToMediaPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortMediaSubtitlesPlayer_BindToMediaPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortMediaSubtitlesPlayer", "BindToMediaPlayer");
+
+	Params::UFortMediaSubtitlesPlayer_BindToMediaPlayer_Params Parms{};
 
 	Parms.InMediaPlayer = InMediaPlayer;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class SubtitlesWidgets.SubtitleDisplay
+// (None)
+
+class UClass* USubtitleDisplay::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SubtitleDisplay");
+
+	return Clss;
+}
+
+
+// SubtitleDisplay SubtitlesWidgets.Default__SubtitleDisplay
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USubtitleDisplay* USubtitleDisplay::GetDefaultObj()
+{
+	static class USubtitleDisplay* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USubtitleDisplay*>(USubtitleDisplay::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -114,18 +177,21 @@ void UFortMediaSubtitlesPlayer::BindToMediaPlayer(class UMediaPlayer* InMediaPla
 
 bool USubtitleDisplay::HasSubtitles()
 {
-	static auto Func = Class->GetFunction("SubtitleDisplay", "HasSubtitles");
+	static class UFunction* Func = nullptr;
 
-	Params::USubtitleDisplay_HasSubtitles_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubtitleDisplay", "HasSubtitles");
+
+	Params::USubtitleDisplay_HasSubtitles_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -133,6 +199,4 @@ bool USubtitleDisplay::HasSubtitles()
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

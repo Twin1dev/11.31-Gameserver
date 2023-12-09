@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -25,17 +22,10 @@ public:
 	float                                        NewLocalVar_0;                                     // 0x8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0xC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0xD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4B69[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_11FB[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               CallFunc_GetSocketLocation_ReturnValue;            // 0x10(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4B6A[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_11FC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UParticleSystemComponent*              CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x20(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function BP_VictoryDrone_RiftDisolve.BP_VictoryDrone_RiftDisolve_C.ReceiveBeginPlay
-struct ABP_VictoryDrone_RiftDisolve_C_ReceiveBeginPlay_Params
-{
-public:
 };
 
 // 0x4 (0x4 - 0x0)
@@ -49,6 +39,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

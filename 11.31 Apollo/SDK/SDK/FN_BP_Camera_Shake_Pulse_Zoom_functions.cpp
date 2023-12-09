@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_Camera_Shake_Pulse_Zoom.BP_Camera_Shake_Pulse_Zoom_C
+// (None)
+
+class UClass* UBP_Camera_Shake_Pulse_Zoom_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_Camera_Shake_Pulse_Zoom_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// BP_Camera_Shake_Pulse_Zoom_C BP_Camera_Shake_Pulse_Zoom.Default__BP_Camera_Shake_Pulse_Zoom_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBP_Camera_Shake_Pulse_Zoom_C* UBP_Camera_Shake_Pulse_Zoom_C::GetDefaultObj()
+{
+	static class UBP_Camera_Shake_Pulse_Zoom_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBP_Camera_Shake_Pulse_Zoom_C*>(UBP_Camera_Shake_Pulse_Zoom_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

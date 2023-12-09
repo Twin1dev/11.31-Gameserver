@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SoloButton_WinterFest.SoloButton_WinterFest_C
+// (None)
+
+class UClass* USoloButton_WinterFest_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SoloButton_WinterFest_C");
+
+	return Clss;
+}
+
+
+// SoloButton_WinterFest_C SoloButton_WinterFest.Default__SoloButton_WinterFest_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USoloButton_WinterFest_C* USoloButton_WinterFest_C::GetDefaultObj()
+{
+	static class USoloButton_WinterFest_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USoloButton_WinterFest_C*>(USoloButton_WinterFest_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SoloButton_WinterFest.SoloButton_WinterFest_C.SetText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void USoloButton_WinterFest_C::SetText(class FText Text)
 {
-	static auto Func = Class->GetFunction("SoloButton_WinterFest_C", "SetText");
+	static class UFunction* Func = nullptr;
 
-	Params::USoloButton_WinterFest_C_SetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SoloButton_WinterFest_C", "SetText");
+
+	Params::USoloButton_WinterFest_C_SetText_Params Parms{};
 
 	Parms.Text = Text;
 
@@ -46,9 +74,12 @@ void USoloButton_WinterFest_C::SetText(class FText Text)
 
 void USoloButton_WinterFest_C::HandleSize(bool Temp_bool_Variable, bool Temp_bool_Variable_1, int32 Temp_int_Variable, const struct FMargin& K2Node_MakeStruct_Margin, const struct FMargin& K2Node_Select_Default, int32 K2Node_Select_Default_1, const struct FSlateFontInfo& K2Node_MakeStruct_SlateFontInfo)
 {
-	static auto Func = Class->GetFunction("SoloButton_WinterFest_C", "HandleSize");
+	static class UFunction* Func = nullptr;
 
-	Params::USoloButton_WinterFest_C_HandleSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SoloButton_WinterFest_C", "HandleSize");
+
+	Params::USoloButton_WinterFest_C_HandleSize_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
@@ -69,12 +100,14 @@ void USoloButton_WinterFest_C::HandleSize(bool Temp_bool_Variable, bool Temp_boo
 
 void USoloButton_WinterFest_C::Construct()
 {
-	static auto Func = Class->GetFunction("SoloButton_WinterFest_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::USoloButton_WinterFest_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SoloButton_WinterFest_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -86,9 +119,12 @@ void USoloButton_WinterFest_C::Construct()
 
 void USoloButton_WinterFest_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("SoloButton_WinterFest_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::USoloButton_WinterFest_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SoloButton_WinterFest_C", "PreConstruct");
+
+	Params::USoloButton_WinterFest_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -103,12 +139,14 @@ void USoloButton_WinterFest_C::PreConstruct(bool IsDesignTime)
 
 void USoloButton_WinterFest_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("SoloButton_WinterFest_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USoloButton_WinterFest_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SoloButton_WinterFest_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -119,12 +157,14 @@ void USoloButton_WinterFest_C::BP_OnHovered()
 
 void USoloButton_WinterFest_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("SoloButton_WinterFest_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USoloButton_WinterFest_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SoloButton_WinterFest_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -135,12 +175,14 @@ void USoloButton_WinterFest_C::BP_OnUnhovered()
 
 void USoloButton_WinterFest_C::BP_OnClicked()
 {
-	static auto Func = Class->GetFunction("SoloButton_WinterFest_C", "BP_OnClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::USoloButton_WinterFest_C_BP_OnClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SoloButton_WinterFest_C", "BP_OnClicked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -163,9 +205,12 @@ void USoloButton_WinterFest_C::BP_OnClicked()
 
 void USoloButton_WinterFest_C::ExecuteUbergraph_SoloButton_WinterFest(int32 EntryPoint, bool Temp_bool_Variable, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float Temp_float_Variable, float Temp_float_Variable_1, bool K2Node_Event_IsDesignTime, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, float K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("SoloButton_WinterFest_C", "ExecuteUbergraph_SoloButton_WinterFest");
+	static class UFunction* Func = nullptr;
 
-	Params::USoloButton_WinterFest_C_ExecuteUbergraph_SoloButton_WinterFest_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SoloButton_WinterFest_C", "ExecuteUbergraph_SoloButton_WinterFest");
+
+	Params::USoloButton_WinterFest_C_ExecuteUbergraph_SoloButton_WinterFest_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -186,6 +231,4 @@ void USoloButton_WinterFest_C::ExecuteUbergraph_SoloButton_WinterFest(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

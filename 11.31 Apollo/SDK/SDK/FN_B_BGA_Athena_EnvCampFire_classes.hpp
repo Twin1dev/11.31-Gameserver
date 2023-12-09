@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -25,25 +22,25 @@ public:
 	class USceneComponent*                       DefaultSceneRoot;                                  // 0x7B0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class AFortPawn*                             InteractingPawn;                                   // 0x7B8(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         BeenUsed;                                          // 0x7C0(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4DC8[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_59CC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        DousedSmokeLife;                                   // 0x7C4(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FScalableFloat                        Row_DousedSmokeLife;                               // 0x7C8(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         HotfixedEnabled;                                   // 0x7E8(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         DestroyIfDisabled;                                 // 0x7E9(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Destroyed;                                         // 0x7EA(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	uint8                                        Pad_4DC9[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_59CD[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FScalableFloat                        Row_HotfixEnabled;                                 // 0x7F0(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FVector                               TraceOffset;                                       // 0x810(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Season7Campfire;                                   // 0x81C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4DCA[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_59CE[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 CustomSpecialS7Tags;                               // 0x820(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                        SpecialS7FireTime;                                 // 0x840(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4DCB[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_59CF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          DousedSmokeWispTimer;                              // 0x848(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                       S7SuccessEmitter;                                  // 0x850(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                            S7SuccessSound;                                    // 0x858(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         BlockInteraction;                                  // 0x860(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4DCC[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_59D0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        LitRepBool;                                        // 0x864(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          DousedCue;                                         // 0x868(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          FireCue;                                           // 0x870(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -54,19 +51,16 @@ public:
 	class FText                                  Text_LightCostNeedMore;                            // 0x8D0(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UFortWorldItemDefinition*              Item_Wood;                                         // 0x8E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Stoked;                                            // 0x8F0(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	uint8                                        Pad_4DCD[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_59D1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTag                          StokedCue;                                         // 0x8F4(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4DCE[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_59D2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FScalableFloat                        Row_Stoke_Cost;                                    // 0x900(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FScalableFloat                        Row_HotfixStokeEnabled;                            // 0x920(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  Text_StokeCostNeedMore;                            // 0x940(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         HasBeenLit;                                        // 0x958(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_BGA_Athena_EnvCampFire_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_BGA_Athena_EnvCampFire_C* GetDefaultObj();
 
 	void OnRep_Stoked();
 	class FText BlueprintGetFailedInteractionString(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted, bool Temp_bool_Variable, float CallFunc_GetValueAtLevel_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, int32 CallFunc_FCeil_ReturnValue, const class FString& CallFunc_Conv_IntToString_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, int32 CallFunc_FCeil_ReturnValue_1, const class FString& CallFunc_Conv_IntToString_ReturnValue_1, const class FString& CallFunc_Concat_StrStr_ReturnValue_2, const class FString& CallFunc_Concat_StrStr_ReturnValue_3, class FText CallFunc_Conv_StringToText_ReturnValue_1, class FText K2Node_Select_Default);
@@ -99,6 +93,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

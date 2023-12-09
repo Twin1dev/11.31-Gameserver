@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass PlayerTrapDiceCritMultiplierModCalculation.PlayerTrapDiceCritMultiplierModCalculation_C
+// (None)
+
+class UClass* UPlayerTrapDiceCritMultiplierModCalculation_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerTrapDiceCritMultiplierModCalculation_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// PlayerTrapDiceCritMultiplierModCalculation_C PlayerTrapDiceCritMultiplierModCalculation.Default__PlayerTrapDiceCritMultiplierModCalculation_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerTrapDiceCritMultiplierModCalculation_C* UPlayerTrapDiceCritMultiplierModCalculation_C::GetDefaultObj()
+{
+	static class UPlayerTrapDiceCritMultiplierModCalculation_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerTrapDiceCritMultiplierModCalculation_C*>(UPlayerTrapDiceCritMultiplierModCalculation_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

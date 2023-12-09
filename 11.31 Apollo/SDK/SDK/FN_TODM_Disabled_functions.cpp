@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass TODM_Disabled.TODM_Disabled_C
+// (Actor)
+
+class UClass* ATODM_Disabled_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TODM_Disabled_C");
+
+	return Clss;
+}
+
+
+// TODM_Disabled_C TODM_Disabled.Default__TODM_Disabled_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ATODM_Disabled_C* ATODM_Disabled_C::GetDefaultObj()
+{
+	static class ATODM_Disabled_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ATODM_Disabled_C*>(ATODM_Disabled_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TODM_Disabled.TODM_Disabled_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void ATODM_Disabled_C::UserConstructionScript()
 {
-	static auto Func = Class->GetFunction("TODM_Disabled_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ATODM_Disabled_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TODM_Disabled_C", "UserConstructionScript");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void ATODM_Disabled_C::UserConstructionScript()
 
 void ATODM_Disabled_C::DisableLightAndFog(bool Enable)
 {
-	static auto Func = Class->GetFunction("TODM_Disabled_C", "DisableLightAndFog");
+	static class UFunction* Func = nullptr;
 
-	Params::ATODM_Disabled_C_DisableLightAndFog_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TODM_Disabled_C", "DisableLightAndFog");
+
+	Params::ATODM_Disabled_C_DisableLightAndFog_Params Parms{};
 
 	Parms.Enable = Enable;
 
@@ -55,12 +85,14 @@ void ATODM_Disabled_C::DisableLightAndFog(bool Enable)
 
 void ATODM_Disabled_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("TODM_Disabled_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ATODM_Disabled_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TODM_Disabled_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -78,9 +110,12 @@ void ATODM_Disabled_C::ReceiveBeginPlay()
 
 void ATODM_Disabled_C::ExecuteUbergraph_TODM_Disabled(int32 EntryPoint, bool K2Node_CustomEvent_Enable, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue, int32 CallFunc_GetShadowQuality_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, float CallFunc_Conv_BoolToFloat_ReturnValue, bool K2Node_SwitchInteger_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("TODM_Disabled_C", "ExecuteUbergraph_TODM_Disabled");
+	static class UFunction* Func = nullptr;
 
-	Params::ATODM_Disabled_C_ExecuteUbergraph_TODM_Disabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TODM_Disabled_C", "ExecuteUbergraph_TODM_Disabled");
+
+	Params::ATODM_Disabled_C_ExecuteUbergraph_TODM_Disabled_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_Enable = K2Node_CustomEvent_Enable;
@@ -96,6 +131,4 @@ void ATODM_Disabled_C::ExecuteUbergraph_TODM_Disabled(int32 EntryPoint, bool K2N
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

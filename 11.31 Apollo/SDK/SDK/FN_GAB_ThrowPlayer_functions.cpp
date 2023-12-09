@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GAB_ThrowPlayer.GAB_ThrowPlayer_C
+// (None)
+
+class UClass* UGAB_ThrowPlayer_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAB_ThrowPlayer_C");
+
+	return Clss;
+}
+
+
+// GAB_ThrowPlayer_C GAB_ThrowPlayer.Default__GAB_ThrowPlayer_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAB_ThrowPlayer_C* UGAB_ThrowPlayer_C::GetDefaultObj()
+{
+	static class UGAB_ThrowPlayer_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAB_ThrowPlayer_C*>(UGAB_ThrowPlayer_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GAB_ThrowPlayer.GAB_ThrowPlayer_C.Completed_45B7744E4902B26207BAA1954E6BCDEE
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UGAB_ThrowPlayer_C::Completed_45B7744E4902B26207BAA1954E6BCDEE(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GAB_ThrowPlayer_C", "Completed_45B7744E4902B26207BAA1954E6BCDEE");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_ThrowPlayer_C_Completed_45B7744E4902B26207BAA1954E6BCDEE_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_ThrowPlayer_C", "Completed_45B7744E4902B26207BAA1954E6BCDEE");
+
+	Params::UGAB_ThrowPlayer_C_Completed_45B7744E4902B26207BAA1954E6BCDEE_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -43,9 +71,12 @@ void UGAB_ThrowPlayer_C::Completed_45B7744E4902B26207BAA1954E6BCDEE(struct FGame
 
 void UGAB_ThrowPlayer_C::Cancelled_45B7744E4902B26207BAA1954E6BCDEE(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GAB_ThrowPlayer_C", "Cancelled_45B7744E4902B26207BAA1954E6BCDEE");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_ThrowPlayer_C_Cancelled_45B7744E4902B26207BAA1954E6BCDEE_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_ThrowPlayer_C", "Cancelled_45B7744E4902B26207BAA1954E6BCDEE");
+
+	Params::UGAB_ThrowPlayer_C_Cancelled_45B7744E4902B26207BAA1954E6BCDEE_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -63,9 +94,12 @@ void UGAB_ThrowPlayer_C::Cancelled_45B7744E4902B26207BAA1954E6BCDEE(struct FGame
 
 void UGAB_ThrowPlayer_C::Triggered_45B7744E4902B26207BAA1954E6BCDEE(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GAB_ThrowPlayer_C", "Triggered_45B7744E4902B26207BAA1954E6BCDEE");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_ThrowPlayer_C_Triggered_45B7744E4902B26207BAA1954E6BCDEE_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_ThrowPlayer_C", "Triggered_45B7744E4902B26207BAA1954E6BCDEE");
+
+	Params::UGAB_ThrowPlayer_C_Triggered_45B7744E4902B26207BAA1954E6BCDEE_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -81,12 +115,14 @@ void UGAB_ThrowPlayer_C::Triggered_45B7744E4902B26207BAA1954E6BCDEE(struct FGame
 
 void UGAB_ThrowPlayer_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GAB_ThrowPlayer_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_ThrowPlayer_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_ThrowPlayer_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -98,9 +134,12 @@ void UGAB_ThrowPlayer_C::K2_ActivateAbility()
 
 void UGAB_ThrowPlayer_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GAB_ThrowPlayer_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_ThrowPlayer_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_ThrowPlayer_C", "K2_OnEndAbility");
+
+	Params::UGAB_ThrowPlayer_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -120,12 +159,12 @@ void UGAB_ThrowPlayer_C::K2_OnEndAbility(bool bWasCancelled)
 // struct FGameplayTag                K2Node_CustomEvent_ApplicationTag                                (NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor)
 // struct FGameplayTag                Temp_struct_Variable                                             (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           ()
+// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           (None)
 // struct FGameplayAbilityActorInfo   CallFunc_GetActorInfo_ReturnValue                                (ContainsInstancedReference)
 // class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_K2_CommitAbility_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  ()
+// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  (None)
 // TArray<struct FActiveGameplayEffectHandle>CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue              (ZeroConstructor, ReferenceParm)
 // struct FGameplayAbilityTargetDataHandleK2Node_CustomEvent_TargetData_2                                  (ConstParm)
 // struct FGameplayTag                K2Node_CustomEvent_ApplicationTag_2                              (NoDestructor, HasGetValueTypeHash)
@@ -136,9 +175,12 @@ void UGAB_ThrowPlayer_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGAB_ThrowPlayer_C::ExecuteUbergraph_GAB_ThrowPlayer(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_1, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_1, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FGameplayTag& Temp_struct_Variable, const struct FGameplayAbilityTargetDataHandle& Temp_struct_Variable_1, const struct FGameplayAbilityActorInfo& CallFunc_GetActorInfo_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_K2_CommitAbility_ReturnValue, const struct FGameplayAbilityTargetDataHandle& CallFunc_AbilityTargetDataFromActor_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_2, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, bool K2Node_Event_bWasCancelled, class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAB_ThrowPlayer_C", "ExecuteUbergraph_GAB_ThrowPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_ThrowPlayer_C_ExecuteUbergraph_GAB_ThrowPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_ThrowPlayer_C", "ExecuteUbergraph_GAB_ThrowPlayer");
+
+	Params::UGAB_ThrowPlayer_C_ExecuteUbergraph_GAB_ThrowPlayer_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -168,6 +210,4 @@ void UGAB_ThrowPlayer_C::ExecuteUbergraph_GAB_ThrowPlayer(int32 EntryPoint, UDel
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

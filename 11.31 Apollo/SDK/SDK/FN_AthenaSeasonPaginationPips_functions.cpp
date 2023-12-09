@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaSeasonPaginationPips.AthenaSeasonPaginationPips_C
+// (None)
+
+class UClass* UAthenaSeasonPaginationPips_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaSeasonPaginationPips_C");
+
+	return Clss;
+}
+
+
+// AthenaSeasonPaginationPips_C AthenaSeasonPaginationPips.Default__AthenaSeasonPaginationPips_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaSeasonPaginationPips_C* UAthenaSeasonPaginationPips_C::GetDefaultObj()
+{
+	static class UAthenaSeasonPaginationPips_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaSeasonPaginationPips_C*>(UAthenaSeasonPaginationPips_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaSeasonPaginationPips.AthenaSeasonPaginationPips_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UAthenaSeasonPaginationPips_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPaginationPips_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPaginationPips_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPaginationPips_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -39,9 +66,12 @@ void UAthenaSeasonPaginationPips_C::Construct()
 
 void UAthenaSeasonPaginationPips_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPaginationPips_C", "Tick");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPaginationPips_C_Tick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPaginationPips_C", "Tick");
+
+	Params::UAthenaSeasonPaginationPips_C_Tick_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InDeltaTime = InDeltaTime;
@@ -57,12 +87,14 @@ void UAthenaSeasonPaginationPips_C::Tick(const struct FGeometry& MyGeometry, flo
 
 void UAthenaSeasonPaginationPips_C::Select()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPaginationPips_C", "Select");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPaginationPips_C_Select_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPaginationPips_C", "Select");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -73,12 +105,14 @@ void UAthenaSeasonPaginationPips_C::Select()
 
 void UAthenaSeasonPaginationPips_C::Deselect()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPaginationPips_C", "Deselect");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPaginationPips_C_Deselect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPaginationPips_C", "Deselect");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -94,9 +128,12 @@ void UAthenaSeasonPaginationPips_C::Deselect()
 
 void UAthenaSeasonPaginationPips_C::ExecuteUbergraph_AthenaSeasonPaginationPips(int32 EntryPoint, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPaginationPips_C", "ExecuteUbergraph_AthenaSeasonPaginationPips");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPaginationPips_C_ExecuteUbergraph_AthenaSeasonPaginationPips_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPaginationPips_C", "ExecuteUbergraph_AthenaSeasonPaginationPips");
+
+	Params::UAthenaSeasonPaginationPips_C_ExecuteUbergraph_AthenaSeasonPaginationPips_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_MyGeometry = K2Node_Event_MyGeometry;
@@ -110,6 +147,4 @@ void UAthenaSeasonPaginationPips_C::ExecuteUbergraph_AthenaSeasonPaginationPips(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

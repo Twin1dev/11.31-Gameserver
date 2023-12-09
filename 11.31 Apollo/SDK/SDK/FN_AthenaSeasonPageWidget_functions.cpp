@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaSeasonPageWidget.AthenaSeasonPageWidget_C
+// (None)
+
+class UClass* UAthenaSeasonPageWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaSeasonPageWidget_C");
+
+	return Clss;
+}
+
+
+// AthenaSeasonPageWidget_C AthenaSeasonPageWidget.Default__AthenaSeasonPageWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaSeasonPageWidget_C* UAthenaSeasonPageWidget_C::GetDefaultObj()
+{
+	static class UAthenaSeasonPageWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaSeasonPageWidget_C*>(UAthenaSeasonPageWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaSeasonPageWidget.AthenaSeasonPageWidget_C.GetLastLevel
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAthenaSeasonPageWidget_C::GetLastLevel(int32* LastLevel)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "GetLastLevel");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_GetLastLevel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "GetLastLevel");
+
+	Params::UAthenaSeasonPageWidget_C_GetLastLevel_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -40,7 +68,7 @@ void UAthenaSeasonPageWidget_C::GetLastLevel(int32* LastLevel)
 // Parameters:
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAthenaAccountContext*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetCurrentSeasonNumberAsText_ReturnValue                ()
+// class FText                        CallFunc_GetCurrentSeasonNumberAsText_ReturnValue                (None)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -52,9 +80,12 @@ void UAthenaSeasonPageWidget_C::GetLastLevel(int32* LastLevel)
 
 void UAthenaSeasonPageWidget_C::UpdateDynamicData(enum class ESlateVisibility Temp_byte_Variable, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue, class FText CallFunc_GetCurrentSeasonNumberAsText_ReturnValue, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_1, bool CallFunc_OwnsSeasonPass_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "UpdateDynamicData");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_UpdateDynamicData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "UpdateDynamicData");
+
+	Params::UAthenaSeasonPageWidget_C_UpdateDynamicData_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -80,9 +111,12 @@ void UAthenaSeasonPageWidget_C::UpdateDynamicData(enum class ESlateVisibility Te
 
 void UAthenaSeasonPageWidget_C::GetFirstLevel(int32* FirstLevel)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "GetFirstLevel");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_GetFirstLevel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "GetFirstLevel");
+
+	Params::UAthenaSeasonPageWidget_C_GetFirstLevel_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -109,9 +143,12 @@ void UAthenaSeasonPageWidget_C::GetFirstLevel(int32* FirstLevel)
 
 class UAthenaSeasonLevelFreeRewardsWidget_C* UAthenaSeasonPageWidget_C::AddFreeRewards(int32 InColumn, class UFortSeasonPassLevelInfo* LevelInfo, int32 CallFunc_GetNumRewardItems_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UAthenaSeasonLevelFreeRewardsWidget_C* CallFunc_Create_ReturnValue, class UGridSlot* CallFunc_AddChildToGrid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "AddFreeRewards");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_AddFreeRewards_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "AddFreeRewards");
+
+	Params::UAthenaSeasonPageWidget_C_AddFreeRewards_Params Parms{};
 
 	Parms.InColumn = InColumn;
 	Parms.LevelInfo = LevelInfo;
@@ -146,9 +183,12 @@ class UAthenaSeasonLevelFreeRewardsWidget_C* UAthenaSeasonPageWidget_C::AddFreeR
 
 void UAthenaSeasonPageWidget_C::AddPaidRewards(int32 InColumn, class UFortSeasonPassLevelInfo* LevelInfo, class UAthenaSeasonLevelPaidRewardsWidget_C** OutputPin, int32 CallFunc_GetNumRewardItems_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UAthenaSeasonLevelPaidRewardsWidget_C* CallFunc_Create_ReturnValue, class UGridSlot* CallFunc_AddChildToGrid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "AddPaidRewards");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_AddPaidRewards_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "AddPaidRewards");
+
+	Params::UAthenaSeasonPageWidget_C_AddPaidRewards_Params Parms{};
 
 	Parms.InColumn = InColumn;
 	Parms.LevelInfo = LevelInfo;
@@ -180,9 +220,12 @@ void UAthenaSeasonPageWidget_C::AddPaidRewards(int32 InColumn, class UFortSeason
 
 void UAthenaSeasonPageWidget_C::PagePopulationComplete(class UGridSlot* K2Node_DynamicCast_AsGrid_Slot, bool K2Node_DynamicCast_bSuccess, class UGridSlot* K2Node_DynamicCast_AsGrid_Slot_1, bool K2Node_DynamicCast_bSuccess_1, class UGridSlot* K2Node_DynamicCast_AsGrid_Slot_2, bool K2Node_DynamicCast_bSuccess_2)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "PagePopulationComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_PagePopulationComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "PagePopulationComplete");
+
+	Params::UAthenaSeasonPageWidget_C_PagePopulationComplete_Params Parms{};
 
 	Parms.K2Node_DynamicCast_AsGrid_Slot = K2Node_DynamicCast_AsGrid_Slot;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
@@ -207,9 +250,12 @@ void UAthenaSeasonPageWidget_C::PagePopulationComplete(class UGridSlot* K2Node_D
 
 bool UAthenaSeasonPageWidget_C::ContainsLevel(int32 Level, bool CallFunc_LessEqual_IntInt_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "ContainsLevel");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_ContainsLevel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "ContainsLevel");
+
+	Params::UAthenaSeasonPageWidget_C_ContainsLevel_Params Parms{};
 
 	Parms.Level = Level;
 	Parms.CallFunc_LessEqual_IntInt_ReturnValue = CallFunc_LessEqual_IntInt_ReturnValue;
@@ -230,9 +276,12 @@ bool UAthenaSeasonPageWidget_C::ContainsLevel(int32 Level, bool CallFunc_LessEqu
 
 void UAthenaSeasonPageWidget_C::IsFull(bool* Full)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "IsFull");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_IsFull_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "IsFull");
+
+	Params::UAthenaSeasonPageWidget_C_IsFull_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -271,9 +320,12 @@ void UAthenaSeasonPageWidget_C::IsFull(bool* Full)
 
 void UAthenaSeasonPageWidget_C::AddLevelWidgets(class UFortSeasonPassLevelInfo* LevelInfo, TArray<class USeasonPassLevelWidget*>* LevelWidgets, int32 CallFunc_GetLevel_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin, int32 CallFunc_GetLevel_ReturnValue_1, int32 CallFunc_Max_ReturnValue, bool CallFunc_ContainsChaseReward_ReturnValue, int32 CallFunc_Min_ReturnValue, int32 CallFunc_GetNumRewardItems_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, class UAthenaSeasonLevelPaidRewardsWidget_C* CallFunc_AddPaidRewards_OutputPin, class UAthenaSeasonLevelFreeRewardsWidget_C* CallFunc_AddFreeRewards_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UAthenaSeasonLevelHeaderWidget_C* CallFunc_Create_ReturnValue, TArray<class USeasonPassLevelWidget*>& K2Node_MakeArray_Array, class UGridSlot* CallFunc_AddChildToGrid_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 CallFunc_GetSeasonPassMaxLevel_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "AddLevelWidgets");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_AddLevelWidgets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "AddLevelWidgets");
+
+	Params::UAthenaSeasonPageWidget_C_AddLevelWidgets_Params Parms{};
 
 	Parms.LevelInfo = LevelInfo;
 	Parms.CallFunc_GetLevel_ReturnValue = CallFunc_GetLevel_ReturnValue;
@@ -300,7 +352,7 @@ void UAthenaSeasonPageWidget_C::AddLevelWidgets(class UFortSeasonPassLevelInfo* 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (LevelWidgets != nullptr)
-		*LevelWidgets = Parms.LevelWidgets;
+		*LevelWidgets = std::move(Parms.LevelWidgets);
 
 }
 
@@ -311,12 +363,14 @@ void UAthenaSeasonPageWidget_C::AddLevelWidgets(class UFortSeasonPassLevelInfo* 
 
 void UAthenaSeasonPageWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -327,12 +381,14 @@ void UAthenaSeasonPageWidget_C::Construct()
 
 void UAthenaSeasonPageWidget_C::Destruct()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -343,12 +399,14 @@ void UAthenaSeasonPageWidget_C::Destruct()
 
 void UAthenaSeasonPageWidget_C::NavigatePageRight()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "NavigatePageRight");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_NavigatePageRight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "NavigatePageRight");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -359,12 +417,14 @@ void UAthenaSeasonPageWidget_C::NavigatePageRight()
 
 void UAthenaSeasonPageWidget_C::NavigatePageLeft()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "NavigatePageLeft");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_NavigatePageLeft_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "NavigatePageLeft");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -375,12 +435,14 @@ void UAthenaSeasonPageWidget_C::NavigatePageLeft()
 
 void UAthenaSeasonPageWidget_C::OnBattlePassChanged()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "OnBattlePassChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_OnBattlePassChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "OnBattlePassChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -391,12 +453,14 @@ void UAthenaSeasonPageWidget_C::OnBattlePassChanged()
 
 void UAthenaSeasonPageWidget_C::ScreenShown()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "ScreenShown");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_ScreenShown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "ScreenShown");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -420,9 +484,12 @@ void UAthenaSeasonPageWidget_C::ScreenShown()
 
 void UAthenaSeasonPageWidget_C::ExecuteUbergraph_AthenaSeasonPageWidget(int32 EntryPoint, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, class UWidget* CallFunc_GetChildAt_ReturnValue, bool CallFunc_ShouldPlayInto_ReturnValue, class USeasonPassLevelWidget* K2Node_DynamicCast_AsSeason_Pass_Level_Widget, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_GetChildrenCount_ReturnValue, bool Temp_bool_IsClosed_Variable, bool Temp_bool_Has_Been_Initd_Variable, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "ExecuteUbergraph_AthenaSeasonPageWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_ExecuteUbergraph_AthenaSeasonPageWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "ExecuteUbergraph_AthenaSeasonPageWidget");
+
+	Params::UAthenaSeasonPageWidget_C_ExecuteUbergraph_AthenaSeasonPageWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -449,12 +516,14 @@ void UAthenaSeasonPageWidget_C::ExecuteUbergraph_AthenaSeasonPageWidget(int32 En
 
 void UAthenaSeasonPageWidget_C::PageRight__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "PageRight__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_PageRight__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "PageRight__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -465,17 +534,17 @@ void UAthenaSeasonPageWidget_C::PageRight__DelegateSignature()
 
 void UAthenaSeasonPageWidget_C::PageLeft__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonPageWidget_C", "PageLeft__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonPageWidget_C_PageLeft__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonPageWidget_C", "PageLeft__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

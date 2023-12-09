@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -33,11 +30,11 @@ struct UAlterationWidget_C_HasValidTexture_Params
 {
 public:
 	bool                                         ValidBrush;                                        // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4736[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65DA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortAlterationInfo*                   CallFunc_GetAlterationInfo_ReturnValue;            // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortAlterationItemDefinition*         CallFunc_GetAlterationDefintion_ReturnValue;       // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4737[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65DB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UTexture2D>             CallFunc_GetSmallPreviewImage_ReturnValue;         // 0x20(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_IsValidSoftObjectReference_ReturnValue;   // 0x48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -89,14 +86,14 @@ public:
 	bool                                         CallFunc_ShouldFadeAlteration_ReturnValue;         // 0x7(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_ShouldFadeAlteration_ReturnValue_1;       // 0x9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4738[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65DE[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortAlterationInfo*                   CallFunc_GetAlterationInfo_ReturnValue;            // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          K2Node_Select_Default_1;                           // 0x18(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_GetRequiredLevel_ReturnValue;             // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4739[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65E0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x30(0x40)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x70(0x10)(ZeroConstructor, ReferenceParm)
-	class FText                                  CallFunc_Format_ReturnValue;                       // 0x80(0x18)()
+	class FText                                  CallFunc_Format_ReturnValue;                       // 0x80(0x18)(None)
 	bool                                         CallFunc_ShouldFadeAlteration_ReturnValue_2;       // 0x98(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  K2Node_Select_Default_2;                           // 0x99(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -107,10 +104,10 @@ struct UAlterationWidget_C_SetEvolutionDetails_Params
 {
 public:
 	bool                                         Temp_bool_Variable;                                // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_473A[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65E3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortAlterationInfo*                   CallFunc_GetAlterationInfo_ReturnValue;            // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsAlterationHighlighted_ReturnValue;      // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_473B[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65E4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                K2Node_Select_Default;                             // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -122,20 +119,20 @@ public:
 	class UFortAlterationInfo*                   LocalAlterationInfo;                               // 0x0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*              PipMID;                                            // 0x8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable;                                // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_473C[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65E5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortAlterationInfo*                   CallFunc_GetAlterationInfo_ReturnValue;            // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Temp_float_Variable;                               // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_473D[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65E6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortAlterationItemDefinition*         CallFunc_GetAlterationDefintion_ReturnValue;       // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortRarity                       CallFunc_GetRarity_ReturnValue;                    // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_473E[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	struct FFortRarityItemData                   CallFunc_BPGetRarityData_ReturnValue;              // 0x38(0x80)()
+	uint8                                        Pad_65E7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FFortRarityItemData                   CallFunc_BPGetRarityData_ReturnValue;              // 0x38(0x80)(None)
 	bool                                         Temp_bool_Variable_1;                              // 0xB8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_473F[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65E8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortAlterationInfo*                   CallFunc_GetAlterationInfo_ReturnValue_1;          // 0xC0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItem*                             CallFunc_GetCorrespondingItem_ReturnValue;         // 0xC8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortItemType                     CallFunc_GetType_ReturnValue;                      // 0xD0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4740[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65E9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortAlterationItemDefinition*         CallFunc_GetAlterationDefintion_ReturnValue_1;     // 0xD8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0xE0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class EFortAlteration                   CallFunc_GetAlterationType_ReturnValue;            // 0xE1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -144,7 +141,7 @@ public:
 	bool                                         CallFunc_IsFreeAlterationChoice_ReturnValue;       // 0xE4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsFreeAlterationChoice_ReturnValue_1;     // 0xE5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsAlterationHighlighted_ReturnValue;      // 0xE6(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4741[0x1];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65EA[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInstanceDynamic*              CallFunc_GetDynamicMaterial_ReturnValue;           // 0xE8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetCurrentPipCount_ReturnValue;           // 0xF0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_Select_Default;                             // 0xF4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -169,26 +166,26 @@ public:
 	enum class ESlateVisibility                  Temp_byte_Variable_5;                              // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_3;                              // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x12(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4742[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65EC[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortAlterationInfo*                   CallFunc_GetAlterationInfo_ReturnValue;            // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsFreeAlterationChoice_ReturnValue;       // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4743[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65ED[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                Temp_class_Variable;                               // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x31(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4744[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  CallFunc_GetSingleLineDescription_ReturnValue;     // 0x38(0x18)()
-	class FText                                  CallFunc_GetShortDescription_ReturnValue;          // 0x50(0x18)()
+	uint8                                        Pad_65EE[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_GetSingleLineDescription_ReturnValue;     // 0x38(0x18)(None)
+	class FText                                  CallFunc_GetShortDescription_ReturnValue;          // 0x50(0x18)(None)
 	class UFortAlterationInfo*                   CallFunc_GetAlterationInfo_ReturnValue_1;          // 0x68(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                  CallFunc_GetDisplayName_ReturnValue;               // 0x70(0x18)()
+	class FText                                  CallFunc_GetDisplayName_ReturnValue;               // 0x70(0x18)(None)
 	class UFortAlterationItemDefinition*         CallFunc_GetAlterationDefintion_ReturnValue;       // 0x88(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_ShouldFadeAlteration_ReturnValue;         // 0x90(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  K2Node_Select_Default_1;                           // 0x91(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4745[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65EF[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                Temp_class_Variable_1;                             // 0x98(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                               K2Node_Select_Default_2;                           // 0xA0(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_4;                              // 0xA8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4746[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65F0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                K2Node_Select_Default_3;                           // 0xB0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select_Default_4;                           // 0xB8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -200,9 +197,9 @@ struct UAlterationWidget_C_InitIcon_Params
 public:
 	class UFortAlterationItemDefinition*         AlterationDef;                                     // 0x0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasValidTexture_ValidBrush;               // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4747[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65F1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UTexture2D>             CallFunc_GetValidLazyTexture_ReturnValue;          // 0x10(0x28)(HasGetValueTypeHash)
-	struct FSlateBrush                           CallFunc_ResizeBrush_ResizedBrush;                 // 0x38(0x88)()
+	struct FSlateBrush                           CallFunc_ResizeBrush_ResizedBrush;                 // 0x38(0x88)(None)
 };
 
 // 0x15 (0x15 - 0x0)
@@ -211,7 +208,7 @@ struct UAlterationWidget_C_ShouldFadeAlteration_Params
 {
 public:
 	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4748[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65F2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortAlterationInfo*                   CallFunc_GetAlterationInfo_ReturnValue;            // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsAlterationUnlocked_ReturnValue;         // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsAlterationHighlighted_ReturnValue;      // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -227,20 +224,13 @@ struct UAlterationWidget_C_GetHighlightColor_Params
 public:
 	struct FLinearColor                          ReturnValue;                                       // 0x0(0x10)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable;                                // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4749[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65F3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          Temp_struct_Variable;                              // 0x14(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_474A[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65F4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortAlterationInfo*                   CallFunc_GetAlterationInfo_ReturnValue;            // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsAlterationHighlighted_ReturnValue;      // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_474B[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65F5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          K2Node_Select_Default;                             // 0x34(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function AlterationWidget.AlterationWidget_C.OnSetup
-struct UAlterationWidget_C_OnSetup_Params
-{
-public:
 };
 
 // 0x4 (0x4 - 0x0)
@@ -254,6 +244,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

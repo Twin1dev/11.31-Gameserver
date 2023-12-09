@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -24,11 +21,8 @@ public:
 	class UImage*                                RadialHoldButtonBacking_Left;                      // 0xBE0(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	float                                        HoldProgressOffset;                                // 0xBE8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("WinterQuest_ShakePrompt_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UWinterQuest_ShakePrompt_C* GetDefaultObj();
 
 	void UpdateShakePercentage(float InPercentage, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue);
 	void PlayShakeAnim(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
@@ -37,6 +31,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

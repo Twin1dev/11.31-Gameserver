@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass Mustache_SkBP.Mustache_SkBP_C
+// (None)
+
+class UClass* UMustache_SkBP_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Mustache_SkBP_C");
+
+	return Clss;
+}
+
+
+// Mustache_SkBP_C Mustache_SkBP.Default__Mustache_SkBP_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMustache_SkBP_C* UMustache_SkBP_C::GetDefaultObj()
+{
+	static class UMustache_SkBP_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMustache_SkBP_C*>(UMustache_SkBP_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Mustache_SkBP.Mustache_SkBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void UMustache_SkBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("Mustache_SkBP_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UMustache_SkBP_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Mustache_SkBP_C", "AnimGraph");
+
+	Params::UMustache_SkBP_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -42,9 +70,12 @@ void UMustache_SkBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 
 void UMustache_SkBP_C::ExecuteUbergraph_Mustache_SkBP(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("Mustache_SkBP_C", "ExecuteUbergraph_Mustache_SkBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UMustache_SkBP_C_ExecuteUbergraph_Mustache_SkBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Mustache_SkBP_C", "ExecuteUbergraph_Mustache_SkBP");
+
+	Params::UMustache_SkBP_C_ExecuteUbergraph_Mustache_SkBP_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -54,6 +85,4 @@ void UMustache_SkBP_C::ExecuteUbergraph_Mustache_SkBP(int32 EntryPoint)
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

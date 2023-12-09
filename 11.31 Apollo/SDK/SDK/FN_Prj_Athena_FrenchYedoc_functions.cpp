@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Prj_Athena_FrenchYedoc.Prj_Athena_FrenchYedoc_C
+// (Actor)
+
+class UClass* APrj_Athena_FrenchYedoc_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Prj_Athena_FrenchYedoc_C");
+
+	return Clss;
+}
+
+
+// Prj_Athena_FrenchYedoc_C Prj_Athena_FrenchYedoc.Default__Prj_Athena_FrenchYedoc_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class APrj_Athena_FrenchYedoc_C* APrj_Athena_FrenchYedoc_C::GetDefaultObj()
+{
+	static class APrj_Athena_FrenchYedoc_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APrj_Athena_FrenchYedoc_C*>(APrj_Athena_FrenchYedoc_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function Prj_Athena_FrenchYedoc.Prj_Athena_FrenchYedoc_C.ReceiveHit
@@ -29,9 +54,12 @@ namespace SDK
 
 void APrj_Athena_FrenchYedoc_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FrenchYedoc_C", "ReceiveHit");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FrenchYedoc_C_ReceiveHit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FrenchYedoc_C", "ReceiveHit");
+
+	Params::APrj_Athena_FrenchYedoc_C_ReceiveHit_Params Parms{};
 
 	Parms.MyComp = MyComp;
 	Parms.Other = Other;
@@ -53,12 +81,14 @@ void APrj_Athena_FrenchYedoc_C::ReceiveHit(class UPrimitiveComponent* MyComp, cl
 
 void APrj_Athena_FrenchYedoc_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FrenchYedoc_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FrenchYedoc_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FrenchYedoc_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -72,9 +102,12 @@ void APrj_Athena_FrenchYedoc_C::ReceiveBeginPlay()
 
 void APrj_Athena_FrenchYedoc_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent, bool bIsFirstBody)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FrenchYedoc_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FrenchYedoc_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FrenchYedoc_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
+
+	Params::APrj_Athena_FrenchYedoc_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature_Params Parms{};
 
 	Parms.WaterBody = WaterBody;
 	Parms.WaterInteractionComponent = WaterInteractionComponent;
@@ -91,12 +124,14 @@ void APrj_Athena_FrenchYedoc_C::BndEvt__WaterInteractionComponent_K2Node_Compone
 
 void APrj_Athena_FrenchYedoc_C::Play_Grenade_Impact_Sound()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FrenchYedoc_C", "Play Grenade Impact Sound");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FrenchYedoc_C_Play_Grenade_Impact_Sound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FrenchYedoc_C", "Play Grenade Impact Sound");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -133,9 +168,12 @@ void APrj_Athena_FrenchYedoc_C::Play_Grenade_Impact_Sound()
 
 void APrj_Athena_FrenchYedoc_C::ExecuteUbergraph_Prj_Athena_FrenchYedoc(int32 EntryPoint, class UPrimitiveComponent* K2Node_Event_MyComp, class AActor* K2Node_Event_Other, class UPrimitiveComponent* K2Node_Event_OtherComp, bool K2Node_Event_bSelfMoved, const struct FVector& K2Node_Event_HitLocation, const struct FVector& K2Node_Event_HitNormal, const struct FVector& K2Node_Event_NormalImpulse, const struct FHitResult& K2Node_Event_Hit, bool CallFunc_IsServer_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, float CallFunc_Add_FloatFloat_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class AActor* CallFunc_FinishSpawningActor_ReturnValue, class AFortWaterBodyActor* K2Node_ComponentBoundEvent_WaterBody, class UFortWaterInteractionComponent* K2Node_ComponentBoundEvent_WaterInteractionComponent, bool K2Node_ComponentBoundEvent_bIsFirstBody, bool CallFunc_IsDedicatedServer_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FrenchYedoc_C", "ExecuteUbergraph_Prj_Athena_FrenchYedoc");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FrenchYedoc_C", "ExecuteUbergraph_Prj_Athena_FrenchYedoc");
+
+	Params::APrj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_MyComp = K2Node_Event_MyComp;
@@ -170,6 +208,4 @@ void APrj_Athena_FrenchYedoc_C::ExecuteUbergraph_Prj_Athena_FrenchYedoc(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -46,11 +43,9 @@ public:
 	struct FLiveLinkSubjectPreset                SubjectPreset;                                     // 0x48(0x38)(NoDestructor, NativeAccessSpecifierPublic)
 	TArray<bool>                                 ChannelMask;                                       // 0x80(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FLiveLinkSubSectionData>       SubSectionsData;                                   // 0x90(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1A4D[0x28];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_7F0[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

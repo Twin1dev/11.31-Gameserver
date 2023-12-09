@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -20,11 +17,8 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xA38(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UFortPlaysetGrenadeInputComponent*     AthenaPlaysetGrenadeInput;                         // 0xA40(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_Grenade_Playset_Athena_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_Grenade_Playset_Athena_C* GetDefaultObj();
 
 	void K2_OnUnEquip();
 	void OnWeaponAttached();
@@ -34,6 +28,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

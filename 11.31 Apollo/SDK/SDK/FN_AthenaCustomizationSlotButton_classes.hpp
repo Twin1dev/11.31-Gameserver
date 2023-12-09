@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -32,19 +29,16 @@ public:
 	class FText                                  TooltipBody;                                       // 0xC10(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class FText                                  TooltipHeader;                                     // 0xC28(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                         ShowSubTypeIcon;                                   // 0xC40(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                        Pad_6353[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5C8A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateBrush                           SubTypeIcon;                                       // 0xC48(0x88)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                         bSuppressTooltip;                                  // 0xCD0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                        Pad_6354[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5C8B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        TypeIconVerticalOffset;                            // 0xCD4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FSlateBrush                           EmptyImage_M;                                      // 0xCD8(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateBrush                           EmptyImage_S;                                      // 0xD60(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaCustomizationSlotButton_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaCustomizationSlotButton_C* GetDefaultObj();
 
 	class FString GetSlotDebugName(const class FString& CallFunc_Conv_IntToString_ReturnValue, const class FString& CallFunc_GetEnumeratorUserFriendlyName_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_1);
 	void HandleActiveStateChanged(bool CosmeticAvailable, bool Active, class UMaterialInterface* Temp_object_Variable, class UMaterialInterface* Temp_object_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, bool CallFunc_BooleanAND_ReturnValue, class UMaterialInterface* K2Node_Select_Default, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_IsSlotFilled_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_1);
@@ -57,6 +51,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

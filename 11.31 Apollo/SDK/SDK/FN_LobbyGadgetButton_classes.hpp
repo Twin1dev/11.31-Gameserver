@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -27,11 +24,8 @@ public:
 	UMulticastInlineDelegateProperty_            OnButtonHovered;                                   // 0x2A0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         bLocked;                                           // 0x2B0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LobbyGadgetButton_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULobbyGadgetButton_C* GetDefaultObj();
 
 	void Focus(class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue);
 	void GetLocked(bool* bLocked);
@@ -48,6 +42,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

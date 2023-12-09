@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -33,11 +30,8 @@ public:
 	TSoftClassPtr<class UUserWidget>             CreativeOptionsSoftClass;                          // 0x5D0(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	class UClass*                                CreativeOptionsClass;                              // 0x5F8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaMatchmakingPlayLegacy_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaMatchmakingPlayLegacy_C* GetDefaultObj();
 
 	void OnLoaded_624287AB42851447B4164286AAD2D464(class UClass* Loaded);
 	void Construct();
@@ -58,6 +52,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

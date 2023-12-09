@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -37,7 +34,7 @@ public:
 	bool                                         Accept_Input;                                      // 0x57C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         Video_Tab_Selected;                                // 0x57D(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         Apply_Visible;                                     // 0x57E(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6082[0x1];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6129[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UFortOptionsTab*>               AllTabWidgets;                                     // 0x580(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 	class UProgressModalWidget_C*                SavingModal;                                       // 0x590(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                VideoTabClass;                                     // 0x598(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -45,7 +42,7 @@ public:
 	class UClass*                                GamepadTabClass;                                   // 0x5A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                InputTabClass;                                     // 0x5B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        LoadCount;                                         // 0x5B8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6083[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_612B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftClassPtr<class UObject>                 TabGamePad;                                        // 0x5C0(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	TSoftClassPtr<class UObject>                 TabAccount;                                        // 0x5E8(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	TSoftClassPtr<class UObject>                 TabAccountV2;                                      // 0x610(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
@@ -70,11 +67,8 @@ public:
 	struct FSlateBrush                           ControllerSensitivity;                             // 0x7E8(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UClass*                                ControllerSensitivityTabClass;                     // 0x870(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("OptionsMenu_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UOptionsMenu_C* GetDefaultObj();
 
 	void RequestTab(class FName Tab, bool CallFunc_SelectTabByID_ReturnValue);
 	void CreateMobileBackButton(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_IsMobileGame_ReturnValue, enum class ESlateVisibility K2Node_Select_Default);
@@ -153,6 +147,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

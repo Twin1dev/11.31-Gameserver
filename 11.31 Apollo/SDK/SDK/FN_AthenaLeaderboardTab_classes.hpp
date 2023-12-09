@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -46,11 +43,8 @@ public:
 	class USoundBase*                            OnQueryFinishedSound;                              // 0x750(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FDataTableRowHandle                   BackAction;                                        // 0x758(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaLeaderboardTab_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaLeaderboardTab_C* GetDefaultObj();
 
 	void Init_Back_Action(class UCommonInputSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_HasInputActionHandler_ReturnValue);
 	void HandleBackAction(bool* PassThrough);
@@ -80,6 +74,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

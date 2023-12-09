@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass MissionGen_Race.MissionGen_Race_C
+// (None)
+
+class UClass* UMissionGen_Race_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MissionGen_Race_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// MissionGen_Race_C MissionGen_Race.Default__MissionGen_Race_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMissionGen_Race_C* UMissionGen_Race_C::GetDefaultObj()
+{
+	static class UMissionGen_Race_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMissionGen_Race_C*>(UMissionGen_Race_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

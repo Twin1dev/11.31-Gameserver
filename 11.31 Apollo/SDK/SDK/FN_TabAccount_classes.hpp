@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -81,18 +78,15 @@ public:
 	class FText                                  PlayerSurveysToggleDisplayText;                    // 0x4F0(0x18)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	class FText                                  PlayerSurveysToggleHoverText;                      // 0x508(0x18)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance)
 	enum class ESettingType                      PlayerSurveysToggleSetting;                        // 0x520(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_60C3[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2928[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        PlayerSurveysTogglePreviousValue;                  // 0x524(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESettingType                      NotifyWhenPlayingToggleSetting;                    // 0x528(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_60C4[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2929[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        NotifyWhenPlayingTogglePreviousValue;              // 0x52C(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        LocalNotificationsTogglePreviousValue;             // 0x530(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("TabAccount_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UTabAccount_C* GetDefaultObj();
 
 	void HandleUserSettingsUINeedsUpdate();
 	void InitPreviousValues(class UFortSettingsContext* CallFunc_GetContext_ReturnValue, int32 CallFunc_GetRotatorSettingValue_ReturnValue);
@@ -136,6 +130,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

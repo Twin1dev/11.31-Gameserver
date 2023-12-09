@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass Announce_OnboardingSatelliteCine.Announce_OnboardingSatelliteCine_C
+// (Actor)
+
+class UClass* AAnnounce_OnboardingSatelliteCine_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Announce_OnboardingSatelliteCine_C");
+
+	return Clss;
+}
+
+
+// Announce_OnboardingSatelliteCine_C Announce_OnboardingSatelliteCine.Default__Announce_OnboardingSatelliteCine_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AAnnounce_OnboardingSatelliteCine_C* AAnnounce_OnboardingSatelliteCine_C::GetDefaultObj()
+{
+	static class AAnnounce_OnboardingSatelliteCine_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AAnnounce_OnboardingSatelliteCine_C*>(AAnnounce_OnboardingSatelliteCine_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Announce_OnboardingSatelliteCine.Announce_OnboardingSatelliteCine_C.OnClientAnnouncementStop
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
 
 void AAnnounce_OnboardingSatelliteCine_C::OnClientAnnouncementStop()
 {
-	static auto Func = Class->GetFunction("Announce_OnboardingSatelliteCine_C", "OnClientAnnouncementStop");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_OnboardingSatelliteCine_C_OnClientAnnouncementStop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_OnboardingSatelliteCine_C", "OnClientAnnouncementStop");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AAnnounce_OnboardingSatelliteCine_C::OnClientAnnouncementStop()
 
 void AAnnounce_OnboardingSatelliteCine_C::OnPlayerSkippedCutscene()
 {
-	static auto Func = Class->GetFunction("Announce_OnboardingSatelliteCine_C", "OnPlayerSkippedCutscene");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_OnboardingSatelliteCine_C_OnPlayerSkippedCutscene_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_OnboardingSatelliteCine_C", "OnPlayerSkippedCutscene");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +85,12 @@ void AAnnounce_OnboardingSatelliteCine_C::OnPlayerSkippedCutscene()
 
 void AAnnounce_OnboardingSatelliteCine_C::HandleClientEvent_CinematicFinishedPlaying(class UObject* EventSource, class UObject* EventFocus, struct FFortClientEvent& ClientEvent)
 {
-	static auto Func = Class->GetFunction("Announce_OnboardingSatelliteCine_C", "HandleClientEvent_CinematicFinishedPlaying");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_OnboardingSatelliteCine_C_HandleClientEvent_CinematicFinishedPlaying_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_OnboardingSatelliteCine_C", "HandleClientEvent_CinematicFinishedPlaying");
+
+	Params::AAnnounce_OnboardingSatelliteCine_C_HandleClientEvent_CinematicFinishedPlaying_Params Parms{};
 
 	Parms.EventSource = EventSource;
 	Parms.EventFocus = EventFocus;
@@ -75,12 +107,14 @@ void AAnnounce_OnboardingSatelliteCine_C::HandleClientEvent_CinematicFinishedPla
 
 void AAnnounce_OnboardingSatelliteCine_C::HandleAllowSkip()
 {
-	static auto Func = Class->GetFunction("Announce_OnboardingSatelliteCine_C", "HandleAllowSkip");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_OnboardingSatelliteCine_C_HandleAllowSkip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_OnboardingSatelliteCine_C", "HandleAllowSkip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -91,12 +125,14 @@ void AAnnounce_OnboardingSatelliteCine_C::HandleAllowSkip()
 
 void AAnnounce_OnboardingSatelliteCine_C::OnEnteredCinematicState()
 {
-	static auto Func = Class->GetFunction("Announce_OnboardingSatelliteCine_C", "OnEnteredCinematicState");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_OnboardingSatelliteCine_C_OnEnteredCinematicState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_OnboardingSatelliteCine_C", "OnEnteredCinematicState");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -116,9 +152,12 @@ void AAnnounce_OnboardingSatelliteCine_C::OnEnteredCinematicState()
 
 void AAnnounce_OnboardingSatelliteCine_C::ExecuteUbergraph_Announce_OnboardingSatelliteCine(int32 EntryPoint, bool Temp_bool_IsClosed_Variable, class UObject* K2Node_HandleClientEvent_EventSource, class UObject* K2Node_HandleClientEvent_EventFocus, const struct FFortClientEvent& K2Node_HandleClientEvent_ClientEvent, bool Temp_bool_Has_Been_Initd_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, class UFortMediaInfo* CallFunc_SpawnObject_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Announce_OnboardingSatelliteCine_C", "ExecuteUbergraph_Announce_OnboardingSatelliteCine");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_OnboardingSatelliteCine_C", "ExecuteUbergraph_Announce_OnboardingSatelliteCine");
+
+	Params::AAnnounce_OnboardingSatelliteCine_C_ExecuteUbergraph_Announce_OnboardingSatelliteCine_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_IsClosed_Variable = Temp_bool_IsClosed_Variable;
@@ -136,6 +175,4 @@ void AAnnounce_OnboardingSatelliteCine_C::ExecuteUbergraph_Announce_OnboardingSa
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

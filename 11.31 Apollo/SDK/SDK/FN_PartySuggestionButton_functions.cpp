@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass PartySuggestionButton.PartySuggestionButton_C
+// (None)
+
+class UClass* UPartySuggestionButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PartySuggestionButton_C");
+
+	return Clss;
+}
+
+
+// PartySuggestionButton_C PartySuggestionButton.Default__PartySuggestionButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPartySuggestionButton_C* UPartySuggestionButton_C::GetDefaultObj()
+{
+	static class UPartySuggestionButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPartySuggestionButton_C*>(UPartySuggestionButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function PartySuggestionButton.PartySuggestionButton_C.SetupMIDReferences
@@ -31,9 +56,12 @@ namespace SDK
 
 void UPartySuggestionButton_C::SetupMIDReferences(bool CallFunc_IsValid_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_2, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_3, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_4)
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "SetupMIDReferences");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_SetupMIDReferences_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "SetupMIDReferences");
+
+	Params::UPartySuggestionButton_C_SetupMIDReferences_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
@@ -68,9 +96,12 @@ void UPartySuggestionButton_C::SetupMIDReferences(bool CallFunc_IsValid_ReturnVa
 
 void UPartySuggestionButton_C::SetMainMIDs(class UMaterialInstanceDynamic* BorderMID, class UMaterialInstanceDynamic* TailMID, class UMaterialInstanceDynamic* SparklesMID, const struct FLinearColor& LC_Cur_Border_L, const struct FLinearColor& LC_CurBorder_R, float CurMIDScalar_ShapeChange, bool CallFunc_IsValid_ReturnValue, const struct FLinearColor& CallFunc_K2_GetVectorParameterValue_ReturnValue, const struct FLinearColor& CallFunc_K2_GetVectorParameterValue_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, float CallFunc_K2_GetScalarParameterValue_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "SetMainMIDs");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_SetMainMIDs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "SetMainMIDs");
+
+	Params::UPartySuggestionButton_C_SetMainMIDs_Params Parms{};
 
 	Parms.BorderMID = BorderMID;
 	Parms.TailMID = TailMID;
@@ -97,9 +128,12 @@ void UPartySuggestionButton_C::SetMainMIDs(class UMaterialInstanceDynamic* Borde
 
 void UPartySuggestionButton_C::InitPhysAnim(const struct FFloatSpringState& K2Node_MakeStruct_FloatSpringState, const struct FFloatSpringState& K2Node_MakeStruct_FloatSpringState_1)
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "InitPhysAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_InitPhysAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "InitPhysAnim");
+
+	Params::UPartySuggestionButton_C_InitPhysAnim_Params Parms{};
 
 	Parms.K2Node_MakeStruct_FloatSpringState = K2Node_MakeStruct_FloatSpringState;
 	Parms.K2Node_MakeStruct_FloatSpringState_1 = K2Node_MakeStruct_FloatSpringState_1;
@@ -115,12 +149,14 @@ void UPartySuggestionButton_C::InitPhysAnim(const struct FFloatSpringState& K2No
 
 void UPartySuggestionButton_C::InitMIDs()
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "InitMIDs");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_InitMIDs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "InitMIDs");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -131,12 +167,14 @@ void UPartySuggestionButton_C::InitMIDs()
 
 void UPartySuggestionButton_C::HandleOutroAnimationFinished()
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "HandleOutroAnimationFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_HandleOutroAnimationFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "HandleOutroAnimationFinished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -147,12 +185,14 @@ void UPartySuggestionButton_C::HandleOutroAnimationFinished()
 
 void UPartySuggestionButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -165,9 +205,12 @@ void UPartySuggestionButton_C::Construct()
 
 void UPartySuggestionButton_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "Tick");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_Tick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "Tick");
+
+	Params::UPartySuggestionButton_C_Tick_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InDeltaTime = InDeltaTime;
@@ -183,12 +226,14 @@ void UPartySuggestionButton_C::Tick(const struct FGeometry& MyGeometry, float In
 
 void UPartySuggestionButton_C::PlayIntro()
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "PlayIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_PlayIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "PlayIntro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -199,12 +244,14 @@ void UPartySuggestionButton_C::PlayIntro()
 
 void UPartySuggestionButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -215,12 +262,14 @@ void UPartySuggestionButton_C::BP_OnHovered()
 
 void UPartySuggestionButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -234,9 +283,12 @@ void UPartySuggestionButton_C::BP_OnUnhovered()
 
 void UPartySuggestionButton_C::OnDisplayInfoUpdated(struct FDateTime& LFGTime, bool bIsInvited, bool bIsPlaying)
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "OnDisplayInfoUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_OnDisplayInfoUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "OnDisplayInfoUpdated");
+
+	Params::UPartySuggestionButton_C_OnDisplayInfoUpdated_Params Parms{};
 
 	Parms.LFGTime = LFGTime;
 	Parms.bIsInvited = bIsInvited;
@@ -253,12 +305,14 @@ void UPartySuggestionButton_C::OnDisplayInfoUpdated(struct FDateTime& LFGTime, b
 
 void UPartySuggestionButton_C::OnSuggestionAccepted()
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "OnSuggestionAccepted");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_OnSuggestionAccepted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "OnSuggestionAccepted");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -269,12 +323,14 @@ void UPartySuggestionButton_C::OnSuggestionAccepted()
 
 void UPartySuggestionButton_C::OnDismissSuggestion()
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "OnDismissSuggestion");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_OnDismissSuggestion_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "OnDismissSuggestion");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -285,12 +341,14 @@ void UPartySuggestionButton_C::OnDismissSuggestion()
 
 void UPartySuggestionButton_C::OnNewSuggestionAdded()
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "OnNewSuggestionAdded");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_OnNewSuggestionAdded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "OnNewSuggestionAdded");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -301,12 +359,14 @@ void UPartySuggestionButton_C::OnNewSuggestionAdded()
 
 void UPartySuggestionButton_C::PlayOutro()
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "PlayOutro");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_PlayOutro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "PlayOutro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -317,12 +377,14 @@ void UPartySuggestionButton_C::PlayOutro()
 
 void UPartySuggestionButton_C::OnInitialized()
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "OnInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_OnInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "OnInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -333,12 +395,14 @@ void UPartySuggestionButton_C::OnInitialized()
 
 void UPartySuggestionButton_C::OnSuggestionChanged()
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "OnSuggestionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_OnSuggestionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "OnSuggestionChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -389,9 +453,12 @@ void UPartySuggestionButton_C::OnSuggestionChanged()
 
 void UPartySuggestionButton_C::ExecuteUbergraph_PartySuggestionButton(int32 EntryPoint, bool Temp_bool_Variable, bool Temp_bool_Variable_1, float Temp_float_Variable, bool Temp_bool_Variable_2, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, class UFortGlobalUIContext* CallFunc_GetLocalPlayerSubsystem_ReturnValue, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, const struct FDateTime& CallFunc_DateTimeMinValue_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, float CallFunc_GetAnimationCurrentTime_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, bool CallFunc_IsAnimationPlaying_ReturnValue, float K2Node_Select_Default, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime, bool CallFunc_Less_FloatFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_4, float CallFunc_GetWorldDeltaSeconds_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, float CallFunc_FloatSpringInterp_ReturnValue, class UMaterialInstanceDynamic* K2Node_Select_Default_1, const struct FLinearColor& K2Node_Select_Default_2, bool CallFunc_IsPartyInProgressEnabled_ReturnValue, const struct FDateTime& K2Node_Event_LFGTime, bool K2Node_Event_bIsInvited, bool K2Node_Event_bIsPlaying, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_NotEqual_DateTimeDateTime_ReturnValue, bool CallFunc_IsVisible_ReturnValue, bool CallFunc_IsAnimationPlaying_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_5, bool CallFunc_IsAnimationPlaying_ReturnValue_2, bool Temp_bool_Variable_3, class UMaterialInstanceDynamic* K2Node_Select_Default_3)
 {
-	static auto Func = Class->GetFunction("PartySuggestionButton_C", "ExecuteUbergraph_PartySuggestionButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartySuggestionButton_C_ExecuteUbergraph_PartySuggestionButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartySuggestionButton_C", "ExecuteUbergraph_PartySuggestionButton");
+
+	Params::UPartySuggestionButton_C_ExecuteUbergraph_PartySuggestionButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -440,6 +507,4 @@ void UPartySuggestionButton_C::ExecuteUbergraph_PartySuggestionButton(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

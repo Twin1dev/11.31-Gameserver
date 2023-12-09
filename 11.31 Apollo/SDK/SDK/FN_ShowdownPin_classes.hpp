@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -37,16 +34,13 @@ public:
 	bool                                         bRepresentsTournamentBestPin;                      // 0x698(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                         DEVShowPin;                                        // 0x699(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         HidePoints;                                        // 0x69A(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6459[0x1];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6E19[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        DEVPinScore;                                       // 0x69C(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ColorSilhouette;                                   // 0x6A0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         HideBackplate;                                     // 0x6A1(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ShowdownPin_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UShowdownPin_C* GetDefaultObj();
 
 	void Refresh(enum class EFortShowdownPinState PinState, enum class EFortShowdownPinState Temp_byte_Variable, bool Temp_bool_Variable, enum class EFortShowdownPinState Temp_byte_Variable_1, int32 CallFunc_GetScoreToDisplay_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, class UTextBlock* K2Node_Select_Default, class UWidget* K2Node_Select_Default_1, enum class EFortShowdownPinState CallFunc_GetEventPinState_ReturnValue, enum class EFortShowdownPinState CallFunc_GetTournamentBestPinState_ReturnValue, enum class EFortShowdownPinState K2Node_Select_Default_2);
 	void RefreshDataBP();
@@ -60,6 +54,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

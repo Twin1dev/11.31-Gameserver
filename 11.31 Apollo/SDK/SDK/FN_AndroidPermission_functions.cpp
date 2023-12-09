@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,62 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class AndroidPermission.AndroidPermissionCallbackProxy
+// (None)
+
+class UClass* UAndroidPermissionCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AndroidPermissionCallbackProxy");
+
+	return Clss;
+}
+
+
+// AndroidPermissionCallbackProxy AndroidPermission.Default__AndroidPermissionCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UAndroidPermissionCallbackProxy* UAndroidPermissionCallbackProxy::GetDefaultObj()
+{
+	static class UAndroidPermissionCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAndroidPermissionCallbackProxy*>(UAndroidPermissionCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class AndroidPermission.AndroidPermissionFunctionLibrary
+// (None)
+
+class UClass* UAndroidPermissionFunctionLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AndroidPermissionFunctionLibrary");
+
+	return Clss;
+}
+
+
+// AndroidPermissionFunctionLibrary AndroidPermission.Default__AndroidPermissionFunctionLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UAndroidPermissionFunctionLibrary* UAndroidPermissionFunctionLibrary::GetDefaultObj()
+{
+	static class UAndroidPermissionFunctionLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAndroidPermissionFunctionLibrary*>(UAndroidPermissionFunctionLibrary::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AndroidPermission.AndroidPermissionFunctionLibrary.CheckPermission
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -23,19 +76,22 @@ namespace SDK
 
 bool UAndroidPermissionFunctionLibrary::CheckPermission(const class FString& Permission)
 {
-	static auto Func = Class->GetFunction("AndroidPermissionFunctionLibrary", "CheckPermission");
+	static class UFunction* Func = nullptr;
 
-	Params::UAndroidPermissionFunctionLibrary_CheckPermission_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AndroidPermissionFunctionLibrary", "CheckPermission");
+
+	Params::UAndroidPermissionFunctionLibrary_CheckPermission_Params Parms{};
 
 	Parms.Permission = Permission;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -50,19 +106,22 @@ bool UAndroidPermissionFunctionLibrary::CheckPermission(const class FString& Per
 
 class UAndroidPermissionCallbackProxy* UAndroidPermissionFunctionLibrary::AcquirePermissions(TArray<class FString>& Permissions)
 {
-	static auto Func = Class->GetFunction("AndroidPermissionFunctionLibrary", "AcquirePermissions");
+	static class UFunction* Func = nullptr;
 
-	Params::UAndroidPermissionFunctionLibrary_AcquirePermissions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AndroidPermissionFunctionLibrary", "AcquirePermissions");
+
+	Params::UAndroidPermissionFunctionLibrary_AcquirePermissions_Params Parms{};
 
 	Parms.Permissions = Permissions;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -70,6 +129,4 @@ class UAndroidPermissionCallbackProxy* UAndroidPermissionFunctionLibrary::Acquir
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

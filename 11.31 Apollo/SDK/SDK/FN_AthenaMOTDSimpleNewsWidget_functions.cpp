@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaMOTDSimpleNewsWidget.AthenaMOTDSimpleNewsWidget_C
+// (None)
+
+class UClass* UAthenaMOTDSimpleNewsWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaMOTDSimpleNewsWidget_C");
+
+	return Clss;
+}
+
+
+// AthenaMOTDSimpleNewsWidget_C AthenaMOTDSimpleNewsWidget.Default__AthenaMOTDSimpleNewsWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaMOTDSimpleNewsWidget_C* UAthenaMOTDSimpleNewsWidget_C::GetDefaultObj()
+{
+	static class UAthenaMOTDSimpleNewsWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaMOTDSimpleNewsWidget_C*>(UAthenaMOTDSimpleNewsWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaMOTDSimpleNewsWidget.AthenaMOTDSimpleNewsWidget_C.SetDynamicColors
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,7 +47,7 @@ namespace SDK
 // struct FColor                      Light                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                CallFunc_Conv_ColorToLinearColor_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 // struct FLinearColor                CallFunc_Conv_ColorToLinearColor_ReturnValue_1                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                CallFunc_Multiply_LinearColorFloat_ReturnValue                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -30,9 +55,12 @@ namespace SDK
 
 void UAthenaMOTDSimpleNewsWidget_C::SetDynamicColors(const struct FColor& Dark, const struct FColor& Light, const struct FLinearColor& CallFunc_Conv_ColorToLinearColor_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, const struct FSlateColor& K2Node_MakeStruct_SlateColor, const struct FLinearColor& CallFunc_Conv_ColorToLinearColor_ReturnValue_1, const struct FLinearColor& CallFunc_Multiply_LinearColorFloat_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "SetDynamicColors");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDSimpleNewsWidget_C_SetDynamicColors_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "SetDynamicColors");
+
+	Params::UAthenaMOTDSimpleNewsWidget_C_SetDynamicColors_Params Parms{};
 
 	Parms.Dark = Dark;
 	Parms.Light = Light;
@@ -56,9 +84,12 @@ void UAthenaMOTDSimpleNewsWidget_C::SetDynamicColors(const struct FColor& Dark, 
 
 void UAthenaMOTDSimpleNewsWidget_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDSimpleNewsWidget_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "PreConstruct");
+
+	Params::UAthenaMOTDSimpleNewsWidget_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -74,9 +105,12 @@ void UAthenaMOTDSimpleNewsWidget_C::PreConstruct(bool IsDesignTime)
 
 void UAthenaMOTDSimpleNewsWidget_C::OnPopulateNews(struct FAthenaNewsEntry& NewsEntry)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "OnPopulateNews");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDSimpleNewsWidget_C_OnPopulateNews_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "OnPopulateNews");
+
+	Params::UAthenaMOTDSimpleNewsWidget_C_OnPopulateNews_Params Parms{};
 
 	Parms.NewsEntry = NewsEntry;
 
@@ -91,12 +125,14 @@ void UAthenaMOTDSimpleNewsWidget_C::OnPopulateNews(struct FAthenaNewsEntry& News
 
 void UAthenaMOTDSimpleNewsWidget_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDSimpleNewsWidget_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -119,9 +155,12 @@ void UAthenaMOTDSimpleNewsWidget_C::BP_OnActivated()
 
 void UAthenaMOTDSimpleNewsWidget_C::ExecuteUbergraph_AthenaMOTDSimpleNewsWidget(int32 EntryPoint, bool Temp_bool_Variable, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, bool Temp_bool_Variable_3, bool K2Node_Event_IsDesignTime, const struct FColor& K2Node_Select_Default, const struct FAthenaNewsEntry& K2Node_Event_NewsEntry, const struct FColor& K2Node_Select_Default_1, const struct FColor& K2Node_Select_Default_2, const struct FColor& K2Node_Select_Default_3)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "ExecuteUbergraph_AthenaMOTDSimpleNewsWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDSimpleNewsWidget_C", "ExecuteUbergraph_AthenaMOTDSimpleNewsWidget");
+
+	Params::UAthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -142,6 +181,4 @@ void UAthenaMOTDSimpleNewsWidget_C::ExecuteUbergraph_AthenaMOTDSimpleNewsWidget(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

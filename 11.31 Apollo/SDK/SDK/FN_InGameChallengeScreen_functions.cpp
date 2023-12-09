@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass InGameChallengeScreen.InGameChallengeScreen_C
+// (None)
+
+class UClass* UInGameChallengeScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("InGameChallengeScreen_C");
+
+	return Clss;
+}
+
+
+// InGameChallengeScreen_C InGameChallengeScreen.Default__InGameChallengeScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UInGameChallengeScreen_C* UInGameChallengeScreen_C::GetDefaultObj()
+{
+	static class UInGameChallengeScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UInGameChallengeScreen_C*>(UInGameChallengeScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function InGameChallengeScreen.InGameChallengeScreen_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UInGameChallengeScreen_C::HandleBack(bool* PassThrough, class UFortHUDContext* CallFunc_GetContext_ReturnValue)
 {
-	static auto Func = Class->GetFunction("InGameChallengeScreen_C", "HandleBack");
+	static class UFunction* Func = nullptr;
 
-	Params::UInGameChallengeScreen_C_HandleBack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InGameChallengeScreen_C", "HandleBack");
+
+	Params::UInGameChallengeScreen_C_HandleBack_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 
@@ -43,12 +71,14 @@ void UInGameChallengeScreen_C::HandleBack(bool* PassThrough, class UFortHUDConte
 
 void UInGameChallengeScreen_C::Construct()
 {
-	static auto Func = Class->GetFunction("InGameChallengeScreen_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UInGameChallengeScreen_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InGameChallengeScreen_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -59,12 +89,14 @@ void UInGameChallengeScreen_C::Construct()
 
 void UInGameChallengeScreen_C::BndEvt__ButtonMobileCloseBackgroundButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("InGameChallengeScreen_C", "BndEvt__ButtonMobileCloseBackgroundButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UInGameChallengeScreen_C_BndEvt__ButtonMobileCloseBackgroundButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InGameChallengeScreen_C", "BndEvt__ButtonMobileCloseBackgroundButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -76,9 +108,12 @@ void UInGameChallengeScreen_C::BndEvt__ButtonMobileCloseBackgroundButton_K2Node_
 
 void UInGameChallengeScreen_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("InGameChallengeScreen_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UInGameChallengeScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InGameChallengeScreen_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UInGameChallengeScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -103,9 +138,12 @@ void UInGameChallengeScreen_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEv
 
 void UInGameChallengeScreen_C::ExecuteUbergraph_InGameChallengeScreen(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, const struct FDataTableRowHandle& K2Node_MakeStruct_DataTableRowHandle, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_IsMobileGame_ReturnValue, bool CallFunc_HandleBack_PassThrough, class UCommonButton* K2Node_ComponentBoundEvent_Button, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("InGameChallengeScreen_C", "ExecuteUbergraph_InGameChallengeScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UInGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InGameChallengeScreen_C", "ExecuteUbergraph_InGameChallengeScreen");
+
+	Params::UInGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -124,6 +162,4 @@ void UInGameChallengeScreen_C::ExecuteUbergraph_InGameChallengeScreen(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

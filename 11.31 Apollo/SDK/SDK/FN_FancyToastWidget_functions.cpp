@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,26 +12,57 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass FancyToastWidget.FancyToastWidget_C
+// (None)
+
+class UClass* UFancyToastWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FancyToastWidget_C");
+
+	return Clss;
+}
+
+
+// FancyToastWidget_C FancyToastWidget.Default__FancyToastWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UFancyToastWidget_C* UFancyToastWidget_C::GetDefaultObj()
+{
+	static class UFancyToastWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFancyToastWidget_C*>(UFancyToastWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function FancyToastWidget.FancyToastWidget_C.OnMouseButtonUp
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FPointerEvent               MouseEvent                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 // int32                              CallFunc_PointerEvent_GetPointerIndex_ReturnValue                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_PointerEvent_GetUserIndex_ReturnValue                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FKey                        CallFunc_PointerEvent_GetEffectingButton_ReturnValue             (HasGetValueTypeHash)
 // bool                               CallFunc_HasMouseCaptureByUser_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_KeyKey_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
-// struct FEventReply                 CallFunc_ReleaseMouseCapture_ReturnValue                         ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
+// struct FEventReply                 CallFunc_ReleaseMouseCapture_ReturnValue                         (None)
 
 struct FEventReply UFancyToastWidget_C::OnMouseButtonUp(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Unhandled_ReturnValue, int32 CallFunc_PointerEvent_GetPointerIndex_ReturnValue, int32 CallFunc_PointerEvent_GetUserIndex_ReturnValue, const struct FKey& CallFunc_PointerEvent_GetEffectingButton_ReturnValue, bool CallFunc_HasMouseCaptureByUser_ReturnValue, bool CallFunc_EqualEqual_KeyKey_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue, const struct FEventReply& CallFunc_ReleaseMouseCapture_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "OnMouseButtonUp");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_OnMouseButtonUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "OnMouseButtonUp");
+
+	Params::UFancyToastWidget_C_OnMouseButtonUp_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -60,17 +88,20 @@ struct FEventReply UFancyToastWidget_C::OnMouseButtonUp(const struct FGeometry& 
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FPointerEvent               MouseEvent                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 // struct FKey                        CallFunc_PointerEvent_GetEffectingButton_ReturnValue             (HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_KeyKey_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
-// struct FEventReply                 CallFunc_CaptureMouse_ReturnValue                                ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
+// struct FEventReply                 CallFunc_CaptureMouse_ReturnValue                                (None)
 
 struct FEventReply UFancyToastWidget_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Unhandled_ReturnValue, const struct FKey& CallFunc_PointerEvent_GetEffectingButton_ReturnValue, bool CallFunc_EqualEqual_KeyKey_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue, const struct FEventReply& CallFunc_CaptureMouse_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "OnMouseButtonDown");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_OnMouseButtonDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "OnMouseButtonDown");
+
+	Params::UFancyToastWidget_C_OnMouseButtonDown_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -95,13 +126,16 @@ struct FEventReply UFancyToastWidget_C::OnMouseButtonDown(const struct FGeometry
 // class UCommonTextBlock*            LocalTextBlock                                                   (Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        LocalText                                                        (Edit, BlueprintVisible)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 
 void UFancyToastWidget_C::SetAndShowText(class FText Text, class UCommonTextBlock* TextBlock, class UCommonTextBlock* LocalTextBlock, class FText LocalText, bool CallFunc_TextIsEmpty_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "SetAndShowText");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_SetAndShowText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "SetAndShowText");
+
+	Params::UFancyToastWidget_C_SetAndShowText_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.TextBlock = TextBlock;
@@ -124,9 +158,12 @@ void UFancyToastWidget_C::SetAndShowText(class FText Text, class UCommonTextBloc
 
 void UFancyToastWidget_C::ShowToast(const struct FFortToastDisplayInfo& DisplayInfo, uint8 Temp_byte_Variable, class UWidget* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "ShowToast");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_ShowToast_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "ShowToast");
+
+	Params::UFancyToastWidget_C_ShowToast_Params Parms{};
 
 	Parms.DisplayInfo = DisplayInfo;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -144,9 +181,12 @@ void UFancyToastWidget_C::ShowToast(const struct FFortToastDisplayInfo& DisplayI
 
 void UFancyToastWidget_C::OnLoaded_9A8F5ACC4328AC430C10CEB22D17B3C8(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "OnLoaded_9A8F5ACC4328AC430C10CEB22D17B3C8");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_OnLoaded_9A8F5ACC4328AC430C10CEB22D17B3C8_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "OnLoaded_9A8F5ACC4328AC430C10CEB22D17B3C8");
+
+	Params::UFancyToastWidget_C_OnLoaded_9A8F5ACC4328AC430C10CEB22D17B3C8_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -162,9 +202,12 @@ void UFancyToastWidget_C::OnLoaded_9A8F5ACC4328AC430C10CEB22D17B3C8(class UObjec
 
 void UFancyToastWidget_C::OnShowToast(const struct FFortToastDisplayInfo& DispalyInfo)
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "OnShowToast");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_OnShowToast_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "OnShowToast");
+
+	Params::UFancyToastWidget_C_OnShowToast_Params Parms{};
 
 	Parms.DispalyInfo = DispalyInfo;
 
@@ -179,12 +222,14 @@ void UFancyToastWidget_C::OnShowToast(const struct FFortToastDisplayInfo& Dispal
 
 void UFancyToastWidget_C::Start_Toast_Animation()
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "Start Toast Animation");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_Start_Toast_Animation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "Start Toast Animation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -195,12 +240,14 @@ void UFancyToastWidget_C::Start_Toast_Animation()
 
 void UFancyToastWidget_C::On_Idle_Finished()
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "On Idle Finished");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_On_Idle_Finished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "On Idle Finished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -211,12 +258,14 @@ void UFancyToastWidget_C::On_Idle_Finished()
 
 void UFancyToastWidget_C::SimulateAthenaStoreToast()
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "SimulateAthenaStoreToast");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_SimulateAthenaStoreToast_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "SimulateAthenaStoreToast");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -227,12 +276,14 @@ void UFancyToastWidget_C::SimulateAthenaStoreToast()
 
 void UFancyToastWidget_C::Clicked()
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "Clicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_Clicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "Clicked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -243,12 +294,14 @@ void UFancyToastWidget_C::Clicked()
 
 void UFancyToastWidget_C::CompleteToast()
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "CompleteToast");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_CompleteToast_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "CompleteToast");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -259,12 +312,14 @@ void UFancyToastWidget_C::CompleteToast()
 
 void UFancyToastWidget_C::RemoveWidget()
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "RemoveWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_RemoveWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "RemoveWidget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -275,12 +330,14 @@ void UFancyToastWidget_C::RemoveWidget()
 
 void UFancyToastWidget_C::WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_0()
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_0");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -291,12 +348,14 @@ void UFancyToastWidget_C::WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_0
 
 void UFancyToastWidget_C::WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_1()
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_1");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_1_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_1");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -307,12 +366,14 @@ void UFancyToastWidget_C::WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_1
 
 void UFancyToastWidget_C::WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_2()
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_2");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_2");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -325,21 +386,24 @@ void UFancyToastWidget_C::WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_2
 // class UObject*                     Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UTexture2D*                  K2Node_DynamicCast_AsTexture_2D                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortToastDisplayInfo       K2Node_CustomEvent_DispalyInfo                                   ()
+// struct FFortToastDisplayInfo       K2Node_CustomEvent_DispalyInfo                                   (None)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsAssetNull_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
-// struct FFortToastDisplayInfo       K2Node_MakeStruct_FortToastDisplayInfo                           ()
+// struct FFortToastDisplayInfo       K2Node_MakeStruct_FortToastDisplayInfo                           (None)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor)
 
 void UFancyToastWidget_C::ExecuteUbergraph_FancyToastWidget(int32 EntryPoint, class UObject* K2Node_CustomEvent_Loaded, class UObject* Temp_object_Variable, class UTexture2D* K2Node_DynamicCast_AsTexture_2D, bool K2Node_DynamicCast_bSuccess, const struct FFortToastDisplayInfo& K2Node_CustomEvent_DispalyInfo, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool CallFunc_IsAssetNull_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, const struct FFortToastDisplayInfo& K2Node_MakeStruct_FortToastDisplayInfo, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1)
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "ExecuteUbergraph_FancyToastWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_ExecuteUbergraph_FancyToastWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "ExecuteUbergraph_FancyToastWidget");
+
+	Params::UFancyToastWidget_C_ExecuteUbergraph_FancyToastWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_Loaded = K2Node_CustomEvent_Loaded;
@@ -367,12 +431,14 @@ void UFancyToastWidget_C::ExecuteUbergraph_FancyToastWidget(int32 EntryPoint, cl
 
 void UFancyToastWidget_C::OnToastClicked__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "OnToastClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_OnToastClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "OnToastClicked__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -383,17 +449,17 @@ void UFancyToastWidget_C::OnToastClicked__DelegateSignature()
 
 void UFancyToastWidget_C::OnFinishedToast__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("FancyToastWidget_C", "OnFinishedToast__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFancyToastWidget_C_OnFinishedToast__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FancyToastWidget_C", "OnFinishedToast__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

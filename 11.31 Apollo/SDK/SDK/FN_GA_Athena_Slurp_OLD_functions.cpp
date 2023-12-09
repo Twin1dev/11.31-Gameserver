@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Athena_Slurp_OLD.GA_Athena_Slurp_OLD_C
+// (None)
+
+class UClass* UGA_Athena_Slurp_OLD_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Athena_Slurp_OLD_C");
+
+	return Clss;
+}
+
+
+// GA_Athena_Slurp_OLD_C GA_Athena_Slurp_OLD.Default__GA_Athena_Slurp_OLD_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Athena_Slurp_OLD_C* UGA_Athena_Slurp_OLD_C::GetDefaultObj()
+{
+	static class UGA_Athena_Slurp_OLD_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Athena_Slurp_OLD_C*>(UGA_Athena_Slurp_OLD_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Athena_Slurp_OLD.GA_Athena_Slurp_OLD_C.K2_ActivateAbility
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UGA_Athena_Slurp_OLD_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Athena_Slurp_OLD_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Slurp_OLD_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Slurp_OLD_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UGA_Athena_Slurp_OLD_C::K2_ActivateAbility()
 
 void UGA_Athena_Slurp_OLD_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GA_Athena_Slurp_OLD_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Slurp_OLD_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Slurp_OLD_C", "K2_OnEndAbility");
+
+	Params::UGA_Athena_Slurp_OLD_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -55,12 +85,14 @@ void UGA_Athena_Slurp_OLD_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Athena_Slurp_OLD_C::ApplyHealthOrShield()
 {
-	static auto Func = Class->GetFunction("GA_Athena_Slurp_OLD_C", "ApplyHealthOrShield");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Slurp_OLD_C_ApplyHealthOrShield_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Slurp_OLD_C", "ApplyHealthOrShield");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -83,7 +115,7 @@ void UGA_Athena_Slurp_OLD_C::ApplyHealthOrShield()
 // class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  ()
+// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  (None)
 // TArray<struct FActiveGameplayEffectHandle>CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue              (ZeroConstructor, ReferenceParm)
 // enum class EEvaluateCurveTableResultCallFunc_EvaluateCurveTableRow_OutResult                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_EvaluateCurveTableRow_OutXY                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -98,9 +130,12 @@ void UGA_Athena_Slurp_OLD_C::ApplyHealthOrShield()
 
 void UGA_Athena_Slurp_OLD_C::ExecuteUbergraph_GA_Athena_Slurp_OLD(int32 EntryPoint, bool K2Node_Event_bWasCancelled, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_1, bool CallFunc_K2_CommitAbility_ReturnValue, bool CallFunc_IsDBNO_ReturnValue, float CallFunc_GetHealth_ReturnValue, float CallFunc_GetMaxHealth_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, const struct FGameplayAbilityActorInfo& CallFunc_GetActorInfo_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, const struct FGameplayAbilityTargetDataHandle& CallFunc_AbilityTargetDataFromActor_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue, enum class EEvaluateCurveTableResult CallFunc_EvaluateCurveTableRow_OutResult, float CallFunc_EvaluateCurveTableRow_OutXY, enum class EEvaluateCurveTableResult CallFunc_EvaluateCurveTableRow_OutResult_1, float CallFunc_EvaluateCurveTableRow_OutXY_1, bool K2Node_SwitchEnum_CmpSuccess, bool K2Node_SwitchEnum_CmpSuccess_1, int32 Temp_int_Variable, int32 CallFunc_FTrunc_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Athena_Slurp_OLD_C", "ExecuteUbergraph_GA_Athena_Slurp_OLD");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Slurp_OLD_C", "ExecuteUbergraph_GA_Athena_Slurp_OLD");
+
+	Params::UGA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bWasCancelled = K2Node_Event_bWasCancelled;
@@ -136,6 +171,4 @@ void UGA_Athena_Slurp_OLD_C::ExecuteUbergraph_GA_Athena_Slurp_OLD(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

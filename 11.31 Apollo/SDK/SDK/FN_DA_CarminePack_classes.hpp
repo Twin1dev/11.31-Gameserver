@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -21,20 +18,17 @@ public:
 	float                                        TimePressed;                                       // 0xAC8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        PunchPicker;                                       // 0xACC(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         HasLandedAfterBeam;                                // 0xAD0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_1AFA[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5DE1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 Carmine_Ability_Tags;                              // 0xAD8(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FGameplayTag>                  StoneTags;                                         // 0xAF8(0x10)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, RepNotify)
 	TArray<struct FGameplayTag>                  GemTags;                                           // 0xB08(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	int32                                        Int;                                               // 0xB18(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1AFB[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5DE2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 SkydiveCue;                                        // 0xB20(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FGameplayTagContainer                 TrailsCue;                                         // 0xB40(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("DA_CarminePack_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ADA_CarminePack_C* GetDefaultObj();
 
 	void OnRep_StoneTags();
 	void BPPressTrigger(class AFortDecoHelper* FortDecoHelper);
@@ -47,6 +41,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

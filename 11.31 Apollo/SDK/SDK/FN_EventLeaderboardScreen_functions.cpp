@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass EventLeaderboardScreen.EventLeaderboardScreen_C
+// (None)
+
+class UClass* UEventLeaderboardScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EventLeaderboardScreen_C");
+
+	return Clss;
+}
+
+
+// EventLeaderboardScreen_C EventLeaderboardScreen.Default__EventLeaderboardScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UEventLeaderboardScreen_C* UEventLeaderboardScreen_C::GetDefaultObj()
+{
+	static class UEventLeaderboardScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEventLeaderboardScreen_C*>(UEventLeaderboardScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function EventLeaderboardScreen.EventLeaderboardScreen_C.Init
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UEventLeaderboardScreen_C::Init(const class FString& EventWindowId, const class FString& TournamentSeriesId)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardScreen_C", "Init");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardScreen_C_Init_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardScreen_C", "Init");
+
+	Params::UEventLeaderboardScreen_C_Init_Params Parms{};
 
 	Parms.EventWindowId = EventWindowId;
 	Parms.TournamentSeriesId = TournamentSeriesId;
@@ -42,9 +70,12 @@ void UEventLeaderboardScreen_C::Init(const class FString& EventWindowId, const c
 
 void UEventLeaderboardScreen_C::BndEvt__Button_Back2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardScreen_C", "BndEvt__Button_Back2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardScreen_C_BndEvt__Button_Back2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardScreen_C", "BndEvt__Button_Back2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UEventLeaderboardScreen_C_BndEvt__Button_Back2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -60,9 +91,12 @@ void UEventLeaderboardScreen_C::BndEvt__Button_Back2_K2Node_ComponentBoundEvent_
 
 void UEventLeaderboardScreen_C::EventColorize(const struct FFortTournamentDisplayInfo& TournamentDisplayInfo)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardScreen_C", "EventColorize");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardScreen_C_EventColorize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardScreen_C", "EventColorize");
+
+	Params::UEventLeaderboardScreen_C_EventColorize_Params Parms{};
 
 	Parms.TournamentDisplayInfo = TournamentDisplayInfo;
 
@@ -77,12 +111,14 @@ void UEventLeaderboardScreen_C::EventColorize(const struct FFortTournamentDispla
 
 void UEventLeaderboardScreen_C::EventIntro()
 {
-	static auto Func = Class->GetFunction("EventLeaderboardScreen_C", "EventIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardScreen_C_EventIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardScreen_C", "EventIntro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -94,9 +130,12 @@ void UEventLeaderboardScreen_C::EventIntro()
 
 void UEventLeaderboardScreen_C::OnLeaderboardEntrySelected(class UFortEventLeaderboardEntryData* EntryData)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardScreen_C", "OnLeaderboardEntrySelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardScreen_C_OnLeaderboardEntrySelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardScreen_C", "OnLeaderboardEntrySelected");
+
+	Params::UEventLeaderboardScreen_C_OnLeaderboardEntrySelected_Params Parms{};
 
 	Parms.EntryData = EntryData;
 
@@ -112,9 +151,12 @@ void UEventLeaderboardScreen_C::OnLeaderboardEntrySelected(class UFortEventLeade
 
 void UEventLeaderboardScreen_C::OnLeaderboardPageRequestComplete(int32 EntryCount)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardScreen_C", "OnLeaderboardPageRequestComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardScreen_C_OnLeaderboardPageRequestComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardScreen_C", "OnLeaderboardPageRequestComplete");
+
+	Params::UEventLeaderboardScreen_C_OnLeaderboardPageRequestComplete_Params Parms{};
 
 	Parms.EntryCount = EntryCount;
 
@@ -129,12 +171,14 @@ void UEventLeaderboardScreen_C::OnLeaderboardPageRequestComplete(int32 EntryCoun
 
 void UEventLeaderboardScreen_C::OnLeaderboardPageRequested()
 {
-	static auto Func = Class->GetFunction("EventLeaderboardScreen_C", "OnLeaderboardPageRequested");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardScreen_C_OnLeaderboardPageRequested_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardScreen_C", "OnLeaderboardPageRequested");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -146,9 +190,12 @@ void UEventLeaderboardScreen_C::OnLeaderboardPageRequested()
 
 void UEventLeaderboardScreen_C::BndEvt__ListView_LeaderboardEntries_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature(class UObject* Item)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardScreen_C", "BndEvt__ListView_LeaderboardEntries_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardScreen_C_BndEvt__ListView_LeaderboardEntries_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardScreen_C", "BndEvt__ListView_LeaderboardEntries_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature");
+
+	Params::UEventLeaderboardScreen_C_BndEvt__ListView_LeaderboardEntries_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature_Params Parms{};
 
 	Parms.Item = Item;
 
@@ -163,12 +210,14 @@ void UEventLeaderboardScreen_C::BndEvt__ListView_LeaderboardEntries_K2Node_Compo
 
 void UEventLeaderboardScreen_C::Event_Leaderboard_Screen_On_Activated()
 {
-	static auto Func = Class->GetFunction("EventLeaderboardScreen_C", "Event Leaderboard Screen On Activated");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardScreen_C_Event_Leaderboard_Screen_On_Activated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardScreen_C", "Event Leaderboard Screen On Activated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -179,12 +228,14 @@ void UEventLeaderboardScreen_C::Event_Leaderboard_Screen_On_Activated()
 
 void UEventLeaderboardScreen_C::Construct()
 {
-	static auto Func = Class->GetFunction("EventLeaderboardScreen_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardScreen_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardScreen_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -196,9 +247,12 @@ void UEventLeaderboardScreen_C::Construct()
 
 void UEventLeaderboardScreen_C::ShowMyStats(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardScreen_C", "ShowMyStats");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardScreen_C_ShowMyStats_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardScreen_C", "ShowMyStats");
+
+	Params::UEventLeaderboardScreen_C_ShowMyStats_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -214,9 +268,12 @@ void UEventLeaderboardScreen_C::ShowMyStats(class UCommonButton* Button)
 
 void UEventLeaderboardScreen_C::BndEvt__LiveGames_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardScreen_C", "BndEvt__LiveGames_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardScreen_C_BndEvt__LiveGames_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardScreen_C", "BndEvt__LiveGames_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UEventLeaderboardScreen_C_BndEvt__LiveGames_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -232,9 +289,12 @@ void UEventLeaderboardScreen_C::BndEvt__LiveGames_K2Node_ComponentBoundEvent_0_C
 
 void UEventLeaderboardScreen_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardScreen_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardScreen_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+
+	Params::UEventLeaderboardScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -251,7 +311,7 @@ void UEventLeaderboardScreen_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundE
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_2                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortTournamentDisplayInfo  K2Node_CustomEvent_TournamentDisplayInfo                         ()
+// struct FFortTournamentDisplayInfo  K2Node_CustomEvent_TournamentDisplayInfo                         (None)
 // struct FLinearColor                K2Node_MakeStruct_LinearColor                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
@@ -273,9 +333,12 @@ void UEventLeaderboardScreen_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundE
 
 void UEventLeaderboardScreen_C::ExecuteUbergraph_EventLeaderboardScreen(int32 EntryPoint, class UCommonButton* K2Node_ComponentBoundEvent_Button, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, const struct FFortTournamentDisplayInfo& K2Node_CustomEvent_TournamentDisplayInfo, const struct FLinearColor& K2Node_MakeStruct_LinearColor, bool Temp_bool_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortEventLeaderboardEntryData* K2Node_Event_EntryData, int32 K2Node_Event_EntryCount, bool CallFunc_Greater_IntInt_ReturnValue, class UObject* K2Node_ComponentBoundEvent_Item, class UFortEventLeaderboardEntryData* K2Node_DynamicCast_AsFort_Event_Leaderboard_Entry_Data, bool K2Node_DynamicCast_bSuccess, bool Temp_bool_Variable_1, class UWidget* K2Node_Select_Default, class UCommonButton* K2Node_CustomEvent_Button, class UFortEventLeaderboardEntryData* CallFunc_GetMyLeaderboardEntry_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, bool CallFunc_IsMobileGame_ReturnValue, bool CallFunc_IsUsingTouch_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardScreen_C", "ExecuteUbergraph_EventLeaderboardScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardScreen_C", "ExecuteUbergraph_EventLeaderboardScreen");
+
+	Params::UEventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
@@ -313,12 +376,14 @@ void UEventLeaderboardScreen_C::ExecuteUbergraph_EventLeaderboardScreen(int32 En
 
 void UEventLeaderboardScreen_C::EventViewLiveGames__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("EventLeaderboardScreen_C", "EventViewLiveGames__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardScreen_C_EventViewLiveGames__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardScreen_C", "EventViewLiveGames__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -329,17 +394,17 @@ void UEventLeaderboardScreen_C::EventViewLiveGames__DelegateSignature()
 
 void UEventLeaderboardScreen_C::EventCloseButton__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("EventLeaderboardScreen_C", "EventCloseButton__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardScreen_C_EventCloseButton__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardScreen_C", "EventCloseButton__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

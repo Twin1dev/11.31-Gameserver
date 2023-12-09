@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ButtonStyle_CycleArrow_Left.ButtonStyle_CycleArrow_Left_C
+// (None)
+
+class UClass* UButtonStyle_CycleArrow_Left_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ButtonStyle_CycleArrow_Left_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ButtonStyle_CycleArrow_Left_C ButtonStyle_CycleArrow_Left.Default__ButtonStyle_CycleArrow_Left_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UButtonStyle_CycleArrow_Left_C* UButtonStyle_CycleArrow_Left_C::GetDefaultObj()
+{
+	static class UButtonStyle_CycleArrow_Left_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UButtonStyle_CycleArrow_Left_C*>(UButtonStyle_CycleArrow_Left_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

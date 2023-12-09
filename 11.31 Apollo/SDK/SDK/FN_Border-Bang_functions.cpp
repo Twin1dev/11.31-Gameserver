@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Border-Bang.Border-Bang_C
+// (None)
+
+class UClass* UBorderMinusBang_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Border-Bang_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Border-Bang_C Border-Bang.Default__Border-Bang_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBorderMinusBang_C* UBorderMinusBang_C::GetDefaultObj()
+{
+	static class UBorderMinusBang_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorderMinusBang_C*>(UBorderMinusBang_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

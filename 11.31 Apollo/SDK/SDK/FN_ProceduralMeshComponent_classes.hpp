@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class UKismetProceduralMeshLibrary : public UBlueprintFunctionLibrary
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("KismetProceduralMeshLibrary");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UKismetProceduralMeshLibrary* GetDefaultObj();
 
 	void SliceProceduralMesh(class UProceduralMeshComponent* InProcMesh, const struct FVector& PlanePosition, const struct FVector& PlaneNormal, bool bCreateOtherHalf, class UProceduralMeshComponent** OutOtherHalfProcMesh, enum class EProcMeshSliceCapOption CapOption, class UMaterialInterface* CapMaterial);
 	void GetSectionFromStaticMesh(class UStaticMesh* InMesh, int32 LODIndex, int32 SectionIndex, TArray<struct FVector>* Vertices, TArray<int32>* Triangles, TArray<struct FVector>* Normals, TArray<struct FVector2D>* UVs, TArray<struct FProcMeshTangent>* Tangents);
@@ -41,23 +35,20 @@ public:
 class UProceduralMeshComponent : public UMeshComponent
 {
 public:
-	uint8                                        Pad_1D73[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_E53[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bUseComplexAsSimpleCollision;                      // 0x408(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseAsyncCooking;                                  // 0x409(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1D74[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_E54[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UBodySetup*                            ProcMeshBodySetup;                                 // 0x410(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FProcMeshSection>              ProcMeshSections;                                  // 0x418(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<struct FKConvexElem>                  CollisionConvexElems;                              // 0x428(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	struct FBoxSphereBounds                      LocalBounds;                                       // 0x438(0x1C)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1D75[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_E57[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UBodySetup*>                    AsyncBodySetupQueue;                               // 0x458(0x10)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1D76[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_E58[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ProceduralMeshComponent");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UProceduralMeshComponent* GetDefaultObj();
 
 	void UpdateMeshSection_LinearColor(int32 SectionIndex, TArray<struct FVector>& Vertices, TArray<struct FVector>& Normals, TArray<struct FVector2D>& UV0, TArray<struct FVector2D>& UV1, TArray<struct FVector2D>& UV2, TArray<struct FVector2D>& UV3, TArray<struct FLinearColor>& VertexColors, TArray<struct FProcMeshTangent>& Tangents);
 	void UpdateMeshSection(int32 SectionIndex, TArray<struct FVector>& Vertices, TArray<struct FVector>& Normals, TArray<struct FVector2D>& UV0, TArray<struct FColor>& VertexColors, TArray<struct FProcMeshTangent>& Tangents);
@@ -74,6 +65,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

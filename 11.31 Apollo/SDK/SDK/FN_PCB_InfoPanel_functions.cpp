@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass PCB_InfoPanel.PCB_InfoPanel_C
+// (None)
+
+class UClass* UPCB_InfoPanel_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PCB_InfoPanel_C");
+
+	return Clss;
+}
+
+
+// PCB_InfoPanel_C PCB_InfoPanel.Default__PCB_InfoPanel_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPCB_InfoPanel_C* UPCB_InfoPanel_C::GetDefaultObj()
+{
+	static class UPCB_InfoPanel_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPCB_InfoPanel_C*>(UPCB_InfoPanel_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PCB_InfoPanel.PCB_InfoPanel_C.CmsDataRead
 // (Event, Public, BlueprintEvent)
 // Parameters:
 
 void UPCB_InfoPanel_C::CmsDataRead()
 {
-	static auto Func = Class->GetFunction("PCB_InfoPanel_C", "CmsDataRead");
+	static class UFunction* Func = nullptr;
 
-	Params::UPCB_InfoPanel_C_CmsDataRead_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PCB_InfoPanel_C", "CmsDataRead");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -35,14 +62,17 @@ void UPCB_InfoPanel_C::CmsDataRead()
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetPCBHeader_ReturnValue                                ()
-// class FText                        CallFunc_GetPCBDescription_ReturnValue                           ()
+// class FText                        CallFunc_GetPCBHeader_ReturnValue                                (None)
+// class FText                        CallFunc_GetPCBDescription_ReturnValue                           (None)
 
 void UPCB_InfoPanel_C::ExecuteUbergraph_PCB_InfoPanel(int32 EntryPoint, class FText CallFunc_GetPCBHeader_ReturnValue, class FText CallFunc_GetPCBDescription_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PCB_InfoPanel_C", "ExecuteUbergraph_PCB_InfoPanel");
+	static class UFunction* Func = nullptr;
 
-	Params::UPCB_InfoPanel_C_ExecuteUbergraph_PCB_InfoPanel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PCB_InfoPanel_C", "ExecuteUbergraph_PCB_InfoPanel");
+
+	Params::UPCB_InfoPanel_C_ExecuteUbergraph_PCB_InfoPanel_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetPCBHeader_ReturnValue = CallFunc_GetPCBHeader_ReturnValue;
@@ -54,6 +84,4 @@ void UPCB_InfoPanel_C::ExecuteUbergraph_PCB_InfoPanel(int32 EntryPoint, class FT
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

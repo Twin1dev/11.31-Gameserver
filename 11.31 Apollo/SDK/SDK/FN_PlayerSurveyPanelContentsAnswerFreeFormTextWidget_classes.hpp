@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -21,16 +18,13 @@ public:
 	class UMultiLineEditableTextBox*             EntryTextBox;                                      // 0x280(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                      LimitsTextBlock;                                   // 0x288(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         bIgnoreAnswerChange;                               // 0x290(0x1)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5325[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_57C3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  Text_Subtitle;                                     // 0x298(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UClass*                                LimitsStyle_Normal;                                // 0x2B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                LimitsStyle_Overflow;                              // 0x2B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C* GetDefaultObj();
 
 	class FText GetSubtitleText();
 	void UpdateLimitsText(int32 AnswerLength, bool IsOverflowing, class UFortPlayerSurveyQuestionFreeFormText* CurrentQuestion, bool ShouldShowLimits, int32 MaxAnswerLength, class FText LimitsText, enum class ESlateVisibility Temp_byte_Variable, bool CallFunc_Greater_IntInt_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, bool CallFunc_IsValid_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, bool CallFunc_Greater_IntInt_ReturnValue_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, bool Temp_bool_Variable_1, class UClass* K2Node_Select_Default_1, bool CallFunc_GetCurrentAnswer_bOutIsSet, const struct FFortPlayerSurveyAnswerFreeFormText& CallFunc_GetCurrentAnswer_OutAnswer, class UFortPlayerSurveyQuestionFreeFormText* CallFunc_GetCurrentQuestion_ReturnValue, int32 CallFunc_Len_ReturnValue);
@@ -49,6 +43,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass PlayerSurveyPanelAnswerSelectorWidget.PlayerSurveyPanelAnswerSelectorWidget_C
+// (None)
+
+class UClass* UPlayerSurveyPanelAnswerSelectorWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerSurveyPanelAnswerSelectorWidget_C");
+
+	return Clss;
+}
+
+
+// PlayerSurveyPanelAnswerSelectorWidget_C PlayerSurveyPanelAnswerSelectorWidget.Default__PlayerSurveyPanelAnswerSelectorWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerSurveyPanelAnswerSelectorWidget_C* UPlayerSurveyPanelAnswerSelectorWidget_C::GetDefaultObj()
+{
+	static class UPlayerSurveyPanelAnswerSelectorWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerSurveyPanelAnswerSelectorWidget_C*>(UPlayerSurveyPanelAnswerSelectorWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function PlayerSurveyPanelAnswerSelectorWidget.PlayerSurveyPanelAnswerSelectorWidget_C.GetCurrentQuestion
@@ -26,9 +51,12 @@ namespace SDK
 
 void UPlayerSurveyPanelAnswerSelectorWidget_C::GetCurrentQuestion(class UFortPlayerSurveyQuestion** Question, class UFortPlayerSurveyQuestion* QuestionValue, class UFortPlayerSurveyQuestion* CallFunc_GetQuestion_ReturnValue, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "GetCurrentQuestion");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_GetCurrentQuestion_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "GetCurrentQuestion");
+
+	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_GetCurrentQuestion_Params Parms{};
 
 	Parms.QuestionValue = QuestionValue;
 	Parms.CallFunc_GetQuestion_ReturnValue = CallFunc_GetQuestion_ReturnValue;
@@ -51,9 +79,12 @@ void UPlayerSurveyPanelAnswerSelectorWidget_C::GetCurrentQuestion(class UFortPla
 
 void UPlayerSurveyPanelAnswerSelectorWidget_C::PropagateCurrentQuestion(class UFortPlayerSurveyQuestion* CallFunc_GetCurrentQuestion_Question, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "PropagateCurrentQuestion");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_PropagateCurrentQuestion_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "PropagateCurrentQuestion");
+
+	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_PropagateCurrentQuestion_Params Parms{};
 
 	Parms.CallFunc_GetCurrentQuestion_Question = CallFunc_GetCurrentQuestion_Question;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -68,14 +99,17 @@ void UPlayerSurveyPanelAnswerSelectorWidget_C::PropagateCurrentQuestion(class UF
 // Parameters:
 // class FText                        Text                                                             (Parm, OutParm)
 // class FText                        TextValue                                                        (Edit, BlueprintVisible)
-// class FText                        CallFunc_GetSubtitleText_ReturnValue                             ()
+// class FText                        CallFunc_GetSubtitleText_ReturnValue                             (None)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UPlayerSurveyPanelAnswerSelectorWidget_C::GetSubtitleText(class FText* Text, class FText TextValue, class FText CallFunc_GetSubtitleText_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "GetSubtitleText");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_GetSubtitleText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "GetSubtitleText");
+
+	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_GetSubtitleText_Params Parms{};
 
 	Parms.TextValue = TextValue;
 	Parms.CallFunc_GetSubtitleText_ReturnValue = CallFunc_GetSubtitleText_ReturnValue;
@@ -96,9 +130,12 @@ void UPlayerSurveyPanelAnswerSelectorWidget_C::GetSubtitleText(class FText* Text
 
 void UPlayerSurveyPanelAnswerSelectorWidget_C::CommitCurrentAnswer(bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "CommitCurrentAnswer");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_CommitCurrentAnswer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "CommitCurrentAnswer");
+
+	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_CommitCurrentAnswer_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
@@ -117,9 +154,12 @@ void UPlayerSurveyPanelAnswerSelectorWidget_C::CommitCurrentAnswer(bool CallFunc
 
 void UPlayerSurveyPanelAnswerSelectorWidget_C::GetDefaultFocusedWidget(class UWidget** Result, class UWidget* ResultValue, class UWidget* CallFunc_GetDefaultFocusedWidget_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "GetDefaultFocusedWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_GetDefaultFocusedWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "GetDefaultFocusedWidget");
+
+	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_GetDefaultFocusedWidget_Params Parms{};
 
 	Parms.ResultValue = ResultValue;
 	Parms.CallFunc_GetDefaultFocusedWidget_ReturnValue = CallFunc_GetDefaultFocusedWidget_ReturnValue;
@@ -144,9 +184,12 @@ void UPlayerSurveyPanelAnswerSelectorWidget_C::GetDefaultFocusedWidget(class UWi
 
 void UPlayerSurveyPanelAnswerSelectorWidget_C::SetCurrentChild(class UFortPlayerSurveyAnswerWidgetBase* Widget, bool ForcePropagateQuestion, bool CallFunc_NotEqual_ObjectObject_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "SetCurrentChild");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_SetCurrentChild_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "SetCurrentChild");
+
+	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_SetCurrentChild_Params Parms{};
 
 	Parms.Widget = Widget;
 	Parms.ForcePropagateQuestion = ForcePropagateQuestion;
@@ -177,9 +220,12 @@ void UPlayerSurveyPanelAnswerSelectorWidget_C::SetCurrentChild(class UFortPlayer
 
 void UPlayerSurveyPanelAnswerSelectorWidget_C::UpdateCurrentChild(bool ForcePropagateQuestion, class UFortPlayerSurveyAnswerWidgetBase* NewChildWidget, class UFortPlayerSurveyQuestion* Question, enum class EFortPlayerSurveyQuestionPresentationStyle CallFunc_GetPresentationStyle_ReturnValue, bool CallFunc_IsValid_ReturnValue, enum class EFortPlayerSurveyQuestionType CallFunc_GetQuestionType_ReturnValue, class UClass* CallFunc_GetClassForSurvey_ReturnValue, class UFortPlayerSurveyAnswerWidgetBase* CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, class UFortPlayerSurveyQuestion* CallFunc_GetQuestion_ReturnValue, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "UpdateCurrentChild");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "UpdateCurrentChild");
+
+	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild_Params Parms{};
 
 	Parms.ForcePropagateQuestion = ForcePropagateQuestion;
 	Parms.NewChildWidget = NewChildWidget;
@@ -205,12 +251,14 @@ void UPlayerSurveyPanelAnswerSelectorWidget_C::UpdateCurrentChild(bool ForceProp
 
 void UPlayerSurveyPanelAnswerSelectorWidget_C::InitSwitcherChildren()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "InitSwitcherChildren");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_InitSwitcherChildren_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "InitSwitcherChildren");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -224,9 +272,12 @@ void UPlayerSurveyPanelAnswerSelectorWidget_C::InitSwitcherChildren()
 
 void UPlayerSurveyPanelAnswerSelectorWidget_C::InitSwitcherChildrenLoop(enum class EFortPlayerSurveyQuestionType QuestionType, enum class EFortPlayerSurveyQuestionPresentationStyle PresentationStyle, class UClass* WidgetClass)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "InitSwitcherChildrenLoop");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_InitSwitcherChildrenLoop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "InitSwitcherChildrenLoop");
+
+	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_InitSwitcherChildrenLoop_Params Parms{};
 
 	Parms.QuestionType = QuestionType;
 	Parms.PresentationStyle = PresentationStyle;
@@ -243,12 +294,14 @@ void UPlayerSurveyPanelAnswerSelectorWidget_C::InitSwitcherChildrenLoop(enum cla
 
 void UPlayerSurveyPanelAnswerSelectorWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -259,12 +312,14 @@ void UPlayerSurveyPanelAnswerSelectorWidget_C::Construct()
 
 void UPlayerSurveyPanelAnswerSelectorWidget_C::OnInitialized()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "OnInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_OnInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "OnInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -275,12 +330,14 @@ void UPlayerSurveyPanelAnswerSelectorWidget_C::OnInitialized()
 
 void UPlayerSurveyPanelAnswerSelectorWidget_C::HandleQuestionChanged()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "HandleQuestionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_HandleQuestionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "HandleQuestionChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -301,9 +358,12 @@ void UPlayerSurveyPanelAnswerSelectorWidget_C::HandleQuestionChanged()
 
 void UPlayerSurveyPanelAnswerSelectorWidget_C::ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget(int32 EntryPoint, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, enum class EFortPlayerSurveyQuestionType K2Node_CustomEvent_QuestionType, enum class EFortPlayerSurveyQuestionPresentationStyle K2Node_CustomEvent_PresentationStyle, class UClass* K2Node_CustomEvent_WidgetClass, class UFortPlayerSurveyAnswerWidgetBase* CallFunc_Create_ReturnValue, class UFortPlayerSurveyAnswerWidgetBase* CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelAnswerSelectorWidget_C", "ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget");
+
+	Params::UPlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
@@ -322,6 +382,4 @@ void UPlayerSurveyPanelAnswerSelectorWidget_C::ExecuteUbergraph_PlayerSurveyPane
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

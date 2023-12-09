@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_SurfaceTypeSoundComponent.BP_SurfaceTypeSoundComponent_C
+// (None)
+
+class UClass* UBP_SurfaceTypeSoundComponent_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_SurfaceTypeSoundComponent_C");
+
+	return Clss;
+}
+
+
+// BP_SurfaceTypeSoundComponent_C BP_SurfaceTypeSoundComponent.Default__BP_SurfaceTypeSoundComponent_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBP_SurfaceTypeSoundComponent_C* UBP_SurfaceTypeSoundComponent_C::GetDefaultObj()
+{
+	static class UBP_SurfaceTypeSoundComponent_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBP_SurfaceTypeSoundComponent_C*>(UBP_SurfaceTypeSoundComponent_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_SurfaceTypeSoundComponent.BP_SurfaceTypeSoundComponent_C.ActuallyPlaySound
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UBP_SurfaceTypeSoundComponent_C::ActuallyPlaySound(class USoundBase* CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "ActuallyPlaySound");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_SurfaceTypeSoundComponent_C_ActuallyPlaySound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "ActuallyPlaySound");
+
+	Params::UBP_SurfaceTypeSoundComponent_C_ActuallyPlaySound_Params Parms{};
 
 	Parms.CallFunc_Map_Find_Value = CallFunc_Map_Find_Value;
 	Parms.CallFunc_Map_Find_ReturnValue = CallFunc_Map_Find_ReturnValue;
@@ -54,9 +82,12 @@ void UBP_SurfaceTypeSoundComponent_C::ActuallyPlaySound(class USoundBase* CallFu
 
 void UBP_SurfaceTypeSoundComponent_C::SetSurfaceType(enum class EPhysicalSurface SurfaceType, class AActor* Actor, enum class EPhysicalSurface Temp_byte_Variable, bool CallFunc_IsValid_ReturnValue, class ABuildingSMActor* K2Node_DynamicCast_AsBuilding_SMActor, bool K2Node_DynamicCast_bSuccess, enum class EPhysicalSurface Temp_byte_Variable_1, enum class EPhysicalSurface Temp_byte_Variable_2, enum class EPhysicalSurface Temp_byte_Variable_3, enum class EPhysicalSurface Temp_byte_Variable_4, enum class EFortResourceType Temp_byte_Variable_5, enum class EPhysicalSurface Temp_byte_Variable_6, enum class EPhysicalSurface K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "SetSurfaceType");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_SurfaceTypeSoundComponent_C_SetSurfaceType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "SetSurfaceType");
+
+	Params::UBP_SurfaceTypeSoundComponent_C_SetSurfaceType_Params Parms{};
 
 	Parms.SurfaceType = SurfaceType;
 	Parms.Actor = Actor;
@@ -87,9 +118,12 @@ void UBP_SurfaceTypeSoundComponent_C::SetSurfaceType(enum class EPhysicalSurface
 
 void UBP_SurfaceTypeSoundComponent_C::PlaySound(const struct FVector& Location, class USoundBase* CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "PlaySound");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_SurfaceTypeSoundComponent_C_PlaySound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "PlaySound");
+
+	Params::UBP_SurfaceTypeSoundComponent_C_PlaySound_Params Parms{};
 
 	Parms.Location = Location;
 	Parms.CallFunc_Map_Find_Value = CallFunc_Map_Find_Value;
@@ -107,12 +141,14 @@ void UBP_SurfaceTypeSoundComponent_C::PlaySound(const struct FVector& Location, 
 
 void UBP_SurfaceTypeSoundComponent_C::Test_Delay()
 {
-	static auto Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "Test Delay");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_SurfaceTypeSoundComponent_C_Test_Delay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "Test Delay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -124,9 +160,12 @@ void UBP_SurfaceTypeSoundComponent_C::Test_Delay()
 
 void UBP_SurfaceTypeSoundComponent_C::ExecuteUbergraph_BP_SurfaceTypeSoundComponent(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "ExecuteUbergraph_BP_SurfaceTypeSoundComponent");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_SurfaceTypeSoundComponent_C_ExecuteUbergraph_BP_SurfaceTypeSoundComponent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SurfaceTypeSoundComponent_C", "ExecuteUbergraph_BP_SurfaceTypeSoundComponent");
+
+	Params::UBP_SurfaceTypeSoundComponent_C_ExecuteUbergraph_BP_SurfaceTypeSoundComponent_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -136,6 +175,4 @@ void UBP_SurfaceTypeSoundComponent_C::ExecuteUbergraph_BP_SurfaceTypeSoundCompon
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

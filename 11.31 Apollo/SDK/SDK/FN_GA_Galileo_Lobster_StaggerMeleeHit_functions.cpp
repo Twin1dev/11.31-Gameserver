@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Galileo_Lobster_StaggerMeleeHit.GA_Galileo_Lobster_StaggerMeleeHit_C
+// (None)
+
+class UClass* UGA_Galileo_Lobster_StaggerMeleeHit_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Galileo_Lobster_StaggerMeleeHit_C");
+
+	return Clss;
+}
+
+
+// GA_Galileo_Lobster_StaggerMeleeHit_C GA_Galileo_Lobster_StaggerMeleeHit.Default__GA_Galileo_Lobster_StaggerMeleeHit_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Galileo_Lobster_StaggerMeleeHit_C* UGA_Galileo_Lobster_StaggerMeleeHit_C::GetDefaultObj()
+{
+	static class UGA_Galileo_Lobster_StaggerMeleeHit_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Galileo_Lobster_StaggerMeleeHit_C*>(UGA_Galileo_Lobster_StaggerMeleeHit_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Galileo_Lobster_StaggerMeleeHit.GA_Galileo_Lobster_StaggerMeleeHit_C.Completed_C74ABBE842C11F9B9741D5BF7D4C4CE6
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UGA_Galileo_Lobster_StaggerMeleeHit_C::Completed_C74ABBE842C11F9B9741D5BF7D4C4CE6(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_StaggerMeleeHit_C", "Completed_C74ABBE842C11F9B9741D5BF7D4C4CE6");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_StaggerMeleeHit_C_Completed_C74ABBE842C11F9B9741D5BF7D4C4CE6_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_StaggerMeleeHit_C", "Completed_C74ABBE842C11F9B9741D5BF7D4C4CE6");
+
+	Params::UGA_Galileo_Lobster_StaggerMeleeHit_C_Completed_C74ABBE842C11F9B9741D5BF7D4C4CE6_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -43,9 +71,12 @@ void UGA_Galileo_Lobster_StaggerMeleeHit_C::Completed_C74ABBE842C11F9B9741D5BF7D
 
 void UGA_Galileo_Lobster_StaggerMeleeHit_C::Cancelled_C74ABBE842C11F9B9741D5BF7D4C4CE6(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_StaggerMeleeHit_C", "Cancelled_C74ABBE842C11F9B9741D5BF7D4C4CE6");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_StaggerMeleeHit_C_Cancelled_C74ABBE842C11F9B9741D5BF7D4C4CE6_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_StaggerMeleeHit_C", "Cancelled_C74ABBE842C11F9B9741D5BF7D4C4CE6");
+
+	Params::UGA_Galileo_Lobster_StaggerMeleeHit_C_Cancelled_C74ABBE842C11F9B9741D5BF7D4C4CE6_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -63,9 +94,12 @@ void UGA_Galileo_Lobster_StaggerMeleeHit_C::Cancelled_C74ABBE842C11F9B9741D5BF7D
 
 void UGA_Galileo_Lobster_StaggerMeleeHit_C::Triggered_C74ABBE842C11F9B9741D5BF7D4C4CE6(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_StaggerMeleeHit_C", "Triggered_C74ABBE842C11F9B9741D5BF7D4C4CE6");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_StaggerMeleeHit_C_Triggered_C74ABBE842C11F9B9741D5BF7D4C4CE6_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_StaggerMeleeHit_C", "Triggered_C74ABBE842C11F9B9741D5BF7D4C4CE6");
+
+	Params::UGA_Galileo_Lobster_StaggerMeleeHit_C_Triggered_C74ABBE842C11F9B9741D5BF7D4C4CE6_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -81,12 +115,14 @@ void UGA_Galileo_Lobster_StaggerMeleeHit_C::Triggered_C74ABBE842C11F9B9741D5BF7D
 
 void UGA_Galileo_Lobster_StaggerMeleeHit_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_StaggerMeleeHit_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_StaggerMeleeHit_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_StaggerMeleeHit_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,15 +141,18 @@ void UGA_Galileo_Lobster_StaggerMeleeHit_C::K2_ActivateAbility()
 // struct FGameplayTag                K2Node_CustomEvent_ApplicationTag                                (NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor)
 // struct FGameplayTag                Temp_struct_Variable                                             (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           ()
+// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           (None)
 // class UFortAbilityTask_PlayMontageWaitTarget*CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UGA_Galileo_Lobster_StaggerMeleeHit_C::ExecuteUbergraph_GA_Galileo_Lobster_StaggerMeleeHit(int32 EntryPoint, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_2, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_1, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, const struct FGameplayTag& Temp_struct_Variable, const struct FGameplayAbilityTargetDataHandle& Temp_struct_Variable_1, class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_StaggerMeleeHit_C", "ExecuteUbergraph_GA_Galileo_Lobster_StaggerMeleeHit");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_StaggerMeleeHit_C_ExecuteUbergraph_GA_Galileo_Lobster_StaggerMeleeHit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_StaggerMeleeHit_C", "ExecuteUbergraph_GA_Galileo_Lobster_StaggerMeleeHit");
+
+	Params::UGA_Galileo_Lobster_StaggerMeleeHit_C_ExecuteUbergraph_GA_Galileo_Lobster_StaggerMeleeHit_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_TargetData_2 = K2Node_CustomEvent_TargetData_2;
@@ -136,6 +175,4 @@ void UGA_Galileo_Lobster_StaggerMeleeHit_C::ExecuteUbergraph_GA_Galileo_Lobster_
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

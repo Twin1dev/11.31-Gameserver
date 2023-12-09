@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GAT_Athena_PurpleStuff.GAT_Athena_PurpleStuff_C
+// (None)
+
+class UClass* UGAT_Athena_PurpleStuff_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAT_Athena_PurpleStuff_C");
+
+	return Clss;
+}
+
+
+// GAT_Athena_PurpleStuff_C GAT_Athena_PurpleStuff.Default__GAT_Athena_PurpleStuff_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAT_Athena_PurpleStuff_C* UGAT_Athena_PurpleStuff_C::GetDefaultObj()
+{
+	static class UGAT_Athena_PurpleStuff_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAT_Athena_PurpleStuff_C*>(UGAT_Athena_PurpleStuff_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GAT_Athena_PurpleStuff.GAT_Athena_PurpleStuff_C.K2_ActivateAbility
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UGAT_Athena_PurpleStuff_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GAT_Athena_PurpleStuff_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_Athena_PurpleStuff_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_Athena_PurpleStuff_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -39,14 +66,17 @@ void UGAT_Athena_PurpleStuff_C::K2_ActivateAbility()
 // struct FGameplayAbilityActorInfo   CallFunc_GetActorInfo_ReturnValue                                (ContainsInstancedReference)
 // class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  ()
+// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  (None)
 // TArray<struct FActiveGameplayEffectHandle>CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue              (ZeroConstructor, ReferenceParm)
 
 void UGAT_Athena_PurpleStuff_C::ExecuteUbergraph_GAT_Athena_PurpleStuff(int32 EntryPoint, bool CallFunc_K2_CommitAbility_ReturnValue, const struct FGameplayAbilityActorInfo& CallFunc_GetActorInfo_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FGameplayAbilityTargetDataHandle& CallFunc_AbilityTargetDataFromActor_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAT_Athena_PurpleStuff_C", "ExecuteUbergraph_GAT_Athena_PurpleStuff");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_Athena_PurpleStuff_C_ExecuteUbergraph_GAT_Athena_PurpleStuff_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_Athena_PurpleStuff_C", "ExecuteUbergraph_GAT_Athena_PurpleStuff");
+
+	Params::UGAT_Athena_PurpleStuff_C_ExecuteUbergraph_GAT_Athena_PurpleStuff_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_K2_CommitAbility_ReturnValue = CallFunc_K2_CommitAbility_ReturnValue;
@@ -62,6 +92,4 @@ void UGAT_Athena_PurpleStuff_C::ExecuteUbergraph_GAT_Athena_PurpleStuff(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

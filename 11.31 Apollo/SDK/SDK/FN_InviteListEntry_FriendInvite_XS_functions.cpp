@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass InviteListEntry_FriendInvite_XS.InviteListEntry_FriendInvite_XS_C
+// (None)
+
+class UClass* UInviteListEntry_FriendInvite_XS_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("InviteListEntry_FriendInvite_XS_C");
+
+	return Clss;
+}
+
+
+// InviteListEntry_FriendInvite_XS_C InviteListEntry_FriendInvite_XS.Default__InviteListEntry_FriendInvite_XS_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UInviteListEntry_FriendInvite_XS_C* UInviteListEntry_FriendInvite_XS_C::GetDefaultObj()
+{
+	static class UInviteListEntry_FriendInvite_XS_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UInviteListEntry_FriendInvite_XS_C*>(UInviteListEntry_FriendInvite_XS_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function InviteListEntry_FriendInvite_XS.InviteListEntry_FriendInvite_XS_C.HandleOnlineIndicatorView
@@ -28,9 +53,12 @@ namespace SDK
 
 void UInviteListEntry_FriendInvite_XS_C::HandleOnlineIndicatorView(uint8 OnlineStatus, uint8 Temp_byte_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, const struct FLinearColor& Temp_struct_Variable_2, const struct FLinearColor& Temp_struct_Variable_3, const struct FLinearColor& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("InviteListEntry_FriendInvite_XS_C", "HandleOnlineIndicatorView");
+	static class UFunction* Func = nullptr;
 
-	Params::UInviteListEntry_FriendInvite_XS_C_HandleOnlineIndicatorView_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InviteListEntry_FriendInvite_XS_C", "HandleOnlineIndicatorView");
+
+	Params::UInviteListEntry_FriendInvite_XS_C_HandleOnlineIndicatorView_Params Parms{};
 
 	Parms.OnlineStatus = OnlineStatus;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -52,9 +80,12 @@ void UInviteListEntry_FriendInvite_XS_C::HandleOnlineIndicatorView(uint8 OnlineS
 
 void UInviteListEntry_FriendInvite_XS_C::BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen)
 {
-	static auto Func = Class->GetFunction("InviteListEntry_FriendInvite_XS_C", "BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UInviteListEntry_FriendInvite_XS_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InviteListEntry_FriendInvite_XS_C", "BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
+
+	Params::UInviteListEntry_FriendInvite_XS_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.bIsOpen = bIsOpen;
 
@@ -69,12 +100,14 @@ void UInviteListEntry_FriendInvite_XS_C::BndEvt__MenuAnchor_Actions_K2Node_Compo
 
 void UInviteListEntry_FriendInvite_XS_C::BP_OnHovered_1()
 {
-	static auto Func = Class->GetFunction("InviteListEntry_FriendInvite_XS_C", "BP_OnHovered_1");
+	static class UFunction* Func = nullptr;
 
-	Params::UInviteListEntry_FriendInvite_XS_C_BP_OnHovered_1_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InviteListEntry_FriendInvite_XS_C", "BP_OnHovered_1");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -85,12 +118,14 @@ void UInviteListEntry_FriendInvite_XS_C::BP_OnHovered_1()
 
 void UInviteListEntry_FriendInvite_XS_C::BP_OnUnhovered_1()
 {
-	static auto Func = Class->GetFunction("InviteListEntry_FriendInvite_XS_C", "BP_OnUnhovered_1");
+	static class UFunction* Func = nullptr;
 
-	Params::UInviteListEntry_FriendInvite_XS_C_BP_OnUnhovered_1_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InviteListEntry_FriendInvite_XS_C", "BP_OnUnhovered_1");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -108,9 +143,12 @@ void UInviteListEntry_FriendInvite_XS_C::BP_OnUnhovered_1()
 
 void UInviteListEntry_FriendInvite_XS_C::ExecuteUbergraph_InviteListEntry_FriendInvite_XS(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool K2Node_ComponentBoundEvent_bIsOpen, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, bool CallFunc_IsAnimationPlaying_ReturnValue)
 {
-	static auto Func = Class->GetFunction("InviteListEntry_FriendInvite_XS_C", "ExecuteUbergraph_InviteListEntry_FriendInvite_XS");
+	static class UFunction* Func = nullptr;
 
-	Params::UInviteListEntry_FriendInvite_XS_C_ExecuteUbergraph_InviteListEntry_FriendInvite_XS_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InviteListEntry_FriendInvite_XS_C", "ExecuteUbergraph_InviteListEntry_FriendInvite_XS");
+
+	Params::UInviteListEntry_FriendInvite_XS_C_ExecuteUbergraph_InviteListEntry_FriendInvite_XS_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -126,6 +164,4 @@ void UInviteListEntry_FriendInvite_XS_C::ExecuteUbergraph_InviteListEntry_Friend
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

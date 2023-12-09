@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_SpectatorPawn.BP_SpectatorPawn_C
+// (Actor, Pawn)
+
+class UClass* ABP_SpectatorPawn_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_SpectatorPawn_C");
+
+	return Clss;
+}
+
+
+// BP_SpectatorPawn_C BP_SpectatorPawn.Default__BP_SpectatorPawn_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_SpectatorPawn_C* ABP_SpectatorPawn_C::GetDefaultObj()
+{
+	static class ABP_SpectatorPawn_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_SpectatorPawn_C*>(ABP_SpectatorPawn_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_SpectatorPawn.BP_SpectatorPawn_C.SetSkydivingAudioEnabled
@@ -25,9 +50,12 @@ namespace SDK
 
 void ABP_SpectatorPawn_C::SetSkydivingAudioEnabled(bool Enabled, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue, bool CallFunc_IsValid_ReturnValue, class USoundBase* CallFunc_GetSkydivingSound_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_SpectatorPawn_C", "SetSkydivingAudioEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SpectatorPawn_C_SetSkydivingAudioEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SpectatorPawn_C", "SetSkydivingAudioEnabled");
+
+	Params::ABP_SpectatorPawn_C_SetSkydivingAudioEnabled_Params Parms{};
 
 	Parms.Enabled = Enabled;
 	Parms.CallFunc_SpawnSound2D_ReturnValue = CallFunc_SpawnSound2D_ReturnValue;
@@ -50,9 +78,12 @@ void ABP_SpectatorPawn_C::SetSkydivingAudioEnabled(bool Enabled, class UAudioCom
 
 class USoundBase* ABP_SpectatorPawn_C::GetSkydivingSound(bool Temp_bool_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable_1, class USoundBase* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BP_SpectatorPawn_C", "GetSkydivingSound");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SpectatorPawn_C_GetSkydivingSound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SpectatorPawn_C", "GetSkydivingSound");
+
+	Params::ABP_SpectatorPawn_C_GetSkydivingSound_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -72,12 +103,14 @@ class USoundBase* ABP_SpectatorPawn_C::GetSkydivingSound(bool Temp_bool_Variable
 
 void ABP_SpectatorPawn_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_SpectatorPawn_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SpectatorPawn_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SpectatorPawn_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -88,12 +121,14 @@ void ABP_SpectatorPawn_C::ReceiveBeginPlay()
 
 void ABP_SpectatorPawn_C::Handle_Parachute_Audio_State()
 {
-	static auto Func = Class->GetFunction("BP_SpectatorPawn_C", "Handle Parachute Audio State");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SpectatorPawn_C_Handle_Parachute_Audio_State_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SpectatorPawn_C", "Handle Parachute Audio State");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -124,9 +159,12 @@ void ABP_SpectatorPawn_C::Handle_Parachute_Audio_State()
 
 void ABP_SpectatorPawn_C::ExecuteUbergraph_BP_SpectatorPawn(int32 EntryPoint, bool CallFunc_IsValid_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AController* CallFunc_GetController_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, class AActor* CallFunc_GetViewTarget_ReturnValue, class USoundBase* CallFunc_GetSkydivingSound_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, bool CallFunc_NotEqual_ObjectObject_ReturnValue, bool CallFunc_IsParachuteOpen_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsSkydiving_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class USoundBase* CallFunc_GetSkydivingSound_ReturnValue_1, bool CallFunc_NotEqual_ObjectObject_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsPlaying_ReturnValue, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_SpectatorPawn_C", "ExecuteUbergraph_BP_SpectatorPawn");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SpectatorPawn_C", "ExecuteUbergraph_BP_SpectatorPawn");
+
+	Params::ABP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -155,6 +193,4 @@ void ABP_SpectatorPawn_C::ExecuteUbergraph_BP_SpectatorPawn(int32 EntryPoint, bo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

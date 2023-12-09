@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ChallengeDetailsImageGrid.ChallengeDetailsImageGrid_C
+// (None)
+
+class UClass* UChallengeDetailsImageGrid_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChallengeDetailsImageGrid_C");
+
+	return Clss;
+}
+
+
+// ChallengeDetailsImageGrid_C ChallengeDetailsImageGrid.Default__ChallengeDetailsImageGrid_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChallengeDetailsImageGrid_C* UChallengeDetailsImageGrid_C::GetDefaultObj()
+{
+	static class UChallengeDetailsImageGrid_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChallengeDetailsImageGrid_C*>(UChallengeDetailsImageGrid_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ChallengeDetailsImageGrid.ChallengeDetailsImageGrid_C.OnLockedToOwnedTransitions
@@ -24,9 +49,12 @@ namespace SDK
 
 void UChallengeDetailsImageGrid_C::OnLockedToOwnedTransitions(int32 Count, float TimeOffset, float AdditionalTime)
 {
-	static auto Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "OnLockedToOwnedTransitions");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeDetailsImageGrid_C_OnLockedToOwnedTransitions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "OnLockedToOwnedTransitions");
+
+	Params::UChallengeDetailsImageGrid_C_OnLockedToOwnedTransitions_Params Parms{};
 
 	Parms.Count = Count;
 	Parms.TimeOffset = TimeOffset;
@@ -43,12 +71,14 @@ void UChallengeDetailsImageGrid_C::OnLockedToOwnedTransitions(int32 Count, float
 
 void UChallengeDetailsImageGrid_C::Rollout_Tick()
 {
-	static auto Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "Rollout Tick");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeDetailsImageGrid_C_Rollout_Tick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "Rollout Tick");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -60,9 +90,12 @@ void UChallengeDetailsImageGrid_C::Rollout_Tick()
 
 void UChallengeDetailsImageGrid_C::Start_Rollout_Tick(float Time)
 {
-	static auto Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "Start Rollout Tick");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeDetailsImageGrid_C_Start_Rollout_Tick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "Start Rollout Tick");
+
+	Params::UChallengeDetailsImageGrid_C_Start_Rollout_Tick_Params Parms{};
 
 	Parms.Time = Time;
 
@@ -77,12 +110,14 @@ void UChallengeDetailsImageGrid_C::Start_Rollout_Tick(float Time)
 
 void UChallengeDetailsImageGrid_C::Stop_Rollout_Tick()
 {
-	static auto Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "Stop Rollout Tick");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeDetailsImageGrid_C_Stop_Rollout_Tick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "Stop Rollout Tick");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -94,9 +129,12 @@ void UChallengeDetailsImageGrid_C::Stop_Rollout_Tick()
 
 void UChallengeDetailsImageGrid_C::OnFocusLost(const struct FFocusEvent& InFocusEvent)
 {
-	static auto Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "OnFocusLost");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeDetailsImageGrid_C_OnFocusLost_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "OnFocusLost");
+
+	Params::UChallengeDetailsImageGrid_C_OnFocusLost_Params Parms{};
 
 	Parms.InFocusEvent = InFocusEvent;
 
@@ -112,9 +150,12 @@ void UChallengeDetailsImageGrid_C::OnFocusLost(const struct FFocusEvent& InFocus
 
 void UChallengeDetailsImageGrid_C::OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent)
 {
-	static auto Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "OnRemovedFromFocusPath");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeDetailsImageGrid_C_OnRemovedFromFocusPath_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "OnRemovedFromFocusPath");
+
+	Params::UChallengeDetailsImageGrid_C_OnRemovedFromFocusPath_Params Parms{};
 
 	Parms.InFocusEvent = InFocusEvent;
 
@@ -132,9 +173,12 @@ void UChallengeDetailsImageGrid_C::OnRemovedFromFocusPath(const struct FFocusEve
 
 void UChallengeDetailsImageGrid_C::OnOwnedToCompleteTransitions(int32 Count, float TimeOffset, float AdditionalTime)
 {
-	static auto Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "OnOwnedToCompleteTransitions");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeDetailsImageGrid_C_OnOwnedToCompleteTransitions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "OnOwnedToCompleteTransitions");
+
+	Params::UChallengeDetailsImageGrid_C_OnOwnedToCompleteTransitions_Params Parms{};
 
 	Parms.Count = Count;
 	Parms.TimeOffset = TimeOffset;
@@ -151,12 +195,14 @@ void UChallengeDetailsImageGrid_C::OnOwnedToCompleteTransitions(int32 Count, flo
 
 void UChallengeDetailsImageGrid_C::Rollout_Sound_Failsafe()
 {
-	static auto Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "Rollout Sound Failsafe");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeDetailsImageGrid_C_Rollout_Sound_Failsafe_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "Rollout Sound Failsafe");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -203,9 +249,12 @@ void UChallengeDetailsImageGrid_C::Rollout_Sound_Failsafe()
 
 void UChallengeDetailsImageGrid_C::ExecuteUbergraph_ChallengeDetailsImageGrid(int32 EntryPoint, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable_1, bool Temp_bool_Variable, class USoundBase* Temp_object_Variable_2, class USoundBase* Temp_object_Variable_3, bool CallFunc_IsValid_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, int32 K2Node_Event_Count_1, float K2Node_Event_TimeOffset_1, float K2Node_Event_AdditionalTime_1, bool CallFunc_IsValid_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue, float K2Node_CustomEvent_Time, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_3, bool Temp_bool_Variable_1, float CallFunc_GetGameTimeInSeconds_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue_1, float CallFunc_MapRangeClamped_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, const struct FFocusEvent& K2Node_Event_InFocusEvent_1, const struct FFocusEvent& K2Node_Event_InFocusEvent, int32 K2Node_Event_Count, float K2Node_Event_TimeOffset, float K2Node_Event_AdditionalTime, float CallFunc_Add_FloatFloat_ReturnValue_2, class USoundBase* K2Node_Select_Default, class USoundBase* K2Node_Select_Default_1, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "ExecuteUbergraph_ChallengeDetailsImageGrid");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeDetailsImageGrid_C", "ExecuteUbergraph_ChallengeDetailsImageGrid");
+
+	Params::UChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -250,6 +299,4 @@ void UChallengeDetailsImageGrid_C::ExecuteUbergraph_ChallengeDetailsImageGrid(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

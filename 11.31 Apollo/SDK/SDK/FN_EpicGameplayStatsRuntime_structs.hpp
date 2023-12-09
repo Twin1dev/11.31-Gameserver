@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -52,11 +49,11 @@ public:
 	enum class EEpicLeaderboardUpdateFunction    Metric;                                            // 0x40(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EEpicLeaderboardDataType          DataType;                                          // 0x41(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bPublish;                                          // 0x42(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_236B[0x1];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_17F0[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        WeeklyRefreshInterval;                             // 0x44(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bExportToBackEnd;                                  // 0x48(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bShowInFrontEnd;                                   // 0x49(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_236C[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_17F1[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagReferenceHelper           ReferenceHelper;                                   // 0x50(0x10)(Edit, NativeAccessSpecifierPublic)
 };
 
@@ -82,11 +79,9 @@ public:
 struct FTagTableManagerHelper
 {
 public:
-	uint8                                        Pad_236D[0x1];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_17F2[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

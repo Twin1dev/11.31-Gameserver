@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCNL_EnvCampFire_Stoke.GCNL_EnvCampFire_Stoke_C
+// (Actor)
+
+class UClass* AGCNL_EnvCampFire_Stoke_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCNL_EnvCampFire_Stoke_C");
+
+	return Clss;
+}
+
+
+// GCNL_EnvCampFire_Stoke_C GCNL_EnvCampFire_Stoke.Default__GCNL_EnvCampFire_Stoke_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCNL_EnvCampFire_Stoke_C* AGCNL_EnvCampFire_Stoke_C::GetDefaultObj()
+{
+	static class AGCNL_EnvCampFire_Stoke_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCNL_EnvCampFire_Stoke_C*>(AGCNL_EnvCampFire_Stoke_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCNL_EnvCampFire_Stoke.GCNL_EnvCampFire_Stoke_C.OnLoopingStart
@@ -25,9 +50,12 @@ namespace SDK
 
 void AGCNL_EnvCampFire_Stoke_C::OnLoopingStart(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents)
 {
-	static auto Func = Class->GetFunction("GCNL_EnvCampFire_Stoke_C", "OnLoopingStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EnvCampFire_Stoke_C_OnLoopingStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EnvCampFire_Stoke_C", "OnLoopingStart");
+
+	Params::AGCNL_EnvCampFire_Stoke_C_OnLoopingStart_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -60,9 +88,12 @@ void AGCNL_EnvCampFire_Stoke_C::OnLoopingStart(class AActor* MyTarget, struct FG
 
 void AGCNL_EnvCampFire_Stoke_C::ExecuteUbergraph_GCNL_EnvCampFire_Stoke(int32 EntryPoint, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, class AActor* K2Node_Event_MyTarget, const struct FGameplayCueParameters& K2Node_Event_Parameters, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents, class AB_BGA_Athena_EnvCampFire_C* K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire, bool K2Node_DynamicCast_bSuccess, class UParticleSystemComponent* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldLocation_SweepHitResult)
 {
-	static auto Func = Class->GetFunction("GCNL_EnvCampFire_Stoke_C", "ExecuteUbergraph_GCNL_EnvCampFire_Stoke");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EnvCampFire_Stoke_C", "ExecuteUbergraph_GCNL_EnvCampFire_Stoke");
+
+	Params::AGCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -86,6 +117,4 @@ void AGCNL_EnvCampFire_Stoke_C::ExecuteUbergraph_GCNL_EnvCampFire_Stoke(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -28,18 +25,15 @@ public:
 	class UClass*                                ControllerInputStyle;                              // 0xC48(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FDataTableRowHandle                   ButtonClickAction;                                 // 0xC50(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	enum class EHorizontalAlignment              ContentAlignment;                                  // 0xC60(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_60FB[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6324[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	UMulticastInlineDelegateProperty_            ChangeTheBinding_Button;                           // 0xC68(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FName                                  ActionNameData;                                    // 0xC78(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FKey                                  KeyData;                                           // 0xC80(0x18)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	class FText                                  TextData;                                          // 0xC98(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FKey                                  KeyNone;                                           // 0xCB0(0x18)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GamepadKeyTextButton_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGamepadKeyTextButton_C* GetDefaultObj();
 
 	void SetNonInteractableStyle();
 	void SetContentAlignment(enum class EHorizontalAlignment ContentAlignment);
@@ -56,6 +50,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,27 +12,6 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
-
-// 0x0 (0x0 - 0x0)
-// Function Athena_GameState.Athena_GameState_C.Timeline_0__FinishedFunc
-struct AAthena_GameState_C_Timeline_0__FinishedFunc_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function Athena_GameState.Athena_GameState_C.Timeline_0__UpdateFunc
-struct AAthena_GameState_C_Timeline_0__UpdateFunc_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function Athena_GameState.Athena_GameState_C.OnWinnerAnnounced
-struct AAthena_GameState_C_OnWinnerAnnounced_Params
-{
-public:
-};
 
 // 0x7 (0x7 - 0x0)
 // Function Athena_GameState.Athena_GameState_C.ExecuteUbergraph_Athena_GameState
@@ -51,6 +27,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

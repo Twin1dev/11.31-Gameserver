@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass Fortnite_CozyLodge_ExtCamera.Fortnite_CozyLodge_ExtCamera_C
+// (Actor)
+
+class UClass* AFortnite_CozyLodge_ExtCamera_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Fortnite_CozyLodge_ExtCamera_C");
+
+	return Clss;
+}
+
+
+// Fortnite_CozyLodge_ExtCamera_C Fortnite_CozyLodge_ExtCamera.Default__Fortnite_CozyLodge_ExtCamera_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AFortnite_CozyLodge_ExtCamera_C* AFortnite_CozyLodge_ExtCamera_C::GetDefaultObj()
+{
+	static class AFortnite_CozyLodge_ExtCamera_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AFortnite_CozyLodge_ExtCamera_C*>(AFortnite_CozyLodge_ExtCamera_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Fortnite_CozyLodge_ExtCamera.Fortnite_CozyLodge_ExtCamera_C.OnActivated
 // (Event, Public, BlueprintEvent)
 // Parameters:
 
 void AFortnite_CozyLodge_ExtCamera_C::OnActivated()
 {
-	static auto Func = Class->GetFunction("Fortnite_CozyLodge_ExtCamera_C", "OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnite_CozyLodge_ExtCamera_C_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fortnite_CozyLodge_ExtCamera_C", "OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AFortnite_CozyLodge_ExtCamera_C::OnActivated()
 
 void AFortnite_CozyLodge_ExtCamera_C::OnDeactivated()
 {
-	static auto Func = Class->GetFunction("Fortnite_CozyLodge_ExtCamera_C", "OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnite_CozyLodge_ExtCamera_C_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fortnite_CozyLodge_ExtCamera_C", "OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void AFortnite_CozyLodge_ExtCamera_C::OnDeactivated()
 
 void AFortnite_CozyLodge_ExtCamera_C::Reset_Location()
 {
-	static auto Func = Class->GetFunction("Fortnite_CozyLodge_ExtCamera_C", "Reset Location");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnite_CozyLodge_ExtCamera_C_Reset_Location_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fortnite_CozyLodge_ExtCamera_C", "Reset Location");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void AFortnite_CozyLodge_ExtCamera_C::Reset_Location()
 
 void AFortnite_CozyLodge_ExtCamera_C::ManualActivate()
 {
-	static auto Func = Class->GetFunction("Fortnite_CozyLodge_ExtCamera_C", "ManualActivate");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnite_CozyLodge_ExtCamera_C_ManualActivate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fortnite_CozyLodge_ExtCamera_C", "ManualActivate");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -86,9 +119,12 @@ void AFortnite_CozyLodge_ExtCamera_C::ManualActivate()
 
 void AFortnite_CozyLodge_ExtCamera_C::K2_OnBecomeViewTarget(class APlayerController* PC)
 {
-	static auto Func = Class->GetFunction("Fortnite_CozyLodge_ExtCamera_C", "K2_OnBecomeViewTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnite_CozyLodge_ExtCamera_C_K2_OnBecomeViewTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fortnite_CozyLodge_ExtCamera_C", "K2_OnBecomeViewTarget");
+
+	Params::AFortnite_CozyLodge_ExtCamera_C_K2_OnBecomeViewTarget_Params Parms{};
 
 	Parms.PC = PC;
 
@@ -104,9 +140,12 @@ void AFortnite_CozyLodge_ExtCamera_C::K2_OnBecomeViewTarget(class APlayerControl
 
 void AFortnite_CozyLodge_ExtCamera_C::K2_OnEndViewTarget(class APlayerController* PC)
 {
-	static auto Func = Class->GetFunction("Fortnite_CozyLodge_ExtCamera_C", "K2_OnEndViewTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnite_CozyLodge_ExtCamera_C_K2_OnEndViewTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fortnite_CozyLodge_ExtCamera_C", "K2_OnEndViewTarget");
+
+	Params::AFortnite_CozyLodge_ExtCamera_C_K2_OnEndViewTarget_Params Parms{};
 
 	Parms.PC = PC;
 
@@ -145,9 +184,12 @@ void AFortnite_CozyLodge_ExtCamera_C::K2_OnEndViewTarget(class APlayerController
 
 void AFortnite_CozyLodge_ExtCamera_C::ExecuteUbergraph_Fortnite_CozyLodge_ExtCamera(int32 EntryPoint, class APlayerController* K2Node_Event_PC, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable_1, class AFortTimeOfDayManager* CallFunc_GetTimeOfDayManagerFromContext_ReturnValue, TArray<class ABP_Fortnite_CozyLodge_Exterior_LightSwitcher_C*>& CallFunc_GetAllActorsOfClass_OutActors, class ABP_Fortnite_CozyLodge_Exterior_LightSwitcher_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, TArray<class ABP_Fortnite_CozyLodge_Exterior_LightSwitcher_C*>& CallFunc_GetAllActorsOfClass_OutActors_1, bool CallFunc_Greater_IntInt_ReturnValue, class ABP_Fortnite_CozyLodge_Exterior_LightSwitcher_C* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_2, int32 CallFunc_Array_Length_ReturnValue_3, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue_1, const struct FHitResult& CallFunc_K2_SetActorTransform_SweepHitResult, bool CallFunc_K2_SetActorTransform_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, class APlayerController* K2Node_Event_PC_1, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("Fortnite_CozyLodge_ExtCamera_C", "ExecuteUbergraph_Fortnite_CozyLodge_ExtCamera");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnite_CozyLodge_ExtCamera_C_ExecuteUbergraph_Fortnite_CozyLodge_ExtCamera_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fortnite_CozyLodge_ExtCamera_C", "ExecuteUbergraph_Fortnite_CozyLodge_ExtCamera");
+
+	Params::AFortnite_CozyLodge_ExtCamera_C_ExecuteUbergraph_Fortnite_CozyLodge_ExtCamera_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_PC = K2Node_Event_PC;
@@ -180,6 +222,4 @@ void AFortnite_CozyLodge_ExtCamera_C::ExecuteUbergraph_Fortnite_CozyLodge_ExtCam
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

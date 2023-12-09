@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Border_LtBlue_HGrad.Border_LtBlue_HGrad_C
+// (None)
+
+class UClass* UBorder_LtBlue_HGrad_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Border_LtBlue_HGrad_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Border_LtBlue_HGrad_C Border_LtBlue_HGrad.Default__Border_LtBlue_HGrad_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBorder_LtBlue_HGrad_C* UBorder_LtBlue_HGrad_C::GetDefaultObj()
+{
+	static class UBorder_LtBlue_HGrad_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorder_LtBlue_HGrad_C*>(UBorder_LtBlue_HGrad_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

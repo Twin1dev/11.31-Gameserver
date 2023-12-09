@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_Proj_Athena_Bandage.B_Proj_Athena_Bandage_C
+// (Actor)
+
+class UClass* AB_Proj_Athena_Bandage_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Proj_Athena_Bandage_C");
+
+	return Clss;
+}
+
+
+// B_Proj_Athena_Bandage_C B_Proj_Athena_Bandage.Default__B_Proj_Athena_Bandage_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Proj_Athena_Bandage_C* AB_Proj_Athena_Bandage_C::GetDefaultObj()
+{
+	static class AB_Proj_Athena_Bandage_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Proj_Athena_Bandage_C*>(AB_Proj_Athena_Bandage_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_Proj_Athena_Bandage.B_Proj_Athena_Bandage_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void AB_Proj_Athena_Bandage_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Proj_Athena_Bandage_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Proj_Athena_Bandage_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Proj_Athena_Bandage_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -45,9 +72,12 @@ void AB_Proj_Athena_Bandage_C::ReceiveBeginPlay()
 
 void AB_Proj_Athena_Bandage_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Proj_Athena_Bandage_C", "ReceiveHit");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Proj_Athena_Bandage_C_ReceiveHit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Proj_Athena_Bandage_C", "ReceiveHit");
+
+	Params::AB_Proj_Athena_Bandage_C_ReceiveHit_Params Parms{};
 
 	Parms.MyComp = MyComp;
 	Parms.Other = Other;
@@ -70,9 +100,12 @@ void AB_Proj_Athena_Bandage_C::ReceiveHit(class UPrimitiveComponent* MyComp, cla
 
 void AB_Proj_Athena_Bandage_C::OnStop(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Proj_Athena_Bandage_C", "OnStop");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Proj_Athena_Bandage_C_OnStop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Proj_Athena_Bandage_C", "OnStop");
+
+	Params::AB_Proj_Athena_Bandage_C_OnStop_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -88,9 +121,12 @@ void AB_Proj_Athena_Bandage_C::OnStop(struct FHitResult& Hit)
 
 void AB_Proj_Athena_Bandage_C::OnBounce(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Proj_Athena_Bandage_C", "OnBounce");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Proj_Athena_Bandage_C_OnBounce_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Proj_Athena_Bandage_C", "OnBounce");
+
+	Params::AB_Proj_Athena_Bandage_C_OnBounce_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -118,9 +154,12 @@ void AB_Proj_Athena_Bandage_C::OnBounce(struct FHitResult& Hit)
 
 void AB_Proj_Athena_Bandage_C::ExecuteUbergraph_B_Proj_Athena_Bandage(int32 EntryPoint, const struct FHitResult& K2Node_Event_Hit, bool Temp_bool_Has_Been_Initd_Variable, bool Temp_bool_IsClosed_Variable, class UPrimitiveComponent* K2Node_Event_MyComp, class AActor* K2Node_Event_Other, class UPrimitiveComponent* K2Node_Event_OtherComp, bool K2Node_Event_bSelfMoved, const struct FVector& K2Node_Event_HitLocation, const struct FVector& K2Node_Event_HitNormal, const struct FVector& K2Node_Event_NormalImpulse, const struct FHitResult& K2Node_Event_Hit_2, const struct FHitResult& K2Node_Event_Hit_1)
 {
-	static auto Func = Class->GetFunction("B_Proj_Athena_Bandage_C", "ExecuteUbergraph_B_Proj_Athena_Bandage");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Bandage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Proj_Athena_Bandage_C", "ExecuteUbergraph_B_Proj_Athena_Bandage");
+
+	Params::AB_Proj_Athena_Bandage_C_ExecuteUbergraph_B_Proj_Athena_Bandage_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_Hit = K2Node_Event_Hit;
@@ -142,6 +181,4 @@ void AB_Proj_Athena_Bandage_C::ExecuteUbergraph_B_Proj_Athena_Bandage(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

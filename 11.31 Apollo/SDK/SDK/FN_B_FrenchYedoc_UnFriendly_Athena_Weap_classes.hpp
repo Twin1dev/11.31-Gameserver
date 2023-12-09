@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,16 +16,11 @@ class AB_FrenchYedoc_UnFriendly_Athena_Weap_C : public AB_ConsumableSmall_Athena
 public:
 	class UStaticMeshComponent*                  SM_PG_Bot_Grenade_Enemy;                           // 0xA38(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_FrenchYedoc_UnFriendly_Athena_Weap_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_FrenchYedoc_UnFriendly_Athena_Weap_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -17,15 +14,15 @@ namespace SDK
 class AB_Ranged_Lotus_Mustache_C : public AB_Ranged_Generic_Athena_C
 {
 public:
-	uint8                                        Pad_4639[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5ECE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xF08(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	float                                        Timeline_1_NewTrack_0_8351400740E359EACF6851AB2B2BF762; // 0xF10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETimelineDirection                Timeline_1__Direction_8351400740E359EACF6851AB2B2BF762; // 0xF14(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_463A[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5ECF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTimelineComponent*                    Timeline_1;                                        // 0xF18(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Timeline_0_NewTrack_0_1366F380457842955A635D98E5E62F34; // 0xF20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETimelineDirection                Timeline_0__Direction_1366F380457842955A635D98E5E62F34; // 0xF24(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_463B[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5ED0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTimelineComponent*                    Timeline_0;                                        // 0xF28(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FDataTableRowHandle                   DataRow;                                           // 0xF30(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FLinearColor                          Screen_Full_Color__Material_;                      // 0xF40(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -34,23 +31,20 @@ public:
 	struct FLinearColor                          Screen_Empty_Color__Light_;                        // 0xF64(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Screen_Full_Color__Light_;                         // 0xF74(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CanPlay_;                                          // 0xF84(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_463C[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5ED1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                LockOnTarget;                                      // 0xF88(0x8)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        TurnSpeedMax;                                      // 0xF90(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        HomingDistanceThreshold;                           // 0xF94(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        TimeUntilMax;                                      // 0xF98(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_463D[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5ED2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class ULotus_Mustache_HealthBar_C*           LockOnWidget;                                      // 0xFA0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AAthena_LockOnWidgetActor_Proto_C*     WidgetActor;                                       // 0xFA8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        HealthPercent;                                     // 0xFB0(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        MaxTime;                                           // 0xFB4(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FScalableFloat                        ShouldSpawnBandages;                               // 0xFB8(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_Ranged_Lotus_Mustache_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_Ranged_Lotus_Mustache_C* GetDefaultObj();
 
 	void Timeline_0__FinishedFunc();
 	void Timeline_0__UpdateFunc();
@@ -69,6 +63,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

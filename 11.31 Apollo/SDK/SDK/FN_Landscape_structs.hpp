@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -136,7 +133,7 @@ enum class ETerrainCoordMappingType : uint8
 struct FLandscapeLayerBrush
 {
 public:
-	uint8                                        Pad_42C8[0x1];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_22E3[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x88 (0x88 - 0x0)
@@ -148,11 +145,11 @@ public:
 	class FName                                  Name;                                              // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bVisible;                                          // 0x18(0x1)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bLocked;                                           // 0x19(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42C9[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_22E4[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        HeightmapAlpha;                                    // 0x1C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        WeightmapAlpha;                                    // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELandscapeBlendMode               BlendMode;                                         // 0x24(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42CA[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_22E6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FLandscapeLayerBrush>          Brushes;                                           // 0x28(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TMap<class ULandscapeLayerInfoObject*, bool> WeightmapLayerAllocationBlend;                     // 0x38(0x50)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
@@ -173,7 +170,7 @@ public:
 	class ULandscapeLayerInfoObject*             LayerInfo;                                         // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        WeightmapTextureIndex;                             // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        WeightmapTextureChannel;                           // 0x9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42CB[0x6];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_22E8[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -201,7 +198,7 @@ struct FLandscapeComponentMaterialOverride
 {
 public:
 	struct FPerPlatformInt                       LODIndex;                                          // 0x0(0x4)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42CC[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_22EB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInterface*                    Material;                                          // 0x8(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -226,7 +223,7 @@ public:
 struct FGizmoSelectData
 {
 public:
-	uint8                                        Pad_42CD[0x50];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_22F0[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x48 (0x48 - 0x0)
@@ -237,13 +234,13 @@ public:
 	class UStaticMesh*                           GrassMesh;                                         // 0x0(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPerPlatformFloat                     GrassDensity;                                      // 0x8(0x4)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         bUseGrid;                                          // 0xC(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42CE[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_22F1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        PlacementJitter;                                   // 0x10(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPerPlatformInt                       StartCullDistance;                                 // 0x14(0x4)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FPerPlatformInt                       EndCullDistance;                                   // 0x18(0x4)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                        MinLOD;                                            // 0x1C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EGrassScaling                     Scaling;                                           // 0x20(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42CF[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_22F3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFloatInterval                        ScaleX;                                            // 0x24(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFloatInterval                        ScaleY;                                            // 0x2C(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFloatInterval                        ScaleZ;                                            // 0x34(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -254,7 +251,7 @@ public:
 	bool                                         bReceivesDecals;                                   // 0x40(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bCastDynamicShadow;                                // 0x41(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bKeepInstanceBufferCPUCopy;                        // 0x42(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42D0[0x5];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_22F4[0x5];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -272,7 +269,7 @@ struct FLandscapeProxyMaterialOverride
 {
 public:
 	struct FPerPlatformInt                       LODIndex;                                          // 0x0(0x4)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42D1[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_22F7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInterface*                    Material;                                          // 0x8(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -281,7 +278,7 @@ public:
 struct FLandscapeImportLayerInfo
 {
 public:
-	uint8                                        Pad_42D2[0x1];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_22F8[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -297,7 +294,7 @@ public:
 struct FLandscapeEditorLayerSettings
 {
 public:
-	uint8                                        Pad_42D3[0x1];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_22F9[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -307,7 +304,7 @@ struct FLandscapeSplineConnection
 public:
 	class ULandscapeSplineSegment*               Segment;                                           // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        End : 1;                                           // Mask: 0x1, PropSize: 0x10x8(0x1)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42D4[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_22FB[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -315,7 +312,7 @@ public:
 struct FForeignWorldSplineData
 {
 public:
-	uint8                                        Pad_42D5[0x1];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_22FD[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -323,7 +320,7 @@ public:
 struct FForeignSplineSegmentData
 {
 public:
-	uint8                                        Pad_42D6[0x1];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_22FF[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -331,7 +328,7 @@ public:
 struct FForeignControlPointData
 {
 public:
-	uint8                                        Pad_42D7[0x1];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2303[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x38 (0x38 - 0x0)
@@ -342,17 +339,17 @@ public:
 	class UStaticMesh*                           Mesh;                                              // 0x0(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class UMaterialInterface*>            MaterialOverrides;                                 // 0x8(0x10)(Edit, ZeroConstructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	uint8                                        bCenterH : 1;                                      // Mask: 0x1, PropSize: 0x10x18(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_2CE : 7;                                    // Fixing Bit-Field Size  [ Dumper-8 ]
-	uint8                                        Pad_42D8[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        BitPad_1A7 : 7;                                    // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_2309[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector2D                             CenterAdjust;                                      // 0x1C(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bScaleToWidth : 1;                                 // Mask: 0x1, PropSize: 0x10x24(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_2CF : 7;                                    // Fixing Bit-Field Size  [ Dumper-8 ]
-	uint8                                        Pad_42D9[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        BitPad_1A8 : 7;                                    // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_230A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               Scale;                                             // 0x28(0xC)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELandscapeSplineMeshOrientation   Orientation;                                       // 0x34(0x1)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ESplineMeshAxis                   ForwardAxis;                                       // 0x35(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ESplineMeshAxis                   UpAxis;                                            // 0x36(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42DA[0x1];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_230B[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -363,7 +360,7 @@ public:
 	class ULandscapeSplineControlPoint*          ControlPoint;                                      // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        TangentLen;                                        // 0x8(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                  SocketName;                                        // 0xC(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42DB[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_230D[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x70 (0x70 - 0x0)
@@ -391,7 +388,7 @@ public:
 	class FName                                  Name;                                              // 0x0(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ULandscapeGrassType*                   GrassType;                                         // 0x8(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FExpressionInput                      Input;                                             // 0x10(0xC)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42DC[0xC];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2314[0xC];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x48 (0x48 - 0x0)
@@ -401,11 +398,11 @@ struct FLayerBlendInput
 public:
 	class FName                                  LayerName;                                         // 0x0(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELandscapeLayerBlendType          BlendType;                                         // 0x8(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42DD[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_231C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FExpressionInput                      LayerInput;                                        // 0xC(0xC)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42DE[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_231D[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FExpressionInput                      HeightInput;                                       // 0x20(0xC)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42DF[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_231E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        PreviewWeight;                                     // 0x34(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                               ConstLayerInput;                                   // 0x38(0xC)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        ConstHeightInput;                                  // 0x44(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -413,6 +410,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

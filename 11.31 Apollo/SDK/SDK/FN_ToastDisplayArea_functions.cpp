@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ToastDisplayArea.ToastDisplayArea_C
+// (None)
+
+class UClass* UToastDisplayArea_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ToastDisplayArea_C");
+
+	return Clss;
+}
+
+
+// ToastDisplayArea_C ToastDisplayArea.Default__ToastDisplayArea_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UToastDisplayArea_C* UToastDisplayArea_C::GetDefaultObj()
+{
+	static class UToastDisplayArea_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UToastDisplayArea_C*>(UToastDisplayArea_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ToastDisplayArea.ToastDisplayArea_C.AttemptDisplayNextToast
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UToastDisplayArea_C::AttemptDisplayNextToast()
 {
-	static auto Func = Class->GetFunction("ToastDisplayArea_C", "AttemptDisplayNextToast");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastDisplayArea_C_AttemptDisplayNextToast_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastDisplayArea_C", "AttemptDisplayNextToast");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UToastDisplayArea_C::AttemptDisplayNextToast()
 
 void UToastDisplayArea_C::Construct()
 {
-	static auto Func = Class->GetFunction("ToastDisplayArea_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastDisplayArea_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastDisplayArea_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UToastDisplayArea_C::Construct()
 
 void UToastDisplayArea_C::BndEvt__ToastWidget_New_K2Node_ComponentBoundEvent_9_OnFinishedToast__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("ToastDisplayArea_C", "BndEvt__ToastWidget_New_K2Node_ComponentBoundEvent_9_OnFinishedToast__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastDisplayArea_C_BndEvt__ToastWidget_New_K2Node_ComponentBoundEvent_9_OnFinishedToast__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastDisplayArea_C", "BndEvt__ToastWidget_New_K2Node_ComponentBoundEvent_9_OnFinishedToast__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void UToastDisplayArea_C::BndEvt__ToastWidget_New_K2Node_ComponentBoundEvent_9_O
 
 void UToastDisplayArea_C::BndEvt__ToastWidget_MinorError_K2Node_ComponentBoundEvent_3_OnFinishedToast__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("ToastDisplayArea_C", "BndEvt__ToastWidget_MinorError_K2Node_ComponentBoundEvent_3_OnFinishedToast__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastDisplayArea_C_BndEvt__ToastWidget_MinorError_K2Node_ComponentBoundEvent_3_OnFinishedToast__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastDisplayArea_C", "BndEvt__ToastWidget_MinorError_K2Node_ComponentBoundEvent_3_OnFinishedToast__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -85,12 +118,14 @@ void UToastDisplayArea_C::BndEvt__ToastWidget_MinorError_K2Node_ComponentBoundEv
 
 void UToastDisplayArea_C::BndEvt__PowerToastWidget_K2Node_ComponentBoundEvent_0_OnToastFinished__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("ToastDisplayArea_C", "BndEvt__PowerToastWidget_K2Node_ComponentBoundEvent_0_OnToastFinished__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastDisplayArea_C_BndEvt__PowerToastWidget_K2Node_ComponentBoundEvent_0_OnToastFinished__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastDisplayArea_C", "BndEvt__PowerToastWidget_K2Node_ComponentBoundEvent_0_OnToastFinished__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -101,12 +136,14 @@ void UToastDisplayArea_C::BndEvt__PowerToastWidget_K2Node_ComponentBoundEvent_0_
 
 void UToastDisplayArea_C::BndEvt__VoiceChannelChangePopup_K2Node_ComponentBoundEvent_1_OnToastDisplayFinished__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("ToastDisplayArea_C", "BndEvt__VoiceChannelChangePopup_K2Node_ComponentBoundEvent_1_OnToastDisplayFinished__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastDisplayArea_C_BndEvt__VoiceChannelChangePopup_K2Node_ComponentBoundEvent_1_OnToastDisplayFinished__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastDisplayArea_C", "BndEvt__VoiceChannelChangePopup_K2Node_ComponentBoundEvent_1_OnToastDisplayFinished__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -118,9 +155,12 @@ void UToastDisplayArea_C::BndEvt__VoiceChannelChangePopup_K2Node_ComponentBoundE
 
 void UToastDisplayArea_C::OnDisplayToast(class UFortUINotification* NewToast)
 {
-	static auto Func = Class->GetFunction("ToastDisplayArea_C", "OnDisplayToast");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastDisplayArea_C_OnDisplayToast_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastDisplayArea_C", "OnDisplayToast");
+
+	Params::UToastDisplayArea_C_OnDisplayToast_Params Parms{};
 
 	Parms.NewToast = NewToast;
 
@@ -157,9 +197,12 @@ void UToastDisplayArea_C::OnDisplayToast(class UFortUINotification* NewToast)
 
 void UToastDisplayArea_C::ExecuteUbergraph_ToastDisplayArea(int32 EntryPoint, uint8 CallFunc_MakeLiteralByte_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue_1, class UFortUINotification* K2Node_Event_NewToast, class UToastWidget_New_C* K2Node_DynamicCast_AsToast_Widget_New, bool K2Node_DynamicCast_bSuccess, bool K2Node_SwitchEnum_CmpSuccess, class UToastWidget_MinorError_C* K2Node_DynamicCast_AsToast_Widget_Minor_Error, bool K2Node_DynamicCast_bSuccess_1, uint8 CallFunc_MakeLiteralByte_ReturnValue_2, class UFortPlayerPowerRatingToast* K2Node_DynamicCast_AsFort_Player_Power_Rating_Toast, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_NotEqual_ByteByte_ReturnValue_1, bool CallFunc_LessEqual_ByteByte_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_LessEqual_ByteByte_ReturnValue_1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ToastDisplayArea_C", "ExecuteUbergraph_ToastDisplayArea");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastDisplayArea_C", "ExecuteUbergraph_ToastDisplayArea");
+
+	Params::UToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_MakeLiteralByte_ReturnValue = CallFunc_MakeLiteralByte_ReturnValue;
@@ -190,6 +233,4 @@ void UToastDisplayArea_C::ExecuteUbergraph_ToastDisplayArea(int32 EntryPoint, ui
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

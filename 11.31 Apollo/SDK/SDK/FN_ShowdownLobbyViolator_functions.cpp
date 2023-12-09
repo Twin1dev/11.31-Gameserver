@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ShowdownLobbyViolator.ShowdownLobbyViolator_C
+// (None)
+
+class UClass* UShowdownLobbyViolator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ShowdownLobbyViolator_C");
+
+	return Clss;
+}
+
+
+// ShowdownLobbyViolator_C ShowdownLobbyViolator.Default__ShowdownLobbyViolator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UShowdownLobbyViolator_C* UShowdownLobbyViolator_C::GetDefaultObj()
+{
+	static class UShowdownLobbyViolator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UShowdownLobbyViolator_C*>(UShowdownLobbyViolator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ShowdownLobbyViolator.ShowdownLobbyViolator_C.RefreshDataBP
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UShowdownLobbyViolator_C::RefreshDataBP()
 {
-	static auto Func = Class->GetFunction("ShowdownLobbyViolator_C", "RefreshDataBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownLobbyViolator_C_RefreshDataBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownLobbyViolator_C", "RefreshDataBP");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -36,14 +63,14 @@ void UShowdownLobbyViolator_C::RefreshDataBP()
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortShowdownEventState CallFunc_GetEventTimeState_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
-// class FText                        Temp_text_Variable_2                                             ()
-// class FText                        Temp_text_Variable_3                                             ()
-// class FText                        Temp_text_Variable_4                                             ()
-// class FText                        Temp_text_Variable_5                                             ()
-// class FText                        Temp_text_Variable_6                                             ()
-// class FText                        Temp_text_Variable_7                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
+// class FText                        Temp_text_Variable_2                                             (None)
+// class FText                        Temp_text_Variable_3                                             (None)
+// class FText                        Temp_text_Variable_4                                             (None)
+// class FText                        Temp_text_Variable_5                                             (None)
+// class FText                        Temp_text_Variable_6                                             (None)
+// class FText                        Temp_text_Variable_7                                             (None)
 // enum class EFortShowdownEventState Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable_1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -57,25 +84,28 @@ void UShowdownLobbyViolator_C::RefreshDataBP()
 // int32                              Temp_int_Variable_9                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable_10                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_8                                             ()
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// class FText                        Temp_text_Variable_8                                             (None)
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
-// class FText                        Temp_text_Variable_9                                             ()
-// class FText                        Temp_text_Variable_10                                            ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
+// class FText                        Temp_text_Variable_9                                             (None)
+// class FText                        Temp_text_Variable_10                                            (None)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortShowdownEventState Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_1                                          ()
-// class FText                        CallFunc_TextToUpper_ReturnValue_1                               ()
+// class FText                        K2Node_Select_Default_1                                          (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue_1                               (None)
 
 void UShowdownLobbyViolator_C::ExecuteUbergraph_ShowdownLobbyViolator(int32 EntryPoint, enum class EFortShowdownEventState CallFunc_GetEventTimeState_ReturnValue, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class FText Temp_text_Variable_2, class FText Temp_text_Variable_3, class FText Temp_text_Variable_4, class FText Temp_text_Variable_5, class FText Temp_text_Variable_6, class FText Temp_text_Variable_7, enum class EFortShowdownEventState Temp_byte_Variable, int32 Temp_int_Variable, int32 Temp_int_Variable_1, int32 Temp_int_Variable_2, int32 Temp_int_Variable_3, int32 Temp_int_Variable_4, int32 Temp_int_Variable_5, int32 Temp_int_Variable_6, int32 Temp_int_Variable_7, int32 Temp_int_Variable_8, int32 Temp_int_Variable_9, int32 Temp_int_Variable_10, int32 K2Node_Select_Default, class FText Temp_text_Variable_8, const struct FSlateColor& K2Node_MakeStruct_SlateColor, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue, class FText Temp_text_Variable_9, class FText Temp_text_Variable_10, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, enum class EFortShowdownEventState Temp_byte_Variable_1, class FText K2Node_Select_Default_1, class FText CallFunc_TextToUpper_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("ShowdownLobbyViolator_C", "ExecuteUbergraph_ShowdownLobbyViolator");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownLobbyViolator_C_ExecuteUbergraph_ShowdownLobbyViolator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownLobbyViolator_C", "ExecuteUbergraph_ShowdownLobbyViolator");
+
+	Params::UShowdownLobbyViolator_C_ExecuteUbergraph_ShowdownLobbyViolator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetEventTimeState_ReturnValue = CallFunc_GetEventTimeState_ReturnValue;
@@ -120,6 +150,4 @@ void UShowdownLobbyViolator_C::ExecuteUbergraph_ShowdownLobbyViolator(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

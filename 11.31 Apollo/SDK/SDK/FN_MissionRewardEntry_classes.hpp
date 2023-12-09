@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -26,11 +23,8 @@ public:
 	bool                                         HideCompletion;                                    // 0x270(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         HideBorder;                                        // 0x271(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MissionRewardEntry_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMissionRewardEntry_C* GetDefaultObj();
 
 	void ShowCompletionCheck();
 	void HideCompletionCheck();
@@ -42,6 +36,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

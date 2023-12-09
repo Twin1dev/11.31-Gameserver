@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -24,17 +21,14 @@ public:
 	struct FDataTableRowHandle                   ButtonClickAction;                                 // 0xB90(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	enum class EHorizontalAlignment              InputActionHorizontalAlignment;                    // 0xBA0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EVerticalAlignment                InputActionVerticalAlignment;                      // 0xBA1(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_444A[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_35D3[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector2D                             InputActionRenderTranslation;                      // 0xBA4(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         InputActionUseRimBrush;                            // 0xBAC(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_444B[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_35D4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector2D                             InputActionRimBrushSize;                           // 0xBB0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("PanelButton_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UPanelButton_C* GetDefaultObj();
 
 	void UpdateInputActionLayout(const struct FSlateBrush& RimBrush, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, class UOverlaySlot* K2Node_DynamicCast_AsOverlay_Slot, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue);
 	void UpdateStyle(bool bUsingGamepad, class FText ActionText);
@@ -53,6 +47,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

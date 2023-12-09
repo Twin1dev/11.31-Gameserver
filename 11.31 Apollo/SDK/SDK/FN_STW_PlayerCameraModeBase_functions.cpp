@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass STW_PlayerCameraModeBase.STW_PlayerCameraModeBase_C
+// (None)
+
+class UClass* USTW_PlayerCameraModeBase_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("STW_PlayerCameraModeBase_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// STW_PlayerCameraModeBase_C STW_PlayerCameraModeBase.Default__STW_PlayerCameraModeBase_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USTW_PlayerCameraModeBase_C* USTW_PlayerCameraModeBase_C::GetDefaultObj()
+{
+	static class USTW_PlayerCameraModeBase_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USTW_PlayerCameraModeBase_C*>(USTW_PlayerCameraModeBase_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

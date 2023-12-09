@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -21,14 +18,11 @@ public:
 	class UVerticalBox*                          IngredientsList;                                   // 0x2F0(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UFortItem*                             ItemRepresented;                                   // 0x2F8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortBrushSize                    IconSize;                                          // 0x300(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_4BC8[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_F9B[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Quantity;                                          // 0x304(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ItemCraftingIngredientList_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UItemCraftingIngredientList_C* GetDefaultObj();
 
 	void RefreshItemToRepresent();
 	void SetItemQuantity(int32 ItemQuantity, bool CallFunc_NotEqual_IntInt_ReturnValue);
@@ -51,6 +45,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

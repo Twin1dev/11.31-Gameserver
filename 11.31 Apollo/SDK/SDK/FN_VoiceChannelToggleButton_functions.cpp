@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass VoiceChannelToggleButton.VoiceChannelToggleButton_C
+// (None)
+
+class UClass* UVoiceChannelToggleButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VoiceChannelToggleButton_C");
+
+	return Clss;
+}
+
+
+// VoiceChannelToggleButton_C VoiceChannelToggleButton.Default__VoiceChannelToggleButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UVoiceChannelToggleButton_C* UVoiceChannelToggleButton_C::GetDefaultObj()
+{
+	static class UVoiceChannelToggleButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UVoiceChannelToggleButton_C*>(UVoiceChannelToggleButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function VoiceChannelToggleButton.VoiceChannelToggleButton_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UVoiceChannelToggleButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("VoiceChannelToggleButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelToggleButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelToggleButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UVoiceChannelToggleButton_C::BP_OnHovered()
 
 void UVoiceChannelToggleButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("VoiceChannelToggleButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelToggleButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelToggleButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -54,9 +83,12 @@ void UVoiceChannelToggleButton_C::BP_OnUnhovered()
 
 void UVoiceChannelToggleButton_C::OnVoiceChannelSelected(bool bIsPartyChat)
 {
-	static auto Func = Class->GetFunction("VoiceChannelToggleButton_C", "OnVoiceChannelSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelToggleButton_C_OnVoiceChannelSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelToggleButton_C", "OnVoiceChannelSelected");
+
+	Params::UVoiceChannelToggleButton_C_OnVoiceChannelSelected_Params Parms{};
 
 	Parms.bIsPartyChat = bIsPartyChat;
 
@@ -77,9 +109,12 @@ void UVoiceChannelToggleButton_C::OnVoiceChannelSelected(bool bIsPartyChat)
 
 void UVoiceChannelToggleButton_C::ExecuteUbergraph_VoiceChannelToggleButton(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool K2Node_Event_bIsPartyChat, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("VoiceChannelToggleButton_C", "ExecuteUbergraph_VoiceChannelToggleButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelToggleButton_C_ExecuteUbergraph_VoiceChannelToggleButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelToggleButton_C", "ExecuteUbergraph_VoiceChannelToggleButton");
+
+	Params::UVoiceChannelToggleButton_C_ExecuteUbergraph_VoiceChannelToggleButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -94,6 +129,4 @@ void UVoiceChannelToggleButton_C::ExecuteUbergraph_VoiceChannelToggleButton(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

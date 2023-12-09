@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass TopBar.TopBar_C
+// (None)
+
+class UClass* UTopBar_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TopBar_C");
+
+	return Clss;
+}
+
+
+// TopBar_C TopBar.Default__TopBar_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTopBar_C* UTopBar_C::GetDefaultObj()
+{
+	static class UTopBar_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTopBar_C*>(UTopBar_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function TopBar.TopBar_C.UpdateMTXButton
@@ -35,9 +60,12 @@ namespace SDK
 
 void UTopBar_C::UpdateMTXButton(enum class EFortRuntimeOptionTabState Temp_byte_Variable, bool Temp_bool_Variable, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, TArray<struct FRuntimeOptionTabStateInfo>& CallFunc_GetDisabledFrontendNavigationTabs_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, const struct FRuntimeOptionTabStateInfo& CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue, bool K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("TopBar_C", "UpdateMTXButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBar_C_UpdateMTXButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBar_C", "UpdateMTXButton");
+
+	Params::UTopBar_C_UpdateMTXButton_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -65,12 +93,14 @@ void UTopBar_C::UpdateMTXButton(enum class EFortRuntimeOptionTabState Temp_byte_
 
 void UTopBar_C::Construct()
 {
-	static auto Func = Class->GetFunction("TopBar_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBar_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBar_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -81,12 +111,14 @@ void UTopBar_C::Construct()
 
 void UTopBar_C::OnMobileTabLabelChanged()
 {
-	static auto Func = Class->GetFunction("TopBar_C", "OnMobileTabLabelChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBar_C_OnMobileTabLabelChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBar_C", "OnMobileTabLabelChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -107,9 +139,12 @@ void UTopBar_C::OnMobileTabLabelChanged()
 
 void UTopBar_C::ExecuteUbergraph_TopBar(int32 EntryPoint, const struct FMargin& K2Node_MakeStruct_Margin, bool CallFunc_IsMobileGame_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin_1, TScriptInterface<class IFortClientAnnouncement_TutorialInterface> K2Node_DynamicCast_AsFort_Client_Announcement_Tutorial_Interface, bool K2Node_DynamicCast_bSuccess, TScriptInterface<class IFortClientAnnouncement_TutorialInterface> K2Node_DynamicCast_AsFort_Client_Announcement_Tutorial_Interface_1, bool K2Node_DynamicCast_bSuccess_1, class UHorizontalBoxSlot* CallFunc_SlotAsHorizontalBoxSlot_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TopBar_C", "ExecuteUbergraph_TopBar");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBar_C_ExecuteUbergraph_TopBar_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBar_C", "ExecuteUbergraph_TopBar");
+
+	Params::UTopBar_C_ExecuteUbergraph_TopBar_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_MakeStruct_Margin = K2Node_MakeStruct_Margin;
@@ -128,6 +163,4 @@ void UTopBar_C::ExecuteUbergraph_TopBar(int32 EntryPoint, const struct FMargin& 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

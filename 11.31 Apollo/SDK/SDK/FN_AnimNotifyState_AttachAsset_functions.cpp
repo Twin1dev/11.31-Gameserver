@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass AnimNotifyState_AttachAsset.AnimNotifyState_AttachAsset_C
+// (None)
+
+class UClass* UAnimNotifyState_AttachAsset_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AnimNotifyState_AttachAsset_C");
+
+	return Clss;
+}
+
+
+// AnimNotifyState_AttachAsset_C AnimNotifyState_AttachAsset.Default__AnimNotifyState_AttachAsset_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAnimNotifyState_AttachAsset_C* UAnimNotifyState_AttachAsset_C::GetDefaultObj()
+{
+	static class UAnimNotifyState_AttachAsset_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAnimNotifyState_AttachAsset_C*>(UAnimNotifyState_AttachAsset_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AnimNotifyState_AttachAsset.AnimNotifyState_AttachAsset_C.Received_NotifyEnd
@@ -27,9 +52,12 @@ namespace SDK
 
 bool UAnimNotifyState_AttachAsset_C::Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, class AActor* CallFunc_GetOwner_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AnimNotifyState_AttachAsset_C", "Received_NotifyEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimNotifyState_AttachAsset_C_Received_NotifyEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimNotifyState_AttachAsset_C", "Received_NotifyEnd");
+
+	Params::UAnimNotifyState_AttachAsset_C_Received_NotifyEnd_Params Parms{};
 
 	Parms.MeshComp = MeshComp;
 	Parms.Animation = Animation;
@@ -65,9 +93,12 @@ bool UAnimNotifyState_AttachAsset_C::Received_NotifyEnd(class USkeletalMeshCompo
 
 bool UAnimNotifyState_AttachAsset_C::Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration, class AActor* CallFunc_GetOwner_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAnyMatchingGameplayTags_self_CastInput, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, class USkeletalMeshComponent* CallFunc_GetAssetSkeletalMeshComponentAttachment_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AnimNotifyState_AttachAsset_C", "Received_NotifyBegin");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimNotifyState_AttachAsset_C_Received_NotifyBegin_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimNotifyState_AttachAsset_C", "Received_NotifyBegin");
+
+	Params::UAnimNotifyState_AttachAsset_C_Received_NotifyBegin_Params Parms{};
 
 	Parms.MeshComp = MeshComp;
 	Parms.Animation = Animation;
@@ -92,6 +123,4 @@ bool UAnimNotifyState_AttachAsset_C::Received_NotifyBegin(class USkeletalMeshCom
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

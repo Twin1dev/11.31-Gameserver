@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass CommunityVotingSection.CommunityVotingSection_C
+// (None)
+
+class UClass* UCommunityVotingSection_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CommunityVotingSection_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// CommunityVotingSection_C CommunityVotingSection.Default__CommunityVotingSection_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCommunityVotingSection_C* UCommunityVotingSection_C::GetDefaultObj()
+{
+	static class UCommunityVotingSection_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCommunityVotingSection_C*>(UCommunityVotingSection_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

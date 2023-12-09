@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass M_MED_Ornament_Soldier_AnimBP.M_MED_Ornament_Soldier_AnimBP_C
+// (None)
+
+class UClass* UM_MED_Ornament_Soldier_AnimBP_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("M_MED_Ornament_Soldier_AnimBP_C");
+
+	return Clss;
+}
+
+
+// M_MED_Ornament_Soldier_AnimBP_C M_MED_Ornament_Soldier_AnimBP.Default__M_MED_Ornament_Soldier_AnimBP_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UM_MED_Ornament_Soldier_AnimBP_C* UM_MED_Ornament_Soldier_AnimBP_C::GetDefaultObj()
+{
+	static class UM_MED_Ornament_Soldier_AnimBP_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UM_MED_Ornament_Soldier_AnimBP_C*>(UM_MED_Ornament_Soldier_AnimBP_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function M_MED_Ornament_Soldier_AnimBP.M_MED_Ornament_Soldier_AnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void UM_MED_Ornament_Soldier_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("M_MED_Ornament_Soldier_AnimBP_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UM_MED_Ornament_Soldier_AnimBP_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("M_MED_Ornament_Soldier_AnimBP_C", "AnimGraph");
+
+	Params::UM_MED_Ornament_Soldier_AnimBP_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -42,9 +70,12 @@ void UM_MED_Ornament_Soldier_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 
 void UM_MED_Ornament_Soldier_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static auto Func = Class->GetFunction("M_MED_Ornament_Soldier_AnimBP_C", "BlueprintUpdateAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UM_MED_Ornament_Soldier_AnimBP_C_BlueprintUpdateAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("M_MED_Ornament_Soldier_AnimBP_C", "BlueprintUpdateAnimation");
+
+	Params::UM_MED_Ornament_Soldier_AnimBP_C_BlueprintUpdateAnimation_Params Parms{};
 
 	Parms.DeltaTimeX = DeltaTimeX;
 
@@ -59,12 +90,14 @@ void UM_MED_Ornament_Soldier_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX
 
 void UM_MED_Ornament_Soldier_AnimBP_C::OnCharacterCustomizationLoaded()
 {
-	static auto Func = Class->GetFunction("M_MED_Ornament_Soldier_AnimBP_C", "OnCharacterCustomizationLoaded");
+	static class UFunction* Func = nullptr;
 
-	Params::UM_MED_Ornament_Soldier_AnimBP_C_OnCharacterCustomizationLoaded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("M_MED_Ornament_Soldier_AnimBP_C", "OnCharacterCustomizationLoaded");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -103,9 +136,12 @@ void UM_MED_Ornament_Soldier_AnimBP_C::OnCharacterCustomizationLoaded()
 
 void UM_MED_Ornament_Soldier_AnimBP_C::ExecuteUbergraph_M_MED_Ornament_Soldier_AnimBP(int32 EntryPoint, float K2Node_Event_DeltaTimeX, class USkeletalMeshComponent* CallFunc_GetPartSkeletalMeshComponent_ReturnValue, class AFortPawn* CallFunc_TryGetFortPawn_ReturnValue, class USkeletalMeshComponent* CallFunc_GetPartSkeletalMeshComponent_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class USkeletalMeshComponent* CallFunc_GetOwnerSkeletalMeshComponent_ReturnValue, class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue, class USkeletalMeshComponent* CallFunc_GetOwnerSkeletalMeshComponent_ReturnValue_1, class AFortPawn* CallFunc_TryGetFortPawn_ReturnValue_1, class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue_1, float CallFunc_GetCurveValue_ReturnValue, float CallFunc_GetCurveValue_ReturnValue_1, int32 Temp_int_Variable, class UMeshComponent* CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, class USkeletalMeshComponent* CallFunc_GetOwnerSkeletalMeshComponent_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_4, class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue_2, float CallFunc_GetCurveValue_ReturnValue_2, float CallFunc_GetCurveValue_ReturnValue_3, bool CallFunc_CheckForBackbling_bIsWearingBackbling, bool CallFunc_CheckForBackbling_bIsBackblingLong, class UMaterialInstanceDynamic* CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue)
 {
-	static auto Func = Class->GetFunction("M_MED_Ornament_Soldier_AnimBP_C", "ExecuteUbergraph_M_MED_Ornament_Soldier_AnimBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UM_MED_Ornament_Soldier_AnimBP_C_ExecuteUbergraph_M_MED_Ornament_Soldier_AnimBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("M_MED_Ornament_Soldier_AnimBP_C", "ExecuteUbergraph_M_MED_Ornament_Soldier_AnimBP");
+
+	Params::UM_MED_Ornament_Soldier_AnimBP_C_ExecuteUbergraph_M_MED_Ornament_Soldier_AnimBP_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_DeltaTimeX = K2Node_Event_DeltaTimeX;
@@ -142,6 +178,4 @@ void UM_MED_Ornament_Soldier_AnimBP_C::ExecuteUbergraph_M_MED_Ornament_Soldier_A
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

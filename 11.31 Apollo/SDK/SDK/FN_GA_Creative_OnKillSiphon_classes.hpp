@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -20,25 +17,22 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xA70(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class AAthena_GameState_C*                   GameState;                                         // 0xA78(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsCreativeOrPlayground;                            // 0xA80(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_166D[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_532B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                GE_HealPlayer;                                     // 0xA88(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bShouldConvertExcessHealthToShields;               // 0xA90(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_166E[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_532C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                ShieldGE;                                          // 0xA98(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          ConsumedCue;                                       // 0xAA0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         bDebugBypasLocalMapEnable;                         // 0xAA8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         bAttemptHealthRestore;                             // 0xAA9(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         bAttemptMatsRestore;                               // 0xAAA(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_166F[0x1];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_532D[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  NameGrantWood;                                     // 0xAAC(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  NameGrantStone;                                    // 0xAB4(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  NameGrantMetal;                                    // 0xABC(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GA_Creative_OnKillSiphon_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGA_Creative_OnKillSiphon_C* GetDefaultObj();
 
 	void GiveResourcesToPlayer(bool bShouldGrant, int32 GiveAmount, enum class EFortResourceType GiveType, bool* Success, class UFortWorldItemDefinition* LocalItemToGive, bool K2Node_SwitchEnum_CmpSuccess, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, TScriptInterface<class IFortInventoryOwnerInterface> CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput);
 	void CalculateResources(enum class EFortResourceType ResourceGrantType, bool* bSuccess, int32* ResourceToGive, enum class EFortResourceType* ResourceType, class FName LocalDataTableRowName, int32 ILocalResourceToGive, float CallFunc_GetOverridenSiphonGoldValue_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, int32 CallFunc_FTrunc_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue_1, float CallFunc_GetOverridenSiphonMetalValue_ReturnValue, int32 CallFunc_FTrunc_ReturnValue_1, float CallFunc_GetOverridenSiphonWoodValue_ReturnValue, int32 CallFunc_FTrunc_ReturnValue_2, bool K2Node_SwitchEnum_CmpSuccess, bool K2Node_SwitchEnum_CmpSuccess_1, float CallFunc_GetOverridenSiphonStoneValue_ReturnValue, int32 CallFunc_FTrunc_ReturnValue_3, enum class EEvaluateCurveTableResult CallFunc_EvaluateCurveTableRow_OutResult, float CallFunc_EvaluateCurveTableRow_OutXY, int32 CallFunc_FTrunc_ReturnValue_4, bool K2Node_SwitchEnum_CmpSuccess_2);
@@ -55,6 +49,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

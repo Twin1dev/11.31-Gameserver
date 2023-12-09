@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaItemCustomizationSelector.AthenaItemCustomizationSelector_C
+// (None)
+
+class UClass* UAthenaItemCustomizationSelector_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaItemCustomizationSelector_C");
+
+	return Clss;
+}
+
+
+// AthenaItemCustomizationSelector_C AthenaItemCustomizationSelector.Default__AthenaItemCustomizationSelector_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaItemCustomizationSelector_C* UAthenaItemCustomizationSelector_C::GetDefaultObj()
+{
+	static class UAthenaItemCustomizationSelector_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaItemCustomizationSelector_C*>(UAthenaItemCustomizationSelector_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaItemCustomizationSelector.AthenaItemCustomizationSelector_C.UpdateSeasonButtonEnabledState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UAthenaItemCustomizationSelector_C::UpdateSeasonButtonEnabledState()
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "UpdateSeasonButtonEnabledState");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_UpdateSeasonButtonEnabledState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "UpdateSeasonButtonEnabledState");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -61,9 +88,12 @@ void UAthenaItemCustomizationSelector_C::UpdateSeasonButtonEnabledState()
 
 class UMaterialInstance* UAthenaItemCustomizationSelector_C::GetCategoryImage(enum class EAthenaCustomizationCategory Index, class UMaterialInstance* OverrideImage, enum class EAthenaCustomizationCategory Temp_byte_Variable, class UMaterialInstance* Temp_object_Variable, class UMaterialInstance* Temp_object_Variable_1, class UMaterialInstance* Temp_object_Variable_2, class UMaterialInstance* Temp_object_Variable_3, class UMaterialInstance* Temp_object_Variable_4, class UMaterialInstance* Temp_object_Variable_5, class UMaterialInstance* Temp_object_Variable_6, class UMaterialInstance* Temp_object_Variable_7, class UMaterialInstance* Temp_object_Variable_8, class UMaterialInstance* Temp_object_Variable_9, class UMaterialInstance* Temp_object_Variable_10, class UMaterialInstance* Temp_object_Variable_11, class UMaterialInstance* Temp_object_Variable_12, class UMaterialInstance* Temp_object_Variable_13, class UMaterialInstance* Temp_object_Variable_14, class UMaterialInstance* Temp_object_Variable_15, class UMaterialInstance* Temp_object_Variable_16, class UMaterialInstance* Temp_object_Variable_17, class UMaterialInstance* Temp_object_Variable_18, class UMaterialInstance* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "GetCategoryImage");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_GetCategoryImage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "GetCategoryImage");
+
+	Params::UAthenaItemCustomizationSelector_C_GetCategoryImage_Params Parms{};
 
 	Parms.Index = Index;
 	Parms.OverrideImage = OverrideImage;
@@ -108,9 +138,12 @@ class UMaterialInstance* UAthenaItemCustomizationSelector_C::GetCategoryImage(en
 
 void UAthenaItemCustomizationSelector_C::HandleItemSetupFinished(class FText InText, enum class EAthenaCustomizationCategory Category, class UMaterialInstance* OverrideImage, class UMaterialInstance* CallFunc_GetCategoryImage_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HandleItemSetupFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_HandleItemSetupFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HandleItemSetupFinished");
+
+	Params::UAthenaItemCustomizationSelector_C_HandleItemSetupFinished_Params Parms{};
 
 	Parms.InText = InText;
 	Parms.Category = Category;
@@ -131,9 +164,12 @@ void UAthenaItemCustomizationSelector_C::HandleItemSetupFinished(class FText InT
 
 void UAthenaItemCustomizationSelector_C::ApplyToAllSlots(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "ApplyToAllSlots");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_ApplyToAllSlots_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "ApplyToAllSlots");
+
+	Params::UAthenaItemCustomizationSelector_C_ApplyToAllSlots_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -151,9 +187,12 @@ void UAthenaItemCustomizationSelector_C::ApplyToAllSlots(bool* PassThrough)
 
 void UAthenaItemCustomizationSelector_C::UpdateInputActionVisibilities(class UFortItem* Item)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "UpdateInputActionVisibilities");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_UpdateInputActionVisibilities_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "UpdateInputActionVisibilities");
+
+	Params::UAthenaItemCustomizationSelector_C_UpdateInputActionVisibilities_Params Parms{};
 
 	Parms.Item = Item;
 
@@ -175,9 +214,12 @@ void UAthenaItemCustomizationSelector_C::UpdateInputActionVisibilities(class UFo
 
 void UAthenaItemCustomizationSelector_C::UpdateApplyToAllVisibility(class UFortItem* Item, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_IsValid_ReturnValue, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, class UAthenaItemWrapDefinition* K2Node_DynamicCast_AsAthena_Item_Wrap_Definition, bool K2Node_DynamicCast_bSuccess, bool CallFunc_HasInputActionHandler_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "UpdateApplyToAllVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_UpdateApplyToAllVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "UpdateApplyToAllVisibility");
+
+	Params::UAthenaItemCustomizationSelector_C_UpdateApplyToAllVisibility_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -208,9 +250,12 @@ void UAthenaItemCustomizationSelector_C::UpdateApplyToAllVisibility(class UFortI
 
 void UAthenaItemCustomizationSelector_C::UpdateToggleFavoriteVisibility(class UFortItem* Item, bool CallFunc_IsValid_ReturnValue, bool CallFunc_HasInputActionHandler_ReturnValue, bool CallFunc_IsItemOwned_ReturnValue, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsItemDefRandomCustomizationSelector_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "UpdateToggleFavoriteVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_UpdateToggleFavoriteVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "UpdateToggleFavoriteVisibility");
+
+	Params::UAthenaItemCustomizationSelector_C_UpdateToggleFavoriteVisibility_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -241,9 +286,12 @@ void UAthenaItemCustomizationSelector_C::UpdateToggleFavoriteVisibility(class UF
 
 void UAthenaItemCustomizationSelector_C::GetCurrentItemCosmeticDefinition(class UAthenaCosmeticItemDefinition** Cosmetic_Item_Definition, class UFortItem* CallFunc_GetCurrentItem_ReturnValue, class UAthenaCosmeticAccountItem* K2Node_DynamicCast_AsAthena_Cosmetic_Account_Item, bool K2Node_DynamicCast_bSuccess, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, class UAthenaCosmeticItemDefinition* K2Node_DynamicCast_AsAthena_Cosmetic_Item_Definition, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "GetCurrentItemCosmeticDefinition");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_GetCurrentItemCosmeticDefinition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "GetCurrentItemCosmeticDefinition");
+
+	Params::UAthenaItemCustomizationSelector_C_GetCurrentItemCosmeticDefinition_Params Parms{};
 
 	Parms.CallFunc_GetCurrentItem_ReturnValue = CallFunc_GetCurrentItem_ReturnValue;
 	Parms.K2Node_DynamicCast_AsAthena_Cosmetic_Account_Item = K2Node_DynamicCast_AsAthena_Cosmetic_Account_Item;
@@ -265,16 +313,19 @@ void UAthenaItemCustomizationSelector_C::GetCurrentItemCosmeticDefinition(class 
 // Parameters:
 // class FText                        Temp_text_Variable                                               (ConstParm)
 // class FText                        Temp_text_Variable_1                                             (ConstParm)
-// struct FSlateBrush                 CallFunc_NoResourceBrush_ReturnValue                             ()
+// struct FSlateBrush                 CallFunc_NoResourceBrush_ReturnValue                             (None)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UProgressModalWidget_C*      CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaItemCustomizationSelector_C::ShowSavingModal(class FText Temp_text_Variable, class FText Temp_text_Variable_1, const struct FSlateBrush& CallFunc_NoResourceBrush_ReturnValue, bool CallFunc_IsValid_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UProgressModalWidget_C* CallFunc_Create_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "ShowSavingModal");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_ShowSavingModal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "ShowSavingModal");
+
+	Params::UAthenaItemCustomizationSelector_C_ShowSavingModal_Params Parms{};
 
 	Parms.Temp_text_Variable = Temp_text_Variable;
 	Parms.Temp_text_Variable_1 = Temp_text_Variable_1;
@@ -295,9 +346,12 @@ void UAthenaItemCustomizationSelector_C::ShowSavingModal(class FText Temp_text_V
 
 class UWidget* UAthenaItemCustomizationSelector_C::GetWidgetForFramingViewedItem()
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "GetWidgetForFramingViewedItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_GetWidgetForFramingViewedItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "GetWidgetForFramingViewedItem");
+
+	Params::UAthenaItemCustomizationSelector_C_GetWidgetForFramingViewedItem_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -324,9 +378,12 @@ class UWidget* UAthenaItemCustomizationSelector_C::GetWidgetForFramingViewedItem
 
 void UAthenaItemCustomizationSelector_C::ToggleFavorite(bool* PassThrough, class UFortItem* CallFunc_GetCurrentItem_ReturnValue, class UFortAccountItem* K2Node_DynamicCast_AsFort_Account_Item, bool K2Node_DynamicCast_bSuccess, class UFortMcpContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsFavorite_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, enum class EFortUIFeatureState CallFunc_GetFeatureState_OutFeatureState, enum class EFortUIFeatureStateReason CallFunc_GetFeatureState_OutReason, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "ToggleFavorite");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_ToggleFavorite_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "ToggleFavorite");
+
+	Params::UAthenaItemCustomizationSelector_C_ToggleFavorite_Params Parms{};
 
 	Parms.CallFunc_GetCurrentItem_ReturnValue = CallFunc_GetCurrentItem_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Account_Item = K2Node_DynamicCast_AsFort_Account_Item;
@@ -354,9 +411,12 @@ void UAthenaItemCustomizationSelector_C::ToggleFavorite(bool* PassThrough, class
 
 void UAthenaItemCustomizationSelector_C::HandleBack(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HandleBack");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_HandleBack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HandleBack");
+
+	Params::UAthenaItemCustomizationSelector_C_HandleBack_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -373,12 +433,14 @@ void UAthenaItemCustomizationSelector_C::HandleBack(bool* PassThrough)
 
 void UAthenaItemCustomizationSelector_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -391,9 +453,12 @@ void UAthenaItemCustomizationSelector_C::Construct()
 
 void UAthenaItemCustomizationSelector_C::BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_44_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_44_OnTabButtonCreated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_44_OnTabButtonCreated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_44_OnTabButtonCreated__DelegateSignature");
+
+	Params::UAthenaItemCustomizationSelector_C_BndEvt__HorizontalTabList_K2Node_ComponentBoundEvent_44_OnTabButtonCreated__DelegateSignature_Params Parms{};
 
 	Parms.TabId = TabId;
 	Parms.TabButton = TabButton;
@@ -409,12 +474,14 @@ void UAthenaItemCustomizationSelector_C::BndEvt__HorizontalTabList_K2Node_Compon
 
 void UAthenaItemCustomizationSelector_C::OnFinsihedItemSave()
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnFinsihedItemSave");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_OnFinsihedItemSave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnFinsihedItemSave");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -425,12 +492,14 @@ void UAthenaItemCustomizationSelector_C::OnFinsihedItemSave()
 
 void UAthenaItemCustomizationSelector_C::OnSavingItemStarted()
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnSavingItemStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_OnSavingItemStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnSavingItemStarted");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -441,12 +510,14 @@ void UAthenaItemCustomizationSelector_C::OnSavingItemStarted()
 
 void UAthenaItemCustomizationSelector_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -458,9 +529,12 @@ void UAthenaItemCustomizationSelector_C::BP_OnActivated()
 
 void UAthenaItemCustomizationSelector_C::OnTabSelectionChanged(bool bShowingVariants)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnTabSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_OnTabSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnTabSelectionChanged");
+
+	Params::UAthenaItemCustomizationSelector_C_OnTabSelectionChanged_Params Parms{};
 
 	Parms.bShowingVariants = bShowingVariants;
 
@@ -476,9 +550,12 @@ void UAthenaItemCustomizationSelector_C::OnTabSelectionChanged(bool bShowingVari
 
 void UAthenaItemCustomizationSelector_C::OnCurrentItemChanged(class UFortItem* SelectedItem)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnCurrentItemChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_OnCurrentItemChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnCurrentItemChanged");
+
+	Params::UAthenaItemCustomizationSelector_C_OnCurrentItemChanged_Params Parms{};
 
 	Parms.SelectedItem = SelectedItem;
 
@@ -493,12 +570,14 @@ void UAthenaItemCustomizationSelector_C::OnCurrentItemChanged(class UFortItem* S
 
 void UAthenaItemCustomizationSelector_C::BndEvt__Picker_ItemSelector_K2Node_ComponentBoundEvent_1_OnUpdateSaveButtonVisuals__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BndEvt__Picker_ItemSelector_K2Node_ComponentBoundEvent_1_OnUpdateSaveButtonVisuals__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_BndEvt__Picker_ItemSelector_K2Node_ComponentBoundEvent_1_OnUpdateSaveButtonVisuals__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BndEvt__Picker_ItemSelector_K2Node_ComponentBoundEvent_1_OnUpdateSaveButtonVisuals__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -509,12 +588,14 @@ void UAthenaItemCustomizationSelector_C::BndEvt__Picker_ItemSelector_K2Node_Comp
 
 void UAthenaItemCustomizationSelector_C::BndEvt__Picker_ItemSelector_K2Node_ComponentBoundEvent_2_OnUpdateSaveButtonVisuals__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BndEvt__Picker_ItemSelector_K2Node_ComponentBoundEvent_2_OnUpdateSaveButtonVisuals__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_BndEvt__Picker_ItemSelector_K2Node_ComponentBoundEvent_2_OnUpdateSaveButtonVisuals__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BndEvt__Picker_ItemSelector_K2Node_ComponentBoundEvent_2_OnUpdateSaveButtonVisuals__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -526,9 +607,12 @@ void UAthenaItemCustomizationSelector_C::BndEvt__Picker_ItemSelector_K2Node_Comp
 
 void UAthenaItemCustomizationSelector_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaItemCustomizationSelector_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -543,12 +627,14 @@ void UAthenaItemCustomizationSelector_C::BndEvt__MobileCloseButton_K2Node_Compon
 
 void UAthenaItemCustomizationSelector_C::HideInfoPanel()
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HideInfoPanel");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_HideInfoPanel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HideInfoPanel");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -563,9 +649,12 @@ void UAthenaItemCustomizationSelector_C::HideInfoPanel()
 
 void UAthenaItemCustomizationSelector_C::OnFinishedItemSetup(class FText& CategoryDisplayName, class FText& ItemDisplayTypeName, enum class EAthenaCustomizationCategory SelectedCategory, class UMaterialInstance* OverrideSlotImage)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnFinishedItemSetup");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_OnFinishedItemSetup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "OnFinishedItemSetup");
+
+	Params::UAthenaItemCustomizationSelector_C_OnFinishedItemSetup_Params Parms{};
 
 	Parms.CategoryDisplayName = CategoryDisplayName;
 	Parms.ItemDisplayTypeName = ItemDisplayTypeName;
@@ -584,9 +673,12 @@ void UAthenaItemCustomizationSelector_C::OnFinishedItemSetup(class FText& Catego
 
 void UAthenaItemCustomizationSelector_C::HandleTextSearchSelectedChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HandleTextSearchSelectedChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_HandleTextSearchSelectedChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HandleTextSearchSelectedChanged");
+
+	Params::UAthenaItemCustomizationSelector_C_HandleTextSearchSelectedChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -619,8 +711,8 @@ void UAthenaItemCustomizationSelector_C::HandleTextSearchSelectedChanged(bool bI
 // bool                               CallFunc_NotEqual_ByteByte_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UAthenaCosmeticAccountItem*  K2Node_DynamicCast_AsAthena_Cosmetic_Account_Item                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetLockerItemTypeText_ReturnValue                       ()
-// class FText                        CallFunc_GetLockerDescriptionText_ReturnValue                    ()
+// class FText                        CallFunc_GetLockerItemTypeText_ReturnValue                       (None)
+// class FText                        CallFunc_GetLockerDescriptionText_ReturnValue                    (None)
 // class UFortHero*                   CallFunc_GetHero_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortItemDefinition*         CallFunc_GetItemDefinitionBP_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_3                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -628,7 +720,7 @@ void UAthenaItemCustomizationSelector_C::HandleTextSearchSelectedChanged(bool bI
 // bool                               K2Node_DynamicCast_bSuccess_2                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsOwnedByCampaignHero_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortRarity             CallFunc_GetRarity_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetDisplayName_ReturnValue                              ()
+// class FText                        CallFunc_GetDisplayName_ReturnValue                              (None)
 // bool                               CallFunc_IsValid_ReturnValue_4                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UItemInfoHeaderWidget_C*     K2Node_DynamicCast_AsItem_Info_Header_Widget                     (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_3                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -662,9 +754,12 @@ void UAthenaItemCustomizationSelector_C::HandleTextSearchSelectedChanged(bool bI
 
 void UAthenaItemCustomizationSelector_C::ExecuteUbergraph_AthenaItemCustomizationSelector(int32 EntryPoint, bool Temp_bool_IsClosed_Variable, bool CallFunc_IsValid_ReturnValue, class FName K2Node_ComponentBoundEvent_TabId, class UCommonButton* K2Node_ComponentBoundEvent_TabButton, bool CallFunc_HandleBack_PassThrough, class UIconTabButton_C* K2Node_DynamicCast_AsIcon_Tab_Button, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool K2Node_Event_bShowingVariants, class UFortItem* CallFunc_GetCurrentItem_ReturnValue, class UFortItem* K2Node_Event_SelectedItem, const struct FDataTableRowHandle& K2Node_MakeStruct_DataTableRowHandle, enum class EFortItemType CallFunc_GetType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, enum class EFortItemType CallFunc_GetType_ReturnValue_1, bool CallFunc_NotEqual_ByteByte_ReturnValue, class UAthenaCosmeticAccountItem* K2Node_DynamicCast_AsAthena_Cosmetic_Account_Item, bool K2Node_DynamicCast_bSuccess_1, class FText CallFunc_GetLockerItemTypeText_ReturnValue, class FText CallFunc_GetLockerDescriptionText_ReturnValue, class UFortHero* CallFunc_GetHero_ReturnValue, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, class UAthenaCosmeticItemDefinition* K2Node_DynamicCast_AsAthena_Cosmetic_Item_Definition, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsOwnedByCampaignHero_ReturnValue, enum class EFortRarity CallFunc_GetRarity_ReturnValue, class FText CallFunc_GetDisplayName_ReturnValue, bool CallFunc_IsValid_ReturnValue_4, class UItemInfoHeaderWidget_C* K2Node_DynamicCast_AsItem_Info_Header_Widget, bool K2Node_DynamicCast_bSuccess_3, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue, bool CallFunc_HandleBack_PassThrough_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_K2_IsValidTimerHandle_ReturnValue, bool CallFunc_K2_IsValidTimerHandle_ReturnValue_1, class FText K2Node_Event_CategoryDisplayName, class FText K2Node_Event_ItemDisplayTypeName, enum class EAthenaCustomizationCategory K2Node_Event_SelectedCategory, class UMaterialInstance* K2Node_Event_OverrideSlotImage, bool Temp_bool_Has_Been_Initd_Variable, class UAthenaCustomizationPicker_C* K2Node_DynamicCast_AsAthena_Customization_Picker, bool K2Node_DynamicCast_bSuccess_4, bool Temp_bool_Variable, class UItemInfoHeaderWidget_C* K2Node_DynamicCast_AsItem_Info_Header_Widget_1, bool K2Node_DynamicCast_bSuccess_5, class UFortFrontEndContext* CallFunc_GetLocalPlayerSubsystem_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, bool K2Node_CustomEvent_bIsSelected, class UAthenaCustomizationPicker_C* K2Node_DynamicCast_AsAthena_Customization_Picker_1, bool K2Node_DynamicCast_bSuccess_6, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "ExecuteUbergraph_AthenaItemCustomizationSelector");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaItemCustomizationSelector_C_ExecuteUbergraph_AthenaItemCustomizationSelector_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "ExecuteUbergraph_AthenaItemCustomizationSelector");
+
+	Params::UAthenaItemCustomizationSelector_C_ExecuteUbergraph_AthenaItemCustomizationSelector_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_IsClosed_Variable = Temp_bool_IsClosed_Variable;
@@ -734,6 +829,4 @@ void UAthenaItemCustomizationSelector_C::ExecuteUbergraph_AthenaItemCustomizatio
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

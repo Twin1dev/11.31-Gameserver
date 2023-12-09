@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_BattleMapGroundMoveNode.BP_BattleMapGroundMoveNode_C
+// (Actor)
+
+class UClass* ABP_BattleMapGroundMoveNode_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_BattleMapGroundMoveNode_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// BP_BattleMapGroundMoveNode_C BP_BattleMapGroundMoveNode.Default__BP_BattleMapGroundMoveNode_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_BattleMapGroundMoveNode_C* ABP_BattleMapGroundMoveNode_C::GetDefaultObj()
+{
+	static class ABP_BattleMapGroundMoveNode_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_BattleMapGroundMoveNode_C*>(ABP_BattleMapGroundMoveNode_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Harvest_CameraShake.Harvest_CameraShake_C
+// (None)
+
+class UClass* UHarvest_CameraShake_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Harvest_CameraShake_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Harvest_CameraShake_C Harvest_CameraShake.Default__Harvest_CameraShake_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UHarvest_CameraShake_C* UHarvest_CameraShake_C::GetDefaultObj()
+{
+	static class UHarvest_CameraShake_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UHarvest_CameraShake_C*>(UHarvest_CameraShake_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

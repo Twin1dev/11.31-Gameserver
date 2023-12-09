@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass OptionsMenuFireModeButton.OptionsMenuFireModeButton_C
+// (None)
+
+class UClass* UOptionsMenuFireModeButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OptionsMenuFireModeButton_C");
+
+	return Clss;
+}
+
+
+// OptionsMenuFireModeButton_C OptionsMenuFireModeButton.Default__OptionsMenuFireModeButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UOptionsMenuFireModeButton_C* UOptionsMenuFireModeButton_C::GetDefaultObj()
+{
+	static class UOptionsMenuFireModeButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UOptionsMenuFireModeButton_C*>(UOptionsMenuFireModeButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function OptionsMenuFireModeButton.OptionsMenuFireModeButton_C.HandleWidgetDeactivated
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UOptionsMenuFireModeButton_C::HandleWidgetDeactivated(class UCommonActivatablePanel* ActivatableWidget)
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "HandleWidgetDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_HandleWidgetDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "HandleWidgetDeactivated");
+
+	Params::UOptionsMenuFireModeButton_C_HandleWidgetDeactivated_Params Parms{};
 
 	Parms.ActivatableWidget = ActivatableWidget;
 
@@ -42,9 +70,12 @@ void UOptionsMenuFireModeButton_C::HandleWidgetDeactivated(class UCommonActivata
 
 void UOptionsMenuFireModeButton_C::SetFireModeButtonText(class UFortGameUserSettings* CallFunc_GetFortGameUserSettings_ReturnValue, const struct FFireModeData& CallFunc_GetFireModeData_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "SetFireModeButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_SetFireModeButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "SetFireModeButtonText");
+
+	Params::UOptionsMenuFireModeButton_C_SetFireModeButtonText_Params Parms{};
 
 	Parms.CallFunc_GetFortGameUserSettings_ReturnValue = CallFunc_GetFortGameUserSettings_ReturnValue;
 	Parms.CallFunc_GetFireModeData_ReturnValue = CallFunc_GetFireModeData_ReturnValue;
@@ -60,13 +91,16 @@ void UOptionsMenuFireModeButton_C::SetFireModeButtonText(class UFortGameUserSett
 // Parameters:
 // class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTooltip_Basic_S_C*          CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTooltipMinusBasicMinusS_C*  CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UOptionsMenuFireModeButton_C::On_MenuAnchorSettingDescription_GetMenuContent_0(class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UTooltip_Basic_S_C* CallFunc_Create_ReturnValue)
+class UWidget* UOptionsMenuFireModeButton_C::On_MenuAnchorSettingDescription_GetMenuContent_0(class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UTooltipMinusBasicMinusS_C* CallFunc_Create_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "On_MenuAnchorSettingDescription_GetMenuContent_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_On_MenuAnchorSettingDescription_GetMenuContent_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "On_MenuAnchorSettingDescription_GetMenuContent_0");
+
+	Params::UOptionsMenuFireModeButton_C_On_MenuAnchorSettingDescription_GetMenuContent_0_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
 	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
@@ -84,12 +118,14 @@ class UWidget* UOptionsMenuFireModeButton_C::On_MenuAnchorSettingDescription_Get
 
 void UOptionsMenuFireModeButton_C::Hide_Tooltip()
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "Hide Tooltip");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_Hide_Tooltip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "Hide Tooltip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,9 +141,12 @@ void UOptionsMenuFireModeButton_C::Hide_Tooltip()
 
 void UOptionsMenuFireModeButton_C::SetToolTipSize(const struct FVector2D& DefaultSize, const struct FVector2D& MobileSize, bool CallFunc_IsMobileGame_ReturnValue, bool Temp_bool_Variable, const struct FVector2D& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "SetToolTipSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_SetToolTipSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "SetToolTipSize");
+
+	Params::UOptionsMenuFireModeButton_C_SetToolTipSize_Params Parms{};
 
 	Parms.DefaultSize = DefaultSize;
 	Parms.MobileSize = MobileSize;
@@ -126,12 +165,14 @@ void UOptionsMenuFireModeButton_C::SetToolTipSize(const struct FVector2D& Defaul
 
 void UOptionsMenuFireModeButton_C::ShowTooltip()
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "ShowTooltip");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_ShowTooltip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "ShowTooltip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -149,9 +190,12 @@ void UOptionsMenuFireModeButton_C::ShowTooltip()
 
 void UOptionsMenuFireModeButton_C::SetFontSize(class UCommonTextBlock* Text, int32 DefaultSize, int32 MobileSize, const struct FSlateFontInfo& TempFont, bool Temp_bool_Variable, bool CallFunc_IsMobileGame_ReturnValue, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "SetFontSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_SetFontSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "SetFontSize");
+
+	Params::UOptionsMenuFireModeButton_C_SetFontSize_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.DefaultSize = DefaultSize;
@@ -179,9 +223,12 @@ void UOptionsMenuFireModeButton_C::SetFontSize(class UCommonTextBlock* Text, int
 
 void UOptionsMenuFireModeButton_C::UpdateSize(const struct FVector2D& LargeSize, const struct FVector2D& SmallSize, bool Temp_bool_Variable, const struct FVector2D& Temp_struct_Variable, const struct FVector2D& Temp_struct_Variable_1, bool CallFunc_IsBROnly_ReturnValue, const struct FVector2D& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "UpdateSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_UpdateSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "UpdateSize");
+
+	Params::UOptionsMenuFireModeButton_C_UpdateSize_Params Parms{};
 
 	Parms.LargeSize = LargeSize;
 	Parms.SmallSize = SmallSize;
@@ -203,9 +250,12 @@ void UOptionsMenuFireModeButton_C::UpdateSize(const struct FVector2D& LargeSize,
 
 void UOptionsMenuFireModeButton_C::OnComplete_A8B997BB40321F469E82A785FB369A27(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "OnComplete_A8B997BB40321F469E82A785FB369A27");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_OnComplete_A8B997BB40321F469E82A785FB369A27_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "OnComplete_A8B997BB40321F469E82A785FB369A27");
+
+	Params::UOptionsMenuFireModeButton_C_OnComplete_A8B997BB40321F469E82A785FB369A27_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -221,9 +271,12 @@ void UOptionsMenuFireModeButton_C::OnComplete_A8B997BB40321F469E82A785FB369A27(c
 
 void UOptionsMenuFireModeButton_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "BP_OnItemSelectionChanged");
+
+	Params::UOptionsMenuFireModeButton_C_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -238,12 +291,14 @@ void UOptionsMenuFireModeButton_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UOptionsMenuFireModeButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -255,9 +310,12 @@ void UOptionsMenuFireModeButton_C::Construct()
 
 void UOptionsMenuFireModeButton_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "OnMouseLeave");
+
+	Params::UOptionsMenuFireModeButton_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -274,9 +332,12 @@ void UOptionsMenuFireModeButton_C::OnMouseLeave(struct FPointerEvent& MouseEvent
 
 void UOptionsMenuFireModeButton_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "OnMouseEnter");
+
+	Params::UOptionsMenuFireModeButton_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -293,9 +354,12 @@ void UOptionsMenuFireModeButton_C::OnMouseEnter(const struct FGeometry& MyGeomet
 
 void UOptionsMenuFireModeButton_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "OnListItemObjectSet");
+
+	Params::UOptionsMenuFireModeButton_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -311,9 +375,12 @@ void UOptionsMenuFireModeButton_C::OnListItemObjectSet(class UObject* ListItemOb
 
 void UOptionsMenuFireModeButton_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "BP_OnItemExpansionChanged");
+
+	Params::UOptionsMenuFireModeButton_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -328,12 +395,14 @@ void UOptionsMenuFireModeButton_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UOptionsMenuFireModeButton_C::CenterOnWidget()
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "CenterOnWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_CenterOnWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "CenterOnWidget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -344,12 +413,14 @@ void UOptionsMenuFireModeButton_C::CenterOnWidget()
 
 void UOptionsMenuFireModeButton_C::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "BP_OnEntryReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_BP_OnEntryReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "BP_OnEntryReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -361,9 +432,12 @@ void UOptionsMenuFireModeButton_C::BP_OnEntryReleased()
 
 void UOptionsMenuFireModeButton_C::BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature");
+
+	Params::UOptionsMenuFireModeButton_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -379,9 +453,12 @@ void UOptionsMenuFireModeButton_C::BndEvt__ButtonTouchTooltip_K2Node_ComponentBo
 
 void UOptionsMenuFireModeButton_C::BndEvt__ChangeFireModeButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "BndEvt__ChangeFireModeButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_BndEvt__ChangeFireModeButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "BndEvt__ChangeFireModeButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UOptionsMenuFireModeButton_C_BndEvt__ChangeFireModeButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -431,9 +508,12 @@ void UOptionsMenuFireModeButton_C::BndEvt__ChangeFireModeButton_K2Node_Component
 
 void UOptionsMenuFireModeButton_C::ExecuteUbergraph_OptionsMenuFireModeButton(int32 EntryPoint, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UUserWidget* Temp_object_Variable, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue, class UHUDLayoutToolFireModePanel_C* K2Node_DynamicCast_AsHUDLayout_Tool_Fire_Mode_Panel, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, bool K2Node_Event_bIsSelected, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent, class UObject* K2Node_Event_ListItemObject, class UFortSettingInfo* K2Node_DynamicCast_AsFort_Setting_Info, bool K2Node_DynamicCast_bSuccess_1, bool K2Node_Event_bIsExpanded, class UUserWidget* K2Node_CustomEvent_UserWidget, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_IsMobileGame_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, bool CallFunc_TextIsEmpty_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, bool CallFunc_IsMobileGame_ReturnValue_1, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, float K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_IsUsingGamepad_ReturnValue, bool Temp_bool_Variable_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("OptionsMenuFireModeButton_C", "ExecuteUbergraph_OptionsMenuFireModeButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuFireModeButton_C", "ExecuteUbergraph_OptionsMenuFireModeButton");
+
+	Params::UOptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
@@ -477,6 +557,4 @@ void UOptionsMenuFireModeButton_C::ExecuteUbergraph_OptionsMenuFireModeButton(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

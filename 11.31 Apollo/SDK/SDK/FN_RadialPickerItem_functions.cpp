@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass RadialPickerItem.RadialPickerItem_C
+// (None)
+
+class UClass* URadialPickerItem_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("RadialPickerItem_C");
+
+	return Clss;
+}
+
+
+// RadialPickerItem_C RadialPickerItem.Default__RadialPickerItem_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class URadialPickerItem_C* URadialPickerItem_C::GetDefaultObj()
+{
+	static class URadialPickerItem_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<URadialPickerItem_C*>(URadialPickerItem_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function RadialPickerItem.RadialPickerItem_C.UpdateSelectionColor
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,13 +48,16 @@ namespace SDK
 // bool                               CallFunc_GetIsEnabled_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FLinearColor                K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 
 void URadialPickerItem_C::UpdateSelectionColor(bool Selected, bool Temp_bool_Variable, bool CallFunc_GetIsEnabled_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, const struct FLinearColor& K2Node_Select_Default, const struct FSlateColor& K2Node_MakeStruct_SlateColor)
 {
-	static auto Func = Class->GetFunction("RadialPickerItem_C", "UpdateSelectionColor");
+	static class UFunction* Func = nullptr;
 
-	Params::URadialPickerItem_C_UpdateSelectionColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RadialPickerItem_C", "UpdateSelectionColor");
+
+	Params::URadialPickerItem_C_UpdateSelectionColor_Params Parms{};
 
 	Parms.Selected = Selected;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -49,13 +77,16 @@ void URadialPickerItem_C::UpdateSelectionColor(bool Selected, bool Temp_bool_Var
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FPointerEvent               MouseEvent                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 
 struct FEventReply URadialPickerItem_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Handled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("RadialPickerItem_C", "OnMouseButtonDown");
+	static class UFunction* Func = nullptr;
 
-	Params::URadialPickerItem_C_OnMouseButtonDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RadialPickerItem_C", "OnMouseButtonDown");
+
+	Params::URadialPickerItem_C_OnMouseButtonDown_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -75,9 +106,12 @@ struct FEventReply URadialPickerItem_C::OnMouseButtonDown(const struct FGeometry
 
 void URadialPickerItem_C::SetShowImageAndLabel(bool ShowImageAndLabel)
 {
-	static auto Func = Class->GetFunction("RadialPickerItem_C", "SetShowImageAndLabel");
+	static class UFunction* Func = nullptr;
 
-	Params::URadialPickerItem_C_SetShowImageAndLabel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RadialPickerItem_C", "SetShowImageAndLabel");
+
+	Params::URadialPickerItem_C_SetShowImageAndLabel_Params Parms{};
 
 	Parms.ShowImageAndLabel = ShowImageAndLabel;
 
@@ -95,14 +129,17 @@ void URadialPickerItem_C::SetShowImageAndLabel(bool ShowImageAndLabel)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_BuildString_Int_ReturnValue                             (ZeroConstructor, HasGetValueTypeHash)
 // class FName                        CallFunc_Conv_StringToName_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetDisplayName_ReturnValue                              ()
+// class FText                        CallFunc_GetDisplayName_ReturnValue                              (None)
 // class FName                        CallFunc_MakeLiteralName_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URadialPickerItem_C::SetItemContent(class UFortItem* Item, bool Option_Enabled, int32 Radial_Item_Index, int32 CallFunc_Add_IntInt_ReturnValue, const class FString& CallFunc_BuildString_Int_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue, class FText CallFunc_GetDisplayName_ReturnValue, class FName CallFunc_MakeLiteralName_ReturnValue)
 {
-	static auto Func = Class->GetFunction("RadialPickerItem_C", "SetItemContent");
+	static class UFunction* Func = nullptr;
 
-	Params::URadialPickerItem_C_SetItemContent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RadialPickerItem_C", "SetItemContent");
+
+	Params::URadialPickerItem_C_SetItemContent_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.Option_Enabled = Option_Enabled;
@@ -141,9 +178,12 @@ void URadialPickerItem_C::SetItemContent(class UFortItem* Item, bool Option_Enab
 
 void URadialPickerItem_C::SetSelected(bool IsSelected, bool Temp_bool_Variable, float Temp_float_Variable, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default, float CallFunc_GetEndTime_ReturnValue, float CallFunc_GetAnimationCurrentTime_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float K2Node_Select_Default_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, int32 CallFunc_GetActiveWidgetIndex_ReturnValue, class UCanvasPanelSlot* CallFunc_SlotAsCanvasSlot_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("RadialPickerItem_C", "SetSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::URadialPickerItem_C_SetSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RadialPickerItem_C", "SetSelected");
+
+	Params::URadialPickerItem_C_SetSelected_Params Parms{};
 
 	Parms.IsSelected = IsSelected;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -184,9 +224,12 @@ void URadialPickerItem_C::SetSelected(bool IsSelected, bool Temp_bool_Variable, 
 
 void URadialPickerItem_C::SetImageAndLabelContent(class FText Text, TSoftObjectPtr<class UTexture2D> Icon, const struct FSlateBrush& Brush, bool Option_Enabled, int32 RadialItemIndex, int32 CallFunc_Add_IntInt_ReturnValue, const class FString& CallFunc_BuildString_Int_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue, bool CallFunc_IsValidSoftObjectReference_ReturnValue, class FName CallFunc_MakeLiteralName_ReturnValue)
 {
-	static auto Func = Class->GetFunction("RadialPickerItem_C", "SetImageAndLabelContent");
+	static class UFunction* Func = nullptr;
 
-	Params::URadialPickerItem_C_SetImageAndLabelContent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RadialPickerItem_C", "SetImageAndLabelContent");
+
+	Params::URadialPickerItem_C_SetImageAndLabelContent_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.Icon = Icon;
@@ -210,12 +253,14 @@ void URadialPickerItem_C::SetImageAndLabelContent(class FText Text, TSoftObjectP
 
 void URadialPickerItem_C::Construct()
 {
-	static auto Func = Class->GetFunction("RadialPickerItem_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::URadialPickerItem_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RadialPickerItem_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -227,9 +272,12 @@ void URadialPickerItem_C::Construct()
 
 void URadialPickerItem_C::ExecuteUbergraph_RadialPickerItem(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("RadialPickerItem_C", "ExecuteUbergraph_RadialPickerItem");
+	static class UFunction* Func = nullptr;
 
-	Params::URadialPickerItem_C_ExecuteUbergraph_RadialPickerItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RadialPickerItem_C", "ExecuteUbergraph_RadialPickerItem");
+
+	Params::URadialPickerItem_C_ExecuteUbergraph_RadialPickerItem_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -245,9 +293,12 @@ void URadialPickerItem_C::ExecuteUbergraph_RadialPickerItem(int32 EntryPoint)
 
 void URadialPickerItem_C::On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option)
 {
-	static auto Func = Class->GetFunction("RadialPickerItem_C", "On Item Touched__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::URadialPickerItem_C_On_Item_Touched__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RadialPickerItem_C", "On Item Touched__DelegateSignature");
+
+	Params::URadialPickerItem_C_On_Item_Touched__DelegateSignature_Params Parms{};
 
 	Parms.Picked_Option = Picked_Option;
 
@@ -257,6 +308,4 @@ void URadialPickerItem_C::On_Item_Touched__DelegateSignature(class URadialPicker
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GET_AfflictedParent.GET_AfflictedParent_C
+// (None)
+
+class UClass* UGET_AfflictedParent_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GET_AfflictedParent_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// GET_AfflictedParent_C GET_AfflictedParent.Default__GET_AfflictedParent_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGET_AfflictedParent_C* UGET_AfflictedParent_C::GetDefaultObj()
+{
+	static class UGET_AfflictedParent_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGET_AfflictedParent_C*>(UGET_AfflictedParent_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

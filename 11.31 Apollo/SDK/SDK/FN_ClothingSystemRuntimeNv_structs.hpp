@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -51,7 +48,7 @@ struct FClothConfig
 {
 public:
 	enum class EClothingWindMethod               WindMethod;                                        // 0x0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_434E[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2481[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FClothConstraintSetup                 VerticalConstraintConfig;                          // 0x4(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FClothConstraintSetup                 HorizontalConstraintConfig;                        // 0x14(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FClothConstraintSetup                 BendConstraintConfig;                              // 0x24(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
@@ -73,7 +70,7 @@ public:
 	float                                        GravityScale;                                      // 0xAC(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                               GravityOverride;                                   // 0xB0(0xC)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseGravityOverride;                               // 0xBC(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_434F[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2487[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        TetherStiffness;                                   // 0xC0(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        TetherLimit;                                       // 0xC4(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        CollisionThickness;                                // 0xC8(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -107,7 +104,7 @@ struct FClothLODData
 public:
 	struct FClothPhysicalMeshData                PhysicalMeshData;                                  // 0x0(0xA8)(Edit, NativeAccessSpecifierPublic)
 	struct FClothCollisionData                   CollisionData;                                     // 0xA8(0x40)(Edit, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4350[0x20];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2489[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -117,17 +114,15 @@ struct FClothParameterMask_PhysMesh
 public:
 	class FName                                  MaskName;                                          // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EMaskTarget_PhysMesh              CurrentTarget;                                     // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4351[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_248A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        MaxValue;                                          // 0xC(0x4)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        MinValue;                                          // 0x10(0x4)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4352[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_248B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<float>                                Values;                                            // 0x18(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                         bEnabled;                                          // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4353[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_248C[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

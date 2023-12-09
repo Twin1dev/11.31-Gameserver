@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass WebLogin.WebLogin_C
+// (None)
+
+class UClass* UWebLogin_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WebLogin_C");
+
+	return Clss;
+}
+
+
+// WebLogin_C WebLogin.Default__WebLogin_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UWebLogin_C* UWebLogin_C::GetDefaultObj()
+{
+	static class UWebLogin_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWebLogin_C*>(UWebLogin_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function WebLogin.WebLogin_C.DisplayWidget
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UWebLogin_C::DisplayWidget(class UWidget* WebWidget)
 {
-	static auto Func = Class->GetFunction("WebLogin_C", "DisplayWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UWebLogin_C_DisplayWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WebLogin_C", "DisplayWidget");
+
+	Params::UWebLogin_C_DisplayWidget_Params Parms{};
 
 	Parms.WebWidget = WebWidget;
 
@@ -39,12 +67,14 @@ void UWebLogin_C::DisplayWidget(class UWidget* WebWidget)
 
 void UWebLogin_C::DismissWidget()
 {
-	static auto Func = Class->GetFunction("WebLogin_C", "DismissWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UWebLogin_C_DismissWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WebLogin_C", "DismissWidget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -58,9 +88,12 @@ void UWebLogin_C::DismissWidget()
 
 void UWebLogin_C::ExecuteUbergraph_WebLogin(int32 EntryPoint, class UWidget* K2Node_Event_WebWidget, class UPanelSlot* CallFunc_AddChild_ReturnValue)
 {
-	static auto Func = Class->GetFunction("WebLogin_C", "ExecuteUbergraph_WebLogin");
+	static class UFunction* Func = nullptr;
 
-	Params::UWebLogin_C_ExecuteUbergraph_WebLogin_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WebLogin_C", "ExecuteUbergraph_WebLogin");
+
+	Params::UWebLogin_C_ExecuteUbergraph_WebLogin_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_WebWidget = K2Node_Event_WebWidget;
@@ -72,6 +105,4 @@ void UWebLogin_C::ExecuteUbergraph_WebLogin(int32 EntryPoint, class UWidget* K2N
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

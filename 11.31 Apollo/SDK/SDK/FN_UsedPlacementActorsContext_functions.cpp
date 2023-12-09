@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass UsedPlacementActorsContext.UsedPlacementActorsContext_C
+// (None)
+
+class UClass* UUsedPlacementActorsContext_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UsedPlacementActorsContext_C");
+
+	return Clss;
+}
+
+
+// UsedPlacementActorsContext_C UsedPlacementActorsContext.Default__UsedPlacementActorsContext_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UUsedPlacementActorsContext_C* UUsedPlacementActorsContext_C::GetDefaultObj()
+{
+	static class UUsedPlacementActorsContext_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUsedPlacementActorsContext_C*>(UUsedPlacementActorsContext_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function UsedPlacementActorsContext.UsedPlacementActorsContext_C.ProvideActorsSet
@@ -26,9 +51,12 @@ namespace SDK
 
 void UUsedPlacementActorsContext_C::ProvideActorsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<class AActor*>* ResultingActorsSet, TArray<class AActor*>& CallFunc_GetSpawnLocationActorsThatHaveAddedTagsMatchingQuery_SpawnLocationActors, bool CallFunc_GetSpawnLocationActorsThatHaveAddedTagsMatchingQuery_ReturnValue)
 {
-	static auto Func = Class->GetFunction("UsedPlacementActorsContext_C", "ProvideActorsSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UUsedPlacementActorsContext_C_ProvideActorsSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UsedPlacementActorsContext_C", "ProvideActorsSet");
+
+	Params::UUsedPlacementActorsContext_C_ProvideActorsSet_Params Parms{};
 
 	Parms.QuerierObject = QuerierObject;
 	Parms.QuerierActor = QuerierActor;
@@ -38,12 +66,10 @@ void UUsedPlacementActorsContext_C::ProvideActorsSet(class UObject* QuerierObjec
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ResultingActorsSet != nullptr)
-		*ResultingActorsSet = Parms.ResultingActorsSet;
+		*ResultingActorsSet = std::move(Parms.ResultingActorsSet);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

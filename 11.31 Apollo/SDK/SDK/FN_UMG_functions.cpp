@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,62 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class UMG.Visual
+// (None)
+
+class UClass* UVisual::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Visual");
+
+	return Clss;
+}
+
+
+// Visual UMG.Default__Visual
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UVisual* UVisual::GetDefaultObj()
+{
+	static class UVisual* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UVisual*>(UVisual::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.Widget
+// (None)
+
+class UClass* UWidget::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Widget");
+
+	return Clss;
+}
+
+
+// Widget UMG.Default__Widget
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWidget* UWidget::GetDefaultObj()
+{
+	static class UWidget* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWidget*>(UWidget::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function UMG.Widget.SetVisibility
 // (Native, Public, BlueprintCallable)
 // Parameters:
@@ -22,19 +75,22 @@ namespace SDK
 
 void UWidget::SetVisibility(enum class ESlateVisibility InVisibility)
 {
-	static auto Func = Class->GetFunction("Widget", "SetVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetVisibility");
+
+	Params::UWidget_SetVisibility_Params Parms{};
 
 	Parms.InVisibility = InVisibility;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -46,19 +102,22 @@ void UWidget::SetVisibility(enum class ESlateVisibility InVisibility)
 
 void UWidget::SetUserFocus(class APlayerController* PlayerController)
 {
-	static auto Func = Class->GetFunction("Widget", "SetUserFocus");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetUserFocus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetUserFocus");
+
+	Params::UWidget_SetUserFocus_Params Parms{};
 
 	Parms.PlayerController = PlayerController;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -70,19 +129,22 @@ void UWidget::SetUserFocus(class APlayerController* PlayerController)
 
 void UWidget::SetToolTipText(class FText& InToolTipText)
 {
-	static auto Func = Class->GetFunction("Widget", "SetToolTipText");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetToolTipText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetToolTipText");
+
+	Params::UWidget_SetToolTipText_Params Parms{};
 
 	Parms.InToolTipText = InToolTipText;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -94,19 +156,22 @@ void UWidget::SetToolTipText(class FText& InToolTipText)
 
 void UWidget::SetToolTip(class UWidget* Widget)
 {
-	static auto Func = Class->GetFunction("Widget", "SetToolTip");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetToolTip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetToolTip");
+
+	Params::UWidget_SetToolTip_Params Parms{};
 
 	Parms.Widget = Widget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -118,19 +183,22 @@ void UWidget::SetToolTip(class UWidget* Widget)
 
 void UWidget::SetRenderTranslation(const struct FVector2D& Translation)
 {
-	static auto Func = Class->GetFunction("Widget", "SetRenderTranslation");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetRenderTranslation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetRenderTranslation");
+
+	Params::UWidget_SetRenderTranslation_Params Parms{};
 
 	Parms.Translation = Translation;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -142,19 +210,22 @@ void UWidget::SetRenderTranslation(const struct FVector2D& Translation)
 
 void UWidget::SetRenderTransformPivot(const struct FVector2D& Pivot)
 {
-	static auto Func = Class->GetFunction("Widget", "SetRenderTransformPivot");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetRenderTransformPivot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetRenderTransformPivot");
+
+	Params::UWidget_SetRenderTransformPivot_Params Parms{};
 
 	Parms.Pivot = Pivot;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -166,19 +237,22 @@ void UWidget::SetRenderTransformPivot(const struct FVector2D& Pivot)
 
 void UWidget::SetRenderTransformAngle(float Angle)
 {
-	static auto Func = Class->GetFunction("Widget", "SetRenderTransformAngle");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetRenderTransformAngle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetRenderTransformAngle");
+
+	Params::UWidget_SetRenderTransformAngle_Params Parms{};
 
 	Parms.Angle = Angle;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -190,19 +264,22 @@ void UWidget::SetRenderTransformAngle(float Angle)
 
 void UWidget::SetRenderTransform(const struct FWidgetTransform& InTransform)
 {
-	static auto Func = Class->GetFunction("Widget", "SetRenderTransform");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetRenderTransform_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetRenderTransform");
+
+	Params::UWidget_SetRenderTransform_Params Parms{};
 
 	Parms.InTransform = InTransform;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -214,19 +291,22 @@ void UWidget::SetRenderTransform(const struct FWidgetTransform& InTransform)
 
 void UWidget::SetRenderShear(const struct FVector2D& Shear)
 {
-	static auto Func = Class->GetFunction("Widget", "SetRenderShear");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetRenderShear_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetRenderShear");
+
+	Params::UWidget_SetRenderShear_Params Parms{};
 
 	Parms.Shear = Shear;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -238,19 +318,22 @@ void UWidget::SetRenderShear(const struct FVector2D& Shear)
 
 void UWidget::SetRenderScale(const struct FVector2D& Scale)
 {
-	static auto Func = Class->GetFunction("Widget", "SetRenderScale");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetRenderScale_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetRenderScale");
+
+	Params::UWidget_SetRenderScale_Params Parms{};
 
 	Parms.Scale = Scale;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -262,19 +345,22 @@ void UWidget::SetRenderScale(const struct FVector2D& Scale)
 
 void UWidget::SetRenderOpacity(float InOpacity)
 {
-	static auto Func = Class->GetFunction("Widget", "SetRenderOpacity");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetRenderOpacity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetRenderOpacity");
+
+	Params::UWidget_SetRenderOpacity_Params Parms{};
 
 	Parms.InOpacity = InOpacity;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -287,20 +373,23 @@ void UWidget::SetRenderOpacity(float InOpacity)
 
 void UWidget::SetNavigationRuleExplicit(enum class EUINavigation Direction, class UWidget* InWidget)
 {
-	static auto Func = Class->GetFunction("Widget", "SetNavigationRuleExplicit");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetNavigationRuleExplicit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetNavigationRuleExplicit");
+
+	Params::UWidget_SetNavigationRuleExplicit_Params Parms{};
 
 	Parms.Direction = Direction;
 	Parms.InWidget = InWidget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -313,20 +402,23 @@ void UWidget::SetNavigationRuleExplicit(enum class EUINavigation Direction, clas
 
 void UWidget::SetNavigationRuleCustomBoundary(enum class EUINavigation Direction, UDelegateProperty_ InCustomDelegate)
 {
-	static auto Func = Class->GetFunction("Widget", "SetNavigationRuleCustomBoundary");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetNavigationRuleCustomBoundary_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetNavigationRuleCustomBoundary");
+
+	Params::UWidget_SetNavigationRuleCustomBoundary_Params Parms{};
 
 	Parms.Direction = Direction;
 	Parms.InCustomDelegate = InCustomDelegate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -339,20 +431,23 @@ void UWidget::SetNavigationRuleCustomBoundary(enum class EUINavigation Direction
 
 void UWidget::SetNavigationRuleCustom(enum class EUINavigation Direction, UDelegateProperty_ InCustomDelegate)
 {
-	static auto Func = Class->GetFunction("Widget", "SetNavigationRuleCustom");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetNavigationRuleCustom_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetNavigationRuleCustom");
+
+	Params::UWidget_SetNavigationRuleCustom_Params Parms{};
 
 	Parms.Direction = Direction;
 	Parms.InCustomDelegate = InCustomDelegate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -365,20 +460,23 @@ void UWidget::SetNavigationRuleCustom(enum class EUINavigation Direction, UDeleg
 
 void UWidget::SetNavigationRuleBase(enum class EUINavigation Direction, enum class EUINavigationRule Rule)
 {
-	static auto Func = Class->GetFunction("Widget", "SetNavigationRuleBase");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetNavigationRuleBase_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetNavigationRuleBase");
+
+	Params::UWidget_SetNavigationRuleBase_Params Parms{};
 
 	Parms.Direction = Direction;
 	Parms.Rule = Rule;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -392,21 +490,24 @@ void UWidget::SetNavigationRuleBase(enum class EUINavigation Direction, enum cla
 
 void UWidget::SetNavigationRule(enum class EUINavigation Direction, enum class EUINavigationRule Rule, class FName WidgetToFocus)
 {
-	static auto Func = Class->GetFunction("Widget", "SetNavigationRule");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetNavigationRule_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetNavigationRule");
+
+	Params::UWidget_SetNavigationRule_Params Parms{};
 
 	Parms.Direction = Direction;
 	Parms.Rule = Rule;
 	Parms.WidgetToFocus = WidgetToFocus;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -417,18 +518,20 @@ void UWidget::SetNavigationRule(enum class EUINavigation Direction, enum class E
 
 void UWidget::SetKeyboardFocus()
 {
-	static auto Func = Class->GetFunction("Widget", "SetKeyboardFocus");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetKeyboardFocus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetKeyboardFocus");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -440,19 +543,22 @@ void UWidget::SetKeyboardFocus()
 
 void UWidget::SetIsEnabled(bool bInIsEnabled)
 {
-	static auto Func = Class->GetFunction("Widget", "SetIsEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetIsEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetIsEnabled");
+
+	Params::UWidget_SetIsEnabled_Params Parms{};
 
 	Parms.bInIsEnabled = bInIsEnabled;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -463,18 +569,20 @@ void UWidget::SetIsEnabled(bool bInIsEnabled)
 
 void UWidget::SetFocus()
 {
-	static auto Func = Class->GetFunction("Widget", "SetFocus");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetFocus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetFocus");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -486,19 +594,22 @@ void UWidget::SetFocus()
 
 void UWidget::SetCursor(enum class EMouseCursor InCursor)
 {
-	static auto Func = Class->GetFunction("Widget", "SetCursor");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetCursor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetCursor");
+
+	Params::UWidget_SetCursor_Params Parms{};
 
 	Parms.InCursor = InCursor;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -510,19 +621,22 @@ void UWidget::SetCursor(enum class EMouseCursor InCursor)
 
 void UWidget::SetClipping(enum class EWidgetClipping InClipping)
 {
-	static auto Func = Class->GetFunction("Widget", "SetClipping");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetClipping_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetClipping");
+
+	Params::UWidget_SetClipping_Params Parms{};
 
 	Parms.InClipping = InClipping;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -535,20 +649,23 @@ void UWidget::SetClipping(enum class EWidgetClipping InClipping)
 
 void UWidget::SetAllNavigationRules(enum class EUINavigationRule Rule, class FName WidgetToFocus)
 {
-	static auto Func = Class->GetFunction("Widget", "SetAllNavigationRules");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_SetAllNavigationRules_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "SetAllNavigationRules");
+
+	Params::UWidget_SetAllNavigationRules_Params Parms{};
 
 	Parms.Rule = Rule;
 	Parms.WidgetToFocus = WidgetToFocus;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -559,18 +676,20 @@ void UWidget::SetAllNavigationRules(enum class EUINavigationRule Rule, class FNa
 
 void UWidget::ResetCursor()
 {
-	static auto Func = Class->GetFunction("Widget", "ResetCursor");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_ResetCursor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "ResetCursor");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -581,18 +700,20 @@ void UWidget::ResetCursor()
 
 void UWidget::RemoveFromParent()
 {
-	static auto Func = Class->GetFunction("Widget", "RemoveFromParent");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_RemoveFromParent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "RemoveFromParent");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -604,9 +725,12 @@ void UWidget::RemoveFromParent()
 
 struct FEventReply UWidget::OnReply__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("Widget", "OnReply__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_OnReply__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "OnReply__DelegateSignature");
+
+	Params::UWidget_OnReply__DelegateSignature_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -625,9 +749,12 @@ struct FEventReply UWidget::OnReply__DelegateSignature()
 
 struct FEventReply UWidget::OnPointerEvent__DelegateSignature(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("Widget", "OnPointerEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_OnPointerEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "OnPointerEvent__DelegateSignature");
+
+	Params::UWidget_OnPointerEvent__DelegateSignature_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -646,18 +773,21 @@ struct FEventReply UWidget::OnPointerEvent__DelegateSignature(const struct FGeom
 
 bool UWidget::IsVisible()
 {
-	static auto Func = Class->GetFunction("Widget", "IsVisible");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_IsVisible_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "IsVisible");
+
+	Params::UWidget_IsVisible_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -671,18 +801,21 @@ bool UWidget::IsVisible()
 
 bool UWidget::IsHovered()
 {
-	static auto Func = Class->GetFunction("Widget", "IsHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_IsHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "IsHovered");
+
+	Params::UWidget_IsHovered_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -695,18 +828,20 @@ bool UWidget::IsHovered()
 
 void UWidget::InvalidateLayoutAndVolatility()
 {
-	static auto Func = Class->GetFunction("Widget", "InvalidateLayoutAndVolatility");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_InvalidateLayoutAndVolatility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "InvalidateLayoutAndVolatility");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -719,19 +854,22 @@ void UWidget::InvalidateLayoutAndVolatility()
 
 bool UWidget::HasUserFocusedDescendants(class APlayerController* PlayerController)
 {
-	static auto Func = Class->GetFunction("Widget", "HasUserFocusedDescendants");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_HasUserFocusedDescendants_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "HasUserFocusedDescendants");
+
+	Params::UWidget_HasUserFocusedDescendants_Params Parms{};
 
 	Parms.PlayerController = PlayerController;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -746,19 +884,22 @@ bool UWidget::HasUserFocusedDescendants(class APlayerController* PlayerControlle
 
 bool UWidget::HasUserFocus(class APlayerController* PlayerController)
 {
-	static auto Func = Class->GetFunction("Widget", "HasUserFocus");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_HasUserFocus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "HasUserFocus");
+
+	Params::UWidget_HasUserFocus_Params Parms{};
 
 	Parms.PlayerController = PlayerController;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -774,20 +915,23 @@ bool UWidget::HasUserFocus(class APlayerController* PlayerController)
 
 bool UWidget::HasMouseCaptureByUser(int32 UserIndex, int32 PointerIndex)
 {
-	static auto Func = Class->GetFunction("Widget", "HasMouseCaptureByUser");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_HasMouseCaptureByUser_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "HasMouseCaptureByUser");
+
+	Params::UWidget_HasMouseCaptureByUser_Params Parms{};
 
 	Parms.UserIndex = UserIndex;
 	Parms.PointerIndex = PointerIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -801,18 +945,21 @@ bool UWidget::HasMouseCaptureByUser(int32 UserIndex, int32 PointerIndex)
 
 bool UWidget::HasMouseCapture()
 {
-	static auto Func = Class->GetFunction("Widget", "HasMouseCapture");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_HasMouseCapture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "HasMouseCapture");
+
+	Params::UWidget_HasMouseCapture_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -826,18 +973,21 @@ bool UWidget::HasMouseCapture()
 
 bool UWidget::HasKeyboardFocus()
 {
-	static auto Func = Class->GetFunction("Widget", "HasKeyboardFocus");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_HasKeyboardFocus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "HasKeyboardFocus");
+
+	Params::UWidget_HasKeyboardFocus_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -851,18 +1001,21 @@ bool UWidget::HasKeyboardFocus()
 
 bool UWidget::HasFocusedDescendants()
 {
-	static auto Func = Class->GetFunction("Widget", "HasFocusedDescendants");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_HasFocusedDescendants_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "HasFocusedDescendants");
+
+	Params::UWidget_HasFocusedDescendants_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -876,18 +1029,21 @@ bool UWidget::HasFocusedDescendants()
 
 bool UWidget::HasAnyUserFocus()
 {
-	static auto Func = Class->GetFunction("Widget", "HasAnyUserFocus");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_HasAnyUserFocus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "HasAnyUserFocus");
+
+	Params::UWidget_HasAnyUserFocus_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -901,9 +1057,12 @@ bool UWidget::HasAnyUserFocus()
 
 class UWidget* UWidget::GetWidget__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("Widget", "GetWidget__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetWidget__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetWidget__DelegateSignature");
+
+	Params::UWidget_GetWidget__DelegateSignature_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -920,18 +1079,21 @@ class UWidget* UWidget::GetWidget__DelegateSignature()
 
 enum class ESlateVisibility UWidget::GetVisibility()
 {
-	static auto Func = Class->GetFunction("Widget", "GetVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetVisibility");
+
+	Params::UWidget_GetVisibility_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -945,18 +1107,21 @@ enum class ESlateVisibility UWidget::GetVisibility()
 
 struct FGeometry UWidget::GetTickSpaceGeometry()
 {
-	static auto Func = Class->GetFunction("Widget", "GetTickSpaceGeometry");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetTickSpaceGeometry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetTickSpaceGeometry");
+
+	Params::UWidget_GetTickSpaceGeometry_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -970,9 +1135,12 @@ struct FGeometry UWidget::GetTickSpaceGeometry()
 
 class FText UWidget::GetText__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("Widget", "GetText__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetText__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetText__DelegateSignature");
+
+	Params::UWidget_GetText__DelegateSignature_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -989,9 +1157,12 @@ class FText UWidget::GetText__DelegateSignature()
 
 enum class ESlateVisibility UWidget::GetSlateVisibility__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("Widget", "GetSlateVisibility__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetSlateVisibility__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetSlateVisibility__DelegateSignature");
+
+	Params::UWidget_GetSlateVisibility__DelegateSignature_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1008,9 +1179,12 @@ enum class ESlateVisibility UWidget::GetSlateVisibility__DelegateSignature()
 
 struct FSlateColor UWidget::GetSlateColor__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("Widget", "GetSlateColor__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetSlateColor__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetSlateColor__DelegateSignature");
+
+	Params::UWidget_GetSlateColor__DelegateSignature_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1027,9 +1201,12 @@ struct FSlateColor UWidget::GetSlateColor__DelegateSignature()
 
 struct FSlateBrush UWidget::GetSlateBrush__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("Widget", "GetSlateBrush__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetSlateBrush__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetSlateBrush__DelegateSignature");
+
+	Params::UWidget_GetSlateBrush__DelegateSignature_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1046,18 +1223,21 @@ struct FSlateBrush UWidget::GetSlateBrush__DelegateSignature()
 
 float UWidget::GetRenderTransformAngle()
 {
-	static auto Func = Class->GetFunction("Widget", "GetRenderTransformAngle");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetRenderTransformAngle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetRenderTransformAngle");
+
+	Params::UWidget_GetRenderTransformAngle_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1071,18 +1251,21 @@ float UWidget::GetRenderTransformAngle()
 
 float UWidget::GetRenderOpacity()
 {
-	static auto Func = Class->GetFunction("Widget", "GetRenderOpacity");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetRenderOpacity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetRenderOpacity");
+
+	Params::UWidget_GetRenderOpacity_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1096,18 +1279,21 @@ float UWidget::GetRenderOpacity()
 
 class UPanelWidget* UWidget::GetParent()
 {
-	static auto Func = Class->GetFunction("Widget", "GetParent");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetParent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetParent");
+
+	Params::UWidget_GetParent_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1121,18 +1307,21 @@ class UPanelWidget* UWidget::GetParent()
 
 struct FGeometry UWidget::GetPaintSpaceGeometry()
 {
-	static auto Func = Class->GetFunction("Widget", "GetPaintSpaceGeometry");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetPaintSpaceGeometry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetPaintSpaceGeometry");
+
+	Params::UWidget_GetPaintSpaceGeometry_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1146,18 +1335,21 @@ struct FGeometry UWidget::GetPaintSpaceGeometry()
 
 class APlayerController* UWidget::GetOwningPlayer()
 {
-	static auto Func = Class->GetFunction("Widget", "GetOwningPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetOwningPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetOwningPlayer");
+
+	Params::UWidget_GetOwningPlayer_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1171,18 +1363,21 @@ class APlayerController* UWidget::GetOwningPlayer()
 
 class ULocalPlayer* UWidget::GetOwningLocalPlayer()
 {
-	static auto Func = Class->GetFunction("Widget", "GetOwningLocalPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetOwningLocalPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetOwningLocalPlayer");
+
+	Params::UWidget_GetOwningLocalPlayer_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1196,9 +1391,12 @@ class ULocalPlayer* UWidget::GetOwningLocalPlayer()
 
 enum class EMouseCursor UWidget::GetMouseCursor__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("Widget", "GetMouseCursor__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetMouseCursor__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetMouseCursor__DelegateSignature");
+
+	Params::UWidget_GetMouseCursor__DelegateSignature_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1215,9 +1413,12 @@ enum class EMouseCursor UWidget::GetMouseCursor__DelegateSignature()
 
 struct FLinearColor UWidget::GetLinearColor__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("Widget", "GetLinearColor__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetLinearColor__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetLinearColor__DelegateSignature");
+
+	Params::UWidget_GetLinearColor__DelegateSignature_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1234,18 +1435,21 @@ struct FLinearColor UWidget::GetLinearColor__DelegateSignature()
 
 bool UWidget::GetIsEnabled()
 {
-	static auto Func = Class->GetFunction("Widget", "GetIsEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetIsEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetIsEnabled");
+
+	Params::UWidget_GetIsEnabled_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1259,9 +1463,12 @@ bool UWidget::GetIsEnabled()
 
 int32 UWidget::GetInt32__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("Widget", "GetInt32__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetInt32__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetInt32__DelegateSignature");
+
+	Params::UWidget_GetInt32__DelegateSignature_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1278,18 +1485,21 @@ int32 UWidget::GetInt32__DelegateSignature()
 
 class UGameInstance* UWidget::GetGameInstance()
 {
-	static auto Func = Class->GetFunction("Widget", "GetGameInstance");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetGameInstance_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetGameInstance");
+
+	Params::UWidget_GetGameInstance_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1303,9 +1513,12 @@ class UGameInstance* UWidget::GetGameInstance()
 
 float UWidget::GetFloat__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("Widget", "GetFloat__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetFloat__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetFloat__DelegateSignature");
+
+	Params::UWidget_GetFloat__DelegateSignature_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1322,18 +1535,21 @@ float UWidget::GetFloat__DelegateSignature()
 
 struct FVector2D UWidget::GetDesiredSize()
 {
-	static auto Func = Class->GetFunction("Widget", "GetDesiredSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetDesiredSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetDesiredSize");
+
+	Params::UWidget_GetDesiredSize_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1347,18 +1563,21 @@ struct FVector2D UWidget::GetDesiredSize()
 
 enum class EWidgetClipping UWidget::GetClipping()
 {
-	static auto Func = Class->GetFunction("Widget", "GetClipping");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetClipping_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetClipping");
+
+	Params::UWidget_GetClipping_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1372,9 +1591,12 @@ enum class EWidgetClipping UWidget::GetClipping()
 
 enum class ECheckBoxState UWidget::GetCheckBoxState__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("Widget", "GetCheckBoxState__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetCheckBoxState__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetCheckBoxState__DelegateSignature");
+
+	Params::UWidget_GetCheckBoxState__DelegateSignature_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1391,18 +1613,21 @@ enum class ECheckBoxState UWidget::GetCheckBoxState__DelegateSignature()
 
 struct FGeometry UWidget::GetCachedGeometry()
 {
-	static auto Func = Class->GetFunction("Widget", "GetCachedGeometry");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetCachedGeometry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetCachedGeometry");
+
+	Params::UWidget_GetCachedGeometry_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1416,9 +1641,12 @@ struct FGeometry UWidget::GetCachedGeometry()
 
 bool UWidget::GetBool__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("Widget", "GetBool__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GetBool__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GetBool__DelegateSignature");
+
+	Params::UWidget_GetBool__DelegateSignature_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1436,9 +1664,12 @@ bool UWidget::GetBool__DelegateSignature()
 
 class UWidget* UWidget::GenerateWidgetForString__DelegateSignature(const class FString& Item)
 {
-	static auto Func = Class->GetFunction("Widget", "GenerateWidgetForString__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GenerateWidgetForString__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GenerateWidgetForString__DelegateSignature");
+
+	Params::UWidget_GenerateWidgetForString__DelegateSignature_Params Parms{};
 
 	Parms.Item = Item;
 
@@ -1457,9 +1688,12 @@ class UWidget* UWidget::GenerateWidgetForString__DelegateSignature(const class F
 
 class UWidget* UWidget::GenerateWidgetForObject__DelegateSignature(class UObject* Item)
 {
-	static auto Func = Class->GetFunction("Widget", "GenerateWidgetForObject__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_GenerateWidgetForObject__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "GenerateWidgetForObject__DelegateSignature");
+
+	Params::UWidget_GenerateWidgetForObject__DelegateSignature_Params Parms{};
 
 	Parms.Item = Item;
 
@@ -1477,19 +1711,22 @@ class UWidget* UWidget::GenerateWidgetForObject__DelegateSignature(class UObject
 
 void UWidget::ForceVolatile(bool bForce)
 {
-	static auto Func = Class->GetFunction("Widget", "ForceVolatile");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_ForceVolatile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "ForceVolatile");
+
+	Params::UWidget_ForceVolatile_Params Parms{};
 
 	Parms.bForce = bForce;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1500,19 +1737,49 @@ void UWidget::ForceVolatile(bool bForce)
 
 void UWidget::ForceLayoutPrepass()
 {
-	static auto Func = Class->GetFunction("Widget", "ForceLayoutPrepass");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidget_ForceLayoutPrepass_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Widget", "ForceLayoutPrepass");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.Slider
+// (None)
+
+class UClass* USlider::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Slider");
+
+	return Clss;
+}
+
+
+// Slider UMG.Default__Slider
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USlider* USlider::GetDefaultObj()
+{
+	static class USlider* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USlider*>(USlider::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -1523,19 +1790,22 @@ void UWidget::ForceLayoutPrepass()
 
 void USlider::SetValue(float InValue)
 {
-	static auto Func = Class->GetFunction("Slider", "SetValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USlider_SetValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Slider", "SetValue");
+
+	Params::USlider_SetValue_Params Parms{};
 
 	Parms.InValue = InValue;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1547,19 +1817,22 @@ void USlider::SetValue(float InValue)
 
 void USlider::SetStepSize(float InValue)
 {
-	static auto Func = Class->GetFunction("Slider", "SetStepSize");
+	static class UFunction* Func = nullptr;
 
-	Params::USlider_SetStepSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Slider", "SetStepSize");
+
+	Params::USlider_SetStepSize_Params Parms{};
 
 	Parms.InValue = InValue;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1571,19 +1844,22 @@ void USlider::SetStepSize(float InValue)
 
 void USlider::SetSliderHandleColor(const struct FLinearColor& InValue)
 {
-	static auto Func = Class->GetFunction("Slider", "SetSliderHandleColor");
+	static class UFunction* Func = nullptr;
 
-	Params::USlider_SetSliderHandleColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Slider", "SetSliderHandleColor");
+
+	Params::USlider_SetSliderHandleColor_Params Parms{};
 
 	Parms.InValue = InValue;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1595,19 +1871,22 @@ void USlider::SetSliderHandleColor(const struct FLinearColor& InValue)
 
 void USlider::SetSliderBarColor(const struct FLinearColor& InValue)
 {
-	static auto Func = Class->GetFunction("Slider", "SetSliderBarColor");
+	static class UFunction* Func = nullptr;
 
-	Params::USlider_SetSliderBarColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Slider", "SetSliderBarColor");
+
+	Params::USlider_SetSliderBarColor_Params Parms{};
 
 	Parms.InValue = InValue;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1619,19 +1898,22 @@ void USlider::SetSliderBarColor(const struct FLinearColor& InValue)
 
 void USlider::SetMinValue(float InValue)
 {
-	static auto Func = Class->GetFunction("Slider", "SetMinValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USlider_SetMinValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Slider", "SetMinValue");
+
+	Params::USlider_SetMinValue_Params Parms{};
 
 	Parms.InValue = InValue;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1643,19 +1925,22 @@ void USlider::SetMinValue(float InValue)
 
 void USlider::SetMaxValue(float InValue)
 {
-	static auto Func = Class->GetFunction("Slider", "SetMaxValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USlider_SetMaxValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Slider", "SetMaxValue");
+
+	Params::USlider_SetMaxValue_Params Parms{};
 
 	Parms.InValue = InValue;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1667,19 +1952,22 @@ void USlider::SetMaxValue(float InValue)
 
 void USlider::SetLocked(bool InValue)
 {
-	static auto Func = Class->GetFunction("Slider", "SetLocked");
+	static class UFunction* Func = nullptr;
 
-	Params::USlider_SetLocked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Slider", "SetLocked");
+
+	Params::USlider_SetLocked_Params Parms{};
 
 	Parms.InValue = InValue;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1691,19 +1979,22 @@ void USlider::SetLocked(bool InValue)
 
 void USlider::SetIndentHandle(bool InValue)
 {
-	static auto Func = Class->GetFunction("Slider", "SetIndentHandle");
+	static class UFunction* Func = nullptr;
 
-	Params::USlider_SetIndentHandle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Slider", "SetIndentHandle");
+
+	Params::USlider_SetIndentHandle_Params Parms{};
 
 	Parms.InValue = InValue;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1715,18 +2006,21 @@ void USlider::SetIndentHandle(bool InValue)
 
 float USlider::GetValue()
 {
-	static auto Func = Class->GetFunction("Slider", "GetValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USlider_GetValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Slider", "GetValue");
+
+	Params::USlider_GetValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1740,21 +2034,52 @@ float USlider::GetValue()
 
 float USlider::GetNormalizedValue()
 {
-	static auto Func = Class->GetFunction("Slider", "GetNormalizedValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USlider_GetNormalizedValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Slider", "GetNormalizedValue");
+
+	Params::USlider_GetNormalizedValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.UserWidget
+// (None)
+
+class UClass* UUserWidget::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UserWidget");
+
+	return Clss;
+}
+
+
+// UserWidget UMG.Default__UserWidget
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UUserWidget* UUserWidget::GetDefaultObj()
+{
+	static class UUserWidget* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUserWidget*>(UUserWidget::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -1764,18 +2089,20 @@ float USlider::GetNormalizedValue()
 
 void UUserWidget::UnregisterInputComponent()
 {
-	static auto Func = Class->GetFunction("UserWidget", "UnregisterInputComponent");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_UnregisterInputComponent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "UnregisterInputComponent");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1788,20 +2115,23 @@ void UUserWidget::UnregisterInputComponent()
 
 void UUserWidget::UnbindFromAnimationStarted(class UWidgetAnimation* Animation, UDelegateProperty_ Delegate)
 {
-	static auto Func = Class->GetFunction("UserWidget", "UnbindFromAnimationStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_UnbindFromAnimationStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "UnbindFromAnimationStarted");
+
+	Params::UUserWidget_UnbindFromAnimationStarted_Params Parms{};
 
 	Parms.Animation = Animation;
 	Parms.Delegate = Delegate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1814,20 +2144,23 @@ void UUserWidget::UnbindFromAnimationStarted(class UWidgetAnimation* Animation, 
 
 void UUserWidget::UnbindFromAnimationFinished(class UWidgetAnimation* Animation, UDelegateProperty_ Delegate)
 {
-	static auto Func = Class->GetFunction("UserWidget", "UnbindFromAnimationFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_UnbindFromAnimationFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "UnbindFromAnimationFinished");
+
+	Params::UUserWidget_UnbindFromAnimationFinished_Params Parms{};
 
 	Parms.Animation = Animation;
 	Parms.Delegate = Delegate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1839,19 +2172,22 @@ void UUserWidget::UnbindFromAnimationFinished(class UWidgetAnimation* Animation,
 
 void UUserWidget::UnbindAllFromAnimationStarted(class UWidgetAnimation* Animation)
 {
-	static auto Func = Class->GetFunction("UserWidget", "UnbindAllFromAnimationStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_UnbindAllFromAnimationStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "UnbindAllFromAnimationStarted");
+
+	Params::UUserWidget_UnbindAllFromAnimationStarted_Params Parms{};
 
 	Parms.Animation = Animation;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1863,19 +2199,22 @@ void UUserWidget::UnbindAllFromAnimationStarted(class UWidgetAnimation* Animatio
 
 void UUserWidget::UnbindAllFromAnimationFinished(class UWidgetAnimation* Animation)
 {
-	static auto Func = Class->GetFunction("UserWidget", "UnbindAllFromAnimationFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_UnbindAllFromAnimationFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "UnbindAllFromAnimationFinished");
+
+	Params::UUserWidget_UnbindAllFromAnimationFinished_Params Parms{};
 
 	Parms.Animation = Animation;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1888,9 +2227,12 @@ void UUserWidget::UnbindAllFromAnimationFinished(class UWidgetAnimation* Animati
 
 void UUserWidget::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto Func = Class->GetFunction("UserWidget", "Tick");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_Tick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "Tick");
+
+	Params::UUserWidget_Tick_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InDeltaTime = InDeltaTime;
@@ -1908,20 +2250,23 @@ void UUserWidget::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 
 void UUserWidget::StopListeningForInputAction(class FName ActionName, enum class EInputEvent EventType)
 {
-	static auto Func = Class->GetFunction("UserWidget", "StopListeningForInputAction");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_StopListeningForInputAction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "StopListeningForInputAction");
+
+	Params::UUserWidget_StopListeningForInputAction_Params Parms{};
 
 	Parms.ActionName = ActionName;
 	Parms.EventType = EventType;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1932,18 +2277,20 @@ void UUserWidget::StopListeningForInputAction(class FName ActionName, enum class
 
 void UUserWidget::StopListeningForAllInputActions()
 {
-	static auto Func = Class->GetFunction("UserWidget", "StopListeningForAllInputActions");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_StopListeningForAllInputActions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "StopListeningForAllInputActions");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1954,18 +2301,20 @@ void UUserWidget::StopListeningForAllInputActions()
 
 void UUserWidget::StopAnimationsAndLatentActions()
 {
-	static auto Func = Class->GetFunction("UserWidget", "StopAnimationsAndLatentActions");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_StopAnimationsAndLatentActions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "StopAnimationsAndLatentActions");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1977,19 +2326,22 @@ void UUserWidget::StopAnimationsAndLatentActions()
 
 void UUserWidget::StopAnimation(class UWidgetAnimation* InAnimation)
 {
-	static auto Func = Class->GetFunction("UserWidget", "StopAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_StopAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "StopAnimation");
+
+	Params::UUserWidget_StopAnimation_Params Parms{};
 
 	Parms.InAnimation = InAnimation;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2000,18 +2352,20 @@ void UUserWidget::StopAnimation(class UWidgetAnimation* InAnimation)
 
 void UUserWidget::StopAllAnimations()
 {
-	static auto Func = Class->GetFunction("UserWidget", "StopAllAnimations");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_StopAllAnimations_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "StopAllAnimations");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2024,20 +2378,23 @@ void UUserWidget::StopAllAnimations()
 
 void UUserWidget::SetPositionInViewport(const struct FVector2D& Position, bool bRemoveDPIScale)
 {
-	static auto Func = Class->GetFunction("UserWidget", "SetPositionInViewport");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_SetPositionInViewport_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "SetPositionInViewport");
+
+	Params::UUserWidget_SetPositionInViewport_Params Parms{};
 
 	Parms.Position = Position;
 	Parms.bRemoveDPIScale = bRemoveDPIScale;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2050,20 +2407,23 @@ void UUserWidget::SetPositionInViewport(const struct FVector2D& Position, bool b
 
 void UUserWidget::SetPlaybackSpeed(class UWidgetAnimation* InAnimation, float PlaybackSpeed)
 {
-	static auto Func = Class->GetFunction("UserWidget", "SetPlaybackSpeed");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_SetPlaybackSpeed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "SetPlaybackSpeed");
+
+	Params::UUserWidget_SetPlaybackSpeed_Params Parms{};
 
 	Parms.InAnimation = InAnimation;
 	Parms.PlaybackSpeed = PlaybackSpeed;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2075,19 +2435,22 @@ void UUserWidget::SetPlaybackSpeed(class UWidgetAnimation* InAnimation, float Pl
 
 void UUserWidget::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("UserWidget", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "SetPadding");
+
+	Params::UUserWidget_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2099,19 +2462,22 @@ void UUserWidget::SetPadding(const struct FMargin& InPadding)
 
 void UUserWidget::SetOwningPlayer(class APlayerController* LocalPlayerController)
 {
-	static auto Func = Class->GetFunction("UserWidget", "SetOwningPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_SetOwningPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "SetOwningPlayer");
+
+	Params::UUserWidget_SetOwningPlayer_Params Parms{};
 
 	Parms.LocalPlayerController = LocalPlayerController;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2124,20 +2490,23 @@ void UUserWidget::SetOwningPlayer(class APlayerController* LocalPlayerController
 
 void UUserWidget::SetNumLoopsToPlay(class UWidgetAnimation* InAnimation, int32 NumLoopsToPlay)
 {
-	static auto Func = Class->GetFunction("UserWidget", "SetNumLoopsToPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_SetNumLoopsToPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "SetNumLoopsToPlay");
+
+	Params::UUserWidget_SetNumLoopsToPlay_Params Parms{};
 
 	Parms.InAnimation = InAnimation;
 	Parms.NumLoopsToPlay = NumLoopsToPlay;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2149,19 +2518,22 @@ void UUserWidget::SetNumLoopsToPlay(class UWidgetAnimation* InAnimation, int32 N
 
 void UUserWidget::SetInputActionPriority(int32 NewPriority)
 {
-	static auto Func = Class->GetFunction("UserWidget", "SetInputActionPriority");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_SetInputActionPriority_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "SetInputActionPriority");
+
+	Params::UUserWidget_SetInputActionPriority_Params Parms{};
 
 	Parms.NewPriority = NewPriority;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2173,19 +2545,22 @@ void UUserWidget::SetInputActionPriority(int32 NewPriority)
 
 void UUserWidget::SetInputActionBlocking(bool bShouldBlock)
 {
-	static auto Func = Class->GetFunction("UserWidget", "SetInputActionBlocking");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_SetInputActionBlocking_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "SetInputActionBlocking");
+
+	Params::UUserWidget_SetInputActionBlocking_Params Parms{};
 
 	Parms.bShouldBlock = bShouldBlock;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2197,19 +2572,22 @@ void UUserWidget::SetInputActionBlocking(bool bShouldBlock)
 
 void UUserWidget::SetForegroundColor(const struct FSlateColor& InForegroundColor)
 {
-	static auto Func = Class->GetFunction("UserWidget", "SetForegroundColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_SetForegroundColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "SetForegroundColor");
+
+	Params::UUserWidget_SetForegroundColor_Params Parms{};
 
 	Parms.InForegroundColor = InForegroundColor;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2221,19 +2599,22 @@ void UUserWidget::SetForegroundColor(const struct FSlateColor& InForegroundColor
 
 void UUserWidget::SetDesiredSizeInViewport(const struct FVector2D& Size)
 {
-	static auto Func = Class->GetFunction("UserWidget", "SetDesiredSizeInViewport");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_SetDesiredSizeInViewport_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "SetDesiredSizeInViewport");
+
+	Params::UUserWidget_SetDesiredSizeInViewport_Params Parms{};
 
 	Parms.Size = Size;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2245,19 +2626,22 @@ void UUserWidget::SetDesiredSizeInViewport(const struct FVector2D& Size)
 
 void UUserWidget::SetColorAndOpacity(const struct FLinearColor& InColorAndOpacity)
 {
-	static auto Func = Class->GetFunction("UserWidget", "SetColorAndOpacity");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_SetColorAndOpacity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "SetColorAndOpacity");
+
+	Params::UUserWidget_SetColorAndOpacity_Params Parms{};
 
 	Parms.InColorAndOpacity = InColorAndOpacity;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2269,19 +2653,22 @@ void UUserWidget::SetColorAndOpacity(const struct FLinearColor& InColorAndOpacit
 
 void UUserWidget::SetAnchorsInViewport(const struct FAnchors& Anchors)
 {
-	static auto Func = Class->GetFunction("UserWidget", "SetAnchorsInViewport");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_SetAnchorsInViewport_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "SetAnchorsInViewport");
+
+	Params::UUserWidget_SetAnchorsInViewport_Params Parms{};
 
 	Parms.Anchors = Anchors;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2293,19 +2680,22 @@ void UUserWidget::SetAnchorsInViewport(const struct FAnchors& Anchors)
 
 void UUserWidget::SetAlignmentInViewport(const struct FVector2D& Alignment)
 {
-	static auto Func = Class->GetFunction("UserWidget", "SetAlignmentInViewport");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_SetAlignmentInViewport_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "SetAlignmentInViewport");
+
+	Params::UUserWidget_SetAlignmentInViewport_Params Parms{};
 
 	Parms.Alignment = Alignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2317,19 +2707,22 @@ void UUserWidget::SetAlignmentInViewport(const struct FVector2D& Alignment)
 
 void UUserWidget::ReverseAnimation(class UWidgetAnimation* InAnimation)
 {
-	static auto Func = Class->GetFunction("UserWidget", "ReverseAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_ReverseAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "ReverseAnimation");
+
+	Params::UUserWidget_ReverseAnimation_Params Parms{};
 
 	Parms.InAnimation = InAnimation;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2340,18 +2733,20 @@ void UUserWidget::ReverseAnimation(class UWidgetAnimation* InAnimation)
 
 void UUserWidget::RemoveFromViewport()
 {
-	static auto Func = Class->GetFunction("UserWidget", "RemoveFromViewport");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_RemoveFromViewport_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "RemoveFromViewport");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2362,18 +2757,20 @@ void UUserWidget::RemoveFromViewport()
 
 void UUserWidget::RegisterInputComponent()
 {
-	static auto Func = Class->GetFunction("UserWidget", "RegisterInputComponent");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_RegisterInputComponent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "RegisterInputComponent");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2385,9 +2782,12 @@ void UUserWidget::RegisterInputComponent()
 
 void UUserWidget::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("UserWidget", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "PreConstruct");
+
+	Params::UUserWidget_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -2403,19 +2803,22 @@ void UUserWidget::PreConstruct(bool IsDesignTime)
 
 void UUserWidget::PlaySound(class USoundBase* SoundToPlay)
 {
-	static auto Func = Class->GetFunction("UserWidget", "PlaySound");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_PlaySound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "PlaySound");
+
+	Params::UUserWidget_PlaySound_Params Parms{};
 
 	Parms.SoundToPlay = SoundToPlay;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2433,9 +2836,12 @@ void UUserWidget::PlaySound(class USoundBase* SoundToPlay)
 
 class UUMGSequencePlayer* UUserWidget::PlayAnimationTimeRange(class UWidgetAnimation* InAnimation, float StartAtTime, float EndAtTime, int32 NumLoopsToPlay, enum class EUMGSequencePlayMode PlayMode, float PlaybackSpeed)
 {
-	static auto Func = Class->GetFunction("UserWidget", "PlayAnimationTimeRange");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_PlayAnimationTimeRange_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "PlayAnimationTimeRange");
+
+	Params::UUserWidget_PlayAnimationTimeRange_Params Parms{};
 
 	Parms.InAnimation = InAnimation;
 	Parms.StartAtTime = StartAtTime;
@@ -2444,13 +2850,13 @@ class UUMGSequencePlayer* UUserWidget::PlayAnimationTimeRange(class UWidgetAnima
 	Parms.PlayMode = PlayMode;
 	Parms.PlaybackSpeed = PlaybackSpeed;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2466,20 +2872,23 @@ class UUMGSequencePlayer* UUserWidget::PlayAnimationTimeRange(class UWidgetAnima
 
 class UUMGSequencePlayer* UUserWidget::PlayAnimationReverse(class UWidgetAnimation* InAnimation, float PlaybackSpeed)
 {
-	static auto Func = Class->GetFunction("UserWidget", "PlayAnimationReverse");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_PlayAnimationReverse_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "PlayAnimationReverse");
+
+	Params::UUserWidget_PlayAnimationReverse_Params Parms{};
 
 	Parms.InAnimation = InAnimation;
 	Parms.PlaybackSpeed = PlaybackSpeed;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2495,20 +2904,23 @@ class UUMGSequencePlayer* UUserWidget::PlayAnimationReverse(class UWidgetAnimati
 
 class UUMGSequencePlayer* UUserWidget::PlayAnimationForward(class UWidgetAnimation* InAnimation, float PlaybackSpeed)
 {
-	static auto Func = Class->GetFunction("UserWidget", "PlayAnimationForward");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_PlayAnimationForward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "PlayAnimationForward");
+
+	Params::UUserWidget_PlayAnimationForward_Params Parms{};
 
 	Parms.InAnimation = InAnimation;
 	Parms.PlaybackSpeed = PlaybackSpeed;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2527,9 +2939,12 @@ class UUMGSequencePlayer* UUserWidget::PlayAnimationForward(class UWidgetAnimati
 
 class UUMGSequencePlayer* UUserWidget::PlayAnimation(class UWidgetAnimation* InAnimation, float StartAtTime, int32 NumLoopsToPlay, enum class EUMGSequencePlayMode PlayMode, float PlaybackSpeed)
 {
-	static auto Func = Class->GetFunction("UserWidget", "PlayAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_PlayAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "PlayAnimation");
+
+	Params::UUserWidget_PlayAnimation_Params Parms{};
 
 	Parms.InAnimation = InAnimation;
 	Parms.StartAtTime = StartAtTime;
@@ -2537,13 +2952,13 @@ class UUMGSequencePlayer* UUserWidget::PlayAnimation(class UWidgetAnimation* InA
 	Parms.PlayMode = PlayMode;
 	Parms.PlaybackSpeed = PlaybackSpeed;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2558,19 +2973,22 @@ class UUMGSequencePlayer* UUserWidget::PlayAnimation(class UWidgetAnimation* InA
 
 float UUserWidget::PauseAnimation(class UWidgetAnimation* InAnimation)
 {
-	static auto Func = Class->GetFunction("UserWidget", "PauseAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_PauseAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "PauseAnimation");
+
+	Params::UUserWidget_PauseAnimation_Params Parms{};
 
 	Parms.InAnimation = InAnimation;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2586,9 +3004,12 @@ float UUserWidget::PauseAnimation(class UWidgetAnimation* InAnimation)
 
 struct FEventReply UUserWidget::OnTouchStarted(const struct FGeometry& MyGeometry, struct FPointerEvent& InTouchEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnTouchStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnTouchStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnTouchStarted");
+
+	Params::UUserWidget_OnTouchStarted_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InTouchEvent = InTouchEvent;
@@ -2609,9 +3030,12 @@ struct FEventReply UUserWidget::OnTouchStarted(const struct FGeometry& MyGeometr
 
 struct FEventReply UUserWidget::OnTouchMoved(const struct FGeometry& MyGeometry, struct FPointerEvent& InTouchEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnTouchMoved");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnTouchMoved_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnTouchMoved");
+
+	Params::UUserWidget_OnTouchMoved_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InTouchEvent = InTouchEvent;
@@ -2632,9 +3056,12 @@ struct FEventReply UUserWidget::OnTouchMoved(const struct FGeometry& MyGeometry,
 
 struct FEventReply UUserWidget::OnTouchGesture(const struct FGeometry& MyGeometry, struct FPointerEvent& GestureEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnTouchGesture");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnTouchGesture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnTouchGesture");
+
+	Params::UUserWidget_OnTouchGesture_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.GestureEvent = GestureEvent;
@@ -2655,9 +3082,12 @@ struct FEventReply UUserWidget::OnTouchGesture(const struct FGeometry& MyGeometr
 
 struct FEventReply UUserWidget::OnTouchForceChanged(const struct FGeometry& MyGeometry, struct FPointerEvent& InTouchEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnTouchForceChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnTouchForceChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnTouchForceChanged");
+
+	Params::UUserWidget_OnTouchForceChanged_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InTouchEvent = InTouchEvent;
@@ -2678,9 +3108,12 @@ struct FEventReply UUserWidget::OnTouchForceChanged(const struct FGeometry& MyGe
 
 struct FEventReply UUserWidget::OnTouchEnded(const struct FGeometry& MyGeometry, struct FPointerEvent& InTouchEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnTouchEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnTouchEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnTouchEnded");
+
+	Params::UUserWidget_OnTouchEnded_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InTouchEvent = InTouchEvent;
@@ -2699,9 +3132,12 @@ struct FEventReply UUserWidget::OnTouchEnded(const struct FGeometry& MyGeometry,
 
 void UUserWidget::OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnRemovedFromFocusPath");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnRemovedFromFocusPath_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnRemovedFromFocusPath");
+
+	Params::UUserWidget_OnRemovedFromFocusPath_Params Parms{};
 
 	Parms.InFocusEvent = InFocusEvent;
 
@@ -2719,9 +3155,12 @@ void UUserWidget::OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent)
 
 struct FEventReply UUserWidget::OnPreviewMouseButtonDown(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnPreviewMouseButtonDown");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnPreviewMouseButtonDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnPreviewMouseButtonDown");
+
+	Params::UUserWidget_OnPreviewMouseButtonDown_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -2742,9 +3181,12 @@ struct FEventReply UUserWidget::OnPreviewMouseButtonDown(const struct FGeometry&
 
 struct FEventReply UUserWidget::OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnPreviewKeyDown");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnPreviewKeyDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnPreviewKeyDown");
+
+	Params::UUserWidget_OnPreviewKeyDown_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InKeyEvent = InKeyEvent;
@@ -2763,9 +3205,12 @@ struct FEventReply UUserWidget::OnPreviewKeyDown(const struct FGeometry& MyGeome
 
 void UUserWidget::OnPaint(struct FPaintContext& Context)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnPaint");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnPaint_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnPaint");
+
+	Params::UUserWidget_OnPaint_Params Parms{};
 
 	Parms.Context = Context;
 
@@ -2783,9 +3228,12 @@ void UUserWidget::OnPaint(struct FPaintContext& Context)
 
 struct FEventReply UUserWidget::OnMouseWheel(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnMouseWheel");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnMouseWheel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnMouseWheel");
+
+	Params::UUserWidget_OnMouseWheel_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -2806,9 +3254,12 @@ struct FEventReply UUserWidget::OnMouseWheel(const struct FGeometry& MyGeometry,
 
 struct FEventReply UUserWidget::OnMouseMove(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnMouseMove");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnMouseMove_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnMouseMove");
+
+	Params::UUserWidget_OnMouseMove_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -2827,9 +3278,12 @@ struct FEventReply UUserWidget::OnMouseMove(const struct FGeometry& MyGeometry, 
 
 void UUserWidget::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnMouseLeave");
+
+	Params::UUserWidget_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -2846,9 +3300,12 @@ void UUserWidget::OnMouseLeave(struct FPointerEvent& MouseEvent)
 
 void UUserWidget::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnMouseEnter");
+
+	Params::UUserWidget_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -2864,12 +3321,14 @@ void UUserWidget::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPoint
 
 void UUserWidget::OnMouseCaptureLost()
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnMouseCaptureLost");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnMouseCaptureLost_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnMouseCaptureLost");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -2883,9 +3342,12 @@ void UUserWidget::OnMouseCaptureLost()
 
 struct FEventReply UUserWidget::OnMouseButtonUp(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnMouseButtonUp");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnMouseButtonUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnMouseButtonUp");
+
+	Params::UUserWidget_OnMouseButtonUp_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -2906,9 +3368,12 @@ struct FEventReply UUserWidget::OnMouseButtonUp(const struct FGeometry& MyGeomet
 
 struct FEventReply UUserWidget::OnMouseButtonDown(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnMouseButtonDown");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnMouseButtonDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnMouseButtonDown");
+
+	Params::UUserWidget_OnMouseButtonDown_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -2929,9 +3394,12 @@ struct FEventReply UUserWidget::OnMouseButtonDown(const struct FGeometry& MyGeom
 
 struct FEventReply UUserWidget::OnMouseButtonDoubleClick(const struct FGeometry& InMyGeometry, struct FPointerEvent& InMouseEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnMouseButtonDoubleClick");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnMouseButtonDoubleClick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnMouseButtonDoubleClick");
+
+	Params::UUserWidget_OnMouseButtonDoubleClick_Params Parms{};
 
 	Parms.InMyGeometry = InMyGeometry;
 	Parms.InMouseEvent = InMouseEvent;
@@ -2952,9 +3420,12 @@ struct FEventReply UUserWidget::OnMouseButtonDoubleClick(const struct FGeometry&
 
 struct FEventReply UUserWidget::OnMotionDetected(const struct FGeometry& MyGeometry, const struct FMotionEvent& InMotionEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnMotionDetected");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnMotionDetected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnMotionDetected");
+
+	Params::UUserWidget_OnMotionDetected_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InMotionEvent = InMotionEvent;
@@ -2975,9 +3446,12 @@ struct FEventReply UUserWidget::OnMotionDetected(const struct FGeometry& MyGeome
 
 struct FEventReply UUserWidget::OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnKeyUp");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnKeyUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnKeyUp");
+
+	Params::UUserWidget_OnKeyUp_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InKeyEvent = InKeyEvent;
@@ -2998,9 +3472,12 @@ struct FEventReply UUserWidget::OnKeyUp(const struct FGeometry& MyGeometry, cons
 
 struct FEventReply UUserWidget::OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnKeyDown");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnKeyDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnKeyDown");
+
+	Params::UUserWidget_OnKeyDown_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InKeyEvent = InKeyEvent;
@@ -3021,9 +3498,12 @@ struct FEventReply UUserWidget::OnKeyDown(const struct FGeometry& MyGeometry, co
 
 struct FEventReply UUserWidget::OnKeyChar(const struct FGeometry& MyGeometry, const struct FCharacterEvent& InCharacterEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnKeyChar");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnKeyChar_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnKeyChar");
+
+	Params::UUserWidget_OnKeyChar_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InCharacterEvent = InCharacterEvent;
@@ -3041,12 +3521,14 @@ struct FEventReply UUserWidget::OnKeyChar(const struct FGeometry& MyGeometry, co
 
 void UUserWidget::OnInitialized()
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -3060,9 +3542,12 @@ void UUserWidget::OnInitialized()
 
 struct FEventReply UUserWidget::OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnFocusReceived");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnFocusReceived_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnFocusReceived");
+
+	Params::UUserWidget_OnFocusReceived_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InFocusEvent = InFocusEvent;
@@ -3081,9 +3566,12 @@ struct FEventReply UUserWidget::OnFocusReceived(const struct FGeometry& MyGeomet
 
 void UUserWidget::OnFocusLost(const struct FFocusEvent& InFocusEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnFocusLost");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnFocusLost_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnFocusLost");
+
+	Params::UUserWidget_OnFocusLost_Params Parms{};
 
 	Parms.InFocusEvent = InFocusEvent;
 
@@ -3102,9 +3590,12 @@ void UUserWidget::OnFocusLost(const struct FFocusEvent& InFocusEvent)
 
 bool UUserWidget::OnDrop(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnDrop");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnDrop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnDrop");
+
+	Params::UUserWidget_OnDrop_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.PointerEvent = PointerEvent;
@@ -3127,9 +3618,12 @@ bool UUserWidget::OnDrop(const struct FGeometry& MyGeometry, const struct FPoint
 
 bool UUserWidget::OnDragOver(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnDragOver");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnDragOver_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnDragOver");
+
+	Params::UUserWidget_OnDragOver_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.PointerEvent = PointerEvent;
@@ -3150,9 +3644,12 @@ bool UUserWidget::OnDragOver(const struct FGeometry& MyGeometry, const struct FP
 
 void UUserWidget::OnDragLeave(const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnDragLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnDragLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnDragLeave");
+
+	Params::UUserWidget_OnDragLeave_Params Parms{};
 
 	Parms.PointerEvent = PointerEvent;
 	Parms.Operation = Operation;
@@ -3171,9 +3668,12 @@ void UUserWidget::OnDragLeave(const struct FPointerEvent& PointerEvent, class UD
 
 void UUserWidget::OnDragEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnDragEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnDragEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnDragEnter");
+
+	Params::UUserWidget_OnDragEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.PointerEvent = PointerEvent;
@@ -3193,9 +3693,12 @@ void UUserWidget::OnDragEnter(const struct FGeometry& MyGeometry, const struct F
 
 void UUserWidget::OnDragDetected(const struct FGeometry& MyGeometry, struct FPointerEvent& PointerEvent, class UDragDropOperation** Operation)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnDragDetected");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnDragDetected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnDragDetected");
+
+	Params::UUserWidget_OnDragDetected_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.PointerEvent = PointerEvent;
@@ -3216,9 +3719,12 @@ void UUserWidget::OnDragDetected(const struct FGeometry& MyGeometry, struct FPoi
 
 void UUserWidget::OnDragCancelled(struct FPointerEvent& PointerEvent, class UDragDropOperation* Operation)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnDragCancelled");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnDragCancelled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnDragCancelled");
+
+	Params::UUserWidget_OnDragCancelled_Params Parms{};
 
 	Parms.PointerEvent = PointerEvent;
 	Parms.Operation = Operation;
@@ -3235,19 +3741,22 @@ void UUserWidget::OnDragCancelled(struct FPointerEvent& PointerEvent, class UDra
 
 void UUserWidget::OnAnimationStarted(class UWidgetAnimation* Animation)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnAnimationStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnAnimationStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnAnimationStarted");
+
+	Params::UUserWidget_OnAnimationStarted_Params Parms{};
 
 	Parms.Animation = Animation;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -3259,19 +3768,22 @@ void UUserWidget::OnAnimationStarted(class UWidgetAnimation* Animation)
 
 void UUserWidget::OnAnimationFinished(class UWidgetAnimation* Animation)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnAnimationFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnAnimationFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnAnimationFinished");
+
+	Params::UUserWidget_OnAnimationFinished_Params Parms{};
 
 	Parms.Animation = Animation;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -3285,9 +3797,12 @@ void UUserWidget::OnAnimationFinished(class UWidgetAnimation* Animation)
 
 struct FEventReply UUserWidget::OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnAnalogValueChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnAnalogValueChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnAnalogValueChanged");
+
+	Params::UUserWidget_OnAnalogValueChanged_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InAnalogInputEvent = InAnalogInputEvent;
@@ -3306,9 +3821,12 @@ struct FEventReply UUserWidget::OnAnalogValueChanged(const struct FGeometry& MyG
 
 void UUserWidget::OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent)
 {
-	static auto Func = Class->GetFunction("UserWidget", "OnAddedToFocusPath");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_OnAddedToFocusPath_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "OnAddedToFocusPath");
+
+	Params::UUserWidget_OnAddedToFocusPath_Params Parms{};
 
 	Parms.InFocusEvent = InFocusEvent;
 
@@ -3327,22 +3845,25 @@ void UUserWidget::OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent)
 
 void UUserWidget::ListenForInputAction(class FName ActionName, enum class EInputEvent EventType, bool bConsume, UDelegateProperty_ Callback)
 {
-	static auto Func = Class->GetFunction("UserWidget", "ListenForInputAction");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_ListenForInputAction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "ListenForInputAction");
+
+	Params::UUserWidget_ListenForInputAction_Params Parms{};
 
 	Parms.ActionName = ActionName;
 	Parms.EventType = EventType;
 	Parms.bConsume = bConsume;
 	Parms.Callback = Callback;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -3354,18 +3875,21 @@ void UUserWidget::ListenForInputAction(class FName ActionName, enum class EInput
 
 bool UUserWidget::IsPlayingAnimation()
 {
-	static auto Func = Class->GetFunction("UserWidget", "IsPlayingAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_IsPlayingAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "IsPlayingAnimation");
+
+	Params::UUserWidget_IsPlayingAnimation_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -3380,19 +3904,22 @@ bool UUserWidget::IsPlayingAnimation()
 
 bool UUserWidget::IsListeningForInputAction(class FName ActionName)
 {
-	static auto Func = Class->GetFunction("UserWidget", "IsListeningForInputAction");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_IsListeningForInputAction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "IsListeningForInputAction");
+
+	Params::UUserWidget_IsListeningForInputAction_Params Parms{};
 
 	Parms.ActionName = ActionName;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -3406,18 +3933,21 @@ bool UUserWidget::IsListeningForInputAction(class FName ActionName)
 
 bool UUserWidget::IsInViewport()
 {
-	static auto Func = Class->GetFunction("UserWidget", "IsInViewport");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_IsInViewport_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "IsInViewport");
+
+	Params::UUserWidget_IsInViewport_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -3431,9 +3961,12 @@ bool UUserWidget::IsInViewport()
 
 bool UUserWidget::IsInteractable()
 {
-	static auto Func = Class->GetFunction("UserWidget", "IsInteractable");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_IsInteractable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "IsInteractable");
+
+	Params::UUserWidget_IsInteractable_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -3450,18 +3983,21 @@ bool UUserWidget::IsInteractable()
 
 bool UUserWidget::IsAnyAnimationPlaying()
 {
-	static auto Func = Class->GetFunction("UserWidget", "IsAnyAnimationPlaying");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_IsAnyAnimationPlaying_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "IsAnyAnimationPlaying");
+
+	Params::UUserWidget_IsAnyAnimationPlaying_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -3476,19 +4012,22 @@ bool UUserWidget::IsAnyAnimationPlaying()
 
 bool UUserWidget::IsAnimationPlayingForward(class UWidgetAnimation* InAnimation)
 {
-	static auto Func = Class->GetFunction("UserWidget", "IsAnimationPlayingForward");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_IsAnimationPlayingForward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "IsAnimationPlayingForward");
+
+	Params::UUserWidget_IsAnimationPlayingForward_Params Parms{};
 
 	Parms.InAnimation = InAnimation;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -3503,19 +4042,22 @@ bool UUserWidget::IsAnimationPlayingForward(class UWidgetAnimation* InAnimation)
 
 bool UUserWidget::IsAnimationPlaying(class UWidgetAnimation* InAnimation)
 {
-	static auto Func = Class->GetFunction("UserWidget", "IsAnimationPlaying");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_IsAnimationPlaying_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "IsAnimationPlaying");
+
+	Params::UUserWidget_IsAnimationPlaying_Params Parms{};
 
 	Parms.InAnimation = InAnimation;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -3529,18 +4071,21 @@ bool UUserWidget::IsAnimationPlaying(class UWidgetAnimation* InAnimation)
 
 class APawn* UUserWidget::GetOwningPlayerPawn()
 {
-	static auto Func = Class->GetFunction("UserWidget", "GetOwningPlayerPawn");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_GetOwningPlayerPawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "GetOwningPlayerPawn");
+
+	Params::UUserWidget_GetOwningPlayerPawn_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -3554,18 +4099,21 @@ class APawn* UUserWidget::GetOwningPlayerPawn()
 
 bool UUserWidget::GetIsVisible()
 {
-	static auto Func = Class->GetFunction("UserWidget", "GetIsVisible");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_GetIsVisible_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "GetIsVisible");
+
+	Params::UUserWidget_GetIsVisible_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -3580,19 +4128,22 @@ bool UUserWidget::GetIsVisible()
 
 float UUserWidget::GetAnimationCurrentTime(class UWidgetAnimation* InAnimation)
 {
-	static auto Func = Class->GetFunction("UserWidget", "GetAnimationCurrentTime");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_GetAnimationCurrentTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "GetAnimationCurrentTime");
+
+	Params::UUserWidget_GetAnimationCurrentTime_Params Parms{};
 
 	Parms.InAnimation = InAnimation;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -3606,18 +4157,21 @@ float UUserWidget::GetAnimationCurrentTime(class UWidgetAnimation* InAnimation)
 
 struct FAnchors UUserWidget::GetAnchorsInViewport()
 {
-	static auto Func = Class->GetFunction("UserWidget", "GetAnchorsInViewport");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_GetAnchorsInViewport_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "GetAnchorsInViewport");
+
+	Params::UUserWidget_GetAnchorsInViewport_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -3631,18 +4185,21 @@ struct FAnchors UUserWidget::GetAnchorsInViewport()
 
 struct FVector2D UUserWidget::GetAlignmentInViewport()
 {
-	static auto Func = Class->GetFunction("UserWidget", "GetAlignmentInViewport");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_GetAlignmentInViewport_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "GetAlignmentInViewport");
+
+	Params::UUserWidget_GetAlignmentInViewport_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -3655,12 +4212,14 @@ struct FVector2D UUserWidget::GetAlignmentInViewport()
 
 void UUserWidget::Destruct()
 {
-	static auto Func = Class->GetFunction("UserWidget", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -3671,12 +4230,14 @@ void UUserWidget::Destruct()
 
 void UUserWidget::Construct()
 {
-	static auto Func = Class->GetFunction("UserWidget", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -3687,18 +4248,20 @@ void UUserWidget::Construct()
 
 void UUserWidget::CancelLatentActions()
 {
-	static auto Func = Class->GetFunction("UserWidget", "CancelLatentActions");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_CancelLatentActions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "CancelLatentActions");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -3711,20 +4274,23 @@ void UUserWidget::CancelLatentActions()
 
 void UUserWidget::BindToAnimationStarted(class UWidgetAnimation* Animation, UDelegateProperty_ Delegate)
 {
-	static auto Func = Class->GetFunction("UserWidget", "BindToAnimationStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_BindToAnimationStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "BindToAnimationStarted");
+
+	Params::UUserWidget_BindToAnimationStarted_Params Parms{};
 
 	Parms.Animation = Animation;
 	Parms.Delegate = Delegate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -3737,20 +4303,23 @@ void UUserWidget::BindToAnimationStarted(class UWidgetAnimation* Animation, UDel
 
 void UUserWidget::BindToAnimationFinished(class UWidgetAnimation* Animation, UDelegateProperty_ Delegate)
 {
-	static auto Func = Class->GetFunction("UserWidget", "BindToAnimationFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_BindToAnimationFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "BindToAnimationFinished");
+
+	Params::UUserWidget_BindToAnimationFinished_Params Parms{};
 
 	Parms.Animation = Animation;
 	Parms.Delegate = Delegate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -3765,22 +4334,25 @@ void UUserWidget::BindToAnimationFinished(class UWidgetAnimation* Animation, UDe
 
 void UUserWidget::BindToAnimationEvent(class UWidgetAnimation* Animation, UDelegateProperty_ Delegate, enum class EWidgetAnimationEvent AnimationEvent, class FName UserTag)
 {
-	static auto Func = Class->GetFunction("UserWidget", "BindToAnimationEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_BindToAnimationEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "BindToAnimationEvent");
+
+	Params::UUserWidget_BindToAnimationEvent_Params Parms{};
 
 	Parms.Animation = Animation;
 	Parms.Delegate = Delegate;
 	Parms.AnimationEvent = AnimationEvent;
 	Parms.UserTag = UserTag;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -3792,19 +4364,22 @@ void UUserWidget::BindToAnimationEvent(class UWidgetAnimation* Animation, UDeleg
 
 void UUserWidget::AddToViewport(int32 ZOrder)
 {
-	static auto Func = Class->GetFunction("UserWidget", "AddToViewport");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_AddToViewport_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "AddToViewport");
+
+	Params::UUserWidget_AddToViewport_Params Parms{};
 
 	Parms.ZOrder = ZOrder;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -3817,22 +4392,53 @@ void UUserWidget::AddToViewport(int32 ZOrder)
 
 bool UUserWidget::AddToPlayerScreen(int32 ZOrder)
 {
-	static auto Func = Class->GetFunction("UserWidget", "AddToPlayerScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserWidget_AddToPlayerScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserWidget", "AddToPlayerScreen");
+
+	Params::UUserWidget_AddToPlayerScreen_Params Parms{};
 
 	Parms.ZOrder = ZOrder;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.PanelWidget
+// (None)
+
+class UClass* UPanelWidget::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PanelWidget");
+
+	return Clss;
+}
+
+
+// PanelWidget UMG.Default__PanelWidget
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPanelWidget* UPanelWidget::GetDefaultObj()
+{
+	static class UPanelWidget* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPanelWidget*>(UPanelWidget::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -3844,19 +4450,22 @@ bool UUserWidget::AddToPlayerScreen(int32 ZOrder)
 
 bool UPanelWidget::RemoveChildAt(int32 Index)
 {
-	static auto Func = Class->GetFunction("PanelWidget", "RemoveChildAt");
+	static class UFunction* Func = nullptr;
 
-	Params::UPanelWidget_RemoveChildAt_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PanelWidget", "RemoveChildAt");
+
+	Params::UPanelWidget_RemoveChildAt_Params Parms{};
 
 	Parms.Index = Index;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -3871,19 +4480,22 @@ bool UPanelWidget::RemoveChildAt(int32 Index)
 
 bool UPanelWidget::RemoveChild(class UWidget* Content)
 {
-	static auto Func = Class->GetFunction("PanelWidget", "RemoveChild");
+	static class UFunction* Func = nullptr;
 
-	Params::UPanelWidget_RemoveChild_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PanelWidget", "RemoveChild");
+
+	Params::UPanelWidget_RemoveChild_Params Parms{};
 
 	Parms.Content = Content;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -3898,19 +4510,22 @@ bool UPanelWidget::RemoveChild(class UWidget* Content)
 
 bool UPanelWidget::HasChild(class UWidget* Content)
 {
-	static auto Func = Class->GetFunction("PanelWidget", "HasChild");
+	static class UFunction* Func = nullptr;
 
-	Params::UPanelWidget_HasChild_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PanelWidget", "HasChild");
+
+	Params::UPanelWidget_HasChild_Params Parms{};
 
 	Parms.Content = Content;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -3924,18 +4539,21 @@ bool UPanelWidget::HasChild(class UWidget* Content)
 
 bool UPanelWidget::HasAnyChildren()
 {
-	static auto Func = Class->GetFunction("PanelWidget", "HasAnyChildren");
+	static class UFunction* Func = nullptr;
 
-	Params::UPanelWidget_HasAnyChildren_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PanelWidget", "HasAnyChildren");
+
+	Params::UPanelWidget_HasAnyChildren_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -3949,18 +4567,21 @@ bool UPanelWidget::HasAnyChildren()
 
 int32 UPanelWidget::GetChildrenCount()
 {
-	static auto Func = Class->GetFunction("PanelWidget", "GetChildrenCount");
+	static class UFunction* Func = nullptr;
 
-	Params::UPanelWidget_GetChildrenCount_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PanelWidget", "GetChildrenCount");
+
+	Params::UPanelWidget_GetChildrenCount_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -3975,19 +4596,22 @@ int32 UPanelWidget::GetChildrenCount()
 
 int32 UPanelWidget::GetChildIndex(class UWidget* Content)
 {
-	static auto Func = Class->GetFunction("PanelWidget", "GetChildIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UPanelWidget_GetChildIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PanelWidget", "GetChildIndex");
+
+	Params::UPanelWidget_GetChildIndex_Params Parms{};
 
 	Parms.Content = Content;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -4002,19 +4626,22 @@ int32 UPanelWidget::GetChildIndex(class UWidget* Content)
 
 class UWidget* UPanelWidget::GetChildAt(int32 Index)
 {
-	static auto Func = Class->GetFunction("PanelWidget", "GetChildAt");
+	static class UFunction* Func = nullptr;
 
-	Params::UPanelWidget_GetChildAt_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PanelWidget", "GetChildAt");
+
+	Params::UPanelWidget_GetChildAt_Params Parms{};
 
 	Parms.Index = Index;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -4028,18 +4655,21 @@ class UWidget* UPanelWidget::GetChildAt(int32 Index)
 
 TArray<class UWidget*> UPanelWidget::GetAllChildren()
 {
-	static auto Func = Class->GetFunction("PanelWidget", "GetAllChildren");
+	static class UFunction* Func = nullptr;
 
-	Params::UPanelWidget_GetAllChildren_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PanelWidget", "GetAllChildren");
+
+	Params::UPanelWidget_GetAllChildren_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -4052,18 +4682,20 @@ TArray<class UWidget*> UPanelWidget::GetAllChildren()
 
 void UPanelWidget::ClearChildren()
 {
-	static auto Func = Class->GetFunction("PanelWidget", "ClearChildren");
+	static class UFunction* Func = nullptr;
 
-	Params::UPanelWidget_ClearChildren_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PanelWidget", "ClearChildren");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4076,22 +4708,53 @@ void UPanelWidget::ClearChildren()
 
 class UPanelSlot* UPanelWidget::AddChild(class UWidget* Content)
 {
-	static auto Func = Class->GetFunction("PanelWidget", "AddChild");
+	static class UFunction* Func = nullptr;
 
-	Params::UPanelWidget_AddChild_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PanelWidget", "AddChild");
+
+	Params::UPanelWidget_AddChild_Params Parms{};
 
 	Parms.Content = Content;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.WidgetSwitcher
+// (None)
+
+class UClass* UWidgetSwitcher::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WidgetSwitcher");
+
+	return Clss;
+}
+
+
+// WidgetSwitcher UMG.Default__WidgetSwitcher
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWidgetSwitcher* UWidgetSwitcher::GetDefaultObj()
+{
+	static class UWidgetSwitcher* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWidgetSwitcher*>(UWidgetSwitcher::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -4102,19 +4765,22 @@ class UPanelSlot* UPanelWidget::AddChild(class UWidget* Content)
 
 void UWidgetSwitcher::SetActiveWidgetIndex(int32 Index)
 {
-	static auto Func = Class->GetFunction("WidgetSwitcher", "SetActiveWidgetIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetSwitcher_SetActiveWidgetIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetSwitcher", "SetActiveWidgetIndex");
+
+	Params::UWidgetSwitcher_SetActiveWidgetIndex_Params Parms{};
 
 	Parms.Index = Index;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4126,19 +4792,22 @@ void UWidgetSwitcher::SetActiveWidgetIndex(int32 Index)
 
 void UWidgetSwitcher::SetActiveWidget(class UWidget* Widget)
 {
-	static auto Func = Class->GetFunction("WidgetSwitcher", "SetActiveWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetSwitcher_SetActiveWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetSwitcher", "SetActiveWidget");
+
+	Params::UWidgetSwitcher_SetActiveWidget_Params Parms{};
 
 	Parms.Widget = Widget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4151,19 +4820,22 @@ void UWidgetSwitcher::SetActiveWidget(class UWidget* Widget)
 
 class UWidget* UWidgetSwitcher::GetWidgetAtIndex(int32 Index)
 {
-	static auto Func = Class->GetFunction("WidgetSwitcher", "GetWidgetAtIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetSwitcher_GetWidgetAtIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetSwitcher", "GetWidgetAtIndex");
+
+	Params::UWidgetSwitcher_GetWidgetAtIndex_Params Parms{};
 
 	Parms.Index = Index;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -4177,18 +4849,21 @@ class UWidget* UWidgetSwitcher::GetWidgetAtIndex(int32 Index)
 
 int32 UWidgetSwitcher::GetNumWidgets()
 {
-	static auto Func = Class->GetFunction("WidgetSwitcher", "GetNumWidgets");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetSwitcher_GetNumWidgets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetSwitcher", "GetNumWidgets");
+
+	Params::UWidgetSwitcher_GetNumWidgets_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -4202,18 +4877,21 @@ int32 UWidgetSwitcher::GetNumWidgets()
 
 int32 UWidgetSwitcher::GetActiveWidgetIndex()
 {
-	static auto Func = Class->GetFunction("WidgetSwitcher", "GetActiveWidgetIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetSwitcher_GetActiveWidgetIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetSwitcher", "GetActiveWidgetIndex");
+
+	Params::UWidgetSwitcher_GetActiveWidgetIndex_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -4227,21 +4905,52 @@ int32 UWidgetSwitcher::GetActiveWidgetIndex()
 
 class UWidget* UWidgetSwitcher::GetActiveWidget()
 {
-	static auto Func = Class->GetFunction("WidgetSwitcher", "GetActiveWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetSwitcher_GetActiveWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetSwitcher", "GetActiveWidget");
+
+	Params::UWidgetSwitcher_GetActiveWidget_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.ContentWidget
+// (None)
+
+class UClass* UContentWidget::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ContentWidget");
+
+	return Clss;
+}
+
+
+// ContentWidget UMG.Default__ContentWidget
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UContentWidget* UContentWidget::GetDefaultObj()
+{
+	static class UContentWidget* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UContentWidget*>(UContentWidget::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -4253,19 +4962,22 @@ class UWidget* UWidgetSwitcher::GetActiveWidget()
 
 class UPanelSlot* UContentWidget::SetContent(class UWidget* Content)
 {
-	static auto Func = Class->GetFunction("ContentWidget", "SetContent");
+	static class UFunction* Func = nullptr;
 
-	Params::UContentWidget_SetContent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ContentWidget", "SetContent");
+
+	Params::UContentWidget_SetContent_Params Parms{};
 
 	Parms.Content = Content;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -4279,18 +4991,21 @@ class UPanelSlot* UContentWidget::SetContent(class UWidget* Content)
 
 class UPanelSlot* UContentWidget::GetContentSlot()
 {
-	static auto Func = Class->GetFunction("ContentWidget", "GetContentSlot");
+	static class UFunction* Func = nullptr;
 
-	Params::UContentWidget_GetContentSlot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ContentWidget", "GetContentSlot");
+
+	Params::UContentWidget_GetContentSlot_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -4304,21 +5019,52 @@ class UPanelSlot* UContentWidget::GetContentSlot()
 
 class UWidget* UContentWidget::GetContent()
 {
-	static auto Func = Class->GetFunction("ContentWidget", "GetContent");
+	static class UFunction* Func = nullptr;
 
-	Params::UContentWidget_GetContent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ContentWidget", "GetContent");
+
+	Params::UContentWidget_GetContent_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.Border
+// (None)
+
+class UClass* UBorder::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Border");
+
+	return Clss;
+}
+
+
+// Border UMG.Default__Border
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UBorder* UBorder::GetDefaultObj()
+{
+	static class UBorder* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorder*>(UBorder::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -4329,19 +5075,22 @@ class UWidget* UContentWidget::GetContent()
 
 void UBorder::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("Border", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UBorder_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Border", "SetVerticalAlignment");
+
+	Params::UBorder_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4353,19 +5102,22 @@ void UBorder::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlign
 
 void UBorder::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("Border", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UBorder_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Border", "SetPadding");
+
+	Params::UBorder_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4377,19 +5129,22 @@ void UBorder::SetPadding(const struct FMargin& InPadding)
 
 void UBorder::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("Border", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UBorder_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Border", "SetHorizontalAlignment");
+
+	Params::UBorder_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4401,19 +5156,22 @@ void UBorder::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizonta
 
 void UBorder::SetDesiredSizeScale(const struct FVector2D& InScale)
 {
-	static auto Func = Class->GetFunction("Border", "SetDesiredSizeScale");
+	static class UFunction* Func = nullptr;
 
-	Params::UBorder_SetDesiredSizeScale_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Border", "SetDesiredSizeScale");
+
+	Params::UBorder_SetDesiredSizeScale_Params Parms{};
 
 	Parms.InScale = InScale;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4425,19 +5183,22 @@ void UBorder::SetDesiredSizeScale(const struct FVector2D& InScale)
 
 void UBorder::SetContentColorAndOpacity(const struct FLinearColor& InContentColorAndOpacity)
 {
-	static auto Func = Class->GetFunction("Border", "SetContentColorAndOpacity");
+	static class UFunction* Func = nullptr;
 
-	Params::UBorder_SetContentColorAndOpacity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Border", "SetContentColorAndOpacity");
+
+	Params::UBorder_SetContentColorAndOpacity_Params Parms{};
 
 	Parms.InContentColorAndOpacity = InContentColorAndOpacity;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4449,19 +5210,22 @@ void UBorder::SetContentColorAndOpacity(const struct FLinearColor& InContentColo
 
 void UBorder::SetBrushFromTexture(class UTexture2D* Texture)
 {
-	static auto Func = Class->GetFunction("Border", "SetBrushFromTexture");
+	static class UFunction* Func = nullptr;
 
-	Params::UBorder_SetBrushFromTexture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Border", "SetBrushFromTexture");
+
+	Params::UBorder_SetBrushFromTexture_Params Parms{};
 
 	Parms.Texture = Texture;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4473,19 +5237,22 @@ void UBorder::SetBrushFromTexture(class UTexture2D* Texture)
 
 void UBorder::SetBrushFromMaterial(class UMaterialInterface* Material)
 {
-	static auto Func = Class->GetFunction("Border", "SetBrushFromMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::UBorder_SetBrushFromMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Border", "SetBrushFromMaterial");
+
+	Params::UBorder_SetBrushFromMaterial_Params Parms{};
 
 	Parms.Material = Material;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4497,19 +5264,22 @@ void UBorder::SetBrushFromMaterial(class UMaterialInterface* Material)
 
 void UBorder::SetBrushFromAsset(class USlateBrushAsset* Asset)
 {
-	static auto Func = Class->GetFunction("Border", "SetBrushFromAsset");
+	static class UFunction* Func = nullptr;
 
-	Params::UBorder_SetBrushFromAsset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Border", "SetBrushFromAsset");
+
+	Params::UBorder_SetBrushFromAsset_Params Parms{};
 
 	Parms.Asset = Asset;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4521,19 +5291,22 @@ void UBorder::SetBrushFromAsset(class USlateBrushAsset* Asset)
 
 void UBorder::SetBrushColor(const struct FLinearColor& InBrushColor)
 {
-	static auto Func = Class->GetFunction("Border", "SetBrushColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UBorder_SetBrushColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Border", "SetBrushColor");
+
+	Params::UBorder_SetBrushColor_Params Parms{};
 
 	Parms.InBrushColor = InBrushColor;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4545,19 +5318,22 @@ void UBorder::SetBrushColor(const struct FLinearColor& InBrushColor)
 
 void UBorder::SetBrush(struct FSlateBrush& InBrush)
 {
-	static auto Func = Class->GetFunction("Border", "SetBrush");
+	static class UFunction* Func = nullptr;
 
-	Params::UBorder_SetBrush_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Border", "SetBrush");
+
+	Params::UBorder_SetBrush_Params Parms{};
 
 	Parms.InBrush = InBrush;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4569,21 +5345,52 @@ void UBorder::SetBrush(struct FSlateBrush& InBrush)
 
 class UMaterialInstanceDynamic* UBorder::GetDynamicMaterial()
 {
-	static auto Func = Class->GetFunction("Border", "GetDynamicMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::UBorder_GetDynamicMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Border", "GetDynamicMaterial");
+
+	Params::UBorder_GetDynamicMaterial_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.DynamicEntryBoxBase
+// (None)
+
+class UClass* UDynamicEntryBoxBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DynamicEntryBoxBase");
+
+	return Clss;
+}
+
+
+// DynamicEntryBoxBase UMG.Default__DynamicEntryBoxBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UDynamicEntryBoxBase* UDynamicEntryBoxBase::GetDefaultObj()
+{
+	static class UDynamicEntryBoxBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UDynamicEntryBoxBase*>(UDynamicEntryBoxBase::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -4594,19 +5401,22 @@ class UMaterialInstanceDynamic* UBorder::GetDynamicMaterial()
 
 void UDynamicEntryBoxBase::SetEntrySpacing(struct FVector2D& InEntrySpacing)
 {
-	static auto Func = Class->GetFunction("DynamicEntryBoxBase", "SetEntrySpacing");
+	static class UFunction* Func = nullptr;
 
-	Params::UDynamicEntryBoxBase_SetEntrySpacing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DynamicEntryBoxBase", "SetEntrySpacing");
+
+	Params::UDynamicEntryBoxBase_SetEntrySpacing_Params Parms{};
 
 	Parms.InEntrySpacing = InEntrySpacing;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4618,18 +5428,21 @@ void UDynamicEntryBoxBase::SetEntrySpacing(struct FVector2D& InEntrySpacing)
 
 int32 UDynamicEntryBoxBase::GetNumEntries()
 {
-	static auto Func = Class->GetFunction("DynamicEntryBoxBase", "GetNumEntries");
+	static class UFunction* Func = nullptr;
 
-	Params::UDynamicEntryBoxBase_GetNumEntries_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DynamicEntryBoxBase", "GetNumEntries");
+
+	Params::UDynamicEntryBoxBase_GetNumEntries_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -4643,21 +5456,52 @@ int32 UDynamicEntryBoxBase::GetNumEntries()
 
 TArray<class UUserWidget*> UDynamicEntryBoxBase::GetAllEntries()
 {
-	static auto Func = Class->GetFunction("DynamicEntryBoxBase", "GetAllEntries");
+	static class UFunction* Func = nullptr;
 
-	Params::UDynamicEntryBoxBase_GetAllEntries_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DynamicEntryBoxBase", "GetAllEntries");
+
+	Params::UDynamicEntryBoxBase_GetAllEntries_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.Button
+// (None)
+
+class UClass* UButton::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Button");
+
+	return Clss;
+}
+
+
+// Button UMG.Default__Button
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UButton* UButton::GetDefaultObj()
+{
+	static class UButton* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UButton*>(UButton::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -4668,19 +5512,22 @@ TArray<class UUserWidget*> UDynamicEntryBoxBase::GetAllEntries()
 
 void UButton::SetTouchMethod(enum class EButtonTouchMethod InTouchMethod)
 {
-	static auto Func = Class->GetFunction("Button", "SetTouchMethod");
+	static class UFunction* Func = nullptr;
 
-	Params::UButton_SetTouchMethod_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Button", "SetTouchMethod");
+
+	Params::UButton_SetTouchMethod_Params Parms{};
 
 	Parms.InTouchMethod = InTouchMethod;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4692,19 +5539,22 @@ void UButton::SetTouchMethod(enum class EButtonTouchMethod InTouchMethod)
 
 void UButton::SetStyle(struct FButtonStyle& InStyle)
 {
-	static auto Func = Class->GetFunction("Button", "SetStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UButton_SetStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Button", "SetStyle");
+
+	Params::UButton_SetStyle_Params Parms{};
 
 	Parms.InStyle = InStyle;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4716,19 +5566,22 @@ void UButton::SetStyle(struct FButtonStyle& InStyle)
 
 void UButton::SetPressMethod(enum class EButtonPressMethod InPressMethod)
 {
-	static auto Func = Class->GetFunction("Button", "SetPressMethod");
+	static class UFunction* Func = nullptr;
 
-	Params::UButton_SetPressMethod_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Button", "SetPressMethod");
+
+	Params::UButton_SetPressMethod_Params Parms{};
 
 	Parms.InPressMethod = InPressMethod;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4740,19 +5593,22 @@ void UButton::SetPressMethod(enum class EButtonPressMethod InPressMethod)
 
 void UButton::SetColorAndOpacity(const struct FLinearColor& InColorAndOpacity)
 {
-	static auto Func = Class->GetFunction("Button", "SetColorAndOpacity");
+	static class UFunction* Func = nullptr;
 
-	Params::UButton_SetColorAndOpacity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Button", "SetColorAndOpacity");
+
+	Params::UButton_SetColorAndOpacity_Params Parms{};
 
 	Parms.InColorAndOpacity = InColorAndOpacity;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4764,19 +5620,22 @@ void UButton::SetColorAndOpacity(const struct FLinearColor& InColorAndOpacity)
 
 void UButton::SetClickMethod(enum class EButtonClickMethod InClickMethod)
 {
-	static auto Func = Class->GetFunction("Button", "SetClickMethod");
+	static class UFunction* Func = nullptr;
 
-	Params::UButton_SetClickMethod_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Button", "SetClickMethod");
+
+	Params::UButton_SetClickMethod_Params Parms{};
 
 	Parms.InClickMethod = InClickMethod;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4788,19 +5647,22 @@ void UButton::SetClickMethod(enum class EButtonClickMethod InClickMethod)
 
 void UButton::SetBackgroundColor(const struct FLinearColor& InBackgroundColor)
 {
-	static auto Func = Class->GetFunction("Button", "SetBackgroundColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UButton_SetBackgroundColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Button", "SetBackgroundColor");
+
+	Params::UButton_SetBackgroundColor_Params Parms{};
 
 	Parms.InBackgroundColor = InBackgroundColor;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4812,21 +5674,52 @@ void UButton::SetBackgroundColor(const struct FLinearColor& InBackgroundColor)
 
 bool UButton::IsPressed()
 {
-	static auto Func = Class->GetFunction("Button", "IsPressed");
+	static class UFunction* Func = nullptr;
 
-	Params::UButton_IsPressed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Button", "IsPressed");
+
+	Params::UButton_IsPressed_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.TextLayoutWidget
+// (None)
+
+class UClass* UTextLayoutWidget::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextLayoutWidget");
+
+	return Clss;
+}
+
+
+// TextLayoutWidget UMG.Default__TextLayoutWidget
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UTextLayoutWidget* UTextLayoutWidget::GetDefaultObj()
+{
+	static class UTextLayoutWidget* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextLayoutWidget*>(UTextLayoutWidget::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -4837,20 +5730,51 @@ bool UButton::IsPressed()
 
 void UTextLayoutWidget::SetJustification(enum class ETextJustify InJustification)
 {
-	static auto Func = Class->GetFunction("TextLayoutWidget", "SetJustification");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextLayoutWidget_SetJustification_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextLayoutWidget", "SetJustification");
+
+	Params::UTextLayoutWidget_SetJustification_Params Parms{};
 
 	Parms.InJustification = InJustification;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.TextBlock
+// (None)
+
+class UClass* UTextBlock::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextBlock");
+
+	return Clss;
+}
+
+
+// TextBlock UMG.Default__TextBlock
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UTextBlock* UTextBlock::GetDefaultObj()
+{
+	static class UTextBlock* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextBlock*>(UTextBlock::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -4861,19 +5785,22 @@ void UTextLayoutWidget::SetJustification(enum class ETextJustify InJustification
 
 void UTextBlock::SetText(class FText InText)
 {
-	static auto Func = Class->GetFunction("TextBlock", "SetText");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextBlock_SetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextBlock", "SetText");
+
+	Params::UTextBlock_SetText_Params Parms{};
 
 	Parms.InText = InText;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4885,19 +5812,22 @@ void UTextBlock::SetText(class FText InText)
 
 void UTextBlock::SetStrikeBrush(const struct FSlateBrush& InStrikeBrush)
 {
-	static auto Func = Class->GetFunction("TextBlock", "SetStrikeBrush");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextBlock_SetStrikeBrush_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextBlock", "SetStrikeBrush");
+
+	Params::UTextBlock_SetStrikeBrush_Params Parms{};
 
 	Parms.InStrikeBrush = InStrikeBrush;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4909,19 +5839,22 @@ void UTextBlock::SetStrikeBrush(const struct FSlateBrush& InStrikeBrush)
 
 void UTextBlock::SetShadowOffset(const struct FVector2D& InShadowOffset)
 {
-	static auto Func = Class->GetFunction("TextBlock", "SetShadowOffset");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextBlock_SetShadowOffset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextBlock", "SetShadowOffset");
+
+	Params::UTextBlock_SetShadowOffset_Params Parms{};
 
 	Parms.InShadowOffset = InShadowOffset;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4933,19 +5866,22 @@ void UTextBlock::SetShadowOffset(const struct FVector2D& InShadowOffset)
 
 void UTextBlock::SetShadowColorAndOpacity(const struct FLinearColor& InShadowColorAndOpacity)
 {
-	static auto Func = Class->GetFunction("TextBlock", "SetShadowColorAndOpacity");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextBlock_SetShadowColorAndOpacity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextBlock", "SetShadowColorAndOpacity");
+
+	Params::UTextBlock_SetShadowColorAndOpacity_Params Parms{};
 
 	Parms.InShadowColorAndOpacity = InShadowColorAndOpacity;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4957,19 +5893,22 @@ void UTextBlock::SetShadowColorAndOpacity(const struct FLinearColor& InShadowCol
 
 void UTextBlock::SetOpacity(float InOpacity)
 {
-	static auto Func = Class->GetFunction("TextBlock", "SetOpacity");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextBlock_SetOpacity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextBlock", "SetOpacity");
+
+	Params::UTextBlock_SetOpacity_Params Parms{};
 
 	Parms.InOpacity = InOpacity;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -4981,19 +5920,22 @@ void UTextBlock::SetOpacity(float InOpacity)
 
 void UTextBlock::SetMinDesiredWidth(float InMinDesiredWidth)
 {
-	static auto Func = Class->GetFunction("TextBlock", "SetMinDesiredWidth");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextBlock_SetMinDesiredWidth_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextBlock", "SetMinDesiredWidth");
+
+	Params::UTextBlock_SetMinDesiredWidth_Params Parms{};
 
 	Parms.InMinDesiredWidth = InMinDesiredWidth;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5005,19 +5947,22 @@ void UTextBlock::SetMinDesiredWidth(float InMinDesiredWidth)
 
 void UTextBlock::SetFont(const struct FSlateFontInfo& InFontInfo)
 {
-	static auto Func = Class->GetFunction("TextBlock", "SetFont");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextBlock_SetFont_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextBlock", "SetFont");
+
+	Params::UTextBlock_SetFont_Params Parms{};
 
 	Parms.InFontInfo = InFontInfo;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5029,19 +5974,22 @@ void UTextBlock::SetFont(const struct FSlateFontInfo& InFontInfo)
 
 void UTextBlock::SetColorAndOpacity(const struct FSlateColor& InColorAndOpacity)
 {
-	static auto Func = Class->GetFunction("TextBlock", "SetColorAndOpacity");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextBlock_SetColorAndOpacity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextBlock", "SetColorAndOpacity");
+
+	Params::UTextBlock_SetColorAndOpacity_Params Parms{};
 
 	Parms.InColorAndOpacity = InColorAndOpacity;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5053,19 +6001,22 @@ void UTextBlock::SetColorAndOpacity(const struct FSlateColor& InColorAndOpacity)
 
 void UTextBlock::SetAutoWrapText(bool InAutoTextWrap)
 {
-	static auto Func = Class->GetFunction("TextBlock", "SetAutoWrapText");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextBlock_SetAutoWrapText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextBlock", "SetAutoWrapText");
+
+	Params::UTextBlock_SetAutoWrapText_Params Parms{};
 
 	Parms.InAutoTextWrap = InAutoTextWrap;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5077,18 +6028,21 @@ void UTextBlock::SetAutoWrapText(bool InAutoTextWrap)
 
 class FText UTextBlock::GetText()
 {
-	static auto Func = Class->GetFunction("TextBlock", "GetText");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextBlock_GetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextBlock", "GetText");
+
+	Params::UTextBlock_GetText_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -5102,18 +6056,21 @@ class FText UTextBlock::GetText()
 
 class UMaterialInstanceDynamic* UTextBlock::GetDynamicOutlineMaterial()
 {
-	static auto Func = Class->GetFunction("TextBlock", "GetDynamicOutlineMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextBlock_GetDynamicOutlineMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextBlock", "GetDynamicOutlineMaterial");
+
+	Params::UTextBlock_GetDynamicOutlineMaterial_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -5127,21 +6084,52 @@ class UMaterialInstanceDynamic* UTextBlock::GetDynamicOutlineMaterial()
 
 class UMaterialInstanceDynamic* UTextBlock::GetDynamicFontMaterial()
 {
-	static auto Func = Class->GetFunction("TextBlock", "GetDynamicFontMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextBlock_GetDynamicFontMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextBlock", "GetDynamicFontMaterial");
+
+	Params::UTextBlock_GetDynamicFontMaterial_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.ScrollBox
+// (None)
+
+class UClass* UScrollBox::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ScrollBox");
+
+	return Clss;
+}
+
+
+// ScrollBox UMG.Default__ScrollBox
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UScrollBox* UScrollBox::GetDefaultObj()
+{
+	static class UScrollBox* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UScrollBox*>(UScrollBox::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -5152,19 +6140,22 @@ class UMaterialInstanceDynamic* UTextBlock::GetDynamicFontMaterial()
 
 void UScrollBox::SetWheelScrollMultiplier(float NewWheelScrollMultiplier)
 {
-	static auto Func = Class->GetFunction("ScrollBox", "SetWheelScrollMultiplier");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_SetWheelScrollMultiplier_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "SetWheelScrollMultiplier");
+
+	Params::UScrollBox_SetWheelScrollMultiplier_Params Parms{};
 
 	Parms.NewWheelScrollMultiplier = NewWheelScrollMultiplier;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5176,19 +6167,22 @@ void UScrollBox::SetWheelScrollMultiplier(float NewWheelScrollMultiplier)
 
 void UScrollBox::SetScrollOffset(float NewScrollOffset)
 {
-	static auto Func = Class->GetFunction("ScrollBox", "SetScrollOffset");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_SetScrollOffset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "SetScrollOffset");
+
+	Params::UScrollBox_SetScrollOffset_Params Parms{};
 
 	Parms.NewScrollOffset = NewScrollOffset;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5200,19 +6194,22 @@ void UScrollBox::SetScrollOffset(float NewScrollOffset)
 
 void UScrollBox::SetScrollBarVisibility(enum class ESlateVisibility NewScrollBarVisibility)
 {
-	static auto Func = Class->GetFunction("ScrollBox", "SetScrollBarVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_SetScrollBarVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "SetScrollBarVisibility");
+
+	Params::UScrollBox_SetScrollBarVisibility_Params Parms{};
 
 	Parms.NewScrollBarVisibility = NewScrollBarVisibility;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5224,19 +6221,22 @@ void UScrollBox::SetScrollBarVisibility(enum class ESlateVisibility NewScrollBar
 
 void UScrollBox::SetScrollbarThickness(struct FVector2D& NewScrollbarThickness)
 {
-	static auto Func = Class->GetFunction("ScrollBox", "SetScrollbarThickness");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_SetScrollbarThickness_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "SetScrollbarThickness");
+
+	Params::UScrollBox_SetScrollbarThickness_Params Parms{};
 
 	Parms.NewScrollbarThickness = NewScrollbarThickness;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5248,19 +6248,22 @@ void UScrollBox::SetScrollbarThickness(struct FVector2D& NewScrollbarThickness)
 
 void UScrollBox::SetScrollbarPadding(struct FMargin& NewScrollbarPadding)
 {
-	static auto Func = Class->GetFunction("ScrollBox", "SetScrollbarPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_SetScrollbarPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "SetScrollbarPadding");
+
+	Params::UScrollBox_SetScrollbarPadding_Params Parms{};
 
 	Parms.NewScrollbarPadding = NewScrollbarPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5272,19 +6275,22 @@ void UScrollBox::SetScrollbarPadding(struct FMargin& NewScrollbarPadding)
 
 void UScrollBox::SetOrientation(enum class EOrientation NewOrientation)
 {
-	static auto Func = Class->GetFunction("ScrollBox", "SetOrientation");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_SetOrientation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "SetOrientation");
+
+	Params::UScrollBox_SetOrientation_Params Parms{};
 
 	Parms.NewOrientation = NewOrientation;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5296,19 +6302,22 @@ void UScrollBox::SetOrientation(enum class EOrientation NewOrientation)
 
 void UScrollBox::SetConsumeMouseWheel(enum class EConsumeMouseWheel NewConsumeMouseWheel)
 {
-	static auto Func = Class->GetFunction("ScrollBox", "SetConsumeMouseWheel");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_SetConsumeMouseWheel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "SetConsumeMouseWheel");
+
+	Params::UScrollBox_SetConsumeMouseWheel_Params Parms{};
 
 	Parms.NewConsumeMouseWheel = NewConsumeMouseWheel;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5320,19 +6329,22 @@ void UScrollBox::SetConsumeMouseWheel(enum class EConsumeMouseWheel NewConsumeMo
 
 void UScrollBox::SetAnimateWheelScrolling(bool bShouldAnimateWheelScrolling)
 {
-	static auto Func = Class->GetFunction("ScrollBox", "SetAnimateWheelScrolling");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_SetAnimateWheelScrolling_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "SetAnimateWheelScrolling");
+
+	Params::UScrollBox_SetAnimateWheelScrolling_Params Parms{};
 
 	Parms.bShouldAnimateWheelScrolling = bShouldAnimateWheelScrolling;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5344,19 +6356,22 @@ void UScrollBox::SetAnimateWheelScrolling(bool bShouldAnimateWheelScrolling)
 
 void UScrollBox::SetAlwaysShowScrollbar(bool NewAlwaysShowScrollbar)
 {
-	static auto Func = Class->GetFunction("ScrollBox", "SetAlwaysShowScrollbar");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_SetAlwaysShowScrollbar_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "SetAlwaysShowScrollbar");
+
+	Params::UScrollBox_SetAlwaysShowScrollbar_Params Parms{};
 
 	Parms.NewAlwaysShowScrollbar = NewAlwaysShowScrollbar;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5368,19 +6383,22 @@ void UScrollBox::SetAlwaysShowScrollbar(bool NewAlwaysShowScrollbar)
 
 void UScrollBox::SetAllowOverscroll(bool NewAllowOverscroll)
 {
-	static auto Func = Class->GetFunction("ScrollBox", "SetAllowOverscroll");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_SetAllowOverscroll_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "SetAllowOverscroll");
+
+	Params::UScrollBox_SetAllowOverscroll_Params Parms{};
 
 	Parms.NewAllowOverscroll = NewAllowOverscroll;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5395,22 +6413,25 @@ void UScrollBox::SetAllowOverscroll(bool NewAllowOverscroll)
 
 void UScrollBox::ScrollWidgetIntoView(class UWidget* WidgetToFind, bool AnimateScroll, enum class EDescendantScrollDestination ScrollDestination, float Padding)
 {
-	static auto Func = Class->GetFunction("ScrollBox", "ScrollWidgetIntoView");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_ScrollWidgetIntoView_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "ScrollWidgetIntoView");
+
+	Params::UScrollBox_ScrollWidgetIntoView_Params Parms{};
 
 	Parms.WidgetToFind = WidgetToFind;
 	Parms.AnimateScroll = AnimateScroll;
 	Parms.ScrollDestination = ScrollDestination;
 	Parms.Padding = Padding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5421,18 +6442,20 @@ void UScrollBox::ScrollWidgetIntoView(class UWidget* WidgetToFind, bool AnimateS
 
 void UScrollBox::ScrollToStart()
 {
-	static auto Func = Class->GetFunction("ScrollBox", "ScrollToStart");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_ScrollToStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "ScrollToStart");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5443,18 +6466,20 @@ void UScrollBox::ScrollToStart()
 
 void UScrollBox::ScrollToEnd()
 {
-	static auto Func = Class->GetFunction("ScrollBox", "ScrollToEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_ScrollToEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "ScrollToEnd");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5466,18 +6491,21 @@ void UScrollBox::ScrollToEnd()
 
 float UScrollBox::GetViewOffsetFraction()
 {
-	static auto Func = Class->GetFunction("ScrollBox", "GetViewOffsetFraction");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_GetViewOffsetFraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "GetViewOffsetFraction");
+
+	Params::UScrollBox_GetViewOffsetFraction_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -5491,18 +6519,21 @@ float UScrollBox::GetViewOffsetFraction()
 
 float UScrollBox::GetScrollOffsetOfEnd()
 {
-	static auto Func = Class->GetFunction("ScrollBox", "GetScrollOffsetOfEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_GetScrollOffsetOfEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "GetScrollOffsetOfEnd");
+
+	Params::UScrollBox_GetScrollOffsetOfEnd_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -5516,18 +6547,21 @@ float UScrollBox::GetScrollOffsetOfEnd()
 
 float UScrollBox::GetScrollOffset()
 {
-	static auto Func = Class->GetFunction("ScrollBox", "GetScrollOffset");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_GetScrollOffset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "GetScrollOffset");
+
+	Params::UScrollBox_GetScrollOffset_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -5540,19 +6574,49 @@ float UScrollBox::GetScrollOffset()
 
 void UScrollBox::EndInertialScrolling()
 {
-	static auto Func = Class->GetFunction("ScrollBox", "EndInertialScrolling");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBox_EndInertialScrolling_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBox", "EndInertialScrolling");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.Image
+// (None)
+
+class UClass* UImage::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Image");
+
+	return Clss;
+}
+
+
+// Image UMG.Default__Image
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UImage* UImage::GetDefaultObj()
+{
+	static class UImage* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UImage*>(UImage::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -5563,19 +6627,22 @@ void UScrollBox::EndInertialScrolling()
 
 void UImage::SetOpacity(float InOpacity)
 {
-	static auto Func = Class->GetFunction("Image", "SetOpacity");
+	static class UFunction* Func = nullptr;
 
-	Params::UImage_SetOpacity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Image", "SetOpacity");
+
+	Params::UImage_SetOpacity_Params Parms{};
 
 	Parms.InOpacity = InOpacity;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5587,19 +6654,22 @@ void UImage::SetOpacity(float InOpacity)
 
 void UImage::SetColorAndOpacity(const struct FLinearColor& InColorAndOpacity)
 {
-	static auto Func = Class->GetFunction("Image", "SetColorAndOpacity");
+	static class UFunction* Func = nullptr;
 
-	Params::UImage_SetColorAndOpacity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Image", "SetColorAndOpacity");
+
+	Params::UImage_SetColorAndOpacity_Params Parms{};
 
 	Parms.InColorAndOpacity = InColorAndOpacity;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5611,19 +6681,22 @@ void UImage::SetColorAndOpacity(const struct FLinearColor& InColorAndOpacity)
 
 void UImage::SetBrushTintColor(const struct FSlateColor& TintColor)
 {
-	static auto Func = Class->GetFunction("Image", "SetBrushTintColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UImage_SetBrushTintColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Image", "SetBrushTintColor");
+
+	Params::UImage_SetBrushTintColor_Params Parms{};
 
 	Parms.TintColor = TintColor;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5635,19 +6708,22 @@ void UImage::SetBrushTintColor(const struct FSlateColor& TintColor)
 
 void UImage::SetBrushSize(const struct FVector2D& DesiredSize)
 {
-	static auto Func = Class->GetFunction("Image", "SetBrushSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UImage_SetBrushSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Image", "SetBrushSize");
+
+	Params::UImage_SetBrushSize_Params Parms{};
 
 	Parms.DesiredSize = DesiredSize;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5659,19 +6735,22 @@ void UImage::SetBrushSize(const struct FVector2D& DesiredSize)
 
 void UImage::SetBrushResourceObject(class UObject* ResourceObject)
 {
-	static auto Func = Class->GetFunction("Image", "SetBrushResourceObject");
+	static class UFunction* Func = nullptr;
 
-	Params::UImage_SetBrushResourceObject_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Image", "SetBrushResourceObject");
+
+	Params::UImage_SetBrushResourceObject_Params Parms{};
 
 	Parms.ResourceObject = ResourceObject;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5684,20 +6763,23 @@ void UImage::SetBrushResourceObject(class UObject* ResourceObject)
 
 void UImage::SetBrushFromTextureDynamic(class UTexture2DDynamic* Texture, bool bMatchSize)
 {
-	static auto Func = Class->GetFunction("Image", "SetBrushFromTextureDynamic");
+	static class UFunction* Func = nullptr;
 
-	Params::UImage_SetBrushFromTextureDynamic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Image", "SetBrushFromTextureDynamic");
+
+	Params::UImage_SetBrushFromTextureDynamic_Params Parms{};
 
 	Parms.Texture = Texture;
 	Parms.bMatchSize = bMatchSize;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5710,20 +6792,23 @@ void UImage::SetBrushFromTextureDynamic(class UTexture2DDynamic* Texture, bool b
 
 void UImage::SetBrushFromTexture(class UTexture2D* Texture, bool bMatchSize)
 {
-	static auto Func = Class->GetFunction("Image", "SetBrushFromTexture");
+	static class UFunction* Func = nullptr;
 
-	Params::UImage_SetBrushFromTexture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Image", "SetBrushFromTexture");
+
+	Params::UImage_SetBrushFromTexture_Params Parms{};
 
 	Parms.Texture = Texture;
 	Parms.bMatchSize = bMatchSize;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5736,20 +6821,23 @@ void UImage::SetBrushFromTexture(class UTexture2D* Texture, bool bMatchSize)
 
 void UImage::SetBrushFromSoftTexture(TSoftObjectPtr<class UTexture2D> SoftTexture, bool bMatchSize)
 {
-	static auto Func = Class->GetFunction("Image", "SetBrushFromSoftTexture");
+	static class UFunction* Func = nullptr;
 
-	Params::UImage_SetBrushFromSoftTexture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Image", "SetBrushFromSoftTexture");
+
+	Params::UImage_SetBrushFromSoftTexture_Params Parms{};
 
 	Parms.SoftTexture = SoftTexture;
 	Parms.bMatchSize = bMatchSize;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5761,19 +6849,22 @@ void UImage::SetBrushFromSoftTexture(TSoftObjectPtr<class UTexture2D> SoftTextur
 
 void UImage::SetBrushFromSoftMaterial(TSoftObjectPtr<class UMaterialInterface> SoftMaterial)
 {
-	static auto Func = Class->GetFunction("Image", "SetBrushFromSoftMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::UImage_SetBrushFromSoftMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Image", "SetBrushFromSoftMaterial");
+
+	Params::UImage_SetBrushFromSoftMaterial_Params Parms{};
 
 	Parms.SoftMaterial = SoftMaterial;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5785,19 +6876,22 @@ void UImage::SetBrushFromSoftMaterial(TSoftObjectPtr<class UMaterialInterface> S
 
 void UImage::SetBrushFromMaterial(class UMaterialInterface* Material)
 {
-	static auto Func = Class->GetFunction("Image", "SetBrushFromMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::UImage_SetBrushFromMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Image", "SetBrushFromMaterial");
+
+	Params::UImage_SetBrushFromMaterial_Params Parms{};
 
 	Parms.Material = Material;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5810,20 +6904,23 @@ void UImage::SetBrushFromMaterial(class UMaterialInterface* Material)
 
 void UImage::SetBrushFromAtlasInterface(TScriptInterface<class ISlateTextureAtlasInterface> AtlasRegion, bool bMatchSize)
 {
-	static auto Func = Class->GetFunction("Image", "SetBrushFromAtlasInterface");
+	static class UFunction* Func = nullptr;
 
-	Params::UImage_SetBrushFromAtlasInterface_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Image", "SetBrushFromAtlasInterface");
+
+	Params::UImage_SetBrushFromAtlasInterface_Params Parms{};
 
 	Parms.AtlasRegion = AtlasRegion;
 	Parms.bMatchSize = bMatchSize;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5835,19 +6932,22 @@ void UImage::SetBrushFromAtlasInterface(TScriptInterface<class ISlateTextureAtla
 
 void UImage::SetBrushFromAsset(class USlateBrushAsset* Asset)
 {
-	static auto Func = Class->GetFunction("Image", "SetBrushFromAsset");
+	static class UFunction* Func = nullptr;
 
-	Params::UImage_SetBrushFromAsset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Image", "SetBrushFromAsset");
+
+	Params::UImage_SetBrushFromAsset_Params Parms{};
 
 	Parms.Asset = Asset;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5859,19 +6959,22 @@ void UImage::SetBrushFromAsset(class USlateBrushAsset* Asset)
 
 void UImage::SetBrush(struct FSlateBrush& InBrush)
 {
-	static auto Func = Class->GetFunction("Image", "SetBrush");
+	static class UFunction* Func = nullptr;
 
-	Params::UImage_SetBrush_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Image", "SetBrush");
+
+	Params::UImage_SetBrush_Params Parms{};
 
 	Parms.InBrush = InBrush;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5883,21 +6986,52 @@ void UImage::SetBrush(struct FSlateBrush& InBrush)
 
 class UMaterialInstanceDynamic* UImage::GetDynamicMaterial()
 {
-	static auto Func = Class->GetFunction("Image", "GetDynamicMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::UImage_GetDynamicMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Image", "GetDynamicMaterial");
+
+	Params::UImage_GetDynamicMaterial_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.ListViewBase
+// (None)
+
+class UClass* UListViewBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ListViewBase");
+
+	return Clss;
+}
+
+
+// ListViewBase UMG.Default__ListViewBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UListViewBase* UListViewBase::GetDefaultObj()
+{
+	static class UListViewBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UListViewBase*>(UListViewBase::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -5908,19 +7042,22 @@ class UMaterialInstanceDynamic* UImage::GetDynamicMaterial()
 
 void UListViewBase::SetWheelScrollMultiplier(float NewWheelScrollMultiplier)
 {
-	static auto Func = Class->GetFunction("ListViewBase", "SetWheelScrollMultiplier");
+	static class UFunction* Func = nullptr;
 
-	Params::UListViewBase_SetWheelScrollMultiplier_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListViewBase", "SetWheelScrollMultiplier");
+
+	Params::UListViewBase_SetWheelScrollMultiplier_Params Parms{};
 
 	Parms.NewWheelScrollMultiplier = NewWheelScrollMultiplier;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5932,19 +7069,22 @@ void UListViewBase::SetWheelScrollMultiplier(float NewWheelScrollMultiplier)
 
 void UListViewBase::SetScrollOffset(float InScrollOffset)
 {
-	static auto Func = Class->GetFunction("ListViewBase", "SetScrollOffset");
+	static class UFunction* Func = nullptr;
 
-	Params::UListViewBase_SetScrollOffset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListViewBase", "SetScrollOffset");
+
+	Params::UListViewBase_SetScrollOffset_Params Parms{};
 
 	Parms.InScrollOffset = InScrollOffset;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5956,19 +7096,22 @@ void UListViewBase::SetScrollOffset(float InScrollOffset)
 
 void UListViewBase::SetScrollBarVisibility(enum class ESlateVisibility InVisibility)
 {
-	static auto Func = Class->GetFunction("ListViewBase", "SetScrollBarVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UListViewBase_SetScrollBarVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListViewBase", "SetScrollBarVisibility");
+
+	Params::UListViewBase_SetScrollBarVisibility_Params Parms{};
 
 	Parms.InVisibility = InVisibility;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -5979,18 +7122,20 @@ void UListViewBase::SetScrollBarVisibility(enum class ESlateVisibility InVisibil
 
 void UListViewBase::ScrollToTop()
 {
-	static auto Func = Class->GetFunction("ListViewBase", "ScrollToTop");
+	static class UFunction* Func = nullptr;
 
-	Params::UListViewBase_ScrollToTop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListViewBase", "ScrollToTop");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6001,18 +7146,20 @@ void UListViewBase::ScrollToTop()
 
 void UListViewBase::ScrollToBottom()
 {
-	static auto Func = Class->GetFunction("ListViewBase", "ScrollToBottom");
+	static class UFunction* Func = nullptr;
 
-	Params::UListViewBase_ScrollToBottom_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListViewBase", "ScrollToBottom");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6023,18 +7170,20 @@ void UListViewBase::ScrollToBottom()
 
 void UListViewBase::RequestRefresh()
 {
-	static auto Func = Class->GetFunction("ListViewBase", "RequestRefresh");
+	static class UFunction* Func = nullptr;
 
-	Params::UListViewBase_RequestRefresh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListViewBase", "RequestRefresh");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6045,18 +7194,20 @@ void UListViewBase::RequestRefresh()
 
 void UListViewBase::RegenerateAllEntries()
 {
-	static auto Func = Class->GetFunction("ListViewBase", "RegenerateAllEntries");
+	static class UFunction* Func = nullptr;
 
-	Params::UListViewBase_RegenerateAllEntries_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListViewBase", "RegenerateAllEntries");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6068,21 +7219,52 @@ void UListViewBase::RegenerateAllEntries()
 
 TArray<class UUserWidget*> UListViewBase::GetDisplayedEntryWidgets()
 {
-	static auto Func = Class->GetFunction("ListViewBase", "GetDisplayedEntryWidgets");
+	static class UFunction* Func = nullptr;
 
-	Params::UListViewBase_GetDisplayedEntryWidgets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListViewBase", "GetDisplayedEntryWidgets");
+
+	Params::UListViewBase_GetDisplayedEntryWidgets_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.ListView
+// (None)
+
+class UClass* UListView::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ListView");
+
+	return Clss;
+}
+
+
+// ListView UMG.Default__ListView
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UListView* UListView::GetDefaultObj()
+{
+	static class UListView* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UListView*>(UListView::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -6093,19 +7275,22 @@ TArray<class UUserWidget*> UListViewBase::GetDisplayedEntryWidgets()
 
 void UListView::SetSelectionMode(enum class ESelectionMode SelectionMode)
 {
-	static auto Func = Class->GetFunction("ListView", "SetSelectionMode");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_SetSelectionMode_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "SetSelectionMode");
+
+	Params::UListView_SetSelectionMode_Params Parms{};
 
 	Parms.SelectionMode = SelectionMode;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6117,19 +7302,22 @@ void UListView::SetSelectionMode(enum class ESelectionMode SelectionMode)
 
 void UListView::SetSelectedIndex(int32 Index)
 {
-	static auto Func = Class->GetFunction("ListView", "SetSelectedIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_SetSelectedIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "SetSelectedIndex");
+
+	Params::UListView_SetSelectedIndex_Params Parms{};
 
 	Parms.Index = Index;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6141,19 +7329,22 @@ void UListView::SetSelectedIndex(int32 Index)
 
 void UListView::ScrollIndexIntoView(int32 Index)
 {
-	static auto Func = Class->GetFunction("ListView", "ScrollIndexIntoView");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_ScrollIndexIntoView_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "ScrollIndexIntoView");
+
+	Params::UListView_ScrollIndexIntoView_Params Parms{};
 
 	Parms.Index = Index;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6165,19 +7356,22 @@ void UListView::ScrollIndexIntoView(int32 Index)
 
 void UListView::RemoveItem(class UObject* Item)
 {
-	static auto Func = Class->GetFunction("ListView", "RemoveItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_RemoveItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "RemoveItem");
+
+	Params::UListView_RemoveItem_Params Parms{};
 
 	Parms.Item = Item;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6189,19 +7383,22 @@ void UListView::RemoveItem(class UObject* Item)
 
 void UListView::NavigateToIndex(int32 Index)
 {
-	static auto Func = Class->GetFunction("ListView", "NavigateToIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_NavigateToIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "NavigateToIndex");
+
+	Params::UListView_NavigateToIndex_Params Parms{};
 
 	Parms.Index = Index;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6213,18 +7410,21 @@ void UListView::NavigateToIndex(int32 Index)
 
 bool UListView::IsRefreshPending()
 {
-	static auto Func = Class->GetFunction("ListView", "IsRefreshPending");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_IsRefreshPending_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "IsRefreshPending");
+
+	Params::UListView_IsRefreshPending_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -6238,18 +7438,21 @@ bool UListView::IsRefreshPending()
 
 int32 UListView::GetNumItems()
 {
-	static auto Func = Class->GetFunction("ListView", "GetNumItems");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_GetNumItems_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "GetNumItems");
+
+	Params::UListView_GetNumItems_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -6263,18 +7466,21 @@ int32 UListView::GetNumItems()
 
 TArray<class UObject*> UListView::GetListItems()
 {
-	static auto Func = Class->GetFunction("ListView", "GetListItems");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_GetListItems_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "GetListItems");
+
+	Params::UListView_GetListItems_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -6289,19 +7495,22 @@ TArray<class UObject*> UListView::GetListItems()
 
 class UObject* UListView::GetItemAt(int32 Index)
 {
-	static auto Func = Class->GetFunction("ListView", "GetItemAt");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_GetItemAt_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "GetItemAt");
+
+	Params::UListView_GetItemAt_Params Parms{};
 
 	Parms.Index = Index;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -6316,19 +7525,22 @@ class UObject* UListView::GetItemAt(int32 Index)
 
 int32 UListView::GetIndexForItem(class UObject* Item)
 {
-	static auto Func = Class->GetFunction("ListView", "GetIndexForItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_GetIndexForItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "GetIndexForItem");
+
+	Params::UListView_GetIndexForItem_Params Parms{};
 
 	Parms.Item = Item;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -6341,18 +7553,20 @@ int32 UListView::GetIndexForItem(class UObject* Item)
 
 void UListView::ClearListItems()
 {
-	static auto Func = Class->GetFunction("ListView", "ClearListItems");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_ClearListItems_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "ClearListItems");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6364,19 +7578,22 @@ void UListView::ClearListItems()
 
 void UListView::BP_SetSelectedItem(class UObject* Item)
 {
-	static auto Func = Class->GetFunction("ListView", "BP_SetSelectedItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_BP_SetSelectedItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "BP_SetSelectedItem");
+
+	Params::UListView_BP_SetSelectedItem_Params Parms{};
 
 	Parms.Item = Item;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6388,19 +7605,22 @@ void UListView::BP_SetSelectedItem(class UObject* Item)
 
 void UListView::BP_SetListItems(TArray<class UObject*>& InListItems)
 {
-	static auto Func = Class->GetFunction("ListView", "BP_SetListItems");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_BP_SetListItems_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "BP_SetListItems");
+
+	Params::UListView_BP_SetListItems_Params Parms{};
 
 	Parms.InListItems = InListItems;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6413,20 +7633,23 @@ void UListView::BP_SetListItems(TArray<class UObject*>& InListItems)
 
 void UListView::BP_SetItemSelection(class UObject* Item, bool bSelected)
 {
-	static auto Func = Class->GetFunction("ListView", "BP_SetItemSelection");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_BP_SetItemSelection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "BP_SetItemSelection");
+
+	Params::UListView_BP_SetItemSelection_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.bSelected = bSelected;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6438,19 +7661,22 @@ void UListView::BP_SetItemSelection(class UObject* Item, bool bSelected)
 
 void UListView::BP_ScrollItemIntoView(class UObject* Item)
 {
-	static auto Func = Class->GetFunction("ListView", "BP_ScrollItemIntoView");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_BP_ScrollItemIntoView_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "BP_ScrollItemIntoView");
+
+	Params::UListView_BP_ScrollItemIntoView_Params Parms{};
 
 	Parms.Item = Item;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6462,19 +7688,22 @@ void UListView::BP_ScrollItemIntoView(class UObject* Item)
 
 void UListView::BP_NavigateToItem(class UObject* Item)
 {
-	static auto Func = Class->GetFunction("ListView", "BP_NavigateToItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_BP_NavigateToItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "BP_NavigateToItem");
+
+	Params::UListView_BP_NavigateToItem_Params Parms{};
 
 	Parms.Item = Item;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6487,19 +7716,22 @@ void UListView::BP_NavigateToItem(class UObject* Item)
 
 bool UListView::BP_IsItemVisible(class UObject* Item)
 {
-	static auto Func = Class->GetFunction("ListView", "BP_IsItemVisible");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_BP_IsItemVisible_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "BP_IsItemVisible");
+
+	Params::UListView_BP_IsItemVisible_Params Parms{};
 
 	Parms.Item = Item;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -6514,21 +7746,24 @@ bool UListView::BP_IsItemVisible(class UObject* Item)
 
 bool UListView::BP_GetSelectedItems(TArray<class UObject*>* Items)
 {
-	static auto Func = Class->GetFunction("ListView", "BP_GetSelectedItems");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_BP_GetSelectedItems_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "BP_GetSelectedItems");
+
+	Params::UListView_BP_GetSelectedItems_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Items != nullptr)
-		*Items = Parms.Items;
+		*Items = std::move(Parms.Items);
 
 	return Parms.ReturnValue;
 
@@ -6542,18 +7777,21 @@ bool UListView::BP_GetSelectedItems(TArray<class UObject*>* Items)
 
 class UObject* UListView::BP_GetSelectedItem()
 {
-	static auto Func = Class->GetFunction("ListView", "BP_GetSelectedItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_BP_GetSelectedItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "BP_GetSelectedItem");
+
+	Params::UListView_BP_GetSelectedItem_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -6567,18 +7805,21 @@ class UObject* UListView::BP_GetSelectedItem()
 
 int32 UListView::BP_GetNumItemsSelected()
 {
-	static auto Func = Class->GetFunction("ListView", "BP_GetNumItemsSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_BP_GetNumItemsSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "BP_GetNumItemsSelected");
+
+	Params::UListView_BP_GetNumItemsSelected_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -6591,18 +7832,20 @@ int32 UListView::BP_GetNumItemsSelected()
 
 void UListView::BP_ClearSelection()
 {
-	static auto Func = Class->GetFunction("ListView", "BP_ClearSelection");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_BP_ClearSelection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "BP_ClearSelection");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6613,18 +7856,20 @@ void UListView::BP_ClearSelection()
 
 void UListView::BP_CancelScrollIntoView()
 {
-	static auto Func = Class->GetFunction("ListView", "BP_CancelScrollIntoView");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_BP_CancelScrollIntoView_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "BP_CancelScrollIntoView");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6636,20 +7881,79 @@ void UListView::BP_CancelScrollIntoView()
 
 void UListView::AddItem(class UObject* Item)
 {
-	static auto Func = Class->GetFunction("ListView", "AddItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UListView_AddItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ListView", "AddItem");
+
+	Params::UListView_AddItem_Params Parms{};
 
 	Parms.Item = Item;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.PanelSlot
+// (None)
+
+class UClass* UPanelSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PanelSlot");
+
+	return Clss;
+}
+
+
+// PanelSlot UMG.Default__PanelSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPanelSlot* UPanelSlot::GetDefaultObj()
+{
+	static class UPanelSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPanelSlot*>(UPanelSlot::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.RichTextBlock
+// (None)
+
+class UClass* URichTextBlock::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("RichTextBlock");
+
+	return Clss;
+}
+
+
+// RichTextBlock UMG.Default__RichTextBlock
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class URichTextBlock* URichTextBlock::GetDefaultObj()
+{
+	static class URichTextBlock* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<URichTextBlock*>(URichTextBlock::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -6660,19 +7964,22 @@ void UListView::AddItem(class UObject* Item)
 
 void URichTextBlock::SetTextStyleSet(class UDataTable* NewTextStyleSet)
 {
-	static auto Func = Class->GetFunction("RichTextBlock", "SetTextStyleSet");
+	static class UFunction* Func = nullptr;
 
-	Params::URichTextBlock_SetTextStyleSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RichTextBlock", "SetTextStyleSet");
+
+	Params::URichTextBlock_SetTextStyleSet_Params Parms{};
 
 	Parms.NewTextStyleSet = NewTextStyleSet;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6684,19 +7991,22 @@ void URichTextBlock::SetTextStyleSet(class UDataTable* NewTextStyleSet)
 
 void URichTextBlock::SetText(class FText& InText)
 {
-	static auto Func = Class->GetFunction("RichTextBlock", "SetText");
+	static class UFunction* Func = nullptr;
 
-	Params::URichTextBlock_SetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RichTextBlock", "SetText");
+
+	Params::URichTextBlock_SetText_Params Parms{};
 
 	Parms.InText = InText;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6708,19 +8018,22 @@ void URichTextBlock::SetText(class FText& InText)
 
 void URichTextBlock::SetMinDesiredWidth(float InMinDesiredWidth)
 {
-	static auto Func = Class->GetFunction("RichTextBlock", "SetMinDesiredWidth");
+	static class UFunction* Func = nullptr;
 
-	Params::URichTextBlock_SetMinDesiredWidth_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RichTextBlock", "SetMinDesiredWidth");
+
+	Params::URichTextBlock_SetMinDesiredWidth_Params Parms{};
 
 	Parms.InMinDesiredWidth = InMinDesiredWidth;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6732,19 +8045,22 @@ void URichTextBlock::SetMinDesiredWidth(float InMinDesiredWidth)
 
 void URichTextBlock::SetDefaultTextStyle(struct FTextBlockStyle& InDefaultTextStyle)
 {
-	static auto Func = Class->GetFunction("RichTextBlock", "SetDefaultTextStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::URichTextBlock_SetDefaultTextStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RichTextBlock", "SetDefaultTextStyle");
+
+	Params::URichTextBlock_SetDefaultTextStyle_Params Parms{};
 
 	Parms.InDefaultTextStyle = InDefaultTextStyle;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6756,21 +8072,24 @@ void URichTextBlock::SetDefaultTextStyle(struct FTextBlockStyle& InDefaultTextSt
 
 void URichTextBlock::SetDefaultStrikeBrush(struct FSlateBrush* InStrikeBrush)
 {
-	static auto Func = Class->GetFunction("RichTextBlock", "SetDefaultStrikeBrush");
+	static class UFunction* Func = nullptr;
 
-	Params::URichTextBlock_SetDefaultStrikeBrush_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RichTextBlock", "SetDefaultStrikeBrush");
+
+	Params::URichTextBlock_SetDefaultStrikeBrush_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (InStrikeBrush != nullptr)
-		*InStrikeBrush = Parms.InStrikeBrush;
+		*InStrikeBrush = std::move(Parms.InStrikeBrush);
 
 }
 
@@ -6782,19 +8101,22 @@ void URichTextBlock::SetDefaultStrikeBrush(struct FSlateBrush* InStrikeBrush)
 
 void URichTextBlock::SetDefaultShadowOffset(const struct FVector2D& InShadowOffset)
 {
-	static auto Func = Class->GetFunction("RichTextBlock", "SetDefaultShadowOffset");
+	static class UFunction* Func = nullptr;
 
-	Params::URichTextBlock_SetDefaultShadowOffset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RichTextBlock", "SetDefaultShadowOffset");
+
+	Params::URichTextBlock_SetDefaultShadowOffset_Params Parms{};
 
 	Parms.InShadowOffset = InShadowOffset;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6806,19 +8128,22 @@ void URichTextBlock::SetDefaultShadowOffset(const struct FVector2D& InShadowOffs
 
 void URichTextBlock::SetDefaultShadowColorAndOpacity(const struct FLinearColor& InShadowColorAndOpacity)
 {
-	static auto Func = Class->GetFunction("RichTextBlock", "SetDefaultShadowColorAndOpacity");
+	static class UFunction* Func = nullptr;
 
-	Params::URichTextBlock_SetDefaultShadowColorAndOpacity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RichTextBlock", "SetDefaultShadowColorAndOpacity");
+
+	Params::URichTextBlock_SetDefaultShadowColorAndOpacity_Params Parms{};
 
 	Parms.InShadowColorAndOpacity = InShadowColorAndOpacity;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6830,19 +8155,22 @@ void URichTextBlock::SetDefaultShadowColorAndOpacity(const struct FLinearColor& 
 
 void URichTextBlock::SetDefaultFont(const struct FSlateFontInfo& InFontInfo)
 {
-	static auto Func = Class->GetFunction("RichTextBlock", "SetDefaultFont");
+	static class UFunction* Func = nullptr;
 
-	Params::URichTextBlock_SetDefaultFont_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RichTextBlock", "SetDefaultFont");
+
+	Params::URichTextBlock_SetDefaultFont_Params Parms{};
 
 	Parms.InFontInfo = InFontInfo;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6854,19 +8182,22 @@ void URichTextBlock::SetDefaultFont(const struct FSlateFontInfo& InFontInfo)
 
 void URichTextBlock::SetDefaultColorAndOpacity(const struct FSlateColor& InColorAndOpacity)
 {
-	static auto Func = Class->GetFunction("RichTextBlock", "SetDefaultColorAndOpacity");
+	static class UFunction* Func = nullptr;
 
-	Params::URichTextBlock_SetDefaultColorAndOpacity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RichTextBlock", "SetDefaultColorAndOpacity");
+
+	Params::URichTextBlock_SetDefaultColorAndOpacity_Params Parms{};
 
 	Parms.InColorAndOpacity = InColorAndOpacity;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6878,19 +8209,22 @@ void URichTextBlock::SetDefaultColorAndOpacity(const struct FSlateColor& InColor
 
 void URichTextBlock::SetAutoWrapText(bool InAutoTextWrap)
 {
-	static auto Func = Class->GetFunction("RichTextBlock", "SetAutoWrapText");
+	static class UFunction* Func = nullptr;
 
-	Params::URichTextBlock_SetAutoWrapText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RichTextBlock", "SetAutoWrapText");
+
+	Params::URichTextBlock_SetAutoWrapText_Params Parms{};
 
 	Parms.InAutoTextWrap = InAutoTextWrap;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -6902,18 +8236,21 @@ void URichTextBlock::SetAutoWrapText(bool InAutoTextWrap)
 
 class FText URichTextBlock::GetText()
 {
-	static auto Func = Class->GetFunction("RichTextBlock", "GetText");
+	static class UFunction* Func = nullptr;
 
-	Params::URichTextBlock_GetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RichTextBlock", "GetText");
+
+	Params::URichTextBlock_GetText_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -6928,19 +8265,22 @@ class FText URichTextBlock::GetText()
 
 class URichTextBlockDecorator* URichTextBlock::GetDecoratorByClass(TSubclassOf<class URichTextBlockDecorator> DecoratorClass)
 {
-	static auto Func = Class->GetFunction("RichTextBlock", "GetDecoratorByClass");
+	static class UFunction* Func = nullptr;
 
-	Params::URichTextBlock_GetDecoratorByClass_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RichTextBlock", "GetDecoratorByClass");
+
+	Params::URichTextBlock_GetDecoratorByClass_Params Parms{};
 
 	Parms.DecoratorClass = DecoratorClass;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -6953,19 +8293,49 @@ class URichTextBlockDecorator* URichTextBlock::GetDecoratorByClass(TSubclassOf<c
 
 void URichTextBlock::ClearAllDefaultStyleOverrides()
 {
-	static auto Func = Class->GetFunction("RichTextBlock", "ClearAllDefaultStyleOverrides");
+	static class UFunction* Func = nullptr;
 
-	Params::URichTextBlock_ClearAllDefaultStyleOverrides_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RichTextBlock", "ClearAllDefaultStyleOverrides");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.TileView
+// (None)
+
+class UClass* UTileView::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TileView");
+
+	return Clss;
+}
+
+
+// TileView UMG.Default__TileView
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UTileView* UTileView::GetDefaultObj()
+{
+	static class UTileView* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTileView*>(UTileView::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -6976,19 +8346,22 @@ void URichTextBlock::ClearAllDefaultStyleOverrides()
 
 void UTileView::SetEntryWidth(float NewWidth)
 {
-	static auto Func = Class->GetFunction("TileView", "SetEntryWidth");
+	static class UFunction* Func = nullptr;
 
-	Params::UTileView_SetEntryWidth_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TileView", "SetEntryWidth");
+
+	Params::UTileView_SetEntryWidth_Params Parms{};
 
 	Parms.NewWidth = NewWidth;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7000,20 +8373,51 @@ void UTileView::SetEntryWidth(float NewWidth)
 
 void UTileView::SetEntryHeight(float NewHeight)
 {
-	static auto Func = Class->GetFunction("TileView", "SetEntryHeight");
+	static class UFunction* Func = nullptr;
 
-	Params::UTileView_SetEntryHeight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TileView", "SetEntryHeight");
+
+	Params::UTileView_SetEntryHeight_Params Parms{};
 
 	Parms.NewHeight = NewHeight;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.TreeView
+// (None)
+
+class UClass* UTreeView::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TreeView");
+
+	return Clss;
+}
+
+
+// TreeView UMG.Default__TreeView
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UTreeView* UTreeView::GetDefaultObj()
+{
+	static class UTreeView* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTreeView*>(UTreeView::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -7025,20 +8429,23 @@ void UTileView::SetEntryHeight(float NewHeight)
 
 void UTreeView::SetItemExpansion(class UObject* Item, bool bExpandItem)
 {
-	static auto Func = Class->GetFunction("TreeView", "SetItemExpansion");
+	static class UFunction* Func = nullptr;
 
-	Params::UTreeView_SetItemExpansion_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TreeView", "SetItemExpansion");
+
+	Params::UTreeView_SetItemExpansion_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.bExpandItem = bExpandItem;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7049,18 +8456,20 @@ void UTreeView::SetItemExpansion(class UObject* Item, bool bExpandItem)
 
 void UTreeView::ExpandAll()
 {
-	static auto Func = Class->GetFunction("TreeView", "ExpandAll");
+	static class UFunction* Func = nullptr;
 
-	Params::UTreeView_ExpandAll_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TreeView", "ExpandAll");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7071,19 +8480,49 @@ void UTreeView::ExpandAll()
 
 void UTreeView::CollapseAll()
 {
-	static auto Func = Class->GetFunction("TreeView", "CollapseAll");
+	static class UFunction* Func = nullptr;
 
-	Params::UTreeView_CollapseAll_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TreeView", "CollapseAll");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.AsyncTaskDownloadImage
+// (None)
+
+class UClass* UAsyncTaskDownloadImage::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AsyncTaskDownloadImage");
+
+	return Clss;
+}
+
+
+// AsyncTaskDownloadImage UMG.Default__AsyncTaskDownloadImage
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UAsyncTaskDownloadImage* UAsyncTaskDownloadImage::GetDefaultObj()
+{
+	static class UAsyncTaskDownloadImage* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAsyncTaskDownloadImage*>(UAsyncTaskDownloadImage::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -7095,22 +8534,53 @@ void UTreeView::CollapseAll()
 
 class UAsyncTaskDownloadImage* UAsyncTaskDownloadImage::DownloadImage(const class FString& URL)
 {
-	static auto Func = Class->GetFunction("AsyncTaskDownloadImage", "DownloadImage");
+	static class UFunction* Func = nullptr;
 
-	Params::UAsyncTaskDownloadImage_DownloadImage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AsyncTaskDownloadImage", "DownloadImage");
+
+	Params::UAsyncTaskDownloadImage_DownloadImage_Params Parms{};
 
 	Parms.URL = URL;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.BackgroundBlur
+// (None)
+
+class UClass* UBackgroundBlur::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BackgroundBlur");
+
+	return Clss;
+}
+
+
+// BackgroundBlur UMG.Default__BackgroundBlur
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UBackgroundBlur* UBackgroundBlur::GetDefaultObj()
+{
+	static class UBackgroundBlur* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBackgroundBlur*>(UBackgroundBlur::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -7121,19 +8591,22 @@ class UAsyncTaskDownloadImage* UAsyncTaskDownloadImage::DownloadImage(const clas
 
 void UBackgroundBlur::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("BackgroundBlur", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UBackgroundBlur_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BackgroundBlur", "SetVerticalAlignment");
+
+	Params::UBackgroundBlur_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7145,19 +8618,22 @@ void UBackgroundBlur::SetVerticalAlignment(enum class EVerticalAlignment InVerti
 
 void UBackgroundBlur::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("BackgroundBlur", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UBackgroundBlur_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BackgroundBlur", "SetPadding");
+
+	Params::UBackgroundBlur_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7169,19 +8645,22 @@ void UBackgroundBlur::SetPadding(const struct FMargin& InPadding)
 
 void UBackgroundBlur::SetLowQualityFallbackBrush(struct FSlateBrush& InBrush)
 {
-	static auto Func = Class->GetFunction("BackgroundBlur", "SetLowQualityFallbackBrush");
+	static class UFunction* Func = nullptr;
 
-	Params::UBackgroundBlur_SetLowQualityFallbackBrush_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BackgroundBlur", "SetLowQualityFallbackBrush");
+
+	Params::UBackgroundBlur_SetLowQualityFallbackBrush_Params Parms{};
 
 	Parms.InBrush = InBrush;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7193,19 +8672,22 @@ void UBackgroundBlur::SetLowQualityFallbackBrush(struct FSlateBrush& InBrush)
 
 void UBackgroundBlur::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("BackgroundBlur", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UBackgroundBlur_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BackgroundBlur", "SetHorizontalAlignment");
+
+	Params::UBackgroundBlur_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7217,19 +8699,22 @@ void UBackgroundBlur::SetHorizontalAlignment(enum class EHorizontalAlignment InH
 
 void UBackgroundBlur::SetBlurStrength(float InStrength)
 {
-	static auto Func = Class->GetFunction("BackgroundBlur", "SetBlurStrength");
+	static class UFunction* Func = nullptr;
 
-	Params::UBackgroundBlur_SetBlurStrength_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BackgroundBlur", "SetBlurStrength");
+
+	Params::UBackgroundBlur_SetBlurStrength_Params Parms{};
 
 	Parms.InStrength = InStrength;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7241,19 +8726,22 @@ void UBackgroundBlur::SetBlurStrength(float InStrength)
 
 void UBackgroundBlur::SetBlurRadius(int32 InBlurRadius)
 {
-	static auto Func = Class->GetFunction("BackgroundBlur", "SetBlurRadius");
+	static class UFunction* Func = nullptr;
 
-	Params::UBackgroundBlur_SetBlurRadius_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BackgroundBlur", "SetBlurRadius");
+
+	Params::UBackgroundBlur_SetBlurRadius_Params Parms{};
 
 	Parms.InBlurRadius = InBlurRadius;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7265,20 +8753,51 @@ void UBackgroundBlur::SetBlurRadius(int32 InBlurRadius)
 
 void UBackgroundBlur::SetApplyAlphaToBlur(bool bInApplyAlphaToBlur)
 {
-	static auto Func = Class->GetFunction("BackgroundBlur", "SetApplyAlphaToBlur");
+	static class UFunction* Func = nullptr;
 
-	Params::UBackgroundBlur_SetApplyAlphaToBlur_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BackgroundBlur", "SetApplyAlphaToBlur");
+
+	Params::UBackgroundBlur_SetApplyAlphaToBlur_Params Parms{};
 
 	Parms.bInApplyAlphaToBlur = bInApplyAlphaToBlur;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.BackgroundBlurSlot
+// (None)
+
+class UClass* UBackgroundBlurSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BackgroundBlurSlot");
+
+	return Clss;
+}
+
+
+// BackgroundBlurSlot UMG.Default__BackgroundBlurSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UBackgroundBlurSlot* UBackgroundBlurSlot::GetDefaultObj()
+{
+	static class UBackgroundBlurSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBackgroundBlurSlot*>(UBackgroundBlurSlot::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -7289,19 +8808,22 @@ void UBackgroundBlur::SetApplyAlphaToBlur(bool bInApplyAlphaToBlur)
 
 void UBackgroundBlurSlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("BackgroundBlurSlot", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UBackgroundBlurSlot_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BackgroundBlurSlot", "SetVerticalAlignment");
+
+	Params::UBackgroundBlurSlot_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7313,19 +8835,22 @@ void UBackgroundBlurSlot::SetVerticalAlignment(enum class EVerticalAlignment InV
 
 void UBackgroundBlurSlot::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("BackgroundBlurSlot", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UBackgroundBlurSlot_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BackgroundBlurSlot", "SetPadding");
+
+	Params::UBackgroundBlurSlot_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7337,20 +8862,79 @@ void UBackgroundBlurSlot::SetPadding(const struct FMargin& InPadding)
 
 void UBackgroundBlurSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("BackgroundBlurSlot", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UBackgroundBlurSlot_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BackgroundBlurSlot", "SetHorizontalAlignment");
+
+	Params::UBackgroundBlurSlot_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.PropertyBinding
+// (None)
+
+class UClass* UPropertyBinding::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PropertyBinding");
+
+	return Clss;
+}
+
+
+// PropertyBinding UMG.Default__PropertyBinding
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPropertyBinding* UPropertyBinding::GetDefaultObj()
+{
+	static class UPropertyBinding* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPropertyBinding*>(UPropertyBinding::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.BoolBinding
+// (None)
+
+class UClass* UBoolBinding::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BoolBinding");
+
+	return Clss;
+}
+
+
+// BoolBinding UMG.Default__BoolBinding
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UBoolBinding* UBoolBinding::GetDefaultObj()
+{
+	static class UBoolBinding* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBoolBinding*>(UBoolBinding::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -7361,21 +8945,52 @@ void UBackgroundBlurSlot::SetHorizontalAlignment(enum class EHorizontalAlignment
 
 bool UBoolBinding::GetValue()
 {
-	static auto Func = Class->GetFunction("BoolBinding", "GetValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UBoolBinding_GetValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BoolBinding", "GetValue");
+
+	Params::UBoolBinding_GetValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.BorderSlot
+// (None)
+
+class UClass* UBorderSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BorderSlot");
+
+	return Clss;
+}
+
+
+// BorderSlot UMG.Default__BorderSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UBorderSlot* UBorderSlot::GetDefaultObj()
+{
+	static class UBorderSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorderSlot*>(UBorderSlot::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -7386,19 +9001,22 @@ bool UBoolBinding::GetValue()
 
 void UBorderSlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("BorderSlot", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UBorderSlot_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BorderSlot", "SetVerticalAlignment");
+
+	Params::UBorderSlot_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7410,19 +9028,22 @@ void UBorderSlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalA
 
 void UBorderSlot::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("BorderSlot", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UBorderSlot_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BorderSlot", "SetPadding");
+
+	Params::UBorderSlot_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7434,20 +9055,51 @@ void UBorderSlot::SetPadding(const struct FMargin& InPadding)
 
 void UBorderSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("BorderSlot", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UBorderSlot_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BorderSlot", "SetHorizontalAlignment");
+
+	Params::UBorderSlot_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.BrushBinding
+// (None)
+
+class UClass* UBrushBinding::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BrushBinding");
+
+	return Clss;
+}
+
+
+// BrushBinding UMG.Default__BrushBinding
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UBrushBinding* UBrushBinding::GetDefaultObj()
+{
+	static class UBrushBinding* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBrushBinding*>(UBrushBinding::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -7458,21 +9110,52 @@ void UBorderSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHoriz
 
 struct FSlateBrush UBrushBinding::GetValue()
 {
-	static auto Func = Class->GetFunction("BrushBinding", "GetValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UBrushBinding_GetValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BrushBinding", "GetValue");
+
+	Params::UBrushBinding_GetValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.ButtonSlot
+// (None)
+
+class UClass* UButtonSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ButtonSlot");
+
+	return Clss;
+}
+
+
+// ButtonSlot UMG.Default__ButtonSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UButtonSlot* UButtonSlot::GetDefaultObj()
+{
+	static class UButtonSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UButtonSlot*>(UButtonSlot::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -7483,19 +9166,22 @@ struct FSlateBrush UBrushBinding::GetValue()
 
 void UButtonSlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("ButtonSlot", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UButtonSlot_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ButtonSlot", "SetVerticalAlignment");
+
+	Params::UButtonSlot_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7507,19 +9193,22 @@ void UButtonSlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalA
 
 void UButtonSlot::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("ButtonSlot", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UButtonSlot_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ButtonSlot", "SetPadding");
+
+	Params::UButtonSlot_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7531,20 +9220,51 @@ void UButtonSlot::SetPadding(const struct FMargin& InPadding)
 
 void UButtonSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("ButtonSlot", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UButtonSlot_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ButtonSlot", "SetHorizontalAlignment");
+
+	Params::UButtonSlot_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.CanvasPanel
+// (None)
+
+class UClass* UCanvasPanel::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CanvasPanel");
+
+	return Clss;
+}
+
+
+// CanvasPanel UMG.Default__CanvasPanel
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UCanvasPanel* UCanvasPanel::GetDefaultObj()
+{
+	static class UCanvasPanel* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCanvasPanel*>(UCanvasPanel::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -7556,22 +9276,53 @@ void UButtonSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHoriz
 
 class UCanvasPanelSlot* UCanvasPanel::AddChildToCanvas(class UWidget* Content)
 {
-	static auto Func = Class->GetFunction("CanvasPanel", "AddChildToCanvas");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanel_AddChildToCanvas_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanel", "AddChildToCanvas");
+
+	Params::UCanvasPanel_AddChildToCanvas_Params Parms{};
 
 	Parms.Content = Content;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.CanvasPanelSlot
+// (None)
+
+class UClass* UCanvasPanelSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CanvasPanelSlot");
+
+	return Clss;
+}
+
+
+// CanvasPanelSlot UMG.Default__CanvasPanelSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UCanvasPanelSlot* UCanvasPanelSlot::GetDefaultObj()
+{
+	static class UCanvasPanelSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCanvasPanelSlot*>(UCanvasPanelSlot::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -7582,19 +9333,22 @@ class UCanvasPanelSlot* UCanvasPanel::AddChildToCanvas(class UWidget* Content)
 
 void UCanvasPanelSlot::SetZOrder(int32 InZOrder)
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "SetZOrder");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_SetZOrder_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "SetZOrder");
+
+	Params::UCanvasPanelSlot_SetZOrder_Params Parms{};
 
 	Parms.InZOrder = InZOrder;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7606,19 +9360,22 @@ void UCanvasPanelSlot::SetZOrder(int32 InZOrder)
 
 void UCanvasPanelSlot::SetSize(const struct FVector2D& InSize)
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "SetSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_SetSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "SetSize");
+
+	Params::UCanvasPanelSlot_SetSize_Params Parms{};
 
 	Parms.InSize = InSize;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7630,19 +9387,22 @@ void UCanvasPanelSlot::SetSize(const struct FVector2D& InSize)
 
 void UCanvasPanelSlot::SetPosition(const struct FVector2D& InPosition)
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "SetPosition");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_SetPosition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "SetPosition");
+
+	Params::UCanvasPanelSlot_SetPosition_Params Parms{};
 
 	Parms.InPosition = InPosition;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7654,19 +9414,22 @@ void UCanvasPanelSlot::SetPosition(const struct FVector2D& InPosition)
 
 void UCanvasPanelSlot::SetOffsets(const struct FMargin& InOffset)
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "SetOffsets");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_SetOffsets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "SetOffsets");
+
+	Params::UCanvasPanelSlot_SetOffsets_Params Parms{};
 
 	Parms.InOffset = InOffset;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7678,19 +9441,22 @@ void UCanvasPanelSlot::SetOffsets(const struct FMargin& InOffset)
 
 void UCanvasPanelSlot::SetMinimum(const struct FVector2D& InMinimumAnchors)
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "SetMinimum");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_SetMinimum_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "SetMinimum");
+
+	Params::UCanvasPanelSlot_SetMinimum_Params Parms{};
 
 	Parms.InMinimumAnchors = InMinimumAnchors;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7702,19 +9468,22 @@ void UCanvasPanelSlot::SetMinimum(const struct FVector2D& InMinimumAnchors)
 
 void UCanvasPanelSlot::SetMaximum(const struct FVector2D& InMaximumAnchors)
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "SetMaximum");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_SetMaximum_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "SetMaximum");
+
+	Params::UCanvasPanelSlot_SetMaximum_Params Parms{};
 
 	Parms.InMaximumAnchors = InMaximumAnchors;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7726,19 +9495,22 @@ void UCanvasPanelSlot::SetMaximum(const struct FVector2D& InMaximumAnchors)
 
 void UCanvasPanelSlot::SetLayout(struct FAnchorData& InLayoutData)
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "SetLayout");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_SetLayout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "SetLayout");
+
+	Params::UCanvasPanelSlot_SetLayout_Params Parms{};
 
 	Parms.InLayoutData = InLayoutData;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7750,19 +9522,22 @@ void UCanvasPanelSlot::SetLayout(struct FAnchorData& InLayoutData)
 
 void UCanvasPanelSlot::SetAutoSize(bool InbAutoSize)
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "SetAutoSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_SetAutoSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "SetAutoSize");
+
+	Params::UCanvasPanelSlot_SetAutoSize_Params Parms{};
 
 	Parms.InbAutoSize = InbAutoSize;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7774,19 +9549,22 @@ void UCanvasPanelSlot::SetAutoSize(bool InbAutoSize)
 
 void UCanvasPanelSlot::SetAnchors(const struct FAnchors& InAnchors)
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "SetAnchors");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_SetAnchors_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "SetAnchors");
+
+	Params::UCanvasPanelSlot_SetAnchors_Params Parms{};
 
 	Parms.InAnchors = InAnchors;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7798,19 +9576,22 @@ void UCanvasPanelSlot::SetAnchors(const struct FAnchors& InAnchors)
 
 void UCanvasPanelSlot::SetAlignment(const struct FVector2D& InAlignment)
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "SetAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_SetAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "SetAlignment");
+
+	Params::UCanvasPanelSlot_SetAlignment_Params Parms{};
 
 	Parms.InAlignment = InAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -7822,18 +9603,21 @@ void UCanvasPanelSlot::SetAlignment(const struct FVector2D& InAlignment)
 
 int32 UCanvasPanelSlot::GetZOrder()
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "GetZOrder");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_GetZOrder_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "GetZOrder");
+
+	Params::UCanvasPanelSlot_GetZOrder_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -7847,18 +9631,21 @@ int32 UCanvasPanelSlot::GetZOrder()
 
 struct FVector2D UCanvasPanelSlot::GetSize()
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "GetSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_GetSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "GetSize");
+
+	Params::UCanvasPanelSlot_GetSize_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -7872,18 +9659,21 @@ struct FVector2D UCanvasPanelSlot::GetSize()
 
 struct FVector2D UCanvasPanelSlot::GetPosition()
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "GetPosition");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_GetPosition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "GetPosition");
+
+	Params::UCanvasPanelSlot_GetPosition_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -7897,18 +9687,21 @@ struct FVector2D UCanvasPanelSlot::GetPosition()
 
 struct FMargin UCanvasPanelSlot::GetOffsets()
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "GetOffsets");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_GetOffsets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "GetOffsets");
+
+	Params::UCanvasPanelSlot_GetOffsets_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -7922,18 +9715,21 @@ struct FMargin UCanvasPanelSlot::GetOffsets()
 
 struct FAnchorData UCanvasPanelSlot::GetLayout()
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "GetLayout");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_GetLayout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "GetLayout");
+
+	Params::UCanvasPanelSlot_GetLayout_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -7947,18 +9743,21 @@ struct FAnchorData UCanvasPanelSlot::GetLayout()
 
 bool UCanvasPanelSlot::GetAutoSize()
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "GetAutoSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_GetAutoSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "GetAutoSize");
+
+	Params::UCanvasPanelSlot_GetAutoSize_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -7972,18 +9771,21 @@ bool UCanvasPanelSlot::GetAutoSize()
 
 struct FAnchors UCanvasPanelSlot::GetAnchors()
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "GetAnchors");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_GetAnchors_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "GetAnchors");
+
+	Params::UCanvasPanelSlot_GetAnchors_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -7997,21 +9799,52 @@ struct FAnchors UCanvasPanelSlot::GetAnchors()
 
 struct FVector2D UCanvasPanelSlot::GetAlignment()
 {
-	static auto Func = Class->GetFunction("CanvasPanelSlot", "GetAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UCanvasPanelSlot_GetAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CanvasPanelSlot", "GetAlignment");
+
+	Params::UCanvasPanelSlot_GetAlignment_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.CheckBox
+// (None)
+
+class UClass* UCheckBox::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CheckBox");
+
+	return Clss;
+}
+
+
+// CheckBox UMG.Default__CheckBox
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UCheckBox* UCheckBox::GetDefaultObj()
+{
+	static class UCheckBox* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCheckBox*>(UCheckBox::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -8022,19 +9855,22 @@ struct FVector2D UCanvasPanelSlot::GetAlignment()
 
 void UCheckBox::SetIsChecked(bool InIsChecked)
 {
-	static auto Func = Class->GetFunction("CheckBox", "SetIsChecked");
+	static class UFunction* Func = nullptr;
 
-	Params::UCheckBox_SetIsChecked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CheckBox", "SetIsChecked");
+
+	Params::UCheckBox_SetIsChecked_Params Parms{};
 
 	Parms.InIsChecked = InIsChecked;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8046,19 +9882,22 @@ void UCheckBox::SetIsChecked(bool InIsChecked)
 
 void UCheckBox::SetCheckedState(enum class ECheckBoxState InCheckedState)
 {
-	static auto Func = Class->GetFunction("CheckBox", "SetCheckedState");
+	static class UFunction* Func = nullptr;
 
-	Params::UCheckBox_SetCheckedState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CheckBox", "SetCheckedState");
+
+	Params::UCheckBox_SetCheckedState_Params Parms{};
 
 	Parms.InCheckedState = InCheckedState;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8070,18 +9909,21 @@ void UCheckBox::SetCheckedState(enum class ECheckBoxState InCheckedState)
 
 bool UCheckBox::IsPressed()
 {
-	static auto Func = Class->GetFunction("CheckBox", "IsPressed");
+	static class UFunction* Func = nullptr;
 
-	Params::UCheckBox_IsPressed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CheckBox", "IsPressed");
+
+	Params::UCheckBox_IsPressed_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -8095,18 +9937,21 @@ bool UCheckBox::IsPressed()
 
 bool UCheckBox::IsChecked()
 {
-	static auto Func = Class->GetFunction("CheckBox", "IsChecked");
+	static class UFunction* Func = nullptr;
 
-	Params::UCheckBox_IsChecked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CheckBox", "IsChecked");
+
+	Params::UCheckBox_IsChecked_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -8120,21 +9965,52 @@ bool UCheckBox::IsChecked()
 
 enum class ECheckBoxState UCheckBox::GetCheckedState()
 {
-	static auto Func = Class->GetFunction("CheckBox", "GetCheckedState");
+	static class UFunction* Func = nullptr;
 
-	Params::UCheckBox_GetCheckedState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CheckBox", "GetCheckedState");
+
+	Params::UCheckBox_GetCheckedState_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.CheckedStateBinding
+// (None)
+
+class UClass* UCheckedStateBinding::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CheckedStateBinding");
+
+	return Clss;
+}
+
+
+// CheckedStateBinding UMG.Default__CheckedStateBinding
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UCheckedStateBinding* UCheckedStateBinding::GetDefaultObj()
+{
+	static class UCheckedStateBinding* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCheckedStateBinding*>(UCheckedStateBinding::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -8145,21 +10021,52 @@ enum class ECheckBoxState UCheckBox::GetCheckedState()
 
 enum class ECheckBoxState UCheckedStateBinding::GetValue()
 {
-	static auto Func = Class->GetFunction("CheckedStateBinding", "GetValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UCheckedStateBinding_GetValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CheckedStateBinding", "GetValue");
+
+	Params::UCheckedStateBinding_GetValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.CircularThrobber
+// (None)
+
+class UClass* UCircularThrobber::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CircularThrobber");
+
+	return Clss;
+}
+
+
+// CircularThrobber UMG.Default__CircularThrobber
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UCircularThrobber* UCircularThrobber::GetDefaultObj()
+{
+	static class UCircularThrobber* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCircularThrobber*>(UCircularThrobber::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -8170,19 +10077,22 @@ enum class ECheckBoxState UCheckedStateBinding::GetValue()
 
 void UCircularThrobber::SetRadius(float InRadius)
 {
-	static auto Func = Class->GetFunction("CircularThrobber", "SetRadius");
+	static class UFunction* Func = nullptr;
 
-	Params::UCircularThrobber_SetRadius_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CircularThrobber", "SetRadius");
+
+	Params::UCircularThrobber_SetRadius_Params Parms{};
 
 	Parms.InRadius = InRadius;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8194,19 +10104,22 @@ void UCircularThrobber::SetRadius(float InRadius)
 
 void UCircularThrobber::SetPeriod(float InPeriod)
 {
-	static auto Func = Class->GetFunction("CircularThrobber", "SetPeriod");
+	static class UFunction* Func = nullptr;
 
-	Params::UCircularThrobber_SetPeriod_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CircularThrobber", "SetPeriod");
+
+	Params::UCircularThrobber_SetPeriod_Params Parms{};
 
 	Parms.InPeriod = InPeriod;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8218,20 +10131,51 @@ void UCircularThrobber::SetPeriod(float InPeriod)
 
 void UCircularThrobber::SetNumberOfPieces(int32 InNumberOfPieces)
 {
-	static auto Func = Class->GetFunction("CircularThrobber", "SetNumberOfPieces");
+	static class UFunction* Func = nullptr;
 
-	Params::UCircularThrobber_SetNumberOfPieces_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CircularThrobber", "SetNumberOfPieces");
+
+	Params::UCircularThrobber_SetNumberOfPieces_Params Parms{};
 
 	Parms.InNumberOfPieces = InNumberOfPieces;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.ColorBinding
+// (None)
+
+class UClass* UColorBinding::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ColorBinding");
+
+	return Clss;
+}
+
+
+// ColorBinding UMG.Default__ColorBinding
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UColorBinding* UColorBinding::GetDefaultObj()
+{
+	static class UColorBinding* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UColorBinding*>(UColorBinding::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -8242,18 +10186,21 @@ void UCircularThrobber::SetNumberOfPieces(int32 InNumberOfPieces)
 
 struct FSlateColor UColorBinding::GetSlateValue()
 {
-	static auto Func = Class->GetFunction("ColorBinding", "GetSlateValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UColorBinding_GetSlateValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ColorBinding", "GetSlateValue");
+
+	Params::UColorBinding_GetSlateValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -8267,21 +10214,80 @@ struct FSlateColor UColorBinding::GetSlateValue()
 
 struct FLinearColor UColorBinding::GetLinearValue()
 {
-	static auto Func = Class->GetFunction("ColorBinding", "GetLinearValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UColorBinding_GetLinearValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ColorBinding", "GetLinearValue");
+
+	Params::UColorBinding_GetLinearValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.ComboBox
+// (None)
+
+class UClass* UComboBox::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ComboBox");
+
+	return Clss;
+}
+
+
+// ComboBox UMG.Default__ComboBox
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UComboBox* UComboBox::GetDefaultObj()
+{
+	static class UComboBox* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UComboBox*>(UComboBox::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.ComboBoxString
+// (None)
+
+class UClass* UComboBoxString::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ComboBoxString");
+
+	return Clss;
+}
+
+
+// ComboBoxString UMG.Default__ComboBoxString
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UComboBoxString* UComboBoxString::GetDefaultObj()
+{
+	static class UComboBoxString* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UComboBoxString*>(UComboBoxString::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -8292,19 +10298,22 @@ struct FLinearColor UColorBinding::GetLinearValue()
 
 void UComboBoxString::SetSelectedOption(const class FString& Option)
 {
-	static auto Func = Class->GetFunction("ComboBoxString", "SetSelectedOption");
+	static class UFunction* Func = nullptr;
 
-	Params::UComboBoxString_SetSelectedOption_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComboBoxString", "SetSelectedOption");
+
+	Params::UComboBoxString_SetSelectedOption_Params Parms{};
 
 	Parms.Option = Option;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8316,19 +10325,22 @@ void UComboBoxString::SetSelectedOption(const class FString& Option)
 
 void UComboBoxString::SetSelectedIndex(int32 Index)
 {
-	static auto Func = Class->GetFunction("ComboBoxString", "SetSelectedIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UComboBoxString_SetSelectedIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComboBoxString", "SetSelectedIndex");
+
+	Params::UComboBoxString_SetSelectedIndex_Params Parms{};
 
 	Parms.Index = Index;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8341,19 +10353,22 @@ void UComboBoxString::SetSelectedIndex(int32 Index)
 
 bool UComboBoxString::RemoveOption(const class FString& Option)
 {
-	static auto Func = Class->GetFunction("ComboBoxString", "RemoveOption");
+	static class UFunction* Func = nullptr;
 
-	Params::UComboBoxString_RemoveOption_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComboBoxString", "RemoveOption");
+
+	Params::UComboBoxString_RemoveOption_Params Parms{};
 
 	Parms.Option = Option;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -8366,18 +10381,20 @@ bool UComboBoxString::RemoveOption(const class FString& Option)
 
 void UComboBoxString::RefreshOptions()
 {
-	static auto Func = Class->GetFunction("ComboBoxString", "RefreshOptions");
+	static class UFunction* Func = nullptr;
 
-	Params::UComboBoxString_RefreshOptions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComboBoxString", "RefreshOptions");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8390,9 +10407,12 @@ void UComboBoxString::RefreshOptions()
 
 void UComboBoxString::OnSelectionChangedEvent__DelegateSignature(const class FString& SelectedItem, enum class ESelectInfo SelectionType)
 {
-	static auto Func = Class->GetFunction("ComboBoxString", "OnSelectionChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UComboBoxString_OnSelectionChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComboBoxString", "OnSelectionChangedEvent__DelegateSignature");
+
+	Params::UComboBoxString_OnSelectionChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.SelectedItem = SelectedItem;
 	Parms.SelectionType = SelectionType;
@@ -8408,12 +10428,14 @@ void UComboBoxString::OnSelectionChangedEvent__DelegateSignature(const class FSt
 
 void UComboBoxString::OnOpeningEvent__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("ComboBoxString", "OnOpeningEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UComboBoxString_OnOpeningEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComboBoxString", "OnOpeningEvent__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -8425,18 +10447,21 @@ void UComboBoxString::OnOpeningEvent__DelegateSignature()
 
 class FString UComboBoxString::GetSelectedOption()
 {
-	static auto Func = Class->GetFunction("ComboBoxString", "GetSelectedOption");
+	static class UFunction* Func = nullptr;
 
-	Params::UComboBoxString_GetSelectedOption_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComboBoxString", "GetSelectedOption");
+
+	Params::UComboBoxString_GetSelectedOption_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -8450,18 +10475,21 @@ class FString UComboBoxString::GetSelectedOption()
 
 int32 UComboBoxString::GetSelectedIndex()
 {
-	static auto Func = Class->GetFunction("ComboBoxString", "GetSelectedIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UComboBoxString_GetSelectedIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComboBoxString", "GetSelectedIndex");
+
+	Params::UComboBoxString_GetSelectedIndex_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -8475,18 +10503,21 @@ int32 UComboBoxString::GetSelectedIndex()
 
 int32 UComboBoxString::GetOptionCount()
 {
-	static auto Func = Class->GetFunction("ComboBoxString", "GetOptionCount");
+	static class UFunction* Func = nullptr;
 
-	Params::UComboBoxString_GetOptionCount_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComboBoxString", "GetOptionCount");
+
+	Params::UComboBoxString_GetOptionCount_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -8501,19 +10532,22 @@ int32 UComboBoxString::GetOptionCount()
 
 class FString UComboBoxString::GetOptionAtIndex(int32 Index)
 {
-	static auto Func = Class->GetFunction("ComboBoxString", "GetOptionAtIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UComboBoxString_GetOptionAtIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComboBoxString", "GetOptionAtIndex");
+
+	Params::UComboBoxString_GetOptionAtIndex_Params Parms{};
 
 	Parms.Index = Index;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -8528,19 +10562,22 @@ class FString UComboBoxString::GetOptionAtIndex(int32 Index)
 
 int32 UComboBoxString::FindOptionIndex(const class FString& Option)
 {
-	static auto Func = Class->GetFunction("ComboBoxString", "FindOptionIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UComboBoxString_FindOptionIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComboBoxString", "FindOptionIndex");
+
+	Params::UComboBoxString_FindOptionIndex_Params Parms{};
 
 	Parms.Option = Option;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -8553,18 +10590,20 @@ int32 UComboBoxString::FindOptionIndex(const class FString& Option)
 
 void UComboBoxString::ClearSelection()
 {
-	static auto Func = Class->GetFunction("ComboBoxString", "ClearSelection");
+	static class UFunction* Func = nullptr;
 
-	Params::UComboBoxString_ClearSelection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComboBoxString", "ClearSelection");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8575,18 +10614,20 @@ void UComboBoxString::ClearSelection()
 
 void UComboBoxString::ClearOptions()
 {
-	static auto Func = Class->GetFunction("ComboBoxString", "ClearOptions");
+	static class UFunction* Func = nullptr;
 
-	Params::UComboBoxString_ClearOptions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComboBoxString", "ClearOptions");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8598,20 +10639,51 @@ void UComboBoxString::ClearOptions()
 
 void UComboBoxString::AddOption(const class FString& Option)
 {
-	static auto Func = Class->GetFunction("ComboBoxString", "AddOption");
+	static class UFunction* Func = nullptr;
 
-	Params::UComboBoxString_AddOption_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComboBoxString", "AddOption");
+
+	Params::UComboBoxString_AddOption_Params Parms{};
 
 	Parms.Option = Option;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.DragDropOperation
+// (None)
+
+class UClass* UDragDropOperation::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DragDropOperation");
+
+	return Clss;
+}
+
+
+// DragDropOperation UMG.Default__DragDropOperation
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UDragDropOperation* UDragDropOperation::GetDefaultObj()
+{
+	static class UDragDropOperation* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UDragDropOperation*>(UDragDropOperation::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -8622,19 +10694,22 @@ void UComboBoxString::AddOption(const class FString& Option)
 
 void UDragDropOperation::Drop(struct FPointerEvent& PointerEvent)
 {
-	static auto Func = Class->GetFunction("DragDropOperation", "Drop");
+	static class UFunction* Func = nullptr;
 
-	Params::UDragDropOperation_Drop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DragDropOperation", "Drop");
+
+	Params::UDragDropOperation_Drop_Params Parms{};
 
 	Parms.PointerEvent = PointerEvent;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8646,19 +10721,22 @@ void UDragDropOperation::Drop(struct FPointerEvent& PointerEvent)
 
 void UDragDropOperation::Dragged(struct FPointerEvent& PointerEvent)
 {
-	static auto Func = Class->GetFunction("DragDropOperation", "Dragged");
+	static class UFunction* Func = nullptr;
 
-	Params::UDragDropOperation_Dragged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DragDropOperation", "Dragged");
+
+	Params::UDragDropOperation_Dragged_Params Parms{};
 
 	Parms.PointerEvent = PointerEvent;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8670,20 +10748,51 @@ void UDragDropOperation::Dragged(struct FPointerEvent& PointerEvent)
 
 void UDragDropOperation::DragCancelled(struct FPointerEvent& PointerEvent)
 {
-	static auto Func = Class->GetFunction("DragDropOperation", "DragCancelled");
+	static class UFunction* Func = nullptr;
 
-	Params::UDragDropOperation_DragCancelled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DragDropOperation", "DragCancelled");
+
+	Params::UDragDropOperation_DragCancelled_Params Parms{};
 
 	Parms.PointerEvent = PointerEvent;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.DynamicEntryBox
+// (None)
+
+class UClass* UDynamicEntryBox::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DynamicEntryBox");
+
+	return Clss;
+}
+
+
+// DynamicEntryBox UMG.Default__DynamicEntryBox
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UDynamicEntryBox* UDynamicEntryBox::GetDefaultObj()
+{
+	static class UDynamicEntryBox* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UDynamicEntryBox*>(UDynamicEntryBox::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -8694,19 +10803,22 @@ void UDragDropOperation::DragCancelled(struct FPointerEvent& PointerEvent)
 
 void UDynamicEntryBox::Reset(bool bDeleteWidgets)
 {
-	static auto Func = Class->GetFunction("DynamicEntryBox", "Reset");
+	static class UFunction* Func = nullptr;
 
-	Params::UDynamicEntryBox_Reset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DynamicEntryBox", "Reset");
+
+	Params::UDynamicEntryBox_Reset_Params Parms{};
 
 	Parms.bDeleteWidgets = bDeleteWidgets;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8718,19 +10830,22 @@ void UDynamicEntryBox::Reset(bool bDeleteWidgets)
 
 void UDynamicEntryBox::RemoveEntry(class UUserWidget* EntryWidget)
 {
-	static auto Func = Class->GetFunction("DynamicEntryBox", "RemoveEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UDynamicEntryBox_RemoveEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DynamicEntryBox", "RemoveEntry");
+
+	Params::UDynamicEntryBox_RemoveEntry_Params Parms{};
 
 	Parms.EntryWidget = EntryWidget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8743,19 +10858,22 @@ void UDynamicEntryBox::RemoveEntry(class UUserWidget* EntryWidget)
 
 class UUserWidget* UDynamicEntryBox::BP_CreateEntryOfClass(TSubclassOf<class UUserWidget> EntryClass)
 {
-	static auto Func = Class->GetFunction("DynamicEntryBox", "BP_CreateEntryOfClass");
+	static class UFunction* Func = nullptr;
 
-	Params::UDynamicEntryBox_BP_CreateEntryOfClass_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DynamicEntryBox", "BP_CreateEntryOfClass");
+
+	Params::UDynamicEntryBox_BP_CreateEntryOfClass_Params Parms{};
 
 	Parms.EntryClass = EntryClass;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -8769,21 +10887,52 @@ class UUserWidget* UDynamicEntryBox::BP_CreateEntryOfClass(TSubclassOf<class UUs
 
 class UUserWidget* UDynamicEntryBox::BP_CreateEntry()
 {
-	static auto Func = Class->GetFunction("DynamicEntryBox", "BP_CreateEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UDynamicEntryBox_BP_CreateEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DynamicEntryBox", "BP_CreateEntry");
+
+	Params::UDynamicEntryBox_BP_CreateEntry_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.EditableText
+// (None)
+
+class UClass* UEditableText::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EditableText");
+
+	return Clss;
+}
+
+
+// EditableText UMG.Default__EditableText
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UEditableText* UEditableText::GetDefaultObj()
+{
+	static class UEditableText* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEditableText*>(UEditableText::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -8794,19 +10943,22 @@ class UUserWidget* UDynamicEntryBox::BP_CreateEntry()
 
 void UEditableText::SetText(class FText InText)
 {
-	static auto Func = Class->GetFunction("EditableText", "SetText");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableText_SetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableText", "SetText");
+
+	Params::UEditableText_SetText_Params Parms{};
 
 	Parms.InText = InText;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8818,19 +10970,22 @@ void UEditableText::SetText(class FText InText)
 
 void UEditableText::SetJustification(enum class ETextJustify InJustification)
 {
-	static auto Func = Class->GetFunction("EditableText", "SetJustification");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableText_SetJustification_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableText", "SetJustification");
+
+	Params::UEditableText_SetJustification_Params Parms{};
 
 	Parms.InJustification = InJustification;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8842,19 +10997,22 @@ void UEditableText::SetJustification(enum class ETextJustify InJustification)
 
 void UEditableText::SetIsReadOnly(bool InbIsReadyOnly)
 {
-	static auto Func = Class->GetFunction("EditableText", "SetIsReadOnly");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableText_SetIsReadOnly_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableText", "SetIsReadOnly");
+
+	Params::UEditableText_SetIsReadOnly_Params Parms{};
 
 	Parms.InbIsReadyOnly = InbIsReadyOnly;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8866,19 +11024,22 @@ void UEditableText::SetIsReadOnly(bool InbIsReadyOnly)
 
 void UEditableText::SetIsPassword(bool InbIsPassword)
 {
-	static auto Func = Class->GetFunction("EditableText", "SetIsPassword");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableText_SetIsPassword_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableText", "SetIsPassword");
+
+	Params::UEditableText_SetIsPassword_Params Parms{};
 
 	Parms.InbIsPassword = InbIsPassword;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8890,19 +11051,22 @@ void UEditableText::SetIsPassword(bool InbIsPassword)
 
 void UEditableText::SetHintText(class FText InHintText)
 {
-	static auto Func = Class->GetFunction("EditableText", "SetHintText");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableText_SetHintText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableText", "SetHintText");
+
+	Params::UEditableText_SetHintText_Params Parms{};
 
 	Parms.InHintText = InHintText;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -8915,9 +11079,12 @@ void UEditableText::SetHintText(class FText InHintText)
 
 void UEditableText::OnEditableTextCommittedEvent__DelegateSignature(class FText& Text, enum class ETextCommit CommitMethod)
 {
-	static auto Func = Class->GetFunction("EditableText", "OnEditableTextCommittedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableText_OnEditableTextCommittedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableText", "OnEditableTextCommittedEvent__DelegateSignature");
+
+	Params::UEditableText_OnEditableTextCommittedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.CommitMethod = CommitMethod;
@@ -8934,9 +11101,12 @@ void UEditableText::OnEditableTextCommittedEvent__DelegateSignature(class FText&
 
 void UEditableText::OnEditableTextChangedEvent__DelegateSignature(class FText& Text)
 {
-	static auto Func = Class->GetFunction("EditableText", "OnEditableTextChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableText_OnEditableTextChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableText", "OnEditableTextChangedEvent__DelegateSignature");
+
+	Params::UEditableText_OnEditableTextChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Text = Text;
 
@@ -8952,21 +11122,52 @@ void UEditableText::OnEditableTextChangedEvent__DelegateSignature(class FText& T
 
 class FText UEditableText::GetText()
 {
-	static auto Func = Class->GetFunction("EditableText", "GetText");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableText_GetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableText", "GetText");
+
+	Params::UEditableText_GetText_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.EditableTextBox
+// (None)
+
+class UClass* UEditableTextBox::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EditableTextBox");
+
+	return Clss;
+}
+
+
+// EditableTextBox UMG.Default__EditableTextBox
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UEditableTextBox* UEditableTextBox::GetDefaultObj()
+{
+	static class UEditableTextBox* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEditableTextBox*>(UEditableTextBox::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -8977,19 +11178,22 @@ class FText UEditableText::GetText()
 
 void UEditableTextBox::SetText(class FText InText)
 {
-	static auto Func = Class->GetFunction("EditableTextBox", "SetText");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableTextBox_SetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableTextBox", "SetText");
+
+	Params::UEditableTextBox_SetText_Params Parms{};
 
 	Parms.InText = InText;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9001,19 +11205,22 @@ void UEditableTextBox::SetText(class FText InText)
 
 void UEditableTextBox::SetJustification(enum class ETextJustify InJustification)
 {
-	static auto Func = Class->GetFunction("EditableTextBox", "SetJustification");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableTextBox_SetJustification_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableTextBox", "SetJustification");
+
+	Params::UEditableTextBox_SetJustification_Params Parms{};
 
 	Parms.InJustification = InJustification;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9025,19 +11232,22 @@ void UEditableTextBox::SetJustification(enum class ETextJustify InJustification)
 
 void UEditableTextBox::SetIsReadOnly(bool bReadOnly)
 {
-	static auto Func = Class->GetFunction("EditableTextBox", "SetIsReadOnly");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableTextBox_SetIsReadOnly_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableTextBox", "SetIsReadOnly");
+
+	Params::UEditableTextBox_SetIsReadOnly_Params Parms{};
 
 	Parms.bReadOnly = bReadOnly;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9049,19 +11259,22 @@ void UEditableTextBox::SetIsReadOnly(bool bReadOnly)
 
 void UEditableTextBox::SetIsPassword(bool bIsPassword)
 {
-	static auto Func = Class->GetFunction("EditableTextBox", "SetIsPassword");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableTextBox_SetIsPassword_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableTextBox", "SetIsPassword");
+
+	Params::UEditableTextBox_SetIsPassword_Params Parms{};
 
 	Parms.bIsPassword = bIsPassword;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9073,19 +11286,22 @@ void UEditableTextBox::SetIsPassword(bool bIsPassword)
 
 void UEditableTextBox::SetHintText(class FText InText)
 {
-	static auto Func = Class->GetFunction("EditableTextBox", "SetHintText");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableTextBox_SetHintText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableTextBox", "SetHintText");
+
+	Params::UEditableTextBox_SetHintText_Params Parms{};
 
 	Parms.InText = InText;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9097,19 +11313,22 @@ void UEditableTextBox::SetHintText(class FText InText)
 
 void UEditableTextBox::SetError(class FText InError)
 {
-	static auto Func = Class->GetFunction("EditableTextBox", "SetError");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableTextBox_SetError_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableTextBox", "SetError");
+
+	Params::UEditableTextBox_SetError_Params Parms{};
 
 	Parms.InError = InError;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9122,9 +11341,12 @@ void UEditableTextBox::SetError(class FText InError)
 
 void UEditableTextBox::OnEditableTextBoxCommittedEvent__DelegateSignature(class FText& Text, enum class ETextCommit CommitMethod)
 {
-	static auto Func = Class->GetFunction("EditableTextBox", "OnEditableTextBoxCommittedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableTextBox_OnEditableTextBoxCommittedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableTextBox", "OnEditableTextBoxCommittedEvent__DelegateSignature");
+
+	Params::UEditableTextBox_OnEditableTextBoxCommittedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.CommitMethod = CommitMethod;
@@ -9141,9 +11363,12 @@ void UEditableTextBox::OnEditableTextBoxCommittedEvent__DelegateSignature(class 
 
 void UEditableTextBox::OnEditableTextBoxChangedEvent__DelegateSignature(class FText& Text)
 {
-	static auto Func = Class->GetFunction("EditableTextBox", "OnEditableTextBoxChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableTextBox_OnEditableTextBoxChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableTextBox", "OnEditableTextBoxChangedEvent__DelegateSignature");
+
+	Params::UEditableTextBox_OnEditableTextBoxChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Text = Text;
 
@@ -9159,18 +11384,21 @@ void UEditableTextBox::OnEditableTextBoxChangedEvent__DelegateSignature(class FT
 
 bool UEditableTextBox::HasError()
 {
-	static auto Func = Class->GetFunction("EditableTextBox", "HasError");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableTextBox_HasError_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableTextBox", "HasError");
+
+	Params::UEditableTextBox_HasError_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -9184,18 +11412,21 @@ bool UEditableTextBox::HasError()
 
 class FText UEditableTextBox::GetText()
 {
-	static auto Func = Class->GetFunction("EditableTextBox", "GetText");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableTextBox_GetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableTextBox", "GetText");
+
+	Params::UEditableTextBox_GetText_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -9208,19 +11439,49 @@ class FText UEditableTextBox::GetText()
 
 void UEditableTextBox::ClearError()
 {
-	static auto Func = Class->GetFunction("EditableTextBox", "ClearError");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditableTextBox_ClearError_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditableTextBox", "ClearError");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.ExpandableArea
+// (None)
+
+class UClass* UExpandableArea::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ExpandableArea");
+
+	return Clss;
+}
+
+
+// ExpandableArea UMG.Default__ExpandableArea
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UExpandableArea* UExpandableArea::GetDefaultObj()
+{
+	static class UExpandableArea* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UExpandableArea*>(UExpandableArea::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -9231,19 +11492,22 @@ void UEditableTextBox::ClearError()
 
 void UExpandableArea::SetIsExpanded_Animated(bool IsExpanded)
 {
-	static auto Func = Class->GetFunction("ExpandableArea", "SetIsExpanded_Animated");
+	static class UFunction* Func = nullptr;
 
-	Params::UExpandableArea_SetIsExpanded_Animated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ExpandableArea", "SetIsExpanded_Animated");
+
+	Params::UExpandableArea_SetIsExpanded_Animated_Params Parms{};
 
 	Parms.IsExpanded = IsExpanded;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9255,19 +11519,22 @@ void UExpandableArea::SetIsExpanded_Animated(bool IsExpanded)
 
 void UExpandableArea::SetIsExpanded(bool IsExpanded)
 {
-	static auto Func = Class->GetFunction("ExpandableArea", "SetIsExpanded");
+	static class UFunction* Func = nullptr;
 
-	Params::UExpandableArea_SetIsExpanded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ExpandableArea", "SetIsExpanded");
+
+	Params::UExpandableArea_SetIsExpanded_Params Parms{};
 
 	Parms.IsExpanded = IsExpanded;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9279,21 +11546,52 @@ void UExpandableArea::SetIsExpanded(bool IsExpanded)
 
 bool UExpandableArea::GetIsExpanded()
 {
-	static auto Func = Class->GetFunction("ExpandableArea", "GetIsExpanded");
+	static class UFunction* Func = nullptr;
 
-	Params::UExpandableArea_GetIsExpanded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ExpandableArea", "GetIsExpanded");
+
+	Params::UExpandableArea_GetIsExpanded_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.FloatBinding
+// (None)
+
+class UClass* UFloatBinding::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FloatBinding");
+
+	return Clss;
+}
+
+
+// FloatBinding UMG.Default__FloatBinding
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UFloatBinding* UFloatBinding::GetDefaultObj()
+{
+	static class UFloatBinding* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFloatBinding*>(UFloatBinding::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -9304,21 +11602,52 @@ bool UExpandableArea::GetIsExpanded()
 
 float UFloatBinding::GetValue()
 {
-	static auto Func = Class->GetFunction("FloatBinding", "GetValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UFloatBinding_GetValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FloatBinding", "GetValue");
+
+	Params::UFloatBinding_GetValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.GridPanel
+// (None)
+
+class UClass* UGridPanel::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GridPanel");
+
+	return Clss;
+}
+
+
+// GridPanel UMG.Default__GridPanel
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UGridPanel* UGridPanel::GetDefaultObj()
+{
+	static class UGridPanel* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGridPanel*>(UGridPanel::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -9330,20 +11659,23 @@ float UFloatBinding::GetValue()
 
 void UGridPanel::SetRowFill(int32 ColumnIndex, float Coefficient)
 {
-	static auto Func = Class->GetFunction("GridPanel", "SetRowFill");
+	static class UFunction* Func = nullptr;
 
-	Params::UGridPanel_SetRowFill_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GridPanel", "SetRowFill");
+
+	Params::UGridPanel_SetRowFill_Params Parms{};
 
 	Parms.ColumnIndex = ColumnIndex;
 	Parms.Coefficient = Coefficient;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9356,20 +11688,23 @@ void UGridPanel::SetRowFill(int32 ColumnIndex, float Coefficient)
 
 void UGridPanel::SetColumnFill(int32 ColumnIndex, float Coefficient)
 {
-	static auto Func = Class->GetFunction("GridPanel", "SetColumnFill");
+	static class UFunction* Func = nullptr;
 
-	Params::UGridPanel_SetColumnFill_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GridPanel", "SetColumnFill");
+
+	Params::UGridPanel_SetColumnFill_Params Parms{};
 
 	Parms.ColumnIndex = ColumnIndex;
 	Parms.Coefficient = Coefficient;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9384,24 +11719,55 @@ void UGridPanel::SetColumnFill(int32 ColumnIndex, float Coefficient)
 
 class UGridSlot* UGridPanel::AddChildToGrid(class UWidget* Content, int32 InRow, int32 InColumn)
 {
-	static auto Func = Class->GetFunction("GridPanel", "AddChildToGrid");
+	static class UFunction* Func = nullptr;
 
-	Params::UGridPanel_AddChildToGrid_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GridPanel", "AddChildToGrid");
+
+	Params::UGridPanel_AddChildToGrid_Params Parms{};
 
 	Parms.Content = Content;
 	Parms.InRow = InRow;
 	Parms.InColumn = InColumn;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.GridSlot
+// (None)
+
+class UClass* UGridSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GridSlot");
+
+	return Clss;
+}
+
+
+// GridSlot UMG.Default__GridSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UGridSlot* UGridSlot::GetDefaultObj()
+{
+	static class UGridSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGridSlot*>(UGridSlot::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -9412,19 +11778,22 @@ class UGridSlot* UGridPanel::AddChildToGrid(class UWidget* Content, int32 InRow,
 
 void UGridSlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("GridSlot", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UGridSlot_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GridSlot", "SetVerticalAlignment");
+
+	Params::UGridSlot_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9436,19 +11805,22 @@ void UGridSlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAli
 
 void UGridSlot::SetRowSpan(int32 InRowSpan)
 {
-	static auto Func = Class->GetFunction("GridSlot", "SetRowSpan");
+	static class UFunction* Func = nullptr;
 
-	Params::UGridSlot_SetRowSpan_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GridSlot", "SetRowSpan");
+
+	Params::UGridSlot_SetRowSpan_Params Parms{};
 
 	Parms.InRowSpan = InRowSpan;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9460,19 +11832,22 @@ void UGridSlot::SetRowSpan(int32 InRowSpan)
 
 void UGridSlot::SetRow(int32 InRow)
 {
-	static auto Func = Class->GetFunction("GridSlot", "SetRow");
+	static class UFunction* Func = nullptr;
 
-	Params::UGridSlot_SetRow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GridSlot", "SetRow");
+
+	Params::UGridSlot_SetRow_Params Parms{};
 
 	Parms.InRow = InRow;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9484,19 +11859,22 @@ void UGridSlot::SetRow(int32 InRow)
 
 void UGridSlot::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("GridSlot", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UGridSlot_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GridSlot", "SetPadding");
+
+	Params::UGridSlot_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9508,19 +11886,22 @@ void UGridSlot::SetPadding(const struct FMargin& InPadding)
 
 void UGridSlot::SetNudge(const struct FVector2D& InNudge)
 {
-	static auto Func = Class->GetFunction("GridSlot", "SetNudge");
+	static class UFunction* Func = nullptr;
 
-	Params::UGridSlot_SetNudge_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GridSlot", "SetNudge");
+
+	Params::UGridSlot_SetNudge_Params Parms{};
 
 	Parms.InNudge = InNudge;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9532,19 +11913,22 @@ void UGridSlot::SetNudge(const struct FVector2D& InNudge)
 
 void UGridSlot::SetLayer(int32 InLayer)
 {
-	static auto Func = Class->GetFunction("GridSlot", "SetLayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UGridSlot_SetLayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GridSlot", "SetLayer");
+
+	Params::UGridSlot_SetLayer_Params Parms{};
 
 	Parms.InLayer = InLayer;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9556,19 +11940,22 @@ void UGridSlot::SetLayer(int32 InLayer)
 
 void UGridSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("GridSlot", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UGridSlot_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GridSlot", "SetHorizontalAlignment");
+
+	Params::UGridSlot_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9580,19 +11967,22 @@ void UGridSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizon
 
 void UGridSlot::SetColumnSpan(int32 InColumnSpan)
 {
-	static auto Func = Class->GetFunction("GridSlot", "SetColumnSpan");
+	static class UFunction* Func = nullptr;
 
-	Params::UGridSlot_SetColumnSpan_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GridSlot", "SetColumnSpan");
+
+	Params::UGridSlot_SetColumnSpan_Params Parms{};
 
 	Parms.InColumnSpan = InColumnSpan;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9604,20 +11994,51 @@ void UGridSlot::SetColumnSpan(int32 InColumnSpan)
 
 void UGridSlot::SetColumn(int32 InColumn)
 {
-	static auto Func = Class->GetFunction("GridSlot", "SetColumn");
+	static class UFunction* Func = nullptr;
 
-	Params::UGridSlot_SetColumn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GridSlot", "SetColumn");
+
+	Params::UGridSlot_SetColumn_Params Parms{};
 
 	Parms.InColumn = InColumn;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.HorizontalBox
+// (None)
+
+class UClass* UHorizontalBox::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("HorizontalBox");
+
+	return Clss;
+}
+
+
+// HorizontalBox UMG.Default__HorizontalBox
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UHorizontalBox* UHorizontalBox::GetDefaultObj()
+{
+	static class UHorizontalBox* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UHorizontalBox*>(UHorizontalBox::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -9629,22 +12050,53 @@ void UGridSlot::SetColumn(int32 InColumn)
 
 class UHorizontalBoxSlot* UHorizontalBox::AddChildToHorizontalBox(class UWidget* Content)
 {
-	static auto Func = Class->GetFunction("HorizontalBox", "AddChildToHorizontalBox");
+	static class UFunction* Func = nullptr;
 
-	Params::UHorizontalBox_AddChildToHorizontalBox_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HorizontalBox", "AddChildToHorizontalBox");
+
+	Params::UHorizontalBox_AddChildToHorizontalBox_Params Parms{};
 
 	Parms.Content = Content;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.HorizontalBoxSlot
+// (None)
+
+class UClass* UHorizontalBoxSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("HorizontalBoxSlot");
+
+	return Clss;
+}
+
+
+// HorizontalBoxSlot UMG.Default__HorizontalBoxSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UHorizontalBoxSlot* UHorizontalBoxSlot::GetDefaultObj()
+{
+	static class UHorizontalBoxSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UHorizontalBoxSlot*>(UHorizontalBoxSlot::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -9655,19 +12107,22 @@ class UHorizontalBoxSlot* UHorizontalBox::AddChildToHorizontalBox(class UWidget*
 
 void UHorizontalBoxSlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("HorizontalBoxSlot", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UHorizontalBoxSlot_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HorizontalBoxSlot", "SetVerticalAlignment");
+
+	Params::UHorizontalBoxSlot_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9679,19 +12134,22 @@ void UHorizontalBoxSlot::SetVerticalAlignment(enum class EVerticalAlignment InVe
 
 void UHorizontalBoxSlot::SetSize(const struct FSlateChildSize& InSize)
 {
-	static auto Func = Class->GetFunction("HorizontalBoxSlot", "SetSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UHorizontalBoxSlot_SetSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HorizontalBoxSlot", "SetSize");
+
+	Params::UHorizontalBoxSlot_SetSize_Params Parms{};
 
 	Parms.InSize = InSize;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9703,19 +12161,22 @@ void UHorizontalBoxSlot::SetSize(const struct FSlateChildSize& InSize)
 
 void UHorizontalBoxSlot::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("HorizontalBoxSlot", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UHorizontalBoxSlot_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HorizontalBoxSlot", "SetPadding");
+
+	Params::UHorizontalBoxSlot_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9727,20 +12188,51 @@ void UHorizontalBoxSlot::SetPadding(const struct FMargin& InPadding)
 
 void UHorizontalBoxSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("HorizontalBoxSlot", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UHorizontalBoxSlot_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HorizontalBoxSlot", "SetHorizontalAlignment");
+
+	Params::UHorizontalBoxSlot_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.InputKeySelector
+// (None)
+
+class UClass* UInputKeySelector::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("InputKeySelector");
+
+	return Clss;
+}
+
+
+// InputKeySelector UMG.Default__InputKeySelector
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UInputKeySelector* UInputKeySelector::GetDefaultObj()
+{
+	static class UInputKeySelector* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UInputKeySelector*>(UInputKeySelector::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -9751,19 +12243,22 @@ void UHorizontalBoxSlot::SetHorizontalAlignment(enum class EHorizontalAlignment 
 
 void UInputKeySelector::SetTextBlockVisibility(enum class ESlateVisibility InVisibility)
 {
-	static auto Func = Class->GetFunction("InputKeySelector", "SetTextBlockVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputKeySelector_SetTextBlockVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputKeySelector", "SetTextBlockVisibility");
+
+	Params::UInputKeySelector_SetTextBlockVisibility_Params Parms{};
 
 	Parms.InVisibility = InVisibility;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9775,19 +12270,22 @@ void UInputKeySelector::SetTextBlockVisibility(enum class ESlateVisibility InVis
 
 void UInputKeySelector::SetSelectedKey(struct FInputChord& InSelectedKey)
 {
-	static auto Func = Class->GetFunction("InputKeySelector", "SetSelectedKey");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputKeySelector_SetSelectedKey_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputKeySelector", "SetSelectedKey");
+
+	Params::UInputKeySelector_SetSelectedKey_Params Parms{};
 
 	Parms.InSelectedKey = InSelectedKey;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9799,19 +12297,22 @@ void UInputKeySelector::SetSelectedKey(struct FInputChord& InSelectedKey)
 
 void UInputKeySelector::SetNoKeySpecifiedText(class FText InNoKeySpecifiedText)
 {
-	static auto Func = Class->GetFunction("InputKeySelector", "SetNoKeySpecifiedText");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputKeySelector_SetNoKeySpecifiedText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputKeySelector", "SetNoKeySpecifiedText");
+
+	Params::UInputKeySelector_SetNoKeySpecifiedText_Params Parms{};
 
 	Parms.InNoKeySpecifiedText = InNoKeySpecifiedText;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9823,19 +12324,22 @@ void UInputKeySelector::SetNoKeySpecifiedText(class FText InNoKeySpecifiedText)
 
 void UInputKeySelector::SetKeySelectionText(class FText InKeySelectionText)
 {
-	static auto Func = Class->GetFunction("InputKeySelector", "SetKeySelectionText");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputKeySelector_SetKeySelectionText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputKeySelector", "SetKeySelectionText");
+
+	Params::UInputKeySelector_SetKeySelectionText_Params Parms{};
 
 	Parms.InKeySelectionText = InKeySelectionText;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9847,19 +12351,22 @@ void UInputKeySelector::SetKeySelectionText(class FText InKeySelectionText)
 
 void UInputKeySelector::SetEscapeKeys(TArray<struct FKey>& InKeys)
 {
-	static auto Func = Class->GetFunction("InputKeySelector", "SetEscapeKeys");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputKeySelector_SetEscapeKeys_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputKeySelector", "SetEscapeKeys");
+
+	Params::UInputKeySelector_SetEscapeKeys_Params Parms{};
 
 	Parms.InKeys = InKeys;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9871,19 +12378,22 @@ void UInputKeySelector::SetEscapeKeys(TArray<struct FKey>& InKeys)
 
 void UInputKeySelector::SetAllowModifierKeys(bool bInAllowModifierKeys)
 {
-	static auto Func = Class->GetFunction("InputKeySelector", "SetAllowModifierKeys");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputKeySelector_SetAllowModifierKeys_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputKeySelector", "SetAllowModifierKeys");
+
+	Params::UInputKeySelector_SetAllowModifierKeys_Params Parms{};
 
 	Parms.bInAllowModifierKeys = bInAllowModifierKeys;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9895,19 +12405,22 @@ void UInputKeySelector::SetAllowModifierKeys(bool bInAllowModifierKeys)
 
 void UInputKeySelector::SetAllowGamepadKeys(bool bInAllowGamepadKeys)
 {
-	static auto Func = Class->GetFunction("InputKeySelector", "SetAllowGamepadKeys");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputKeySelector_SetAllowGamepadKeys_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputKeySelector", "SetAllowGamepadKeys");
+
+	Params::UInputKeySelector_SetAllowGamepadKeys_Params Parms{};
 
 	Parms.bInAllowGamepadKeys = bInAllowGamepadKeys;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -9919,9 +12432,12 @@ void UInputKeySelector::SetAllowGamepadKeys(bool bInAllowGamepadKeys)
 
 void UInputKeySelector::OnKeySelected__DelegateSignature(const struct FInputChord& SelectedKey)
 {
-	static auto Func = Class->GetFunction("InputKeySelector", "OnKeySelected__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputKeySelector_OnKeySelected__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputKeySelector", "OnKeySelected__DelegateSignature");
+
+	Params::UInputKeySelector_OnKeySelected__DelegateSignature_Params Parms{};
 
 	Parms.SelectedKey = SelectedKey;
 
@@ -9936,12 +12452,14 @@ void UInputKeySelector::OnKeySelected__DelegateSignature(const struct FInputChor
 
 void UInputKeySelector::OnIsSelectingKeyChanged__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("InputKeySelector", "OnIsSelectingKeyChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputKeySelector_OnIsSelectingKeyChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputKeySelector", "OnIsSelectingKeyChanged__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -9953,21 +12471,52 @@ void UInputKeySelector::OnIsSelectingKeyChanged__DelegateSignature()
 
 bool UInputKeySelector::GetIsSelectingKey()
 {
-	static auto Func = Class->GetFunction("InputKeySelector", "GetIsSelectingKey");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputKeySelector_GetIsSelectingKey_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputKeySelector", "GetIsSelectingKey");
+
+	Params::UInputKeySelector_GetIsSelectingKey_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.Int32Binding
+// (None)
+
+class UClass* UInt32Binding::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Int32Binding");
+
+	return Clss;
+}
+
+
+// Int32Binding UMG.Default__Int32Binding
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UInt32Binding* UInt32Binding::GetDefaultObj()
+{
+	static class UInt32Binding* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UInt32Binding*>(UInt32Binding::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -9978,21 +12527,52 @@ bool UInputKeySelector::GetIsSelectingKey()
 
 int32 UInt32Binding::GetValue()
 {
-	static auto Func = Class->GetFunction("Int32Binding", "GetValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UInt32Binding_GetValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Int32Binding", "GetValue");
+
+	Params::UInt32Binding_GetValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.InvalidationBox
+// (None)
+
+class UClass* UInvalidationBox::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("InvalidationBox");
+
+	return Clss;
+}
+
+
+// InvalidationBox UMG.Default__InvalidationBox
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UInvalidationBox* UInvalidationBox::GetDefaultObj()
+{
+	static class UInvalidationBox* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UInvalidationBox*>(UInvalidationBox::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -10003,19 +12583,22 @@ int32 UInt32Binding::GetValue()
 
 void UInvalidationBox::SetCanCache(bool CanCache)
 {
-	static auto Func = Class->GetFunction("InvalidationBox", "SetCanCache");
+	static class UFunction* Func = nullptr;
 
-	Params::UInvalidationBox_SetCanCache_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InvalidationBox", "SetCanCache");
+
+	Params::UInvalidationBox_SetCanCache_Params Parms{};
 
 	Parms.CanCache = CanCache;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10026,18 +12609,20 @@ void UInvalidationBox::SetCanCache(bool CanCache)
 
 void UInvalidationBox::InvalidateCache()
 {
-	static auto Func = Class->GetFunction("InvalidationBox", "InvalidateCache");
+	static class UFunction* Func = nullptr;
 
-	Params::UInvalidationBox_InvalidateCache_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InvalidationBox", "InvalidateCache");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10049,21 +12634,52 @@ void UInvalidationBox::InvalidateCache()
 
 bool UInvalidationBox::GetCanCache()
 {
-	static auto Func = Class->GetFunction("InvalidationBox", "GetCanCache");
+	static class UFunction* Func = nullptr;
 
-	Params::UInvalidationBox_GetCanCache_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InvalidationBox", "GetCanCache");
+
+	Params::UInvalidationBox_GetCanCache_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.UserListEntry
+// (None)
+
+class UClass* IUserListEntry::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UserListEntry");
+
+	return Clss;
+}
+
+
+// UserListEntry UMG.Default__UserListEntry
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class IUserListEntry* IUserListEntry::GetDefaultObj()
+{
+	static class IUserListEntry* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<IUserListEntry*>(IUserListEntry::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -10074,9 +12690,12 @@ bool UInvalidationBox::GetCanCache()
 
 void IUserListEntry::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("UserListEntry", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::IUserListEntry_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserListEntry", "BP_OnItemSelectionChanged");
+
+	Params::IUserListEntry_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -10092,9 +12711,12 @@ void IUserListEntry::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void IUserListEntry::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("UserListEntry", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::IUserListEntry_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserListEntry", "BP_OnItemExpansionChanged");
+
+	Params::IUserListEntry_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -10109,13 +12731,43 @@ void IUserListEntry::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void IUserListEntry::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("UserListEntry", "BP_OnEntryReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::IUserListEntry_BP_OnEntryReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserListEntry", "BP_OnEntryReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
 
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Class UMG.UserListEntryLibrary
+// (None)
+
+class UClass* UUserListEntryLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UserListEntryLibrary");
+
+	return Clss;
+}
+
+
+// UserListEntryLibrary UMG.Default__UserListEntryLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UUserListEntryLibrary* UUserListEntryLibrary::GetDefaultObj()
+{
+	static class UUserListEntryLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUserListEntryLibrary*>(UUserListEntryLibrary::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -10127,19 +12779,22 @@ void IUserListEntry::BP_OnEntryReleased()
 
 bool UUserListEntryLibrary::IsListItemSelected(TScriptInterface<class IUserListEntry> UserListEntry)
 {
-	static auto Func = Class->GetFunction("UserListEntryLibrary", "IsListItemSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserListEntryLibrary_IsListItemSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserListEntryLibrary", "IsListItemSelected");
+
+	Params::UUserListEntryLibrary_IsListItemSelected_Params Parms{};
 
 	Parms.UserListEntry = UserListEntry;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -10154,19 +12809,22 @@ bool UUserListEntryLibrary::IsListItemSelected(TScriptInterface<class IUserListE
 
 bool UUserListEntryLibrary::IsListItemExpanded(TScriptInterface<class IUserListEntry> UserListEntry)
 {
-	static auto Func = Class->GetFunction("UserListEntryLibrary", "IsListItemExpanded");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserListEntryLibrary_IsListItemExpanded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserListEntryLibrary", "IsListItemExpanded");
+
+	Params::UUserListEntryLibrary_IsListItemExpanded_Params Parms{};
 
 	Parms.UserListEntry = UserListEntry;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -10181,22 +12839,53 @@ bool UUserListEntryLibrary::IsListItemExpanded(TScriptInterface<class IUserListE
 
 class UListViewBase* UUserListEntryLibrary::GetOwningListView(TScriptInterface<class IUserListEntry> UserListEntry)
 {
-	static auto Func = Class->GetFunction("UserListEntryLibrary", "GetOwningListView");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserListEntryLibrary_GetOwningListView_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserListEntryLibrary", "GetOwningListView");
+
+	Params::UUserListEntryLibrary_GetOwningListView_Params Parms{};
 
 	Parms.UserListEntry = UserListEntry;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.UserObjectListEntry
+// (None)
+
+class UClass* IUserObjectListEntry::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UserObjectListEntry");
+
+	return Clss;
+}
+
+
+// UserObjectListEntry UMG.Default__UserObjectListEntry
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class IUserObjectListEntry* IUserObjectListEntry::GetDefaultObj()
+{
+	static class IUserObjectListEntry* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<IUserObjectListEntry*>(IUserObjectListEntry::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -10207,14 +12896,45 @@ class UListViewBase* UUserListEntryLibrary::GetOwningListView(TScriptInterface<c
 
 void IUserObjectListEntry::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("UserObjectListEntry", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::IUserObjectListEntry_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserObjectListEntry", "OnListItemObjectSet");
+
+	Params::IUserObjectListEntry_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 
+}
+
+
+// Class UMG.UserObjectListEntryLibrary
+// (None)
+
+class UClass* UUserObjectListEntryLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UserObjectListEntryLibrary");
+
+	return Clss;
+}
+
+
+// UserObjectListEntryLibrary UMG.Default__UserObjectListEntryLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UUserObjectListEntryLibrary* UUserObjectListEntryLibrary::GetDefaultObj()
+{
+	static class UUserObjectListEntryLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUserObjectListEntryLibrary*>(UUserObjectListEntryLibrary::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -10226,22 +12946,81 @@ void IUserObjectListEntry::OnListItemObjectSet(class UObject* ListItemObject)
 
 class UObject* UUserObjectListEntryLibrary::GetListItemObject(TScriptInterface<class IUserObjectListEntry> UserObjectListEntry)
 {
-	static auto Func = Class->GetFunction("UserObjectListEntryLibrary", "GetListItemObject");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserObjectListEntryLibrary_GetListItemObject_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserObjectListEntryLibrary", "GetListItemObject");
+
+	Params::UUserObjectListEntryLibrary_GetListItemObject_Params Parms{};
 
 	Parms.UserObjectListEntry = UserObjectListEntry;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.ListViewDesignerPreviewItem
+// (None)
+
+class UClass* UListViewDesignerPreviewItem::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ListViewDesignerPreviewItem");
+
+	return Clss;
+}
+
+
+// ListViewDesignerPreviewItem UMG.Default__ListViewDesignerPreviewItem
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UListViewDesignerPreviewItem* UListViewDesignerPreviewItem::GetDefaultObj()
+{
+	static class UListViewDesignerPreviewItem* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UListViewDesignerPreviewItem*>(UListViewDesignerPreviewItem::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.MenuAnchor
+// (None)
+
+class UClass* UMenuAnchor::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MenuAnchor");
+
+	return Clss;
+}
+
+
+// MenuAnchor UMG.Default__MenuAnchor
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMenuAnchor* UMenuAnchor::GetDefaultObj()
+{
+	static class UMenuAnchor* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMenuAnchor*>(UMenuAnchor::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -10252,19 +13031,22 @@ class UObject* UUserObjectListEntryLibrary::GetListItemObject(TScriptInterface<c
 
 void UMenuAnchor::ToggleOpen(bool bFocusOnOpen)
 {
-	static auto Func = Class->GetFunction("MenuAnchor", "ToggleOpen");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuAnchor_ToggleOpen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuAnchor", "ToggleOpen");
+
+	Params::UMenuAnchor_ToggleOpen_Params Parms{};
 
 	Parms.bFocusOnOpen = bFocusOnOpen;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10276,18 +13058,21 @@ void UMenuAnchor::ToggleOpen(bool bFocusOnOpen)
 
 bool UMenuAnchor::ShouldOpenDueToClick()
 {
-	static auto Func = Class->GetFunction("MenuAnchor", "ShouldOpenDueToClick");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuAnchor_ShouldOpenDueToClick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuAnchor", "ShouldOpenDueToClick");
+
+	Params::UMenuAnchor_ShouldOpenDueToClick_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -10301,19 +13086,22 @@ bool UMenuAnchor::ShouldOpenDueToClick()
 
 void UMenuAnchor::SetPlacement(enum class EMenuPlacement InPlacement)
 {
-	static auto Func = Class->GetFunction("MenuAnchor", "SetPlacement");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuAnchor_SetPlacement_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuAnchor", "SetPlacement");
+
+	Params::UMenuAnchor_SetPlacement_Params Parms{};
 
 	Parms.InPlacement = InPlacement;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10325,19 +13113,22 @@ void UMenuAnchor::SetPlacement(enum class EMenuPlacement InPlacement)
 
 void UMenuAnchor::Open(bool bFocusMenu)
 {
-	static auto Func = Class->GetFunction("MenuAnchor", "Open");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuAnchor_Open_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuAnchor", "Open");
+
+	Params::UMenuAnchor_Open_Params Parms{};
 
 	Parms.bFocusMenu = bFocusMenu;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10349,18 +13140,21 @@ void UMenuAnchor::Open(bool bFocusMenu)
 
 bool UMenuAnchor::IsOpen()
 {
-	static auto Func = Class->GetFunction("MenuAnchor", "IsOpen");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuAnchor_IsOpen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuAnchor", "IsOpen");
+
+	Params::UMenuAnchor_IsOpen_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -10374,18 +13168,21 @@ bool UMenuAnchor::IsOpen()
 
 bool UMenuAnchor::HasOpenSubMenus()
 {
-	static auto Func = Class->GetFunction("MenuAnchor", "HasOpenSubMenus");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuAnchor_HasOpenSubMenus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuAnchor", "HasOpenSubMenus");
+
+	Params::UMenuAnchor_HasOpenSubMenus_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -10399,18 +13196,21 @@ bool UMenuAnchor::HasOpenSubMenus()
 
 struct FVector2D UMenuAnchor::GetMenuPosition()
 {
-	static auto Func = Class->GetFunction("MenuAnchor", "GetMenuPosition");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuAnchor_GetMenuPosition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuAnchor", "GetMenuPosition");
+
+	Params::UMenuAnchor_GetMenuPosition_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -10424,19 +13224,22 @@ struct FVector2D UMenuAnchor::GetMenuPosition()
 
 void UMenuAnchor::FitInWindow(bool bFit)
 {
-	static auto Func = Class->GetFunction("MenuAnchor", "FitInWindow");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuAnchor_FitInWindow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuAnchor", "FitInWindow");
+
+	Params::UMenuAnchor_FitInWindow_Params Parms{};
 
 	Parms.bFit = bFit;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10447,19 +13250,49 @@ void UMenuAnchor::FitInWindow(bool bFit)
 
 void UMenuAnchor::Close()
 {
-	static auto Func = Class->GetFunction("MenuAnchor", "Close");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuAnchor_Close_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuAnchor", "Close");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.MouseCursorBinding
+// (None)
+
+class UClass* UMouseCursorBinding::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MouseCursorBinding");
+
+	return Clss;
+}
+
+
+// MouseCursorBinding UMG.Default__MouseCursorBinding
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMouseCursorBinding* UMouseCursorBinding::GetDefaultObj()
+{
+	static class UMouseCursorBinding* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMouseCursorBinding*>(UMouseCursorBinding::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -10470,21 +13303,192 @@ void UMenuAnchor::Close()
 
 enum class EMouseCursor UMouseCursorBinding::GetValue()
 {
-	static auto Func = Class->GetFunction("MouseCursorBinding", "GetValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UMouseCursorBinding_GetValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MouseCursorBinding", "GetValue");
+
+	Params::UMouseCursorBinding_GetValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.MovieScene2DTransformSection
+// (None)
+
+class UClass* UMovieScene2DTransformSection::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MovieScene2DTransformSection");
+
+	return Clss;
+}
+
+
+// MovieScene2DTransformSection UMG.Default__MovieScene2DTransformSection
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMovieScene2DTransformSection* UMovieScene2DTransformSection::GetDefaultObj()
+{
+	static class UMovieScene2DTransformSection* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMovieScene2DTransformSection*>(UMovieScene2DTransformSection::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.MovieScene2DTransformTrack
+// (None)
+
+class UClass* UMovieScene2DTransformTrack::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MovieScene2DTransformTrack");
+
+	return Clss;
+}
+
+
+// MovieScene2DTransformTrack UMG.Default__MovieScene2DTransformTrack
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMovieScene2DTransformTrack* UMovieScene2DTransformTrack::GetDefaultObj()
+{
+	static class UMovieScene2DTransformTrack* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMovieScene2DTransformTrack*>(UMovieScene2DTransformTrack::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.MovieSceneMarginSection
+// (None)
+
+class UClass* UMovieSceneMarginSection::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MovieSceneMarginSection");
+
+	return Clss;
+}
+
+
+// MovieSceneMarginSection UMG.Default__MovieSceneMarginSection
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMovieSceneMarginSection* UMovieSceneMarginSection::GetDefaultObj()
+{
+	static class UMovieSceneMarginSection* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMovieSceneMarginSection*>(UMovieSceneMarginSection::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.MovieSceneMarginTrack
+// (None)
+
+class UClass* UMovieSceneMarginTrack::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MovieSceneMarginTrack");
+
+	return Clss;
+}
+
+
+// MovieSceneMarginTrack UMG.Default__MovieSceneMarginTrack
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMovieSceneMarginTrack* UMovieSceneMarginTrack::GetDefaultObj()
+{
+	static class UMovieSceneMarginTrack* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMovieSceneMarginTrack*>(UMovieSceneMarginTrack::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.MovieSceneWidgetMaterialTrack
+// (None)
+
+class UClass* UMovieSceneWidgetMaterialTrack::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MovieSceneWidgetMaterialTrack");
+
+	return Clss;
+}
+
+
+// MovieSceneWidgetMaterialTrack UMG.Default__MovieSceneWidgetMaterialTrack
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMovieSceneWidgetMaterialTrack* UMovieSceneWidgetMaterialTrack::GetDefaultObj()
+{
+	static class UMovieSceneWidgetMaterialTrack* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMovieSceneWidgetMaterialTrack*>(UMovieSceneWidgetMaterialTrack::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.MultiLineEditableText
+// (None)
+
+class UClass* UMultiLineEditableText::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MultiLineEditableText");
+
+	return Clss;
+}
+
+
+// MultiLineEditableText UMG.Default__MultiLineEditableText
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMultiLineEditableText* UMultiLineEditableText::GetDefaultObj()
+{
+	static class UMultiLineEditableText* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMultiLineEditableText*>(UMultiLineEditableText::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -10495,19 +13499,22 @@ enum class EMouseCursor UMouseCursorBinding::GetValue()
 
 void UMultiLineEditableText::SetWidgetStyle(struct FTextBlockStyle& InWidgetStyle)
 {
-	static auto Func = Class->GetFunction("MultiLineEditableText", "SetWidgetStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableText_SetWidgetStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableText", "SetWidgetStyle");
+
+	Params::UMultiLineEditableText_SetWidgetStyle_Params Parms{};
 
 	Parms.InWidgetStyle = InWidgetStyle;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10519,19 +13526,22 @@ void UMultiLineEditableText::SetWidgetStyle(struct FTextBlockStyle& InWidgetStyl
 
 void UMultiLineEditableText::SetText(class FText InText)
 {
-	static auto Func = Class->GetFunction("MultiLineEditableText", "SetText");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableText_SetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableText", "SetText");
+
+	Params::UMultiLineEditableText_SetText_Params Parms{};
 
 	Parms.InText = InText;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10543,19 +13553,22 @@ void UMultiLineEditableText::SetText(class FText InText)
 
 void UMultiLineEditableText::SetIsReadOnly(bool bReadOnly)
 {
-	static auto Func = Class->GetFunction("MultiLineEditableText", "SetIsReadOnly");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableText_SetIsReadOnly_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableText", "SetIsReadOnly");
+
+	Params::UMultiLineEditableText_SetIsReadOnly_Params Parms{};
 
 	Parms.bReadOnly = bReadOnly;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10567,19 +13580,22 @@ void UMultiLineEditableText::SetIsReadOnly(bool bReadOnly)
 
 void UMultiLineEditableText::SetHintText(class FText InHintText)
 {
-	static auto Func = Class->GetFunction("MultiLineEditableText", "SetHintText");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableText_SetHintText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableText", "SetHintText");
+
+	Params::UMultiLineEditableText_SetHintText_Params Parms{};
 
 	Parms.InHintText = InHintText;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10592,9 +13608,12 @@ void UMultiLineEditableText::SetHintText(class FText InHintText)
 
 void UMultiLineEditableText::OnMultiLineEditableTextCommittedEvent__DelegateSignature(class FText& Text, enum class ETextCommit CommitMethod)
 {
-	static auto Func = Class->GetFunction("MultiLineEditableText", "OnMultiLineEditableTextCommittedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableText_OnMultiLineEditableTextCommittedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableText", "OnMultiLineEditableTextCommittedEvent__DelegateSignature");
+
+	Params::UMultiLineEditableText_OnMultiLineEditableTextCommittedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.CommitMethod = CommitMethod;
@@ -10611,9 +13630,12 @@ void UMultiLineEditableText::OnMultiLineEditableTextCommittedEvent__DelegateSign
 
 void UMultiLineEditableText::OnMultiLineEditableTextChangedEvent__DelegateSignature(class FText& Text)
 {
-	static auto Func = Class->GetFunction("MultiLineEditableText", "OnMultiLineEditableTextChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableText_OnMultiLineEditableTextChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableText", "OnMultiLineEditableTextChangedEvent__DelegateSignature");
+
+	Params::UMultiLineEditableText_OnMultiLineEditableTextChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Text = Text;
 
@@ -10629,18 +13651,21 @@ void UMultiLineEditableText::OnMultiLineEditableTextChangedEvent__DelegateSignat
 
 class FText UMultiLineEditableText::GetText()
 {
-	static auto Func = Class->GetFunction("MultiLineEditableText", "GetText");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableText_GetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableText", "GetText");
+
+	Params::UMultiLineEditableText_GetText_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -10654,21 +13679,52 @@ class FText UMultiLineEditableText::GetText()
 
 class FText UMultiLineEditableText::GetHintText()
 {
-	static auto Func = Class->GetFunction("MultiLineEditableText", "GetHintText");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableText_GetHintText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableText", "GetHintText");
+
+	Params::UMultiLineEditableText_GetHintText_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.MultiLineEditableTextBox
+// (None)
+
+class UClass* UMultiLineEditableTextBox::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MultiLineEditableTextBox");
+
+	return Clss;
+}
+
+
+// MultiLineEditableTextBox UMG.Default__MultiLineEditableTextBox
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMultiLineEditableTextBox* UMultiLineEditableTextBox::GetDefaultObj()
+{
+	static class UMultiLineEditableTextBox* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMultiLineEditableTextBox*>(UMultiLineEditableTextBox::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -10679,19 +13735,22 @@ class FText UMultiLineEditableText::GetHintText()
 
 void UMultiLineEditableTextBox::SetTextStyle(struct FTextBlockStyle& InTextStyle)
 {
-	static auto Func = Class->GetFunction("MultiLineEditableTextBox", "SetTextStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableTextBox_SetTextStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableTextBox", "SetTextStyle");
+
+	Params::UMultiLineEditableTextBox_SetTextStyle_Params Parms{};
 
 	Parms.InTextStyle = InTextStyle;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10703,19 +13762,22 @@ void UMultiLineEditableTextBox::SetTextStyle(struct FTextBlockStyle& InTextStyle
 
 void UMultiLineEditableTextBox::SetText(class FText InText)
 {
-	static auto Func = Class->GetFunction("MultiLineEditableTextBox", "SetText");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableTextBox_SetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableTextBox", "SetText");
+
+	Params::UMultiLineEditableTextBox_SetText_Params Parms{};
 
 	Parms.InText = InText;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10727,19 +13789,22 @@ void UMultiLineEditableTextBox::SetText(class FText InText)
 
 void UMultiLineEditableTextBox::SetIsReadOnly(bool bReadOnly)
 {
-	static auto Func = Class->GetFunction("MultiLineEditableTextBox", "SetIsReadOnly");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableTextBox_SetIsReadOnly_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableTextBox", "SetIsReadOnly");
+
+	Params::UMultiLineEditableTextBox_SetIsReadOnly_Params Parms{};
 
 	Parms.bReadOnly = bReadOnly;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10751,19 +13816,22 @@ void UMultiLineEditableTextBox::SetIsReadOnly(bool bReadOnly)
 
 void UMultiLineEditableTextBox::SetHintText(class FText InHintText)
 {
-	static auto Func = Class->GetFunction("MultiLineEditableTextBox", "SetHintText");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableTextBox_SetHintText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableTextBox", "SetHintText");
+
+	Params::UMultiLineEditableTextBox_SetHintText_Params Parms{};
 
 	Parms.InHintText = InHintText;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10775,19 +13843,22 @@ void UMultiLineEditableTextBox::SetHintText(class FText InHintText)
 
 void UMultiLineEditableTextBox::SetError(class FText InError)
 {
-	static auto Func = Class->GetFunction("MultiLineEditableTextBox", "SetError");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableTextBox_SetError_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableTextBox", "SetError");
+
+	Params::UMultiLineEditableTextBox_SetError_Params Parms{};
 
 	Parms.InError = InError;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10800,9 +13871,12 @@ void UMultiLineEditableTextBox::SetError(class FText InError)
 
 void UMultiLineEditableTextBox::OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature(class FText& Text, enum class ETextCommit CommitMethod)
 {
-	static auto Func = Class->GetFunction("MultiLineEditableTextBox", "OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableTextBox_OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableTextBox", "OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature");
+
+	Params::UMultiLineEditableTextBox_OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.CommitMethod = CommitMethod;
@@ -10819,9 +13893,12 @@ void UMultiLineEditableTextBox::OnMultiLineEditableTextBoxCommittedEvent__Delega
 
 void UMultiLineEditableTextBox::OnMultiLineEditableTextBoxChangedEvent__DelegateSignature(class FText& Text)
 {
-	static auto Func = Class->GetFunction("MultiLineEditableTextBox", "OnMultiLineEditableTextBoxChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableTextBox_OnMultiLineEditableTextBoxChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableTextBox", "OnMultiLineEditableTextBoxChangedEvent__DelegateSignature");
+
+	Params::UMultiLineEditableTextBox_OnMultiLineEditableTextBoxChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Text = Text;
 
@@ -10837,18 +13914,21 @@ void UMultiLineEditableTextBox::OnMultiLineEditableTextBoxChangedEvent__Delegate
 
 class FText UMultiLineEditableTextBox::GetText()
 {
-	static auto Func = Class->GetFunction("MultiLineEditableTextBox", "GetText");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableTextBox_GetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableTextBox", "GetText");
+
+	Params::UMultiLineEditableTextBox_GetText_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -10862,21 +13942,136 @@ class FText UMultiLineEditableTextBox::GetText()
 
 class FText UMultiLineEditableTextBox::GetHintText()
 {
-	static auto Func = Class->GetFunction("MultiLineEditableTextBox", "GetHintText");
+	static class UFunction* Func = nullptr;
 
-	Params::UMultiLineEditableTextBox_GetHintText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MultiLineEditableTextBox", "GetHintText");
+
+	Params::UMultiLineEditableTextBox_GetHintText_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.NamedSlot
+// (None)
+
+class UClass* UNamedSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("NamedSlot");
+
+	return Clss;
+}
+
+
+// NamedSlot UMG.Default__NamedSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UNamedSlot* UNamedSlot::GetDefaultObj()
+{
+	static class UNamedSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UNamedSlot*>(UNamedSlot::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.NamedSlotInterface
+// (None)
+
+class UClass* INamedSlotInterface::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("NamedSlotInterface");
+
+	return Clss;
+}
+
+
+// NamedSlotInterface UMG.Default__NamedSlotInterface
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class INamedSlotInterface* INamedSlotInterface::GetDefaultObj()
+{
+	static class INamedSlotInterface* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<INamedSlotInterface*>(INamedSlotInterface::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.NativeWidgetHost
+// (None)
+
+class UClass* UNativeWidgetHost::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("NativeWidgetHost");
+
+	return Clss;
+}
+
+
+// NativeWidgetHost UMG.Default__NativeWidgetHost
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UNativeWidgetHost* UNativeWidgetHost::GetDefaultObj()
+{
+	static class UNativeWidgetHost* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UNativeWidgetHost*>(UNativeWidgetHost::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.Overlay
+// (None)
+
+class UClass* UOverlay::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Overlay");
+
+	return Clss;
+}
+
+
+// Overlay UMG.Default__Overlay
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UOverlay* UOverlay::GetDefaultObj()
+{
+	static class UOverlay* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UOverlay*>(UOverlay::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -10888,22 +14083,53 @@ class FText UMultiLineEditableTextBox::GetHintText()
 
 class UOverlaySlot* UOverlay::AddChildToOverlay(class UWidget* Content)
 {
-	static auto Func = Class->GetFunction("Overlay", "AddChildToOverlay");
+	static class UFunction* Func = nullptr;
 
-	Params::UOverlay_AddChildToOverlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Overlay", "AddChildToOverlay");
+
+	Params::UOverlay_AddChildToOverlay_Params Parms{};
 
 	Parms.Content = Content;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.OverlaySlot
+// (None)
+
+class UClass* UOverlaySlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OverlaySlot");
+
+	return Clss;
+}
+
+
+// OverlaySlot UMG.Default__OverlaySlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UOverlaySlot* UOverlaySlot::GetDefaultObj()
+{
+	static class UOverlaySlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UOverlaySlot*>(UOverlaySlot::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -10914,19 +14140,22 @@ class UOverlaySlot* UOverlay::AddChildToOverlay(class UWidget* Content)
 
 void UOverlaySlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("OverlaySlot", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UOverlaySlot_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OverlaySlot", "SetVerticalAlignment");
+
+	Params::UOverlaySlot_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10938,19 +14167,22 @@ void UOverlaySlot::SetVerticalAlignment(enum class EVerticalAlignment InVertical
 
 void UOverlaySlot::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("OverlaySlot", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UOverlaySlot_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OverlaySlot", "SetPadding");
+
+	Params::UOverlaySlot_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -10962,20 +14194,51 @@ void UOverlaySlot::SetPadding(const struct FMargin& InPadding)
 
 void UOverlaySlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("OverlaySlot", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UOverlaySlot_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OverlaySlot", "SetHorizontalAlignment");
+
+	Params::UOverlaySlot_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.ProgressBar
+// (None)
+
+class UClass* UProgressBar::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ProgressBar");
+
+	return Clss;
+}
+
+
+// ProgressBar UMG.Default__ProgressBar
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UProgressBar* UProgressBar::GetDefaultObj()
+{
+	static class UProgressBar* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UProgressBar*>(UProgressBar::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -10986,19 +14249,22 @@ void UOverlaySlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHori
 
 void UProgressBar::SetPercent(float InPercent)
 {
-	static auto Func = Class->GetFunction("ProgressBar", "SetPercent");
+	static class UFunction* Func = nullptr;
 
-	Params::UProgressBar_SetPercent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProgressBar", "SetPercent");
+
+	Params::UProgressBar_SetPercent_Params Parms{};
 
 	Parms.InPercent = InPercent;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11010,19 +14276,22 @@ void UProgressBar::SetPercent(float InPercent)
 
 void UProgressBar::SetIsMarquee(bool InbIsMarquee)
 {
-	static auto Func = Class->GetFunction("ProgressBar", "SetIsMarquee");
+	static class UFunction* Func = nullptr;
 
-	Params::UProgressBar_SetIsMarquee_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProgressBar", "SetIsMarquee");
+
+	Params::UProgressBar_SetIsMarquee_Params Parms{};
 
 	Parms.InbIsMarquee = InbIsMarquee;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11034,20 +14303,51 @@ void UProgressBar::SetIsMarquee(bool InbIsMarquee)
 
 void UProgressBar::SetFillColorAndOpacity(const struct FLinearColor& InColor)
 {
-	static auto Func = Class->GetFunction("ProgressBar", "SetFillColorAndOpacity");
+	static class UFunction* Func = nullptr;
 
-	Params::UProgressBar_SetFillColorAndOpacity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProgressBar", "SetFillColorAndOpacity");
+
+	Params::UProgressBar_SetFillColorAndOpacity_Params Parms{};
 
 	Parms.InColor = InColor;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.RetainerBox
+// (None)
+
+class UClass* URetainerBox::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("RetainerBox");
+
+	return Clss;
+}
+
+
+// RetainerBox UMG.Default__RetainerBox
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class URetainerBox* URetainerBox::GetDefaultObj()
+{
+	static class URetainerBox* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<URetainerBox*>(URetainerBox::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -11058,19 +14358,22 @@ void UProgressBar::SetFillColorAndOpacity(const struct FLinearColor& InColor)
 
 void URetainerBox::SetTextureParameter(class FName TextureParameter)
 {
-	static auto Func = Class->GetFunction("RetainerBox", "SetTextureParameter");
+	static class UFunction* Func = nullptr;
 
-	Params::URetainerBox_SetTextureParameter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RetainerBox", "SetTextureParameter");
+
+	Params::URetainerBox_SetTextureParameter_Params Parms{};
 
 	Parms.TextureParameter = TextureParameter;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11083,20 +14386,23 @@ void URetainerBox::SetTextureParameter(class FName TextureParameter)
 
 void URetainerBox::SetRenderingPhase(int32 RenderPhase, int32 TotalPhases)
 {
-	static auto Func = Class->GetFunction("RetainerBox", "SetRenderingPhase");
+	static class UFunction* Func = nullptr;
 
-	Params::URetainerBox_SetRenderingPhase_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RetainerBox", "SetRenderingPhase");
+
+	Params::URetainerBox_SetRenderingPhase_Params Parms{};
 
 	Parms.RenderPhase = RenderPhase;
 	Parms.TotalPhases = TotalPhases;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11108,19 +14414,22 @@ void URetainerBox::SetRenderingPhase(int32 RenderPhase, int32 TotalPhases)
 
 void URetainerBox::SetEffectMaterial(class UMaterialInterface* EffectMaterial)
 {
-	static auto Func = Class->GetFunction("RetainerBox", "SetEffectMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::URetainerBox_SetEffectMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RetainerBox", "SetEffectMaterial");
+
+	Params::URetainerBox_SetEffectMaterial_Params Parms{};
 
 	Parms.EffectMaterial = EffectMaterial;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11131,18 +14440,20 @@ void URetainerBox::SetEffectMaterial(class UMaterialInterface* EffectMaterial)
 
 void URetainerBox::RequestRender()
 {
-	static auto Func = Class->GetFunction("RetainerBox", "RequestRender");
+	static class UFunction* Func = nullptr;
 
-	Params::URetainerBox_RequestRender_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RetainerBox", "RequestRender");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11154,21 +14465,108 @@ void URetainerBox::RequestRender()
 
 class UMaterialInstanceDynamic* URetainerBox::GetEffectMaterial()
 {
-	static auto Func = Class->GetFunction("RetainerBox", "GetEffectMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::URetainerBox_GetEffectMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RetainerBox", "GetEffectMaterial");
+
+	Params::URetainerBox_GetEffectMaterial_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.RichTextBlockDecorator
+// (None)
+
+class UClass* URichTextBlockDecorator::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("RichTextBlockDecorator");
+
+	return Clss;
+}
+
+
+// RichTextBlockDecorator UMG.Default__RichTextBlockDecorator
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class URichTextBlockDecorator* URichTextBlockDecorator::GetDefaultObj()
+{
+	static class URichTextBlockDecorator* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<URichTextBlockDecorator*>(URichTextBlockDecorator::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.RichTextBlockImageDecorator
+// (None)
+
+class UClass* URichTextBlockImageDecorator::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("RichTextBlockImageDecorator");
+
+	return Clss;
+}
+
+
+// RichTextBlockImageDecorator UMG.Default__RichTextBlockImageDecorator
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class URichTextBlockImageDecorator* URichTextBlockImageDecorator::GetDefaultObj()
+{
+	static class URichTextBlockImageDecorator* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<URichTextBlockImageDecorator*>(URichTextBlockImageDecorator::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.SafeZone
+// (None)
+
+class UClass* USafeZone::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SafeZone");
+
+	return Clss;
+}
+
+
+// SafeZone UMG.Default__SafeZone
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USafeZone* USafeZone::GetDefaultObj()
+{
+	static class USafeZone* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USafeZone*>(USafeZone::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -11182,23 +14580,82 @@ class UMaterialInstanceDynamic* URetainerBox::GetEffectMaterial()
 
 void USafeZone::SetSidesToPad(bool InPadLeft, bool InPadRight, bool InPadTop, bool InPadBottom)
 {
-	static auto Func = Class->GetFunction("SafeZone", "SetSidesToPad");
+	static class UFunction* Func = nullptr;
 
-	Params::USafeZone_SetSidesToPad_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SafeZone", "SetSidesToPad");
+
+	Params::USafeZone_SetSidesToPad_Params Parms{};
 
 	Parms.InPadLeft = InPadLeft;
 	Parms.InPadRight = InPadRight;
 	Parms.InPadTop = InPadTop;
 	Parms.InPadBottom = InPadBottom;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.SafeZoneSlot
+// (None)
+
+class UClass* USafeZoneSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SafeZoneSlot");
+
+	return Clss;
+}
+
+
+// SafeZoneSlot UMG.Default__SafeZoneSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USafeZoneSlot* USafeZoneSlot::GetDefaultObj()
+{
+	static class USafeZoneSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USafeZoneSlot*>(USafeZoneSlot::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.ScaleBox
+// (None)
+
+class UClass* UScaleBox::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ScaleBox");
+
+	return Clss;
+}
+
+
+// ScaleBox UMG.Default__ScaleBox
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UScaleBox* UScaleBox::GetDefaultObj()
+{
+	static class UScaleBox* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UScaleBox*>(UScaleBox::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -11209,19 +14666,22 @@ void USafeZone::SetSidesToPad(bool InPadLeft, bool InPadRight, bool InPadTop, bo
 
 void UScaleBox::SetUserSpecifiedScale(float InUserSpecifiedScale)
 {
-	static auto Func = Class->GetFunction("ScaleBox", "SetUserSpecifiedScale");
+	static class UFunction* Func = nullptr;
 
-	Params::UScaleBox_SetUserSpecifiedScale_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScaleBox", "SetUserSpecifiedScale");
+
+	Params::UScaleBox_SetUserSpecifiedScale_Params Parms{};
 
 	Parms.InUserSpecifiedScale = InUserSpecifiedScale;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11233,19 +14693,22 @@ void UScaleBox::SetUserSpecifiedScale(float InUserSpecifiedScale)
 
 void UScaleBox::SetStretchDirection(enum class EStretchDirection InStretchDirection)
 {
-	static auto Func = Class->GetFunction("ScaleBox", "SetStretchDirection");
+	static class UFunction* Func = nullptr;
 
-	Params::UScaleBox_SetStretchDirection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScaleBox", "SetStretchDirection");
+
+	Params::UScaleBox_SetStretchDirection_Params Parms{};
 
 	Parms.InStretchDirection = InStretchDirection;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11257,19 +14720,22 @@ void UScaleBox::SetStretchDirection(enum class EStretchDirection InStretchDirect
 
 void UScaleBox::SetStretch(enum class EStretch InStretch)
 {
-	static auto Func = Class->GetFunction("ScaleBox", "SetStretch");
+	static class UFunction* Func = nullptr;
 
-	Params::UScaleBox_SetStretch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScaleBox", "SetStretch");
+
+	Params::UScaleBox_SetStretch_Params Parms{};
 
 	Parms.InStretch = InStretch;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11281,20 +14747,51 @@ void UScaleBox::SetStretch(enum class EStretch InStretch)
 
 void UScaleBox::SetIgnoreInheritedScale(bool bInIgnoreInheritedScale)
 {
-	static auto Func = Class->GetFunction("ScaleBox", "SetIgnoreInheritedScale");
+	static class UFunction* Func = nullptr;
 
-	Params::UScaleBox_SetIgnoreInheritedScale_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScaleBox", "SetIgnoreInheritedScale");
+
+	Params::UScaleBox_SetIgnoreInheritedScale_Params Parms{};
 
 	Parms.bInIgnoreInheritedScale = bInIgnoreInheritedScale;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.ScaleBoxSlot
+// (None)
+
+class UClass* UScaleBoxSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ScaleBoxSlot");
+
+	return Clss;
+}
+
+
+// ScaleBoxSlot UMG.Default__ScaleBoxSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UScaleBoxSlot* UScaleBoxSlot::GetDefaultObj()
+{
+	static class UScaleBoxSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UScaleBoxSlot*>(UScaleBoxSlot::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -11305,19 +14802,22 @@ void UScaleBox::SetIgnoreInheritedScale(bool bInIgnoreInheritedScale)
 
 void UScaleBoxSlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("ScaleBoxSlot", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UScaleBoxSlot_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScaleBoxSlot", "SetVerticalAlignment");
+
+	Params::UScaleBoxSlot_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11329,19 +14829,22 @@ void UScaleBoxSlot::SetVerticalAlignment(enum class EVerticalAlignment InVertica
 
 void UScaleBoxSlot::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("ScaleBoxSlot", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UScaleBoxSlot_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScaleBoxSlot", "SetPadding");
+
+	Params::UScaleBoxSlot_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11353,20 +14856,51 @@ void UScaleBoxSlot::SetPadding(const struct FMargin& InPadding)
 
 void UScaleBoxSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("ScaleBoxSlot", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UScaleBoxSlot_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScaleBoxSlot", "SetHorizontalAlignment");
+
+	Params::UScaleBoxSlot_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.ScrollBar
+// (None)
+
+class UClass* UScrollBar::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ScrollBar");
+
+	return Clss;
+}
+
+
+// ScrollBar UMG.Default__ScrollBar
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UScrollBar* UScrollBar::GetDefaultObj()
+{
+	static class UScrollBar* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UScrollBar*>(UScrollBar::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -11378,21 +14912,52 @@ void UScaleBoxSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHor
 
 void UScrollBar::SetState(float InOffsetFraction, float InThumbSizeFraction)
 {
-	static auto Func = Class->GetFunction("ScrollBar", "SetState");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBar_SetState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBar", "SetState");
+
+	Params::UScrollBar_SetState_Params Parms{};
 
 	Parms.InOffsetFraction = InOffsetFraction;
 	Parms.InThumbSizeFraction = InThumbSizeFraction;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.ScrollBoxSlot
+// (None)
+
+class UClass* UScrollBoxSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ScrollBoxSlot");
+
+	return Clss;
+}
+
+
+// ScrollBoxSlot UMG.Default__ScrollBoxSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UScrollBoxSlot* UScrollBoxSlot::GetDefaultObj()
+{
+	static class UScrollBoxSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UScrollBoxSlot*>(UScrollBoxSlot::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -11403,19 +14968,22 @@ void UScrollBar::SetState(float InOffsetFraction, float InThumbSizeFraction)
 
 void UScrollBoxSlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("ScrollBoxSlot", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBoxSlot_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBoxSlot", "SetVerticalAlignment");
+
+	Params::UScrollBoxSlot_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11427,19 +14995,22 @@ void UScrollBoxSlot::SetVerticalAlignment(enum class EVerticalAlignment InVertic
 
 void UScrollBoxSlot::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("ScrollBoxSlot", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBoxSlot_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBoxSlot", "SetPadding");
+
+	Params::UScrollBoxSlot_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11451,20 +15022,51 @@ void UScrollBoxSlot::SetPadding(const struct FMargin& InPadding)
 
 void UScrollBoxSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("ScrollBoxSlot", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollBoxSlot_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollBoxSlot", "SetHorizontalAlignment");
+
+	Params::UScrollBoxSlot_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.SizeBox
+// (None)
+
+class UClass* USizeBox::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SizeBox");
+
+	return Clss;
+}
+
+
+// SizeBox UMG.Default__SizeBox
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USizeBox* USizeBox::GetDefaultObj()
+{
+	static class USizeBox* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USizeBox*>(USizeBox::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -11475,19 +15077,22 @@ void UScrollBoxSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHo
 
 void USizeBox::SetWidthOverride(float InWidthOverride)
 {
-	static auto Func = Class->GetFunction("SizeBox", "SetWidthOverride");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBox_SetWidthOverride_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBox", "SetWidthOverride");
+
+	Params::USizeBox_SetWidthOverride_Params Parms{};
 
 	Parms.InWidthOverride = InWidthOverride;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11499,19 +15104,22 @@ void USizeBox::SetWidthOverride(float InWidthOverride)
 
 void USizeBox::SetMinDesiredWidth(float InMinDesiredWidth)
 {
-	static auto Func = Class->GetFunction("SizeBox", "SetMinDesiredWidth");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBox_SetMinDesiredWidth_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBox", "SetMinDesiredWidth");
+
+	Params::USizeBox_SetMinDesiredWidth_Params Parms{};
 
 	Parms.InMinDesiredWidth = InMinDesiredWidth;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11523,19 +15131,22 @@ void USizeBox::SetMinDesiredWidth(float InMinDesiredWidth)
 
 void USizeBox::SetMinDesiredHeight(float InMinDesiredHeight)
 {
-	static auto Func = Class->GetFunction("SizeBox", "SetMinDesiredHeight");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBox_SetMinDesiredHeight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBox", "SetMinDesiredHeight");
+
+	Params::USizeBox_SetMinDesiredHeight_Params Parms{};
 
 	Parms.InMinDesiredHeight = InMinDesiredHeight;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11547,19 +15158,22 @@ void USizeBox::SetMinDesiredHeight(float InMinDesiredHeight)
 
 void USizeBox::SetMinAspectRatio(float InMinAspectRatio)
 {
-	static auto Func = Class->GetFunction("SizeBox", "SetMinAspectRatio");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBox_SetMinAspectRatio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBox", "SetMinAspectRatio");
+
+	Params::USizeBox_SetMinAspectRatio_Params Parms{};
 
 	Parms.InMinAspectRatio = InMinAspectRatio;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11571,19 +15185,22 @@ void USizeBox::SetMinAspectRatio(float InMinAspectRatio)
 
 void USizeBox::SetMaxDesiredWidth(float InMaxDesiredWidth)
 {
-	static auto Func = Class->GetFunction("SizeBox", "SetMaxDesiredWidth");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBox_SetMaxDesiredWidth_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBox", "SetMaxDesiredWidth");
+
+	Params::USizeBox_SetMaxDesiredWidth_Params Parms{};
 
 	Parms.InMaxDesiredWidth = InMaxDesiredWidth;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11595,19 +15212,22 @@ void USizeBox::SetMaxDesiredWidth(float InMaxDesiredWidth)
 
 void USizeBox::SetMaxDesiredHeight(float InMaxDesiredHeight)
 {
-	static auto Func = Class->GetFunction("SizeBox", "SetMaxDesiredHeight");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBox_SetMaxDesiredHeight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBox", "SetMaxDesiredHeight");
+
+	Params::USizeBox_SetMaxDesiredHeight_Params Parms{};
 
 	Parms.InMaxDesiredHeight = InMaxDesiredHeight;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11619,19 +15239,22 @@ void USizeBox::SetMaxDesiredHeight(float InMaxDesiredHeight)
 
 void USizeBox::SetMaxAspectRatio(float InMaxAspectRatio)
 {
-	static auto Func = Class->GetFunction("SizeBox", "SetMaxAspectRatio");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBox_SetMaxAspectRatio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBox", "SetMaxAspectRatio");
+
+	Params::USizeBox_SetMaxAspectRatio_Params Parms{};
 
 	Parms.InMaxAspectRatio = InMaxAspectRatio;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11643,19 +15266,22 @@ void USizeBox::SetMaxAspectRatio(float InMaxAspectRatio)
 
 void USizeBox::SetHeightOverride(float InHeightOverride)
 {
-	static auto Func = Class->GetFunction("SizeBox", "SetHeightOverride");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBox_SetHeightOverride_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBox", "SetHeightOverride");
+
+	Params::USizeBox_SetHeightOverride_Params Parms{};
 
 	Parms.InHeightOverride = InHeightOverride;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11666,18 +15292,20 @@ void USizeBox::SetHeightOverride(float InHeightOverride)
 
 void USizeBox::ClearWidthOverride()
 {
-	static auto Func = Class->GetFunction("SizeBox", "ClearWidthOverride");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBox_ClearWidthOverride_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBox", "ClearWidthOverride");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11688,18 +15316,20 @@ void USizeBox::ClearWidthOverride()
 
 void USizeBox::ClearMinDesiredWidth()
 {
-	static auto Func = Class->GetFunction("SizeBox", "ClearMinDesiredWidth");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBox_ClearMinDesiredWidth_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBox", "ClearMinDesiredWidth");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11710,18 +15340,20 @@ void USizeBox::ClearMinDesiredWidth()
 
 void USizeBox::ClearMinDesiredHeight()
 {
-	static auto Func = Class->GetFunction("SizeBox", "ClearMinDesiredHeight");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBox_ClearMinDesiredHeight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBox", "ClearMinDesiredHeight");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11732,18 +15364,20 @@ void USizeBox::ClearMinDesiredHeight()
 
 void USizeBox::ClearMinAspectRatio()
 {
-	static auto Func = Class->GetFunction("SizeBox", "ClearMinAspectRatio");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBox_ClearMinAspectRatio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBox", "ClearMinAspectRatio");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11754,18 +15388,20 @@ void USizeBox::ClearMinAspectRatio()
 
 void USizeBox::ClearMaxDesiredWidth()
 {
-	static auto Func = Class->GetFunction("SizeBox", "ClearMaxDesiredWidth");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBox_ClearMaxDesiredWidth_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBox", "ClearMaxDesiredWidth");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11776,18 +15412,20 @@ void USizeBox::ClearMaxDesiredWidth()
 
 void USizeBox::ClearMaxDesiredHeight()
 {
-	static auto Func = Class->GetFunction("SizeBox", "ClearMaxDesiredHeight");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBox_ClearMaxDesiredHeight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBox", "ClearMaxDesiredHeight");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11798,18 +15436,20 @@ void USizeBox::ClearMaxDesiredHeight()
 
 void USizeBox::ClearMaxAspectRatio()
 {
-	static auto Func = Class->GetFunction("SizeBox", "ClearMaxAspectRatio");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBox_ClearMaxAspectRatio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBox", "ClearMaxAspectRatio");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11820,19 +15460,49 @@ void USizeBox::ClearMaxAspectRatio()
 
 void USizeBox::ClearHeightOverride()
 {
-	static auto Func = Class->GetFunction("SizeBox", "ClearHeightOverride");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBox_ClearHeightOverride_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBox", "ClearHeightOverride");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.SizeBoxSlot
+// (None)
+
+class UClass* USizeBoxSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SizeBoxSlot");
+
+	return Clss;
+}
+
+
+// SizeBoxSlot UMG.Default__SizeBoxSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USizeBoxSlot* USizeBoxSlot::GetDefaultObj()
+{
+	static class USizeBoxSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USizeBoxSlot*>(USizeBoxSlot::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -11843,19 +15513,22 @@ void USizeBox::ClearHeightOverride()
 
 void USizeBoxSlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("SizeBoxSlot", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBoxSlot_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBoxSlot", "SetVerticalAlignment");
+
+	Params::USizeBoxSlot_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11867,19 +15540,22 @@ void USizeBoxSlot::SetVerticalAlignment(enum class EVerticalAlignment InVertical
 
 void USizeBoxSlot::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("SizeBoxSlot", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBoxSlot_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBoxSlot", "SetPadding");
+
+	Params::USizeBoxSlot_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -11891,20 +15567,51 @@ void USizeBoxSlot::SetPadding(const struct FMargin& InPadding)
 
 void USizeBoxSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("SizeBoxSlot", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::USizeBoxSlot_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SizeBoxSlot", "SetHorizontalAlignment");
+
+	Params::USizeBoxSlot_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.SlateBlueprintLibrary
+// (None)
+
+class UClass* USlateBlueprintLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SlateBlueprintLibrary");
+
+	return Clss;
+}
+
+
+// SlateBlueprintLibrary UMG.Default__SlateBlueprintLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USlateBlueprintLibrary* USlateBlueprintLibrary::GetDefaultObj()
+{
+	static class USlateBlueprintLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USlateBlueprintLibrary*>(USlateBlueprintLibrary::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -11917,20 +15624,23 @@ void USizeBoxSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHori
 
 struct FVector2D USlateBlueprintLibrary::TransformVectorLocalToAbsolute(struct FGeometry& Geometry, const struct FVector2D& LocalVector)
 {
-	static auto Func = Class->GetFunction("SlateBlueprintLibrary", "TransformVectorLocalToAbsolute");
+	static class UFunction* Func = nullptr;
 
-	Params::USlateBlueprintLibrary_TransformVectorLocalToAbsolute_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SlateBlueprintLibrary", "TransformVectorLocalToAbsolute");
+
+	Params::USlateBlueprintLibrary_TransformVectorLocalToAbsolute_Params Parms{};
 
 	Parms.Geometry = Geometry;
 	Parms.LocalVector = LocalVector;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -11946,20 +15656,23 @@ struct FVector2D USlateBlueprintLibrary::TransformVectorLocalToAbsolute(struct F
 
 struct FVector2D USlateBlueprintLibrary::TransformVectorAbsoluteToLocal(struct FGeometry& Geometry, const struct FVector2D& AbsoluteVector)
 {
-	static auto Func = Class->GetFunction("SlateBlueprintLibrary", "TransformVectorAbsoluteToLocal");
+	static class UFunction* Func = nullptr;
 
-	Params::USlateBlueprintLibrary_TransformVectorAbsoluteToLocal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SlateBlueprintLibrary", "TransformVectorAbsoluteToLocal");
+
+	Params::USlateBlueprintLibrary_TransformVectorAbsoluteToLocal_Params Parms{};
 
 	Parms.Geometry = Geometry;
 	Parms.AbsoluteVector = AbsoluteVector;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -11975,20 +15688,23 @@ struct FVector2D USlateBlueprintLibrary::TransformVectorAbsoluteToLocal(struct F
 
 float USlateBlueprintLibrary::TransformScalarLocalToAbsolute(struct FGeometry& Geometry, float LocalScalar)
 {
-	static auto Func = Class->GetFunction("SlateBlueprintLibrary", "TransformScalarLocalToAbsolute");
+	static class UFunction* Func = nullptr;
 
-	Params::USlateBlueprintLibrary_TransformScalarLocalToAbsolute_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SlateBlueprintLibrary", "TransformScalarLocalToAbsolute");
+
+	Params::USlateBlueprintLibrary_TransformScalarLocalToAbsolute_Params Parms{};
 
 	Parms.Geometry = Geometry;
 	Parms.LocalScalar = LocalScalar;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -12004,20 +15720,23 @@ float USlateBlueprintLibrary::TransformScalarLocalToAbsolute(struct FGeometry& G
 
 float USlateBlueprintLibrary::TransformScalarAbsoluteToLocal(struct FGeometry& Geometry, float AbsoluteScalar)
 {
-	static auto Func = Class->GetFunction("SlateBlueprintLibrary", "TransformScalarAbsoluteToLocal");
+	static class UFunction* Func = nullptr;
 
-	Params::USlateBlueprintLibrary_TransformScalarAbsoluteToLocal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SlateBlueprintLibrary", "TransformScalarAbsoluteToLocal");
+
+	Params::USlateBlueprintLibrary_TransformScalarAbsoluteToLocal_Params Parms{};
 
 	Parms.Geometry = Geometry;
 	Parms.AbsoluteScalar = AbsoluteScalar;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -12034,24 +15753,27 @@ float USlateBlueprintLibrary::TransformScalarAbsoluteToLocal(struct FGeometry& G
 
 void USlateBlueprintLibrary::ScreenToWidgetLocal(class UObject* WorldContextObject, struct FGeometry& Geometry, const struct FVector2D& ScreenPosition, struct FVector2D* LocalCoordinate)
 {
-	static auto Func = Class->GetFunction("SlateBlueprintLibrary", "ScreenToWidgetLocal");
+	static class UFunction* Func = nullptr;
 
-	Params::USlateBlueprintLibrary_ScreenToWidgetLocal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SlateBlueprintLibrary", "ScreenToWidgetLocal");
+
+	Params::USlateBlueprintLibrary_ScreenToWidgetLocal_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.Geometry = Geometry;
 	Parms.ScreenPosition = ScreenPosition;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (LocalCoordinate != nullptr)
-		*LocalCoordinate = Parms.LocalCoordinate;
+		*LocalCoordinate = std::move(Parms.LocalCoordinate);
 
 }
 
@@ -12065,23 +15787,26 @@ void USlateBlueprintLibrary::ScreenToWidgetLocal(class UObject* WorldContextObje
 
 void USlateBlueprintLibrary::ScreenToWidgetAbsolute(class UObject* WorldContextObject, const struct FVector2D& ScreenPosition, struct FVector2D* AbsoluteCoordinate)
 {
-	static auto Func = Class->GetFunction("SlateBlueprintLibrary", "ScreenToWidgetAbsolute");
+	static class UFunction* Func = nullptr;
 
-	Params::USlateBlueprintLibrary_ScreenToWidgetAbsolute_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SlateBlueprintLibrary", "ScreenToWidgetAbsolute");
+
+	Params::USlateBlueprintLibrary_ScreenToWidgetAbsolute_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.ScreenPosition = ScreenPosition;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (AbsoluteCoordinate != nullptr)
-		*AbsoluteCoordinate = Parms.AbsoluteCoordinate;
+		*AbsoluteCoordinate = std::move(Parms.AbsoluteCoordinate);
 
 }
 
@@ -12095,23 +15820,26 @@ void USlateBlueprintLibrary::ScreenToWidgetAbsolute(class UObject* WorldContextO
 
 void USlateBlueprintLibrary::ScreenToViewport(class UObject* WorldContextObject, const struct FVector2D& ScreenPosition, struct FVector2D* ViewportPosition)
 {
-	static auto Func = Class->GetFunction("SlateBlueprintLibrary", "ScreenToViewport");
+	static class UFunction* Func = nullptr;
 
-	Params::USlateBlueprintLibrary_ScreenToViewport_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SlateBlueprintLibrary", "ScreenToViewport");
+
+	Params::USlateBlueprintLibrary_ScreenToViewport_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.ScreenPosition = ScreenPosition;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (ViewportPosition != nullptr)
-		*ViewportPosition = Parms.ViewportPosition;
+		*ViewportPosition = std::move(Parms.ViewportPosition);
 
 }
 
@@ -12127,27 +15855,30 @@ void USlateBlueprintLibrary::ScreenToViewport(class UObject* WorldContextObject,
 
 void USlateBlueprintLibrary::LocalToViewport(class UObject* WorldContextObject, struct FGeometry& Geometry, const struct FVector2D& LocalCoordinate, struct FVector2D* PixelPosition, struct FVector2D* ViewportPosition)
 {
-	static auto Func = Class->GetFunction("SlateBlueprintLibrary", "LocalToViewport");
+	static class UFunction* Func = nullptr;
 
-	Params::USlateBlueprintLibrary_LocalToViewport_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SlateBlueprintLibrary", "LocalToViewport");
+
+	Params::USlateBlueprintLibrary_LocalToViewport_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.Geometry = Geometry;
 	Parms.LocalCoordinate = LocalCoordinate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (PixelPosition != nullptr)
-		*PixelPosition = Parms.PixelPosition;
+		*PixelPosition = std::move(Parms.PixelPosition);
 
 	if (ViewportPosition != nullptr)
-		*ViewportPosition = Parms.ViewportPosition;
+		*ViewportPosition = std::move(Parms.ViewportPosition);
 
 }
 
@@ -12161,20 +15892,23 @@ void USlateBlueprintLibrary::LocalToViewport(class UObject* WorldContextObject, 
 
 struct FVector2D USlateBlueprintLibrary::LocalToAbsolute(struct FGeometry& Geometry, const struct FVector2D& LocalCoordinate)
 {
-	static auto Func = Class->GetFunction("SlateBlueprintLibrary", "LocalToAbsolute");
+	static class UFunction* Func = nullptr;
 
-	Params::USlateBlueprintLibrary_LocalToAbsolute_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SlateBlueprintLibrary", "LocalToAbsolute");
+
+	Params::USlateBlueprintLibrary_LocalToAbsolute_Params Parms{};
 
 	Parms.Geometry = Geometry;
 	Parms.LocalCoordinate = LocalCoordinate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -12190,20 +15924,23 @@ struct FVector2D USlateBlueprintLibrary::LocalToAbsolute(struct FGeometry& Geome
 
 bool USlateBlueprintLibrary::IsUnderLocation(struct FGeometry& Geometry, struct FVector2D& AbsoluteCoordinate)
 {
-	static auto Func = Class->GetFunction("SlateBlueprintLibrary", "IsUnderLocation");
+	static class UFunction* Func = nullptr;
 
-	Params::USlateBlueprintLibrary_IsUnderLocation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SlateBlueprintLibrary", "IsUnderLocation");
+
+	Params::USlateBlueprintLibrary_IsUnderLocation_Params Parms{};
 
 	Parms.Geometry = Geometry;
 	Parms.AbsoluteCoordinate = AbsoluteCoordinate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -12218,19 +15955,22 @@ bool USlateBlueprintLibrary::IsUnderLocation(struct FGeometry& Geometry, struct 
 
 struct FVector2D USlateBlueprintLibrary::GetLocalTopLeft(struct FGeometry& Geometry)
 {
-	static auto Func = Class->GetFunction("SlateBlueprintLibrary", "GetLocalTopLeft");
+	static class UFunction* Func = nullptr;
 
-	Params::USlateBlueprintLibrary_GetLocalTopLeft_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SlateBlueprintLibrary", "GetLocalTopLeft");
+
+	Params::USlateBlueprintLibrary_GetLocalTopLeft_Params Parms{};
 
 	Parms.Geometry = Geometry;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -12245,19 +15985,22 @@ struct FVector2D USlateBlueprintLibrary::GetLocalTopLeft(struct FGeometry& Geome
 
 struct FVector2D USlateBlueprintLibrary::GetLocalSize(struct FGeometry& Geometry)
 {
-	static auto Func = Class->GetFunction("SlateBlueprintLibrary", "GetLocalSize");
+	static class UFunction* Func = nullptr;
 
-	Params::USlateBlueprintLibrary_GetLocalSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SlateBlueprintLibrary", "GetLocalSize");
+
+	Params::USlateBlueprintLibrary_GetLocalSize_Params Parms{};
 
 	Parms.Geometry = Geometry;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -12272,19 +16015,22 @@ struct FVector2D USlateBlueprintLibrary::GetLocalSize(struct FGeometry& Geometry
 
 struct FVector2D USlateBlueprintLibrary::GetAbsoluteSize(struct FGeometry& Geometry)
 {
-	static auto Func = Class->GetFunction("SlateBlueprintLibrary", "GetAbsoluteSize");
+	static class UFunction* Func = nullptr;
 
-	Params::USlateBlueprintLibrary_GetAbsoluteSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SlateBlueprintLibrary", "GetAbsoluteSize");
+
+	Params::USlateBlueprintLibrary_GetAbsoluteSize_Params Parms{};
 
 	Parms.Geometry = Geometry;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -12300,20 +16046,23 @@ struct FVector2D USlateBlueprintLibrary::GetAbsoluteSize(struct FGeometry& Geome
 
 bool USlateBlueprintLibrary::EqualEqual_SlateBrush(struct FSlateBrush& A, struct FSlateBrush& B)
 {
-	static auto Func = Class->GetFunction("SlateBlueprintLibrary", "EqualEqual_SlateBrush");
+	static class UFunction* Func = nullptr;
 
-	Params::USlateBlueprintLibrary_EqualEqual_SlateBrush_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SlateBlueprintLibrary", "EqualEqual_SlateBrush");
+
+	Params::USlateBlueprintLibrary_EqualEqual_SlateBrush_Params Parms{};
 
 	Parms.A = A;
 	Parms.B = B;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -12330,26 +16079,29 @@ bool USlateBlueprintLibrary::EqualEqual_SlateBrush(struct FSlateBrush& A, struct
 
 void USlateBlueprintLibrary::AbsoluteToViewport(class UObject* WorldContextObject, const struct FVector2D& AbsoluteDesktopCoordinate, struct FVector2D* PixelPosition, struct FVector2D* ViewportPosition)
 {
-	static auto Func = Class->GetFunction("SlateBlueprintLibrary", "AbsoluteToViewport");
+	static class UFunction* Func = nullptr;
 
-	Params::USlateBlueprintLibrary_AbsoluteToViewport_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SlateBlueprintLibrary", "AbsoluteToViewport");
+
+	Params::USlateBlueprintLibrary_AbsoluteToViewport_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.AbsoluteDesktopCoordinate = AbsoluteDesktopCoordinate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (PixelPosition != nullptr)
-		*PixelPosition = Parms.PixelPosition;
+		*PixelPosition = std::move(Parms.PixelPosition);
 
 	if (ViewportPosition != nullptr)
-		*ViewportPosition = Parms.ViewportPosition;
+		*ViewportPosition = std::move(Parms.ViewportPosition);
 
 }
 
@@ -12363,23 +16115,110 @@ void USlateBlueprintLibrary::AbsoluteToViewport(class UObject* WorldContextObjec
 
 struct FVector2D USlateBlueprintLibrary::AbsoluteToLocal(struct FGeometry& Geometry, const struct FVector2D& AbsoluteCoordinate)
 {
-	static auto Func = Class->GetFunction("SlateBlueprintLibrary", "AbsoluteToLocal");
+	static class UFunction* Func = nullptr;
 
-	Params::USlateBlueprintLibrary_AbsoluteToLocal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SlateBlueprintLibrary", "AbsoluteToLocal");
+
+	Params::USlateBlueprintLibrary_AbsoluteToLocal_Params Parms{};
 
 	Parms.Geometry = Geometry;
 	Parms.AbsoluteCoordinate = AbsoluteCoordinate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.SlateVectorArtData
+// (None)
+
+class UClass* USlateVectorArtData::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SlateVectorArtData");
+
+	return Clss;
+}
+
+
+// SlateVectorArtData UMG.Default__SlateVectorArtData
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USlateVectorArtData* USlateVectorArtData::GetDefaultObj()
+{
+	static class USlateVectorArtData* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USlateVectorArtData*>(USlateVectorArtData::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.SlateAccessibleWidgetData
+// (None)
+
+class UClass* USlateAccessibleWidgetData::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SlateAccessibleWidgetData");
+
+	return Clss;
+}
+
+
+// SlateAccessibleWidgetData UMG.Default__SlateAccessibleWidgetData
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USlateAccessibleWidgetData* USlateAccessibleWidgetData::GetDefaultObj()
+{
+	static class USlateAccessibleWidgetData* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USlateAccessibleWidgetData*>(USlateAccessibleWidgetData::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.Spacer
+// (None)
+
+class UClass* USpacer::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Spacer");
+
+	return Clss;
+}
+
+
+// Spacer UMG.Default__Spacer
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USpacer* USpacer::GetDefaultObj()
+{
+	static class USpacer* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USpacer*>(USpacer::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -12390,20 +16229,51 @@ struct FVector2D USlateBlueprintLibrary::AbsoluteToLocal(struct FGeometry& Geome
 
 void USpacer::SetSize(const struct FVector2D& InSize)
 {
-	static auto Func = Class->GetFunction("Spacer", "SetSize");
+	static class UFunction* Func = nullptr;
 
-	Params::USpacer_SetSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Spacer", "SetSize");
+
+	Params::USpacer_SetSize_Params Parms{};
 
 	Parms.InSize = InSize;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.SpinBox
+// (None)
+
+class UClass* USpinBox::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SpinBox");
+
+	return Clss;
+}
+
+
+// SpinBox UMG.Default__SpinBox
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USpinBox* USpinBox::GetDefaultObj()
+{
+	static class USpinBox* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USpinBox*>(USpinBox::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -12414,19 +16284,22 @@ void USpacer::SetSize(const struct FVector2D& InSize)
 
 void USpinBox::SetValue(float NewValue)
 {
-	static auto Func = Class->GetFunction("SpinBox", "SetValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_SetValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "SetValue");
+
+	Params::USpinBox_SetValue_Params Parms{};
 
 	Parms.NewValue = NewValue;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -12438,19 +16311,22 @@ void USpinBox::SetValue(float NewValue)
 
 void USpinBox::SetMinValue(float NewValue)
 {
-	static auto Func = Class->GetFunction("SpinBox", "SetMinValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_SetMinValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "SetMinValue");
+
+	Params::USpinBox_SetMinValue_Params Parms{};
 
 	Parms.NewValue = NewValue;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -12462,19 +16338,22 @@ void USpinBox::SetMinValue(float NewValue)
 
 void USpinBox::SetMinSliderValue(float NewValue)
 {
-	static auto Func = Class->GetFunction("SpinBox", "SetMinSliderValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_SetMinSliderValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "SetMinSliderValue");
+
+	Params::USpinBox_SetMinSliderValue_Params Parms{};
 
 	Parms.NewValue = NewValue;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -12486,19 +16365,22 @@ void USpinBox::SetMinSliderValue(float NewValue)
 
 void USpinBox::SetMaxValue(float NewValue)
 {
-	static auto Func = Class->GetFunction("SpinBox", "SetMaxValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_SetMaxValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "SetMaxValue");
+
+	Params::USpinBox_SetMaxValue_Params Parms{};
 
 	Parms.NewValue = NewValue;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -12510,19 +16392,22 @@ void USpinBox::SetMaxValue(float NewValue)
 
 void USpinBox::SetMaxSliderValue(float NewValue)
 {
-	static auto Func = Class->GetFunction("SpinBox", "SetMaxSliderValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_SetMaxSliderValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "SetMaxSliderValue");
+
+	Params::USpinBox_SetMaxSliderValue_Params Parms{};
 
 	Parms.NewValue = NewValue;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -12534,19 +16419,22 @@ void USpinBox::SetMaxSliderValue(float NewValue)
 
 void USpinBox::SetForegroundColor(const struct FSlateColor& InForegroundColor)
 {
-	static auto Func = Class->GetFunction("SpinBox", "SetForegroundColor");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_SetForegroundColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "SetForegroundColor");
+
+	Params::USpinBox_SetForegroundColor_Params Parms{};
 
 	Parms.InForegroundColor = InForegroundColor;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -12559,9 +16447,12 @@ void USpinBox::SetForegroundColor(const struct FSlateColor& InForegroundColor)
 
 void USpinBox::OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, enum class ETextCommit CommitMethod)
 {
-	static auto Func = Class->GetFunction("SpinBox", "OnSpinBoxValueCommittedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_OnSpinBoxValueCommittedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "OnSpinBoxValueCommittedEvent__DelegateSignature");
+
+	Params::USpinBox_OnSpinBoxValueCommittedEvent__DelegateSignature_Params Parms{};
 
 	Parms.InValue = InValue;
 	Parms.CommitMethod = CommitMethod;
@@ -12578,9 +16469,12 @@ void USpinBox::OnSpinBoxValueCommittedEvent__DelegateSignature(float InValue, en
 
 void USpinBox::OnSpinBoxValueChangedEvent__DelegateSignature(float InValue)
 {
-	static auto Func = Class->GetFunction("SpinBox", "OnSpinBoxValueChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_OnSpinBoxValueChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "OnSpinBoxValueChangedEvent__DelegateSignature");
+
+	Params::USpinBox_OnSpinBoxValueChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.InValue = InValue;
 
@@ -12595,12 +16489,14 @@ void USpinBox::OnSpinBoxValueChangedEvent__DelegateSignature(float InValue)
 
 void USpinBox::OnSpinBoxBeginSliderMovement__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("SpinBox", "OnSpinBoxBeginSliderMovement__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_OnSpinBoxBeginSliderMovement__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "OnSpinBoxBeginSliderMovement__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -12612,18 +16508,21 @@ void USpinBox::OnSpinBoxBeginSliderMovement__DelegateSignature()
 
 float USpinBox::GetValue()
 {
-	static auto Func = Class->GetFunction("SpinBox", "GetValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_GetValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "GetValue");
+
+	Params::USpinBox_GetValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -12637,18 +16536,21 @@ float USpinBox::GetValue()
 
 float USpinBox::GetMinValue()
 {
-	static auto Func = Class->GetFunction("SpinBox", "GetMinValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_GetMinValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "GetMinValue");
+
+	Params::USpinBox_GetMinValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -12662,18 +16564,21 @@ float USpinBox::GetMinValue()
 
 float USpinBox::GetMinSliderValue()
 {
-	static auto Func = Class->GetFunction("SpinBox", "GetMinSliderValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_GetMinSliderValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "GetMinSliderValue");
+
+	Params::USpinBox_GetMinSliderValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -12687,18 +16592,21 @@ float USpinBox::GetMinSliderValue()
 
 float USpinBox::GetMaxValue()
 {
-	static auto Func = Class->GetFunction("SpinBox", "GetMaxValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_GetMaxValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "GetMaxValue");
+
+	Params::USpinBox_GetMaxValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -12712,18 +16620,21 @@ float USpinBox::GetMaxValue()
 
 float USpinBox::GetMaxSliderValue()
 {
-	static auto Func = Class->GetFunction("SpinBox", "GetMaxSliderValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_GetMaxSliderValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "GetMaxSliderValue");
+
+	Params::USpinBox_GetMaxSliderValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -12736,18 +16647,20 @@ float USpinBox::GetMaxSliderValue()
 
 void USpinBox::ClearMinValue()
 {
-	static auto Func = Class->GetFunction("SpinBox", "ClearMinValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_ClearMinValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "ClearMinValue");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -12758,18 +16671,20 @@ void USpinBox::ClearMinValue()
 
 void USpinBox::ClearMinSliderValue()
 {
-	static auto Func = Class->GetFunction("SpinBox", "ClearMinSliderValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_ClearMinSliderValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "ClearMinSliderValue");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -12780,18 +16695,20 @@ void USpinBox::ClearMinSliderValue()
 
 void USpinBox::ClearMaxValue()
 {
-	static auto Func = Class->GetFunction("SpinBox", "ClearMaxValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_ClearMaxValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "ClearMaxValue");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -12802,19 +16719,49 @@ void USpinBox::ClearMaxValue()
 
 void USpinBox::ClearMaxSliderValue()
 {
-	static auto Func = Class->GetFunction("SpinBox", "ClearMaxSliderValue");
+	static class UFunction* Func = nullptr;
 
-	Params::USpinBox_ClearMaxSliderValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpinBox", "ClearMaxSliderValue");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.TextBinding
+// (None)
+
+class UClass* UTextBinding::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextBinding");
+
+	return Clss;
+}
+
+
+// TextBinding UMG.Default__TextBinding
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UTextBinding* UTextBinding::GetDefaultObj()
+{
+	static class UTextBinding* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextBinding*>(UTextBinding::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -12825,18 +16772,21 @@ void USpinBox::ClearMaxSliderValue()
 
 class FText UTextBinding::GetTextValue()
 {
-	static auto Func = Class->GetFunction("TextBinding", "GetTextValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextBinding_GetTextValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextBinding", "GetTextValue");
+
+	Params::UTextBinding_GetTextValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -12850,21 +16800,52 @@ class FText UTextBinding::GetTextValue()
 
 class FString UTextBinding::GetStringValue()
 {
-	static auto Func = Class->GetFunction("TextBinding", "GetStringValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextBinding_GetStringValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextBinding", "GetStringValue");
+
+	Params::UTextBinding_GetStringValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.Throbber
+// (None)
+
+class UClass* UThrobber::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Throbber");
+
+	return Clss;
+}
+
+
+// Throbber UMG.Default__Throbber
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UThrobber* UThrobber::GetDefaultObj()
+{
+	static class UThrobber* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UThrobber*>(UThrobber::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -12875,19 +16856,22 @@ class FString UTextBinding::GetStringValue()
 
 void UThrobber::SetNumberOfPieces(int32 InNumberOfPieces)
 {
-	static auto Func = Class->GetFunction("Throbber", "SetNumberOfPieces");
+	static class UFunction* Func = nullptr;
 
-	Params::UThrobber_SetNumberOfPieces_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Throbber", "SetNumberOfPieces");
+
+	Params::UThrobber_SetNumberOfPieces_Params Parms{};
 
 	Parms.InNumberOfPieces = InNumberOfPieces;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -12899,19 +16883,22 @@ void UThrobber::SetNumberOfPieces(int32 InNumberOfPieces)
 
 void UThrobber::SetAnimateVertically(bool bInAnimateVertically)
 {
-	static auto Func = Class->GetFunction("Throbber", "SetAnimateVertically");
+	static class UFunction* Func = nullptr;
 
-	Params::UThrobber_SetAnimateVertically_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Throbber", "SetAnimateVertically");
+
+	Params::UThrobber_SetAnimateVertically_Params Parms{};
 
 	Parms.bInAnimateVertically = bInAnimateVertically;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -12923,19 +16910,22 @@ void UThrobber::SetAnimateVertically(bool bInAnimateVertically)
 
 void UThrobber::SetAnimateOpacity(bool bInAnimateOpacity)
 {
-	static auto Func = Class->GetFunction("Throbber", "SetAnimateOpacity");
+	static class UFunction* Func = nullptr;
 
-	Params::UThrobber_SetAnimateOpacity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Throbber", "SetAnimateOpacity");
+
+	Params::UThrobber_SetAnimateOpacity_Params Parms{};
 
 	Parms.bInAnimateOpacity = bInAnimateOpacity;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -12947,20 +16937,51 @@ void UThrobber::SetAnimateOpacity(bool bInAnimateOpacity)
 
 void UThrobber::SetAnimateHorizontally(bool bInAnimateHorizontally)
 {
-	static auto Func = Class->GetFunction("Throbber", "SetAnimateHorizontally");
+	static class UFunction* Func = nullptr;
 
-	Params::UThrobber_SetAnimateHorizontally_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Throbber", "SetAnimateHorizontally");
+
+	Params::UThrobber_SetAnimateHorizontally_Params Parms{};
 
 	Parms.bInAnimateHorizontally = bInAnimateHorizontally;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.UMGSequencePlayer
+// (None)
+
+class UClass* UUMGSequencePlayer::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UMGSequencePlayer");
+
+	return Clss;
+}
+
+
+// UMGSequencePlayer UMG.Default__UMGSequencePlayer
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UUMGSequencePlayer* UUMGSequencePlayer::GetDefaultObj()
+{
+	static class UUMGSequencePlayer* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUMGSequencePlayer*>(UUMGSequencePlayer::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -12971,19 +16992,22 @@ void UThrobber::SetAnimateHorizontally(bool bInAnimateHorizontally)
 
 void UUMGSequencePlayer::SetUserTag(class FName InUserTag)
 {
-	static auto Func = Class->GetFunction("UMGSequencePlayer", "SetUserTag");
+	static class UFunction* Func = nullptr;
 
-	Params::UUMGSequencePlayer_SetUserTag_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UMGSequencePlayer", "SetUserTag");
+
+	Params::UUMGSequencePlayer_SetUserTag_Params Parms{};
 
 	Parms.InUserTag = InUserTag;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -12995,21 +17019,52 @@ void UUMGSequencePlayer::SetUserTag(class FName InUserTag)
 
 class FName UUMGSequencePlayer::GetUserTag()
 {
-	static auto Func = Class->GetFunction("UMGSequencePlayer", "GetUserTag");
+	static class UFunction* Func = nullptr;
 
-	Params::UUMGSequencePlayer_GetUserTag_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UMGSequencePlayer", "GetUserTag");
+
+	Params::UUMGSequencePlayer_GetUserTag_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.UniformGridPanel
+// (None)
+
+class UClass* UUniformGridPanel::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UniformGridPanel");
+
+	return Clss;
+}
+
+
+// UniformGridPanel UMG.Default__UniformGridPanel
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UUniformGridPanel* UUniformGridPanel::GetDefaultObj()
+{
+	static class UUniformGridPanel* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUniformGridPanel*>(UUniformGridPanel::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -13020,19 +17075,22 @@ class FName UUMGSequencePlayer::GetUserTag()
 
 void UUniformGridPanel::SetSlotPadding(const struct FMargin& InSlotPadding)
 {
-	static auto Func = Class->GetFunction("UniformGridPanel", "SetSlotPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UUniformGridPanel_SetSlotPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UniformGridPanel", "SetSlotPadding");
+
+	Params::UUniformGridPanel_SetSlotPadding_Params Parms{};
 
 	Parms.InSlotPadding = InSlotPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13044,19 +17102,22 @@ void UUniformGridPanel::SetSlotPadding(const struct FMargin& InSlotPadding)
 
 void UUniformGridPanel::SetMinDesiredSlotWidth(float InMinDesiredSlotWidth)
 {
-	static auto Func = Class->GetFunction("UniformGridPanel", "SetMinDesiredSlotWidth");
+	static class UFunction* Func = nullptr;
 
-	Params::UUniformGridPanel_SetMinDesiredSlotWidth_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UniformGridPanel", "SetMinDesiredSlotWidth");
+
+	Params::UUniformGridPanel_SetMinDesiredSlotWidth_Params Parms{};
 
 	Parms.InMinDesiredSlotWidth = InMinDesiredSlotWidth;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13068,19 +17129,22 @@ void UUniformGridPanel::SetMinDesiredSlotWidth(float InMinDesiredSlotWidth)
 
 void UUniformGridPanel::SetMinDesiredSlotHeight(float InMinDesiredSlotHeight)
 {
-	static auto Func = Class->GetFunction("UniformGridPanel", "SetMinDesiredSlotHeight");
+	static class UFunction* Func = nullptr;
 
-	Params::UUniformGridPanel_SetMinDesiredSlotHeight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UniformGridPanel", "SetMinDesiredSlotHeight");
+
+	Params::UUniformGridPanel_SetMinDesiredSlotHeight_Params Parms{};
 
 	Parms.InMinDesiredSlotHeight = InMinDesiredSlotHeight;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13095,24 +17159,55 @@ void UUniformGridPanel::SetMinDesiredSlotHeight(float InMinDesiredSlotHeight)
 
 class UUniformGridSlot* UUniformGridPanel::AddChildToUniformGrid(class UWidget* Content, int32 InRow, int32 InColumn)
 {
-	static auto Func = Class->GetFunction("UniformGridPanel", "AddChildToUniformGrid");
+	static class UFunction* Func = nullptr;
 
-	Params::UUniformGridPanel_AddChildToUniformGrid_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UniformGridPanel", "AddChildToUniformGrid");
+
+	Params::UUniformGridPanel_AddChildToUniformGrid_Params Parms{};
 
 	Parms.Content = Content;
 	Parms.InRow = InRow;
 	Parms.InColumn = InColumn;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.UniformGridSlot
+// (None)
+
+class UClass* UUniformGridSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UniformGridSlot");
+
+	return Clss;
+}
+
+
+// UniformGridSlot UMG.Default__UniformGridSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UUniformGridSlot* UUniformGridSlot::GetDefaultObj()
+{
+	static class UUniformGridSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUniformGridSlot*>(UUniformGridSlot::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -13123,19 +17218,22 @@ class UUniformGridSlot* UUniformGridPanel::AddChildToUniformGrid(class UWidget* 
 
 void UUniformGridSlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("UniformGridSlot", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UUniformGridSlot_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UniformGridSlot", "SetVerticalAlignment");
+
+	Params::UUniformGridSlot_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13147,19 +17245,22 @@ void UUniformGridSlot::SetVerticalAlignment(enum class EVerticalAlignment InVert
 
 void UUniformGridSlot::SetRow(int32 InRow)
 {
-	static auto Func = Class->GetFunction("UniformGridSlot", "SetRow");
+	static class UFunction* Func = nullptr;
 
-	Params::UUniformGridSlot_SetRow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UniformGridSlot", "SetRow");
+
+	Params::UUniformGridSlot_SetRow_Params Parms{};
 
 	Parms.InRow = InRow;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13171,19 +17272,22 @@ void UUniformGridSlot::SetRow(int32 InRow)
 
 void UUniformGridSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("UniformGridSlot", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UUniformGridSlot_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UniformGridSlot", "SetHorizontalAlignment");
+
+	Params::UUniformGridSlot_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13195,20 +17299,51 @@ void UUniformGridSlot::SetHorizontalAlignment(enum class EHorizontalAlignment In
 
 void UUniformGridSlot::SetColumn(int32 InColumn)
 {
-	static auto Func = Class->GetFunction("UniformGridSlot", "SetColumn");
+	static class UFunction* Func = nullptr;
 
-	Params::UUniformGridSlot_SetColumn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UniformGridSlot", "SetColumn");
+
+	Params::UUniformGridSlot_SetColumn_Params Parms{};
 
 	Parms.InColumn = InColumn;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.VerticalBox
+// (None)
+
+class UClass* UVerticalBox::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VerticalBox");
+
+	return Clss;
+}
+
+
+// VerticalBox UMG.Default__VerticalBox
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UVerticalBox* UVerticalBox::GetDefaultObj()
+{
+	static class UVerticalBox* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UVerticalBox*>(UVerticalBox::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -13220,22 +17355,53 @@ void UUniformGridSlot::SetColumn(int32 InColumn)
 
 class UVerticalBoxSlot* UVerticalBox::AddChildToVerticalBox(class UWidget* Content)
 {
-	static auto Func = Class->GetFunction("VerticalBox", "AddChildToVerticalBox");
+	static class UFunction* Func = nullptr;
 
-	Params::UVerticalBox_AddChildToVerticalBox_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VerticalBox", "AddChildToVerticalBox");
+
+	Params::UVerticalBox_AddChildToVerticalBox_Params Parms{};
 
 	Parms.Content = Content;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.VerticalBoxSlot
+// (None)
+
+class UClass* UVerticalBoxSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VerticalBoxSlot");
+
+	return Clss;
+}
+
+
+// VerticalBoxSlot UMG.Default__VerticalBoxSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UVerticalBoxSlot* UVerticalBoxSlot::GetDefaultObj()
+{
+	static class UVerticalBoxSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UVerticalBoxSlot*>(UVerticalBoxSlot::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -13246,19 +17412,22 @@ class UVerticalBoxSlot* UVerticalBox::AddChildToVerticalBox(class UWidget* Conte
 
 void UVerticalBoxSlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("VerticalBoxSlot", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UVerticalBoxSlot_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VerticalBoxSlot", "SetVerticalAlignment");
+
+	Params::UVerticalBoxSlot_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13270,19 +17439,22 @@ void UVerticalBoxSlot::SetVerticalAlignment(enum class EVerticalAlignment InVert
 
 void UVerticalBoxSlot::SetSize(const struct FSlateChildSize& InSize)
 {
-	static auto Func = Class->GetFunction("VerticalBoxSlot", "SetSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UVerticalBoxSlot_SetSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VerticalBoxSlot", "SetSize");
+
+	Params::UVerticalBoxSlot_SetSize_Params Parms{};
 
 	Parms.InSize = InSize;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13294,19 +17466,22 @@ void UVerticalBoxSlot::SetSize(const struct FSlateChildSize& InSize)
 
 void UVerticalBoxSlot::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("VerticalBoxSlot", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UVerticalBoxSlot_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VerticalBoxSlot", "SetPadding");
+
+	Params::UVerticalBoxSlot_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13318,20 +17493,51 @@ void UVerticalBoxSlot::SetPadding(const struct FMargin& InPadding)
 
 void UVerticalBoxSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("VerticalBoxSlot", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UVerticalBoxSlot_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VerticalBoxSlot", "SetHorizontalAlignment");
+
+	Params::UVerticalBoxSlot_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.Viewport
+// (None)
+
+class UClass* UViewport::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Viewport");
+
+	return Clss;
+}
+
+
+// Viewport UMG.Default__Viewport
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UViewport* UViewport::GetDefaultObj()
+{
+	static class UViewport* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UViewport*>(UViewport::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -13343,19 +17549,22 @@ void UVerticalBoxSlot::SetHorizontalAlignment(enum class EHorizontalAlignment In
 
 class AActor* UViewport::Spawn(TSubclassOf<class AActor> ActorClass)
 {
-	static auto Func = Class->GetFunction("Viewport", "Spawn");
+	static class UFunction* Func = nullptr;
 
-	Params::UViewport_Spawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Viewport", "Spawn");
+
+	Params::UViewport_Spawn_Params Parms{};
 
 	Parms.ActorClass = ActorClass;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -13369,19 +17578,22 @@ class AActor* UViewport::Spawn(TSubclassOf<class AActor> ActorClass)
 
 void UViewport::SetViewRotation(const struct FRotator& Rotation)
 {
-	static auto Func = Class->GetFunction("Viewport", "SetViewRotation");
+	static class UFunction* Func = nullptr;
 
-	Params::UViewport_SetViewRotation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Viewport", "SetViewRotation");
+
+	Params::UViewport_SetViewRotation_Params Parms{};
 
 	Parms.Rotation = Rotation;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13393,19 +17605,22 @@ void UViewport::SetViewRotation(const struct FRotator& Rotation)
 
 void UViewport::SetViewLocation(const struct FVector& Location)
 {
-	static auto Func = Class->GetFunction("Viewport", "SetViewLocation");
+	static class UFunction* Func = nullptr;
 
-	Params::UViewport_SetViewLocation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Viewport", "SetViewLocation");
+
+	Params::UViewport_SetViewLocation_Params Parms{};
 
 	Parms.Location = Location;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13417,18 +17632,21 @@ void UViewport::SetViewLocation(const struct FVector& Location)
 
 struct FRotator UViewport::GetViewRotation()
 {
-	static auto Func = Class->GetFunction("Viewport", "GetViewRotation");
+	static class UFunction* Func = nullptr;
 
-	Params::UViewport_GetViewRotation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Viewport", "GetViewRotation");
+
+	Params::UViewport_GetViewRotation_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -13442,18 +17660,21 @@ struct FRotator UViewport::GetViewRotation()
 
 class UWorld* UViewport::GetViewportWorld()
 {
-	static auto Func = Class->GetFunction("Viewport", "GetViewportWorld");
+	static class UFunction* Func = nullptr;
 
-	Params::UViewport_GetViewportWorld_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Viewport", "GetViewportWorld");
+
+	Params::UViewport_GetViewportWorld_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -13467,21 +17688,52 @@ class UWorld* UViewport::GetViewportWorld()
 
 struct FVector UViewport::GetViewLocation()
 {
-	static auto Func = Class->GetFunction("Viewport", "GetViewLocation");
+	static class UFunction* Func = nullptr;
 
-	Params::UViewport_GetViewLocation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Viewport", "GetViewLocation");
+
+	Params::UViewport_GetViewLocation_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.VisibilityBinding
+// (None)
+
+class UClass* UVisibilityBinding::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VisibilityBinding");
+
+	return Clss;
+}
+
+
+// VisibilityBinding UMG.Default__VisibilityBinding
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UVisibilityBinding* UVisibilityBinding::GetDefaultObj()
+{
+	static class UVisibilityBinding* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UVisibilityBinding*>(UVisibilityBinding::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -13492,21 +17744,52 @@ struct FVector UViewport::GetViewLocation()
 
 enum class ESlateVisibility UVisibilityBinding::GetValue()
 {
-	static auto Func = Class->GetFunction("VisibilityBinding", "GetValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UVisibilityBinding_GetValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VisibilityBinding", "GetValue");
+
+	Params::UVisibilityBinding_GetValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.WidgetAnimation
+// (None)
+
+class UClass* UWidgetAnimation::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WidgetAnimation");
+
+	return Clss;
+}
+
+
+// WidgetAnimation UMG.Default__WidgetAnimation
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWidgetAnimation* UWidgetAnimation::GetDefaultObj()
+{
+	static class UWidgetAnimation* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWidgetAnimation*>(UWidgetAnimation::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -13518,20 +17801,23 @@ enum class ESlateVisibility UVisibilityBinding::GetValue()
 
 void UWidgetAnimation::UnbindFromAnimationStarted(class UUserWidget* Widget, UDelegateProperty_ Delegate)
 {
-	static auto Func = Class->GetFunction("WidgetAnimation", "UnbindFromAnimationStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetAnimation_UnbindFromAnimationStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetAnimation", "UnbindFromAnimationStarted");
+
+	Params::UWidgetAnimation_UnbindFromAnimationStarted_Params Parms{};
 
 	Parms.Widget = Widget;
 	Parms.Delegate = Delegate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13544,20 +17830,23 @@ void UWidgetAnimation::UnbindFromAnimationStarted(class UUserWidget* Widget, UDe
 
 void UWidgetAnimation::UnbindFromAnimationFinished(class UUserWidget* Widget, UDelegateProperty_ Delegate)
 {
-	static auto Func = Class->GetFunction("WidgetAnimation", "UnbindFromAnimationFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetAnimation_UnbindFromAnimationFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetAnimation", "UnbindFromAnimationFinished");
+
+	Params::UWidgetAnimation_UnbindFromAnimationFinished_Params Parms{};
 
 	Parms.Widget = Widget;
 	Parms.Delegate = Delegate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13569,19 +17858,22 @@ void UWidgetAnimation::UnbindFromAnimationFinished(class UUserWidget* Widget, UD
 
 void UWidgetAnimation::UnbindAllFromAnimationStarted(class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("WidgetAnimation", "UnbindAllFromAnimationStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetAnimation_UnbindAllFromAnimationStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetAnimation", "UnbindAllFromAnimationStarted");
+
+	Params::UWidgetAnimation_UnbindAllFromAnimationStarted_Params Parms{};
 
 	Parms.Widget = Widget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13593,19 +17885,22 @@ void UWidgetAnimation::UnbindAllFromAnimationStarted(class UUserWidget* Widget)
 
 void UWidgetAnimation::UnbindAllFromAnimationFinished(class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("WidgetAnimation", "UnbindAllFromAnimationFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetAnimation_UnbindAllFromAnimationFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetAnimation", "UnbindAllFromAnimationFinished");
+
+	Params::UWidgetAnimation_UnbindAllFromAnimationFinished_Params Parms{};
 
 	Parms.Widget = Widget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13617,18 +17912,21 @@ void UWidgetAnimation::UnbindAllFromAnimationFinished(class UUserWidget* Widget)
 
 float UWidgetAnimation::GetStartTime()
 {
-	static auto Func = Class->GetFunction("WidgetAnimation", "GetStartTime");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetAnimation_GetStartTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetAnimation", "GetStartTime");
+
+	Params::UWidgetAnimation_GetStartTime_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -13642,18 +17940,21 @@ float UWidgetAnimation::GetStartTime()
 
 float UWidgetAnimation::GetEndTime()
 {
-	static auto Func = Class->GetFunction("WidgetAnimation", "GetEndTime");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetAnimation_GetEndTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetAnimation", "GetEndTime");
+
+	Params::UWidgetAnimation_GetEndTime_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -13668,20 +17969,23 @@ float UWidgetAnimation::GetEndTime()
 
 void UWidgetAnimation::BindToAnimationStarted(class UUserWidget* Widget, UDelegateProperty_ Delegate)
 {
-	static auto Func = Class->GetFunction("WidgetAnimation", "BindToAnimationStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetAnimation_BindToAnimationStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetAnimation", "BindToAnimationStarted");
+
+	Params::UWidgetAnimation_BindToAnimationStarted_Params Parms{};
 
 	Parms.Widget = Widget;
 	Parms.Delegate = Delegate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13694,21 +17998,80 @@ void UWidgetAnimation::BindToAnimationStarted(class UUserWidget* Widget, UDelega
 
 void UWidgetAnimation::BindToAnimationFinished(class UUserWidget* Widget, UDelegateProperty_ Delegate)
 {
-	static auto Func = Class->GetFunction("WidgetAnimation", "BindToAnimationFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetAnimation_BindToAnimationFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetAnimation", "BindToAnimationFinished");
+
+	Params::UWidgetAnimation_BindToAnimationFinished_Params Parms{};
 
 	Parms.Widget = Widget;
 	Parms.Delegate = Delegate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.WidgetAnimationDelegateBinding
+// (None)
+
+class UClass* UWidgetAnimationDelegateBinding::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WidgetAnimationDelegateBinding");
+
+	return Clss;
+}
+
+
+// WidgetAnimationDelegateBinding UMG.Default__WidgetAnimationDelegateBinding
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWidgetAnimationDelegateBinding* UWidgetAnimationDelegateBinding::GetDefaultObj()
+{
+	static class UWidgetAnimationDelegateBinding* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWidgetAnimationDelegateBinding*>(UWidgetAnimationDelegateBinding::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.WidgetAnimationPlayCallbackProxy
+// (None)
+
+class UClass* UWidgetAnimationPlayCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WidgetAnimationPlayCallbackProxy");
+
+	return Clss;
+}
+
+
+// WidgetAnimationPlayCallbackProxy UMG.Default__WidgetAnimationPlayCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWidgetAnimationPlayCallbackProxy* UWidgetAnimationPlayCallbackProxy::GetDefaultObj()
+{
+	static class UWidgetAnimationPlayCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWidgetAnimationPlayCallbackProxy*>(UWidgetAnimationPlayCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -13727,9 +18090,12 @@ void UWidgetAnimation::BindToAnimationFinished(class UUserWidget* Widget, UDeleg
 
 class UWidgetAnimationPlayCallbackProxy* UWidgetAnimationPlayCallbackProxy::CreatePlayAnimationTimeRangeProxyObject(class UUMGSequencePlayer** Result, class UUserWidget* Widget, class UWidgetAnimation* InAnimation, float StartAtTime, float EndAtTime, int32 NumLoopsToPlay, enum class EUMGSequencePlayMode PlayMode, float PlaybackSpeed)
 {
-	static auto Func = Class->GetFunction("WidgetAnimationPlayCallbackProxy", "CreatePlayAnimationTimeRangeProxyObject");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetAnimationPlayCallbackProxy_CreatePlayAnimationTimeRangeProxyObject_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetAnimationPlayCallbackProxy", "CreatePlayAnimationTimeRangeProxyObject");
+
+	Params::UWidgetAnimationPlayCallbackProxy_CreatePlayAnimationTimeRangeProxyObject_Params Parms{};
 
 	Parms.Widget = Widget;
 	Parms.InAnimation = InAnimation;
@@ -13739,13 +18105,13 @@ class UWidgetAnimationPlayCallbackProxy* UWidgetAnimationPlayCallbackProxy::Crea
 	Parms.PlayMode = PlayMode;
 	Parms.PlaybackSpeed = PlaybackSpeed;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Result != nullptr)
 		*Result = Parms.Result;
@@ -13769,9 +18135,12 @@ class UWidgetAnimationPlayCallbackProxy* UWidgetAnimationPlayCallbackProxy::Crea
 
 class UWidgetAnimationPlayCallbackProxy* UWidgetAnimationPlayCallbackProxy::CreatePlayAnimationProxyObject(class UUMGSequencePlayer** Result, class UUserWidget* Widget, class UWidgetAnimation* InAnimation, float StartAtTime, int32 NumLoopsToPlay, enum class EUMGSequencePlayMode PlayMode, float PlaybackSpeed)
 {
-	static auto Func = Class->GetFunction("WidgetAnimationPlayCallbackProxy", "CreatePlayAnimationProxyObject");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetAnimationPlayCallbackProxy_CreatePlayAnimationProxyObject_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetAnimationPlayCallbackProxy", "CreatePlayAnimationProxyObject");
+
+	Params::UWidgetAnimationPlayCallbackProxy_CreatePlayAnimationProxyObject_Params Parms{};
 
 	Parms.Widget = Widget;
 	Parms.InAnimation = InAnimation;
@@ -13780,19 +18149,47 @@ class UWidgetAnimationPlayCallbackProxy* UWidgetAnimationPlayCallbackProxy::Crea
 	Parms.PlayMode = PlayMode;
 	Parms.PlaybackSpeed = PlaybackSpeed;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Result != nullptr)
 		*Result = Parms.Result;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.WidgetBinding
+// (None)
+
+class UClass* UWidgetBinding::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WidgetBinding");
+
+	return Clss;
+}
+
+
+// WidgetBinding UMG.Default__WidgetBinding
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWidgetBinding* UWidgetBinding::GetDefaultObj()
+{
+	static class UWidgetBinding* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWidgetBinding*>(UWidgetBinding::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -13803,21 +18200,80 @@ class UWidgetAnimationPlayCallbackProxy* UWidgetAnimationPlayCallbackProxy::Crea
 
 class UWidget* UWidgetBinding::GetValue()
 {
-	static auto Func = Class->GetFunction("WidgetBinding", "GetValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBinding_GetValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBinding", "GetValue");
+
+	Params::UWidgetBinding_GetValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.WidgetBlueprintGeneratedClass
+// (Field, Struct, Class)
+
+class UClass* UWidgetBlueprintGeneratedClass::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WidgetBlueprintGeneratedClass");
+
+	return Clss;
+}
+
+
+// WidgetBlueprintGeneratedClass UMG.Default__WidgetBlueprintGeneratedClass
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWidgetBlueprintGeneratedClass* UWidgetBlueprintGeneratedClass::GetDefaultObj()
+{
+	static class UWidgetBlueprintGeneratedClass* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWidgetBlueprintGeneratedClass*>(UWidgetBlueprintGeneratedClass::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.WidgetBlueprintLibrary
+// (None)
+
+class UClass* UWidgetBlueprintLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WidgetBlueprintLibrary");
+
+	return Clss;
+}
+
+
+// WidgetBlueprintLibrary UMG.Default__WidgetBlueprintLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWidgetBlueprintLibrary* UWidgetBlueprintLibrary::GetDefaultObj()
+{
+	static class UWidgetBlueprintLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWidgetBlueprintLibrary*>(UWidgetBlueprintLibrary::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -13829,19 +18285,22 @@ class UWidget* UWidgetBinding::GetValue()
 
 struct FEventReply UWidgetBlueprintLibrary::UnlockMouse(struct FEventReply& Reply)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "UnlockMouse");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_UnlockMouse_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "UnlockMouse");
+
+	Params::UWidgetBlueprintLibrary_UnlockMouse_Params Parms{};
 
 	Parms.Reply = Reply;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -13855,18 +18314,21 @@ struct FEventReply UWidgetBlueprintLibrary::UnlockMouse(struct FEventReply& Repl
 
 struct FEventReply UWidgetBlueprintLibrary::Unhandled()
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "Unhandled");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_Unhandled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "Unhandled");
+
+	Params::UWidgetBlueprintLibrary_Unhandled_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -13884,9 +18346,12 @@ struct FEventReply UWidgetBlueprintLibrary::Unhandled()
 
 void UWidgetBlueprintLibrary::SetWindowTitleBarState(class UWidget* TitleBarContent, enum class EWindowTitleBarMode Mode, bool bTitleBarDragEnabled, bool bWindowButtonsVisible, bool bTitleBarVisible)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "SetWindowTitleBarState");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_SetWindowTitleBarState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "SetWindowTitleBarState");
+
+	Params::UWidgetBlueprintLibrary_SetWindowTitleBarState_Params Parms{};
 
 	Parms.TitleBarContent = TitleBarContent;
 	Parms.Mode = Mode;
@@ -13894,13 +18359,13 @@ void UWidgetBlueprintLibrary::SetWindowTitleBarState(class UWidget* TitleBarCont
 	Parms.bWindowButtonsVisible = bWindowButtonsVisible;
 	Parms.bTitleBarVisible = bTitleBarVisible;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13912,19 +18377,22 @@ void UWidgetBlueprintLibrary::SetWindowTitleBarState(class UWidget* TitleBarCont
 
 void UWidgetBlueprintLibrary::SetWindowTitleBarOnCloseClickedDelegate(UDelegateProperty_ Delegate)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "SetWindowTitleBarOnCloseClickedDelegate");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_SetWindowTitleBarOnCloseClickedDelegate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "SetWindowTitleBarOnCloseClickedDelegate");
+
+	Params::UWidgetBlueprintLibrary_SetWindowTitleBarOnCloseClickedDelegate_Params Parms{};
 
 	Parms.Delegate = Delegate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13936,19 +18404,22 @@ void UWidgetBlueprintLibrary::SetWindowTitleBarOnCloseClickedDelegate(UDelegateP
 
 void UWidgetBlueprintLibrary::SetWindowTitleBarCloseButtonActive(bool bActive)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "SetWindowTitleBarCloseButtonActive");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_SetWindowTitleBarCloseButtonActive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "SetWindowTitleBarCloseButtonActive");
+
+	Params::UWidgetBlueprintLibrary_SetWindowTitleBarCloseButtonActive_Params Parms{};
 
 	Parms.bActive = bActive;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -13963,21 +18434,24 @@ void UWidgetBlueprintLibrary::SetWindowTitleBarCloseButtonActive(bool bActive)
 
 struct FEventReply UWidgetBlueprintLibrary::SetUserFocus(struct FEventReply& Reply, class UWidget* FocusWidget, bool bInAllUsers)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "SetUserFocus");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_SetUserFocus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "SetUserFocus");
+
+	Params::UWidgetBlueprintLibrary_SetUserFocus_Params Parms{};
 
 	Parms.Reply = Reply;
 	Parms.FocusWidget = FocusWidget;
 	Parms.bInAllUsers = bInAllUsers;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -13993,20 +18467,23 @@ struct FEventReply UWidgetBlueprintLibrary::SetUserFocus(struct FEventReply& Rep
 
 struct FEventReply UWidgetBlueprintLibrary::SetMousePosition(struct FEventReply& Reply, const struct FVector2D& NewMousePosition)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "SetMousePosition");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_SetMousePosition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "SetMousePosition");
+
+	Params::UWidgetBlueprintLibrary_SetMousePosition_Params Parms{};
 
 	Parms.Reply = Reply;
 	Parms.NewMousePosition = NewMousePosition;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14022,21 +18499,24 @@ struct FEventReply UWidgetBlueprintLibrary::SetMousePosition(struct FEventReply&
 
 void UWidgetBlueprintLibrary::SetInputMode_UIOnlyEx(class APlayerController* PlayerController, class UWidget* InWidgetToFocus, enum class EMouseLockMode InMouseLockMode)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "SetInputMode_UIOnlyEx");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_SetInputMode_UIOnlyEx_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "SetInputMode_UIOnlyEx");
+
+	Params::UWidgetBlueprintLibrary_SetInputMode_UIOnlyEx_Params Parms{};
 
 	Parms.PlayerController = PlayerController;
 	Parms.InWidgetToFocus = InWidgetToFocus;
 	Parms.InMouseLockMode = InMouseLockMode;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -14050,21 +18530,24 @@ void UWidgetBlueprintLibrary::SetInputMode_UIOnlyEx(class APlayerController* Pla
 
 void UWidgetBlueprintLibrary::SetInputMode_UIOnly(class APlayerController* Target, class UWidget* InWidgetToFocus, bool bLockMouseToViewport)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "SetInputMode_UIOnly");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_SetInputMode_UIOnly_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "SetInputMode_UIOnly");
+
+	Params::UWidgetBlueprintLibrary_SetInputMode_UIOnly_Params Parms{};
 
 	Parms.Target = Target;
 	Parms.InWidgetToFocus = InWidgetToFocus;
 	Parms.bLockMouseToViewport = bLockMouseToViewport;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -14076,19 +18559,22 @@ void UWidgetBlueprintLibrary::SetInputMode_UIOnly(class APlayerController* Targe
 
 void UWidgetBlueprintLibrary::SetInputMode_GameOnly(class APlayerController* PlayerController)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "SetInputMode_GameOnly");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_SetInputMode_GameOnly_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "SetInputMode_GameOnly");
+
+	Params::UWidgetBlueprintLibrary_SetInputMode_GameOnly_Params Parms{};
 
 	Parms.PlayerController = PlayerController;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -14103,22 +18589,25 @@ void UWidgetBlueprintLibrary::SetInputMode_GameOnly(class APlayerController* Pla
 
 void UWidgetBlueprintLibrary::SetInputMode_GameAndUIEx(class APlayerController* PlayerController, class UWidget* InWidgetToFocus, enum class EMouseLockMode InMouseLockMode, bool bHideCursorDuringCapture)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "SetInputMode_GameAndUIEx");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_SetInputMode_GameAndUIEx_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "SetInputMode_GameAndUIEx");
+
+	Params::UWidgetBlueprintLibrary_SetInputMode_GameAndUIEx_Params Parms{};
 
 	Parms.PlayerController = PlayerController;
 	Parms.InWidgetToFocus = InWidgetToFocus;
 	Parms.InMouseLockMode = InMouseLockMode;
 	Parms.bHideCursorDuringCapture = bHideCursorDuringCapture;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -14133,22 +18622,25 @@ void UWidgetBlueprintLibrary::SetInputMode_GameAndUIEx(class APlayerController* 
 
 void UWidgetBlueprintLibrary::SetInputMode_GameAndUI(class APlayerController* Target, class UWidget* InWidgetToFocus, bool bLockMouseToViewport, bool bHideCursorDuringCapture)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "SetInputMode_GameAndUI");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_SetInputMode_GameAndUI_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "SetInputMode_GameAndUI");
+
+	Params::UWidgetBlueprintLibrary_SetInputMode_GameAndUI_Params Parms{};
 
 	Parms.Target = Target;
 	Parms.InWidgetToFocus = InWidgetToFocus;
 	Parms.bLockMouseToViewport = bLockMouseToViewport;
 	Parms.bHideCursorDuringCapture = bHideCursorDuringCapture;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -14164,22 +18656,25 @@ void UWidgetBlueprintLibrary::SetInputMode_GameAndUI(class APlayerController* Ta
 
 bool UWidgetBlueprintLibrary::SetHardwareCursor(class UObject* WorldContextObject, enum class EMouseCursor CursorShape, class FName CursorName, const struct FVector2D& HotSpot)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "SetHardwareCursor");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_SetHardwareCursor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "SetHardwareCursor");
+
+	Params::UWidgetBlueprintLibrary_SetHardwareCursor_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.CursorShape = CursorShape;
 	Parms.CursorName = CursorName;
 	Parms.HotSpot = HotSpot;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14192,18 +18687,20 @@ bool UWidgetBlueprintLibrary::SetHardwareCursor(class UObject* WorldContextObjec
 
 void UWidgetBlueprintLibrary::SetFocusToGameViewport()
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "SetFocusToGameViewport");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_SetFocusToGameViewport_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "SetFocusToGameViewport");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -14218,22 +18715,25 @@ void UWidgetBlueprintLibrary::SetFocusToGameViewport()
 
 void UWidgetBlueprintLibrary::SetColorVisionDeficiencyType(enum class EColorVisionDeficiency Type, float Severity, bool CorrectDeficiency, bool ShowCorrectionWithDeficiency)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "SetColorVisionDeficiencyType");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_SetColorVisionDeficiencyType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "SetColorVisionDeficiencyType");
+
+	Params::UWidgetBlueprintLibrary_SetColorVisionDeficiencyType_Params Parms{};
 
 	Parms.Type = Type;
 	Parms.Severity = Severity;
 	Parms.CorrectDeficiency = CorrectDeficiency;
 	Parms.ShowCorrectionWithDeficiency = ShowCorrectionWithDeficiency;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -14246,20 +18746,23 @@ void UWidgetBlueprintLibrary::SetColorVisionDeficiencyType(enum class EColorVisi
 
 void UWidgetBlueprintLibrary::SetBrushResourceToTexture(struct FSlateBrush& Brush, class UTexture2D* Texture)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "SetBrushResourceToTexture");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_SetBrushResourceToTexture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "SetBrushResourceToTexture");
+
+	Params::UWidgetBlueprintLibrary_SetBrushResourceToTexture_Params Parms{};
 
 	Parms.Brush = Brush;
 	Parms.Texture = Texture;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -14272,20 +18775,23 @@ void UWidgetBlueprintLibrary::SetBrushResourceToTexture(struct FSlateBrush& Brus
 
 void UWidgetBlueprintLibrary::SetBrushResourceToMaterial(struct FSlateBrush& Brush, class UMaterialInterface* Material)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "SetBrushResourceToMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_SetBrushResourceToMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "SetBrushResourceToMaterial");
+
+	Params::UWidgetBlueprintLibrary_SetBrushResourceToMaterial_Params Parms{};
 
 	Parms.Brush = Brush;
 	Parms.Material = Material;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -14296,18 +18802,20 @@ void UWidgetBlueprintLibrary::SetBrushResourceToMaterial(struct FSlateBrush& Bru
 
 void UWidgetBlueprintLibrary::RestorePreviousWindowTitleBarState()
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "RestorePreviousWindowTitleBarState");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_RestorePreviousWindowTitleBarState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "RestorePreviousWindowTitleBarState");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -14320,19 +18828,22 @@ void UWidgetBlueprintLibrary::RestorePreviousWindowTitleBarState()
 
 struct FEventReply UWidgetBlueprintLibrary::ReleaseMouseCapture(struct FEventReply& Reply)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "ReleaseMouseCapture");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_ReleaseMouseCapture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "ReleaseMouseCapture");
+
+	Params::UWidgetBlueprintLibrary_ReleaseMouseCapture_Params Parms{};
 
 	Parms.Reply = Reply;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14348,20 +18859,23 @@ struct FEventReply UWidgetBlueprintLibrary::ReleaseMouseCapture(struct FEventRep
 
 struct FEventReply UWidgetBlueprintLibrary::ReleaseJoystickCapture(struct FEventReply& Reply, bool bInAllJoysticks)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "ReleaseJoystickCapture");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_ReleaseJoystickCapture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "ReleaseJoystickCapture");
+
+	Params::UWidgetBlueprintLibrary_ReleaseJoystickCapture_Params Parms{};
 
 	Parms.Reply = Reply;
 	Parms.bInAllJoysticks = bInAllJoysticks;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14374,12 +18888,14 @@ struct FEventReply UWidgetBlueprintLibrary::ReleaseJoystickCapture(struct FEvent
 
 void UWidgetBlueprintLibrary::OnGameWindowCloseButtonClickedDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "OnGameWindowCloseButtonClickedDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_OnGameWindowCloseButtonClickedDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "OnGameWindowCloseButtonClickedDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -14391,18 +18907,21 @@ void UWidgetBlueprintLibrary::OnGameWindowCloseButtonClickedDelegate__DelegateSi
 
 struct FSlateBrush UWidgetBlueprintLibrary::NoResourceBrush()
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "NoResourceBrush");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_NoResourceBrush_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "NoResourceBrush");
+
+	Params::UWidgetBlueprintLibrary_NoResourceBrush_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14419,21 +18938,24 @@ struct FSlateBrush UWidgetBlueprintLibrary::NoResourceBrush()
 
 struct FSlateBrush UWidgetBlueprintLibrary::MakeBrushFromTexture(class UTexture2D* Texture, int32 Width, int32 Height)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "MakeBrushFromTexture");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_MakeBrushFromTexture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "MakeBrushFromTexture");
+
+	Params::UWidgetBlueprintLibrary_MakeBrushFromTexture_Params Parms{};
 
 	Parms.Texture = Texture;
 	Parms.Width = Width;
 	Parms.Height = Height;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14450,21 +18972,24 @@ struct FSlateBrush UWidgetBlueprintLibrary::MakeBrushFromTexture(class UTexture2
 
 struct FSlateBrush UWidgetBlueprintLibrary::MakeBrushFromMaterial(class UMaterialInterface* Material, int32 Width, int32 Height)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "MakeBrushFromMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_MakeBrushFromMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "MakeBrushFromMaterial");
+
+	Params::UWidgetBlueprintLibrary_MakeBrushFromMaterial_Params Parms{};
 
 	Parms.Material = Material;
 	Parms.Width = Width;
 	Parms.Height = Height;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14479,19 +19004,22 @@ struct FSlateBrush UWidgetBlueprintLibrary::MakeBrushFromMaterial(class UMateria
 
 struct FSlateBrush UWidgetBlueprintLibrary::MakeBrushFromAsset(class USlateBrushAsset* BrushAsset)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "MakeBrushFromAsset");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_MakeBrushFromAsset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "MakeBrushFromAsset");
+
+	Params::UWidgetBlueprintLibrary_MakeBrushFromAsset_Params Parms{};
 
 	Parms.BrushAsset = BrushAsset;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14507,20 +19035,23 @@ struct FSlateBrush UWidgetBlueprintLibrary::MakeBrushFromAsset(class USlateBrush
 
 struct FEventReply UWidgetBlueprintLibrary::LockMouse(struct FEventReply& Reply, class UWidget* CapturingWidget)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "LockMouse");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_LockMouse_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "LockMouse");
+
+	Params::UWidgetBlueprintLibrary_LockMouse_Params Parms{};
 
 	Parms.Reply = Reply;
 	Parms.CapturingWidget = CapturingWidget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14534,18 +19065,21 @@ struct FEventReply UWidgetBlueprintLibrary::LockMouse(struct FEventReply& Reply,
 
 bool UWidgetBlueprintLibrary::IsDragDropping()
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "IsDragDropping");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_IsDragDropping_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "IsDragDropping");
+
+	Params::UWidgetBlueprintLibrary_IsDragDropping_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14559,18 +19093,21 @@ bool UWidgetBlueprintLibrary::IsDragDropping()
 
 struct FEventReply UWidgetBlueprintLibrary::Handled()
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "Handled");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_Handled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "Handled");
+
+	Params::UWidgetBlueprintLibrary_Handled_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14587,28 +19124,31 @@ struct FEventReply UWidgetBlueprintLibrary::Handled()
 
 void UWidgetBlueprintLibrary::GetSafeZonePadding(class UObject* WorldContextObject, struct FVector4* SafePadding, struct FVector2D* SafePaddingScale, struct FVector4* SpillOverPadding)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "GetSafeZonePadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_GetSafeZonePadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "GetSafeZonePadding");
+
+	Params::UWidgetBlueprintLibrary_GetSafeZonePadding_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (SafePadding != nullptr)
-		*SafePadding = Parms.SafePadding;
+		*SafePadding = std::move(Parms.SafePadding);
 
 	if (SafePaddingScale != nullptr)
-		*SafePaddingScale = Parms.SafePaddingScale;
+		*SafePaddingScale = std::move(Parms.SafePaddingScale);
 
 	if (SpillOverPadding != nullptr)
-		*SpillOverPadding = Parms.SpillOverPadding;
+		*SpillOverPadding = std::move(Parms.SpillOverPadding);
 
 }
 
@@ -14621,19 +19161,22 @@ void UWidgetBlueprintLibrary::GetSafeZonePadding(class UObject* WorldContextObje
 
 struct FKeyEvent UWidgetBlueprintLibrary::GetKeyEventFromAnalogInputEvent(struct FAnalogInputEvent& Event)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "GetKeyEventFromAnalogInputEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_GetKeyEventFromAnalogInputEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "GetKeyEventFromAnalogInputEvent");
+
+	Params::UWidgetBlueprintLibrary_GetKeyEventFromAnalogInputEvent_Params Parms{};
 
 	Parms.Event = Event;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14648,19 +19191,22 @@ struct FKeyEvent UWidgetBlueprintLibrary::GetKeyEventFromAnalogInputEvent(struct
 
 struct FInputEvent UWidgetBlueprintLibrary::GetInputEventFromPointerEvent(struct FPointerEvent& Event)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "GetInputEventFromPointerEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_GetInputEventFromPointerEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "GetInputEventFromPointerEvent");
+
+	Params::UWidgetBlueprintLibrary_GetInputEventFromPointerEvent_Params Parms{};
 
 	Parms.Event = Event;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14675,19 +19221,22 @@ struct FInputEvent UWidgetBlueprintLibrary::GetInputEventFromPointerEvent(struct
 
 struct FInputEvent UWidgetBlueprintLibrary::GetInputEventFromNavigationEvent(struct FNavigationEvent& Event)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "GetInputEventFromNavigationEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_GetInputEventFromNavigationEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "GetInputEventFromNavigationEvent");
+
+	Params::UWidgetBlueprintLibrary_GetInputEventFromNavigationEvent_Params Parms{};
 
 	Parms.Event = Event;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14702,19 +19251,22 @@ struct FInputEvent UWidgetBlueprintLibrary::GetInputEventFromNavigationEvent(str
 
 struct FInputEvent UWidgetBlueprintLibrary::GetInputEventFromKeyEvent(struct FKeyEvent& Event)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "GetInputEventFromKeyEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_GetInputEventFromKeyEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "GetInputEventFromKeyEvent");
+
+	Params::UWidgetBlueprintLibrary_GetInputEventFromKeyEvent_Params Parms{};
 
 	Parms.Event = Event;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14729,19 +19281,22 @@ struct FInputEvent UWidgetBlueprintLibrary::GetInputEventFromKeyEvent(struct FKe
 
 struct FInputEvent UWidgetBlueprintLibrary::GetInputEventFromCharacterEvent(struct FCharacterEvent& Event)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "GetInputEventFromCharacterEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_GetInputEventFromCharacterEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "GetInputEventFromCharacterEvent");
+
+	Params::UWidgetBlueprintLibrary_GetInputEventFromCharacterEvent_Params Parms{};
 
 	Parms.Event = Event;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14756,19 +19311,22 @@ struct FInputEvent UWidgetBlueprintLibrary::GetInputEventFromCharacterEvent(stru
 
 class UMaterialInstanceDynamic* UWidgetBlueprintLibrary::GetDynamicMaterial(struct FSlateBrush& Brush)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "GetDynamicMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_GetDynamicMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "GetDynamicMaterial");
+
+	Params::UWidgetBlueprintLibrary_GetDynamicMaterial_Params Parms{};
 
 	Parms.Brush = Brush;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14782,18 +19340,21 @@ class UMaterialInstanceDynamic* UWidgetBlueprintLibrary::GetDynamicMaterial(stru
 
 class UDragDropOperation* UWidgetBlueprintLibrary::GetDragDroppingContent()
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "GetDragDroppingContent");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_GetDragDroppingContent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "GetDragDroppingContent");
+
+	Params::UWidgetBlueprintLibrary_GetDragDroppingContent_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14808,19 +19369,22 @@ class UDragDropOperation* UWidgetBlueprintLibrary::GetDragDroppingContent()
 
 class UTexture2D* UWidgetBlueprintLibrary::GetBrushResourceAsTexture2D(struct FSlateBrush& Brush)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "GetBrushResourceAsTexture2D");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_GetBrushResourceAsTexture2D_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "GetBrushResourceAsTexture2D");
+
+	Params::UWidgetBlueprintLibrary_GetBrushResourceAsTexture2D_Params Parms{};
 
 	Parms.Brush = Brush;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14835,19 +19399,22 @@ class UTexture2D* UWidgetBlueprintLibrary::GetBrushResourceAsTexture2D(struct FS
 
 class UMaterialInterface* UWidgetBlueprintLibrary::GetBrushResourceAsMaterial(struct FSlateBrush& Brush)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "GetBrushResourceAsMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_GetBrushResourceAsMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "GetBrushResourceAsMaterial");
+
+	Params::UWidgetBlueprintLibrary_GetBrushResourceAsMaterial_Params Parms{};
 
 	Parms.Brush = Brush;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14862,19 +19429,22 @@ class UMaterialInterface* UWidgetBlueprintLibrary::GetBrushResourceAsMaterial(st
 
 class UObject* UWidgetBlueprintLibrary::GetBrushResource(struct FSlateBrush& Brush)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "GetBrushResource");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_GetBrushResource_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "GetBrushResource");
+
+	Params::UWidgetBlueprintLibrary_GetBrushResource_Params Parms{};
 
 	Parms.Brush = Brush;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14891,24 +19461,27 @@ class UObject* UWidgetBlueprintLibrary::GetBrushResource(struct FSlateBrush& Bru
 
 void UWidgetBlueprintLibrary::GetAllWidgetsWithInterface(class UObject* WorldContextObject, TArray<class UUserWidget*>* FoundWidgets, TSubclassOf<class IInterface> Interface, bool TopLevelOnly)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "GetAllWidgetsWithInterface");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_GetAllWidgetsWithInterface_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "GetAllWidgetsWithInterface");
+
+	Params::UWidgetBlueprintLibrary_GetAllWidgetsWithInterface_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.Interface = Interface;
 	Parms.TopLevelOnly = TopLevelOnly;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (FoundWidgets != nullptr)
-		*FoundWidgets = Parms.FoundWidgets;
+		*FoundWidgets = std::move(Parms.FoundWidgets);
 
 }
 
@@ -14923,24 +19496,27 @@ void UWidgetBlueprintLibrary::GetAllWidgetsWithInterface(class UObject* WorldCon
 
 void UWidgetBlueprintLibrary::GetAllWidgetsOfClass(class UObject* WorldContextObject, TArray<class UUserWidget*>* FoundWidgets, TSubclassOf<class UUserWidget> WidgetClass, bool TopLevelOnly)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "GetAllWidgetsOfClass");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_GetAllWidgetsOfClass_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "GetAllWidgetsOfClass");
+
+	Params::UWidgetBlueprintLibrary_GetAllWidgetsOfClass_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.WidgetClass = WidgetClass;
 	Parms.TopLevelOnly = TopLevelOnly;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (FoundWidgets != nullptr)
-		*FoundWidgets = Parms.FoundWidgets;
+		*FoundWidgets = std::move(Parms.FoundWidgets);
 
 }
 
@@ -14953,19 +19529,22 @@ void UWidgetBlueprintLibrary::GetAllWidgetsOfClass(class UObject* WorldContextOb
 
 struct FEventReply UWidgetBlueprintLibrary::EndDragDrop(struct FEventReply& Reply)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "EndDragDrop");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_EndDragDrop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "EndDragDrop");
+
+	Params::UWidgetBlueprintLibrary_EndDragDrop_Params Parms{};
 
 	Parms.Reply = Reply;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -14985,9 +19564,12 @@ struct FEventReply UWidgetBlueprintLibrary::EndDragDrop(struct FEventReply& Repl
 
 void UWidgetBlueprintLibrary::DrawTextFormatted(struct FPaintContext& Context, class FText& Text, const struct FVector2D& Position, class UFont* Font, int32 FontSize, class FName FontTypeFace, const struct FLinearColor& Tint)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "DrawTextFormatted");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_DrawTextFormatted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "DrawTextFormatted");
+
+	Params::UWidgetBlueprintLibrary_DrawTextFormatted_Params Parms{};
 
 	Parms.Context = Context;
 	Parms.Text = Text;
@@ -14997,13 +19579,13 @@ void UWidgetBlueprintLibrary::DrawTextFormatted(struct FPaintContext& Context, c
 	Parms.FontTypeFace = FontTypeFace;
 	Parms.Tint = Tint;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15018,22 +19600,25 @@ void UWidgetBlueprintLibrary::DrawTextFormatted(struct FPaintContext& Context, c
 
 void UWidgetBlueprintLibrary::DrawText(struct FPaintContext& Context, const class FString& InString, const struct FVector2D& Position, const struct FLinearColor& Tint)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "DrawText");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_DrawText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "DrawText");
+
+	Params::UWidgetBlueprintLibrary_DrawText_Params Parms{};
 
 	Parms.Context = Context;
 	Parms.InString = InString;
 	Parms.Position = Position;
 	Parms.Tint = Tint;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15049,9 +19634,12 @@ void UWidgetBlueprintLibrary::DrawText(struct FPaintContext& Context, const clas
 
 void UWidgetBlueprintLibrary::DrawLines(struct FPaintContext& Context, TArray<struct FVector2D>& Points, const struct FLinearColor& Tint, bool bAntiAlias, float Thickness)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "DrawLines");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_DrawLines_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "DrawLines");
+
+	Params::UWidgetBlueprintLibrary_DrawLines_Params Parms{};
 
 	Parms.Context = Context;
 	Parms.Points = Points;
@@ -15059,13 +19647,13 @@ void UWidgetBlueprintLibrary::DrawLines(struct FPaintContext& Context, TArray<st
 	Parms.bAntiAlias = bAntiAlias;
 	Parms.Thickness = Thickness;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15082,9 +19670,12 @@ void UWidgetBlueprintLibrary::DrawLines(struct FPaintContext& Context, TArray<st
 
 void UWidgetBlueprintLibrary::DrawLine(struct FPaintContext& Context, const struct FVector2D& PositionA, const struct FVector2D& PositionB, const struct FLinearColor& Tint, bool bAntiAlias, float Thickness)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "DrawLine");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_DrawLine_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "DrawLine");
+
+	Params::UWidgetBlueprintLibrary_DrawLine_Params Parms{};
 
 	Parms.Context = Context;
 	Parms.PositionA = PositionA;
@@ -15093,13 +19684,13 @@ void UWidgetBlueprintLibrary::DrawLine(struct FPaintContext& Context, const stru
 	Parms.bAntiAlias = bAntiAlias;
 	Parms.Thickness = Thickness;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15115,9 +19706,12 @@ void UWidgetBlueprintLibrary::DrawLine(struct FPaintContext& Context, const stru
 
 void UWidgetBlueprintLibrary::DrawBox(struct FPaintContext& Context, const struct FVector2D& Position, const struct FVector2D& Size, class USlateBrushAsset* Brush, const struct FLinearColor& Tint)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "DrawBox");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_DrawBox_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "DrawBox");
+
+	Params::UWidgetBlueprintLibrary_DrawBox_Params Parms{};
 
 	Parms.Context = Context;
 	Parms.Position = Position;
@@ -15125,13 +19719,13 @@ void UWidgetBlueprintLibrary::DrawBox(struct FPaintContext& Context, const struc
 	Parms.Brush = Brush;
 	Parms.Tint = Tint;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15142,18 +19736,20 @@ void UWidgetBlueprintLibrary::DrawBox(struct FPaintContext& Context, const struc
 
 void UWidgetBlueprintLibrary::DismissAllMenus()
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "DismissAllMenus");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_DismissAllMenus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "DismissAllMenus");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15168,21 +19764,24 @@ void UWidgetBlueprintLibrary::DismissAllMenus()
 
 struct FEventReply UWidgetBlueprintLibrary::DetectDragIfPressed(struct FPointerEvent& PointerEvent, class UWidget* WidgetDetectingDrag, const struct FKey& DragKey)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "DetectDragIfPressed");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_DetectDragIfPressed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "DetectDragIfPressed");
+
+	Params::UWidgetBlueprintLibrary_DetectDragIfPressed_Params Parms{};
 
 	Parms.PointerEvent = PointerEvent;
 	Parms.WidgetDetectingDrag = WidgetDetectingDrag;
 	Parms.DragKey = DragKey;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -15199,21 +19798,24 @@ struct FEventReply UWidgetBlueprintLibrary::DetectDragIfPressed(struct FPointerE
 
 struct FEventReply UWidgetBlueprintLibrary::DetectDrag(struct FEventReply& Reply, class UWidget* WidgetDetectingDrag, const struct FKey& DragKey)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "DetectDrag");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_DetectDrag_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "DetectDrag");
+
+	Params::UWidgetBlueprintLibrary_DetectDrag_Params Parms{};
 
 	Parms.Reply = Reply;
 	Parms.WidgetDetectingDrag = WidgetDetectingDrag;
 	Parms.DragKey = DragKey;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -15228,19 +19830,22 @@ struct FEventReply UWidgetBlueprintLibrary::DetectDrag(struct FEventReply& Reply
 
 class UDragDropOperation* UWidgetBlueprintLibrary::CreateDragDropOperation(TSubclassOf<class UDragDropOperation> OperationClass)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "CreateDragDropOperation");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_CreateDragDropOperation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "CreateDragDropOperation");
+
+	Params::UWidgetBlueprintLibrary_CreateDragDropOperation_Params Parms{};
 
 	Parms.OperationClass = OperationClass;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -15257,21 +19862,24 @@ class UDragDropOperation* UWidgetBlueprintLibrary::CreateDragDropOperation(TSubc
 
 class UUserWidget* UWidgetBlueprintLibrary::Create(class UObject* WorldContextObject, TSubclassOf<class UUserWidget> WidgetType, class APlayerController* OwningPlayer)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "Create");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_Create_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "Create");
+
+	Params::UWidgetBlueprintLibrary_Create_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.WidgetType = WidgetType;
 	Parms.OwningPlayer = OwningPlayer;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -15287,20 +19895,23 @@ class UUserWidget* UWidgetBlueprintLibrary::Create(class UObject* WorldContextOb
 
 struct FEventReply UWidgetBlueprintLibrary::ClearUserFocus(struct FEventReply& Reply, bool bInAllUsers)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "ClearUserFocus");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_ClearUserFocus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "ClearUserFocus");
+
+	Params::UWidgetBlueprintLibrary_ClearUserFocus_Params Parms{};
 
 	Parms.Reply = Reply;
 	Parms.bInAllUsers = bInAllUsers;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -15316,20 +19927,23 @@ struct FEventReply UWidgetBlueprintLibrary::ClearUserFocus(struct FEventReply& R
 
 struct FEventReply UWidgetBlueprintLibrary::CaptureMouse(struct FEventReply& Reply, class UWidget* CapturingWidget)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "CaptureMouse");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_CaptureMouse_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "CaptureMouse");
+
+	Params::UWidgetBlueprintLibrary_CaptureMouse_Params Parms{};
 
 	Parms.Reply = Reply;
 	Parms.CapturingWidget = CapturingWidget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -15346,21 +19960,24 @@ struct FEventReply UWidgetBlueprintLibrary::CaptureMouse(struct FEventReply& Rep
 
 struct FEventReply UWidgetBlueprintLibrary::CaptureJoystick(struct FEventReply& Reply, class UWidget* CapturingWidget, bool bInAllJoysticks)
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "CaptureJoystick");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_CaptureJoystick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "CaptureJoystick");
+
+	Params::UWidgetBlueprintLibrary_CaptureJoystick_Params Parms{};
 
 	Parms.Reply = Reply;
 	Parms.CapturingWidget = CapturingWidget;
 	Parms.bInAllJoysticks = bInAllJoysticks;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -15373,19 +19990,49 @@ struct FEventReply UWidgetBlueprintLibrary::CaptureJoystick(struct FEventReply& 
 
 void UWidgetBlueprintLibrary::CancelDragDrop()
 {
-	static auto Func = Class->GetFunction("WidgetBlueprintLibrary", "CancelDragDrop");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetBlueprintLibrary_CancelDragDrop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetBlueprintLibrary", "CancelDragDrop");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.WidgetComponent
+// (SceneComponent, PrimitiveComponent)
+
+class UClass* UWidgetComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WidgetComponent");
+
+	return Clss;
+}
+
+
+// WidgetComponent UMG.Default__WidgetComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWidgetComponent* UWidgetComponent::GetDefaultObj()
+{
+	static class UWidgetComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWidgetComponent*>(UWidgetComponent::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -15396,19 +20043,22 @@ void UWidgetBlueprintLibrary::CancelDragDrop()
 
 void UWidgetComponent::SetWindowVisibility(enum class EWindowVisibility InVisibility)
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "SetWindowVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_SetWindowVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "SetWindowVisibility");
+
+	Params::UWidgetComponent_SetWindowVisibility_Params Parms{};
 
 	Parms.InVisibility = InVisibility;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15420,19 +20070,22 @@ void UWidgetComponent::SetWindowVisibility(enum class EWindowVisibility InVisibi
 
 void UWidgetComponent::SetWindowFocusable(bool bInWindowFocusable)
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "SetWindowFocusable");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_SetWindowFocusable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "SetWindowFocusable");
+
+	Params::UWidgetComponent_SetWindowFocusable_Params Parms{};
 
 	Parms.bInWindowFocusable = bInWindowFocusable;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15444,19 +20097,22 @@ void UWidgetComponent::SetWindowFocusable(bool bInWindowFocusable)
 
 void UWidgetComponent::SetWidgetSpace(enum class EWidgetSpace NewSpace)
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "SetWidgetSpace");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_SetWidgetSpace_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "SetWidgetSpace");
+
+	Params::UWidgetComponent_SetWidgetSpace_Params Parms{};
 
 	Parms.NewSpace = NewSpace;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15468,19 +20124,22 @@ void UWidgetComponent::SetWidgetSpace(enum class EWidgetSpace NewSpace)
 
 void UWidgetComponent::SetWidget(class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "SetWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_SetWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "SetWidget");
+
+	Params::UWidgetComponent_SetWidget_Params Parms{};
 
 	Parms.Widget = Widget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15492,19 +20151,22 @@ void UWidgetComponent::SetWidget(class UUserWidget* Widget)
 
 void UWidgetComponent::SetTwoSided(bool bWantTwoSided)
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "SetTwoSided");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_SetTwoSided_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "SetTwoSided");
+
+	Params::UWidgetComponent_SetTwoSided_Params Parms{};
 
 	Parms.bWantTwoSided = bWantTwoSided;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15516,19 +20178,22 @@ void UWidgetComponent::SetTwoSided(bool bWantTwoSided)
 
 void UWidgetComponent::SetTintColorAndOpacity(const struct FLinearColor& NewTintColorAndOpacity)
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "SetTintColorAndOpacity");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_SetTintColorAndOpacity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "SetTintColorAndOpacity");
+
+	Params::UWidgetComponent_SetTintColorAndOpacity_Params Parms{};
 
 	Parms.NewTintColorAndOpacity = NewTintColorAndOpacity;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15540,19 +20205,22 @@ void UWidgetComponent::SetTintColorAndOpacity(const struct FLinearColor& NewTint
 
 void UWidgetComponent::SetTickWhenOffscreen(bool bWantTickWhenOffscreen)
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "SetTickWhenOffscreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_SetTickWhenOffscreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "SetTickWhenOffscreen");
+
+	Params::UWidgetComponent_SetTickWhenOffscreen_Params Parms{};
 
 	Parms.bWantTickWhenOffscreen = bWantTickWhenOffscreen;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15564,19 +20232,22 @@ void UWidgetComponent::SetTickWhenOffscreen(bool bWantTickWhenOffscreen)
 
 void UWidgetComponent::SetRedrawTime(float InRedrawTime)
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "SetRedrawTime");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_SetRedrawTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "SetRedrawTime");
+
+	Params::UWidgetComponent_SetRedrawTime_Params Parms{};
 
 	Parms.InRedrawTime = InRedrawTime;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15588,19 +20259,22 @@ void UWidgetComponent::SetRedrawTime(float InRedrawTime)
 
 void UWidgetComponent::SetPivot(struct FVector2D& InPivot)
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "SetPivot");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_SetPivot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "SetPivot");
+
+	Params::UWidgetComponent_SetPivot_Params Parms{};
 
 	Parms.InPivot = InPivot;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15612,19 +20286,22 @@ void UWidgetComponent::SetPivot(struct FVector2D& InPivot)
 
 void UWidgetComponent::SetOwnerPlayer(class ULocalPlayer* LocalPlayer)
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "SetOwnerPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_SetOwnerPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "SetOwnerPlayer");
+
+	Params::UWidgetComponent_SetOwnerPlayer_Params Parms{};
 
 	Parms.LocalPlayer = LocalPlayer;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15636,19 +20313,22 @@ void UWidgetComponent::SetOwnerPlayer(class ULocalPlayer* LocalPlayer)
 
 void UWidgetComponent::SetManuallyRedraw(bool bUseManualRedraw)
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "SetManuallyRedraw");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_SetManuallyRedraw_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "SetManuallyRedraw");
+
+	Params::UWidgetComponent_SetManuallyRedraw_Params Parms{};
 
 	Parms.bUseManualRedraw = bUseManualRedraw;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15660,19 +20340,22 @@ void UWidgetComponent::SetManuallyRedraw(bool bUseManualRedraw)
 
 void UWidgetComponent::SetGeometryMode(enum class EWidgetGeometryMode InGeometryMode)
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "SetGeometryMode");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_SetGeometryMode_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "SetGeometryMode");
+
+	Params::UWidgetComponent_SetGeometryMode_Params Parms{};
 
 	Parms.InGeometryMode = InGeometryMode;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15684,19 +20367,22 @@ void UWidgetComponent::SetGeometryMode(enum class EWidgetGeometryMode InGeometry
 
 void UWidgetComponent::SetDrawSize(const struct FVector2D& Size)
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "SetDrawSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_SetDrawSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "SetDrawSize");
+
+	Params::UWidgetComponent_SetDrawSize_Params Parms{};
 
 	Parms.Size = Size;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15708,19 +20394,22 @@ void UWidgetComponent::SetDrawSize(const struct FVector2D& Size)
 
 void UWidgetComponent::SetDrawAtDesiredSize(bool bInDrawAtDesiredSize)
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "SetDrawAtDesiredSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_SetDrawAtDesiredSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "SetDrawAtDesiredSize");
+
+	Params::UWidgetComponent_SetDrawAtDesiredSize_Params Parms{};
 
 	Parms.bInDrawAtDesiredSize = bInDrawAtDesiredSize;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15732,19 +20421,22 @@ void UWidgetComponent::SetDrawAtDesiredSize(bool bInDrawAtDesiredSize)
 
 void UWidgetComponent::SetCylinderArcAngle(float InCylinderArcAngle)
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "SetCylinderArcAngle");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_SetCylinderArcAngle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "SetCylinderArcAngle");
+
+	Params::UWidgetComponent_SetCylinderArcAngle_Params Parms{};
 
 	Parms.InCylinderArcAngle = InCylinderArcAngle;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15756,19 +20448,22 @@ void UWidgetComponent::SetCylinderArcAngle(float InCylinderArcAngle)
 
 void UWidgetComponent::SetBackgroundColor(const struct FLinearColor& NewBackgroundColor)
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "SetBackgroundColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_SetBackgroundColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "SetBackgroundColor");
+
+	Params::UWidgetComponent_SetBackgroundColor_Params Parms{};
 
 	Parms.NewBackgroundColor = NewBackgroundColor;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15779,18 +20474,20 @@ void UWidgetComponent::SetBackgroundColor(const struct FLinearColor& NewBackgrou
 
 void UWidgetComponent::RequestRedraw()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "RequestRedraw");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_RequestRedraw_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "RequestRedraw");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -15802,18 +20499,21 @@ void UWidgetComponent::RequestRedraw()
 
 enum class EWindowVisibility UWidgetComponent::GetWindowVisiblility()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetWindowVisiblility");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetWindowVisiblility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetWindowVisiblility");
+
+	Params::UWidgetComponent_GetWindowVisiblility_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -15827,18 +20527,21 @@ enum class EWindowVisibility UWidgetComponent::GetWindowVisiblility()
 
 bool UWidgetComponent::GetWindowFocusable()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetWindowFocusable");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetWindowFocusable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetWindowFocusable");
+
+	Params::UWidgetComponent_GetWindowFocusable_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -15852,18 +20555,21 @@ bool UWidgetComponent::GetWindowFocusable()
 
 enum class EWidgetSpace UWidgetComponent::GetWidgetSpace()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetWidgetSpace");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetWidgetSpace_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetWidgetSpace");
+
+	Params::UWidgetComponent_GetWidgetSpace_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -15877,18 +20583,21 @@ enum class EWidgetSpace UWidgetComponent::GetWidgetSpace()
 
 class UUserWidget* UWidgetComponent::GetUserWidgetObject()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetUserWidgetObject");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetUserWidgetObject_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetUserWidgetObject");
+
+	Params::UWidgetComponent_GetUserWidgetObject_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -15902,18 +20611,21 @@ class UUserWidget* UWidgetComponent::GetUserWidgetObject()
 
 bool UWidgetComponent::GetTwoSided()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetTwoSided");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetTwoSided_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetTwoSided");
+
+	Params::UWidgetComponent_GetTwoSided_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -15927,18 +20639,21 @@ bool UWidgetComponent::GetTwoSided()
 
 bool UWidgetComponent::GetTickWhenOffscreen()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetTickWhenOffscreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetTickWhenOffscreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetTickWhenOffscreen");
+
+	Params::UWidgetComponent_GetTickWhenOffscreen_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -15952,18 +20667,21 @@ bool UWidgetComponent::GetTickWhenOffscreen()
 
 class UTextureRenderTarget2D* UWidgetComponent::GetRenderTarget()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetRenderTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetRenderTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetRenderTarget");
+
+	Params::UWidgetComponent_GetRenderTarget_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -15977,18 +20695,21 @@ class UTextureRenderTarget2D* UWidgetComponent::GetRenderTarget()
 
 float UWidgetComponent::GetRedrawTime()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetRedrawTime");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetRedrawTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetRedrawTime");
+
+	Params::UWidgetComponent_GetRedrawTime_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16002,18 +20723,21 @@ float UWidgetComponent::GetRedrawTime()
 
 struct FVector2D UWidgetComponent::GetPivot()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetPivot");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetPivot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetPivot");
+
+	Params::UWidgetComponent_GetPivot_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16027,18 +20751,21 @@ struct FVector2D UWidgetComponent::GetPivot()
 
 class ULocalPlayer* UWidgetComponent::GetOwnerPlayer()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetOwnerPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetOwnerPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetOwnerPlayer");
+
+	Params::UWidgetComponent_GetOwnerPlayer_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16052,18 +20779,21 @@ class ULocalPlayer* UWidgetComponent::GetOwnerPlayer()
 
 class UMaterialInstanceDynamic* UWidgetComponent::GetMaterialInstance()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetMaterialInstance");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetMaterialInstance_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetMaterialInstance");
+
+	Params::UWidgetComponent_GetMaterialInstance_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16077,18 +20807,21 @@ class UMaterialInstanceDynamic* UWidgetComponent::GetMaterialInstance()
 
 bool UWidgetComponent::GetManuallyRedraw()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetManuallyRedraw");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetManuallyRedraw_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetManuallyRedraw");
+
+	Params::UWidgetComponent_GetManuallyRedraw_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16102,18 +20835,21 @@ bool UWidgetComponent::GetManuallyRedraw()
 
 enum class EWidgetGeometryMode UWidgetComponent::GetGeometryMode()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetGeometryMode");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetGeometryMode_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetGeometryMode");
+
+	Params::UWidgetComponent_GetGeometryMode_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16127,18 +20863,21 @@ enum class EWidgetGeometryMode UWidgetComponent::GetGeometryMode()
 
 struct FVector2D UWidgetComponent::GetDrawSize()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetDrawSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetDrawSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetDrawSize");
+
+	Params::UWidgetComponent_GetDrawSize_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16152,18 +20891,21 @@ struct FVector2D UWidgetComponent::GetDrawSize()
 
 bool UWidgetComponent::GetDrawAtDesiredSize()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetDrawAtDesiredSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetDrawAtDesiredSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetDrawAtDesiredSize");
+
+	Params::UWidgetComponent_GetDrawAtDesiredSize_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16177,18 +20919,21 @@ bool UWidgetComponent::GetDrawAtDesiredSize()
 
 float UWidgetComponent::GetCylinderArcAngle()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetCylinderArcAngle");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetCylinderArcAngle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetCylinderArcAngle");
+
+	Params::UWidgetComponent_GetCylinderArcAngle_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16202,21 +20947,52 @@ float UWidgetComponent::GetCylinderArcAngle()
 
 struct FVector2D UWidgetComponent::GetCurrentDrawSize()
 {
-	static auto Func = Class->GetFunction("WidgetComponent", "GetCurrentDrawSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetComponent_GetCurrentDrawSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetComponent", "GetCurrentDrawSize");
+
+	Params::UWidgetComponent_GetCurrentDrawSize_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.WidgetInteractionComponent
+// (SceneComponent)
+
+class UClass* UWidgetInteractionComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WidgetInteractionComponent");
+
+	return Clss;
+}
+
+
+// WidgetInteractionComponent UMG.Default__WidgetInteractionComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWidgetInteractionComponent* UWidgetInteractionComponent::GetDefaultObj()
+{
+	static class UWidgetInteractionComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWidgetInteractionComponent*>(UWidgetInteractionComponent::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -16227,19 +21003,22 @@ struct FVector2D UWidgetComponent::GetCurrentDrawSize()
 
 void UWidgetInteractionComponent::SetCustomHitResult(struct FHitResult& HitResult)
 {
-	static auto Func = Class->GetFunction("WidgetInteractionComponent", "SetCustomHitResult");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetInteractionComponent_SetCustomHitResult_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetInteractionComponent", "SetCustomHitResult");
+
+	Params::UWidgetInteractionComponent_SetCustomHitResult_Params Parms{};
 
 	Parms.HitResult = HitResult;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -16253,20 +21032,23 @@ void UWidgetInteractionComponent::SetCustomHitResult(struct FHitResult& HitResul
 
 bool UWidgetInteractionComponent::SendKeyChar(const class FString& Characters, bool bRepeat)
 {
-	static auto Func = Class->GetFunction("WidgetInteractionComponent", "SendKeyChar");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetInteractionComponent_SendKeyChar_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetInteractionComponent", "SendKeyChar");
+
+	Params::UWidgetInteractionComponent_SendKeyChar_Params Parms{};
 
 	Parms.Characters = Characters;
 	Parms.bRepeat = bRepeat;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16280,19 +21062,22 @@ bool UWidgetInteractionComponent::SendKeyChar(const class FString& Characters, b
 
 void UWidgetInteractionComponent::ScrollWheel(float ScrollDelta)
 {
-	static auto Func = Class->GetFunction("WidgetInteractionComponent", "ScrollWheel");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetInteractionComponent_ScrollWheel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetInteractionComponent", "ScrollWheel");
+
+	Params::UWidgetInteractionComponent_ScrollWheel_Params Parms{};
 
 	Parms.ScrollDelta = ScrollDelta;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -16304,19 +21089,22 @@ void UWidgetInteractionComponent::ScrollWheel(float ScrollDelta)
 
 void UWidgetInteractionComponent::ReleasePointerKey(const struct FKey& Key)
 {
-	static auto Func = Class->GetFunction("WidgetInteractionComponent", "ReleasePointerKey");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetInteractionComponent_ReleasePointerKey_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetInteractionComponent", "ReleasePointerKey");
+
+	Params::UWidgetInteractionComponent_ReleasePointerKey_Params Parms{};
 
 	Parms.Key = Key;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -16329,19 +21117,22 @@ void UWidgetInteractionComponent::ReleasePointerKey(const struct FKey& Key)
 
 bool UWidgetInteractionComponent::ReleaseKey(const struct FKey& Key)
 {
-	static auto Func = Class->GetFunction("WidgetInteractionComponent", "ReleaseKey");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetInteractionComponent_ReleaseKey_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetInteractionComponent", "ReleaseKey");
+
+	Params::UWidgetInteractionComponent_ReleaseKey_Params Parms{};
 
 	Parms.Key = Key;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16355,19 +21146,22 @@ bool UWidgetInteractionComponent::ReleaseKey(const struct FKey& Key)
 
 void UWidgetInteractionComponent::PressPointerKey(const struct FKey& Key)
 {
-	static auto Func = Class->GetFunction("WidgetInteractionComponent", "PressPointerKey");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetInteractionComponent_PressPointerKey_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetInteractionComponent", "PressPointerKey");
+
+	Params::UWidgetInteractionComponent_PressPointerKey_Params Parms{};
 
 	Parms.Key = Key;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -16381,20 +21175,23 @@ void UWidgetInteractionComponent::PressPointerKey(const struct FKey& Key)
 
 bool UWidgetInteractionComponent::PressKey(const struct FKey& Key, bool bRepeat)
 {
-	static auto Func = Class->GetFunction("WidgetInteractionComponent", "PressKey");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetInteractionComponent_PressKey_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetInteractionComponent", "PressKey");
+
+	Params::UWidgetInteractionComponent_PressKey_Params Parms{};
 
 	Parms.Key = Key;
 	Parms.bRepeat = bRepeat;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16409,19 +21206,22 @@ bool UWidgetInteractionComponent::PressKey(const struct FKey& Key, bool bRepeat)
 
 bool UWidgetInteractionComponent::PressAndReleaseKey(const struct FKey& Key)
 {
-	static auto Func = Class->GetFunction("WidgetInteractionComponent", "PressAndReleaseKey");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetInteractionComponent_PressAndReleaseKey_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetInteractionComponent", "PressAndReleaseKey");
+
+	Params::UWidgetInteractionComponent_PressAndReleaseKey_Params Parms{};
 
 	Parms.Key = Key;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16435,18 +21235,21 @@ bool UWidgetInteractionComponent::PressAndReleaseKey(const struct FKey& Key)
 
 bool UWidgetInteractionComponent::IsOverInteractableWidget()
 {
-	static auto Func = Class->GetFunction("WidgetInteractionComponent", "IsOverInteractableWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetInteractionComponent_IsOverInteractableWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetInteractionComponent", "IsOverInteractableWidget");
+
+	Params::UWidgetInteractionComponent_IsOverInteractableWidget_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16460,18 +21263,21 @@ bool UWidgetInteractionComponent::IsOverInteractableWidget()
 
 bool UWidgetInteractionComponent::IsOverHitTestVisibleWidget()
 {
-	static auto Func = Class->GetFunction("WidgetInteractionComponent", "IsOverHitTestVisibleWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetInteractionComponent_IsOverHitTestVisibleWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetInteractionComponent", "IsOverHitTestVisibleWidget");
+
+	Params::UWidgetInteractionComponent_IsOverHitTestVisibleWidget_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16485,18 +21291,21 @@ bool UWidgetInteractionComponent::IsOverHitTestVisibleWidget()
 
 bool UWidgetInteractionComponent::IsOverFocusableWidget()
 {
-	static auto Func = Class->GetFunction("WidgetInteractionComponent", "IsOverFocusableWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetInteractionComponent_IsOverFocusableWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetInteractionComponent", "IsOverFocusableWidget");
+
+	Params::UWidgetInteractionComponent_IsOverFocusableWidget_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16510,18 +21319,21 @@ bool UWidgetInteractionComponent::IsOverFocusableWidget()
 
 struct FHitResult UWidgetInteractionComponent::GetLastHitResult()
 {
-	static auto Func = Class->GetFunction("WidgetInteractionComponent", "GetLastHitResult");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetInteractionComponent_GetLastHitResult_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetInteractionComponent", "GetLastHitResult");
+
+	Params::UWidgetInteractionComponent_GetLastHitResult_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16535,18 +21347,21 @@ struct FHitResult UWidgetInteractionComponent::GetLastHitResult()
 
 class UWidgetComponent* UWidgetInteractionComponent::GetHoveredWidgetComponent()
 {
-	static auto Func = Class->GetFunction("WidgetInteractionComponent", "GetHoveredWidgetComponent");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetInteractionComponent_GetHoveredWidgetComponent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetInteractionComponent", "GetHoveredWidgetComponent");
+
+	Params::UWidgetInteractionComponent_GetHoveredWidgetComponent_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16560,21 +21375,52 @@ class UWidgetComponent* UWidgetInteractionComponent::GetHoveredWidgetComponent()
 
 struct FVector2D UWidgetInteractionComponent::Get2DHitLocation()
 {
-	static auto Func = Class->GetFunction("WidgetInteractionComponent", "Get2DHitLocation");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetInteractionComponent_Get2DHitLocation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetInteractionComponent", "Get2DHitLocation");
+
+	Params::UWidgetInteractionComponent_Get2DHitLocation_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.WidgetLayoutLibrary
+// (None)
+
+class UClass* UWidgetLayoutLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WidgetLayoutLibrary");
+
+	return Clss;
+}
+
+
+// WidgetLayoutLibrary UMG.Default__WidgetLayoutLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWidgetLayoutLibrary* UWidgetLayoutLibrary::GetDefaultObj()
+{
+	static class UWidgetLayoutLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWidgetLayoutLibrary*>(UWidgetLayoutLibrary::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -16586,19 +21432,22 @@ struct FVector2D UWidgetInteractionComponent::Get2DHitLocation()
 
 class UVerticalBoxSlot* UWidgetLayoutLibrary::SlotAsVerticalBoxSlot(class UWidget* Widget)
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "SlotAsVerticalBoxSlot");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_SlotAsVerticalBoxSlot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "SlotAsVerticalBoxSlot");
+
+	Params::UWidgetLayoutLibrary_SlotAsVerticalBoxSlot_Params Parms{};
 
 	Parms.Widget = Widget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16613,19 +21462,22 @@ class UVerticalBoxSlot* UWidgetLayoutLibrary::SlotAsVerticalBoxSlot(class UWidge
 
 class UUniformGridSlot* UWidgetLayoutLibrary::SlotAsUniformGridSlot(class UWidget* Widget)
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "SlotAsUniformGridSlot");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_SlotAsUniformGridSlot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "SlotAsUniformGridSlot");
+
+	Params::UWidgetLayoutLibrary_SlotAsUniformGridSlot_Params Parms{};
 
 	Parms.Widget = Widget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16640,19 +21492,22 @@ class UUniformGridSlot* UWidgetLayoutLibrary::SlotAsUniformGridSlot(class UWidge
 
 class UScrollBoxSlot* UWidgetLayoutLibrary::SlotAsScrollBoxSlot(class UWidget* Widget)
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "SlotAsScrollBoxSlot");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_SlotAsScrollBoxSlot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "SlotAsScrollBoxSlot");
+
+	Params::UWidgetLayoutLibrary_SlotAsScrollBoxSlot_Params Parms{};
 
 	Parms.Widget = Widget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16667,19 +21522,22 @@ class UScrollBoxSlot* UWidgetLayoutLibrary::SlotAsScrollBoxSlot(class UWidget* W
 
 class UOverlaySlot* UWidgetLayoutLibrary::SlotAsOverlaySlot(class UWidget* Widget)
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "SlotAsOverlaySlot");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_SlotAsOverlaySlot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "SlotAsOverlaySlot");
+
+	Params::UWidgetLayoutLibrary_SlotAsOverlaySlot_Params Parms{};
 
 	Parms.Widget = Widget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16694,19 +21552,22 @@ class UOverlaySlot* UWidgetLayoutLibrary::SlotAsOverlaySlot(class UWidget* Widge
 
 class UHorizontalBoxSlot* UWidgetLayoutLibrary::SlotAsHorizontalBoxSlot(class UWidget* Widget)
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "SlotAsHorizontalBoxSlot");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_SlotAsHorizontalBoxSlot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "SlotAsHorizontalBoxSlot");
+
+	Params::UWidgetLayoutLibrary_SlotAsHorizontalBoxSlot_Params Parms{};
 
 	Parms.Widget = Widget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16721,19 +21582,22 @@ class UHorizontalBoxSlot* UWidgetLayoutLibrary::SlotAsHorizontalBoxSlot(class UW
 
 class UGridSlot* UWidgetLayoutLibrary::SlotAsGridSlot(class UWidget* Widget)
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "SlotAsGridSlot");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_SlotAsGridSlot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "SlotAsGridSlot");
+
+	Params::UWidgetLayoutLibrary_SlotAsGridSlot_Params Parms{};
 
 	Parms.Widget = Widget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16748,19 +21612,22 @@ class UGridSlot* UWidgetLayoutLibrary::SlotAsGridSlot(class UWidget* Widget)
 
 class UCanvasPanelSlot* UWidgetLayoutLibrary::SlotAsCanvasSlot(class UWidget* Widget)
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "SlotAsCanvasSlot");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_SlotAsCanvasSlot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "SlotAsCanvasSlot");
+
+	Params::UWidgetLayoutLibrary_SlotAsCanvasSlot_Params Parms{};
 
 	Parms.Widget = Widget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16775,19 +21642,22 @@ class UCanvasPanelSlot* UWidgetLayoutLibrary::SlotAsCanvasSlot(class UWidget* Wi
 
 class UBorderSlot* UWidgetLayoutLibrary::SlotAsBorderSlot(class UWidget* Widget)
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "SlotAsBorderSlot");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_SlotAsBorderSlot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "SlotAsBorderSlot");
+
+	Params::UWidgetLayoutLibrary_SlotAsBorderSlot_Params Parms{};
 
 	Parms.Widget = Widget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16801,19 +21671,22 @@ class UBorderSlot* UWidgetLayoutLibrary::SlotAsBorderSlot(class UWidget* Widget)
 
 void UWidgetLayoutLibrary::RemoveAllWidgets(class UObject* WorldContextObject)
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "RemoveAllWidgets");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_RemoveAllWidgets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "RemoveAllWidgets");
+
+	Params::UWidgetLayoutLibrary_RemoveAllWidgets_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -16828,23 +21701,26 @@ void UWidgetLayoutLibrary::RemoveAllWidgets(class UObject* WorldContextObject)
 
 bool UWidgetLayoutLibrary::ProjectWorldLocationToWidgetPosition(class APlayerController* PlayerController, const struct FVector& WorldLocation, struct FVector2D* ScreenPosition)
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "ProjectWorldLocationToWidgetPosition");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_ProjectWorldLocationToWidgetPosition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "ProjectWorldLocationToWidgetPosition");
+
+	Params::UWidgetLayoutLibrary_ProjectWorldLocationToWidgetPosition_Params Parms{};
 
 	Parms.PlayerController = PlayerController;
 	Parms.WorldLocation = WorldLocation;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (ScreenPosition != nullptr)
-		*ScreenPosition = Parms.ScreenPosition;
+		*ScreenPosition = std::move(Parms.ScreenPosition);
 
 	return Parms.ReturnValue;
 
@@ -16859,19 +21735,22 @@ bool UWidgetLayoutLibrary::ProjectWorldLocationToWidgetPosition(class APlayerCon
 
 struct FGeometry UWidgetLayoutLibrary::GetViewportWidgetGeometry(class UObject* WorldContextObject)
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "GetViewportWidgetGeometry");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_GetViewportWidgetGeometry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "GetViewportWidgetGeometry");
+
+	Params::UWidgetLayoutLibrary_GetViewportWidgetGeometry_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16886,19 +21765,22 @@ struct FGeometry UWidgetLayoutLibrary::GetViewportWidgetGeometry(class UObject* 
 
 struct FVector2D UWidgetLayoutLibrary::GetViewportSize(class UObject* WorldContextObject)
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "GetViewportSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_GetViewportSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "GetViewportSize");
+
+	Params::UWidgetLayoutLibrary_GetViewportSize_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16913,19 +21795,22 @@ struct FVector2D UWidgetLayoutLibrary::GetViewportSize(class UObject* WorldConte
 
 float UWidgetLayoutLibrary::GetViewportScale(class UObject* WorldContextObject)
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "GetViewportScale");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_GetViewportScale_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "GetViewportScale");
+
+	Params::UWidgetLayoutLibrary_GetViewportScale_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16940,19 +21825,22 @@ float UWidgetLayoutLibrary::GetViewportScale(class UObject* WorldContextObject)
 
 struct FGeometry UWidgetLayoutLibrary::GetPlayerScreenWidgetGeometry(class APlayerController* PlayerController)
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "GetPlayerScreenWidgetGeometry");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_GetPlayerScreenWidgetGeometry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "GetPlayerScreenWidgetGeometry");
+
+	Params::UWidgetLayoutLibrary_GetPlayerScreenWidgetGeometry_Params Parms{};
 
 	Parms.PlayerController = PlayerController;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -16969,19 +21857,22 @@ struct FGeometry UWidgetLayoutLibrary::GetPlayerScreenWidgetGeometry(class APlay
 
 bool UWidgetLayoutLibrary::GetMousePositionScaledByDPI(class APlayerController* Player, float* LocationX, float* LocationY)
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "GetMousePositionScaledByDPI");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_GetMousePositionScaledByDPI_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "GetMousePositionScaledByDPI");
+
+	Params::UWidgetLayoutLibrary_GetMousePositionScaledByDPI_Params Parms{};
 
 	Parms.Player = Player;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (LocationX != nullptr)
 		*LocationX = Parms.LocationX;
@@ -17002,19 +21893,22 @@ bool UWidgetLayoutLibrary::GetMousePositionScaledByDPI(class APlayerController* 
 
 struct FVector2D UWidgetLayoutLibrary::GetMousePositionOnViewport(class UObject* WorldContextObject)
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "GetMousePositionOnViewport");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_GetMousePositionOnViewport_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "GetMousePositionOnViewport");
+
+	Params::UWidgetLayoutLibrary_GetMousePositionOnViewport_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -17028,21 +21922,80 @@ struct FVector2D UWidgetLayoutLibrary::GetMousePositionOnViewport(class UObject*
 
 struct FVector2D UWidgetLayoutLibrary::GetMousePositionOnPlatform()
 {
-	static auto Func = Class->GetFunction("WidgetLayoutLibrary", "GetMousePositionOnPlatform");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetLayoutLibrary_GetMousePositionOnPlatform_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetLayoutLibrary", "GetMousePositionOnPlatform");
+
+	Params::UWidgetLayoutLibrary_GetMousePositionOnPlatform_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.WidgetNavigation
+// (None)
+
+class UClass* UWidgetNavigation::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WidgetNavigation");
+
+	return Clss;
+}
+
+
+// WidgetNavigation UMG.Default__WidgetNavigation
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWidgetNavigation* UWidgetNavigation::GetDefaultObj()
+{
+	static class UWidgetNavigation* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWidgetNavigation*>(UWidgetNavigation::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.WidgetSwitcherSlot
+// (None)
+
+class UClass* UWidgetSwitcherSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WidgetSwitcherSlot");
+
+	return Clss;
+}
+
+
+// WidgetSwitcherSlot UMG.Default__WidgetSwitcherSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWidgetSwitcherSlot* UWidgetSwitcherSlot::GetDefaultObj()
+{
+	static class UWidgetSwitcherSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWidgetSwitcherSlot*>(UWidgetSwitcherSlot::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -17053,19 +22006,22 @@ struct FVector2D UWidgetLayoutLibrary::GetMousePositionOnPlatform()
 
 void UWidgetSwitcherSlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("WidgetSwitcherSlot", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetSwitcherSlot_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetSwitcherSlot", "SetVerticalAlignment");
+
+	Params::UWidgetSwitcherSlot_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -17077,19 +22033,22 @@ void UWidgetSwitcherSlot::SetVerticalAlignment(enum class EVerticalAlignment InV
 
 void UWidgetSwitcherSlot::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("WidgetSwitcherSlot", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetSwitcherSlot_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetSwitcherSlot", "SetPadding");
+
+	Params::UWidgetSwitcherSlot_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -17101,20 +22060,79 @@ void UWidgetSwitcherSlot::SetPadding(const struct FMargin& InPadding)
 
 void UWidgetSwitcherSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("WidgetSwitcherSlot", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UWidgetSwitcherSlot_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WidgetSwitcherSlot", "SetHorizontalAlignment");
+
+	Params::UWidgetSwitcherSlot_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.WidgetTree
+// (None)
+
+class UClass* UWidgetTree::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WidgetTree");
+
+	return Clss;
+}
+
+
+// WidgetTree UMG.Default__WidgetTree
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWidgetTree* UWidgetTree::GetDefaultObj()
+{
+	static class UWidgetTree* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWidgetTree*>(UWidgetTree::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class UMG.WindowTitleBarArea
+// (None)
+
+class UClass* UWindowTitleBarArea::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WindowTitleBarArea");
+
+	return Clss;
+}
+
+
+// WindowTitleBarArea UMG.Default__WindowTitleBarArea
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWindowTitleBarArea* UWindowTitleBarArea::GetDefaultObj()
+{
+	static class UWindowTitleBarArea* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWindowTitleBarArea*>(UWindowTitleBarArea::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -17125,19 +22143,22 @@ void UWidgetSwitcherSlot::SetHorizontalAlignment(enum class EHorizontalAlignment
 
 void UWindowTitleBarArea::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("WindowTitleBarArea", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UWindowTitleBarArea_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindowTitleBarArea", "SetVerticalAlignment");
+
+	Params::UWindowTitleBarArea_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -17149,19 +22170,22 @@ void UWindowTitleBarArea::SetVerticalAlignment(enum class EVerticalAlignment InV
 
 void UWindowTitleBarArea::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("WindowTitleBarArea", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UWindowTitleBarArea_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindowTitleBarArea", "SetPadding");
+
+	Params::UWindowTitleBarArea_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -17173,20 +22197,51 @@ void UWindowTitleBarArea::SetPadding(const struct FMargin& InPadding)
 
 void UWindowTitleBarArea::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("WindowTitleBarArea", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UWindowTitleBarArea_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindowTitleBarArea", "SetHorizontalAlignment");
+
+	Params::UWindowTitleBarArea_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.WindowTitleBarAreaSlot
+// (None)
+
+class UClass* UWindowTitleBarAreaSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WindowTitleBarAreaSlot");
+
+	return Clss;
+}
+
+
+// WindowTitleBarAreaSlot UMG.Default__WindowTitleBarAreaSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWindowTitleBarAreaSlot* UWindowTitleBarAreaSlot::GetDefaultObj()
+{
+	static class UWindowTitleBarAreaSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWindowTitleBarAreaSlot*>(UWindowTitleBarAreaSlot::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -17197,19 +22252,22 @@ void UWindowTitleBarArea::SetHorizontalAlignment(enum class EHorizontalAlignment
 
 void UWindowTitleBarAreaSlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("WindowTitleBarAreaSlot", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UWindowTitleBarAreaSlot_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindowTitleBarAreaSlot", "SetVerticalAlignment");
+
+	Params::UWindowTitleBarAreaSlot_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -17221,19 +22279,22 @@ void UWindowTitleBarAreaSlot::SetVerticalAlignment(enum class EVerticalAlignment
 
 void UWindowTitleBarAreaSlot::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("WindowTitleBarAreaSlot", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UWindowTitleBarAreaSlot_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindowTitleBarAreaSlot", "SetPadding");
+
+	Params::UWindowTitleBarAreaSlot_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -17245,20 +22306,51 @@ void UWindowTitleBarAreaSlot::SetPadding(const struct FMargin& InPadding)
 
 void UWindowTitleBarAreaSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("WindowTitleBarAreaSlot", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UWindowTitleBarAreaSlot_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindowTitleBarAreaSlot", "SetHorizontalAlignment");
+
+	Params::UWindowTitleBarAreaSlot_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class UMG.WrapBox
+// (None)
+
+class UClass* UWrapBox::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WrapBox");
+
+	return Clss;
+}
+
+
+// WrapBox UMG.Default__WrapBox
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWrapBox* UWrapBox::GetDefaultObj()
+{
+	static class UWrapBox* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWrapBox*>(UWrapBox::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -17269,19 +22361,22 @@ void UWindowTitleBarAreaSlot::SetHorizontalAlignment(enum class EHorizontalAlign
 
 void UWrapBox::SetInnerSlotPadding(const struct FVector2D& InPadding)
 {
-	static auto Func = Class->GetFunction("WrapBox", "SetInnerSlotPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UWrapBox_SetInnerSlotPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WrapBox", "SetInnerSlotPadding");
+
+	Params::UWrapBox_SetInnerSlotPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -17294,22 +22389,53 @@ void UWrapBox::SetInnerSlotPadding(const struct FVector2D& InPadding)
 
 class UWrapBoxSlot* UWrapBox::AddChildToWrapBox(class UWidget* Content)
 {
-	static auto Func = Class->GetFunction("WrapBox", "AddChildToWrapBox");
+	static class UFunction* Func = nullptr;
 
-	Params::UWrapBox_AddChildToWrapBox_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WrapBox", "AddChildToWrapBox");
+
+	Params::UWrapBox_AddChildToWrapBox_Params Parms{};
 
 	Parms.Content = Content;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class UMG.WrapBoxSlot
+// (None)
+
+class UClass* UWrapBoxSlot::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WrapBoxSlot");
+
+	return Clss;
+}
+
+
+// WrapBoxSlot UMG.Default__WrapBoxSlot
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWrapBoxSlot* UWrapBoxSlot::GetDefaultObj()
+{
+	static class UWrapBoxSlot* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWrapBoxSlot*>(UWrapBoxSlot::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -17320,19 +22446,22 @@ class UWrapBoxSlot* UWrapBox::AddChildToWrapBox(class UWidget* Content)
 
 void UWrapBoxSlot::SetVerticalAlignment(enum class EVerticalAlignment InVerticalAlignment)
 {
-	static auto Func = Class->GetFunction("WrapBoxSlot", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UWrapBoxSlot_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WrapBoxSlot", "SetVerticalAlignment");
+
+	Params::UWrapBoxSlot_SetVerticalAlignment_Params Parms{};
 
 	Parms.InVerticalAlignment = InVerticalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -17344,19 +22473,22 @@ void UWrapBoxSlot::SetVerticalAlignment(enum class EVerticalAlignment InVertical
 
 void UWrapBoxSlot::SetPadding(const struct FMargin& InPadding)
 {
-	static auto Func = Class->GetFunction("WrapBoxSlot", "SetPadding");
+	static class UFunction* Func = nullptr;
 
-	Params::UWrapBoxSlot_SetPadding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WrapBoxSlot", "SetPadding");
+
+	Params::UWrapBoxSlot_SetPadding_Params Parms{};
 
 	Parms.InPadding = InPadding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -17368,19 +22500,22 @@ void UWrapBoxSlot::SetPadding(const struct FMargin& InPadding)
 
 void UWrapBoxSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHorizontalAlignment)
 {
-	static auto Func = Class->GetFunction("WrapBoxSlot", "SetHorizontalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UWrapBoxSlot_SetHorizontalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WrapBoxSlot", "SetHorizontalAlignment");
+
+	Params::UWrapBoxSlot_SetHorizontalAlignment_Params Parms{};
 
 	Parms.InHorizontalAlignment = InHorizontalAlignment;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -17392,19 +22527,22 @@ void UWrapBoxSlot::SetHorizontalAlignment(enum class EHorizontalAlignment InHori
 
 void UWrapBoxSlot::SetFillSpanWhenLessThan(float InFillSpanWhenLessThan)
 {
-	static auto Func = Class->GetFunction("WrapBoxSlot", "SetFillSpanWhenLessThan");
+	static class UFunction* Func = nullptr;
 
-	Params::UWrapBoxSlot_SetFillSpanWhenLessThan_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WrapBoxSlot", "SetFillSpanWhenLessThan");
+
+	Params::UWrapBoxSlot_SetFillSpanWhenLessThan_Params Parms{};
 
 	Parms.InFillSpanWhenLessThan = InFillSpanWhenLessThan;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -17416,24 +22554,25 @@ void UWrapBoxSlot::SetFillSpanWhenLessThan(float InFillSpanWhenLessThan)
 
 void UWrapBoxSlot::SetFillEmptySpace(bool InbFillEmptySpace)
 {
-	static auto Func = Class->GetFunction("WrapBoxSlot", "SetFillEmptySpace");
+	static class UFunction* Func = nullptr;
 
-	Params::UWrapBoxSlot_SetFillEmptySpace_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WrapBoxSlot", "SetFillEmptySpace");
+
+	Params::UWrapBoxSlot_SetFillEmptySpace_Params Parms{};
 
 	Parms.InbFillEmptySpace = InbFillEmptySpace;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

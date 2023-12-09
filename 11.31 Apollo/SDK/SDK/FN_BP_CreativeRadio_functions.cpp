@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_CreativeRadio.BP_CreativeRadio_C
+// (Actor)
+
+class UClass* ABP_CreativeRadio_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_CreativeRadio_C");
+
+	return Clss;
+}
+
+
+// BP_CreativeRadio_C BP_CreativeRadio.Default__BP_CreativeRadio_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_CreativeRadio_C* ABP_CreativeRadio_C::GetDefaultObj()
+{
+	static class ABP_CreativeRadio_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_CreativeRadio_C*>(ABP_CreativeRadio_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_CreativeRadio.BP_CreativeRadio_C.CheckMinigameStateOnPropertyChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ABP_CreativeRadio_C::CheckMinigameStateOnPropertyChanged(bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_CreativeRadio_C", "CheckMinigameStateOnPropertyChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CreativeRadio_C_CheckMinigameStateOnPropertyChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CreativeRadio_C", "CheckMinigameStateOnPropertyChanged");
+
+	Params::ABP_CreativeRadio_C_CheckMinigameStateOnPropertyChanged_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
@@ -52,9 +80,12 @@ void ABP_CreativeRadio_C::CheckMinigameStateOnPropertyChanged(bool CallFunc_IsVa
 
 void ABP_CreativeRadio_C::PlaybackTypeUpgradePath(bool Temp_bool_Variable, const class FString& Temp_string_Variable, const class FString& Temp_string_Variable_1, const class FString& Temp_string_Variable_2, TArray<class FString>& K2Node_MakeArray_Array, TMap<class FString, class FString> CallFunc_GetPropertyOverrides_CurrentOptions, bool CallFunc_GetPropertyOverrides_ReturnValue, const class FString& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, bool CallFunc_EqualEqual_StriStri_ReturnValue, const class FString& K2Node_Select_Default, TMap<class FString, class FString> K2Node_MakeMap_Map, bool CallFunc_SetPropertyOverrides_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_CreativeRadio_C", "PlaybackTypeUpgradePath");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CreativeRadio_C_PlaybackTypeUpgradePath_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CreativeRadio_C", "PlaybackTypeUpgradePath");
+
+	Params::ABP_CreativeRadio_C_PlaybackTypeUpgradePath_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_string_Variable = Temp_string_Variable;
@@ -92,9 +123,12 @@ void ABP_CreativeRadio_C::PlaybackTypeUpgradePath(bool Temp_bool_Variable, const
 
 void ABP_CreativeRadio_C::UpdateMinigameVisuals(enum class EFortMinigameState MinigameState, bool bShouldBeVisible, bool CallFunc_EqualEqual_ByteByte_ReturnValue, int32 Temp_int_Array_Index_Variable, bool CallFunc_IsDedicatedServer_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, TArray<class USceneComponent*>& CallFunc_K2_GetComponentsByClass_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class USceneComponent* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_CreativeRadio_C", "UpdateMinigameVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CreativeRadio_C_UpdateMinigameVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CreativeRadio_C", "UpdateMinigameVisuals");
+
+	Params::ABP_CreativeRadio_C_UpdateMinigameVisuals_Params Parms{};
 
 	Parms.MinigameState = MinigameState;
 	Parms.bShouldBeVisible = bShouldBeVisible;
@@ -122,9 +156,12 @@ void ABP_CreativeRadio_C::UpdateMinigameVisuals(enum class EFortMinigameState Mi
 
 void ABP_CreativeRadio_C::UpdateCachedAttenuationSettings(bool CallFunc_Less_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_CreativeRadio_C", "UpdateCachedAttenuationSettings");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CreativeRadio_C_UpdateCachedAttenuationSettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CreativeRadio_C", "UpdateCachedAttenuationSettings");
+
+	Params::ABP_CreativeRadio_C_UpdateCachedAttenuationSettings_Params Parms{};
 
 	Parms.CallFunc_Less_FloatFloat_ReturnValue = CallFunc_Less_FloatFloat_ReturnValue;
 	Parms.CallFunc_Multiply_FloatFloat_ReturnValue = CallFunc_Multiply_FloatFloat_ReturnValue;
@@ -142,9 +179,12 @@ void ABP_CreativeRadio_C::UpdateCachedAttenuationSettings(bool CallFunc_Less_Flo
 
 void ABP_CreativeRadio_C::SetAttenuationDistance(bool CallFunc_NotEqual_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_CreativeRadio_C", "SetAttenuationDistance");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CreativeRadio_C_SetAttenuationDistance_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CreativeRadio_C", "SetAttenuationDistance");
+
+	Params::ABP_CreativeRadio_C_SetAttenuationDistance_Params Parms{};
 
 	Parms.CallFunc_NotEqual_FloatFloat_ReturnValue = CallFunc_NotEqual_FloatFloat_ReturnValue;
 
@@ -174,9 +214,12 @@ void ABP_CreativeRadio_C::SetAttenuationDistance(bool CallFunc_NotEqual_FloatFlo
 
 bool ABP_CreativeRadio_C::BlueprintCanInteract(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted, bool InteractSuccess, bool CallFunc_IsValid_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerControllerAthena* K2Node_DynamicCast_AsFort_Player_Controller_Athena, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue_1, class AFortVolume* CallFunc_CanPlayerCreateInCurrentVolume_OutCurrentVolume, bool CallFunc_CanPlayerCreateInCurrentVolume_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_HasStarted_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_CreativeRadio_C", "BlueprintCanInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CreativeRadio_C_BlueprintCanInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CreativeRadio_C", "BlueprintCanInteract");
+
+	Params::ABP_CreativeRadio_C_BlueprintCanInteract_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -209,9 +252,12 @@ bool ABP_CreativeRadio_C::BlueprintCanInteract(class AFortPawn* InteractingPawn,
 
 class FText ABP_CreativeRadio_C::BlueprintGetInteractionString(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static auto Func = Class->GetFunction("BP_CreativeRadio_C", "BlueprintGetInteractionString");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CreativeRadio_C_BlueprintGetInteractionString_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CreativeRadio_C", "BlueprintGetInteractionString");
+
+	Params::ABP_CreativeRadio_C_BlueprintGetInteractionString_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -230,9 +276,12 @@ class FText ABP_CreativeRadio_C::BlueprintGetInteractionString(class AFortPawn* 
 
 void ABP_CreativeRadio_C::OnRep_CachedShouldDriveVisualization(bool CallFunc_IsDedicatedServer_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_CreativeRadio_C", "OnRep_CachedShouldDriveVisualization");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CreativeRadio_C_OnRep_CachedShouldDriveVisualization_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CreativeRadio_C", "OnRep_CachedShouldDriveVisualization");
+
+	Params::ABP_CreativeRadio_C_OnRep_CachedShouldDriveVisualization_Params Parms{};
 
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 
@@ -247,12 +296,14 @@ void ABP_CreativeRadio_C::OnRep_CachedShouldDriveVisualization(bool CallFunc_IsD
 
 void ABP_CreativeRadio_C::OnRep_CachedAttenuationSetting()
 {
-	static auto Func = Class->GetFunction("BP_CreativeRadio_C", "OnRep_CachedAttenuationSetting");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CreativeRadio_C_OnRep_CachedAttenuationSetting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CreativeRadio_C", "OnRep_CachedAttenuationSetting");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -264,9 +315,12 @@ void ABP_CreativeRadio_C::OnRep_CachedAttenuationSetting()
 
 void ABP_CreativeRadio_C::OnRep_CachedVolumeMultiplier(bool CallFunc_IsDedicatedServer_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_CreativeRadio_C", "OnRep_CachedVolumeMultiplier");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CreativeRadio_C_OnRep_CachedVolumeMultiplier_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CreativeRadio_C", "OnRep_CachedVolumeMultiplier");
+
+	Params::ABP_CreativeRadio_C_OnRep_CachedVolumeMultiplier_Params Parms{};
 
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 
@@ -287,9 +341,12 @@ void ABP_CreativeRadio_C::OnRep_CachedVolumeMultiplier(bool CallFunc_IsDedicated
 
 void ABP_CreativeRadio_C::OnPropertyChanged(bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_NotEqual_BoolBool_ReturnValue, bool CallFunc_NotEqual_FloatFloat_ReturnValue, class AFortVolumeManager* CallFunc_GetVolumeManager_OutVolumeManager, enum class EVolumeValidityResult CallFunc_GetVolumeManager_OutIsValid, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("BP_CreativeRadio_C", "OnPropertyChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CreativeRadio_C_OnPropertyChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CreativeRadio_C", "OnPropertyChanged");
+
+	Params::ABP_CreativeRadio_C_OnPropertyChanged_Params Parms{};
 
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 	Parms.CallFunc_NotEqual_BoolBool_ReturnValue = CallFunc_NotEqual_BoolBool_ReturnValue;
@@ -309,12 +366,14 @@ void ABP_CreativeRadio_C::OnPropertyChanged(bool CallFunc_HasAuthority_ReturnVal
 
 void ABP_CreativeRadio_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_CreativeRadio_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CreativeRadio_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CreativeRadio_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -326,9 +385,12 @@ void ABP_CreativeRadio_C::ReceiveBeginPlay()
 
 void ABP_CreativeRadio_C::ReceiveEndPlay(enum class EEndPlayReason EndPlayReason)
 {
-	static auto Func = Class->GetFunction("BP_CreativeRadio_C", "ReceiveEndPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CreativeRadio_C_ReceiveEndPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CreativeRadio_C", "ReceiveEndPlay");
+
+	Params::ABP_CreativeRadio_C_ReceiveEndPlay_Params Parms{};
 
 	Parms.EndPlayReason = EndPlayReason;
 
@@ -345,9 +407,12 @@ void ABP_CreativeRadio_C::ReceiveEndPlay(enum class EEndPlayReason EndPlayReason
 
 void ABP_CreativeRadio_C::BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_3_OnMinigameStateChanged__DelegateSignature(class AFortMinigame* Minigame, enum class EFortMinigameState NewMinigameState)
 {
-	static auto Func = Class->GetFunction("BP_CreativeRadio_C", "BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_3_OnMinigameStateChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CreativeRadio_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_3_OnMinigameStateChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CreativeRadio_C", "BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_3_OnMinigameStateChanged__DelegateSignature");
+
+	Params::ABP_CreativeRadio_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_3_OnMinigameStateChanged__DelegateSignature_Params Parms{};
 
 	Parms.Minigame = Minigame;
 	Parms.NewMinigameState = NewMinigameState;
@@ -363,12 +428,14 @@ void ABP_CreativeRadio_C::BndEvt__FortMinigameProgress_K2Node_ComponentBoundEven
 
 void ABP_CreativeRadio_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BP_CreativeRadio_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CreativeRadio_C_BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CreativeRadio_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -387,9 +454,12 @@ void ABP_CreativeRadio_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent
 
 void ABP_CreativeRadio_C::ExecuteUbergraph_BP_CreativeRadio(int32 EntryPoint, bool CallFunc_IsDedicatedServer_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, enum class EEndPlayReason K2Node_Event_EndPlayReason, class AFortMinigame* K2Node_ComponentBoundEvent_Minigame, enum class EFortMinigameState K2Node_ComponentBoundEvent_NewMinigameState, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_CreativeRadio_C", "ExecuteUbergraph_BP_CreativeRadio");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CreativeRadio_C", "ExecuteUbergraph_BP_CreativeRadio");
+
+	Params::ABP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
@@ -406,6 +476,4 @@ void ABP_CreativeRadio_C::ExecuteUbergraph_BP_CreativeRadio(int32 EntryPoint, bo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

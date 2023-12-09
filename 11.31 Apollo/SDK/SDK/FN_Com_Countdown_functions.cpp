@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass Com_Countdown.Com_Countdown_C
+// (None)
+
+class UClass* UCom_Countdown_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Com_Countdown_C");
+
+	return Clss;
+}
+
+
+// Com_Countdown_C Com_Countdown.Default__Com_Countdown_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCom_Countdown_C* UCom_Countdown_C::GetDefaultObj()
+{
+	static class UCom_Countdown_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCom_Countdown_C*>(UCom_Countdown_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Com_Countdown.Com_Countdown_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UCom_Countdown_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("Com_Countdown_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCom_Countdown_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Com_Countdown_C", "PreConstruct");
+
+	Params::UCom_Countdown_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -39,12 +67,14 @@ void UCom_Countdown_C::PreConstruct(bool IsDesignTime)
 
 void UCom_Countdown_C::Construct()
 {
-	static auto Func = Class->GetFunction("Com_Countdown_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCom_Countdown_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Com_Countdown_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -60,9 +90,12 @@ void UCom_Countdown_C::Construct()
 
 void UCom_Countdown_C::ExecuteUbergraph_Com_Countdown(int32 EntryPoint, float CallFunc_MakeLiteralFloat_ReturnValue, bool K2Node_Event_IsDesignTime, float CallFunc_MakeLiteralFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Com_Countdown_C", "ExecuteUbergraph_Com_Countdown");
+	static class UFunction* Func = nullptr;
 
-	Params::UCom_Countdown_C_ExecuteUbergraph_Com_Countdown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Com_Countdown_C", "ExecuteUbergraph_Com_Countdown");
+
+	Params::UCom_Countdown_C_ExecuteUbergraph_Com_Countdown_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_MakeLiteralFloat_ReturnValue = CallFunc_MakeLiteralFloat_ReturnValue;
@@ -76,6 +109,4 @@ void UCom_Countdown_C::ExecuteUbergraph_Com_Countdown(int32 EntryPoint, float Ca
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

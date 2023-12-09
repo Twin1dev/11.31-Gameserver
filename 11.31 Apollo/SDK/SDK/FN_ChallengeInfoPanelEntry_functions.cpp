@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ChallengeInfoPanelEntry.ChallengeInfoPanelEntry_C
+// (None)
+
+class UClass* UChallengeInfoPanelEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChallengeInfoPanelEntry_C");
+
+	return Clss;
+}
+
+
+// ChallengeInfoPanelEntry_C ChallengeInfoPanelEntry.Default__ChallengeInfoPanelEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChallengeInfoPanelEntry_C* UChallengeInfoPanelEntry_C::GetDefaultObj()
+{
+	static class UChallengeInfoPanelEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChallengeInfoPanelEntry_C*>(UChallengeInfoPanelEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ChallengeInfoPanelEntry.ChallengeInfoPanelEntry_C.OnChallengeInfoSet
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UChallengeInfoPanelEntry_C::OnChallengeInfoSet()
 {
-	static auto Func = Class->GetFunction("ChallengeInfoPanelEntry_C", "OnChallengeInfoSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeInfoPanelEntry_C_OnChallengeInfoSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeInfoPanelEntry_C", "OnChallengeInfoSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UChallengeInfoPanelEntry_C::OnChallengeInfoSet()
 
 void UChallengeInfoPanelEntry_C::OnLocalPlayerMissingAssistedChallenge()
 {
-	static auto Func = Class->GetFunction("ChallengeInfoPanelEntry_C", "OnLocalPlayerMissingAssistedChallenge");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeInfoPanelEntry_C_OnLocalPlayerMissingAssistedChallenge_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeInfoPanelEntry_C", "OnLocalPlayerMissingAssistedChallenge");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +85,12 @@ void UChallengeInfoPanelEntry_C::OnLocalPlayerMissingAssistedChallenge()
 
 void UChallengeInfoPanelEntry_C::ExecuteUbergraph_ChallengeInfoPanelEntry(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ChallengeInfoPanelEntry_C", "ExecuteUbergraph_ChallengeInfoPanelEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeInfoPanelEntry_C_ExecuteUbergraph_ChallengeInfoPanelEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeInfoPanelEntry_C", "ExecuteUbergraph_ChallengeInfoPanelEntry");
+
+	Params::UChallengeInfoPanelEntry_C_ExecuteUbergraph_ChallengeInfoPanelEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimationForward_ReturnValue = CallFunc_PlayAnimationForward_ReturnValue;
@@ -70,6 +102,4 @@ void UChallengeInfoPanelEntry_C::ExecuteUbergraph_ChallengeInfoPanelEntry(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

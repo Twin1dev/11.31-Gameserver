@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_Discoverable_Duck.BP_Discoverable_Duck_C
+// (Actor)
+
+class UClass* ABP_Discoverable_Duck_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_Discoverable_Duck_C");
+
+	return Clss;
+}
+
+
+// BP_Discoverable_Duck_C BP_Discoverable_Duck.Default__BP_Discoverable_Duck_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_Discoverable_Duck_C* ABP_Discoverable_Duck_C::GetDefaultObj()
+{
+	static class ABP_Discoverable_Duck_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_Discoverable_Duck_C*>(ABP_Discoverable_Duck_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_Discoverable_Duck.BP_Discoverable_Duck_C.Poof
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void ABP_Discoverable_Duck_C::Poof()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Duck_C", "Poof");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Duck_C_Poof_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Duck_C", "Poof");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void ABP_Discoverable_Duck_C::Poof()
 
 void ABP_Discoverable_Duck_C::Commit_OnSpecialInteraction()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Duck_C", "Commit_OnSpecialInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Duck_C_Commit_OnSpecialInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Duck_C", "Commit_OnSpecialInteraction");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,9 +86,12 @@ void ABP_Discoverable_Duck_C::Commit_OnSpecialInteraction()
 
 void ABP_Discoverable_Duck_C::ExecuteUbergraph_BP_Discoverable_Duck(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Duck_C", "ExecuteUbergraph_BP_Discoverable_Duck");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Duck_C_ExecuteUbergraph_BP_Discoverable_Duck_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Duck_C", "ExecuteUbergraph_BP_Discoverable_Duck");
+
+	Params::ABP_Discoverable_Duck_C_ExecuteUbergraph_BP_Discoverable_Duck_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -72,6 +104,4 @@ void ABP_Discoverable_Duck_C::ExecuteUbergraph_BP_Discoverable_Duck(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

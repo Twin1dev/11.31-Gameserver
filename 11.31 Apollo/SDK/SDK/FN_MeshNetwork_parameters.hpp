@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -32,20 +29,6 @@ public:
 	struct FUpdateLevelVisibilityLevelInfo       LevelVisibility;                                   // 0x0(0x14)(ConstParm, Parm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function MeshNetwork.MeshBeaconClient.OnRep_MeshPingTime
-struct AMeshBeaconClient_OnRep_MeshPingTime_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function MeshNetwork.MeshBeaconClient.OnRep_ConnectedToRoot
-struct AMeshBeaconClient_OnRep_ConnectedToRoot_Params
-{
-public:
-};
-
 // 0x1 (0x1 - 0x0)
 // Function MeshNetwork.MeshNetworkComponent.GetMeshNetworkNodeType
 struct UMeshNetworkComponent_GetMeshNetworkNodeType_Params
@@ -61,7 +44,7 @@ struct UMeshNetworkSubsystem_SetMetaDataWithKey_Params
 public:
 	class FName                                  Key;                                               // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMeshMetaDataStruct                   MetaData;                                          // 0x8(0x1)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1F7C[0x3];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_117F[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -80,7 +63,7 @@ public:
 	class FName                                  Key;                                               // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMeshMetaDataStruct                   MetaData;                                          // 0x8(0x1)(Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x9(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1F7D[0x2];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1183[0x2];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -135,6 +118,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

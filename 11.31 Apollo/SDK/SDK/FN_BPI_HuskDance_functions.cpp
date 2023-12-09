@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BPI_HuskDance.BPI_HuskDance_C
+// (None)
+
+class UClass* IBPI_HuskDance_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BPI_HuskDance_C");
+
+	return Clss;
+}
+
+
+// BPI_HuskDance_C BPI_HuskDance.Default__BPI_HuskDance_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class IBPI_HuskDance_C* IBPI_HuskDance_C::GetDefaultObj()
+{
+	static class IBPI_HuskDance_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<IBPI_HuskDance_C*>(IBPI_HuskDance_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BPI_HuskDance.BPI_HuskDance_C.OnEndDance
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void IBPI_HuskDance_C::OnEndDance()
 {
-	static auto Func = Class->GetFunction("BPI_HuskDance_C", "OnEndDance");
+	static class UFunction* Func = nullptr;
 
-	Params::IBPI_HuskDance_C_OnEndDance_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BPI_HuskDance_C", "OnEndDance");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,17 +64,17 @@ void IBPI_HuskDance_C::OnEndDance()
 
 void IBPI_HuskDance_C::OnBeginDance()
 {
-	static auto Func = Class->GetFunction("BPI_HuskDance_C", "OnBeginDance");
+	static class UFunction* Func = nullptr;
 
-	Params::IBPI_HuskDance_C_OnBeginDance_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BPI_HuskDance_C", "OnBeginDance");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

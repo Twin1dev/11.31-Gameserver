@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -30,7 +27,7 @@ struct UPlayerSurveyPanelContentsAnswerRatingWidget_C_HandlePlayerRequestAnswer_
 {
 public:
 	int32                                        AnswerIndex;                                       // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5314[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_579B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimespan                             CallFunc_GetStopwatchTime_ReturnValue;             // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FFortPlayerSurveyAnswerMultipleChoice K2Node_MakeStruct_FortPlayerSurveyAnswerMultipleChoice; // 0x10(0x10)(NoDestructor)
 };
@@ -41,7 +38,7 @@ struct UPlayerSurveyPanelContentsAnswerRatingWidget_C_GetDefaultFocusedWidgetPos
 {
 public:
 	enum class EUINavigation                     Navigation;                                        // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5315[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_579C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWidget*                               ReturnValue;                                       // 0x8(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -52,13 +49,13 @@ struct UPlayerSurveyPanelContentsAnswerRatingWidget_C_GetDefaultFocusedWidget_Pa
 public:
 	class UWidget*                               ReturnValue;                                       // 0x0(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        DefaultIndex;                                      // 0x8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5316[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_579D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWidget*                               TargetWidget;                                      // 0x10(0x8)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        SelectedIndex;                                     // 0x18(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x1D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_GetCurrentAnswer_bOutIsSet;               // 0x1E(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5317[0x1];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_579E[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortPlayerSurveyAnswerMultipleChoice CallFunc_GetCurrentAnswer_OutAnswer;               // 0x20(0x10)(NoDestructor)
 	class UCommonButton*                         CallFunc_GetButtonAtIndex_ReturnValue;             // 0x30(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -70,7 +67,7 @@ struct UPlayerSurveyPanelContentsAnswerRatingWidget_C_UpdateRatingButtons_Params
 public:
 	class UFortPlayerSurveyQuestionMultipleChoice* CurrentQuestion;                                   // 0x0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        NumRatingButtons;                                  // 0x8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5318[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_579F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortPlayerSurveyQuestionMultipleChoice* CallFunc_GetCurrentQuestion_ReturnValue;           // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -91,13 +88,6 @@ public:
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x49(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function PlayerSurveyPanelContentsAnswerRatingWidget.PlayerSurveyPanelContentsAnswerRatingWidget_C.OnInitialized
-struct UPlayerSurveyPanelContentsAnswerRatingWidget_C_OnInitialized_Params
-{
-public:
-};
-
 // 0x4 (0x4 - 0x0)
 // Function PlayerSurveyPanelContentsAnswerRatingWidget.PlayerSurveyPanelContentsAnswerRatingWidget_C.HandleButtonClicked
 struct UPlayerSurveyPanelContentsAnswerRatingWidget_C_HandleButtonClicked_Params
@@ -106,33 +96,12 @@ public:
 	int32                                        ButtonIndex;                                       // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function PlayerSurveyPanelContentsAnswerRatingWidget.PlayerSurveyPanelContentsAnswerRatingWidget_C.Construct
-struct UPlayerSurveyPanelContentsAnswerRatingWidget_C_Construct_Params
-{
-public:
-};
-
 // 0x4 (0x4 - 0x0)
 // Function PlayerSurveyPanelContentsAnswerRatingWidget.PlayerSurveyPanelContentsAnswerRatingWidget_C.HandleButtonFocused
 struct UPlayerSurveyPanelContentsAnswerRatingWidget_C_HandleButtonFocused_Params
 {
 public:
 	int32                                        ButtonIndex;                                       // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function PlayerSurveyPanelContentsAnswerRatingWidget.PlayerSurveyPanelContentsAnswerRatingWidget_C.HandleCommitCurrentAnswer
-struct UPlayerSurveyPanelContentsAnswerRatingWidget_C_HandleCommitCurrentAnswer_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function PlayerSurveyPanelContentsAnswerRatingWidget.PlayerSurveyPanelContentsAnswerRatingWidget_C.HandleQuestionChanged
-struct UPlayerSurveyPanelContentsAnswerRatingWidget_C_HandleQuestionChanged_Params
-{
-public:
 };
 
 // 0x30 (0x30 - 0x0)
@@ -145,13 +114,11 @@ public:
 	TArray<class UCommonButton*>                 K2Node_MakeArray_Array;                            // 0x8(0x10)(ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 	int32                                        K2Node_Event_ButtonIndex;                          // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetCurrentAnswer_bOutIsSet;               // 0x1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5319[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_57A0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortPlayerSurveyAnswerMultipleChoice CallFunc_GetCurrentAnswer_OutAnswer;               // 0x20(0x10)(NoDestructor)
 };
 
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_Frontend_ShopBG.BP_Frontend_ShopBG_C
+// (Actor)
+
+class UClass* ABP_Frontend_ShopBG_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_Frontend_ShopBG_C");
+
+	return Clss;
+}
+
+
+// BP_Frontend_ShopBG_C BP_Frontend_ShopBG.Default__BP_Frontend_ShopBG_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_Frontend_ShopBG_C* ABP_Frontend_ShopBG_C::GetDefaultObj()
+{
+	static class ABP_Frontend_ShopBG_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_Frontend_ShopBG_C*>(ABP_Frontend_ShopBG_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_Frontend_ShopBG.BP_Frontend_ShopBG_C.SignalIntro__FinishedFunc
 // (BlueprintEvent)
 // Parameters:
 
 void ABP_Frontend_ShopBG_C::SignalIntro__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SignalIntro__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Frontend_ShopBG_C_SignalIntro__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SignalIntro__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void ABP_Frontend_ShopBG_C::SignalIntro__FinishedFunc()
 
 void ABP_Frontend_ShopBG_C::SignalIntro__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SignalIntro__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Frontend_ShopBG_C_SignalIntro__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SignalIntro__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void ABP_Frontend_ShopBG_C::SignalIntro__UpdateFunc()
 
 void ABP_Frontend_ShopBG_C::BlackMondayRotation__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_Frontend_ShopBG_C", "BlackMondayRotation__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Frontend_ShopBG_C_BlackMondayRotation__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "BlackMondayRotation__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void ABP_Frontend_ShopBG_C::BlackMondayRotation__FinishedFunc()
 
 void ABP_Frontend_ShopBG_C::BlackMondayRotation__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_Frontend_ShopBG_C", "BlackMondayRotation__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Frontend_ShopBG_C_BlackMondayRotation__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "BlackMondayRotation__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -85,12 +118,14 @@ void ABP_Frontend_ShopBG_C::BlackMondayRotation__UpdateFunc()
 
 void ABP_Frontend_ShopBG_C::SignalAmbientMovement__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SignalAmbientMovement__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Frontend_ShopBG_C_SignalAmbientMovement__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SignalAmbientMovement__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -101,12 +136,14 @@ void ABP_Frontend_ShopBG_C::SignalAmbientMovement__FinishedFunc()
 
 void ABP_Frontend_ShopBG_C::SignalAmbientMovement__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SignalAmbientMovement__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Frontend_ShopBG_C_SignalAmbientMovement__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SignalAmbientMovement__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -117,12 +154,14 @@ void ABP_Frontend_ShopBG_C::SignalAmbientMovement__UpdateFunc()
 
 void ABP_Frontend_ShopBG_C::SetupNextRot()
 {
-	static auto Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SetupNextRot");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Frontend_ShopBG_C_SetupNextRot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SetupNextRot");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -134,9 +173,12 @@ void ABP_Frontend_ShopBG_C::SetupNextRot()
 
 void ABP_Frontend_ShopBG_C::SetDynamicBG(class UTexture* InTexture)
 {
-	static auto Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SetDynamicBG");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Frontend_ShopBG_C_SetDynamicBG_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SetDynamicBG");
+
+	Params::ABP_Frontend_ShopBG_C_SetDynamicBG_Params Parms{};
 
 	Parms.InTexture = InTexture;
 
@@ -151,12 +193,14 @@ void ABP_Frontend_ShopBG_C::SetDynamicBG(class UTexture* InTexture)
 
 void ABP_Frontend_ShopBG_C::EnableDynamicShopBG()
 {
-	static auto Func = Class->GetFunction("BP_Frontend_ShopBG_C", "EnableDynamicShopBG");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Frontend_ShopBG_C_EnableDynamicShopBG_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "EnableDynamicShopBG");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -168,9 +212,12 @@ void ABP_Frontend_ShopBG_C::EnableDynamicShopBG()
 
 void ABP_Frontend_ShopBG_C::SetDynamicEnvironmentEvent(const class FString& InPresetEnvName)
 {
-	static auto Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SetDynamicEnvironmentEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Frontend_ShopBG_C_SetDynamicEnvironmentEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "SetDynamicEnvironmentEvent");
+
+	Params::ABP_Frontend_ShopBG_C_SetDynamicEnvironmentEvent_Params Parms{};
 
 	Parms.InPresetEnvName = InPresetEnvName;
 
@@ -185,12 +232,14 @@ void ABP_Frontend_ShopBG_C::SetDynamicEnvironmentEvent(const class FString& InPr
 
 void ABP_Frontend_ShopBG_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_Frontend_ShopBG_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Frontend_ShopBG_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -220,9 +269,12 @@ void ABP_Frontend_ShopBG_C::ReceiveBeginPlay()
 
 void ABP_Frontend_ShopBG_C::ExecuteUbergraph_BP_Frontend_ShopBG(int32 EntryPoint, int32 Temp_int_Variable, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, int32 CallFunc_RandomIntegerInRange_ReturnValue, const struct FRotator& K2Node_Select_Default, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, class UTexture* K2Node_CustomEvent_InTexture, bool CallFunc_IsValid_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, float CallFunc_GetWorldDeltaSeconds_ReturnValue, const class FString& K2Node_CustomEvent_InPresetEnvName, bool K2Node_SwitchString_CmpSuccess, const struct FRotator& CallFunc_RLerp_ReturnValue, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult, const struct FHitResult& CallFunc_K2_AddRelativeRotation_SweepHitResult, const struct FRotator& CallFunc_RInterpTo_ReturnValue, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult_1)
 {
-	static auto Func = Class->GetFunction("BP_Frontend_ShopBG_C", "ExecuteUbergraph_BP_Frontend_ShopBG");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Frontend_ShopBG_C_ExecuteUbergraph_BP_Frontend_ShopBG_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Frontend_ShopBG_C", "ExecuteUbergraph_BP_Frontend_ShopBG");
+
+	Params::ABP_Frontend_ShopBG_C_ExecuteUbergraph_BP_Frontend_ShopBG_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -250,6 +302,4 @@ void ABP_Frontend_ShopBG_C::ExecuteUbergraph_BP_Frontend_ShopBG(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

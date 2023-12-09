@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass DeadzoneAdjustment.DeadzoneAdjustment_C
+// (None)
+
+class UClass* UDeadzoneAdjustment_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DeadzoneAdjustment_C");
+
+	return Clss;
+}
+
+
+// DeadzoneAdjustment_C DeadzoneAdjustment.Default__DeadzoneAdjustment_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UDeadzoneAdjustment_C* UDeadzoneAdjustment_C::GetDefaultObj()
+{
+	static class UDeadzoneAdjustment_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UDeadzoneAdjustment_C*>(UDeadzoneAdjustment_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function DeadzoneAdjustment.DeadzoneAdjustment_C.DoCustomNavigation_0
@@ -24,9 +49,12 @@ namespace SDK
 
 class UWidget* UDeadzoneAdjustment_C::DoCustomNavigation_0(enum class EUINavigation Navigation, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("DeadzoneAdjustment_C", "DoCustomNavigation_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UDeadzoneAdjustment_C_DoCustomNavigation_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DeadzoneAdjustment_C", "DoCustomNavigation_0");
+
+	Params::UDeadzoneAdjustment_C_DoCustomNavigation_0_Params Parms{};
 
 	Parms.Navigation = Navigation;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
@@ -44,12 +72,14 @@ class UWidget* UDeadzoneAdjustment_C::DoCustomNavigation_0(enum class EUINavigat
 
 void UDeadzoneAdjustment_C::Construct()
 {
-	static auto Func = Class->GetFunction("DeadzoneAdjustment_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UDeadzoneAdjustment_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DeadzoneAdjustment_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -61,9 +91,12 @@ void UDeadzoneAdjustment_C::Construct()
 
 void UDeadzoneAdjustment_C::OnValueChanged_Bind(float Value)
 {
-	static auto Func = Class->GetFunction("DeadzoneAdjustment_C", "OnValueChanged_Bind");
+	static class UFunction* Func = nullptr;
 
-	Params::UDeadzoneAdjustment_C_OnValueChanged_Bind_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DeadzoneAdjustment_C", "OnValueChanged_Bind");
+
+	Params::UDeadzoneAdjustment_C_OnValueChanged_Bind_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -84,9 +117,12 @@ void UDeadzoneAdjustment_C::OnValueChanged_Bind(float Value)
 
 void UDeadzoneAdjustment_C::ExecuteUbergraph_DeadzoneAdjustment(int32 EntryPoint, float CallFunc_GetValue_ReturnValue, float K2Node_CustomEvent_Value, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, float CallFunc_ConvertSliderValueToSettingsValue_SettingsValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue)
 {
-	static auto Func = Class->GetFunction("DeadzoneAdjustment_C", "ExecuteUbergraph_DeadzoneAdjustment");
+	static class UFunction* Func = nullptr;
 
-	Params::UDeadzoneAdjustment_C_ExecuteUbergraph_DeadzoneAdjustment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DeadzoneAdjustment_C", "ExecuteUbergraph_DeadzoneAdjustment");
+
+	Params::UDeadzoneAdjustment_C_ExecuteUbergraph_DeadzoneAdjustment_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetValue_ReturnValue = CallFunc_GetValue_ReturnValue;
@@ -101,6 +137,4 @@ void UDeadzoneAdjustment_C::ExecuteUbergraph_DeadzoneAdjustment(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

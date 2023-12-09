@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass MenuScreen_Athena.MenuScreen_Athena_C
+// (None)
+
+class UClass* UMenuScreen_Athena_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MenuScreen_Athena_C");
+
+	return Clss;
+}
+
+
+// MenuScreen_Athena_C MenuScreen_Athena.Default__MenuScreen_Athena_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMenuScreen_Athena_C* UMenuScreen_Athena_C::GetDefaultObj()
+{
+	static class UMenuScreen_Athena_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMenuScreen_Athena_C*>(UMenuScreen_Athena_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MenuScreen_Athena.MenuScreen_Athena_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void UMenuScreen_Athena_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("MenuScreen_Athena_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuScreen_Athena_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuScreen_Athena_C", "AnimGraph");
+
+	Params::UMenuScreen_Athena_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -41,12 +69,14 @@ void UMenuScreen_Athena_C::AnimGraph(struct FPoseLink* AnimGraph)
 
 void UMenuScreen_Athena_C::AnimNotify_playFacialAnim()
 {
-	static auto Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_playFacialAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuScreen_Athena_C_AnimNotify_playFacialAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_playFacialAnim");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,12 +87,14 @@ void UMenuScreen_Athena_C::AnimNotify_playFacialAnim()
 
 void UMenuScreen_Athena_C::UserFocus()
 {
-	static auto Func = Class->GetFunction("MenuScreen_Athena_C", "UserFocus");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuScreen_Athena_C_UserFocus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuScreen_Athena_C", "UserFocus");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -73,12 +105,14 @@ void UMenuScreen_Athena_C::UserFocus()
 
 void UMenuScreen_Athena_C::AnimNotify_LeftB()
 {
-	static auto Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_LeftB");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuScreen_Athena_C_AnimNotify_LeftB_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_LeftB");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -90,9 +124,12 @@ void UMenuScreen_Athena_C::AnimNotify_LeftB()
 
 void UMenuScreen_Athena_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static auto Func = Class->GetFunction("MenuScreen_Athena_C", "BlueprintUpdateAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuScreen_Athena_C_BlueprintUpdateAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuScreen_Athena_C", "BlueprintUpdateAnimation");
+
+	Params::UMenuScreen_Athena_C_BlueprintUpdateAnimation_Params Parms{};
 
 	Parms.DeltaTimeX = DeltaTimeX;
 
@@ -107,12 +144,14 @@ void UMenuScreen_Athena_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void UMenuScreen_Athena_C::BlueprintInitializeAnimation()
 {
-	static auto Func = Class->GetFunction("MenuScreen_Athena_C", "BlueprintInitializeAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuScreen_Athena_C_BlueprintInitializeAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuScreen_Athena_C", "BlueprintInitializeAnimation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -123,12 +162,14 @@ void UMenuScreen_Athena_C::BlueprintInitializeAnimation()
 
 void UMenuScreen_Athena_C::AnimNotify_LobbySkydive_Diving()
 {
-	static auto Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_LobbySkydive_Diving");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuScreen_Athena_C_AnimNotify_LobbySkydive_Diving_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_LobbySkydive_Diving");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -139,12 +180,14 @@ void UMenuScreen_Athena_C::AnimNotify_LobbySkydive_Diving()
 
 void UMenuScreen_Athena_C::AnimNotify_LobbySkydive_Gliding()
 {
-	static auto Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_LobbySkydive_Gliding");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuScreen_Athena_C_AnimNotify_LobbySkydive_Gliding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuScreen_Athena_C", "AnimNotify_LobbySkydive_Gliding");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -155,12 +198,14 @@ void UMenuScreen_Athena_C::AnimNotify_LobbySkydive_Gliding()
 
 void UMenuScreen_Athena_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MenuScreen_Athena_AnimGraphNode_LayeredBoneBlend_8D2B60D44BBADFD01AC9A6BF39472D0B()
 {
-	static auto Func = Class->GetFunction("MenuScreen_Athena_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_MenuScreen_Athena_AnimGraphNode_LayeredBoneBlend_8D2B60D44BBADFD01AC9A6BF39472D0B");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuScreen_Athena_C_EvaluateGraphExposedInputs_ExecuteUbergraph_MenuScreen_Athena_AnimGraphNode_LayeredBoneBlend_8D2B60D44BBADFD01AC9A6BF39472D0B_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuScreen_Athena_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_MenuScreen_Athena_AnimGraphNode_LayeredBoneBlend_8D2B60D44BBADFD01AC9A6BF39472D0B");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -221,9 +266,12 @@ void UMenuScreen_Athena_C::EvaluateGraphExposedInputs_ExecuteUbergraph_MenuScree
 
 void UMenuScreen_Athena_C::ExecuteUbergraph_MenuScreen_Athena(int32 EntryPoint, float CallFunc_GetCurveValue_ReturnValue, float K2Node_Event_DeltaTimeX, class APawn* CallFunc_TryGetPawnOwner_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, bool CallFunc_IsValid_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_RandomIntegerInRange_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_DontCrossArms_ReturnValue, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_4, const class FString& CallFunc_GetObjectName_ReturnValue, bool CallFunc_Contains_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable, class UAnimMontage* CallFunc_GetFrontendAnimMontageIdleOverride_ReturnValue, bool CallFunc_IsValid_ReturnValue_5, bool CallFunc_Montage_IsActive_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_6, bool CallFunc_IsValid_ReturnValue_7, class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue, class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_8, bool CallFunc_IsValid_ReturnValue_9, class UB_MasterPetAnimBP_C* K2Node_DynamicCast_AsB_Master_Pet_Anim_BP, bool K2Node_DynamicCast_bSuccess_1, class UB_MasterPetAnimBP_C* K2Node_DynamicCast_AsB_Master_Pet_Anim_BP_1, bool K2Node_DynamicCast_bSuccess_2, bool Temp_bool_IsClosed_Variable, bool CallFunc_IsSkydiving_ReturnValue, class UAnimMontage* CallFunc_GetFrontendAnimMontageIdleOverride_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_10, bool CallFunc_Montage_IsActive_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_GetCurveValue_ReturnValue_1, float CallFunc_RandomFloatInRange_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Montage_Play_ReturnValue, float CallFunc_Montage_Play_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("MenuScreen_Athena_C", "ExecuteUbergraph_MenuScreen_Athena");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuScreen_Athena_C", "ExecuteUbergraph_MenuScreen_Athena");
+
+	Params::UMenuScreen_Athena_C_ExecuteUbergraph_MenuScreen_Athena_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetCurveValue_ReturnValue = CallFunc_GetCurveValue_ReturnValue;
@@ -287,17 +335,17 @@ void UMenuScreen_Athena_C::ExecuteUbergraph_MenuScreen_Athena(int32 EntryPoint, 
 
 void UMenuScreen_Athena_C::MenuScreenDispatcher__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("MenuScreen_Athena_C", "MenuScreenDispatcher__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMenuScreen_Athena_C_MenuScreenDispatcher__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MenuScreen_Athena_C", "MenuScreenDispatcher__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

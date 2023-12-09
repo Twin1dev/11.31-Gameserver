@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -22,29 +19,26 @@ public:
 	float                                        LowGravRemoveDelay;                                // 0xA40(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Float;                                             // 0xA44(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        VelocityResetThreshold;                            // 0xA48(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5AAF[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5EBF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayAbilityTargetDataHandle      TargetData;                                        // 0xA50(0x28)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<class AActor*>                        PotentialTargets;                                  // 0xA78(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
 	float                                        TargetPriorityFloat;                               // 0xA88(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5AB0[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5EC0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                PotentialTarget;                                   // 0xA90(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                Target;                                            // 0xA98(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortGameplayEffectContainer          EffectContainer;                                   // 0xAA0(0xB8)(Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                        DistanceInfluenceMultiple;                         // 0xB58(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5AB1[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5EC3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FScalableFloat                        LockOnRange;                                       // 0xB60(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FScalableFloat                        LockOnRectSize;                                    // 0xB80(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                        Tick;                                              // 0xBA0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5AB2[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5EC4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayAttribute                    Attribute;                                         // 0xBA8(0x20)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	class AB_Ranged_Lotus_Mustache_C*            Weapon;                                            // 0xBC8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        DotCheckValue;                                     // 0xBD0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GA_Lotus_Mustache_LockOnTargeting_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGA_Lotus_Mustache_LockOnTargeting_C* GetDefaultObj();
 
 	void TempGetLockOnTargetsTrace(bool Temp_bool_Has_Been_Initd_Variable, bool Temp_bool_Has_Been_Initd_Variable_1, bool Temp_bool_IsClosed_Variable, bool Temp_bool_Has_Been_Initd_Variable_2, bool Temp_bool_IsClosed_Variable_1, bool Temp_bool_IsClosed_Variable_2, bool CallFunc_IsValid_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, class AB_Ranged_Ashton_Indigo_Athena_C* K2Node_DynamicCast_AsB_Ranged_Ashton_Indigo_Athena, bool K2Node_DynamicCast_bSuccess_1, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, class AFortPawn* CallFunc_GetAimedAtEnemy_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue);
 	void OnChange_B230F5A34FBD93E78E242A8524699628();
@@ -64,6 +58,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -48,7 +45,7 @@ struct UMcpProfile_LockProfileForWrite_Params
 public:
 	class FString                                Code;                                              // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        Timeout;                                           // 0x10(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1AC2[0xC];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_9AB[0xC];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDedicatedServerUrlContext            Context;                                           // 0x20(0x80)(Parm, OutParm, RepSkip, NativeAccessSpecifierPublic)
 };
 
@@ -71,6 +68,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

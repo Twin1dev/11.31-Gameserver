@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class USoundCueContainer : public USoundCueTemplate
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SoundCueContainer");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USoundCueContainer* GetDefaultObj();
 
 };
 
@@ -32,11 +26,8 @@ class USoundCueDistanceCrossfade : public USoundCueTemplate
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SoundCueDistanceCrossfade");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USoundCueDistanceCrossfade* GetDefaultObj();
 
 };
 
@@ -46,16 +37,11 @@ class USoundCueTemplateSettings : public UDeveloperSettings
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SoundCueTemplateSettings");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USoundCueTemplateSettings* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

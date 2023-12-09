@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -22,7 +19,7 @@ struct UItemCount_C_SetBrushAndTextStyle_Params
 {
 public:
 	enum class EFortBrushSize                    InBrushSize;                                       // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4B85[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_65FB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                InStyle;                                           // 0x8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -64,13 +61,6 @@ public:
 	class UFortItemDefinition*                   ItemDefinition;                                    // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function ItemCount.ItemCount_C.Construct
-struct UItemCount_C_Construct_Params
-{
-public:
-};
-
 // 0x1 (0x1 - 0x0)
 // Function ItemCount.ItemCount_C.PreConstruct
 struct UItemCount_C_PreConstruct_Params
@@ -102,6 +92,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

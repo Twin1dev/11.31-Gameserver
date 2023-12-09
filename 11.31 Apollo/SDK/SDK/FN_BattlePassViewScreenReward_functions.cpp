@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass BattlePassViewScreenReward.BattlePassViewScreenReward_C
+// (None)
+
+class UClass* UBattlePassViewScreenReward_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BattlePassViewScreenReward_C");
+
+	return Clss;
+}
+
+
+// BattlePassViewScreenReward_C BattlePassViewScreenReward.Default__BattlePassViewScreenReward_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBattlePassViewScreenReward_C* UBattlePassViewScreenReward_C::GetDefaultObj()
+{
+	static class UBattlePassViewScreenReward_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBattlePassViewScreenReward_C*>(UBattlePassViewScreenReward_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BattlePassViewScreenReward.BattlePassViewScreenReward_C.IntroIn
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UBattlePassViewScreenReward_C::IntroIn(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassViewScreenReward_C", "IntroIn");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassViewScreenReward_C_IntroIn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassViewScreenReward_C", "IntroIn");
+
+	Params::UBattlePassViewScreenReward_C_IntroIn_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -40,9 +68,12 @@ void UBattlePassViewScreenReward_C::IntroIn(class UUMGSequencePlayer* CallFunc_P
 
 void UBattlePassViewScreenReward_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("BattlePassViewScreenReward_C", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassViewScreenReward_C_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassViewScreenReward_C", "BP_OnItemSelectionChanged");
+
+	Params::UBattlePassViewScreenReward_C_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -58,9 +89,12 @@ void UBattlePassViewScreenReward_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UBattlePassViewScreenReward_C::BPSetup(class UBattlePassViewRewardData* InReward)
 {
-	static auto Func = Class->GetFunction("BattlePassViewScreenReward_C", "BPSetup");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassViewScreenReward_C_BPSetup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassViewScreenReward_C", "BPSetup");
+
+	Params::UBattlePassViewScreenReward_C_BPSetup_Params Parms{};
 
 	Parms.InReward = InReward;
 
@@ -75,12 +109,14 @@ void UBattlePassViewScreenReward_C::BPSetup(class UBattlePassViewRewardData* InR
 
 void UBattlePassViewScreenReward_C::OnStaggerTimeStarted()
 {
-	static auto Func = Class->GetFunction("BattlePassViewScreenReward_C", "OnStaggerTimeStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassViewScreenReward_C_OnStaggerTimeStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassViewScreenReward_C", "OnStaggerTimeStarted");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -91,12 +127,14 @@ void UBattlePassViewScreenReward_C::OnStaggerTimeStarted()
 
 void UBattlePassViewScreenReward_C::OnStaggerTimeElapsed()
 {
-	static auto Func = Class->GetFunction("BattlePassViewScreenReward_C", "OnStaggerTimeElapsed");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassViewScreenReward_C_OnStaggerTimeElapsed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassViewScreenReward_C", "OnStaggerTimeElapsed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -120,12 +158,12 @@ void UBattlePassViewScreenReward_C::OnStaggerTimeElapsed()
 // enum class ESlateVisibility        Temp_byte_Variable_5                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_6                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSlateBrush                 CallFunc_MakeBrushFromMaterial_ReturnValue                       ()
-// struct FSlateBrush                 CallFunc_MakeBrushFromTexture_ReturnValue                        ()
+// struct FSlateBrush                 CallFunc_MakeBrushFromMaterial_ReturnValue                       (None)
+// struct FSlateBrush                 CallFunc_MakeBrushFromTexture_ReturnValue                        (None)
 // bool                               K2Node_Event_bIsSelected                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UBattlePassViewRewardData*   K2Node_Event_InReward                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortRarity             CallFunc_GetRarity_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortRarityItemData         CallFunc_BPGetRarityData_ReturnValue                             ()
+// struct FFortRarityItemData         CallFunc_BPGetRarityData_ReturnValue                             (None)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 K2Node_Select_Default_1                                          (ConstParm)
 // int32                              K2Node_Select_Default_2                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -134,9 +172,12 @@ void UBattlePassViewScreenReward_C::OnStaggerTimeElapsed()
 
 void UBattlePassViewScreenReward_C::ExecuteUbergraph_BattlePassViewScreenReward(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, bool Temp_bool_Variable, int32 Temp_int_Variable, int32 Temp_int_Variable_1, enum class EBattlePassRewardSource Temp_byte_Variable_1, const struct FSlateBrush& Temp_struct_Variable, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class EBattlePassRewardSource Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, enum class ESlateVisibility Temp_byte_Variable_6, bool Temp_bool_Variable_1, const struct FSlateBrush& CallFunc_MakeBrushFromMaterial_ReturnValue, const struct FSlateBrush& CallFunc_MakeBrushFromTexture_ReturnValue, bool K2Node_Event_bIsSelected, class UBattlePassViewRewardData* K2Node_Event_InReward, enum class EFortRarity CallFunc_GetRarity_ReturnValue, const struct FFortRarityItemData& CallFunc_BPGetRarityData_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, const struct FSlateBrush& K2Node_Select_Default_1, int32 K2Node_Select_Default_2, enum class ESlateVisibility K2Node_Select_Default_3, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BattlePassViewScreenReward_C", "ExecuteUbergraph_BattlePassViewScreenReward");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassViewScreenReward_C_ExecuteUbergraph_BattlePassViewScreenReward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassViewScreenReward_C", "ExecuteUbergraph_BattlePassViewScreenReward");
+
+	Params::UBattlePassViewScreenReward_C_ExecuteUbergraph_BattlePassViewScreenReward_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -172,6 +213,4 @@ void UBattlePassViewScreenReward_C::ExecuteUbergraph_BattlePassViewScreenReward(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -14,20 +11,15 @@ namespace SDK
 
 // 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-HUD-MapScreen_Title_Shine.TextStyle-HUD-MapScreen_Title_Shine_C
-class UTextStyle_HUD_MapScreen_Title_Shine_C : public UCommonTextStyle
+class UTextStyleMinusHUDMinusMapScreen_Title_Shine_C : public UCommonTextStyle
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("TextStyle-HUD-MapScreen_Title_Shine_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UTextStyleMinusHUDMinusMapScreen_Title_Shine_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

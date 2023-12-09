@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass BattlePassPurchaseButton_Track.BattlePassPurchaseButton_Track_C
+// (None)
+
+class UClass* UBattlePassPurchaseButton_Track_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BattlePassPurchaseButton_Track_C");
+
+	return Clss;
+}
+
+
+// BattlePassPurchaseButton_Track_C BattlePassPurchaseButton_Track.Default__BattlePassPurchaseButton_Track_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBattlePassPurchaseButton_Track_C* UBattlePassPurchaseButton_Track_C::GetDefaultObj()
+{
+	static class UBattlePassPurchaseButton_Track_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBattlePassPurchaseButton_Track_C*>(UBattlePassPurchaseButton_Track_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BattlePassPurchaseButton_Track.BattlePassPurchaseButton_Track_C.HandleText
@@ -25,9 +50,12 @@ namespace SDK
 
 void UBattlePassPurchaseButton_Track_C::HandleText(bool Temp_bool_Variable, int32 Temp_int_Variable, int32 K2Node_Select_Default, const struct FSlateFontInfo& K2Node_MakeStruct_SlateFontInfo)
 {
-	static auto Func = Class->GetFunction("BattlePassPurchaseButton_Track_C", "HandleText");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPurchaseButton_Track_C_HandleText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPurchaseButton_Track_C", "HandleText");
+
+	Params::UBattlePassPurchaseButton_Track_C_HandleText_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -45,12 +73,14 @@ void UBattlePassPurchaseButton_Track_C::HandleText(bool Temp_bool_Variable, int3
 
 void UBattlePassPurchaseButton_Track_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("BattlePassPurchaseButton_Track_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPurchaseButton_Track_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPurchaseButton_Track_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -61,12 +91,14 @@ void UBattlePassPurchaseButton_Track_C::BP_OnHovered()
 
 void UBattlePassPurchaseButton_Track_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("BattlePassPurchaseButton_Track_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPurchaseButton_Track_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPurchaseButton_Track_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -78,9 +110,12 @@ void UBattlePassPurchaseButton_Track_C::BP_OnUnhovered()
 
 void UBattlePassPurchaseButton_Track_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("BattlePassPurchaseButton_Track_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPurchaseButton_Track_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPurchaseButton_Track_C", "PreConstruct");
+
+	Params::UBattlePassPurchaseButton_Track_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -96,9 +131,12 @@ void UBattlePassPurchaseButton_Track_C::PreConstruct(bool IsDesignTime)
 
 void UBattlePassPurchaseButton_Track_C::OnSetData(enum class EBattlePassPurchaseButtonLayout LayoutType)
 {
-	static auto Func = Class->GetFunction("BattlePassPurchaseButton_Track_C", "OnSetData");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPurchaseButton_Track_C_OnSetData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPurchaseButton_Track_C", "OnSetData");
+
+	Params::UBattlePassPurchaseButton_Track_C_OnSetData_Params Parms{};
 
 	Parms.LayoutType = LayoutType;
 
@@ -123,9 +161,12 @@ void UBattlePassPurchaseButton_Track_C::OnSetData(enum class EBattlePassPurchase
 
 void UBattlePassPurchaseButton_Track_C::ExecuteUbergraph_BattlePassPurchaseButton_Track(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_1, bool K2Node_Event_IsDesignTime, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_2, enum class EBattlePassPurchaseButtonLayout K2Node_Event_LayoutType, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_3, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("BattlePassPurchaseButton_Track_C", "ExecuteUbergraph_BattlePassPurchaseButton_Track");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPurchaseButton_Track_C", "ExecuteUbergraph_BattlePassPurchaseButton_Track");
+
+	Params::UBattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimationReverse_ReturnValue = CallFunc_PlayAnimationReverse_ReturnValue;
@@ -144,6 +185,4 @@ void UBattlePassPurchaseButton_Track_C::ExecuteUbergraph_BattlePassPurchaseButto
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

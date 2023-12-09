@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,17 +16,12 @@ class UUsedPlacementActorsContext_C : public UEnvQueryContext_BlueprintBase
 public:
 	struct FGameplayTagQuery                     UsedTagsAddedQuery;                                // 0x30(0x48)(Edit, BlueprintVisible)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("UsedPlacementActorsContext_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UUsedPlacementActorsContext_C* GetDefaultObj();
 
 	void ProvideActorsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<class AActor*>* ResultingActorsSet, TArray<class AActor*>& CallFunc_GetSpawnLocationActorsThatHaveAddedTagsMatchingQuery_SpawnLocationActors, bool CallFunc_GetSpawnLocationActorsThatHaveAddedTagsMatchingQuery_ReturnValue);
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

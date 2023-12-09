@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,13 +12,6 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
-
-// 0x0 (0x0 - 0x0)
-// Function GCN_Loop_SnowFlakes_CameraAttached_Niagara.GCN_Loop_SnowFlakes_CameraAttached_Niagara_C.SpawnNiagara
-struct AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C_SpawnNiagara_Params
-{
-public:
-};
 
 // 0xF0 (0xF0 - 0x0)
 // Function GCN_Loop_SnowFlakes_CameraAttached_Niagara.GCN_Loop_SnowFlakes_CameraAttached_Niagara_C.OnRemoval
@@ -54,7 +44,7 @@ struct AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C_ExecuteUbergraph_GCN_Loop_S
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x4(0x10)(ZeroConstructor, NoDestructor)
-	uint8                                        Pad_5ED3[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_846[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                K2Node_Event_MyTarget_1;                           // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                K2Node_Event_Parameters_1;                         // 0x20(0xB8)(ConstParm, ContainsInstancedReference)
 	TArray<class UParticleSystemComponent*>      K2Node_Event_ParticleComponents_1;                 // 0xD8(0x10)(ConstParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
@@ -67,7 +57,7 @@ public:
 	bool                                         CallFunc_IsLocallyControlled_ReturnValue;          // 0x119(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_K2_AttachToComponent_ReturnValue;         // 0x11A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsActive_ReturnValue;                     // 0x11B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5ED4[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_84A[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                K2Node_Event_MyTarget;                             // 0x120(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayCueParameters                K2Node_Event_Parameters;                           // 0x128(0xB8)(ConstParm, ContainsInstancedReference)
 	TArray<class UParticleSystemComponent*>      K2Node_Event_ParticleComponents;                   // 0x1E0(0x10)(ConstParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
@@ -79,6 +69,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

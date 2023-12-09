@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass DBNO_Carried_Simulation.DBNO_Carried_Simulation_C
+// (None)
+
+class UClass* UDBNO_Carried_Simulation_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DBNO_Carried_Simulation_C");
+
+	return Clss;
+}
+
+
+// DBNO_Carried_Simulation_C DBNO_Carried_Simulation.Default__DBNO_Carried_Simulation_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UDBNO_Carried_Simulation_C* UDBNO_Carried_Simulation_C::GetDefaultObj()
+{
+	static class UDBNO_Carried_Simulation_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UDBNO_Carried_Simulation_C*>(UDBNO_Carried_Simulation_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function DBNO_Carried_Simulation.DBNO_Carried_Simulation_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,16 +48,19 @@ namespace SDK
 
 void UDBNO_Carried_Simulation_C::AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("DBNO_Carried_Simulation_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UDBNO_Carried_Simulation_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DBNO_Carried_Simulation_C", "AnimGraph");
+
+	Params::UDBNO_Carried_Simulation_C_AnimGraph_Params Parms{};
 
 	Parms.InPose = InPose;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -44,9 +72,12 @@ void UDBNO_Carried_Simulation_C::AnimGraph(const struct FPoseLink& InPose, struc
 
 void UDBNO_Carried_Simulation_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static auto Func = Class->GetFunction("DBNO_Carried_Simulation_C", "BlueprintUpdateAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UDBNO_Carried_Simulation_C_BlueprintUpdateAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DBNO_Carried_Simulation_C", "BlueprintUpdateAnimation");
+
+	Params::UDBNO_Carried_Simulation_C_BlueprintUpdateAnimation_Params Parms{};
 
 	Parms.DeltaTimeX = DeltaTimeX;
 
@@ -61,12 +92,14 @@ void UDBNO_Carried_Simulation_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void UDBNO_Carried_Simulation_C::BlueprintInitializeAnimation()
 {
-	static auto Func = Class->GetFunction("DBNO_Carried_Simulation_C", "BlueprintInitializeAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UDBNO_Carried_Simulation_C_BlueprintInitializeAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DBNO_Carried_Simulation_C", "BlueprintInitializeAnimation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -90,9 +123,12 @@ void UDBNO_Carried_Simulation_C::BlueprintInitializeAnimation()
 
 void UDBNO_Carried_Simulation_C::ExecuteUbergraph_DBNO_Carried_Simulation(int32 EntryPoint, class AActor* CallFunc_GetOwningActor_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, bool Temp_bool_IsClosed_Variable, enum class EFortCustomBodyType CallFunc_GetCharacterBodyType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, bool CallFunc_GetGender_IsMale, bool CallFunc_GetGender_IsFemale, float K2Node_Event_DeltaTimeX, bool Temp_bool_Has_Been_Initd_Variable)
 {
-	static auto Func = Class->GetFunction("DBNO_Carried_Simulation_C", "ExecuteUbergraph_DBNO_Carried_Simulation");
+	static class UFunction* Func = nullptr;
 
-	Params::UDBNO_Carried_Simulation_C_ExecuteUbergraph_DBNO_Carried_Simulation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DBNO_Carried_Simulation_C", "ExecuteUbergraph_DBNO_Carried_Simulation");
+
+	Params::UDBNO_Carried_Simulation_C_ExecuteUbergraph_DBNO_Carried_Simulation_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetOwningActor_ReturnValue = CallFunc_GetOwningActor_ReturnValue;
@@ -114,6 +150,4 @@ void UDBNO_Carried_Simulation_C::ExecuteUbergraph_DBNO_Carried_Simulation(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

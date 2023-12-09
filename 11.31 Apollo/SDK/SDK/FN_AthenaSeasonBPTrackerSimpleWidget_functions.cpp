@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaSeasonBPTrackerSimpleWidget.AthenaSeasonBPTrackerSimpleWidget_C
+// (None)
+
+class UClass* UAthenaSeasonBPTrackerSimpleWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaSeasonBPTrackerSimpleWidget_C");
+
+	return Clss;
+}
+
+
+// AthenaSeasonBPTrackerSimpleWidget_C AthenaSeasonBPTrackerSimpleWidget.Default__AthenaSeasonBPTrackerSimpleWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaSeasonBPTrackerSimpleWidget_C* UAthenaSeasonBPTrackerSimpleWidget_C::GetDefaultObj()
+{
+	static class UAthenaSeasonBPTrackerSimpleWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaSeasonBPTrackerSimpleWidget_C*>(UAthenaSeasonBPTrackerSimpleWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaSeasonBPTrackerSimpleWidget.AthenaSeasonBPTrackerSimpleWidget_C.SetStyleFree
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UAthenaSeasonBPTrackerSimpleWidget_C::SetStyleFree()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonBPTrackerSimpleWidget_C", "SetStyleFree");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonBPTrackerSimpleWidget_C_SetStyleFree_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonBPTrackerSimpleWidget_C", "SetStyleFree");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UAthenaSeasonBPTrackerSimpleWidget_C::SetStyleFree()
 
 void UAthenaSeasonBPTrackerSimpleWidget_C::SetStylePremium()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonBPTrackerSimpleWidget_C", "SetStylePremium");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonBPTrackerSimpleWidget_C_SetStylePremium_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonBPTrackerSimpleWidget_C", "SetStylePremium");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -54,9 +83,12 @@ void UAthenaSeasonBPTrackerSimpleWidget_C::SetStylePremium()
 
 void UAthenaSeasonBPTrackerSimpleWidget_C::OnAccountInfoChanged(struct FFortPublicAccountInfo& Result)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonBPTrackerSimpleWidget_C", "OnAccountInfoChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonBPTrackerSimpleWidget_C_OnAccountInfoChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonBPTrackerSimpleWidget_C", "OnAccountInfoChanged");
+
+	Params::UAthenaSeasonBPTrackerSimpleWidget_C_OnAccountInfoChanged_Params Parms{};
 
 	Parms.Result = Result;
 
@@ -71,12 +103,14 @@ void UAthenaSeasonBPTrackerSimpleWidget_C::OnAccountInfoChanged(struct FFortPubl
 
 void UAthenaSeasonBPTrackerSimpleWidget_C::OnInitialized()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonBPTrackerSimpleWidget_C", "OnInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonBPTrackerSimpleWidget_C_OnInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonBPTrackerSimpleWidget_C", "OnInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -88,9 +122,12 @@ void UAthenaSeasonBPTrackerSimpleWidget_C::OnInitialized()
 
 void UAthenaSeasonBPTrackerSimpleWidget_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonBPTrackerSimpleWidget_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonBPTrackerSimpleWidget_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonBPTrackerSimpleWidget_C", "PreConstruct");
+
+	Params::UAthenaSeasonBPTrackerSimpleWidget_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -105,12 +142,14 @@ void UAthenaSeasonBPTrackerSimpleWidget_C::PreConstruct(bool IsDesignTime)
 
 void UAthenaSeasonBPTrackerSimpleWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonBPTrackerSimpleWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonBPTrackerSimpleWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonBPTrackerSimpleWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -128,7 +167,7 @@ void UAthenaSeasonBPTrackerSimpleWidget_C::Construct()
 // float                              Temp_float_Variable_1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortPublicAccountInfo      K2Node_Event_Result                                              (ConstParm, NoDestructor)
 // bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -144,9 +183,12 @@ void UAthenaSeasonBPTrackerSimpleWidget_C::Construct()
 
 void UAthenaSeasonBPTrackerSimpleWidget_C::ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget(int32 EntryPoint, bool Temp_bool_Variable, int32 Temp_int_Variable, bool Temp_bool_Variable_1, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, float Temp_float_Variable, float Temp_float_Variable_1, const struct FFortPublicAccountInfo& K2Node_Event_Result, bool Temp_bool_Variable_2, class FText CallFunc_Conv_IntToText_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue_1, float Temp_float_Variable_2, bool K2Node_Event_IsDesignTime, const struct FLinearColor& K2Node_Select_Default, float K2Node_Select_Default_1, float Temp_float_Variable_3, bool Temp_bool_Variable_3, float K2Node_Select_Default_2, int32 K2Node_Select_Default_3, const struct FSlateFontInfo& K2Node_MakeStruct_SlateFontInfo)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonBPTrackerSimpleWidget_C", "ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonBPTrackerSimpleWidget_C", "ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget");
+
+	Params::UAthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -178,6 +220,4 @@ void UAthenaSeasonBPTrackerSimpleWidget_C::ExecuteUbergraph_AthenaSeasonBPTracke
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass LeagueImageDecorator.LeagueImageDecorator_C
+// (None)
+
+class UClass* ULeagueImageDecorator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LeagueImageDecorator_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// LeagueImageDecorator_C LeagueImageDecorator.Default__LeagueImageDecorator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULeagueImageDecorator_C* ULeagueImageDecorator_C::GetDefaultObj()
+{
+	static class ULeagueImageDecorator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULeagueImageDecorator_C*>(ULeagueImageDecorator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

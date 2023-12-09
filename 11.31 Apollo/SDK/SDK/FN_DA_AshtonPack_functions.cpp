@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass DA_AshtonPack.DA_AshtonPack_C
+// (Actor)
+
+class UClass* ADA_AshtonPack_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DA_AshtonPack_C");
+
+	return Clss;
+}
+
+
+// DA_AshtonPack_C DA_AshtonPack.Default__DA_AshtonPack_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ADA_AshtonPack_C* ADA_AshtonPack_C::GetDefaultObj()
+{
+	static class ADA_AshtonPack_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ADA_AshtonPack_C*>(ADA_AshtonPack_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function DA_AshtonPack.DA_AshtonPack_C.BPPressTrigger
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ADA_AshtonPack_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 {
-	static auto Func = Class->GetFunction("DA_AshtonPack_C", "BPPressTrigger");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_AshtonPack_C_BPPressTrigger_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_AshtonPack_C", "BPPressTrigger");
+
+	Params::ADA_AshtonPack_C_BPPressTrigger_Params Parms{};
 
 	Parms.FortDecoHelper = FortDecoHelper;
 
@@ -40,9 +68,12 @@ void ADA_AshtonPack_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 
 void ADA_AshtonPack_C::BPPressSecondaryFire(class AFortDecoHelper* FortDecoHelper)
 {
-	static auto Func = Class->GetFunction("DA_AshtonPack_C", "BPPressSecondaryFire");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_AshtonPack_C_BPPressSecondaryFire_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_AshtonPack_C", "BPPressSecondaryFire");
+
+	Params::ADA_AshtonPack_C_BPPressSecondaryFire_Params Parms{};
 
 	Parms.FortDecoHelper = FortDecoHelper;
 
@@ -57,12 +88,14 @@ void ADA_AshtonPack_C::BPPressSecondaryFire(class AFortDecoHelper* FortDecoHelpe
 
 void ADA_AshtonPack_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("DA_AshtonPack_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_AshtonPack_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_AshtonPack_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -74,9 +107,12 @@ void ADA_AshtonPack_C::ReceiveBeginPlay()
 
 void ADA_AshtonPack_C::Landed(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("DA_AshtonPack_C", "Landed");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_AshtonPack_C_Landed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_AshtonPack_C", "Landed");
+
+	Params::ADA_AshtonPack_C_Landed_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -96,9 +132,9 @@ void ADA_AshtonPack_C::Landed(struct FHitResult& Hit)
 // class APawn*                       CallFunc_GetInstigator_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortPawn*                   K2Node_DynamicCast_AsFort_Pawn                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              (None)
 // bool                               CallFunc_IsFalling_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData_1                            ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData_1                            (None)
 // bool                               CallFunc_Less_FloatFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_Add_FloatFloat_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_FloatFloat_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -129,9 +165,12 @@ void ADA_AshtonPack_C::Landed(struct FHitResult& Hit)
 
 void ADA_AshtonPack_C::ExecuteUbergraph_DA_AshtonPack(int32 EntryPoint, bool Temp_bool_Variable, class AFortDecoHelper* K2Node_Event_FortDecoHelper_1, bool CallFunc_Not_PreBool_ReturnValue, class AFortDecoHelper* K2Node_Event_FortDecoHelper, class APawn* CallFunc_GetInstigator_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData, bool CallFunc_IsFalling_ReturnValue, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData_1, bool CallFunc_Less_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue_1, class APawn* CallFunc_GetInstigator_ReturnValue_2, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface, bool K2Node_DynamicCast_bSuccess_1, class APawn* CallFunc_GetInstigator_ReturnValue_3, const struct FHitResult& K2Node_CustomEvent_Hit, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn_1, bool K2Node_DynamicCast_bSuccess_2, class APawn* CallFunc_GetInstigator_ReturnValue_4, bool CallFunc_BooleanAND_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_1, bool K2Node_DynamicCast_bSuccess_3, class APawn* CallFunc_GetInstigator_ReturnValue_5, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn_2, bool K2Node_DynamicCast_bSuccess_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue_1, class APawn* CallFunc_GetInstigator_ReturnValue_6, bool Temp_bool_Variable_1, int32 CallFunc_RemoveActiveEffectsWithSourceTags_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, int32 CallFunc_RemoveActiveEffectsWithSourceTags_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("DA_AshtonPack_C", "ExecuteUbergraph_DA_AshtonPack");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_AshtonPack_C", "ExecuteUbergraph_DA_AshtonPack");
+
+	Params::ADA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -178,6 +217,4 @@ void ADA_AshtonPack_C::ExecuteUbergraph_DA_AshtonPack(int32 EntryPoint, bool Tem
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

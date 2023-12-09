@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GAT_ActiveAbility.GAT_ActiveAbility_C
+// (None)
+
+class UClass* UGAT_ActiveAbility_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAT_ActiveAbility_C");
+
+	return Clss;
+}
+
+
+// GAT_ActiveAbility_C GAT_ActiveAbility.Default__GAT_ActiveAbility_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAT_ActiveAbility_C* UGAT_ActiveAbility_C::GetDefaultObj()
+{
+	static class UGAT_ActiveAbility_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAT_ActiveAbility_C*>(UGAT_ActiveAbility_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GAT_ActiveAbility.GAT_ActiveAbility_C.EndAbilityWithReason
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UGAT_ActiveAbility_C::EndAbilityWithReason(const class FString& Reason)
 {
-	static auto Func = Class->GetFunction("GAT_ActiveAbility_C", "EndAbilityWithReason");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_ActiveAbility_C_EndAbilityWithReason_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_ActiveAbility_C", "EndAbilityWithReason");
+
+	Params::UGAT_ActiveAbility_C_EndAbilityWithReason_Params Parms{};
 
 	Parms.Reason = Reason;
 
@@ -40,9 +68,12 @@ void UGAT_ActiveAbility_C::EndAbilityWithReason(const class FString& Reason)
 
 void UGAT_ActiveAbility_C::SendHeroAbilityActivationEvent(const struct FGameplayTag& T_Event_HeroAbilityActivate)
 {
-	static auto Func = Class->GetFunction("GAT_ActiveAbility_C", "SendHeroAbilityActivationEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_ActiveAbility_C_SendHeroAbilityActivationEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_ActiveAbility_C", "SendHeroAbilityActivationEvent");
+
+	Params::UGAT_ActiveAbility_C_SendHeroAbilityActivationEvent_Params Parms{};
 
 	Parms.T_Event_HeroAbilityActivate = T_Event_HeroAbilityActivate;
 
@@ -68,9 +99,12 @@ void UGAT_ActiveAbility_C::SendHeroAbilityActivationEvent(const struct FGameplay
 
 void UGAT_ActiveAbility_C::SetHolsterWeaponWithName(class AFortPawn* Target_Fort_Pawn, bool ShouldHolster, bool PlayEquipAnim, bool ShowDebugPrintName, bool* IsWeaponHolstered, bool* OperationSuccessful, bool bOperationSuccessful, bool CallFunc_BooleanXOR_ReturnValue, class UClass* CallFunc_GetObjectClass_ReturnValue, const class FString& CallFunc_GetClassDisplayName_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAT_ActiveAbility_C", "SetHolsterWeaponWithName");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_ActiveAbility_C_SetHolsterWeaponWithName_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_ActiveAbility_C", "SetHolsterWeaponWithName");
+
+	Params::UGAT_ActiveAbility_C_SetHolsterWeaponWithName_Params Parms{};
 
 	Parms.Target_Fort_Pawn = Target_Fort_Pawn;
 	Parms.ShouldHolster = ShouldHolster;
@@ -102,9 +136,12 @@ void UGAT_ActiveAbility_C::SetHolsterWeaponWithName(class AFortPawn* Target_Fort
 
 bool UGAT_ActiveAbility_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload)
 {
-	static auto Func = Class->GetFunction("GAT_ActiveAbility_C", "K2_ShouldAbilityRespondToEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_ActiveAbility_C_K2_ShouldAbilityRespondToEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_ActiveAbility_C", "K2_ShouldAbilityRespondToEvent");
+
+	Params::UGAT_ActiveAbility_C_K2_ShouldAbilityRespondToEvent_Params Parms{};
 
 	Parms.ActorInfo = ActorInfo;
 	Parms.Payload = Payload;
@@ -124,9 +161,12 @@ bool UGAT_ActiveAbility_C::K2_ShouldAbilityRespondToEvent(const struct FGameplay
 
 void UGAT_ActiveAbility_C::ActiveAbilitySetup(class UAbilitySystemComponent* AbilitySystemIn, class UAbilitySystemComponent** AbilitySystemOut)
 {
-	static auto Func = Class->GetFunction("GAT_ActiveAbility_C", "ActiveAbilitySetup");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_ActiveAbility_C_ActiveAbilitySetup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_ActiveAbility_C", "ActiveAbilitySetup");
+
+	Params::UGAT_ActiveAbility_C_ActiveAbilitySetup_Params Parms{};
 
 	Parms.AbilitySystemIn = AbilitySystemIn;
 
@@ -142,14 +182,17 @@ void UGAT_ActiveAbility_C::ActiveAbilitySetup(class UAbilitySystemComponent* Abi
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               ImmunityOn                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue              ()
+// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue              (None)
 // struct FActiveGameplayEffectHandle CallFunc_K2_ApplyGameplayEffectSpecToOwner_ReturnValue           (NoDestructor, HasGetValueTypeHash)
 
 void UGAT_ActiveAbility_C::SetKnockbackImmunity(bool ImmunityOn, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_K2_ApplyGameplayEffectSpecToOwner_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAT_ActiveAbility_C", "SetKnockbackImmunity");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_ActiveAbility_C_SetKnockbackImmunity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_ActiveAbility_C", "SetKnockbackImmunity");
+
+	Params::UGAT_ActiveAbility_C_SetKnockbackImmunity_Params Parms{};
 
 	Parms.ImmunityOn = ImmunityOn;
 	Parms.CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue = CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue;
@@ -171,9 +214,12 @@ void UGAT_ActiveAbility_C::SetKnockbackImmunity(bool ImmunityOn, const struct FG
 
 void UGAT_ActiveAbility_C::SetPawnCollision(class AFortPawn* FortPawn, bool CollisionOn, bool CallFunc_NotEqual_NameName_ReturnValue, class FName CallFunc_GetCollisionProfileName_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAT_ActiveAbility_C", "SetPawnCollision");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_ActiveAbility_C_SetPawnCollision_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_ActiveAbility_C", "SetPawnCollision");
+
+	Params::UGAT_ActiveAbility_C_SetPawnCollision_Params Parms{};
 
 	Parms.FortPawn = FortPawn;
 	Parms.CollisionOn = CollisionOn;
@@ -192,12 +238,14 @@ void UGAT_ActiveAbility_C::SetPawnCollision(class AFortPawn* FortPawn, bool Coll
 
 void UGAT_ActiveAbility_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GAT_ActiveAbility_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_ActiveAbility_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_ActiveAbility_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -209,9 +257,12 @@ void UGAT_ActiveAbility_C::K2_ActivateAbility()
 
 void UGAT_ActiveAbility_C::ExecuteUbergraph_GAT_ActiveAbility(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("GAT_ActiveAbility_C", "ExecuteUbergraph_GAT_ActiveAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_ActiveAbility_C_ExecuteUbergraph_GAT_ActiveAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_ActiveAbility_C", "ExecuteUbergraph_GAT_ActiveAbility");
+
+	Params::UGAT_ActiveAbility_C_ExecuteUbergraph_GAT_ActiveAbility_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -221,6 +272,4 @@ void UGAT_ActiveAbility_C::ExecuteUbergraph_GAT_ActiveAbility(int32 EntryPoint)
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

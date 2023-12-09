@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaDirectAcquisitonDetails_BattlePassStarDetails.AthenaDirectAcquisitonDetails_BattlePassStarDetails_C
+// (None)
+
+class UClass* UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaDirectAcquisitonDetails_BattlePassStarDetails_C");
+
+	return Clss;
+}
+
+
+// AthenaDirectAcquisitonDetails_BattlePassStarDetails_C AthenaDirectAcquisitonDetails_BattlePassStarDetails.Default__AthenaDirectAcquisitonDetails_BattlePassStarDetails_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C* UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C::GetDefaultObj()
+{
+	static class UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C*>(UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaDirectAcquisitonDetails_BattlePassStarDetails.AthenaDirectAcquisitonDetails_BattlePassStarDetails_C.SetNumOfBattlePassStars
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C::SetNumOfBattlePassStars(int32 NumOfBattlePassStars)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitonDetails_BattlePassStarDetails_C", "SetNumOfBattlePassStars");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C_SetNumOfBattlePassStars_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitonDetails_BattlePassStarDetails_C", "SetNumOfBattlePassStars");
+
+	Params::UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C_SetNumOfBattlePassStars_Params Parms{};
 
 	Parms.NumOfBattlePassStars = NumOfBattlePassStars;
 
@@ -40,13 +68,16 @@ void UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C::SetNumOfBattlePassS
 // int32                              K2Node_CustomEvent_NumOfBattlePassStars                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 void UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C::ExecuteUbergraph_AthenaDirectAcquisitonDetails_BattlePassStarDetails(int32 EntryPoint, int32 K2Node_CustomEvent_NumOfBattlePassStars, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitonDetails_BattlePassStarDetails_C", "ExecuteUbergraph_AthenaDirectAcquisitonDetails_BattlePassStarDetails");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C_ExecuteUbergraph_AthenaDirectAcquisitonDetails_BattlePassStarDetails_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitonDetails_BattlePassStarDetails_C", "ExecuteUbergraph_AthenaDirectAcquisitonDetails_BattlePassStarDetails");
+
+	Params::UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C_ExecuteUbergraph_AthenaDirectAcquisitonDetails_BattlePassStarDetails_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_NumOfBattlePassStars = K2Node_CustomEvent_NumOfBattlePassStars;
@@ -60,6 +91,4 @@ void UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C::ExecuteUbergraph_At
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

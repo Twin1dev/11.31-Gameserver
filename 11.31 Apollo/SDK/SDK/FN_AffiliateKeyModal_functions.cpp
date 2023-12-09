@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,17 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AffiliateKeyModal.AffiliateKeyModal_C
+// (None)
+
+class UClass* UAffiliateKeyModal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AffiliateKeyModal_C");
+
+	return Clss;
+}
+
+
+// AffiliateKeyModal_C AffiliateKeyModal.Default__AffiliateKeyModal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAffiliateKeyModal_C* UAffiliateKeyModal_C::GetDefaultObj()
+{
+	static class UAffiliateKeyModal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAffiliateKeyModal_C*>(UAffiliateKeyModal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AffiliateKeyModal.AffiliateKeyModal_C.SetupAffiliateField
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FString                      AffilateName                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 
 void UAffiliateKeyModal_C::SetupAffiliateField(const class FString& AffilateName, class FText CallFunc_Conv_StringToText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AffiliateKeyModal_C", "SetupAffiliateField");
+	static class UFunction* Func = nullptr;
 
-	Params::UAffiliateKeyModal_C_SetupAffiliateField_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AffiliateKeyModal_C", "SetupAffiliateField");
+
+	Params::UAffiliateKeyModal_C_SetupAffiliateField_Params Parms{};
 
 	Parms.AffilateName = AffilateName;
 	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
@@ -51,9 +79,12 @@ void UAffiliateKeyModal_C::SetupAffiliateField(const class FString& AffilateName
 
 void UAffiliateKeyModal_C::SetMobileButtons(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool CallFunc_IsUsingTouch_ReturnValue, bool CallFunc_IsUsingTouch_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("AffiliateKeyModal_C", "SetMobileButtons");
+	static class UFunction* Func = nullptr;
 
-	Params::UAffiliateKeyModal_C_SetMobileButtons_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AffiliateKeyModal_C", "SetMobileButtons");
+
+	Params::UAffiliateKeyModal_C_SetMobileButtons_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -77,12 +108,14 @@ void UAffiliateKeyModal_C::SetMobileButtons(bool Temp_bool_Variable, enum class 
 
 void UAffiliateKeyModal_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("AffiliateKeyModal_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAffiliateKeyModal_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AffiliateKeyModal_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -94,9 +127,12 @@ void UAffiliateKeyModal_C::BP_OnActivated()
 
 void UAffiliateKeyModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AffiliateKeyModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAffiliateKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AffiliateKeyModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
+
+	Params::UAffiliateKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -112,9 +148,12 @@ void UAffiliateKeyModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_Com
 
 void UAffiliateKeyModal_C::BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AffiliateKeyModal_C", "BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAffiliateKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AffiliateKeyModal_C", "BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature");
+
+	Params::UAffiliateKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -130,9 +169,12 @@ void UAffiliateKeyModal_C::BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_Co
 
 void UAffiliateKeyModal_C::OnSet(bool bSuccess)
 {
-	static auto Func = Class->GetFunction("AffiliateKeyModal_C", "OnSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UAffiliateKeyModal_C_OnSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AffiliateKeyModal_C", "OnSet");
+
+	Params::UAffiliateKeyModal_C_OnSet_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 
@@ -148,9 +190,12 @@ void UAffiliateKeyModal_C::OnSet(bool bSuccess)
 
 void UAffiliateKeyModal_C::BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AffiliateKeyModal_C", "BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAffiliateKeyModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AffiliateKeyModal_C", "BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UAffiliateKeyModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -168,9 +213,12 @@ void UAffiliateKeyModal_C::BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent
 
 void UAffiliateKeyModal_C::OnCheckComplete(bool bSuccess, bool bWasValidAffiliateName, const class FString& AffilateNameChecked)
 {
-	static auto Func = Class->GetFunction("AffiliateKeyModal_C", "OnCheckComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::UAffiliateKeyModal_C_OnCheckComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AffiliateKeyModal_C", "OnCheckComplete");
+
+	Params::UAffiliateKeyModal_C_OnCheckComplete_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 	Parms.bWasValidAffiliateName = bWasValidAffiliateName;
@@ -187,12 +235,14 @@ void UAffiliateKeyModal_C::OnCheckComplete(bool bSuccess, bool bWasValidAffiliat
 
 void UAffiliateKeyModal_C::OnFinish()
 {
-	static auto Func = Class->GetFunction("AffiliateKeyModal_C", "OnFinish");
+	static class UFunction* Func = nullptr;
 
-	Params::UAffiliateKeyModal_C_OnFinish_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AffiliateKeyModal_C", "OnFinish");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -204,9 +254,12 @@ void UAffiliateKeyModal_C::OnFinish()
 
 void UAffiliateKeyModal_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AffiliateKeyModal_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAffiliateKeyModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AffiliateKeyModal_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UAffiliateKeyModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -222,9 +275,12 @@ void UAffiliateKeyModal_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_
 
 void UAffiliateKeyModal_C::OnInputModeChanged(bool bUsingGamepad)
 {
-	static auto Func = Class->GetFunction("AffiliateKeyModal_C", "OnInputModeChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAffiliateKeyModal_C_OnInputModeChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AffiliateKeyModal_C", "OnInputModeChanged");
+
+	Params::UAffiliateKeyModal_C_OnInputModeChanged_Params Parms{};
 
 	Parms.bUsingGamepad = bUsingGamepad;
 
@@ -239,12 +295,14 @@ void UAffiliateKeyModal_C::OnInputModeChanged(bool bUsingGamepad)
 
 void UAffiliateKeyModal_C::Construct()
 {
-	static auto Func = Class->GetFunction("AffiliateKeyModal_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAffiliateKeyModal_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AffiliateKeyModal_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -271,52 +329,52 @@ void UAffiliateKeyModal_C::Construct()
 // class UFortMcpContext*             CallFunc_GetContext_ReturnValue_3                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetAffiliateName_ReturnValue_2                          (ConstParm, ZeroConstructor, HasGetValueTypeHash)
 // class UFortRuntimeOptions*         CallFunc_GetRuntimeOptions_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
-// class FText                        CallFunc_GetOverrideAffiliateDescriptionText_ReturnValue         ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
+// class FText                        CallFunc_GetOverrideAffiliateDescriptionText_ReturnValue         (None)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortRuntimeOptions*         CallFunc_GetRuntimeOptions_ReturnValue_2                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetOverrideAffiliateErrorText_ReturnValue               ()
+// class FText                        CallFunc_GetOverrideAffiliateErrorText_ReturnValue               (None)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor)
 // bool                               CallFunc_TextIsEmpty_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_1                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortMcpContext*             CallFunc_GetContext_ReturnValue_4                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetText_ReturnValue                                     ()
+// class FText                        CallFunc_GetText_ReturnValue                                     (None)
 // enum class ESlateVisibility        Temp_byte_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetText_ReturnValue_1                                   ()
+// class FText                        CallFunc_GetText_ReturnValue_1                                   (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Find_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortRuntimeOptions*         CallFunc_GetRuntimeOptions_ReturnValue_3                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
 // class UFortRuntimeOptions*         CallFunc_GetRuntimeOptions_ReturnValue_4                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // bool                               CallFunc_CanLaunchURL_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortRuntimeOptions*         CallFunc_GetRuntimeOptions_ReturnValue_5                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Len_ReturnValue                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetText_ReturnValue_2                                   ()
+// class FText                        CallFunc_GetText_ReturnValue_2                                   (None)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue_1                         (ZeroConstructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortRuntimeOptions*         CallFunc_GetRuntimeOptions_ReturnValue_6                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetText_ReturnValue_3                                   ()
+// class FText                        CallFunc_GetText_ReturnValue_3                                   (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue_2                         (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_StrStr_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetText_ReturnValue_4                                   ()
+// class FText                        CallFunc_GetText_ReturnValue_4                                   (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue_3                         (ZeroConstructor, HasGetValueTypeHash)
 // class UFortRuntimeOptions*         CallFunc_GetRuntimeOptions_ReturnValue_7                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_CustomEvent_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_CustomEvent_bWasValidAffiliateName                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                      K2Node_CustomEvent_AffilateNameChecked                           (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetText_ReturnValue_5                                   ()
+// class FText                        CallFunc_GetText_ReturnValue_5                                   (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue_4                         (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_StrStr_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetText_ReturnValue_6                                   ()
+// class FText                        CallFunc_GetText_ReturnValue_6                                   (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue_5                         (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_StrStr_ReturnValue_2                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -325,9 +383,12 @@ void UAffiliateKeyModal_C::Construct()
 
 void UAffiliateKeyModal_C::ExecuteUbergraph_AffiliateKeyModal(int32 EntryPoint, class UFortMcpContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_Variable, const class FString& CallFunc_GetAffiliateName_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UFortMcpContext* CallFunc_GetContext_ReturnValue_1, class UFortMcpContext* CallFunc_GetContext_ReturnValue_2, const class FString& CallFunc_GetAffiliateName_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, TArray<class FString>& CallFunc_GetValidAffiliateNames_ReturnValue, bool K2Node_CustomEvent_bSuccess_1, class UFortMcpContext* CallFunc_GetContext_ReturnValue_3, const class FString& CallFunc_GetAffiliateName_ReturnValue_2, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_1, class FText CallFunc_Conv_StringToText_ReturnValue, class FText CallFunc_GetOverrideAffiliateDescriptionText_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_2, class FText CallFunc_GetOverrideAffiliateErrorText_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_TextIsEmpty_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UFortMcpContext* CallFunc_GetContext_ReturnValue_4, class FText CallFunc_GetText_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_2, class FText CallFunc_GetText_ReturnValue_1, const class FString& CallFunc_Conv_TextToString_ReturnValue, int32 CallFunc_Array_Find_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_3, bool CallFunc_GreaterEqual_IntInt_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_1, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_4, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, bool CallFunc_CanLaunchURL_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_5, int32 CallFunc_Len_ReturnValue, class FText CallFunc_GetText_ReturnValue_2, bool CallFunc_Greater_IntInt_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_6, enum class ESlateVisibility Temp_byte_Variable_3, class FText CallFunc_GetText_ReturnValue_3, const class FString& CallFunc_Conv_TextToString_ReturnValue_2, bool CallFunc_EqualEqual_StrStr_ReturnValue, bool Temp_bool_Variable_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, enum class ESlateVisibility K2Node_Select_Default_1, class FText CallFunc_GetText_ReturnValue_4, const class FString& CallFunc_Conv_TextToString_ReturnValue_3, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_7, bool K2Node_CustomEvent_bSuccess, bool K2Node_CustomEvent_bWasValidAffiliateName, const class FString& K2Node_CustomEvent_AffilateNameChecked, class FText CallFunc_GetText_ReturnValue_5, const class FString& CallFunc_Conv_TextToString_ReturnValue_4, bool CallFunc_EqualEqual_StrStr_ReturnValue_1, class FText CallFunc_GetText_ReturnValue_6, const class FString& CallFunc_Conv_TextToString_ReturnValue_5, bool CallFunc_EqualEqual_StrStr_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool K2Node_Event_bUsingGamepad)
 {
-	static auto Func = Class->GetFunction("AffiliateKeyModal_C", "ExecuteUbergraph_AffiliateKeyModal");
+	static class UFunction* Func = nullptr;
 
-	Params::UAffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AffiliateKeyModal_C", "ExecuteUbergraph_AffiliateKeyModal");
+
+	Params::UAffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -411,12 +472,14 @@ void UAffiliateKeyModal_C::ExecuteUbergraph_AffiliateKeyModal(int32 EntryPoint, 
 
 void UAffiliateKeyModal_C::OnSuccess__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AffiliateKeyModal_C", "OnSuccess__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAffiliateKeyModal_C_OnSuccess__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AffiliateKeyModal_C", "OnSuccess__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -427,17 +490,17 @@ void UAffiliateKeyModal_C::OnSuccess__DelegateSignature()
 
 void UAffiliateKeyModal_C::OnPopupClosed__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AffiliateKeyModal_C", "OnPopupClosed__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAffiliateKeyModal_C_OnPopupClosed__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AffiliateKeyModal_C", "OnPopupClosed__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaCustomizationSlotButton.AthenaCustomizationSlotButton_C
+// (None)
+
+class UClass* UAthenaCustomizationSlotButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaCustomizationSlotButton_C");
+
+	return Clss;
+}
+
+
+// AthenaCustomizationSlotButton_C AthenaCustomizationSlotButton.Default__AthenaCustomizationSlotButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaCustomizationSlotButton_C* UAthenaCustomizationSlotButton_C::GetDefaultObj()
+{
+	static class UAthenaCustomizationSlotButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaCustomizationSlotButton_C*>(UAthenaCustomizationSlotButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AthenaCustomizationSlotButton.AthenaCustomizationSlotButton_C.GetSlotDebugName
@@ -26,9 +51,12 @@ namespace SDK
 
 class FString UAthenaCustomizationSlotButton_C::GetSlotDebugName(const class FString& CallFunc_Conv_IntToString_ReturnValue, const class FString& CallFunc_GetEnumeratorUserFriendlyName_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "GetSlotDebugName");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButton_C_GetSlotDebugName_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "GetSlotDebugName");
+
+	Params::UAthenaCustomizationSlotButton_C_GetSlotDebugName_Params Parms{};
 
 	Parms.CallFunc_Conv_IntToString_ReturnValue = CallFunc_Conv_IntToString_ReturnValue;
 	Parms.CallFunc_GetEnumeratorUserFriendlyName_ReturnValue = CallFunc_GetEnumeratorUserFriendlyName_ReturnValue;
@@ -61,9 +89,12 @@ class FString UAthenaCustomizationSlotButton_C::GetSlotDebugName(const class FSt
 
 void UAthenaCustomizationSlotButton_C::HandleActiveStateChanged(bool CosmeticAvailable, bool Active, class UMaterialInterface* Temp_object_Variable, class UMaterialInterface* Temp_object_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, bool CallFunc_BooleanAND_ReturnValue, class UMaterialInterface* K2Node_Select_Default, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_IsSlotFilled_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "HandleActiveStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButton_C_HandleActiveStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "HandleActiveStateChanged");
+
+	Params::UAthenaCustomizationSlotButton_C_HandleActiveStateChanged_Params Parms{};
 
 	Parms.CosmeticAvailable = CosmeticAvailable;
 	Parms.Active = Active;
@@ -106,7 +137,7 @@ void UAthenaCustomizationSlotButton_C::HandleActiveStateChanged(bool CosmeticAva
 // struct FVector2D                   Temp_struct_Variable_13                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortItemCardSize       Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector2D                   K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
+// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     (None)
 // struct FSlateBrush                 Temp_struct_Variable_14                                          (ConstParm)
 // struct FVector2D                   Temp_struct_Variable_15                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector2D                   Temp_struct_Variable_16                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -116,9 +147,12 @@ void UAthenaCustomizationSlotButton_C::HandleActiveStateChanged(bool CosmeticAva
 
 void UAthenaCustomizationSlotButton_C::SetCardSizeAndSlotImage(enum class EFortItemCardSize CardSize, const struct FSlateBrush& SlotImage, const struct FVector2D& Temp_struct_Variable, const struct FVector2D& Temp_struct_Variable_1, const struct FVector2D& Temp_struct_Variable_2, const struct FVector2D& Temp_struct_Variable_3, const struct FVector2D& Temp_struct_Variable_4, const struct FVector2D& Temp_struct_Variable_5, enum class EFortItemCardSize Temp_byte_Variable, const struct FVector2D& Temp_struct_Variable_6, const struct FVector2D& Temp_struct_Variable_7, const struct FVector2D& Temp_struct_Variable_8, const struct FVector2D& Temp_struct_Variable_9, const struct FVector2D& Temp_struct_Variable_10, const struct FVector2D& Temp_struct_Variable_11, const struct FVector2D& Temp_struct_Variable_12, const struct FVector2D& Temp_struct_Variable_13, enum class EFortItemCardSize Temp_byte_Variable_1, const struct FVector2D& K2Node_Select_Default, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, const struct FSlateBrush& Temp_struct_Variable_14, const struct FVector2D& Temp_struct_Variable_15, const struct FVector2D& Temp_struct_Variable_16, enum class EFortItemCardSize Temp_byte_Variable_2, const struct FVector2D& K2Node_Select_Default_1, const struct FSlateBrush& K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "SetCardSizeAndSlotImage");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButton_C_SetCardSizeAndSlotImage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "SetCardSizeAndSlotImage");
+
+	Params::UAthenaCustomizationSlotButton_C_SetCardSizeAndSlotImage_Params Parms{};
 
 	Parms.CardSize = CardSize;
 	Parms.SlotImage = SlotImage;
@@ -159,9 +193,12 @@ void UAthenaCustomizationSlotButton_C::SetCardSizeAndSlotImage(enum class EFortI
 
 void UAthenaCustomizationSlotButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "PreConstruct");
+
+	Params::UAthenaCustomizationSlotButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -176,12 +213,14 @@ void UAthenaCustomizationSlotButton_C::PreConstruct(bool IsDesignTime)
 
 void UAthenaCustomizationSlotButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -194,9 +233,12 @@ void UAthenaCustomizationSlotButton_C::Construct()
 
 void UAthenaCustomizationSlotButton_C::OnCustomizationSlotActiveStateChanged(bool bInAttachableCosmeticAvailable, bool bInActive)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "OnCustomizationSlotActiveStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButton_C_OnCustomizationSlotActiveStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "OnCustomizationSlotActiveStateChanged");
+
+	Params::UAthenaCustomizationSlotButton_C_OnCustomizationSlotActiveStateChanged_Params Parms{};
 
 	Parms.bInAttachableCosmeticAvailable = bInAttachableCosmeticAvailable;
 	Parms.bInActive = bInActive;
@@ -218,9 +260,12 @@ void UAthenaCustomizationSlotButton_C::OnCustomizationSlotActiveStateChanged(boo
 
 void UAthenaCustomizationSlotButton_C::ExecuteUbergraph_AthenaCustomizationSlotButton(int32 EntryPoint, bool CallFunc_GetCustomizationSlotActiveState_bOutAttachableCosmeticAvailable, bool CallFunc_GetCustomizationSlotActiveState_bOutActive, bool K2Node_Event_IsDesignTime, bool K2Node_Event_bInAttachableCosmeticAvailable, bool K2Node_Event_bInActive)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "ExecuteUbergraph_AthenaCustomizationSlotButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButton_C_ExecuteUbergraph_AthenaCustomizationSlotButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "ExecuteUbergraph_AthenaCustomizationSlotButton");
+
+	Params::UAthenaCustomizationSlotButton_C_ExecuteUbergraph_AthenaCustomizationSlotButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetCustomizationSlotActiveState_bOutAttachableCosmeticAvailable = CallFunc_GetCustomizationSlotActiveState_bOutAttachableCosmeticAvailable;
@@ -235,6 +280,4 @@ void UAthenaCustomizationSlotButton_C::ExecuteUbergraph_AthenaCustomizationSlotB
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

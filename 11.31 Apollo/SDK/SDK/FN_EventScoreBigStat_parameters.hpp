@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -27,14 +24,14 @@ public:
 	class FText                                  FormatterText;                                     // 0x20(0x18)(BlueprintVisible, BlueprintReadOnly, Parm)
 	struct FFortTournamentDisplayInfo            Tournament_Display_Info;                           // 0x38(0x170)(BlueprintVisible, BlueprintReadOnly, Parm)
 	bool                                         CallFunc_Greater_IntInt_ReturnValue;               // 0x1A8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5A10[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  CallFunc_Conv_IntToText_ReturnValue;               // 0x1B0(0x18)()
+	uint8                                        Pad_54D4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_Conv_IntToText_ReturnValue;               // 0x1B0(0x18)(None)
 	bool                                         CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x1C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5A11[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_54D5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x1D0(0x40)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x210(0x10)(ZeroConstructor, ReferenceParm)
-	class FText                                  CallFunc_Conv_IntToText_ReturnValue_1;             // 0x220(0x18)()
-	class FText                                  CallFunc_Format_ReturnValue;                       // 0x238(0x18)()
+	class FText                                  CallFunc_Conv_IntToText_ReturnValue_1;             // 0x220(0x18)(None)
+	class FText                                  CallFunc_Format_ReturnValue;                       // 0x238(0x18)(None)
 	enum class ESlateVisibility                  Temp_byte_Variable;                                // 0x250(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable_1;                              // 0x251(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable;                                // 0x252(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -44,6 +41,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

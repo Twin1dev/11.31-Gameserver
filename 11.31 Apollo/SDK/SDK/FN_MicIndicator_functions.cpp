@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass MicIndicator.MicIndicator_C
+// (None)
+
+class UClass* UMicIndicator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MicIndicator_C");
+
+	return Clss;
+}
+
+
+// MicIndicator_C MicIndicator.Default__MicIndicator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMicIndicator_C* UMicIndicator_C::GetDefaultObj()
+{
+	static class UMicIndicator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMicIndicator_C*>(UMicIndicator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MicIndicator.MicIndicator_C.OnPlayerTalkingChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UMicIndicator_C::OnPlayerTalkingChanged(bool bIsTalking)
 {
-	static auto Func = Class->GetFunction("MicIndicator_C", "OnPlayerTalkingChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UMicIndicator_C_OnPlayerTalkingChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MicIndicator_C", "OnPlayerTalkingChanged");
+
+	Params::UMicIndicator_C_OnPlayerTalkingChanged_Params Parms{};
 
 	Parms.bIsTalking = bIsTalking;
 
@@ -40,9 +68,12 @@ void UMicIndicator_C::OnPlayerTalkingChanged(bool bIsTalking)
 
 void UMicIndicator_C::OnPlayerMuted(bool bIsMuted)
 {
-	static auto Func = Class->GetFunction("MicIndicator_C", "OnPlayerMuted");
+	static class UFunction* Func = nullptr;
 
-	Params::UMicIndicator_C_OnPlayerMuted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MicIndicator_C", "OnPlayerMuted");
+
+	Params::UMicIndicator_C_OnPlayerMuted_Params Parms{};
 
 	Parms.bIsMuted = bIsMuted;
 
@@ -61,9 +92,12 @@ void UMicIndicator_C::OnPlayerMuted(bool bIsMuted)
 
 void UMicIndicator_C::ExecuteUbergraph_MicIndicator(int32 EntryPoint, int32 CallFunc_SelectInt_ReturnValue, bool K2Node_Event_bIsTalking, bool K2Node_Event_bIsMuted)
 {
-	static auto Func = Class->GetFunction("MicIndicator_C", "ExecuteUbergraph_MicIndicator");
+	static class UFunction* Func = nullptr;
 
-	Params::UMicIndicator_C_ExecuteUbergraph_MicIndicator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MicIndicator_C", "ExecuteUbergraph_MicIndicator");
+
+	Params::UMicIndicator_C_ExecuteUbergraph_MicIndicator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_SelectInt_ReturnValue = CallFunc_SelectInt_ReturnValue;
@@ -76,6 +110,4 @@ void UMicIndicator_C::ExecuteUbergraph_MicIndicator(int32 EntryPoint, int32 Call
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

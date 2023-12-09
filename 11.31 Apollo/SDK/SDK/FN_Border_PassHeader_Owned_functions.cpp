@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Border_PassHeader_Owned.Border_PassHeader_Owned_C
+// (None)
+
+class UClass* UBorder_PassHeader_Owned_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Border_PassHeader_Owned_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Border_PassHeader_Owned_C Border_PassHeader_Owned.Default__Border_PassHeader_Owned_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBorder_PassHeader_Owned_C* UBorder_PassHeader_Owned_C::GetDefaultObj()
+{
+	static class UBorder_PassHeader_Owned_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorder_PassHeader_Owned_C*>(UBorder_PassHeader_Owned_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

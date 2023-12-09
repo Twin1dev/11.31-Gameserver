@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass PerksList.PerksList_C
+// (None)
+
+class UClass* UPerksList_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PerksList_C");
+
+	return Clss;
+}
+
+
+// PerksList_C PerksList.Default__PerksList_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPerksList_C* UPerksList_C::GetDefaultObj()
+{
+	static class UPerksList_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPerksList_C*>(UPerksList_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PerksList.PerksList_C.ResetVariables
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UPerksList_C::ResetVariables()
 {
-	static auto Func = Class->GetFunction("PerksList_C", "ResetVariables");
+	static class UFunction* Func = nullptr;
 
-	Params::UPerksList_C_ResetVariables_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PerksList_C", "ResetVariables");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UPerksList_C::ResetVariables()
 
 void UPerksList_C::Construct()
 {
-	static auto Func = Class->GetFunction("PerksList_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPerksList_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PerksList_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,9 +84,12 @@ void UPerksList_C::Construct()
 
 void UPerksList_C::OnGeneratePerkTier(const struct FFortUIPerkTier& FortPerkTier, class UFortPerkTierWidget_NUI* PerkTierWidget)
 {
-	static auto Func = Class->GetFunction("PerksList_C", "OnGeneratePerkTier");
+	static class UFunction* Func = nullptr;
 
-	Params::UPerksList_C_OnGeneratePerkTier_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PerksList_C", "OnGeneratePerkTier");
+
+	Params::UPerksList_C_OnGeneratePerkTier_Params Parms{};
 
 	Parms.FortPerkTier = FortPerkTier;
 	Parms.PerkTierWidget = PerkTierWidget;
@@ -75,9 +107,12 @@ void UPerksList_C::OnGeneratePerkTier(const struct FFortUIPerkTier& FortPerkTier
 
 void UPerksList_C::OnGeneratePerk(const struct FFortUIPerk& FortPerk, class UFortPerkWidget_NUI* PerkWidget)
 {
-	static auto Func = Class->GetFunction("PerksList_C", "OnGeneratePerk");
+	static class UFunction* Func = nullptr;
 
-	Params::UPerksList_C_OnGeneratePerk_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PerksList_C", "OnGeneratePerk");
+
+	Params::UPerksList_C_OnGeneratePerk_Params Parms{};
 
 	Parms.FortPerk = FortPerk;
 	Parms.PerkWidget = PerkWidget;
@@ -93,12 +128,14 @@ void UPerksList_C::OnGeneratePerk(const struct FFortUIPerk& FortPerk, class UFor
 
 void UPerksList_C::OnHeroChanged()
 {
-	static auto Func = Class->GetFunction("PerksList_C", "OnHeroChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPerksList_C_OnHeroChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PerksList_C", "OnHeroChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -109,12 +146,14 @@ void UPerksList_C::OnHeroChanged()
 
 void UPerksList_C::OnStateChanged()
 {
-	static auto Func = Class->GetFunction("PerksList_C", "OnStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPerksList_C_OnStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PerksList_C", "OnStateChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -133,7 +172,7 @@ void UPerksList_C::OnStateChanged()
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortUIPerk                 K2Node_Event_FortPerk                                            ()
+// struct FFortUIPerk                 K2Node_Event_FortPerk                                            (None)
 // class UFortPerkWidget_NUI*         K2Node_Event_PerkWidget                                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPerkWidgetNew_C*            K2Node_DynamicCast_AsPerk_Widget_New                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -174,9 +213,12 @@ void UPerksList_C::OnStateChanged()
 
 void UPerksList_C::ExecuteUbergraph_PerksList(int32 EntryPoint, const struct FFortUIPerkTier& K2Node_Event_FortPerkTier, class UFortPerkTierWidget_NUI* K2Node_Event_PerkTierWidget, class UPerkTierWidgetNew_C* K2Node_DynamicCast_AsPerk_Tier_Widget_New, bool K2Node_DynamicCast_bSuccess, class UPanelSlot* CallFunc_AddChild_ReturnValue, bool Temp_bool_Variable, int32 Temp_int_Variable, enum class ESlateVisibility Temp_byte_Variable, bool CallFunc_Greater_IntInt_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, const struct FFortUIPerk& K2Node_Event_FortPerk, class UFortPerkWidget_NUI* K2Node_Event_PerkWidget, class UPerkWidgetNew_C* K2Node_DynamicCast_AsPerk_Widget_New, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsPerkUnlocked_ReturnValue, bool CallFunc_HasAnyChildren_ReturnValue, bool CallFunc_HasAnyChildren_ReturnValue_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, int32 CallFunc_Add_IntInt_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_3, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue, bool CallFunc_HasAnyChildren_ReturnValue_2, bool CallFunc_HasAnyChildren_ReturnValue_3, enum class ESlateVisibility K2Node_Select_Default, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility K2Node_Select_Default_1, enum class ESlateVisibility Temp_byte_Variable_5, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility K2Node_Select_Default_2, enum class ESlateVisibility Temp_byte_Variable_7, bool Temp_bool_Variable_4, enum class ESlateVisibility Temp_byte_Variable_8, enum class ESlateVisibility K2Node_Select_Default_3, enum class ESlateVisibility Temp_byte_Variable_9, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue_1, bool Temp_bool_Variable_5, enum class ESlateVisibility K2Node_Select_Default_4, enum class ESlateVisibility Temp_byte_Variable_10, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue_2, enum class ESlateVisibility Temp_byte_Variable_11, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue_3, enum class ESlateVisibility K2Node_Select_Default_5, class UPerkDivider_C* CallFunc_Create_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PerksList_C", "ExecuteUbergraph_PerksList");
+	static class UFunction* Func = nullptr;
 
-	Params::UPerksList_C_ExecuteUbergraph_PerksList_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PerksList_C", "ExecuteUbergraph_PerksList");
+
+	Params::UPerksList_C_ExecuteUbergraph_PerksList_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_FortPerkTier = K2Node_Event_FortPerkTier;
@@ -234,6 +276,4 @@ void UPerksList_C::ExecuteUbergraph_PerksList(int32 EntryPoint, const struct FFo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -21,15 +18,12 @@ public:
 	class ULobbyGadgetButton_C*                  Gadget1;                                           // 0x260(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ULobbyGadgetButton_C*                  Gadget2;                                           // 0x268(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                        PlayerIndex;                                       // 0x270(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66AE[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6D3E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	UMulticastInlineDelegateProperty_            OnGadgetsMouseEntered;                             // 0x278(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastInlineDelegateProperty_            OnGadgetsMouseLeft;                                // 0x288(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LobbyPlayerPadGadgets_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULobbyPlayerPadGadgets_C* GetDefaultObj();
 
 	void Initialize(int32 PlayerIndex);
 	void OnInputClicked(class UFortFrontEndContext* CallFunc_GetContext_ReturnValue);
@@ -44,6 +38,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

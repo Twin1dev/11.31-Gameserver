@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_StormMeshRotator.BP_StormMeshRotator_C
+// (Actor)
+
+class UClass* ABP_StormMeshRotator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_StormMeshRotator_C");
+
+	return Clss;
+}
+
+
+// BP_StormMeshRotator_C BP_StormMeshRotator.Default__BP_StormMeshRotator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_StormMeshRotator_C* ABP_StormMeshRotator_C::GetDefaultObj()
+{
+	static class ABP_StormMeshRotator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_StormMeshRotator_C*>(ABP_StormMeshRotator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_StormMeshRotator.BP_StormMeshRotator_C.UserConstructionScript
@@ -27,9 +52,12 @@ namespace SDK
 
 void ABP_StormMeshRotator_C::UserConstructionScript(class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1, class ABP_SafeZoneStorm_C* CallFunc_GetActorOfClass_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_2, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("BP_StormMeshRotator_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_StormMeshRotator_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_StormMeshRotator_C", "UserConstructionScript");
+
+	Params::ABP_StormMeshRotator_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue_1 = CallFunc_CreateDynamicMaterialInstance_ReturnValue_1;
@@ -49,12 +77,14 @@ void ABP_StormMeshRotator_C::UserConstructionScript(class UMaterialInstanceDynam
 
 void ABP_StormMeshRotator_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_StormMeshRotator_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_StormMeshRotator_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_StormMeshRotator_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -66,9 +96,12 @@ void ABP_StormMeshRotator_C::ReceiveBeginPlay()
 
 void ABP_StormMeshRotator_C::ExecuteUbergraph_BP_StormMeshRotator(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("BP_StormMeshRotator_C", "ExecuteUbergraph_BP_StormMeshRotator");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_StormMeshRotator_C_ExecuteUbergraph_BP_StormMeshRotator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_StormMeshRotator_C", "ExecuteUbergraph_BP_StormMeshRotator");
+
+	Params::ABP_StormMeshRotator_C_ExecuteUbergraph_BP_StormMeshRotator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -78,6 +111,4 @@ void ABP_StormMeshRotator_C::ExecuteUbergraph_BP_StormMeshRotator(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

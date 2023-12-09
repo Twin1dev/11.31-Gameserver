@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ItemNotification.ItemNotification_C
+// (None)
+
+class UClass* UItemNotification_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemNotification_C");
+
+	return Clss;
+}
+
+
+// ItemNotification_C ItemNotification.Default__ItemNotification_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemNotification_C* UItemNotification_C::GetDefaultObj()
+{
+	static class UItemNotification_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemNotification_C*>(UItemNotification_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ItemNotification.ItemNotification_C.HandleFade
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UItemNotification_C::HandleFade(class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemNotification_C", "HandleFade");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemNotification_C_HandleFade_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemNotification_C", "HandleFade");
+
+	Params::UItemNotification_C_HandleFade_Params Parms{};
 
 	Parms.CallFunc_PlayAnimationForward_ReturnValue = CallFunc_PlayAnimationForward_ReturnValue;
 
@@ -40,9 +68,12 @@ void UItemNotification_C::HandleFade(class UUMGSequencePlayer* CallFunc_PlayAnim
 
 void UItemNotification_C::HandleIntro(class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemNotification_C", "HandleIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemNotification_C_HandleIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemNotification_C", "HandleIntro");
+
+	Params::UItemNotification_C_HandleIntro_Params Parms{};
 
 	Parms.CallFunc_PlayAnimationForward_ReturnValue = CallFunc_PlayAnimationForward_ReturnValue;
 
@@ -58,9 +89,12 @@ void UItemNotification_C::HandleIntro(class UUMGSequencePlayer* CallFunc_PlayAni
 
 void UItemNotification_C::HandleInitialState(class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemNotification_C", "HandleInitialState");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemNotification_C_HandleInitialState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemNotification_C", "HandleInitialState");
+
+	Params::UItemNotification_C_HandleInitialState_Params Parms{};
 
 	Parms.CallFunc_PlayAnimationForward_ReturnValue = CallFunc_PlayAnimationForward_ReturnValue;
 
@@ -75,12 +109,14 @@ void UItemNotification_C::HandleInitialState(class UUMGSequencePlayer* CallFunc_
 
 void UItemNotification_C::OnNextItemDisplay()
 {
-	static auto Func = Class->GetFunction("ItemNotification_C", "OnNextItemDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemNotification_C_OnNextItemDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemNotification_C", "OnNextItemDisplay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -91,12 +127,14 @@ void UItemNotification_C::OnNextItemDisplay()
 
 void UItemNotification_C::OnCloseScreen()
 {
-	static auto Func = Class->GetFunction("ItemNotification_C", "OnCloseScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemNotification_C_OnCloseScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemNotification_C", "OnCloseScreen");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -107,12 +145,14 @@ void UItemNotification_C::OnCloseScreen()
 
 void UItemNotification_C::Construct()
 {
-	static auto Func = Class->GetFunction("ItemNotification_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemNotification_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemNotification_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -124,9 +164,12 @@ void UItemNotification_C::Construct()
 
 void UItemNotification_C::OnSetButtonText(bool bCanCloseWidget)
 {
-	static auto Func = Class->GetFunction("ItemNotification_C", "OnSetButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemNotification_C_OnSetButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemNotification_C", "OnSetButtonText");
+
+	Params::UItemNotification_C_OnSetButtonText_Params Parms{};
 
 	Parms.bCanCloseWidget = bCanCloseWidget;
 
@@ -150,9 +193,12 @@ void UItemNotification_C::OnSetButtonText(bool bCanCloseWidget)
 
 void UItemNotification_C::ExecuteUbergraph_ItemNotification(int32 EntryPoint, class USoloButton_C* K2Node_DynamicCast_AsSolo_Button, bool K2Node_DynamicCast_bSuccess, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_4, bool K2Node_Event_bCanCloseWidget)
 {
-	static auto Func = Class->GetFunction("ItemNotification_C", "ExecuteUbergraph_ItemNotification");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemNotification_C_ExecuteUbergraph_ItemNotification_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemNotification_C", "ExecuteUbergraph_ItemNotification");
+
+	Params::UItemNotification_C_ExecuteUbergraph_ItemNotification_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_DynamicCast_AsSolo_Button = K2Node_DynamicCast_AsSolo_Button;
@@ -170,6 +216,4 @@ void UItemNotification_C::ExecuteUbergraph_ItemNotification(int32 EntryPoint, cl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

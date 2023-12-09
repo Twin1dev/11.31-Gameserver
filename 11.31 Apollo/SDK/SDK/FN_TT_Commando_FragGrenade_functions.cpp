@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TT_Commando_FragGrenade.TT_Commando_FragGrenade_C
+// (None)
+
+class UClass* UTT_Commando_FragGrenade_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TT_Commando_FragGrenade_C");
+
+	return Clss;
+}
+
+
+// TT_Commando_FragGrenade_C TT_Commando_FragGrenade.Default__TT_Commando_FragGrenade_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTT_Commando_FragGrenade_C* UTT_Commando_FragGrenade_C::GetDefaultObj()
+{
+	static class UTT_Commando_FragGrenade_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTT_Commando_FragGrenade_C*>(UTT_Commando_FragGrenade_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function TT_Commando_FragGrenade.TT_Commando_FragGrenade_C.GetApplicationTag
@@ -26,9 +51,12 @@ namespace SDK
 
 bool UTT_Commando_FragGrenade_C::GetApplicationTag(class UGameplayAbility* AbilityInstance, struct FGameplayTag* OutTag, class UGA_Commando_FragGrenade_WithTrajectory_C* K2Node_DynamicCast_AsGA_Commando_Frag_Grenade_with_Trajectory, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("TT_Commando_FragGrenade_C", "GetApplicationTag");
+	static class UFunction* Func = nullptr;
 
-	Params::UTT_Commando_FragGrenade_C_GetApplicationTag_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TT_Commando_FragGrenade_C", "GetApplicationTag");
+
+	Params::UTT_Commando_FragGrenade_C_GetApplicationTag_Params Parms{};
 
 	Parms.AbilityInstance = AbilityInstance;
 	Parms.K2Node_DynamicCast_AsGA_Commando_Frag_Grenade_with_Trajectory = K2Node_DynamicCast_AsGA_Commando_Frag_Grenade_with_Trajectory;
@@ -37,7 +65,7 @@ bool UTT_Commando_FragGrenade_C::GetApplicationTag(class UGameplayAbility* Abili
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (OutTag != nullptr)
-		*OutTag = Parms.OutTag;
+		*OutTag = std::move(Parms.OutTag);
 
 	return Parms.ReturnValue;
 
@@ -61,13 +89,16 @@ bool UTT_Commando_FragGrenade_C::GetApplicationTag(class UGameplayAbility* Abili
 // float                              CallFunc_Divide_FloatFloat_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 bool UTT_Commando_FragGrenade_C::GetTextForTokenFromAbilityInstanceInternal(class UGameplayAbility* AbilityInstance, struct FGameplayTag& Tag, class UFortTooltipContext* Context, struct FGameplayTag& Token, class FText* OutText, bool GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess, class UGA_Commando_FragGrenade_WithTrajectory_C* K2Node_DynamicCast_AsGA_Commando_Frag_Grenade_with_Trajectory, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TT_Commando_FragGrenade_C", "GetTextForTokenFromAbilityInstanceInternal");
+	static class UFunction* Func = nullptr;
 
-	Params::UTT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TT_Commando_FragGrenade_C", "GetTextForTokenFromAbilityInstanceInternal");
+
+	Params::UTT_Commando_FragGrenade_C_GetTextForTokenFromAbilityInstanceInternal_Params Parms{};
 
 	Parms.AbilityInstance = AbilityInstance;
 	Parms.Tag = Tag;
@@ -103,9 +134,12 @@ bool UTT_Commando_FragGrenade_C::GetTextForTokenFromAbilityInstanceInternal(clas
 
 void UTT_Commando_FragGrenade_C::InitializeAbilityInstanceInternal(class UGameplayAbility* AbilityInstance, class UFortTooltipContext* Context, class UGA_Commando_FragGrenade_WithTrajectory_C* K2Node_DynamicCast_AsGA_Commando_Frag_Grenade_with_Trajectory, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("TT_Commando_FragGrenade_C", "InitializeAbilityInstanceInternal");
+	static class UFunction* Func = nullptr;
 
-	Params::UTT_Commando_FragGrenade_C_InitializeAbilityInstanceInternal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TT_Commando_FragGrenade_C", "InitializeAbilityInstanceInternal");
+
+	Params::UTT_Commando_FragGrenade_C_InitializeAbilityInstanceInternal_Params Parms{};
 
 	Parms.AbilityInstance = AbilityInstance;
 	Parms.Context = Context;
@@ -118,6 +152,4 @@ void UTT_Commando_FragGrenade_C::InitializeAbilityInstanceInternal(class UGamepl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass VehicleDNBOAnimLayerInterface.VehicleDNBOAnimLayerInterface_C
+// (None)
+
+class UClass* IVehicleDNBOAnimLayerInterface_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VehicleDNBOAnimLayerInterface_C");
+
+	return Clss;
+}
+
+
+// VehicleDNBOAnimLayerInterface_C VehicleDNBOAnimLayerInterface.Default__VehicleDNBOAnimLayerInterface_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class IVehicleDNBOAnimLayerInterface_C* IVehicleDNBOAnimLayerInterface_C::GetDefaultObj()
+{
+	static class IVehicleDNBOAnimLayerInterface_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<IVehicleDNBOAnimLayerInterface_C*>(IVehicleDNBOAnimLayerInterface_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function VehicleDNBOAnimLayerInterface.VehicleDNBOAnimLayerInterface_C.VehicleDBNOJoggingOverride
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void IVehicleDNBOAnimLayerInterface_C::VehicleDBNOJoggingOverride(struct FPoseLink* VehicleDBNOJoggingOverride)
 {
-	static auto Func = Class->GetFunction("VehicleDNBOAnimLayerInterface_C", "VehicleDBNOJoggingOverride");
+	static class UFunction* Func = nullptr;
 
-	Params::IVehicleDNBOAnimLayerInterface_C_VehicleDBNOJoggingOverride_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VehicleDNBOAnimLayerInterface_C", "VehicleDBNOJoggingOverride");
+
+	Params::IVehicleDNBOAnimLayerInterface_C_VehicleDBNOJoggingOverride_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (VehicleDBNOJoggingOverride != nullptr)
-		*VehicleDBNOJoggingOverride = Parms.VehicleDBNOJoggingOverride;
+		*VehicleDBNOJoggingOverride = std::move(Parms.VehicleDBNOJoggingOverride);
 
 }
 
@@ -43,21 +71,22 @@ void IVehicleDNBOAnimLayerInterface_C::VehicleDBNOJoggingOverride(struct FPoseLi
 
 void IVehicleDNBOAnimLayerInterface_C::VehicleDBNOCarriedLeansOverride(const struct FPoseLink& InPoseDBNOCarried, struct FPoseLink* VehicleDBNOCarriedLeansOverride)
 {
-	static auto Func = Class->GetFunction("VehicleDNBOAnimLayerInterface_C", "VehicleDBNOCarriedLeansOverride");
+	static class UFunction* Func = nullptr;
 
-	Params::IVehicleDNBOAnimLayerInterface_C_VehicleDBNOCarriedLeansOverride_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VehicleDNBOAnimLayerInterface_C", "VehicleDBNOCarriedLeansOverride");
+
+	Params::IVehicleDNBOAnimLayerInterface_C_VehicleDBNOCarriedLeansOverride_Params Parms{};
 
 	Parms.InPoseDBNOCarried = InPoseDBNOCarried;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (VehicleDBNOCarriedLeansOverride != nullptr)
-		*VehicleDBNOCarriedLeansOverride = Parms.VehicleDBNOCarriedLeansOverride;
+		*VehicleDBNOCarriedLeansOverride = std::move(Parms.VehicleDBNOCarriedLeansOverride);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

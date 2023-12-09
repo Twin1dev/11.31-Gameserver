@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaStatsTab.AthenaStatsTab_C
+// (None)
+
+class UClass* UAthenaStatsTab_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaStatsTab_C");
+
+	return Clss;
+}
+
+
+// AthenaStatsTab_C AthenaStatsTab.Default__AthenaStatsTab_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaStatsTab_C* UAthenaStatsTab_C::GetDefaultObj()
+{
+	static class UAthenaStatsTab_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaStatsTab_C*>(UAthenaStatsTab_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaStatsTab.AthenaStatsTab_C.GetFriendMatchXpBoostText
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -22,16 +47,19 @@ namespace SDK
 // class UFortMcpContext*             CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortMcpProfileAthena*       CallFunc_GetAthenaProfile_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetSeasonFriendMatchXpBoost_ReturnValue                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 void UAthenaStatsTab_C::GetFriendMatchXpBoostText(class FText* Result, class UFortMcpContext* CallFunc_GetContext_ReturnValue, class UFortMcpProfileAthena* CallFunc_GetAthenaProfile_ReturnValue, int32 CallFunc_GetSeasonFriendMatchXpBoost_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaStatsTab_C", "GetFriendMatchXpBoostText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsTab_C_GetFriendMatchXpBoostText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsTab_C", "GetFriendMatchXpBoostText");
+
+	Params::UAthenaStatsTab_C_GetFriendMatchXpBoostText_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetAthenaProfile_ReturnValue = CallFunc_GetAthenaProfile_ReturnValue;
@@ -55,13 +83,16 @@ void UAthenaStatsTab_C::GetFriendMatchXpBoostText(class FText* Result, class UFo
 // class FText                        ReturnValue                                                      (Parm, OutParm, ReturnParm)
 // class UFortMcpContext*             CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortPublicAccountInfo      CallFunc_GetCurrentlyViewedAccountInfo_Result                    (NoDestructor)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 
 class FText UAthenaStatsTab_C::GetAccountLevelText(class UFortMcpContext* CallFunc_GetContext_ReturnValue, const struct FFortPublicAccountInfo& CallFunc_GetCurrentlyViewedAccountInfo_Result, class FText CallFunc_Conv_IntToText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaStatsTab_C", "GetAccountLevelText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsTab_C_GetAccountLevelText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsTab_C", "GetAccountLevelText");
+
+	Params::UAthenaStatsTab_C_GetAccountLevelText_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetCurrentlyViewedAccountInfo_Result = CallFunc_GetCurrentlyViewedAccountInfo_Result;
@@ -85,9 +116,12 @@ class FText UAthenaStatsTab_C::GetAccountLevelText(class UFortMcpContext* CallFu
 
 void UAthenaStatsTab_C::Init_Back_Action(bool CallFunc_HasInputActionHandler_ReturnValue, class UCommonInputSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("AthenaStatsTab_C", "Init Back Action");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsTab_C_Init_Back_Action_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsTab_C", "Init Back Action");
+
+	Params::UAthenaStatsTab_C_Init_Back_Action_Params Parms{};
 
 	Parms.CallFunc_HasInputActionHandler_ReturnValue = CallFunc_HasInputActionHandler_ReturnValue;
 	Parms.CallFunc_GetLocalPlayerSubsystem_ReturnValue = CallFunc_GetLocalPlayerSubsystem_ReturnValue;
@@ -107,9 +141,12 @@ void UAthenaStatsTab_C::Init_Back_Action(bool CallFunc_HasInputActionHandler_Ret
 
 void UAthenaStatsTab_C::HandleBack(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("AthenaStatsTab_C", "HandleBack");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsTab_C_HandleBack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsTab_C", "HandleBack");
+
+	Params::UAthenaStatsTab_C_HandleBack_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -126,12 +163,14 @@ void UAthenaStatsTab_C::HandleBack(bool* PassThrough)
 
 void UAthenaStatsTab_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("AthenaStatsTab_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsTab_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsTab_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -144,9 +183,12 @@ void UAthenaStatsTab_C::BP_OnActivated()
 
 void UAthenaStatsTab_C::OnQueryFinished(bool bWasSuccessful, bool bHasStatsToDisplay)
 {
-	static auto Func = Class->GetFunction("AthenaStatsTab_C", "OnQueryFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsTab_C_OnQueryFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsTab_C", "OnQueryFinished");
+
+	Params::UAthenaStatsTab_C_OnQueryFinished_Params Parms{};
 
 	Parms.bWasSuccessful = bWasSuccessful;
 	Parms.bHasStatsToDisplay = bHasStatsToDisplay;
@@ -163,9 +205,12 @@ void UAthenaStatsTab_C::OnQueryFinished(bool bWasSuccessful, bool bHasStatsToDis
 
 void UAthenaStatsTab_C::BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature(class FName TabId)
 {
-	static auto Func = Class->GetFunction("AthenaStatsTab_C", "BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsTab_C_BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsTab_C", "BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature");
+
+	Params::UAthenaStatsTab_C_BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature_Params Parms{};
 
 	Parms.TabId = TabId;
 
@@ -180,12 +225,14 @@ void UAthenaStatsTab_C::BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabS
 
 void UAthenaStatsTab_C::OnQueryStarted()
 {
-	static auto Func = Class->GetFunction("AthenaStatsTab_C", "OnQueryStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsTab_C_OnQueryStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsTab_C", "OnQueryStarted");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -196,12 +243,14 @@ void UAthenaStatsTab_C::OnQueryStarted()
 
 void UAthenaStatsTab_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaStatsTab_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsTab_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsTab_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -213,9 +262,12 @@ void UAthenaStatsTab_C::Construct()
 
 void UAthenaStatsTab_C::OnInputMethodChanged_Event_0(enum class ECommonInputType bNewInputType)
 {
-	static auto Func = Class->GetFunction("AthenaStatsTab_C", "OnInputMethodChanged_Event_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsTab_C_OnInputMethodChanged_Event_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsTab_C", "OnInputMethodChanged_Event_0");
+
+	Params::UAthenaStatsTab_C_OnInputMethodChanged_Event_0_Params Parms{};
 
 	Parms.bNewInputType = bNewInputType;
 
@@ -231,9 +283,12 @@ void UAthenaStatsTab_C::OnInputMethodChanged_Event_0(enum class ECommonInputType
 
 void UAthenaStatsTab_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaStatsTab_C", "BndEvt__IconTextButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsTab_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsTab_C", "BndEvt__IconTextButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaStatsTab_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -249,9 +304,12 @@ void UAthenaStatsTab_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_3_Comm
 
 void UAthenaStatsTab_C::SetPlatformButtonText(class FText& PlatformButtonText)
 {
-	static auto Func = Class->GetFunction("AthenaStatsTab_C", "SetPlatformButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsTab_C_SetPlatformButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsTab_C", "SetPlatformButtonText");
+
+	Params::UAthenaStatsTab_C_SetPlatformButtonText_Params Parms{};
 
 	Parms.PlatformButtonText = PlatformButtonText;
 
@@ -267,9 +325,12 @@ void UAthenaStatsTab_C::SetPlatformButtonText(class FText& PlatformButtonText)
 
 void UAthenaStatsTab_C::BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaStatsTab_C", "BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsTab_C_BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsTab_C", "BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaStatsTab_C_BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -285,9 +346,12 @@ void UAthenaStatsTab_C::BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_4_
 
 void UAthenaStatsTab_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaStatsTab_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsTab_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsTab_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaStatsTab_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -332,11 +396,11 @@ void UAthenaStatsTab_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_C
 // class UFortMcpProfileAthena*       CallFunc_GetAthenaProfile_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsMobileGame_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_GetSeasonMatchXpBoost_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // enum class ESlateVisibility        K2Node_Select_Default_2                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // enum class ECommonInputType        K2Node_CustomEvent_bNewInputType                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_2                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_2                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -346,17 +410,20 @@ void UAthenaStatsTab_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_C
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_1                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortRuntimeOptions*         CallFunc_GetRuntimeOptions_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetAccountLevelText_ReturnValue                         ()
+// class FText                        CallFunc_GetAccountLevelText_ReturnValue                         (None)
 // enum class ESlateVisibility        K2Node_Select_Default_3                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetFriendMatchXpBoostText_Result                        ()
+// class FText                        CallFunc_GetFriendMatchXpBoostText_Result                        (None)
 // class UAthenaAccountContext*       CallFunc_GetContext_ReturnValue_3                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetCurrentSeasonNumberAsText_ReturnValue                ()
+// class FText                        CallFunc_GetCurrentSeasonNumberAsText_ReturnValue                (None)
 
 void UAthenaStatsTab_C::ExecuteUbergraph_AthenaStatsTab(int32 EntryPoint, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility Temp_byte_Variable_4, class UCommonInputSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue, bool Temp_bool_Variable_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class ESlateVisibility Temp_byte_Variable_5, enum class ESlateVisibility Temp_byte_Variable_6, bool K2Node_Event_bWasSuccessful, bool K2Node_Event_bHasStatsToDisplay, bool CallFunc_Not_PreBool_ReturnValue, class FName K2Node_ComponentBoundEvent_TabId, int32 CallFunc_Conv_BoolToInt_ReturnValue, bool CallFunc_IsActivated_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_7, bool Temp_bool_Variable_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UFortLeaderboardContext* CallFunc_GetContext_ReturnValue_1, bool CallFunc_CanShowStats_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, class UFortMcpContext* CallFunc_GetContext_ReturnValue_2, bool CallFunc_HandleBack_PassThrough, class UFortMcpProfileAthena* CallFunc_GetAthenaProfile_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue, int32 CallFunc_GetSeasonMatchXpBoost_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, enum class ECommonInputType K2Node_CustomEvent_bNewInputType, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class FText K2Node_Event_PlatformButtonText, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, class FText CallFunc_GetAccountLevelText_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_3, class FText CallFunc_GetFriendMatchXpBoostText_Result, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue_3, class FText CallFunc_GetCurrentSeasonNumberAsText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaStatsTab_C", "ExecuteUbergraph_AthenaStatsTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsTab_C_ExecuteUbergraph_AthenaStatsTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsTab_C", "ExecuteUbergraph_AthenaStatsTab");
+
+	Params::UAthenaStatsTab_C_ExecuteUbergraph_AthenaStatsTab_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -417,6 +484,4 @@ void UAthenaStatsTab_C::ExecuteUbergraph_AthenaStatsTab(int32 EntryPoint, class 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

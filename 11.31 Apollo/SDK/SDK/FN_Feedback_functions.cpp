@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass Feedback.Feedback_C
+// (None)
+
+class UClass* UFeedback_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Feedback_C");
+
+	return Clss;
+}
+
+
+// Feedback_C Feedback.Default__Feedback_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UFeedback_C* UFeedback_C::GetDefaultObj()
+{
+	static class UFeedback_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFeedback_C*>(UFeedback_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Feedback.Feedback_C.UpdateSendButtonEnabled
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UFeedback_C::UpdateSendButtonEnabled(bool CallFunc_CanSendFeedback_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Feedback_C", "UpdateSendButtonEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_UpdateSendButtonEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "UpdateSendButtonEnabled");
+
+	Params::UFeedback_C_UpdateSendButtonEnabled_Params Parms{};
 
 	Parms.CallFunc_CanSendFeedback_ReturnValue = CallFunc_CanSendFeedback_ReturnValue;
 
@@ -39,13 +67,16 @@ void UFeedback_C::UpdateSendButtonEnabled(bool CallFunc_CanSendFeedback_ReturnVa
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FPointerEvent               MouseEvent                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 
 struct FEventReply UFeedback_C::TouchToClose(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Handled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Feedback_C", "TouchToClose");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_TouchToClose_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "TouchToClose");
+
+	Params::UFeedback_C_TouchToClose_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -64,12 +95,14 @@ struct FEventReply UFeedback_C::TouchToClose(const struct FGeometry& MyGeometry,
 
 void UFeedback_C::InitializeFeedback()
 {
-	static auto Func = Class->GetFunction("Feedback_C", "InitializeFeedback");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_InitializeFeedback_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "InitializeFeedback");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -78,23 +111,26 @@ void UFeedback_C::InitializeFeedback()
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetText_ReturnValue                                     ()
-// class FText                        CallFunc_GetText_ReturnValue_1                                   ()
+// class FText                        CallFunc_GetText_ReturnValue                                     (None)
+// class FText                        CallFunc_GetText_ReturnValue_1                                   (None)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_TextIsEmpty_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetText_ReturnValue_2                                   ()
+// class FText                        CallFunc_GetText_ReturnValue_2                                   (None)
 // bool                               CallFunc_TextIsEmpty_ReturnValue_2                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue_2                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 bool UFeedback_C::CanSendFeedback(class FText CallFunc_GetText_ReturnValue, class FText CallFunc_GetText_ReturnValue_1, bool CallFunc_TextIsEmpty_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, class FText CallFunc_GetText_ReturnValue_2, bool CallFunc_TextIsEmpty_ReturnValue_2, bool CallFunc_Not_PreBool_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Feedback_C", "CanSendFeedback");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_CanSendFeedback_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "CanSendFeedback");
+
+	Params::UFeedback_C_CanSendFeedback_Params Parms{};
 
 	Parms.CallFunc_GetText_ReturnValue = CallFunc_GetText_ReturnValue;
 	Parms.CallFunc_GetText_ReturnValue_1 = CallFunc_GetText_ReturnValue_1;
@@ -121,12 +157,14 @@ bool UFeedback_C::CanSendFeedback(class FText CallFunc_GetText_ReturnValue, clas
 
 void UFeedback_C::AddButtonFeedbackTypes()
 {
-	static auto Func = Class->GetFunction("Feedback_C", "AddButtonFeedbackTypes");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_AddButtonFeedbackTypes_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "AddButtonFeedbackTypes");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -139,9 +177,12 @@ void UFeedback_C::AddButtonFeedbackTypes()
 
 void UFeedback_C::BindDelegates(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1)
 {
-	static auto Func = Class->GetFunction("Feedback_C", "BindDelegates");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_BindDelegates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "BindDelegates");
+
+	Params::UFeedback_C_BindDelegates_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
@@ -157,12 +198,14 @@ void UFeedback_C::BindDelegates(UDelegateProperty_ K2Node_CreateDelegate_OutputD
 
 void UFeedback_C::Construct()
 {
-	static auto Func = Class->GetFunction("Feedback_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -173,12 +216,14 @@ void UFeedback_C::Construct()
 
 void UFeedback_C::OnInitiateDebugInfoForFeedbackComplete()
 {
-	static auto Func = Class->GetFunction("Feedback_C", "OnInitiateDebugInfoForFeedbackComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_OnInitiateDebugInfoForFeedbackComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "OnInitiateDebugInfoForFeedbackComplete");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -189,12 +234,14 @@ void UFeedback_C::OnInitiateDebugInfoForFeedbackComplete()
 
 void UFeedback_C::OnBeginIntro()
 {
-	static auto Func = Class->GetFunction("Feedback_C", "OnBeginIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_OnBeginIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "OnBeginIntro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -206,9 +253,12 @@ void UFeedback_C::OnBeginIntro()
 
 void UFeedback_C::BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("Feedback_C", "BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UFeedback_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -224,9 +274,12 @@ void UFeedback_C::BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButton
 
 void UFeedback_C::HandleTextChanged(class FText& Text)
 {
-	static auto Func = Class->GetFunction("Feedback_C", "HandleTextChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_HandleTextChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "HandleTextChanged");
+
+	Params::UFeedback_C_HandleTextChanged_Params Parms{};
 
 	Parms.Text = Text;
 
@@ -242,9 +295,12 @@ void UFeedback_C::HandleTextChanged(class FText& Text)
 
 void UFeedback_C::OnFeedbackTypeChanged(enum class EFortUIGameFeedbackType FeedBackType)
 {
-	static auto Func = Class->GetFunction("Feedback_C", "OnFeedbackTypeChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_OnFeedbackTypeChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "OnFeedbackTypeChanged");
+
+	Params::UFeedback_C_OnFeedbackTypeChanged_Params Parms{};
 
 	Parms.FeedBackType = FeedBackType;
 
@@ -260,9 +316,12 @@ void UFeedback_C::OnFeedbackTypeChanged(enum class EFortUIGameFeedbackType FeedB
 
 void UFeedback_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("Feedback_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UFeedback_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -278,9 +337,12 @@ void UFeedback_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonB
 
 void UFeedback_C::BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("Feedback_C", "BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UFeedback_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -296,9 +358,12 @@ void UFeedback_C::BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonCl
 
 void UFeedback_C::BndEvt__SubmitSignIn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("Feedback_C", "BndEvt__SubmitSignIn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_BndEvt__SubmitSignIn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "BndEvt__SubmitSignIn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+
+	Params::UFeedback_C_BndEvt__SubmitSignIn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -314,9 +379,12 @@ void UFeedback_C::BndEvt__SubmitSignIn_K2Node_ComponentBoundEvent_5_CommonButton
 
 void UFeedback_C::BndEvt__CancelSignIn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("Feedback_C", "BndEvt__CancelSignIn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_BndEvt__CancelSignIn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "BndEvt__CancelSignIn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+
+	Params::UFeedback_C_BndEvt__CancelSignIn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -332,9 +400,12 @@ void UFeedback_C::BndEvt__CancelSignIn_K2Node_ComponentBoundEvent_4_CommonButton
 
 void UFeedback_C::BndEvt__SubmitBug_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("Feedback_C", "BndEvt__SubmitBug_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_BndEvt__SubmitBug_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "BndEvt__SubmitBug_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+
+	Params::UFeedback_C_BndEvt__SubmitBug_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -350,9 +421,12 @@ void UFeedback_C::BndEvt__SubmitBug_K2Node_ComponentBoundEvent_3_CommonButtonCli
 
 void UFeedback_C::BndEvt__CancelBug_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("Feedback_C", "BndEvt__CancelBug_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_BndEvt__CancelBug_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "BndEvt__CancelBug_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+
+	Params::UFeedback_C_BndEvt__CancelBug_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -367,12 +441,14 @@ void UFeedback_C::BndEvt__CancelBug_K2Node_ComponentBoundEvent_6_CommonButtonCli
 
 void UFeedback_C::OnBuildBugComponentListComplete()
 {
-	static auto Func = Class->GetFunction("Feedback_C", "OnBuildBugComponentListComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_OnBuildBugComponentListComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "OnBuildBugComponentListComplete");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -400,9 +476,12 @@ void UFeedback_C::OnBuildBugComponentListComplete()
 
 void UFeedback_C::ExecuteUbergraph_Feedback(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_6, class FText K2Node_CustomEvent_Text, enum class EFortUIGameFeedbackType K2Node_Event_FeedbackType, bool CallFunc_IsMobileGame_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, class UCommonButton* K2Node_ComponentBoundEvent_Button_5, class UCommonButton* K2Node_ComponentBoundEvent_Button_4, bool CallFunc_CanSendFeedback_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button)
 {
-	static auto Func = Class->GetFunction("Feedback_C", "ExecuteUbergraph_Feedback");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeedback_C_ExecuteUbergraph_Feedback_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Feedback_C", "ExecuteUbergraph_Feedback");
+
+	Params::UFeedback_C_ExecuteUbergraph_Feedback_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -428,6 +507,4 @@ void UFeedback_C::ExecuteUbergraph_Feedback(int32 EntryPoint, bool Temp_bool_Var
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

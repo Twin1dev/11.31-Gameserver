@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -70,7 +67,7 @@ public:
 	class ULiveLinkSubjectSettings*              Settings;                                          // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ULiveLinkVirtualSubject*               VirtualSubject;                                    // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnabled;                                          // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_193F[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_4C7[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -78,7 +75,7 @@ public:
 struct FLiveLinkSourceHandle
 {
 public:
-	uint8                                        Pad_1940[0x18];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_4C8[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -86,7 +83,7 @@ public:
 struct FLiveLinkBaseBlueprintData
 {
 public:
-	uint8                                        Pad_1941[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_4CB[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x18 - 0x8)
@@ -94,7 +91,7 @@ public:
 struct FSubjectFrameHandle : public FLiveLinkBaseBlueprintData
 {
 public:
-	uint8                                        Pad_1942[0x10];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_4CC[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -102,7 +99,7 @@ public:
 struct FLiveLinkTransform
 {
 public:
-	uint8                                        Pad_1943[0x20];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_4CD[0x20];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x140 (0x140 - 0x0)
@@ -110,7 +107,7 @@ public:
 struct FCachedSubjectFrame
 {
 public:
-	uint8                                        Pad_1944[0x140];                                   // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_4CE[0x140];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x70 (0x70 - 0x0)
@@ -121,7 +118,7 @@ public:
 	TMap<class FName, class FString>             StringMetadata;                                    // 0x0(0x50)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FTimecode                             SceneTimecode;                                     // 0x50(0x14)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FFrameRate                            SceneFramerate;                                    // 0x64(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1945[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_4CF[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -206,7 +203,7 @@ public:
 	float                                        FilmBackHeight;                                    // 0x18(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsApertureSupported;                              // 0x1C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsFocusDistanceSupported;                         // 0x1D(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1946[0x2];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_4D5[0x2];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0xB0 - 0x80)
@@ -228,7 +225,7 @@ public:
 	float                                        Aperture;                                          // 0xBC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        FocusDistance;                                     // 0xC0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ELiveLinkCameraProjectionMode     ProjectionMode;                                    // 0xC4(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1947[0xB];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_4D7[0xB];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xF8 (0x100 - 0x8)
@@ -237,7 +234,7 @@ struct FLiveLinkCameraBlueprintData : public FLiveLinkBaseBlueprintData
 {
 public:
 	struct FLiveLinkCameraStaticData             StaticData;                                        // 0x8(0x20)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1948[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4DA[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLiveLinkCameraFrameData              FrameData;                                         // 0x30(0xD0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
 
@@ -263,7 +260,7 @@ public:
 	bool                                         bIsSourceLenghtSupported;                          // 0x16(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsSourceRadiusSupported;                          // 0x17(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsSoftSourceRadiusSupported;                      // 0x18(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1949[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_4DF[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0xE0 - 0xB0)
@@ -280,7 +277,7 @@ public:
 	float                                        SourceRadius;                                      // 0xC8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        SoftSourceRadius;                                  // 0xCC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        SourceLength;                                      // 0xD0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_194A[0xC];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_4E6[0xC];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x108 (0x110 - 0x8)
@@ -289,7 +286,7 @@ struct FLiveLinkLightBlueprintData : public FLiveLinkBaseBlueprintData
 {
 public:
 	struct FLiveLinkLightStaticData              StaticData;                                        // 0x8(0x20)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                        Pad_194B[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4EC[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLiveLinkLightFrameData               FrameData;                                         // 0x30(0xE0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
 
@@ -343,7 +340,7 @@ struct FLiveLinkTransformBlueprintData : public FLiveLinkBaseBlueprintData
 {
 public:
 	struct FLiveLinkTransformStaticData          StaticData;                                        // 0x8(0x10)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                        Pad_194C[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4EF[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLiveLinkTransformFrameData           FrameData;                                         // 0x20(0xB0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
 
@@ -393,6 +390,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

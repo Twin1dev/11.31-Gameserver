@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -22,20 +19,6 @@ struct USK_M_Med_Soldier_04_Skeleton_AnimBP_C_AnimGraph_Params
 {
 public:
 	struct FPoseLink                             AnimGraph;                                         // 0x0(0x10)(Parm, OutParm, NoDestructor)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function SK_M_Med_Soldier_04_Skeleton_AnimBP.SK_M_Med_Soldier_04_Skeleton_AnimBP_C.OnBeginCrouching
-struct USK_M_Med_Soldier_04_Skeleton_AnimBP_C_OnBeginCrouching_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function SK_M_Med_Soldier_04_Skeleton_AnimBP.SK_M_Med_Soldier_04_Skeleton_AnimBP_C.OnEndCrouching
-struct USK_M_Med_Soldier_04_Skeleton_AnimBP_C_OnEndCrouching_Params
-{
-public:
 };
 
 // 0x4 (0x4 - 0x0)
@@ -58,6 +41,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

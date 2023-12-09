@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,17 +15,12 @@ class UMinigameStat_PlayerLivesLeft_C : public UFortMinigameStatFilter
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MinigameStat_PlayerLivesLeft_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMinigameStat_PlayerLivesLeft_C* GetDefaultObj();
 
 	int32 Compare(int32 FirstScore, int32 SecondScore, int32 CallFunc_Subtract_IntInt_ReturnValue);
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

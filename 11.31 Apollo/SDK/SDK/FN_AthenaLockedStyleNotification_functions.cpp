@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaLockedStyleNotification.AthenaLockedStyleNotification_C
+// (None)
+
+class UClass* UAthenaLockedStyleNotification_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaLockedStyleNotification_C");
+
+	return Clss;
+}
+
+
+// AthenaLockedStyleNotification_C AthenaLockedStyleNotification.Default__AthenaLockedStyleNotification_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaLockedStyleNotification_C* UAthenaLockedStyleNotification_C::GetDefaultObj()
+{
+	static class UAthenaLockedStyleNotification_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaLockedStyleNotification_C*>(UAthenaLockedStyleNotification_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaLockedStyleNotification.AthenaLockedStyleNotification_C.OnUnlockingInfoSet
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAthenaLockedStyleNotification_C::OnUnlockingInfoSet(bool bShowProgression)
 {
-	static auto Func = Class->GetFunction("AthenaLockedStyleNotification_C", "OnUnlockingInfoSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockedStyleNotification_C_OnUnlockingInfoSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockedStyleNotification_C", "OnUnlockingInfoSet");
+
+	Params::UAthenaLockedStyleNotification_C_OnUnlockingInfoSet_Params Parms{};
 
 	Parms.bShowProgression = bShowProgression;
 
@@ -39,12 +67,14 @@ void UAthenaLockedStyleNotification_C::OnUnlockingInfoSet(bool bShowProgression)
 
 void UAthenaLockedStyleNotification_C::RequestUpdateAnim()
 {
-	static auto Func = Class->GetFunction("AthenaLockedStyleNotification_C", "RequestUpdateAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockedStyleNotification_C_RequestUpdateAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockedStyleNotification_C", "RequestUpdateAnim");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void UAthenaLockedStyleNotification_C::RequestUpdateAnim()
 
 void UAthenaLockedStyleNotification_C::RequestIntroAnim()
 {
-	static auto Func = Class->GetFunction("AthenaLockedStyleNotification_C", "RequestIntroAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockedStyleNotification_C_RequestIntroAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockedStyleNotification_C", "RequestIntroAnim");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -71,12 +103,14 @@ void UAthenaLockedStyleNotification_C::RequestIntroAnim()
 
 void UAthenaLockedStyleNotification_C::RequestOutroAnim()
 {
-	static auto Func = Class->GetFunction("AthenaLockedStyleNotification_C", "RequestOutroAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockedStyleNotification_C_RequestOutroAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockedStyleNotification_C", "RequestOutroAnim");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -87,12 +121,14 @@ void UAthenaLockedStyleNotification_C::RequestOutroAnim()
 
 void UAthenaLockedStyleNotification_C::OutroFinished()
 {
-	static auto Func = Class->GetFunction("AthenaLockedStyleNotification_C", "OutroFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockedStyleNotification_C_OutroFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockedStyleNotification_C", "OutroFinished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -112,9 +148,12 @@ void UAthenaLockedStyleNotification_C::OutroFinished()
 
 void UAthenaLockedStyleNotification_C::ExecuteUbergraph_AthenaLockedStyleNotification(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool K2Node_Event_bShowProgression, bool Temp_bool_Variable, class UWidget* K2Node_Select_Default, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("AthenaLockedStyleNotification_C", "ExecuteUbergraph_AthenaLockedStyleNotification");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockedStyleNotification_C", "ExecuteUbergraph_AthenaLockedStyleNotification");
+
+	Params::UAthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -132,6 +171,4 @@ void UAthenaLockedStyleNotification_C::ExecuteUbergraph_AthenaLockedStyleNotific
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

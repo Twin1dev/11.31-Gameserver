@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,17 +15,12 @@ class UCreative_Radio_AudioToMPC_C : public UFortAudioToMPCComponent
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("Creative_Radio_AudioToMPC_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UCreative_Radio_AudioToMPC_C* GetDefaultObj();
 
 	void OnGatheredFFTData(TArray<struct FChannelData>& FFTData, float& OutAmplitudeAverage);
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

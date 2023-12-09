@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -24,34 +21,6 @@ public:
 	bool                                         bEnabled;                                          // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function TVPostProcessBP.TVPostProcessBP_C.UserConstructionScript
-struct ATVPostProcessBP_C_UserConstructionScript_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function TVPostProcessBP.TVPostProcessBP_C.Camera_DisableEffects
-struct ATVPostProcessBP_C_Camera_DisableEffects_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function TVPostProcessBP.TVPostProcessBP_C.FrontEndCameraSwitch
-struct ATVPostProcessBP_C_FrontEndCameraSwitch_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function TVPostProcessBP.TVPostProcessBP_C.ExecuteCameraSwitch
-struct ATVPostProcessBP_C_ExecuteCameraSwitch_Params
-{
-public:
-};
-
 // 0x5 (0x5 - 0x0)
 // Function TVPostProcessBP.TVPostProcessBP_C.ExecuteUbergraph_TVPostProcessBP
 struct ATVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP_Params
@@ -64,6 +33,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

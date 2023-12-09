@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,16 +15,11 @@ class AGC_Athena_OutsideSafeZone_Stage02_C : public AGC_Athena_OutsideSafeZone_C
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GC_Athena_OutsideSafeZone_Stage02_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AGC_Athena_OutsideSafeZone_Stage02_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

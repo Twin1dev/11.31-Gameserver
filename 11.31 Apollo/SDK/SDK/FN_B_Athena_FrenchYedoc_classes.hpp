@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -23,11 +20,8 @@ public:
 	struct FCurveTableRowHandle                  DecoyLifetimeRow;                                  // 0x230(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerPawnAthena*                 BotPawn;                                           // 0x240(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_Athena_FrenchYedoc_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_Athena_FrenchYedoc_C* GetDefaultObj();
 
 	void RemoveDecoy();
 	void ReceiveBeginPlay();
@@ -36,6 +30,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

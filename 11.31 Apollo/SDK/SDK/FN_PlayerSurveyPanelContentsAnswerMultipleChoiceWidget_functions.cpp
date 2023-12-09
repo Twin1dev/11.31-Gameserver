@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass PlayerSurveyPanelContentsAnswerMultipleChoiceWidget.PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C
+// (None)
+
+class UClass* UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C");
+
+	return Clss;
+}
+
+
+// PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C PlayerSurveyPanelContentsAnswerMultipleChoiceWidget.Default__PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C* UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::GetDefaultObj()
+{
+	static class UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C*>(UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function PlayerSurveyPanelContentsAnswerMultipleChoiceWidget.PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C.ScrollSelectedItemIntoView
@@ -34,9 +59,12 @@ namespace SDK
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::ScrollSelectedItemIntoView(bool FallBackToDefault, bool AnimateScroll, bool OverrideScrollDestination, class UWidget* WidgetToFocus, class UWidget* DefaultFocusedWidget, enum class EDescendantScrollDestination Temp_byte_Variable, bool CallFunc_IsValid_ReturnValue, bool Temp_bool_Variable, bool CallFunc_IsValid_ReturnValue_1, enum class EDescendantScrollDestination K2Node_Select_Default, bool CallFunc_NotEqual_ObjectObject_ReturnValue, class UWidget* CallFunc_GetDefaultFocusedWidget_ReturnValue, class UWidget* CallFunc_GetDefaultFocusedWidgetPostDummy_Widget)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "ScrollSelectedItemIntoView");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_ScrollSelectedItemIntoView_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "ScrollSelectedItemIntoView");
+
+	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_ScrollSelectedItemIntoView_Params Parms{};
 
 	Parms.FallBackToDefault = FallBackToDefault;
 	Parms.AnimateScroll = AnimateScroll;
@@ -71,7 +99,7 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::ScrollSelectedItemI
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Add_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortPlayerSurveyQuestionChoiceCallFunc_Array_Get_Item                                          ()
+// struct FFortPlayerSurveyQuestionChoiceCallFunc_Array_Get_Item                                          (None)
 // int32                              CallFunc_Array_Length_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -80,9 +108,12 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::ScrollSelectedItemI
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::UpdateEntryBoxContents(class UWidget* ChoiceWidget, class UFortPlayerSurveyQuestionMultipleChoice* CurrentQuestion, bool CallFunc_IsValid_ReturnValue, TScriptInterface<class IPlayerSurveyMultipleChoiceListItemWidgetInterface_C> K2Node_DynamicCast_AsPlayer_Survey_Multiple_Choice_List_Item_Widget_Interface, bool K2Node_DynamicCast_bSuccess, class UCommonButton* K2Node_DynamicCast_AsCommon_Button, bool K2Node_DynamicCast_bSuccess_1, int32 Temp_int_Array_Index_Variable, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, int32 Temp_int_Loop_Counter_Variable, const struct FFortPlayerSurveyQuestionChoice& CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class UFortPlayerSurveyQuestionMultipleChoice* CallFunc_GetCurrentQuestion_ReturnValue, class UUserWidget* CallFunc_BP_CreateEntry_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "UpdateEntryBoxContents");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_UpdateEntryBoxContents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "UpdateEntryBoxContents");
+
+	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_UpdateEntryBoxContents_Params Parms{};
 
 	Parms.ChoiceWidget = ChoiceWidget;
 	Parms.CurrentQuestion = CurrentQuestion;
@@ -114,9 +145,12 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::UpdateEntryBoxConte
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::GetDefaultInitialChoiceIndex(int32* Index)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "GetDefaultInitialChoiceIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_GetDefaultInitialChoiceIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "GetDefaultInitialChoiceIndex");
+
+	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_GetDefaultInitialChoiceIndex_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -140,9 +174,12 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::GetDefaultInitialCh
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::GetDefaultFocusedWidgetPostDummy(enum class EUINavigation Navigation, class UWidget** Widget, int32 Index, int32 CallFunc_GetDefaultInitialChoiceIndex_Index, TArray<class UUserWidget*>& CallFunc_GetAllEntries_ReturnValue, bool CallFunc_Array_IsValidIndex_ReturnValue, class UUserWidget* CallFunc_Array_Get_Item)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "GetDefaultFocusedWidgetPostDummy");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_GetDefaultFocusedWidgetPostDummy_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "GetDefaultFocusedWidgetPostDummy");
+
+	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_GetDefaultFocusedWidgetPostDummy_Params Parms{};
 
 	Parms.Navigation = Navigation;
 	Parms.Index = Index;
@@ -166,9 +203,12 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::GetDefaultFocusedWi
 
 class FText UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::GetSubtitleText()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "GetSubtitleText");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_GetSubtitleText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "GetSubtitleText");
+
+	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_GetSubtitleText_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -187,9 +227,12 @@ class FText UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::GetSubtitleT
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandlePlayerRequestAnswer(int32 AnswerIndex, const struct FTimespan& CallFunc_GetStopwatchTime_ReturnValue, const struct FFortPlayerSurveyAnswerMultipleChoice& K2Node_MakeStruct_FortPlayerSurveyAnswerMultipleChoice)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandlePlayerRequestAnswer");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_HandlePlayerRequestAnswer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandlePlayerRequestAnswer");
+
+	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_HandlePlayerRequestAnswer_Params Parms{};
 
 	Parms.AnswerIndex = AnswerIndex;
 	Parms.CallFunc_GetStopwatchTime_ReturnValue = CallFunc_GetStopwatchTime_ReturnValue;
@@ -215,9 +258,12 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandlePlayerRequest
 
 class UWidget* UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::GetDefaultFocusedWidget(int32 DefaultIndex, class UWidget* TargetWidget, int32 SelectedIndex, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_GetCurrentAnswer_bOutIsSet, const struct FFortPlayerSurveyAnswerMultipleChoice& CallFunc_GetCurrentAnswer_OutAnswer, class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "GetDefaultFocusedWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_GetDefaultFocusedWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "GetDefaultFocusedWidget");
+
+	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_GetDefaultFocusedWidget_Params Parms{};
 
 	Parms.DefaultIndex = DefaultIndex;
 	Parms.TargetWidget = TargetWidget;
@@ -241,12 +287,14 @@ class UWidget* UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::GetDefaul
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -257,12 +305,14 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::Construct()
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleCommitCurrentAnswer()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleCommitCurrentAnswer");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_HandleCommitCurrentAnswer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleCommitCurrentAnswer");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -274,9 +324,12 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleCommitCurrent
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleAnswerChanged(struct FFortPlayerSurveyAnswerContainerChangeEventInfo& EventInfo)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleAnswerChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_HandleAnswerChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleAnswerChanged");
+
+	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_HandleAnswerChanged_Params Parms{};
 
 	Parms.EventInfo = EventInfo;
 
@@ -291,12 +344,14 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleAnswerChanged
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleQuestionChanged()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleQuestionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_HandleQuestionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleQuestionChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -308,9 +363,12 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleQuestionChang
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleButtonClicked(int32 ButtonIndex)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleButtonClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_HandleButtonClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleButtonClicked");
+
+	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_HandleButtonClicked_Params Parms{};
 
 	Parms.ButtonIndex = ButtonIndex;
 
@@ -326,9 +384,12 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleButtonClicked
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleButtonFocused(int32 ButtonIndex)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleButtonFocused");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_HandleButtonFocused_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "HandleButtonFocused");
+
+	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_HandleButtonFocused_Params Parms{};
 
 	Parms.ButtonIndex = ButtonIndex;
 
@@ -351,9 +412,12 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::HandleButtonFocused
 
 void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleChoiceWidget(int32 EntryPoint, bool CallFunc_GetCurrentAnswer_bOutIsSet, const struct FFortPlayerSurveyAnswerMultipleChoice& CallFunc_GetCurrentAnswer_OutAnswer, const struct FFortPlayerSurveyAnswerContainerChangeEventInfo& K2Node_Event_EventInfo, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, int32 K2Node_Event_ButtonIndex_1, int32 K2Node_Event_ButtonIndex)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleChoiceWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C", "ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleChoiceWidget");
+
+	Params::UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetCurrentAnswer_bOutIsSet = CallFunc_GetCurrentAnswer_bOutIsSet;
@@ -370,6 +434,4 @@ void UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::ExecuteUbergraph_Pl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

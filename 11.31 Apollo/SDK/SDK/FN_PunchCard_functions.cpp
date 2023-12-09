@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass PunchCard.PunchCard_C
+// (None)
+
+class UClass* UPunchCard_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PunchCard_C");
+
+	return Clss;
+}
+
+
+// PunchCard_C PunchCard.Default__PunchCard_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPunchCard_C* UPunchCard_C::GetDefaultObj()
+{
+	static class UPunchCard_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPunchCard_C*>(UPunchCard_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PunchCard.PunchCard_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UPunchCard_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("PunchCard_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPunchCard_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PunchCard_C", "PreConstruct");
+
+	Params::UPunchCard_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -39,12 +67,14 @@ void UPunchCard_C::PreConstruct(bool IsDesignTime)
 
 void UPunchCard_C::RunIntroAnim()
 {
-	static auto Func = Class->GetFunction("PunchCard_C", "RunIntroAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UPunchCard_C_RunIntroAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PunchCard_C", "RunIntroAnim");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void UPunchCard_C::RunIntroAnim()
 
 void UPunchCard_C::MedalFInishedPlacing()
 {
-	static auto Func = Class->GetFunction("PunchCard_C", "MedalFInishedPlacing");
+	static class UFunction* Func = nullptr;
 
-	Params::UPunchCard_C_MedalFInishedPlacing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PunchCard_C", "MedalFInishedPlacing");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -71,12 +103,14 @@ void UPunchCard_C::MedalFInishedPlacing()
 
 void UPunchCard_C::ShowWidget()
 {
-	static auto Func = Class->GetFunction("PunchCard_C", "ShowWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UPunchCard_C_ShowWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PunchCard_C", "ShowWidget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -87,12 +121,14 @@ void UPunchCard_C::ShowWidget()
 
 void UPunchCard_C::On_Intro_Done()
 {
-	static auto Func = Class->GetFunction("PunchCard_C", "On Intro Done");
+	static class UFunction* Func = nullptr;
 
-	Params::UPunchCard_C_On_Intro_Done_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PunchCard_C", "On Intro Done");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -104,9 +140,12 @@ void UPunchCard_C::On_Intro_Done()
 
 void UPunchCard_C::FinishedPlacingMedals(bool bPlayOutro)
 {
-	static auto Func = Class->GetFunction("PunchCard_C", "FinishedPlacingMedals");
+	static class UFunction* Func = nullptr;
 
-	Params::UPunchCard_C_FinishedPlacingMedals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PunchCard_C", "FinishedPlacingMedals");
+
+	Params::UPunchCard_C_FinishedPlacingMedals_Params Parms{};
 
 	Parms.bPlayOutro = bPlayOutro;
 
@@ -121,12 +160,14 @@ void UPunchCard_C::FinishedPlacingMedals(bool bPlayOutro)
 
 void UPunchCard_C::On_Outro_Finished()
 {
-	static auto Func = Class->GetFunction("PunchCard_C", "On Outro Finished");
+	static class UFunction* Func = nullptr;
 
-	Params::UPunchCard_C_On_Outro_Finished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PunchCard_C", "On Outro Finished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -138,9 +179,12 @@ void UPunchCard_C::On_Outro_Finished()
 
 void UPunchCard_C::UpdateCardCompleted(bool bCompleted)
 {
-	static auto Func = Class->GetFunction("PunchCard_C", "UpdateCardCompleted");
+	static class UFunction* Func = nullptr;
 
-	Params::UPunchCard_C_UpdateCardCompleted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PunchCard_C", "UpdateCardCompleted");
+
+	Params::UPunchCard_C_UpdateCardCompleted_Params Parms{};
 
 	Parms.bCompleted = bCompleted;
 
@@ -156,9 +200,12 @@ void UPunchCard_C::UpdateCardCompleted(bool bCompleted)
 
 void UPunchCard_C::SetSuperStyle(bool IsSuper)
 {
-	static auto Func = Class->GetFunction("PunchCard_C", "SetSuperStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UPunchCard_C_SetSuperStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PunchCard_C", "SetSuperStyle");
+
+	Params::UPunchCard_C_SetSuperStyle_Params Parms{};
 
 	Parms.IsSuper = IsSuper;
 
@@ -220,9 +267,12 @@ void UPunchCard_C::SetSuperStyle(bool IsSuper)
 
 void UPunchCard_C::ExecuteUbergraph_PunchCard(int32 EntryPoint, int32 Temp_int_Variable, int32 Temp_int_Variable_1, int32 Temp_int_Variable_2, int32 Temp_int_Variable_3, int32 Temp_int_Variable_4, float Temp_float_Variable, float Temp_float_Variable_1, float Temp_float_Variable_2, int32 Temp_int_Variable_5, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, int32 Temp_int_Variable_6, float Temp_float_Variable_3, float Temp_float_Variable_4, float Temp_float_Variable_5, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, int32 Temp_int_Variable_7, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, bool Temp_bool_Variable, class UClass* Temp_class_Variable, class UClass* Temp_class_Variable_1, bool Temp_bool_Variable_1, float Temp_float_Variable_6, float Temp_float_Variable_7, bool K2Node_Event_IsDesignTime, int32 K2Node_Select_Default, float K2Node_Select_Default_1, enum class ESlateVisibility K2Node_Select_Default_2, float K2Node_Select_Default_3, enum class ESlateVisibility K2Node_Select_Default_4, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, enum class ESlateVisibility Temp_byte_Variable_8, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool K2Node_Event_bPlayOutro, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool K2Node_Event_bCompleted, bool K2Node_CustomEvent_isSuper, class UClass* K2Node_Select_Default_5, float K2Node_Select_Default_6, int32 Temp_int_Variable_8, enum class ESlateVisibility K2Node_Select_Default_7)
 {
-	static auto Func = Class->GetFunction("PunchCard_C", "ExecuteUbergraph_PunchCard");
+	static class UFunction* Func = nullptr;
 
-	Params::UPunchCard_C_ExecuteUbergraph_PunchCard_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PunchCard_C", "ExecuteUbergraph_PunchCard");
+
+	Params::UPunchCard_C_ExecuteUbergraph_PunchCard_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -278,6 +328,4 @@ void UPunchCard_C::ExecuteUbergraph_PunchCard(int32 EntryPoint, int32 Temp_int_V
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

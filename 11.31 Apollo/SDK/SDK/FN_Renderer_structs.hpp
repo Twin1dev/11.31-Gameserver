@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -35,8 +32,8 @@ public:
 	uint8                                        bOverride_LPVGeometryVolumeBias : 1;               // Mask: 0x4, PropSize: 0x10x1(0x1)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bOverride_LPVVplInjectionBias : 1;                 // Mask: 0x8, PropSize: 0x10x1(0x1)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bOverride_LPVEmissiveInjectionIntensity : 1;       // Mask: 0x10, PropSize: 0x10x1(0x1)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_2D0 : 3;                                    // Fixing Bit-Field Size  [ Dumper-8 ]
-	uint8                                        Pad_4451[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        BitPad_1F2 : 3;                                    // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_2869[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        LPVIntensity;                                      // 0x4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        LPVVplInjectionBias;                               // 0x8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        LPVSize;                                           // 0xC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -56,6 +53,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

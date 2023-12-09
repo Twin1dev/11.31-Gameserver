@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass StoreMain_Root.StoreMain_Root_C
+// (None)
+
+class UClass* UStoreMain_Root_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("StoreMain_Root_C");
+
+	return Clss;
+}
+
+
+// StoreMain_Root_C StoreMain_Root.Default__StoreMain_Root_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UStoreMain_Root_C* UStoreMain_Root_C::GetDefaultObj()
+{
+	static class UStoreMain_Root_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UStoreMain_Root_C*>(UStoreMain_Root_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function StoreMain_Root.StoreMain_Root_C.BP_GetDesiredFocusTarget
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 class UWidget* UStoreMain_Root_C::BP_GetDesiredFocusTarget()
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "BP_GetDesiredFocusTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_BP_GetDesiredFocusTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "BP_GetDesiredFocusTarget");
+
+	Params::UStoreMain_Root_C_BP_GetDesiredFocusTarget_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -47,9 +75,12 @@ class UWidget* UStoreMain_Root_C::BP_GetDesiredFocusTarget()
 
 void UStoreMain_Root_C::GetVisibilityByChildrenPresence(class UPanelWidget* Panel, enum class ESlateVisibility* NewParam, bool Temp_bool_Variable, bool CallFunc_HasAnyChildren_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "GetVisibilityByChildrenPresence");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_GetVisibilityByChildrenPresence_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "GetVisibilityByChildrenPresence");
+
+	Params::UStoreMain_Root_C_GetVisibilityByChildrenPresence_Params Parms{};
 
 	Parms.Panel = Panel;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -75,9 +106,12 @@ void UStoreMain_Root_C::GetVisibilityByChildrenPresence(class UPanelWidget* Pane
 
 void UStoreMain_Root_C::HandleAllOffersGenerated(enum class ESlateVisibility CallFunc_GetVisibilityByChildrenPresence_NewParam, enum class ESlateVisibility CallFunc_GetVisibilityByChildrenPresence_NewParam_1, bool CallFunc_IsActivated_ReturnValue)
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "HandleAllOffersGenerated");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_HandleAllOffersGenerated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "HandleAllOffersGenerated");
+
+	Params::UStoreMain_Root_C_HandleAllOffersGenerated_Params Parms{};
 
 	Parms.CallFunc_GetVisibilityByChildrenPresence_NewParam = CallFunc_GetVisibilityByChildrenPresence_NewParam;
 	Parms.CallFunc_GetVisibilityByChildrenPresence_NewParam_1 = CallFunc_GetVisibilityByChildrenPresence_NewParam_1;
@@ -106,9 +140,12 @@ void UStoreMain_Root_C::HandleAllOffersGenerated(enum class ESlateVisibility Cal
 
 void UStoreMain_Root_C::HandleGenerateOffer(class UFortStoreFrontOfferInfo* OfferInfo, class UFortRealMoneyOffer* StoreOfferWidget, class FName CallFunc_GetStorefrontName_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue, int32 CallFunc_GetChildrenCount_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, int32 CallFunc_GetChildrenCount_ReturnValue_1, int32 CallFunc_Subtract_IntInt_ReturnValue_1, class UGridSlot* CallFunc_AddChildToGrid_ReturnValue, class UGridSlot* CallFunc_AddChildToGrid_ReturnValue_1, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UStoreMain_MTXOffer_C* CallFunc_Create_ReturnValue)
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "HandleGenerateOffer");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_HandleGenerateOffer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "HandleGenerateOffer");
+
+	Params::UStoreMain_Root_C_HandleGenerateOffer_Params Parms{};
 
 	Parms.OfferInfo = OfferInfo;
 	Parms.StoreOfferWidget = StoreOfferWidget;
@@ -139,9 +176,12 @@ void UStoreMain_Root_C::HandleGenerateOffer(class UFortStoreFrontOfferInfo* Offe
 
 void UStoreMain_Root_C::PlayEquippedLockerMusic(enum class ESubGame CallFunc_GetSubGame_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, TArray<class AFort_Entry_Music_Controller_BP_C*>& CallFunc_GetAllActorsOfClass_OutActors, class AFort_Entry_Music_Controller_BP_C* CallFunc_Array_Get_Item)
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "PlayEquippedLockerMusic");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_PlayEquippedLockerMusic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "PlayEquippedLockerMusic");
+
+	Params::UStoreMain_Root_C_PlayEquippedLockerMusic_Params Parms{};
 
 	Parms.CallFunc_GetSubGame_ReturnValue = CallFunc_GetSubGame_ReturnValue;
 	Parms.CallFunc_GetRuntimeOptions_ReturnValue = CallFunc_GetRuntimeOptions_ReturnValue;
@@ -161,9 +201,12 @@ void UStoreMain_Root_C::PlayEquippedLockerMusic(enum class ESubGame CallFunc_Get
 
 void UStoreMain_Root_C::HandleBack(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "HandleBack");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_HandleBack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "HandleBack");
+
+	Params::UStoreMain_Root_C_HandleBack_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -183,9 +226,12 @@ void UStoreMain_Root_C::HandleBack(bool* PassThrough)
 
 void UStoreMain_Root_C::HandleRedeem(bool* bPassThrough, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class URedeemFriendCodeWindow_C* CallFunc_Create_ReturnValue)
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "HandleRedeem");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_HandleRedeem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "HandleRedeem");
+
+	Params::UStoreMain_Root_C_HandleRedeem_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
 	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
@@ -213,9 +259,12 @@ void UStoreMain_Root_C::HandleRedeem(bool* bPassThrough, class APlayerController
 
 void UStoreMain_Root_C::SetupForCampaignUpsell(class UFortRuntimeOptions* NewLocalVar_0, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FDataTableRowHandle& K2Node_MakeStruct_DataTableRowHandle, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_IsDesktopPlatform_ReturnValue, const struct FDataTableRowHandle& K2Node_MakeStruct_DataTableRowHandle_1, TArray<class FString>& K2Node_MakeArray_Array)
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "SetupForCampaignUpsell");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_SetupForCampaignUpsell_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "SetupForCampaignUpsell");
+
+	Params::UStoreMain_Root_C_SetupForCampaignUpsell_Params Parms{};
 
 	Parms.NewLocalVar_0 = NewLocalVar_0;
 	Parms.CallFunc_GetRuntimeOptions_ReturnValue = CallFunc_GetRuntimeOptions_ReturnValue;
@@ -241,9 +290,12 @@ void UStoreMain_Root_C::SetupForCampaignUpsell(class UFortRuntimeOptions* NewLoc
 
 void UStoreMain_Root_C::SetupFirstFocusableTile(class UWidget* CallFunc_GetChildAt_ReturnValue, class UWidget* CallFunc_GetChildAt_ReturnValue_1, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "SetupFirstFocusableTile");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_SetupFirstFocusableTile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "SetupFirstFocusableTile");
+
+	Params::UStoreMain_Root_C_SetupFirstFocusableTile_Params Parms{};
 
 	Parms.CallFunc_GetChildAt_ReturnValue = CallFunc_GetChildAt_ReturnValue;
 	Parms.CallFunc_GetChildAt_ReturnValue_1 = CallFunc_GetChildAt_ReturnValue_1;
@@ -275,9 +327,12 @@ void UStoreMain_Root_C::SetupFirstFocusableTile(class UWidget* CallFunc_GetChild
 
 void UStoreMain_Root_C::LayoutVBuckTiles(class UWidget* Child, int32 Index, int32 CallFunc_Divide_IntInt_ReturnValue, class UStoreMain_MTXOffer_C* K2Node_DynamicCast_AsStore_Main_MTXOffer, bool K2Node_DynamicCast_bSuccess, class UGridSlot* CallFunc_SlotAsGridSlot_ReturnValue, class UWidget* CallFunc_GetChildAt_ReturnValue, int32 CallFunc_Percent_IntInt_ReturnValue, int32 CallFunc_GetChildrenCount_ReturnValue, int32 CallFunc_GetChildrenCount_ReturnValue_1, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, int32 Temp_int_Variable, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "LayoutVBuckTiles");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_LayoutVBuckTiles_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "LayoutVBuckTiles");
+
+	Params::UStoreMain_Root_C_LayoutVBuckTiles_Params Parms{};
 
 	Parms.Child = Child;
 	Parms.Index = Index;
@@ -313,9 +368,12 @@ void UStoreMain_Root_C::LayoutVBuckTiles(class UWidget* Child, int32 Index, int3
 
 bool UStoreMain_Root_C::Get_Main_Tab_Reference(class UUserWidget* CallFunc_GetCachedWidget_ReturnValue, class UMainTabsScreen_C* K2Node_DynamicCast_AsMain_Tabs_Screen, bool K2Node_DynamicCast_bSuccess, class UWidget* CallFunc_GetWidgetAtIndex_ReturnValue, class UWidget* CallFunc_GetActiveWidget_ReturnValue, bool CallFunc_NotEqual_ObjectObject_ReturnValue)
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "Get Main Tab Reference");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_Get_Main_Tab_Reference_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "Get Main Tab Reference");
+
+	Params::UStoreMain_Root_C_Get_Main_Tab_Reference_Params Parms{};
 
 	Parms.CallFunc_GetCachedWidget_ReturnValue = CallFunc_GetCachedWidget_ReturnValue;
 	Parms.K2Node_DynamicCast_AsMain_Tabs_Screen = K2Node_DynamicCast_AsMain_Tabs_Screen;
@@ -344,9 +402,12 @@ bool UStoreMain_Root_C::Get_Main_Tab_Reference(class UUserWidget* CallFunc_GetCa
 
 void UStoreMain_Root_C::Start_Ambient_Sound(bool Condition, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UAudioComponent* CallFunc_CreateSound2D_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "Start Ambient Sound");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_Start_Ambient_Sound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "Start Ambient Sound");
+
+	Params::UStoreMain_Root_C_Start_Ambient_Sound_Params Parms{};
 
 	Parms.Condition = Condition;
 	Parms.CallFunc_GetSubGame_ReturnValue = CallFunc_GetSubGame_ReturnValue;
@@ -371,14 +432,17 @@ void UStoreMain_Root_C::Start_Ambient_Sound(bool Condition, enum class ESubGame 
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UStoreMain_Root_C::UpdateCurrencyNotification(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, const struct FMtxBreakdown& CallFunc_GetMtxBreakdown_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, bool CallFunc_Greater_IntInt_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "UpdateCurrencyNotification");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_UpdateCurrencyNotification_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "UpdateCurrencyNotification");
+
+	Params::UStoreMain_Root_C_UpdateCurrencyNotification_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
@@ -401,12 +465,14 @@ void UStoreMain_Root_C::UpdateCurrencyNotification(enum class ESlateVisibility T
 
 void UStoreMain_Root_C::Focus()
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "Focus");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_Focus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "Focus");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -417,12 +483,14 @@ void UStoreMain_Root_C::Focus()
 
 void UStoreMain_Root_C::NoOffersAvailable()
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "NoOffersAvailable");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_NoOffersAvailable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "NoOffersAvailable");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -433,12 +501,14 @@ void UStoreMain_Root_C::NoOffersAvailable()
 
 void UStoreMain_Root_C::OnOffersGenerated()
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "OnOffersGenerated");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_OnOffersGenerated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "OnOffersGenerated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -449,12 +519,14 @@ void UStoreMain_Root_C::OnOffersGenerated()
 
 void UStoreMain_Root_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -465,12 +537,14 @@ void UStoreMain_Root_C::BP_OnActivated()
 
 void UStoreMain_Root_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -481,12 +555,14 @@ void UStoreMain_Root_C::BP_OnDeactivated()
 
 void UStoreMain_Root_C::ClearOfferWidgets()
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "ClearOfferWidgets");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_ClearOfferWidgets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "ClearOfferWidgets");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -497,12 +573,14 @@ void UStoreMain_Root_C::ClearOfferWidgets()
 
 void UStoreMain_Root_C::OnAddedToActivationStack()
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "OnAddedToActivationStack");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_OnAddedToActivationStack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "OnAddedToActivationStack");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -513,12 +591,14 @@ void UStoreMain_Root_C::OnAddedToActivationStack()
 
 void UStoreMain_Root_C::OnRemovedFromActivationStack()
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "OnRemovedFromActivationStack");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_OnRemovedFromActivationStack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "OnRemovedFromActivationStack");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -531,9 +611,12 @@ void UStoreMain_Root_C::OnRemovedFromActivationStack()
 
 void UStoreMain_Root_C::OnUpdateOtherPlatformMTXMessage(bool HasOtherPlatformCurrency, class FText& CurrencyMessageLocText)
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "OnUpdateOtherPlatformMTXMessage");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_OnUpdateOtherPlatformMTXMessage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "OnUpdateOtherPlatformMTXMessage");
+
+	Params::UStoreMain_Root_C_OnUpdateOtherPlatformMTXMessage_Params Parms{};
 
 	Parms.HasOtherPlatformCurrency = HasOtherPlatformCurrency;
 	Parms.CurrencyMessageLocText = CurrencyMessageLocText;
@@ -550,9 +633,12 @@ void UStoreMain_Root_C::OnUpdateOtherPlatformMTXMessage(bool HasOtherPlatformCur
 
 void UStoreMain_Root_C::GenerateOfferWidget(class UFortStoreFrontOfferInfo* OfferData)
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "GenerateOfferWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_GenerateOfferWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "GenerateOfferWidget");
+
+	Params::UStoreMain_Root_C_GenerateOfferWidget_Params Parms{};
 
 	Parms.OfferData = OfferData;
 
@@ -567,12 +653,14 @@ void UStoreMain_Root_C::GenerateOfferWidget(class UFortStoreFrontOfferInfo* Offe
 
 void UStoreMain_Root_C::OnPurchasingDisabled()
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "OnPurchasingDisabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_OnPurchasingDisabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "OnPurchasingDisabled");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -583,12 +671,14 @@ void UStoreMain_Root_C::OnPurchasingDisabled()
 
 void UStoreMain_Root_C::OnStartReadingOffers()
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "OnStartReadingOffers");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_OnStartReadingOffers_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "OnStartReadingOffers");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -599,12 +689,14 @@ void UStoreMain_Root_C::OnStartReadingOffers()
 
 void UStoreMain_Root_C::OnTransitionedBySwitcher()
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "OnTransitionedBySwitcher");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_OnTransitionedBySwitcher_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "OnTransitionedBySwitcher");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -630,9 +722,12 @@ void UStoreMain_Root_C::OnTransitionedBySwitcher()
 
 void UStoreMain_Root_C::ExecuteUbergraph_StoreMain_Root(int32 EntryPoint, bool Temp_bool_Variable, enum class EFrontEndCamera Temp_byte_Variable, enum class EFrontEndCamera Temp_byte_Variable_1, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, bool CallFunc_Get_Main_Tab_Reference_ReturnValue, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UFortStoreContext* CallFunc_GetContext_ReturnValue_1, class UFortStoreContext* CallFunc_GetContext_ReturnValue_2, bool K2Node_Event_HasOtherPlatformCurrency, class FText K2Node_Event_CurrencyMessageLocText, class UFortStoreFrontOfferInfo* K2Node_Event_OfferData, enum class EFrontEndCamera K2Node_Select_Default, bool CallFunc_IsActivated_ReturnValue)
 {
-	static auto Func = Class->GetFunction("StoreMain_Root_C", "ExecuteUbergraph_StoreMain_Root");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_Root_C_ExecuteUbergraph_StoreMain_Root_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_Root_C", "ExecuteUbergraph_StoreMain_Root");
+
+	Params::UStoreMain_Root_C_ExecuteUbergraph_StoreMain_Root_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -656,6 +751,4 @@ void UStoreMain_Root_C::ExecuteUbergraph_StoreMain_Root(int32 EntryPoint, bool T
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

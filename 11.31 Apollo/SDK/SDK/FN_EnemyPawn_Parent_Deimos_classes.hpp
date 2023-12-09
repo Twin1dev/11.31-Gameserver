@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -12,30 +9,31 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x310 (0x2490 - 0x2180)
+// 0x318 (0x2490 - 0x2178)
 // BlueprintGeneratedClass EnemyPawn_Parent_Deimos.EnemyPawn_Parent_Deimos_C
 class AEnemyPawn_Parent_Deimos_C : public AFortAIPawn
 {
 public:
+	uint8                                        Pad_3A60[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x2180(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UCapsuleComponent*                     WeaponCapsuleCollision;                            // 0x2188(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                       Elemental_Layer_Audio_Loop;                        // 0x2190(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                        Enemy_Spawn_Out_TL_ColorFadeOutTrack_37A083E44F5772C5FFF36680D2AD7D94; // 0x2198(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Enemy_Spawn_Out_TL_FadeInTrack_37A083E44F5772C5FFF36680D2AD7D94; // 0x219C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETimelineDirection                Enemy_Spawn_Out_TL__Direction_37A083E44F5772C5FFF36680D2AD7D94; // 0x21A0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4C81[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_3A61[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTimelineComponent*                    Enemy_Spawn_Out_TL;                                // 0x21A8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        EnemySpawnInTL_ColorFadeOutTrack_515E6B424789F427A1B9ACAD857FFF5D; // 0x21B0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        EnemySpawnInTL_FadeInTrack_515E6B424789F427A1B9ACAD857FFF5D; // 0x21B4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETimelineDirection                EnemySpawnInTL__Direction_515E6B424789F427A1B9ACAD857FFF5D; // 0x21B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4C82[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_3A62[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTimelineComponent*                    EnemySpawnInTL;                                    // 0x21C0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4C83[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_3A63[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            SpawnParticlesTransform;                           // 0x21D0(0x30)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	class UParticleSystem*                       SpawnParticles;                                    // 0x2200(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*              CharacterElementalParticles;                       // 0x2208(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         AllowHeadshot;                                     // 0x2210(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4C84[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_3A64[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 TC_RangedWeapon;                                   // 0x2218(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UParticleSystemComponent*              HeadshotParticleSystemComp;                        // 0x2238(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAnimMontage*                          Additive_Hit_React_Montage;                        // 0x2240(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -50,14 +48,14 @@ public:
 	TMap<class USkeletalMeshComponent*, class UFXSkeletonMeshComponent_C*> BuildingHitFXSkeletalMeshes;                       // 0x2310(0x50)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 	TMap<class UStaticMeshComponent*, class UFXStaticMeshComponent_C*> BuildingHitFXStaticMeshes;                         // 0x2360(0x50)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 	float                                        BuildingHitDuration;                               // 0x23B0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4C85[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_3A66[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          DestroyBuildingHitFXTimer;                         // 0x23B8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UFXSkeletonMeshComponent_C*            TempFXSkeletalMesh;                                // 0x23C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class USkeletalMeshComponent*>        RegisteredSkeletalMeshesForEffects;                // 0x23C8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 	TArray<class UStaticMeshComponent*>          RegisteredStaticMeshesForEffects;                  // 0x23D8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 	bool                                         HasGlowColorsAssigned;                             // 0x23E8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         SpawnInTimelineCompletedSuccessfully;              // 0x23E9(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4C86[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_3A67[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          CharacterSpawnInSafetyCheckHandle;                 // 0x23F0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<class UMaterialInstanceDynamic*>      Previous_MID;                                      // 0x23F8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	class UParticleSystem*                       CharacterAmbientParticlesTemplate;                 // 0x2408(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -68,20 +66,17 @@ public:
 	TArray<class UObject*>                       Duplicate_Auxillary_Objects;                       // 0x2438(0x10)(Edit, BlueprintVisible, ZeroConstructor)
 	class UParticleSystemComponent*              MinibossPSComponent;                               // 0x2448(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CharacterParticlesMaxDrawDistance;                 // 0x2450(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4C87[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_3A69[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UPhysicalMaterial*>             Original_Phys_Material;                            // 0x2458(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UMaterialInstanceDynamic*>      Previous_MID_AuxObjs;                              // 0x2468(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	int32                                        Restoring_Array_Index;                             // 0x2478(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         UseHeadShotFX;                                     // 0x247C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4C88[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_3A6A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class USoundBase*                            Death_Dematerialize_Sound;                         // 0x2480(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                            HeadShot_Sound;                                    // 0x2488(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("EnemyPawn_Parent_Deimos_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AEnemyPawn_Parent_Deimos_C* GetDefaultObj();
 
 	void Orphaned(bool* IsOrphaned, class AFortPawn** AttachedPawn);
 	void DeregisterEffectSkeletalMesh(class USkeletalMeshComponent* Mesh, bool CallFunc_IsValid_ReturnValue, class UFXSkeletonMeshComponent_C* CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_Map_Remove_ReturnValue, bool CallFunc_Map_Remove_ReturnValue_1, bool CallFunc_Array_RemoveItem_ReturnValue, class UFXSkeletonMeshComponent_C* CallFunc_Map_Find_Value_1, bool CallFunc_Map_Find_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2);
@@ -124,6 +119,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

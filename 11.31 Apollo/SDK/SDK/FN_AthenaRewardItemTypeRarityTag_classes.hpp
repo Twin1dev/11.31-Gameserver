@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -20,11 +17,8 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x278(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UImage*                                Divider;                                           // 0x280(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaRewardItemTypeRarityTag_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaRewardItemTypeRarityTag_C* GetDefaultObj();
 
 	void OnInitializeRarityWithSeries(class UFortItemSeriesDefinition* SeriesData);
 	void OnInitializeRarityWithoutSeries(const struct FFortRarityItemData& RarityData);
@@ -33,6 +27,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

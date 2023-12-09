@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,90 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class McpProfileSys.McpItemAware
+// (None)
+
+class UClass* IMcpItemAware::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("McpItemAware");
+
+	return Clss;
+}
+
+
+// McpItemAware McpProfileSys.Default__McpItemAware
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class IMcpItemAware* IMcpItemAware::GetDefaultObj()
+{
+	static class IMcpItemAware* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<IMcpItemAware*>(IMcpItemAware::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class McpProfileSys.McpItemDefinitionBase
+// (None)
+
+class UClass* UMcpItemDefinitionBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("McpItemDefinitionBase");
+
+	return Clss;
+}
+
+
+// McpItemDefinitionBase McpProfileSys.Default__McpItemDefinitionBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMcpItemDefinitionBase* UMcpItemDefinitionBase::GetDefaultObj()
+{
+	static class UMcpItemDefinitionBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMcpItemDefinitionBase*>(UMcpItemDefinitionBase::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class McpProfileSys.McpProfile
+// (None)
+
+class UClass* UMcpProfile::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("McpProfile");
+
+	return Clss;
+}
+
+
+// McpProfile McpProfileSys.Default__McpProfile
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMcpProfile* UMcpProfile::GetDefaultObj()
+{
+	static class UMcpProfile* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMcpProfile*>(UMcpProfile::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function McpProfileSys.McpProfile.UnlockProfileForWrite
 // (Final, Net, NetReliable, NetRequest, Native, Event, Private, HasOutParams)
 // Parameters:
@@ -23,22 +104,25 @@ namespace SDK
 
 void UMcpProfile::UnlockProfileForWrite(const class FString& Code, struct FDedicatedServerUrlContext* Context)
 {
-	static auto Func = Class->GetFunction("McpProfile", "UnlockProfileForWrite");
+	static class UFunction* Func = nullptr;
 
-	Params::UMcpProfile_UnlockProfileForWrite_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("McpProfile", "UnlockProfileForWrite");
+
+	Params::UMcpProfile_UnlockProfileForWrite_Params Parms{};
 
 	Parms.Code = Code;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Context != nullptr)
-		*Context = Parms.Context;
+		*Context = std::move(Parms.Context);
 
 }
 
@@ -50,21 +134,24 @@ void UMcpProfile::UnlockProfileForWrite(const class FString& Code, struct FDedic
 
 void UMcpProfile::QueryPublicProfile(struct FBaseUrlContext* Context)
 {
-	static auto Func = Class->GetFunction("McpProfile", "QueryPublicProfile");
+	static class UFunction* Func = nullptr;
 
-	Params::UMcpProfile_QueryPublicProfile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("McpProfile", "QueryPublicProfile");
+
+	Params::UMcpProfile_QueryPublicProfile_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Context != nullptr)
-		*Context = Parms.Context;
+		*Context = std::move(Parms.Context);
 
 }
 
@@ -76,21 +163,24 @@ void UMcpProfile::QueryPublicProfile(struct FBaseUrlContext* Context)
 
 void UMcpProfile::QueryProfile(struct FBaseUrlContext* Context)
 {
-	static auto Func = Class->GetFunction("McpProfile", "QueryProfile");
+	static class UFunction* Func = nullptr;
 
-	Params::UMcpProfile_QueryProfile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("McpProfile", "QueryProfile");
+
+	Params::UMcpProfile_QueryProfile_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Context != nullptr)
-		*Context = Parms.Context;
+		*Context = std::move(Parms.Context);
 
 }
 
@@ -104,23 +194,26 @@ void UMcpProfile::QueryProfile(struct FBaseUrlContext* Context)
 
 void UMcpProfile::LockProfileForWrite(const class FString& Code, int32 Timeout, struct FDedicatedServerUrlContext* Context)
 {
-	static auto Func = Class->GetFunction("McpProfile", "LockProfileForWrite");
+	static class UFunction* Func = nullptr;
 
-	Params::UMcpProfile_LockProfileForWrite_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("McpProfile", "LockProfileForWrite");
+
+	Params::UMcpProfile_LockProfileForWrite_Params Parms{};
 
 	Parms.Code = Code;
 	Parms.Timeout = Timeout;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Context != nullptr)
-		*Context = Parms.Context;
+		*Context = std::move(Parms.Context);
 
 }
 
@@ -132,21 +225,24 @@ void UMcpProfile::LockProfileForWrite(const class FString& Code, int32 Timeout, 
 
 void UMcpProfile::DeleteProfile(struct FClientUrlContext* Context)
 {
-	static auto Func = Class->GetFunction("McpProfile", "DeleteProfile");
+	static class UFunction* Func = nullptr;
 
-	Params::UMcpProfile_DeleteProfile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("McpProfile", "DeleteProfile");
+
+	Params::UMcpProfile_DeleteProfile_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Context != nullptr)
-		*Context = Parms.Context;
+		*Context = std::move(Parms.Context);
 
 }
 
@@ -158,26 +254,83 @@ void UMcpProfile::DeleteProfile(struct FClientUrlContext* Context)
 
 void UMcpProfile::DeleteAllProfiles(struct FClientUrlContext* Context)
 {
-	static auto Func = Class->GetFunction("McpProfile", "DeleteAllProfiles");
+	static class UFunction* Func = nullptr;
 
-	Params::UMcpProfile_DeleteAllProfiles_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("McpProfile", "DeleteAllProfiles");
+
+	Params::UMcpProfile_DeleteAllProfiles_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Context != nullptr)
-		*Context = Parms.Context;
+		*Context = std::move(Parms.Context);
 
+}
+
+
+// Class McpProfileSys.McpProfileGroup
+// (None)
+
+class UClass* UMcpProfileGroup::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("McpProfileGroup");
+
+	return Clss;
+}
+
+
+// McpProfileGroup McpProfileSys.Default__McpProfileGroup
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMcpProfileGroup* UMcpProfileGroup::GetDefaultObj()
+{
+	static class UMcpProfileGroup* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMcpProfileGroup*>(UMcpProfileGroup::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class McpProfileSys.McpProfileManager
+// (None)
+
+class UClass* UMcpProfileManager::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("McpProfileManager");
+
+	return Clss;
+}
+
+
+// McpProfileManager McpProfileSys.Default__McpProfileManager
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMcpProfileManager* UMcpProfileManager::GetDefaultObj()
+{
+	static class UMcpProfileManager* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMcpProfileManager*>(UMcpProfileManager::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -28,15 +25,15 @@ public:
 	class AActor*                                CallFunc_GetOwningActorFromActorInfo_ReturnValue;  // 0xF8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerState*                      K2Node_DynamicCast_AsFort_Player_State;            // 0x100(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x108(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5A93[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5E86[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AFortPlayerPawn*                       CallFunc_GetCurrentPawn_ReturnValue;               // 0x110(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x118(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5A94[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5E87[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AFortWeapon*                           CallFunc_GetCurrentSourceWeapon_ReturnValue;       // 0x120(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x128(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5A95[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	struct FGameplayEventData                    K2Node_MakeStruct_GameplayEventData;               // 0x130(0xB0)()
-	struct FGameplayTagContainer                 CallFunc_GetWeaponDataGameplayTags_GameplayTags;   // 0x1E0(0x20)()
+	uint8                                        Pad_5E88[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FGameplayEventData                    K2Node_MakeStruct_GameplayEventData;               // 0x130(0xB0)(None)
+	struct FGameplayTagContainer                 CallFunc_GetWeaponDataGameplayTags_GameplayTags;   // 0x1E0(0x20)(None)
 	bool                                         CallFunc_WeaponDataIsValid_ReturnValue;            // 0x200(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x201(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -46,12 +43,10 @@ public:
 struct UGA_Ranged_GenericDamage_C_K2_CommitExecute_Params
 {
 public:
-	struct FGameplayEventData                    CallFunc_GetEventData_GameplayEventData;           // 0x0(0xB0)()
+	struct FGameplayEventData                    CallFunc_GetEventData_GameplayEventData;           // 0x0(0xB0)(None)
 };
 
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

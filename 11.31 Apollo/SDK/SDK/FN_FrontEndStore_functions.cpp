@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass FrontEndStore.FrontEndStore_C
+// (Actor)
+
+class UClass* AFrontEndStore_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FrontEndStore_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// FrontEndStore_C FrontEndStore.Default__FrontEndStore_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AFrontEndStore_C* AFrontEndStore_C::GetDefaultObj()
+{
+	static class AFrontEndStore_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AFrontEndStore_C*>(AFrontEndStore_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

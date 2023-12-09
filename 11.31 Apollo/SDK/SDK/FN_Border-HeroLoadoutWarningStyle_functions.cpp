@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Border-HeroLoadoutWarningStyle.Border-HeroLoadoutWarningStyle_C
+// (None)
+
+class UClass* UBorderMinusHeroLoadoutWarningStyle_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Border-HeroLoadoutWarningStyle_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Border-HeroLoadoutWarningStyle_C Border-HeroLoadoutWarningStyle.Default__Border-HeroLoadoutWarningStyle_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBorderMinusHeroLoadoutWarningStyle_C* UBorderMinusHeroLoadoutWarningStyle_C::GetDefaultObj()
+{
+	static class UBorderMinusHeroLoadoutWarningStyle_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorderMinusHeroLoadoutWarningStyle_C*>(UBorderMinusHeroLoadoutWarningStyle_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

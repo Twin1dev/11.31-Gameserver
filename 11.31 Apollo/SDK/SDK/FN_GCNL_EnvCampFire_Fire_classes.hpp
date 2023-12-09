@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -20,16 +17,13 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x788(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	float                                        Darken_Logs_Lerp_Control_8B15C9BD454B1B355EEA4D88228A7E96; // 0x790(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETimelineDirection                Darken_Logs__Direction_8B15C9BD454B1B355EEA4D88228A7E96; // 0x794(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4883[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_61F3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTimelineComponent*                    Darken_Logs;                                       // 0x798(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FScalableFloat                        Row_TickInterval;                                  // 0x7A0(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FScalableFloat                        Row_MaxHeals;                                      // 0x7C0(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GCNL_EnvCampFire_Fire_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AGCNL_EnvCampFire_Fire_C* GetDefaultObj();
 
 	void Darken_Logs__FinishedFunc();
 	void Darken_Logs__UpdateFunc();
@@ -40,6 +34,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

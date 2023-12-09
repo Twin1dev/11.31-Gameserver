@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -32,7 +29,7 @@ struct FProcMeshTangent
 public:
 	struct FVector                               TangentX;                                          // 0x0(0xC)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bFlipTangentY;                                     // 0xC(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1D77[0x3];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_E5E[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x4C (0x4C - 0x0)
@@ -60,11 +57,9 @@ public:
 	struct FBox                                  SectionLocalBox;                                   // 0x20(0x1C)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         bEnableCollision;                                  // 0x3C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bSectionVisible;                                   // 0x3D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1D78[0x2];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_E63[0x2];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -22,11 +19,8 @@ public:
 	class FString                                PropertyPath;                                      // 0x68(0x10)(ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<class UMovieSceneSection*>            Sections;                                          // 0x78(0x10)(ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieScenePropertyTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieScenePropertyTrack* GetDefaultObj();
 
 };
 
@@ -38,11 +32,8 @@ public:
 	TArray<class UMovieSceneSection*>            Sections;                                          // 0x58(0x10)(ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 	struct FGuid                                 ObjectGuid;                                        // 0x68(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneSpawnTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneSpawnTrack* GetDefaultObj();
 
 };
 
@@ -52,11 +43,8 @@ class IMovieSceneTransformOrigin : public IInterface
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneTransformOrigin");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class IMovieSceneTransformOrigin* GetDefaultObj();
 
 	struct FTransform BP_GetTransformOrigin();
 };
@@ -69,11 +57,8 @@ public:
 	struct FGuid                                 ConstraintId;                                      // 0xE0(0x10)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FMovieSceneObjectBindingID            ConstraintBindingID;                               // 0xF0(0x18)(Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieScene3DConstraintSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieScene3DConstraintSection* GetDefaultObj();
 
 	void SetConstraintBindingID(struct FMovieSceneObjectBindingID& InConstraintBindingID);
 	struct FMovieSceneObjectBindingID GetConstraintBindingID();
@@ -92,13 +77,10 @@ public:
 	enum class EDetachmentRule                   DetachmentLocationRule;                            // 0x11B(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EDetachmentRule                   DetachmentRotationRule;                            // 0x11C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EDetachmentRule                   DetachmentScaleRule;                               // 0x11D(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1A82[0x2];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_889[0x2];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieScene3DAttachSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieScene3DAttachSection* GetDefaultObj();
 
 };
 
@@ -109,11 +91,8 @@ class UMovieScene3DConstraintTrack : public UMovieSceneTrack
 public:
 	TArray<class UMovieSceneSection*>            ConstraintSections;                                // 0x58(0x10)(ExportObject, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieScene3DConstraintTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieScene3DConstraintTrack* GetDefaultObj();
 
 };
 
@@ -123,11 +102,8 @@ class UMovieScene3DAttachTrack : public UMovieScene3DConstraintTrack
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieScene3DAttachTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieScene3DAttachTrack* GetDefaultObj();
 
 };
 
@@ -139,17 +115,14 @@ public:
 	struct FMovieSceneFloatChannel               TimingCurve;                                       // 0x108(0xA0)(NativeAccessSpecifierPublic)
 	enum class EMovieScene3DPathSection_Axis     FrontAxisEnum;                                     // 0x1A8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EMovieScene3DPathSection_Axis     UpAxisEnum;                                        // 0x1A9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1A83[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_88D[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	uint8                                        bFollow : 1;                                       // Mask: 0x1, PropSize: 0x10x1AC(0x1)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bReverse : 1;                                      // Mask: 0x2, PropSize: 0x10x1AC(0x1)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bForceUpright : 1;                                 // Mask: 0x4, PropSize: 0x10x1AC(0x1)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1A84[0x3];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_88E[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieScene3DPathSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieScene3DPathSection* GetDefaultObj();
 
 };
 
@@ -159,11 +132,8 @@ class UMovieScene3DPathTrack : public UMovieScene3DConstraintTrack
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieScene3DPathTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieScene3DPathTrack* GetDefaultObj();
 
 };
 
@@ -173,20 +143,17 @@ class UMovieScene3DTransformSection : public UMovieSceneSection
 {
 public:
 	struct FMovieSceneTransformMask              TransformMask;                                     // 0xE0(0x4)(NoDestructor, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1A85[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_892[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMovieSceneFloatChannel               Translation[0x3];                                  // 0xE8(0x1E0)(NativeAccessSpecifierPrivate)
 	struct FMovieSceneFloatChannel               Rotation[0x3];                                     // 0x2C8(0x1E0)(NativeAccessSpecifierPrivate)
 	struct FMovieSceneFloatChannel               Scale[0x3];                                        // 0x4A8(0x1E0)(NativeAccessSpecifierPrivate)
 	struct FMovieSceneFloatChannel               ManualWeight;                                      // 0x688(0xA0)(NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1A86[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_894[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bUseQuaternionInterpolation;                       // 0x72C(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1A87[0x3];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_895[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieScene3DTransformSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieScene3DTransformSection* GetDefaultObj();
 
 };
 
@@ -196,11 +163,8 @@ class UMovieScene3DTransformTrack : public UMovieScenePropertyTrack
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieScene3DTransformTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieScene3DTransformTrack* GetDefaultObj();
 
 };
 
@@ -213,11 +177,8 @@ public:
 	struct FIntegralCurve                        ActorGuidIndexCurve;                               // 0x180(0x80)(Deprecated, NativeAccessSpecifierPrivate)
 	TArray<class FString>                        ActorGuidStrings;                                  // 0x200(0x10)(ZeroConstructor, Deprecated, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneActorReferenceSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneActorReferenceSection* GetDefaultObj();
 
 };
 
@@ -227,11 +188,8 @@ class UMovieSceneActorReferenceTrack : public UMovieScenePropertyTrack
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneActorReferenceTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneActorReferenceTrack* GetDefaultObj();
 
 };
 
@@ -246,22 +204,19 @@ public:
 	float                                        AudioStartTime;                                    // 0xF0(0x4)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        AudioDilationFactor;                               // 0xF4(0x4)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        AudioVolume;                                       // 0xF8(0x4)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1A88[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_8AB[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMovieSceneFloatChannel               SoundVolume;                                       // 0x100(0xA0)(NativeAccessSpecifierPrivate)
 	struct FMovieSceneFloatChannel               PitchMultiplier;                                   // 0x1A0(0xA0)(NativeAccessSpecifierPrivate)
 	bool                                         bSuppressSubtitles;                                // 0x240(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         bOverrideAttenuation;                              // 0x241(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1A89[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_8B0[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class USoundAttenuation*                     AttenuationSettings;                               // 0x248(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	UDelegateProperty_                           OnQueueSubtitles;                                  // 0x250(0x10)(ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPrivate)
 	UMulticastInlineDelegateProperty_            OnAudioFinished;                                   // 0x260(0x10)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPrivate)
 	UMulticastInlineDelegateProperty_            OnAudioPlaybackPercent;                            // 0x270(0x10)(ZeroConstructor, InstancedReference, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneAudioSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneAudioSection* GetDefaultObj();
 
 	void SetStartOffset(const struct FFrameNumber& InStartOffset);
 	void SetSound(class USoundBase* InSound);
@@ -276,11 +231,8 @@ class UMovieSceneAudioTrack : public UMovieSceneNameableTrack
 public:
 	TArray<class UMovieSceneSection*>            AudioSections;                                     // 0x58(0x10)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneAudioTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneAudioTrack* GetDefaultObj();
 
 };
 
@@ -290,14 +242,11 @@ class UMovieSceneBoolSection : public UMovieSceneSection
 {
 public:
 	bool                                         DefaultValue;                                      // 0xE0(0x1)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1A8A[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_8BA[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMovieSceneBoolChannel                BoolCurve;                                         // 0xE8(0x90)(Protected, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneBoolSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneBoolSection* GetDefaultObj();
 
 };
 
@@ -307,11 +256,8 @@ class UMovieSceneBoolTrack : public UMovieScenePropertyTrack
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneBoolTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneBoolTrack* GetDefaultObj();
 
 };
 
@@ -322,11 +268,8 @@ class UMovieSceneByteSection : public UMovieSceneSection
 public:
 	struct FMovieSceneByteChannel                ByteCurve;                                         // 0xE0(0x98)(NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneByteSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneByteSection* GetDefaultObj();
 
 };
 
@@ -337,11 +280,8 @@ class UMovieSceneByteTrack : public UMovieScenePropertyTrack
 public:
 	class UEnum*                                 Enum;                                              // 0x88(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneByteTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneByteTrack* GetDefaultObj();
 
 };
 
@@ -357,13 +297,10 @@ public:
 	float                                        BlendInTime;                                       // 0x110(0x4)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        BlendOutTime;                                      // 0x114(0x4)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                         bLooping;                                          // 0x118(0x1)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1A8B[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_8D1[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneCameraAnimSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneCameraAnimSection* GetDefaultObj();
 
 };
 
@@ -374,11 +311,8 @@ class UMovieSceneCameraAnimTrack : public UMovieSceneNameableTrack
 public:
 	TArray<class UMovieSceneSection*>            CameraAnimSections;                                // 0x58(0x10)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneCameraAnimTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneCameraAnimTrack* GetDefaultObj();
 
 };
 
@@ -390,11 +324,8 @@ public:
 	struct FGuid                                 CameraGuid;                                        // 0xE0(0x10)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FMovieSceneObjectBindingID            CameraBindingID;                                   // 0xF0(0x18)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneCameraCutSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneCameraCutSection* GetDefaultObj();
 
 	void SetCameraBindingID(struct FMovieSceneObjectBindingID& InCameraBindingID);
 	struct FMovieSceneObjectBindingID GetCameraBindingID();
@@ -407,11 +338,8 @@ class UMovieSceneCameraCutTrack : public UMovieSceneNameableTrack
 public:
 	TArray<class UMovieSceneSection*>            Sections;                                          // 0x58(0x10)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneCameraCutTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneCameraCutTrack* GetDefaultObj();
 
 };
 
@@ -424,15 +352,12 @@ public:
 	TSubclassOf<class UCameraShake>              ShakeClass;                                        // 0x100(0x8)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        PlayScale;                                         // 0x108(0x4)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ECameraAnimPlaySpace              PlaySpace;                                         // 0x10C(0x1)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1A8C[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_8D4[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRotator                              UserDefinedPlaySpace;                              // 0x110(0xC)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1A8D[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_8D5[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneCameraShakeSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneCameraShakeSection* GetDefaultObj();
 
 };
 
@@ -443,11 +368,8 @@ class UMovieSceneCameraShakeTrack : public UMovieSceneNameableTrack
 public:
 	TArray<class UMovieSceneSection*>            CameraShakeSections;                               // 0x58(0x10)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneCameraShakeTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneCameraShakeTrack* GetDefaultObj();
 
 };
 
@@ -459,11 +381,8 @@ public:
 	class FString                                ShotDisplayName;                                   // 0x150(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class FText                                  DisplayName;                                       // 0x160(0x18)(Deprecated, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneCinematicShotSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneCinematicShotSection* GetDefaultObj();
 
 	void SetShotDisplayName(const class FString& InShotDisplayName);
 	class FString GetShotDisplayName();
@@ -475,11 +394,8 @@ class UMovieSceneCinematicShotTrack : public UMovieSceneSubTrack
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneCinematicShotTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneCinematicShotTrack* GetDefaultObj();
 
 };
 
@@ -493,11 +409,8 @@ public:
 	struct FMovieSceneFloatChannel               BlueCurve;                                         // 0x220(0xA0)(NativeAccessSpecifierPrivate)
 	struct FMovieSceneFloatChannel               AlphaCurve;                                        // 0x2C0(0xA0)(NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneColorSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneColorSection* GetDefaultObj();
 
 };
 
@@ -507,13 +420,10 @@ class UMovieSceneColorTrack : public UMovieScenePropertyTrack
 {
 public:
 	bool                                         bIsSlateColor;                                     // 0x88(0x1)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1A8E[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_8E3[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneColorTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneColorTrack* GetDefaultObj();
 
 };
 
@@ -524,11 +434,8 @@ class UMovieSceneEnumSection : public UMovieSceneSection
 public:
 	struct FMovieSceneByteChannel                EnumCurve;                                         // 0xE0(0x98)(NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneEnumSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneEnumSection* GetDefaultObj();
 
 };
 
@@ -539,11 +446,8 @@ class UMovieSceneEnumTrack : public UMovieScenePropertyTrack
 public:
 	class UEnum*                                 Enum;                                              // 0x88(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneEnumTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneEnumTrack* GetDefaultObj();
 
 };
 
@@ -553,11 +457,8 @@ class UMovieSceneEulerTransformTrack : public UMovieScenePropertyTrack
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneEulerTransformTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneEulerTransformTrack* GetDefaultObj();
 
 };
 
@@ -567,11 +468,8 @@ class UMovieSceneEventSectionBase : public UMovieSceneSection
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneEventSectionBase");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneEventSectionBase* GetDefaultObj();
 
 };
 
@@ -582,11 +480,8 @@ class UMovieSceneEventRepeaterSection : public UMovieSceneEventSectionBase
 public:
 	struct FMovieSceneEvent                      Event;                                             // 0xE0(0x8)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneEventRepeaterSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneEventRepeaterSection* GetDefaultObj();
 
 };
 
@@ -598,11 +493,8 @@ public:
 	struct FNameCurve                            Events;                                            // 0xE0(0x78)(Deprecated, NativeAccessSpecifierPrivate)
 	struct FMovieSceneEventSectionData           EventData;                                         // 0x158(0x88)(NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneEventSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneEventSection* GetDefaultObj();
 
 };
 
@@ -613,18 +505,15 @@ class UMovieSceneEventTrack : public UMovieSceneNameableTrack
 public:
 	uint8                                        bFireEventsWhenForwards : 1;                       // Mask: 0x1, PropSize: 0x10x58(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bFireEventsWhenBackwards : 1;                      // Mask: 0x2, PropSize: 0x10x58(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_176 : 6;                                    // Fixing Bit-Field Size  [ Dumper-8 ]
-	uint8                                        Pad_1A8F[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        BitPad_66 : 6;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_8E7[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	enum class EFireEventsAtPosition             EventPosition;                                     // 0x5C(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1A90[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_8E8[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FMovieSceneObjectBindingID>    EventReceivers;                                    // 0x60(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<class UMovieSceneSection*>            Sections;                                          // 0x70(0x10)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneEventTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneEventTrack* GetDefaultObj();
 
 };
 
@@ -635,11 +524,8 @@ class UMovieSceneEventTriggerSection : public UMovieSceneEventSectionBase
 public:
 	struct FMovieSceneEventChannel               EventChannel;                                      // 0xE0(0x88)(NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneEventTriggerSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneEventTriggerSection* GetDefaultObj();
 
 };
 
@@ -650,11 +536,8 @@ class UMovieSceneFloatSection : public UMovieSceneSection
 public:
 	struct FMovieSceneFloatChannel               FloatCurve;                                        // 0xE0(0xA0)(Protected, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneFloatSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneFloatSection* GetDefaultObj();
 
 };
 
@@ -665,13 +548,10 @@ class UMovieSceneFadeSection : public UMovieSceneFloatSection
 public:
 	struct FLinearColor                          FadeColor;                                         // 0x180(0x10)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bFadeAudio : 1;                                    // Mask: 0x1, PropSize: 0x10x190(0x1)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1A91[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_8F0[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneFadeSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneFadeSection* GetDefaultObj();
 
 };
 
@@ -681,11 +561,8 @@ class UMovieSceneFloatTrack : public UMovieScenePropertyTrack
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneFloatTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneFloatTrack* GetDefaultObj();
 
 };
 
@@ -695,11 +572,8 @@ class UMovieSceneFadeTrack : public UMovieSceneFloatTrack
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneFadeTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneFadeTrack* GetDefaultObj();
 
 };
 
@@ -710,11 +584,8 @@ class UMovieSceneIntegerSection : public UMovieSceneSection
 public:
 	struct FMovieSceneIntegerChannel             IntegerCurve;                                      // 0xE0(0x90)(NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneIntegerSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneIntegerSection* GetDefaultObj();
 
 };
 
@@ -724,11 +595,8 @@ class UMovieSceneIntegerTrack : public UMovieScenePropertyTrack
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneIntegerTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneIntegerTrack* GetDefaultObj();
 
 };
 
@@ -738,14 +606,11 @@ class UMovieSceneLevelVisibilitySection : public UMovieSceneSection
 {
 public:
 	enum class ELevelVisibility                  Visibility;                                        // 0xE0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1A92[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_8FC[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FName>                          LevelNames;                                        // 0xE8(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneLevelVisibilitySection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneLevelVisibilitySection* GetDefaultObj();
 
 	void SetVisibility(enum class ELevelVisibility InVisibility);
 	void SetLevelNames(TArray<class FName>& InLevelNames);
@@ -760,11 +625,8 @@ class UMovieSceneLevelVisibilityTrack : public UMovieSceneNameableTrack
 public:
 	TArray<class UMovieSceneSection*>            Sections;                                          // 0x58(0x10)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneLevelVisibilityTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneLevelVisibilityTrack* GetDefaultObj();
 
 };
 
@@ -775,11 +637,8 @@ class UMovieSceneMaterialTrack : public UMovieSceneNameableTrack
 public:
 	TArray<class UMovieSceneSection*>            Sections;                                          // 0x58(0x10)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneMaterialTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneMaterialTrack* GetDefaultObj();
 
 };
 
@@ -790,11 +649,8 @@ class UMovieSceneMaterialParameterCollectionTrack : public UMovieSceneMaterialTr
 public:
 	class UMaterialParameterCollection*          MPC;                                               // 0x68(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneMaterialParameterCollectionTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneMaterialParameterCollectionTrack* GetDefaultObj();
 
 };
 
@@ -804,13 +660,10 @@ class UMovieSceneComponentMaterialTrack : public UMovieSceneMaterialTrack
 {
 public:
 	int32                                        MaterialIndex;                                     // 0x68(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1A93[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_904[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneComponentMaterialTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneComponentMaterialTrack* GetDefaultObj();
 
 };
 
@@ -821,11 +674,8 @@ class UMovieSceneObjectPropertySection : public UMovieSceneSection
 public:
 	struct FMovieSceneObjectPathChannel          ObjectChannel;                                     // 0xE0(0xC0)(NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneObjectPropertySection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneObjectPropertySection* GetDefaultObj();
 
 };
 
@@ -836,11 +686,8 @@ class UMovieSceneObjectPropertyTrack : public UMovieScenePropertyTrack
 public:
 	class UClass*                                PropertyClass;                                     // 0x88(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneObjectPropertyTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneObjectPropertyTrack* GetDefaultObj();
 
 };
 
@@ -853,11 +700,8 @@ public:
 	TArray<struct FVectorParameterNameAndCurves> VectorParameterNamesAndCurves;                     // 0xF0(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<struct FColorParameterNameAndCurves>  ColorParameterNamesAndCurves;                      // 0x100(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneParameterSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneParameterSection* GetDefaultObj();
 
 };
 
@@ -868,11 +712,8 @@ class UMovieSceneParticleParameterTrack : public UMovieSceneNameableTrack
 public:
 	TArray<class UMovieSceneSection*>            Sections;                                          // 0x58(0x10)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneParticleParameterTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneParticleParameterTrack* GetDefaultObj();
 
 };
 
@@ -883,11 +724,8 @@ class UMovieSceneParticleSection : public UMovieSceneSection
 public:
 	struct FMovieSceneParticleChannel            ParticleKeys;                                      // 0xE0(0x98)(NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneParticleSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneParticleSection* GetDefaultObj();
 
 };
 
@@ -898,11 +736,8 @@ class UMovieSceneParticleTrack : public UMovieSceneNameableTrack
 public:
 	TArray<class UMovieSceneSection*>            ParticleSections;                                  // 0x58(0x10)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneParticleTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneParticleTrack* GetDefaultObj();
 
 };
 
@@ -913,11 +748,8 @@ class UMovieScenePrimitiveMaterialSection : public UMovieSceneSection
 public:
 	struct FMovieSceneObjectPathChannel          MaterialChannel;                                   // 0xE0(0xC0)(NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieScenePrimitiveMaterialSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieScenePrimitiveMaterialSection* GetDefaultObj();
 
 };
 
@@ -927,13 +759,10 @@ class UMovieScenePrimitiveMaterialTrack : public UMovieScenePropertyTrack
 {
 public:
 	int32                                        MaterialIndex;                                     // 0x88(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1A94[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_90F[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieScenePrimitiveMaterialTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieScenePrimitiveMaterialTrack* GetDefaultObj();
 
 };
 
@@ -949,15 +778,12 @@ public:
 	float                                        EndOffset;                                         // 0x1C4(0x4)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        PlayRate;                                          // 0x1C8(0x4)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                        bReverse : 1;                                      // Mask: 0x1, PropSize: 0x10x1CC(0x1)(Deprecated, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        BitPad_177 : 7;                                    // Fixing Bit-Field Size  [ Dumper-8 ]
-	uint8                                        Pad_1A95[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        BitPad_6A : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_912[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  SlotName;                                          // 0x1D0(0x8)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneSkeletalAnimationSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneSkeletalAnimationSection* GetDefaultObj();
 
 };
 
@@ -968,13 +794,10 @@ class UMovieSceneSkeletalAnimationTrack : public UMovieSceneNameableTrack
 public:
 	TArray<class UMovieSceneSection*>            AnimationSections;                                 // 0x58(0x10)(ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 	bool                                         bUseLegacySectionIndexBlend;                       // 0x68(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1A96[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_916[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneSkeletalAnimationTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneSkeletalAnimationTrack* GetDefaultObj();
 
 };
 
@@ -984,11 +807,8 @@ class UMovieSceneSlomoSection : public UMovieSceneFloatSection
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneSlomoSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneSlomoSection* GetDefaultObj();
 
 };
 
@@ -998,11 +818,8 @@ class UMovieSceneSlomoTrack : public UMovieSceneFloatTrack
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneSlomoTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneSlomoTrack* GetDefaultObj();
 
 };
 
@@ -1012,11 +829,8 @@ class UMovieSceneSpawnSection : public UMovieSceneBoolSection
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneSpawnSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneSpawnSection* GetDefaultObj();
 
 };
 
@@ -1027,11 +841,8 @@ class UMovieSceneStringSection : public UMovieSceneSection
 public:
 	struct FMovieSceneStringChannel              StringCurve;                                       // 0xE0(0xA0)(NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneStringSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneStringSection* GetDefaultObj();
 
 };
 
@@ -1041,11 +852,8 @@ class UMovieSceneStringTrack : public UMovieScenePropertyTrack
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneStringTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneStringTrack* GetDefaultObj();
 
 };
 
@@ -1055,11 +863,8 @@ class UMovieSceneTransformTrack : public UMovieScenePropertyTrack
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneTransformTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneTransformTrack* GetDefaultObj();
 
 };
 
@@ -1070,13 +875,10 @@ class UMovieSceneVectorSection : public UMovieSceneSection
 public:
 	struct FMovieSceneFloatChannel               Curves[0x4];                                       // 0xE0(0x280)(NativeAccessSpecifierPrivate)
 	int32                                        ChannelsUsed;                                      // 0x360(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1A97[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_921[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneVectorSection");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneVectorSection* GetDefaultObj();
 
 };
 
@@ -1086,13 +888,10 @@ class UMovieSceneVectorTrack : public UMovieScenePropertyTrack
 {
 public:
 	int32                                        NumChannelsUsed;                                   // 0x88(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1A98[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_922[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneVectorTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneVectorTrack* GetDefaultObj();
 
 };
 
@@ -1102,16 +901,11 @@ class UMovieSceneVisibilityTrack : public UMovieSceneBoolTrack
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MovieSceneVisibilityTrack");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMovieSceneVisibilityTrack* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

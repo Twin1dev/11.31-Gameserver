@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ChallengeListEntry_Challenge.ChallengeListEntry_Challenge_C
+// (None)
+
+class UClass* UChallengeListEntry_Challenge_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChallengeListEntry_Challenge_C");
+
+	return Clss;
+}
+
+
+// ChallengeListEntry_Challenge_C ChallengeListEntry_Challenge.Default__ChallengeListEntry_Challenge_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChallengeListEntry_Challenge_C* UChallengeListEntry_Challenge_C::GetDefaultObj()
+{
+	static class UChallengeListEntry_Challenge_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChallengeListEntry_Challenge_C*>(UChallengeListEntry_Challenge_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ChallengeListEntry_Challenge.ChallengeListEntry_Challenge_C.OnChallengeInfoSet
@@ -25,9 +50,12 @@ namespace SDK
 
 void UChallengeListEntry_Challenge_C::OnChallengeInfoSet(bool bIsComplete, bool bIsLocked, bool bCompact, bool HideRewards)
 {
-	static auto Func = Class->GetFunction("ChallengeListEntry_Challenge_C", "OnChallengeInfoSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeListEntry_Challenge_C_OnChallengeInfoSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeListEntry_Challenge_C", "OnChallengeInfoSet");
+
+	Params::UChallengeListEntry_Challenge_C_OnChallengeInfoSet_Params Parms{};
 
 	Parms.bIsComplete = bIsComplete;
 	Parms.bIsLocked = bIsLocked;
@@ -45,12 +73,14 @@ void UChallengeListEntry_Challenge_C::OnChallengeInfoSet(bool bIsComplete, bool 
 
 void UChallengeListEntry_Challenge_C::BndEvt__SimpleButton_TopClickArea_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("ChallengeListEntry_Challenge_C", "BndEvt__SimpleButton_TopClickArea_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeListEntry_Challenge_C_BndEvt__SimpleButton_TopClickArea_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeListEntry_Challenge_C", "BndEvt__SimpleButton_TopClickArea_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -61,12 +91,14 @@ void UChallengeListEntry_Challenge_C::BndEvt__SimpleButton_TopClickArea_K2Node_C
 
 void UChallengeListEntry_Challenge_C::BndEvt__SimpleButton_TopClickArea_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("ChallengeListEntry_Challenge_C", "BndEvt__SimpleButton_TopClickArea_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeListEntry_Challenge_C_BndEvt__SimpleButton_TopClickArea_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeListEntry_Challenge_C", "BndEvt__SimpleButton_TopClickArea_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -78,9 +110,12 @@ void UChallengeListEntry_Challenge_C::BndEvt__SimpleButton_TopClickArea_K2Node_C
 
 void UChallengeListEntry_Challenge_C::OnPartyAssistEnabledChanged(bool bIsPartyAssistEnabled)
 {
-	static auto Func = Class->GetFunction("ChallengeListEntry_Challenge_C", "OnPartyAssistEnabledChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeListEntry_Challenge_C_OnPartyAssistEnabledChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeListEntry_Challenge_C", "OnPartyAssistEnabledChanged");
+
+	Params::UChallengeListEntry_Challenge_C_OnPartyAssistEnabledChanged_Params Parms{};
 
 	Parms.bIsPartyAssistEnabled = bIsPartyAssistEnabled;
 
@@ -96,9 +131,12 @@ void UChallengeListEntry_Challenge_C::OnPartyAssistEnabledChanged(bool bIsPartyA
 
 void UChallengeListEntry_Challenge_C::BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ChallengeListEntry_Challenge_C", "BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeListEntry_Challenge_C_BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeListEntry_Challenge_C", "BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UChallengeListEntry_Challenge_C_BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -115,9 +153,12 @@ void UChallengeListEntry_Challenge_C::BndEvt__Button_PartyAssist_K2Node_Componen
 
 void UChallengeListEntry_Challenge_C::BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_3_CommonSelectedStateChanged__DelegateSignature(class UCommonButton* Button, bool Selected)
 {
-	static auto Func = Class->GetFunction("ChallengeListEntry_Challenge_C", "BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_3_CommonSelectedStateChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeListEntry_Challenge_C_BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_3_CommonSelectedStateChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeListEntry_Challenge_C", "BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_3_CommonSelectedStateChanged__DelegateSignature");
+
+	Params::UChallengeListEntry_Challenge_C_BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_3_CommonSelectedStateChanged__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 	Parms.Selected = Selected;
@@ -179,9 +220,12 @@ void UChallengeListEntry_Challenge_C::BndEvt__Button_PartyAssist_K2Node_Componen
 
 void UChallengeListEntry_Challenge_C::ExecuteUbergraph_ChallengeListEntry_Challenge(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, bool Temp_bool_Variable_1, float Temp_float_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable_2, int32 Temp_int_Variable, int32 Temp_int_Variable_1, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility Temp_byte_Variable_4, bool Temp_bool_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, enum class ESlateVisibility Temp_byte_Variable_6, bool Temp_bool_Variable_5, enum class ESlateVisibility Temp_byte_Variable_7, enum class ESlateVisibility Temp_byte_Variable_8, bool K2Node_Event_bIsComplete, bool K2Node_Event_bIsLocked, bool K2Node_Event_bCompact, bool K2Node_Event_HideRewards, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, bool CallFunc_BooleanOR_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, float K2Node_Select_Default_2, bool K2Node_Event_bIsPartyAssistEnabled, enum class ESlateVisibility K2Node_Select_Default_3, enum class ESlateVisibility Temp_byte_Variable_9, bool Temp_bool_Variable_6, enum class ESlateVisibility Temp_byte_Variable_10, enum class ESlateVisibility K2Node_Select_Default_4, int32 K2Node_Select_Default_5, enum class ESlateVisibility K2Node_Select_Default_6, class UUMGSequencePlayer* CallFunc_PlayAnimationTimeRange_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, enum class ESlateVisibility Temp_byte_Variable_11, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool K2Node_ComponentBoundEvent_Selected, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool Temp_bool_Variable_7, enum class ESlateVisibility K2Node_Select_Default_7)
 {
-	static auto Func = Class->GetFunction("ChallengeListEntry_Challenge_C", "ExecuteUbergraph_ChallengeListEntry_Challenge");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeListEntry_Challenge_C_ExecuteUbergraph_ChallengeListEntry_Challenge_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeListEntry_Challenge_C", "ExecuteUbergraph_ChallengeListEntry_Challenge");
+
+	Params::UChallengeListEntry_Challenge_C_ExecuteUbergraph_ChallengeListEntry_Challenge_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -236,6 +280,4 @@ void UChallengeListEntry_Challenge_C::ExecuteUbergraph_ChallengeListEntry_Challe
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

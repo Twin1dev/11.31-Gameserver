@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -21,11 +18,8 @@ public:
 	class AActor*                                VelocityActor;                                     // 0x2D8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               TargetRot;                                         // 0x2E0(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_CameraLens_SpookyMist_Dive_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_CameraLens_SpookyMist_Dive_C* GetDefaultObj();
 
 	void ReceiveBeginPlay();
 	void ExecuteUbergraph_B_CameraLens_SpookyMist_Dive(int32 EntryPoint);
@@ -33,6 +27,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

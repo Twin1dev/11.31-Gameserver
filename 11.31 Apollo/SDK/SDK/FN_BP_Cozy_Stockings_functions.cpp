@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_Cozy_Stockings.BP_Cozy_Stockings_C
+// (Actor)
+
+class UClass* ABP_Cozy_Stockings_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_Cozy_Stockings_C");
+
+	return Clss;
+}
+
+
+// BP_Cozy_Stockings_C BP_Cozy_Stockings.Default__BP_Cozy_Stockings_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_Cozy_Stockings_C* ABP_Cozy_Stockings_C::GetDefaultObj()
+{
+	static class ABP_Cozy_Stockings_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_Cozy_Stockings_C*>(ABP_Cozy_Stockings_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_Cozy_Stockings.BP_Cozy_Stockings_C.GetHasStockingQuestActive
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ABP_Cozy_Stockings_C::GetHasStockingQuestActive(bool* bHasStockingQuestActive)
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Stockings_C", "GetHasStockingQuestActive");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Stockings_C_GetHasStockingQuestActive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Stockings_C", "GetHasStockingQuestActive");
+
+	Params::ABP_Cozy_Stockings_C_GetHasStockingQuestActive_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -42,9 +70,12 @@ void ABP_Cozy_Stockings_C::GetHasStockingQuestActive(bool* bHasStockingQuestActi
 
 void ABP_Cozy_Stockings_C::UserConstructionScript(class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Stockings_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Stockings_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Stockings_C", "UserConstructionScript");
+
+	Params::ABP_Cozy_Stockings_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
 
@@ -59,12 +90,14 @@ void ABP_Cozy_Stockings_C::UserConstructionScript(class UMaterialInstanceDynamic
 
 void ABP_Cozy_Stockings_C::Timeline_0__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Stockings_C", "Timeline_0__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Stockings_C_Timeline_0__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Stockings_C", "Timeline_0__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -75,12 +108,14 @@ void ABP_Cozy_Stockings_C::Timeline_0__FinishedFunc()
 
 void ABP_Cozy_Stockings_C::Timeline_0__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Stockings_C", "Timeline_0__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Stockings_C_Timeline_0__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Stockings_C", "Timeline_0__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -91,12 +126,14 @@ void ABP_Cozy_Stockings_C::Timeline_0__UpdateFunc()
 
 void ABP_Cozy_Stockings_C::OnFrontendInteract()
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Stockings_C", "OnFrontendInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Stockings_C_OnFrontendInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Stockings_C", "OnFrontendInteract");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -107,12 +144,14 @@ void ABP_Cozy_Stockings_C::OnFrontendInteract()
 
 void ABP_Cozy_Stockings_C::SetStateEmpty()
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Stockings_C", "SetStateEmpty");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Stockings_C_SetStateEmpty_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Stockings_C", "SetStateEmpty");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -123,12 +162,14 @@ void ABP_Cozy_Stockings_C::SetStateEmpty()
 
 void ABP_Cozy_Stockings_C::SetStateFull()
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Stockings_C", "SetStateFull");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Stockings_C_SetStateFull_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Stockings_C", "SetStateFull");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -139,12 +180,14 @@ void ABP_Cozy_Stockings_C::SetStateFull()
 
 void ABP_Cozy_Stockings_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Stockings_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Stockings_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Stockings_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -155,12 +198,14 @@ void ABP_Cozy_Stockings_C::ReceiveBeginPlay()
 
 void ABP_Cozy_Stockings_C::CheckStockingState()
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Stockings_C", "CheckStockingState");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Stockings_C_CheckStockingState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Stockings_C", "CheckStockingState");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -171,12 +216,14 @@ void ABP_Cozy_Stockings_C::CheckStockingState()
 
 void ABP_Cozy_Stockings_C::Debug_CurrentQuestsTotal()
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Stockings_C", "Debug_CurrentQuestsTotal");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Stockings_C_Debug_CurrentQuestsTotal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Stockings_C", "Debug_CurrentQuestsTotal");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -187,12 +234,14 @@ void ABP_Cozy_Stockings_C::Debug_CurrentQuestsTotal()
 
 void ABP_Cozy_Stockings_C::BP_OnInventoryUpdated()
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Stockings_C", "BP_OnInventoryUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Stockings_C_BP_OnInventoryUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Stockings_C", "BP_OnInventoryUpdated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -203,12 +252,14 @@ void ABP_Cozy_Stockings_C::BP_OnInventoryUpdated()
 
 void ABP_Cozy_Stockings_C::StartInteraction()
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Stockings_C", "StartInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Stockings_C_StartInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Stockings_C", "StartInteraction");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -219,12 +270,14 @@ void ABP_Cozy_Stockings_C::StartInteraction()
 
 void ABP_Cozy_Stockings_C::StopInteraction()
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Stockings_C", "StopInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Stockings_C_StopInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Stockings_C", "StopInteraction");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -264,9 +317,12 @@ void ABP_Cozy_Stockings_C::StopInteraction()
 
 void ABP_Cozy_Stockings_C::ExecuteUbergraph_BP_Cozy_Stockings(int32 EntryPoint, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, const struct FDataTableRowHandle& K2Node_MakeStruct_DataTableRowHandle, bool CallFunc_SetStaticMesh_ReturnValue, class AFortPlayerController* CallFunc_GetFirstLocalFortPlayerController_ReturnValue, bool CallFunc_SetStaticMesh_ReturnValue_1, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, int32 Temp_int_Array_Index_Variable, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, class UFortQuestItemDefinition* CallFunc_Array_Get_Item, bool CallFunc_Athena_HasQuest_PlayerHasQuest, bool CallFunc_HasCompletedObjective_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Athena_HasQuest_PlayerHasQuest_1, bool CallFunc_BooleanAND_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, int32 Temp_int_Loop_Counter_Variable, float CallFunc_Multiply_FloatFloat_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Stockings_C", "ExecuteUbergraph_BP_Cozy_Stockings");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Stockings_C_ExecuteUbergraph_BP_Cozy_Stockings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Stockings_C", "ExecuteUbergraph_BP_Cozy_Stockings");
+
+	Params::ABP_Cozy_Stockings_C_ExecuteUbergraph_BP_Cozy_Stockings_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_K2_GetComponentLocation_ReturnValue = CallFunc_K2_GetComponentLocation_ReturnValue;
@@ -304,6 +360,4 @@ void ABP_Cozy_Stockings_C::ExecuteUbergraph_BP_Cozy_Stockings(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

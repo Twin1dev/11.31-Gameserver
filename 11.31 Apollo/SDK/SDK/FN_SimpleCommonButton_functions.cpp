@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass SimpleCommonButton.SimpleCommonButton_C
+// (None)
+
+class UClass* USimpleCommonButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SimpleCommonButton_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// SimpleCommonButton_C SimpleCommonButton.Default__SimpleCommonButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USimpleCommonButton_C* USimpleCommonButton_C::GetDefaultObj()
+{
+	static class USimpleCommonButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USimpleCommonButton_C*>(USimpleCommonButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -23,18 +20,15 @@ public:
 	class USoundBase*                            Sniper_Rifle_SurfaceImpactSound;                   // 0x958(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                            Sniper_Rifle_PlayerImpactSound;                    // 0x960(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               DecalSize;                                         // 0x968(0xC)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_41E8[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5534[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FScalableFloat                        ProjectileGravityScale;                            // 0x978(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         UseGalileoBunTracer;                               // 0x998(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                        Pad_41E9[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5535[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UParticleSystem*                       GenericTracer;                                     // 0x9A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMesh*                           GenericMesh;                                       // 0x9A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_Prj_Galileo_Lobster_Reflect_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_Prj_Galileo_Lobster_Reflect_C* GetDefaultObj();
 
 	void UserConstructionScript(float CallFunc_GetValueAtLevel_ReturnValue);
 	void OnStop(struct FHitResult& Hit);
@@ -44,6 +38,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass OptionsMenuHeader.OptionsMenuHeader_C
+// (None)
+
+class UClass* UOptionsMenuHeader_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OptionsMenuHeader_C");
+
+	return Clss;
+}
+
+
+// OptionsMenuHeader_C OptionsMenuHeader.Default__OptionsMenuHeader_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UOptionsMenuHeader_C* UOptionsMenuHeader_C::GetDefaultObj()
+{
+	static class UOptionsMenuHeader_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UOptionsMenuHeader_C*>(UOptionsMenuHeader_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function OptionsMenuHeader.OptionsMenuHeader_C.SetFontSize
@@ -28,9 +53,12 @@ namespace SDK
 
 void UOptionsMenuHeader_C::SetFontSize(class UCommonTextBlock* Text, int32 DefaultSize, int32 MobileSize, const struct FSlateFontInfo& TempFont, bool Temp_bool_Variable, bool CallFunc_IsMobileGame_ReturnValue, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("OptionsMenuHeader_C", "SetFontSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuHeader_C_SetFontSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuHeader_C", "SetFontSize");
+
+	Params::UOptionsMenuHeader_C_SetFontSize_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.DefaultSize = DefaultSize;
@@ -58,9 +86,12 @@ void UOptionsMenuHeader_C::SetFontSize(class UCommonTextBlock* Text, int32 Defau
 
 void UOptionsMenuHeader_C::HandlePawnSet(bool bRCPawn, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_Not_PreBool_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class APawn* CallFunc_K2_GetPawn_ReturnValue, class AFortRemoteControlledPawnAthena* K2Node_DynamicCast_AsFort_Remote_Controlled_Pawn_Athena, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("OptionsMenuHeader_C", "HandlePawnSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuHeader_C_HandlePawnSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuHeader_C", "HandlePawnSet");
+
+	Params::UOptionsMenuHeader_C_HandlePawnSet_Params Parms{};
 
 	Parms.bRCPawn = bRCPawn;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
@@ -88,9 +119,12 @@ void UOptionsMenuHeader_C::HandlePawnSet(bool bRCPawn, bool K2Node_SwitchEnum_Cm
 
 void UOptionsMenuHeader_C::UpdateSize(const struct FVector2D& LargeSize, const struct FVector2D& SmallSize, bool Temp_bool_Variable, const struct FVector2D& Temp_struct_Variable, const struct FVector2D& Temp_struct_Variable_1, bool CallFunc_IsBROnly_ReturnValue, const struct FVector2D& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("OptionsMenuHeader_C", "UpdateSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuHeader_C_UpdateSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuHeader_C", "UpdateSize");
+
+	Params::UOptionsMenuHeader_C_UpdateSize_Params Parms{};
 
 	Parms.LargeSize = LargeSize;
 	Parms.SmallSize = SmallSize;
@@ -111,12 +145,14 @@ void UOptionsMenuHeader_C::UpdateSize(const struct FVector2D& LargeSize, const s
 
 void UOptionsMenuHeader_C::Center_On_Widget()
 {
-	static auto Func = Class->GetFunction("OptionsMenuHeader_C", "Center On Widget");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuHeader_C_Center_On_Widget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuHeader_C", "Center On Widget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -128,9 +164,12 @@ void UOptionsMenuHeader_C::Center_On_Widget()
 
 void UOptionsMenuHeader_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("OptionsMenuHeader_C", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuHeader_C_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuHeader_C", "BP_OnItemSelectionChanged");
+
+	Params::UOptionsMenuHeader_C_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -145,12 +184,14 @@ void UOptionsMenuHeader_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UOptionsMenuHeader_C::Construct()
 {
-	static auto Func = Class->GetFunction("OptionsMenuHeader_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuHeader_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuHeader_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -162,9 +203,12 @@ void UOptionsMenuHeader_C::Construct()
 
 void UOptionsMenuHeader_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("OptionsMenuHeader_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuHeader_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuHeader_C", "OnMouseLeave");
+
+	Params::UOptionsMenuHeader_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -181,9 +225,12 @@ void UOptionsMenuHeader_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 
 void UOptionsMenuHeader_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("OptionsMenuHeader_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuHeader_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuHeader_C", "OnMouseEnter");
+
+	Params::UOptionsMenuHeader_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -200,9 +247,12 @@ void UOptionsMenuHeader_C::OnMouseEnter(const struct FGeometry& MyGeometry, stru
 
 void UOptionsMenuHeader_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("OptionsMenuHeader_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuHeader_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuHeader_C", "OnListItemObjectSet");
+
+	Params::UOptionsMenuHeader_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -218,9 +268,12 @@ void UOptionsMenuHeader_C::OnListItemObjectSet(class UObject* ListItemObject)
 
 void UOptionsMenuHeader_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("OptionsMenuHeader_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuHeader_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuHeader_C", "BP_OnItemExpansionChanged");
+
+	Params::UOptionsMenuHeader_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -235,12 +288,14 @@ void UOptionsMenuHeader_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UOptionsMenuHeader_C::CenterOnWidget()
 {
-	static auto Func = Class->GetFunction("OptionsMenuHeader_C", "CenterOnWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuHeader_C_CenterOnWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuHeader_C", "CenterOnWidget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -251,12 +306,14 @@ void UOptionsMenuHeader_C::CenterOnWidget()
 
 void UOptionsMenuHeader_C::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("OptionsMenuHeader_C", "BP_OnEntryReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuHeader_C_BP_OnEntryReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuHeader_C", "BP_OnEntryReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -278,9 +335,12 @@ void UOptionsMenuHeader_C::BP_OnEntryReleased()
 
 void UOptionsMenuHeader_C::ExecuteUbergraph_OptionsMenuHeader(int32 EntryPoint, class UObject* K2Node_Event_ListItemObject, class UFortSettingInfo* K2Node_DynamicCast_AsFort_Setting_Info, bool K2Node_DynamicCast_bSuccess, bool K2Node_Event_bIsExpanded, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent, const struct FPointerEvent& K2Node_Event_MouseEvent_1, bool K2Node_Event_bIsSelected, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsUsingGamepad_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenuHeader_C", "ExecuteUbergraph_OptionsMenuHeader");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuHeader_C_ExecuteUbergraph_OptionsMenuHeader_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuHeader_C", "ExecuteUbergraph_OptionsMenuHeader");
+
+	Params::UOptionsMenuHeader_C_ExecuteUbergraph_OptionsMenuHeader_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_ListItemObject = K2Node_Event_ListItemObject;
@@ -300,6 +360,4 @@ void UOptionsMenuHeader_C::ExecuteUbergraph_OptionsMenuHeader(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

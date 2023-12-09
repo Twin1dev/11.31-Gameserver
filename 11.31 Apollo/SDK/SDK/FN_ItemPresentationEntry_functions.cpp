@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ItemPresentationEntry.ItemPresentationEntry_C
+// (None)
+
+class UClass* UItemPresentationEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemPresentationEntry_C");
+
+	return Clss;
+}
+
+
+// ItemPresentationEntry_C ItemPresentationEntry.Default__ItemPresentationEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemPresentationEntry_C* UItemPresentationEntry_C::GetDefaultObj()
+{
+	static class UItemPresentationEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemPresentationEntry_C*>(UItemPresentationEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ItemPresentationEntry.ItemPresentationEntry_C.HandelDeselectedAnim
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UItemPresentationEntry_C::HandelDeselectedAnim(class UAthenaSeasonItemRewardIcon_C* K2Node_DynamicCast_AsAthena_Season_Item_Reward_Icon, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("ItemPresentationEntry_C", "HandelDeselectedAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationEntry_C_HandelDeselectedAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationEntry_C", "HandelDeselectedAnim");
+
+	Params::UItemPresentationEntry_C_HandelDeselectedAnim_Params Parms{};
 
 	Parms.K2Node_DynamicCast_AsAthena_Season_Item_Reward_Icon = K2Node_DynamicCast_AsAthena_Season_Item_Reward_Icon;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
@@ -45,9 +73,12 @@ void UItemPresentationEntry_C::HandelDeselectedAnim(class UAthenaSeasonItemRewar
 
 void UItemPresentationEntry_C::HandleSelectedAnim(float CallFunc_GetEndTime_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UAthenaSeasonItemRewardIcon_C* K2Node_DynamicCast_AsAthena_Season_Item_Reward_Icon, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("ItemPresentationEntry_C", "HandleSelectedAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationEntry_C_HandleSelectedAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationEntry_C", "HandleSelectedAnim");
+
+	Params::UItemPresentationEntry_C_HandleSelectedAnim_Params Parms{};
 
 	Parms.CallFunc_GetEndTime_ReturnValue = CallFunc_GetEndTime_ReturnValue;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -68,9 +99,12 @@ void UItemPresentationEntry_C::HandleSelectedAnim(float CallFunc_GetEndTime_Retu
 
 void UItemPresentationEntry_C::HandleUnhover(class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UAthenaSeasonItemRewardIcon_C* K2Node_DynamicCast_AsAthena_Season_Item_Reward_Icon, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("ItemPresentationEntry_C", "HandleUnhover");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationEntry_C_HandleUnhover_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationEntry_C", "HandleUnhover");
+
+	Params::UItemPresentationEntry_C_HandleUnhover_Params Parms{};
 
 	Parms.CallFunc_PlayAnimationReverse_ReturnValue = CallFunc_PlayAnimationReverse_ReturnValue;
 	Parms.K2Node_DynamicCast_AsAthena_Season_Item_Reward_Icon = K2Node_DynamicCast_AsAthena_Season_Item_Reward_Icon;
@@ -90,9 +124,12 @@ void UItemPresentationEntry_C::HandleUnhover(class UUMGSequencePlayer* CallFunc_
 
 void UItemPresentationEntry_C::HandleHover(class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UAthenaSeasonItemRewardIcon_C* K2Node_DynamicCast_AsAthena_Season_Item_Reward_Icon, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("ItemPresentationEntry_C", "HandleHover");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationEntry_C_HandleHover_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationEntry_C", "HandleHover");
+
+	Params::UItemPresentationEntry_C_HandleHover_Params Parms{};
 
 	Parms.CallFunc_PlayAnimationForward_ReturnValue = CallFunc_PlayAnimationForward_ReturnValue;
 	Parms.K2Node_DynamicCast_AsAthena_Season_Item_Reward_Icon = K2Node_DynamicCast_AsAthena_Season_Item_Reward_Icon;
@@ -109,12 +146,14 @@ void UItemPresentationEntry_C::HandleHover(class UUMGSequencePlayer* CallFunc_Pl
 
 void UItemPresentationEntry_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("ItemPresentationEntry_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationEntry_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationEntry_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -125,12 +164,14 @@ void UItemPresentationEntry_C::BP_OnHovered()
 
 void UItemPresentationEntry_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("ItemPresentationEntry_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationEntry_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationEntry_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -141,12 +182,14 @@ void UItemPresentationEntry_C::BP_OnUnhovered()
 
 void UItemPresentationEntry_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("ItemPresentationEntry_C", "BP_OnSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationEntry_C_BP_OnSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationEntry_C", "BP_OnSelected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -157,12 +200,14 @@ void UItemPresentationEntry_C::BP_OnSelected()
 
 void UItemPresentationEntry_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("ItemPresentationEntry_C", "BP_OnDeselected");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationEntry_C_BP_OnDeselected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationEntry_C", "BP_OnDeselected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -174,9 +219,12 @@ void UItemPresentationEntry_C::BP_OnDeselected()
 
 void UItemPresentationEntry_C::DelayIntroAnimation(float Delay)
 {
-	static auto Func = Class->GetFunction("ItemPresentationEntry_C", "DelayIntroAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationEntry_C_DelayIntroAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationEntry_C", "DelayIntroAnimation");
+
+	Params::UItemPresentationEntry_C_DelayIntroAnimation_Params Parms{};
 
 	Parms.Delay = Delay;
 
@@ -191,12 +239,14 @@ void UItemPresentationEntry_C::DelayIntroAnimation(float Delay)
 
 void UItemPresentationEntry_C::Construct()
 {
-	static auto Func = Class->GetFunction("ItemPresentationEntry_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationEntry_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationEntry_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -207,12 +257,14 @@ void UItemPresentationEntry_C::Construct()
 
 void UItemPresentationEntry_C::OnInitialIconAnimation()
 {
-	static auto Func = Class->GetFunction("ItemPresentationEntry_C", "OnInitialIconAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationEntry_C_OnInitialIconAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationEntry_C", "OnInitialIconAnimation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -227,9 +279,12 @@ void UItemPresentationEntry_C::OnInitialIconAnimation()
 
 void UItemPresentationEntry_C::ExecuteUbergraph_ItemPresentationEntry(int32 EntryPoint, float K2Node_CustomEvent_Delay, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("ItemPresentationEntry_C", "ExecuteUbergraph_ItemPresentationEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationEntry_C_ExecuteUbergraph_ItemPresentationEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationEntry_C", "ExecuteUbergraph_ItemPresentationEntry");
+
+	Params::UItemPresentationEntry_C_ExecuteUbergraph_ItemPresentationEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_Delay = K2Node_CustomEvent_Delay;
@@ -242,6 +297,4 @@ void UItemPresentationEntry_C::ExecuteUbergraph_ItemPresentationEntry(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

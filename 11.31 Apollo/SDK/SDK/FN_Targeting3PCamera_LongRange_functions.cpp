@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Targeting3PCamera_LongRange.Targeting3PCamera_LongRange_C
+// (None)
+
+class UClass* UTargeting3PCamera_LongRange_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Targeting3PCamera_LongRange_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Targeting3PCamera_LongRange_C Targeting3PCamera_LongRange.Default__Targeting3PCamera_LongRange_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTargeting3PCamera_LongRange_C* UTargeting3PCamera_LongRange_C::GetDefaultObj()
+{
+	static class UTargeting3PCamera_LongRange_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTargeting3PCamera_LongRange_C*>(UTargeting3PCamera_LongRange_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCN_RiftSpawnerDestroyed.GCN_RiftSpawnerDestroyed_C
+// (None)
+
+class UClass* UGCN_RiftSpawnerDestroyed_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCN_RiftSpawnerDestroyed_C");
+
+	return Clss;
+}
+
+
+// GCN_RiftSpawnerDestroyed_C GCN_RiftSpawnerDestroyed.Default__GCN_RiftSpawnerDestroyed_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGCN_RiftSpawnerDestroyed_C* UGCN_RiftSpawnerDestroyed_C::GetDefaultObj()
+{
+	static class UGCN_RiftSpawnerDestroyed_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGCN_RiftSpawnerDestroyed_C*>(UGCN_RiftSpawnerDestroyed_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCN_RiftSpawnerDestroyed.GCN_RiftSpawnerDestroyed_C.OnBurst
@@ -30,9 +55,12 @@ namespace SDK
 
 void UGCN_RiftSpawnerDestroyed_C::OnBurst(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance, class UParticleSystemComponent* CallFunc_Array_Get_Item, class ABP_DeimosRift_Dynamic_C* K2Node_DynamicCast_AsBP_Deimos_Rift_Dynamic, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GCN_RiftSpawnerDestroyed_C", "OnBurst");
+	static class UFunction* Func = nullptr;
 
-	Params::UGCN_RiftSpawnerDestroyed_C_OnBurst_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_RiftSpawnerDestroyed_C", "OnBurst");
+
+	Params::UGCN_RiftSpawnerDestroyed_C_OnBurst_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -50,6 +78,4 @@ void UGCN_RiftSpawnerDestroyed_C::OnBurst(class AActor* MyTarget, struct FGamepl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -30,22 +27,19 @@ public:
 	class UImage*                                Triangles_3;                                       // 0x488(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                       WidgetSwitcher_SeverityImage;                      // 0x490(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         AckSucceeded;                                      // 0x498(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4284[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_66FF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  BanInformation;                                    // 0x4A0(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	UMulticastInlineDelegateProperty_            OnCloseSucceeded;                                  // 0x4B8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	int32                                        TryCount;                                          // 0x4C8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bIsWarning;                                        // 0x4CC(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4285[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6700[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMcpBanInfo                           McpBanInfo;                                        // 0x4D0(0x58)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  BanType;                                           // 0x528(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         bIsCompetitiveBan;                                 // 0x540(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         bIsTeamingWithCheaterBan;                          // 0x541(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("PlayerBannedModal_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UPlayerBannedModal_C* GetDefaultObj();
 
 	void HandleCloseAttempted(int32 Temp_int_Variable, class UFortMcpContext* CallFunc_GetContext_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate);
 	void RemoveModal();
@@ -62,6 +56,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

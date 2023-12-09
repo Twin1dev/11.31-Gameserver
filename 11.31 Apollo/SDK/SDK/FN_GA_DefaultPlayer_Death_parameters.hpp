@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,13 +12,6 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
-
-// 0x0 (0x0 - 0x0)
-// Function GA_DefaultPlayer_Death.GA_DefaultPlayer_Death_C.PickDeathMontageSection
-struct UGA_DefaultPlayer_Death_C_PickDeathMontageSection_Params
-{
-public:
-};
 
 // 0x6 (0x6 - 0x0)
 // Function GA_DefaultPlayer_Death.GA_DefaultPlayer_Death_C.ExecuteUbergraph_GA_DefaultPlayer_Death
@@ -36,6 +26,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

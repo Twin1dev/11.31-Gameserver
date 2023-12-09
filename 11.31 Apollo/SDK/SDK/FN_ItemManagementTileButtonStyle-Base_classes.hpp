@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -14,20 +11,15 @@ namespace SDK
 
 // 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ItemManagementTileButtonStyle-Base.ItemManagementTileButtonStyle-Base_C
-class UItemManagementTileButtonStyle_Base_C : public UButtonStyle_Base_C
+class UItemManagementTileButtonStyleMinusBase_C : public UButtonStyleMinusBase_C
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ItemManagementTileButtonStyle-Base_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UItemManagementTileButtonStyleMinusBase_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

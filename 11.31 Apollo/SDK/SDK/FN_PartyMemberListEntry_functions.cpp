@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass PartyMemberListEntry.PartyMemberListEntry_C
+// (None)
+
+class UClass* UPartyMemberListEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PartyMemberListEntry_C");
+
+	return Clss;
+}
+
+
+// PartyMemberListEntry_C PartyMemberListEntry.Default__PartyMemberListEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPartyMemberListEntry_C* UPartyMemberListEntry_C::GetDefaultObj()
+{
+	static class UPartyMemberListEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPartyMemberListEntry_C*>(UPartyMemberListEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PartyMemberListEntry.PartyMemberListEntry_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UPartyMemberListEntry_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("PartyMemberListEntry_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartyMemberListEntry_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyMemberListEntry_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UPartyMemberListEntry_C::BP_OnUnhovered()
 
 void UPartyMemberListEntry_C::BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen)
 {
-	static auto Func = Class->GetFunction("PartyMemberListEntry_C", "BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartyMemberListEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyMemberListEntry_C", "BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
+
+	Params::UPartyMemberListEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.bIsOpen = bIsOpen;
 
@@ -55,12 +85,14 @@ void UPartyMemberListEntry_C::BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEv
 
 void UPartyMemberListEntry_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("PartyMemberListEntry_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartyMemberListEntry_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyMemberListEntry_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -78,9 +110,12 @@ void UPartyMemberListEntry_C::BP_OnHovered()
 
 void UPartyMemberListEntry_C::ExecuteUbergraph_PartyMemberListEntry(int32 EntryPoint, bool K2Node_ComponentBoundEvent_bIsOpen, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, bool CallFunc_IsAnimationPlaying_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("PartyMemberListEntry_C", "ExecuteUbergraph_PartyMemberListEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UPartyMemberListEntry_C_ExecuteUbergraph_PartyMemberListEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyMemberListEntry_C", "ExecuteUbergraph_PartyMemberListEntry");
+
+	Params::UPartyMemberListEntry_C_ExecuteUbergraph_PartyMemberListEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_bIsOpen = K2Node_ComponentBoundEvent_bIsOpen;
@@ -96,6 +131,4 @@ void UPartyMemberListEntry_C::ExecuteUbergraph_PartyMemberListEntry(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

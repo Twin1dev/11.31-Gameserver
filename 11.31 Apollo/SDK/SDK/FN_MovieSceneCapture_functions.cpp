@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class MovieSceneCapture.MovieSceneCaptureProtocolBase
+// (None)
+
+class UClass* UMovieSceneCaptureProtocolBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MovieSceneCaptureProtocolBase");
+
+	return Clss;
+}
+
+
+// MovieSceneCaptureProtocolBase MovieSceneCapture.Default__MovieSceneCaptureProtocolBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMovieSceneCaptureProtocolBase* UMovieSceneCaptureProtocolBase::GetDefaultObj()
+{
+	static class UMovieSceneCaptureProtocolBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMovieSceneCaptureProtocolBase*>(UMovieSceneCaptureProtocolBase::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MovieSceneCapture.MovieSceneCaptureProtocolBase.IsCapturing
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -22,18 +47,21 @@ namespace SDK
 
 bool UMovieSceneCaptureProtocolBase::IsCapturing()
 {
-	static auto Func = Class->GetFunction("MovieSceneCaptureProtocolBase", "IsCapturing");
+	static class UFunction* Func = nullptr;
 
-	Params::UMovieSceneCaptureProtocolBase_IsCapturing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MovieSceneCaptureProtocolBase", "IsCapturing");
+
+	Params::UMovieSceneCaptureProtocolBase_IsCapturing_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -47,21 +75,416 @@ bool UMovieSceneCaptureProtocolBase::IsCapturing()
 
 enum class EMovieSceneCaptureProtocolState UMovieSceneCaptureProtocolBase::GetState()
 {
-	static auto Func = Class->GetFunction("MovieSceneCaptureProtocolBase", "GetState");
+	static class UFunction* Func = nullptr;
 
-	Params::UMovieSceneCaptureProtocolBase_GetState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MovieSceneCaptureProtocolBase", "GetState");
+
+	Params::UMovieSceneCaptureProtocolBase_GetState_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class MovieSceneCapture.MovieSceneAudioCaptureProtocolBase
+// (None)
+
+class UClass* UMovieSceneAudioCaptureProtocolBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MovieSceneAudioCaptureProtocolBase");
+
+	return Clss;
+}
+
+
+// MovieSceneAudioCaptureProtocolBase MovieSceneCapture.Default__MovieSceneAudioCaptureProtocolBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMovieSceneAudioCaptureProtocolBase* UMovieSceneAudioCaptureProtocolBase::GetDefaultObj()
+{
+	static class UMovieSceneAudioCaptureProtocolBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMovieSceneAudioCaptureProtocolBase*>(UMovieSceneAudioCaptureProtocolBase::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MovieSceneCapture.NullAudioCaptureProtocol
+// (None)
+
+class UClass* UNullAudioCaptureProtocol::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("NullAudioCaptureProtocol");
+
+	return Clss;
+}
+
+
+// NullAudioCaptureProtocol MovieSceneCapture.Default__NullAudioCaptureProtocol
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UNullAudioCaptureProtocol* UNullAudioCaptureProtocol::GetDefaultObj()
+{
+	static class UNullAudioCaptureProtocol* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UNullAudioCaptureProtocol*>(UNullAudioCaptureProtocol::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MovieSceneCapture.MasterAudioSubmixCaptureProtocol
+// (None)
+
+class UClass* UMasterAudioSubmixCaptureProtocol::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MasterAudioSubmixCaptureProtocol");
+
+	return Clss;
+}
+
+
+// MasterAudioSubmixCaptureProtocol MovieSceneCapture.Default__MasterAudioSubmixCaptureProtocol
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMasterAudioSubmixCaptureProtocol* UMasterAudioSubmixCaptureProtocol::GetDefaultObj()
+{
+	static class UMasterAudioSubmixCaptureProtocol* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMasterAudioSubmixCaptureProtocol*>(UMasterAudioSubmixCaptureProtocol::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MovieSceneCapture.MovieSceneImageCaptureProtocolBase
+// (None)
+
+class UClass* UMovieSceneImageCaptureProtocolBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MovieSceneImageCaptureProtocolBase");
+
+	return Clss;
+}
+
+
+// MovieSceneImageCaptureProtocolBase MovieSceneCapture.Default__MovieSceneImageCaptureProtocolBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMovieSceneImageCaptureProtocolBase* UMovieSceneImageCaptureProtocolBase::GetDefaultObj()
+{
+	static class UMovieSceneImageCaptureProtocolBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMovieSceneImageCaptureProtocolBase*>(UMovieSceneImageCaptureProtocolBase::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MovieSceneCapture.CompositionGraphCaptureProtocol
+// (None)
+
+class UClass* UCompositionGraphCaptureProtocol::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CompositionGraphCaptureProtocol");
+
+	return Clss;
+}
+
+
+// CompositionGraphCaptureProtocol MovieSceneCapture.Default__CompositionGraphCaptureProtocol
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UCompositionGraphCaptureProtocol* UCompositionGraphCaptureProtocol::GetDefaultObj()
+{
+	static class UCompositionGraphCaptureProtocol* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCompositionGraphCaptureProtocol*>(UCompositionGraphCaptureProtocol::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MovieSceneCapture.FrameGrabberProtocol
+// (None)
+
+class UClass* UFrameGrabberProtocol::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FrameGrabberProtocol");
+
+	return Clss;
+}
+
+
+// FrameGrabberProtocol MovieSceneCapture.Default__FrameGrabberProtocol
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UFrameGrabberProtocol* UFrameGrabberProtocol::GetDefaultObj()
+{
+	static class UFrameGrabberProtocol* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFrameGrabberProtocol*>(UFrameGrabberProtocol::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MovieSceneCapture.ImageSequenceProtocol
+// (None)
+
+class UClass* UImageSequenceProtocol::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ImageSequenceProtocol");
+
+	return Clss;
+}
+
+
+// ImageSequenceProtocol MovieSceneCapture.Default__ImageSequenceProtocol
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UImageSequenceProtocol* UImageSequenceProtocol::GetDefaultObj()
+{
+	static class UImageSequenceProtocol* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UImageSequenceProtocol*>(UImageSequenceProtocol::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MovieSceneCapture.CompressedImageSequenceProtocol
+// (None)
+
+class UClass* UCompressedImageSequenceProtocol::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CompressedImageSequenceProtocol");
+
+	return Clss;
+}
+
+
+// CompressedImageSequenceProtocol MovieSceneCapture.Default__CompressedImageSequenceProtocol
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UCompressedImageSequenceProtocol* UCompressedImageSequenceProtocol::GetDefaultObj()
+{
+	static class UCompressedImageSequenceProtocol* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCompressedImageSequenceProtocol*>(UCompressedImageSequenceProtocol::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MovieSceneCapture.ImageSequenceProtocol_BMP
+// (None)
+
+class UClass* UImageSequenceProtocol_BMP::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ImageSequenceProtocol_BMP");
+
+	return Clss;
+}
+
+
+// ImageSequenceProtocol_BMP MovieSceneCapture.Default__ImageSequenceProtocol_BMP
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UImageSequenceProtocol_BMP* UImageSequenceProtocol_BMP::GetDefaultObj()
+{
+	static class UImageSequenceProtocol_BMP* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UImageSequenceProtocol_BMP*>(UImageSequenceProtocol_BMP::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MovieSceneCapture.ImageSequenceProtocol_PNG
+// (None)
+
+class UClass* UImageSequenceProtocol_PNG::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ImageSequenceProtocol_PNG");
+
+	return Clss;
+}
+
+
+// ImageSequenceProtocol_PNG MovieSceneCapture.Default__ImageSequenceProtocol_PNG
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UImageSequenceProtocol_PNG* UImageSequenceProtocol_PNG::GetDefaultObj()
+{
+	static class UImageSequenceProtocol_PNG* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UImageSequenceProtocol_PNG*>(UImageSequenceProtocol_PNG::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MovieSceneCapture.ImageSequenceProtocol_JPG
+// (None)
+
+class UClass* UImageSequenceProtocol_JPG::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ImageSequenceProtocol_JPG");
+
+	return Clss;
+}
+
+
+// ImageSequenceProtocol_JPG MovieSceneCapture.Default__ImageSequenceProtocol_JPG
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UImageSequenceProtocol_JPG* UImageSequenceProtocol_JPG::GetDefaultObj()
+{
+	static class UImageSequenceProtocol_JPG* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UImageSequenceProtocol_JPG*>(UImageSequenceProtocol_JPG::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MovieSceneCapture.ImageSequenceProtocol_EXR
+// (None)
+
+class UClass* UImageSequenceProtocol_EXR::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ImageSequenceProtocol_EXR");
+
+	return Clss;
+}
+
+
+// ImageSequenceProtocol_EXR MovieSceneCapture.Default__ImageSequenceProtocol_EXR
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UImageSequenceProtocol_EXR* UImageSequenceProtocol_EXR::GetDefaultObj()
+{
+	static class UImageSequenceProtocol_EXR* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UImageSequenceProtocol_EXR*>(UImageSequenceProtocol_EXR::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MovieSceneCapture.MovieSceneCaptureInterface
+// (None)
+
+class UClass* IMovieSceneCaptureInterface::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MovieSceneCaptureInterface");
+
+	return Clss;
+}
+
+
+// MovieSceneCaptureInterface MovieSceneCapture.Default__MovieSceneCaptureInterface
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class IMovieSceneCaptureInterface* IMovieSceneCaptureInterface::GetDefaultObj()
+{
+	static class IMovieSceneCaptureInterface* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<IMovieSceneCaptureInterface*>(IMovieSceneCaptureInterface::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MovieSceneCapture.MovieSceneCapture
+// (None)
+
+class UClass* UMovieSceneCapture::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MovieSceneCapture");
+
+	return Clss;
+}
+
+
+// MovieSceneCapture MovieSceneCapture.Default__MovieSceneCapture
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMovieSceneCapture* UMovieSceneCapture::GetDefaultObj()
+{
+	static class UMovieSceneCapture* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMovieSceneCapture*>(UMovieSceneCapture::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -72,19 +495,22 @@ enum class EMovieSceneCaptureProtocolState UMovieSceneCaptureProtocolBase::GetSt
 
 void UMovieSceneCapture::SetImageCaptureProtocolType(TSubclassOf<class UMovieSceneCaptureProtocolBase> ProtocolType)
 {
-	static auto Func = Class->GetFunction("MovieSceneCapture", "SetImageCaptureProtocolType");
+	static class UFunction* Func = nullptr;
 
-	Params::UMovieSceneCapture_SetImageCaptureProtocolType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MovieSceneCapture", "SetImageCaptureProtocolType");
+
+	Params::UMovieSceneCapture_SetImageCaptureProtocolType_Params Parms{};
 
 	Parms.ProtocolType = ProtocolType;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -96,19 +522,22 @@ void UMovieSceneCapture::SetImageCaptureProtocolType(TSubclassOf<class UMovieSce
 
 void UMovieSceneCapture::SetAudioCaptureProtocolType(TSubclassOf<class UMovieSceneCaptureProtocolBase> ProtocolType)
 {
-	static auto Func = Class->GetFunction("MovieSceneCapture", "SetAudioCaptureProtocolType");
+	static class UFunction* Func = nullptr;
 
-	Params::UMovieSceneCapture_SetAudioCaptureProtocolType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MovieSceneCapture", "SetAudioCaptureProtocolType");
+
+	Params::UMovieSceneCapture_SetAudioCaptureProtocolType_Params Parms{};
 
 	Parms.ProtocolType = ProtocolType;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -120,18 +549,21 @@ void UMovieSceneCapture::SetAudioCaptureProtocolType(TSubclassOf<class UMovieSce
 
 class UMovieSceneCaptureProtocolBase* UMovieSceneCapture::GetImageCaptureProtocol()
 {
-	static auto Func = Class->GetFunction("MovieSceneCapture", "GetImageCaptureProtocol");
+	static class UFunction* Func = nullptr;
 
-	Params::UMovieSceneCapture_GetImageCaptureProtocol_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MovieSceneCapture", "GetImageCaptureProtocol");
+
+	Params::UMovieSceneCapture_GetImageCaptureProtocol_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -145,21 +577,80 @@ class UMovieSceneCaptureProtocolBase* UMovieSceneCapture::GetImageCaptureProtoco
 
 class UMovieSceneCaptureProtocolBase* UMovieSceneCapture::GetAudioCaptureProtocol()
 {
-	static auto Func = Class->GetFunction("MovieSceneCapture", "GetAudioCaptureProtocol");
+	static class UFunction* Func = nullptr;
 
-	Params::UMovieSceneCapture_GetAudioCaptureProtocol_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MovieSceneCapture", "GetAudioCaptureProtocol");
+
+	Params::UMovieSceneCapture_GetAudioCaptureProtocol_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class MovieSceneCapture.LevelCapture
+// (None)
+
+class UClass* ULevelCapture::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LevelCapture");
+
+	return Clss;
+}
+
+
+// LevelCapture MovieSceneCapture.Default__LevelCapture
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ULevelCapture* ULevelCapture::GetDefaultObj()
+{
+	static class ULevelCapture* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULevelCapture*>(ULevelCapture::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MovieSceneCapture.MovieSceneCaptureEnvironment
+// (None)
+
+class UClass* UMovieSceneCaptureEnvironment::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MovieSceneCaptureEnvironment");
+
+	return Clss;
+}
+
+
+// MovieSceneCaptureEnvironment MovieSceneCapture.Default__MovieSceneCaptureEnvironment
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMovieSceneCaptureEnvironment* UMovieSceneCaptureEnvironment::GetDefaultObj()
+{
+	static class UMovieSceneCaptureEnvironment* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMovieSceneCaptureEnvironment*>(UMovieSceneCaptureEnvironment::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -170,18 +661,21 @@ class UMovieSceneCaptureProtocolBase* UMovieSceneCapture::GetAudioCaptureProtoco
 
 bool UMovieSceneCaptureEnvironment::IsCaptureInProgress()
 {
-	static auto Func = Class->GetFunction("MovieSceneCaptureEnvironment", "IsCaptureInProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::UMovieSceneCaptureEnvironment_IsCaptureInProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MovieSceneCaptureEnvironment", "IsCaptureInProgress");
+
+	Params::UMovieSceneCaptureEnvironment_IsCaptureInProgress_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -195,18 +689,21 @@ bool UMovieSceneCaptureEnvironment::IsCaptureInProgress()
 
 int32 UMovieSceneCaptureEnvironment::GetCaptureFrameNumber()
 {
-	static auto Func = Class->GetFunction("MovieSceneCaptureEnvironment", "GetCaptureFrameNumber");
+	static class UFunction* Func = nullptr;
 
-	Params::UMovieSceneCaptureEnvironment_GetCaptureFrameNumber_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MovieSceneCaptureEnvironment", "GetCaptureFrameNumber");
+
+	Params::UMovieSceneCaptureEnvironment_GetCaptureFrameNumber_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -220,18 +717,21 @@ int32 UMovieSceneCaptureEnvironment::GetCaptureFrameNumber()
 
 float UMovieSceneCaptureEnvironment::GetCaptureElapsedTime()
 {
-	static auto Func = Class->GetFunction("MovieSceneCaptureEnvironment", "GetCaptureElapsedTime");
+	static class UFunction* Func = nullptr;
 
-	Params::UMovieSceneCaptureEnvironment_GetCaptureElapsedTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MovieSceneCaptureEnvironment", "GetCaptureElapsedTime");
+
+	Params::UMovieSceneCaptureEnvironment_GetCaptureElapsedTime_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -245,18 +745,21 @@ float UMovieSceneCaptureEnvironment::GetCaptureElapsedTime()
 
 class UMovieSceneImageCaptureProtocolBase* UMovieSceneCaptureEnvironment::FindImageCaptureProtocol()
 {
-	static auto Func = Class->GetFunction("MovieSceneCaptureEnvironment", "FindImageCaptureProtocol");
+	static class UFunction* Func = nullptr;
 
-	Params::UMovieSceneCaptureEnvironment_FindImageCaptureProtocol_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MovieSceneCaptureEnvironment", "FindImageCaptureProtocol");
+
+	Params::UMovieSceneCaptureEnvironment_FindImageCaptureProtocol_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -270,21 +773,52 @@ class UMovieSceneImageCaptureProtocolBase* UMovieSceneCaptureEnvironment::FindIm
 
 class UMovieSceneAudioCaptureProtocolBase* UMovieSceneCaptureEnvironment::FindAudioCaptureProtocol()
 {
-	static auto Func = Class->GetFunction("MovieSceneCaptureEnvironment", "FindAudioCaptureProtocol");
+	static class UFunction* Func = nullptr;
 
-	Params::UMovieSceneCaptureEnvironment_FindAudioCaptureProtocol_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MovieSceneCaptureEnvironment", "FindAudioCaptureProtocol");
+
+	Params::UMovieSceneCaptureEnvironment_FindAudioCaptureProtocol_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class MovieSceneCapture.UserDefinedCaptureProtocol
+// (None)
+
+class UClass* UUserDefinedCaptureProtocol::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UserDefinedCaptureProtocol");
+
+	return Clss;
+}
+
+
+// UserDefinedCaptureProtocol MovieSceneCapture.Default__UserDefinedCaptureProtocol
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UUserDefinedCaptureProtocol* UUserDefinedCaptureProtocol::GetDefaultObj()
+{
+	static class UUserDefinedCaptureProtocol* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUserDefinedCaptureProtocol*>(UUserDefinedCaptureProtocol::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -294,18 +828,20 @@ class UMovieSceneAudioCaptureProtocolBase* UMovieSceneCaptureEnvironment::FindAu
 
 void UUserDefinedCaptureProtocol::StopCapturingFinalPixels()
 {
-	static auto Func = Class->GetFunction("UserDefinedCaptureProtocol", "StopCapturingFinalPixels");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedCaptureProtocol_StopCapturingFinalPixels_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedCaptureProtocol", "StopCapturingFinalPixels");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -317,19 +853,22 @@ void UUserDefinedCaptureProtocol::StopCapturingFinalPixels()
 
 void UUserDefinedCaptureProtocol::StartCapturingFinalPixels(struct FCapturedPixelsID& StreamID)
 {
-	static auto Func = Class->GetFunction("UserDefinedCaptureProtocol", "StartCapturingFinalPixels");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedCaptureProtocol_StartCapturingFinalPixels_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedCaptureProtocol", "StartCapturingFinalPixels");
+
+	Params::UUserDefinedCaptureProtocol_StartCapturingFinalPixels_Params Parms{};
 
 	Parms.StreamID = StreamID;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -342,20 +881,23 @@ void UUserDefinedCaptureProtocol::StartCapturingFinalPixels(struct FCapturedPixe
 
 void UUserDefinedCaptureProtocol::ResolveBuffer(class UTexture* Buffer, struct FCapturedPixelsID& BufferID)
 {
-	static auto Func = Class->GetFunction("UserDefinedCaptureProtocol", "ResolveBuffer");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedCaptureProtocol_ResolveBuffer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedCaptureProtocol", "ResolveBuffer");
+
+	Params::UUserDefinedCaptureProtocol_ResolveBuffer_Params Parms{};
 
 	Parms.Buffer = Buffer;
 	Parms.BufferID = BufferID;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -366,12 +908,14 @@ void UUserDefinedCaptureProtocol::ResolveBuffer(class UTexture* Buffer, struct F
 
 void UUserDefinedCaptureProtocol::OnWarmUp()
 {
-	static auto Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnWarmUp");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedCaptureProtocol_OnWarmUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnWarmUp");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -382,12 +926,14 @@ void UUserDefinedCaptureProtocol::OnWarmUp()
 
 void UUserDefinedCaptureProtocol::OnTick()
 {
-	static auto Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnTick");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedCaptureProtocol_OnTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnTick");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -398,12 +944,14 @@ void UUserDefinedCaptureProtocol::OnTick()
 
 void UUserDefinedCaptureProtocol::OnStartCapture()
 {
-	static auto Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnStartCapture");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedCaptureProtocol_OnStartCapture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnStartCapture");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -415,18 +963,21 @@ void UUserDefinedCaptureProtocol::OnStartCapture()
 
 bool UUserDefinedCaptureProtocol::OnSetup()
 {
-	static auto Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnSetup");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedCaptureProtocol_OnSetup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnSetup");
+
+	Params::UUserDefinedCaptureProtocol_OnSetup_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -439,12 +990,14 @@ bool UUserDefinedCaptureProtocol::OnSetup()
 
 void UUserDefinedCaptureProtocol::OnPreTick()
 {
-	static auto Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnPreTick");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedCaptureProtocol_OnPreTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnPreTick");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -458,9 +1011,12 @@ void UUserDefinedCaptureProtocol::OnPreTick()
 
 void UUserDefinedCaptureProtocol::OnPixelsReceived(struct FCapturedPixels& Pixels, struct FCapturedPixelsID& ID, const struct FFrameMetrics& FrameMetrics)
 {
-	static auto Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnPixelsReceived");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedCaptureProtocol_OnPixelsReceived_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnPixelsReceived");
+
+	Params::UUserDefinedCaptureProtocol_OnPixelsReceived_Params Parms{};
 
 	Parms.Pixels = Pixels;
 	Parms.ID = ID;
@@ -477,12 +1033,14 @@ void UUserDefinedCaptureProtocol::OnPixelsReceived(struct FCapturedPixels& Pixel
 
 void UUserDefinedCaptureProtocol::OnPauseCapture()
 {
-	static auto Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnPauseCapture");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedCaptureProtocol_OnPauseCapture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnPauseCapture");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -493,12 +1051,14 @@ void UUserDefinedCaptureProtocol::OnPauseCapture()
 
 void UUserDefinedCaptureProtocol::OnFinalize()
 {
-	static auto Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnFinalize");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedCaptureProtocol_OnFinalize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnFinalize");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -509,12 +1069,14 @@ void UUserDefinedCaptureProtocol::OnFinalize()
 
 void UUserDefinedCaptureProtocol::OnCaptureFrame()
 {
-	static auto Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnCaptureFrame");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedCaptureProtocol_OnCaptureFrame_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnCaptureFrame");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -526,18 +1088,21 @@ void UUserDefinedCaptureProtocol::OnCaptureFrame()
 
 bool UUserDefinedCaptureProtocol::OnCanFinalize()
 {
-	static auto Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnCanFinalize");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedCaptureProtocol_OnCanFinalize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnCanFinalize");
+
+	Params::UUserDefinedCaptureProtocol_OnCanFinalize_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -550,12 +1115,14 @@ bool UUserDefinedCaptureProtocol::OnCanFinalize()
 
 void UUserDefinedCaptureProtocol::OnBeginFinalize()
 {
-	static auto Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnBeginFinalize");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedCaptureProtocol_OnBeginFinalize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedCaptureProtocol", "OnBeginFinalize");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -567,18 +1134,21 @@ void UUserDefinedCaptureProtocol::OnBeginFinalize()
 
 struct FFrameMetrics UUserDefinedCaptureProtocol::GetCurrentFrameMetrics()
 {
-	static auto Func = Class->GetFunction("UserDefinedCaptureProtocol", "GetCurrentFrameMetrics");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedCaptureProtocol_GetCurrentFrameMetrics_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedCaptureProtocol", "GetCurrentFrameMetrics");
+
+	Params::UUserDefinedCaptureProtocol_GetCurrentFrameMetrics_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -593,22 +1163,53 @@ struct FFrameMetrics UUserDefinedCaptureProtocol::GetCurrentFrameMetrics()
 
 class FString UUserDefinedCaptureProtocol::GenerateFilename(struct FFrameMetrics& InFrameMetrics)
 {
-	static auto Func = Class->GetFunction("UserDefinedCaptureProtocol", "GenerateFilename");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedCaptureProtocol_GenerateFilename_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedCaptureProtocol", "GenerateFilename");
+
+	Params::UUserDefinedCaptureProtocol_GenerateFilename_Params Parms{};
 
 	Parms.InFrameMetrics = InFrameMetrics;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class MovieSceneCapture.UserDefinedImageCaptureProtocol
+// (None)
+
+class UClass* UUserDefinedImageCaptureProtocol::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UserDefinedImageCaptureProtocol");
+
+	return Clss;
+}
+
+
+// UserDefinedImageCaptureProtocol MovieSceneCapture.Default__UserDefinedImageCaptureProtocol
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UUserDefinedImageCaptureProtocol* UUserDefinedImageCaptureProtocol::GetDefaultObj()
+{
+	static class UUserDefinedImageCaptureProtocol* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUserDefinedImageCaptureProtocol*>(UUserDefinedImageCaptureProtocol::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -622,22 +1223,25 @@ class FString UUserDefinedCaptureProtocol::GenerateFilename(struct FFrameMetrics
 
 void UUserDefinedImageCaptureProtocol::WriteImageToDisk(struct FCapturedPixels& PixelData, struct FCapturedPixelsID& StreamID, struct FFrameMetrics& FrameMetrics, bool bCopyImageData)
 {
-	static auto Func = Class->GetFunction("UserDefinedImageCaptureProtocol", "WriteImageToDisk");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedImageCaptureProtocol_WriteImageToDisk_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedImageCaptureProtocol", "WriteImageToDisk");
+
+	Params::UUserDefinedImageCaptureProtocol_WriteImageToDisk_Params Parms{};
 
 	Parms.PixelData = PixelData;
 	Parms.StreamID = StreamID;
 	Parms.FrameMetrics = FrameMetrics;
 	Parms.bCopyImageData = bCopyImageData;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -649,18 +1253,21 @@ void UUserDefinedImageCaptureProtocol::WriteImageToDisk(struct FCapturedPixels& 
 
 class FString UUserDefinedImageCaptureProtocol::GenerateFilenameForCurrentFrame()
 {
-	static auto Func = Class->GetFunction("UserDefinedImageCaptureProtocol", "GenerateFilenameForCurrentFrame");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedImageCaptureProtocol_GenerateFilenameForCurrentFrame_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedImageCaptureProtocol", "GenerateFilenameForCurrentFrame");
+
+	Params::UUserDefinedImageCaptureProtocol_GenerateFilenameForCurrentFrame_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -676,27 +1283,56 @@ class FString UUserDefinedImageCaptureProtocol::GenerateFilenameForCurrentFrame(
 
 class FString UUserDefinedImageCaptureProtocol::GenerateFilenameForBuffer(class UTexture* Buffer, struct FCapturedPixelsID& StreamID)
 {
-	static auto Func = Class->GetFunction("UserDefinedImageCaptureProtocol", "GenerateFilenameForBuffer");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserDefinedImageCaptureProtocol_GenerateFilenameForBuffer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserDefinedImageCaptureProtocol", "GenerateFilenameForBuffer");
+
+	Params::UUserDefinedImageCaptureProtocol_GenerateFilenameForBuffer_Params Parms{};
 
 	Parms.Buffer = Buffer;
 	Parms.StreamID = StreamID;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
 }
 
+
+// Class MovieSceneCapture.VideoCaptureProtocol
+// (None)
+
+class UClass* UVideoCaptureProtocol::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VideoCaptureProtocol");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// VideoCaptureProtocol MovieSceneCapture.Default__VideoCaptureProtocol
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UVideoCaptureProtocol* UVideoCaptureProtocol::GetDefaultObj()
+{
+	static class UVideoCaptureProtocol* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UVideoCaptureProtocol*>(UVideoCaptureProtocol::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

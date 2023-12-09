@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass MissionGen_AthenaDuo.MissionGen_AthenaDuo_C
+// (None)
+
+class UClass* UMissionGen_AthenaDuo_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MissionGen_AthenaDuo_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// MissionGen_AthenaDuo_C MissionGen_AthenaDuo.Default__MissionGen_AthenaDuo_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMissionGen_AthenaDuo_C* UMissionGen_AthenaDuo_C::GetDefaultObj()
+{
+	static class UMissionGen_AthenaDuo_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMissionGen_AthenaDuo_C*>(UMissionGen_AthenaDuo_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

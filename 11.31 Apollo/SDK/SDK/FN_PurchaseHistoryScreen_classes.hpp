@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -44,11 +41,8 @@ public:
 	TArray<class UUserWidget*>                   TicketArray;                                       // 0x5A0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 	bool                                         Should_Use_Back_Action;                            // 0x5B0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("PurchaseHistoryScreen_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UPurchaseHistoryScreen_C* GetDefaultObj();
 
 	void ToggleBackAction(bool bShouldShow, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_HasInputActionHandler_ReturnValue, bool CallFunc_HasInputActionHandler_ReturnValue_1);
 	void HandleBack(bool* PassThrough, bool CallFunc_HandlePreviousStepAction_bPassthrough);
@@ -72,6 +66,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

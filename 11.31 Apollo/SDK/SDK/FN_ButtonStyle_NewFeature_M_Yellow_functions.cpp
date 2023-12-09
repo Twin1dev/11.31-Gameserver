@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ButtonStyle_NewFeature_M_Yellow.ButtonStyle_NewFeature_M_Yellow_C
+// (None)
+
+class UClass* UButtonStyle_NewFeature_M_Yellow_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ButtonStyle_NewFeature_M_Yellow_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ButtonStyle_NewFeature_M_Yellow_C ButtonStyle_NewFeature_M_Yellow.Default__ButtonStyle_NewFeature_M_Yellow_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UButtonStyle_NewFeature_M_Yellow_C* UButtonStyle_NewFeature_M_Yellow_C::GetDefaultObj()
+{
+	static class UButtonStyle_NewFeature_M_Yellow_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UButtonStyle_NewFeature_M_Yellow_C*>(UButtonStyle_NewFeature_M_Yellow_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

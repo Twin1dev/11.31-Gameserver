@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -17,13 +14,10 @@ namespace SDK
 class UAssetRegistryImpl : public UObject
 {
 public:
-	uint8                                        Pad_162A[0x750];                                   // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_82[0x750];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AssetRegistryImpl");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAssetRegistryImpl* GetDefaultObj();
 
 };
 
@@ -33,11 +27,8 @@ class UAssetRegistryHelpers : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AssetRegistryHelpers");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAssetRegistryHelpers* GetDefaultObj();
 
 	struct FSoftObjectPath ToSoftObjectPath(struct FAssetData& InAssetData);
 	struct FARFilter SetFilterTagsAndValues(struct FARFilter& InFilter, TArray<struct FTagAndValue>& InTagsAndValues);
@@ -60,11 +51,8 @@ class IAssetRegistry : public IInterface
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AssetRegistry");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class IAssetRegistry* GetDefaultObj();
 
 	void UseFilterToExcludeAssets(TArray<struct FAssetData>& AssetDataList, struct FARFilter& Filter);
 	void SearchAllAssets(bool bSynchronousSearch);
@@ -89,6 +77,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

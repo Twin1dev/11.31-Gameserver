@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass Creative_Radio_AudioToMPC.Creative_Radio_AudioToMPC_C
+// (None)
+
+class UClass* UCreative_Radio_AudioToMPC_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Creative_Radio_AudioToMPC_C");
+
+	return Clss;
+}
+
+
+// Creative_Radio_AudioToMPC_C Creative_Radio_AudioToMPC.Default__Creative_Radio_AudioToMPC_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCreative_Radio_AudioToMPC_C* UCreative_Radio_AudioToMPC_C::GetDefaultObj()
+{
+	static class UCreative_Radio_AudioToMPC_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCreative_Radio_AudioToMPC_C*>(UCreative_Radio_AudioToMPC_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Creative_Radio_AudioToMPC.Creative_Radio_AudioToMPC_C.OnGatheredFFTData
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UCreative_Radio_AudioToMPC_C::OnGatheredFFTData(TArray<struct FChannelData>& FFTData, float& OutAmplitudeAverage)
 {
-	static auto Func = Class->GetFunction("Creative_Radio_AudioToMPC_C", "OnGatheredFFTData");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_Radio_AudioToMPC_C_OnGatheredFFTData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_Radio_AudioToMPC_C", "OnGatheredFFTData");
+
+	Params::UCreative_Radio_AudioToMPC_C_OnGatheredFFTData_Params Parms{};
 
 	Parms.FFTData = FFTData;
 	Parms.OutAmplitudeAverage = OutAmplitudeAverage;
@@ -36,6 +64,4 @@ void UCreative_Radio_AudioToMPC_C::OnGatheredFFTData(TArray<struct FChannelData>
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SocialInteraction.SocialInteraction_C
+// (None)
+
+class UClass* USocialInteraction_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialInteraction_C");
+
+	return Clss;
+}
+
+
+// SocialInteraction_C SocialInteraction.Default__SocialInteraction_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USocialInteraction_C* USocialInteraction_C::GetDefaultObj()
+{
+	static class USocialInteraction_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialInteraction_C*>(USocialInteraction_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SocialInteraction.SocialInteraction_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void USocialInteraction_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("SocialInteraction_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialInteraction_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialInteraction_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void USocialInteraction_C::BP_OnHovered()
 
 void USocialInteraction_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("SocialInteraction_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialInteraction_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialInteraction_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void USocialInteraction_C::BP_OnUnhovered()
 
 void USocialInteraction_C::OnInteractionSet()
 {
-	static auto Func = Class->GetFunction("SocialInteraction_C", "OnInteractionSet");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialInteraction_C_OnInteractionSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialInteraction_C", "OnInteractionSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -81,9 +112,12 @@ void USocialInteraction_C::OnInteractionSet()
 
 void USocialInteraction_C::ExecuteUbergraph_SocialInteraction(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool CallFunc_IsPlatformOnlyFriend_ReturnValue, class FName CallFunc_GetInteractionName_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_EqualEqual_NameName_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SocialInteraction_C", "ExecuteUbergraph_SocialInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialInteraction_C_ExecuteUbergraph_SocialInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialInteraction_C", "ExecuteUbergraph_SocialInteraction");
+
+	Params::USocialInteraction_C_ExecuteUbergraph_SocialInteraction_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -104,6 +138,4 @@ void USocialInteraction_C::ExecuteUbergraph_SocialInteraction(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

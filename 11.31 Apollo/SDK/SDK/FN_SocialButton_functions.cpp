@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SocialButton.SocialButton_C
+// (None)
+
+class UClass* USocialButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialButton_C");
+
+	return Clss;
+}
+
+
+// SocialButton_C SocialButton.Default__SocialButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USocialButton_C* USocialButton_C::GetDefaultObj()
+{
+	static class USocialButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialButton_C*>(USocialButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SocialButton.SocialButton_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void USocialButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("SocialButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void USocialButton_C::Construct()
 
 void USocialButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("SocialButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void USocialButton_C::BP_OnHovered()
 
 void USocialButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("SocialButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -81,9 +112,12 @@ void USocialButton_C::BP_OnUnhovered()
 
 void USocialButton_C::ExecuteUbergraph_SocialButton(int32 EntryPoint, bool Temp_bool_Variable, float Temp_float_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable_1, float Temp_float_Variable_2, float Temp_float_Variable_3, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue, float K2Node_Select_Default, float K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("SocialButton_C", "ExecuteUbergraph_SocialButton");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialButton_C_ExecuteUbergraph_SocialButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialButton_C", "ExecuteUbergraph_SocialButton");
+
+	Params::USocialButton_C_ExecuteUbergraph_SocialButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -104,6 +138,4 @@ void USocialButton_C::ExecuteUbergraph_SocialButton(int32 EntryPoint, bool Temp_
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

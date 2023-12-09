@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,13 +15,13 @@ class UM_MED_OrnamentSoldier_FaceAcc_CtrlRig_C : public UControlRig
 {
 public:
 	struct FRigUnit_BeginExecution               BeginExecution;                                    // 0x278(0x40)(Edit, BlueprintVisible, DisableEditOnInstance)
-	uint8                                        Pad_66E2[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6D6A[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRigUnit_GetRelativeBoneTransform     GetRelativeBoneTransform;                          // 0x2C0(0x70)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FRigUnit_MathQuaternionToEuler        MathQuaternionToEuler;                             // 0x330(0x40)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FRigUnit_MathFloatRemap               MathFloatRemap;                                    // 0x370(0x40)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FRigUnit_AccumulateFloatLerp          AccumulateFloatLerp;                               // 0x3B0(0x38)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FRigUnit_ModifyBoneTransforms         ModifyBoneTransforms;                              // 0x3E8(0x70)(Edit, BlueprintVisible, DisableEditOnInstance)
-	uint8                                        Pad_66E3[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6D6B[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRigUnit_MathQuaternionFromEuler      MathQuaternionFromEuler;                           // 0x460(0x40)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FRigUnit_MathQuaternionFromEuler      MathQuaternionFromEuler_0;                         // 0x4A0(0x40)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FRigUnit_ModifyBoneTransforms         ModifyBoneTransforms_0;                            // 0x4E0(0x70)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -36,16 +33,11 @@ public:
 	struct FRigUnit_AccumulateFloatLerp          AccumulateFloatLerp_0;                             // 0x6F0(0x38)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FRigUnit_MathFloatMul                 MathFloatMul;                                      // 0x728(0x30)(Edit, BlueprintVisible, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("M_MED_OrnamentSoldier_FaceAcc_CtrlRig_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UM_MED_OrnamentSoldier_FaceAcc_CtrlRig_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

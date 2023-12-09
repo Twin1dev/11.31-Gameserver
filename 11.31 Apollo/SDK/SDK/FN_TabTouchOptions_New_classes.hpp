@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,11 +16,8 @@ class UTabTouchOptions_New_C : public UFortTabTouchOptions_TempNew
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x330(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("TabTouchOptions_New_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UTabTouchOptions_New_C* GetDefaultObj();
 
 	void OnComplete_70DA8CBD478310A11CA48A9F568B15E0(class UUserWidget* UserWidget);
 	void CenterOnTab();
@@ -34,6 +28,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

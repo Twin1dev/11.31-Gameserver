@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TextStyle_Button_Feature_L_Base.TextStyle_Button_Feature_L_Base_C
+// (None)
+
+class UClass* UTextStyle_Button_Feature_L_Base_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextStyle_Button_Feature_L_Base_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// TextStyle_Button_Feature_L_Base_C TextStyle_Button_Feature_L_Base.Default__TextStyle_Button_Feature_L_Base_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTextStyle_Button_Feature_L_Base_C* UTextStyle_Button_Feature_L_Base_C::GetDefaultObj()
+{
+	static class UTextStyle_Button_Feature_L_Base_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextStyle_Button_Feature_L_Base_C*>(UTextStyle_Button_Feature_L_Base_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

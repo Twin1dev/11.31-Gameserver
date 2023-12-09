@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -20,11 +17,8 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xC48(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	TArray<class UStaticMesh*>                   StaticMeshAlternateArray;                          // 0xC50(0x10)(Edit, BlueprintVisible, ZeroConstructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("PBW_BP_Parent_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class APBW_BP_Parent_C* GetDefaultObj();
 
 	void OnRep_Random_Chance();
 	void ReceiveBeginPlay();
@@ -33,6 +27,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

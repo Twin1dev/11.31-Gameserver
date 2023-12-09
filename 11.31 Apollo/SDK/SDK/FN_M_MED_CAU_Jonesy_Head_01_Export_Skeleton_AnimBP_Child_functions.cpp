@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// AnimBlueprintGeneratedClass M_MED_CAU_Jonesy_Head_01_Export_Skeleton_AnimBP_Child.M_MED_CAU_Jonesy_Head_01_Export_Skeleton_AnimBP_Child_C
+// (None)
+
+class UClass* UM_MED_CAU_Jonesy_Head_01_Export_Skeleton_AnimBP_Child_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("M_MED_CAU_Jonesy_Head_01_Export_Skeleton_AnimBP_Child_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// M_MED_CAU_Jonesy_Head_01_Export_Skeleton_AnimBP_Child_C M_MED_CAU_Jonesy_Head_01_Export_Skeleton_AnimBP_Child.Default__M_MED_CAU_Jonesy_Head_01_Export_Skeleton_AnimBP_Child_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UM_MED_CAU_Jonesy_Head_01_Export_Skeleton_AnimBP_Child_C* UM_MED_CAU_Jonesy_Head_01_Export_Skeleton_AnimBP_Child_C::GetDefaultObj()
+{
+	static class UM_MED_CAU_Jonesy_Head_01_Export_Skeleton_AnimBP_Child_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UM_MED_CAU_Jonesy_Head_01_Export_Skeleton_AnimBP_Child_C*>(UM_MED_CAU_Jonesy_Head_01_Export_Skeleton_AnimBP_Child_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

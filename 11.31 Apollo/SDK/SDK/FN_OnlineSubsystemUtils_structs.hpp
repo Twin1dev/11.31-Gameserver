@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -96,7 +93,7 @@ enum class ESpectatorReservationResult : uint8
 struct FBlueprintSessionResult
 {
 public:
-	uint8                                        Pad_17EC[0xB8];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_3BA[0xB8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x50 (0x50 - 0x0)
@@ -108,7 +105,7 @@ public:
 	class FString                                ValidationStr;                                     // 0x28(0x10)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                Platform;                                          // 0x38(0x10)(ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAllowCrossplay;                                   // 0x48(0x1)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_17ED[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_3BD[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        ElapsedTime;                                       // 0x4C(0x4)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -129,7 +126,7 @@ struct FPartyReservation
 {
 public:
 	int32                                        TeamNum;                                           // 0x0(0x4)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_17EE[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_3C0[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FUniqueNetIdRepl                      PartyLeader;                                       // 0x8(0x28)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FPlayerReservation>            PartyMembers;                                      // 0x30(0x10)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 	TArray<struct FPlayerReservation>            RemovedPartyMembers;                               // 0x40(0x10)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
@@ -146,6 +143,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

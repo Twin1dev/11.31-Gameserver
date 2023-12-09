@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaMOTDTileMainPage.AthenaMOTDTileMainPage_C
+// (None)
+
+class UClass* UAthenaMOTDTileMainPage_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaMOTDTileMainPage_C");
+
+	return Clss;
+}
+
+
+// AthenaMOTDTileMainPage_C AthenaMOTDTileMainPage.Default__AthenaMOTDTileMainPage_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaMOTDTileMainPage_C* UAthenaMOTDTileMainPage_C::GetDefaultObj()
+{
+	static class UAthenaMOTDTileMainPage_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaMOTDTileMainPage_C*>(UAthenaMOTDTileMainPage_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AthenaMOTDTileMainPage.AthenaMOTDTileMainPage_C.UpdateDisplay
@@ -25,9 +50,12 @@ namespace SDK
 
 void UAthenaMOTDTileMainPage_C::UpdateDisplay(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "UpdateDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTileMainPage_C_UpdateDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "UpdateDisplay");
+
+	Params::UAthenaMOTDTileMainPage_C_UpdateDisplay_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -49,9 +77,12 @@ void UAthenaMOTDTileMainPage_C::UpdateDisplay(bool Temp_bool_Variable, enum clas
 
 void UAthenaMOTDTileMainPage_C::ShowImageOnly(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "ShowImageOnly");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTileMainPage_C_ShowImageOnly_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "ShowImageOnly");
+
+	Params::UAthenaMOTDTileMainPage_C_ShowImageOnly_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -71,9 +102,12 @@ void UAthenaMOTDTileMainPage_C::ShowImageOnly(bool Temp_bool_Variable, enum clas
 
 void UAthenaMOTDTileMainPage_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTileMainPage_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "OnMouseEnter");
+
+	Params::UAthenaMOTDTileMainPage_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -90,9 +124,12 @@ void UAthenaMOTDTileMainPage_C::OnMouseEnter(const struct FGeometry& MyGeometry,
 
 void UAthenaMOTDTileMainPage_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTileMainPage_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "OnMouseLeave");
+
+	Params::UAthenaMOTDTileMainPage_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -108,9 +145,12 @@ void UAthenaMOTDTileMainPage_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 
 void UAthenaMOTDTileMainPage_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTileMainPage_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "PreConstruct");
+
+	Params::UAthenaMOTDTileMainPage_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -126,9 +166,12 @@ void UAthenaMOTDTileMainPage_C::PreConstruct(bool IsDesignTime)
 
 void UAthenaMOTDTileMainPage_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTileMainPage_C_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "BP_OnItemSelectionChanged");
+
+	Params::UAthenaMOTDTileMainPage_C_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -143,12 +186,14 @@ void UAthenaMOTDTileMainPage_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UAthenaMOTDTileMainPage_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTileMainPage_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -160,9 +205,12 @@ void UAthenaMOTDTileMainPage_C::Construct()
 
 void UAthenaMOTDTileMainPage_C::OnPopulateNews(struct FAthenaNewsEntry& NewsEntry)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "OnPopulateNews");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTileMainPage_C_OnPopulateNews_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "OnPopulateNews");
+
+	Params::UAthenaMOTDTileMainPage_C_OnPopulateNews_Params Parms{};
 
 	Parms.NewsEntry = NewsEntry;
 
@@ -198,14 +246,17 @@ void UAthenaMOTDTileMainPage_C::OnPopulateNews(struct FAthenaNewsEntry& NewsEntr
 // enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FSlateFontInfo              K2Node_MakeStruct_SlateFontInfo                                  (HasGetValueTypeHash)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
-// struct FTextBlockStyle             K2Node_MakeStruct_TextBlockStyle                                 ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
+// struct FTextBlockStyle             K2Node_MakeStruct_TextBlockStyle                                 (None)
 
 void UAthenaMOTDTileMainPage_C::ExecuteUbergraph_AthenaMOTDTileMainPage(int32 EntryPoint, const struct FAthenaNewsEntry& K2Node_Event_NewsEntry, enum class ESlateVisibility Temp_byte_Variable, const struct FLinearColor& CallFunc_Conv_ColorToLinearColor_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FPointerEvent& K2Node_Event_MouseEvent, bool K2Node_Event_IsDesignTime, bool CallFunc_IsListItemSelected_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue_1, bool K2Node_Event_bIsSelected, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, const struct FLinearColor& K2Node_Select_Default, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default_1, bool CallFunc_IsValid_ReturnValue, const struct FSlateFontInfo& K2Node_MakeStruct_SlateFontInfo, const struct FSlateColor& K2Node_MakeStruct_SlateColor, const struct FTextBlockStyle& K2Node_MakeStruct_TextBlockStyle)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "ExecuteUbergraph_AthenaMOTDTileMainPage");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTileMainPage_C_ExecuteUbergraph_AthenaMOTDTileMainPage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "ExecuteUbergraph_AthenaMOTDTileMainPage");
+
+	Params::UAthenaMOTDTileMainPage_C_ExecuteUbergraph_AthenaMOTDTileMainPage_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_NewsEntry = K2Node_Event_NewsEntry;
@@ -246,9 +297,12 @@ void UAthenaMOTDTileMainPage_C::ExecuteUbergraph_AthenaMOTDTileMainPage(int32 En
 
 void UAthenaMOTDTileMainPage_C::OnHoveredChanged__DelegateSignature(bool NewIsHovered)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "OnHoveredChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTileMainPage_C_OnHoveredChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTileMainPage_C", "OnHoveredChanged__DelegateSignature");
+
+	Params::UAthenaMOTDTileMainPage_C_OnHoveredChanged__DelegateSignature_Params Parms{};
 
 	Parms.NewIsHovered = NewIsHovered;
 
@@ -258,6 +312,4 @@ void UAthenaMOTDTileMainPage_C::OnHoveredChanged__DelegateSignature(bool NewIsHo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class AnimationBudgetAllocator.AnimationBudgetBlueprintLibrary
+// (None)
+
+class UClass* UAnimationBudgetBlueprintLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AnimationBudgetBlueprintLibrary");
+
+	return Clss;
+}
+
+
+// AnimationBudgetBlueprintLibrary AnimationBudgetAllocator.Default__AnimationBudgetBlueprintLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UAnimationBudgetBlueprintLibrary* UAnimationBudgetBlueprintLibrary::GetDefaultObj()
+{
+	static class UAnimationBudgetBlueprintLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAnimationBudgetBlueprintLibrary*>(UAnimationBudgetBlueprintLibrary::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AnimationBudgetAllocator.AnimationBudgetBlueprintLibrary.SetAnimationBudgetParameters
 // (Final, Native, Static, Private, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -23,20 +48,23 @@ namespace SDK
 
 void UAnimationBudgetBlueprintLibrary::SetAnimationBudgetParameters(class UObject* WorldContextObject, struct FAnimationBudgetAllocatorParameters& InParameters)
 {
-	static auto Func = Class->GetFunction("AnimationBudgetBlueprintLibrary", "SetAnimationBudgetParameters");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimationBudgetBlueprintLibrary_SetAnimationBudgetParameters_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimationBudgetBlueprintLibrary", "SetAnimationBudgetParameters");
+
+	Params::UAnimationBudgetBlueprintLibrary_SetAnimationBudgetParameters_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.InParameters = InParameters;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -49,21 +77,52 @@ void UAnimationBudgetBlueprintLibrary::SetAnimationBudgetParameters(class UObjec
 
 void UAnimationBudgetBlueprintLibrary::EnableAnimationBudget(class UObject* WorldContextObject, bool bEnabled)
 {
-	static auto Func = Class->GetFunction("AnimationBudgetBlueprintLibrary", "EnableAnimationBudget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimationBudgetBlueprintLibrary_EnableAnimationBudget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimationBudgetBlueprintLibrary", "EnableAnimationBudget");
+
+	Params::UAnimationBudgetBlueprintLibrary_EnableAnimationBudget_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.bEnabled = bEnabled;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class AnimationBudgetAllocator.SkeletalMeshComponentBudgeted
+// (SceneComponent, PrimitiveComponent, SkinnedMeshComponent, SkeletalMeshComponent)
+
+class UClass* USkeletalMeshComponentBudgeted::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SkeletalMeshComponentBudgeted");
+
+	return Clss;
+}
+
+
+// SkeletalMeshComponentBudgeted AnimationBudgetAllocator.Default__SkeletalMeshComponentBudgeted
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USkeletalMeshComponentBudgeted* USkeletalMeshComponentBudgeted::GetDefaultObj()
+{
+	static class USkeletalMeshComponentBudgeted* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USkeletalMeshComponentBudgeted*>(USkeletalMeshComponentBudgeted::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -74,24 +133,25 @@ void UAnimationBudgetBlueprintLibrary::EnableAnimationBudget(class UObject* Worl
 
 void USkeletalMeshComponentBudgeted::SetAutoRegisterWithBudgetAllocator(bool bInAutoRegisterWithBudgetAllocator)
 {
-	static auto Func = Class->GetFunction("SkeletalMeshComponentBudgeted", "SetAutoRegisterWithBudgetAllocator");
+	static class UFunction* Func = nullptr;
 
-	Params::USkeletalMeshComponentBudgeted_SetAutoRegisterWithBudgetAllocator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SkeletalMeshComponentBudgeted", "SetAutoRegisterWithBudgetAllocator");
+
+	Params::USkeletalMeshComponentBudgeted_SetAutoRegisterWithBudgetAllocator_Params Parms{};
 
 	Parms.bInAutoRegisterWithBudgetAllocator = bInAutoRegisterWithBudgetAllocator;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

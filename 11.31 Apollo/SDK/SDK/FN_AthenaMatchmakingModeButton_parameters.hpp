@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -22,13 +19,6 @@ struct UAthenaMatchmakingModeButton_C_RefreshLimitedPoolWarning_Params
 {
 public:
 	bool                                         IsCrossplayEnabled;                                // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function AthenaMatchmakingModeButton.AthenaMatchmakingModeButton_C.RefreshFillText
-struct UAthenaMatchmakingModeButton_C_RefreshFillText_Params
-{
-public:
 };
 
 // 0x1 (0x1 - 0x0)
@@ -80,7 +70,7 @@ struct UAthenaMatchmakingModeButton_C_ExecuteUbergraph_AthenaMatchmakingModeButt
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetIsEnabled_ReturnValue;                 // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6374[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6003[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortTabButtonLabelInfo               K2Node_Event_TabLabelInfo;                         // 0x8(0xA0)(ConstParm)
 	struct FGeometry                             K2Node_Event_MyGeometry;                           // 0xA8(0x38)(IsPlainOldData, NoDestructor)
 	struct FPointerEvent                         K2Node_Event_MouseEvent_1;                         // 0xE0(0x70)(ConstParm)
@@ -92,6 +82,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

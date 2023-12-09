@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -24,11 +21,8 @@ public:
 	class FText                                  AttributeDescription;                              // 0x278(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class FText                                  AttributeValue;                                    // 0x290(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("StoreMain_OfferDetailsAttribute_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UStoreMain_OfferDetailsAttribute_C* GetDefaultObj();
 
 	void Construct();
 	void ExecuteUbergraph_StoreMain_OfferDetailsAttribute(int32 EntryPoint);
@@ -36,6 +30,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

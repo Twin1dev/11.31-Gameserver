@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -23,8 +20,8 @@ struct UEventScoreRow_C_SetData_Params
 public:
 	class FText                                  Label;                                             // 0x0(0x18)(BlueprintVisible, BlueprintReadOnly, Parm)
 	int32                                        Value;                                             // 0x18(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4499[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  CallFunc_Conv_IntToText_ReturnValue;               // 0x20(0x18)()
+	uint8                                        Pad_628C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_Conv_IntToText_ReturnValue;               // 0x20(0x18)(None)
 };
 
 // 0x1 (0x1 - 0x0)
@@ -51,6 +48,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

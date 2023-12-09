@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass OptionsMenuSetting.OptionsMenuSetting_C
+// (None)
+
+class UClass* UOptionsMenuSetting_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OptionsMenuSetting_C");
+
+	return Clss;
+}
+
+
+// OptionsMenuSetting_C OptionsMenuSetting.Default__OptionsMenuSetting_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UOptionsMenuSetting_C* UOptionsMenuSetting_C::GetDefaultObj()
+{
+	static class UOptionsMenuSetting_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UOptionsMenuSetting_C*>(UOptionsMenuSetting_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function OptionsMenuSetting.OptionsMenuSetting_C.SetFontSize
@@ -28,9 +53,12 @@ namespace SDK
 
 void UOptionsMenuSetting_C::SetFontSize(class UCommonTextBlock* Text, int32 DefaulFontSize, int32 MobileFont, const struct FSlateFontInfo& TempFont, bool Temp_bool_Variable, bool CallFunc_IsMobileGame_ReturnValue, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "SetFontSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_SetFontSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "SetFontSize");
+
+	Params::UOptionsMenuSetting_C_SetFontSize_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.DefaulFontSize = DefaulFontSize;
@@ -50,13 +78,16 @@ void UOptionsMenuSetting_C::SetFontSize(class UCommonTextBlock* Text, int32 Defa
 // Parameters:
 // float                              CallFunc_GetValue_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_ConvertSliderValueToSettingsValue_SettingsValue         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_FloatToText_ReturnValue                            ()
+// class FText                        CallFunc_Conv_FloatToText_ReturnValue                            (None)
 
 void UOptionsMenuSetting_C::UpdateVisuals(float CallFunc_GetValue_ReturnValue, float CallFunc_ConvertSliderValueToSettingsValue_SettingsValue, class FText CallFunc_Conv_FloatToText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_UpdateVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateVisuals");
+
+	Params::UOptionsMenuSetting_C_UpdateVisuals_Params Parms{};
 
 	Parms.CallFunc_GetValue_ReturnValue = CallFunc_GetValue_ReturnValue;
 	Parms.CallFunc_ConvertSliderValueToSettingsValue_SettingsValue = CallFunc_ConvertSliderValueToSettingsValue_SettingsValue;
@@ -78,9 +109,12 @@ void UOptionsMenuSetting_C::UpdateVisuals(float CallFunc_GetValue_ReturnValue, f
 
 void UOptionsMenuSetting_C::ConvertSettingsValueToSliderValue(float SettingsValue, float* SliderValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "ConvertSettingsValueToSliderValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_ConvertSettingsValueToSliderValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "ConvertSettingsValueToSliderValue");
+
+	Params::UOptionsMenuSetting_C_ConvertSettingsValueToSliderValue_Params Parms{};
 
 	Parms.SettingsValue = SettingsValue;
 	Parms.CallFunc_Subtract_FloatFloat_ReturnValue = CallFunc_Subtract_FloatFloat_ReturnValue;
@@ -103,9 +137,12 @@ void UOptionsMenuSetting_C::ConvertSettingsValueToSliderValue(float SettingsValu
 
 void UOptionsMenuSetting_C::UpdateSliderTexture(float CallFunc_GetValue_ReturnValue, class FName CallFunc_MakeLiteralName_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateSliderTexture");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_UpdateSliderTexture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateSliderTexture");
+
+	Params::UOptionsMenuSetting_C_UpdateSliderTexture_Params Parms{};
 
 	Parms.CallFunc_GetValue_ReturnValue = CallFunc_GetValue_ReturnValue;
 	Parms.CallFunc_MakeLiteralName_ReturnValue = CallFunc_MakeLiteralName_ReturnValue;
@@ -126,9 +163,12 @@ void UOptionsMenuSetting_C::UpdateSliderTexture(float CallFunc_GetValue_ReturnVa
 
 void UOptionsMenuSetting_C::ConvertSliderValueToSettingsValue(float SliderValue, float* SettingsValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "ConvertSliderValueToSettingsValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_ConvertSliderValueToSettingsValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "ConvertSliderValueToSettingsValue");
+
+	Params::UOptionsMenuSetting_C_ConvertSliderValueToSettingsValue_Params Parms{};
 
 	Parms.SliderValue = SliderValue;
 	Parms.CallFunc_Subtract_FloatFloat_ReturnValue = CallFunc_Subtract_FloatFloat_ReturnValue;
@@ -149,12 +189,14 @@ void UOptionsMenuSetting_C::ConvertSliderValueToSettingsValue(float SliderValue,
 
 void UOptionsMenuSetting_C::SetDarkTabStyle()
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "SetDarkTabStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_SetDarkTabStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "SetDarkTabStyle");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -173,13 +215,13 @@ void UOptionsMenuSetting_C::SetDarkTabStyle()
 // float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Lerp_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EWindowMode             CallFunc_GetFullscreenMode_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_FloatToText_ReturnValue                            ()
+// class FText                        CallFunc_Conv_FloatToText_ReturnValue                            (None)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // float                              CallFunc_Divide_FloatFloat_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FIntPoint                   CallFunc_GetScreenResolution_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FIntPoint                   CallFunc_GetDesktopResolution_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -191,18 +233,21 @@ void UOptionsMenuSetting_C::SetDarkTabStyle()
 // float                              CallFunc_FMax_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Multiply_IntFloat_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Multiply_IntFloat_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_FloatToText_ReturnValue_1                          ()
-// class FText                        CallFunc_Conv_FloatToText_ReturnValue_2                          ()
+// class FText                        CallFunc_Conv_FloatToText_ReturnValue_1                          (None)
+// class FText                        CallFunc_Conv_FloatToText_ReturnValue_2                          (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_3                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 
 void UOptionsMenuSetting_C::SetSliderTextRenderScale(float Scale_Normalized, bool CallFunc_IsMobileGame_ReturnValue, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue, int32 CallFunc_GetMinYResolutionFor3DView_ReturnValue, float CallFunc_GetResolutionScaleInformationEx_CurrentScaleNormalized, float CallFunc_GetResolutionScaleInformationEx_CurrentScaleValue, float CallFunc_GetResolutionScaleInformationEx_MinScaleValue, float CallFunc_GetResolutionScaleInformationEx_MaxScaleValue, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_Lerp_ReturnValue, enum class EWindowMode CallFunc_GetFullscreenMode_ReturnValue, class FText CallFunc_Conv_FloatToText_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, class FText CallFunc_Format_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, const struct FIntPoint& CallFunc_GetScreenResolution_ReturnValue, const struct FIntPoint& CallFunc_GetDesktopResolution_ReturnValue, int32 CallFunc_SelectInt_ReturnValue, int32 CallFunc_SelectInt_ReturnValue_1, float CallFunc_Conv_IntToFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_FClamp_ReturnValue, float CallFunc_FMax_ReturnValue, float CallFunc_Multiply_IntFloat_ReturnValue, float CallFunc_Multiply_IntFloat_ReturnValue_1, class FText CallFunc_Conv_FloatToText_ReturnValue_1, class FText CallFunc_Conv_FloatToText_ReturnValue_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "SetSliderTextRenderScale");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_SetSliderTextRenderScale_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "SetSliderTextRenderScale");
+
+	Params::UOptionsMenuSetting_C_SetSliderTextRenderScale_Params Parms{};
 
 	Parms.Scale_Normalized = Scale_Normalized;
 	Parms.CallFunc_IsMobileGame_ReturnValue = CallFunc_IsMobileGame_ReturnValue;
@@ -251,12 +296,14 @@ void UOptionsMenuSetting_C::SetSliderTextRenderScale(float Scale_Normalized, boo
 
 void UOptionsMenuSetting_C::Hide_Tooltip()
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "Hide Tooltip");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_Hide_Tooltip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "Hide Tooltip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -267,12 +314,14 @@ void UOptionsMenuSetting_C::Hide_Tooltip()
 
 void UOptionsMenuSetting_C::Show_Tooltip()
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "Show Tooltip");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_Show_Tooltip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "Show Tooltip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -282,13 +331,16 @@ void UOptionsMenuSetting_C::Show_Tooltip()
 // Parameters:
 // class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTooltip_Basic_S_C*          CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTooltipMinusBasicMinusS_C*  CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UOptionsMenuSetting_C::OnGetMenuContent(class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UTooltip_Basic_S_C* CallFunc_Create_ReturnValue)
+class UWidget* UOptionsMenuSetting_C::OnGetMenuContent(class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UTooltipMinusBasicMinusS_C* CallFunc_Create_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "OnGetMenuContent");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_OnGetMenuContent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "OnGetMenuContent");
+
+	Params::UOptionsMenuSetting_C_OnGetMenuContent_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
 	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
@@ -313,9 +365,12 @@ class UWidget* UOptionsMenuSetting_C::OnGetMenuContent(class APlayerController* 
 
 void UOptionsMenuSetting_C::HandlePawnSet(bool bRCPawn, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_Not_PreBool_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class APawn* CallFunc_K2_GetPawn_ReturnValue, class AFortRemoteControlledPawnAthena* K2Node_DynamicCast_AsFort_Remote_Controlled_Pawn_Athena, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "HandlePawnSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_HandlePawnSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "HandlePawnSet");
+
+	Params::UOptionsMenuSetting_C_HandlePawnSet_Params Parms{};
 
 	Parms.bRCPawn = bRCPawn;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
@@ -349,9 +404,12 @@ void UOptionsMenuSetting_C::HandlePawnSet(bool bRCPawn, bool K2Node_SwitchEnum_C
 
 void UOptionsMenuSetting_C::UpdateSize(int32 FontSizeMobile, bool Temp_bool_Variable, float Temp_float_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable_1, const struct FVector2D& Temp_struct_Variable, const struct FVector2D& Temp_struct_Variable_1, bool CallFunc_IsMobileGame_ReturnValue, bool Temp_bool_Variable_2, const struct FVector2D& K2Node_Select_Default, bool CallFunc_IsMobileGame_ReturnValue_1, float K2Node_Select_Default_1, const struct FVector2D& K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_UpdateSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateSize");
+
+	Params::UOptionsMenuSetting_C_UpdateSize_Params Parms{};
 
 	Parms.FontSizeMobile = FontSizeMobile;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -379,9 +437,12 @@ void UOptionsMenuSetting_C::UpdateSize(int32 FontSizeMobile, bool Temp_bool_Vari
 
 void UOptionsMenuSetting_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "BP_OnItemExpansionChanged");
+
+	Params::UOptionsMenuSetting_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -397,9 +458,12 @@ void UOptionsMenuSetting_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UOptionsMenuSetting_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "BP_OnItemSelectionChanged");
+
+	Params::UOptionsMenuSetting_C_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -414,12 +478,14 @@ void UOptionsMenuSetting_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UOptionsMenuSetting_C::Construct()
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -431,9 +497,12 @@ void UOptionsMenuSetting_C::Construct()
 
 void UOptionsMenuSetting_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "OnMouseLeave");
+
+	Params::UOptionsMenuSetting_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -450,9 +519,12 @@ void UOptionsMenuSetting_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 
 void UOptionsMenuSetting_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "OnMouseEnter");
+
+	Params::UOptionsMenuSetting_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -469,9 +541,12 @@ void UOptionsMenuSetting_C::OnMouseEnter(const struct FGeometry& MyGeometry, str
 
 void UOptionsMenuSetting_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_OnFloatValueChangedEvent__DelegateSignature(float Value)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_OnFloatValueChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_OnFloatValueChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_OnFloatValueChangedEvent__DelegateSignature");
+
+	Params::UOptionsMenuSetting_C_BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_OnFloatValueChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -487,9 +562,12 @@ void UOptionsMenuSetting_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_124_On
 
 void UOptionsMenuSetting_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "OnListItemObjectSet");
+
+	Params::UOptionsMenuSetting_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -505,9 +583,12 @@ void UOptionsMenuSetting_C::OnListItemObjectSet(class UObject* ListItemObject)
 
 void UOptionsMenuSetting_C::BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature");
+
+	Params::UOptionsMenuSetting_C_BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.bIsOpen = bIsOpen;
 
@@ -522,12 +603,14 @@ void UOptionsMenuSetting_C::BndEvt__MenuAnchorSettingDescription_K2Node_Componen
 
 void UOptionsMenuSetting_C::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "BP_OnEntryReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_BP_OnEntryReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "BP_OnEntryReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -539,9 +622,12 @@ void UOptionsMenuSetting_C::BP_OnEntryReleased()
 
 void UOptionsMenuSetting_C::BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature");
+
+	Params::UOptionsMenuSetting_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -557,9 +643,12 @@ void UOptionsMenuSetting_C::BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEven
 
 void UOptionsMenuSetting_C::UpdateSetting(class UCommonTextBlock* TooltipTextBlock)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateSetting");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_UpdateSetting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "UpdateSetting");
+
+	Params::UOptionsMenuSetting_C_UpdateSetting_Params Parms{};
 
 	Parms.TooltipTextBlock = TooltipTextBlock;
 
@@ -574,12 +663,14 @@ void UOptionsMenuSetting_C::UpdateSetting(class UCommonTextBlock* TooltipTextBlo
 
 void UOptionsMenuSetting_C::CenterOnWidget()
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "CenterOnWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_CenterOnWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "CenterOnWidget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -590,12 +681,14 @@ void UOptionsMenuSetting_C::CenterOnWidget()
 
 void UOptionsMenuSetting_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_86_OnMouseCaptureEndEvent__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuSlider_K2Node_ComponentBoundEvent_86_OnMouseCaptureEndEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_BndEvt__MenuSlider_K2Node_ComponentBoundEvent_86_OnMouseCaptureEndEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuSlider_K2Node_ComponentBoundEvent_86_OnMouseCaptureEndEvent__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -606,12 +699,14 @@ void UOptionsMenuSetting_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_86_OnM
 
 void UOptionsMenuSetting_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_107_OnControllerCaptureEndEvent__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuSlider_K2Node_ComponentBoundEvent_107_OnControllerCaptureEndEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_BndEvt__MenuSlider_K2Node_ComponentBoundEvent_107_OnControllerCaptureEndEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuSlider_K2Node_ComponentBoundEvent_107_OnControllerCaptureEndEvent__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -623,9 +718,12 @@ void UOptionsMenuSetting_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_107_On
 
 void UOptionsMenuSetting_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9_OnFloatValueChangedEvent__DelegateSignature(float Value)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9_OnFloatValueChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9_OnFloatValueChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9_OnFloatValueChangedEvent__DelegateSignature");
+
+	Params::UOptionsMenuSetting_C_BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9_OnFloatValueChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -640,12 +738,14 @@ void UOptionsMenuSetting_C::BndEvt__MenuSlider_K2Node_ComponentBoundEvent_9_OnFl
 
 void UOptionsMenuSetting_C::Refresh()
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "Refresh");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_Refresh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "Refresh");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -658,9 +758,12 @@ void UOptionsMenuSetting_C::Refresh()
 
 void UOptionsMenuSetting_C::SetControlsEnabled(bool bEnabled, class FText& DisabledReason)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "SetControlsEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_SetControlsEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "SetControlsEnabled");
+
+	Params::UOptionsMenuSetting_C_SetControlsEnabled_Params Parms{};
 
 	Parms.bEnabled = bEnabled;
 	Parms.DisabledReason = DisabledReason;
@@ -727,9 +830,12 @@ void UOptionsMenuSetting_C::SetControlsEnabled(bool bEnabled, class FText& Disab
 
 void UOptionsMenuSetting_C::ExecuteUbergraph_OptionsMenuSetting(int32 EntryPoint, bool K2Node_Event_bEnabled, class FText K2Node_Event_DisabledReason, enum class ESlateVisibility Temp_byte_Variable, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, bool K2Node_Event_bIsExpanded, bool K2Node_Event_bIsSelected, const struct FPointerEvent& K2Node_Event_MouseEvent_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent, float K2Node_ComponentBoundEvent_Value_1, const struct FLinearColor& K2Node_MakeStruct_LinearColor, const struct FLinearColor& K2Node_MakeStruct_LinearColor_1, class UObject* K2Node_Event_ListItemObject, class UFortSettingInfo* K2Node_DynamicCast_AsFort_Setting_Info, bool K2Node_DynamicCast_bSuccess, bool K2Node_ComponentBoundEvent_bIsOpen, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_TextIsEmpty_ReturnValue_1, bool CallFunc_IsMobileGame_ReturnValue_1, class UCommonTextBlock* K2Node_Event_TooltipTextBlock, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_1, class UFortSettingsContext* CallFunc_GetContext_ReturnValue, class UFortSettingsContext* CallFunc_GetContext_ReturnValue_1, float CallFunc_ConvertSettingsValueToSliderValue_SliderValue, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, float CallFunc_GetSliderSettingValue_ReturnValue, float K2Node_ComponentBoundEvent_Value, float CallFunc_GetValue_ReturnValue, float CallFunc_ConvertSliderValueToSettingsValue_SettingsValue, bool Temp_bool_Variable_2, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_GetIsEnabled_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_2, bool CallFunc_GetIsEnabled_ReturnValue_1, bool Temp_bool_Variable_3, enum class ESlateVisibility K2Node_Select_Default_3)
 {
-	static auto Func = Class->GetFunction("OptionsMenuSetting_C", "ExecuteUbergraph_OptionsMenuSetting");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuSetting_C_ExecuteUbergraph_OptionsMenuSetting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuSetting_C", "ExecuteUbergraph_OptionsMenuSetting");
+
+	Params::UOptionsMenuSetting_C_ExecuteUbergraph_OptionsMenuSetting_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bEnabled = K2Node_Event_bEnabled;
@@ -789,6 +895,4 @@ void UOptionsMenuSetting_C::ExecuteUbergraph_OptionsMenuSetting(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

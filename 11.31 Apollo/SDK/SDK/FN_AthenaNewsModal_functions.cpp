@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,13 +12,41 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaNewsModal.AthenaNewsModal_C
+// (None)
+
+class UClass* UAthenaNewsModal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaNewsModal_C");
+
+	return Clss;
+}
+
+
+// AthenaNewsModal_C AthenaNewsModal.Default__AthenaNewsModal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaNewsModal_C* UAthenaNewsModal_C::GetDefaultObj()
+{
+	static class UAthenaNewsModal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaNewsModal_C*>(UAthenaNewsModal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaNewsModal.AthenaNewsModal_C.UpdateExternalNewsWidgets
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // enum class ENewsExternalURLMode    Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
-// class FText                        Temp_text_Variable_2                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
+// class FText                        Temp_text_Variable_2                                             (None)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -31,13 +56,16 @@ namespace SDK
 // class FString                      CallFunc_GetExternalNewsURL_ExternalURL                          (ZeroConstructor, HasGetValueTypeHash)
 // enum class ENewsExternalURLMode    CallFunc_GetExternalNewsURL_ButtonMode                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_1                                          ()
+// class FText                        K2Node_Select_Default_1                                          (None)
 
 void UAthenaNewsModal_C::UpdateExternalNewsWidgets(enum class ENewsExternalURLMode Temp_byte_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class FText Temp_text_Variable_2, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool CallFunc_GetExternalNewsURL_bHasValidExternalURL, const class FString& CallFunc_GetExternalNewsURL_ExternalURL, enum class ENewsExternalURLMode CallFunc_GetExternalNewsURL_ButtonMode, enum class ESlateVisibility K2Node_Select_Default, class FText K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("AthenaNewsModal_C", "UpdateExternalNewsWidgets");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsModal_C_UpdateExternalNewsWidgets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsModal_C", "UpdateExternalNewsWidgets");
+
+	Params::UAthenaNewsModal_C_UpdateExternalNewsWidgets_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_text_Variable = Temp_text_Variable;
@@ -65,7 +93,7 @@ void UAthenaNewsModal_C::UpdateExternalNewsWidgets(enum class ENewsExternalURLMo
 // bool                               ShouldShow                                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortRuntimeOptions*         CallFunc_GetRuntimeOptions_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_CanPlay_DenialReason                                    ()
+// class FText                        CallFunc_CanPlay_DenialReason                                    (None)
 // bool                               CallFunc_CanPlay_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESubGame                CallFunc_GetSubGame_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -75,9 +103,12 @@ void UAthenaNewsModal_C::UpdateExternalNewsWidgets(enum class ENewsExternalURLMo
 
 void UAthenaNewsModal_C::ShouldShowSTWUpsellInBR(bool* ShouldShow, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, class FText CallFunc_CanPlay_DenialReason, bool CallFunc_CanPlay_ReturnValue, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaNewsModal_C", "ShouldShowSTWUpsellInBR");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsModal_C_ShouldShowSTWUpsellInBR_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsModal_C", "ShouldShowSTWUpsellInBR");
+
+	Params::UAthenaNewsModal_C_ShouldShowSTWUpsellInBR_Params Parms{};
 
 	Parms.CallFunc_GetRuntimeOptions_ReturnValue = CallFunc_GetRuntimeOptions_ReturnValue;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -103,13 +134,16 @@ void UAthenaNewsModal_C::ShouldShowSTWUpsellInBR(bool* ShouldShow, class UFortRu
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FPointerEvent               MouseEvent                                                       (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 
 struct FEventReply UAthenaNewsModal_C::OnMouseButtonDown_0(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Handled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaNewsModal_C", "OnMouseButtonDown_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsModal_C_OnMouseButtonDown_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsModal_C", "OnMouseButtonDown_0");
+
+	Params::UAthenaNewsModal_C_OnMouseButtonDown_0_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -130,9 +164,12 @@ struct FEventReply UAthenaNewsModal_C::OnMouseButtonDown_0(const struct FGeometr
 
 void UAthenaNewsModal_C::DialogResult_3BE479B64CDE5378C77A8DA453770A3B(enum class EFortDialogResult Result, class FName ResultName)
 {
-	static auto Func = Class->GetFunction("AthenaNewsModal_C", "DialogResult_3BE479B64CDE5378C77A8DA453770A3B");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsModal_C_DialogResult_3BE479B64CDE5378C77A8DA453770A3B_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsModal_C", "DialogResult_3BE479B64CDE5378C77A8DA453770A3B");
+
+	Params::UAthenaNewsModal_C_DialogResult_3BE479B64CDE5378C77A8DA453770A3B_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.ResultName = ResultName;
@@ -149,9 +186,12 @@ void UAthenaNewsModal_C::DialogResult_3BE479B64CDE5378C77A8DA453770A3B(enum clas
 
 void UAthenaNewsModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaNewsModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaNewsModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -166,12 +206,14 @@ void UAthenaNewsModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_Commo
 
 void UAthenaNewsModal_C::ForceNewsClosed()
 {
-	static auto Func = Class->GetFunction("AthenaNewsModal_C", "ForceNewsClosed");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsModal_C_ForceNewsClosed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsModal_C", "ForceNewsClosed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -183,9 +225,12 @@ void UAthenaNewsModal_C::ForceNewsClosed()
 
 void UAthenaNewsModal_C::BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaNewsModal_C", "BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsModal_C", "BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaNewsModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -200,12 +245,14 @@ void UAthenaNewsModal_C::BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0
 
 void UAthenaNewsModal_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaNewsModal_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsModal_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsModal_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -217,9 +264,12 @@ void UAthenaNewsModal_C::Construct()
 
 void UAthenaNewsModal_C::BndEvt__STW_CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaNewsModal_C", "BndEvt__STW_CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsModal_C_BndEvt__STW_CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsModal_C", "BndEvt__STW_CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaNewsModal_C_BndEvt__STW_CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -235,9 +285,12 @@ void UAthenaNewsModal_C::BndEvt__STW_CloseButton_K2Node_ComponentBoundEvent_1_Co
 
 void UAthenaNewsModal_C::BndEvt__AthenaNews_K2Node_ComponentBoundEvent_2_UpdateStyle__DelegateSignature(enum class EAthenaNewsStyle NewStyle)
 {
-	static auto Func = Class->GetFunction("AthenaNewsModal_C", "BndEvt__AthenaNews_K2Node_ComponentBoundEvent_2_UpdateStyle__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsModal_C_BndEvt__AthenaNews_K2Node_ComponentBoundEvent_2_UpdateStyle__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsModal_C", "BndEvt__AthenaNews_K2Node_ComponentBoundEvent_2_UpdateStyle__DelegateSignature");
+
+	Params::UAthenaNewsModal_C_BndEvt__AthenaNews_K2Node_ComponentBoundEvent_2_UpdateStyle__DelegateSignature_Params Parms{};
 
 	Parms.NewStyle = NewStyle;
 
@@ -253,9 +306,12 @@ void UAthenaNewsModal_C::BndEvt__AthenaNews_K2Node_ComponentBoundEvent_2_UpdateS
 
 void UAthenaNewsModal_C::BndEvt__STWFounderPackButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaNewsModal_C", "BndEvt__STWFounderPackButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsModal_C_BndEvt__STWFounderPackButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsModal_C", "BndEvt__STWFounderPackButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaNewsModal_C_BndEvt__STWFounderPackButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -271,9 +327,12 @@ void UAthenaNewsModal_C::BndEvt__STWFounderPackButton_K2Node_ComponentBoundEvent
 
 void UAthenaNewsModal_C::BndEvt__STWUpdateButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaNewsModal_C", "BndEvt__STWUpdateButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsModal_C_BndEvt__STWUpdateButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsModal_C", "BndEvt__STWUpdateButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaNewsModal_C_BndEvt__STWUpdateButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -312,7 +371,7 @@ void UAthenaNewsModal_C::BndEvt__STWUpdateButton_K2Node_ComponentBoundEvent_0_Co
 // bool                               K2Node_SwitchEnum_CmpSuccess_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_1                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCMSContext*                 CallFunc_GetContext_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
 // class UFortAsyncAction_ShowConfirmation_NUI*CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable_2                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -340,9 +399,12 @@ void UAthenaNewsModal_C::BndEvt__STWUpdateButton_K2Node_ComponentBoundEvent_0_Co
 
 void UAthenaNewsModal_C::ExecuteUbergraph_AthenaNewsModal(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class EFortDialogResult K2Node_CustomEvent_Result, class FName K2Node_CustomEvent_ResultName, class FName Temp_name_Variable, enum class EFortDialogResult Temp_byte_Variable, bool K2Node_SwitchEnum_CmpSuccess, class UFortPartyContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_Variable, int32 CallFunc_GetNumPlayersInLocalParty_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_Greater_IntInt_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_2, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility Temp_byte_Variable_4, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_4, int32 Temp_int_Variable, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, int32 Temp_int_Variable_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, enum class EAthenaNewsStyle K2Node_ComponentBoundEvent_NewStyle, bool K2Node_SwitchEnum_CmpSuccess_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCMSContext* CallFunc_GetContext_ReturnValue_2, class FText CallFunc_MakeLiteralText_ReturnValue, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue, int32 Temp_int_Variable_2, bool CallFunc_IsValid_ReturnValue, bool CallFunc_ShouldShowSTWUpsellInBR_ShouldShow, bool CallFunc_Not_PreBool_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, int32 Temp_int_Variable_3, class UCommonButton* K2Node_ComponentBoundEvent_Button, enum class ESubGame CallFunc_GetSubGame_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, enum class ESubGame Temp_byte_Variable_5, bool CallFunc_GetExternalNewsURL_bHasValidExternalURL, const class FString& CallFunc_GetExternalNewsURL_ExternalURL, enum class ENewsExternalURLMode CallFunc_GetExternalNewsURL_ButtonMode, TArray<class AFort_Entry_Music_Controller_BP_C*>& CallFunc_GetAllActorsOfClass_OutActors, class AFort_Entry_Music_Controller_BP_C* CallFunc_Array_Get_Item, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_3, enum class ESubGame CallFunc_GetSubGame_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue, int32 K2Node_Select_Default_1, bool CallFunc_BooleanAND_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_2, class UAthenaNews_C* K2Node_DynamicCast_AsAthena_News, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AthenaNewsModal_C", "ExecuteUbergraph_AthenaNewsModal");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsModal_C", "ExecuteUbergraph_AthenaNewsModal");
+
+	Params::UAthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -403,6 +465,4 @@ void UAthenaNewsModal_C::ExecuteUbergraph_AthenaNewsModal(int32 EntryPoint, UDel
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -40,7 +37,7 @@ public:
 	struct FSlateBrush                           StatIcon;                                          // 0x3F0(0x88)(Edit, BlueprintVisible, ExposeOnSpawn)
 	struct FSlateBrush                           NormalBorderStyle;                                 // 0x478(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         Indent;                                            // 0x500(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                        Pad_5CBF[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_658E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  OverrideStateName;                                 // 0x508(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class UClass*                                StatBGBorderStyle;                                 // 0x520(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UClass*                                StatValueTextStyle;                                // 0x528(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
@@ -48,14 +45,11 @@ public:
 	class UClass*                                LabelTextStyleHighlighted;                         // 0x538(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UClass*                                StatBGBorderStyleHighlight;                        // 0x540(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("StatsListItemWIdget_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UStatsListItemWIdget_C* GetDefaultObj();
 
 	void Initial_Reset(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
-	void Populate_Update(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
+	void PopulateMinusUpdate(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
 	void SetTextAndBorderHighlight(bool bHightlight, bool Temp_bool_Variable, bool Temp_bool_Variable_1, class UClass* K2Node_Select_Default, class UClass* K2Node_Select_Default_1);
 	class UWidget* GetListItemTooltipWidget(class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, const struct FFortDisplayAttribute& CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UUserWidget* CallFunc_Create_Basic_Tooltip_Output);
 	void SetStatIcon(const struct FSlateBrush& NewParam);
@@ -75,6 +69,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

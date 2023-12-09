@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -27,11 +24,8 @@ public:
 	class USoundBase*                            Grind_3p_Loop;                                     // 0x7C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                            Grind_1p_Loop;                                     // 0x7C8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GCNL_Creative_GrinderFeet_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AGCNL_Creative_GrinderFeet_C* GetDefaultObj();
 
 	void DeactivateFootParticles(bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1);
 	struct FVector GetPawnTeamNumber(class AActor* Actor, TArray<struct FLinearColor>& Temp_struct_Variable, uint8 CallFunc_GetActorTeam_ReturnValue, int32 CallFunc_Conv_ByteToInt_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, const struct FLinearColor& CallFunc_Array_Get_Item, const struct FVector& CallFunc_Conv_LinearColorToVector_ReturnValue);
@@ -45,6 +39,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

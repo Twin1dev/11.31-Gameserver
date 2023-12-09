@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_BattleMapBaseEdge.BP_BattleMapBaseEdge_C
+// (Actor)
+
+class UClass* ABP_BattleMapBaseEdge_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_BattleMapBaseEdge_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// BP_BattleMapBaseEdge_C BP_BattleMapBaseEdge.Default__BP_BattleMapBaseEdge_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_BattleMapBaseEdge_C* ABP_BattleMapBaseEdge_C::GetDefaultObj()
+{
+	static class ABP_BattleMapBaseEdge_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_BattleMapBaseEdge_C*>(ABP_BattleMapBaseEdge_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

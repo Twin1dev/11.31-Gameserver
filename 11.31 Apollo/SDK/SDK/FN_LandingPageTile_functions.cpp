@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass LandingPageTile.LandingPageTile_C
+// (None)
+
+class UClass* ULandingPageTile_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LandingPageTile_C");
+
+	return Clss;
+}
+
+
+// LandingPageTile_C LandingPageTile.Default__LandingPageTile_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULandingPageTile_C* ULandingPageTile_C::GetDefaultObj()
+{
+	static class ULandingPageTile_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULandingPageTile_C*>(ULandingPageTile_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function LandingPageTile.LandingPageTile_C.PlayIntroOrOutro
@@ -24,9 +49,12 @@ namespace SDK
 
 void ULandingPageTile_C::PlayIntroOrOutro(bool PlayIntro, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("LandingPageTile_C", "PlayIntroOrOutro");
+	static class UFunction* Func = nullptr;
 
-	Params::ULandingPageTile_C_PlayIntroOrOutro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LandingPageTile_C", "PlayIntroOrOutro");
+
+	Params::ULandingPageTile_C_PlayIntroOrOutro_Params Parms{};
 
 	Parms.PlayIntro = PlayIntro;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -44,9 +72,12 @@ void ULandingPageTile_C::PlayIntroOrOutro(bool PlayIntro, class UUMGSequencePlay
 
 void ULandingPageTile_C::UpdateTileAvailability(bool Available)
 {
-	static auto Func = Class->GetFunction("LandingPageTile_C", "UpdateTileAvailability");
+	static class UFunction* Func = nullptr;
 
-	Params::ULandingPageTile_C_UpdateTileAvailability_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LandingPageTile_C", "UpdateTileAvailability");
+
+	Params::ULandingPageTile_C_UpdateTileAvailability_Params Parms{};
 
 	Parms.Available = Available;
 
@@ -61,12 +92,14 @@ void ULandingPageTile_C::UpdateTileAvailability(bool Available)
 
 void ULandingPageTile_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("LandingPageTile_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::ULandingPageTile_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LandingPageTile_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -77,12 +110,14 @@ void ULandingPageTile_C::BP_OnHovered()
 
 void ULandingPageTile_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("LandingPageTile_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::ULandingPageTile_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LandingPageTile_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -93,12 +128,14 @@ void ULandingPageTile_C::BP_OnUnhovered()
 
 void ULandingPageTile_C::Construct()
 {
-	static auto Func = Class->GetFunction("LandingPageTile_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::ULandingPageTile_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LandingPageTile_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -110,9 +147,12 @@ void ULandingPageTile_C::Construct()
 
 void ULandingPageTile_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("LandingPageTile_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::ULandingPageTile_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LandingPageTile_C", "PreConstruct");
+
+	Params::ULandingPageTile_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -130,16 +170,19 @@ void ULandingPageTile_C::PreConstruct(bool IsDesignTime)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_Available                                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULandingPageTile_C::ExecuteUbergraph_LandingPageTile(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool K2Node_Event_Available, class FText CallFunc_TextToUpper_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default, bool K2Node_Event_IsDesignTime)
 {
-	static auto Func = Class->GetFunction("LandingPageTile_C", "ExecuteUbergraph_LandingPageTile");
+	static class UFunction* Func = nullptr;
 
-	Params::ULandingPageTile_C_ExecuteUbergraph_LandingPageTile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LandingPageTile_C", "ExecuteUbergraph_LandingPageTile");
+
+	Params::ULandingPageTile_C_ExecuteUbergraph_LandingPageTile_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -158,6 +201,4 @@ void ULandingPageTile_C::ExecuteUbergraph_LandingPageTile(int32 EntryPoint, bool
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass InterfacePlayerPawn.InterfacePlayerPawn_C
+// (None)
+
+class UClass* IInterfacePlayerPawn_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("InterfacePlayerPawn_C");
+
+	return Clss;
+}
+
+
+// InterfacePlayerPawn_C InterfacePlayerPawn.Default__InterfacePlayerPawn_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class IInterfacePlayerPawn_C* IInterfacePlayerPawn_C::GetDefaultObj()
+{
+	static class IInterfacePlayerPawn_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<IInterfacePlayerPawn_C*>(IInterfacePlayerPawn_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function InterfacePlayerPawn.InterfacePlayerPawn_C.MeleeSwingLeft_End
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void IInterfacePlayerPawn_C::MeleeSwingLeft_End()
 {
-	static auto Func = Class->GetFunction("InterfacePlayerPawn_C", "MeleeSwingLeft_End");
+	static class UFunction* Func = nullptr;
 
-	Params::IInterfacePlayerPawn_C_MeleeSwingLeft_End_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InterfacePlayerPawn_C", "MeleeSwingLeft_End");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void IInterfacePlayerPawn_C::MeleeSwingLeft_End()
 
 void IInterfacePlayerPawn_C::MeleeSwingRight_End()
 {
-	static auto Func = Class->GetFunction("InterfacePlayerPawn_C", "MeleeSwingRight_End");
+	static class UFunction* Func = nullptr;
 
-	Params::IInterfacePlayerPawn_C_MeleeSwingRight_End_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InterfacePlayerPawn_C", "MeleeSwingRight_End");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void IInterfacePlayerPawn_C::MeleeSwingRight_End()
 
 void IInterfacePlayerPawn_C::FootStepRight()
 {
-	static auto Func = Class->GetFunction("InterfacePlayerPawn_C", "FootStepRight");
+	static class UFunction* Func = nullptr;
 
-	Params::IInterfacePlayerPawn_C_FootStepRight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InterfacePlayerPawn_C", "FootStepRight");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void IInterfacePlayerPawn_C::FootStepRight()
 
 void IInterfacePlayerPawn_C::FootStepLeft()
 {
-	static auto Func = Class->GetFunction("InterfacePlayerPawn_C", "FootStepLeft");
+	static class UFunction* Func = nullptr;
 
-	Params::IInterfacePlayerPawn_C_FootStepLeft_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InterfacePlayerPawn_C", "FootStepLeft");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -86,15 +119,18 @@ void IInterfacePlayerPawn_C::FootStepLeft()
 
 void IInterfacePlayerPawn_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 {
-	static auto Func = Class->GetFunction("InterfacePlayerPawn_C", "Melee_Effect_Color");
+	static class UFunction* Func = nullptr;
 
-	Params::IInterfacePlayerPawn_C_Melee_Effect_Color_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InterfacePlayerPawn_C", "Melee_Effect_Color");
+
+	Params::IInterfacePlayerPawn_C_Melee_Effect_Color_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Melee_Color_Set != nullptr)
-		*Melee_Color_Set = Parms.Melee_Color_Set;
+		*Melee_Color_Set = std::move(Parms.Melee_Color_Set);
 
 }
 
@@ -106,9 +142,12 @@ void IInterfacePlayerPawn_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 
 void IInterfacePlayerPawn_C::MeleeSwingLeft(bool First_Left)
 {
-	static auto Func = Class->GetFunction("InterfacePlayerPawn_C", "MeleeSwingLeft");
+	static class UFunction* Func = nullptr;
 
-	Params::IInterfacePlayerPawn_C_MeleeSwingLeft_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InterfacePlayerPawn_C", "MeleeSwingLeft");
+
+	Params::IInterfacePlayerPawn_C_MeleeSwingLeft_Params Parms{};
 
 	Parms.First_Left = First_Left;
 
@@ -124,9 +163,12 @@ void IInterfacePlayerPawn_C::MeleeSwingLeft(bool First_Left)
 
 void IInterfacePlayerPawn_C::MeleeSwingRight(bool First_Right)
 {
-	static auto Func = Class->GetFunction("InterfacePlayerPawn_C", "MeleeSwingRight");
+	static class UFunction* Func = nullptr;
 
-	Params::IInterfacePlayerPawn_C_MeleeSwingRight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InterfacePlayerPawn_C", "MeleeSwingRight");
+
+	Params::IInterfacePlayerPawn_C_MeleeSwingRight_Params Parms{};
 
 	Parms.First_Right = First_Right;
 
@@ -136,6 +178,4 @@ void IInterfacePlayerPawn_C::MeleeSwingRight(bool First_Right)
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

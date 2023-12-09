@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -26,11 +23,8 @@ public:
 	struct FMargin                               ButtonPadding;                                     // 0x4C8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         InitialScreen;                                     // 0x4D8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("RejoinWindow_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class URejoinWindow_C* GetDefaultObj();
 
 	void OnRequestRejoinRetry__DelegateSignature();
 	void OnRequestAbandon__DelegateSignature();
@@ -38,6 +32,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

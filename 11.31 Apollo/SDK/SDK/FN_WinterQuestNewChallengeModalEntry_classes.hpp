@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,16 +16,11 @@ class UWinterQuestNewChallengeModalEntry_C : public UFortWinterQuestChallengeMod
 public:
 	class UImage*                                Image_43;                                          // 0x260(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("WinterQuestNewChallengeModalEntry_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UWinterQuestNewChallengeModalEntry_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

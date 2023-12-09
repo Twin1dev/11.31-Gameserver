@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,34 +12,6 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
-
-// 0x0 (0x0 - 0x0)
-// Function AthenaReplayBrowserRow.AthenaReplayBrowserRow_C.BP_OnSelected
-struct UAthenaReplayBrowserRow_C_BP_OnSelected_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function AthenaReplayBrowserRow.AthenaReplayBrowserRow_C.BP_OnDeselected
-struct UAthenaReplayBrowserRow_C_BP_OnDeselected_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function AthenaReplayBrowserRow.AthenaReplayBrowserRow_C.BP_OnHovered
-struct UAthenaReplayBrowserRow_C_BP_OnHovered_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function AthenaReplayBrowserRow.AthenaReplayBrowserRow_C.BP_OnUnhovered
-struct UAthenaReplayBrowserRow_C_BP_OnUnhovered_Params
-{
-public:
-};
 
 // 0x3 (0x3 - 0x0)
 // Function AthenaReplayBrowserRow.AthenaReplayBrowserRow_C.BP_HandleReplayStateSet
@@ -66,10 +35,10 @@ public:
 	bool                                         Temp_bool_Variable;                                // 0x7(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_BooleanOR_ReturnValue;                    // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Temp_bool_Variable_1;                              // 0x9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4BED[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_650A[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          Temp_struct_Variable;                              // 0xC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_2;                              // 0x1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4BEE[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_650B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          Temp_struct_Variable_1;                            // 0x20(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Temp_struct_Variable_2;                            // 0x30(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          K2Node_Select_Default;                             // 0x40(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -81,7 +50,7 @@ public:
 	bool                                         CallFunc_GetSelected_ReturnValue;                  // 0x80(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsHovered_ReturnValue;                    // 0x81(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_GetSelected_ReturnValue_1;                // 0x82(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4BEF[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_650C[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWidgetAnimation*                      K2Node_Select_Default_2;                           // 0x88(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x90(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -89,6 +58,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

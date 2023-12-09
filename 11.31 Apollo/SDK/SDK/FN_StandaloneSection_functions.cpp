@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass StandaloneSection.StandaloneSection_C
+// (None)
+
+class UClass* UStandaloneSection_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("StandaloneSection_C");
+
+	return Clss;
+}
+
+
+// StandaloneSection_C StandaloneSection.Default__StandaloneSection_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UStandaloneSection_C* UStandaloneSection_C::GetDefaultObj()
+{
+	static class UStandaloneSection_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UStandaloneSection_C*>(UStandaloneSection_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function StandaloneSection.StandaloneSection_C.OnSectionEstablished
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UStandaloneSection_C::OnSectionEstablished(bool bEmptySection)
 {
-	static auto Func = Class->GetFunction("StandaloneSection_C", "OnSectionEstablished");
+	static class UFunction* Func = nullptr;
 
-	Params::UStandaloneSection_C_OnSectionEstablished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StandaloneSection_C", "OnSectionEstablished");
+
+	Params::UStandaloneSection_C_OnSectionEstablished_Params Parms{};
 
 	Parms.bEmptySection = bEmptySection;
 
@@ -43,9 +71,12 @@ void UStandaloneSection_C::OnSectionEstablished(bool bEmptySection)
 
 void UStandaloneSection_C::ExecuteUbergraph_StandaloneSection(int32 EntryPoint, bool K2Node_Event_bEmptySection, bool Temp_bool_Variable, class UWidget* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("StandaloneSection_C", "ExecuteUbergraph_StandaloneSection");
+	static class UFunction* Func = nullptr;
 
-	Params::UStandaloneSection_C_ExecuteUbergraph_StandaloneSection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StandaloneSection_C", "ExecuteUbergraph_StandaloneSection");
+
+	Params::UStandaloneSection_C_ExecuteUbergraph_StandaloneSection_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bEmptySection = K2Node_Event_bEmptySection;
@@ -58,6 +89,4 @@ void UStandaloneSection_C::ExecuteUbergraph_StandaloneSection(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

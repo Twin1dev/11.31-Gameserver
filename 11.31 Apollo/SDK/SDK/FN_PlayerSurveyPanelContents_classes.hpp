@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -31,11 +28,8 @@ public:
 	class FText                                  Text_QuestionLabel;                                // 0x298(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	UMulticastInlineDelegateProperty_            OnSurveyEnded;                                     // 0x2B0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("PlayerSurveyPanelContents_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UPlayerSurveyPanelContents_C* GetDefaultObj();
 
 	void UpdateSubtitleText(class FText CallFunc_GetSubtitleText_Text);
 	void FocusDefaultWidgetForCurrentQuestion(class UWidget* CallFunc_GetDefaultFocusedWidget_Result);
@@ -67,6 +61,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

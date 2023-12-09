@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -35,15 +32,12 @@ public:
 	class FString                                EventId;                                           // 0xBE8(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	bool                                         IsEnded;                                           // 0xBF8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         IsLive;                                            // 0xBF9(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5D39[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_689C[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	UMulticastInlineDelegateProperty_            OnWindowSelected;                                  // 0xC00(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FString                                TournamentId;                                      // 0xC10(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ShowdownEventTile_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UShowdownEventTile_C* GetDefaultObj();
 
 	void SetData(const class FString& TournamentInfo, const class FString& EventInfo);
 	void Construct();
@@ -66,6 +60,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

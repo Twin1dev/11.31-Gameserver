@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass MinigameButtons.MinigameButtons_C
+// (None)
+
+class UClass* UMinigameButtons_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MinigameButtons_C");
+
+	return Clss;
+}
+
+
+// MinigameButtons_C MinigameButtons.Default__MinigameButtons_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMinigameButtons_C* UMinigameButtons_C::GetDefaultObj()
+{
+	static class UMinigameButtons_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMinigameButtons_C*>(UMinigameButtons_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function MinigameButtons.MinigameButtons_C.UpdateButtonsFromButtonState
@@ -27,15 +52,18 @@ namespace SDK
 // bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UIconTextButton_C*           K2Node_Select_Default                                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_1                                          ()
+// class FText                        K2Node_Select_Default_1                                          (None)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UIconTextButton_C*           K2Node_Select_Default_2                                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UMinigameButtons_C::UpdateButtonsFromButtonState(const struct FMinigameButtonsStateConfiguration& ButtonConfiguration, bool Temp_bool_Variable, bool Temp_bool_Variable_1, class UIconTextButton_C* Temp_object_Variable, const struct FMinigameButtonsStateConfiguration& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, bool Temp_bool_Variable_2, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UIconTextButton_C* K2Node_Select_Default, class FText K2Node_Select_Default_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, class UIconTextButton_C* K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "UpdateButtonsFromButtonState");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_UpdateButtonsFromButtonState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "UpdateButtonsFromButtonState");
+
+	Params::UMinigameButtons_C_UpdateButtonsFromButtonState_Params Parms{};
 
 	Parms.ButtonConfiguration = ButtonConfiguration;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -63,9 +91,12 @@ void UMinigameButtons_C::UpdateButtonsFromButtonState(const struct FMinigameButt
 
 void UMinigameButtons_C::SetButtonState(enum class EMinigameButtonsState Value, bool CallFunc_NotEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "SetButtonState");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_SetButtonState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "SetButtonState");
+
+	Params::UMinigameButtons_C_SetButtonState_Params Parms{};
 
 	Parms.Value = Value;
 	Parms.CallFunc_NotEqual_ByteByte_ReturnValue = CallFunc_NotEqual_ByteByte_ReturnValue;
@@ -81,12 +112,14 @@ void UMinigameButtons_C::SetButtonState(enum class EMinigameButtonsState Value, 
 
 void UMinigameButtons_C::CenterOnCurrentButton()
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "CenterOnCurrentButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_CenterOnCurrentButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "CenterOnCurrentButton");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -127,9 +160,12 @@ void UMinigameButtons_C::CenterOnCurrentButton()
 
 void UMinigameButtons_C::UpdateButtons(class AFortMinigame* CurrentMinigame, enum class EMinigameButtonsState UseButtonState, enum class EMinigameButtonsState Temp_byte_Variable, enum class EMinigameButtonsState Temp_byte_Variable_1, enum class EMinigameButtonsState Temp_byte_Variable_2, enum class EMinigameButtonsState Temp_byte_Variable_3, enum class EMinigameButtonsState Temp_byte_Variable_4, enum class EMinigameButtonsState Temp_byte_Variable_5, enum class EMinigameButtonsState Temp_byte_Variable_6, enum class EMinigameButtonsState Temp_byte_Variable_7, enum class EMinigameButtonsState Temp_byte_Variable_8, enum class EMinigameButtonsState Temp_byte_Variable_9, bool Temp_bool_Variable, enum class EFortMinigameState Temp_byte_Variable_10, enum class EMinigameButtonsState Temp_byte_Variable_11, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerControllerAthena* K2Node_DynamicCast_AsFort_Player_Controller_Athena, bool K2Node_DynamicCast_bSuccess, enum class EMinigameButtonsState Temp_byte_Variable_12, bool CallFunc_IsValid_ReturnValue, class AFortMinigame* CallFunc_GetMinigame_ReturnValue, class APawn* CallFunc_GetOwningPlayerPawn_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsCuratedHub_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsReady_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, enum class EMinigameButtonsState K2Node_Select_Default, bool CallFunc_IsValid_ReturnValue_3, enum class EMinigameButtonsState K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "UpdateButtons");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_UpdateButtons_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "UpdateButtons");
+
+	Params::UMinigameButtons_C_UpdateButtons_Params Parms{};
 
 	Parms.CurrentMinigame = CurrentMinigame;
 	Parms.UseButtonState = UseButtonState;
@@ -174,9 +210,12 @@ void UMinigameButtons_C::UpdateButtons(class AFortMinigame* CurrentMinigame, enu
 
 void UMinigameButtons_C::BndEvt__StartGameButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "BndEvt__StartGameButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_BndEvt__StartGameButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "BndEvt__StartGameButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UMinigameButtons_C_BndEvt__StartGameButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -192,9 +231,12 @@ void UMinigameButtons_C::BndEvt__StartGameButton_K2Node_ComponentBoundEvent_0_Co
 
 void UMinigameButtons_C::BndEvt__EndGameButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "BndEvt__EndGameButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_BndEvt__EndGameButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "BndEvt__EndGameButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UMinigameButtons_C_BndEvt__EndGameButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -210,9 +252,12 @@ void UMinigameButtons_C::BndEvt__EndGameButton_K2Node_ComponentBoundEvent_1_Comm
 
 void UMinigameButtons_C::SetWidgetSwitcherIndex(int32 Index)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "SetWidgetSwitcherIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_SetWidgetSwitcherIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "SetWidgetSwitcherIndex");
+
+	Params::UMinigameButtons_C_SetWidgetSwitcherIndex_Params Parms{};
 
 	Parms.Index = Index;
 
@@ -228,9 +273,12 @@ void UMinigameButtons_C::SetWidgetSwitcherIndex(int32 Index)
 
 void UMinigameButtons_C::BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UMinigameButtons_C_BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -246,9 +294,12 @@ void UMinigameButtons_C::BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_2_Com
 
 void UMinigameButtons_C::BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+
+	Params::UMinigameButtons_C_BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -264,9 +315,12 @@ void UMinigameButtons_C::BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_3_C
 
 void UMinigameButtons_C::BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+
+	Params::UMinigameButtons_C_BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -282,9 +336,12 @@ void UMinigameButtons_C::BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_4_C
 
 void UMinigameButtons_C::BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+
+	Params::UMinigameButtons_C_BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -300,9 +357,12 @@ void UMinigameButtons_C::BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_5_Com
 
 void UMinigameButtons_C::BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+
+	Params::UMinigameButtons_C_BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -318,9 +378,12 @@ void UMinigameButtons_C::BndEvt__StartGameButton2_K2Node_ComponentBoundEvent_6_C
 
 void UMinigameButtons_C::BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature");
+
+	Params::UMinigameButtons_C_BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -335,12 +398,14 @@ void UMinigameButtons_C::BndEvt__EndGameButton2_K2Node_ComponentBoundEvent_7_Com
 
 void UMinigameButtons_C::OnInitialized()
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "OnInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_OnInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "OnInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -368,9 +433,12 @@ void UMinigameButtons_C::OnInitialized()
 
 void UMinigameButtons_C::ExecuteUbergraph_MinigameButtons(int32 EntryPoint, bool Temp_bool_Variable, class UCommonButton* K2Node_ComponentBoundEvent_Button_6, int32 K2Node_CustomEvent_Index, class UCommonButton* K2Node_ComponentBoundEvent_Button_7, int32 Temp_int_Variable, class UCommonButton* K2Node_ComponentBoundEvent_Button_5, class UCommonButton* K2Node_ComponentBoundEvent_Button_4, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, const struct FMinigameButtonsWidgetSwitcherConfiguration& K2Node_MakeStruct_MinigameButtonsWidgetSwitcherConfiguration, const struct FMinigameButtonsWidgetSwitcherConfiguration& K2Node_MakeStruct_MinigameButtonsWidgetSwitcherConfiguration_1, bool CallFunc_Array_IsValidIndex_ReturnValue, TArray<struct FMinigameButtonsWidgetSwitcherConfiguration>& K2Node_MakeArray_Array, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "ExecuteUbergraph_MinigameButtons");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_ExecuteUbergraph_MinigameButtons_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "ExecuteUbergraph_MinigameButtons");
+
+	Params::UMinigameButtons_C_ExecuteUbergraph_MinigameButtons_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -402,9 +470,12 @@ void UMinigameButtons_C::ExecuteUbergraph_MinigameButtons(int32 EntryPoint, bool
 
 void UMinigameButtons_C::EndButtonUnhovered__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "EndButtonUnhovered__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_EndButtonUnhovered__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "EndButtonUnhovered__DelegateSignature");
+
+	Params::UMinigameButtons_C_EndButtonUnhovered__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -420,9 +491,12 @@ void UMinigameButtons_C::EndButtonUnhovered__DelegateSignature(class UCommonButt
 
 void UMinigameButtons_C::StartButtonUnhovered__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "StartButtonUnhovered__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_StartButtonUnhovered__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "StartButtonUnhovered__DelegateSignature");
+
+	Params::UMinigameButtons_C_StartButtonUnhovered__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -438,9 +512,12 @@ void UMinigameButtons_C::StartButtonUnhovered__DelegateSignature(class UCommonBu
 
 void UMinigameButtons_C::EndButtonHovered__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "EndButtonHovered__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_EndButtonHovered__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "EndButtonHovered__DelegateSignature");
+
+	Params::UMinigameButtons_C_EndButtonHovered__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -456,9 +533,12 @@ void UMinigameButtons_C::EndButtonHovered__DelegateSignature(class UCommonButton
 
 void UMinigameButtons_C::StartButtonHovered__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "StartButtonHovered__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_StartButtonHovered__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "StartButtonHovered__DelegateSignature");
+
+	Params::UMinigameButtons_C_StartButtonHovered__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -473,12 +553,14 @@ void UMinigameButtons_C::StartButtonHovered__DelegateSignature(class UCommonButt
 
 void UMinigameButtons_C::EndButtonClicked__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "EndButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_EndButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "EndButtonClicked__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -489,17 +571,17 @@ void UMinigameButtons_C::EndButtonClicked__DelegateSignature()
 
 void UMinigameButtons_C::StartButtonClicked__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("MinigameButtons_C", "StartButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameButtons_C_StartButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameButtons_C", "StartButtonClicked__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

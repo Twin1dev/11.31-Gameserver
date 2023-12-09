@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TextStyle-BurbankSmall-XS-Gray.TextStyle-BurbankSmall-XS-Gray_C
+// (None)
+
+class UClass* UTextStyleMinusBurbankSmallMinusXSMinusGray_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextStyle-BurbankSmall-XS-Gray_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// TextStyle-BurbankSmall-XS-Gray_C TextStyle-BurbankSmall-XS-Gray.Default__TextStyle-BurbankSmall-XS-Gray_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTextStyleMinusBurbankSmallMinusXSMinusGray_C* UTextStyleMinusBurbankSmallMinusXSMinusGray_C::GetDefaultObj()
+{
+	static class UTextStyleMinusBurbankSmallMinusXSMinusGray_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextStyleMinusBurbankSmallMinusXSMinusGray_C*>(UTextStyleMinusBurbankSmallMinusXSMinusGray_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

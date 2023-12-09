@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -22,11 +19,8 @@ public:
 	float                                        TossDelay;                                         // 0xDF8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  HolsterId;                                         // 0xDFC(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GA_Athena_Grenade_Rethrow_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGA_Athena_Grenade_Rethrow_C* GetDefaultObj();
 
 	void DetachProjectile();
 	void AttachProjectile(const struct FHitResult& CallFunc_K2_AddActorLocalOffset_SweepHitResult, const struct FHitResult& CallFunc_K2_AddActorLocalRotation_SweepHitResult);
@@ -43,6 +37,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_Cozy_Discoverable.BP_Cozy_Discoverable_C
+// (Actor)
+
+class UClass* ABP_Cozy_Discoverable_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_Cozy_Discoverable_C");
+
+	return Clss;
+}
+
+
+// BP_Cozy_Discoverable_C BP_Cozy_Discoverable.Default__BP_Cozy_Discoverable_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_Cozy_Discoverable_C* ABP_Cozy_Discoverable_C::GetDefaultObj()
+{
+	static class ABP_Cozy_Discoverable_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_Cozy_Discoverable_C*>(ABP_Cozy_Discoverable_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_Cozy_Discoverable.BP_Cozy_Discoverable_C.UserConstructionScript
@@ -34,9 +59,12 @@ namespace SDK
 
 void ABP_Cozy_Discoverable_C::UserConstructionScript(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_SetStaticMesh_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UMaterialInterface* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool CallFunc_SetStaticMesh_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_SetStaticMesh_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Discoverable_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Discoverable_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Discoverable_C", "UserConstructionScript");
+
+	Params::ABP_Cozy_Discoverable_C_UserConstructionScript_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -63,12 +91,14 @@ void ABP_Cozy_Discoverable_C::UserConstructionScript(int32 Temp_int_Array_Index_
 
 void ABP_Cozy_Discoverable_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Discoverable_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Discoverable_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Discoverable_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -79,12 +109,14 @@ void ABP_Cozy_Discoverable_C::ReceiveBeginPlay()
 
 void ABP_Cozy_Discoverable_C::Commit_OnSpecialInteraction()
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Discoverable_C", "Commit_OnSpecialInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Discoverable_C_Commit_OnSpecialInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Discoverable_C", "Commit_OnSpecialInteraction");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -95,12 +127,14 @@ void ABP_Cozy_Discoverable_C::Commit_OnSpecialInteraction()
 
 void ABP_Cozy_Discoverable_C::ResetCooldown()
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Discoverable_C", "ResetCooldown");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Discoverable_C_ResetCooldown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Discoverable_C", "ResetCooldown");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -113,9 +147,12 @@ void ABP_Cozy_Discoverable_C::ResetCooldown()
 
 void ABP_Cozy_Discoverable_C::HandleObjectSpecialInteraction(const struct FGameplayTag& ActionTag, const struct FGameplayTag& CameraTag)
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Discoverable_C", "HandleObjectSpecialInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Discoverable_C_HandleObjectSpecialInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Discoverable_C", "HandleObjectSpecialInteraction");
+
+	Params::ABP_Cozy_Discoverable_C_HandleObjectSpecialInteraction_Params Parms{};
 
 	Parms.ActionTag = ActionTag;
 	Parms.CameraTag = CameraTag;
@@ -134,9 +171,12 @@ void ABP_Cozy_Discoverable_C::HandleObjectSpecialInteraction(const struct FGamep
 
 void ABP_Cozy_Discoverable_C::NotifiedByDiscoverable(const struct FGameplayTag& ActionTag, const struct FGameplayTag& CameraTag, bool bIsStart)
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Discoverable_C", "NotifiedByDiscoverable");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Discoverable_C_NotifiedByDiscoverable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Discoverable_C", "NotifiedByDiscoverable");
+
+	Params::ABP_Cozy_Discoverable_C_NotifiedByDiscoverable_Params Parms{};
 
 	Parms.ActionTag = ActionTag;
 	Parms.CameraTag = CameraTag;
@@ -168,9 +208,12 @@ void ABP_Cozy_Discoverable_C::NotifiedByDiscoverable(const struct FGameplayTag& 
 
 void ABP_Cozy_Discoverable_C::ExecuteUbergraph_BP_Cozy_Discoverable(int32 EntryPoint, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Array_Index_Variable, class ABP_Cozy_Discoverable_C* CallFunc_Array_Get_Item, bool CallFunc_Greater_FloatFloat_ReturnValue, const struct FGameplayTag& K2Node_Event_ActionTag, const struct FGameplayTag& K2Node_Event_CameraTag, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, int32 Temp_int_Loop_Counter_Variable, const struct FGameplayTag& K2Node_CustomEvent_ActionTag, const struct FGameplayTag& K2Node_CustomEvent_CameraTag, bool K2Node_CustomEvent_bIsStart, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Cozy_Discoverable_C", "ExecuteUbergraph_BP_Cozy_Discoverable");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Cozy_Discoverable_C_ExecuteUbergraph_BP_Cozy_Discoverable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Cozy_Discoverable_C", "ExecuteUbergraph_BP_Cozy_Discoverable");
+
+	Params::ABP_Cozy_Discoverable_C_ExecuteUbergraph_BP_Cozy_Discoverable_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
@@ -194,6 +237,4 @@ void ABP_Cozy_Discoverable_C::ExecuteUbergraph_BP_Cozy_Discoverable(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

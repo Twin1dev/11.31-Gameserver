@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -32,11 +29,11 @@ public:
 	class UAudioComponent*                       Audio_Looping;                                     // 0xAF0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                        Timeline_0_Open_D988993744202060C85FC18A08065960;  // 0xAF8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETimelineDirection                Timeline_0__Direction_D988993744202060C85FC18A08065960; // 0xAFC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6773[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_20D4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTimelineComponent*                    Timeline_0;                                        // 0xB00(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        VectorScale_Open_7AB95DD3448038155AB954ABBF1B806E; // 0xB08(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETimelineDirection                VectorScale__Direction_7AB95DD3448038155AB954ABBF1B806E; // 0xB0C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6774[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_20D5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTimelineComponent*                    VectorScale;                                       // 0xB10(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                       DeathEffects;                                      // 0xB18(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                            EnteredRift;                                       // 0xB20(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -48,7 +45,7 @@ public:
 	struct FScalableFloat                        TeleportHeight;                                    // 0xB50(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FScalableFloat                        HangTime;                                          // 0xB70(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                        TeleportDelay;                                     // 0xB90(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6775[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_20D6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class AFortPlayerPawn*>               PassengerArray;                                    // 0xB98(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
 	class UParticleSystem*                       CrackExitRift;                                     // 0xBA8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                            PlayerExitSkyCrack;                                // 0xBB0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -83,27 +80,27 @@ public:
 	struct FDataTableRowHandle                   ObjStatLoc_23;                                     // 0xD50(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FDataTableRowHandle                   ObjStatLoc_24;                                     // 0xD60(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                         CreativeMode;                                      // 0xD70(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6776[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_20DA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                OverlapActor;                                      // 0xD78(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        RiftLocationNum;                                   // 0xD80(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              ActorRotation;                                     // 0xD84(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FScalableFloat                        ShouldSpawnRift_;                                  // 0xD90(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FScalableFloat                        TeleportExitDistance_0;                            // 0xDB0(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                        PortalCount;                                       // 0xDD0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6777[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_20DC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FScalableFloat                        XPortalSeparation;                                 // 0xDD8(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FScalableFloat                        StarterIslandTeleportHeight;                       // 0xDF8(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         bCanPlayerInteract;                                // 0xE18(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6778[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_20DD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FScalableFloat                        YPortalSeparation;                                 // 0xE20(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class AFortPlayerControllerAthena*           PendingTeleport;                                   // 0xE40(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsMyPortal;                                        // 0xE48(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6779[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_20DF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UParticleSystem*                       Enter_Rift_Gold;                                   // 0xE50(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_PortalLightPillar_C*               Beacon;                                            // 0xE58(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          UIDistanceCheckTimer;                              // 0xE60(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                        UIShowDistance;                                    // 0xE68(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_677A[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_20E0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftClassPtr<class UUserWidget>             UI_PortalInfoPlateSoftClass;                       // 0xE70(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	UMulticastInlineDelegateProperty_            UpdatePlayerName;                                  // 0xE98(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastInlineDelegateProperty_            UpdatePlayerPop;                                   // 0xEA8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -112,29 +109,26 @@ public:
 	TSoftClassPtr<class UUserWidget>             UI_IslandSelectSoftClass;                          // 0xED8(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	class UClass*                                UI_IslandSelectClass;                              // 0xF00(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         StartSkydiving;                                    // 0xF08(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_677B[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_20E2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	UMulticastInlineDelegateProperty_            UpdateIsCuratedPortal;                             // 0xF10(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TSoftClassPtr<class UUserWidget>             UI_IslandCodeEntrySoftClass;                       // 0xF20(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	class UClass*                                UI_IslandCodeEntryClass;                           // 0xF48(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UMulticastInlineDelegateProperty_            UpdateDescription;                                 // 0xF50(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastInlineDelegateProperty_            UpdateLinkCode;                                    // 0xF60(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         bIsBeingDisplayed;                                 // 0xF70(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_677C[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_20E6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        ThumbnailWorldSizeScale;                           // 0xF74(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          OwnedThumbnailColor;                               // 0xF78(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          UnownedThumbnailColor;                             // 0xF88(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                  OverrideName;                                      // 0xF98(0x18)(Edit, BlueprintVisible)
 	bool                                         bAlwaysDisplay;                                    // 0xFB0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_677D[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_20E7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	UMulticastInlineDelegateProperty_            IsBeingInteractedWith;                             // 0xFB8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UUserWidget*                           DisplayedWidget;                                   // 0xFC8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UMulticastInlineDelegateProperty_            CloseShownUI;                                      // 0xFD0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BGA_IslandPortal_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ABGA_IslandPortal_C* GetDefaultObj();
 
 	void ClearDisplayedWidget();
 	void CloseAndClearDisplayedWidget(bool CallFunc_IsValid_ReturnValue);
@@ -204,6 +198,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class EpicCMSUIFramework.EpicCMSImage
+// (None)
+
+class UClass* UEpicCMSImage::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EpicCMSImage");
+
+	return Clss;
+}
+
+
+// EpicCMSImage EpicCMSUIFramework.Default__EpicCMSImage
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UEpicCMSImage* UEpicCMSImage::GetDefaultObj()
+{
+	static class UEpicCMSImage* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEpicCMSImage*>(UEpicCMSImage::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function EpicCMSUIFramework.EpicCMSImage.SetMediaURL
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -22,20 +47,163 @@ namespace SDK
 
 void UEpicCMSImage::SetMediaURL(const class FString& MediaUrl)
 {
-	static auto Func = Class->GetFunction("EpicCMSImage", "SetMediaURL");
+	static class UFunction* Func = nullptr;
 
-	Params::UEpicCMSImage_SetMediaURL_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EpicCMSImage", "SetMediaURL");
+
+	Params::UEpicCMSImage_SetMediaURL_Params Parms{};
 
 	Parms.MediaUrl = MediaUrl;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class EpicCMSUIFramework.EpicCMSLayoutBase
+// (None)
+
+class UClass* UEpicCMSLayoutBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EpicCMSLayoutBase");
+
+	return Clss;
+}
+
+
+// EpicCMSLayoutBase EpicCMSUIFramework.Default__EpicCMSLayoutBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UEpicCMSLayoutBase* UEpicCMSLayoutBase::GetDefaultObj()
+{
+	static class UEpicCMSLayoutBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEpicCMSLayoutBase*>(UEpicCMSLayoutBase::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class EpicCMSUIFramework.EpicCMSManager
+// (None)
+
+class UClass* UEpicCMSManager::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EpicCMSManager");
+
+	return Clss;
+}
+
+
+// EpicCMSManager EpicCMSUIFramework.Default__EpicCMSManager
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UEpicCMSManager* UEpicCMSManager::GetDefaultObj()
+{
+	static class UEpicCMSManager* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEpicCMSManager*>(UEpicCMSManager::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class EpicCMSUIFramework.EpicCMSScreenBase
+// (None)
+
+class UClass* UEpicCMSScreenBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EpicCMSScreenBase");
+
+	return Clss;
+}
+
+
+// EpicCMSScreenBase EpicCMSUIFramework.Default__EpicCMSScreenBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UEpicCMSScreenBase* UEpicCMSScreenBase::GetDefaultObj()
+{
+	static class UEpicCMSScreenBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEpicCMSScreenBase*>(UEpicCMSScreenBase::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class EpicCMSUIFramework.EpicCMSSimpleMessage
+// (None)
+
+class UClass* UEpicCMSSimpleMessage::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EpicCMSSimpleMessage");
+
+	return Clss;
+}
+
+
+// EpicCMSSimpleMessage EpicCMSUIFramework.Default__EpicCMSSimpleMessage
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UEpicCMSSimpleMessage* UEpicCMSSimpleMessage::GetDefaultObj()
+{
+	static class UEpicCMSSimpleMessage* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEpicCMSSimpleMessage*>(UEpicCMSSimpleMessage::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class EpicCMSUIFramework.EpicCMSTileBase
+// (None)
+
+class UClass* UEpicCMSTileBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EpicCMSTileBase");
+
+	return Clss;
+}
+
+
+// EpicCMSTileBase EpicCMSUIFramework.Default__EpicCMSTileBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UEpicCMSTileBase* UEpicCMSTileBase::GetDefaultObj()
+{
+	static class UEpicCMSTileBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEpicCMSTileBase*>(UEpicCMSTileBase::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -45,19 +213,49 @@ void UEpicCMSImage::SetMediaURL(const class FString& MediaUrl)
 
 void UEpicCMSTileBase::Launch()
 {
-	static auto Func = Class->GetFunction("EpicCMSTileBase", "Launch");
+	static class UFunction* Func = nullptr;
 
-	Params::UEpicCMSTileBase_Launch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EpicCMSTileBase", "Launch");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class EpicCMSUIFramework.EpicCMSTileCarousel
+// (None)
+
+class UClass* UEpicCMSTileCarousel::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EpicCMSTileCarousel");
+
+	return Clss;
+}
+
+
+// EpicCMSTileCarousel EpicCMSUIFramework.Default__EpicCMSTileCarousel
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UEpicCMSTileCarousel* UEpicCMSTileCarousel::GetDefaultObj()
+{
+	static class UEpicCMSTileCarousel* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEpicCMSTileCarousel*>(UEpicCMSTileCarousel::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -68,19 +266,22 @@ void UEpicCMSTileBase::Launch()
 
 void UEpicCMSTileCarousel::SetCurrentPageByIndex(int32 PageIndex)
 {
-	static auto Func = Class->GetFunction("EpicCMSTileCarousel", "SetCurrentPageByIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UEpicCMSTileCarousel_SetCurrentPageByIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EpicCMSTileCarousel", "SetCurrentPageByIndex");
+
+	Params::UEpicCMSTileCarousel_SetCurrentPageByIndex_Params Parms{};
 
 	Parms.PageIndex = PageIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -91,18 +292,20 @@ void UEpicCMSTileCarousel::SetCurrentPageByIndex(int32 PageIndex)
 
 void UEpicCMSTileCarousel::PreviousPage()
 {
-	static auto Func = Class->GetFunction("EpicCMSTileCarousel", "PreviousPage");
+	static class UFunction* Func = nullptr;
 
-	Params::UEpicCMSTileCarousel_PreviousPage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EpicCMSTileCarousel", "PreviousPage");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -113,18 +316,20 @@ void UEpicCMSTileCarousel::PreviousPage()
 
 void UEpicCMSTileCarousel::NextPage()
 {
-	static auto Func = Class->GetFunction("EpicCMSTileCarousel", "NextPage");
+	static class UFunction* Func = nullptr;
 
-	Params::UEpicCMSTileCarousel_NextPage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EpicCMSTileCarousel", "NextPage");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -136,9 +341,12 @@ void UEpicCMSTileCarousel::NextPage()
 
 void UEpicCMSTileCarousel::NavigationVisibilityChanged(bool bShowNavigation)
 {
-	static auto Func = Class->GetFunction("EpicCMSTileCarousel", "NavigationVisibilityChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UEpicCMSTileCarousel_NavigationVisibilityChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EpicCMSTileCarousel", "NavigationVisibilityChanged");
+
+	Params::UEpicCMSTileCarousel_NavigationVisibilityChanged_Params Parms{};
 
 	Parms.bShowNavigation = bShowNavigation;
 
@@ -154,19 +362,22 @@ void UEpicCMSTileCarousel::NavigationVisibilityChanged(bool bShowNavigation)
 
 void UEpicCMSTileCarousel::HandleTilePageAdded(class UWidget* TileWidget)
 {
-	static auto Func = Class->GetFunction("EpicCMSTileCarousel", "HandleTilePageAdded");
+	static class UFunction* Func = nullptr;
 
-	Params::UEpicCMSTileCarousel_HandleTilePageAdded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EpicCMSTileCarousel", "HandleTilePageAdded");
+
+	Params::UEpicCMSTileCarousel_HandleTilePageAdded_Params Parms{};
 
 	Parms.TileWidget = TileWidget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -178,18 +389,21 @@ void UEpicCMSTileCarousel::HandleTilePageAdded(class UWidget* TileWidget)
 
 int32 UEpicCMSTileCarousel::GetCurrentPageIndex()
 {
-	static auto Func = Class->GetFunction("EpicCMSTileCarousel", "GetCurrentPageIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UEpicCMSTileCarousel_GetCurrentPageIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EpicCMSTileCarousel", "GetCurrentPageIndex");
+
+	Params::UEpicCMSTileCarousel_GetCurrentPageIndex_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -202,18 +416,20 @@ int32 UEpicCMSTileCarousel::GetCurrentPageIndex()
 
 void UEpicCMSTileCarousel::BeginAutoScrolling()
 {
-	static auto Func = Class->GetFunction("EpicCMSTileCarousel", "BeginAutoScrolling");
+	static class UFunction* Func = nullptr;
 
-	Params::UEpicCMSTileCarousel_BeginAutoScrolling_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EpicCMSTileCarousel", "BeginAutoScrolling");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -225,24 +441,25 @@ void UEpicCMSTileCarousel::BeginAutoScrolling()
 
 void UEpicCMSTileCarousel::AddTilePage(class UWidget* TilePageWidget)
 {
-	static auto Func = Class->GetFunction("EpicCMSTileCarousel", "AddTilePage");
+	static class UFunction* Func = nullptr;
 
-	Params::UEpicCMSTileCarousel_AddTilePage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EpicCMSTileCarousel", "AddTilePage");
+
+	Params::UEpicCMSTileCarousel_AddTilePage_Params Parms{};
 
 	Parms.TilePageWidget = TilePageWidget;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

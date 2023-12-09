@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass Athena_Matchmaking_GameModeButton.Athena_Matchmaking_GameModeButton_C
+// (None)
+
+class UClass* UAthena_Matchmaking_GameModeButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Athena_Matchmaking_GameModeButton_C");
+
+	return Clss;
+}
+
+
+// Athena_Matchmaking_GameModeButton_C Athena_Matchmaking_GameModeButton.Default__Athena_Matchmaking_GameModeButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthena_Matchmaking_GameModeButton_C* UAthena_Matchmaking_GameModeButton_C::GetDefaultObj()
+{
+	static class UAthena_Matchmaking_GameModeButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthena_Matchmaking_GameModeButton_C*>(UAthena_Matchmaking_GameModeButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Athena_Matchmaking_GameModeButton.Athena_Matchmaking_GameModeButton_C.SetButtonSize
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAthena_Matchmaking_GameModeButton_C::SetButtonSize(bool UseLargeSize)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "SetButtonSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_GameModeButton_C_SetButtonSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "SetButtonSize");
+
+	Params::UAthena_Matchmaking_GameModeButton_C_SetButtonSize_Params Parms{};
 
 	Parms.UseLargeSize = UseLargeSize;
 
@@ -40,9 +68,12 @@ void UAthena_Matchmaking_GameModeButton_C::SetButtonSize(bool UseLargeSize)
 
 void UAthena_Matchmaking_GameModeButton_C::SetOwningDisplayWidget(class UAthenaMatchmakingOptionsDisplay_v2_C* OwningDisplay)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "SetOwningDisplayWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_GameModeButton_C_SetOwningDisplayWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "SetOwningDisplayWidget");
+
+	Params::UAthena_Matchmaking_GameModeButton_C_SetOwningDisplayWidget_Params Parms{};
 
 	Parms.OwningDisplay = OwningDisplay;
 
@@ -58,9 +89,12 @@ void UAthena_Matchmaking_GameModeButton_C::SetOwningDisplayWidget(class UAthenaM
 
 void UAthena_Matchmaking_GameModeButton_C::UpdateGameModeAvailibilty(bool CallFunc_IsGameModeAvailable_Available)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "UpdateGameModeAvailibilty");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_GameModeButton_C_UpdateGameModeAvailibilty_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "UpdateGameModeAvailibilty");
+
+	Params::UAthena_Matchmaking_GameModeButton_C_UpdateGameModeAvailibilty_Params Parms{};
 
 	Parms.CallFunc_IsGameModeAvailable_Available = CallFunc_IsGameModeAvailable_Available;
 
@@ -80,9 +114,12 @@ void UAthena_Matchmaking_GameModeButton_C::UpdateGameModeAvailibilty(bool CallFu
 
 void UAthena_Matchmaking_GameModeButton_C::ShowDisabledMessage(bool Show, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "ShowDisabledMessage");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_GameModeButton_C_ShowDisabledMessage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "ShowDisabledMessage");
+
+	Params::UAthena_Matchmaking_GameModeButton_C_ShowDisabledMessage_Params Parms{};
 
 	Parms.Show = Show;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -101,12 +138,14 @@ void UAthena_Matchmaking_GameModeButton_C::ShowDisabledMessage(bool Show, bool T
 
 void UAthena_Matchmaking_GameModeButton_C::DisableGameModeButton()
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "DisableGameModeButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_GameModeButton_C_DisableGameModeButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "DisableGameModeButton");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -120,9 +159,12 @@ void UAthena_Matchmaking_GameModeButton_C::DisableGameModeButton()
 
 void UAthena_Matchmaking_GameModeButton_C::IsGameModeAvailable(class UFortPlaylistAthena* InMode, bool* Available, const TArray<uint8>& Debug)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "IsGameModeAvailable");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_GameModeButton_C_IsGameModeAvailable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "IsGameModeAvailable");
+
+	Params::UAthena_Matchmaking_GameModeButton_C_IsGameModeAvailable_Params Parms{};
 
 	Parms.InMode = InMode;
 	Parms.Debug = Debug;
@@ -141,14 +183,17 @@ void UAthena_Matchmaking_GameModeButton_C::IsGameModeAvailable(class UFortPlayli
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FFocusEvent                 InFocusEvent                                                     (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
-// struct FEventReply                 CallFunc_SetUserFocus_ReturnValue                                ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
+// struct FEventReply                 CallFunc_SetUserFocus_ReturnValue                                (None)
 
 struct FEventReply UAthena_Matchmaking_GameModeButton_C::OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent, const struct FEventReply& CallFunc_Handled_ReturnValue, const struct FEventReply& CallFunc_SetUserFocus_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "OnFocusReceived");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_GameModeButton_C_OnFocusReceived_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "OnFocusReceived");
+
+	Params::UAthena_Matchmaking_GameModeButton_C_OnFocusReceived_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InFocusEvent = InFocusEvent;
@@ -172,9 +217,12 @@ struct FEventReply UAthena_Matchmaking_GameModeButton_C::OnFocusReceived(const s
 
 void UAthena_Matchmaking_GameModeButton_C::SetupGameModeButton(class UFortPlaylistAthena* PlaylistObj, bool bIsEnabled, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "SetupGameModeButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_GameModeButton_C_SetupGameModeButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "SetupGameModeButton");
+
+	Params::UAthena_Matchmaking_GameModeButton_C_SetupGameModeButton_Params Parms{};
 
 	Parms.PlaylistObj = PlaylistObj;
 	Parms.bIsEnabled = bIsEnabled;
@@ -193,9 +241,12 @@ void UAthena_Matchmaking_GameModeButton_C::SetupGameModeButton(class UFortPlayli
 
 void UAthena_Matchmaking_GameModeButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_GameModeButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "PreConstruct");
+
+	Params::UAthena_Matchmaking_GameModeButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -211,9 +262,12 @@ void UAthena_Matchmaking_GameModeButton_C::PreConstruct(bool IsDesignTime)
 
 void UAthena_Matchmaking_GameModeButton_C::BndEvt__PlayButton_K2Node_ComponentBoundEvent_191_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "BndEvt__PlayButton_K2Node_ComponentBoundEvent_191_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_GameModeButton_C_BndEvt__PlayButton_K2Node_ComponentBoundEvent_191_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "BndEvt__PlayButton_K2Node_ComponentBoundEvent_191_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthena_Matchmaking_GameModeButton_C_BndEvt__PlayButton_K2Node_ComponentBoundEvent_191_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -229,9 +283,12 @@ void UAthena_Matchmaking_GameModeButton_C::BndEvt__PlayButton_K2Node_ComponentBo
 
 void UAthena_Matchmaking_GameModeButton_C::OnModeButtonHovered(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "OnModeButtonHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_GameModeButton_C_OnModeButtonHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "OnModeButtonHovered");
+
+	Params::UAthena_Matchmaking_GameModeButton_C_OnModeButtonHovered_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -246,12 +303,14 @@ void UAthena_Matchmaking_GameModeButton_C::OnModeButtonHovered(class UCommonButt
 
 void UAthena_Matchmaking_GameModeButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_GameModeButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -277,9 +336,12 @@ void UAthena_Matchmaking_GameModeButton_C::Construct()
 
 void UAthena_Matchmaking_GameModeButton_C::ExecuteUbergraph_Athena_Matchmaking_GameModeButton(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool K2Node_Event_IsDesignTime, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess, enum class ESlateVisibility K2Node_Select_Default, class UCommonButton* K2Node_ComponentBoundEvent_Button, enum class ESlateVisibility K2Node_Select_Default_1, class UCommonButton* K2Node_CustomEvent_Button, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "ExecuteUbergraph_Athena_Matchmaking_GameModeButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_GameModeButton_C_ExecuteUbergraph_Athena_Matchmaking_GameModeButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "ExecuteUbergraph_Athena_Matchmaking_GameModeButton");
+
+	Params::UAthena_Matchmaking_GameModeButton_C_ExecuteUbergraph_Athena_Matchmaking_GameModeButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -309,9 +371,12 @@ void UAthena_Matchmaking_GameModeButton_C::ExecuteUbergraph_Athena_Matchmaking_G
 
 void UAthena_Matchmaking_GameModeButton_C::ButtonHovered__DelegateSignature(class UAthena_Matchmaking_GameModeButton_C* HoveredButton)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "ButtonHovered__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_GameModeButton_C_ButtonHovered__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "ButtonHovered__DelegateSignature");
+
+	Params::UAthena_Matchmaking_GameModeButton_C_ButtonHovered__DelegateSignature_Params Parms{};
 
 	Parms.HoveredButton = HoveredButton;
 
@@ -327,9 +392,12 @@ void UAthena_Matchmaking_GameModeButton_C::ButtonHovered__DelegateSignature(clas
 
 void UAthena_Matchmaking_GameModeButton_C::GameModeSelected__DelegateSignature(class UAthena_Matchmaking_GameModeButton_C* SelectedGameModeButton)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "GameModeSelected__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_GameModeButton_C_GameModeSelected__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "GameModeSelected__DelegateSignature");
+
+	Params::UAthena_Matchmaking_GameModeButton_C_GameModeSelected__DelegateSignature_Params Parms{};
 
 	Parms.SelectedGameModeButton = SelectedGameModeButton;
 
@@ -339,6 +407,4 @@ void UAthena_Matchmaking_GameModeButton_C::GameModeSelected__DelegateSignature(c
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

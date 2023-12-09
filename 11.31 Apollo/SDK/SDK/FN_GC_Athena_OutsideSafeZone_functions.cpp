@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GC_Athena_OutsideSafeZone.GC_Athena_OutsideSafeZone_C
+// (Actor)
+
+class UClass* AGC_Athena_OutsideSafeZone_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GC_Athena_OutsideSafeZone_C");
+
+	return Clss;
+}
+
+
+// GC_Athena_OutsideSafeZone_C GC_Athena_OutsideSafeZone.Default__GC_Athena_OutsideSafeZone_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGC_Athena_OutsideSafeZone_C* AGC_Athena_OutsideSafeZone_C::GetDefaultObj()
+{
+	static class AGC_Athena_OutsideSafeZone_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGC_Athena_OutsideSafeZone_C*>(AGC_Athena_OutsideSafeZone_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GC_Athena_OutsideSafeZone.GC_Athena_OutsideSafeZone_C.Random Lighting Flashes
@@ -31,9 +56,12 @@ namespace SDK
 
 void AGC_Athena_OutsideSafeZone_C::Random_Lighting_Flashes(const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldLocation_SweepHitResult, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_FMax_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue_1, float CallFunc_RandomFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, const struct FVector& CallFunc_Get_Location_in_Circle_XY_Location_Local_Space, const struct FVector& CallFunc_Add_VectorVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "Random Lighting Flashes");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Athena_OutsideSafeZone_C_Random_Lighting_Flashes_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "Random Lighting Flashes");
+
+	Params::AGC_Athena_OutsideSafeZone_C_Random_Lighting_Flashes_Params Parms{};
 
 	Parms.CallFunc_K2_GetComponentLocation_ReturnValue = CallFunc_K2_GetComponentLocation_ReturnValue;
 	Parms.CallFunc_K2_SetWorldLocation_SweepHitResult = CallFunc_K2_SetWorldLocation_SweepHitResult;
@@ -70,9 +98,12 @@ void AGC_Athena_OutsideSafeZone_C::Random_Lighting_Flashes(const struct FVector&
 
 void AGC_Athena_OutsideSafeZone_C::Get_Location_in_Circle_XY(struct FVector* Location_Local_Space, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_RandomFloat_ReturnValue, float CallFunc_GetPI_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Lerp_ReturnValue, float CallFunc_Cos_ReturnValue, float CallFunc_Sin_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_2, const struct FVector& CallFunc_MakeVector_ReturnValue_1, const struct FVector& CallFunc_VLerp_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "Get Location in Circle XY");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Athena_OutsideSafeZone_C_Get_Location_in_Circle_XY_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "Get Location in Circle XY");
+
+	Params::AGC_Athena_OutsideSafeZone_C_Get_Location_in_Circle_XY_Params Parms{};
 
 	Parms.CallFunc_MakeVector_ReturnValue = CallFunc_MakeVector_ReturnValue;
 	Parms.CallFunc_RandomFloat_ReturnValue = CallFunc_RandomFloat_ReturnValue;
@@ -90,7 +121,7 @@ void AGC_Athena_OutsideSafeZone_C::Get_Location_in_Circle_XY(struct FVector* Loc
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Location_Local_Space != nullptr)
-		*Location_Local_Space = Parms.Location_Local_Space;
+		*Location_Local_Space = std::move(Parms.Location_Local_Space);
 
 }
 
@@ -103,9 +134,12 @@ void AGC_Athena_OutsideSafeZone_C::Get_Location_in_Circle_XY(struct FVector* Loc
 
 void AGC_Athena_OutsideSafeZone_C::RemoveStormAudio(class APlayerPawn_Athena_C* PlayerPawnAthena, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "RemoveStormAudio");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Athena_OutsideSafeZone_C_RemoveStormAudio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "RemoveStormAudio");
+
+	Params::AGC_Athena_OutsideSafeZone_C_RemoveStormAudio_Params Parms{};
 
 	Parms.PlayerPawnAthena = PlayerPawnAthena;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -124,9 +158,12 @@ void AGC_Athena_OutsideSafeZone_C::RemoveStormAudio(class APlayerPawn_Athena_C* 
 
 void AGC_Athena_OutsideSafeZone_C::AddStormAudio(class APlayerPawn_Athena_C* PlayerPawnAthena, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "AddStormAudio");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Athena_OutsideSafeZone_C_AddStormAudio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "AddStormAudio");
+
+	Params::AGC_Athena_OutsideSafeZone_C_AddStormAudio_Params Parms{};
 
 	Parms.PlayerPawnAthena = PlayerPawnAthena;
 	Parms.CallFunc_SpawnSound2D_ReturnValue = CallFunc_SpawnSound2D_ReturnValue;
@@ -143,12 +180,14 @@ void AGC_Athena_OutsideSafeZone_C::AddStormAudio(class APlayerPawn_Athena_C* Pla
 
 void AGC_Athena_OutsideSafeZone_C::LightningFlashTL__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "LightningFlashTL__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Athena_OutsideSafeZone_C_LightningFlashTL__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "LightningFlashTL__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -159,12 +198,14 @@ void AGC_Athena_OutsideSafeZone_C::LightningFlashTL__FinishedFunc()
 
 void AGC_Athena_OutsideSafeZone_C::LightningFlashTL__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "LightningFlashTL__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Athena_OutsideSafeZone_C_LightningFlashTL__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "LightningFlashTL__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -179,9 +220,12 @@ void AGC_Athena_OutsideSafeZone_C::LightningFlashTL__UpdateFunc()
 
 void AGC_Athena_OutsideSafeZone_C::OnLoopingStart(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents)
 {
-	static auto Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "OnLoopingStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Athena_OutsideSafeZone_C_OnLoopingStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "OnLoopingStart");
+
+	Params::AGC_Athena_OutsideSafeZone_C_OnLoopingStart_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -205,9 +249,12 @@ void AGC_Athena_OutsideSafeZone_C::OnLoopingStart(class AActor* MyTarget, struct
 
 void AGC_Athena_OutsideSafeZone_C::OnRemoval(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static auto Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "OnRemoval");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Athena_OutsideSafeZone_C_OnRemoval_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "OnRemoval");
+
+	Params::AGC_Athena_OutsideSafeZone_C_OnRemoval_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -227,12 +274,14 @@ void AGC_Athena_OutsideSafeZone_C::OnRemoval(class AActor* MyTarget, struct FGam
 
 void AGC_Athena_OutsideSafeZone_C::FlashTimeline()
 {
-	static auto Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "FlashTimeline");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Athena_OutsideSafeZone_C_FlashTimeline_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "FlashTimeline");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -263,9 +312,12 @@ void AGC_Athena_OutsideSafeZone_C::FlashTimeline()
 
 void AGC_Athena_OutsideSafeZone_C::ExecuteUbergraph_GC_Athena_OutsideSafeZone(int32 EntryPoint, float CallFunc_RandomFloatInRange_ReturnValue, class AActor* K2Node_Event_MyTarget, const struct FGameplayCueParameters& K2Node_Event_Parameters, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents, class UCameraShake* K2Node_Event_BurstCameraShakeInstance, class ADecalActor* K2Node_Event_BurstDecalInstance, int32 CallFunc_Subtract_IntInt_ReturnValue, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, bool K2Node_SwitchInteger_CmpSuccess, class AActor* K2Node_Event_MyTarget_1, const struct FGameplayCueParameters& K2Node_Event_Parameters_1, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents_1, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents_1, class UParticleSystemComponent* CallFunc_Array_Get_Item, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena_1, bool K2Node_DynamicCast_bSuccess_1, float CallFunc_Lerp_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "ExecuteUbergraph_GC_Athena_OutsideSafeZone");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Athena_OutsideSafeZone_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "ExecuteUbergraph_GC_Athena_OutsideSafeZone");
+
+	Params::AGC_Athena_OutsideSafeZone_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_RandomFloatInRange_ReturnValue = CallFunc_RandomFloatInRange_ReturnValue;
@@ -294,6 +346,4 @@ void AGC_Athena_OutsideSafeZone_C::ExecuteUbergraph_GC_Athena_OutsideSafeZone(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

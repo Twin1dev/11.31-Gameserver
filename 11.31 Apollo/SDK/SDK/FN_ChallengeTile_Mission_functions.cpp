@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ChallengeTile_Mission.ChallengeTile_Mission_C
+// (None)
+
+class UClass* UChallengeTile_Mission_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChallengeTile_Mission_C");
+
+	return Clss;
+}
+
+
+// ChallengeTile_Mission_C ChallengeTile_Mission.Default__ChallengeTile_Mission_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChallengeTile_Mission_C* UChallengeTile_Mission_C::GetDefaultObj()
+{
+	static class UChallengeTile_Mission_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChallengeTile_Mission_C*>(UChallengeTile_Mission_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ChallengeTile_Mission.ChallengeTile_Mission_C.SetDynamicColors
@@ -24,9 +49,12 @@ namespace SDK
 
 void UChallengeTile_Mission_C::SetDynamicColors(class UImage* EventDynamicMaterialTarget, struct FFortChallengeSetStyle& FortChallengeSetStyle, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ChallengeTile_Mission_C", "SetDynamicColors");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeTile_Mission_C_SetDynamicColors_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeTile_Mission_C", "SetDynamicColors");
+
+	Params::UChallengeTile_Mission_C_SetDynamicColors_Params Parms{};
 
 	Parms.EventDynamicMaterialTarget = EventDynamicMaterialTarget;
 	Parms.FortChallengeSetStyle = FortChallengeSetStyle;
@@ -46,9 +74,12 @@ void UChallengeTile_Mission_C::SetDynamicColors(class UImage* EventDynamicMateri
 
 void UChallengeTile_Mission_C::OnChallengeSetEstablished(struct FFortChallengeSetStyle& DisplayStyle, bool bIsComplete, bool bIsLocked)
 {
-	static auto Func = Class->GetFunction("ChallengeTile_Mission_C", "OnChallengeSetEstablished");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeTile_Mission_C_OnChallengeSetEstablished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeTile_Mission_C", "OnChallengeSetEstablished");
+
+	Params::UChallengeTile_Mission_C_OnChallengeSetEstablished_Params Parms{};
 
 	Parms.DisplayStyle = DisplayStyle;
 	Parms.bIsComplete = bIsComplete;
@@ -65,12 +96,14 @@ void UChallengeTile_Mission_C::OnChallengeSetEstablished(struct FFortChallengeSe
 
 void UChallengeTile_Mission_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("ChallengeTile_Mission_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeTile_Mission_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeTile_Mission_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -81,12 +114,14 @@ void UChallengeTile_Mission_C::BP_OnHovered()
 
 void UChallengeTile_Mission_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("ChallengeTile_Mission_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeTile_Mission_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeTile_Mission_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -98,9 +133,12 @@ void UChallengeTile_Mission_C::BP_OnUnhovered()
 
 void UChallengeTile_Mission_C::OnContainsPartyAssistedChallengeChanged(bool bHasPartyAssistedChallenge)
 {
-	static auto Func = Class->GetFunction("ChallengeTile_Mission_C", "OnContainsPartyAssistedChallengeChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeTile_Mission_C_OnContainsPartyAssistedChallengeChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeTile_Mission_C", "OnContainsPartyAssistedChallengeChanged");
+
+	Params::UChallengeTile_Mission_C_OnContainsPartyAssistedChallengeChanged_Params Parms{};
 
 	Parms.bHasPartyAssistedChallenge = bHasPartyAssistedChallenge;
 
@@ -115,12 +153,14 @@ void UChallengeTile_Mission_C::OnContainsPartyAssistedChallengeChanged(bool bHas
 
 void UChallengeTile_Mission_C::ResetToLocked()
 {
-	static auto Func = Class->GetFunction("ChallengeTile_Mission_C", "ResetToLocked");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeTile_Mission_C_ResetToLocked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeTile_Mission_C", "ResetToLocked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -163,9 +203,12 @@ void UChallengeTile_Mission_C::ResetToLocked()
 
 void UChallengeTile_Mission_C::ExecuteUbergraph_ChallengeTile_Mission(int32 EntryPoint, bool Temp_bool_Variable, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, const struct FFortChallengeSetStyle& K2Node_Event_DisplayStyle, bool K2Node_Event_bIsComplete, bool K2Node_Event_bIsLocked, bool CallFunc_Not_PreBool_ReturnValue, bool K2Node_Event_bHasPartyAssistedChallenge, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, class UMaterialInstanceDynamic* CallFunc_GetDynamicFontMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, TSoftObjectPtr<class UTexture2D> CallFunc_GetSoftTextureForChaseReward_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_IsAssetNull_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, class UFortLazyImage* K2Node_DynamicCast_AsFort_Lazy_Image, bool K2Node_DynamicCast_bSuccess, enum class ESlateVisibility Temp_byte_Variable_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicFontMaterial_ReturnValue_1, float CallFunc_MakeLiteralFloat_ReturnValue, float CallFunc_MakeLiteralFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, bool Temp_bool_Variable_1, class UMissionProgressDisplay_C* K2Node_DynamicCast_AsMission_Progress_Display, bool K2Node_DynamicCast_bSuccess_1, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("ChallengeTile_Mission_C", "ExecuteUbergraph_ChallengeTile_Mission");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeTile_Mission_C_ExecuteUbergraph_ChallengeTile_Mission_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeTile_Mission_C", "ExecuteUbergraph_ChallengeTile_Mission");
+
+	Params::UChallengeTile_Mission_C_ExecuteUbergraph_ChallengeTile_Mission_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -206,6 +249,4 @@ void UChallengeTile_Mission_C::ExecuteUbergraph_ChallengeTile_Mission(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

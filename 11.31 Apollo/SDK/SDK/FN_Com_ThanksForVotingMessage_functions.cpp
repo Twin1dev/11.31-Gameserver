@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass Com_ThanksForVotingMessage.Com_ThanksForVotingMessage_C
+// (None)
+
+class UClass* UCom_ThanksForVotingMessage_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Com_ThanksForVotingMessage_C");
+
+	return Clss;
+}
+
+
+// Com_ThanksForVotingMessage_C Com_ThanksForVotingMessage.Default__Com_ThanksForVotingMessage_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCom_ThanksForVotingMessage_C* UCom_ThanksForVotingMessage_C::GetDefaultObj()
+{
+	static class UCom_ThanksForVotingMessage_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCom_ThanksForVotingMessage_C*>(UCom_ThanksForVotingMessage_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function Com_ThanksForVotingMessage.Com_ThanksForVotingMessage_C.TapToClose
@@ -26,16 +51,19 @@ namespace SDK
 // bool                               CallFunc_EqualEqual_KeyKey_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
-// struct FEventReply                 K2Node_Select_Default                                            ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
+// struct FEventReply                 K2Node_Select_Default                                            (None)
 
 struct FEventReply UCom_ThanksForVotingMessage_C::TapToClose(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FKey& CallFunc_PointerEvent_GetEffectingButton_ReturnValue, bool CallFunc_PointerEvent_IsTouchEvent_ReturnValue, bool CallFunc_EqualEqual_KeyKey_ReturnValue, bool Temp_bool_Variable, bool CallFunc_BooleanOR_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const struct FEventReply& CallFunc_Unhandled_ReturnValue, const struct FEventReply& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("Com_ThanksForVotingMessage_C", "TapToClose");
+	static class UFunction* Func = nullptr;
 
-	Params::UCom_ThanksForVotingMessage_C_TapToClose_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Com_ThanksForVotingMessage_C", "TapToClose");
+
+	Params::UCom_ThanksForVotingMessage_C_TapToClose_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -62,12 +90,14 @@ struct FEventReply UCom_ThanksForVotingMessage_C::TapToClose(const struct FGeome
 
 void UCom_ThanksForVotingMessage_C::FadeOutPopup()
 {
-	static auto Func = Class->GetFunction("Com_ThanksForVotingMessage_C", "FadeOutPopup");
+	static class UFunction* Func = nullptr;
 
-	Params::UCom_ThanksForVotingMessage_C_FadeOutPopup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Com_ThanksForVotingMessage_C", "FadeOutPopup");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -78,12 +108,14 @@ void UCom_ThanksForVotingMessage_C::FadeOutPopup()
 
 void UCom_ThanksForVotingMessage_C::FadeInPopup()
 {
-	static auto Func = Class->GetFunction("Com_ThanksForVotingMessage_C", "FadeInPopup");
+	static class UFunction* Func = nullptr;
 
-	Params::UCom_ThanksForVotingMessage_C_FadeInPopup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Com_ThanksForVotingMessage_C", "FadeInPopup");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -98,9 +130,12 @@ void UCom_ThanksForVotingMessage_C::FadeInPopup()
 
 void UCom_ThanksForVotingMessage_C::ExecuteUbergraph_Com_ThanksForVotingMessage(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Com_ThanksForVotingMessage_C", "ExecuteUbergraph_Com_ThanksForVotingMessage");
+	static class UFunction* Func = nullptr;
 
-	Params::UCom_ThanksForVotingMessage_C_ExecuteUbergraph_Com_ThanksForVotingMessage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Com_ThanksForVotingMessage_C", "ExecuteUbergraph_Com_ThanksForVotingMessage");
+
+	Params::UCom_ThanksForVotingMessage_C_ExecuteUbergraph_Com_ThanksForVotingMessage_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -113,6 +148,4 @@ void UCom_ThanksForVotingMessage_C::ExecuteUbergraph_Com_ThanksForVotingMessage(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

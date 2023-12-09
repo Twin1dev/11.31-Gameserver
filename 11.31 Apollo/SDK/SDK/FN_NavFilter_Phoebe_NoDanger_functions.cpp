@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass NavFilter_Phoebe_NoDanger.NavFilter_Phoebe_NoDanger_C
+// (None)
+
+class UClass* UNavFilter_Phoebe_NoDanger_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("NavFilter_Phoebe_NoDanger_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// NavFilter_Phoebe_NoDanger_C NavFilter_Phoebe_NoDanger.Default__NavFilter_Phoebe_NoDanger_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UNavFilter_Phoebe_NoDanger_C* UNavFilter_Phoebe_NoDanger_C::GetDefaultObj()
+{
+	static class UNavFilter_Phoebe_NoDanger_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UNavFilter_Phoebe_NoDanger_C*>(UNavFilter_Phoebe_NoDanger_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

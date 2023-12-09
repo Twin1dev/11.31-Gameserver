@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SocialPanel_TopBarExtension.SocialPanel_TopBarExtension_C
+// (None)
+
+class UClass* USocialPanel_TopBarExtension_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialPanel_TopBarExtension_C");
+
+	return Clss;
+}
+
+
+// SocialPanel_TopBarExtension_C SocialPanel_TopBarExtension.Default__SocialPanel_TopBarExtension_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USocialPanel_TopBarExtension_C* USocialPanel_TopBarExtension_C::GetDefaultObj()
+{
+	static class USocialPanel_TopBarExtension_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialPanel_TopBarExtension_C*>(USocialPanel_TopBarExtension_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SocialPanel_TopBarExtension.SocialPanel_TopBarExtension_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void USocialPanel_TopBarExtension_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("SocialPanel_TopBarExtension_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_TopBarExtension_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_TopBarExtension_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void USocialPanel_TopBarExtension_C::BP_OnHovered()
 
 void USocialPanel_TopBarExtension_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("SocialPanel_TopBarExtension_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_TopBarExtension_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_TopBarExtension_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +85,12 @@ void USocialPanel_TopBarExtension_C::BP_OnUnhovered()
 
 void USocialPanel_TopBarExtension_C::ExecuteUbergraph_SocialPanel_TopBarExtension(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("SocialPanel_TopBarExtension_C", "ExecuteUbergraph_SocialPanel_TopBarExtension");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_TopBarExtension_C_ExecuteUbergraph_SocialPanel_TopBarExtension_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_TopBarExtension_C", "ExecuteUbergraph_SocialPanel_TopBarExtension");
+
+	Params::USocialPanel_TopBarExtension_C_ExecuteUbergraph_SocialPanel_TopBarExtension_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -70,6 +102,4 @@ void USocialPanel_TopBarExtension_C::ExecuteUbergraph_SocialPanel_TopBarExtensio
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

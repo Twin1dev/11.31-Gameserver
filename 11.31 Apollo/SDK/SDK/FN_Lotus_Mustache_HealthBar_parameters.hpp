@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,20 +12,6 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
-
-// 0x0 (0x0 - 0x0)
-// Function Lotus_Mustache_HealthBar.Lotus_Mustache_HealthBar_C.Construct
-struct ULotus_Mustache_HealthBar_C_Construct_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function Lotus_Mustache_HealthBar.Lotus_Mustache_HealthBar_C.Destruct
-struct ULotus_Mustache_HealthBar_C_Destruct_Params
-{
-public:
-};
 
 // 0x4 (0x4 - 0x0)
 // Function Lotus_Mustache_HealthBar.Lotus_Mustache_HealthBar_C.SetHealth
@@ -50,6 +33,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

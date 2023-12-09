@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SpeechBubbleWidget.SpeechBubbleWidget_C
+// (None)
+
+class UClass* USpeechBubbleWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SpeechBubbleWidget_C");
+
+	return Clss;
+}
+
+
+// SpeechBubbleWidget_C SpeechBubbleWidget.Default__SpeechBubbleWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USpeechBubbleWidget_C* USpeechBubbleWidget_C::GetDefaultObj()
+{
+	static class USpeechBubbleWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USpeechBubbleWidget_C*>(USpeechBubbleWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SpeechBubbleWidget.SpeechBubbleWidget_C.InitFromObject
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void USpeechBubbleWidget_C::InitFromObject(class UObject* InitObject)
 {
-	static auto Func = Class->GetFunction("SpeechBubbleWidget_C", "InitFromObject");
+	static class UFunction* Func = nullptr;
 
-	Params::USpeechBubbleWidget_C_InitFromObject_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpeechBubbleWidget_C", "InitFromObject");
+
+	Params::USpeechBubbleWidget_C_InitFromObject_Params Parms{};
 
 	Parms.InitObject = InitObject;
 
@@ -40,13 +68,16 @@ void USpeechBubbleWidget_C::InitFromObject(class UObject* InitObject)
 // class UObject*                     K2Node_Event_InitObject                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortPawn*                   K2Node_DynamicCast_AsFort_Pawn                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetCurrentSentenceSpeechText_ReturnValue                ()
+// class FText                        CallFunc_GetCurrentSentenceSpeechText_ReturnValue                (None)
 
 void USpeechBubbleWidget_C::ExecuteUbergraph_SpeechBubbleWidget(int32 EntryPoint, class UObject* K2Node_Event_InitObject, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, class FText CallFunc_GetCurrentSentenceSpeechText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SpeechBubbleWidget_C", "ExecuteUbergraph_SpeechBubbleWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::USpeechBubbleWidget_C_ExecuteUbergraph_SpeechBubbleWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpeechBubbleWidget_C", "ExecuteUbergraph_SpeechBubbleWidget");
+
+	Params::USpeechBubbleWidget_C_ExecuteUbergraph_SpeechBubbleWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_InitObject = K2Node_Event_InitObject;
@@ -60,6 +91,4 @@ void USpeechBubbleWidget_C::ExecuteUbergraph_SpeechBubbleWidget(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

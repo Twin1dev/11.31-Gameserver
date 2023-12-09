@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,11 +16,8 @@ class UButtonWidgetStyle : public USlateWidgetStyleContainerBase
 public:
 	struct FButtonStyle                          ButtonStyle;                                       // 0x30(0x278)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ButtonWidgetStyle");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UButtonWidgetStyle* GetDefaultObj();
 
 };
 
@@ -34,11 +28,8 @@ class UCheckBoxWidgetStyle : public USlateWidgetStyleContainerBase
 public:
 	struct FCheckBoxStyle                        CheckBoxStyle;                                     // 0x30(0x580)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("CheckBoxWidgetStyle");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UCheckBoxWidgetStyle* GetDefaultObj();
 
 };
 
@@ -49,11 +40,8 @@ class UComboBoxWidgetStyle : public USlateWidgetStyleContainerBase
 public:
 	struct FComboBoxStyle                        ComboBoxStyle;                                     // 0x30(0x3D8)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ComboBoxWidgetStyle");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UComboBoxWidgetStyle* GetDefaultObj();
 
 };
 
@@ -64,11 +52,8 @@ class UComboButtonWidgetStyle : public USlateWidgetStyleContainerBase
 public:
 	struct FComboButtonStyle                     ComboButtonStyle;                                  // 0x30(0x3A0)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ComboButtonWidgetStyle");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UComboButtonWidgetStyle* GetDefaultObj();
 
 };
 
@@ -79,11 +64,8 @@ class UEditableTextBoxWidgetStyle : public USlateWidgetStyleContainerBase
 public:
 	struct FEditableTextBoxStyle                 EditableTextBoxStyle;                              // 0x30(0x7F0)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("EditableTextBoxWidgetStyle");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UEditableTextBoxWidgetStyle* GetDefaultObj();
 
 };
 
@@ -94,11 +76,8 @@ class UEditableTextWidgetStyle : public USlateWidgetStyleContainerBase
 public:
 	struct FEditableTextStyle                    EditableTextStyle;                                 // 0x30(0x218)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("EditableTextWidgetStyle");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UEditableTextWidgetStyle* GetDefaultObj();
 
 };
 
@@ -109,11 +88,8 @@ class UProgressWidgetStyle : public USlateWidgetStyleContainerBase
 public:
 	struct FProgressBarStyle                     ProgressBarStyle;                                  // 0x30(0x1A0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ProgressWidgetStyle");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UProgressWidgetStyle* GetDefaultObj();
 
 };
 
@@ -124,11 +100,8 @@ class UScrollBarWidgetStyle : public USlateWidgetStyleContainerBase
 public:
 	struct FScrollBarStyle                       ScrollBarStyle;                                    // 0x30(0x4D0)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ScrollBarWidgetStyle");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UScrollBarWidgetStyle* GetDefaultObj();
 
 };
 
@@ -139,11 +112,8 @@ class UScrollBoxWidgetStyle : public USlateWidgetStyleContainerBase
 public:
 	struct FScrollBoxStyle                       ScrollBoxStyle;                                    // 0x30(0x228)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ScrollBoxWidgetStyle");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UScrollBoxWidgetStyle* GetDefaultObj();
 
 };
 
@@ -153,13 +123,10 @@ class USlateSettings : public UObject
 {
 public:
 	bool                                         bExplicitCanvasChildZOrder;                        // 0x28(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2229[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_174E[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SlateSettings");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USlateSettings* GetDefaultObj();
 
 };
 
@@ -170,11 +137,8 @@ class USpinBoxWidgetStyle : public USlateWidgetStyleContainerBase
 public:
 	struct FSpinBoxStyle                         SpinBoxStyle;                                      // 0x30(0x2E8)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SpinBoxWidgetStyle");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USpinBoxWidgetStyle* GetDefaultObj();
 
 };
 
@@ -185,11 +149,8 @@ class UTextBlockWidgetStyle : public USlateWidgetStyleContainerBase
 public:
 	struct FTextBlockStyle                       TextBlockStyle;                                    // 0x30(0x268)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("TextBlockWidgetStyle");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UTextBlockWidgetStyle* GetDefaultObj();
 
 };
 
@@ -199,16 +160,11 @@ class UToolMenuBase : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ToolMenuBase");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UToolMenuBase* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

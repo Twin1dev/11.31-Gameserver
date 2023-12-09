@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass MissionGen_FinalFight.MissionGen_FinalFight_C
+// (None)
+
+class UClass* UMissionGen_FinalFight_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MissionGen_FinalFight_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// MissionGen_FinalFight_C MissionGen_FinalFight.Default__MissionGen_FinalFight_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMissionGen_FinalFight_C* UMissionGen_FinalFight_C::GetDefaultObj()
+{
+	static class UMissionGen_FinalFight_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMissionGen_FinalFight_C*>(UMissionGen_FinalFight_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

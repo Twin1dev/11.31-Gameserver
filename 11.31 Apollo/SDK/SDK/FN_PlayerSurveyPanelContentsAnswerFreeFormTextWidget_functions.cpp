@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass PlayerSurveyPanelContentsAnswerFreeFormTextWidget.PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C
+// (None)
+
+class UClass* UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C");
+
+	return Clss;
+}
+
+
+// PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C PlayerSurveyPanelContentsAnswerFreeFormTextWidget.Default__PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C* UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::GetDefaultObj()
+{
+	static class UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C*>(UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PlayerSurveyPanelContentsAnswerFreeFormTextWidget.PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C.GetSubtitleText
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 class FText UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::GetSubtitleText()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "GetSubtitleText");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_GetSubtitleText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "GetSubtitleText");
+
+	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_GetSubtitleText_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -53,19 +81,22 @@ class FText UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::GetSubtitleTex
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // bool                               CallFunc_Greater_IntInt_ReturnValue_1                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UClass*                      K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetCurrentAnswer_bOutIsSet                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortPlayerSurveyAnswerFreeFormTextCallFunc_GetCurrentAnswer_OutAnswer                              ()
+// struct FFortPlayerSurveyAnswerFreeFormTextCallFunc_GetCurrentAnswer_OutAnswer                              (None)
 // class UFortPlayerSurveyQuestionFreeFormText*CallFunc_GetCurrentQuestion_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Len_ReturnValue                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::UpdateLimitsText(int32 AnswerLength, bool IsOverflowing, class UFortPlayerSurveyQuestionFreeFormText* CurrentQuestion, bool ShouldShowLimits, int32 MaxAnswerLength, class FText LimitsText, enum class ESlateVisibility Temp_byte_Variable, bool CallFunc_Greater_IntInt_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, bool CallFunc_IsValid_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, bool CallFunc_Greater_IntInt_ReturnValue_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, bool Temp_bool_Variable_1, class UClass* K2Node_Select_Default_1, bool CallFunc_GetCurrentAnswer_bOutIsSet, const struct FFortPlayerSurveyAnswerFreeFormText& CallFunc_GetCurrentAnswer_OutAnswer, class UFortPlayerSurveyQuestionFreeFormText* CallFunc_GetCurrentQuestion_ReturnValue, int32 CallFunc_Len_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "UpdateLimitsText");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_UpdateLimitsText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "UpdateLimitsText");
+
+	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_UpdateLimitsText_Params Parms{};
 
 	Parms.AnswerLength = AnswerLength;
 	Parms.IsOverflowing = IsOverflowing;
@@ -103,9 +134,12 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::UpdateLimitsText(int3
 
 class UWidget* UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::GetDefaultFocusedWidget()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "GetDefaultFocusedWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_GetDefaultFocusedWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "GetDefaultFocusedWidget");
+
+	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_GetDefaultFocusedWidget_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -121,13 +155,16 @@ class UWidget* UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::GetDefaultF
 // class FString                      AnswerString                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FTimespan                   CallFunc_GetStopwatchTime_ReturnValue                            (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FFortPlayerSurveyAnswerFreeFormTextK2Node_MakeStruct_FortPlayerSurveyAnswerFreeFormText             ()
+// struct FFortPlayerSurveyAnswerFreeFormTextK2Node_MakeStruct_FortPlayerSurveyAnswerFreeFormText             (None)
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::HandlePlayerEnterAnswer(const class FString& AnswerString, bool Temp_bool_Variable, const struct FTimespan& CallFunc_GetStopwatchTime_ReturnValue, const struct FFortPlayerSurveyAnswerFreeFormText& K2Node_MakeStruct_FortPlayerSurveyAnswerFreeFormText)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "HandlePlayerEnterAnswer");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_HandlePlayerEnterAnswer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "HandlePlayerEnterAnswer");
+
+	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_HandlePlayerEnterAnswer_Params Parms{};
 
 	Parms.AnswerString = AnswerString;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -149,9 +186,12 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::HandlePlayerEnterAnsw
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::UpdateHintText(class FText HintText, class UFortPlayerSurveyQuestionFreeFormText* Question, bool CallFunc_IsValid_ReturnValue, class UFortPlayerSurveyQuestionFreeFormText* CallFunc_GetCurrentQuestion_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "UpdateHintText");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_UpdateHintText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "UpdateHintText");
+
+	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_UpdateHintText_Params Parms{};
 
 	Parms.HintText = HintText;
 	Parms.Question = Question;
@@ -167,14 +207,17 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::UpdateHintText(class 
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               CallFunc_GetCurrentAnswer_bOutIsSet                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortPlayerSurveyAnswerFreeFormTextCallFunc_GetCurrentAnswer_OutAnswer                              ()
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// struct FFortPlayerSurveyAnswerFreeFormTextCallFunc_GetCurrentAnswer_OutAnswer                              (None)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::UpdateEntryText(bool CallFunc_GetCurrentAnswer_bOutIsSet, const struct FFortPlayerSurveyAnswerFreeFormText& CallFunc_GetCurrentAnswer_OutAnswer, class FText CallFunc_Conv_StringToText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "UpdateEntryText");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_UpdateEntryText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "UpdateEntryText");
+
+	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_UpdateEntryText_Params Parms{};
 
 	Parms.CallFunc_GetCurrentAnswer_bOutIsSet = CallFunc_GetCurrentAnswer_bOutIsSet;
 	Parms.CallFunc_GetCurrentAnswer_OutAnswer = CallFunc_GetCurrentAnswer_OutAnswer;
@@ -191,12 +234,14 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::UpdateEntryText(bool 
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -208,9 +253,12 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::Construct()
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_0_OnMultiLineEditableTextBoxChangedEvent__DelegateSignature(class FText& Text)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_0_OnMultiLineEditableTextBoxChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_0_OnMultiLineEditableTextBoxChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_0_OnMultiLineEditableTextBoxChangedEvent__DelegateSignature");
+
+	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_0_OnMultiLineEditableTextBoxChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Text = Text;
 
@@ -227,9 +275,12 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::BndEvt__EntryTextBox_
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_1_OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature(class FText& Text, enum class ETextCommit CommitMethod)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_1_OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_1_OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_1_OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature");
+
+	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_BndEvt__EntryTextBox_K2Node_ComponentBoundEvent_1_OnMultiLineEditableTextBoxCommittedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.CommitMethod = CommitMethod;
@@ -246,9 +297,12 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::BndEvt__EntryTextBox_
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::HandleAnswerChanged(struct FFortPlayerSurveyAnswerContainerChangeEventInfo& EventInfo)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "HandleAnswerChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_HandleAnswerChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "HandleAnswerChanged");
+
+	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_HandleAnswerChanged_Params Parms{};
 
 	Parms.EventInfo = EventInfo;
 
@@ -263,12 +317,14 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::HandleAnswerChanged(s
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::HandleCommitCurrentAnswer()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "HandleCommitCurrentAnswer");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_HandleCommitCurrentAnswer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "HandleCommitCurrentAnswer");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -279,12 +335,14 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::HandleCommitCurrentAn
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::HandleQuestionChanged()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "HandleQuestionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_HandleQuestionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "HandleQuestionChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -299,14 +357,17 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::HandleQuestionChanged
 // enum class ETextCommit             K2Node_ComponentBoundEvent_CommitMethod                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortPlayerSurveyAnswerContainerChangeEventInfoK2Node_Event_EventInfo                                           (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue_1                         (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetText_ReturnValue                                     ()
+// class FText                        CallFunc_GetText_ReturnValue                                     (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue_2                         (ZeroConstructor, HasGetValueTypeHash)
 
 void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::ExecuteUbergraph_PlayerSurveyPanelContentsAnswerFreeFormTextWidget(int32 EntryPoint, class FText K2Node_ComponentBoundEvent_Text_1, const class FString& CallFunc_Conv_TextToString_ReturnValue, class FText K2Node_ComponentBoundEvent_Text, enum class ETextCommit K2Node_ComponentBoundEvent_CommitMethod, const struct FFortPlayerSurveyAnswerContainerChangeEventInfo& K2Node_Event_EventInfo, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, class FText CallFunc_GetText_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "ExecuteUbergraph_PlayerSurveyPanelContentsAnswerFreeFormTextWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerFreeFormTextWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C", "ExecuteUbergraph_PlayerSurveyPanelContentsAnswerFreeFormTextWidget");
+
+	Params::UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerFreeFormTextWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_Text_1 = K2Node_ComponentBoundEvent_Text_1;
@@ -324,6 +385,4 @@ void UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::ExecuteUbergraph_Play
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

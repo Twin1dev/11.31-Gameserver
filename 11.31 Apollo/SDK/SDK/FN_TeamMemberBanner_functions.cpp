@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass TeamMemberBanner.TeamMemberBanner_C
+// (None)
+
+class UClass* UTeamMemberBanner_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TeamMemberBanner_C");
+
+	return Clss;
+}
+
+
+// TeamMemberBanner_C TeamMemberBanner.Default__TeamMemberBanner_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTeamMemberBanner_C* UTeamMemberBanner_C::GetDefaultObj()
+{
+	static class UTeamMemberBanner_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTeamMemberBanner_C*>(UTeamMemberBanner_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function TeamMemberBanner.TeamMemberBanner_C.OpenPartyFinder
@@ -27,9 +52,12 @@ namespace SDK
 
 void UTeamMemberBanner_C::OpenPartyFinder(class UUserWidget* CallFunc_GetCachedWidget_ReturnValue, class UFortPartyContext* CallFunc_GetContext_ReturnValue, class USocialPanel_C* K2Node_DynamicCast_AsSocial_Panel, bool K2Node_DynamicCast_bSuccess, bool CallFunc_ShouldShowExternalFriendsUI_ReturnValue, bool CallFunc_IsActivated_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TeamMemberBanner_C", "OpenPartyFinder");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberBanner_C_OpenPartyFinder_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberBanner_C", "OpenPartyFinder");
+
+	Params::UTeamMemberBanner_C_OpenPartyFinder_Params Parms{};
 
 	Parms.CallFunc_GetCachedWidget_ReturnValue = CallFunc_GetCachedWidget_ReturnValue;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -51,13 +79,16 @@ void UTeamMemberBanner_C::OpenPartyFinder(class UUserWidget* CallFunc_GetCachedW
 // class UObject*                     Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     Temp_object_Variable_1                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
+// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     (None)
 
 void UTeamMemberBanner_C::HandleMouseHoverVisualState(bool Hover, bool Temp_bool_Variable, class UObject* Temp_object_Variable, class UObject* Temp_object_Variable_1, class UObject* K2Node_Select_Default, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush)
 {
-	static auto Func = Class->GetFunction("TeamMemberBanner_C", "HandleMouseHoverVisualState");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberBanner_C_HandleMouseHoverVisualState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberBanner_C", "HandleMouseHoverVisualState");
+
+	Params::UTeamMemberBanner_C_HandleMouseHoverVisualState_Params Parms{};
 
 	Parms.Hover = Hover;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -78,9 +109,12 @@ void UTeamMemberBanner_C::HandleMouseHoverVisualState(bool Hover, bool Temp_bool
 
 void UTeamMemberBanner_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TeamMemberBanner_C", "BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberBanner_C_BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberBanner_C", "BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UTeamMemberBanner_C_BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -96,9 +130,12 @@ void UTeamMemberBanner_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_0
 
 void UTeamMemberBanner_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TeamMemberBanner_C", "BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberBanner_C_BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberBanner_C", "BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UTeamMemberBanner_C_BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -114,9 +151,12 @@ void UTeamMemberBanner_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_1
 
 void UTeamMemberBanner_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TeamMemberBanner_C", "BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberBanner_C_BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberBanner_C", "BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+
+	Params::UTeamMemberBanner_C_BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -132,9 +172,12 @@ void UTeamMemberBanner_C::BndEvt__ButtonPartyFinder_K2Node_ComponentBoundEvent_3
 
 void UTeamMemberBanner_C::OnTeamMemberConnectionStateChanged(enum class EFortMemberConnectionState NewConnectionState)
 {
-	static auto Func = Class->GetFunction("TeamMemberBanner_C", "OnTeamMemberConnectionStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberBanner_C_OnTeamMemberConnectionStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberBanner_C", "OnTeamMemberConnectionStateChanged");
+
+	Params::UTeamMemberBanner_C_OnTeamMemberConnectionStateChanged_Params Parms{};
 
 	Parms.NewConnectionState = NewConnectionState;
 
@@ -156,9 +199,12 @@ void UTeamMemberBanner_C::OnTeamMemberConnectionStateChanged(enum class EFortMem
 
 void UTeamMemberBanner_C::ExecuteUbergraph_TeamMemberBanner(int32 EntryPoint, enum class EFortMemberConnectionState Temp_byte_Variable, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, enum class EFortMemberConnectionState K2Node_Event_NewConnectionState, class UWidget* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("TeamMemberBanner_C", "ExecuteUbergraph_TeamMemberBanner");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberBanner_C_ExecuteUbergraph_TeamMemberBanner_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberBanner_C", "ExecuteUbergraph_TeamMemberBanner");
+
+	Params::UTeamMemberBanner_C_ExecuteUbergraph_TeamMemberBanner_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -174,6 +220,4 @@ void UTeamMemberBanner_C::ExecuteUbergraph_TeamMemberBanner(int32 EntryPoint, en
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ChatContainer.ChatContainer_C
+// (None)
+
+class UClass* UChatContainer_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChatContainer_C");
+
+	return Clss;
+}
+
+
+// ChatContainer_C ChatContainer.Default__ChatContainer_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChatContainer_C* UChatContainer_C::GetDefaultObj()
+{
+	static class UChatContainer_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChatContainer_C*>(UChatContainer_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ChatContainer.ChatContainer_C.SetChatBoxStyle
@@ -28,9 +53,12 @@ namespace SDK
 
 void UChatContainer_C::SetChatBoxStyle(enum class ESubGame Temp_byte_Variable, class UMaterialInterface* Temp_object_Variable, class UMaterialInterface* Temp_object_Variable_1, class UMaterialInterface* Temp_object_Variable_2, class UMaterialInterface* Temp_object_Variable_3, enum class ESubGame CallFunc_GetCurrentSubGame_ReturnValue, class UMaterialInterface* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ChatContainer_C", "SetChatBoxStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatContainer_C_SetChatBoxStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatContainer_C", "SetChatBoxStyle");
+
+	Params::UChatContainer_C_SetChatBoxStyle_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -51,16 +79,19 @@ void UChatContainer_C::SetChatBoxStyle(enum class ESubGame Temp_byte_Variable, c
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FKeyEvent                   InKeyEvent                                                       (BlueprintVisible, BlueprintReadOnly, Parm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 // struct FKey                        CallFunc_GetKey_ReturnValue                                      (HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_KeyKey_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 
 struct FEventReply UChatContainer_C::OnKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent, const struct FEventReply& CallFunc_Handled_ReturnValue, const struct FKey& CallFunc_GetKey_ReturnValue, bool CallFunc_EqualEqual_KeyKey_ReturnValue, const struct FEventReply& CallFunc_Unhandled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ChatContainer_C", "OnKeyDown");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatContainer_C_OnKeyDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatContainer_C", "OnKeyDown");
+
+	Params::UChatContainer_C_OnKeyDown_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InKeyEvent = InKeyEvent;
@@ -107,9 +138,12 @@ struct FEventReply UChatContainer_C::OnKeyDown(const struct FGeometry& MyGeometr
 
 void UChatContainer_C::HandleChatOpenChanged(bool bChatShouldBeOpen, bool NewLocalVar_0, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_1, enum class EUMGSequencePlayMode Temp_byte_Variable_4, enum class ESlateVisibility K2Node_Select_Default, enum class EUMGSequencePlayMode Temp_byte_Variable_5, bool Temp_bool_Variable_2, enum class EUMGSequencePlayMode Temp_byte_Variable_6, enum class EUMGSequencePlayMode Temp_byte_Variable_7, bool CallFunc_IsTextChatRestricted_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, enum class EUMGSequencePlayMode K2Node_Select_Default_1, enum class EUMGSequencePlayMode K2Node_Select_Default_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool Temp_bool_Variable_3, bool CallFunc_IsAnimationPlaying_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool CallFunc_IsAnimationPlaying_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("ChatContainer_C", "HandleChatOpenChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatContainer_C_HandleChatOpenChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatContainer_C", "HandleChatOpenChanged");
+
+	Params::UChatContainer_C_HandleChatOpenChanged_Params Parms{};
 
 	Parms.bChatShouldBeOpen = bChatShouldBeOpen;
 	Parms.NewLocalVar_0 = NewLocalVar_0;
@@ -148,12 +182,14 @@ void UChatContainer_C::HandleChatOpenChanged(bool bChatShouldBeOpen, bool NewLoc
 
 void UChatContainer_C::OnSizeAnimationComplete()
 {
-	static auto Func = Class->GetFunction("ChatContainer_C", "OnSizeAnimationComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatContainer_C_OnSizeAnimationComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatContainer_C", "OnSizeAnimationComplete");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -169,9 +205,12 @@ void UChatContainer_C::OnSizeAnimationComplete()
 
 void UChatContainer_C::HandleCursorModeChanged(bool bEnabled, class FName ActionName, class UUserWidget* Widget, bool Temp_bool_Variable, class UWidget* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ChatContainer_C", "HandleCursorModeChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatContainer_C_HandleCursorModeChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatContainer_C", "HandleCursorModeChanged");
+
+	Params::UChatContainer_C_HandleCursorModeChanged_Params Parms{};
 
 	Parms.bEnabled = bEnabled;
 	Parms.ActionName = ActionName;
@@ -191,9 +230,12 @@ void UChatContainer_C::HandleCursorModeChanged(bool bEnabled, class FName Action
 
 void UChatContainer_C::OnChatOpenChanged(bool bShouldBeOpen)
 {
-	static auto Func = Class->GetFunction("ChatContainer_C", "OnChatOpenChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatContainer_C_OnChatOpenChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatContainer_C", "OnChatOpenChanged");
+
+	Params::UChatContainer_C_OnChatOpenChanged_Params Parms{};
 
 	Parms.bShouldBeOpen = bShouldBeOpen;
 
@@ -209,9 +251,12 @@ void UChatContainer_C::OnChatOpenChanged(bool bShouldBeOpen)
 
 void UChatContainer_C::OnSendButtonDisplayChanged(bool bShowSendButton)
 {
-	static auto Func = Class->GetFunction("ChatContainer_C", "OnSendButtonDisplayChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatContainer_C_OnSendButtonDisplayChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatContainer_C", "OnSendButtonDisplayChanged");
+
+	Params::UChatContainer_C_OnSendButtonDisplayChanged_Params Parms{};
 
 	Parms.bShowSendButton = bShowSendButton;
 
@@ -226,12 +271,14 @@ void UChatContainer_C::OnSendButtonDisplayChanged(bool bShowSendButton)
 
 void UChatContainer_C::Construct()
 {
-	static auto Func = Class->GetFunction("ChatContainer_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatContainer_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatContainer_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -243,9 +290,12 @@ void UChatContainer_C::Construct()
 
 void UChatContainer_C::BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ChatContainer_C", "BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatContainer_C_BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatContainer_C", "BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UChatContainer_C_BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -260,12 +310,14 @@ void UChatContainer_C::BndEvt__ConsoleChatShortcut_K2Node_ComponentBoundEvent_0_
 
 void UChatContainer_C::Destruct()
 {
-	static auto Func = Class->GetFunction("ChatContainer_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatContainer_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatContainer_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -278,9 +330,12 @@ void UChatContainer_C::Destruct()
 
 void UChatContainer_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto Func = Class->GetFunction("ChatContainer_C", "Tick");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatContainer_C_Tick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatContainer_C", "Tick");
+
+	Params::UChatContainer_C_Tick_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InDeltaTime = InDeltaTime;
@@ -322,9 +377,12 @@ void UChatContainer_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTim
 
 void UChatContainer_C::ExecuteUbergraph_ChatContainer(int32 EntryPoint, class UFortHUDContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, bool K2Node_Event_bShouldBeOpen, bool CallFunc_IsUsingGamepad_ReturnValue, bool K2Node_Event_bShowSendButton, enum class ESlateVisibility K2Node_Select_Default, bool Temp_bool_Variable_1, class UFortHUDContext* CallFunc_GetContext_ReturnValue_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UWidget* K2Node_Select_Default_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_3, bool CallFunc_IsInZone_ReturnValue, bool Temp_bool_Variable_2, class UFortHUDContext* CallFunc_GetContext_ReturnValue_4, bool CallFunc_IsInCursorMode_ReturnValue, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class UWidget* K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("ChatContainer_C", "ExecuteUbergraph_ChatContainer");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatContainer_C_ExecuteUbergraph_ChatContainer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatContainer_C", "ExecuteUbergraph_ChatContainer");
+
+	Params::UChatContainer_C_ExecuteUbergraph_ChatContainer_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -359,6 +417,4 @@ void UChatContainer_C::ExecuteUbergraph_ChatContainer(int32 EntryPoint, class UF
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

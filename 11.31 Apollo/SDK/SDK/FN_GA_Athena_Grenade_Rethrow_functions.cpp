@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Athena_Grenade_Rethrow.GA_Athena_Grenade_Rethrow_C
+// (None)
+
+class UClass* UGA_Athena_Grenade_Rethrow_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Athena_Grenade_Rethrow_C");
+
+	return Clss;
+}
+
+
+// GA_Athena_Grenade_Rethrow_C GA_Athena_Grenade_Rethrow.Default__GA_Athena_Grenade_Rethrow_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Athena_Grenade_Rethrow_C* UGA_Athena_Grenade_Rethrow_C::GetDefaultObj()
+{
+	static class UGA_Athena_Grenade_Rethrow_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Athena_Grenade_Rethrow_C*>(UGA_Athena_Grenade_Rethrow_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Athena_Grenade_Rethrow.GA_Athena_Grenade_Rethrow_C.DetachProjectile
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UGA_Athena_Grenade_Rethrow_C::DetachProjectile()
 {
-	static auto Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "DetachProjectile");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Grenade_Rethrow_C_DetachProjectile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "DetachProjectile");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -39,9 +66,12 @@ void UGA_Athena_Grenade_Rethrow_C::DetachProjectile()
 
 void UGA_Athena_Grenade_Rethrow_C::AttachProjectile(const struct FHitResult& CallFunc_K2_AddActorLocalOffset_SweepHitResult, const struct FHitResult& CallFunc_K2_AddActorLocalRotation_SweepHitResult)
 {
-	static auto Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "AttachProjectile");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Grenade_Rethrow_C_AttachProjectile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "AttachProjectile");
+
+	Params::UGA_Athena_Grenade_Rethrow_C_AttachProjectile_Params Parms{};
 
 	Parms.CallFunc_K2_AddActorLocalOffset_SweepHitResult = CallFunc_K2_AddActorLocalOffset_SweepHitResult;
 	Parms.CallFunc_K2_AddActorLocalRotation_SweepHitResult = CallFunc_K2_AddActorLocalRotation_SweepHitResult;
@@ -59,9 +89,12 @@ void UGA_Athena_Grenade_Rethrow_C::AttachProjectile(const struct FHitResult& Cal
 
 void UGA_Athena_Grenade_Rethrow_C::Completed_3B7299CC49B6C5C075996A9C8DDF315F(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "Completed_3B7299CC49B6C5C075996A9C8DDF315F");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Grenade_Rethrow_C_Completed_3B7299CC49B6C5C075996A9C8DDF315F_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "Completed_3B7299CC49B6C5C075996A9C8DDF315F");
+
+	Params::UGA_Athena_Grenade_Rethrow_C_Completed_3B7299CC49B6C5C075996A9C8DDF315F_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -79,9 +112,12 @@ void UGA_Athena_Grenade_Rethrow_C::Completed_3B7299CC49B6C5C075996A9C8DDF315F(st
 
 void UGA_Athena_Grenade_Rethrow_C::Cancelled_3B7299CC49B6C5C075996A9C8DDF315F(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "Cancelled_3B7299CC49B6C5C075996A9C8DDF315F");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Grenade_Rethrow_C_Cancelled_3B7299CC49B6C5C075996A9C8DDF315F_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "Cancelled_3B7299CC49B6C5C075996A9C8DDF315F");
+
+	Params::UGA_Athena_Grenade_Rethrow_C_Cancelled_3B7299CC49B6C5C075996A9C8DDF315F_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -99,9 +135,12 @@ void UGA_Athena_Grenade_Rethrow_C::Cancelled_3B7299CC49B6C5C075996A9C8DDF315F(st
 
 void UGA_Athena_Grenade_Rethrow_C::Triggered_3B7299CC49B6C5C075996A9C8DDF315F(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "Triggered_3B7299CC49B6C5C075996A9C8DDF315F");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Grenade_Rethrow_C_Triggered_3B7299CC49B6C5C075996A9C8DDF315F_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "Triggered_3B7299CC49B6C5C075996A9C8DDF315F");
+
+	Params::UGA_Athena_Grenade_Rethrow_C_Triggered_3B7299CC49B6C5C075996A9C8DDF315F_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -117,12 +156,14 @@ void UGA_Athena_Grenade_Rethrow_C::Triggered_3B7299CC49B6C5C075996A9C8DDF315F(st
 
 void UGA_Athena_Grenade_Rethrow_C::OnFinish_B295E6694DBD8B2B2478A38EA60F5624()
 {
-	static auto Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "OnFinish_B295E6694DBD8B2B2478A38EA60F5624");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Grenade_Rethrow_C_OnFinish_B295E6694DBD8B2B2478A38EA60F5624_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "OnFinish_B295E6694DBD8B2B2478A38EA60F5624");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -133,12 +174,14 @@ void UGA_Athena_Grenade_Rethrow_C::OnFinish_B295E6694DBD8B2B2478A38EA60F5624()
 
 void UGA_Athena_Grenade_Rethrow_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Grenade_Rethrow_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -149,12 +192,14 @@ void UGA_Athena_Grenade_Rethrow_C::K2_ActivateAbility()
 
 void UGA_Athena_Grenade_Rethrow_C::TossGrenade()
 {
-	static auto Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "TossGrenade");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Grenade_Rethrow_C_TossGrenade_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "TossGrenade");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -167,9 +212,12 @@ void UGA_Athena_Grenade_Rethrow_C::TossGrenade()
 
 void UGA_Athena_Grenade_Rethrow_C::Server_SpawnProjectile(const struct FVector& Location, const struct FRotator& Direction)
 {
-	static auto Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "Server_SpawnProjectile");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Grenade_Rethrow_C_Server_SpawnProjectile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "Server_SpawnProjectile");
+
+	Params::UGA_Athena_Grenade_Rethrow_C_Server_SpawnProjectile_Params Parms{};
 
 	Parms.Location = Location;
 	Parms.Direction = Direction;
@@ -186,9 +234,12 @@ void UGA_Athena_Grenade_Rethrow_C::Server_SpawnProjectile(const struct FVector& 
 
 void UGA_Athena_Grenade_Rethrow_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Grenade_Rethrow_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "K2_OnEndAbility");
+
+	Params::UGA_Athena_Grenade_Rethrow_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -210,7 +261,7 @@ void UGA_Athena_Grenade_Rethrow_C::K2_OnEndAbility(bool bWasCancelled)
 // struct FGameplayTag                K2Node_CustomEvent_ApplicationTag                                (NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor)
 // struct FGameplayTag                Temp_struct_Variable                                             (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           ()
+// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           (None)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UAnimMontage*                Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -243,15 +294,18 @@ void UGA_Athena_Grenade_Rethrow_C::K2_OnEndAbility(bool bWasCancelled)
 // bool                               K2Node_Event_bWasCancelled                                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_4                           (ZeroConstructor, NoDestructor)
 // TArray<struct FFortCharacterPartMontageInfo>K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// struct FFortGameplayAbilityMontageInfoK2Node_MakeStruct_FortGameplayAbilityMontageInfo                 ()
+// struct FFortGameplayAbilityMontageInfoK2Node_MakeStruct_FortGameplayAbilityMontageInfo                 (None)
 // class UFortAbilityTask_PlayMontageWaitTarget*CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_3                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UGA_Athena_Grenade_Rethrow_C::ExecuteUbergraph_GA_Athena_Grenade_Rethrow(int32 EntryPoint, const class FString& CallFunc_GetObjectName_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_Contains_ReturnValue, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_1, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_1, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FGameplayTag& Temp_struct_Variable, const struct FGameplayAbilityTargetDataHandle& Temp_struct_Variable_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, bool Temp_bool_Variable, class UAnimMontage* Temp_object_Variable, class UAnimMontage* Temp_object_Variable_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UAnimMontage* K2Node_Select_Default, const struct FVector& CallFunc_SpawnLocationAndRotation_OutLoc, const struct FRotator& CallFunc_SpawnLocationAndRotation_OutRot, class AFortProjectileBase* K2Node_DynamicCast_AsFort_Projectile_Base, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_2, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_2, const struct FVector& CallFunc_SpawnLocationAndRotation_OutLoc_1, const struct FRotator& CallFunc_SpawnLocationAndRotation_OutRot_1, const struct FVector& K2Node_Event_Location, const struct FRotator& K2Node_Event_Direction, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, bool CallFunc_IsValid_ReturnValue_1, float CallFunc_CalcGrenadeSpeedFromPitch_GrenadeSpeed, const struct FVector& CallFunc_Conv_RotatorToVector_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FHitResult& CallFunc_K2_SetActorLocation_SweepHitResult, bool CallFunc_K2_SetActorLocation_ReturnValue, class UAbilityTask_WaitDelay* CallFunc_WaitDelay_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool K2Node_Event_bWasCancelled, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, TArray<struct FFortCharacterPartMontageInfo>& K2Node_MakeArray_Array, const struct FFortGameplayAbilityMontageInfo& K2Node_MakeStruct_FortGameplayAbilityMontageInfo, class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue, bool CallFunc_IsValid_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "ExecuteUbergraph_GA_Athena_Grenade_Rethrow");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Grenade_Rethrow_C_ExecuteUbergraph_GA_Athena_Grenade_Rethrow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Grenade_Rethrow_C", "ExecuteUbergraph_GA_Athena_Grenade_Rethrow");
+
+	Params::UGA_Athena_Grenade_Rethrow_C_ExecuteUbergraph_GA_Athena_Grenade_Rethrow_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetObjectName_ReturnValue = CallFunc_GetObjectName_ReturnValue;
@@ -306,6 +360,4 @@ void UGA_Athena_Grenade_Rethrow_C::ExecuteUbergraph_GA_Athena_Grenade_Rethrow(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

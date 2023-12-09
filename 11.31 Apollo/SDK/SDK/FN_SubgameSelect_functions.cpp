@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass SubgameSelect.SubgameSelect_C
+// (None)
+
+class UClass* USubgameSelect_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SubgameSelect_C");
+
+	return Clss;
+}
+
+
+// SubgameSelect_C SubgameSelect.Default__SubgameSelect_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USubgameSelect_C* USubgameSelect_C::GetDefaultObj()
+{
+	static class USubgameSelect_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USubgameSelect_C*>(USubgameSelect_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function SubgameSelect.SubgameSelect_C.UpdateHeaderAndFooter
@@ -31,9 +56,12 @@ namespace SDK
 
 void USubgameSelect_C::UpdateHeaderAndFooter(bool HideHeader, bool HideFooter, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("SubgameSelect_C", "UpdateHeaderAndFooter");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelect_C_UpdateHeaderAndFooter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelect_C", "UpdateHeaderAndFooter");
+
+	Params::USubgameSelect_C_UpdateHeaderAndFooter_Params Parms{};
 
 	Parms.HideHeader = HideHeader;
 	Parms.HideFooter = HideFooter;
@@ -60,9 +88,12 @@ void USubgameSelect_C::UpdateHeaderAndFooter(bool HideHeader, bool HideFooter, b
 
 class UWidget* USubgameSelect_C::PopContentWidgetInternal(const struct FContentPushState& State, class UWidget* CallFunc_PopWidget_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SubgameSelect_C", "PopContentWidgetInternal");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelect_C_PopContentWidgetInternal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelect_C", "PopContentWidgetInternal");
+
+	Params::USubgameSelect_C_PopContentWidgetInternal_Params Parms{};
 
 	Parms.State = State;
 	Parms.CallFunc_PopWidget_ReturnValue = CallFunc_PopWidget_ReturnValue;
@@ -80,12 +111,14 @@ class UWidget* USubgameSelect_C::PopContentWidgetInternal(const struct FContentP
 
 void USubgameSelect_C::Initialize()
 {
-	static auto Func = Class->GetFunction("SubgameSelect_C", "Initialize");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelect_C_Initialize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelect_C", "Initialize");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -96,12 +129,14 @@ void USubgameSelect_C::Initialize()
 
 void USubgameSelect_C::Construct()
 {
-	static auto Func = Class->GetFunction("SubgameSelect_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelect_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelect_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -113,9 +148,12 @@ void USubgameSelect_C::Construct()
 
 void USubgameSelect_C::OnEnterState(enum class EFortUIState PreviousUIState)
 {
-	static auto Func = Class->GetFunction("SubgameSelect_C", "OnEnterState");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelect_C_OnEnterState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelect_C", "OnEnterState");
+
+	Params::USubgameSelect_C_OnEnterState_Params Parms{};
 
 	Parms.PreviousUIState = PreviousUIState;
 
@@ -132,9 +170,12 @@ void USubgameSelect_C::OnEnterState(enum class EFortUIState PreviousUIState)
 
 void USubgameSelect_C::PushContentWidgetInternal(class UWidget* Widget, const struct FContentPushState& State)
 {
-	static auto Func = Class->GetFunction("SubgameSelect_C", "PushContentWidgetInternal");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelect_C_PushContentWidgetInternal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelect_C", "PushContentWidgetInternal");
+
+	Params::USubgameSelect_C_PushContentWidgetInternal_Params Parms{};
 
 	Parms.Widget = Widget;
 	Parms.State = State;
@@ -157,9 +198,12 @@ void USubgameSelect_C::PushContentWidgetInternal(class UWidget* Widget, const st
 
 void USubgameSelect_C::ExecuteUbergraph_SubgameSelect(int32 EntryPoint, class UUserWidget* CallFunc_GetCachedWidget_ReturnValue, enum class EFortUIState K2Node_Event_PreviousUIState, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, class UWidget* K2Node_Event_Widget, const struct FContentPushState& K2Node_Event_State)
 {
-	static auto Func = Class->GetFunction("SubgameSelect_C", "ExecuteUbergraph_SubgameSelect");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelect_C_ExecuteUbergraph_SubgameSelect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelect_C", "ExecuteUbergraph_SubgameSelect");
+
+	Params::USubgameSelect_C_ExecuteUbergraph_SubgameSelect_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetCachedWidget_ReturnValue = CallFunc_GetCachedWidget_ReturnValue;
@@ -175,6 +219,4 @@ void USubgameSelect_C::ExecuteUbergraph_SubgameSelect(int32 EntryPoint, class UU
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

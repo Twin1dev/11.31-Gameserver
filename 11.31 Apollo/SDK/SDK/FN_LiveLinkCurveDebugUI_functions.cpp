@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,24 +12,54 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class LiveLinkCurveDebugUI.LiveLinkDebuggerBlueprintLibrary
+// (None)
+
+class UClass* ULiveLinkDebuggerBlueprintLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LiveLinkDebuggerBlueprintLibrary");
+
+	return Clss;
+}
+
+
+// LiveLinkDebuggerBlueprintLibrary LiveLinkCurveDebugUI.Default__LiveLinkDebuggerBlueprintLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ULiveLinkDebuggerBlueprintLibrary* ULiveLinkDebuggerBlueprintLibrary::GetDefaultObj()
+{
+	static class ULiveLinkDebuggerBlueprintLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULiveLinkDebuggerBlueprintLibrary*>(ULiveLinkDebuggerBlueprintLibrary::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function LiveLinkCurveDebugUI.LiveLinkDebuggerBlueprintLibrary.HideLiveLinkDebugger
 // (Final, Native, Static, Private, BlueprintCallable)
 // Parameters:
 
 void ULiveLinkDebuggerBlueprintLibrary::HideLiveLinkDebugger()
 {
-	static auto Func = Class->GetFunction("LiveLinkDebuggerBlueprintLibrary", "HideLiveLinkDebugger");
+	static class UFunction* Func = nullptr;
 
-	Params::ULiveLinkDebuggerBlueprintLibrary_HideLiveLinkDebugger_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LiveLinkDebuggerBlueprintLibrary", "HideLiveLinkDebugger");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -44,20 +71,51 @@ void ULiveLinkDebuggerBlueprintLibrary::HideLiveLinkDebugger()
 
 void ULiveLinkDebuggerBlueprintLibrary::DisplayLiveLinkDebugger(const class FString& SubjectName)
 {
-	static auto Func = Class->GetFunction("LiveLinkDebuggerBlueprintLibrary", "DisplayLiveLinkDebugger");
+	static class UFunction* Func = nullptr;
 
-	Params::ULiveLinkDebuggerBlueprintLibrary_DisplayLiveLinkDebugger_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LiveLinkDebuggerBlueprintLibrary", "DisplayLiveLinkDebugger");
+
+	Params::ULiveLinkDebuggerBlueprintLibrary_DisplayLiveLinkDebugger_Params Parms{};
 
 	Parms.SubjectName = SubjectName;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class LiveLinkCurveDebugUI.LiveLinkDebuggerSettings
+// (None)
+
+class UClass* ULiveLinkDebuggerSettings::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LiveLinkDebuggerSettings");
+
+	return Clss;
+}
+
+
+// LiveLinkDebuggerSettings LiveLinkCurveDebugUI.Default__LiveLinkDebuggerSettings
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ULiveLinkDebuggerSettings* ULiveLinkDebuggerSettings::GetDefaultObj()
+{
+	static class ULiveLinkDebuggerSettings* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULiveLinkDebuggerSettings*>(ULiveLinkDebuggerSettings::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -69,19 +127,22 @@ void ULiveLinkDebuggerBlueprintLibrary::DisplayLiveLinkDebugger(const class FStr
 
 float ULiveLinkDebuggerSettings::GetDPIScaleBasedOnSize(const struct FIntPoint& Size)
 {
-	static auto Func = Class->GetFunction("LiveLinkDebuggerSettings", "GetDPIScaleBasedOnSize");
+	static class UFunction* Func = nullptr;
 
-	Params::ULiveLinkDebuggerSettings_GetDPIScaleBasedOnSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LiveLinkDebuggerSettings", "GetDPIScaleBasedOnSize");
+
+	Params::ULiveLinkDebuggerSettings_GetDPIScaleBasedOnSize_Params Parms{};
 
 	Parms.Size = Size;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -96,19 +157,22 @@ float ULiveLinkDebuggerSettings::GetDPIScaleBasedOnSize(const struct FIntPoint& 
 
 struct FSlateColor ULiveLinkDebuggerSettings::GetBarColorForCurveValue(float CurveValue)
 {
-	static auto Func = Class->GetFunction("LiveLinkDebuggerSettings", "GetBarColorForCurveValue");
+	static class UFunction* Func = nullptr;
 
-	Params::ULiveLinkDebuggerSettings_GetBarColorForCurveValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LiveLinkDebuggerSettings", "GetBarColorForCurveValue");
+
+	Params::ULiveLinkDebuggerSettings_GetBarColorForCurveValue_Params Parms{};
 
 	Parms.CurveValue = CurveValue;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -116,6 +180,4 @@ struct FSlateColor ULiveLinkDebuggerSettings::GetBarColorForCurveValue(float Cur
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

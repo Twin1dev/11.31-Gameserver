@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class UBlueprintGameplayTagLibrary : public UBlueprintFunctionLibrary
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BlueprintGameplayTagLibrary");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UBlueprintGameplayTagLibrary* GetDefaultObj();
 
 	bool RemoveGameplayTag(struct FGameplayTagContainer& TagContainer, const struct FGameplayTag& Tag);
 	bool NotEqual_TagTag(const struct FGameplayTag& A, const class FString& B);
@@ -62,11 +56,8 @@ class IGameplayTagAssetInterface : public IInterface
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GameplayTagAssetInterface");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class IGameplayTagAssetInterface* GetDefaultObj();
 
 	bool HasMatchingGameplayTag(const struct FGameplayTag& TagToCheck);
 	bool HasAnyMatchingGameplayTags(struct FGameplayTagContainer& TagContainer);
@@ -80,15 +71,12 @@ class UEditableGameplayTagQuery : public UObject
 {
 public:
 	class FString                                UserDescription;                                   // 0x28(0x10)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42F6[0x10];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2320[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class UEditableGameplayTagQueryExpression*   RootExpression;                                    // 0x48(0x8)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGameplayTagQuery                     TagQueryExportText_Helper;                         // 0x50(0x48)(NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("EditableGameplayTagQuery");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UEditableGameplayTagQuery* GetDefaultObj();
 
 };
 
@@ -98,11 +86,8 @@ class UEditableGameplayTagQueryExpression : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("EditableGameplayTagQueryExpression");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UEditableGameplayTagQueryExpression* GetDefaultObj();
 
 };
 
@@ -113,11 +98,8 @@ class UEditableGameplayTagQueryExpression_AnyTagsMatch : public UEditableGamepla
 public:
 	struct FGameplayTagContainer                 Tags;                                              // 0x28(0x20)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("EditableGameplayTagQueryExpression_AnyTagsMatch");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UEditableGameplayTagQueryExpression_AnyTagsMatch* GetDefaultObj();
 
 };
 
@@ -128,11 +110,8 @@ class UEditableGameplayTagQueryExpression_AllTagsMatch : public UEditableGamepla
 public:
 	struct FGameplayTagContainer                 Tags;                                              // 0x28(0x20)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("EditableGameplayTagQueryExpression_AllTagsMatch");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UEditableGameplayTagQueryExpression_AllTagsMatch* GetDefaultObj();
 
 };
 
@@ -143,11 +122,8 @@ class UEditableGameplayTagQueryExpression_NoTagsMatch : public UEditableGameplay
 public:
 	struct FGameplayTagContainer                 Tags;                                              // 0x28(0x20)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("EditableGameplayTagQueryExpression_NoTagsMatch");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UEditableGameplayTagQueryExpression_NoTagsMatch* GetDefaultObj();
 
 };
 
@@ -158,11 +134,8 @@ class UEditableGameplayTagQueryExpression_AnyExprMatch : public UEditableGamepla
 public:
 	TArray<class UEditableGameplayTagQueryExpression*> Expressions;                                       // 0x28(0x10)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("EditableGameplayTagQueryExpression_AnyExprMatch");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UEditableGameplayTagQueryExpression_AnyExprMatch* GetDefaultObj();
 
 };
 
@@ -173,11 +146,8 @@ class UEditableGameplayTagQueryExpression_AllExprMatch : public UEditableGamepla
 public:
 	TArray<class UEditableGameplayTagQueryExpression*> Expressions;                                       // 0x28(0x10)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("EditableGameplayTagQueryExpression_AllExprMatch");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UEditableGameplayTagQueryExpression_AllExprMatch* GetDefaultObj();
 
 };
 
@@ -188,11 +158,8 @@ class UEditableGameplayTagQueryExpression_NoExprMatch : public UEditableGameplay
 public:
 	TArray<class UEditableGameplayTagQueryExpression*> Expressions;                                       // 0x28(0x10)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("EditableGameplayTagQueryExpression_NoExprMatch");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UEditableGameplayTagQueryExpression_NoExprMatch* GetDefaultObj();
 
 };
 
@@ -201,17 +168,14 @@ public:
 class UGameplayTagsManager : public UObject
 {
 public:
-	uint8                                        Pad_42F7[0x98];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2326[0x98];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FGameplayTagSource>            TagSources;                                        // 0xC0(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_42F8[0xE0];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2327[0xE0];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UDataTable*>                    GameplayTagTables;                                 // 0x1B0(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_42F9[0x50];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2328[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GameplayTagsManager");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGameplayTagsManager* GetDefaultObj();
 
 };
 
@@ -223,11 +187,8 @@ public:
 	class FString                                ConfigFileName;                                    // 0x28(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FGameplayTagTableRow>          GameplayTagList;                                   // 0x38(0x10)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GameplayTagsList");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGameplayTagsList* GetDefaultObj();
 
 };
 
@@ -239,11 +200,8 @@ public:
 	class FString                                ConfigFileName;                                    // 0x28(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FRestrictedGameplayTagTableRow> RestrictedGameplayTagList;                         // 0x38(0x10)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("RestrictedGameplayTagsList");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class URestrictedGameplayTagsList* GetDefaultObj();
 
 };
 
@@ -255,7 +213,7 @@ public:
 	bool                                         ImportTagsFromConfig;                              // 0x48(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         WarnOnInvalidTags;                                 // 0x49(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         FastReplication;                                   // 0x4A(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42FA[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_232C[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                InvalidTagCharacters;                              // 0x50(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FGameplayTagCategoryRemap>     CategoryRemapping;                                 // 0x60(0x10)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 	TArray<struct FSoftObjectPath>               GameplayTagTableList;                              // 0x70(0x10)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
@@ -265,11 +223,8 @@ public:
 	int32                                        NetIndexFirstBitSegment;                           // 0xA4(0x4)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FRestrictedConfigInfo>         RestrictedConfigFiles;                             // 0xA8(0x10)(Edit, ZeroConstructor, Config, AdvancedDisplay, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GameplayTagsSettings");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGameplayTagsSettings* GetDefaultObj();
 
 };
 
@@ -280,16 +235,11 @@ class UGameplayTagsDeveloperSettings : public UObject
 public:
 	class FString                                DeveloperConfigName;                               // 0x28(0x10)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GameplayTagsDeveloperSettings");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGameplayTagsDeveloperSettings* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

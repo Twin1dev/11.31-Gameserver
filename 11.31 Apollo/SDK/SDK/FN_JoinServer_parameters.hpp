@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -24,13 +21,6 @@ public:
 	enum class EFortUIState                      PreviousUIState;                                   // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function JoinServer.JoinServer_C.OnShowTutorialDialog
-struct UJoinServer_C_OnShowTutorialDialog_Params
-{
-public:
-};
-
 // 0x5 (0x5 - 0x0)
 // Function JoinServer.JoinServer_C.ExecuteUbergraph_JoinServer
 struct UJoinServer_C_ExecuteUbergraph_JoinServer_Params
@@ -43,6 +33,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

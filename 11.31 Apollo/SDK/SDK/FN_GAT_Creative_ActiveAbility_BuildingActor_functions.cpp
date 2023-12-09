@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GAT_Creative_ActiveAbility_BuildingActor.GAT_Creative_ActiveAbility_BuildingActor_C
+// (None)
+
+class UClass* UGAT_Creative_ActiveAbility_BuildingActor_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAT_Creative_ActiveAbility_BuildingActor_C");
+
+	return Clss;
+}
+
+
+// GAT_Creative_ActiveAbility_BuildingActor_C GAT_Creative_ActiveAbility_BuildingActor.Default__GAT_Creative_ActiveAbility_BuildingActor_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAT_Creative_ActiveAbility_BuildingActor_C* UGAT_Creative_ActiveAbility_BuildingActor_C::GetDefaultObj()
+{
+	static class UGAT_Creative_ActiveAbility_BuildingActor_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAT_Creative_ActiveAbility_BuildingActor_C*>(UGAT_Creative_ActiveAbility_BuildingActor_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GAT_Creative_ActiveAbility_BuildingActor.GAT_Creative_ActiveAbility_BuildingActor_C.SetupBuildingActorAbility
@@ -26,9 +51,12 @@ namespace SDK
 
 void UGAT_Creative_ActiveAbility_BuildingActor_C::SetupBuildingActorAbility(class ABuildingActor** BuildingActor, class ABuildingActor* LocalBuildingActor, const struct FGameplayAbilityActorInfo& CallFunc_GetActorInfo_ReturnValue, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GAT_Creative_ActiveAbility_BuildingActor_C", "SetupBuildingActorAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_Creative_ActiveAbility_BuildingActor_C_SetupBuildingActorAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_Creative_ActiveAbility_BuildingActor_C", "SetupBuildingActorAbility");
+
+	Params::UGAT_Creative_ActiveAbility_BuildingActor_C_SetupBuildingActorAbility_Params Parms{};
 
 	Parms.LocalBuildingActor = LocalBuildingActor;
 	Parms.CallFunc_GetActorInfo_ReturnValue = CallFunc_GetActorInfo_ReturnValue;
@@ -49,12 +77,14 @@ void UGAT_Creative_ActiveAbility_BuildingActor_C::SetupBuildingActorAbility(clas
 
 void UGAT_Creative_ActiveAbility_BuildingActor_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GAT_Creative_ActiveAbility_BuildingActor_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_Creative_ActiveAbility_BuildingActor_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_Creative_ActiveAbility_BuildingActor_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -67,9 +97,12 @@ void UGAT_Creative_ActiveAbility_BuildingActor_C::K2_ActivateAbility()
 
 void UGAT_Creative_ActiveAbility_BuildingActor_C::ExecuteUbergraph_GAT_Creative_ActiveAbility_BuildingActor(int32 EntryPoint, class ABuildingActor* CallFunc_SetupBuildingActorAbility_BuildingActor)
 {
-	static auto Func = Class->GetFunction("GAT_Creative_ActiveAbility_BuildingActor_C", "ExecuteUbergraph_GAT_Creative_ActiveAbility_BuildingActor");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_Creative_ActiveAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_ActiveAbility_BuildingActor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_Creative_ActiveAbility_BuildingActor_C", "ExecuteUbergraph_GAT_Creative_ActiveAbility_BuildingActor");
+
+	Params::UGAT_Creative_ActiveAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_ActiveAbility_BuildingActor_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_SetupBuildingActorAbility_BuildingActor = CallFunc_SetupBuildingActorAbility_BuildingActor;
@@ -80,6 +113,4 @@ void UGAT_Creative_ActiveAbility_BuildingActor_C::ExecuteUbergraph_GAT_Creative_
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

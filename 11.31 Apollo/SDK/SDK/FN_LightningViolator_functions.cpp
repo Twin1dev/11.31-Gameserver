@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass LightningViolator.LightningViolator_C
+// (None)
+
+class UClass* ULightningViolator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LightningViolator_C");
+
+	return Clss;
+}
+
+
+// LightningViolator_C LightningViolator.Default__LightningViolator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULightningViolator_C* ULightningViolator_C::GetDefaultObj()
+{
+	static class ULightningViolator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULightningViolator_C*>(ULightningViolator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function LightningViolator.LightningViolator_C.TailPosition
@@ -30,9 +55,12 @@ namespace SDK
 
 void ULightningViolator_C::TailPosition(bool ShowTail, enum class EHorizontalAlignment HPosition, bool OnTop, bool Temp_bool_Variable, const struct FVector2D& Temp_struct_Variable, const struct FVector2D& Temp_struct_Variable_1, const struct FVector2D& K2Node_Select_Default, const struct FWidgetTransform& K2Node_MakeStruct_WidgetTransform, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue)
 {
-	static auto Func = Class->GetFunction("LightningViolator_C", "TailPosition");
+	static class UFunction* Func = nullptr;
 
-	Params::ULightningViolator_C_TailPosition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LightningViolator_C", "TailPosition");
+
+	Params::ULightningViolator_C_TailPosition_Params Parms{};
 
 	Parms.ShowTail = ShowTail;
 	Parms.HPosition = HPosition;
@@ -56,9 +84,12 @@ void ULightningViolator_C::TailPosition(bool ShowTail, enum class EHorizontalAli
 
 void ULightningViolator_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("LightningViolator_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::ULightningViolator_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LightningViolator_C", "PreConstruct");
+
+	Params::ULightningViolator_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -74,9 +105,12 @@ void ULightningViolator_C::PreConstruct(bool IsDesignTime)
 
 void ULightningViolator_C::EventColorBG(const struct FLinearColor& NewColor)
 {
-	static auto Func = Class->GetFunction("LightningViolator_C", "EventColorBG");
+	static class UFunction* Func = nullptr;
 
-	Params::ULightningViolator_C_EventColorBG_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LightningViolator_C", "EventColorBG");
+
+	Params::ULightningViolator_C_EventColorBG_Params Parms{};
 
 	Parms.NewColor = NewColor;
 
@@ -92,9 +126,12 @@ void ULightningViolator_C::EventColorBG(const struct FLinearColor& NewColor)
 
 void ULightningViolator_C::EventSetText(class FText NewText)
 {
-	static auto Func = Class->GetFunction("LightningViolator_C", "EventSetText");
+	static class UFunction* Func = nullptr;
 
-	Params::ULightningViolator_C_EventSetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LightningViolator_C", "EventSetText");
+
+	Params::ULightningViolator_C_EventSetText_Params Parms{};
 
 	Parms.NewText = NewText;
 
@@ -109,12 +146,14 @@ void ULightningViolator_C::EventSetText(class FText NewText)
 
 void ULightningViolator_C::Construct()
 {
-	static auto Func = Class->GetFunction("LightningViolator_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::ULightningViolator_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LightningViolator_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -123,15 +162,18 @@ void ULightningViolator_C::Construct()
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_CustomEvent_NewText                                       ()
+// class FText                        K2Node_CustomEvent_NewText                                       (None)
 // struct FLinearColor                K2Node_CustomEvent_NewColor                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ULightningViolator_C::ExecuteUbergraph_LightningViolator(int32 EntryPoint, class FText K2Node_CustomEvent_NewText, const struct FLinearColor& K2Node_CustomEvent_NewColor, bool K2Node_Event_IsDesignTime)
 {
-	static auto Func = Class->GetFunction("LightningViolator_C", "ExecuteUbergraph_LightningViolator");
+	static class UFunction* Func = nullptr;
 
-	Params::ULightningViolator_C_ExecuteUbergraph_LightningViolator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LightningViolator_C", "ExecuteUbergraph_LightningViolator");
+
+	Params::ULightningViolator_C_ExecuteUbergraph_LightningViolator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_NewText = K2Node_CustomEvent_NewText;
@@ -144,6 +186,4 @@ void ULightningViolator_C::ExecuteUbergraph_LightningViolator(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,11 +16,8 @@ class UGA_SlamDoorOpen_Instigator_C : public UFortGameplayAbility
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xA30(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GA_SlamDoorOpen_Instigator_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGA_SlamDoorOpen_Instigator_C* GetDefaultObj();
 
 	void Completed_6B6649DA4284DCE7779BA98D6543CFFB(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
 	void Cancelled_6B6649DA4284DCE7779BA98D6543CFFB(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
@@ -34,6 +28,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

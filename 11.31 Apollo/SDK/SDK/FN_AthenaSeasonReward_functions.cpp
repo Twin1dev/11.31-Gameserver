@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaSeasonReward.AthenaSeasonReward_C
+// (None)
+
+class UClass* UAthenaSeasonReward_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaSeasonReward_C");
+
+	return Clss;
+}
+
+
+// AthenaSeasonReward_C AthenaSeasonReward.Default__AthenaSeasonReward_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaSeasonReward_C* UAthenaSeasonReward_C::GetDefaultObj()
+{
+	static class UAthenaSeasonReward_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaSeasonReward_C*>(UAthenaSeasonReward_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaSeasonReward.AthenaSeasonReward_C.GetItem
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAthenaSeasonReward_C::GetItem(class UFortItem** Result)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "GetItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_GetItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "GetItem");
+
+	Params::UAthenaSeasonReward_C_GetItem_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -46,9 +74,12 @@ void UAthenaSeasonReward_C::GetItem(class UFortItem** Result)
 
 void UAthenaSeasonReward_C::ResetVariantToDefault(class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UAthenaCosmeticItemDefinition* K2Node_DynamicCast_AsAthena_Cosmetic_Item_Definition, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "ResetVariantToDefault");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_ResetVariantToDefault_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "ResetVariantToDefault");
+
+	Params::UAthenaSeasonReward_C_ResetVariantToDefault_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetItemDefinitionBP_ReturnValue = CallFunc_GetItemDefinitionBP_ReturnValue;
@@ -70,7 +101,7 @@ void UAthenaSeasonReward_C::ResetVariantToDefault(class UFortFrontEndContext* Ca
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortCosmeticVariantPreviewElementCallFunc_Array_Get_Item                                          ()
+// struct FFortCosmeticVariantPreviewElementCallFunc_Array_Get_Item                                          (None)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortItem*                   CallFunc_CreateTemporaryItemInstanceBP_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -78,9 +109,12 @@ void UAthenaSeasonReward_C::ResetVariantToDefault(class UFortFrontEndContext* Ca
 
 void UAthenaSeasonReward_C::GetTemporaryItems(TArray<struct FFortCosmeticVariantPreviewElement>& Cosmetics, TArray<class UFortItem*>* Temporary_Items, const TArray<class UFortItem*>& TemporaryItems, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, const struct FFortCosmeticVariantPreviewElement& CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, class UFortItem* CallFunc_CreateTemporaryItemInstanceBP_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Add_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "GetTemporaryItems");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_GetTemporaryItems_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "GetTemporaryItems");
+
+	Params::UAthenaSeasonReward_C_GetTemporaryItems_Params Parms{};
 
 	Parms.Cosmetics = Cosmetics;
 	Parms.TemporaryItems = TemporaryItems;
@@ -96,7 +130,7 @@ void UAthenaSeasonReward_C::GetTemporaryItems(TArray<struct FFortCosmeticVariant
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Temporary_Items != nullptr)
-		*Temporary_Items = Parms.Temporary_Items;
+		*Temporary_Items = std::move(Parms.Temporary_Items);
 
 }
 
@@ -107,12 +141,14 @@ void UAthenaSeasonReward_C::GetTemporaryItems(TArray<struct FFortCosmeticVariant
 
 void UAthenaSeasonReward_C::CancelVariantTimer()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "CancelVariantTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_CancelVariantTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "CancelVariantTimer");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -132,9 +168,12 @@ void UAthenaSeasonReward_C::CancelVariantTimer()
 
 void UAthenaSeasonReward_C::StartVariantTimer(float OverrideTimer, float TimerToUse, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue_1, bool CallFunc_EqualEqual_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "StartVariantTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_StartVariantTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "StartVariantTimer");
+
+	Params::UAthenaSeasonReward_C_StartVariantTimer_Params Parms{};
 
 	Parms.OverrideTimer = OverrideTimer;
 	Parms.TimerToUse = TimerToUse;
@@ -161,9 +200,12 @@ void UAthenaSeasonReward_C::StartVariantTimer(float OverrideTimer, float TimerTo
 
 void UAthenaSeasonReward_C::GetAthenaCosmeticItemDefinition(class UAthenaCosmeticItemDefinition** AsAthena_Cosmetic_Item_Definition, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, class UAthenaCosmeticItemDefinition* K2Node_DynamicCast_AsAthena_Cosmetic_Item_Definition, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "GetAthenaCosmeticItemDefinition");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_GetAthenaCosmeticItemDefinition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "GetAthenaCosmeticItemDefinition");
+
+	Params::UAthenaSeasonReward_C_GetAthenaCosmeticItemDefinition_Params Parms{};
 
 	Parms.CallFunc_GetItemDefinitionBP_ReturnValue = CallFunc_GetItemDefinitionBP_ReturnValue;
 	Parms.K2Node_DynamicCast_AsAthena_Cosmetic_Item_Definition = K2Node_DynamicCast_AsAthena_Cosmetic_Item_Definition;
@@ -192,9 +234,12 @@ void UAthenaSeasonReward_C::GetAthenaCosmeticItemDefinition(class UAthenaCosmeti
 
 void UAthenaSeasonReward_C::OnVaultItemsChanged(TArray<class UFortItem*>& Items, float TimeToPreview, class UFortItem* CallFunc_Array_Get_Item, bool CallFunc_IsValid_ReturnValue, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, class UAthenaCosmeticItemDefinition* K2Node_DynamicCast_AsAthena_Cosmetic_Item_Definition, bool K2Node_DynamicCast_bSuccess, TArray<struct FFortCosmeticVariantPreview>& CallFunc_GetItemVariantPreviews_ReturnValue, bool CallFunc_Array_IsValidIndex_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "OnVaultItemsChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_OnVaultItemsChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "OnVaultItemsChanged");
+
+	Params::UAthenaSeasonReward_C_OnVaultItemsChanged_Params Parms{};
 
 	Parms.Items = Items;
 	Parms.TimeToPreview = TimeToPreview;
@@ -240,16 +285,19 @@ void UAthenaSeasonReward_C::OnVaultItemsChanged(TArray<class UFortItem*>& Items,
 // TArray<struct FFortCosmeticVariantPreview>CallFunc_GetItemVariantPreviews_ReturnValue_1                    (ConstParm, ZeroConstructor, ReferenceParm)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FMcpVariantChannelInfo      CallFunc_Array_Get_Item                                          ()
+// struct FMcpVariantChannelInfo      CallFunc_Array_Get_Item                                          (None)
 // int32                              CallFunc_Array_Length_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FUnlockableVariantPreviewInfoK2Node_MakeStruct_UnlockableVariantPreviewInfo                   ()
+// struct FUnlockableVariantPreviewInfoK2Node_MakeStruct_UnlockableVariantPreviewInfo                   (None)
 
 void UAthenaSeasonReward_C::ShowNextVariant(const TArray<struct FFortCosmeticVariantPreviewElement>& Temp, int32 VariantPreviewLength, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, TArray<class UFortItem*>& CallFunc_GetTemporaryItems_Temporary_Items, bool CallFunc_IsValid_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1, bool CallFunc_EqualEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_2, int32 Temp_int_Variable, int32 CallFunc_Add_IntInt_ReturnValue_3, bool CallFunc_Greater_IntInt_ReturnValue_1, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_2, int32 Temp_int_Variable_1, int32 CallFunc_Percent_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_4, class UAthenaCosmeticItemDefinition* CallFunc_GetAthenaCosmeticItemDefinition_AsAthena_Cosmetic_Item_Definition, TArray<struct FFortCosmeticVariantPreview>& CallFunc_GetItemVariantPreviews_ReturnValue, TArray<struct FFortCosmeticVariantPreview>& CallFunc_GetItemVariantPreviews_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, const struct FMcpVariantChannelInfo& CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, const struct FUnlockableVariantPreviewInfo& K2Node_MakeStruct_UnlockableVariantPreviewInfo)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "ShowNextVariant");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_ShowNextVariant_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "ShowNextVariant");
+
+	Params::UAthenaSeasonReward_C_ShowNextVariant_Params Parms{};
 
 	Parms.Temp = Temp;
 	Parms.VariantPreviewLength = VariantPreviewLength;
@@ -295,9 +343,12 @@ void UAthenaSeasonReward_C::ShowNextVariant(const TArray<struct FFortCosmeticVar
 
 void UAthenaSeasonReward_C::StopCyclingVariants(class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "StopCyclingVariants");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_StopCyclingVariants_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "StopCyclingVariants");
+
+	Params::UAthenaSeasonReward_C_StopCyclingVariants_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -311,7 +362,7 @@ void UAthenaSeasonReward_C::StopCyclingVariants(class UFortFrontEndContext* Call
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TArray<class UFortItem*>           K2Node_MakeArray_Array                                           (ConstParm, ZeroConstructor, ReferenceParm)
-// struct FUnlockableVariantPreviewInfoK2Node_MakeStruct_UnlockableVariantPreviewInfo                   ()
+// struct FUnlockableVariantPreviewInfoK2Node_MakeStruct_UnlockableVariantPreviewInfo                   (None)
 // class UFortFrontEndContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAthenaCosmeticItemDefinition*CallFunc_GetAthenaCosmeticItemDefinition_AsAthena_Cosmetic_Item_Definition(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -321,14 +372,17 @@ void UAthenaSeasonReward_C::StopCyclingVariants(class UFortFrontEndContext* Call
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// struct FUnlockableVariantPreviewInfoK2Node_MakeStruct_UnlockableVariantPreviewInfo_1                 ()
+// struct FUnlockableVariantPreviewInfoK2Node_MakeStruct_UnlockableVariantPreviewInfo_1                 (None)
 // class UFortFrontEndContext*        CallFunc_GetContext_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaSeasonReward_C::BeginCyclingVariants(TArray<class UFortItem*>& K2Node_MakeArray_Array, const struct FUnlockableVariantPreviewInfo& K2Node_MakeStruct_UnlockableVariantPreviewInfo, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, class UAthenaCosmeticItemDefinition* CallFunc_GetAthenaCosmeticItemDefinition_AsAthena_Cosmetic_Item_Definition, bool CallFunc_IsValid_ReturnValue, TArray<struct FFortCosmeticVariantPreview>& CallFunc_GetItemVariantPreviews_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FUnlockableVariantPreviewInfo& K2Node_MakeStruct_UnlockableVariantPreviewInfo_1, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "BeginCyclingVariants");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_BeginCyclingVariants_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "BeginCyclingVariants");
+
+	Params::UAthenaSeasonReward_C_BeginCyclingVariants_Params Parms{};
 
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.K2Node_MakeStruct_UnlockableVariantPreviewInfo = K2Node_MakeStruct_UnlockableVariantPreviewInfo;
@@ -355,12 +409,14 @@ void UAthenaSeasonReward_C::BeginCyclingVariants(TArray<class UFortItem*>& K2Nod
 
 void UAthenaSeasonReward_C::ViewInVaultByUser()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "ViewInVaultByUser");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_ViewInVaultByUser_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "ViewInVaultByUser");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -382,9 +438,12 @@ void UAthenaSeasonReward_C::ViewInVaultByUser()
 
 void UAthenaSeasonReward_C::ViewInVault(TArray<class UFortItem*>& Additional_Items, const TArray<class UFortItem*>& Mutable_Additional_Items, bool CallFunc_IsValid_ReturnValue, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, class UAthenaCharacterItemDefinition* K2Node_DynamicCast_AsAthena_Character_Item_Definition, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, int32 CallFunc_Array_AddUnique_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "ViewInVault");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_ViewInVault_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "ViewInVault");
+
+	Params::UAthenaSeasonReward_C_ViewInVault_Params Parms{};
 
 	Parms.Additional_Items = Additional_Items;
 	Parms.Mutable_Additional_Items = Mutable_Additional_Items;
@@ -410,9 +469,12 @@ void UAthenaSeasonReward_C::ViewInVault(TArray<class UFortItem*>& Additional_Ite
 
 void UAthenaSeasonReward_C::SetSecondaryItem(class UFortItem* SecondaryItem)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "SetSecondaryItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_SetSecondaryItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "SetSecondaryItem");
+
+	Params::UAthenaSeasonReward_C_SetSecondaryItem_Params Parms{};
 
 	Parms.SecondaryItem = SecondaryItem;
 
@@ -427,12 +489,14 @@ void UAthenaSeasonReward_C::SetSecondaryItem(class UFortItem* SecondaryItem)
 
 void UAthenaSeasonReward_C::EnableRarityFlare()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "EnableRarityFlare");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_EnableRarityFlare_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "EnableRarityFlare");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -444,9 +508,12 @@ void UAthenaSeasonReward_C::EnableRarityFlare()
 
 void UAthenaSeasonReward_C::SetViewOnHover(bool ShouldViewOnHover)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "SetViewOnHover");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_SetViewOnHover_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "SetViewOnHover");
+
+	Params::UAthenaSeasonReward_C_SetViewOnHover_Params Parms{};
 
 	Parms.ShouldViewOnHover = ShouldViewOnHover;
 
@@ -485,9 +552,12 @@ void UAthenaSeasonReward_C::SetViewOnHover(bool ShouldViewOnHover)
 
 void UAthenaSeasonReward_C::SetState(bool Claimed, bool Locked, bool LevelAchieved, bool bOwned, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, bool Temp_bool_Variable_2, enum class ESlateVisibility K2Node_Select_Default_1, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, enum class ESlateVisibility K2Node_Select_Default_2, bool Temp_bool_Variable_3, float Temp_float_Variable, enum class ESlateVisibility K2Node_Select_Default_3, float Temp_float_Variable_1, bool Temp_bool_Variable_4, float K2Node_Select_Default_4)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "SetState");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_SetState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "SetState");
+
+	Params::UAthenaSeasonReward_C_SetState_Params Parms{};
 
 	Parms.Claimed = Claimed;
 	Parms.Locked = Locked;
@@ -532,13 +602,16 @@ void UAthenaSeasonReward_C::SetState(bool Claimed, bool Locked, bool LevelAchiev
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortRarity             CallFunc_GetRarity_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortRarityItemData         CallFunc_BPGetRarityData_ReturnValue                             ()
+// struct FFortRarityItemData         CallFunc_BPGetRarityData_ReturnValue                             (None)
 
 void UAthenaSeasonReward_C::Setup(class UFortItem* InItemToRepresent, bool Claimed, bool Locked, bool LevelAchieved, bool bOwned, enum class EFortItemCardSize ItemCardSize, int32 Quantity, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, enum class EFortRarity CallFunc_GetRarity_ReturnValue, const struct FFortRarityItemData& CallFunc_BPGetRarityData_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "Setup");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_Setup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "Setup");
+
+	Params::UAthenaSeasonReward_C_Setup_Params Parms{};
 
 	Parms.InItemToRepresent = InItemToRepresent;
 	Parms.Claimed = Claimed;
@@ -563,12 +636,14 @@ void UAthenaSeasonReward_C::Setup(class UFortItem* InItemToRepresent, bool Claim
 
 void UAthenaSeasonReward_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -579,12 +654,14 @@ void UAthenaSeasonReward_C::BP_OnHovered()
 
 void UAthenaSeasonReward_C::PlayIntro()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "PlayIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_PlayIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "PlayIntro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -595,12 +672,14 @@ void UAthenaSeasonReward_C::PlayIntro()
 
 void UAthenaSeasonReward_C::ViewItem()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "ViewItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_ViewItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "ViewItem");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -611,12 +690,14 @@ void UAthenaSeasonReward_C::ViewItem()
 
 void UAthenaSeasonReward_C::BP_OnClicked()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "BP_OnClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_BP_OnClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "BP_OnClicked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -633,9 +714,12 @@ void UAthenaSeasonReward_C::BP_OnClicked()
 
 void UAthenaSeasonReward_C::ExecuteUbergraph_AthenaSeasonReward(int32 EntryPoint, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonReward_C", "ExecuteUbergraph_AthenaSeasonReward");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonReward_C", "ExecuteUbergraph_AthenaSeasonReward");
+
+	Params::UAthenaSeasonReward_C_ExecuteUbergraph_AthenaSeasonReward_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -650,6 +734,4 @@ void UAthenaSeasonReward_C::ExecuteUbergraph_AthenaSeasonReward(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

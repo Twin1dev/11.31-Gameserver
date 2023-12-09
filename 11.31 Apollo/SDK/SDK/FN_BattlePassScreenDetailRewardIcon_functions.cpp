@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass BattlePassScreenDetailRewardIcon.BattlePassScreenDetailRewardIcon_C
+// (None)
+
+class UClass* UBattlePassScreenDetailRewardIcon_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BattlePassScreenDetailRewardIcon_C");
+
+	return Clss;
+}
+
+
+// BattlePassScreenDetailRewardIcon_C BattlePassScreenDetailRewardIcon.Default__BattlePassScreenDetailRewardIcon_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBattlePassScreenDetailRewardIcon_C* UBattlePassScreenDetailRewardIcon_C::GetDefaultObj()
+{
+	static class UBattlePassScreenDetailRewardIcon_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBattlePassScreenDetailRewardIcon_C*>(UBattlePassScreenDetailRewardIcon_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BattlePassScreenDetailRewardIcon.BattlePassScreenDetailRewardIcon_C.BPSetup
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UBattlePassScreenDetailRewardIcon_C::BPSetup(class UFortItem* InReward)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenDetailRewardIcon_C", "BPSetup");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenDetailRewardIcon_C_BPSetup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenDetailRewardIcon_C", "BPSetup");
+
+	Params::UBattlePassScreenDetailRewardIcon_C_BPSetup_Params Parms{};
 
 	Parms.InReward = InReward;
 
@@ -39,12 +67,14 @@ void UBattlePassScreenDetailRewardIcon_C::BPSetup(class UFortItem* InReward)
 
 void UBattlePassScreenDetailRewardIcon_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("BattlePassScreenDetailRewardIcon_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenDetailRewardIcon_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenDetailRewardIcon_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void UBattlePassScreenDetailRewardIcon_C::BP_OnHovered()
 
 void UBattlePassScreenDetailRewardIcon_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("BattlePassScreenDetailRewardIcon_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenDetailRewardIcon_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenDetailRewardIcon_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -71,12 +103,14 @@ void UBattlePassScreenDetailRewardIcon_C::BP_OnUnhovered()
 
 void UBattlePassScreenDetailRewardIcon_C::OnSetupVariant()
 {
-	static auto Func = Class->GetFunction("BattlePassScreenDetailRewardIcon_C", "OnSetupVariant");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenDetailRewardIcon_C_OnSetupVariant_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenDetailRewardIcon_C", "OnSetupVariant");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -89,9 +123,12 @@ void UBattlePassScreenDetailRewardIcon_C::OnSetupVariant()
 
 void UBattlePassScreenDetailRewardIcon_C::ExecuteUbergraph_BattlePassScreenDetailRewardIcon(int32 EntryPoint, class UFortItem* K2Node_Event_InReward)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenDetailRewardIcon_C", "ExecuteUbergraph_BattlePassScreenDetailRewardIcon");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenDetailRewardIcon_C_ExecuteUbergraph_BattlePassScreenDetailRewardIcon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenDetailRewardIcon_C", "ExecuteUbergraph_BattlePassScreenDetailRewardIcon");
+
+	Params::UBattlePassScreenDetailRewardIcon_C_ExecuteUbergraph_BattlePassScreenDetailRewardIcon_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_InReward = K2Node_Event_InReward;
@@ -102,6 +139,4 @@ void UBattlePassScreenDetailRewardIcon_C::ExecuteUbergraph_BattlePassScreenDetai
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

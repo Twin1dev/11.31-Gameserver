@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Border-SolidBG-DkBlue.Border-SolidBG-DkBlue_C
+// (None)
+
+class UClass* UBorderMinusSolidBGMinusDkBlue_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Border-SolidBG-DkBlue_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Border-SolidBG-DkBlue_C Border-SolidBG-DkBlue.Default__Border-SolidBG-DkBlue_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBorderMinusSolidBGMinusDkBlue_C* UBorderMinusSolidBGMinusDkBlue_C::GetDefaultObj()
+{
+	static class UBorderMinusSolidBGMinusDkBlue_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorderMinusSolidBGMinusDkBlue_C*>(UBorderMinusSolidBGMinusDkBlue_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

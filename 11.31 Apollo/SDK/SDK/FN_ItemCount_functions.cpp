@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ItemCount.ItemCount_C
+// (None)
+
+class UClass* UItemCount_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemCount_C");
+
+	return Clss;
+}
+
+
+// ItemCount_C ItemCount.Default__ItemCount_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemCount_C* UItemCount_C::GetDefaultObj()
+{
+	static class UItemCount_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemCount_C*>(UItemCount_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ItemCount.ItemCount_C.SetBrushAndTextStyle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UItemCount_C::SetBrushAndTextStyle(enum class EFortBrushSize InBrushSize, class UClass* InStyle)
 {
-	static auto Func = Class->GetFunction("ItemCount_C", "SetBrushAndTextStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCount_C_SetBrushAndTextStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCount_C", "SetBrushAndTextStyle");
+
+	Params::UItemCount_C_SetBrushAndTextStyle_Params Parms{};
 
 	Parms.InBrushSize = InBrushSize;
 	Parms.InStyle = InStyle;
@@ -44,9 +72,12 @@ void UItemCount_C::SetBrushAndTextStyle(enum class EFortBrushSize InBrushSize, c
 
 void UItemCount_C::UpdateOverrideState(bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemCount_C", "UpdateOverrideState");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCount_C_UpdateOverrideState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCount_C", "UpdateOverrideState");
+
+	Params::UItemCount_C_UpdateOverrideState_Params Parms{};
 
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue_1 = CallFunc_EqualEqual_ByteByte_ReturnValue_1;
@@ -64,9 +95,12 @@ void UItemCount_C::UpdateOverrideState(bool CallFunc_EqualEqual_ByteByte_ReturnV
 
 void UItemCount_C::SetOverrideValue(int32 OverrrideValue)
 {
-	static auto Func = Class->GetFunction("ItemCount_C", "SetOverrideValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCount_C_SetOverrideValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCount_C", "SetOverrideValue");
+
+	Params::UItemCount_C_SetOverrideValue_Params Parms{};
 
 	Parms.OverrrideValue = OverrrideValue;
 
@@ -86,9 +120,12 @@ void UItemCount_C::SetOverrideValue(int32 OverrrideValue)
 
 void UItemCount_C::SetIsBeingPreviewed(bool BeingPreviewed, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ItemCount_C", "SetIsBeingPreviewed");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCount_C_SetIsBeingPreviewed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCount_C", "SetIsBeingPreviewed");
+
+	Params::UItemCount_C_SetIsBeingPreviewed_Params Parms{};
 
 	Parms.BeingPreviewed = BeingPreviewed;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -108,9 +145,12 @@ void UItemCount_C::SetIsBeingPreviewed(bool BeingPreviewed, bool Temp_bool_Varia
 
 void UItemCount_C::SetItemDefinition(class UFortItemDefinition* ItemDefinition)
 {
-	static auto Func = Class->GetFunction("ItemCount_C", "SetItemDefinition");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCount_C_SetItemDefinition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCount_C", "SetItemDefinition");
+
+	Params::UItemCount_C_SetItemDefinition_Params Parms{};
 
 	Parms.ItemDefinition = ItemDefinition;
 
@@ -125,12 +165,14 @@ void UItemCount_C::SetItemDefinition(class UFortItemDefinition* ItemDefinition)
 
 void UItemCount_C::Construct()
 {
-	static auto Func = Class->GetFunction("ItemCount_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCount_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCount_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -142,9 +184,12 @@ void UItemCount_C::Construct()
 
 void UItemCount_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("ItemCount_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCount_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCount_C", "PreConstruct");
+
+	Params::UItemCount_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -172,9 +217,12 @@ void UItemCount_C::PreConstruct(bool IsDesignTime)
 
 void UItemCount_C::ExecuteUbergraph_ItemCount(int32 EntryPoint, const struct FMargin& K2Node_MakeStruct_Margin, bool K2Node_Event_IsDesignTime, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, bool CallFunc_TextIsEmpty_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin_1, const struct FMargin& K2Node_Select_Default, class UHorizontalBoxSlot* K2Node_DynamicCast_AsHorizontal_Box_Slot, bool K2Node_DynamicCast_bSuccess, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("ItemCount_C", "ExecuteUbergraph_ItemCount");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCount_C_ExecuteUbergraph_ItemCount_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCount_C", "ExecuteUbergraph_ItemCount");
+
+	Params::UItemCount_C_ExecuteUbergraph_ItemCount_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_MakeStruct_Margin = K2Node_MakeStruct_Margin;
@@ -196,6 +244,4 @@ void UItemCount_C::ExecuteUbergraph_ItemCount(int32 EntryPoint, const struct FMa
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

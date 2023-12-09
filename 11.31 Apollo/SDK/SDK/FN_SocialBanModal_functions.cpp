@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SocialBanModal.SocialBanModal_C
+// (None)
+
+class UClass* USocialBanModal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialBanModal_C");
+
+	return Clss;
+}
+
+
+// SocialBanModal_C SocialBanModal.Default__SocialBanModal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USocialBanModal_C* USocialBanModal_C::GetDefaultObj()
+{
+	static class USocialBanModal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialBanModal_C*>(USocialBanModal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SocialBanModal.SocialBanModal_C.OnDisplayModeSet
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void USocialBanModal_C::OnDisplayModeSet(bool bIsBanned)
 {
-	static auto Func = Class->GetFunction("SocialBanModal_C", "OnDisplayModeSet");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialBanModal_C_OnDisplayModeSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialBanModal_C", "OnDisplayModeSet");
+
+	Params::USocialBanModal_C_OnDisplayModeSet_Params Parms{};
 
 	Parms.bIsBanned = bIsBanned;
 
@@ -49,9 +77,12 @@ void USocialBanModal_C::OnDisplayModeSet(bool bIsBanned)
 
 void USocialBanModal_C::ExecuteUbergraph_SocialBanModal(int32 EntryPoint, bool Temp_bool_Variable, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess, int32 Temp_int_Variable, int32 Temp_int_Variable_1, bool K2Node_Event_bIsBanned, int32 K2Node_Select_Default, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button_1, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("SocialBanModal_C", "ExecuteUbergraph_SocialBanModal");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialBanModal_C_ExecuteUbergraph_SocialBanModal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialBanModal_C", "ExecuteUbergraph_SocialBanModal");
+
+	Params::USocialBanModal_C_ExecuteUbergraph_SocialBanModal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -75,17 +106,17 @@ void USocialBanModal_C::ExecuteUbergraph_SocialBanModal(int32 EntryPoint, bool T
 
 void USocialBanModal_C::OnCloseSucceeded__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("SocialBanModal_C", "OnCloseSucceeded__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialBanModal_C_OnCloseSucceeded__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialBanModal_C", "OnCloseSucceeded__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

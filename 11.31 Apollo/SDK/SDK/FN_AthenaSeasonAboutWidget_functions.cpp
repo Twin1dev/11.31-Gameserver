@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaSeasonAboutWidget.AthenaSeasonAboutWidget_C
+// (None)
+
+class UClass* UAthenaSeasonAboutWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaSeasonAboutWidget_C");
+
+	return Clss;
+}
+
+
+// AthenaSeasonAboutWidget_C AthenaSeasonAboutWidget.Default__AthenaSeasonAboutWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaSeasonAboutWidget_C* UAthenaSeasonAboutWidget_C::GetDefaultObj()
+{
+	static class UAthenaSeasonAboutWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaSeasonAboutWidget_C*>(UAthenaSeasonAboutWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AthenaSeasonAboutWidget.AthenaSeasonAboutWidget_C.StreamedVideoOnMediaPlayerEndReached
@@ -25,9 +50,12 @@ namespace SDK
 
 void UAthenaSeasonAboutWidget_C::StreamedVideoOnMediaPlayerEndReached(class APlayerController* CallFunc_GetPlayerController_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "StreamedVideoOnMediaPlayerEndReached");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_StreamedVideoOnMediaPlayerEndReached_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "StreamedVideoOnMediaPlayerEndReached");
+
+	Params::UAthenaSeasonAboutWidget_C_StreamedVideoOnMediaPlayerEndReached_Params Parms{};
 
 	Parms.CallFunc_GetPlayerController_ReturnValue = CallFunc_GetPlayerController_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -51,9 +79,12 @@ void UAthenaSeasonAboutWidget_C::StreamedVideoOnMediaPlayerEndReached(class APla
 
 void UAthenaSeasonAboutWidget_C::StreamedVideoOpeningTimedOut(class APlayerController* CallFunc_GetPlayerController_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_LoadVideo_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "StreamedVideoOpeningTimedOut");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_StreamedVideoOpeningTimedOut_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "StreamedVideoOpeningTimedOut");
+
+	Params::UAthenaSeasonAboutWidget_C_StreamedVideoOpeningTimedOut_Params Parms{};
 
 	Parms.CallFunc_GetPlayerController_ReturnValue = CallFunc_GetPlayerController_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -77,9 +108,12 @@ void UAthenaSeasonAboutWidget_C::StreamedVideoOpeningTimedOut(class APlayerContr
 
 void UAthenaSeasonAboutWidget_C::StreamedVideoOnMediaOpened(const class FString& OpenedUrl, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "StreamedVideoOnMediaOpened");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_StreamedVideoOnMediaOpened_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "StreamedVideoOnMediaOpened");
+
+	Params::UAthenaSeasonAboutWidget_C_StreamedVideoOnMediaOpened_Params Parms{};
 
 	Parms.OpenedUrl = OpenedUrl;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -102,9 +136,12 @@ void UAthenaSeasonAboutWidget_C::StreamedVideoOnMediaOpened(const class FString&
 
 void UAthenaSeasonAboutWidget_C::StreamedVideoOnSkipButtonClicked(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class APlayerController* CallFunc_GetPlayerController_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "StreamedVideoOnSkipButtonClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_StreamedVideoOnSkipButtonClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "StreamedVideoOnSkipButtonClicked");
+
+	Params::UAthenaSeasonAboutWidget_C_StreamedVideoOnSkipButtonClicked_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
@@ -131,9 +168,12 @@ void UAthenaSeasonAboutWidget_C::StreamedVideoOnSkipButtonClicked(UDelegatePrope
 
 void UAthenaSeasonAboutWidget_C::StreamedVideoOnUrlFailure(const class FString& URL, class APlayerController* CallFunc_GetPlayerController_ReturnValue, bool CallFunc_LoadVideo_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "StreamedVideoOnUrlFailure");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_StreamedVideoOnUrlFailure_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "StreamedVideoOnUrlFailure");
+
+	Params::UAthenaSeasonAboutWidget_C_StreamedVideoOnUrlFailure_Params Parms{};
 
 	Parms.URL = URL;
 	Parms.CallFunc_GetPlayerController_ReturnValue = CallFunc_GetPlayerController_ReturnValue;
@@ -165,9 +205,12 @@ void UAthenaSeasonAboutWidget_C::StreamedVideoOnUrlFailure(const class FString& 
 
 void UAthenaSeasonAboutWidget_C::StreamedVideoOnUrlSuccess(const class FString& URL, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, float CallFunc_GetTimeLimitForWatchBattlePassMovie_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_LoadVideo_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "StreamedVideoOnUrlSuccess");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_StreamedVideoOnUrlSuccess_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "StreamedVideoOnUrlSuccess");
+
+	Params::UAthenaSeasonAboutWidget_C_StreamedVideoOnUrlSuccess_Params Parms{};
 
 	Parms.URL = URL;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -194,9 +237,12 @@ void UAthenaSeasonAboutWidget_C::StreamedVideoOnUrlSuccess(const class FString& 
 
 void UAthenaSeasonAboutWidget_C::StreamedVideoOnSkipBeforeVideoURLReceived(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "StreamedVideoOnSkipBeforeVideoURLReceived");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_StreamedVideoOnSkipBeforeVideoURLReceived_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "StreamedVideoOnSkipBeforeVideoURLReceived");
+
+	Params::UAthenaSeasonAboutWidget_C_StreamedVideoOnSkipBeforeVideoURLReceived_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
@@ -214,9 +260,12 @@ void UAthenaSeasonAboutWidget_C::StreamedVideoOnSkipBeforeVideoURLReceived(UDele
 
 void UAthenaSeasonAboutWidget_C::HandlePageLeft(bool* bPassThrough)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "HandlePageLeft");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_HandlePageLeft_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "HandlePageLeft");
+
+	Params::UAthenaSeasonAboutWidget_C_HandlePageLeft_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -234,9 +283,12 @@ void UAthenaSeasonAboutWidget_C::HandlePageLeft(bool* bPassThrough)
 
 void UAthenaSeasonAboutWidget_C::HandlePageRight(bool* bPassThrough)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "HandlePageRight");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_HandlePageRight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "HandlePageRight");
+
+	Params::UAthenaSeasonAboutWidget_C_HandlePageRight_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -253,12 +305,14 @@ void UAthenaSeasonAboutWidget_C::HandlePageRight(bool* bPassThrough)
 
 void UAthenaSeasonAboutWidget_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -269,12 +323,14 @@ void UAthenaSeasonAboutWidget_C::BP_OnActivated()
 
 void UAthenaSeasonAboutWidget_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -285,12 +341,14 @@ void UAthenaSeasonAboutWidget_C::BP_OnDeactivated()
 
 void UAthenaSeasonAboutWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -303,9 +361,12 @@ void UAthenaSeasonAboutWidget_C::Construct()
 
 void UAthenaSeasonAboutWidget_C::HandleWidgetCreated(class UWidget* Widget, class UFortItem* Item)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "HandleWidgetCreated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_HandleWidgetCreated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "HandleWidgetCreated");
+
+	Params::UAthenaSeasonAboutWidget_C_HandleWidgetCreated_Params Parms{};
 
 	Parms.Widget = Widget;
 	Parms.Item = Item;
@@ -321,12 +382,14 @@ void UAthenaSeasonAboutWidget_C::HandleWidgetCreated(class UWidget* Widget, clas
 
 void UAthenaSeasonAboutWidget_C::BndEvt__FortSwipePanel_0_K2Node_ComponentBoundEvent_23_OnFortSwipeEvent__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BndEvt__FortSwipePanel_0_K2Node_ComponentBoundEvent_23_OnFortSwipeEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_BndEvt__FortSwipePanel_0_K2Node_ComponentBoundEvent_23_OnFortSwipeEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BndEvt__FortSwipePanel_0_K2Node_ComponentBoundEvent_23_OnFortSwipeEvent__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -337,12 +400,14 @@ void UAthenaSeasonAboutWidget_C::BndEvt__FortSwipePanel_0_K2Node_ComponentBoundE
 
 void UAthenaSeasonAboutWidget_C::BndEvt__FortSwipePanel_0_K2Node_ComponentBoundEvent_33_OnFortSwipeEvent__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BndEvt__FortSwipePanel_0_K2Node_ComponentBoundEvent_33_OnFortSwipeEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_BndEvt__FortSwipePanel_0_K2Node_ComponentBoundEvent_33_OnFortSwipeEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BndEvt__FortSwipePanel_0_K2Node_ComponentBoundEvent_33_OnFortSwipeEvent__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -354,9 +419,12 @@ void UAthenaSeasonAboutWidget_C::BndEvt__FortSwipePanel_0_K2Node_ComponentBoundE
 
 void UAthenaSeasonAboutWidget_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSeasonAboutWidget_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -372,9 +440,12 @@ void UAthenaSeasonAboutWidget_C::BndEvt__MobileCloseButton_K2Node_ComponentBound
 
 void UAthenaSeasonAboutWidget_C::BndEvt__BackButton_1_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BndEvt__BackButton_1_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_BndEvt__BackButton_1_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BndEvt__BackButton_1_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSeasonAboutWidget_C_BndEvt__BackButton_1_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -390,9 +461,12 @@ void UAthenaSeasonAboutWidget_C::BndEvt__BackButton_1_K2Node_ComponentBoundEvent
 
 void UAthenaSeasonAboutWidget_C::BndEvt__BattlePassOverviewVideo_K2Node_ComponentBoundEvent_2_OnWidgetActivationChangedDynamic__DelegateSignature(class UCommonActivatablePanel* Panel)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BndEvt__BattlePassOverviewVideo_K2Node_ComponentBoundEvent_2_OnWidgetActivationChangedDynamic__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_BndEvt__BattlePassOverviewVideo_K2Node_ComponentBoundEvent_2_OnWidgetActivationChangedDynamic__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BndEvt__BattlePassOverviewVideo_K2Node_ComponentBoundEvent_2_OnWidgetActivationChangedDynamic__DelegateSignature");
+
+	Params::UAthenaSeasonAboutWidget_C_BndEvt__BattlePassOverviewVideo_K2Node_ComponentBoundEvent_2_OnWidgetActivationChangedDynamic__DelegateSignature_Params Parms{};
 
 	Parms.Panel = Panel;
 
@@ -408,9 +482,12 @@ void UAthenaSeasonAboutWidget_C::BndEvt__BattlePassOverviewVideo_K2Node_Componen
 
 void UAthenaSeasonAboutWidget_C::BndEvt__IconTextButton_49_K2Node_ComponentBoundEvent_93_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BndEvt__IconTextButton_49_K2Node_ComponentBoundEvent_93_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_BndEvt__IconTextButton_49_K2Node_ComponentBoundEvent_93_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BndEvt__IconTextButton_49_K2Node_ComponentBoundEvent_93_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSeasonAboutWidget_C_BndEvt__IconTextButton_49_K2Node_ComponentBoundEvent_93_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -426,9 +503,12 @@ void UAthenaSeasonAboutWidget_C::BndEvt__IconTextButton_49_K2Node_ComponentBound
 
 void UAthenaSeasonAboutWidget_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BndEvt__IconTextButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "BndEvt__IconTextButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSeasonAboutWidget_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_76_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -482,9 +562,12 @@ void UAthenaSeasonAboutWidget_C::BndEvt__IconTextButton_K2Node_ComponentBoundEve
 
 void UAthenaSeasonAboutWidget_C::ExecuteUbergraph_AthenaSeasonAboutWidget(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, class UCommonUISubsystem* CallFunc_GetGameInstanceSubsystem_ReturnValue, class UCommonInputManager* CallFunc_GetInputManager_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UHelpPanel_C* CallFunc_Create_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, class UWidget* K2Node_CustomEvent_Widget, class UFortItem* K2Node_CustomEvent_Item, class UAthenaSeasonReward_C* K2Node_DynamicCast_AsAthena_Season_Reward, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UAudioComponent* CallFunc_CreateSound2D_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool Temp_bool_Variable, bool CallFunc_HandlePageRight_bPassThrough, bool CallFunc_HandlePageLeft_bPassThrough, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, bool CallFunc_IsUsingTouch_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UCommonActivatablePanel* K2Node_ComponentBoundEvent_Panel, bool CallFunc_LoadVideo_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, int32 CallFunc_Conv_ByteToInt_ReturnValue, class FText Temp_text_Variable, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_UseElectraForWatchBattlePassMovie_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, class APlayerController* CallFunc_GetPlayerController_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, bool CallFunc_ShowExtendedBattlePassMovie_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "ExecuteUbergraph_AthenaSeasonAboutWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonAboutWidget_C_ExecuteUbergraph_AthenaSeasonAboutWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonAboutWidget_C", "ExecuteUbergraph_AthenaSeasonAboutWidget");
+
+	Params::UAthenaSeasonAboutWidget_C_ExecuteUbergraph_AthenaSeasonAboutWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -532,6 +615,4 @@ void UAthenaSeasonAboutWidget_C::ExecuteUbergraph_AthenaSeasonAboutWidget(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

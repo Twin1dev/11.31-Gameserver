@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_ShootingTarget_Master.B_ShootingTarget_Master_C
+// (Actor)
+
+class UClass* AB_ShootingTarget_Master_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_ShootingTarget_Master_C");
+
+	return Clss;
+}
+
+
+// B_ShootingTarget_Master_C B_ShootingTarget_Master.Default__B_ShootingTarget_Master_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_ShootingTarget_Master_C* AB_ShootingTarget_Master_C::GetDefaultObj()
+{
+	static class AB_ShootingTarget_Master_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_ShootingTarget_Master_C*>(AB_ShootingTarget_Master_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_ShootingTarget_Master.B_ShootingTarget_Master_C.GetMeshComponents
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 TArray<class UMeshComponent*> AB_ShootingTarget_Master_C::GetMeshComponents()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "GetMeshComponents");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_GetMeshComponents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "GetMeshComponents");
+
+	Params::AB_ShootingTarget_Master_C_GetMeshComponents_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -41,9 +69,12 @@ TArray<class UMeshComponent*> AB_ShootingTarget_Master_C::GetMeshComponents()
 
 class UStaticMesh* AB_ShootingTarget_Master_C::GetCollisionStaticMesh()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "GetCollisionStaticMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_GetCollisionStaticMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "GetCollisionStaticMesh");
+
+	Params::AB_ShootingTarget_Master_C_GetCollisionStaticMesh_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -61,9 +92,12 @@ class UStaticMesh* AB_ShootingTarget_Master_C::GetCollisionStaticMesh()
 
 void AB_ShootingTarget_Master_C::RestoreToMaxHealth(bool CallFunc_HasAuthority_ReturnValue, float CallFunc_GetMaxHealth_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "RestoreToMaxHealth");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_RestoreToMaxHealth_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "RestoreToMaxHealth");
+
+	Params::AB_ShootingTarget_Master_C_RestoreToMaxHealth_Params Parms{};
 
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 	Parms.CallFunc_GetMaxHealth_ReturnValue = CallFunc_GetMaxHealth_ReturnValue;
@@ -82,9 +116,12 @@ void AB_ShootingTarget_Master_C::RestoreToMaxHealth(bool CallFunc_HasAuthority_R
 
 void AB_ShootingTarget_Master_C::WeakPointArrayContainsItems(bool* ArrayContainsItems, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "WeakPointArrayContainsItems");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_WeakPointArrayContainsItems_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "WeakPointArrayContainsItems");
+
+	Params::AB_ShootingTarget_Master_C_WeakPointArrayContainsItems_Params Parms{};
 
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
@@ -115,9 +152,12 @@ void AB_ShootingTarget_Master_C::WeakPointArrayContainsItems(bool* ArrayContains
 
 void AB_ShootingTarget_Master_C::GetWeaponDataFromDamageCauser(class UObject* DamageCauser, class UFortWeaponItemDefinition** OutWeaponData, class UFortWeaponItemDefinition* WeaponData, class AFortProjectileAthena* K2Node_DynamicCast_AsFort_Projectile_Athena, bool K2Node_DynamicCast_bSuccess, class AFortWeapon* K2Node_DynamicCast_AsFort_Weapon, bool K2Node_DynamicCast_bSuccess_1, class AActor* CallFunc_GetOwner_ReturnValue, class UFortWeaponItemDefinition* CallFunc_GetWeaponData_ReturnValue, class AFortWeapon* K2Node_DynamicCast_AsFort_Weapon_1, bool K2Node_DynamicCast_bSuccess_2, class UFortWeaponItemDefinition* CallFunc_GetWeaponData_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "GetWeaponDataFromDamageCauser");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_GetWeaponDataFromDamageCauser_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "GetWeaponDataFromDamageCauser");
+
+	Params::AB_ShootingTarget_Master_C_GetWeaponDataFromDamageCauser_Params Parms{};
 
 	Parms.DamageCauser = DamageCauser;
 	Parms.WeaponData = WeaponData;
@@ -148,15 +188,18 @@ void AB_ShootingTarget_Master_C::GetWeaponDataFromDamageCauser(class UObject* Da
 // float                              NewDamage                                                        (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FDataTableRowHandle         CallFunc_GetWeaponStatHandle_ReturnValue                         (NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortBaseWeaponStats        CallFunc_GetWeaponStatsRow_OutRow                                ()
+// struct FFortBaseWeaponStats        CallFunc_GetWeaponStatsRow_OutRow                                (None)
 // bool                               CallFunc_GetWeaponStatsRow_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AB_ShootingTarget_Master_C::CalculateDamageFromWeaponData(class UFortWeaponItemDefinition* WeaponData, float InDamage, float* OutDamage, float NewDamage, const struct FDataTableRowHandle& CallFunc_GetWeaponStatHandle_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FFortBaseWeaponStats& CallFunc_GetWeaponStatsRow_OutRow, bool CallFunc_GetWeaponStatsRow_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "CalculateDamageFromWeaponData");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_CalculateDamageFromWeaponData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "CalculateDamageFromWeaponData");
+
+	Params::AB_ShootingTarget_Master_C_CalculateDamageFromWeaponData_Params Parms{};
 
 	Parms.WeaponData = WeaponData;
 	Parms.InDamage = InDamage;
@@ -210,9 +253,12 @@ void AB_ShootingTarget_Master_C::CalculateDamageFromWeaponData(class UFortWeapon
 
 bool AB_ShootingTarget_Master_C::IsWithinWeakpointBounds(const struct FVector& Impact_Location, class USceneComponent* Component, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FVector& CallFunc_GetComponentBounds_Origin, const struct FVector& CallFunc_GetComponentBounds_BoxExtent, float CallFunc_GetComponentBounds_SphereRadius, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue_1, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue_2, float CallFunc_Subtract_FloatFloat_ReturnValue_2, bool CallFunc_LessEqual_FloatFloat_ReturnValue_2, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue_4)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "IsWithinWeakpointBounds");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_IsWithinWeakpointBounds_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "IsWithinWeakpointBounds");
+
+	Params::AB_ShootingTarget_Master_C_IsWithinWeakpointBounds_Params Parms{};
 
 	Parms.Impact_Location = Impact_Location;
 	Parms.Component = Component;
@@ -260,9 +306,12 @@ bool AB_ShootingTarget_Master_C::IsWithinWeakpointBounds(const struct FVector& I
 
 void AB_ShootingTarget_Master_C::UpdateHealthBarVisibility(bool ShouldShowBar, bool ShouldSuppress, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "UpdateHealthBarVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_UpdateHealthBarVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "UpdateHealthBarVisibility");
+
+	Params::AB_ShootingTarget_Master_C_UpdateHealthBarVisibility_Params Parms{};
 
 	Parms.ShouldShowBar = ShouldShowBar;
 	Parms.ShouldSuppress = ShouldSuppress;
@@ -294,9 +343,12 @@ void AB_ShootingTarget_Master_C::UpdateHealthBarVisibility(bool ShouldShowBar, b
 
 float AB_ShootingTarget_Master_C::BlueprintModifyIncomingDamage(float Damage, struct FGameplayTagContainer& InTags, struct FGameplayEffectContextHandle& EffectContext, class AController* EventInstigator, class AActor* DamageCauser, float NewDamage, class UFortWeaponItemDefinition* CallFunc_GetWeaponDataFromDamageCauser_OutWeaponData, float CallFunc_BlueprintModifyIncomingDamage_ReturnValue, float CallFunc_CalculateDamageFromWeaponData_OutDamage, const struct FHitResult& CallFunc_EffectContextGetHitResult_ReturnValue, bool CallFunc_EffectContextHasHitResult_ReturnValue, class UPrimitiveComponent* CallFunc_WeakPointWasHit_HitComponent, bool CallFunc_WeakPointWasHit_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "BlueprintModifyIncomingDamage");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_BlueprintModifyIncomingDamage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "BlueprintModifyIncomingDamage");
+
+	Params::AB_ShootingTarget_Master_C_BlueprintModifyIncomingDamage_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.InTags = InTags;
@@ -331,19 +383,22 @@ float AB_ShootingTarget_Master_C::BlueprintModifyIncomingDamage(float Damage, st
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ECollisionResponse      CallFunc_GetCollisionResponseToChannel_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_ByteToText_ReturnValue                             ()
+// class FText                        CallFunc_Conv_ByteToText_ReturnValue                             (None)
 // enum class ECollisionResponse      CallFunc_GetCollisionResponseToChannel_ReturnValue_1             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_ByteToText_ReturnValue_1                           ()
+// class FText                        CallFunc_Conv_ByteToText_ReturnValue_1                           (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 void AB_ShootingTarget_Master_C::SetAimAssistEnabled(bool NewType, bool Temp_bool_Variable, enum class ECollisionResponse Temp_byte_Variable, enum class ECollisionResponse Temp_byte_Variable_1, enum class ECollisionResponse K2Node_Select_Default, class ACharacter* K2Node_DynamicCast_AsCharacter, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, enum class ECollisionResponse CallFunc_GetCollisionResponseToChannel_ReturnValue, class FText CallFunc_Conv_ByteToText_ReturnValue, enum class ECollisionResponse CallFunc_GetCollisionResponseToChannel_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class FText CallFunc_Conv_ByteToText_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetAimAssistEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_SetAimAssistEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetAimAssistEnabled");
+
+	Params::AB_ShootingTarget_Master_C_SetAimAssistEnabled_Params Parms{};
 
 	Parms.NewType = NewType;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -387,9 +442,12 @@ void AB_ShootingTarget_Master_C::SetAimAssistEnabled(bool NewType, bool Temp_boo
 
 void AB_ShootingTarget_Master_C::CreateWeakPointArray(int32 CallFunc_Array_Add_ReturnValue, int32 CallFunc_Array_Add_ReturnValue_1, int32 CallFunc_Array_Add_ReturnValue_2, int32 CallFunc_Array_Add_ReturnValue_3, int32 CallFunc_Array_Add_ReturnValue_4, int32 CallFunc_Array_Add_ReturnValue_5, int32 CallFunc_Array_Add_ReturnValue_6, int32 CallFunc_Array_Add_ReturnValue_7, int32 CallFunc_Array_Add_ReturnValue_8, int32 CallFunc_Array_Add_ReturnValue_9, int32 CallFunc_Array_Add_ReturnValue_10, int32 CallFunc_Array_Add_ReturnValue_11, int32 CallFunc_Array_Add_ReturnValue_12, int32 CallFunc_Array_Add_ReturnValue_13)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "CreateWeakPointArray");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_CreateWeakPointArray_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "CreateWeakPointArray");
+
+	Params::AB_ShootingTarget_Master_C_CreateWeakPointArray_Params Parms{};
 
 	Parms.CallFunc_Array_Add_ReturnValue = CallFunc_Array_Add_ReturnValue;
 	Parms.CallFunc_Array_Add_ReturnValue_1 = CallFunc_Array_Add_ReturnValue_1;
@@ -418,9 +476,12 @@ void AB_ShootingTarget_Master_C::CreateWeakPointArray(int32 CallFunc_Array_Add_R
 
 void AB_ShootingTarget_Master_C::CheckIfShouldHop(bool CallFunc_NotEqual_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "CheckIfShouldHop");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_CheckIfShouldHop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "CheckIfShouldHop");
+
+	Params::AB_ShootingTarget_Master_C_CheckIfShouldHop_Params Parms{};
 
 	Parms.CallFunc_NotEqual_FloatFloat_ReturnValue = CallFunc_NotEqual_FloatFloat_ReturnValue;
 
@@ -436,9 +497,12 @@ void AB_ShootingTarget_Master_C::CheckIfShouldHop(bool CallFunc_NotEqual_FloatFl
 
 void AB_ShootingTarget_Master_C::SetBunnyHopTimer(bool CallFunc_NotEqual_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetBunnyHopTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_SetBunnyHopTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetBunnyHopTimer");
+
+	Params::AB_ShootingTarget_Master_C_SetBunnyHopTimer_Params Parms{};
 
 	Parms.CallFunc_NotEqual_FloatFloat_ReturnValue = CallFunc_NotEqual_FloatFloat_ReturnValue;
 
@@ -453,12 +517,14 @@ void AB_ShootingTarget_Master_C::SetBunnyHopTimer(bool CallFunc_NotEqual_FloatFl
 
 void AB_ShootingTarget_Master_C::ClearBunnyHopTimer()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "ClearBunnyHopTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_ClearBunnyHopTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "ClearBunnyHopTimer");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -471,9 +537,12 @@ void AB_ShootingTarget_Master_C::ClearBunnyHopTimer()
 
 void AB_ShootingTarget_Master_C::InitializeHideTargetTimer(bool CallFunc_NotEqual_FloatFloat_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "InitializeHideTargetTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_InitializeHideTargetTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "InitializeHideTargetTimer");
+
+	Params::AB_ShootingTarget_Master_C_InitializeHideTargetTimer_Params Parms{};
 
 	Parms.CallFunc_NotEqual_FloatFloat_ReturnValue = CallFunc_NotEqual_FloatFloat_ReturnValue;
 	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
@@ -489,12 +558,14 @@ void AB_ShootingTarget_Master_C::InitializeHideTargetTimer(bool CallFunc_NotEqua
 
 void AB_ShootingTarget_Master_C::HideTarget()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "HideTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_HideTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "HideTarget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -504,18 +575,21 @@ void AB_ShootingTarget_Master_C::HideTarget()
 // Parameters:
 // float                              NewMaxHealth                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingSpec_ReturnValue                            ()
+// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingSpec_ReturnValue                            (None)
 // class UAbilitySystemComponent*     CallFunc_GetAbilitySystemComponent_ReturnValue                   (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectSpecHandle   CallFunc_AssignTagSetByCallerMagnitude_ReturnValue               ()
+// struct FGameplayEffectSpecHandle   CallFunc_AssignTagSetByCallerMagnitude_ReturnValue               (None)
 // bool                               CallFunc_RemoveActiveGameplayEffect_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FActiveGameplayEffectHandle CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue            (NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void AB_ShootingTarget_Master_C::SetMaxHealth(float NewMaxHealth, bool CallFunc_HasAuthority_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingSpec_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_AssignTagSetByCallerMagnitude_ReturnValue, bool CallFunc_RemoveActiveGameplayEffect_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetMaxHealth");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_SetMaxHealth_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetMaxHealth");
+
+	Params::AB_ShootingTarget_Master_C_SetMaxHealth_Params Parms{};
 
 	Parms.NewMaxHealth = NewMaxHealth;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -542,9 +616,12 @@ void AB_ShootingTarget_Master_C::SetMaxHealth(float NewMaxHealth, bool CallFunc_
 
 bool AB_ShootingTarget_Master_C::TargetShouldFall(float CallFunc_GetHealth_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "TargetShouldFall");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_TargetShouldFall_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "TargetShouldFall");
+
+	Params::AB_ShootingTarget_Master_C_TargetShouldFall_Params Parms{};
 
 	Parms.CallFunc_GetHealth_ReturnValue = CallFunc_GetHealth_ReturnValue;
 	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
@@ -565,9 +642,12 @@ bool AB_ShootingTarget_Master_C::TargetShouldFall(float CallFunc_GetHealth_Retur
 
 void AB_ShootingTarget_Master_C::SetStartingPosition(bool CallFunc_EqualEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetStartingPosition");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_SetStartingPosition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetStartingPosition");
+
+	Params::AB_ShootingTarget_Master_C_SetStartingPosition_Params Parms{};
 
 	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
 
@@ -585,9 +665,12 @@ void AB_ShootingTarget_Master_C::SetStartingPosition(bool CallFunc_EqualEqual_In
 
 void AB_ShootingTarget_Master_C::MinigameIsRunning(bool* MinigameIsRunning, bool CallFunc_HasStarted_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "MinigameIsRunning");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_MinigameIsRunning_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "MinigameIsRunning");
+
+	Params::AB_ShootingTarget_Master_C_MinigameIsRunning_Params Parms{};
 
 	Parms.CallFunc_HasStarted_ReturnValue = CallFunc_HasStarted_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -619,9 +702,12 @@ void AB_ShootingTarget_Master_C::MinigameIsRunning(bool* MinigameIsRunning, bool
 
 void AB_ShootingTarget_Master_C::ShouldTriggerTarget(class UObject* Overlapping_Actor, class UPrimitiveComponent* Overlapping_Component, bool* Result, class AFortAthenaVehicle* K2Node_DynamicCast_AsFort_Athena_Vehicle, bool K2Node_DynamicCast_bSuccess, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess_1, TScriptInterface<class IFortVehicleInterface> CallFunc_GetAllPassengers_self_CastInput, TArray<class AFortPlayerPawn*>& CallFunc_GetAllPassengers_ReturnValue, bool CallFunc_IsInVehicle_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "ShouldTriggerTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_ShouldTriggerTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "ShouldTriggerTarget");
+
+	Params::AB_ShootingTarget_Master_C_ShouldTriggerTarget_Params Parms{};
 
 	Parms.Overlapping_Actor = Overlapping_Actor;
 	Parms.Overlapping_Component = Overlapping_Component;
@@ -652,23 +738,26 @@ void AB_ShootingTarget_Master_C::ShouldTriggerTarget(class UObject* Overlapping_
 // int32                              TeamAwardedPoints                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortMinigameManager*        MinigameManager                                                  (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortMinigameManager*        CallFunc_GetMinigameManager_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       CallFunc_GetSourceAndContextTags_OutSourceTags                   ()
-// struct FGameplayTagContainer       CallFunc_GetSourceAndContextTags_OutContextTags                  ()
+// struct FGameplayTagContainer       CallFunc_GetSourceAndContextTags_OutSourceTags                   (None)
+// struct FGameplayTagContainer       CallFunc_GetSourceAndContextTags_OutContextTags                  (None)
 // uint8                              CallFunc_GetActorTeam_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // uint8                              CallFunc_MakeLiteralByte_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // uint8                              CallFunc_Subtract_ByteByte_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_LessEqual_IntInt_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Conv_ByteToInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       CallFunc_MakeGameplayTagContainerFromTag_ReturnValue             ()
+// struct FGameplayTagContainer       CallFunc_MakeGameplayTagContainerFromTag_ReturnValue             (None)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_CalculateScore_ScoreToAward                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AB_ShootingTarget_Master_C::AwardScore(class AFortPlayerController* FortPlayerController, int32* ScoreAwarded, int32* TeamAwardedPoints, class UFortMinigameManager* MinigameManager, class UFortMinigameManager* CallFunc_GetMinigameManager_ReturnValue, const struct FGameplayTagContainer& CallFunc_GetSourceAndContextTags_OutSourceTags, const struct FGameplayTagContainer& CallFunc_GetSourceAndContextTags_OutContextTags, uint8 CallFunc_GetActorTeam_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue, uint8 CallFunc_Subtract_ByteByte_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Conv_ByteToInt_ReturnValue, const struct FGameplayTagContainer& CallFunc_MakeGameplayTagContainerFromTag_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, int32 CallFunc_CalculateScore_ScoreToAward)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "AwardScore");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_AwardScore_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "AwardScore");
+
+	Params::AB_ShootingTarget_Master_C_AwardScore_Params Parms{};
 
 	Parms.FortPlayerController = FortPlayerController;
 	Parms.MinigameManager = MinigameManager;
@@ -704,9 +793,12 @@ void AB_ShootingTarget_Master_C::AwardScore(class AFortPlayerController* FortPla
 
 void AB_ShootingTarget_Master_C::CalculateScore(int32* ScoreToAward, int32 CallFunc_Multiply_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "CalculateScore");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_CalculateScore_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "CalculateScore");
+
+	Params::AB_ShootingTarget_Master_C_CalculateScore_Params Parms{};
 
 	Parms.CallFunc_Multiply_IntInt_ReturnValue = CallFunc_Multiply_IntInt_ReturnValue;
 
@@ -727,9 +819,12 @@ void AB_ShootingTarget_Master_C::CalculateScore(int32* ScoreToAward, int32 CallF
 
 void AB_ShootingTarget_Master_C::PrepareChosenTarget(class UStaticMeshComponent* StaticMeshComponent, class UPrimitiveComponent* WeakPointComponent_1, class UPrimitiveComponent* WeakPointComponent2)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "PrepareChosenTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_PrepareChosenTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "PrepareChosenTarget");
+
+	Params::AB_ShootingTarget_Master_C_PrepareChosenTarget_Params Parms{};
 
 	Parms.StaticMeshComponent = StaticMeshComponent;
 	Parms.WeakPointComponent_1 = WeakPointComponent_1;
@@ -772,9 +867,12 @@ void AB_ShootingTarget_Master_C::PrepareChosenTarget(class UStaticMeshComponent*
 
 bool AB_ShootingTarget_Master_C::WeakPointWasHit(struct FHitResult& Hit_Result, class UPrimitiveComponent** HitComponent, bool CallFunc_WeakPointArrayContainsItems_ArrayContainsItems, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, bool CallFunc_ComponentHasTag_ReturnValue, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue, class UPrimitiveComponent* CallFunc_Array_Get_Item, bool CallFunc_IsWithinWeakpointBounds_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "WeakPointWasHit");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_WeakPointWasHit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "WeakPointWasHit");
+
+	Params::AB_ShootingTarget_Master_C_WeakPointWasHit_Params Parms{};
 
 	Parms.Hit_Result = Hit_Result;
 	Parms.CallFunc_WeakPointArrayContainsItems_ArrayContainsItems = CallFunc_WeakPointArrayContainsItems_ArrayContainsItems;
@@ -824,9 +922,12 @@ bool AB_ShootingTarget_Master_C::WeakPointWasHit(struct FHitResult& Hit_Result, 
 
 void AB_ShootingTarget_Master_C::ResetWeakPoints(int32 Temp_int_Array_Index_Variable, bool CallFunc_WeakPointArrayContainsItems_ArrayContainsItems, int32 Temp_int_Loop_Counter_Variable, class UPrimitiveComponent* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "ResetWeakPoints");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_ResetWeakPoints_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "ResetWeakPoints");
+
+	Params::AB_ShootingTarget_Master_C_ResetWeakPoints_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.CallFunc_WeakPointArrayContainsItems_ArrayContainsItems = CallFunc_WeakPointArrayContainsItems_ArrayContainsItems;
@@ -855,9 +956,12 @@ void AB_ShootingTarget_Master_C::ResetWeakPoints(int32 Temp_int_Array_Index_Vari
 
 void AB_ShootingTarget_Master_C::CanPopUp(bool MinigameJustStartedOrStopped, bool* CanPopUp, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "CanPopUp");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_CanPopUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "CanPopUp");
+
+	Params::AB_ShootingTarget_Master_C_CanPopUp_Params Parms{};
 
 	Parms.MinigameJustStartedOrStopped = MinigameJustStartedOrStopped;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
@@ -881,12 +985,14 @@ void AB_ShootingTarget_Master_C::CanPopUp(bool MinigameJustStartedOrStopped, boo
 
 void AB_ShootingTarget_Master_C::PopUpTimeline__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "PopUpTimeline__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_PopUpTimeline__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "PopUpTimeline__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -897,12 +1003,14 @@ void AB_ShootingTarget_Master_C::PopUpTimeline__FinishedFunc()
 
 void AB_ShootingTarget_Master_C::PopUpTimeline__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "PopUpTimeline__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_PopUpTimeline__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "PopUpTimeline__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -913,12 +1021,14 @@ void AB_ShootingTarget_Master_C::PopUpTimeline__UpdateFunc()
 
 void AB_ShootingTarget_Master_C::KnockDownTimeline__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "KnockDownTimeline__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_KnockDownTimeline__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "KnockDownTimeline__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -929,12 +1039,14 @@ void AB_ShootingTarget_Master_C::KnockDownTimeline__FinishedFunc()
 
 void AB_ShootingTarget_Master_C::KnockDownTimeline__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "KnockDownTimeline__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_KnockDownTimeline__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "KnockDownTimeline__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -945,12 +1057,14 @@ void AB_ShootingTarget_Master_C::KnockDownTimeline__UpdateFunc()
 
 void AB_ShootingTarget_Master_C::Timeline_2__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "Timeline_2__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_Timeline_2__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "Timeline_2__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -961,12 +1075,14 @@ void AB_ShootingTarget_Master_C::Timeline_2__FinishedFunc()
 
 void AB_ShootingTarget_Master_C::Timeline_2__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "Timeline_2__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_Timeline_2__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "Timeline_2__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -978,9 +1094,12 @@ void AB_ShootingTarget_Master_C::Timeline_2__UpdateFunc()
 
 void AB_ShootingTarget_Master_C::OnLoaded_E00ACB5548EAE7DC61ECB69BAE5C78CA(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "OnLoaded_E00ACB5548EAE7DC61ECB69BAE5C78CA");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_OnLoaded_E00ACB5548EAE7DC61ECB69BAE5C78CA_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "OnLoaded_E00ACB5548EAE7DC61ECB69BAE5C78CA");
+
+	Params::AB_ShootingTarget_Master_C_OnLoaded_E00ACB5548EAE7DC61ECB69BAE5C78CA_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -995,12 +1114,14 @@ void AB_ShootingTarget_Master_C::OnLoaded_E00ACB5548EAE7DC61ECB69BAE5C78CA(class
 
 void AB_ShootingTarget_Master_C::OnReady_A57ED5A14BEB6A98DB20D88D1582D58A()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "OnReady_A57ED5A14BEB6A98DB20D88D1582D58A");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_OnReady_A57ED5A14BEB6A98DB20D88D1582D58A_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "OnReady_A57ED5A14BEB6A98DB20D88D1582D58A");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1011,12 +1132,14 @@ void AB_ShootingTarget_Master_C::OnReady_A57ED5A14BEB6A98DB20D88D1582D58A()
 
 void AB_ShootingTarget_Master_C::KnockdownTarget()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "KnockdownTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_KnockdownTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "KnockdownTarget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1028,9 +1151,12 @@ void AB_ShootingTarget_Master_C::KnockdownTarget()
 
 void AB_ShootingTarget_Master_C::PopUpTarget(bool MinigameJustStartedOrStopped)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "PopUpTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_PopUpTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "PopUpTarget");
+
+	Params::AB_ShootingTarget_Master_C_PopUpTarget_Params Parms{};
 
 	Parms.MinigameJustStartedOrStopped = MinigameJustStartedOrStopped;
 
@@ -1045,12 +1171,14 @@ void AB_ShootingTarget_Master_C::PopUpTarget(bool MinigameJustStartedOrStopped)
 
 void AB_ShootingTarget_Master_C::BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_0_SimpleDynamicMulticastDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_0_SimpleDynamicMulticastDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_0_SimpleDynamicMulticastDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_0_SimpleDynamicMulticastDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1061,12 +1189,14 @@ void AB_ShootingTarget_Master_C::BndEvt__FortMinigameProgress_K2Node_ComponentBo
 
 void AB_ShootingTarget_Master_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1084,9 +1214,12 @@ void AB_ShootingTarget_Master_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBou
 
 void AB_ShootingTarget_Master_C::OnDamageServer(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "OnDamageServer");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_OnDamageServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "OnDamageServer");
+
+	Params::AB_ShootingTarget_Master_C_OnDamageServer_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -1107,12 +1240,14 @@ void AB_ShootingTarget_Master_C::OnDamageServer(float Damage, struct FGameplayTa
 
 void AB_ShootingTarget_Master_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1123,12 +1258,14 @@ void AB_ShootingTarget_Master_C::ReceiveBeginPlay()
 
 void AB_ShootingTarget_Master_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_2_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_2_AnyPropertyChangedDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_2_AnyPropertyChangedDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_2_AnyPropertyChangedDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1145,9 +1282,12 @@ void AB_ShootingTarget_Master_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBou
 
 void AB_ShootingTarget_Master_C::BndEvt__ProximityTrigger_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, struct FHitResult& SweepResult)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__ProximityTrigger_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_BndEvt__ProximityTrigger_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__ProximityTrigger_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature");
+
+	Params::AB_ShootingTarget_Master_C_BndEvt__ProximityTrigger_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature_Params Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -1167,12 +1307,14 @@ void AB_ShootingTarget_Master_C::BndEvt__ProximityTrigger_K2Node_ComponentBoundE
 
 void AB_ShootingTarget_Master_C::BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_4_SimpleDynamicMulticastDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_4_SimpleDynamicMulticastDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_4_SimpleDynamicMulticastDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_4_SimpleDynamicMulticastDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1183,12 +1325,14 @@ void AB_ShootingTarget_Master_C::BndEvt__FortMinigameProgress_K2Node_ComponentBo
 
 void AB_ShootingTarget_Master_C::PickMeshFromSettings()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "PickMeshFromSettings");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_PickMeshFromSettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "PickMeshFromSettings");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1199,12 +1343,14 @@ void AB_ShootingTarget_Master_C::PickMeshFromSettings()
 
 void AB_ShootingTarget_Master_C::InitializeSettings()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "InitializeSettings");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_InitializeSettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "InitializeSettings");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1215,12 +1361,14 @@ void AB_ShootingTarget_Master_C::InitializeSettings()
 
 void AB_ShootingTarget_Master_C::ResetFromSettings()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "ResetFromSettings");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_ResetFromSettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "ResetFromSettings");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1231,12 +1379,14 @@ void AB_ShootingTarget_Master_C::ResetFromSettings()
 
 void AB_ShootingTarget_Master_C::HideTargetTimerEvent()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "HideTargetTimerEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_HideTargetTimerEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "HideTargetTimerEvent");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1248,9 +1398,12 @@ void AB_ShootingTarget_Master_C::HideTargetTimerEvent()
 
 void AB_ShootingTarget_Master_C::SetHideTargetTimer(float TimerDuration)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetHideTargetTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_SetHideTargetTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetHideTargetTimer");
+
+	Params::AB_ShootingTarget_Master_C_SetHideTargetTimer_Params Parms{};
 
 	Parms.TimerDuration = TimerDuration;
 
@@ -1266,9 +1419,12 @@ void AB_ShootingTarget_Master_C::SetHideTargetTimer(float TimerDuration)
 
 void AB_ShootingTarget_Master_C::Hop(bool InJumpUpPosition)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "Hop");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_Hop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "Hop");
+
+	Params::AB_ShootingTarget_Master_C_Hop_Params Parms{};
 
 	Parms.InJumpUpPosition = InJumpUpPosition;
 
@@ -1283,12 +1439,14 @@ void AB_ShootingTarget_Master_C::Hop(bool InJumpUpPosition)
 
 void AB_ShootingTarget_Master_C::HopTimerEvent()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "HopTimerEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_HopTimerEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "HopTimerEvent");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1299,12 +1457,14 @@ void AB_ShootingTarget_Master_C::HopTimerEvent()
 
 void AB_ShootingTarget_Master_C::SetHopTimer()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetHopTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_SetHopTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "SetHopTimer");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1316,9 +1476,12 @@ void AB_ShootingTarget_Master_C::SetHopTimer()
 
 void AB_ShootingTarget_Master_C::Knock_Down_Audio(bool Knocked_Down_)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "Knock Down Audio");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_Knock_Down_Audio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "Knock Down Audio");
+
+	Params::AB_ShootingTarget_Master_C_Knock_Down_Audio_Params Parms{};
 
 	Parms.Knocked_Down_ = Knocked_Down_;
 
@@ -1335,9 +1498,12 @@ void AB_ShootingTarget_Master_C::Knock_Down_Audio(bool Knocked_Down_)
 
 void AB_ShootingTarget_Master_C::Impact_Audio(int32 Check_for_Positive_Score, class AController* Instigator)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "Impact Audio");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_Impact_Audio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "Impact Audio");
+
+	Params::AB_ShootingTarget_Master_C_Impact_Audio_Params Parms{};
 
 	Parms.Check_for_Positive_Score = Check_for_Positive_Score;
 	Parms.Instigator = Instigator;
@@ -1354,9 +1520,12 @@ void AB_ShootingTarget_Master_C::Impact_Audio(int32 Check_for_Positive_Score, cl
 
 void AB_ShootingTarget_Master_C::SpawnWeakpointFX(const struct FTransform& ImpactTransform)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "SpawnWeakpointFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_SpawnWeakpointFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "SpawnWeakpointFX");
+
+	Params::AB_ShootingTarget_Master_C_SpawnWeakpointFX_Params Parms{};
 
 	Parms.ImpactTransform = ImpactTransform;
 
@@ -1372,9 +1541,12 @@ void AB_ShootingTarget_Master_C::SpawnWeakpointFX(const struct FTransform& Impac
 
 void AB_ShootingTarget_Master_C::Target_Movement_Audio(bool Jump_Up_)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "Target Movement Audio");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_Target_Movement_Audio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "Target Movement Audio");
+
+	Params::AB_ShootingTarget_Master_C_Target_Movement_Audio_Params Parms{};
 
 	Parms.Jump_Up_ = Jump_Up_;
 
@@ -1389,12 +1561,14 @@ void AB_ShootingTarget_Master_C::Target_Movement_Audio(bool Jump_Up_)
 
 void AB_ShootingTarget_Master_C::PopUpTargetTimerEvent()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "PopUpTargetTimerEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_PopUpTargetTimerEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "PopUpTargetTimerEvent");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1405,12 +1579,14 @@ void AB_ShootingTarget_Master_C::PopUpTargetTimerEvent()
 
 void AB_ShootingTarget_Master_C::PostFinishSpawning()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "PostFinishSpawning");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_PostFinishSpawning_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "PostFinishSpawning");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1443,7 +1619,7 @@ void AB_ShootingTarget_Master_C::PostFinishSpawning()
 // struct FHitResult                  K2Node_Event_HitInfo                                             (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AController*                 K2Node_Event_InstigatedBy                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       (None)
 // class AFortPlayerController*       K2Node_DynamicCast_AsFort_Player_Controller                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UPrimitiveComponent*         CallFunc_WeakPointWasHit_HitComponent                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1515,9 +1691,12 @@ void AB_ShootingTarget_Master_C::PostFinishSpawning()
 
 void AB_ShootingTarget_Master_C::ExecuteUbergraph_B_ShootingTarget_Master(int32 EntryPoint, const struct FVector& CallFunc_MakeVector_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool Temp_bool_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable_1, bool Temp_bool_Variable_1, class USoundBase* Temp_object_Variable_2, class USoundBase* Temp_object_Variable_3, bool Temp_bool_Variable_2, class USoundBase* Temp_object_Variable_4, class USoundBase* Temp_object_Variable_5, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool K2Node_CustomEvent_MinigameJustStartedOrStopped, bool CallFunc_CanPopUp_CanPopUp, bool CallFunc_IsValid_ReturnValue, float CallFunc_GetMaxHealth_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float K2Node_Event_Damage, const struct FGameplayTagContainer& K2Node_Event_DamageTags, const struct FVector& K2Node_Event_Momentum, const struct FHitResult& K2Node_Event_HitInfo, class AController* K2Node_Event_InstigatedBy, class AActor* K2Node_Event_DamageCauser, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, class UPrimitiveComponent* CallFunc_WeakPointWasHit_HitComponent, bool CallFunc_WeakPointWasHit_ReturnValue, int32 CallFunc_AwardScore_ScoreAwarded, int32 CallFunc_AwardScore_TeamAwardedPoints, int32 CallFunc_Add_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_EqualEqual_FloatFloat_ReturnValue, int32 Temp_int_Variable, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent, class AActor* K2Node_ComponentBoundEvent_OtherActor, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp, int32 K2Node_ComponentBoundEvent_OtherBodyIndex, bool K2Node_ComponentBoundEvent_bFromSweep, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult, float CallFunc_Conv_IntToFloat_ReturnValue, bool CallFunc_ShouldTriggerTarget_Result, class UFortAsyncAction_AuthorityMatchReady* CallFunc_MatchReadyAsync_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_NotEqual_FloatFloat_ReturnValue, bool CallFunc_TargetShouldFall_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UObject* Temp_object_Variable_6, class UStaticMesh* K2Node_DynamicCast_AsStatic_Mesh, bool K2Node_DynamicCast_bSuccess_1, float K2Node_CustomEvent_TimerDuration, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, bool K2Node_CustomEvent_InJumpUpPosition, const struct FHitResult& CallFunc_K2_SetRelativeLocation_SweepHitResult, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_2, class UObject* K2Node_CustomEvent_Loaded, TSoftObjectPtr<class UStaticMesh> CallFunc_Array_Get_Item, class UObject* CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue, bool CallFunc_SetStaticMesh_ReturnValue, class UStaticMesh* K2Node_DynamicCast_AsStatic_Mesh_1, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsValidSoftObjectReference_ReturnValue, bool CallFunc_SetStaticMesh_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, class UPrimitiveComponent* CallFunc_Array_Get_Item_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool K2Node_CustomEvent_Knocked_Down_, class USoundBase* K2Node_Select_Default, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, int32 K2Node_CustomEvent_Check_for_Positive_Score, class AController* K2Node_CustomEvent_Instigator, bool CallFunc_IsLocalController_ReturnValue, class USoundBase* K2Node_Select_Default_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, const struct FTransform& K2Node_CustomEvent_ImpactTransform, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult, bool K2Node_CustomEvent_Jump_Up_, const struct FRotator& CallFunc_MakeRotator_ReturnValue_1, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult_1, class USoundBase* K2Node_Select_Default_2, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, bool CallFunc_WeakPointArrayContainsItems_ArrayContainsItems)
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "ExecuteUbergraph_B_ShootingTarget_Master");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_ExecuteUbergraph_B_ShootingTarget_Master_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "ExecuteUbergraph_B_ShootingTarget_Master");
+
+	Params::AB_ShootingTarget_Master_C_ExecuteUbergraph_B_ShootingTarget_Master_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_MakeVector_ReturnValue = CallFunc_MakeVector_ReturnValue;
@@ -1625,12 +1804,14 @@ void AB_ShootingTarget_Master_C::ExecuteUbergraph_B_ShootingTarget_Master(int32 
 
 void AB_ShootingTarget_Master_C::TargetPopUpDispatcher__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "TargetPopUpDispatcher__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_TargetPopUpDispatcher__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "TargetPopUpDispatcher__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1641,17 +1822,17 @@ void AB_ShootingTarget_Master_C::TargetPopUpDispatcher__DelegateSignature()
 
 void AB_ShootingTarget_Master_C::TargetKnockedDownDispatcher__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("B_ShootingTarget_Master_C", "TargetKnockedDownDispatcher__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_ShootingTarget_Master_C_TargetKnockedDownDispatcher__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_ShootingTarget_Master_C", "TargetKnockedDownDispatcher__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

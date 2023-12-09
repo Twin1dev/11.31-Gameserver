@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -22,16 +19,13 @@ public:
 	float                                        FadeinOut_Post_BDCA5FC943E3CD00D42B59A9A0D1C530;   // 0x798(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        FadeinOut_Fade_BDCA5FC943E3CD00D42B59A9A0D1C530;   // 0x79C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETimelineDirection                FadeinOut__Direction_BDCA5FC943E3CD00D42B59A9A0D1C530; // 0x7A0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4319[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_447A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTimelineComponent*                    FadeinOut;                                         // 0x7A8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                            SoundOnFadeIn;                                     // 0x7B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                            SoundOnFadeOut;                                    // 0x7B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GCN_Loop_Snow_Whiteout_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AGCN_Loop_Snow_Whiteout_C* GetDefaultObj();
 
 	void FadeinOut__FinishedFunc();
 	void FadeinOut__UpdateFunc();
@@ -43,6 +37,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

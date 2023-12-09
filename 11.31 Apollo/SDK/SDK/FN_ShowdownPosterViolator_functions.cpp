@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ShowdownPosterViolator.ShowdownPosterViolator_C
+// (None)
+
+class UClass* UShowdownPosterViolator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ShowdownPosterViolator_C");
+
+	return Clss;
+}
+
+
+// ShowdownPosterViolator_C ShowdownPosterViolator.Default__ShowdownPosterViolator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UShowdownPosterViolator_C* UShowdownPosterViolator_C::GetDefaultObj()
+{
+	static class UShowdownPosterViolator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UShowdownPosterViolator_C*>(UShowdownPosterViolator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ShowdownPosterViolator.ShowdownPosterViolator_C.OnViolatorStateRefreshed
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UShowdownPosterViolator_C::OnViolatorStateRefreshed(enum class EEventTimeState NewTimeState)
 {
-	static auto Func = Class->GetFunction("ShowdownPosterViolator_C", "OnViolatorStateRefreshed");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownPosterViolator_C_OnViolatorStateRefreshed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownPosterViolator_C", "OnViolatorStateRefreshed");
+
+	Params::UShowdownPosterViolator_C_OnViolatorStateRefreshed_Params Parms{};
 
 	Parms.NewTimeState = NewTimeState;
 
@@ -43,9 +71,12 @@ void UShowdownPosterViolator_C::OnViolatorStateRefreshed(enum class EEventTimeSt
 
 void UShowdownPosterViolator_C::ExecuteUbergraph_ShowdownPosterViolator(int32 EntryPoint, enum class EEventTimeState K2Node_Event_NewTimeState, enum class EEventTimeState Temp_byte_Variable, class UCommonBorder* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ShowdownPosterViolator_C", "ExecuteUbergraph_ShowdownPosterViolator");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownPosterViolator_C_ExecuteUbergraph_ShowdownPosterViolator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownPosterViolator_C", "ExecuteUbergraph_ShowdownPosterViolator");
+
+	Params::UShowdownPosterViolator_C_ExecuteUbergraph_ShowdownPosterViolator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_NewTimeState = K2Node_Event_NewTimeState;
@@ -58,6 +89,4 @@ void UShowdownPosterViolator_C::ExecuteUbergraph_ShowdownPosterViolator(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCNL_Athena_UnderwaterDamage.GCNL_Athena_UnderwaterDamage_C
+// (Actor)
+
+class UClass* AGCNL_Athena_UnderwaterDamage_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCNL_Athena_UnderwaterDamage_C");
+
+	return Clss;
+}
+
+
+// GCNL_Athena_UnderwaterDamage_C GCNL_Athena_UnderwaterDamage.Default__GCNL_Athena_UnderwaterDamage_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCNL_Athena_UnderwaterDamage_C* AGCNL_Athena_UnderwaterDamage_C::GetDefaultObj()
+{
+	static class AGCNL_Athena_UnderwaterDamage_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCNL_Athena_UnderwaterDamage_C*>(AGCNL_Athena_UnderwaterDamage_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCNL_Athena_UnderwaterDamage.GCNL_Athena_UnderwaterDamage_C.OnRemoval
@@ -27,9 +52,12 @@ namespace SDK
 
 void AGCNL_Athena_UnderwaterDamage_C::OnRemoval(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static auto Func = Class->GetFunction("GCNL_Athena_UnderwaterDamage_C", "OnRemoval");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_Athena_UnderwaterDamage_C_OnRemoval_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_Athena_UnderwaterDamage_C", "OnRemoval");
+
+	Params::AGCNL_Athena_UnderwaterDamage_C_OnRemoval_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -55,9 +83,12 @@ void AGCNL_Athena_UnderwaterDamage_C::OnRemoval(class AActor* MyTarget, struct F
 
 void AGCNL_Athena_UnderwaterDamage_C::OnRecurring(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static auto Func = Class->GetFunction("GCNL_Athena_UnderwaterDamage_C", "OnRecurring");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_Athena_UnderwaterDamage_C_OnRecurring_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_Athena_UnderwaterDamage_C", "OnRecurring");
+
+	Params::AGCNL_Athena_UnderwaterDamage_C_OnRecurring_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -81,9 +112,12 @@ void AGCNL_Athena_UnderwaterDamage_C::OnRecurring(class AActor* MyTarget, struct
 
 void AGCNL_Athena_UnderwaterDamage_C::OnLoopingStart(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents)
 {
-	static auto Func = Class->GetFunction("GCNL_Athena_UnderwaterDamage_C", "OnLoopingStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_Athena_UnderwaterDamage_C_OnLoopingStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_Athena_UnderwaterDamage_C", "OnLoopingStart");
+
+	Params::AGCNL_Athena_UnderwaterDamage_C_OnLoopingStart_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -133,9 +167,12 @@ void AGCNL_Athena_UnderwaterDamage_C::OnLoopingStart(class AActor* MyTarget, str
 
 void AGCNL_Athena_UnderwaterDamage_C::ExecuteUbergraph_GCNL_Athena_UnderwaterDamage(int32 EntryPoint, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_MapRangeClamped_ReturnValue, float CallFunc_FClamp_ReturnValue, class AActor* K2Node_Event_MyTarget_2, const struct FGameplayCueParameters& K2Node_Event_Parameters_2, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents_2, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents_2, class UCameraShake* K2Node_Event_BurstCameraShakeInstance_1, class ADecalActor* K2Node_Event_BurstDecalInstance_1, class AActor* K2Node_Event_MyTarget_1, const struct FGameplayCueParameters& K2Node_Event_Parameters_1, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents_1, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents_1, class UCameraShake* K2Node_Event_BurstCameraShakeInstance, class ADecalActor* K2Node_Event_BurstDecalInstance, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_1, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue, class APlayerController* CallFunc_GetLocalViewingPlayerController_ReturnValue, class AEmitterCameraLensEffectBase* CallFunc_SpawnCameraLensEffect_ReturnValue, class AActor* K2Node_Event_MyTarget, const struct FGameplayCueParameters& K2Node_Event_Parameters, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_2, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsLocallyControlled_ReturnValue_1, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCNL_Athena_UnderwaterDamage_C", "ExecuteUbergraph_GCNL_Athena_UnderwaterDamage");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_Athena_UnderwaterDamage_C_ExecuteUbergraph_GCNL_Athena_UnderwaterDamage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_Athena_UnderwaterDamage_C", "ExecuteUbergraph_GCNL_Athena_UnderwaterDamage");
+
+	Params::AGCNL_Athena_UnderwaterDamage_C_ExecuteUbergraph_GCNL_Athena_UnderwaterDamage_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_Add_FloatFloat_ReturnValue = CallFunc_Add_FloatFloat_ReturnValue;
@@ -176,6 +213,4 @@ void AGCNL_Athena_UnderwaterDamage_C::ExecuteUbergraph_GCNL_Athena_UnderwaterDam
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

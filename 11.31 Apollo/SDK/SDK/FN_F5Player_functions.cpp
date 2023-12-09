@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// Class F5Player.F5PlayerSettings
+// (None)
+
+class UClass* UF5PlayerSettings::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("F5PlayerSettings");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// F5PlayerSettings F5Player.Default__F5PlayerSettings
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UF5PlayerSettings* UF5PlayerSettings::GetDefaultObj()
+{
+	static class UF5PlayerSettings* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UF5PlayerSettings*>(UF5PlayerSettings::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

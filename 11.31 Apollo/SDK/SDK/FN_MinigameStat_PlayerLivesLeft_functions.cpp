@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass MinigameStat_PlayerLivesLeft.MinigameStat_PlayerLivesLeft_C
+// (None)
+
+class UClass* UMinigameStat_PlayerLivesLeft_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MinigameStat_PlayerLivesLeft_C");
+
+	return Clss;
+}
+
+
+// MinigameStat_PlayerLivesLeft_C MinigameStat_PlayerLivesLeft.Default__MinigameStat_PlayerLivesLeft_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMinigameStat_PlayerLivesLeft_C* UMinigameStat_PlayerLivesLeft_C::GetDefaultObj()
+{
+	static class UMinigameStat_PlayerLivesLeft_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMinigameStat_PlayerLivesLeft_C*>(UMinigameStat_PlayerLivesLeft_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function MinigameStat_PlayerLivesLeft.MinigameStat_PlayerLivesLeft_C.Compare
@@ -25,9 +50,12 @@ namespace SDK
 
 int32 UMinigameStat_PlayerLivesLeft_C::Compare(int32 FirstScore, int32 SecondScore, int32 CallFunc_Subtract_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameStat_PlayerLivesLeft_C", "Compare");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameStat_PlayerLivesLeft_C_Compare_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameStat_PlayerLivesLeft_C", "Compare");
+
+	Params::UMinigameStat_PlayerLivesLeft_C_Compare_Params Parms{};
 
 	Parms.FirstScore = FirstScore;
 	Parms.SecondScore = SecondScore;
@@ -41,6 +69,4 @@ int32 UMinigameStat_PlayerLivesLeft_C::Compare(int32 FirstScore, int32 SecondSco
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

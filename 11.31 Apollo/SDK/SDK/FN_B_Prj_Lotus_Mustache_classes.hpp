@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -25,7 +22,7 @@ public:
 	class UParticleSystemComponent*              FX_BandageTrail_Ribbon;                            // 0x860(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                        Projectile_Max_Lifetime;                           // 0x868(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bHasExploded_;                                     // 0x86C(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5ACB[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5652[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               Impact_Location;                                   // 0x870(0xC)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                            HitResult;                                         // 0x87C(0x88)(Edit, BlueprintVisible, Net, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	float                                        FX_Linger_Time;                                    // 0x904(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -36,7 +33,7 @@ public:
 	float                                        Tracer_Lifetime;                                   // 0x928(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               SpawnPositionOffset;                               // 0x92C(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         NoTarget;                                          // 0x938(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5ACC[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5653[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FScalableFloat                        ShouldSpawnBandages;                               // 0x940(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class USoundBase*                            SpawnBandageSound;                                 // 0x960(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                            BounceOffWallSound;                                // 0x968(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,11 +41,8 @@ public:
 	class UPhysicalMaterial*                     WaterHitMat;                                       // 0x978(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                            WaterHit;                                          // 0x980(0x88)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_Prj_Lotus_Mustache_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_Prj_Lotus_Mustache_C* GetDefaultObj();
 
 	void OnRep_Impact_Location(bool CallFunc_IsDedicatedServer_ReturnValue);
 	void ReceiveBeginPlay();
@@ -70,6 +64,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

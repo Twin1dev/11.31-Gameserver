@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaMatchmakingPlayLegacy.AthenaMatchmakingPlayLegacy_C
+// (None)
+
+class UClass* UAthenaMatchmakingPlayLegacy_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaMatchmakingPlayLegacy_C");
+
+	return Clss;
+}
+
+
+// AthenaMatchmakingPlayLegacy_C AthenaMatchmakingPlayLegacy.Default__AthenaMatchmakingPlayLegacy_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaMatchmakingPlayLegacy_C* UAthenaMatchmakingPlayLegacy_C::GetDefaultObj()
+{
+	static class UAthenaMatchmakingPlayLegacy_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaMatchmakingPlayLegacy_C*>(UAthenaMatchmakingPlayLegacy_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaMatchmakingPlayLegacy.AthenaMatchmakingPlayLegacy_C.OnLoaded_624287AB42851447B4164286AAD2D464
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAthenaMatchmakingPlayLegacy_C::OnLoaded_624287AB42851447B4164286AAD2D464(class UClass* Loaded)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "OnLoaded_624287AB42851447B4164286AAD2D464");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayLegacy_C_OnLoaded_624287AB42851447B4164286AAD2D464_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "OnLoaded_624287AB42851447B4164286AAD2D464");
+
+	Params::UAthenaMatchmakingPlayLegacy_C_OnLoaded_624287AB42851447B4164286AAD2D464_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -39,12 +67,14 @@ void UAthenaMatchmakingPlayLegacy_C::OnLoaded_624287AB42851447B4164286AAD2D464(c
 
 void UAthenaMatchmakingPlayLegacy_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayLegacy_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void UAthenaMatchmakingPlayLegacy_C::Construct()
 
 void UAthenaMatchmakingPlayLegacy_C::OnAvailablePlaylistsUpdated()
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "OnAvailablePlaylistsUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayLegacy_C_OnAvailablePlaylistsUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "OnAvailablePlaylistsUpdated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -72,9 +104,12 @@ void UAthenaMatchmakingPlayLegacy_C::OnAvailablePlaylistsUpdated()
 
 void UAthenaMatchmakingPlayLegacy_C::OnSetPlayButtonText(class FText& PlayButtonText)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "OnSetPlayButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayLegacy_C_OnSetPlayButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "OnSetPlayButtonText");
+
+	Params::UAthenaMatchmakingPlayLegacy_C_OnSetPlayButtonText_Params Parms{};
 
 	Parms.PlayButtonText = PlayButtonText;
 
@@ -90,9 +125,12 @@ void UAthenaMatchmakingPlayLegacy_C::OnSetPlayButtonText(class FText& PlayButton
 
 void UAthenaMatchmakingPlayLegacy_C::OnSetCancelButtonText(class FText& CancelButtonText)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "OnSetCancelButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayLegacy_C_OnSetCancelButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "OnSetCancelButtonText");
+
+	Params::UAthenaMatchmakingPlayLegacy_C_OnSetCancelButtonText_Params Parms{};
 
 	Parms.CancelButtonText = CancelButtonText;
 
@@ -110,9 +148,12 @@ void UAthenaMatchmakingPlayLegacy_C::OnSetCancelButtonText(class FText& CancelBu
 
 void UAthenaMatchmakingPlayLegacy_C::PlaylistChanged(struct FPlaylistFrontEndData& NewPlaylist, class FText& PlaylistCMSOverrideName, enum class EFortLobbyType LobbyType)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "PlaylistChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayLegacy_C_PlaylistChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "PlaylistChanged");
+
+	Params::UAthenaMatchmakingPlayLegacy_C_PlaylistChanged_Params Parms{};
 
 	Parms.NewPlaylist = NewPlaylist;
 	Parms.PlaylistCMSOverrideName = PlaylistCMSOverrideName;
@@ -130,9 +171,12 @@ void UAthenaMatchmakingPlayLegacy_C::PlaylistChanged(struct FPlaylistFrontEndDat
 
 void UAthenaMatchmakingPlayLegacy_C::SetSquadFillText(bool InCurrentSquadFill)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "SetSquadFillText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayLegacy_C_SetSquadFillText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "SetSquadFillText");
+
+	Params::UAthenaMatchmakingPlayLegacy_C_SetSquadFillText_Params Parms{};
 
 	Parms.InCurrentSquadFill = InCurrentSquadFill;
 
@@ -148,9 +192,12 @@ void UAthenaMatchmakingPlayLegacy_C::SetSquadFillText(bool InCurrentSquadFill)
 
 void UAthenaMatchmakingPlayLegacy_C::OnNewModeViolatorUpdated(bool bShouldShow)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "OnNewModeViolatorUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayLegacy_C_OnNewModeViolatorUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "OnNewModeViolatorUpdated");
+
+	Params::UAthenaMatchmakingPlayLegacy_C_OnNewModeViolatorUpdated_Params Parms{};
 
 	Parms.bShouldShow = bShouldShow;
 
@@ -167,9 +214,12 @@ void UAthenaMatchmakingPlayLegacy_C::OnNewModeViolatorUpdated(bool bShouldShow)
 
 void UAthenaMatchmakingPlayLegacy_C::UpdateCustomViolatorText(class FText& ModeName, class FText& SubText)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "UpdateCustomViolatorText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayLegacy_C_UpdateCustomViolatorText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "UpdateCustomViolatorText");
+
+	Params::UAthenaMatchmakingPlayLegacy_C_UpdateCustomViolatorText_Params Parms{};
 
 	Parms.ModeName = ModeName;
 	Parms.SubText = SubText;
@@ -185,12 +235,14 @@ void UAthenaMatchmakingPlayLegacy_C::UpdateCustomViolatorText(class FText& ModeN
 
 void UAthenaMatchmakingPlayLegacy_C::Animate()
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "Animate");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayLegacy_C_Animate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "Animate");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -203,9 +255,12 @@ void UAthenaMatchmakingPlayLegacy_C::Animate()
 
 void UAthenaMatchmakingPlayLegacy_C::OnMatchmakingFinishedBlueprint(bool bSuccess, class UFortPlaylistAthena* Playlist)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "OnMatchmakingFinishedBlueprint");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayLegacy_C_OnMatchmakingFinishedBlueprint_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "OnMatchmakingFinishedBlueprint");
+
+	Params::UAthenaMatchmakingPlayLegacy_C_OnMatchmakingFinishedBlueprint_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 	Parms.Playlist = Playlist;
@@ -222,9 +277,12 @@ void UAthenaMatchmakingPlayLegacy_C::OnMatchmakingFinishedBlueprint(bool bSucces
 
 void UAthenaMatchmakingPlayLegacy_C::BndEvt__PlayButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "BndEvt__PlayButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayLegacy_C_BndEvt__PlayButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "BndEvt__PlayButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaMatchmakingPlayLegacy_C_BndEvt__PlayButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -276,9 +334,12 @@ void UAthenaMatchmakingPlayLegacy_C::BndEvt__PlayButton_K2Node_ComponentBoundEve
 
 void UAthenaMatchmakingPlayLegacy_C::ExecuteUbergraph_AthenaMatchmakingPlayLegacy(int32 EntryPoint, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess, class FText K2Node_Event_PlayButtonText, class FText K2Node_Event_CancelButtonText, const struct FPlaylistFrontEndData& K2Node_Event_NewPlaylist, class FText K2Node_Event_PlaylistCMSOverrideName, enum class EFortLobbyType K2Node_Event_LobbyType, bool K2Node_Event_InCurrentSquadFill, bool K2Node_Event_bShouldShow, class UAthenaMatchmakingPlayButton_C* K2Node_DynamicCast_AsAthena_Matchmaking_Play_Button, bool K2Node_DynamicCast_bSuccess_1, class UAthenaMatchmakingModeButton_C* K2Node_DynamicCast_AsAthena_Matchmaking_Mode_Button, bool K2Node_DynamicCast_bSuccess_2, class UAthenaMatchmakingModeButton_C* K2Node_DynamicCast_AsAthena_Matchmaking_Mode_Button_1, bool K2Node_DynamicCast_bSuccess_3, class FText K2Node_Event_ModeName, class FText K2Node_Event_SubText, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, bool CallFunc_K2_IsValidTimerHandle_ReturnValue, class UClass* Temp_class_Variable, class UClass* K2Node_ClassDynamicCast_AsUser_Widget, bool K2Node_ClassDynamicCast_bSuccess, bool K2Node_SwitchEnum_CmpSuccess, class UClass* K2Node_CustomEvent_Loaded, enum class EFortMatchmakingViolatorStyle Temp_byte_Variable, class UCMSContext* CallFunc_GetContext_ReturnValue, class UWidget* K2Node_Select_Default, bool CallFunc_IsNewPlaylistInformationAvailable_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool K2Node_Event_bSuccess, class UFortPlaylistAthena* K2Node_Event_Playlist, class UAudioComponent* CallFunc_CreateSound2D_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "ExecuteUbergraph_AthenaMatchmakingPlayLegacy");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayLegacy_C_ExecuteUbergraph_AthenaMatchmakingPlayLegacy_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "ExecuteUbergraph_AthenaMatchmakingPlayLegacy");
+
+	Params::UAthenaMatchmakingPlayLegacy_C_ExecuteUbergraph_AthenaMatchmakingPlayLegacy_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_DynamicCast_AsIcon_Text_Button = K2Node_DynamicCast_AsIcon_Text_Button;
@@ -332,9 +393,12 @@ void UAthenaMatchmakingPlayLegacy_C::ExecuteUbergraph_AthenaMatchmakingPlayLegac
 
 void UAthenaMatchmakingPlayLegacy_C::OnPlaylistChanged__DelegateSignature(const struct FPlaylistFrontEndData& Playlist_Data, class FText Playlist_CMS_Override, enum class EFortLobbyType Lobby_Type)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "OnPlaylistChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayLegacy_C_OnPlaylistChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "OnPlaylistChanged__DelegateSignature");
+
+	Params::UAthenaMatchmakingPlayLegacy_C_OnPlaylistChanged__DelegateSignature_Params Parms{};
 
 	Parms.Playlist_Data = Playlist_Data;
 	Parms.Playlist_CMS_Override = Playlist_CMS_Override;
@@ -351,17 +415,17 @@ void UAthenaMatchmakingPlayLegacy_C::OnPlaylistChanged__DelegateSignature(const 
 
 void UAthenaMatchmakingPlayLegacy_C::PlaylistsUpdated__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "PlaylistsUpdated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayLegacy_C_PlaylistsUpdated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayLegacy_C", "PlaylistsUpdated__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

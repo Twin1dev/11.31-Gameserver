@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GA_Creative_Teleport.GA_Creative_Teleport_C
+// (None)
+
+class UClass* UGA_Creative_Teleport_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Creative_Teleport_C");
+
+	return Clss;
+}
+
+
+// GA_Creative_Teleport_C GA_Creative_Teleport.Default__GA_Creative_Teleport_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Creative_Teleport_C* UGA_Creative_Teleport_C::GetDefaultObj()
+{
+	static class UGA_Creative_Teleport_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Creative_Teleport_C*>(UGA_Creative_Teleport_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GA_Creative_Teleport.GA_Creative_Teleport_C.K2_ShouldAbilityRespondToEvent
@@ -26,9 +51,12 @@ namespace SDK
 
 bool UGA_Creative_Teleport_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GA_Creative_Teleport_C", "K2_ShouldAbilityRespondToEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_Teleport_C_K2_ShouldAbilityRespondToEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_Teleport_C", "K2_ShouldAbilityRespondToEvent");
+
+	Params::UGA_Creative_Teleport_C_K2_ShouldAbilityRespondToEvent_Params Parms{};
 
 	Parms.ActorInfo = ActorInfo;
 	Parms.Payload = Payload;
@@ -49,9 +77,12 @@ bool UGA_Creative_Teleport_C::K2_ShouldAbilityRespondToEvent(const struct FGamep
 
 void UGA_Creative_Teleport_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GA_Creative_Teleport_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_Teleport_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_Teleport_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGA_Creative_Teleport_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -95,15 +126,18 @@ void UGA_Creative_Teleport_C::K2_ActivateAbilityFromEvent(struct FGameplayEventD
 // bool                               CallFunc_IsValid_ReturnValue_4                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_GetTeleportedPawnPitch_OutPitch                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FRotator                    CallFunc_MakeRotator_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingSpec_ReturnValue                            ()
-// struct FGameplayEffectSpecHandle   CallFunc_AssignTagSetByCallerMagnitude_ReturnValue               ()
+// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingSpec_ReturnValue                            (None)
+// struct FGameplayEffectSpecHandle   CallFunc_AssignTagSetByCallerMagnitude_ReturnValue               (None)
 // struct FActiveGameplayEffectHandle CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue            (NoDestructor, HasGetValueTypeHash)
 
 void UGA_Creative_Teleport_C::ExecuteUbergraph_GA_Creative_Teleport(int32 EntryPoint, const struct FGameplayEventData& K2Node_Event_EventData, class ABP_Creative_Device_Teleporter_C* K2Node_DynamicCast_AsBP_Creative_Device_Teleporter, bool K2Node_DynamicCast_bSuccess, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerControllerAthena* K2Node_DynamicCast_AsFort_Player_Controller_Athena, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsFlying_ReturnValue, bool CallFunc_IsMovingOnGround_ReturnValue, const struct FRotator& CallFunc_GetDesiredRotation_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, bool CallFunc_K2_CommitAbility_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, class ABP_Creative_Device_Teleporter_C* K2Node_DynamicCast_AsBP_Creative_Device_Teleporter_1, bool K2Node_DynamicCast_bSuccess_3, float CallFunc_GetTeleportedPawnYaw_OutYaw, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_TeleportPlayerPawn_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_4, float CallFunc_GetTeleportedPawnPitch_OutPitch, const struct FRotator& CallFunc_MakeRotator_ReturnValue_1, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingSpec_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_AssignTagSetByCallerMagnitude_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Creative_Teleport_C", "ExecuteUbergraph_GA_Creative_Teleport");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_Teleport_C", "ExecuteUbergraph_GA_Creative_Teleport");
+
+	Params::UGA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_EventData = K2Node_Event_EventData;
@@ -147,6 +181,4 @@ void UGA_Creative_Teleport_C::ExecuteUbergraph_GA_Creative_Teleport(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

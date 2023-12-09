@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass MainTabTutorialBangWrapper.MainTabTutorialBangWrapper_C
+// (None)
+
+class UClass* UMainTabTutorialBangWrapper_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MainTabTutorialBangWrapper_C");
+
+	return Clss;
+}
+
+
+// MainTabTutorialBangWrapper_C MainTabTutorialBangWrapper.Default__MainTabTutorialBangWrapper_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMainTabTutorialBangWrapper_C* UMainTabTutorialBangWrapper_C::GetDefaultObj()
+{
+	static class UMainTabTutorialBangWrapper_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMainTabTutorialBangWrapper_C*>(UMainTabTutorialBangWrapper_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function MainTabTutorialBangWrapper.MainTabTutorialBangWrapper_C.SetShouldSuppressBang
@@ -26,9 +51,12 @@ namespace SDK
 
 void UMainTabTutorialBangWrapper_C::SetShouldSuppressBang(bool ShouldSuppressBang, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "SetShouldSuppressBang");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialBangWrapper_C_SetShouldSuppressBang_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "SetShouldSuppressBang");
+
+	Params::UMainTabTutorialBangWrapper_C_SetShouldSuppressBang_Params Parms{};
 
 	Parms.ShouldSuppressBang = ShouldSuppressBang;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -49,9 +77,12 @@ void UMainTabTutorialBangWrapper_C::SetShouldSuppressBang(bool ShouldSuppressBan
 
 void UMainTabTutorialBangWrapper_C::SetUIFeatureRevealData(enum class EFortUIFeature UIFeature, class FText RevealText)
 {
-	static auto Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "SetUIFeatureRevealData");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialBangWrapper_C_SetUIFeatureRevealData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "SetUIFeatureRevealData");
+
+	Params::UMainTabTutorialBangWrapper_C_SetUIFeatureRevealData_Params Parms{};
 
 	Parms.UIFeature = UIFeature;
 	Parms.RevealText = RevealText;
@@ -68,9 +99,12 @@ void UMainTabTutorialBangWrapper_C::SetUIFeatureRevealData(enum class EFortUIFea
 
 void UMainTabTutorialBangWrapper_C::Adjust_Bang_Image_Translation(const struct FVector2D& Translation)
 {
-	static auto Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "Adjust Bang Image Translation");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialBangWrapper_C_Adjust_Bang_Image_Translation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "Adjust Bang Image Translation");
+
+	Params::UMainTabTutorialBangWrapper_C_Adjust_Bang_Image_Translation_Params Parms{};
 
 	Parms.Translation = Translation;
 
@@ -96,9 +130,12 @@ void UMainTabTutorialBangWrapper_C::Adjust_Bang_Image_Translation(const struct F
 
 void UMainTabTutorialBangWrapper_C::Update_Bang_Icon_Version(int32 InCount, int32 Temp_int_Variable, int32 Temp_int_Variable_1, bool Temp_bool_Variable, int32 Temp_int_Variable_2, int32 Temp_int_Variable_3, bool Temp_bool_Variable_1, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int32 K2Node_Select_Default, int32 K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "Update Bang Icon Version");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialBangWrapper_C_Update_Bang_Icon_Version_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "Update Bang Icon Version");
+
+	Params::UMainTabTutorialBangWrapper_C_Update_Bang_Icon_Version_Params Parms{};
 
 	Parms.InCount = InCount;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -124,9 +161,12 @@ void UMainTabTutorialBangWrapper_C::Update_Bang_Icon_Version(int32 InCount, int3
 
 void UMainTabTutorialBangWrapper_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 {
-	static auto Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "SetTutorialBorderStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialBangWrapper_C_SetTutorialBorderStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "SetTutorialBorderStyle");
+
+	Params::UMainTabTutorialBangWrapper_C_SetTutorialBorderStyle_Params Parms{};
 
 	Parms.BorderStyle = BorderStyle;
 
@@ -143,9 +183,12 @@ void UMainTabTutorialBangWrapper_C::SetTutorialBorderStyle(class UClass* BorderS
 
 void UMainTabTutorialBangWrapper_C::OnBangStateChanged(bool bEnabled, int32 Count)
 {
-	static auto Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "OnBangStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialBangWrapper_C_OnBangStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "OnBangStateChanged");
+
+	Params::UMainTabTutorialBangWrapper_C_OnBangStateChanged_Params Parms{};
 
 	Parms.bEnabled = bEnabled;
 	Parms.Count = Count;
@@ -161,12 +204,14 @@ void UMainTabTutorialBangWrapper_C::OnBangStateChanged(bool bEnabled, int32 Coun
 
 void UMainTabTutorialBangWrapper_C::OnStopCallout()
 {
-	static auto Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "OnStopCallout");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialBangWrapper_C_OnStopCallout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "OnStopCallout");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -179,9 +224,12 @@ void UMainTabTutorialBangWrapper_C::OnStopCallout()
 
 void UMainTabTutorialBangWrapper_C::OnStartCallout(class FName TutorialObjectiveName, enum class ETutorialType TutorialType)
 {
-	static auto Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "OnStartCallout");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialBangWrapper_C_OnStartCallout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "OnStartCallout");
+
+	Params::UMainTabTutorialBangWrapper_C_OnStartCallout_Params Parms{};
 
 	Parms.TutorialObjectiveName = TutorialObjectiveName;
 	Parms.TutorialType = TutorialType;
@@ -198,9 +246,12 @@ void UMainTabTutorialBangWrapper_C::OnStartCallout(class FName TutorialObjective
 
 void UMainTabTutorialBangWrapper_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialBangWrapper_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "PreConstruct");
+
+	Params::UMainTabTutorialBangWrapper_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -215,12 +266,14 @@ void UMainTabTutorialBangWrapper_C::PreConstruct(bool IsDesignTime)
 
 void UMainTabTutorialBangWrapper_C::Tab_Reveal_Message_Closed()
 {
-	static auto Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "Tab Reveal Message Closed");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialBangWrapper_C_Tab_Reveal_Message_Closed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "Tab Reveal Message Closed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -235,7 +288,7 @@ void UMainTabTutorialBangWrapper_C::Tab_Reveal_Message_Closed()
 // class FName                        K2Node_Event_TutorialObjectiveName                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ETutorialType           K2Node_Event_TutorialType                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortUIFeatureState     CallFunc_GetFeatureState_OutFeatureState                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -252,9 +305,12 @@ void UMainTabTutorialBangWrapper_C::Tab_Reveal_Message_Closed()
 
 void UMainTabTutorialBangWrapper_C::ExecuteUbergraph_MainTabTutorialBangWrapper(int32 EntryPoint, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool K2Node_Event_bEnabled, int32 K2Node_Event_Count, class FName K2Node_Event_TutorialObjectiveName, enum class ETutorialType K2Node_Event_TutorialType, bool K2Node_Event_IsDesignTime, class FText CallFunc_Conv_IntToText_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable, enum class EFortUIFeatureState CallFunc_GetFeatureState_OutFeatureState, enum class EFortUIFeatureStateReason CallFunc_GetFeatureState_OutReason, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_BooleanAND_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UTabRevealMeassage_C* CallFunc_Create_ReturnValue, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "ExecuteUbergraph_MainTabTutorialBangWrapper");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialBangWrapper_C_ExecuteUbergraph_MainTabTutorialBangWrapper_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "ExecuteUbergraph_MainTabTutorialBangWrapper");
+
+	Params::UMainTabTutorialBangWrapper_C_ExecuteUbergraph_MainTabTutorialBangWrapper_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -289,12 +345,14 @@ void UMainTabTutorialBangWrapper_C::ExecuteUbergraph_MainTabTutorialBangWrapper(
 
 void UMainTabTutorialBangWrapper_C::StopTabCallout__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "StopTabCallout__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialBangWrapper_C_StopTabCallout__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "StopTabCallout__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -305,12 +363,14 @@ void UMainTabTutorialBangWrapper_C::StopTabCallout__DelegateSignature()
 
 void UMainTabTutorialBangWrapper_C::TabDialogClosed__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "TabDialogClosed__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialBangWrapper_C_TabDialogClosed__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "TabDialogClosed__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -321,17 +381,17 @@ void UMainTabTutorialBangWrapper_C::TabDialogClosed__DelegateSignature()
 
 void UMainTabTutorialBangWrapper_C::TabAdded__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "TabAdded__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialBangWrapper_C_TabAdded__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "TabAdded__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

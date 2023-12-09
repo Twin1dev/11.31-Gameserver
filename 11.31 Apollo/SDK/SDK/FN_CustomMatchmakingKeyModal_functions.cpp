@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass CustomMatchmakingKeyModal.CustomMatchmakingKeyModal_C
+// (None)
+
+class UClass* UCustomMatchmakingKeyModal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CustomMatchmakingKeyModal_C");
+
+	return Clss;
+}
+
+
+// CustomMatchmakingKeyModal_C CustomMatchmakingKeyModal.Default__CustomMatchmakingKeyModal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCustomMatchmakingKeyModal_C* UCustomMatchmakingKeyModal_C::GetDefaultObj()
+{
+	static class UCustomMatchmakingKeyModal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCustomMatchmakingKeyModal_C*>(UCustomMatchmakingKeyModal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function CustomMatchmakingKeyModal.CustomMatchmakingKeyModal_C.BP_OnActivated
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UCustomMatchmakingKeyModal_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("CustomMatchmakingKeyModal_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UCustomMatchmakingKeyModal_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CustomMatchmakingKeyModal_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UCustomMatchmakingKeyModal_C::BP_OnActivated()
 
 void UCustomMatchmakingKeyModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("CustomMatchmakingKeyModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCustomMatchmakingKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CustomMatchmakingKeyModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
+
+	Params::UCustomMatchmakingKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -56,9 +86,12 @@ void UCustomMatchmakingKeyModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEven
 
 void UCustomMatchmakingKeyModal_C::BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("CustomMatchmakingKeyModal_C", "BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCustomMatchmakingKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CustomMatchmakingKeyModal_C", "BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature");
+
+	Params::UCustomMatchmakingKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -76,15 +109,18 @@ void UCustomMatchmakingKeyModal_C::BndEvt__AcceptButton_K2Node_ComponentBoundEve
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortMatchmakingContext*     CallFunc_GetContext_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetCustomMatchmakingKey_ReturnValue                     (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetText_ReturnValue                                     ()
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_GetText_ReturnValue                                     (None)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 
 void UCustomMatchmakingKeyModal_C::ExecuteUbergraph_CustomMatchmakingKeyModal(int32 EntryPoint, class UFortMatchmakingContext* CallFunc_GetContext_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UFortMatchmakingContext* CallFunc_GetContext_ReturnValue_1, const class FString& CallFunc_GetCustomMatchmakingKey_ReturnValue, class FText CallFunc_GetText_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue)
 {
-	static auto Func = Class->GetFunction("CustomMatchmakingKeyModal_C", "ExecuteUbergraph_CustomMatchmakingKeyModal");
+	static class UFunction* Func = nullptr;
 
-	Params::UCustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CustomMatchmakingKeyModal_C", "ExecuteUbergraph_CustomMatchmakingKeyModal");
+
+	Params::UCustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -102,6 +138,4 @@ void UCustomMatchmakingKeyModal_C::ExecuteUbergraph_CustomMatchmakingKeyModal(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

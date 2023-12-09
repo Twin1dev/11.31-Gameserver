@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ButtonStyle-GamepadBindings.ButtonStyle-GamepadBindings_C
+// (None)
+
+class UClass* UButtonStyleMinusGamepadBindings_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ButtonStyle-GamepadBindings_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ButtonStyle-GamepadBindings_C ButtonStyle-GamepadBindings.Default__ButtonStyle-GamepadBindings_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UButtonStyleMinusGamepadBindings_C* UButtonStyleMinusGamepadBindings_C::GetDefaultObj()
+{
+	static class UButtonStyleMinusGamepadBindings_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UButtonStyleMinusGamepadBindings_C*>(UButtonStyleMinusGamepadBindings_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

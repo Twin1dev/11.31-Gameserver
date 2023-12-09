@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -23,7 +20,7 @@ public:
 	class USoundBase*                            Sniper_Rifle_SurfaceImpactSound;                   // 0x958(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                            Sniper_Rifle_PlayerImpactSound;                    // 0x960(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               DecalSize;                                         // 0x968(0xC)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_61FF[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6A99[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FScalableFloat                        ProjectileGravityScale;                            // 0x978(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UParticleSystemComponent*              P_Sniper_Bullet_Trail;                             // 0x998(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                       WaterImpactFX;                                     // 0x9A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -37,18 +34,15 @@ public:
 	bool                                         bHasPlayedWaterSound;                              // 0xA60(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         bHitPawn;                                          // 0xA61(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         bStopped;                                          // 0xA62(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6200[0x1];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6A9A[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               ImpactLocation;                                    // 0xA64(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               ImpactNormal;                                      // 0xA70(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        BeginTime;                                         // 0xA7C(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPrimitiveComponent*                   NewVar_0;                                          // 0xA80(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                            Hit;                                               // 0xA88(0x88)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_Prj_Bullet_Galileo_Bun_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_Prj_Bullet_Galileo_Bun_C* GetDefaultObj();
 
 	void PlayImpactSFX(bool IsPlayer, bool IsWater_, bool Temp_bool_Variable, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class USoundBase* K2Node_Select_Default);
 	void UserConstructionScript(float CallFunc_GetValueAtLevel_ReturnValue);
@@ -64,6 +58,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

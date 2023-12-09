@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass EventScoreBigStat.EventScoreBigStat_C
+// (None)
+
+class UClass* UEventScoreBigStat_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EventScoreBigStat_C");
+
+	return Clss;
+}
+
+
+// EventScoreBigStat_C EventScoreBigStat.Default__EventScoreBigStat_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UEventScoreBigStat_C* UEventScoreBigStat_C::GetDefaultObj()
+{
+	static class UEventScoreBigStat_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEventScoreBigStat_C*>(UEventScoreBigStat_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function EventScoreBigStat.EventScoreBigStat_C.SetData
@@ -24,12 +49,12 @@ namespace SDK
 // class FText                        FormatterText                                                    (BlueprintVisible, BlueprintReadOnly, Parm)
 // struct FFortTournamentDisplayInfo  Tournament_Display_Info                                          (BlueprintVisible, BlueprintReadOnly, Parm)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            ()
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            (None)
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -37,9 +62,12 @@ namespace SDK
 
 void UEventScoreBigStat_C::SetData(class FText Label, int32 Value, int32 ValueContext, class FText FormatterText, const struct FFortTournamentDisplayInfo& Tournament_Display_Info, bool CallFunc_Greater_IntInt_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Conv_IntToText_ReturnValue_1, class FText CallFunc_Format_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("EventScoreBigStat_C", "SetData");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventScoreBigStat_C_SetData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventScoreBigStat_C", "SetData");
+
+	Params::UEventScoreBigStat_C_SetData_Params Parms{};
 
 	Parms.Label = Label;
 	Parms.Value = Value;
@@ -64,6 +92,4 @@ void UEventScoreBigStat_C::SetData(class FText Label, int32 Value, int32 ValueCo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass PerkDivider.PerkDivider_C
+// (None)
+
+class UClass* UPerkDivider_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PerkDivider_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// PerkDivider_C PerkDivider.Default__PerkDivider_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPerkDivider_C* UPerkDivider_C::GetDefaultObj()
+{
+	static class UPerkDivider_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPerkDivider_C*>(UPerkDivider_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass BattlePassViewRewardsScreen.BattlePassViewRewardsScreen_C
+// (None)
+
+class UClass* UBattlePassViewRewardsScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BattlePassViewRewardsScreen_C");
+
+	return Clss;
+}
+
+
+// BattlePassViewRewardsScreen_C BattlePassViewRewardsScreen.Default__BattlePassViewRewardsScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBattlePassViewRewardsScreen_C* UBattlePassViewRewardsScreen_C::GetDefaultObj()
+{
+	static class UBattlePassViewRewardsScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBattlePassViewRewardsScreen_C*>(UBattlePassViewRewardsScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BattlePassViewRewardsScreen.BattlePassViewRewardsScreen_C.HandleMobileClosed
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UBattlePassViewRewardsScreen_C::HandleMobileClosed(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "HandleMobileClosed");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassViewRewardsScreen_C_HandleMobileClosed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "HandleMobileClosed");
+
+	Params::UBattlePassViewRewardsScreen_C_HandleMobileClosed_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -42,9 +70,12 @@ void UBattlePassViewRewardsScreen_C::HandleMobileClosed(bool* PassThrough)
 
 void UBattlePassViewRewardsScreen_C::CloseScreen(bool* bPassThrough)
 {
-	static auto Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "CloseScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassViewRewardsScreen_C_CloseScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "CloseScreen");
+
+	Params::UBattlePassViewRewardsScreen_C_CloseScreen_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -62,9 +93,12 @@ void UBattlePassViewRewardsScreen_C::CloseScreen(bool* bPassThrough)
 
 class UWidget* UBattlePassViewRewardsScreen_C::GetWidgetForFramingViewedItem()
 {
-	static auto Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "GetWidgetForFramingViewedItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassViewRewardsScreen_C_GetWidgetForFramingViewedItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "GetWidgetForFramingViewedItem");
+
+	Params::UBattlePassViewRewardsScreen_C_GetWidgetForFramingViewedItem_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -81,9 +115,12 @@ class UWidget* UBattlePassViewRewardsScreen_C::GetWidgetForFramingViewedItem()
 
 void UBattlePassViewRewardsScreen_C::OnItemViewed(class UBattlePassViewRewardData* ItemDisplayed)
 {
-	static auto Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "OnItemViewed");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassViewRewardsScreen_C_OnItemViewed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "OnItemViewed");
+
+	Params::UBattlePassViewRewardsScreen_C_OnItemViewed_Params Parms{};
 
 	Parms.ItemDisplayed = ItemDisplayed;
 
@@ -98,12 +135,14 @@ void UBattlePassViewRewardsScreen_C::OnItemViewed(class UBattlePassViewRewardDat
 
 void UBattlePassViewRewardsScreen_C::Construct()
 {
-	static auto Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassViewRewardsScreen_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -115,9 +154,12 @@ void UBattlePassViewRewardsScreen_C::Construct()
 
 void UBattlePassViewRewardsScreen_C::BndEvt__Button_CycleSort_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "BndEvt__Button_CycleSort_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassViewRewardsScreen_C_BndEvt__Button_CycleSort_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "BndEvt__Button_CycleSort_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UBattlePassViewRewardsScreen_C_BndEvt__Button_CycleSort_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -132,12 +174,14 @@ void UBattlePassViewRewardsScreen_C::BndEvt__Button_CycleSort_K2Node_ComponentBo
 
 void UBattlePassViewRewardsScreen_C::OnInitialized()
 {
-	static auto Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "OnInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassViewRewardsScreen_C_OnInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "OnInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -149,9 +193,12 @@ void UBattlePassViewRewardsScreen_C::OnInitialized()
 
 void UBattlePassViewRewardsScreen_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassViewRewardsScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UBattlePassViewRewardsScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -186,9 +233,12 @@ void UBattlePassViewRewardsScreen_C::BndEvt__MobileCloseButton_K2Node_ComponentB
 
 void UBattlePassViewRewardsScreen_C::ExecuteUbergraph_BattlePassViewRewardsScreen(int32 EntryPoint, bool CallFunc_HandleMobileClosed_PassThrough, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UBattlePassViewRewardData* K2Node_Event_ItemDisplayed, bool K2Node_SwitchEnum_CmpSuccess, const struct FDataTableRowHandle& K2Node_MakeStruct_DataTableRowHandle, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UAthenaCosmeticItemDefinition* K2Node_DynamicCast_AsAthena_Cosmetic_Item_Definition, bool K2Node_DynamicCast_bSuccess, bool Temp_bool_Variable, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool CallFunc_IsMobileGame_ReturnValue, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, int32 CallFunc_GetCurrentSeasonNumber_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button)
 {
-	static auto Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "ExecuteUbergraph_BattlePassViewRewardsScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassViewRewardsScreen_C", "ExecuteUbergraph_BattlePassViewRewardsScreen");
+
+	Params::UBattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_HandleMobileClosed_PassThrough = CallFunc_HandleMobileClosed_PassThrough;
@@ -217,6 +267,4 @@ void UBattlePassViewRewardsScreen_C::ExecuteUbergraph_BattlePassViewRewardsScree
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

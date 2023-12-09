@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -20,11 +17,8 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xA30(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class AFortPlayerPawn*                       PlayerPawn;                                        // 0xA38(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GA_DefaultPlayer_InteractSearch_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGA_DefaultPlayer_InteractSearch_C* GetDefaultObj();
 
 	void EndInteractSearch(bool CallFunc_IsValid_ReturnValue);
 	void StartInteractSearch(bool CallFunc_IsValid_ReturnValue);
@@ -38,6 +32,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

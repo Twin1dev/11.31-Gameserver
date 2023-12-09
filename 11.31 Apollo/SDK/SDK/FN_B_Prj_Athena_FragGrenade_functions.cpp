@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_Prj_Athena_FragGrenade.B_Prj_Athena_FragGrenade_C
+// (Actor)
+
+class UClass* AB_Prj_Athena_FragGrenade_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Prj_Athena_FragGrenade_C");
+
+	return Clss;
+}
+
+
+// B_Prj_Athena_FragGrenade_C B_Prj_Athena_FragGrenade.Default__B_Prj_Athena_FragGrenade_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Prj_Athena_FragGrenade_C* AB_Prj_Athena_FragGrenade_C::GetDefaultObj()
+{
+	static class AB_Prj_Athena_FragGrenade_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Prj_Athena_FragGrenade_C*>(AB_Prj_Athena_FragGrenade_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_Prj_Athena_FragGrenade.B_Prj_Athena_FragGrenade_C.PreExploWarning__FinishedFunc
 // (BlueprintEvent)
 // Parameters:
 
 void AB_Prj_Athena_FragGrenade_C::PreExploWarning__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "PreExploWarning__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_FragGrenade_C_PreExploWarning__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "PreExploWarning__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AB_Prj_Athena_FragGrenade_C::PreExploWarning__FinishedFunc()
 
 void AB_Prj_Athena_FragGrenade_C::PreExploWarning__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "PreExploWarning__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_FragGrenade_C_PreExploWarning__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "PreExploWarning__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void AB_Prj_Athena_FragGrenade_C::PreExploWarning__UpdateFunc()
 
 void AB_Prj_Athena_FragGrenade_C::FuseEnded()
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "FuseEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_FragGrenade_C_FuseEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "FuseEnded");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -71,9 +102,12 @@ void AB_Prj_Athena_FragGrenade_C::FuseEnded()
 
 void AB_Prj_Athena_FragGrenade_C::OnExploded(TArray<class AActor*>& HitActors, TArray<struct FHitResult>& HitResults)
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "OnExploded");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_FragGrenade_C_OnExploded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "OnExploded");
+
+	Params::AB_Prj_Athena_FragGrenade_C_OnExploded_Params Parms{};
 
 	Parms.HitActors = HitActors;
 	Parms.HitResults = HitResults;
@@ -90,9 +124,12 @@ void AB_Prj_Athena_FragGrenade_C::OnExploded(TArray<class AActor*>& HitActors, T
 
 void AB_Prj_Athena_FragGrenade_C::OnBounce(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "OnBounce");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_FragGrenade_C_OnBounce_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "OnBounce");
+
+	Params::AB_Prj_Athena_FragGrenade_C_OnBounce_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -107,12 +144,14 @@ void AB_Prj_Athena_FragGrenade_C::OnBounce(struct FHitResult& Hit)
 
 void AB_Prj_Athena_FragGrenade_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_FragGrenade_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -123,12 +162,14 @@ void AB_Prj_Athena_FragGrenade_C::ReceiveBeginPlay()
 
 void AB_Prj_Athena_FragGrenade_C::Pre_Explo_Audio_Tell()
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "Pre Explo Audio Tell");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_FragGrenade_C_Pre_Explo_Audio_Tell_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "Pre Explo Audio Tell");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -172,9 +213,12 @@ void AB_Prj_Athena_FragGrenade_C::Pre_Explo_Audio_Tell()
 
 void AB_Prj_Athena_FragGrenade_C::ExecuteUbergraph_B_Prj_Athena_FragGrenade(int32 EntryPoint, class AController* CallFunc_GetInstigatorController_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult, class APlayerController* CallFunc_GetPlayerController_ReturnValue, bool CallFunc_OnSameTeam_ReturnValue, const struct FVector& CallFunc_Conv_FloatToVector_ReturnValue, TArray<class AActor*>& K2Node_Event_HitActors, TArray<struct FHitResult>& K2Node_Event_HitResults, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FHitResult& K2Node_Event_Hit, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, bool CallFunc_IsValid_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, float CallFunc_Divide_FloatFloat_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "ExecuteUbergraph_B_Prj_Athena_FragGrenade");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_FragGrenade_C", "ExecuteUbergraph_B_Prj_Athena_FragGrenade");
+
+	Params::AB_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetInstigatorController_ReturnValue = CallFunc_GetInstigatorController_ReturnValue;
@@ -216,6 +260,4 @@ void AB_Prj_Athena_FragGrenade_C::ExecuteUbergraph_B_Prj_Athena_FragGrenade(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

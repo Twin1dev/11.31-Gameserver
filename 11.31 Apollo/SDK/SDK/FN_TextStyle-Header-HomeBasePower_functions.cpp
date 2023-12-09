@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TextStyle-Header-HomeBasePower.TextStyle-Header-HomeBasePower_C
+// (None)
+
+class UClass* UTextStyleMinusHeaderMinusHomeBasePower_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextStyle-Header-HomeBasePower_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// TextStyle-Header-HomeBasePower_C TextStyle-Header-HomeBasePower.Default__TextStyle-Header-HomeBasePower_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTextStyleMinusHeaderMinusHomeBasePower_C* UTextStyleMinusHeaderMinusHomeBasePower_C::GetDefaultObj()
+{
+	static class UTextStyleMinusHeaderMinusHomeBasePower_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextStyleMinusHeaderMinusHomeBasePower_C*>(UTextStyleMinusHeaderMinusHomeBasePower_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

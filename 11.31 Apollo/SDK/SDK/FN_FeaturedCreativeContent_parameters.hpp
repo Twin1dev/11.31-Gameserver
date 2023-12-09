@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -22,11 +19,11 @@ struct UFeaturedCreativeContent_C_SetFeaturedContentDetails_Params
 {
 public:
 	int32                                        Index;                                             // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63F0[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_29BE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCreativeAdData                       CurrentAd;                                         // 0x8(0x68)(Edit, BlueprintVisible)
-	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x70(0x18)()
-	class FText                                  CallFunc_Conv_StringToText_ReturnValue_1;          // 0x88(0x18)()
-	class FText                                  CallFunc_Conv_StringToText_ReturnValue_2;          // 0xA0(0x18)()
+	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x70(0x18)(None)
+	class FText                                  CallFunc_Conv_StringToText_ReturnValue_1;          // 0x88(0x18)(None)
+	class FText                                  CallFunc_Conv_StringToText_ReturnValue_2;          // 0xA0(0x18)(None)
 	bool                                         CallFunc_Array_IsValidIndex_ReturnValue;           // 0xB8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
@@ -53,7 +50,7 @@ struct UFeaturedCreativeContent_C_ExecuteUbergraph_FeaturedCreativeContent_Param
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_63F1[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_29C0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        K2Node_Event_MediaURLs;                            // 0x8(0x10)(ConstParm, ZeroConstructor, ReferenceParm)
 	TArray<struct FCreativeAdData>               K2Node_Event_AdMetadata;                           // 0x18(0x10)(ConstParm, ZeroConstructor, ReferenceParm)
 	int32                                        K2Node_ComponentBoundEvent_CurrentPageIndex;       // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -62,6 +59,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

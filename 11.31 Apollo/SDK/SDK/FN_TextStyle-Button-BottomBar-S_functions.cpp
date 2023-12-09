@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TextStyle-Button-BottomBar-S.TextStyle-Button-BottomBar-S_C
+// (None)
+
+class UClass* UTextStyleMinusButtonMinusBottomBarMinusS_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextStyle-Button-BottomBar-S_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// TextStyle-Button-BottomBar-S_C TextStyle-Button-BottomBar-S.Default__TextStyle-Button-BottomBar-S_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTextStyleMinusButtonMinusBottomBarMinusS_C* UTextStyleMinusButtonMinusBottomBarMinusS_C::GetDefaultObj()
+{
+	static class UTextStyleMinusButtonMinusBottomBarMinusS_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextStyleMinusButtonMinusBottomBarMinusS_C*>(UTextStyleMinusButtonMinusBottomBarMinusS_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

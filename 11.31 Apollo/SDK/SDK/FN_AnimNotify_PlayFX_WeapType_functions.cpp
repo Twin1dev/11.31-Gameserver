@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass AnimNotify_PlayFX_WeapType.AnimNotify_PlayFX_WeapType_C
+// (None)
+
+class UClass* UAnimNotify_PlayFX_WeapType_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AnimNotify_PlayFX_WeapType_C");
+
+	return Clss;
+}
+
+
+// AnimNotify_PlayFX_WeapType_C AnimNotify_PlayFX_WeapType.Default__AnimNotify_PlayFX_WeapType_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAnimNotify_PlayFX_WeapType_C* UAnimNotify_PlayFX_WeapType_C::GetDefaultObj()
+{
+	static class UAnimNotify_PlayFX_WeapType_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAnimNotify_PlayFX_WeapType_C*>(UAnimNotify_PlayFX_WeapType_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AnimNotify_PlayFX_WeapType.AnimNotify_PlayFX_WeapType_C.Received_Notify
@@ -57,9 +82,12 @@ namespace SDK
 
 bool UAnimNotify_PlayFX_WeapType_C::Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, int32 CallFunc_GetVisualEffectQuality_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, bool K2Node_SwitchInteger_CmpSuccess, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_1, class AActor* CallFunc_GetOwner_ReturnValue, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, class AB_Melee_Generic_C* K2Node_DynamicCast_AsB_Melee_Generic, bool K2Node_DynamicCast_bSuccess_1, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, const struct FTransform& CallFunc_GetTransform_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, class FName CallFunc_Conv_StringToName_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AnimNotify_PlayFX_WeapType_C", "Received_Notify");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimNotify_PlayFX_WeapType_C_Received_Notify_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimNotify_PlayFX_WeapType_C", "Received_Notify");
+
+	Params::UAnimNotify_PlayFX_WeapType_C_Received_Notify_Params Parms{};
 
 	Parms.MeshComp = MeshComp;
 	Parms.Animation = Animation;
@@ -105,6 +133,4 @@ bool UAnimNotify_PlayFX_WeapType_C::Received_Notify(class USkeletalMeshComponent
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

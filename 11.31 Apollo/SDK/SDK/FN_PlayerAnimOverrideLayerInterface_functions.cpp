@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass PlayerAnimOverrideLayerInterface.PlayerAnimOverrideLayerInterface_C
+// (None)
+
+class UClass* IPlayerAnimOverrideLayerInterface_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerAnimOverrideLayerInterface_C");
+
+	return Clss;
+}
+
+
+// PlayerAnimOverrideLayerInterface_C PlayerAnimOverrideLayerInterface.Default__PlayerAnimOverrideLayerInterface_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class IPlayerAnimOverrideLayerInterface_C* IPlayerAnimOverrideLayerInterface_C::GetDefaultObj()
+{
+	static class IPlayerAnimOverrideLayerInterface_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<IPlayerAnimOverrideLayerInterface_C*>(IPlayerAnimOverrideLayerInterface_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PlayerAnimOverrideLayerInterface.PlayerAnimOverrideLayerInterface_C.FullBodyOverride
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,21 +48,22 @@ namespace SDK
 
 void IPlayerAnimOverrideLayerInterface_C::FullBodyOverride(const struct FPoseLink& PassThroughFullBodyPose, struct FPoseLink* FullBodyOverride)
 {
-	static auto Func = Class->GetFunction("PlayerAnimOverrideLayerInterface_C", "FullBodyOverride");
+	static class UFunction* Func = nullptr;
 
-	Params::IPlayerAnimOverrideLayerInterface_C_FullBodyOverride_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerAnimOverrideLayerInterface_C", "FullBodyOverride");
+
+	Params::IPlayerAnimOverrideLayerInterface_C_FullBodyOverride_Params Parms{};
 
 	Parms.PassThroughFullBodyPose = PassThroughFullBodyPose;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (FullBodyOverride != nullptr)
-		*FullBodyOverride = Parms.FullBodyOverride;
+		*FullBodyOverride = std::move(Parms.FullBodyOverride);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

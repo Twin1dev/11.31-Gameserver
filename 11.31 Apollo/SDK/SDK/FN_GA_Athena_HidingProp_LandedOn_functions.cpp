@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Athena_HidingProp_LandedOn.GA_Athena_HidingProp_LandedOn_C
+// (None)
+
+class UClass* UGA_Athena_HidingProp_LandedOn_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Athena_HidingProp_LandedOn_C");
+
+	return Clss;
+}
+
+
+// GA_Athena_HidingProp_LandedOn_C GA_Athena_HidingProp_LandedOn.Default__GA_Athena_HidingProp_LandedOn_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Athena_HidingProp_LandedOn_C* UGA_Athena_HidingProp_LandedOn_C::GetDefaultObj()
+{
+	static class UGA_Athena_HidingProp_LandedOn_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Athena_HidingProp_LandedOn_C*>(UGA_Athena_HidingProp_LandedOn_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Athena_HidingProp_LandedOn.GA_Athena_HidingProp_LandedOn_C.K2_ActivateAbilityFromEvent
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UGA_Athena_HidingProp_LandedOn_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GA_Athena_HidingProp_LandedOn_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_HidingProp_LandedOn_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_HidingProp_LandedOn_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGA_Athena_HidingProp_LandedOn_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -40,14 +68,17 @@ void UGA_Athena_HidingProp_LandedOn_C::K2_ActivateAbilityFromEvent(struct FGamep
 // bool                               CallFunc_IsServer_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FGameplayEventData          K2Node_Event_EventData                                           (ConstParm)
 // float                              CallFunc_GetValueAtLevel_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              (None)
 // bool                               CallFunc_EqualEqual_FloatFloat_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UGA_Athena_HidingProp_LandedOn_C::ExecuteUbergraph_GA_Athena_HidingProp_LandedOn(int32 EntryPoint, bool CallFunc_IsServer_ReturnValue, const struct FGameplayEventData& K2Node_Event_EventData, float CallFunc_GetValueAtLevel_ReturnValue, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData, bool CallFunc_EqualEqual_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Athena_HidingProp_LandedOn_C", "ExecuteUbergraph_GA_Athena_HidingProp_LandedOn");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_HidingProp_LandedOn_C_ExecuteUbergraph_GA_Athena_HidingProp_LandedOn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_HidingProp_LandedOn_C", "ExecuteUbergraph_GA_Athena_HidingProp_LandedOn");
+
+	Params::UGA_Athena_HidingProp_LandedOn_C_ExecuteUbergraph_GA_Athena_HidingProp_LandedOn_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsServer_ReturnValue = CallFunc_IsServer_ReturnValue;
@@ -62,6 +93,4 @@ void UGA_Athena_HidingProp_LandedOn_C::ExecuteUbergraph_GA_Athena_HidingProp_Lan
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

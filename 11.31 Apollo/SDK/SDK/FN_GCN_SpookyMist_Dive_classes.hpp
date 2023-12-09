@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class UGCN_SpookyMist_Dive_C : public UFortGameplayCueNotify_Burst
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GCN_SpookyMist_Dive_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGCN_SpookyMist_Dive_C* GetDefaultObj();
 
 	void OnStartParticleSystemSpawned(class UParticleSystemComponent* SpawnedParticleSysComponent, struct FGameplayCueParameters& Parameters, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue);
 	bool OnActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters);
@@ -30,6 +24,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

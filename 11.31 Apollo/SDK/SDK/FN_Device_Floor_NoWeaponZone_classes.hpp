@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -17,7 +14,7 @@ namespace SDK
 class ADevice_Floor_NoWeaponZone_C : public ADevice_Volume_Floor_C
 {
 public:
-	uint8                                        Pad_5B42[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5EF4[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xD48(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UFortGameplayTriggerMessageComponent*  TransmitOnEmoteEnded;                              // 0xD50(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UFortGameplayTriggerMessageComponent*  TransmitOnEmoteStarted;                            // 0xD58(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -26,21 +23,18 @@ public:
 	class UParticleSystemComponent*              IdleFX;                                            // 0xD70(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                  Bounds;                                            // 0xD78(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                        ParticlesMaxDrawDistance;                          // 0xD80(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5B43[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5EF5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 CancelAbilitiesWithTheseTags;                      // 0xD88(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class AActor*                                ApplyEffectToActor;                                // 0xDA8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EBuildingMode                     AllowBuilding;                                     // 0xDB0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5B44[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5EF6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                Effect_Class;                                      // 0xDB8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          TagDisableBuild;                                   // 0xDC0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          TagDisableFire;                                    // 0xDC8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         Knob_bAllowFiring;                                 // 0xDD0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("Device_Floor_NoWeaponZone_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ADevice_Floor_NoWeaponZone_C* GetDefaultObj();
 
 	void Setup_Effect_Data(class UAbilitySystemComponent* Ability_System, bool* Should_Apply, struct FGameplayEffectSpecHandle* Spec_Handle, const struct FGameplayEffectSpecHandle& Handle, bool Apply, const struct FGameplayEffectSpecHandle& CallFunc_AddGrantedTag_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_AddGrantedTag_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingSpec_ReturnValue);
 	void ShouldAffectTarget(class AActor* TargetActor, bool* ShouldAffect, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_1);
@@ -60,6 +54,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

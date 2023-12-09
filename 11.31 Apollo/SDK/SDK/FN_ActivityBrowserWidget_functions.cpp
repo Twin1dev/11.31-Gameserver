@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ActivityBrowserWidget.ActivityBrowserWidget_C
+// (None)
+
+class UClass* UActivityBrowserWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ActivityBrowserWidget_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ActivityBrowserWidget_C ActivityBrowserWidget.Default__ActivityBrowserWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UActivityBrowserWidget_C* UActivityBrowserWidget_C::GetDefaultObj()
+{
+	static class UActivityBrowserWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UActivityBrowserWidget_C*>(UActivityBrowserWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

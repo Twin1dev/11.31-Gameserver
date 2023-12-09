@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TextStyle-Base-XS-B-AthenaXP.TextStyle-Base-XS-B-AthenaXP_C
+// (None)
+
+class UClass* UTextStyleMinusBaseMinusXSMinusBMinusAthenaXP_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextStyle-Base-XS-B-AthenaXP_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// TextStyle-Base-XS-B-AthenaXP_C TextStyle-Base-XS-B-AthenaXP.Default__TextStyle-Base-XS-B-AthenaXP_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTextStyleMinusBaseMinusXSMinusBMinusAthenaXP_C* UTextStyleMinusBaseMinusXSMinusBMinusAthenaXP_C::GetDefaultObj()
+{
+	static class UTextStyleMinusBaseMinusXSMinusBMinusAthenaXP_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextStyleMinusBaseMinusXSMinusBMinusAthenaXP_C*>(UTextStyleMinusBaseMinusXSMinusBMinusAthenaXP_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

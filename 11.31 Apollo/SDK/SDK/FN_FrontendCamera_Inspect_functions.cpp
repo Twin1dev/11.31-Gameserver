@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass FrontendCamera_Inspect.FrontendCamera_Inspect_C
+// (Actor)
+
+class UClass* AFrontendCamera_Inspect_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FrontendCamera_Inspect_C");
+
+	return Clss;
+}
+
+
+// FrontendCamera_Inspect_C FrontendCamera_Inspect.Default__FrontendCamera_Inspect_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AFrontendCamera_Inspect_C* AFrontendCamera_Inspect_C::GetDefaultObj()
+{
+	static class AFrontendCamera_Inspect_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AFrontendCamera_Inspect_C*>(AFrontendCamera_Inspect_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function FrontendCamera_Inspect.FrontendCamera_Inspect_C.OnActivated
 // (Event, Public, BlueprintEvent)
 // Parameters:
 
 void AFrontendCamera_Inspect_C::OnActivated()
 {
-	static auto Func = Class->GetFunction("FrontendCamera_Inspect_C", "OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontendCamera_Inspect_C_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontendCamera_Inspect_C", "OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AFrontendCamera_Inspect_C::OnActivated()
 
 void AFrontendCamera_Inspect_C::OnDeactivated()
 {
-	static auto Func = Class->GetFunction("FrontendCamera_Inspect_C", "OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontendCamera_Inspect_C_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontendCamera_Inspect_C", "OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -66,9 +95,12 @@ void AFrontendCamera_Inspect_C::OnDeactivated()
 
 void AFrontendCamera_Inspect_C::ExecuteUbergraph_FrontendCamera_Inspect(int32 EntryPoint, int32 Temp_int_Loop_Counter_Variable, int32 Temp_int_Array_Index_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class AFortTimeOfDayManager* CallFunc_GetTimeOfDayManagerFromContext_ReturnValue, TArray<class ATVPostProcessBP_C*>& CallFunc_GetAllActorsOfClass_OutActors, TArray<class AVaultCharacterLightingBP_C*>& CallFunc_GetAllActorsOfClass_OutActors_1, class ATVPostProcessBP_C* CallFunc_Array_Get_Item, class AVaultCharacterLightingBP_C* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, TArray<class AVaultCharacterLightingBP_C*>& CallFunc_GetAllActorsOfClass_OutActors_2, class AVaultCharacterLightingBP_C* CallFunc_Array_Get_Item_2)
 {
-	static auto Func = Class->GetFunction("FrontendCamera_Inspect_C", "ExecuteUbergraph_FrontendCamera_Inspect");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontendCamera_Inspect_C", "ExecuteUbergraph_FrontendCamera_Inspect");
+
+	Params::AFrontendCamera_Inspect_C_ExecuteUbergraph_FrontendCamera_Inspect_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -90,6 +122,4 @@ void AFrontendCamera_Inspect_C::ExecuteUbergraph_FrontendCamera_Inspect(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

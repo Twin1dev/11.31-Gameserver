@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -28,20 +25,20 @@ public:
 	struct FGameplayTag                          GC_Spawn;                                          // 0x7F0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FScalableFloat                        Row_SpawnChanceMax;                                // 0x7F8(0x20)(Edit, BlueprintVisible)
 	bool                                         IsWorldSpawner;                                    // 0x818(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_45B4[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_573F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FScalableFloat                        Row_SpawnChanceMin;                                // 0x820(0x20)(Edit, BlueprintVisible)
 	TMap<struct FGameplayTag, class FName>       Map_TagToLoot_HighTier;                            // 0x840(0x50)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	bool                                         AlreadySpawnChecked;                               // 0x890(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                        Pad_45B5[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5740[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<struct FGameplayTag, class FName>       Map_TagToLoot_DefaultTier;                         // 0x898(0x50)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TMap<struct FGameplayTag, class FName>       Map_TagToLoot_ToUse;                               // 0x8E8(0x50)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	bool                                         HasTypeTag;                                        // 0x938(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_45B6[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5741[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<enum class EObjectTypeQuery>          ObjectTypes;                                       // 0x940(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	struct FGameplayTagContainer                 LocationTags;                                      // 0x950(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         MaxUses;                                           // 0x970(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         Debug;                                             // 0x971(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_45B7[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5742[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FScalableFloat                        Row_AddedBobChanceOnOverlapMin;                    // 0x978(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FScalableFloat                        Row_AddedBobChanceOnOverlapMax;                    // 0x998(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class AFortPickup*                           SpawnedItem;                                       // 0x9B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -49,11 +46,8 @@ public:
 	struct FGameplayTagContainer                 QuestTag_DefaultSpawn;                             // 0x9C8(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FGameplayTagContainer                 QuestTag_WorldSpawn;                               // 0x9E8(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BGA_Athena_FlopperSpawn_Parent_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ABGA_Athena_FlopperSpawn_Parent_C* GetDefaultObj();
 
 	void GetLootTier(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, const class FString& CallFunc_Conv_NameToString_ReturnValue, TArray<struct FGameplayTag>& CallFunc_Map_Keys_Keys, const struct FGameplayTag& CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_HasTag_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, class FName CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, bool CallFunc_BooleanAND_ReturnValue);
 	void ShouldKill(float CallFunc_GetValueAtLevel_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, float CallFunc_RandomFloatInRange_ReturnValue_1, bool CallFunc_RandomBoolWithWeight_ReturnValue);
@@ -72,6 +66,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

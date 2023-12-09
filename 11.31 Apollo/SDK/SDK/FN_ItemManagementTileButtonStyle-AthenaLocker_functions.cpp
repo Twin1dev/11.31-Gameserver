@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ItemManagementTileButtonStyle-AthenaLocker.ItemManagementTileButtonStyle-AthenaLocker_C
+// (None)
+
+class UClass* UItemManagementTileButtonStyleMinusAthenaLocker_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemManagementTileButtonStyle-AthenaLocker_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ItemManagementTileButtonStyle-AthenaLocker_C ItemManagementTileButtonStyle-AthenaLocker.Default__ItemManagementTileButtonStyle-AthenaLocker_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemManagementTileButtonStyleMinusAthenaLocker_C* UItemManagementTileButtonStyleMinusAthenaLocker_C::GetDefaultObj()
+{
+	static class UItemManagementTileButtonStyleMinusAthenaLocker_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemManagementTileButtonStyleMinusAthenaLocker_C*>(UItemManagementTileButtonStyleMinusAthenaLocker_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

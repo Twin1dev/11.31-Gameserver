@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ItemPreviewPedestal.ItemPreviewPedestal_C
+// (Actor)
+
+class UClass* AItemPreviewPedestal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemPreviewPedestal_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ItemPreviewPedestal_C ItemPreviewPedestal.Default__ItemPreviewPedestal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AItemPreviewPedestal_C* AItemPreviewPedestal_C::GetDefaultObj()
+{
+	static class AItemPreviewPedestal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AItemPreviewPedestal_C*>(AItemPreviewPedestal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

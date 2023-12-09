@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -28,15 +25,15 @@ public:
 	class FText                                  OutText;                                           // 0x20(0x18)(Parm, OutParm)
 	bool                                         ReturnValue;                                       // 0x38(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 	bool                                         GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess;   // 0x39(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4C9F[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_43B3[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UGA_Ninja_SwordHitsHeal_C*             K2Node_DynamicCast_AsGA_Ninja_Sword_Hits_Heal;     // 0x40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x49(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4CA0[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_43B4[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Round_ReturnValue;                        // 0x4C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Conv_IntToFloat_ReturnValue;              // 0x50(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4CA1[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  CallFunc_Conv_FloatToText_ReturnValue;             // 0x58(0x18)()
+	uint8                                        Pad_43B5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_Conv_FloatToText_ReturnValue;             // 0x58(0x18)(None)
 };
 
 // 0x19 (0x19 - 0x0)
@@ -53,6 +50,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

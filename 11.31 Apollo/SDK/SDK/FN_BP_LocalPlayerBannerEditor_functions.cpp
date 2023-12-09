@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C
+// (None)
+
+class UClass* UBP_LocalPlayerBannerEditor_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_LocalPlayerBannerEditor_C");
+
+	return Clss;
+}
+
+
+// BP_LocalPlayerBannerEditor_C BP_LocalPlayerBannerEditor.Default__BP_LocalPlayerBannerEditor_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBP_LocalPlayerBannerEditor_C* UBP_LocalPlayerBannerEditor_C::GetDefaultObj()
+{
+	static class UBP_LocalPlayerBannerEditor_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBP_LocalPlayerBannerEditor_C*>(UBP_LocalPlayerBannerEditor_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_LocalPlayerBannerEditor.BP_LocalPlayerBannerEditor_C.Update Category Navigation Visibility
@@ -33,9 +58,12 @@ namespace SDK
 
 void UBP_LocalPlayerBannerEditor_C::Update_Category_Navigation_Visibility(enum class ESlateVisibility LocalVisibility, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, TArray<class FName>& K2Node_Select_Default, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Category Navigation Visibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Update_Category_Navigation_Visibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Category Navigation Visibility");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Update_Category_Navigation_Visibility_Params Parms{};
 
 	Parms.LocalVisibility = LocalVisibility;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -62,9 +90,12 @@ void UBP_LocalPlayerBannerEditor_C::Update_Category_Navigation_Visibility(enum c
 
 void UBP_LocalPlayerBannerEditor_C::Reset_Color_Category_Index(int32 CallFunc_Array_Find_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Reset Color Category Index");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Reset_Color_Category_Index_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Reset Color Category Index");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Reset_Color_Category_Index_Params Parms{};
 
 	Parms.CallFunc_Array_Find_ReturnValue = CallFunc_Array_Find_ReturnValue;
 
@@ -80,9 +111,12 @@ void UBP_LocalPlayerBannerEditor_C::Reset_Color_Category_Index(int32 CallFunc_Ar
 
 void UBP_LocalPlayerBannerEditor_C::Reset_Icon_Category_Index(int32 CallFunc_Array_Find_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Reset Icon Category Index");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Reset_Icon_Category_Index_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Reset Icon Category Index");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Reset_Icon_Category_Index_Params Parms{};
 
 	Parms.CallFunc_Array_Find_ReturnValue = CallFunc_Array_Find_ReturnValue;
 
@@ -117,9 +151,12 @@ void UBP_LocalPlayerBannerEditor_C::Reset_Icon_Category_Index(int32 CallFunc_Arr
 
 void UBP_LocalPlayerBannerEditor_C::Update_Right_Color_Category_Button_Bang_State(int32 NextIndex, bool bUnseen, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Get_Next_Color_Category_Index_ReturnValue, class FName CallFunc_Array_Get_Item, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, TArray<class UFortAccountItem*>& CallFunc_GetBannerColorsForCategory_BannerColors, class UFortAccountItem* CallFunc_Array_Get_Item_1, bool CallFunc_NotEqual_IntInt_ReturnValue, bool CallFunc_HasBeenSeenLocally_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Right Color Category Button Bang State");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Update_Right_Color_Category_Button_Bang_State_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Right Color Category Button Bang State");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Update_Right_Color_Category_Button_Bang_State_Params Parms{};
 
 	Parms.NextIndex = NextIndex;
 	Parms.bUnseen = bUnseen;
@@ -173,9 +210,12 @@ void UBP_LocalPlayerBannerEditor_C::Update_Right_Color_Category_Button_Bang_Stat
 
 void UBP_LocalPlayerBannerEditor_C::Update_Left_Color_Category_Button_Bang_State(int32 PrevIndex, bool bUnseen, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Get_Prev_Color_Category_Index_ReturnValue, class FName CallFunc_Array_Get_Item, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, TArray<class UFortAccountItem*>& CallFunc_GetBannerColorsForCategory_BannerColors, class UFortAccountItem* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_HasBeenSeenLocally_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Left Color Category Button Bang State");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Update_Left_Color_Category_Button_Bang_State_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Left Color Category Button Bang State");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Update_Left_Color_Category_Button_Bang_State_Params Parms{};
 
 	Parms.PrevIndex = PrevIndex;
 	Parms.bUnseen = bUnseen;
@@ -229,9 +269,12 @@ void UBP_LocalPlayerBannerEditor_C::Update_Left_Color_Category_Button_Bang_State
 
 void UBP_LocalPlayerBannerEditor_C::Update_Right_Icon_Category_Button_Bang_State(int32 NextIndex, bool bUnseen, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Get_Next_Icon_Category_Index_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class FName CallFunc_Array_Get_Item, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, TArray<class UFortAccountItem*>& CallFunc_GetBannerIconsForCategory_BannerIcons, class UFortAccountItem* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_HasBeenSeenLocally_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Right Icon Category Button Bang State");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Update_Right_Icon_Category_Button_Bang_State_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Right Icon Category Button Bang State");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Update_Right_Icon_Category_Button_Bang_State_Params Parms{};
 
 	Parms.NextIndex = NextIndex;
 	Parms.bUnseen = bUnseen;
@@ -285,9 +328,12 @@ void UBP_LocalPlayerBannerEditor_C::Update_Right_Icon_Category_Button_Bang_State
 
 void UBP_LocalPlayerBannerEditor_C::Update_Left_Icon_Category_Button_Bang_State(int32 PrevIndex, bool bUnseen, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Get_Prev_Icon_Category_Index_ReturnValue, class FName CallFunc_Array_Get_Item, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, TArray<class UFortAccountItem*>& CallFunc_GetBannerIconsForCategory_BannerIcons, class UFortAccountItem* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_HasBeenSeenLocally_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Left Icon Category Button Bang State");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Update_Left_Icon_Category_Button_Bang_State_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Left Icon Category Button Bang State");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Update_Left_Icon_Category_Button_Bang_State_Params Parms{};
 
 	Parms.PrevIndex = PrevIndex;
 	Parms.bUnseen = bUnseen;
@@ -328,9 +374,12 @@ void UBP_LocalPlayerBannerEditor_C::Update_Left_Icon_Category_Button_Bang_State(
 
 int32 UBP_LocalPlayerBannerEditor_C::Get_Prev_Color_Category_Index(bool Temp_bool_Variable, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Get Prev Color Category Index");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Get_Prev_Color_Category_Index_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Get Prev Color Category Index");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Get_Prev_Color_Category_Index_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
@@ -359,9 +408,12 @@ int32 UBP_LocalPlayerBannerEditor_C::Get_Prev_Color_Category_Index(bool Temp_boo
 
 int32 UBP_LocalPlayerBannerEditor_C::Get_Next_Color_Category_Index(bool Temp_bool_Variable, int32 Temp_int_Variable, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Get Next Color Category Index");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Get_Next_Color_Category_Index_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Get Next Color Category Index");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Get_Next_Color_Category_Index_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -390,9 +442,12 @@ int32 UBP_LocalPlayerBannerEditor_C::Get_Next_Color_Category_Index(bool Temp_boo
 
 int32 UBP_LocalPlayerBannerEditor_C::Get_Prev_Icon_Category_Index(bool Temp_bool_Variable, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Get Prev Icon Category Index");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Get_Prev_Icon_Category_Index_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Get Prev Icon Category Index");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Get_Prev_Icon_Category_Index_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
@@ -421,9 +476,12 @@ int32 UBP_LocalPlayerBannerEditor_C::Get_Prev_Icon_Category_Index(bool Temp_bool
 
 int32 UBP_LocalPlayerBannerEditor_C::Get_Next_Icon_Category_Index(bool Temp_bool_Variable, int32 Temp_int_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Get Next Icon Category Index");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Get_Next_Icon_Category_Index_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Get Next Icon Category Index");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Get_Next_Icon_Category_Index_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -459,9 +517,12 @@ int32 UBP_LocalPlayerBannerEditor_C::Get_Next_Icon_Category_Index(bool Temp_bool
 
 void UBP_LocalPlayerBannerEditor_C::Update_Color_Button_Bang_State(bool bUnseen, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class UFortInventoryContext* CallFunc_GetContext_ReturnValue, TArray<class UFortAccountItem*>& CallFunc_GetAccountItemsByType_Items, int32 CallFunc_Array_Length_ReturnValue, class UFortAccountItem* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_HasBeenSeenLocally_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Color Button Bang State");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Update_Color_Button_Bang_State_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Color Button Bang State");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Update_Color_Button_Bang_State_Params Parms{};
 
 	Parms.bUnseen = bUnseen;
 	Parms.Temp_bool_True_if_break_was_hit_Variable = Temp_bool_True_if_break_was_hit_Variable;
@@ -503,9 +564,12 @@ void UBP_LocalPlayerBannerEditor_C::Update_Color_Button_Bang_State(bool bUnseen,
 
 void UBP_LocalPlayerBannerEditor_C::Update_Icon_Button_Bang_State(bool bUnseen, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class UFortInventoryContext* CallFunc_GetContext_ReturnValue, TArray<class UFortAccountItem*>& CallFunc_GetAccountItemsByType_Items, int32 CallFunc_Array_Length_ReturnValue, class UFortAccountItem* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_HasBeenSeenLocally_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Icon Button Bang State");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Update_Icon_Button_Bang_State_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Icon Button Bang State");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Update_Icon_Button_Bang_State_Params Parms{};
 
 	Parms.bUnseen = bUnseen;
 	Parms.Temp_bool_True_if_break_was_hit_Variable = Temp_bool_True_if_break_was_hit_Variable;
@@ -533,12 +597,14 @@ void UBP_LocalPlayerBannerEditor_C::Update_Icon_Button_Bang_State(bool bUnseen, 
 
 void UBP_LocalPlayerBannerEditor_C::Update_Bang_States()
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Bang States");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Update_Bang_States_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Bang States");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -561,9 +627,12 @@ void UBP_LocalPlayerBannerEditor_C::Update_Bang_States()
 
 void UBP_LocalPlayerBannerEditor_C::FoundsPackTextUpdate(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_1, enum class ESubGame CallFunc_GetSubGame_ReturnValue, enum class EFortFrontEndFeatureState CallFunc_GetFeatureState_OutFeatureState, enum class EFortFrontEndFeatureStateReason CallFunc_GetFeatureState_OutReason, enum class ESubGame Temp_byte_Variable_4, bool K2Node_SwitchEnum_CmpSuccess, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "FoundsPackTextUpdate");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "FoundsPackTextUpdate");
+
+	Params::UBP_LocalPlayerBannerEditor_C_FoundsPackTextUpdate_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
@@ -589,12 +658,14 @@ void UBP_LocalPlayerBannerEditor_C::FoundsPackTextUpdate(enum class ESlateVisibi
 
 void UBP_LocalPlayerBannerEditor_C::Reset_Pickers_and_Views()
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Reset Pickers and Views");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Reset_Pickers_and_Views_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Reset Pickers and Views");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -605,12 +676,14 @@ void UBP_LocalPlayerBannerEditor_C::Reset_Pickers_and_Views()
 
 void UBP_LocalPlayerBannerEditor_C::Reset_for_Keyboard_and_Mouse()
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Reset for Keyboard and Mouse");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Reset_for_Keyboard_and_Mouse_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Reset for Keyboard and Mouse");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -628,9 +701,12 @@ void UBP_LocalPlayerBannerEditor_C::Reset_for_Keyboard_and_Mouse()
 
 void UBP_LocalPlayerBannerEditor_C::Update_Temp_State_On_Item_Selected(class UObject* Item, class UFortHomebaseBannerColorItem* K2Node_DynamicCast_AsFort_Homebase_Banner_Color_Item, bool K2Node_DynamicCast_bSuccess, class UFortHomebaseBannerIconItem* K2Node_DynamicCast_AsFort_Homebase_Banner_Icon_Item, bool K2Node_DynamicCast_bSuccess_1, class FName CallFunc_GetRowNameForBannerColorItem_ReturnValue, class FName CallFunc_GetRowNameForBannerIconItem_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Temp State On Item Selected");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Update_Temp_State_On_Item_Selected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Temp State On Item Selected");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Update_Temp_State_On_Item_Selected_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.K2Node_DynamicCast_AsFort_Homebase_Banner_Color_Item = K2Node_DynamicCast_AsFort_Homebase_Banner_Color_Item;
@@ -654,9 +730,12 @@ void UBP_LocalPlayerBannerEditor_C::Update_Temp_State_On_Item_Selected(class UOb
 
 void UBP_LocalPlayerBannerEditor_C::Refresh_Apply_Button_State(bool CallFunc_NotEqual_NameName_ReturnValue, bool CallFunc_NotEqual_NameName_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Refresh Apply Button State");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Refresh_Apply_Button_State_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Refresh Apply Button State");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Refresh_Apply_Button_State_Params Parms{};
 
 	Parms.CallFunc_NotEqual_NameName_ReturnValue = CallFunc_NotEqual_NameName_ReturnValue;
 	Parms.CallFunc_NotEqual_NameName_ReturnValue_1 = CallFunc_NotEqual_NameName_ReturnValue_1;
@@ -673,12 +752,14 @@ void UBP_LocalPlayerBannerEditor_C::Refresh_Apply_Button_State(bool CallFunc_Not
 
 void UBP_LocalPlayerBannerEditor_C::Apply_Chosen_Item()
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Apply Chosen Item");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Apply_Chosen_Item_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Apply Chosen Item");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -688,17 +769,20 @@ void UBP_LocalPlayerBannerEditor_C::Apply_Chosen_Item()
 // Parameters:
 // bool                               bPickingTile                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
+// class FText                        K2Node_Select_Default                                            (None)
 // class UIconTextButton_C*           K2Node_DynamicCast_AsIcon_Text_Button                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_LocalPlayerBannerEditor_C::Set_Picking_Tile_State(bool bPickingTile, bool Temp_bool_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class FText K2Node_Select_Default, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Set Picking Tile State");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Set Picking Tile State");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Set_Picking_Tile_State_Params Parms{};
 
 	Parms.bPickingTile = bPickingTile;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -725,9 +809,12 @@ void UBP_LocalPlayerBannerEditor_C::Set_Picking_Tile_State(bool bPickingTile, bo
 
 void UBP_LocalPlayerBannerEditor_C::Attempt_Leave_Picker(bool* Left, bool LeftPicker, bool Temp_bool_Variable, class UWidget* K2Node_Select_Default, class UCommonButton* K2Node_DynamicCast_AsCommon_Button, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Attempt Leave Picker");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Attempt_Leave_Picker_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Attempt Leave Picker");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Attempt_Leave_Picker_Params Parms{};
 
 	Parms.LeftPicker = LeftPicker;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -756,9 +843,12 @@ void UBP_LocalPlayerBannerEditor_C::Attempt_Leave_Picker(bool* Left, bool LeftPi
 
 void UBP_LocalPlayerBannerEditor_C::Navigate_to_Chosen_Color(class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, class UFortHomebaseBannerColorItem* CallFunc_GetBannerColorItemFromRowName_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Navigate to Chosen Color");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Navigate to Chosen Color");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Color_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetCurrentInputType_ReturnValue = CallFunc_GetCurrentInputType_ReturnValue;
@@ -786,9 +876,12 @@ void UBP_LocalPlayerBannerEditor_C::Navigate_to_Chosen_Color(class UCommonInputS
 
 void UBP_LocalPlayerBannerEditor_C::Navigate_to_Chosen_Icon(class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, class UFortHomebaseBannerIconItem* CallFunc_GetBannerIconItemFromRowName_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Navigate to Chosen Icon");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Navigate to Chosen Icon");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Navigate_to_Chosen_Icon_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetCurrentInputType_ReturnValue = CallFunc_GetCurrentInputType_ReturnValue;
@@ -809,12 +902,14 @@ void UBP_LocalPlayerBannerEditor_C::Navigate_to_Chosen_Icon(class UCommonInputSu
 
 void UBP_LocalPlayerBannerEditor_C::OnWidgetDeactivated()
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "OnWidgetDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_OnWidgetDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "OnWidgetDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -826,9 +921,12 @@ void UBP_LocalPlayerBannerEditor_C::OnWidgetDeactivated()
 
 void UBP_LocalPlayerBannerEditor_C::Update_Banner_Icon_Tileview(class FName CurrentCategory)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Banner Icon Tileview");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Update_Banner_Icon_Tileview_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Banner Icon Tileview");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Update_Banner_Icon_Tileview_Params Parms{};
 
 	Parms.CurrentCategory = CurrentCategory;
 
@@ -844,9 +942,12 @@ void UBP_LocalPlayerBannerEditor_C::Update_Banner_Icon_Tileview(class FName Curr
 
 void UBP_LocalPlayerBannerEditor_C::Update_Banner_Color_Tileview(class FName CurrentCategory)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Banner Color Tileview");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Update_Banner_Color_Tileview_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Update Banner Color Tileview");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Update_Banner_Color_Tileview_Params Parms{};
 
 	Parms.CurrentCategory = CurrentCategory;
 
@@ -862,9 +963,12 @@ void UBP_LocalPlayerBannerEditor_C::Update_Banner_Color_Tileview(class FName Cur
 
 void UBP_LocalPlayerBannerEditor_C::Increment_Color_Category_Index(int32 CallFunc_Get_Next_Color_Category_Index_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Increment Color Category Index");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Increment_Color_Category_Index_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Increment Color Category Index");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Increment_Color_Category_Index_Params Parms{};
 
 	Parms.CallFunc_Get_Next_Color_Category_Index_ReturnValue = CallFunc_Get_Next_Color_Category_Index_ReturnValue;
 
@@ -880,9 +984,12 @@ void UBP_LocalPlayerBannerEditor_C::Increment_Color_Category_Index(int32 CallFun
 
 void UBP_LocalPlayerBannerEditor_C::Increment_Icon_Category_Index(int32 CallFunc_Get_Next_Icon_Category_Index_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Increment Icon Category Index");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Increment_Icon_Category_Index_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Increment Icon Category Index");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Increment_Icon_Category_Index_Params Parms{};
 
 	Parms.CallFunc_Get_Next_Icon_Category_Index_ReturnValue = CallFunc_Get_Next_Icon_Category_Index_ReturnValue;
 
@@ -898,9 +1005,12 @@ void UBP_LocalPlayerBannerEditor_C::Increment_Icon_Category_Index(int32 CallFunc
 
 void UBP_LocalPlayerBannerEditor_C::Decrement_Color_Category_Index(int32 CallFunc_Get_Prev_Color_Category_Index_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Decrement Color Category Index");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Decrement_Color_Category_Index_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Decrement Color Category Index");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Decrement_Color_Category_Index_Params Parms{};
 
 	Parms.CallFunc_Get_Prev_Color_Category_Index_ReturnValue = CallFunc_Get_Prev_Color_Category_Index_ReturnValue;
 
@@ -916,9 +1026,12 @@ void UBP_LocalPlayerBannerEditor_C::Decrement_Color_Category_Index(int32 CallFun
 
 void UBP_LocalPlayerBannerEditor_C::Decrement_Icon_Category_Index(int32 CallFunc_Get_Prev_Icon_Category_Index_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Decrement Icon Category Index");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Decrement_Icon_Category_Index_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Decrement Icon Category Index");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Decrement_Icon_Category_Index_Params Parms{};
 
 	Parms.CallFunc_Get_Prev_Icon_Category_Index_ReturnValue = CallFunc_Get_Prev_Icon_Category_Index_ReturnValue;
 
@@ -939,9 +1052,12 @@ void UBP_LocalPlayerBannerEditor_C::Decrement_Icon_Category_Index(int32 CallFunc
 
 void UBP_LocalPlayerBannerEditor_C::Previous_Category(class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, class FName CallFunc_Array_Get_Item, class FName CallFunc_Array_Get_Item_1)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Previous Category");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Previous_Category_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Previous Category");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Previous_Category_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetCurrentInputType_ReturnValue = CallFunc_GetCurrentInputType_ReturnValue;
@@ -967,9 +1083,12 @@ void UBP_LocalPlayerBannerEditor_C::Previous_Category(class UCommonInputSubsyste
 
 void UBP_LocalPlayerBannerEditor_C::Next_Category(class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, class FName CallFunc_Array_Get_Item, class FName CallFunc_Array_Get_Item_1)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Next Category");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Next_Category_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Next Category");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Next_Category_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetCurrentInputType_ReturnValue = CallFunc_GetCurrentInputType_ReturnValue;
@@ -988,14 +1107,17 @@ void UBP_LocalPlayerBannerEditor_C::Next_Category(class UCommonInputSubsystem* C
 // Parameters:
 // class FName                        CurrentCategory                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        CategoryDisplayName                                              (Edit, BlueprintVisible)
-// class FText                        CallFunc_GetBannerIconCategoryName_ReturnValue                   ()
-// class FText                        CallFunc_GetBannerColorCategoryName_ReturnValue                  ()
+// class FText                        CallFunc_GetBannerIconCategoryName_ReturnValue                   (None)
+// class FText                        CallFunc_GetBannerColorCategoryName_ReturnValue                  (None)
 
 void UBP_LocalPlayerBannerEditor_C::Set_Current_Category(class FName CurrentCategory, class FText CategoryDisplayName, class FText CallFunc_GetBannerIconCategoryName_ReturnValue, class FText CallFunc_GetBannerColorCategoryName_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Set Current Category");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Set_Current_Category_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Set Current Category");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Set_Current_Category_Params Parms{};
 
 	Parms.CurrentCategory = CurrentCategory;
 	Parms.CategoryDisplayName = CategoryDisplayName;
@@ -1027,9 +1149,12 @@ void UBP_LocalPlayerBannerEditor_C::Set_Current_Category(class FName CurrentCate
 
 void UBP_LocalPlayerBannerEditor_C::Setup_Tileview_For_Colorswatches(class FName& CategoryRowName, class UObject* CallFunc_BP_GetSelectedItem_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, class UFortHomebaseBannerColorItem* CallFunc_GetBannerColorItemFromRowName_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_1, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller_1, bool K2Node_DynamicCast_bSuccess_1, TArray<class UFortAccountItem*>& CallFunc_GetBannerColorsForCategory_BannerColors, bool CallFunc_Array_Contains_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Setup Tileview For Colorswatches");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Setup Tileview For Colorswatches");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Colorswatches_Params Parms{};
 
 	Parms.CategoryRowName = CategoryRowName;
 	Parms.CallFunc_BP_GetSelectedItem_ReturnValue = CallFunc_BP_GetSelectedItem_ReturnValue;
@@ -1071,9 +1196,12 @@ void UBP_LocalPlayerBannerEditor_C::Setup_Tileview_For_Colorswatches(class FName
 
 void UBP_LocalPlayerBannerEditor_C::Setup_Tileview_For_Icons(class FName CategoryRowName, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, class UObject* CallFunc_BP_GetSelectedItem_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_1, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller_1, bool K2Node_DynamicCast_bSuccess_1, class UFortHomebaseBannerIconItem* CallFunc_GetBannerIconItemFromRowName_ReturnValue, TArray<class UFortAccountItem*>& CallFunc_GetBannerIconsForCategory_BannerIcons, bool CallFunc_Array_Contains_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Setup Tileview For Icons");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Setup Tileview For Icons");
+
+	Params::UBP_LocalPlayerBannerEditor_C_Setup_Tileview_For_Icons_Params Parms{};
 
 	Parms.CategoryRowName = CategoryRowName;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -1101,12 +1229,14 @@ void UBP_LocalPlayerBannerEditor_C::Setup_Tileview_For_Icons(class FName Categor
 
 void UBP_LocalPlayerBannerEditor_C::OnWidgetActivated()
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "OnWidgetActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_OnWidgetActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "OnWidgetActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1117,12 +1247,14 @@ void UBP_LocalPlayerBannerEditor_C::OnWidgetActivated()
 
 void UBP_LocalPlayerBannerEditor_C::Construct()
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1134,9 +1266,12 @@ void UBP_LocalPlayerBannerEditor_C::Construct()
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__EditIconButton_K2Node_ComponentBoundEvent_302_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__EditIconButton_K2Node_ComponentBoundEvent_302_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__EditIconButton_K2Node_ComponentBoundEvent_302_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__EditIconButton_K2Node_ComponentBoundEvent_302_CommonButtonClicked__DelegateSignature");
+
+	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__EditIconButton_K2Node_ComponentBoundEvent_302_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1152,9 +1287,12 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__EditIconButton_K2Node_ComponentBound
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__EditColorButton_K2Node_ComponentBoundEvent_319_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__EditColorButton_K2Node_ComponentBoundEvent_319_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__EditColorButton_K2Node_ComponentBoundEvent_319_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__EditColorButton_K2Node_ComponentBoundEvent_319_CommonButtonClicked__DelegateSignature");
+
+	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__EditColorButton_K2Node_ComponentBoundEvent_319_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1170,9 +1308,12 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__EditColorButton_K2Node_ComponentBoun
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__EditIconButton_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__EditIconButton_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__EditIconButton_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__EditIconButton_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature");
+
+	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__EditIconButton_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1188,9 +1329,12 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__EditIconButton_K2Node_ComponentBound
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__EditColorButton_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__EditColorButton_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__EditColorButton_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__EditColorButton_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature");
+
+	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__EditColorButton_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1206,9 +1350,12 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__EditColorButton_K2Node_ComponentBoun
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__CloseEditorButton_K2Node_ComponentBoundEvent_74_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CloseEditorButton_K2Node_ComponentBoundEvent_74_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__CloseEditorButton_K2Node_ComponentBoundEvent_74_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CloseEditorButton_K2Node_ComponentBoundEvent_74_CommonButtonClicked__DelegateSignature");
+
+	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__CloseEditorButton_K2Node_ComponentBoundEvent_74_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1223,12 +1370,14 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__CloseEditorButton_K2Node_ComponentBo
 
 void UBP_LocalPlayerBannerEditor_C::RefreshBannerEditor()
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "RefreshBannerEditor");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_RefreshBannerEditor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "RefreshBannerEditor");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1240,9 +1389,12 @@ void UBP_LocalPlayerBannerEditor_C::RefreshBannerEditor()
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__LeftArrowButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__LeftArrowButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__LeftArrowButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__LeftArrowButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
+
+	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__LeftArrowButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1258,9 +1410,12 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__LeftArrowButton_K2Node_ComponentBoun
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__RightArrowButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__RightArrowButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__RightArrowButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__RightArrowButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature");
+
+	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__RightArrowButton_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1277,9 +1432,12 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__RightArrowButton_K2Node_ComponentBou
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_66_OnListViewItemSelected__DelegateSignature(class UObject* Item, bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_66_OnListViewItemSelected__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_66_OnListViewItemSelected__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_66_OnListViewItemSelected__DelegateSignature");
+
+	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_66_OnListViewItemSelected__DelegateSignature_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.bIsSelected = bIsSelected;
@@ -1296,9 +1454,12 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__CommonTileView_0_K2Node_ComponentBou
 
 void UBP_LocalPlayerBannerEditor_C::HandleInputMethodChanged(enum class ECommonInputType InputType)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "HandleInputMethodChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_HandleInputMethodChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "HandleInputMethodChanged");
+
+	Params::UBP_LocalPlayerBannerEditor_C_HandleInputMethodChanged_Params Parms{};
 
 	Parms.InputType = InputType;
 
@@ -1314,9 +1475,12 @@ void UBP_LocalPlayerBannerEditor_C::HandleInputMethodChanged(enum class ECommonI
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__ApplyButton_K2Node_ComponentBoundEvent_363_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__ApplyButton_K2Node_ComponentBoundEvent_363_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__ApplyButton_K2Node_ComponentBoundEvent_363_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__ApplyButton_K2Node_ComponentBoundEvent_363_CommonButtonClicked__DelegateSignature");
+
+	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__ApplyButton_K2Node_ComponentBoundEvent_363_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1332,9 +1496,12 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__ApplyButton_K2Node_ComponentBoundEve
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_888_OnListViewItemClicked__DelegateSignature(class UObject* Item)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_888_OnListViewItemClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_888_OnListViewItemClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_888_OnListViewItemClicked__DelegateSignature");
+
+	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_888_OnListViewItemClicked__DelegateSignature_Params Parms{};
 
 	Parms.Item = Item;
 
@@ -1350,9 +1517,12 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__CommonTileView_0_K2Node_ComponentBou
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_306_OnListViewItemWidgetCreated__DelegateSignature(class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_306_OnListViewItemWidgetCreated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_306_OnListViewItemWidgetCreated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_306_OnListViewItemWidgetCreated__DelegateSignature");
+
+	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__CommonTileView_0_K2Node_ComponentBoundEvent_306_OnListViewItemWidgetCreated__DelegateSignature_Params Parms{};
 
 	Parms.Widget = Widget;
 
@@ -1367,12 +1537,14 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__CommonTileView_0_K2Node_ComponentBou
 
 void UBP_LocalPlayerBannerEditor_C::BannerTileBangUpdated_Event_0()
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BannerTileBangUpdated_Event_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_BannerTileBangUpdated_Event_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BannerTileBangUpdated_Event_0");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1383,12 +1555,14 @@ void UBP_LocalPlayerBannerEditor_C::BannerTileBangUpdated_Event_0()
 
 void UBP_LocalPlayerBannerEditor_C::Handle_Bang_State_Changed()
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Handle Bang State Changed");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_Handle_Bang_State_Changed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "Handle Bang State Changed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1399,12 +1573,14 @@ void UBP_LocalPlayerBannerEditor_C::Handle_Bang_State_Changed()
 
 void UBP_LocalPlayerBannerEditor_C::OnShowPreviousCategory()
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "OnShowPreviousCategory");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_OnShowPreviousCategory_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "OnShowPreviousCategory");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1415,12 +1591,14 @@ void UBP_LocalPlayerBannerEditor_C::OnShowPreviousCategory()
 
 void UBP_LocalPlayerBannerEditor_C::OnShowNextCategory()
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "OnShowNextCategory");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_OnShowNextCategory_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "OnShowNextCategory");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1432,9 +1610,12 @@ void UBP_LocalPlayerBannerEditor_C::OnShowNextCategory()
 
 void UBP_LocalPlayerBannerEditor_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UBP_LocalPlayerBannerEditor_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1503,9 +1684,12 @@ void UBP_LocalPlayerBannerEditor_C::BndEvt__CloseButton_K2Node_ComponentBoundEve
 
 void UBP_LocalPlayerBannerEditor_C::ExecuteUbergraph_BP_LocalPlayerBannerEditor(int32 EntryPoint, bool CallFunc_IsMobileGame_ReturnValue, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_8, class UCommonButton* K2Node_ComponentBoundEvent_Button_7, class UCommonButton* K2Node_ComponentBoundEvent_Button_6, class UCommonButton* K2Node_ComponentBoundEvent_Button_5, class UCommonButton* K2Node_ComponentBoundEvent_Button_4, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UObject* K2Node_ComponentBoundEvent_Item_1, bool K2Node_ComponentBoundEvent_bIsSelected, class UCommonInputSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue, enum class ECommonInputType K2Node_CustomEvent_InputType, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UObject* K2Node_ComponentBoundEvent_Item, bool CallFunc_GetIsEnabled_ReturnValue, bool CallFunc_Attempt_Leave_Picker_Left, class UUserWidget* K2Node_ComponentBoundEvent_Widget, class UBP_BannerEditorTile_C* K2Node_DynamicCast_AsBP_Banner_Editor_Tile, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_K2_IsValidTimerHandle_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_2, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue_2, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_3, bool CallFunc_EqualEqual_ByteByte_ReturnValue_3, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue_3, bool CallFunc_EqualEqual_ByteByte_ReturnValue_4, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, class UWidget* K2Node_Select_Default, bool Temp_bool_Variable_3, bool CallFunc_Attempt_Leave_Picker_Left_1, bool K2Node_Select_Default_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_IsMobileGame_ReturnValue_1, bool CallFunc_IsErebus_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "ExecuteUbergraph_BP_LocalPlayerBannerEditor");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "ExecuteUbergraph_BP_LocalPlayerBannerEditor");
+
+	Params::UBP_LocalPlayerBannerEditor_C_ExecuteUbergraph_BP_LocalPlayerBannerEditor_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsMobileGame_ReturnValue = CallFunc_IsMobileGame_ReturnValue;
@@ -1575,9 +1759,12 @@ void UBP_LocalPlayerBannerEditor_C::ExecuteUbergraph_BP_LocalPlayerBannerEditor(
 
 void UBP_LocalPlayerBannerEditor_C::CloseBannerEditor__DelegateSignature(class FName IconId, class FName ColorId)
 {
-	static auto Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "CloseBannerEditor__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_LocalPlayerBannerEditor_C_CloseBannerEditor__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_LocalPlayerBannerEditor_C", "CloseBannerEditor__DelegateSignature");
+
+	Params::UBP_LocalPlayerBannerEditor_C_CloseBannerEditor__DelegateSignature_Params Parms{};
 
 	Parms.IconId = IconId;
 	Parms.ColorId = ColorId;
@@ -1588,6 +1775,4 @@ void UBP_LocalPlayerBannerEditor_C::CloseBannerEditor__DelegateSignature(class F
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

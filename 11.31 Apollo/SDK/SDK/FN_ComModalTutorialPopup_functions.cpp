@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ComModalTutorialPopup.ComModalTutorialPopup_C
+// (None)
+
+class UClass* UComModalTutorialPopup_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ComModalTutorialPopup_C");
+
+	return Clss;
+}
+
+
+// ComModalTutorialPopup_C ComModalTutorialPopup.Default__ComModalTutorialPopup_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UComModalTutorialPopup_C* UComModalTutorialPopup_C::GetDefaultObj()
+{
+	static class UComModalTutorialPopup_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UComModalTutorialPopup_C*>(UComModalTutorialPopup_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ComModalTutorialPopup.ComModalTutorialPopup_C.TapToClose
@@ -26,16 +51,19 @@ namespace SDK
 // bool                               CallFunc_EqualEqual_KeyKey_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
-// struct FEventReply                 K2Node_Select_Default                                            ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
+// struct FEventReply                 K2Node_Select_Default                                            (None)
 
 struct FEventReply UComModalTutorialPopup_C::TapToClose(const struct FGeometry& MyGeometry, struct FPointerEvent& Mouse_Event, const struct FKey& CallFunc_PointerEvent_GetEffectingButton_ReturnValue, bool CallFunc_PointerEvent_IsTouchEvent_ReturnValue, bool CallFunc_EqualEqual_KeyKey_ReturnValue, bool Temp_bool_Variable, bool CallFunc_BooleanOR_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const struct FEventReply& CallFunc_Unhandled_ReturnValue, const struct FEventReply& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ComModalTutorialPopup_C", "TapToClose");
+	static class UFunction* Func = nullptr;
 
-	Params::UComModalTutorialPopup_C_TapToClose_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComModalTutorialPopup_C", "TapToClose");
+
+	Params::UComModalTutorialPopup_C_TapToClose_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.Mouse_Event = Mouse_Event;
@@ -63,9 +91,12 @@ struct FEventReply UComModalTutorialPopup_C::TapToClose(const struct FGeometry& 
 
 void UComModalTutorialPopup_C::PlayInSlideAnimation(int32 Index)
 {
-	static auto Func = Class->GetFunction("ComModalTutorialPopup_C", "PlayInSlideAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UComModalTutorialPopup_C_PlayInSlideAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComModalTutorialPopup_C", "PlayInSlideAnimation");
+
+	Params::UComModalTutorialPopup_C_PlayInSlideAnimation_Params Parms{};
 
 	Parms.Index = Index;
 
@@ -81,9 +112,12 @@ void UComModalTutorialPopup_C::PlayInSlideAnimation(int32 Index)
 
 void UComModalTutorialPopup_C::PlayOutSlideAnimation(int32 Index)
 {
-	static auto Func = Class->GetFunction("ComModalTutorialPopup_C", "PlayOutSlideAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UComModalTutorialPopup_C_PlayOutSlideAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComModalTutorialPopup_C", "PlayOutSlideAnimation");
+
+	Params::UComModalTutorialPopup_C_PlayOutSlideAnimation_Params Parms{};
 
 	Parms.Index = Index;
 
@@ -98,12 +132,14 @@ void UComModalTutorialPopup_C::PlayOutSlideAnimation(int32 Index)
 
 void UComModalTutorialPopup_C::Construct()
 {
-	static auto Func = Class->GetFunction("ComModalTutorialPopup_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UComModalTutorialPopup_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComModalTutorialPopup_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -129,9 +165,12 @@ void UComModalTutorialPopup_C::Construct()
 
 void UComModalTutorialPopup_C::ExecuteUbergraph_ComModalTutorialPopup(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_3, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_4, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_5, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_6, int32 K2Node_Event_Index, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool K2Node_SwitchInteger_CmpSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, int32 K2Node_Event_Index_1, bool K2Node_SwitchInteger_CmpSuccess_1)
 {
-	static auto Func = Class->GetFunction("ComModalTutorialPopup_C", "ExecuteUbergraph_ComModalTutorialPopup");
+	static class UFunction* Func = nullptr;
 
-	Params::UComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComModalTutorialPopup_C", "ExecuteUbergraph_ComModalTutorialPopup");
+
+	Params::UComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimationForward_ReturnValue = CallFunc_PlayAnimationForward_ReturnValue;
@@ -155,6 +194,4 @@ void UComModalTutorialPopup_C::ExecuteUbergraph_ComModalTutorialPopup(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

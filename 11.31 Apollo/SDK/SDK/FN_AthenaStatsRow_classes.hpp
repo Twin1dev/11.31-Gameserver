@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,11 +16,8 @@ class UAthenaStatsRow_C : public UFortProfileStatsRow
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x290(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaStatsRow_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaStatsRow_C* GetDefaultObj();
 
 	void SetStatValueAsText(class FText StatValue);
 	void PreConstruct(bool IsDesignTime);
@@ -32,6 +26,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

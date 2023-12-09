@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -20,11 +17,8 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x458(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	TArray<struct FTutorialHighlightData>        SentencedIndexedTutorialData;                      // 0x460(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("Announce_TutorialConversation_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AAnnounce_TutorialConversation_C* GetDefaultObj();
 
 	void HandleSentenceStop_UI(int32 SentenceIdx);
 	void HandleSentenceStart_UI(int32 SentenceIdx);
@@ -39,6 +33,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

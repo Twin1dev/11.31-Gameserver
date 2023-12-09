@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ChallengeListEntry_SpecialOffer.ChallengeListEntry_SpecialOffer_C
+// (None)
+
+class UClass* UChallengeListEntry_SpecialOffer_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChallengeListEntry_SpecialOffer_C");
+
+	return Clss;
+}
+
+
+// ChallengeListEntry_SpecialOffer_C ChallengeListEntry_SpecialOffer.Default__ChallengeListEntry_SpecialOffer_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChallengeListEntry_SpecialOffer_C* UChallengeListEntry_SpecialOffer_C::GetDefaultObj()
+{
+	static class UChallengeListEntry_SpecialOffer_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChallengeListEntry_SpecialOffer_C*>(UChallengeListEntry_SpecialOffer_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ChallengeListEntry_SpecialOffer.ChallengeListEntry_SpecialOffer_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UChallengeListEntry_SpecialOffer_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("ChallengeListEntry_SpecialOffer_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeListEntry_SpecialOffer_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeListEntry_SpecialOffer_C", "OnMouseEnter");
+
+	Params::UChallengeListEntry_SpecialOffer_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -42,9 +70,12 @@ void UChallengeListEntry_SpecialOffer_C::OnMouseEnter(const struct FGeometry& My
 
 void UChallengeListEntry_SpecialOffer_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("ChallengeListEntry_SpecialOffer_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeListEntry_SpecialOffer_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeListEntry_SpecialOffer_C", "OnMouseLeave");
+
+	Params::UChallengeListEntry_SpecialOffer_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -65,9 +96,12 @@ void UChallengeListEntry_SpecialOffer_C::OnMouseLeave(struct FPointerEvent& Mous
 
 void UChallengeListEntry_SpecialOffer_C::ExecuteUbergraph_ChallengeListEntry_SpecialOffer(int32 EntryPoint, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FPointerEvent& K2Node_Event_MouseEvent, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ChallengeListEntry_SpecialOffer_C", "ExecuteUbergraph_ChallengeListEntry_SpecialOffer");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeListEntry_SpecialOffer_C_ExecuteUbergraph_ChallengeListEntry_SpecialOffer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeListEntry_SpecialOffer_C", "ExecuteUbergraph_ChallengeListEntry_SpecialOffer");
+
+	Params::UChallengeListEntry_SpecialOffer_C_ExecuteUbergraph_ChallengeListEntry_SpecialOffer_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_MyGeometry = K2Node_Event_MyGeometry;
@@ -82,6 +116,4 @@ void UChallengeListEntry_SpecialOffer_C::ExecuteUbergraph_ChallengeListEntry_Spe
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

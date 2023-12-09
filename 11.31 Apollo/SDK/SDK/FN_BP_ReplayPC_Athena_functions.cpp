@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_ReplayPC_Athena.BP_ReplayPC_Athena_C
+// (Actor, PlayerController)
+
+class UClass* ABP_ReplayPC_Athena_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_ReplayPC_Athena_C");
+
+	return Clss;
+}
+
+
+// BP_ReplayPC_Athena_C BP_ReplayPC_Athena.Default__BP_ReplayPC_Athena_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_ReplayPC_Athena_C* ABP_ReplayPC_Athena_C::GetDefaultObj()
+{
+	static class ABP_ReplayPC_Athena_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_ReplayPC_Athena_C*>(ABP_ReplayPC_Athena_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_ReplayPC_Athena.BP_ReplayPC_Athena_C.IsGameplayCamera
@@ -24,9 +49,12 @@ namespace SDK
 
 void ABP_ReplayPC_Athena_C::IsGameplayCamera(bool* IsGameplayCamera, bool NewLocalVar_0, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_ReplayPC_Athena_C", "IsGameplayCamera");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ReplayPC_Athena_C_IsGameplayCamera_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "IsGameplayCamera");
+
+	Params::ABP_ReplayPC_Athena_C_IsGameplayCamera_Params Parms{};
 
 	Parms.NewLocalVar_0 = NewLocalVar_0;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
@@ -49,9 +77,12 @@ void ABP_ReplayPC_Athena_C::IsGameplayCamera(bool* IsGameplayCamera, bool NewLoc
 
 void ABP_ReplayPC_Athena_C::SetSkydivingAudioEnabled(bool Enabled, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue, bool CallFunc_IsValid_ReturnValue, class USoundBase* CallFunc_GetSkydivingSound_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_ReplayPC_Athena_C", "SetSkydivingAudioEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ReplayPC_Athena_C_SetSkydivingAudioEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "SetSkydivingAudioEnabled");
+
+	Params::ABP_ReplayPC_Athena_C_SetSkydivingAudioEnabled_Params Parms{};
 
 	Parms.Enabled = Enabled;
 	Parms.CallFunc_SpawnSound2D_ReturnValue = CallFunc_SpawnSound2D_ReturnValue;
@@ -74,9 +105,12 @@ void ABP_ReplayPC_Athena_C::SetSkydivingAudioEnabled(bool Enabled, class UAudioC
 
 class USoundBase* ABP_ReplayPC_Athena_C::GetSkydivingSound(bool Temp_bool_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable_1, class USoundBase* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BP_ReplayPC_Athena_C", "GetSkydivingSound");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ReplayPC_Athena_C_GetSkydivingSound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "GetSkydivingSound");
+
+	Params::ABP_ReplayPC_Athena_C_GetSkydivingSound_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -97,9 +131,12 @@ class USoundBase* ABP_ReplayPC_Athena_C::GetSkydivingSound(bool Temp_bool_Variab
 
 void ABP_ReplayPC_Athena_C::UserConstructionScript(class UAthenaMarkerComponent* CallFunc_GetMarkerComponent_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_ReplayPC_Athena_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ReplayPC_Athena_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "UserConstructionScript");
+
+	Params::ABP_ReplayPC_Athena_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_GetMarkerComponent_ReturnValue = CallFunc_GetMarkerComponent_ReturnValue;
 
@@ -114,12 +151,14 @@ void ABP_ReplayPC_Athena_C::UserConstructionScript(class UAthenaMarkerComponent*
 
 void ABP_ReplayPC_Athena_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_ReplayPC_Athena_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ReplayPC_Athena_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -131,9 +170,12 @@ void ABP_ReplayPC_Athena_C::ReceiveBeginPlay()
 
 void ABP_ReplayPC_Athena_C::OnNotifyNewPlaybackMultiplier(float NewMultiplier)
 {
-	static auto Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnNotifyNewPlaybackMultiplier");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ReplayPC_Athena_C_OnNotifyNewPlaybackMultiplier_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnNotifyNewPlaybackMultiplier");
+
+	Params::ABP_ReplayPC_Athena_C_OnNotifyNewPlaybackMultiplier_Params Parms{};
 
 	Parms.NewMultiplier = NewMultiplier;
 
@@ -149,9 +191,12 @@ void ABP_ReplayPC_Athena_C::OnNotifyNewPlaybackMultiplier(float NewMultiplier)
 
 void ABP_ReplayPC_Athena_C::_Speedup_Loops(float Playback_Multiplier)
 {
-	static auto Func = Class->GetFunction("BP_ReplayPC_Athena_C", " Speedup Loops");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ReplayPC_Athena_C__Speedup_Loops_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ReplayPC_Athena_C", " Speedup Loops");
+
+	Params::ABP_ReplayPC_Athena_C__Speedup_Loops_Params Parms{};
 
 	Parms.Playback_Multiplier = Playback_Multiplier;
 
@@ -167,9 +212,12 @@ void ABP_ReplayPC_Athena_C::_Speedup_Loops(float Playback_Multiplier)
 
 void ABP_ReplayPC_Athena_C::OnReplayHudVisibilityChanged(enum class EHudVisibilityState IsVisible)
 {
-	static auto Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnReplayHudVisibilityChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ReplayPC_Athena_C_OnReplayHudVisibilityChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnReplayHudVisibilityChanged");
+
+	Params::ABP_ReplayPC_Athena_C_OnReplayHudVisibilityChanged_Params Parms{};
 
 	Parms.IsVisible = IsVisible;
 
@@ -184,12 +232,14 @@ void ABP_ReplayPC_Athena_C::OnReplayHudVisibilityChanged(enum class EHudVisibili
 
 void ABP_ReplayPC_Athena_C::OnZoomOutEnd()
 {
-	static auto Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnZoomOutEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ReplayPC_Athena_C_OnZoomOutEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnZoomOutEnd");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -200,12 +250,14 @@ void ABP_ReplayPC_Athena_C::OnZoomOutEnd()
 
 void ABP_ReplayPC_Athena_C::OnZoomOutBegin()
 {
-	static auto Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnZoomOutBegin");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ReplayPC_Athena_C_OnZoomOutBegin_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnZoomOutBegin");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -216,12 +268,14 @@ void ABP_ReplayPC_Athena_C::OnZoomOutBegin()
 
 void ABP_ReplayPC_Athena_C::OnZoomInEnd()
 {
-	static auto Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnZoomInEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ReplayPC_Athena_C_OnZoomInEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnZoomInEnd");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -232,12 +286,14 @@ void ABP_ReplayPC_Athena_C::OnZoomInEnd()
 
 void ABP_ReplayPC_Athena_C::OnZoomInBegin()
 {
-	static auto Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnZoomInBegin");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ReplayPC_Athena_C_OnZoomInBegin_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "OnZoomInBegin");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -249,9 +305,12 @@ void ABP_ReplayPC_Athena_C::OnZoomInBegin()
 
 void ABP_ReplayPC_Athena_C::On_Pause_State_Changed(bool bPaused)
 {
-	static auto Func = Class->GetFunction("BP_ReplayPC_Athena_C", "On Pause State Changed");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ReplayPC_Athena_C_On_Pause_State_Changed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "On Pause State Changed");
+
+	Params::ABP_ReplayPC_Athena_C_On_Pause_State_Changed_Params Parms{};
 
 	Parms.bPaused = bPaused;
 
@@ -266,12 +325,14 @@ void ABP_ReplayPC_Athena_C::On_Pause_State_Changed(bool bPaused)
 
 void ABP_ReplayPC_Athena_C::Handle_Parachute_Audio_State()
 {
-	static auto Func = Class->GetFunction("BP_ReplayPC_Athena_C", "Handle Parachute Audio State");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ReplayPC_Athena_C_Handle_Parachute_Audio_State_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "Handle Parachute Audio State");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -282,12 +343,14 @@ void ABP_ReplayPC_Athena_C::Handle_Parachute_Audio_State()
 
 void ABP_ReplayPC_Athena_C::Looping_Audio_Update()
 {
-	static auto Func = Class->GetFunction("BP_ReplayPC_Athena_C", "Looping Audio Update");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ReplayPC_Athena_C_Looping_Audio_Update_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "Looping Audio Update");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -375,9 +438,12 @@ void ABP_ReplayPC_Athena_C::Looping_Audio_Update()
 
 void ABP_ReplayPC_Athena_C::ExecuteUbergraph_BP_ReplayPC_Athena(int32 EntryPoint, bool CallFunc_GetIsPlayingReplay_ReturnValue, enum class EHudVisibilityState Temp_byte_Variable, bool Temp_bool_Variable, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, bool Temp_bool_Variable_3, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, class UFortReplayContext* CallFunc_GetContext_ReturnValue, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue, int32 Temp_int_Array_Index_Variable, bool CallFunc_IsLocalPlayerController_ReturnValue, float K2Node_Event_NewMultiplier, bool CallFunc_BooleanAND_ReturnValue, class USoundMix* CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, TArray<class USoundMix*>& CallFunc_Map_Values_Values, class USoundMix* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_NotEqual_ObjectObject_ReturnValue, float K2Node_CustomEvent_Playback_Multiplier, bool CallFunc_Less_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue_1, class USoundBase* Temp_object_Variable, class UFortReplayContext* CallFunc_GetContext_ReturnValue_1, float CallFunc_MapRangeClamped_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_Greater_FloatFloat_ReturnValue_1, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue_2, bool Temp_bool_Variable_4, bool CallFunc_IsValid_ReturnValue_4, float CallFunc_MapRangeClamped_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue, bool CallFunc_IsValid_ReturnValue_5, bool CallFunc_NotEqual_FloatFloat_ReturnValue, enum class EHudVisibilityState K2Node_CustomEvent_IsVisible, const struct FTransform& Temp_struct_Variable, class UBP_AmbientAudioController_C* CallFunc_AddComponent_ReturnValue, bool K2Node_Select_Default, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue_3, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_IsValid_ReturnValue_6, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_1, class USoundBase* CallFunc_GetSkydivingSound_ReturnValue, class USoundBase* CallFunc_GetSkydivingSound_ReturnValue_1, bool CallFunc_NotEqual_ObjectObject_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_7, bool CallFunc_IsValid_ReturnValue_8, class AActor* CallFunc_GetViewTarget_ReturnValue, bool K2Node_CustomEvent_bPaused, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsParachuteOpen_ReturnValue, bool CallFunc_IsSkydiving_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_BooleanAND_ReturnValue_2, class USoundBase* Temp_object_Variable_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class USoundBase* K2Node_Select_Default_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_IsGameplayCamera_IsGameplayCamera, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_IsGameplayCamera_IsGameplayCamera_1, bool CallFunc_IsGameplayCamera_IsGameplayCamera_2, bool CallFunc_IsGameplayCamera_IsGameplayCamera_3, bool CallFunc_NotEqual_BoolBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_ReplayPC_Athena_C", "ExecuteUbergraph_BP_ReplayPC_Athena");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ReplayPC_Athena_C", "ExecuteUbergraph_BP_ReplayPC_Athena");
+
+	Params::ABP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetIsPlayingReplay_ReturnValue = CallFunc_GetIsPlayingReplay_ReturnValue;
@@ -463,6 +529,4 @@ void ABP_ReplayPC_Athena_C::ExecuteUbergraph_BP_ReplayPC_Athena(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

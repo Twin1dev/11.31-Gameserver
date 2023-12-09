@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -32,13 +29,6 @@ public:
 	struct FVector                               CallFunc_MakeVector_ReturnValue;                   // 0x28(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function Device_Wall_NoWeaponZone.Device_Wall_NoWeaponZone_C.UpdateVolumeSize
-struct ADevice_Wall_NoWeaponZone_C_UpdateVolumeSize_Params
-{
-public:
-};
-
 // 0x28 (0x28 - 0x0)
 // Function Device_Wall_NoWeaponZone.Device_Wall_NoWeaponZone_C.ExecuteUbergraph_Device_Wall_NoWeaponZone
 struct ADevice_Wall_NoWeaponZone_C_ExecuteUbergraph_Device_Wall_NoWeaponZone_Params
@@ -53,6 +43,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

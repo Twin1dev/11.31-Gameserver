@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass OptionsMenuRowSelector.OptionsMenuRowSelector_C
+// (None)
+
+class UClass* UOptionsMenuRowSelector_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OptionsMenuRowSelector_C");
+
+	return Clss;
+}
+
+
+// OptionsMenuRowSelector_C OptionsMenuRowSelector.Default__OptionsMenuRowSelector_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UOptionsMenuRowSelector_C* UOptionsMenuRowSelector_C::GetDefaultObj()
+{
+	static class UOptionsMenuRowSelector_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UOptionsMenuRowSelector_C*>(UOptionsMenuRowSelector_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function OptionsMenuRowSelector.OptionsMenuRowSelector_C.SetToolTipSize
@@ -26,9 +51,12 @@ namespace SDK
 
 void UOptionsMenuRowSelector_C::SetToolTipSize(const struct FVector2D& DefaultSize, const struct FVector2D& MobileSize, bool CallFunc_IsMobileGame_ReturnValue, bool Temp_bool_Variable, const struct FVector2D& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "SetToolTipSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_SetToolTipSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "SetToolTipSize");
+
+	Params::UOptionsMenuRowSelector_C_SetToolTipSize_Params Parms{};
 
 	Parms.DefaultSize = DefaultSize;
 	Parms.MobileSize = MobileSize;
@@ -54,9 +82,12 @@ void UOptionsMenuRowSelector_C::SetToolTipSize(const struct FVector2D& DefaultSi
 
 void UOptionsMenuRowSelector_C::SetFontSize(class UCommonTextBlock* Text, int32 DefaultFontSize, int32 MobileFontSize, const struct FSlateFontInfo& TempFont, bool Temp_bool_Variable, bool CallFunc_IsMobileGame_ReturnValue, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "SetFontSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_SetFontSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "SetFontSize");
+
+	Params::UOptionsMenuRowSelector_C_SetFontSize_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.DefaultFontSize = DefaultFontSize;
@@ -77,12 +108,14 @@ void UOptionsMenuRowSelector_C::SetFontSize(class UCommonTextBlock* Text, int32 
 
 void UOptionsMenuRowSelector_C::Hide_Tooltip()
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "Hide Tooltip");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_Hide_Tooltip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "Hide Tooltip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -94,9 +127,12 @@ void UOptionsMenuRowSelector_C::Hide_Tooltip()
 
 void UOptionsMenuRowSelector_C::Set_Selection_Required(bool Selection_Required)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "Set Selection Required");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_Set_Selection_Required_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "Set Selection Required");
+
+	Params::UOptionsMenuRowSelector_C_Set_Selection_Required_Params Parms{};
 
 	Parms.Selection_Required = Selection_Required;
 
@@ -110,13 +146,16 @@ void UOptionsMenuRowSelector_C::Set_Selection_Required(bool Selection_Required)
 // Parameters:
 // class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTooltip_Basic_S_C*          CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTooltipMinusBasicMinusS_C*  CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UOptionsMenuRowSelector_C::On_Get_Menu_Content(class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UTooltip_Basic_S_C* CallFunc_Create_ReturnValue)
+class UWidget* UOptionsMenuRowSelector_C::On_Get_Menu_Content(class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UTooltipMinusBasicMinusS_C* CallFunc_Create_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "On Get Menu Content");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_On_Get_Menu_Content_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "On Get Menu Content");
+
+	Params::UOptionsMenuRowSelector_C_On_Get_Menu_Content_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
 	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
@@ -134,12 +173,14 @@ class UWidget* UOptionsMenuRowSelector_C::On_Get_Menu_Content(class APlayerContr
 
 void UOptionsMenuRowSelector_C::Show_Tooltip()
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "Show Tooltip");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_Show_Tooltip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "Show Tooltip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -148,14 +189,17 @@ void UOptionsMenuRowSelector_C::Show_Tooltip()
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                              OptionIndex                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
 // class UCommonButton*               CallFunc_GetButtonAtIndex_ReturnValue                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UOptionsMenuRowSelector_C::DisableOption(int32 OptionIndex, class FText CallFunc_MakeLiteralText_ReturnValue, class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "DisableOption");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_DisableOption_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "DisableOption");
+
+	Params::UOptionsMenuRowSelector_C_DisableOption_Params Parms{};
 
 	Parms.OptionIndex = OptionIndex;
 	Parms.CallFunc_MakeLiteralText_ReturnValue = CallFunc_MakeLiteralText_ReturnValue;
@@ -173,9 +217,12 @@ void UOptionsMenuRowSelector_C::DisableOption(int32 OptionIndex, class FText Cal
 
 void UOptionsMenuRowSelector_C::Button_Hovered(class UCommonButton* Button_Hovered)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "Button Hovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_Button_Hovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "Button Hovered");
+
+	Params::UOptionsMenuRowSelector_C_Button_Hovered_Params Parms{};
 
 	Parms.Button_Hovered = Button_Hovered;
 
@@ -190,12 +237,14 @@ void UOptionsMenuRowSelector_C::Button_Hovered(class UCommonButton* Button_Hover
 
 void UOptionsMenuRowSelector_C::Deselect_All_Rows()
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "Deselect All Rows");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_Deselect_All_Rows_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "Deselect All Rows");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -207,9 +256,12 @@ void UOptionsMenuRowSelector_C::Deselect_All_Rows()
 
 void UOptionsMenuRowSelector_C::Update_Row_Selector(int32 Tab_Number)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "Update Row Selector");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_Update_Row_Selector_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "Update Row Selector");
+
+	Params::UOptionsMenuRowSelector_C_Update_Row_Selector_Params Parms{};
 
 	Parms.Tab_Number = Tab_Number;
 
@@ -229,9 +281,12 @@ void UOptionsMenuRowSelector_C::Update_Row_Selector(int32 Tab_Number)
 
 void UOptionsMenuRowSelector_C::Initialize_Row_Selector(class FText Row_Text, TArray<class FText>& Buttons, TArray<class FText>& Hover_Texts, bool Require_Selection, class UCommonTextBlock* Tab_Tooltip)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "Initialize Row Selector");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_Initialize_Row_Selector_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "Initialize Row Selector");
+
+	Params::UOptionsMenuRowSelector_C_Initialize_Row_Selector_Params Parms{};
 
 	Parms.Row_Text = Row_Text;
 	Parms.Buttons = Buttons;
@@ -250,12 +305,14 @@ void UOptionsMenuRowSelector_C::Initialize_Row_Selector(class FText Row_Text, TA
 
 void UOptionsMenuRowSelector_C::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "BP_OnEntryReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_BP_OnEntryReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "BP_OnEntryReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -267,9 +324,12 @@ void UOptionsMenuRowSelector_C::BP_OnEntryReleased()
 
 void UOptionsMenuRowSelector_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "BP_OnItemExpansionChanged");
+
+	Params::UOptionsMenuRowSelector_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -285,9 +345,12 @@ void UOptionsMenuRowSelector_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UOptionsMenuRowSelector_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "BP_OnItemSelectionChanged");
+
+	Params::UOptionsMenuRowSelector_C_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -302,12 +365,14 @@ void UOptionsMenuRowSelector_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UOptionsMenuRowSelector_C::Construct()
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -319,9 +384,12 @@ void UOptionsMenuRowSelector_C::Construct()
 
 void UOptionsMenuRowSelector_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "OnMouseLeave");
+
+	Params::UOptionsMenuRowSelector_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -336,12 +404,14 @@ void UOptionsMenuRowSelector_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 
 void UOptionsMenuRowSelector_C::Destruct()
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -353,9 +423,12 @@ void UOptionsMenuRowSelector_C::Destruct()
 
 void UOptionsMenuRowSelector_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "PreConstruct");
+
+	Params::UOptionsMenuRowSelector_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -371,9 +444,12 @@ void UOptionsMenuRowSelector_C::PreConstruct(bool IsDesignTime)
 
 void UOptionsMenuRowSelector_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "OnListItemObjectSet");
+
+	Params::UOptionsMenuRowSelector_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -390,9 +466,12 @@ void UOptionsMenuRowSelector_C::OnListItemObjectSet(class UObject* ListItemObjec
 
 void UOptionsMenuRowSelector_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "OnMouseEnter");
+
+	Params::UOptionsMenuRowSelector_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -409,9 +488,12 @@ void UOptionsMenuRowSelector_C::OnMouseEnter(const struct FGeometry& MyGeometry,
 
 void UOptionsMenuRowSelector_C::UpdateSetting(class UCommonTextBlock* TooltipTextBlock)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "UpdateSetting");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_UpdateSetting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "UpdateSetting");
+
+	Params::UOptionsMenuRowSelector_C_UpdateSetting_Params Parms{};
 
 	Parms.TooltipTextBlock = TooltipTextBlock;
 
@@ -426,12 +508,14 @@ void UOptionsMenuRowSelector_C::UpdateSetting(class UCommonTextBlock* TooltipTex
 
 void UOptionsMenuRowSelector_C::CenterOnWidget()
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "CenterOnWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_CenterOnWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "CenterOnWidget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -444,9 +528,12 @@ void UOptionsMenuRowSelector_C::CenterOnWidget()
 
 void UOptionsMenuRowSelector_C::OnSelectedButtonChanged_Event_0(class UCommonButton* AssociatedButton, int32 ButtonIndex)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "OnSelectedButtonChanged_Event_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_OnSelectedButtonChanged_Event_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "OnSelectedButtonChanged_Event_0");
+
+	Params::UOptionsMenuRowSelector_C_OnSelectedButtonChanged_Event_0_Params Parms{};
 
 	Parms.AssociatedButton = AssociatedButton;
 	Parms.ButtonIndex = ButtonIndex;
@@ -463,9 +550,12 @@ void UOptionsMenuRowSelector_C::OnSelectedButtonChanged_Event_0(class UCommonBut
 
 void UOptionsMenuRowSelector_C::BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature");
+
+	Params::UOptionsMenuRowSelector_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -536,7 +626,7 @@ void UOptionsMenuRowSelector_C::BndEvt__ButtonTouchTooltip_K2Node_ComponentBound
 // class UCommonButton*               K2Node_CustomEvent_AssociatedButton                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_CustomEvent_ButtonIndex                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<class FText>                CallFunc_GetSettingDisplayNames_ReturnValue                      (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Array_Get_Item                                          ()
+// class FText                        CallFunc_Array_Get_Item                                          (None)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable_4                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -564,9 +654,12 @@ void UOptionsMenuRowSelector_C::BndEvt__ButtonTouchTooltip_K2Node_ComponentBound
 
 void UOptionsMenuRowSelector_C::ExecuteUbergraph_OptionsMenuRowSelector(int32 EntryPoint, class UFortSettingsContext* CallFunc_GetContext_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, class UFortSettingsContext* CallFunc_GetContext_ReturnValue_1, class UFortSettingsContext* CallFunc_GetContext_ReturnValue_2, bool Temp_bool_Variable, int32 Temp_int_Variable, bool Temp_bool_Variable_1, const struct FVector2D& Temp_struct_Variable, const struct FVector2D& Temp_struct_Variable_1, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_4, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, bool K2Node_Event_bIsExpanded, bool K2Node_Event_bIsSelected, const struct FPointerEvent& K2Node_Event_MouseEvent_1, class UCommonButtonGroup* CallFunc_SpawnObject_ReturnValue, bool K2Node_Event_IsDesignTime, int32 Temp_int_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize, int32 CallFunc_RandomIntegerInRange_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_LessEqual_IntInt_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue, class UObject* K2Node_Event_ListItemObject, class UFortSettingInfo* K2Node_DynamicCast_AsFort_Setting_Info, bool K2Node_DynamicCast_bSuccess, const struct FVector2D& K2Node_Select_Default, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, class UCommonTextBlock* K2Node_Event_TooltipTextBlock, bool CallFunc_TextIsEmpty_ReturnValue, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, int32 Temp_int_Variable_2, bool CallFunc_IsMobileGame_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_1, enum class ESlateVisibility K2Node_Select_Default_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, int32 Temp_int_Variable_3, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize_1, bool Temp_bool_Variable_5, class UIconTextButton_C* CallFunc_Create_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue_2, int32 K2Node_Select_Default_3, class UPanelSlot* CallFunc_AddChild_ReturnValue, class UHorizontalBoxSlot* K2Node_DynamicCast_AsHorizontal_Box_Slot, bool K2Node_DynamicCast_bSuccess_1, class UCommonButton* K2Node_CustomEvent_AssociatedButton, int32 K2Node_CustomEvent_ButtonIndex, TArray<class FText>& CallFunc_GetSettingDisplayNames_ReturnValue, class FText CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_4, int32 CallFunc_GetRotatorSettingValue_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_TextIsEmpty_ReturnValue_1, int32 CallFunc_GetSelectedButtonIndex_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable_5, int32 K2Node_Select_Default_4, class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue, bool Temp_bool_Variable_6, enum class ESlateVisibility K2Node_Select_Default_5, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, bool Temp_bool_Variable_7, enum class ESlateVisibility K2Node_Select_Default_6, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, class UIconTextButton_C* CallFunc_Create_ReturnValue_1, float K2Node_Select_Default_7, class UPanelSlot* CallFunc_AddChild_ReturnValue_1, class UHorizontalBoxSlot* K2Node_DynamicCast_AsHorizontal_Box_Slot_1, bool K2Node_DynamicCast_bSuccess_2)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "ExecuteUbergraph_OptionsMenuRowSelector");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "ExecuteUbergraph_OptionsMenuRowSelector");
+
+	Params::UOptionsMenuRowSelector_C_ExecuteUbergraph_OptionsMenuRowSelector_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -665,9 +758,12 @@ void UOptionsMenuRowSelector_C::ExecuteUbergraph_OptionsMenuRowSelector(int32 En
 
 void UOptionsMenuRowSelector_C::Selector_Button_Selected__DelegateSignature(int32 Tab_Id)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRowSelector_C", "Selector Button Selected__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRowSelector_C_Selector_Button_Selected__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRowSelector_C", "Selector Button Selected__DelegateSignature");
+
+	Params::UOptionsMenuRowSelector_C_Selector_Button_Selected__DelegateSignature_Params Parms{};
 
 	Parms.Tab_Id = Tab_Id;
 
@@ -677,6 +773,4 @@ void UOptionsMenuRowSelector_C::Selector_Button_Selected__DelegateSignature(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

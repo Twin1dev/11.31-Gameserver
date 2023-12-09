@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_PlayerHealthDamage_CameraLensEffect.B_PlayerHealthDamage_CameraLensEffect_C
+// (Actor)
+
+class UClass* AB_PlayerHealthDamage_CameraLensEffect_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_PlayerHealthDamage_CameraLensEffect_C");
+
+	return Clss;
+}
+
+
+// B_PlayerHealthDamage_CameraLensEffect_C B_PlayerHealthDamage_CameraLensEffect.Default__B_PlayerHealthDamage_CameraLensEffect_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_PlayerHealthDamage_CameraLensEffect_C* AB_PlayerHealthDamage_CameraLensEffect_C::GetDefaultObj()
+{
+	static class AB_PlayerHealthDamage_CameraLensEffect_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_PlayerHealthDamage_CameraLensEffect_C*>(AB_PlayerHealthDamage_CameraLensEffect_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_PlayerHealthDamage_CameraLensEffect.B_PlayerHealthDamage_CameraLensEffect_C.PassParticle_Parameter
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void AB_PlayerHealthDamage_CameraLensEffect_C::PassParticle_Parameter(float NewParam, bool First_Hit)
 {
-	static auto Func = Class->GetFunction("B_PlayerHealthDamage_CameraLensEffect_C", "PassParticle_Parameter");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_PlayerHealthDamage_CameraLensEffect_C_PassParticle_Parameter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_PlayerHealthDamage_CameraLensEffect_C", "PassParticle_Parameter");
+
+	Params::AB_PlayerHealthDamage_CameraLensEffect_C_PassParticle_Parameter_Params Parms{};
 
 	Parms.NewParam = NewParam;
 	Parms.First_Hit = First_Hit;
@@ -47,9 +75,12 @@ void AB_PlayerHealthDamage_CameraLensEffect_C::PassParticle_Parameter(float NewP
 
 void AB_PlayerHealthDamage_CameraLensEffect_C::ExecuteUbergraph_B_PlayerHealthDamage_CameraLensEffect(int32 EntryPoint, float K2Node_CustomEvent_NewParam, bool K2Node_CustomEvent_First_Hit, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("B_PlayerHealthDamage_CameraLensEffect_C", "ExecuteUbergraph_B_PlayerHealthDamage_CameraLensEffect");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_PlayerHealthDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerHealthDamage_CameraLensEffect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_PlayerHealthDamage_CameraLensEffect_C", "ExecuteUbergraph_B_PlayerHealthDamage_CameraLensEffect");
+
+	Params::AB_PlayerHealthDamage_CameraLensEffect_C_ExecuteUbergraph_B_PlayerHealthDamage_CameraLensEffect_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_NewParam = K2Node_CustomEvent_NewParam;
@@ -64,6 +95,4 @@ void AB_PlayerHealthDamage_CameraLensEffect_C::ExecuteUbergraph_B_PlayerHealthDa
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

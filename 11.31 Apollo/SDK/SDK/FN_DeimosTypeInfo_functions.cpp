@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass DeimosTypeInfo.DeimosTypeInfo_C
+// (None)
+
+class UClass* IDeimosTypeInfo_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DeimosTypeInfo_C");
+
+	return Clss;
+}
+
+
+// DeimosTypeInfo_C DeimosTypeInfo.Default__DeimosTypeInfo_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class IDeimosTypeInfo_C* IDeimosTypeInfo_C::GetDefaultObj()
+{
+	static class IDeimosTypeInfo_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<IDeimosTypeInfo_C*>(IDeimosTypeInfo_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function DeimosTypeInfo.DeimosTypeInfo_C.GetEnemyColor
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -22,20 +47,21 @@ namespace SDK
 
 void IDeimosTypeInfo_C::GetEnemyColor(struct FLinearColor* Color)
 {
-	static auto Func = Class->GetFunction("DeimosTypeInfo_C", "GetEnemyColor");
+	static class UFunction* Func = nullptr;
 
-	Params::IDeimosTypeInfo_C_GetEnemyColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DeimosTypeInfo_C", "GetEnemyColor");
+
+	Params::IDeimosTypeInfo_C_GetEnemyColor_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Color != nullptr)
-		*Color = Parms.Color;
+		*Color = std::move(Parms.Color);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

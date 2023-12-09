@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass PlayerSurveyDispatcher.PlayerSurveyDispatcher_C
+// (None)
+
+class UClass* UPlayerSurveyDispatcher_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerSurveyDispatcher_C");
+
+	return Clss;
+}
+
+
+// PlayerSurveyDispatcher_C PlayerSurveyDispatcher.Default__PlayerSurveyDispatcher_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerSurveyDispatcher_C* UPlayerSurveyDispatcher_C::GetDefaultObj()
+{
+	static class UPlayerSurveyDispatcher_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerSurveyDispatcher_C*>(UPlayerSurveyDispatcher_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function PlayerSurveyDispatcher.PlayerSurveyDispatcher_C.DoStartSurveyIntro
@@ -25,9 +50,12 @@ namespace SDK
 
 void UPlayerSurveyDispatcher_C::DoStartSurveyIntro(class UFortPlayerSurveyPanelBase* Widget, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UPlayerSurveyPanel_C* K2Node_DynamicCast_AsPlayer_Survey_Panel, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyDispatcher_C", "DoStartSurveyIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyDispatcher_C_DoStartSurveyIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyDispatcher_C", "DoStartSurveyIntro");
+
+	Params::UPlayerSurveyDispatcher_C_DoStartSurveyIntro_Params Parms{};
 
 	Parms.Widget = Widget;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -46,9 +74,12 @@ void UPlayerSurveyDispatcher_C::DoStartSurveyIntro(class UFortPlayerSurveyPanelB
 
 void UPlayerSurveyDispatcher_C::DisplaySurveyWidget(class UFortPlayerSurveyPanelBase* Widget)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyDispatcher_C", "DisplaySurveyWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyDispatcher_C_DisplaySurveyWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyDispatcher_C", "DisplaySurveyWidget");
+
+	Params::UPlayerSurveyDispatcher_C_DisplaySurveyWidget_Params Parms{};
 
 	Parms.Widget = Widget;
 
@@ -64,9 +95,12 @@ void UPlayerSurveyDispatcher_C::DisplaySurveyWidget(class UFortPlayerSurveyPanel
 
 void UPlayerSurveyDispatcher_C::StartSurveyIntro(class UFortPlayerSurveyPanelBase* Widget)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyDispatcher_C", "StartSurveyIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyDispatcher_C_StartSurveyIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyDispatcher_C", "StartSurveyIntro");
+
+	Params::UPlayerSurveyDispatcher_C_StartSurveyIntro_Params Parms{};
 
 	Parms.Widget = Widget;
 
@@ -82,9 +116,12 @@ void UPlayerSurveyDispatcher_C::StartSurveyIntro(class UFortPlayerSurveyPanelBas
 
 void UPlayerSurveyDispatcher_C::HandleFirstActivation(class UCommonActivatablePanel* Panel)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyDispatcher_C", "HandleFirstActivation");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyDispatcher_C_HandleFirstActivation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyDispatcher_C", "HandleFirstActivation");
+
+	Params::UPlayerSurveyDispatcher_C_HandleFirstActivation_Params Parms{};
 
 	Parms.Panel = Panel;
 
@@ -109,9 +146,12 @@ void UPlayerSurveyDispatcher_C::HandleFirstActivation(class UCommonActivatablePa
 
 void UPlayerSurveyDispatcher_C::ExecuteUbergraph_PlayerSurveyDispatcher(int32 EntryPoint, class UCommonActivatablePanel* K2Node_CustomEvent_Panel, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, class UFortPlayerSurveyPanelBase* K2Node_DynamicCast_AsFort_Player_Survey_Panel_Base, bool K2Node_DynamicCast_bSuccess_1, class UFortPlayerSurveyPanelBase* K2Node_Event_Widget, class UFortPlayerSurveyPanelBase* K2Node_Event_Widget_1, bool CallFunc_IsActivated_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyDispatcher_C", "ExecuteUbergraph_PlayerSurveyDispatcher");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyDispatcher_C_ExecuteUbergraph_PlayerSurveyDispatcher_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyDispatcher_C", "ExecuteUbergraph_PlayerSurveyDispatcher");
+
+	Params::UPlayerSurveyDispatcher_C_ExecuteUbergraph_PlayerSurveyDispatcher_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_Panel = K2Node_CustomEvent_Panel;
@@ -130,6 +170,4 @@ void UPlayerSurveyDispatcher_C::ExecuteUbergraph_PlayerSurveyDispatcher(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

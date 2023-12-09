@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TeamMemberPedestal_Nameplate.TeamMemberPedestal_Nameplate_C
+// (None)
+
+class UClass* UTeamMemberPedestal_Nameplate_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TeamMemberPedestal_Nameplate_C");
+
+	return Clss;
+}
+
+
+// TeamMemberPedestal_Nameplate_C TeamMemberPedestal_Nameplate.Default__TeamMemberPedestal_Nameplate_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTeamMemberPedestal_Nameplate_C* UTeamMemberPedestal_Nameplate_C::GetDefaultObj()
+{
+	static class UTeamMemberPedestal_Nameplate_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTeamMemberPedestal_Nameplate_C*>(UTeamMemberPedestal_Nameplate_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TeamMemberPedestal_Nameplate.TeamMemberPedestal_Nameplate_C.OnReadyStatusChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UTeamMemberPedestal_Nameplate_C::OnReadyStatusChanged(enum class EGameReadiness GameReadiness)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "OnReadyStatusChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberPedestal_Nameplate_C_OnReadyStatusChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "OnReadyStatusChanged");
+
+	Params::UTeamMemberPedestal_Nameplate_C_OnReadyStatusChanged_Params Parms{};
 
 	Parms.GameReadiness = GameReadiness;
 
@@ -40,9 +68,12 @@ void UTeamMemberPedestal_Nameplate_C::OnReadyStatusChanged(enum class EGameReadi
 
 void UTeamMemberPedestal_Nameplate_C::BP_OnTeamMemberEstablished(bool bHasValidMember)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "BP_OnTeamMemberEstablished");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberPedestal_Nameplate_C_BP_OnTeamMemberEstablished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "BP_OnTeamMemberEstablished");
+
+	Params::UTeamMemberPedestal_Nameplate_C_BP_OnTeamMemberEstablished_Params Parms{};
 
 	Parms.bHasValidMember = bHasValidMember;
 
@@ -57,12 +88,14 @@ void UTeamMemberPedestal_Nameplate_C::BP_OnTeamMemberEstablished(bool bHasValidM
 
 void UTeamMemberPedestal_Nameplate_C::Construct()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberPedestal_Nameplate_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -75,9 +108,12 @@ void UTeamMemberPedestal_Nameplate_C::Construct()
 
 void UTeamMemberPedestal_Nameplate_C::OnFrontEndCameraChanged(enum class EFrontEndCamera NewCamera, enum class EFrontEndCamera OldCamera)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "OnFrontEndCameraChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberPedestal_Nameplate_C_OnFrontEndCameraChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "OnFrontEndCameraChanged");
+
+	Params::UTeamMemberPedestal_Nameplate_C_OnFrontEndCameraChanged_Params Parms{};
 
 	Parms.NewCamera = NewCamera;
 	Parms.OldCamera = OldCamera;
@@ -94,9 +130,12 @@ void UTeamMemberPedestal_Nameplate_C::OnFrontEndCameraChanged(enum class EFrontE
 
 void UTeamMemberPedestal_Nameplate_C::OnPlayReadyAudio(bool bIsReadyForMatchmaking)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "OnPlayReadyAudio");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberPedestal_Nameplate_C_OnPlayReadyAudio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "OnPlayReadyAudio");
+
+	Params::UTeamMemberPedestal_Nameplate_C_OnPlayReadyAudio_Params Parms{};
 
 	Parms.bIsReadyForMatchmaking = bIsReadyForMatchmaking;
 
@@ -112,9 +151,12 @@ void UTeamMemberPedestal_Nameplate_C::OnPlayReadyAudio(bool bIsReadyForMatchmaki
 
 void UTeamMemberPedestal_Nameplate_C::OnCurrentSubGameChanged(enum class ESubGame NewSubGame)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "OnCurrentSubGameChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberPedestal_Nameplate_C_OnCurrentSubGameChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "OnCurrentSubGameChanged");
+
+	Params::UTeamMemberPedestal_Nameplate_C_OnCurrentSubGameChanged_Params Parms{};
 
 	Parms.NewSubGame = NewSubGame;
 
@@ -160,7 +202,7 @@ void UTeamMemberPedestal_Nameplate_C::OnCurrentSubGameChanged(enum class ESubGam
 // enum class ESlateVisibility        K2Node_Select_Default_2                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_bIsReadyForMatchmaking                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FLinearColor                K2Node_Select_Default_3                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 // enum class ESubGame                K2Node_Event_NewSubGame                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  K2Node_Select_Default_4                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue_2                       (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -168,9 +210,12 @@ void UTeamMemberPedestal_Nameplate_C::OnCurrentSubGameChanged(enum class ESubGam
 
 void UTeamMemberPedestal_Nameplate_C::ExecuteUbergraph_TeamMemberPedestal_Nameplate(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, bool CallFunc_IsUsingGamepad_ReturnValue, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility Temp_byte_Variable_4, bool Temp_bool_Variable_2, enum class EGameReadiness Temp_byte_Variable_5, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, enum class EGameReadiness K2Node_Event_GameReadiness, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool K2Node_Event_bHasValidMember, enum class EFrontEndCamera K2Node_CustomEvent_NewCamera, enum class EFrontEndCamera K2Node_CustomEvent_OldCamera, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable_8, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_BooleanAND_ReturnValue, bool Temp_bool_Variable_4, enum class ESlateVisibility K2Node_Select_Default_1, enum class ESlateVisibility K2Node_Select_Default_2, bool K2Node_Event_bIsReadyForMatchmaking, const struct FLinearColor& K2Node_Select_Default_3, const struct FSlateColor& K2Node_MakeStruct_SlateColor, enum class ESubGame K2Node_Event_NewSubGame, class USoundBase* K2Node_Select_Default_4, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, enum class ESlateVisibility K2Node_Select_Default_5)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "ExecuteUbergraph_TeamMemberPedestal_Nameplate");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberPedestal_Nameplate_C_ExecuteUbergraph_TeamMemberPedestal_Nameplate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_Nameplate_C", "ExecuteUbergraph_TeamMemberPedestal_Nameplate");
+
+	Params::UTeamMemberPedestal_Nameplate_C_ExecuteUbergraph_TeamMemberPedestal_Nameplate_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -218,6 +263,4 @@ void UTeamMemberPedestal_Nameplate_C::ExecuteUbergraph_TeamMemberPedestal_Namepl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

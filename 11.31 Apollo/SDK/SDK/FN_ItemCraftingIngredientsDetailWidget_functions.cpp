@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ItemCraftingIngredientsDetailWidget.ItemCraftingIngredientsDetailWidget_C
+// (None)
+
+class UClass* UItemCraftingIngredientsDetailWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemCraftingIngredientsDetailWidget_C");
+
+	return Clss;
+}
+
+
+// ItemCraftingIngredientsDetailWidget_C ItemCraftingIngredientsDetailWidget.Default__ItemCraftingIngredientsDetailWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemCraftingIngredientsDetailWidget_C* UItemCraftingIngredientsDetailWidget_C::GetDefaultObj()
+{
+	static class UItemCraftingIngredientsDetailWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemCraftingIngredientsDetailWidget_C*>(UItemCraftingIngredientsDetailWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ItemCraftingIngredientsDetailWidget.ItemCraftingIngredientsDetailWidget_C.HandlePostDifferentItemToDetailSet
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientsDetailWidget_C", "HandlePostDifferentItemToDetailSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientsDetailWidget_C_HandlePostDifferentItemToDetailSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientsDetailWidget_C", "HandlePostDifferentItemToDetailSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToDetailSet(
 
 void UItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientsDetailWidget_C", "HandlePostDifferentItemToCompareWithSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientsDetailWidget_C_HandlePostDifferentItemToCompareWithSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientsDetailWidget_C", "HandlePostDifferentItemToCompareWithSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -59,9 +88,12 @@ void UItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToCompareWit
 
 void UItemCraftingIngredientsDetailWidget_C::ExecuteUbergraph_ItemCraftingIngredientsDetailWidget(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_IsEmptyList_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientsDetailWidget_C", "ExecuteUbergraph_ItemCraftingIngredientsDetailWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_ItemCraftingIngredientsDetailWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientsDetailWidget_C", "ExecuteUbergraph_ItemCraftingIngredientsDetailWidget");
+
+	Params::UItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_ItemCraftingIngredientsDetailWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -76,6 +108,4 @@ void UItemCraftingIngredientsDetailWidget_C::ExecuteUbergraph_ItemCraftingIngred
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

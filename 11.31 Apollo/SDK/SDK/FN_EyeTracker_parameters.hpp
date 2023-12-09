@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -47,7 +44,7 @@ struct UEyeTrackerFunctionLibrary_GetStereoGazeData_Params
 public:
 	struct FEyeTrackerStereoGazeData             OutGazeData;                                       // 0x0(0x40)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x40(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4314[0x3];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2357[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x2C (0x2C - 0x0)
@@ -57,12 +54,10 @@ struct UEyeTrackerFunctionLibrary_GetGazeData_Params
 public:
 	struct FEyeTrackerGazeData                   OutGazeData;                                       // 0x0(0x28)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x28(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4315[0x3];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2358[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

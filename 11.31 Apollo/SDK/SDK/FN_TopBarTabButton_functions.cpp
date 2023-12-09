@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass TopBarTabButton.TopBarTabButton_C
+// (None)
+
+class UClass* UTopBarTabButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TopBarTabButton_C");
+
+	return Clss;
+}
+
+
+// TopBarTabButton_C TopBarTabButton.Default__TopBarTabButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTopBarTabButton_C* UTopBarTabButton_C::GetDefaultObj()
+{
+	static class UTopBarTabButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTopBarTabButton_C*>(UTopBarTabButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function TopBarTabButton.TopBarTabButton_C.OverrideIcon
@@ -28,9 +53,12 @@ namespace SDK
 
 void UTopBarTabButton_C::OverrideIcon(bool Show, const struct FSlateBrush& InSlateBrush, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TopBarTabButton_C", "OverrideIcon");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBarTabButton_C_OverrideIcon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBarTabButton_C", "OverrideIcon");
+
+	Params::UTopBarTabButton_C_OverrideIcon_Params Parms{};
 
 	Parms.Show = Show;
 	Parms.InSlateBrush = InSlateBrush;
@@ -54,9 +82,12 @@ void UTopBarTabButton_C::OverrideIcon(bool Show, const struct FSlateBrush& InSla
 
 void UTopBarTabButton_C::SetText(class FText ButtonText, bool CallFunc_TextIsEmpty_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TopBarTabButton_C", "SetText");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBarTabButton_C_SetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBarTabButton_C", "SetText");
+
+	Params::UTopBarTabButton_C_SetText_Params Parms{};
 
 	Parms.ButtonText = ButtonText;
 	Parms.CallFunc_TextIsEmpty_ReturnValue = CallFunc_TextIsEmpty_ReturnValue;
@@ -74,9 +105,12 @@ void UTopBarTabButton_C::SetText(class FText ButtonText, bool CallFunc_TextIsEmp
 
 void UTopBarTabButton_C::UpdateMIDWithRandomValues(bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TopBarTabButton_C", "UpdateMIDWithRandomValues");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBarTabButton_C_UpdateMIDWithRandomValues_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBarTabButton_C", "UpdateMIDWithRandomValues");
+
+	Params::UTopBarTabButton_C_UpdateMIDWithRandomValues_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
@@ -95,9 +129,12 @@ void UTopBarTabButton_C::UpdateMIDWithRandomValues(bool CallFunc_IsValid_ReturnV
 
 void UTopBarTabButton_C::SeedRandomValues(float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue_1, float CallFunc_RandomFloatInRange_ReturnValue_2, float CallFunc_RandomFloatInRange_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("TopBarTabButton_C", "SeedRandomValues");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBarTabButton_C_SeedRandomValues_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBarTabButton_C", "SeedRandomValues");
+
+	Params::UTopBarTabButton_C_SeedRandomValues_Params Parms{};
 
 	Parms.CallFunc_RandomFloatInRange_ReturnValue = CallFunc_RandomFloatInRange_ReturnValue;
 	Parms.CallFunc_RandomFloatInRange_ReturnValue_1 = CallFunc_RandomFloatInRange_ReturnValue_1;
@@ -116,9 +153,12 @@ void UTopBarTabButton_C::SeedRandomValues(float CallFunc_RandomFloatInRange_Retu
 
 void UTopBarTabButton_C::InitializeButtonBorderMID(class UMaterialInstanceDynamic* CallFunc_GetSingleMaterialStyleMID_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TopBarTabButton_C", "InitializeButtonBorderMID");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBarTabButton_C_InitializeButtonBorderMID_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBarTabButton_C", "InitializeButtonBorderMID");
+
+	Params::UTopBarTabButton_C_InitializeButtonBorderMID_Params Parms{};
 
 	Parms.CallFunc_GetSingleMaterialStyleMID_ReturnValue = CallFunc_GetSingleMaterialStyleMID_ReturnValue;
 
@@ -134,9 +174,12 @@ void UTopBarTabButton_C::InitializeButtonBorderMID(class UMaterialInstanceDynami
 
 void UTopBarTabButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("TopBarTabButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBarTabButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBarTabButton_C", "PreConstruct");
+
+	Params::UTopBarTabButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -151,12 +194,14 @@ void UTopBarTabButton_C::PreConstruct(bool IsDesignTime)
 
 void UTopBarTabButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("TopBarTabButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBarTabButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBarTabButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -167,12 +212,14 @@ void UTopBarTabButton_C::Construct()
 
 void UTopBarTabButton_C::OnInitialized()
 {
-	static auto Func = Class->GetFunction("TopBarTabButton_C", "OnInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBarTabButton_C_OnInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBarTabButton_C", "OnInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -185,9 +232,12 @@ void UTopBarTabButton_C::OnInitialized()
 
 void UTopBarTabButton_C::OnSelectedChangedEvent(class UCommonButton* Button, bool Selected)
 {
-	static auto Func = Class->GetFunction("TopBarTabButton_C", "OnSelectedChangedEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBarTabButton_C_OnSelectedChangedEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBarTabButton_C", "OnSelectedChangedEvent");
+
+	Params::UTopBarTabButton_C_OnSelectedChangedEvent_Params Parms{};
 
 	Parms.Button = Button;
 	Parms.Selected = Selected;
@@ -204,9 +254,12 @@ void UTopBarTabButton_C::OnSelectedChangedEvent(class UCommonButton* Button, boo
 
 void UTopBarTabButton_C::HandleSelectionChangedVisuals(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("TopBarTabButton_C", "HandleSelectionChangedVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBarTabButton_C_HandleSelectionChangedVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBarTabButton_C", "HandleSelectionChangedVisuals");
+
+	Params::UTopBarTabButton_C_HandleSelectionChangedVisuals_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -221,12 +274,14 @@ void UTopBarTabButton_C::HandleSelectionChangedVisuals(bool bIsSelected)
 
 void UTopBarTabButton_C::OnCurrentTextStyleChanged()
 {
-	static auto Func = Class->GetFunction("TopBarTabButton_C", "OnCurrentTextStyleChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBarTabButton_C_OnCurrentTextStyleChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBarTabButton_C", "OnCurrentTextStyleChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -237,12 +292,14 @@ void UTopBarTabButton_C::OnCurrentTextStyleChanged()
 
 void UTopBarTabButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("TopBarTabButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBarTabButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBarTabButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -253,12 +310,14 @@ void UTopBarTabButton_C::BP_OnHovered()
 
 void UTopBarTabButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("TopBarTabButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBarTabButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBarTabButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -269,12 +328,14 @@ void UTopBarTabButton_C::BP_OnUnhovered()
 
 void UTopBarTabButton_C::OnUseAlternateTab()
 {
-	static auto Func = Class->GetFunction("TopBarTabButton_C", "OnUseAlternateTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBarTabButton_C_OnUseAlternateTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBarTabButton_C", "OnUseAlternateTab");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -293,8 +354,8 @@ void UTopBarTabButton_C::OnUseAlternateTab()
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UCommonButton*               K2Node_CustomEvent_Button                                        (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_CustomEvent_Selected                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor_1                                   ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor_1                                   (None)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_CustomEvent_bIsSelected                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UClass*                      K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -309,9 +370,12 @@ void UTopBarTabButton_C::OnUseAlternateTab()
 
 void UTopBarTabButton_C::ExecuteUbergraph_TopBarTabButton(int32 EntryPoint, bool Temp_bool_Variable, class UClass* Temp_class_Variable, class UClass* Temp_class_Variable_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool K2Node_Event_IsDesignTime, bool CallFunc_IsMobileGame_ReturnValue, class UNormalBangWrapper_C* K2Node_DynamicCast_AsNormal_Bang_Wrapper, bool K2Node_DynamicCast_bSuccess, class UCommonButton* K2Node_CustomEvent_Button, bool K2Node_CustomEvent_Selected, const struct FSlateColor& K2Node_MakeStruct_SlateColor, const struct FSlateColor& K2Node_MakeStruct_SlateColor_1, bool CallFunc_BooleanOR_ReturnValue, bool K2Node_CustomEvent_bIsSelected, class UClass* K2Node_Select_Default, bool CallFunc_EqualEqual_BoolBool_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_1, bool CallFunc_IsMobileGame_ReturnValue_1, bool CallFunc_IsMobileGame_ReturnValue_2, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TopBarTabButton_C", "ExecuteUbergraph_TopBarTabButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UTopBarTabButton_C_ExecuteUbergraph_TopBarTabButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TopBarTabButton_C", "ExecuteUbergraph_TopBarTabButton");
+
+	Params::UTopBarTabButton_C_ExecuteUbergraph_TopBarTabButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -344,6 +408,4 @@ void UTopBarTabButton_C::ExecuteUbergraph_TopBarTabButton(int32 EntryPoint, bool
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

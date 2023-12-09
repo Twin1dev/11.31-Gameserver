@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass MinimalChallengeEntry.MinimalChallengeEntry_C
+// (None)
+
+class UClass* UMinimalChallengeEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MinimalChallengeEntry_C");
+
+	return Clss;
+}
+
+
+// MinimalChallengeEntry_C MinimalChallengeEntry.Default__MinimalChallengeEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMinimalChallengeEntry_C* UMinimalChallengeEntry_C::GetDefaultObj()
+{
+	static class UMinimalChallengeEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMinimalChallengeEntry_C*>(UMinimalChallengeEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MinimalChallengeEntry.MinimalChallengeEntry_C.OnChallengeInfoSet
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UMinimalChallengeEntry_C::OnChallengeInfoSet(bool bIsInProgress)
 {
-	static auto Func = Class->GetFunction("MinimalChallengeEntry_C", "OnChallengeInfoSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinimalChallengeEntry_C_OnChallengeInfoSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinimalChallengeEntry_C", "OnChallengeInfoSet");
+
+	Params::UMinimalChallengeEntry_C_OnChallengeInfoSet_Params Parms{};
 
 	Parms.bIsInProgress = bIsInProgress;
 
@@ -45,9 +73,12 @@ void UMinimalChallengeEntry_C::OnChallengeInfoSet(bool bIsInProgress)
 
 void UMinimalChallengeEntry_C::ExecuteUbergraph_MinimalChallengeEntry(int32 EntryPoint, bool Temp_bool_Variable, int32 Temp_int_Variable, int32 Temp_int_Variable_1, bool K2Node_Event_bIsInProgress, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("MinimalChallengeEntry_C", "ExecuteUbergraph_MinimalChallengeEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinimalChallengeEntry_C", "ExecuteUbergraph_MinimalChallengeEntry");
+
+	Params::UMinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -62,6 +93,4 @@ void UMinimalChallengeEntry_C::ExecuteUbergraph_MinimalChallengeEntry(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

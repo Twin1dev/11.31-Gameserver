@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -20,11 +17,8 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x3988(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                         IsPatrolling;                                      // 0x3990(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BP_PlayerPawn_Athena_Galileo_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ABP_PlayerPawn_Athena_Galileo_C* GetDefaultObj();
 
 	void OnRep_IsPatrolling(class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue, class UFortPlayerAnimInstance* K2Node_DynamicCast_AsFort_Player_Anim_Instance, bool K2Node_DynamicCast_bSuccess);
 	void ReceiveTick(float DeltaSeconds);
@@ -34,6 +28,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

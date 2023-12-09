@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Athena_MedConsumable_Parent.GA_Athena_MedConsumable_Parent_C
+// (None)
+
+class UClass* UGA_Athena_MedConsumable_Parent_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Athena_MedConsumable_Parent_C");
+
+	return Clss;
+}
+
+
+// GA_Athena_MedConsumable_Parent_C GA_Athena_MedConsumable_Parent.Default__GA_Athena_MedConsumable_Parent_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Athena_MedConsumable_Parent_C* UGA_Athena_MedConsumable_Parent_C::GetDefaultObj()
+{
+	static class UGA_Athena_MedConsumable_Parent_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Athena_MedConsumable_Parent_C*>(UGA_Athena_MedConsumable_Parent_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Athena_MedConsumable_Parent.GA_Athena_MedConsumable_Parent_C.OnMontageTriggered
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UGA_Athena_MedConsumable_Parent_C::OnMontageTriggered()
 {
-	static auto Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "OnMontageTriggered");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_MedConsumable_Parent_C_OnMontageTriggered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "OnMontageTriggered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UGA_Athena_MedConsumable_Parent_C::OnMontageTriggered()
 
 void UGA_Athena_MedConsumable_Parent_C::MakeCustomMontageInfo()
 {
-	static auto Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "MakeCustomMontageInfo");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_MedConsumable_Parent_C_MakeCustomMontageInfo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "MakeCustomMontageInfo");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -52,15 +81,18 @@ void UGA_Athena_MedConsumable_Parent_C::MakeCustomMontageInfo()
 // Parameters:
 // struct FGameplayEffectSpecHandle   Effect_Out                                                       (Parm, OutParm)
 // float                              CallFunc_SelectFloat_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue              ()
-// struct FGameplayEffectSpecHandle   CallFunc_AssignTagSetByCallerMagnitude_ReturnValue               ()
-// struct FGameplayEffectSpecHandle   CallFunc_AssignTagSetByCallerMagnitude_ReturnValue_1             ()
+// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue              (None)
+// struct FGameplayEffectSpecHandle   CallFunc_AssignTagSetByCallerMagnitude_ReturnValue               (None)
+// struct FGameplayEffectSpecHandle   CallFunc_AssignTagSetByCallerMagnitude_ReturnValue_1             (None)
 
 void UGA_Athena_MedConsumable_Parent_C::SetupGE(struct FGameplayEffectSpecHandle* Effect_Out, float CallFunc_SelectFloat_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_AssignTagSetByCallerMagnitude_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_AssignTagSetByCallerMagnitude_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "SetupGE");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_MedConsumable_Parent_C_SetupGE_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "SetupGE");
+
+	Params::UGA_Athena_MedConsumable_Parent_C_SetupGE_Params Parms{};
 
 	Parms.CallFunc_SelectFloat_ReturnValue = CallFunc_SelectFloat_ReturnValue;
 	Parms.CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue = CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue;
@@ -70,7 +102,7 @@ void UGA_Athena_MedConsumable_Parent_C::SetupGE(struct FGameplayEffectSpecHandle
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Effect_Out != nullptr)
-		*Effect_Out = Parms.Effect_Out;
+		*Effect_Out = std::move(Parms.Effect_Out);
 
 }
 
@@ -98,9 +130,12 @@ void UGA_Athena_MedConsumable_Parent_C::SetupGE(struct FGameplayEffectSpecHandle
 
 void UGA_Athena_MedConsumable_Parent_C::HealthCalc(float Temp_float_Variable, bool Temp_bool_Variable, float CallFunc_GetValueAtLevel_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, float CallFunc_GetHealth_ReturnValue, float CallFunc_GetHealth_ReturnValue_1, float CallFunc_GetMaxHealth_ReturnValue, float CallFunc_GetMaxHealth_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue_2, bool CallFunc_Less_FloatFloat_ReturnValue, float CallFunc_FClamp_ReturnValue, float CallFunc_SelectFloat_ReturnValue, float K2Node_Select_Default, float CallFunc_SelectFloat_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "HealthCalc");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_MedConsumable_Parent_C_HealthCalc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "HealthCalc");
+
+	Params::UGA_Athena_MedConsumable_Parent_C_HealthCalc_Params Parms{};
 
 	Parms.Temp_float_Variable = Temp_float_Variable;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -140,9 +175,12 @@ void UGA_Athena_MedConsumable_Parent_C::HealthCalc(float Temp_float_Variable, bo
 
 void UGA_Athena_MedConsumable_Parent_C::ShieldCalc(float CallFunc_GetValueAtLevel_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, float CallFunc_GetMaxShield_ReturnValue, float CallFunc_GetShield_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_FClamp_ReturnValue, float CallFunc_SelectFloat_ReturnValue, float CallFunc_SelectFloat_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "ShieldCalc");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_MedConsumable_Parent_C_ShieldCalc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "ShieldCalc");
+
+	Params::UGA_Athena_MedConsumable_Parent_C_ShieldCalc_Params Parms{};
 
 	Parms.CallFunc_GetValueAtLevel_ReturnValue = CallFunc_GetValueAtLevel_ReturnValue;
 	Parms.CallFunc_GetValueAtLevel_ReturnValue_1 = CallFunc_GetValueAtLevel_ReturnValue_1;
@@ -191,9 +229,12 @@ void UGA_Athena_MedConsumable_Parent_C::ShieldCalc(float CallFunc_GetValueAtLeve
 
 bool UGA_Athena_MedConsumable_Parent_C::K2_CanActivateAbility(const struct FGameplayAbilityActorInfo& ActorInfo, struct FGameplayTagContainer* RelevantTags, bool Temp_bool_Variable, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, float CallFunc_GetMaxShield_ReturnValue, float CallFunc_GetShield_ReturnValue, float CallFunc_GetHealth_ReturnValue, int32 CallFunc_Round_ReturnValue, int32 CallFunc_Round_ReturnValue_1, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, float CallFunc_GetMaxHealth_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool Temp_bool_Variable_1, float CallFunc_GetValueAtLevel_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float K2Node_Select_Default, float CallFunc_GetValueAtLevel_ReturnValue_1, bool CallFunc_Less_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, float K2Node_Select_Default_1, bool CallFunc_Less_FloatFloat_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "K2_CanActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_MedConsumable_Parent_C_K2_CanActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "K2_CanActivateAbility");
+
+	Params::UGA_Athena_MedConsumable_Parent_C_K2_CanActivateAbility_Params Parms{};
 
 	Parms.ActorInfo = ActorInfo;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -223,7 +264,7 @@ bool UGA_Athena_MedConsumable_Parent_C::K2_CanActivateAbility(const struct FGame
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (RelevantTags != nullptr)
-		*RelevantTags = Parms.RelevantTags;
+		*RelevantTags = std::move(Parms.RelevantTags);
 
 	return Parms.ReturnValue;
 
@@ -238,9 +279,12 @@ bool UGA_Athena_MedConsumable_Parent_C::K2_CanActivateAbility(const struct FGame
 
 void UGA_Athena_MedConsumable_Parent_C::Completed_4C02BFB04B18D9E79F84848FFE6D2C32(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "Completed_4C02BFB04B18D9E79F84848FFE6D2C32");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_MedConsumable_Parent_C_Completed_4C02BFB04B18D9E79F84848FFE6D2C32_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "Completed_4C02BFB04B18D9E79F84848FFE6D2C32");
+
+	Params::UGA_Athena_MedConsumable_Parent_C_Completed_4C02BFB04B18D9E79F84848FFE6D2C32_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -258,9 +302,12 @@ void UGA_Athena_MedConsumable_Parent_C::Completed_4C02BFB04B18D9E79F84848FFE6D2C
 
 void UGA_Athena_MedConsumable_Parent_C::Cancelled_4C02BFB04B18D9E79F84848FFE6D2C32(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "Cancelled_4C02BFB04B18D9E79F84848FFE6D2C32");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_MedConsumable_Parent_C_Cancelled_4C02BFB04B18D9E79F84848FFE6D2C32_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "Cancelled_4C02BFB04B18D9E79F84848FFE6D2C32");
+
+	Params::UGA_Athena_MedConsumable_Parent_C_Cancelled_4C02BFB04B18D9E79F84848FFE6D2C32_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -278,9 +325,12 @@ void UGA_Athena_MedConsumable_Parent_C::Cancelled_4C02BFB04B18D9E79F84848FFE6D2C
 
 void UGA_Athena_MedConsumable_Parent_C::Triggered_4C02BFB04B18D9E79F84848FFE6D2C32(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "Triggered_4C02BFB04B18D9E79F84848FFE6D2C32");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_MedConsumable_Parent_C_Triggered_4C02BFB04B18D9E79F84848FFE6D2C32_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "Triggered_4C02BFB04B18D9E79F84848FFE6D2C32");
+
+	Params::UGA_Athena_MedConsumable_Parent_C_Triggered_4C02BFB04B18D9E79F84848FFE6D2C32_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -296,12 +346,14 @@ void UGA_Athena_MedConsumable_Parent_C::Triggered_4C02BFB04B18D9E79F84848FFE6D2C
 
 void UGA_Athena_MedConsumable_Parent_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_MedConsumable_Parent_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -313,9 +365,12 @@ void UGA_Athena_MedConsumable_Parent_C::K2_ActivateAbility()
 
 void UGA_Athena_MedConsumable_Parent_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_MedConsumable_Parent_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "K2_OnEndAbility");
+
+	Params::UGA_Athena_MedConsumable_Parent_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -333,7 +388,7 @@ void UGA_Athena_MedConsumable_Parent_C::K2_OnEndAbility(bool bWasCancelled)
 // struct FGameplayAbilityTargetDataHandleK2Node_CustomEvent_TargetData                                    (ConstParm)
 // struct FGameplayTag                K2Node_CustomEvent_ApplicationTag                                (NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                Temp_struct_Variable                                             (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           ()
+// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           (None)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // bool                               CallFunc_K2_CommitAbility_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortAbilityTask_PlayMontageWaitTarget*CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -346,13 +401,13 @@ void UGA_Athena_MedConsumable_Parent_C::K2_OnEndAbility(bool bWasCancelled)
 // struct FGameplayAbilityTargetDataHandleK2Node_CustomEvent_TargetData_1                                  (ConstParm)
 // struct FGameplayTag                K2Node_CustomEvent_ApplicationTag_1                              (NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor)
-// struct FGameplayEffectSpecHandle   CallFunc_SetupGE_Effect_Out                                      ()
+// struct FGameplayEffectSpecHandle   CallFunc_SetupGE_Effect_Out                                      (None)
 // struct FActiveGameplayEffectHandle CallFunc_K2_ApplyGameplayEffectSpecToOwner_ReturnValue           (NoDestructor, HasGetValueTypeHash)
 // struct FGameplayAbilityActorInfo   CallFunc_GetActorInfo_ReturnValue                                (ContainsInstancedReference)
 // struct FActiveGameplayEffectHandle CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue               (NoDestructor, HasGetValueTypeHash)
 // class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  ()
+// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  (None)
 // TArray<struct FActiveGameplayEffectHandle>CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue              (ZeroConstructor, ReferenceParm)
 // bool                               CallFunc_IsServer_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -361,9 +416,12 @@ void UGA_Athena_MedConsumable_Parent_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Athena_MedConsumable_Parent_C::ExecuteUbergraph_GA_Athena_MedConsumable_Parent(int32 EntryPoint, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_2, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_2, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag, const struct FGameplayTag& Temp_struct_Variable, const struct FGameplayAbilityTargetDataHandle& Temp_struct_Variable_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_K2_CommitAbility_ReturnValue, class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_IsValid_ReturnValue, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue, bool K2Node_Event_bWasCancelled, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_K2_CommitAbility_ReturnValue_1, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_1, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, const struct FGameplayEffectSpecHandle& CallFunc_SetupGE_Effect_Out, const struct FActiveGameplayEffectHandle& CallFunc_K2_ApplyGameplayEffectSpecToOwner_ReturnValue, const struct FGameplayAbilityActorInfo& CallFunc_GetActorInfo_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FGameplayAbilityTargetDataHandle& CallFunc_AbilityTargetDataFromActor_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue, bool CallFunc_IsServer_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, bool CallFunc_IsValid_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "ExecuteUbergraph_GA_Athena_MedConsumable_Parent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_MedConsumable_Parent_C_ExecuteUbergraph_GA_Athena_MedConsumable_Parent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_MedConsumable_Parent_C", "ExecuteUbergraph_GA_Athena_MedConsumable_Parent");
+
+	Params::UGA_Athena_MedConsumable_Parent_C_ExecuteUbergraph_GA_Athena_MedConsumable_Parent_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_TargetData_2 = K2Node_CustomEvent_TargetData_2;
@@ -403,6 +461,4 @@ void UGA_Athena_MedConsumable_Parent_C::ExecuteUbergraph_GA_Athena_MedConsumable
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

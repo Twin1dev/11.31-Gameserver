@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ShowdownTournamentTile.ShowdownTournamentTile_C
+// (None)
+
+class UClass* UShowdownTournamentTile_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ShowdownTournamentTile_C");
+
+	return Clss;
+}
+
+
+// ShowdownTournamentTile_C ShowdownTournamentTile.Default__ShowdownTournamentTile_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UShowdownTournamentTile_C* UShowdownTournamentTile_C::GetDefaultObj()
+{
+	static class UShowdownTournamentTile_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UShowdownTournamentTile_C*>(UShowdownTournamentTile_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ShowdownTournamentTile.ShowdownTournamentTile_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UShowdownTournamentTile_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("ShowdownTournamentTile_C", "BP_OnSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownTournamentTile_C_BP_OnSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownTournamentTile_C", "BP_OnSelected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UShowdownTournamentTile_C::BP_OnSelected()
 
 void UShowdownTournamentTile_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("ShowdownTournamentTile_C", "BP_OnDeselected");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownTournamentTile_C_BP_OnDeselected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownTournamentTile_C", "BP_OnDeselected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -54,9 +83,12 @@ void UShowdownTournamentTile_C::BP_OnDeselected()
 
 void UShowdownTournamentTile_C::EventFade(bool FadeOut)
 {
-	static auto Func = Class->GetFunction("ShowdownTournamentTile_C", "EventFade");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownTournamentTile_C_EventFade_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownTournamentTile_C", "EventFade");
+
+	Params::UShowdownTournamentTile_C_EventFade_Params Parms{};
 
 	Parms.FadeOut = FadeOut;
 
@@ -129,9 +161,12 @@ void UShowdownTournamentTile_C::EventFade(bool FadeOut)
 
 void UShowdownTournamentTile_C::ExecuteUbergraph_ShowdownTournamentTile(int32 EntryPoint, float Temp_float_Variable, bool Temp_bool_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable_1, float Temp_float_Variable_2, bool Temp_bool_Variable_2, float Temp_float_Variable_3, bool K2Node_CustomEvent_fadeOut, float CallFunc_GetStartTime_ReturnValue, float CallFunc_GetEndTime_ReturnValue, float CallFunc_GetStartTime_ReturnValue_1, float CallFunc_GetEndTime_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, float CallFunc_PauseAnimation_ReturnValue, float CallFunc_GetStartTime_ReturnValue_2, bool CallFunc_LessEqual_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_GetEndTime_ReturnValue_2, float K2Node_Select_Default, float CallFunc_GetStartTime_ReturnValue_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float CallFunc_GetEndTime_ReturnValue_3, float CallFunc_PauseAnimation_ReturnValue_1, float CallFunc_PauseAnimation_ReturnValue_2, float CallFunc_Add_FloatFloat_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue_1, float CallFunc_PauseAnimation_ReturnValue_3, float K2Node_Select_Default_1, float CallFunc_Add_FloatFloat_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, float CallFunc_PauseAnimation_ReturnValue_4, float CallFunc_PauseAnimation_ReturnValue_5, bool CallFunc_LessEqual_FloatFloat_ReturnValue_2, float CallFunc_Add_FloatFloat_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_4, float CallFunc_Subtract_FloatFloat_ReturnValue_2, float CallFunc_PauseAnimation_ReturnValue_6, float K2Node_Select_Default_2, bool CallFunc_LessEqual_FloatFloat_ReturnValue_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_5, float CallFunc_Subtract_FloatFloat_ReturnValue_3, float CallFunc_PauseAnimation_ReturnValue_7, float CallFunc_Add_FloatFloat_ReturnValue_3, bool CallFunc_Not_PreBool_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_6, bool CallFunc_BooleanAND_ReturnValue, bool Temp_bool_Variable_3, float K2Node_Select_Default_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_7, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_IsVisible_ReturnValue, class UWidget* CallFunc_FindParentWidgetOfType_ReturnValue, class UShowdownScreen_C* K2Node_DynamicCast_AsShowdown_Screen, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("ShowdownTournamentTile_C", "ExecuteUbergraph_ShowdownTournamentTile");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownTournamentTile_C_ExecuteUbergraph_ShowdownTournamentTile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownTournamentTile_C", "ExecuteUbergraph_ShowdownTournamentTile");
+
+	Params::UShowdownTournamentTile_C_ExecuteUbergraph_ShowdownTournamentTile_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_float_Variable = Temp_float_Variable;
@@ -198,6 +233,4 @@ void UShowdownTournamentTile_C::ExecuteUbergraph_ShowdownTournamentTile(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

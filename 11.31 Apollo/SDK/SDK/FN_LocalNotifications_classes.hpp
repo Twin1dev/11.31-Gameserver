@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,16 +16,11 @@ class ULocalNotificationsSettings : public UDeveloperSettings
 public:
 	struct FSoftObjectPath                       StringTableLocalNotifications;                     // 0x38(0x18)(Edit, ZeroConstructor, Config, GlobalConfig, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LocalNotificationsSettings");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULocalNotificationsSettings* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

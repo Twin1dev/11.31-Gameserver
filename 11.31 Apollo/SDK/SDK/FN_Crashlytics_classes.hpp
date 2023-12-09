@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class UCrashlyticsBlueprintLibrary : public UBlueprintFunctionLibrary
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("CrashlyticsBlueprintLibrary");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UCrashlyticsBlueprintLibrary* GetDefaultObj();
 
 	void SetUserName(const class FString& Name);
 	void SetUserIdentifier(const class FString& ID);
@@ -37,6 +31,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

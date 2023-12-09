@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Creative_CommonDeviceFunctionLibrary.Creative_CommonDeviceFunctionLibrary_C
+// (None)
+
+class UClass* UCreative_CommonDeviceFunctionLibrary_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Creative_CommonDeviceFunctionLibrary_C");
+
+	return Clss;
+}
+
+
+// Creative_CommonDeviceFunctionLibrary_C Creative_CommonDeviceFunctionLibrary.Default__Creative_CommonDeviceFunctionLibrary_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCreative_CommonDeviceFunctionLibrary_C* UCreative_CommonDeviceFunctionLibrary_C::GetDefaultObj()
+{
+	static class UCreative_CommonDeviceFunctionLibrary_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCreative_CommonDeviceFunctionLibrary_C*>(UCreative_CommonDeviceFunctionLibrary_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function Creative_CommonDeviceFunctionLibrary.Creative_CommonDeviceFunctionLibrary_C.Get Dynamic Team Color
@@ -43,9 +68,12 @@ namespace SDK
 
 void UCreative_CommonDeviceFunctionLibrary_C::Get_Dynamic_Team_Color(class AActor* Actor, class AFortMinigame* Minigame, enum class ECreativeColorSetType Color_Type, class UObject* __WorldContext, int32* Array_Index, const TArray<struct FGameplayTag>& GameplayTags, const TArray<struct FGameplayTag>& GameplayColorTags, enum class ECreativeTeamColor Temp_byte_Variable, class AFortPlayerController* CallFunc_GetFirstLocalFortPlayerController_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, enum class ECreativeTeamColor Temp_byte_Variable_1, enum class ECreativeTeamColor Temp_byte_Variable_2, uint8 CallFunc_MakeLiteralByte_ReturnValue, TArray<struct FGameplayTag>& K2Node_MakeArray_Array, enum class EFortTeamAffiliation Temp_byte_Variable_3, enum class EFortTeamAffiliation CallFunc_GetTeamAffiliation_ReturnValue, uint8 CallFunc_GetActorPvPTeamIndex_TeamIndex, bool CallFunc_GetActorPvPTeamIndex_ReturnValue, uint8 CallFunc_Add_ByteByte_ReturnValue, enum class ECreativeTeamColor K2Node_Select_Default, int32 CallFunc_Conv_ByteToInt_ReturnValue, int32 CallFunc_GetTeamColorIndex_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Get Dynamic Team Color");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_CommonDeviceFunctionLibrary_C_Get_Dynamic_Team_Color_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Get Dynamic Team Color");
+
+	Params::UCreative_CommonDeviceFunctionLibrary_C_Get_Dynamic_Team_Color_Params Parms{};
 
 	Parms.Actor = Actor;
 	Parms.Minigame = Minigame;
@@ -88,7 +116,7 @@ void UCreative_CommonDeviceFunctionLibrary_C::Get_Dynamic_Team_Color(class AActo
 // struct FGameplayTag                Check_Tag                                                        (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FGameplayTag>        GameplayTags                                                     (Edit, BlueprintVisible, ZeroConstructor)
 // TArray<struct FGameplayTag>        GameplayColorTags                                                (Edit, BlueprintVisible, ZeroConstructor)
-// struct FGameplayTagContainer       Temp_struct_Variable                                             ()
+// struct FGameplayTagContainer       Temp_struct_Variable                                             (None)
 // TArray<struct FGameplayTag>        K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // TArray<struct FGameplayTag>        CallFunc_BreakGameplayTagContainer_GameplayTags                  (ZeroConstructor, ReferenceParm)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -108,13 +136,16 @@ void UCreative_CommonDeviceFunctionLibrary_C::Get_Dynamic_Team_Color(class AActo
 // bool                               CallFunc_NotEqual_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TScriptInterface<class IGameplayTagAssetInterface>K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayTagContainer       CallFunc_GetOwnedGameplayTags_TagContainer                       ()
+// struct FGameplayTagContainer       CallFunc_GetOwnedGameplayTags_TagContainer                       (None)
 
 void UCreative_CommonDeviceFunctionLibrary_C::Get_Team_Color_Index_from_Tag(class AActor* Actor_with_Tag, class AFortMinigame* Minigame, class UObject* __WorldContext, int32* Array_Index, enum class ECreativeColorSetType* Color_Type_Out, const struct FGameplayTag& Check_Tag, const TArray<struct FGameplayTag>& GameplayTags, const TArray<struct FGameplayTag>& GameplayColorTags, const struct FGameplayTagContainer& Temp_struct_Variable, TArray<struct FGameplayTag>& K2Node_MakeArray_Array, TArray<struct FGameplayTag>& CallFunc_BreakGameplayTagContainer_GameplayTags, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, const struct FGameplayTag& CallFunc_Array_Get_Item, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue_1, int32 CallFunc_Max_ReturnValue, int32 CallFunc_Get_Dynamic_Team_Color_Array_Index, int32 CallFunc_Get_Dynamic_Team_Color_Array_Index_1, bool CallFunc_EqualEqual_GameplayTag_ReturnValue, bool CallFunc_EqualEqual_GameplayTag_ReturnValue_1, int32 CallFunc_Array_Find_ReturnValue, bool CallFunc_MatchesTag_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface, bool K2Node_DynamicCast_bSuccess, const struct FGameplayTagContainer& CallFunc_GetOwnedGameplayTags_TagContainer)
 {
-	static auto Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Get Team Color Index from Tag");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_CommonDeviceFunctionLibrary_C_Get_Team_Color_Index_from_Tag_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Get Team Color Index from Tag");
+
+	Params::UCreative_CommonDeviceFunctionLibrary_C_Get_Team_Color_Index_from_Tag_Params Parms{};
 
 	Parms.Actor_with_Tag = Actor_with_Tag;
 	Parms.Minigame = Minigame;
@@ -174,9 +205,12 @@ void UCreative_CommonDeviceFunctionLibrary_C::Get_Team_Color_Index_from_Tag(clas
 
 int32 UCreative_CommonDeviceFunctionLibrary_C::Get_Team_Color_Index_or_Team_Index(class UFortMinigameLogicComponent* Minigame_Logic, int32 Team_Index, class UObject* __WorldContext, uint8 CallFunc_MakeLiteralByte_ReturnValue, uint8 CallFunc_Conv_IntToByte_ReturnValue, uint8 CallFunc_Add_ByteByte_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_GetTeamColorIndex_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool Temp_bool_Variable, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Get Team Color Index or Team Index");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_CommonDeviceFunctionLibrary_C_Get_Team_Color_Index_or_Team_Index_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Get Team Color Index or Team Index");
+
+	Params::UCreative_CommonDeviceFunctionLibrary_C_Get_Team_Color_Index_or_Team_Index_Params Parms{};
 
 	Parms.Minigame_Logic = Minigame_Logic;
 	Parms.Team_Index = Team_Index;
@@ -218,9 +252,12 @@ int32 UCreative_CommonDeviceFunctionLibrary_C::Get_Team_Color_Index_or_Team_Inde
 
 void UCreative_CommonDeviceFunctionLibrary_C::IsLocalPawn(class AActor* Actor, class UObject* __WorldContext, bool* IsLocalPawn, bool CallFunc_IsDedicatedServer_ReturnValue, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, class AFortPlayerController* CallFunc_Array_Get_Item, class APawn* CallFunc_K2_GetPawn_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsLocalPawn");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_CommonDeviceFunctionLibrary_C_IsLocalPawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsLocalPawn");
+
+	Params::UCreative_CommonDeviceFunctionLibrary_C_IsLocalPawn_Params Parms{};
 
 	Parms.Actor = Actor;
 	Parms.__WorldContext = __WorldContext;
@@ -261,9 +298,12 @@ void UCreative_CommonDeviceFunctionLibrary_C::IsLocalPawn(class AActor* Actor, c
 
 void UCreative_CommonDeviceFunctionLibrary_C::IsInPlayMode(class AActor*& Actor, class UObject* __WorldContext, bool* Play_Mode, class AFortVolumeManager* CallFunc_GetVolumeManager_OutVolumeManager, enum class EVolumeValidityResult CallFunc_GetVolumeManager_OutIsValid, bool CallFunc_IsValid_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_IsValid_ReturnValue_1, class AFortVolume* CallFunc_GetVolumeForActor_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsReadOnly_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsInPlayMode");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_CommonDeviceFunctionLibrary_C_IsInPlayMode_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsInPlayMode");
+
+	Params::UCreative_CommonDeviceFunctionLibrary_C_IsInPlayMode_Params Parms{};
 
 	Parms.Actor = Actor;
 	Parms.__WorldContext = __WorldContext;
@@ -306,9 +346,12 @@ void UCreative_CommonDeviceFunctionLibrary_C::IsInPlayMode(class AActor*& Actor,
 
 void UCreative_CommonDeviceFunctionLibrary_C::Get_Driver_or_Pawn_Controller(class AActor* Actor_to_Check, class UObject* __WorldContext, bool* Valid_Controller, class AController** Controller, const struct FGameplayTagContainer& DeviceDontTriggerTags, class AController* _Controller, class AFortPlayerPawn* Temp_object_Variable, bool CallFunc_IsValid_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, TScriptInterface<class IFortVehicleInterface> K2Node_DynamicCast_AsFort_Vehicle_Interface, bool K2Node_DynamicCast_bSuccess, class AFortPlayerPawn* CallFunc_GetDriver_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Get Driver or Pawn Controller");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_CommonDeviceFunctionLibrary_C_Get_Driver_or_Pawn_Controller_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Get Driver or Pawn Controller");
+
+	Params::UCreative_CommonDeviceFunctionLibrary_C_Get_Driver_or_Pawn_Controller_Params Parms{};
 
 	Parms.Actor_to_Check = Actor_to_Check;
 	Parms.__WorldContext = __WorldContext;
@@ -351,9 +394,12 @@ void UCreative_CommonDeviceFunctionLibrary_C::Get_Driver_or_Pawn_Controller(clas
 
 void UCreative_CommonDeviceFunctionLibrary_C::GetMID_FromMaterial(class UPrimitiveComponent* Target, int32 Index, class UMaterialInterface* SourceMaterial, class UObject* __WorldContext, class UMaterialInstanceDynamic** Mid, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "GetMID_FromMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_CommonDeviceFunctionLibrary_C_GetMID_FromMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "GetMID_FromMaterial");
+
+	Params::UCreative_CommonDeviceFunctionLibrary_C_GetMID_FromMaterial_Params Parms{};
 
 	Parms.Target = Target;
 	Parms.Index = Index;
@@ -385,9 +431,12 @@ void UCreative_CommonDeviceFunctionLibrary_C::GetMID_FromMaterial(class UPrimiti
 
 void UCreative_CommonDeviceFunctionLibrary_C::Refresh_Team_Change_Binding(class UFortMinigameLogicComponent* Minigame_Logic, bool Unbind, UDelegateProperty_& Event, class UObject* __WorldContext, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Refresh Team Change Binding");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_CommonDeviceFunctionLibrary_C_Refresh_Team_Change_Binding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Refresh Team Change Binding");
+
+	Params::UCreative_CommonDeviceFunctionLibrary_C_Refresh_Team_Change_Binding_Params Parms{};
 
 	Parms.Minigame_Logic = Minigame_Logic;
 	Parms.Unbind = Unbind;
@@ -415,9 +464,12 @@ void UCreative_CommonDeviceFunctionLibrary_C::Refresh_Team_Change_Binding(class 
 
 void UCreative_CommonDeviceFunctionLibrary_C::Update_Team_Color(class UFortMinigameLogicComponent* Minigame_Logic, class UPrimitiveComponent* Mesh, int32 Team, class UObject* __WorldContext, class UMaterialInstanceDynamic* CallFunc_GetMID_MID, int32 CallFunc_Get_Team_Color_Index_or_Team_Index_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Update Team Color");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_CommonDeviceFunctionLibrary_C_Update_Team_Color_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "Update Team Color");
+
+	Params::UCreative_CommonDeviceFunctionLibrary_C_Update_Team_Color_Params Parms{};
 
 	Parms.Minigame_Logic = Minigame_Logic;
 	Parms.Mesh = Mesh;
@@ -445,9 +497,12 @@ void UCreative_CommonDeviceFunctionLibrary_C::Update_Team_Color(class UFortMinig
 
 void UCreative_CommonDeviceFunctionLibrary_C::GetMID(class UPrimitiveComponent* Target, class UObject* __WorldContext, class UMaterialInstanceDynamic** Mid, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "GetMID");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_CommonDeviceFunctionLibrary_C_GetMID_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "GetMID");
+
+	Params::UCreative_CommonDeviceFunctionLibrary_C_GetMID_Params Parms{};
 
 	Parms.Target = Target;
 	Parms.__WorldContext = __WorldContext;
@@ -493,9 +548,12 @@ void UCreative_CommonDeviceFunctionLibrary_C::GetMID(class UPrimitiveComponent* 
 
 void UCreative_CommonDeviceFunctionLibrary_C::ActorCanTrigger(class AActor* Actor_to_Check, class UPrimitiveComponent* Overlap_Component, class UObject* __WorldContext, bool* CanTrigger, class AController** Controller, bool Local_CanTrigger, const struct FGameplayTagContainer& DeviceDontTriggerTags, class AController* Local_controller, class AFortPlayerPawn* Temp_object_Variable, bool CallFunc_IsValid_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, TScriptInterface<class IFortVehicleInterface> K2Node_DynamicCast_AsFort_Vehicle_Interface, bool K2Node_DynamicCast_bSuccess, class AFortPlayerPawn* CallFunc_GetDriver_ReturnValue, enum class ECollisionChannel CallFunc_GetCollisionObjectType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "ActorCanTrigger");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_CommonDeviceFunctionLibrary_C_ActorCanTrigger_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "ActorCanTrigger");
+
+	Params::UCreative_CommonDeviceFunctionLibrary_C_ActorCanTrigger_Params Parms{};
 
 	Parms.Actor_to_Check = Actor_to_Check;
 	Parms.Overlap_Component = Overlap_Component;
@@ -555,9 +613,12 @@ void UCreative_CommonDeviceFunctionLibrary_C::ActorCanTrigger(class AActor* Acto
 
 void UCreative_CommonDeviceFunctionLibrary_C::IsActivatedOnPhase(enum class EFortMinigameState State, int32 PhaseIndex, class AActor* Actor, class UObject* __WorldContext, bool* Enabled, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_IsInPlayMode_Play_Mode, uint8 CallFunc_MakeLiteralByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, bool CallFunc_EqualEqual_IntInt_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_EqualEqual_IntInt_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue_3, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsActivatedOnPhase");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_CommonDeviceFunctionLibrary_C_IsActivatedOnPhase_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsActivatedOnPhase");
+
+	Params::UCreative_CommonDeviceFunctionLibrary_C_IsActivatedOnPhase_Params Parms{};
 
 	Parms.State = State;
 	Parms.PhaseIndex = PhaseIndex;
@@ -609,9 +670,12 @@ void UCreative_CommonDeviceFunctionLibrary_C::IsActivatedOnPhase(enum class EFor
 
 void UCreative_CommonDeviceFunctionLibrary_C::IsEnabledPhaseMatch(enum class EFortMinigameState State, int32 PhaseIndex, class AActor* Actor, class UObject* __WorldContext, bool* Enabled, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Less_ByteByte_ReturnValue, bool CallFunc_IsInPlayMode_Play_Mode, bool CallFunc_EqualEqual_IntInt_ReturnValue_1, bool CallFunc_EqualEqual_IntInt_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsEnabledPhaseMatch");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_CommonDeviceFunctionLibrary_C_IsEnabledPhaseMatch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsEnabledPhaseMatch");
+
+	Params::UCreative_CommonDeviceFunctionLibrary_C_IsEnabledPhaseMatch_Params Parms{};
 
 	Parms.State = State;
 	Parms.PhaseIndex = PhaseIndex;
@@ -655,9 +719,12 @@ void UCreative_CommonDeviceFunctionLibrary_C::IsEnabledPhaseMatch(enum class EFo
 
 void UCreative_CommonDeviceFunctionLibrary_C::IsValidTeam(int32 Team_to_Check, class AActor* Actor_to_Check, class UObject* __WorldContext, bool* Valid, bool CallFunc_IsValid_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, uint8 CallFunc_Conv_IntToByte_ReturnValue, uint8 CallFunc_GetActorPvPTeamIndex_TeamIndex, bool CallFunc_GetActorPvPTeamIndex_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsValidTeam");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_CommonDeviceFunctionLibrary_C_IsValidTeam_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsValidTeam");
+
+	Params::UCreative_CommonDeviceFunctionLibrary_C_IsValidTeam_Params Parms{};
 
 	Parms.Team_to_Check = Team_to_Check;
 	Parms.Actor_to_Check = Actor_to_Check;
@@ -704,14 +771,17 @@ void UCreative_CommonDeviceFunctionLibrary_C::IsValidTeam(int32 Team_to_Check, c
 // int32                              CallFunc_Subtract_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EAwardScoreType         Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       CallFunc_GetSourceAndContextTags_OutSourceTags                   ()
-// struct FGameplayTagContainer       CallFunc_GetSourceAndContextTags_OutContextTags                  ()
+// struct FGameplayTagContainer       CallFunc_GetSourceAndContextTags_OutSourceTags                   (None)
+// struct FGameplayTagContainer       CallFunc_GetSourceAndContextTags_OutContextTags                  (None)
 
 void UCreative_CommonDeviceFunctionLibrary_C::AwardScore(class AActor* Actor, int32 Score, enum class EAwardScoreType Type, class AController* Controller, class UFortMinigameLogicComponent* Minigame_Logic, const struct FGameplayTagContainer& TargetTags, class UObject* __WorldContext, int32 Local_Score, class UFortMinigameManager* Local_MinigameManager, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_NotEqual_ByteByte_ReturnValue, int32 Temp_int_Variable, int32 CallFunc_Multiply_IntInt_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, class AFortPlayerState* K2Node_DynamicCast_AsFort_Player_State, bool K2Node_DynamicCast_bSuccess_1, class UFortMinigameManager* CallFunc_GetMinigameManager_ReturnValue, int32 CallFunc_GetStatForPlayer_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, enum class EAwardScoreType Temp_byte_Variable, int32 K2Node_Select_Default, const struct FGameplayTagContainer& CallFunc_GetSourceAndContextTags_OutSourceTags, const struct FGameplayTagContainer& CallFunc_GetSourceAndContextTags_OutContextTags)
 {
-	static auto Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "AwardScore");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_CommonDeviceFunctionLibrary_C_AwardScore_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "AwardScore");
+
+	Params::UCreative_CommonDeviceFunctionLibrary_C_AwardScore_Params Parms{};
 
 	Parms.Actor = Actor;
 	Parms.Score = Score;
@@ -762,9 +832,12 @@ void UCreative_CommonDeviceFunctionLibrary_C::AwardScore(class AActor* Actor, in
 
 void UCreative_CommonDeviceFunctionLibrary_C::IsOnUnpublishedIsland(class AActor* Actor, class UObject* __WorldContext, bool* Edit_Mode, class AFortVolumeManager* CallFunc_GetVolumeManager_OutVolumeManager, enum class EVolumeValidityResult CallFunc_GetVolumeManager_OutIsValid, bool CallFunc_IsValid_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_IsValid_ReturnValue_1, class AFortVolume* CallFunc_GetVolumeForActor_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, enum class EFortVolumeType CallFunc_GetFortVolumeType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsOnUnpublishedIsland");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreative_CommonDeviceFunctionLibrary_C_IsOnUnpublishedIsland_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_CommonDeviceFunctionLibrary_C", "IsOnUnpublishedIsland");
+
+	Params::UCreative_CommonDeviceFunctionLibrary_C_IsOnUnpublishedIsland_Params Parms{};
 
 	Parms.Actor = Actor;
 	Parms.__WorldContext = __WorldContext;
@@ -787,6 +860,4 @@ void UCreative_CommonDeviceFunctionLibrary_C::IsOnUnpublishedIsland(class AActor
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaMainMenuLeaveButton.AthenaMainMenuLeaveButton_C
+// (None)
+
+class UClass* UAthenaMainMenuLeaveButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaMainMenuLeaveButton_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// AthenaMainMenuLeaveButton_C AthenaMainMenuLeaveButton.Default__AthenaMainMenuLeaveButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaMainMenuLeaveButton_C* UAthenaMainMenuLeaveButton_C::GetDefaultObj()
+{
+	static class UAthenaMainMenuLeaveButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaMainMenuLeaveButton_C*>(UAthenaMainMenuLeaveButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

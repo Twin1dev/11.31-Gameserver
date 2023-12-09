@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,18 +16,13 @@ class UFacialLiveLinkRemapAsset : public ULiveLinkRetargetAsset
 public:
 	bool                                         bExtractBoneTransform;                             // 0x28(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bExtractCurve;                                     // 0x29(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1896[0x6];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_3DC[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("FacialLiveLinkRemapAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UFacialLiveLinkRemapAsset* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

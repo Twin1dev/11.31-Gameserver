@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaLobbyMatchmakingPlay.AthenaLobbyMatchmakingPlay_C
+// (None)
+
+class UClass* UAthenaLobbyMatchmakingPlay_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaLobbyMatchmakingPlay_C");
+
+	return Clss;
+}
+
+
+// AthenaLobbyMatchmakingPlay_C AthenaLobbyMatchmakingPlay.Default__AthenaLobbyMatchmakingPlay_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaLobbyMatchmakingPlay_C* UAthenaLobbyMatchmakingPlay_C::GetDefaultObj()
+{
+	static class UAthenaLobbyMatchmakingPlay_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaLobbyMatchmakingPlay_C*>(UAthenaLobbyMatchmakingPlay_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaLobbyMatchmakingPlay.AthenaLobbyMatchmakingPlay_C.SetBasePanelColor
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UAthenaLobbyMatchmakingPlay_C::SetBasePanelColor(const struct FLinearColor& NewColor, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "SetBasePanelColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_SetBasePanelColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "SetBasePanelColor");
+
+	Params::UAthenaLobbyMatchmakingPlay_C_SetBasePanelColor_Params Parms{};
 
 	Parms.NewColor = NewColor;
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
@@ -39,13 +67,16 @@ void UAthenaLobbyMatchmakingPlay_C::SetBasePanelColor(const struct FLinearColor&
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortMatchmakingContext*     CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetMatchmakingFillText_ReturnValue                      ()
+// class FText                        CallFunc_GetMatchmakingFillText_ReturnValue                      (None)
 
 void UAthenaLobbyMatchmakingPlay_C::RefreshFillText(class UFortMatchmakingContext* CallFunc_GetContext_ReturnValue, class FText CallFunc_GetMatchmakingFillText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "RefreshFillText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_RefreshFillText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "RefreshFillText");
+
+	Params::UAthenaLobbyMatchmakingPlay_C_RefreshFillText_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetMatchmakingFillText_ReturnValue = CallFunc_GetMatchmakingFillText_ReturnValue;
@@ -62,9 +93,12 @@ void UAthenaLobbyMatchmakingPlay_C::RefreshFillText(class UFortMatchmakingContex
 
 void UAthenaLobbyMatchmakingPlay_C::OnLoaded_7F9C59BE40E65C1C31B0EB98786CDA43(class UClass* Loaded)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnLoaded_7F9C59BE40E65C1C31B0EB98786CDA43");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_OnLoaded_7F9C59BE40E65C1C31B0EB98786CDA43_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnLoaded_7F9C59BE40E65C1C31B0EB98786CDA43");
+
+	Params::UAthenaLobbyMatchmakingPlay_C_OnLoaded_7F9C59BE40E65C1C31B0EB98786CDA43_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -79,12 +113,14 @@ void UAthenaLobbyMatchmakingPlay_C::OnLoaded_7F9C59BE40E65C1C31B0EB98786CDA43(cl
 
 void UAthenaLobbyMatchmakingPlay_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -95,12 +131,14 @@ void UAthenaLobbyMatchmakingPlay_C::Construct()
 
 void UAthenaLobbyMatchmakingPlay_C::OnAvailablePlaylistsUpdated()
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnAvailablePlaylistsUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_OnAvailablePlaylistsUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnAvailablePlaylistsUpdated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -112,9 +150,12 @@ void UAthenaLobbyMatchmakingPlay_C::OnAvailablePlaylistsUpdated()
 
 void UAthenaLobbyMatchmakingPlay_C::OnSetPlayButtonText(class FText& PlayButtonText)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnSetPlayButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_OnSetPlayButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnSetPlayButtonText");
+
+	Params::UAthenaLobbyMatchmakingPlay_C_OnSetPlayButtonText_Params Parms{};
 
 	Parms.PlayButtonText = PlayButtonText;
 
@@ -130,9 +171,12 @@ void UAthenaLobbyMatchmakingPlay_C::OnSetPlayButtonText(class FText& PlayButtonT
 
 void UAthenaLobbyMatchmakingPlay_C::OnSetCancelButtonText(class FText& CancelButtonText)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnSetCancelButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_OnSetCancelButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnSetCancelButtonText");
+
+	Params::UAthenaLobbyMatchmakingPlay_C_OnSetCancelButtonText_Params Parms{};
 
 	Parms.CancelButtonText = CancelButtonText;
 
@@ -150,9 +194,12 @@ void UAthenaLobbyMatchmakingPlay_C::OnSetCancelButtonText(class FText& CancelBut
 
 void UAthenaLobbyMatchmakingPlay_C::PlaylistChanged(struct FPlaylistFrontEndData& NewPlaylist, class FText& PlaylistCMSOverrideName, enum class EFortLobbyType LobbyType)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "PlaylistChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_PlaylistChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "PlaylistChanged");
+
+	Params::UAthenaLobbyMatchmakingPlay_C_PlaylistChanged_Params Parms{};
 
 	Parms.NewPlaylist = NewPlaylist;
 	Parms.PlaylistCMSOverrideName = PlaylistCMSOverrideName;
@@ -170,9 +217,12 @@ void UAthenaLobbyMatchmakingPlay_C::PlaylistChanged(struct FPlaylistFrontEndData
 
 void UAthenaLobbyMatchmakingPlay_C::SetSquadFillText(bool InCurrentSquadFill)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "SetSquadFillText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_SetSquadFillText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "SetSquadFillText");
+
+	Params::UAthenaLobbyMatchmakingPlay_C_SetSquadFillText_Params Parms{};
 
 	Parms.InCurrentSquadFill = InCurrentSquadFill;
 
@@ -188,9 +238,12 @@ void UAthenaLobbyMatchmakingPlay_C::SetSquadFillText(bool InCurrentSquadFill)
 
 void UAthenaLobbyMatchmakingPlay_C::OnNewModeViolatorUpdated(bool bShouldShow)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnNewModeViolatorUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_OnNewModeViolatorUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnNewModeViolatorUpdated");
+
+	Params::UAthenaLobbyMatchmakingPlay_C_OnNewModeViolatorUpdated_Params Parms{};
 
 	Parms.bShouldShow = bShouldShow;
 
@@ -207,9 +260,12 @@ void UAthenaLobbyMatchmakingPlay_C::OnNewModeViolatorUpdated(bool bShouldShow)
 
 void UAthenaLobbyMatchmakingPlay_C::UpdateCustomViolatorText(class FText& ModeName, class FText& SubText)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "UpdateCustomViolatorText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_UpdateCustomViolatorText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "UpdateCustomViolatorText");
+
+	Params::UAthenaLobbyMatchmakingPlay_C_UpdateCustomViolatorText_Params Parms{};
 
 	Parms.ModeName = ModeName;
 	Parms.SubText = SubText;
@@ -225,12 +281,14 @@ void UAthenaLobbyMatchmakingPlay_C::UpdateCustomViolatorText(class FText& ModeNa
 
 void UAthenaLobbyMatchmakingPlay_C::Animate()
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "Animate");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_Animate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "Animate");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -243,9 +301,12 @@ void UAthenaLobbyMatchmakingPlay_C::Animate()
 
 void UAthenaLobbyMatchmakingPlay_C::OnMatchmakingFinishedBlueprint(bool bSuccess, class UFortPlaylistAthena* Playlist)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnMatchmakingFinishedBlueprint");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_OnMatchmakingFinishedBlueprint_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnMatchmakingFinishedBlueprint");
+
+	Params::UAthenaLobbyMatchmakingPlay_C_OnMatchmakingFinishedBlueprint_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 	Parms.Playlist = Playlist;
@@ -262,9 +323,12 @@ void UAthenaLobbyMatchmakingPlay_C::OnMatchmakingFinishedBlueprint(bool bSuccess
 
 void UAthenaLobbyMatchmakingPlay_C::BndEvt__PlayButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "BndEvt__PlayButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_BndEvt__PlayButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "BndEvt__PlayButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaLobbyMatchmakingPlay_C_BndEvt__PlayButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -281,9 +345,12 @@ void UAthenaLobbyMatchmakingPlay_C::BndEvt__PlayButton_K2Node_ComponentBoundEven
 
 void UAthenaLobbyMatchmakingPlay_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "Tick");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_Tick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "Tick");
+
+	Params::UAthenaLobbyMatchmakingPlay_C_Tick_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InDeltaTime = InDeltaTime;
@@ -299,12 +366,14 @@ void UAthenaLobbyMatchmakingPlay_C::Tick(const struct FGeometry& MyGeometry, flo
 
 void UAthenaLobbyMatchmakingPlay_C::OnInitialized()
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_OnInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -316,9 +385,12 @@ void UAthenaLobbyMatchmakingPlay_C::OnInitialized()
 
 void UAthenaLobbyMatchmakingPlay_C::OnCrossplayPreferencesChanged(bool IsCrossplayEnabled)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnCrossplayPreferencesChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_OnCrossplayPreferencesChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnCrossplayPreferencesChanged");
+
+	Params::UAthenaLobbyMatchmakingPlay_C_OnCrossplayPreferencesChanged_Params Parms{};
 
 	Parms.IsCrossplayEnabled = IsCrossplayEnabled;
 
@@ -334,9 +406,12 @@ void UAthenaLobbyMatchmakingPlay_C::OnCrossplayPreferencesChanged(bool IsCrosspl
 
 void UAthenaLobbyMatchmakingPlay_C::ShouldShowMatchmakingDetails(bool bShow)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "ShouldShowMatchmakingDetails");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_ShouldShowMatchmakingDetails_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "ShouldShowMatchmakingDetails");
+
+	Params::UAthenaLobbyMatchmakingPlay_C_ShouldShowMatchmakingDetails_Params Parms{};
 
 	Parms.bShow = bShow;
 
@@ -398,7 +473,7 @@ void UAthenaLobbyMatchmakingPlay_C::ShouldShowMatchmakingDetails(bool bShow)
 // bool                               Temp_bool_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        K2Node_Select_Default                                            (None)
 // bool                               K2Node_Event_bSuccess                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortPlaylistAthena*         K2Node_Event_Playlist                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -445,9 +520,12 @@ void UAthenaLobbyMatchmakingPlay_C::ShouldShowMatchmakingDetails(bool bShow)
 
 void UAthenaLobbyMatchmakingPlay_C::ExecuteUbergraph_AthenaLobbyMatchmakingPlay(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, class UFortGlobalUIContext* CallFunc_GetLocalPlayerSubsystem_ReturnValue, class UFortGlobalUIContext* CallFunc_GetLocalPlayerSubsystem_ReturnValue_1, bool CallFunc_IsInZone_ReturnValue, bool CallFunc_IsInZone_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable, class UCMSContext* CallFunc_GetContext_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_IsNewPlaylistInformationAvailable_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Array_Index_Variable_1, bool Temp_bool_Variable_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UAthenaMatchmakingPlayButton_C* K2Node_DynamicCast_AsAthena_Matchmaking_Play_Button, bool K2Node_DynamicCast_bSuccess, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess_1, class FText K2Node_Event_PlayButtonText, class FText K2Node_Event_CancelButtonText, const struct FPlaylistFrontEndData& K2Node_Event_NewPlaylist, class FText K2Node_Event_PlaylistCMSOverrideName, enum class EFortLobbyType K2Node_Event_LobbyType, bool K2Node_Event_InCurrentSquadFill, bool CallFunc_TextIsEmpty_ReturnValue, bool K2Node_Event_bShouldShow, class FText K2Node_Event_ModeName, class FText K2Node_Event_SubText, enum class ESlateVisibility Temp_byte_Variable_4, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_K2_IsValidTimerHandle_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_5, bool K2Node_SwitchEnum_CmpSuccess, bool Temp_bool_Variable_2, class UFortCrossplayPromptContext* CallFunc_GetContext_ReturnValue_1, class UFortCrossplayPromptContext* CallFunc_GetContext_ReturnValue_2, bool Temp_bool_Variable_3, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, class FText K2Node_Select_Default, bool K2Node_Event_bSuccess, class UFortPlaylistAthena* K2Node_Event_Playlist, enum class ESlateVisibility K2Node_Select_Default_1, class UAudioComponent* CallFunc_CreateSound2D_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime, bool K2Node_CustomEvent_IsCrossplayEnabled, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, bool CallFunc_Not_PreBool_ReturnValue_2, bool CallFunc_IsPlaylistLimitedPoolMatchmakingEnabled_ReturnValue, bool CallFunc_NotEqual_ObjectObject_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_2, bool K2Node_Event_bShow, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_3, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, bool CallFunc_EqualEqual_BoolBool_ReturnValue, bool CallFunc_AreModalsActive_ReturnValue, class UClass* Temp_class_Variable, class UClass* K2Node_ClassDynamicCast_AsUser_Widget, bool K2Node_ClassDynamicCast_bSuccess, class UClass* K2Node_CustomEvent_Loaded, enum class EFortMatchmakingViolatorStyle Temp_byte_Variable_6, TArray<class AActor*>& CallFunc_GetAllActorsWithInterface_OutActors, class AActor* CallFunc_Array_Get_Item, class UWidget* K2Node_Select_Default_4, TScriptInterface<class II_FrontendBackplateMatchmakingInteraction_C> K2Node_DynamicCast_AsI_Frontend_Backplate_Matchmaking_Interaction, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_HasMatcmakingInteraction_HasInteraction, TScriptInterface<class II_FrontendBackplateMatchmakingInteraction_C> K2Node_DynamicCast_AsI_Frontend_Backplate_Matchmaking_Interaction_1, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, TArray<class AActor*>& CallFunc_GetAllActorsWithInterface_OutActors_1, class AActor* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, TScriptInterface<class II_FrontendBackplateMatchmakingInteraction_C> K2Node_DynamicCast_AsI_Frontend_Backplate_Matchmaking_Interaction_2, bool K2Node_DynamicCast_bSuccess_4, bool CallFunc_Less_IntInt_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "ExecuteUbergraph_AthenaLobbyMatchmakingPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_ExecuteUbergraph_AthenaLobbyMatchmakingPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "ExecuteUbergraph_AthenaLobbyMatchmakingPlay");
+
+	Params::UAthenaLobbyMatchmakingPlay_C_ExecuteUbergraph_AthenaLobbyMatchmakingPlay_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -558,9 +636,12 @@ void UAthenaLobbyMatchmakingPlay_C::ExecuteUbergraph_AthenaLobbyMatchmakingPlay(
 
 void UAthenaLobbyMatchmakingPlay_C::OnPlaylistChanged__DelegateSignature(const struct FPlaylistFrontEndData& Playlist_Data, class FText Playlist_CMS_Override, enum class EFortLobbyType Lobby_Type)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnPlaylistChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_OnPlaylistChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "OnPlaylistChanged__DelegateSignature");
+
+	Params::UAthenaLobbyMatchmakingPlay_C_OnPlaylistChanged__DelegateSignature_Params Parms{};
 
 	Parms.Playlist_Data = Playlist_Data;
 	Parms.Playlist_CMS_Override = Playlist_CMS_Override;
@@ -577,17 +658,17 @@ void UAthenaLobbyMatchmakingPlay_C::OnPlaylistChanged__DelegateSignature(const s
 
 void UAthenaLobbyMatchmakingPlay_C::PlaylistsUpdated__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "PlaylistsUpdated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyMatchmakingPlay_C_PlaylistsUpdated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "PlaylistsUpdated__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

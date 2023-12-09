@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SimpleMaterialProgressBar.SimpleMaterialProgressBar_C
+// (None)
+
+class UClass* USimpleMaterialProgressBar_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SimpleMaterialProgressBar_C");
+
+	return Clss;
+}
+
+
+// SimpleMaterialProgressBar_C SimpleMaterialProgressBar.Default__SimpleMaterialProgressBar_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USimpleMaterialProgressBar_C* USimpleMaterialProgressBar_C::GetDefaultObj()
+{
+	static class USimpleMaterialProgressBar_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USimpleMaterialProgressBar_C*>(USimpleMaterialProgressBar_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SimpleMaterialProgressBar.SimpleMaterialProgressBar_C.SetColorBackground
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void USimpleMaterialProgressBar_C::SetColorBackground(const struct FLinearColor& Value, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetColorBackground");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleMaterialProgressBar_C_SetColorBackground_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetColorBackground");
+
+	Params::USimpleMaterialProgressBar_C_SetColorBackground_Params Parms{};
 
 	Parms.Value = Value;
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
@@ -43,9 +71,12 @@ void USimpleMaterialProgressBar_C::SetColorBackground(const struct FLinearColor&
 
 void USimpleMaterialProgressBar_C::SetColorB(const struct FLinearColor& Value, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetColorB");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleMaterialProgressBar_C_SetColorB_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetColorB");
+
+	Params::USimpleMaterialProgressBar_C_SetColorB_Params Parms{};
 
 	Parms.Value = Value;
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
@@ -63,9 +94,12 @@ void USimpleMaterialProgressBar_C::SetColorB(const struct FLinearColor& Value, c
 
 void USimpleMaterialProgressBar_C::SetColorA(const struct FLinearColor& Value, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetColorA");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleMaterialProgressBar_C_SetColorA_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetColorA");
+
+	Params::USimpleMaterialProgressBar_C_SetColorA_Params Parms{};
 
 	Parms.Value = Value;
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
@@ -83,9 +117,12 @@ void USimpleMaterialProgressBar_C::SetColorA(const struct FLinearColor& Value, c
 
 void USimpleMaterialProgressBar_C::SetProgress(float Value, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleMaterialProgressBar_C_SetProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "SetProgress");
+
+	Params::USimpleMaterialProgressBar_C_SetProgress_Params Parms{};
 
 	Parms.Value = Value;
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
@@ -102,9 +139,12 @@ void USimpleMaterialProgressBar_C::SetProgress(float Value, class UMaterialInsta
 
 void USimpleMaterialProgressBar_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("SimpleMaterialProgressBar_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleMaterialProgressBar_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "PreConstruct");
+
+	Params::USimpleMaterialProgressBar_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -119,12 +159,14 @@ void USimpleMaterialProgressBar_C::PreConstruct(bool IsDesignTime)
 
 void USimpleMaterialProgressBar_C::Construct()
 {
-	static auto Func = Class->GetFunction("SimpleMaterialProgressBar_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleMaterialProgressBar_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -138,9 +180,12 @@ void USimpleMaterialProgressBar_C::Construct()
 
 void USimpleMaterialProgressBar_C::AnimateProgress(float StartAmount, float EndAmount, float AnimSpeed)
 {
-	static auto Func = Class->GetFunction("SimpleMaterialProgressBar_C", "AnimateProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleMaterialProgressBar_C_AnimateProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "AnimateProgress");
+
+	Params::USimpleMaterialProgressBar_C_AnimateProgress_Params Parms{};
 
 	Parms.StartAmount = StartAmount;
 	Parms.EndAmount = EndAmount;
@@ -157,12 +202,14 @@ void USimpleMaterialProgressBar_C::AnimateProgress(float StartAmount, float EndA
 
 void USimpleMaterialProgressBar_C::EventFillFinished()
 {
-	static auto Func = Class->GetFunction("SimpleMaterialProgressBar_C", "EventFillFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleMaterialProgressBar_C_EventFillFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "EventFillFinished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -183,9 +230,12 @@ void USimpleMaterialProgressBar_C::EventFillFinished()
 
 void USimpleMaterialProgressBar_C::ExecuteUbergraph_SimpleMaterialProgressBar(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, float CallFunc_Conv_IntToFloat_ReturnValue, bool K2Node_Event_IsDesignTime, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, float K2Node_CustomEvent_StartAmount, float K2Node_CustomEvent_EndAmount, float K2Node_CustomEvent_AnimSpeed, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SimpleMaterialProgressBar_C", "ExecuteUbergraph_SimpleMaterialProgressBar");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "ExecuteUbergraph_SimpleMaterialProgressBar");
+
+	Params::USimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -209,17 +259,17 @@ void USimpleMaterialProgressBar_C::ExecuteUbergraph_SimpleMaterialProgressBar(in
 
 void USimpleMaterialProgressBar_C::FinishedFillDispatcher__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("SimpleMaterialProgressBar_C", "FinishedFillDispatcher__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleMaterialProgressBar_C_FinishedFillDispatcher__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleMaterialProgressBar_C", "FinishedFillDispatcher__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GAT_TriggeredAbility.GAT_TriggeredAbility_C
+// (None)
+
+class UClass* UGAT_TriggeredAbility_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAT_TriggeredAbility_C");
+
+	return Clss;
+}
+
+
+// GAT_TriggeredAbility_C GAT_TriggeredAbility.Default__GAT_TriggeredAbility_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAT_TriggeredAbility_C* UGAT_TriggeredAbility_C::GetDefaultObj()
+{
+	static class UGAT_TriggeredAbility_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAT_TriggeredAbility_C*>(UGAT_TriggeredAbility_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GAT_TriggeredAbility.GAT_TriggeredAbility_C.EndAbilityWithReason
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UGAT_TriggeredAbility_C::EndAbilityWithReason(const class FString& Reason)
 {
-	static auto Func = Class->GetFunction("GAT_TriggeredAbility_C", "EndAbilityWithReason");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_TriggeredAbility_C_EndAbilityWithReason_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_TriggeredAbility_C", "EndAbilityWithReason");
+
+	Params::UGAT_TriggeredAbility_C_EndAbilityWithReason_Params Parms{};
 
 	Parms.Reason = Reason;
 
@@ -50,9 +78,12 @@ void UGAT_TriggeredAbility_C::EndAbilityWithReason(const class FString& Reason)
 
 void UGAT_TriggeredAbility_C::SetHolsterWeaponWithName(class AFortPawn* Target_Fort_Pawn, bool ShouldHolster, bool PlayEquipAnim, bool ShowDebugPrintName, bool* IsWeaponHolstered, bool* OperationSuccessful, bool bOperationSuccessful, bool CallFunc_BooleanXOR_ReturnValue, class UClass* CallFunc_GetObjectClass_ReturnValue, const class FString& CallFunc_GetClassDisplayName_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAT_TriggeredAbility_C", "SetHolsterWeaponWithName");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_TriggeredAbility_C_SetHolsterWeaponWithName_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_TriggeredAbility_C", "SetHolsterWeaponWithName");
+
+	Params::UGAT_TriggeredAbility_C_SetHolsterWeaponWithName_Params Parms{};
 
 	Parms.Target_Fort_Pawn = Target_Fort_Pawn;
 	Parms.ShouldHolster = ShouldHolster;
@@ -83,9 +114,12 @@ void UGAT_TriggeredAbility_C::SetHolsterWeaponWithName(class AFortPawn* Target_F
 
 void UGAT_TriggeredAbility_C::TriggeredAbilitySetup(class UAbilitySystemComponent* AbilitySystemIn, class UAbilitySystemComponent** AbilitySystemOut)
 {
-	static auto Func = Class->GetFunction("GAT_TriggeredAbility_C", "TriggeredAbilitySetup");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_TriggeredAbility_C_TriggeredAbilitySetup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_TriggeredAbility_C", "TriggeredAbilitySetup");
+
+	Params::UGAT_TriggeredAbility_C_TriggeredAbilitySetup_Params Parms{};
 
 	Parms.AbilitySystemIn = AbilitySystemIn;
 
@@ -104,9 +138,12 @@ void UGAT_TriggeredAbility_C::TriggeredAbilitySetup(class UAbilitySystemComponen
 
 void UGAT_TriggeredAbility_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GAT_TriggeredAbility_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_TriggeredAbility_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_TriggeredAbility_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGAT_TriggeredAbility_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -123,9 +160,12 @@ void UGAT_TriggeredAbility_C::K2_ActivateAbilityFromEvent(struct FGameplayEventD
 
 void UGAT_TriggeredAbility_C::ExecuteUbergraph_GAT_TriggeredAbility(int32 EntryPoint, const struct FGameplayEventData& K2Node_Event_EventData)
 {
-	static auto Func = Class->GetFunction("GAT_TriggeredAbility_C", "ExecuteUbergraph_GAT_TriggeredAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_TriggeredAbility_C_ExecuteUbergraph_GAT_TriggeredAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_TriggeredAbility_C", "ExecuteUbergraph_GAT_TriggeredAbility");
+
+	Params::UGAT_TriggeredAbility_C_ExecuteUbergraph_GAT_TriggeredAbility_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_EventData = K2Node_Event_EventData;
@@ -136,6 +176,4 @@ void UGAT_TriggeredAbility_C::ExecuteUbergraph_GAT_TriggeredAbility(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

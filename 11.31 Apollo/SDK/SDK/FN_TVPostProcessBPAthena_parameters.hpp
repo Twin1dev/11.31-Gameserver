@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -26,34 +23,6 @@ public:
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function TVPostProcessBPAthena.TVPostProcessBPAthena_C.FrontEndCameraSwitchFadeAthena__FinishedFunc
-struct ATVPostProcessBPAthena_C_FrontEndCameraSwitchFadeAthena__FinishedFunc_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function TVPostProcessBPAthena.TVPostProcessBPAthena_C.FrontEndCameraSwitchFadeAthena__UpdateFunc
-struct ATVPostProcessBPAthena_C_FrontEndCameraSwitchFadeAthena__UpdateFunc_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function TVPostProcessBPAthena.TVPostProcessBPAthena_C.ExecuteCameraSwitch
-struct ATVPostProcessBPAthena_C_ExecuteCameraSwitch_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function TVPostProcessBPAthena.TVPostProcessBPAthena_C.Camera_DisableEffects
-struct ATVPostProcessBPAthena_C_Camera_DisableEffects_Params
-{
-public:
-};
-
 // 0x8 (0x8 - 0x0)
 // Function TVPostProcessBPAthena.TVPostProcessBPAthena_C.ExecuteUbergraph_TVPostProcessBPAthena
 struct ATVPostProcessBPAthena_C_ExecuteUbergraph_TVPostProcessBPAthena_Params
@@ -66,6 +35,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

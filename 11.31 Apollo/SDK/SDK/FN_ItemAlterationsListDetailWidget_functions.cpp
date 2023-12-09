@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ItemAlterationsListDetailWidget.ItemAlterationsListDetailWidget_C
+// (None)
+
+class UClass* UItemAlterationsListDetailWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemAlterationsListDetailWidget_C");
+
+	return Clss;
+}
+
+
+// ItemAlterationsListDetailWidget_C ItemAlterationsListDetailWidget.Default__ItemAlterationsListDetailWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemAlterationsListDetailWidget_C* UItemAlterationsListDetailWidget_C::GetDefaultObj()
+{
+	static class UItemAlterationsListDetailWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemAlterationsListDetailWidget_C*>(UItemAlterationsListDetailWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ItemAlterationsListDetailWidget.ItemAlterationsListDetailWidget_C.SetState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UItemAlterationsListDetailWidget_C::SetState(enum class EFortAlterationWidgetState State)
 {
-	static auto Func = Class->GetFunction("ItemAlterationsListDetailWidget_C", "SetState");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemAlterationsListDetailWidget_C_SetState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemAlterationsListDetailWidget_C", "SetState");
+
+	Params::UItemAlterationsListDetailWidget_C_SetState_Params Parms{};
 
 	Parms.State = State;
 
@@ -39,12 +67,14 @@ void UItemAlterationsListDetailWidget_C::SetState(enum class EFortAlterationWidg
 
 void UItemAlterationsListDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto Func = Class->GetFunction("ItemAlterationsListDetailWidget_C", "HandlePostDifferentItemToDetailSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemAlterationsListDetailWidget_C_HandlePostDifferentItemToDetailSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemAlterationsListDetailWidget_C", "HandlePostDifferentItemToDetailSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void UItemAlterationsListDetailWidget_C::HandlePostDifferentItemToDetailSet()
 
 void UItemAlterationsListDetailWidget_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static auto Func = Class->GetFunction("ItemAlterationsListDetailWidget_C", "HandlePostDifferentItemToCompareWithSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemAlterationsListDetailWidget_C_HandlePostDifferentItemToCompareWithSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemAlterationsListDetailWidget_C", "HandlePostDifferentItemToCompareWithSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -72,9 +104,12 @@ void UItemAlterationsListDetailWidget_C::HandlePostDifferentItemToCompareWithSet
 
 void UItemAlterationsListDetailWidget_C::ExecuteUbergraph_ItemAlterationsListDetailWidget(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("ItemAlterationsListDetailWidget_C", "ExecuteUbergraph_ItemAlterationsListDetailWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemAlterationsListDetailWidget_C_ExecuteUbergraph_ItemAlterationsListDetailWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemAlterationsListDetailWidget_C", "ExecuteUbergraph_ItemAlterationsListDetailWidget");
+
+	Params::UItemAlterationsListDetailWidget_C_ExecuteUbergraph_ItemAlterationsListDetailWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -84,6 +119,4 @@ void UItemAlterationsListDetailWidget_C::ExecuteUbergraph_ItemAlterationsListDet
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

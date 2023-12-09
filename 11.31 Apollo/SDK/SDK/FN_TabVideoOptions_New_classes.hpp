@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,11 +16,8 @@ class UTabVideoOptions_New_C : public UFortTabVideoOptions_TempNew
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x330(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("TabVideoOptions_New_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UTabVideoOptions_New_C* GetDefaultObj();
 
 	void OnComplete_7E19F26B42A808FDADDB569CFB68CCB7(class UUserWidget* UserWidget);
 	void CenterOnTab();
@@ -34,6 +28,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

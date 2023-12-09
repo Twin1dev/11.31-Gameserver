@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaDirectAcquisitonDetails_RefundDisclaimer.AthenaDirectAcquisitonDetails_RefundDisclaimer_C
+// (None)
+
+class UClass* UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaDirectAcquisitonDetails_RefundDisclaimer_C");
+
+	return Clss;
+}
+
+
+// AthenaDirectAcquisitonDetails_RefundDisclaimer_C AthenaDirectAcquisitonDetails_RefundDisclaimer.Default__AthenaDirectAcquisitonDetails_RefundDisclaimer_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaDirectAcquisitonDetails_RefundDisclaimer_C* UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::GetDefaultObj()
+{
+	static class UAthenaDirectAcquisitonDetails_RefundDisclaimer_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaDirectAcquisitonDetails_RefundDisclaimer_C*>(UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaDirectAcquisitonDetails_RefundDisclaimer.AthenaDirectAcquisitonDetails_RefundDisclaimer_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitonDetails_RefundDisclaimer_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitonDetails_RefundDisclaimer_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitonDetails_RefundDisclaimer_C", "PreConstruct");
+
+	Params::UAthenaDirectAcquisitonDetails_RefundDisclaimer_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -42,9 +70,12 @@ void UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::PreConstruct(bool IsDesi
 
 void UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::ExecuteUbergraph_AthenaDirectAcquisitonDetails_RefundDisclaimer(int32 EntryPoint, bool K2Node_Event_IsDesignTime, bool CallFunc_TextIsEmpty_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitonDetails_RefundDisclaimer_C", "ExecuteUbergraph_AthenaDirectAcquisitonDetails_RefundDisclaimer");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitonDetails_RefundDisclaimer_C_ExecuteUbergraph_AthenaDirectAcquisitonDetails_RefundDisclaimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitonDetails_RefundDisclaimer_C", "ExecuteUbergraph_AthenaDirectAcquisitonDetails_RefundDisclaimer");
+
+	Params::UAthenaDirectAcquisitonDetails_RefundDisclaimer_C_ExecuteUbergraph_AthenaDirectAcquisitonDetails_RefundDisclaimer_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -56,6 +87,4 @@ void UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::ExecuteUbergraph_AthenaD
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

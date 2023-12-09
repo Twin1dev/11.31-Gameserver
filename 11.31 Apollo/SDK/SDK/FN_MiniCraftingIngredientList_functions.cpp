@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass MiniCraftingIngredientList.MiniCraftingIngredientList_C
+// (None)
+
+class UClass* UMiniCraftingIngredientList_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MiniCraftingIngredientList_C");
+
+	return Clss;
+}
+
+
+// MiniCraftingIngredientList_C MiniCraftingIngredientList.Default__MiniCraftingIngredientList_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMiniCraftingIngredientList_C* UMiniCraftingIngredientList_C::GetDefaultObj()
+{
+	static class UMiniCraftingIngredientList_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMiniCraftingIngredientList_C*>(UMiniCraftingIngredientList_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MiniCraftingIngredientList.MiniCraftingIngredientList_C.AddListEntry
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UMiniCraftingIngredientList_C::AddListEntry(class UFortItemQuantityListEntryBase* ListEntry)
 {
-	static auto Func = Class->GetFunction("MiniCraftingIngredientList_C", "AddListEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniCraftingIngredientList_C_AddListEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniCraftingIngredientList_C", "AddListEntry");
+
+	Params::UMiniCraftingIngredientList_C_AddListEntry_Params Parms{};
 
 	Parms.ListEntry = ListEntry;
 
@@ -43,9 +71,12 @@ void UMiniCraftingIngredientList_C::AddListEntry(class UFortItemQuantityListEntr
 
 void UMiniCraftingIngredientList_C::ExecuteUbergraph_MiniCraftingIngredientList(int32 EntryPoint, const struct FMargin& K2Node_MakeStruct_Margin, class UFortItemQuantityListEntryBase* K2Node_Event_ListEntry, class UWrapBoxSlot* CallFunc_AddChildToWrapBox_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MiniCraftingIngredientList_C", "ExecuteUbergraph_MiniCraftingIngredientList");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniCraftingIngredientList_C", "ExecuteUbergraph_MiniCraftingIngredientList");
+
+	Params::UMiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_MakeStruct_Margin = K2Node_MakeStruct_Margin;
@@ -58,6 +89,4 @@ void UMiniCraftingIngredientList_C::ExecuteUbergraph_MiniCraftingIngredientList(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

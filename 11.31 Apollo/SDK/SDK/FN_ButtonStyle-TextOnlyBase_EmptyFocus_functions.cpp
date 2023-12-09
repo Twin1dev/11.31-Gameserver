@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ButtonStyle-TextOnlyBase_EmptyFocus.ButtonStyle-TextOnlyBase_EmptyFocus_C
+// (None)
+
+class UClass* UButtonStyleMinusTextOnlyBase_EmptyFocus_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ButtonStyle-TextOnlyBase_EmptyFocus_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ButtonStyle-TextOnlyBase_EmptyFocus_C ButtonStyle-TextOnlyBase_EmptyFocus.Default__ButtonStyle-TextOnlyBase_EmptyFocus_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UButtonStyleMinusTextOnlyBase_EmptyFocus_C* UButtonStyleMinusTextOnlyBase_EmptyFocus_C::GetDefaultObj()
+{
+	static class UButtonStyleMinusTextOnlyBase_EmptyFocus_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UButtonStyleMinusTextOnlyBase_EmptyFocus_C*>(UButtonStyleMinusTextOnlyBase_EmptyFocus_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

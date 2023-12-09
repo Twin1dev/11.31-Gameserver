@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ChallengeCategoryTab.ChallengeCategoryTab_C
+// (None)
+
+class UClass* UChallengeCategoryTab_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChallengeCategoryTab_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ChallengeCategoryTab_C ChallengeCategoryTab.Default__ChallengeCategoryTab_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChallengeCategoryTab_C* UChallengeCategoryTab_C::GetDefaultObj()
+{
+	static class UChallengeCategoryTab_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChallengeCategoryTab_C*>(UChallengeCategoryTab_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

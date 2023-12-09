@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaFrontEndRadialPicker.AthenaFrontEndRadialPicker_C
+// (None)
+
+class UClass* UAthenaFrontEndRadialPicker_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaFrontEndRadialPicker_C");
+
+	return Clss;
+}
+
+
+// AthenaFrontEndRadialPicker_C AthenaFrontEndRadialPicker.Default__AthenaFrontEndRadialPicker_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaFrontEndRadialPicker_C* UAthenaFrontEndRadialPicker_C::GetDefaultObj()
+{
+	static class UAthenaFrontEndRadialPicker_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaFrontEndRadialPicker_C*>(UAthenaFrontEndRadialPicker_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AthenaFrontEndRadialPicker.AthenaFrontEndRadialPicker_C.OnMouseWheel
@@ -32,13 +57,16 @@ namespace SDK
 // class AFortPlayerControllerFrontEnd*K2Node_DynamicCast_AsFort_Player_Controller_Front_End_1          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 
 struct FEventReply UAthenaFrontEndRadialPicker_C::OnMouseWheel(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, float CallFunc_PointerEvent_GetWheelDelta_ReturnValue, class AFortPlayerControllerFrontEnd* K2Node_DynamicCast_AsFort_Player_Controller_Front_End, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Greater_FloatFloat_ReturnValue, class UCommonInputSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_1, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, class AFortPlayerControllerFrontEnd* K2Node_DynamicCast_AsFort_Player_Controller_Front_End_1, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "OnMouseWheel");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_OnMouseWheel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "OnMouseWheel");
+
+	Params::UAthenaFrontEndRadialPicker_C_OnMouseWheel_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -68,13 +96,16 @@ struct FEventReply UAthenaFrontEndRadialPicker_C::OnMouseWheel(const struct FGeo
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FPointerEvent               MouseEvent                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 
 struct FEventReply UAthenaFrontEndRadialPicker_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Handled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "OnMouseButtonDown");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_OnMouseButtonDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "OnMouseButtonDown");
+
+	Params::UAthenaFrontEndRadialPicker_C_OnMouseButtonDown_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -93,13 +124,16 @@ struct FEventReply UAthenaFrontEndRadialPicker_C::OnMouseButtonDown(const struct
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FPointerEvent               InTouchEvent                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 
 struct FEventReply UAthenaFrontEndRadialPicker_C::OnTouchEnded(const struct FGeometry& MyGeometry, struct FPointerEvent& InTouchEvent, const struct FEventReply& CallFunc_Handled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "OnTouchEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_OnTouchEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "OnTouchEnded");
+
+	Params::UAthenaFrontEndRadialPicker_C_OnTouchEnded_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InTouchEvent = InTouchEvent;
@@ -121,9 +155,12 @@ struct FEventReply UAthenaFrontEndRadialPicker_C::OnTouchEnded(const struct FGeo
 
 void UAthenaFrontEndRadialPicker_C::On_Item_Touched(class URadialPickerItem_C* Touched_Item, int32 CallFunc_Array_Find_ReturnValue, bool CallFunc_Array_IsValidIndex_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "On Item Touched");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_On_Item_Touched_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "On Item Touched");
+
+	Params::UAthenaFrontEndRadialPicker_C_On_Item_Touched_Params Parms{};
 
 	Parms.Touched_Item = Touched_Item;
 	Parms.CallFunc_Array_Find_ReturnValue = CallFunc_Array_Find_ReturnValue;
@@ -143,9 +180,12 @@ void UAthenaFrontEndRadialPicker_C::On_Item_Touched(class URadialPickerItem_C* T
 
 void UAthenaFrontEndRadialPicker_C::SetShowMouseCursor(bool InShowMouseCursor, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_NotEqual_BoolBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "SetShowMouseCursor");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_SetShowMouseCursor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "SetShowMouseCursor");
+
+	Params::UAthenaFrontEndRadialPicker_C_SetShowMouseCursor_Params Parms{};
 
 	Parms.InShowMouseCursor = InShowMouseCursor;
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
@@ -169,9 +209,12 @@ void UAthenaFrontEndRadialPicker_C::SetShowMouseCursor(bool InShowMouseCursor, c
 
 void UAthenaFrontEndRadialPicker_C::SetPointerDirection(float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_DegSin_ReturnValue, float CallFunc_DegCos_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_2, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, const struct FWidgetTransform& K2Node_MakeStruct_WidgetTransform)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "SetPointerDirection");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_SetPointerDirection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "SetPointerDirection");
+
+	Params::UAthenaFrontEndRadialPicker_C_SetPointerDirection_Params Parms{};
 
 	Parms.CallFunc_Multiply_FloatFloat_ReturnValue = CallFunc_Multiply_FloatFloat_ReturnValue;
 	Parms.CallFunc_DegSin_ReturnValue = CallFunc_DegSin_ReturnValue;
@@ -199,9 +242,12 @@ void UAthenaFrontEndRadialPicker_C::SetPointerDirection(float CallFunc_Multiply_
 
 void UAthenaFrontEndRadialPicker_C::IsGamepadInPickerDeadZone(bool* bIsInDeadZone, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, float CallFunc_GetInputAnalogStickState_StickX, float CallFunc_GetInputAnalogStickState_StickY, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, float CallFunc_VSize2DSquared_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "IsGamepadInPickerDeadZone");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_IsGamepadInPickerDeadZone_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "IsGamepadInPickerDeadZone");
+
+	Params::UAthenaFrontEndRadialPicker_C_IsGamepadInPickerDeadZone_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
 	Parms.CallFunc_GetInputAnalogStickState_StickX = CallFunc_GetInputAnalogStickState_StickX;
@@ -254,9 +300,12 @@ void UAthenaFrontEndRadialPicker_C::IsGamepadInPickerDeadZone(bool* bIsInDeadZon
 
 void UAthenaFrontEndRadialPicker_C::MoveActiveOption(int32 MoveOptionDirection, int32 NewActiveOption, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, const struct FVector2D& CallFunc_GetViewportSize_ReturnValue, float CallFunc_GetViewportScale_ReturnValue, const struct FVector2D& CallFunc_Divide_Vector2DFloat_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, const struct FVector2D& CallFunc_GetOptionPosition_Position, float CallFunc_BreakVector2D_X_1, float CallFunc_BreakVector2D_Y_1, bool CallFunc_IsGamepadInPickerDeadZone_bIsInDeadZone, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue_1, int32 CallFunc_FTrunc_ReturnValue, int32 CallFunc_FTrunc_ReturnValue_1, float CallFunc_GetOptionAngle_Angle, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_1, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue_1, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "MoveActiveOption");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_MoveActiveOption_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "MoveActiveOption");
+
+	Params::UAthenaFrontEndRadialPicker_C_MoveActiveOption_Params Parms{};
 
 	Parms.MoveOptionDirection = MoveOptionDirection;
 	Parms.NewActiveOption = NewActiveOption;
@@ -302,9 +351,12 @@ void UAthenaFrontEndRadialPicker_C::MoveActiveOption(int32 MoveOptionDirection, 
 
 void UAthenaFrontEndRadialPicker_C::ResetInput(class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UFortPickerContext* CallFunc_GetContext_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "ResetInput");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_ResetInput_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "ResetInput");
+
+	Params::UAthenaFrontEndRadialPicker_C_ResetInput_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -324,9 +376,12 @@ void UAthenaFrontEndRadialPicker_C::ResetInput(class APlayerController* CallFunc
 
 void UAthenaFrontEndRadialPicker_C::CanConfirm(bool* CanAccept, bool CallFunc_NotEqual_IntInt_ReturnValue, class URadialPickerItem_C* CallFunc_Array_Get_Item, bool CallFunc_GetIsEnabled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "CanConfirm");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_CanConfirm_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "CanConfirm");
+
+	Params::UAthenaFrontEndRadialPicker_C_CanConfirm_Params Parms{};
 
 	Parms.CallFunc_NotEqual_IntInt_ReturnValue = CallFunc_NotEqual_IntInt_ReturnValue;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
@@ -356,9 +411,12 @@ void UAthenaFrontEndRadialPicker_C::CanConfirm(bool* CanAccept, bool CallFunc_No
 
 void UAthenaFrontEndRadialPicker_C::SetInputMode(bool WasUsingGamepad, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UFortPickerContext* CallFunc_GetContext_ReturnValue, bool CallFunc_UseLeftThumbstick_ReturnValue, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_1, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_2, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "SetInputMode");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_SetInputMode_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "SetInputMode");
+
+	Params::UAthenaFrontEndRadialPicker_C_SetInputMode_Params Parms{};
 
 	Parms.WasUsingGamepad = WasUsingGamepad;
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
@@ -384,9 +442,12 @@ void UAthenaFrontEndRadialPicker_C::SetInputMode(bool WasUsingGamepad, class APl
 
 void UAthenaFrontEndRadialPicker_C::SetActiveOption(int32 Option, class URadialPickerItem_C* CallFunc_Array_Get_Item)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "SetActiveOption");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_SetActiveOption_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "SetActiveOption");
+
+	Params::UAthenaFrontEndRadialPicker_C_SetActiveOption_Params Parms{};
 
 	Parms.Option = Option;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
@@ -404,9 +465,12 @@ void UAthenaFrontEndRadialPicker_C::SetActiveOption(int32 Option, class URadialP
 
 void UAthenaFrontEndRadialPicker_C::ClearActiveOption(class URadialPickerItem_C* CallFunc_Array_Get_Item, bool CallFunc_NotEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "ClearActiveOption");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_ClearActiveOption_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "ClearActiveOption");
+
+	Params::UAthenaFrontEndRadialPicker_C_ClearActiveOption_Params Parms{};
 
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_NotEqual_IntInt_ReturnValue = CallFunc_NotEqual_IntInt_ReturnValue;
@@ -429,9 +493,12 @@ void UAthenaFrontEndRadialPicker_C::ClearActiveOption(class URadialPickerItem_C*
 
 void UAthenaFrontEndRadialPicker_C::GetOptionAngle(int32 Option, float* Angle, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "GetOptionAngle");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_GetOptionAngle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "GetOptionAngle");
+
+	Params::UAthenaFrontEndRadialPicker_C_GetOptionAngle_Params Parms{};
 
 	Parms.Option = Option;
 	Parms.CallFunc_Conv_IntToFloat_ReturnValue = CallFunc_Conv_IntToFloat_ReturnValue;
@@ -463,9 +530,12 @@ void UAthenaFrontEndRadialPicker_C::GetOptionAngle(int32 Option, float* Angle, f
 
 void UAthenaFrontEndRadialPicker_C::GetAngleDifference(float AngleA, float AngleB, float* Difference, float CallFunc_Percent_FloatFloat_ReturnValue, float CallFunc_Percent_FloatFloat_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Abs_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "GetAngleDifference");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_GetAngleDifference_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "GetAngleDifference");
+
+	Params::UAthenaFrontEndRadialPicker_C_GetAngleDifference_Params Parms{};
 
 	Parms.AngleA = AngleA;
 	Parms.AngleB = AngleB;
@@ -498,9 +568,12 @@ void UAthenaFrontEndRadialPicker_C::GetAngleDifference(float AngleA, float Angle
 
 void UAthenaFrontEndRadialPicker_C::GetOptionPosition(int32 Option, struct FVector2D* Position, float CallFunc_GetOptionAngle_Angle, float CallFunc_DegCos_ReturnValue, float CallFunc_DegSin_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "GetOptionPosition");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_GetOptionPosition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "GetOptionPosition");
+
+	Params::UAthenaFrontEndRadialPicker_C_GetOptionPosition_Params Parms{};
 
 	Parms.Option = Option;
 	Parms.CallFunc_GetOptionAngle_Angle = CallFunc_GetOptionAngle_Angle;
@@ -513,7 +586,7 @@ void UAthenaFrontEndRadialPicker_C::GetOptionPosition(int32 Option, struct FVect
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Position != nullptr)
-		*Position = Parms.Position;
+		*Position = std::move(Parms.Position);
 
 }
 
@@ -535,8 +608,8 @@ void UAthenaFrontEndRadialPicker_C::GetOptionPosition(int32 Option, struct FVect
 // class UFortPickerContext*          CallFunc_GetContext_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortItem*                   CallFunc_GetRadialPickerOptionItem_Item                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetRadialPickerOptionItem_bOptionEnabled                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetRadialPickerOptionImageAndLabel_Label                ()
-// struct FSlateBrush                 CallFunc_GetRadialPickerOptionImageAndLabel_Brush                ()
+// class FText                        CallFunc_GetRadialPickerOptionImageAndLabel_Label                (None)
+// struct FSlateBrush                 CallFunc_GetRadialPickerOptionImageAndLabel_Brush                (None)
 // TSoftObjectPtr<class UTexture2D>   CallFunc_GetRadialPickerOptionImageAndLabel_Icon                 (HasGetValueTypeHash)
 // bool                               CallFunc_GetRadialPickerOptionImageAndLabel_bOptionEnabled       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -560,7 +633,7 @@ void UAthenaFrontEndRadialPicker_C::GetOptionPosition(int32 Option, struct FVect
 // class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortPickerContext*          CallFunc_GetContext_ReturnValue_3                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        CallFunc_GetPickerConfirmActionName_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetCurrentPickerDisplayName_ReturnValue                 ()
+// class FText                        CallFunc_GetCurrentPickerDisplayName_ReturnValue                 (None)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortPickerContext*          CallFunc_GetContext_ReturnValue_4                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -579,9 +652,12 @@ void UAthenaFrontEndRadialPicker_C::GetOptionPosition(int32 Option, struct FVect
 
 void UAthenaFrontEndRadialPicker_C::InitializePicker(enum class EFortPickerMode PickerMode, int32 InitialOption, int32 Temp_int_Array_Index_Variable, const struct FVector2D& CallFunc_GetOptionPosition_Position, bool CallFunc_NotEqual_IntInt_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_IsTouchInputPlatform_ReturnValue, class URadialPickerItem_C* CallFunc_Create_ReturnValue, class UCanvasPanelSlot* CallFunc_SlotAsCanvasSlot_ReturnValue, class UFortPickerContext* CallFunc_GetContext_ReturnValue, int32 CallFunc_GetNumPickerOptions_ReturnValue, class UFortPickerContext* CallFunc_GetContext_ReturnValue_1, class UFortItem* CallFunc_GetRadialPickerOptionItem_Item, bool CallFunc_GetRadialPickerOptionItem_bOptionEnabled, class FText CallFunc_GetRadialPickerOptionImageAndLabel_Label, const struct FSlateBrush& CallFunc_GetRadialPickerOptionImageAndLabel_Brush, TSoftObjectPtr<class UTexture2D> CallFunc_GetRadialPickerOptionImageAndLabel_Icon, bool CallFunc_GetRadialPickerOptionImageAndLabel_bOptionEnabled, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, const struct FAnchors& K2Node_MakeStruct_Anchors, int32 CallFunc_Array_Add_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue, bool Temp_bool_Variable, int32 CallFunc_Subtract_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, bool Temp_bool_Variable_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_2, class UFortPickerContext* CallFunc_GetContext_ReturnValue_3, class FName CallFunc_GetPickerConfirmActionName_ReturnValue, class FText CallFunc_GetCurrentPickerDisplayName_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, class UFortPickerContext* CallFunc_GetContext_ReturnValue_4, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_GetPickerWheelAdjacency_bCanPageLeft, bool CallFunc_GetPickerWheelAdjacency_bCanPageRight, enum class ESlateVisibility Temp_byte_Variable_2, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue_2, class URadialPickerItem_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, class UCanvasPanelSlot* CallFunc_SlotAsCanvasSlot_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility K2Node_Select_Default_1, bool CallFunc_Less_IntInt_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "InitializePicker");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_InitializePicker_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "InitializePicker");
+
+	Params::UAthenaFrontEndRadialPicker_C_InitializePicker_Params Parms{};
 
 	Parms.PickerMode = PickerMode;
 	Parms.InitialOption = InitialOption;
@@ -650,12 +726,14 @@ void UAthenaFrontEndRadialPicker_C::InitializePicker(enum class EFortPickerMode 
 
 void UAthenaFrontEndRadialPicker_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -666,12 +744,14 @@ void UAthenaFrontEndRadialPicker_C::Construct()
 
 void UAthenaFrontEndRadialPicker_C::Event_AcceptOption()
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "Event AcceptOption");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_Event_AcceptOption_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "Event AcceptOption");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -682,12 +762,14 @@ void UAthenaFrontEndRadialPicker_C::Event_AcceptOption()
 
 void UAthenaFrontEndRadialPicker_C::Event_CancelPicker()
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "Event CancelPicker");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_Event_CancelPicker_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "Event CancelPicker");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -698,12 +780,14 @@ void UAthenaFrontEndRadialPicker_C::Event_CancelPicker()
 
 void UAthenaFrontEndRadialPicker_C::ClosePicker()
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "ClosePicker");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_ClosePicker_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "ClosePicker");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -715,9 +799,12 @@ void UAthenaFrontEndRadialPicker_C::ClosePicker()
 
 void UAthenaFrontEndRadialPicker_C::AcceptChosenOption(int32 PickerOption)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "AcceptChosenOption");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_AcceptChosenOption_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "AcceptChosenOption");
+
+	Params::UAthenaFrontEndRadialPicker_C_AcceptChosenOption_Params Parms{};
 
 	Parms.PickerOption = PickerOption;
 
@@ -732,12 +819,14 @@ void UAthenaFrontEndRadialPicker_C::AcceptChosenOption(int32 PickerOption)
 
 void UAthenaFrontEndRadialPicker_C::OnPickerRefreshItems()
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "OnPickerRefreshItems");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_OnPickerRefreshItems_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "OnPickerRefreshItems");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -749,9 +838,12 @@ void UAthenaFrontEndRadialPicker_C::OnPickerRefreshItems()
 
 void UAthenaFrontEndRadialPicker_C::BndEvt__PickerOption0_K2Node_ComponentBoundEvent_2_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PickerOption0_K2Node_ComponentBoundEvent_2_On Item Touched__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PickerOption0_K2Node_ComponentBoundEvent_2_On_Item_Touched__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PickerOption0_K2Node_ComponentBoundEvent_2_On Item Touched__DelegateSignature");
+
+	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PickerOption0_K2Node_ComponentBoundEvent_2_On_Item_Touched__DelegateSignature_Params Parms{};
 
 	Parms.Picked_Option = Picked_Option;
 
@@ -767,9 +859,12 @@ void UAthenaFrontEndRadialPicker_C::BndEvt__PickerOption0_K2Node_ComponentBoundE
 
 void UAthenaFrontEndRadialPicker_C::BndEvt__PickerOption1_K2Node_ComponentBoundEvent_8_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PickerOption1_K2Node_ComponentBoundEvent_8_On Item Touched__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PickerOption1_K2Node_ComponentBoundEvent_8_On_Item_Touched__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PickerOption1_K2Node_ComponentBoundEvent_8_On Item Touched__DelegateSignature");
+
+	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PickerOption1_K2Node_ComponentBoundEvent_8_On_Item_Touched__DelegateSignature_Params Parms{};
 
 	Parms.Picked_Option = Picked_Option;
 
@@ -785,9 +880,12 @@ void UAthenaFrontEndRadialPicker_C::BndEvt__PickerOption1_K2Node_ComponentBoundE
 
 void UAthenaFrontEndRadialPicker_C::BndEvt__PickerOption2_K2Node_ComponentBoundEvent_9_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PickerOption2_K2Node_ComponentBoundEvent_9_On Item Touched__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PickerOption2_K2Node_ComponentBoundEvent_9_On_Item_Touched__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PickerOption2_K2Node_ComponentBoundEvent_9_On Item Touched__DelegateSignature");
+
+	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PickerOption2_K2Node_ComponentBoundEvent_9_On_Item_Touched__DelegateSignature_Params Parms{};
 
 	Parms.Picked_Option = Picked_Option;
 
@@ -803,9 +901,12 @@ void UAthenaFrontEndRadialPicker_C::BndEvt__PickerOption2_K2Node_ComponentBoundE
 
 void UAthenaFrontEndRadialPicker_C::BndEvt__PickerOption3_K2Node_ComponentBoundEvent_12_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PickerOption3_K2Node_ComponentBoundEvent_12_On Item Touched__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PickerOption3_K2Node_ComponentBoundEvent_12_On_Item_Touched__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PickerOption3_K2Node_ComponentBoundEvent_12_On Item Touched__DelegateSignature");
+
+	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PickerOption3_K2Node_ComponentBoundEvent_12_On_Item_Touched__DelegateSignature_Params Parms{};
 
 	Parms.Picked_Option = Picked_Option;
 
@@ -821,9 +922,12 @@ void UAthenaFrontEndRadialPicker_C::BndEvt__PickerOption3_K2Node_ComponentBoundE
 
 void UAthenaFrontEndRadialPicker_C::BndEvt__PickerOption4_K2Node_ComponentBoundEvent_16_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PickerOption4_K2Node_ComponentBoundEvent_16_On Item Touched__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PickerOption4_K2Node_ComponentBoundEvent_16_On_Item_Touched__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PickerOption4_K2Node_ComponentBoundEvent_16_On Item Touched__DelegateSignature");
+
+	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PickerOption4_K2Node_ComponentBoundEvent_16_On_Item_Touched__DelegateSignature_Params Parms{};
 
 	Parms.Picked_Option = Picked_Option;
 
@@ -839,9 +943,12 @@ void UAthenaFrontEndRadialPicker_C::BndEvt__PickerOption4_K2Node_ComponentBoundE
 
 void UAthenaFrontEndRadialPicker_C::BndEvt__PickerOption5_K2Node_ComponentBoundEvent_21_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PickerOption5_K2Node_ComponentBoundEvent_21_On Item Touched__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PickerOption5_K2Node_ComponentBoundEvent_21_On_Item_Touched__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PickerOption5_K2Node_ComponentBoundEvent_21_On Item Touched__DelegateSignature");
+
+	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PickerOption5_K2Node_ComponentBoundEvent_21_On_Item_Touched__DelegateSignature_Params Parms{};
 
 	Parms.Picked_Option = Picked_Option;
 
@@ -857,9 +964,12 @@ void UAthenaFrontEndRadialPicker_C::BndEvt__PickerOption5_K2Node_ComponentBoundE
 
 void UAthenaFrontEndRadialPicker_C::BndEvt__PickerOption6_K2Node_ComponentBoundEvent_27_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PickerOption6_K2Node_ComponentBoundEvent_27_On Item Touched__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PickerOption6_K2Node_ComponentBoundEvent_27_On_Item_Touched__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PickerOption6_K2Node_ComponentBoundEvent_27_On Item Touched__DelegateSignature");
+
+	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PickerOption6_K2Node_ComponentBoundEvent_27_On_Item_Touched__DelegateSignature_Params Parms{};
 
 	Parms.Picked_Option = Picked_Option;
 
@@ -875,9 +985,12 @@ void UAthenaFrontEndRadialPicker_C::BndEvt__PickerOption6_K2Node_ComponentBoundE
 
 void UAthenaFrontEndRadialPicker_C::BndEvt__PickerOption7_K2Node_ComponentBoundEvent_34_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PickerOption7_K2Node_ComponentBoundEvent_34_On Item Touched__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PickerOption7_K2Node_ComponentBoundEvent_34_On_Item_Touched__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PickerOption7_K2Node_ComponentBoundEvent_34_On Item Touched__DelegateSignature");
+
+	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PickerOption7_K2Node_ComponentBoundEvent_34_On_Item_Touched__DelegateSignature_Params Parms{};
 
 	Parms.Picked_Option = Picked_Option;
 
@@ -894,9 +1007,12 @@ void UAthenaFrontEndRadialPicker_C::BndEvt__PickerOption7_K2Node_ComponentBoundE
 
 void UAthenaFrontEndRadialPicker_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "Tick");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_Tick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "Tick");
+
+	Params::UAthenaFrontEndRadialPicker_C_Tick_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InDeltaTime = InDeltaTime;
@@ -913,9 +1029,12 @@ void UAthenaFrontEndRadialPicker_C::Tick(const struct FGeometry& MyGeometry, flo
 
 void UAthenaFrontEndRadialPicker_C::BndEvt__NextWheelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__NextWheelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_BndEvt__NextWheelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__NextWheelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaFrontEndRadialPicker_C_BndEvt__NextWheelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -931,9 +1050,12 @@ void UAthenaFrontEndRadialPicker_C::BndEvt__NextWheelButton_K2Node_ComponentBoun
 
 void UAthenaFrontEndRadialPicker_C::BndEvt__PreviousWheelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PreviousWheelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PreviousWheelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "BndEvt__PreviousWheelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaFrontEndRadialPicker_C_BndEvt__PreviousWheelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1058,9 +1180,12 @@ void UAthenaFrontEndRadialPicker_C::BndEvt__PreviousWheelButton_K2Node_Component
 
 void UAthenaFrontEndRadialPicker_C::ExecuteUbergraph_AthenaFrontEndRadialPicker(int32 EntryPoint, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 CallFunc_Array_Add_ReturnValue, int32 CallFunc_Array_Add_ReturnValue_1, int32 CallFunc_Array_Add_ReturnValue_2, int32 CallFunc_Array_Add_ReturnValue_3, int32 CallFunc_Array_Add_ReturnValue_4, int32 CallFunc_Array_Add_ReturnValue_5, int32 CallFunc_Array_Add_ReturnValue_6, int32 CallFunc_Array_Add_ReturnValue_7, bool Temp_bool_Variable, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, class UFortPickerContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_Variable_1, bool CallFunc_Not_PreBool_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_2, bool CallFunc_CanConfirm_CanAccept, int32 K2Node_CustomEvent_PickerOption, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_1, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, const struct FVector2D& CallFunc_GetViewportSize_ReturnValue, bool Temp_bool_True_if_break_was_hit_Variable, const struct FVector2D& CallFunc_Divide_Vector2DFloat_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, float Temp_float_Variable, bool CallFunc_EqualEqual_IntInt_ReturnValue, float Temp_float_Variable_1, enum class ESlateVisibility CallFunc_GetVisibility_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, class URadialPickerItem_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_IsGamepadInPickerDeadZone_bIsInDeadZone, bool CallFunc_Not_PreBool_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue, bool Temp_bool_Variable_3, float K2Node_Select_Default_1, enum class ESlateVisibility CallFunc_GetVisibility_ReturnValue_1, bool CallFunc_NotEqual_ByteByte_ReturnValue_1, float Temp_float_Variable_2, class URadialPickerItem_C* K2Node_ComponentBoundEvent_Picked_Option_7, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class URadialPickerItem_C* K2Node_ComponentBoundEvent_Picked_Option_6, class URadialPickerItem_C* K2Node_ComponentBoundEvent_Picked_Option_5, class URadialPickerItem_C* K2Node_ComponentBoundEvent_Picked_Option_4, class URadialPickerItem_C* K2Node_ComponentBoundEvent_Picked_Option_3, class URadialPickerItem_C* K2Node_ComponentBoundEvent_Picked_Option_2, class URadialPickerItem_C* K2Node_ComponentBoundEvent_Picked_Option_1, class URadialPickerItem_C* K2Node_ComponentBoundEvent_Picked_Option, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime, float Temp_float_Variable_3, bool Temp_bool_Variable_4, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_2, float K2Node_Select_Default_2, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_1, float CallFunc_GetInputAnalogStickState_StickX, float CallFunc_GetInputAnalogStickState_StickY, float CallFunc_GetMousePosition_LocationX, float CallFunc_GetMousePosition_LocationY, bool CallFunc_GetMousePosition_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_DegAtan2_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue_1, class UFortPickerContext* CallFunc_GetContext_ReturnValue_3, float CallFunc_DegAtan2_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UFortPickerContext* CallFunc_GetContext_ReturnValue_4, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_5, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue_2, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, bool CallFunc_NotEqual_BoolBool_ReturnValue, bool Temp_bool_Variable_5, float CallFunc_BreakVector2D_X_1, float CallFunc_BreakVector2D_Y_1, float K2Node_Select_Default_3, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, int32 Temp_int_Array_Index_Variable_1, class UWidget* K2Node_Select_Default_4, float CallFunc_GetOptionAngle_Angle, bool CallFunc_Less_IntInt_ReturnValue_2, float CallFunc_GetAngleDifference_Difference, bool CallFunc_LessEqual_FloatFloat_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, class UWidget* K2Node_Select_Default_5, class UFortPickerContext* CallFunc_GetContext_ReturnValue_6)
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "ExecuteUbergraph_AthenaFrontEndRadialPicker");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_ExecuteUbergraph_AthenaFrontEndRadialPicker_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "ExecuteUbergraph_AthenaFrontEndRadialPicker");
+
+	Params::UAthenaFrontEndRadialPicker_C_ExecuteUbergraph_AthenaFrontEndRadialPicker_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_Conv_IntToFloat_ReturnValue = CallFunc_Conv_IntToFloat_ReturnValue;
@@ -1184,17 +1309,17 @@ void UAthenaFrontEndRadialPicker_C::ExecuteUbergraph_AthenaFrontEndRadialPicker(
 
 void UAthenaFrontEndRadialPicker_C::Picker_Closing__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "Picker Closing__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFrontEndRadialPicker_C_Picker_Closing__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFrontEndRadialPicker_C", "Picker Closing__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

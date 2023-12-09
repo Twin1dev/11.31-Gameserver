@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -33,28 +30,25 @@ public:
 	struct FScalableFloat                        Enabled;                                           // 0xB88(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FScalableFloat                        PlayerLimit;                                       // 0xBA8(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	float                                        DamageHeight;                                      // 0xBC8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_18D5[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2829[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<enum class EObjectTypeQuery>          DestroyObjectTypes;                                // 0xBD0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	struct FVector                               LaunchOffTopTraceExtents;                          // 0xBE0(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_18D6[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_282A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class AFortPawn*>                     Array;                                             // 0xBF0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
 	int32                                        Int;                                               // 0xC00(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               DeimosPropSpawnerOffset;                           // 0xC04(0xC)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         OnlyEnterFromFront;                                // 0xC10(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_18D7[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_282C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        MaxInteractAngle;                                  // 0xC14(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               WobbleLocationOffset;                              // 0xC18(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         RandomWobbleNormal;                                // 0xC24(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_18D8[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_282D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        InteractBelowPropDistance;                         // 0xC28(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_18D9[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_282E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class AFortPawn*, float>                HiddenPlayersAndEnterTimes;                        // 0xC30(0x50)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_HidingProp_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_HidingProp_C* GetDefaultObj();
 
 	void RemoveHiddenPlayer(class AFortPawn* FortPawn, const class FString& CallFunc_GetDisplayName_ReturnValue, bool CallFunc_Map_Remove_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue, bool CallFunc_Array_RemoveItem_ReturnValue);
 	void AddHiddenPlayer(class AFortPawn* FortPawn, float CallFunc_GetRealTimeSeconds_ReturnValue, int32 CallFunc_Array_AddUnique_ReturnValue);
@@ -79,6 +73,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

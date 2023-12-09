@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaMatchmakingPlayButton.AthenaMatchmakingPlayButton_C
+// (None)
+
+class UClass* UAthenaMatchmakingPlayButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaMatchmakingPlayButton_C");
+
+	return Clss;
+}
+
+
+// AthenaMatchmakingPlayButton_C AthenaMatchmakingPlayButton.Default__AthenaMatchmakingPlayButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaMatchmakingPlayButton_C* UAthenaMatchmakingPlayButton_C::GetDefaultObj()
+{
+	static class UAthenaMatchmakingPlayButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaMatchmakingPlayButton_C*>(UAthenaMatchmakingPlayButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaMatchmakingPlayButton.AthenaMatchmakingPlayButton_C.SetButtonText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAthenaMatchmakingPlayButton_C::SetButtonText(class FText InText)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayButton_C", "SetButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayButton_C_SetButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayButton_C", "SetButtonText");
+
+	Params::UAthenaMatchmakingPlayButton_C_SetButtonText_Params Parms{};
 
 	Parms.InText = InText;
 
@@ -40,9 +68,12 @@ void UAthenaMatchmakingPlayButton_C::SetButtonText(class FText InText)
 
 void UAthenaMatchmakingPlayButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayButton_C", "PreConstruct");
+
+	Params::UAthenaMatchmakingPlayButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -59,9 +90,12 @@ void UAthenaMatchmakingPlayButton_C::PreConstruct(bool IsDesignTime)
 
 void UAthenaMatchmakingPlayButton_C::ExecuteUbergraph_AthenaMatchmakingPlayButton(int32 EntryPoint, bool K2Node_Event_IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingPlayButton_C", "ExecuteUbergraph_AthenaMatchmakingPlayButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingPlayButton_C_ExecuteUbergraph_AthenaMatchmakingPlayButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingPlayButton_C", "ExecuteUbergraph_AthenaMatchmakingPlayButton");
+
+	Params::UAthenaMatchmakingPlayButton_C_ExecuteUbergraph_AthenaMatchmakingPlayButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -72,6 +106,4 @@ void UAthenaMatchmakingPlayButton_C::ExecuteUbergraph_AthenaMatchmakingPlayButto
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass Crossbow_BP.Crossbow_BP_C
+// (None)
+
+class UClass* UCrossbow_BP_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Crossbow_BP_C");
+
+	return Clss;
+}
+
+
+// Crossbow_BP_C Crossbow_BP.Default__Crossbow_BP_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCrossbow_BP_C* UCrossbow_BP_C::GetDefaultObj()
+{
+	static class UCrossbow_BP_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCrossbow_BP_C*>(UCrossbow_BP_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Crossbow_BP.Crossbow_BP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void UCrossbow_BP_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("Crossbow_BP_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UCrossbow_BP_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Crossbow_BP_C", "AnimGraph");
+
+	Params::UCrossbow_BP_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -42,9 +70,12 @@ void UCrossbow_BP_C::AnimGraph(struct FPoseLink* AnimGraph)
 
 void UCrossbow_BP_C::ExecuteUbergraph_Crossbow_BP(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("Crossbow_BP_C", "ExecuteUbergraph_Crossbow_BP");
+	static class UFunction* Func = nullptr;
 
-	Params::UCrossbow_BP_C_ExecuteUbergraph_Crossbow_BP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Crossbow_BP_C", "ExecuteUbergraph_Crossbow_BP");
+
+	Params::UCrossbow_BP_C_ExecuteUbergraph_Crossbow_BP_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -54,6 +85,4 @@ void UCrossbow_BP_C::ExecuteUbergraph_Crossbow_BP(int32 EntryPoint)
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

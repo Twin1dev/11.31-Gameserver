@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaReplayBrowserTab.AthenaReplayBrowserTab_C
+// (None)
+
+class UClass* UAthenaReplayBrowserTab_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaReplayBrowserTab_C");
+
+	return Clss;
+}
+
+
+// AthenaReplayBrowserTab_C AthenaReplayBrowserTab.Default__AthenaReplayBrowserTab_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaReplayBrowserTab_C* UAthenaReplayBrowserTab_C::GetDefaultObj()
+{
+	static class UAthenaReplayBrowserTab_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaReplayBrowserTab_C*>(UAthenaReplayBrowserTab_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaReplayBrowserTab.AthenaReplayBrowserTab_C.ShowLoadingThrobber
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UAthenaReplayBrowserTab_C::ShowLoadingThrobber()
 {
-	static auto Func = Class->GetFunction("AthenaReplayBrowserTab_C", "ShowLoadingThrobber");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaReplayBrowserTab_C_ShowLoadingThrobber_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaReplayBrowserTab_C", "ShowLoadingThrobber");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UAthenaReplayBrowserTab_C::ShowLoadingThrobber()
 
 void UAthenaReplayBrowserTab_C::OnActionStateChanged(bool bHasAction)
 {
-	static auto Func = Class->GetFunction("AthenaReplayBrowserTab_C", "OnActionStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaReplayBrowserTab_C_OnActionStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaReplayBrowserTab_C", "OnActionStateChanged");
+
+	Params::UAthenaReplayBrowserTab_C_OnActionStateChanged_Params Parms{};
 
 	Parms.bHasAction = bHasAction;
 
@@ -55,12 +85,14 @@ void UAthenaReplayBrowserTab_C::OnActionStateChanged(bool bHasAction)
 
 void UAthenaReplayBrowserTab_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("AthenaReplayBrowserTab_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaReplayBrowserTab_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaReplayBrowserTab_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -80,9 +112,12 @@ void UAthenaReplayBrowserTab_C::BP_OnActivated()
 
 void UAthenaReplayBrowserTab_C::ExecuteUbergraph_AthenaReplayBrowserTab(int32 EntryPoint, bool CallFunc_IsVisible_ReturnValue, bool K2Node_Event_bHasAction, TArray<class AFort_Entry_Music_Controller_BP_C*>& CallFunc_GetAllActorsOfClass_OutActors, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AFort_Entry_Music_Controller_BP_C* CallFunc_Array_Get_Item, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Array_IsValidIndex_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaReplayBrowserTab_C", "ExecuteUbergraph_AthenaReplayBrowserTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaReplayBrowserTab_C_ExecuteUbergraph_AthenaReplayBrowserTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaReplayBrowserTab_C", "ExecuteUbergraph_AthenaReplayBrowserTab");
+
+	Params::UAthenaReplayBrowserTab_C_ExecuteUbergraph_AthenaReplayBrowserTab_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsVisible_ReturnValue = CallFunc_IsVisible_ReturnValue;
@@ -100,6 +135,4 @@ void UAthenaReplayBrowserTab_C::ExecuteUbergraph_AthenaReplayBrowserTab(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

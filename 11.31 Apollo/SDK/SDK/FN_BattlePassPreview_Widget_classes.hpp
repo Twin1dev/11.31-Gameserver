@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -47,21 +44,18 @@ public:
 	struct FSlateColor                           ItemName_RGBA;                                     // 0xC60(0x28)(Edit, BlueprintVisible, ExposeOnSpawn)
 	struct FSlateColor                           Subtext_RGBA;                                      // 0xC88(0x28)(Edit, BlueprintVisible)
 	bool                                         bPlayTextAnim;                                     // 0xCB0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6393[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_654F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        TextureAlpha;                                      // 0xCB4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	float                                        TimeOffset;                                        // 0xCB8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	float                                        UseRenderSwap;                                     // 0xCBC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         bIsHovered;                                        // 0xCC0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         IsReadyToUnlock;                                   // 0xCC1(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6394[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6550[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          Level_RGBA;                                        // 0xCC4(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          ClaimText_RGBA;                                    // 0xCD4(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BattlePassPreview_Widget_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UBattlePassPreview_Widget_C* GetDefaultObj();
 
 	void RenderSwap(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
 	void Unhover();
@@ -78,6 +72,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

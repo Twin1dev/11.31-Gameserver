@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ComOptionTileCandidate.ComOptionTileCandidate_C
+// (None)
+
+class UClass* UComOptionTileCandidate_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ComOptionTileCandidate_C");
+
+	return Clss;
+}
+
+
+// ComOptionTileCandidate_C ComOptionTileCandidate.Default__ComOptionTileCandidate_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UComOptionTileCandidate_C* UComOptionTileCandidate_C::GetDefaultObj()
+{
+	static class UComOptionTileCandidate_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UComOptionTileCandidate_C*>(UComOptionTileCandidate_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ComOptionTileCandidate.ComOptionTileCandidate_C.BP_OnEntryReleased
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UComOptionTileCandidate_C::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("ComOptionTileCandidate_C", "BP_OnEntryReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionTileCandidate_C_BP_OnEntryReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionTileCandidate_C", "BP_OnEntryReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UComOptionTileCandidate_C::BP_OnEntryReleased()
 
 void UComOptionTileCandidate_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("ComOptionTileCandidate_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionTileCandidate_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionTileCandidate_C", "BP_OnItemExpansionChanged");
+
+	Params::UComOptionTileCandidate_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -56,9 +86,12 @@ void UComOptionTileCandidate_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UComOptionTileCandidate_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("ComOptionTileCandidate_C", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionTileCandidate_C_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionTileCandidate_C", "BP_OnItemSelectionChanged");
+
+	Params::UComOptionTileCandidate_C_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -74,9 +107,12 @@ void UComOptionTileCandidate_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UComOptionTileCandidate_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("ComOptionTileCandidate_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionTileCandidate_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionTileCandidate_C", "OnListItemObjectSet");
+
+	Params::UComOptionTileCandidate_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -91,12 +127,14 @@ void UComOptionTileCandidate_C::OnListItemObjectSet(class UObject* ListItemObjec
 
 void UComOptionTileCandidate_C::AnimateImage()
 {
-	static auto Func = Class->GetFunction("ComOptionTileCandidate_C", "AnimateImage");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionTileCandidate_C_AnimateImage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionTileCandidate_C", "AnimateImage");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -107,12 +145,14 @@ void UComOptionTileCandidate_C::AnimateImage()
 
 void UComOptionTileCandidate_C::Construct()
 {
-	static auto Func = Class->GetFunction("ComOptionTileCandidate_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionTileCandidate_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionTileCandidate_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -129,9 +169,12 @@ void UComOptionTileCandidate_C::Construct()
 
 void UComOptionTileCandidate_C::ExecuteUbergraph_ComOptionTileCandidate(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool K2Node_Event_bIsExpanded, bool K2Node_Event_bIsSelected, class UObject* K2Node_Event_ListItemObject, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("ComOptionTileCandidate_C", "ExecuteUbergraph_ComOptionTileCandidate");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionTileCandidate_C", "ExecuteUbergraph_ComOptionTileCandidate");
+
+	Params::UComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -146,6 +189,4 @@ void UComOptionTileCandidate_C::ExecuteUbergraph_ComOptionTileCandidate(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

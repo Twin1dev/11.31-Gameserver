@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -28,27 +25,25 @@ public:
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x1A8(0x40)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x1E8(0x10)(ZeroConstructor, ReferenceParm)
 	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x1F8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_655B[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  CallFunc_Conv_IntToText_ReturnValue;               // 0x200(0x18)()
+	uint8                                        Pad_684C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_Conv_IntToText_ReturnValue;               // 0x200(0x18)(None)
 	bool                                         CallFunc_LessEqual_IntInt_ReturnValue;             // 0x218(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_EqualEqual_NameName_ReturnValue;          // 0x219(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x21A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Temp_bool_Variable;                                // 0x21B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_655C[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  Temp_text_Variable;                                // 0x220(0x18)()
+	uint8                                        Pad_684E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  Temp_text_Variable;                                // 0x220(0x18)(None)
 	struct FLinearColor                          K2Node_Select_Default;                             // 0x238(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_1;                              // 0x248(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_655D[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	struct FFortShowdownScoringRuleDisplayInfo   CallFunc_GetDataTableRowFromName_OutRow;           // 0x250(0x48)()
+	uint8                                        Pad_684F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FFortShowdownScoringRuleDisplayInfo   CallFunc_GetDataTableRowFromName_OutRow;           // 0x250(0x48)(None)
 	bool                                         CallFunc_GetDataTableRowFromName_ReturnValue;      // 0x298(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_655E[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  CallFunc_Format_ReturnValue;                       // 0x2A0(0x18)()
-	class FText                                  K2Node_Select_Default_1;                           // 0x2B8(0x18)()
+	uint8                                        Pad_6850[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_Format_ReturnValue;                       // 0x2A0(0x18)(None)
+	class FText                                  K2Node_Select_Default_1;                           // 0x2B8(0x18)(None)
 };
 
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

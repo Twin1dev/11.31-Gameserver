@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -26,11 +23,8 @@ public:
 	class UCommonBorder*                         Border_NameLevelDivider;                           // 0x2A8(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                       Switcher_Rank;                                     // 0x2B0(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BattlePassLeaderboardListEntry_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UBattlePassLeaderboardListEntry_C* GetDefaultObj();
 
 	void OnEntryInitialized(int32 Rank, bool bIsLocalPlayer);
 	void UpdateEntryVisibility();
@@ -39,6 +33,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

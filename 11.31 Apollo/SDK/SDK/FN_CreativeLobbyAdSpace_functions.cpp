@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass CreativeLobbyAdSpace.CreativeLobbyAdSpace_C
+// (None)
+
+class UClass* UCreativeLobbyAdSpace_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CreativeLobbyAdSpace_C");
+
+	return Clss;
+}
+
+
+// CreativeLobbyAdSpace_C CreativeLobbyAdSpace.Default__CreativeLobbyAdSpace_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCreativeLobbyAdSpace_C* UCreativeLobbyAdSpace_C::GetDefaultObj()
+{
+	static class UCreativeLobbyAdSpace_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCreativeLobbyAdSpace_C*>(UCreativeLobbyAdSpace_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function CreativeLobbyAdSpace.CreativeLobbyAdSpace_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UCreativeLobbyAdSpace_C::Construct()
 {
-	static auto Func = Class->GetFunction("CreativeLobbyAdSpace_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeLobbyAdSpace_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeLobbyAdSpace_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -40,9 +67,12 @@ void UCreativeLobbyAdSpace_C::Construct()
 
 void UCreativeLobbyAdSpace_C::ExecuteUbergraph_CreativeLobbyAdSpace(int32 EntryPoint, bool K2Node_SwitchInteger_CmpSuccess, int32 CallFunc_Array_Length_ReturnValue)
 {
-	static auto Func = Class->GetFunction("CreativeLobbyAdSpace_C", "ExecuteUbergraph_CreativeLobbyAdSpace");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeLobbyAdSpace_C_ExecuteUbergraph_CreativeLobbyAdSpace_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeLobbyAdSpace_C", "ExecuteUbergraph_CreativeLobbyAdSpace");
+
+	Params::UCreativeLobbyAdSpace_C_ExecuteUbergraph_CreativeLobbyAdSpace_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_SwitchInteger_CmpSuccess = K2Node_SwitchInteger_CmpSuccess;
@@ -54,6 +84,4 @@ void UCreativeLobbyAdSpace_C::ExecuteUbergraph_CreativeLobbyAdSpace(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

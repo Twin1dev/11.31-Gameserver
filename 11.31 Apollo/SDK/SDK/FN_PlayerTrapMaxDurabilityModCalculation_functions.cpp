@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass PlayerTrapMaxDurabilityModCalculation.PlayerTrapMaxDurabilityModCalculation_C
+// (None)
+
+class UClass* UPlayerTrapMaxDurabilityModCalculation_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerTrapMaxDurabilityModCalculation_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// PlayerTrapMaxDurabilityModCalculation_C PlayerTrapMaxDurabilityModCalculation.Default__PlayerTrapMaxDurabilityModCalculation_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerTrapMaxDurabilityModCalculation_C* UPlayerTrapMaxDurabilityModCalculation_C::GetDefaultObj()
+{
+	static class UPlayerTrapMaxDurabilityModCalculation_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerTrapMaxDurabilityModCalculation_C*>(UPlayerTrapMaxDurabilityModCalculation_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

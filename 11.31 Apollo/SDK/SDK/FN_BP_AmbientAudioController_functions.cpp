@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_AmbientAudioController.BP_AmbientAudioController_C
+// (None)
+
+class UClass* UBP_AmbientAudioController_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_AmbientAudioController_C");
+
+	return Clss;
+}
+
+
+// BP_AmbientAudioController_C BP_AmbientAudioController.Default__BP_AmbientAudioController_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBP_AmbientAudioController_C* UBP_AmbientAudioController_C::GetDefaultObj()
+{
+	static class UBP_AmbientAudioController_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBP_AmbientAudioController_C*>(UBP_AmbientAudioController_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_AmbientAudioController.BP_AmbientAudioController_C.UpdateSnowSetupBP
@@ -32,9 +57,12 @@ namespace SDK
 
 void UBP_AmbientAudioController_C::UpdateSnowSetupBP(float CallFunc_GetGlobalSnowAltitude_ReturnValue, class AFortPlayerController* CallFunc_GetFirstLocalFortPlayerController_ReturnValue, bool CallFunc_IsValid_ReturnValue, class AActor* CallFunc_GetViewTarget_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_Add_FloatFloat_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, bool CallFunc_NotEqual_BoolBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_AmbientAudioController_C", "UpdateSnowSetupBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_AmbientAudioController_C_UpdateSnowSetupBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_AmbientAudioController_C", "UpdateSnowSetupBP");
+
+	Params::UBP_AmbientAudioController_C_UpdateSnowSetupBP_Params Parms{};
 
 	Parms.CallFunc_GetGlobalSnowAltitude_ReturnValue = CallFunc_GetGlobalSnowAltitude_ReturnValue;
 	Parms.CallFunc_GetFirstLocalFortPlayerController_ReturnValue = CallFunc_GetFirstLocalFortPlayerController_ReturnValue;
@@ -60,9 +88,12 @@ void UBP_AmbientAudioController_C::UpdateSnowSetupBP(float CallFunc_GetGlobalSno
 
 void UBP_AmbientAudioController_C::SetTargetLPFFreq(float Target)
 {
-	static auto Func = Class->GetFunction("BP_AmbientAudioController_C", "SetTargetLPFFreq");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_AmbientAudioController_C_SetTargetLPFFreq_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_AmbientAudioController_C", "SetTargetLPFFreq");
+
+	Params::UBP_AmbientAudioController_C_SetTargetLPFFreq_Params Parms{};
 
 	Parms.Target = Target;
 
@@ -80,9 +111,12 @@ void UBP_AmbientAudioController_C::SetTargetLPFFreq(float Target)
 
 void UBP_AmbientAudioController_C::SetIndoorMixEnabled(bool Enabled, bool CallFunc_IsValid_ReturnValue, class UAudioComponent* CallFunc_SpawnSoundAtLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_AmbientAudioController_C", "SetIndoorMixEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_AmbientAudioController_C_SetIndoorMixEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_AmbientAudioController_C", "SetIndoorMixEnabled");
+
+	Params::UBP_AmbientAudioController_C_SetIndoorMixEnabled_Params Parms{};
 
 	Parms.Enabled = Enabled;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -126,9 +160,12 @@ void UBP_AmbientAudioController_C::SetIndoorMixEnabled(bool Enabled, bool CallFu
 
 bool UBP_AmbientAudioController_C::Trace(const struct FVector& Start, const struct FVector& Direction, TArray<class AActor*>& Temp_object_Variable, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FHitResult& CallFunc_LineTraceSingle_OutHit, bool CallFunc_LineTraceSingle_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor, bool K2Node_DynamicCast_bSuccess, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_AmbientAudioController_C", "Trace");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_AmbientAudioController_C_Trace_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_AmbientAudioController_C", "Trace");
+
+	Params::UBP_AmbientAudioController_C_Trace_Params Parms{};
 
 	Parms.Start = Start;
 	Parms.Direction = Direction;
@@ -170,12 +207,14 @@ bool UBP_AmbientAudioController_C::Trace(const struct FVector& Start, const stru
 
 void UBP_AmbientAudioController_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_AmbientAudioController_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_AmbientAudioController_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_AmbientAudioController_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -187,9 +226,12 @@ void UBP_AmbientAudioController_C::ReceiveBeginPlay()
 
 void UBP_AmbientAudioController_C::ReceiveEndPlay(enum class EEndPlayReason EndPlayReason)
 {
-	static auto Func = Class->GetFunction("BP_AmbientAudioController_C", "ReceiveEndPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_AmbientAudioController_C_ReceiveEndPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_AmbientAudioController_C", "ReceiveEndPlay");
+
+	Params::UBP_AmbientAudioController_C_ReceiveEndPlay_Params Parms{};
 
 	Parms.EndPlayReason = EndPlayReason;
 
@@ -204,12 +246,14 @@ void UBP_AmbientAudioController_C::ReceiveEndPlay(enum class EEndPlayReason EndP
 
 void UBP_AmbientAudioController_C::OnCheckIfSurrounded()
 {
-	static auto Func = Class->GetFunction("BP_AmbientAudioController_C", "OnCheckIfSurrounded");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_AmbientAudioController_C_OnCheckIfSurrounded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_AmbientAudioController_C", "OnCheckIfSurrounded");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -220,12 +264,14 @@ void UBP_AmbientAudioController_C::OnCheckIfSurrounded()
 
 void UBP_AmbientAudioController_C::Evaluate_Inside_State()
 {
-	static auto Func = Class->GetFunction("BP_AmbientAudioController_C", "Evaluate Inside State");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_AmbientAudioController_C_Evaluate_Inside_State_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_AmbientAudioController_C", "Evaluate Inside State");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -237,9 +283,12 @@ void UBP_AmbientAudioController_C::Evaluate_Inside_State()
 
 void UBP_AmbientAudioController_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("BP_AmbientAudioController_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_AmbientAudioController_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_AmbientAudioController_C", "ReceiveTick");
+
+	Params::UBP_AmbientAudioController_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -287,9 +336,12 @@ void UBP_AmbientAudioController_C::ReceiveTick(float DeltaSeconds)
 
 void UBP_AmbientAudioController_C::ExecuteUbergraph_BP_AmbientAudioController(int32 EntryPoint, bool CallFunc_IsMobileGame_ReturnValue, bool CallFunc_IsValid_ReturnValue, enum class EEndPlayReason K2Node_Event_EndPlayReason, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_NotEqual_BoolBool_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class AActor* CallFunc_GetViewTarget_ReturnValue, class AActor* CallFunc_GetViewTarget_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, const struct FVector& CallFunc_GetActorUpVector_ReturnValue, const struct FVector& CallFunc_GetActorRightVector_ReturnValue, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_Trace_ReturnValue, bool CallFunc_Trace_ReturnValue_1, bool CallFunc_Trace_ReturnValue_2, bool CallFunc_Trace_ReturnValue_3, bool CallFunc_Trace_ReturnValue_4, float K2Node_Event_DeltaSeconds, float CallFunc_Conv_BoolToFloat_ReturnValue, bool CallFunc_NearlyEqual_FloatFloat_ReturnValue, float CallFunc_Conv_BoolToFloat_ReturnValue_1, float CallFunc_GetWorldDeltaSeconds_ReturnValue, float CallFunc_FInterpTo_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, float CallFunc_Conv_BoolToFloat_ReturnValue_2, bool CallFunc_IsBROnly_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_AmbientAudioController_C", "ExecuteUbergraph_BP_AmbientAudioController");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_AmbientAudioController_C", "ExecuteUbergraph_BP_AmbientAudioController");
+
+	Params::UBP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsMobileGame_ReturnValue = CallFunc_IsMobileGame_ReturnValue;
@@ -331,6 +383,4 @@ void UBP_AmbientAudioController_C::ExecuteUbergraph_BP_AmbientAudioController(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

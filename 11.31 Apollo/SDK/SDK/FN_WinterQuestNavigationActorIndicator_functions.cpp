@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass WinterQuestNavigationActorIndicator.WinterQuestNavigationActorIndicator_C
+// (None)
+
+class UClass* UWinterQuestNavigationActorIndicator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WinterQuestNavigationActorIndicator_C");
+
+	return Clss;
+}
+
+
+// WinterQuestNavigationActorIndicator_C WinterQuestNavigationActorIndicator.Default__WinterQuestNavigationActorIndicator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UWinterQuestNavigationActorIndicator_C* UWinterQuestNavigationActorIndicator_C::GetDefaultObj()
+{
+	static class UWinterQuestNavigationActorIndicator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWinterQuestNavigationActorIndicator_C*>(UWinterQuestNavigationActorIndicator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function WinterQuestNavigationActorIndicator.WinterQuestNavigationActorIndicator_C.SetArrowAngleRotation
@@ -25,9 +50,12 @@ namespace SDK
 
 void UWinterQuestNavigationActorIndicator_C::SetArrowAngleRotation(float Angle, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FWidgetTransform& K2Node_MakeStruct_WidgetTransform)
 {
-	static auto Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "SetArrowAngleRotation");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestNavigationActorIndicator_C_SetArrowAngleRotation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "SetArrowAngleRotation");
+
+	Params::UWinterQuestNavigationActorIndicator_C_SetArrowAngleRotation_Params Parms{};
 
 	Parms.Angle = Angle;
 	Parms.CallFunc_Add_FloatFloat_ReturnValue = CallFunc_Add_FloatFloat_ReturnValue;
@@ -73,9 +101,12 @@ void UWinterQuestNavigationActorIndicator_C::SetArrowAngleRotation(float Angle, 
 
 void UWinterQuestNavigationActorIndicator_C::HandleRevealStyle(const struct FGameplayTag& Direction, int32 Temp_int_Variable, bool GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess, const struct FVector2D& Temp_struct_Variable, const struct FVector2D& Temp_struct_Variable_1, const struct FVector2D& Temp_struct_Variable_2, int32 Temp_int_Variable_1, const struct FVector2D& Temp_struct_Variable_3, const struct FVector2D& Temp_struct_Variable_4, const struct FVector2D& Temp_struct_Variable_5, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue_1, float CallFunc_RandomFloatInRange_ReturnValue_2, float CallFunc_RandomFloatInRange_ReturnValue_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, int32 CallFunc_RandomInteger_ReturnValue, int32 CallFunc_RandomInteger_ReturnValue_1, const struct FVector2D& K2Node_Select_Default, const struct FVector2D& K2Node_Select_Default_1, float CallFunc_RandomFloatInRange_ReturnValue_4, float CallFunc_RandomFloatInRange_ReturnValue_5, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_4, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_5, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_6, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_7)
 {
-	static auto Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleRevealStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestNavigationActorIndicator_C_HandleRevealStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleRevealStyle");
+
+	Params::UWinterQuestNavigationActorIndicator_C_HandleRevealStyle_Params Parms{};
 
 	Parms.Direction = Direction;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -129,9 +160,12 @@ void UWinterQuestNavigationActorIndicator_C::HandleRevealStyle(const struct FGam
 
 void UWinterQuestNavigationActorIndicator_C::SetButtonPromptVisiblity(float Angle, bool Temp_bool_Variable, bool CallFunc_InRange_FloatFloat_ReturnValue, bool CallFunc_InRange_FloatFloat_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable, bool CallFunc_BooleanOR_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "SetButtonPromptVisiblity");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestNavigationActorIndicator_C_SetButtonPromptVisiblity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "SetButtonPromptVisiblity");
+
+	Params::UWinterQuestNavigationActorIndicator_C_SetButtonPromptVisiblity_Params Parms{};
 
 	Parms.Angle = Angle;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -158,9 +192,12 @@ void UWinterQuestNavigationActorIndicator_C::SetButtonPromptVisiblity(float Angl
 
 void UWinterQuestNavigationActorIndicator_C::HandleArrowToShow(float Angle)
 {
-	static auto Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleArrowToShow");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestNavigationActorIndicator_C_HandleArrowToShow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleArrowToShow");
+
+	Params::UWinterQuestNavigationActorIndicator_C_HandleArrowToShow_Params Parms{};
 
 	Parms.Angle = Angle;
 
@@ -182,9 +219,12 @@ void UWinterQuestNavigationActorIndicator_C::HandleArrowToShow(float Angle)
 
 void UWinterQuestNavigationActorIndicator_C::HandleBottomRightArrowLayout(float Value, bool Temp_bool_Variable, bool CallFunc_InRange_FloatFloat_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleBottomRightArrowLayout");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestNavigationActorIndicator_C_HandleBottomRightArrowLayout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleBottomRightArrowLayout");
+
+	Params::UWinterQuestNavigationActorIndicator_C_HandleBottomRightArrowLayout_Params Parms{};
 
 	Parms.Value = Value;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -212,9 +252,12 @@ void UWinterQuestNavigationActorIndicator_C::HandleBottomRightArrowLayout(float 
 
 void UWinterQuestNavigationActorIndicator_C::HandleBottomLeftArrowLayout(float Value, bool Temp_bool_Variable, bool CallFunc_InRange_FloatFloat_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleBottomLeftArrowLayout");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestNavigationActorIndicator_C_HandleBottomLeftArrowLayout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleBottomLeftArrowLayout");
+
+	Params::UWinterQuestNavigationActorIndicator_C_HandleBottomLeftArrowLayout_Params Parms{};
 
 	Parms.Value = Value;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -242,9 +285,12 @@ void UWinterQuestNavigationActorIndicator_C::HandleBottomLeftArrowLayout(float V
 
 void UWinterQuestNavigationActorIndicator_C::HandleTopRightArrowLayout(float Value, bool Temp_bool_Variable, bool CallFunc_InRange_FloatFloat_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleTopRightArrowLayout");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestNavigationActorIndicator_C_HandleTopRightArrowLayout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleTopRightArrowLayout");
+
+	Params::UWinterQuestNavigationActorIndicator_C_HandleTopRightArrowLayout_Params Parms{};
 
 	Parms.Value = Value;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -272,9 +318,12 @@ void UWinterQuestNavigationActorIndicator_C::HandleTopRightArrowLayout(float Val
 
 void UWinterQuestNavigationActorIndicator_C::HandleTopLeftArrowLayout(float Value, bool Temp_bool_Variable, bool CallFunc_InRange_FloatFloat_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleTopLeftArrowLayout");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestNavigationActorIndicator_C_HandleTopLeftArrowLayout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleTopLeftArrowLayout");
+
+	Params::UWinterQuestNavigationActorIndicator_C_HandleTopLeftArrowLayout_Params Parms{};
 
 	Parms.Value = Value;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -302,9 +351,12 @@ void UWinterQuestNavigationActorIndicator_C::HandleTopLeftArrowLayout(float Valu
 
 void UWinterQuestNavigationActorIndicator_C::HandleBottomCenterArrowLayout(float Value, bool Temp_bool_Variable, bool CallFunc_InRange_FloatFloat_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleBottomCenterArrowLayout");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestNavigationActorIndicator_C_HandleBottomCenterArrowLayout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleBottomCenterArrowLayout");
+
+	Params::UWinterQuestNavigationActorIndicator_C_HandleBottomCenterArrowLayout_Params Parms{};
 
 	Parms.Value = Value;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -332,9 +384,12 @@ void UWinterQuestNavigationActorIndicator_C::HandleBottomCenterArrowLayout(float
 
 void UWinterQuestNavigationActorIndicator_C::HandleTopCenterArrowLayout(float Value, bool Temp_bool_Variable, bool CallFunc_InRange_FloatFloat_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleTopCenterArrowLayout");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestNavigationActorIndicator_C_HandleTopCenterArrowLayout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleTopCenterArrowLayout");
+
+	Params::UWinterQuestNavigationActorIndicator_C_HandleTopCenterArrowLayout_Params Parms{};
 
 	Parms.Value = Value;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -384,9 +439,12 @@ void UWinterQuestNavigationActorIndicator_C::HandleTopCenterArrowLayout(float Va
 
 void UWinterQuestNavigationActorIndicator_C::HandleLeftArrowLayout(float Value, bool Temp_bool_Variable, bool CallFunc_InRange_FloatFloat_ReturnValue, bool CallFunc_InRange_FloatFloat_ReturnValue_1, bool CallFunc_InRange_FloatFloat_ReturnValue_2, bool CallFunc_InRange_FloatFloat_ReturnValue_3, float Temp_float_Variable, bool CallFunc_BooleanOR_ReturnValue, bool Temp_bool_Variable_1, const struct FVector2D& Temp_struct_Variable, bool Temp_bool_Variable_2, const struct FVector2D& Temp_struct_Variable_1, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, float CallFunc_RandomFloatInRange_ReturnValue, float K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, float Temp_float_Variable_1, float CallFunc_RandomFloatInRange_ReturnValue_1, float CallFunc_RandomFloatInRange_ReturnValue_2, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue_3, const struct FVector2D& K2Node_Select_Default_2, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue_1, const struct FVector2D& K2Node_Select_Default_3, bool Temp_bool_Variable_4, float K2Node_Select_Default_4, const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue)
 {
-	static auto Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleLeftArrowLayout");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestNavigationActorIndicator_C_HandleLeftArrowLayout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleLeftArrowLayout");
+
+	Params::UWinterQuestNavigationActorIndicator_C_HandleLeftArrowLayout_Params Parms{};
 
 	Parms.Value = Value;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -456,9 +514,12 @@ void UWinterQuestNavigationActorIndicator_C::HandleLeftArrowLayout(float Value, 
 
 void UWinterQuestNavigationActorIndicator_C::HandleRightArrowLayout(float Value, bool Temp_bool_Variable, bool CallFunc_InRange_FloatFloat_ReturnValue, bool CallFunc_InRange_FloatFloat_ReturnValue_1, bool CallFunc_InRange_FloatFloat_ReturnValue_2, float Temp_float_Variable, bool Temp_bool_Variable_1, const struct FVector2D& Temp_struct_Variable, bool Temp_bool_Variable_2, const struct FVector2D& Temp_struct_Variable_1, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, float Temp_float_Variable_1, enum class ESlateVisibility K2Node_Select_Default, float CallFunc_RandomFloatInRange_ReturnValue, bool Temp_bool_Variable_4, float CallFunc_RandomFloatInRange_ReturnValue_1, float K2Node_Select_Default_1, float K2Node_Select_Default_2, float CallFunc_RandomFloatInRange_ReturnValue_2, float CallFunc_RandomFloatInRange_ReturnValue_3, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue_1, const struct FVector2D& K2Node_Select_Default_3, const struct FVector2D& K2Node_Select_Default_4, const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue)
 {
-	static auto Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleRightArrowLayout");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestNavigationActorIndicator_C_HandleRightArrowLayout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "HandleRightArrowLayout");
+
+	Params::UWinterQuestNavigationActorIndicator_C_HandleRightArrowLayout_Params Parms{};
 
 	Parms.Value = Value;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -508,9 +569,12 @@ void UWinterQuestNavigationActorIndicator_C::HandleRightArrowLayout(float Value,
 
 void UWinterQuestNavigationActorIndicator_C::CalcPosition(float Distance, float Angle, struct FVector2D* Position, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_DegCos_ReturnValue, float CallFunc_DegSin_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_2, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue)
 {
-	static auto Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "CalcPosition");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestNavigationActorIndicator_C_CalcPosition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "CalcPosition");
+
+	Params::UWinterQuestNavigationActorIndicator_C_CalcPosition_Params Parms{};
 
 	Parms.Distance = Distance;
 	Parms.Angle = Angle;
@@ -524,7 +588,7 @@ void UWinterQuestNavigationActorIndicator_C::CalcPosition(float Distance, float 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Position != nullptr)
-		*Position = Parms.Position;
+		*Position = std::move(Parms.Position);
 
 }
 
@@ -536,9 +600,12 @@ void UWinterQuestNavigationActorIndicator_C::CalcPosition(float Distance, float 
 
 void UWinterQuestNavigationActorIndicator_C::OnInitData(struct FNavWidgetSettings& Settings)
 {
-	static auto Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "OnInitData");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestNavigationActorIndicator_C_OnInitData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "OnInitData");
+
+	Params::UWinterQuestNavigationActorIndicator_C_OnInitData_Params Parms{};
 
 	Parms.Settings = Settings;
 
@@ -558,9 +625,12 @@ void UWinterQuestNavigationActorIndicator_C::OnInitData(struct FNavWidgetSetting
 
 void UWinterQuestNavigationActorIndicator_C::ExecuteUbergraph_WinterQuestNavigationActorIndicator(int32 EntryPoint, const struct FNavWidgetSettings& K2Node_Event_Settings, const struct FVector2D& CallFunc_CalcPosition_Position, const struct FVector2D& CallFunc_CalcPosition_Position_1, const struct FWidgetTransform& K2Node_MakeStruct_WidgetTransform)
 {
-	static auto Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "ExecuteUbergraph_WinterQuestNavigationActorIndicator");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestNavigationActorIndicator_C_ExecuteUbergraph_WinterQuestNavigationActorIndicator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestNavigationActorIndicator_C", "ExecuteUbergraph_WinterQuestNavigationActorIndicator");
+
+	Params::UWinterQuestNavigationActorIndicator_C_ExecuteUbergraph_WinterQuestNavigationActorIndicator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_Settings = K2Node_Event_Settings;
@@ -574,6 +644,4 @@ void UWinterQuestNavigationActorIndicator_C::ExecuteUbergraph_WinterQuestNavigat
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -31,18 +28,15 @@ public:
 	TArray<class USkeletalMeshComponent*>        SkeletalMeshes;                                    // 0x2A30(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 	TArray<class UMaterialInstanceDynamic*>      PawnMaterials_ALL;                                 // 0x2A40(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	int32                                        WaterCounter;                                      // 0x2A50(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1CD4[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4EF7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CurrentWaterMeshActor;                             // 0x2A58(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsInWater;                                         // 0x2A60(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_1CD5[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4EF9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Time_when_you_ll_be_able_to_splash_again;          // 0x2A64(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UMulticastInlineDelegateProperty_            OnOverlapWaterVolume;                              // 0x2A68(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("PlayerPawn_Generic_Parent_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class APlayerPawn_Generic_Parent_C* GetDefaultObj();
 
 	void ReceiveBeginPlay();
 	void Entered_Water_Volume();
@@ -54,6 +48,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

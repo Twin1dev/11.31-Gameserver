@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GAB_GenericStunned.GAB_GenericStunned_C
+// (None)
+
+class UClass* UGAB_GenericStunned_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAB_GenericStunned_C");
+
+	return Clss;
+}
+
+
+// GAB_GenericStunned_C GAB_GenericStunned.Default__GAB_GenericStunned_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAB_GenericStunned_C* UGAB_GenericStunned_C::GetDefaultObj()
+{
+	static class UGAB_GenericStunned_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAB_GenericStunned_C*>(UGAB_GenericStunned_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GAB_GenericStunned.GAB_GenericStunned_C.K2_OnEndAbility
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UGAB_GenericStunned_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GAB_GenericStunned_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericStunned_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericStunned_C", "K2_OnEndAbility");
+
+	Params::UGAB_GenericStunned_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -40,9 +68,12 @@ void UGAB_GenericStunned_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGAB_GenericStunned_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GAB_GenericStunned_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericStunned_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericStunned_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGAB_GenericStunned_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -85,9 +116,12 @@ void UGAB_GenericStunned_C::K2_ActivateAbilityFromEvent(struct FGameplayEventDat
 
 void UGAB_GenericStunned_C::ExecuteUbergraph_GAB_GenericStunned(int32 EntryPoint, const struct FGameplayEventData& K2Node_Event_EventData, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue, bool CallFunc_IsValid_ReturnValue, float CallFunc_GetStunTime_ReturnValue, class UFortAbilitySystemComponent* CallFunc_GetActivatingAbilityComponent_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, bool CallFunc_RemoveActiveGameplayEffect_ReturnValue, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue_1, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_1, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, class UFortAbilitySystemComponent* CallFunc_GetActivatingAbilityComponent_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_RemoveActiveGameplayEffect_ReturnValue_1, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue_2, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_2, const struct FVector& CallFunc_Conv_RotatorToVector_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_3, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue_3, bool K2Node_Event_bWasCancelled, bool CallFunc_IsValid_ReturnValue_1, bool K2Node_SwitchEnum_CmpSuccess_1)
 {
-	static auto Func = Class->GetFunction("GAB_GenericStunned_C", "ExecuteUbergraph_GAB_GenericStunned");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericStunned_C_ExecuteUbergraph_GAB_GenericStunned_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericStunned_C", "ExecuteUbergraph_GAB_GenericStunned");
+
+	Params::UGAB_GenericStunned_C_ExecuteUbergraph_GAB_GenericStunned_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_EventData = K2Node_Event_EventData;
@@ -124,6 +158,4 @@ void UGAB_GenericStunned_C::ExecuteUbergraph_GAB_GenericStunned(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

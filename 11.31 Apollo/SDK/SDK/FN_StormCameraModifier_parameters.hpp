@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -23,14 +20,12 @@ struct UStormCameraModifier_C_BlueprintModifyPostProcess_Params
 public:
 	float                                        DeltaTime;                                         // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        PostProcessBlendWeight;                            // 0x4(0x4)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_566F[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1800[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPostProcessSettings                  PostProcessSettings;                               // 0x10(0x530)(Parm, OutParm)
-	struct FPostProcessSettings                  K2Node_MakeStruct_PostProcessSettings;             // 0x540(0x530)()
+	struct FPostProcessSettings                  K2Node_MakeStruct_PostProcessSettings;             // 0x540(0x530)(None)
 };
 
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

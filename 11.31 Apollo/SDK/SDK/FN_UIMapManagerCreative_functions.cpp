@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass UIMapManagerCreative.UIMapManagerCreative_C
+// (Actor)
+
+class UClass* AUIMapManagerCreative_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UIMapManagerCreative_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// UIMapManagerCreative_C UIMapManagerCreative.Default__UIMapManagerCreative_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AUIMapManagerCreative_C* AUIMapManagerCreative_C::GetDefaultObj()
+{
+	static class AUIMapManagerCreative_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AUIMapManagerCreative_C*>(AUIMapManagerCreative_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

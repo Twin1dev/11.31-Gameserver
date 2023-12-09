@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,17 +15,12 @@ class UAnimNotify_DemonHunterCrossbow_C : public UAnimNotify
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AnimNotify_DemonHunterCrossbow_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAnimNotify_DemonHunterCrossbow_C* GetDefaultObj();
 
 	bool Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, class AActor* CallFunc_GetOwner_ReturnValue, class AB_DemonHunter_Crossbow_Athena_C* K2Node_DynamicCast_AsB_Demon_Hunter_Crossbow_Athena, bool K2Node_DynamicCast_bSuccess);
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass PBWA_W1_Archway.PBWA_W1_Archway_C
+// (Actor)
+
+class UClass* APBWA_W1_Archway_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PBWA_W1_Archway_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// PBWA_W1_Archway_C PBWA_W1_Archway.Default__PBWA_W1_Archway_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class APBWA_W1_Archway_C* APBWA_W1_Archway_C::GetDefaultObj()
+{
+	static class APBWA_W1_Archway_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APBWA_W1_Archway_C*>(APBWA_W1_Archway_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

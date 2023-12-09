@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GCL_BoostJumpPack_FuelRegen.GCL_BoostJumpPack_FuelRegen_C
+// (Actor)
+
+class UClass* AGCL_BoostJumpPack_FuelRegen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCL_BoostJumpPack_FuelRegen_C");
+
+	return Clss;
+}
+
+
+// GCL_BoostJumpPack_FuelRegen_C GCL_BoostJumpPack_FuelRegen.Default__GCL_BoostJumpPack_FuelRegen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCL_BoostJumpPack_FuelRegen_C* AGCL_BoostJumpPack_FuelRegen_C::GetDefaultObj()
+{
+	static class AGCL_BoostJumpPack_FuelRegen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCL_BoostJumpPack_FuelRegen_C*>(AGCL_BoostJumpPack_FuelRegen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GCL_BoostJumpPack_FuelRegen.GCL_BoostJumpPack_FuelRegen_C.FullBlinkTimeline__FinishedFunc
 // (BlueprintEvent)
 // Parameters:
 
 void AGCL_BoostJumpPack_FuelRegen_C::FullBlinkTimeline__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "FullBlinkTimeline__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_BoostJumpPack_FuelRegen_C_FullBlinkTimeline__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "FullBlinkTimeline__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AGCL_BoostJumpPack_FuelRegen_C::FullBlinkTimeline__FinishedFunc()
 
 void AGCL_BoostJumpPack_FuelRegen_C::FullBlinkTimeline__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "FullBlinkTimeline__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_BoostJumpPack_FuelRegen_C_FullBlinkTimeline__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "FullBlinkTimeline__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -54,9 +83,12 @@ void AGCL_BoostJumpPack_FuelRegen_C::FullBlinkTimeline__UpdateFunc()
 
 void AGCL_BoostJumpPack_FuelRegen_C::ResetBlink(class AFortPlayerPawn* PlayerPawn)
 {
-	static auto Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "ResetBlink");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_BoostJumpPack_FuelRegen_C_ResetBlink_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "ResetBlink");
+
+	Params::AGCL_BoostJumpPack_FuelRegen_C_ResetBlink_Params Parms{};
 
 	Parms.PlayerPawn = PlayerPawn;
 
@@ -74,9 +106,12 @@ void AGCL_BoostJumpPack_FuelRegen_C::ResetBlink(class AFortPlayerPawn* PlayerPaw
 
 void AGCL_BoostJumpPack_FuelRegen_C::ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen(int32 EntryPoint, class AFortPlayerPawn* K2Node_Event_PlayerPawn, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_BoostJumpPack_FuelRegen_C", "ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen");
+
+	Params::AGCL_BoostJumpPack_FuelRegen_C_ExecuteUbergraph_GCL_BoostJumpPack_FuelRegen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_PlayerPawn = K2Node_Event_PlayerPawn;
@@ -88,6 +123,4 @@ void AGCL_BoostJumpPack_FuelRegen_C::ExecuteUbergraph_GCL_BoostJumpPack_FuelRege
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

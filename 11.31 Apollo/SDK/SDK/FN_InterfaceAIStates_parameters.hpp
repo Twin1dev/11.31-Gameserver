@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -24,13 +21,6 @@ public:
 	bool                                         Collide_;                                          // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function InterfaceAIStates.InterfaceAIStates_C.PortalFX
-struct IInterfaceAIStates_C_PortalFX_Params
-{
-public:
-};
-
 // 0x20 (0x20 - 0x0)
 // Function InterfaceAIStates.InterfaceAIStates_C.PortalGet
 struct IInterfaceAIStates_C_PortalGet_Params
@@ -41,20 +31,6 @@ public:
 	class AActor*                                BT;                                                // 0x18(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function InterfaceAIStates.InterfaceAIStates_C.TakerSoulSuckInterrupted
-struct IInterfaceAIStates_C_TakerSoulSuckInterrupted_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function InterfaceAIStates.InterfaceAIStates_C.PortalClear
-struct IInterfaceAIStates_C_PortalClear_Params
-{
-public:
-};
-
 // 0x18 (0x18 - 0x0)
 // Function InterfaceAIStates.InterfaceAIStates_C.PortalAdd
 struct IInterfaceAIStates_C_PortalAdd_Params
@@ -62,13 +38,6 @@ struct IInterfaceAIStates_C_PortalAdd_Params
 public:
 	class ABuildingActor*                        BuildingActor;                                     // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class ABuildingActor*>                BuildingActorList;                                 // 0x8(0x10)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function InterfaceAIStates.InterfaceAIStates_C.TakerSoulSuckSoundEnd
-struct IInterfaceAIStates_C_TakerSoulSuckSoundEnd_Params
-{
-public:
 };
 
 // 0x1 (0x1 - 0x0)
@@ -106,20 +75,6 @@ public:
 	bool                                         Debug;                                             // 0x1C(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function InterfaceAIStates.InterfaceAIStates_C.EndTakerSwoopAttack
-struct IInterfaceAIStates_C_EndTakerSwoopAttack_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function InterfaceAIStates.InterfaceAIStates_C.BeginTakerSwoopAttack
-struct IInterfaceAIStates_C_BeginTakerSwoopAttack_Params
-{
-public:
-};
-
 // 0x3 (0x3 - 0x0)
 // Function InterfaceAIStates.InterfaceAIStates_C.ResetTakerSpecialAttackTimer
 struct IInterfaceAIStates_C_ResetTakerSpecialAttackTimer_Params
@@ -141,20 +96,6 @@ public:
 	bool                                         Portal;                                            // 0x3(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function InterfaceAIStates.InterfaceAIStates_C.HuskEvadeStart
-struct IInterfaceAIStates_C_HuskEvadeStart_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function InterfaceAIStates.InterfaceAIStates_C.MantleEnd
-struct IInterfaceAIStates_C_MantleEnd_Params
-{
-public:
-};
-
 // 0x28 (0x28 - 0x0)
 // Function InterfaceAIStates.InterfaceAIStates_C.MantleStart
 struct IInterfaceAIStates_C_MantleStart_Params
@@ -172,6 +113,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

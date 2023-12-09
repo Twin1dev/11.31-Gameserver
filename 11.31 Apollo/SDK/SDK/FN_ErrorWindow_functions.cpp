@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,19 +12,50 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ErrorWindow.ErrorWindow_C
+// (None)
+
+class UClass* UErrorWindow_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ErrorWindow_C");
+
+	return Clss;
+}
+
+
+// ErrorWindow_C ErrorWindow.Default__ErrorWindow_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UErrorWindow_C* UErrorWindow_C::GetDefaultObj()
+{
+	static class UErrorWindow_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UErrorWindow_C*>(UErrorWindow_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ErrorWindow.ErrorWindow_C.OnAnalogValueChanged
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FAnalogInputEvent           InAnalogInputEvent                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 
 struct FEventReply UErrorWindow_C::OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent, const struct FEventReply& CallFunc_Unhandled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ErrorWindow_C", "OnAnalogValueChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UErrorWindow_C_OnAnalogValueChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ErrorWindow_C", "OnAnalogValueChanged");
+
+	Params::UErrorWindow_C_OnAnalogValueChanged_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InAnalogInputEvent = InAnalogInputEvent;
@@ -48,9 +76,12 @@ struct FEventReply UErrorWindow_C::OnAnalogValueChanged(const struct FGeometry& 
 
 void UErrorWindow_C::Initialize_Close_Button(class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, int32 CallFunc_GetInputPriority_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ErrorWindow_C", "Initialize Close Button");
+	static class UFunction* Func = nullptr;
 
-	Params::UErrorWindow_C_Initialize_Close_Button_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ErrorWindow_C", "Initialize Close Button");
+
+	Params::UErrorWindow_C_Initialize_Close_Button_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetInputPriority_ReturnValue = CallFunc_GetInputPriority_ReturnValue;
@@ -66,12 +97,14 @@ void UErrorWindow_C::Initialize_Close_Button(class UFortGlobalUIContext* CallFun
 
 void UErrorWindow_C::Construct()
 {
-	static auto Func = Class->GetFunction("ErrorWindow_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UErrorWindow_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ErrorWindow_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -82,12 +115,14 @@ void UErrorWindow_C::Construct()
 
 void UErrorWindow_C::Destruct()
 {
-	static auto Func = Class->GetFunction("ErrorWindow_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UErrorWindow_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ErrorWindow_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -98,12 +133,14 @@ void UErrorWindow_C::Destruct()
 
 void UErrorWindow_C::OnBeginOutro()
 {
-	static auto Func = Class->GetFunction("ErrorWindow_C", "OnBeginOutro");
+	static class UFunction* Func = nullptr;
 
-	Params::UErrorWindow_C_OnBeginOutro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ErrorWindow_C", "OnBeginOutro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -114,12 +151,14 @@ void UErrorWindow_C::OnBeginOutro()
 
 void UErrorWindow_C::OnBeginIntro()
 {
-	static auto Func = Class->GetFunction("ErrorWindow_C", "OnBeginIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UErrorWindow_C_OnBeginIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ErrorWindow_C", "OnBeginIntro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -130,12 +169,14 @@ void UErrorWindow_C::OnBeginIntro()
 
 void UErrorWindow_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("ErrorWindow_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UErrorWindow_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ErrorWindow_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -146,12 +187,14 @@ void UErrorWindow_C::BP_OnActivated()
 
 void UErrorWindow_C::HandleLlamaAnimFinish()
 {
-	static auto Func = Class->GetFunction("ErrorWindow_C", "HandleLlamaAnimFinish");
+	static class UFunction* Func = nullptr;
 
-	Params::UErrorWindow_C_HandleLlamaAnimFinish_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ErrorWindow_C", "HandleLlamaAnimFinish");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -162,12 +205,14 @@ void UErrorWindow_C::HandleLlamaAnimFinish()
 
 void UErrorWindow_C::LlamaReverse()
 {
-	static auto Func = Class->GetFunction("ErrorWindow_C", "LlamaReverse");
+	static class UFunction* Func = nullptr;
 
-	Params::UErrorWindow_C_LlamaReverse_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ErrorWindow_C", "LlamaReverse");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -178,12 +223,14 @@ void UErrorWindow_C::LlamaReverse()
 
 void UErrorWindow_C::HandleLlamaCycleFinished()
 {
-	static auto Func = Class->GetFunction("ErrorWindow_C", "HandleLlamaCycleFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UErrorWindow_C_HandleLlamaCycleFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ErrorWindow_C", "HandleLlamaCycleFinished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -194,12 +241,14 @@ void UErrorWindow_C::HandleLlamaCycleFinished()
 
 void UErrorWindow_C::PlayRandomAmbientLlama()
 {
-	static auto Func = Class->GetFunction("ErrorWindow_C", "PlayRandomAmbientLlama");
+	static class UFunction* Func = nullptr;
 
-	Params::UErrorWindow_C_PlayRandomAmbientLlama_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ErrorWindow_C", "PlayRandomAmbientLlama");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -210,12 +259,14 @@ void UErrorWindow_C::PlayRandomAmbientLlama()
 
 void UErrorWindow_C::StartAmbientLlamaSequence()
 {
-	static auto Func = Class->GetFunction("ErrorWindow_C", "StartAmbientLlamaSequence");
+	static class UFunction* Func = nullptr;
 
-	Params::UErrorWindow_C_StartAmbientLlamaSequence_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ErrorWindow_C", "StartAmbientLlamaSequence");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -226,12 +277,14 @@ void UErrorWindow_C::StartAmbientLlamaSequence()
 
 void UErrorWindow_C::ResetLlamas()
 {
-	static auto Func = Class->GetFunction("ErrorWindow_C", "ResetLlamas");
+	static class UFunction* Func = nullptr;
 
-	Params::UErrorWindow_C_ResetLlamas_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ErrorWindow_C", "ResetLlamas");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -243,9 +296,12 @@ void UErrorWindow_C::ResetLlamas()
 
 void UErrorWindow_C::OnOverrideCloseButtonText(class FText& OverrideText)
 {
-	static auto Func = Class->GetFunction("ErrorWindow_C", "OnOverrideCloseButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::UErrorWindow_C_OnOverrideCloseButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ErrorWindow_C", "OnOverrideCloseButtonText");
+
+	Params::UErrorWindow_C_OnOverrideCloseButtonText_Params Parms{};
 
 	Parms.OverrideText = OverrideText;
 
@@ -293,9 +349,12 @@ void UErrorWindow_C::OnOverrideCloseButtonText(class FText& OverrideText)
 
 void UErrorWindow_C::ExecuteUbergraph_ErrorWindow(int32 EntryPoint, int32 Temp_int_Variable, int32 Temp_int_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, int32 CallFunc_RandomIntegerInRange_ReturnValue, class UWidgetAnimation* K2Node_Select_Default, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, float CallFunc_RandomFloatInRange_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, TArray<class UErrorLlama_C*>& K2Node_MakeArray_Array, class UErrorLlama_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, float CallFunc_RandomFloatInRange_ReturnValue_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, bool CallFunc_IsMobileGame_ReturnValue, float CallFunc_GetEndTime_ReturnValue, float CallFunc_GetEndTime_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_4, float CallFunc_GetEndTime_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_5, class FText K2Node_Event_OverrideText, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("ErrorWindow_C", "ExecuteUbergraph_ErrorWindow");
+	static class UFunction* Func = nullptr;
 
-	Params::UErrorWindow_C_ExecuteUbergraph_ErrorWindow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ErrorWindow_C", "ExecuteUbergraph_ErrorWindow");
+
+	Params::UErrorWindow_C_ExecuteUbergraph_ErrorWindow_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -337,6 +396,4 @@ void UErrorWindow_C::ExecuteUbergraph_ErrorWindow(int32 EntryPoint, int32 Temp_i
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

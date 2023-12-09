@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass PendingAccountMergeNotification.PendingAccountMergeNotification_C
+// (None)
+
+class UClass* UPendingAccountMergeNotification_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PendingAccountMergeNotification_C");
+
+	return Clss;
+}
+
+
+// PendingAccountMergeNotification_C PendingAccountMergeNotification.Default__PendingAccountMergeNotification_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPendingAccountMergeNotification_C* UPendingAccountMergeNotification_C::GetDefaultObj()
+{
+	static class UPendingAccountMergeNotification_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPendingAccountMergeNotification_C*>(UPendingAccountMergeNotification_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PendingAccountMergeNotification.PendingAccountMergeNotification_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UPendingAccountMergeNotification_C::Construct()
 {
-	static auto Func = Class->GetFunction("PendingAccountMergeNotification_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPendingAccountMergeNotification_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PendingAccountMergeNotification_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UPendingAccountMergeNotification_C::Construct()
 
 void UPendingAccountMergeNotification_C::Hovered(bool IsHovered)
 {
-	static auto Func = Class->GetFunction("PendingAccountMergeNotification_C", "Hovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UPendingAccountMergeNotification_C_Hovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PendingAccountMergeNotification_C", "Hovered");
+
+	Params::UPendingAccountMergeNotification_C_Hovered_Params Parms{};
 
 	Parms.IsHovered = IsHovered;
 
@@ -55,12 +85,14 @@ void UPendingAccountMergeNotification_C::Hovered(bool IsHovered)
 
 void UPendingAccountMergeNotification_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("PendingAccountMergeNotification_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UPendingAccountMergeNotification_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PendingAccountMergeNotification_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -71,12 +103,14 @@ void UPendingAccountMergeNotification_C::BP_OnHovered()
 
 void UPendingAccountMergeNotification_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("PendingAccountMergeNotification_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UPendingAccountMergeNotification_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PendingAccountMergeNotification_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -87,12 +121,14 @@ void UPendingAccountMergeNotification_C::BP_OnUnhovered()
 
 void UPendingAccountMergeNotification_C::BP_OnClicked()
 {
-	static auto Func = Class->GetFunction("PendingAccountMergeNotification_C", "BP_OnClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UPendingAccountMergeNotification_C_BP_OnClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PendingAccountMergeNotification_C", "BP_OnClicked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -103,12 +139,14 @@ void UPendingAccountMergeNotification_C::BP_OnClicked()
 
 void UPendingAccountMergeNotification_C::Destruct()
 {
-	static auto Func = Class->GetFunction("PendingAccountMergeNotification_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPendingAccountMergeNotification_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PendingAccountMergeNotification_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -120,9 +158,12 @@ void UPendingAccountMergeNotification_C::Destruct()
 
 void UPendingAccountMergeNotification_C::OnInputChanged(enum class ECommonInputType bNewInputType)
 {
-	static auto Func = Class->GetFunction("PendingAccountMergeNotification_C", "OnInputChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPendingAccountMergeNotification_C_OnInputChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PendingAccountMergeNotification_C", "OnInputChanged");
+
+	Params::UPendingAccountMergeNotification_C_OnInputChanged_Params Parms{};
 
 	Parms.bNewInputType = bNewInputType;
 
@@ -145,10 +186,10 @@ void UPendingAccountMergeNotification_C::OnInputChanged(enum class ECommonInputT
 // class UCommonInputSubsystem*       CallFunc_GetLocalPlayerSubsystem_ReturnValue_2                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ECommonInputType        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ECommonInputType        CallFunc_GetCurrentInputType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
-// class FText                        Temp_text_Variable_2                                             ()
-// class FText                        Temp_text_Variable_3                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
+// class FText                        Temp_text_Variable_2                                             (None)
+// class FText                        Temp_text_Variable_3                                             (None)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -161,14 +202,14 @@ void UPendingAccountMergeNotification_C::OnInputChanged(enum class ECommonInputT
 // struct FDateTime                   CallFunc_Now_ReturnValue                                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_5                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FTimespan                   CallFunc_Subtract_DateTimeDateTime_ReturnValue                   (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetTimespanAsText_ReturnValue                           ()
+// class FText                        CallFunc_GetTimespanAsText_ReturnValue                           (None)
 // bool                               K2Node_CustomEvent_IsHovered                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FLinearColor                K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortRuntimeOptions*         CallFunc_GetRuntimeOptions_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_6                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ECommonInputType        K2Node_CustomEvent_bNewInputType                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// class FText                        K2Node_Select_Default_1                                          ()
+// class FText                        K2Node_Select_Default_1                                          (None)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_2                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -178,9 +219,12 @@ void UPendingAccountMergeNotification_C::OnInputChanged(enum class ECommonInputT
 
 void UPendingAccountMergeNotification_C::ExecuteUbergraph_PendingAccountMergeNotification(int32 EntryPoint, class UFortMcpContext* CallFunc_GetContext_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, const struct FDateTime& CallFunc_IsPendingAccountTransfer_EstimatedCompletionMax, bool CallFunc_IsPendingAccountTransfer_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UCommonInputSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue, class UCommonInputSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue_1, class UCommonInputSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue_2, enum class ECommonInputType Temp_byte_Variable, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class FText Temp_text_Variable_2, class FText Temp_text_Variable_3, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, bool Temp_bool_Variable_1, enum class ETextJustify Temp_byte_Variable_3, enum class ETextJustify Temp_byte_Variable_4, bool Temp_bool_Variable_2, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, const struct FDateTime& CallFunc_Now_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_5, const struct FTimespan& CallFunc_Subtract_DateTimeDateTime_ReturnValue, class FText CallFunc_GetTimespanAsText_ReturnValue, bool K2Node_CustomEvent_IsHovered, const struct FLinearColor& K2Node_Select_Default, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_6, enum class ECommonInputType K2Node_CustomEvent_bNewInputType, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FText K2Node_Select_Default_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, enum class ESlateVisibility K2Node_Select_Default_2, enum class ETextJustify K2Node_Select_Default_3, bool Temp_bool_Variable_3, enum class ESlateVisibility K2Node_Select_Default_4)
 {
-	static auto Func = Class->GetFunction("PendingAccountMergeNotification_C", "ExecuteUbergraph_PendingAccountMergeNotification");
+	static class UFunction* Func = nullptr;
 
-	Params::UPendingAccountMergeNotification_C_ExecuteUbergraph_PendingAccountMergeNotification_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PendingAccountMergeNotification_C", "ExecuteUbergraph_PendingAccountMergeNotification");
+
+	Params::UPendingAccountMergeNotification_C_ExecuteUbergraph_PendingAccountMergeNotification_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -230,6 +274,4 @@ void UPendingAccountMergeNotification_C::ExecuteUbergraph_PendingAccountMergeNot
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

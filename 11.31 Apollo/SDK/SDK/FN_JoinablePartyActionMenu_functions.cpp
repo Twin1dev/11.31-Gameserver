@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass JoinablePartyActionMenu.JoinablePartyActionMenu_C
+// (None)
+
+class UClass* UJoinablePartyActionMenu_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("JoinablePartyActionMenu_C");
+
+	return Clss;
+}
+
+
+// JoinablePartyActionMenu_C JoinablePartyActionMenu.Default__JoinablePartyActionMenu_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UJoinablePartyActionMenu_C* UJoinablePartyActionMenu_C::GetDefaultObj()
+{
+	static class UJoinablePartyActionMenu_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UJoinablePartyActionMenu_C*>(UJoinablePartyActionMenu_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function JoinablePartyActionMenu.JoinablePartyActionMenu_C.OnToggleConfirmation
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UJoinablePartyActionMenu_C::OnToggleConfirmation(bool bIsVisible)
 {
-	static auto Func = Class->GetFunction("JoinablePartyActionMenu_C", "OnToggleConfirmation");
+	static class UFunction* Func = nullptr;
 
-	Params::UJoinablePartyActionMenu_C_OnToggleConfirmation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("JoinablePartyActionMenu_C", "OnToggleConfirmation");
+
+	Params::UJoinablePartyActionMenu_C_OnToggleConfirmation_Params Parms{};
 
 	Parms.bIsVisible = bIsVisible;
 
@@ -39,12 +67,14 @@ void UJoinablePartyActionMenu_C::OnToggleConfirmation(bool bIsVisible)
 
 void UJoinablePartyActionMenu_C::OnOpened()
 {
-	static auto Func = Class->GetFunction("JoinablePartyActionMenu_C", "OnOpened");
+	static class UFunction* Func = nullptr;
 
-	Params::UJoinablePartyActionMenu_C_OnOpened_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("JoinablePartyActionMenu_C", "OnOpened");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -59,9 +89,12 @@ void UJoinablePartyActionMenu_C::OnOpened()
 
 void UJoinablePartyActionMenu_C::ExecuteUbergraph_JoinablePartyActionMenu(int32 EntryPoint, bool K2Node_Event_bIsVisible, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("JoinablePartyActionMenu_C", "ExecuteUbergraph_JoinablePartyActionMenu");
+	static class UFunction* Func = nullptr;
 
-	Params::UJoinablePartyActionMenu_C_ExecuteUbergraph_JoinablePartyActionMenu_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("JoinablePartyActionMenu_C", "ExecuteUbergraph_JoinablePartyActionMenu");
+
+	Params::UJoinablePartyActionMenu_C_ExecuteUbergraph_JoinablePartyActionMenu_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bIsVisible = K2Node_Event_bIsVisible;
@@ -74,6 +107,4 @@ void UJoinablePartyActionMenu_C::ExecuteUbergraph_JoinablePartyActionMenu(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

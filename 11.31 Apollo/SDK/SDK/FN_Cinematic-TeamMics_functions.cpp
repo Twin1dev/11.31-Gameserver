@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass Cinematic-TeamMics.Cinematic-TeamMics_C
+// (None)
+
+class UClass* UCinematicMinusTeamMics_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Cinematic-TeamMics_C");
+
+	return Clss;
+}
+
+
+// Cinematic-TeamMics_C Cinematic-TeamMics.Default__Cinematic-TeamMics_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCinematicMinusTeamMics_C* UCinematicMinusTeamMics_C::GetDefaultObj()
+{
+	static class UCinematicMinusTeamMics_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCinematicMinusTeamMics_C*>(UCinematicMinusTeamMics_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function Cinematic-TeamMics.Cinematic-TeamMics_C.Update
@@ -34,11 +59,14 @@ namespace SDK
 // bool                               CallFunc_IsNetIdFromLocalPlayersPlatform_ReturnValue             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FUniqueNetIdRepl            K2Node_Select_Default_2                                          (ConstParm, HasGetValueTypeHash)
 
-void UCinematic_TeamMics_C::Update(const struct FFortTeamMemberInfo& UpdatedMemberInfo, const struct FUniqueNetIdRepl& PlayerNetId, bool Temp_bool_Variable, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_2, int32 Temp_int_Variable, int32 Temp_int_Variable_1, class UFortPartyContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsValid_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, int32 K2Node_Select_Default_1, bool CallFunc_IsNetIdFromLocalPlayersPlatform_ReturnValue, const struct FUniqueNetIdRepl& K2Node_Select_Default_2)
+void UCinematicMinusTeamMics_C::Update(const struct FFortTeamMemberInfo& UpdatedMemberInfo, const struct FUniqueNetIdRepl& PlayerNetId, bool Temp_bool_Variable, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_2, int32 Temp_int_Variable, int32 Temp_int_Variable_1, class UFortPartyContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsValid_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, int32 K2Node_Select_Default_1, bool CallFunc_IsNetIdFromLocalPlayersPlatform_ReturnValue, const struct FUniqueNetIdRepl& K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("Cinematic-TeamMics_C", "Update");
+	static class UFunction* Func = nullptr;
 
-	Params::UCinematic_TeamMics_C_Update_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Cinematic-TeamMics_C", "Update");
+
+	Params::UCinematicMinusTeamMics_C_Update_Params Parms{};
 
 	Parms.UpdatedMemberInfo = UpdatedMemberInfo;
 	Parms.PlayerNetId = PlayerNetId;
@@ -65,14 +93,16 @@ void UCinematic_TeamMics_C::Update(const struct FFortTeamMemberInfo& UpdatedMemb
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
-void UCinematic_TeamMics_C::Construct()
+void UCinematicMinusTeamMics_C::Construct()
 {
-	static auto Func = Class->GetFunction("Cinematic-TeamMics_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCinematic_TeamMics_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Cinematic-TeamMics_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -82,11 +112,14 @@ void UCinematic_TeamMics_C::Construct()
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UCinematic_TeamMics_C::ExecuteUbergraph_Cinematic_TeamMics(int32 EntryPoint)
+void UCinematicMinusTeamMics_C::ExecuteUbergraph_CinematicMinusTeamMics(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("Cinematic-TeamMics_C", "ExecuteUbergraph_Cinematic-TeamMics");
+	static class UFunction* Func = nullptr;
 
-	Params::UCinematic_TeamMics_C_ExecuteUbergraph_Cinematic_TeamMics_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Cinematic-TeamMics_C", "ExecuteUbergraph_Cinematic-TeamMics");
+
+	Params::UCinematicMinusTeamMics_C_ExecuteUbergraph_CinematicMinusTeamMics_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -96,6 +129,4 @@ void UCinematic_TeamMics_C::ExecuteUbergraph_Cinematic_TeamMics(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

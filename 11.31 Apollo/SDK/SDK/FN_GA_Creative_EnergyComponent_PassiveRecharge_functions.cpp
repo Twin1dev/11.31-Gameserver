@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Creative_EnergyComponent_PassiveRecharge.GA_Creative_EnergyComponent_PassiveRecharge_C
+// (None)
+
+class UClass* UGA_Creative_EnergyComponent_PassiveRecharge_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Creative_EnergyComponent_PassiveRecharge_C");
+
+	return Clss;
+}
+
+
+// GA_Creative_EnergyComponent_PassiveRecharge_C GA_Creative_EnergyComponent_PassiveRecharge.Default__GA_Creative_EnergyComponent_PassiveRecharge_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Creative_EnergyComponent_PassiveRecharge_C* UGA_Creative_EnergyComponent_PassiveRecharge_C::GetDefaultObj()
+{
+	static class UGA_Creative_EnergyComponent_PassiveRecharge_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Creative_EnergyComponent_PassiveRecharge_C*>(UGA_Creative_EnergyComponent_PassiveRecharge_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Creative_EnergyComponent_PassiveRecharge.GA_Creative_EnergyComponent_PassiveRecharge_C.K2_ActivateAbility
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UGA_Creative_EnergyComponent_PassiveRecharge_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Creative_EnergyComponent_PassiveRecharge_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_EnergyComponent_PassiveRecharge_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_EnergyComponent_PassiveRecharge_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UGA_Creative_EnergyComponent_PassiveRecharge_C::K2_ActivateAbility()
 
 void UGA_Creative_EnergyComponent_PassiveRecharge_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GA_Creative_EnergyComponent_PassiveRecharge_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_EnergyComponent_PassiveRecharge_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_EnergyComponent_PassiveRecharge_C", "K2_OnEndAbility");
+
+	Params::UGA_Creative_EnergyComponent_PassiveRecharge_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -59,9 +89,12 @@ void UGA_Creative_EnergyComponent_PassiveRecharge_C::K2_OnEndAbility(bool bWasCa
 
 void UGA_Creative_EnergyComponent_PassiveRecharge_C::ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge(int32 EntryPoint, bool K2Node_Event_bWasCancelled, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, bool CallFunc_K2_CommitAbility_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Creative_EnergyComponent_PassiveRecharge_C", "ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_EnergyComponent_PassiveRecharge_C_ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_EnergyComponent_PassiveRecharge_C", "ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge");
+
+	Params::UGA_Creative_EnergyComponent_PassiveRecharge_C_ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bWasCancelled = K2Node_Event_bWasCancelled;
@@ -74,6 +107,4 @@ void UGA_Creative_EnergyComponent_PassiveRecharge_C::ExecuteUbergraph_GA_Creativ
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TextRotator.TextRotator_C
+// (None)
+
+class UClass* UTextRotator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextRotator_C");
+
+	return Clss;
+}
+
+
+// TextRotator_C TextRotator.Default__TextRotator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTextRotator_C* UTextRotator_C::GetDefaultObj()
+{
+	static class UTextRotator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextRotator_C*>(UTextRotator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TextRotator.TextRotator_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UTextRotator_C::Construct()
 {
-	static auto Func = Class->GetFunction("TextRotator_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextRotator_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextRotator_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UTextRotator_C::Construct()
 
 void UTextRotator_C::ExecuteUbergraph_TextRotator(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("TextRotator_C", "ExecuteUbergraph_TextRotator");
+	static class UFunction* Func = nullptr;
 
-	Params::UTextRotator_C_ExecuteUbergraph_TextRotator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TextRotator_C", "ExecuteUbergraph_TextRotator");
+
+	Params::UTextRotator_C_ExecuteUbergraph_TextRotator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -50,6 +80,4 @@ void UTextRotator_C::ExecuteUbergraph_TextRotator(int32 EntryPoint)
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

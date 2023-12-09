@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -48,22 +45,20 @@ struct ULiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable;                                // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_62CE[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  Temp_text_Variable;                                // 0x8(0x18)()
-	class FText                                  Temp_text_Variable_1;                              // 0x20(0x18)()
+	uint8                                        Pad_63BC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  Temp_text_Variable;                                // 0x8(0x18)(None)
+	class FText                                  Temp_text_Variable_1;                              // 0x20(0x18)(None)
 	struct FGeometry                             K2Node_Event_MyGeometry;                           // 0x38(0x38)(IsPlainOldData, NoDestructor)
 	struct FPointerEvent                         K2Node_Event_MouseEvent_1;                         // 0x70(0x70)(ConstParm)
 	struct FPointerEvent                         K2Node_Event_MouseEvent;                           // 0xE0(0x70)(ConstParm)
 	bool                                         K2Node_Event_IsLiveStreamEnabled;                  // 0x150(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_62CF[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_63BD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimationReverse_ReturnValue;         // 0x158(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimationForward_ReturnValue;         // 0x160(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                  K2Node_Select_Default;                             // 0x168(0x18)()
+	class FText                                  K2Node_Select_Default;                             // 0x168(0x18)(None)
 };
 
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

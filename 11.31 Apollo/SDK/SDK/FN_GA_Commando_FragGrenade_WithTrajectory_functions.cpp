@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GA_Commando_FragGrenade_WithTrajectory.GA_Commando_FragGrenade_WithTrajectory_C
+// (None)
+
+class UClass* UGA_Commando_FragGrenade_WithTrajectory_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Commando_FragGrenade_WithTrajectory_C");
+
+	return Clss;
+}
+
+
+// GA_Commando_FragGrenade_WithTrajectory_C GA_Commando_FragGrenade_WithTrajectory.Default__GA_Commando_FragGrenade_WithTrajectory_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Commando_FragGrenade_WithTrajectory_C* UGA_Commando_FragGrenade_WithTrajectory_C::GetDefaultObj()
+{
+	static class UGA_Commando_FragGrenade_WithTrajectory_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Commando_FragGrenade_WithTrajectory_C*>(UGA_Commando_FragGrenade_WithTrajectory_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GA_Commando_FragGrenade_WithTrajectory.GA_Commando_FragGrenade_WithTrajectory_C.ActiveAbilitySetup
@@ -32,9 +57,12 @@ namespace SDK
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::ActiveAbilitySetup(class UAbilitySystemComponent* AbilitySystemIn, class UAbilitySystemComponent** AbilitySystemOut, class UAbilitySystemComponent* CallFunc_ActiveAbilitySetup_AbilitySystemOut, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_DoesTagAssetInterfaceHaveTag_TagContainerInterface_CastInput, bool CallFunc_DoesTagAssetInterfaceHaveTag_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_DoesTagAssetInterfaceHaveTag_TagContainerInterface_CastInput_1, bool CallFunc_DoesTagAssetInterfaceHaveTag_ReturnValue_1, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_DoesTagAssetInterfaceHaveTag_TagContainerInterface_CastInput_2, bool CallFunc_DoesTagAssetInterfaceHaveTag_ReturnValue_2, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_DoesTagAssetInterfaceHaveTag_TagContainerInterface_CastInput_3, bool CallFunc_DoesTagAssetInterfaceHaveTag_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "ActiveAbilitySetup");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_ActiveAbilitySetup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "ActiveAbilitySetup");
+
+	Params::UGA_Commando_FragGrenade_WithTrajectory_C_ActiveAbilitySetup_Params Parms{};
 
 	Parms.AbilitySystemIn = AbilitySystemIn;
 	Parms.CallFunc_ActiveAbilitySetup_AbilitySystemOut = CallFunc_ActiveAbilitySetup_AbilitySystemOut;
@@ -65,18 +93,21 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::ActiveAbilitySetup(class UAbilit
 // float                              InitialSpeed                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              GravityScale                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AB_Prj_Commando_FragGrenade_C*FragGrenade                                                      (Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortGameplayEffectContainerSpecCallFunc_MakeGameplayEffectContainerSpec_ReturnValue             ()
-// struct FFortGameplayEffectContainerSpecCallFunc_MakeGameplayEffectContainerSpec_ReturnValue_1           ()
-// struct FFortGameplayEffectContainerSpecCallFunc_MakeGameplayEffectContainerSpec_ReturnValue_2           ()
+// struct FFortGameplayEffectContainerSpecCallFunc_MakeGameplayEffectContainerSpec_ReturnValue             (None)
+// struct FFortGameplayEffectContainerSpecCallFunc_MakeGameplayEffectContainerSpec_ReturnValue_1           (None)
+// struct FFortGameplayEffectContainerSpecCallFunc_MakeGameplayEffectContainerSpec_ReturnValue_2           (None)
 // class AFortProjectileBase*         CallFunc_SpawnProjectile_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AB_Prj_Commando_FragGrenade_C*K2Node_DynamicCast_AsB_Prj_Commando_Frag_Grenade                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::SpawnFragGrenade(class UClass* ProjectileClass, struct FVector& SpawnLocation, const struct FRotator& InputPin, const struct FFortGameplayEffectContainerSpec& EffectContainerSpecToApplyOnExplode, float InitialSpeed, float GravityScale, class AB_Prj_Commando_FragGrenade_C* FragGrenade, const struct FFortGameplayEffectContainerSpec& CallFunc_MakeGameplayEffectContainerSpec_ReturnValue, const struct FFortGameplayEffectContainerSpec& CallFunc_MakeGameplayEffectContainerSpec_ReturnValue_1, const struct FFortGameplayEffectContainerSpec& CallFunc_MakeGameplayEffectContainerSpec_ReturnValue_2, class AFortProjectileBase* CallFunc_SpawnProjectile_ReturnValue, class AB_Prj_Commando_FragGrenade_C* K2Node_DynamicCast_AsB_Prj_Commando_Frag_Grenade, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "SpawnFragGrenade");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_SpawnFragGrenade_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "SpawnFragGrenade");
+
+	Params::UGA_Commando_FragGrenade_WithTrajectory_C_SpawnFragGrenade_Params Parms{};
 
 	Parms.ProjectileClass = ProjectileClass;
 	Parms.SpawnLocation = SpawnLocation;
@@ -111,9 +142,12 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::SpawnFragGrenade(class UClass* P
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::CalcGrenadeSpeedFromPitch(float AimPitch, float* GrenadeSpeed, float CallFunc_NormalizeAxis_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_FClamp_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Lerp_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "CalcGrenadeSpeedFromPitch");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_CalcGrenadeSpeedFromPitch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "CalcGrenadeSpeedFromPitch");
+
+	Params::UGA_Commando_FragGrenade_WithTrajectory_C_CalcGrenadeSpeedFromPitch_Params Parms{};
 
 	Parms.AimPitch = AimPitch;
 	Parms.CallFunc_NormalizeAxis_ReturnValue = CallFunc_NormalizeAxis_ReturnValue;
@@ -149,9 +183,12 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::CalcGrenadeSpeedFromPitch(float 
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::UpdateTrajectorySpline(float CallFunc_SelectFloat_ReturnValue, const struct FVector& CallFunc_SpawnLocationAndRotation_OutLoc, const struct FRotator& CallFunc_SpawnLocationAndRotation_OutRot, const struct FVector& CallFunc_Conv_RotatorToVector_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, float CallFunc_CalcGrenadeSpeedFromPitch_GrenadeSpeed, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, float CallFunc_FMax_ReturnValue, TArray<struct FVector>& CallFunc_CalculateProjectileTrajectorySpline_OutSplinePoints, TArray<struct FVector>& CallFunc_CalculateProjectileTrajectorySpline_OutSplineTangents)
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "UpdateTrajectorySpline");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_UpdateTrajectorySpline_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "UpdateTrajectorySpline");
+
+	Params::UGA_Commando_FragGrenade_WithTrajectory_C_UpdateTrajectorySpline_Params Parms{};
 
 	Parms.CallFunc_SelectFloat_ReturnValue = CallFunc_SelectFloat_ReturnValue;
 	Parms.CallFunc_SpawnLocationAndRotation_OutLoc = CallFunc_SpawnLocationAndRotation_OutLoc;
@@ -192,9 +229,12 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::UpdateTrajectorySpline(float Cal
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::SetupDummyProjectile(const struct FTransform& CallFunc_GetTransform_ReturnValue, enum class ECollisionChannel CallFunc_GetCollisionObjectType_ReturnValue, float CallFunc_GetScaledCapsuleSize_OutRadius, float CallFunc_GetScaledCapsuleSize_OutHalfHeight, float CallFunc_FMax_ReturnValue, float CallFunc_GetGravityZ_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class AActor* CallFunc_FinishSpawningActor_ReturnValue, class ABP_ProjectileTrajectory_C* K2Node_DynamicCast_AsBP_Projectile_Trajectory, bool K2Node_DynamicCast_bSuccess, const struct FTransform& CallFunc_GetTransform_ReturnValue_1, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue, class AFortProjectileBase* CallFunc_FinishSpawningActor_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "SetupDummyProjectile");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_SetupDummyProjectile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "SetupDummyProjectile");
+
+	Params::UGA_Commando_FragGrenade_WithTrajectory_C_SetupDummyProjectile_Params Parms{};
 
 	Parms.CallFunc_GetTransform_ReturnValue = CallFunc_GetTransform_ReturnValue;
 	Parms.CallFunc_GetCollisionObjectType_ReturnValue = CallFunc_GetCollisionObjectType_ReturnValue;
@@ -233,9 +273,12 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::SetupDummyProjectile(const struc
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::SpawnLocationAndRotation(struct FVector* OutLoc, struct FRotator* OutRot, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, const struct FRotator& CallFunc_GetDefaultTargetingRotation_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_RotateAngleAxis_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "SpawnLocationAndRotation");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_SpawnLocationAndRotation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "SpawnLocationAndRotation");
+
+	Params::UGA_Commando_FragGrenade_WithTrajectory_C_SpawnLocationAndRotation_Params Parms{};
 
 	Parms.CallFunc_K2_GetActorRotation_ReturnValue = CallFunc_K2_GetActorRotation_ReturnValue;
 	Parms.CallFunc_GetDefaultTargetingRotation_ReturnValue = CallFunc_GetDefaultTargetingRotation_ReturnValue;
@@ -249,10 +292,10 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::SpawnLocationAndRotation(struct 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (OutLoc != nullptr)
-		*OutLoc = Parms.OutLoc;
+		*OutLoc = std::move(Parms.OutLoc);
 
 	if (OutRot != nullptr)
-		*OutRot = Parms.OutRot;
+		*OutRot = std::move(Parms.OutRot);
 
 }
 
@@ -284,9 +327,12 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::SpawnLocationAndRotation(struct 
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::SetupAbility(class UAbilitySystemComponent* AbilitySystemComponentRef, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, int32 CallFunc_SelectInt_ReturnValue, int32 CallFunc_SelectInt_ReturnValue_1, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput_1, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue_1, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput_2, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue_2, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput_3, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue_3, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput_4, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue_4, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput_5, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue_5, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput_6, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue_6, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput_7, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue_7, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput_8, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue_8)
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "SetupAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_SetupAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "SetupAbility");
+
+	Params::UGA_Commando_FragGrenade_WithTrajectory_C_SetupAbility_Params Parms{};
 
 	Parms.AbilitySystemComponentRef = AbilitySystemComponentRef;
 	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput;
@@ -324,21 +370,24 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::SetupAbility(class UAbilitySyste
 // struct FFortGameplayEffectContainerSpecExplosion_Gameplay_Spec                                          (Parm, OutParm)
 // float                              Projectile_Gravity_Scale                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_CalcGrenadeSpeedFromPitch_GrenadeSpeed                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortGameplayEffectContainerSpecCallFunc_MakeGameplayEffectContainerSpec_ReturnValue             ()
-// struct FScalableFloat              CallFunc_EvaluatePerkTierBalanceValue_Balance_Value              ()
+// struct FFortGameplayEffectContainerSpecCallFunc_MakeGameplayEffectContainerSpec_ReturnValue             (None)
+// struct FScalableFloat              CallFunc_EvaluatePerkTierBalanceValue_Balance_Value              (None)
 // float                              CallFunc_GetRangeFromGameplayEffectContainerSpec_Range           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Add_FloatFloat_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortGameplayEffectContainerCallFunc_BP_GetGameplayEffectContainer_ReturnValue               ()
+// struct FFortGameplayEffectContainerCallFunc_BP_GetGameplayEffectContainer_ReturnValue               (None)
 // float                              CallFunc_GetRangeFromGameplayEffectContainer_Range               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FScalableFloat              K2Node_MakeStruct_ScalableFloat                                  ()
-// struct FFortGameplayEffectContainerCallFunc_ReplaceRangeInGameplayEffectContainer_ReturnValue       ()
+// struct FScalableFloat              K2Node_MakeStruct_ScalableFloat                                  (None)
+// struct FFortGameplayEffectContainerCallFunc_ReplaceRangeInGameplayEffectContainer_ReturnValue       (None)
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::SetupGrenade(float AimPitch, class UClass** Base_Grenade, float* Projectile_Speed, struct FFortGameplayEffectContainerSpec* Explosion_Gameplay_Spec, float* Projectile_Gravity_Scale, float CallFunc_CalcGrenadeSpeedFromPitch_GrenadeSpeed, const struct FFortGameplayEffectContainerSpec& CallFunc_MakeGameplayEffectContainerSpec_ReturnValue, const struct FScalableFloat& CallFunc_EvaluatePerkTierBalanceValue_Balance_Value, float CallFunc_GetRangeFromGameplayEffectContainerSpec_Range, float CallFunc_Add_FloatFloat_ReturnValue, const struct FFortGameplayEffectContainer& CallFunc_BP_GetGameplayEffectContainer_ReturnValue, float CallFunc_GetRangeFromGameplayEffectContainer_Range, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FScalableFloat& K2Node_MakeStruct_ScalableFloat, const struct FFortGameplayEffectContainer& CallFunc_ReplaceRangeInGameplayEffectContainer_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "SetupGrenade");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_SetupGrenade_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "SetupGrenade");
+
+	Params::UGA_Commando_FragGrenade_WithTrajectory_C_SetupGrenade_Params Parms{};
 
 	Parms.AimPitch = AimPitch;
 	Parms.CallFunc_CalcGrenadeSpeedFromPitch_GrenadeSpeed = CallFunc_CalcGrenadeSpeedFromPitch_GrenadeSpeed;
@@ -361,7 +410,7 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::SetupGrenade(float AimPitch, cla
 		*Projectile_Speed = Parms.Projectile_Speed;
 
 	if (Explosion_Gameplay_Spec != nullptr)
-		*Explosion_Gameplay_Spec = Parms.Explosion_Gameplay_Spec;
+		*Explosion_Gameplay_Spec = std::move(Parms.Explosion_Gameplay_Spec);
 
 	if (Projectile_Gravity_Scale != nullptr)
 		*Projectile_Gravity_Scale = Parms.Projectile_Gravity_Scale;
@@ -375,12 +424,14 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::SetupGrenade(float AimPitch, cla
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::OnFinish_F5D87C9E46378707AE4C79B3A42F5A45()
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "OnFinish_F5D87C9E46378707AE4C79B3A42F5A45");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_OnFinish_F5D87C9E46378707AE4C79B3A42F5A45_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "OnFinish_F5D87C9E46378707AE4C79B3A42F5A45");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -391,12 +442,14 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::OnFinish_F5D87C9E46378707AE4C79B
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::OnCancelled_854170AF4268B06A435A3AA33232C5BF()
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "OnCancelled_854170AF4268B06A435A3AA33232C5BF");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_OnCancelled_854170AF4268B06A435A3AA33232C5BF_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "OnCancelled_854170AF4268B06A435A3AA33232C5BF");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -407,12 +460,14 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::OnCancelled_854170AF4268B06A435A
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::OnInterrupted_854170AF4268B06A435A3AA33232C5BF()
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "OnInterrupted_854170AF4268B06A435A3AA33232C5BF");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_OnInterrupted_854170AF4268B06A435A3AA33232C5BF_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "OnInterrupted_854170AF4268B06A435A3AA33232C5BF");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -423,12 +478,14 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::OnInterrupted_854170AF4268B06A43
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::OnBlendOut_854170AF4268B06A435A3AA33232C5BF()
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "OnBlendOut_854170AF4268B06A435A3AA33232C5BF");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_OnBlendOut_854170AF4268B06A435A3AA33232C5BF_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "OnBlendOut_854170AF4268B06A435A3AA33232C5BF");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -439,12 +496,14 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::OnBlendOut_854170AF4268B06A435A3
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::OnCompleted_854170AF4268B06A435A3AA33232C5BF()
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "OnCompleted_854170AF4268B06A435A3AA33232C5BF");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_OnCompleted_854170AF4268B06A435A3AA33232C5BF_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "OnCompleted_854170AF4268B06A435A3AA33232C5BF");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -455,12 +514,14 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::OnCompleted_854170AF4268B06A435A
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::OnFinish_1C6A100D44D1ACE5BBB57DAEDB3561CB()
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "OnFinish_1C6A100D44D1ACE5BBB57DAEDB3561CB");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_OnFinish_1C6A100D44D1ACE5BBB57DAEDB3561CB_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "OnFinish_1C6A100D44D1ACE5BBB57DAEDB3561CB");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -473,9 +534,12 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::OnFinish_1C6A100D44D1ACE5BBB57DA
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::Completed_BF65CDBE4F9E98E9174850B85775A15B(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "Completed_BF65CDBE4F9E98E9174850B85775A15B");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_Completed_BF65CDBE4F9E98E9174850B85775A15B_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "Completed_BF65CDBE4F9E98E9174850B85775A15B");
+
+	Params::UGA_Commando_FragGrenade_WithTrajectory_C_Completed_BF65CDBE4F9E98E9174850B85775A15B_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -493,9 +557,12 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::Completed_BF65CDBE4F9E98E9174850
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::Cancelled_BF65CDBE4F9E98E9174850B85775A15B(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "Cancelled_BF65CDBE4F9E98E9174850B85775A15B");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_Cancelled_BF65CDBE4F9E98E9174850B85775A15B_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "Cancelled_BF65CDBE4F9E98E9174850B85775A15B");
+
+	Params::UGA_Commando_FragGrenade_WithTrajectory_C_Cancelled_BF65CDBE4F9E98E9174850B85775A15B_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -513,9 +580,12 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::Cancelled_BF65CDBE4F9E98E9174850
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::Triggered_BF65CDBE4F9E98E9174850B85775A15B(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "Triggered_BF65CDBE4F9E98E9174850B85775A15B");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_Triggered_BF65CDBE4F9E98E9174850B85775A15B_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "Triggered_BF65CDBE4F9E98E9174850B85775A15B");
+
+	Params::UGA_Commando_FragGrenade_WithTrajectory_C_Triggered_BF65CDBE4F9E98E9174850B85775A15B_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -531,12 +601,14 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::Triggered_BF65CDBE4F9E98E9174850
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::OnAbilityInputReleased()
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "OnAbilityInputReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_OnAbilityInputReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "OnAbilityInputReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -548,9 +620,12 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::OnAbilityInputReleased()
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "K2_OnEndAbility");
+
+	Params::UGA_Commando_FragGrenade_WithTrajectory_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -565,12 +640,14 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::K2_OnEndAbility(bool bWasCancell
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::CleanupTrajectoryDisplay()
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "CleanupTrajectoryDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_CleanupTrajectoryDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "CleanupTrajectoryDisplay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -581,12 +658,14 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::CleanupTrajectoryDisplay()
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -597,12 +676,14 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::K2_ActivateAbility()
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::TossGrenade()
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "TossGrenade");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_TossGrenade_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "TossGrenade");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -613,12 +694,14 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::TossGrenade()
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::ServerSpawnProjectile()
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "ServerSpawnProjectile");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_ServerSpawnProjectile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "ServerSpawnProjectile");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -643,7 +726,7 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::ServerSpawnProjectile()
 // struct FGameplayTag                K2Node_CustomEvent_ApplicationTag                                (NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_6                           (ZeroConstructor, NoDestructor)
 // struct FGameplayTag                Temp_struct_Variable                                             (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           ()
+// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           (None)
 // class UAbilitySystemComponent*     CallFunc_GetAbilitySystemComponent_ReturnValue                   (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAbilitySystemComponent*     CallFunc_ActiveAbilitySetup_AbilitySystemOut                     (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_SpawnLocationAndRotation_OutLoc                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -653,7 +736,7 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::ServerSpawnProjectile()
 // float                              CallFunc_BreakRotator_Yaw                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UClass*                      CallFunc_SetupGrenade_Base_Grenade                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_SetupGrenade_Projectile_Speed                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortGameplayEffectContainerSpecCallFunc_SetupGrenade_Explosion_Gameplay_Spec                    ()
+// struct FFortGameplayEffectContainerSpecCallFunc_SetupGrenade_Explosion_Gameplay_Spec                    (None)
 // float                              CallFunc_SetupGrenade_Projectile_Gravity_Scale                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FTimerHandle                CallFunc_K2_SetTimer_ReturnValue                                 (NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_bWasCancelled                                       (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -676,9 +759,12 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::ServerSpawnProjectile()
 
 void UGA_Commando_FragGrenade_WithTrajectory_C::ExecuteUbergraph_GA_Commando_FragGrenade_WithTrajectory(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UAbilityTask_WaitDelay* CallFunc_WaitDelay_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, bool CallFunc_IsValid_ReturnValue, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_2, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_2, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_1, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, const struct FGameplayTag& Temp_struct_Variable, const struct FGameplayAbilityTargetDataHandle& Temp_struct_Variable_1, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, class UAbilitySystemComponent* CallFunc_ActiveAbilitySetup_AbilitySystemOut, const struct FVector& CallFunc_SpawnLocationAndRotation_OutLoc, const struct FRotator& CallFunc_SpawnLocationAndRotation_OutRot, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, class UClass* CallFunc_SetupGrenade_Base_Grenade, float CallFunc_SetupGrenade_Projectile_Speed, const struct FFortGameplayEffectContainerSpec& CallFunc_SetupGrenade_Explosion_Gameplay_Spec, float CallFunc_SetupGrenade_Projectile_Gravity_Scale, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, bool K2Node_Event_bWasCancelled, class UAbilityTask_PlayMontageAndWait* CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsLocallyControlled_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, class UAbilityTask_WaitDelay* CallFunc_WaitDelay_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_8, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_SetHolsterWeaponWithName_IsWeaponHolstered, bool CallFunc_SetHolsterWeaponWithName_OperationSuccessful, class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageWaitTarget_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_IsServer_ReturnValue, bool CallFunc_CommitAbilityWithEvent_Passed, bool CallFunc_SetHolsterWeaponWithName_IsWeaponHolstered_1, bool CallFunc_SetHolsterWeaponWithName_OperationSuccessful_1)
 {
-	static auto Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "ExecuteUbergraph_GA_Commando_FragGrenade_WithTrajectory");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Commando_FragGrenade_WithTrajectory_C_ExecuteUbergraph_GA_Commando_FragGrenade_WithTrajectory_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Commando_FragGrenade_WithTrajectory_C", "ExecuteUbergraph_GA_Commando_FragGrenade_WithTrajectory");
+
+	Params::UGA_Commando_FragGrenade_WithTrajectory_C_ExecuteUbergraph_GA_Commando_FragGrenade_WithTrajectory_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -734,6 +820,4 @@ void UGA_Commando_FragGrenade_WithTrajectory_C::ExecuteUbergraph_GA_Commando_Fra
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

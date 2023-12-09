@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Galileo_Lobster_Passive.GA_Galileo_Lobster_Passive_C
+// (None)
+
+class UClass* UGA_Galileo_Lobster_Passive_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Galileo_Lobster_Passive_C");
+
+	return Clss;
+}
+
+
+// GA_Galileo_Lobster_Passive_C GA_Galileo_Lobster_Passive.Default__GA_Galileo_Lobster_Passive_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Galileo_Lobster_Passive_C* UGA_Galileo_Lobster_Passive_C::GetDefaultObj()
+{
+	static class UGA_Galileo_Lobster_Passive_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Galileo_Lobster_Passive_C*>(UGA_Galileo_Lobster_Passive_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Galileo_Lobster_Passive.GA_Galileo_Lobster_Passive_C.Added_838B8ED24C4D728B5BB3BB8B8253BE08
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UGA_Galileo_Lobster_Passive_C::Added_838B8ED24C4D728B5BB3BB8B8253BE08()
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "Added_838B8ED24C4D728B5BB3BB8B8253BE08");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Passive_C_Added_838B8ED24C4D728B5BB3BB8B8253BE08_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "Added_838B8ED24C4D728B5BB3BB8B8253BE08");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UGA_Galileo_Lobster_Passive_C::Added_838B8ED24C4D728B5BB3BB8B8253BE08()
 
 void UGA_Galileo_Lobster_Passive_C::Removed_AAEFAAA5419B598A3E4ADA8A42217856()
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "Removed_AAEFAAA5419B598A3E4ADA8A42217856");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Passive_C_Removed_AAEFAAA5419B598A3E4ADA8A42217856_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "Removed_AAEFAAA5419B598A3E4ADA8A42217856");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UGA_Galileo_Lobster_Passive_C::Removed_AAEFAAA5419B598A3E4ADA8A42217856()
 
 void UGA_Galileo_Lobster_Passive_C::Added_E9A8A7364DBFC90032650CA00A7539D1()
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "Added_E9A8A7364DBFC90032650CA00A7539D1");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Passive_C_Added_E9A8A7364DBFC90032650CA00A7539D1_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "Added_E9A8A7364DBFC90032650CA00A7539D1");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void UGA_Galileo_Lobster_Passive_C::Added_E9A8A7364DBFC90032650CA00A7539D1()
 
 void UGA_Galileo_Lobster_Passive_C::Removed_CE5C9557470B10E5B9612EAC35369FE7()
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "Removed_CE5C9557470B10E5B9612EAC35369FE7");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Passive_C_Removed_CE5C9557470B10E5B9612EAC35369FE7_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "Removed_CE5C9557470B10E5B9612EAC35369FE7");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -93,9 +126,12 @@ void UGA_Galileo_Lobster_Passive_C::Removed_CE5C9557470B10E5B9612EAC35369FE7()
 
 void UGA_Galileo_Lobster_Passive_C::OnDied_Event_0(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "OnDied_Event_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Passive_C_OnDied_Event_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "OnDied_Event_0");
+
+	Params::UGA_Galileo_Lobster_Passive_C_OnDied_Event_0_Params Parms{};
 
 	Parms.DamagedActor = DamagedActor;
 	Parms.Damage = Damage;
@@ -118,9 +154,12 @@ void UGA_Galileo_Lobster_Passive_C::OnDied_Event_0(class AActor* DamagedActor, f
 
 void UGA_Galileo_Lobster_Passive_C::OnPawnLanded_Event_0(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "OnPawnLanded_Event_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Passive_C_OnPawnLanded_Event_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "OnPawnLanded_Event_0");
+
+	Params::UGA_Galileo_Lobster_Passive_C_OnPawnLanded_Event_0_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -136,9 +175,12 @@ void UGA_Galileo_Lobster_Passive_C::OnPawnLanded_Event_0(struct FHitResult& Hit)
 
 void UGA_Galileo_Lobster_Passive_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Passive_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "K2_OnEndAbility");
+
+	Params::UGA_Galileo_Lobster_Passive_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -153,12 +195,14 @@ void UGA_Galileo_Lobster_Passive_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Galileo_Lobster_Passive_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Passive_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -204,9 +248,12 @@ void UGA_Galileo_Lobster_Passive_C::K2_ActivateAbility()
 
 void UGA_Galileo_Lobster_Passive_C::ExecuteUbergraph_GA_Galileo_Lobster_Passive(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, class UAbilityTask_WaitGameplayTagAdded* CallFunc_WaitGameplayTagAdd_ReturnValue, class UAbilityTask_WaitGameplayTagRemoved* CallFunc_WaitGameplayTagRemove_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAnyMatchingGameplayTags_self_CastInput, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, class AActor* K2Node_CustomEvent_DamagedActor, float K2Node_CustomEvent_Damage, class AController* K2Node_CustomEvent_InstigatedBy, class AActor* K2Node_CustomEvent_DamageCauser, const struct FVector& K2Node_CustomEvent_HitLocation, class UPrimitiveComponent* K2Node_CustomEvent_FHitComponent, class FName K2Node_CustomEvent_BoneName, const struct FVector& K2Node_CustomEvent_Momentum, class UAbilityTask_WaitGameplayTagAdded* CallFunc_WaitGameplayTagAdd_ReturnValue_1, class UAbilityTask_WaitGameplayTagRemoved* CallFunc_WaitGameplayTagRemove_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAnyMatchingGameplayTags_self_CastInput_1, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue_1, const struct FHitResult& K2Node_CustomEvent_Hit, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, bool K2Node_Event_bWasCancelled, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "ExecuteUbergraph_GA_Galileo_Lobster_Passive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Passive_C_ExecuteUbergraph_GA_Galileo_Lobster_Passive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Passive_C", "ExecuteUbergraph_GA_Galileo_Lobster_Passive");
+
+	Params::UGA_Galileo_Lobster_Passive_C_ExecuteUbergraph_GA_Galileo_Lobster_Passive_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -250,6 +297,4 @@ void UGA_Galileo_Lobster_Passive_C::ExecuteUbergraph_GA_Galileo_Lobster_Passive(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

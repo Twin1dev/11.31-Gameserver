@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -22,13 +19,6 @@ struct UWinterQuestPresentTag_C_PreConstruct_Params
 {
 public:
 	bool                                         IsDesignTime;                                      // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function WinterQuestPresentTag.WinterQuestPresentTag_C.Construct
-struct UWinterQuestPresentTag_C_Construct_Params
-{
-public:
 };
 
 // 0x10 (0x10 - 0x0)
@@ -59,19 +49,19 @@ public:
 	float                                        K2Node_Select_Default;                             // 0x54(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_Select_Default_1;                           // 0x58(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable;                                // 0x5C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_21E6[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4DD1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FMargin                               K2Node_MakeStruct_Margin;                          // 0x60(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Temp_bool_Variable_1;                              // 0x70(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Temp_bool_Variable_2;                              // 0x71(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Temp_bool_Variable_3;                              // 0x72(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Temp_bool_Variable_4;                              // 0x73(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         K2Node_Event_IsDesignTime;                         // 0x74(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_21E7[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4DD2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_RandomInteger_ReturnValue;                // 0x78(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_21E8[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4DD3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInstanceDynamic*              CallFunc_GetDynamicMaterial_ReturnValue;           // 0x80(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Variable_2;                               // 0x88(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_21E9[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4DD4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UOverlaySlot*                          CallFunc_SlotAsOverlaySlot_ReturnValue;            // 0x90(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          K2Node_Select_Default_2;                           // 0x98(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          K2Node_Event_CharacterName;                        // 0xA8(0x10)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -80,17 +70,15 @@ public:
 	bool                                         CallFunc_LinearColor_IsNearEqual_ReturnValue_2;    // 0xBA(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_LinearColor_IsNearEqual_ReturnValue_3;    // 0xBB(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_LinearColor_IsNearEqual_ReturnValue_4;    // 0xBC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_21EA[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  K2Node_Select_Default_3;                           // 0xC0(0x18)()
-	class FText                                  K2Node_Select_Default_4;                           // 0xD8(0x18)()
-	class FText                                  K2Node_Select_Default_5;                           // 0xF0(0x18)()
-	class FText                                  K2Node_Select_Default_6;                           // 0x108(0x18)()
-	class FText                                  K2Node_Select_Default_7;                           // 0x120(0x18)()
+	uint8                                        Pad_4DD5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  K2Node_Select_Default_3;                           // 0xC0(0x18)(None)
+	class FText                                  K2Node_Select_Default_4;                           // 0xD8(0x18)(None)
+	class FText                                  K2Node_Select_Default_5;                           // 0xF0(0x18)(None)
+	class FText                                  K2Node_Select_Default_6;                           // 0x108(0x18)(None)
+	class FText                                  K2Node_Select_Default_7;                           // 0x120(0x18)(None)
 };
 
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

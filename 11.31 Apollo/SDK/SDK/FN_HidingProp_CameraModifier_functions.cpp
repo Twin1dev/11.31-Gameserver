@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass HidingProp_CameraModifier.HidingProp_CameraModifier_C
+// (None)
+
+class UClass* UHidingProp_CameraModifier_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("HidingProp_CameraModifier_C");
+
+	return Clss;
+}
+
+
+// HidingProp_CameraModifier_C HidingProp_CameraModifier.Default__HidingProp_CameraModifier_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UHidingProp_CameraModifier_C* UHidingProp_CameraModifier_C::GetDefaultObj()
+{
+	static class UHidingProp_CameraModifier_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UHidingProp_CameraModifier_C*>(UHidingProp_CameraModifier_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function HidingProp_CameraModifier.HidingProp_CameraModifier_C.BlueprintModifyCamera
@@ -38,9 +63,12 @@ namespace SDK
 
 void UHidingProp_CameraModifier_C::BlueprintModifyCamera(float DeltaTime, const struct FVector& ViewLocation, const struct FRotator& ViewRotation, float FOV, struct FVector* NewViewLocation, struct FRotator* NewViewRotation, float* NewFOV, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_FClamp_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HidingProp_CameraModifier_C", "BlueprintModifyCamera");
+	static class UFunction* Func = nullptr;
 
-	Params::UHidingProp_CameraModifier_C_BlueprintModifyCamera_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HidingProp_CameraModifier_C", "BlueprintModifyCamera");
+
+	Params::UHidingProp_CameraModifier_C_BlueprintModifyCamera_Params Parms{};
 
 	Parms.DeltaTime = DeltaTime;
 	Parms.ViewLocation = ViewLocation;
@@ -60,10 +88,10 @@ void UHidingProp_CameraModifier_C::BlueprintModifyCamera(float DeltaTime, const 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (NewViewLocation != nullptr)
-		*NewViewLocation = Parms.NewViewLocation;
+		*NewViewLocation = std::move(Parms.NewViewLocation);
 
 	if (NewViewRotation != nullptr)
-		*NewViewRotation = Parms.NewViewRotation;
+		*NewViewRotation = std::move(Parms.NewViewRotation);
 
 	if (NewFOV != nullptr)
 		*NewFOV = Parms.NewFOV;
@@ -72,6 +100,4 @@ void UHidingProp_CameraModifier_C::BlueprintModifyCamera(float DeltaTime, const 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

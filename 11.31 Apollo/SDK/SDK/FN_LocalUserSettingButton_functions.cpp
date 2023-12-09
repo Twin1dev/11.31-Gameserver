@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass LocalUserSettingButton.LocalUserSettingButton_C
+// (None)
+
+class UClass* ULocalUserSettingButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LocalUserSettingButton_C");
+
+	return Clss;
+}
+
+
+// LocalUserSettingButton_C LocalUserSettingButton.Default__LocalUserSettingButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULocalUserSettingButton_C* ULocalUserSettingButton_C::GetDefaultObj()
+{
+	static class ULocalUserSettingButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULocalUserSettingButton_C*>(ULocalUserSettingButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function LocalUserSettingButton.LocalUserSettingButton_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void ULocalUserSettingButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("LocalUserSettingButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::ULocalUserSettingButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LocalUserSettingButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void ULocalUserSettingButton_C::BP_OnHovered()
 
 void ULocalUserSettingButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("LocalUserSettingButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::ULocalUserSettingButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LocalUserSettingButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +85,12 @@ void ULocalUserSettingButton_C::BP_OnUnhovered()
 
 void ULocalUserSettingButton_C::ExecuteUbergraph_LocalUserSettingButton(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("LocalUserSettingButton_C", "ExecuteUbergraph_LocalUserSettingButton");
+	static class UFunction* Func = nullptr;
 
-	Params::ULocalUserSettingButton_C_ExecuteUbergraph_LocalUserSettingButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LocalUserSettingButton_C", "ExecuteUbergraph_LocalUserSettingButton");
+
+	Params::ULocalUserSettingButton_C_ExecuteUbergraph_LocalUserSettingButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -70,6 +102,4 @@ void ULocalUserSettingButton_C::ExecuteUbergraph_LocalUserSettingButton(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

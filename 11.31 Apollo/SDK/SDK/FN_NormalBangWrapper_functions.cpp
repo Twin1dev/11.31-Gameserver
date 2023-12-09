@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass NormalBangWrapper.NormalBangWrapper_C
+// (None)
+
+class UClass* UNormalBangWrapper_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("NormalBangWrapper_C");
+
+	return Clss;
+}
+
+
+// NormalBangWrapper_C NormalBangWrapper.Default__NormalBangWrapper_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UNormalBangWrapper_C* UNormalBangWrapper_C::GetDefaultObj()
+{
+	static class UNormalBangWrapper_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UNormalBangWrapper_C*>(UNormalBangWrapper_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function NormalBangWrapper.NormalBangWrapper_C.SetShouldSuppressBang
@@ -26,9 +51,12 @@ namespace SDK
 
 void UNormalBangWrapper_C::SetShouldSuppressBang(bool ShouldSuppressBang, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("NormalBangWrapper_C", "SetShouldSuppressBang");
+	static class UFunction* Func = nullptr;
 
-	Params::UNormalBangWrapper_C_SetShouldSuppressBang_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("NormalBangWrapper_C", "SetShouldSuppressBang");
+
+	Params::UNormalBangWrapper_C_SetShouldSuppressBang_Params Parms{};
 
 	Parms.ShouldSuppressBang = ShouldSuppressBang;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -51,9 +79,12 @@ void UNormalBangWrapper_C::SetShouldSuppressBang(bool ShouldSuppressBang, bool T
 
 void UNormalBangWrapper_C::InitialReset(float CallFunc_GetEndTime_ReturnValue, float CallFunc_GetEndTime_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("NormalBangWrapper_C", "InitialReset");
+	static class UFunction* Func = nullptr;
 
-	Params::UNormalBangWrapper_C_InitialReset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("NormalBangWrapper_C", "InitialReset");
+
+	Params::UNormalBangWrapper_C_InitialReset_Params Parms{};
 
 	Parms.CallFunc_GetEndTime_ReturnValue = CallFunc_GetEndTime_ReturnValue;
 	Parms.CallFunc_GetEndTime_ReturnValue_1 = CallFunc_GetEndTime_ReturnValue_1;
@@ -71,12 +102,14 @@ void UNormalBangWrapper_C::InitialReset(float CallFunc_GetEndTime_ReturnValue, f
 
 void UNormalBangWrapper_C::TriggerReset()
 {
-	static auto Func = Class->GetFunction("NormalBangWrapper_C", "TriggerReset");
+	static class UFunction* Func = nullptr;
 
-	Params::UNormalBangWrapper_C_TriggerReset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("NormalBangWrapper_C", "TriggerReset");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -89,9 +122,12 @@ void UNormalBangWrapper_C::TriggerReset()
 
 void UNormalBangWrapper_C::TriggerIntro(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("NormalBangWrapper_C", "TriggerIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UNormalBangWrapper_C_TriggerIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("NormalBangWrapper_C", "TriggerIntro");
+
+	Params::UNormalBangWrapper_C_TriggerIntro_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 	Parms.CallFunc_PlayAnimation_ReturnValue_1 = CallFunc_PlayAnimation_ReturnValue_1;
@@ -108,9 +144,12 @@ void UNormalBangWrapper_C::TriggerIntro(class UUMGSequencePlayer* CallFunc_PlayA
 
 void UNormalBangWrapper_C::Adjust_Bang_Image_Translation(const struct FVector2D& Translation)
 {
-	static auto Func = Class->GetFunction("NormalBangWrapper_C", "Adjust Bang Image Translation");
+	static class UFunction* Func = nullptr;
 
-	Params::UNormalBangWrapper_C_Adjust_Bang_Image_Translation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("NormalBangWrapper_C", "Adjust Bang Image Translation");
+
+	Params::UNormalBangWrapper_C_Adjust_Bang_Image_Translation_Params Parms{};
 
 	Parms.Translation = Translation;
 
@@ -136,9 +175,12 @@ void UNormalBangWrapper_C::Adjust_Bang_Image_Translation(const struct FVector2D&
 
 void UNormalBangWrapper_C::Update_Bang_Icon_Version(int32 InCount, int32 Temp_int_Variable, int32 Temp_int_Variable_1, bool Temp_bool_Variable, int32 Temp_int_Variable_2, int32 Temp_int_Variable_3, bool Temp_bool_Variable_1, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int32 K2Node_Select_Default, int32 K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("NormalBangWrapper_C", "Update Bang Icon Version");
+	static class UFunction* Func = nullptr;
 
-	Params::UNormalBangWrapper_C_Update_Bang_Icon_Version_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("NormalBangWrapper_C", "Update Bang Icon Version");
+
+	Params::UNormalBangWrapper_C_Update_Bang_Icon_Version_Params Parms{};
 
 	Parms.InCount = InCount;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -164,9 +206,12 @@ void UNormalBangWrapper_C::Update_Bang_Icon_Version(int32 InCount, int32 Temp_in
 
 void UNormalBangWrapper_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 {
-	static auto Func = Class->GetFunction("NormalBangWrapper_C", "SetTutorialBorderStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UNormalBangWrapper_C_SetTutorialBorderStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("NormalBangWrapper_C", "SetTutorialBorderStyle");
+
+	Params::UNormalBangWrapper_C_SetTutorialBorderStyle_Params Parms{};
 
 	Parms.BorderStyle = BorderStyle;
 
@@ -181,12 +226,14 @@ void UNormalBangWrapper_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 
 void UNormalBangWrapper_C::OnStopCallout()
 {
-	static auto Func = Class->GetFunction("NormalBangWrapper_C", "OnStopCallout");
+	static class UFunction* Func = nullptr;
 
-	Params::UNormalBangWrapper_C_OnStopCallout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("NormalBangWrapper_C", "OnStopCallout");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -199,9 +246,12 @@ void UNormalBangWrapper_C::OnStopCallout()
 
 void UNormalBangWrapper_C::OnStartCallout(class FName TutorialObjectiveName, enum class ETutorialType TutorialType)
 {
-	static auto Func = Class->GetFunction("NormalBangWrapper_C", "OnStartCallout");
+	static class UFunction* Func = nullptr;
 
-	Params::UNormalBangWrapper_C_OnStartCallout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("NormalBangWrapper_C", "OnStartCallout");
+
+	Params::UNormalBangWrapper_C_OnStartCallout_Params Parms{};
 
 	Parms.TutorialObjectiveName = TutorialObjectiveName;
 	Parms.TutorialType = TutorialType;
@@ -218,9 +268,12 @@ void UNormalBangWrapper_C::OnStartCallout(class FName TutorialObjectiveName, enu
 
 void UNormalBangWrapper_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("NormalBangWrapper_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UNormalBangWrapper_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("NormalBangWrapper_C", "PreConstruct");
+
+	Params::UNormalBangWrapper_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -237,9 +290,12 @@ void UNormalBangWrapper_C::PreConstruct(bool IsDesignTime)
 
 void UNormalBangWrapper_C::OnBangStateChanged(bool bEnabled, int32 Count)
 {
-	static auto Func = Class->GetFunction("NormalBangWrapper_C", "OnBangStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UNormalBangWrapper_C_OnBangStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("NormalBangWrapper_C", "OnBangStateChanged");
+
+	Params::UNormalBangWrapper_C_OnBangStateChanged_Params Parms{};
 
 	Parms.bEnabled = bEnabled;
 	Parms.Count = Count;
@@ -263,13 +319,16 @@ void UNormalBangWrapper_C::OnBangStateChanged(bool bEnabled, int32 Count)
 // enum class ETutorialType           K2Node_Event_TutorialType                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 
 void UNormalBangWrapper_C::ExecuteUbergraph_NormalBangWrapper(int32 EntryPoint, bool K2Node_Event_bEnabled, int32 K2Node_Event_Count, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default, class FName K2Node_Event_TutorialObjectiveName, enum class ETutorialType K2Node_Event_TutorialType, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool K2Node_Event_IsDesignTime, class FText CallFunc_Conv_IntToText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("NormalBangWrapper_C", "ExecuteUbergraph_NormalBangWrapper");
+	static class UFunction* Func = nullptr;
 
-	Params::UNormalBangWrapper_C_ExecuteUbergraph_NormalBangWrapper_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("NormalBangWrapper_C", "ExecuteUbergraph_NormalBangWrapper");
+
+	Params::UNormalBangWrapper_C_ExecuteUbergraph_NormalBangWrapper_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bEnabled = K2Node_Event_bEnabled;
@@ -290,6 +349,4 @@ void UNormalBangWrapper_C::ExecuteUbergraph_NormalBangWrapper(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

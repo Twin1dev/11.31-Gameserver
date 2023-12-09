@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ItemDetailsHeader.ItemDetailsHeader_C
+// (None)
+
+class UClass* UItemDetailsHeader_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemDetailsHeader_C");
+
+	return Clss;
+}
+
+
+// ItemDetailsHeader_C ItemDetailsHeader.Default__ItemDetailsHeader_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemDetailsHeader_C* UItemDetailsHeader_C::GetDefaultObj()
+{
+	static class UItemDetailsHeader_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemDetailsHeader_C*>(UItemDetailsHeader_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ItemDetailsHeader.ItemDetailsHeader_C.SetStyles
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UItemDetailsHeader_C::SetStyles()
 {
-	static auto Func = Class->GetFunction("ItemDetailsHeader_C", "SetStyles");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemDetailsHeader_C_SetStyles_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemDetailsHeader_C", "SetStyles");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,7 +84,7 @@ void UItemDetailsHeader_C::SetStyles()
 // bool                               CallFunc_Not_PreBool_ReturnValue_2                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortItemDefinition*         CallFunc_GetItemDefinitionBP_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortRarityItemData         CallFunc_BPGetRarityDataForItemDef_ReturnValue                   ()
+// struct FFortRarityItemData         CallFunc_BPGetRarityDataForItemDef_ReturnValue                   (None)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -85,9 +112,9 @@ void UItemDetailsHeader_C::SetStyles()
 // enum class ESlateVisibility        Temp_byte_Variable_7                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default_4                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetNumInStack_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // int32                              CallFunc_GetLoadedAmmo_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            (None)
 // class UFortItemDefinition*         CallFunc_GetItemDefinitionBP_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortWeaponItemDefinition*   K2Node_DynamicCast_AsFort_Weapon_Item_Definition_1               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -103,9 +130,12 @@ void UItemDetailsHeader_C::SetStyles()
 
 void UItemDetailsHeader_C::UpdateItemsForWidgets(enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, TArray<enum class EFortItemType>& K2Node_MakeArray_Array, bool Temp_bool_Variable, enum class EFortItemType CallFunc_GetType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue_1, class UFortItemDefinition* CallFunc_GetSchematicCraftingResultBP_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class UFortWeaponItemDefinition* K2Node_DynamicCast_AsFort_Weapon_Item_Definition, bool K2Node_DynamicCast_bSuccess, TArray<enum class EFortItemType>& K2Node_MakeArray_Array_1, bool CallFunc_IsMobileGame_ReturnValue_2, bool CallFunc_Not_PreBool_ReturnValue_1, TArray<enum class EFortItemType>& K2Node_MakeArray_Array_2, enum class EFortItemType CallFunc_GetSchematicResultType_ReturnValue, class UFortItemDefinition* CallFunc_GetSchematicCraftingResultBP_ReturnValue_1, enum class EFortItemType CallFunc_GetType_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_1, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, const struct FFortRarityItemData& CallFunc_BPGetRarityDataForItemDef_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable, enum class EFortItemType K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_Array_Contains_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Array_Contains_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_1, bool Temp_bool_Variable_2, bool CallFunc_BooleanAND_ReturnValue_2, enum class ESlateVisibility K2Node_Select_Default_1, enum class EFortItemTier CallFunc_GetTier_ReturnValue, int32 CallFunc_Convert_Tier_To_Integer_Numeric_Tier, bool CallFunc_IsValid_ReturnValue_2, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_3, enum class ESlateVisibility K2Node_Select_Default_2, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, bool Temp_bool_Variable_4, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility K2Node_Select_Default_3, enum class ESlateVisibility Temp_byte_Variable_7, enum class ESlateVisibility K2Node_Select_Default_4, int32 CallFunc_GetNumInStack_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, int32 CallFunc_GetLoadedAmmo_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue_1, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue_1, class UFortWeaponItemDefinition* K2Node_DynamicCast_AsFort_Weapon_Item_Definition_1, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsDroppedItem_ReturnValue, bool CallFunc_HasUniqueAmmo_ReturnValue, enum class EFortItemType CallFunc_GetType_ReturnValue_2, bool CallFunc_Array_Contains_ReturnValue_2, enum class EFortItemTier CallFunc_GetTier_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_3, int32 CallFunc_Convert_Tier_To_Integer_Numeric_Tier_1, bool CallFunc_BooleanOR_ReturnValue_1, int32 CallFunc_Subtract_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemDetailsHeader_C", "UpdateItemsForWidgets");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemDetailsHeader_C_UpdateItemsForWidgets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemDetailsHeader_C", "UpdateItemsForWidgets");
+
+	Params::UItemDetailsHeader_C_UpdateItemsForWidgets_Params Parms{};
 
 	Parms.CallFunc_GetSubGame_ReturnValue = CallFunc_GetSubGame_ReturnValue;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
@@ -185,12 +215,14 @@ void UItemDetailsHeader_C::UpdateItemsForWidgets(enum class ESubGame CallFunc_Ge
 
 void UItemDetailsHeader_C::Construct()
 {
-	static auto Func = Class->GetFunction("ItemDetailsHeader_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemDetailsHeader_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemDetailsHeader_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -201,12 +233,14 @@ void UItemDetailsHeader_C::Construct()
 
 void UItemDetailsHeader_C::HandleDifferentItemToDetailSet()
 {
-	static auto Func = Class->GetFunction("ItemDetailsHeader_C", "HandleDifferentItemToDetailSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemDetailsHeader_C_HandleDifferentItemToDetailSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemDetailsHeader_C", "HandleDifferentItemToDetailSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -217,12 +251,14 @@ void UItemDetailsHeader_C::HandleDifferentItemToDetailSet()
 
 void UItemDetailsHeader_C::HandleDifferentItemToCompareSet()
 {
-	static auto Func = Class->GetFunction("ItemDetailsHeader_C", "HandleDifferentItemToCompareSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemDetailsHeader_C_HandleDifferentItemToCompareSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemDetailsHeader_C", "HandleDifferentItemToCompareSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -236,9 +272,12 @@ void UItemDetailsHeader_C::HandleDifferentItemToCompareSet()
 
 void UItemDetailsHeader_C::ExecuteUbergraph_ItemDetailsHeader(int32 EntryPoint, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("ItemDetailsHeader_C", "ExecuteUbergraph_ItemDetailsHeader");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemDetailsHeader_C", "ExecuteUbergraph_ItemDetailsHeader");
+
+	Params::UItemDetailsHeader_C_ExecuteUbergraph_ItemDetailsHeader_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
@@ -250,6 +289,4 @@ void UItemDetailsHeader_C::ExecuteUbergraph_ItemDetailsHeader(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

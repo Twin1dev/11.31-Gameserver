@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -76,11 +73,8 @@ public:
 	class ABP_Discoverable_Nutcracker_C*         BP_Discoverable_Nutcracker_2_ExecuteUbergraph_Frontend_CozyLodge_RefProperty; // 0x408(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_Discoverable_Saxaphone_C*          BP_Discoverable_Saxaphone_2_ExecuteUbergraph_Frontend_CozyLodge_RefProperty; // 0x410(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("Frontend_CozyLodge_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AFrontend_CozyLodge_C* GetDefaultObj();
 
 	void SetUpHiddenObjectPairing(class AActor* Actor, const struct FGameplayTag& RewardGraphNodeTag, const struct FFrontendEventHiddenObject& K2Node_MakeStruct_FrontendEventHiddenObject, int32 CallFunc_Array_Add_ReturnValue);
 	void SetupNavObjectPairing(class AFortEventLevelNavigationActor* Object, const struct FGameplayTagContainer& Camera, const struct FFrontendEventNavObject& K2Node_MakeStruct_FrontendEventNavObject, int32 CallFunc_Array_Add_ReturnValue);
@@ -101,6 +95,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

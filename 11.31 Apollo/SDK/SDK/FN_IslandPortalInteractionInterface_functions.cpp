@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass IslandPortalInteractionInterface.IslandPortalInteractionInterface_C
+// (None)
+
+class UClass* IIslandPortalInteractionInterface_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("IslandPortalInteractionInterface_C");
+
+	return Clss;
+}
+
+
+// IslandPortalInteractionInterface_C IslandPortalInteractionInterface.Default__IslandPortalInteractionInterface_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class IIslandPortalInteractionInterface_C* IIslandPortalInteractionInterface_C::GetDefaultObj()
+{
+	static class IIslandPortalInteractionInterface_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<IIslandPortalInteractionInterface_C*>(IIslandPortalInteractionInterface_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function IslandPortalInteractionInterface.IslandPortalInteractionInterface_C.BroadcastIsBeingInteractedWith
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void IIslandPortalInteractionInterface_C::BroadcastIsBeingInteractedWith(bool IsInteracting)
 {
-	static auto Func = Class->GetFunction("IslandPortalInteractionInterface_C", "BroadcastIsBeingInteractedWith");
+	static class UFunction* Func = nullptr;
 
-	Params::IIslandPortalInteractionInterface_C_BroadcastIsBeingInteractedWith_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IslandPortalInteractionInterface_C", "BroadcastIsBeingInteractedWith");
+
+	Params::IIslandPortalInteractionInterface_C_BroadcastIsBeingInteractedWith_Params Parms{};
 
 	Parms.IsInteracting = IsInteracting;
 
@@ -34,6 +62,4 @@ void IIslandPortalInteractionInterface_C::BroadcastIsBeingInteractedWith(bool Is
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

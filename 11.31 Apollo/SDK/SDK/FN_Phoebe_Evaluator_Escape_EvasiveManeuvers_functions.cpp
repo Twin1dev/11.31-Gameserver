@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Phoebe_Evaluator_Escape_EvasiveManeuvers.Phoebe_Evaluator_Escape_EvasiveManeuvers_C
+// (None)
+
+class UClass* UPhoebe_Evaluator_Escape_EvasiveManeuvers_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Phoebe_Evaluator_Escape_EvasiveManeuvers_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Phoebe_Evaluator_Escape_EvasiveManeuvers_C Phoebe_Evaluator_Escape_EvasiveManeuvers.Default__Phoebe_Evaluator_Escape_EvasiveManeuvers_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPhoebe_Evaluator_Escape_EvasiveManeuvers_C* UPhoebe_Evaluator_Escape_EvasiveManeuvers_C::GetDefaultObj()
+{
+	static class UPhoebe_Evaluator_Escape_EvasiveManeuvers_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPhoebe_Evaluator_Escape_EvasiveManeuvers_C*>(UPhoebe_Evaluator_Escape_EvasiveManeuvers_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

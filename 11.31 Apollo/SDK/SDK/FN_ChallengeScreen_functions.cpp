@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ChallengeScreen.ChallengeScreen_C
+// (None)
+
+class UClass* UChallengeScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChallengeScreen_C");
+
+	return Clss;
+}
+
+
+// ChallengeScreen_C ChallengeScreen.Default__ChallengeScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChallengeScreen_C* UChallengeScreen_C::GetDefaultObj()
+{
+	static class UChallengeScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChallengeScreen_C*>(UChallengeScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ChallengeScreen.ChallengeScreen_C.HandleReplayCinematic
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UChallengeScreen_C::HandleReplayCinematic(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("ChallengeScreen_C", "HandleReplayCinematic");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeScreen_C_HandleReplayCinematic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeScreen_C", "HandleReplayCinematic");
+
+	Params::UChallengeScreen_C_HandleReplayCinematic_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -47,9 +75,12 @@ void UChallengeScreen_C::HandleReplayCinematic(bool* PassThrough)
 
 void UChallengeScreen_C::PlayHolidayCinematic(class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_1, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UActivatableMovieWidget_Monolithic_C* CallFunc_Create_ReturnValue, bool CallFunc_LoadStreamingVideo_NoAutoPlay, class UFortStreamMediaSource* CallFunc_LoadStreamingVideo_MediaSource)
 {
-	static auto Func = Class->GetFunction("ChallengeScreen_C", "PlayHolidayCinematic");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeScreen_C_PlayHolidayCinematic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeScreen_C", "PlayHolidayCinematic");
+
+	Params::UChallengeScreen_C_PlayHolidayCinematic_Params Parms{};
 
 	Parms.CallFunc_GetRuntimeOptions_ReturnValue = CallFunc_GetRuntimeOptions_ReturnValue;
 	Parms.CallFunc_GetRuntimeOptions_ReturnValue_1 = CallFunc_GetRuntimeOptions_ReturnValue_1;
@@ -69,12 +100,14 @@ void UChallengeScreen_C::PlayHolidayCinematic(class UFortRuntimeOptions* CallFun
 
 void UChallengeScreen_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("ChallengeScreen_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeScreen_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeScreen_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -85,12 +118,14 @@ void UChallengeScreen_C::BP_OnActivated()
 
 void UChallengeScreen_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("ChallengeScreen_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeScreen_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeScreen_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -101,12 +136,14 @@ void UChallengeScreen_C::BP_OnDeactivated()
 
 void UChallengeScreen_C::OnInitialized()
 {
-	static auto Func = Class->GetFunction("ChallengeScreen_C", "OnInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeScreen_C_OnInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeScreen_C", "OnInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -117,12 +154,14 @@ void UChallengeScreen_C::OnInitialized()
 
 void UChallengeScreen_C::Play_Party_Assist_Audio()
 {
-	static auto Func = Class->GetFunction("ChallengeScreen_C", "Play Party Assist Audio");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeScreen_C_Play_Party_Assist_Audio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeScreen_C", "Play Party Assist Audio");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -140,9 +179,12 @@ void UChallengeScreen_C::Play_Party_Assist_Audio()
 
 void UChallengeScreen_C::ExecuteUbergraph_ChallengeScreen(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, bool CallFunc_IsPartyAssistedChallengeSet_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ChallengeScreen_C", "ExecuteUbergraph_ChallengeScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeScreen_C_ExecuteUbergraph_ChallengeScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeScreen_C", "ExecuteUbergraph_ChallengeScreen");
+
+	Params::UChallengeScreen_C_ExecuteUbergraph_ChallengeScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -158,6 +200,4 @@ void UChallengeScreen_C::ExecuteUbergraph_ChallengeScreen(int32 EntryPoint, UDel
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

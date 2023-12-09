@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -26,11 +23,8 @@ public:
 	TArray<class UFortHelpItem*>                 TopLevelHelpItems;                                 // 0x288(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	class FText                                  Header_Display_Text;                               // 0x298(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaBattlePassAnimatedLogo_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaBattlePassAnimatedLogo_C* GetDefaultObj();
 
 	void OnAnimationFinished(class UWidgetAnimation* Animation);
 	void PlayIntroAnim();
@@ -40,6 +34,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

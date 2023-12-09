@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -17,20 +14,15 @@ namespace SDK
 class USignificanceManager : public UObject
 {
 public:
-	uint8                                        Pad_1649[0xE0];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1A6[0xE0];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSoftClassPath                        SignificanceManagerClassName;                      // 0x108(0x18)(Edit, ZeroConstructor, Config, GlobalConfig, NoClear, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_164A[0x28];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1A7[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SignificanceManager");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USignificanceManager* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

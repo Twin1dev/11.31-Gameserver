@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -27,11 +24,8 @@ public:
 	bool                                         IsLargeDisplay;                                    // 0x350(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         bIsMinimalDisplay;                                 // 0x351(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ChallengeCountdown_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UChallengeCountdown_C* GetDefaultObj();
 
 	void PreConstruct(bool IsDesignTime);
 	void Construct();
@@ -41,6 +35,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

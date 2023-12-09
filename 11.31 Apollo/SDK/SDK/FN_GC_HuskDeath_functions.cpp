@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GC_HuskDeath.GC_HuskDeath_C
+// (Actor)
+
+class UClass* AGC_HuskDeath_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GC_HuskDeath_C");
+
+	return Clss;
+}
+
+
+// GC_HuskDeath_C GC_HuskDeath.Default__GC_HuskDeath_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGC_HuskDeath_C* AGC_HuskDeath_C::GetDefaultObj()
+{
+	static class AGC_HuskDeath_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGC_HuskDeath_C*>(AGC_HuskDeath_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GC_HuskDeath.GC_HuskDeath_C.OnBurst
@@ -27,9 +52,12 @@ namespace SDK
 
 void AGC_HuskDeath_C::OnBurst(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static auto Func = Class->GetFunction("GC_HuskDeath_C", "OnBurst");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_HuskDeath_C_OnBurst_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_HuskDeath_C", "OnBurst");
+
+	Params::AGC_HuskDeath_C_OnBurst_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -44,6 +72,4 @@ void AGC_HuskDeath_C::OnBurst(class AActor* MyTarget, struct FGameplayCueParamet
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

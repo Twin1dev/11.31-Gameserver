@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass WarmupEventCameraShake.WarmupEventCameraShake_C
+// (None)
+
+class UClass* UWarmupEventCameraShake_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WarmupEventCameraShake_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// WarmupEventCameraShake_C WarmupEventCameraShake.Default__WarmupEventCameraShake_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UWarmupEventCameraShake_C* UWarmupEventCameraShake_C::GetDefaultObj()
+{
+	static class UWarmupEventCameraShake_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWarmupEventCameraShake_C*>(UWarmupEventCameraShake_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

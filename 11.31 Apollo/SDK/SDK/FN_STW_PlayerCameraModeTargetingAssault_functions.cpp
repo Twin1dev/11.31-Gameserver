@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass STW_PlayerCameraModeTargetingAssault.STW_PlayerCameraModeTargetingAssault_C
+// (None)
+
+class UClass* USTW_PlayerCameraModeTargetingAssault_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("STW_PlayerCameraModeTargetingAssault_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// STW_PlayerCameraModeTargetingAssault_C STW_PlayerCameraModeTargetingAssault.Default__STW_PlayerCameraModeTargetingAssault_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USTW_PlayerCameraModeTargetingAssault_C* USTW_PlayerCameraModeTargetingAssault_C::GetDefaultObj()
+{
+	static class USTW_PlayerCameraModeTargetingAssault_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USTW_PlayerCameraModeTargetingAssault_C*>(USTW_PlayerCameraModeTargetingAssault_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

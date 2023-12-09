@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass HelpPanel.HelpPanel_C
+// (None)
+
+class UClass* UHelpPanel_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("HelpPanel_C");
+
+	return Clss;
+}
+
+
+// HelpPanel_C HelpPanel.Default__HelpPanel_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UHelpPanel_C* UHelpPanel_C::GetDefaultObj()
+{
+	static class UHelpPanel_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UHelpPanel_C*>(UHelpPanel_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function HelpPanel.HelpPanel_C.Setup Header
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UHelpPanel_C::Setup_Header()
 {
-	static auto Func = Class->GetFunction("HelpPanel_C", "Setup Header");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpPanel_C_Setup_Header_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpPanel_C", "Setup Header");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -49,9 +76,12 @@ void UHelpPanel_C::Setup_Header()
 
 void UHelpPanel_C::SetSelectedItemByID(class FName SelectedItemID, int32 Temp_int_Array_Index_Variable, bool Temp_bool_True_if_break_was_hit_Variable, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class UFortHelpItem* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, class UFortHelpItem* CallFunc_GetItemWithID_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HelpPanel_C", "SetSelectedItemByID");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpPanel_C_SetSelectedItemByID_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpPanel_C", "SetSelectedItemByID");
+
+	Params::UHelpPanel_C_SetSelectedItemByID_Params Parms{};
 
 	Parms.SelectedItemID = SelectedItemID;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -77,12 +107,14 @@ void UHelpPanel_C::SetSelectedItemByID(class FName SelectedItemID, int32 Temp_in
 
 void UHelpPanel_C::UnbindDelegates()
 {
-	static auto Func = Class->GetFunction("HelpPanel_C", "UnbindDelegates");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpPanel_C_UnbindDelegates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpPanel_C", "UnbindDelegates");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -99,9 +131,12 @@ void UHelpPanel_C::UnbindDelegates()
 
 TArray<class UObject*> UHelpPanel_C::HelpTreeView_GetChildrenForCategory(class UObject* Item, const TArray<class UFortHelpItem*>& HelpItems, class UFortHelpItem* K2Node_DynamicCast_AsFort_Help_Item, bool K2Node_DynamicCast_bSuccess, TArray<class UFortHelpItem*>& CallFunc_GetSubItems_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HelpPanel_C", "HelpTreeView_GetChildrenForCategory");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpPanel_C_HelpTreeView_GetChildrenForCategory_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpPanel_C", "HelpTreeView_GetChildrenForCategory");
+
+	Params::UHelpPanel_C_HelpTreeView_GetChildrenForCategory_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.HelpItems = HelpItems;
@@ -126,9 +161,12 @@ TArray<class UObject*> UHelpPanel_C::HelpTreeView_GetChildrenForCategory(class U
 
 void UHelpPanel_C::UpdateDetails(class UFortHelpItem* SelectedHelpItem, enum class EFortHelpItemType SelectedHelpItemType, class UFortHelpItem* LocalHelpItem, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HelpPanel_C", "UpdateDetails");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpPanel_C_UpdateDetails_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpPanel_C", "UpdateDetails");
+
+	Params::UHelpPanel_C_UpdateDetails_Params Parms{};
 
 	Parms.SelectedHelpItem = SelectedHelpItem;
 	Parms.SelectedHelpItemType = SelectedHelpItemType;
@@ -148,9 +186,12 @@ void UHelpPanel_C::UpdateDetails(class UFortHelpItem* SelectedHelpItem, enum cla
 
 void UHelpPanel_C::HandleTopHelpListChanged(TArray<class UFortHelpItem*>& InHelpItems, bool bExpandAll)
 {
-	static auto Func = Class->GetFunction("HelpPanel_C", "HandleTopHelpListChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpPanel_C_HandleTopHelpListChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpPanel_C", "HandleTopHelpListChanged");
+
+	Params::UHelpPanel_C_HandleTopHelpListChanged_Params Parms{};
 
 	Parms.InHelpItems = InHelpItems;
 	Parms.bExpandAll = bExpandAll;
@@ -166,12 +207,14 @@ void UHelpPanel_C::HandleTopHelpListChanged(TArray<class UFortHelpItem*>& InHelp
 
 void UHelpPanel_C::BindDelegates()
 {
-	static auto Func = Class->GetFunction("HelpPanel_C", "BindDelegates");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpPanel_C_BindDelegates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpPanel_C", "BindDelegates");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -183,9 +226,12 @@ void UHelpPanel_C::BindDelegates()
 
 void UHelpPanel_C::BndEvt__IconTextButton_1_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("HelpPanel_C", "BndEvt__IconTextButton_1_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpPanel_C_BndEvt__IconTextButton_1_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpPanel_C", "BndEvt__IconTextButton_1_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature");
+
+	Params::UHelpPanel_C_BndEvt__IconTextButton_1_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -202,9 +248,12 @@ void UHelpPanel_C::BndEvt__IconTextButton_1_K2Node_ComponentBoundEvent_49_Common
 
 void UHelpPanel_C::BndEvt__SocialTreeView_K2Node_ComponentBoundEvent_256_OnListViewItemSelected__DelegateSignature(class UObject* Item, bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("HelpPanel_C", "BndEvt__SocialTreeView_K2Node_ComponentBoundEvent_256_OnListViewItemSelected__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpPanel_C_BndEvt__SocialTreeView_K2Node_ComponentBoundEvent_256_OnListViewItemSelected__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpPanel_C", "BndEvt__SocialTreeView_K2Node_ComponentBoundEvent_256_OnListViewItemSelected__DelegateSignature");
+
+	Params::UHelpPanel_C_BndEvt__SocialTreeView_K2Node_ComponentBoundEvent_256_OnListViewItemSelected__DelegateSignature_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.bIsSelected = bIsSelected;
@@ -220,12 +269,14 @@ void UHelpPanel_C::BndEvt__SocialTreeView_K2Node_ComponentBoundEvent_256_OnListV
 
 void UHelpPanel_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("HelpPanel_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpPanel_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpPanel_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -237,9 +288,12 @@ void UHelpPanel_C::BP_OnActivated()
 
 void UHelpPanel_C::BndEvt__SocialTreeView_K2Node_ComponentBoundEvent_0_OnListViewItemWidgetCreated__DelegateSignature(class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("HelpPanel_C", "BndEvt__SocialTreeView_K2Node_ComponentBoundEvent_0_OnListViewItemWidgetCreated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpPanel_C_BndEvt__SocialTreeView_K2Node_ComponentBoundEvent_0_OnListViewItemWidgetCreated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpPanel_C", "BndEvt__SocialTreeView_K2Node_ComponentBoundEvent_0_OnListViewItemWidgetCreated__DelegateSignature");
+
+	Params::UHelpPanel_C_BndEvt__SocialTreeView_K2Node_ComponentBoundEvent_0_OnListViewItemWidgetCreated__DelegateSignature_Params Parms{};
 
 	Parms.Widget = Widget;
 
@@ -254,12 +308,14 @@ void UHelpPanel_C::BndEvt__SocialTreeView_K2Node_ComponentBoundEvent_0_OnListVie
 
 void UHelpPanel_C::Destruct()
 {
-	static auto Func = Class->GetFunction("HelpPanel_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpPanel_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpPanel_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -270,12 +326,14 @@ void UHelpPanel_C::Destruct()
 
 void UHelpPanel_C::Construct()
 {
-	static auto Func = Class->GetFunction("HelpPanel_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpPanel_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpPanel_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -286,12 +344,14 @@ void UHelpPanel_C::Construct()
 
 void UHelpPanel_C::OnContextHelpChanged()
 {
-	static auto Func = Class->GetFunction("HelpPanel_C", "OnContextHelpChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpPanel_C_OnContextHelpChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpPanel_C", "OnContextHelpChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -303,9 +363,12 @@ void UHelpPanel_C::OnContextHelpChanged()
 
 void UHelpPanel_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("HelpPanel_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpPanel_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpPanel_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UHelpPanel_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -337,9 +400,12 @@ void UHelpPanel_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_Common
 
 void UHelpPanel_C::ExecuteUbergraph_HelpPanel(int32 EntryPoint, bool CallFunc_IsUsingTouch_ReturnValue, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, class UObject* K2Node_ComponentBoundEvent_Item, bool K2Node_ComponentBoundEvent_bIsSelected, class UObject* CallFunc_BP_GetSelectedItem_ReturnValue, class UFortHelpItem* K2Node_DynamicCast_AsFort_Help_Item, bool K2Node_DynamicCast_bSuccess, class UUserWidget* K2Node_ComponentBoundEvent_Widget, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, TArray<class UFortHelpItem*>& CallFunc_GetTopLevelHelpItems_ActiveHelpEntries, class UCommonButton* K2Node_ComponentBoundEvent_Button)
 {
-	static auto Func = Class->GetFunction("HelpPanel_C", "ExecuteUbergraph_HelpPanel");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpPanel_C_ExecuteUbergraph_HelpPanel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpPanel_C", "ExecuteUbergraph_HelpPanel");
+
+	Params::UHelpPanel_C_ExecuteUbergraph_HelpPanel_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsUsingTouch_ReturnValue = CallFunc_IsUsingTouch_ReturnValue;
@@ -365,6 +431,4 @@ void UHelpPanel_C::ExecuteUbergraph_HelpPanel(int32 EntryPoint, bool CallFunc_Is
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

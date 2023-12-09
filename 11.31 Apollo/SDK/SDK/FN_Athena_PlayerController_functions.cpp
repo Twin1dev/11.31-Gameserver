@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Athena_PlayerController.Athena_PlayerController_C
+// (Actor, PlayerController)
+
+class UClass* AAthena_PlayerController_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Athena_PlayerController_C");
+
+	return Clss;
+}
+
+
+// Athena_PlayerController_C Athena_PlayerController.Default__Athena_PlayerController_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AAthena_PlayerController_C* AAthena_PlayerController_C::GetDefaultObj()
+{
+	static class AAthena_PlayerController_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AAthena_PlayerController_C*>(AAthena_PlayerController_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function Athena_PlayerController.Athena_PlayerController_C.Is Creative Mode
@@ -28,9 +53,12 @@ namespace SDK
 
 bool AAthena_PlayerController_C::Is_Creative_Mode(class AGameStateBase* CallFunc_GetGameState_ReturnValue, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsCreativeModePlaylist_ReturnValue, bool CallFunc_IsCreativeLTMPlaylist_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "Is Creative Mode");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_Is_Creative_Mode_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "Is Creative Mode");
+
+	Params::AAthena_PlayerController_C_Is_Creative_Mode_Params Parms{};
 
 	Parms.CallFunc_GetGameState_ReturnValue = CallFunc_GetGameState_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Game_State_Athena = K2Node_DynamicCast_AsFort_Game_State_Athena;
@@ -54,9 +82,12 @@ bool AAthena_PlayerController_C::Is_Creative_Mode(class AGameStateBase* CallFunc
 
 void AAthena_PlayerController_C::SetupPermissionRecheckTimer(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "SetupPermissionRecheckTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_SetupPermissionRecheckTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "SetupPermissionRecheckTimer");
+
+	Params::AAthena_PlayerController_C_SetupPermissionRecheckTimer_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_K2_SetTimerDelegate_ReturnValue = CallFunc_K2_SetTimerDelegate_ReturnValue;
@@ -93,9 +124,12 @@ void AAthena_PlayerController_C::SetupPermissionRecheckTimer(UDelegateProperty_ 
 
 void AAthena_PlayerController_C::LeftAllVolumes(bool* bLeftVolumes, bool InTempVolume, const TArray<class AFortVolume*>& ContainingVolumes, int32 Temp_int_Array_Index_Variable, class AFortVolume* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class AFortPlayerPawn* CallFunc_GetPlayerPawn_ReturnValue, class AFortVolumeManager* CallFunc_GetVolumeManager_OutVolumeManager, enum class EVolumeValidityResult CallFunc_GetVolumeManager_OutIsValid, bool CallFunc_IsDead_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_WillVolumeDeleteAfterActorSpawn_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, TArray<class AFortVolume*>& CallFunc_GetVolumesForLocation_Volumes, bool CallFunc_GetVolumesForLocation_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "LeftAllVolumes");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_LeftAllVolumes_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "LeftAllVolumes");
+
+	Params::AAthena_PlayerController_C_LeftAllVolumes_Params Parms{};
 
 	Parms.InTempVolume = InTempVolume;
 	Parms.ContainingVolumes = ContainingVolumes;
@@ -133,9 +167,12 @@ void AAthena_PlayerController_C::LeftAllVolumes(bool* bLeftVolumes, bool InTempV
 
 void AAthena_PlayerController_C::UserConstructionScript(class UAthenaMarkerComponent* CallFunc_GetMarkerComponent_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "UserConstructionScript");
+
+	Params::AAthena_PlayerController_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_GetMarkerComponent_ReturnValue = CallFunc_GetMarkerComponent_ReturnValue;
 
@@ -151,9 +188,12 @@ void AAthena_PlayerController_C::UserConstructionScript(class UAthenaMarkerCompo
 
 void AAthena_PlayerController_C::OnLoaded_F82CC70840156DFAFAF85EB0D93E5E2D(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "OnLoaded_F82CC70840156DFAFAF85EB0D93E5E2D");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_OnLoaded_F82CC70840156DFAFAF85EB0D93E5E2D_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "OnLoaded_F82CC70840156DFAFAF85EB0D93E5E2D");
+
+	Params::AAthena_PlayerController_C_OnLoaded_F82CC70840156DFAFAF85EB0D93E5E2D_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -171,9 +211,12 @@ void AAthena_PlayerController_C::OnLoaded_F82CC70840156DFAFAF85EB0D93E5E2D(class
 
 void AAthena_PlayerController_C::OnReady_B4409EAB4038578B1EBA9DB1586489B9(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "OnReady_B4409EAB4038578B1EBA9DB1586489B9");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_OnReady_B4409EAB4038578B1EBA9DB1586489B9_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "OnReady_B4409EAB4038578B1EBA9DB1586489B9");
+
+	Params::AAthena_PlayerController_C_OnReady_B4409EAB4038578B1EBA9DB1586489B9_Params Parms{};
 
 	Parms.GameState = GameState;
 	Parms.Playlist = Playlist;
@@ -191,9 +234,12 @@ void AAthena_PlayerController_C::OnReady_B4409EAB4038578B1EBA9DB1586489B9(class 
 
 void AAthena_PlayerController_C::ReceiveEndPlay(enum class EEndPlayReason EndPlayReason)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "ReceiveEndPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_ReceiveEndPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "ReceiveEndPlay");
+
+	Params::AAthena_PlayerController_C_ReceiveEndPlay_Params Parms{};
 
 	Parms.EndPlayReason = EndPlayReason;
 
@@ -208,12 +254,14 @@ void AAthena_PlayerController_C::ReceiveEndPlay(enum class EEndPlayReason EndPla
 
 void AAthena_PlayerController_C::Start_Victory_Royale_Music()
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "Start Victory Royale Music");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_Start_Victory_Royale_Music_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "Start Victory Royale Music");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -225,9 +273,12 @@ void AAthena_PlayerController_C::Start_Victory_Royale_Music()
 
 void AAthena_PlayerController_C::OnMusicPackLoaded(class UAthenaMusicPackItemDefinition* NewMusicPack)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "OnMusicPackLoaded");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_OnMusicPackLoaded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "OnMusicPackLoaded");
+
+	Params::AAthena_PlayerController_C_OnMusicPackLoaded_Params Parms{};
 
 	Parms.NewMusicPack = NewMusicPack;
 
@@ -243,9 +294,12 @@ void AAthena_PlayerController_C::OnMusicPackLoaded(class UAthenaMusicPackItemDef
 
 void AAthena_PlayerController_C::HandlePermissions(class AFortVolume* Volume)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "HandlePermissions");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_HandlePermissions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "HandlePermissions");
+
+	Params::AAthena_PlayerController_C_HandlePermissions_Params Parms{};
 
 	Parms.Volume = Volume;
 
@@ -261,9 +315,12 @@ void AAthena_PlayerController_C::HandlePermissions(class AFortVolume* Volume)
 
 void AAthena_PlayerController_C::GrantItem(TSoftObjectPtr<class UFortWorldItemDefinition> Item)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "GrantItem");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_GrantItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "GrantItem");
+
+	Params::AAthena_PlayerController_C_GrantItem_Params Parms{};
 
 	Parms.Item = Item;
 
@@ -279,9 +336,12 @@ void AAthena_PlayerController_C::GrantItem(TSoftObjectPtr<class UFortWorldItemDe
 
 void AAthena_PlayerController_C::RevokeItem(TSoftObjectPtr<class UFortWorldItemDefinition> Item)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "RevokeItem");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_RevokeItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "RevokeItem");
+
+	Params::AAthena_PlayerController_C_RevokeItem_Params Parms{};
 
 	Parms.Item = Item;
 
@@ -296,12 +356,14 @@ void AAthena_PlayerController_C::RevokeItem(TSoftObjectPtr<class UFortWorldItemD
 
 void AAthena_PlayerController_C::PermissionsChanged()
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "PermissionsChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_PermissionsChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "PermissionsChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -313,9 +375,12 @@ void AAthena_PlayerController_C::PermissionsChanged()
 
 void AAthena_PlayerController_C::OnLocalInteraction(class AActor* ReceivingActor)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "OnLocalInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_OnLocalInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "OnLocalInteraction");
+
+	Params::AAthena_PlayerController_C_OnLocalInteraction_Params Parms{};
 
 	Parms.ReceivingActor = ReceivingActor;
 
@@ -330,12 +395,14 @@ void AAthena_PlayerController_C::OnLocalInteraction(class AActor* ReceivingActor
 
 void AAthena_PlayerController_C::RemoveItem()
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "RemoveItem");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_RemoveItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "RemoveItem");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -346,12 +413,14 @@ void AAthena_PlayerController_C::RemoveItem()
 
 void AAthena_PlayerController_C::RevokeCreativeTool()
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "RevokeCreativeTool");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_RevokeCreativeTool_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "RevokeCreativeTool");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -363,9 +432,12 @@ void AAthena_PlayerController_C::RevokeCreativeTool()
 
 void AAthena_PlayerController_C::ReactToPawnPossession(class APawn* PossessedPawn)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "ReactToPawnPossession");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_ReactToPawnPossession_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "ReactToPawnPossession");
+
+	Params::AAthena_PlayerController_C_ReactToPawnPossession_Params Parms{};
 
 	Parms.PossessedPawn = PossessedPawn;
 
@@ -384,9 +456,12 @@ void AAthena_PlayerController_C::ReactToPawnPossession(class APawn* PossessedPaw
 
 void AAthena_PlayerController_C::PlayWinEffects(class APawn* FinisherPawn, class UFortWeaponItemDefinition* FinishingWeapon, enum class EDeathCause DeathCause, bool bAudioOnly)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "PlayWinEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_PlayWinEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "PlayWinEffects");
+
+	Params::AAthena_PlayerController_C_PlayWinEffects_Params Parms{};
 
 	Parms.FinisherPawn = FinisherPawn;
 	Parms.FinishingWeapon = FinishingWeapon;
@@ -404,12 +479,14 @@ void AAthena_PlayerController_C::PlayWinEffects(class APawn* FinisherPawn, class
 
 void AAthena_PlayerController_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -420,12 +497,14 @@ void AAthena_PlayerController_C::ReceiveBeginPlay()
 
 void AAthena_PlayerController_C::ReplicateRotationScaleReset()
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "ReplicateRotationScaleReset");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_ReplicateRotationScaleReset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "ReplicateRotationScaleReset");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -437,9 +516,12 @@ void AAthena_PlayerController_C::ReplicateRotationScaleReset()
 
 void AAthena_PlayerController_C::K2_OnLeaveVolume(class AFortVolume* Volume)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "K2_OnLeaveVolume");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_K2_OnLeaveVolume_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "K2_OnLeaveVolume");
+
+	Params::AAthena_PlayerController_C_K2_OnLeaveVolume_Params Parms{};
 
 	Parms.Volume = Volume;
 
@@ -455,9 +537,12 @@ void AAthena_PlayerController_C::K2_OnLeaveVolume(class AFortVolume* Volume)
 
 void AAthena_PlayerController_C::K2_OnEnterVolume(class AFortVolume* Volume)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "K2_OnEnterVolume");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_K2_OnEnterVolume_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "K2_OnEnterVolume");
+
+	Params::AAthena_PlayerController_C_K2_OnEnterVolume_Params Parms{};
 
 	Parms.Volume = Volume;
 
@@ -474,9 +559,12 @@ void AAthena_PlayerController_C::K2_OnEnterVolume(class AFortVolume* Volume)
 
 void AAthena_PlayerController_C::On_Camera_Underwater_State_Changed(bool bIsUnderWater, float DepthUnderwater)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "On Camera Underwater State Changed");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_On_Camera_Underwater_State_Changed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "On Camera Underwater State Changed");
+
+	Params::AAthena_PlayerController_C_On_Camera_Underwater_State_Changed_Params Parms{};
 
 	Parms.bIsUnderWater = bIsUnderWater;
 	Parms.DepthUnderwater = DepthUnderwater;
@@ -513,7 +601,7 @@ void AAthena_PlayerController_C::On_Camera_Underwater_State_Changed(bool bIsUnde
 // bool                               CallFunc_IsValid_ReturnValue_3                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UAudioComponent*             CallFunc_SpawnSound2D_ReturnValue_1                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_4                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayTagContainer       Temp_struct_Variable                                             ()
+// struct FGameplayTagContainer       Temp_struct_Variable                                             (None)
 // class UAthenaMusicPackItemDefinition*K2Node_CustomEvent_NewMusicPack                                  (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_5                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UAudioComponent*             CallFunc_SpawnSound2D_ReturnValue_2                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -628,9 +716,12 @@ void AAthena_PlayerController_C::On_Camera_Underwater_State_Changed(bool bIsUnde
 
 void AAthena_PlayerController_C::ExecuteUbergraph_Athena_PlayerController(int32 EntryPoint, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, class UWaterSubsystem* CallFunc_GetWorldSubsystem_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, enum class EAudioComponentPlayState CallFunc_GetPlayState_ReturnValue, bool Temp_bool_Variable, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UAthenaHUDContext* CallFunc_GetContext_ReturnValue, float CallFunc_VictoryStingerTimeUntilFadeOut_ReturnValue, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, enum class EEndPlayReason K2Node_Event_EndPlayReason, class UFortAsyncAction_CurrentPlaylistReady* CallFunc_PlaylistDataReadyAsync_ReturnValue, class AFortGameStateAthena* Temp_object_Variable, bool CallFunc_IsValid_ReturnValue_2, class UFortPlaylist* Temp_object_Variable_1, class UAthenaHUDContext* CallFunc_GetContext_ReturnValue_1, class USoundCue* CallFunc_GetVictoryStinger_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_4, const struct FGameplayTagContainer& Temp_struct_Variable, class UAthenaMusicPackItemDefinition* K2Node_CustomEvent_NewMusicPack, bool CallFunc_IsValid_ReturnValue_5, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue_2, class AFortGameStateAthena* K2Node_CustomEvent_GameState, class UFortPlaylist* K2Node_CustomEvent_Playlist, const struct FGameplayTagContainer& K2Node_CustomEvent_PlaylistContextTags, class UObject* CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue, class USoundBase* K2Node_DynamicCast_AsSound_Base, bool K2Node_DynamicCast_bSuccess, class AGameStateBase* CallFunc_GetGameState_ReturnValue, const struct FUniqueNetIdRepl& CallFunc_GetGameAccountId_ReturnValue, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena, bool K2Node_DynamicCast_bSuccess_1, class AGameStateBase* CallFunc_GetGameState_ReturnValue_1, bool CallFunc_IsCreativeModePlaylist_ReturnValue, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena_1, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_LeftAllVolumes_bLeftVolumes, bool CallFunc_IsCreativeModePlaylist_ReturnValue_1, class AFortVolume* K2Node_CustomEvent_Volume, TSoftObjectPtr<class UFortWorldItemDefinition> K2Node_CustomEvent_Item_1, bool CallFunc_IsReadOnly_ReturnValue, class UObject* CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, class UFortWorldItemDefinition* K2Node_DynamicCast_AsFort_World_Item_Definition, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_IsValidSoftObjectReference_ReturnValue, TArray<class UFortLevelSaveComponent*>& CallFunc_K2_GetComponentsByClass_ReturnValue, class UFortLevelSaveComponent* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_DoesPlayerHavePermissionToEdit_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_6, TSoftObjectPtr<class UFortWorldItemDefinition> K2Node_CustomEvent_Item, class UObject* CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue_2, class UFortWorldItemDefinition* K2Node_DynamicCast_AsFort_World_Item_Definition_1, bool K2Node_DynamicCast_bSuccess_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, TScriptInterface<class IFortInventoryOwnerInterface> CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, int32 CallFunc_K2_RemoveItemFromPlayer_ReturnValue, class AFortVolume* CallFunc_GetCurrentVolume_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class AActor* K2Node_Event_ReceivingActor, class AFortPickup* K2Node_DynamicCast_AsFort_Pickup, bool K2Node_DynamicCast_bSuccess_5, class APawn* CallFunc_K2_GetPawn_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_6, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAnyMatchingGameplayTags_self_CastInput, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue, class APawn* K2Node_CustomEvent_PossessedPawn, class APawn* CallFunc_K2_GetPawn_ReturnValue_1, class AGameStateBase* CallFunc_GetGameState_ReturnValue_2, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena_2, bool K2Node_DynamicCast_bSuccess_7, bool CallFunc_IsCreativeModePlaylist_ReturnValue_2, bool CallFunc_K2_IsValidTimerHandle_ReturnValue, bool CallFunc_IsLocalPlayerController_ReturnValue, class UObject* Temp_object_Variable_2, class UFortWorldItemDefinition* K2Node_DynamicCast_AsFort_World_Item_Definition_2, bool K2Node_DynamicCast_bSuccess_8, TScriptInterface<class IFortInventoryOwnerInterface> CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput_1, class APawn* K2Node_Event_FinisherPawn, class UFortWeaponItemDefinition* K2Node_Event_FinishingWeapon, enum class EDeathCause K2Node_Event_DeathCause, bool K2Node_Event_bAudioOnly, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_7, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, class UClass* CallFunc_GetWeaponActorClass_ReturnValue, bool CallFunc_IsValid_ReturnValue_8, class UClass* K2Node_ClassDynamicCast_AsFort_Weapon_Ranged_Dual, bool K2Node_ClassDynamicCast_bSuccess, class UClass* K2Node_ClassDynamicCast_AsB_Ranged_Generic, bool K2Node_ClassDynamicCast_bSuccess_1, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, class UObject* K2Node_CustomEvent_Loaded, bool CallFunc_Is_Creative_Mode_ReturnValue, class AFortVolumeManager* CallFunc_GetVolumeManager_OutVolumeManager, enum class EVolumeValidityResult CallFunc_GetVolumeManager_OutIsValid, class AFortPlayerPawn* CallFunc_GetPlayerPawn_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_IsValid_ReturnValue_9, class AFortVolume* CallFunc_GetVolumeForLocation_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class AFortVolume* K2Node_Event_Volume_1, class AFortVolume* K2Node_Event_Volume, bool CallFunc_IsValid_ReturnValue_10, bool K2Node_CustomEvent_bIsUnderWater, float K2Node_CustomEvent_DepthUnderwater, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, float CallFunc_RandomFloatInRange_ReturnValue, class UFortMusicContext* CallFunc_GetContext_ReturnValue_2, class UAthenaMusicPackItemDefinition* CallFunc_GetEquippedMusicPack_ReturnValue, bool CallFunc_Is_Creative_Mode_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, bool K2Node_Select_Default, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue_4)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "ExecuteUbergraph_Athena_PlayerController");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "ExecuteUbergraph_Athena_PlayerController");
+
+	Params::AAthena_PlayerController_C_ExecuteUbergraph_Athena_PlayerController_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetLocalFortPlayerControllers_ReturnValue = CallFunc_GetLocalFortPlayerControllers_ReturnValue;
@@ -781,9 +872,12 @@ void AAthena_PlayerController_C::ExecuteUbergraph_Athena_PlayerController(int32 
 
 void AAthena_PlayerController_C::PawnPossessedDispatcher__DelegateSignature(class APawn* PossessedPawn)
 {
-	static auto Func = Class->GetFunction("Athena_PlayerController_C", "PawnPossessedDispatcher__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_PlayerController_C_PawnPossessedDispatcher__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_PlayerController_C", "PawnPossessedDispatcher__DelegateSignature");
+
+	Params::AAthena_PlayerController_C_PawnPossessedDispatcher__DelegateSignature_Params Parms{};
 
 	Parms.PossessedPawn = PossessedPawn;
 
@@ -793,6 +887,4 @@ void AAthena_PlayerController_C::PawnPossessedDispatcher__DelegateSignature(clas
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

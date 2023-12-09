@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ScrollingTextButton.ScrollingTextButton_C
+// (None)
+
+class UClass* UScrollingTextButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ScrollingTextButton_C");
+
+	return Clss;
+}
+
+
+// ScrollingTextButton_C ScrollingTextButton.Default__ScrollingTextButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UScrollingTextButton_C* UScrollingTextButton_C::GetDefaultObj()
+{
+	static class UScrollingTextButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UScrollingTextButton_C*>(UScrollingTextButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ScrollingTextButton.ScrollingTextButton_C.SetInitialMouseKeyboardStyle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UScrollingTextButton_C::SetInitialMouseKeyboardStyle()
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "SetInitialMouseKeyboardStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_SetInitialMouseKeyboardStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "SetInitialMouseKeyboardStyle");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UScrollingTextButton_C::SetInitialMouseKeyboardStyle()
 
 void UScrollingTextButton_C::UpdateTextStyle(class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "UpdateTextStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_UpdateTextStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "UpdateTextStyle");
+
+	Params::UScrollingTextButton_C_UpdateTextStyle_Params Parms{};
 
 	Parms.CallFunc_GetCurrentTextStyleClass_ReturnValue = CallFunc_GetCurrentTextStyleClass_ReturnValue;
 
@@ -56,9 +86,12 @@ void UScrollingTextButton_C::UpdateTextStyle(class UClass* CallFunc_GetCurrentTe
 
 void UScrollingTextButton_C::SetContentAlignment(enum class EHorizontalAlignment ContentAlignment)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "SetContentAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_SetContentAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "SetContentAlignment");
+
+	Params::UScrollingTextButton_C_SetContentAlignment_Params Parms{};
 
 	Parms.ContentAlignment = ContentAlignment;
 
@@ -76,9 +109,12 @@ void UScrollingTextButton_C::SetContentAlignment(enum class EHorizontalAlignment
 
 void UScrollingTextButton_C::UpdateContentAlignment(class UPanelSlot* CallFunc_GetContentSlot_ReturnValue, class UBorderSlot* K2Node_DynamicCast_AsBorder_Slot, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "UpdateContentAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_UpdateContentAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "UpdateContentAlignment");
+
+	Params::UScrollingTextButton_C_UpdateContentAlignment_Params Parms{};
 
 	Parms.CallFunc_GetContentSlot_ReturnValue = CallFunc_GetContentSlot_ReturnValue;
 	Parms.K2Node_DynamicCast_AsBorder_Slot = K2Node_DynamicCast_AsBorder_Slot;
@@ -99,9 +135,12 @@ void UScrollingTextButton_C::UpdateContentAlignment(class UPanelSlot* CallFunc_G
 
 void UScrollingTextButton_C::SetMouseKeyboardStyle(class UClass* ControllerInputStyle, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "SetMouseKeyboardStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_SetMouseKeyboardStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "SetMouseKeyboardStyle");
+
+	Params::UScrollingTextButton_C_SetMouseKeyboardStyle_Params Parms{};
 
 	Parms.ControllerInputStyle = ControllerInputStyle;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -120,9 +159,12 @@ void UScrollingTextButton_C::SetMouseKeyboardStyle(class UClass* ControllerInput
 
 void UScrollingTextButton_C::UpdateStyle(bool UsingGamepad)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "UpdateStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_UpdateStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "UpdateStyle");
+
+	Params::UScrollingTextButton_C_UpdateStyle_Params Parms{};
 
 	Parms.UsingGamepad = UsingGamepad;
 
@@ -135,16 +177,19 @@ void UScrollingTextButton_C::UpdateStyle(bool UsingGamepad)
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetDisplayText_ReturnValue                              ()
+// class FText                        CallFunc_GetDisplayText_ReturnValue                              (None)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        K2Node_Select_Default                                            (None)
 
 void UScrollingTextButton_C::UpdateText(bool Temp_bool_Variable, class FText CallFunc_GetDisplayText_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class FText K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "UpdateText");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_UpdateText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "UpdateText");
+
+	Params::UScrollingTextButton_C_UpdateText_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.CallFunc_GetDisplayText_ReturnValue = CallFunc_GetDisplayText_ReturnValue;
@@ -167,9 +212,12 @@ void UScrollingTextButton_C::UpdateText(bool Temp_bool_Variable, class FText Cal
 
 void UScrollingTextButton_C::SetControllerStyle(class UClass* ControllerInputStyle, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "SetControllerStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_SetControllerStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "SetControllerStyle");
+
+	Params::UScrollingTextButton_C_SetControllerStyle_Params Parms{};
 
 	Parms.ControllerInputStyle = ControllerInputStyle;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -188,9 +236,12 @@ void UScrollingTextButton_C::SetControllerStyle(class UClass* ControllerInputSty
 
 void UScrollingTextButton_C::UpdateTextAndStyle(bool bUsingGamepad)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "UpdateTextAndStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_UpdateTextAndStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "UpdateTextAndStyle");
+
+	Params::UScrollingTextButton_C_UpdateTextAndStyle_Params Parms{};
 
 	Parms.bUsingGamepad = bUsingGamepad;
 
@@ -207,9 +258,12 @@ void UScrollingTextButton_C::UpdateTextAndStyle(bool bUsingGamepad)
 
 void UScrollingTextButton_C::InitializeButton(class UObject* CallFunc_GetBrushResource_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "InitializeButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_InitializeButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "InitializeButton");
+
+	Params::UScrollingTextButton_C_InitializeButton_Params Parms{};
 
 	Parms.CallFunc_GetBrushResource_ReturnValue = CallFunc_GetBrushResource_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -226,9 +280,12 @@ void UScrollingTextButton_C::InitializeButton(class UObject* CallFunc_GetBrushRe
 
 void UScrollingTextButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "Set Icon");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_Set_Icon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "Set Icon");
+
+	Params::UScrollingTextButton_C_Set_Icon_Params Parms{};
 
 	Parms.IconBrush = IconBrush;
 
@@ -249,9 +306,12 @@ void UScrollingTextButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 
 void UScrollingTextButton_C::Set_Text(class FText ButtonText, enum class ESlateVisibility Temp_byte_Variable, bool CallFunc_TextIsEmpty_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "Set Text");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_Set_Text_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "Set Text");
+
+	Params::UScrollingTextButton_C_Set_Text_Params Parms{};
 
 	Parms.ButtonText = ButtonText;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -271,12 +331,14 @@ void UScrollingTextButton_C::Set_Text(class FText ButtonText, enum class ESlateV
 
 void UScrollingTextButton_C::OnCurrentTextStyleChanged()
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "OnCurrentTextStyleChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_OnCurrentTextStyleChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "OnCurrentTextStyleChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -288,9 +350,12 @@ void UScrollingTextButton_C::OnCurrentTextStyleChanged()
 
 void UScrollingTextButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "PreConstruct");
+
+	Params::UScrollingTextButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -306,9 +371,12 @@ void UScrollingTextButton_C::PreConstruct(bool IsDesignTime)
 
 void UScrollingTextButton_C::SetTabLabelInfo(struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "SetTabLabelInfo");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_SetTabLabelInfo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "SetTabLabelInfo");
+
+	Params::UScrollingTextButton_C_SetTabLabelInfo_Params Parms{};
 
 	Parms.TabLabelInfo = TabLabelInfo;
 
@@ -324,9 +392,12 @@ void UScrollingTextButton_C::SetTabLabelInfo(struct FFortTabButtonLabelInfo& Tab
 
 void UScrollingTextButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+
+	Params::UScrollingTextButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature_Params Parms{};
 
 	Parms.bUsingGamepad = bUsingGamepad;
 
@@ -342,9 +413,12 @@ void UScrollingTextButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBo
 
 void UScrollingTextButton_C::OnTriggeredInputActionChanged(struct FDataTableRowHandle& NewTriggeredAction)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "OnTriggeredInputActionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_OnTriggeredInputActionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "OnTriggeredInputActionChanged");
+
+	Params::UScrollingTextButton_C_OnTriggeredInputActionChanged_Params Parms{};
 
 	Parms.NewTriggeredAction = NewTriggeredAction;
 
@@ -360,9 +434,12 @@ void UScrollingTextButton_C::OnTriggeredInputActionChanged(struct FDataTableRowH
 
 void UScrollingTextButton_C::OnActionProgress(float HeldPercent)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "OnActionProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_OnActionProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "OnActionProgress");
+
+	Params::UScrollingTextButton_C_OnActionProgress_Params Parms{};
 
 	Parms.HeldPercent = HeldPercent;
 
@@ -377,12 +454,14 @@ void UScrollingTextButton_C::OnActionProgress(float HeldPercent)
 
 void UScrollingTextButton_C::OnActionComplete()
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "OnActionComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_OnActionComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "OnActionComplete");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -393,12 +472,14 @@ void UScrollingTextButton_C::OnActionComplete()
 
 void UScrollingTextButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -426,9 +507,12 @@ void UScrollingTextButton_C::Construct()
 
 void UScrollingTextButton_C::ExecuteUbergraph_ScrollingTextButton(int32 EntryPoint, bool Temp_bool_Variable, bool K2Node_Event_IsDesignTime, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, const struct FFortTabButtonLabelInfo& K2Node_Event_TabLabelInfo, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool K2Node_ComponentBoundEvent_bUsingGamepad, const struct FDataTableRowHandle& K2Node_Event_NewTriggeredAction, float K2Node_Event_HeldPercent, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_1, bool CallFunc_EqualEqual_SlateBrush_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ScrollingTextButton_C", "ExecuteUbergraph_ScrollingTextButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ScrollingTextButton_C", "ExecuteUbergraph_ScrollingTextButton");
+
+	Params::UScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -454,6 +538,4 @@ void UScrollingTextButton_C::ExecuteUbergraph_ScrollingTextButton(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

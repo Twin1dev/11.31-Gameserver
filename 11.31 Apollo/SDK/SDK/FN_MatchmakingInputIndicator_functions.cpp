@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass MatchmakingInputIndicator.MatchmakingInputIndicator_C
+// (None)
+
+class UClass* UMatchmakingInputIndicator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MatchmakingInputIndicator_C");
+
+	return Clss;
+}
+
+
+// MatchmakingInputIndicator_C MatchmakingInputIndicator.Default__MatchmakingInputIndicator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMatchmakingInputIndicator_C* UMatchmakingInputIndicator_C::GetDefaultObj()
+{
+	static class UMatchmakingInputIndicator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMatchmakingInputIndicator_C*>(UMatchmakingInputIndicator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MatchmakingInputIndicator.MatchmakingInputIndicator_C.OnInputSourceTypeChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UMatchmakingInputIndicator_C::OnInputSourceTypeChanged(enum class ECommonInputType InputType)
 {
-	static auto Func = Class->GetFunction("MatchmakingInputIndicator_C", "OnInputSourceTypeChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UMatchmakingInputIndicator_C_OnInputSourceTypeChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MatchmakingInputIndicator_C", "OnInputSourceTypeChanged");
+
+	Params::UMatchmakingInputIndicator_C_OnInputSourceTypeChanged_Params Parms{};
 
 	Parms.InputType = InputType;
 
@@ -44,9 +72,12 @@ void UMatchmakingInputIndicator_C::OnInputSourceTypeChanged(enum class ECommonIn
 
 void UMatchmakingInputIndicator_C::ExecuteUbergraph_MatchmakingInputIndicator(int32 EntryPoint, class UFortGlobalUIContext* CallFunc_GetLocalPlayerSubsystem_ReturnValue, enum class ECommonInputType K2Node_Event_InputType, class UTexture2D* CallFunc_GetInputTypeIcon_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MatchmakingInputIndicator_C", "ExecuteUbergraph_MatchmakingInputIndicator");
+	static class UFunction* Func = nullptr;
 
-	Params::UMatchmakingInputIndicator_C_ExecuteUbergraph_MatchmakingInputIndicator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MatchmakingInputIndicator_C", "ExecuteUbergraph_MatchmakingInputIndicator");
+
+	Params::UMatchmakingInputIndicator_C_ExecuteUbergraph_MatchmakingInputIndicator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetLocalPlayerSubsystem_ReturnValue = CallFunc_GetLocalPlayerSubsystem_ReturnValue;
@@ -60,6 +91,4 @@ void UMatchmakingInputIndicator_C::ExecuteUbergraph_MatchmakingInputIndicator(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

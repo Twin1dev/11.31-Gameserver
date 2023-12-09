@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_Galileo_Lobster_Block_Collision.B_Galileo_Lobster_Block_Collision_C
+// (Actor)
+
+class UClass* AB_Galileo_Lobster_Block_Collision_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Galileo_Lobster_Block_Collision_C");
+
+	return Clss;
+}
+
+
+// B_Galileo_Lobster_Block_Collision_C B_Galileo_Lobster_Block_Collision.Default__B_Galileo_Lobster_Block_Collision_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Galileo_Lobster_Block_Collision_C* AB_Galileo_Lobster_Block_Collision_C::GetDefaultObj()
+{
+	static class AB_Galileo_Lobster_Block_Collision_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Galileo_Lobster_Block_Collision_C*>(AB_Galileo_Lobster_Block_Collision_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function B_Galileo_Lobster_Block_Collision.B_Galileo_Lobster_Block_Collision_C.BlockedLobsterImpulse
@@ -53,9 +78,12 @@ namespace SDK
 
 void AB_Galileo_Lobster_Block_Collision_C::BlockedLobsterImpulse(const struct FHitResult& HitInfo, class ACharacter* Instigator, bool CallFunc_IsValid_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue, class UAnimMontage* CallFunc_GetCurrentMontage_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_1, float CallFunc_GetValueAtLevel_ReturnValue_2, float CallFunc_GetValueAtLevel_ReturnValue_3, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1, const struct FVector& CallFunc_Add_VectorVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "BlockedLobsterImpulse");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_BlockedLobsterImpulse_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "BlockedLobsterImpulse");
+
+	Params::AB_Galileo_Lobster_Block_Collision_C_BlockedLobsterImpulse_Params Parms{};
 
 	Parms.HitInfo = HitInfo;
 	Parms.Instigator = Instigator;
@@ -100,14 +128,17 @@ void AB_Galileo_Lobster_Block_Collision_C::BlockedLobsterImpulse(const struct FH
 // Parameters:
 // float                              Damage                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      DamageCauser                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              (None)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void AB_Galileo_Lobster_Block_Collision_C::SendBlockedDamageEvent(float Damage, class AActor* DamageCauser, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "SendBlockedDamageEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_SendBlockedDamageEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "SendBlockedDamageEvent");
+
+	Params::AB_Galileo_Lobster_Block_Collision_C_SendBlockedDamageEvent_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageCauser = DamageCauser;
@@ -128,9 +159,12 @@ void AB_Galileo_Lobster_Block_Collision_C::SendBlockedDamageEvent(float Damage, 
 
 void AB_Galileo_Lobster_Block_Collision_C::OnRep_CollisionEnabled(class AB_Athena_Galileo_Lobster_Parent_C* K2Node_DynamicCast_AsB_Athena_Galileo_Lobster_Parent, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Conv_IntToBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "OnRep_CollisionEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_OnRep_CollisionEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "OnRep_CollisionEnabled");
+
+	Params::AB_Galileo_Lobster_Block_Collision_C_OnRep_CollisionEnabled_Params Parms{};
 
 	Parms.K2Node_DynamicCast_AsB_Athena_Galileo_Lobster_Parent = K2Node_DynamicCast_AsB_Athena_Galileo_Lobster_Parent;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
@@ -159,21 +193,24 @@ void AB_Galileo_Lobster_Block_Collision_C::OnRep_CollisionEnabled(class AB_Athen
 // class AFortWeapon*                 K2Node_DynamicCast_AsFort_Weapon                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_2                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// struct FGameplayTagContainer       CallFunc_GetWeaponDataGameplayTags_GameplayTags                  ()
+// struct FGameplayTagContainer       CallFunc_GetWeaponDataGameplayTags_GameplayTags                  (None)
 // struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
 // class UAbilitySystemComponent*     CallFunc_GetAbilitySystemComponent_ReturnValue                   (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortTeamAffiliation    CallFunc_GetTeamAffiliation_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FActiveGameplayEffectHandle CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue                (NoDestructor, HasGetValueTypeHash)
 // struct FGameplayCueParameters      CallFunc_MakeGameplayCueParameters_ReturnValue                   (ContainsInstancedReference)
-// struct FGameplayTagContainer       CallFunc_MakeLiteralGameplayTagContainer_ReturnValue             ()
+// struct FGameplayTagContainer       CallFunc_MakeLiteralGameplayTagContainer_ReturnValue             (None)
 // bool                               CallFunc_HasAnyTags_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void AB_Galileo_Lobster_Block_Collision_C::ExecuteBlockGameplayCue(float Damage, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext, const struct FVector& ImpactColor, class AActor* Instigator, const struct FHitResult& HitResult, bool* WasGalileoBun, class AActor* CallFunc_GetOwner_ReturnValue, class ACharacter* K2Node_DynamicCast_AsCharacter, bool K2Node_DynamicCast_bSuccess, class AB_Prj_Bullet_Galileo_Bun_C* K2Node_DynamicCast_AsB_Prj_Bullet_Galileo_Bun, bool K2Node_DynamicCast_bSuccess_1, class AFortWeapon* K2Node_DynamicCast_AsFort_Weapon, bool K2Node_DynamicCast_bSuccess_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FGameplayTagContainer& CallFunc_GetWeaponDataGameplayTags_GameplayTags, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, enum class EFortTeamAffiliation CallFunc_GetTeamAffiliation_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue, const struct FGameplayTagContainer& CallFunc_MakeLiteralGameplayTagContainer_ReturnValue, bool CallFunc_HasAnyTags_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "ExecuteBlockGameplayCue");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_ExecuteBlockGameplayCue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "ExecuteBlockGameplayCue");
+
+	Params::AB_Galileo_Lobster_Block_Collision_C_ExecuteBlockGameplayCue_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageCauser = DamageCauser;
@@ -274,9 +311,12 @@ void AB_Galileo_Lobster_Block_Collision_C::ExecuteBlockGameplayCue(float Damage,
 
 void AB_Galileo_Lobster_Block_Collision_C::PlayHitReactMontage(const struct FHitResult& HitResult, const struct FVector& HitLocation, const TArray<class FName>& CurrentSelection, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, int32 CallFunc_Add_IntInt_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, int32 Temp_int_Array_Index_Variable, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, const struct FVector& CallFunc_LessLess_VectorRotator_ReturnValue, float CallFunc_Vector_HeadingAngle_ReturnValue, float CallFunc_RadiansToDegrees_ReturnValue, class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue, bool CallFunc_IsAnyMontagePlaying_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_Not_PreBool_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue_3, class AActor* CallFunc_GetOwner_ReturnValue, const struct FVector& CallFunc_GetActorUpVector_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_GetActorRightVector_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, float CallFunc_Dot_VectorVector_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_2, bool CallFunc_Greater_FloatFloat_ReturnValue, float CallFunc_Dot_VectorVector_ReturnValue_1, bool CallFunc_Greater_FloatFloat_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, const struct FDishHitReactSelectionInfo& CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue_1, int32 CallFunc_Array_Add_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_InRange_FloatFloat_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, int32 CallFunc_RandomIntegerInRange_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_PlayAnimMontage_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "PlayHitReactMontage");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_PlayHitReactMontage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "PlayHitReactMontage");
+
+	Params::AB_Galileo_Lobster_Block_Collision_C_PlayHitReactMontage_Params Parms{};
 
 	Parms.HitResult = HitResult;
 	Parms.HitLocation = HitLocation;
@@ -353,9 +393,12 @@ void AB_Galileo_Lobster_Block_Collision_C::PlayHitReactMontage(const struct FHit
 
 void AB_Galileo_Lobster_Block_Collision_C::GameplayCue_Damage(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "GameplayCue.Damage");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_GameplayCue_Damage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "GameplayCue.Damage");
+
+	Params::AB_Galileo_Lobster_Block_Collision_C_GameplayCue_Damage_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -378,9 +421,12 @@ void AB_Galileo_Lobster_Block_Collision_C::GameplayCue_Damage(enum class EGamepl
 
 void AB_Galileo_Lobster_Block_Collision_C::OnDamageServer(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "OnDamageServer");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_OnDamageServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "OnDamageServer");
+
+	Params::AB_Galileo_Lobster_Block_Collision_C_OnDamageServer_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -401,12 +447,14 @@ void AB_Galileo_Lobster_Block_Collision_C::OnDamageServer(float Damage, struct F
 
 void AB_Galileo_Lobster_Block_Collision_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -417,12 +465,14 @@ void AB_Galileo_Lobster_Block_Collision_C::ReceiveBeginPlay()
 
 void AB_Galileo_Lobster_Block_Collision_C::ApplyHeal()
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "ApplyHeal");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_ApplyHeal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "ApplyHeal");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -433,12 +483,14 @@ void AB_Galileo_Lobster_Block_Collision_C::ApplyHeal()
 
 void AB_Galileo_Lobster_Block_Collision_C::StartHealingTimer()
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "StartHealingTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_StartHealingTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "StartHealingTimer");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -456,9 +508,12 @@ void AB_Galileo_Lobster_Block_Collision_C::StartHealingTimer()
 
 void AB_Galileo_Lobster_Block_Collision_C::OnDeathServer(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "OnDeathServer");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_OnDeathServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "OnDeathServer");
+
+	Params::AB_Galileo_Lobster_Block_Collision_C_OnDeathServer_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -487,9 +542,12 @@ void AB_Galileo_Lobster_Block_Collision_C::OnDeathServer(float Damage, struct FG
 
 void AB_Galileo_Lobster_Block_Collision_C::CustomEvent_0(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "CustomEvent_0");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_CustomEvent_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "CustomEvent_0");
+
+	Params::AB_Galileo_Lobster_Block_Collision_C_CustomEvent_0_Params Parms{};
 
 	Parms.DamagedActor = DamagedActor;
 	Parms.Damage = Damage;
@@ -512,9 +570,12 @@ void AB_Galileo_Lobster_Block_Collision_C::CustomEvent_0(class AActor* DamagedAc
 
 void AB_Galileo_Lobster_Block_Collision_C::RemovalChecks(class AFortPlayerPawn* PlayerPawn)
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "RemovalChecks");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_RemovalChecks_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "RemovalChecks");
+
+	Params::AB_Galileo_Lobster_Block_Collision_C_RemovalChecks_Params Parms{};
 
 	Parms.PlayerPawn = PlayerPawn;
 
@@ -529,12 +590,14 @@ void AB_Galileo_Lobster_Block_Collision_C::RemovalChecks(class AFortPlayerPawn* 
 
 void AB_Galileo_Lobster_Block_Collision_C::OnPlayerStartDBNO_Event_0()
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "OnPlayerStartDBNO_Event_0");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_OnPlayerStartDBNO_Event_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "OnPlayerStartDBNO_Event_0");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -545,12 +608,14 @@ void AB_Galileo_Lobster_Block_Collision_C::OnPlayerStartDBNO_Event_0()
 
 void AB_Galileo_Lobster_Block_Collision_C::OnBuildingHealthChanged_Event()
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "OnBuildingHealthChanged_Event");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_OnBuildingHealthChanged_Event_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "OnBuildingHealthChanged_Event");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -563,9 +628,12 @@ void AB_Galileo_Lobster_Block_Collision_C::OnBuildingHealthChanged_Event()
 
 void AB_Galileo_Lobster_Block_Collision_C::SpawnReflectProj(const struct FHitResult& HitInfo, bool WasGalileoBun)
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "SpawnReflectProj");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_SpawnReflectProj_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "SpawnReflectProj");
+
+	Params::AB_Galileo_Lobster_Block_Collision_C_SpawnReflectProj_Params Parms{};
 
 	Parms.HitInfo = HitInfo;
 	Parms.WasGalileoBun = WasGalileoBun;
@@ -581,12 +649,14 @@ void AB_Galileo_Lobster_Block_Collision_C::SpawnReflectProj(const struct FHitRes
 
 void AB_Galileo_Lobster_Block_Collision_C::SetCanReflect()
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "SetCanReflect");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_SetCanReflect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "SetCanReflect");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -597,12 +667,14 @@ void AB_Galileo_Lobster_Block_Collision_C::SetCanReflect()
 
 void AB_Galileo_Lobster_Block_Collision_C::RemoveDeflectReaction()
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "RemoveDeflectReaction");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_RemoveDeflectReaction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "RemoveDeflectReaction");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -620,14 +692,14 @@ void AB_Galileo_Lobster_Block_Collision_C::RemoveDeflectReaction()
 // struct FHitResult                  K2Node_Event_HitInfo_1                                           (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AController*                 K2Node_Event_InstigatedBy_1                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser_1                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext_1                                     ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext_1                                     (None)
 // float                              CallFunc_BreakGameplayCueParameters_NormalizedMagnitude          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakGameplayCueParameters_RawMagnitude                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleCallFunc_BreakGameplayCueParameters_EffectContext                ()
+// struct FGameplayEffectContextHandleCallFunc_BreakGameplayCueParameters_EffectContext                (None)
 // struct FGameplayTag                CallFunc_BreakGameplayCueParameters_MatchedTagName               (NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                CallFunc_BreakGameplayCueParameters_OriginalTag                  (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedSourceTags         ()
-// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedTargetTags         ()
+// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedSourceTags         (None)
+// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedTargetTags         (None)
 // struct FVector                     CallFunc_BreakGameplayCueParameters_Location                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_BreakGameplayCueParameters_Normal                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_BreakGameplayCueParameters_Instigator                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -658,7 +730,7 @@ void AB_Galileo_Lobster_Block_Collision_C::RemoveDeflectReaction()
 // class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor)
-// struct FGameplayEffectContextHandleK2Node_MakeStruct_GameplayEffectContextHandle                    ()
+// struct FGameplayEffectContextHandleK2Node_MakeStruct_GameplayEffectContextHandle                    (None)
 // class UFortAbilitySystemComponent* CallFunc_GetFortAbilitySystemComponent_ReturnValue               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FActiveGameplayEffectHandle CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue                (NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GreaterEqual_FloatFloat_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -669,7 +741,7 @@ void AB_Galileo_Lobster_Block_Collision_C::RemoveDeflectReaction()
 // struct FHitResult                  K2Node_Event_HitInfo                                             (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AController*                 K2Node_Event_InstigatedBy                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       (None)
 // class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayCueParameters      CallFunc_MakeGameplayCueParameters_ReturnValue                   (ContainsInstancedReference)
 // class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn_1                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -734,7 +806,7 @@ void AB_Galileo_Lobster_Block_Collision_C::RemoveDeflectReaction()
 // float                              CallFunc_GetValueAtLevel_ReturnValue_4                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEffectContextHandleK2Node_MakeStruct_GameplayEffectContextHandle_1                  ()
+// struct FGameplayEffectContextHandleK2Node_MakeStruct_GameplayEffectContextHandle_1                  (None)
 // class UFortAbilitySystemComponent* CallFunc_GetFortAbilitySystemComponent_ReturnValue_2             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAbilitySystemComponent*     CallFunc_GetAbilitySystemComponent_ReturnValue                   (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAbilitySystemComponent*     CallFunc_GetAbilitySystemComponent_ReturnValue_1                 (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -774,9 +846,12 @@ void AB_Galileo_Lobster_Block_Collision_C::RemoveDeflectReaction()
 
 void AB_Galileo_Lobster_Block_Collision_C::ExecuteUbergraph_B_Galileo_Lobster_Block_Collision(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters, float K2Node_Event_Damage_1, const struct FGameplayTagContainer& K2Node_Event_DamageTags_1, const struct FVector& K2Node_Event_Momentum_1, const struct FHitResult& K2Node_Event_HitInfo_1, class AController* K2Node_Event_InstigatedBy_1, class AActor* K2Node_Event_DamageCauser_1, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext_1, float CallFunc_BreakGameplayCueParameters_NormalizedMagnitude, float CallFunc_BreakGameplayCueParameters_RawMagnitude, const struct FGameplayEffectContextHandle& CallFunc_BreakGameplayCueParameters_EffectContext, const struct FGameplayTag& CallFunc_BreakGameplayCueParameters_MatchedTagName, const struct FGameplayTag& CallFunc_BreakGameplayCueParameters_OriginalTag, const struct FGameplayTagContainer& CallFunc_BreakGameplayCueParameters_AggregatedSourceTags, const struct FGameplayTagContainer& CallFunc_BreakGameplayCueParameters_AggregatedTargetTags, const struct FVector& CallFunc_BreakGameplayCueParameters_Location, const struct FVector& CallFunc_BreakGameplayCueParameters_Normal, class AActor* CallFunc_BreakGameplayCueParameters_Instigator, class AActor* CallFunc_BreakGameplayCueParameters_EffectCauser, class UObject* CallFunc_BreakGameplayCueParameters_SourceObject, class UPhysicalMaterial* CallFunc_BreakGameplayCueParameters_PhysicalMaterial, int32 CallFunc_BreakGameplayCueParameters_GameplayEffectLevel, int32 CallFunc_BreakGameplayCueParameters_AbilityLevel, class USceneComponent* CallFunc_BreakGameplayCueParameters_TargetAttachComponent, const struct FHitResult& CallFunc_EffectContextGetHitResult_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, class APawn* CallFunc_K2_GetPawn_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FGameplayEffectContextHandle& K2Node_MakeStruct_GameplayEffectContextHandle, class UFortAbilitySystemComponent* CallFunc_GetFortAbilitySystemComponent_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue, float K2Node_Event_Damage, const struct FGameplayTagContainer& K2Node_Event_DamageTags, const struct FVector& K2Node_Event_Momentum, const struct FHitResult& K2Node_Event_HitInfo, class AController* K2Node_Event_InstigatedBy, class AActor* K2Node_Event_DamageCauser, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext, class AActor* CallFunc_GetOwner_ReturnValue, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_1, bool K2Node_DynamicCast_bSuccess_1, class AActor* K2Node_CustomEvent_DamagedActor, float K2Node_CustomEvent_Damage, class AController* K2Node_CustomEvent_InstigatedBy, class AActor* K2Node_CustomEvent_DamageCauser, const struct FVector& K2Node_CustomEvent_HitLocation, class UPrimitiveComponent* K2Node_CustomEvent_FHitComponent, class FName K2Node_CustomEvent_BoneName, const struct FVector& K2Node_CustomEvent_Momentum, class AFortPlayerPawn* K2Node_CustomEvent_PlayerPawn, class UFortAbilitySystemComponent* CallFunc_GetFortAbilitySystemComponent_ReturnValue_1, class AActor* CallFunc_GetOwner_ReturnValue_1, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue_1, enum class EFortTeamAffiliation CallFunc_GetTeamAffiliation_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, float CallFunc_GetHealth_ReturnValue, float CallFunc_GetMaxHealth_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, float CallFunc_NormalizeToRange_ReturnValue, uint8 CallFunc_GetActorTeam_ReturnValue, const struct FHitResult& K2Node_CustomEvent_HitInfo, bool K2Node_CustomEvent_WasGalileoBun, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit_1, bool CallFunc_BreakHitResult_bInitialOverlap_1, float CallFunc_BreakHitResult_Time_1, float CallFunc_BreakHitResult_Distance_1, const struct FVector& CallFunc_BreakHitResult_Location_1, const struct FVector& CallFunc_BreakHitResult_ImpactPoint_1, const struct FVector& CallFunc_BreakHitResult_Normal_1, const struct FVector& CallFunc_BreakHitResult_ImpactNormal_1, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat_1, class AActor* CallFunc_BreakHitResult_HitActor_1, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent_1, class FName CallFunc_BreakHitResult_HitBoneName_1, int32 CallFunc_BreakHitResult_HitItem_1, int32 CallFunc_BreakHitResult_FaceIndex_1, const struct FVector& CallFunc_BreakHitResult_TraceStart_1, const struct FVector& CallFunc_BreakHitResult_TraceEnd_1, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, const struct FTransform& CallFunc_Conv_VectorToTransform_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, float Temp_float_Variable, class AB_Prj_Galileo_Lobster_Reflect_C* CallFunc_FinishSpawningActor_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_NotEqual_FloatFloat_ReturnValue, float CallFunc_MapRangeClamped_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool Temp_bool_Variable, float CallFunc_GetValueAtLevel_ReturnValue_1, float K2Node_Select_Default, class UForceFeedbackComponent* CallFunc_SpawnForceFeedbackAtLocation_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_2, float CallFunc_GetValueAtLevel_ReturnValue_3, float CallFunc_GetValueAtLevel_ReturnValue_4, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FGameplayEffectContextHandle& K2Node_MakeStruct_GameplayEffectContextHandle_1, class UFortAbilitySystemComponent* CallFunc_GetFortAbilitySystemComponent_ReturnValue_2, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue_1, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue_2, bool Temp_bool_Variable_1, TArray<struct FActiveGameplayEffectHandle>& CallFunc_GetActiveEffectsWithAllTags_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_Array_Get_Item, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, float CallFunc_GetActiveGameplayEffectRemainingDuration_ReturnValue, float CallFunc_MapRangeClamped_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable, bool CallFunc_IsDedicatedServer_ReturnValue_1, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue_2, bool CallFunc_RemoveActiveGameplayEffect_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue_3, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, bool CallFunc_ExecuteBlockGameplayCue_WasGalileoBun, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_5, float K2Node_Select_Default_1, bool CallFunc_IsValid_ReturnValue_2, const struct FVector& CallFunc_RandomUnitVectorInConeInDegrees_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1, bool Temp_bool_IsClosed_Variable, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "ExecuteUbergraph_B_Galileo_Lobster_Block_Collision");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Lobster_Block_Collision_C_ExecuteUbergraph_B_Galileo_Lobster_Block_Collision_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Lobster_Block_Collision_C", "ExecuteUbergraph_B_Galileo_Lobster_Block_Collision");
+
+	Params::AB_Galileo_Lobster_Block_Collision_C_ExecuteUbergraph_B_Galileo_Lobster_Block_Collision_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -946,6 +1021,4 @@ void AB_Galileo_Lobster_Block_Collision_C::ExecuteUbergraph_B_Galileo_Lobster_Bl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

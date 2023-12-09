@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass Tracer_Shotgun.Tracer_Shotgun_C
+// (Actor)
+
+class UClass* ATracer_Shotgun_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Tracer_Shotgun_C");
+
+	return Clss;
+}
+
+
+// Tracer_Shotgun_C Tracer_Shotgun.Default__Tracer_Shotgun_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ATracer_Shotgun_C* ATracer_Shotgun_C::GetDefaultObj()
+{
+	static class ATracer_Shotgun_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ATracer_Shotgun_C*>(ATracer_Shotgun_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Tracer_Shotgun.Tracer_Shotgun_C.UserConstructionScript
 // (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ATracer_Shotgun_C::UserConstructionScript(const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult)
 {
-	static auto Func = Class->GetFunction("Tracer_Shotgun_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ATracer_Shotgun_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Tracer_Shotgun_C", "UserConstructionScript");
+
+	Params::ATracer_Shotgun_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_K2_SetRelativeRotation_SweepHitResult = CallFunc_K2_SetRelativeRotation_SweepHitResult;
 
@@ -39,12 +67,14 @@ void ATracer_Shotgun_C::UserConstructionScript(const struct FHitResult& CallFunc
 
 void ATracer_Shotgun_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("Tracer_Shotgun_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ATracer_Shotgun_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Tracer_Shotgun_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +86,12 @@ void ATracer_Shotgun_C::ReceiveBeginPlay()
 
 void ATracer_Shotgun_C::ExecuteUbergraph_Tracer_Shotgun(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("Tracer_Shotgun_C", "ExecuteUbergraph_Tracer_Shotgun");
+	static class UFunction* Func = nullptr;
 
-	Params::ATracer_Shotgun_C_ExecuteUbergraph_Tracer_Shotgun_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Tracer_Shotgun_C", "ExecuteUbergraph_Tracer_Shotgun");
+
+	Params::ATracer_Shotgun_C_ExecuteUbergraph_Tracer_Shotgun_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -68,6 +101,4 @@ void ATracer_Shotgun_C::ExecuteUbergraph_Tracer_Shotgun(int32 EntryPoint)
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

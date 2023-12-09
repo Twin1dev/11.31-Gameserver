@@ -8,9 +8,10 @@ void ServerCreateBuildingActorHook(UObject* Context, FFrame* Stack, void* Ret)
 	if (!PC)
 		return ServerCreateBuildingActor(Context, Stack, Ret);
 
-	auto CreateBuildingData = (FCreateBuildingActorData*)Stack->Locals;
+	auto CreateBuildingData = (FCreateBuildingActorData*)Stack->Locals; 
 
-	if (!PC->BroadcastRemoteClientInfo->RemoteBuildableClass.Get())
+	
+	if (!PC->BroadcastRemoteClientInfo->RemoteBuildableClass)
 		return ServerCreateBuildingActor(Context, Stack, Ret);
 
 	static __int64 (*CantBuild)(UObject*, UObject*, FVector, FRotator, char, TArray<ABuildingSMActor*>*, char*) = decltype(CantBuild)(BaseAddress() + 0x19ee0e0);
@@ -18,7 +19,7 @@ void ServerCreateBuildingActorHook(UObject* Context, FFrame* Stack, void* Ret)
 	TArray<ABuildingSMActor*> ExistingBuildings;
 	char Gangster;
 
-	bool bCanBuild = !CantBuild(GetWorld(), PC->BroadcastRemoteClientInfo->RemoteBuildableClass.Get(), CreateBuildingData->BuildLoc, CreateBuildingData->BuildRot, CreateBuildingData->bMirrored, &ExistingBuildings, &Gangster);
+	bool bCanBuild = !CantBuild(UWorld::GetWorld(), PC->BroadcastRemoteClientInfo->RemoteBuildableClass, CreateBuildingData->BuildLoc, CreateBuildingData->BuildRot, CreateBuildingData->bMirrored, &ExistingBuildings, &Gangster);
 
 	if (bCanBuild)
 	{
@@ -29,7 +30,7 @@ void ServerCreateBuildingActorHook(UObject* Context, FFrame* Stack, void* Ret)
 			ExistingBuilding->K2_DestroyActor();
 		}
 
-		auto NewBuilding = SpawnActor<ABuildingSMActor>(CreateBuildingData->BuildLoc, CreateBuildingData->BuildRot, PC->BroadcastRemoteClientInfo->RemoteBuildableClass.Get());
+		auto NewBuilding = SpawnActor<ABuildingSMActor>(CreateBuildingData->BuildLoc, CreateBuildingData->BuildRot, PC->BroadcastRemoteClientInfo->RemoteBuildableClass);
 
 		if (NewBuilding)
 		{
@@ -50,6 +51,26 @@ void ServerCreateBuildingActorHook(UObject* Context, FFrame* Stack, void* Ret)
 
 
 	return ServerCreateBuildingActor(Context, Stack, Ret);
+}
+
+
+void ServerAttemptAircraftJumpHook(UFortControllerComponent_Aircraft* Comp, FRotator ClientRotation)
+{
+	AFortPlayerControllerAthena* PC = (AFortPlayerControllerAthena*)Comp->GetOwner();
+
+	GetGameMode()->RestartPlayer(PC);
+
+	if (PC->MyFortPawn)
+	{
+		PC->MyFortPawn->BeginSkydiving(true);
+		PC->MyFortPawn->SetHealth(100);
+	}
+}
+
+void (*ServerReadyToStartMatch)(AFortPlayerControllerAthena*);
+void ServerReadyToStartMatchHook(AFortPlayerControllerAthena* PlayerController)
+{
+	return ServerReadyToStartMatch(PlayerController);
 }
 
 // holy frickin proper!

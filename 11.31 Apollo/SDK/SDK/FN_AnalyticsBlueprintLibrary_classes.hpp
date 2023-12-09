@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class UAnalyticsBlueprintLibrary : public UBlueprintFunctionLibrary
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AnalyticsBlueprintLibrary");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAnalyticsBlueprintLibrary* GetDefaultObj();
 
 	bool StartSessionWithAttributes(TArray<struct FAnalyticsEventAttr>& Attributes);
 	bool StartSession();
@@ -57,6 +51,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

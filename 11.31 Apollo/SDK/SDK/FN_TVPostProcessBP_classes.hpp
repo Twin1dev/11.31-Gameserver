@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -22,11 +19,8 @@ public:
 	class USceneComponent*                       Root;                                              // 0x228(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                         DisableOnStartup;                                  // 0x230(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("TVPostProcessBP_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ATVPostProcessBP_C* GetDefaultObj();
 
 	void IsEnabledForCurrentSubgame(bool* bEnabled);
 	void UserConstructionScript();
@@ -38,6 +32,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

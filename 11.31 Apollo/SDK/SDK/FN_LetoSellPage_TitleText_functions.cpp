@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass LetoSellPage_TitleText.LetoSellPage_TitleText_C
+// (None)
+
+class UClass* ULetoSellPage_TitleText_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LetoSellPage_TitleText_C");
+
+	return Clss;
+}
+
+
+// LetoSellPage_TitleText_C LetoSellPage_TitleText.Default__LetoSellPage_TitleText_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULetoSellPage_TitleText_C* ULetoSellPage_TitleText_C::GetDefaultObj()
+{
+	static class ULetoSellPage_TitleText_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULetoSellPage_TitleText_C*>(ULetoSellPage_TitleText_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function LetoSellPage_TitleText.LetoSellPage_TitleText_C.ExecuteUbergraph_LetoSellPage_TitleText
 // (Final, UbergraphFunction)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ULetoSellPage_TitleText_C::ExecuteUbergraph_LetoSellPage_TitleText(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("LetoSellPage_TitleText_C", "ExecuteUbergraph_LetoSellPage_TitleText");
+	static class UFunction* Func = nullptr;
 
-	Params::ULetoSellPage_TitleText_C_ExecuteUbergraph_LetoSellPage_TitleText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LetoSellPage_TitleText_C", "ExecuteUbergraph_LetoSellPage_TitleText");
+
+	Params::ULetoSellPage_TitleText_C_ExecuteUbergraph_LetoSellPage_TitleText_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -34,6 +62,4 @@ void ULetoSellPage_TitleText_C::ExecuteUbergraph_LetoSellPage_TitleText(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

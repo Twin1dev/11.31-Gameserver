@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass HelpEntryBodyWidget.HelpEntryBodyWidget_C
+// (None)
+
+class UClass* UHelpEntryBodyWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("HelpEntryBodyWidget_C");
+
+	return Clss;
+}
+
+
+// HelpEntryBodyWidget_C HelpEntryBodyWidget.Default__HelpEntryBodyWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UHelpEntryBodyWidget_C* UHelpEntryBodyWidget_C::GetDefaultObj()
+{
+	static class UHelpEntryBodyWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UHelpEntryBodyWidget_C*>(UHelpEntryBodyWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function HelpEntryBodyWidget.HelpEntryBodyWidget_C.ResetAdditionalContent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UHelpEntryBodyWidget_C::ResetAdditionalContent()
 {
-	static auto Func = Class->GetFunction("HelpEntryBodyWidget_C", "ResetAdditionalContent");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpEntryBodyWidget_C_ResetAdditionalContent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpEntryBodyWidget_C", "ResetAdditionalContent");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -40,9 +67,12 @@ void UHelpEntryBodyWidget_C::ResetAdditionalContent()
 
 void UHelpEntryBodyWidget_C::UpdateAdditionalImage(class UImage* ImageComponent, enum class EFortHelpContentLocation Temp_byte_Variable, class UImage* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("HelpEntryBodyWidget_C", "UpdateAdditionalImage");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpEntryBodyWidget_C_UpdateAdditionalImage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpEntryBodyWidget_C", "UpdateAdditionalImage");
+
+	Params::UHelpEntryBodyWidget_C_UpdateAdditionalImage_Params Parms{};
 
 	Parms.ImageComponent = ImageComponent;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -65,9 +95,12 @@ void UHelpEntryBodyWidget_C::UpdateAdditionalImage(class UImage* ImageComponent,
 
 void UHelpEntryBodyWidget_C::UpdateAdditionalWidget(class UPanelWidget* ContentContainer, enum class EFortHelpContentLocation Temp_byte_Variable, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UUserWidget* CallFunc_Create_ReturnValue, class UPanelWidget* K2Node_Select_Default, class UPanelSlot* CallFunc_AddChild_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HelpEntryBodyWidget_C", "UpdateAdditionalWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpEntryBodyWidget_C_UpdateAdditionalWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpEntryBodyWidget_C", "UpdateAdditionalWidget");
+
+	Params::UHelpEntryBodyWidget_C_UpdateAdditionalWidget_Params Parms{};
 
 	Parms.ContentContainer = ContentContainer;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -87,12 +120,14 @@ void UHelpEntryBodyWidget_C::UpdateAdditionalWidget(class UPanelWidget* ContentC
 
 void UHelpEntryBodyWidget_C::UpdateBodyText()
 {
-	static auto Func = Class->GetFunction("HelpEntryBodyWidget_C", "UpdateBodyText");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpEntryBodyWidget_C_UpdateBodyText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpEntryBodyWidget_C", "UpdateBodyText");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,9 +140,12 @@ void UHelpEntryBodyWidget_C::UpdateBodyText()
 
 void UHelpEntryBodyWidget_C::SetActiveEntry(class UFortHelpItem* InHelpItem, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HelpEntryBodyWidget_C", "SetActiveEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpEntryBodyWidget_C_SetActiveEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpEntryBodyWidget_C", "SetActiveEntry");
+
+	Params::UHelpEntryBodyWidget_C_SetActiveEntry_Params Parms{};
 
 	Parms.InHelpItem = InHelpItem;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -118,6 +156,4 @@ void UHelpEntryBodyWidget_C::SetActiveEntry(class UFortHelpItem* InHelpItem, boo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

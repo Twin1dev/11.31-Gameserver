@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,16 +12,47 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ActivityBrowserTag.ActivityBrowserTag_C
+// (None)
+
+class UClass* UActivityBrowserTag_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ActivityBrowserTag_C");
+
+	return Clss;
+}
+
+
+// ActivityBrowserTag_C ActivityBrowserTag.Default__ActivityBrowserTag_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UActivityBrowserTag_C* UActivityBrowserTag_C::GetDefaultObj()
+{
+	static class UActivityBrowserTag_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UActivityBrowserTag_C*>(UActivityBrowserTag_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ActivityBrowserTag.ActivityBrowserTag_C.HandleStyling
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 
 void UActivityBrowserTag_C::HandleStyling(const struct FSlateColor& K2Node_MakeStruct_SlateColor)
 {
-	static auto Func = Class->GetFunction("ActivityBrowserTag_C", "HandleStyling");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityBrowserTag_C_HandleStyling_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityBrowserTag_C", "HandleStyling");
+
+	Params::UActivityBrowserTag_C_HandleStyling_Params Parms{};
 
 	Parms.K2Node_MakeStruct_SlateColor = K2Node_MakeStruct_SlateColor;
 
@@ -40,9 +68,12 @@ void UActivityBrowserTag_C::HandleStyling(const struct FSlateColor& K2Node_MakeS
 
 void UActivityBrowserTag_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("ActivityBrowserTag_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityBrowserTag_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityBrowserTag_C", "PreConstruct");
+
+	Params::UActivityBrowserTag_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -57,12 +88,14 @@ void UActivityBrowserTag_C::PreConstruct(bool IsDesignTime)
 
 void UActivityBrowserTag_C::Construct()
 {
-	static auto Func = Class->GetFunction("ActivityBrowserTag_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityBrowserTag_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityBrowserTag_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -75,9 +108,12 @@ void UActivityBrowserTag_C::Construct()
 
 void UActivityBrowserTag_C::ExecuteUbergraph_ActivityBrowserTag(int32 EntryPoint, bool K2Node_Event_IsDesignTime)
 {
-	static auto Func = Class->GetFunction("ActivityBrowserTag_C", "ExecuteUbergraph_ActivityBrowserTag");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityBrowserTag_C_ExecuteUbergraph_ActivityBrowserTag_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityBrowserTag_C", "ExecuteUbergraph_ActivityBrowserTag");
+
+	Params::UActivityBrowserTag_C_ExecuteUbergraph_ActivityBrowserTag_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -88,6 +124,4 @@ void UActivityBrowserTag_C::ExecuteUbergraph_ActivityBrowserTag(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

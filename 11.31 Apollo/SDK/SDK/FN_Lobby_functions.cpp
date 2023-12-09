@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class Lobby.LobbyBeaconClient
+// (Actor)
+
+class UClass* ALobbyBeaconClient::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LobbyBeaconClient");
+
+	return Clss;
+}
+
+
+// LobbyBeaconClient Lobby.Default__LobbyBeaconClient
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ALobbyBeaconClient* ALobbyBeaconClient::GetDefaultObj()
+{
+	static class ALobbyBeaconClient* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ALobbyBeaconClient*>(ALobbyBeaconClient::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Lobby.LobbyBeaconClient.ServerSetPartyOwner
 // (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
@@ -23,20 +48,23 @@ namespace SDK
 
 void ALobbyBeaconClient::ServerSetPartyOwner(struct FUniqueNetIdRepl& InUniqueId, struct FUniqueNetIdRepl& InPartyOwnerId)
 {
-	static auto Func = Class->GetFunction("LobbyBeaconClient", "ServerSetPartyOwner");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconClient_ServerSetPartyOwner_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconClient", "ServerSetPartyOwner");
+
+	Params::ALobbyBeaconClient_ServerSetPartyOwner_Params Parms{};
 
 	Parms.InUniqueId = InUniqueId;
 	Parms.InPartyOwnerId = InPartyOwnerId;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -47,18 +75,20 @@ void ALobbyBeaconClient::ServerSetPartyOwner(struct FUniqueNetIdRepl& InUniqueId
 
 void ALobbyBeaconClient::ServerNotifyJoiningServer()
 {
-	static auto Func = Class->GetFunction("LobbyBeaconClient", "ServerNotifyJoiningServer");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconClient_ServerNotifyJoiningServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconClient", "ServerNotifyJoiningServer");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -72,21 +102,24 @@ void ALobbyBeaconClient::ServerNotifyJoiningServer()
 
 void ALobbyBeaconClient::ServerLoginPlayer(const class FString& InSessionId, struct FUniqueNetIdRepl& InUniqueId, const class FString& UrlString)
 {
-	static auto Func = Class->GetFunction("LobbyBeaconClient", "ServerLoginPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconClient_ServerLoginPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconClient", "ServerLoginPlayer");
+
+	Params::ALobbyBeaconClient_ServerLoginPlayer_Params Parms{};
 
 	Parms.InSessionId = InSessionId;
 	Parms.InUniqueId = InUniqueId;
 	Parms.UrlString = UrlString;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -99,20 +132,23 @@ void ALobbyBeaconClient::ServerLoginPlayer(const class FString& InSessionId, str
 
 void ALobbyBeaconClient::ServerKickPlayer(struct FUniqueNetIdRepl& PlayerToKick, class FText& Reason)
 {
-	static auto Func = Class->GetFunction("LobbyBeaconClient", "ServerKickPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconClient_ServerKickPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconClient", "ServerKickPlayer");
+
+	Params::ALobbyBeaconClient_ServerKickPlayer_Params Parms{};
 
 	Parms.PlayerToKick = PlayerToKick;
 	Parms.Reason = Reason;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -123,18 +159,20 @@ void ALobbyBeaconClient::ServerKickPlayer(struct FUniqueNetIdRepl& PlayerToKick,
 
 void ALobbyBeaconClient::ServerDisconnectFromLobby()
 {
-	static auto Func = Class->GetFunction("LobbyBeaconClient", "ServerDisconnectFromLobby");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconClient_ServerDisconnectFromLobby_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconClient", "ServerDisconnectFromLobby");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -146,19 +184,22 @@ void ALobbyBeaconClient::ServerDisconnectFromLobby()
 
 void ALobbyBeaconClient::ServerCheat(const class FString& Msg)
 {
-	static auto Func = Class->GetFunction("LobbyBeaconClient", "ServerCheat");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconClient_ServerCheat_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconClient", "ServerCheat");
+
+	Params::ALobbyBeaconClient_ServerCheat_Params Parms{};
 
 	Parms.Msg = Msg;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -170,19 +211,22 @@ void ALobbyBeaconClient::ServerCheat(const class FString& Msg)
 
 void ALobbyBeaconClient::ClientWasKicked(class FText& KickReason)
 {
-	static auto Func = Class->GetFunction("LobbyBeaconClient", "ClientWasKicked");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconClient_ClientWasKicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconClient", "ClientWasKicked");
+
+	Params::ALobbyBeaconClient_ClientWasKicked_Params Parms{};
 
 	Parms.KickReason = KickReason;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -194,19 +238,22 @@ void ALobbyBeaconClient::ClientWasKicked(class FText& KickReason)
 
 void ALobbyBeaconClient::ClientSetInviteFlags(struct FJoinabilitySettings& Settings)
 {
-	static auto Func = Class->GetFunction("LobbyBeaconClient", "ClientSetInviteFlags");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconClient_ClientSetInviteFlags_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconClient", "ClientSetInviteFlags");
+
+	Params::ALobbyBeaconClient_ClientSetInviteFlags_Params Parms{};
 
 	Parms.Settings = Settings;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -218,19 +265,22 @@ void ALobbyBeaconClient::ClientSetInviteFlags(struct FJoinabilitySettings& Setti
 
 void ALobbyBeaconClient::ClientPlayerLeft(struct FUniqueNetIdRepl& InUniqueId)
 {
-	static auto Func = Class->GetFunction("LobbyBeaconClient", "ClientPlayerLeft");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconClient_ClientPlayerLeft_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconClient", "ClientPlayerLeft");
+
+	Params::ALobbyBeaconClient_ClientPlayerLeft_Params Parms{};
 
 	Parms.InUniqueId = InUniqueId;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -243,20 +293,23 @@ void ALobbyBeaconClient::ClientPlayerLeft(struct FUniqueNetIdRepl& InUniqueId)
 
 void ALobbyBeaconClient::ClientPlayerJoined(class FText& NewPlayerName, struct FUniqueNetIdRepl& InUniqueId)
 {
-	static auto Func = Class->GetFunction("LobbyBeaconClient", "ClientPlayerJoined");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconClient_ClientPlayerJoined_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconClient", "ClientPlayerJoined");
+
+	Params::ALobbyBeaconClient_ClientPlayerJoined_Params Parms{};
 
 	Parms.NewPlayerName = NewPlayerName;
 	Parms.InUniqueId = InUniqueId;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -269,20 +322,23 @@ void ALobbyBeaconClient::ClientPlayerJoined(class FText& NewPlayerName, struct F
 
 void ALobbyBeaconClient::ClientLoginComplete(struct FUniqueNetIdRepl& InUniqueId, bool bWasSuccessful)
 {
-	static auto Func = Class->GetFunction("LobbyBeaconClient", "ClientLoginComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconClient_ClientLoginComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconClient", "ClientLoginComplete");
+
+	Params::ALobbyBeaconClient_ClientLoginComplete_Params Parms{};
 
 	Parms.InUniqueId = InUniqueId;
 	Parms.bWasSuccessful = bWasSuccessful;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -293,18 +349,20 @@ void ALobbyBeaconClient::ClientLoginComplete(struct FUniqueNetIdRepl& InUniqueId
 
 void ALobbyBeaconClient::ClientJoinGame()
 {
-	static auto Func = Class->GetFunction("LobbyBeaconClient", "ClientJoinGame");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconClient_ClientJoinGame_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconClient", "ClientJoinGame");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -315,19 +373,77 @@ void ALobbyBeaconClient::ClientJoinGame()
 
 void ALobbyBeaconClient::ClientAckJoiningServer()
 {
-	static auto Func = Class->GetFunction("LobbyBeaconClient", "ClientAckJoiningServer");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconClient_ClientAckJoiningServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconClient", "ClientAckJoiningServer");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class Lobby.LobbyBeaconHost
+// (Actor)
+
+class UClass* ALobbyBeaconHost::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LobbyBeaconHost");
+
+	return Clss;
+}
+
+
+// LobbyBeaconHost Lobby.Default__LobbyBeaconHost
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ALobbyBeaconHost* ALobbyBeaconHost::GetDefaultObj()
+{
+	static class ALobbyBeaconHost* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ALobbyBeaconHost*>(ALobbyBeaconHost::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Lobby.LobbyBeaconPlayerState
+// (Actor)
+
+class UClass* ALobbyBeaconPlayerState::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LobbyBeaconPlayerState");
+
+	return Clss;
+}
+
+
+// LobbyBeaconPlayerState Lobby.Default__LobbyBeaconPlayerState
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ALobbyBeaconPlayerState* ALobbyBeaconPlayerState::GetDefaultObj()
+{
+	static class ALobbyBeaconPlayerState* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ALobbyBeaconPlayerState*>(ALobbyBeaconPlayerState::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -337,18 +453,20 @@ void ALobbyBeaconClient::ClientAckJoiningServer()
 
 void ALobbyBeaconPlayerState::OnRep_UniqueId()
 {
-	static auto Func = Class->GetFunction("LobbyBeaconPlayerState", "OnRep_UniqueId");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconPlayerState_OnRep_UniqueId_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconPlayerState", "OnRep_UniqueId");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -359,18 +477,20 @@ void ALobbyBeaconPlayerState::OnRep_UniqueId()
 
 void ALobbyBeaconPlayerState::OnRep_PartyOwner()
 {
-	static auto Func = Class->GetFunction("LobbyBeaconPlayerState", "OnRep_PartyOwner");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconPlayerState_OnRep_PartyOwner_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconPlayerState", "OnRep_PartyOwner");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -381,19 +501,49 @@ void ALobbyBeaconPlayerState::OnRep_PartyOwner()
 
 void ALobbyBeaconPlayerState::OnRep_InLobby()
 {
-	static auto Func = Class->GetFunction("LobbyBeaconPlayerState", "OnRep_InLobby");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconPlayerState_OnRep_InLobby_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconPlayerState", "OnRep_InLobby");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class Lobby.LobbyBeaconState
+// (Actor)
+
+class UClass* ALobbyBeaconState::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LobbyBeaconState");
+
+	return Clss;
+}
+
+
+// LobbyBeaconState Lobby.Default__LobbyBeaconState
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ALobbyBeaconState* ALobbyBeaconState::GetDefaultObj()
+{
+	static class ALobbyBeaconState* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ALobbyBeaconState*>(ALobbyBeaconState::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -403,18 +553,20 @@ void ALobbyBeaconPlayerState::OnRep_InLobby()
 
 void ALobbyBeaconState::OnRep_WaitForPlayersTimeRemaining()
 {
-	static auto Func = Class->GetFunction("LobbyBeaconState", "OnRep_WaitForPlayersTimeRemaining");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconState_OnRep_WaitForPlayersTimeRemaining_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconState", "OnRep_WaitForPlayersTimeRemaining");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -425,23 +577,23 @@ void ALobbyBeaconState::OnRep_WaitForPlayersTimeRemaining()
 
 void ALobbyBeaconState::OnRep_LobbyStarted()
 {
-	static auto Func = Class->GetFunction("LobbyBeaconState", "OnRep_LobbyStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::ALobbyBeaconState_OnRep_LobbyStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyBeaconState", "OnRep_LobbyStarted");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
-
-}
+	Func->FunctionFlags = Flgs;
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+}
+
+

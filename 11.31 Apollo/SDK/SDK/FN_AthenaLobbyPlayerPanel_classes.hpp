@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -28,11 +25,8 @@ public:
 	class FText                                  SentInviteText;                                    // 0x718(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  AcceptedInviteText;                                // 0x730(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaLobbyPlayerPanel_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaLobbyPlayerPanel_C* GetDefaultObj();
 
 	struct FEventReply OnMouseButtonDown_0(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Handled_ReturnValue);
 	void OnHasBattlePassUpdated(bool bHasBattlePass);
@@ -44,6 +38,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

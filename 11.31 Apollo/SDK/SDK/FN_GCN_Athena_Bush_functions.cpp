@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GCN_Athena_Bush.GCN_Athena_Bush_C
+// (Actor)
+
+class UClass* AGCN_Athena_Bush_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCN_Athena_Bush_C");
+
+	return Clss;
+}
+
+
+// GCN_Athena_Bush_C GCN_Athena_Bush.Default__GCN_Athena_Bush_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCN_Athena_Bush_C* AGCN_Athena_Bush_C::GetDefaultObj()
+{
+	static class AGCN_Athena_Bush_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCN_Athena_Bush_C*>(AGCN_Athena_Bush_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GCN_Athena_Bush.GCN_Athena_Bush_C.OpacityFade__FinishedFunc
 // (BlueprintEvent)
 // Parameters:
 
 void AGCN_Athena_Bush_C::OpacityFade__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("GCN_Athena_Bush_C", "OpacityFade__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_Bush_C_OpacityFade__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_Bush_C", "OpacityFade__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AGCN_Athena_Bush_C::OpacityFade__FinishedFunc()
 
 void AGCN_Athena_Bush_C::OpacityFade__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("GCN_Athena_Bush_C", "OpacityFade__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_Bush_C_OpacityFade__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_Bush_C", "OpacityFade__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -54,9 +83,12 @@ void AGCN_Athena_Bush_C::OpacityFade__UpdateFunc()
 
 void AGCN_Athena_Bush_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("GCN_Athena_Bush_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_Bush_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_Bush_C", "ReceiveTick");
+
+	Params::AGCN_Athena_Bush_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -71,12 +103,14 @@ void AGCN_Athena_Bush_C::ReceiveTick(float DeltaSeconds)
 
 void AGCN_Athena_Bush_C::On_Player_Step()
 {
-	static auto Func = Class->GetFunction("GCN_Athena_Bush_C", "On Player Step");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_Bush_C_On_Player_Step_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_Bush_C", "On Player Step");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -91,9 +125,12 @@ void AGCN_Athena_Bush_C::On_Player_Step()
 
 void AGCN_Athena_Bush_C::OnLoopingStart(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents)
 {
-	static auto Func = Class->GetFunction("GCN_Athena_Bush_C", "OnLoopingStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_Bush_C_OnLoopingStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_Bush_C", "OnLoopingStart");
+
+	Params::AGCN_Athena_Bush_C_OnLoopingStart_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -117,9 +154,12 @@ void AGCN_Athena_Bush_C::OnLoopingStart(class AActor* MyTarget, struct FGameplay
 
 void AGCN_Athena_Bush_C::OnRemoval(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static auto Func = Class->GetFunction("GCN_Athena_Bush_C", "OnRemoval");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_Bush_C_OnRemoval_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_Bush_C", "OnRemoval");
+
+	Params::AGCN_Athena_Bush_C_OnRemoval_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -189,9 +229,12 @@ void AGCN_Athena_Bush_C::OnRemoval(class AActor* MyTarget, struct FGameplayCuePa
 
 void AGCN_Athena_Bush_C::ExecuteUbergraph_GCN_Athena_Bush(int32 EntryPoint, bool Temp_bool_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable_1, bool CallFunc_IsValid_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, float K2Node_Event_DeltaSeconds, bool CallFunc_IsValid_ReturnValue_1, const struct FVector& CallFunc_GetVelocity_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, float CallFunc_VSize_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_FClamp_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena_1, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsLocallyControlled_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class USoundBase* K2Node_Select_Default, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena_2, bool K2Node_DynamicCast_bSuccess_2, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult, class AActor* K2Node_Event_MyTarget_1, const struct FGameplayCueParameters& K2Node_Event_Parameters_1, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents_1, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents_1, class AActor* K2Node_Event_MyTarget, const struct FGameplayCueParameters& K2Node_Event_Parameters, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents, class UCameraShake* K2Node_Event_BurstCameraShakeInstance, class ADecalActor* K2Node_Event_BurstDecalInstance, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1, float CallFunc_EvaluateCurveTableRow_OutXY, bool CallFunc_EvaluateCurveTableRow_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, const struct FTransform& CallFunc_GetTransform_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, const struct FRotator& CallFunc_MakeRotator_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCN_Athena_Bush_C", "ExecuteUbergraph_GCN_Athena_Bush");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_Bush_C_ExecuteUbergraph_GCN_Athena_Bush_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_Bush_C", "ExecuteUbergraph_GCN_Athena_Bush");
+
+	Params::AGCN_Athena_Bush_C_ExecuteUbergraph_GCN_Athena_Bush_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -250,6 +293,4 @@ void AGCN_Athena_Bush_C::ExecuteUbergraph_GCN_Athena_Bush(int32 EntryPoint, bool
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TextStyle-Base-XS-B-EnchantedBlue.TextStyle-Base-XS-B-EnchantedBlue_C
+// (None)
+
+class UClass* UTextStyleMinusBaseMinusXSMinusBMinusEnchantedBlue_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextStyle-Base-XS-B-EnchantedBlue_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// TextStyle-Base-XS-B-EnchantedBlue_C TextStyle-Base-XS-B-EnchantedBlue.Default__TextStyle-Base-XS-B-EnchantedBlue_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTextStyleMinusBaseMinusXSMinusBMinusEnchantedBlue_C* UTextStyleMinusBaseMinusXSMinusBMinusEnchantedBlue_C::GetDefaultObj()
+{
+	static class UTextStyleMinusBaseMinusXSMinusBMinusEnchantedBlue_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextStyleMinusBaseMinusXSMinusBMinusEnchantedBlue_C*>(UTextStyleMinusBaseMinusXSMinusBMinusEnchantedBlue_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

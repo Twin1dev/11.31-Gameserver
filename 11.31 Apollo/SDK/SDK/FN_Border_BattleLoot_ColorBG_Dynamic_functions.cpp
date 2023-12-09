@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Border_BattleLoot_ColorBG_Dynamic.Border_BattleLoot_ColorBG_Dynamic_C
+// (None)
+
+class UClass* UBorder_BattleLoot_ColorBG_Dynamic_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Border_BattleLoot_ColorBG_Dynamic_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Border_BattleLoot_ColorBG_Dynamic_C Border_BattleLoot_ColorBG_Dynamic.Default__Border_BattleLoot_ColorBG_Dynamic_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBorder_BattleLoot_ColorBG_Dynamic_C* UBorder_BattleLoot_ColorBG_Dynamic_C::GetDefaultObj()
+{
+	static class UBorder_BattleLoot_ColorBG_Dynamic_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorder_BattleLoot_ColorBG_Dynamic_C*>(UBorder_BattleLoot_ColorBG_Dynamic_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

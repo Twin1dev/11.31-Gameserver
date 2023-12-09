@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GAB_Spray_Generic.GAB_Spray_Generic_C
+// (None)
+
+class UClass* UGAB_Spray_Generic_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAB_Spray_Generic_C");
+
+	return Clss;
+}
+
+
+// GAB_Spray_Generic_C GAB_Spray_Generic.Default__GAB_Spray_Generic_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAB_Spray_Generic_C* UGAB_Spray_Generic_C::GetDefaultObj()
+{
+	static class UGAB_Spray_Generic_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAB_Spray_Generic_C*>(UGAB_Spray_Generic_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GAB_Spray_Generic.GAB_Spray_Generic_C.GetMontageToPlay
@@ -29,9 +54,12 @@ namespace SDK
 
 TSoftObjectPtr<class UAnimMontage> UGAB_Spray_Generic_C::GetMontageToPlay(class UFortMontageItemDefinitionBase* EmoteAsset, enum class EFortCustomBodyType BodyType, enum class EFortCustomGender Gender, enum class EFortCustomGender Temp_byte_Variable, TSoftObjectPtr<class UAnimMontage> CallFunc_GetMontageToPlay_ReturnValue, bool CallFunc_IsAssetNull_ReturnValue, TSoftObjectPtr<class UAnimMontage> K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("GAB_Spray_Generic_C", "GetMontageToPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Spray_Generic_C_GetMontageToPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Spray_Generic_C", "GetMontageToPlay");
+
+	Params::UGAB_Spray_Generic_C_GetMontageToPlay_Params Parms{};
 
 	Parms.EmoteAsset = EmoteAsset;
 	Parms.BodyType = BodyType;
@@ -95,9 +123,12 @@ TSoftObjectPtr<class UAnimMontage> UGAB_Spray_Generic_C::GetMontageToPlay(class 
 
 void UGAB_Spray_Generic_C::TargetLineTrace(class AFortPawn* ActivatingPawn, bool* HitSomething, struct FVector* Location, struct FVector* Normal, const struct FRotator& CallFunc_GetBaseAimRotation_ReturnValue, TArray<class AActor*>& K2Node_MakeArray_Array, const struct FVector& CallFunc_GetForwardVector_ReturnValue, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, class UCapsuleComponent* K2Node_DynamicCast_AsCapsule_Collision, bool K2Node_DynamicCast_bSuccess, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_Add_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FHitResult& CallFunc_LineTraceSingle_OutHit, bool CallFunc_LineTraceSingle_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor, bool K2Node_DynamicCast_bSuccess_1, class ABuildingGameplayActor* K2Node_DynamicCast_AsBuilding_Gameplay_Actor, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_AcceptsEmoteSprays_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAB_Spray_Generic_C", "TargetLineTrace");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Spray_Generic_C_TargetLineTrace_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Spray_Generic_C", "TargetLineTrace");
+
+	Params::UGAB_Spray_Generic_C_TargetLineTrace_Params Parms{};
 
 	Parms.ActivatingPawn = ActivatingPawn;
 	Parms.CallFunc_GetBaseAimRotation_ReturnValue = CallFunc_GetBaseAimRotation_ReturnValue;
@@ -144,10 +175,10 @@ void UGAB_Spray_Generic_C::TargetLineTrace(class AFortPawn* ActivatingPawn, bool
 		*HitSomething = Parms.HitSomething;
 
 	if (Location != nullptr)
-		*Location = Parms.Location;
+		*Location = std::move(Parms.Location);
 
 	if (Normal != nullptr)
-		*Normal = Parms.Normal;
+		*Normal = std::move(Parms.Normal);
 
 }
 
@@ -158,12 +189,14 @@ void UGAB_Spray_Generic_C::TargetLineTrace(class AFortPawn* ActivatingPawn, bool
 
 void UGAB_Spray_Generic_C::OnMontageStartedPlaying()
 {
-	static auto Func = Class->GetFunction("GAB_Spray_Generic_C", "OnMontageStartedPlaying");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Spray_Generic_C_OnMontageStartedPlaying_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Spray_Generic_C", "OnMontageStartedPlaying");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -195,9 +228,12 @@ void UGAB_Spray_Generic_C::OnMontageStartedPlaying()
 
 void UGAB_Spray_Generic_C::ExecuteUbergraph_GAB_Spray_Generic(int32 EntryPoint, bool CallFunc_IsServer_ReturnValue, class UObject* CallFunc_GetCurrentSourceObject_ReturnValue, class UAthenaSprayItemDefinition* K2Node_DynamicCast_AsAthena_Spray_Item_Definition, bool K2Node_DynamicCast_bSuccess, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue_1, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_TargetLineTrace_HitSomething, const struct FVector& CallFunc_TargetLineTrace_Location, const struct FVector& CallFunc_TargetLineTrace_Normal, const struct FVector& CallFunc_GetRightVector_ReturnValue, bool CallFunc_CanPlaceInstanceOfClass_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FVector& CallFunc_Cross_VectorVector_ReturnValue, const struct FRotator& CallFunc_MakeRotationFromAxes_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class ABP_SprayDecal_C* CallFunc_FinishSpawningActor_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAB_Spray_Generic_C", "ExecuteUbergraph_GAB_Spray_Generic");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Spray_Generic_C", "ExecuteUbergraph_GAB_Spray_Generic");
+
+	Params::UGAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsServer_ReturnValue = CallFunc_IsServer_ReturnValue;
@@ -227,6 +263,4 @@ void UGAB_Spray_Generic_C::ExecuteUbergraph_GAB_Spray_Generic(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

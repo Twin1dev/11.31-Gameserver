@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -17,18 +14,13 @@ namespace SDK
 class USolUserWidget : public UUserWidget
 {
 public:
-	uint8                                        Pad_2205[0x20];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1604[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SolUserWidget");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USolUserWidget* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

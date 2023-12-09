@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -21,7 +18,7 @@ namespace Params
 struct UActivityBrowserTag_C_HandleStyling_Params
 {
 public:
-	struct FSlateColor                           K2Node_MakeStruct_SlateColor;                      // 0x0(0x28)()
+	struct FSlateColor                           K2Node_MakeStruct_SlateColor;                      // 0x0(0x28)(None)
 };
 
 // 0x1 (0x1 - 0x0)
@@ -30,13 +27,6 @@ struct UActivityBrowserTag_C_PreConstruct_Params
 {
 public:
 	bool                                         IsDesignTime;                                      // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ActivityBrowserTag.ActivityBrowserTag_C.Construct
-struct UActivityBrowserTag_C_Construct_Params
-{
-public:
 };
 
 // 0x5 (0x5 - 0x0)
@@ -51,6 +41,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

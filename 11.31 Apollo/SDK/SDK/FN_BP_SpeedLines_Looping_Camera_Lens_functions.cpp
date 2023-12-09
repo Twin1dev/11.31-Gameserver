@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_SpeedLines_Looping_Camera_Lens.BP_SpeedLines_Looping_Camera_Lens_C
+// (Actor)
+
+class UClass* ABP_SpeedLines_Looping_Camera_Lens_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_SpeedLines_Looping_Camera_Lens_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// BP_SpeedLines_Looping_Camera_Lens_C BP_SpeedLines_Looping_Camera_Lens.Default__BP_SpeedLines_Looping_Camera_Lens_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_SpeedLines_Looping_Camera_Lens_C* ABP_SpeedLines_Looping_Camera_Lens_C::GetDefaultObj()
+{
+	static class ABP_SpeedLines_Looping_Camera_Lens_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_SpeedLines_Looping_Camera_Lens_C*>(ABP_SpeedLines_Looping_Camera_Lens_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

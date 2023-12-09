@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -29,18 +26,15 @@ public:
 	UMulticastInlineDelegateProperty_            EndButtonHovered;                                  // 0x290(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UIconTextButton_C*                     CurrentButton;                                     // 0x2A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EMinigameButtonsState             ButtonState;                                       // 0x2A8(0x1)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4875[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6057[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<enum class EMinigameButtonsState, struct FMinigameButtonsStateConfiguration> ButtonConfigurations;                              // 0x2B0(0x50)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
 	UMulticastInlineDelegateProperty_            StartButtonUnhovered;                              // 0x300(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastInlineDelegateProperty_            EndButtonUnhovered;                                // 0x310(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FMinigameButtonsWidgetSwitcherConfiguration CurrentWidgetSwitcherConfiguration;                // 0x320(0x40)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash)
 	TArray<struct FMinigameButtonsWidgetSwitcherConfiguration> WidgetSwitcherConfigurations;                      // 0x360(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MinigameButtons_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMinigameButtons_C* GetDefaultObj();
 
 	void UpdateButtonsFromButtonState(const struct FMinigameButtonsStateConfiguration& ButtonConfiguration, bool Temp_bool_Variable, bool Temp_bool_Variable_1, class UIconTextButton_C* Temp_object_Variable, const struct FMinigameButtonsStateConfiguration& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, bool Temp_bool_Variable_2, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UIconTextButton_C* K2Node_Select_Default, class FText K2Node_Select_Default_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, class UIconTextButton_C* K2Node_Select_Default_2);
 	void SetButtonState(enum class EMinigameButtonsState Value, bool CallFunc_NotEqual_ByteByte_ReturnValue);
@@ -67,6 +61,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

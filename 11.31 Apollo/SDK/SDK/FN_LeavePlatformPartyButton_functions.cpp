@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass LeavePlatformPartyButton.LeavePlatformPartyButton_C
+// (None)
+
+class UClass* ULeavePlatformPartyButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LeavePlatformPartyButton_C");
+
+	return Clss;
+}
+
+
+// LeavePlatformPartyButton_C LeavePlatformPartyButton.Default__LeavePlatformPartyButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULeavePlatformPartyButton_C* ULeavePlatformPartyButton_C::GetDefaultObj()
+{
+	static class ULeavePlatformPartyButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULeavePlatformPartyButton_C*>(ULeavePlatformPartyButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function LeavePlatformPartyButton.LeavePlatformPartyButton_C.SetText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ULeavePlatformPartyButton_C::SetText(class FText New_Text)
 {
-	static auto Func = Class->GetFunction("LeavePlatformPartyButton_C", "SetText");
+	static class UFunction* Func = nullptr;
 
-	Params::ULeavePlatformPartyButton_C_SetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LeavePlatformPartyButton_C", "SetText");
+
+	Params::ULeavePlatformPartyButton_C_SetText_Params Parms{};
 
 	Parms.New_Text = New_Text;
 
@@ -39,12 +67,14 @@ void ULeavePlatformPartyButton_C::SetText(class FText New_Text)
 
 void ULeavePlatformPartyButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("LeavePlatformPartyButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::ULeavePlatformPartyButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LeavePlatformPartyButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void ULeavePlatformPartyButton_C::BP_OnHovered()
 
 void ULeavePlatformPartyButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("LeavePlatformPartyButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::ULeavePlatformPartyButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LeavePlatformPartyButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -74,9 +106,12 @@ void ULeavePlatformPartyButton_C::BP_OnUnhovered()
 
 void ULeavePlatformPartyButton_C::ExecuteUbergraph_LeavePlatformPartyButton(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("LeavePlatformPartyButton_C", "ExecuteUbergraph_LeavePlatformPartyButton");
+	static class UFunction* Func = nullptr;
 
-	Params::ULeavePlatformPartyButton_C_ExecuteUbergraph_LeavePlatformPartyButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LeavePlatformPartyButton_C", "ExecuteUbergraph_LeavePlatformPartyButton");
+
+	Params::ULeavePlatformPartyButton_C_ExecuteUbergraph_LeavePlatformPartyButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -88,6 +123,4 @@ void ULeavePlatformPartyButton_C::ExecuteUbergraph_LeavePlatformPartyButton(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

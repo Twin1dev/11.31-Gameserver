@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,16 +16,11 @@ class AS_Stream_2W_SBend_3L_a_C : public A_WaterMeshBlueprintMaster_C
 public:
 	bool                                         ShowTestMesh_0;                                    // 0x2DB(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("S_Stream_2W_SBend_3L_a_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AS_Stream_2W_SBend_3L_a_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

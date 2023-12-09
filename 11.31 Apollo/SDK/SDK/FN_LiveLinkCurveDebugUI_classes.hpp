@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class ULiveLinkDebuggerBlueprintLibrary : public UBlueprintFunctionLibrary
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LiveLinkDebuggerBlueprintLibrary");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULiveLinkDebuggerBlueprintLibrary* GetDefaultObj();
 
 	void HideLiveLinkDebugger();
 	void DisplayLiveLinkDebugger(const class FString& SubjectName);
@@ -36,13 +30,10 @@ public:
 	struct FSlateColor                           MinBarColor;                                       // 0x28(0x28)(Edit, Config, NativeAccessSpecifierPublic)
 	struct FSlateColor                           MaxBarColor;                                       // 0x50(0x28)(Edit, Config, NativeAccessSpecifierPublic)
 	float                                        DPIScaleMultiplier;                                // 0x78(0x4)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3F[0x4];                                       // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_3E[0x4];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LiveLinkDebuggerSettings");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULiveLinkDebuggerSettings* GetDefaultObj();
 
 	float GetDPIScaleBasedOnSize(const struct FIntPoint& Size);
 	struct FSlateColor GetBarColorForCurveValue(float CurveValue);
@@ -50,6 +41,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

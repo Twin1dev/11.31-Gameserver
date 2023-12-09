@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -63,11 +60,8 @@ public:
 	struct FSlateColor                           HighlightColor;                                    // 0x7F8(0x28)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         DEVhasBranding;                                    // 0x820(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ShowdownLobbyPanel_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UShowdownLobbyPanel_C* GetDefaultObj();
 
 	void InputTypeChanged(bool IsGamepad);
 	void HandleCrossplayChanged();
@@ -86,6 +80,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaNews.AthenaNews_C
+// (None)
+
+class UClass* UAthenaNews_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaNews_C");
+
+	return Clss;
+}
+
+
+// AthenaNews_C AthenaNews.Default__AthenaNews_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaNews_C* UAthenaNews_C::GetDefaultObj()
+{
+	static class UAthenaNews_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaNews_C*>(UAthenaNews_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaNews.AthenaNews_C.BeginIntroSequence
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UAthenaNews_C::BeginIntroSequence()
 {
-	static auto Func = Class->GetFunction("AthenaNews_C", "BeginIntroSequence");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNews_C_BeginIntroSequence_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNews_C", "BeginIntroSequence");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UAthenaNews_C::BeginIntroSequence()
 
 void UAthenaNews_C::SingleItemConfiguration()
 {
-	static auto Func = Class->GetFunction("AthenaNews_C", "SingleItemConfiguration");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNews_C_SingleItemConfiguration_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNews_C", "SingleItemConfiguration");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UAthenaNews_C::SingleItemConfiguration()
 
 void UAthenaNews_C::ResetViewConfiguration()
 {
-	static auto Func = Class->GetFunction("AthenaNews_C", "ResetViewConfiguration");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNews_C_ResetViewConfiguration_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNews_C", "ResetViewConfiguration");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -70,9 +101,12 @@ void UAthenaNews_C::ResetViewConfiguration()
 
 void UAthenaNews_C::HandleNewsStyle(enum class EAthenaNewsStyle NewsStyle)
 {
-	static auto Func = Class->GetFunction("AthenaNews_C", "HandleNewsStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNews_C_HandleNewsStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNews_C", "HandleNewsStyle");
+
+	Params::UAthenaNews_C_HandleNewsStyle_Params Parms{};
 
 	Parms.NewsStyle = NewsStyle;
 
@@ -94,9 +128,12 @@ void UAthenaNews_C::HandleNewsStyle(enum class EAthenaNewsStyle NewsStyle)
 
 void UAthenaNews_C::ExecuteUbergraph_AthenaNews(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, int32 CallFunc_GetActiveWidgetIndex_ReturnValue, bool K2Node_SwitchInteger_CmpSuccess, enum class EAthenaNewsStyle K2Node_Event_NewsStyle, bool K2Node_SwitchEnum_CmpSuccess, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaNews_C", "ExecuteUbergraph_AthenaNews");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNews_C_ExecuteUbergraph_AthenaNews_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNews_C", "ExecuteUbergraph_AthenaNews");
+
+	Params::UAthenaNews_C_ExecuteUbergraph_AthenaNews_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -118,9 +155,12 @@ void UAthenaNews_C::ExecuteUbergraph_AthenaNews(int32 EntryPoint, class UUMGSequ
 
 void UAthenaNews_C::UpdateStyle__DelegateSignature(enum class EAthenaNewsStyle NewStyle)
 {
-	static auto Func = Class->GetFunction("AthenaNews_C", "UpdateStyle__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNews_C_UpdateStyle__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNews_C", "UpdateStyle__DelegateSignature");
+
+	Params::UAthenaNews_C_UpdateStyle__DelegateSignature_Params Parms{};
 
 	Parms.NewStyle = NewStyle;
 
@@ -130,6 +170,4 @@ void UAthenaNews_C::UpdateStyle__DelegateSignature(enum class EAthenaNewsStyle N
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

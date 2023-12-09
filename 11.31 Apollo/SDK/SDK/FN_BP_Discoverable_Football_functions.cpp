@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_Discoverable_Football.BP_Discoverable_Football_C
+// (Actor)
+
+class UClass* ABP_Discoverable_Football_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_Discoverable_Football_C");
+
+	return Clss;
+}
+
+
+// BP_Discoverable_Football_C BP_Discoverable_Football.Default__BP_Discoverable_Football_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_Discoverable_Football_C* ABP_Discoverable_Football_C::GetDefaultObj()
+{
+	static class ABP_Discoverable_Football_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_Discoverable_Football_C*>(ABP_Discoverable_Football_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_Discoverable_Football.BP_Discoverable_Football_C.Timeline_0__FinishedFunc
 // (BlueprintEvent)
 // Parameters:
 
 void ABP_Discoverable_Football_C::Timeline_0__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Football_C", "Timeline_0__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Football_C_Timeline_0__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Football_C", "Timeline_0__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void ABP_Discoverable_Football_C::Timeline_0__FinishedFunc()
 
 void ABP_Discoverable_Football_C::Timeline_0__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Football_C", "Timeline_0__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Football_C_Timeline_0__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Football_C", "Timeline_0__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void ABP_Discoverable_Football_C::Timeline_0__UpdateFunc()
 
 void ABP_Discoverable_Football_C::Commit_OnSpecialInteraction()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Football_C", "Commit_OnSpecialInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Football_C_Commit_OnSpecialInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Football_C", "Commit_OnSpecialInteraction");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void ABP_Discoverable_Football_C::Commit_OnSpecialInteraction()
 
 void ABP_Discoverable_Football_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Football_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Football_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Football_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -92,9 +125,12 @@ void ABP_Discoverable_Football_C::ReceiveBeginPlay()
 
 void ABP_Discoverable_Football_C::ExecuteUbergraph_BP_Discoverable_Football(int32 EntryPoint, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FVector& CallFunc_VLerp_ReturnValue, const struct FHitResult& CallFunc_K2_SetActorLocation_SweepHitResult, bool CallFunc_K2_SetActorLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Football_C", "ExecuteUbergraph_BP_Discoverable_Football");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Football_C_ExecuteUbergraph_BP_Discoverable_Football_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Football_C", "ExecuteUbergraph_BP_Discoverable_Football");
+
+	Params::ABP_Discoverable_Football_C_ExecuteUbergraph_BP_Discoverable_Football_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_K2_GetRootComponent_ReturnValue = CallFunc_K2_GetRootComponent_ReturnValue;
@@ -110,6 +146,4 @@ void ABP_Discoverable_Football_C::ExecuteUbergraph_BP_Discoverable_Football(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

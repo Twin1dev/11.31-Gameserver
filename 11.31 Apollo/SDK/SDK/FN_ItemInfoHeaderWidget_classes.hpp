@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -45,20 +42,17 @@ public:
 	int32                                        RemainingQuantity;                                 // 0x340(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ShowCard;                                          // 0x344(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         Locked;                                            // 0x345(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4A5C[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6DB9[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  LockedReason;                                      // 0x348(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         ShowRemainingQuantity;                             // 0x360(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         ShowDetails;                                       // 0x361(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	enum class EFortItemCardSize                 CardSize;                                          // 0x362(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ShowDescription;                                   // 0x363(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4A5D[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6DBA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<enum class EFortItemType, class FText>  ItemAlternateName;                                 // 0x368(0x50)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ItemInfoHeaderWidget_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UItemInfoHeaderWidget_C* GetDefaultObj();
 
 	class FText GetAlternateNameForItem(class UFortItemDefinition* ItemDef, class FText Temp_text_Variable, enum class EFortItemType CallFunc_GetItemType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class FText CallFunc_GetEmptyText_ReturnValue, class FText Temp_text_Variable_1, bool Temp_bool_Variable, enum class EFortItemType CallFunc_GetItemType_ReturnValue_1, class FText CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, class UFortWorkerType* K2Node_DynamicCast_AsFort_Worker_Type, bool K2Node_DynamicCast_bSuccess, class FText K2Node_Select_Default);
 	void HasValidItemDefinition(bool* HasValidDescription, class UFortItemDefinition* CallFunc_GetItemDefinition_ReturnValue, bool CallFunc_IsValid_ReturnValue);
@@ -80,6 +74,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass MinigameSettingsMachine.MinigameSettingsMachine_C
+// (Actor)
+
+class UClass* AMinigameSettingsMachine_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MinigameSettingsMachine_C");
+
+	return Clss;
+}
+
+
+// MinigameSettingsMachine_C MinigameSettingsMachine.Default__MinigameSettingsMachine_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AMinigameSettingsMachine_C* AMinigameSettingsMachine_C::GetDefaultObj()
+{
+	static class AMinigameSettingsMachine_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AMinigameSettingsMachine_C*>(AMinigameSettingsMachine_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.GetTeamSetting
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 int32 AMinigameSettingsMachine_C::GetTeamSetting()
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "GetTeamSetting");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_GetTeamSetting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "GetTeamSetting");
+
+	Params::AMinigameSettingsMachine_C_GetTeamSetting_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -43,9 +71,12 @@ int32 AMinigameSettingsMachine_C::GetTeamSetting()
 
 void AMinigameSettingsMachine_C::UpdateGameSettings(class AFortMinigame* CurrentMinigame, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateGameSettings");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UpdateGameSettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateGameSettings");
+
+	Params::AMinigameSettingsMachine_C_UpdateGameSettings_Params Parms{};
 
 	Parms.CurrentMinigame = CurrentMinigame;
 	Parms.CallFunc_GetCurrentMinigame_Minigame = CallFunc_GetCurrentMinigame_Minigame;
@@ -65,9 +96,12 @@ void AMinigameSettingsMachine_C::UpdateGameSettings(class AFortMinigame* Current
 
 void AMinigameSettingsMachine_C::UpdatePlayerPersistence(bool CallFunc_HasAuthority_ReturnValue, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdatePlayerPersistence");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UpdatePlayerPersistence_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdatePlayerPersistence");
+
+	Params::AMinigameSettingsMachine_C_UpdatePlayerPersistence_Params Parms{};
 
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 	Parms.CallFunc_GetCurrentMinigame_Minigame = CallFunc_GetCurrentMinigame_Minigame;
@@ -92,9 +126,12 @@ void AMinigameSettingsMachine_C::UpdatePlayerPersistence(bool CallFunc_HasAuthor
 
 void AMinigameSettingsMachine_C::UpdateClassSettings(class AFortMinigame* CurrentMinigame, bool Temp_bool_Variable, bool CallFunc_IsValid_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue, uint8 CallFunc_Conv_IntToByte_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, uint8 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateClassSettings");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UpdateClassSettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateClassSettings");
+
+	Params::AMinigameSettingsMachine_C_UpdateClassSettings_Params Parms{};
 
 	Parms.CurrentMinigame = CurrentMinigame;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -115,14 +152,17 @@ void AMinigameSettingsMachine_C::UpdateClassSettings(class AFortMinigame* Curren
 // Parameters:
 // struct FGameplayTagContainer       Return_Value                                                     (Parm, OutParm)
 // struct FGameplayTagContainer       Final_UI_Extensions                                              (Edit, BlueprintVisible)
-// struct FGameplayTagContainer       CallFunc_Array_Get_Item                                          ()
+// struct FGameplayTagContainer       CallFunc_Array_Get_Item                                          (None)
 // bool                               CallFunc_Array_IsValidIndex_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void AMinigameSettingsMachine_C::GetUIExtensions(struct FGameplayTagContainer* Return_Value, const struct FGameplayTagContainer& Final_UI_Extensions, const struct FGameplayTagContainer& CallFunc_Array_Get_Item, bool CallFunc_Array_IsValidIndex_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "GetUIExtensions");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_GetUIExtensions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "GetUIExtensions");
+
+	Params::AMinigameSettingsMachine_C_GetUIExtensions_Params Parms{};
 
 	Parms.Final_UI_Extensions = Final_UI_Extensions;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
@@ -131,7 +171,7 @@ void AMinigameSettingsMachine_C::GetUIExtensions(struct FGameplayTagContainer* R
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Return_Value != nullptr)
-		*Return_Value = Parms.Return_Value;
+		*Return_Value = std::move(Parms.Return_Value);
 
 }
 
@@ -181,9 +221,12 @@ void AMinigameSettingsMachine_C::GetUIExtensions(struct FGameplayTagContainer* R
 
 void AMinigameSettingsMachine_C::Game_Mode_Preset_Upgrade_Path(TArray<class FString>& K2Node_MakeArray_Array, const class FString& CallFunc_Conv_IntToString_ReturnValue, const class FString& CallFunc_GetOptionKey_ReturnValue, const class FString& CallFunc_GetOptionValueNameFromValue_ReturnValue, const class FString& CallFunc_Conv_IntToString_ReturnValue_1, const class FString& CallFunc_Conv_IntToString_ReturnValue_2, const class FString& CallFunc_Conv_IntToString_ReturnValue_3, const class FString& CallFunc_Conv_IntToString_ReturnValue_4, const class FString& CallFunc_Conv_IntToString_ReturnValue_5, const class FString& CallFunc_GetOptionValueNameFromValue_ReturnValue_1, const class FString& CallFunc_GetOptionKey_ReturnValue_1, const class FString& CallFunc_GetOptionValueNameFromValue_ReturnValue_2, const class FString& CallFunc_GetOptionValueNameFromValue_ReturnValue_3, const class FString& CallFunc_GetOptionKey_ReturnValue_2, const class FString& CallFunc_GetOptionKey_ReturnValue_3, const class FString& CallFunc_GetOptionValueNameFromValue_ReturnValue_4, const class FString& CallFunc_GetOptionValueNameFromValue_ReturnValue_5, const class FString& CallFunc_GetOptionKey_ReturnValue_4, const class FString& CallFunc_GetOptionKey_ReturnValue_5, TMap<class FString, class FString> K2Node_MakeMap_Map, const struct FMinigameScoringPreset& CallFunc_Array_Get_Item, bool CallFunc_SetPropertyOverrides_ReturnValue, bool CallFunc_Array_IsValidIndex_ReturnValue, int32 CallFunc_Array_Find_ReturnValue, class UClass* CallFunc_Array_Get_Item_1, class UClass* CallFunc_Array_Get_Item_2, int32 CallFunc_Array_Find_ReturnValue_1, int32 CallFunc_Array_Find_ReturnValue_2, class UClass* CallFunc_Array_Get_Item_3, class UClass* CallFunc_Array_Get_Item_4, int32 CallFunc_Array_Find_ReturnValue_3, int32 CallFunc_Array_Find_ReturnValue_4, class UClass* CallFunc_Array_Get_Item_5, bool CallFunc_Array_IsValidIndex_ReturnValue_1, int32 CallFunc_Array_Find_ReturnValue_5, bool CallFunc_Array_IsValidIndex_ReturnValue_2, bool CallFunc_Array_IsValidIndex_ReturnValue_3, bool CallFunc_Array_IsValidIndex_ReturnValue_4, bool CallFunc_Array_IsValidIndex_ReturnValue_5)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "Game Mode Preset Upgrade Path");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "Game Mode Preset Upgrade Path");
+
+	Params::AMinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path_Params Parms{};
 
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.CallFunc_Conv_IntToString_ReturnValue = CallFunc_Conv_IntToString_ReturnValue;
@@ -247,9 +290,12 @@ void AMinigameSettingsMachine_C::Game_Mode_Preset_Upgrade_Path(TArray<class FStr
 
 void AMinigameSettingsMachine_C::GetScoreboardStatsArray(TArray<class UClass*>* ScoreboardStats, const TArray<class UClass*>& TrackedScoreboardStats, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class UClass* CallFunc_Array_Get_Item_1, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Array_AddUnique_ReturnValue, bool CallFunc_Array_IsValidIndex_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "GetScoreboardStatsArray");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_GetScoreboardStatsArray_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "GetScoreboardStatsArray");
+
+	Params::AMinigameSettingsMachine_C_GetScoreboardStatsArray_Params Parms{};
 
 	Parms.TrackedScoreboardStats = TrackedScoreboardStats;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -265,7 +311,7 @@ void AMinigameSettingsMachine_C::GetScoreboardStatsArray(TArray<class UClass*>* 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ScoreboardStats != nullptr)
-		*ScoreboardStats = Parms.ScoreboardStats;
+		*ScoreboardStats = std::move(Parms.ScoreboardStats);
 
 }
 
@@ -277,9 +323,12 @@ void AMinigameSettingsMachine_C::GetScoreboardStatsArray(TArray<class UClass*>* 
 
 void AMinigameSettingsMachine_C::FillTrackedStats(TArray<int32>& K2Node_MakeArray_Array)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "FillTrackedStats");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_FillTrackedStats_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "FillTrackedStats");
+
+	Params::AMinigameSettingsMachine_C_FillTrackedStats_Params Parms{};
 
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 
@@ -296,13 +345,16 @@ void AMinigameSettingsMachine_C::FillTrackedStats(TArray<int32>& K2Node_MakeArra
 // class FString                      Temp_string_Variable                                             (ZeroConstructor, HasGetValueTypeHash)
 // class AFortMinigame*               CallFunc_GetCurrentMinigame_Minigame                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      K2Node_Select_Default                                            (ZeroConstructor, HasGetValueTypeHash)
-// struct FSolarisPrototype           K2Node_MakeStruct_SolarisPrototype                               ()
+// struct FSolarisPrototype           K2Node_MakeStruct_SolarisPrototype                               (None)
 
 void AMinigameSettingsMachine_C::ToggleScriptedGameRules(bool bIsScriptedGame, bool Temp_bool_Variable, const class FString& Temp_string_Variable, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, const class FString& K2Node_Select_Default, const struct FSolarisPrototype& K2Node_MakeStruct_SolarisPrototype)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "ToggleScriptedGameRules");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_ToggleScriptedGameRules_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "ToggleScriptedGameRules");
+
+	Params::AMinigameSettingsMachine_C_ToggleScriptedGameRules_Params Parms{};
 
 	Parms.bIsScriptedGame = bIsScriptedGame;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -329,9 +381,12 @@ void AMinigameSettingsMachine_C::ToggleScriptedGameRules(bool bIsScriptedGame, b
 
 void AMinigameSettingsMachine_C::TryAddEndCondition_DestroyObjects(TArray<struct FFortMinigameStatQuery>& EndConditions, bool* bResult, bool bAdded, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, const struct FFortMinigameStatQuery& K2Node_MakeStruct_FortMinigameStatQuery, int32 CallFunc_Array_Add_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "TryAddEndCondition_DestroyObjects");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "TryAddEndCondition_DestroyObjects");
+
+	Params::AMinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects_Params Parms{};
 
 	Parms.EndConditions = EndConditions;
 	Parms.bAdded = bAdded;
@@ -358,9 +413,12 @@ void AMinigameSettingsMachine_C::TryAddEndCondition_DestroyObjects(TArray<struct
 
 void AMinigameSettingsMachine_C::UpdateTotalRounds(bool CallFunc_HasAuthority_ReturnValue, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateTotalRounds");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UpdateTotalRounds_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateTotalRounds");
+
+	Params::AMinigameSettingsMachine_C_UpdateTotalRounds_Params Parms{};
 
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 	Parms.CallFunc_GetCurrentMinigame_Minigame = CallFunc_GetCurrentMinigame_Minigame;
@@ -386,9 +444,12 @@ void AMinigameSettingsMachine_C::UpdateTotalRounds(bool CallFunc_HasAuthority_Re
 
 void AMinigameSettingsMachine_C::UpdateMinigameMutators(class UFortMutatorListComponent* MutatorList, class AFortMinigame* CurrentMinigame, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UFortMutatorListComponent* CallFunc_GetComponentByClass_ReturnValue, TMap<class FString, class FString> CallFunc_GetPropertyOverrides_CurrentOptions, bool CallFunc_GetPropertyOverrides_ReturnValue, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateMinigameMutators");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UpdateMinigameMutators_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateMinigameMutators");
+
+	Params::AMinigameSettingsMachine_C_UpdateMinigameMutators_Params Parms{};
 
 	Parms.MutatorList = MutatorList;
 	Parms.CurrentMinigame = CurrentMinigame;
@@ -415,9 +476,12 @@ void AMinigameSettingsMachine_C::UpdateMinigameMutators(class UFortMutatorListCo
 
 void AMinigameSettingsMachine_C::UpdateJoinInProgress(class AFortMinigame* NewLocalVar_1, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateJoinInProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UpdateJoinInProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateJoinInProgress");
+
+	Params::AMinigameSettingsMachine_C_UpdateJoinInProgress_Params Parms{};
 
 	Parms.NewLocalVar_1 = NewLocalVar_1;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -443,9 +507,12 @@ void AMinigameSettingsMachine_C::UpdateJoinInProgress(class AFortMinigame* NewLo
 
 void AMinigameSettingsMachine_C::TryAddEndCondition_CollectItems(TArray<struct FFortMinigameStatQuery>& EndConditions, bool* bResult, bool bAdded, bool CallFunc_NotEqual_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, const struct FFortMinigameStatQuery& K2Node_MakeStruct_FortMinigameStatQuery, int32 CallFunc_Array_Add_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "TryAddEndCondition_CollectItems");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_TryAddEndCondition_CollectItems_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "TryAddEndCondition_CollectItems");
+
+	Params::AMinigameSettingsMachine_C_TryAddEndCondition_CollectItems_Params Parms{};
 
 	Parms.EndConditions = EndConditions;
 	Parms.bAdded = bAdded;
@@ -472,9 +539,12 @@ void AMinigameSettingsMachine_C::TryAddEndCondition_CollectItems(TArray<struct F
 
 void AMinigameSettingsMachine_C::UpdateAutoStart(class AFortMinigame* CurrentMinigame, bool CallFunc_HasAuthority_ReturnValue, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateAutoStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UpdateAutoStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateAutoStart");
+
+	Params::AMinigameSettingsMachine_C_UpdateAutoStart_Params Parms{};
 
 	Parms.CurrentMinigame = CurrentMinigame;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -508,9 +578,12 @@ void AMinigameSettingsMachine_C::UpdateAutoStart(class AFortMinigame* CurrentMin
 
 void AMinigameSettingsMachine_C::UpdateEndConditions(const TArray<struct FFortMinigameStatQuery>& EndConditions, class AFortMinigame* Minigame, bool CallFunc_HasAuthority_ReturnValue, const struct FFortMinigameStatQuery& K2Node_MakeStruct_FortMinigameStatQuery, bool CallFunc_Greater_IntInt_ReturnValue, const struct FFortMinigameStatQuery& K2Node_MakeStruct_FortMinigameStatQuery_1, bool CallFunc_Greater_IntInt_ReturnValue_1, bool CallFunc_TryAddEndCondition_DestroyObjects_bResult, bool CallFunc_TryAddEndCondition_CollectItems_bResult, int32 CallFunc_Array_Add_ReturnValue, int32 CallFunc_Array_Add_ReturnValue_1, const struct FFortMinigameStatQuery& K2Node_MakeStruct_FortMinigameStatQuery_2, bool CallFunc_Greater_IntInt_ReturnValue_2, int32 CallFunc_Array_Add_ReturnValue_2, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateEndConditions");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UpdateEndConditions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateEndConditions");
+
+	Params::AMinigameSettingsMachine_C_UpdateEndConditions_Params Parms{};
 
 	Parms.EndConditions = EndConditions;
 	Parms.Minigame = Minigame;
@@ -548,9 +621,12 @@ void AMinigameSettingsMachine_C::UpdateEndConditions(const TArray<struct FFortMi
 
 void AMinigameSettingsMachine_C::UpdateTeamToMoveToWhenOutOfSpawns(class AFortMinigame* Minigame, bool CallFunc_HasAuthority_ReturnValue, uint8 CallFunc_Conv_IntToByte_ReturnValue, bool K2Node_SwitchInteger_CmpSuccess, uint8 CallFunc_MakeLiteralByte_ReturnValue, uint8 CallFunc_Add_ByteByte_ReturnValue, bool CallFunc_IsValid_ReturnValue, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateTeamToMoveToWhenOutOfSpawns");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateTeamToMoveToWhenOutOfSpawns");
+
+	Params::AMinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns_Params Parms{};
 
 	Parms.Minigame = Minigame;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -576,9 +652,12 @@ void AMinigameSettingsMachine_C::UpdateTeamToMoveToWhenOutOfSpawns(class AFortMi
 
 void AMinigameSettingsMachine_C::UpdateAutoEndTeamThreshold(class AFortMinigame* Minigame, bool CallFunc_HasAuthority_ReturnValue, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateAutoEndTeamThreshold");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UpdateAutoEndTeamThreshold_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateAutoEndTeamThreshold");
+
+	Params::AMinigameSettingsMachine_C_UpdateAutoEndTeamThreshold_Params Parms{};
 
 	Parms.Minigame = Minigame;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -600,9 +679,12 @@ void AMinigameSettingsMachine_C::UpdateAutoEndTeamThreshold(class AFortMinigame*
 
 void AMinigameSettingsMachine_C::UpdatePlayerLives(class AFortMinigame* NewLocalVar_0, bool CallFunc_HasAuthority_ReturnValue, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdatePlayerLives");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UpdatePlayerLives_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdatePlayerLives");
+
+	Params::AMinigameSettingsMachine_C_UpdatePlayerLives_Params Parms{};
 
 	Parms.NewLocalVar_0 = NewLocalVar_0;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -624,9 +706,12 @@ void AMinigameSettingsMachine_C::UpdatePlayerLives(class AFortMinigame* NewLocal
 
 void AMinigameSettingsMachine_C::UpdatePostGameSpawnLocationSetting(class AFortMinigame* CurrentMinigame, bool CallFunc_HasAuthority_ReturnValue, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdatePostGameSpawnLocationSetting");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UpdatePostGameSpawnLocationSetting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdatePostGameSpawnLocationSetting");
+
+	Params::AMinigameSettingsMachine_C_UpdatePostGameSpawnLocationSetting_Params Parms{};
 
 	Parms.CurrentMinigame = CurrentMinigame;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -647,9 +732,12 @@ void AMinigameSettingsMachine_C::UpdatePostGameSpawnLocationSetting(class AFortM
 
 class FText AMinigameSettingsMachine_C::BlueprintGetFailedInteractionString(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "BlueprintGetFailedInteractionString");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_BlueprintGetFailedInteractionString_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "BlueprintGetFailedInteractionString");
+
+	Params::AMinigameSettingsMachine_C_BlueprintGetFailedInteractionString_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -670,9 +758,12 @@ class FText AMinigameSettingsMachine_C::BlueprintGetFailedInteractionString(clas
 
 void AMinigameSettingsMachine_C::UpdateTeamSetting(bool CallFunc_HasAuthority_ReturnValue, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateTeamSetting");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UpdateTeamSetting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateTeamSetting");
+
+	Params::AMinigameSettingsMachine_C_UpdateTeamSetting_Params Parms{};
 
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 	Parms.CallFunc_GetCurrentMinigame_Minigame = CallFunc_GetCurrentMinigame_Minigame;
@@ -693,9 +784,12 @@ void AMinigameSettingsMachine_C::UpdateTeamSetting(bool CallFunc_HasAuthority_Re
 
 void AMinigameSettingsMachine_C::UpdateSpawnLocationSetting(class AFortMinigame* CurrentMinigame, bool CallFunc_HasAuthority_ReturnValue, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateSpawnLocationSetting");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UpdateSpawnLocationSetting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateSpawnLocationSetting");
+
+	Params::AMinigameSettingsMachine_C_UpdateSpawnLocationSetting_Params Parms{};
 
 	Parms.CurrentMinigame = CurrentMinigame;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -717,9 +811,12 @@ void AMinigameSettingsMachine_C::UpdateSpawnLocationSetting(class AFortMinigame*
 
 void AMinigameSettingsMachine_C::GetCurrentMinigame(class AFortMinigame** Minigame, bool CallFunc_IsValid_ReturnValue, class UFortMinigameVolumeComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "GetCurrentMinigame");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_GetCurrentMinigame_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "GetCurrentMinigame");
+
+	Params::AMinigameSettingsMachine_C_GetCurrentMinigame_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_GetComponentByClass_ReturnValue = CallFunc_GetComponentByClass_ReturnValue;
@@ -744,9 +841,12 @@ void AMinigameSettingsMachine_C::GetCurrentMinigame(class AFortMinigame** Miniga
 
 void AMinigameSettingsMachine_C::UpdateTimeLimit(class AFortMinigame* CurrentMinigame, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateTimeLimit");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UpdateTimeLimit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateTimeLimit");
+
+	Params::AMinigameSettingsMachine_C_UpdateTimeLimit_Params Parms{};
 
 	Parms.CurrentMinigame = CurrentMinigame;
 	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
@@ -766,7 +866,7 @@ void AMinigameSettingsMachine_C::UpdateTimeLimit(class AFortMinigame* CurrentMin
 // bool                               CallFunc_Conv_IntToBool_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Conv_IntToBool_ReturnValue_1                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Conv_IntToBool_ReturnValue_2                            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayTagContainer       CallFunc_GetUIExtensions_Return_Value                            ()
+// struct FGameplayTagContainer       CallFunc_GetUIExtensions_Return_Value                            (None)
 // TArray<class UClass*>              CallFunc_GetScoreboardStatsArray_ScoreboardStats                 (ZeroConstructor, ReferenceParm)
 // bool                               CallFunc_Conv_IntToBool_ReturnValue_3                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AFortMinigame*               CallFunc_GetCurrentMinigame_Minigame                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -774,9 +874,12 @@ void AMinigameSettingsMachine_C::UpdateTimeLimit(class AFortMinigame* CurrentMin
 
 void AMinigameSettingsMachine_C::UpdateGameMode(class AFortMinigame* CurrentMinigame, bool CallFunc_Conv_IntToBool_ReturnValue, bool CallFunc_Conv_IntToBool_ReturnValue_1, bool CallFunc_Conv_IntToBool_ReturnValue_2, const struct FGameplayTagContainer& CallFunc_GetUIExtensions_Return_Value, TArray<class UClass*>& CallFunc_GetScoreboardStatsArray_ScoreboardStats, bool CallFunc_Conv_IntToBool_ReturnValue_3, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateGameMode");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UpdateGameMode_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UpdateGameMode");
+
+	Params::AMinigameSettingsMachine_C_UpdateGameMode_Params Parms{};
 
 	Parms.CurrentMinigame = CurrentMinigame;
 	Parms.CallFunc_Conv_IntToBool_ReturnValue = CallFunc_Conv_IntToBool_ReturnValue;
@@ -803,9 +906,12 @@ void AMinigameSettingsMachine_C::UpdateGameMode(class AFortMinigame* CurrentMini
 
 void AMinigameSettingsMachine_C::HasMinigameStarted(bool* bHasStarted, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, bool CallFunc_IsValid_ReturnValue, bool CallFunc_HasStarted_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "HasMinigameStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_HasMinigameStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "HasMinigameStarted");
+
+	Params::AMinigameSettingsMachine_C_HasMinigameStarted_Params Parms{};
 
 	Parms.CallFunc_GetCurrentMinigame_Minigame = CallFunc_GetCurrentMinigame_Minigame;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -832,9 +938,12 @@ void AMinigameSettingsMachine_C::HasMinigameStarted(bool* bHasStarted, class AFo
 
 void AMinigameSettingsMachine_C::GetPickupSpawnLocation(struct FVector* SpawnLocation, class AActor* CallFunc_GetOwner_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue, const struct FVector& CallFunc_Multiply_VectorInt_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "GetPickupSpawnLocation");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_GetPickupSpawnLocation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "GetPickupSpawnLocation");
+
+	Params::AMinigameSettingsMachine_C_GetPickupSpawnLocation_Params Parms{};
 
 	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
 	Parms.CallFunc_K2_GetActorLocation_ReturnValue = CallFunc_K2_GetActorLocation_ReturnValue;
@@ -846,7 +955,7 @@ void AMinigameSettingsMachine_C::GetPickupSpawnLocation(struct FVector* SpawnLoc
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (SpawnLocation != nullptr)
-		*SpawnLocation = Parms.SpawnLocation;
+		*SpawnLocation = std::move(Parms.SpawnLocation);
 
 }
 
@@ -860,9 +969,12 @@ void AMinigameSettingsMachine_C::GetPickupSpawnLocation(struct FVector* SpawnLoc
 
 class FText AMinigameSettingsMachine_C::BlueprintGetInteractionString(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "BlueprintGetInteractionString");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_BlueprintGetInteractionString_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "BlueprintGetInteractionString");
+
+	Params::AMinigameSettingsMachine_C_BlueprintGetInteractionString_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -891,9 +1003,12 @@ class FText AMinigameSettingsMachine_C::BlueprintGetInteractionString(class AFor
 
 bool AMinigameSettingsMachine_C::BlueprintCanInteract(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted, bool CanInteract, bool CallFunc_IsValid_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerControllerAthena* K2Node_DynamicCast_AsFort_Player_Controller_Athena, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue_1, class AFortVolume* CallFunc_CanPlayerCreateInCurrentVolume_OutCurrentVolume, bool CallFunc_CanPlayerCreateInCurrentVolume_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "BlueprintCanInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_BlueprintCanInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "BlueprintCanInteract");
+
+	Params::AMinigameSettingsMachine_C_BlueprintCanInteract_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -920,9 +1035,12 @@ bool AMinigameSettingsMachine_C::BlueprintCanInteract(class AFortPawn* Interacti
 
 void AMinigameSettingsMachine_C::OnComplete_C895978B4EDC5073967F23BED63E6DB5(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "OnComplete_C895978B4EDC5073967F23BED63E6DB5");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_OnComplete_C895978B4EDC5073967F23BED63E6DB5_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "OnComplete_C895978B4EDC5073967F23BED63E6DB5");
+
+	Params::AMinigameSettingsMachine_C_OnComplete_C895978B4EDC5073967F23BED63E6DB5_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -937,12 +1055,14 @@ void AMinigameSettingsMachine_C::OnComplete_C895978B4EDC5073967F23BED63E6DB5(cla
 
 void AMinigameSettingsMachine_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -953,12 +1073,14 @@ void AMinigameSettingsMachine_C::ReceiveBeginPlay()
 
 void AMinigameSettingsMachine_C::OnGameSettingsUpdated()
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "OnGameSettingsUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_OnGameSettingsUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "OnGameSettingsUpdated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -969,12 +1091,14 @@ void AMinigameSettingsMachine_C::OnGameSettingsUpdated()
 
 void AMinigameSettingsMachine_C::StartMinigameHelper()
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "StartMinigameHelper");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_StartMinigameHelper_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "StartMinigameHelper");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -985,12 +1109,14 @@ void AMinigameSettingsMachine_C::StartMinigameHelper()
 
 void AMinigameSettingsMachine_C::AbandonMinigameHelper()
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "AbandonMinigameHelper");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_AbandonMinigameHelper_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "AbandonMinigameHelper");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1001,12 +1127,14 @@ void AMinigameSettingsMachine_C::AbandonMinigameHelper()
 
 void AMinigameSettingsMachine_C::ShowSolaris()
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "ShowSolaris");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_ShowSolaris_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "ShowSolaris");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1018,9 +1146,12 @@ void AMinigameSettingsMachine_C::ShowSolaris()
 
 void AMinigameSettingsMachine_C::UseSolaris(bool bShouldUse)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "UseSolaris");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_UseSolaris_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "UseSolaris");
+
+	Params::AMinigameSettingsMachine_C_UseSolaris_Params Parms{};
 
 	Parms.bShouldUse = bShouldUse;
 
@@ -1076,9 +1207,12 @@ void AMinigameSettingsMachine_C::UseSolaris(bool bShouldUse)
 
 void AMinigameSettingsMachine_C::ExecuteUbergraph_MinigameSettingsMachine(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUserWidget* K2Node_CustomEvent_UserWidget, class UUserWidget* Temp_object_Variable, class UCommonActivatablePanel* K2Node_DynamicCast_AsCommon_Activatable_Panel, bool K2Node_DynamicCast_bSuccess, bool Temp_bool_Has_Been_Initd_Variable, bool CallFunc_HasAuthority_ReturnValue, const class FString& CallFunc_Conv_IntToString_ReturnValue, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue_1, class AFortPlayerController* CallFunc_Array_Get_Item, class AFortPlayerController* CallFunc_Array_Get_Item_1, class AFortPlayerControllerAthena* K2Node_DynamicCast_AsFort_Player_Controller_Athena, bool K2Node_DynamicCast_bSuccess_1, class AFortPlayerControllerAthena* K2Node_DynamicCast_AsFort_Player_Controller_Athena_1, bool K2Node_DynamicCast_bSuccess_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue_1, TArray<class FString>& K2Node_MakeArray_Array, const class FString& CallFunc_GetOptionValueNameFromValue_ReturnValue, const class FString& CallFunc_GetOptionKey_ReturnValue, bool Temp_bool_IsClosed_Variable, TMap<class FString, class FString> K2Node_MakeMap_Map, bool CallFunc_SetPropertyOverrides_ReturnValue, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue_2, int32 Temp_int_Variable, class AFortPlayerController* CallFunc_Array_Get_Item_2, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue, bool CallFunc_IsValid_ReturnValue, class AFortVolumeManager* CallFunc_GetVolumeManager_OutVolumeManager, enum class EVolumeValidityResult CallFunc_GetVolumeManager_OutIsValid, bool K2Node_SwitchEnum_CmpSuccess, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, bool K2Node_Event_bShouldUse, bool CallFunc_BooleanAND_ReturnValue, bool Temp_bool_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("MinigameSettingsMachine_C", "ExecuteUbergraph_MinigameSettingsMachine");
+	static class UFunction* Func = nullptr;
 
-	Params::AMinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameSettingsMachine_C", "ExecuteUbergraph_MinigameSettingsMachine");
+
+	Params::AMinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -1128,6 +1262,4 @@ void AMinigameSettingsMachine_C::ExecuteUbergraph_MinigameSettingsMachine(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

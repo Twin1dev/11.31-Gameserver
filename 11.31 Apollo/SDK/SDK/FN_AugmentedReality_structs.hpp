@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -283,10 +280,10 @@ struct FARTraceResult
 public:
 	float                                        DistanceFromCamera;                                // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	enum class EARLineTraceChannels              TraceChannel;                                      // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1933[0xB];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_611[0xB];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            LocalToTrackingTransform;                          // 0x10(0x30)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
 	class UARTrackedGeometry*                    TrackedGeometry;                                   // 0x40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1934[0x18];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_612[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0xC (0xC - 0x0)
@@ -306,11 +303,9 @@ struct FARSessionStatus
 public:
 	class FString                                AdditionalInfo;                                    // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EARSessionStatus                  Status;                                            // 0x10(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1935[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_614[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

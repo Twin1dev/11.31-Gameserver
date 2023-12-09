@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass BP_GrenadeLauncher.BP_GrenadeLauncher_C
+// (None)
+
+class UClass* UBP_GrenadeLauncher_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_GrenadeLauncher_C");
+
+	return Clss;
+}
+
+
+// BP_GrenadeLauncher_C BP_GrenadeLauncher.Default__BP_GrenadeLauncher_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBP_GrenadeLauncher_C* UBP_GrenadeLauncher_C::GetDefaultObj()
+{
+	static class UBP_GrenadeLauncher_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBP_GrenadeLauncher_C*>(UBP_GrenadeLauncher_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_GrenadeLauncher.BP_GrenadeLauncher_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void UBP_GrenadeLauncher_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("BP_GrenadeLauncher_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_GrenadeLauncher_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_GrenadeLauncher_C", "AnimGraph");
+
+	Params::UBP_GrenadeLauncher_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -41,12 +69,14 @@ void UBP_GrenadeLauncher_C::AnimGraph(struct FPoseLink* AnimGraph)
 
 void UBP_GrenadeLauncher_C::EvaluateGraphExposedInputs_ExecuteUbergraph_BP_GrenadeLauncher_AnimGraphNode_ModifyBone_EA2975074BE60949C2769EB733D75B15()
 {
-	static auto Func = Class->GetFunction("BP_GrenadeLauncher_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_BP_GrenadeLauncher_AnimGraphNode_ModifyBone_EA2975074BE60949C2769EB733D75B15");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_GrenadeLauncher_C_EvaluateGraphExposedInputs_ExecuteUbergraph_BP_GrenadeLauncher_AnimGraphNode_ModifyBone_EA2975074BE60949C2769EB733D75B15_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_GrenadeLauncher_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_BP_GrenadeLauncher_AnimGraphNode_ModifyBone_EA2975074BE60949C2769EB733D75B15");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,12 +87,14 @@ void UBP_GrenadeLauncher_C::EvaluateGraphExposedInputs_ExecuteUbergraph_BP_Grena
 
 void UBP_GrenadeLauncher_C::AnimNotify_RotateDrum()
 {
-	static auto Func = Class->GetFunction("BP_GrenadeLauncher_C", "AnimNotify_RotateDrum");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_GrenadeLauncher_C_AnimNotify_RotateDrum_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_GrenadeLauncher_C", "AnimNotify_RotateDrum");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -79,9 +111,12 @@ void UBP_GrenadeLauncher_C::AnimNotify_RotateDrum()
 
 void UBP_GrenadeLauncher_C::ExecuteUbergraph_BP_GrenadeLauncher(int32 EntryPoint, float CallFunc_GetCurveValue_ReturnValue, int32 Temp_int_Variable, float CallFunc_Subtract_FloatFloat_ReturnValue, bool K2Node_SwitchInteger_CmpSuccess, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_GrenadeLauncher_C", "ExecuteUbergraph_BP_GrenadeLauncher");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_GrenadeLauncher_C_ExecuteUbergraph_BP_GrenadeLauncher_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_GrenadeLauncher_C", "ExecuteUbergraph_BP_GrenadeLauncher");
+
+	Params::UBP_GrenadeLauncher_C_ExecuteUbergraph_BP_GrenadeLauncher_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetCurveValue_ReturnValue = CallFunc_GetCurveValue_ReturnValue;
@@ -96,6 +131,4 @@ void UBP_GrenadeLauncher_C::ExecuteUbergraph_BP_GrenadeLauncher(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

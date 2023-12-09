@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Border-ItemInfoHeader.Border-ItemInfoHeader_C
+// (None)
+
+class UClass* UBorderMinusItemInfoHeader_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Border-ItemInfoHeader_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Border-ItemInfoHeader_C Border-ItemInfoHeader.Default__Border-ItemInfoHeader_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBorderMinusItemInfoHeader_C* UBorderMinusItemInfoHeader_C::GetDefaultObj()
+{
+	static class UBorderMinusItemInfoHeader_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorderMinusItemInfoHeader_C*>(UBorderMinusItemInfoHeader_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

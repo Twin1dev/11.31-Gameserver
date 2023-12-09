@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ServerBrowser.ServerBrowser_C
+// (None)
+
+class UClass* UServerBrowser_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ServerBrowser_C");
+
+	return Clss;
+}
+
+
+// ServerBrowser_C ServerBrowser.Default__ServerBrowser_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UServerBrowser_C* UServerBrowser_C::GetDefaultObj()
+{
+	static class UServerBrowser_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UServerBrowser_C*>(UServerBrowser_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ServerBrowser.ServerBrowser_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UServerBrowser_C::Construct()
 {
-	static auto Func = Class->GetFunction("ServerBrowser_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UServerBrowser_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ServerBrowser_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -43,9 +70,12 @@ void UServerBrowser_C::Construct()
 
 void UServerBrowser_C::ExecuteUbergraph_ServerBrowser(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_IsMobileGame_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ServerBrowser_C", "ExecuteUbergraph_ServerBrowser");
+	static class UFunction* Func = nullptr;
 
-	Params::UServerBrowser_C_ExecuteUbergraph_ServerBrowser_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ServerBrowser_C", "ExecuteUbergraph_ServerBrowser");
+
+	Params::UServerBrowser_C_ExecuteUbergraph_ServerBrowser_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -60,6 +90,4 @@ void UServerBrowser_C::ExecuteUbergraph_ServerBrowser(int32 EntryPoint, bool Tem
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

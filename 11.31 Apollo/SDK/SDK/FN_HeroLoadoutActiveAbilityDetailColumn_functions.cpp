@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass HeroLoadoutActiveAbilityDetailColumn.HeroLoadoutActiveAbilityDetailColumn_C
+// (None)
+
+class UClass* UHeroLoadoutActiveAbilityDetailColumn_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("HeroLoadoutActiveAbilityDetailColumn_C");
+
+	return Clss;
+}
+
+
+// HeroLoadoutActiveAbilityDetailColumn_C HeroLoadoutActiveAbilityDetailColumn.Default__HeroLoadoutActiveAbilityDetailColumn_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UHeroLoadoutActiveAbilityDetailColumn_C* UHeroLoadoutActiveAbilityDetailColumn_C::GetDefaultObj()
+{
+	static class UHeroLoadoutActiveAbilityDetailColumn_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UHeroLoadoutActiveAbilityDetailColumn_C*>(UHeroLoadoutActiveAbilityDetailColumn_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function HeroLoadoutActiveAbilityDetailColumn.HeroLoadoutActiveAbilityDetailColumn_C.SetAbilityKit
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UHeroLoadoutActiveAbilityDetailColumn_C::SetAbilityKit(class UFortAbilityKit* AbilityKit)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "SetAbilityKit");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailColumn_C_SetAbilityKit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "SetAbilityKit");
+
+	Params::UHeroLoadoutActiveAbilityDetailColumn_C_SetAbilityKit_Params Parms{};
 
 	Parms.AbilityKit = AbilityKit;
 
@@ -41,9 +69,12 @@ void UHeroLoadoutActiveAbilityDetailColumn_C::SetAbilityKit(class UFortAbilityKi
 
 bool UHeroLoadoutActiveAbilityDetailColumn_C::IsAbilityUnlocked(bool CallFunc_IsAbilityKitUnlockedForHero_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "IsAbilityUnlocked");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailColumn_C_IsAbilityUnlocked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "IsAbilityUnlocked");
+
+	Params::UHeroLoadoutActiveAbilityDetailColumn_C_IsAbilityUnlocked_Params Parms{};
 
 	Parms.CallFunc_IsAbilityKitUnlockedForHero_ReturnValue = CallFunc_IsAbilityKitUnlockedForHero_ReturnValue;
 
@@ -61,9 +92,12 @@ bool UHeroLoadoutActiveAbilityDetailColumn_C::IsAbilityUnlocked(bool CallFunc_Is
 
 class UFortAbilityKit* UHeroLoadoutActiveAbilityDetailColumn_C::GetAbilityKit()
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "GetAbilityKit");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailColumn_C_GetAbilityKit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "GetAbilityKit");
+
+	Params::UHeroLoadoutActiveAbilityDetailColumn_C_GetAbilityKit_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -80,9 +114,12 @@ class UFortAbilityKit* UHeroLoadoutActiveAbilityDetailColumn_C::GetAbilityKit()
 
 void UHeroLoadoutActiveAbilityDetailColumn_C::SetHero(class UFortHero* Hero)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "SetHero");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailColumn_C_SetHero_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "SetHero");
+
+	Params::UHeroLoadoutActiveAbilityDetailColumn_C_SetHero_Params Parms{};
 
 	Parms.Hero = Hero;
 
@@ -102,9 +139,9 @@ void UHeroLoadoutActiveAbilityDetailColumn_C::SetHero(class UFortHero* Hero)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateBrush                 CallFunc_NoResourceBrush_ReturnValue                             ()
-// struct FSlateBrush                 CallFunc_ResizeBrush_ResizedBrush                                ()
-// struct FSlateBrush                 CallFunc_ResizeBrush_ResizedBrush_1                              ()
+// struct FSlateBrush                 CallFunc_NoResourceBrush_ReturnValue                             (None)
+// struct FSlateBrush                 CallFunc_ResizeBrush_ResizedBrush                                (None)
+// struct FSlateBrush                 CallFunc_ResizeBrush_ResizedBrush_1                              (None)
 // struct FLinearColor                Temp_struct_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_1                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -112,9 +149,12 @@ void UHeroLoadoutActiveAbilityDetailColumn_C::SetHero(class UFortHero* Hero)
 
 void UHeroLoadoutActiveAbilityDetailColumn_C::UpdateFromState(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_IsAbilityUnlocked_ReturnValue, bool CallFunc_IsAbilityUnlocked_ReturnValue_1, class UFortAbilityKit* CallFunc_GetAbilityKit_ReturnValue, bool Temp_bool_Variable, bool CallFunc_IsValid_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, const struct FSlateBrush& CallFunc_NoResourceBrush_ReturnValue, const struct FSlateBrush& CallFunc_ResizeBrush_ResizedBrush, const struct FSlateBrush& CallFunc_ResizeBrush_ResizedBrush_1, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, bool Temp_bool_Variable_1, const struct FLinearColor& K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "UpdateFromState");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailColumn_C_UpdateFromState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "UpdateFromState");
+
+	Params::UHeroLoadoutActiveAbilityDetailColumn_C_UpdateFromState_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
@@ -146,9 +186,12 @@ void UHeroLoadoutActiveAbilityDetailColumn_C::UpdateFromState(enum class ESlateV
 
 void UHeroLoadoutActiveAbilityDetailColumn_C::UpdateFromStyle(const struct FVector2D& CallFunc_GetStandardBrushSize_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "UpdateFromStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailColumn_C_UpdateFromStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "UpdateFromStyle");
+
+	Params::UHeroLoadoutActiveAbilityDetailColumn_C_UpdateFromStyle_Params Parms{};
 
 	Parms.CallFunc_GetStandardBrushSize_ReturnValue = CallFunc_GetStandardBrushSize_ReturnValue;
 	Parms.CallFunc_BreakVector2D_X = CallFunc_BreakVector2D_X;
@@ -166,9 +209,12 @@ void UHeroLoadoutActiveAbilityDetailColumn_C::UpdateFromStyle(const struct FVect
 
 void UHeroLoadoutActiveAbilityDetailColumn_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailColumn_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "PreConstruct");
+
+	Params::UHeroLoadoutActiveAbilityDetailColumn_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -183,12 +229,14 @@ void UHeroLoadoutActiveAbilityDetailColumn_C::PreConstruct(bool IsDesignTime)
 
 void UHeroLoadoutActiveAbilityDetailColumn_C::Construct()
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailColumn_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -201,9 +249,12 @@ void UHeroLoadoutActiveAbilityDetailColumn_C::Construct()
 
 void UHeroLoadoutActiveAbilityDetailColumn_C::ExecuteUbergraph_HeroLoadoutActiveAbilityDetailColumn(int32 EntryPoint, bool K2Node_Event_IsDesignTime)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "ExecuteUbergraph_HeroLoadoutActiveAbilityDetailColumn");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailColumn_C_ExecuteUbergraph_HeroLoadoutActiveAbilityDetailColumn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailColumn_C", "ExecuteUbergraph_HeroLoadoutActiveAbilityDetailColumn");
+
+	Params::UHeroLoadoutActiveAbilityDetailColumn_C_ExecuteUbergraph_HeroLoadoutActiveAbilityDetailColumn_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -214,6 +265,4 @@ void UHeroLoadoutActiveAbilityDetailColumn_C::ExecuteUbergraph_HeroLoadoutActive
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

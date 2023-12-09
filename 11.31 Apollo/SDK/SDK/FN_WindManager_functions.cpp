@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass WindManager.WindManager_C
+// (Actor)
+
+class UClass* AWindManager_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WindManager_C");
+
+	return Clss;
+}
+
+
+// WindManager_C WindManager.Default__WindManager_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AWindManager_C* AWindManager_C::GetDefaultObj()
+{
+	static class AWindManager_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AWindManager_C*>(AWindManager_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function WindManager.WindManager_C.Find Matching Wind Mesh Index And Write Bool
@@ -37,9 +62,12 @@ namespace SDK
 
 void AWindManager_C::Find_Matching_Wind_Mesh_Index_And_Write_Bool(const struct FVector& Wind_location, bool* Storm_Cyl_Mesh_Match, int32* Wind_Cyl_Mesh_Array_Match_Index, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class UStaticMeshComponent* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue_1, bool CallFunc_EqualEqual_VectorVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "Find Matching Wind Mesh Index And Write Bool");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_Find_Matching_Wind_Mesh_Index_And_Write_Bool_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "Find Matching Wind Mesh Index And Write Bool");
+
+	Params::AWindManager_C_Find_Matching_Wind_Mesh_Index_And_Write_Bool_Params Parms{};
 
 	Parms.Wind_location = Wind_location;
 	Parms.CallFunc_Multiply_VectorVector_ReturnValue = CallFunc_Multiply_VectorVector_ReturnValue;
@@ -109,9 +137,12 @@ void AWindManager_C::Find_Matching_Wind_Mesh_Index_And_Write_Bool(const struct F
 
 void AWindManager_C::SetWindMatVariables(class UMaterialInstanceDynamic* Mid, bool Set_AnimatedCylinderCenter, const struct FVector& AnimatedCylinderCenter, bool Set_Animating_Wind_Magnitude, float Animating_Wind_Magnitude, bool Set_Static_Wind_Magnitude, float Static_Wind_Magnitude, bool Set_CylinderCenter, const struct FVector& CylinderCenter, bool Set_WindVector, const struct FVector& WindVector, bool Set_WindCrossVector, const struct FVector& WindCrossVector, bool Set_OverallOuterRadius, float OverallOuterRadius, bool Set_OverallInnerRadius, float OverallInnerRadius, bool Set_Wind_Still_0_or_Animating_1, float Wind_Still_0_or_Animating_1, bool Set_Circular_Shader_, float Circular_Shader_, bool* NewParam, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue, class FName CallFunc_MakeLiteralName_ReturnValue, class FName CallFunc_MakeLiteralName_ReturnValue_1, class FName CallFunc_MakeLiteralName_ReturnValue_2, class FName CallFunc_MakeLiteralName_ReturnValue_3, class FName CallFunc_MakeLiteralName_ReturnValue_4, class FName CallFunc_MakeLiteralName_ReturnValue_5, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue_1, class FName CallFunc_MakeLiteralName_ReturnValue_6, class FName CallFunc_MakeLiteralName_ReturnValue_7, class FName CallFunc_MakeLiteralName_ReturnValue_8, class FName CallFunc_MakeLiteralName_ReturnValue_9, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue_2, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "SetWindMatVariables");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_SetWindMatVariables_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "SetWindMatVariables");
+
+	Params::AWindManager_C_SetWindMatVariables_Params Parms{};
 
 	Parms.Mid = Mid;
 	Parms.Set_AnimatedCylinderCenter = Set_AnimatedCylinderCenter;
@@ -179,9 +210,12 @@ void AWindManager_C::SetWindMatVariables(class UMaterialInstanceDynamic* Mid, bo
 
 void AWindManager_C::UpdateWindDeltaCyl(float Static_Cylinder_Outer_Radius, float Duration, class UMaterialInstanceDynamic* Mid, bool Is_Wind_Circular_, float Temp_float_Variable, bool Temp_bool_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, bool Temp_bool_Variable_3, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, float K2Node_Select_Default, float K2Node_Select_Default_1, float K2Node_Select_Default_2, float K2Node_Select_Default_3)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "UpdateWindDeltaCyl");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_UpdateWindDeltaCyl_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "UpdateWindDeltaCyl");
+
+	Params::AWindManager_C_UpdateWindDeltaCyl_Params Parms{};
 
 	Parms.Static_Cylinder_Outer_Radius = Static_Cylinder_Outer_Radius;
 	Parms.Duration = Duration;
@@ -235,9 +269,12 @@ void AWindManager_C::UpdateWindDeltaCyl(float Static_Cylinder_Outer_Radius, floa
 
 void AWindManager_C::RemoveWindCylinder(struct FFortWindImpulseCylinder& WindImpulseCylinder, class UStaticMeshComponent* CurrentStormCylinder, bool Temp_bool_True_if_break_was_hit_Variable, const struct FVector& CallFunc_BreakWindImpulseCylinderAdvanced_WindLocation, float CallFunc_BreakWindImpulseCylinderAdvanced_WindInnerRadius, float CallFunc_BreakWindImpulseCylinderAdvanced_WindOuterRadius, const struct FVector& CallFunc_BreakWindImpulseCylinderAdvanced_WindWorldDirection, float CallFunc_BreakWindImpulseCylinderAdvanced_WindMagnitude, const struct FBox& CallFunc_BreakWindImpulseCylinderAdvanced_WindWorldBounds, bool CallFunc_BreakWindImpulseCylinderAdvanced_bIsWindChanging, bool CallFunc_BreakWindImpulseCylinderAdvanced_bIsWindChangePending, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class UStaticMeshComponent* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_Array_RemoveItem_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue_1, bool CallFunc_EqualEqual_VectorVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "RemoveWindCylinder");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_RemoveWindCylinder_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "RemoveWindCylinder");
+
+	Params::AWindManager_C_RemoveWindCylinder_Params Parms{};
 
 	Parms.WindImpulseCylinder = WindImpulseCylinder;
 	Parms.CurrentStormCylinder = CurrentStormCylinder;
@@ -324,9 +361,12 @@ void AWindManager_C::RemoveWindCylinder(struct FFortWindImpulseCylinder& WindImp
 
 void AWindManager_C::UpdateStormWindCylinder(const struct FFortWindImpulseCylinder& Wind_Impulse, const struct FFortWindImpulseCylinderDelta& Wind_Delta, const struct FTransform& CallFunc_MakeTransform_ReturnValue, const struct FVector& CallFunc_BreakWindImpulseCylinderDelta_WindDeltaCenter, bool CallFunc_BreakWindImpulseCylinderDelta_bWindImpulseInitialized, bool CallFunc_BreakWindImpulseCylinderDelta_bWindRipplesOutward, float CallFunc_BreakWindImpulseCylinderDelta_WindDeltaSectionWidth, float CallFunc_BreakWindImpulseCylinderDelta_WindDeltaInnerSectionRadius, float CallFunc_BreakWindImpulseCylinderDelta_WindDeltaOuterSectionRadius, float CallFunc_BreakWindImpulseCylinderDelta_WindDeltaMaximumRadius, float CallFunc_BreakWindImpulseCylinderDelta_WindDeltaDesiredOverallBlendTime, float CallFunc_BreakWindImpulseCylinderDelta_WindDeltaSectionBlendTime, float CallFunc_BreakWindImpulseCylinderDelta_WindDeltaSectionCurrentBlendTime, float CallFunc_BreakWindImpulseCylinderDelta_WindDeltaPreviousMagnitude, float CallFunc_BreakWindImpulseCylinderDelta_WindDeltaSectionCurrentMagnitude, float CallFunc_BreakWindImpulseCylinderDelta_WindDeltaDesiredMagnitude, const struct FBox& CallFunc_BreakWindImpulseCylinderDelta_WindDeltaOuterWorldBounds, const struct FBox& CallFunc_BreakWindImpulseCylinderDelta_WindDeltaInnerWorldBounds, const struct FBox& CallFunc_BreakWindImpulseCylinderDelta_WindImpulseBounds, const struct FFortWindImpulseHandle& CallFunc_BreakWindImpulseCylinderDelta_WindImpulseHandleToModify, class UStaticMeshComponent* CallFunc_AddComponent_ReturnValue, const struct FVector& CallFunc_BreakWindImpulseCylinderAdvanced_WindLocation, float CallFunc_BreakWindImpulseCylinderAdvanced_WindInnerRadius, float CallFunc_BreakWindImpulseCylinderAdvanced_WindOuterRadius, const struct FVector& CallFunc_BreakWindImpulseCylinderAdvanced_WindWorldDirection, float CallFunc_BreakWindImpulseCylinderAdvanced_WindMagnitude, const struct FBox& CallFunc_BreakWindImpulseCylinderAdvanced_WindWorldBounds, bool CallFunc_BreakWindImpulseCylinderAdvanced_bIsWindChanging, bool CallFunc_BreakWindImpulseCylinderAdvanced_bIsWindChangePending, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, const struct FVector& CallFunc_Cross_VectorVector_ReturnValue, bool CallFunc_EqualEqual_VectorVector_ReturnValue, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, float CallFunc_Conv_BoolToFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, const struct FVector& CallFunc_Conv_FloatToVector_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue_1, bool CallFunc_Find_Matching_Wind_Mesh_Index_And_Write_Bool_Storm_Cyl_Mesh_Match, int32 CallFunc_Find_Matching_Wind_Mesh_Index_And_Write_Bool_Wind_Cyl_Mesh_Array_Match_Index, const struct FHitResult& CallFunc_K2_SetWorldTransform_SweepHitResult, bool CallFunc_MakeLiteralBool_ReturnValue, bool CallFunc_SetWindMatVariables_NewParam, class UStaticMeshComponent* CallFunc_Array_Get_Item, int32 CallFunc_Array_Add_ReturnValue, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic, bool K2Node_DynamicCast_bSuccess, bool CallFunc_SetWindMatVariables_NewParam_1)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "UpdateStormWindCylinder");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_UpdateStormWindCylinder_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "UpdateStormWindCylinder");
+
+	Params::AWindManager_C_UpdateStormWindCylinder_Params Parms{};
 
 	Parms.Wind_Impulse = Wind_Impulse;
 	Parms.Wind_Delta = Wind_Delta;
@@ -413,9 +453,12 @@ void AWindManager_C::UpdateStormWindCylinder(const struct FFortWindImpulseCylind
 
 struct FVector AWindManager_C::Calculate_Camera_Position(float Scale, class USceneCaptureComponent2D* Scene_Capture, class APlayerCameraManager* CallFunc_GetPlayerCameraManager_ReturnValue, const struct FVector& CallFunc_GetCameraLocation_ReturnValue, const struct FVector& CallFunc_Divide_VectorFloat_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, const struct FVector& CallFunc_MakeVector_ReturnValue_1, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue, const struct FVector& CallFunc_Divide_VectorVector_ReturnValue, const struct FVector& CallFunc_Subtract_VectorFloat_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, int32 CallFunc_FCeil_ReturnValue, int32 CallFunc_FCeil_ReturnValue_1, float CallFunc_Conv_IntToFloat_ReturnValue_2, float CallFunc_Conv_IntToFloat_ReturnValue_3, int32 CallFunc_FCeil_ReturnValue_2, float CallFunc_Conv_IntToFloat_ReturnValue_4, const struct FVector& CallFunc_MakeVector_ReturnValue_2, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "Calculate Camera Position");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_Calculate_Camera_Position_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "Calculate Camera Position");
+
+	Params::AWindManager_C_Calculate_Camera_Position_Params Parms{};
 
 	Parms.Scale = Scale;
 	Parms.Scene_Capture = Scene_Capture;
@@ -456,9 +499,12 @@ struct FVector AWindManager_C::Calculate_Camera_Position(float Scale, class USce
 
 void AWindManager_C::UserConstructionScript(const struct FTransform& Temp_struct_Variable, class UParticleSystemComponent* CallFunc_AddComponent_ReturnValue)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "UserConstructionScript");
+
+	Params::AWindManager_C_UserConstructionScript_Params Parms{};
 
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.CallFunc_AddComponent_ReturnValue = CallFunc_AddComponent_ReturnValue;
@@ -475,9 +521,12 @@ void AWindManager_C::UserConstructionScript(const struct FTransform& Temp_struct
 
 void AWindManager_C::OnWindImpulseCylinderDeath(struct FFortWindImpulseCylinder& WindImpulseCylinder)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "OnWindImpulseCylinderDeath");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_OnWindImpulseCylinderDeath_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "OnWindImpulseCylinderDeath");
+
+	Params::AWindManager_C_OnWindImpulseCylinderDeath_Params Parms{};
 
 	Parms.WindImpulseCylinder = WindImpulseCylinder;
 
@@ -493,9 +542,12 @@ void AWindManager_C::OnWindImpulseCylinderDeath(struct FFortWindImpulseCylinder&
 
 void AWindManager_C::OnWindImpulseCylinderDeltaComplete(struct FFortWindImpulseCylinder& WindImpulseCylinder)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "OnWindImpulseCylinderDeltaComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_OnWindImpulseCylinderDeltaComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "OnWindImpulseCylinderDeltaComplete");
+
+	Params::AWindManager_C_OnWindImpulseCylinderDeltaComplete_Params Parms{};
 
 	Parms.WindImpulseCylinder = WindImpulseCylinder;
 
@@ -512,9 +564,12 @@ void AWindManager_C::OnWindImpulseCylinderDeltaComplete(struct FFortWindImpulseC
 
 void AWindManager_C::OnWindImpulseCylinderCreation(struct FFortWindImpulseCylinder& WindImpulseCylinder, struct FFortWindImpulseCylinderDelta& WindImpulseCylinderDelta)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "OnWindImpulseCylinderCreation");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_OnWindImpulseCylinderCreation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "OnWindImpulseCylinderCreation");
+
+	Params::AWindManager_C_OnWindImpulseCylinderCreation_Params Parms{};
 
 	Parms.WindImpulseCylinder = WindImpulseCylinder;
 	Parms.WindImpulseCylinderDelta = WindImpulseCylinderDelta;
@@ -532,9 +587,12 @@ void AWindManager_C::OnWindImpulseCylinderCreation(struct FFortWindImpulseCylind
 
 void AWindManager_C::SpawnTestWind(float Radius, float ImpulseMagnitude)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "SpawnTestWind");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_SpawnTestWind_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "SpawnTestWind");
+
+	Params::AWindManager_C_SpawnTestWind_Params Parms{};
 
 	Parms.Radius = Radius;
 	Parms.ImpulseMagnitude = ImpulseMagnitude;
@@ -551,9 +609,12 @@ void AWindManager_C::SpawnTestWind(float Radius, float ImpulseMagnitude)
 
 void AWindManager_C::Play_Water_Splash_Particle_System_At_Location(const struct FTransform& Particle_Transform)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "Play Water Splash Particle System At Location");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_Play_Water_Splash_Particle_System_At_Location_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "Play Water Splash Particle System At Location");
+
+	Params::AWindManager_C_Play_Water_Splash_Particle_System_At_Location_Params Parms{};
 
 	Parms.Particle_Transform = Particle_Transform;
 
@@ -569,9 +630,12 @@ void AWindManager_C::Play_Water_Splash_Particle_System_At_Location(const struct 
 
 void AWindManager_C::AddWindParticleSystemComponent(class UParticleSystemComponent* ParticleSystemComponent)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "AddWindParticleSystemComponent");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_AddWindParticleSystemComponent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "AddWindParticleSystemComponent");
+
+	Params::AWindManager_C_AddWindParticleSystemComponent_Params Parms{};
 
 	Parms.ParticleSystemComponent = ParticleSystemComponent;
 
@@ -588,9 +652,12 @@ void AWindManager_C::AddWindParticleSystemComponent(class UParticleSystemCompone
 
 void AWindManager_C::Register_player_for_render_to_texture_purposes(class UPrimitiveComponent* Effect_Water_Interaction_FX, class UPrimitiveComponent* Gameplay_Wind_INteraction_Effects)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "Register player for render to texture purposes");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_Register_player_for_render_to_texture_purposes_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "Register player for render to texture purposes");
+
+	Params::AWindManager_C_Register_player_for_render_to_texture_purposes_Params Parms{};
 
 	Parms.Effect_Water_Interaction_FX = Effect_Water_Interaction_FX;
 	Parms.Gameplay_Wind_INteraction_Effects = Gameplay_Wind_INteraction_Effects;
@@ -607,9 +674,12 @@ void AWindManager_C::Register_player_for_render_to_texture_purposes(class UPrimi
 
 void AWindManager_C::Add_Wind_Component(class UPrimitiveComponent* InComponent)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "Add Wind Component");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_Add_Wind_Component_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "Add Wind Component");
+
+	Params::AWindManager_C_Add_Wind_Component_Params Parms{};
 
 	Parms.InComponent = InComponent;
 
@@ -624,12 +694,14 @@ void AWindManager_C::Add_Wind_Component(class UPrimitiveComponent* InComponent)
 
 void AWindManager_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("WindManager_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -641,9 +713,12 @@ void AWindManager_C::ReceiveBeginPlay()
 
 void AWindManager_C::Update_Test(float NewMagnitude)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "Update Test");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_Update_Test_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "Update Test");
+
+	Params::AWindManager_C_Update_Test_Params Parms{};
 
 	Parms.NewMagnitude = NewMagnitude;
 
@@ -660,9 +735,12 @@ void AWindManager_C::Update_Test(float NewMagnitude)
 
 void AWindManager_C::Add_Render_To_Texture_Particle(class UParticleSystem* EmitterTemplate, struct FTransform& InTransform)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "Add Render To Texture Particle");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_Add_Render_To_Texture_Particle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "Add Render To Texture Particle");
+
+	Params::AWindManager_C_Add_Render_To_Texture_Particle_Params Parms{};
 
 	Parms.EmitterTemplate = EmitterTemplate;
 	Parms.InTransform = InTransform;
@@ -718,9 +796,12 @@ void AWindManager_C::Add_Render_To_Texture_Particle(class UParticleSystem* Emitt
 
 void AWindManager_C::ExecuteUbergraph_WindManager(int32 EntryPoint, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FTransform& K2Node_CustomEvent_Particle_Transform, class UParticleSystemComponent* K2Node_Event_ParticleSystemComponent, class UPrimitiveComponent* K2Node_CustomEvent_Effect_Water_Interaction_FX, class UPrimitiveComponent* K2Node_CustomEvent_Gameplay_Wind_INteraction_Effects, float CallFunc_MakeLiteralFloat_ReturnValue, class UPrimitiveComponent* K2Node_CustomEvent_InComponent, const struct FVector& CallFunc_MakeVector_ReturnValue_1, float K2Node_CustomEvent_NewMagnitude, class UParticleSystem* K2Node_CustomEvent_EmitterTemplate, const struct FTransform& K2Node_CustomEvent_InTransform, bool CallFunc_SetWindImpulseCylinderMagnitude_ReturnValue, class FName CallFunc_MakeLiteralName_ReturnValue, class FName CallFunc_MakeLiteralName_ReturnValue_1, class FName CallFunc_MakeLiteralName_ReturnValue_2, float K2Node_CustomEvent_Radius, float K2Node_CustomEvent_ImpulseMagnitude, const struct FFortWindImpulseCylinder& K2Node_Event_WindImpulseCylinder, const struct FFortWindImpulseCylinderDelta& K2Node_Event_WindImpulseCylinderDelta, float CallFunc_Add_FloatFloat_ReturnValue, const struct FFortWindImpulseCylinder& CallFunc_MakeWindImpulseCylinder_ReturnValue, const struct FFortWindImpulseHandle& CallFunc_AddWindImpulseCylinder_ReturnValue, const struct FFortWindImpulseCylinder& K2Node_Event_WindImpulseCylinder_1, const struct FVector& CallFunc_BreakWindImpulseCylinderAdvanced_WindLocation, float CallFunc_BreakWindImpulseCylinderAdvanced_WindInnerRadius, float CallFunc_BreakWindImpulseCylinderAdvanced_WindOuterRadius, const struct FVector& CallFunc_BreakWindImpulseCylinderAdvanced_WindWorldDirection, float CallFunc_BreakWindImpulseCylinderAdvanced_WindMagnitude, const struct FBox& CallFunc_BreakWindImpulseCylinderAdvanced_WindWorldBounds, bool CallFunc_BreakWindImpulseCylinderAdvanced_bIsWindChanging, bool CallFunc_BreakWindImpulseCylinderAdvanced_bIsWindChangePending, const struct FFortWindImpulseCylinder& K2Node_Event_WindImpulseCylinder_2, bool CallFunc_Find_Matching_Wind_Mesh_Index_And_Write_Bool_Storm_Cyl_Mesh_Match, int32 CallFunc_Find_Matching_Wind_Mesh_Index_And_Write_Bool_Wind_Cyl_Mesh_Array_Match_Index, class UStaticMeshComponent* CallFunc_Array_Get_Item, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic, bool K2Node_DynamicCast_bSuccess, float CallFunc_K2_GetScalarParameterValue_ReturnValue)
 {
-	static auto Func = Class->GetFunction("WindManager_C", "ExecuteUbergraph_WindManager");
+	static class UFunction* Func = nullptr;
 
-	Params::AWindManager_C_ExecuteUbergraph_WindManager_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WindManager_C", "ExecuteUbergraph_WindManager");
+
+	Params::AWindManager_C_ExecuteUbergraph_WindManager_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_MakeVector_ReturnValue = CallFunc_MakeVector_ReturnValue;
@@ -769,6 +850,4 @@ void AWindManager_C::ExecuteUbergraph_WindManager(int32 EntryPoint, const struct
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass PlayerSurveyMultipleChoiceStandardListItem.PlayerSurveyMultipleChoiceStandardListItem_C
+// (None)
+
+class UClass* UPlayerSurveyMultipleChoiceStandardListItem_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerSurveyMultipleChoiceStandardListItem_C");
+
+	return Clss;
+}
+
+
+// PlayerSurveyMultipleChoiceStandardListItem_C PlayerSurveyMultipleChoiceStandardListItem.Default__PlayerSurveyMultipleChoiceStandardListItem_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerSurveyMultipleChoiceStandardListItem_C* UPlayerSurveyMultipleChoiceStandardListItem_C::GetDefaultObj()
+{
+	static class UPlayerSurveyMultipleChoiceStandardListItem_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerSurveyMultipleChoiceStandardListItem_C*>(UPlayerSurveyMultipleChoiceStandardListItem_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function PlayerSurveyMultipleChoiceStandardListItem.PlayerSurveyMultipleChoiceStandardListItem_C.UpdateTextStyle
@@ -24,9 +49,12 @@ namespace SDK
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::UpdateTextStyle(class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue, class UCommonTextStyle* CallFunc_GetCurrentTextStyle_ReturnValue, const struct FLinearColor& CallFunc_GetColor_OutColor)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "UpdateTextStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_UpdateTextStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "UpdateTextStyle");
+
+	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_UpdateTextStyle_Params Parms{};
 
 	Parms.CallFunc_GetCurrentTextStyleClass_ReturnValue = CallFunc_GetCurrentTextStyleClass_ReturnValue;
 	Parms.CallFunc_GetCurrentTextStyle_ReturnValue = CallFunc_GetCurrentTextStyle_ReturnValue;
@@ -44,9 +72,12 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::UpdateTextStyle(class UClass
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::UpdateCheckBox(bool CallFunc_GetSelected_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "UpdateCheckBox");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_UpdateCheckBox_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "UpdateCheckBox");
+
+	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_UpdateCheckBox_Params Parms{};
 
 	Parms.CallFunc_GetSelected_ReturnValue = CallFunc_GetSelected_ReturnValue;
 
@@ -63,13 +94,16 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::UpdateCheckBox(bool CallFunc
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::MakeChoiceIndexText(int32 Index, class FText* Text, int32 CallFunc_Add_IntInt_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "MakeChoiceIndexText");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_MakeChoiceIndexText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "MakeChoiceIndexText");
+
+	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_MakeChoiceIndexText_Params Parms{};
 
 	Parms.Index = Index;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
@@ -88,13 +122,16 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::MakeChoiceIndexText(int32 In
 // Function PlayerSurveyMultipleChoiceStandardListItem.PlayerSurveyMultipleChoiceStandardListItem_C.UpdateChoiceIndexText
 // (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                        CallFunc_MakeChoiceIndexText_Text                                ()
+// class FText                        CallFunc_MakeChoiceIndexText_Text                                (None)
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::UpdateChoiceIndexText(class FText CallFunc_MakeChoiceIndexText_Text)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "UpdateChoiceIndexText");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_UpdateChoiceIndexText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "UpdateChoiceIndexText");
+
+	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_UpdateChoiceIndexText_Params Parms{};
 
 	Parms.CallFunc_MakeChoiceIndexText_Text = CallFunc_MakeChoiceIndexText_Text;
 
@@ -109,12 +146,14 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::UpdateChoiceIndexText(class 
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::UpdateChoiceText()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "UpdateChoiceText");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_UpdateChoiceText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "UpdateChoiceText");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -125,12 +164,14 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::UpdateChoiceText()
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::Construct()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -141,12 +182,14 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::Construct()
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "BP_OnSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_BP_OnSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "BP_OnSelected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -157,12 +200,14 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::BP_OnSelected()
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "BP_OnDeselected");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_BP_OnDeselected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "BP_OnDeselected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -174,9 +219,12 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::BP_OnDeselected()
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::SetChoiceData(const struct FFortPlayerSurveyQuestionChoice& Value)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "SetChoiceData");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_SetChoiceData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "SetChoiceData");
+
+	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_SetChoiceData_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -192,9 +240,12 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::SetChoiceData(const struct F
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::SetIndex(int32 Value)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "SetIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_SetIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "SetIndex");
+
+	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_SetIndex_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -209,12 +260,14 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::SetIndex(int32 Value)
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::OnCurrentTextStyleChanged()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "OnCurrentTextStyleChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_OnCurrentTextStyleChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "OnCurrentTextStyleChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -223,14 +276,17 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::OnCurrentTextStyleChanged()
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortPlayerSurveyQuestionChoiceK2Node_Event_Value_1                                             ()
+// struct FFortPlayerSurveyQuestionChoiceK2Node_Event_Value_1                                             (None)
 // int32                              K2Node_Event_Value                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UPlayerSurveyMultipleChoiceStandardListItem_C::ExecuteUbergraph_PlayerSurveyMultipleChoiceStandardListItem(int32 EntryPoint, const struct FFortPlayerSurveyQuestionChoice& K2Node_Event_Value_1, int32 K2Node_Event_Value)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "ExecuteUbergraph_PlayerSurveyMultipleChoiceStandardListItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_ExecuteUbergraph_PlayerSurveyMultipleChoiceStandardListItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyMultipleChoiceStandardListItem_C", "ExecuteUbergraph_PlayerSurveyMultipleChoiceStandardListItem");
+
+	Params::UPlayerSurveyMultipleChoiceStandardListItem_C_ExecuteUbergraph_PlayerSurveyMultipleChoiceStandardListItem_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_Value_1 = K2Node_Event_Value_1;
@@ -242,6 +298,4 @@ void UPlayerSurveyMultipleChoiceStandardListItem_C::ExecuteUbergraph_PlayerSurve
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

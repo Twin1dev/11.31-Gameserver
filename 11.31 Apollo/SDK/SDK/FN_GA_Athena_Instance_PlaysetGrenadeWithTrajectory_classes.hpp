@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -17,15 +14,12 @@ namespace SDK
 class UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C : public UGA_Athena_PlaysetGrenadeWithTrajectory_C
 {
 public:
-	uint8                                        Pad_5A25[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_59A5[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xE10(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UAudioComponent*                       Throw_Loop_Sound;                                  // 0xE18(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C* GetDefaultObj();
 
 	void GetActivePlaysetData(class UFortPlaysetItemDefinition** OutData, class UFortWorldItemDefinition* CallFunc_GetCurrentSourceItemDefinition_ReturnValue, class UFortPlaysetGrenadeItemDefinition* K2Node_DynamicCast_AsFort_Playset_Grenade_Item_Definition, bool K2Node_DynamicCast_bSuccess);
 	void K2_ActivateAbility();
@@ -37,6 +31,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

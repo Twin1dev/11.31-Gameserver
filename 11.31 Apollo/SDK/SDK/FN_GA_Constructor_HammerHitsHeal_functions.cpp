@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Constructor_HammerHitsHeal.GA_Constructor_HammerHitsHeal_C
+// (None)
+
+class UClass* UGA_Constructor_HammerHitsHeal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Constructor_HammerHitsHeal_C");
+
+	return Clss;
+}
+
+
+// GA_Constructor_HammerHitsHeal_C GA_Constructor_HammerHitsHeal.Default__GA_Constructor_HammerHitsHeal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Constructor_HammerHitsHeal_C* UGA_Constructor_HammerHitsHeal_C::GetDefaultObj()
+{
+	static class UGA_Constructor_HammerHitsHeal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Constructor_HammerHitsHeal_C*>(UGA_Constructor_HammerHitsHeal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Constructor_HammerHitsHeal.GA_Constructor_HammerHitsHeal_C.SetupAbility
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UGA_Constructor_HammerHitsHeal_C::SetupAbility(class UAbilitySystemComponent* AbilitySystem)
 {
-	static auto Func = Class->GetFunction("GA_Constructor_HammerHitsHeal_C", "SetupAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Constructor_HammerHitsHeal_C_SetupAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Constructor_HammerHitsHeal_C", "SetupAbility");
+
+	Params::UGA_Constructor_HammerHitsHeal_C_SetupAbility_Params Parms{};
 
 	Parms.AbilitySystem = AbilitySystem;
 
@@ -43,9 +71,12 @@ void UGA_Constructor_HammerHitsHeal_C::SetupAbility(class UAbilitySystemComponen
 
 bool UGA_Constructor_HammerHitsHeal_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload, bool CallFunc_ShouldHammerHitsHealRespondToEvent_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Constructor_HammerHitsHeal_C", "K2_ShouldAbilityRespondToEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Constructor_HammerHitsHeal_C_K2_ShouldAbilityRespondToEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Constructor_HammerHitsHeal_C", "K2_ShouldAbilityRespondToEvent");
+
+	Params::UGA_Constructor_HammerHitsHeal_C_K2_ShouldAbilityRespondToEvent_Params Parms{};
 
 	Parms.ActorInfo = ActorInfo;
 	Parms.Payload = Payload;
@@ -65,9 +96,12 @@ bool UGA_Constructor_HammerHitsHeal_C::K2_ShouldAbilityRespondToEvent(const stru
 
 void UGA_Constructor_HammerHitsHeal_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GA_Constructor_HammerHitsHeal_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Constructor_HammerHitsHeal_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Constructor_HammerHitsHeal_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGA_Constructor_HammerHitsHeal_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -84,9 +118,12 @@ void UGA_Constructor_HammerHitsHeal_C::K2_ActivateAbilityFromEvent(struct FGamep
 
 void UGA_Constructor_HammerHitsHeal_C::ExecuteUbergraph_GA_Constructor_HammerHitsHeal(int32 EntryPoint, const struct FGameplayEventData& K2Node_Event_EventData)
 {
-	static auto Func = Class->GetFunction("GA_Constructor_HammerHitsHeal_C", "ExecuteUbergraph_GA_Constructor_HammerHitsHeal");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Constructor_HammerHitsHeal_C_ExecuteUbergraph_GA_Constructor_HammerHitsHeal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Constructor_HammerHitsHeal_C", "ExecuteUbergraph_GA_Constructor_HammerHitsHeal");
+
+	Params::UGA_Constructor_HammerHitsHeal_C_ExecuteUbergraph_GA_Constructor_HammerHitsHeal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_EventData = K2Node_Event_EventData;
@@ -97,6 +134,4 @@ void UGA_Constructor_HammerHitsHeal_C::ExecuteUbergraph_GA_Constructor_HammerHit
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

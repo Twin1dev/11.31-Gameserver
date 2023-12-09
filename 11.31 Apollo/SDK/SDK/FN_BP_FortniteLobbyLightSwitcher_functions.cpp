@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_FortniteLobbyLightSwitcher.BP_FortniteLobbyLightSwitcher_C
+// (Actor)
+
+class UClass* ABP_FortniteLobbyLightSwitcher_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_FortniteLobbyLightSwitcher_C");
+
+	return Clss;
+}
+
+
+// BP_FortniteLobbyLightSwitcher_C BP_FortniteLobbyLightSwitcher.Default__BP_FortniteLobbyLightSwitcher_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_FortniteLobbyLightSwitcher_C* ABP_FortniteLobbyLightSwitcher_C::GetDefaultObj()
+{
+	static class ABP_FortniteLobbyLightSwitcher_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_FortniteLobbyLightSwitcher_C*>(ABP_FortniteLobbyLightSwitcher_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_FortniteLobbyLightSwitcher.BP_FortniteLobbyLightSwitcher_C.SetVisiblityofDetailSpecificMeshes
@@ -39,9 +64,12 @@ namespace SDK
 
 void ABP_FortniteLobbyLightSwitcher_C::SetVisiblityofDetailSpecificMeshes(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, const class FString& CallFunc_GetPlatformName_ReturnValue, bool CallFunc_EqualEqual_StrStr_ReturnValue, bool CallFunc_IsMobilePlatform_ReturnValue, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue, TArray<class ABP_DetailLevelMesh_C*>& CallFunc_GetAllActorsOfClass_OutActors, int32 CallFunc_GetShadowQuality_ReturnValue, class ABP_DetailLevelMesh_C* CallFunc_Array_Get_Item, bool CallFunc_LessEqual_IntInt_ReturnValue, class ABP_DetailLevelMesh_C* K2Node_DynamicCast_AsBP_Detail_Level_Mesh, bool K2Node_DynamicCast_bSuccess, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "SetVisiblityofDetailSpecificMeshes");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FortniteLobbyLightSwitcher_C_SetVisiblityofDetailSpecificMeshes_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "SetVisiblityofDetailSpecificMeshes");
+
+	Params::ABP_FortniteLobbyLightSwitcher_C_SetVisiblityofDetailSpecificMeshes_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -142,9 +170,12 @@ void ABP_FortniteLobbyLightSwitcher_C::SetVisiblityofDetailSpecificMeshes(int32 
 
 void ABP_FortniteLobbyLightSwitcher_C::SetVisiblityofSceneLighting(bool Activate, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Array_Index_Variable_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_IsMobilePlatform_ReturnValue, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue, bool CallFunc_IsValid_ReturnValue_4, int32 CallFunc_GetVisualEffectQuality_ReturnValue, int32 CallFunc_GetShadowQuality_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_5, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_6, bool CallFunc_IsValid_ReturnValue_7, bool CallFunc_IsMobilePlatform_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_8, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_9, int32 CallFunc_GetVisualEffectQuality_ReturnValue_1, int32 CallFunc_GetShadowQuality_ReturnValue_1, bool CallFunc_EqualEqual_IntInt_ReturnValue_2, bool CallFunc_EqualEqual_IntInt_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue_3, bool CallFunc_BooleanOR_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_10, bool CallFunc_BooleanAND_ReturnValue_3, bool CallFunc_BooleanOR_ReturnValue_5, bool CallFunc_IsMobilePlatform_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_11, bool CallFunc_IsValid_ReturnValue_12, bool CallFunc_IsValid_ReturnValue_13, bool CallFunc_IsValid_ReturnValue_14, bool CallFunc_IsValid_ReturnValue_15, bool CallFunc_IsValid_ReturnValue_16, bool CallFunc_IsValid_ReturnValue_17, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue_2, int32 CallFunc_GetVisualEffectQuality_ReturnValue_2, class AEmitter* CallFunc_Array_Get_Item, bool CallFunc_EqualEqual_IntInt_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_18, bool CallFunc_BooleanAND_ReturnValue_4, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_GetShadowQuality_ReturnValue_2, bool CallFunc_EqualEqual_IntInt_ReturnValue_5, bool CallFunc_IsValid_ReturnValue_19, bool CallFunc_BooleanOR_ReturnValue_6, bool CallFunc_BooleanOR_ReturnValue_7, bool CallFunc_BooleanAND_ReturnValue_5, bool CallFunc_BooleanOR_ReturnValue_8, class APointLight* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_20, bool CallFunc_Less_IntInt_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_21, bool CallFunc_IsValid_ReturnValue_22)
 {
-	static auto Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "SetVisiblityofSceneLighting");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FortniteLobbyLightSwitcher_C_SetVisiblityofSceneLighting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "SetVisiblityofSceneLighting");
+
+	Params::ABP_FortniteLobbyLightSwitcher_C_SetVisiblityofSceneLighting_Params Parms{};
 
 	Parms.Activate = Activate;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -227,12 +258,14 @@ void ABP_FortniteLobbyLightSwitcher_C::SetVisiblityofSceneLighting(bool Activate
 
 void ABP_FortniteLobbyLightSwitcher_C::UserConstructionScript()
 {
-	static auto Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FortniteLobbyLightSwitcher_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "UserConstructionScript");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -243,12 +276,14 @@ void ABP_FortniteLobbyLightSwitcher_C::UserConstructionScript()
 
 void ABP_FortniteLobbyLightSwitcher_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FortniteLobbyLightSwitcher_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -259,12 +294,14 @@ void ABP_FortniteLobbyLightSwitcher_C::ReceiveBeginPlay()
 
 void ABP_FortniteLobbyLightSwitcher_C::EnableLobbySetLighting()
 {
-	static auto Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "EnableLobbySetLighting");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FortniteLobbyLightSwitcher_C_EnableLobbySetLighting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "EnableLobbySetLighting");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -275,12 +312,14 @@ void ABP_FortniteLobbyLightSwitcher_C::EnableLobbySetLighting()
 
 void ABP_FortniteLobbyLightSwitcher_C::DisableLobbySetLighting()
 {
-	static auto Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "DisableLobbySetLighting");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FortniteLobbyLightSwitcher_C_DisableLobbySetLighting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "DisableLobbySetLighting");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -291,12 +330,14 @@ void ABP_FortniteLobbyLightSwitcher_C::DisableLobbySetLighting()
 
 void ABP_FortniteLobbyLightSwitcher_C::UpdateSettings()
 {
-	static auto Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "UpdateSettings");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FortniteLobbyLightSwitcher_C_UpdateSettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "UpdateSettings");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -328,9 +369,12 @@ void ABP_FortniteLobbyLightSwitcher_C::UpdateSettings()
 
 void ABP_FortniteLobbyLightSwitcher_C::ExecuteUbergraph_BP_FortniteLobbyLightSwitcher(int32 EntryPoint, int32 Temp_int_Loop_Counter_Variable, bool Temp_bool_True_if_break_was_hit_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Array_Index_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue, int32 CallFunc_GetVisualEffectQuality_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, int32 CallFunc_GetShadowQuality_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue_1, bool CallFunc_IsMobilePlatform_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, TArray<class AFortnitePartyBackdrop_Camera_C*>& CallFunc_GetAllActorsOfClass_OutActors, bool CallFunc_BooleanAND_ReturnValue, class AFortnitePartyBackdrop_Camera_C* CallFunc_Array_Get_Item, bool CallFunc_BooleanOR_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "ExecuteUbergraph_BP_FortniteLobbyLightSwitcher");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FortniteLobbyLightSwitcher_C_ExecuteUbergraph_BP_FortniteLobbyLightSwitcher_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FortniteLobbyLightSwitcher_C", "ExecuteUbergraph_BP_FortniteLobbyLightSwitcher");
+
+	Params::ABP_FortniteLobbyLightSwitcher_C_ExecuteUbergraph_BP_FortniteLobbyLightSwitcher_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -360,6 +404,4 @@ void ABP_FortniteLobbyLightSwitcher_C::ExecuteUbergraph_BP_FortniteLobbyLightSwi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,26 +12,57 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass RedeemFriendCodeWindow.RedeemFriendCodeWindow_C
+// (None)
+
+class UClass* URedeemFriendCodeWindow_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("RedeemFriendCodeWindow_C");
+
+	return Clss;
+}
+
+
+// RedeemFriendCodeWindow_C RedeemFriendCodeWindow.Default__RedeemFriendCodeWindow_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class URedeemFriendCodeWindow_C* URedeemFriendCodeWindow_C::GetDefaultObj()
+{
+	static class URedeemFriendCodeWindow_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<URedeemFriendCodeWindow_C*>(URedeemFriendCodeWindow_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function RedeemFriendCodeWindow.RedeemFriendCodeWindow_C.HandleRedeemCodeComplete
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               Success                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ERedeemCodeFailureReasonFailureReason                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ERedeemCodeFailureReasonTemp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
-// class FText                        Temp_text_Variable_2                                             ()
-// class FText                        Temp_text_Variable_3                                             ()
-// class FText                        Temp_text_Variable_4                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
+// class FText                        Temp_text_Variable_2                                             (None)
+// class FText                        Temp_text_Variable_3                                             (None)
+// class FText                        Temp_text_Variable_4                                             (None)
 // TArray<struct FPurchasedItemInfo>  K2Node_MakeArray_Array                                           (ConstParm, ZeroConstructor, ReferenceParm)
 // class UFortMcpContext*             CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        K2Node_Select_Default                                            (None)
 
 void URedeemFriendCodeWindow_C::HandleRedeemCodeComplete(bool Success, enum class ERedeemCodeFailureReason FailureReason, enum class ERedeemCodeFailureReason Temp_byte_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class FText Temp_text_Variable_2, class FText Temp_text_Variable_3, class FText Temp_text_Variable_4, TArray<struct FPurchasedItemInfo>& K2Node_MakeArray_Array, class UFortMcpContext* CallFunc_GetContext_ReturnValue, class FText K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("RedeemFriendCodeWindow_C", "HandleRedeemCodeComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::URedeemFriendCodeWindow_C_HandleRedeemCodeComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "HandleRedeemCodeComplete");
+
+	Params::URedeemFriendCodeWindow_C_HandleRedeemCodeComplete_Params Parms{};
 
 	Parms.Success = Success;
 	Parms.FailureReason = FailureReason;
@@ -59,12 +87,14 @@ void URedeemFriendCodeWindow_C::HandleRedeemCodeComplete(bool Success, enum clas
 
 void URedeemFriendCodeWindow_C::Close()
 {
-	static auto Func = Class->GetFunction("RedeemFriendCodeWindow_C", "Close");
+	static class UFunction* Func = nullptr;
 
-	Params::URedeemFriendCodeWindow_C_Close_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "Close");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -76,9 +106,12 @@ void URedeemFriendCodeWindow_C::Close()
 
 void URedeemFriendCodeWindow_C::BndEvt__CancelButton_K2Node_ComponentBoundEvent_57_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("RedeemFriendCodeWindow_C", "BndEvt__CancelButton_K2Node_ComponentBoundEvent_57_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::URedeemFriendCodeWindow_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_57_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "BndEvt__CancelButton_K2Node_ComponentBoundEvent_57_CommonButtonClicked__DelegateSignature");
+
+	Params::URedeemFriendCodeWindow_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_57_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -94,9 +127,12 @@ void URedeemFriendCodeWindow_C::BndEvt__CancelButton_K2Node_ComponentBoundEvent_
 
 void URedeemFriendCodeWindow_C::BndEvt__SendButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("RedeemFriendCodeWindow_C", "BndEvt__SendButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::URedeemFriendCodeWindow_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "BndEvt__SendButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature");
+
+	Params::URedeemFriendCodeWindow_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -113,9 +149,12 @@ void URedeemFriendCodeWindow_C::BndEvt__SendButton_K2Node_ComponentBoundEvent_75
 
 void URedeemFriendCodeWindow_C::OnRedeemFriendCodeComplete(bool bSuccess, enum class ERedeemCodeFailureReason FailureReason)
 {
-	static auto Func = Class->GetFunction("RedeemFriendCodeWindow_C", "OnRedeemFriendCodeComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::URedeemFriendCodeWindow_C_OnRedeemFriendCodeComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "OnRedeemFriendCodeComplete");
+
+	Params::URedeemFriendCodeWindow_C_OnRedeemFriendCodeComplete_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 	Parms.FailureReason = FailureReason;
@@ -131,12 +170,14 @@ void URedeemFriendCodeWindow_C::OnRedeemFriendCodeComplete(bool bSuccess, enum c
 
 void URedeemFriendCodeWindow_C::Construct()
 {
-	static auto Func = Class->GetFunction("RedeemFriendCodeWindow_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::URedeemFriendCodeWindow_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -148,9 +189,12 @@ void URedeemFriendCodeWindow_C::Construct()
 
 void URedeemFriendCodeWindow_C::BndEvt__FriendCodeEntry_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature(class FText& Text)
 {
-	static auto Func = Class->GetFunction("RedeemFriendCodeWindow_C", "BndEvt__FriendCodeEntry_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::URedeemFriendCodeWindow_C_BndEvt__FriendCodeEntry_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "BndEvt__FriendCodeEntry_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature");
+
+	Params::URedeemFriendCodeWindow_C_BndEvt__FriendCodeEntry_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Text = Text;
 
@@ -166,7 +210,7 @@ void URedeemFriendCodeWindow_C::BndEvt__FriendCodeEntry_K2Node_ComponentBoundEve
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_bSuccess                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ERedeemCodeFailureReasonK2Node_Event_FailureReason                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetText_ReturnValue                                     ()
+// class FText                        CallFunc_GetText_ReturnValue                                     (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                        K2Node_ComponentBoundEvent_Text                                  (ConstParm)
@@ -175,9 +219,12 @@ void URedeemFriendCodeWindow_C::BndEvt__FriendCodeEntry_K2Node_ComponentBoundEve
 
 void URedeemFriendCodeWindow_C::ExecuteUbergraph_RedeemFriendCodeWindow(int32 EntryPoint, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool K2Node_Event_bSuccess, enum class ERedeemCodeFailureReason K2Node_Event_FailureReason, class FText CallFunc_GetText_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, class FText K2Node_ComponentBoundEvent_Text, bool CallFunc_IsVisible_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1)
 {
-	static auto Func = Class->GetFunction("RedeemFriendCodeWindow_C", "ExecuteUbergraph_RedeemFriendCodeWindow");
+	static class UFunction* Func = nullptr;
 
-	Params::URedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RedeemFriendCodeWindow_C", "ExecuteUbergraph_RedeemFriendCodeWindow");
+
+	Params::URedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
@@ -196,6 +243,4 @@ void URedeemFriendCodeWindow_C::ExecuteUbergraph_RedeemFriendCodeWindow(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

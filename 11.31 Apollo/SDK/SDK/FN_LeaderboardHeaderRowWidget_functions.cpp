@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass LeaderboardHeaderRowWidget.LeaderboardHeaderRowWidget_C
+// (None)
+
+class UClass* ULeaderboardHeaderRowWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LeaderboardHeaderRowWidget_C");
+
+	return Clss;
+}
+
+
+// LeaderboardHeaderRowWidget_C LeaderboardHeaderRowWidget.Default__LeaderboardHeaderRowWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULeaderboardHeaderRowWidget_C* ULeaderboardHeaderRowWidget_C::GetDefaultObj()
+{
+	static class ULeaderboardHeaderRowWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULeaderboardHeaderRowWidget_C*>(ULeaderboardHeaderRowWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function LeaderboardHeaderRowWidget.LeaderboardHeaderRowWidget_C.SetStatNameText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ULeaderboardHeaderRowWidget_C::SetStatNameText(class FText Text)
 {
-	static auto Func = Class->GetFunction("LeaderboardHeaderRowWidget_C", "SetStatNameText");
+	static class UFunction* Func = nullptr;
 
-	Params::ULeaderboardHeaderRowWidget_C_SetStatNameText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LeaderboardHeaderRowWidget_C", "SetStatNameText");
+
+	Params::ULeaderboardHeaderRowWidget_C_SetStatNameText_Params Parms{};
 
 	Parms.Text = Text;
 
@@ -39,12 +67,14 @@ void ULeaderboardHeaderRowWidget_C::SetStatNameText(class FText Text)
 
 void ULeaderboardHeaderRowWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("LeaderboardHeaderRowWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::ULeaderboardHeaderRowWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LeaderboardHeaderRowWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +86,12 @@ void ULeaderboardHeaderRowWidget_C::Construct()
 
 void ULeaderboardHeaderRowWidget_C::ExecuteUbergraph_LeaderboardHeaderRowWidget(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("LeaderboardHeaderRowWidget_C", "ExecuteUbergraph_LeaderboardHeaderRowWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::ULeaderboardHeaderRowWidget_C_ExecuteUbergraph_LeaderboardHeaderRowWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LeaderboardHeaderRowWidget_C", "ExecuteUbergraph_LeaderboardHeaderRowWidget");
+
+	Params::ULeaderboardHeaderRowWidget_C_ExecuteUbergraph_LeaderboardHeaderRowWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -68,6 +101,4 @@ void ULeaderboardHeaderRowWidget_C::ExecuteUbergraph_LeaderboardHeaderRowWidget(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

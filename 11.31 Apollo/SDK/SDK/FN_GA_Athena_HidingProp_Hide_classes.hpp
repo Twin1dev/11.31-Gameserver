@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -26,7 +23,7 @@ public:
 	class UAnimMontage*                          Exit_Anim_Montage;                                 // 0xA60(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FScalableFloat                        ExitBlockShootDelay;                               // 0xA68(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FRotator                              ControlRotation;                                   // 0xA88(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4F1B[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_505D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCameraModifier*                       CameraModifier;                                    // 0xA98(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                 TC_Quest;                                          // 0xAA0(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FGameplayTagContainer                 TC_PlayerOwned;                                    // 0xAC0(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -37,11 +34,8 @@ public:
 	class AFortPlayerController*                 PlayerController;                                  // 0xB48(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UMulticastInlineDelegateProperty_            NewEventDispatcher_0;                              // 0xB50(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GA_Athena_HidingProp_Hide_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGA_Athena_HidingProp_Hide_C* GetDefaultObj();
 
 	void Completed_75B60D4B43DAA553E4C21EA3D2E3AD03(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
 	void Cancelled_75B60D4B43DAA553E4C21EA3D2E3AD03(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag);
@@ -60,6 +54,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

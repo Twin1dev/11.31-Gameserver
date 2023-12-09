@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass AnimNotify_PlayForceFeedback.AnimNotify_PlayForceFeedback_C
+// (None)
+
+class UClass* UAnimNotify_PlayForceFeedback_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AnimNotify_PlayForceFeedback_C");
+
+	return Clss;
+}
+
+
+// AnimNotify_PlayForceFeedback_C AnimNotify_PlayForceFeedback.Default__AnimNotify_PlayForceFeedback_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAnimNotify_PlayForceFeedback_C* UAnimNotify_PlayForceFeedback_C::GetDefaultObj()
+{
+	static class UAnimNotify_PlayForceFeedback_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAnimNotify_PlayForceFeedback_C*>(UAnimNotify_PlayForceFeedback_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AnimNotify_PlayForceFeedback.AnimNotify_PlayForceFeedback_C.Received_Notify
@@ -33,9 +58,12 @@ namespace SDK
 
 bool UAnimNotify_PlayForceFeedback_C::Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, class AActor* CallFunc_GetOwner_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsLocalController_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AnimNotify_PlayForceFeedback_C", "Received_Notify");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimNotify_PlayForceFeedback_C_Received_Notify_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimNotify_PlayForceFeedback_C", "Received_Notify");
+
+	Params::UAnimNotify_PlayForceFeedback_C_Received_Notify_Params Parms{};
 
 	Parms.MeshComp = MeshComp;
 	Parms.Animation = Animation;
@@ -57,6 +85,4 @@ bool UAnimNotify_PlayForceFeedback_C::Received_Notify(class USkeletalMeshCompone
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

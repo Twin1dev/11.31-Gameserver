@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass GiftingScreen.GiftingScreen_C
+// (None)
+
+class UClass* UGiftingScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GiftingScreen_C");
+
+	return Clss;
+}
+
+
+// GiftingScreen_C GiftingScreen.Default__GiftingScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGiftingScreen_C* UGiftingScreen_C::GetDefaultObj()
+{
+	static class UGiftingScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGiftingScreen_C*>(UGiftingScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GiftingScreen.GiftingScreen_C.HandleMoreInfoClicked
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UGiftingScreen_C::HandleMoreInfoClicked(bool* bPassThrough, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "HandleMoreInfoClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_HandleMoreInfoClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "HandleMoreInfoClicked");
+
+	Params::UGiftingScreen_C_HandleMoreInfoClicked_Params Parms{};
 
 	Parms.CallFunc_GetRuntimeOptions_ReturnValue = CallFunc_GetRuntimeOptions_ReturnValue;
 
@@ -47,9 +75,12 @@ void UGiftingScreen_C::HandleMoreInfoClicked(bool* bPassThrough, class UFortRunt
 
 void UGiftingScreen_C::ToggleBackAction(bool bEnable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_HasInputActionHandler_ReturnValue, bool CallFunc_HasInputActionHandler_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "ToggleBackAction");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_ToggleBackAction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "ToggleBackAction");
+
+	Params::UGiftingScreen_C_ToggleBackAction_Params Parms{};
 
 	Parms.bEnable = bEnable;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -68,9 +99,12 @@ void UGiftingScreen_C::ToggleBackAction(bool bEnable, UDelegateProperty_ K2Node_
 
 class UWidget* UGiftingScreen_C::GetWidgetForFramingViewedItem()
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "GetWidgetForFramingViewedItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_GetWidgetForFramingViewedItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "GetWidgetForFramingViewedItem");
+
+	Params::UGiftingScreen_C_GetWidgetForFramingViewedItem_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -88,9 +122,12 @@ class UWidget* UGiftingScreen_C::GetWidgetForFramingViewedItem()
 
 void UGiftingScreen_C::HandleBackClicked(bool* bIsHandled, bool CallFunc_BP_HasValidMOTDParent_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "HandleBackClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_HandleBackClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "HandleBackClicked");
+
+	Params::UGiftingScreen_C_HandleBackClicked_Params Parms{};
 
 	Parms.CallFunc_BP_HasValidMOTDParent_ReturnValue = CallFunc_BP_HasValidMOTDParent_ReturnValue;
 
@@ -109,9 +146,12 @@ void UGiftingScreen_C::HandleBackClicked(bool* bIsHandled, bool CallFunc_BP_HasV
 
 void UGiftingScreen_C::OnOfferSet(class UFortStoreFrontOfferInfo* NewOfferInfo)
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "OnOfferSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_OnOfferSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "OnOfferSet");
+
+	Params::UGiftingScreen_C_OnOfferSet_Params Parms{};
 
 	Parms.NewOfferInfo = NewOfferInfo;
 
@@ -127,9 +167,12 @@ void UGiftingScreen_C::OnOfferSet(class UFortStoreFrontOfferInfo* NewOfferInfo)
 
 void UGiftingScreen_C::OnMoveToGiftWrapStep(bool bGiftingToSelf)
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "OnMoveToGiftWrapStep");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_OnMoveToGiftWrapStep_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "OnMoveToGiftWrapStep");
+
+	Params::UGiftingScreen_C_OnMoveToGiftWrapStep_Params Parms{};
 
 	Parms.bGiftingToSelf = bGiftingToSelf;
 
@@ -145,9 +188,12 @@ void UGiftingScreen_C::OnMoveToGiftWrapStep(bool bGiftingToSelf)
 
 void UGiftingScreen_C::BndEvt__Tab_Recipients_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "BndEvt__Tab_Recipients_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_BndEvt__Tab_Recipients_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "BndEvt__Tab_Recipients_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UGiftingScreen_C_BndEvt__Tab_Recipients_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -162,12 +208,14 @@ void UGiftingScreen_C::BndEvt__Tab_Recipients_K2Node_ComponentBoundEvent_0_Commo
 
 void UGiftingScreen_C::OnMoveToFriendSelectStep()
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "OnMoveToFriendSelectStep");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_OnMoveToFriendSelectStep_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "OnMoveToFriendSelectStep");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -179,9 +227,12 @@ void UGiftingScreen_C::OnMoveToFriendSelectStep()
 
 void UGiftingScreen_C::BndEvt__Tab_GiftWrap_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "BndEvt__Tab_GiftWrap_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_BndEvt__Tab_GiftWrap_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "BndEvt__Tab_GiftWrap_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UGiftingScreen_C_BndEvt__Tab_GiftWrap_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -196,12 +247,14 @@ void UGiftingScreen_C::BndEvt__Tab_GiftWrap_K2Node_ComponentBoundEvent_1_CommonB
 
 void UGiftingScreen_C::OnBeginGiftingSubmission()
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "OnBeginGiftingSubmission");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_OnBeginGiftingSubmission_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "OnBeginGiftingSubmission");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -213,9 +266,12 @@ void UGiftingScreen_C::OnBeginGiftingSubmission()
 
 void UGiftingScreen_C::OnEndGiftingSubmission(bool bSuccess)
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "OnEndGiftingSubmission");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_OnEndGiftingSubmission_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "OnEndGiftingSubmission");
+
+	Params::UGiftingScreen_C_OnEndGiftingSubmission_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 
@@ -230,12 +286,14 @@ void UGiftingScreen_C::OnEndGiftingSubmission(bool bSuccess)
 
 void UGiftingScreen_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -248,9 +306,12 @@ void UGiftingScreen_C::BP_OnActivated()
 
 void UGiftingScreen_C::BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_2_OnItemIsHoveredChangedDynamic__DelegateSignature(class UObject* Item, bool bIsHovered)
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_2_OnItemIsHoveredChangedDynamic__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_2_OnItemIsHoveredChangedDynamic__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_2_OnItemIsHoveredChangedDynamic__DelegateSignature");
+
+	Params::UGiftingScreen_C_BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_2_OnItemIsHoveredChangedDynamic__DelegateSignature_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.bIsHovered = bIsHovered;
@@ -268,9 +329,12 @@ void UGiftingScreen_C::BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_2_O
 
 void UGiftingScreen_C::BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature(class UObject* Item, bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature");
+
+	Params::UGiftingScreen_C_BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.bIsSelected = bIsSelected;
@@ -286,12 +350,14 @@ void UGiftingScreen_C::BndEvt__TileView_GiftBoxes_K2Node_ComponentBoundEvent_3_O
 
 void UGiftingScreen_C::Construct()
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -303,9 +369,12 @@ void UGiftingScreen_C::Construct()
 
 void UGiftingScreen_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+
+	Params::UGiftingScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -351,9 +420,12 @@ void UGiftingScreen_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_4_Co
 
 void UGiftingScreen_C::ExecuteUbergraph_GiftingScreen(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_1, class UFortStoreFrontOfferInfo* K2Node_Event_NewOfferInfo, bool CallFunc_IsGiftOnly_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, bool K2Node_Event_bGiftingToSelf, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, float CallFunc_RandomFloatInRange_ReturnValue, bool K2Node_Event_bSuccess, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, int32 CallFunc_GetActiveWidgetIndex_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, class UObject* K2Node_ComponentBoundEvent_Item_1, bool K2Node_ComponentBoundEvent_bIsHovered, class UObject* K2Node_ComponentBoundEvent_Item, bool K2Node_ComponentBoundEvent_bIsSelected, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, int32 CallFunc_Len_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_IsMobileGame_ReturnValue, bool CallFunc_HandleBackClicked_bIsHandled, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("GiftingScreen_C", "ExecuteUbergraph_GiftingScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingScreen_C_ExecuteUbergraph_GiftingScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingScreen_C", "ExecuteUbergraph_GiftingScreen");
+
+	Params::UGiftingScreen_C_ExecuteUbergraph_GiftingScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -393,6 +465,4 @@ void UGiftingScreen_C::ExecuteUbergraph_GiftingScreen(int32 EntryPoint, enum cla
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -71,23 +68,20 @@ public:
 	class UVerticalBox*                          VerticalBoxItemDetails;                            // 0x838(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         CanPurchase;                                       // 0x840(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         IsPurchasing;                                      // 0x841(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4827[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6A2B[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        NumberToPurchase;                                  // 0x844(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CanPurchaseLeft;                                   // 0x848(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         CanPurchaseRight;                                  // 0x849(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         CanChangeQuantity;                                 // 0x84A(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4828[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6A2C[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          DelayGiftingHandle;                                // 0x850(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FDataTableRowHandle                   BackAction;                                        // 0x858(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FDataTableRowHandle                   UndoAction;                                        // 0x868(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	class UFortItemDefinition*                   SelectedItemDefinition;                            // 0x878(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFortItemQuantityPair>         SortedItemQuantities;                              // 0x880(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaDirectAcquisitionOfferDetailsWidget_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaDirectAcquisitionOfferDetailsWidget_C* GetDefaultObj();
 
 	void HandleButtonsIntroFinished(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
 	void ShowSwipeButtons(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
@@ -183,6 +177,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

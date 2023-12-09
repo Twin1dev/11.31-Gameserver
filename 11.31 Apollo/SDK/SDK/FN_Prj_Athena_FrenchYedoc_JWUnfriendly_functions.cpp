@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass Prj_Athena_FrenchYedoc_JWUnfriendly.Prj_Athena_FrenchYedoc_JWUnfriendly_C
+// (Actor)
+
+class UClass* APrj_Athena_FrenchYedoc_JWUnfriendly_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Prj_Athena_FrenchYedoc_JWUnfriendly_C");
+
+	return Clss;
+}
+
+
+// Prj_Athena_FrenchYedoc_JWUnfriendly_C Prj_Athena_FrenchYedoc_JWUnfriendly.Default__Prj_Athena_FrenchYedoc_JWUnfriendly_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class APrj_Athena_FrenchYedoc_JWUnfriendly_C* APrj_Athena_FrenchYedoc_JWUnfriendly_C::GetDefaultObj()
+{
+	static class APrj_Athena_FrenchYedoc_JWUnfriendly_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APrj_Athena_FrenchYedoc_JWUnfriendly_C*>(APrj_Athena_FrenchYedoc_JWUnfriendly_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Prj_Athena_FrenchYedoc_JWUnfriendly.Prj_Athena_FrenchYedoc_JWUnfriendly_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void APrj_Athena_FrenchYedoc_JWUnfriendly_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FrenchYedoc_JWUnfriendly_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FrenchYedoc_JWUnfriendly_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FrenchYedoc_JWUnfriendly_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -39,9 +66,12 @@ void APrj_Athena_FrenchYedoc_JWUnfriendly_C::ReceiveBeginPlay()
 
 void APrj_Athena_FrenchYedoc_JWUnfriendly_C::ExecuteUbergraph_Prj_Athena_FrenchYedoc_JWUnfriendly(int32 EntryPoint, bool CallFunc_IsDedicatedServer_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FrenchYedoc_JWUnfriendly_C", "ExecuteUbergraph_Prj_Athena_FrenchYedoc_JWUnfriendly");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FrenchYedoc_JWUnfriendly_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc_JWUnfriendly_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FrenchYedoc_JWUnfriendly_C", "ExecuteUbergraph_Prj_Athena_FrenchYedoc_JWUnfriendly");
+
+	Params::APrj_Athena_FrenchYedoc_JWUnfriendly_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc_JWUnfriendly_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
@@ -52,6 +82,4 @@ void APrj_Athena_FrenchYedoc_JWUnfriendly_C::ExecuteUbergraph_Prj_Athena_FrenchY
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

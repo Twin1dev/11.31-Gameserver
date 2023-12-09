@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,24 +12,55 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Ninja_Tactical_MeleeHitsHeal.GA_Ninja_Tactical_MeleeHitsHeal_C
+// (None)
+
+class UClass* UGA_Ninja_Tactical_MeleeHitsHeal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Ninja_Tactical_MeleeHitsHeal_C");
+
+	return Clss;
+}
+
+
+// GA_Ninja_Tactical_MeleeHitsHeal_C GA_Ninja_Tactical_MeleeHitsHeal.Default__GA_Ninja_Tactical_MeleeHitsHeal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Ninja_Tactical_MeleeHitsHeal_C* UGA_Ninja_Tactical_MeleeHitsHeal_C::GetDefaultObj()
+{
+	static class UGA_Ninja_Tactical_MeleeHitsHeal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Ninja_Tactical_MeleeHitsHeal_C*>(UGA_Ninja_Tactical_MeleeHitsHeal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Ninja_Tactical_MeleeHitsHeal.GA_Ninja_Tactical_MeleeHitsHeal_C.SetupAbility
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UAbilitySystemComponent*     AbilitySystem                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute(ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortBaseWeaponStats        CallFunc_GetDataTableRowFromName_OutRow                          ()
+// struct FFortBaseWeaponStats        CallFunc_GetDataTableRowFromName_OutRow                          (None)
 // bool                               CallFunc_GetDataTableRowFromName_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayTagContainer       CallFunc_MakeLiteralGameplayTagContainer_ReturnValue             ()
+// struct FGameplayTagContainer       CallFunc_MakeLiteralGameplayTagContainer_ReturnValue             (None)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UGA_Ninja_Tactical_MeleeHitsHeal_C::SetupAbility(class UAbilitySystemComponent* AbilitySystem, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue, const struct FFortBaseWeaponStats& CallFunc_GetDataTableRowFromName_OutRow, bool CallFunc_GetDataTableRowFromName_ReturnValue, const struct FGameplayTagContainer& CallFunc_MakeLiteralGameplayTagContainer_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, bool CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess, float CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "SetupAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Ninja_Tactical_MeleeHitsHeal_C_SetupAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "SetupAbility");
+
+	Params::UGA_Ninja_Tactical_MeleeHitsHeal_C_SetupAbility_Params Parms{};
 
 	Parms.AbilitySystem = AbilitySystem;
 	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute;
@@ -65,9 +93,12 @@ void UGA_Ninja_Tactical_MeleeHitsHeal_C::SetupAbility(class UAbilitySystemCompon
 
 bool UGA_Ninja_Tactical_MeleeHitsHeal_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload, bool CallFunc_ShouldSwordHitsHealRespondToEvent_ReturnValue, bool CallFunc_ShouldHammerHitsHealRespondToEvent_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_HasAllTags_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "K2_ShouldAbilityRespondToEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Ninja_Tactical_MeleeHitsHeal_C_K2_ShouldAbilityRespondToEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "K2_ShouldAbilityRespondToEvent");
+
+	Params::UGA_Ninja_Tactical_MeleeHitsHeal_C_K2_ShouldAbilityRespondToEvent_Params Parms{};
 
 	Parms.ActorInfo = ActorInfo;
 	Parms.Payload = Payload;
@@ -93,9 +124,12 @@ bool UGA_Ninja_Tactical_MeleeHitsHeal_C::K2_ShouldAbilityRespondToEvent(const st
 
 void UGA_Ninja_Tactical_MeleeHitsHeal_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Ninja_Tactical_MeleeHitsHeal_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGA_Ninja_Tactical_MeleeHitsHeal_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -111,9 +145,12 @@ void UGA_Ninja_Tactical_MeleeHitsHeal_C::K2_ActivateAbilityFromEvent(struct FGam
 
 void UGA_Ninja_Tactical_MeleeHitsHeal_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Ninja_Tactical_MeleeHitsHeal_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "K2_OnEndAbility");
+
+	Params::UGA_Ninja_Tactical_MeleeHitsHeal_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -142,9 +179,12 @@ void UGA_Ninja_Tactical_MeleeHitsHeal_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Ninja_Tactical_MeleeHitsHeal_C::ExecuteUbergraph_GA_Ninja_Tactical_MeleeHitsHeal(int32 EntryPoint, int32 Temp_int_Variable, bool CallFunc_Greater_IntInt_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, const struct FGameplayEventData& K2Node_Event_EventData, bool CallFunc_K2_CommitAbility_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue, bool K2Node_Event_bWasCancelled, float CallFunc_GetGameTimeInSeconds_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Abs_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "ExecuteUbergraph_GA_Ninja_Tactical_MeleeHitsHeal");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Ninja_Tactical_MeleeHitsHeal_C_ExecuteUbergraph_GA_Ninja_Tactical_MeleeHitsHeal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Ninja_Tactical_MeleeHitsHeal_C", "ExecuteUbergraph_GA_Ninja_Tactical_MeleeHitsHeal");
+
+	Params::UGA_Ninja_Tactical_MeleeHitsHeal_C_ExecuteUbergraph_GA_Ninja_Tactical_MeleeHitsHeal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -167,6 +207,4 @@ void UGA_Ninja_Tactical_MeleeHitsHeal_C::ExecuteUbergraph_GA_Ninja_Tactical_Mele
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

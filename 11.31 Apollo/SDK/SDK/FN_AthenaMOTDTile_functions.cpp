@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaMOTDTile.AthenaMOTDTile_C
+// (None)
+
+class UClass* UAthenaMOTDTile_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaMOTDTile_C");
+
+	return Clss;
+}
+
+
+// AthenaMOTDTile_C AthenaMOTDTile.Default__AthenaMOTDTile_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaMOTDTile_C* UAthenaMOTDTile_C::GetDefaultObj()
+{
+	static class UAthenaMOTDTile_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaMOTDTile_C*>(UAthenaMOTDTile_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AthenaMOTDTile.AthenaMOTDTile_C.UpdateDisplay
@@ -25,9 +50,12 @@ namespace SDK
 
 void UAthenaMOTDTile_C::UpdateDisplay(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTile_C", "UpdateDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTile_C_UpdateDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTile_C", "UpdateDisplay");
+
+	Params::UAthenaMOTDTile_C_UpdateDisplay_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -49,9 +77,12 @@ void UAthenaMOTDTile_C::UpdateDisplay(bool Temp_bool_Variable, enum class ESlate
 
 void UAthenaMOTDTile_C::ShowImageOnly(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTile_C", "ShowImageOnly");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTile_C_ShowImageOnly_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTile_C", "ShowImageOnly");
+
+	Params::UAthenaMOTDTile_C_ShowImageOnly_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -71,9 +102,12 @@ void UAthenaMOTDTile_C::ShowImageOnly(bool Temp_bool_Variable, enum class ESlate
 
 void UAthenaMOTDTile_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTile_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTile_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTile_C", "OnMouseEnter");
+
+	Params::UAthenaMOTDTile_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -90,9 +124,12 @@ void UAthenaMOTDTile_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct 
 
 void UAthenaMOTDTile_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTile_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTile_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTile_C", "OnMouseLeave");
+
+	Params::UAthenaMOTDTile_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -108,9 +145,12 @@ void UAthenaMOTDTile_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 
 void UAthenaMOTDTile_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTile_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTile_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTile_C", "PreConstruct");
+
+	Params::UAthenaMOTDTile_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -136,9 +176,12 @@ void UAthenaMOTDTile_C::PreConstruct(bool IsDesignTime)
 
 void UAthenaMOTDTile_C::ExecuteUbergraph_AthenaMOTDTile(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FPointerEvent& K2Node_Event_MouseEvent, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, bool K2Node_Event_IsDesignTime, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTile_C", "ExecuteUbergraph_AthenaMOTDTile");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTile_C_ExecuteUbergraph_AthenaMOTDTile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTile_C", "ExecuteUbergraph_AthenaMOTDTile");
+
+	Params::UAthenaMOTDTile_C_ExecuteUbergraph_AthenaMOTDTile_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -164,9 +207,12 @@ void UAthenaMOTDTile_C::ExecuteUbergraph_AthenaMOTDTile(int32 EntryPoint, bool T
 
 void UAthenaMOTDTile_C::OnHoveredChanged__DelegateSignature(bool NewIsHovered)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTile_C", "OnHoveredChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTile_C_OnHoveredChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTile_C", "OnHoveredChanged__DelegateSignature");
+
+	Params::UAthenaMOTDTile_C_OnHoveredChanged__DelegateSignature_Params Parms{};
 
 	Parms.NewIsHovered = NewIsHovered;
 
@@ -176,6 +222,4 @@ void UAthenaMOTDTile_C::OnHoveredChanged__DelegateSignature(bool NewIsHovered)
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

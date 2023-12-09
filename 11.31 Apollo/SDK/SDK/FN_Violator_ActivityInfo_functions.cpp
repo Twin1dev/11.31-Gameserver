@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass Violator_ActivityInfo.Violator_ActivityInfo_C
+// (None)
+
+class UClass* UViolator_ActivityInfo_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Violator_ActivityInfo_C");
+
+	return Clss;
+}
+
+
+// Violator_ActivityInfo_C Violator_ActivityInfo.Default__Violator_ActivityInfo_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UViolator_ActivityInfo_C* UViolator_ActivityInfo_C::GetDefaultObj()
+{
+	static class UViolator_ActivityInfo_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UViolator_ActivityInfo_C*>(UViolator_ActivityInfo_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function Violator_ActivityInfo.Violator_ActivityInfo_C.Create Backplate MIDs
@@ -24,9 +49,12 @@ namespace SDK
 
 void UViolator_ActivityInfo_C::Create_Backplate_MIDs(class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("Violator_ActivityInfo_C", "Create Backplate MIDs");
+	static class UFunction* Func = nullptr;
 
-	Params::UViolator_ActivityInfo_C_Create_Backplate_MIDs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Violator_ActivityInfo_C", "Create Backplate MIDs");
+
+	Params::UViolator_ActivityInfo_C_Create_Backplate_MIDs_Params Parms{};
 
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
@@ -46,11 +74,14 @@ void UViolator_ActivityInfo_C::Create_Backplate_MIDs(class UMaterialInstanceDyna
 // float                              CallFunc_Divide_FloatFloat_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_MakeLiteralFloat_ReturnValue_2                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UViolator_ActivityInfo_C::HandleStyling_TextCallout(bool Is_Large_Display, float CallFunc_MakeLiteralFloat_ReturnValue, float CallFunc_MakeLiteralFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_MakeLiteralFloat_ReturnValue_2)
+void UViolator_ActivityInfo_C::HandleStylingMinusTextCallout(bool Is_Large_Display, float CallFunc_MakeLiteralFloat_ReturnValue, float CallFunc_MakeLiteralFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_MakeLiteralFloat_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("Violator_ActivityInfo_C", "HandleStyling-TextCallout");
+	static class UFunction* Func = nullptr;
 
-	Params::UViolator_ActivityInfo_C_HandleStyling_TextCallout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Violator_ActivityInfo_C", "HandleStyling-TextCallout");
+
+	Params::UViolator_ActivityInfo_C_HandleStylingMinusTextCallout_Params Parms{};
 
 	Parms.Is_Large_Display = Is_Large_Display;
 	Parms.CallFunc_MakeLiteralFloat_ReturnValue = CallFunc_MakeLiteralFloat_ReturnValue;
@@ -72,11 +103,14 @@ void UViolator_ActivityInfo_C::HandleStyling_TextCallout(bool Is_Large_Display, 
 // float                              CallFunc_MakeLiteralFloat_ReturnValue_2                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Divide_FloatFloat_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UViolator_ActivityInfo_C::HandleStyling_Timer(bool Is_Large_Display, float CallFunc_MakeLiteralFloat_ReturnValue, float CallFunc_MakeLiteralFloat_ReturnValue_1, float CallFunc_MakeLiteralFloat_ReturnValue_2, float CallFunc_Divide_FloatFloat_ReturnValue)
+void UViolator_ActivityInfo_C::HandleStylingMinusTimer(bool Is_Large_Display, float CallFunc_MakeLiteralFloat_ReturnValue, float CallFunc_MakeLiteralFloat_ReturnValue_1, float CallFunc_MakeLiteralFloat_ReturnValue_2, float CallFunc_Divide_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Violator_ActivityInfo_C", "HandleStyling-Timer");
+	static class UFunction* Func = nullptr;
 
-	Params::UViolator_ActivityInfo_C_HandleStyling_Timer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Violator_ActivityInfo_C", "HandleStyling-Timer");
+
+	Params::UViolator_ActivityInfo_C_HandleStylingMinusTimer_Params Parms{};
 
 	Parms.Is_Large_Display = Is_Large_Display;
 	Parms.CallFunc_MakeLiteralFloat_ReturnValue = CallFunc_MakeLiteralFloat_ReturnValue;
@@ -95,12 +129,14 @@ void UViolator_ActivityInfo_C::HandleStyling_Timer(bool Is_Large_Display, float 
 
 void UViolator_ActivityInfo_C::Construct()
 {
-	static auto Func = Class->GetFunction("Violator_ActivityInfo_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UViolator_ActivityInfo_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Violator_ActivityInfo_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -112,9 +148,12 @@ void UViolator_ActivityInfo_C::Construct()
 
 void UViolator_ActivityInfo_C::OnChallengeSet(struct FTimerDisplayData& DisplayStyle)
 {
-	static auto Func = Class->GetFunction("Violator_ActivityInfo_C", "OnChallengeSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UViolator_ActivityInfo_C_OnChallengeSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Violator_ActivityInfo_C", "OnChallengeSet");
+
+	Params::UViolator_ActivityInfo_C_OnChallengeSet_Params Parms{};
 
 	Parms.DisplayStyle = DisplayStyle;
 
@@ -130,9 +169,12 @@ void UViolator_ActivityInfo_C::OnChallengeSet(struct FTimerDisplayData& DisplayS
 
 void UViolator_ActivityInfo_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("Violator_ActivityInfo_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UViolator_ActivityInfo_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Violator_ActivityInfo_C", "PreConstruct");
+
+	Params::UViolator_ActivityInfo_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -150,9 +192,12 @@ void UViolator_ActivityInfo_C::PreConstruct(bool IsDesignTime)
 
 void UViolator_ActivityInfo_C::ExecuteUbergraph_Violator_ActivityInfo(int32 EntryPoint, bool K2Node_Event_IsDesignTime, const struct FTimerDisplayData& K2Node_Event_DisplayStyle)
 {
-	static auto Func = Class->GetFunction("Violator_ActivityInfo_C", "ExecuteUbergraph_Violator_ActivityInfo");
+	static class UFunction* Func = nullptr;
 
-	Params::UViolator_ActivityInfo_C_ExecuteUbergraph_Violator_ActivityInfo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Violator_ActivityInfo_C", "ExecuteUbergraph_Violator_ActivityInfo");
+
+	Params::UViolator_ActivityInfo_C_ExecuteUbergraph_Violator_ActivityInfo_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -164,6 +209,4 @@ void UViolator_ActivityInfo_C::ExecuteUbergraph_Violator_ActivityInfo(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

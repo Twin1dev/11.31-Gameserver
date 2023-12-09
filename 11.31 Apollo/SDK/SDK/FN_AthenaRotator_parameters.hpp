@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -22,8 +19,8 @@ struct UAthenaRotator_C_ConfigureForOneDirectionMode_Params
 {
 public:
 	bool                                         UseOneDirectionalMode;                             // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4341[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	struct FSlateBrush                           CallFunc_NoResourceBrush_ReturnValue;              // 0x8(0x88)()
+	uint8                                        Pad_64F6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FSlateBrush                           CallFunc_NoResourceBrush_ReturnValue;              // 0x8(0x88)(None)
 };
 
 // 0x2 (0x2 - 0x0)
@@ -33,13 +30,6 @@ struct UAthenaRotator_C_ChangeDirection_Params
 public:
 	bool                                         bDirection;                                        // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsInteractionEnabled_ReturnValue;         // 0x1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function AthenaRotator.AthenaRotator_C.Construct
-struct UAthenaRotator_C_Construct_Params
-{
-public:
 };
 
 // 0x8 (0x8 - 0x0)
@@ -75,13 +65,6 @@ public:
 	bool                                         IsDesignTime;                                      // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function AthenaRotator.AthenaRotator_C.BP_OnClicked
-struct UAthenaRotator_C_BP_OnClicked_Params
-{
-public:
-};
-
 // 0xAF (0xAF - 0x0)
 // Function AthenaRotator.AthenaRotator_C.ExecuteUbergraph_AthenaRotator
 struct UAthenaRotator_C_ExecuteUbergraph_AthenaRotator_Params
@@ -89,7 +72,7 @@ struct UAthenaRotator_C_ExecuteUbergraph_AthenaRotator_Params
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsMobileGame_ReturnValue;                 // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4342[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_64F9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonInputSubsystem*                 CallFunc_GetContext_ReturnValue;                   // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputSubsystem*                 CallFunc_GetContext_ReturnValue_1;                 // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ECommonInputType                  CallFunc_GetCurrentInputType_ReturnValue;          // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -97,7 +80,7 @@ public:
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x1A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x1B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_BooleanOR_ReturnValue;                    // 0x1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4343[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_64FA[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonButton*                         K2Node_ComponentBoundEvent_Button_1;               // 0x20(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x28(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGeometry                             K2Node_Event_MyGeometry;                           // 0x30(0x38)(IsPlainOldData, NoDestructor)
@@ -120,6 +103,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_BattleMapGroundMoveChestEdge.BP_BattleMapGroundMoveChestEdge_C
+// (Actor)
+
+class UClass* ABP_BattleMapGroundMoveChestEdge_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_BattleMapGroundMoveChestEdge_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// BP_BattleMapGroundMoveChestEdge_C BP_BattleMapGroundMoveChestEdge.Default__BP_BattleMapGroundMoveChestEdge_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_BattleMapGroundMoveChestEdge_C* ABP_BattleMapGroundMoveChestEdge_C::GetDefaultObj()
+{
+	static class ABP_BattleMapGroundMoveChestEdge_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_BattleMapGroundMoveChestEdge_C*>(ABP_BattleMapGroundMoveChestEdge_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

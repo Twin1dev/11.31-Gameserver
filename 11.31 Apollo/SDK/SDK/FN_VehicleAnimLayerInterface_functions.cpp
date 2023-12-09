@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// AnimBlueprintGeneratedClass VehicleAnimLayerInterface.VehicleAnimLayerInterface_C
+// (None)
+
+class UClass* IVehicleAnimLayerInterface_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VehicleAnimLayerInterface_C");
+
+	return Clss;
+}
+
+
+// VehicleAnimLayerInterface_C VehicleAnimLayerInterface.Default__VehicleAnimLayerInterface_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class IVehicleAnimLayerInterface_C* IVehicleAnimLayerInterface_C::GetDefaultObj()
+{
+	static class IVehicleAnimLayerInterface_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<IVehicleAnimLayerInterface_C*>(IVehicleAnimLayerInterface_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function VehicleAnimLayerInterface.VehicleAnimLayerInterface_C.VehicleSplitBodyOverride
@@ -25,9 +50,12 @@ namespace SDK
 
 void IVehicleAnimLayerInterface_C::VehicleSplitBodyOverride(const struct FPoseLink& InPoseSplitBody, const struct FPoseLink& InPoseInPoseUpperAndLowerBody, const struct FFortAnimInput_TurnInPlace& TurnInPlace, struct FPoseLink* VehicleSplitBodyOverride)
 {
-	static auto Func = Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleSplitBodyOverride");
+	static class UFunction* Func = nullptr;
 
-	Params::IVehicleAnimLayerInterface_C_VehicleSplitBodyOverride_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleSplitBodyOverride");
+
+	Params::IVehicleAnimLayerInterface_C_VehicleSplitBodyOverride_Params Parms{};
 
 	Parms.InPoseSplitBody = InPoseSplitBody;
 	Parms.InPoseInPoseUpperAndLowerBody = InPoseInPoseUpperAndLowerBody;
@@ -36,7 +64,7 @@ void IVehicleAnimLayerInterface_C::VehicleSplitBodyOverride(const struct FPoseLi
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (VehicleSplitBodyOverride != nullptr)
-		*VehicleSplitBodyOverride = Parms.VehicleSplitBodyOverride;
+		*VehicleSplitBodyOverride = std::move(Parms.VehicleSplitBodyOverride);
 
 }
 
@@ -50,9 +78,12 @@ void IVehicleAnimLayerInterface_C::VehicleSplitBodyOverride(const struct FPoseLi
 
 void IVehicleAnimLayerInterface_C::VehicleLowerBodyOverride(const struct FPoseLink& InPoseLowerBodyDefault, const struct FPoseLink& InPoseUpperBody, struct FPoseLink* VehicleLowerBodyOverride)
 {
-	static auto Func = Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleLowerBodyOverride");
+	static class UFunction* Func = nullptr;
 
-	Params::IVehicleAnimLayerInterface_C_VehicleLowerBodyOverride_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleLowerBodyOverride");
+
+	Params::IVehicleAnimLayerInterface_C_VehicleLowerBodyOverride_Params Parms{};
 
 	Parms.InPoseLowerBodyDefault = InPoseLowerBodyDefault;
 	Parms.InPoseUpperBody = InPoseUpperBody;
@@ -60,7 +91,7 @@ void IVehicleAnimLayerInterface_C::VehicleLowerBodyOverride(const struct FPoseLi
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (VehicleLowerBodyOverride != nullptr)
-		*VehicleLowerBodyOverride = Parms.VehicleLowerBodyOverride;
+		*VehicleLowerBodyOverride = std::move(Parms.VehicleLowerBodyOverride);
 
 }
 
@@ -74,9 +105,12 @@ void IVehicleAnimLayerInterface_C::VehicleLowerBodyOverride(const struct FPoseLi
 
 void IVehicleAnimLayerInterface_C::VehicleFullBodyOverride(const struct FPoseLink& InPoseFullBody, const struct FPoseLink& InPoseUpperAndLowerCachePose, struct FPoseLink* VehicleFullBodyOverride)
 {
-	static auto Func = Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleFullBodyOverride");
+	static class UFunction* Func = nullptr;
 
-	Params::IVehicleAnimLayerInterface_C_VehicleFullBodyOverride_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleFullBodyOverride");
+
+	Params::IVehicleAnimLayerInterface_C_VehicleFullBodyOverride_Params Parms{};
 
 	Parms.InPoseFullBody = InPoseFullBody;
 	Parms.InPoseUpperAndLowerCachePose = InPoseUpperAndLowerCachePose;
@@ -84,12 +118,10 @@ void IVehicleAnimLayerInterface_C::VehicleFullBodyOverride(const struct FPoseLin
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (VehicleFullBodyOverride != nullptr)
-		*VehicleFullBodyOverride = Parms.VehicleFullBodyOverride;
+		*VehicleFullBodyOverride = std::move(Parms.VehicleFullBodyOverride);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

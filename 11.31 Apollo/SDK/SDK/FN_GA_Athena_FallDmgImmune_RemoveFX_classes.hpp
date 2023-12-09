@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -23,11 +20,8 @@ public:
 	struct FGameplayTag                          Player_Landing_GC;                                 // 0xA48(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          VehicleOnGroundTimer;                              // 0xA50(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GA_Athena_FallDmgImmune_RemoveFX_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGA_Athena_FallDmgImmune_RemoveFX_C* GetDefaultObj();
 
 	void OnChange_FD84FE4040E65CB60551DE8433D51332(enum class EMovementMode NewMovementMode);
 	void OnChange_E07DC5494A7BED888E9B24AA514662A5(enum class EMovementMode NewMovementMode);
@@ -38,6 +32,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

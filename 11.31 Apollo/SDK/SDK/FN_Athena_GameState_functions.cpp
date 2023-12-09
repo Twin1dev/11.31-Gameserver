@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass Athena_GameState.Athena_GameState_C
+// (Actor)
+
+class UClass* AAthena_GameState_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Athena_GameState_C");
+
+	return Clss;
+}
+
+
+// Athena_GameState_C Athena_GameState.Default__Athena_GameState_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AAthena_GameState_C* AAthena_GameState_C::GetDefaultObj()
+{
+	static class AAthena_GameState_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AAthena_GameState_C*>(AAthena_GameState_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Athena_GameState.Athena_GameState_C.Timeline_0__FinishedFunc
 // (BlueprintEvent)
 // Parameters:
 
 void AAthena_GameState_C::Timeline_0__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("Athena_GameState_C", "Timeline_0__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_GameState_C_Timeline_0__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_GameState_C", "Timeline_0__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AAthena_GameState_C::Timeline_0__FinishedFunc()
 
 void AAthena_GameState_C::Timeline_0__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("Athena_GameState_C", "Timeline_0__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_GameState_C_Timeline_0__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_GameState_C", "Timeline_0__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void AAthena_GameState_C::Timeline_0__UpdateFunc()
 
 void AAthena_GameState_C::OnWinnerAnnounced()
 {
-	static auto Func = Class->GetFunction("Athena_GameState_C", "OnWinnerAnnounced");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_GameState_C_OnWinnerAnnounced_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_GameState_C", "OnWinnerAnnounced");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -73,9 +104,12 @@ void AAthena_GameState_C::OnWinnerAnnounced()
 
 void AAthena_GameState_C::ExecuteUbergraph_Athena_GameState(int32 EntryPoint, bool Temp_bool_Has_Been_Initd_Variable, bool Temp_bool_IsClosed_Variable, bool CallFunc_CanUseSlowMotionOnVictory_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Athena_GameState_C", "ExecuteUbergraph_Athena_GameState");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_GameState_C_ExecuteUbergraph_Athena_GameState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_GameState_C", "ExecuteUbergraph_Athena_GameState");
+
+	Params::AAthena_GameState_C_ExecuteUbergraph_Athena_GameState_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Has_Been_Initd_Variable = Temp_bool_Has_Been_Initd_Variable;
@@ -88,6 +122,4 @@ void AAthena_GameState_C::ExecuteUbergraph_Athena_GameState(int32 EntryPoint, bo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

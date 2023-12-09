@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass BottomBarWidget.BottomBarWidget_C
+// (None)
+
+class UClass* UBottomBarWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BottomBarWidget_C");
+
+	return Clss;
+}
+
+
+// BottomBarWidget_C BottomBarWidget.Default__BottomBarWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBottomBarWidget_C* UBottomBarWidget_C::GetDefaultObj()
+{
+	static class UBottomBarWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBottomBarWidget_C*>(UBottomBarWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BottomBarWidget.BottomBarWidget_C.SetupBottomBarStyle
@@ -32,9 +57,12 @@ namespace SDK
 
 void UBottomBarWidget_C::SetupBottomBarStyle(enum class ESubGame Temp_byte_Variable, class UMaterialInterface* Temp_object_Variable, class UMaterialInterface* Temp_object_Variable_1, class UMaterialInterface* Temp_object_Variable_2, class UMaterialInterface* Temp_object_Variable_3, enum class ESubGame Temp_byte_Variable_1, class UWidget* Temp_object_Variable_4, class UWidget* Temp_object_Variable_5, enum class ESubGame CallFunc_GetCurrentSubGame_ReturnValue, class UWidget* K2Node_Select_Default, class UMaterialInterface* K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("BottomBarWidget_C", "SetupBottomBarStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UBottomBarWidget_C_SetupBottomBarStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BottomBarWidget_C", "SetupBottomBarStyle");
+
+	Params::UBottomBarWidget_C_SetupBottomBarStyle_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -59,12 +87,14 @@ void UBottomBarWidget_C::SetupBottomBarStyle(enum class ESubGame Temp_byte_Varia
 
 void UBottomBarWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("BottomBarWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UBottomBarWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BottomBarWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -78,9 +108,12 @@ void UBottomBarWidget_C::Construct()
 
 void UBottomBarWidget_C::ExecuteUbergraph_BottomBarWidget(int32 EntryPoint, bool CallFunc_IsMobileGame_ReturnValue, const struct FLinearColor& K2Node_MakeStruct_LinearColor)
 {
-	static auto Func = Class->GetFunction("BottomBarWidget_C", "ExecuteUbergraph_BottomBarWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UBottomBarWidget_C_ExecuteUbergraph_BottomBarWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BottomBarWidget_C", "ExecuteUbergraph_BottomBarWidget");
+
+	Params::UBottomBarWidget_C_ExecuteUbergraph_BottomBarWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsMobileGame_ReturnValue = CallFunc_IsMobileGame_ReturnValue;
@@ -92,6 +125,4 @@ void UBottomBarWidget_C::ExecuteUbergraph_BottomBarWidget(int32 EntryPoint, bool
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

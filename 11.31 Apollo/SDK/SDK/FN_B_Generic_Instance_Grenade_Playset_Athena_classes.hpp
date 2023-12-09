@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,11 +16,8 @@ class AB_Generic_Instance_Grenade_Playset_Athena_C : public AB_Grenade_Playset_A
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xA48(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_Generic_Instance_Grenade_Playset_Athena_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_Generic_Instance_Grenade_Playset_Athena_C* GetDefaultObj();
 
 	void ReceiveBeginPlay();
 	void K2_OnUnEquip();
@@ -33,6 +27,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

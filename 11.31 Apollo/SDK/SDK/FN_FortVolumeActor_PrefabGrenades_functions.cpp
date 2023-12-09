@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass FortVolumeActor_PrefabGrenades.FortVolumeActor_PrefabGrenades_C
+// (Actor)
+
+class UClass* AFortVolumeActor_PrefabGrenades_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FortVolumeActor_PrefabGrenades_C");
+
+	return Clss;
+}
+
+
+// FortVolumeActor_PrefabGrenades_C FortVolumeActor_PrefabGrenades.Default__FortVolumeActor_PrefabGrenades_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AFortVolumeActor_PrefabGrenades_C* AFortVolumeActor_PrefabGrenades_C::GetDefaultObj()
+{
+	static class AFortVolumeActor_PrefabGrenades_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AFortVolumeActor_PrefabGrenades_C*>(AFortVolumeActor_PrefabGrenades_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function FortVolumeActor_PrefabGrenades.FortVolumeActor_PrefabGrenades_C.OnDeathPlayEffects
@@ -28,9 +53,12 @@ namespace SDK
 
 void AFortVolumeActor_PrefabGrenades_C::OnDeathPlayEffects(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("FortVolumeActor_PrefabGrenades_C", "OnDeathPlayEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortVolumeActor_PrefabGrenades_C", "OnDeathPlayEffects");
+
+	Params::AFortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -55,13 +83,16 @@ void AFortVolumeActor_PrefabGrenades_C::OnDeathPlayEffects(float Damage, struct 
 // struct FHitResult                  K2Node_Event_HitInfo                                             (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AFortPawn*                   K2Node_Event_InstigatedBy                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       (None)
 
 void AFortVolumeActor_PrefabGrenades_C::ExecuteUbergraph_FortVolumeActor_PrefabGrenades(int32 EntryPoint, float K2Node_Event_Damage, const struct FGameplayTagContainer& K2Node_Event_DamageTags, const struct FVector& K2Node_Event_Momentum, const struct FHitResult& K2Node_Event_HitInfo, class AFortPawn* K2Node_Event_InstigatedBy, class AActor* K2Node_Event_DamageCauser, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext)
 {
-	static auto Func = Class->GetFunction("FortVolumeActor_PrefabGrenades_C", "ExecuteUbergraph_FortVolumeActor_PrefabGrenades");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortVolumeActor_PrefabGrenades_C", "ExecuteUbergraph_FortVolumeActor_PrefabGrenades");
+
+	Params::AFortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_Damage = K2Node_Event_Damage;
@@ -78,6 +109,4 @@ void AFortVolumeActor_PrefabGrenades_C::ExecuteUbergraph_FortVolumeActor_PrefabG
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

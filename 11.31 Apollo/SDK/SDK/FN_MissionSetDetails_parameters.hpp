@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -104,33 +101,12 @@ public:
 	bool                                         PassThrough;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function MissionSetDetails.MissionSetDetails_C.Construct
-struct UMissionSetDetails_C_Construct_Params
-{
-public:
-};
-
 // 0x8 (0x8 - 0x0)
 // Function MissionSetDetails.MissionSetDetails_C.BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 struct UMissionSetDetails_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params
 {
 public:
 	class UCommonButton*                         Button;                                            // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function MissionSetDetails.MissionSetDetails_C.UpdateLevelUpBundleButtonText
-struct UMissionSetDetails_C_UpdateLevelUpBundleButtonText_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function MissionSetDetails.MissionSetDetails_C.StylePageForPrestige
-struct UMissionSetDetails_C_StylePageForPrestige_Params
-{
-public:
 };
 
 // 0x1 (0x1 - 0x0)
@@ -149,13 +125,6 @@ public:
 	bool                                         bHidePriestigeUpsell;                              // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function MissionSetDetails.MissionSetDetails_C.VeiwingBundleLevelChanged
-struct UMissionSetDetails_C_VeiwingBundleLevelChanged_Params
-{
-public:
-};
-
 // 0xA1 (0xA1 - 0x0)
 // Function MissionSetDetails.MissionSetDetails_C.OnChallengeSetEstablished
 struct UMissionSetDetails_C_OnChallengeSetEstablished_Params
@@ -171,20 +140,20 @@ struct UMissionSetDetails_C_ExecuteUbergraph_MissionSetDetails_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5C79[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_64DC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortChallengeSetStyle                K2Node_Event_DisplayStyle;                         // 0x8(0xA0)(ConstParm)
 	bool                                         K2Node_Event_bIsComplete;                          // 0xA8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5C7A[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_64DD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          CallFunc_GetChallengeStyleLightAccentColor_ReturnValue; // 0xAC(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5C7B[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	struct FSlateColor                           K2Node_MakeStruct_SlateColor;                      // 0xC0(0x28)()
+	uint8                                        Pad_64DE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FSlateColor                           K2Node_MakeStruct_SlateColor;                      // 0xC0(0x28)(None)
 	struct FDataTableRowHandle                   K2Node_MakeStruct_DataTableRowHandle;              // 0xE8(0x10)(NoDestructor)
 	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0xF8(0x10)(ZeroConstructor, NoDestructor)
 	class UCommonButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x108(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HandleBack_PassThrough;                   // 0x110(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsMobileGame_ReturnValue;                 // 0x111(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_CanLevelBundle_ReturnValue;               // 0x112(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5C7C[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_64DF[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UIconTextButton_C*                     K2Node_DynamicCast_AsIcon_Text_Button;             // 0x118(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x120(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsCurrentlyViewPrestige_ReturnValue;      // 0x121(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -192,32 +161,32 @@ public:
 	bool                                         K2Node_CustomEvent_FirstRun;                       // 0x123(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         K2Node_Event_bHidePriestigeUpsell;                 // 0x124(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsCurrentlyViewPrestige_ReturnValue_2;    // 0x125(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5C7D[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_64E0[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSoftObjectPtr<class UTexture2D>             CallFunc_GetChaseRewardForBundleLevel_ReturnValue; // 0x128(0x28)(HasGetValueTypeHash)
 	bool                                         CallFunc_IsAssetNull_ReturnValue;                  // 0x150(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5C7E[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_64E1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UItemInfoHeaderWidget_C*               K2Node_DynamicCast_AsItem_Info_Header_Widget;      // 0x158(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess_1;                     // 0x160(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5C7F[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_64E2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInstanceDynamic*              CallFunc_GetDynamicMaterial_ReturnValue;           // 0x168(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_MakeLiteralFloat_ReturnValue;             // 0x170(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_MakeLiteralFloat_ReturnValue_1;           // 0x174(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Divide_FloatFloat_ReturnValue;            // 0x178(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsUrgentMission_ReturnValue;              // 0x17C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5C80[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_64E3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCircleArrowButton_C*                  K2Node_DynamicCast_AsCircle_Arrow_Button;          // 0x180(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess_2;                     // 0x188(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5C81[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_64E4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMissionProgressDisplay_C*             K2Node_DynamicCast_AsMission_Progress_Display;     // 0x190(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess_3;                     // 0x198(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5C82[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_64E5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMissionProgressDisplay_C*             K2Node_DynamicCast_AsMission_Progress_Display_1;   // 0x1A0(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess_4;                     // 0x1A8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5C83[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_64E6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimationForward_ReturnValue;         // 0x1B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCircleArrowButton_C*                  K2Node_DynamicCast_AsCircle_Arrow_Button_1;        // 0x1B8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess_5;                     // 0x1C0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5C84[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_64E7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCircleArrowButton_C*                  K2Node_DynamicCast_AsCircle_Arrow_Button_2;        // 0x1C8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess_6;                     // 0x1D0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  Temp_byte_Variable;                                // 0x1D1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -229,6 +198,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_CozyLodge_SelectablePresent.BP_CozyLodge_SelectablePresent_C
+// (Actor)
+
+class UClass* ABP_CozyLodge_SelectablePresent_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_CozyLodge_SelectablePresent_C");
+
+	return Clss;
+}
+
+
+// BP_CozyLodge_SelectablePresent_C BP_CozyLodge_SelectablePresent.Default__BP_CozyLodge_SelectablePresent_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_CozyLodge_SelectablePresent_C* ABP_CozyLodge_SelectablePresent_C::GetDefaultObj()
+{
+	static class ABP_CozyLodge_SelectablePresent_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_CozyLodge_SelectablePresent_C*>(ABP_CozyLodge_SelectablePresent_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_CozyLodge_SelectablePresent.BP_CozyLodge_SelectablePresent_C.UserConstructionScript
@@ -84,9 +109,12 @@ namespace SDK
 
 void ABP_CozyLodge_SelectablePresent_C::UserConstructionScript(const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, const struct FLinearColor& Temp_struct_Variable_2, const struct FLinearColor& Temp_struct_Variable_3, int32 Temp_int_Variable, const struct FLinearColor& Temp_struct_Variable_4, const struct FLinearColor& Temp_struct_Variable_5, const struct FLinearColor& Temp_struct_Variable_6, int32 Temp_int_Variable_1, const struct FLinearColor& Temp_struct_Variable_7, const struct FLinearColor& Temp_struct_Variable_8, const struct FLinearColor& Temp_struct_Variable_9, bool Temp_bool_Variable, const struct FTransform& Temp_struct_Variable_10, int32 Temp_int_Variable_2, const struct FLinearColor& Temp_struct_Variable_11, class UStaticMeshComponent* CallFunc_AddComponent_ReturnValue, const struct FLinearColor& Temp_struct_Variable_12, const struct FLinearColor& Temp_struct_Variable_13, const struct FLinearColor& Temp_struct_Variable_14, const struct FLinearColor& Temp_struct_Variable_15, const struct FLinearColor& Temp_struct_Variable_16, const struct FLinearColor& Temp_struct_Variable_17, const struct FLinearColor& Temp_struct_Variable_18, const struct FLinearColor& Temp_struct_Variable_19, int32 Temp_int_Array_Index_Variable, class UMaterialInterface* CallFunc_Array_Get_Item, float CallFunc_RandomFloatInRangeFromStream_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, float CallFunc_RoundFloat_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_RandomIntegerInRangeFromStream_ReturnValue, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1, int32 CallFunc_RandomIntegerInRangeFromStream_ReturnValue_1, int32 CallFunc_RandomIntegerInRangeFromStream_ReturnValue_2, const struct FLinearColor& K2Node_Select_Default, const struct FLinearColor& K2Node_Select_Default_1, float CallFunc_K2_GetScalarParameterValue_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_2, const struct FTransform& CallFunc_GetRelativeTransform_ReturnValue, class UStaticMeshComponent* CallFunc_AddComponent_ReturnValue_1, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_1, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_2, class UStaticMeshComponent* CallFunc_AddComponent_ReturnValue_2, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_Add_FloatFloat_ReturnValue, int32 CallFunc_RandomIntegerInRangeFromStream_ReturnValue_3, int32 CallFunc_FTrunc_ReturnValue, const struct FLinearColor& K2Node_Select_Default_2, int32 Temp_int_Variable_3, class UPrimitiveComponent* K2Node_Select_Default_3, const struct FLinearColor& K2Node_Select_Default_4, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_3, bool CallFunc_SetStaticMesh_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_SelectablePresent_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_SelectablePresent_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_SelectablePresent_C", "UserConstructionScript");
+
+	Params::ABP_CozyLodge_SelectablePresent_C_UserConstructionScript_Params Parms{};
 
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.Temp_struct_Variable_1 = Temp_struct_Variable_1;
@@ -163,12 +191,14 @@ void ABP_CozyLodge_SelectablePresent_C::UserConstructionScript(const struct FLin
 
 void ABP_CozyLodge_SelectablePresent_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_SelectablePresent_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_SelectablePresent_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_SelectablePresent_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -179,12 +209,14 @@ void ABP_CozyLodge_SelectablePresent_C::ReceiveBeginPlay()
 
 void ABP_CozyLodge_SelectablePresent_C::UpdateDisplayMeshToOpened()
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_SelectablePresent_C", "UpdateDisplayMeshToOpened");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_SelectablePresent_C_UpdateDisplayMeshToOpened_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_SelectablePresent_C", "UpdateDisplayMeshToOpened");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -200,9 +232,12 @@ void ABP_CozyLodge_SelectablePresent_C::UpdateDisplayMeshToOpened()
 
 void ABP_CozyLodge_SelectablePresent_C::ExecuteUbergraph_BP_CozyLodge_SelectablePresent(int32 EntryPoint, bool CallFunc_SetStaticMesh_ReturnValue, bool CallFunc_SetStaticMesh_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_SelectablePresent_C", "ExecuteUbergraph_BP_CozyLodge_SelectablePresent");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_SelectablePresent_C_ExecuteUbergraph_BP_CozyLodge_SelectablePresent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_SelectablePresent_C", "ExecuteUbergraph_BP_CozyLodge_SelectablePresent");
+
+	Params::ABP_CozyLodge_SelectablePresent_C_ExecuteUbergraph_BP_CozyLodge_SelectablePresent_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_SetStaticMesh_ReturnValue = CallFunc_SetStaticMesh_ReturnValue;
@@ -216,6 +251,4 @@ void ABP_CozyLodge_SelectablePresent_C::ExecuteUbergraph_BP_CozyLodge_Selectable
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

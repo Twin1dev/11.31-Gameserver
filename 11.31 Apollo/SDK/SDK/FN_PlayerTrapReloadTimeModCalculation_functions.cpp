@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass PlayerTrapReloadTimeModCalculation.PlayerTrapReloadTimeModCalculation_C
+// (None)
+
+class UClass* UPlayerTrapReloadTimeModCalculation_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerTrapReloadTimeModCalculation_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// PlayerTrapReloadTimeModCalculation_C PlayerTrapReloadTimeModCalculation.Default__PlayerTrapReloadTimeModCalculation_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerTrapReloadTimeModCalculation_C* UPlayerTrapReloadTimeModCalculation_C::GetDefaultObj()
+{
+	static class UPlayerTrapReloadTimeModCalculation_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerTrapReloadTimeModCalculation_C*>(UPlayerTrapReloadTimeModCalculation_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

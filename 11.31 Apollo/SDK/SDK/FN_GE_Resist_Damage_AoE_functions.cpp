@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GE_Resist_Damage_AoE.GE_Resist_Damage_AoE_C
+// (None)
+
+class UClass* UGE_Resist_Damage_AoE_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GE_Resist_Damage_AoE_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// GE_Resist_Damage_AoE_C GE_Resist_Damage_AoE.Default__GE_Resist_Damage_AoE_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGE_Resist_Damage_AoE_C* UGE_Resist_Damage_AoE_C::GetDefaultObj()
+{
+	static class UGE_Resist_Damage_AoE_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGE_Resist_Damage_AoE_C*>(UGE_Resist_Damage_AoE_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass CreativeServerOptions.CreativeServerOptions_C
+// (None)
+
+class UClass* UCreativeServerOptions_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CreativeServerOptions_C");
+
+	return Clss;
+}
+
+
+// CreativeServerOptions_C CreativeServerOptions.Default__CreativeServerOptions_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCreativeServerOptions_C* UCreativeServerOptions_C::GetDefaultObj()
+{
+	static class UCreativeServerOptions_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCreativeServerOptions_C*>(UCreativeServerOptions_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function CreativeServerOptions.CreativeServerOptions_C.OnCreativeServerListRefreshed
 // (Event, Public, BlueprintEvent)
 // Parameters:
 
 void UCreativeServerOptions_C::OnCreativeServerListRefreshed()
 {
-	static auto Func = Class->GetFunction("CreativeServerOptions_C", "OnCreativeServerListRefreshed");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerOptions_C_OnCreativeServerListRefreshed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerOptions_C", "OnCreativeServerListRefreshed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UCreativeServerOptions_C::OnCreativeServerListRefreshed()
 
 void UCreativeServerOptions_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_2_OnFortSwipeEvent__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("CreativeServerOptions_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_2_OnFortSwipeEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerOptions_C_BndEvt__SwipePanel_K2Node_ComponentBoundEvent_2_OnFortSwipeEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerOptions_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_2_OnFortSwipeEvent__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UCreativeServerOptions_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_2_O
 
 void UCreativeServerOptions_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_3_OnFortSwipeEvent__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("CreativeServerOptions_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_3_OnFortSwipeEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerOptions_C_BndEvt__SwipePanel_K2Node_ComponentBoundEvent_3_OnFortSwipeEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerOptions_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_3_OnFortSwipeEvent__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void UCreativeServerOptions_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_3_O
 
 void UCreativeServerOptions_C::Construct()
 {
-	static auto Func = Class->GetFunction("CreativeServerOptions_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerOptions_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerOptions_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -86,9 +119,12 @@ void UCreativeServerOptions_C::Construct()
 
 void UCreativeServerOptions_C::BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("CreativeServerOptions_C", "BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerOptions_C_BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerOptions_C", "BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+
+	Params::UCreativeServerOptions_C_BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -104,9 +140,12 @@ void UCreativeServerOptions_C::BndEvt__CircleArrowButton_Left_K2Node_ComponentBo
 
 void UCreativeServerOptions_C::BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("CreativeServerOptions_C", "BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerOptions_C_BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerOptions_C", "BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+
+	Params::UCreativeServerOptions_C_BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -121,12 +160,14 @@ void UCreativeServerOptions_C::BndEvt__CircleArrowButton_Right_K2Node_ComponentB
 
 void UCreativeServerOptions_C::EventIntro()
 {
-	static auto Func = Class->GetFunction("CreativeServerOptions_C", "EventIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerOptions_C_EventIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerOptions_C", "EventIntro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -138,9 +179,12 @@ void UCreativeServerOptions_C::EventIntro()
 
 void UCreativeServerOptions_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("CreativeServerOptions_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerOptions_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerOptions_C", "PreConstruct");
+
+	Params::UCreativeServerOptions_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -182,9 +226,12 @@ void UCreativeServerOptions_C::PreConstruct(bool IsDesignTime)
 
 void UCreativeServerOptions_C::ExecuteUbergraph_CreativeServerOptions(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool Temp_bool_Variable, float Temp_float_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_3, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_IsMobileGame_ReturnValue, float CallFunc_PauseAnimation_ReturnValue, float CallFunc_GetStartTime_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float CallFunc_GetEndTime_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float K2Node_Select_Default_1, bool K2Node_Event_IsDesignTime, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool Temp_bool_Variable_2, enum class ESlateVisibility K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("CreativeServerOptions_C", "ExecuteUbergraph_CreativeServerOptions");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerOptions_C_ExecuteUbergraph_CreativeServerOptions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerOptions_C", "ExecuteUbergraph_CreativeServerOptions");
+
+	Params::UCreativeServerOptions_C_ExecuteUbergraph_CreativeServerOptions_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -226,9 +273,12 @@ void UCreativeServerOptions_C::ExecuteUbergraph_CreativeServerOptions(int32 Entr
 
 void UCreativeServerOptions_C::OnSelectedServerChanged__DelegateSignature(class UFortCreativeServerInfo* ServerInfo)
 {
-	static auto Func = Class->GetFunction("CreativeServerOptions_C", "OnSelectedServerChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerOptions_C_OnSelectedServerChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerOptions_C", "OnSelectedServerChanged__DelegateSignature");
+
+	Params::UCreativeServerOptions_C_OnSelectedServerChanged__DelegateSignature_Params Parms{};
 
 	Parms.ServerInfo = ServerInfo;
 
@@ -238,6 +288,4 @@ void UCreativeServerOptions_C::OnSelectedServerChanged__DelegateSignature(class 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

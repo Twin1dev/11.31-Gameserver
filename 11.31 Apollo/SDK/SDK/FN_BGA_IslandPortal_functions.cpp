@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BGA_IslandPortal.BGA_IslandPortal_C
+// (Actor)
+
+class UClass* ABGA_IslandPortal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BGA_IslandPortal_C");
+
+	return Clss;
+}
+
+
+// BGA_IslandPortal_C BGA_IslandPortal.Default__BGA_IslandPortal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABGA_IslandPortal_C* ABGA_IslandPortal_C::GetDefaultObj()
+{
+	static class ABGA_IslandPortal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABGA_IslandPortal_C*>(ABGA_IslandPortal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BGA_IslandPortal.BGA_IslandPortal_C.ClearDisplayedWidget
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void ABGA_IslandPortal_C::ClearDisplayedWidget()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "ClearDisplayedWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_ClearDisplayedWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "ClearDisplayedWidget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void ABGA_IslandPortal_C::ClearDisplayedWidget()
 
 void ABGA_IslandPortal_C::CloseAndClearDisplayedWidget(bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "CloseAndClearDisplayedWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_CloseAndClearDisplayedWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "CloseAndClearDisplayedWidget");
+
+	Params::ABGA_IslandPortal_C_CloseAndClearDisplayedWidget_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
@@ -60,9 +90,12 @@ void ABGA_IslandPortal_C::CloseAndClearDisplayedWidget(bool CallFunc_IsValid_Ret
 
 void ABGA_IslandPortal_C::CanUseHUDInteract(bool* CanInteract, bool CallFunc_IsPortalInteractable_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "CanUseHUDInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_CanUseHUDInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "CanUseHUDInteract");
+
+	Params::ABGA_IslandPortal_C_CanUseHUDInteract_Params Parms{};
 
 	Parms.CallFunc_IsPortalInteractable_ReturnValue = CallFunc_IsPortalInteractable_ReturnValue;
 	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
@@ -95,9 +128,12 @@ void ABGA_IslandPortal_C::CanUseHUDInteract(bool* CanInteract, bool CallFunc_IsP
 
 struct FVector ABGA_IslandPortal_C::ScaleThumbnailPlaneByTextureSize(bool Temp_bool_Variable, int32 CallFunc_GetThumbnailHeight_ReturnValue, int32 CallFunc_GetThumbnailWidth_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue_1, const struct FVector& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "ScaleThumbnailPlaneByTextureSize");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_ScaleThumbnailPlaneByTextureSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "ScaleThumbnailPlaneByTextureSize");
+
+	Params::ABGA_IslandPortal_C_ScaleThumbnailPlaneByTextureSize_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.CallFunc_GetThumbnailHeight_ReturnValue = CallFunc_GetThumbnailHeight_ReturnValue;
@@ -126,21 +162,24 @@ struct FVector ABGA_IslandPortal_C::ScaleThumbnailPlaneByTextureSize(bool Temp_b
 // class FText                        ReturnValue                                                      (Parm, OutParm, ReturnParm)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
 // bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable_2                                             ()
-// class FText                        Temp_text_Variable_3                                             ()
+// class FText                        Temp_text_Variable_2                                             (None)
+// class FText                        Temp_text_Variable_3                                             (None)
 // bool                               CallFunc_IsMobileGame_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default                                            ()
-// class FText                        K2Node_Select_Default_1                                          ()
-// class FText                        K2Node_Select_Default_2                                          ()
+// class FText                        K2Node_Select_Default                                            (None)
+// class FText                        K2Node_Select_Default_1                                          (None)
+// class FText                        K2Node_Select_Default_2                                          (None)
 
 class FText ABGA_IslandPortal_C::BlueprintGetInteractionString(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted, bool Temp_bool_Variable, bool Temp_bool_Variable_1, class FText Temp_text_Variable, class FText Temp_text_Variable_1, bool Temp_bool_Variable_2, class FText Temp_text_Variable_2, class FText Temp_text_Variable_3, bool CallFunc_IsMobileGame_ReturnValue, class FText K2Node_Select_Default, class FText K2Node_Select_Default_1, class FText K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintGetInteractionString");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_BlueprintGetInteractionString_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintGetInteractionString");
+
+	Params::ABGA_IslandPortal_C_BlueprintGetInteractionString_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -166,25 +205,28 @@ class FText ABGA_IslandPortal_C::BlueprintGetInteractionString(class AFortPawn* 
 // Function BGA_IslandPortal.BGA_IslandPortal_C.UpdateNameDisplay
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                        CallFunc_GetTagline_ReturnValue                                  ()
+// class FText                        CallFunc_GetTagline_ReturnValue                                  (None)
 // class FString                      CallFunc_GetMnemonic_ReturnValue                                 (ZeroConstructor, HasGetValueTypeHash)
 // int32                              CallFunc_Len_ReturnValue                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetCreatorName_ReturnValue                              ()
+// class FText                        CallFunc_GetCreatorName_ReturnValue                              (None)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetVolumeDisplayName_ReturnValue                        ()
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        CallFunc_GetVolumeDisplayName_ReturnValue                        (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 // class AFortPlayerStateAthena*      CallFunc_GetPlayerState_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                      CallFunc_GetPlayerName_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
-// class FText                        CallFunc_GetTagline_ReturnValue_1                                ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
+// class FText                        CallFunc_GetTagline_ReturnValue_1                                (None)
 
 void ABGA_IslandPortal_C::UpdateNameDisplay(class FText CallFunc_GetTagline_ReturnValue, const class FString& CallFunc_GetMnemonic_ReturnValue, int32 CallFunc_Len_ReturnValue, class FText CallFunc_GetCreatorName_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, class FText CallFunc_GetVolumeDisplayName_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue, class AFortPlayerStateAthena* CallFunc_GetPlayerState_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, bool CallFunc_IsValid_ReturnValue, const class FString& CallFunc_GetPlayerName_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, class FText CallFunc_GetTagline_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateNameDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_UpdateNameDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateNameDisplay");
+
+	Params::ABGA_IslandPortal_C_UpdateNameDisplay_Params Parms{};
 
 	Parms.CallFunc_GetTagline_ReturnValue = CallFunc_GetTagline_ReturnValue;
 	Parms.CallFunc_GetMnemonic_ReturnValue = CallFunc_GetMnemonic_ReturnValue;
@@ -212,9 +254,12 @@ void ABGA_IslandPortal_C::UpdateNameDisplay(class FText CallFunc_GetTagline_Retu
 
 void ABGA_IslandPortal_C::UpdatePopulationDisplay(int32 CallFunc_Conv_ByteToInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "UpdatePopulationDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_UpdatePopulationDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdatePopulationDisplay");
+
+	Params::ABGA_IslandPortal_C_UpdatePopulationDisplay_Params Parms{};
 
 	Parms.CallFunc_Conv_ByteToInt_ReturnValue = CallFunc_Conv_ByteToInt_ReturnValue;
 
@@ -233,9 +278,12 @@ void ABGA_IslandPortal_C::UpdatePopulationDisplay(int32 CallFunc_Conv_ByteToInt_
 
 void ABGA_IslandPortal_C::SetPortalUIVisibility(bool Show, float Distance, bool WasHidden, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "SetPortalUIVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_SetPortalUIVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "SetPortalUIVisibility");
+
+	Params::ABGA_IslandPortal_C_SetPortalUIVisibility_Params Parms{};
 
 	Parms.Show = Show;
 	Parms.Distance = Distance;
@@ -268,9 +316,12 @@ void ABGA_IslandPortal_C::SetPortalUIVisibility(bool Show, float Distance, bool 
 
 void ABGA_IslandPortal_C::TeleportToLobbyIsland(class AFortPlayerController* RequestingController, class AFortAthenaVehicle* TravelingVehicle, class AFortPlayerPawn* TravelingPawn, const struct FVector& Destination, class AFortPlayerPawn* CallFunc_GetPlayerPawn_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_IsDrivingVehicle_ReturnValue, const struct FVector& CallFunc_GetPortalPosition_Location, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, bool CallFunc_TeleportPlayerPawn_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "TeleportToLobbyIsland");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_TeleportToLobbyIsland_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "TeleportToLobbyIsland");
+
+	Params::ABGA_IslandPortal_C_TeleportToLobbyIsland_Params Parms{};
 
 	Parms.RequestingController = RequestingController;
 	Parms.TravelingVehicle = TravelingVehicle;
@@ -301,9 +352,12 @@ void ABGA_IslandPortal_C::TeleportToLobbyIsland(class AFortPlayerController* Req
 
 bool ABGA_IslandPortal_C::BlueprintOnLocalInteract(class AFortPlayerPawn* InteractingPawn)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintOnLocalInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_BlueprintOnLocalInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintOnLocalInteract");
+
+	Params::ABGA_IslandPortal_C_BlueprintOnLocalInteract_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 
@@ -328,9 +382,12 @@ bool ABGA_IslandPortal_C::BlueprintOnLocalInteract(class AFortPlayerPawn* Intera
 
 bool ABGA_IslandPortal_C::BlueprintCanInteract(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_IsPortalInteractable_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintCanInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_BlueprintCanInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "BlueprintCanInteract");
+
+	Params::ABGA_IslandPortal_C_BlueprintCanInteract_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -367,9 +424,12 @@ bool ABGA_IslandPortal_C::BlueprintCanInteract(class AFortPawn* InteractingPawn,
 
 void ABGA_IslandPortal_C::GetPortalPosition(struct FVector* Location, float CallFunc_GetValueAtLevel_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, int32 Temp_int_Variable, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, int32 CallFunc_Add_IntInt_ReturnValue, float CallFunc_Multiply_IntFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Multiply_IntFloat_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue_1, const struct FVector& CallFunc_MakeVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "GetPortalPosition");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_GetPortalPosition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "GetPortalPosition");
+
+	Params::ABGA_IslandPortal_C_GetPortalPosition_Params Parms{};
 
 	Parms.CallFunc_GetValueAtLevel_ReturnValue = CallFunc_GetValueAtLevel_ReturnValue;
 	Parms.CallFunc_GetValueAtLevel_ReturnValue_1 = CallFunc_GetValueAtLevel_ReturnValue_1;
@@ -388,7 +448,7 @@ void ABGA_IslandPortal_C::GetPortalPosition(struct FVector* Location, float Call
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Location != nullptr)
-		*Location = Parms.Location;
+		*Location = std::move(Parms.Location);
 
 }
 
@@ -409,9 +469,12 @@ void ABGA_IslandPortal_C::GetPortalPosition(struct FVector* Location, float Call
 
 void ABGA_IslandPortal_C::UseRiftQuestUpdate(class AController* InController, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, TArray<class AFortPlayerController*>& K2Node_MakeArray_Array, bool CallFunc_Athena_CheckQuestAndObjectiveCompletion_QuestIsValid, bool CallFunc_Athena_CheckQuestAndObjectiveCompletion_QuestCompleted, bool CallFunc_Athena_CheckQuestAndObjectiveCompletion_ObjectiveCompleted, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "UseRiftQuestUpdate");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_UseRiftQuestUpdate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "UseRiftQuestUpdate");
+
+	Params::ABGA_IslandPortal_C_UseRiftQuestUpdate_Params Parms{};
 
 	Parms.InController = InController;
 	Parms.K2Node_DynamicCast_AsFort_Player_Controller = K2Node_DynamicCast_AsFort_Player_Controller;
@@ -572,9 +635,12 @@ void ABGA_IslandPortal_C::UseRiftQuestUpdate(class AController* InController, cl
 
 void ABGA_IslandPortal_C::CheckForRiftLocUpdate(class AController* InController, bool Temp_bool_Variable, class APawn* CallFunc_K2_GetPawn_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface, bool K2Node_DynamicCast_bSuccess, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_1, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_HasMatchingGameplayTag_ReturnValue, bool CallFunc_HasMatchingGameplayTag_ReturnValue_1, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_2, bool K2Node_DynamicCast_bSuccess_2, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_3, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_HasMatchingGameplayTag_ReturnValue_2, bool CallFunc_HasMatchingGameplayTag_ReturnValue_3, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_4, bool K2Node_DynamicCast_bSuccess_4, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_5, bool K2Node_DynamicCast_bSuccess_5, bool CallFunc_HasMatchingGameplayTag_ReturnValue_4, bool CallFunc_HasMatchingGameplayTag_ReturnValue_5, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_6, bool K2Node_DynamicCast_bSuccess_6, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_7, bool K2Node_DynamicCast_bSuccess_7, bool CallFunc_HasMatchingGameplayTag_ReturnValue_6, bool CallFunc_HasMatchingGameplayTag_ReturnValue_7, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_8, bool K2Node_DynamicCast_bSuccess_8, bool CallFunc_HasMatchingGameplayTag_ReturnValue_8, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_9, bool K2Node_DynamicCast_bSuccess_9, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_10, bool K2Node_DynamicCast_bSuccess_10, bool CallFunc_HasMatchingGameplayTag_ReturnValue_9, bool CallFunc_HasMatchingGameplayTag_ReturnValue_10, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_11, bool K2Node_DynamicCast_bSuccess_11, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_12, bool K2Node_DynamicCast_bSuccess_12, bool CallFunc_HasMatchingGameplayTag_ReturnValue_11, bool CallFunc_HasMatchingGameplayTag_ReturnValue_12, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_13, bool K2Node_DynamicCast_bSuccess_13, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_14, bool K2Node_DynamicCast_bSuccess_14, bool CallFunc_HasMatchingGameplayTag_ReturnValue_13, bool CallFunc_HasMatchingGameplayTag_ReturnValue_14, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_15, bool K2Node_DynamicCast_bSuccess_15, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_16, bool K2Node_DynamicCast_bSuccess_16, bool CallFunc_HasMatchingGameplayTag_ReturnValue_15, bool CallFunc_HasMatchingGameplayTag_ReturnValue_16, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_17, bool K2Node_DynamicCast_bSuccess_17, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_18, bool K2Node_DynamicCast_bSuccess_18, bool CallFunc_HasMatchingGameplayTag_ReturnValue_17, bool CallFunc_HasMatchingGameplayTag_ReturnValue_18, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_19, bool K2Node_DynamicCast_bSuccess_19, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_20, bool K2Node_DynamicCast_bSuccess_20, bool CallFunc_HasMatchingGameplayTag_ReturnValue_19, bool CallFunc_HasMatchingGameplayTag_ReturnValue_20, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_21, bool K2Node_DynamicCast_bSuccess_21, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_22, bool K2Node_DynamicCast_bSuccess_22, bool CallFunc_HasMatchingGameplayTag_ReturnValue_21, bool CallFunc_HasMatchingGameplayTag_ReturnValue_22, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_23, bool K2Node_DynamicCast_bSuccess_23, bool CallFunc_HasMatchingGameplayTag_ReturnValue_23, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess_24, bool CallFunc_IsValid_ReturnValue, TArray<class AFortPlayerController*>& K2Node_MakeArray_Array, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, bool Temp_bool_Variable_3, bool Temp_bool_Variable_4, bool Temp_bool_Variable_5, bool Temp_bool_Variable_6, bool Temp_bool_Variable_7, bool Temp_bool_Variable_8, bool Temp_bool_Variable_9, bool Temp_bool_Variable_10, bool Temp_bool_Variable_11, bool Temp_bool_Variable_12, bool Temp_bool_Variable_13, bool Temp_bool_Variable_14, bool Temp_bool_Variable_15, int32 Temp_int_Variable, const struct FDataTableRowHandle& Temp_struct_Variable, int32 Temp_int_Variable_1, class FName Temp_name_Variable, class FName Temp_name_Variable_1, class FName Temp_name_Variable_2, class FName Temp_name_Variable_3, class FName Temp_name_Variable_4, class FName Temp_name_Variable_5, class FName Temp_name_Variable_6, class FName Temp_name_Variable_7, class FName Temp_name_Variable_8, class FName Temp_name_Variable_9, class FName Temp_name_Variable_10, class FName Temp_name_Variable_11, class FName Temp_name_Variable_12, class FName Temp_name_Variable_13, class FName Temp_name_Variable_14, class FName Temp_name_Variable_15, class FName Temp_name_Variable_16, class FName Temp_name_Variable_17, class FName Temp_name_Variable_18, class FName Temp_name_Variable_19, class FName Temp_name_Variable_20, class FName Temp_name_Variable_21, class FName Temp_name_Variable_22, class FName Temp_name_Variable_23, bool Temp_bool_Variable_16, bool Temp_bool_Variable_17, bool Temp_bool_Variable_18, bool Temp_bool_Variable_19, bool Temp_bool_Variable_20, bool Temp_bool_Variable_21, bool Temp_bool_Variable_22, const struct FDataTableRowHandle& K2Node_Select_Default, class FName K2Node_Select_Default_1, const class FString& CallFunc_Conv_IntToString_ReturnValue, bool CallFunc_Athena_CheckQuestAndObjectiveCompletion_QuestIsValid, bool CallFunc_Athena_CheckQuestAndObjectiveCompletion_QuestCompleted, bool CallFunc_Athena_CheckQuestAndObjectiveCompletion_ObjectiveCompleted, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool Temp_bool_Variable_23)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "CheckForRiftLocUpdate");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_CheckForRiftLocUpdate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "CheckForRiftLocUpdate");
+
+	Params::ABGA_IslandPortal_C_CheckForRiftLocUpdate_Params Parms{};
 
 	Parms.InController = InController;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -725,12 +791,14 @@ void ABGA_IslandPortal_C::CheckForRiftLocUpdate(class AController* InController,
 
 void ABGA_IslandPortal_C::OnRep_PlayerPawn()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "OnRep_PlayerPawn");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_OnRep_PlayerPawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "OnRep_PlayerPawn");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -741,12 +809,14 @@ void ABGA_IslandPortal_C::OnRep_PlayerPawn()
 
 void ABGA_IslandPortal_C::OnRep_Vehicle()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "OnRep_Vehicle");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_OnRep_Vehicle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "OnRep_Vehicle");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -757,12 +827,14 @@ void ABGA_IslandPortal_C::OnRep_Vehicle()
 
 void ABGA_IslandPortal_C::OnRep_TeleportLocation()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "OnRep_TeleportLocation");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_OnRep_TeleportLocation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "OnRep_TeleportLocation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -779,9 +851,12 @@ void ABGA_IslandPortal_C::OnRep_TeleportLocation()
 
 void ABGA_IslandPortal_C::PlayExpandOrCollapseAudio(bool Expand, bool Temp_bool_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable_1, class USoundBase* K2Node_Select_Default, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "PlayExpandOrCollapseAudio");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_PlayExpandOrCollapseAudio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "PlayExpandOrCollapseAudio");
+
+	Params::ABGA_IslandPortal_C_PlayExpandOrCollapseAudio_Params Parms{};
 
 	Parms.Expand = Expand;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -801,12 +876,14 @@ void ABGA_IslandPortal_C::PlayExpandOrCollapseAudio(bool Expand, bool Temp_bool_
 
 void ABGA_IslandPortal_C::VectorScale__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "VectorScale__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_VectorScale__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "VectorScale__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -817,12 +894,14 @@ void ABGA_IslandPortal_C::VectorScale__FinishedFunc()
 
 void ABGA_IslandPortal_C::VectorScale__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "VectorScale__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_VectorScale__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "VectorScale__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -833,12 +912,14 @@ void ABGA_IslandPortal_C::VectorScale__UpdateFunc()
 
 void ABGA_IslandPortal_C::Timeline_0__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "Timeline_0__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_Timeline_0__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "Timeline_0__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -849,12 +930,14 @@ void ABGA_IslandPortal_C::Timeline_0__FinishedFunc()
 
 void ABGA_IslandPortal_C::Timeline_0__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "Timeline_0__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_Timeline_0__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "Timeline_0__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -866,9 +949,12 @@ void ABGA_IslandPortal_C::Timeline_0__UpdateFunc()
 
 void ABGA_IslandPortal_C::OnLoaded_25EC650C4A5067360B49BC87DAFA1B71(class UClass* Loaded)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "OnLoaded_25EC650C4A5067360B49BC87DAFA1B71");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_OnLoaded_25EC650C4A5067360B49BC87DAFA1B71_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "OnLoaded_25EC650C4A5067360B49BC87DAFA1B71");
+
+	Params::ABGA_IslandPortal_C_OnLoaded_25EC650C4A5067360B49BC87DAFA1B71_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -884,9 +970,12 @@ void ABGA_IslandPortal_C::OnLoaded_25EC650C4A5067360B49BC87DAFA1B71(class UClass
 
 void ABGA_IslandPortal_C::OnLoaded_A43955A14A20383F466DF18A87BBA501(class UClass* Loaded)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "OnLoaded_A43955A14A20383F466DF18A87BBA501");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_OnLoaded_A43955A14A20383F466DF18A87BBA501_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "OnLoaded_A43955A14A20383F466DF18A87BBA501");
+
+	Params::ABGA_IslandPortal_C_OnLoaded_A43955A14A20383F466DF18A87BBA501_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -902,9 +991,12 @@ void ABGA_IslandPortal_C::OnLoaded_A43955A14A20383F466DF18A87BBA501(class UClass
 
 void ABGA_IslandPortal_C::OnLoaded_F2A7F21346C6B461BE9A1182BB5B5DD5(class UClass* Loaded)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "OnLoaded_F2A7F21346C6B461BE9A1182BB5B5DD5");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_OnLoaded_F2A7F21346C6B461BE9A1182BB5B5DD5_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "OnLoaded_F2A7F21346C6B461BE9A1182BB5B5DD5");
+
+	Params::ABGA_IslandPortal_C_OnLoaded_F2A7F21346C6B461BE9A1182BB5B5DD5_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -920,9 +1012,12 @@ void ABGA_IslandPortal_C::OnLoaded_F2A7F21346C6B461BE9A1182BB5B5DD5(class UClass
 
 void ABGA_IslandPortal_C::OnLoaded_E60F9B1D4E758E4EA443468A995679B2(class UClass* Loaded)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "OnLoaded_E60F9B1D4E758E4EA443468A995679B2");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_OnLoaded_E60F9B1D4E758E4EA443468A995679B2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "OnLoaded_E60F9B1D4E758E4EA443468A995679B2");
+
+	Params::ABGA_IslandPortal_C_OnLoaded_E60F9B1D4E758E4EA443468A995679B2_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -943,9 +1038,12 @@ void ABGA_IslandPortal_C::OnLoaded_E60F9B1D4E758E4EA443468A995679B2(class UClass
 
 void ABGA_IslandPortal_C::BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, struct FHitResult& SweepResult)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
+
+	Params::ABGA_IslandPortal_C_BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature_Params Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -971,9 +1069,12 @@ void ABGA_IslandPortal_C::BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_1_Co
 
 void ABGA_IslandPortal_C::BndEvt__Capsule_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, struct FHitResult& SweepResult)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "BndEvt__Capsule_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_BndEvt__Capsule_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "BndEvt__Capsule_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
+
+	Params::ABGA_IslandPortal_C_BndEvt__Capsule_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature_Params Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -997,9 +1098,12 @@ void ABGA_IslandPortal_C::BndEvt__Capsule_K2Node_ComponentBoundEvent_2_Component
 
 void ABGA_IslandPortal_C::BndEvt__Capsule_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "BndEvt__Capsule_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_BndEvt__Capsule_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "BndEvt__Capsule_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
+
+	Params::ABGA_IslandPortal_C_BndEvt__Capsule_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature_Params Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -1017,12 +1121,14 @@ void ABGA_IslandPortal_C::BndEvt__Capsule_K2Node_ComponentBoundEvent_3_Component
 
 void ABGA_IslandPortal_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1035,9 +1141,12 @@ void ABGA_IslandPortal_C::ReceiveBeginPlay()
 
 void ABGA_IslandPortal_C::PlayTeleportFX(const struct FVector& PlayerLocation, const struct FVector& DestinationLocation)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "PlayTeleportFX");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_PlayTeleportFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "PlayTeleportFX");
+
+	Params::ABGA_IslandPortal_C_PlayTeleportFX_Params Parms{};
 
 	Parms.PlayerLocation = PlayerLocation;
 	Parms.DestinationLocation = DestinationLocation;
@@ -1054,9 +1163,12 @@ void ABGA_IslandPortal_C::PlayTeleportFX(const struct FVector& PlayerLocation, c
 
 void ABGA_IslandPortal_C::PlayCosmeticFX(const struct FVector& DestinationLocation)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "PlayCosmeticFX");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_PlayCosmeticFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "PlayCosmeticFX");
+
+	Params::ABGA_IslandPortal_C_PlayCosmeticFX_Params Parms{};
 
 	Parms.DestinationLocation = DestinationLocation;
 
@@ -1072,9 +1184,12 @@ void ABGA_IslandPortal_C::PlayCosmeticFX(const struct FVector& DestinationLocati
 
 void ABGA_IslandPortal_C::OverlappingOnBeginPlay(class AActor* Actor)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "OverlappingOnBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_OverlappingOnBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "OverlappingOnBeginPlay");
+
+	Params::ABGA_IslandPortal_C_OverlappingOnBeginPlay_Params Parms{};
 
 	Parms.Actor = Actor;
 
@@ -1090,9 +1205,12 @@ void ABGA_IslandPortal_C::OverlappingOnBeginPlay(class AActor* Actor)
 
 void ABGA_IslandPortal_C::NotifyTeleportedVehicle(class AActor* VehicleActor)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "NotifyTeleportedVehicle");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_NotifyTeleportedVehicle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "NotifyTeleportedVehicle");
+
+	Params::ABGA_IslandPortal_C_NotifyTeleportedVehicle_Params Parms{};
 
 	Parms.VehicleActor = VehicleActor;
 
@@ -1108,9 +1226,12 @@ void ABGA_IslandPortal_C::NotifyTeleportedVehicle(class AActor* VehicleActor)
 
 void ABGA_IslandPortal_C::LoadIslandUI(class AFortPlayerPawn* InteractingPawn)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "LoadIslandUI");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_LoadIslandUI_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "LoadIslandUI");
+
+	Params::ABGA_IslandPortal_C_LoadIslandUI_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 
@@ -1127,9 +1248,12 @@ void ABGA_IslandPortal_C::LoadIslandUI(class AFortPlayerPawn* InteractingPawn)
 
 void ABGA_IslandPortal_C::NotifyTeleportedPlayerPawn(class AFortPlayerPawn* PlayerPawn, bool bTeleportedToIslandStart)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "NotifyTeleportedPlayerPawn");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_NotifyTeleportedPlayerPawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "NotifyTeleportedPlayerPawn");
+
+	Params::ABGA_IslandPortal_C_NotifyTeleportedPlayerPawn_Params Parms{};
 
 	Parms.PlayerPawn = PlayerPawn;
 	Parms.bTeleportedToIslandStart = bTeleportedToIslandStart;
@@ -1146,9 +1270,12 @@ void ABGA_IslandPortal_C::NotifyTeleportedPlayerPawn(class AFortPlayerPawn* Play
 
 void ABGA_IslandPortal_C::ClientTeleportToLobbyIsland(class AFortPlayerController* RequestingController)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "ClientTeleportToLobbyIsland");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_ClientTeleportToLobbyIsland_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "ClientTeleportToLobbyIsland");
+
+	Params::ABGA_IslandPortal_C_ClientTeleportToLobbyIsland_Params Parms{};
 
 	Parms.RequestingController = RequestingController;
 
@@ -1163,12 +1290,14 @@ void ABGA_IslandPortal_C::ClientTeleportToLobbyIsland(class AFortPlayerControlle
 
 void ABGA_IslandPortal_C::EvaluateOverlap()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "EvaluateOverlap");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_EvaluateOverlap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "EvaluateOverlap");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1180,9 +1309,12 @@ void ABGA_IslandPortal_C::EvaluateOverlap()
 
 void ABGA_IslandPortal_C::CheckIsMyPortal(bool IsMyPortal)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "CheckIsMyPortal");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_CheckIsMyPortal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "CheckIsMyPortal");
+
+	Params::ABGA_IslandPortal_C_CheckIsMyPortal_Params Parms{};
 
 	Parms.IsMyPortal = IsMyPortal;
 
@@ -1197,12 +1329,14 @@ void ABGA_IslandPortal_C::CheckIsMyPortal(bool IsMyPortal)
 
 void ABGA_IslandPortal_C::OwningPlayerChanged()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "OwningPlayerChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_OwningPlayerChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "OwningPlayerChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1213,12 +1347,14 @@ void ABGA_IslandPortal_C::OwningPlayerChanged()
 
 void ABGA_IslandPortal_C::CheckShouldDisplayUI()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "CheckShouldDisplayUI");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_CheckShouldDisplayUI_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "CheckShouldDisplayUI");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1229,12 +1365,14 @@ void ABGA_IslandPortal_C::CheckShouldDisplayUI()
 
 void ABGA_IslandPortal_C::PopulationChanged()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "PopulationChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_PopulationChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "PopulationChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1245,12 +1383,14 @@ void ABGA_IslandPortal_C::PopulationChanged()
 
 void ABGA_IslandPortal_C::DisplayNameChanged()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "DisplayNameChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_DisplayNameChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "DisplayNameChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1261,12 +1401,14 @@ void ABGA_IslandPortal_C::DisplayNameChanged()
 
 void ABGA_IslandPortal_C::TeleportToCreativeHub()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "TeleportToCreativeHub");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_TeleportToCreativeHub_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "TeleportToCreativeHub");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1277,12 +1419,14 @@ void ABGA_IslandPortal_C::TeleportToCreativeHub()
 
 void ABGA_IslandPortal_C::PortalOpenChanged()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "PortalOpenChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_PortalOpenChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "PortalOpenChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1293,12 +1437,14 @@ void ABGA_IslandPortal_C::PortalOpenChanged()
 
 void ABGA_IslandPortal_C::UpdatePortal()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "UpdatePortal");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_UpdatePortal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdatePortal");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1309,12 +1455,14 @@ void ABGA_IslandPortal_C::UpdatePortal()
 
 void ABGA_IslandPortal_C::CuratedPortalChanged()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "CuratedPortalChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_CuratedPortalChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "CuratedPortalChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1326,9 +1474,12 @@ void ABGA_IslandPortal_C::CuratedPortalChanged()
 
 void ABGA_IslandPortal_C::ClientSaveDisplayChanged(bool bSaving)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "ClientSaveDisplayChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_ClientSaveDisplayChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "ClientSaveDisplayChanged");
+
+	Params::ABGA_IslandPortal_C_ClientSaveDisplayChanged_Params Parms{};
 
 	Parms.bSaving = bSaving;
 
@@ -1344,9 +1495,12 @@ void ABGA_IslandPortal_C::ClientSaveDisplayChanged(bool bSaving)
 
 void ABGA_IslandPortal_C::Play_Rift_Exit_Sound(const struct FVector& Location)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "Play Rift Exit Sound");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_Play_Rift_Exit_Sound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "Play Rift Exit Sound");
+
+	Params::ABGA_IslandPortal_C_Play_Rift_Exit_Sound_Params Parms{};
 
 	Parms.Location = Location;
 
@@ -1361,12 +1515,14 @@ void ABGA_IslandPortal_C::Play_Rift_Exit_Sound(const struct FVector& Location)
 
 void ABGA_IslandPortal_C::OnThumbnailTextureReady()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "OnThumbnailTextureReady");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_OnThumbnailTextureReady_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "OnThumbnailTextureReady");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1377,12 +1533,14 @@ void ABGA_IslandPortal_C::OnThumbnailTextureReady()
 
 void ABGA_IslandPortal_C::SetupPortalForThumbnailDisplay()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "SetupPortalForThumbnailDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_SetupPortalForThumbnailDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "SetupPortalForThumbnailDisplay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1393,12 +1551,14 @@ void ABGA_IslandPortal_C::SetupPortalForThumbnailDisplay()
 
 void ABGA_IslandPortal_C::Play_Teleport_Audio()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "Play Teleport Audio");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_Play_Teleport_Audio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "Play Teleport Audio");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1410,9 +1570,12 @@ void ABGA_IslandPortal_C::Play_Teleport_Audio()
 
 void ABGA_IslandPortal_C::BroadcastIsBeingInteractedWith(bool IsInteracting)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "BroadcastIsBeingInteractedWith");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_BroadcastIsBeingInteractedWith_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "BroadcastIsBeingInteractedWith");
+
+	Params::ABGA_IslandPortal_C_BroadcastIsBeingInteractedWith_Params Parms{};
 
 	Parms.IsInteracting = IsInteracting;
 
@@ -1427,12 +1590,14 @@ void ABGA_IslandPortal_C::BroadcastIsBeingInteractedWith(bool IsInteracting)
 
 void ABGA_IslandPortal_C::OnReceivedNewIslandInfo()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "OnReceivedNewIslandInfo");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_OnReceivedNewIslandInfo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "OnReceivedNewIslandInfo");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1642,9 +1807,12 @@ void ABGA_IslandPortal_C::OnReceivedNewIslandInfo()
 
 void ABGA_IslandPortal_C::ExecuteUbergraph_BGA_IslandPortal(int32 EntryPoint, bool Temp_bool_Variable, class UClass* K2Node_CustomEvent_Loaded, class UClass* Temp_class_Variable, class UClass* K2Node_ClassDynamicCast_AsUser_Widget, bool K2Node_ClassDynamicCast_bSuccess, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue, TScriptInterface<class IFortVehicleInterface> K2Node_DynamicCast_AsFort_Vehicle_Interface, bool K2Node_DynamicCast_bSuccess, const struct FVector& CallFunc_GetOwnerLocation_ReturnValue, TArray<class AFortPlayerPawn*>& CallFunc_GetAllPassengers_ReturnValue, int32 Temp_int_Array_Index_Variable, class AFortPlayerPawn* CallFunc_Array_Get_Item, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent_2, class AActor* K2Node_ComponentBoundEvent_OtherActor_2, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp_2, int32 K2Node_ComponentBoundEvent_OtherBodyIndex_2, bool K2Node_ComponentBoundEvent_bFromSweep_1, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult_1, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent_1, class AActor* K2Node_ComponentBoundEvent_OtherActor_1, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp_1, int32 K2Node_ComponentBoundEvent_OtherBodyIndex_1, bool K2Node_ComponentBoundEvent_bFromSweep, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_1, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent, class AActor* K2Node_ComponentBoundEvent_OtherActor, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp, int32 K2Node_ComponentBoundEvent_OtherBodyIndex, TArray<class AActor*>& CallFunc_GetOverlappingActors_OverlappingActors, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_LessEqual_IntInt_ReturnValue, const struct FVector& K2Node_CustomEvent_PlayerLocation, const struct FVector& K2Node_CustomEvent_DestinationLocation_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, class UClass* Temp_class_Variable_1, class UClass* K2Node_ClassDynamicCast_AsUser_Widget_1, bool K2Node_ClassDynamicCast_bSuccess_1, float CallFunc_RandomFloatInRange_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FVector& K2Node_CustomEvent_DestinationLocation, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, class UClass* K2Node_CustomEvent_Loaded_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_1, class AActor* K2Node_Event_Actor, bool CallFunc_IsValid_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_1, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsInVehicle_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, int32 Temp_int_Loop_Counter_Variable, float CallFunc_GetValueAtLevel_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class AActor* K2Node_Event_VehicleActor, const struct FVector& CallFunc_Conv_FloatToVector_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue_1, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, class AFortPlayerPawn* K2Node_CustomEvent_InteractingPawn, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, class AFortPlayerPawn* K2Node_Event_PlayerPawn, bool K2Node_Event_bTeleportedToIslandStart, bool CallFunc_Not_PreBool_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2, class AFortPlayerController* K2Node_CustomEvent_RequestingController, class AFortVolume* CallFunc_GetLinkedVolume_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsDedicatedServer_ReturnValue_2, TArray<class AActor*>& CallFunc_GetOverlappingActors_OverlappingActors_1, class UClass* Temp_class_Variable_2, int32 CallFunc_Array_Length_ReturnValue_2, class UClass* K2Node_ClassDynamicCast_AsUser_Widget_2, bool K2Node_ClassDynamicCast_bSuccess_2, bool CallFunc_Greater_IntInt_ReturnValue, bool K2Node_CustomEvent_IsMyPortal, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_2, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_3, class ABGA_IslandPortal_C* K2Node_DynamicCast_AsBGA_Island_Portal, bool K2Node_DynamicCast_bSuccess_3, float CallFunc_SelectFloat_ReturnValue, const struct FVector& CallFunc_GetPortalPosition_Location, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_SelectFloat_ReturnValue_1, const struct FRotator& CallFunc_MakeRotator_ReturnValue_2, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult, float CallFunc_SelectFloat_ReturnValue_2, float CallFunc_GetValueAtLevel_ReturnValue_2, bool CallFunc_Greater_FloatFloat_ReturnValue, class UClass* K2Node_CustomEvent_Loaded_2, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_1, float CallFunc_GetValueAtLevel_ReturnValue_3, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_4, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_2, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_3, const struct FVector& CallFunc_MakeVector_ReturnValue_1, float CallFunc_BreakVector_X_2, float CallFunc_BreakVector_Y_2, float CallFunc_BreakVector_Z_2, const struct FVector& CallFunc_MakeVector_ReturnValue_2, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerControllerAthena* K2Node_DynamicCast_AsFort_Player_Controller_Athena, bool K2Node_DynamicCast_bSuccess_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTransform& CallFunc_GetTransform_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, class ABP_PortalLightPillar_C* CallFunc_FinishSpawningActor_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_HasAuthority_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class APlayerController* CallFunc_GetPlayerController_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UUserWidget* CallFunc_GetUserWidgetObject_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, bool CallFunc_IsValid_ReturnValue_4, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess_5, class AFortPlayerPawn* CallFunc_GetPlayerPawn_ReturnValue, bool CallFunc_IsValid_ReturnValue_5, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_1, float CallFunc_DistanceBetweenTwoVectors_Distance, bool CallFunc_Less_FloatFloat_ReturnValue, class UUserWidget* CallFunc_Create_ReturnValue, bool CallFunc_IsValidClass_ReturnValue, TScriptInterface<class IFortInitializeFromObjectInterface> K2Node_DynamicCast_AsFort_Initialize_from_Object_Interface, bool K2Node_DynamicCast_bSuccess_6, bool CallFunc_HasAuthority_ReturnValue_2, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess_7, class AController* CallFunc_GetController_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, class AFortPlayerControllerAthena* K2Node_DynamicCast_AsFort_Player_Controller_Athena_1, bool K2Node_DynamicCast_bSuccess_8, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult_1, bool K2Node_Event_bSaving, bool CallFunc_BooleanOR_ReturnValue, class UUserWidget* CallFunc_Create_ReturnValue_1, bool CallFunc_IsValidClass_ReturnValue_1, TScriptInterface<class IFortInitializeFromObjectInterface> K2Node_DynamicCast_AsFort_Initialize_from_Object_Interface_1, bool K2Node_DynamicCast_bSuccess_9, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue, class AFortPlayerController* CallFunc_Array_Get_Item_1, class AFortPlayerStateAthena* CallFunc_GetPlayerState_ReturnValue, bool CallFunc_IsPortalOpen_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, const struct FVector& K2Node_CustomEvent_Location, class UClass* Temp_class_Variable_3, class UAudioComponent* CallFunc_SpawnSoundAtLocation_ReturnValue, class UClass* K2Node_ClassDynamicCast_AsUser_Widget_3, bool K2Node_ClassDynamicCast_bSuccess_3, class UUserWidget* CallFunc_Create_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue_1, TScriptInterface<class IFortInitializeFromObjectInterface> K2Node_DynamicCast_AsFort_Initialize_from_Object_Interface_2, bool K2Node_DynamicCast_bSuccess_10, bool CallFunc_IsValid_ReturnValue_6, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult, const struct FVector& CallFunc_ScaleThumbnailPlaneByTextureSize_ReturnValue, const class FString& CallFunc_GetMnemonic_ReturnValue, const struct FLinearColor& K2Node_Select_Default, int32 CallFunc_Len_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue_1, const struct FHitResult& CallFunc_K2_SetRelativeLocation_SweepHitResult, bool Temp_bool_Has_Been_Initd_Variable, bool CallFunc_BooleanOR_ReturnValue_2, bool CallFunc_IsLocallyControlled_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_2, class APlayerController* CallFunc_GetPlayerController_ReturnValue_1, class UUserWidget* CallFunc_Create_ReturnValue_3, TScriptInterface<class IFortInitializeFromObjectInterface> K2Node_DynamicCast_AsFort_Initialize_from_Object_Interface_3, bool K2Node_DynamicCast_bSuccess_11, bool K2Node_Event_IsInteracting, bool Temp_bool_IsClosed_Variable, bool CallFunc_IsValid_ReturnValue_7, class UClass* K2Node_CustomEvent_Loaded_3)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "ExecuteUbergraph_BGA_IslandPortal");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_ExecuteUbergraph_BGA_IslandPortal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "ExecuteUbergraph_BGA_IslandPortal");
+
+	Params::ABGA_IslandPortal_C_ExecuteUbergraph_BGA_IslandPortal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -1857,12 +2025,14 @@ void ABGA_IslandPortal_C::ExecuteUbergraph_BGA_IslandPortal(int32 EntryPoint, bo
 
 void ABGA_IslandPortal_C::CloseShownUI__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "CloseShownUI__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_CloseShownUI__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "CloseShownUI__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1874,9 +2044,12 @@ void ABGA_IslandPortal_C::CloseShownUI__DelegateSignature()
 
 void ABGA_IslandPortal_C::IsBeingInteractedWith__DelegateSignature(bool IsInteracting)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "IsBeingInteractedWith__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_IsBeingInteractedWith__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "IsBeingInteractedWith__DelegateSignature");
+
+	Params::ABGA_IslandPortal_C_IsBeingInteractedWith__DelegateSignature_Params Parms{};
 
 	Parms.IsInteracting = IsInteracting;
 
@@ -1892,9 +2065,12 @@ void ABGA_IslandPortal_C::IsBeingInteractedWith__DelegateSignature(bool IsIntera
 
 void ABGA_IslandPortal_C::UpdateLinkCode__DelegateSignature(const class FString& LinkCode)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateLinkCode__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_UpdateLinkCode__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateLinkCode__DelegateSignature");
+
+	Params::ABGA_IslandPortal_C_UpdateLinkCode__DelegateSignature_Params Parms{};
 
 	Parms.LinkCode = LinkCode;
 
@@ -1910,9 +2086,12 @@ void ABGA_IslandPortal_C::UpdateLinkCode__DelegateSignature(const class FString&
 
 void ABGA_IslandPortal_C::UpdateDescription__DelegateSignature(class FText Description)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateDescription__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_UpdateDescription__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateDescription__DelegateSignature");
+
+	Params::ABGA_IslandPortal_C_UpdateDescription__DelegateSignature_Params Parms{};
 
 	Parms.Description = Description;
 
@@ -1930,9 +2109,12 @@ void ABGA_IslandPortal_C::UpdateDescription__DelegateSignature(class FText Descr
 
 void ABGA_IslandPortal_C::UpdateIsCuratedPortal__DelegateSignature(bool bIsCurated, bool bIsLinkCode, bool bIsUserInitiatedLoad)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateIsCuratedPortal__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_UpdateIsCuratedPortal__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateIsCuratedPortal__DelegateSignature");
+
+	Params::ABGA_IslandPortal_C_UpdateIsCuratedPortal__DelegateSignature_Params Parms{};
 
 	Parms.bIsCurated = bIsCurated;
 	Parms.bIsLinkCode = bIsLinkCode;
@@ -1952,9 +2134,12 @@ void ABGA_IslandPortal_C::UpdateIsCuratedPortal__DelegateSignature(bool bIsCurat
 
 void ABGA_IslandPortal_C::UpdatePortalUIVis__DelegateSignature(bool Show, bool WasHidden, float Distance)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "UpdatePortalUIVis__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_UpdatePortalUIVis__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdatePortalUIVis__DelegateSignature");
+
+	Params::ABGA_IslandPortal_C_UpdatePortalUIVis__DelegateSignature_Params Parms{};
 
 	Parms.Show = Show;
 	Parms.WasHidden = WasHidden;
@@ -1972,9 +2157,12 @@ void ABGA_IslandPortal_C::UpdatePortalUIVis__DelegateSignature(bool Show, bool W
 
 void ABGA_IslandPortal_C::UpdateIslandName__DelegateSignature(class FText NewIslandName)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateIslandName__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_UpdateIslandName__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdateIslandName__DelegateSignature");
+
+	Params::ABGA_IslandPortal_C_UpdateIslandName__DelegateSignature_Params Parms{};
 
 	Parms.NewIslandName = NewIslandName;
 
@@ -1990,9 +2178,12 @@ void ABGA_IslandPortal_C::UpdateIslandName__DelegateSignature(class FText NewIsl
 
 void ABGA_IslandPortal_C::UpdatePlayerPop__DelegateSignature(int32 NewPop)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "UpdatePlayerPop__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_UpdatePlayerPop__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdatePlayerPop__DelegateSignature");
+
+	Params::ABGA_IslandPortal_C_UpdatePlayerPop__DelegateSignature_Params Parms{};
 
 	Parms.NewPop = NewPop;
 
@@ -2008,9 +2199,12 @@ void ABGA_IslandPortal_C::UpdatePlayerPop__DelegateSignature(int32 NewPop)
 
 void ABGA_IslandPortal_C::UpdatePlayerName__DelegateSignature(class FText NewPlayerName)
 {
-	static auto Func = Class->GetFunction("BGA_IslandPortal_C", "UpdatePlayerName__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_IslandPortal_C_UpdatePlayerName__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_IslandPortal_C", "UpdatePlayerName__DelegateSignature");
+
+	Params::ABGA_IslandPortal_C_UpdatePlayerName__DelegateSignature_Params Parms{};
 
 	Parms.NewPlayerName = NewPlayerName;
 
@@ -2020,6 +2214,4 @@ void ABGA_IslandPortal_C::UpdatePlayerName__DelegateSignature(class FText NewPla
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -22,11 +19,11 @@ struct UStyleLibrary_C_Get_Conning_Color_For_Specific_Difficulty_Params
 {
 public:
 	int32                                        Difficulty_Value;                                  // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64E9[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_562[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               __WorldContext;                                    // 0x8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Difficulty_Linear_Color;                           // 0x10(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Invalid;                                           // 0x20(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_64EA[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_563[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          DifficultyColor;                                   // 0x24(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchInteger_CmpSuccess;                   // 0x34(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -41,10 +38,10 @@ public:
 	class UObject*                               __WorldContext;                                    // 0x8(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Difficulty_Linear_Color;                           // 0x10(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Success;                                           // 0x20(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_64EB[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_57B[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  ToolTipText;                                       // 0x28(0x18)(Parm, OutParm)
 	int32                                        DifficultyValue;                                   // 0x40(0x4)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64EC[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_57C[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FText>                          DifficultyColorNames;                              // 0x48(0x10)(Edit, BlueprintVisible, ZeroConstructor)
 	TArray<class FText>                          DifficultyTooltips;                                // 0x58(0x10)(Edit, BlueprintVisible, ZeroConstructor)
 	TArray<int32>                                DifficultyIndices;                                 // 0x68(0x10)(Edit, BlueprintVisible, ZeroConstructor)
@@ -55,44 +52,44 @@ public:
 	class FText                                  DifficultyColorName;                               // 0xA0(0x18)(Edit, BlueprintVisible)
 	class FText                                  ConningTooltipText;                                // 0xB8(0x18)(Edit, BlueprintVisible)
 	bool                                         Valid;                                             // 0xD0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_64ED[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_57D[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Player_Account_Level_In;                           // 0xD4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<float>                                SPCutoffValues;                                    // 0xD8(0x10)(Edit, BlueprintVisible, ZeroConstructor)
 	struct FLinearColor                          DifficultyColor;                                   // 0xE8(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Variable;                                 // 0xF8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_LessEqual_IntInt_ReturnValue;             // 0xFC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_64EE[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_580[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x100(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Loop_Counter_Variable;                    // 0x104(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Add_IntInt_ReturnValue_1;                 // 0x108(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64EF[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  CallFunc_Array_Get_Item;                           // 0x110(0x18)()
-	class FText                                  CallFunc_Array_Get_Item_1;                         // 0x128(0x18)()
+	uint8                                        Pad_581[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_Array_Get_Item;                           // 0x110(0x18)(None)
+	class FText                                  CallFunc_Array_Get_Item_1;                         // 0x128(0x18)(None)
 	struct FLinearColor                          CallFunc_Array_Get_Item_2;                         // 0x140(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<float>                                K2Node_MakeArray_Array;                            // 0x150(0x10)(ZeroConstructor, ReferenceParm)
 	TArray<class FName>                          K2Node_MakeArray_Array_1;                          // 0x160(0x10)(ZeroConstructor, ReferenceParm)
 	float                                        CallFunc_Conv_IntToFloat_ReturnValue;              // 0x170(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F0[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_582[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FLinearColor>                  K2Node_MakeArray_Array_2;                          // 0x178(0x10)(ZeroConstructor, ReferenceParm)
 	class FName                                  CallFunc_Array_Get_Item_3;                         // 0x188(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x190(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F1[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_584[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<int32>                                K2Node_MakeArray_Array_3;                          // 0x198(0x10)(ZeroConstructor, ReferenceParm)
 	int32                                        CallFunc_Array_Get_Item_4;                         // 0x1A8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_True_if_break_was_hit_Variable;          // 0x1AC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_64F2[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_585[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_Array_Get_Item_5;                         // 0x1B0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Greater_FloatFloat_ReturnValue;           // 0x1B4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x1B5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_64F3[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_586[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x1B8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x1BC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class EEvaluateCurveTableResult         CallFunc_EvaluateCurveTableRow_OutResult;          // 0x1BD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F4[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_587[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_EvaluateCurveTableRow_OutXY;              // 0x1C0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x1C4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x1C5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_64F5[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_588[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FText>                          K2Node_MakeArray_Array_4;                          // 0x1C8(0x10)(ZeroConstructor, ReferenceParm)
 	TArray<class FText>                          K2Node_MakeArray_Array_5;                          // 0x1D8(0x10)(ZeroConstructor, ReferenceParm)
 };
@@ -113,12 +110,12 @@ struct UStyleLibrary_C_ResizeBrush_Params
 {
 public:
 	enum class EFortBrushSize                    BrushSize;                                         // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F6[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_58D[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateBrush                           BaseBrush;                                         // 0x8(0x88)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UObject*                               __WorldContext;                                    // 0x90(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateBrush                           ResizedBrush;                                      // 0x98(0x88)(Parm, OutParm)
 	struct FVector2D                             CallFunc_Get_Standard_Icon_Size_Icon_Size;         // 0x120(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateBrush                           K2Node_SetFieldsInStruct_StructOut;                // 0x128(0x88)()
+	struct FSlateBrush                           K2Node_SetFieldsInStruct_StructOut;                // 0x128(0x88)(None)
 };
 
 // 0xBA8 (0xBA8 - 0x0)
@@ -128,18 +125,18 @@ struct UStyleLibrary_C_Get_Base___Buff_Colors_Params
 public:
 	enum class EFortStatValueDisplayType         Display_Type;                                      // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortBuffState                    Buff_State;                                        // 0x1(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F7[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_58F[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortUIStylesheet                     StyleSheet;                                        // 0x8(0xB20)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	class UObject*                               __WorldContext;                                    // 0xB28(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Base;                                              // 0xB30(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Buff;                                              // 0xB40(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Temp_struct_Variable;                              // 0xB50(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortStatValueDisplayType         Temp_byte_Variable;                                // 0xB60(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F8[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_590[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          Temp_struct_Variable_1;                            // 0xB64(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Temp_struct_Variable_2;                            // 0xB74(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortBuffState                    Temp_byte_Variable_1;                              // 0xB84(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64F9[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_591[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          K2Node_Select_Default;                             // 0xB88(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          K2Node_Select_Default_1;                           // 0xB98(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -191,7 +188,7 @@ struct UStyleLibrary_C_Get_Item_Size_Params
 public:
 	struct FFortUIStylesheet                     StyleSheet;                                        // 0x0(0xB20)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	enum class EFortBrushSize                    Brush_Size;                                        // 0xB20(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64FA[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_59D[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               __WorldContext;                                    // 0xB28(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                             Item_Size;                                         // 0xB30(0x8)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateBrush                           CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0xB38(0x88)(ConstParm)
@@ -224,7 +221,7 @@ struct UStyleLibrary_C_Get_Item_Icon_Size_Params
 public:
 	struct FFortUIStylesheet                     StyleSheet;                                        // 0x0(0xB20)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	enum class EFortBrushSize                    Brush_Size;                                        // 0xB20(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64FB[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5AB[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               __WorldContext;                                    // 0xB28(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                             Icon_Size;                                         // 0xB30(0x8)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateBrush                           CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0xB38(0x88)(ConstParm)
@@ -237,7 +234,7 @@ struct UStyleLibrary_C_Get_Standard_Icon_Size_Params
 public:
 	struct FFortUIStylesheet                     StyleSheet;                                        // 0x0(0xB20)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	enum class EFortBrushSize                    Brush_Size;                                        // 0xB20(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64FC[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5AF[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               __WorldContext;                                    // 0xB28(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                             Icon_Size;                                         // 0xB30(0x8)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateBrush                           CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue; // 0xB38(0x88)(ConstParm)
@@ -250,11 +247,11 @@ struct UStyleLibrary_C_Get_Theme_Params
 public:
 	struct FFortUIStylesheet                     StyleSheet;                                        // 0x0(0xB20)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	enum class EFortUITheme                      Theme_Type;                                        // 0xB20(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64FD[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5B6[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               __WorldContext;                                    // 0xB28(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortUITheme                          Theme;                                             // 0xB30(0x60)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortUITheme                      Temp_byte_Variable;                                // 0xB90(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64FE[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5B8[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortUITheme                          K2Node_Select_Default;                             // 0xB94(0x60)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -266,11 +263,11 @@ public:
 	struct FFortUIStylesheet                     StyleSheet;                                        // 0x0(0xB20)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 	enum class EFortUITheme                      Theme_Type;                                        // 0xB20(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortUIThemeColor                 Color_Type;                                        // 0xB21(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_64FF[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5B9[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               __WorldContext;                                    // 0xB28(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Theme_Color;                                       // 0xB30(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortUIThemeColor                 Temp_byte_Variable;                                // 0xB40(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6500[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5BA[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortUITheme                          CallFunc_Get_Theme_Theme;                          // 0xB44(0x60)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          K2Node_Select_Default;                             // 0xBA4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -278,6 +275,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GA_Athena_SCMachine_Passive.GA_Athena_SCMachine_Passive_C
+// (None)
+
+class UClass* UGA_Athena_SCMachine_Passive_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Athena_SCMachine_Passive_C");
+
+	return Clss;
+}
+
+
+// GA_Athena_SCMachine_Passive_C GA_Athena_SCMachine_Passive.Default__GA_Athena_SCMachine_Passive_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Athena_SCMachine_Passive_C* UGA_Athena_SCMachine_Passive_C::GetDefaultObj()
+{
+	static class UGA_Athena_SCMachine_Passive_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Athena_SCMachine_Passive_C*>(UGA_Athena_SCMachine_Passive_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GA_Athena_SCMachine_Passive.GA_Athena_SCMachine_Passive_C.Check Resurrection Active
@@ -29,9 +54,12 @@ namespace SDK
 
 void UGA_Athena_SCMachine_Passive_C::Check_Resurrection_Active(bool* bEnabled, class AFortGameStateAthena* GameStateAthena, bool PlaylistValid, class FName TestPlaylist, class AGameStateBase* CallFunc_GetGameState_ReturnValue, bool CallFunc_IsResurrectionEnabled_ReturnValue, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "Check Resurrection Active");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_SCMachine_Passive_C_Check_Resurrection_Active_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "Check Resurrection Active");
+
+	Params::UGA_Athena_SCMachine_Passive_C_Check_Resurrection_Active_Params Parms{};
 
 	Parms.GameStateAthena = GameStateAthena;
 	Parms.PlaylistValid = PlaylistValid;
@@ -58,9 +86,12 @@ void UGA_Athena_SCMachine_Passive_C::Check_Resurrection_Active(bool* bEnabled, c
 
 void UGA_Athena_SCMachine_Passive_C::SaveOutPlayer(class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "SaveOutPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_SCMachine_Passive_C_SaveOutPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "SaveOutPlayer");
+
+	Params::UGA_Athena_SCMachine_Passive_C_SaveOutPlayer_Params Parms{};
 
 	Parms.CallFunc_GetAvatarActorFromActorInfo_ReturnValue = CallFunc_GetAvatarActorFromActorInfo_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Pawn_Athena = K2Node_DynamicCast_AsFort_Player_Pawn_Athena;
@@ -77,12 +108,14 @@ void UGA_Athena_SCMachine_Passive_C::SaveOutPlayer(class AActor* CallFunc_GetAva
 
 void UGA_Athena_SCMachine_Passive_C::Spawn()
 {
-	static auto Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "Spawn");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_SCMachine_Passive_C_Spawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "Spawn");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -94,9 +127,12 @@ void UGA_Athena_SCMachine_Passive_C::Spawn()
 
 void UGA_Athena_SCMachine_Passive_C::HandleOnFortPlayerDied(class AFortPlayerPawnAthena* FortPlayerPawnAthena)
 {
-	static auto Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "HandleOnFortPlayerDied");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_SCMachine_Passive_C_HandleOnFortPlayerDied_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "HandleOnFortPlayerDied");
+
+	Params::UGA_Athena_SCMachine_Passive_C_HandleOnFortPlayerDied_Params Parms{};
 
 	Parms.FortPlayerPawnAthena = FortPlayerPawnAthena;
 
@@ -111,12 +147,14 @@ void UGA_Athena_SCMachine_Passive_C::HandleOnFortPlayerDied(class AFortPlayerPaw
 
 void UGA_Athena_SCMachine_Passive_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_SCMachine_Passive_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -156,9 +194,12 @@ void UGA_Athena_SCMachine_Passive_C::K2_ActivateAbility()
 
 void UGA_Athena_SCMachine_Passive_C::ExecuteUbergraph_GA_Athena_SCMachine_Passive(int32 EntryPoint, class AGameStateBase* CallFunc_GetGameState_ReturnValue, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsBattleLabModePlaylist_ReturnValue, bool CallFunc_IsCreativeLTMPlaylist_ReturnValue, bool CallFunc_IsCreativeOrPlaygroundModePlaylist_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, uint8 CallFunc_GetActorTeam_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, const struct FTransform& CallFunc_GetTransform_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, class AGameStateBase* CallFunc_GetGameState_ReturnValue_1, const struct FTransform& CallFunc_MakeTransform_ReturnValue, class AFortGameStateZone* K2Node_DynamicCast_AsFort_Game_State_Zone, bool K2Node_DynamicCast_bSuccess_1, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, bool CallFunc_Check_Resurrection_Active_bEnabled, class ABGA_Athena_SCMachine_Pickup_C* CallFunc_FinishSpawningActor_ReturnValue, class AFortPlayerPawnAthena* K2Node_CustomEvent_FortPlayerPawnAthena, class AFortPlayerState* K2Node_DynamicCast_AsFort_Player_State, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsRespawningAllowed_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "ExecuteUbergraph_GA_Athena_SCMachine_Passive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_SCMachine_Passive_C", "ExecuteUbergraph_GA_Athena_SCMachine_Passive");
+
+	Params::UGA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetGameState_ReturnValue = CallFunc_GetGameState_ReturnValue;
@@ -196,6 +237,4 @@ void UGA_Athena_SCMachine_Passive_C::ExecuteUbergraph_GA_Athena_SCMachine_Passiv
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

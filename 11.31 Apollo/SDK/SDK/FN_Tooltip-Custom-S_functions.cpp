@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,17 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass Tooltip-Custom-S.Tooltip-Custom-S_C
+// (None)
+
+class UClass* UTooltipMinusCustomMinusS_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Tooltip-Custom-S_C");
+
+	return Clss;
+}
+
+
+// Tooltip-Custom-S_C Tooltip-Custom-S.Default__Tooltip-Custom-S_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTooltipMinusCustomMinusS_C* UTooltipMinusCustomMinusS_C::GetDefaultObj()
+{
+	static class UTooltipMinusCustomMinusS_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTooltipMinusCustomMinusS_C*>(UTooltipMinusCustomMinusS_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Tooltip-Custom-S.Tooltip-Custom-S_C.Get Icon Brush
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FSlateBrush                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FSlateBrush                 CallFunc_MakeBrushFromAsset_ReturnValue                          ()
+// struct FSlateBrush                 CallFunc_MakeBrushFromAsset_ReturnValue                          (None)
 
-struct FSlateBrush UTooltip_Custom_S_C::Get_Icon_Brush(const struct FSlateBrush& CallFunc_MakeBrushFromAsset_ReturnValue)
+struct FSlateBrush UTooltipMinusCustomMinusS_C::Get_Icon_Brush(const struct FSlateBrush& CallFunc_MakeBrushFromAsset_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Tooltip-Custom-S_C", "Get Icon Brush");
+	static class UFunction* Func = nullptr;
 
-	Params::UTooltip_Custom_S_C_Get_Icon_Brush_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Tooltip-Custom-S_C", "Get Icon Brush");
+
+	Params::UTooltipMinusCustomMinusS_C_Get_Icon_Brush_Params Parms{};
 
 	Parms.CallFunc_MakeBrushFromAsset_ReturnValue = CallFunc_MakeBrushFromAsset_ReturnValue;
 
@@ -41,11 +69,14 @@ struct FSlateBrush UTooltip_Custom_S_C::Get_Icon_Brush(const struct FSlateBrush&
 // Parameters:
 // class FText                        ReturnValue                                                      (Parm, OutParm, ReturnParm)
 
-class FText UTooltip_Custom_S_C::Get_Header_Text()
+class FText UTooltipMinusCustomMinusS_C::Get_Header_Text()
 {
-	static auto Func = Class->GetFunction("Tooltip-Custom-S_C", "Get Header Text");
+	static class UFunction* Func = nullptr;
 
-	Params::UTooltip_Custom_S_C_Get_Header_Text_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Tooltip-Custom-S_C", "Get Header Text");
+
+	Params::UTooltipMinusCustomMinusS_C_Get_Header_Text_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -60,11 +91,14 @@ class FText UTooltip_Custom_S_C::Get_Header_Text()
 // Parameters:
 // class FText                        ReturnValue                                                      (Parm, OutParm, ReturnParm)
 
-class FText UTooltip_Custom_S_C::Get_Body_Text()
+class FText UTooltipMinusCustomMinusS_C::Get_Body_Text()
 {
-	static auto Func = Class->GetFunction("Tooltip-Custom-S_C", "Get Body Text");
+	static class UFunction* Func = nullptr;
 
-	Params::UTooltip_Custom_S_C_Get_Body_Text_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Tooltip-Custom-S_C", "Get Body Text");
+
+	Params::UTooltipMinusCustomMinusS_C_Get_Body_Text_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -78,14 +112,16 @@ class FText UTooltip_Custom_S_C::Get_Body_Text()
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
-void UTooltip_Custom_S_C::Construct()
+void UTooltipMinusCustomMinusS_C::Construct()
 {
-	static auto Func = Class->GetFunction("Tooltip-Custom-S_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTooltip_Custom_S_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Tooltip-Custom-S_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -117,11 +153,14 @@ void UTooltip_Custom_S_C::Construct()
 // class UPanelSlot*                  CallFunc_AddChild_ReturnValue                                    (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default_3                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTooltip_Custom_S_C::ExecuteUbergraph_Tooltip_Custom_S(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, bool CallFunc_TextIsEmpty_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, bool CallFunc_BooleanOR_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_2, bool CallFunc_IsValid_ReturnValue_1, class UPanelSlot* CallFunc_AddChild_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_3)
+void UTooltipMinusCustomMinusS_C::ExecuteUbergraph_TooltipMinusCustomMinusS(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, bool CallFunc_TextIsEmpty_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, bool CallFunc_BooleanOR_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_2, bool CallFunc_IsValid_ReturnValue_1, class UPanelSlot* CallFunc_AddChild_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_3)
 {
-	static auto Func = Class->GetFunction("Tooltip-Custom-S_C", "ExecuteUbergraph_Tooltip-Custom-S");
+	static class UFunction* Func = nullptr;
 
-	Params::UTooltip_Custom_S_C_ExecuteUbergraph_Tooltip_Custom_S_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Tooltip-Custom-S_C", "ExecuteUbergraph_Tooltip-Custom-S");
+
+	Params::UTooltipMinusCustomMinusS_C_ExecuteUbergraph_TooltipMinusCustomMinusS_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -153,6 +192,4 @@ void UTooltip_Custom_S_C::ExecuteUbergraph_Tooltip_Custom_S(int32 EntryPoint, bo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

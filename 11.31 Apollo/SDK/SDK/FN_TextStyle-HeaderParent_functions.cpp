@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TextStyle-HeaderParent.TextStyle-HeaderParent_C
+// (None)
+
+class UClass* UTextStyleMinusHeaderParent_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextStyle-HeaderParent_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// TextStyle-HeaderParent_C TextStyle-HeaderParent.Default__TextStyle-HeaderParent_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTextStyleMinusHeaderParent_C* UTextStyleMinusHeaderParent_C::GetDefaultObj()
+{
+	static class UTextStyleMinusHeaderParent_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextStyleMinusHeaderParent_C*>(UTextStyleMinusHeaderParent_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass OptionsMenuRotator.OptionsMenuRotator_C
+// (None)
+
+class UClass* UOptionsMenuRotator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OptionsMenuRotator_C");
+
+	return Clss;
+}
+
+
+// OptionsMenuRotator_C OptionsMenuRotator.Default__OptionsMenuRotator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UOptionsMenuRotator_C* UOptionsMenuRotator_C::GetDefaultObj()
+{
+	static class UOptionsMenuRotator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UOptionsMenuRotator_C*>(UOptionsMenuRotator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.SetFontSize
@@ -28,9 +53,12 @@ namespace SDK
 
 void UOptionsMenuRotator_C::SetFontSize(class UCommonTextBlock* Text, int32 DefaultSize, int32 MobileSize, const struct FSlateFontInfo& TempFont, bool Temp_bool_Variable, bool CallFunc_IsMobileGame_ReturnValue, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "SetFontSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_SetFontSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "SetFontSize");
+
+	Params::UOptionsMenuRotator_C_SetFontSize_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.DefaultSize = DefaultSize;
@@ -53,9 +81,12 @@ void UOptionsMenuRotator_C::SetFontSize(class UCommonTextBlock* Text, int32 Defa
 
 void UOptionsMenuRotator_C::Update_Display_Names(class UFortSettingsContext* CallFunc_GetContext_ReturnValue, TArray<class FText>& CallFunc_GetSettingDisplayNames_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "Update Display Names");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_Update_Display_Names_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "Update Display Names");
+
+	Params::UOptionsMenuRotator_C_Update_Display_Names_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetSettingDisplayNames_ReturnValue = CallFunc_GetSettingDisplayNames_ReturnValue;
@@ -71,12 +102,14 @@ void UOptionsMenuRotator_C::Update_Display_Names(class UFortSettingsContext* Cal
 
 void UOptionsMenuRotator_C::Hide_Tooltip()
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "Hide Tooltip");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_Hide_Tooltip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "Hide Tooltip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -87,12 +120,14 @@ void UOptionsMenuRotator_C::Hide_Tooltip()
 
 void UOptionsMenuRotator_C::Show_Tooltip()
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "Show Tooltip");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_Show_Tooltip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "Show Tooltip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -102,13 +137,16 @@ void UOptionsMenuRotator_C::Show_Tooltip()
 // Parameters:
 // class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTooltip_Basic_S_C*          CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTooltipMinusBasicMinusS_C*  CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UOptionsMenuRotator_C::OnGetMenuContent(class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UTooltip_Basic_S_C* CallFunc_Create_ReturnValue)
+class UWidget* UOptionsMenuRotator_C::OnGetMenuContent(class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UTooltipMinusBasicMinusS_C* CallFunc_Create_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "OnGetMenuContent");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_OnGetMenuContent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "OnGetMenuContent");
+
+	Params::UOptionsMenuRotator_C_OnGetMenuContent_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
 	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
@@ -133,9 +171,12 @@ class UWidget* UOptionsMenuRotator_C::OnGetMenuContent(class APlayerController* 
 
 void UOptionsMenuRotator_C::HandlePawnSet(bool bRCPawn, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_Not_PreBool_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class APawn* CallFunc_K2_GetPawn_ReturnValue, class AFortRemoteControlledPawnAthena* K2Node_DynamicCast_AsFort_Remote_Controlled_Pawn_Athena, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "HandlePawnSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_HandlePawnSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "HandlePawnSet");
+
+	Params::UOptionsMenuRotator_C_HandlePawnSet_Params Parms{};
 
 	Parms.bRCPawn = bRCPawn;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
@@ -191,9 +232,12 @@ void UOptionsMenuRotator_C::HandlePawnSet(bool bRCPawn, bool K2Node_SwitchEnum_C
 
 void UOptionsMenuRotator_C::UpdateSize(const struct FVector2D& ToolTipSizeMobile, int32 HeightMobile, int32 HeightDefault, const struct FVector2D& LargeSize, const struct FVector2D& SmallSize, bool Temp_bool_Variable, const struct FVector2D& Temp_struct_Variable, const struct FVector2D& Temp_struct_Variable_1, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, bool Temp_bool_Variable_3, bool CallFunc_IsMobileGame_ReturnValue, bool Temp_bool_Variable_4, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_5, enum class ESlateVisibility Temp_byte_Variable_2, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, bool CallFunc_IsMobileGame_ReturnValue_1, bool CallFunc_IsMobileGame_ReturnValue_2, float K2Node_Select_Default, int32 K2Node_Select_Default_1, bool CallFunc_IsMobileGame_ReturnValue_3, bool CallFunc_IsMobileGame_ReturnValue_4, enum class ESlateVisibility K2Node_Select_Default_2, const struct FVector2D& K2Node_Select_Default_3, bool CallFunc_IsMobileGame_ReturnValue_5, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_6, const struct FVector2D& K2Node_Select_Default_4, enum class ESlateVisibility K2Node_Select_Default_5, bool Temp_bool_Variable_7, const struct FVector2D& K2Node_Select_Default_6, const struct FVector2D& K2Node_Select_Default_7)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "UpdateSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_UpdateSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "UpdateSize");
+
+	Params::UOptionsMenuRotator_C_UpdateSize_Params Parms{};
 
 	Parms.ToolTipSizeMobile = ToolTipSizeMobile;
 	Parms.HeightMobile = HeightMobile;
@@ -242,12 +286,14 @@ void UOptionsMenuRotator_C::UpdateSize(const struct FVector2D& ToolTipSizeMobile
 
 void UOptionsMenuRotator_C::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "BP_OnEntryReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_BP_OnEntryReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "BP_OnEntryReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -259,9 +305,12 @@ void UOptionsMenuRotator_C::BP_OnEntryReleased()
 
 void UOptionsMenuRotator_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "BP_OnItemExpansionChanged");
+
+	Params::UOptionsMenuRotator_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -277,9 +326,12 @@ void UOptionsMenuRotator_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UOptionsMenuRotator_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "BP_OnItemSelectionChanged");
+
+	Params::UOptionsMenuRotator_C_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -294,12 +346,14 @@ void UOptionsMenuRotator_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UOptionsMenuRotator_C::Construct()
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -311,9 +365,12 @@ void UOptionsMenuRotator_C::Construct()
 
 void UOptionsMenuRotator_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "OnMouseLeave");
+
+	Params::UOptionsMenuRotator_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -330,9 +387,12 @@ void UOptionsMenuRotator_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 
 void UOptionsMenuRotator_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "OnMouseEnter");
+
+	Params::UOptionsMenuRotator_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -349,9 +409,12 @@ void UOptionsMenuRotator_C::OnMouseEnter(const struct FGeometry& MyGeometry, str
 
 void UOptionsMenuRotator_C::BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature(int32 Value)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature");
+
+	Params::UOptionsMenuRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -367,9 +430,12 @@ void UOptionsMenuRotator_C::BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_On
 
 void UOptionsMenuRotator_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "OnListItemObjectSet");
+
+	Params::UOptionsMenuRotator_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -385,9 +451,12 @@ void UOptionsMenuRotator_C::OnListItemObjectSet(class UObject* ListItemObject)
 
 void UOptionsMenuRotator_C::BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UOptionsMenuRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -403,9 +472,12 @@ void UOptionsMenuRotator_C::BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_Comm
 
 void UOptionsMenuRotator_C::BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
+
+	Params::UOptionsMenuRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -421,9 +493,12 @@ void UOptionsMenuRotator_C::BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_Co
 
 void UOptionsMenuRotator_C::BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature");
+
+	Params::UOptionsMenuRotator_C_BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.bIsOpen = bIsOpen;
 
@@ -439,9 +514,12 @@ void UOptionsMenuRotator_C::BndEvt__MenuAnchorSettingDescription_K2Node_Componen
 
 void UOptionsMenuRotator_C::BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature");
+
+	Params::UOptionsMenuRotator_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -457,9 +535,12 @@ void UOptionsMenuRotator_C::BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEven
 
 void UOptionsMenuRotator_C::UpdateSetting(class UCommonTextBlock* TooltipTextBlock)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "UpdateSetting");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_UpdateSetting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "UpdateSetting");
+
+	Params::UOptionsMenuRotator_C_UpdateSetting_Params Parms{};
 
 	Parms.TooltipTextBlock = TooltipTextBlock;
 
@@ -474,12 +555,14 @@ void UOptionsMenuRotator_C::UpdateSetting(class UCommonTextBlock* TooltipTextBlo
 
 void UOptionsMenuRotator_C::CenterOnWidget()
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "CenterOnWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_CenterOnWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "CenterOnWidget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -492,9 +575,12 @@ void UOptionsMenuRotator_C::CenterOnWidget()
 
 void UOptionsMenuRotator_C::SetControlsEnabled(bool bEnabled, class FText& DisabledReason)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "SetControlsEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_SetControlsEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "SetControlsEnabled");
+
+	Params::UOptionsMenuRotator_C_SetControlsEnabled_Params Parms{};
 
 	Parms.bEnabled = bEnabled;
 	Parms.DisabledReason = DisabledReason;
@@ -510,12 +596,14 @@ void UOptionsMenuRotator_C::SetControlsEnabled(bool bEnabled, class FText& Disab
 
 void UOptionsMenuRotator_C::ClearDisabledState()
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "ClearDisabledState");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_ClearDisabledState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "ClearDisabledState");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -562,9 +650,12 @@ void UOptionsMenuRotator_C::ClearDisabledState()
 
 void UOptionsMenuRotator_C::ExecuteUbergraph_OptionsMenuRotator(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UFortSettingsContext* CallFunc_GetContext_ReturnValue, class UFortSettingsContext* CallFunc_GetContext_ReturnValue_1, bool K2Node_Event_bIsExpanded, bool K2Node_Event_bIsSelected, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent, int32 K2Node_ComponentBoundEvent_Value, class UObject* K2Node_Event_ListItemObject, bool CallFunc_EqualEqual_IntInt_ReturnValue, class UFortSettingInfo* K2Node_DynamicCast_AsFort_Setting_Info, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Not_PreBool_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, bool K2Node_ComponentBoundEvent_bIsOpen, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_TextIsEmpty_ReturnValue_1, bool CallFunc_IsMobileGame_ReturnValue_1, class UCommonTextBlock* K2Node_Event_TooltipTextBlock, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool K2Node_Event_bEnabled, class FText K2Node_Event_DisabledReason, int32 CallFunc_GetRotatorSettingValue_ReturnValue, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "ExecuteUbergraph_OptionsMenuRotator");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "ExecuteUbergraph_OptionsMenuRotator");
+
+	Params::UOptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -615,9 +706,12 @@ void UOptionsMenuRotator_C::ExecuteUbergraph_OptionsMenuRotator(int32 EntryPoint
 
 void UOptionsMenuRotator_C::AdvancedOptionsChangedHack__DelegateSignature(bool Enabled)
 {
-	static auto Func = Class->GetFunction("OptionsMenuRotator_C", "AdvancedOptionsChangedHack__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuRotator_C_AdvancedOptionsChangedHack__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuRotator_C", "AdvancedOptionsChangedHack__DelegateSignature");
+
+	Params::UOptionsMenuRotator_C_AdvancedOptionsChangedHack__DelegateSignature_Params Parms{};
 
 	Parms.Enabled = Enabled;
 
@@ -627,6 +721,4 @@ void UOptionsMenuRotator_C::AdvancedOptionsChangedHack__DelegateSignature(bool E
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass InputReflectorButton.InputReflectorButton_C
+// (None)
+
+class UClass* UInputReflectorButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("InputReflectorButton_C");
+
+	return Clss;
+}
+
+
+// InputReflectorButton_C InputReflectorButton.Default__InputReflectorButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UInputReflectorButton_C* UInputReflectorButton_C::GetDefaultObj()
+{
+	static class UInputReflectorButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UInputReflectorButton_C*>(UInputReflectorButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function InputReflectorButton.InputReflectorButton_C.ShowIcon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UInputReflectorButton_C::ShowIcon(bool bShouldShow)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "ShowIcon");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_ShowIcon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "ShowIcon");
+
+	Params::UInputReflectorButton_C_ShowIcon_Params Parms{};
 
 	Parms.bShouldShow = bShouldShow;
 
@@ -45,9 +73,12 @@ void UInputReflectorButton_C::ShowIcon(bool bShouldShow)
 
 void UInputReflectorButton_C::SetTextInternal(class FText InButtonText, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_TextIsEmpty_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "SetTextInternal");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_SetTextInternal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "SetTextInternal");
+
+	Params::UInputReflectorButton_C_SetTextInternal_Params Parms{};
 
 	Parms.InButtonText = InButtonText;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -67,12 +98,14 @@ void UInputReflectorButton_C::SetTextInternal(class FText InButtonText, bool Tem
 
 void UInputReflectorButton_C::SetInitialMouseKeyboardStyle()
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "SetInitialMouseKeyboardStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_SetInitialMouseKeyboardStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "SetInitialMouseKeyboardStyle");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -84,9 +117,12 @@ void UInputReflectorButton_C::SetInitialMouseKeyboardStyle()
 
 void UInputReflectorButton_C::UpdateTextStyle(class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "UpdateTextStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_UpdateTextStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "UpdateTextStyle");
+
+	Params::UInputReflectorButton_C_UpdateTextStyle_Params Parms{};
 
 	Parms.CallFunc_GetCurrentTextStyleClass_ReturnValue = CallFunc_GetCurrentTextStyleClass_ReturnValue;
 
@@ -102,9 +138,12 @@ void UInputReflectorButton_C::UpdateTextStyle(class UClass* CallFunc_GetCurrentT
 
 void UInputReflectorButton_C::SetContentAlignment(enum class EHorizontalAlignment ContentAlignment)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "SetContentAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_SetContentAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "SetContentAlignment");
+
+	Params::UInputReflectorButton_C_SetContentAlignment_Params Parms{};
 
 	Parms.ContentAlignment = ContentAlignment;
 
@@ -122,9 +161,12 @@ void UInputReflectorButton_C::SetContentAlignment(enum class EHorizontalAlignmen
 
 void UInputReflectorButton_C::UpdateContentAlignment(class UPanelSlot* CallFunc_GetContentSlot_ReturnValue, class UBorderSlot* K2Node_DynamicCast_AsBorder_Slot, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "UpdateContentAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_UpdateContentAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "UpdateContentAlignment");
+
+	Params::UInputReflectorButton_C_UpdateContentAlignment_Params Parms{};
 
 	Parms.CallFunc_GetContentSlot_ReturnValue = CallFunc_GetContentSlot_ReturnValue;
 	Parms.K2Node_DynamicCast_AsBorder_Slot = K2Node_DynamicCast_AsBorder_Slot;
@@ -145,9 +187,12 @@ void UInputReflectorButton_C::UpdateContentAlignment(class UPanelSlot* CallFunc_
 
 void UInputReflectorButton_C::SetMouseKeyboardStyle(class UClass* ControllerInputStyle, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "SetMouseKeyboardStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_SetMouseKeyboardStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "SetMouseKeyboardStyle");
+
+	Params::UInputReflectorButton_C_SetMouseKeyboardStyle_Params Parms{};
 
 	Parms.ControllerInputStyle = ControllerInputStyle;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -166,9 +211,12 @@ void UInputReflectorButton_C::SetMouseKeyboardStyle(class UClass* ControllerInpu
 
 void UInputReflectorButton_C::UpdateStyle(bool UsingGamepad)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "UpdateStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_UpdateStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "UpdateStyle");
+
+	Params::UInputReflectorButton_C_UpdateStyle_Params Parms{};
 
 	Parms.UsingGamepad = UsingGamepad;
 
@@ -183,17 +231,20 @@ void UInputReflectorButton_C::UpdateStyle(bool UsingGamepad)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetDisplayText_ReturnValue                              ()
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        CallFunc_GetDisplayText_ReturnValue                              (None)
+// class FText                        K2Node_Select_Default                                            (None)
 // bool                               CallFunc_TextIsEmpty_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default_1                                          ()
+// class FText                        K2Node_Select_Default_1                                          (None)
 
 void UInputReflectorButton_C::UpdateText(bool Temp_bool_Variable, bool Temp_bool_Variable_1, bool CallFunc_TextIsEmpty_ReturnValue, class FText CallFunc_GetDisplayText_ReturnValue, class FText K2Node_Select_Default, bool CallFunc_TextIsEmpty_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, class FText K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "UpdateText");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_UpdateText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "UpdateText");
+
+	Params::UInputReflectorButton_C_UpdateText_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
@@ -219,9 +270,12 @@ void UInputReflectorButton_C::UpdateText(bool Temp_bool_Variable, bool Temp_bool
 
 void UInputReflectorButton_C::SetControllerStyle(class UClass* ControllerInputStyle, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "SetControllerStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_SetControllerStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "SetControllerStyle");
+
+	Params::UInputReflectorButton_C_SetControllerStyle_Params Parms{};
 
 	Parms.ControllerInputStyle = ControllerInputStyle;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -240,9 +294,12 @@ void UInputReflectorButton_C::SetControllerStyle(class UClass* ControllerInputSt
 
 void UInputReflectorButton_C::UpdateTextAndStyle(bool bUsingGamepad)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "UpdateTextAndStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_UpdateTextAndStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "UpdateTextAndStyle");
+
+	Params::UInputReflectorButton_C_UpdateTextAndStyle_Params Parms{};
 
 	Parms.bUsingGamepad = bUsingGamepad;
 
@@ -260,9 +317,12 @@ void UInputReflectorButton_C::UpdateTextAndStyle(bool bUsingGamepad)
 
 void UInputReflectorButton_C::InitializeButton(class UObject* CallFunc_GetBrushResource_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "InitializeButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_InitializeButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "InitializeButton");
+
+	Params::UInputReflectorButton_C_InitializeButton_Params Parms{};
 
 	Parms.CallFunc_GetBrushResource_ReturnValue = CallFunc_GetBrushResource_ReturnValue;
 	Parms.CallFunc_NotEqual_ByteByte_ReturnValue = CallFunc_NotEqual_ByteByte_ReturnValue;
@@ -280,9 +340,12 @@ void UInputReflectorButton_C::InitializeButton(class UObject* CallFunc_GetBrushR
 
 void UInputReflectorButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "Set Icon");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_Set_Icon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "Set Icon");
+
+	Params::UInputReflectorButton_C_Set_Icon_Params Parms{};
 
 	Parms.IconBrush = IconBrush;
 
@@ -298,9 +361,12 @@ void UInputReflectorButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 
 void UInputReflectorButton_C::Set_Text(class FText ButtonText)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "Set Text");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_Set_Text_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "Set Text");
+
+	Params::UInputReflectorButton_C_Set_Text_Params Parms{};
 
 	Parms.ButtonText = ButtonText;
 
@@ -315,12 +381,14 @@ void UInputReflectorButton_C::Set_Text(class FText ButtonText)
 
 void UInputReflectorButton_C::OnCurrentTextStyleChanged()
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "OnCurrentTextStyleChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_OnCurrentTextStyleChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "OnCurrentTextStyleChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -332,9 +400,12 @@ void UInputReflectorButton_C::OnCurrentTextStyleChanged()
 
 void UInputReflectorButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "PreConstruct");
+
+	Params::UInputReflectorButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -350,9 +421,12 @@ void UInputReflectorButton_C::PreConstruct(bool IsDesignTime)
 
 void UInputReflectorButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+
+	Params::UInputReflectorButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature_Params Parms{};
 
 	Parms.bUsingGamepad = bUsingGamepad;
 
@@ -368,9 +442,12 @@ void UInputReflectorButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentB
 
 void UInputReflectorButton_C::OnTriggeredInputActionChanged(struct FDataTableRowHandle& NewTriggeredAction)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "OnTriggeredInputActionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_OnTriggeredInputActionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "OnTriggeredInputActionChanged");
+
+	Params::UInputReflectorButton_C_OnTriggeredInputActionChanged_Params Parms{};
 
 	Parms.NewTriggeredAction = NewTriggeredAction;
 
@@ -386,9 +463,12 @@ void UInputReflectorButton_C::OnTriggeredInputActionChanged(struct FDataTableRow
 
 void UInputReflectorButton_C::OnActionProgress(float HeldPercent)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "OnActionProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_OnActionProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "OnActionProgress");
+
+	Params::UInputReflectorButton_C_OnActionProgress_Params Parms{};
 
 	Parms.HeldPercent = HeldPercent;
 
@@ -403,12 +483,14 @@ void UInputReflectorButton_C::OnActionProgress(float HeldPercent)
 
 void UInputReflectorButton_C::OnActionComplete()
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "OnActionComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_OnActionComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "OnActionComplete");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -419,12 +501,14 @@ void UInputReflectorButton_C::OnActionComplete()
 
 void UInputReflectorButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -435,12 +519,14 @@ void UInputReflectorButton_C::Construct()
 
 void UInputReflectorButton_C::Destruct()
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -472,9 +558,12 @@ void UInputReflectorButton_C::Destruct()
 
 void UInputReflectorButton_C::ExecuteUbergraph_InputReflectorButton(int32 EntryPoint, bool Temp_bool_Variable, bool K2Node_Event_IsDesignTime, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_HasAnyChildren_ReturnValue, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable_1, bool K2Node_ComponentBoundEvent_bUsingGamepad, const struct FDataTableRowHandle& K2Node_Event_NewTriggeredAction, float K2Node_Event_HeldPercent, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, bool CallFunc_EqualEqual_SlateBrush_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("InputReflectorButton_C", "ExecuteUbergraph_InputReflectorButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflectorButton_C_ExecuteUbergraph_InputReflectorButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflectorButton_C", "ExecuteUbergraph_InputReflectorButton");
+
+	Params::UInputReflectorButton_C_ExecuteUbergraph_InputReflectorButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -504,6 +593,4 @@ void UInputReflectorButton_C::ExecuteUbergraph_InputReflectorButton(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

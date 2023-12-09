@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaCustomizationSlotButtonWrapper.AthenaCustomizationSlotButtonWrapper_C
+// (None)
+
+class UClass* UAthenaCustomizationSlotButtonWrapper_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaCustomizationSlotButtonWrapper_C");
+
+	return Clss;
+}
+
+
+// AthenaCustomizationSlotButtonWrapper_C AthenaCustomizationSlotButtonWrapper.Default__AthenaCustomizationSlotButtonWrapper_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaCustomizationSlotButtonWrapper_C* UAthenaCustomizationSlotButtonWrapper_C::GetDefaultObj()
+{
+	static class UAthenaCustomizationSlotButtonWrapper_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaCustomizationSlotButtonWrapper_C*>(UAthenaCustomizationSlotButtonWrapper_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AthenaCustomizationSlotButtonWrapper.AthenaCustomizationSlotButtonWrapper_C.GetCustomizationSlotActiveState
@@ -25,9 +50,12 @@ namespace SDK
 
 void UAthenaCustomizationSlotButtonWrapper_C::GetCustomizationSlotActiveState(bool* bCosmeticAvaialble, bool* bActive, bool CallFunc_GetCustomizationSlotActiveState_bOutAttachableCosmeticAvailable, bool CallFunc_GetCustomizationSlotActiveState_bOutActive)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "GetCustomizationSlotActiveState");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButtonWrapper_C_GetCustomizationSlotActiveState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "GetCustomizationSlotActiveState");
+
+	Params::UAthenaCustomizationSlotButtonWrapper_C_GetCustomizationSlotActiveState_Params Parms{};
 
 	Parms.CallFunc_GetCustomizationSlotActiveState_bOutAttachableCosmeticAvailable = CallFunc_GetCustomizationSlotActiveState_bOutAttachableCosmeticAvailable;
 	Parms.CallFunc_GetCustomizationSlotActiveState_bOutActive = CallFunc_GetCustomizationSlotActiveState_bOutActive;
@@ -50,9 +78,12 @@ void UAthenaCustomizationSlotButtonWrapper_C::GetCustomizationSlotActiveState(bo
 
 void UAthenaCustomizationSlotButtonWrapper_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButtonWrapper_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "PreConstruct");
+
+	Params::UAthenaCustomizationSlotButtonWrapper_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -68,9 +99,12 @@ void UAthenaCustomizationSlotButtonWrapper_C::PreConstruct(bool IsDesignTime)
 
 void UAthenaCustomizationSlotButtonWrapper_C::BndEvt__SlotButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "BndEvt__SlotButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButtonWrapper_C_BndEvt__SlotButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "BndEvt__SlotButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaCustomizationSlotButtonWrapper_C_BndEvt__SlotButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -85,12 +119,14 @@ void UAthenaCustomizationSlotButtonWrapper_C::BndEvt__SlotButton_K2Node_Componen
 
 void UAthenaCustomizationSlotButtonWrapper_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButtonWrapper_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -102,9 +138,12 @@ void UAthenaCustomizationSlotButtonWrapper_C::Construct()
 
 void UAthenaCustomizationSlotButtonWrapper_C::BndEvt__SlotButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "BndEvt__SlotButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButtonWrapper_C_BndEvt__SlotButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "BndEvt__SlotButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaCustomizationSlotButtonWrapper_C_BndEvt__SlotButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -120,9 +159,12 @@ void UAthenaCustomizationSlotButtonWrapper_C::BndEvt__SlotButton_K2Node_Componen
 
 void UAthenaCustomizationSlotButtonWrapper_C::BndEvt__SlotButton_K2Node_ComponentBoundEvent_47_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "BndEvt__SlotButton_K2Node_ComponentBoundEvent_47_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButtonWrapper_C_BndEvt__SlotButton_K2Node_ComponentBoundEvent_47_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "BndEvt__SlotButton_K2Node_ComponentBoundEvent_47_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaCustomizationSlotButtonWrapper_C_BndEvt__SlotButton_K2Node_ComponentBoundEvent_47_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -147,13 +189,16 @@ void UAthenaCustomizationSlotButtonWrapper_C::BndEvt__SlotButton_K2Node_Componen
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FAthenaCustomizationParams  K2Node_MakeStruct_AthenaCustomizationParams                      ()
+// struct FAthenaCustomizationParams  K2Node_MakeStruct_AthenaCustomizationParams                      (None)
 
 void UAthenaCustomizationSlotButtonWrapper_C::ExecuteUbergraph_AthenaCustomizationSlotButtonWrapper(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, bool K2Node_Event_IsDesignTime, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, bool CallFunc_CanShowLockerSlotType_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, enum class ESlateVisibility K2Node_Select_Default, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, const struct FAthenaCustomizationParams& K2Node_MakeStruct_AthenaCustomizationParams)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "ExecuteUbergraph_AthenaCustomizationSlotButtonWrapper");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButtonWrapper_C_ExecuteUbergraph_AthenaCustomizationSlotButtonWrapper_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "ExecuteUbergraph_AthenaCustomizationSlotButtonWrapper");
+
+	Params::UAthenaCustomizationSlotButtonWrapper_C_ExecuteUbergraph_AthenaCustomizationSlotButtonWrapper_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -181,12 +226,14 @@ void UAthenaCustomizationSlotButtonWrapper_C::ExecuteUbergraph_AthenaCustomizati
 
 void UAthenaCustomizationSlotButtonWrapper_C::OnSlotUnhovered__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "OnSlotUnhovered__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButtonWrapper_C_OnSlotUnhovered__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "OnSlotUnhovered__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -202,9 +249,12 @@ void UAthenaCustomizationSlotButtonWrapper_C::OnSlotUnhovered__DelegateSignature
 
 void UAthenaCustomizationSlotButtonWrapper_C::OnSlotHovered__DelegateSignature(class UAthenaCustomizationSlotButtonWrapper_C* ButtonWrapper, enum class EAthenaCustomizationCategory CustomizationType, class FText BannerLabel, class FText CustomizationDescription, int32 SubslotIndex)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "OnSlotHovered__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButtonWrapper_C_OnSlotHovered__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "OnSlotHovered__DelegateSignature");
+
+	Params::UAthenaCustomizationSlotButtonWrapper_C_OnSlotHovered__DelegateSignature_Params Parms{};
 
 	Parms.ButtonWrapper = ButtonWrapper;
 	Parms.CustomizationType = CustomizationType;
@@ -225,9 +275,12 @@ void UAthenaCustomizationSlotButtonWrapper_C::OnSlotHovered__DelegateSignature(c
 
 void UAthenaCustomizationSlotButtonWrapper_C::OnSlotClicked__DelegateSignature(class UCommonButton* Button, const struct FAthenaCustomizationParams& CustomizationParams)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "OnSlotClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationSlotButtonWrapper_C_OnSlotClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationSlotButtonWrapper_C", "OnSlotClicked__DelegateSignature");
+
+	Params::UAthenaCustomizationSlotButtonWrapper_C_OnSlotClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 	Parms.CustomizationParams = CustomizationParams;
@@ -238,6 +291,4 @@ void UAthenaCustomizationSlotButtonWrapper_C::OnSlotClicked__DelegateSignature(c
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass GalileoPatrolLayerAnimBP.GalileoPatrolLayerAnimBP_C
+// (None)
+
+class UClass* UGalileoPatrolLayerAnimBP_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GalileoPatrolLayerAnimBP_C");
+
+	return Clss;
+}
+
+
+// GalileoPatrolLayerAnimBP_C GalileoPatrolLayerAnimBP.Default__GalileoPatrolLayerAnimBP_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGalileoPatrolLayerAnimBP_C* UGalileoPatrolLayerAnimBP_C::GetDefaultObj()
+{
+	static class UGalileoPatrolLayerAnimBP_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGalileoPatrolLayerAnimBP_C*>(UGalileoPatrolLayerAnimBP_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GalileoPatrolLayerAnimBP.GalileoPatrolLayerAnimBP_C.FullBodyOverride
 // (HasOutParams, BlueprintCallable)
 // Parameters:
@@ -23,16 +48,19 @@ namespace SDK
 
 void UGalileoPatrolLayerAnimBP_C::FullBodyOverride(const struct FPoseLink& PassThroughFullBodyPose, struct FPoseLink* FullBodyOverride)
 {
-	static auto Func = Class->GetFunction("GalileoPatrolLayerAnimBP_C", "FullBodyOverride");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileoPatrolLayerAnimBP_C_FullBodyOverride_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GalileoPatrolLayerAnimBP_C", "FullBodyOverride");
+
+	Params::UGalileoPatrolLayerAnimBP_C_FullBodyOverride_Params Parms{};
 
 	Parms.PassThroughFullBodyPose = PassThroughFullBodyPose;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (FullBodyOverride != nullptr)
-		*FullBodyOverride = Parms.FullBodyOverride;
+		*FullBodyOverride = std::move(Parms.FullBodyOverride);
 
 }
 
@@ -44,15 +72,18 @@ void UGalileoPatrolLayerAnimBP_C::FullBodyOverride(const struct FPoseLink& PassT
 
 void UGalileoPatrolLayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("GalileoPatrolLayerAnimBP_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileoPatrolLayerAnimBP_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GalileoPatrolLayerAnimBP_C", "AnimGraph");
+
+	Params::UGalileoPatrolLayerAnimBP_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -64,9 +95,12 @@ void UGalileoPatrolLayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 
 void UGalileoPatrolLayerAnimBP_C::ExecuteUbergraph_GalileoPatrolLayerAnimBP(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("GalileoPatrolLayerAnimBP_C", "ExecuteUbergraph_GalileoPatrolLayerAnimBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileoPatrolLayerAnimBP_C_ExecuteUbergraph_GalileoPatrolLayerAnimBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GalileoPatrolLayerAnimBP_C", "ExecuteUbergraph_GalileoPatrolLayerAnimBP");
+
+	Params::UGalileoPatrolLayerAnimBP_C_ExecuteUbergraph_GalileoPatrolLayerAnimBP_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -76,6 +110,4 @@ void UGalileoPatrolLayerAnimBP_C::ExecuteUbergraph_GalileoPatrolLayerAnimBP(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

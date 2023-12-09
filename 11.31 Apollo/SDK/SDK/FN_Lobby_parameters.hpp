@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -25,13 +22,6 @@ public:
 	struct FUniqueNetIdRepl                      InPartyOwnerId;                                    // 0x28(0x28)(ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function Lobby.LobbyBeaconClient.ServerNotifyJoiningServer
-struct ALobbyBeaconClient_ServerNotifyJoiningServer_Params
-{
-public:
-};
-
 // 0x48 (0x48 - 0x0)
 // Function Lobby.LobbyBeaconClient.ServerLoginPlayer
 struct ALobbyBeaconClient_ServerLoginPlayer_Params
@@ -49,13 +39,6 @@ struct ALobbyBeaconClient_ServerKickPlayer_Params
 public:
 	struct FUniqueNetIdRepl                      PlayerToKick;                                      // 0x0(0x28)(ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                  Reason;                                            // 0x28(0x18)(ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function Lobby.LobbyBeaconClient.ServerDisconnectFromLobby
-struct ALobbyBeaconClient_ServerDisconnectFromLobby_Params
-{
-public:
 };
 
 // 0x10 (0x10 - 0x0)
@@ -106,61 +89,10 @@ struct ALobbyBeaconClient_ClientLoginComplete_Params
 public:
 	struct FUniqueNetIdRepl                      InUniqueId;                                        // 0x0(0x28)(ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bWasSuccessful;                                    // 0x28(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_18E3[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
-};
-
-// 0x0 (0x0 - 0x0)
-// Function Lobby.LobbyBeaconClient.ClientJoinGame
-struct ALobbyBeaconClient_ClientJoinGame_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function Lobby.LobbyBeaconClient.ClientAckJoiningServer
-struct ALobbyBeaconClient_ClientAckJoiningServer_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function Lobby.LobbyBeaconPlayerState.OnRep_UniqueId
-struct ALobbyBeaconPlayerState_OnRep_UniqueId_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function Lobby.LobbyBeaconPlayerState.OnRep_PartyOwner
-struct ALobbyBeaconPlayerState_OnRep_PartyOwner_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function Lobby.LobbyBeaconPlayerState.OnRep_InLobby
-struct ALobbyBeaconPlayerState_OnRep_InLobby_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function Lobby.LobbyBeaconState.OnRep_WaitForPlayersTimeRemaining
-struct ALobbyBeaconState_OnRep_WaitForPlayersTimeRemaining_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function Lobby.LobbyBeaconState.OnRep_LobbyStarted
-struct ALobbyBeaconState_OnRep_LobbyStarted_Params
-{
-public:
+	uint8                                        Pad_437[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

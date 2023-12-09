@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,17 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass Tooltip-Basic-S.Tooltip-Basic-S_C
+// (None)
+
+class UClass* UTooltipMinusBasicMinusS_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Tooltip-Basic-S_C");
+
+	return Clss;
+}
+
+
+// Tooltip-Basic-S_C Tooltip-Basic-S.Default__Tooltip-Basic-S_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTooltipMinusBasicMinusS_C* UTooltipMinusBasicMinusS_C::GetDefaultObj()
+{
+	static class UTooltipMinusBasicMinusS_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTooltipMinusBasicMinusS_C*>(UTooltipMinusBasicMinusS_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Tooltip-Basic-S.Tooltip-Basic-S_C.Get Icon Brush
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FSlateBrush                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FSlateBrush                 CallFunc_MakeBrushFromAsset_ReturnValue                          ()
+// struct FSlateBrush                 CallFunc_MakeBrushFromAsset_ReturnValue                          (None)
 
-struct FSlateBrush UTooltip_Basic_S_C::Get_Icon_Brush(const struct FSlateBrush& CallFunc_MakeBrushFromAsset_ReturnValue)
+struct FSlateBrush UTooltipMinusBasicMinusS_C::Get_Icon_Brush(const struct FSlateBrush& CallFunc_MakeBrushFromAsset_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Tooltip-Basic-S_C", "Get Icon Brush");
+	static class UFunction* Func = nullptr;
 
-	Params::UTooltip_Basic_S_C_Get_Icon_Brush_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Tooltip-Basic-S_C", "Get Icon Brush");
+
+	Params::UTooltipMinusBasicMinusS_C_Get_Icon_Brush_Params Parms{};
 
 	Parms.CallFunc_MakeBrushFromAsset_ReturnValue = CallFunc_MakeBrushFromAsset_ReturnValue;
 
@@ -41,11 +69,14 @@ struct FSlateBrush UTooltip_Basic_S_C::Get_Icon_Brush(const struct FSlateBrush& 
 // Parameters:
 // class FText                        ReturnValue                                                      (Parm, OutParm, ReturnParm)
 
-class FText UTooltip_Basic_S_C::Get_Header_Text()
+class FText UTooltipMinusBasicMinusS_C::Get_Header_Text()
 {
-	static auto Func = Class->GetFunction("Tooltip-Basic-S_C", "Get Header Text");
+	static class UFunction* Func = nullptr;
 
-	Params::UTooltip_Basic_S_C_Get_Header_Text_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Tooltip-Basic-S_C", "Get Header Text");
+
+	Params::UTooltipMinusBasicMinusS_C_Get_Header_Text_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -60,11 +91,14 @@ class FText UTooltip_Basic_S_C::Get_Header_Text()
 // Parameters:
 // class FText                        ReturnValue                                                      (Parm, OutParm, ReturnParm)
 
-class FText UTooltip_Basic_S_C::Get_Body_Text()
+class FText UTooltipMinusBasicMinusS_C::Get_Body_Text()
 {
-	static auto Func = Class->GetFunction("Tooltip-Basic-S_C", "Get Body Text");
+	static class UFunction* Func = nullptr;
 
-	Params::UTooltip_Basic_S_C_Get_Body_Text_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Tooltip-Basic-S_C", "Get Body Text");
+
+	Params::UTooltipMinusBasicMinusS_C_Get_Body_Text_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -78,14 +112,16 @@ class FText UTooltip_Basic_S_C::Get_Body_Text()
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
-void UTooltip_Basic_S_C::Construct()
+void UTooltipMinusBasicMinusS_C::Construct()
 {
-	static auto Func = Class->GetFunction("Tooltip-Basic-S_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTooltip_Basic_S_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Tooltip-Basic-S_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -124,11 +160,14 @@ void UTooltip_Basic_S_C::Construct()
 // bool                               Temp_bool_Variable_4                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_4                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTooltip_Basic_S_C::ExecuteUbergraph_Tooltip_Basic_S(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_8, enum class ESlateVisibility Temp_byte_Variable_9, bool CallFunc_TextIsEmpty_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_2, enum class ESlateVisibility K2Node_Select_Default_3, bool CallFunc_IsValidClass_ReturnValue, bool CallFunc_IsValidClass_ReturnValue_1, bool Temp_bool_Variable_4, enum class ESlateVisibility K2Node_Select_Default_4)
+void UTooltipMinusBasicMinusS_C::ExecuteUbergraph_TooltipMinusBasicMinusS(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_8, enum class ESlateVisibility Temp_byte_Variable_9, bool CallFunc_TextIsEmpty_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_2, enum class ESlateVisibility K2Node_Select_Default_3, bool CallFunc_IsValidClass_ReturnValue, bool CallFunc_IsValidClass_ReturnValue_1, bool Temp_bool_Variable_4, enum class ESlateVisibility K2Node_Select_Default_4)
 {
-	static auto Func = Class->GetFunction("Tooltip-Basic-S_C", "ExecuteUbergraph_Tooltip-Basic-S");
+	static class UFunction* Func = nullptr;
 
-	Params::UTooltip_Basic_S_C_ExecuteUbergraph_Tooltip_Basic_S_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Tooltip-Basic-S_C", "ExecuteUbergraph_Tooltip-Basic-S");
+
+	Params::UTooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -167,6 +206,4 @@ void UTooltip_Basic_S_C::ExecuteUbergraph_Tooltip_Basic_S(int32 EntryPoint, enum
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

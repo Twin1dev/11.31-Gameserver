@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass VoiceChatMemberListEntry.VoiceChatMemberListEntry_C
+// (None)
+
+class UClass* UVoiceChatMemberListEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VoiceChatMemberListEntry_C");
+
+	return Clss;
+}
+
+
+// VoiceChatMemberListEntry_C VoiceChatMemberListEntry.Default__VoiceChatMemberListEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UVoiceChatMemberListEntry_C* UVoiceChatMemberListEntry_C::GetDefaultObj()
+{
+	static class UVoiceChatMemberListEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UVoiceChatMemberListEntry_C*>(UVoiceChatMemberListEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function VoiceChatMemberListEntry.VoiceChatMemberListEntry_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UVoiceChatMemberListEntry_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("VoiceChatMemberListEntry_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChatMemberListEntry_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChatMemberListEntry_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UVoiceChatMemberListEntry_C::BP_OnUnhovered()
 
 void UVoiceChatMemberListEntry_C::BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen)
 {
-	static auto Func = Class->GetFunction("VoiceChatMemberListEntry_C", "BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChatMemberListEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChatMemberListEntry_C", "BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
+
+	Params::UVoiceChatMemberListEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.bIsOpen = bIsOpen;
 
@@ -55,12 +85,14 @@ void UVoiceChatMemberListEntry_C::BndEvt__MenuAnchor_Actions_K2Node_ComponentBou
 
 void UVoiceChatMemberListEntry_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("VoiceChatMemberListEntry_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChatMemberListEntry_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChatMemberListEntry_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -78,9 +110,12 @@ void UVoiceChatMemberListEntry_C::BP_OnHovered()
 
 void UVoiceChatMemberListEntry_C::ExecuteUbergraph_VoiceChatMemberListEntry(int32 EntryPoint, bool K2Node_ComponentBoundEvent_bIsOpen, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, bool CallFunc_IsAnimationPlaying_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("VoiceChatMemberListEntry_C", "ExecuteUbergraph_VoiceChatMemberListEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChatMemberListEntry_C_ExecuteUbergraph_VoiceChatMemberListEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChatMemberListEntry_C", "ExecuteUbergraph_VoiceChatMemberListEntry");
+
+	Params::UVoiceChatMemberListEntry_C_ExecuteUbergraph_VoiceChatMemberListEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_bIsOpen = K2Node_ComponentBoundEvent_bIsOpen;
@@ -96,6 +131,4 @@ void UVoiceChatMemberListEntry_C::ExecuteUbergraph_VoiceChatMemberListEntry(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

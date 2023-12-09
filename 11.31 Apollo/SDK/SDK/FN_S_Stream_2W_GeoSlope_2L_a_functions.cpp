@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass S_Stream_2W_GeoSlope_2L_a.S_Stream_2W_GeoSlope_2L_a_C
+// (Actor)
+
+class UClass* AS_Stream_2W_GeoSlope_2L_a_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("S_Stream_2W_GeoSlope_2L_a_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// S_Stream_2W_GeoSlope_2L_a_C S_Stream_2W_GeoSlope_2L_a.Default__S_Stream_2W_GeoSlope_2L_a_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AS_Stream_2W_GeoSlope_2L_a_C* AS_Stream_2W_GeoSlope_2L_a_C::GetDefaultObj()
+{
+	static class AS_Stream_2W_GeoSlope_2L_a_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AS_Stream_2W_GeoSlope_2L_a_C*>(AS_Stream_2W_GeoSlope_2L_a_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

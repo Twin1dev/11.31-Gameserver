@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -40,13 +37,6 @@ public:
 	class UMaterialInstanceDynamic*              CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function MinimalSquadMember.MinimalSquadMember_C.SetReadyVisuals
-struct UMinimalSquadMember_C_SetReadyVisuals_Params
-{
-public:
-};
-
 // 0x1 (0x1 - 0x0)
 // Function MinimalSquadMember.MinimalSquadMember_C.OnMemberGameReadinessChanged
 struct UMinimalSquadMember_C_OnMemberGameReadinessChanged_Params
@@ -76,7 +66,7 @@ public:
 	bool                                         K2Node_Event_bHasValidMember;                      // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsCurrentMemberLocal_ReturnValue;         // 0x9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class EGameReadiness                    Temp_byte_Variable;                                // 0xA(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_65A7[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_44BE[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWidgetAnimation*                      K2Node_Select_Default;                             // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimationForward_ReturnValue;         // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -84,6 +74,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

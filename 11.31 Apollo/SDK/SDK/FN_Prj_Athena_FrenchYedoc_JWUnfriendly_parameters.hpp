@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,13 +12,6 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
-
-// 0x0 (0x0 - 0x0)
-// Function Prj_Athena_FrenchYedoc_JWUnfriendly.Prj_Athena_FrenchYedoc_JWUnfriendly_C.ReceiveBeginPlay
-struct APrj_Athena_FrenchYedoc_JWUnfriendly_C_ReceiveBeginPlay_Params
-{
-public:
-};
 
 // 0x5 (0x5 - 0x0)
 // Function Prj_Athena_FrenchYedoc_JWUnfriendly.Prj_Athena_FrenchYedoc_JWUnfriendly_C.ExecuteUbergraph_Prj_Athena_FrenchYedoc_JWUnfriendly
@@ -35,6 +25,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_DemonHunter_Crossbow_Athena.B_DemonHunter_Crossbow_Athena_C
+// (Actor)
+
+class UClass* AB_DemonHunter_Crossbow_Athena_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_DemonHunter_Crossbow_Athena_C");
+
+	return Clss;
+}
+
+
+// B_DemonHunter_Crossbow_Athena_C B_DemonHunter_Crossbow_Athena.Default__B_DemonHunter_Crossbow_Athena_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_DemonHunter_Crossbow_Athena_C* AB_DemonHunter_Crossbow_Athena_C::GetDefaultObj()
+{
+	static class AB_DemonHunter_Crossbow_Athena_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_DemonHunter_Crossbow_Athena_C*>(AB_DemonHunter_Crossbow_Athena_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_DemonHunter_Crossbow_Athena.B_DemonHunter_Crossbow_Athena_C.OnSpawnProjectile
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void AB_DemonHunter_Crossbow_Athena_C::OnSpawnProjectile(class AFortProjectileBase* SpawnProjectile)
 {
-	static auto Func = Class->GetFunction("B_DemonHunter_Crossbow_Athena_C", "OnSpawnProjectile");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_DemonHunter_Crossbow_Athena_C_OnSpawnProjectile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_DemonHunter_Crossbow_Athena_C", "OnSpawnProjectile");
+
+	Params::AB_DemonHunter_Crossbow_Athena_C_OnSpawnProjectile_Params Parms{};
 
 	Parms.SpawnProjectile = SpawnProjectile;
 
@@ -40,9 +68,12 @@ void AB_DemonHunter_Crossbow_Athena_C::OnSpawnProjectile(class AFortProjectileBa
 
 void AB_DemonHunter_Crossbow_Athena_C::OnPlayReloadFX(enum class EFortReloadFXState ReloadStage)
 {
-	static auto Func = Class->GetFunction("B_DemonHunter_Crossbow_Athena_C", "OnPlayReloadFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_DemonHunter_Crossbow_Athena_C_OnPlayReloadFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_DemonHunter_Crossbow_Athena_C", "OnPlayReloadFX");
+
+	Params::AB_DemonHunter_Crossbow_Athena_C_OnPlayReloadFX_Params Parms{};
 
 	Parms.ReloadStage = ReloadStage;
 
@@ -64,9 +95,12 @@ void AB_DemonHunter_Crossbow_Athena_C::OnPlayReloadFX(enum class EFortReloadFXSt
 
 void AB_DemonHunter_Crossbow_Athena_C::ExecuteUbergraph_B_DemonHunter_Crossbow_Athena(int32 EntryPoint, enum class EFortReloadFXState K2Node_Event_ReloadStage, bool K2Node_SwitchEnum_CmpSuccess, int32 CallFunc_GetMagazineAmmoCount_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_IsActive_ReturnValue, class AFortProjectileBase* K2Node_Event_SpawnProjectile)
 {
-	static auto Func = Class->GetFunction("B_DemonHunter_Crossbow_Athena_C", "ExecuteUbergraph_B_DemonHunter_Crossbow_Athena");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_DemonHunter_Crossbow_Athena_C_ExecuteUbergraph_B_DemonHunter_Crossbow_Athena_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_DemonHunter_Crossbow_Athena_C", "ExecuteUbergraph_B_DemonHunter_Crossbow_Athena");
+
+	Params::AB_DemonHunter_Crossbow_Athena_C_ExecuteUbergraph_B_DemonHunter_Crossbow_Athena_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_ReloadStage = K2Node_Event_ReloadStage;
@@ -82,6 +116,4 @@ void AB_DemonHunter_Crossbow_Athena_C::ExecuteUbergraph_B_DemonHunter_Crossbow_A
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

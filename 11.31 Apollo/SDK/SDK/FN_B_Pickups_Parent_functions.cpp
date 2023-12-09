@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_Pickups_Parent.B_Pickups_Parent_C
+// (Actor)
+
+class UClass* AB_Pickups_Parent_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Pickups_Parent_C");
+
+	return Clss;
+}
+
+
+// B_Pickups_Parent_C B_Pickups_Parent.Default__B_Pickups_Parent_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Pickups_Parent_C* AB_Pickups_Parent_C::GetDefaultObj()
+{
+	static class AB_Pickups_Parent_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Pickups_Parent_C*>(AB_Pickups_Parent_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.Initial Parenting Setup
@@ -36,9 +61,12 @@ namespace SDK
 
 void AB_Pickups_Parent_C::Initial_Parenting_Setup(const struct FRotator& CallFunc_SelectRotator_ReturnValue, const struct FHitResult& CallFunc_K2_SetRelativeLocation_SweepHitResult, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_K2_AttachToComponent_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FVector& CallFunc_GetComponentBounds_Origin, const struct FVector& CallFunc_GetComponentBounds_BoxExtent, float CallFunc_GetComponentBounds_SphereRadius, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, int32 CallFunc_GetNumMaterials_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldLocation_SweepHitResult, bool CallFunc_IsValid_ReturnValue, const struct FHitResult& CallFunc_K2_SetRelativeTransform_SweepHitResult)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "Initial Parenting Setup");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_Initial_Parenting_Setup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "Initial Parenting Setup");
+
+	Params::AB_Pickups_Parent_C_Initial_Parenting_Setup_Params Parms{};
 
 	Parms.CallFunc_SelectRotator_ReturnValue = CallFunc_SelectRotator_ReturnValue;
 	Parms.CallFunc_K2_SetRelativeLocation_SweepHitResult = CallFunc_K2_SetRelativeLocation_SweepHitResult;
@@ -74,9 +102,12 @@ void AB_Pickups_Parent_C::Initial_Parenting_Setup(const struct FRotator& CallFun
 
 void AB_Pickups_Parent_C::Mobile_Interation_Icon_Setup(int32 Temp_int_Variable, class UMaterialInterface* Temp_object_Variable, class UMaterialInterface* Temp_object_Variable_1, class UMaterialInterface* Temp_object_Variable_2, class UMaterialInterface* Temp_object_Variable_3, class UMaterialInterface* Temp_object_Variable_4, class UMaterialInterface* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "Mobile Interation Icon Setup");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_Mobile_Interation_Icon_Setup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "Mobile Interation Icon Setup");
+
+	Params::AB_Pickups_Parent_C_Mobile_Interation_Icon_Setup_Params Parms{};
 
 	Parms.Temp_int_Variable = Temp_int_Variable;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -102,9 +133,12 @@ void AB_Pickups_Parent_C::Mobile_Interation_Icon_Setup(int32 Temp_int_Variable, 
 
 void AB_Pickups_Parent_C::Randomize_Mesh_Rotation_for_BR(const struct FRotator& CallFunc_MakeRotator_ReturnValue, bool CallFunc_K2_SetActorRotation_ReturnValue, enum class ESubGame CallFunc_GetSubGame_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "Randomize Mesh Rotation for BR");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_Randomize_Mesh_Rotation_for_BR_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "Randomize Mesh Rotation for BR");
+
+	Params::AB_Pickups_Parent_C_Randomize_Mesh_Rotation_for_BR_Params Parms{};
 
 	Parms.CallFunc_MakeRotator_ReturnValue = CallFunc_MakeRotator_ReturnValue;
 	Parms.CallFunc_K2_SetActorRotation_ReturnValue = CallFunc_K2_SetActorRotation_ReturnValue;
@@ -137,9 +171,12 @@ void AB_Pickups_Parent_C::Randomize_Mesh_Rotation_for_BR(const struct FRotator& 
 
 void AB_Pickups_Parent_C::Set_Draw_Distance(bool Temp_bool_Variable, bool Temp_bool_Variable_1, bool CallFunc_IsValid_ReturnValue, float CallFunc_GetNumericCVar_OutValue, bool CallFunc_GetNumericCVar_ReturnValue, float CallFunc_FMax_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, bool CallFunc_IsMobilePlatform_ReturnValue, class AGameStateBase* CallFunc_GetGameState_ReturnValue, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena, bool K2Node_DynamicCast_bSuccess, float K2Node_Select_Default, float K2Node_Select_Default_1, float CallFunc_Multiply_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "Set Draw Distance");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_Set_Draw_Distance_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "Set Draw Distance");
+
+	Params::AB_Pickups_Parent_C_Set_Draw_Distance_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
@@ -175,9 +212,12 @@ void AB_Pickups_Parent_C::Set_Draw_Distance(bool Temp_bool_Variable, bool Temp_b
 
 void AB_Pickups_Parent_C::SetVisibleMobileInteractIcon(bool Visible, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue, class UStaticMeshComponent* CallFunc_AddComponent_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "SetVisibleMobileInteractIcon");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_SetVisibleMobileInteractIcon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "SetVisibleMobileInteractIcon");
+
+	Params::AB_Pickups_Parent_C_SetVisibleMobileInteractIcon_Params Parms{};
 
 	Parms.Visible = Visible;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -202,9 +242,12 @@ void AB_Pickups_Parent_C::SetVisibleMobileInteractIcon(bool Visible, bool CallFu
 
 void AB_Pickups_Parent_C::SetActiveBackgroundParticleSystem(bool Active, bool Reset, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "SetActiveBackgroundParticleSystem");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_SetActiveBackgroundParticleSystem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "SetActiveBackgroundParticleSystem");
+
+	Params::AB_Pickups_Parent_C_SetActiveBackgroundParticleSystem_Params Parms{};
 
 	Parms.Active = Active;
 	Parms.Reset = Reset;
@@ -225,9 +268,12 @@ void AB_Pickups_Parent_C::SetActiveBackgroundParticleSystem(bool Active, bool Re
 
 void AB_Pickups_Parent_C::SetInitialHologramParams(class UMaterialInstanceDynamic* Mid, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_Array_Get_Item, float CallFunc_Array_Get_Item_1)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "SetInitialHologramParams");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_SetInitialHologramParams_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "SetInitialHologramParams");
+
+	Params::AB_Pickups_Parent_C_SetInitialHologramParams_Params Parms{};
 
 	Parms.Mid = Mid;
 	Parms.CallFunc_RandomFloatInRange_ReturnValue = CallFunc_RandomFloatInRange_ReturnValue;
@@ -257,9 +303,12 @@ void AB_Pickups_Parent_C::SetInitialHologramParams(class UMaterialInstanceDynami
 
 void AB_Pickups_Parent_C::Unique_Material_MIDs(const TArray<class UMaterialInterface*>& AppendedMaterialsArray, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Not_PreBool_ReturnValue, class UMaterialInterface* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, const class FString& CallFunc_GetObjectName_ReturnValue, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Array_Contains_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "Unique Material MIDs");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_Unique_Material_MIDs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "Unique Material MIDs");
+
+	Params::AB_Pickups_Parent_C_Unique_Material_MIDs_Params Parms{};
 
 	Parms.AppendedMaterialsArray = AppendedMaterialsArray;
 	Parms.Temp_bool_True_if_break_was_hit_Variable = Temp_bool_True_if_break_was_hit_Variable;
@@ -305,9 +354,12 @@ void AB_Pickups_Parent_C::Unique_Material_MIDs(const TArray<class UMaterialInter
 
 void AB_Pickups_Parent_C::SetupStretchMIDs(const struct FGameplayTagContainer& NewLocalVar_0, int32 CallFunc_Array_Length_ReturnValue, class UMaterialInterface* CallFunc_Array_Get_Item, class UMaterialInterface* Temp_object_Variable, bool CallFunc_Array_IsValidIndex_ReturnValue, int32 Temp_int_Array_Index_Variable, bool Temp_bool_Variable, class UMaterialInterface* K2Node_Select_Default, bool CallFunc_GetPickupStretchMIDFromPool_bNeedsToBeInitialized, class UMaterialInstanceDynamic* CallFunc_GetPickupStretchMIDFromPool_ReturnValue, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item_1, bool CallFunc_IsValid_ReturnValue, class UMaterialInterface* CallFunc_Array_Get_Item_2, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item_3, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInterface* CallFunc_Array_Get_Item_4, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item_5, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "SetupStretchMIDs");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_SetupStretchMIDs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "SetupStretchMIDs");
+
+	Params::AB_Pickups_Parent_C_SetupStretchMIDs_Params Parms{};
 
 	Parms.NewLocalVar_0 = NewLocalVar_0;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
@@ -351,9 +403,12 @@ void AB_Pickups_Parent_C::SetupStretchMIDs(const struct FGameplayTagContainer& N
 
 void AB_Pickups_Parent_C::SetupBaseMIDs(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, class UMaterialInterface* CallFunc_Array_Get_Item, class UMaterial* CallFunc_GetBaseMaterial_ReturnValue, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "SetupBaseMIDs");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_SetupBaseMIDs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "SetupBaseMIDs");
+
+	Params::AB_Pickups_Parent_C_SetupBaseMIDs_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -378,9 +433,12 @@ void AB_Pickups_Parent_C::SetupBaseMIDs(int32 Temp_int_Array_Index_Variable, int
 
 void AB_Pickups_Parent_C::SetHiddenBackgroundVisualComponents(bool Hidden)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "SetHiddenBackgroundVisualComponents");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_SetHiddenBackgroundVisualComponents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "SetHiddenBackgroundVisualComponents");
+
+	Params::AB_Pickups_Parent_C_SetHiddenBackgroundVisualComponents_Params Parms{};
 
 	Parms.Hidden = Hidden;
 
@@ -395,12 +453,14 @@ void AB_Pickups_Parent_C::SetHiddenBackgroundVisualComponents(bool Hidden)
 
 void AB_Pickups_Parent_C::DestroyBackgroundVisualComponents()
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "DestroyBackgroundVisualComponents");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_DestroyBackgroundVisualComponents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "DestroyBackgroundVisualComponents");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -417,9 +477,12 @@ void AB_Pickups_Parent_C::DestroyBackgroundVisualComponents()
 
 void AB_Pickups_Parent_C::ReleaseStretchMIDs(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "ReleaseStretchMIDs");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_ReleaseStretchMIDs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "ReleaseStretchMIDs");
+
+	Params::AB_Pickups_Parent_C_ReleaseStretchMIDs_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -447,9 +510,12 @@ void AB_Pickups_Parent_C::ReleaseStretchMIDs(int32 Temp_int_Array_Index_Variable
 
 void AB_Pickups_Parent_C::ScaleHologramTimingsForPvP(float PVP_TimeScale, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_2, float CallFunc_Multiply_FloatFloat_ReturnValue_3, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, float CallFunc_Multiply_FloatFloat_ReturnValue_4)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "ScaleHologramTimingsForPvP");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_ScaleHologramTimingsForPvP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "ScaleHologramTimingsForPvP");
+
+	Params::AB_Pickups_Parent_C_ScaleHologramTimingsForPvP_Params Parms{};
 
 	Parms.PVP_TimeScale = PVP_TimeScale;
 	Parms.CallFunc_Multiply_FloatFloat_ReturnValue = CallFunc_Multiply_FloatFloat_ReturnValue;
@@ -496,9 +562,12 @@ void AB_Pickups_Parent_C::ScaleHologramTimingsForPvP(float PVP_TimeScale, float 
 
 void AB_Pickups_Parent_C::SetHologramPickedUpParams(bool Tier_0, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Array_Index_Variable_1, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_1, float CallFunc_GetGameTimeInSeconds_ReturnValue, float CallFunc_Fraction_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue_1, float CallFunc_Fraction_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_GetGameTimeInSeconds_ReturnValue_2, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue_1, float CallFunc_GetGameTimeInSeconds_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "SetHologramPickedUpParams");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_SetHologramPickedUpParams_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "SetHologramPickedUpParams");
+
+	Params::AB_Pickups_Parent_C_SetHologramPickedUpParams_Params Parms{};
 
 	Parms.Tier_0 = Tier_0;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -542,9 +611,12 @@ void AB_Pickups_Parent_C::SetHologramPickedUpParams(bool Tier_0, int32 Temp_int_
 
 void AB_Pickups_Parent_C::SpawnPickedUpTrailPS(class UParticleSystemComponent* TrailPS, float CallFunc_Array_Get_Item, float CallFunc_Array_Get_Item_1, const struct FVector& CallFunc_Conv_LinearColorToVector_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "SpawnPickedUpTrailPS");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_SpawnPickedUpTrailPS_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "SpawnPickedUpTrailPS");
+
+	Params::AB_Pickups_Parent_C_SpawnPickedUpTrailPS_Params Parms{};
 
 	Parms.TrailPS = TrailPS;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
@@ -580,9 +652,12 @@ void AB_Pickups_Parent_C::SpawnPickedUpTrailPS(class UParticleSystemComponent* T
 
 void AB_Pickups_Parent_C::SetRarityColor(enum class EFortRarity Temp_byte_Variable, int32 Temp_int_Variable, int32 Temp_int_Variable_1, int32 Temp_int_Variable_2, int32 Temp_int_Variable_3, int32 Temp_int_Variable_4, int32 Temp_int_Variable_5, int32 Temp_int_Variable_6, int32 Temp_int_Variable_7, bool CallFunc_IsValid_ReturnValue, const struct FLinearColor& CallFunc_Array_Get_Item, const struct FLinearColor& CallFunc_Array_Get_Item_1, bool CallFunc_Array_IsValidIndex_ReturnValue, const struct FLinearColor& CallFunc_SelectColor_ReturnValue, class UFortItem* CallFunc_CreateTemporaryItemInstanceBP_ReturnValue, enum class EFortRarity CallFunc_GetRarity_ReturnValue, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "SetRarityColor");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_SetRarityColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "SetRarityColor");
+
+	Params::AB_Pickups_Parent_C_SetRarityColor_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -625,9 +700,12 @@ void AB_Pickups_Parent_C::SetRarityColor(enum class EFortRarity Temp_byte_Variab
 
 void AB_Pickups_Parent_C::UserConstructionScript(const struct FTransform& Temp_struct_Variable, const struct FTransform& Temp_struct_Variable_1, class USkeletalMeshComponent* CallFunc_AddComponent_ReturnValue, class UStaticMeshComponent* CallFunc_AddComponent_ReturnValue_1, bool Temp_bool_Variable, const struct FVector& CallFunc_GetComponentBounds_Origin, const struct FVector& CallFunc_GetComponentBounds_BoxExtent, float CallFunc_GetComponentBounds_SphereRadius, float CallFunc_Multiply_FloatFloat_ReturnValue, class UPrimitiveComponent* K2Node_Select_Default, bool CallFunc_IsValid_ReturnValue, bool CallFunc_SetStaticMesh_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "UserConstructionScript");
+
+	Params::AB_Pickups_Parent_C_UserConstructionScript_Params Parms{};
 
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.Temp_struct_Variable_1 = Temp_struct_Variable_1;
@@ -653,12 +731,14 @@ void AB_Pickups_Parent_C::UserConstructionScript(const struct FTransform& Temp_s
 
 void AB_Pickups_Parent_C::MobileSelectedTL__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "MobileSelectedTL__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_MobileSelectedTL__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "MobileSelectedTL__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -669,12 +749,14 @@ void AB_Pickups_Parent_C::MobileSelectedTL__FinishedFunc()
 
 void AB_Pickups_Parent_C::MobileSelectedTL__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "MobileSelectedTL__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_MobileSelectedTL__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "MobileSelectedTL__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -685,12 +767,14 @@ void AB_Pickups_Parent_C::MobileSelectedTL__UpdateFunc()
 
 void AB_Pickups_Parent_C::ReceiveDestroyed()
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "ReceiveDestroyed");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_ReceiveDestroyed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "ReceiveDestroyed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -701,12 +785,14 @@ void AB_Pickups_Parent_C::ReceiveDestroyed()
 
 void AB_Pickups_Parent_C::EnableBacchusHighlight()
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "EnableBacchusHighlight");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_EnableBacchusHighlight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "EnableBacchusHighlight");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -717,12 +803,14 @@ void AB_Pickups_Parent_C::EnableBacchusHighlight()
 
 void AB_Pickups_Parent_C::DisableBacchusHighlight()
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "DisableBacchusHighlight");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_DisableBacchusHighlight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "DisableBacchusHighlight");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -733,12 +821,14 @@ void AB_Pickups_Parent_C::DisableBacchusHighlight()
 
 void AB_Pickups_Parent_C::HideBackgroundAndSpotlight()
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "HideBackgroundAndSpotlight");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_HideBackgroundAndSpotlight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "HideBackgroundAndSpotlight");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -749,12 +839,14 @@ void AB_Pickups_Parent_C::HideBackgroundAndSpotlight()
 
 void AB_Pickups_Parent_C::OnAttached()
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "OnAttached");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_OnAttached_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "OnAttached");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -765,12 +857,14 @@ void AB_Pickups_Parent_C::OnAttached()
 
 void AB_Pickups_Parent_C::OnTossed()
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "OnTossed");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_OnTossed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "OnTossed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -782,9 +876,12 @@ void AB_Pickups_Parent_C::OnTossed()
 
 void AB_Pickups_Parent_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "ReceiveTick");
+
+	Params::AB_Pickups_Parent_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -800,9 +897,12 @@ void AB_Pickups_Parent_C::ReceiveTick(float DeltaSeconds)
 
 void AB_Pickups_Parent_C::OnAboutToEnterBackpack(class AFortPawn* PickupTarget)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "OnAboutToEnterBackpack");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_OnAboutToEnterBackpack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "OnAboutToEnterBackpack");
+
+	Params::AB_Pickups_Parent_C_OnAboutToEnterBackpack_Params Parms{};
 
 	Parms.PickupTarget = PickupTarget;
 
@@ -817,12 +917,14 @@ void AB_Pickups_Parent_C::OnAboutToEnterBackpack(class AFortPawn* PickupTarget)
 
 void AB_Pickups_Parent_C::OnPickedUp()
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "OnPickedUp");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_OnPickedUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "OnPickedUp");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -833,12 +935,14 @@ void AB_Pickups_Parent_C::OnPickedUp()
 
 void AB_Pickups_Parent_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -912,9 +1016,12 @@ void AB_Pickups_Parent_C::ReceiveBeginPlay()
 
 void AB_Pickups_Parent_C::ExecuteUbergraph_B_Pickups_Parent(int32 EntryPoint, float Temp_float_Variable, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, enum class ESubGame CallFunc_GetSubGame_ReturnValue_1, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, float Temp_float_Variable_1, bool CallFunc_GreaterEqual_IntInt_ReturnValue, float Temp_float_Variable_2, const struct FHitResult& CallFunc_K2_SetRelativeLocation_SweepHitResult, class AActor* CallFunc_GetAttachParentActor_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_1, class AFortPickup* K2Node_DynamicCast_AsFort_Pickup, bool K2Node_DynamicCast_bSuccess, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_GetMovementCapsuleHalfHeight_ReturnValue, const struct FVector& CallFunc_GetComponentBounds_Origin, const struct FVector& CallFunc_GetComponentBounds_BoxExtent, float CallFunc_GetComponentBounds_SphereRadius, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, float CallFunc_Subtract_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldLocation_SweepHitResult, float K2Node_Event_DeltaSeconds, bool CallFunc_IsDedicatedServer_ReturnValue, class AFortPawn* K2Node_Event_PickupTarget, bool CallFunc_IsLocallyControlled_ReturnValue, int32 CallFunc_Array_LastIndex_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsValid_ReturnValue_2, class UFortIngredientItemDefinition* K2Node_DynamicCast_AsFort_Ingredient_Item_Definition, bool K2Node_DynamicCast_bSuccess_2, class UFortResourceItemDefinition* K2Node_DynamicCast_AsFort_Resource_Item_Definition, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_IsDedicatedServer_ReturnValue_1, int32 Temp_int_Variable, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_2, float Temp_float_Variable_3, enum class ESubGame Temp_byte_Variable, bool K2Node_SwitchEnum_CmpSuccess_1, float K2Node_Select_Default, enum class ESubGame CallFunc_GetSubGame_ReturnValue_2, bool K2Node_SwitchEnum_CmpSuccess_2, bool CallFunc_EqualEqual_IntInt_ReturnValue, const struct FVector& CallFunc_Conv_FloatToVector_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue_2, float CallFunc_Add_FloatFloat_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Parent_C", "ExecuteUbergraph_B_Pickups_Parent");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Parent_C", "ExecuteUbergraph_B_Pickups_Parent");
+
+	Params::AB_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_float_Variable = Temp_float_Variable;
@@ -986,6 +1093,4 @@ void AB_Pickups_Parent_C::ExecuteUbergraph_B_Pickups_Parent(int32 EntryPoint, fl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

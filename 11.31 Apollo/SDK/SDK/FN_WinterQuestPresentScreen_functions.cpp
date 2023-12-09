@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass WinterQuestPresentScreen.WinterQuestPresentScreen_C
+// (None)
+
+class UClass* UWinterQuestPresentScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WinterQuestPresentScreen_C");
+
+	return Clss;
+}
+
+
+// WinterQuestPresentScreen_C WinterQuestPresentScreen.Default__WinterQuestPresentScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UWinterQuestPresentScreen_C* UWinterQuestPresentScreen_C::GetDefaultObj()
+{
+	static class UWinterQuestPresentScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWinterQuestPresentScreen_C*>(UWinterQuestPresentScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function WinterQuestPresentScreen.WinterQuestPresentScreen_C.OnStartOpeningPresent
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UWinterQuestPresentScreen_C::OnStartOpeningPresent()
 {
-	static auto Func = Class->GetFunction("WinterQuestPresentScreen_C", "OnStartOpeningPresent");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestPresentScreen_C_OnStartOpeningPresent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestPresentScreen_C", "OnStartOpeningPresent");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UWinterQuestPresentScreen_C::OnStartOpeningPresent()
 
 void UWinterQuestPresentScreen_C::OnStopOpeningPresent()
 {
-	static auto Func = Class->GetFunction("WinterQuestPresentScreen_C", "OnStopOpeningPresent");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestPresentScreen_C_OnStopOpeningPresent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestPresentScreen_C", "OnStopOpeningPresent");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -54,9 +83,12 @@ void UWinterQuestPresentScreen_C::OnStopOpeningPresent()
 
 void UWinterQuestPresentScreen_C::OnUpdatePlatformType(enum class ECommonPlatformType PlatformType)
 {
-	static auto Func = Class->GetFunction("WinterQuestPresentScreen_C", "OnUpdatePlatformType");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestPresentScreen_C_OnUpdatePlatformType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestPresentScreen_C", "OnUpdatePlatformType");
+
+	Params::UWinterQuestPresentScreen_C_OnUpdatePlatformType_Params Parms{};
 
 	Parms.PlatformType = PlatformType;
 
@@ -72,9 +104,12 @@ void UWinterQuestPresentScreen_C::OnUpdatePlatformType(enum class ECommonPlatfor
 
 void UWinterQuestPresentScreen_C::OnInputMethodChanged(enum class ECommonInputType NewMethod)
 {
-	static auto Func = Class->GetFunction("WinterQuestPresentScreen_C", "OnInputMethodChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestPresentScreen_C_OnInputMethodChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestPresentScreen_C", "OnInputMethodChanged");
+
+	Params::UWinterQuestPresentScreen_C_OnInputMethodChanged_Params Parms{};
 
 	Parms.NewMethod = NewMethod;
 
@@ -90,9 +125,12 @@ void UWinterQuestPresentScreen_C::OnInputMethodChanged(enum class ECommonInputTy
 
 void UWinterQuestPresentScreen_C::OnUpdateShakePercentage(float InPercentage)
 {
-	static auto Func = Class->GetFunction("WinterQuestPresentScreen_C", "OnUpdateShakePercentage");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestPresentScreen_C_OnUpdateShakePercentage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestPresentScreen_C", "OnUpdateShakePercentage");
+
+	Params::UWinterQuestPresentScreen_C_OnUpdateShakePercentage_Params Parms{};
 
 	Parms.InPercentage = InPercentage;
 
@@ -107,12 +145,14 @@ void UWinterQuestPresentScreen_C::OnUpdateShakePercentage(float InPercentage)
 
 void UWinterQuestPresentScreen_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("WinterQuestPresentScreen_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestPresentScreen_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestPresentScreen_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -124,9 +164,12 @@ void UWinterQuestPresentScreen_C::BP_OnActivated()
 
 void UWinterQuestPresentScreen_C::OnUpdateShakeRecharge(float InPercentage)
 {
-	static auto Func = Class->GetFunction("WinterQuestPresentScreen_C", "OnUpdateShakeRecharge");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestPresentScreen_C_OnUpdateShakeRecharge_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestPresentScreen_C", "OnUpdateShakeRecharge");
+
+	Params::UWinterQuestPresentScreen_C_OnUpdateShakeRecharge_Params Parms{};
 
 	Parms.InPercentage = InPercentage;
 
@@ -161,9 +204,12 @@ void UWinterQuestPresentScreen_C::OnUpdateShakeRecharge(float InPercentage)
 
 void UWinterQuestPresentScreen_C::ExecuteUbergraph_WinterQuestPresentScreen(int32 EntryPoint, enum class ECommonInputType Temp_byte_Variable, class UWinterQuest_ShakePrompt_C* K2Node_DynamicCast_AsWinter_Quest_Shake_Prompt, bool K2Node_DynamicCast_bSuccess, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility Temp_byte_Variable_4, enum class ECommonPlatformType K2Node_Event_PlatformType, class UWinterQuest_OpenPrompt_C* K2Node_DynamicCast_AsWinter_Quest_Open_Prompt, bool K2Node_DynamicCast_bSuccess_1, bool K2Node_SwitchEnum_CmpSuccess, enum class ECommonInputType K2Node_Event_NewMethod, float K2Node_Event_InPercentage_1, enum class ESlateVisibility K2Node_Select_Default, class UWinterQuest_ShakePrompt_C* K2Node_DynamicCast_AsWinter_Quest_Shake_Prompt_1, bool K2Node_DynamicCast_bSuccess_2, class UWinterQuest_OpenPrompt_C* K2Node_DynamicCast_AsWinter_Quest_Open_Prompt_1, bool K2Node_DynamicCast_bSuccess_3, float K2Node_Event_InPercentage)
 {
-	static auto Func = Class->GetFunction("WinterQuestPresentScreen_C", "ExecuteUbergraph_WinterQuestPresentScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestPresentScreen_C", "ExecuteUbergraph_WinterQuestPresentScreen");
+
+	Params::UWinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -192,6 +238,4 @@ void UWinterQuestPresentScreen_C::ExecuteUbergraph_WinterQuestPresentScreen(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

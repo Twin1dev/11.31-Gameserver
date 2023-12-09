@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass Athena_Mustache_LockOnWidget.Athena_Mustache_LockOnWidget_C
+// (None)
+
+class UClass* UAthena_Mustache_LockOnWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Athena_Mustache_LockOnWidget_C");
+
+	return Clss;
+}
+
+
+// Athena_Mustache_LockOnWidget_C Athena_Mustache_LockOnWidget.Default__Athena_Mustache_LockOnWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthena_Mustache_LockOnWidget_C* UAthena_Mustache_LockOnWidget_C::GetDefaultObj()
+{
+	static class UAthena_Mustache_LockOnWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthena_Mustache_LockOnWidget_C*>(UAthena_Mustache_LockOnWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Athena_Mustache_LockOnWidget.Athena_Mustache_LockOnWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UAthena_Mustache_LockOnWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("Athena_Mustache_LockOnWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Mustache_LockOnWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Mustache_LockOnWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UAthena_Mustache_LockOnWidget_C::Construct()
 
 void UAthena_Mustache_LockOnWidget_C::MoveUI()
 {
-	static auto Func = Class->GetFunction("Athena_Mustache_LockOnWidget_C", "MoveUI");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Mustache_LockOnWidget_C_MoveUI_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Mustache_LockOnWidget_C", "MoveUI");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UAthena_Mustache_LockOnWidget_C::MoveUI()
 
 void UAthena_Mustache_LockOnWidget_C::Destruct()
 {
-	static auto Func = Class->GetFunction("Athena_Mustache_LockOnWidget_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Mustache_LockOnWidget_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Mustache_LockOnWidget_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void UAthena_Mustache_LockOnWidget_C::Destruct()
 
 void UAthena_Mustache_LockOnWidget_C::WidgetAnimationEvt_Scale_K2Node_WidgetAnimationEvent_0()
 {
-	static auto Func = Class->GetFunction("Athena_Mustache_LockOnWidget_C", "WidgetAnimationEvt_Scale_K2Node_WidgetAnimationEvent_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Mustache_LockOnWidget_C_WidgetAnimationEvt_Scale_K2Node_WidgetAnimationEvent_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Mustache_LockOnWidget_C", "WidgetAnimationEvt_Scale_K2Node_WidgetAnimationEvent_0");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -102,9 +135,12 @@ void UAthena_Mustache_LockOnWidget_C::WidgetAnimationEvt_Scale_K2Node_WidgetAnim
 
 void UAthena_Mustache_LockOnWidget_C::ExecuteUbergraph_Athena_Mustache_LockOnWidget(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_IsValid_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FVector2D& CallFunc_GetViewportSize_ReturnValue, const struct FVector2D& CallFunc_Subtract_Vector2DVector2D_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, const struct FVector2D& CallFunc_Multiply_Vector2DFloat_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, float CallFunc_BroadcastPlayerImpactAtLocation_Loudness, float CallFunc_BroadcastPlayerImpactAtLocation_Duration, bool CallFunc_BroadcastPlayerImpactAtLocation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Athena_Mustache_LockOnWidget_C", "ExecuteUbergraph_Athena_Mustache_LockOnWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Mustache_LockOnWidget_C_ExecuteUbergraph_Athena_Mustache_LockOnWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Mustache_LockOnWidget_C", "ExecuteUbergraph_Athena_Mustache_LockOnWidget");
+
+	Params::UAthena_Mustache_LockOnWidget_C_ExecuteUbergraph_Athena_Mustache_LockOnWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -130,6 +166,4 @@ void UAthena_Mustache_LockOnWidget_C::ExecuteUbergraph_Athena_Mustache_LockOnWid
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

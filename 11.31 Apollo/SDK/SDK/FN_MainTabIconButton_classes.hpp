@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -30,18 +27,15 @@ public:
 	class FText                                  ButtonText;                                        // 0xBC0(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	struct FSlateBrush                           IconBrush;                                         // 0xBD8(0x88)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                         UseText;                                           // 0xC60(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5680[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_53B1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          SelectedIconTint;                                  // 0xC64(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          DeselectedIconTint;                                // 0xC74(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          HoveredIconTint;                                   // 0xC84(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bBangEnabled;                                      // 0xC94(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         AllowStyleChange;                                  // 0xC95(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MainTabIconButton_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMainTabIconButton_C* GetDefaultObj();
 
 	void SetBangType(enum class EFortBangType NewBangType);
 	void StopTabCallout(class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue);
@@ -74,6 +68,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

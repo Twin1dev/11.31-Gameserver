@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -24,11 +21,8 @@ public:
 	class USafeZone*                             SafeZone_0;                                        // 0x490(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USocialPanel_TopBarExtension_C*        SocialPanel_TopBarExtension;                       // 0x498(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialPanel_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialPanel_C* GetDefaultObj();
 
 	void Play_Panel_Animation_Sound(bool CallFunc_IsAnimationPlaying_ReturnValue);
 	void ClosePanelAfterAnimation();
@@ -44,6 +38,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TT_Ninja_SwordHitsHeal.TT_Ninja_SwordHitsHeal_C
+// (None)
+
+class UClass* UTT_Ninja_SwordHitsHeal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TT_Ninja_SwordHitsHeal_C");
+
+	return Clss;
+}
+
+
+// TT_Ninja_SwordHitsHeal_C TT_Ninja_SwordHitsHeal.Default__TT_Ninja_SwordHitsHeal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTT_Ninja_SwordHitsHeal_C* UTT_Ninja_SwordHitsHeal_C::GetDefaultObj()
+{
+	static class UTT_Ninja_SwordHitsHeal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTT_Ninja_SwordHitsHeal_C*>(UTT_Ninja_SwordHitsHeal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function TT_Ninja_SwordHitsHeal.TT_Ninja_SwordHitsHeal_C.GetTextForTokenFromAbilityInstanceInternal
@@ -30,13 +55,16 @@ namespace SDK
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Round_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_FloatToText_ReturnValue                            ()
+// class FText                        CallFunc_Conv_FloatToText_ReturnValue                            (None)
 
 bool UTT_Ninja_SwordHitsHeal_C::GetTextForTokenFromAbilityInstanceInternal(class UGameplayAbility* AbilityInstance, struct FGameplayTag& Tag, class UFortTooltipContext* Context, struct FGameplayTag& Token, class FText* OutText, bool GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess, class UGA_Ninja_SwordHitsHeal_C* K2Node_DynamicCast_AsGA_Ninja_Sword_Hits_Heal, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_Round_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, class FText CallFunc_Conv_FloatToText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TT_Ninja_SwordHitsHeal_C", "GetTextForTokenFromAbilityInstanceInternal");
+	static class UFunction* Func = nullptr;
 
-	Params::UTT_Ninja_SwordHitsHeal_C_GetTextForTokenFromAbilityInstanceInternal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TT_Ninja_SwordHitsHeal_C", "GetTextForTokenFromAbilityInstanceInternal");
+
+	Params::UTT_Ninja_SwordHitsHeal_C_GetTextForTokenFromAbilityInstanceInternal_Params Parms{};
 
 	Parms.AbilityInstance = AbilityInstance;
 	Parms.Tag = Tag;
@@ -70,9 +98,12 @@ bool UTT_Ninja_SwordHitsHeal_C::GetTextForTokenFromAbilityInstanceInternal(class
 
 void UTT_Ninja_SwordHitsHeal_C::InitializeAbilityInstanceInternal(class UGameplayAbility* AbilityInstance, class UFortTooltipContext* Context, class UGA_Ninja_SwordHitsHeal_C* K2Node_DynamicCast_AsGA_Ninja_Sword_Hits_Heal, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("TT_Ninja_SwordHitsHeal_C", "InitializeAbilityInstanceInternal");
+	static class UFunction* Func = nullptr;
 
-	Params::UTT_Ninja_SwordHitsHeal_C_InitializeAbilityInstanceInternal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TT_Ninja_SwordHitsHeal_C", "InitializeAbilityInstanceInternal");
+
+	Params::UTT_Ninja_SwordHitsHeal_C_InitializeAbilityInstanceInternal_Params Parms{};
 
 	Parms.AbilityInstance = AbilityInstance;
 	Parms.Context = Context;
@@ -85,6 +116,4 @@ void UTT_Ninja_SwordHitsHeal_C::InitializeAbilityInstanceInternal(class UGamepla
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

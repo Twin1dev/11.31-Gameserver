@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -39,11 +36,8 @@ public:
 	class UImage*                                SqrActivities2;                                    // 0x330(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAudioComponent*                       Winner_Animation_Sound;                            // 0x338(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ComOptionReveal_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UComOptionReveal_C* GetDefaultObj();
 
 	void BP_OnItemExpansionChanged(bool bIsExpanded);
 	void BP_OnItemSelectionChanged(bool bIsSelected);
@@ -58,6 +52,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

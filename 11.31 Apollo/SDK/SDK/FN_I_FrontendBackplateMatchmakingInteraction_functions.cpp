@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass I_FrontendBackplateMatchmakingInteraction.I_FrontendBackplateMatchmakingInteraction_C
+// (None)
+
+class UClass* II_FrontendBackplateMatchmakingInteraction_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("I_FrontendBackplateMatchmakingInteraction_C");
+
+	return Clss;
+}
+
+
+// I_FrontendBackplateMatchmakingInteraction_C I_FrontendBackplateMatchmakingInteraction.Default__I_FrontendBackplateMatchmakingInteraction_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class II_FrontendBackplateMatchmakingInteraction_C* II_FrontendBackplateMatchmakingInteraction_C::GetDefaultObj()
+{
+	static class II_FrontendBackplateMatchmakingInteraction_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<II_FrontendBackplateMatchmakingInteraction_C*>(II_FrontendBackplateMatchmakingInteraction_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function I_FrontendBackplateMatchmakingInteraction.I_FrontendBackplateMatchmakingInteraction_C.MatchmakingEnded
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void II_FrontendBackplateMatchmakingInteraction_C::MatchmakingEnded(bool bWasSuccess)
 {
-	static auto Func = Class->GetFunction("I_FrontendBackplateMatchmakingInteraction_C", "MatchmakingEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::II_FrontendBackplateMatchmakingInteraction_C_MatchmakingEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("I_FrontendBackplateMatchmakingInteraction_C", "MatchmakingEnded");
+
+	Params::II_FrontendBackplateMatchmakingInteraction_C_MatchmakingEnded_Params Parms{};
 
 	Parms.bWasSuccess = bWasSuccess;
 
@@ -40,9 +68,12 @@ void II_FrontendBackplateMatchmakingInteraction_C::MatchmakingEnded(bool bWasSuc
 
 void II_FrontendBackplateMatchmakingInteraction_C::HasMatcmakingInteraction(bool* HasInteraction)
 {
-	static auto Func = Class->GetFunction("I_FrontendBackplateMatchmakingInteraction_C", "HasMatcmakingInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::II_FrontendBackplateMatchmakingInteraction_C_HasMatcmakingInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("I_FrontendBackplateMatchmakingInteraction_C", "HasMatcmakingInteraction");
+
+	Params::II_FrontendBackplateMatchmakingInteraction_C_HasMatcmakingInteraction_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -59,17 +90,17 @@ void II_FrontendBackplateMatchmakingInteraction_C::HasMatcmakingInteraction(bool
 
 void II_FrontendBackplateMatchmakingInteraction_C::EnteringMatchmaking()
 {
-	static auto Func = Class->GetFunction("I_FrontendBackplateMatchmakingInteraction_C", "EnteringMatchmaking");
+	static class UFunction* Func = nullptr;
 
-	Params::II_FrontendBackplateMatchmakingInteraction_C_EnteringMatchmaking_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("I_FrontendBackplateMatchmakingInteraction_C", "EnteringMatchmaking");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

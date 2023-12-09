@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCL_SpookyMist_Wobble.GCL_SpookyMist_Wobble_C
+// (Actor)
+
+class UClass* AGCL_SpookyMist_Wobble_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCL_SpookyMist_Wobble_C");
+
+	return Clss;
+}
+
+
+// GCL_SpookyMist_Wobble_C GCL_SpookyMist_Wobble.Default__GCL_SpookyMist_Wobble_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCL_SpookyMist_Wobble_C* AGCL_SpookyMist_Wobble_C::GetDefaultObj()
+{
+	static class AGCL_SpookyMist_Wobble_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCL_SpookyMist_Wobble_C*>(AGCL_SpookyMist_Wobble_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCL_SpookyMist_Wobble.GCL_SpookyMist_Wobble_C.WhileActive
@@ -26,9 +51,12 @@ namespace SDK
 
 bool AGCL_SpookyMist_Wobble_C::WhileActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GCL_SpookyMist_Wobble_C", "WhileActive");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_SpookyMist_Wobble_C_WhileActive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_SpookyMist_Wobble_C", "WhileActive");
+
+	Params::AGCL_SpookyMist_Wobble_C_WhileActive_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -56,9 +84,12 @@ bool AGCL_SpookyMist_Wobble_C::WhileActive(class AActor* MyTarget, struct FGamep
 
 bool AGCL_SpookyMist_Wobble_C::OnActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, class AActor* PlayerPawn, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCL_SpookyMist_Wobble_C", "OnActive");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_SpookyMist_Wobble_C_OnActive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_SpookyMist_Wobble_C", "OnActive");
+
+	Params::AGCL_SpookyMist_Wobble_C_OnActive_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -85,9 +116,12 @@ bool AGCL_SpookyMist_Wobble_C::OnActive(class AActor* MyTarget, struct FGameplay
 
 bool AGCL_SpookyMist_Wobble_C::OnRemove(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCL_SpookyMist_Wobble_C", "OnRemove");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_SpookyMist_Wobble_C_OnRemove_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_SpookyMist_Wobble_C", "OnRemove");
+
+	Params::AGCL_SpookyMist_Wobble_C_OnRemove_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -106,12 +140,14 @@ bool AGCL_SpookyMist_Wobble_C::OnRemove(class AActor* MyTarget, struct FGameplay
 
 void AGCL_SpookyMist_Wobble_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("GCL_SpookyMist_Wobble_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_SpookyMist_Wobble_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_SpookyMist_Wobble_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -122,12 +158,14 @@ void AGCL_SpookyMist_Wobble_C::ReceiveBeginPlay()
 
 void AGCL_SpookyMist_Wobble_C::WiggleActors()
 {
-	static auto Func = Class->GetFunction("GCL_SpookyMist_Wobble_C", "WiggleActors");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_SpookyMist_Wobble_C_WiggleActors_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_SpookyMist_Wobble_C", "WiggleActors");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -158,9 +196,12 @@ void AGCL_SpookyMist_Wobble_C::WiggleActors()
 
 void AGCL_SpookyMist_Wobble_C::ExecuteUbergraph_GCL_SpookyMist_Wobble(int32 EntryPoint, int32 Temp_int_Array_Index_Variable, TArray<class AActor*>& Temp_object_Variable, bool CallFunc_IsValid_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, int32 Temp_int_Loop_Counter_Variable, float CallFunc_GetTimeSeconds_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, TArray<class AActor*>& CallFunc_SphereOverlapActors_OutActors, bool CallFunc_SphereOverlapActors_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class AActor* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, class ABuildingSMActor* K2Node_DynamicCast_AsBuilding_SMActor, bool K2Node_DynamicCast_bSuccess, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2, const struct FRotator& CallFunc_FindLookAtRotation_ReturnValue, const struct FVector& CallFunc_Conv_RotatorToVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCL_SpookyMist_Wobble_C", "ExecuteUbergraph_GCL_SpookyMist_Wobble");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_SpookyMist_Wobble_C_ExecuteUbergraph_GCL_SpookyMist_Wobble_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_SpookyMist_Wobble_C", "ExecuteUbergraph_GCL_SpookyMist_Wobble");
+
+	Params::AGCL_SpookyMist_Wobble_C_ExecuteUbergraph_GCL_SpookyMist_Wobble_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -189,6 +230,4 @@ void AGCL_SpookyMist_Wobble_C::ExecuteUbergraph_GCL_SpookyMist_Wobble(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

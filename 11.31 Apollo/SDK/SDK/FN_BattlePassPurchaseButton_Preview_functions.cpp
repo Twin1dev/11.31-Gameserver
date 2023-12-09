@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass BattlePassPurchaseButton_Preview.BattlePassPurchaseButton_Preview_C
+// (None)
+
+class UClass* UBattlePassPurchaseButton_Preview_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BattlePassPurchaseButton_Preview_C");
+
+	return Clss;
+}
+
+
+// BattlePassPurchaseButton_Preview_C BattlePassPurchaseButton_Preview.Default__BattlePassPurchaseButton_Preview_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBattlePassPurchaseButton_Preview_C* UBattlePassPurchaseButton_Preview_C::GetDefaultObj()
+{
+	static class UBattlePassPurchaseButton_Preview_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBattlePassPurchaseButton_Preview_C*>(UBattlePassPurchaseButton_Preview_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BattlePassPurchaseButton_Preview.BattlePassPurchaseButton_Preview_C.OnSetData
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UBattlePassPurchaseButton_Preview_C::OnSetData(enum class EBattlePassPurchaseButtonLayout LayoutType)
 {
-	static auto Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "OnSetData");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPurchaseButton_Preview_C_OnSetData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "OnSetData");
+
+	Params::UBattlePassPurchaseButton_Preview_C_OnSetData_Params Parms{};
 
 	Parms.LayoutType = LayoutType;
 
@@ -39,12 +67,14 @@ void UBattlePassPurchaseButton_Preview_C::OnSetData(enum class EBattlePassPurcha
 
 void UBattlePassPurchaseButton_Preview_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPurchaseButton_Preview_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void UBattlePassPurchaseButton_Preview_C::BP_OnHovered()
 
 void UBattlePassPurchaseButton_Preview_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPurchaseButton_Preview_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -72,9 +104,12 @@ void UBattlePassPurchaseButton_Preview_C::BP_OnUnhovered()
 
 void UBattlePassPurchaseButton_Preview_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPurchaseButton_Preview_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "PreConstruct");
+
+	Params::UBattlePassPurchaseButton_Preview_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -101,9 +136,12 @@ void UBattlePassPurchaseButton_Preview_C::PreConstruct(bool IsDesignTime)
 
 void UBattlePassPurchaseButton_Preview_C::ExecuteUbergraph_BattlePassPurchaseButton_Preview(int32 EntryPoint, enum class EBattlePassPurchaseButtonLayout K2Node_Event_LayoutType, bool K2Node_SwitchEnum_CmpSuccess, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_1, bool K2Node_Event_IsDesignTime, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_2, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_3, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_4, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "ExecuteUbergraph_BattlePassPurchaseButton_Preview");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPurchaseButton_Preview_C_ExecuteUbergraph_BattlePassPurchaseButton_Preview_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPurchaseButton_Preview_C", "ExecuteUbergraph_BattlePassPurchaseButton_Preview");
+
+	Params::UBattlePassPurchaseButton_Preview_C_ExecuteUbergraph_BattlePassPurchaseButton_Preview_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_LayoutType = K2Node_Event_LayoutType;
@@ -124,6 +162,4 @@ void UBattlePassPurchaseButton_Preview_C::ExecuteUbergraph_BattlePassPurchaseBut
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

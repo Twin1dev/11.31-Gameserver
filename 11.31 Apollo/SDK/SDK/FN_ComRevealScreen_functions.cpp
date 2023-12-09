@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ComRevealScreen.ComRevealScreen_C
+// (None)
+
+class UClass* UComRevealScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ComRevealScreen_C");
+
+	return Clss;
+}
+
+
+// ComRevealScreen_C ComRevealScreen.Default__ComRevealScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UComRevealScreen_C* UComRevealScreen_C::GetDefaultObj()
+{
+	static class UComRevealScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UComRevealScreen_C*>(UComRevealScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ComRevealScreen.ComRevealScreen_C.StartFinalAnimation
 // (Event, Public, BlueprintEvent)
 // Parameters:
 
 void UComRevealScreen_C::StartFinalAnimation()
 {
-	static auto Func = Class->GetFunction("ComRevealScreen_C", "StartFinalAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UComRevealScreen_C_StartFinalAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComRevealScreen_C", "StartFinalAnimation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UComRevealScreen_C::StartFinalAnimation()
 
 void UComRevealScreen_C::StartFadeOutScreen(float Delay)
 {
-	static auto Func = Class->GetFunction("ComRevealScreen_C", "StartFadeOutScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UComRevealScreen_C_StartFadeOutScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComRevealScreen_C", "StartFadeOutScreen");
+
+	Params::UComRevealScreen_C_StartFadeOutScreen_Params Parms{};
 
 	Parms.Delay = Delay;
 
@@ -55,12 +85,14 @@ void UComRevealScreen_C::StartFadeOutScreen(float Delay)
 
 void UComRevealScreen_C::StartFadeInAnimation()
 {
-	static auto Func = Class->GetFunction("ComRevealScreen_C", "StartFadeInAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UComRevealScreen_C_StartFadeInAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComRevealScreen_C", "StartFadeInAnimation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -78,9 +110,12 @@ void UComRevealScreen_C::StartFadeInAnimation()
 
 void UComRevealScreen_C::ExecuteUbergraph_ComRevealScreen(int32 EntryPoint, float K2Node_Event_Delay, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("ComRevealScreen_C", "ExecuteUbergraph_ComRevealScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UComRevealScreen_C_ExecuteUbergraph_ComRevealScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComRevealScreen_C", "ExecuteUbergraph_ComRevealScreen");
+
+	Params::UComRevealScreen_C_ExecuteUbergraph_ComRevealScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_Delay = K2Node_Event_Delay;
@@ -96,6 +131,4 @@ void UComRevealScreen_C::ExecuteUbergraph_ComRevealScreen(int32 EntryPoint, floa
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

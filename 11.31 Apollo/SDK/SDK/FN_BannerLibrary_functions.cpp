@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BannerLibrary.BannerLibrary_C
+// (None)
+
+class UClass* UBannerLibrary_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BannerLibrary_C");
+
+	return Clss;
+}
+
+
+// BannerLibrary_C BannerLibrary.Default__BannerLibrary_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBannerLibrary_C* UBannerLibrary_C::GetDefaultObj()
+{
+	static class UBannerLibrary_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBannerLibrary_C*>(UBannerLibrary_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BannerLibrary.BannerLibrary_C.UpdateBannerIconOnMaterial
@@ -24,9 +49,12 @@ namespace SDK
 
 void UBannerLibrary_C::UpdateBannerIconOnMaterial(class UMaterialInstanceDynamic* Material, class UTexture* Icon, class UObject* __WorldContext)
 {
-	static auto Func = Class->GetFunction("BannerLibrary_C", "UpdateBannerIconOnMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::UBannerLibrary_C_UpdateBannerIconOnMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BannerLibrary_C", "UpdateBannerIconOnMaterial");
+
+	Params::UBannerLibrary_C_UpdateBannerIconOnMaterial_Params Parms{};
 
 	Parms.Material = Material;
 	Parms.Icon = Icon;
@@ -47,9 +75,12 @@ void UBannerLibrary_C::UpdateBannerIconOnMaterial(class UMaterialInstanceDynamic
 
 void UBannerLibrary_C::UpdateBannerColorOnMaterial(class UMaterialInstanceDynamic* Material, const struct FLinearColor& PrimaryBGColor, const struct FLinearColor& SecondaryBGColor, class UObject* __WorldContext)
 {
-	static auto Func = Class->GetFunction("BannerLibrary_C", "UpdateBannerColorOnMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::UBannerLibrary_C_UpdateBannerColorOnMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BannerLibrary_C", "UpdateBannerColorOnMaterial");
+
+	Params::UBannerLibrary_C_UpdateBannerColorOnMaterial_Params Parms{};
 
 	Parms.Material = Material;
 	Parms.PrimaryBGColor = PrimaryBGColor;
@@ -73,9 +104,12 @@ void UBannerLibrary_C::UpdateBannerColorOnMaterial(class UMaterialInstanceDynami
 
 void UBannerLibrary_C::GenericUpdateMaterial(class UMaterialInstanceDynamic* Target, class UTexture* BannerIcon, const struct FLinearColor& BG_PrimaryColor, const struct FLinearColor& BG_SecondaryColor, class UTexture* ShapeIcon, class UObject* __WorldContext)
 {
-	static auto Func = Class->GetFunction("BannerLibrary_C", "GenericUpdateMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::UBannerLibrary_C_GenericUpdateMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BannerLibrary_C", "GenericUpdateMaterial");
+
+	Params::UBannerLibrary_C_GenericUpdateMaterial_Params Parms{};
 
 	Parms.Target = Target;
 	Parms.BannerIcon = BannerIcon;
@@ -90,6 +124,4 @@ void UBannerLibrary_C::GenericUpdateMaterial(class UMaterialInstanceDynamic* Tar
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

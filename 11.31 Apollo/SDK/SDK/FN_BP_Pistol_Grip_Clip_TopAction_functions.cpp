@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass BP_Pistol_Grip_Clip_TopAction.BP_Pistol_Grip_Clip_TopAction_C
+// (None)
+
+class UClass* UBP_Pistol_Grip_Clip_TopAction_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_Pistol_Grip_Clip_TopAction_C");
+
+	return Clss;
+}
+
+
+// BP_Pistol_Grip_Clip_TopAction_C BP_Pistol_Grip_Clip_TopAction.Default__BP_Pistol_Grip_Clip_TopAction_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBP_Pistol_Grip_Clip_TopAction_C* UBP_Pistol_Grip_Clip_TopAction_C::GetDefaultObj()
+{
+	static class UBP_Pistol_Grip_Clip_TopAction_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBP_Pistol_Grip_Clip_TopAction_C*>(UBP_Pistol_Grip_Clip_TopAction_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_Pistol_Grip_Clip_TopAction.BP_Pistol_Grip_Clip_TopAction_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void UBP_Pistol_Grip_Clip_TopAction_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("BP_Pistol_Grip_Clip_TopAction_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_Pistol_Grip_Clip_TopAction_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Pistol_Grip_Clip_TopAction_C", "AnimGraph");
+
+	Params::UBP_Pistol_Grip_Clip_TopAction_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -42,9 +70,12 @@ void UBP_Pistol_Grip_Clip_TopAction_C::AnimGraph(struct FPoseLink* AnimGraph)
 
 void UBP_Pistol_Grip_Clip_TopAction_C::ExecuteUbergraph_BP_Pistol_Grip_Clip_TopAction(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("BP_Pistol_Grip_Clip_TopAction_C", "ExecuteUbergraph_BP_Pistol_Grip_Clip_TopAction");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_Pistol_Grip_Clip_TopAction_C_ExecuteUbergraph_BP_Pistol_Grip_Clip_TopAction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Pistol_Grip_Clip_TopAction_C", "ExecuteUbergraph_BP_Pistol_Grip_Clip_TopAction");
+
+	Params::UBP_Pistol_Grip_Clip_TopAction_C_ExecuteUbergraph_BP_Pistol_Grip_Clip_TopAction_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -54,6 +85,4 @@ void UBP_Pistol_Grip_Clip_TopAction_C::ExecuteUbergraph_BP_Pistol_Grip_Clip_TopA
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

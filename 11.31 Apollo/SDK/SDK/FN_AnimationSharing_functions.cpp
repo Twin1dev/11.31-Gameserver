@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class AnimationSharing.AnimSharingStateInstance
+// (None)
+
+class UClass* UAnimSharingStateInstance::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AnimSharingStateInstance");
+
+	return Clss;
+}
+
+
+// AnimSharingStateInstance AnimationSharing.Default__AnimSharingStateInstance
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UAnimSharingStateInstance* UAnimSharingStateInstance::GetDefaultObj()
+{
+	static class UAnimSharingStateInstance* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAnimSharingStateInstance*>(UAnimSharingStateInstance::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AnimationSharing.AnimSharingStateInstance.GetInstancedActors
 // (Final, Native, Protected, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -22,22 +47,137 @@ namespace SDK
 
 void UAnimSharingStateInstance::GetInstancedActors(TArray<class AActor*>* Actors)
 {
-	static auto Func = Class->GetFunction("AnimSharingStateInstance", "GetInstancedActors");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimSharingStateInstance_GetInstancedActors_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimSharingStateInstance", "GetInstancedActors");
+
+	Params::UAnimSharingStateInstance_GetInstancedActors_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Actors != nullptr)
-		*Actors = Parms.Actors;
+		*Actors = std::move(Parms.Actors);
 
+}
+
+
+// Class AnimationSharing.AnimSharingTransitionInstance
+// (None)
+
+class UClass* UAnimSharingTransitionInstance::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AnimSharingTransitionInstance");
+
+	return Clss;
+}
+
+
+// AnimSharingTransitionInstance AnimationSharing.Default__AnimSharingTransitionInstance
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UAnimSharingTransitionInstance* UAnimSharingTransitionInstance::GetDefaultObj()
+{
+	static class UAnimSharingTransitionInstance* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAnimSharingTransitionInstance*>(UAnimSharingTransitionInstance::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class AnimationSharing.AnimSharingAdditiveInstance
+// (None)
+
+class UClass* UAnimSharingAdditiveInstance::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AnimSharingAdditiveInstance");
+
+	return Clss;
+}
+
+
+// AnimSharingAdditiveInstance AnimationSharing.Default__AnimSharingAdditiveInstance
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UAnimSharingAdditiveInstance* UAnimSharingAdditiveInstance::GetDefaultObj()
+{
+	static class UAnimSharingAdditiveInstance* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAnimSharingAdditiveInstance*>(UAnimSharingAdditiveInstance::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class AnimationSharing.AnimSharingInstance
+// (None)
+
+class UClass* UAnimSharingInstance::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AnimSharingInstance");
+
+	return Clss;
+}
+
+
+// AnimSharingInstance AnimationSharing.Default__AnimSharingInstance
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UAnimSharingInstance* UAnimSharingInstance::GetDefaultObj()
+{
+	static class UAnimSharingInstance* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAnimSharingInstance*>(UAnimSharingInstance::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class AnimationSharing.AnimationSharingManager
+// (None)
+
+class UClass* UAnimationSharingManager::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AnimationSharingManager");
+
+	return Clss;
+}
+
+
+// AnimationSharingManager AnimationSharing.Default__AnimationSharingManager
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UAnimationSharingManager* UAnimationSharingManager::GetDefaultObj()
+{
+	static class UAnimationSharingManager* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAnimationSharingManager*>(UAnimationSharingManager::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -49,20 +189,23 @@ void UAnimSharingStateInstance::GetInstancedActors(TArray<class AActor*>* Actors
 
 void UAnimationSharingManager::RegisterActorWithSkeletonBP(class AActor* InActor, class USkeleton* SharingSkeleton)
 {
-	static auto Func = Class->GetFunction("AnimationSharingManager", "RegisterActorWithSkeletonBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimationSharingManager_RegisterActorWithSkeletonBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimationSharingManager", "RegisterActorWithSkeletonBP");
+
+	Params::UAnimationSharingManager_RegisterActorWithSkeletonBP_Params Parms{};
 
 	Parms.InActor = InActor;
 	Parms.SharingSkeleton = SharingSkeleton;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -75,19 +218,22 @@ void UAnimationSharingManager::RegisterActorWithSkeletonBP(class AActor* InActor
 
 class UAnimationSharingManager* UAnimationSharingManager::GetAnimationSharingManager(class UObject* WorldContextObject)
 {
-	static auto Func = Class->GetFunction("AnimationSharingManager", "GetAnimationSharingManager");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimationSharingManager_GetAnimationSharingManager_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimationSharingManager", "GetAnimationSharingManager");
+
+	Params::UAnimationSharingManager_GetAnimationSharingManager_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -103,20 +249,23 @@ class UAnimationSharingManager* UAnimationSharingManager::GetAnimationSharingMan
 
 bool UAnimationSharingManager::CreateAnimationSharingManager(class UObject* WorldContextObject, class UAnimationSharingSetup* Setup)
 {
-	static auto Func = Class->GetFunction("AnimationSharingManager", "CreateAnimationSharingManager");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimationSharingManager_CreateAnimationSharingManager_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimationSharingManager", "CreateAnimationSharingManager");
+
+	Params::UAnimationSharingManager_CreateAnimationSharingManager_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.Setup = Setup;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -130,21 +279,80 @@ bool UAnimationSharingManager::CreateAnimationSharingManager(class UObject* Worl
 
 bool UAnimationSharingManager::AnimationSharingEnabled()
 {
-	static auto Func = Class->GetFunction("AnimationSharingManager", "AnimationSharingEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimationSharingManager_AnimationSharingEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimationSharingManager", "AnimationSharingEnabled");
+
+	Params::UAnimationSharingManager_AnimationSharingEnabled_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class AnimationSharing.AnimationSharingSetup
+// (None)
+
+class UClass* UAnimationSharingSetup::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AnimationSharingSetup");
+
+	return Clss;
+}
+
+
+// AnimationSharingSetup AnimationSharing.Default__AnimationSharingSetup
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UAnimationSharingSetup* UAnimationSharingSetup::GetDefaultObj()
+{
+	static class UAnimationSharingSetup* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAnimationSharingSetup*>(UAnimationSharingSetup::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class AnimationSharing.AnimationSharingStateProcessor
+// (None)
+
+class UClass* UAnimationSharingStateProcessor::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AnimationSharingStateProcessor");
+
+	return Clss;
+}
+
+
+// AnimationSharingStateProcessor AnimationSharing.Default__AnimationSharingStateProcessor
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UAnimationSharingStateProcessor* UAnimationSharingStateProcessor::GetDefaultObj()
+{
+	static class UAnimationSharingStateProcessor* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAnimationSharingStateProcessor*>(UAnimationSharingStateProcessor::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -159,21 +367,24 @@ bool UAnimationSharingManager::AnimationSharingEnabled()
 
 void UAnimationSharingStateProcessor::ProcessActorState(int32* OutState, class AActor* InActor, uint8 CurrentState, uint8 OnDemandState, bool* bShouldProcess)
 {
-	static auto Func = Class->GetFunction("AnimationSharingStateProcessor", "ProcessActorState");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimationSharingStateProcessor_ProcessActorState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimationSharingStateProcessor", "ProcessActorState");
+
+	Params::UAnimationSharingStateProcessor_ProcessActorState_Params Parms{};
 
 	Parms.InActor = InActor;
 	Parms.CurrentState = CurrentState;
 	Parms.OnDemandState = OnDemandState;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (OutState != nullptr)
 		*OutState = Parms.OutState;
@@ -191,18 +402,21 @@ void UAnimationSharingStateProcessor::ProcessActorState(int32* OutState, class A
 
 class UEnum* UAnimationSharingStateProcessor::GetAnimationStateEnum()
 {
-	static auto Func = Class->GetFunction("AnimationSharingStateProcessor", "GetAnimationStateEnum");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimationSharingStateProcessor_GetAnimationStateEnum_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimationSharingStateProcessor", "GetAnimationStateEnum");
+
+	Params::UAnimationSharingStateProcessor_GetAnimationStateEnum_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -210,6 +424,4 @@ class UEnum* UAnimationSharingStateProcessor::GetAnimationStateEnum()
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

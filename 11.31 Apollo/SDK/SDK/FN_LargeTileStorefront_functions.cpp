@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass LargeTileStorefront.LargeTileStorefront_C
+// (None)
+
+class UClass* ULargeTileStorefront_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LargeTileStorefront_C");
+
+	return Clss;
+}
+
+
+// LargeTileStorefront_C LargeTileStorefront.Default__LargeTileStorefront_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULargeTileStorefront_C* ULargeTileStorefront_C::GetDefaultObj()
+{
+	static class ULargeTileStorefront_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULargeTileStorefront_C*>(ULargeTileStorefront_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function LargeTileStorefront.LargeTileStorefront_C.OnSectionEstablished
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ULargeTileStorefront_C::OnSectionEstablished(bool bEmptySection)
 {
-	static auto Func = Class->GetFunction("LargeTileStorefront_C", "OnSectionEstablished");
+	static class UFunction* Func = nullptr;
 
-	Params::ULargeTileStorefront_C_OnSectionEstablished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LargeTileStorefront_C", "OnSectionEstablished");
+
+	Params::ULargeTileStorefront_C_OnSectionEstablished_Params Parms{};
 
 	Parms.bEmptySection = bEmptySection;
 
@@ -43,9 +71,12 @@ void ULargeTileStorefront_C::OnSectionEstablished(bool bEmptySection)
 
 void ULargeTileStorefront_C::ExecuteUbergraph_LargeTileStorefront(int32 EntryPoint, bool K2Node_Event_bEmptySection, bool Temp_bool_Variable, class UWidget* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("LargeTileStorefront_C", "ExecuteUbergraph_LargeTileStorefront");
+	static class UFunction* Func = nullptr;
 
-	Params::ULargeTileStorefront_C_ExecuteUbergraph_LargeTileStorefront_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LargeTileStorefront_C", "ExecuteUbergraph_LargeTileStorefront");
+
+	Params::ULargeTileStorefront_C_ExecuteUbergraph_LargeTileStorefront_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bEmptySection = K2Node_Event_bEmptySection;
@@ -58,6 +89,4 @@ void ULargeTileStorefront_C::ExecuteUbergraph_LargeTileStorefront(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

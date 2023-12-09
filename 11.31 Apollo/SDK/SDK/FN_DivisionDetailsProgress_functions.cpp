@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass DivisionDetailsProgress.DivisionDetailsProgress_C
+// (None)
+
+class UClass* UDivisionDetailsProgress_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DivisionDetailsProgress_C");
+
+	return Clss;
+}
+
+
+// DivisionDetailsProgress_C DivisionDetailsProgress.Default__DivisionDetailsProgress_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UDivisionDetailsProgress_C* UDivisionDetailsProgress_C::GetDefaultObj()
+{
+	static class UDivisionDetailsProgress_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UDivisionDetailsProgress_C*>(UDivisionDetailsProgress_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function DivisionDetailsProgress.DivisionDetailsProgress_C.OnSetInProgress
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UDivisionDetailsProgress_C::OnSetInProgress(float NewPercent, bool bIsInProgress)
 {
-	static auto Func = Class->GetFunction("DivisionDetailsProgress_C", "OnSetInProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::UDivisionDetailsProgress_C_OnSetInProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DivisionDetailsProgress_C", "OnSetInProgress");
+
+	Params::UDivisionDetailsProgress_C_OnSetInProgress_Params Parms{};
 
 	Parms.NewPercent = NewPercent;
 	Parms.bIsInProgress = bIsInProgress;
@@ -48,9 +76,12 @@ void UDivisionDetailsProgress_C::OnSetInProgress(float NewPercent, bool bIsInPro
 
 void UDivisionDetailsProgress_C::ExecuteUbergraph_DivisionDetailsProgress(int32 EntryPoint, float K2Node_Event_NewPercent, bool K2Node_Event_bIsInProgress, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_FClamp_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue)
 {
-	static auto Func = Class->GetFunction("DivisionDetailsProgress_C", "ExecuteUbergraph_DivisionDetailsProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::UDivisionDetailsProgress_C_ExecuteUbergraph_DivisionDetailsProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DivisionDetailsProgress_C", "ExecuteUbergraph_DivisionDetailsProgress");
+
+	Params::UDivisionDetailsProgress_C_ExecuteUbergraph_DivisionDetailsProgress_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_NewPercent = K2Node_Event_NewPercent;
@@ -66,6 +97,4 @@ void UDivisionDetailsProgress_C::ExecuteUbergraph_DivisionDetailsProgress(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

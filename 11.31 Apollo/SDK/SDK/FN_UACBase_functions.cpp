@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class UACBase.UACNetworkComponent
+// (None)
+
+class UClass* UUACNetworkComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UACNetworkComponent");
+
+	return Clss;
+}
+
+
+// UACNetworkComponent UACBase.Default__UACNetworkComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UUACNetworkComponent* UUACNetworkComponent::GetDefaultObj()
+{
+	static class UUACNetworkComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUACNetworkComponent*>(UUACNetworkComponent::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function UACBase.UACNetworkComponent.SendPacketToServer
 // (Net, NetReliable, Native, Event, Protected, NetServer, NetValidate)
 // Parameters:
@@ -23,20 +48,23 @@ namespace SDK
 
 void UUACNetworkComponent::SendPacketToServer(uint8 Type, TArray<uint8>& Packet)
 {
-	static auto Func = Class->GetFunction("UACNetworkComponent", "SendPacketToServer");
+	static class UFunction* Func = nullptr;
 
-	Params::UUACNetworkComponent_SendPacketToServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UACNetworkComponent", "SendPacketToServer");
+
+	Params::UUACNetworkComponent_SendPacketToServer_Params Parms{};
 
 	Parms.Type = Type;
 	Parms.Packet = Packet;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -49,20 +77,23 @@ void UUACNetworkComponent::SendPacketToServer(uint8 Type, TArray<uint8>& Packet)
 
 void UUACNetworkComponent::SendPacketToClient(uint8 Type, TArray<uint8>& Packet)
 {
-	static auto Func = Class->GetFunction("UACNetworkComponent", "SendPacketToClient");
+	static class UFunction* Func = nullptr;
 
-	Params::UUACNetworkComponent_SendPacketToClient_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UACNetworkComponent", "SendPacketToClient");
+
+	Params::UUACNetworkComponent_SendPacketToClient_Params Parms{};
 
 	Parms.Type = Type;
 	Parms.Packet = Packet;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -74,24 +105,25 @@ void UUACNetworkComponent::SendPacketToClient(uint8 Type, TArray<uint8>& Packet)
 
 void UUACNetworkComponent::SendClientHello(uint32 SessionKey)
 {
-	static auto Func = Class->GetFunction("UACNetworkComponent", "SendClientHello");
+	static class UFunction* Func = nullptr;
 
-	Params::UUACNetworkComponent_SendClientHello_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UACNetworkComponent", "SendClientHello");
+
+	Params::UUACNetworkComponent_SendClientHello_Params Parms{};
 
 	Parms.SessionKey = SessionKey;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

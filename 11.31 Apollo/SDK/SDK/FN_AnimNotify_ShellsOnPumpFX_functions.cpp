@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass AnimNotify_ShellsOnPumpFX.AnimNotify_ShellsOnPumpFX_C
+// (None)
+
+class UClass* UAnimNotify_ShellsOnPumpFX_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AnimNotify_ShellsOnPumpFX_C");
+
+	return Clss;
+}
+
+
+// AnimNotify_ShellsOnPumpFX_C AnimNotify_ShellsOnPumpFX.Default__AnimNotify_ShellsOnPumpFX_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAnimNotify_ShellsOnPumpFX_C* UAnimNotify_ShellsOnPumpFX_C::GetDefaultObj()
+{
+	static class UAnimNotify_ShellsOnPumpFX_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAnimNotify_ShellsOnPumpFX_C*>(UAnimNotify_ShellsOnPumpFX_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AnimNotify_ShellsOnPumpFX.AnimNotify_ShellsOnPumpFX_C.Received_Notify
@@ -27,9 +52,12 @@ namespace SDK
 
 bool UAnimNotify_ShellsOnPumpFX_C::Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, class AActor* CallFunc_GetOwner_ReturnValue, class AB_Ranged_Generic_C* K2Node_DynamicCast_AsB_Ranged_Generic, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AnimNotify_ShellsOnPumpFX_C", "Received_Notify");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimNotify_ShellsOnPumpFX_C_Received_Notify_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimNotify_ShellsOnPumpFX_C", "Received_Notify");
+
+	Params::UAnimNotify_ShellsOnPumpFX_C_Received_Notify_Params Parms{};
 
 	Parms.MeshComp = MeshComp;
 	Parms.Animation = Animation;
@@ -45,6 +73,4 @@ bool UAnimNotify_ShellsOnPumpFX_C::Received_Notify(class USkeletalMeshComponent*
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass Prj_Athena_Bucket_Old.Prj_Athena_Bucket_Old_C
+// (Actor)
+
+class UClass* APrj_Athena_Bucket_Old_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Prj_Athena_Bucket_Old_C");
+
+	return Clss;
+}
+
+
+// Prj_Athena_Bucket_Old_C Prj_Athena_Bucket_Old.Default__Prj_Athena_Bucket_Old_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class APrj_Athena_Bucket_Old_C* APrj_Athena_Bucket_Old_C::GetDefaultObj()
+{
+	static class APrj_Athena_Bucket_Old_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APrj_Athena_Bucket_Old_C*>(APrj_Athena_Bucket_Old_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Prj_Athena_Bucket_Old.Prj_Athena_Bucket_Old_C.OnRep_TurnOffFX
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void APrj_Athena_Bucket_Old_C::OnRep_TurnOffFX()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "OnRep_TurnOffFX");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_Bucket_Old_C_OnRep_TurnOffFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "OnRep_TurnOffFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -45,9 +72,12 @@ void APrj_Athena_Bucket_Old_C::OnRep_TurnOffFX()
 
 void APrj_Athena_Bucket_Old_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "ReceiveHit");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_Bucket_Old_C_ReceiveHit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "ReceiveHit");
+
+	Params::APrj_Athena_Bucket_Old_C_ReceiveHit_Params Parms{};
 
 	Parms.MyComp = MyComp;
 	Parms.Other = Other;
@@ -71,9 +101,12 @@ void APrj_Athena_Bucket_Old_C::ReceiveHit(class UPrimitiveComponent* MyComp, cla
 
 void APrj_Athena_Bucket_Old_C::OnExploded(TArray<class AActor*>& HitActors, TArray<struct FHitResult>& HitResults)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "OnExploded");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_Bucket_Old_C_OnExploded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "OnExploded");
+
+	Params::APrj_Athena_Bucket_Old_C_OnExploded_Params Parms{};
 
 	Parms.HitActors = HitActors;
 	Parms.HitResults = HitResults;
@@ -92,9 +125,12 @@ void APrj_Athena_Bucket_Old_C::OnExploded(TArray<class AActor*>& HitActors, TArr
 
 void APrj_Athena_Bucket_Old_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent, bool bIsFirstBody)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_Bucket_Old_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature");
+
+	Params::APrj_Athena_Bucket_Old_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature_Params Parms{};
 
 	Parms.WaterBody = WaterBody;
 	Parms.WaterInteractionComponent = WaterInteractionComponent;
@@ -111,12 +147,14 @@ void APrj_Athena_Bucket_Old_C::BndEvt__WaterInteractionComponent_K2Node_Componen
 
 void APrj_Athena_Bucket_Old_C::PlayHitSound()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "PlayHitSound");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_Bucket_Old_C_PlayHitSound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "PlayHitSound");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -127,12 +165,14 @@ void APrj_Athena_Bucket_Old_C::PlayHitSound()
 
 void APrj_Athena_Bucket_Old_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_Bucket_Old_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -143,12 +183,14 @@ void APrj_Athena_Bucket_Old_C::ReceiveBeginPlay()
 
 void APrj_Athena_Bucket_Old_C::WaterEntered()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "WaterEntered");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_Bucket_Old_C_WaterEntered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "WaterEntered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -207,9 +249,12 @@ void APrj_Athena_Bucket_Old_C::WaterEntered()
 
 void APrj_Athena_Bucket_Old_C::ExecuteUbergraph_Prj_Athena_Bucket_Old(int32 EntryPoint, bool CallFunc_IsServer_ReturnValue, class UPrimitiveComponent* K2Node_Event_MyComp, class AActor* K2Node_Event_Other, class UPrimitiveComponent* K2Node_Event_OtherComp, bool K2Node_Event_bSelfMoved, const struct FVector& K2Node_Event_HitLocation, const struct FVector& K2Node_Event_HitNormal, const struct FVector& K2Node_Event_NormalImpulse, const struct FHitResult& K2Node_Event_Hit, bool Temp_bool_Has_Been_Initd_Variable, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsServer_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable_1, bool Temp_bool_IsClosed_Variable, TArray<class AActor*>& K2Node_Event_HitActors, TArray<struct FHitResult>& K2Node_Event_HitResults, class AFortWaterBodyActor* K2Node_ComponentBoundEvent_WaterBody, class UFortWaterInteractionComponent* K2Node_ComponentBoundEvent_WaterInteractionComponent, bool K2Node_ComponentBoundEvent_bIsFirstBody, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue, class AFortPickup* CallFunc_K2_SpawnPickupInWorld_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2, TArray<enum class EFortTeamAffiliation>& K2Node_MakeArray_Array, uint8 CallFunc_GetActorTeam_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue, bool CallFunc_IsServer_ReturnValue_2, bool Temp_bool_IsClosed_Variable_1)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "ExecuteUbergraph_Prj_Athena_Bucket_Old");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_Bucket_Old_C", "ExecuteUbergraph_Prj_Athena_Bucket_Old");
+
+	Params::APrj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsServer_ReturnValue = CallFunc_IsServer_ReturnValue;
@@ -266,6 +311,4 @@ void APrj_Athena_Bucket_Old_C::ExecuteUbergraph_Prj_Athena_Bucket_Old(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

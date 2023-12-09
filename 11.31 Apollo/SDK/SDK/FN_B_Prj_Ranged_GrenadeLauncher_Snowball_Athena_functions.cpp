@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_Prj_Ranged_GrenadeLauncher_Snowball_Athena.B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C
+// (Actor)
+
+class UClass* AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C");
+
+	return Clss;
+}
+
+
+// B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C B_Prj_Ranged_GrenadeLauncher_Snowball_Athena.Default__B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C* AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::GetDefaultObj()
+{
+	static class AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C*>(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function B_Prj_Ranged_GrenadeLauncher_Snowball_Athena.B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C.SpawnBounceFX
@@ -46,9 +71,12 @@ namespace SDK
 
 void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::SpawnBounceFX(struct FHitResult& Hit, class AActor** HitActor, enum class EPhysicalSurface* SurfaceType, struct FRotator* HitResultRotation, enum class EPhysicalSurface CallFunc_GetFortPhysicalSurface_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, bool K2Node_SwitchEnum_CmpSuccess, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "SpawnBounceFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_SpawnBounceFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "SpawnBounceFX");
+
+	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_SpawnBounceFX_Params Parms{};
 
 	Parms.Hit = Hit;
 	Parms.CallFunc_GetFortPhysicalSurface_ReturnValue = CallFunc_GetFortPhysicalSurface_ReturnValue;
@@ -82,7 +110,7 @@ void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::SpawnBounceFX(struct FHitR
 		*SurfaceType = Parms.SurfaceType;
 
 	if (HitResultRotation != nullptr)
-		*HitResultRotation = Parms.HitResultRotation;
+		*HitResultRotation = std::move(Parms.HitResultRotation);
 
 }
 
@@ -95,9 +123,12 @@ void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::SpawnBounceFX(struct FHitR
 
 void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::UserConstructionScript(const struct FTransform& Temp_struct_Variable, class UParticleSystemComponent* CallFunc_AddComponent_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "UserConstructionScript");
+
+	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_UserConstructionScript_Params Parms{};
 
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.CallFunc_AddComponent_ReturnValue = CallFunc_AddComponent_ReturnValue;
@@ -114,9 +145,12 @@ void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::UserConstructionScript(con
 
 void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::OnStop(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "OnStop");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_OnStop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "OnStop");
+
+	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_OnStop_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -132,9 +166,12 @@ void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::OnStop(struct FHitResult& 
 
 void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::OnBounce(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "OnBounce");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_OnBounce_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "OnBounce");
+
+	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_OnBounce_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -151,9 +188,12 @@ void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::OnBounce(struct FHitResult
 
 void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::OnExploded(TArray<class AActor*>& HitActors, TArray<struct FHitResult>& HitResults)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "OnExploded");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_OnExploded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "OnExploded");
+
+	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_OnExploded_Params Parms{};
 
 	Parms.HitActors = HitActors;
 	Parms.HitResults = HitResults;
@@ -169,12 +209,14 @@ void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::OnExploded(TArray<class AA
 
 void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::DelayBeforeExplode_()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "DelayBeforeExplode_");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_DelayBeforeExplode__Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "DelayBeforeExplode_");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -185,12 +227,14 @@ void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::DelayBeforeExplode_()
 
 void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::FuseTimerMax()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "FuseTimerMax");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_FuseTimerMax_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "FuseTimerMax");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -204,9 +248,12 @@ void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::FuseTimerMax()
 
 void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature(class AFortWaterBodyActor* WaterBody, class UFortWaterInteractionComponent* WaterInteractionComponent, bool bIsFirstBody)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
+
+	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature_Params Parms{};
 
 	Parms.WaterBody = WaterBody;
 	Parms.WaterInteractionComponent = WaterInteractionComponent;
@@ -223,12 +270,14 @@ void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::BndEvt__WaterInteractionCo
 
 void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -247,9 +296,12 @@ void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::ReceiveBeginPlay()
 
 void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "ReceiveHit");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_ReceiveHit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "ReceiveHit");
+
+	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_ReceiveHit_Params Parms{};
 
 	Parms.MyComp = MyComp;
 	Parms.Other = Other;
@@ -320,9 +372,12 @@ void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::ReceiveHit(class UPrimitiv
 
 void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::ExecuteUbergraph_B_Prj_Ranged_GrenadeLauncher_Snowball_Athena(int32 EntryPoint, const struct FHitResult& K2Node_Event_Hit_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, TArray<class AActor*>& K2Node_Event_HitActors, TArray<struct FHitResult>& K2Node_Event_HitResults, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_IsBeingKilled_ReturnValue, bool Temp_bool_Variable, const struct FHitResult& K2Node_Event_Hit_2, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, const struct FRotator& CallFunc_MakeRotFromZ_ReturnValue, const struct FRotator& CallFunc_MakeRotFromX_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_1, class UParticleSystem* K2Node_Select_Default, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_2, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue, bool CallFunc_IsInWater_ReturnValue, class AFortWaterBodyActor* K2Node_ComponentBoundEvent_WaterBody, class UFortWaterInteractionComponent* K2Node_ComponentBoundEvent_WaterInteractionComponent, bool K2Node_ComponentBoundEvent_bIsFirstBody, class UPrimitiveComponent* K2Node_Event_MyComp, class AActor* K2Node_Event_Other, class UPrimitiveComponent* K2Node_Event_OtherComp, bool K2Node_Event_bSelfMoved, const struct FVector& K2Node_Event_HitLocation, const struct FVector& K2Node_Event_HitNormal, const struct FVector& K2Node_Event_NormalImpulse, const struct FHitResult& K2Node_Event_Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "ExecuteUbergraph_B_Prj_Ranged_GrenadeLauncher_Snowball_Athena");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_ExecuteUbergraph_B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C", "ExecuteUbergraph_B_Prj_Ranged_GrenadeLauncher_Snowball_Athena");
+
+	Params::AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C_ExecuteUbergraph_B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_Hit_1 = K2Node_Event_Hit_1;
@@ -380,6 +435,4 @@ void AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::ExecuteUbergraph_B_Prj_Ran
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

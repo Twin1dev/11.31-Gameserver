@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Athena_PlaysetGrenadeWithTrajectory.GA_Athena_PlaysetGrenadeWithTrajectory_C
+// (None)
+
+class UClass* UGA_Athena_PlaysetGrenadeWithTrajectory_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Athena_PlaysetGrenadeWithTrajectory_C");
+
+	return Clss;
+}
+
+
+// GA_Athena_PlaysetGrenadeWithTrajectory_C GA_Athena_PlaysetGrenadeWithTrajectory.Default__GA_Athena_PlaysetGrenadeWithTrajectory_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Athena_PlaysetGrenadeWithTrajectory_C* UGA_Athena_PlaysetGrenadeWithTrajectory_C::GetDefaultObj()
+{
+	static class UGA_Athena_PlaysetGrenadeWithTrajectory_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Athena_PlaysetGrenadeWithTrajectory_C*>(UGA_Athena_PlaysetGrenadeWithTrajectory_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Athena_PlaysetGrenadeWithTrajectory.GA_Athena_PlaysetGrenadeWithTrajectory_C.DestroyProjectileTrajectory
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::DestroyProjectileTrajectory(bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "DestroyProjectileTrajectory");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_DestroyProjectileTrajectory_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "DestroyProjectileTrajectory");
+
+	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_DestroyProjectileTrajectory_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
@@ -54,9 +82,12 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::DestroyProjectileTrajectory(bool
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::CalculateRotation(class UFortPlaysetItemDefinition* Playset, const struct FRotator& Rotation, struct FRotator* NewRotation, const struct FRotator& PlaysetRotation, const struct FRotator& YawOffset, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, bool CallFunc_IsValid_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, float CallFunc_Abs_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue_1, float CallFunc_Abs_ReturnValue_1, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue_2, const struct FRotator& CallFunc_ComposeRotators_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "CalculateRotation");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_CalculateRotation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "CalculateRotation");
+
+	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_CalculateRotation_Params Parms{};
 
 	Parms.Playset = Playset;
 	Parms.Rotation = Rotation;
@@ -76,7 +107,7 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::CalculateRotation(class UFortPla
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (NewRotation != nullptr)
-		*NewRotation = Parms.NewRotation;
+		*NewRotation = std::move(Parms.NewRotation);
 
 }
 
@@ -91,9 +122,12 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::CalculateRotation(class UFortPla
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::SetActivePlaysetOnPlayer(class APlayerController* CallFunc_GetPlayerController_ReturnValue, class UFortPlaysetItemDefinition* CallFunc_GetActivePlaysetData_OutData, class AAthena_PlayerController_C* K2Node_DynamicCast_AsAthena_Player_Controller, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "SetActivePlaysetOnPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_SetActivePlaysetOnPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "SetActivePlaysetOnPlayer");
+
+	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_SetActivePlaysetOnPlayer_Params Parms{};
 
 	Parms.CallFunc_GetPlayerController_ReturnValue = CallFunc_GetPlayerController_ReturnValue;
 	Parms.CallFunc_GetActivePlaysetData_OutData = CallFunc_GetActivePlaysetData_OutData;
@@ -115,9 +149,12 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::SetActivePlaysetOnPlayer(class A
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::SetPlaysetData(class AFortProjectileBase* Projectile_Reference, class UFortPlaysetItemDefinition* CallFunc_GetActivePlaysetData_OutData, class AB_Prj_Athena_PlaysetGrenade_C* K2Node_DynamicCast_AsB_Prj_Athena_Playset_Grenade, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "SetPlaysetData");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_SetPlaysetData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "SetPlaysetData");
+
+	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_SetPlaysetData_Params Parms{};
 
 	Parms.Projectile_Reference = Projectile_Reference;
 	Parms.CallFunc_GetActivePlaysetData_OutData = CallFunc_GetActivePlaysetData_OutData;
@@ -141,9 +178,12 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::SetPlaysetData(class AFortProjec
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::GetActivePlaysetData(class UFortPlaysetItemDefinition** OutData, class APlayerController* CallFunc_GetPlayerController_ReturnValue, class AAthena_PlayerController_C* K2Node_DynamicCast_AsAthena_Player_Controller, bool K2Node_DynamicCast_bSuccess, class UFortPlaysetItemDefinition* CallFunc_GetPlayset_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "GetActivePlaysetData");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_GetActivePlaysetData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "GetActivePlaysetData");
+
+	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_GetActivePlaysetData_Params Parms{};
 
 	Parms.CallFunc_GetPlayerController_ReturnValue = CallFunc_GetPlayerController_ReturnValue;
 	Parms.K2Node_DynamicCast_AsAthena_Player_Controller = K2Node_DynamicCast_AsAthena_Player_Controller;
@@ -178,9 +218,12 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::GetActivePlaysetData(class UFort
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::SetupDummyProjectileRed(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, const struct FTransform& CallFunc_GetTransform_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class AActor* CallFunc_FinishSpawningActor_ReturnValue, class ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C* K2Node_DynamicCast_AsBP_Projectile_Trajectory_Athena_Snap_Box_to_Grid, bool K2Node_DynamicCast_bSuccess, class ABP_ProjectileTrajectory_C* K2Node_DynamicCast_AsBP_Projectile_Trajectory, bool K2Node_DynamicCast_bSuccess_1, class USplineMeshComponent* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "SetupDummyProjectileRed");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_SetupDummyProjectileRed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "SetupDummyProjectileRed");
+
+	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_SetupDummyProjectileRed_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -207,12 +250,14 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::SetupDummyProjectileRed(int32 Te
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::UpdateTrajectorySpline()
 {
-	static auto Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "UpdateTrajectorySpline");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_UpdateTrajectorySpline_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "UpdateTrajectorySpline");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -223,12 +268,14 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::UpdateTrajectorySpline()
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -239,12 +286,14 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::K2_ActivateAbility()
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::CleanupTrajectoryDisplay()
 {
-	static auto Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "CleanupTrajectoryDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_CleanupTrajectoryDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "CleanupTrajectoryDisplay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -257,9 +306,12 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::CleanupTrajectoryDisplay()
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::Server_SpawnProjectile(const struct FVector& Location, const struct FRotator& Direction)
 {
-	static auto Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "Server_SpawnProjectile");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_Server_SpawnProjectile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "Server_SpawnProjectile");
+
+	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_Server_SpawnProjectile_Params Parms{};
 
 	Parms.Location = Location;
 	Parms.Direction = Direction;
@@ -275,12 +327,14 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::Server_SpawnProjectile(const str
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::InitTrajectoryVariables()
 {
-	static auto Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "InitTrajectoryVariables");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_InitTrajectoryVariables_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "InitTrajectoryVariables");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -292,9 +346,12 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::InitTrajectoryVariables()
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::AthenaProjectileSpawned(class AFortProjectileBase* ProjectileReference)
 {
-	static auto Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "AthenaProjectileSpawned");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_AthenaProjectileSpawned_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "AthenaProjectileSpawned");
+
+	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_AthenaProjectileSpawned_Params Parms{};
 
 	Parms.ProjectileReference = ProjectileReference;
 
@@ -309,12 +366,14 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::AthenaProjectileSpawned(class AF
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::OnAbilityInputReleased()
 {
-	static auto Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "OnAbilityInputReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_OnAbilityInputReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "OnAbilityInputReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -372,7 +431,7 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::OnAbilityInputReleased()
 // class AGameStateBase*              CallFunc_GetGameState_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortGameStateAthena*        K2Node_DynamicCast_AsFort_Game_State_Athena                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayTagContainer       CallFunc_GetAthenaPlaylistContextTags_ReturnValue                ()
+// struct FGameplayTagContainer       CallFunc_GetAthenaPlaylistContextTags_ReturnValue                (None)
 // bool                               CallFunc_HasTag_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AFortProjectileBase*         K2Node_Event_ProjectileReference                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortPlaysetItemDefinition*  CallFunc_GetActivePlaysetData_OutData                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -387,9 +446,12 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::OnAbilityInputReleased()
 
 void UGA_Athena_PlaysetGrenadeWithTrajectory_C::ExecuteUbergraph_GA_Athena_PlaysetGrenadeWithTrajectory(int32 EntryPoint, const struct FVector& CallFunc_SpawnLocationAndRotation_OutLoc, const struct FRotator& CallFunc_SpawnLocationAndRotation_OutRot, const struct FVector& CallFunc_Conv_RotatorToVector_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, float CallFunc_CalcGrenadeSpeedFromPitch_GrenadeSpeed, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, float CallFunc_SelectFloat_ReturnValue, float CallFunc_FMax_ReturnValue, const struct FHitResult& CallFunc_CalculateProjectileTrajectorySplineWithHit_OutHitResult, TArray<struct FVector>& CallFunc_CalculateProjectileTrajectorySplineWithHit_OutSplinePoints, TArray<struct FVector>& CallFunc_CalculateProjectileTrajectorySplineWithHit_OutSplineTangents, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_Divide_FloatFloat_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue, int32 CallFunc_Round_ReturnValue, float CallFunc_Multiply_IntFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue_2, int32 CallFunc_Round_ReturnValue_1, int32 CallFunc_Round_ReturnValue_2, float CallFunc_Multiply_IntFloat_ReturnValue_1, float CallFunc_Multiply_IntFloat_ReturnValue_2, const struct FVector& CallFunc_MakeVector_ReturnValue, bool Temp_bool_Variable, const struct FVector& K2Node_Event_Location, const struct FRotator& K2Node_Event_Direction, class AGameStateBase* CallFunc_GetGameState_ReturnValue, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena, bool K2Node_DynamicCast_bSuccess, const struct FGameplayTagContainer& CallFunc_GetAthenaPlaylistContextTags_ReturnValue, bool CallFunc_HasTag_ReturnValue, class AFortProjectileBase* K2Node_Event_ProjectileReference, class UFortPlaysetItemDefinition* CallFunc_GetActivePlaysetData_OutData, const struct FRotator& CallFunc_CalculateRotation_NewRotation, bool CallFunc_CanCreatePlayset_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class ABP_ProjectileTrajectory_C* K2Node_Select_Default, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsServer_ReturnValue, bool Temp_bool_Variable_1, class ABP_ProjectileTrajectory_C* K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "ExecuteUbergraph_GA_Athena_PlaysetGrenadeWithTrajectory");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_PlaysetGrenadeWithTrajectory_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_PlaysetGrenadeWithTrajectory_C", "ExecuteUbergraph_GA_Athena_PlaysetGrenadeWithTrajectory");
+
+	Params::UGA_Athena_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_PlaysetGrenadeWithTrajectory_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_SpawnLocationAndRotation_OutLoc = CallFunc_SpawnLocationAndRotation_OutLoc;
@@ -460,6 +522,4 @@ void UGA_Athena_PlaysetGrenadeWithTrajectory_C::ExecuteUbergraph_GA_Athena_Plays
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

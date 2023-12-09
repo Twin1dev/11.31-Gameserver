@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ButtonStyle-OutlineLargeBacchus.ButtonStyle-OutlineLargeBacchus_C
+// (None)
+
+class UClass* UButtonStyleMinusOutlineLargeBacchus_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ButtonStyle-OutlineLargeBacchus_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ButtonStyle-OutlineLargeBacchus_C ButtonStyle-OutlineLargeBacchus.Default__ButtonStyle-OutlineLargeBacchus_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UButtonStyleMinusOutlineLargeBacchus_C* UButtonStyleMinusOutlineLargeBacchus_C::GetDefaultObj()
+{
+	static class UButtonStyleMinusOutlineLargeBacchus_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UButtonStyleMinusOutlineLargeBacchus_C*>(UButtonStyleMinusOutlineLargeBacchus_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

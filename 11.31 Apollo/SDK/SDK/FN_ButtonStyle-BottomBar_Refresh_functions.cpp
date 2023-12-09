@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ButtonStyle-BottomBar_Refresh.ButtonStyle-BottomBar_Refresh_C
+// (None)
+
+class UClass* UButtonStyleMinusBottomBar_Refresh_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ButtonStyle-BottomBar_Refresh_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ButtonStyle-BottomBar_Refresh_C ButtonStyle-BottomBar_Refresh.Default__ButtonStyle-BottomBar_Refresh_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UButtonStyleMinusBottomBar_Refresh_C* UButtonStyleMinusBottomBar_Refresh_C::GetDefaultObj()
+{
+	static class UButtonStyleMinusBottomBar_Refresh_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UButtonStyleMinusBottomBar_Refresh_C*>(UButtonStyleMinusBottomBar_Refresh_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

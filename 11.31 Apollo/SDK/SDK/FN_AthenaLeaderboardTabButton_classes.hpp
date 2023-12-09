@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -24,17 +21,14 @@ public:
 	class FText                                  ButtonText;                                        // 0xB90(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	struct FSlateBrush                           IconBrush;                                         // 0xBA8(0x88)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                         UseText;                                           // 0xC30(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_446D[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_51DD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FLinearColor                          SelectedIconTint;                                  // 0xC34(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          DeselectedIconTint;                                // 0xC44(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          HoveredIconTint;                                   // 0xC54(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bBangEnabled;                                      // 0xC64(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaLeaderboardTabButton_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaLeaderboardTabButton_C* GetDefaultObj();
 
 	void ShowText();
 	void Set_Icon(const struct FSlateBrush& IconBrush);
@@ -52,6 +46,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

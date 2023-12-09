@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCNL_EdgeOfStorm.GCNL_EdgeOfStorm_C
+// (Actor)
+
+class UClass* AGCNL_EdgeOfStorm_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCNL_EdgeOfStorm_C");
+
+	return Clss;
+}
+
+
+// GCNL_EdgeOfStorm_C GCNL_EdgeOfStorm.Default__GCNL_EdgeOfStorm_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCNL_EdgeOfStorm_C* AGCNL_EdgeOfStorm_C::GetDefaultObj()
+{
+	static class AGCNL_EdgeOfStorm_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCNL_EdgeOfStorm_C*>(AGCNL_EdgeOfStorm_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCNL_EdgeOfStorm.GCNL_EdgeOfStorm_C.OnRemove
@@ -24,9 +49,12 @@ namespace SDK
 
 bool AGCNL_EdgeOfStorm_C::OnRemove(class AActor* MyTarget, struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "OnRemove");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EdgeOfStorm_C_OnRemove_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "OnRemove");
+
+	Params::AGCNL_EdgeOfStorm_C_OnRemove_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -46,11 +74,11 @@ bool AGCNL_EdgeOfStorm_C::OnRemove(class AActor* MyTarget, struct FGameplayCuePa
 // bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 // float                              CallFunc_BreakGameplayCueParameters_NormalizedMagnitude          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakGameplayCueParameters_RawMagnitude                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleCallFunc_BreakGameplayCueParameters_EffectContext                ()
+// struct FGameplayEffectContextHandleCallFunc_BreakGameplayCueParameters_EffectContext                (None)
 // struct FGameplayTag                CallFunc_BreakGameplayCueParameters_MatchedTagName               (NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                CallFunc_BreakGameplayCueParameters_OriginalTag                  (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedSourceTags         ()
-// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedTargetTags         ()
+// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedSourceTags         (None)
+// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedTargetTags         (None)
 // struct FVector                     CallFunc_BreakGameplayCueParameters_Location                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_BreakGameplayCueParameters_Normal                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_BreakGameplayCueParameters_Instigator                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -63,9 +91,12 @@ bool AGCNL_EdgeOfStorm_C::OnRemove(class AActor* MyTarget, struct FGameplayCuePa
 
 bool AGCNL_EdgeOfStorm_C::OnExecute(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, float CallFunc_BreakGameplayCueParameters_NormalizedMagnitude, float CallFunc_BreakGameplayCueParameters_RawMagnitude, const struct FGameplayEffectContextHandle& CallFunc_BreakGameplayCueParameters_EffectContext, const struct FGameplayTag& CallFunc_BreakGameplayCueParameters_MatchedTagName, const struct FGameplayTag& CallFunc_BreakGameplayCueParameters_OriginalTag, const struct FGameplayTagContainer& CallFunc_BreakGameplayCueParameters_AggregatedSourceTags, const struct FGameplayTagContainer& CallFunc_BreakGameplayCueParameters_AggregatedTargetTags, const struct FVector& CallFunc_BreakGameplayCueParameters_Location, const struct FVector& CallFunc_BreakGameplayCueParameters_Normal, class AActor* CallFunc_BreakGameplayCueParameters_Instigator, class AActor* CallFunc_BreakGameplayCueParameters_EffectCauser, class UObject* CallFunc_BreakGameplayCueParameters_SourceObject, class UPhysicalMaterial* CallFunc_BreakGameplayCueParameters_PhysicalMaterial, int32 CallFunc_BreakGameplayCueParameters_GameplayEffectLevel, int32 CallFunc_BreakGameplayCueParameters_AbilityLevel, class USceneComponent* CallFunc_BreakGameplayCueParameters_TargetAttachComponent)
 {
-	static auto Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "OnExecute");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EdgeOfStorm_C_OnExecute_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "OnExecute");
+
+	Params::AGCNL_EdgeOfStorm_C_OnExecute_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -101,11 +132,11 @@ bool AGCNL_EdgeOfStorm_C::OnExecute(class AActor* MyTarget, struct FGameplayCueP
 // bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 // float                              CallFunc_BreakGameplayCueParameters_NormalizedMagnitude          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakGameplayCueParameters_RawMagnitude                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleCallFunc_BreakGameplayCueParameters_EffectContext                ()
+// struct FGameplayEffectContextHandleCallFunc_BreakGameplayCueParameters_EffectContext                (None)
 // struct FGameplayTag                CallFunc_BreakGameplayCueParameters_MatchedTagName               (NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                CallFunc_BreakGameplayCueParameters_OriginalTag                  (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedSourceTags         ()
-// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedTargetTags         ()
+// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedSourceTags         (None)
+// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedTargetTags         (None)
 // struct FVector                     CallFunc_BreakGameplayCueParameters_Location                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_BreakGameplayCueParameters_Normal                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_BreakGameplayCueParameters_Instigator                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -118,9 +149,12 @@ bool AGCNL_EdgeOfStorm_C::OnExecute(class AActor* MyTarget, struct FGameplayCueP
 
 bool AGCNL_EdgeOfStorm_C::OnActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, float CallFunc_BreakGameplayCueParameters_NormalizedMagnitude, float CallFunc_BreakGameplayCueParameters_RawMagnitude, const struct FGameplayEffectContextHandle& CallFunc_BreakGameplayCueParameters_EffectContext, const struct FGameplayTag& CallFunc_BreakGameplayCueParameters_MatchedTagName, const struct FGameplayTag& CallFunc_BreakGameplayCueParameters_OriginalTag, const struct FGameplayTagContainer& CallFunc_BreakGameplayCueParameters_AggregatedSourceTags, const struct FGameplayTagContainer& CallFunc_BreakGameplayCueParameters_AggregatedTargetTags, const struct FVector& CallFunc_BreakGameplayCueParameters_Location, const struct FVector& CallFunc_BreakGameplayCueParameters_Normal, class AActor* CallFunc_BreakGameplayCueParameters_Instigator, class AActor* CallFunc_BreakGameplayCueParameters_EffectCauser, class UObject* CallFunc_BreakGameplayCueParameters_SourceObject, class UPhysicalMaterial* CallFunc_BreakGameplayCueParameters_PhysicalMaterial, int32 CallFunc_BreakGameplayCueParameters_GameplayEffectLevel, int32 CallFunc_BreakGameplayCueParameters_AbilityLevel, class USceneComponent* CallFunc_BreakGameplayCueParameters_TargetAttachComponent)
 {
-	static auto Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "OnActive");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EdgeOfStorm_C_OnActive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "OnActive");
+
+	Params::AGCNL_EdgeOfStorm_C_OnActive_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -155,9 +189,12 @@ bool AGCNL_EdgeOfStorm_C::OnActive(class AActor* MyTarget, struct FGameplayCuePa
 
 void AGCNL_EdgeOfStorm_C::Activated(const struct FVector& EdgeOfStorm)
 {
-	static auto Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "Activated");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EdgeOfStorm_C_Activated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "Activated");
+
+	Params::AGCNL_EdgeOfStorm_C_Activated_Params Parms{};
 
 	Parms.EdgeOfStorm = EdgeOfStorm;
 
@@ -172,12 +209,14 @@ void AGCNL_EdgeOfStorm_C::Activated(const struct FVector& EdgeOfStorm)
 
 void AGCNL_EdgeOfStorm_C::Deactivated()
 {
-	static auto Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "Deactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EdgeOfStorm_C_Deactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "Deactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -193,9 +232,12 @@ void AGCNL_EdgeOfStorm_C::Deactivated()
 
 void AGCNL_EdgeOfStorm_C::ExecuteUbergraph_GCNL_EdgeOfStorm(int32 EntryPoint, bool Temp_bool_Has_Been_Initd_Variable, const struct FVector& K2Node_CustomEvent_EdgeOfStorm, const struct FHitResult& CallFunc_K2_SetWorldLocation_SweepHitResult, bool Temp_bool_IsClosed_Variable)
 {
-	static auto Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "ExecuteUbergraph_GCNL_EdgeOfStorm");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EdgeOfStorm_C_ExecuteUbergraph_GCNL_EdgeOfStorm_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EdgeOfStorm_C", "ExecuteUbergraph_GCNL_EdgeOfStorm");
+
+	Params::AGCNL_EdgeOfStorm_C_ExecuteUbergraph_GCNL_EdgeOfStorm_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Has_Been_Initd_Variable = Temp_bool_Has_Been_Initd_Variable;
@@ -209,6 +251,4 @@ void AGCNL_EdgeOfStorm_C::ExecuteUbergraph_GCNL_EdgeOfStorm(int32 EntryPoint, bo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

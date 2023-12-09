@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,13 +12,6 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
-
-// 0x0 (0x0 - 0x0)
-// Function BP_CozyLodge_GenericSelectable.BP_CozyLodge_GenericSelectable_C.ReceiveBeginPlay
-struct ABP_CozyLodge_GenericSelectable_C_ReceiveBeginPlay_Params
-{
-public:
-};
 
 // 0x4 (0x4 - 0x0)
 // Function BP_CozyLodge_GenericSelectable.BP_CozyLodge_GenericSelectable_C.ExecuteUbergraph_BP_CozyLodge_GenericSelectable
@@ -34,6 +24,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

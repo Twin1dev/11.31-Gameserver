@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class UClothConfigBase : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClothConfigBase");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClothConfigBase* GetDefaultObj();
 
 };
 
@@ -32,11 +26,8 @@ class UClothSharedSimConfigBase : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClothSharedSimConfigBase");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClothSharedSimConfigBase* GetDefaultObj();
 
 };
 
@@ -48,11 +39,8 @@ public:
 	class FString                                ImportedFilePath;                                  // 0x28(0x10)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGuid                                 AssetGuid;                                         // 0x38(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClothingAssetBase");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClothingAssetBase* GetDefaultObj();
 
 };
 
@@ -62,11 +50,8 @@ class UClothingSimulationFactory : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClothingSimulationFactory");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClothingSimulationFactory* GetDefaultObj();
 
 };
 
@@ -75,13 +60,10 @@ public:
 class UClothingSimulationInteractor : public UObject
 {
 public:
-	uint8                                        Pad_4301[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2347[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClothingSimulationInteractor");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClothingSimulationInteractor* GetDefaultObj();
 
 	void PhysicsAssetUpdated();
 	void ClothConfigUpdated();
@@ -100,18 +82,13 @@ public:
 	int32                                        NumFixedVerts;                                     // 0x78(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MaxBoneWeights;                                    // 0x7C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<uint32>                               SelfCollisionIndices;                              // 0x80(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4302[0x50];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2348[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClothPhysicalMeshDataBase");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClothPhysicalMeshDataBase* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BGA_Athena_SCMachine_Pickup.BGA_Athena_SCMachine_Pickup_C
+// (Actor)
+
+class UClass* ABGA_Athena_SCMachine_Pickup_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BGA_Athena_SCMachine_Pickup_C");
+
+	return Clss;
+}
+
+
+// BGA_Athena_SCMachine_Pickup_C BGA_Athena_SCMachine_Pickup.Default__BGA_Athena_SCMachine_Pickup_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABGA_Athena_SCMachine_Pickup_C* ABGA_Athena_SCMachine_Pickup_C::GetDefaultObj()
+{
+	static class ABGA_Athena_SCMachine_Pickup_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABGA_Athena_SCMachine_Pickup_C*>(ABGA_Athena_SCMachine_Pickup_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BGA_Athena_SCMachine_Pickup.BGA_Athena_SCMachine_Pickup_C.ConsiderPositionCorrection
@@ -31,9 +56,12 @@ namespace SDK
 
 void ABGA_Athena_SCMachine_Pickup_C::ConsiderPositionCorrection(bool CallFunc_HasAuthority_ReturnValue, const struct FHitResult& CallFunc_K2_SetActorLocation_SweepHitResult, bool CallFunc_K2_SetActorLocation_ReturnValue, TArray<class AActor*>& K2Node_MakeArray_Array, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FHitResult& CallFunc_LineTraceSingle_OutHit, bool CallFunc_LineTraceSingle_ReturnValue, float CallFunc_Vector_Distance_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "ConsiderPositionCorrection");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "ConsiderPositionCorrection");
+
+	Params::ABGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection_Params Parms{};
 
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 	Parms.CallFunc_K2_SetActorLocation_SweepHitResult = CallFunc_K2_SetActorLocation_SweepHitResult;
@@ -80,9 +108,12 @@ void ABGA_Athena_SCMachine_Pickup_C::ConsiderPositionCorrection(bool CallFunc_Ha
 
 void ABGA_Athena_SCMachine_Pickup_C::DetermineStopLocation(bool CallFunc_HasAuthority_ReturnValue, TArray<class AActor*>& K2Node_MakeArray_Array, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FHitResult& CallFunc_CapsuleTraceSingle_OutHit, bool CallFunc_CapsuleTraceSingle_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "DetermineStopLocation");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_SCMachine_Pickup_C_DetermineStopLocation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "DetermineStopLocation");
+
+	Params::ABGA_Athena_SCMachine_Pickup_C_DetermineStopLocation_Params Parms{};
 
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
@@ -123,9 +154,12 @@ void ABGA_Athena_SCMachine_Pickup_C::DetermineStopLocation(bool CallFunc_HasAuth
 
 bool ABGA_Athena_SCMachine_Pickup_C::ShouldDie(float Damage, class AController* EventInstigator, class AActor* DamageCauser)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "ShouldDie");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_SCMachine_Pickup_C_ShouldDie_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "ShouldDie");
+
+	Params::ABGA_Athena_SCMachine_Pickup_C_ShouldDie_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.EventInstigator = EventInstigator;
@@ -147,9 +181,12 @@ bool ABGA_Athena_SCMachine_Pickup_C::ShouldDie(float Damage, class AController* 
 
 class FText ABGA_Athena_SCMachine_Pickup_C::BlueprintGetInteractionString(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "BlueprintGetInteractionString");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_SCMachine_Pickup_C_BlueprintGetInteractionString_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "BlueprintGetInteractionString");
+
+	Params::ABGA_Athena_SCMachine_Pickup_C_BlueprintGetInteractionString_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -172,9 +209,12 @@ class FText ABGA_Athena_SCMachine_Pickup_C::BlueprintGetInteractionString(class 
 
 bool ABGA_Athena_SCMachine_Pickup_C::BlueprintCanInteract(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted, uint8 CallFunc_GetActorTeam_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "BlueprintCanInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "BlueprintCanInteract");
+
+	Params::ABGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -206,9 +246,12 @@ bool ABGA_Athena_SCMachine_Pickup_C::BlueprintCanInteract(class AFortPawn* Inter
 
 void ABGA_Athena_SCMachine_Pickup_C::OnRep_UnHide(bool CallFunc_Conv_IntToBool_ReturnValue, int32 Temp_int_Array_Index_Variable, float CallFunc_GetGameTimeInSeconds_ReturnValue, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue, int32 Temp_int_Loop_Counter_Variable, class AFortPlayerController* CallFunc_Array_Get_Item, uint8 CallFunc_GetActorTeam_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_Conv_IntToBool_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "OnRep_UnHide");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_SCMachine_Pickup_C_OnRep_UnHide_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "OnRep_UnHide");
+
+	Params::ABGA_Athena_SCMachine_Pickup_C_OnRep_UnHide_Params Parms{};
 
 	Parms.CallFunc_Conv_IntToBool_ReturnValue = CallFunc_Conv_IntToBool_ReturnValue;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -234,12 +277,14 @@ void ABGA_Athena_SCMachine_Pickup_C::OnRep_UnHide(bool CallFunc_Conv_IntToBool_R
 
 void ABGA_Athena_SCMachine_Pickup_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_SCMachine_Pickup_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -250,12 +295,14 @@ void ABGA_Athena_SCMachine_Pickup_C::ReceiveBeginPlay()
 
 void ABGA_Athena_SCMachine_Pickup_C::DestroyPickup()
 {
-	static auto Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "DestroyPickup");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_SCMachine_Pickup_C_DestroyPickup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "DestroyPickup");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -268,9 +315,12 @@ void ABGA_Athena_SCMachine_Pickup_C::DestroyPickup()
 
 void ABGA_Athena_SCMachine_Pickup_C::BlueprintOnInteract(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "BlueprintOnInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_SCMachine_Pickup_C_BlueprintOnInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "BlueprintOnInteract");
+
+	Params::ABGA_Athena_SCMachine_Pickup_C_BlueprintOnInteract_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -286,12 +336,14 @@ void ABGA_Athena_SCMachine_Pickup_C::BlueprintOnInteract(class AFortPawn* Intera
 
 void ABGA_Athena_SCMachine_Pickup_C::CollectPickup()
 {
-	static auto Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "CollectPickup");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_SCMachine_Pickup_C_CollectPickup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "CollectPickup");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -302,12 +354,14 @@ void ABGA_Athena_SCMachine_Pickup_C::CollectPickup()
 
 void ABGA_Athena_SCMachine_Pickup_C::OnDestroyPickup()
 {
-	static auto Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "OnDestroyPickup");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_SCMachine_Pickup_C_OnDestroyPickup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "OnDestroyPickup");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -318,12 +372,14 @@ void ABGA_Athena_SCMachine_Pickup_C::OnDestroyPickup()
 
 void ABGA_Athena_SCMachine_Pickup_C::SpawnSound()
 {
-	static auto Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "SpawnSound");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_SCMachine_Pickup_C_SpawnSound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "SpawnSound");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -341,9 +397,12 @@ void ABGA_Athena_SCMachine_Pickup_C::SpawnSound()
 
 void ABGA_Athena_SCMachine_Pickup_C::OnDeathServer(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "OnDeathServer");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_SCMachine_Pickup_C_OnDeathServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "OnDeathServer");
+
+	Params::ABGA_Athena_SCMachine_Pickup_C_OnDeathServer_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -394,16 +453,19 @@ void ABGA_Athena_SCMachine_Pickup_C::OnDeathServer(float Damage, struct FGamepla
 // struct FHitResult                  K2Node_Event_HitInfo                                             (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AController*                 K2Node_Event_InstigatedBy                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       (None)
 // int32                              Temp_int_Loop_Counter_Variable_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Add_IntInt_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ABGA_Athena_SCMachine_Pickup_C::ExecuteUbergraph_BGA_Athena_SCMachine_Pickup(int32 EntryPoint, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Array_Index_Variable_1, class AFortPawn* K2Node_Event_InteractingPawn, enum class EInteractionBeingAttempted K2Node_Event_InteractionBeingAttempted, bool CallFunc_IsVisible_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue, class AFortPlayerController* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class AFortPlayerPawn* CallFunc_GetPlayerPawn_ReturnValue, uint8 CallFunc_GetActorTeam_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue_1, class AFortPlayerController* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, uint8 CallFunc_GetActorTeam_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, float K2Node_Event_Damage, const struct FGameplayTagContainer& K2Node_Event_DamageTags, const struct FVector& K2Node_Event_Momentum, const struct FHitResult& K2Node_Event_HitInfo, class AController* K2Node_Event_InstigatedBy, class AActor* K2Node_Event_DamageCauser, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext, int32 Temp_int_Loop_Counter_Variable_1, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "ExecuteUbergraph_BGA_Athena_SCMachine_Pickup");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_SCMachine_Pickup_C", "ExecuteUbergraph_BGA_Athena_SCMachine_Pickup");
+
+	Params::ABGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -449,6 +511,4 @@ void ABGA_Athena_SCMachine_Pickup_C::ExecuteUbergraph_BGA_Athena_SCMachine_Picku
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

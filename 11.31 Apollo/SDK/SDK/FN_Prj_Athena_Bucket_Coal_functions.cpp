@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Prj_Athena_Bucket_Coal.Prj_Athena_Bucket_Coal_C
+// (Actor)
+
+class UClass* APrj_Athena_Bucket_Coal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Prj_Athena_Bucket_Coal_C");
+
+	return Clss;
+}
+
+
+// Prj_Athena_Bucket_Coal_C Prj_Athena_Bucket_Coal.Default__Prj_Athena_Bucket_Coal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class APrj_Athena_Bucket_Coal_C* APrj_Athena_Bucket_Coal_C::GetDefaultObj()
+{
+	static class APrj_Athena_Bucket_Coal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APrj_Athena_Bucket_Coal_C*>(APrj_Athena_Bucket_Coal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function Prj_Athena_Bucket_Coal.Prj_Athena_Bucket_Coal_C.ReceiveHit
@@ -29,9 +54,12 @@ namespace SDK
 
 void APrj_Athena_Bucket_Coal_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_Bucket_Coal_C", "ReceiveHit");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_Bucket_Coal_C_ReceiveHit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_Bucket_Coal_C", "ReceiveHit");
+
+	Params::APrj_Athena_Bucket_Coal_C_ReceiveHit_Params Parms{};
 
 	Parms.MyComp = MyComp;
 	Parms.Other = Other;
@@ -53,12 +81,14 @@ void APrj_Athena_Bucket_Coal_C::ReceiveHit(class UPrimitiveComponent* MyComp, cl
 
 void APrj_Athena_Bucket_Coal_C::WaterEntered()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_Bucket_Coal_C", "WaterEntered");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_Bucket_Coal_C_WaterEntered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_Bucket_Coal_C", "WaterEntered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -77,7 +107,7 @@ void APrj_Athena_Bucket_Coal_C::WaterEntered()
 // struct FHitResult                  K2Node_Event_Hit                                                 (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AB_BGA_Athena_EnvCampFire_C* K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              (None)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsServer_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_IsClosed_Variable                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -86,9 +116,12 @@ void APrj_Athena_Bucket_Coal_C::WaterEntered()
 
 void APrj_Athena_Bucket_Coal_C::ExecuteUbergraph_Prj_Athena_Bucket_Coal(int32 EntryPoint, class UPrimitiveComponent* K2Node_Event_MyComp, class AActor* K2Node_Event_Other, class UPrimitiveComponent* K2Node_Event_OtherComp, bool K2Node_Event_bSelfMoved, const struct FVector& K2Node_Event_HitLocation, const struct FVector& K2Node_Event_HitNormal, const struct FVector& K2Node_Event_NormalImpulse, const struct FHitResult& K2Node_Event_Hit, class AB_BGA_Athena_EnvCampFire_C* K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire, bool K2Node_DynamicCast_bSuccess, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_IsServer_ReturnValue, bool Temp_bool_IsClosed_Variable, bool Temp_bool_Has_Been_Initd_Variable, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_Bucket_Coal_C", "ExecuteUbergraph_Prj_Athena_Bucket_Coal");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_Bucket_Coal_C", "ExecuteUbergraph_Prj_Athena_Bucket_Coal");
+
+	Params::APrj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_MyComp = K2Node_Event_MyComp;
@@ -114,6 +147,4 @@ void APrj_Athena_Bucket_Coal_C::ExecuteUbergraph_Prj_Athena_Bucket_Coal(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

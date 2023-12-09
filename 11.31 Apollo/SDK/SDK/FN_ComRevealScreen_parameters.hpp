@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -16,26 +13,12 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x0 - 0x0)
-// Function ComRevealScreen.ComRevealScreen_C.StartFinalAnimation
-struct UComRevealScreen_C_StartFinalAnimation_Params
-{
-public:
-};
-
 // 0x4 (0x4 - 0x0)
 // Function ComRevealScreen.ComRevealScreen_C.StartFadeOutScreen
 struct UComRevealScreen_C_StartFadeOutScreen_Params
 {
 public:
 	float                                        Delay;                                             // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ComRevealScreen.ComRevealScreen_C.StartFadeInAnimation
-struct UComRevealScreen_C_StartFadeInAnimation_Params
-{
-public:
 };
 
 // 0x40 (0x40 - 0x0)
@@ -55,6 +38,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

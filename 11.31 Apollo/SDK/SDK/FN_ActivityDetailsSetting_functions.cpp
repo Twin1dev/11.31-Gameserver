@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ActivityDetailsSetting.ActivityDetailsSetting_C
+// (None)
+
+class UClass* UActivityDetailsSetting_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ActivityDetailsSetting_C");
+
+	return Clss;
+}
+
+
+// ActivityDetailsSetting_C ActivityDetailsSetting.Default__ActivityDetailsSetting_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UActivityDetailsSetting_C* UActivityDetailsSetting_C::GetDefaultObj()
+{
+	static class UActivityDetailsSetting_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UActivityDetailsSetting_C*>(UActivityDetailsSetting_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ActivityDetailsSetting.ActivityDetailsSetting_C.OnSettingChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UActivityDetailsSetting_C::OnSettingChanged(bool NewValue)
 {
-	static auto Func = Class->GetFunction("ActivityDetailsSetting_C", "OnSettingChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityDetailsSetting_C_OnSettingChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityDetailsSetting_C", "OnSettingChanged");
+
+	Params::UActivityDetailsSetting_C_OnSettingChanged_Params Parms{};
 
 	Parms.NewValue = NewValue;
 
@@ -40,9 +68,12 @@ void UActivityDetailsSetting_C::OnSettingChanged(bool NewValue)
 
 void UActivityDetailsSetting_C::BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ActivityDetailsSetting_C", "BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityDetailsSetting_C", "BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -58,9 +89,12 @@ void UActivityDetailsSetting_C::BndEvt__Button_ToggleSetting_K2Node_ComponentBou
 
 void UActivityDetailsSetting_C::BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ActivityDetailsSetting_C", "BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityDetailsSetting_C", "BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -82,9 +116,12 @@ void UActivityDetailsSetting_C::BndEvt__Button_ToggleSetting_K2Node_ComponentBou
 
 void UActivityDetailsSetting_C::ExecuteUbergraph_ActivityDetailsSetting(int32 EntryPoint, const struct FLinearColor& K2Node_MakeStruct_LinearColor, bool K2Node_Event_NewValue, int32 CallFunc_SelectInt_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, const struct FLinearColor& K2Node_MakeStruct_LinearColor_1)
 {
-	static auto Func = Class->GetFunction("ActivityDetailsSetting_C", "ExecuteUbergraph_ActivityDetailsSetting");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityDetailsSetting_C", "ExecuteUbergraph_ActivityDetailsSetting");
+
+	Params::UActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_MakeStruct_LinearColor = K2Node_MakeStruct_LinearColor;
@@ -100,6 +137,4 @@ void UActivityDetailsSetting_C::ExecuteUbergraph_ActivityDetailsSetting(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

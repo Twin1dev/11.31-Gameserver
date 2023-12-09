@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_VictoryDrone.BP_VictoryDrone_C
+// (Actor, Pawn)
+
+class UClass* ABP_VictoryDrone_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_VictoryDrone_C");
+
+	return Clss;
+}
+
+
+// BP_VictoryDrone_C BP_VictoryDrone.Default__BP_VictoryDrone_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_VictoryDrone_C* ABP_VictoryDrone_C::GetDefaultObj()
+{
+	static class ABP_VictoryDrone_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_VictoryDrone_C*>(ABP_VictoryDrone_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_VictoryDrone.BP_VictoryDrone_C.NotifyTeleportFinishedTriggered
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ABP_VictoryDrone_C::NotifyTeleportFinishedTriggered(bool CallFunc_HasAuthority_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_VictoryDrone_C", "NotifyTeleportFinishedTriggered");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_VictoryDrone_C_NotifyTeleportFinishedTriggered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_VictoryDrone_C", "NotifyTeleportFinishedTriggered");
+
+	Params::ABP_VictoryDrone_C_NotifyTeleportFinishedTriggered_Params Parms{};
 
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 
@@ -69,9 +97,12 @@ void ABP_VictoryDrone_C::NotifyTeleportFinishedTriggered(bool CallFunc_HasAuthor
 
 void ABP_VictoryDrone_C::PlaySpawnAnim(class UAnimMontage* Montage, float NewLocalVar_0, bool Temp_bool_Variable, class UAnimationAsset* Temp_object_Variable, class UAnimationAsset* Temp_object_Variable_1, bool Temp_bool_Variable_1, class UAnimationAsset* Temp_object_Variable_2, bool CallFunc_IsValid_ReturnValue, bool Temp_bool_Variable_2, bool CallFunc_IsValid_ReturnValue_1, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, bool CallFunc_BooleanAND_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue_1, class UAnimationAsset* Temp_object_Variable_3, class UAnimationAsset* Temp_object_Variable_4, bool Temp_bool_Variable_3, class UParticleSystem* Temp_object_Variable_5, class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue, class UAnimationAsset* K2Node_Select_Default, class UParticleSystem* Temp_object_Variable_6, bool Temp_bool_Variable_4, const class FString& CallFunc_Conv_BoolToString_ReturnValue, class UParticleSystem* K2Node_Select_Default_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue_2, class UAnimationAsset* K2Node_Select_Default_2, class UAnimationAsset* K2Node_Select_Default_3, class UAnimationAsset* K2Node_Select_Default_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("BP_VictoryDrone_C", "PlaySpawnAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_VictoryDrone_C_PlaySpawnAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_VictoryDrone_C", "PlaySpawnAnim");
+
+	Params::ABP_VictoryDrone_C_PlaySpawnAnim_Params Parms{};
 
 	Parms.Montage = Montage;
 	Parms.NewLocalVar_0 = NewLocalVar_0;
@@ -117,9 +148,12 @@ void ABP_VictoryDrone_C::PlaySpawnAnim(class UAnimMontage* Montage, float NewLoc
 
 void ABP_VictoryDrone_C::InitDrone(class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool CallFunc_K2_AttachTo_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_VictoryDrone_C", "InitDrone");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_VictoryDrone_C_InitDrone_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_VictoryDrone_C", "InitDrone");
+
+	Params::ABP_VictoryDrone_C_InitDrone_Params Parms{};
 
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
 	Parms.CallFunc_K2_AttachTo_ReturnValue = CallFunc_K2_AttachTo_ReturnValue;
@@ -135,12 +169,14 @@ void ABP_VictoryDrone_C::InitDrone(class UMaterialInstanceDynamic* CallFunc_Crea
 
 void ABP_VictoryDrone_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_VictoryDrone_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_VictoryDrone_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_VictoryDrone_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -153,9 +189,12 @@ void ABP_VictoryDrone_C::ReceiveBeginPlay()
 
 void ABP_VictoryDrone_C::OnSpawnOutAnimEnded(class UAnimMontage* Montage, bool bInterrupted)
 {
-	static auto Func = Class->GetFunction("BP_VictoryDrone_C", "OnSpawnOutAnimEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_VictoryDrone_C_OnSpawnOutAnimEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_VictoryDrone_C", "OnSpawnOutAnimEnded");
+
+	Params::ABP_VictoryDrone_C_OnSpawnOutAnimEnded_Params Parms{};
 
 	Parms.Montage = Montage;
 	Parms.bInterrupted = bInterrupted;
@@ -172,9 +211,12 @@ void ABP_VictoryDrone_C::OnSpawnOutAnimEnded(class UAnimMontage* Montage, bool b
 
 void ABP_VictoryDrone_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("BP_VictoryDrone_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_VictoryDrone_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_VictoryDrone_C", "ReceiveTick");
+
+	Params::ABP_VictoryDrone_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -205,9 +247,12 @@ void ABP_VictoryDrone_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_VictoryDrone_C::ExecuteUbergraph_BP_VictoryDrone(int32 EntryPoint, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic, bool K2Node_DynamicCast_bSuccess, class UAnimMontage* K2Node_CustomEvent_Montage, bool K2Node_CustomEvent_bInterrupted, float CallFunc_K2_GetScalarParameterValue_ReturnValue, bool CallFunc_IsValid_ReturnValue, float K2Node_Event_DeltaSeconds, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, const struct FRotator& CallFunc_MakeRotator_ReturnValue, bool CallFunc_K2_SetActorRotation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_VictoryDrone_C", "ExecuteUbergraph_BP_VictoryDrone");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_VictoryDrone_C_ExecuteUbergraph_BP_VictoryDrone_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_VictoryDrone_C", "ExecuteUbergraph_BP_VictoryDrone");
+
+	Params::ABP_VictoryDrone_C_ExecuteUbergraph_BP_VictoryDrone_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetMaterial_ReturnValue = CallFunc_GetMaterial_ReturnValue;
@@ -238,9 +283,12 @@ void ABP_VictoryDrone_C::ExecuteUbergraph_BP_VictoryDrone(int32 EntryPoint, clas
 
 void ABP_VictoryDrone_C::SpawnOutAnimEndedDispatcher__DelegateSignature(class ABP_VictoryDrone_C* Drone)
 {
-	static auto Func = Class->GetFunction("BP_VictoryDrone_C", "SpawnOutAnimEndedDispatcher__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_VictoryDrone_C_SpawnOutAnimEndedDispatcher__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_VictoryDrone_C", "SpawnOutAnimEndedDispatcher__DelegateSignature");
+
+	Params::ABP_VictoryDrone_C_SpawnOutAnimEndedDispatcher__DelegateSignature_Params Parms{};
 
 	Parms.Drone = Drone;
 
@@ -250,6 +298,4 @@ void ABP_VictoryDrone_C::SpawnOutAnimEndedDispatcher__DelegateSignature(class AB
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

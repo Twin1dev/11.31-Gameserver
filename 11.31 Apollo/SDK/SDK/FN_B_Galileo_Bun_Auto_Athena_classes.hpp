@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -17,7 +14,7 @@ namespace SDK
 class AB_Galileo_Bun_Auto_Athena_C : public AB_Assault_Generic_C
 {
 public:
-	uint8                                        Pad_6671[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6A84[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xFB8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UAudioComponent*                       OverheatAudioLayer;                                // 0xFC0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*              P_Overheat;                                        // 0xFC8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -26,11 +23,8 @@ public:
 	class UCurveFloat*                           OverheatAudioFeedbackCurve;                        // 0xFE0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          OverheatFXTimerReplicated;                         // 0xFE8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_Galileo_Bun_Auto_Athena_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_Galileo_Bun_Auto_Athena_C* GetDefaultObj();
 
 	void OverheatFX(uint8 Overheat_Val);
 	void OnFinishedCooling();
@@ -47,6 +41,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

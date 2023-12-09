@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -27,14 +24,11 @@ public:
 	struct FGameplayTag                          GC_Spawn;                                          // 0x7C0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                        DelayBeforeCue;                                    // 0x7C8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsFriendly;                                        // 0x7CC(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4ED9[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_520C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        TimeBeforeRevealingWeapon;                         // 0x7D0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_Athena_FrenchYedoc_JWFriendly_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_Athena_FrenchYedoc_JWFriendly_C* GetDefaultObj();
 
 	void SetBotWeaponsHiddenInGame(class AFortPawn* BotPawn, bool NewHidden, bool bPropagateToChildren, int32 Temp_int_Array_Index_Variable, TArray<class USkeletalMeshComponentBudgeted*>& CallFunc_GetWeaponMeshes_WeaponMeshes, int32 Temp_int_Loop_Counter_Variable, class USkeletalMeshComponentBudgeted* CallFunc_Array_Get_Item, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue);
 	void OnRep_BotPawn(bool CallFunc_IsDedicatedServer_ReturnValue);
@@ -47,6 +41,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

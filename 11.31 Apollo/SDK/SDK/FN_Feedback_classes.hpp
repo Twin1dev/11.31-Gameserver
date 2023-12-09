@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -49,11 +46,8 @@ public:
 	class FText                                  SpectatingName;                                    // 0x620(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	enum class EFortUIGameFeedbackType           FeedBackType;                                      // 0x638(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("Feedback_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UFeedback_C* GetDefaultObj();
 
 	void UpdateSendButtonEnabled(bool CallFunc_CanSendFeedback_ReturnValue);
 	struct FEventReply TouchToClose(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Handled_ReturnValue);
@@ -79,6 +73,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

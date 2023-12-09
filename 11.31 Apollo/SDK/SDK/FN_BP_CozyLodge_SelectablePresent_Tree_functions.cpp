@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_CozyLodge_SelectablePresent_Tree.BP_CozyLodge_SelectablePresent_Tree_C
+// (Actor)
+
+class UClass* ABP_CozyLodge_SelectablePresent_Tree_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_CozyLodge_SelectablePresent_Tree_C");
+
+	return Clss;
+}
+
+
+// BP_CozyLodge_SelectablePresent_Tree_C BP_CozyLodge_SelectablePresent_Tree.Default__BP_CozyLodge_SelectablePresent_Tree_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_CozyLodge_SelectablePresent_Tree_C* ABP_CozyLodge_SelectablePresent_Tree_C::GetDefaultObj()
+{
+	static class ABP_CozyLodge_SelectablePresent_Tree_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_CozyLodge_SelectablePresent_Tree_C*>(ABP_CozyLodge_SelectablePresent_Tree_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_CozyLodge_SelectablePresent_Tree.BP_CozyLodge_SelectablePresent_Tree_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void ABP_CozyLodge_SelectablePresent_Tree_C::UserConstructionScript()
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_SelectablePresent_Tree_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_SelectablePresent_Tree_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_SelectablePresent_Tree_C", "UserConstructionScript");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -39,9 +66,12 @@ void ABP_CozyLodge_SelectablePresent_Tree_C::UserConstructionScript()
 
 void ABP_CozyLodge_SelectablePresent_Tree_C::HandleObjectSpecialInteraction(const struct FGameplayTag& ActionTag, const struct FGameplayTag& CameraTag)
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_SelectablePresent_Tree_C", "HandleObjectSpecialInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_SelectablePresent_Tree_C_HandleObjectSpecialInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_SelectablePresent_Tree_C", "HandleObjectSpecialInteraction");
+
+	Params::ABP_CozyLodge_SelectablePresent_Tree_C_HandleObjectSpecialInteraction_Params Parms{};
 
 	Parms.ActionTag = ActionTag;
 	Parms.CameraTag = CameraTag;
@@ -72,9 +102,12 @@ void ABP_CozyLodge_SelectablePresent_Tree_C::HandleObjectSpecialInteraction(cons
 
 void ABP_CozyLodge_SelectablePresent_Tree_C::ExecuteUbergraph_BP_CozyLodge_SelectablePresent_Tree(int32 EntryPoint, const struct FGameplayTag& CallFunc_GetNodeTag_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, const struct FGameplayTag& K2Node_Event_ActionTag, const struct FGameplayTag& K2Node_Event_CameraTag, class AGameStateBase* CallFunc_GetGameState_ReturnValue, bool CallFunc_EqualEqual_GameplayTag_ReturnValue, TArray<class UGSC_DynamicLevelStreaming_C*>& CallFunc_K2_GetComponentsByClass_ReturnValue, bool CallFunc_EqualEqual_GameplayTag_ReturnValue_1, class UGSC_DynamicLevelStreaming_C* CallFunc_Array_Get_Item, bool CallFunc_BooleanAND_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_SelectablePresent_Tree_C", "ExecuteUbergraph_BP_CozyLodge_SelectablePresent_Tree");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_SelectablePresent_Tree_C_ExecuteUbergraph_BP_CozyLodge_SelectablePresent_Tree_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_SelectablePresent_Tree_C", "ExecuteUbergraph_BP_CozyLodge_SelectablePresent_Tree");
+
+	Params::ABP_CozyLodge_SelectablePresent_Tree_C_ExecuteUbergraph_BP_CozyLodge_SelectablePresent_Tree_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetNodeTag_ReturnValue = CallFunc_GetNodeTag_ReturnValue;
@@ -98,6 +131,4 @@ void ABP_CozyLodge_SelectablePresent_Tree_C::ExecuteUbergraph_BP_CozyLodge_Selec
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

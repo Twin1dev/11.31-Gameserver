@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -33,11 +30,8 @@ public:
 	class FText                                  RestedXPText;                                      // 0x2F0(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class FText                                  BodyText;                                          // 0x308(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("XpBarToolTip_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UXpBarToolTip_C* GetDefaultObj();
 
 	class FText GetBodyText();
 	class FText GetRestedXPText();
@@ -48,6 +42,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass BP_BannerEditorTile.BP_BannerEditorTile_C
+// (None)
+
+class UClass* UBP_BannerEditorTile_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_BannerEditorTile_C");
+
+	return Clss;
+}
+
+
+// BP_BannerEditorTile_C BP_BannerEditorTile.Default__BP_BannerEditorTile_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBP_BannerEditorTile_C* UBP_BannerEditorTile_C::GetDefaultObj()
+{
+	static class UBP_BannerEditorTile_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBP_BannerEditorTile_C*>(UBP_BannerEditorTile_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_BannerEditorTile.BP_BannerEditorTile_C.Mark Item As Seen
@@ -26,9 +51,12 @@ namespace SDK
 
 void UBP_BannerEditorTile_C::Mark_Item_As_Seen(bool bAlreadySeen, class UObject* CallFunc_GetListItemObject_ReturnValue, class UFortAccountItem* K2Node_DynamicCast_AsFort_Account_Item, bool K2Node_DynamicCast_bSuccess, bool CallFunc_HasBeenSeenLocally_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_BannerEditorTile_C", "Mark Item As Seen");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_BannerEditorTile_C_Mark_Item_As_Seen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_BannerEditorTile_C", "Mark Item As Seen");
+
+	Params::UBP_BannerEditorTile_C_Mark_Item_As_Seen_Params Parms{};
 
 	Parms.bAlreadySeen = bAlreadySeen;
 	Parms.CallFunc_GetListItemObject_ReturnValue = CallFunc_GetListItemObject_ReturnValue;
@@ -52,9 +80,12 @@ void UBP_BannerEditorTile_C::Mark_Item_As_Seen(bool bAlreadySeen, class UObject*
 
 void UBP_BannerEditorTile_C::Update_Bang_State(class UObject* CallFunc_GetListItemObject_ReturnValue, class UFortAccountItem* K2Node_DynamicCast_AsFort_Account_Item, bool K2Node_DynamicCast_bSuccess, bool CallFunc_HasBeenSeenLocally_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_BannerEditorTile_C", "Update Bang State");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_BannerEditorTile_C_Update_Bang_State_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_BannerEditorTile_C", "Update Bang State");
+
+	Params::UBP_BannerEditorTile_C_Update_Bang_State_Params Parms{};
 
 	Parms.CallFunc_GetListItemObject_ReturnValue = CallFunc_GetListItemObject_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Account_Item = K2Node_DynamicCast_AsFort_Account_Item;
@@ -74,9 +105,12 @@ void UBP_BannerEditorTile_C::Update_Bang_State(class UObject* CallFunc_GetListIt
 
 void UBP_BannerEditorTile_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("BP_BannerEditorTile_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_BannerEditorTile_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_BannerEditorTile_C", "OnListItemObjectSet");
+
+	Params::UBP_BannerEditorTile_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -91,12 +125,14 @@ void UBP_BannerEditorTile_C::OnListItemObjectSet(class UObject* ListItemObject)
 
 void UBP_BannerEditorTile_C::Construct()
 {
-	static auto Func = Class->GetFunction("BP_BannerEditorTile_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_BannerEditorTile_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_BannerEditorTile_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -108,9 +144,12 @@ void UBP_BannerEditorTile_C::Construct()
 
 void UBP_BannerEditorTile_C::HandleBannerIconLoadGuardFinished(class UObject* Object)
 {
-	static auto Func = Class->GetFunction("BP_BannerEditorTile_C", "HandleBannerIconLoadGuardFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_BannerEditorTile_C_HandleBannerIconLoadGuardFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_BannerEditorTile_C", "HandleBannerIconLoadGuardFinished");
+
+	Params::UBP_BannerEditorTile_C_HandleBannerIconLoadGuardFinished_Params Parms{};
 
 	Parms.Object = Object;
 
@@ -125,12 +164,14 @@ void UBP_BannerEditorTile_C::HandleBannerIconLoadGuardFinished(class UObject* Ob
 
 void UBP_BannerEditorTile_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("BP_BannerEditorTile_C", "BP_OnSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_BannerEditorTile_C_BP_OnSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_BannerEditorTile_C", "BP_OnSelected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -141,12 +182,14 @@ void UBP_BannerEditorTile_C::BP_OnSelected()
 
 void UBP_BannerEditorTile_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("BP_BannerEditorTile_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_BannerEditorTile_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_BannerEditorTile_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -179,9 +222,12 @@ void UBP_BannerEditorTile_C::BP_OnHovered()
 
 void UBP_BannerEditorTile_C::ExecuteUbergraph_BP_BannerEditorTile(int32 EntryPoint, class UObject* CallFunc_GetListItemObject_ReturnValue, class UFortHomebaseBannerColorItem* K2Node_DynamicCast_AsFort_Homebase_Banner_Color_Item, bool K2Node_DynamicCast_bSuccess, class UFortHomebaseBannerIconItem* K2Node_DynamicCast_AsFort_Homebase_Banner_Icon_Item, bool K2Node_DynamicCast_bSuccess_1, class UObject* CallFunc_GetListItemObject_ReturnValue_1, class UFortHomebaseBannerIconItem* K2Node_DynamicCast_AsFort_Homebase_Banner_Icon_Item_1, bool K2Node_DynamicCast_bSuccess_2, TSoftObjectPtr<class UTexture2D> CallFunc_GetBannerSmallIconAsset_ReturnValue, class UObject* K2Node_CustomEvent_Object, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UTexture2D* K2Node_DynamicCast_AsTexture_2D, bool K2Node_DynamicCast_bSuccess_3, class UObject* CallFunc_GetListItemObject_ReturnValue_2, class UFortHomebaseBannerColorItem* K2Node_DynamicCast_AsFort_Homebase_Banner_Color_Item_1, bool K2Node_DynamicCast_bSuccess_4, const struct FLinearColor& CallFunc_GetBannerColorSecondaryColor_ReturnValue, const struct FLinearColor& CallFunc_GetBannerColorPrimaryColor_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UObject* K2Node_Event_ListItemObject)
 {
-	static auto Func = Class->GetFunction("BP_BannerEditorTile_C", "ExecuteUbergraph_BP_BannerEditorTile");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_BannerEditorTile_C", "ExecuteUbergraph_BP_BannerEditorTile");
+
+	Params::UBP_BannerEditorTile_C_ExecuteUbergraph_BP_BannerEditorTile_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetListItemObject_ReturnValue = CallFunc_GetListItemObject_ReturnValue;
@@ -217,17 +263,17 @@ void UBP_BannerEditorTile_C::ExecuteUbergraph_BP_BannerEditorTile(int32 EntryPoi
 
 void UBP_BannerEditorTile_C::BannerTileBangUpdated__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BP_BannerEditorTile_C", "BannerTileBangUpdated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_BannerEditorTile_C_BannerTileBangUpdated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_BannerEditorTile_C", "BannerTileBangUpdated__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

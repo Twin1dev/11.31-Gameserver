@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -28,14 +25,11 @@ public:
 	class UWidgetSwitcher*                       Switcher_Placed;                                   // 0x2C8(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                      Text_FrontendXPLabel;                              // 0x2D0(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         bAlreadyPunched;                                   // 0x2D8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2379[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_652E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortAccoladeItemDefinition*           Temp_Accolade;                                     // 0x2E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("PunchCardEntry_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UPunchCardEntry_C* GetDefaultObj();
 
 	void OnLoaded_5FE293294CDD1131C46B229A3E23F648(class UObject* Loaded);
 	void OnLoaded_D1FE60014F4F3FD64C242F91B2A30C9C(class UObject* Loaded);
@@ -51,6 +45,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Trap_Floor_Player_Campfire.Trap_Floor_Player_Campfire_C
+// (Actor)
+
+class UClass* ATrap_Floor_Player_Campfire_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Trap_Floor_Player_Campfire_C");
+
+	return Clss;
+}
+
+
+// Trap_Floor_Player_Campfire_C Trap_Floor_Player_Campfire.Default__Trap_Floor_Player_Campfire_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ATrap_Floor_Player_Campfire_C* ATrap_Floor_Player_Campfire_C::GetDefaultObj()
+{
+	static class ATrap_Floor_Player_Campfire_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ATrap_Floor_Player_Campfire_C*>(ATrap_Floor_Player_Campfire_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function Trap_Floor_Player_Campfire.Trap_Floor_Player_Campfire_C.CheckIfTargetIsSquadmate
@@ -43,9 +68,12 @@ namespace SDK
 
 void ATrap_Floor_Player_Campfire_C::CheckIfTargetIsSquadmate(class AFortPlayerPawn* Target_Player, bool Is_Team_Mate, bool Is_Squad_Member, const struct FGameplayTagContainer& Heal_Squadmate_TC, const struct FGameplayTagContainer& Heal_Teammate_TC, bool CallFunc_SendComplexCustomStatEvent_QuestActive, bool CallFunc_SendComplexCustomStatEvent_QuestCompleted, class AFortPlayerState* CallFunc_GetOwningPlayerState_ReturnValue, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, class AFortPlayerPawn* CallFunc_GetCurrentPawn_ReturnValue, bool CallFunc_SendComplexCustomStatEvent_QuestActive_1, bool CallFunc_SendComplexCustomStatEvent_QuestCompleted_1, bool CallFunc_NotEqual_ObjectObject_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerStateAthena* K2Node_DynamicCast_AsFort_Player_State_Athena, bool K2Node_DynamicCast_bSuccess, bool CallFunc_OnSameTeam_ReturnValue, bool CallFunc_IsInSquad_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "CheckIfTargetIsSquadmate");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_CheckIfTargetIsSquadmate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "CheckIfTargetIsSquadmate");
+
+	Params::ATrap_Floor_Player_Campfire_C_CheckIfTargetIsSquadmate_Params Parms{};
 
 	Parms.Target_Player = Target_Player;
 	Parms.Is_Team_Mate = Is_Team_Mate;
@@ -86,9 +114,12 @@ void ATrap_Floor_Player_Campfire_C::CheckIfTargetIsSquadmate(class AFortPlayerPa
 
 void ATrap_Floor_Player_Campfire_C::InitCampfireEffects(const struct FRotator& CallFunc_K2_GetComponentRotation_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_1, bool CallFunc_IsDedicatedServer_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "InitCampfireEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_InitCampfireEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "InitCampfireEffects");
+
+	Params::ATrap_Floor_Player_Campfire_C_InitCampfireEffects_Params Parms{};
 
 	Parms.CallFunc_K2_GetComponentRotation_ReturnValue = CallFunc_K2_GetComponentRotation_ReturnValue;
 	Parms.CallFunc_K2_GetComponentLocation_ReturnValue = CallFunc_K2_GetComponentLocation_ReturnValue;
@@ -143,9 +174,12 @@ void ATrap_Floor_Player_Campfire_C::InitCampfireEffects(const struct FRotator& C
 
 void ATrap_Floor_Player_Campfire_C::HealTicks(class AFortPlayerState* CallFunc_GetOwningPlayerState_ReturnValue, class UFortAbilitySystemComponent* CallFunc_GetFortAbilitySystemComponent_ReturnValue, int32 Temp_int_Array_Index_Variable, float CallFunc_GetValueAtLevel_ReturnValue, int32 CallFunc_FTrunc_ReturnValue, bool CallFunc_Conv_IntToBool_ReturnValue, const struct FTransform& CallFunc_K2_GetComponentToWorld_ReturnValue, int32 Temp_int_Loop_Counter_Variable, float CallFunc_GetValueAtLevel_ReturnValue_1, int32 CallFunc_FTrunc_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Conv_IntToBool_ReturnValue_1, bool CallFunc_HasAuthority_ReturnValue, TArray<class AActor*>& Temp_object_Variable, const struct FTransform& CallFunc_K2_GetComponentToWorld_ReturnValue_1, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, TArray<class AActor*>& CallFunc_BoxOverlapActors_OutActors, bool CallFunc_BoxOverlapActors_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, class AActor* CallFunc_Array_Get_Item, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_ApplyGlobalEnvironmentGameplayEffectToActor_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_1, TScriptInterface<class IFortVehicleInterface> K2Node_DynamicCast_AsFort_Vehicle_Interface, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsPointInBoxWithTransform_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess_1, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_FortApplyGameplayEffectToTarget_ReturnValue, bool CallFunc_IsDead_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_2, bool CallFunc_IsPointInBoxWithTransform_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "HealTicks");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_HealTicks_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "HealTicks");
+
+	Params::ATrap_Floor_Player_Campfire_C_HealTicks_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayerState_ReturnValue = CallFunc_GetOwningPlayerState_ReturnValue;
 	Parms.CallFunc_GetFortAbilitySystemComponent_ReturnValue = CallFunc_GetFortAbilitySystemComponent_ReturnValue;
@@ -195,12 +229,14 @@ void ATrap_Floor_Player_Campfire_C::HealTicks(class AFortPlayerState* CallFunc_G
 
 void ATrap_Floor_Player_Campfire_C::OnRep_IsActive()
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnRep_IsActive");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_OnRep_IsActive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnRep_IsActive");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -211,12 +247,14 @@ void ATrap_Floor_Player_Campfire_C::OnRep_IsActive()
 
 void ATrap_Floor_Player_Campfire_C::FadeDoused__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "FadeDoused__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_FadeDoused__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "FadeDoused__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -227,12 +265,14 @@ void ATrap_Floor_Player_Campfire_C::FadeDoused__FinishedFunc()
 
 void ATrap_Floor_Player_Campfire_C::FadeDoused__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "FadeDoused__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_FadeDoused__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "FadeDoused__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -243,12 +283,14 @@ void ATrap_Floor_Player_Campfire_C::FadeDoused__UpdateFunc()
 
 void ATrap_Floor_Player_Campfire_C::DarkenLogs__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "DarkenLogs__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_DarkenLogs__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "DarkenLogs__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -259,12 +301,14 @@ void ATrap_Floor_Player_Campfire_C::DarkenLogs__FinishedFunc()
 
 void ATrap_Floor_Player_Campfire_C::DarkenLogs__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "DarkenLogs__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_DarkenLogs__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "DarkenLogs__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -275,12 +319,14 @@ void ATrap_Floor_Player_Campfire_C::DarkenLogs__UpdateFunc()
 
 void ATrap_Floor_Player_Campfire_C::OnReloadEnd()
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnReloadEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_OnReloadEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnReloadEnd");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -291,12 +337,14 @@ void ATrap_Floor_Player_Campfire_C::OnReloadEnd()
 
 void ATrap_Floor_Player_Campfire_C::OnPlaced()
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnPlaced");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_OnPlaced_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnPlaced");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -307,12 +355,14 @@ void ATrap_Floor_Player_Campfire_C::OnPlaced()
 
 void ATrap_Floor_Player_Campfire_C::OnFinishedBuilding()
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnFinishedBuilding");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_OnFinishedBuilding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnFinishedBuilding");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -325,9 +375,12 @@ void ATrap_Floor_Player_Campfire_C::OnFinishedBuilding()
 
 void ATrap_Floor_Player_Campfire_C::GameplayCue_Abilities_Activation_Traps_ReloadBegin(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "GameplayCue.Abilities.Activation.Traps.ReloadBegin");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_GameplayCue_Abilities_Activation_Traps_ReloadBegin_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "GameplayCue.Abilities.Activation.Traps.ReloadBegin");
+
+	Params::ATrap_Floor_Player_Campfire_C_GameplayCue_Abilities_Activation_Traps_ReloadBegin_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -345,9 +398,12 @@ void ATrap_Floor_Player_Campfire_C::GameplayCue_Abilities_Activation_Traps_Reloa
 
 void ATrap_Floor_Player_Campfire_C::GameplayCue_Abilities_Activation_Traps_ActivateTrap(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "GameplayCue.Abilities.Activation.Traps.ActivateTrap");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "GameplayCue.Abilities.Activation.Traps.ActivateTrap");
+
+	Params::ATrap_Floor_Player_Campfire_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -363,12 +419,14 @@ void ATrap_Floor_Player_Campfire_C::GameplayCue_Abilities_Activation_Traps_Activ
 
 void ATrap_Floor_Player_Campfire_C::OnOutOfDurability()
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnOutOfDurability");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_OnOutOfDurability_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnOutOfDurability");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -380,9 +438,12 @@ void ATrap_Floor_Player_Campfire_C::OnOutOfDurability()
 
 void ATrap_Floor_Player_Campfire_C::TriggerLaunchEffects(class AFortPlayerPawnAthena* Pawn)
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "TriggerLaunchEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_TriggerLaunchEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "TriggerLaunchEffects");
+
+	Params::ATrap_Floor_Player_Campfire_C_TriggerLaunchEffects_Params Parms{};
 
 	Parms.Pawn = Pawn;
 
@@ -397,12 +458,14 @@ void ATrap_Floor_Player_Campfire_C::TriggerLaunchEffects(class AFortPlayerPawnAt
 
 void ATrap_Floor_Player_Campfire_C::DousedTime()
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "DousedTime");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_DousedTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "DousedTime");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -413,12 +476,14 @@ void ATrap_Floor_Player_Campfire_C::DousedTime()
 
 void ATrap_Floor_Player_Campfire_C::CharLogs()
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "CharLogs");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_CharLogs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "CharLogs");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -436,9 +501,12 @@ void ATrap_Floor_Player_Campfire_C::CharLogs()
 
 void ATrap_Floor_Player_Campfire_C::OnDeathPlayEffects(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnDeathPlayEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_OnDeathPlayEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnDeathPlayEffects");
+
+	Params::ATrap_Floor_Player_Campfire_C_OnDeathPlayEffects_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -466,9 +534,12 @@ void ATrap_Floor_Player_Campfire_C::OnDeathPlayEffects(float Damage, struct FGam
 
 void ATrap_Floor_Player_Campfire_C::OnDeathServer(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnDeathServer");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_OnDeathServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "OnDeathServer");
+
+	Params::ATrap_Floor_Player_Campfire_C_OnDeathServer_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -550,7 +621,7 @@ void ATrap_Floor_Player_Campfire_C::OnDeathServer(float Damage, struct FGameplay
 // struct FHitResult                  K2Node_Event_HitInfo_1                                           (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AFortPawn*                   K2Node_Event_InstigatedBy_1                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser_1                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext_1                                     ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext_1                                     (None)
 // float                              CallFunc_Divide_FloatFloat_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue_5                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<enum class EFortTeamAffiliation>K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
@@ -561,7 +632,7 @@ void ATrap_Floor_Player_Campfire_C::OnDeathServer(float Damage, struct FGameplay
 // struct FHitResult                  K2Node_Event_HitInfo                                             (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AController*                 K2Node_Event_InstigatedBy                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       (None)
 // struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue_3                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortPlayerState*            CallFunc_GetOwningPlayerState_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FTransform                  CallFunc_Conv_VectorToTransform_ReturnValue                      (IsPlainOldData, NoDestructor)
@@ -570,9 +641,12 @@ void ATrap_Floor_Player_Campfire_C::OnDeathServer(float Damage, struct FGameplay
 
 void ATrap_Floor_Player_Campfire_C::ExecuteUbergraph_Trap_Floor_Player_Campfire(int32 EntryPoint, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam, bool CallFunc_IsDedicatedServer_ReturnValue, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue_1, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam_1, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue_1, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue_2, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue_3, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam_2, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam_3, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam_4, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam_5, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam_6, TArray<struct FParticleSysParam>& K2Node_MakeArray_Array, float CallFunc_Lerp_ReturnValue, const struct FVector& CallFunc_VLerp_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_3, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_4, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType_1, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters_1, bool K2Node_SwitchEnum_CmpSuccess, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters, bool K2Node_SwitchEnum_CmpSuccess_1, bool CallFunc_IsValid_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_2, float Temp_float_Variable, class AFortPlayerPawnAthena* K2Node_Event_Pawn, bool CallFunc_LessEqual_FloatFloat_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, float CallFunc_GetValueAtLevel_ReturnValue, int32 CallFunc_FTrunc_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, class APlayerCameraManager* CallFunc_GetPlayerCameraManager_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, const struct FVector& CallFunc_GetCameraLocation_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, float CallFunc_VSize_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_2, float CallFunc_GetValueAtLevel_ReturnValue_3, float CallFunc_Multiply_FloatFloat_ReturnValue_2, float K2Node_Event_Damage_1, const struct FGameplayTagContainer& K2Node_Event_DamageTags_1, const struct FVector& K2Node_Event_Momentum_1, const struct FHitResult& K2Node_Event_HitInfo_1, class AFortPawn* K2Node_Event_InstigatedBy_1, class AActor* K2Node_Event_DamageCauser_1, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext_1, float CallFunc_Divide_FloatFloat_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_5, TArray<enum class EFortTeamAffiliation>& K2Node_MakeArray_Array_1, uint8 CallFunc_GetActorTeam_ReturnValue, float K2Node_Event_Damage, const struct FGameplayTagContainer& K2Node_Event_DamageTags, const struct FVector& K2Node_Event_Momentum, const struct FHitResult& K2Node_Event_HitInfo, class AController* K2Node_Event_InstigatedBy, class AActor* K2Node_Event_DamageCauser, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_3, class AFortPlayerState* CallFunc_GetOwningPlayerState_ReturnValue, const struct FTransform& CallFunc_Conv_VectorToTransform_ReturnValue, class AFortPlayerPawn* CallFunc_GetCurrentPawn_ReturnValue, class ABuildingGameplayActor* CallFunc_SpawnBuildingGameplayActor_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "ExecuteUbergraph_Trap_Floor_Player_Campfire");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Campfire_C", "ExecuteUbergraph_Trap_Floor_Player_Campfire");
+
+	Params::ATrap_Floor_Player_Campfire_C_ExecuteUbergraph_Trap_Floor_Player_Campfire_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_MakeStruct_ParticleSysParam = K2Node_MakeStruct_ParticleSysParam;
@@ -662,6 +736,4 @@ void ATrap_Floor_Player_Campfire_C::ExecuteUbergraph_Trap_Floor_Player_Campfire(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

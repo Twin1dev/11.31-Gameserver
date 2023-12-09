@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass WinterQuest_PresentsCounter_Notifier.WinterQuest_PresentsCounter_Notifier_C
+// (None)
+
+class UClass* UWinterQuest_PresentsCounter_Notifier_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WinterQuest_PresentsCounter_Notifier_C");
+
+	return Clss;
+}
+
+
+// WinterQuest_PresentsCounter_Notifier_C WinterQuest_PresentsCounter_Notifier.Default__WinterQuest_PresentsCounter_Notifier_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UWinterQuest_PresentsCounter_Notifier_C* UWinterQuest_PresentsCounter_Notifier_C::GetDefaultObj()
+{
+	static class UWinterQuest_PresentsCounter_Notifier_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWinterQuest_PresentsCounter_Notifier_C*>(UWinterQuest_PresentsCounter_Notifier_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function WinterQuest_PresentsCounter_Notifier.WinterQuest_PresentsCounter_Notifier_C.ShowPresentNotification
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UWinterQuest_PresentsCounter_Notifier_C::ShowPresentNotification(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("WinterQuest_PresentsCounter_Notifier_C", "ShowPresentNotification");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuest_PresentsCounter_Notifier_C_ShowPresentNotification_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuest_PresentsCounter_Notifier_C", "ShowPresentNotification");
+
+	Params::UWinterQuest_PresentsCounter_Notifier_C_ShowPresentNotification_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 	Parms.CallFunc_PlayAnimation_ReturnValue_1 = CallFunc_PlayAnimation_ReturnValue_1;
@@ -42,9 +70,12 @@ void UWinterQuest_PresentsCounter_Notifier_C::ShowPresentNotification(class UUMG
 
 void UWinterQuest_PresentsCounter_Notifier_C::OnShowCountdown(bool bShowCountDown)
 {
-	static auto Func = Class->GetFunction("WinterQuest_PresentsCounter_Notifier_C", "OnShowCountdown");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuest_PresentsCounter_Notifier_C_OnShowCountdown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuest_PresentsCounter_Notifier_C", "OnShowCountdown");
+
+	Params::UWinterQuest_PresentsCounter_Notifier_C_OnShowCountdown_Params Parms{};
 
 	Parms.bShowCountDown = bShowCountDown;
 
@@ -59,12 +90,14 @@ void UWinterQuest_PresentsCounter_Notifier_C::OnShowCountdown(bool bShowCountDow
 
 void UWinterQuest_PresentsCounter_Notifier_C::Construct()
 {
-	static auto Func = Class->GetFunction("WinterQuest_PresentsCounter_Notifier_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuest_PresentsCounter_Notifier_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuest_PresentsCounter_Notifier_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -78,9 +111,12 @@ void UWinterQuest_PresentsCounter_Notifier_C::Construct()
 
 void UWinterQuest_PresentsCounter_Notifier_C::ExecuteUbergraph_WinterQuest_PresentsCounter_Notifier(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool K2Node_Event_bShowCountdown)
 {
-	static auto Func = Class->GetFunction("WinterQuest_PresentsCounter_Notifier_C", "ExecuteUbergraph_WinterQuest_PresentsCounter_Notifier");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuest_PresentsCounter_Notifier_C_ExecuteUbergraph_WinterQuest_PresentsCounter_Notifier_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuest_PresentsCounter_Notifier_C", "ExecuteUbergraph_WinterQuest_PresentsCounter_Notifier");
+
+	Params::UWinterQuest_PresentsCounter_Notifier_C_ExecuteUbergraph_WinterQuest_PresentsCounter_Notifier_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -92,6 +128,4 @@ void UWinterQuest_PresentsCounter_Notifier_C::ExecuteUbergraph_WinterQuest_Prese
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

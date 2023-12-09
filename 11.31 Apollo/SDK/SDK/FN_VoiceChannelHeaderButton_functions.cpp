@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass VoiceChannelHeaderButton.VoiceChannelHeaderButton_C
+// (None)
+
+class UClass* UVoiceChannelHeaderButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VoiceChannelHeaderButton_C");
+
+	return Clss;
+}
+
+
+// VoiceChannelHeaderButton_C VoiceChannelHeaderButton.Default__VoiceChannelHeaderButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UVoiceChannelHeaderButton_C* UVoiceChannelHeaderButton_C::GetDefaultObj()
+{
+	static class UVoiceChannelHeaderButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UVoiceChannelHeaderButton_C*>(UVoiceChannelHeaderButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function VoiceChannelHeaderButton.VoiceChannelHeaderButton_C.OnUpdateVisuals
@@ -24,9 +49,12 @@ namespace SDK
 
 void UVoiceChannelHeaderButton_C::OnUpdateVisuals(bool bIsActive, bool bRepresentingPlatformChat, bool bChannelAvailable)
 {
-	static auto Func = Class->GetFunction("VoiceChannelHeaderButton_C", "OnUpdateVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelHeaderButton_C_OnUpdateVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelHeaderButton_C", "OnUpdateVisuals");
+
+	Params::UVoiceChannelHeaderButton_C_OnUpdateVisuals_Params Parms{};
 
 	Parms.bIsActive = bIsActive;
 	Parms.bRepresentingPlatformChat = bRepresentingPlatformChat;
@@ -43,12 +71,14 @@ void UVoiceChannelHeaderButton_C::OnUpdateVisuals(bool bIsActive, bool bRepresen
 
 void UVoiceChannelHeaderButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("VoiceChannelHeaderButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelHeaderButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelHeaderButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -59,12 +89,14 @@ void UVoiceChannelHeaderButton_C::BP_OnHovered()
 
 void UVoiceChannelHeaderButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("VoiceChannelHeaderButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelHeaderButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelHeaderButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -75,12 +107,14 @@ void UVoiceChannelHeaderButton_C::BP_OnUnhovered()
 
 void UVoiceChannelHeaderButton_C::BP_OnDisabled()
 {
-	static auto Func = Class->GetFunction("VoiceChannelHeaderButton_C", "BP_OnDisabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelHeaderButton_C_BP_OnDisabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelHeaderButton_C", "BP_OnDisabled");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -91,12 +125,14 @@ void UVoiceChannelHeaderButton_C::BP_OnDisabled()
 
 void UVoiceChannelHeaderButton_C::BP_OnEnabled()
 {
-	static auto Func = Class->GetFunction("VoiceChannelHeaderButton_C", "BP_OnEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelHeaderButton_C_BP_OnEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelHeaderButton_C", "BP_OnEnabled");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -121,9 +157,12 @@ void UVoiceChannelHeaderButton_C::BP_OnEnabled()
 
 void UVoiceChannelHeaderButton_C::ExecuteUbergraph_VoiceChannelHeaderButton(int32 EntryPoint, bool K2Node_Event_bIsActive, bool K2Node_Event_bRepresentingPlatformChat, bool K2Node_Event_bChannelAvailable, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, bool CallFunc_CanJoinChannel_ReturnValue, bool CallFunc_CanJoinChannel_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue_1, bool CallFunc_IsActiveChannel_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsActiveChannel_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("VoiceChannelHeaderButton_C", "ExecuteUbergraph_VoiceChannelHeaderButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelHeaderButton_C", "ExecuteUbergraph_VoiceChannelHeaderButton");
+
+	Params::UVoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bIsActive = K2Node_Event_bIsActive;
@@ -146,6 +185,4 @@ void UVoiceChannelHeaderButton_C::ExecuteUbergraph_VoiceChannelHeaderButton(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

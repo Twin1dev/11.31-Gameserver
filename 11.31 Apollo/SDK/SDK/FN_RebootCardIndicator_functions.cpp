@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,22 +12,53 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass RebootCardIndicator.RebootCardIndicator_C
+// (None)
+
+class UClass* URebootCardIndicator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("RebootCardIndicator_C");
+
+	return Clss;
+}
+
+
+// RebootCardIndicator_C RebootCardIndicator.Default__RebootCardIndicator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class URebootCardIndicator_C* URebootCardIndicator_C::GetDefaultObj()
+{
+	static class URebootCardIndicator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<URebootCardIndicator_C*>(URebootCardIndicator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function RebootCardIndicator.RebootCardIndicator_C.bp_UpdateCountdownText
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                              CallFunc_Subtract_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_FTrunc_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Max_ReturnValue                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 void URebootCardIndicator_C::bp_UpdateCountdownText(float CallFunc_Subtract_FloatFloat_ReturnValue, int32 CallFunc_FTrunc_ReturnValue, int32 CallFunc_Max_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("RebootCardIndicator_C", "bp_UpdateCountdownText");
+	static class UFunction* Func = nullptr;
 
-	Params::URebootCardIndicator_C_bp_UpdateCountdownText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RebootCardIndicator_C", "bp_UpdateCountdownText");
+
+	Params::URebootCardIndicator_C_bp_UpdateCountdownText_Params Parms{};
 
 	Parms.CallFunc_Subtract_FloatFloat_ReturnValue = CallFunc_Subtract_FloatFloat_ReturnValue;
 	Parms.CallFunc_FTrunc_ReturnValue = CallFunc_FTrunc_ReturnValue;
@@ -53,9 +81,12 @@ void URebootCardIndicator_C::bp_UpdateCountdownText(float CallFunc_Subtract_Floa
 
 void URebootCardIndicator_C::SetupCountdown(float StartTimeLocalWorld, float EndTimeLocalWorld)
 {
-	static auto Func = Class->GetFunction("RebootCardIndicator_C", "SetupCountdown");
+	static class UFunction* Func = nullptr;
 
-	Params::URebootCardIndicator_C_SetupCountdown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RebootCardIndicator_C", "SetupCountdown");
+
+	Params::URebootCardIndicator_C_SetupCountdown_Params Parms{};
 
 	Parms.StartTimeLocalWorld = StartTimeLocalWorld;
 	Parms.EndTimeLocalWorld = EndTimeLocalWorld;
@@ -71,12 +102,14 @@ void URebootCardIndicator_C::SetupCountdown(float StartTimeLocalWorld, float End
 
 void URebootCardIndicator_C::UpdateCountdownText()
 {
-	static auto Func = Class->GetFunction("RebootCardIndicator_C", "UpdateCountdownText");
+	static class UFunction* Func = nullptr;
 
-	Params::URebootCardIndicator_C_UpdateCountdownText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RebootCardIndicator_C", "UpdateCountdownText");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -88,9 +121,12 @@ void URebootCardIndicator_C::UpdateCountdownText()
 
 void URebootCardIndicator_C::HandleDisplayForSelf(bool bSelf)
 {
-	static auto Func = Class->GetFunction("RebootCardIndicator_C", "HandleDisplayForSelf");
+	static class UFunction* Func = nullptr;
 
-	Params::URebootCardIndicator_C_HandleDisplayForSelf_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RebootCardIndicator_C", "HandleDisplayForSelf");
+
+	Params::URebootCardIndicator_C_HandleDisplayForSelf_Params Parms{};
 
 	Parms.bSelf = bSelf;
 
@@ -124,9 +160,12 @@ void URebootCardIndicator_C::HandleDisplayForSelf(bool bSelf)
 
 void URebootCardIndicator_C::ExecuteUbergraph_RebootCardIndicator(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, float Temp_float_Variable, bool Temp_bool_Variable, float K2Node_Event_StartTimeLocalWorld, float K2Node_Event_EndTimeLocalWorld, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, bool K2Node_Event_bSelf, enum class ESlateVisibility Temp_byte_Variable_1, float CallFunc_Subtract_FloatFloat_ReturnValue_2, enum class ESlateVisibility K2Node_Select_Default, int32 CallFunc_FTrunc_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("RebootCardIndicator_C", "ExecuteUbergraph_RebootCardIndicator");
+	static class UFunction* Func = nullptr;
 
-	Params::URebootCardIndicator_C_ExecuteUbergraph_RebootCardIndicator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RebootCardIndicator_C", "ExecuteUbergraph_RebootCardIndicator");
+
+	Params::URebootCardIndicator_C_ExecuteUbergraph_RebootCardIndicator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -154,6 +193,4 @@ void URebootCardIndicator_C::ExecuteUbergraph_RebootCardIndicator(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

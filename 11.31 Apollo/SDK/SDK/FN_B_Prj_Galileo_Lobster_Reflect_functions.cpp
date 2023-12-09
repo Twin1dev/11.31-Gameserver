@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_Prj_Galileo_Lobster_Reflect.B_Prj_Galileo_Lobster_Reflect_C
+// (Actor)
+
+class UClass* AB_Prj_Galileo_Lobster_Reflect_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Prj_Galileo_Lobster_Reflect_C");
+
+	return Clss;
+}
+
+
+// B_Prj_Galileo_Lobster_Reflect_C B_Prj_Galileo_Lobster_Reflect.Default__B_Prj_Galileo_Lobster_Reflect_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Prj_Galileo_Lobster_Reflect_C* AB_Prj_Galileo_Lobster_Reflect_C::GetDefaultObj()
+{
+	static class AB_Prj_Galileo_Lobster_Reflect_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Prj_Galileo_Lobster_Reflect_C*>(AB_Prj_Galileo_Lobster_Reflect_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_Prj_Galileo_Lobster_Reflect.B_Prj_Galileo_Lobster_Reflect_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void AB_Prj_Galileo_Lobster_Reflect_C::UserConstructionScript(float CallFunc_GetValueAtLevel_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Prj_Galileo_Lobster_Reflect_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Galileo_Lobster_Reflect_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Galileo_Lobster_Reflect_C", "UserConstructionScript");
+
+	Params::AB_Prj_Galileo_Lobster_Reflect_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_GetValueAtLevel_ReturnValue = CallFunc_GetValueAtLevel_ReturnValue;
 
@@ -40,9 +68,12 @@ void AB_Prj_Galileo_Lobster_Reflect_C::UserConstructionScript(float CallFunc_Get
 
 void AB_Prj_Galileo_Lobster_Reflect_C::OnStop(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_Galileo_Lobster_Reflect_C", "OnStop");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Galileo_Lobster_Reflect_C_OnStop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Galileo_Lobster_Reflect_C", "OnStop");
+
+	Params::AB_Prj_Galileo_Lobster_Reflect_C_OnStop_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -57,12 +88,14 @@ void AB_Prj_Galileo_Lobster_Reflect_C::OnStop(struct FHitResult& Hit)
 
 void AB_Prj_Galileo_Lobster_Reflect_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Prj_Galileo_Lobster_Reflect_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Galileo_Lobster_Reflect_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Galileo_Lobster_Reflect_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -117,9 +150,12 @@ void AB_Prj_Galileo_Lobster_Reflect_C::ReceiveBeginPlay()
 
 void AB_Prj_Galileo_Lobster_Reflect_C::ExecuteUbergraph_B_Prj_Galileo_Lobster_Reflect(int32 EntryPoint, bool Temp_bool_Variable, bool CallFunc_IsMobilePlatform_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, const struct FHitResult& K2Node_Event_Hit, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, class UFortAbilitySystemComponent* CallFunc_GetFortAbilitySystemComponent_ReturnValue, bool CallFunc_IsValid_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_BooleanOR_ReturnValue, class USoundBase* K2Node_Select_Default, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, class UDecalComponent* CallFunc_SpawnDecalAtLocation_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_1, const struct FVector& CallFunc_GetMuzzleLocation_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue, const struct FVector& CallFunc_GetVelocity_ReturnValue, float CallFunc_VSize_ReturnValue, float CallFunc_MapRangeClamped_ReturnValue, class UFortAbilitySystemComponent* CallFunc_GetFortAbilitySystemComponent_ReturnValue_1, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_1, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool CallFunc_SetStaticMesh_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Prj_Galileo_Lobster_Reflect_C", "ExecuteUbergraph_B_Prj_Galileo_Lobster_Reflect");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Galileo_Lobster_Reflect_C_ExecuteUbergraph_B_Prj_Galileo_Lobster_Reflect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Galileo_Lobster_Reflect_C", "ExecuteUbergraph_B_Prj_Galileo_Lobster_Reflect");
+
+	Params::AB_Prj_Galileo_Lobster_Reflect_C_ExecuteUbergraph_B_Prj_Galileo_Lobster_Reflect_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -172,6 +208,4 @@ void AB_Prj_Galileo_Lobster_Reflect_C::ExecuteUbergraph_B_Prj_Galileo_Lobster_Re
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

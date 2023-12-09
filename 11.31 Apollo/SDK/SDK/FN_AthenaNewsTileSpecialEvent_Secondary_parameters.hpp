@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,20 +12,6 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
-
-// 0x0 (0x0 - 0x0)
-// Function AthenaNewsTileSpecialEvent_Secondary.AthenaNewsTileSpecialEvent_Secondary_C.PlayIntroAnim
-struct UAthenaNewsTileSpecialEvent_Secondary_C_PlayIntroAnim_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function AthenaNewsTileSpecialEvent_Secondary.AthenaNewsTileSpecialEvent_Secondary_C.SetDefaultImage
-struct UAthenaNewsTileSpecialEvent_Secondary_C_SetDefaultImage_Params
-{
-public:
-};
 
 // 0x10 (0x10 - 0x0)
 // Function AthenaNewsTileSpecialEvent_Secondary.AthenaNewsTileSpecialEvent_Secondary_C.ExecuteUbergraph_AthenaNewsTileSpecialEvent_Secondary
@@ -43,6 +26,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

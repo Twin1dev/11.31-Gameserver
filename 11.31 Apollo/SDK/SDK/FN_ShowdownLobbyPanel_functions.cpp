@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ShowdownLobbyPanel.ShowdownLobbyPanel_C
+// (None)
+
+class UClass* UShowdownLobbyPanel_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ShowdownLobbyPanel_C");
+
+	return Clss;
+}
+
+
+// ShowdownLobbyPanel_C ShowdownLobbyPanel.Default__ShowdownLobbyPanel_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UShowdownLobbyPanel_C* UShowdownLobbyPanel_C::GetDefaultObj()
+{
+	static class UShowdownLobbyPanel_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UShowdownLobbyPanel_C*>(UShowdownLobbyPanel_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ShowdownLobbyPanel.ShowdownLobbyPanel_C.InputTypeChanged
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UShowdownLobbyPanel_C::InputTypeChanged(bool IsGamepad)
 {
-	static auto Func = Class->GetFunction("ShowdownLobbyPanel_C", "InputTypeChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownLobbyPanel_C_InputTypeChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownLobbyPanel_C", "InputTypeChanged");
+
+	Params::UShowdownLobbyPanel_C_InputTypeChanged_Params Parms{};
 
 	Parms.IsGamepad = IsGamepad;
 
@@ -39,12 +67,14 @@ void UShowdownLobbyPanel_C::InputTypeChanged(bool IsGamepad)
 
 void UShowdownLobbyPanel_C::HandleCrossplayChanged()
 {
-	static auto Func = Class->GetFunction("ShowdownLobbyPanel_C", "HandleCrossplayChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownLobbyPanel_C_HandleCrossplayChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownLobbyPanel_C", "HandleCrossplayChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void UShowdownLobbyPanel_C::HandleCrossplayChanged()
 
 void UShowdownLobbyPanel_C::UpdateColors()
 {
-	static auto Func = Class->GetFunction("ShowdownLobbyPanel_C", "UpdateColors");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownLobbyPanel_C_UpdateColors_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownLobbyPanel_C", "UpdateColors");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -68,12 +100,12 @@ void UShowdownLobbyPanel_C::UpdateColors()
 // Function ShowdownLobbyPanel.ShowdownLobbyPanel_C.Refresh
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
-// class FText                        Temp_text_Variable_2                                             ()
-// class FText                        Temp_text_Variable_3                                             ()
-// class FText                        Temp_text_Variable_4                                             ()
-// class FText                        Temp_text_Variable_5                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
+// class FText                        Temp_text_Variable_2                                             (None)
+// class FText                        Temp_text_Variable_3                                             (None)
+// class FText                        Temp_text_Variable_4                                             (None)
+// class FText                        Temp_text_Variable_5                                             (None)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              Temp_float_Variable                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Temp_float_Variable_1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -110,7 +142,7 @@ void UShowdownLobbyPanel_C::UpdateColors()
 // int32                              CallFunc_Subtract_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // int32                              CallFunc_GetCurrentEventTeamNumMatchesPlayed_ReturnValue_1       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetTournamentMatchCap_ReturnValue_2                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Subtract_IntInt_ReturnValue_1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -122,17 +154,17 @@ void UShowdownLobbyPanel_C::UpdateColors()
 // enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_5                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UWidget*                     K2Node_Select_Default_2                                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
-// class FText                        CallFunc_MakeLiteralText_ReturnValue_1                           ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
+// class FText                        CallFunc_MakeLiteralText_ReturnValue_1                           (None)
 // int32                              CallFunc_GetCurrentEventScore_ReturnValue_1                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_3                                          ()
+// class FText                        K2Node_Select_Default_3                                          (None)
 // int32                              CallFunc_GetBestEventScore_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // bool                               CallFunc_Greater_IntInt_ReturnValue_2                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 // enum class ESlateVisibility        K2Node_Select_Default_4                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 // int32                              CallFunc_GetCurrentEventScore_ReturnValue_2                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UVerticalBoxSlot*            CallFunc_SlotAsVerticalBoxSlot_ReturnValue                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_PauseAnimation_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -145,20 +177,20 @@ void UShowdownLobbyPanel_C::UpdateColors()
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Subtract_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Temp_float_Variable_2                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         ()
-// class FText                        CallFunc_TextToUpper_ReturnValue_1                               ()
-// class FText                        CallFunc_TextToUpper_ReturnValue_2                               ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue_1                               (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue_2                               (None)
 // int32                              CallFunc_GetTournamentPinUnlockScore_ReturnValue_2               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue_2                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue_3                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetText_ReturnValue                                     ()
+// class FText                        CallFunc_GetText_ReturnValue                                     (None)
 // class UWidget*                     K2Node_Select_Default_5                                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_6                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetTournamentPinUnlockScore_ReturnValue_3               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // class FString                      CallFunc_GetEventId_ReturnValue                                  (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_StrStr_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_6                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -167,9 +199,12 @@ void UShowdownLobbyPanel_C::UpdateColors()
 
 void UShowdownLobbyPanel_C::Refresh(class FText Temp_text_Variable, class FText Temp_text_Variable_1, class FText Temp_text_Variable_2, class FText Temp_text_Variable_3, class FText Temp_text_Variable_4, class FText Temp_text_Variable_5, bool Temp_bool_Variable, float Temp_float_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_2, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class EFortShowdownEventState Temp_byte_Variable_4, bool CallFunc_UsesScheduledMatchmaking_ReturnValue, bool CallFunc_UsesScheduledMatchmaking_ReturnValue_1, bool CallFunc_UsesScheduledMatchmaking_ReturnValue_2, const class FString& CallFunc_GetTournamentSeriesId_ReturnValue, int32 CallFunc_GetCurrentEventScore_ReturnValue, int32 CallFunc_GetTournamentPinUnlockScore_ReturnValue, bool CallFunc_IsWorldCupQualifierEvent_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_5, float K2Node_Select_Default, enum class EFortShowdownEventState CallFunc_GetEventTimeState_ReturnValue, bool CallFunc_DoCalloutMFARequirement_ReturnValue, bool CallFunc_DoCalloutMFARequirement_ReturnValue_1, int32 CallFunc_GetTournamentPinUnlockScore_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue, int32 CallFunc_GetTournamentMatchCap_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue_1, int32 CallFunc_GetCurrentEventTeamNumMatchesPlayed_ReturnValue, int32 CallFunc_GetTournamentMatchCap_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable_6, int32 CallFunc_Subtract_IntInt_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, int32 CallFunc_GetCurrentEventTeamNumMatchesPlayed_ReturnValue_1, int32 CallFunc_GetTournamentMatchCap_ReturnValue_2, int32 CallFunc_Subtract_IntInt_ReturnValue_1, bool CallFunc_GreaterEqual_IntInt_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, bool Temp_bool_Variable_4, bool CallFunc_BooleanOR_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_1, bool Temp_bool_Variable_5, class UWidget* K2Node_Select_Default_2, class FText CallFunc_MakeLiteralText_ReturnValue, class FText CallFunc_MakeLiteralText_ReturnValue_1, int32 CallFunc_GetCurrentEventScore_ReturnValue_1, class FText K2Node_Select_Default_3, int32 CallFunc_GetBestEventScore_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, bool CallFunc_Greater_IntInt_ReturnValue_2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_4, class FText CallFunc_TextToUpper_ReturnValue, int32 CallFunc_GetCurrentEventScore_ReturnValue_2, class UVerticalBoxSlot* CallFunc_SlotAsVerticalBoxSlot_ReturnValue, float CallFunc_PauseAnimation_ReturnValue, float CallFunc_GetStartTime_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin, float CallFunc_PauseAnimation_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_GetEndTime_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float Temp_float_Variable_2, class FText CallFunc_Conv_StringToText_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_1, class FText CallFunc_TextToUpper_ReturnValue_1, class FText CallFunc_TextToUpper_ReturnValue_2, int32 CallFunc_GetTournamentPinUnlockScore_ReturnValue_2, bool CallFunc_GreaterEqual_IntInt_ReturnValue_2, bool CallFunc_GreaterEqual_IntInt_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue_2, class FText CallFunc_GetText_ReturnValue, class UWidget* K2Node_Select_Default_5, bool CallFunc_TextIsEmpty_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_6, int32 CallFunc_GetTournamentPinUnlockScore_ReturnValue_3, class FText CallFunc_Conv_IntToText_ReturnValue, const class FString& CallFunc_GetEventId_ReturnValue, bool CallFunc_EqualEqual_StrStr_ReturnValue, bool Temp_bool_Variable_6, float K2Node_Select_Default_7, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("ShowdownLobbyPanel_C", "Refresh");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownLobbyPanel_C_Refresh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownLobbyPanel_C", "Refresh");
+
+	Params::UShowdownLobbyPanel_C_Refresh_Params Parms{};
 
 	Parms.Temp_text_Variable = Temp_text_Variable;
 	Parms.Temp_text_Variable_1 = Temp_text_Variable_1;
@@ -279,12 +314,14 @@ void UShowdownLobbyPanel_C::Refresh(class FText Temp_text_Variable, class FText 
 
 void UShowdownLobbyPanel_C::RefreshDataBP()
 {
-	static auto Func = Class->GetFunction("ShowdownLobbyPanel_C", "RefreshDataBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownLobbyPanel_C_RefreshDataBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownLobbyPanel_C", "RefreshDataBP");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -295,12 +332,14 @@ void UShowdownLobbyPanel_C::RefreshDataBP()
 
 void UShowdownLobbyPanel_C::Construct()
 {
-	static auto Func = Class->GetFunction("ShowdownLobbyPanel_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownLobbyPanel_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownLobbyPanel_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -312,9 +351,12 @@ void UShowdownLobbyPanel_C::Construct()
 
 void UShowdownLobbyPanel_C::BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ShowdownLobbyPanel_C", "BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownLobbyPanel_C", "BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UShowdownLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -329,12 +371,14 @@ void UShowdownLobbyPanel_C::BndEvt__EventDetailsButton_K2Node_ComponentBoundEven
 
 void UShowdownLobbyPanel_C::EventColorize()
 {
-	static auto Func = Class->GetFunction("ShowdownLobbyPanel_C", "EventColorize");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownLobbyPanel_C_EventColorize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownLobbyPanel_C", "EventColorize");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -346,9 +390,12 @@ void UShowdownLobbyPanel_C::EventColorize()
 
 void UShowdownLobbyPanel_C::BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ShowdownLobbyPanel_C", "BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownLobbyPanel_C", "BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UShowdownLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -364,9 +411,12 @@ void UShowdownLobbyPanel_C::BndEvt__EventDetailsButton_K2Node_ComponentBoundEven
 
 void UShowdownLobbyPanel_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("ShowdownLobbyPanel_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownLobbyPanel_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownLobbyPanel_C", "PreConstruct");
+
+	Params::UShowdownLobbyPanel_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -382,9 +432,12 @@ void UShowdownLobbyPanel_C::PreConstruct(bool IsDesignTime)
 
 void UShowdownLobbyPanel_C::BrandingToggle(bool HasBranding)
 {
-	static auto Func = Class->GetFunction("ShowdownLobbyPanel_C", "BrandingToggle");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownLobbyPanel_C_BrandingToggle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownLobbyPanel_C", "BrandingToggle");
+
+	Params::UShowdownLobbyPanel_C_BrandingToggle_Params Parms{};
 
 	Parms.HasBranding = HasBranding;
 
@@ -400,9 +453,12 @@ void UShowdownLobbyPanel_C::BrandingToggle(bool HasBranding)
 
 void UShowdownLobbyPanel_C::EventSwitchUI(enum class ECommonInputType bNewInputType)
 {
-	static auto Func = Class->GetFunction("ShowdownLobbyPanel_C", "EventSwitchUI");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownLobbyPanel_C_EventSwitchUI_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownLobbyPanel_C", "EventSwitchUI");
+
+	Params::UShowdownLobbyPanel_C_EventSwitchUI_Params Parms{};
 
 	Parms.bNewInputType = bNewInputType;
 
@@ -433,7 +489,7 @@ void UShowdownLobbyPanel_C::EventSwitchUI(enum class ECommonInputType bNewInputT
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_1                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_4                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 // float                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FMargin                     K2Node_MakeStruct_Margin                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -473,9 +529,12 @@ void UShowdownLobbyPanel_C::EventSwitchUI(enum class ECommonInputType bNewInputT
 
 void UShowdownLobbyPanel_C::ExecuteUbergraph_ShowdownLobbyPanel(int32 EntryPoint, enum class ECommonInputType K2Node_CustomEvent_bNewInputType, class UCommonInputSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, bool Temp_bool_Variable_1, float Temp_float_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable_2, bool Temp_bool_Variable_3, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, float Temp_float_Variable_2, bool CallFunc_IsUsingGamepad_ReturnValue, float Temp_float_Variable_3, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, bool Temp_bool_Variable_4, const struct FSlateColor& K2Node_MakeStruct_SlateColor, float K2Node_Select_Default, const struct FMargin& K2Node_MakeStruct_Margin, class UCommonButton* K2Node_ComponentBoundEvent_Button, float CallFunc_GetStartTime_ReturnValue, float CallFunc_GetEndTime_ReturnValue, float CallFunc_GetStartTime_ReturnValue_1, float CallFunc_GetEndTime_ReturnValue_1, class UFortPartyContext* CallFunc_GetContext_ReturnValue_1, float CallFunc_PauseAnimation_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_2, float CallFunc_PauseAnimation_ReturnValue_3, bool CallFunc_LessEqual_FloatFloat_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue, float Temp_float_Variable_4, bool K2Node_Event_IsDesignTime, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue_1, bool Temp_bool_Variable_5, float Temp_float_Variable_5, float K2Node_Select_Default_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, float K2Node_Select_Default_2, bool K2Node_CustomEvent_hasBranding, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, class UWidget* K2Node_Select_Default_3, float K2Node_Select_Default_4, const struct FMargin& K2Node_MakeStruct_Margin_1, enum class ESlateVisibility K2Node_Select_Default_5)
 {
-	static auto Func = Class->GetFunction("ShowdownLobbyPanel_C", "ExecuteUbergraph_ShowdownLobbyPanel");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownLobbyPanel_C_ExecuteUbergraph_ShowdownLobbyPanel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownLobbyPanel_C", "ExecuteUbergraph_ShowdownLobbyPanel");
+
+	Params::UShowdownLobbyPanel_C_ExecuteUbergraph_ShowdownLobbyPanel_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_bNewInputType = K2Node_CustomEvent_bNewInputType;
@@ -540,6 +599,4 @@ void UShowdownLobbyPanel_C::ExecuteUbergraph_ShowdownLobbyPanel(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass CircleArrowButtonComTutorial.CircleArrowButtonComTutorial_C
+// (None)
+
+class UClass* UCircleArrowButtonComTutorial_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CircleArrowButtonComTutorial_C");
+
+	return Clss;
+}
+
+
+// CircleArrowButtonComTutorial_C CircleArrowButtonComTutorial.Default__CircleArrowButtonComTutorial_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCircleArrowButtonComTutorial_C* UCircleArrowButtonComTutorial_C::GetDefaultObj()
+{
+	static class UCircleArrowButtonComTutorial_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCircleArrowButtonComTutorial_C*>(UCircleArrowButtonComTutorial_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function CircleArrowButtonComTutorial.CircleArrowButtonComTutorial_C.UpdateArrowColor
@@ -24,9 +49,12 @@ namespace SDK
 
 void UCircleArrowButtonComTutorial_C::UpdateArrowColor(const struct FLinearColor& Color, const struct FLinearColor& HoverColor, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("CircleArrowButtonComTutorial_C", "UpdateArrowColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UCircleArrowButtonComTutorial_C_UpdateArrowColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CircleArrowButtonComTutorial_C", "UpdateArrowColor");
+
+	Params::UCircleArrowButtonComTutorial_C_UpdateArrowColor_Params Parms{};
 
 	Parms.Color = Color;
 	Parms.HoverColor = HoverColor;
@@ -44,9 +72,12 @@ void UCircleArrowButtonComTutorial_C::UpdateArrowColor(const struct FLinearColor
 
 void UCircleArrowButtonComTutorial_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("CircleArrowButtonComTutorial_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCircleArrowButtonComTutorial_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CircleArrowButtonComTutorial_C", "PreConstruct");
+
+	Params::UCircleArrowButtonComTutorial_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -61,12 +92,14 @@ void UCircleArrowButtonComTutorial_C::PreConstruct(bool IsDesignTime)
 
 void UCircleArrowButtonComTutorial_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("CircleArrowButtonComTutorial_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UCircleArrowButtonComTutorial_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CircleArrowButtonComTutorial_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -77,12 +110,14 @@ void UCircleArrowButtonComTutorial_C::BP_OnHovered()
 
 void UCircleArrowButtonComTutorial_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("CircleArrowButtonComTutorial_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UCircleArrowButtonComTutorial_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CircleArrowButtonComTutorial_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -93,12 +128,14 @@ void UCircleArrowButtonComTutorial_C::BP_OnUnhovered()
 
 void UCircleArrowButtonComTutorial_C::BP_OnClicked()
 {
-	static auto Func = Class->GetFunction("CircleArrowButtonComTutorial_C", "BP_OnClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UCircleArrowButtonComTutorial_C_BP_OnClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CircleArrowButtonComTutorial_C", "BP_OnClicked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -124,9 +161,12 @@ void UCircleArrowButtonComTutorial_C::BP_OnClicked()
 
 void UCircleArrowButtonComTutorial_C::ExecuteUbergraph_CircleArrowButtonComTutorial(int32 EntryPoint, const struct FVector2D& Temp_struct_Variable, const struct FVector2D& Temp_struct_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool K2Node_Event_IsDesignTime, enum class ESlateVisibility K2Node_Select_Default, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, bool Temp_bool_Variable_1, const struct FVector2D& K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("CircleArrowButtonComTutorial_C", "ExecuteUbergraph_CircleArrowButtonComTutorial");
+	static class UFunction* Func = nullptr;
 
-	Params::UCircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CircleArrowButtonComTutorial_C", "ExecuteUbergraph_CircleArrowButtonComTutorial");
+
+	Params::UCircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
@@ -150,6 +190,4 @@ void UCircleArrowButtonComTutorial_C::ExecuteUbergraph_CircleArrowButtonComTutor
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

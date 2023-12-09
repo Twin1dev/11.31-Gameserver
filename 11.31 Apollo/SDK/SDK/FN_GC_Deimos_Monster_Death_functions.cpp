@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GC_Deimos_Monster_Death.GC_Deimos_Monster_Death_C
+// (Actor)
+
+class UClass* AGC_Deimos_Monster_Death_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GC_Deimos_Monster_Death_C");
+
+	return Clss;
+}
+
+
+// GC_Deimos_Monster_Death_C GC_Deimos_Monster_Death.Default__GC_Deimos_Monster_Death_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGC_Deimos_Monster_Death_C* AGC_Deimos_Monster_Death_C::GetDefaultObj()
+{
+	static class AGC_Deimos_Monster_Death_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGC_Deimos_Monster_Death_C*>(AGC_Deimos_Monster_Death_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GC_Deimos_Monster_Death.GC_Deimos_Monster_Death_C.OnBurst
@@ -45,9 +70,12 @@ namespace SDK
 
 void AGC_Deimos_Monster_Death_C::OnBurst(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance, const struct FGameplayTagContainer& BruteTags, const struct FGameplayTagContainer& FiendTags, class UParticleSystemComponent* CallFunc_Array_Get_Item, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface, bool K2Node_DynamicCast_bSuccess, const struct FHitResult& CallFunc_K2_SetRelativeLocation_SweepHitResult, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_1, bool K2Node_DynamicCast_bSuccess_1, TScriptInterface<class IDeimosTypeInfo_C> K2Node_DynamicCast_AsDeimos_Type_Info, bool K2Node_DynamicCast_bSuccess_2, bool Temp_bool_Variable, const struct FLinearColor& CallFunc_GetEnemyColor_Color, const struct FVector& CallFunc_Conv_LinearColorToVector_ReturnValue, float CallFunc_Conv_BoolToFloat_ReturnValue, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue_1, bool Temp_bool_Variable_1, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GC_Deimos_Monster_Death_C", "OnBurst");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Deimos_Monster_Death_C_OnBurst_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Deimos_Monster_Death_C", "OnBurst");
+
+	Params::AGC_Deimos_Monster_Death_C_OnBurst_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -80,6 +108,4 @@ void AGC_Deimos_Monster_Death_C::OnBurst(class AActor* MyTarget, struct FGamepla
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass VBuckSummary.VBuckSummary_C
+// (None)
+
+class UClass* UVBuckSummary_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VBuckSummary_C");
+
+	return Clss;
+}
+
+
+// VBuckSummary_C VBuckSummary.Default__VBuckSummary_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UVBuckSummary_C* UVBuckSummary_C::GetDefaultObj()
+{
+	static class UVBuckSummary_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UVBuckSummary_C*>(UVBuckSummary_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function VBuckSummary.VBuckSummary_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UVBuckSummary_C::Construct()
 {
-	static auto Func = Class->GetFunction("VBuckSummary_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UVBuckSummary_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VBuckSummary_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UVBuckSummary_C::Construct()
 
 void UVBuckSummary_C::OnSetSummary()
 {
-	static auto Func = Class->GetFunction("VBuckSummary_C", "OnSetSummary");
+	static class UFunction* Func = nullptr;
 
-	Params::UVBuckSummary_C_OnSetSummary_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VBuckSummary_C", "OnSetSummary");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,9 +84,12 @@ void UVBuckSummary_C::OnSetSummary()
 
 void UVBuckSummary_C::ExecuteUbergraph_VBuckSummary(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("VBuckSummary_C", "ExecuteUbergraph_VBuckSummary");
+	static class UFunction* Func = nullptr;
 
-	Params::UVBuckSummary_C_ExecuteUbergraph_VBuckSummary_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VBuckSummary_C", "ExecuteUbergraph_VBuckSummary");
+
+	Params::UVBuckSummary_C_ExecuteUbergraph_VBuckSummary_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -68,6 +100,4 @@ void UVBuckSummary_C::ExecuteUbergraph_VBuckSummary(int32 EntryPoint, class UUMG
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

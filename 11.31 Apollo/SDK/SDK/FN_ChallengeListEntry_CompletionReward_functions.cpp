@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ChallengeListEntry_CompletionReward.ChallengeListEntry_CompletionReward_C
+// (None)
+
+class UClass* UChallengeListEntry_CompletionReward_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChallengeListEntry_CompletionReward_C");
+
+	return Clss;
+}
+
+
+// ChallengeListEntry_CompletionReward_C ChallengeListEntry_CompletionReward.Default__ChallengeListEntry_CompletionReward_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChallengeListEntry_CompletionReward_C* UChallengeListEntry_CompletionReward_C::GetDefaultObj()
+{
+	static class UChallengeListEntry_CompletionReward_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChallengeListEntry_CompletionReward_C*>(UChallengeListEntry_CompletionReward_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ChallengeListEntry_CompletionReward.ChallengeListEntry_CompletionReward_C.OnRewardInfoSet
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UChallengeListEntry_CompletionReward_C::OnRewardInfoSet(bool bIsCompleted, struct FFortChallengeSetStyle& DisplayStyle)
 {
-	static auto Func = Class->GetFunction("ChallengeListEntry_CompletionReward_C", "OnRewardInfoSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeListEntry_CompletionReward_C_OnRewardInfoSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeListEntry_CompletionReward_C", "OnRewardInfoSet");
+
+	Params::UChallengeListEntry_CompletionReward_C_OnRewardInfoSet_Params Parms{};
 
 	Parms.bIsCompleted = bIsCompleted;
 	Parms.DisplayStyle = DisplayStyle;
@@ -43,9 +71,12 @@ void UChallengeListEntry_CompletionReward_C::OnRewardInfoSet(bool bIsCompleted, 
 
 void UChallengeListEntry_CompletionReward_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("ChallengeListEntry_CompletionReward_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeListEntry_CompletionReward_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeListEntry_CompletionReward_C", "OnMouseEnter");
+
+	Params::UChallengeListEntry_CompletionReward_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -62,9 +93,12 @@ void UChallengeListEntry_CompletionReward_C::OnMouseEnter(const struct FGeometry
 
 void UChallengeListEntry_CompletionReward_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("ChallengeListEntry_CompletionReward_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeListEntry_CompletionReward_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeListEntry_CompletionReward_C", "OnMouseLeave");
+
+	Params::UChallengeListEntry_CompletionReward_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -86,7 +120,7 @@ void UChallengeListEntry_CompletionReward_C::OnMouseLeave(struct FPointerEvent& 
 // struct FFortChallengeSetStyle      K2Node_Event_DisplayStyle                                        (ConstParm)
 // struct FGeometry                   K2Node_Event_MyGeometry                                          (IsPlainOldData, NoDestructor)
 // struct FPointerEvent               K2Node_Event_MouseEvent_1                                        (ConstParm)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 // float                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FPointerEvent               K2Node_Event_MouseEvent                                          (ConstParm)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimationForward_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -97,9 +131,12 @@ void UChallengeListEntry_CompletionReward_C::OnMouseLeave(struct FPointerEvent& 
 
 void UChallengeListEntry_CompletionReward_C::ExecuteUbergraph_ChallengeListEntry_CompletionReward(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, float Temp_float_Variable, float Temp_float_Variable_1, bool K2Node_Event_bIsCompleted, const struct FFortChallengeSetStyle& K2Node_Event_DisplayStyle, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FSlateColor& K2Node_MakeStruct_SlateColor, float K2Node_Select_Default, const struct FPointerEvent& K2Node_Event_MouseEvent, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("ChallengeListEntry_CompletionReward_C", "ExecuteUbergraph_ChallengeListEntry_CompletionReward");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeListEntry_CompletionReward_C", "ExecuteUbergraph_ChallengeListEntry_CompletionReward");
+
+	Params::UChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -126,6 +163,4 @@ void UChallengeListEntry_CompletionReward_C::ExecuteUbergraph_ChallengeListEntry
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

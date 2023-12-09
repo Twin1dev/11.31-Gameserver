@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass FortRadioButtonGroup.FortRadioButtonGroup_C
+// (None)
+
+class UClass* UFortRadioButtonGroup_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FortRadioButtonGroup_C");
+
+	return Clss;
+}
+
+
+// FortRadioButtonGroup_C FortRadioButtonGroup.Default__FortRadioButtonGroup_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UFortRadioButtonGroup_C* UFortRadioButtonGroup_C::GetDefaultObj()
+{
+	static class UFortRadioButtonGroup_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFortRadioButtonGroup_C*>(UFortRadioButtonGroup_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function FortRadioButtonGroup.FortRadioButtonGroup_C.CenterOnWidget
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UFortRadioButtonGroup_C::CenterOnWidget(class UIconTextButton_C* CallFunc_Array_Get_Item)
 {
-	static auto Func = Class->GetFunction("FortRadioButtonGroup_C", "CenterOnWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortRadioButtonGroup_C_CenterOnWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortRadioButtonGroup_C", "CenterOnWidget");
+
+	Params::UFortRadioButtonGroup_C_CenterOnWidget_Params Parms{};
 
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 
@@ -41,9 +69,12 @@ void UFortRadioButtonGroup_C::CenterOnWidget(class UIconTextButton_C* CallFunc_A
 
 void UFortRadioButtonGroup_C::OnButtonClicked_Bind(class UCommonButton* AssociatedButton, int32 ButtonIndex)
 {
-	static auto Func = Class->GetFunction("FortRadioButtonGroup_C", "OnButtonClicked_Bind");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortRadioButtonGroup_C_OnButtonClicked_Bind_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortRadioButtonGroup_C", "OnButtonClicked_Bind");
+
+	Params::UFortRadioButtonGroup_C_OnButtonClicked_Bind_Params Parms{};
 
 	Parms.AssociatedButton = AssociatedButton;
 	Parms.ButtonIndex = ButtonIndex;
@@ -59,12 +90,14 @@ void UFortRadioButtonGroup_C::OnButtonClicked_Bind(class UCommonButton* Associat
 
 void UFortRadioButtonGroup_C::Destruct()
 {
-	static auto Func = Class->GetFunction("FortRadioButtonGroup_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortRadioButtonGroup_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortRadioButtonGroup_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -75,12 +108,14 @@ void UFortRadioButtonGroup_C::Destruct()
 
 void UFortRadioButtonGroup_C::UpdateButtons()
 {
-	static auto Func = Class->GetFunction("FortRadioButtonGroup_C", "UpdateButtons");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortRadioButtonGroup_C_UpdateButtons_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortRadioButtonGroup_C", "UpdateButtons");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -110,9 +145,12 @@ void UFortRadioButtonGroup_C::UpdateButtons()
 
 void UFortRadioButtonGroup_C::ExecuteUbergraph_FortRadioButtonGroup(int32 EntryPoint, int32 Temp_int_Array_Index_Variable, const struct FFortRadioButtonItemStruct& CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class UIconTextButton_C* CallFunc_Create_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue, class UVerticalBoxSlot* K2Node_DynamicCast_AsVertical_Box_Slot, bool K2Node_DynamicCast_bSuccess, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize, class UCommonButton* K2Node_CustomEvent_AssociatedButton, int32 K2Node_CustomEvent_ButtonIndex, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UCommonButtonGroup* CallFunc_SpawnObject_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FortRadioButtonGroup_C", "ExecuteUbergraph_FortRadioButtonGroup");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortRadioButtonGroup_C_ExecuteUbergraph_FortRadioButtonGroup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortRadioButtonGroup_C", "ExecuteUbergraph_FortRadioButtonGroup");
+
+	Params::UFortRadioButtonGroup_C_ExecuteUbergraph_FortRadioButtonGroup_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -146,9 +184,12 @@ void UFortRadioButtonGroup_C::ExecuteUbergraph_FortRadioButtonGroup(int32 EntryP
 
 void UFortRadioButtonGroup_C::RadioButtonClicked_Event__DelegateSignature(int32 SelectedIndex)
 {
-	static auto Func = Class->GetFunction("FortRadioButtonGroup_C", "RadioButtonClicked_Event__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortRadioButtonGroup_C_RadioButtonClicked_Event__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortRadioButtonGroup_C", "RadioButtonClicked_Event__DelegateSignature");
+
+	Params::UFortRadioButtonGroup_C_RadioButtonClicked_Event__DelegateSignature_Params Parms{};
 
 	Parms.SelectedIndex = SelectedIndex;
 
@@ -158,6 +199,4 @@ void UFortRadioButtonGroup_C::RadioButtonClicked_Event__DelegateSignature(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

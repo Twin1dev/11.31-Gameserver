@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -137,20 +134,6 @@ public:
 	float                                        ReturnValue;                                       // 0x4(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function MovieScene.MovieSceneSequencePlayer.StopAtCurrentTime
-struct UMovieSceneSequencePlayer_StopAtCurrentTime_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function MovieScene.MovieSceneSequencePlayer.Stop
-struct UMovieSceneSequencePlayer_Stop_Params
-{
-public:
-};
-
 // 0x8 (0x8 - 0x0)
 // Function MovieScene.MovieSceneSequencePlayer.SetTimeRange
 struct UMovieSceneSequencePlayer_SetTimeRange_Params
@@ -225,7 +208,7 @@ struct UMovieSceneSequencePlayer_ScrubToMarkedFrame_Params
 public:
 	class FString                                InLabel;                                           // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1976[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_76D[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -234,13 +217,6 @@ struct UMovieSceneSequencePlayer_ScrubToFrame_Params
 {
 public:
 	struct FFrameTime                            NewPosition;                                       // 0x0(0x8)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function MovieScene.MovieSceneSequencePlayer.Scrub
-struct UMovieSceneSequencePlayer_Scrub_Params
-{
-public:
 };
 
 // 0x8 (0x8 - 0x0)
@@ -257,7 +233,7 @@ struct UMovieSceneSequencePlayer_RPC_ExplicitServerUpdateEvent_Params
 {
 public:
 	enum class EUpdatePositionMethod             Method;                                            // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1977[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_76F[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFrameTime                            RelevantTime;                                      // 0x4(0x8)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -276,7 +252,7 @@ struct UMovieSceneSequencePlayer_PlayToMarkedFrame_Params
 public:
 	class FString                                InLabel;                                           // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1978[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_772[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -287,33 +263,12 @@ public:
 	struct FFrameTime                            NewPosition;                                       // 0x0(0x8)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function MovieScene.MovieSceneSequencePlayer.PlayReverse
-struct UMovieSceneSequencePlayer_PlayReverse_Params
-{
-public:
-};
-
 // 0x4 (0x4 - 0x0)
 // Function MovieScene.MovieSceneSequencePlayer.PlayLooping
 struct UMovieSceneSequencePlayer_PlayLooping_Params
 {
 public:
 	int32                                        NumLoops;                                          // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function MovieScene.MovieSceneSequencePlayer.Play
-struct UMovieSceneSequencePlayer_Play_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function MovieScene.MovieSceneSequencePlayer.Pause
-struct UMovieSceneSequencePlayer_Pause_Params
-{
-public:
 };
 
 // 0x4 (0x4 - 0x0)
@@ -339,7 +294,7 @@ struct UMovieSceneSequencePlayer_JumpToMarkedFrame_Params
 public:
 	class FString                                InLabel;                                           // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1979[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_778[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -372,13 +327,6 @@ struct UMovieSceneSequencePlayer_IsPaused_Params
 {
 public:
 	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function MovieScene.MovieSceneSequencePlayer.GoToEndAndStop
-struct UMovieSceneSequencePlayer_GoToEndAndStop_Params
-{
-public:
 };
 
 // 0x10 (0x10 - 0x0)
@@ -495,16 +443,7 @@ public:
 	TArray<class UObject*>                       ReturnValue;                                       // 0x18(0x10)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection
-struct UMovieSceneSequencePlayer_ChangePlaybackDirection_Params
-{
-public:
-};
-
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

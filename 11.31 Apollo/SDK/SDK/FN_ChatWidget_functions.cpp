@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ChatWidget.ChatWidget_C
+// (None)
+
+class UClass* UChatWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChatWidget_C");
+
+	return Clss;
+}
+
+
+// ChatWidget_C ChatWidget.Default__ChatWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChatWidget_C* UChatWidget_C::GetDefaultObj()
+{
+	static class UChatWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChatWidget_C*>(UChatWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ChatWidget.ChatWidget_C.HandlePreShowConfirmationDialog
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UChatWidget_C::HandlePreShowConfirmationDialog(class UFortUIManagerWidget_NUI* Source, struct FFortDialogDescription_NUI& DialogDescription)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "HandlePreShowConfirmationDialog");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_HandlePreShowConfirmationDialog_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "HandlePreShowConfirmationDialog");
+
+	Params::UChatWidget_C_HandlePreShowConfirmationDialog_Params Parms{};
 
 	Parms.Source = Source;
 	Parms.DialogDescription = DialogDescription;
@@ -42,9 +70,12 @@ void UChatWidget_C::HandlePreShowConfirmationDialog(class UFortUIManagerWidget_N
 
 void UChatWidget_C::HandleControllerSendMessagePressed(bool* Handled)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "HandleControllerSendMessagePressed");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_HandleControllerSendMessagePressed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "HandleControllerSendMessagePressed");
+
+	Params::UChatWidget_C_HandleControllerSendMessagePressed_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -62,9 +93,12 @@ void UChatWidget_C::HandleControllerSendMessagePressed(bool* Handled)
 
 void UChatWidget_C::HandleRightTabPressed(bool* Handled)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "HandleRightTabPressed");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_HandleRightTabPressed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "HandleRightTabPressed");
+
+	Params::UChatWidget_C_HandleRightTabPressed_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -82,9 +116,12 @@ void UChatWidget_C::HandleRightTabPressed(bool* Handled)
 
 void UChatWidget_C::HandleLeftTabPressed(bool* Handled)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "HandleLeftTabPressed");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_HandleLeftTabPressed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "HandleLeftTabPressed");
+
+	Params::UChatWidget_C_HandleLeftTabPressed_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -104,9 +141,12 @@ void UChatWidget_C::HandleLeftTabPressed(bool* Handled)
 
 void UChatWidget_C::HandleExitPressed(bool* Handled, class UCommonUISubsystem* CallFunc_GetContext_ReturnValue, class UCommonInputManager* CallFunc_GetInputManager_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "HandleExitPressed");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_HandleExitPressed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "HandleExitPressed");
+
+	Params::UChatWidget_C_HandleExitPressed_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetInputManager_ReturnValue = CallFunc_GetInputManager_ReturnValue;
@@ -140,9 +180,12 @@ void UChatWidget_C::HandleExitPressed(bool* Handled, class UCommonUISubsystem* C
 
 void UChatWidget_C::InitializeChat(bool Temp_bool_Variable, class UFortHUDContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_Variable_1, bool CallFunc_IsInCursorMode_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, bool CallFunc_Not_PreBool_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, bool CallFunc_IsInZone_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_2, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UWidget* K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "InitializeChat");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_InitializeChat_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "InitializeChat");
+
+	Params::UChatWidget_C_InitializeChat_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -171,12 +214,14 @@ void UChatWidget_C::InitializeChat(bool Temp_bool_Variable, class UFortHUDContex
 
 void UChatWidget_C::BindDelegates()
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "BindDelegates");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_BindDelegates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "BindDelegates");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -190,9 +235,12 @@ void UChatWidget_C::BindDelegates()
 
 void UChatWidget_C::HandleCursorModeChanged(bool bEnabled, class FName ActionName, class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "HandleCursorModeChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_HandleCursorModeChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "HandleCursorModeChanged");
+
+	Params::UChatWidget_C_HandleCursorModeChanged_Params Parms{};
 
 	Parms.bEnabled = bEnabled;
 	Parms.ActionName = ActionName;
@@ -212,9 +260,12 @@ void UChatWidget_C::HandleCursorModeChanged(bool bEnabled, class FName ActionNam
 
 void UChatWidget_C::HandleShowChatWindow(enum class EFortUIFeature Feature, enum class EFortUIFeatureState FeatureState, enum class EFortUIFeatureStateReason FeatureStateReason)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "HandleShowChatWindow");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_HandleShowChatWindow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "HandleShowChatWindow");
+
+	Params::UChatWidget_C_HandleShowChatWindow_Params Parms{};
 
 	Parms.Feature = Feature;
 	Parms.FeatureState = FeatureState;
@@ -233,9 +284,12 @@ void UChatWidget_C::HandleShowChatWindow(enum class EFortUIFeature Feature, enum
 
 void UChatWidget_C::HandeChatEnteredEvent(bool bEnteringChat, bool NewLocalVar_0)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "HandeChatEnteredEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_HandeChatEnteredEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "HandeChatEnteredEvent");
+
+	Params::UChatWidget_C_HandeChatEnteredEvent_Params Parms{};
 
 	Parms.bEnteringChat = bEnteringChat;
 	Parms.NewLocalVar_0 = NewLocalVar_0;
@@ -252,9 +306,12 @@ void UChatWidget_C::HandeChatEnteredEvent(bool bEnteringChat, bool NewLocalVar_0
 
 void UChatWidget_C::UpdateChatUserListIcon(bool Open)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "UpdateChatUserListIcon");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_UpdateChatUserListIcon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "UpdateChatUserListIcon");
+
+	Params::UChatWidget_C_UpdateChatUserListIcon_Params Parms{};
 
 	Parms.Open = Open;
 
@@ -270,9 +327,12 @@ void UChatWidget_C::UpdateChatUserListIcon(bool Open)
 
 void UChatWidget_C::Set_Chat_Shortcut_Visibility(enum class ESlateVisibility New_Visibility)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "Set Chat Shortcut Visibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_Set_Chat_Shortcut_Visibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "Set Chat Shortcut Visibility");
+
+	Params::UChatWidget_C_Set_Chat_Shortcut_Visibility_Params Parms{};
 
 	Parms.New_Visibility = New_Visibility;
 
@@ -288,9 +348,12 @@ void UChatWidget_C::Set_Chat_Shortcut_Visibility(enum class ESlateVisibility New
 
 void UChatWidget_C::Set_Chat_Visibility(enum class ESlateVisibility New_Visibility)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "Set Chat Visibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_Set_Chat_Visibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "Set Chat Visibility");
+
+	Params::UChatWidget_C_Set_Chat_Visibility_Params Parms{};
 
 	Parms.New_Visibility = New_Visibility;
 
@@ -305,12 +368,14 @@ void UChatWidget_C::Set_Chat_Visibility(enum class ESlateVisibility New_Visibili
 
 void UChatWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -322,9 +387,12 @@ void UChatWidget_C::Construct()
 
 void UChatWidget_C::BndEvt__FortChat_K2Node_ComponentBoundEvent_0_OnUserListChangedDelegate__DelegateSignature(bool bOpen)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "BndEvt__FortChat_K2Node_ComponentBoundEvent_0_OnUserListChangedDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_BndEvt__FortChat_K2Node_ComponentBoundEvent_0_OnUserListChangedDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "BndEvt__FortChat_K2Node_ComponentBoundEvent_0_OnUserListChangedDelegate__DelegateSignature");
+
+	Params::UChatWidget_C_BndEvt__FortChat_K2Node_ComponentBoundEvent_0_OnUserListChangedDelegate__DelegateSignature_Params Parms{};
 
 	Parms.bOpen = bOpen;
 
@@ -340,9 +408,12 @@ void UChatWidget_C::BndEvt__FortChat_K2Node_ComponentBoundEvent_0_OnUserListChan
 
 void UChatWidget_C::BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEnteredDelegate__DelegateSignature(bool bEnteringChat)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEnteredDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEnteredDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEnteredDelegate__DelegateSignature");
+
+	Params::UChatWidget_C_BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEnteredDelegate__DelegateSignature_Params Parms{};
 
 	Parms.bEnteringChat = bEnteringChat;
 
@@ -357,12 +428,14 @@ void UChatWidget_C::BndEvt__FortChat_K2Node_ComponentBoundEvent_66_OnChatEntered
 
 void UChatWidget_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -373,12 +446,14 @@ void UChatWidget_C::BP_OnActivated()
 
 void UChatWidget_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -389,12 +464,14 @@ void UChatWidget_C::BP_OnDeactivated()
 
 void UChatWidget_C::Destruct()
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -406,9 +483,12 @@ void UChatWidget_C::Destruct()
 
 void UChatWidget_C::HandleInputMethodChanged(enum class ECommonInputType InputType)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "HandleInputMethodChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_HandleInputMethodChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "HandleInputMethodChanged");
+
+	Params::UChatWidget_C_HandleInputMethodChanged_Params Parms{};
 
 	Parms.InputType = InputType;
 
@@ -431,9 +511,12 @@ void UChatWidget_C::HandleInputMethodChanged(enum class ECommonInputType InputTy
 
 void UChatWidget_C::ExecuteUbergraph_ChatWidget(int32 EntryPoint, enum class ECommonInputType K2Node_CustomEvent_InputType, bool K2Node_ComponentBoundEvent_bOpen, bool K2Node_ComponentBoundEvent_bEnteringChat, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "ExecuteUbergraph_ChatWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_ExecuteUbergraph_ChatWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "ExecuteUbergraph_ChatWidget");
+
+	Params::UChatWidget_C_ExecuteUbergraph_ChatWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_InputType = K2Node_CustomEvent_InputType;
@@ -456,9 +539,12 @@ void UChatWidget_C::ExecuteUbergraph_ChatWidget(int32 EntryPoint, enum class ECo
 
 void UChatWidget_C::OnEnteredChat__DelegateSignature(bool EnteredChat)
 {
-	static auto Func = Class->GetFunction("ChatWidget_C", "OnEnteredChat__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UChatWidget_C_OnEnteredChat__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChatWidget_C", "OnEnteredChat__DelegateSignature");
+
+	Params::UChatWidget_C_OnEnteredChat__DelegateSignature_Params Parms{};
 
 	Parms.EnteredChat = EnteredChat;
 
@@ -468,6 +554,4 @@ void UChatWidget_C::OnEnteredChat__DelegateSignature(bool EnteredChat)
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

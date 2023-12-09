@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass MissionGen_FlyExplosives.MissionGen_FlyExplosives_C
+// (None)
+
+class UClass* UMissionGen_FlyExplosives_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MissionGen_FlyExplosives_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// MissionGen_FlyExplosives_C MissionGen_FlyExplosives.Default__MissionGen_FlyExplosives_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMissionGen_FlyExplosives_C* UMissionGen_FlyExplosives_C::GetDefaultObj()
+{
+	static class UMissionGen_FlyExplosives_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMissionGen_FlyExplosives_C*>(UMissionGen_FlyExplosives_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

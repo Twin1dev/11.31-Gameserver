@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,16 +15,11 @@ class UPhoebe_HandleFocusing_IgnoreThreat_C : public UFortAthenaAIBotEvaluator_H
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("Phoebe_HandleFocusing_IgnoreThreat_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UPhoebe_HandleFocusing_IgnoreThreat_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

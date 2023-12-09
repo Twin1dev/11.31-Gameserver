@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,11 +16,8 @@ class UModularSynthPresetBank : public UObject
 public:
 	TArray<struct FModularSynthPresetBankEntry>  Presets;                                           // 0x28(0x10)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ModularSynthPresetBank");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UModularSynthPresetBank* GetDefaultObj();
 
 };
 
@@ -33,11 +27,8 @@ class UModularSynthLibrary : public UBlueprintFunctionLibrary
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ModularSynthLibrary");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UModularSynthLibrary* GetDefaultObj();
 
 	void AddModularSynthPresetToBankAsset(class UModularSynthPresetBank* InBank, struct FModularSynthPreset& Preset, const class FString& PresetName);
 };
@@ -48,13 +39,10 @@ class UModularSynthComponent : public USynthComponent
 {
 public:
 	int32                                        VoiceCount;                                        // 0x620(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_219C[0x69C];                                   // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_15DE[0x69C];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ModularSynthComponent");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UModularSynthComponent* GetDefaultObj();
 
 	void SetSynthPreset(struct FModularSynthPreset& SynthPreset);
 	void SetSustainGain(float SustainGain);
@@ -122,14 +110,11 @@ public:
 class USourceEffectBitCrusherPreset : public USoundEffectSourcePreset
 {
 public:
-	uint8                                        Pad_219D[0x30];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_15E5[0x30];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSourceEffectBitCrusherSettings       Settings;                                          // 0x70(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SourceEffectBitCrusherPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USourceEffectBitCrusherPreset* GetDefaultObj();
 
 	void SetSettings(struct FSourceEffectBitCrusherSettings& InSettings);
 };
@@ -139,14 +124,11 @@ public:
 class USourceEffectChorusPreset : public USoundEffectSourcePreset
 {
 public:
-	uint8                                        Pad_219E[0x40];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_15E8[0x40];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSourceEffectChorusSettings           Settings;                                          // 0x80(0x18)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SourceEffectChorusPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USourceEffectChorusPreset* GetDefaultObj();
 
 	void SetSettings(struct FSourceEffectChorusSettings& InSettings);
 };
@@ -156,14 +138,11 @@ public:
 class USourceEffectDynamicsProcessorPreset : public USoundEffectSourcePreset
 {
 public:
-	uint8                                        Pad_219F[0x50];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_15EB[0x50];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSourceEffectDynamicsProcessorSettings Settings;                                          // 0x90(0x28)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SourceEffectDynamicsProcessorPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USourceEffectDynamicsProcessorPreset* GetDefaultObj();
 
 	void SetSettings(struct FSourceEffectDynamicsProcessorSettings& InSettings);
 };
@@ -174,13 +153,10 @@ class UEnvelopeFollowerListener : public UActorComponent
 {
 public:
 	UMulticastInlineDelegateProperty_            OnEnvelopeFollowerUpdate;                          // 0xB0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_21A0[0x10];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_15ED[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("EnvelopeFollowerListener");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UEnvelopeFollowerListener* GetDefaultObj();
 
 };
 
@@ -189,14 +165,11 @@ public:
 class USourceEffectEnvelopeFollowerPreset : public USoundEffectSourcePreset
 {
 public:
-	uint8                                        Pad_21A1[0x34];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_15EF[0x34];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSourceEffectEnvelopeFollowerSettings Settings;                                          // 0x74(0xC)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SourceEffectEnvelopeFollowerPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USourceEffectEnvelopeFollowerPreset* GetDefaultObj();
 
 	void UnregisterEnvelopeFollowerListener(class UEnvelopeFollowerListener* EnvelopeFollowerListener);
 	void SetSettings(struct FSourceEffectEnvelopeFollowerSettings& InSettings);
@@ -208,14 +181,11 @@ public:
 class USourceEffectEQPreset : public USoundEffectSourcePreset
 {
 public:
-	uint8                                        Pad_21A2[0x38];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_15F1[0x38];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSourceEffectEQSettings               Settings;                                          // 0x78(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SourceEffectEQPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USourceEffectEQPreset* GetDefaultObj();
 
 	void SetSettings(struct FSourceEffectEQSettings& InSettings);
 };
@@ -225,14 +195,11 @@ public:
 class USourceEffectFilterPreset : public USoundEffectSourcePreset
 {
 public:
-	uint8                                        Pad_21A3[0x34];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_15F4[0x34];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSourceEffectFilterSettings           Settings;                                          // 0x74(0xC)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SourceEffectFilterPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USourceEffectFilterPreset* GetDefaultObj();
 
 	void SetSettings(struct FSourceEffectFilterSettings& InSettings);
 };
@@ -242,14 +209,11 @@ public:
 class USourceEffectFoldbackDistortionPreset : public USoundEffectSourcePreset
 {
 public:
-	uint8                                        Pad_21A4[0x34];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_15F7[0x34];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSourceEffectFoldbackDistortionSettings Settings;                                          // 0x74(0xC)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SourceEffectFoldbackDistortionPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USourceEffectFoldbackDistortionPreset* GetDefaultObj();
 
 	void SetSettings(struct FSourceEffectFoldbackDistortionSettings& InSettings);
 };
@@ -259,14 +223,11 @@ public:
 class USourceEffectMidSideSpreaderPreset : public USoundEffectSourcePreset
 {
 public:
-	uint8                                        Pad_21A5[0x34];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_15F9[0x34];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSourceEffectMidSideSpreaderSettings  Settings;                                          // 0x74(0xC)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SourceEffectMidSideSpreaderPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USourceEffectMidSideSpreaderPreset* GetDefaultObj();
 
 	void SetSettings(struct FSourceEffectMidSideSpreaderSettings& InSettings);
 };
@@ -276,14 +237,11 @@ public:
 class USourceEffectPannerPreset : public USoundEffectSourcePreset
 {
 public:
-	uint8                                        Pad_21A6[0x30];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_15FA[0x30];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSourceEffectPannerSettings           Settings;                                          // 0x70(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SourceEffectPannerPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USourceEffectPannerPreset* GetDefaultObj();
 
 	void SetSettings(struct FSourceEffectPannerSettings& InSettings);
 };
@@ -293,14 +251,11 @@ public:
 class USourceEffectPhaserPreset : public USoundEffectSourcePreset
 {
 public:
-	uint8                                        Pad_21A7[0x38];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_15FE[0x38];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSourceEffectPhaserSettings           Settings;                                          // 0x78(0x10)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SourceEffectPhaserPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USourceEffectPhaserPreset* GetDefaultObj();
 
 	void SetSettings(struct FSourceEffectPhaserSettings& InSettings);
 };
@@ -310,14 +265,11 @@ public:
 class USourceEffectRingModulationPreset : public USoundEffectSourcePreset
 {
 public:
-	uint8                                        Pad_21A8[0x3C];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1602[0x3C];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSourceEffectRingModulationSettings   Settings;                                          // 0x7C(0x14)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SourceEffectRingModulationPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USourceEffectRingModulationPreset* GetDefaultObj();
 
 	void SetSettings(struct FSourceEffectRingModulationSettings& InSettings);
 };
@@ -327,14 +279,11 @@ public:
 class USourceEffectSimpleDelayPreset : public USoundEffectSourcePreset
 {
 public:
-	uint8                                        Pad_21A9[0x40];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1606[0x40];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSourceEffectSimpleDelaySettings      Settings;                                          // 0x80(0x18)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SourceEffectSimpleDelayPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USourceEffectSimpleDelayPreset* GetDefaultObj();
 
 	void SetSettings(struct FSourceEffectSimpleDelaySettings& InSettings);
 };
@@ -344,14 +293,11 @@ public:
 class USourceEffectStereoDelayPreset : public USoundEffectSourcePreset
 {
 public:
-	uint8                                        Pad_21AA[0x3C];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1608[0x3C];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSourceEffectStereoDelaySettings      Settings;                                          // 0x7C(0x14)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SourceEffectStereoDelayPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USourceEffectStereoDelayPreset* GetDefaultObj();
 
 	void SetSettings(struct FSourceEffectStereoDelaySettings& InSettings);
 };
@@ -361,14 +307,11 @@ public:
 class USourceEffectWaveShaperPreset : public USoundEffectSourcePreset
 {
 public:
-	uint8                                        Pad_21AB[0x30];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1609[0x30];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSourceEffectWaveShaperSettings       Settings;                                          // 0x70(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SourceEffectWaveShaperPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USourceEffectWaveShaperPreset* GetDefaultObj();
 
 	void SetSettings(struct FSourceEffectWaveShaperSettings& InSettings);
 };
@@ -378,16 +321,13 @@ public:
 class USubmixEffectDelayPreset : public USoundEffectSubmixPreset
 {
 public:
-	uint8                                        Pad_21AC[0x34];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_160C[0x34];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSubmixEffectDelaySettings            Settings;                                          // 0x74(0xC)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSubmixEffectDelaySettings            DynamicSettings;                                   // 0x80(0xC)(Transient, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_21AD[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_160E[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SubmixEffectDelayPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USubmixEffectDelayPreset* GetDefaultObj();
 
 	void SetSettings(struct FSubmixEffectDelaySettings& InSettings);
 	void SetInterpolationTime(float Time);
@@ -400,14 +340,11 @@ public:
 class USubmixEffectFilterPreset : public USoundEffectSubmixPreset
 {
 public:
-	uint8                                        Pad_21AE[0x34];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_160F[0x34];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSubmixEffectFilterSettings           Settings;                                          // 0x74(0xC)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SubmixEffectFilterPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USubmixEffectFilterPreset* GetDefaultObj();
 
 	void SetSettings(struct FSubmixEffectFilterSettings& InSettings);
 	void SetFilterType(enum class ESubmixFilterType InType);
@@ -423,14 +360,11 @@ public:
 class USubmixEffectFlexiverbPreset : public USoundEffectSubmixPreset
 {
 public:
-	uint8                                        Pad_21AF[0x38];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1610[0x38];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSubmixEffectFlexiverbSettings        Settings;                                          // 0x78(0x10)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SubmixEffectFlexiverbPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USubmixEffectFlexiverbPreset* GetDefaultObj();
 
 	void SetSettings(struct FSubmixEffectFlexiverbSettings& InSettings);
 };
@@ -440,15 +374,12 @@ public:
 class USubmixEffectTapDelayPreset : public USoundEffectSubmixPreset
 {
 public:
-	uint8                                        Pad_21B0[0x40];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1616[0x40];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSubmixEffectTapDelaySettings         Settings;                                          // 0x80(0x18)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
-	uint8                                        Pad_21B1[0x18];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1617[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SubmixEffectTapDelayPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USubmixEffectTapDelayPreset* GetDefaultObj();
 
 	void SetTap(int32 TapId, struct FTapDelayInfo& TapInfo);
 	void SetSettings(struct FSubmixEffectTapDelaySettings& InSettings);
@@ -473,23 +404,20 @@ public:
 	struct FLinearColor                          SliderHandleColor;                                 // 0x3E8(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         IndentHandle;                                      // 0x3F8(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         Locked;                                            // 0x3F9(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_21B2[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_161C[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        StepSize;                                          // 0x3FC(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         IsFocusable;                                       // 0x400(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_21B3[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_161D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	UMulticastInlineDelegateProperty_            OnMouseCaptureBegin;                               // 0x408(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastInlineDelegateProperty_            OnMouseCaptureEnd;                                 // 0x418(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastInlineDelegateProperty_            OnControllerCaptureBegin;                          // 0x428(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastInlineDelegateProperty_            OnControllerCaptureEnd;                            // 0x438(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastInlineDelegateProperty_            OnValueChangedX;                                   // 0x448(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastInlineDelegateProperty_            OnValueChangedY;                                   // 0x458(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_21B4[0x10];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_161E[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("Synth2DSlider");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USynth2DSlider* GetDefaultObj();
 
 	void SetValue(const struct FVector2D& InValue);
 	void SetStepSize(float InValue);
@@ -505,13 +433,10 @@ class UGranularSynth : public USynthComponent
 {
 public:
 	class USoundWave*                            GranulatedSoundWave;                               // 0x620(0x8)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_21B7[0x348];                                   // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_162E[0x348];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GranularSynth");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGranularSynth* GetDefaultObj();
 
 	void SetSustainGain(float SustainGain);
 	void SetSoundWave(class USoundWave* InSoundWave);
@@ -542,20 +467,17 @@ class UMonoWaveTableSynthPreset : public UObject
 public:
 	class FString                                PresetName;                                        // 0x28(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        bLockKeyframesToGridBool : 1;                      // Mask: 0x1, PropSize: 0x10x38(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_18D : 7;                                    // Fixing Bit-Field Size  [ Dumper-8 ]
-	uint8                                        Pad_21B8[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        BitPad_CC : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_1631[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        LockKeyframesToGrid;                               // 0x3C(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        WaveTableResolution;                               // 0x40(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_21B9[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1632[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FRuntimeFloatCurve>            WaveTable;                                         // 0x48(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NonTransactional, NativeAccessSpecifierPublic)
 	uint8                                        bNormalizeWaveTables : 1;                          // Mask: 0x1, PropSize: 0x10x58(0x1)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_21BA[0x117];                                   // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1633[0x117];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MonoWaveTableSynthPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMonoWaveTableSynthPreset* GetDefaultObj();
 
 };
 
@@ -567,13 +489,10 @@ public:
 	UMulticastInlineDelegateProperty_            OnTableAltered;                                    // 0x620(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastInlineDelegateProperty_            OnNumTablesChanged;                                // 0x630(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	class UMonoWaveTableSynthPreset*             CurrentPreset;                                     // 0x640(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_21C0[0x718];                                   // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_165A[0x718];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SynthComponentMonoWaveTable");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USynthComponentMonoWaveTable* GetDefaultObj();
 
 	void SetWaveTablePosition(float InPosition);
 	void SetSustainPedalState(bool InSustainPedalState);
@@ -630,13 +549,10 @@ public:
 	class USoundWave*                            SoundWave;                                         // 0x620(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	UMulticastInlineDelegateProperty_            OnSampleLoaded;                                    // 0x628(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastInlineDelegateProperty_            OnSamplePlaybackProgress;                          // 0x638(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_21C2[0x108];                                   // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1660[0x108];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SynthSamplePlayer");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USynthSamplePlayer* GetDefaultObj();
 
 	void SetSoundWave(class USoundWave* InSoundWave);
 	void SetScrubTimeWidth(float InScrubTimeWidthSec);
@@ -659,27 +575,24 @@ public:
 	float                                        MouseSpeed;                                        // 0x110(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        MouseFineTuneSpeed;                                // 0x114(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        ShowTooltipInfo : 1;                               // Mask: 0x1, PropSize: 0x10x118(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_18E : 7;                                    // Fixing Bit-Field Size  [ Dumper-8 ]
-	uint8                                        Pad_21C3[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        BitPad_CD : 7;                                     // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_1662[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  ParameterName;                                     // 0x120(0x18)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	class FText                                  ParameterUnits;                                    // 0x138(0x18)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	UDelegateProperty_                           ValueDelegate;                                     // 0x150(0x10)(ZeroConstructor, InstancedReference, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSynthKnobStyle                       WidgetStyle;                                       // 0x160(0x238)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 	bool                                         Locked;                                            // 0x398(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         IsFocusable;                                       // 0x399(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_21C4[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1663[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	UMulticastInlineDelegateProperty_            OnMouseCaptureBegin;                               // 0x3A0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastInlineDelegateProperty_            OnMouseCaptureEnd;                                 // 0x3B0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastInlineDelegateProperty_            OnControllerCaptureBegin;                          // 0x3C0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastInlineDelegateProperty_            OnControllerCaptureEnd;                            // 0x3D0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastInlineDelegateProperty_            OnValueChanged;                                    // 0x3E0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_21C5[0x10];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1665[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SynthKnob");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USynthKnob* GetDefaultObj();
 
 	void SetValue(float InValue);
 	void SetStepSize(float InValue);
@@ -689,6 +602,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

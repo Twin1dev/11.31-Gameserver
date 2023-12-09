@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C
+// (None)
+
+class UClass* UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C");
+
+	return Clss;
+}
+
+
+// ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.Default__ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C* UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::GetDefaultObj()
+{
+	static class UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C*>(UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK.ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C.ShowHaveNeed
@@ -24,9 +49,12 @@ namespace SDK
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::ShowHaveNeed(bool* HaveNeed, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsInZone_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "ShowHaveNeed");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_ShowHaveNeed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "ShowHaveNeed");
+
+	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_ShowHaveNeed_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_IsInZone_ReturnValue = CallFunc_IsInZone_ReturnValue;
@@ -53,9 +81,12 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::ShowHaveNeed(bool*
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshPreviewData(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, const struct FFortItemEntryPreviewData& CallFunc_GetPreviewData_OutPreviewData, bool CallFunc_IsBeingPreviewed_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "RefreshPreviewData");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_RefreshPreviewData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "RefreshPreviewData");
+
+	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_RefreshPreviewData_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -82,9 +113,12 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshPreviewData
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshVisibility(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_ShowHaveNeed_HaveNeed, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "RefreshVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_RefreshVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "RefreshVisibility");
+
+	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_RefreshVisibility_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -105,7 +139,7 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshVisibility(
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetEmptyText_ReturnValue                                ()
+// class FText                        CallFunc_GetEmptyText_ReturnValue                                (None)
 // enum class ESlateVisibility        Temp_byte_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_ShowHaveNeed_HaveNeed                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -114,13 +148,16 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshVisibility(
 // int32                              CallFunc_GetNumInInventory_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_TextText_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetDisplayName_ReturnValue                              ()
+// class FText                        CallFunc_GetDisplayName_ReturnValue                              (None)
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::Refresh(class UFortInventoryContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, class FText CallFunc_GetEmptyText_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_1, bool CallFunc_ShowHaveNeed_HaveNeed, enum class ESlateVisibility K2Node_Select_Default, class UFortItemDefinition* CallFunc_GetItemDefinition_ReturnValue, int32 CallFunc_GetNumInInventory_ReturnValue, bool CallFunc_EqualEqual_TextText_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_1, class FText CallFunc_GetDisplayName_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "Refresh");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_Refresh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "Refresh");
+
+	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_Refresh_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -158,9 +195,12 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::Refresh(class UFor
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::DoDesignTimeRandomization(int32 Temp_int_Variable, class UFortItemDefinition* Temp_object_Variable, class UFortItemDefinition* Temp_object_Variable_1, class UFortItemDefinition* Temp_object_Variable_2, class UFortItemDefinition* Temp_object_Variable_3, int32 CallFunc_RandomInteger_ReturnValue, int32 CallFunc_RandomInteger_ReturnValue_1, class UFortItemDefinition* K2Node_Select_Default, const struct FFortItemQuantityPair& CallFunc_MakeItemQuantityPair_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "DoDesignTimeRandomization");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_DoDesignTimeRandomization_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "DoDesignTimeRandomization");
+
+	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_DoDesignTimeRandomization_Params Parms{};
 
 	Parms.Temp_int_Variable = Temp_int_Variable;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -184,9 +224,12 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::DoDesignTimeRandom
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "PreConstruct");
+
+	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -202,9 +245,12 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreConstruct(bool 
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::HandleDifferentItemOrQuantitySetBP(bool IsBeingReset)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "HandleDifferentItemOrQuantitySetBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_HandleDifferentItemOrQuantitySetBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "HandleDifferentItemOrQuantitySetBP");
+
+	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_HandleDifferentItemOrQuantitySetBP_Params Parms{};
 
 	Parms.IsBeingReset = IsBeingReset;
 
@@ -219,12 +265,14 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::HandleDifferentIte
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreviewStarted()
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "PreviewStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_PreviewStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "PreviewStarted");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -235,12 +283,14 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreviewStarted()
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreviewEnded()
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "PreviewEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_PreviewEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "PreviewEnded");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -251,12 +301,14 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::PreviewEnded()
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshListEntry()
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "RefreshListEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_RefreshListEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "RefreshListEntry");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -270,9 +322,12 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::RefreshListEntry()
 
 void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK(int32 EntryPoint, bool K2Node_Event_IsDesignTime, bool K2Node_Event_IsBeingReset)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C", "ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK");
+
+	Params::UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C_ExecuteUbergraph_ItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -284,6 +339,4 @@ void UItemCraftingIngredientListEntryHaveNeedVerbose_BLACK_C::ExecuteUbergraph_I
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

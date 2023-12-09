@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -35,13 +32,6 @@ public:
 	enum class ESlateVisibility                  Temp_byte_Variable_1;                              // 0x1A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_TextIsEmpty_ReturnValue;                  // 0x1B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function InputReflectorButton.InputReflectorButton_C.SetInitialMouseKeyboardStyle
-struct UInputReflectorButton_C_SetInitialMouseKeyboardStyle_Params
-{
-public:
 };
 
 // 0x8 (0x8 - 0x0)
@@ -97,13 +87,13 @@ public:
 	bool                                         Temp_bool_Variable;                                // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Temp_bool_Variable_1;                              // 0x1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_TextIsEmpty_ReturnValue;                  // 0x2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_600F[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  CallFunc_GetDisplayText_ReturnValue;               // 0x8(0x18)()
-	class FText                                  K2Node_Select_Default;                             // 0x20(0x18)()
+	uint8                                        Pad_5E6A[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_GetDisplayText_ReturnValue;               // 0x8(0x18)(None)
+	class FText                                  K2Node_Select_Default;                             // 0x20(0x18)(None)
 	bool                                         CallFunc_TextIsEmpty_ReturnValue_1;                // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x39(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6010[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  K2Node_Select_Default_1;                           // 0x40(0x18)()
+	uint8                                        Pad_5E6B[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  K2Node_Select_Default_1;                           // 0x40(0x18)(None)
 };
 
 // 0x12 (0x12 - 0x0)
@@ -151,13 +141,6 @@ public:
 	class FText                                  ButtonText;                                        // 0x0(0x18)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function InputReflectorButton.InputReflectorButton_C.OnCurrentTextStyleChanged
-struct UInputReflectorButton_C_OnCurrentTextStyleChanged_Params
-{
-public:
-};
-
 // 0x1 (0x1 - 0x0)
 // Function InputReflectorButton.InputReflectorButton_C.PreConstruct
 struct UInputReflectorButton_C_PreConstruct_Params
@@ -190,27 +173,6 @@ public:
 	float                                        HeldPercent;                                       // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function InputReflectorButton.InputReflectorButton_C.OnActionComplete
-struct UInputReflectorButton_C_OnActionComplete_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function InputReflectorButton.InputReflectorButton_C.Construct
-struct UInputReflectorButton_C_Construct_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function InputReflectorButton.InputReflectorButton_C.Destruct
-struct UInputReflectorButton_C_Destruct_Params
-{
-public:
-};
-
 // 0x42 (0x42 - 0x0)
 // Function InputReflectorButton.InputReflectorButton_C.ExecuteUbergraph_InputReflectorButton
 struct UInputReflectorButton_C_ExecuteUbergraph_InputReflectorButton_Params
@@ -219,19 +181,19 @@ public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable;                                // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         K2Node_Event_IsDesignTime;                         // 0x5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6011[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5E6C[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonInputSubsystem*                 CallFunc_GetContext_ReturnValue;                   // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ECommonInputType                  CallFunc_GetCurrentInputType_ReturnValue;          // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_HasAnyChildren_ReturnValue;               // 0x12(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6012[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5E6D[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonInputSubsystem*                 CallFunc_GetContext_ReturnValue_1;                 // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable;                                // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ECommonInputType                  CallFunc_GetCurrentInputType_ReturnValue_1;        // 0x21(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x22(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  Temp_byte_Variable_1;                              // 0x23(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_ComponentBoundEvent_bUsingGamepad;          // 0x24(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6013[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5E6E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDataTableRowHandle                   K2Node_Event_NewTriggeredAction;                   // 0x28(0x10)(ConstParm, NoDestructor)
 	float                                        K2Node_Event_HeldPercent;                          // 0x38(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_1;                              // 0x3C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -245,6 +207,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

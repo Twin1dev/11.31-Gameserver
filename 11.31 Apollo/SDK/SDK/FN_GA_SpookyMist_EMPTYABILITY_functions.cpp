@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_SpookyMist_EMPTYABILITY.GA_SpookyMist_EMPTYABILITY_C
+// (None)
+
+class UClass* UGA_SpookyMist_EMPTYABILITY_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_SpookyMist_EMPTYABILITY_C");
+
+	return Clss;
+}
+
+
+// GA_SpookyMist_EMPTYABILITY_C GA_SpookyMist_EMPTYABILITY.Default__GA_SpookyMist_EMPTYABILITY_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_SpookyMist_EMPTYABILITY_C* UGA_SpookyMist_EMPTYABILITY_C::GetDefaultObj()
+{
+	static class UGA_SpookyMist_EMPTYABILITY_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_SpookyMist_EMPTYABILITY_C*>(UGA_SpookyMist_EMPTYABILITY_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_SpookyMist_EMPTYABILITY.GA_SpookyMist_EMPTYABILITY_C.K2_ActivateAbility
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UGA_SpookyMist_EMPTYABILITY_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_EMPTYABILITY_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_EMPTYABILITY_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_EMPTYABILITY_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UGA_SpookyMist_EMPTYABILITY_C::K2_ActivateAbility()
 
 void UGA_SpookyMist_EMPTYABILITY_C::ExecuteUbergraph_GA_SpookyMist_EMPTYABILITY(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_EMPTYABILITY_C", "ExecuteUbergraph_GA_SpookyMist_EMPTYABILITY");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_EMPTYABILITY_C_ExecuteUbergraph_GA_SpookyMist_EMPTYABILITY_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_EMPTYABILITY_C", "ExecuteUbergraph_GA_SpookyMist_EMPTYABILITY");
+
+	Params::UGA_SpookyMist_EMPTYABILITY_C_ExecuteUbergraph_GA_SpookyMist_EMPTYABILITY_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -50,6 +80,4 @@ void UGA_SpookyMist_EMPTYABILITY_C::ExecuteUbergraph_GA_SpookyMist_EMPTYABILITY(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

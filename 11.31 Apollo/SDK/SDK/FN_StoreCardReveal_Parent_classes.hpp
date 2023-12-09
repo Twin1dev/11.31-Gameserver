@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -20,11 +17,8 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x218(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class USceneComponent*                       PinataSceneRoot;                                   // 0x220(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("StoreCardReveal_Parent_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AStoreCardReveal_Parent_C* GetDefaultObj();
 
 	void InitiatePinata();
 	void ExecuteUbergraph_StoreCardReveal_Parent(int32 EntryPoint);
@@ -32,6 +26,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

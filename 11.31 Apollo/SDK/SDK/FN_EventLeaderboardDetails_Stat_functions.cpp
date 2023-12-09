@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,19 +12,50 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass EventLeaderboardDetails_Stat.EventLeaderboardDetails_Stat_C
+// (None)
+
+class UClass* UEventLeaderboardDetails_Stat_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EventLeaderboardDetails_Stat_C");
+
+	return Clss;
+}
+
+
+// EventLeaderboardDetails_Stat_C EventLeaderboardDetails_Stat.Default__EventLeaderboardDetails_Stat_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UEventLeaderboardDetails_Stat_C* UEventLeaderboardDetails_Stat_C::GetDefaultObj()
+{
+	static class UEventLeaderboardDetails_Stat_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEventLeaderboardDetails_Stat_C*>(UEventLeaderboardDetails_Stat_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function EventLeaderboardDetails_Stat.EventLeaderboardDetails_Stat_C.SetStatData
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FText                        Name                                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 // float                              Value                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              NumFractionalDigits                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_FloatToText_ReturnValue                            ()
+// class FText                        CallFunc_Conv_FloatToText_ReturnValue                            (None)
 
 void UEventLeaderboardDetails_Stat_C::SetStatData(class FText Name, float Value, int32 NumFractionalDigits, class FText CallFunc_Conv_FloatToText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardDetails_Stat_C", "SetStatData");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardDetails_Stat_C_SetStatData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardDetails_Stat_C", "SetStatData");
+
+	Params::UEventLeaderboardDetails_Stat_C_SetStatData_Params Parms{};
 
 	Parms.Name = Name;
 	Parms.Value = Value;
@@ -45,12 +73,14 @@ void UEventLeaderboardDetails_Stat_C::SetStatData(class FText Name, float Value,
 
 void UEventLeaderboardDetails_Stat_C::Construct()
 {
-	static auto Func = Class->GetFunction("EventLeaderboardDetails_Stat_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardDetails_Stat_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardDetails_Stat_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -61,12 +91,14 @@ void UEventLeaderboardDetails_Stat_C::Construct()
 
 void UEventLeaderboardDetails_Stat_C::EventStatAnim()
 {
-	static auto Func = Class->GetFunction("EventLeaderboardDetails_Stat_C", "EventStatAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardDetails_Stat_C_EventStatAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardDetails_Stat_C", "EventStatAnim");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -89,9 +121,12 @@ void UEventLeaderboardDetails_Stat_C::EventStatAnim()
 
 void UEventLeaderboardDetails_Stat_C::ExecuteUbergraph_EventLeaderboardDetails_Stat(int32 EntryPoint, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsUsingGamepad_ReturnValue, float Temp_float_Variable, float Temp_float_Variable_1, float CallFunc_Multiply_IntFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, float CallFunc_GetEndTime_ReturnValue, bool Temp_bool_Variable, class UUMGSequencePlayer* CallFunc_PlayAnimationTimeRange_ReturnValue, float K2Node_Select_Default, float CallFunc_Add_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardDetails_Stat_C", "ExecuteUbergraph_EventLeaderboardDetails_Stat");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardDetails_Stat_C_ExecuteUbergraph_EventLeaderboardDetails_Stat_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardDetails_Stat_C", "ExecuteUbergraph_EventLeaderboardDetails_Stat");
+
+	Params::UEventLeaderboardDetails_Stat_C_ExecuteUbergraph_EventLeaderboardDetails_Stat_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -112,6 +147,4 @@ void UEventLeaderboardDetails_Stat_C::ExecuteUbergraph_EventLeaderboardDetails_S
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

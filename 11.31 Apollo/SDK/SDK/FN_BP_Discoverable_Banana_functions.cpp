@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_Discoverable_Banana.BP_Discoverable_Banana_C
+// (Actor)
+
+class UClass* ABP_Discoverable_Banana_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_Discoverable_Banana_C");
+
+	return Clss;
+}
+
+
+// BP_Discoverable_Banana_C BP_Discoverable_Banana.Default__BP_Discoverable_Banana_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_Discoverable_Banana_C* ABP_Discoverable_Banana_C::GetDefaultObj()
+{
+	static class ABP_Discoverable_Banana_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_Discoverable_Banana_C*>(ABP_Discoverable_Banana_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_Discoverable_Banana.BP_Discoverable_Banana_C.Reveal__FinishedFunc
 // (BlueprintEvent)
 // Parameters:
 
 void ABP_Discoverable_Banana_C::Reveal__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Banana_C", "Reveal__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Banana_C_Reveal__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Banana_C", "Reveal__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void ABP_Discoverable_Banana_C::Reveal__FinishedFunc()
 
 void ABP_Discoverable_Banana_C::Reveal__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Banana_C", "Reveal__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Banana_C_Reveal__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Banana_C", "Reveal__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void ABP_Discoverable_Banana_C::Reveal__UpdateFunc()
 
 void ABP_Discoverable_Banana_C::Reveal__NewTrack_2__EventFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Banana_C", "Reveal__NewTrack_2__EventFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Banana_C_Reveal__NewTrack_2__EventFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Banana_C", "Reveal__NewTrack_2__EventFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void ABP_Discoverable_Banana_C::Reveal__NewTrack_2__EventFunc()
 
 void ABP_Discoverable_Banana_C::Hide__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Banana_C", "Hide__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Banana_C_Hide__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Banana_C", "Hide__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -85,12 +118,14 @@ void ABP_Discoverable_Banana_C::Hide__FinishedFunc()
 
 void ABP_Discoverable_Banana_C::Hide__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Banana_C", "Hide__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Banana_C_Hide__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Banana_C", "Hide__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -103,9 +138,12 @@ void ABP_Discoverable_Banana_C::Hide__UpdateFunc()
 
 void ABP_Discoverable_Banana_C::HandleObjectSpecialInteraction(const struct FGameplayTag& ActionTag, const struct FGameplayTag& CameraTag)
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Banana_C", "HandleObjectSpecialInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Banana_C_HandleObjectSpecialInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Banana_C", "HandleObjectSpecialInteraction");
+
+	Params::ABP_Discoverable_Banana_C_HandleObjectSpecialInteraction_Params Parms{};
 
 	Parms.ActionTag = ActionTag;
 	Parms.CameraTag = CameraTag;
@@ -121,12 +159,14 @@ void ABP_Discoverable_Banana_C::HandleObjectSpecialInteraction(const struct FGam
 
 void ABP_Discoverable_Banana_C::Commit_OnSpecialInteraction()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Banana_C", "Commit_OnSpecialInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Banana_C_Commit_OnSpecialInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Banana_C", "Commit_OnSpecialInteraction");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -152,9 +192,12 @@ void ABP_Discoverable_Banana_C::Commit_OnSpecialInteraction()
 
 void ABP_Discoverable_Banana_C::ExecuteUbergraph_BP_Discoverable_Banana(int32 EntryPoint, bool Temp_bool_IsClosed_Variable, const struct FGameplayTag& K2Node_Event_ActionTag, const struct FGameplayTag& K2Node_Event_CameraTag, bool Temp_bool_Has_Been_Initd_Variable, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FVector& CallFunc_VLerp_ReturnValue, const struct FVector& CallFunc_VLerp_ReturnValue_1, const struct FHitResult& CallFunc_K2_SetRelativeLocation_SweepHitResult, const struct FHitResult& CallFunc_K2_SetRelativeLocation_SweepHitResult_1, float CallFunc_Add_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Banana_C", "ExecuteUbergraph_BP_Discoverable_Banana");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Banana_C_ExecuteUbergraph_BP_Discoverable_Banana_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Banana_C", "ExecuteUbergraph_BP_Discoverable_Banana");
+
+	Params::ABP_Discoverable_Banana_C_ExecuteUbergraph_BP_Discoverable_Banana_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_IsClosed_Variable = Temp_bool_IsClosed_Variable;
@@ -178,6 +221,4 @@ void ABP_Discoverable_Banana_C::ExecuteUbergraph_BP_Discoverable_Banana(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

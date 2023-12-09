@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass PlayerPawn_Athena.PlayerPawn_Athena_C
+// (Actor, Pawn)
+
+class UClass* APlayerPawn_Athena_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerPawn_Athena_C");
+
+	return Clss;
+}
+
+
+// PlayerPawn_Athena_C PlayerPawn_Athena.Default__PlayerPawn_Athena_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class APlayerPawn_Athena_C* APlayerPawn_Athena_C::GetDefaultObj()
+{
+	static class APlayerPawn_Athena_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APlayerPawn_Athena_C*>(APlayerPawn_Athena_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PlayerPawn_Athena.PlayerPawn_Athena_C.Get Effect Color Index
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void APlayerPawn_Athena_C::Get_Effect_Color_Index(enum class ECreativeColorSetType* Color_Type, int32* Color_Index)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "Get Effect Color Index");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_Get_Effect_Color_Index_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "Get Effect Color Index");
+
+	Params::APlayerPawn_Athena_C_Get_Effect_Color_Index_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -51,9 +79,12 @@ void APlayerPawn_Athena_C::Get_Effect_Color_Index(enum class ECreativeColorSetTy
 
 void APlayerPawn_Athena_C::GalileoMaterialSetup(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GalileoMaterialSetup");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_GalileoMaterialSetup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "GalileoMaterialSetup");
+
+	Params::APlayerPawn_Athena_C_GalileoMaterialSetup_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -90,9 +121,12 @@ void APlayerPawn_Athena_C::GalileoMaterialSetup(int32 Temp_int_Array_Index_Varia
 
 void APlayerPawn_Athena_C::Get_Highest_Priority_Highlight(class UObject** Source, struct FPawnHighlight* Top_Priority, class UObject* Best_Source, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, const struct FPawnHighlight& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, TArray<class UObject*>& CallFunc_Map_Keys_Keys, class UObject* CallFunc_Array_Get_Item, const struct FPawnHighlight& CallFunc_Map_Find_Value_1, bool CallFunc_Map_Find_ReturnValue_1, const struct FPawnHighlight& CallFunc_Map_Find_Value_2, bool CallFunc_Map_Find_ReturnValue_2, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "Get Highest Priority Highlight");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_Get_Highest_Priority_Highlight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "Get Highest Priority Highlight");
+
+	Params::APlayerPawn_Athena_C_Get_Highest_Priority_Highlight_Params Parms{};
 
 	Parms.Best_Source = Best_Source;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -116,7 +150,7 @@ void APlayerPawn_Athena_C::Get_Highest_Priority_Highlight(class UObject** Source
 		*Source = Parms.Source;
 
 	if (Top_Priority != nullptr)
-		*Top_Priority = Parms.Top_Priority;
+		*Top_Priority = std::move(Parms.Top_Priority);
 
 }
 
@@ -135,9 +169,12 @@ void APlayerPawn_Athena_C::Get_Highest_Priority_Highlight(class UObject** Source
 
 void APlayerPawn_Athena_C::Highlight_Pawn_from_Source(class UObject* Source, const struct FPawnHighlight& Highlight, bool Only_Update_If_Current, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, const struct FPawnHighlight& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "Highlight Pawn from Source");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_Highlight_Pawn_from_Source_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "Highlight Pawn from Source");
+
+	Params::APlayerPawn_Athena_C_Highlight_Pawn_from_Source_Params Parms{};
 
 	Parms.Source = Source;
 	Parms.Highlight = Highlight;
@@ -164,9 +201,12 @@ void APlayerPawn_Athena_C::Highlight_Pawn_from_Source(class UObject* Source, con
 
 void APlayerPawn_Athena_C::Remove_Pawn_Highlight_from_Source(class UObject* Source, class UObject* CallFunc_Get_Highest_Priority_Highlight_Source, const struct FPawnHighlight& CallFunc_Get_Highest_Priority_Highlight_Top_Priority, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_Map_Remove_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "Remove Pawn Highlight from Source");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_Remove_Pawn_Highlight_from_Source_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "Remove Pawn Highlight from Source");
+
+	Params::APlayerPawn_Athena_C_Remove_Pawn_Highlight_from_Source_Params Parms{};
 
 	Parms.Source = Source;
 	Parms.CallFunc_Get_Highest_Priority_Highlight_Source = CallFunc_Get_Highest_Priority_Highlight_Source;
@@ -193,9 +233,12 @@ void APlayerPawn_Athena_C::Remove_Pawn_Highlight_from_Source(class UObject* Sour
 
 void APlayerPawn_Athena_C::ApplyPawnHighlight(class UObject* Source, const struct FPawnHighlight& HitGlow, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 CallFunc_Array_Length_ReturnValue, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ApplyPawnHighlight");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_ApplyPawnHighlight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ApplyPawnHighlight");
+
+	Params::APlayerPawn_Athena_C_ApplyPawnHighlight_Params Parms{};
 
 	Parms.Source = Source;
 	Parms.HitGlow = HitGlow;
@@ -217,12 +260,14 @@ void APlayerPawn_Athena_C::ApplyPawnHighlight(class UObject* Source, const struc
 
 void APlayerPawn_Athena_C::OnRep_PlayRespawnFXOnSpawn()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnRep_PlayRespawnFXOnSpawn");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnRep_PlayRespawnFXOnSpawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnRep_PlayRespawnFXOnSpawn");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -233,12 +278,14 @@ void APlayerPawn_Athena_C::OnRep_PlayRespawnFXOnSpawn()
 
 void APlayerPawn_Athena_C::LockonSearchCompleteTimedOut()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "LockonSearchCompleteTimedOut");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_LockonSearchCompleteTimedOut_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "LockonSearchCompleteTimedOut");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -251,9 +298,12 @@ void APlayerPawn_Athena_C::LockonSearchCompleteTimedOut()
 
 void APlayerPawn_Athena_C::OnLockOnSearchCompleted(bool* bConsumeEvent, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnLockOnSearchCompleted");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnLockOnSearchCompleted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnLockOnSearchCompleted");
+
+	Params::APlayerPawn_Athena_C_OnLockOnSearchCompleted_Params Parms{};
 
 	Parms.CallFunc_K2_SetTimer_ReturnValue = CallFunc_K2_SetTimer_ReturnValue;
 
@@ -272,9 +322,12 @@ void APlayerPawn_Athena_C::OnLockOnSearchCompleted(bool* bConsumeEvent, const st
 
 void APlayerPawn_Athena_C::SetPartyInProgress(bool bIsPartyInProgress)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SetPartyInProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_SetPartyInProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SetPartyInProgress");
+
+	Params::APlayerPawn_Athena_C_SetPartyInProgress_Params Parms{};
 
 	Parms.bIsPartyInProgress = bIsPartyInProgress;
 
@@ -291,9 +344,12 @@ void APlayerPawn_Athena_C::SetPartyInProgress(bool bIsPartyInProgress)
 
 void APlayerPawn_Athena_C::SetPetHidden(bool NewHidden, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SetPetHidden");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_SetPetHidden_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SetPetHidden");
+
+	Params::APlayerPawn_Athena_C_SetPetHidden_Params Parms{};
 
 	Parms.NewHidden = NewHidden;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -310,9 +366,12 @@ void APlayerPawn_Athena_C::SetPetHidden(bool NewHidden, bool CallFunc_IsValid_Re
 
 void APlayerPawn_Athena_C::CleanUpTeleportationFXLight(bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "CleanUpTeleportationFXLight");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_CleanUpTeleportationFXLight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "CleanUpTeleportationFXLight");
+
+	Params::APlayerPawn_Athena_C_CleanUpTeleportationFXLight_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
@@ -344,9 +403,12 @@ void APlayerPawn_Athena_C::CleanUpTeleportationFXLight(bool CallFunc_IsValid_Ret
 
 void APlayerPawn_Athena_C::RestoreCharacterMats(int32 Itr, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Array_Index_Variable_1, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, int32 CallFunc_Add_IntInt_ReturnValue_2, int32 CallFunc_Array_Length_ReturnValue, class USkeletalMeshComponent* CallFunc_Array_Get_Item_1, bool CallFunc_Less_IntInt_ReturnValue, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue_2, int32 CallFunc_Add_IntInt_ReturnValue_3, bool CallFunc_Less_IntInt_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "RestoreCharacterMats");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_RestoreCharacterMats_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "RestoreCharacterMats");
+
+	Params::APlayerPawn_Athena_C_RestoreCharacterMats_Params Parms{};
 
 	Parms.Itr = Itr;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -381,9 +443,12 @@ void APlayerPawn_Athena_C::RestoreCharacterMats(int32 Itr, int32 Temp_int_Loop_C
 
 void APlayerPawn_Athena_C::SetupDissolveFx(bool Temp_bool_Variable, class UMaterialInterface* Temp_object_Variable, class UMaterialInterface* K2Node_Select_Default, bool CallFunc_SetupDissolveFx_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SetupDissolveFx");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_SetupDissolveFx_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SetupDissolveFx");
+
+	Params::APlayerPawn_Athena_C_SetupDissolveFx_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -404,9 +469,12 @@ void APlayerPawn_Athena_C::SetupDissolveFx(bool Temp_bool_Variable, class UMater
 
 void APlayerPawn_Athena_C::UpdateDissolveFx(float Scalar_Transition, float Scalar_ZHeight, float Scalar_LightIntensity)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "UpdateDissolveFx");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_UpdateDissolveFx_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "UpdateDissolveFx");
+
+	Params::APlayerPawn_Athena_C_UpdateDissolveFx_Params Parms{};
 
 	Parms.Scalar_Transition = Scalar_Transition;
 	Parms.Scalar_ZHeight = Scalar_ZHeight;
@@ -427,9 +495,12 @@ void APlayerPawn_Athena_C::UpdateDissolveFx(float Scalar_Transition, float Scala
 
 void APlayerPawn_Athena_C::SpawnTeleportationLight(const struct FTransform& CallFunc_MakeTransform_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UPointLightComponent* CallFunc_AddComponent_ReturnValue, bool CallFunc_IsMobilePlatform_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SpawnTeleportationLight");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_SpawnTeleportationLight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SpawnTeleportationLight");
+
+	Params::APlayerPawn_Athena_C_SpawnTeleportationLight_Params Parms{};
 
 	Parms.CallFunc_MakeTransform_ReturnValue = CallFunc_MakeTransform_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -465,9 +536,12 @@ void APlayerPawn_Athena_C::SpawnTeleportationLight(const struct FTransform& Call
 
 void APlayerPawn_Athena_C::FindBounds(bool bGunTrue, const struct FVector& CallFunc_GetActorBounds_Origin, const struct FVector& CallFunc_GetActorBounds_BoxExtent, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FTransform& CallFunc_MakeTransform_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue_1, const struct FVector& CallFunc_BreakTransform_Location_1, const struct FRotator& CallFunc_BreakTransform_Rotation_1, const struct FVector& CallFunc_BreakTransform_Scale_1, float CallFunc_VSize_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "FindBounds");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_FindBounds_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "FindBounds");
+
+	Params::APlayerPawn_Athena_C_FindBounds_Params Parms{};
 
 	Parms.bGunTrue = bGunTrue;
 	Parms.CallFunc_GetActorBounds_Origin = CallFunc_GetActorBounds_Origin;
@@ -499,12 +573,14 @@ void APlayerPawn_Athena_C::FindBounds(bool bGunTrue, const struct FVector& CallF
 
 void APlayerPawn_Athena_C::QueueTeleportOut()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "QueueTeleportOut");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_QueueTeleportOut_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "QueueTeleportOut");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -515,12 +591,14 @@ void APlayerPawn_Athena_C::QueueTeleportOut()
 
 void APlayerPawn_Athena_C::QueueTeleportIn()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "QueueTeleportIn");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_QueueTeleportIn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "QueueTeleportIn");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -543,9 +621,12 @@ void APlayerPawn_Athena_C::QueueTeleportIn()
 
 void APlayerPawn_Athena_C::OnStartLongInteract(class AActor* ReceivingActor, bool* Out_bConsumeEvent, bool* Out_bSkipSetInteractDuration, bool* Out_bSkipStartAnimation, enum class EItemInteractionType* Out_ItemInteractionType, bool CallFunc_ActorHasTag_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput, bool CallFunc_HasMatchingGameplayTag_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnStartLongInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnStartLongInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnStartLongInteract");
+
+	Params::APlayerPawn_Athena_C_OnStartLongInteract_Params Parms{};
 
 	Parms.ReceivingActor = ReceivingActor;
 	Parms.CallFunc_ActorHasTag_ReturnValue = CallFunc_ActorHasTag_ReturnValue;
@@ -586,9 +667,12 @@ void APlayerPawn_Athena_C::OnStartLongInteract(class AActor* ReceivingActor, boo
 
 void APlayerPawn_Athena_C::InWarmUp(bool* InWarmUp, class AGameStateBase* CallFunc_GetGameState_ReturnValue, class AAthena_GameState_C* K2Node_DynamicCast_AsAthena_Game_State, bool K2Node_DynamicCast_bSuccess, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "InWarmUp");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_InWarmUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "InWarmUp");
+
+	Params::APlayerPawn_Athena_C_InWarmUp_Params Parms{};
 
 	Parms.CallFunc_GetGameState_ReturnValue = CallFunc_GetGameState_ReturnValue;
 	Parms.K2Node_DynamicCast_AsAthena_Game_State = K2Node_DynamicCast_AsAthena_Game_State;
@@ -613,9 +697,12 @@ void APlayerPawn_Athena_C::InWarmUp(bool* InWarmUp, class AGameStateBase* CallFu
 
 void APlayerPawn_Athena_C::StopLoopingAudio(bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "StopLoopingAudio");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_StopLoopingAudio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "StopLoopingAudio");
+
+	Params::APlayerPawn_Athena_C_StopLoopingAudio_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
@@ -646,9 +733,12 @@ void APlayerPawn_Athena_C::StopLoopingAudio(bool CallFunc_IsValid_ReturnValue, b
 
 void APlayerPawn_Athena_C::EnableWaterAudio(bool Is_Entering_Water, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable_1, bool Temp_bool_Variable, class USoundBase* Temp_object_Variable_2, class USoundBase* Temp_object_Variable_3, bool Temp_bool_Variable_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, class USoundBase* K2Node_Select_Default, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_1, bool CallFunc_IsLocallyControlled_ReturnValue_1, class USoundBase* K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "EnableWaterAudio");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_EnableWaterAudio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "EnableWaterAudio");
+
+	Params::APlayerPawn_Athena_C_EnableWaterAudio_Params Parms{};
 
 	Parms.Is_Entering_Water = Is_Entering_Water;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -690,9 +780,12 @@ void APlayerPawn_Athena_C::EnableWaterAudio(bool Is_Entering_Water, class USound
 
 void APlayerPawn_Athena_C::GetLocationInCircle_XY(struct FVector* LocationLocalSpace, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_RandomFloat_ReturnValue, float CallFunc_GetPI_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Lerp_ReturnValue, float CallFunc_Cos_ReturnValue, float CallFunc_Sin_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_2, const struct FVector& CallFunc_MakeVector_ReturnValue_1, const struct FVector& CallFunc_VLerp_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GetLocationInCircle_XY");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_GetLocationInCircle_XY_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "GetLocationInCircle_XY");
+
+	Params::APlayerPawn_Athena_C_GetLocationInCircle_XY_Params Parms{};
 
 	Parms.CallFunc_MakeVector_ReturnValue = CallFunc_MakeVector_ReturnValue;
 	Parms.CallFunc_RandomFloat_ReturnValue = CallFunc_RandomFloat_ReturnValue;
@@ -710,7 +803,7 @@ void APlayerPawn_Athena_C::GetLocationInCircle_XY(struct FVector* LocationLocalS
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (LocationLocalSpace != nullptr)
-		*LocationLocalSpace = Parms.LocationLocalSpace;
+		*LocationLocalSpace = std::move(Parms.LocationLocalSpace);
 
 }
 
@@ -750,9 +843,12 @@ void APlayerPawn_Athena_C::GetLocationInCircle_XY(struct FVector* LocationLocalS
 
 void APlayerPawn_Athena_C::InitAthenaFoleyAudio(bool Temp_bool_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable_1, bool Temp_bool_Variable_1, class USoundBase* Temp_object_Variable_2, class USoundBase* Temp_object_Variable_3, bool Temp_bool_Variable_2, class USoundBase* Temp_object_Variable_4, class USoundBase* Temp_object_Variable_5, bool Temp_bool_Variable_3, class USoundBase* Temp_object_Variable_6, class USoundBase* Temp_object_Variable_7, bool Temp_bool_Variable_4, class USoundBase* Temp_object_Variable_8, class USoundBase* Temp_object_Variable_9, bool Temp_bool_Variable_5, class USoundBase* Temp_object_Variable_10, class USoundBase* Temp_object_Variable_11, bool Temp_bool_Variable_6, class USoundBase* Temp_object_Variable_12, class USoundBase* Temp_object_Variable_13, bool CallFunc_IsLocallyControlled_ReturnValue, class USoundBase* K2Node_Select_Default, class USoundBase* K2Node_Select_Default_1, class USoundBase* K2Node_Select_Default_2, class USoundBase* K2Node_Select_Default_3, class USoundBase* K2Node_Select_Default_4, class USoundBase* K2Node_Select_Default_5, class USoundBase* K2Node_Select_Default_6)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "InitAthenaFoleyAudio");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_InitAthenaFoleyAudio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "InitAthenaFoleyAudio");
+
+	Params::APlayerPawn_Athena_C_InitAthenaFoleyAudio_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -792,14 +888,17 @@ void APlayerPawn_Athena_C::InitAthenaFoleyAudio(bool Temp_bool_Variable, class U
 // Function PlayerPawn_Athena.PlayerPawn_Athena_C.UserConstructionScript
 // (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortPlayerPawnStats        CallFunc_GetDataTableRowFromName_OutRow                          ()
+// struct FFortPlayerPawnStats        CallFunc_GetDataTableRowFromName_OutRow                          (None)
 // bool                               CallFunc_GetDataTableRowFromName_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void APlayerPawn_Athena_C::UserConstructionScript(const struct FFortPlayerPawnStats& CallFunc_GetDataTableRowFromName_OutRow, bool CallFunc_GetDataTableRowFromName_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "UserConstructionScript");
+
+	Params::APlayerPawn_Athena_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_GetDataTableRowFromName_OutRow = CallFunc_GetDataTableRowFromName_OutRow;
 	Parms.CallFunc_GetDataTableRowFromName_ReturnValue = CallFunc_GetDataTableRowFromName_ReturnValue;
@@ -815,12 +914,14 @@ void APlayerPawn_Athena_C::UserConstructionScript(const struct FFortPlayerPawnSt
 
 void APlayerPawn_Athena_C::Storm_Audio_Fader__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "Storm Audio Fader__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_Storm_Audio_Fader__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "Storm Audio Fader__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -831,12 +932,14 @@ void APlayerPawn_Athena_C::Storm_Audio_Fader__FinishedFunc()
 
 void APlayerPawn_Athena_C::Storm_Audio_Fader__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "Storm Audio Fader__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_Storm_Audio_Fader__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "Storm Audio Fader__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -847,12 +950,14 @@ void APlayerPawn_Athena_C::Storm_Audio_Fader__UpdateFunc()
 
 void APlayerPawn_Athena_C::Timeline_0__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "Timeline_0__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_Timeline_0__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "Timeline_0__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -863,12 +968,14 @@ void APlayerPawn_Athena_C::Timeline_0__FinishedFunc()
 
 void APlayerPawn_Athena_C::Timeline_0__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "Timeline_0__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_Timeline_0__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "Timeline_0__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -879,12 +986,14 @@ void APlayerPawn_Athena_C::Timeline_0__UpdateFunc()
 
 void APlayerPawn_Athena_C::TFX_GlowCharacterMesh__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_GlowCharacterMesh__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_TFX_GlowCharacterMesh__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_GlowCharacterMesh__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -895,12 +1004,14 @@ void APlayerPawn_Athena_C::TFX_GlowCharacterMesh__FinishedFunc()
 
 void APlayerPawn_Athena_C::TFX_GlowCharacterMesh__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_GlowCharacterMesh__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_TFX_GlowCharacterMesh__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_GlowCharacterMesh__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -911,12 +1022,14 @@ void APlayerPawn_Athena_C::TFX_GlowCharacterMesh__UpdateFunc()
 
 void APlayerPawn_Athena_C::TFX_ResOutCharacterMesh__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_ResOutCharacterMesh__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_TFX_ResOutCharacterMesh__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_ResOutCharacterMesh__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -927,12 +1040,14 @@ void APlayerPawn_Athena_C::TFX_ResOutCharacterMesh__FinishedFunc()
 
 void APlayerPawn_Athena_C::TFX_ResOutCharacterMesh__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_ResOutCharacterMesh__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_TFX_ResOutCharacterMesh__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_ResOutCharacterMesh__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -944,9 +1059,12 @@ void APlayerPawn_Athena_C::TFX_ResOutCharacterMesh__UpdateFunc()
 
 void APlayerPawn_Athena_C::OnLoaded_B148701F472F44FF0B6CAFAE91E06FBF(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnLoaded_B148701F472F44FF0B6CAFAE91E06FBF");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnLoaded_B148701F472F44FF0B6CAFAE91E06FBF_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnLoaded_B148701F472F44FF0B6CAFAE91E06FBF");
+
+	Params::APlayerPawn_Athena_C_OnLoaded_B148701F472F44FF0B6CAFAE91E06FBF_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -964,9 +1082,12 @@ void APlayerPawn_Athena_C::OnLoaded_B148701F472F44FF0B6CAFAE91E06FBF(class UObje
 
 void APlayerPawn_Athena_C::OnReady_FA189ECA4DFF2C49E5269D832F66D8EC(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnReady_FA189ECA4DFF2C49E5269D832F66D8EC");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnReady_FA189ECA4DFF2C49E5269D832F66D8EC_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnReady_FA189ECA4DFF2C49E5269D832F66D8EC");
+
+	Params::APlayerPawn_Athena_C_OnReady_FA189ECA4DFF2C49E5269D832F66D8EC_Params Parms{};
 
 	Parms.GameState = GameState;
 	Parms.Playlist = Playlist;
@@ -985,9 +1106,12 @@ void APlayerPawn_Athena_C::OnReady_FA189ECA4DFF2C49E5269D832F66D8EC(class AFortG
 
 void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
+
+	Params::APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -1003,12 +1127,14 @@ void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_
 
 void APlayerPawn_Athena_C::ReceiveDestroyed()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveDestroyed");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_ReceiveDestroyed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveDestroyed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1019,12 +1145,14 @@ void APlayerPawn_Athena_C::ReceiveDestroyed()
 
 void APlayerPawn_Athena_C::SafeZoneStatusChanged()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SafeZoneStatusChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_SafeZoneStatusChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SafeZoneStatusChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1037,9 +1165,12 @@ void APlayerPawn_Athena_C::SafeZoneStatusChanged()
 
 void APlayerPawn_Athena_C::GameplayCue_Athena_Equipping(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Equipping");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_GameplayCue_Athena_Equipping_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Equipping");
+
+	Params::APlayerPawn_Athena_C_GameplayCue_Athena_Equipping_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -1062,9 +1193,12 @@ void APlayerPawn_Athena_C::GameplayCue_Athena_Equipping(enum class EGameplayCueE
 
 void APlayerPawn_Athena_C::OnDeathPlayEffects(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnDeathPlayEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnDeathPlayEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnDeathPlayEffects");
+
+	Params::APlayerPawn_Athena_C_OnDeathPlayEffects_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -1087,9 +1221,12 @@ void APlayerPawn_Athena_C::OnDeathPlayEffects(float Damage, struct FGameplayTagC
 
 void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
+
+	Params::APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -1105,12 +1242,14 @@ void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_
 
 void APlayerPawn_Athena_C::ContrailCheck()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ContrailCheck");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_ContrailCheck_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ContrailCheck");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1123,9 +1262,12 @@ void APlayerPawn_Athena_C::ContrailCheck()
 
 void APlayerPawn_Athena_C::GameplayCue_Athena_Player_BeingRevivedFromDBNO(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Player.BeingRevivedFromDBNO");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Player.BeingRevivedFromDBNO");
+
+	Params::APlayerPawn_Athena_C_GameplayCue_Athena_Player_BeingRevivedFromDBNO_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -1141,12 +1283,14 @@ void APlayerPawn_Athena_C::GameplayCue_Athena_Player_BeingRevivedFromDBNO(enum c
 
 void APlayerPawn_Athena_C::RemoveStormFX()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveStormFX");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_RemoveStormFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveStormFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1159,9 +1303,12 @@ void APlayerPawn_Athena_C::RemoveStormFX()
 
 void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_DBNOResurrect(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.DBNOResurrect");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_DBNOResurrect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.DBNOResurrect");
+
+	Params::APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_DBNOResurrect_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -1178,9 +1325,12 @@ void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_DBNOResurrect(enum c
 
 void APlayerPawn_Athena_C::Play_Lightning_Flash_Audio(const struct FVector& Location)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "Play Lightning Flash Audio");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_Play_Lightning_Flash_Audio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "Play Lightning Flash Audio");
+
+	Params::APlayerPawn_Athena_C_Play_Lightning_Flash_Audio_Params Parms{};
 
 	Parms.Location = Location;
 
@@ -1195,12 +1345,14 @@ void APlayerPawn_Athena_C::Play_Lightning_Flash_Audio(const struct FVector& Loca
 
 void APlayerPawn_Athena_C::Start_Storm_Audio_Fader()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "Start Storm Audio Fader");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_Start_Storm_Audio_Fader_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "Start Storm Audio Fader");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1211,12 +1363,14 @@ void APlayerPawn_Athena_C::Start_Storm_Audio_Fader()
 
 void APlayerPawn_Athena_C::OnEnteredWaterVolume()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnEnteredWaterVolume");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnEnteredWaterVolume_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnEnteredWaterVolume");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1227,12 +1381,14 @@ void APlayerPawn_Athena_C::OnEnteredWaterVolume()
 
 void APlayerPawn_Athena_C::OnExitedWaterVolume()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnExitedWaterVolume");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnExitedWaterVolume_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnExitedWaterVolume");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1243,12 +1399,14 @@ void APlayerPawn_Athena_C::OnExitedWaterVolume()
 
 void APlayerPawn_Athena_C::NotifyTeammateSkydivedFromBus()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "NotifyTeammateSkydivedFromBus");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_NotifyTeammateSkydivedFromBus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "NotifyTeammateSkydivedFromBus");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1260,9 +1418,12 @@ void APlayerPawn_Athena_C::NotifyTeammateSkydivedFromBus()
 
 void APlayerPawn_Athena_C::ReceiveEndPlay(enum class EEndPlayReason EndPlayReason)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveEndPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_ReceiveEndPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveEndPlay");
+
+	Params::APlayerPawn_Athena_C_ReceiveEndPlay_Params Parms{};
 
 	Parms.EndPlayReason = EndPlayReason;
 
@@ -1277,12 +1438,14 @@ void APlayerPawn_Athena_C::ReceiveEndPlay(enum class EEndPlayReason EndPlayReaso
 
 void APlayerPawn_Athena_C::OnLeftReplayRelevancy()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnLeftReplayRelevancy");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnLeftReplayRelevancy_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnLeftReplayRelevancy");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1293,12 +1456,14 @@ void APlayerPawn_Athena_C::OnLeftReplayRelevancy()
 
 void APlayerPawn_Athena_C::OnEnteredReplayRelevancy()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnEnteredReplayRelevancy");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnEnteredReplayRelevancy_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnEnteredReplayRelevancy");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1310,9 +1475,12 @@ void APlayerPawn_Athena_C::OnEnteredReplayRelevancy()
 
 void APlayerPawn_Athena_C::OnCharacterCustomizationCompleted(class AFortPlayerPawn* Pawn)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnCharacterCustomizationCompleted");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnCharacterCustomizationCompleted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnCharacterCustomizationCompleted");
+
+	Params::APlayerPawn_Athena_C_OnCharacterCustomizationCompleted_Params Parms{};
 
 	Parms.Pawn = Pawn;
 
@@ -1327,12 +1495,14 @@ void APlayerPawn_Athena_C::OnCharacterCustomizationCompleted(class AFortPlayerPa
 
 void APlayerPawn_Athena_C::PlayResOut()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "PlayResOut");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_PlayResOut_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "PlayResOut");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1343,12 +1513,14 @@ void APlayerPawn_Athena_C::PlayResOut()
 
 void APlayerPawn_Athena_C::OnResInDuringWarmup()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnResInDuringWarmup");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnResInDuringWarmup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnResInDuringWarmup");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1359,12 +1531,14 @@ void APlayerPawn_Athena_C::OnResInDuringWarmup()
 
 void APlayerPawn_Athena_C::PlayResInFX()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "PlayResInFX");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_PlayResInFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "PlayResInFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1375,12 +1549,14 @@ void APlayerPawn_Athena_C::PlayResInFX()
 
 void APlayerPawn_Athena_C::PlayResOutFX()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "PlayResOutFX");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_PlayResOutFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "PlayResOutFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1391,12 +1567,14 @@ void APlayerPawn_Athena_C::PlayResOutFX()
 
 void APlayerPawn_Athena_C::AddStormFX()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "AddStormFX");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_AddStormFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "AddStormFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1409,9 +1587,12 @@ void APlayerPawn_Athena_C::AddStormFX()
 
 void APlayerPawn_Athena_C::SetSafeZonePhaseAndGameplayCueTag(int32 InSafeZonePhase, bool bSpawnGameplayCue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SetSafeZonePhaseAndGameplayCueTag");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_SetSafeZonePhaseAndGameplayCueTag_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SetSafeZonePhaseAndGameplayCueTag");
+
+	Params::APlayerPawn_Athena_C_SetSafeZonePhaseAndGameplayCueTag_Params Parms{};
 
 	Parms.InSafeZonePhase = InSafeZonePhase;
 	Parms.bSpawnGameplayCue = bSpawnGameplayCue;
@@ -1430,9 +1611,12 @@ void APlayerPawn_Athena_C::SetSafeZonePhaseAndGameplayCueTag(int32 InSafeZonePha
 
 void APlayerPawn_Athena_C::SetSafeZoneTagWhenChanged(int32 NewWhichSafeZoneTag, const struct FGameplayTag& GameplayTag, bool bSpawnGameplayCue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SetSafeZoneTagWhenChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_SetSafeZoneTagWhenChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SetSafeZoneTagWhenChanged");
+
+	Params::APlayerPawn_Athena_C_SetSafeZoneTagWhenChanged_Params Parms{};
 
 	Parms.NewWhichSafeZoneTag = NewWhichSafeZoneTag;
 	Parms.GameplayTag = GameplayTag;
@@ -1450,9 +1634,12 @@ void APlayerPawn_Athena_C::SetSafeZoneTagWhenChanged(int32 NewWhichSafeZoneTag, 
 
 void APlayerPawn_Athena_C::OnOutsideSafeZonePhaseChanged(int32 SafeZonePhase)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnOutsideSafeZonePhaseChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnOutsideSafeZonePhaseChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnOutsideSafeZonePhaseChanged");
+
+	Params::APlayerPawn_Athena_C_OnOutsideSafeZonePhaseChanged_Params Parms{};
 
 	Parms.SafeZonePhase = SafeZonePhase;
 
@@ -1467,12 +1654,14 @@ void APlayerPawn_Athena_C::OnOutsideSafeZonePhaseChanged(int32 SafeZonePhase)
 
 void APlayerPawn_Athena_C::RemoveSafeZoneGameplayCue()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveSafeZoneGameplayCue");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_RemoveSafeZoneGameplayCue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveSafeZoneGameplayCue");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1483,12 +1672,14 @@ void APlayerPawn_Athena_C::RemoveSafeZoneGameplayCue()
 
 void APlayerPawn_Athena_C::OnReceivedStormSurgeDamage()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnReceivedStormSurgeDamage");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnReceivedStormSurgeDamage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnReceivedStormSurgeDamage");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1500,9 +1691,12 @@ void APlayerPawn_Athena_C::OnReceivedStormSurgeDamage()
 
 void APlayerPawn_Athena_C::MeleeSwingLeft(bool First_Left)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingLeft");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_MeleeSwingLeft_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingLeft");
+
+	Params::APlayerPawn_Athena_C_MeleeSwingLeft_Params Parms{};
 
 	Parms.First_Left = First_Left;
 
@@ -1518,9 +1712,12 @@ void APlayerPawn_Athena_C::MeleeSwingLeft(bool First_Left)
 
 void APlayerPawn_Athena_C::MeleeSwingRight(bool First_Right)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingRight");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_MeleeSwingRight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingRight");
+
+	Params::APlayerPawn_Athena_C_MeleeSwingRight_Params Parms{};
 
 	Parms.First_Right = First_Right;
 
@@ -1535,12 +1732,14 @@ void APlayerPawn_Athena_C::MeleeSwingRight(bool First_Right)
 
 void APlayerPawn_Athena_C::ReTrySetupDissolveFx()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ReTrySetupDissolveFx");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_ReTrySetupDissolveFx_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReTrySetupDissolveFx");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1553,9 +1752,12 @@ void APlayerPawn_Athena_C::ReTrySetupDissolveFx()
 
 void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_DBNOEnter(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.DBNOEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_DBNOEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.DBNOEnter");
+
+	Params::APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_DBNOEnter_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -1572,9 +1774,12 @@ void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_DBNOEnter(enum class
 
 void APlayerPawn_Athena_C::ActivateInvincibleVisuals(float Duration)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ActivateInvincibleVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_ActivateInvincibleVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ActivateInvincibleVisuals");
+
+	Params::APlayerPawn_Athena_C_ActivateInvincibleVisuals_Params Parms{};
 
 	Parms.Duration = Duration;
 
@@ -1591,9 +1796,12 @@ void APlayerPawn_Athena_C::ActivateInvincibleVisuals(float Duration)
 
 void APlayerPawn_Athena_C::GameplayCue_Athena_Reloading(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Reloading");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_GameplayCue_Athena_Reloading_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Reloading");
+
+	Params::APlayerPawn_Athena_C_GameplayCue_Athena_Reloading_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -1612,9 +1820,12 @@ void APlayerPawn_Athena_C::GameplayCue_Athena_Reloading(enum class EGameplayCueE
 
 void APlayerPawn_Athena_C::TeleportInNSeconds(float SecondsTillTeleport, const struct FVector& DestLocation, const struct FRotator& DestRotation)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "TeleportInNSeconds");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_TeleportInNSeconds_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "TeleportInNSeconds");
+
+	Params::APlayerPawn_Athena_C_TeleportInNSeconds_Params Parms{};
 
 	Parms.SecondsTillTeleport = SecondsTillTeleport;
 	Parms.DestLocation = DestLocation;
@@ -1632,9 +1843,12 @@ void APlayerPawn_Athena_C::TeleportInNSeconds(float SecondsTillTeleport, const s
 
 void APlayerPawn_Athena_C::ClientRunSnowGC(bool Instant)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ClientRunSnowGC");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_ClientRunSnowGC_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ClientRunSnowGC");
+
+	Params::APlayerPawn_Athena_C_ClientRunSnowGC_Params Parms{};
 
 	Parms.Instant = Instant;
 
@@ -1653,9 +1867,12 @@ void APlayerPawn_Athena_C::ClientRunSnowGC(bool Instant)
 
 void APlayerPawn_Athena_C::WhiteoutAndTeleport(const struct FVector& DestLocation, const struct FRotator& DestRotation, bool Instant, float Gravity)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "WhiteoutAndTeleport");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_WhiteoutAndTeleport_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "WhiteoutAndTeleport");
+
+	Params::APlayerPawn_Athena_C_WhiteoutAndTeleport_Params Parms{};
 
 	Parms.DestLocation = DestLocation;
 	Parms.DestRotation = DestRotation;
@@ -1675,9 +1892,12 @@ void APlayerPawn_Athena_C::WhiteoutAndTeleport(const struct FVector& DestLocatio
 
 void APlayerPawn_Athena_C::GameplayCue_Athena_Boost(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Boost");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_GameplayCue_Athena_Boost_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Boost");
+
+	Params::APlayerPawn_Athena_C_GameplayCue_Athena_Boost_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -1693,12 +1913,14 @@ void APlayerPawn_Athena_C::GameplayCue_Athena_Boost(enum class EGameplayCueEvent
 
 void APlayerPawn_Athena_C::OnCreativeStopGhost()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnCreativeStopGhost");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnCreativeStopGhost_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnCreativeStopGhost");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1709,12 +1931,14 @@ void APlayerPawn_Athena_C::OnCreativeStopGhost()
 
 void APlayerPawn_Athena_C::OnCreativeStartGhost()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnCreativeStartGhost");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnCreativeStartGhost_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnCreativeStartGhost");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1725,12 +1949,14 @@ void APlayerPawn_Athena_C::OnCreativeStartGhost()
 
 void APlayerPawn_Athena_C::MeleeSwingLeft_End()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingLeft_End");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_MeleeSwingLeft_End_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingLeft_End");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1741,12 +1967,14 @@ void APlayerPawn_Athena_C::MeleeSwingLeft_End()
 
 void APlayerPawn_Athena_C::MeleeSwingRight_End()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingRight_End");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_MeleeSwingRight_End_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingRight_End");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1757,12 +1985,14 @@ void APlayerPawn_Athena_C::MeleeSwingRight_End()
 
 void APlayerPawn_Athena_C::AddSafeZoneGameplayCue()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "AddSafeZoneGameplayCue");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_AddSafeZoneGameplayCue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "AddSafeZoneGameplayCue");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1773,12 +2003,14 @@ void APlayerPawn_Athena_C::AddSafeZoneGameplayCue()
 
 void APlayerPawn_Athena_C::RemoveSafeZoneGameplayCueServerToClient()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveSafeZoneGameplayCueServerToClient");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_RemoveSafeZoneGameplayCueServerToClient_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveSafeZoneGameplayCueServerToClient");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1789,12 +2021,14 @@ void APlayerPawn_Athena_C::RemoveSafeZoneGameplayCueServerToClient()
 
 void APlayerPawn_Athena_C::OnSuccessfulBuildingEdit()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnSuccessfulBuildingEdit");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnSuccessfulBuildingEdit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnSuccessfulBuildingEdit");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1805,12 +2039,14 @@ void APlayerPawn_Athena_C::OnSuccessfulBuildingEdit()
 
 void APlayerPawn_Athena_C::Play_Respawn_FX()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "Play Respawn FX");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_Play_Respawn_FX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "Play Respawn FX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1821,12 +2057,14 @@ void APlayerPawn_Athena_C::Play_Respawn_FX()
 
 void APlayerPawn_Athena_C::OnSpawnImmunityTimeReset()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnSpawnImmunityTimeReset");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnSpawnImmunityTimeReset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnSpawnImmunityTimeReset");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1839,9 +2077,12 @@ void APlayerPawn_Athena_C::OnSpawnImmunityTimeReset()
 
 void APlayerPawn_Athena_C::OnEnteredWaterBody(class AFortWaterBodyActor* WaterBody, bool bIsFirstBody)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnEnteredWaterBody");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnEnteredWaterBody_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnEnteredWaterBody");
+
+	Params::APlayerPawn_Athena_C_OnEnteredWaterBody_Params Parms{};
 
 	Parms.WaterBody = WaterBody;
 	Parms.bIsFirstBody = bIsFirstBody;
@@ -1859,9 +2100,12 @@ void APlayerPawn_Athena_C::OnEnteredWaterBody(class AFortWaterBodyActor* WaterBo
 
 void APlayerPawn_Athena_C::OnExitedWaterBody(class AFortWaterBodyActor* WaterBody, bool bIsLastBody)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnExitedWaterBody");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnExitedWaterBody_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnExitedWaterBody");
+
+	Params::APlayerPawn_Athena_C_OnExitedWaterBody_Params Parms{};
 
 	Parms.WaterBody = WaterBody;
 	Parms.bIsLastBody = bIsLastBody;
@@ -1881,9 +2125,12 @@ void APlayerPawn_Athena_C::OnExitedWaterBody(class AFortWaterBodyActor* WaterBod
 
 void APlayerPawn_Athena_C::K2_OnMovementModeChanged(enum class EMovementMode PrevMovementMode, enum class EMovementMode NewMovementMode, uint8 PrevCustomMode, uint8 NewCustomMode)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "K2_OnMovementModeChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_K2_OnMovementModeChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "K2_OnMovementModeChanged");
+
+	Params::APlayerPawn_Athena_C_K2_OnMovementModeChanged_Params Parms{};
 
 	Parms.PrevMovementMode = PrevMovementMode;
 	Parms.NewMovementMode = NewMovementMode;
@@ -1901,12 +2148,14 @@ void APlayerPawn_Athena_C::K2_OnMovementModeChanged(enum class EMovementMode Pre
 
 void APlayerPawn_Athena_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1918,9 +2167,12 @@ void APlayerPawn_Athena_C::ReceiveBeginPlay()
 
 void APlayerPawn_Athena_C::ReceivePossessed(class AController* NewController)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceivePossessed");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_ReceivePossessed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ReceivePossessed");
+
+	Params::APlayerPawn_Athena_C_ReceivePossessed_Params Parms{};
 
 	Parms.NewController = NewController;
 
@@ -1935,12 +2187,14 @@ void APlayerPawn_Athena_C::ReceivePossessed(class AController* NewController)
 
 void APlayerPawn_Athena_C::RemoveContrails()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveContrails");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_RemoveContrails_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveContrails");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1952,9 +2206,12 @@ void APlayerPawn_Athena_C::RemoveContrails()
 
 void APlayerPawn_Athena_C::OnLanded(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnLanded");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnLanded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnLanded");
+
+	Params::APlayerPawn_Athena_C_OnLanded_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -1969,12 +2226,14 @@ void APlayerPawn_Athena_C::OnLanded(struct FHitResult& Hit)
 
 void APlayerPawn_Athena_C::OnBeginWaterSprintBoost()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnBeginWaterSprintBoost");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnBeginWaterSprintBoost_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "OnBeginWaterSprintBoost");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1986,9 +2245,12 @@ void APlayerPawn_Athena_C::OnBeginWaterSprintBoost()
 
 void APlayerPawn_Athena_C::IsHiddingInProp(bool IsHidden)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "isHiddingInProp");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_IsHiddingInProp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "isHiddingInProp");
+
+	Params::APlayerPawn_Athena_C_IsHiddingInProp_Params Parms{};
 
 	Parms.IsHidden = IsHidden;
 
@@ -2003,12 +2265,14 @@ void APlayerPawn_Athena_C::IsHiddingInProp(bool IsHidden)
 
 void APlayerPawn_Athena_C::SetupColdTag()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SetupColdTag");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_SetupColdTag_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SetupColdTag");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -2019,12 +2283,14 @@ void APlayerPawn_Athena_C::SetupColdTag()
 
 void APlayerPawn_Athena_C::ApplyColdTag()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ApplyColdTag");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_ApplyColdTag_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ApplyColdTag");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -2036,9 +2302,12 @@ void APlayerPawn_Athena_C::ApplyColdTag()
 
 void APlayerPawn_Athena_C::ServerSetCreativeEffectColorIndex(const struct FFCreativeEffectColorIndex& Index)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ServerSetCreativeEffectColorIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_ServerSetCreativeEffectColorIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ServerSetCreativeEffectColorIndex");
+
+	Params::APlayerPawn_Athena_C_ServerSetCreativeEffectColorIndex_Params Parms{};
 
 	Parms.Index = Index;
 
@@ -2055,9 +2324,12 @@ void APlayerPawn_Athena_C::ServerSetCreativeEffectColorIndex(const struct FFCrea
 
 void APlayerPawn_Athena_C::ApplyColdTag_Retry(class UFortAbilitySystemComponent* AbilitySystemComponent, class AFortPlayerPawn* AffectedPawn)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ApplyColdTag_Retry");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_ApplyColdTag_Retry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ApplyColdTag_Retry");
+
+	Params::APlayerPawn_Athena_C_ApplyColdTag_Retry_Params Parms{};
 
 	Parms.AbilitySystemComponent = AbilitySystemComponent;
 	Parms.AffectedPawn = AffectedPawn;
@@ -2092,7 +2364,7 @@ void APlayerPawn_Athena_C::ApplyColdTag_Retry(class UFortAbilitySystemComponent*
 // struct FHitResult                  K2Node_Event_HitInfo                                             (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AFortPawn*                   K2Node_Event_InstigatedBy                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       (None)
 // enum class EGameplayCueEvent       K2Node_GameplayCueEvent_EventType_5                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayCueParameters      K2Node_GameplayCueEvent_Parameters_5                             (ContainsInstancedReference)
 // bool                               K2Node_SwitchEnum_CmpSuccess_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -2117,11 +2389,11 @@ void APlayerPawn_Athena_C::ApplyColdTag_Retry(class UFortAbilitySystemComponent*
 // struct FGameplayCueParameters      K2Node_GameplayCueEvent_Parameters_3                             (ContainsInstancedReference)
 // float                              CallFunc_BreakGameplayCueParameters_NormalizedMagnitude          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakGameplayCueParameters_RawMagnitude                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleCallFunc_BreakGameplayCueParameters_EffectContext                ()
+// struct FGameplayEffectContextHandleCallFunc_BreakGameplayCueParameters_EffectContext                (None)
 // struct FGameplayTag                CallFunc_BreakGameplayCueParameters_MatchedTagName               (NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                CallFunc_BreakGameplayCueParameters_OriginalTag                  (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedSourceTags         ()
-// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedTargetTags         ()
+// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedSourceTags         (None)
+// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedTargetTags         (None)
 // struct FVector                     CallFunc_BreakGameplayCueParameters_Location                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_BreakGameplayCueParameters_Normal                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_BreakGameplayCueParameters_Instigator                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2154,7 +2426,7 @@ void APlayerPawn_Athena_C::ApplyColdTag_Retry(class UFortAbilitySystemComponent*
 // bool                               CallFunc_IsMobilePlatform_ReturnValue_1                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsLocallyControlled_ReturnValue_3                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayTagContainer       Temp_struct_Variable_1                                           ()
+// struct FGameplayTagContainer       Temp_struct_Variable_1                                           (None)
 // bool                               CallFunc_HasTag_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsLocallyControlled_ReturnValue_4                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -2323,7 +2595,7 @@ void APlayerPawn_Athena_C::ApplyColdTag_Retry(class UFortAbilitySystemComponent*
 // bool                               CallFunc_BooleanAND_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AController*                 K2Node_Event_NewController                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsInVehicle_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              (None)
 // bool                               CallFunc_IsInAthena_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsDedicatedServer_ReturnValue_4                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsDedicatedServer_ReturnValue_5                         (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -2388,9 +2660,12 @@ void APlayerPawn_Athena_C::ApplyColdTag_Retry(class UFortAbilitySystemComponent*
 
 void APlayerPawn_Athena_C::ExecuteUbergraph_PlayerPawn_Athena(int32 EntryPoint, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FApplyVariantsAdditionalParams& Temp_struct_Variable, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType_7, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters_7, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_IsValid_ReturnValue_5, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType_6, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters_6, float K2Node_Event_Damage, const struct FGameplayTagContainer& K2Node_Event_DamageTags, const struct FVector& K2Node_Event_Momentum, const struct FHitResult& K2Node_Event_HitInfo, class AFortPawn* K2Node_Event_InstigatedBy, class AActor* K2Node_Event_DamageCauser, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType_5, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters_5, bool K2Node_SwitchEnum_CmpSuccess_1, bool CallFunc_IsParachuteOpen_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable, const struct FVector& CallFunc_GetVelocity_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, float CallFunc_VSize_ReturnValue, float CallFunc_MapRangeClamped_ReturnValue, float CallFunc_MapRangeClamped_ReturnValue_1, const struct FVector& CallFunc_MakeVector_ReturnValue, class UNiagaraComponent* K2Node_DynamicCast_AsNiagara_Particle_System, bool K2Node_DynamicCast_bSuccess, bool Temp_bool_IsClosed_Variable, bool CallFunc_IsLocallyControlled_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue_1, bool Temp_bool_Variable, bool CallFunc_IsLocallyControlled_ReturnValue_2, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType_4, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters_4, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType_3, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters_3, float CallFunc_BreakGameplayCueParameters_NormalizedMagnitude, float CallFunc_BreakGameplayCueParameters_RawMagnitude, const struct FGameplayEffectContextHandle& CallFunc_BreakGameplayCueParameters_EffectContext, const struct FGameplayTag& CallFunc_BreakGameplayCueParameters_MatchedTagName, const struct FGameplayTag& CallFunc_BreakGameplayCueParameters_OriginalTag, const struct FGameplayTagContainer& CallFunc_BreakGameplayCueParameters_AggregatedSourceTags, const struct FGameplayTagContainer& CallFunc_BreakGameplayCueParameters_AggregatedTargetTags, const struct FVector& CallFunc_BreakGameplayCueParameters_Location, const struct FVector& CallFunc_BreakGameplayCueParameters_Normal, class AActor* CallFunc_BreakGameplayCueParameters_Instigator, class AActor* CallFunc_BreakGameplayCueParameters_EffectCauser, class UObject* CallFunc_BreakGameplayCueParameters_SourceObject, class UPhysicalMaterial* CallFunc_BreakGameplayCueParameters_PhysicalMaterial, int32 CallFunc_BreakGameplayCueParameters_GameplayEffectLevel, int32 CallFunc_BreakGameplayCueParameters_AbilityLevel, class USceneComponent* CallFunc_BreakGameplayCueParameters_TargetAttachComponent, const struct FVector& K2Node_CustomEvent_Location, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, const struct FVector& CallFunc_MakeVector_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, bool CallFunc_IsSkydiving_ReturnValue, bool Temp_bool_Option_B___If_false__use_Option_A_Variable, bool Temp_bool_IsClosed_Variable_1, class UFortAsyncAction_CurrentPlaylistReady* CallFunc_PlaylistDataReadyAsync_ReturnValue, class AFortGameStateAthena* Temp_object_Variable, bool CallFunc_IsValid_ReturnValue_6, class UFortPlaylist* Temp_object_Variable_1, bool Temp_bool_Variable_1, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_IsMobilePlatform_ReturnValue, bool CallFunc_IsMobilePlatform_ReturnValue_1, bool CallFunc_IsLocallyControlled_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue, const struct FGameplayTagContainer& Temp_struct_Variable_1, bool CallFunc_HasTag_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue_4, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_IsDedicatedServer_ReturnValue, enum class EEndPlayReason K2Node_Event_EndPlayReason, const struct FRotator& CallFunc_K2_GetComponentRotation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, class AFortGameStateAthena* K2Node_CustomEvent_GameState, class UFortPlaylist* K2Node_CustomEvent_Playlist, const struct FGameplayTagContainer& K2Node_CustomEvent_PlaylistContextTags, bool CallFunc_NotEqual_BoolBool_ReturnValue, class UAnimMontage* Temp_object_Variable_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FTransform& CallFunc_K2_GetComponentToWorld_ReturnValue, class AFortPlayerPawn* K2Node_CustomEvent_Pawn, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class ABP_VictoryDrone_C* CallFunc_FinishSpawningActor_ReturnValue, class UAnimMontage* Temp_object_Variable_3, const struct FTransform& CallFunc_K2_GetComponentToWorld_ReturnValue_1, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_2, class ABP_VictoryDrone_RiftDisolve_C* CallFunc_FinishSpawningActor_ReturnValue_1, class ABP_VictoryDrone_Athena_C* CallFunc_FinishSpawningActor_ReturnValue_2, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_1, bool Temp_bool_Variable_2, bool CallFunc_IsDedicatedServer_ReturnValue_1, bool Temp_bool_Has_Been_Initd_Variable_1, class AGameStateBase* CallFunc_GetGameState_ReturnValue, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena, bool K2Node_DynamicCast_bSuccess_1, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, int32 CallFunc_Conv_ByteToInt_ReturnValue, int32 K2Node_CustomEvent_InSafeZonePhase, bool K2Node_CustomEvent_bSpawnGameplayCue_1, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue, int32 K2Node_CustomEvent_NewWhichSafeZoneTag, const struct FGameplayTag& K2Node_CustomEvent_GameplayTag, bool K2Node_CustomEvent_bSpawnGameplayCue, int32 K2Node_Event_SafeZonePhase, bool CallFunc_NotEqual_IntInt_ReturnValue, class UAnimMontage* Temp_object_Variable_4, bool Temp_bool_Variable_3, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue_1, bool K2Node_Event_First_Left, bool K2Node_Event_First_Right, bool CallFunc_IsDedicatedServer_ReturnValue_2, int32 CallFunc_Add_IntInt_ReturnValue, class UAnimMontage* Temp_object_Variable_5, TSoftObjectPtr<class UFXSystemAsset> CallFunc_GetContrailParticleSystemSoftRef_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_IsAssetNull_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType_2, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, bool K2Node_SwitchEnum_CmpSuccess_2, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, uint8 CallFunc_GetActorTeam_ReturnValue, float K2Node_CustomEvent_Duration, enum class EFortTeamAffiliation CallFunc_GetTeamAffiliationToLocalPlayer_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess_3, bool CallFunc_Greater_FloatFloat_ReturnValue, bool Temp_bool_Variable_4, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, float Temp_float_Variable, class APlayerController* CallFunc_GetLocalViewingPlayerController_ReturnValue, class AFortPlayerControllerSpectating* K2Node_DynamicCast_AsFort_Player_Controller_Spectating, bool K2Node_DynamicCast_bSuccess_2, float Temp_float_Variable_1, bool Temp_bool_Variable_5, bool CallFunc_IsLocallyControlled_ReturnValue_5, class APlayerController* CallFunc_GetLocalViewingPlayerController_ReturnValue_1, class AFortPlayerControllerSpectating* K2Node_DynamicCast_AsFort_Player_Controller_Spectating_1, bool K2Node_DynamicCast_bSuccess_3, class UObject* Temp_object_Variable_6, class UObject* K2Node_CustomEvent_Loaded, class UObject* K2Node_Select_Default, class UFXSystemAsset* K2Node_DynamicCast_AsFXSystem_Asset, bool K2Node_DynamicCast_bSuccess_4, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType_1, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters_1, float K2Node_CustomEvent_SecondsTillTeleport, const struct FVector& K2Node_CustomEvent_DestLocation_1, const struct FRotator& K2Node_CustomEvent_DestRotation_1, bool CallFunc_IsDedicatedServer_ReturnValue_3, bool K2Node_CustomEvent_Instant_1, const struct FVector& K2Node_CustomEvent_DestLocation, const struct FRotator& K2Node_CustomEvent_DestRotation, bool K2Node_CustomEvent_Instant, float K2Node_CustomEvent_Gravity, bool CallFunc_EqualEqual_FloatFloat_ReturnValue, float K2Node_Select_Default_1, bool CallFunc_EqualEqual_FloatFloat_ReturnValue_1, bool CallFunc_K2_TeleportTo_ReturnValue, float CallFunc_Conv_BoolToFloat_ReturnValue, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_7, bool CallFunc_IsLocallyControlled_ReturnValue_6, class APlayerController* CallFunc_GetLocalViewingPlayerController_ReturnValue_2, class AFortPlayerControllerSpectating* K2Node_DynamicCast_AsFort_Player_Controller_Spectating_2, bool K2Node_DynamicCast_bSuccess_5, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsInZone_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, float CallFunc_GetValueAtLevel_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess_4, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess_5, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue_2, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue_3, bool CallFunc_IsSkydivingFromBus_ReturnValue, bool CallFunc_IsServer_ReturnValue, bool CallFunc_IsSkydivingFromBus_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_8, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_2, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue_1, class APlayerController* CallFunc_GetLocalViewingPlayerController_ReturnValue_3, class AFortPlayerControllerSpectating* K2Node_DynamicCast_AsFort_Player_Controller_Spectating_3, bool K2Node_DynamicCast_bSuccess_6, TScriptInterface<class IFortVehicleInterface> CallFunc_GetVehicleUInterface_ReturnValue, class AFortPlayerPawn* CallFunc_GetDriver_ReturnValue, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue, class AActor* CallFunc_GetVehicleActorPtrConst_ReturnValue, bool CallFunc_IsValid_ReturnValue_9, class AFortCharacterVehicle* K2Node_DynamicCast_AsFort_Character_Vehicle, bool K2Node_DynamicCast_bSuccess_7, bool CallFunc_IsLocallyControlled_ReturnValue_7, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, class AFortWaterBodyActor* K2Node_Event_WaterBody_1, bool K2Node_Event_bIsFirstBody, class AFortWaterBodyActor* K2Node_Event_WaterBody, bool K2Node_Event_bIsLastBody, enum class EMovementMode K2Node_Event_PrevMovementMode, enum class EMovementMode K2Node_Event_NewMovementMode, uint8 K2Node_Event_PrevCustomMode, uint8 K2Node_Event_NewCustomMode, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_IsSurfaceSwimming_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable_2, bool Temp_bool_IsClosed_Variable_2, float CallFunc_GetNumericCVar_OutValue, bool CallFunc_GetNumericCVar_ReturnValue, bool CallFunc_IsSurfaceSwimming_ReturnValue_1, bool CallFunc_EqualEqual_FloatFloat_ReturnValue_2, bool CallFunc_WasDBNOOnDeath_ReturnValue, bool CallFunc_WasDBNOOnDeath_ReturnValue_1, bool CallFunc_IsSurfaceSwimming_ReturnValue_2, class UAnimMontage* K2Node_Select_Default_2, bool CallFunc_BooleanAND_ReturnValue_2, class AController* K2Node_Event_NewController, bool CallFunc_IsInVehicle_ReturnValue, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData, bool CallFunc_IsInAthena_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_4, bool CallFunc_IsDedicatedServer_ReturnValue_5, class AGameStateBase* CallFunc_GetGameState_ReturnValue_1, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena_1, bool K2Node_DynamicCast_bSuccess_8, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_OutWaterSurfacePosition, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_OutWaterSurfaceNormal, bool CallFunc_IsStormCN_ReturnValue, const struct FVector& CallFunc_GetVelocity_ReturnValue_1, class UNiagaraComponent* K2Node_DynamicCast_AsNiagara_Particle_System_1, bool K2Node_DynamicCast_bSuccess_9, bool CallFunc_IsNiagaraFXTypeEnabled_ReturnValue, const struct FHitResult& K2Node_Event_Hit, class AFortWaterBodyActor* CallFunc_GetCurrentWaterBody_ReturnValue, bool CallFunc_IsSurfaceSwimming_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_10, bool CallFunc_Not_PreBool_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue_3, int32 Temp_int_Variable, float CallFunc_GetWaterImmersionDepth_ReturnValue, float CallFunc_MapRangeClamped_ReturnValue_2, class AFortWaterBodyActor* CallFunc_GetCurrentWaterBody_ReturnValue_1, class UFortMovementComp_Character* K2Node_DynamicCast_AsFort_Movement_Comp_Character, bool K2Node_DynamicCast_bSuccess_10, bool CallFunc_IsValid_ReturnValue_11, bool CallFunc_IsMovingOnGround_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_4, const struct FVector& CallFunc_GetWaterSurfaceLocation_ReturnValue, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue_4, bool CallFunc_IsLocallyControlled_ReturnValue_8, bool K2Node_CustomEvent_isHidden, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue_1, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue_1, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_12, bool Temp_bool_Has_Been_Initd_Variable_3, const struct FFCreativeEffectColorIndex& K2Node_CustomEvent_Index, bool CallFunc_IsSkydivingFromBus_ReturnValue_2, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue_3, class UFXSystemComponent* CallFunc_SpawnFXSystemAttached_ReturnValue, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue_2, bool Temp_bool_IsClosed_Variable_3, const struct FTransform& Temp_struct_Variable_2, float CallFunc_GetValueAtLevel_ReturnValue_1, class UPostProcessComponent* CallFunc_AddComponent_ReturnValue, bool CallFunc_EqualEqual_FloatFloat_ReturnValue_3, class UFortAbilitySystemComponent* K2Node_CustomEvent_AbilitySystemComponent, class AFortPlayerPawn* K2Node_CustomEvent_AffectedPawn, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, bool CallFunc_Set_Contains_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_4, bool CallFunc_BooleanAND_ReturnValue_5, bool CallFunc_BooleanAND_ReturnValue_6, class UAnimMontage* Temp_object_Variable_7, class UAnimMontage* K2Node_Select_Default_3, class UAnimMontage* K2Node_Select_Default_4, class UAnimMontage* K2Node_Select_Default_5, float CallFunc_PlayLocalAnimMontage_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ExecuteUbergraph_PlayerPawn_Athena");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_ExecuteUbergraph_PlayerPawn_Athena_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ExecuteUbergraph_PlayerPawn_Athena");
+
+	Params::APlayerPawn_Athena_C_ExecuteUbergraph_PlayerPawn_Athena_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -2720,9 +2995,12 @@ void APlayerPawn_Athena_C::ExecuteUbergraph_PlayerPawn_Athena(int32 EntryPoint, 
 
 void APlayerPawn_Athena_C::CCPM_isHiddenInProp__DelegateSignature(bool IsHidden)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "CCPM_isHiddenInProp__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_CCPM_isHiddenInProp__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "CCPM_isHiddenInProp__DelegateSignature");
+
+	Params::APlayerPawn_Athena_C_CCPM_isHiddenInProp__DelegateSignature_Params Parms{};
 
 	Parms.IsHidden = IsHidden;
 
@@ -2737,12 +3015,14 @@ void APlayerPawn_Athena_C::CCPM_isHiddenInProp__DelegateSignature(bool IsHidden)
 
 void APlayerPawn_Athena_C::SwingLeft2__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SwingLeft2__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_SwingLeft2__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SwingLeft2__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -2753,12 +3033,14 @@ void APlayerPawn_Athena_C::SwingLeft2__DelegateSignature()
 
 void APlayerPawn_Athena_C::SwingRight2__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SwingRight2__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_SwingRight2__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SwingRight2__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -2769,12 +3051,14 @@ void APlayerPawn_Athena_C::SwingRight2__DelegateSignature()
 
 void APlayerPawn_Athena_C::SwingLeftEnd__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SwingLeftEnd__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_SwingLeftEnd__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SwingLeftEnd__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -2785,12 +3069,14 @@ void APlayerPawn_Athena_C::SwingLeftEnd__DelegateSignature()
 
 void APlayerPawn_Athena_C::SwingRightEnd__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SwingRightEnd__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_SwingRightEnd__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SwingRightEnd__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -2801,12 +3087,14 @@ void APlayerPawn_Athena_C::SwingRightEnd__DelegateSignature()
 
 void APlayerPawn_Athena_C::OnFadeToWhiteTeleported__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "onFadeToWhiteTeleported__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_OnFadeToWhiteTeleported__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "onFadeToWhiteTeleported__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -2817,12 +3105,14 @@ void APlayerPawn_Athena_C::OnFadeToWhiteTeleported__DelegateSignature()
 
 void APlayerPawn_Athena_C::SwingLeft__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SwingLeft__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_SwingLeft__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SwingLeft__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -2833,12 +3123,14 @@ void APlayerPawn_Athena_C::SwingLeft__DelegateSignature()
 
 void APlayerPawn_Athena_C::SwingRight__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SwingRight__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_SwingRight__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "SwingRight__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -2849,12 +3141,14 @@ void APlayerPawn_Athena_C::SwingRight__DelegateSignature()
 
 void APlayerPawn_Athena_C::ResOut__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ResOut__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_ResOut__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ResOut__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -2865,17 +3159,17 @@ void APlayerPawn_Athena_C::ResOut__DelegateSignature()
 
 void APlayerPawn_Athena_C::ResIn__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ResIn__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_C_ResIn__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_C", "ResIn__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

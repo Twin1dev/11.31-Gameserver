@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class EasyAntiCheatCommon.EasyAntiCheatNetComponent
+// (None)
+
+class UClass* UEasyAntiCheatNetComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EasyAntiCheatNetComponent");
+
+	return Clss;
+}
+
+
+// EasyAntiCheatNetComponent EasyAntiCheatCommon.Default__EasyAntiCheatNetComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UEasyAntiCheatNetComponent* UEasyAntiCheatNetComponent::GetDefaultObj()
+{
+	static class UEasyAntiCheatNetComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEasyAntiCheatNetComponent*>(UEasyAntiCheatNetComponent::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function EasyAntiCheatCommon.EasyAntiCheatNetComponent.ServerMessage
 // (Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
@@ -22,19 +47,22 @@ namespace SDK
 
 void UEasyAntiCheatNetComponent::ServerMessage(TArray<uint8>& Message)
 {
-	static auto Func = Class->GetFunction("EasyAntiCheatNetComponent", "ServerMessage");
+	static class UFunction* Func = nullptr;
 
-	Params::UEasyAntiCheatNetComponent_ServerMessage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EasyAntiCheatNetComponent", "ServerMessage");
+
+	Params::UEasyAntiCheatNetComponent_ServerMessage_Params Parms{};
 
 	Parms.Message = Message;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -46,24 +74,25 @@ void UEasyAntiCheatNetComponent::ServerMessage(TArray<uint8>& Message)
 
 void UEasyAntiCheatNetComponent::ClientMessage(TArray<uint8>& Message)
 {
-	static auto Func = Class->GetFunction("EasyAntiCheatNetComponent", "ClientMessage");
+	static class UFunction* Func = nullptr;
 
-	Params::UEasyAntiCheatNetComponent_ClientMessage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EasyAntiCheatNetComponent", "ClientMessage");
+
+	Params::UEasyAntiCheatNetComponent_ClientMessage_Params Parms{};
 
 	Parms.Message = Message;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

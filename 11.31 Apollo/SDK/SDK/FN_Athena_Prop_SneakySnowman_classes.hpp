@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -21,28 +18,25 @@ public:
 	class UCapsuleComponent*                     OverlapCheck;                                      // 0xB10(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UProjectileMovementComponent*          ProjectileMovementComp;                            // 0xB18(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                         bSimulationRunning;                                // 0xB20(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	uint8                                        Pad_58E9[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_319E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                GE_ApplyEnemySnowman;                              // 0xB28(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FScalableFloat                        ShouldSnowmanEnemies;                              // 0xB30(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class AFortPickupAthena*                     PickupAthena;                                      // 0xB50(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                        Ignored_Actors;                                    // 0xB58(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
 	TArray<enum class EObjectTypeQuery>          LineTraceObjects;                                  // 0xB68(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	bool                                         DestroyAfterHit;                                   // 0xB78(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_58EA[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_319F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               LandedLocation;                                    // 0xB7C(0xC)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 	float                                        InitialGravityScale;                               // 0xB88(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         GamestateLoaded;                                   // 0xB8C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_58EB[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_31A0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<enum class EObjectTypeQuery>          ObjectTypes;                                       // 0xB90(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	struct FVector                               StopLocation;                                      // 0xBA0(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58EC[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_31A1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FScalableFloat                        FallHeightToDestroy;                               // 0xBB0(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("Athena_Prop_SneakySnowman_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AAthena_Prop_SneakySnowman_C* GetDefaultObj();
 
 	void TraceStartAndEnd(struct FVector* Start, struct FVector* End, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue);
 	void ForceSetLocationOnLanding(const struct FHitResult& CallFunc_K2_SetActorLocation_SweepHitResult, bool CallFunc_K2_SetActorLocation_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_EqualEqual_VectorVector_ReturnValue);
@@ -66,6 +60,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

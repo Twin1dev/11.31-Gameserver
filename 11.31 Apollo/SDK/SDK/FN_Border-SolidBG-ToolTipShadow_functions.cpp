@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Border-SolidBG-ToolTipShadow.Border-SolidBG-ToolTipShadow_C
+// (None)
+
+class UClass* UBorderMinusSolidBGMinusToolTipShadow_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Border-SolidBG-ToolTipShadow_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Border-SolidBG-ToolTipShadow_C Border-SolidBG-ToolTipShadow.Default__Border-SolidBG-ToolTipShadow_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBorderMinusSolidBGMinusToolTipShadow_C* UBorderMinusSolidBGMinusToolTipShadow_C::GetDefaultObj()
+{
+	static class UBorderMinusSolidBGMinusToolTipShadow_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorderMinusSolidBGMinusToolTipShadow_C*>(UBorderMinusSolidBGMinusToolTipShadow_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_BGA_Athena_CampFire_Trap.B_BGA_Athena_CampFire_Trap_C
+// (Actor)
+
+class UClass* AB_BGA_Athena_CampFire_Trap_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_BGA_Athena_CampFire_Trap_C");
+
+	return Clss;
+}
+
+
+// B_BGA_Athena_CampFire_Trap_C B_BGA_Athena_CampFire_Trap.Default__B_BGA_Athena_CampFire_Trap_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_BGA_Athena_CampFire_Trap_C* AB_BGA_Athena_CampFire_Trap_C::GetDefaultObj()
+{
+	static class AB_BGA_Athena_CampFire_Trap_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_BGA_Athena_CampFire_Trap_C*>(AB_BGA_Athena_CampFire_Trap_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_BGA_Athena_CampFire_Trap.B_BGA_Athena_CampFire_Trap_C.OnBuildingActorInitialized
 // (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void AB_BGA_Athena_CampFire_Trap_C::OnBuildingActorInitialized(enum class EFortBuildingInitializationReason InitializationReason, enum class EFortBuildingPersistentState BuildingPersistentState)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_CampFire_Trap_C", "OnBuildingActorInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_CampFire_Trap_C_OnBuildingActorInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_CampFire_Trap_C", "OnBuildingActorInitialized");
+
+	Params::AB_BGA_Athena_CampFire_Trap_C_OnBuildingActorInitialized_Params Parms{};
 
 	Parms.InitializationReason = InitializationReason;
 	Parms.BuildingPersistentState = BuildingPersistentState;
@@ -44,9 +72,12 @@ void AB_BGA_Athena_CampFire_Trap_C::OnBuildingActorInitialized(enum class EFortB
 
 void AB_BGA_Athena_CampFire_Trap_C::ExecuteUbergraph_B_BGA_Athena_CampFire_Trap(int32 EntryPoint, enum class EFortBuildingInitializationReason K2Node_Event_InitializationReason, enum class EFortBuildingPersistentState K2Node_Event_BuildingPersistentState)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_CampFire_Trap_C", "ExecuteUbergraph_B_BGA_Athena_CampFire_Trap");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_CampFire_Trap_C_ExecuteUbergraph_B_BGA_Athena_CampFire_Trap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_CampFire_Trap_C", "ExecuteUbergraph_B_BGA_Athena_CampFire_Trap");
+
+	Params::AB_BGA_Athena_CampFire_Trap_C_ExecuteUbergraph_B_BGA_Athena_CampFire_Trap_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_InitializationReason = K2Node_Event_InitializationReason;
@@ -58,6 +89,4 @@ void AB_BGA_Athena_CampFire_Trap_C::ExecuteUbergraph_B_BGA_Athena_CampFire_Trap(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

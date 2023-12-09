@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaDirectAcquisitionOfferWidgetResizable.AthenaDirectAcquisitionOfferWidgetResizable_C
+// (None)
+
+class UClass* UAthenaDirectAcquisitionOfferWidgetResizable_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaDirectAcquisitionOfferWidgetResizable_C");
+
+	return Clss;
+}
+
+
+// AthenaDirectAcquisitionOfferWidgetResizable_C AthenaDirectAcquisitionOfferWidgetResizable.Default__AthenaDirectAcquisitionOfferWidgetResizable_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaDirectAcquisitionOfferWidgetResizable_C* UAthenaDirectAcquisitionOfferWidgetResizable_C::GetDefaultObj()
+{
+	static class UAthenaDirectAcquisitionOfferWidgetResizable_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaDirectAcquisitionOfferWidgetResizable_C*>(UAthenaDirectAcquisitionOfferWidgetResizable_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaDirectAcquisitionOfferWidgetResizable.AthenaDirectAcquisitionOfferWidgetResizable_C.UpdateSeriesBlock
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateSeriesBlock(class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, class UFortAccountItemDefinition* CallFunc_GetFirstGrantItemDefinition_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateSeriesBlock");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateSeriesBlock_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateSeriesBlock");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateSeriesBlock_Params Parms{};
 
 	Parms.CallFunc_GetOfferInfo_ReturnValue = CallFunc_GetOfferInfo_ReturnValue;
 	Parms.CallFunc_GetFirstGrantItemDefinition_ReturnValue = CallFunc_GetFirstGrantItemDefinition_ReturnValue;
@@ -45,13 +73,16 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateSeriesBlock(class UFo
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::Bundle_Short_Text(class FText* Text, int32 Not_owned_bundle_items__local_, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, TArray<struct FBundledItemInfo>& CallFunc_GetDynamicBundleItems_Items, int32 CallFunc_Array_Length_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "Bundle Short Text");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_Bundle_Short_Text_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "Bundle Short Text");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_Bundle_Short_Text_Params Parms{};
 
 	Parms.Not_owned_bundle_items__local_ = Not_owned_bundle_items__local_;
 	Parms.CallFunc_GetOfferInfo_ReturnValue = CallFunc_GetOfferInfo_ReturnValue;
@@ -76,9 +107,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::Bundle_Short_Text(class FTe
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::TryToResetCarouselTimer(bool CallFunc_Greater_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "TryToResetCarouselTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_TryToResetCarouselTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "TryToResetCarouselTimer");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_TryToResetCarouselTimer_Params Parms{};
 
 	Parms.CallFunc_Greater_FloatFloat_ReturnValue = CallFunc_Greater_FloatFloat_ReturnValue;
 
@@ -96,9 +130,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::TryToResetCarouselTimer(boo
 
 bool UAthenaDirectAcquisitionOfferWidgetResizable_C::HasGroupedOffers(int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "HasGroupedOffers");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_HasGroupedOffers_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "HasGroupedOffers");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_HasGroupedOffers_Params Parms{};
 
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_GreaterEqual_IntInt_ReturnValue = CallFunc_GreaterEqual_IntInt_ReturnValue;
@@ -130,15 +167,18 @@ bool UAthenaDirectAcquisitionOfferWidgetResizable_C::HasGroupedOffers(int32 Call
 // int32                              CallFunc_Add_IntInt_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_3                           (HasGetValueTypeHash)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::GetOfferIndexAndCountText(int32* OfferIndex, class FText* OfferDisplayCount, int32* NextOfferIndex, class FText* NextOfferDisplayCount, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, int32 CallFunc_Array_Find_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, int32 CallFunc_Percent_IntInt_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 CallFunc_Percent_IntInt_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, int32 CallFunc_Add_IntInt_ReturnValue_2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, class FText CallFunc_Format_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "GetOfferIndexAndCountText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_GetOfferIndexAndCountText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "GetOfferIndexAndCountText");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_GetOfferIndexAndCountText_Params Parms{};
 
 	Parms.CallFunc_GetOfferInfo_ReturnValue = CallFunc_GetOfferInfo_ReturnValue;
 	Parms.CallFunc_Array_Find_ReturnValue = CallFunc_Array_Find_ReturnValue;
@@ -184,9 +224,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::GetOfferIndexAndCountText(i
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateBadge(class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, class UFortMtxOfferData* CallFunc_GetOfferDisplayAsset_ReturnValue, bool CallFunc_HasDisplayAsset_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateBadge");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateBadge_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateBadge");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateBadge_Params Parms{};
 
 	Parms.CallFunc_GetOfferInfo_ReturnValue = CallFunc_GetOfferInfo_ReturnValue;
 	Parms.CallFunc_GetOfferDisplayAsset_ReturnValue = CallFunc_GetOfferDisplayAsset_ReturnValue;
@@ -204,7 +247,7 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateBadge(class UFortStor
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortMtxOfferDisplaySizeCallFunc_GetOfferDisplaySize_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
+// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     (None)
 // struct FMargin                     K2Node_MakeStruct_Margin                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FMargin                     K2Node_MakeStruct_Margin_1                                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UBorderSlot*                 K2Node_DynamicCast_AsBorder_Slot                                 (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -216,9 +259,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateBadge(class UFortStor
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateStyle_Sizing(class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, enum class EFortMtxOfferDisplaySize CallFunc_GetOfferDisplaySize_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, const struct FMargin& K2Node_MakeStruct_Margin, const struct FMargin& K2Node_MakeStruct_Margin_1, class UBorderSlot* K2Node_DynamicCast_AsBorder_Slot, bool K2Node_DynamicCast_bSuccess, class UBorderSlot* K2Node_DynamicCast_AsBorder_Slot_1, bool K2Node_DynamicCast_bSuccess_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateStyle_Sizing");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateStyle_Sizing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateStyle_Sizing");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateStyle_Sizing_Params Parms{};
 
 	Parms.CallFunc_GetOfferInfo_ReturnValue = CallFunc_GetOfferInfo_ReturnValue;
 	Parms.CallFunc_GetOfferDisplaySize_ReturnValue = CallFunc_GetOfferDisplaySize_ReturnValue;
@@ -252,9 +298,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateStyle_Sizing(class UF
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateStyle_Border(class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, class UFortMtxOfferData* CallFunc_GetOfferDisplayAsset_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_1, class UFortAccountItemDefinition* CallFunc_GetFirstGrantItemDefinition_ReturnValue, const struct FFortColorPalette& CallFunc_GetRarityOrSeriesColors_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateStyle_Border");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateStyle_Border_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateStyle_Border");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateStyle_Border_Params Parms{};
 
 	Parms.CallFunc_GetOfferInfo_ReturnValue = CallFunc_GetOfferInfo_ReturnValue;
 	Parms.CallFunc_GetOfferDisplayAsset_ReturnValue = CallFunc_GetOfferDisplayAsset_ReturnValue;
@@ -282,9 +331,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateStyle_Border(class UF
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateStyle_MainText(class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, class UFortAccountItemDefinition* CallFunc_GetFirstGrantItemDefinition_ReturnValue, const struct FFortColorPalette& CallFunc_GetRarityOrSeriesColors_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicFontMaterial_ReturnValue, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_1, bool CallFunc_IsUnique_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateStyle_MainText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateStyle_MainText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateStyle_MainText");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateStyle_MainText_Params Parms{};
 
 	Parms.CallFunc_GetOfferInfo_ReturnValue = CallFunc_GetOfferInfo_ReturnValue;
 	Parms.CallFunc_GetFirstGrantItemDefinition_ReturnValue = CallFunc_GetFirstGrantItemDefinition_ReturnValue;
@@ -314,9 +366,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateStyle_MainText(class 
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::SetupSaleInfo(class FText SaleText, class FText NormalPrice, const class FString& BannerOverrideTag, bool bHasSale, bool bHasBattlePassStars, int32 INumOfBattlePassStars, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "SetupSaleInfo");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_SetupSaleInfo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "SetupSaleInfo");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_SetupSaleInfo_Params Parms{};
 
 	Parms.SaleText = SaleText;
 	Parms.NormalPrice = NormalPrice;
@@ -338,8 +393,8 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::SetupSaleInfo(class FText S
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FString                      CallFunc_GetPersistentName_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
 // enum class ECatalogSaleType        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -349,12 +404,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::SetupSaleInfo(class FText S
 // bool                               CallFunc_NotEqual_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                      CallFunc_GetBannerOverrideTag_ReturnValue                        (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetMetaAsBool_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_GetItemQuantity_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetItemOfferCount_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetSalePrice_SalePrice                                  ()
+// class FText                        CallFunc_GetSalePrice_SalePrice                                  (None)
 // bool                               CallFunc_GetSalePrice_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ECatalogSaleType        CallFunc_GetSaleType_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -365,24 +420,27 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::SetupSaleInfo(class FText S
 // bool                               CallFunc_BooleanAND_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue_3                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetNormalPrice_ReturnValue                              ()
-// class FText                        CallFunc_GetSaleText_ReturnValue                                 ()
+// class FText                        CallFunc_GetNormalPrice_ReturnValue                              (None)
+// class FText                        CallFunc_GetSaleText_ReturnValue                                 (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_2                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue_2                                    ()
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        CallFunc_Format_ReturnValue_2                                    (None)
+// class FText                        K2Node_Select_Default                                            (None)
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateSaleStatus(const class FString& CallFunc_GetPersistentName_ReturnValue, class FText Temp_text_Variable, class FText Temp_text_Variable_1, enum class ECatalogSaleType Temp_byte_Variable, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_1, enum class ECatalogOfferType CallFunc_GetOfferType_ReturnValue, int32 CallFunc_GetQuantityRemaining_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, const class FString& CallFunc_GetBannerOverrideTag_ReturnValue, bool CallFunc_GetMetaAsBool_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, int32 CallFunc_GetItemQuantity_ReturnValue, int32 CallFunc_GetItemOfferCount_ReturnValue, class FText CallFunc_GetSalePrice_SalePrice, bool CallFunc_GetSalePrice_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, enum class ECatalogSaleType CallFunc_GetSaleType_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue_3, class FText CallFunc_GetNormalPrice_ReturnValue, class FText CallFunc_GetSaleText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue, class FText CallFunc_Format_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_2, class FText CallFunc_Format_ReturnValue_2, class FText K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateSaleStatus");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateSaleStatus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateSaleStatus");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateSaleStatus_Params Parms{};
 
 	Parms.CallFunc_GetPersistentName_ReturnValue = CallFunc_GetPersistentName_ReturnValue;
 	Parms.Temp_text_Variable = Temp_text_Variable;
@@ -440,32 +498,35 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateSaleStatus(const clas
 // enum class ESubGame                CallFunc_GetSubGame_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetSalePrice_SalePrice                                  ()
+// class FText                        CallFunc_GetSalePrice_SalePrice                                  (None)
 // bool                               CallFunc_GetSalePrice_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_GetPriceItem_RequiredItemCount                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortAccountItemDefinition*  CallFunc_GetPriceItem_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // class UFortAccountItem*            CallFunc_GetAccountItemWithDefinition_ReturnValue                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateBrush                 CallFunc_GetSmallPreviewImageBrush_ReturnValue                   ()
+// struct FSlateBrush                 CallFunc_GetSmallPreviewImageBrush_ReturnValue                   (None)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_GetNumInStack_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 // class FString                      CallFunc_GetOfferId_ReturnValue                                  (ZeroConstructor, HasGetValueTypeHash)
 // enum class EOfferPurchaseError     CallFunc_CanPurchaseOffer_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        K2Node_Select_Default                                            (None)
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::Setup_Price(bool Temp_bool_Variable, class UFortMcpContext* CallFunc_GetContext_ReturnValue, class UFortMcpContext* CallFunc_GetContext_ReturnValue_1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_2, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, class FText CallFunc_GetSalePrice_SalePrice, bool CallFunc_GetSalePrice_ReturnValue, int32 CallFunc_GetPriceItem_RequiredItemCount, class UFortAccountItemDefinition* CallFunc_GetPriceItem_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class UFortAccountItem* CallFunc_GetAccountItemWithDefinition_ReturnValue, const struct FSlateBrush& CallFunc_GetSmallPreviewImageBrush_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_GetNumInStack_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue, class FText CallFunc_Format_ReturnValue_1, const class FString& CallFunc_GetOfferId_ReturnValue, enum class EOfferPurchaseError CallFunc_CanPurchaseOffer_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, class FText K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "Setup Price");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_Setup_Price_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "Setup Price");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_Setup_Price_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -503,7 +564,7 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::Setup_Price(bool Temp_bool_
 // Function AthenaDirectAcquisitionOfferWidgetResizable.AthenaDirectAcquisitionOfferWidgetResizable_C.UpdateShortDescription
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                        CallFunc_Bundle_Short_Text_Text                                  ()
+// class FText                        CallFunc_Bundle_Short_Text_Text                                  (None)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -513,25 +574,28 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::Setup_Price(bool Temp_bool_
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ECatalogOfferType       CallFunc_GetOfferType_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetName_ReturnValue                                     ()
+// class FText                        CallFunc_GetName_ReturnValue                                     (None)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsUnique_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetShortDescription_ReturnValue                         ()
+// class FText                        CallFunc_GetShortDescription_ReturnValue                         (None)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_HasRequirement_RequirementText                          ()
+// class FText                        CallFunc_HasRequirement_RequirementText                          (None)
 // bool                               CallFunc_HasRequirement_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsLockedByRequirement_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateShortDescription(class FText CallFunc_Bundle_Short_Text_Text, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, int32 CallFunc_GetFirstGrantQuantity_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, bool CallFunc_EqualEqual_IntInt_ReturnValue, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_1, enum class ECatalogOfferType CallFunc_GetOfferType_ReturnValue, class FText CallFunc_GetName_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, bool CallFunc_IsUnique_ReturnValue, class FText CallFunc_GetShortDescription_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, class FText CallFunc_HasRequirement_RequirementText, bool CallFunc_HasRequirement_ReturnValue, bool CallFunc_IsLockedByRequirement_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateShortDescription");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateShortDescription_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateShortDescription");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateShortDescription_Params Parms{};
 
 	Parms.CallFunc_Bundle_Short_Text_Text = CallFunc_Bundle_Short_Text_Text;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -566,23 +630,26 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateShortDescription(clas
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_HasCatalogOfferName_CatalogOfferName                    ()
+// class FText                        CallFunc_HasCatalogOfferName_CatalogOfferName                    (None)
 // bool                               CallFunc_HasCatalogOfferName_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 // enum class ECatalogOfferType       CallFunc_GetOfferType_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetShortName_ReturnValue                                ()
-// class FText                        CallFunc_TextToUpper_ReturnValue_1                               ()
-// class FText                        CallFunc_GetItemTypeText_ReturnValue                             ()
+// class FText                        CallFunc_GetShortName_ReturnValue                                (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue_1                               (None)
+// class FText                        CallFunc_GetItemTypeText_ReturnValue                             (None)
 // bool                               CallFunc_IsUnique_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsLockedByRequirement_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateName(class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, class FText CallFunc_HasCatalogOfferName_CatalogOfferName, bool CallFunc_HasCatalogOfferName_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue, enum class ECatalogOfferType CallFunc_GetOfferType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class FText CallFunc_GetShortName_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue_1, class FText CallFunc_GetItemTypeText_ReturnValue, bool CallFunc_IsUnique_ReturnValue, bool CallFunc_IsLockedByRequirement_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateName");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateName_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateName");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateName_Params Parms{};
 
 	Parms.CallFunc_GetOfferInfo_ReturnValue = CallFunc_GetOfferInfo_ReturnValue;
 	Parms.CallFunc_HasCatalogOfferName_CatalogOfferName = CallFunc_HasCatalogOfferName_CatalogOfferName;
@@ -614,9 +681,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateName(class UFortStore
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::SetupPrice(int32 PriceIndex, class UItemCount_C* PriceWidget, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, int32 CallFunc_GetPriceItem_RequiredItemCount, class UFortAccountItemDefinition* CallFunc_GetPriceItem_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "SetupPrice");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_SetupPrice_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "SetupPrice");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_SetupPrice_Params Parms{};
 
 	Parms.PriceIndex = PriceIndex;
 	Parms.PriceWidget = PriceWidget;
@@ -638,9 +708,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::SetupPrice(int32 PriceIndex
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateStyle(TSoftObjectPtr<class UTexture2D> CallFunc_GetFirstOfferSeriesBackgroundTexture_ReturnValue, bool CallFunc_IsValidSoftObjectReference_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateStyle");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateStyle_Params Parms{};
 
 	Parms.CallFunc_GetFirstOfferSeriesBackgroundTexture_ReturnValue = CallFunc_GetFirstOfferSeriesBackgroundTexture_ReturnValue;
 	Parms.CallFunc_IsValidSoftObjectReference_ReturnValue = CallFunc_IsValidSoftObjectReference_ReturnValue;
@@ -654,7 +727,7 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateStyle(TSoftObjectPtr<
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable                                               ()
+// class FText                        Temp_text_Variable                                               (None)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable_1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -677,23 +750,26 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateStyle(TSoftObjectPtr<
 // int32                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetQuantityRemaining_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // int32                              K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
-// class FText                        K2Node_Select_Default_2                                          ()
-// class FText                        CallFunc_MakeLiteralText_ReturnValue_1                           ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
+// class FText                        K2Node_Select_Default_2                                          (None)
+// class FText                        CallFunc_MakeLiteralText_ReturnValue_1                           (None)
 // bool                               Temp_bool_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_3                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateAvailability(bool Temp_bool_Variable, class FText Temp_text_Variable, bool Temp_bool_Variable_1, int32 Temp_int_Variable, int32 Temp_int_Variable_1, bool Temp_bool_Variable_2, int32 Temp_int_Variable_2, int32 Temp_int_Variable_3, class UFortMcpContext* CallFunc_GetContext_ReturnValue, class UFortMcpContext* CallFunc_GetContext_ReturnValue_1, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, const class FString& CallFunc_GetOfferId_ReturnValue, bool CallFunc_IsOwned_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_1, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_2, const class FString& CallFunc_GetOfferId_ReturnValue_1, bool CallFunc_IsUnique_ReturnValue, bool CallFunc_IsOwned_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, int32 K2Node_Select_Default, int32 CallFunc_GetQuantityRemaining_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, int32 K2Node_Select_Default_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, bool CallFunc_EqualEqual_IntInt_ReturnValue_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, class FText CallFunc_MakeLiteralText_ReturnValue, class FText K2Node_Select_Default_2, class FText CallFunc_MakeLiteralText_ReturnValue_1, bool Temp_bool_Variable_3, enum class ESlateVisibility K2Node_Select_Default_3)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateAvailability");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateAvailability_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateAvailability");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateAvailability_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_text_Variable = Temp_text_Variable;
@@ -742,12 +818,14 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateAvailability(bool Tem
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::OfferSet()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "OfferSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_OfferSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "OfferSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -759,9 +837,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::OfferSet()
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "BP_OnItemSelectionChanged");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -776,12 +857,14 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::BP_OnItemSelectionChanged(b
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::OnOfferSet()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "OnOfferSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_OnOfferSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "OnOfferSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -794,9 +877,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::OnOfferSet()
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::HandleOfferPurchaseComplete(bool bSuccess, TArray<struct FPurchasedItemInfo>& PurchasedItems)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "HandleOfferPurchaseComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_HandleOfferPurchaseComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "HandleOfferPurchaseComplete");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_HandleOfferPurchaseComplete_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 	Parms.PurchasedItems = PurchasedItems;
@@ -812,12 +898,14 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::HandleOfferPurchaseComplete
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -828,12 +916,14 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::BP_OnHovered()
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -844,12 +934,14 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::BP_OnUnhovered()
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::OnUpdateStatus()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "OnUpdateStatus");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_OnUpdateStatus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "OnUpdateStatus");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -861,9 +953,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::OnUpdateStatus()
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "OnListItemObjectSet");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -878,12 +973,14 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::OnListItemObjectSet(class U
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -894,12 +991,14 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::Construct()
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::OnOfferAdded()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "OnOfferAdded");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_OnOfferAdded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "OnOfferAdded");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -910,12 +1009,14 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::OnOfferAdded()
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::AnimEvent_Carousel_ImageSwap()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "AnimEvent_Carousel_ImageSwap");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_AnimEvent_Carousel_ImageSwap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "AnimEvent_Carousel_ImageSwap");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -927,9 +1028,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::AnimEvent_Carousel_ImageSwa
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "BP_OnItemExpansionChanged");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -944,12 +1048,14 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::BP_OnItemExpansionChanged(b
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::PlayAnim_CarouselTransition()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "PlayAnim_CarouselTransition");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_PlayAnim_CarouselTransition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "PlayAnim_CarouselTransition");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -960,12 +1066,14 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::PlayAnim_CarouselTransition
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "BP_OnEntryReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_BP_OnEntryReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "BP_OnEntryReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -977,9 +1085,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::BP_OnEntryReleased()
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::OnOfferTileBrushLoaded(struct FSlateBrush& OfferBrush)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "OnOfferTileBrushLoaded");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_OnOfferTileBrushLoaded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "OnOfferTileBrushLoaded");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_OnOfferTileBrushLoaded_Params Parms{};
 
 	Parms.OfferBrush = OfferBrush;
 
@@ -995,9 +1106,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::OnOfferTileBrushLoaded(stru
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::SetupThumbnailRenderer(class UFortItemThumbnailRenderer* InThumbnailRenderer)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "SetupThumbnailRenderer");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_SetupThumbnailRenderer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "SetupThumbnailRenderer");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_SetupThumbnailRenderer_Params Parms{};
 
 	Parms.InThumbnailRenderer = InThumbnailRenderer;
 
@@ -1013,9 +1127,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::SetupThumbnailRenderer(clas
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateCarousel(float InDeltaTime)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateCarousel");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateCarousel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateCarousel");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_UpdateCarousel_Params Parms{};
 
 	Parms.InDeltaTime = InDeltaTime;
 
@@ -1047,13 +1164,13 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateCarousel(float InDelt
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Greater_FloatFloat_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_GetOfferIndexAndCountText_OfferIndex                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetOfferIndexAndCountText_OfferDisplayCount             ()
+// class FText                        CallFunc_GetOfferIndexAndCountText_OfferDisplayCount             (None)
 // int32                              CallFunc_GetOfferIndexAndCountText_NextOfferIndex                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount         ()
+// class FText                        CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount         (None)
 // int32                              CallFunc_GetOfferIndexAndCountText_OfferIndex_1                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetOfferIndexAndCountText_OfferDisplayCount_1           ()
+// class FText                        CallFunc_GetOfferIndexAndCountText_OfferDisplayCount_1           (None)
 // int32                              CallFunc_GetOfferIndexAndCountText_NextOfferIndex_1              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount_1       ()
+// class FText                        CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount_1       (None)
 // bool                               CallFunc_HasGroupedOffers_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_HasGroupedOffers_ReturnValue_1                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Greater_FloatFloat_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1070,9 +1187,9 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateCarousel(float InDelt
 // class ABP_CaptureItem_C*           CallFunc_GetOrCreateCaptureActor_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // int32                              CallFunc_GetOfferIndexAndCountText_OfferIndex_2                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetOfferIndexAndCountText_OfferDisplayCount_2           ()
+// class FText                        CallFunc_GetOfferIndexAndCountText_OfferDisplayCount_2           (None)
 // int32                              CallFunc_GetOfferIndexAndCountText_NextOfferIndex_2              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount_2       ()
+// class FText                        CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount_2       (None)
 // class UFortStoreFrontOfferInfo*    CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_MakeVector_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_Add_VectorVector_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1085,9 +1202,12 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateCarousel(float InDelt
 
 void UAthenaDirectAcquisitionOfferWidgetResizable_C::ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetResizable(int32 EntryPoint, int32 Temp_int_Variable, int32 Temp_int_Variable_1, bool K2Node_Event_bIsSelected, bool K2Node_CustomEvent_bSuccess, TArray<struct FPurchasedItemInfo>& K2Node_CustomEvent_PurchasedItems, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UObject* K2Node_Event_ListItemObject, class UFortStoreFrontOfferInfo* K2Node_DynamicCast_AsFort_Store_Front_Offer_Info, bool K2Node_DynamicCast_bSuccess, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool Temp_bool_Variable, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1, bool K2Node_Event_bIsExpanded, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UFortMcpContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, int32 CallFunc_GetOfferIndexAndCountText_OfferIndex, class FText CallFunc_GetOfferIndexAndCountText_OfferDisplayCount, int32 CallFunc_GetOfferIndexAndCountText_NextOfferIndex, class FText CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount, int32 CallFunc_GetOfferIndexAndCountText_OfferIndex_1, class FText CallFunc_GetOfferIndexAndCountText_OfferDisplayCount_1, int32 CallFunc_GetOfferIndexAndCountText_NextOfferIndex_1, class FText CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount_1, bool CallFunc_HasGroupedOffers_ReturnValue, bool CallFunc_HasGroupedOffers_ReturnValue_1, bool CallFunc_Greater_FloatFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, const struct FSlateBrush& K2Node_Event_OfferBrush, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, class UFortItemThumbnailRenderer* K2Node_Event_InThumbnailRenderer, bool CallFunc_Greater_FloatFloat_ReturnValue_2, int32 CallFunc_GetRendererIndex_ReturnValue, const struct FVector& CallFunc_Multiply_VectorInt_ReturnValue, class ABP_CaptureItem_C* CallFunc_GetOrCreateCaptureActor_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, int32 CallFunc_GetOfferIndexAndCountText_OfferIndex_2, class FText CallFunc_GetOfferIndexAndCountText_OfferDisplayCount_2, int32 CallFunc_GetOfferIndexAndCountText_NextOfferIndex_2, class FText CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount_2, class UFortStoreFrontOfferInfo* CallFunc_Array_Get_Item, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FHitResult& CallFunc_K2_SetActorLocation_SweepHitResult, bool CallFunc_K2_SetActorLocation_ReturnValue, float K2Node_Event_InDeltaTime, float CallFunc_Subtract_FloatFloat_ReturnValue_1, int32 K2Node_Select_Default, float CallFunc_FMax_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetResizable");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetResizable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetResizable");
+
+	Params::UAthenaDirectAcquisitionOfferWidgetResizable_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetResizable_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -1151,6 +1271,4 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::ExecuteUbergraph_AthenaDire
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

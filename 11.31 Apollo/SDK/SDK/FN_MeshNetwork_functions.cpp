@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class MeshNetwork.MeshBeaconClient
+// (Actor)
+
+class UClass* AMeshBeaconClient::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MeshBeaconClient");
+
+	return Clss;
+}
+
+
+// MeshBeaconClient MeshNetwork.Default__MeshBeaconClient
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AMeshBeaconClient* AMeshBeaconClient::GetDefaultObj()
+{
+	static class AMeshBeaconClient* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AMeshBeaconClient*>(AMeshBeaconClient::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MeshNetwork.MeshBeaconClient.ServerUpdateMultipleLevelsVisibility
 // (Final, Net, NetReliable, Native, Event, Public, NetServer, NetValidate)
 // Parameters:
@@ -22,19 +47,22 @@ namespace SDK
 
 void AMeshBeaconClient::ServerUpdateMultipleLevelsVisibility(TArray<struct FUpdateLevelVisibilityLevelInfo>& LevelVisibilities)
 {
-	static auto Func = Class->GetFunction("MeshBeaconClient", "ServerUpdateMultipleLevelsVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::AMeshBeaconClient_ServerUpdateMultipleLevelsVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshBeaconClient", "ServerUpdateMultipleLevelsVisibility");
+
+	Params::AMeshBeaconClient_ServerUpdateMultipleLevelsVisibility_Params Parms{};
 
 	Parms.LevelVisibilities = LevelVisibilities;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -46,19 +74,22 @@ void AMeshBeaconClient::ServerUpdateMultipleLevelsVisibility(TArray<struct FUpda
 
 void AMeshBeaconClient::ServerUpdateLevelVisibility(struct FUpdateLevelVisibilityLevelInfo& LevelVisibility)
 {
-	static auto Func = Class->GetFunction("MeshBeaconClient", "ServerUpdateLevelVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::AMeshBeaconClient_ServerUpdateLevelVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshBeaconClient", "ServerUpdateLevelVisibility");
+
+	Params::AMeshBeaconClient_ServerUpdateLevelVisibility_Params Parms{};
 
 	Parms.LevelVisibility = LevelVisibility;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -69,18 +100,20 @@ void AMeshBeaconClient::ServerUpdateLevelVisibility(struct FUpdateLevelVisibilit
 
 void AMeshBeaconClient::OnRep_MeshPingTime()
 {
-	static auto Func = Class->GetFunction("MeshBeaconClient", "OnRep_MeshPingTime");
+	static class UFunction* Func = nullptr;
 
-	Params::AMeshBeaconClient_OnRep_MeshPingTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshBeaconClient", "OnRep_MeshPingTime");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -91,19 +124,161 @@ void AMeshBeaconClient::OnRep_MeshPingTime()
 
 void AMeshBeaconClient::OnRep_ConnectedToRoot()
 {
-	static auto Func = Class->GetFunction("MeshBeaconClient", "OnRep_ConnectedToRoot");
+	static class UFunction* Func = nullptr;
 
-	Params::AMeshBeaconClient_OnRep_ConnectedToRoot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshBeaconClient", "OnRep_ConnectedToRoot");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class MeshNetwork.MeshBeaconHost
+// (Actor)
+
+class UClass* AMeshBeaconHost::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MeshBeaconHost");
+
+	return Clss;
+}
+
+
+// MeshBeaconHost MeshNetwork.Default__MeshBeaconHost
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AMeshBeaconHost* AMeshBeaconHost::GetDefaultObj()
+{
+	static class AMeshBeaconHost* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AMeshBeaconHost*>(AMeshBeaconHost::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MeshNetwork.MeshBeaconHostObject
+// (Actor)
+
+class UClass* AMeshBeaconHostObject::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MeshBeaconHostObject");
+
+	return Clss;
+}
+
+
+// MeshBeaconHostObject MeshNetwork.Default__MeshBeaconHostObject
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AMeshBeaconHostObject* AMeshBeaconHostObject::GetDefaultObj()
+{
+	static class AMeshBeaconHostObject* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AMeshBeaconHostObject*>(AMeshBeaconHostObject::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MeshNetwork.MeshConnection
+// (None)
+
+class UClass* UMeshConnection::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MeshConnection");
+
+	return Clss;
+}
+
+
+// MeshConnection MeshNetwork.Default__MeshConnection
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMeshConnection* UMeshConnection::GetDefaultObj()
+{
+	static class UMeshConnection* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMeshConnection*>(UMeshConnection::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MeshNetwork.MeshNetDriver
+// (None)
+
+class UClass* UMeshNetDriver::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MeshNetDriver");
+
+	return Clss;
+}
+
+
+// MeshNetDriver MeshNetwork.Default__MeshNetDriver
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMeshNetDriver* UMeshNetDriver::GetDefaultObj()
+{
+	static class UMeshNetDriver* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMeshNetDriver*>(UMeshNetDriver::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MeshNetwork.MeshNetworkComponent
+// (None)
+
+class UClass* UMeshNetworkComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MeshNetworkComponent");
+
+	return Clss;
+}
+
+
+// MeshNetworkComponent MeshNetwork.Default__MeshNetworkComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMeshNetworkComponent* UMeshNetworkComponent::GetDefaultObj()
+{
+	static class UMeshNetworkComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMeshNetworkComponent*>(UMeshNetworkComponent::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -114,21 +289,52 @@ void AMeshBeaconClient::OnRep_ConnectedToRoot()
 
 enum class EMeshNetworkNodeType UMeshNetworkComponent::GetMeshNetworkNodeType()
 {
-	static auto Func = Class->GetFunction("MeshNetworkComponent", "GetMeshNetworkNodeType");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshNetworkComponent_GetMeshNetworkNodeType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshNetworkComponent", "GetMeshNetworkNodeType");
+
+	Params::UMeshNetworkComponent_GetMeshNetworkNodeType_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class MeshNetwork.MeshNetworkSubsystem
+// (None)
+
+class UClass* UMeshNetworkSubsystem::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MeshNetworkSubsystem");
+
+	return Clss;
+}
+
+
+// MeshNetworkSubsystem MeshNetwork.Default__MeshNetworkSubsystem
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMeshNetworkSubsystem* UMeshNetworkSubsystem::GetDefaultObj()
+{
+	static class UMeshNetworkSubsystem* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMeshNetworkSubsystem*>(UMeshNetworkSubsystem::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -140,20 +346,23 @@ enum class EMeshNetworkNodeType UMeshNetworkComponent::GetMeshNetworkNodeType()
 
 void UMeshNetworkSubsystem::SetMetaDataWithKey(class FName Key, struct FMeshMetaDataStruct& MetaData)
 {
-	static auto Func = Class->GetFunction("MeshNetworkSubsystem", "SetMetaDataWithKey");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshNetworkSubsystem_SetMetaDataWithKey_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshNetworkSubsystem", "SetMetaDataWithKey");
+
+	Params::UMeshNetworkSubsystem_SetMetaDataWithKey_Params Parms{};
 
 	Parms.Key = Key;
 	Parms.MetaData = MetaData;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -165,19 +374,22 @@ void UMeshNetworkSubsystem::SetMetaDataWithKey(class FName Key, struct FMeshMeta
 
 void UMeshNetworkSubsystem::SetMetaData(struct FMeshMetaDataStruct& MetaData)
 {
-	static auto Func = Class->GetFunction("MeshNetworkSubsystem", "SetMetaData");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshNetworkSubsystem_SetMetaData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshNetworkSubsystem", "SetMetaData");
+
+	Params::UMeshNetworkSubsystem_SetMetaData_Params Parms{};
 
 	Parms.MetaData = MetaData;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -191,20 +403,23 @@ void UMeshNetworkSubsystem::SetMetaData(struct FMeshMetaDataStruct& MetaData)
 
 bool UMeshNetworkSubsystem::GetMetaDataWithKey(class FName Key, struct FMeshMetaDataStruct& MetaData)
 {
-	static auto Func = Class->GetFunction("MeshNetworkSubsystem", "GetMetaDataWithKey");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshNetworkSubsystem_GetMetaDataWithKey_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshNetworkSubsystem", "GetMetaDataWithKey");
+
+	Params::UMeshNetworkSubsystem_GetMetaDataWithKey_Params Parms{};
 
 	Parms.Key = Key;
 	Parms.MetaData = MetaData;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -218,19 +433,22 @@ bool UMeshNetworkSubsystem::GetMetaDataWithKey(class FName Key, struct FMeshMeta
 
 void UMeshNetworkSubsystem::GetMetadata(struct FMeshMetaDataStruct& MetaData)
 {
-	static auto Func = Class->GetFunction("MeshNetworkSubsystem", "GetMetadata");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshNetworkSubsystem_GetMetadata_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshNetworkSubsystem", "GetMetadata");
+
+	Params::UMeshNetworkSubsystem_GetMetadata_Params Parms{};
 
 	Parms.MetaData = MetaData;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -242,18 +460,21 @@ void UMeshNetworkSubsystem::GetMetadata(struct FMeshMetaDataStruct& MetaData)
 
 enum class EMeshNetworkNodeType UMeshNetworkSubsystem::GetMeshNetworkNodeType()
 {
-	static auto Func = Class->GetFunction("MeshNetworkSubsystem", "GetMeshNetworkNodeType");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshNetworkSubsystem_GetMeshNetworkNodeType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshNetworkSubsystem", "GetMeshNetworkNodeType");
+
+	Params::UMeshNetworkSubsystem_GetMeshNetworkNodeType_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -267,18 +488,21 @@ enum class EMeshNetworkNodeType UMeshNetworkSubsystem::GetMeshNetworkNodeType()
 
 enum class EMeshNetworkNodeType UMeshNetworkSubsystem::GetGameServerNodeType()
 {
-	static auto Func = Class->GetFunction("MeshNetworkSubsystem", "GetGameServerNodeType");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshNetworkSubsystem_GetGameServerNodeType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshNetworkSubsystem", "GetGameServerNodeType");
+
+	Params::UMeshNetworkSubsystem_GetGameServerNodeType_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -292,18 +516,21 @@ enum class EMeshNetworkNodeType UMeshNetworkSubsystem::GetGameServerNodeType()
 
 bool UMeshNetworkSubsystem::GetConnectedToRoot()
 {
-	static auto Func = Class->GetFunction("MeshNetworkSubsystem", "GetConnectedToRoot");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshNetworkSubsystem_GetConnectedToRoot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshNetworkSubsystem", "GetConnectedToRoot");
+
+	Params::UMeshNetworkSubsystem_GetConnectedToRoot_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -318,20 +545,23 @@ bool UMeshNetworkSubsystem::GetConnectedToRoot()
 
 void UMeshNetworkSubsystem::EnableMeshReplication(class AActor* Actor, TSubclassOf<class UMeshNetworkComponent> MeshComponentClass)
 {
-	static auto Func = Class->GetFunction("MeshNetworkSubsystem", "EnableMeshReplication");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshNetworkSubsystem_EnableMeshReplication_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshNetworkSubsystem", "EnableMeshReplication");
+
+	Params::UMeshNetworkSubsystem_EnableMeshReplication_Params Parms{};
 
 	Parms.Actor = Actor;
 	Parms.MeshComponentClass = MeshComponentClass;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -343,24 +573,81 @@ void UMeshNetworkSubsystem::EnableMeshReplication(class AActor* Actor, TSubclass
 
 void UMeshNetworkSubsystem::DisableMeshReplication(class AActor* Actor)
 {
-	static auto Func = Class->GetFunction("MeshNetworkSubsystem", "DisableMeshReplication");
+	static class UFunction* Func = nullptr;
 
-	Params::UMeshNetworkSubsystem_DisableMeshReplication_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MeshNetworkSubsystem", "DisableMeshReplication");
+
+	Params::UMeshNetworkSubsystem_DisableMeshReplication_Params Parms{};
 
 	Parms.Actor = Actor;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class MeshNetwork.MeshReplicationGraphNode_AlwaysRelevant_ForConnection
+// (None)
+
+class UClass* UMeshReplicationGraphNode_AlwaysRelevant_ForConnection::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MeshReplicationGraphNode_AlwaysRelevant_ForConnection");
+
+	return Clss;
+}
+
+
+// MeshReplicationGraphNode_AlwaysRelevant_ForConnection MeshNetwork.Default__MeshReplicationGraphNode_AlwaysRelevant_ForConnection
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMeshReplicationGraphNode_AlwaysRelevant_ForConnection* UMeshReplicationGraphNode_AlwaysRelevant_ForConnection::GetDefaultObj()
+{
+	static class UMeshReplicationGraphNode_AlwaysRelevant_ForConnection* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMeshReplicationGraphNode_AlwaysRelevant_ForConnection*>(UMeshReplicationGraphNode_AlwaysRelevant_ForConnection::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MeshNetwork.MeshReplicationGraph
+// (None)
+
+class UClass* UMeshReplicationGraph::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MeshReplicationGraph");
+
+	return Clss;
+}
+
+
+// MeshReplicationGraph MeshNetwork.Default__MeshReplicationGraph
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMeshReplicationGraph* UMeshReplicationGraph::GetDefaultObj()
+{
+	static class UMeshReplicationGraph* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMeshReplicationGraph*>(UMeshReplicationGraph::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GA_SpookyMist_PassiveSetup.GA_SpookyMist_PassiveSetup_C
+// (None)
+
+class UClass* UGA_SpookyMist_PassiveSetup_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_SpookyMist_PassiveSetup_C");
+
+	return Clss;
+}
+
+
+// GA_SpookyMist_PassiveSetup_C GA_SpookyMist_PassiveSetup.Default__GA_SpookyMist_PassiveSetup_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_SpookyMist_PassiveSetup_C* UGA_SpookyMist_PassiveSetup_C::GetDefaultObj()
+{
+	static class UGA_SpookyMist_PassiveSetup_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_SpookyMist_PassiveSetup_C*>(UGA_SpookyMist_PassiveSetup_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GA_SpookyMist_PassiveSetup.GA_SpookyMist_PassiveSetup_C.UnBlockAbilityTags
@@ -28,9 +53,12 @@ namespace SDK
 
 void UGA_SpookyMist_PassiveSetup_C::UnBlockAbilityTags(float CallFunc_GetValueAtLevel_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, const struct FGameplayAbilityActorInfo& CallFunc_GetActorInfo_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UFortAbilitySystemComponent* K2Node_DynamicCast_AsFort_Ability_System_Component, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "UnBlockAbilityTags");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "UnBlockAbilityTags");
+
+	Params::UGA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags_Params Parms{};
 
 	Parms.CallFunc_GetValueAtLevel_ReturnValue = CallFunc_GetValueAtLevel_ReturnValue;
 	Parms.CallFunc_Greater_FloatFloat_ReturnValue = CallFunc_Greater_FloatFloat_ReturnValue;
@@ -58,9 +86,12 @@ void UGA_SpookyMist_PassiveSetup_C::UnBlockAbilityTags(float CallFunc_GetValueAt
 
 void UGA_SpookyMist_PassiveSetup_C::SetBlockAbilityTags(float CallFunc_GetValueAtLevel_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, const struct FGameplayAbilityActorInfo& CallFunc_GetActorInfo_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UFortAbilitySystemComponent* K2Node_DynamicCast_AsFort_Ability_System_Component, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "SetBlockAbilityTags");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "SetBlockAbilityTags");
+
+	Params::UGA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags_Params Parms{};
 
 	Parms.CallFunc_GetValueAtLevel_ReturnValue = CallFunc_GetValueAtLevel_ReturnValue;
 	Parms.CallFunc_Greater_FloatFloat_ReturnValue = CallFunc_Greater_FloatFloat_ReturnValue;
@@ -82,9 +113,12 @@ void UGA_SpookyMist_PassiveSetup_C::SetBlockAbilityTags(float CallFunc_GetValueA
 
 void UGA_SpookyMist_PassiveSetup_C::EventReceived_3CB208084D361EC6BA9A619CA44CFB21(const struct FGameplayEventData& Payload)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "EventReceived_3CB208084D361EC6BA9A619CA44CFB21");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_PassiveSetup_C_EventReceived_3CB208084D361EC6BA9A619CA44CFB21_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "EventReceived_3CB208084D361EC6BA9A619CA44CFB21");
+
+	Params::UGA_SpookyMist_PassiveSetup_C_EventReceived_3CB208084D361EC6BA9A619CA44CFB21_Params Parms{};
 
 	Parms.Payload = Payload;
 
@@ -99,12 +133,14 @@ void UGA_SpookyMist_PassiveSetup_C::EventReceived_3CB208084D361EC6BA9A619CA44CFB
 
 void UGA_SpookyMist_PassiveSetup_C::Added_333162CC43A0027AD12E89BFE10F5DBD()
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "Added_333162CC43A0027AD12E89BFE10F5DBD");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_PassiveSetup_C_Added_333162CC43A0027AD12E89BFE10F5DBD_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "Added_333162CC43A0027AD12E89BFE10F5DBD");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -115,12 +151,14 @@ void UGA_SpookyMist_PassiveSetup_C::Added_333162CC43A0027AD12E89BFE10F5DBD()
 
 void UGA_SpookyMist_PassiveSetup_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_PassiveSetup_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -139,9 +177,12 @@ void UGA_SpookyMist_PassiveSetup_C::K2_ActivateAbility()
 
 void UGA_SpookyMist_PassiveSetup_C::WhenDamaged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "WhenDamaged");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_PassiveSetup_C_WhenDamaged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "WhenDamaged");
+
+	Params::UGA_SpookyMist_PassiveSetup_C_WhenDamaged_Params Parms{};
 
 	Parms.DamagedActor = DamagedActor;
 	Parms.Damage = Damage;
@@ -163,12 +204,14 @@ void UGA_SpookyMist_PassiveSetup_C::WhenDamaged(class AActor* DamagedActor, floa
 
 void UGA_SpookyMist_PassiveSetup_C::On_DBNO()
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "On DBNO");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_PassiveSetup_C_On_DBNO_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "On DBNO");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -180,9 +223,12 @@ void UGA_SpookyMist_PassiveSetup_C::On_DBNO()
 
 void UGA_SpookyMist_PassiveSetup_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_PassiveSetup_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "K2_OnEndAbility");
+
+	Params::UGA_SpookyMist_PassiveSetup_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -209,7 +255,7 @@ void UGA_SpookyMist_PassiveSetup_C::K2_OnEndAbility(bool bWasCancelled)
 // class AFortPlayerControllerGameplay*K2Node_DynamicCast_AsFort_Player_Controller_Gameplay             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AActor*                      CallFunc_GetAvatarActorFromActorInfo_ReturnValue_1               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEventData          Temp_struct_Variable                                             ()
+// struct FGameplayEventData          Temp_struct_Variable                                             (None)
 // class APlayerPawn_Athena_C*        K2Node_DynamicCast_AsPlayer_Pawn_Athena                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FActiveGameplayEffectHandle CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue               (NoDestructor, HasGetValueTypeHash)
@@ -222,18 +268,21 @@ void UGA_SpookyMist_PassiveSetup_C::K2_OnEndAbility(bool bWasCancelled)
 // class UPrimitiveComponent*         K2Node_CustomEvent_FHitComponent                                 (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        K2Node_CustomEvent_BoneName                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     K2Node_CustomEvent_Momentum                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEventData          K2Node_CustomEvent_Payload                                       ()
+// struct FGameplayEventData          K2Node_CustomEvent_Payload                                       (None)
 // float                              CallFunc_GetValueAtLevel_ReturnValue_1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_FloatFloat_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FActiveGameplayEffectHandle CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_1             (NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_bWasCancelled                                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              (None)
 
 void UGA_SpookyMist_PassiveSetup_C::ExecuteUbergraph_GA_SpookyMist_PassiveSetup(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UAbilityTask_WaitGameplayEvent* CallFunc_WaitGameplayEvent_ReturnValue, bool CallFunc_IsValid_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UAbilityTask_WaitGameplayTagAdded* CallFunc_WaitGameplayTagAdd_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, class AFortPlayerControllerGameplay* K2Node_DynamicCast_AsFort_Player_Controller_Gameplay, bool K2Node_DynamicCast_bSuccess, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue_1, const struct FGameplayEventData& Temp_struct_Variable, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess_1, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue, class AActor* K2Node_CustomEvent_DamagedActor, float K2Node_CustomEvent_Damage, class AController* K2Node_CustomEvent_InstigatedBy, class AActor* K2Node_CustomEvent_DamageCauser, const struct FVector& K2Node_CustomEvent_HitLocation, class UPrimitiveComponent* K2Node_CustomEvent_FHitComponent, class FName K2Node_CustomEvent_BoneName, const struct FVector& K2Node_CustomEvent_Momentum, const struct FGameplayEventData& K2Node_CustomEvent_Payload, float CallFunc_GetValueAtLevel_ReturnValue_1, bool CallFunc_Greater_FloatFloat_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_1, bool K2Node_Event_bWasCancelled, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "ExecuteUbergraph_GA_SpookyMist_PassiveSetup");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_PassiveSetup_C", "ExecuteUbergraph_GA_SpookyMist_PassiveSetup");
+
+	Params::UGA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -276,6 +325,4 @@ void UGA_SpookyMist_PassiveSetup_C::ExecuteUbergraph_GA_SpookyMist_PassiveSetup(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Prj_Athena_FloppingRabbit.Prj_Athena_FloppingRabbit_C
+// (Actor)
+
+class UClass* APrj_Athena_FloppingRabbit_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Prj_Athena_FloppingRabbit_C");
+
+	return Clss;
+}
+
+
+// Prj_Athena_FloppingRabbit_C Prj_Athena_FloppingRabbit.Default__Prj_Athena_FloppingRabbit_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class APrj_Athena_FloppingRabbit_C* APrj_Athena_FloppingRabbit_C::GetDefaultObj()
+{
+	static class APrj_Athena_FloppingRabbit_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APrj_Athena_FloppingRabbit_C*>(APrj_Athena_FloppingRabbit_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function Prj_Athena_FloppingRabbit.Prj_Athena_FloppingRabbit_C.GetSheetVals
@@ -24,9 +49,12 @@ namespace SDK
 
 void APrj_Athena_FloppingRabbit_C::GetSheetVals(float CallFunc_GetValueAtLevel_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, float CallFunc_GetValueAtLevel_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "GetSheetVals");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_GetSheetVals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "GetSheetVals");
+
+	Params::APrj_Athena_FloppingRabbit_C_GetSheetVals_Params Parms{};
 
 	Parms.CallFunc_GetValueAtLevel_ReturnValue = CallFunc_GetValueAtLevel_ReturnValue;
 	Parms.CallFunc_GetValueAtLevel_ReturnValue_1 = CallFunc_GetValueAtLevel_ReturnValue_1;
@@ -43,12 +71,14 @@ void APrj_Athena_FloppingRabbit_C::GetSheetVals(float CallFunc_GetValueAtLevel_R
 
 void APrj_Athena_FloppingRabbit_C::BigBob__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "BigBob__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_BigBob__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "BigBob__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -59,12 +89,14 @@ void APrj_Athena_FloppingRabbit_C::BigBob__FinishedFunc()
 
 void APrj_Athena_FloppingRabbit_C::BigBob__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "BigBob__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_BigBob__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "BigBob__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -83,9 +115,12 @@ void APrj_Athena_FloppingRabbit_C::BigBob__UpdateFunc()
 
 void APrj_Athena_FloppingRabbit_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ReceiveHit");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_ReceiveHit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ReceiveHit");
+
+	Params::APrj_Athena_FloppingRabbit_C_ReceiveHit_Params Parms{};
 
 	Parms.MyComp = MyComp;
 	Parms.Other = Other;
@@ -113,9 +148,12 @@ void APrj_Athena_FloppingRabbit_C::ReceiveHit(class UPrimitiveComponent* MyComp,
 
 void APrj_Athena_FloppingRabbit_C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, struct FHitResult& SweepResult)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature");
+
+	Params::APrj_Athena_FloppingRabbit_C_BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature_Params Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -136,9 +174,12 @@ void APrj_Athena_FloppingRabbit_C::BndEvt__CapsuleComponent_K2Node_ComponentBoun
 
 void APrj_Athena_FloppingRabbit_C::FullDip(bool InWorldSpawner)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "FullDip");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_FullDip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "FullDip");
+
+	Params::APrj_Athena_FloppingRabbit_C_FullDip_Params Parms{};
 
 	Parms.InWorldSpawner = InWorldSpawner;
 
@@ -153,12 +194,14 @@ void APrj_Athena_FloppingRabbit_C::FullDip(bool InWorldSpawner)
 
 void APrj_Athena_FloppingRabbit_C::CatchWindow()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "CatchWindow");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_CatchWindow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "CatchWindow");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -169,12 +212,14 @@ void APrj_Athena_FloppingRabbit_C::CatchWindow()
 
 void APrj_Athena_FloppingRabbit_C::TryCatch()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "TryCatch");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_TryCatch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "TryCatch");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -185,12 +230,14 @@ void APrj_Athena_FloppingRabbit_C::TryCatch()
 
 void APrj_Athena_FloppingRabbit_C::HideAndKill()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "HideAndKill");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_HideAndKill_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "HideAndKill");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -201,12 +248,14 @@ void APrj_Athena_FloppingRabbit_C::HideAndKill()
 
 void APrj_Athena_FloppingRabbit_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -217,12 +266,14 @@ void APrj_Athena_FloppingRabbit_C::ReceiveBeginPlay()
 
 void APrj_Athena_FloppingRabbit_C::DistanceCheck()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "DistanceCheck");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_DistanceCheck_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "DistanceCheck");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -233,12 +284,14 @@ void APrj_Athena_FloppingRabbit_C::DistanceCheck()
 
 void APrj_Athena_FloppingRabbit_C::ForceKill()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ForceKill");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_ForceKill_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ForceKill");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -251,9 +304,12 @@ void APrj_Athena_FloppingRabbit_C::ForceKill()
 
 void APrj_Athena_FloppingRabbit_C::OnExploded(TArray<class AActor*>& HitActors, TArray<struct FHitResult>& HitResults)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "OnExploded");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_OnExploded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "OnExploded");
+
+	Params::APrj_Athena_FloppingRabbit_C_OnExploded_Params Parms{};
 
 	Parms.HitActors = HitActors;
 	Parms.HitResults = HitResults;
@@ -270,9 +326,12 @@ void APrj_Athena_FloppingRabbit_C::OnExploded(TArray<class AActor*>& HitActors, 
 
 void APrj_Athena_FloppingRabbit_C::HitWater(bool FishSpawner)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "HitWater");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_HitWater_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "HitWater");
+
+	Params::APrj_Athena_FloppingRabbit_C_HitWater_Params Parms{};
 
 	Parms.FishSpawner = FishSpawner;
 
@@ -287,12 +346,14 @@ void APrj_Athena_FloppingRabbit_C::HitWater(bool FishSpawner)
 
 void APrj_Athena_FloppingRabbit_C::ReceiveDestroyed()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ReceiveDestroyed");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_ReceiveDestroyed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ReceiveDestroyed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -303,12 +364,14 @@ void APrj_Athena_FloppingRabbit_C::ReceiveDestroyed()
 
 void APrj_Athena_FloppingRabbit_C::CheckForDip()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "CheckForDip");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_CheckForDip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "CheckForDip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -319,12 +382,14 @@ void APrj_Athena_FloppingRabbit_C::CheckForDip()
 
 void APrj_Athena_FloppingRabbit_C::CheckForHighTierSpawner()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "CheckForHighTierSpawner");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_CheckForHighTierSpawner_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "CheckForHighTierSpawner");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -335,12 +400,14 @@ void APrj_Athena_FloppingRabbit_C::CheckForHighTierSpawner()
 
 void APrj_Athena_FloppingRabbit_C::SpawnItemsFX()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "SpawnItemsFX");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_SpawnItemsFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "SpawnItemsFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -352,9 +419,12 @@ void APrj_Athena_FloppingRabbit_C::SpawnItemsFX()
 
 void APrj_Athena_FloppingRabbit_C::CustomPickupAttach(class AFortPickup* FortPickup)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "CustomPickupAttach");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_CustomPickupAttach_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "CustomPickupAttach");
+
+	Params::APrj_Athena_FloppingRabbit_C_CustomPickupAttach_Params Parms{};
 
 	Parms.FortPickup = FortPickup;
 
@@ -369,12 +439,14 @@ void APrj_Athena_FloppingRabbit_C::CustomPickupAttach(class AFortPickup* FortPic
 
 void APrj_Athena_FloppingRabbit_C::WriteNothingCaughtFishingAnalytic()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "WriteNothingCaughtFishingAnalytic");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_WriteNothingCaughtFishingAnalytic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "WriteNothingCaughtFishingAnalytic");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -544,9 +616,12 @@ void APrj_Athena_FloppingRabbit_C::WriteNothingCaughtFishingAnalytic()
 
 void APrj_Athena_FloppingRabbit_C::ExecuteUbergraph_Prj_Athena_FloppingRabbit(int32 EntryPoint, class ABGA_Athena_FlopperSpawn_Parent_C* K2Node_DynamicCast_AsBGA_Athena_Flopper_Spawn_Parent, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_1, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class AB_FloppingRabbit_Weap_Athena_C* K2Node_DynamicCast_AsB_Flopping_Rabbit_Weap_Athena, bool K2Node_DynamicCast_bSuccess_2, class AB_Athena_FloppingRabbit_Wire_C* CallFunc_FinishSpawningActor_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsServer_ReturnValue, bool CallFunc_IsServer_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_3, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue_1, float CallFunc_Abs_ReturnValue, float CallFunc_DistanceBetweenTwoVectors_Distance, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_3, const struct FTransform& CallFunc_MakeTransform_ReturnValue_1, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue_1, const struct FVector& CallFunc_MakeVector_ReturnValue_2, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, class ABGA_Athena_FlopperSpawn_Default_C* CallFunc_FinishSpawningActor_ReturnValue_1, class APawn* CallFunc_GetInstigator_ReturnValue_1, bool K2Node_CustomEvent_InWorldSpawner, bool Temp_bool_Has_Been_Initd_Variable, float CallFunc_Add_FloatFloat_ReturnValue, bool CallFunc_RandomBoolWithWeight_ReturnValue, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent, class AActor* K2Node_ComponentBoundEvent_OtherActor, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp, int32 K2Node_ComponentBoundEvent_OtherBodyIndex, bool K2Node_ComponentBoundEvent_bFromSweep, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult, class AFortPickup* K2Node_DynamicCast_AsFort_Pickup, bool K2Node_DynamicCast_bSuccess_3, class AFortAthenaWater* K2Node_DynamicCast_AsFort_Athena_Water, bool K2Node_DynamicCast_bSuccess_4, class AFortWaterBodyActor* K2Node_DynamicCast_AsFort_Water_Body_Actor, bool K2Node_DynamicCast_bSuccess_5, class UPrimitiveComponent* K2Node_Event_MyComp, class AActor* K2Node_Event_Other, class UPrimitiveComponent* K2Node_Event_OtherComp, bool K2Node_Event_bSelfMoved, const struct FVector& K2Node_Event_HitLocation, const struct FVector& K2Node_Event_HitNormal, const struct FVector& K2Node_Event_NormalImpulse, const struct FHitResult& K2Node_Event_Hit, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess_6, bool Temp_bool_IsClosed_Variable, bool CallFunc_IsValid_ReturnValue_4, bool CallFunc_IsServer_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_5, TArray<class AActor*>& K2Node_Event_HitActors, TArray<struct FHitResult>& K2Node_Event_HitResults, bool K2Node_CustomEvent_FishSpawner, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_4, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_5, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_6, class APawn* CallFunc_GetInstigator_ReturnValue_2, bool CallFunc_IsServer_ReturnValue_3, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_7, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_8, float CallFunc_GetValueAtLevel_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, bool CallFunc_Greater_FloatFloat_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_IsServer_ReturnValue_4, bool Temp_bool_Has_Been_Initd_Variable_1, bool Temp_bool_Has_Been_Initd_Variable_2, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult, const struct FHitResult& CallFunc_K2_SetRelativeLocation_SweepHitResult, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_9, bool Temp_bool_IsClosed_Variable_1, class ABGA_Athena_FlopperSpawn_Default_C* K2Node_DynamicCast_AsBGA_Athena_Flopper_Spawn_Default, bool K2Node_DynamicCast_bSuccess_7, bool CallFunc_IsValid_ReturnValue_6, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_7, float CallFunc_GetValueAtLevel_ReturnValue_3, float CallFunc_RandomFloatInRange_ReturnValue, TMap<class FName, class FName> K2Node_MakeMap_Map, const struct FFluidForceSocketInfo& K2Node_MakeStruct_FluidForceSocketInfo, bool CallFunc_IsValid_ReturnValue_8, const struct FFluidForceDynamic& K2Node_MakeStruct_FluidForceDynamic, TArray<class ABP_FluidSim_FN_C*>& CallFunc_GetAllActorsOfClass_OutActors, class ABP_FluidSim_FN_C* CallFunc_Array_Get_Item, bool CallFunc_IsValid_ReturnValue_9, int32 CallFunc_Array_Length_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable_3, bool CallFunc_Greater_IntInt_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable_4, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterPlaneLocation, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterPlaneNormal, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterSurfacePosition, float CallFunc_GetLastWaterSurfaceInfo_WaterDepth, int32 CallFunc_GetLastWaterSurfaceInfo_WaterBodyIdx, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterVelocity, float CallFunc_Conv_IntToFloat_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, bool Temp_bool_IsClosed_Variable_2, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_10, bool CallFunc_IsServer_ReturnValue_5, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterPlaneLocation_1, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterPlaneNormal_1, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterSurfacePosition_1, float CallFunc_GetLastWaterSurfaceInfo_WaterDepth_1, int32 CallFunc_GetLastWaterSurfaceInfo_WaterBodyIdx_1, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterVelocity_1, float CallFunc_Conv_IntToFloat_ReturnValue_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_1, class AFortPickup* K2Node_CustomEvent_FortPickup, class AActor* CallFunc_GetAttachParentActor_ReturnValue, float CallFunc_GetSquaredDistanceTo_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue, bool CallFunc_NotEqual_ObjectObject_ReturnValue, bool CallFunc_IsServer_ReturnValue_6, bool CallFunc_BooleanAND_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue_3, float CallFunc_GetSquaredDistanceTo_ReturnValue_1, TArray<class AActor*>& Temp_object_Variable, bool Temp_bool_IsClosed_Variable_3, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool Temp_bool_Variable, bool Temp_bool_Variable_1, class UParticleSystem* K2Node_Select_Default, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_2, class USoundBase* K2Node_Select_Default_1, bool Temp_bool_IsClosed_Variable_4, bool CallFunc_IsValid_ReturnValue_10, TArray<class AActor*>& Temp_object_Variable_1, TArray<class AActor*>& CallFunc_CapsuleOverlapActors_OutActors, bool CallFunc_CapsuleOverlapActors_ReturnValue, bool CallFunc_IsValid_ReturnValue_11, class AActor* CallFunc_Array_Get_Item_1, bool CallFunc_IsValid_ReturnValue_12, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_11, TArray<class AActor*>& CallFunc_CapsuleOverlapActors_OutActors_1, bool CallFunc_CapsuleOverlapActors_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ExecuteUbergraph_Prj_Athena_FloppingRabbit");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_FloppingRabbit_C_ExecuteUbergraph_Prj_Athena_FloppingRabbit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_FloppingRabbit_C", "ExecuteUbergraph_Prj_Athena_FloppingRabbit");
+
+	Params::APrj_Athena_FloppingRabbit_C_ExecuteUbergraph_Prj_Athena_FloppingRabbit_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_DynamicCast_AsBGA_Athena_Flopper_Spawn_Parent = K2Node_DynamicCast_AsBGA_Athena_Flopper_Spawn_Parent;
@@ -714,6 +789,4 @@ void APrj_Athena_FloppingRabbit_C::ExecuteUbergraph_Prj_Athena_FloppingRabbit(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Device_Ceiling_EliminationZone.Device_Ceiling_EliminationZone_C
+// (Actor)
+
+class UClass* ADevice_Ceiling_EliminationZone_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Device_Ceiling_EliminationZone_C");
+
+	return Clss;
+}
+
+
+// Device_Ceiling_EliminationZone_C Device_Ceiling_EliminationZone.Default__Device_Ceiling_EliminationZone_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ADevice_Ceiling_EliminationZone_C* ADevice_Ceiling_EliminationZone_C::GetDefaultObj()
+{
+	static class ADevice_Ceiling_EliminationZone_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ADevice_Ceiling_EliminationZone_C*>(ADevice_Ceiling_EliminationZone_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function Device_Ceiling_EliminationZone.Device_Ceiling_EliminationZone_C.GetTriggerLocation
@@ -31,9 +56,12 @@ namespace SDK
 
 void ADevice_Ceiling_EliminationZone_C::GetTriggerLocation(struct FVector* Location, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, const struct FVector& CallFunc_MakeVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Device_Ceiling_EliminationZone_C", "GetTriggerLocation");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Ceiling_EliminationZone_C_GetTriggerLocation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Ceiling_EliminationZone_C", "GetTriggerLocation");
+
+	Params::ADevice_Ceiling_EliminationZone_C_GetTriggerLocation_Params Parms{};
 
 	Parms.CallFunc_BreakVector_X = CallFunc_BreakVector_X;
 	Parms.CallFunc_BreakVector_Y = CallFunc_BreakVector_Y;
@@ -48,12 +76,10 @@ void ADevice_Ceiling_EliminationZone_C::GetTriggerLocation(struct FVector* Locat
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Location != nullptr)
-		*Location = Parms.Location;
+		*Location = std::move(Parms.Location);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

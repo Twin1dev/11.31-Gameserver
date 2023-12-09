@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ColorLibrary.ColorLibrary_C
+// (None)
+
+class UClass* UColorLibrary_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ColorLibrary_C");
+
+	return Clss;
+}
+
+
+// ColorLibrary_C ColorLibrary.Default__ColorLibrary_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UColorLibrary_C* UColorLibrary_C::GetDefaultObj()
+{
+	static class UColorLibrary_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UColorLibrary_C*>(UColorLibrary_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ColorLibrary.ColorLibrary_C.Get HarvestWeakPoint Color
@@ -24,9 +49,12 @@ namespace SDK
 
 void UColorLibrary_C::Get_HarvestWeakPoint_Color(const struct FColorStylesheet& StyleSheet, class UObject* __WorldContext, struct FLinearColor* StyleSheetOut)
 {
-	static auto Func = Class->GetFunction("ColorLibrary_C", "Get HarvestWeakPoint Color");
+	static class UFunction* Func = nullptr;
 
-	Params::UColorLibrary_C_Get_HarvestWeakPoint_Color_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ColorLibrary_C", "Get HarvestWeakPoint Color");
+
+	Params::UColorLibrary_C_Get_HarvestWeakPoint_Color_Params Parms{};
 
 	Parms.StyleSheet = StyleSheet;
 	Parms.__WorldContext = __WorldContext;
@@ -34,7 +62,7 @@ void UColorLibrary_C::Get_HarvestWeakPoint_Color(const struct FColorStylesheet& 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (StyleSheetOut != nullptr)
-		*StyleSheetOut = Parms.StyleSheetOut;
+		*StyleSheetOut = std::move(Parms.StyleSheetOut);
 
 }
 
@@ -58,9 +86,12 @@ void UColorLibrary_C::Get_HarvestWeakPoint_Color(const struct FColorStylesheet& 
 
 void UColorLibrary_C::Get_Base___Buff_Colors(enum class EFortStatValueDisplayType Display_Type, enum class EFortBuffState Buff_State, const struct FColorStylesheet& StyleSheet, class UObject* __WorldContext, struct FLinearColor* Base, struct FLinearColor* Buff, const struct FLinearColor& Temp_struct_Variable, enum class EFortStatValueDisplayType Temp_byte_Variable, const struct FLinearColor& Temp_struct_Variable_1, const struct FLinearColor& Temp_struct_Variable_2, enum class EFortBuffState Temp_byte_Variable_1, const struct FLinearColor& K2Node_Select_Default, const struct FLinearColor& K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("ColorLibrary_C", "Get Base & Buff Colors");
+	static class UFunction* Func = nullptr;
 
-	Params::UColorLibrary_C_Get_Base___Buff_Colors_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ColorLibrary_C", "Get Base & Buff Colors");
+
+	Params::UColorLibrary_C_Get_Base___Buff_Colors_Params Parms{};
 
 	Parms.Display_Type = Display_Type;
 	Parms.Buff_State = Buff_State;
@@ -77,10 +108,10 @@ void UColorLibrary_C::Get_Base___Buff_Colors(enum class EFortStatValueDisplayTyp
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Base != nullptr)
-		*Base = Parms.Base;
+		*Base = std::move(Parms.Base);
 
 	if (Buff != nullptr)
-		*Buff = Parms.Buff;
+		*Buff = std::move(Parms.Buff);
 
 }
 
@@ -94,9 +125,12 @@ void UColorLibrary_C::Get_Base___Buff_Colors(enum class EFortStatValueDisplayTyp
 
 void UColorLibrary_C::Get_Bolt_Elemental_Color(const struct FColorStylesheet& StyleSheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto Func = Class->GetFunction("ColorLibrary_C", "Get Bolt Elemental Color");
+	static class UFunction* Func = nullptr;
 
-	Params::UColorLibrary_C_Get_Bolt_Elemental_Color_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ColorLibrary_C", "Get Bolt Elemental Color");
+
+	Params::UColorLibrary_C_Get_Bolt_Elemental_Color_Params Parms{};
 
 	Parms.StyleSheet = StyleSheet;
 	Parms.__WorldContext = __WorldContext;
@@ -104,7 +138,7 @@ void UColorLibrary_C::Get_Bolt_Elemental_Color(const struct FColorStylesheet& St
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Color != nullptr)
-		*Color = Parms.Color;
+		*Color = std::move(Parms.Color);
 
 }
 
@@ -118,9 +152,12 @@ void UColorLibrary_C::Get_Bolt_Elemental_Color(const struct FColorStylesheet& St
 
 void UColorLibrary_C::Get_Ice_Elemental_Color(const struct FColorStylesheet& StyleSheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto Func = Class->GetFunction("ColorLibrary_C", "Get Ice Elemental Color");
+	static class UFunction* Func = nullptr;
 
-	Params::UColorLibrary_C_Get_Ice_Elemental_Color_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ColorLibrary_C", "Get Ice Elemental Color");
+
+	Params::UColorLibrary_C_Get_Ice_Elemental_Color_Params Parms{};
 
 	Parms.StyleSheet = StyleSheet;
 	Parms.__WorldContext = __WorldContext;
@@ -128,7 +165,7 @@ void UColorLibrary_C::Get_Ice_Elemental_Color(const struct FColorStylesheet& Sty
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Color != nullptr)
-		*Color = Parms.Color;
+		*Color = std::move(Parms.Color);
 
 }
 
@@ -142,9 +179,12 @@ void UColorLibrary_C::Get_Ice_Elemental_Color(const struct FColorStylesheet& Sty
 
 void UColorLibrary_C::Get_Fire_Elemental_Color(const struct FColorStylesheet& StyleSheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto Func = Class->GetFunction("ColorLibrary_C", "Get Fire Elemental Color");
+	static class UFunction* Func = nullptr;
 
-	Params::UColorLibrary_C_Get_Fire_Elemental_Color_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ColorLibrary_C", "Get Fire Elemental Color");
+
+	Params::UColorLibrary_C_Get_Fire_Elemental_Color_Params Parms{};
 
 	Parms.StyleSheet = StyleSheet;
 	Parms.__WorldContext = __WorldContext;
@@ -152,7 +192,7 @@ void UColorLibrary_C::Get_Fire_Elemental_Color(const struct FColorStylesheet& St
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Color != nullptr)
-		*Color = Parms.Color;
+		*Color = std::move(Parms.Color);
 
 }
 
@@ -166,9 +206,12 @@ void UColorLibrary_C::Get_Fire_Elemental_Color(const struct FColorStylesheet& St
 
 void UColorLibrary_C::Get_Unique_Color(const struct FColorStylesheet& StyleSheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto Func = Class->GetFunction("ColorLibrary_C", "Get Unique Color");
+	static class UFunction* Func = nullptr;
 
-	Params::UColorLibrary_C_Get_Unique_Color_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ColorLibrary_C", "Get Unique Color");
+
+	Params::UColorLibrary_C_Get_Unique_Color_Params Parms{};
 
 	Parms.StyleSheet = StyleSheet;
 	Parms.__WorldContext = __WorldContext;
@@ -176,7 +219,7 @@ void UColorLibrary_C::Get_Unique_Color(const struct FColorStylesheet& StyleSheet
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Color != nullptr)
-		*Color = Parms.Color;
+		*Color = std::move(Parms.Color);
 
 }
 
@@ -190,9 +233,12 @@ void UColorLibrary_C::Get_Unique_Color(const struct FColorStylesheet& StyleSheet
 
 void UColorLibrary_C::Get_Debuff_Color(const struct FColorStylesheet& StyleSheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto Func = Class->GetFunction("ColorLibrary_C", "Get Debuff Color");
+	static class UFunction* Func = nullptr;
 
-	Params::UColorLibrary_C_Get_Debuff_Color_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ColorLibrary_C", "Get Debuff Color");
+
+	Params::UColorLibrary_C_Get_Debuff_Color_Params Parms{};
 
 	Parms.StyleSheet = StyleSheet;
 	Parms.__WorldContext = __WorldContext;
@@ -200,7 +246,7 @@ void UColorLibrary_C::Get_Debuff_Color(const struct FColorStylesheet& StyleSheet
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Color != nullptr)
-		*Color = Parms.Color;
+		*Color = std::move(Parms.Color);
 
 }
 
@@ -214,9 +260,12 @@ void UColorLibrary_C::Get_Debuff_Color(const struct FColorStylesheet& StyleSheet
 
 void UColorLibrary_C::Get_Buff_Color(const struct FColorStylesheet& StyleSheet, class UObject* __WorldContext, struct FLinearColor* Color)
 {
-	static auto Func = Class->GetFunction("ColorLibrary_C", "Get Buff Color");
+	static class UFunction* Func = nullptr;
 
-	Params::UColorLibrary_C_Get_Buff_Color_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ColorLibrary_C", "Get Buff Color");
+
+	Params::UColorLibrary_C_Get_Buff_Color_Params Parms{};
 
 	Parms.StyleSheet = StyleSheet;
 	Parms.__WorldContext = __WorldContext;
@@ -224,12 +273,10 @@ void UColorLibrary_C::Get_Buff_Color(const struct FColorStylesheet& StyleSheet, 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Color != nullptr)
-		*Color = Parms.Color;
+		*Color = std::move(Parms.Color);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

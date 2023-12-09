@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaMOTDPanel.AthenaMOTDPanel_C
+// (None)
+
+class UClass* UAthenaMOTDPanel_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaMOTDPanel_C");
+
+	return Clss;
+}
+
+
+// AthenaMOTDPanel_C AthenaMOTDPanel.Default__AthenaMOTDPanel_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaMOTDPanel_C* UAthenaMOTDPanel_C::GetDefaultObj()
+{
+	static class UAthenaMOTDPanel_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaMOTDPanel_C*>(UAthenaMOTDPanel_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaMOTDPanel.AthenaMOTDPanel_C.OnShowBackground
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UAthenaMOTDPanel_C::OnShowBackground()
 {
-	static auto Func = Class->GetFunction("AthenaMOTDPanel_C", "OnShowBackground");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDPanel_C_OnShowBackground_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDPanel_C", "OnShowBackground");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UAthenaMOTDPanel_C::OnShowBackground()
 
 void UAthenaMOTDPanel_C::OnHideBackground()
 {
-	static auto Func = Class->GetFunction("AthenaMOTDPanel_C", "OnHideBackground");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDPanel_C_OnHideBackground_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDPanel_C", "OnHideBackground");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -54,9 +83,12 @@ void UAthenaMOTDPanel_C::OnHideBackground()
 
 void UAthenaMOTDPanel_C::ExecuteUbergraph_AthenaMOTDPanel(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDPanel_C", "ExecuteUbergraph_AthenaMOTDPanel");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDPanel_C_ExecuteUbergraph_AthenaMOTDPanel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDPanel_C", "ExecuteUbergraph_AthenaMOTDPanel");
+
+	Params::UAthenaMOTDPanel_C_ExecuteUbergraph_AthenaMOTDPanel_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -66,6 +98,4 @@ void UAthenaMOTDPanel_C::ExecuteUbergraph_AthenaMOTDPanel(int32 EntryPoint)
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

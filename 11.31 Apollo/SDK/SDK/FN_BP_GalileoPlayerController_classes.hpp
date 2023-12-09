@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -30,11 +27,8 @@ public:
 	class FName                                  BB_LeashOuterRadiusKey;                            // 0x90C(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              OriginalRotationRate;                              // 0x914(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BP_GalileoPlayerController_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ABP_GalileoPlayerController_C* GetDefaultObj();
 
 	void SetBlackboardValues(class UBlackboardComponent* CallFunc_GetBlackboard_ReturnValue);
 	void ReceiveBeginPlay();
@@ -46,6 +40,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

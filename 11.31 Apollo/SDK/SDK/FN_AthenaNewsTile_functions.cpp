@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaNewsTile.AthenaNewsTile_C
+// (None)
+
+class UClass* UAthenaNewsTile_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaNewsTile_C");
+
+	return Clss;
+}
+
+
+// AthenaNewsTile_C AthenaNewsTile.Default__AthenaNewsTile_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaNewsTile_C* UAthenaNewsTile_C::GetDefaultObj()
+{
+	static class UAthenaNewsTile_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaNewsTile_C*>(UAthenaNewsTile_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaNewsTile.AthenaNewsTile_C.PlayIntroAnim
 // (Event, Public, BlueprintEvent)
 // Parameters:
 
 void UAthenaNewsTile_C::PlayIntroAnim()
 {
-	static auto Func = Class->GetFunction("AthenaNewsTile_C", "PlayIntroAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsTile_C_PlayIntroAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsTile_C", "PlayIntroAnim");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UAthenaNewsTile_C::PlayIntroAnim()
 
 void UAthenaNewsTile_C::SetDefaultImage()
 {
-	static auto Func = Class->GetFunction("AthenaNewsTile_C", "SetDefaultImage");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsTile_C_SetDefaultImage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsTile_C", "SetDefaultImage");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +85,12 @@ void UAthenaNewsTile_C::SetDefaultImage()
 
 void UAthenaNewsTile_C::ExecuteUbergraph_AthenaNewsTile(int32 EntryPoint, float CallFunc_RandomFloatInRange_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaNewsTile_C", "ExecuteUbergraph_AthenaNewsTile");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsTile_C_ExecuteUbergraph_AthenaNewsTile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsTile_C", "ExecuteUbergraph_AthenaNewsTile");
+
+	Params::UAthenaNewsTile_C_ExecuteUbergraph_AthenaNewsTile_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_RandomFloatInRange_ReturnValue = CallFunc_RandomFloatInRange_ReturnValue;
@@ -70,6 +102,4 @@ void UAthenaNewsTile_C::ExecuteUbergraph_AthenaNewsTile(int32 EntryPoint, float 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

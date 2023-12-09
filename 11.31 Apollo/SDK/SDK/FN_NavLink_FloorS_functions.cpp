@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass NavLink_FloorS.NavLink_FloorS_C
+// (None)
+
+class UClass* UNavLink_FloorS_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("NavLink_FloorS_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// NavLink_FloorS_C NavLink_FloorS.Default__NavLink_FloorS_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UNavLink_FloorS_C* UNavLink_FloorS_C::GetDefaultObj()
+{
+	static class UNavLink_FloorS_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UNavLink_FloorS_C*>(UNavLink_FloorS_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

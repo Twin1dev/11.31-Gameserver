@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass FrontEnd.FrontEnd_C
+// (None)
+
+class UClass* UFrontEnd_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FrontEnd_C");
+
+	return Clss;
+}
+
+
+// FrontEnd_C FrontEnd.Default__FrontEnd_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UFrontEnd_C* UFrontEnd_C::GetDefaultObj()
+{
+	static class UFrontEnd_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFrontEnd_C*>(UFrontEnd_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function FrontEnd.FrontEnd_C.LoadTrailer
@@ -25,9 +50,12 @@ namespace SDK
 
 void UFrontEnd_C::LoadTrailer(class UActivatableMovieWidget_Frontend_C* ActivatableMovieWidget, int32 VideoIndex, bool* Return_Value, bool CallFunc_LoadVideo_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "LoadTrailer");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_LoadTrailer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "LoadTrailer");
+
+	Params::UFrontEnd_C_LoadTrailer_Params Parms{};
 
 	Parms.ActivatableMovieWidget = ActivatableMovieWidget;
 	Parms.VideoIndex = VideoIndex;
@@ -52,9 +80,12 @@ void UFrontEnd_C::LoadTrailer(class UActivatableMovieWidget_Frontend_C* Activata
 
 void UFrontEnd_C::PlayTrailer(int32 VideoIndex, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UActivatableMovieWidget_Frontend_C* CallFunc_Create_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_LoadTrailer_Return_Value)
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "PlayTrailer");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_PlayTrailer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "PlayTrailer");
+
+	Params::UFrontEnd_C_PlayTrailer_Params Parms{};
 
 	Parms.VideoIndex = VideoIndex;
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
@@ -77,9 +108,12 @@ void UFrontEnd_C::PlayTrailer(int32 VideoIndex, class APlayerController* CallFun
 
 void UFrontEnd_C::InitChatVisibilityButton(bool CallFunc_IsMobileGame_ReturnValue, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "InitChatVisibilityButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_InitChatVisibilityButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "InitChatVisibilityButton");
+
+	Params::UFrontEnd_C_InitChatVisibilityButton_Params Parms{};
 
 	Parms.CallFunc_IsMobileGame_ReturnValue = CallFunc_IsMobileGame_ReturnValue;
 	Parms.CallFunc_GetSubGame_ReturnValue = CallFunc_GetSubGame_ReturnValue;
@@ -97,22 +131,25 @@ void UFrontEnd_C::InitChatVisibilityButton(bool CallFunc_IsMobileGame_ReturnValu
 // enum class EPTTState               PTTState                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAthenaHUDContext*           CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetCanPTT_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
-// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush_1                                   ()
-// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush_2                                   ()
+// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     (None)
+// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush_1                                   (None)
+// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush_2                                   (None)
 // bool                               CallFunc_IsMobileGame_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESubGame                CallFunc_GetSubGame_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EPTTState               Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_BooleanAND_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSlateBrush                 K2Node_Select_Default                                            ()
+// struct FSlateBrush                 K2Node_Select_Default                                            (None)
 
 void UFrontEnd_C::UpdatePttVisibility(enum class EPTTState PTTState, class UAthenaHUDContext* CallFunc_GetContext_ReturnValue, bool CallFunc_GetCanPTT_ReturnValue, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush_1, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush_2, bool CallFunc_IsMobileGame_ReturnValue, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, enum class EPTTState Temp_byte_Variable, bool CallFunc_BooleanAND_ReturnValue_1, const struct FSlateBrush& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "UpdatePttVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_UpdatePttVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "UpdatePttVisibility");
+
+	Params::UFrontEnd_C_UpdatePttVisibility_Params Parms{};
 
 	Parms.PTTState = PTTState;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -140,9 +177,12 @@ void UFrontEnd_C::UpdatePttVisibility(enum class EPTTState PTTState, class UAthe
 
 void UFrontEnd_C::SetOverlayTitleBarVisibility(bool Visible)
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "SetOverlayTitleBarVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_SetOverlayTitleBarVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "SetOverlayTitleBarVisibility");
+
+	Params::UFrontEnd_C_SetOverlayTitleBarVisibility_Params Parms{};
 
 	Parms.Visible = Visible;
 
@@ -168,9 +208,12 @@ void UFrontEnd_C::SetOverlayTitleBarVisibility(bool Visible)
 
 void UFrontEnd_C::SetChatWidgetVisibility(bool Visible, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, enum class ESlateVisibility CallFunc_GetVisibility_ReturnValue, enum class EFortUIFeatureState CallFunc_GetFeatureState_OutFeatureState, enum class EFortUIFeatureStateReason CallFunc_GetFeatureState_OutReason, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_GetSelected_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "SetChatWidgetVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_SetChatWidgetVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "SetChatWidgetVisibility");
+
+	Params::UFrontEnd_C_SetChatWidgetVisibility_Params Parms{};
 
 	Parms.Visible = Visible;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -202,9 +245,12 @@ void UFrontEnd_C::SetChatWidgetVisibility(bool Visible, class UFortGlobalUIConte
 
 class UWidget* UFrontEnd_C::PopContentWidgetInternal(const struct FContentPushState& State, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default, class UWidget* CallFunc_PopWidget_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "PopContentWidgetInternal");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_PopContentWidgetInternal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "PopContentWidgetInternal");
+
+	Params::UFrontEnd_C_PopContentWidgetInternal_Params Parms{};
 
 	Parms.State = State;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -230,9 +276,12 @@ class UWidget* UFrontEnd_C::PopContentWidgetInternal(const struct FContentPushSt
 
 void UFrontEnd_C::HandleEnterFrontend(enum class EFortUIState UIState, enum class EFortUIState LocalUIState, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "HandleEnterFrontend");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_HandleEnterFrontend_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "HandleEnterFrontend");
+
+	Params::UFrontEnd_C_HandleEnterFrontend_Params Parms{};
 
 	Parms.UIState = UIState;
 	Parms.LocalUIState = LocalUIState;
@@ -250,12 +299,14 @@ void UFrontEnd_C::HandleEnterFrontend(enum class EFortUIState UIState, enum clas
 
 void UFrontEnd_C::Finished_74C01B50486C9D234AEBBB83F5C50040()
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "Finished_74C01B50486C9D234AEBBB83F5C50040");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_Finished_74C01B50486C9D234AEBBB83F5C50040_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "Finished_74C01B50486C9D234AEBBB83F5C50040");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -266,12 +317,14 @@ void UFrontEnd_C::Finished_74C01B50486C9D234AEBBB83F5C50040()
 
 void UFrontEnd_C::Finished_10D32F9F43CC39E50616E5BD00C13DDE()
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "Finished_10D32F9F43CC39E50616E5BD00C13DDE");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_Finished_10D32F9F43CC39E50616E5BD00C13DDE_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "Finished_10D32F9F43CC39E50616E5BD00C13DDE");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -284,9 +337,12 @@ void UFrontEnd_C::Finished_10D32F9F43CC39E50616E5BD00C13DDE()
 
 void UFrontEnd_C::PushContentWidgetInternal(class UWidget* Widget, const struct FContentPushState& State)
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "PushContentWidgetInternal");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_PushContentWidgetInternal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "PushContentWidgetInternal");
+
+	Params::UFrontEnd_C_PushContentWidgetInternal_Params Parms{};
 
 	Parms.Widget = Widget;
 	Parms.State = State;
@@ -305,9 +361,12 @@ void UFrontEnd_C::PushContentWidgetInternal(class UWidget* Widget, const struct 
 
 void UFrontEnd_C::OnFrontEndVisibilityUpdated(bool bHideHeader, bool bHideFooter, bool bHideChatWidget)
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "OnFrontEndVisibilityUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_OnFrontEndVisibilityUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "OnFrontEndVisibilityUpdated");
+
+	Params::UFrontEnd_C_OnFrontEndVisibilityUpdated_Params Parms{};
 
 	Parms.bHideHeader = bHideHeader;
 	Parms.bHideFooter = bHideFooter;
@@ -324,12 +383,14 @@ void UFrontEnd_C::OnFrontEndVisibilityUpdated(bool bHideHeader, bool bHideFooter
 
 void UFrontEnd_C::Construct()
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -341,9 +402,12 @@ void UFrontEnd_C::Construct()
 
 void UFrontEnd_C::Loading_Screen_Changed(bool IsVisible)
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "Loading Screen Changed");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_Loading_Screen_Changed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "Loading Screen Changed");
+
+	Params::UFrontEnd_C_Loading_Screen_Changed_Params Parms{};
 
 	Parms.IsVisible = IsVisible;
 
@@ -360,9 +424,12 @@ void UFrontEnd_C::Loading_Screen_Changed(bool IsVisible)
 
 void UFrontEnd_C::BndEvt__ButtonToggleChat_K2Node_ComponentBoundEvent_39_CommonSelectedStateChanged__DelegateSignature(class UCommonButton* Button, bool Selected)
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "BndEvt__ButtonToggleChat_K2Node_ComponentBoundEvent_39_CommonSelectedStateChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_BndEvt__ButtonToggleChat_K2Node_ComponentBoundEvent_39_CommonSelectedStateChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "BndEvt__ButtonToggleChat_K2Node_ComponentBoundEvent_39_CommonSelectedStateChanged__DelegateSignature");
+
+	Params::UFrontEnd_C_BndEvt__ButtonToggleChat_K2Node_ComponentBoundEvent_39_CommonSelectedStateChanged__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 	Parms.Selected = Selected;
@@ -378,12 +445,14 @@ void UFrontEnd_C::BndEvt__ButtonToggleChat_K2Node_ComponentBoundEvent_39_CommonS
 
 void UFrontEnd_C::On_Can_PTT()
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "On Can PTT");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_On_Can_PTT_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "On Can PTT");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -395,9 +464,12 @@ void UFrontEnd_C::On_Can_PTT()
 
 void UFrontEnd_C::OnEnterState(enum class EFortUIState PreviousUIState)
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "OnEnterState");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_OnEnterState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "OnEnterState");
+
+	Params::UFrontEnd_C_OnEnterState_Params Parms{};
 
 	Parms.PreviousUIState = PreviousUIState;
 
@@ -412,12 +484,14 @@ void UFrontEnd_C::OnEnterState(enum class EFortUIState PreviousUIState)
 
 void UFrontEnd_C::On_Social_Import_Closed()
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "On Social Import Closed");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_On_Social_Import_Closed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "On Social Import Closed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -428,12 +502,14 @@ void UFrontEnd_C::On_Social_Import_Closed()
 
 void UFrontEnd_C::OnMovieFinished()
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "OnMovieFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_OnMovieFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "OnMovieFinished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -444,12 +520,14 @@ void UFrontEnd_C::OnMovieFinished()
 
 void UFrontEnd_C::BndEvt__Button_PTT_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "BndEvt__Button_PTT_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_BndEvt__Button_PTT_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "BndEvt__Button_PTT_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -460,12 +538,14 @@ void UFrontEnd_C::BndEvt__Button_PTT_K2Node_ComponentBoundEvent_0_OnButtonClicke
 
 void UFrontEnd_C::On_Crossplay_Widget_Closed_1()
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "On Crossplay Widget Closed 1");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_On_Crossplay_Widget_Closed_1_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "On Crossplay Widget Closed 1");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -476,12 +556,14 @@ void UFrontEnd_C::On_Crossplay_Widget_Closed_1()
 
 void UFrontEnd_C::RevisitStartupFlow()
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "RevisitStartupFlow");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_RevisitStartupFlow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "RevisitStartupFlow");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -554,9 +636,12 @@ void UFrontEnd_C::RevisitStartupFlow()
 
 void UFrontEnd_C::ExecuteUbergraph_FrontEnd(int32 EntryPoint, enum class EPTTState Temp_byte_Variable, enum class EPTTState Temp_byte_Variable_1, enum class EPTTState Temp_byte_Variable_2, enum class EPTTState Temp_byte_Variable_3, class UAthenaHUDContext* CallFunc_GetContext_ReturnValue, class UAthenaHUDContext* CallFunc_GetContext_ReturnValue_1, class UAthenaHUDContext* CallFunc_GetContext_ReturnValue_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class EPTTState CallFunc_GetPTTState_ReturnValue, class UAthenaHUDContext* CallFunc_GetContext_ReturnValue_3, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_4, enum class EPTTState CallFunc_GetPTTState_ReturnValue_1, bool CallFunc_ShouldShowSocialImport_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_5, enum class ESubGame CallFunc_GetSubGame_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_6, class UFortSocialImportPanel* CallFunc_ShowSocialImport_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UAsyncAction_WaitForScriptedActions* CallFunc_WaitForScriptedAction_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, bool CallFunc_IsValid_ReturnValue, bool Temp_bool_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, class UWidget* K2Node_Event_Widget, const struct FContentPushState& K2Node_Event_State, enum class ESlateVisibility K2Node_Select_Default, bool K2Node_Event_bHideHeader, bool K2Node_Event_bHideFooter, bool K2Node_Event_bHideChatWidget, class UAthenaHUDContext* CallFunc_GetContext_ReturnValue_7, bool K2Node_CustomEvent_IsVisible, enum class EPTTState CallFunc_GetPTTState_ReturnValue_2, class UClass* Temp_class_Variable, enum class EPTTState K2Node_Select_Default_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool K2Node_ComponentBoundEvent_Selected, class UClass* Temp_class_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_6, class UClass* K2Node_Select_Default_2, enum class EFortUIState K2Node_Event_PreviousUIState, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, enum class ESlateVisibility Temp_byte_Variable_7, bool CallFunc_CheckForGifts_ReturnValue, bool Temp_bool_Variable_2, enum class ESlateVisibility K2Node_Select_Default_3, bool CallFunc_NeedSeeTrailerMovie_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_8, bool CallFunc_ShowInitialCrossplayDialog_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_9, class UFortPlayerSurveyDispatcher* CallFunc_GetPlayerSurveyDispatcher_ReturnValue, bool CallFunc_IsCurrentlyShowingLoadingScreen_ReturnValue, class UAsyncAction_FortPlayerSurveyDispatcherDisplaySurveys* CallFunc_DisplaySurveys_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_ShowInitialCrossplayDialog_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, bool CallFunc_ShouldSkipStartupFlow_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FrontEnd_C", "ExecuteUbergraph_FrontEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::UFrontEnd_C_ExecuteUbergraph_FrontEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontEnd_C", "ExecuteUbergraph_FrontEnd");
+
+	Params::UFrontEnd_C_ExecuteUbergraph_FrontEnd_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -627,6 +712,4 @@ void UFrontEnd_C::ExecuteUbergraph_FrontEnd(int32 EntryPoint, enum class EPTTSta
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

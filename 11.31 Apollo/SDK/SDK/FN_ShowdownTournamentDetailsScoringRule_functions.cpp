@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ShowdownTournamentDetailsScoringRule.ShowdownTournamentDetailsScoringRule_C
+// (None)
+
+class UClass* UShowdownTournamentDetailsScoringRule_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ShowdownTournamentDetailsScoringRule_C");
+
+	return Clss;
+}
+
+
+// ShowdownTournamentDetailsScoringRule_C ShowdownTournamentDetailsScoringRule.Default__ShowdownTournamentDetailsScoringRule_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UShowdownTournamentDetailsScoringRule_C* UShowdownTournamentDetailsScoringRule_C::GetDefaultObj()
+{
+	static class UShowdownTournamentDetailsScoringRule_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UShowdownTournamentDetailsScoringRule_C*>(UShowdownTournamentDetailsScoringRule_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ShowdownTournamentDetailsScoringRule.ShowdownTournamentDetailsScoringRule_C.SetData
@@ -25,24 +50,27 @@ namespace SDK
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // bool                               CallFunc_LessEqual_IntInt_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_NameName_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable                                               ()
+// class FText                        Temp_text_Variable                                               (None)
 // struct FLinearColor                K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortShowdownScoringRuleDisplayInfoCallFunc_GetDataTableRowFromName_OutRow                          ()
+// struct FFortShowdownScoringRuleDisplayInfoCallFunc_GetDataTableRowFromName_OutRow                          (None)
 // bool                               CallFunc_GetDataTableRowFromName_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        K2Node_Select_Default_1                                          ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        K2Node_Select_Default_1                                          (None)
 
 void UShowdownTournamentDetailsScoringRule_C::SetData(const struct FFortShowdownScoringRuleInfo& ScoreRule, const struct FFortTournamentDisplayInfo& TournamentDisplayInfo, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, bool CallFunc_EqualEqual_IntInt_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool Temp_bool_Variable, class FText Temp_text_Variable, const struct FLinearColor& K2Node_Select_Default, bool Temp_bool_Variable_1, const struct FFortShowdownScoringRuleDisplayInfo& CallFunc_GetDataTableRowFromName_OutRow, bool CallFunc_GetDataTableRowFromName_ReturnValue, class FText CallFunc_Format_ReturnValue, class FText K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("ShowdownTournamentDetailsScoringRule_C", "SetData");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownTournamentDetailsScoringRule_C_SetData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownTournamentDetailsScoringRule_C", "SetData");
+
+	Params::UShowdownTournamentDetailsScoringRule_C_SetData_Params Parms{};
 
 	Parms.ScoreRule = ScoreRule;
 	Parms.TournamentDisplayInfo = TournamentDisplayInfo;
@@ -70,6 +98,4 @@ void UShowdownTournamentDetailsScoringRule_C::SetData(const struct FFortShowdown
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

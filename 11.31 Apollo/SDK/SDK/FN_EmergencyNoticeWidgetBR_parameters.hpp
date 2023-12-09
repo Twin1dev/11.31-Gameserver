@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -33,28 +30,19 @@ public:
 	class FText                                  Body;                                              // 0x18(0x18)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function EmergencyNoticeWidgetBR.EmergencyNoticeWidgetBR_C.HideNotice
-struct UEmergencyNoticeWidgetBR_C_HideNotice_Params
-{
-public:
-};
-
 // 0x50 (0x50 - 0x0)
 // Function EmergencyNoticeWidgetBR.EmergencyNoticeWidgetBR_C.ExecuteUbergraph_EmergencyNoticeWidgetBR
 struct UEmergencyNoticeWidgetBR_C_ExecuteUbergraph_EmergencyNoticeWidgetBR_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4370[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6DA2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  K2Node_Event_Title;                                // 0x8(0x18)(ConstParm)
 	class FText                                  K2Node_Event_Body;                                 // 0x20(0x18)(ConstParm)
-	class FText                                  CallFunc_TextToUpper_ReturnValue;                  // 0x38(0x18)()
+	class FText                                  CallFunc_TextToUpper_ReturnValue;                  // 0x38(0x18)(None)
 };
 
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

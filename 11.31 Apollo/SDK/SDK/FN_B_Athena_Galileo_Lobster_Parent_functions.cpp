@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_Athena_Galileo_Lobster_Parent.B_Athena_Galileo_Lobster_Parent_C
+// (Actor)
+
+class UClass* AB_Athena_Galileo_Lobster_Parent_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Athena_Galileo_Lobster_Parent_C");
+
+	return Clss;
+}
+
+
+// B_Athena_Galileo_Lobster_Parent_C B_Athena_Galileo_Lobster_Parent.Default__B_Athena_Galileo_Lobster_Parent_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Athena_Galileo_Lobster_Parent_C* AB_Athena_Galileo_Lobster_Parent_C::GetDefaultObj()
+{
+	static class AB_Athena_Galileo_Lobster_Parent_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Athena_Galileo_Lobster_Parent_C*>(AB_Athena_Galileo_Lobster_Parent_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function B_Athena_Galileo_Lobster_Parent.B_Athena_Galileo_Lobster_Parent_C.OnRep_BladeVisibility
@@ -25,9 +50,12 @@ namespace SDK
 
 void AB_Athena_Galileo_Lobster_Parent_C::OnRep_BladeVisibility(bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, enum class EAudioComponentPlayState CallFunc_GetPlayState_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "OnRep_BladeVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_OnRep_BladeVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "OnRep_BladeVisibility");
+
+	Params::AB_Athena_Galileo_Lobster_Parent_C_OnRep_BladeVisibility_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
@@ -48,9 +76,12 @@ void AB_Athena_Galileo_Lobster_Parent_C::OnRep_BladeVisibility(bool CallFunc_IsV
 
 void AB_Athena_Galileo_Lobster_Parent_C::CreateSkeletalAudioComp(class UFortSkeletalAudioComponent** Component, const struct FTransform& Temp_struct_Variable, class UFortSkeletalAudioComponent* CallFunc_AddComponent_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "CreateSkeletalAudioComp");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_CreateSkeletalAudioComp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "CreateSkeletalAudioComp");
+
+	Params::AB_Athena_Galileo_Lobster_Parent_C_CreateSkeletalAudioComp_Params Parms{};
 
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.CallFunc_AddComponent_ReturnValue = CallFunc_AddComponent_ReturnValue;
@@ -74,9 +105,12 @@ void AB_Athena_Galileo_Lobster_Parent_C::CreateSkeletalAudioComp(class UFortSkel
 
 void AB_Athena_Galileo_Lobster_Parent_C::Unholstered(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class APawn* CallFunc_GetInstigator_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "Unholstered");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_Unholstered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "Unholstered");
+
+	Params::AB_Athena_Galileo_Lobster_Parent_C_Unholstered_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
@@ -100,9 +134,12 @@ void AB_Athena_Galileo_Lobster_Parent_C::Unholstered(UDelegateProperty_ K2Node_C
 
 void AB_Athena_Galileo_Lobster_Parent_C::Holstered(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class APawn* CallFunc_GetInstigator_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "Holstered");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_Holstered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "Holstered");
+
+	Params::AB_Athena_Galileo_Lobster_Parent_C_Holstered_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
@@ -121,12 +158,14 @@ void AB_Athena_Galileo_Lobster_Parent_C::Holstered(UDelegateProperty_ K2Node_Cre
 
 void AB_Athena_Galileo_Lobster_Parent_C::UserConstructionScript()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "UserConstructionScript");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -137,12 +176,14 @@ void AB_Athena_Galileo_Lobster_Parent_C::UserConstructionScript()
 
 void AB_Athena_Galileo_Lobster_Parent_C::Timeline_1__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "Timeline_1__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_Timeline_1__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "Timeline_1__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -153,12 +194,14 @@ void AB_Athena_Galileo_Lobster_Parent_C::Timeline_1__FinishedFunc()
 
 void AB_Athena_Galileo_Lobster_Parent_C::Timeline_1__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "Timeline_1__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_Timeline_1__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "Timeline_1__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -170,9 +213,12 @@ void AB_Athena_Galileo_Lobster_Parent_C::Timeline_1__UpdateFunc()
 
 void AB_Athena_Galileo_Lobster_Parent_C::DoBulletBlockEffect(const struct FVector& ImpactLocation)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "DoBulletBlockEffect");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_DoBulletBlockEffect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "DoBulletBlockEffect");
+
+	Params::AB_Athena_Galileo_Lobster_Parent_C_DoBulletBlockEffect_Params Parms{};
 
 	Parms.ImpactLocation = ImpactLocation;
 
@@ -190,9 +236,12 @@ void AB_Athena_Galileo_Lobster_Parent_C::DoBulletBlockEffect(const struct FVecto
 
 void AB_Athena_Galileo_Lobster_Parent_C::OnPlayImpactFX(struct FHitResult& HitResult, enum class EPhysicalSurface ImpactPhysicalSurface, class UFXSystemComponent* SpawnedPSC)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "OnPlayImpactFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_OnPlayImpactFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "OnPlayImpactFX");
+
+	Params::AB_Athena_Galileo_Lobster_Parent_C_OnPlayImpactFX_Params Parms{};
 
 	Parms.HitResult = HitResult;
 	Parms.ImpactPhysicalSurface = ImpactPhysicalSurface;
@@ -210,9 +259,12 @@ void AB_Athena_Galileo_Lobster_Parent_C::OnPlayImpactFX(struct FHitResult& HitRe
 
 void AB_Athena_Galileo_Lobster_Parent_C::ToggleDynamicAudio(bool CanPlayIdleAudio)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "ToggleDynamicAudio");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_ToggleDynamicAudio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "ToggleDynamicAudio");
+
+	Params::AB_Athena_Galileo_Lobster_Parent_C_ToggleDynamicAudio_Params Parms{};
 
 	Parms.CanPlayIdleAudio = CanPlayIdleAudio;
 
@@ -227,12 +279,14 @@ void AB_Athena_Galileo_Lobster_Parent_C::ToggleDynamicAudio(bool CanPlayIdleAudi
 
 void AB_Athena_Galileo_Lobster_Parent_C::StartIdleFX()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "StartIdleFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_StartIdleFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "StartIdleFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -243,12 +297,14 @@ void AB_Athena_Galileo_Lobster_Parent_C::StartIdleFX()
 
 void AB_Athena_Galileo_Lobster_Parent_C::K2_OnUnEquip()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "K2_OnUnEquip");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_K2_OnUnEquip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "K2_OnUnEquip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -260,9 +316,12 @@ void AB_Athena_Galileo_Lobster_Parent_C::K2_OnUnEquip()
 
 void AB_Athena_Galileo_Lobster_Parent_C::ToggleDodgePrompt(bool Visible)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "ToggleDodgePrompt");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_ToggleDodgePrompt_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "ToggleDodgePrompt");
+
+	Params::AB_Athena_Galileo_Lobster_Parent_C_ToggleDodgePrompt_Params Parms{};
 
 	Parms.Visible = Visible;
 
@@ -278,9 +337,12 @@ void AB_Athena_Galileo_Lobster_Parent_C::ToggleDodgePrompt(bool Visible)
 
 void AB_Athena_Galileo_Lobster_Parent_C::CurrentPoiseChanged(float CurrentPoise)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "CurrentPoiseChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_CurrentPoiseChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "CurrentPoiseChanged");
+
+	Params::AB_Athena_Galileo_Lobster_Parent_C_CurrentPoiseChanged_Params Parms{};
 
 	Parms.CurrentPoise = CurrentPoise;
 
@@ -295,12 +357,14 @@ void AB_Athena_Galileo_Lobster_Parent_C::CurrentPoiseChanged(float CurrentPoise)
 
 void AB_Athena_Galileo_Lobster_Parent_C::BlockBreak()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "BlockBreak");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_BlockBreak_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "BlockBreak");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -311,12 +375,14 @@ void AB_Athena_Galileo_Lobster_Parent_C::BlockBreak()
 
 void AB_Athena_Galileo_Lobster_Parent_C::TurnOnLobster()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "TurnOnLobster");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_TurnOnLobster_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "TurnOnLobster");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -328,9 +394,12 @@ void AB_Athena_Galileo_Lobster_Parent_C::TurnOnLobster()
 
 void AB_Athena_Galileo_Lobster_Parent_C::SetBladeVisibility(bool Visible)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "SetBladeVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_SetBladeVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "SetBladeVisibility");
+
+	Params::AB_Athena_Galileo_Lobster_Parent_C_SetBladeVisibility_Params Parms{};
 
 	Parms.Visible = Visible;
 
@@ -345,12 +414,14 @@ void AB_Athena_Galileo_Lobster_Parent_C::SetBladeVisibility(bool Visible)
 
 void AB_Athena_Galileo_Lobster_Parent_C::OnWeaponAttached()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "OnWeaponAttached");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_OnWeaponAttached_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "OnWeaponAttached");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -363,9 +434,12 @@ void AB_Athena_Galileo_Lobster_Parent_C::OnWeaponAttached()
 
 void AB_Athena_Galileo_Lobster_Parent_C::OnWeaponVisibilityChanged(bool bVisible, bool bSetForLocalControllerOnly)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "OnWeaponVisibilityChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_OnWeaponVisibilityChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "OnWeaponVisibilityChanged");
+
+	Params::AB_Athena_Galileo_Lobster_Parent_C_OnWeaponVisibilityChanged_Params Parms{};
 
 	Parms.bVisible = bVisible;
 	Parms.bSetForLocalControllerOnly = bSetForLocalControllerOnly;
@@ -381,12 +455,14 @@ void AB_Athena_Galileo_Lobster_Parent_C::OnWeaponVisibilityChanged(bool bVisible
 
 void AB_Athena_Galileo_Lobster_Parent_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -398,9 +474,12 @@ void AB_Athena_Galileo_Lobster_Parent_C::ReceiveBeginPlay()
 
 void AB_Athena_Galileo_Lobster_Parent_C::ReticleStatusDisplay(bool Hide)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "ReticleStatusDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_ReticleStatusDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "ReticleStatusDisplay");
+
+	Params::AB_Athena_Galileo_Lobster_Parent_C_ReticleStatusDisplay_Params Parms{};
 
 	Parms.Hide = Hide;
 
@@ -415,12 +494,14 @@ void AB_Athena_Galileo_Lobster_Parent_C::ReticleStatusDisplay(bool Hide)
 
 void AB_Athena_Galileo_Lobster_Parent_C::ShowReticleStatusDisplay()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "ShowReticleStatusDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_ShowReticleStatusDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "ShowReticleStatusDisplay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -431,12 +512,14 @@ void AB_Athena_Galileo_Lobster_Parent_C::ShowReticleStatusDisplay()
 
 void AB_Athena_Galileo_Lobster_Parent_C::DeactivateBlockBreakWarning()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "DeactivateBlockBreakWarning");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_DeactivateBlockBreakWarning_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "DeactivateBlockBreakWarning");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -447,12 +530,14 @@ void AB_Athena_Galileo_Lobster_Parent_C::DeactivateBlockBreakWarning()
 
 void AB_Athena_Galileo_Lobster_Parent_C::RPCUnequip()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "RPCUnequip");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_RPCUnequip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "RPCUnequip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -549,9 +634,12 @@ void AB_Athena_Galileo_Lobster_Parent_C::RPCUnequip()
 
 void AB_Athena_Galileo_Lobster_Parent_C::ExecuteUbergraph_B_Athena_Galileo_Lobster_Parent(int32 EntryPoint, const struct FVector& K2Node_CustomEvent_ImpactLocation, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FRotator& CallFunc_MakeRotFromX_ReturnValue, class UFortHUDContext* CallFunc_GetContext_ReturnValue, const struct FHitResult& K2Node_Event_HitResult, enum class EPhysicalSurface K2Node_Event_ImpactPhysicalSurface, class UFXSystemComponent* K2Node_Event_SpawnedPSC, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, class AB_Galileo_Lobster_Block_Collision_C* K2Node_DynamicCast_AsB_Galileo_Lobster_Block_Collision, bool K2Node_DynamicCast_bSuccess, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_1, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_1, bool K2Node_CustomEvent_CanPlayIdleAudio, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_1, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsLocallyControlled_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue_1, class UFortHUDContext* CallFunc_GetContext_ReturnValue_1, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, bool K2Node_CustomEvent_Visible_1, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, float K2Node_CustomEvent_CurrentPoise, float CallFunc_GetGameTimeInSeconds_ReturnValue, bool K2Node_CustomEvent_Visible, class APawn* CallFunc_GetInstigator_ReturnValue_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_2, bool K2Node_DynamicCast_bSuccess_3, bool K2Node_Event_bVisible, bool K2Node_Event_bSetForLocalControllerOnly, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_1, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, class UDecalComponent* CallFunc_SpawnDecalAtLocation_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue_3, class UFortSkeletalAudioComponent* CallFunc_CreateSkeletalAudioComp_Component, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_3, bool K2Node_DynamicCast_bSuccess_4, bool CallFunc_IsLocallyControlled_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, bool K2Node_CustomEvent_Hide, bool CallFunc_IsDedicatedServer_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAnyMatchingGameplayTags_self_CastInput, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue, class AEmitterCameraLensEffectBase* CallFunc_SpawnCameraLensEffect_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_NotEqual_FloatFloat_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, float CallFunc_Lerp_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, class APawn* CallFunc_GetInstigator_ReturnValue_4, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_4, bool K2Node_DynamicCast_bSuccess_5, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAnyMatchingGameplayTags_self_CastInput_1, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "ExecuteUbergraph_B_Athena_Galileo_Lobster_Parent");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Parent_C_ExecuteUbergraph_B_Athena_Galileo_Lobster_Parent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Parent_C", "ExecuteUbergraph_B_Athena_Galileo_Lobster_Parent");
+
+	Params::AB_Athena_Galileo_Lobster_Parent_C_ExecuteUbergraph_B_Athena_Galileo_Lobster_Parent_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_ImpactLocation = K2Node_CustomEvent_ImpactLocation;
@@ -646,6 +734,4 @@ void AB_Athena_Galileo_Lobster_Parent_C::ExecuteUbergraph_B_Athena_Galileo_Lobst
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

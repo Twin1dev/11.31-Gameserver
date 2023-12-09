@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass DBNO_Carried.DBNO_Carried_C
+// (None)
+
+class UClass* UDBNO_Carried_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DBNO_Carried_C");
+
+	return Clss;
+}
+
+
+// DBNO_Carried_C DBNO_Carried.Default__DBNO_Carried_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UDBNO_Carried_C* UDBNO_Carried_C::GetDefaultObj()
+{
+	static class UDBNO_Carried_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UDBNO_Carried_C*>(UDBNO_Carried_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function DBNO_Carried.DBNO_Carried_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void UDBNO_Carried_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("DBNO_Carried_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UDBNO_Carried_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DBNO_Carried_C", "AnimGraph");
+
+	Params::UDBNO_Carried_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -41,12 +69,14 @@ void UDBNO_Carried_C::AnimGraph(struct FPoseLink* AnimGraph)
 
 void UDBNO_Carried_C::EvaluateGraphExposedInputs_ExecuteUbergraph_DBNO_Carried_AnimGraphNode_ModifyBone_59E069244645BEF22808AB9196186F3F()
 {
-	static auto Func = Class->GetFunction("DBNO_Carried_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_DBNO_Carried_AnimGraphNode_ModifyBone_59E069244645BEF22808AB9196186F3F");
+	static class UFunction* Func = nullptr;
 
-	Params::UDBNO_Carried_C_EvaluateGraphExposedInputs_ExecuteUbergraph_DBNO_Carried_AnimGraphNode_ModifyBone_59E069244645BEF22808AB9196186F3F_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DBNO_Carried_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_DBNO_Carried_AnimGraphNode_ModifyBone_59E069244645BEF22808AB9196186F3F");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,12 +87,14 @@ void UDBNO_Carried_C::EvaluateGraphExposedInputs_ExecuteUbergraph_DBNO_Carried_A
 
 void UDBNO_Carried_C::EvaluateGraphExposedInputs_ExecuteUbergraph_DBNO_Carried_AnimGraphNode_ApplyAdditive_56B19EE040BEEBC25D674F8DC99831B9()
 {
-	static auto Func = Class->GetFunction("DBNO_Carried_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_DBNO_Carried_AnimGraphNode_ApplyAdditive_56B19EE040BEEBC25D674F8DC99831B9");
+	static class UFunction* Func = nullptr;
 
-	Params::UDBNO_Carried_C_EvaluateGraphExposedInputs_ExecuteUbergraph_DBNO_Carried_AnimGraphNode_ApplyAdditive_56B19EE040BEEBC25D674F8DC99831B9_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DBNO_Carried_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_DBNO_Carried_AnimGraphNode_ApplyAdditive_56B19EE040BEEBC25D674F8DC99831B9");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -74,9 +106,12 @@ void UDBNO_Carried_C::EvaluateGraphExposedInputs_ExecuteUbergraph_DBNO_Carried_A
 
 void UDBNO_Carried_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static auto Func = Class->GetFunction("DBNO_Carried_C", "BlueprintUpdateAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UDBNO_Carried_C_BlueprintUpdateAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DBNO_Carried_C", "BlueprintUpdateAnimation");
+
+	Params::UDBNO_Carried_C_BlueprintUpdateAnimation_Params Parms{};
 
 	Parms.DeltaTimeX = DeltaTimeX;
 
@@ -91,12 +126,14 @@ void UDBNO_Carried_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void UDBNO_Carried_C::BlueprintInitializeAnimation()
 {
-	static auto Func = Class->GetFunction("DBNO_Carried_C", "BlueprintInitializeAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UDBNO_Carried_C_BlueprintInitializeAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DBNO_Carried_C", "BlueprintInitializeAnimation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -107,12 +144,14 @@ void UDBNO_Carried_C::BlueprintInitializeAnimation()
 
 void UDBNO_Carried_C::EvaluateGraphExposedInputs_ExecuteUbergraph_DBNO_Carried_AnimGraphNode_LinkedAnimGraph_BC9172D64300E6A13C48509FE2988A40()
 {
-	static auto Func = Class->GetFunction("DBNO_Carried_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_DBNO_Carried_AnimGraphNode_LinkedAnimGraph_BC9172D64300E6A13C48509FE2988A40");
+	static class UFunction* Func = nullptr;
 
-	Params::UDBNO_Carried_C_EvaluateGraphExposedInputs_ExecuteUbergraph_DBNO_Carried_AnimGraphNode_LinkedAnimGraph_BC9172D64300E6A13C48509FE2988A40_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DBNO_Carried_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_DBNO_Carried_AnimGraphNode_LinkedAnimGraph_BC9172D64300E6A13C48509FE2988A40");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -157,9 +196,12 @@ void UDBNO_Carried_C::EvaluateGraphExposedInputs_ExecuteUbergraph_DBNO_Carried_A
 
 void UDBNO_Carried_C::ExecuteUbergraph_DBNO_Carried(int32 EntryPoint, float CallFunc_GetInstanceStateWeight_ReturnValue, float K2Node_Event_DeltaTimeX, class AActor* CallFunc_GetAttachParentActor_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, class UFortPlayerAnimInstance* K2Node_DynamicCast_AsFort_Player_Anim_Instance, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsValid_ReturnValue_1, const struct FTransform& CallFunc_GetSocketTransform_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, const struct FTransform& CallFunc_GetSocketTransform_ReturnValue_1, const struct FVector& CallFunc_BreakTransform_Location_1, const struct FRotator& CallFunc_BreakTransform_Rotation_1, const struct FVector& CallFunc_BreakTransform_Scale_1, float CallFunc_GetCurveValue_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_GetWorldDeltaSeconds_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, float CallFunc_GetWorldDeltaSeconds_ReturnValue_1, float CallFunc_Montage_GetPosition_ReturnValue, float CallFunc_Montage_GetPlayRate_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Montage_GetPosition_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue_1, bool CallFunc_Montage_IsPlaying_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_Montage_IsPlaying_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("DBNO_Carried_C", "ExecuteUbergraph_DBNO_Carried");
+	static class UFunction* Func = nullptr;
 
-	Params::UDBNO_Carried_C_ExecuteUbergraph_DBNO_Carried_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DBNO_Carried_C", "ExecuteUbergraph_DBNO_Carried");
+
+	Params::UDBNO_Carried_C_ExecuteUbergraph_DBNO_Carried_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetInstanceStateWeight_ReturnValue = CallFunc_GetInstanceStateWeight_ReturnValue;
@@ -202,6 +244,4 @@ void UDBNO_Carried_C::ExecuteUbergraph_DBNO_Carried(int32 EntryPoint, float Call
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

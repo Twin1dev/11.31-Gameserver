@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass GamepadKeyTextButton.GamepadKeyTextButton_C
+// (None)
+
+class UClass* UGamepadKeyTextButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GamepadKeyTextButton_C");
+
+	return Clss;
+}
+
+
+// GamepadKeyTextButton_C GamepadKeyTextButton.Default__GamepadKeyTextButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGamepadKeyTextButton_C* UGamepadKeyTextButton_C::GetDefaultObj()
+{
+	static class UGamepadKeyTextButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGamepadKeyTextButton_C*>(UGamepadKeyTextButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GamepadKeyTextButton.GamepadKeyTextButton_C.SetNonInteractableStyle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UGamepadKeyTextButton_C::SetNonInteractableStyle()
 {
-	static auto Func = Class->GetFunction("GamepadKeyTextButton_C", "SetNonInteractableStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadKeyTextButton_C_SetNonInteractableStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadKeyTextButton_C", "SetNonInteractableStyle");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UGamepadKeyTextButton_C::SetNonInteractableStyle()
 
 void UGamepadKeyTextButton_C::SetContentAlignment(enum class EHorizontalAlignment ContentAlignment)
 {
-	static auto Func = Class->GetFunction("GamepadKeyTextButton_C", "SetContentAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadKeyTextButton_C_SetContentAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadKeyTextButton_C", "SetContentAlignment");
+
+	Params::UGamepadKeyTextButton_C_SetContentAlignment_Params Parms{};
 
 	Parms.ContentAlignment = ContentAlignment;
 
@@ -58,9 +88,12 @@ void UGamepadKeyTextButton_C::SetContentAlignment(enum class EHorizontalAlignmen
 
 void UGamepadKeyTextButton_C::UpdateContentAlignment(class UPanelSlot* CallFunc_GetContentSlot_ReturnValue, class UBorderSlot* K2Node_DynamicCast_AsBorder_Slot, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GamepadKeyTextButton_C", "UpdateContentAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadKeyTextButton_C_UpdateContentAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadKeyTextButton_C", "UpdateContentAlignment");
+
+	Params::UGamepadKeyTextButton_C_UpdateContentAlignment_Params Parms{};
 
 	Parms.CallFunc_GetContentSlot_ReturnValue = CallFunc_GetContentSlot_ReturnValue;
 	Parms.K2Node_DynamicCast_AsBorder_Slot = K2Node_DynamicCast_AsBorder_Slot;
@@ -78,9 +111,12 @@ void UGamepadKeyTextButton_C::UpdateContentAlignment(class UPanelSlot* CallFunc_
 
 void UGamepadKeyTextButton_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("GamepadKeyTextButton_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadKeyTextButton_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadKeyTextButton_C", "OnListItemObjectSet");
+
+	Params::UGamepadKeyTextButton_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -98,9 +134,12 @@ void UGamepadKeyTextButton_C::OnListItemObjectSet(class UObject* ListItemObject)
 
 void UGamepadKeyTextButton_C::SetData(const struct FKey& Key, class FText DescText, class FName ActionName)
 {
-	static auto Func = Class->GetFunction("GamepadKeyTextButton_C", "SetData");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadKeyTextButton_C_SetData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadKeyTextButton_C", "SetData");
+
+	Params::UGamepadKeyTextButton_C_SetData_Params Parms{};
 
 	Parms.Key = Key;
 	Parms.DescText = DescText;
@@ -118,9 +157,12 @@ void UGamepadKeyTextButton_C::SetData(const struct FKey& Key, class FText DescTe
 
 void UGamepadKeyTextButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("GamepadKeyTextButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadKeyTextButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadKeyTextButton_C", "PreConstruct");
+
+	Params::UGamepadKeyTextButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -138,9 +180,12 @@ void UGamepadKeyTextButton_C::PreConstruct(bool IsDesignTime)
 
 void UGamepadKeyTextButton_C::SetDataAndUpdateButton(const struct FKey& Key, class FText DescText, class FName ActionName)
 {
-	static auto Func = Class->GetFunction("GamepadKeyTextButton_C", "SetDataAndUpdateButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadKeyTextButton_C_SetDataAndUpdateButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadKeyTextButton_C", "SetDataAndUpdateButton");
+
+	Params::UGamepadKeyTextButton_C_SetDataAndUpdateButton_Params Parms{};
 
 	Parms.Key = Key;
 	Parms.DescText = DescText;
@@ -158,9 +203,12 @@ void UGamepadKeyTextButton_C::SetDataAndUpdateButton(const struct FKey& Key, cla
 
 void UGamepadKeyTextButton_C::UpdateButton(class UGamepadKeyTextButton_C* Button)
 {
-	static auto Func = Class->GetFunction("GamepadKeyTextButton_C", "UpdateButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadKeyTextButton_C_UpdateButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadKeyTextButton_C", "UpdateButton");
+
+	Params::UGamepadKeyTextButton_C_UpdateButton_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -176,9 +224,12 @@ void UGamepadKeyTextButton_C::UpdateButton(class UGamepadKeyTextButton_C* Button
 
 void UGamepadKeyTextButton_C::SetTabLabelInfo(struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static auto Func = Class->GetFunction("GamepadKeyTextButton_C", "SetTabLabelInfo");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadKeyTextButton_C_SetTabLabelInfo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadKeyTextButton_C", "SetTabLabelInfo");
+
+	Params::UGamepadKeyTextButton_C_SetTabLabelInfo_Params Parms{};
 
 	Parms.TabLabelInfo = TabLabelInfo;
 
@@ -197,11 +248,11 @@ void UGamepadKeyTextButton_C::SetTabLabelInfo(struct FFortTabButtonLabelInfo& Ta
 // class UGamepadKeyTextButton_C*     K2Node_DynamicCast_AsGamepad_Key_Text_Button                     (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FKey                        K2Node_CustomEvent_Key_1                                         (HasGetValueTypeHash)
-// class FText                        K2Node_CustomEvent_DescText_1                                    ()
+// class FText                        K2Node_CustomEvent_DescText_1                                    (None)
 // class FName                        K2Node_CustomEvent_ActionName_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FKey                        K2Node_CustomEvent_Key                                           (HasGetValueTypeHash)
-// class FText                        K2Node_CustomEvent_DescText                                      ()
+// class FText                        K2Node_CustomEvent_DescText                                      (None)
 // class FName                        K2Node_CustomEvent_ActionName                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UGamepadKeyTextButton_C*     K2Node_CustomEvent_Button                                        (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_KeyKey_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -211,9 +262,12 @@ void UGamepadKeyTextButton_C::SetTabLabelInfo(struct FFortTabButtonLabelInfo& Ta
 
 void UGamepadKeyTextButton_C::ExecuteUbergraph_GamepadKeyTextButton(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UObject* K2Node_Event_ListItemObject, class UGamepadKeyTextButton_C* K2Node_DynamicCast_AsGamepad_Key_Text_Button, bool K2Node_DynamicCast_bSuccess, const struct FKey& K2Node_CustomEvent_Key_1, class FText K2Node_CustomEvent_DescText_1, class FName K2Node_CustomEvent_ActionName_1, bool K2Node_Event_IsDesignTime, const struct FKey& K2Node_CustomEvent_Key, class FText K2Node_CustomEvent_DescText, class FName K2Node_CustomEvent_ActionName, class UGamepadKeyTextButton_C* K2Node_CustomEvent_Button, bool CallFunc_EqualEqual_KeyKey_ReturnValue, bool Temp_bool_Variable, const struct FFortTabButtonLabelInfo& K2Node_Event_TabLabelInfo, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("GamepadKeyTextButton_C", "ExecuteUbergraph_GamepadKeyTextButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadKeyTextButton_C_ExecuteUbergraph_GamepadKeyTextButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadKeyTextButton_C", "ExecuteUbergraph_GamepadKeyTextButton");
+
+	Params::UGamepadKeyTextButton_C_ExecuteUbergraph_GamepadKeyTextButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -247,9 +301,12 @@ void UGamepadKeyTextButton_C::ExecuteUbergraph_GamepadKeyTextButton(int32 EntryP
 
 void UGamepadKeyTextButton_C::ChangeTheBinding_Button__DelegateSignature(class FName ActionName, const struct FKey& Key)
 {
-	static auto Func = Class->GetFunction("GamepadKeyTextButton_C", "ChangeTheBinding_Button__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadKeyTextButton_C_ChangeTheBinding_Button__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadKeyTextButton_C", "ChangeTheBinding_Button__DelegateSignature");
+
+	Params::UGamepadKeyTextButton_C_ChangeTheBinding_Button__DelegateSignature_Params Parms{};
 
 	Parms.ActionName = ActionName;
 	Parms.Key = Key;
@@ -260,6 +317,4 @@ void UGamepadKeyTextButton_C::ChangeTheBinding_Button__DelegateSignature(class F
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

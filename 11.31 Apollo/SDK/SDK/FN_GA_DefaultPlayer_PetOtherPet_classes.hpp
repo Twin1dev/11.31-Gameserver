@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,11 +16,8 @@ class UGA_DefaultPlayer_PetOtherPet_C : public UFortGameplayAbility
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xA30(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GA_DefaultPlayer_PetOtherPet_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGA_DefaultPlayer_PetOtherPet_C* GetDefaultObj();
 
 	void OnCancelled_FB7AFE5D4FF547CAEB1ECA8264EE1330();
 	void OnInterrupted_FB7AFE5D4FF547CAEB1ECA8264EE1330();
@@ -35,6 +29,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

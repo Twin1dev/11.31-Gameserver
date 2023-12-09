@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -75,7 +72,7 @@ public:
 	class FString                                GroupID;                                           // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EGfeSDKHighlightType              TagsFilter;                                        // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EGfeSDKHighlightSignificance      SignificanceFilter;                                // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43AE[0x6];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_26FD[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -113,7 +110,7 @@ struct FGfeSDKHighlightCloseGroupParams
 public:
 	class FString                                GroupID;                                           // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         DestroyHighlights;                                 // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43AF[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2702[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x60 (0x60 - 0x0)
@@ -150,7 +147,7 @@ public:
 	bool                                         UserDefaultInterest;                               // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EGfeSDKHighlightType              HighlightTags;                                     // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EGfeSDKHighlightSignificance      Significance;                                      // 0x12(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43B0[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2707[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<class FString, class FString>           NameTranslationTable;                              // 0x18(0x50)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
 
@@ -170,7 +167,7 @@ struct FGfeSDKCreateResponse
 public:
 	uint16                                       VersionMajor;                                      // 0x0(0x2)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint16                                       VersionMinor;                                      // 0x2(0x2)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43B1[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_270D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                NVIDIAGfeVersion;                                  // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMap<enum class EGfeSDKScope, enum class EGfeSDKPermission> ScopePermissions;                                  // 0x18(0x50)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
@@ -183,11 +180,9 @@ public:
 	class FString                                AppName;                                           // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<enum class EGfeSDKScope>              RequiredScopes;                                    // 0x10(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                         PollForCallbacks;                                  // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_43B2[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2712[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaDirectAcquisitionOffer_SpecialBanner.AthenaDirectAcquisitionOffer_SpecialBanner_C
+// (None)
+
+class UClass* UAthenaDirectAcquisitionOffer_SpecialBanner_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaDirectAcquisitionOffer_SpecialBanner_C");
+
+	return Clss;
+}
+
+
+// AthenaDirectAcquisitionOffer_SpecialBanner_C AthenaDirectAcquisitionOffer_SpecialBanner.Default__AthenaDirectAcquisitionOffer_SpecialBanner_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaDirectAcquisitionOffer_SpecialBanner_C* UAthenaDirectAcquisitionOffer_SpecialBanner_C::GetDefaultObj()
+{
+	static class UAthenaDirectAcquisitionOffer_SpecialBanner_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaDirectAcquisitionOffer_SpecialBanner_C*>(UAthenaDirectAcquisitionOffer_SpecialBanner_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AthenaDirectAcquisitionOffer_SpecialBanner.AthenaDirectAcquisitionOffer_SpecialBanner_C.SetupSpecialOfferBanner
@@ -26,9 +51,12 @@ namespace SDK
 
 void UAthenaDirectAcquisitionOffer_SpecialBanner_C::SetupSpecialOfferBanner(bool bHasSale, class FText SaleText, const class FString& BannerOverrideTag, bool bHasBattlePassStars, int32 INumOfBattlePassStars)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOffer_SpecialBanner_C", "SetupSpecialOfferBanner");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOffer_SpecialBanner_C_SetupSpecialOfferBanner_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOffer_SpecialBanner_C", "SetupSpecialOfferBanner");
+
+	Params::UAthenaDirectAcquisitionOffer_SpecialBanner_C_SetupSpecialOfferBanner_Params Parms{};
 
 	Parms.bHasSale = bHasSale;
 	Parms.SaleText = SaleText;
@@ -49,7 +77,7 @@ void UAthenaDirectAcquisitionOffer_SpecialBanner_C::SetupSpecialOfferBanner(bool
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable                                               ()
+// class FText                        Temp_text_Variable                                               (None)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -66,24 +94,24 @@ void UAthenaDirectAcquisitionOffer_SpecialBanner_C::SetupSpecialOfferBanner(bool
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // bool                               Temp_bool_Variable_4                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        K2Node_Select_Default_1                                          ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        K2Node_Select_Default_1                                          (None)
 // enum class ESlateVisibility        K2Node_Select_Default_2                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_CustomEvent_bHasSale                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_CustomEvent_SaleText                                      ()
+// class FText                        K2Node_CustomEvent_SaleText                                      (None)
 // class FString                      K2Node_CustomEvent_BannerOverrideTag                             (ZeroConstructor, HasGetValueTypeHash)
 // bool                               K2Node_CustomEvent_bHasBattlePassStars                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              K2Node_CustomEvent_iNumOfBattlePassStars                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_1                                             ()
+// class FText                        Temp_text_Variable_1                                             (None)
 // class UVerticalBoxSlot*            CallFunc_SlotAsVerticalBoxSlot_ReturnValue                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Select_Default_3                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FMargin                     K2Node_MakeStruct_Margin                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Map_Find_Value                                          ()
+// class FText                        CallFunc_Map_Find_Value                                          (None)
 // bool                               CallFunc_Map_Find_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_5                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default_4                                          ()
-// class FText                        K2Node_Select_Default_5                                          ()
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        K2Node_Select_Default_4                                          (None)
+// class FText                        K2Node_Select_Default_5                                          (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 // bool                               CallFunc_BooleanAND_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -92,9 +120,12 @@ void UAthenaDirectAcquisitionOffer_SpecialBanner_C::SetupSpecialOfferBanner(bool
 
 void UAthenaDirectAcquisitionOffer_SpecialBanner_C::ExecuteUbergraph_AthenaDirectAcquisitionOffer_SpecialBanner(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, bool CallFunc_TextIsEmpty_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, class FText Temp_text_Variable, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_2, float Temp_float_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable_3, bool CallFunc_EqualEqual_BoolBool_ReturnValue, bool CallFunc_EqualEqual_BoolBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_Greater_IntInt_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, bool Temp_bool_Variable_4, class FText CallFunc_Format_ReturnValue, class FText K2Node_Select_Default_1, enum class ESlateVisibility K2Node_Select_Default_2, bool K2Node_CustomEvent_bHasSale, class FText K2Node_CustomEvent_SaleText, const class FString& K2Node_CustomEvent_BannerOverrideTag, bool K2Node_CustomEvent_bHasBattlePassStars, int32 K2Node_CustomEvent_iNumOfBattlePassStars, class FText Temp_text_Variable_1, class UVerticalBoxSlot* CallFunc_SlotAsVerticalBoxSlot_ReturnValue, float K2Node_Select_Default_3, const struct FMargin& K2Node_MakeStruct_Margin, class FText CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, bool Temp_bool_Variable_5, class FText K2Node_Select_Default_4, class FText K2Node_Select_Default_5, class FText CallFunc_TextToUpper_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionOffer_SpecialBanner_C", "ExecuteUbergraph_AthenaDirectAcquisitionOffer_SpecialBanner");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionOffer_SpecialBanner_C_ExecuteUbergraph_AthenaDirectAcquisitionOffer_SpecialBanner_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOffer_SpecialBanner_C", "ExecuteUbergraph_AthenaDirectAcquisitionOffer_SpecialBanner");
+
+	Params::UAthenaDirectAcquisitionOffer_SpecialBanner_C_ExecuteUbergraph_AthenaDirectAcquisitionOffer_SpecialBanner_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -148,6 +179,4 @@ void UAthenaDirectAcquisitionOffer_SpecialBanner_C::ExecuteUbergraph_AthenaDirec
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

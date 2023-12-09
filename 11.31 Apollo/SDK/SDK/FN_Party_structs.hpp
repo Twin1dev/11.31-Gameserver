@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -166,7 +163,7 @@ enum class ESocialSubsystem : uint8
 struct FOnlinePartyRepDataBase
 {
 public:
-	uint8                                        Pad_1DA9[0x18];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_EB8[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -182,15 +179,15 @@ public:
 struct FPartyMemberRepData : public FOnlinePartyRepDataBase
 {
 public:
-	uint8                                        Pad_1DAA[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EB9[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FUserPlatform                         Platform;                                          // 0x20(0x10)(HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1DAB[0x30];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EBA[0x30];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FUniqueNetIdRepl                      PlatformUniqueId;                                  // 0x60(0x28)(HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1DAC[0x30];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EBB[0x30];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                PlatformSessionId;                                 // 0xB8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1DAD[0x30];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EBC[0x30];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	enum class ECrossplayPreference              CrossplayPreference;                               // 0xF8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1DAE[0x37];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_EBD[0x37];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x3 (0x3 - 0x0)
@@ -219,9 +216,9 @@ struct FSocialChatChannelConfig
 {
 public:
 	class USocialUser*                           SocialUser;                                        // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DAF[0x10];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EC1[0x10];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class USocialChatChannel*>            ListenChannels;                                    // 0x18(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DB0[0x18];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_EC2[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x68 (0x80 - 0x18)
@@ -229,15 +226,13 @@ public:
 struct FPartyRepData : public FOnlinePartyRepDataBase
 {
 public:
-	uint8                                        Pad_1DB1[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EC4[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPartyPrivacySettings                 PrivacySettings;                                   // 0x20(0x3)(NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_1DB2[0x35];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EC5[0x35];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FPartyPlatformSessionInfo>     PlatformSessions;                                  // 0x58(0x10)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_1DB3[0x18];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_EC6[0x18];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

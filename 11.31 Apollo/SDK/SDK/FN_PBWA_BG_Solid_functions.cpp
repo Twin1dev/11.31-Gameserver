@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass PBWA_BG_Solid.PBWA_BG_Solid_C
+// (Actor)
+
+class UClass* APBWA_BG_Solid_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PBWA_BG_Solid_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// PBWA_BG_Solid_C PBWA_BG_Solid.Default__PBWA_BG_Solid_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class APBWA_BG_Solid_C* APBWA_BG_Solid_C::GetDefaultObj()
+{
+	static class APBWA_BG_Solid_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APBWA_BG_Solid_C*>(APBWA_BG_Solid_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

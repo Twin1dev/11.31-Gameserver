@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Athena_Enemy_Player_SneakySnowman.Athena_Enemy_Player_SneakySnowman_C
+// (Actor)
+
+class UClass* AAthena_Enemy_Player_SneakySnowman_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Athena_Enemy_Player_SneakySnowman_C");
+
+	return Clss;
+}
+
+
+// Athena_Enemy_Player_SneakySnowman_C Athena_Enemy_Player_SneakySnowman.Default__Athena_Enemy_Player_SneakySnowman_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AAthena_Enemy_Player_SneakySnowman_C* AAthena_Enemy_Player_SneakySnowman_C::GetDefaultObj()
+{
+	static class AAthena_Enemy_Player_SneakySnowman_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AAthena_Enemy_Player_SneakySnowman_C*>(AAthena_Enemy_Player_SneakySnowman_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function Athena_Enemy_Player_SneakySnowman.Athena_Enemy_Player_SneakySnowman_C.OnDamageServer
@@ -28,9 +53,12 @@ namespace SDK
 
 void AAthena_Enemy_Player_SneakySnowman_C::OnDamageServer(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("Athena_Enemy_Player_SneakySnowman_C", "OnDamageServer");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Enemy_Player_SneakySnowman_C_OnDamageServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Enemy_Player_SneakySnowman_C", "OnDamageServer");
+
+	Params::AAthena_Enemy_Player_SneakySnowman_C_OnDamageServer_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -51,12 +79,14 @@ void AAthena_Enemy_Player_SneakySnowman_C::OnDamageServer(float Damage, struct F
 
 void AAthena_Enemy_Player_SneakySnowman_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("Athena_Enemy_Player_SneakySnowman_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Enemy_Player_SneakySnowman_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Enemy_Player_SneakySnowman_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -71,7 +101,7 @@ void AAthena_Enemy_Player_SneakySnowman_C::ReceiveBeginPlay()
 // struct FHitResult                  K2Node_Event_HitInfo                                             (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AController*                 K2Node_Event_InstigatedBy                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       (None)
 // class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_GetValueAtLevel_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -81,9 +111,12 @@ void AAthena_Enemy_Player_SneakySnowman_C::ReceiveBeginPlay()
 
 void AAthena_Enemy_Player_SneakySnowman_C::ExecuteUbergraph_Athena_Enemy_Player_SneakySnowman(int32 EntryPoint, float K2Node_Event_Damage, const struct FGameplayTagContainer& K2Node_Event_DamageTags, const struct FVector& K2Node_Event_Momentum, const struct FHitResult& K2Node_Event_HitInfo, class AController* K2Node_Event_InstigatedBy, class AActor* K2Node_Event_DamageCauser, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, float CallFunc_GetValueAtLevel_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("Athena_Enemy_Player_SneakySnowman_C", "ExecuteUbergraph_Athena_Enemy_Player_SneakySnowman");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Enemy_Player_SneakySnowman_C_ExecuteUbergraph_Athena_Enemy_Player_SneakySnowman_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Enemy_Player_SneakySnowman_C", "ExecuteUbergraph_Athena_Enemy_Player_SneakySnowman");
+
+	Params::AAthena_Enemy_Player_SneakySnowman_C_ExecuteUbergraph_Athena_Enemy_Player_SneakySnowman_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_Damage = K2Node_Event_Damage;
@@ -106,6 +139,4 @@ void AAthena_Enemy_Player_SneakySnowman_C::ExecuteUbergraph_Athena_Enemy_Player_
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -14,20 +11,15 @@ namespace SDK
 
 // 0x0 (0xB0 - 0xB0)
 // BlueprintGeneratedClass Border-SolidBG-ShellBlue.Border-SolidBG-ShellBlue_C
-class UBorder_SolidBG_ShellBlue_C : public UBorder_ShellTopBar_C
+class UBorderMinusSolidBGMinusShellBlue_C : public UBorderMinusShellTopBar_C
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("Border-SolidBG-ShellBlue_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UBorderMinusSolidBGMinusShellBlue_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

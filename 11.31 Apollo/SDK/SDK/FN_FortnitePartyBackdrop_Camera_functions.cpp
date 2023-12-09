@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C
+// (Actor)
+
+class UClass* AFortnitePartyBackdrop_Camera_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FortnitePartyBackdrop_Camera_C");
+
+	return Clss;
+}
+
+
+// FortnitePartyBackdrop_Camera_C FortnitePartyBackdrop_Camera.Default__FortnitePartyBackdrop_Camera_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AFortnitePartyBackdrop_Camera_C* AFortnitePartyBackdrop_Camera_C::GetDefaultObj()
+{
+	static class AFortnitePartyBackdrop_Camera_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AFortnitePartyBackdrop_Camera_C*>(AFortnitePartyBackdrop_Camera_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function FortnitePartyBackdrop_Camera.FortnitePartyBackdrop_Camera_C.OnActivated
 // (Event, Public, BlueprintEvent)
 // Parameters:
 
 void AFortnitePartyBackdrop_Camera_C::OnActivated()
 {
-	static auto Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnitePartyBackdrop_Camera_C_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AFortnitePartyBackdrop_Camera_C::OnActivated()
 
 void AFortnitePartyBackdrop_Camera_C::OnDeactivated()
 {
-	static auto Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnitePartyBackdrop_Camera_C_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void AFortnitePartyBackdrop_Camera_C::OnDeactivated()
 
 void AFortnitePartyBackdrop_Camera_C::Reset_Location()
 {
-	static auto Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "Reset Location");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnitePartyBackdrop_Camera_C_Reset_Location_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "Reset Location");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void AFortnitePartyBackdrop_Camera_C::Reset_Location()
 
 void AFortnitePartyBackdrop_Camera_C::ManualActivate()
 {
-	static auto Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "ManualActivate");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnitePartyBackdrop_Camera_C_ManualActivate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "ManualActivate");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -114,9 +147,12 @@ void AFortnitePartyBackdrop_Camera_C::ManualActivate()
 
 void AFortnitePartyBackdrop_Camera_C::ExecuteUbergraph_FortnitePartyBackdrop_Camera(int32 EntryPoint, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable_2, int32 CallFunc_Add_IntInt_ReturnValue_2, int32 Temp_int_Array_Index_Variable_1, TArray<class ATVPostProcessBP_C*>& CallFunc_GetAllActorsOfClass_OutActors, int32 Temp_int_Array_Index_Variable_2, class ATVPostProcessBP_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class AFortTimeOfDayManager* CallFunc_GetTimeOfDayManagerFromContext_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, TArray<class ABP_FortniteLobbyLightSwitcher_C*>& CallFunc_GetAllActorsOfClass_OutActors_1, class ABP_FortniteLobbyLightSwitcher_C* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue_2, bool CallFunc_Greater_IntInt_ReturnValue, TArray<class ABP_FortniteLobbyLightSwitcher_C*>& CallFunc_GetAllActorsOfClass_OutActors_2, class ABP_FortniteLobbyLightSwitcher_C* CallFunc_Array_Get_Item_2, int32 CallFunc_Array_Length_ReturnValue_3, bool CallFunc_Less_IntInt_ReturnValue_2, int32 CallFunc_Array_Length_ReturnValue_4, bool CallFunc_Greater_IntInt_ReturnValue_1, const struct FHitResult& CallFunc_K2_SetActorTransform_SweepHitResult, bool CallFunc_K2_SetActorTransform_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "ExecuteUbergraph_FortnitePartyBackdrop_Camera");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnitePartyBackdrop_Camera_C_ExecuteUbergraph_FortnitePartyBackdrop_Camera_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortnitePartyBackdrop_Camera_C", "ExecuteUbergraph_FortnitePartyBackdrop_Camera");
+
+	Params::AFortnitePartyBackdrop_Camera_C_ExecuteUbergraph_FortnitePartyBackdrop_Camera_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -154,6 +190,4 @@ void AFortnitePartyBackdrop_Camera_C::ExecuteUbergraph_FortnitePartyBackdrop_Cam
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

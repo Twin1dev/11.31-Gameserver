@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GE_Commando_FragGrenadeKeepOutDamage.GE_Commando_FragGrenadeKeepOutDamage_C
+// (None)
+
+class UClass* UGE_Commando_FragGrenadeKeepOutDamage_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GE_Commando_FragGrenadeKeepOutDamage_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// GE_Commando_FragGrenadeKeepOutDamage_C GE_Commando_FragGrenadeKeepOutDamage.Default__GE_Commando_FragGrenadeKeepOutDamage_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGE_Commando_FragGrenadeKeepOutDamage_C* UGE_Commando_FragGrenadeKeepOutDamage_C::GetDefaultObj()
+{
+	static class UGE_Commando_FragGrenadeKeepOutDamage_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGE_Commando_FragGrenadeKeepOutDamage_C*>(UGE_Commando_FragGrenadeKeepOutDamage_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

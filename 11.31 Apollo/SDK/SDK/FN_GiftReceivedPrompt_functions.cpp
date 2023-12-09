@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass GiftReceivedPrompt.GiftReceivedPrompt_C
+// (None)
+
+class UClass* UGiftReceivedPrompt_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GiftReceivedPrompt_C");
+
+	return Clss;
+}
+
+
+// GiftReceivedPrompt_C GiftReceivedPrompt.Default__GiftReceivedPrompt_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGiftReceivedPrompt_C* UGiftReceivedPrompt_C::GetDefaultObj()
+{
+	static class UGiftReceivedPrompt_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGiftReceivedPrompt_C*>(UGiftReceivedPrompt_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GiftReceivedPrompt.GiftReceivedPrompt_C.BP_OnActivated
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UGiftReceivedPrompt_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("GiftReceivedPrompt_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftReceivedPrompt_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftReceivedPrompt_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UGiftReceivedPrompt_C::BP_OnActivated()
 
 void UGiftReceivedPrompt_C::OnGiftInfoPopulated()
 {
-	static auto Func = Class->GetFunction("GiftReceivedPrompt_C", "OnGiftInfoPopulated");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftReceivedPrompt_C_OnGiftInfoPopulated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftReceivedPrompt_C", "OnGiftInfoPopulated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UGiftReceivedPrompt_C::OnGiftInfoPopulated()
 
 void UGiftReceivedPrompt_C::OnCloseButtonClicked()
 {
-	static auto Func = Class->GetFunction("GiftReceivedPrompt_C", "OnCloseButtonClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftReceivedPrompt_C_OnCloseButtonClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftReceivedPrompt_C", "OnCloseButtonClicked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -74,9 +105,12 @@ void UGiftReceivedPrompt_C::OnCloseButtonClicked()
 
 void UGiftReceivedPrompt_C::ExecuteUbergraph_GiftReceivedPrompt(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("GiftReceivedPrompt_C", "ExecuteUbergraph_GiftReceivedPrompt");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftReceivedPrompt_C_ExecuteUbergraph_GiftReceivedPrompt_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftReceivedPrompt_C", "ExecuteUbergraph_GiftReceivedPrompt");
+
+	Params::UGiftReceivedPrompt_C_ExecuteUbergraph_GiftReceivedPrompt_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -90,6 +124,4 @@ void UGiftReceivedPrompt_C::ExecuteUbergraph_GiftReceivedPrompt(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

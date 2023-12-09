@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,16 +12,47 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass PlayerSurveyPanelContents.PlayerSurveyPanelContents_C
+// (None)
+
+class UClass* UPlayerSurveyPanelContents_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerSurveyPanelContents_C");
+
+	return Clss;
+}
+
+
+// PlayerSurveyPanelContents_C PlayerSurveyPanelContents.Default__PlayerSurveyPanelContents_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerSurveyPanelContents_C* UPlayerSurveyPanelContents_C::GetDefaultObj()
+{
+	static class UPlayerSurveyPanelContents_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerSurveyPanelContents_C*>(UPlayerSurveyPanelContents_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PlayerSurveyPanelContents.PlayerSurveyPanelContents_C.UpdateSubtitleText
 // (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                        CallFunc_GetSubtitleText_Text                                    ()
+// class FText                        CallFunc_GetSubtitleText_Text                                    (None)
 
 void UPlayerSurveyPanelContents_C::UpdateSubtitleText(class FText CallFunc_GetSubtitleText_Text)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "UpdateSubtitleText");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_UpdateSubtitleText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "UpdateSubtitleText");
+
+	Params::UPlayerSurveyPanelContents_C_UpdateSubtitleText_Params Parms{};
 
 	Parms.CallFunc_GetSubtitleText_Text = CallFunc_GetSubtitleText_Text;
 
@@ -40,9 +68,12 @@ void UPlayerSurveyPanelContents_C::UpdateSubtitleText(class FText CallFunc_GetSu
 
 void UPlayerSurveyPanelContents_C::FocusDefaultWidgetForCurrentQuestion(class UWidget* CallFunc_GetDefaultFocusedWidget_Result)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "FocusDefaultWidgetForCurrentQuestion");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_FocusDefaultWidgetForCurrentQuestion_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "FocusDefaultWidgetForCurrentQuestion");
+
+	Params::UPlayerSurveyPanelContents_C_FocusDefaultWidgetForCurrentQuestion_Params Parms{};
 
 	Parms.CallFunc_GetDefaultFocusedWidget_Result = CallFunc_GetDefaultFocusedWidget_Result;
 
@@ -56,16 +87,19 @@ void UPlayerSurveyPanelContents_C::FocusDefaultWidgetForCurrentQuestion(class UW
 // Parameters:
 // bool                               Result                                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UObject*                     CallFunc_Conv_InterfaceToObject_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortPlayerSurveyDescriptionCallFunc_GetDescription_ReturnValue                              ()
+// struct FFortPlayerSurveyDescriptionCallFunc_GetDescription_ReturnValue                              (None)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UPlayerSurveyPanelContents_C::ShouldShowConfirmCancelDialog(bool* Result, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue, const struct FFortPlayerSurveyDescription& CallFunc_GetDescription_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "ShouldShowConfirmCancelDialog");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_ShouldShowConfirmCancelDialog_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "ShouldShowConfirmCancelDialog");
+
+	Params::UPlayerSurveyPanelContents_C_ShouldShowConfirmCancelDialog_Params Parms{};
 
 	Parms.CallFunc_Conv_InterfaceToObject_ReturnValue = CallFunc_Conv_InterfaceToObject_ReturnValue;
 	Parms.CallFunc_GetDescription_ReturnValue = CallFunc_GetDescription_ReturnValue;
@@ -88,9 +122,12 @@ void UPlayerSurveyPanelContents_C::ShouldShowConfirmCancelDialog(bool* Result, c
 
 void UPlayerSurveyPanelContents_C::ResetSurvey(TScriptInterface<class ISingleIndexSelectionModel> CallFunc_SetSelectedIndex_self_CastInput)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "ResetSurvey");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_ResetSurvey_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "ResetSurvey");
+
+	Params::UPlayerSurveyPanelContents_C_ResetSurvey_Params Parms{};
 
 	Parms.CallFunc_SetSelectedIndex_self_CastInput = CallFunc_SetSelectedIndex_self_CastInput;
 
@@ -107,9 +144,12 @@ void UPlayerSurveyPanelContents_C::ResetSurvey(TScriptInterface<class ISingleInd
 
 void UPlayerSurveyPanelContents_C::GetDefaultFocusedWidget(class UWidget** Result, class UWidget* CallFunc_GetDefaultFocusedWidget_Result)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "GetDefaultFocusedWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_GetDefaultFocusedWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "GetDefaultFocusedWidget");
+
+	Params::UPlayerSurveyPanelContents_C_GetDefaultFocusedWidget_Params Parms{};
 
 	Parms.CallFunc_GetDefaultFocusedWidget_Result = CallFunc_GetDefaultFocusedWidget_Result;
 
@@ -128,9 +168,12 @@ void UPlayerSurveyPanelContents_C::GetDefaultFocusedWidget(class UWidget** Resul
 
 void UPlayerSurveyPanelContents_C::HandleQuestionChanged(class UObject* Source)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "HandleQuestionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_HandleQuestionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "HandleQuestionChanged");
+
+	Params::UPlayerSurveyPanelContents_C_HandleQuestionChanged_Params Parms{};
 
 	Parms.Source = Source;
 
@@ -150,9 +193,12 @@ void UPlayerSurveyPanelContents_C::HandleQuestionChanged(class UObject* Source)
 
 void UPlayerSurveyPanelContents_C::UpdateQuestionText(class FText QuestionText, TScriptInterface<class IFortPlayerSurveyAnswerableQuestion> CallFunc_GetQuestion_self_CastInput, class UFortPlayerSurveyQuestion* CallFunc_GetQuestion_ReturnValue, class UFortPlayerSurveyQuestionStandardBase* K2Node_DynamicCast_AsFort_Player_Survey_Question_Standard_Base, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "UpdateQuestionText");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_UpdateQuestionText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "UpdateQuestionText");
+
+	Params::UPlayerSurveyPanelContents_C_UpdateQuestionText_Params Parms{};
 
 	Parms.QuestionText = QuestionText;
 	Parms.CallFunc_GetQuestion_self_CastInput = CallFunc_GetQuestion_self_CastInput;
@@ -173,9 +219,12 @@ void UPlayerSurveyPanelContents_C::UpdateQuestionText(class FText QuestionText, 
 
 void UPlayerSurveyPanelContents_C::HandleAnswerChanged(class UObject* Source, struct FFortPlayerSurveyAnswerContainerChangeEventInfo& EventInfo)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "HandleAnswerChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_HandleAnswerChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "HandleAnswerChanged");
+
+	Params::UPlayerSurveyPanelContents_C_HandleAnswerChanged_Params Parms{};
 
 	Parms.Source = Source;
 	Parms.EventInfo = EventInfo;
@@ -201,9 +250,12 @@ void UPlayerSurveyPanelContents_C::HandleAnswerChanged(class UObject* Source, st
 
 void UPlayerSurveyPanelContents_C::UpdateNextButtonState(class UCommonButton* ActiveNextButton, bool HasMoreQuestions, bool HasAnsweredCurrentQuestion, bool Temp_bool_Variable, TScriptInterface<class IFortPlayerSurveyAnswerContainer> CallFunc_IsAnswerValid_self_CastInput, bool CallFunc_IsAnswerValid_ReturnValue, TScriptInterface<class ISingleIndexSelectionModel> CallFunc_CanMoveDelta_self_CastInput, enum class EIndexNavigationResult CallFunc_CanMoveDelta_ReturnValue, class UCommonButton* K2Node_Select_Default, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "UpdateNextButtonState");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_UpdateNextButtonState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "UpdateNextButtonState");
+
+	Params::UPlayerSurveyPanelContents_C_UpdateNextButtonState_Params Parms{};
 
 	Parms.ActiveNextButton = ActiveNextButton;
 	Parms.HasMoreQuestions = HasMoreQuestions;
@@ -228,9 +280,12 @@ void UPlayerSurveyPanelContents_C::UpdateNextButtonState(class UCommonButton* Ac
 
 void UPlayerSurveyPanelContents_C::HandleNumQuestionsChanged(class UObject* Source)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "HandleNumQuestionsChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_HandleNumQuestionsChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "HandleNumQuestionsChanged");
+
+	Params::UPlayerSurveyPanelContents_C_HandleNumQuestionsChanged_Params Parms{};
 
 	Parms.Source = Source;
 
@@ -246,9 +301,12 @@ void UPlayerSurveyPanelContents_C::HandleNumQuestionsChanged(class UObject* Sour
 
 void UPlayerSurveyPanelContents_C::HandleNavigationStateChanged(class UObject* Source)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "HandleNavigationStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_HandleNavigationStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "HandleNavigationStateChanged");
+
+	Params::UPlayerSurveyPanelContents_C_HandleNavigationStateChanged_Params Parms{};
 
 	Parms.Source = Source;
 
@@ -264,9 +322,12 @@ void UPlayerSurveyPanelContents_C::HandleNavigationStateChanged(class UObject* S
 
 void UPlayerSurveyPanelContents_C::HandleIndexChanged(class UObject* Source)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "HandleIndexChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_HandleIndexChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "HandleIndexChanged");
+
+	Params::UPlayerSurveyPanelContents_C_HandleIndexChanged_Params Parms{};
 
 	Parms.Source = Source;
 
@@ -284,9 +345,12 @@ void UPlayerSurveyPanelContents_C::HandleIndexChanged(class UObject* Source)
 
 void UPlayerSurveyPanelContents_C::FinishSurvey(enum class EFortPlayerSurveyFinishReason Reason, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "FinishSurvey");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_FinishSurvey_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "FinishSurvey");
+
+	Params::UPlayerSurveyPanelContents_C_FinishSurvey_Params Parms{};
 
 	Parms.Reason = Reason;
 	Parms.CallFunc_Conv_InterfaceToObject_ReturnValue = CallFunc_Conv_InterfaceToObject_ReturnValue;
@@ -301,15 +365,18 @@ void UPlayerSurveyPanelContents_C::FinishSurvey(enum class EFortPlayerSurveyFini
 // (Protected, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FText                        SurveyTitleText                                                  (Edit, BlueprintVisible)
-// struct FFortPlayerSurveyDescriptionCallFunc_GetDescription_ReturnValue                              ()
+// struct FFortPlayerSurveyDescriptionCallFunc_GetDescription_ReturnValue                              (None)
 // class UObject*                     CallFunc_Conv_InterfaceToObject_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UPlayerSurveyPanelContents_C::UpdateSurveyDescription(class FText SurveyTitleText, const struct FFortPlayerSurveyDescription& CallFunc_GetDescription_ReturnValue, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "UpdateSurveyDescription");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_UpdateSurveyDescription_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "UpdateSurveyDescription");
+
+	Params::UPlayerSurveyPanelContents_C_UpdateSurveyDescription_Params Parms{};
 
 	Parms.SurveyTitleText = SurveyTitleText;
 	Parms.CallFunc_GetDescription_ReturnValue = CallFunc_GetDescription_ReturnValue;
@@ -334,7 +401,7 @@ void UPlayerSurveyPanelContents_C::UpdateSurveyDescription(class FText SurveyTit
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // TScriptInterface<class ISingleIndexSelectionModel>CallFunc_GetNumItems_self_CastInput                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_GetNumItems_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TScriptInterface<class ISingleIndexSelectionModel>CallFunc_GetSelectedIndex_self_CastInput                         (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -343,9 +410,12 @@ void UPlayerSurveyPanelContents_C::UpdateSurveyDescription(class FText SurveyTit
 
 void UPlayerSurveyPanelContents_C::UpdateQuestionNumberLabel(class FText FormattedText, int32 NumQuestions, int32 QuestionIndex, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, bool CallFunc_BooleanAND_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, TScriptInterface<class ISingleIndexSelectionModel> CallFunc_GetNumItems_self_CastInput, int32 CallFunc_GetNumItems_ReturnValue, TScriptInterface<class ISingleIndexSelectionModel> CallFunc_GetSelectedIndex_self_CastInput, int32 CallFunc_GetSelectedIndex_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "UpdateQuestionNumberLabel");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_UpdateQuestionNumberLabel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "UpdateQuestionNumberLabel");
+
+	Params::UPlayerSurveyPanelContents_C_UpdateQuestionNumberLabel_Params Parms{};
 
 	Parms.FormattedText = FormattedText;
 	Parms.NumQuestions = NumQuestions;
@@ -377,9 +447,12 @@ void UPlayerSurveyPanelContents_C::UpdateQuestionNumberLabel(class FText Formatt
 
 void UPlayerSurveyPanelContents_C::DialogResult_1F2955434D7A098B1B9CC2A074F61086(enum class EFortDialogResult Result, class FName ResultName)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "DialogResult_1F2955434D7A098B1B9CC2A074F61086");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_DialogResult_1F2955434D7A098B1B9CC2A074F61086_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "DialogResult_1F2955434D7A098B1B9CC2A074F61086");
+
+	Params::UPlayerSurveyPanelContents_C_DialogResult_1F2955434D7A098B1B9CC2A074F61086_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.ResultName = ResultName;
@@ -395,12 +468,14 @@ void UPlayerSurveyPanelContents_C::DialogResult_1F2955434D7A098B1B9CC2A074F61086
 
 void UPlayerSurveyPanelContents_C::Construct()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -411,12 +486,14 @@ void UPlayerSurveyPanelContents_C::Construct()
 
 void UPlayerSurveyPanelContents_C::HandleSurveyChanged()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "HandleSurveyChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_HandleSurveyChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "HandleSurveyChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -428,9 +505,12 @@ void UPlayerSurveyPanelContents_C::HandleSurveyChanged()
 
 void UPlayerSurveyPanelContents_C::HandleQuestionsChanged(int32 Index)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "HandleQuestionsChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_HandleQuestionsChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "HandleQuestionsChanged");
+
+	Params::UPlayerSurveyPanelContents_C_HandleQuestionsChanged_Params Parms{};
 
 	Parms.Index = Index;
 
@@ -445,12 +525,14 @@ void UPlayerSurveyPanelContents_C::HandleQuestionsChanged(int32 Index)
 
 void UPlayerSurveyPanelContents_C::OnInitialized()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "OnInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_OnInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "OnInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -462,9 +544,12 @@ void UPlayerSurveyPanelContents_C::OnInitialized()
 
 void UPlayerSurveyPanelContents_C::BndEvt__NextQuestionButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "BndEvt__NextQuestionButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_BndEvt__NextQuestionButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "BndEvt__NextQuestionButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UPlayerSurveyPanelContents_C_BndEvt__NextQuestionButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -480,9 +565,12 @@ void UPlayerSurveyPanelContents_C::BndEvt__NextQuestionButton_K2Node_ComponentBo
 
 void UPlayerSurveyPanelContents_C::BndEvt__FinishButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "BndEvt__FinishButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_BndEvt__FinishButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "BndEvt__FinishButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+
+	Params::UPlayerSurveyPanelContents_C_BndEvt__FinishButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -498,9 +586,12 @@ void UPlayerSurveyPanelContents_C::BndEvt__FinishButton_K2Node_ComponentBoundEve
 
 void UPlayerSurveyPanelContents_C::BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+
+	Params::UPlayerSurveyPanelContents_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -515,12 +606,14 @@ void UPlayerSurveyPanelContents_C::BndEvt__CancelButton_K2Node_ComponentBoundEve
 
 void UPlayerSurveyPanelContents_C::HandleDescriptionChanged()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "HandleDescriptionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_HandleDescriptionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "HandleDescriptionChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -557,15 +650,18 @@ void UPlayerSurveyPanelContents_C::HandleDescriptionChanged()
 // TScriptInterface<class IFortPlayerSurveyAnswerableQuestion>CallFunc_AddOnQuestionChangedDelegate_self_CastInput             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_ShouldShowConfirmCancelDialog_Result                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_5                           (ZeroConstructor, NoDestructor)
-// struct FFortPlayerSurveyDescriptionCallFunc_GetDescription_ReturnValue                              ()
+// struct FFortPlayerSurveyDescriptionCallFunc_GetDescription_ReturnValue                              (None)
 // class UFortAsyncAction_ShowConfirmation_NUI*CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UPlayerSurveyPanelContents_C::ExecuteUbergraph_PlayerSurveyPanelContents(int32 EntryPoint, int32 K2Node_Event_Index, class UFortPlayerSurveyQuestionSelector* CallFunc_SpawnObject_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, TScriptInterface<class ISingleIndexSelectionModel> CallFunc_TryMoveDelta_self_CastInput, enum class EIndexNavigationResult CallFunc_TryMoveDelta_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class EFortDialogResult Temp_byte_Variable, TScriptInterface<class ISingleIndexSelectionModel> CallFunc_AddOnSelectedIndexChangedDelegate_self_CastInput, bool K2Node_SwitchEnum_CmpSuccess_1, class FName Temp_name_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, TScriptInterface<class ISingleIndexSelectionModel> CallFunc_AddOnNavigationChangedDelegate_self_CastInput, TScriptInterface<class ISingleIndexSelectionModel> CallFunc_AddOnNumItemsChangedDelegate_self_CastInput, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, TScriptInterface<class IFortPlayerSurveyAnswerableQuestion> CallFunc_SetQA_Value_CastInput, enum class EFortDialogResult K2Node_CustomEvent_Result, class FName K2Node_CustomEvent_ResultName, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, TScriptInterface<class IFortPlayerSurveyAnswerContainer> CallFunc_AddOnAnswerChangedDelegate_self_CastInput, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, TScriptInterface<class IFortPlayerSurveyAnswerableQuestion> CallFunc_AddOnQuestionChangedDelegate_self_CastInput, bool CallFunc_ShouldShowConfirmCancelDialog_Result, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, const struct FFortPlayerSurveyDescription& CallFunc_GetDescription_ReturnValue, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "ExecuteUbergraph_PlayerSurveyPanelContents");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_ExecuteUbergraph_PlayerSurveyPanelContents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "ExecuteUbergraph_PlayerSurveyPanelContents");
+
+	Params::UPlayerSurveyPanelContents_C_ExecuteUbergraph_PlayerSurveyPanelContents_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_Index = K2Node_Event_Index;
@@ -611,17 +707,17 @@ void UPlayerSurveyPanelContents_C::ExecuteUbergraph_PlayerSurveyPanelContents(in
 
 void UPlayerSurveyPanelContents_C::OnSurveyEnded__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContents_C", "OnSurveyEnded__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContents_C_OnSurveyEnded__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContents_C", "OnSurveyEnded__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

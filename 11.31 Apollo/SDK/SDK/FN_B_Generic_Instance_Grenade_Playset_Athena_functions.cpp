@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_Generic_Instance_Grenade_Playset_Athena.B_Generic_Instance_Grenade_Playset_Athena_C
+// (Actor)
+
+class UClass* AB_Generic_Instance_Grenade_Playset_Athena_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Generic_Instance_Grenade_Playset_Athena_C");
+
+	return Clss;
+}
+
+
+// B_Generic_Instance_Grenade_Playset_Athena_C B_Generic_Instance_Grenade_Playset_Athena.Default__B_Generic_Instance_Grenade_Playset_Athena_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Generic_Instance_Grenade_Playset_Athena_C* AB_Generic_Instance_Grenade_Playset_Athena_C::GetDefaultObj()
+{
+	static class AB_Generic_Instance_Grenade_Playset_Athena_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Generic_Instance_Grenade_Playset_Athena_C*>(AB_Generic_Instance_Grenade_Playset_Athena_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_Generic_Instance_Grenade_Playset_Athena.B_Generic_Instance_Grenade_Playset_Athena_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void AB_Generic_Instance_Grenade_Playset_Athena_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Generic_Instance_Grenade_Playset_Athena_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Generic_Instance_Grenade_Playset_Athena_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Generic_Instance_Grenade_Playset_Athena_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AB_Generic_Instance_Grenade_Playset_Athena_C::ReceiveBeginPlay()
 
 void AB_Generic_Instance_Grenade_Playset_Athena_C::K2_OnUnEquip()
 {
-	static auto Func = Class->GetFunction("B_Generic_Instance_Grenade_Playset_Athena_C", "K2_OnUnEquip");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Generic_Instance_Grenade_Playset_Athena_C_K2_OnUnEquip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Generic_Instance_Grenade_Playset_Athena_C", "K2_OnUnEquip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void AB_Generic_Instance_Grenade_Playset_Athena_C::K2_OnUnEquip()
 
 void AB_Generic_Instance_Grenade_Playset_Athena_C::OnWeaponAttached()
 {
-	static auto Func = Class->GetFunction("B_Generic_Instance_Grenade_Playset_Athena_C", "OnWeaponAttached");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Generic_Instance_Grenade_Playset_Athena_C_OnWeaponAttached_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Generic_Instance_Grenade_Playset_Athena_C", "OnWeaponAttached");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -70,9 +101,12 @@ void AB_Generic_Instance_Grenade_Playset_Athena_C::OnWeaponAttached()
 
 void AB_Generic_Instance_Grenade_Playset_Athena_C::ExecuteUbergraph_B_Generic_Instance_Grenade_Playset_Athena(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("B_Generic_Instance_Grenade_Playset_Athena_C", "ExecuteUbergraph_B_Generic_Instance_Grenade_Playset_Athena");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Generic_Instance_Grenade_Playset_Athena_C_ExecuteUbergraph_B_Generic_Instance_Grenade_Playset_Athena_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Generic_Instance_Grenade_Playset_Athena_C", "ExecuteUbergraph_B_Generic_Instance_Grenade_Playset_Athena");
+
+	Params::AB_Generic_Instance_Grenade_Playset_Athena_C_ExecuteUbergraph_B_Generic_Instance_Grenade_Playset_Athena_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -82,6 +116,4 @@ void AB_Generic_Instance_Grenade_Playset_Athena_C::ExecuteUbergraph_B_Generic_In
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

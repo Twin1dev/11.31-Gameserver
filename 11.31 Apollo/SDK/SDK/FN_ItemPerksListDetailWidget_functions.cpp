@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ItemPerksListDetailWidget.ItemPerksListDetailWidget_C
+// (None)
+
+class UClass* UItemPerksListDetailWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemPerksListDetailWidget_C");
+
+	return Clss;
+}
+
+
+// ItemPerksListDetailWidget_C ItemPerksListDetailWidget.Default__ItemPerksListDetailWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemPerksListDetailWidget_C* UItemPerksListDetailWidget_C::GetDefaultObj()
+{
+	static class UItemPerksListDetailWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemPerksListDetailWidget_C*>(UItemPerksListDetailWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ItemPerksListDetailWidget.ItemPerksListDetailWidget_C.SetState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UItemPerksListDetailWidget_C::SetState(enum class EFortPerksWidgetState InState, class UFortHero* InEvolutionOption)
 {
-	static auto Func = Class->GetFunction("ItemPerksListDetailWidget_C", "SetState");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPerksListDetailWidget_C_SetState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPerksListDetailWidget_C", "SetState");
+
+	Params::UItemPerksListDetailWidget_C_SetState_Params Parms{};
 
 	Parms.InState = InState;
 	Parms.InEvolutionOption = InEvolutionOption;
@@ -41,12 +69,14 @@ void UItemPerksListDetailWidget_C::SetState(enum class EFortPerksWidgetState InS
 
 void UItemPerksListDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto Func = Class->GetFunction("ItemPerksListDetailWidget_C", "HandlePostDifferentItemToDetailSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPerksListDetailWidget_C_HandlePostDifferentItemToDetailSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPerksListDetailWidget_C", "HandlePostDifferentItemToDetailSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,12 +87,14 @@ void UItemPerksListDetailWidget_C::HandlePostDifferentItemToDetailSet()
 
 void UItemPerksListDetailWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("ItemPerksListDetailWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPerksListDetailWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPerksListDetailWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -76,9 +108,12 @@ void UItemPerksListDetailWidget_C::Construct()
 
 void UItemPerksListDetailWidget_C::ExecuteUbergraph_ItemPerksListDetailWidget(int32 EntryPoint, class UFortHero* K2Node_DynamicCast_AsFort_Hero, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("ItemPerksListDetailWidget_C", "ExecuteUbergraph_ItemPerksListDetailWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPerksListDetailWidget_C_ExecuteUbergraph_ItemPerksListDetailWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPerksListDetailWidget_C", "ExecuteUbergraph_ItemPerksListDetailWidget");
+
+	Params::UItemPerksListDetailWidget_C_ExecuteUbergraph_ItemPerksListDetailWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_DynamicCast_AsFort_Hero = K2Node_DynamicCast_AsFort_Hero;
@@ -90,6 +125,4 @@ void UItemPerksListDetailWidget_C::ExecuteUbergraph_ItemPerksListDetailWidget(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

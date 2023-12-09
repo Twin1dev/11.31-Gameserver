@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass BattlePassScreenReward.BattlePassScreenReward_C
+// (None)
+
+class UClass* UBattlePassScreenReward_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BattlePassScreenReward_C");
+
+	return Clss;
+}
+
+
+// BattlePassScreenReward_C BattlePassScreenReward.Default__BattlePassScreenReward_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBattlePassScreenReward_C* UBattlePassScreenReward_C::GetDefaultObj()
+{
+	static class UBattlePassScreenReward_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBattlePassScreenReward_C*>(UBattlePassScreenReward_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BattlePassScreenReward.BattlePassScreenReward_C.HandleMultiRewardSelectionChange
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UBattlePassScreenReward_C::HandleMultiRewardSelectionChange(bool bIsSelected, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "HandleMultiRewardSelectionChange");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_HandleMultiRewardSelectionChange_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "HandleMultiRewardSelectionChange");
+
+	Params::UBattlePassScreenReward_C_HandleMultiRewardSelectionChange_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
@@ -46,9 +74,12 @@ void UBattlePassScreenReward_C::HandleMultiRewardSelectionChange(bool bIsSelecte
 
 void UBattlePassScreenReward_C::HandleMultiRewardSetup(class UFortItem* RewardItem, TSoftObjectPtr<class UTexture2D>& RewardTexture, bool bHasAdditionalStylesToDisplay, class UHorizontalBoxSlot* CallFunc_SlotAsHorizontalBoxSlot_ReturnValue, class UHorizontalBoxSlot* CallFunc_SlotAsHorizontalBoxSlot_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "HandleMultiRewardSetup");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_HandleMultiRewardSetup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "HandleMultiRewardSetup");
+
+	Params::UBattlePassScreenReward_C_HandleMultiRewardSetup_Params Parms{};
 
 	Parms.RewardItem = RewardItem;
 	Parms.RewardTexture = RewardTexture;
@@ -69,9 +100,12 @@ void UBattlePassScreenReward_C::HandleMultiRewardSetup(class UFortItem* RewardIt
 
 void UBattlePassScreenReward_C::HandleHover(class UMaterialInstanceDynamic* CallFunc_GetDynamicFontMaterial_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "HandleHover");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_HandleHover_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "HandleHover");
+
+	Params::UBattlePassScreenReward_C_HandleHover_Params Parms{};
 
 	Parms.CallFunc_GetDynamicFontMaterial_ReturnValue = CallFunc_GetDynamicFontMaterial_ReturnValue;
 	Parms.CallFunc_PlayAnimationForward_ReturnValue = CallFunc_PlayAnimationForward_ReturnValue;
@@ -89,9 +123,12 @@ void UBattlePassScreenReward_C::HandleHover(class UMaterialInstanceDynamic* Call
 
 void UBattlePassScreenReward_C::HandleUnhover(class UMaterialInstanceDynamic* CallFunc_GetDynamicFontMaterial_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "HandleUnhover");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_HandleUnhover_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "HandleUnhover");
+
+	Params::UBattlePassScreenReward_C_HandleUnhover_Params Parms{};
 
 	Parms.CallFunc_GetDynamicFontMaterial_ReturnValue = CallFunc_GetDynamicFontMaterial_ReturnValue;
 	Parms.CallFunc_PlayAnimationReverse_ReturnValue = CallFunc_PlayAnimationReverse_ReturnValue;
@@ -111,9 +148,12 @@ void UBattlePassScreenReward_C::HandleUnhover(class UMaterialInstanceDynamic* Ca
 
 void UBattlePassScreenReward_C::HandleMultiRewardTickFillAnimation(bool CallFunc_IsValid_ReturnValue, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize, bool CallFunc_IsValid_ReturnValue_1, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize_1)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "HandleMultiRewardTickFillAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_HandleMultiRewardTickFillAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "HandleMultiRewardTickFillAnimation");
+
+	Params::UBattlePassScreenReward_C_HandleMultiRewardTickFillAnimation_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.K2Node_MakeStruct_SlateChildSize = K2Node_MakeStruct_SlateChildSize;
@@ -134,9 +174,12 @@ void UBattlePassScreenReward_C::HandleMultiRewardTickFillAnimation(bool CallFunc
 
 void UBattlePassScreenReward_C::HandleSelectedAnim(class UMaterialInstanceDynamic* CallFunc_GetDynamicFontMaterial_ReturnValue, float CallFunc_GetEndTime_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "HandleSelectedAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_HandleSelectedAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "HandleSelectedAnim");
+
+	Params::UBattlePassScreenReward_C_HandleSelectedAnim_Params Parms{};
 
 	Parms.CallFunc_GetDynamicFontMaterial_ReturnValue = CallFunc_GetDynamicFontMaterial_ReturnValue;
 	Parms.CallFunc_GetEndTime_ReturnValue = CallFunc_GetEndTime_ReturnValue;
@@ -156,9 +199,12 @@ void UBattlePassScreenReward_C::HandleSelectedAnim(class UMaterialInstanceDynami
 
 void UBattlePassScreenReward_C::HandleDeselectedAnim(class UMaterialInstanceDynamic* CallFunc_GetDynamicFontMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicFontMaterial_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "HandleDeselectedAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_HandleDeselectedAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "HandleDeselectedAnim");
+
+	Params::UBattlePassScreenReward_C_HandleDeselectedAnim_Params Parms{};
 
 	Parms.CallFunc_GetDynamicFontMaterial_ReturnValue = CallFunc_GetDynamicFontMaterial_ReturnValue;
 	Parms.CallFunc_GetDynamicFontMaterial_ReturnValue_1 = CallFunc_GetDynamicFontMaterial_ReturnValue_1;
@@ -195,9 +241,12 @@ void UBattlePassScreenReward_C::HandleDeselectedAnim(class UMaterialInstanceDyna
 
 void UBattlePassScreenReward_C::HandleCompletionState(bool bIsFree, bool bOwnsBattlePass, int32 TierLevel, int32 CurrentSeasonLevel, class UMaterialInterface* Temp_object_Variable, bool CallFunc_LessEqual_IntInt_ReturnValue, bool CallFunc_EqualEqual_BoolBool_ReturnValue, bool CallFunc_EqualEqual_BoolBool_ReturnValue_1, class UMaterialInterface* Temp_object_Variable_1, bool CallFunc_BooleanAND_ReturnValue, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility K2Node_Select_Default_1, bool Temp_bool_Variable_2, class UMaterialInterface* K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "HandleCompletionState");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_HandleCompletionState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "HandleCompletionState");
+
+	Params::UBattlePassScreenReward_C_HandleCompletionState_Params Parms{};
 
 	Parms.bIsFree = bIsFree;
 	Parms.bOwnsBattlePass = bOwnsBattlePass;
@@ -237,9 +286,12 @@ void UBattlePassScreenReward_C::HandleCompletionState(bool bIsFree, bool bOwnsBa
 
 void UBattlePassScreenReward_C::HandleFreeTagVisibility(bool bIsFreeItem, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "HandleFreeTagVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_HandleFreeTagVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "HandleFreeTagVisibility");
+
+	Params::UBattlePassScreenReward_C_HandleFreeTagVisibility_Params Parms{};
 
 	Parms.bIsFreeItem = bIsFreeItem;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -259,12 +311,14 @@ void UBattlePassScreenReward_C::HandleFreeTagVisibility(bool bIsFreeItem, enum c
 
 void UBattlePassScreenReward_C::HandleSecondaryRewardVisiblity()
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "HandleSecondaryRewardVisiblity");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_HandleSecondaryRewardVisiblity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "HandleSecondaryRewardVisiblity");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -282,9 +336,12 @@ void UBattlePassScreenReward_C::HandleSecondaryRewardVisiblity()
 
 void UBattlePassScreenReward_C::HandleProgressBar(float ProgressAmount, bool bIsLastEntry, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "HandleProgressBar");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_HandleProgressBar_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "HandleProgressBar");
+
+	Params::UBattlePassScreenReward_C_HandleProgressBar_Params Parms{};
 
 	Parms.ProgressAmount = ProgressAmount;
 	Parms.bIsLastEntry = bIsLastEntry;
@@ -305,7 +362,7 @@ void UBattlePassScreenReward_C::HandleProgressBar(float ProgressAmount, bool bIs
 // bool                               bIsCompletedLevel                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              TierLevel                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // struct FLinearColor                Temp_struct_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                Temp_struct_Variable_1                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -322,9 +379,12 @@ void UBattlePassScreenReward_C::HandleProgressBar(float ProgressAmount, bool bIs
 
 void UBattlePassScreenReward_C::HandleLevelNumberStyling(bool bIsCompletedLevel, int32 TierLevel, bool Temp_bool_Variable, class FText CallFunc_Conv_IntToText_ReturnValue, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, bool Temp_bool_Variable_1, const struct FLinearColor& K2Node_Select_Default, const struct FLinearColor& Temp_struct_Variable_2, const struct FLinearColor& Temp_struct_Variable_3, const struct FLinearColor& K2Node_Select_Default_1, const struct FLinearColor& Temp_struct_Variable_4, const struct FLinearColor& Temp_struct_Variable_5, bool Temp_bool_Variable_2, class UMaterialInstanceDynamic* CallFunc_GetDynamicFontMaterial_ReturnValue, const struct FLinearColor& K2Node_Select_Default_2, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "HandleLevelNumberStyling");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_HandleLevelNumberStyling_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "HandleLevelNumberStyling");
+
+	Params::UBattlePassScreenReward_C_HandleLevelNumberStyling_Params Parms{};
 
 	Parms.bIsCompletedLevel = bIsCompletedLevel;
 	Parms.TierLevel = TierLevel;
@@ -357,9 +417,12 @@ void UBattlePassScreenReward_C::HandleLevelNumberStyling(bool bIsCompletedLevel,
 
 void UBattlePassScreenReward_C::SelectReward(class UAthenaSeasonItemRewardIcon_C* RewardIcon, bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "SelectReward");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_SelectReward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "SelectReward");
+
+	Params::UBattlePassScreenReward_C_SelectReward_Params Parms{};
 
 	Parms.RewardIcon = RewardIcon;
 	Parms.bIsSelected = bIsSelected;
@@ -400,9 +463,12 @@ void UBattlePassScreenReward_C::SelectReward(class UAthenaSeasonItemRewardIcon_C
 
 void UBattlePassScreenReward_C::PopulateRewardData(int32 TierLevel, bool IsFree, bool OwnsBattlePass, int32 CurrentSeasonLevel, bool Temp_bool_Variable, bool CallFunc_LessEqual_IntInt_ReturnValue, bool CallFunc_EqualEqual_BoolBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, bool Temp_bool_Variable_1, const struct FLinearColor& K2Node_Select_Default, const struct FLinearColor& Temp_struct_Variable_2, const struct FLinearColor& Temp_struct_Variable_3, bool Temp_bool_Variable_2, const struct FLinearColor& K2Node_Select_Default_1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, const struct FLinearColor& Temp_struct_Variable_4, enum class ESlateVisibility K2Node_Select_Default_2, const struct FLinearColor& Temp_struct_Variable_5, bool Temp_bool_Variable_3, const struct FLinearColor& K2Node_Select_Default_3, class UMaterialInstanceDynamic* CallFunc_GetDynamicFontMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "PopulateRewardData");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_PopulateRewardData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "PopulateRewardData");
+
+	Params::UBattlePassScreenReward_C_PopulateRewardData_Params Parms{};
 
 	Parms.TierLevel = TierLevel;
 	Parms.IsFree = IsFree;
@@ -451,9 +517,12 @@ void UBattlePassScreenReward_C::PopulateRewardData(int32 TierLevel, bool IsFree,
 
 void UBattlePassScreenReward_C::OnSetReward(class UFortItem* InReward, int32 TierLevel, float TierProgress, bool bIsLastEntry, bool bHasAdditionalStylesToDisplay, TSoftObjectPtr<class UTexture2D>& RewardTexture, bool bIsFreeItem, bool bOwnsBattlePass, int32 SeasonLevel, bool bIsFirstEntry)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "OnSetReward");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_OnSetReward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "OnSetReward");
+
+	Params::UBattlePassScreenReward_C_OnSetReward_Params Parms{};
 
 	Parms.InReward = InReward;
 	Parms.TierLevel = TierLevel;
@@ -477,12 +546,14 @@ void UBattlePassScreenReward_C::OnSetReward(class UFortItem* InReward, int32 Tie
 
 void UBattlePassScreenReward_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "BP_OnSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_BP_OnSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "BP_OnSelected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -493,12 +564,14 @@ void UBattlePassScreenReward_C::BP_OnSelected()
 
 void UBattlePassScreenReward_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "BP_OnDeselected");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_BP_OnDeselected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "BP_OnDeselected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -509,12 +582,14 @@ void UBattlePassScreenReward_C::BP_OnDeselected()
 
 void UBattlePassScreenReward_C::Construct()
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -526,9 +601,12 @@ void UBattlePassScreenReward_C::Construct()
 
 void UBattlePassScreenReward_C::FadeOutSocialUser(bool bCallback)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "FadeOutSocialUser");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_FadeOutSocialUser_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "FadeOutSocialUser");
+
+	Params::UBattlePassScreenReward_C_FadeOutSocialUser_Params Parms{};
 
 	Parms.bCallback = bCallback;
 
@@ -543,12 +621,14 @@ void UBattlePassScreenReward_C::FadeOutSocialUser(bool bCallback)
 
 void UBattlePassScreenReward_C::FadeInSocialUser()
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "FadeInSocialUser");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_FadeInSocialUser_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "FadeInSocialUser");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -560,9 +640,12 @@ void UBattlePassScreenReward_C::FadeInSocialUser()
 
 void UBattlePassScreenReward_C::SetSocialPlayerProgress(float Progress)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "SetSocialPlayerProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_SetSocialPlayerProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "SetSocialPlayerProgress");
+
+	Params::UBattlePassScreenReward_C_SetSocialPlayerProgress_Params Parms{};
 
 	Parms.Progress = Progress;
 
@@ -579,9 +662,12 @@ void UBattlePassScreenReward_C::SetSocialPlayerProgress(float Progress)
 
 void UBattlePassScreenReward_C::OnLoadSocialIcon(bool bSuccess, class UTexture2D* Texture)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "OnLoadSocialIcon");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_OnLoadSocialIcon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "OnLoadSocialIcon");
+
+	Params::UBattlePassScreenReward_C_OnLoadSocialIcon_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 	Parms.Texture = Texture;
@@ -603,9 +689,12 @@ void UBattlePassScreenReward_C::OnLoadSocialIcon(bool bSuccess, class UTexture2D
 
 void UBattlePassScreenReward_C::OnSetRotatingReward(class UFortItem* InReward, bool bHasAdditionalStylesToDisplay, TSoftObjectPtr<class UTexture2D>& RewardTexture, bool bIsFreeItem, bool bOwnsBattlePass, int32 SeasonLevel)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "OnSetRotatingReward");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_OnSetRotatingReward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "OnSetRotatingReward");
+
+	Params::UBattlePassScreenReward_C_OnSetRotatingReward_Params Parms{};
 
 	Parms.InReward = InReward;
 	Parms.bHasAdditionalStylesToDisplay = bHasAdditionalStylesToDisplay;
@@ -626,9 +715,12 @@ void UBattlePassScreenReward_C::OnSetRotatingReward(class UFortItem* InReward, b
 
 void UBattlePassScreenReward_C::OnRotateReward(int32 Index)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "OnRotateReward");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_OnRotateReward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "OnRotateReward");
+
+	Params::UBattlePassScreenReward_C_OnRotateReward_Params Parms{};
 
 	Parms.Index = Index;
 
@@ -645,9 +737,12 @@ void UBattlePassScreenReward_C::OnRotateReward(int32 Index)
 
 void UBattlePassScreenReward_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "Tick");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_Tick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "Tick");
+
+	Params::UBattlePassScreenReward_C_Tick_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InDeltaTime = InDeltaTime;
@@ -663,12 +758,14 @@ void UBattlePassScreenReward_C::Tick(const struct FGeometry& MyGeometry, float I
 
 void UBattlePassScreenReward_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -679,12 +776,14 @@ void UBattlePassScreenReward_C::BP_OnUnhovered()
 
 void UBattlePassScreenReward_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -738,9 +837,12 @@ void UBattlePassScreenReward_C::BP_OnHovered()
 
 void UBattlePassScreenReward_C::ExecuteUbergraph_BattlePassScreenReward(int32 EntryPoint, class UFortItem* K2Node_Event_InReward_1, int32 K2Node_Event_TierLevel, float K2Node_Event_TierProgress, bool K2Node_Event_bIsLastEntry, bool K2Node_Event_bHasAdditionalStylesToDisplay_1, TSoftObjectPtr<class UTexture2D> K2Node_Event_RewardTexture_1, bool K2Node_Event_bIsFreeItem_1, bool K2Node_Event_bOwnsBattlePass_1, int32 K2Node_Event_SeasonLevel_1, bool K2Node_Event_bIsFirstEntry, bool K2Node_Event_bCallback, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float K2Node_Event_Progress, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, float CallFunc_Lerp_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, bool K2Node_Event_bSuccess, class UTexture2D* K2Node_Event_Texture, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UFortItem* K2Node_Event_InReward, bool K2Node_Event_bHasAdditionalStylesToDisplay, TSoftObjectPtr<class UTexture2D> K2Node_Event_RewardTexture, bool K2Node_Event_bIsFreeItem, bool K2Node_Event_bOwnsBattlePass, int32 K2Node_Event_SeasonLevel, int32 K2Node_Event_Index, bool CallFunc_EqualEqual_IntInt_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_2, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, enum class ESlateVisibility K2Node_Select_Default, class UAthenaSeasonItemRewardIcon_C* K2Node_Select_Default_1, bool CallFunc_LessEqual_IntInt_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("BattlePassScreenReward_C", "ExecuteUbergraph_BattlePassScreenReward");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreenReward_C", "ExecuteUbergraph_BattlePassScreenReward");
+
+	Params::UBattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_InReward_1 = K2Node_Event_InReward_1;
@@ -792,6 +894,4 @@ void UBattlePassScreenReward_C::ExecuteUbergraph_BattlePassScreenReward(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

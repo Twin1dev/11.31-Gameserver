@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass BattlePassScreen.BattlePassScreen_C
+// (None)
+
+class UClass* UBattlePassScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BattlePassScreen_C");
+
+	return Clss;
+}
+
+
+// BattlePassScreen_C BattlePassScreen.Default__BattlePassScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBattlePassScreen_C* UBattlePassScreen_C::GetDefaultObj()
+{
+	static class UBattlePassScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBattlePassScreen_C*>(UBattlePassScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BattlePassScreen.BattlePassScreen_C.RevealRightSideActions
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UBattlePassScreen_C::RevealRightSideActions(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "RevealRightSideActions");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_RevealRightSideActions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "RevealRightSideActions");
+
+	Params::UBattlePassScreen_C_RevealRightSideActions_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -40,9 +68,12 @@ void UBattlePassScreen_C::RevealRightSideActions(class UUMGSequencePlayer* CallF
 
 void UBattlePassScreen_C::HideRightSideActions(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "HideRightSideActions");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_HideRightSideActions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "HideRightSideActions");
+
+	Params::UBattlePassScreen_C_HideRightSideActions_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -60,9 +91,12 @@ void UBattlePassScreen_C::HideRightSideActions(class UUMGSequencePlayer* CallFun
 
 void UBattlePassScreen_C::HandleShowVariantCycleLabel(bool bShowCycleLabel, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "HandleShowVariantCycleLabel");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_HandleShowVariantCycleLabel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "HandleShowVariantCycleLabel");
+
+	Params::UBattlePassScreen_C_HandleShowVariantCycleLabel_Params Parms{};
 
 	Parms.bShowCycleLabel = bShowCycleLabel;
 	Parms.CallFunc_PlayAnimationReverse_ReturnValue = CallFunc_PlayAnimationReverse_ReturnValue;
@@ -93,9 +127,12 @@ void UBattlePassScreen_C::HandleShowVariantCycleLabel(bool bShowCycleLabel, clas
 
 void UBattlePassScreen_C::HandleOffscreenIndicatorAnimations(int32 LeftFriendCount, int32 RightFriendCount, bool CallFunc_EqualEqual_IntInt_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue_1, enum class ESlateVisibility CallFunc_GetVisibility_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, enum class ESlateVisibility CallFunc_GetVisibility_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "HandleOffscreenIndicatorAnimations");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_HandleOffscreenIndicatorAnimations_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "HandleOffscreenIndicatorAnimations");
+
+	Params::UBattlePassScreen_C_HandleOffscreenIndicatorAnimations_Params Parms{};
 
 	Parms.LeftFriendCount = LeftFriendCount;
 	Parms.RightFriendCount = RightFriendCount;
@@ -139,9 +176,12 @@ void UBattlePassScreen_C::HandleOffscreenIndicatorAnimations(int32 LeftFriendCou
 
 void UBattlePassScreen_C::HandleRewardTimelineAnimation(bool bAnimateRewardTimeline, float Temp_float_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable, enum class EUMGSequencePlayMode Temp_byte_Variable, enum class EUMGSequencePlayMode Temp_byte_Variable_1, enum class EUMGSequencePlayMode K2Node_Select_Default, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, bool Temp_bool_Variable_1, enum class ESlateVisibility CallFunc_GetVisibility_ReturnValue, float K2Node_Select_Default_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "HandleRewardTimelineAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_HandleRewardTimelineAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "HandleRewardTimelineAnimation");
+
+	Params::UBattlePassScreen_C_HandleRewardTimelineAnimation_Params Parms{};
 
 	Parms.bAnimateRewardTimeline = bAnimateRewardTimeline;
 	Parms.Temp_float_Variable = Temp_float_Variable;
@@ -180,9 +220,12 @@ void UBattlePassScreen_C::HandleRewardTimelineAnimation(bool bAnimateRewardTimel
 
 void UBattlePassScreen_C::HandleWatchVideoRequest(bool PlayFromDisc, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_UseElectraForWatchBattlePassMovie_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UActivatableMovieWidget_Monolithic_C* CallFunc_Create_ReturnValue, bool CallFunc_LoadStreamingVideo_NoAutoPlay, class UFortStreamMediaSource* CallFunc_LoadStreamingVideo_MediaSource)
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "HandleWatchVideoRequest");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_HandleWatchVideoRequest_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "HandleWatchVideoRequest");
+
+	Params::UBattlePassScreen_C_HandleWatchVideoRequest_Params Parms{};
 
 	Parms.PlayFromDisc = PlayFromDisc;
 	Parms.CallFunc_GetRuntimeOptions_ReturnValue = CallFunc_GetRuntimeOptions_ReturnValue;
@@ -212,13 +255,16 @@ void UBattlePassScreen_C::HandleWatchVideoRequest(bool PlayFromDisc, class UFort
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 void UBattlePassScreen_C::HandleViewReward(bool bInNoReward, int32 InNumRewardsToPurchase, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class USimpleFeatured_YellowButton_C* K2Node_DynamicCast_AsSimple_Featured_Yellow_Button, bool K2Node_DynamicCast_bSuccess, enum class ESlateVisibility K2Node_Select_Default, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "HandleViewReward");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_HandleViewReward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "HandleViewReward");
+
+	Params::UBattlePassScreen_C_HandleViewReward_Params Parms{};
 
 	Parms.bInNoReward = bInNoReward;
 	Parms.InNumRewardsToPurchase = InNumRewardsToPurchase;
@@ -246,9 +292,12 @@ void UBattlePassScreen_C::HandleViewReward(bool bInNoReward, int32 InNumRewardsT
 
 void UBattlePassScreen_C::HandleOnViewReward(const struct FFortRarityItemData& Rarity, bool bNoReward, int32 NumRewardsToPurchase)
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "HandleOnViewReward");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_HandleOnViewReward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "HandleOnViewReward");
+
+	Params::UBattlePassScreen_C_HandleOnViewReward_Params Parms{};
 
 	Parms.Rarity = Rarity;
 	Parms.bNoReward = bNoReward;
@@ -270,9 +319,12 @@ void UBattlePassScreen_C::HandleOnViewReward(const struct FFortRarityItemData& R
 
 void UBattlePassScreen_C::OnSetupPurchaseSeasonLevel(TMap<int32, class UFortSeasonPassLevelInfo*>& SeasonLevelInfos, class UAthenaSeasonItemDefinition* CurrentSeasonData, class UFortSeasonPassLevelInfo* CurrentLevel, int32 MaxLevelToPurchase, int32 LevelToBePurchased)
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "OnSetupPurchaseSeasonLevel");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_OnSetupPurchaseSeasonLevel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "OnSetupPurchaseSeasonLevel");
+
+	Params::UBattlePassScreen_C_OnSetupPurchaseSeasonLevel_Params Parms{};
 
 	Parms.SeasonLevelInfos = SeasonLevelInfos;
 	Parms.CurrentSeasonData = CurrentSeasonData;
@@ -293,9 +345,12 @@ void UBattlePassScreen_C::OnSetupPurchaseSeasonLevel(TMap<int32, class UFortSeas
 
 void UBattlePassScreen_C::HandleOnUpdatedVisibleFriendCount(int32 LeftFriendCount, int32 RightFriendCount)
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "HandleOnUpdatedVisibleFriendCount");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_HandleOnUpdatedVisibleFriendCount_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "HandleOnUpdatedVisibleFriendCount");
+
+	Params::UBattlePassScreen_C_HandleOnUpdatedVisibleFriendCount_Params Parms{};
 
 	Parms.LeftFriendCount = LeftFriendCount;
 	Parms.RightFriendCount = RightFriendCount;
@@ -311,12 +366,14 @@ void UBattlePassScreen_C::HandleOnUpdatedVisibleFriendCount(int32 LeftFriendCoun
 
 void UBattlePassScreen_C::OnHandleReplayCinematic()
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "OnHandleReplayCinematic");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_OnHandleReplayCinematic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "OnHandleReplayCinematic");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -327,12 +384,14 @@ void UBattlePassScreen_C::OnHandleReplayCinematic()
 
 void UBattlePassScreen_C::OnHandleAboutBattlePass()
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "OnHandleAboutBattlePass");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_OnHandleAboutBattlePass_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "OnHandleAboutBattlePass");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -343,12 +402,14 @@ void UBattlePassScreen_C::OnHandleAboutBattlePass()
 
 void UBattlePassScreen_C::OnHandleWatchVideo()
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "OnHandleWatchVideo");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_OnHandleWatchVideo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "OnHandleWatchVideo");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -359,12 +420,14 @@ void UBattlePassScreen_C::OnHandleWatchVideo()
 
 void UBattlePassScreen_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -375,12 +438,14 @@ void UBattlePassScreen_C::BP_OnActivated()
 
 void UBattlePassScreen_C::OnHandleViewAllRewards()
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "OnHandleViewAllRewards");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_OnHandleViewAllRewards_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "OnHandleViewAllRewards");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -391,12 +456,14 @@ void UBattlePassScreen_C::OnHandleViewAllRewards()
 
 void UBattlePassScreen_C::OnRequestViewReward()
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "OnRequestViewReward");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_OnRequestViewReward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "OnRequestViewReward");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -407,12 +474,14 @@ void UBattlePassScreen_C::OnRequestViewReward()
 
 void UBattlePassScreen_C::OnRequestViewRewardComplete()
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "OnRequestViewRewardComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_OnRequestViewRewardComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "OnRequestViewRewardComplete");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -425,9 +494,12 @@ void UBattlePassScreen_C::OnRequestViewRewardComplete()
 
 void UBattlePassScreen_C::OnVariantUpdate(int32 CurrentIndex, int32 TotalNumVariants)
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "OnVariantUpdate");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_OnVariantUpdate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "OnVariantUpdate");
+
+	Params::UBattlePassScreen_C_OnVariantUpdate_Params Parms{};
 
 	Parms.CurrentIndex = CurrentIndex;
 	Parms.TotalNumVariants = TotalNumVariants;
@@ -444,9 +516,12 @@ void UBattlePassScreen_C::OnVariantUpdate(int32 CurrentIndex, int32 TotalNumVari
 
 void UBattlePassScreen_C::OnBattlePassViewChanged(enum class EBattlePassView NewView)
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "OnBattlePassViewChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_OnBattlePassViewChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "OnBattlePassViewChanged");
+
+	Params::UBattlePassScreen_C_OnBattlePassViewChanged_Params Parms{};
 
 	Parms.NewView = NewView;
 
@@ -463,9 +538,12 @@ void UBattlePassScreen_C::OnBattlePassViewChanged(enum class EBattlePassView New
 
 void UBattlePassScreen_C::OnSetGiftButtonLabel(class FText& MainLabel, class FText& PriceText)
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "OnSetGiftButtonLabel");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_OnSetGiftButtonLabel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "OnSetGiftButtonLabel");
+
+	Params::UBattlePassScreen_C_OnSetGiftButtonLabel_Params Parms{};
 
 	Parms.MainLabel = MainLabel;
 	Parms.PriceText = PriceText;
@@ -482,9 +560,12 @@ void UBattlePassScreen_C::OnSetGiftButtonLabel(class FText& MainLabel, class FTe
 
 void UBattlePassScreen_C::OnSetPurchasedAnnualPass(bool bIsPurchased)
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "OnSetPurchasedAnnualPass");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_OnSetPurchasedAnnualPass_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "OnSetPurchasedAnnualPass");
+
+	Params::UBattlePassScreen_C_OnSetPurchasedAnnualPass_Params Parms{};
 
 	Parms.bIsPurchased = bIsPurchased;
 
@@ -510,7 +591,7 @@ void UBattlePassScreen_C::OnSetPurchasedAnnualPass(bool bIsPurchased)
 // bool                               Temp_bool_True_if_break_was_hit_Variable_1                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              Temp_int_Array_Index_Variable_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortRarityItemData         K2Node_Event_Rarity                                              ()
+// struct FFortRarityItemData         K2Node_Event_Rarity                                              (None)
 // bool                               K2Node_Event_bNoReward                                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              K2Node_Event_NumRewardsToPurchase                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TMap<int32, class UFortSeasonPassLevelInfo*>K2Node_Event_SeasonLevelInfos                                    (ConstParm, ZeroConstructor)
@@ -534,7 +615,7 @@ void UBattlePassScreen_C::OnSetPurchasedAnnualPass(bool bIsPurchased)
 // int32                              CallFunc_Add_IntInt_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EBattlePassView         K2Node_Event_NewView                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -564,9 +645,12 @@ void UBattlePassScreen_C::OnSetPurchasedAnnualPass(bool bIsPurchased)
 
 void UBattlePassScreen_C::ExecuteUbergraph_BattlePassScreen(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, int32 Temp_int_Array_Index_Variable, bool Temp_bool_True_if_break_was_hit_Variable, bool CallFunc_Not_PreBool_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_3, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool Temp_bool_True_if_break_was_hit_Variable_1, int32 Temp_int_Array_Index_Variable_1, bool CallFunc_Not_PreBool_ReturnValue_1, const struct FFortRarityItemData& K2Node_Event_Rarity, bool K2Node_Event_bNoReward, int32 K2Node_Event_NumRewardsToPurchase, TMap<int32, class UFortSeasonPassLevelInfo*> K2Node_Event_SeasonLevelInfos, class UAthenaSeasonItemDefinition* K2Node_Event_CurrentSeasonData, class UFortSeasonPassLevelInfo* K2Node_Event_CurrentLevel, int32 K2Node_Event_MaxLevelToPurchase, int32 K2Node_Event_LevelToBePurchased, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, int32 K2Node_Event_LeftFriendCount, int32 K2Node_Event_RightFriendCount, class UAthenaSeasonLevelConfirmationScreen_C* CallFunc_Create_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_1, class UAthenaSeasonAboutWidget_C* CallFunc_Create_ReturnValue_1, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_2, class UBattlePassViewRewardsScreen_C* CallFunc_Create_ReturnValue_2, int32 K2Node_Event_CurrentIndex, int32 K2Node_Event_TotalNumVariants, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, bool CallFunc_Greater_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, bool Temp_bool_Variable_1, enum class EBattlePassView K2Node_Event_NewView, bool K2Node_SwitchEnum_CmpSuccess, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, class USimpleFeatured_YellowButton_C* K2Node_DynamicCast_AsSimple_Featured_Yellow_Button, bool K2Node_DynamicCast_bSuccess, enum class ESlateVisibility K2Node_Select_Default, class FText K2Node_Event_MainLabel, class FText K2Node_Event_PriceText, TArray<class AVaultWorld_C*>& CallFunc_GetAllActorsOfClass_OutActors, TArray<class AFrontendCamera_VaultRotator_C*>& CallFunc_GetAllActorsOfClass_OutActors_1, class AVaultWorld_C* CallFunc_Array_Get_Item, class AFrontendCamera_VaultRotator_C* CallFunc_Array_Get_Item_1, class AVaultRotator_C* CallFunc_GetVaultRotator_VaultRotator, bool CallFunc_ActorHasTag_ReturnValue, bool CallFunc_ActorHasTag_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable_1, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_2, bool K2Node_Event_bIsPurchased, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("BattlePassScreen_C", "ExecuteUbergraph_BattlePassScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassScreen_C_ExecuteUbergraph_BattlePassScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassScreen_C", "ExecuteUbergraph_BattlePassScreen");
+
+	Params::UBattlePassScreen_C_ExecuteUbergraph_BattlePassScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -640,6 +724,4 @@ void UBattlePassScreen_C::ExecuteUbergraph_BattlePassScreen(int32 EntryPoint, en
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

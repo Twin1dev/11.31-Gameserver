@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BulletWhipTrackerComponent.BulletWhipTrackerComponent_C
+// (None)
+
+class UClass* UBulletWhipTrackerComponent_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BulletWhipTrackerComponent_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// BulletWhipTrackerComponent_C BulletWhipTrackerComponent.Default__BulletWhipTrackerComponent_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBulletWhipTrackerComponent_C* UBulletWhipTrackerComponent_C::GetDefaultObj()
+{
+	static class UBulletWhipTrackerComponent_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBulletWhipTrackerComponent_C*>(UBulletWhipTrackerComponent_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

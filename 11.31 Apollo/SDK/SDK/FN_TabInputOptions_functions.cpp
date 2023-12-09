@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,20 +12,51 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TabInputOptions.TabInputOptions_C
+// (None)
+
+class UClass* UTabInputOptions_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TabInputOptions_C");
+
+	return Clss;
+}
+
+
+// TabInputOptions_C TabInputOptions.Default__TabInputOptions_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTabInputOptions_C* UTabInputOptions_C::GetDefaultObj()
+{
+	static class UTabInputOptions_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTabInputOptions_C*>(UTabInputOptions_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TabInputOptions.TabInputOptions_C.SetupDisplayOption
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                              InputIndex                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UOptionsMenuInputDisplayOnly_C*ReturnObject                                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetBoundKeyNameBP_ReturnValue                           ()
-// class FText                        CallFunc_GetBoundKeyNameBP_ReturnValue_1                         ()
-// class FText                        CallFunc_GetInputDisplayTextBP_ReturnValue                       ()
+// class FText                        CallFunc_GetBoundKeyNameBP_ReturnValue                           (None)
+// class FText                        CallFunc_GetBoundKeyNameBP_ReturnValue_1                         (None)
+// class FText                        CallFunc_GetInputDisplayTextBP_ReturnValue                       (None)
 
 void UTabInputOptions_C::SetupDisplayOption(int32 InputIndex, class UOptionsMenuInputDisplayOnly_C** ReturnObject, class FText CallFunc_GetBoundKeyNameBP_ReturnValue, class FText CallFunc_GetBoundKeyNameBP_ReturnValue_1, class FText CallFunc_GetInputDisplayTextBP_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "SetupDisplayOption");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_SetupDisplayOption_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "SetupDisplayOption");
+
+	Params::UTabInputOptions_C_SetupDisplayOption_Params Parms{};
 
 	Parms.InputIndex = InputIndex;
 	Parms.CallFunc_GetBoundKeyNameBP_ReturnValue = CallFunc_GetBoundKeyNameBP_ReturnValue;
@@ -58,9 +86,12 @@ void UTabInputOptions_C::SetupDisplayOption(int32 InputIndex, class UOptionsMenu
 
 void UTabInputOptions_C::Set_Input_Enabled(bool Enabled, int32 Temp_int_Variable, class UObject* CallFunc_GetItemAt_ReturnValue, int32 CallFunc_GetNumItems_ReturnValue, class UWidget* CallFunc_GetListWidget_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, class UOptionsMenuInput_C* K2Node_DynamicCast_AsOptions_Menu_Input, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "Set Input Enabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_Set_Input_Enabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "Set Input Enabled");
+
+	Params::UTabInputOptions_C_Set_Input_Enabled_Params Parms{};
 
 	Parms.Enabled = Enabled;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -89,9 +120,12 @@ void UTabInputOptions_C::Set_Input_Enabled(bool Enabled, int32 Temp_int_Variable
 
 void UTabInputOptions_C::Overlay_Key_Pressed(const struct FKey& NewKey, bool CallFunc_EqualEqual_KeyKey_ReturnValue, bool CallFunc_EqualEqual_KeyKey_ReturnValue_1, bool CallFunc_EqualEqual_KeyKey_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "Overlay Key Pressed");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_Overlay_Key_Pressed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "Overlay Key Pressed");
+
+	Params::UTabInputOptions_C_Overlay_Key_Pressed_Params Parms{};
 
 	Parms.NewKey = NewKey;
 	Parms.CallFunc_EqualEqual_KeyKey_ReturnValue = CallFunc_EqualEqual_KeyKey_ReturnValue;
@@ -113,9 +147,12 @@ void UTabInputOptions_C::Overlay_Key_Pressed(const struct FKey& NewKey, bool Cal
 
 void UTabInputOptions_C::DialogResult_018CEC524FAF598D4D7A358441037217(enum class EFortDialogResult Result, class FName ResultName)
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "DialogResult_018CEC524FAF598D4D7A358441037217");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_DialogResult_018CEC524FAF598D4D7A358441037217_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "DialogResult_018CEC524FAF598D4D7A358441037217");
+
+	Params::UTabInputOptions_C_DialogResult_018CEC524FAF598D4D7A358441037217_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.ResultName = ResultName;
@@ -131,12 +168,14 @@ void UTabInputOptions_C::DialogResult_018CEC524FAF598D4D7A358441037217(enum clas
 
 void UTabInputOptions_C::CenterOnTab()
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "CenterOnTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_CenterOnTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "CenterOnTab");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -148,9 +187,12 @@ void UTabInputOptions_C::CenterOnTab()
 
 void UTabInputOptions_C::BndEvt__InputCommonListView_K2Node_ComponentBoundEvent_14_OnListViewItemWidgetCreated__DelegateSignature(class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "BndEvt__InputCommonListView_K2Node_ComponentBoundEvent_14_OnListViewItemWidgetCreated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_BndEvt__InputCommonListView_K2Node_ComponentBoundEvent_14_OnListViewItemWidgetCreated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "BndEvt__InputCommonListView_K2Node_ComponentBoundEvent_14_OnListViewItemWidgetCreated__DelegateSignature");
+
+	Params::UTabInputOptions_C_BndEvt__InputCommonListView_K2Node_ComponentBoundEvent_14_OnListViewItemWidgetCreated__DelegateSignature_Params Parms{};
 
 	Parms.Widget = Widget;
 
@@ -166,9 +208,12 @@ void UTabInputOptions_C::BndEvt__InputCommonListView_K2Node_ComponentBoundEvent_
 
 void UTabInputOptions_C::HandleUsingGamepadChanged(enum class ECommonInputType NewInputType)
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "HandleUsingGamepadChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_HandleUsingGamepadChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "HandleUsingGamepadChanged");
+
+	Params::UTabInputOptions_C_HandleUsingGamepadChanged_Params Parms{};
 
 	Parms.NewInputType = NewInputType;
 
@@ -185,9 +230,12 @@ void UTabInputOptions_C::HandleUsingGamepadChanged(enum class ECommonInputType N
 
 void UTabInputOptions_C::UnbindClicked(int32 Number_In_List, class UOptionsMenuInput_C* Widget)
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "UnbindClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_UnbindClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "UnbindClicked");
+
+	Params::UTabInputOptions_C_UnbindClicked_Params Parms{};
 
 	Parms.Number_In_List = Number_In_List;
 	Parms.Widget = Widget;
@@ -203,12 +251,14 @@ void UTabInputOptions_C::UnbindClicked(int32 Number_In_List, class UOptionsMenuI
 
 void UTabInputOptions_C::ClearAndConstructKeybindList()
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "ClearAndConstructKeybindList");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_ClearAndConstructKeybindList_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "ClearAndConstructKeybindList");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -221,9 +271,12 @@ void UTabInputOptions_C::ClearAndConstructKeybindList()
 
 void UTabInputOptions_C::Input_Clicked(int32 Number_In_List, bool Is_Primary_Button)
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "Input Clicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_Input_Clicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "Input Clicked");
+
+	Params::UTabInputOptions_C_Input_Clicked_Params Parms{};
 
 	Parms.Number_In_List = Number_In_List;
 	Parms.Is_Primary_Button = Is_Primary_Button;
@@ -239,12 +292,14 @@ void UTabInputOptions_C::Input_Clicked(int32 Number_In_List, bool Is_Primary_But
 
 void UTabInputOptions_C::UpdateOptionsTab()
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "UpdateOptionsTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_UpdateOptionsTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "UpdateOptionsTab");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -255,12 +310,14 @@ void UTabInputOptions_C::UpdateOptionsTab()
 
 void UTabInputOptions_C::Construct()
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -272,9 +329,12 @@ void UTabInputOptions_C::Construct()
 
 void UTabInputOptions_C::HandleChangeBinding(const struct FKey& NewKey)
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "HandleChangeBinding");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_HandleChangeBinding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "HandleChangeBinding");
+
+	Params::UTabInputOptions_C_HandleChangeBinding_Params Parms{};
 
 	Parms.NewKey = NewKey;
 
@@ -300,7 +360,7 @@ void UTabInputOptions_C::HandleChangeBinding(const struct FKey& NewKey)
 // class UOptionsMenuInput_C*         K2Node_DynamicCast_AsOptions_Menu_Input_1                        (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ECommonInputType        K2Node_Event_NewInputType                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortDialogResult       K2Node_CustomEvent_Result                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        K2Node_CustomEvent_ResultName                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -335,9 +395,12 @@ void UTabInputOptions_C::HandleChangeBinding(const struct FKey& NewKey)
 
 void UTabInputOptions_C::ExecuteUbergraph_TabInputOptions(int32 EntryPoint, class FName Temp_name_Variable, bool CallFunc_Not_PreBool_ReturnValue, enum class EFortDialogResult Temp_byte_Variable, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UOptionsMenuInputDisplayOnly_C* CallFunc_Create_ReturnValue, class UUserWidget* K2Node_ComponentBoundEvent_Widget, class UObject* CallFunc_GetItemAt_ReturnValue, class UOptionsMenuInput_C* K2Node_DynamicCast_AsOptions_Menu_Input, bool K2Node_DynamicCast_bSuccess, class UWidget* CallFunc_GetListWidget_ReturnValue, class UOptionsMenuInput_C* K2Node_DynamicCast_AsOptions_Menu_Input_1, bool K2Node_DynamicCast_bSuccess_1, enum class ECommonInputType K2Node_Event_NewInputType, class FText CallFunc_MakeLiteralText_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, enum class EFortDialogResult K2Node_CustomEvent_Result, class FName K2Node_CustomEvent_ResultName, bool CallFunc_Not_PreBool_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_Not_PreBool_ReturnValue_2, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, int32 K2Node_CustomEvent_Number_in_List_1, class UOptionsMenuInput_C* K2Node_CustomEvent_Widget, const struct FKey& K2Node_MakeStruct_Key, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, enum class ESlateVisibility Temp_byte_Variable_1, int32 K2Node_CustomEvent_Number_in_List, bool K2Node_CustomEvent_Is_Primary_Button, enum class ESlateVisibility Temp_byte_Variable_2, bool Temp_bool_Variable, const struct FKey& K2Node_CustomEvent_NewKey, enum class ESlateVisibility Temp_byte_Variable_3, const struct FFortActionBeingUnbound& CallFunc_GetActionBeingUnbound_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, class UOptionsMenuInputDisplayOnly_C* CallFunc_SetupDisplayOption_ReturnObject, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue, bool CallFunc_NotEqual_NameName_ReturnValue, bool CallFunc_IsValid_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_4, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "ExecuteUbergraph_TabInputOptions");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_ExecuteUbergraph_TabInputOptions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "ExecuteUbergraph_TabInputOptions");
+
+	Params::UTabInputOptions_C_ExecuteUbergraph_TabInputOptions_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_name_Variable = Temp_name_Variable;
@@ -398,9 +461,12 @@ void UTabInputOptions_C::ExecuteUbergraph_TabInputOptions(int32 EntryPoint, clas
 
 void UTabInputOptions_C::Gamepad_Changed__DelegateSignature(bool Gamepad_Enabled)
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "Gamepad Changed__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_Gamepad_Changed__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "Gamepad Changed__DelegateSignature");
+
+	Params::UTabInputOptions_C_Gamepad_Changed__DelegateSignature_Params Parms{};
 
 	Parms.Gamepad_Enabled = Gamepad_Enabled;
 
@@ -415,12 +481,14 @@ void UTabInputOptions_C::Gamepad_Changed__DelegateSignature(bool Gamepad_Enabled
 
 void UTabInputOptions_C::Disable_Overlay__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "Disable Overlay__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_Disable_Overlay__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "Disable Overlay__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -433,9 +501,12 @@ void UTabInputOptions_C::Disable_Overlay__DelegateSignature()
 
 void UTabInputOptions_C::Enable_Overlay__DelegateSignature(bool Accept_Input, class FText Overlay_Text)
 {
-	static auto Func = Class->GetFunction("TabInputOptions_C", "Enable Overlay__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabInputOptions_C_Enable_Overlay__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabInputOptions_C", "Enable Overlay__DelegateSignature");
+
+	Params::UTabInputOptions_C_Enable_Overlay__DelegateSignature_Params Parms{};
 
 	Parms.Accept_Input = Accept_Input;
 	Parms.Overlay_Text = Overlay_Text;
@@ -446,6 +517,4 @@ void UTabInputOptions_C::Enable_Overlay__DelegateSignature(bool Accept_Input, cl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

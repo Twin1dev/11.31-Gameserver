@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ComDetailsButton_.ComDetailsButton__C
+// (None)
+
+class UClass* UComDetailsButton__C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ComDetailsButton__C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ComDetailsButton__C ComDetailsButton_.Default__ComDetailsButton__C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UComDetailsButton__C* UComDetailsButton__C::GetDefaultObj()
+{
+	static class UComDetailsButton__C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UComDetailsButton__C*>(UComDetailsButton__C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,34 +12,6 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
-
-// 0x0 (0x0 - 0x0)
-// Function InterfacePlayerPawn.InterfacePlayerPawn_C.MeleeSwingLeft_End
-struct IInterfacePlayerPawn_C_MeleeSwingLeft_End_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function InterfacePlayerPawn.InterfacePlayerPawn_C.MeleeSwingRight_End
-struct IInterfacePlayerPawn_C_MeleeSwingRight_End_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function InterfacePlayerPawn.InterfacePlayerPawn_C.FootStepRight
-struct IInterfacePlayerPawn_C_FootStepRight_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function InterfacePlayerPawn.InterfacePlayerPawn_C.FootStepLeft
-struct IInterfacePlayerPawn_C_FootStepLeft_Params
-{
-public:
-};
 
 // 0xC (0xC - 0x0)
 // Function InterfacePlayerPawn.InterfacePlayerPawn_C.Melee_Effect_Color
@@ -71,6 +40,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

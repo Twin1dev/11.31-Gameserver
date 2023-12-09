@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass MinimalSquadMember.MinimalSquadMember_C
+// (None)
+
+class UClass* UMinimalSquadMember_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MinimalSquadMember_C");
+
+	return Clss;
+}
+
+
+// MinimalSquadMember_C MinimalSquadMember.Default__MinimalSquadMember_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMinimalSquadMember_C* UMinimalSquadMember_C::GetDefaultObj()
+{
+	static class UMinimalSquadMember_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMinimalSquadMember_C*>(UMinimalSquadMember_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MinimalSquadMember.MinimalSquadMember_C.SetEmptyVisuals
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UMinimalSquadMember_C::SetEmptyVisuals(class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinimalSquadMember_C", "SetEmptyVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinimalSquadMember_C_SetEmptyVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinimalSquadMember_C", "SetEmptyVisuals");
+
+	Params::UMinimalSquadMember_C_SetEmptyVisuals_Params Parms{};
 
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
 
@@ -40,9 +68,12 @@ void UMinimalSquadMember_C::SetEmptyVisuals(class UMaterialInstanceDynamic* Call
 
 void UMinimalSquadMember_C::SetSitOutVisuals(class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinimalSquadMember_C", "SetSitOutVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinimalSquadMember_C_SetSitOutVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinimalSquadMember_C", "SetSitOutVisuals");
+
+	Params::UMinimalSquadMember_C_SetSitOutVisuals_Params Parms{};
 
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
 
@@ -58,9 +89,12 @@ void UMinimalSquadMember_C::SetSitOutVisuals(class UMaterialInstanceDynamic* Cal
 
 void UMinimalSquadMember_C::SetNotReadyVisuals(class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinimalSquadMember_C", "SetNotReadyVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinimalSquadMember_C_SetNotReadyVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinimalSquadMember_C", "SetNotReadyVisuals");
+
+	Params::UMinimalSquadMember_C_SetNotReadyVisuals_Params Parms{};
 
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
 
@@ -75,12 +109,14 @@ void UMinimalSquadMember_C::SetNotReadyVisuals(class UMaterialInstanceDynamic* C
 
 void UMinimalSquadMember_C::SetReadyVisuals()
 {
-	static auto Func = Class->GetFunction("MinimalSquadMember_C", "SetReadyVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinimalSquadMember_C_SetReadyVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinimalSquadMember_C", "SetReadyVisuals");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -92,9 +128,12 @@ void UMinimalSquadMember_C::SetReadyVisuals()
 
 void UMinimalSquadMember_C::OnMemberGameReadinessChanged(enum class EGameReadiness ReadyStatus)
 {
-	static auto Func = Class->GetFunction("MinimalSquadMember_C", "OnMemberGameReadinessChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinimalSquadMember_C_OnMemberGameReadinessChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinimalSquadMember_C", "OnMemberGameReadinessChanged");
+
+	Params::UMinimalSquadMember_C_OnMemberGameReadinessChanged_Params Parms{};
 
 	Parms.ReadyStatus = ReadyStatus;
 
@@ -110,9 +149,12 @@ void UMinimalSquadMember_C::OnMemberGameReadinessChanged(enum class EGameReadine
 
 void UMinimalSquadMember_C::BP_OnTeamMemberEstablished(bool bHasValidMember)
 {
-	static auto Func = Class->GetFunction("MinimalSquadMember_C", "BP_OnTeamMemberEstablished");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinimalSquadMember_C_BP_OnTeamMemberEstablished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinimalSquadMember_C", "BP_OnTeamMemberEstablished");
+
+	Params::UMinimalSquadMember_C_BP_OnTeamMemberEstablished_Params Parms{};
 
 	Parms.bHasValidMember = bHasValidMember;
 
@@ -137,9 +179,12 @@ void UMinimalSquadMember_C::BP_OnTeamMemberEstablished(bool bHasValidMember)
 
 void UMinimalSquadMember_C::ExecuteUbergraph_MinimalSquadMember(int32 EntryPoint, enum class EGameReadiness K2Node_Event_ReadyStatus, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, bool K2Node_Event_bHasValidMember, bool CallFunc_IsCurrentMemberLocal_ReturnValue, enum class EGameReadiness Temp_byte_Variable, class UWidgetAnimation* K2Node_Select_Default, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinimalSquadMember_C", "ExecuteUbergraph_MinimalSquadMember");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinimalSquadMember_C_ExecuteUbergraph_MinimalSquadMember_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinimalSquadMember_C", "ExecuteUbergraph_MinimalSquadMember");
+
+	Params::UMinimalSquadMember_C_ExecuteUbergraph_MinimalSquadMember_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_ReadyStatus = K2Node_Event_ReadyStatus;
@@ -158,6 +203,4 @@ void UMinimalSquadMember_C::ExecuteUbergraph_MinimalSquadMember(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

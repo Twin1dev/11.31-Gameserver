@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GCNL_EnvCampFire_Doused.GCNL_EnvCampFire_Doused_C
+// (Actor)
+
+class UClass* AGCNL_EnvCampFire_Doused_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCNL_EnvCampFire_Doused_C");
+
+	return Clss;
+}
+
+
+// GCNL_EnvCampFire_Doused_C GCNL_EnvCampFire_Doused.Default__GCNL_EnvCampFire_Doused_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCNL_EnvCampFire_Doused_C* AGCNL_EnvCampFire_Doused_C::GetDefaultObj()
+{
+	static class AGCNL_EnvCampFire_Doused_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCNL_EnvCampFire_Doused_C*>(AGCNL_EnvCampFire_Doused_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GCNL_EnvCampFire_Doused.GCNL_EnvCampFire_Doused_C.Fade Doused Smoke__FinishedFunc
 // (BlueprintEvent)
 // Parameters:
 
 void AGCNL_EnvCampFire_Doused_C::Fade_Doused_Smoke__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "Fade Doused Smoke__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EnvCampFire_Doused_C_Fade_Doused_Smoke__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "Fade Doused Smoke__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AGCNL_EnvCampFire_Doused_C::Fade_Doused_Smoke__FinishedFunc()
 
 void AGCNL_EnvCampFire_Doused_C::Fade_Doused_Smoke__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "Fade Doused Smoke__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EnvCampFire_Doused_C_Fade_Doused_Smoke__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "Fade Doused Smoke__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,9 +86,12 @@ void AGCNL_EnvCampFire_Doused_C::Fade_Doused_Smoke__UpdateFunc()
 
 void AGCNL_EnvCampFire_Doused_C::OnLoopingStart(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents)
 {
-	static auto Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "OnLoopingStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EnvCampFire_Doused_C_OnLoopingStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "OnLoopingStart");
+
+	Params::AGCNL_EnvCampFire_Doused_C_OnLoopingStart_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -83,9 +115,12 @@ void AGCNL_EnvCampFire_Doused_C::OnLoopingStart(class AActor* MyTarget, struct F
 
 void AGCNL_EnvCampFire_Doused_C::OnRemoval(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static auto Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "OnRemoval");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EnvCampFire_Doused_C_OnRemoval_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "OnRemoval");
+
+	Params::AGCNL_EnvCampFire_Doused_C_OnRemoval_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -106,9 +141,12 @@ void AGCNL_EnvCampFire_Doused_C::OnRemoval(class AActor* MyTarget, struct FGamep
 
 void AGCNL_EnvCampFire_Doused_C::DestroyOnDestroy(class AActor* DestroyedActor)
 {
-	static auto Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "DestroyOnDestroy");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EnvCampFire_Doused_C_DestroyOnDestroy_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "DestroyOnDestroy");
+
+	Params::AGCNL_EnvCampFire_Doused_C_DestroyOnDestroy_Params Parms{};
 
 	Parms.DestroyedActor = DestroyedActor;
 
@@ -140,9 +178,12 @@ void AGCNL_EnvCampFire_Doused_C::DestroyOnDestroy(class AActor* DestroyedActor)
 
 void AGCNL_EnvCampFire_Doused_C::ExecuteUbergraph_GCNL_EnvCampFire_Doused(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AActor* K2Node_Event_MyTarget_1, const struct FGameplayCueParameters& K2Node_Event_Parameters_1, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents_1, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents_1, class UParticleSystemComponent* CallFunc_Array_Get_Item, class UParticleSystemComponent* CallFunc_Array_Get_Item_1, class AActor* K2Node_Event_MyTarget, const struct FGameplayCueParameters& K2Node_Event_Parameters, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents, class UCameraShake* K2Node_Event_BurstCameraShakeInstance, class ADecalActor* K2Node_Event_BurstDecalInstance, float CallFunc_GetValueAtLevel_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, class AActor* K2Node_CustomEvent_DestroyedActor)
 {
-	static auto Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "ExecuteUbergraph_GCNL_EnvCampFire_Doused");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EnvCampFire_Doused_C_ExecuteUbergraph_GCNL_EnvCampFire_Doused_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "ExecuteUbergraph_GCNL_EnvCampFire_Doused");
+
+	Params::AGCNL_EnvCampFire_Doused_C_ExecuteUbergraph_GCNL_EnvCampFire_Doused_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -168,6 +209,4 @@ void AGCNL_EnvCampFire_Doused_C::ExecuteUbergraph_GCNL_EnvCampFire_Doused(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

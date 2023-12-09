@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -45,15 +42,13 @@ struct FMediaPlayerOptions
 {
 public:
 	struct FMediaPlayerTrackOptions              Tracks;                                            // 0x0(0x1C)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4417[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_27CC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimespan                             SeekTime;                                          // 0x20(0x8)(BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EMediaPlayerOptionBooleanOverride PlayOnOpen;                                        // 0x28(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EMediaPlayerOptionBooleanOverride Loop;                                              // 0x29(0x1)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4418[0x6];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_27CD[0x6];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

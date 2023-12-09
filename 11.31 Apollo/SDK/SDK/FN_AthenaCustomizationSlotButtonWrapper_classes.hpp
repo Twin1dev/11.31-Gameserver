@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -21,7 +18,7 @@ public:
 	class UAthenaCustomizationSlotButton_C*      SlotButton;                                        // 0x260(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                  BannerDisplayName;                                 // 0x268(0x18)(Edit, BlueprintVisible)
 	enum class EAthenaCustomizationCategory      CustomizationType;                                 // 0x280(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4694[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6D6F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	UMulticastInlineDelegateProperty_            OnSlotClicked;                                     // 0x288(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	UMulticastInlineDelegateProperty_            OnSlotHovered;                                     // 0x298(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FText                                  CategoryDescription;                               // 0x2A8(0x18)(Edit, BlueprintVisible)
@@ -29,21 +26,18 @@ public:
 	int32                                        SubslotIndex;                                      // 0x2D0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortBangType                     BangType;                                          // 0x2D4(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortItemCardSize                 SlottedItemCardSize;                               // 0x2D5(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4695[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6D70[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateBrush                           SlotImage;                                         // 0x2D8(0x88)(Edit, BlueprintVisible)
 	bool                                         bAllowUnownedItems;                                // 0x360(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         bOneItemPerSlot;                                   // 0x361(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4696[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6D71[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInstance*                     OverrideSlotImage;                                 // 0x368(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          RequiredSlotTag;                                   // 0x370(0x8)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 	class FText                                  NoCosmeticWarning;                                 // 0x378(0x18)(Edit, BlueprintVisible)
 	class FText                                  SlotInactiveWarning;                               // 0x390(0x18)(Edit, BlueprintVisible)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaCustomizationSlotButtonWrapper_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaCustomizationSlotButtonWrapper_C* GetDefaultObj();
 
 	void GetCustomizationSlotActiveState(bool* bCosmeticAvaialble, bool* bActive, bool CallFunc_GetCustomizationSlotActiveState_bOutAttachableCosmeticAvailable, bool CallFunc_GetCustomizationSlotActiveState_bOutActive);
 	void PreConstruct(bool IsDesignTime);
@@ -59,6 +53,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

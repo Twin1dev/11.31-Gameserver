@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass SK_MachineGun_Clip_Skeleton_AnimBlueprint.SK_MachineGun_Clip_Skeleton_AnimBlueprint_C
+// (None)
+
+class UClass* USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SK_MachineGun_Clip_Skeleton_AnimBlueprint_C");
+
+	return Clss;
+}
+
+
+// SK_MachineGun_Clip_Skeleton_AnimBlueprint_C SK_MachineGun_Clip_Skeleton_AnimBlueprint.Default__SK_MachineGun_Clip_Skeleton_AnimBlueprint_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USK_MachineGun_Clip_Skeleton_AnimBlueprint_C* USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::GetDefaultObj()
+{
+	static class USK_MachineGun_Clip_Skeleton_AnimBlueprint_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USK_MachineGun_Clip_Skeleton_AnimBlueprint_C*>(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SK_MachineGun_Clip_Skeleton_AnimBlueprint.SK_MachineGun_Clip_Skeleton_AnimBlueprint_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("SK_MachineGun_Clip_Skeleton_AnimBlueprint_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::USK_MachineGun_Clip_Skeleton_AnimBlueprint_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SK_MachineGun_Clip_Skeleton_AnimBlueprint_C", "AnimGraph");
+
+	Params::USK_MachineGun_Clip_Skeleton_AnimBlueprint_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -42,9 +70,12 @@ void USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::AnimGraph(struct FPoseLink* A
 
 void USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::ExecuteUbergraph_SK_MachineGun_Clip_Skeleton_AnimBlueprint(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("SK_MachineGun_Clip_Skeleton_AnimBlueprint_C", "ExecuteUbergraph_SK_MachineGun_Clip_Skeleton_AnimBlueprint");
+	static class UFunction* Func = nullptr;
 
-	Params::USK_MachineGun_Clip_Skeleton_AnimBlueprint_C_ExecuteUbergraph_SK_MachineGun_Clip_Skeleton_AnimBlueprint_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SK_MachineGun_Clip_Skeleton_AnimBlueprint_C", "ExecuteUbergraph_SK_MachineGun_Clip_Skeleton_AnimBlueprint");
+
+	Params::USK_MachineGun_Clip_Skeleton_AnimBlueprint_C_ExecuteUbergraph_SK_MachineGun_Clip_Skeleton_AnimBlueprint_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -54,6 +85,4 @@ void USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::ExecuteUbergraph_SK_MachineGu
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

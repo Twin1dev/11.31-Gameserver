@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C
+// (Actor)
+
+class UClass* AFortnitePartyHeroSelect_Camera_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FortnitePartyHeroSelect_Camera_C");
+
+	return Clss;
+}
+
+
+// FortnitePartyHeroSelect_Camera_C FortnitePartyHeroSelect_Camera.Default__FortnitePartyHeroSelect_Camera_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AFortnitePartyHeroSelect_Camera_C* AFortnitePartyHeroSelect_Camera_C::GetDefaultObj()
+{
+	static class AFortnitePartyHeroSelect_Camera_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AFortnitePartyHeroSelect_Camera_C*>(AFortnitePartyHeroSelect_Camera_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function FortnitePartyHeroSelect_Camera.FortnitePartyHeroSelect_Camera_C.HandleMousePress
@@ -24,9 +49,12 @@ namespace SDK
 
 void AFortnitePartyHeroSelect_Camera_C::HandleMousePress(class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, class AFortPlayerPawn* CallFunc_GetHeroPlayerPawnByIndex_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "HandleMousePress");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnitePartyHeroSelect_Camera_C_HandleMousePress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "HandleMousePress");
+
+	Params::AFortnitePartyHeroSelect_Camera_C_HandleMousePress_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetHeroPlayerPawnByIndex_ReturnValue = CallFunc_GetHeroPlayerPawnByIndex_ReturnValue;
@@ -43,12 +71,14 @@ void AFortnitePartyHeroSelect_Camera_C::HandleMousePress(class UFortFrontEndCont
 
 void AFortnitePartyHeroSelect_Camera_C::HandleMouseRelease()
 {
-	static auto Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "HandleMouseRelease");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnitePartyHeroSelect_Camera_C_HandleMouseRelease_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "HandleMouseRelease");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -60,9 +90,12 @@ void AFortnitePartyHeroSelect_Camera_C::HandleMouseRelease()
 
 void AFortnitePartyHeroSelect_Camera_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_3(const struct FKey& Key)
 {
-	static auto Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_3");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnitePartyHeroSelect_Camera_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_3_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_3");
+
+	Params::AFortnitePartyHeroSelect_Camera_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_3_Params Parms{};
 
 	Parms.Key = Key;
 
@@ -78,9 +111,12 @@ void AFortnitePartyHeroSelect_Camera_C::InpActEvt_LeftMouseButton_K2Node_InputKe
 
 void AFortnitePartyHeroSelect_Camera_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_2(const struct FKey& Key)
 {
-	static auto Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_2");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnitePartyHeroSelect_Camera_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_2");
+
+	Params::AFortnitePartyHeroSelect_Camera_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_2_Params Parms{};
 
 	Parms.Key = Key;
 
@@ -96,9 +132,12 @@ void AFortnitePartyHeroSelect_Camera_C::InpActEvt_LeftMouseButton_K2Node_InputKe
 
 void AFortnitePartyHeroSelect_Camera_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_1(const struct FKey& Key)
 {
-	static auto Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "InpActEvt_RightMouseButton_K2Node_InputKeyEvent_1");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnitePartyHeroSelect_Camera_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_1_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "InpActEvt_RightMouseButton_K2Node_InputKeyEvent_1");
+
+	Params::AFortnitePartyHeroSelect_Camera_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_1_Params Parms{};
 
 	Parms.Key = Key;
 
@@ -114,9 +153,12 @@ void AFortnitePartyHeroSelect_Camera_C::InpActEvt_RightMouseButton_K2Node_InputK
 
 void AFortnitePartyHeroSelect_Camera_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_0(const struct FKey& Key)
 {
-	static auto Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "InpActEvt_RightMouseButton_K2Node_InputKeyEvent_0");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnitePartyHeroSelect_Camera_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "InpActEvt_RightMouseButton_K2Node_InputKeyEvent_0");
+
+	Params::AFortnitePartyHeroSelect_Camera_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_0_Params Parms{};
 
 	Parms.Key = Key;
 
@@ -131,12 +173,14 @@ void AFortnitePartyHeroSelect_Camera_C::InpActEvt_RightMouseButton_K2Node_InputK
 
 void AFortnitePartyHeroSelect_Camera_C::OnActivated()
 {
-	static auto Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnitePartyHeroSelect_Camera_C_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -147,12 +191,14 @@ void AFortnitePartyHeroSelect_Camera_C::OnActivated()
 
 void AFortnitePartyHeroSelect_Camera_C::OnDeactivated()
 {
-	static auto Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnitePartyHeroSelect_Camera_C_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -164,9 +210,12 @@ void AFortnitePartyHeroSelect_Camera_C::OnDeactivated()
 
 void AFortnitePartyHeroSelect_Camera_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnitePartyHeroSelect_Camera_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "ReceiveTick");
+
+	Params::AFortnitePartyHeroSelect_Camera_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -212,9 +261,12 @@ void AFortnitePartyHeroSelect_Camera_C::ReceiveTick(float DeltaSeconds)
 
 void AFortnitePartyHeroSelect_Camera_C::ExecuteUbergraph_FortnitePartyHeroSelect_Camera(int32 EntryPoint, class APlayerController* CallFunc_GetPlayerController_ReturnValue, const struct FKey& K2Node_InputKeyEvent_Key_1, const struct FKey& K2Node_InputKeyEvent_Key, const struct FKey& Temp_struct_Variable, int32 Temp_int_Array_Index_Variable, const struct FKey& Temp_struct_Variable_1, class APlayerController* CallFunc_GetPlayerController_ReturnValue_1, const struct FKey& K2Node_InputKeyEvent_Key_3, float K2Node_Event_DeltaSeconds, class APlayerController* CallFunc_GetPlayerController_ReturnValue_2, float CallFunc_GetInputMouseDelta_DeltaX, float CallFunc_GetInputMouseDelta_DeltaY, float CallFunc_Multiply_FloatFloat_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, float CallFunc_Subtract_FloatFloat_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FKey& K2Node_InputKeyEvent_Key_2, bool CallFunc_K2_SetActorRotation_ReturnValue, TArray<class ATVPostProcessBP_C*>& CallFunc_GetAllActorsOfClass_OutActors, class ATVPostProcessBP_C* CallFunc_Array_Get_Item, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Loop_Counter_Variable, class AFortTimeOfDayManager* CallFunc_GetTimeOfDayManagerFromContext_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "ExecuteUbergraph_FortnitePartyHeroSelect_Camera");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortnitePartyHeroSelect_Camera_C", "ExecuteUbergraph_FortnitePartyHeroSelect_Camera");
+
+	Params::AFortnitePartyHeroSelect_Camera_C_ExecuteUbergraph_FortnitePartyHeroSelect_Camera_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetPlayerController_ReturnValue = CallFunc_GetPlayerController_ReturnValue;
@@ -254,6 +306,4 @@ void AFortnitePartyHeroSelect_Camera_C::ExecuteUbergraph_FortnitePartyHeroSelect
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

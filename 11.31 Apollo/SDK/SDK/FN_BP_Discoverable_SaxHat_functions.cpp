@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_Discoverable_SaxHat.BP_Discoverable_SaxHat_C
+// (Actor)
+
+class UClass* ABP_Discoverable_SaxHat_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_Discoverable_SaxHat_C");
+
+	return Clss;
+}
+
+
+// BP_Discoverable_SaxHat_C BP_Discoverable_SaxHat.Default__BP_Discoverable_SaxHat_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_Discoverable_SaxHat_C* ABP_Discoverable_SaxHat_C::GetDefaultObj()
+{
+	static class ABP_Discoverable_SaxHat_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_Discoverable_SaxHat_C*>(ABP_Discoverable_SaxHat_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_Discoverable_SaxHat.BP_Discoverable_SaxHat_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void ABP_Discoverable_SaxHat_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_SaxHat_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_SaxHat_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_SaxHat_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -40,9 +67,12 @@ void ABP_Discoverable_SaxHat_C::ReceiveBeginPlay()
 
 void ABP_Discoverable_SaxHat_C::NotifiedByDiscoverable(const struct FGameplayTag& ActionTag, const struct FGameplayTag& CameraTag, bool bIsStart)
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_SaxHat_C", "NotifiedByDiscoverable");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_SaxHat_C_NotifiedByDiscoverable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_SaxHat_C", "NotifiedByDiscoverable");
+
+	Params::ABP_Discoverable_SaxHat_C_NotifiedByDiscoverable_Params Parms{};
 
 	Parms.ActionTag = ActionTag;
 	Parms.CameraTag = CameraTag;
@@ -65,9 +95,12 @@ void ABP_Discoverable_SaxHat_C::NotifiedByDiscoverable(const struct FGameplayTag
 
 void ABP_Discoverable_SaxHat_C::ExecuteUbergraph_BP_Discoverable_SaxHat(int32 EntryPoint, const struct FGameplayTag& K2Node_Event_ActionTag, const struct FGameplayTag& K2Node_Event_CameraTag, bool K2Node_Event_bIsStart, bool CallFunc_EqualEqual_GameplayTag_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_SaxHat_C", "ExecuteUbergraph_BP_Discoverable_SaxHat");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_SaxHat_C_ExecuteUbergraph_BP_Discoverable_SaxHat_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_SaxHat_C", "ExecuteUbergraph_BP_Discoverable_SaxHat");
+
+	Params::ABP_Discoverable_SaxHat_C_ExecuteUbergraph_BP_Discoverable_SaxHat_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_ActionTag = K2Node_Event_ActionTag;
@@ -82,6 +115,4 @@ void ABP_Discoverable_SaxHat_C::ExecuteUbergraph_BP_Discoverable_SaxHat(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

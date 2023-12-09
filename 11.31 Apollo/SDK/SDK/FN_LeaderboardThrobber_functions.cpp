@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass LeaderboardThrobber.LeaderboardThrobber_C
+// (None)
+
+class UClass* ULeaderboardThrobber_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LeaderboardThrobber_C");
+
+	return Clss;
+}
+
+
+// LeaderboardThrobber_C LeaderboardThrobber.Default__LeaderboardThrobber_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULeaderboardThrobber_C* ULeaderboardThrobber_C::GetDefaultObj()
+{
+	static class ULeaderboardThrobber_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULeaderboardThrobber_C*>(ULeaderboardThrobber_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function LeaderboardThrobber.LeaderboardThrobber_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ULeaderboardThrobber_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("LeaderboardThrobber_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::ULeaderboardThrobber_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LeaderboardThrobber_C", "PreConstruct");
+
+	Params::ULeaderboardThrobber_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -41,9 +69,12 @@ void ULeaderboardThrobber_C::PreConstruct(bool IsDesignTime)
 
 void ULeaderboardThrobber_C::ExecuteUbergraph_LeaderboardThrobber(int32 EntryPoint, bool K2Node_Event_IsDesignTime)
 {
-	static auto Func = Class->GetFunction("LeaderboardThrobber_C", "ExecuteUbergraph_LeaderboardThrobber");
+	static class UFunction* Func = nullptr;
 
-	Params::ULeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LeaderboardThrobber_C", "ExecuteUbergraph_LeaderboardThrobber");
+
+	Params::ULeaderboardThrobber_C_ExecuteUbergraph_LeaderboardThrobber_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -54,6 +85,4 @@ void ULeaderboardThrobber_C::ExecuteUbergraph_LeaderboardThrobber(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

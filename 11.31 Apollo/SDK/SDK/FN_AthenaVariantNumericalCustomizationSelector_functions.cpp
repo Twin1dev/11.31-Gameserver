@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaVariantNumericalCustomizationSelector.AthenaVariantNumericalCustomizationSelector_C
+// (None)
+
+class UClass* UAthenaVariantNumericalCustomizationSelector_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaVariantNumericalCustomizationSelector_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// AthenaVariantNumericalCustomizationSelector_C AthenaVariantNumericalCustomizationSelector.Default__AthenaVariantNumericalCustomizationSelector_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaVariantNumericalCustomizationSelector_C* UAthenaVariantNumericalCustomizationSelector_C::GetDefaultObj()
+{
+	static class UAthenaVariantNumericalCustomizationSelector_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaVariantNumericalCustomizationSelector_C*>(UAthenaVariantNumericalCustomizationSelector_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

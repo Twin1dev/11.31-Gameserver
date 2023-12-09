@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C
+// (None)
+
+class UClass* UItemDetailsHeaderTagListText_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemDetailsHeaderTagListText_C");
+
+	return Clss;
+}
+
+
+// ItemDetailsHeaderTagListText_C ItemDetailsHeaderTagListText.Default__ItemDetailsHeaderTagListText_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemDetailsHeaderTagListText_C* UItemDetailsHeaderTagListText_C::GetDefaultObj()
+{
+	static class UItemDetailsHeaderTagListText_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemDetailsHeaderTagListText_C*>(UItemDetailsHeaderTagListText_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C.FormatItemDisplayTags
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -23,7 +48,7 @@ namespace SDK
 // class FText                        Result                                                           (Edit, BlueprintVisible)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Array_Get_Item                                          ()
+// class FText                        CallFunc_Array_Get_Item                                          (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -31,13 +56,16 @@ namespace SDK
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 void UItemDetailsHeaderTagListText_C::FormatItemDisplayTags(TArray<class FText>& TagTexts, class FText* FormatedText, class FText Result, int32 Temp_int_Array_Index_Variable, int32 CallFunc_Array_Length_ReturnValue, class FText CallFunc_Array_Get_Item, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, bool CallFunc_TextIsEmpty_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemDetailsHeaderTagListText_C", "FormatItemDisplayTags");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemDetailsHeaderTagListText_C_FormatItemDisplayTags_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemDetailsHeaderTagListText_C", "FormatItemDisplayTags");
+
+	Params::UItemDetailsHeaderTagListText_C_FormatItemDisplayTags_Params Parms{};
 
 	Parms.TagTexts = TagTexts;
 	Parms.Result = Result;
@@ -67,12 +95,14 @@ void UItemDetailsHeaderTagListText_C::FormatItemDisplayTags(TArray<class FText>&
 
 void UItemDetailsHeaderTagListText_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto Func = Class->GetFunction("ItemDetailsHeaderTagListText_C", "HandlePostDifferentItemToDetailSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemDetailsHeaderTagListText_C_HandlePostDifferentItemToDetailSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemDetailsHeaderTagListText_C", "HandlePostDifferentItemToDetailSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -83,12 +113,14 @@ void UItemDetailsHeaderTagListText_C::HandlePostDifferentItemToDetailSet()
 
 void UItemDetailsHeaderTagListText_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static auto Func = Class->GetFunction("ItemDetailsHeaderTagListText_C", "HandlePostDifferentItemToCompareWithSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemDetailsHeaderTagListText_C_HandlePostDifferentItemToCompareWithSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemDetailsHeaderTagListText_C", "HandlePostDifferentItemToCompareWithSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -103,19 +135,22 @@ void UItemDetailsHeaderTagListText_C::HandlePostDifferentItemToCompareWithSet()
 // class UFortInventoryContext*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<class FText>                CallFunc_GetUserFriendlyTags_ReturnValue                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_FormatItemDisplayTags_FormatedText                      ()
+// class FText                        CallFunc_FormatItemDisplayTags_FormatedText                      (None)
 // class UFortItemDefinition*         CallFunc_GetItemDefinitionBP_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortRarityItemData         CallFunc_BPGetRarityDataForItemDef_ReturnValue                   ()
+// struct FFortRarityItemData         CallFunc_BPGetRarityDataForItemDef_ReturnValue                   (None)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 // bool                               CallFunc_IsSchematicOrCraftedWeapon_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemDetailsHeaderTagListText_C::ExecuteUbergraph_ItemDetailsHeaderTagListText(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, class UFortInventoryContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsValid_ReturnValue, TArray<class FText>& CallFunc_GetUserFriendlyTags_ReturnValue, class FText CallFunc_FormatItemDisplayTags_FormatedText, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, const struct FFortRarityItemData& CallFunc_BPGetRarityDataForItemDef_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, const struct FSlateColor& K2Node_MakeStruct_SlateColor, bool CallFunc_IsSchematicOrCraftedWeapon_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemDetailsHeaderTagListText_C", "ExecuteUbergraph_ItemDetailsHeaderTagListText");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemDetailsHeaderTagListText_C", "ExecuteUbergraph_ItemDetailsHeaderTagListText");
+
+	Params::UItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -138,6 +173,4 @@ void UItemDetailsHeaderTagListText_C::ExecuteUbergraph_ItemDetailsHeaderTagListT
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

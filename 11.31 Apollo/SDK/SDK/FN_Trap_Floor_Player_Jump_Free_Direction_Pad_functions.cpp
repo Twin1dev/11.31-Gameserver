@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Trap_Floor_Player_Jump_Free_Direction_Pad.Trap_Floor_Player_Jump_Free_Direction_Pad_C
+// (Actor)
+
+class UClass* ATrap_Floor_Player_Jump_Free_Direction_Pad_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Trap_Floor_Player_Jump_Free_Direction_Pad_C");
+
+	return Clss;
+}
+
+
+// Trap_Floor_Player_Jump_Free_Direction_Pad_C Trap_Floor_Player_Jump_Free_Direction_Pad.Default__Trap_Floor_Player_Jump_Free_Direction_Pad_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ATrap_Floor_Player_Jump_Free_Direction_Pad_C* ATrap_Floor_Player_Jump_Free_Direction_Pad_C::GetDefaultObj()
+{
+	static class ATrap_Floor_Player_Jump_Free_Direction_Pad_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ATrap_Floor_Player_Jump_Free_Direction_Pad_C*>(ATrap_Floor_Player_Jump_Free_Direction_Pad_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function Trap_Floor_Player_Jump_Free_Direction_Pad.Trap_Floor_Player_Jump_Free_Direction_Pad_C.GetImpulseDirection
@@ -51,9 +76,12 @@ namespace SDK
 
 struct FVector ATrap_Floor_Player_Jump_Free_Direction_Pad_C::GetImpulseDirection(class AActor* LaunchingActor, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_GetVelocity_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_VSize_ReturnValue, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_GetForwardVector_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue_1, float CallFunc_BreakRotator_Roll_1, float CallFunc_BreakRotator_Pitch_1, float CallFunc_BreakRotator_Yaw_1, const struct FRotator& CallFunc_MakeRotator_ReturnValue_1, const struct FVector& CallFunc_GetForwardVector_ReturnValue_1, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "GetImpulseDirection");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Jump_Free_Direction_Pad_C_GetImpulseDirection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "GetImpulseDirection");
+
+	Params::ATrap_Floor_Player_Jump_Free_Direction_Pad_C_GetImpulseDirection_Params Parms{};
 
 	Parms.LaunchingActor = LaunchingActor;
 	Parms.CallFunc_K2_GetActorLocation_ReturnValue = CallFunc_K2_GetActorLocation_ReturnValue;
@@ -101,9 +129,12 @@ struct FVector ATrap_Floor_Player_Jump_Free_Direction_Pad_C::GetImpulseDirection
 
 bool ATrap_Floor_Player_Jump_Free_Direction_Pad_C::BP_ShouldTrigger(TArray<class AActor*>& TouchingActors, const TArray<class AActor*>& LocalTouching)
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "BP_ShouldTrigger");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Jump_Free_Direction_Pad_C_BP_ShouldTrigger_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "BP_ShouldTrigger");
+
+	Params::ATrap_Floor_Player_Jump_Free_Direction_Pad_C_BP_ShouldTrigger_Params Parms{};
 
 	Parms.TouchingActors = TouchingActors;
 	Parms.LocalTouching = LocalTouching;
@@ -121,12 +152,14 @@ bool ATrap_Floor_Player_Jump_Free_Direction_Pad_C::BP_ShouldTrigger(TArray<class
 
 void ATrap_Floor_Player_Jump_Free_Direction_Pad_C::OnReloadEnd()
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "OnReloadEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Jump_Free_Direction_Pad_C_OnReloadEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "OnReloadEnd");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -137,12 +170,14 @@ void ATrap_Floor_Player_Jump_Free_Direction_Pad_C::OnReloadEnd()
 
 void ATrap_Floor_Player_Jump_Free_Direction_Pad_C::OnPlaced()
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "OnPlaced");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Jump_Free_Direction_Pad_C_OnPlaced_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "OnPlaced");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -153,12 +188,14 @@ void ATrap_Floor_Player_Jump_Free_Direction_Pad_C::OnPlaced()
 
 void ATrap_Floor_Player_Jump_Free_Direction_Pad_C::OnFinishedBuilding()
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "OnFinishedBuilding");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Jump_Free_Direction_Pad_C_OnFinishedBuilding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "OnFinishedBuilding");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -171,9 +208,12 @@ void ATrap_Floor_Player_Jump_Free_Direction_Pad_C::OnFinishedBuilding()
 
 void ATrap_Floor_Player_Jump_Free_Direction_Pad_C::GameplayCue_Abilities_Activation_Traps_ReloadBegin(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "GameplayCue.Abilities.Activation.Traps.ReloadBegin");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Jump_Free_Direction_Pad_C_GameplayCue_Abilities_Activation_Traps_ReloadBegin_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "GameplayCue.Abilities.Activation.Traps.ReloadBegin");
+
+	Params::ATrap_Floor_Player_Jump_Free_Direction_Pad_C_GameplayCue_Abilities_Activation_Traps_ReloadBegin_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -189,12 +229,14 @@ void ATrap_Floor_Player_Jump_Free_Direction_Pad_C::GameplayCue_Abilities_Activat
 
 void ATrap_Floor_Player_Jump_Free_Direction_Pad_C::OnOutOfDurability()
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "OnOutOfDurability");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Jump_Free_Direction_Pad_C_OnOutOfDurability_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "OnOutOfDurability");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -207,9 +249,12 @@ void ATrap_Floor_Player_Jump_Free_Direction_Pad_C::OnOutOfDurability()
 
 void ATrap_Floor_Player_Jump_Free_Direction_Pad_C::GameplayCue_Abilities_Activation_Traps_ActivateTrap(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "GameplayCue.Abilities.Activation.Traps.ActivateTrap");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Jump_Free_Direction_Pad_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "GameplayCue.Abilities.Activation.Traps.ActivateTrap");
+
+	Params::ATrap_Floor_Player_Jump_Free_Direction_Pad_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -275,9 +320,12 @@ void ATrap_Floor_Player_Jump_Free_Direction_Pad_C::GameplayCue_Abilities_Activat
 
 void ATrap_Floor_Player_Jump_Free_Direction_Pad_C::ExecuteUbergraph_Trap_Floor_Player_Jump_Free_Direction_Pad(int32 EntryPoint, bool CallFunc_IsValid_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam, float Temp_float_Variable, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam_1, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam_2, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue_1, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue_2, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue_3, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam_3, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam_4, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam_5, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam_6, TArray<struct FParticleSysParam>& K2Node_MakeArray_Array, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsDedicatedServer_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_3, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_4, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_5, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType_1, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters_1, bool K2Node_SwitchEnum_CmpSuccess, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters, class UStaticMeshComponent* CallFunc_GetBuildingMeshComponent_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess_1, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, class APlayerCameraManager* CallFunc_GetPlayerCameraManager_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, const struct FVector& CallFunc_GetCameraLocation_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, float CallFunc_VSize_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "ExecuteUbergraph_Trap_Floor_Player_Jump_Free_Direction_Pad");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Floor_Player_Jump_Free_Direction_Pad_C_ExecuteUbergraph_Trap_Floor_Player_Jump_Free_Direction_Pad_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Floor_Player_Jump_Free_Direction_Pad_C", "ExecuteUbergraph_Trap_Floor_Player_Jump_Free_Direction_Pad");
+
+	Params::ATrap_Floor_Player_Jump_Free_Direction_Pad_C_ExecuteUbergraph_Trap_Floor_Player_Jump_Free_Direction_Pad_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -336,6 +384,4 @@ void ATrap_Floor_Player_Jump_Free_Direction_Pad_C::ExecuteUbergraph_Trap_Floor_P
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass FlameCounter.FlameCounter_C
+// (None)
+
+class UClass* UFlameCounter_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FlameCounter_C");
+
+	return Clss;
+}
+
+
+// FlameCounter_C FlameCounter.Default__FlameCounter_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UFlameCounter_C* UFlameCounter_C::GetDefaultObj()
+{
+	static class UFlameCounter_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFlameCounter_C*>(UFlameCounter_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function FlameCounter.FlameCounter_C.PlayIncreaseVote
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UFlameCounter_C::PlayIncreaseVote()
 {
-	static auto Func = Class->GetFunction("FlameCounter_C", "PlayIncreaseVote");
+	static class UFunction* Func = nullptr;
 
-	Params::UFlameCounter_C_PlayIncreaseVote_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FlameCounter_C", "PlayIncreaseVote");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UFlameCounter_C::PlayIncreaseVote()
 
 void UFlameCounter_C::PlayIdle()
 {
-	static auto Func = Class->GetFunction("FlameCounter_C", "PlayIdle");
+	static class UFunction* Func = nullptr;
 
-	Params::UFlameCounter_C_PlayIdle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FlameCounter_C", "PlayIdle");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UFlameCounter_C::PlayIdle()
 
 void UFlameCounter_C::PlayFadeOut()
 {
-	static auto Func = Class->GetFunction("FlameCounter_C", "PlayFadeOut");
+	static class UFunction* Func = nullptr;
 
-	Params::UFlameCounter_C_PlayFadeOut_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FlameCounter_C", "PlayFadeOut");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void UFlameCounter_C::PlayFadeOut()
 
 void UFlameCounter_C::PlayFadeIn()
 {
-	static auto Func = Class->GetFunction("FlameCounter_C", "PlayFadeIn");
+	static class UFunction* Func = nullptr;
 
-	Params::UFlameCounter_C_PlayFadeIn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FlameCounter_C", "PlayFadeIn");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -90,9 +123,12 @@ void UFlameCounter_C::PlayFadeIn()
 
 void UFlameCounter_C::ExecuteUbergraph_FlameCounter(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("FlameCounter_C", "ExecuteUbergraph_FlameCounter");
+	static class UFunction* Func = nullptr;
 
-	Params::UFlameCounter_C_ExecuteUbergraph_FlameCounter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FlameCounter_C", "ExecuteUbergraph_FlameCounter");
+
+	Params::UFlameCounter_C_ExecuteUbergraph_FlameCounter_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -106,6 +142,4 @@ void UFlameCounter_C::ExecuteUbergraph_FlameCounter(int32 EntryPoint, class UUMG
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

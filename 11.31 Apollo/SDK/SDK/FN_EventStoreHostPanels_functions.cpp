@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass EventStoreHostPanels.EventStoreHostPanels_C
+// (None)
+
+class UClass* UEventStoreHostPanels_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EventStoreHostPanels_C");
+
+	return Clss;
+}
+
+
+// EventStoreHostPanels_C EventStoreHostPanels.Default__EventStoreHostPanels_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UEventStoreHostPanels_C* UEventStoreHostPanels_C::GetDefaultObj()
+{
+	static class UEventStoreHostPanels_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEventStoreHostPanels_C*>(UEventStoreHostPanels_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function EventStoreHostPanels.EventStoreHostPanels_C.SetTabVisibilities
@@ -24,9 +49,12 @@ namespace SDK
 
 void UEventStoreHostPanels_C::SetTabVisibilities(enum class ESlateVisibility StatVisibility, enum class ESlateVisibility BonusVisibility, enum class ESlateVisibility CraftingVisibility)
 {
-	static auto Func = Class->GetFunction("EventStoreHostPanels_C", "SetTabVisibilities");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventStoreHostPanels_C_SetTabVisibilities_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventStoreHostPanels_C", "SetTabVisibilities");
+
+	Params::UEventStoreHostPanels_C_SetTabVisibilities_Params Parms{};
 
 	Parms.StatVisibility = StatVisibility;
 	Parms.BonusVisibility = BonusVisibility;
@@ -60,9 +88,12 @@ void UEventStoreHostPanels_C::SetTabVisibilities(enum class ESlateVisibility Sta
 
 void UEventStoreHostPanels_C::Setup_Details_Panels(enum class ESlateVisibility NewCraftingVis, enum class ESlateVisibility NewBonusVis, enum class ESlateVisibility NewStatVis, class UFortWorker* K2Node_DynamicCast_AsFort_Worker, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_GetNumGameplayTagsInContainer_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, bool CallFunc_SelectTabByID_ReturnValue, class FName CallFunc_GetSelectedTabId_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UCommonButton* CallFunc_GetTabButtonByID_ReturnValue, enum class ESlateVisibility CallFunc_GetVisibility_ReturnValue, enum class EFortItemType CallFunc_GetType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsSchematic_ReturnValue)
 {
-	static auto Func = Class->GetFunction("EventStoreHostPanels_C", "Setup Details Panels");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventStoreHostPanels_C_Setup_Details_Panels_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventStoreHostPanels_C", "Setup Details Panels");
+
+	Params::UEventStoreHostPanels_C_Setup_Details_Panels_Params Parms{};
 
 	Parms.NewCraftingVis = NewCraftingVis;
 	Parms.NewBonusVis = NewBonusVis;
@@ -95,9 +126,12 @@ void UEventStoreHostPanels_C::Setup_Details_Panels(enum class ESlateVisibility N
 
 void UEventStoreHostPanels_C::BndEvt__DetailPanelWidgetSwitcher_K2Node_ComponentBoundEvent_16_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
 {
-	static auto Func = Class->GetFunction("EventStoreHostPanels_C", "BndEvt__DetailPanelWidgetSwitcher_K2Node_ComponentBoundEvent_16_OnActiveWidgetChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventStoreHostPanels_C_BndEvt__DetailPanelWidgetSwitcher_K2Node_ComponentBoundEvent_16_OnActiveWidgetChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventStoreHostPanels_C", "BndEvt__DetailPanelWidgetSwitcher_K2Node_ComponentBoundEvent_16_OnActiveWidgetChanged__DelegateSignature");
+
+	Params::UEventStoreHostPanels_C_BndEvt__DetailPanelWidgetSwitcher_K2Node_ComponentBoundEvent_16_OnActiveWidgetChanged__DelegateSignature_Params Parms{};
 
 	Parms.ActiveWidget = ActiveWidget;
 	Parms.ActiveWidgetIndex = ActiveWidgetIndex;
@@ -113,12 +147,14 @@ void UEventStoreHostPanels_C::BndEvt__DetailPanelWidgetSwitcher_K2Node_Component
 
 void UEventStoreHostPanels_C::HandleDifferentItemToDetailSet()
 {
-	static auto Func = Class->GetFunction("EventStoreHostPanels_C", "HandleDifferentItemToDetailSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventStoreHostPanels_C_HandleDifferentItemToDetailSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventStoreHostPanels_C", "HandleDifferentItemToDetailSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -129,12 +165,14 @@ void UEventStoreHostPanels_C::HandleDifferentItemToDetailSet()
 
 void UEventStoreHostPanels_C::Construct()
 {
-	static auto Func = Class->GetFunction("EventStoreHostPanels_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventStoreHostPanels_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventStoreHostPanels_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -147,9 +185,12 @@ void UEventStoreHostPanels_C::Construct()
 
 void UEventStoreHostPanels_C::BndEvt__DetailPanelTabList_K2Node_ComponentBoundEvent_2_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton)
 {
-	static auto Func = Class->GetFunction("EventStoreHostPanels_C", "BndEvt__DetailPanelTabList_K2Node_ComponentBoundEvent_2_OnTabButtonCreated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventStoreHostPanels_C_BndEvt__DetailPanelTabList_K2Node_ComponentBoundEvent_2_OnTabButtonCreated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventStoreHostPanels_C", "BndEvt__DetailPanelTabList_K2Node_ComponentBoundEvent_2_OnTabButtonCreated__DelegateSignature");
+
+	Params::UEventStoreHostPanels_C_BndEvt__DetailPanelTabList_K2Node_ComponentBoundEvent_2_OnTabButtonCreated__DelegateSignature_Params Parms{};
 
 	Parms.TabId = TabId;
 	Parms.TabButton = TabButton;
@@ -178,9 +219,12 @@ void UEventStoreHostPanels_C::BndEvt__DetailPanelTabList_K2Node_ComponentBoundEv
 
 void UEventStoreHostPanels_C::ExecuteUbergraph_EventStoreHostPanels(int32 EntryPoint, class UWidget* K2Node_ComponentBoundEvent_ActiveWidget, int32 K2Node_ComponentBoundEvent_ActiveWidgetIndex, int32 CallFunc_GetActiveWidgetIndex_ReturnValue, class UFortItemDetailsHostPanel* K2Node_DynamicCast_AsFort_Item_Details_Host_Panel, bool K2Node_DynamicCast_bSuccess, class UWidget* CallFunc_GetWidgetAtIndex_ReturnValue, class UFortItemDetailsHostPanel* K2Node_DynamicCast_AsFort_Item_Details_Host_Panel_1, bool K2Node_DynamicCast_bSuccess_1, class FName K2Node_ComponentBoundEvent_TabId, class UCommonButton* K2Node_ComponentBoundEvent_TabButton, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess_2)
 {
-	static auto Func = Class->GetFunction("EventStoreHostPanels_C", "ExecuteUbergraph_EventStoreHostPanels");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPanels_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventStoreHostPanels_C", "ExecuteUbergraph_EventStoreHostPanels");
+
+	Params::UEventStoreHostPanels_C_ExecuteUbergraph_EventStoreHostPanels_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_ActiveWidget = K2Node_ComponentBoundEvent_ActiveWidget;
@@ -202,6 +246,4 @@ void UEventStoreHostPanels_C::ExecuteUbergraph_EventStoreHostPanels(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

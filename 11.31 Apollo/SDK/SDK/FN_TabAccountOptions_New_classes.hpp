@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,11 +16,8 @@ class UTabAccountOptions_New_C : public UFortTabAccountOptions_TempNew
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x330(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("TabAccountOptions_New_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UTabAccountOptions_New_C* GetDefaultObj();
 
 	void OnComplete_DB10A9674F5CF800B883C79A4229D87C(class UUserWidget* UserWidget);
 	void OnComplete_1192BA0E41F4707FF3E3A4A4C72B2024(class UUserWidget* UserWidget);
@@ -36,6 +30,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

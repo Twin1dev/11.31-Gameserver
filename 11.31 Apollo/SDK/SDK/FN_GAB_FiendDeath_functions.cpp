@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GAB_FiendDeath.GAB_FiendDeath_C
+// (None)
+
+class UClass* UGAB_FiendDeath_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAB_FiendDeath_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// GAB_FiendDeath_C GAB_FiendDeath.Default__GAB_FiendDeath_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAB_FiendDeath_C* UGAB_FiendDeath_C::GetDefaultObj()
+{
+	static class UGAB_FiendDeath_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAB_FiendDeath_C*>(UGAB_FiendDeath_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

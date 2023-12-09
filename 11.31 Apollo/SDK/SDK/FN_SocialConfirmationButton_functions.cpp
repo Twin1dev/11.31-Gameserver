@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SocialConfirmationButton.SocialConfirmationButton_C
+// (None)
+
+class UClass* USocialConfirmationButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialConfirmationButton_C");
+
+	return Clss;
+}
+
+
+// SocialConfirmationButton_C SocialConfirmationButton.Default__SocialConfirmationButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USocialConfirmationButton_C* USocialConfirmationButton_C::GetDefaultObj()
+{
+	static class USocialConfirmationButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialConfirmationButton_C*>(USocialConfirmationButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SocialConfirmationButton.SocialConfirmationButton_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void USocialConfirmationButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("SocialConfirmationButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialConfirmationButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialConfirmationButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void USocialConfirmationButton_C::BP_OnHovered()
 
 void USocialConfirmationButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("SocialConfirmationButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialConfirmationButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialConfirmationButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -54,9 +83,12 @@ void USocialConfirmationButton_C::BP_OnUnhovered()
 
 void USocialConfirmationButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("SocialConfirmationButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialConfirmationButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialConfirmationButton_C", "PreConstruct");
+
+	Params::USocialConfirmationButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -79,9 +111,12 @@ void USocialConfirmationButton_C::PreConstruct(bool IsDesignTime)
 
 void USocialConfirmationButton_C::ExecuteUbergraph_SocialConfirmationButton(int32 EntryPoint, bool Temp_bool_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool K2Node_Event_IsDesignTime, const struct FLinearColor& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("SocialConfirmationButton_C", "ExecuteUbergraph_SocialConfirmationButton");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialConfirmationButton_C_ExecuteUbergraph_SocialConfirmationButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialConfirmationButton_C", "ExecuteUbergraph_SocialConfirmationButton");
+
+	Params::USocialConfirmationButton_C_ExecuteUbergraph_SocialConfirmationButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -98,6 +133,4 @@ void USocialConfirmationButton_C::ExecuteUbergraph_SocialConfirmationButton(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_Athena_Environmental_ZipLine.BP_Athena_Environmental_ZipLine_C
+// (Actor)
+
+class UClass* ABP_Athena_Environmental_ZipLine_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_Athena_Environmental_ZipLine_C");
+
+	return Clss;
+}
+
+
+// BP_Athena_Environmental_ZipLine_C BP_Athena_Environmental_ZipLine.Default__BP_Athena_Environmental_ZipLine_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_Athena_Environmental_ZipLine_C* ABP_Athena_Environmental_ZipLine_C::GetDefaultObj()
+{
+	static class ABP_Athena_Environmental_ZipLine_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_Athena_Environmental_ZipLine_C*>(ABP_Athena_Environmental_ZipLine_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_Athena_Environmental_ZipLine.BP_Athena_Environmental_ZipLine_C.Setup Overlap Bindings
@@ -24,9 +49,12 @@ namespace SDK
 
 void ABP_Athena_Environmental_ZipLine_C::Setup_Overlap_Bindings(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_IsDedicatedServer_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "Setup Overlap Bindings");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Athena_Environmental_ZipLine_C_Setup_Overlap_Bindings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "Setup Overlap Bindings");
+
+	Params::ABP_Athena_Environmental_ZipLine_C_Setup_Overlap_Bindings_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
@@ -41,13 +69,16 @@ void ABP_Athena_Environmental_ZipLine_C::Setup_Overlap_Bindings(UDelegatePropert
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AFortPlayerPawn*             InPlayerPawn                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              (None)
 
 void ABP_Athena_Environmental_ZipLine_C::HandleEnterZipline(class AFortPlayerPawn* InPlayerPawn, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData)
 {
-	static auto Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleEnterZipline");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Athena_Environmental_ZipLine_C_HandleEnterZipline_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleEnterZipline");
+
+	Params::ABP_Athena_Environmental_ZipLine_C_HandleEnterZipline_Params Parms{};
 
 	Parms.InPlayerPawn = InPlayerPawn;
 	Parms.K2Node_MakeStruct_GameplayEventData = K2Node_MakeStruct_GameplayEventData;
@@ -94,9 +125,12 @@ void ABP_Athena_Environmental_ZipLine_C::HandleEnterZipline(class AFortPlayerPaw
 
 void ABP_Athena_Environmental_ZipLine_C::CheckForBuildings(class AFortPlayerPawn* Player, bool* BuildingNearby_, bool BuildingsNearby, bool Temp_bool_True_if_break_was_hit_Variable, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, TArray<class AActor*>& K2Node_MakeArray_Array, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, float CallFunc_EvaluateCurveTableRow_OutXY, bool CallFunc_EvaluateCurveTableRow_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_FindClosestPointOnSegment_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, TArray<enum class EObjectTypeQuery>& K2Node_MakeArray_Array_1, float CallFunc_Add_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue_1, TArray<class AActor*>& CallFunc_BoxOverlapActors_OutActors, bool CallFunc_BoxOverlapActors_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class AActor* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor, bool K2Node_DynamicCast_bSuccess, bool CallFunc_BooleanAND_ReturnValue, class ABuildingProp* K2Node_DynamicCast_AsBuilding_Prop, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "CheckForBuildings");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Athena_Environmental_ZipLine_C_CheckForBuildings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "CheckForBuildings");
+
+	Params::ABP_Athena_Environmental_ZipLine_C_CheckForBuildings_Params Parms{};
 
 	Parms.Player = Player;
 	Parms.BuildingsNearby = BuildingsNearby;
@@ -154,9 +188,12 @@ void ABP_Athena_Environmental_ZipLine_C::CheckForBuildings(class AFortPlayerPawn
 
 void ABP_Athena_Environmental_ZipLine_C::QuestCheckForUse(class AFortPlayerController* FortPlayerController, class AGameStateBase* CallFunc_GetGameState_ReturnValue, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, bool CallFunc_Athena_CheckCreativeMode_CanCompleteQuest, TArray<class AFortPlayerController*>& K2Node_MakeArray_Array, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_Athena_CheckQuestAndObjectiveCompletion_QuestIsValid, bool CallFunc_Athena_CheckQuestAndObjectiveCompletion_QuestCompleted, bool CallFunc_Athena_CheckQuestAndObjectiveCompletion_ObjectiveCompleted, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "QuestCheckForUse");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Athena_Environmental_ZipLine_C_QuestCheckForUse_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "QuestCheckForUse");
+
+	Params::ABP_Athena_Environmental_ZipLine_C_QuestCheckForUse_Params Parms{};
 
 	Parms.FortPlayerController = FortPlayerController;
 	Parms.CallFunc_GetGameState_ReturnValue = CallFunc_GetGameState_ReturnValue;
@@ -188,9 +225,12 @@ void ABP_Athena_Environmental_ZipLine_C::QuestCheckForUse(class AFortPlayerContr
 
 void ABP_Athena_Environmental_ZipLine_C::GetCharacterCustomMovementMode(class APawn* Character, enum class EFortCustomMovement* CustomMovementMode, enum class EMovementMode* MovementMode, class UPawnMovementComponent* CallFunc_GetMovementComponent_ReturnValue, class UCharacterMovementComponent* K2Node_DynamicCast_AsCharacter_Movement_Component, bool K2Node_DynamicCast_bSuccess, uint8 CallFunc_GetValidValue_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "GetCharacterCustomMovementMode");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Athena_Environmental_ZipLine_C_GetCharacterCustomMovementMode_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "GetCharacterCustomMovementMode");
+
+	Params::ABP_Athena_Environmental_ZipLine_C_GetCharacterCustomMovementMode_Params Parms{};
 
 	Parms.Character = Character;
 	Parms.CallFunc_GetMovementComponent_ReturnValue = CallFunc_GetMovementComponent_ReturnValue;
@@ -216,9 +256,12 @@ void ABP_Athena_Environmental_ZipLine_C::GetCharacterCustomMovementMode(class AP
 
 void ABP_Athena_Environmental_ZipLine_C::StartZipLining(class AFortPlayerPawn* FortPlayerPawn)
 {
-	static auto Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "StartZipLining");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Athena_Environmental_ZipLine_C_StartZipLining_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "StartZipLining");
+
+	Params::ABP_Athena_Environmental_ZipLine_C_StartZipLining_Params Parms{};
 
 	Parms.FortPlayerPawn = FortPlayerPawn;
 
@@ -276,9 +319,12 @@ void ABP_Athena_Environmental_ZipLine_C::StartZipLining(class AFortPlayerPawn* F
 
 void ABP_Athena_Environmental_ZipLine_C::UserConstructionScript(const struct FVector& CallFunc_MakeVector_ReturnValue, bool CallFunc_IsMobilePlatform_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, const struct FHitResult& CallFunc_K2_AddWorldOffset_SweepHitResult, float CallFunc_EvaluateCurveTableRow_OutXY, bool CallFunc_EvaluateCurveTableRow_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_IntFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue_1, const struct FHitResult& CallFunc_K2_AddWorldOffset_SweepHitResult_1, const struct FVector& CallFunc_GetDirectionUnitVector_ReturnValue, const struct FVector& CallFunc_GetDirectionUnitVector_ReturnValue_1, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_1, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue_1, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue, const struct FRotator& CallFunc_FindLookAtRotation_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, float CallFunc_Add_FloatFloat_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue_2, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult, float CallFunc_DistanceBetweenTwoVectors_Distance, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, const struct FVector& CallFunc_MakeVector_ReturnValue_2, float CallFunc_Divide_FloatFloat_ReturnValue_2, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_2, const struct FVector& CallFunc_Divide_VectorInt_ReturnValue, const struct FHitResult& CallFunc_K2_SetActorLocation_SweepHitResult, bool CallFunc_K2_SetActorLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Athena_Environmental_ZipLine_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "UserConstructionScript");
+
+	Params::ABP_Athena_Environmental_ZipLine_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_MakeVector_ReturnValue = CallFunc_MakeVector_ReturnValue;
 	Parms.CallFunc_IsMobilePlatform_ReturnValue = CallFunc_IsMobilePlatform_ReturnValue;
@@ -335,12 +381,14 @@ void ABP_Athena_Environmental_ZipLine_C::UserConstructionScript(const struct FVe
 
 void ABP_Athena_Environmental_ZipLine_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Athena_Environmental_ZipLine_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -351,12 +399,14 @@ void ABP_Athena_Environmental_ZipLine_C::ReceiveBeginPlay()
 
 void ABP_Athena_Environmental_ZipLine_C::HandleOnMapInfoInitialized()
 {
-	static auto Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleOnMapInfoInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Athena_Environmental_ZipLine_C_HandleOnMapInfoInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleOnMapInfoInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -370,9 +420,12 @@ void ABP_Athena_Environmental_ZipLine_C::HandleOnMapInfoInitialized()
 
 void ABP_Athena_Environmental_ZipLine_C::HandleOnMovementModeChanged(class ACharacter* Character, enum class EMovementMode PrevMovementMode, uint8 PreviousCustomMode)
 {
-	static auto Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleOnMovementModeChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Athena_Environmental_ZipLine_C_HandleOnMovementModeChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleOnMovementModeChanged");
+
+	Params::ABP_Athena_Environmental_ZipLine_C_HandleOnMovementModeChanged_Params Parms{};
 
 	Parms.Character = Character;
 	Parms.PrevMovementMode = PrevMovementMode;
@@ -395,9 +448,12 @@ void ABP_Athena_Environmental_ZipLine_C::HandleOnMovementModeChanged(class AChar
 
 void ABP_Athena_Environmental_ZipLine_C::HandleOnBeginOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, struct FHitResult& SweepResult)
 {
-	static auto Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleOnBeginOverlap");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Athena_Environmental_ZipLine_C_HandleOnBeginOverlap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleOnBeginOverlap");
+
+	Params::ABP_Athena_Environmental_ZipLine_C_HandleOnBeginOverlap_Params Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -421,9 +477,12 @@ void ABP_Athena_Environmental_ZipLine_C::HandleOnBeginOverlap(class UPrimitiveCo
 
 void ABP_Athena_Environmental_ZipLine_C::HandleOnEndOverlap(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static auto Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleOnEndOverlap");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Athena_Environmental_ZipLine_C_HandleOnEndOverlap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "HandleOnEndOverlap");
+
+	Params::ABP_Athena_Environmental_ZipLine_C_HandleOnEndOverlap_Params Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -454,7 +513,7 @@ void ABP_Athena_Environmental_ZipLine_C::HandleOnEndOverlap(class UPrimitiveComp
 // class AFortGameModeAthena*         K2Node_DynamicCast_AsFort_Game_Mode_Athena                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsMapInfoInitialized_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              (None)
 // bool                               CallFunc_IsDedicatedServer_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Array_AddUnique_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ACharacter*                  K2Node_CustomEvent_Character                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -493,9 +552,12 @@ void ABP_Athena_Environmental_ZipLine_C::HandleOnEndOverlap(class UPrimitiveComp
 
 void ABP_Athena_Environmental_ZipLine_C::ExecuteUbergraph_BP_Athena_Environmental_ZipLine(int32 EntryPoint, bool CallFunc_IsDedicatedServer_ReturnValue, float CallFunc_EvaluateCurveTableRow_OutXY, bool CallFunc_EvaluateCurveTableRow_ReturnValue, int32 CallFunc_FTrunc_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, const struct FVector& CallFunc_GetDirectionUnitVector_ReturnValue, const struct FVector& CallFunc_GetDirectionUnitVector_ReturnValue_1, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_1, class AGameModeBase* CallFunc_GetGameMode_ReturnValue, class AFortGameModeAthena* K2Node_DynamicCast_AsFort_Game_Mode_Athena, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsMapInfoInitialized_ReturnValue, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData, bool CallFunc_IsDedicatedServer_ReturnValue_1, int32 CallFunc_Array_AddUnique_ReturnValue, class ACharacter* K2Node_CustomEvent_Character, enum class EMovementMode K2Node_CustomEvent_PrevMovementMode, uint8 K2Node_CustomEvent_PreviousCustomMode, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_IsWalking_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Array_RemoveItem_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_Array_RemoveItem_ReturnValue_1, bool CallFunc_IsDBNO_ReturnValue, bool CallFunc_HasRecentlyExitedZiplineFromJumping_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, class UPrimitiveComponent* K2Node_CustomEvent_OverlappedComponent_1, class AActor* K2Node_CustomEvent_OtherActor_1, class UPrimitiveComponent* K2Node_CustomEvent_OtherComp_1, int32 K2Node_CustomEvent_OtherBodyIndex_1, bool K2Node_CustomEvent_bFromSweep, const struct FHitResult& K2Node_CustomEvent_SweepResult, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_1, bool K2Node_DynamicCast_bSuccess_2, class UPrimitiveComponent* K2Node_CustomEvent_OverlappedComponent, class AActor* K2Node_CustomEvent_OtherActor, class UPrimitiveComponent* K2Node_CustomEvent_OtherComp, int32 K2Node_CustomEvent_OtherBodyIndex, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_2, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_UseInteractToEnterZipline_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, bool CallFunc_IsWalking_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "ExecuteUbergraph_BP_Athena_Environmental_ZipLine");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Athena_Environmental_ZipLine_C_ExecuteUbergraph_BP_Athena_Environmental_ZipLine_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Athena_Environmental_ZipLine_C", "ExecuteUbergraph_BP_Athena_Environmental_ZipLine");
+
+	Params::ABP_Athena_Environmental_ZipLine_C_ExecuteUbergraph_BP_Athena_Environmental_ZipLine_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
@@ -556,6 +618,4 @@ void ABP_Athena_Environmental_ZipLine_C::ExecuteUbergraph_BP_Athena_Environmenta
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

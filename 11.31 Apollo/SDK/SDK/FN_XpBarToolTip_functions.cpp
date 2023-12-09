@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass XpBarToolTip.XpBarToolTip_C
+// (None)
+
+class UClass* UXpBarToolTip_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("XpBarToolTip_C");
+
+	return Clss;
+}
+
+
+// XpBarToolTip_C XpBarToolTip.Default__XpBarToolTip_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UXpBarToolTip_C* UXpBarToolTip_C::GetDefaultObj()
+{
+	static class UXpBarToolTip_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UXpBarToolTip_C*>(UXpBarToolTip_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function XpBarToolTip.XpBarToolTip_C.GetBodyText
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 class FText UXpBarToolTip_C::GetBodyText()
 {
-	static auto Func = Class->GetFunction("XpBarToolTip_C", "GetBodyText");
+	static class UFunction* Func = nullptr;
 
-	Params::UXpBarToolTip_C_GetBodyText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("XpBarToolTip_C", "GetBodyText");
+
+	Params::UXpBarToolTip_C_GetBodyText_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -41,9 +69,12 @@ class FText UXpBarToolTip_C::GetBodyText()
 
 class FText UXpBarToolTip_C::GetRestedXPText()
 {
-	static auto Func = Class->GetFunction("XpBarToolTip_C", "GetRestedXPText");
+	static class UFunction* Func = nullptr;
 
-	Params::UXpBarToolTip_C_GetRestedXPText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("XpBarToolTip_C", "GetRestedXPText");
+
+	Params::UXpBarToolTip_C_GetRestedXPText_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -60,9 +91,12 @@ class FText UXpBarToolTip_C::GetRestedXPText()
 
 class FText UXpBarToolTip_C::GetBoostXPText()
 {
-	static auto Func = Class->GetFunction("XpBarToolTip_C", "GetBoostXPText");
+	static class UFunction* Func = nullptr;
 
-	Params::UXpBarToolTip_C_GetBoostXPText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("XpBarToolTip_C", "GetBoostXPText");
+
+	Params::UXpBarToolTip_C_GetBoostXPText_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -79,9 +113,12 @@ class FText UXpBarToolTip_C::GetBoostXPText()
 
 class FText UXpBarToolTip_C::GetCommanderXPText()
 {
-	static auto Func = Class->GetFunction("XpBarToolTip_C", "GetCommanderXPText");
+	static class UFunction* Func = nullptr;
 
-	Params::UXpBarToolTip_C_GetCommanderXPText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("XpBarToolTip_C", "GetCommanderXPText");
+
+	Params::UXpBarToolTip_C_GetCommanderXPText_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -98,9 +135,12 @@ class FText UXpBarToolTip_C::GetCommanderXPText()
 
 class FText UXpBarToolTip_C::GetHeaderText()
 {
-	static auto Func = Class->GetFunction("XpBarToolTip_C", "GetHeaderText");
+	static class UFunction* Func = nullptr;
 
-	Params::UXpBarToolTip_C_GetHeaderText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("XpBarToolTip_C", "GetHeaderText");
+
+	Params::UXpBarToolTip_C_GetHeaderText_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -111,6 +151,4 @@ class FText UXpBarToolTip_C::GetHeaderText()
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

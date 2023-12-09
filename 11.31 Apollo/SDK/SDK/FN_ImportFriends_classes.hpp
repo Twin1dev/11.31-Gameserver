@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -34,29 +31,26 @@ public:
 	class UScaleBox*                             ScaleBoxDescription;                               // 0x518(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScaleBox*                             ScaleBoxHeader;                                    // 0x520(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	enum class EFrontEndCamera                   DesiredFrontEndCamera;                             // 0x528(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5FFD[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_687A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortItemDefinition*                   PreviewItemDef;                                    // 0x530(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        HeartbeatDelayIntroAnimation;                      // 0x538(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                        DebugSocialImportType;                             // 0x53C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bHasReward;                                        // 0x53D(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5FFE[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_687B[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  FacebookHeader;                                    // 0x540(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  VKHeader;                                          // 0x558(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  SteamHeader;                                       // 0x570(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  PlaystationHeader;                                 // 0x588(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  XboxHeader;                                        // 0x5A0(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	enum class ESocialImportPanelPlatform        SocialPlatform;                                    // 0x5B8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5FFF[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_687C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        WrapHeaderAt;                                      // 0x5BC(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                  XboxDescriptionText;                               // 0x5C0(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  PSNDescriptionText;                                // 0x5D8(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  SwitchDescriptionText;                             // 0x5F0(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ImportFriends_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UImportFriends_C* GetDefaultObj();
 
 	void ScaleTextButton(int32 CharThreshold, class UScaleBox* ContainingScaleBox, class UIconTextButton_C* Button, float CallFunc_Conv_IntToFloat_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, int32 CallFunc_Len_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_FMax_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_FClamp_ReturnValue);
 	void ScaleTextboxWithWrappingWorkaround(class UScaleBox* ContainingScaleBox, int32 CharLimitThreshold, class UCommonTextBlock* TargetText, int32 WrapAtHorrizontal, float ScaleCharThreshold, float CallFunc_Conv_IntToFloat_ReturnValue, class FText CallFunc_GetText_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, int32 CallFunc_Len_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_2, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_FMax_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_FClamp_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_2, int32 CallFunc_FTrunc_ReturnValue);
@@ -72,6 +66,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

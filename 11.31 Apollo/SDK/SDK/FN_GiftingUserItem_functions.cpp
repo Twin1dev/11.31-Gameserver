@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass GiftingUserItem.GiftingUserItem_C
+// (None)
+
+class UClass* UGiftingUserItem_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GiftingUserItem_C");
+
+	return Clss;
+}
+
+
+// GiftingUserItem_C GiftingUserItem.Default__GiftingUserItem_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGiftingUserItem_C* UGiftingUserItem_C::GetDefaultObj()
+{
+	static class UGiftingUserItem_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGiftingUserItem_C*>(UGiftingUserItem_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GiftingUserItem.GiftingUserItem_C.SetSelectionState
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UGiftingUserItem_C::SetSelectionState(enum class ESelectionState NewState, bool bAnimateOnSelect)
 {
-	static auto Func = Class->GetFunction("GiftingUserItem_C", "SetSelectionState");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingUserItem_C_SetSelectionState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingUserItem_C", "SetSelectionState");
+
+	Params::UGiftingUserItem_C_SetSelectionState_Params Parms{};
 
 	Parms.NewState = NewState;
 	Parms.bAnimateOnSelect = bAnimateOnSelect;
@@ -42,9 +70,12 @@ void UGiftingUserItem_C::SetSelectionState(enum class ESelectionState NewState, 
 
 void UGiftingUserItem_C::UpdateMessageText(class FText& NewMessage)
 {
-	static auto Func = Class->GetFunction("GiftingUserItem_C", "UpdateMessageText");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingUserItem_C_UpdateMessageText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingUserItem_C", "UpdateMessageText");
+
+	Params::UGiftingUserItem_C_UpdateMessageText_Params Parms{};
 
 	Parms.NewMessage = NewMessage;
 
@@ -66,9 +97,12 @@ void UGiftingUserItem_C::UpdateMessageText(class FText& NewMessage)
 
 void UGiftingUserItem_C::ExecuteUbergraph_GiftingUserItem(int32 EntryPoint, enum class ESelectionState K2Node_Event_NewState, bool K2Node_Event_bAnimateOnSelect, bool K2Node_SwitchEnum_CmpSuccess, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class FText K2Node_Event_NewMessage, bool CallFunc_TextIsEmpty_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GiftingUserItem_C", "ExecuteUbergraph_GiftingUserItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftingUserItem_C_ExecuteUbergraph_GiftingUserItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftingUserItem_C", "ExecuteUbergraph_GiftingUserItem");
+
+	Params::UGiftingUserItem_C_ExecuteUbergraph_GiftingUserItem_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_NewState = K2Node_Event_NewState;
@@ -84,6 +118,4 @@ void UGiftingUserItem_C::ExecuteUbergraph_GiftingUserItem(int32 EntryPoint, enum
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

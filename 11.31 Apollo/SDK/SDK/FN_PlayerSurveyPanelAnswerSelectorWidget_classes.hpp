@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -24,11 +21,8 @@ public:
 	class UFortPlayerSurveyAnswerWidgetBase*     CurrentChild;                                      // 0x2A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortPlayerSurveyAnswerWidgetDataTable* AnswerWidgetTable;                                 // 0x2B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("PlayerSurveyPanelAnswerSelectorWidget_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UPlayerSurveyPanelAnswerSelectorWidget_C* GetDefaultObj();
 
 	void GetCurrentQuestion(class UFortPlayerSurveyQuestion** Question, class UFortPlayerSurveyQuestion* QuestionValue, class UFortPlayerSurveyQuestion* CallFunc_GetQuestion_ReturnValue, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue, bool CallFunc_IsValid_ReturnValue);
 	void PropagateCurrentQuestion(class UFortPlayerSurveyQuestion* CallFunc_GetCurrentQuestion_Question, bool CallFunc_IsValid_ReturnValue);
@@ -47,6 +41,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

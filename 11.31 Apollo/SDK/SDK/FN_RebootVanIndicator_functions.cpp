@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass RebootVanIndicator.RebootVanIndicator_C
+// (None)
+
+class UClass* URebootVanIndicator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("RebootVanIndicator_C");
+
+	return Clss;
+}
+
+
+// RebootVanIndicator_C RebootVanIndicator.Default__RebootVanIndicator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class URebootVanIndicator_C* URebootVanIndicator_C::GetDefaultObj()
+{
+	static class URebootVanIndicator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<URebootVanIndicator_C*>(URebootVanIndicator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function RebootVanIndicator.RebootVanIndicator_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void URebootVanIndicator_C::Construct()
 {
-	static auto Func = Class->GetFunction("RebootVanIndicator_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::URebootVanIndicator_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RebootVanIndicator_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -39,9 +66,12 @@ void URebootVanIndicator_C::Construct()
 
 void URebootVanIndicator_C::ExecuteUbergraph_RebootVanIndicator(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("RebootVanIndicator_C", "ExecuteUbergraph_RebootVanIndicator");
+	static class UFunction* Func = nullptr;
 
-	Params::URebootVanIndicator_C_ExecuteUbergraph_RebootVanIndicator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RebootVanIndicator_C", "ExecuteUbergraph_RebootVanIndicator");
+
+	Params::URebootVanIndicator_C_ExecuteUbergraph_RebootVanIndicator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -52,6 +82,4 @@ void URebootVanIndicator_C::ExecuteUbergraph_RebootVanIndicator(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

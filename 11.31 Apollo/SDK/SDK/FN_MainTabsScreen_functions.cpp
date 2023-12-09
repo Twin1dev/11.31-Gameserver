@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass MainTabsScreen.MainTabsScreen_C
+// (None)
+
+class UClass* UMainTabsScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MainTabsScreen_C");
+
+	return Clss;
+}
+
+
+// MainTabsScreen_C MainTabsScreen.Default__MainTabsScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMainTabsScreen_C* UMainTabsScreen_C::GetDefaultObj()
+{
+	static class UMainTabsScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMainTabsScreen_C*>(UMainTabsScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function MainTabsScreen.MainTabsScreen_C.Determine If Any non-MTX offers are purchasable
@@ -28,7 +53,7 @@ namespace SDK
 // class UFortInventoryContext*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FCardPackOffer>      CallFunc_Get_Valid_Offers_Offers                                 (ZeroConstructor, ReferenceParm)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FCardPackOffer              CallFunc_Array_Get_Item                                          ()
+// struct FCardPackOffer              CallFunc_Array_Get_Item                                          (None)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_GetTotalItemQuantityByDefinition_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -38,11 +63,14 @@ namespace SDK
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMainTabsScreen_C::Determine_If_Any_non_MTX_offers_are_purchasable(bool* ShowBang, bool bShowBang, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool Temp_bool_True_if_break_was_hit_Variable, bool CallFunc_Not_PreBool_ReturnValue, class UFortInventoryContext* CallFunc_GetContext_ReturnValue, TArray<struct FCardPackOffer>& CallFunc_Get_Valid_Offers_Offers, int32 CallFunc_Array_Length_ReturnValue, const struct FCardPackOffer& CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, int32 CallFunc_GetTotalItemQuantityByDefinition_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1)
+void UMainTabsScreen_C::Determine_If_Any_nonMinusMTX_offers_are_purchasable(bool* ShowBang, bool bShowBang, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool Temp_bool_True_if_break_was_hit_Variable, bool CallFunc_Not_PreBool_ReturnValue, class UFortInventoryContext* CallFunc_GetContext_ReturnValue, TArray<struct FCardPackOffer>& CallFunc_Get_Valid_Offers_Offers, int32 CallFunc_Array_Length_ReturnValue, const struct FCardPackOffer& CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, int32 CallFunc_GetTotalItemQuantityByDefinition_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Determine If Any non-MTX offers are purchasable");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Determine_If_Any_non_MTX_offers_are_purchasable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Determine If Any non-MTX offers are purchasable");
+
+	Params::UMainTabsScreen_C_Determine_If_Any_nonMinusMTX_offers_are_purchasable_Params Parms{};
 
 	Parms.bShowBang = bShowBang;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -89,9 +117,12 @@ void UMainTabsScreen_C::Determine_If_Any_non_MTX_offers_are_purchasable(bool* Sh
 
 void UMainTabsScreen_C::CheckDisplayCriteria(enum class EStoreOfferCosts InCustomStoreOfferCost, const struct FCardPackOffer& InCardPackOffer, bool* bPassedDisplayCriteria, int32 CurrencyBalance, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_GreaterEqual_IntInt_ReturnValue, class UFortMcpContext* CallFunc_GetContext_ReturnValue, class UFortMcpContext* CallFunc_GetContext_ReturnValue_1, const struct FFortPrivateAccountInfo& CallFunc_GetLocalAccountInfo_Result, class UFortAccountItem* CallFunc_GetAccountItemWithDefinition_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_GetNumInStack_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "CheckDisplayCriteria");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_CheckDisplayCriteria_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "CheckDisplayCriteria");
+
+	Params::UMainTabsScreen_C_CheckDisplayCriteria_Params Parms{};
 
 	Parms.InCustomStoreOfferCost = InCustomStoreOfferCost;
 	Parms.InCardPackOffer = InCardPackOffer;
@@ -127,9 +158,12 @@ void UMainTabsScreen_C::CheckDisplayCriteria(enum class EStoreOfferCosts InCusto
 
 void UMainTabsScreen_C::GetCustomStoreOfferCost(const struct FCardPackOffer& InCardPackOffer, enum class EStoreOfferCosts* OutCustomStoreOfferCost, enum class EStoreOfferCosts CustomStoreOfferCost, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_1, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_2, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_3, bool CallFunc_Greater_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "GetCustomStoreOfferCost");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_GetCustomStoreOfferCost_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "GetCustomStoreOfferCost");
+
+	Params::UMainTabsScreen_C_GetCustomStoreOfferCost_Params Parms{};
 
 	Parms.InCardPackOffer = InCardPackOffer;
 	Parms.CustomStoreOfferCost = CustomStoreOfferCost;
@@ -159,7 +193,7 @@ void UMainTabsScreen_C::GetCustomStoreOfferCost(const struct FCardPackOffer& InC
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FCardPackOffer              CallFunc_Array_Get_Item                                          ()
+// struct FCardPackOffer              CallFunc_Array_Get_Item                                          (None)
 // enum class EStoreOfferCosts        CallFunc_GetCustomStoreOfferCost_OutCustomStoreOfferCost         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_CheckDisplayCriteria_bPassedDisplayCriteria             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_GetMetaIntOnOffer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -169,9 +203,12 @@ void UMainTabsScreen_C::GetCustomStoreOfferCost(const struct FCardPackOffer& InC
 
 void UMainTabsScreen_C::CheckHighestPriorityOffer(TArray<struct FCardPackOffer>& InOfferArray, struct FCardPackOffer* OutPriorityOffer, bool* FoundOffer, bool OfferFound, const struct FCardPackOffer& PriorityOffer, int32 HighestDisplayPriority, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, const struct FCardPackOffer& CallFunc_Array_Get_Item, enum class EStoreOfferCosts CallFunc_GetCustomStoreOfferCost_OutCustomStoreOfferCost, bool CallFunc_CheckDisplayCriteria_bPassedDisplayCriteria, int32 CallFunc_GetMetaIntOnOffer_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "CheckHighestPriorityOffer");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_CheckHighestPriorityOffer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "CheckHighestPriorityOffer");
+
+	Params::UMainTabsScreen_C_CheckHighestPriorityOffer_Params Parms{};
 
 	Parms.InOfferArray = InOfferArray;
 	Parms.OfferFound = OfferFound;
@@ -191,7 +228,7 @@ void UMainTabsScreen_C::CheckHighestPriorityOffer(TArray<struct FCardPackOffer>&
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (OutPriorityOffer != nullptr)
-		*OutPriorityOffer = Parms.OutPriorityOffer;
+		*OutPriorityOffer = std::move(Parms.OutPriorityOffer);
 
 	if (FoundOffer != nullptr)
 		*FoundOffer = Parms.FoundOffer;
@@ -210,9 +247,9 @@ void UMainTabsScreen_C::CheckHighestPriorityOffer(TArray<struct FCardPackOffer>&
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FCardPackOffer              CallFunc_CheckHighestPriorityOffer_outPriorityOffer              ()
+// struct FCardPackOffer              CallFunc_CheckHighestPriorityOffer_outPriorityOffer              (None)
 // bool                               CallFunc_CheckHighestPriorityOffer_FoundOffer                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FCardPackOffer              CallFunc_CheckHighestPriorityOffer_outPriorityOffer_1            ()
+// struct FCardPackOffer              CallFunc_CheckHighestPriorityOffer_outPriorityOffer_1            (None)
 // bool                               CallFunc_CheckHighestPriorityOffer_FoundOffer_1                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_GetMetaBoolOnOffer_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_GetMetaBoolOnOffer_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -221,14 +258,17 @@ void UMainTabsScreen_C::CheckHighestPriorityOffer(TArray<struct FCardPackOffer>&
 // class UFortStoreContext*           CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Add_ReturnValue_2                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FCardPackOffer              CallFunc_Array_Get_Item                                          ()
+// struct FCardPackOffer              CallFunc_Array_Get_Item                                          (None)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UMainTabsScreen_C::Get_Valid_Offers(TArray<struct FCardPackOffer>* Offers, const struct FCardPackOffer& TempOffer, const TArray<struct FCardPackOffer>& UpgradeOffers, const TArray<struct FCardPackOffer>& SharedDisplayOffers, const TArray<struct FCardPackOffer>& StandardOffers, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, const struct FCardPackOffer& CallFunc_CheckHighestPriorityOffer_outPriorityOffer, bool CallFunc_CheckHighestPriorityOffer_FoundOffer, const struct FCardPackOffer& CallFunc_CheckHighestPriorityOffer_outPriorityOffer_1, bool CallFunc_CheckHighestPriorityOffer_FoundOffer_1, bool CallFunc_GetMetaBoolOnOffer_ReturnValue, bool CallFunc_GetMetaBoolOnOffer_ReturnValue_1, int32 CallFunc_Array_Add_ReturnValue, int32 CallFunc_Array_Add_ReturnValue_1, class UFortStoreContext* CallFunc_GetContext_ReturnValue, int32 CallFunc_Array_Add_ReturnValue_2, int32 CallFunc_Array_Length_ReturnValue, const struct FCardPackOffer& CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Get Valid Offers");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Get_Valid_Offers_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Get Valid Offers");
+
+	Params::UMainTabsScreen_C_Get_Valid_Offers_Params Parms{};
 
 	Parms.TempOffer = TempOffer;
 	Parms.UpgradeOffers = UpgradeOffers;
@@ -254,7 +294,7 @@ void UMainTabsScreen_C::Get_Valid_Offers(TArray<struct FCardPackOffer>* Offers, 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Offers != nullptr)
-		*Offers = Parms.Offers;
+		*Offers = std::move(Parms.Offers);
 
 }
 
@@ -270,9 +310,12 @@ void UMainTabsScreen_C::Get_Valid_Offers(TArray<struct FCardPackOffer>* Offers, 
 
 bool UMainTabsScreen_C::Is_Transform_Feature_Unlocked(class UFortInventoryContext* CallFunc_GetContext_ReturnValue, bool CallFunc_HasGameplayTagContainer_ReturnValue, bool CallFunc_HasGameplayTagContainer_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Is Transform Feature Unlocked");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Is_Transform_Feature_Unlocked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Is Transform Feature Unlocked");
+
+	Params::UMainTabsScreen_C_Is_Transform_Feature_Unlocked_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_HasGameplayTagContainer_ReturnValue = CallFunc_HasGameplayTagContainer_ReturnValue;
@@ -295,9 +338,12 @@ bool UMainTabsScreen_C::Is_Transform_Feature_Unlocked(class UFortInventoryContex
 
 void UMainTabsScreen_C::HandleCardPackStore(class FName TabId, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "HandleCardPackStore");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_HandleCardPackStore_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "HandleCardPackStore");
+
+	Params::UMainTabsScreen_C_HandleCardPackStore_Params Parms{};
 
 	Parms.TabId = TabId;
 	Parms.CallFunc_EqualEqual_NameName_ReturnValue = CallFunc_EqualEqual_NameName_ReturnValue;
@@ -315,9 +361,12 @@ void UMainTabsScreen_C::HandleCardPackStore(class FName TabId, bool CallFunc_Equ
 
 void UMainTabsScreen_C::HandleMtxStore(class FName Tab_Id)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "HandleMtxStore");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_HandleMtxStore_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "HandleMtxStore");
+
+	Params::UMainTabsScreen_C_HandleMtxStore_Params Parms{};
 
 	Parms.Tab_Id = Tab_Id;
 
@@ -333,9 +382,12 @@ void UMainTabsScreen_C::HandleMtxStore(class FName Tab_Id)
 
 void UMainTabsScreen_C::Handle_Unclaimed_Resources_Updated(bool CallFunc_Determine_Unclaimed_Resources_at_Threshold_Result)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Handle Unclaimed Resources Updated");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Handle_Unclaimed_Resources_Updated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Handle Unclaimed Resources Updated");
+
+	Params::UMainTabsScreen_C_Handle_Unclaimed_Resources_Updated_Params Parms{};
 
 	Parms.CallFunc_Determine_Unclaimed_Resources_at_Threshold_Result = CallFunc_Determine_Unclaimed_Resources_at_Threshold_Result;
 
@@ -353,9 +405,12 @@ void UMainTabsScreen_C::Handle_Unclaimed_Resources_Updated(bool CallFunc_Determi
 
 void UMainTabsScreen_C::Toggle_Unclaimed_Research_Timer(bool Enable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Toggle Unclaimed Research Timer");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Toggle_Unclaimed_Research_Timer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Toggle Unclaimed Research Timer");
+
+	Params::UMainTabsScreen_C_Toggle_Unclaimed_Research_Timer_Params Parms{};
 
 	Parms.Enable = Enable;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -391,9 +446,12 @@ void UMainTabsScreen_C::Toggle_Unclaimed_Research_Timer(bool Enable, UDelegatePr
 
 void UMainTabsScreen_C::Determine_Unclaimed_Resources_at_Threshold(bool* Result, float UnclaimedResearchMax, float UnclaimedResearch, class UFortCollectedResourceItem* LocalResource, float CallFunc_Divide_FloatFloat_ReturnValue, class UHomeBaseContext* CallFunc_GetContext_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, float CallFunc_GetResourceCollectorRateInfo_RatePerSecond, int32 CallFunc_GetResourceCollectorRateInfo_MaxCapacity, float CallFunc_Conv_IntToFloat_ReturnValue, class UHomeBaseContext* CallFunc_GetContext_ReturnValue_1, const struct FFortItemQuantityPair& CallFunc_GetResourceCollectorRewardsEstimate_OutEstimate, class UFortMcpContext* CallFunc_GetContext_ReturnValue_2, TArray<class UFortCollectedResourceItem*>& CallFunc_GetAllResourceCollectors_ResourceCollectorsOwned, float CallFunc_Conv_IntToFloat_ReturnValue_1, class UFortCollectedResourceItem* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Determine Unclaimed Resources at Threshold");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Determine Unclaimed Resources at Threshold");
+
+	Params::UMainTabsScreen_C_Determine_Unclaimed_Resources_at_Threshold_Params Parms{};
 
 	Parms.UnclaimedResearchMax = UnclaimedResearchMax;
 	Parms.UnclaimedResearch = UnclaimedResearch;
@@ -457,9 +515,12 @@ void UMainTabsScreen_C::Determine_Unclaimed_Resources_at_Threshold(bool* Result,
 
 void UMainTabsScreen_C::Update_Store_Tab_Button_Bang(class FName Tab, class FName CurrentTabId, bool ShowBang, bool Temp_bool_True_if_break_was_hit_Variable, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue_1, int32 Temp_int_Array_Index_Variable, bool CallFunc_BooleanOR_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Determine_If_Any_non_MTX_offers_are_purchasable_ShowBang, class UFortInventoryContext* CallFunc_GetContext_ReturnValue, TArray<class UFortAccountItem*>& CallFunc_GetAccountItemsByType_Items, class UFortAccountItem* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class UFortCardPackItem* K2Node_DynamicCast_AsFort_Card_Pack_Item, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_CanStoreOpen_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_HasBeenSeenLocally_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_1, class UHorizontalTabList_C* K2Node_DynamicCast_AsHorizontal_Tab_List, bool K2Node_DynamicCast_bSuccess_1, class UCommonButton* CallFunc_Get_Tab_From_Id_ReturnValue, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button, bool K2Node_DynamicCast_bSuccess_2)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Update Store Tab Button Bang");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Update_Store_Tab_Button_Bang_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Update Store Tab Button Bang");
+
+	Params::UMainTabsScreen_C_Update_Store_Tab_Button_Bang_Params Parms{};
 
 	Parms.Tab = Tab;
 	Parms.CurrentTabId = CurrentTabId;
@@ -519,9 +580,12 @@ void UMainTabsScreen_C::Update_Store_Tab_Button_Bang(class FName Tab, class FNam
 
 void UMainTabsScreen_C::Are_Any_Inventory_Items_Unseen(bool* Unseen, bool CallFunc_IsFrontendStorageEnabled_ReturnValue, bool CallFunc_IsWIFEEnabled_ReturnValue, class UFortInventoryContext* CallFunc_GetContext_ReturnValue, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue, class UFortInventoryContext* CallFunc_GetContext_ReturnValue_1, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue_1, class UFortInventoryContext* CallFunc_GetContext_ReturnValue_2, class UFortInventoryContext* CallFunc_GetContext_ReturnValue_3, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue_2, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue_3, class UFortInventoryContext* CallFunc_GetContext_ReturnValue_4, class UFortInventoryContext* CallFunc_GetContext_ReturnValue_5, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue_4, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue_5, class UFortInventoryContext* CallFunc_GetContext_ReturnValue_6, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue_6)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Are Any Inventory Items Unseen");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Are_Any_Inventory_Items_Unseen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Are Any Inventory Items Unseen");
+
+	Params::UMainTabsScreen_C_Are_Any_Inventory_Items_Unseen_Params Parms{};
 
 	Parms.CallFunc_IsFrontendStorageEnabled_ReturnValue = CallFunc_IsFrontendStorageEnabled_ReturnValue;
 	Parms.CallFunc_IsWIFEEnabled_ReturnValue = CallFunc_IsWIFEEnabled_ReturnValue;
@@ -571,9 +635,12 @@ void UMainTabsScreen_C::Are_Any_Inventory_Items_Unseen(bool* Unseen, bool CallFu
 
 void UMainTabsScreen_C::Are_Any_Transform_Keys_Unseen(bool* Unseen, bool LocalUnseen, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Is_Transform_Feature_Unlocked_ReturnValue, class UFortInventoryContext* CallFunc_GetContext_ReturnValue, TArray<class UFortAccountItem*>& CallFunc_GetTransformKeys_TransformKeys, int32 CallFunc_Array_Length_ReturnValue, class UFortAccountItem* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, class UFortAccountItem* CallFunc_Get_Item_from_Transform_Seen_State_OutItem, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_HasBeenSeenLocally_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Are Any Transform Keys Unseen");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Are_Any_Transform_Keys_Unseen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Are Any Transform Keys Unseen");
+
+	Params::UMainTabsScreen_C_Are_Any_Transform_Keys_Unseen_Params Parms{};
 
 	Parms.LocalUnseen = LocalUnseen;
 	Parms.Temp_bool_True_if_break_was_hit_Variable = Temp_bool_True_if_break_was_hit_Variable;
@@ -610,9 +677,12 @@ void UMainTabsScreen_C::Are_Any_Transform_Keys_Unseen(bool* Unseen, bool LocalUn
 
 void UMainTabsScreen_C::Get_FortPC(class AFortPlayerController** FortPC, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Get FortPC");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Get_FortPC_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Get FortPC");
+
+	Params::UMainTabsScreen_C_Get_FortPC_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Controller = K2Node_DynamicCast_AsFort_Player_Controller;
@@ -635,7 +705,7 @@ void UMainTabsScreen_C::Get_FortPC(class AFortPlayerController** FortPC, class A
 // class UFortItemDefinition*         CallFunc_GetItemDefinitionBP_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortConversionControlItemDefinition*K2Node_DynamicCast_AsFort_Conversion_Control_Item_Definition     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayTagContainer       CallFunc_GetRequiredCatalysts_ReturnValue                        ()
+// struct FGameplayTagContainer       CallFunc_GetRequiredCatalysts_ReturnValue                        (None)
 // class AFortPlayerController*       CallFunc_Get_FortPC_FortPC                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortHomebaseNodeItem*       CallFunc_GetHomebaseNodeItemForTagContainer_ReturnValue          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetNumGameplayTagsInContainer_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -643,9 +713,12 @@ void UMainTabsScreen_C::Get_FortPC(class AFortPlayerController** FortPC, class A
 
 void UMainTabsScreen_C::Get_Item_from_Transform_Seen_State(class UFortAccountItem* TransformKey, class UFortAccountItem** OutItem, const struct FGameplayTagContainer& CatalystTags, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, class UFortConversionControlItemDefinition* K2Node_DynamicCast_AsFort_Conversion_Control_Item_Definition, bool K2Node_DynamicCast_bSuccess, const struct FGameplayTagContainer& CallFunc_GetRequiredCatalysts_ReturnValue, class AFortPlayerController* CallFunc_Get_FortPC_FortPC, class UFortHomebaseNodeItem* CallFunc_GetHomebaseNodeItemForTagContainer_ReturnValue, int32 CallFunc_GetNumGameplayTagsInContainer_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Get Item from Transform Seen State");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Get_Item_from_Transform_Seen_State_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Get Item from Transform Seen State");
+
+	Params::UMainTabsScreen_C_Get_Item_from_Transform_Seen_State_Params Parms{};
 
 	Parms.TransformKey = TransformKey;
 	Parms.CatalystTags = CatalystTags;
@@ -695,9 +768,12 @@ void UMainTabsScreen_C::Get_Item_from_Transform_Seen_State(class UFortAccountIte
 
 void UMainTabsScreen_C::Update_Quest_Tab_Button_Bang(class FName Tab, int32 Count, bool IsClaimedVisibleToUsers, bool IsVisibleToUsers, bool HasNotBeenSeen, bool IsMainQuest, class UFortQuestManager* QuestManager, class FName CurrentTabId, class AFortPlayerController* FortPC, bool QuestsUnseen, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, int32 CallFunc_GetUnseenQuestCount_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, class UHorizontalTabList_C* K2Node_DynamicCast_AsHorizontal_Tab_List, bool K2Node_DynamicCast_bSuccess, class UCommonButton* CallFunc_Get_Tab_From_Id_ReturnValue, class UQuestsCountIconTabButton_C* K2Node_DynamicCast_AsQuests_Count_Icon_Tab_Button, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Update Quest Tab Button Bang");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Update_Quest_Tab_Button_Bang_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Update Quest Tab Button Bang");
+
+	Params::UMainTabsScreen_C_Update_Quest_Tab_Button_Bang_Params Parms{};
 
 	Parms.Tab = Tab;
 	Parms.Count = Count;
@@ -735,9 +811,12 @@ void UMainTabsScreen_C::Update_Quest_Tab_Button_Bang(class FName Tab, int32 Coun
 
 void UMainTabsScreen_C::Update_Tab_Button_Bangs(class FName InTab)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Update Tab Button Bangs");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Update_Tab_Button_Bangs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Update Tab Button Bangs");
+
+	Params::UMainTabsScreen_C_Update_Tab_Button_Bangs_Params Parms{};
 
 	Parms.InTab = InTab;
 
@@ -768,9 +847,12 @@ void UMainTabsScreen_C::Update_Tab_Button_Bangs(class FName InTab)
 
 void UMainTabsScreen_C::Update_Hero_Tab_Button_Bang(class FName Tab, class FName CurrentTabId, class AFortPlayerController* FortPC, bool CombatSquadUnseen, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_AreAnyHomebaseNodeItemsUnseenForSquadType_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, class UHorizontalTabList_C* K2Node_DynamicCast_AsHorizontal_Tab_List, bool K2Node_DynamicCast_bSuccess_1, class UCommonButton* CallFunc_Get_Tab_From_Id_ReturnValue, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button, bool K2Node_DynamicCast_bSuccess_2)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Update Hero Tab Button Bang");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Update_Hero_Tab_Button_Bang_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Update Hero Tab Button Bang");
+
+	Params::UMainTabsScreen_C_Update_Hero_Tab_Button_Bang_Params Parms{};
 
 	Parms.Tab = Tab;
 	Parms.CurrentTabId = CurrentTabId;
@@ -824,9 +906,12 @@ void UMainTabsScreen_C::Update_Hero_Tab_Button_Bang(class FName Tab, class FName
 
 void UMainTabsScreen_C::Update_Squad_Tab_Button_Bang(class FName Tab, class FName CurrentTabId, class FName EmptyTabId, bool ExpeditionSquadUnseen, class AFortPlayerController* FortPC, bool DefenderSquadUnseen, bool AttributeSquadUnseen, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, int32 CallFunc_TotalUnseenExpeditionsForTab_ReturnValue, bool CallFunc_AreAnyHomebaseNodeItemsUnseenForSquadType_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_AreAnyHomebaseNodeItemsUnseenForSquadType_ReturnValue_1, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, bool CallFunc_BooleanOR_ReturnValue_1, class UHorizontalTabList_C* K2Node_DynamicCast_AsHorizontal_Tab_List, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_BooleanOR_ReturnValue_2, class UCommonButton* CallFunc_Get_Tab_From_Id_ReturnValue, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button, bool K2Node_DynamicCast_bSuccess_2)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Update Squad Tab Button Bang");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Update_Squad_Tab_Button_Bang_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Update Squad Tab Button Bang");
+
+	Params::UMainTabsScreen_C_Update_Squad_Tab_Button_Bang_Params Parms{};
 
 	Parms.Tab = Tab;
 	Parms.CurrentTabId = CurrentTabId;
@@ -867,9 +952,12 @@ void UMainTabsScreen_C::Update_Squad_Tab_Button_Bang(class FName Tab, class FNam
 
 void UMainTabsScreen_C::HandleTabSelected(class FName TabName, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, class FName CallFunc_GetActiveTab_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "HandleTabSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_HandleTabSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "HandleTabSelected");
+
+	Params::UMainTabsScreen_C_HandleTabSelected_Params Parms{};
 
 	Parms.TabName = TabName;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -900,13 +988,16 @@ void UMainTabsScreen_C::HandleTabSelected(class FName TabName, class UFortFrontE
 // bool                               K2Node_DynamicCast_bSuccess_3                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UQuestsCountIconTabButton_C* K2Node_DynamicCast_AsQuests_Count_Icon_Tab_Button                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_4                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 
 void UMainTabsScreen_C::HandleTabCreated(class FName TabId, class UCommonButton* TabButton, class UCommonButton* LocalTab, class FName LocalTabId, const class FString& CallFunc_BuildString_Name_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue, bool K2Node_SwitchName_CmpSuccess, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button, bool K2Node_DynamicCast_bSuccess, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button_1, bool K2Node_DynamicCast_bSuccess_1, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button_2, bool K2Node_DynamicCast_bSuccess_2, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button_3, bool K2Node_DynamicCast_bSuccess_3, class UQuestsCountIconTabButton_C* K2Node_DynamicCast_AsQuests_Count_Icon_Tab_Button, bool K2Node_DynamicCast_bSuccess_4, class FText CallFunc_TextToUpper_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "HandleTabCreated");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_HandleTabCreated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "HandleTabCreated");
+
+	Params::UMainTabsScreen_C_HandleTabCreated_Params Parms{};
 
 	Parms.TabId = TabId;
 	Parms.TabButton = TabButton;
@@ -938,12 +1029,14 @@ void UMainTabsScreen_C::HandleTabCreated(class FName TabId, class UCommonButton*
 
 void UMainTabsScreen_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -956,9 +1049,12 @@ void UMainTabsScreen_C::BP_OnActivated()
 
 void UMainTabsScreen_C::CustomEvent(class FName TabId, class UCommonButton* TabButton)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "CustomEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_CustomEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "CustomEvent");
+
+	Params::UMainTabsScreen_C_CustomEvent_Params Parms{};
 
 	Parms.TabId = TabId;
 	Parms.TabButton = TabButton;
@@ -974,12 +1070,14 @@ void UMainTabsScreen_C::CustomEvent(class FName TabId, class UCommonButton* TabB
 
 void UMainTabsScreen_C::OnHomebaseInventoryUpdated()
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "OnHomebaseInventoryUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_OnHomebaseInventoryUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "OnHomebaseInventoryUpdated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -990,12 +1088,14 @@ void UMainTabsScreen_C::OnHomebaseInventoryUpdated()
 
 void UMainTabsScreen_C::Destruct()
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1006,12 +1106,14 @@ void UMainTabsScreen_C::Destruct()
 
 void UMainTabsScreen_C::Construct()
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1023,9 +1125,12 @@ void UMainTabsScreen_C::Construct()
 
 void UMainTabsScreen_C::OnQuestSeen_Event_0(class UFortQuestItem* Quest)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "OnQuestSeen_Event_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_OnQuestSeen_Event_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "OnQuestSeen_Event_0");
+
+	Params::UMainTabsScreen_C_OnQuestSeen_Event_0_Params Parms{};
 
 	Parms.Quest = Quest;
 
@@ -1040,12 +1145,14 @@ void UMainTabsScreen_C::OnQuestSeen_Event_0(class UFortQuestItem* Quest)
 
 void UMainTabsScreen_C::SquadSlotMarkedAsSeen_Event_0()
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "SquadSlotMarkedAsSeen_Event_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_SquadSlotMarkedAsSeen_Event_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "SquadSlotMarkedAsSeen_Event_0");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1057,9 +1164,12 @@ void UMainTabsScreen_C::SquadSlotMarkedAsSeen_Event_0()
 
 void UMainTabsScreen_C::HandleMainTabSelected(class FName TabNameID)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "HandleMainTabSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_HandleMainTabSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "HandleMainTabSelected");
+
+	Params::UMainTabsScreen_C_HandleMainTabSelected_Params Parms{};
 
 	Parms.TabNameID = TabNameID;
 
@@ -1076,9 +1186,12 @@ void UMainTabsScreen_C::HandleMainTabSelected(class FName TabNameID)
 
 void UMainTabsScreen_C::HandleMainTabCreated(class FName TabNameID, class UCommonButton* TabButton)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "HandleMainTabCreated");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_HandleMainTabCreated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "HandleMainTabCreated");
+
+	Params::UMainTabsScreen_C_HandleMainTabCreated_Params Parms{};
 
 	Parms.TabNameID = TabNameID;
 	Parms.TabButton = TabButton;
@@ -1096,9 +1209,12 @@ void UMainTabsScreen_C::HandleMainTabCreated(class FName TabNameID, class UCommo
 
 void UMainTabsScreen_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Tick");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_Tick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "Tick");
+
+	Params::UMainTabsScreen_C_Tick_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InDeltaTime = InDeltaTime;
@@ -1133,9 +1249,12 @@ void UMainTabsScreen_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTi
 
 void UMainTabsScreen_C::ExecuteUbergraph_MainTabsScreen(int32 EntryPoint, class FName K2Node_ComponentBoundEvent_TabId, class UCommonButton* K2Node_ComponentBoundEvent_TabButton, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_RemoveTab_ReturnValue, class UHomeBaseContext* CallFunc_GetContext_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, class UFortQuestItem* K2Node_CustomEvent_Quest, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_2, bool CallFunc_IsMobileApp_ReturnValue, class UHomeBaseContext* CallFunc_GetContext_ReturnValue_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class FName K2Node_Event_TabNameId_1, class FName K2Node_Event_TabNameId, class UCommonButton* K2Node_Event_TabButton, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime)
 {
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "ExecuteUbergraph_MainTabsScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabsScreen_C_ExecuteUbergraph_MainTabsScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabsScreen_C", "ExecuteUbergraph_MainTabsScreen");
+
+	Params::UMainTabsScreen_C_ExecuteUbergraph_MainTabsScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_TabId = K2Node_ComponentBoundEvent_TabId;
@@ -1163,6 +1282,4 @@ void UMainTabsScreen_C::ExecuteUbergraph_MainTabsScreen(int32 EntryPoint, class 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

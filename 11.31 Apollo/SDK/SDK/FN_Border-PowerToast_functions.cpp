@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Border-PowerToast.Border-PowerToast_C
+// (None)
+
+class UClass* UBorderMinusPowerToast_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Border-PowerToast_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Border-PowerToast_C Border-PowerToast.Default__Border-PowerToast_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBorderMinusPowerToast_C* UBorderMinusPowerToast_C::GetDefaultObj()
+{
+	static class UBorderMinusPowerToast_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorderMinusPowerToast_C*>(UBorderMinusPowerToast_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

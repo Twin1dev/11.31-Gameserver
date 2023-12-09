@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ItemCardPowerRatingTextStyle_M.ItemCardPowerRatingTextStyle_M_C
+// (None)
+
+class UClass* UItemCardPowerRatingTextStyle_M_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemCardPowerRatingTextStyle_M_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ItemCardPowerRatingTextStyle_M_C ItemCardPowerRatingTextStyle_M.Default__ItemCardPowerRatingTextStyle_M_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemCardPowerRatingTextStyle_M_C* UItemCardPowerRatingTextStyle_M_C::GetDefaultObj()
+{
+	static class UItemCardPowerRatingTextStyle_M_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemCardPowerRatingTextStyle_M_C*>(UItemCardPowerRatingTextStyle_M_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

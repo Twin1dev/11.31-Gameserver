@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,13 +12,6 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
-
-// 0x0 (0x0 - 0x0)
-// Function ScrollingTextButton.ScrollingTextButton_C.SetInitialMouseKeyboardStyle
-struct UScrollingTextButton_C_SetInitialMouseKeyboardStyle_Params
-{
-public:
-};
 
 // 0x8 (0x8 - 0x0)
 // Function ScrollingTextButton.ScrollingTextButton_C.UpdateTextStyle
@@ -74,12 +64,12 @@ struct UScrollingTextButton_C_UpdateText_Params
 {
 public:
 	bool                                         Temp_bool_Variable;                                // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_52F3[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  CallFunc_GetDisplayText_ReturnValue;               // 0x8(0x18)()
+	uint8                                        Pad_5815[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_GetDisplayText_ReturnValue;               // 0x8(0x18)(None)
 	bool                                         CallFunc_TextIsEmpty_ReturnValue;                  // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x21(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_52F4[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  K2Node_Select_Default;                             // 0x28(0x18)()
+	uint8                                        Pad_5817[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  K2Node_Select_Default;                             // 0x28(0x18)(None)
 };
 
 // 0x12 (0x12 - 0x0)
@@ -131,13 +121,6 @@ public:
 	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function ScrollingTextButton.ScrollingTextButton_C.OnCurrentTextStyleChanged
-struct UScrollingTextButton_C_OnCurrentTextStyleChanged_Params
-{
-public:
-};
-
 // 0x1 (0x1 - 0x0)
 // Function ScrollingTextButton.ScrollingTextButton_C.PreConstruct
 struct UScrollingTextButton_C_PreConstruct_Params
@@ -178,20 +161,6 @@ public:
 	float                                        HeldPercent;                                       // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function ScrollingTextButton.ScrollingTextButton_C.OnActionComplete
-struct UScrollingTextButton_C_OnActionComplete_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ScrollingTextButton.ScrollingTextButton_C.Construct
-struct UScrollingTextButton_C_Construct_Params
-{
-public:
-};
-
 // 0xE6 (0xE6 - 0x0)
 // Function ScrollingTextButton.ScrollingTextButton_C.ExecuteUbergraph_ScrollingTextButton
 struct UScrollingTextButton_C_ExecuteUbergraph_ScrollingTextButton_Params
@@ -200,17 +169,17 @@ public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable;                                // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         K2Node_Event_IsDesignTime;                         // 0x5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_52F5[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_581C[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonInputSubsystem*                 CallFunc_GetContext_ReturnValue;                   // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ECommonInputType                  CallFunc_GetCurrentInputType_ReturnValue;          // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52F6[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_581D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortTabButtonLabelInfo               K2Node_Event_TabLabelInfo;                         // 0x18(0xA0)(ConstParm)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0xB8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         K2Node_ComponentBoundEvent_bUsingGamepad;          // 0xB9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_52F7[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_581E[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDataTableRowHandle                   K2Node_Event_NewTriggeredAction;                   // 0xC0(0x10)(ConstParm, NoDestructor)
 	float                                        K2Node_Event_HeldPercent;                          // 0xD0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52F8[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_581F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonInputSubsystem*                 CallFunc_GetContext_ReturnValue_1;                 // 0xD8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_SlateBrush_ReturnValue;        // 0xE0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ECommonInputType                  CallFunc_GetCurrentInputType_ReturnValue_1;        // 0xE1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -223,6 +192,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

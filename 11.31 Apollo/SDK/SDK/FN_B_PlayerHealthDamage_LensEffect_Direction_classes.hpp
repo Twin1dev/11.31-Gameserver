@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -17,18 +14,13 @@ namespace SDK
 class AB_PlayerHealthDamage_LensEffect_Direction_C : public AFortEmitterCameraLensEffectDirectional
 {
 public:
-	uint8                                        Pad_4B2B[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_4EC8[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_PlayerHealthDamage_LensEffect_Direction_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_PlayerHealthDamage_LensEffect_Direction_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

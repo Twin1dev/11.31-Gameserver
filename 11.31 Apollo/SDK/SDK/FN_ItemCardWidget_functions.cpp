@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,20 +12,51 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ItemCardWidget.ItemCardWidget_C
+// (None)
+
+class UClass* UItemCardWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemCardWidget_C");
+
+	return Clss;
+}
+
+
+// ItemCardWidget_C ItemCardWidget.Default__ItemCardWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemCardWidget_C* UItemCardWidget_C::GetDefaultObj()
+{
+	static class UItemCardWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemCardWidget_C*>(UItemCardWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ItemCardWidget.ItemCardWidget_C.OnFocusReceived
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FFocusEvent                 InFocusEvent                                                     (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
-// struct FEventReply                 CallFunc_SetUserFocus_ReturnValue                                ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
+// struct FEventReply                 CallFunc_SetUserFocus_ReturnValue                                (None)
 
 struct FEventReply UItemCardWidget_C::OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent, const struct FEventReply& CallFunc_Handled_ReturnValue, const struct FEventReply& CallFunc_SetUserFocus_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemCardWidget_C", "OnFocusReceived");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCardWidget_C_OnFocusReceived_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCardWidget_C", "OnFocusReceived");
+
+	Params::UItemCardWidget_C_OnFocusReceived_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InFocusEvent = InFocusEvent;
@@ -48,12 +76,14 @@ struct FEventReply UItemCardWidget_C::OnFocusReceived(const struct FGeometry& My
 
 void UItemCardWidget_C::OnCentered()
 {
-	static auto Func = Class->GetFunction("ItemCardWidget_C", "OnCentered");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCardWidget_C_OnCentered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCardWidget_C", "OnCentered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -65,9 +95,12 @@ void UItemCardWidget_C::OnCentered()
 
 void UItemCardWidget_C::PlayShow(int32 Idx)
 {
-	static auto Func = Class->GetFunction("ItemCardWidget_C", "PlayShow");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCardWidget_C_PlayShow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCardWidget_C", "PlayShow");
+
+	Params::UItemCardWidget_C_PlayShow_Params Parms{};
 
 	Parms.Idx = Idx;
 
@@ -83,9 +116,12 @@ void UItemCardWidget_C::PlayShow(int32 Idx)
 
 void UItemCardWidget_C::OnFocusLost(const struct FFocusEvent& InFocusEvent)
 {
-	static auto Func = Class->GetFunction("ItemCardWidget_C", "OnFocusLost");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCardWidget_C_OnFocusLost_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCardWidget_C", "OnFocusLost");
+
+	Params::UItemCardWidget_C_OnFocusLost_Params Parms{};
 
 	Parms.InFocusEvent = InFocusEvent;
 
@@ -100,12 +136,14 @@ void UItemCardWidget_C::OnFocusLost(const struct FFocusEvent& InFocusEvent)
 
 void UItemCardWidget_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("ItemCardWidget_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCardWidget_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCardWidget_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -116,12 +154,14 @@ void UItemCardWidget_C::BP_OnHovered()
 
 void UItemCardWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("ItemCardWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCardWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCardWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -137,9 +177,12 @@ void UItemCardWidget_C::Construct()
 
 void UItemCardWidget_C::ExecuteUbergraph_ItemCardWidget(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, int32 K2Node_CustomEvent_Idx, bool CallFunc_Less_IntInt_ReturnValue, const struct FFocusEvent& K2Node_Event_InFocusEvent)
 {
-	static auto Func = Class->GetFunction("ItemCardWidget_C", "ExecuteUbergraph_ItemCardWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCardWidget_C_ExecuteUbergraph_ItemCardWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCardWidget_C", "ExecuteUbergraph_ItemCardWidget");
+
+	Params::UItemCardWidget_C_ExecuteUbergraph_ItemCardWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -159,9 +202,12 @@ void UItemCardWidget_C::ExecuteUbergraph_ItemCardWidget(int32 EntryPoint, class 
 
 void UItemCardWidget_C::OnHoveredEvent__DelegateSignature(const struct FFortReceivedItemLootInfo& NewParam)
 {
-	static auto Func = Class->GetFunction("ItemCardWidget_C", "OnHoveredEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCardWidget_C_OnHoveredEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCardWidget_C", "OnHoveredEvent__DelegateSignature");
+
+	Params::UItemCardWidget_C_OnHoveredEvent__DelegateSignature_Params Parms{};
 
 	Parms.NewParam = NewParam;
 
@@ -171,6 +217,4 @@ void UItemCardWidget_C::OnHoveredEvent__DelegateSignature(const struct FFortRece
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

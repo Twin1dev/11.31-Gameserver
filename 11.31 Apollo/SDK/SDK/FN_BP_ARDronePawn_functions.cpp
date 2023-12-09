@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_ARDronePawn.BP_ARDronePawn_C
+// (Actor, Pawn)
+
+class UClass* ABP_ARDronePawn_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_ARDronePawn_C");
+
+	return Clss;
+}
+
+
+// BP_ARDronePawn_C BP_ARDronePawn.Default__BP_ARDronePawn_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_ARDronePawn_C* ABP_ARDronePawn_C::GetDefaultObj()
+{
+	static class ABP_ARDronePawn_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_ARDronePawn_C*>(ABP_ARDronePawn_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_ARDronePawn.BP_ARDronePawn_C.GetWindVolumeFromAltitude
@@ -24,9 +49,12 @@ namespace SDK
 
 void ABP_ARDronePawn_C::GetWindVolumeFromAltitude(float Altitude, float* Volume, float CallFunc_MapRangeClamped_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_ARDronePawn_C", "GetWindVolumeFromAltitude");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ARDronePawn_C_GetWindVolumeFromAltitude_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ARDronePawn_C", "GetWindVolumeFromAltitude");
+
+	Params::ABP_ARDronePawn_C_GetWindVolumeFromAltitude_Params Parms{};
 
 	Parms.Altitude = Altitude;
 	Parms.CallFunc_MapRangeClamped_ReturnValue = CallFunc_MapRangeClamped_ReturnValue;
@@ -51,9 +79,12 @@ void ABP_ARDronePawn_C::GetWindVolumeFromAltitude(float Altitude, float* Volume,
 
 void ABP_ARDronePawn_C::SetWindAudioEnabled(bool Enabled, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BP_ARDronePawn_C", "SetWindAudioEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ARDronePawn_C_SetWindAudioEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ARDronePawn_C", "SetWindAudioEnabled");
+
+	Params::ABP_ARDronePawn_C_SetWindAudioEnabled_Params Parms{};
 
 	Parms.Enabled = Enabled;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -74,9 +105,12 @@ void ABP_ARDronePawn_C::SetWindAudioEnabled(bool Enabled, bool CallFunc_IsValid_
 
 void ABP_ARDronePawn_C::ReceiveUnpossessed(class AController* OldController)
 {
-	static auto Func = Class->GetFunction("BP_ARDronePawn_C", "ReceiveUnpossessed");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ARDronePawn_C_ReceiveUnpossessed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ARDronePawn_C", "ReceiveUnpossessed");
+
+	Params::ABP_ARDronePawn_C_ReceiveUnpossessed_Params Parms{};
 
 	Parms.OldController = OldController;
 
@@ -92,9 +126,12 @@ void ABP_ARDronePawn_C::ReceiveUnpossessed(class AController* OldController)
 
 void ABP_ARDronePawn_C::ReceivePossessed(class AController* NewController)
 {
-	static auto Func = Class->GetFunction("BP_ARDronePawn_C", "ReceivePossessed");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ARDronePawn_C_ReceivePossessed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ARDronePawn_C", "ReceivePossessed");
+
+	Params::ABP_ARDronePawn_C_ReceivePossessed_Params Parms{};
 
 	Parms.NewController = NewController;
 
@@ -110,9 +147,12 @@ void ABP_ARDronePawn_C::ReceivePossessed(class AController* NewController)
 
 void ABP_ARDronePawn_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("BP_ARDronePawn_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ARDronePawn_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ARDronePawn_C", "ReceiveTick");
+
+	Params::ABP_ARDronePawn_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -127,12 +167,14 @@ void ABP_ARDronePawn_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_ARDronePawn_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_ARDronePawn_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ARDronePawn_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ARDronePawn_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -143,12 +185,14 @@ void ABP_ARDronePawn_C::ReceiveBeginPlay()
 
 void ABP_ARDronePawn_C::Update_Wind_Audio()
 {
-	static auto Func = Class->GetFunction("BP_ARDronePawn_C", "Update Wind Audio");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ARDronePawn_C_Update_Wind_Audio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ARDronePawn_C", "Update Wind Audio");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -172,9 +216,12 @@ void ABP_ARDronePawn_C::Update_Wind_Audio()
 
 void ABP_ARDronePawn_C::ExecuteUbergraph_BP_ARDronePawn(int32 EntryPoint, float CallFunc_GetWorldDeltaSeconds_ReturnValue, float CallFunc_MapRangeClamped_ReturnValue, float CallFunc_FInterpTo_ReturnValue, class AController* K2Node_Event_OldController, class AController* K2Node_Event_NewController, float K2Node_Event_DeltaSeconds, const struct FVector& CallFunc_GetVelocity_ReturnValue, float CallFunc_VSize_ReturnValue, float CallFunc_GetWorldDeltaSeconds_ReturnValue_1, float CallFunc_GetAltitude_ReturnValue, float CallFunc_GetWindVolumeFromAltitude_Volume, float CallFunc_FInterpTo_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BP_ARDronePawn_C", "ExecuteUbergraph_BP_ARDronePawn");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ARDronePawn_C_ExecuteUbergraph_BP_ARDronePawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ARDronePawn_C", "ExecuteUbergraph_BP_ARDronePawn");
+
+	Params::ABP_ARDronePawn_C_ExecuteUbergraph_BP_ARDronePawn_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetWorldDeltaSeconds_ReturnValue = CallFunc_GetWorldDeltaSeconds_ReturnValue;
@@ -196,6 +243,4 @@ void ABP_ARDronePawn_C::ExecuteUbergraph_BP_ARDronePawn(int32 EntryPoint, float 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

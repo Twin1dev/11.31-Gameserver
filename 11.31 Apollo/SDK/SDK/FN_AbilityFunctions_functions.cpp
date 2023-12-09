@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass AbilityFunctions.AbilityFunctions_C
+// (None)
+
+class UClass* UAbilityFunctions_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AbilityFunctions_C");
+
+	return Clss;
+}
+
+
+// AbilityFunctions_C AbilityFunctions.Default__AbilityFunctions_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAbilityFunctions_C* UAbilityFunctions_C::GetDefaultObj()
+{
+	static class UAbilityFunctions_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAbilityFunctions_C*>(UAbilityFunctions_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AbilityFunctions.AbilityFunctions_C.ApplySlowFall
@@ -24,18 +49,21 @@ namespace SDK
 // class UObject*                     __WorldContext                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FActiveGameplayEffectHandle EffectSpecHandle                                                 (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_MakeVector_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue              ()
+// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue              (None)
 // class AActor*                      CallFunc_GetAvatarActorFromActorInfo_ReturnValue                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectSpecHandle   CallFunc_AssignTagSetByCallerMagnitude_ReturnValue               ()
+// struct FGameplayEffectSpecHandle   CallFunc_AssignTagSetByCallerMagnitude_ReturnValue               (None)
 // class AFortPawn*                   K2Node_DynamicCast_AsFort_Pawn                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FActiveGameplayEffectHandle CallFunc_K2_ApplyGameplayEffectSpecToOwner_ReturnValue           (NoDestructor, HasGetValueTypeHash)
 
 void UAbilityFunctions_C::ApplySlowFall(float SlowFallDuration, class UFortGameplayAbility* SelfGameplayAbilityReference, class UClass* GameplayEffect, class UObject* __WorldContext, struct FActiveGameplayEffectHandle* EffectSpecHandle, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_AssignTagSetByCallerMagnitude_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FActiveGameplayEffectHandle& CallFunc_K2_ApplyGameplayEffectSpecToOwner_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AbilityFunctions_C", "ApplySlowFall");
+	static class UFunction* Func = nullptr;
 
-	Params::UAbilityFunctions_C_ApplySlowFall_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AbilityFunctions_C", "ApplySlowFall");
+
+	Params::UAbilityFunctions_C_ApplySlowFall_Params Parms{};
 
 	Parms.SlowFallDuration = SlowFallDuration;
 	Parms.SelfGameplayAbilityReference = SelfGameplayAbilityReference;
@@ -52,7 +80,7 @@ void UAbilityFunctions_C::ApplySlowFall(float SlowFallDuration, class UFortGamep
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (EffectSpecHandle != nullptr)
-		*EffectSpecHandle = Parms.EffectSpecHandle;
+		*EffectSpecHandle = std::move(Parms.EffectSpecHandle);
 
 }
 
@@ -71,9 +99,12 @@ void UAbilityFunctions_C::ApplySlowFall(float SlowFallDuration, class UFortGamep
 
 void UAbilityFunctions_C::GetDistanceBetweenActors(class AActor* Actor1, class AActor* Actor2, class UObject* __WorldContext, float* Distance, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, float CallFunc_VSize_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AbilityFunctions_C", "GetDistanceBetweenActors");
+	static class UFunction* Func = nullptr;
 
-	Params::UAbilityFunctions_C_GetDistanceBetweenActors_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AbilityFunctions_C", "GetDistanceBetweenActors");
+
+	Params::UAbilityFunctions_C_GetDistanceBetweenActors_Params Parms{};
 
 	Parms.Actor1 = Actor1;
 	Parms.Actor2 = Actor2;
@@ -106,9 +137,12 @@ void UAbilityFunctions_C::GetDistanceBetweenActors(class AActor* Actor1, class A
 
 void UAbilityFunctions_C::GetPawnFromPlayerStateZone(class AActor* InActor, class UObject* __WorldContext, class AFortPlayerPawn** OutPawn, bool* PawnReturned, class AFortPlayerStateZone* K2Node_DynamicCast_AsFort_Player_State_Zone, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, class AFortPlayerPawn* CallFunc_GetCurrentPawn_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AbilityFunctions_C", "GetPawnFromPlayerStateZone");
+	static class UFunction* Func = nullptr;
 
-	Params::UAbilityFunctions_C_GetPawnFromPlayerStateZone_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AbilityFunctions_C", "GetPawnFromPlayerStateZone");
+
+	Params::UAbilityFunctions_C_GetPawnFromPlayerStateZone_Params Parms{};
 
 	Parms.InActor = InActor;
 	Parms.__WorldContext = __WorldContext;
@@ -145,15 +179,18 @@ void UAbilityFunctions_C::GetPawnFromPlayerStateZone(class AActor* InActor, clas
 // float                              CallFunc_GetValueAtLevel_ReturnValue_1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Add_FloatFloat_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FScalableFloat              K2Node_MakeStruct_ScalableFloat                                  ()
-// struct FScalableFloat              K2Node_Select_Default_1                                          ()
-// struct FScalableFloat              K2Node_Select_Default_2                                          ()
+// struct FScalableFloat              K2Node_MakeStruct_ScalableFloat                                  (None)
+// struct FScalableFloat              K2Node_Select_Default_1                                          (None)
+// struct FScalableFloat              K2Node_Select_Default_2                                          (None)
 
 void UAbilityFunctions_C::EvaluatePerkTierBalanceValue(const struct FScalableFloat& T01_Balance_Value, const struct FScalableFloat& T02_Balance_Value, bool Owns_T02, bool Should_Override_T01, class UObject* __WorldContext, struct FScalableFloat* Balance_Value, bool Temp_bool_Variable, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, float CallFunc_GetValueAtLevel_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue, float K2Node_Select_Default, const struct FScalableFloat& K2Node_MakeStruct_ScalableFloat, const struct FScalableFloat& K2Node_Select_Default_1, const struct FScalableFloat& K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("AbilityFunctions_C", "EvaluatePerkTierBalanceValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UAbilityFunctions_C_EvaluatePerkTierBalanceValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AbilityFunctions_C", "EvaluatePerkTierBalanceValue");
+
+	Params::UAbilityFunctions_C_EvaluatePerkTierBalanceValue_Params Parms{};
 
 	Parms.T01_Balance_Value = T01_Balance_Value;
 	Parms.T02_Balance_Value = T02_Balance_Value;
@@ -174,7 +211,7 @@ void UAbilityFunctions_C::EvaluatePerkTierBalanceValue(const struct FScalableFlo
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Balance_Value != nullptr)
-		*Balance_Value = Parms.Balance_Value;
+		*Balance_Value = std::move(Parms.Balance_Value);
 
 }
 
@@ -187,14 +224,17 @@ void UAbilityFunctions_C::EvaluatePerkTierBalanceValue(const struct FScalableFlo
 // float                              At_Level                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     __WorldContext                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Range                                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortAbilityTargetSelection CallFunc_Array_Get_Item                                          ()
+// struct FFortAbilityTargetSelection CallFunc_Array_Get_Item                                          (None)
 // float                              CallFunc_GetValueAtLevel_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAbilityFunctions_C::GetRangeFromGameplayEffectContainer(const struct FFortGameplayEffectContainer& GE_Container, int32 Target_Selection_List_Index, float At_Level, class UObject* __WorldContext, float* Range, const struct FFortAbilityTargetSelection& CallFunc_Array_Get_Item, float CallFunc_GetValueAtLevel_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AbilityFunctions_C", "GetRangeFromGameplayEffectContainer");
+	static class UFunction* Func = nullptr;
 
-	Params::UAbilityFunctions_C_GetRangeFromGameplayEffectContainer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AbilityFunctions_C", "GetRangeFromGameplayEffectContainer");
+
+	Params::UAbilityFunctions_C_GetRangeFromGameplayEffectContainer_Params Parms{};
 
 	Parms.GE_Container = GE_Container;
 	Parms.Target_Selection_List_Index = Target_Selection_List_Index;
@@ -230,9 +270,12 @@ void UAbilityFunctions_C::GetRangeFromGameplayEffectContainer(const struct FFort
 
 void UAbilityFunctions_C::GetTotalGameplayEffectCount(TArray<class UClass*>& EffectsToCount, class UAbilitySystemComponent* AbilitySystemComponent, class UObject* __WorldContext, int32* FinalEffectCount, int32 TempTotalEffectCount, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, class UClass* CallFunc_Array_Get_Item, int32 CallFunc_GetGameplayEffectCount_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AbilityFunctions_C", "GetTotalGameplayEffectCount");
+	static class UFunction* Func = nullptr;
 
-	Params::UAbilityFunctions_C_GetTotalGameplayEffectCount_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AbilityFunctions_C", "GetTotalGameplayEffectCount");
+
+	Params::UAbilityFunctions_C_GetTotalGameplayEffectCount_Params Parms{};
 
 	Parms.EffectsToCount = EffectsToCount;
 	Parms.AbilitySystemComponent = AbilitySystemComponent;
@@ -269,9 +312,12 @@ void UAbilityFunctions_C::GetTotalGameplayEffectCount(TArray<class UClass*>& Eff
 
 void UAbilityFunctions_C::GetAngleBetweenTwoVectors(const struct FVector& VectorA, const struct FVector& VectorB, class UObject* __WorldContext, float* Angle__Degrees_, const struct FVector& CallFunc_Normal_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue_1, float CallFunc_Dot_VectorVector_ReturnValue, float CallFunc_DegAcos_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AbilityFunctions_C", "GetAngleBetweenTwoVectors");
+	static class UFunction* Func = nullptr;
 
-	Params::UAbilityFunctions_C_GetAngleBetweenTwoVectors_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AbilityFunctions_C", "GetAngleBetweenTwoVectors");
+
+	Params::UAbilityFunctions_C_GetAngleBetweenTwoVectors_Params Parms{};
 
 	Parms.VectorA = VectorA;
 	Parms.VectorB = VectorB;
@@ -297,14 +343,17 @@ void UAbilityFunctions_C::GetAngleBetweenTwoVectors(const struct FVector& Vector
 // float                              At_Level                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     __WorldContext                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Range                                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortAbilityTargetSelection CallFunc_Array_Get_Item                                          ()
+// struct FFortAbilityTargetSelection CallFunc_Array_Get_Item                                          (None)
 // float                              CallFunc_GetValueAtLevel_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAbilityFunctions_C::GetRangeFromGameplayEffectContainerSpec(const struct FFortGameplayEffectContainerSpec& GE_Container_Spec, int32 Target_Selection_List_Index, float At_Level, class UObject* __WorldContext, float* Range, const struct FFortAbilityTargetSelection& CallFunc_Array_Get_Item, float CallFunc_GetValueAtLevel_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AbilityFunctions_C", "GetRangeFromGameplayEffectContainerSpec");
+	static class UFunction* Func = nullptr;
 
-	Params::UAbilityFunctions_C_GetRangeFromGameplayEffectContainerSpec_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AbilityFunctions_C", "GetRangeFromGameplayEffectContainerSpec");
+
+	Params::UAbilityFunctions_C_GetRangeFromGameplayEffectContainerSpec_Params Parms{};
 
 	Parms.GE_Container_Spec = GE_Container_Spec;
 	Parms.Target_Selection_List_Index = Target_Selection_List_Index;
@@ -351,9 +400,12 @@ void UAbilityFunctions_C::GetRangeFromGameplayEffectContainerSpec(const struct F
 
 void UAbilityFunctions_C::GetProjectedTeleportLocation(class AActor* Actor, float MovementDistance, class UObject* __WorldContext, struct FVector* TargetLocation, const struct FVector& CallFunc_GetVelocity_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_VSize_ReturnValue, bool CallFunc_EqualEqual_FloatFloat_ReturnValue, bool CallFunc_EqualEqual_FloatFloat_ReturnValue_1, bool CallFunc_EqualEqual_FloatFloat_ReturnValue_2, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, const struct FVector& CallFunc_SelectVector_ReturnValue, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AbilityFunctions_C", "GetProjectedTeleportLocation");
+	static class UFunction* Func = nullptr;
 
-	Params::UAbilityFunctions_C_GetProjectedTeleportLocation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AbilityFunctions_C", "GetProjectedTeleportLocation");
+
+	Params::UAbilityFunctions_C_GetProjectedTeleportLocation_Params Parms{};
 
 	Parms.Actor = Actor;
 	Parms.MovementDistance = MovementDistance;
@@ -382,7 +434,7 @@ void UAbilityFunctions_C::GetProjectedTeleportLocation(class AActor* Actor, floa
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (TargetLocation != nullptr)
-		*TargetLocation = Parms.TargetLocation;
+		*TargetLocation = std::move(Parms.TargetLocation);
 
 }
 
@@ -402,9 +454,12 @@ void UAbilityFunctions_C::GetProjectedTeleportLocation(class AActor* Actor, floa
 
 bool UAbilityFunctions_C::ShouldSwordHitsHealRespondToEvent(const struct FGameplayEventData& Payload, class UObject* __WorldContext, bool CallFunc_HasAllTags_ReturnValue, bool CallFunc_HasAllTags_ReturnValue_1, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AbilityFunctions_C", "ShouldSwordHitsHealRespondToEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UAbilityFunctions_C_ShouldSwordHitsHealRespondToEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AbilityFunctions_C", "ShouldSwordHitsHealRespondToEvent");
+
+	Params::UAbilityFunctions_C_ShouldSwordHitsHealRespondToEvent_Params Parms{};
 
 	Parms.Payload = Payload;
 	Parms.__WorldContext = __WorldContext;
@@ -438,9 +493,12 @@ bool UAbilityFunctions_C::ShouldSwordHitsHealRespondToEvent(const struct FGamepl
 
 bool UAbilityFunctions_C::ShouldHammerHitsHealRespondToEvent(const struct FGameplayEventData& Payload, class UObject* __WorldContext, bool NewLocalVar_0, bool CallFunc_HasAllTags_ReturnValue, bool CallFunc_HasAllTags_ReturnValue_1, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AbilityFunctions_C", "ShouldHammerHitsHealRespondToEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UAbilityFunctions_C_ShouldHammerHitsHealRespondToEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AbilityFunctions_C", "ShouldHammerHitsHealRespondToEvent");
+
+	Params::UAbilityFunctions_C_ShouldHammerHitsHealRespondToEvent_Params Parms{};
 
 	Parms.Payload = Payload;
 	Parms.__WorldContext = __WorldContext;
@@ -469,9 +527,12 @@ bool UAbilityFunctions_C::ShouldHammerHitsHealRespondToEvent(const struct FGamep
 
 void UAbilityFunctions_C::ConvertRangeToTiles(float InRange, class UObject* __WorldContext, float* OutTile, float CallFunc_Divide_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AbilityFunctions_C", "ConvertRangeToTiles");
+	static class UFunction* Func = nullptr;
 
-	Params::UAbilityFunctions_C_ConvertRangeToTiles_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AbilityFunctions_C", "ConvertRangeToTiles");
+
+	Params::UAbilityFunctions_C_ConvertRangeToTiles_Params Parms{};
 
 	Parms.InRange = InRange;
 	Parms.__WorldContext = __WorldContext;
@@ -503,9 +564,12 @@ void UAbilityFunctions_C::ConvertRangeToTiles(float InRange, class UObject* __Wo
 
 void UAbilityFunctions_C::SetArrayOfHitActors(const struct FGameplayAbilityTargetDataHandle& TargetData, TArray<class AActor*>& ArrayToSet, class UObject* __WorldContext, int32 CallFunc_GetDataCountFromTargetData_ReturnValue, int32 Temp_int_Variable, int32 CallFunc_Subtract_IntInt_ReturnValue, TArray<class AActor*>& CallFunc_GetActorsFromTargetData_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, class AActor* CallFunc_Array_Get_Item, bool CallFunc_NotEqual_ObjectObject_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AbilityFunctions_C", "SetArrayOfHitActors");
+	static class UFunction* Func = nullptr;
 
-	Params::UAbilityFunctions_C_SetArrayOfHitActors_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AbilityFunctions_C", "SetArrayOfHitActors");
+
+	Params::UAbilityFunctions_C_SetArrayOfHitActors_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ArrayToSet = ArrayToSet;
@@ -542,11 +606,14 @@ void UAbilityFunctions_C::SetArrayOfHitActors(const struct FGameplayAbilityTarge
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Add_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAbilityFunctions_C::DoNOTUse_BuildArrayOfHitActors(const struct FGameplayAbilityTargetDataHandle& TargetData, class UObject* __WorldContext, TArray<class AActor*>* HitActors, const TArray<class AActor*>& LocalHitActors, int32 CallFunc_GetDataCountFromTargetData_ReturnValue, int32 Temp_int_Variable, int32 CallFunc_Subtract_IntInt_ReturnValue, TArray<class AActor*>& CallFunc_GetActorsFromTargetData_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, class AActor* CallFunc_Array_Get_Item, bool CallFunc_NotEqual_ObjectObject_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Add_ReturnValue)
+void UAbilityFunctions_C::DoNOTUseMinusBuildArrayOfHitActors(const struct FGameplayAbilityTargetDataHandle& TargetData, class UObject* __WorldContext, TArray<class AActor*>* HitActors, const TArray<class AActor*>& LocalHitActors, int32 CallFunc_GetDataCountFromTargetData_ReturnValue, int32 Temp_int_Variable, int32 CallFunc_Subtract_IntInt_ReturnValue, TArray<class AActor*>& CallFunc_GetActorsFromTargetData_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, class AActor* CallFunc_Array_Get_Item, bool CallFunc_NotEqual_ObjectObject_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Add_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AbilityFunctions_C", "DoNOTUse-BuildArrayOfHitActors");
+	static class UFunction* Func = nullptr;
 
-	Params::UAbilityFunctions_C_DoNOTUse_BuildArrayOfHitActors_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AbilityFunctions_C", "DoNOTUse-BuildArrayOfHitActors");
+
+	Params::UAbilityFunctions_C_DoNOTUseMinusBuildArrayOfHitActors_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.__WorldContext = __WorldContext;
@@ -564,12 +631,10 @@ void UAbilityFunctions_C::DoNOTUse_BuildArrayOfHitActors(const struct FGameplayA
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (HitActors != nullptr)
-		*HitActors = Parms.HitActors;
+		*HitActors = std::move(Parms.HitActors);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

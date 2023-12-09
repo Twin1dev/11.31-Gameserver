@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass BattlePassItemTracker.BattlePassItemTracker_C
+// (None)
+
+class UClass* UBattlePassItemTracker_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BattlePassItemTracker_C");
+
+	return Clss;
+}
+
+
+// BattlePassItemTracker_C BattlePassItemTracker.Default__BattlePassItemTracker_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBattlePassItemTracker_C* UBattlePassItemTracker_C::GetDefaultObj()
+{
+	static class UBattlePassItemTracker_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBattlePassItemTracker_C*>(UBattlePassItemTracker_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BattlePassItemTracker.BattlePassItemTracker_C.HandleInitialState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UBattlePassItemTracker_C::HandleInitialState(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassItemTracker_C", "HandleInitialState");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassItemTracker_C_HandleInitialState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassItemTracker_C", "HandleInitialState");
+
+	Params::UBattlePassItemTracker_C_HandleInitialState_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -40,9 +68,12 @@ void UBattlePassItemTracker_C::HandleInitialState(class UUMGSequencePlayer* Call
 
 void UBattlePassItemTracker_C::HandleNumberVisible(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassItemTracker_C", "HandleNumberVisible");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassItemTracker_C_HandleNumberVisible_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassItemTracker_C", "HandleNumberVisible");
+
+	Params::UBattlePassItemTracker_C_HandleNumberVisible_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -58,9 +89,12 @@ void UBattlePassItemTracker_C::HandleNumberVisible(class UUMGSequencePlayer* Cal
 
 void UBattlePassItemTracker_C::HandleIncrease(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassItemTracker_C", "HandleIncrease");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassItemTracker_C_HandleIncrease_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassItemTracker_C", "HandleIncrease");
+
+	Params::UBattlePassItemTracker_C_HandleIncrease_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -76,9 +110,12 @@ void UBattlePassItemTracker_C::HandleIncrease(class UUMGSequencePlayer* CallFunc
 
 void UBattlePassItemTracker_C::HandleIntro(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassItemTracker_C", "HandleIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassItemTracker_C_HandleIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassItemTracker_C", "HandleIntro");
+
+	Params::UBattlePassItemTracker_C_HandleIntro_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -95,9 +132,12 @@ void UBattlePassItemTracker_C::HandleIntro(class UUMGSequencePlayer* CallFunc_Pl
 
 void UBattlePassItemTracker_C::OnInterpEnded(class UCommonNumericTextBlock* NumericTextBlock, bool HadCompleted)
 {
-	static auto Func = Class->GetFunction("BattlePassItemTracker_C", "OnInterpEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassItemTracker_C_OnInterpEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassItemTracker_C", "OnInterpEnded");
+
+	Params::UBattlePassItemTracker_C_OnInterpEnded_Params Parms{};
 
 	Parms.NumericTextBlock = NumericTextBlock;
 	Parms.HadCompleted = HadCompleted;
@@ -113,12 +153,14 @@ void UBattlePassItemTracker_C::OnInterpEnded(class UCommonNumericTextBlock* Nume
 
 void UBattlePassItemTracker_C::OnInterpStarted()
 {
-	static auto Func = Class->GetFunction("BattlePassItemTracker_C", "OnInterpStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassItemTracker_C_OnInterpStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassItemTracker_C", "OnInterpStarted");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -132,9 +174,12 @@ void UBattlePassItemTracker_C::OnInterpStarted()
 
 void UBattlePassItemTracker_C::ExecuteUbergraph_BattlePassItemTracker(int32 EntryPoint, class UCommonNumericTextBlock* K2Node_Event_NumericTextBlock, bool K2Node_Event_HadCompleted)
 {
-	static auto Func = Class->GetFunction("BattlePassItemTracker_C", "ExecuteUbergraph_BattlePassItemTracker");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassItemTracker_C_ExecuteUbergraph_BattlePassItemTracker_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassItemTracker_C", "ExecuteUbergraph_BattlePassItemTracker");
+
+	Params::UBattlePassItemTracker_C_ExecuteUbergraph_BattlePassItemTracker_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_NumericTextBlock = K2Node_Event_NumericTextBlock;
@@ -146,6 +191,4 @@ void UBattlePassItemTracker_C::ExecuteUbergraph_BattlePassItemTracker(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

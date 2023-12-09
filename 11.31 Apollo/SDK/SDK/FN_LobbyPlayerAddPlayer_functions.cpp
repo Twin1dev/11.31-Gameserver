@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass LobbyPlayerAddPlayer.LobbyPlayerAddPlayer_C
+// (None)
+
+class UClass* ULobbyPlayerAddPlayer_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LobbyPlayerAddPlayer_C");
+
+	return Clss;
+}
+
+
+// LobbyPlayerAddPlayer_C LobbyPlayerAddPlayer.Default__LobbyPlayerAddPlayer_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULobbyPlayerAddPlayer_C* ULobbyPlayerAddPlayer_C::GetDefaultObj()
+{
+	static class ULobbyPlayerAddPlayer_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULobbyPlayerAddPlayer_C*>(ULobbyPlayerAddPlayer_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function LobbyPlayerAddPlayer.LobbyPlayerAddPlayer_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void ULobbyPlayerAddPlayer_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("LobbyPlayerAddPlayer_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyPlayerAddPlayer_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyPlayerAddPlayer_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void ULobbyPlayerAddPlayer_C::BP_OnHovered()
 
 void ULobbyPlayerAddPlayer_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("LobbyPlayerAddPlayer_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyPlayerAddPlayer_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyPlayerAddPlayer_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +85,12 @@ void ULobbyPlayerAddPlayer_C::BP_OnUnhovered()
 
 void ULobbyPlayerAddPlayer_C::ExecuteUbergraph_LobbyPlayerAddPlayer(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("LobbyPlayerAddPlayer_C", "ExecuteUbergraph_LobbyPlayerAddPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyPlayerAddPlayer_C_ExecuteUbergraph_LobbyPlayerAddPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyPlayerAddPlayer_C", "ExecuteUbergraph_LobbyPlayerAddPlayer");
+
+	Params::ULobbyPlayerAddPlayer_C_ExecuteUbergraph_LobbyPlayerAddPlayer_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimationReverse_ReturnValue = CallFunc_PlayAnimationReverse_ReturnValue;
@@ -70,6 +102,4 @@ void ULobbyPlayerAddPlayer_C::ExecuteUbergraph_LobbyPlayerAddPlayer(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

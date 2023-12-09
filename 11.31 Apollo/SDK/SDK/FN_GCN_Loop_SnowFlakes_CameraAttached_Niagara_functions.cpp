@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GCN_Loop_SnowFlakes_CameraAttached_Niagara.GCN_Loop_SnowFlakes_CameraAttached_Niagara_C
+// (Actor)
+
+class UClass* AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCN_Loop_SnowFlakes_CameraAttached_Niagara_C");
+
+	return Clss;
+}
+
+
+// GCN_Loop_SnowFlakes_CameraAttached_Niagara_C GCN_Loop_SnowFlakes_CameraAttached_Niagara.Default__GCN_Loop_SnowFlakes_CameraAttached_Niagara_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C* AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::GetDefaultObj()
+{
+	static class AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C*>(AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GCN_Loop_SnowFlakes_CameraAttached_Niagara.GCN_Loop_SnowFlakes_CameraAttached_Niagara_C.SpawnNiagara
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::SpawnNiagara()
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SnowFlakes_CameraAttached_Niagara_C", "SpawnNiagara");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C_SpawnNiagara_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SnowFlakes_CameraAttached_Niagara_C", "SpawnNiagara");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -43,9 +70,12 @@ void AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::SpawnNiagara()
 
 void AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::OnRemoval(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SnowFlakes_CameraAttached_Niagara_C", "OnRemoval");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C_OnRemoval_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SnowFlakes_CameraAttached_Niagara_C", "OnRemoval");
+
+	Params::AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C_OnRemoval_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -69,9 +99,12 @@ void AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::OnRemoval(class AActor* MyTa
 
 void AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::OnLoopingStart(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SnowFlakes_CameraAttached_Niagara_C", "OnLoopingStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C_OnLoopingStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SnowFlakes_CameraAttached_Niagara_C", "OnLoopingStart");
+
+	Params::AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C_OnLoopingStart_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -109,9 +142,12 @@ void AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::OnLoopingStart(class AActor*
 
 void AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::ExecuteUbergraph_GCN_Loop_SnowFlakes_CameraAttached_Niagara(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AActor* K2Node_Event_MyTarget_1, const struct FGameplayCueParameters& K2Node_Event_Parameters_1, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents_1, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents_1, class UCameraShake* K2Node_Event_BurstCameraShakeInstance, class ADecalActor* K2Node_Event_BurstDecalInstance, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsLocallyControlled_ReturnValue, bool CallFunc_K2_AttachToComponent_ReturnValue, bool CallFunc_IsActive_ReturnValue, class AActor* K2Node_Event_MyTarget, const struct FGameplayCueParameters& K2Node_Event_Parameters, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents, class UNiagaraSystem* CallFunc_GetAsset_ReturnValue, bool CallFunc_IsNiagaraEffectEnabled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SnowFlakes_CameraAttached_Niagara_C", "ExecuteUbergraph_GCN_Loop_SnowFlakes_CameraAttached_Niagara");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C_ExecuteUbergraph_GCN_Loop_SnowFlakes_CameraAttached_Niagara_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SnowFlakes_CameraAttached_Niagara_C", "ExecuteUbergraph_GCN_Loop_SnowFlakes_CameraAttached_Niagara");
+
+	Params::AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C_ExecuteUbergraph_GCN_Loop_SnowFlakes_CameraAttached_Niagara_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -140,6 +176,4 @@ void AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::ExecuteUbergraph_GCN_Loop_Sn
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

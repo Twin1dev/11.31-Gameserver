@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass MultiFactorAuthWidget.MultiFactorAuthWidget_C
+// (None)
+
+class UClass* UMultiFactorAuthWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MultiFactorAuthWidget_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// MultiFactorAuthWidget_C MultiFactorAuthWidget.Default__MultiFactorAuthWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMultiFactorAuthWidget_C* UMultiFactorAuthWidget_C::GetDefaultObj()
+{
+	static class UMultiFactorAuthWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMultiFactorAuthWidget_C*>(UMultiFactorAuthWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

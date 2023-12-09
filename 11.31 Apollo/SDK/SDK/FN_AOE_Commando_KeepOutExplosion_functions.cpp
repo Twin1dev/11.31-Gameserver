@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,19 +12,50 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass AOE_Commando_KeepOutExplosion.AOE_Commando_KeepOutExplosion_C
+// (Actor)
+
+class UClass* AAOE_Commando_KeepOutExplosion_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AOE_Commando_KeepOutExplosion_C");
+
+	return Clss;
+}
+
+
+// AOE_Commando_KeepOutExplosion_C AOE_Commando_KeepOutExplosion.Default__AOE_Commando_KeepOutExplosion_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AAOE_Commando_KeepOutExplosion_C* AAOE_Commando_KeepOutExplosion_C::GetDefaultObj()
+{
+	static class AAOE_Commando_KeepOutExplosion_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AAOE_Commando_KeepOutExplosion_C*>(AAOE_Commando_KeepOutExplosion_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AOE_Commando_KeepOutExplosion.AOE_Commando_KeepOutExplosion_C.OnRep_Radius
 // (HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSoundAttenuationSettings   CallFunc_BP_GetAttenuationSettingsToApply_OutAttenuationSettings ()
+// struct FSoundAttenuationSettings   CallFunc_BP_GetAttenuationSettingsToApply_OutAttenuationSettings (None)
 // bool                               CallFunc_BP_GetAttenuationSettingsToApply_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FVector                     CallFunc_MakeVector_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSoundAttenuationSettings   K2Node_MakeStruct_SoundAttenuationSettings                       ()
+// struct FSoundAttenuationSettings   K2Node_MakeStruct_SoundAttenuationSettings                       (None)
 
 void AAOE_Commando_KeepOutExplosion_C::OnRep_Radius(const struct FSoundAttenuationSettings& CallFunc_BP_GetAttenuationSettingsToApply_OutAttenuationSettings, bool CallFunc_BP_GetAttenuationSettingsToApply_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FSoundAttenuationSettings& K2Node_MakeStruct_SoundAttenuationSettings)
 {
-	static auto Func = Class->GetFunction("AOE_Commando_KeepOutExplosion_C", "OnRep_Radius");
+	static class UFunction* Func = nullptr;
 
-	Params::AAOE_Commando_KeepOutExplosion_C_OnRep_Radius_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AOE_Commando_KeepOutExplosion_C", "OnRep_Radius");
+
+	Params::AAOE_Commando_KeepOutExplosion_C_OnRep_Radius_Params Parms{};
 
 	Parms.CallFunc_BP_GetAttenuationSettingsToApply_OutAttenuationSettings = CallFunc_BP_GetAttenuationSettingsToApply_OutAttenuationSettings;
 	Parms.CallFunc_BP_GetAttenuationSettingsToApply_ReturnValue = CallFunc_BP_GetAttenuationSettingsToApply_ReturnValue;
@@ -46,9 +74,12 @@ void AAOE_Commando_KeepOutExplosion_C::OnRep_Radius(const struct FSoundAttenuati
 
 void AAOE_Commando_KeepOutExplosion_C::Send_Info(float Radius)
 {
-	static auto Func = Class->GetFunction("AOE_Commando_KeepOutExplosion_C", "Send_Info");
+	static class UFunction* Func = nullptr;
 
-	Params::AAOE_Commando_KeepOutExplosion_C_Send_Info_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AOE_Commando_KeepOutExplosion_C", "Send_Info");
+
+	Params::AAOE_Commando_KeepOutExplosion_C_Send_Info_Params Parms{};
 
 	Parms.Radius = Radius;
 
@@ -63,12 +94,14 @@ void AAOE_Commando_KeepOutExplosion_C::Send_Info(float Radius)
 
 void AAOE_Commando_KeepOutExplosion_C::ReceiveDestroyed()
 {
-	static auto Func = Class->GetFunction("AOE_Commando_KeepOutExplosion_C", "ReceiveDestroyed");
+	static class UFunction* Func = nullptr;
 
-	Params::AAOE_Commando_KeepOutExplosion_C_ReceiveDestroyed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AOE_Commando_KeepOutExplosion_C", "ReceiveDestroyed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -79,12 +112,14 @@ void AAOE_Commando_KeepOutExplosion_C::ReceiveDestroyed()
 
 void AAOE_Commando_KeepOutExplosion_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("AOE_Commando_KeepOutExplosion_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AAOE_Commando_KeepOutExplosion_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AOE_Commando_KeepOutExplosion_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -97,9 +132,12 @@ void AAOE_Commando_KeepOutExplosion_C::ReceiveBeginPlay()
 
 void AAOE_Commando_KeepOutExplosion_C::ExecuteUbergraph_AOE_Commando_KeepOutExplosion(int32 EntryPoint, float K2Node_CustomEvent_Radius)
 {
-	static auto Func = Class->GetFunction("AOE_Commando_KeepOutExplosion_C", "ExecuteUbergraph_AOE_Commando_KeepOutExplosion");
+	static class UFunction* Func = nullptr;
 
-	Params::AAOE_Commando_KeepOutExplosion_C_ExecuteUbergraph_AOE_Commando_KeepOutExplosion_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AOE_Commando_KeepOutExplosion_C", "ExecuteUbergraph_AOE_Commando_KeepOutExplosion");
+
+	Params::AAOE_Commando_KeepOutExplosion_C_ExecuteUbergraph_AOE_Commando_KeepOutExplosion_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_Radius = K2Node_CustomEvent_Radius;
@@ -110,6 +148,4 @@ void AAOE_Commando_KeepOutExplosion_C::ExecuteUbergraph_AOE_Commando_KeepOutExpl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

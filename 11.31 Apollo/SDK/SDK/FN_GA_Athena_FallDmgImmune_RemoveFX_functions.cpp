@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Athena_FallDmgImmune_RemoveFX.GA_Athena_FallDmgImmune_RemoveFX_C
+// (None)
+
+class UClass* UGA_Athena_FallDmgImmune_RemoveFX_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Athena_FallDmgImmune_RemoveFX_C");
+
+	return Clss;
+}
+
+
+// GA_Athena_FallDmgImmune_RemoveFX_C GA_Athena_FallDmgImmune_RemoveFX.Default__GA_Athena_FallDmgImmune_RemoveFX_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Athena_FallDmgImmune_RemoveFX_C* UGA_Athena_FallDmgImmune_RemoveFX_C::GetDefaultObj()
+{
+	static class UGA_Athena_FallDmgImmune_RemoveFX_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Athena_FallDmgImmune_RemoveFX_C*>(UGA_Athena_FallDmgImmune_RemoveFX_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Athena_FallDmgImmune_RemoveFX.GA_Athena_FallDmgImmune_RemoveFX_C.OnChange_FD84FE4040E65CB60551DE8433D51332
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UGA_Athena_FallDmgImmune_RemoveFX_C::OnChange_FD84FE4040E65CB60551DE8433D51332(enum class EMovementMode NewMovementMode)
 {
-	static auto Func = Class->GetFunction("GA_Athena_FallDmgImmune_RemoveFX_C", "OnChange_FD84FE4040E65CB60551DE8433D51332");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_FallDmgImmune_RemoveFX_C_OnChange_FD84FE4040E65CB60551DE8433D51332_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_FallDmgImmune_RemoveFX_C", "OnChange_FD84FE4040E65CB60551DE8433D51332");
+
+	Params::UGA_Athena_FallDmgImmune_RemoveFX_C_OnChange_FD84FE4040E65CB60551DE8433D51332_Params Parms{};
 
 	Parms.NewMovementMode = NewMovementMode;
 
@@ -40,9 +68,12 @@ void UGA_Athena_FallDmgImmune_RemoveFX_C::OnChange_FD84FE4040E65CB60551DE8433D51
 
 void UGA_Athena_FallDmgImmune_RemoveFX_C::OnChange_E07DC5494A7BED888E9B24AA514662A5(enum class EMovementMode NewMovementMode)
 {
-	static auto Func = Class->GetFunction("GA_Athena_FallDmgImmune_RemoveFX_C", "OnChange_E07DC5494A7BED888E9B24AA514662A5");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_FallDmgImmune_RemoveFX_C_OnChange_E07DC5494A7BED888E9B24AA514662A5_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_FallDmgImmune_RemoveFX_C", "OnChange_E07DC5494A7BED888E9B24AA514662A5");
+
+	Params::UGA_Athena_FallDmgImmune_RemoveFX_C_OnChange_E07DC5494A7BED888E9B24AA514662A5_Params Parms{};
 
 	Parms.NewMovementMode = NewMovementMode;
 
@@ -57,12 +88,14 @@ void UGA_Athena_FallDmgImmune_RemoveFX_C::OnChange_E07DC5494A7BED888E9B24AA51466
 
 void UGA_Athena_FallDmgImmune_RemoveFX_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Athena_FallDmgImmune_RemoveFX_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_FallDmgImmune_RemoveFX_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_FallDmgImmune_RemoveFX_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -73,12 +106,14 @@ void UGA_Athena_FallDmgImmune_RemoveFX_C::K2_ActivateAbility()
 
 void UGA_Athena_FallDmgImmune_RemoveFX_C::VehicleLandedCheck()
 {
-	static auto Func = Class->GetFunction("GA_Athena_FallDmgImmune_RemoveFX_C", "VehicleLandedCheck");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_FallDmgImmune_RemoveFX_C_VehicleLandedCheck_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_FallDmgImmune_RemoveFX_C", "VehicleLandedCheck");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -111,9 +146,12 @@ void UGA_Athena_FallDmgImmune_RemoveFX_C::VehicleLandedCheck()
 
 void UGA_Athena_FallDmgImmune_RemoveFX_C::ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class EMovementMode K2Node_CustomEvent_NewMovementMode_1, enum class EMovementMode Temp_byte_Variable, class UAbilityTask_WaitMovementModeChange* CallFunc_CreateWaitMovementModeChange_ReturnValue, bool CallFunc_IsValid_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, enum class EMovementMode K2Node_CustomEvent_NewMovementMode, enum class EMovementMode Temp_byte_Variable_1, class UAbilityTask_WaitMovementModeChange* CallFunc_CreateWaitMovementModeChange_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, TScriptInterface<class IFortVehicleInterface> CallFunc_GetVehicleUInterface_ReturnValue, bool CallFunc_IsInVehicle_ReturnValue, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue, bool CallFunc_IsTouchingGround_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Athena_FallDmgImmune_RemoveFX_C", "ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_FallDmgImmune_RemoveFX_C", "ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX");
+
+	Params::UGA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -144,6 +182,4 @@ void UGA_Athena_FallDmgImmune_RemoveFX_C::ExecuteUbergraph_GA_Athena_FallDmgImmu
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

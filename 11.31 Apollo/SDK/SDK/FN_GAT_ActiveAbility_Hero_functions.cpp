@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GAT_ActiveAbility_Hero.GAT_ActiveAbility_Hero_C
+// (None)
+
+class UClass* UGAT_ActiveAbility_Hero_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAT_ActiveAbility_Hero_C");
+
+	return Clss;
+}
+
+
+// GAT_ActiveAbility_Hero_C GAT_ActiveAbility_Hero.Default__GAT_ActiveAbility_Hero_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAT_ActiveAbility_Hero_C* UGAT_ActiveAbility_Hero_C::GetDefaultObj()
+{
+	static class UGAT_ActiveAbility_Hero_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAT_ActiveAbility_Hero_C*>(UGAT_ActiveAbility_Hero_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GAT_ActiveAbility_Hero.GAT_ActiveAbility_Hero_C.CommitAbilityWithEvent
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UGAT_ActiveAbility_Hero_C::CommitAbilityWithEvent(bool* Passed, bool CallFunc_K2_CommitAbility_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAT_ActiveAbility_Hero_C", "CommitAbilityWithEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_ActiveAbility_Hero_C_CommitAbilityWithEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_ActiveAbility_Hero_C", "CommitAbilityWithEvent");
+
+	Params::UGAT_ActiveAbility_Hero_C_CommitAbilityWithEvent_Params Parms{};
 
 	Parms.CallFunc_K2_CommitAbility_ReturnValue = CallFunc_K2_CommitAbility_ReturnValue;
 
@@ -43,12 +71,14 @@ void UGAT_ActiveAbility_Hero_C::CommitAbilityWithEvent(bool* Passed, bool CallFu
 
 void UGAT_ActiveAbility_Hero_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GAT_ActiveAbility_Hero_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_ActiveAbility_Hero_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_ActiveAbility_Hero_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -60,9 +90,12 @@ void UGAT_ActiveAbility_Hero_C::K2_ActivateAbility()
 
 void UGAT_ActiveAbility_Hero_C::ExecuteUbergraph_GAT_ActiveAbility_Hero(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("GAT_ActiveAbility_Hero_C", "ExecuteUbergraph_GAT_ActiveAbility_Hero");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_ActiveAbility_Hero_C_ExecuteUbergraph_GAT_ActiveAbility_Hero_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_ActiveAbility_Hero_C", "ExecuteUbergraph_GAT_ActiveAbility_Hero");
+
+	Params::UGAT_ActiveAbility_Hero_C_ExecuteUbergraph_GAT_ActiveAbility_Hero_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -72,6 +105,4 @@ void UGAT_ActiveAbility_Hero_C::ExecuteUbergraph_GAT_ActiveAbility_Hero(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

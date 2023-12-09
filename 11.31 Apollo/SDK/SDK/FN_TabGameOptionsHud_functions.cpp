@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TabGameOptionsHud.TabGameOptionsHud_C
+// (None)
+
+class UClass* UTabGameOptionsHud_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TabGameOptionsHud_C");
+
+	return Clss;
+}
+
+
+// TabGameOptionsHud_C TabGameOptionsHud.Default__TabGameOptionsHud_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTabGameOptionsHud_C* UTabGameOptionsHud_C::GetDefaultObj()
+{
+	static class UTabGameOptionsHud_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTabGameOptionsHud_C*>(UTabGameOptionsHud_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TabGameOptionsHud.TabGameOptionsHud_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UTabGameOptionsHud_C::Construct()
 {
-	static auto Func = Class->GetFunction("TabGameOptionsHud_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabGameOptionsHud_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabGameOptionsHud_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UTabGameOptionsHud_C::Construct()
 
 void UTabGameOptionsHud_C::UpdateOptionsTab()
 {
-	static auto Func = Class->GetFunction("TabGameOptionsHud_C", "UpdateOptionsTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabGameOptionsHud_C_UpdateOptionsTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabGameOptionsHud_C", "UpdateOptionsTab");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UTabGameOptionsHud_C::UpdateOptionsTab()
 
 void UTabGameOptionsHud_C::CenterOnTab()
 {
-	static auto Func = Class->GetFunction("TabGameOptionsHud_C", "CenterOnTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabGameOptionsHud_C_CenterOnTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabGameOptionsHud_C", "CenterOnTab");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -70,9 +101,12 @@ void UTabGameOptionsHud_C::CenterOnTab()
 
 void UTabGameOptionsHud_C::BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_37_OnListViewItemWidgetCreated__DelegateSignature(class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("TabGameOptionsHud_C", "BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_37_OnListViewItemWidgetCreated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabGameOptionsHud_C_BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_37_OnListViewItemWidgetCreated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabGameOptionsHud_C", "BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_37_OnListViewItemWidgetCreated__DelegateSignature");
+
+	Params::UTabGameOptionsHud_C_BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_37_OnListViewItemWidgetCreated__DelegateSignature_Params Parms{};
 
 	Parms.Widget = Widget;
 
@@ -89,9 +123,12 @@ void UTabGameOptionsHud_C::BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_
 
 void UTabGameOptionsHud_C::HUD_Changed(int32 Selected_Index, const struct FGameplayTag& Gameplay_Tag)
 {
-	static auto Func = Class->GetFunction("TabGameOptionsHud_C", "HUD Changed");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabGameOptionsHud_C_HUD_Changed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabGameOptionsHud_C", "HUD Changed");
+
+	Params::UTabGameOptionsHud_C_HUD_Changed_Params Parms{};
 
 	Parms.Selected_Index = Selected_Index;
 	Parms.Gameplay_Tag = Gameplay_Tag;
@@ -109,9 +146,12 @@ void UTabGameOptionsHud_C::HUD_Changed(int32 Selected_Index, const struct FGamep
 
 void UTabGameOptionsHud_C::BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature(class UObject* Item, class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("TabGameOptionsHud_C", "BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabGameOptionsHud_C_BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabGameOptionsHud_C", "BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature");
+
+	Params::UTabGameOptionsHud_C_BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.Widget = Widget;
@@ -139,9 +179,12 @@ void UTabGameOptionsHud_C::BndEvt__HUDCommonListView_K2Node_ComponentBoundEvent_
 
 void UTabGameOptionsHud_C::ExecuteUbergraph_TabGameOptionsHud(int32 EntryPoint, class UObject* K2Node_ComponentBoundEvent_Item, class UUserWidget* K2Node_ComponentBoundEvent_Widget, class UOptionsMenuHudRotator_C* K2Node_DynamicCast_AsOptions_Menu_Hud_Rotator, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUserWidget* K2Node_ComponentBoundEvent_Widget_1, class UOptionsMenuHudRotator_C* K2Node_DynamicCast_AsOptions_Menu_Hud_Rotator_1, bool K2Node_DynamicCast_bSuccess_1, int32 K2Node_CustomEvent_Selected_Index, const struct FGameplayTag& K2Node_CustomEvent_Gameplay_Tag, bool CallFunc_Conv_IntToBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TabGameOptionsHud_C", "ExecuteUbergraph_TabGameOptionsHud");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabGameOptionsHud_C", "ExecuteUbergraph_TabGameOptionsHud");
+
+	Params::UTabGameOptionsHud_C_ExecuteUbergraph_TabGameOptionsHud_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_Item = K2Node_ComponentBoundEvent_Item;
@@ -162,6 +205,4 @@ void UTabGameOptionsHud_C::ExecuteUbergraph_TabGameOptionsHud(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

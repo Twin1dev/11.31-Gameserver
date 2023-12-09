@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,17 +15,12 @@ class AB_Athena_Galileo_Lobster_Limo_C : public AB_Athena_Galileo_Lobster_Parent
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_Athena_Galileo_Lobster_Limo_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_Athena_Galileo_Lobster_Limo_C* GetDefaultObj();
 
 	void UserConstructionScript();
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

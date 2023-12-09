@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass UserListHeaderEntry.UserListHeaderEntry_C
+// (None)
+
+class UClass* UUserListHeaderEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UserListHeaderEntry_C");
+
+	return Clss;
+}
+
+
+// UserListHeaderEntry_C UserListHeaderEntry.Default__UserListHeaderEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UUserListHeaderEntry_C* UUserListHeaderEntry_C::GetDefaultObj()
+{
+	static class UUserListHeaderEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUserListHeaderEntry_C*>(UUserListHeaderEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function UserListHeaderEntry.UserListHeaderEntry_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UUserListHeaderEntry_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("UserListHeaderEntry_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserListHeaderEntry_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserListHeaderEntry_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UUserListHeaderEntry_C::BP_OnUnhovered()
 
 void UUserListHeaderEntry_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("UserListHeaderEntry_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserListHeaderEntry_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserListHeaderEntry_C", "BP_OnItemExpansionChanged");
+
+	Params::UUserListHeaderEntry_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -55,12 +85,14 @@ void UUserListHeaderEntry_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UUserListHeaderEntry_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("UserListHeaderEntry_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserListHeaderEntry_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserListHeaderEntry_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -72,9 +104,12 @@ void UUserListHeaderEntry_C::BP_OnHovered()
 
 void UUserListHeaderEntry_C::OnListItemObjectSet_1(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("UserListHeaderEntry_C", "OnListItemObjectSet_1");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserListHeaderEntry_C_OnListItemObjectSet_1_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserListHeaderEntry_C", "OnListItemObjectSet_1");
+
+	Params::UUserListHeaderEntry_C_OnListItemObjectSet_1_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -102,9 +137,12 @@ void UUserListHeaderEntry_C::OnListItemObjectSet_1(class UObject* ListItemObject
 
 void UUserListHeaderEntry_C::ExecuteUbergraph_UserListHeaderEntry(int32 EntryPoint, class UObject* K2Node_Event_ListItemObject, bool Temp_bool_Variable, enum class EUMGSequencePlayMode Temp_byte_Variable, enum class EUMGSequencePlayMode Temp_byte_Variable_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool K2Node_Event_bIsExpanded, enum class EUMGSequencePlayMode K2Node_Select_Default, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, float CallFunc_GetEndTime_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, bool CallFunc_IsListItemExpanded_ReturnValue)
 {
-	static auto Func = Class->GetFunction("UserListHeaderEntry_C", "ExecuteUbergraph_UserListHeaderEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UUserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UserListHeaderEntry_C", "ExecuteUbergraph_UserListHeaderEntry");
+
+	Params::UUserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_ListItemObject = K2Node_Event_ListItemObject;
@@ -126,6 +164,4 @@ void UUserListHeaderEntry_C::ExecuteUbergraph_UserListHeaderEntry(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

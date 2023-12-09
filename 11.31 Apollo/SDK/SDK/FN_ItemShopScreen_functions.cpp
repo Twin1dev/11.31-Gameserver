@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ItemShopScreen.ItemShopScreen_C
+// (None)
+
+class UClass* UItemShopScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemShopScreen_C");
+
+	return Clss;
+}
+
+
+// ItemShopScreen_C ItemShopScreen.Default__ItemShopScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemShopScreen_C* UItemShopScreen_C::GetDefaultObj()
+{
+	static class UItemShopScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemShopScreen_C*>(UItemShopScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ItemShopScreen.ItemShopScreen_C.OnSectionsEstablished
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UItemShopScreen_C::OnSectionsEstablished(bool bEmpty)
 {
-	static auto Func = Class->GetFunction("ItemShopScreen_C", "OnSectionsEstablished");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemShopScreen_C_OnSectionsEstablished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemShopScreen_C", "OnSectionsEstablished");
+
+	Params::UItemShopScreen_C_OnSectionsEstablished_Params Parms{};
 
 	Parms.bEmpty = bEmpty;
 
@@ -39,12 +67,14 @@ void UItemShopScreen_C::OnSectionsEstablished(bool bEmpty)
 
 void UItemShopScreen_C::OnEstablishingSections()
 {
-	static auto Func = Class->GetFunction("ItemShopScreen_C", "OnEstablishingSections");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemShopScreen_C_OnEstablishingSections_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemShopScreen_C", "OnEstablishingSections");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -59,9 +89,12 @@ void UItemShopScreen_C::OnEstablishingSections()
 
 void UItemShopScreen_C::ExecuteUbergraph_ItemShopScreen(int32 EntryPoint, bool K2Node_Event_bEmpty, bool Temp_bool_Variable, class UWidget* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ItemShopScreen_C", "ExecuteUbergraph_ItemShopScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemShopScreen_C_ExecuteUbergraph_ItemShopScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemShopScreen_C", "ExecuteUbergraph_ItemShopScreen");
+
+	Params::UItemShopScreen_C_ExecuteUbergraph_ItemShopScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bEmpty = K2Node_Event_bEmpty;
@@ -74,6 +107,4 @@ void UItemShopScreen_C::ExecuteUbergraph_ItemShopScreen(int32 EntryPoint, bool K
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

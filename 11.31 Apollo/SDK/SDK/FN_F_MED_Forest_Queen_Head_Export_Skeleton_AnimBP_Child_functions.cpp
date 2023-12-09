@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// AnimBlueprintGeneratedClass F_MED_Forest_Queen_Head_Export_Skeleton_AnimBP_Child.F_MED_Forest_Queen_Head_Export_Skeleton_AnimBP_Child_C
+// (None)
+
+class UClass* UF_MED_Forest_Queen_Head_Export_Skeleton_AnimBP_Child_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("F_MED_Forest_Queen_Head_Export_Skeleton_AnimBP_Child_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// F_MED_Forest_Queen_Head_Export_Skeleton_AnimBP_Child_C F_MED_Forest_Queen_Head_Export_Skeleton_AnimBP_Child.Default__F_MED_Forest_Queen_Head_Export_Skeleton_AnimBP_Child_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UF_MED_Forest_Queen_Head_Export_Skeleton_AnimBP_Child_C* UF_MED_Forest_Queen_Head_Export_Skeleton_AnimBP_Child_C::GetDefaultObj()
+{
+	static class UF_MED_Forest_Queen_Head_Export_Skeleton_AnimBP_Child_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UF_MED_Forest_Queen_Head_Export_Skeleton_AnimBP_Child_C*>(UF_MED_Forest_Queen_Head_Export_Skeleton_AnimBP_Child_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass CMSLobbyDirector.CMSLobbyDirector_C
+// (Actor)
+
+class UClass* ACMSLobbyDirector_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CMSLobbyDirector_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// CMSLobbyDirector_C CMSLobbyDirector.Default__CMSLobbyDirector_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ACMSLobbyDirector_C* ACMSLobbyDirector_C::GetDefaultObj()
+{
+	static class ACMSLobbyDirector_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ACMSLobbyDirector_C*>(ACMSLobbyDirector_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

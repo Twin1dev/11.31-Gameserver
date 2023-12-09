@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,16 +15,11 @@ class UMissionGen_Creative_ZebraWallet_Random_Generic_C : public UFortMissionGen
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MissionGen_Creative_ZebraWallet_Random_Generic_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMissionGen_Creative_ZebraWallet_Random_Generic_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

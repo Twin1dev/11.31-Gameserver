@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Border_TimerBox.Border_TimerBox_C
+// (None)
+
+class UClass* UBorder_TimerBox_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Border_TimerBox_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Border_TimerBox_C Border_TimerBox.Default__Border_TimerBox_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBorder_TimerBox_C* UBorder_TimerBox_C::GetDefaultObj()
+{
+	static class UBorder_TimerBox_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorder_TimerBox_C*>(UBorder_TimerBox_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass MissionGen_DeimosLarge.MissionGen_DeimosLarge_C
+// (None)
+
+class UClass* UMissionGen_DeimosLarge_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MissionGen_DeimosLarge_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// MissionGen_DeimosLarge_C MissionGen_DeimosLarge.Default__MissionGen_DeimosLarge_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMissionGen_DeimosLarge_C* UMissionGen_DeimosLarge_C::GetDefaultObj()
+{
+	static class UMissionGen_DeimosLarge_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMissionGen_DeimosLarge_C*>(UMissionGen_DeimosLarge_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

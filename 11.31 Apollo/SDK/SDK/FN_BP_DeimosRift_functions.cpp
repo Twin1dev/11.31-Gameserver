@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_DeimosRift.BP_DeimosRift_C
+// (Actor)
+
+class UClass* ABP_DeimosRift_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_DeimosRift_C");
+
+	return Clss;
+}
+
+
+// BP_DeimosRift_C BP_DeimosRift.Default__BP_DeimosRift_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_DeimosRift_C* ABP_DeimosRift_C::GetDefaultObj()
+{
+	static class ABP_DeimosRift_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_DeimosRift_C*>(ABP_DeimosRift_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_DeimosRift.BP_DeimosRift_C.FlashCubeMaterial
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void ABP_DeimosRift_C::FlashCubeMaterial(float Length, float CallFunc_GetGameTimeInSeconds_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_DeimosRift_C", "FlashCubeMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_DeimosRift_C_FlashCubeMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_DeimosRift_C", "FlashCubeMaterial");
+
+	Params::ABP_DeimosRift_C_FlashCubeMaterial_Params Parms{};
 
 	Parms.Length = Length;
 	Parms.CallFunc_GetGameTimeInSeconds_ReturnValue = CallFunc_GetGameTimeInSeconds_ReturnValue;
@@ -50,9 +78,12 @@ void ABP_DeimosRift_C::FlashCubeMaterial(float Length, float CallFunc_GetGameTim
 
 void ABP_DeimosRift_C::OnRep_DamageState(class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, bool K2Node_SwitchInteger_CmpSuccess, bool CallFunc_Greater_IntInt_ReturnValue_1, bool CallFunc_GreaterEqual_IntInt_ReturnValue, float CallFunc_Conv_BoolToFloat_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue_1, float CallFunc_Conv_BoolToFloat_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BP_DeimosRift_C", "OnRep_DamageState");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_DeimosRift_C_OnRep_DamageState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_DeimosRift_C", "OnRep_DamageState");
+
+	Params::ABP_DeimosRift_C_OnRep_DamageState_Params Parms{};
 
 	Parms.CallFunc_K2_GetRootComponent_ReturnValue = CallFunc_K2_GetRootComponent_ReturnValue;
 	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
@@ -79,9 +110,12 @@ void ABP_DeimosRift_C::OnRep_DamageState(class USceneComponent* CallFunc_K2_GetR
 
 void ABP_DeimosRift_C::UserConstructionScript(class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("BP_DeimosRift_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_DeimosRift_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_DeimosRift_C", "UserConstructionScript");
+
+	Params::ABP_DeimosRift_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_GetMaterial_ReturnValue = CallFunc_GetMaterial_ReturnValue;
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
@@ -106,9 +140,12 @@ void ABP_DeimosRift_C::UserConstructionScript(class UMaterialInterface* CallFunc
 
 void ABP_DeimosRift_C::OnDeathPlayEffects(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("BP_DeimosRift_C", "OnDeathPlayEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_DeimosRift_C_OnDeathPlayEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_DeimosRift_C", "OnDeathPlayEffects");
+
+	Params::ABP_DeimosRift_C_OnDeathPlayEffects_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -136,9 +173,12 @@ void ABP_DeimosRift_C::OnDeathPlayEffects(float Damage, struct FGameplayTagConta
 
 void ABP_DeimosRift_C::OnDeathServer(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("BP_DeimosRift_C", "OnDeathServer");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_DeimosRift_C_OnDeathServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_DeimosRift_C", "OnDeathServer");
+
+	Params::ABP_DeimosRift_C_OnDeathServer_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -159,12 +199,14 @@ void ABP_DeimosRift_C::OnDeathServer(float Damage, struct FGameplayTagContainer&
 
 void ABP_DeimosRift_C::BP_Cosmetic_Intro()
 {
-	static auto Func = Class->GetFunction("BP_DeimosRift_C", "BP_Cosmetic_Intro");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_DeimosRift_C_BP_Cosmetic_Intro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_DeimosRift_C", "BP_Cosmetic_Intro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -175,12 +217,14 @@ void ABP_DeimosRift_C::BP_Cosmetic_Intro()
 
 void ABP_DeimosRift_C::BP_Cosmetic_Idle()
 {
-	static auto Func = Class->GetFunction("BP_DeimosRift_C", "BP_Cosmetic_Idle");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_DeimosRift_C_BP_Cosmetic_Idle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_DeimosRift_C", "BP_Cosmetic_Idle");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -192,9 +236,12 @@ void ABP_DeimosRift_C::BP_Cosmetic_Idle()
 
 void ABP_DeimosRift_C::OnStartedEncounterSpawn(class AFortAIPawn* SpawnedAI)
 {
-	static auto Func = Class->GetFunction("BP_DeimosRift_C", "OnStartedEncounterSpawn");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_DeimosRift_C_OnStartedEncounterSpawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_DeimosRift_C", "OnStartedEncounterSpawn");
+
+	Params::ABP_DeimosRift_C_OnStartedEncounterSpawn_Params Parms{};
 
 	Parms.SpawnedAI = SpawnedAI;
 
@@ -209,12 +256,14 @@ void ABP_DeimosRift_C::OnStartedEncounterSpawn(class AFortAIPawn* SpawnedAI)
 
 void ABP_DeimosRift_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_DeimosRift_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_DeimosRift_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_DeimosRift_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -233,9 +282,12 @@ void ABP_DeimosRift_C::ReceiveBeginPlay()
 
 void ABP_DeimosRift_C::OnDamaged_Bind(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static auto Func = Class->GetFunction("BP_DeimosRift_C", "OnDamaged_Bind");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_DeimosRift_C_OnDamaged_Bind_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_DeimosRift_C", "OnDamaged_Bind");
+
+	Params::ABP_DeimosRift_C_OnDamaged_Bind_Params Parms{};
 
 	Parms.DamagedActor = DamagedActor;
 	Parms.Damage = Damage;
@@ -257,12 +309,14 @@ void ABP_DeimosRift_C::OnDamaged_Bind(class AActor* DamagedActor, float Damage, 
 
 void ABP_DeimosRift_C::BP_Cosmetic_ShouldDie()
 {
-	static auto Func = Class->GetFunction("BP_DeimosRift_C", "BP_Cosmetic_ShouldDie");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_DeimosRift_C_BP_Cosmetic_ShouldDie_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_DeimosRift_C", "BP_Cosmetic_ShouldDie");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -273,12 +327,14 @@ void ABP_DeimosRift_C::BP_Cosmetic_ShouldDie()
 
 void ABP_DeimosRift_C::OnBuildingRiftSpawnedAI_Bind()
 {
-	static auto Func = Class->GetFunction("BP_DeimosRift_C", "OnBuildingRiftSpawnedAI_Bind");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_DeimosRift_C_OnBuildingRiftSpawnedAI_Bind_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_DeimosRift_C", "OnBuildingRiftSpawnedAI_Bind");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -289,12 +345,14 @@ void ABP_DeimosRift_C::OnBuildingRiftSpawnedAI_Bind()
 
 void ABP_DeimosRift_C::TestDynamicRiftSpawn()
 {
-	static auto Func = Class->GetFunction("BP_DeimosRift_C", "TestDynamicRiftSpawn");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_DeimosRift_C_TestDynamicRiftSpawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_DeimosRift_C", "TestDynamicRiftSpawn");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -305,12 +363,14 @@ void ABP_DeimosRift_C::TestDynamicRiftSpawn()
 
 void ABP_DeimosRift_C::SpawnEffects()
 {
-	static auto Func = Class->GetFunction("BP_DeimosRift_C", "SpawnEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_DeimosRift_C_SpawnEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_DeimosRift_C", "SpawnEffects");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -321,12 +381,14 @@ void ABP_DeimosRift_C::SpawnEffects()
 
 void ABP_DeimosRift_C::BP_Cosmetic_RampUp()
 {
-	static auto Func = Class->GetFunction("BP_DeimosRift_C", "BP_Cosmetic_RampUp");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_DeimosRift_C_BP_Cosmetic_RampUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_DeimosRift_C", "BP_Cosmetic_RampUp");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -341,7 +403,7 @@ void ABP_DeimosRift_C::BP_Cosmetic_RampUp()
 // struct FHitResult                  K2Node_Event_HitInfo                                             (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AController*                 K2Node_Event_InstigatedBy                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       (None)
 // class UAbilitySystemComponent*     CallFunc_GetAbilitySystemComponent_ReturnValue                   (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetGameTimeInSeconds_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FActiveGameplayEffectHandle CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue                (NoDestructor, HasGetValueTypeHash)
@@ -381,15 +443,18 @@ void ABP_DeimosRift_C::BP_Cosmetic_RampUp()
 // struct FHitResult                  K2Node_Event_HitInfo_1                                           (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AFortPawn*                   K2Node_Event_InstigatedBy_1                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser_1                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext_1                                     ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext_1                                     (None)
 // struct FGameplayCueParameters      CallFunc_MakeGameplayCueParameters_ReturnValue_1                 (ContainsInstancedReference)
 // class USceneComponent*             CallFunc_K2_GetRootComponent_ReturnValue                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void ABP_DeimosRift_C::ExecuteUbergraph_BP_DeimosRift(int32 EntryPoint, float K2Node_Event_Damage, const struct FGameplayTagContainer& K2Node_Event_DamageTags, const struct FVector& K2Node_Event_Momentum, const struct FHitResult& K2Node_Event_HitInfo, class AController* K2Node_Event_InstigatedBy, class AActor* K2Node_Event_DamageCauser, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue, class AFortAIPawn* K2Node_Event_SpawnedAI, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class AActor* K2Node_CustomEvent_DamagedActor, float K2Node_CustomEvent_Damage, class AController* K2Node_CustomEvent_InstigatedBy, class AActor* K2Node_CustomEvent_DamageCauser, const struct FVector& K2Node_CustomEvent_HitLocation, class UPrimitiveComponent* K2Node_CustomEvent_FHitComponent, class FName K2Node_CustomEvent_BoneName, const struct FVector& K2Node_CustomEvent_Momentum, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_GetHealthPercent_ReturnValue, const struct FVector_NetQuantize10& K2Node_MakeStruct_Vector_NetQuantize10, bool CallFunc_LessEqual_FloatFloat_ReturnValue, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_IsValid_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue_1, bool CallFunc_HasAuthority_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue_1, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue_2, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue_2, float CallFunc_GetGameTimeInSeconds_ReturnValue_1, bool CallFunc_HasAuthority_ReturnValue_1, float K2Node_Event_Damage_1, const struct FGameplayTagContainer& K2Node_Event_DamageTags_1, const struct FVector& K2Node_Event_Momentum_1, const struct FHitResult& K2Node_Event_HitInfo_1, class AFortPawn* K2Node_Event_InstigatedBy_1, class AActor* K2Node_Event_DamageCauser_1, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext_1, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue_1, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_DeimosRift_C", "ExecuteUbergraph_BP_DeimosRift");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_DeimosRift_C_ExecuteUbergraph_BP_DeimosRift_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_DeimosRift_C", "ExecuteUbergraph_BP_DeimosRift");
+
+	Params::ABP_DeimosRift_C_ExecuteUbergraph_BP_DeimosRift_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_Damage = K2Node_Event_Damage;
@@ -448,6 +513,4 @@ void ABP_DeimosRift_C::ExecuteUbergraph_BP_DeimosRift(int32 EntryPoint, float K2
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

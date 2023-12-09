@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ImportFriends.ImportFriends_C
+// (None)
+
+class UClass* UImportFriends_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ImportFriends_C");
+
+	return Clss;
+}
+
+
+// ImportFriends_C ImportFriends.Default__ImportFriends_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UImportFriends_C* UImportFriends_C::GetDefaultObj()
+{
+	static class UImportFriends_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UImportFriends_C*>(UImportFriends_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ImportFriends.ImportFriends_C.ScaleTextButton
@@ -32,9 +57,12 @@ namespace SDK
 
 void UImportFriends_C::ScaleTextButton(int32 CharThreshold, class UScaleBox* ContainingScaleBox, class UIconTextButton_C* Button, float CallFunc_Conv_IntToFloat_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, int32 CallFunc_Len_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_FMax_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_FClamp_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ImportFriends_C", "ScaleTextButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UImportFriends_C_ScaleTextButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ImportFriends_C", "ScaleTextButton");
+
+	Params::UImportFriends_C_ScaleTextButton_Params Parms{};
 
 	Parms.CharThreshold = CharThreshold;
 	Parms.ContainingScaleBox = ContainingScaleBox;
@@ -62,7 +90,7 @@ void UImportFriends_C::ScaleTextButton(int32 CharThreshold, class UScaleBox* Con
 // int32                              WrapAtHorrizontal                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              ScaleCharThreshold                                               (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetText_ReturnValue                                     ()
+// class FText                        CallFunc_GetText_ReturnValue                                     (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 // float                              CallFunc_Conv_IntToFloat_ReturnValue_1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Len_ReturnValue                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -76,9 +104,12 @@ void UImportFriends_C::ScaleTextButton(int32 CharThreshold, class UScaleBox* Con
 
 void UImportFriends_C::ScaleTextboxWithWrappingWorkaround(class UScaleBox* ContainingScaleBox, int32 CharLimitThreshold, class UCommonTextBlock* TargetText, int32 WrapAtHorrizontal, float ScaleCharThreshold, float CallFunc_Conv_IntToFloat_ReturnValue, class FText CallFunc_GetText_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, int32 CallFunc_Len_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_2, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_FMax_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_FClamp_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_2, int32 CallFunc_FTrunc_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ImportFriends_C", "ScaleTextboxWithWrappingWorkaround");
+	static class UFunction* Func = nullptr;
 
-	Params::UImportFriends_C_ScaleTextboxWithWrappingWorkaround_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ImportFriends_C", "ScaleTextboxWithWrappingWorkaround");
+
+	Params::UImportFriends_C_ScaleTextboxWithWrappingWorkaround_Params Parms{};
 
 	Parms.ContainingScaleBox = ContainingScaleBox;
 	Parms.CharLimitThreshold = CharLimitThreshold;
@@ -110,9 +141,12 @@ void UImportFriends_C::ScaleTextboxWithWrappingWorkaround(class UScaleBox* Conta
 
 void UImportFriends_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("ImportFriends_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UImportFriends_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ImportFriends_C", "PreConstruct");
+
+	Params::UImportFriends_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -127,12 +161,14 @@ void UImportFriends_C::PreConstruct(bool IsDesignTime)
 
 void UImportFriends_C::HandleHeaderText()
 {
-	static auto Func = Class->GetFunction("ImportFriends_C", "HandleHeaderText");
+	static class UFunction* Func = nullptr;
 
-	Params::UImportFriends_C_HandleHeaderText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ImportFriends_C", "HandleHeaderText");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -143,12 +179,14 @@ void UImportFriends_C::HandleHeaderText()
 
 void UImportFriends_C::HandleDescriptionText()
 {
-	static auto Func = Class->GetFunction("ImportFriends_C", "HandleDescriptionText");
+	static class UFunction* Func = nullptr;
 
-	Params::UImportFriends_C_HandleDescriptionText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ImportFriends_C", "HandleDescriptionText");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -160,9 +198,12 @@ void UImportFriends_C::HandleDescriptionText()
 
 void UImportFriends_C::OnPanelTypeSet(enum class ESocialImportPanelType NewType)
 {
-	static auto Func = Class->GetFunction("ImportFriends_C", "OnPanelTypeSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UImportFriends_C_OnPanelTypeSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ImportFriends_C", "OnPanelTypeSet");
+
+	Params::UImportFriends_C_OnPanelTypeSet_Params Parms{};
 
 	Parms.NewType = NewType;
 
@@ -178,9 +219,12 @@ void UImportFriends_C::OnPanelTypeSet(enum class ESocialImportPanelType NewType)
 
 void UImportFriends_C::BndEvt__Button_RemindMeLater_K2Node_ComponentBoundEvent_796_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ImportFriends_C", "BndEvt__Button_RemindMeLater_K2Node_ComponentBoundEvent_796_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UImportFriends_C_BndEvt__Button_RemindMeLater_K2Node_ComponentBoundEvent_796_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ImportFriends_C", "BndEvt__Button_RemindMeLater_K2Node_ComponentBoundEvent_796_CommonButtonClicked__DelegateSignature");
+
+	Params::UImportFriends_C_BndEvt__Button_RemindMeLater_K2Node_ComponentBoundEvent_796_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -195,12 +239,14 @@ void UImportFriends_C::BndEvt__Button_RemindMeLater_K2Node_ComponentBoundEvent_7
 
 void UImportFriends_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("ImportFriends_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UImportFriends_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ImportFriends_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -212,9 +258,12 @@ void UImportFriends_C::BP_OnActivated()
 
 void UImportFriends_C::OnIncentivizedSet(bool bIncentivized)
 {
-	static auto Func = Class->GetFunction("ImportFriends_C", "OnIncentivizedSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UImportFriends_C_OnIncentivizedSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ImportFriends_C", "OnIncentivizedSet");
+
+	Params::UImportFriends_C_OnIncentivizedSet_Params Parms{};
 
 	Parms.bIncentivized = bIncentivized;
 
@@ -227,7 +276,7 @@ void UImportFriends_C::OnIncentivizedSet(bool bIncentivized)
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable                                               ()
+// class FText                        Temp_text_Variable                                               (None)
 // enum class ESocialImportPanelPlatformTemp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -251,10 +300,10 @@ void UImportFriends_C::OnIncentivizedSet(bool bIncentivized)
 // bool                               CallFunc_GetSocialPlatform_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortFrontEndContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_bIncentivized                                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default                                            ()
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
+// class FText                        K2Node_Select_Default                                            (None)
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
 // enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetEndTime_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -263,13 +312,16 @@ void UImportFriends_C::OnIncentivizedSet(bool bIncentivized)
 // class UIconTextButton_C*           K2Node_DynamicCast_AsIcon_Text_Button_1                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_2                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_3                                          ()
+// class FText                        K2Node_Select_Default_3                                          (None)
 
 void UImportFriends_C::ExecuteUbergraph_ImportFriends(int32 EntryPoint, class FText Temp_text_Variable, enum class ESocialImportPanelPlatform Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESocialImportPanelPlatform Temp_byte_Variable_7, enum class ESlateVisibility Temp_byte_Variable_8, enum class ESlateVisibility Temp_byte_Variable_9, enum class ESlateVisibility Temp_byte_Variable_10, enum class ESlateVisibility Temp_byte_Variable_11, enum class ESlateVisibility Temp_byte_Variable_12, enum class ESlateVisibility Temp_byte_Variable_13, enum class ESocialImportPanelPlatform Temp_byte_Variable_14, bool K2Node_Event_IsDesignTime, enum class ESocialImportPanelType K2Node_Event_NewType, enum class ESocialImportPanelPlatform Temp_byte_Variable_15, class UCommonButton* K2Node_ComponentBoundEvent_Button, enum class ESocialImportPanelPlatform CallFunc_GetSocialPlatform_OutPlatform, bool CallFunc_GetSocialPlatform_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, bool K2Node_Event_bIncentivized, class FText K2Node_Select_Default, class FText CallFunc_MakeLiteralText_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_1, class FText CallFunc_TextToUpper_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float CallFunc_GetEndTime_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button_1, bool K2Node_DynamicCast_bSuccess_1, enum class ESlateVisibility K2Node_Select_Default_2, class FText K2Node_Select_Default_3)
 {
-	static auto Func = Class->GetFunction("ImportFriends_C", "ExecuteUbergraph_ImportFriends");
+	static class UFunction* Func = nullptr;
 
-	Params::UImportFriends_C_ExecuteUbergraph_ImportFriends_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ImportFriends_C", "ExecuteUbergraph_ImportFriends");
+
+	Params::UImportFriends_C_ExecuteUbergraph_ImportFriends_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_text_Variable = Temp_text_Variable;
@@ -316,6 +368,4 @@ void UImportFriends_C::ExecuteUbergraph_ImportFriends(int32 EntryPoint, class FT
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

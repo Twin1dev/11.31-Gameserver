@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class USolarisArrayLibrary : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SolarisArrayLibrary");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USolarisArrayLibrary* GetDefaultObj();
 
 	int32 Num(TArray<int32>& Array);
 	int32 Add(TArray<int32>& Array, int32& New_item);
@@ -34,11 +28,8 @@ class USolarisMathLibrary_Bool : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SolarisMathLibrary_Bool");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USolarisMathLibrary_Bool* GetDefaultObj();
 
 	bool Logical_xor(bool LHS, bool RHS);
 	bool Logical_not(bool Value);
@@ -51,11 +42,8 @@ class USolarisMathLibrary_Int : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SolarisMathLibrary_Int");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USolarisMathLibrary_Int* GetDefaultObj();
 
 	int32 Subtract(int32 LHS, int32 RHS);
 	bool Not_equal(int32 LHS, int32 RHS);
@@ -80,11 +68,8 @@ class USolarisMathLibrary_Real : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SolarisMathLibrary_Real");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USolarisMathLibrary_Real* GetDefaultObj();
 
 	float Subtract(float LHS, float RHS);
 	bool Not_equal(float LHS, float RHS);
@@ -110,18 +95,13 @@ class USolarisGameSettings : public UObject
 public:
 	TArray<class FString>                        Blacklist;                                         // 0x28(0x10)(ZeroConstructor, Config, NativeAccessSpecifierPublic)
 	int32                                        MaxAllowedSize;                                    // 0x38(0x4)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2200[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1637[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SolarisGameSettings");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USolarisGameSettings* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

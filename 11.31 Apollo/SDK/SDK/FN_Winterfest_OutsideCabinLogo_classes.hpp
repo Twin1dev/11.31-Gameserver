@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -23,11 +20,8 @@ public:
 	class UImage*                                Image_51;                                          // 0x248(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class URetainerBox*                          PerspectiveSkew;                                   // 0x250(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("Winterfest_OutsideCabinLogo_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UWinterfest_OutsideCabinLogo_C* GetDefaultObj();
 
 	void LogoOutro(class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue);
 	void LogoIntro(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
@@ -37,6 +31,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

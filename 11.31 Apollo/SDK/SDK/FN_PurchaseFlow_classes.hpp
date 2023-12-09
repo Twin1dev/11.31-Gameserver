@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -17,13 +14,10 @@ namespace SDK
 class UPurchaseFlowJSBridge : public UObject
 {
 public:
-	uint8                                        Pad_1955[0x10];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_541[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("PurchaseFlowJSBridge");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UPurchaseFlowJSBridge* GetDefaultObj();
 
 	void RequestClose(const class FString& CloseInfo);
 	void Receipt(const struct FPurchaseFlowReceiptParam& Receipt);
@@ -36,6 +30,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

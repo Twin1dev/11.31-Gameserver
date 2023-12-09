@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaSpectateMatchModal.AthenaSpectateMatchModal_C
+// (None)
+
+class UClass* UAthenaSpectateMatchModal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaSpectateMatchModal_C");
+
+	return Clss;
+}
+
+
+// AthenaSpectateMatchModal_C AthenaSpectateMatchModal.Default__AthenaSpectateMatchModal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaSpectateMatchModal_C* UAthenaSpectateMatchModal_C::GetDefaultObj()
+{
+	static class UAthenaSpectateMatchModal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaSpectateMatchModal_C*>(UAthenaSpectateMatchModal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaSpectateMatchModal.AthenaSpectateMatchModal_C.BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAthenaSpectateMatchModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSpectateMatchModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSpectateMatchModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSpectateMatchModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSpectateMatchModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -40,9 +68,12 @@ void UAthenaSpectateMatchModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent
 
 void UAthenaSpectateMatchModal_C::BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_5_OnEditableTextChangedEvent__DelegateSignature(class FText& Text)
 {
-	static auto Func = Class->GetFunction("AthenaSpectateMatchModal_C", "BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_5_OnEditableTextChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_5_OnEditableTextChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSpectateMatchModal_C", "BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_5_OnEditableTextChangedEvent__DelegateSignature");
+
+	Params::UAthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_5_OnEditableTextChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Text = Text;
 
@@ -59,9 +90,12 @@ void UAthenaSpectateMatchModal_C::BndEvt__GameSessionSearchText_K2Node_Component
 
 void UAthenaSpectateMatchModal_C::BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature(class FText& Text, enum class ETextCommit CommitMethod)
 {
-	static auto Func = Class->GetFunction("AthenaSpectateMatchModal_C", "BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSpectateMatchModal_C", "BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature");
+
+	Params::UAthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.CommitMethod = CommitMethod;
@@ -78,9 +112,12 @@ void UAthenaSpectateMatchModal_C::BndEvt__GameSessionSearchText_K2Node_Component
 
 void UAthenaSpectateMatchModal_C::BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSpectateMatchModal_C", "BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSpectateMatchModal_C_BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSpectateMatchModal_C", "BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSpectateMatchModal_C_BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -95,12 +132,14 @@ void UAthenaSpectateMatchModal_C::BndEvt__SearchButton_K2Node_ComponentBoundEven
 
 void UAthenaSpectateMatchModal_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaSpectateMatchModal_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSpectateMatchModal_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSpectateMatchModal_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -112,9 +151,12 @@ void UAthenaSpectateMatchModal_C::Construct()
 
 void UAthenaSpectateMatchModal_C::CreateFriendList(TArray<class FString>& FriendsNames)
 {
-	static auto Func = Class->GetFunction("AthenaSpectateMatchModal_C", "CreateFriendList");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSpectateMatchModal_C_CreateFriendList_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSpectateMatchModal_C", "CreateFriendList");
+
+	Params::UAthenaSpectateMatchModal_C_CreateFriendList_Params Parms{};
 
 	Parms.FriendsNames = FriendsNames;
 
@@ -130,9 +172,12 @@ void UAthenaSpectateMatchModal_C::CreateFriendList(TArray<class FString>& Friend
 
 void UAthenaSpectateMatchModal_C::OnFriendNameClicked(class UCommonButton* ButtonClicked)
 {
-	static auto Func = Class->GetFunction("AthenaSpectateMatchModal_C", "OnFriendNameClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSpectateMatchModal_C_OnFriendNameClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSpectateMatchModal_C", "OnFriendNameClicked");
+
+	Params::UAthenaSpectateMatchModal_C_OnFriendNameClicked_Params Parms{};
 
 	Parms.ButtonClicked = ButtonClicked;
 
@@ -148,9 +193,12 @@ void UAthenaSpectateMatchModal_C::OnFriendNameClicked(class UCommonButton* Butto
 
 void UAthenaSpectateMatchModal_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AthenaSpectateMatchModal_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSpectateMatchModal_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSpectateMatchModal_C", "PreConstruct");
+
+	Params::UAthenaSpectateMatchModal_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -166,9 +214,12 @@ void UAthenaSpectateMatchModal_C::PreConstruct(bool IsDesignTime)
 
 void UAthenaSpectateMatchModal_C::BndEvt__JoinFriend_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSpectateMatchModal_C", "BndEvt__JoinFriend_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSpectateMatchModal_C_BndEvt__JoinFriend_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSpectateMatchModal_C", "BndEvt__JoinFriend_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSpectateMatchModal_C_BndEvt__JoinFriend_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -184,9 +235,12 @@ void UAthenaSpectateMatchModal_C::BndEvt__JoinFriend_K2Node_ComponentBoundEvent_
 
 void UAthenaSpectateMatchModal_C::BndEvt__JoinGame_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSpectateMatchModal_C", "BndEvt__JoinGame_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSpectateMatchModal_C_BndEvt__JoinGame_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSpectateMatchModal_C", "BndEvt__JoinGame_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSpectateMatchModal_C_BndEvt__JoinGame_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -201,12 +255,14 @@ void UAthenaSpectateMatchModal_C::BndEvt__JoinGame_K2Node_ComponentBoundEvent_2_
 
 void UAthenaSpectateMatchModal_C::RefreshFriendList()
 {
-	static auto Func = Class->GetFunction("AthenaSpectateMatchModal_C", "RefreshFriendList");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSpectateMatchModal_C_RefreshFriendList_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSpectateMatchModal_C", "RefreshFriendList");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -217,12 +273,14 @@ void UAthenaSpectateMatchModal_C::RefreshFriendList()
 
 void UAthenaSpectateMatchModal_C::Destruct()
 {
-	static auto Func = Class->GetFunction("AthenaSpectateMatchModal_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSpectateMatchModal_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSpectateMatchModal_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -233,12 +291,14 @@ void UAthenaSpectateMatchModal_C::Destruct()
 
 void UAthenaSpectateMatchModal_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("AthenaSpectateMatchModal_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSpectateMatchModal_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSpectateMatchModal_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -256,7 +316,7 @@ void UAthenaSpectateMatchModal_C::BP_OnActivated()
 // bool                               CallFunc_IsGameSessionString_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue_1                         (ZeroConstructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_2                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetText_ReturnValue                                     ()
+// class FText                        CallFunc_GetText_ReturnValue                                     (None)
 // TArray<class FString>              K2Node_CustomEvent_FriendsNames                                  (ConstParm, ZeroConstructor, ReferenceParm)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue_2                         (ZeroConstructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -274,7 +334,7 @@ void UAthenaSpectateMatchModal_C::BP_OnActivated()
 // TArray<class FString>              K2Node_MakeArray_Array                                           (ConstParm, ZeroConstructor, ReferenceParm)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Array_Get_Item                                          (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_1                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsVisible_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -291,9 +351,12 @@ void UAthenaSpectateMatchModal_C::BP_OnActivated()
 
 void UAthenaSpectateMatchModal_C::ExecuteUbergraph_AthenaSpectateMatchModal(int32 EntryPoint, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, class FText K2Node_ComponentBoundEvent_Text_1, class FText K2Node_ComponentBoundEvent_Text, enum class ETextCommit K2Node_ComponentBoundEvent_CommitMethod, const class FString& CallFunc_Conv_TextToString_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_IsGameSessionString_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class FText CallFunc_GetText_ReturnValue, TArray<class FString>& K2Node_CustomEvent_FriendsNames, const class FString& CallFunc_Conv_TextToString_ReturnValue_2, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class UCommonButton* K2Node_CustomEvent_ButtonClicked, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess, bool K2Node_Event_IsDesignTime, const class FString& CallFunc_Conv_TextToString_ReturnValue_3, TArray<class FString>& K2Node_MakeArray_Array, int32 Temp_int_Array_Index_Variable, const class FString& CallFunc_Array_Get_Item, class FText CallFunc_Conv_StringToText_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_IsVisible_ReturnValue, bool CallFunc_IsVisible_ReturnValue_1, TArray<class FString>& CallFunc_GetFriendNames_FriendNames, bool CallFunc_IsVisible_ReturnValue_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, class UUserWidget* CallFunc_BP_CreateEntry_ReturnValue, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button_1, bool K2Node_DynamicCast_bSuccess_1, bool Temp_bool_Variable, class UWidget* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaSpectateMatchModal_C", "ExecuteUbergraph_AthenaSpectateMatchModal");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSpectateMatchModal_C", "ExecuteUbergraph_AthenaSpectateMatchModal");
+
+	Params::UAthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_Button_3 = K2Node_ComponentBoundEvent_Button_3;
@@ -344,6 +407,4 @@ void UAthenaSpectateMatchModal_C::ExecuteUbergraph_AthenaSpectateMatchModal(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

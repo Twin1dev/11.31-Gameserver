@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_Ranged_Generic_Athena.B_Ranged_Generic_Athena_C
+// (Actor)
+
+class UClass* AB_Ranged_Generic_Athena_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Ranged_Generic_Athena_C");
+
+	return Clss;
+}
+
+
+// B_Ranged_Generic_Athena_C B_Ranged_Generic_Athena.Default__B_Ranged_Generic_Athena_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Ranged_Generic_Athena_C* AB_Ranged_Generic_Athena_C::GetDefaultObj()
+{
+	static class AB_Ranged_Generic_Athena_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Ranged_Generic_Athena_C*>(AB_Ranged_Generic_Athena_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function B_Ranged_Generic_Athena.B_Ranged_Generic_Athena_C.GetScopeParameters
@@ -25,9 +50,12 @@ namespace SDK
 
 void AB_Ranged_Generic_Athena_C::GetScopeParameters(class UStaticMeshComponent** ScopeComponent, struct FVector2D* DepthOfFieldVignetteRange, float* WeaponSightsCameraOffset, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "GetScopeParameters");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_GetScopeParameters_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "GetScopeParameters");
+
+	Params::AB_Ranged_Generic_Athena_C_GetScopeParameters_Params Parms{};
 
 	Parms.CallFunc_MakeVector2D_ReturnValue = CallFunc_MakeVector2D_ReturnValue;
 
@@ -37,7 +65,7 @@ void AB_Ranged_Generic_Athena_C::GetScopeParameters(class UStaticMeshComponent**
 		*ScopeComponent = Parms.ScopeComponent;
 
 	if (DepthOfFieldVignetteRange != nullptr)
-		*DepthOfFieldVignetteRange = Parms.DepthOfFieldVignetteRange;
+		*DepthOfFieldVignetteRange = std::move(Parms.DepthOfFieldVignetteRange);
 
 	if (WeaponSightsCameraOffset != nullptr)
 		*WeaponSightsCameraOffset = Parms.WeaponSightsCameraOffset;
@@ -58,9 +86,12 @@ void AB_Ranged_Generic_Athena_C::GetScopeParameters(class UStaticMeshComponent**
 
 void AB_Ranged_Generic_Athena_C::HandlePawnAndWeaponVisFor1PTargeting(bool IsTargeting, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_SetHiddenInGameControllerOnly_ReturnValue, bool CallFunc_SetHiddenInGameOtherLocalControllersOnly_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HandlePawnAndWeaponVisFor1PTargeting");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_HandlePawnAndWeaponVisFor1PTargeting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HandlePawnAndWeaponVisFor1PTargeting");
+
+	Params::AB_Ranged_Generic_Athena_C_HandlePawnAndWeaponVisFor1PTargeting_Params Parms{};
 
 	Parms.IsTargeting = IsTargeting;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
@@ -84,9 +115,12 @@ void AB_Ranged_Generic_Athena_C::HandlePawnAndWeaponVisFor1PTargeting(bool IsTar
 
 void AB_Ranged_Generic_Athena_C::ShowReticle(class AController* CallFunc_GetInstigatorController_ReturnValue, class AFortPlayerControllerZone* K2Node_DynamicCast_AsFort_Player_Controller_Zone, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShowReticle");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_ShowReticle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShowReticle");
+
+	Params::AB_Ranged_Generic_Athena_C_ShowReticle_Params Parms{};
 
 	Parms.CallFunc_GetInstigatorController_ReturnValue = CallFunc_GetInstigatorController_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Controller_Zone = K2Node_DynamicCast_AsFort_Player_Controller_Zone;
@@ -106,9 +140,12 @@ void AB_Ranged_Generic_Athena_C::ShowReticle(class AController* CallFunc_GetInst
 
 void AB_Ranged_Generic_Athena_C::HideReticle(class AController* CallFunc_GetInstigatorController_ReturnValue, class AFortPlayerControllerZone* K2Node_DynamicCast_AsFort_Player_Controller_Zone, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideReticle");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_HideReticle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideReticle");
+
+	Params::AB_Ranged_Generic_Athena_C_HideReticle_Params Parms{};
 
 	Parms.CallFunc_GetInstigatorController_ReturnValue = CallFunc_GetInstigatorController_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Controller_Zone = K2Node_DynamicCast_AsFort_Player_Controller_Zone;
@@ -125,12 +162,14 @@ void AB_Ranged_Generic_Athena_C::HideReticle(class AController* CallFunc_GetInst
 
 void AB_Ranged_Generic_Athena_C::HideIronSightsMesh()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideIronSightsMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_HideIronSightsMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideIronSightsMesh");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -142,9 +181,12 @@ void AB_Ranged_Generic_Athena_C::HideIronSightsMesh()
 
 void AB_Ranged_Generic_Athena_C::ActivateOrDeactivateWindParticle(bool bNewActive)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ActivateOrDeactivateWindParticle");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_ActivateOrDeactivateWindParticle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ActivateOrDeactivateWindParticle");
+
+	Params::AB_Ranged_Generic_Athena_C_ActivateOrDeactivateWindParticle_Params Parms{};
 
 	Parms.bNewActive = bNewActive;
 
@@ -159,12 +201,14 @@ void AB_Ranged_Generic_Athena_C::ActivateOrDeactivateWindParticle(bool bNewActiv
 
 void AB_Ranged_Generic_Athena_C::DeactivateMuzzleFX()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "DeactivateMuzzleFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_DeactivateMuzzleFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "DeactivateMuzzleFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -176,9 +220,12 @@ void AB_Ranged_Generic_Athena_C::DeactivateMuzzleFX()
 
 void AB_Ranged_Generic_Athena_C::DeactivateReloadSmokeFX(bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "DeactivateReloadSmokeFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_DeactivateReloadSmokeFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "DeactivateReloadSmokeFX");
+
+	Params::AB_Ranged_Generic_Athena_C_DeactivateReloadSmokeFX_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
@@ -194,9 +241,12 @@ void AB_Ranged_Generic_Athena_C::DeactivateReloadSmokeFX(bool CallFunc_IsValid_R
 
 void AB_Ranged_Generic_Athena_C::ActivateReloadSmokeFX(bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ActivateReloadSmokeFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_ActivateReloadSmokeFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ActivateReloadSmokeFX");
+
+	Params::AB_Ranged_Generic_Athena_C_ActivateReloadSmokeFX_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
@@ -212,9 +262,12 @@ void AB_Ranged_Generic_Athena_C::ActivateReloadSmokeFX(bool CallFunc_IsValid_Ret
 
 void AB_Ranged_Generic_Athena_C::ActivateShellsFX(bool Bool)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ActivateShellsFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_ActivateShellsFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ActivateShellsFX");
+
+	Params::AB_Ranged_Generic_Athena_C_ActivateShellsFX_Params Parms{};
 
 	Parms.Bool = Bool;
 
@@ -230,9 +283,12 @@ void AB_Ranged_Generic_Athena_C::ActivateShellsFX(bool Bool)
 
 void AB_Ranged_Generic_Athena_C::DeactivateShellsFX(bool CallFunc_IsActive_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "DeactivateShellsFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_DeactivateShellsFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "DeactivateShellsFX");
+
+	Params::AB_Ranged_Generic_Athena_C_DeactivateShellsFX_Params Parms{};
 
 	Parms.CallFunc_IsActive_ReturnValue = CallFunc_IsActive_ReturnValue;
 
@@ -251,9 +307,12 @@ void AB_Ranged_Generic_Athena_C::DeactivateShellsFX(bool CallFunc_IsActive_Retur
 
 void AB_Ranged_Generic_Athena_C::SetupShellFX(bool CallFunc_DoesSocketExist_ReturnValue, const struct FVector& CallFunc_Conv_FloatToVector_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_K2_AttachToComponent_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "SetupShellFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_SetupShellFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "SetupShellFX");
+
+	Params::AB_Ranged_Generic_Athena_C_SetupShellFX_Params Parms{};
 
 	Parms.CallFunc_DoesSocketExist_ReturnValue = CallFunc_DoesSocketExist_ReturnValue;
 	Parms.CallFunc_Conv_FloatToVector_ReturnValue = CallFunc_Conv_FloatToVector_ReturnValue;
@@ -297,9 +356,12 @@ void AB_Ranged_Generic_Athena_C::SetupShellFX(bool CallFunc_DoesSocketExist_Retu
 
 void AB_Ranged_Generic_Athena_C::UpdateShellEmittersFX(bool CallFunc_ShouldPlayPersistentFireFX_ReturnValue, bool CallFunc_ShouldPlayPersistentFireFX_ReturnValue_1, bool CallFunc_ShouldPlayPersistentFireFX_ReturnValue_2, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_ShouldPlayPersistentFireFX_ReturnValue_3, bool CallFunc_ShouldPlayPersistentFireFX_ReturnValue_4, bool CallFunc_ShouldPlayPersistentFireFX_ReturnValue_5, bool CallFunc_ShouldPlayPersistentFireFX_ReturnValue_6, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_ShouldPlayPersistentFireFX_ReturnValue_7, bool CallFunc_Not_PreBool_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue_4, int32 CallFunc_GetShellReloadCounter_ReturnValue, int32 CallFunc_Max_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_5, bool CallFunc_BooleanAND_ReturnValue_6, bool CallFunc_ShouldPlayPersistentFireFX_ReturnValue_8, bool CallFunc_Not_PreBool_ReturnValue_4, bool CallFunc_BooleanAND_ReturnValue_7, bool CallFunc_BooleanAND_ReturnValue_8)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "UpdateShellEmittersFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_UpdateShellEmittersFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "UpdateShellEmittersFX");
+
+	Params::AB_Ranged_Generic_Athena_C_UpdateShellEmittersFX_Params Parms{};
 
 	Parms.CallFunc_ShouldPlayPersistentFireFX_ReturnValue = CallFunc_ShouldPlayPersistentFireFX_ReturnValue;
 	Parms.CallFunc_ShouldPlayPersistentFireFX_ReturnValue_1 = CallFunc_ShouldPlayPersistentFireFX_ReturnValue_1;
@@ -341,9 +403,12 @@ void AB_Ranged_Generic_Athena_C::UpdateShellEmittersFX(bool CallFunc_ShouldPlayP
 
 void AB_Ranged_Generic_Athena_C::Muzzle_Play_Reload_FX(enum class EFortReloadFXState Selection, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "Muzzle Play Reload FX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_Muzzle_Play_Reload_FX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "Muzzle Play Reload FX");
+
+	Params::AB_Ranged_Generic_Athena_C_Muzzle_Play_Reload_FX_Params Parms{};
 
 	Parms.Selection = Selection;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
@@ -377,9 +442,12 @@ void AB_Ranged_Generic_Athena_C::Muzzle_Play_Reload_FX(enum class EFortReloadFXS
 
 void AB_Ranged_Generic_Athena_C::Muzzle_Flash_FX(bool Persistent_Fire, bool CallFunc_BooleanOR_ReturnValue, const struct FVector& CallFunc_GetMuzzleLocation_ReturnValue, bool CallFunc_UseFirstPersonTargeting_ReturnValue, bool CallFunc_IsUsingScope_ReturnValue, bool Temp_bool_Variable, bool CallFunc_Not_PreBool_ReturnValue, const struct FRotator& CallFunc_K2_GetComponentRotation_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, float CallFunc_Add_FloatFloat_ReturnValue, bool CallFunc_GetIsTargeting_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult, class UParticleSystemComponent* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "Muzzle Flash FX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_Muzzle_Flash_FX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "Muzzle Flash FX");
+
+	Params::AB_Ranged_Generic_Athena_C_Muzzle_Flash_FX_Params Parms{};
 
 	Parms.Persistent_Fire = Persistent_Fire;
 	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
@@ -411,12 +479,14 @@ void AB_Ranged_Generic_Athena_C::Muzzle_Flash_FX(bool Persistent_Fire, bool Call
 
 void AB_Ranged_Generic_Athena_C::SetWpnRarity()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "SetWpnRarity");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_SetWpnRarity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "SetWpnRarity");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -433,9 +503,12 @@ void AB_Ranged_Generic_Athena_C::SetWpnRarity()
 
 void AB_Ranged_Generic_Athena_C::AddRandomScale(float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue_2, const struct FVector& CallFunc_MakeVector_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "AddRandomScale");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_AddRandomScale_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "AddRandomScale");
+
+	Params::AB_Ranged_Generic_Athena_C_AddRandomScale_Params Parms{};
 
 	Parms.CallFunc_RandomFloatInRange_ReturnValue = CallFunc_RandomFloatInRange_ReturnValue;
 	Parms.CallFunc_RandomFloatInRange_ReturnValue_1 = CallFunc_RandomFloatInRange_ReturnValue_1;
@@ -465,9 +538,12 @@ void AB_Ranged_Generic_Athena_C::AddRandomScale(float CallFunc_RandomFloatInRang
 
 void AB_Ranged_Generic_Athena_C::UserConstructionScript(class FName CallFunc_GetMuzzleSocketName_ReturnValue, class FName CallFunc_GetMuzzleSocketName_ReturnValue_1, bool CallFunc_K2_AttachToComponent_ReturnValue, bool CallFunc_K2_AttachToComponent_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, float CallFunc_GetScalarParameterValue_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_K2_AttachToComponent_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "UserConstructionScript");
+
+	Params::AB_Ranged_Generic_Athena_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_GetMuzzleSocketName_ReturnValue = CallFunc_GetMuzzleSocketName_ReturnValue;
 	Parms.CallFunc_GetMuzzleSocketName_ReturnValue_1 = CallFunc_GetMuzzleSocketName_ReturnValue_1;
@@ -491,12 +567,14 @@ void AB_Ranged_Generic_Athena_C::UserConstructionScript(class FName CallFunc_Get
 
 void AB_Ranged_Generic_Athena_C::AnimateScopePostProcess__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "AnimateScopePostProcess__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_AnimateScopePostProcess__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "AnimateScopePostProcess__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -507,12 +585,14 @@ void AB_Ranged_Generic_Athena_C::AnimateScopePostProcess__FinishedFunc()
 
 void AB_Ranged_Generic_Athena_C::AnimateScopePostProcess__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "AnimateScopePostProcess__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_AnimateScopePostProcess__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "AnimateScopePostProcess__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -524,9 +604,12 @@ void AB_Ranged_Generic_Athena_C::AnimateScopePostProcess__UpdateFunc()
 
 void AB_Ranged_Generic_Athena_C::OnLoaded_43F549264BB135D3D385D4BB5846412A(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnLoaded_43F549264BB135D3D385D4BB5846412A");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_OnLoaded_43F549264BB135D3D385D4BB5846412A_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnLoaded_43F549264BB135D3D385D4BB5846412A");
+
+	Params::AB_Ranged_Generic_Athena_C_OnLoaded_43F549264BB135D3D385D4BB5846412A_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -542,9 +625,12 @@ void AB_Ranged_Generic_Athena_C::OnLoaded_43F549264BB135D3D385D4BB5846412A(class
 
 void AB_Ranged_Generic_Athena_C::OnLoaded_109F12F046377B483CA7FF92A795CBD2(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnLoaded_109F12F046377B483CA7FF92A795CBD2");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_OnLoaded_109F12F046377B483CA7FF92A795CBD2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnLoaded_109F12F046377B483CA7FF92A795CBD2");
+
+	Params::AB_Ranged_Generic_Athena_C_OnLoaded_109F12F046377B483CA7FF92A795CBD2_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -560,9 +646,12 @@ void AB_Ranged_Generic_Athena_C::OnLoaded_109F12F046377B483CA7FF92A795CBD2(class
 
 void AB_Ranged_Generic_Athena_C::OnLoaded_65280D504DA982E453E39BA22D9D1643(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnLoaded_65280D504DA982E453E39BA22D9D1643");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_OnLoaded_65280D504DA982E453E39BA22D9D1643_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnLoaded_65280D504DA982E453E39BA22D9D1643");
+
+	Params::AB_Ranged_Generic_Athena_C_OnLoaded_65280D504DA982E453E39BA22D9D1643_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -578,9 +667,12 @@ void AB_Ranged_Generic_Athena_C::OnLoaded_65280D504DA982E453E39BA22D9D1643(class
 
 void AB_Ranged_Generic_Athena_C::OnLoaded_351A9D71483BD9CF417705946595CB08(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnLoaded_351A9D71483BD9CF417705946595CB08");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_OnLoaded_351A9D71483BD9CF417705946595CB08_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnLoaded_351A9D71483BD9CF417705946595CB08");
+
+	Params::AB_Ranged_Generic_Athena_C_OnLoaded_351A9D71483BD9CF417705946595CB08_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -597,9 +689,12 @@ void AB_Ranged_Generic_Athena_C::OnLoaded_351A9D71483BD9CF417705946595CB08(class
 
 void AB_Ranged_Generic_Athena_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondaryFire)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnPlayWeaponFireFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_OnPlayWeaponFireFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnPlayWeaponFireFX");
+
+	Params::AB_Ranged_Generic_Athena_C_OnPlayWeaponFireFX_Params Parms{};
 
 	Parms.bPersistentFire = bPersistentFire;
 	Parms.bSecondaryFire = bSecondaryFire;
@@ -615,12 +710,14 @@ void AB_Ranged_Generic_Athena_C::OnPlayWeaponFireFX(bool bPersistentFire, bool b
 
 void AB_Ranged_Generic_Athena_C::OnStopWeaponFireFX()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnStopWeaponFireFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_OnStopWeaponFireFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnStopWeaponFireFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -632,9 +729,12 @@ void AB_Ranged_Generic_Athena_C::OnStopWeaponFireFX()
 
 void AB_Ranged_Generic_Athena_C::OnPlayReloadFX(enum class EFortReloadFXState ReloadStage)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnPlayReloadFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_OnPlayReloadFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnPlayReloadFX");
+
+	Params::AB_Ranged_Generic_Athena_C_OnPlayReloadFX_Params Parms{};
 
 	Parms.ReloadStage = ReloadStage;
 
@@ -650,9 +750,12 @@ void AB_Ranged_Generic_Athena_C::OnPlayReloadFX(enum class EFortReloadFXState Re
 
 void AB_Ranged_Generic_Athena_C::OnSetTargeting(bool bNewIsTargeting)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnSetTargeting");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_OnSetTargeting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnSetTargeting");
+
+	Params::AB_Ranged_Generic_Athena_C_OnSetTargeting_Params Parms{};
 
 	Parms.bNewIsTargeting = bNewIsTargeting;
 
@@ -667,12 +770,14 @@ void AB_Ranged_Generic_Athena_C::OnSetTargeting(bool bNewIsTargeting)
 
 void AB_Ranged_Generic_Athena_C::K2_OnUnEquip()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "K2_OnUnEquip");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_K2_OnUnEquip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "K2_OnUnEquip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -683,12 +788,14 @@ void AB_Ranged_Generic_Athena_C::K2_OnUnEquip()
 
 void AB_Ranged_Generic_Athena_C::InitializeScopeVariables()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "InitializeScopeVariables");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_InitializeScopeVariables_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "InitializeScopeVariables");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -701,9 +808,12 @@ void AB_Ranged_Generic_Athena_C::InitializeScopeVariables()
 
 void AB_Ranged_Generic_Athena_C::Update_Enemy_Custom_Depths(bool Enable_Or_Disable, int32 StencilBufferValue)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "Update Enemy Custom Depths");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_Update_Enemy_Custom_Depths_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "Update Enemy Custom Depths");
+
+	Params::AB_Ranged_Generic_Athena_C_Update_Enemy_Custom_Depths_Params Parms{};
 
 	Parms.Enable_Or_Disable = Enable_Or_Disable;
 	Parms.StencilBufferValue = StencilBufferValue;
@@ -719,12 +829,14 @@ void AB_Ranged_Generic_Athena_C::Update_Enemy_Custom_Depths(bool Enable_Or_Disab
 
 void AB_Ranged_Generic_Athena_C::OnWeaponAttached()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnWeaponAttached");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_OnWeaponAttached_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnWeaponAttached");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -736,9 +848,12 @@ void AB_Ranged_Generic_Athena_C::OnWeaponAttached()
 
 void AB_Ranged_Generic_Athena_C::OnInitAlteration(class UFortAlterationItemDefinition* NewAlteration)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnInitAlteration");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_OnInitAlteration_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnInitAlteration");
+
+	Params::AB_Ranged_Generic_Athena_C_OnInitAlteration_Params Parms{};
 
 	Parms.NewAlteration = NewAlteration;
 
@@ -754,9 +869,12 @@ void AB_Ranged_Generic_Athena_C::OnInitAlteration(class UFortAlterationItemDefin
 
 void AB_Ranged_Generic_Athena_C::OnInitCosmeticAlterations(const struct FFortCosmeticModification& CosmeticMod)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnInitCosmeticAlterations");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_OnInitCosmeticAlterations_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnInitCosmeticAlterations");
+
+	Params::AB_Ranged_Generic_Athena_C_OnInitCosmeticAlterations_Params Parms{};
 
 	Parms.CosmeticMod = CosmeticMod;
 
@@ -771,12 +889,14 @@ void AB_Ranged_Generic_Athena_C::OnInitCosmeticAlterations(const struct FFortCos
 
 void AB_Ranged_Generic_Athena_C::ShellsON__onPump_()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShellsON_(onPump)");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_ShellsON__onPump__Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShellsON_(onPump)");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -787,12 +907,14 @@ void AB_Ranged_Generic_Athena_C::ShellsON__onPump_()
 
 void AB_Ranged_Generic_Athena_C::OnEquippedWeaponDestory()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnEquippedWeaponDestory");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_OnEquippedWeaponDestory_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnEquippedWeaponDestory");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -805,9 +927,12 @@ void AB_Ranged_Generic_Athena_C::OnEquippedWeaponDestory()
 
 void AB_Ranged_Generic_Athena_C::SetWeaponPierceThrough(bool Enable, int32 TargetLimit)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "SetWeaponPierceThrough");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_SetWeaponPierceThrough_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "SetWeaponPierceThrough");
+
+	Params::AB_Ranged_Generic_Athena_C_SetWeaponPierceThrough_Params Parms{};
 
 	Parms.Enable = Enable;
 	Parms.TargetLimit = TargetLimit;
@@ -825,9 +950,12 @@ void AB_Ranged_Generic_Athena_C::SetWeaponPierceThrough(bool Enable, int32 Targe
 
 void AB_Ranged_Generic_Athena_C::SetWeaponPierceThrough_ClientRep(bool Enable, int32 TargetLimit)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "SetWeaponPierceThrough_ClientRep");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_SetWeaponPierceThrough_ClientRep_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "SetWeaponPierceThrough_ClientRep");
+
+	Params::AB_Ranged_Generic_Athena_C_SetWeaponPierceThrough_ClientRep_Params Parms{};
 
 	Parms.Enable = Enable;
 	Parms.TargetLimit = TargetLimit;
@@ -843,12 +971,14 @@ void AB_Ranged_Generic_Athena_C::SetWeaponPierceThrough_ClientRep(bool Enable, i
 
 void AB_Ranged_Generic_Athena_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -861,9 +991,12 @@ void AB_Ranged_Generic_Athena_C::ReceiveBeginPlay()
 
 void AB_Ranged_Generic_Athena_C::OnWeaponVisibilityChanged(bool bVisible, bool bSetForLocalControllerOnly)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnWeaponVisibilityChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_OnWeaponVisibilityChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "OnWeaponVisibilityChanged");
+
+	Params::AB_Ranged_Generic_Athena_C_OnWeaponVisibilityChanged_Params Parms{};
 
 	Parms.bVisible = bVisible;
 	Parms.bSetForLocalControllerOnly = bSetForLocalControllerOnly;
@@ -879,12 +1012,14 @@ void AB_Ranged_Generic_Athena_C::OnWeaponVisibilityChanged(bool bVisible, bool b
 
 void AB_Ranged_Generic_Athena_C::HideWeaponMesh()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideWeaponMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_HideWeaponMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideWeaponMesh");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -895,12 +1030,14 @@ void AB_Ranged_Generic_Athena_C::HideWeaponMesh()
 
 void AB_Ranged_Generic_Athena_C::ShowWeaponMesh()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShowWeaponMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_ShowWeaponMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShowWeaponMesh");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -911,12 +1048,14 @@ void AB_Ranged_Generic_Athena_C::ShowWeaponMesh()
 
 void AB_Ranged_Generic_Athena_C::HideGunMesh()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideGunMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_HideGunMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideGunMesh");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -927,12 +1066,14 @@ void AB_Ranged_Generic_Athena_C::HideGunMesh()
 
 void AB_Ranged_Generic_Athena_C::ShowGunMesh()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShowGunMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_ShowGunMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShowGunMesh");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -943,12 +1084,14 @@ void AB_Ranged_Generic_Athena_C::ShowGunMesh()
 
 void AB_Ranged_Generic_Athena_C::HideWeapon()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideWeapon");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_HideWeapon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "HideWeapon");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -959,12 +1102,14 @@ void AB_Ranged_Generic_Athena_C::HideWeapon()
 
 void AB_Ranged_Generic_Athena_C::ShowWeapon()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShowWeapon");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_ShowWeapon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ShowWeapon");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -997,7 +1142,7 @@ void AB_Ranged_Generic_Athena_C::ShowWeapon()
 // class UAudioComponent*             CallFunc_SpawnSoundAttached_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAudioComponent*             CallFunc_SpawnSoundAttached_ReturnValue_1                        (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortAlterationItemDefinition*K2Node_Event_NewAlteration                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortCosmeticModification   K2Node_Event_CosmeticMod                                         ()
+// struct FFortCosmeticModification   K2Node_Event_CosmeticMod                                         (None)
 // bool                               CallFunc_IsAssetNull_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsAssetNull_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1140,9 +1285,12 @@ void AB_Ranged_Generic_Athena_C::ShowWeapon()
 
 void AB_Ranged_Generic_Athena_C::ExecuteUbergraph_B_Ranged_Generic_Athena(int32 EntryPoint, float CallFunc_GetPI_ReturnValue, float CallFunc_MultiplyMultiply_FloatFloat_ReturnValue, bool CallFunc_UseFirstPersonTargeting_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, int32 Temp_int_Array_Index_Variable, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_1, bool K2Node_Event_bPersistentFire, bool K2Node_Event_bSecondaryFire, enum class EFortReloadFXState K2Node_Event_ReloadStage, float CallFunc_GetGameTimeInSeconds_ReturnValue, float K2Node_MathExpression_ReturnValue, bool K2Node_MathExpression_ReturnValue_1, bool K2Node_Event_bNewIsTargeting, bool CallFunc_SetHiddenInGameOtherLocalControllersOnly_ReturnValue, bool CallFunc_SetHiddenInGameControllerOnly_ReturnValue, bool CallFunc_SetHiddenInGameControllerOnly_ReturnValue_1, TArray<class AFortAIPawn*>& CallFunc_GetAllActorsOfClass_OutActors, bool K2Node_CustomEvent_Enable_Or_Disable, int32 K2Node_CustomEvent_StencilBufferValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue_1, class UFortAlterationItemDefinition* K2Node_Event_NewAlteration, const struct FFortCosmeticModification& K2Node_Event_CosmeticMod, bool CallFunc_IsAssetNull_ReturnValue, bool CallFunc_IsAssetNull_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsAssetNull_ReturnValue_2, bool CallFunc_IsAssetNull_ReturnValue_3, float CallFunc_GetTimeToNextFire_ReturnValue, int32 CallFunc_GetLocalMagazineAmmoCount_ReturnValue, float CallFunc_Multiply_IntFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, bool CallFunc_UseScopeTargeting_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, class UObject* Temp_object_Variable, class APawn* CallFunc_GetInstigator_ReturnValue, class UParticleSystem* K2Node_DynamicCast_AsParticle_System, bool K2Node_DynamicCast_bSuccess, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess_1, bool K2Node_CustomEvent_Enable_1, int32 K2Node_CustomEvent_TargetLimit_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, int32 CallFunc_SelectInt_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UObject* K2Node_CustomEvent_Loaded, bool K2Node_CustomEvent_Enable, int32 K2Node_CustomEvent_TargetLimit, int32 CallFunc_SelectInt_ReturnValue_1, bool CallFunc_IsUsingFirstPersonCamera_ReturnValue, bool CallFunc_IsUsingScopeOrFirstPersonCamera_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, class AController* CallFunc_GetInstigatorController_ReturnValue, class AFortPlayerControllerZone* K2Node_DynamicCast_AsFort_Player_Controller_Zone, bool K2Node_DynamicCast_bSuccess_2, class AFortWindManager* CallFunc_GetWindManager_ReturnValue, float CallFunc_GetADSTransitionInTime_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class APawn* CallFunc_GetInstigator_ReturnValue_1, class UObject* Temp_object_Variable_1, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn_1, bool K2Node_DynamicCast_bSuccess_3, class UParticleSystem* K2Node_DynamicCast_AsParticle_System_1, bool K2Node_DynamicCast_bSuccess_4, class APlayerController* CallFunc_GetLocalViewingPlayerController_ReturnValue, bool CallFunc_UseScopeTargeting_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, class APawn* CallFunc_GetInstigator_ReturnValue_2, int32 Temp_int_Loop_Counter_Variable, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn_2, bool K2Node_DynamicCast_bSuccess_5, class APlayerController* CallFunc_GetLocalViewingPlayerController_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, class APawn* CallFunc_GetInstigator_ReturnValue_3, class APawn* CallFunc_GetInstigator_ReturnValue_4, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn_3, bool K2Node_DynamicCast_bSuccess_6, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn_4, bool K2Node_DynamicCast_bSuccess_7, class APlayerController* CallFunc_GetLocalViewingPlayerController_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_4, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_1, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_2, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue_1, bool CallFunc_UseScopeTargeting_ReturnValue_2, bool K2Node_Event_bVisible, bool K2Node_Event_bSetForLocalControllerOnly, class UObject* K2Node_CustomEvent_Loaded_1, bool Temp_bool_Has_Been_Initd_Variable, int32 CallFunc_GetRenderingDetailMode_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, int32 CallFunc_GetRenderingDetailMode_ReturnValue_1, bool CallFunc_GetIsTargeting_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_GetIsTargeting_ReturnValue_1, TSoftObjectPtr<class UTexture2D> CallFunc_GetWeaponDataSmallPreviewImage_ReturnValue, bool CallFunc_ShouldPlayPersistentFireFX_ReturnValue, class UTexture2D* CallFunc_GetOrLoadSynchronously_ReturnValue, class UParticleSystemComponent* CallFunc_GetBeamPSC_ReturnValue, bool CallFunc_GetUseBeamParticles_ReturnValue, class UObject* Temp_object_Variable_2, bool CallFunc_BooleanAND_ReturnValue_2, class UParticleSystem* K2Node_DynamicCast_AsParticle_System_2, bool K2Node_DynamicCast_bSuccess_8, class UParticleSystem* CallFunc_SetBeamParticleSystem_ReturnValue, class UObject* K2Node_CustomEvent_Loaded_2, class UObject* Temp_object_Variable_3, class UParticleSystem* K2Node_DynamicCast_AsParticle_System_3, bool K2Node_DynamicCast_bSuccess_9, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UObject* K2Node_CustomEvent_Loaded_3, class AFortAIPawn* CallFunc_Array_Get_Item, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_IsValid_ReturnValue_5, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool Temp_bool_IsClosed_Variable, bool CallFunc_IsDedicatedServer_ReturnValue_2, const struct FTransform& CallFunc_GetSocketTransform_ReturnValue, const struct FTransform& CallFunc_GetSocketTransform_ReturnValue_1, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, const struct FVector& CallFunc_BreakTransform_Location_1, const struct FRotator& CallFunc_BreakTransform_Rotation_1, const struct FVector& CallFunc_BreakTransform_Scale_1, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, float CallFunc_Add_FloatFloat_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_3, float CallFunc_Divide_FloatFloat_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_4, float CallFunc_Multiply_FloatFloat_ReturnValue_2, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue_1, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult, float CallFunc_VSize_ReturnValue, bool CallFunc_DoesSocketExist_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_3, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue_2, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_3, float CallFunc_Divide_FloatFloat_ReturnValue_4, const struct FVector& CallFunc_MakeVector_ReturnValue_1, const struct FVector& CallFunc_MakeVector_ReturnValue_2, bool CallFunc_DoesSocketExist_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ExecuteUbergraph_B_Ranged_Generic_Athena");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Generic_Athena_C_ExecuteUbergraph_B_Ranged_Generic_Athena_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Generic_Athena_C", "ExecuteUbergraph_B_Ranged_Generic_Athena");
+
+	Params::AB_Ranged_Generic_Athena_C_ExecuteUbergraph_B_Ranged_Generic_Athena_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetPI_ReturnValue = CallFunc_GetPI_ReturnValue;
@@ -1316,6 +1464,4 @@ void AB_Ranged_Generic_Athena_C::ExecuteUbergraph_B_Ranged_Generic_Athena(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

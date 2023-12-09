@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass Galileo_LobsterLayerAnimBP.Galileo_LobsterLayerAnimBP_C
+// (None)
+
+class UClass* UGalileo_LobsterLayerAnimBP_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Galileo_LobsterLayerAnimBP_C");
+
+	return Clss;
+}
+
+
+// Galileo_LobsterLayerAnimBP_C Galileo_LobsterLayerAnimBP.Default__Galileo_LobsterLayerAnimBP_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGalileo_LobsterLayerAnimBP_C* UGalileo_LobsterLayerAnimBP_C::GetDefaultObj()
+{
+	static class UGalileo_LobsterLayerAnimBP_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGalileo_LobsterLayerAnimBP_C*>(UGalileo_LobsterLayerAnimBP_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Galileo_LobsterLayerAnimBP.Galileo_LobsterLayerAnimBP_C.ItemSkeletalControl
 // (HasOutParams, BlueprintCallable)
 // Parameters:
@@ -23,16 +48,19 @@ namespace SDK
 
 void UGalileo_LobsterLayerAnimBP_C::ItemSkeletalControl(const struct FPoseLink& InPose, struct FPoseLink* ItemSkeletalControl)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemSkeletalControl");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemSkeletalControl_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemSkeletalControl");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemSkeletalControl_Params Parms{};
 
 	Parms.InPose = InPose;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemSkeletalControl != nullptr)
-		*ItemSkeletalControl = Parms.ItemSkeletalControl;
+		*ItemSkeletalControl = std::move(Parms.ItemSkeletalControl);
 
 }
 
@@ -46,9 +74,12 @@ void UGalileo_LobsterLayerAnimBP_C::ItemSkeletalControl(const struct FPoseLink& 
 
 void UGalileo_LobsterLayerAnimBP_C::ItemUpperBody(const struct FPoseLink& InPoseUpperBody, const struct FFortAnimInput_AdjustedAim& InputParam, struct FPoseLink* ItemUpperBody)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemUpperBody");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemUpperBody_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemUpperBody");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemUpperBody_Params Parms{};
 
 	Parms.InPoseUpperBody = InPoseUpperBody;
 	Parms.InputParam = InputParam;
@@ -56,7 +87,7 @@ void UGalileo_LobsterLayerAnimBP_C::ItemUpperBody(const struct FPoseLink& InPose
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemUpperBody != nullptr)
-		*ItemUpperBody = Parms.ItemUpperBody;
+		*ItemUpperBody = std::move(Parms.ItemUpperBody);
 
 }
 
@@ -69,16 +100,19 @@ void UGalileo_LobsterLayerAnimBP_C::ItemUpperBody(const struct FPoseLink& InPose
 
 void UGalileo_LobsterLayerAnimBP_C::ItemFullBodySprint(const struct FPoseLink& InPoseSprint, struct FPoseLink* ItemFullBodySprint)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemFullBodySprint");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemFullBodySprint_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemFullBodySprint");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemFullBodySprint_Params Parms{};
 
 	Parms.InPoseSprint = InPoseSprint;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemFullBodySprint != nullptr)
-		*ItemFullBodySprint = Parms.ItemFullBodySprint;
+		*ItemFullBodySprint = std::move(Parms.ItemFullBodySprint);
 
 }
 
@@ -91,16 +125,19 @@ void UGalileo_LobsterLayerAnimBP_C::ItemFullBodySprint(const struct FPoseLink& I
 
 void UGalileo_LobsterLayerAnimBP_C::ItemIdleAdditive(const struct FPoseLink& InPoseIdleAdditive, struct FPoseLink* ItemIdleAdditive)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemIdleAdditive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemIdleAdditive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemIdleAdditive");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemIdleAdditive_Params Parms{};
 
 	Parms.InPoseIdleAdditive = InPoseIdleAdditive;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemIdleAdditive != nullptr)
-		*ItemIdleAdditive = Parms.ItemIdleAdditive;
+		*ItemIdleAdditive = std::move(Parms.ItemIdleAdditive);
 
 }
 
@@ -112,15 +149,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemIdleAdditive(const struct FPoseLink& InP
 
 void UGalileo_LobsterLayerAnimBP_C::ItemCrouchTurningAdditive(struct FPoseLink* ItemCrouchTurningAdditive)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemCrouchTurningAdditive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemCrouchTurningAdditive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemCrouchTurningAdditive");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemCrouchTurningAdditive_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemCrouchTurningAdditive != nullptr)
-		*ItemCrouchTurningAdditive = Parms.ItemCrouchTurningAdditive;
+		*ItemCrouchTurningAdditive = std::move(Parms.ItemCrouchTurningAdditive);
 
 }
 
@@ -132,15 +172,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemCrouchTurningAdditive(struct FPoseLink* 
 
 void UGalileo_LobsterLayerAnimBP_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeSliding)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemSlopeSliding");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemSlopeSliding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemSlopeSliding");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemSlopeSliding_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemSlopeSliding != nullptr)
-		*ItemSlopeSliding = Parms.ItemSlopeSliding;
+		*ItemSlopeSliding = std::move(Parms.ItemSlopeSliding);
 
 }
 
@@ -152,15 +195,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemSlopeSliding(struct FPoseLink* ItemSlope
 
 void UGalileo_LobsterLayerAnimBP_C::ItemJumpUpAdditive(struct FPoseLink* ItemJumpUpAdditive)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemJumpUpAdditive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemJumpUpAdditive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemJumpUpAdditive");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemJumpUpAdditive_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemJumpUpAdditive != nullptr)
-		*ItemJumpUpAdditive = Parms.ItemJumpUpAdditive;
+		*ItemJumpUpAdditive = std::move(Parms.ItemJumpUpAdditive);
 
 }
 
@@ -172,15 +218,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemJumpUpAdditive(struct FPoseLink* ItemJum
 
 void UGalileo_LobsterLayerAnimBP_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJumpLoopAdditive)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemJumpLoopAdditive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemJumpLoopAdditive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemJumpLoopAdditive");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemJumpLoopAdditive_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemJumpLoopAdditive != nullptr)
-		*ItemJumpLoopAdditive = Parms.ItemJumpLoopAdditive;
+		*ItemJumpLoopAdditive = std::move(Parms.ItemJumpLoopAdditive);
 
 }
 
@@ -192,15 +241,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJ
 
 void UGalileo_LobsterLayerAnimBP_C::ItemFallAdditive(struct FPoseLink* ItemFallAdditive)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemFallAdditive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemFallAdditive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemFallAdditive");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemFallAdditive_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemFallAdditive != nullptr)
-		*ItemFallAdditive = Parms.ItemFallAdditive;
+		*ItemFallAdditive = std::move(Parms.ItemFallAdditive);
 
 }
 
@@ -212,15 +264,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemFallAdditive(struct FPoseLink* ItemFallA
 
 void UGalileo_LobsterLayerAnimBP_C::ItemFallLandAdditive(struct FPoseLink* ItemFallLandAdditive)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemFallLandAdditive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemFallLandAdditive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemFallLandAdditive");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemFallLandAdditive_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemFallLandAdditive != nullptr)
-		*ItemFallLandAdditive = Parms.ItemFallLandAdditive;
+		*ItemFallLandAdditive = std::move(Parms.ItemFallLandAdditive);
 
 }
 
@@ -232,15 +287,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemFallLandAdditive(struct FPoseLink* ItemF
 
 void UGalileo_LobsterLayerAnimBP_C::ItemJetPackStartAdditive(struct FPoseLink* ItemJetPackStartAdditive)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemJetPackStartAdditive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemJetPackStartAdditive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemJetPackStartAdditive");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemJetPackStartAdditive_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemJetPackStartAdditive != nullptr)
-		*ItemJetPackStartAdditive = Parms.ItemJetPackStartAdditive;
+		*ItemJetPackStartAdditive = std::move(Parms.ItemJetPackStartAdditive);
 
 }
 
@@ -252,15 +310,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemJetPackStartAdditive(struct FPoseLink* I
 
 void UGalileo_LobsterLayerAnimBP_C::ItemJetPackJumpAdditive(struct FPoseLink* ItemJetPackJumpAdditive)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemJetPackJumpAdditive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemJetPackJumpAdditive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemJetPackJumpAdditive");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemJetPackJumpAdditive_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemJetPackJumpAdditive != nullptr)
-		*ItemJetPackJumpAdditive = Parms.ItemJetPackJumpAdditive;
+		*ItemJetPackJumpAdditive = std::move(Parms.ItemJetPackJumpAdditive);
 
 }
 
@@ -272,15 +333,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemJetPackJumpAdditive(struct FPoseLink* It
 
 void UGalileo_LobsterLayerAnimBP_C::ItemZipLineStartAdditive(struct FPoseLink* ItemZipLineStartAdditive)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemZipLineStartAdditive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemZipLineStartAdditive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemZipLineStartAdditive");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemZipLineStartAdditive_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemZipLineStartAdditive != nullptr)
-		*ItemZipLineStartAdditive = Parms.ItemZipLineStartAdditive;
+		*ItemZipLineStartAdditive = std::move(Parms.ItemZipLineStartAdditive);
 
 }
 
@@ -292,15 +356,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemZipLineStartAdditive(struct FPoseLink* I
 
 void UGalileo_LobsterLayerAnimBP_C::ItemFlyModeStartAdditive(struct FPoseLink* ItemFlyModeStartAdditive)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemFlyModeStartAdditive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemFlyModeStartAdditive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemFlyModeStartAdditive");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemFlyModeStartAdditive_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemFlyModeStartAdditive != nullptr)
-		*ItemFlyModeStartAdditive = Parms.ItemFlyModeStartAdditive;
+		*ItemFlyModeStartAdditive = std::move(Parms.ItemFlyModeStartAdditive);
 
 }
 
@@ -312,15 +379,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemFlyModeStartAdditive(struct FPoseLink* I
 
 void UGalileo_LobsterLayerAnimBP_C::ItemFlyModeLoopAdditive(struct FPoseLink* ItemFlyModeLoopAdditive)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemFlyModeLoopAdditive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemFlyModeLoopAdditive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemFlyModeLoopAdditive");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemFlyModeLoopAdditive_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemFlyModeLoopAdditive != nullptr)
-		*ItemFlyModeLoopAdditive = Parms.ItemFlyModeLoopAdditive;
+		*ItemFlyModeLoopAdditive = std::move(Parms.ItemFlyModeLoopAdditive);
 
 }
 
@@ -333,16 +403,19 @@ void UGalileo_LobsterLayerAnimBP_C::ItemFlyModeLoopAdditive(struct FPoseLink* It
 
 void UGalileo_LobsterLayerAnimBP_C::ItemJogStartAdditive(const struct FPoseLink& InPoseJogStartAdditive, struct FPoseLink* ItemJogStartAdditive)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemJogStartAdditive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemJogStartAdditive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemJogStartAdditive");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemJogStartAdditive_Params Parms{};
 
 	Parms.InPoseJogStartAdditive = InPoseJogStartAdditive;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemJogStartAdditive != nullptr)
-		*ItemJogStartAdditive = Parms.ItemJogStartAdditive;
+		*ItemJogStartAdditive = std::move(Parms.ItemJogStartAdditive);
 
 }
 
@@ -355,16 +428,19 @@ void UGalileo_LobsterLayerAnimBP_C::ItemJogStartAdditive(const struct FPoseLink&
 
 void UGalileo_LobsterLayerAnimBP_C::ItemJogStopAdditive(const struct FPoseLink& InPoseJogStopAdditive, struct FPoseLink* ItemJogStopAdditive)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemJogStopAdditive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemJogStopAdditive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemJogStopAdditive");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemJogStopAdditive_Params Parms{};
 
 	Parms.InPoseJogStopAdditive = InPoseJogStopAdditive;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemJogStopAdditive != nullptr)
-		*ItemJogStopAdditive = Parms.ItemJogStopAdditive;
+		*ItemJogStopAdditive = std::move(Parms.ItemJogStopAdditive);
 
 }
 
@@ -377,16 +453,19 @@ void UGalileo_LobsterLayerAnimBP_C::ItemJogStopAdditive(const struct FPoseLink& 
 
 void UGalileo_LobsterLayerAnimBP_C::ItemJogPrePivotAdditive(const struct FPoseLink& InPosePrePivotAdditive, struct FPoseLink* ItemJogPrePivotAdditive)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemJogPrePivotAdditive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemJogPrePivotAdditive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemJogPrePivotAdditive");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemJogPrePivotAdditive_Params Parms{};
 
 	Parms.InPosePrePivotAdditive = InPosePrePivotAdditive;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemJogPrePivotAdditive != nullptr)
-		*ItemJogPrePivotAdditive = Parms.ItemJogPrePivotAdditive;
+		*ItemJogPrePivotAdditive = std::move(Parms.ItemJogPrePivotAdditive);
 
 }
 
@@ -399,16 +478,19 @@ void UGalileo_LobsterLayerAnimBP_C::ItemJogPrePivotAdditive(const struct FPoseLi
 
 void UGalileo_LobsterLayerAnimBP_C::ItemJogPostPivotAdditive(const struct FPoseLink& InPosePostPivotAdditive, struct FPoseLink* ItemJogPostPivotAdditive)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemJogPostPivotAdditive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemJogPostPivotAdditive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemJogPostPivotAdditive");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemJogPostPivotAdditive_Params Parms{};
 
 	Parms.InPosePostPivotAdditive = InPosePostPivotAdditive;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemJogPostPivotAdditive != nullptr)
-		*ItemJogPostPivotAdditive = Parms.ItemJogPostPivotAdditive;
+		*ItemJogPostPivotAdditive = std::move(Parms.ItemJogPostPivotAdditive);
 
 }
 
@@ -421,16 +503,19 @@ void UGalileo_LobsterLayerAnimBP_C::ItemJogPostPivotAdditive(const struct FPoseL
 
 void UGalileo_LobsterLayerAnimBP_C::ItemLowerBodyMovement(const struct FPoseLink& InPoseLowerBodyMovement, struct FPoseLink* ItemLowerBodyMovement)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemLowerBodyMovement");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemLowerBodyMovement_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemLowerBodyMovement");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemLowerBodyMovement_Params Parms{};
 
 	Parms.InPoseLowerBodyMovement = InPoseLowerBodyMovement;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemLowerBodyMovement != nullptr)
-		*ItemLowerBodyMovement = Parms.ItemLowerBodyMovement;
+		*ItemLowerBodyMovement = std::move(Parms.ItemLowerBodyMovement);
 
 }
 
@@ -443,16 +528,19 @@ void UGalileo_LobsterLayerAnimBP_C::ItemLowerBodyMovement(const struct FPoseLink
 
 void UGalileo_LobsterLayerAnimBP_C::ItemLowerBodyLeanAdditive(const struct FPoseLink& InPoseLowerBodyLeanAdditive, struct FPoseLink* ItemLowerBodyLeanAdditive)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemLowerBodyLeanAdditive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemLowerBodyLeanAdditive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemLowerBodyLeanAdditive");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemLowerBodyLeanAdditive_Params Parms{};
 
 	Parms.InPoseLowerBodyLeanAdditive = InPoseLowerBodyLeanAdditive;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemLowerBodyLeanAdditive != nullptr)
-		*ItemLowerBodyLeanAdditive = Parms.ItemLowerBodyLeanAdditive;
+		*ItemLowerBodyLeanAdditive = std::move(Parms.ItemLowerBodyLeanAdditive);
 
 }
 
@@ -465,16 +553,19 @@ void UGalileo_LobsterLayerAnimBP_C::ItemLowerBodyLeanAdditive(const struct FPose
 
 void UGalileo_LobsterLayerAnimBP_C::ItemLowerBodyJogStart(const struct FPoseLink& InPoseLowerBodyJogStart, struct FPoseLink* ItemLowerBodyJogStart)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemLowerBodyJogStart");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemLowerBodyJogStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemLowerBodyJogStart");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemLowerBodyJogStart_Params Parms{};
 
 	Parms.InPoseLowerBodyJogStart = InPoseLowerBodyJogStart;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemLowerBodyJogStart != nullptr)
-		*ItemLowerBodyJogStart = Parms.ItemLowerBodyJogStart;
+		*ItemLowerBodyJogStart = std::move(Parms.ItemLowerBodyJogStart);
 
 }
 
@@ -487,16 +578,19 @@ void UGalileo_LobsterLayerAnimBP_C::ItemLowerBodyJogStart(const struct FPoseLink
 
 void UGalileo_LobsterLayerAnimBP_C::ItemLowerBodyJogStop(const struct FPoseLink& InPoseLowerBodyJogStop, struct FPoseLink* ItemLowerBodyJogStop)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemLowerBodyJogStop");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemLowerBodyJogStop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemLowerBodyJogStop");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemLowerBodyJogStop_Params Parms{};
 
 	Parms.InPoseLowerBodyJogStop = InPoseLowerBodyJogStop;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemLowerBodyJogStop != nullptr)
-		*ItemLowerBodyJogStop = Parms.ItemLowerBodyJogStop;
+		*ItemLowerBodyJogStop = std::move(Parms.ItemLowerBodyJogStop);
 
 }
 
@@ -509,16 +603,19 @@ void UGalileo_LobsterLayerAnimBP_C::ItemLowerBodyJogStop(const struct FPoseLink&
 
 void UGalileo_LobsterLayerAnimBP_C::ItemLowerBodyJogPrePivot(const struct FPoseLink& InPoseLowerBodyJogPrePivot, struct FPoseLink* ItemLowerBodyJogPrePivot)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemLowerBodyJogPrePivot");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemLowerBodyJogPrePivot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemLowerBodyJogPrePivot");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemLowerBodyJogPrePivot_Params Parms{};
 
 	Parms.InPoseLowerBodyJogPrePivot = InPoseLowerBodyJogPrePivot;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemLowerBodyJogPrePivot != nullptr)
-		*ItemLowerBodyJogPrePivot = Parms.ItemLowerBodyJogPrePivot;
+		*ItemLowerBodyJogPrePivot = std::move(Parms.ItemLowerBodyJogPrePivot);
 
 }
 
@@ -531,16 +628,19 @@ void UGalileo_LobsterLayerAnimBP_C::ItemLowerBodyJogPrePivot(const struct FPoseL
 
 void UGalileo_LobsterLayerAnimBP_C::ItemLowerBodyJogPostPivot(const struct FPoseLink& InPoseLowerBodyJogPostPivot, struct FPoseLink* ItemLowerBodyJogPostPivot)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemLowerBodyJogPostPivot");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemLowerBodyJogPostPivot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemLowerBodyJogPostPivot");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemLowerBodyJogPostPivot_Params Parms{};
 
 	Parms.InPoseLowerBodyJogPostPivot = InPoseLowerBodyJogPostPivot;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemLowerBodyJogPostPivot != nullptr)
-		*ItemLowerBodyJogPostPivot = Parms.ItemLowerBodyJogPostPivot;
+		*ItemLowerBodyJogPostPivot = std::move(Parms.ItemLowerBodyJogPostPivot);
 
 }
 
@@ -553,16 +653,19 @@ void UGalileo_LobsterLayerAnimBP_C::ItemLowerBodyJogPostPivot(const struct FPose
 
 void UGalileo_LobsterLayerAnimBP_C::ItemRelaxedEntry(const struct FPoseLink& InPoseRelaxedEntry, struct FPoseLink* ItemRelaxedEntry)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemRelaxedEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemRelaxedEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemRelaxedEntry");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemRelaxedEntry_Params Parms{};
 
 	Parms.InPoseRelaxedEntry = InPoseRelaxedEntry;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemRelaxedEntry != nullptr)
-		*ItemRelaxedEntry = Parms.ItemRelaxedEntry;
+		*ItemRelaxedEntry = std::move(Parms.ItemRelaxedEntry);
 
 }
 
@@ -574,15 +677,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemRelaxedEntry(const struct FPoseLink& InP
 
 void UGalileo_LobsterLayerAnimBP_C::ItemSwimJumpStart(struct FPoseLink* ItemSwimJumpStart)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemSwimJumpStart");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemSwimJumpStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemSwimJumpStart");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemSwimJumpStart_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemSwimJumpStart != nullptr)
-		*ItemSwimJumpStart = Parms.ItemSwimJumpStart;
+		*ItemSwimJumpStart = std::move(Parms.ItemSwimJumpStart);
 
 }
 
@@ -594,15 +700,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemSwimJumpStart(struct FPoseLink* ItemSwim
 
 void UGalileo_LobsterLayerAnimBP_C::ItemSwimJumpStartLoop(struct FPoseLink* ItemSwimJumpStartLoop)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemSwimJumpStartLoop");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemSwimJumpStartLoop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemSwimJumpStartLoop");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemSwimJumpStartLoop_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemSwimJumpStartLoop != nullptr)
-		*ItemSwimJumpStartLoop = Parms.ItemSwimJumpStartLoop;
+		*ItemSwimJumpStartLoop = std::move(Parms.ItemSwimJumpStartLoop);
 
 }
 
@@ -614,15 +723,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemSwimJumpStartLoop(struct FPoseLink* Item
 
 void UGalileo_LobsterLayerAnimBP_C::ItemSwimJumpFallLoop(struct FPoseLink* ItemSwimJumpFallLoop)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemSwimJumpFallLoop");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemSwimJumpFallLoop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemSwimJumpFallLoop");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemSwimJumpFallLoop_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemSwimJumpFallLoop != nullptr)
-		*ItemSwimJumpFallLoop = Parms.ItemSwimJumpFallLoop;
+		*ItemSwimJumpFallLoop = std::move(Parms.ItemSwimJumpFallLoop);
 
 }
 
@@ -634,15 +746,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemSwimJumpFallLoop(struct FPoseLink* ItemS
 
 void UGalileo_LobsterLayerAnimBP_C::ItemSwimJumpSurfaceLoop(struct FPoseLink* ItemSwimJumpSurfaceLoop)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemSwimJumpSurfaceLoop");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemSwimJumpSurfaceLoop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemSwimJumpSurfaceLoop");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemSwimJumpSurfaceLoop_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemSwimJumpSurfaceLoop != nullptr)
-		*ItemSwimJumpSurfaceLoop = Parms.ItemSwimJumpSurfaceLoop;
+		*ItemSwimJumpSurfaceLoop = std::move(Parms.ItemSwimJumpSurfaceLoop);
 
 }
 
@@ -654,15 +769,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemSwimJumpSurfaceLoop(struct FPoseLink* It
 
 void UGalileo_LobsterLayerAnimBP_C::ItemSwimJumpSurfaceEnd(struct FPoseLink* ItemSwimJumpSurfaceEnd)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemSwimJumpSurfaceEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ItemSwimJumpSurfaceEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ItemSwimJumpSurfaceEnd");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ItemSwimJumpSurfaceEnd_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ItemSwimJumpSurfaceEnd != nullptr)
-		*ItemSwimJumpSurfaceEnd = Parms.ItemSwimJumpSurfaceEnd;
+		*ItemSwimJumpSurfaceEnd = std::move(Parms.ItemSwimJumpSurfaceEnd);
 
 }
 
@@ -674,15 +792,18 @@ void UGalileo_LobsterLayerAnimBP_C::ItemSwimJumpSurfaceEnd(struct FPoseLink* Ite
 
 void UGalileo_LobsterLayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "AnimGraph");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -694,9 +815,12 @@ void UGalileo_LobsterLayerAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 
 void UGalileo_LobsterLayerAnimBP_C::ExecuteUbergraph_Galileo_LobsterLayerAnimBP(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ExecuteUbergraph_Galileo_LobsterLayerAnimBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UGalileo_LobsterLayerAnimBP_C_ExecuteUbergraph_Galileo_LobsterLayerAnimBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Galileo_LobsterLayerAnimBP_C", "ExecuteUbergraph_Galileo_LobsterLayerAnimBP");
+
+	Params::UGalileo_LobsterLayerAnimBP_C_ExecuteUbergraph_Galileo_LobsterLayerAnimBP_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -706,6 +830,4 @@ void UGalileo_LobsterLayerAnimBP_C::ExecuteUbergraph_Galileo_LobsterLayerAnimBP(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

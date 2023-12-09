@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,20 +12,6 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
-
-// 0x0 (0x0 - 0x0)
-// Function TournamentEventWindowDetails.TournamentEventWindowDetails_C.RefreshDataBP
-struct UTournamentEventWindowDetails_C_RefreshDataBP_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function TournamentEventWindowDetails.TournamentEventWindowDetails_C.EventColorize
-struct UTournamentEventWindowDetails_C_EventColorize_Params
-{
-public:
-};
 
 // 0x8 (0x8 - 0x0)
 // Function TournamentEventWindowDetails.TournamentEventWindowDetails_C.BndEvt__Button_Leaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
@@ -84,43 +67,43 @@ struct UTournamentEventWindowDetails_C_ExecuteUbergraph_TournamentEventWindowDet
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BD8[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2893[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_GetTournamentId_ReturnValue;              // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Variable;                                 // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortEventWindowEligibility       Temp_byte_Variable;                                // 0x1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BD9[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  Temp_text_Variable;                                // 0x20(0x18)()
-	class FText                                  Temp_text_Variable_1;                              // 0x38(0x18)()
-	class FText                                  Temp_text_Variable_2;                              // 0x50(0x18)()
-	class FText                                  Temp_text_Variable_3;                              // 0x68(0x18)()
+	uint8                                        Pad_2894[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  Temp_text_Variable;                                // 0x20(0x18)(None)
+	class FText                                  Temp_text_Variable_1;                              // 0x38(0x18)(None)
+	class FText                                  Temp_text_Variable_2;                              // 0x50(0x18)(None)
+	class FText                                  Temp_text_Variable_3;                              // 0x68(0x18)(None)
 	enum class EFortEventWindowEligibility       Temp_byte_Variable_1;                              // 0x80(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BDA[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  Temp_text_Variable_4;                              // 0x88(0x18)()
-	class FText                                  Temp_text_Variable_5;                              // 0xA0(0x18)()
-	class FText                                  Temp_text_Variable_6;                              // 0xB8(0x18)()
-	class FText                                  Temp_text_Variable_7;                              // 0xD0(0x18)()
+	uint8                                        Pad_2895[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  Temp_text_Variable_4;                              // 0x88(0x18)(None)
+	class FText                                  Temp_text_Variable_5;                              // 0xA0(0x18)(None)
+	class FText                                  Temp_text_Variable_6;                              // 0xB8(0x18)(None)
+	class FText                                  Temp_text_Variable_7;                              // 0xD0(0x18)(None)
 	enum class EFortEventWindowEligibility       Temp_byte_Variable_2;                              // 0xE8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BDB[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  Temp_text_Variable_8;                              // 0xF0(0x18)()
-	class FText                                  Temp_text_Variable_9;                              // 0x108(0x18)()
-	class FText                                  Temp_text_Variable_10;                             // 0x120(0x18)()
-	class FText                                  Temp_text_Variable_11;                             // 0x138(0x18)()
+	uint8                                        Pad_2896[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  Temp_text_Variable_8;                              // 0xF0(0x18)(None)
+	class FText                                  Temp_text_Variable_9;                              // 0x108(0x18)(None)
+	class FText                                  Temp_text_Variable_10;                             // 0x120(0x18)(None)
+	class FText                                  Temp_text_Variable_11;                             // 0x138(0x18)(None)
 	enum class EFortEventWindowEligibility       Temp_byte_Variable_3;                              // 0x150(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BDC[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  Temp_text_Variable_12;                             // 0x158(0x18)()
-	class FText                                  Temp_text_Variable_13;                             // 0x170(0x18)()
-	class FText                                  Temp_text_Variable_14;                             // 0x188(0x18)()
-	class FText                                  Temp_text_Variable_15;                             // 0x1A0(0x18)()
+	uint8                                        Pad_2897[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  Temp_text_Variable_12;                             // 0x158(0x18)(None)
+	class FText                                  Temp_text_Variable_13;                             // 0x170(0x18)(None)
+	class FText                                  Temp_text_Variable_14;                             // 0x188(0x18)(None)
+	class FText                                  Temp_text_Variable_15;                             // 0x1A0(0x18)(None)
 	bool                                         Temp_bool_Variable;                                // 0x1B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  Temp_byte_Variable_4;                              // 0x1B9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable_5;                              // 0x1BA(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_1;                              // 0x1BB(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BDD[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  Temp_text_Variable_16;                             // 0x1C0(0x18)()
+	uint8                                        Pad_2898[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  Temp_text_Variable_16;                             // 0x1C0(0x18)(None)
 	bool                                         Temp_bool_Variable_2;                              // 0x1D8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  Temp_byte_Variable_6;                              // 0x1D9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable_7;                              // 0x1DA(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BDE[0x1];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2899[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Temp_int_Variable_1;                               // 0x1DC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Variable_2;                               // 0x1E0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Variable_3;                               // 0x1E4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -133,7 +116,7 @@ public:
 	int32                                        Temp_int_Variable_10;                              // 0x200(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Temp_float_Variable;                               // 0x204(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortShowdownEventState           Temp_byte_Variable_8;                              // 0x208(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BDF[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_289A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  Temp_text_Variable_17;                             // 0x210(0x18)(ConstParm)
 	class FText                                  Temp_text_Variable_18;                             // 0x228(0x18)(ConstParm)
 	class FText                                  Temp_text_Variable_19;                             // 0x240(0x18)(ConstParm)
@@ -145,57 +128,57 @@ public:
 	enum class EFortShowdownEventState           Temp_byte_Variable_9;                              // 0x2D0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable_10;                             // 0x2D1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable_11;                             // 0x2D2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BE0[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  CallFunc_GetText_ReturnValue;                      // 0x2D8(0x18)()
+	uint8                                        Pad_289C[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_GetText_ReturnValue;                      // 0x2D8(0x18)(None)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x2F0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_3;                              // 0x2F8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  Temp_byte_Variable_12;                             // 0x2F9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BE1[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x300(0x18)()
-	class FText                                  CallFunc_TextToUpper_ReturnValue;                  // 0x318(0x18)()
+	uint8                                        Pad_289D[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x300(0x18)(None)
+	class FText                                  CallFunc_TextToUpper_ReturnValue;                  // 0x318(0x18)(None)
 	enum class ESlateVisibility                  Temp_byte_Variable_13;                             // 0x330(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortShowdownMatchType            CallFunc_GetTournamentMatchType_ReturnValue;       // 0x331(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x332(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BE2[0x1];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_289E[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_PauseAnimation_ReturnValue;               // 0x334(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetStartTime_ReturnValue;                 // 0x338(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_PauseAnimation_ReturnValue_1;             // 0x33C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x340(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BE3[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28A0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_Add_FloatFloat_ReturnValue;               // 0x344(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetEndTime_ReturnValue;                   // 0x348(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BE4[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28A1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_1;              // 0x350(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x358(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_GetTournamentPinUnlockScore_ReturnValue;  // 0x35C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_4;                              // 0x360(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BE5[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28A3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortShowdownEventBestResultsSummary  CallFunc_GetEventResultsSummary_ReturnValue;       // 0x364(0x18)(NoDestructor)
 	bool                                         CallFunc_Greater_IntInt_ReturnValue;               // 0x37C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x37D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x37E(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BE6[0x1];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	struct FSlateColor                           K2Node_MakeStruct_SlateColor;                      // 0x380(0x28)()
+	uint8                                        Pad_28A5[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FSlateColor                           K2Node_MakeStruct_SlateColor;                      // 0x380(0x28)(None)
 	int32                                        CallFunc_GetTournamentMatchCap_ReturnValue;        // 0x3A8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Temp_float_Variable_1;                             // 0x3AC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                         K2Node_ComponentBoundEvent_Button_5;               // 0x3B0(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsEventLeaderboardAvailable_ReturnValue;  // 0x3B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsEventLeaderboardAvailable_ReturnValue_1; // 0x3B9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BE7[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28A8[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_GetTournamentId_ReturnValue_1;            // 0x3C0(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                CallFunc_GetEventId_ReturnValue;                   // 0x3D0(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_5;                              // 0x3E0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BE8[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28A9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonButton*                         K2Node_ComponentBoundEvent_Button_4;               // 0x3E8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_Select_Default_1;                           // 0x3F0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BE9[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28AA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonButton*                         K2Node_ComponentBoundEvent_Button_3;               // 0x3F8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_2;              // 0x400(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_PauseAnimation_ReturnValue_2;             // 0x408(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetStartTime_ReturnValue_1;               // 0x40C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_PauseAnimation_ReturnValue_3;             // 0x410(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_LessEqual_FloatFloat_ReturnValue_1;       // 0x414(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BEA[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28AC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_Add_FloatFloat_ReturnValue_1;             // 0x418(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetEndTime_ReturnValue_1;                 // 0x41C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_3;              // 0x420(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -204,95 +187,95 @@ public:
 	float                                        CallFunc_GetStartTime_ReturnValue_2;               // 0x430(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_PauseAnimation_ReturnValue_5;             // 0x434(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_LessEqual_FloatFloat_ReturnValue_2;       // 0x438(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BEB[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28B0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_Add_FloatFloat_ReturnValue_2;             // 0x43C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetEndTime_ReturnValue_2;                 // 0x440(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BEC[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28B1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_4;              // 0x448(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Subtract_FloatFloat_ReturnValue_2;        // 0x450(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Temp_float_Variable_2;                             // 0x454(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_BooleanAND_ReturnValue_1;                 // 0x458(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BED[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28B2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_GetEventWindowSessionNumber_ReturnValue;  // 0x45C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select_Default_2;                           // 0x460(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BEE[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28B4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x468(0x40)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x4A8(0x10)(ZeroConstructor, ReferenceParm)
 	bool                                         Temp_bool_Variable_6;                              // 0x4B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BEF[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  CallFunc_Format_ReturnValue;                       // 0x4C0(0x18)()
-	class FText                                  CallFunc_TextToUpper_ReturnValue_1;                // 0x4D8(0x18)()
+	uint8                                        Pad_28B5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_Format_ReturnValue;                       // 0x4C0(0x18)(None)
+	class FText                                  CallFunc_TextToUpper_ReturnValue_1;                // 0x4D8(0x18)(None)
 	enum class EFortEventWindowEligibility       CallFunc_GetEventWindowEligibility_ReturnValue;    // 0x4F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BF0[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  K2Node_Select_Default_3;                           // 0x4F8(0x18)()
-	class FText                                  K2Node_Select_Default_4;                           // 0x510(0x18)()
+	uint8                                        Pad_28B6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  K2Node_Select_Default_3;                           // 0x4F8(0x18)(None)
+	class FText                                  K2Node_Select_Default_4;                           // 0x510(0x18)(None)
 	bool                                         Temp_bool_Variable_7;                              // 0x528(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BF1[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  K2Node_Select_Default_5;                           // 0x530(0x18)()
+	uint8                                        Pad_28B7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  K2Node_Select_Default_5;                           // 0x530(0x18)(None)
 	enum class EFortEventWindowEligibility       CallFunc_GetEventWindowEligibility_ReturnValue_1;  // 0x548(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BF2[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28B8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        K2Node_Select_Default_6;                           // 0x54C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_5;              // 0x550(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                  K2Node_Select_Default_7;                           // 0x558(0x18)()
+	class FText                                  K2Node_Select_Default_7;                           // 0x558(0x18)(None)
 	float                                        Temp_float_Variable_3;                             // 0x570(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortShowdownEventBestResultsSummary  CallFunc_GetEventResultsSummary_ReturnValue_1;     // 0x574(0x18)(NoDestructor)
-	uint8                                        Pad_5BF3[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28BA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDateTime                             CallFunc_GetEventBeginTime_ReturnValue;            // 0x590(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData_1;            // 0x598(0x40)(HasGetValueTypeHash)
-	class FText                                  CallFunc_GetEventDateAsText_ReturnValue;           // 0x5D8(0x18)()
+	class FText                                  CallFunc_GetEventDateAsText_ReturnValue;           // 0x5D8(0x18)(None)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array_1;                          // 0x5F0(0x10)(ZeroConstructor, ReferenceParm)
 	bool                                         CallFunc_NotEqual_IntInt_ReturnValue;              // 0x600(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BF4[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  CallFunc_Format_ReturnValue_1;                     // 0x608(0x18)()
+	uint8                                        Pad_28BC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_Format_ReturnValue_1;                     // 0x608(0x18)(None)
 	enum class ESlateVisibility                  K2Node_Select_Default_8;                           // 0x620(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BF5[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28BD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDateTime                             CallFunc_GetEventEndTime_ReturnValue;              // 0x628(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                  CallFunc_GetEventDateAsText_ReturnValue_1;         // 0x630(0x18)()
+	class FText                                  CallFunc_GetEventDateAsText_ReturnValue_1;         // 0x630(0x18)(None)
 	bool                                         CallFunc_EqualEqual_TextText_ReturnValue;          // 0x648(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BF6[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28BE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDateTime                             CallFunc_GetEventBeginTime_ReturnValue_1;          // 0x650(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                  CallFunc_GetEventTimeAsText_ReturnValue;           // 0x658(0x18)()
+	class FText                                  CallFunc_GetEventTimeAsText_ReturnValue;           // 0x658(0x18)(None)
 	struct FDateTime                             CallFunc_GetEventEndTime_ReturnValue_1;            // 0x670(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData_2;            // 0x678(0x40)(HasGetValueTypeHash)
-	class FText                                  CallFunc_GetEventTimeAsText_ReturnValue_1;         // 0x6B8(0x18)()
+	class FText                                  CallFunc_GetEventTimeAsText_ReturnValue_1;         // 0x6B8(0x18)(None)
 	bool                                         Temp_bool_Variable_8;                              // 0x6D0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BF7[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28C1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData_3;            // 0x6D8(0x40)(HasGetValueTypeHash)
 	struct FDateTime                             CallFunc_GetEventBeginTime_ReturnValue_2;          // 0x718(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_Select_Default_9;                           // 0x720(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BF8[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  CallFunc_GetEventDateAsText_ReturnValue_2;         // 0x728(0x18)()
+	uint8                                        Pad_28C2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_GetEventDateAsText_ReturnValue_2;         // 0x728(0x18)(None)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_6;              // 0x740(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData_4;            // 0x748(0x40)(HasGetValueTypeHash)
 	struct FDateTime                             CallFunc_GetEventEndTime_ReturnValue_2;            // 0x788(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                        Temp_float_Variable_4;                             // 0x790(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BF9[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  CallFunc_GetEventDateAsText_ReturnValue_3;         // 0x798(0x18)()
+	uint8                                        Pad_28C5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_GetEventDateAsText_ReturnValue_3;         // 0x798(0x18)(None)
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData_5;            // 0x7B0(0x40)(HasGetValueTypeHash)
 	enum class EFortShowdownEventState           CallFunc_GetEventTimeState_ReturnValue;            // 0x7F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BFA[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28C6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array_2;                          // 0x7F8(0x10)(ZeroConstructor, ReferenceParm)
-	class FText                                  CallFunc_Format_ReturnValue_2;                     // 0x808(0x18)()
+	class FText                                  CallFunc_Format_ReturnValue_2;                     // 0x808(0x18)(None)
 	class FText                                  K2Node_Select_Default_10;                          // 0x820(0x18)(ConstParm)
-	class FText                                  K2Node_Select_Default_11;                          // 0x838(0x18)()
+	class FText                                  K2Node_Select_Default_11;                          // 0x838(0x18)(None)
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData_6;            // 0x850(0x40)(HasGetValueTypeHash)
 	enum class EFortShowdownEventState           CallFunc_GetEventPlayerParticipationState_ReturnValue; // 0x890(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BFB[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28CA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array_3;                          // 0x898(0x10)(ZeroConstructor, ReferenceParm)
-	class FText                                  CallFunc_Format_ReturnValue_3;                     // 0x8A8(0x18)()
+	class FText                                  CallFunc_Format_ReturnValue_3;                     // 0x8A8(0x18)(None)
 	int32                                        K2Node_Select_Default_12;                          // 0x8C0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_NotEqual_TextText_ReturnValue;            // 0x8C4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsEventLeaderboardAvailable_ReturnValue_2; // 0x8C5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BFC[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28CC[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonButton*                         K2Node_ComponentBoundEvent_Button_2;               // 0x8C8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select_Default_13;                          // 0x8D0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5BFD[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28CD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CallFunc_GetEventId_ReturnValue_1;                 // 0x8D8(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	float                                        CallFunc_PauseAnimation_ReturnValue_6;             // 0x8E8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetStartTime_ReturnValue_3;               // 0x8EC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_PauseAnimation_ReturnValue_7;             // 0x8F0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_LessEqual_FloatFloat_ReturnValue_3;       // 0x8F4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BFE[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28D0[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_Add_FloatFloat_ReturnValue_3;             // 0x8F8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetEndTime_ReturnValue_3;                 // 0x8FC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_7;              // 0x900(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -301,21 +284,21 @@ public:
 	float                                        CallFunc_GetStartTime_ReturnValue_4;               // 0x910(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_PauseAnimation_ReturnValue_9;             // 0x914(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_LessEqual_FloatFloat_ReturnValue_4;       // 0x918(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5BFF[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28D5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_Add_FloatFloat_ReturnValue_4;             // 0x91C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_8;              // 0x920(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetEndTime_ReturnValue_4;                 // 0x928(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5C00[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28D6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonButton*                         K2Node_ComponentBoundEvent_Button_1;               // 0x930(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Subtract_FloatFloat_ReturnValue_4;        // 0x938(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5C01[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28D8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x940(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_Select_Default_14;                          // 0x948(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_9;                              // 0x94C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5C02[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28D9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_9;              // 0x950(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_Select_Default_15;                          // 0x958(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5C03[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28DB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_10;             // 0x960(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -340,6 +323,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

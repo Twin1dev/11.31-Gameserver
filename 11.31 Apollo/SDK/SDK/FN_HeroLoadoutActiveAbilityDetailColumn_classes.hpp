@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -22,15 +19,12 @@ public:
 	class UImage*                                ImagePerkIcon;                                     // 0x268(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                              PerkIconSizeBox;                                   // 0x270(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	enum class EFortBrushSize                    Icon_Size;                                         // 0x278(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6525[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_54CE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortHero*                             Host_Hero;                                         // 0x280(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UFortAbilityKit*                       AbilityKit;                                        // 0x288(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("HeroLoadoutActiveAbilityDetailColumn_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UHeroLoadoutActiveAbilityDetailColumn_C* GetDefaultObj();
 
 	void SetAbilityKit(class UFortAbilityKit* AbilityKit);
 	bool IsAbilityUnlocked(bool CallFunc_IsAbilityKitUnlockedForHero_ReturnValue);
@@ -45,6 +39,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

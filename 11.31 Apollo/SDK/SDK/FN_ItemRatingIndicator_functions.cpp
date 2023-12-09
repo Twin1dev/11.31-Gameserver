@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ItemRatingIndicator.ItemRatingIndicator_C
+// (None)
+
+class UClass* UItemRatingIndicator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemRatingIndicator_C");
+
+	return Clss;
+}
+
+
+// ItemRatingIndicator_C ItemRatingIndicator.Default__ItemRatingIndicator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemRatingIndicator_C* UItemRatingIndicator_C::GetDefaultObj()
+{
+	static class UItemRatingIndicator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemRatingIndicator_C*>(UItemRatingIndicator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ItemRatingIndicator.ItemRatingIndicator_C.HandleViewModelChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UItemRatingIndicator_C::HandleViewModelChanged()
 {
-	static auto Func = Class->GetFunction("ItemRatingIndicator_C", "HandleViewModelChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemRatingIndicator_C_HandleViewModelChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemRatingIndicator_C", "HandleViewModelChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -40,9 +67,12 @@ void UItemRatingIndicator_C::HandleViewModelChanged()
 
 void UItemRatingIndicator_C::ExecuteUbergraph_ItemRatingIndicator(int32 EntryPoint, const struct FSlateBrush& CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemRatingIndicator_C", "ExecuteUbergraph_ItemRatingIndicator");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemRatingIndicator_C_ExecuteUbergraph_ItemRatingIndicator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemRatingIndicator_C", "ExecuteUbergraph_ItemRatingIndicator");
+
+	Params::UItemRatingIndicator_C_ExecuteUbergraph_ItemRatingIndicator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue = CallFunc_GetBrushBySizeFromMultiSizeBrush_ReturnValue;
@@ -54,6 +84,4 @@ void UItemRatingIndicator_C::ExecuteUbergraph_ItemRatingIndicator(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

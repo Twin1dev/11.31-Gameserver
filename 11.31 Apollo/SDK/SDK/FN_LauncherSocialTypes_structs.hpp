@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -100,7 +97,7 @@ public:
 	float                                        SeperatorThickness;                                // 0x668(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMargin                               MarkupPadding;                                     // 0x66C(0x10)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FMargin                               ButtonPadding;                                     // 0x67C(0x10)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_444C[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_285D[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1360 (0x1360 - 0x0)
@@ -114,7 +111,7 @@ public:
 	struct FSlateBrush                           MessageNotificationBrush;                          // 0x1208(0x88)(Edit, NativeAccessSpecifierPublic)
 	struct FMargin                               ChatEntryPadding;                                  // 0x1290(0x10)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	float                                        ChatEntryHeight;                                   // 0x12A0(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_444D[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2860[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateBrush                           ChatMenuBackgroundBrush;                           // 0x12A8(0x88)(Edit, NativeAccessSpecifierPublic)
 	struct FMargin                               FriendActionPadding;                               // 0x1330(0x10)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FMargin                               FriendActionHeaderPadding;                         // 0x1340(0x10)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -232,7 +229,7 @@ public:
 	class FString                                ProfanityList;                                     // 0x10(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                WhiteList;                                         // 0x20(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAutoAdd;                                          // 0x30(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_444E[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_287A[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x48 (0x48 - 0x0)
@@ -265,13 +262,11 @@ public:
 	struct FChatChromeStyle                      ChatChromeStyle;                                   // 0x5800(0x7C8)(Edit, NativeAccessSpecifierPublic)
 	struct FChatChromeMargins                    ChatChromeMargins;                                 // 0x5FC8(0x64)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FChatChromeColorScheme                ChatChromeColorScheme;                             // 0x602C(0x50)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_444F[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2880[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FChatMarkupStyle                      ChatMarkupStyle;                                   // 0x6080(0x690)(Edit, NativeAccessSpecifierPublic)
 	struct FSocialSoundSchema                    SoundSchema;                                       // 0x6710(0x48)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

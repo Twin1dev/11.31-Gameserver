@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,25 +12,53 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ItemSeriesOrRarity.ItemSeriesOrRarity_C
+// (None)
+
+class UClass* UItemSeriesOrRarity_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemSeriesOrRarity_C");
+
+	return Clss;
+}
+
+
+// ItemSeriesOrRarity_C ItemSeriesOrRarity.Default__ItemSeriesOrRarity_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemSeriesOrRarity_C* UItemSeriesOrRarity_C::GetDefaultObj()
+{
+	static class UItemSeriesOrRarity_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemSeriesOrRarity_C*>(UItemSeriesOrRarity_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ItemSeriesOrRarity.ItemSeriesOrRarity_C.UpdateItemDefinition
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItemDefinition*         ItemDefinition                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable                                               ()
+// class FText                        Temp_text_Variable                                               (None)
 // struct FFortColorPalette           CallFunc_GetRarityOrSeriesColors_ReturnValue                     (NoDestructor)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor_1                                   ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor_1                                   (None)
 // enum class EFortRarity             CallFunc_GetRarity_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortRarityItemData         CallFunc_BPGetRarityData_ReturnValue                             ()
+// struct FFortRarityItemData         CallFunc_BPGetRarityData_ReturnValue                             (None)
 // bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue_3                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        K2Node_Select_Default                                            (None)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     K2Node_Select_Default_1                                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -42,9 +67,12 @@ namespace SDK
 
 void UItemSeriesOrRarity_C::UpdateItemDefinition(class UFortItemDefinition* ItemDefinition, class FText Temp_text_Variable, const struct FFortColorPalette& CallFunc_GetRarityOrSeriesColors_ReturnValue, const struct FSlateColor& K2Node_MakeStruct_SlateColor, bool CallFunc_IsValid_ReturnValue, const struct FSlateColor& K2Node_MakeStruct_SlateColor_1, enum class EFortRarity CallFunc_GetRarity_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, const struct FFortRarityItemData& CallFunc_BPGetRarityData_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_Not_PreBool_ReturnValue, bool Temp_bool_Variable, bool Temp_bool_Variable_1, bool CallFunc_BooleanAND_ReturnValue, class FText K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable, class UWidget* K2Node_Select_Default_1, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_2, enum class ESlateVisibility K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("ItemSeriesOrRarity_C", "UpdateItemDefinition");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemSeriesOrRarity_C_UpdateItemDefinition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemSeriesOrRarity_C", "UpdateItemDefinition");
+
+	Params::UItemSeriesOrRarity_C_UpdateItemDefinition_Params Parms{};
 
 	Parms.ItemDefinition = ItemDefinition;
 	Parms.Temp_text_Variable = Temp_text_Variable;
@@ -74,6 +102,4 @@ void UItemSeriesOrRarity_C::UpdateItemDefinition(class UFortItemDefinition* Item
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

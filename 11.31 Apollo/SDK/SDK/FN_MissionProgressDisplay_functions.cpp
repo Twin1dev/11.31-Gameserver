@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass MissionProgressDisplay.MissionProgressDisplay_C
+// (None)
+
+class UClass* UMissionProgressDisplay_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MissionProgressDisplay_C");
+
+	return Clss;
+}
+
+
+// MissionProgressDisplay_C MissionProgressDisplay.Default__MissionProgressDisplay_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMissionProgressDisplay_C* UMissionProgressDisplay_C::GetDefaultObj()
+{
+	static class UMissionProgressDisplay_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMissionProgressDisplay_C*>(UMissionProgressDisplay_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MissionProgressDisplay.MissionProgressDisplay_C.StyleAsNormal
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UMissionProgressDisplay_C::StyleAsNormal()
 {
-	static auto Func = Class->GetFunction("MissionProgressDisplay_C", "StyleAsNormal");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissionProgressDisplay_C_StyleAsNormal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissionProgressDisplay_C", "StyleAsNormal");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UMissionProgressDisplay_C::StyleAsNormal()
 
 void UMissionProgressDisplay_C::StyleAsPrestige()
 {
-	static auto Func = Class->GetFunction("MissionProgressDisplay_C", "StyleAsPrestige");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissionProgressDisplay_C_StyleAsPrestige_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissionProgressDisplay_C", "StyleAsPrestige");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -54,9 +83,12 @@ void UMissionProgressDisplay_C::StyleAsPrestige()
 
 void UMissionProgressDisplay_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("MissionProgressDisplay_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissionProgressDisplay_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissionProgressDisplay_C", "PreConstruct");
+
+	Params::UMissionProgressDisplay_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -72,9 +104,12 @@ void UMissionProgressDisplay_C::PreConstruct(bool IsDesignTime)
 
 void UMissionProgressDisplay_C::SetPercentValueForMaterialNumber(int32 PercentValue)
 {
-	static auto Func = Class->GetFunction("MissionProgressDisplay_C", "SetPercentValueForMaterialNumber");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissionProgressDisplay_C_SetPercentValueForMaterialNumber_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissionProgressDisplay_C", "SetPercentValueForMaterialNumber");
+
+	Params::UMissionProgressDisplay_C_SetPercentValueForMaterialNumber_Params Parms{};
 
 	Parms.PercentValue = PercentValue;
 
@@ -92,16 +127,19 @@ void UMissionProgressDisplay_C::SetPercentValueForMaterialNumber(int32 PercentVa
 // float                              CallFunc_MakeLiteralFloat_ReturnValue_1                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Divide_FloatFloat_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_Event_PercentValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
+// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 void UMissionProgressDisplay_C::ExecuteUbergraph_MissionProgressDisplay(int32 EntryPoint, bool K2Node_Event_IsDesignTime, float CallFunc_MakeLiteralFloat_ReturnValue, float CallFunc_MakeLiteralFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, int32 K2Node_Event_PercentValue, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MissionProgressDisplay_C", "ExecuteUbergraph_MissionProgressDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissionProgressDisplay_C_ExecuteUbergraph_MissionProgressDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissionProgressDisplay_C", "ExecuteUbergraph_MissionProgressDisplay");
+
+	Params::UMissionProgressDisplay_C_ExecuteUbergraph_MissionProgressDisplay_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -120,6 +158,4 @@ void UMissionProgressDisplay_C::ExecuteUbergraph_MissionProgressDisplay(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

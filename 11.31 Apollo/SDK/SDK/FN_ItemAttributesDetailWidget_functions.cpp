@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ItemAttributesDetailWidget.ItemAttributesDetailWidget_C
+// (None)
+
+class UClass* UItemAttributesDetailWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemAttributesDetailWidget_C");
+
+	return Clss;
+}
+
+
+// ItemAttributesDetailWidget_C ItemAttributesDetailWidget.Default__ItemAttributesDetailWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemAttributesDetailWidget_C* UItemAttributesDetailWidget_C::GetDefaultObj()
+{
+	static class UItemAttributesDetailWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemAttributesDetailWidget_C*>(UItemAttributesDetailWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ItemAttributesDetailWidget.ItemAttributesDetailWidget_C.UpdateItemsForWidgets
@@ -30,9 +55,12 @@ namespace SDK
 
 void UItemAttributesDetailWidget_C::UpdateItemsForWidgets(class UFortTooltipUIContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UFortTooltipUIContext* CallFunc_GetContext_ReturnValue_1, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UFortTooltipUIContext* CallFunc_GetContext_ReturnValue_2, class UFortTooltipContext* CallFunc_SpawnTooltipContextWithSource_ReturnValue, TArray<struct FFortDisplayAttribute>& CallFunc_GetUpgradeStats_ReturnValue, TArray<struct FFortDisplayAttribute>& CallFunc_GetTooltipStats_ReturnValue, TArray<struct FFortDisplayAttribute>& CallFunc_GetComparisonStats_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemAttributesDetailWidget_C", "UpdateItemsForWidgets");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemAttributesDetailWidget_C_UpdateItemsForWidgets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemAttributesDetailWidget_C", "UpdateItemsForWidgets");
+
+	Params::UItemAttributesDetailWidget_C_UpdateItemsForWidgets_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -55,12 +83,14 @@ void UItemAttributesDetailWidget_C::UpdateItemsForWidgets(class UFortTooltipUICo
 
 void UItemAttributesDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandlePostDifferentItemToDetailSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemAttributesDetailWidget_C_HandlePostDifferentItemToDetailSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandlePostDifferentItemToDetailSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -71,12 +101,14 @@ void UItemAttributesDetailWidget_C::HandlePostDifferentItemToDetailSet()
 
 void UItemAttributesDetailWidget_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static auto Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandlePostDifferentItemToCompareWithSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemAttributesDetailWidget_C_HandlePostDifferentItemToCompareWithSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandlePostDifferentItemToCompareWithSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -87,12 +119,14 @@ void UItemAttributesDetailWidget_C::HandlePostDifferentItemToCompareWithSet()
 
 void UItemAttributesDetailWidget_C::HandleShouldPreviewUpgradingItemChanged()
 {
-	static auto Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandleShouldPreviewUpgradingItemChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemAttributesDetailWidget_C_HandleShouldPreviewUpgradingItemChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandleShouldPreviewUpgradingItemChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -103,12 +137,14 @@ void UItemAttributesDetailWidget_C::HandleShouldPreviewUpgradingItemChanged()
 
 void UItemAttributesDetailWidget_C::HandleItemToDetailChangedBP()
 {
-	static auto Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandleItemToDetailChangedBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemAttributesDetailWidget_C_HandleItemToDetailChangedBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandleItemToDetailChangedBP");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -119,12 +155,14 @@ void UItemAttributesDetailWidget_C::HandleItemToDetailChangedBP()
 
 void UItemAttributesDetailWidget_C::HandleItemToCompareWithChangedBP()
 {
-	static auto Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandleItemToCompareWithChangedBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemAttributesDetailWidget_C_HandleItemToCompareWithChangedBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemAttributesDetailWidget_C", "HandleItemToCompareWithChangedBP");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -136,9 +174,12 @@ void UItemAttributesDetailWidget_C::HandleItemToCompareWithChangedBP()
 
 void UItemAttributesDetailWidget_C::ExecuteUbergraph_ItemAttributesDetailWidget(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("ItemAttributesDetailWidget_C", "ExecuteUbergraph_ItemAttributesDetailWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemAttributesDetailWidget_C", "ExecuteUbergraph_ItemAttributesDetailWidget");
+
+	Params::UItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -148,6 +189,4 @@ void UItemAttributesDetailWidget_C::ExecuteUbergraph_ItemAttributesDetailWidget(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

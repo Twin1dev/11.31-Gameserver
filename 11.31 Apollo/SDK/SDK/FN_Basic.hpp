@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,21 +15,27 @@ inline Fn GetVFunction(const void* Instance, std::size_t Index)
 	return reinterpret_cast<Fn>(Vtable[Index]);
 }
 
+struct FUObjectItem
+{
+	class UObject* Object;
+	uint8 Pad_0[0x10];
+
+};
+
 class TUObjectArray
 {
 public:
-
 	enum
 	{
 		ElementsPerChunk = 0x10000,
 	};
 
-	struct FUObjectItem
+public:
+	static inline auto DecryptPtr = [](void* ObjPtr) -> uint8*
 	{
-		class UObject* Object;
-		uint8 Pad[0x10];
+		return reinterpret_cast<uint8*>(ObjPtr);
 	};
-
+	
 	FUObjectItem** Objects;
 	uint8 Pad_0[0x08];
 	int32 MaxElements;
@@ -40,11 +43,17 @@ public:
 	int32 MaxChunks;
 	int32 NumChunks;
 
-	// Call InitGObjects() before using these functions
 
+public:
+	// Call InitGObjects() before using these functions
 	inline int32 Num() const
 	{
 		return NumElements;
+	}
+
+	inline FUObjectItem** GetDecrytedObjPtr() const
+	{
+		return reinterpret_cast<FUObjectItem**>(DecryptPtr(Objects));
 	}
 
 	inline class UObject* GetByIndex(const int32 Index) const
@@ -55,75 +64,36 @@ public:
 		const int32 ChunkIndex = Index / ElementsPerChunk;
 		const int32 InChunkIdx = Index % ElementsPerChunk;
 
-		return Objects[ChunkIndex][InChunkIdx].Object;
+		return GetDecrytedObjPtr()[ChunkIndex][InChunkIdx].Object;
 	}
 };
 
-inline void* (*FMemory_Realloc)(void* Memory, int64 NewSize, uint32 Alignment) = decltype(FMemory_Realloc)(uintptr_t(GetModuleHandle(0)) + Offsets::Alloc);
-inline void (*FMemory_Free)(void* Mem) = decltype(FMemory_Free)(uintptr_t(GetModuleHandle(0)) + Offsets::Free);
+namespace FMemory
+{
+	static inline void (*Free)(void* Array) = decltype(Free)(__int64(GetModuleHandleW(0)) + 0x25b29e0);
+	static inline void* (*Realloc)(void*, __int64, unsigned int) = decltype(Realloc)(__int64(GetModuleHandleW(0)) + 0x25c64b0);
+}
+
 template<class T>
 class TArray
 {
+protected:
 
 
 public:
 	T* Data;
 	int32 NumElements;
 	int32 MaxElements;
-	TArray()
+
+	inline TArray()
+		:NumElements(0), MaxElements(0), Data(nullptr)
 	{
-		Data = nullptr;
-		NumElements = MaxElements = 0;
 	}
 
 	inline TArray(int32 Size)
-		:NumElements(0), MaxElements(Size), Data(reinterpret_cast<T*>(malloc(sizeof(T) * Size)))
+		: NumElements(0), MaxElements(Size), Data(reinterpret_cast<T*>(malloc(sizeof(T)* Size)))
 	{
 	}
-
-	inline void Free()
-    {
-        if (Data)
-            FMemory_Free(Data);
-
-        NumElements = 0;
-        MaxElements = 0;
-    }
-	inline void Reserve(const int Silly)
-    {
-        Data = (T*)FMemory_Realloc(Data, (MaxElements = NumElements + Silly) * sizeof(T), 0);
-    }
-
-	inline T& Add(const T& InData)
-    {
-        Reserve(1);
-
-        // if (Data)
-        {
-            Data[NumElements] = InData;
-            ++NumElements;
-            // ++Max;
-            return Data[NumElements - 1];
-        }
-
-        // return T();
-    }
-
-
-	inline bool Remove(const int Index)
-    {
-        if (Index < NumElements)
-        {
-            if (Index != NumElements - 1)
-                Data[Index] = Data[NumElements - 1];
-
-            --NumElements;
-
-            return true;
-        }
-        return false;
-    }
-
 
 	inline T& operator[](uint32 Index)
 	{
@@ -132,17 +102,6 @@ public:
 	inline const T& operator[](uint32 Index) const
 	{
 		return Data[Index];
-	}
-
-
-	inline T* GetRef(int i)
-	{
-		return &Data[i];
-	}
-
-	inline bool IsEmpty() const
-	{
-		return NumElements == 0;
 	}
 
 	inline int32 Num()
@@ -173,6 +132,45 @@ public:
 	inline void ResetNum()
 	{
 		NumElements = 0;
+	}
+
+	inline void Reserve(const int Num)
+	{
+		Data = (T*)FMemory::Realloc(Data, (MaxElements = Num + NumElements) * sizeof(T), 0);
+	}
+
+	inline void Free()
+	{
+		if (Data)
+			FMemory::Free(Data);
+
+		MaxElements = 0;
+		NumElements = 0;
+	}
+
+	inline T& Add(const T& InData)
+	{
+		Reserve(1);
+
+		Data[NumElements] = InData;
+		++NumElements;
+
+		return Data[NumElements - 1];
+	}
+
+	inline bool Remove(int Index)
+	{
+		if (Index < NumElements)
+		{
+			if (Index != NumElements - 1)
+			{
+				Data[Index] = Data[NumElements - 1];
+			}
+
+			--NumElements;
+			return true;
+		}
+		return false;
 	}
 };
 
@@ -223,19 +221,46 @@ public:
 class FName
 {
 public:
+	// GNames - either of type TNameEntryArray [<4.23] or FNamePool [>=4.23]
+	static inline void* GNames = nullptr;
+
+	// Members of FName - depending on configuration [WITH_CASE_PRESERVING_NAME | FNAME_OUTLINE_NUMBER]
 	int32 ComparisonIndex;
 	int32 Number;
 
-	
-	inline std::string ToString() const
+
+	// GetDisplayIndex - returns the Id of the string depending on the configuration [default: ComparisonIndex, WITH_CASE_PRESERVING_NAME: DisplayIndex]
+	inline int32 GetDisplayIndex() const
 	{
-		static FString TempString(1024);
-		static auto AppendString = reinterpret_cast<void(*)(const FName*, FString&)>(uintptr_t(GetModuleHandle(0)) + Offsets::AppendString);
+		return ComparisonIndex;
+	}
+
+	// GetRawString - returns an unedited string as the engine uses it
+	inline std::string GetRawString() const
+	{
+		thread_local FString TempString(1024);
+		static void(*AppendString)(const FName*, FString&) = nullptr;
+
+		if (!AppendString)
+			AppendString = reinterpret_cast<void(*)(const FName*, FString&)>(uintptr_t(GetModuleHandle(0)) + Offsets::AppendString);
 
 		AppendString(this, TempString);
 
 		std::string OutputString = TempString.ToString();
 		TempString.ResetNum();
+
+		return OutputString;
+	}
+
+	static inline void InitGNames()
+	{
+		GNames = reinterpret_cast<void*>(uint64(GetModuleHandle(0)) + Offsets::GNames);
+	}
+
+	// ToString - returns an edited string as it's used by most SDKs ["/Script/CoreUObject" -> "CoreUObject"]
+	inline std::string ToString() const
+	{
+		std::string OutputString = GetRawString();
 
 		size_t pos = OutputString.rfind('/');
 
@@ -245,14 +270,14 @@ public:
 		return OutputString.substr(pos + 1);
 	}
 
-	inline bool operator==(const FName& Other)
+	inline bool operator==(const FName& Other) const
 	{
-		return ComparisonIndex == Other.ComparisonIndex;
+		return ComparisonIndex == Other.ComparisonIndex && Number == Other.Number;
 	}
 
-	inline bool operator!=(const FName& Other)
+	inline bool operator!=(const FName& Other) const
 	{
-		return ComparisonIndex != Other.ComparisonIndex;
+		return ComparisonIndex != Other.ComparisonIndex || Number != Other.Number;
 	}
 };
 
@@ -273,10 +298,23 @@ public:
 	{
 		return ClassPtr;
 	}
+
+	inline operator UClass*() const
+	{
+		return ClassPtr;
+	}
+
+	template<typename Target, typename = std::enable_if<std::is_base_of_v<Target, ClassType>, bool>::type>
+	inline operator TSubclassOf<Target>() const
+	{
+		return ClassPtr;
+	}
+
 	inline UClass* operator->()
 	{
 		return ClassPtr;
 	}
+
 	inline TSubclassOf& operator=(UClass* Class)
 	{
 		ClassPtr = Class;
@@ -288,14 +326,17 @@ public:
 	{
 		return ClassPtr == Other.ClassPtr;
 	}
+
 	inline bool operator!=(const TSubclassOf& Other) const
 	{
 		return ClassPtr != Other.ClassPtr;
 	}
+
 	inline bool operator==(UClass* Other) const
 	{
 		return ClassPtr == Other;
 	}
+
 	inline bool operator!=(UClass* Other) const
 	{
 		return ClassPtr != Other;
@@ -310,11 +351,38 @@ public:
 	KeyType Second;
 };
 
-class FText
+class FTextData 
 {
 public:
-	FString TextData;
-	uint8 IdkTheRest[0x8];
+	uint8 Pad[0x28];
+	wchar_t* Name;
+	int32 Length;
+};
+
+class FText 
+{
+public:
+	FTextData* Data;
+	uint8 Pad[0x10];
+
+	wchar_t* Get() const 
+	{
+		if (Data) 
+			return Data->Name;
+
+		return nullptr;
+	}
+
+	std::string ToString()
+	{
+		if (Data)
+		{
+			std::wstring Temp(Data->Name);
+			return std::string(Temp.begin(), Temp.end());
+		}
+
+		return "";
+	}
 };
 
 template<typename ElementType>
@@ -405,23 +473,27 @@ public:
 		return static_cast<UEType*>(TPersistentObjectPtr::Get());
 	}
 };
-
-class FSoftObjectPath_
+namespace SoftObjPathWrapper
+{
+// 0x18 (0x18 - 0x0)
+// ScriptStruct CoreUObject.SoftObjectPath
+struct FSoftObjectPath
 {
 public:
-	FName AssetPathName;
-	FString SubPathString;
+	class FName                                  AssetPathName;                                     // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                SubPathString;                                     // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-class alignas(8) FSoftObjectPtr : public TPersistentObjectPtr<FSoftObjectPath_>
+}
+
+class FSoftObjectPtr : public TPersistentObjectPtr<SoftObjPathWrapper::FSoftObjectPath>
 {
 public:
-
-	FName GetAssetPathName();
 	FString GetSubPathString();
-
-	std::string GetAssetPathNameStr();
 	std::string GetSubPathStringStr();
+
+	template<class SoftObjectPath = FSoftObjectPath>
+	SoftObjectPath& GetObjectPath();
 };
 
 template<typename UEType>
@@ -461,65 +533,117 @@ enum class EClassCastFlags : uint64_t
 {
 	None = 0x0000000000000000,
 
-	UField							= 0x0000000000000001,
-	UInt8Property					= 0x0000000000000002,
-	UEnum							= 0x0000000000000004,
-	UStruct							= 0x0000000000000008,
-	UScriptStruct					= 0x0000000000000010,
-	UClass							= 0x0000000000000020,
-	UByteProperty					= 0x0000000000000040,
-	UIntProperty					= 0x0000000000000080,
-	UFloatProperty					= 0x0000000000000100,
-	UUInt64Property					= 0x0000000000000200,
-	UClassProperty					= 0x0000000000000400,
-	UUInt32Property					= 0x0000000000000800,
-	UInterfaceProperty				= 0x0000000000001000,
-	UNameProperty					= 0x0000000000002000,
-	UStrProperty					= 0x0000000000004000,
-	UProperty						= 0x0000000000008000,
-	UObjectProperty					= 0x0000000000010000,
-	UBoolProperty					= 0x0000000000020000,
-	UUInt16Property					= 0x0000000000040000,
-	UFunction						= 0x0000000000080000,
-	UStructProperty					= 0x0000000000100000,
-	UArrayProperty					= 0x0000000000200000,
-	UInt64Property					= 0x0000000000400000,
-	UDelegateProperty				= 0x0000000000800000,
-	UNumericProperty				= 0x0000000001000000,
-	UMulticastDelegateProperty		= 0x0000000002000000,
-	UObjectPropertyBase				= 0x0000000004000000,
-	UWeakObjectProperty				= 0x0000000008000000,
-	ULazyObjectProperty				= 0x0000000010000000,
-	USoftObjectProperty				= 0x0000000020000000,
-	UTextProperty					= 0x0000000040000000,
-	UInt16Property					= 0x0000000080000000,
-	UDoubleProperty					= 0x0000000100000000,
-	USoftClassProperty				= 0x0000000200000000,
-	UPackage						= 0x0000000400000000,
-	ULevel							= 0x0000000800000000,
-	AActor							= 0x0000001000000000,
-	APlayerController				= 0x0000002000000000,
-	APawn							= 0x0000004000000000,
-	USceneComponent					= 0x0000008000000000,
-	UPrimitiveComponent				= 0x0000010000000000,
-	USkinnedMeshComponent			= 0x0000020000000000,
-	USkeletalMeshComponent			= 0x0000040000000000,
-	UBlueprint						= 0x0000080000000000,
-	UDelegateFunction				= 0x0000100000000000,
-	UStaticMeshComponent			= 0x0000200000000000,
-	UMapProperty					= 0x0000400000000000,
-	USetProperty					= 0x0000800000000000,
-	UEnumProperty					= 0x0001000000000000,
+	Field							= 0x0000000000000001,
+	Int8Property					= 0x0000000000000002,
+	Enum							= 0x0000000000000004,
+	Struct							= 0x0000000000000008,
+	ScriptStruct					= 0x0000000000000010,
+	Class							= 0x0000000000000020,
+	ByteProperty					= 0x0000000000000040,
+	IntProperty						= 0x0000000000000080,
+	FloatProperty					= 0x0000000000000100,
+	UInt64Property					= 0x0000000000000200,
+	ClassProperty					= 0x0000000000000400,
+	UInt32Property					= 0x0000000000000800,
+	InterfaceProperty				= 0x0000000000001000,
+	NameProperty					= 0x0000000000002000,
+	StrProperty						= 0x0000000000004000,
+	Property						= 0x0000000000008000,
+	ObjectProperty					= 0x0000000000010000,
+	BoolProperty					= 0x0000000000020000,
+	UInt16Property					= 0x0000000000040000,
+	Function						= 0x0000000000080000,
+	StructProperty					= 0x0000000000100000,
+	ArrayProperty					= 0x0000000000200000,
+	Int64Property					= 0x0000000000400000,
+	DelegateProperty				= 0x0000000000800000,
+	NumericProperty					= 0x0000000001000000,
+	MulticastDelegateProperty		= 0x0000000002000000,
+	ObjectPropertyBase				= 0x0000000004000000,
+	WeakObjectProperty				= 0x0000000008000000,
+	LazyObjectProperty				= 0x0000000010000000,
+	SoftObjectProperty				= 0x0000000020000000,
+	TextProperty					= 0x0000000040000000,
+	Int16Property					= 0x0000000080000000,
+	DoubleProperty					= 0x0000000100000000,
+	SoftClassProperty				= 0x0000000200000000,
+	Package							= 0x0000000400000000,
+	Level							= 0x0000000800000000,
+	Actor							= 0x0000001000000000,
+	PlayerController				= 0x0000002000000000,
+	Pawn							= 0x0000004000000000,
+	SceneComponent					= 0x0000008000000000,
+	PrimitiveComponent				= 0x0000010000000000,
+	SkinnedMeshComponent			= 0x0000020000000000,
+	SkeletalMeshComponent			= 0x0000040000000000,
+	Blueprint						= 0x0000080000000000,
+	DelegateFunction				= 0x0000100000000000,
+	StaticMeshComponent				= 0x0000200000000000,
+	MapProperty						= 0x0000400000000000,
+	SetProperty						= 0x0000800000000000,
+	EnumProperty					= 0x0001000000000000,
 };
 
 inline constexpr EClassCastFlags operator|(EClassCastFlags Left, EClassCastFlags Right)
-{																																										
-	return (EClassCastFlags)((std::underlying_type<EClassCastFlags>::type)(Left) | (std::underlying_type<EClassCastFlags>::type)(Right));
-}																																										
+{				
+	using CastFlagsType = std::underlying_type<EClassCastFlags>::type;
+	return static_cast<EClassCastFlags>(static_cast<CastFlagsType>(Left) | static_cast<CastFlagsType>(Right));
+}
 
 inline bool operator&(EClassCastFlags Left, EClassCastFlags Right)
-{																																										
-	return (((std::underlying_type<EClassCastFlags>::type)(Left) & (std::underlying_type<EClassCastFlags>::type)(Right)) == (std::underlying_type<EClassCastFlags>::type)(Right));
+{
+	using CastFlagsType = std::underlying_type<EClassCastFlags>::type;
+	return (static_cast<CastFlagsType>(Left) & static_cast<CastFlagsType>(Right)) == static_cast<CastFlagsType>(Right);
+}
+
+
+enum class EClassFlags : int32
+{
+	CLASS_None					= 0x00000000u,
+	Abstract					= 0x00000001u,
+	DefaultConfig				= 0x00000002u,
+	Config						= 0x00000004u,
+	Transient					= 0x00000008u,
+	Parsed						= 0x00000010u,
+	MatchedSerializers			= 0x00000020u,
+	ProjectUserConfig			= 0x00000040u,
+	Native						= 0x00000080u,
+	NoExport					= 0x00000100u,
+	NotPlaceable				= 0x00000200u,
+	PerObjectConfig				= 0x00000400u,
+	ReplicationDataIsSetUp		= 0x00000800u,
+	EditInlineNew				= 0x00001000u,
+	CollapseCategories			= 0x00002000u,
+	Interface					= 0x00004000u,
+	CustomConstructor			= 0x00008000u,
+	Const						= 0x00010000u,
+	LayoutChanging				= 0x00020000u,
+	CompiledFromBlueprint		= 0x00040000u,
+	MinimalAPI					= 0x00080000u,
+	RequiredAPI					= 0x00100000u,
+	DefaultToInstanced			= 0x00200000u,
+	TokenStreamAssembled		= 0x00400000u,
+	HasInstancedReference		= 0x00800000u,
+	Hidden						= 0x01000000u,
+	Deprecated					= 0x02000000u,
+	HideDropDown				= 0x04000000u,
+	GlobalUserConfig			= 0x08000000u,
+	Intrinsic					= 0x10000000u,
+	Constructed					= 0x20000000u,
+	ConfigDoNotCheckDefaults	= 0x40000000u,
+	NewerVersionExists			= 0x80000000u,
+};
+
+inline constexpr EClassFlags operator|(EClassFlags Left, EClassFlags Right)
+{
+	using ClassFlagsType = std::underlying_type<EClassFlags>::type;
+	return static_cast<EClassFlags>(static_cast<ClassFlagsType>(Left) | static_cast<ClassFlagsType>(Right));
+}
+
+inline bool operator&(EClassFlags Left, EClassFlags Right)
+{
+	using ClassFlagsType = std::underlying_type<EClassFlags>::type;
+	return ((static_cast<ClassFlagsType>(Left) & static_cast<ClassFlagsType>(Right)) == static_cast<ClassFlagsType>(Right));
 }
 
 class FScriptInterface
@@ -539,8 +663,8 @@ class TScriptInterface : public FScriptInterface
 {
 public:
 };
+
+
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

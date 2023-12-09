@@ -12,6 +12,8 @@
 #include "Hooks.h"
 
 
+bool rettrue() { return true; }
+
 DWORD WINAPI Main(LPVOID)
 {
     AllocConsole();
@@ -28,14 +30,17 @@ DWORD WINAPI Main(LPVOID)
 
     CREATEHOOK(BaseAddress() + 0x3b76fe0, GetNetModeWorld, nullptr);
 
+    // CollectGarbage
+    CREATEHOOK(BaseAddress() + 0x27C47A0, rettrue, nullptr);
+
     CREATEHOOK(SigScan("40 55 53 41 54 41 57 48 8D 6C 24 ? 48 81 EC ? ? ? ? 45 33 E4 48 8B DA 44 89 65 50"), ValidationDetour, &ValidationFailure);
     CREATEHOOK(BaseAddress() + 0x372fb80, KickPlayerHook, &KickPlayer);
 
     CREATEHOOK(BaseAddress() + 0x34af6c0, GetNetModeActor, nullptr);
 
-    GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
+    UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
 
-    GetDefaultObject<UKismetSystemLibrary>()->ExecuteConsoleCommand(GetWorld(), L"open Apollo_Terrain", nullptr);
+    GetDefaultObject<UKismetSystemLibrary>()->ExecuteConsoleCommand(UWorld::GetWorld(), L"open Apollo_Terrain", nullptr);
 
     // ChangeGameSessionID
     auto func = BaseAddress() + 0x19b1660;
@@ -51,14 +56,18 @@ DWORD WINAPI Main(LPVOID)
     //
 
 
-    auto DefaultAbilityComp = UObject::FindObjectSlow<UFortAbilitySystemComponentAthena>("Default__FortAbilitySystemComponentAthena");
-    auto DefaultFortPlayerController = StaticFindObject<AFortPlayerController>("/Script/FortniteGame.Default__FortPlayerController");
+ 
+    auto DefaultFortPlayerController = StaticFindObject<AFortPlayerController>("/Script/FortniteGame.Default__FortPlayerControllerAthena");
     auto DefaultGameMode = StaticFindObject<AFortGameModeAthena>("/Script/FortniteGame.Default__FortGameModeAthena");
 
     CREATEHOOK(BaseAddress() + Offsets::ProcessEvent, ProcessEventHook, &ProcessEvent);
     VirtualHook(DefaultGameMode->Vft, 254, ReadyToStartMatchHook, (PVOID*)&ReadyToStartMatch);
     VirtualHook(DefaultGameMode->Vft, 197, SpawnDefaultPawnForHook);
     VirtualHook(DefaultGameMode->Vft, 203, HandleStartingNewPlayerHook, (PVOID*)&HandleStartingNewPlayer);
+    VirtualHook(DefaultFortPlayerController->Vft, 617, ServerReadyToStartMatchHook, (PVOID*)&ServerReadyToStartMatch);
+    VirtualHook(GetDefaultObject<UFortControllerComponent_Aircraft>()->Vft, 130, ServerAttemptAircraftJumpHook);
+
+    CREATEHOOK(BaseAddress() + 0x2176a20, OnDamageServerHook, &OnDamageServer);
 
     static auto ServerCreateBuildingActorFn = StaticFindObject<UFunction>("/Script/FortniteGame.FortPlayerController.ServerCreateBuildingActor");
     HookExec(ServerCreateBuildingActorFn, ServerCreateBuildingActorHook, (PVOID*)&ServerCreateBuildingActor);
@@ -70,7 +79,7 @@ DWORD WINAPI Main(LPVOID)
 
     VirtualHook(DefaultFortPlayerController->Vft, 565, ServerEndEditingBuildingActor);
 
-    VirtualHook(DefaultAbilityComp->Vft, 0xF7, InternalServerTryActivateAbilityHook);
+    VirtualHook(GetDefaultObject<UFortAbilitySystemComponentAthena>()->Vft, 0xF7, InternalServerTryActivateAbilityHook);
 
     CREATEHOOK(BaseAddress() + 0xe2bf70, DispatchRequestHook, &DispatchRequest);
 

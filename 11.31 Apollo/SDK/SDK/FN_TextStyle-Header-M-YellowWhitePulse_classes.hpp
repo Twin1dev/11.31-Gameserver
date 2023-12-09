@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -14,20 +11,15 @@ namespace SDK
 
 // 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Header-M-YellowWhitePulse.TextStyle-Header-M-YellowWhitePulse_C
-class UTextStyle_Header_M_YellowWhitePulse_C : public UTextStyle_HeaderParent_C
+class UTextStyleMinusHeaderMinusMMinusYellowWhitePulse_C : public UTextStyleMinusHeaderParent_C
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("TextStyle-Header-M-YellowWhitePulse_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UTextStyleMinusHeaderMinusMMinusYellowWhitePulse_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

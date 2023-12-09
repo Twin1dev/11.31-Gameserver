@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_Creative_Device_Teleporter.BP_Creative_Device_Teleporter_C
+// (Actor)
+
+class UClass* ABP_Creative_Device_Teleporter_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_Creative_Device_Teleporter_C");
+
+	return Clss;
+}
+
+
+// BP_Creative_Device_Teleporter_C BP_Creative_Device_Teleporter.Default__BP_Creative_Device_Teleporter_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_Creative_Device_Teleporter_C* ABP_Creative_Device_Teleporter_C::GetDefaultObj()
+{
+	static class ABP_Creative_Device_Teleporter_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_Creative_Device_Teleporter_C*>(ABP_Creative_Device_Teleporter_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_Creative_Device_Teleporter.BP_Creative_Device_Teleporter_C.GetTeleportedPawnPitch
@@ -41,9 +66,12 @@ namespace SDK
 
 void ABP_Creative_Device_Teleporter_C::GetTeleportedPawnPitch(class AFortPlayerPawn* PawnToTeleport, class ABP_Creative_Device_Teleporter_C* SourceTeleporter, float* OutPitch, int32 Temp_int_Variable, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, class AController* CallFunc_GetController_ReturnValue, const struct FRotator& CallFunc_GetControlRotation_ReturnValue, const struct FRotator& CallFunc_NormalizedDeltaRotator_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, float CallFunc_BreakRotator_Roll_1, float CallFunc_BreakRotator_Pitch_1, float CallFunc_BreakRotator_Yaw_1, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue_1, float CallFunc_BreakRotator_Roll_2, float CallFunc_BreakRotator_Pitch_2, float CallFunc_BreakRotator_Yaw_2, float CallFunc_Add_FloatFloat_ReturnValue, float K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "GetTeleportedPawnPitch");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_GetTeleportedPawnPitch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "GetTeleportedPawnPitch");
+
+	Params::ABP_Creative_Device_Teleporter_C_GetTeleportedPawnPitch_Params Parms{};
 
 	Parms.PawnToTeleport = PawnToTeleport;
 	Parms.SourceTeleporter = SourceTeleporter;
@@ -98,9 +126,12 @@ void ABP_Creative_Device_Teleporter_C::GetTeleportedPawnPitch(class AFortPlayerP
 
 void ABP_Creative_Device_Teleporter_C::GetTeleportedPawnYaw(class AFortPlayerPawn* PawnToTeleport, class ABP_Creative_Device_Teleporter_C* SourceTeleporter, float* OutYaw, int32 Temp_int_Variable, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue_1, const struct FRotator& CallFunc_NormalizedDeltaRotator_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, float CallFunc_BreakRotator_Roll_1, float CallFunc_BreakRotator_Pitch_1, float CallFunc_BreakRotator_Yaw_1, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue_2, float CallFunc_BreakRotator_Roll_2, float CallFunc_BreakRotator_Pitch_2, float CallFunc_BreakRotator_Yaw_2, float CallFunc_Add_FloatFloat_ReturnValue, float K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "GetTeleportedPawnYaw");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_GetTeleportedPawnYaw_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "GetTeleportedPawnYaw");
+
+	Params::ABP_Creative_Device_Teleporter_C_GetTeleportedPawnYaw_Params Parms{};
 
 	Parms.PawnToTeleport = PawnToTeleport;
 	Parms.SourceTeleporter = SourceTeleporter;
@@ -137,9 +168,12 @@ void ABP_Creative_Device_Teleporter_C::GetTeleportedPawnYaw(class AFortPlayerPaw
 
 void ABP_Creative_Device_Teleporter_C::ResetTeleportEventState(bool CallFunc_HasAuthority_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "ResetTeleportEventState");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_ResetTeleportEventState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "ResetTeleportEventState");
+
+	Params::ABP_Creative_Device_Teleporter_C_ResetTeleportEventState_Params Parms{};
 
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
@@ -159,9 +193,12 @@ void ABP_Creative_Device_Teleporter_C::ResetTeleportEventState(bool CallFunc_Has
 
 void ABP_Creative_Device_Teleporter_C::OnRep_TeleporterUsedFlash(bool CallFunc_IsDedicatedServer_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "OnRep_TeleporterUsedFlash");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_OnRep_TeleporterUsedFlash_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "OnRep_TeleporterUsedFlash");
+
+	Params::ABP_Creative_Device_Teleporter_C_OnRep_TeleporterUsedFlash_Params Parms{};
 
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 	Parms.CallFunc_K2_GetActorLocation_ReturnValue = CallFunc_K2_GetActorLocation_ReturnValue;
@@ -187,9 +224,12 @@ void ABP_Creative_Device_Teleporter_C::OnRep_TeleporterUsedFlash(bool CallFunc_I
 
 void ABP_Creative_Device_Teleporter_C::OnReceivedPawn(class AFortPlayerPawn* PawnReceived, class AFortPlayerPawn* PlayerPawn, class AController* CallFunc_GetController_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, uint8 CallFunc_Add_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "OnReceivedPawn");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_OnReceivedPawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "OnReceivedPawn");
+
+	Params::ABP_Creative_Device_Teleporter_C_OnReceivedPawn_Params Parms{};
 
 	Parms.PawnReceived = PawnReceived;
 	Parms.PlayerPawn = PlayerPawn;
@@ -215,9 +255,12 @@ void ABP_Creative_Device_Teleporter_C::OnReceivedPawn(class AFortPlayerPawn* Paw
 
 void ABP_Creative_Device_Teleporter_C::IsMinigameInCreationMode(bool* bInCreationMode, bool bSuccess, bool CallFunc_IsValid_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "isMinigameInCreationMode");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_IsMinigameInCreationMode_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "isMinigameInCreationMode");
+
+	Params::ABP_Creative_Device_Teleporter_C_IsMinigameInCreationMode_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -242,9 +285,12 @@ void ABP_Creative_Device_Teleporter_C::IsMinigameInCreationMode(bool* bInCreatio
 
 void ABP_Creative_Device_Teleporter_C::InitializeFX(bool Temp_bool_Variable, float Temp_float_Variable, float Temp_float_Variable_1, bool CallFunc_IsEnabled_Enabled, float K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "InitializeFX");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_InitializeFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "InitializeFX");
+
+	Params::ABP_Creative_Device_Teleporter_C_InitializeFX_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_float_Variable = Temp_float_Variable;
@@ -263,12 +309,14 @@ void ABP_Creative_Device_Teleporter_C::InitializeFX(bool Temp_bool_Variable, flo
 
 void ABP_Creative_Device_Teleporter_C::UpdateEnergyAttributes()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "UpdateEnergyAttributes");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_UpdateEnergyAttributes_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "UpdateEnergyAttributes");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -329,9 +377,12 @@ void ABP_Creative_Device_Teleporter_C::UpdateEnergyAttributes()
 
 void ABP_Creative_Device_Teleporter_C::SelectDestinationTeleporter(class AFortPlayerPawn* PawnToTeleport, class ABP_Creative_Device_Teleporter_C** SelectedTeleporter, class AFortPlayerPawn* LocalPawnToTeleport, class AFortCreativeTeleporter* CurrentTeleporterCandidate, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, int32 Temp_int_Variable, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, bool CallFunc_IsValid_ReturnValue, class ABP_Creative_Device_Teleporter_C* K2Node_DynamicCast_AsBP_Creative_Device_Teleporter, bool K2Node_DynamicCast_bSuccess, float CallFunc_GetTeleportedPawnYaw_OutYaw, const struct FRotator& CallFunc_MakeRotator_ReturnValue, bool CallFunc_IsEnabled_Enabled, bool CallFunc_IsTeleporterBlocked_ReturnValue, int32 Temp_int_Variable_1, float CallFunc_Conv_IntToFloat_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_2, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_IsValid_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_3, float CallFunc_GetRuntime_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, int32 CallFunc_FFloor_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_4, bool CallFunc_NotEqual_IntInt_ReturnValue, bool CallFunc_NotEqual_ObjectObject_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, class UFortCreativeTeleporterManagerComponent* CallFunc_GetTeleporterManager_TeleporterManagerComponent, bool CallFunc_EqualEqual_IntInt_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, TSet<class AFortCreativeTeleporter*> CallFunc_GetTeleportersInGroup_ReturnValue, TArray<class AFortCreativeTeleporter*>& CallFunc_Set_ToArray_Result, int32 CallFunc_Array_Length_ReturnValue, class AFortCreativeTeleporter* CallFunc_Array_Get_Item, bool CallFunc_Greater_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue_2, bool CallFunc_LessEqual_IntInt_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue_1, int32 CallFunc_Percent_IntInt_ReturnValue, int32 CallFunc_Percent_IntInt_ReturnValue_1, class AFortCreativeTeleporter* CallFunc_Array_Get_Item_1, class AFortCreativeTeleporter* CallFunc_Array_Get_Item_2, int32 CallFunc_Array_Length_ReturnValue_3, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "SelectDestinationTeleporter");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_SelectDestinationTeleporter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "SelectDestinationTeleporter");
+
+	Params::ABP_Creative_Device_Teleporter_C_SelectDestinationTeleporter_Params Parms{};
 
 	Parms.PawnToTeleport = PawnToTeleport;
 	Parms.LocalPawnToTeleport = LocalPawnToTeleport;
@@ -401,9 +452,12 @@ void ABP_Creative_Device_Teleporter_C::SelectDestinationTeleporter(class AFortPl
 
 void ABP_Creative_Device_Teleporter_C::IsMinigameInProgress(bool* bInProgress, bool bLocalInProgress, bool CallFunc_IsValid_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "isMinigameInProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_IsMinigameInProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "isMinigameInProgress");
+
+	Params::ABP_Creative_Device_Teleporter_C_IsMinigameInProgress_Params Parms{};
 
 	Parms.bLocalInProgress = bLocalInProgress;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -422,13 +476,16 @@ void ABP_Creative_Device_Teleporter_C::IsMinigameInProgress(bool* bInProgress, b
 // Parameters:
 // class AFortPlayerPawn*             PawnToTeleport                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ABP_Creative_Device_Teleporter_C*TargetTeleporter                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              (None)
 
 void ABP_Creative_Device_Teleporter_C::TeleportPlayerPawnTo(class AFortPlayerPawn* PawnToTeleport, class ABP_Creative_Device_Teleporter_C* TargetTeleporter, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "TeleportPlayerPawnTo");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_TeleportPlayerPawnTo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "TeleportPlayerPawnTo");
+
+	Params::ABP_Creative_Device_Teleporter_C_TeleportPlayerPawnTo_Params Parms{};
 
 	Parms.PawnToTeleport = PawnToTeleport;
 	Parms.TargetTeleporter = TargetTeleporter;
@@ -459,9 +516,12 @@ void ABP_Creative_Device_Teleporter_C::TeleportPlayerPawnTo(class AFortPlayerPaw
 
 bool ABP_Creative_Device_Teleporter_C::BlueprintCanInteract(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted, bool bInteractSuccess, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_HasStarted_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerControllerAthena* K2Node_DynamicCast_AsFort_Player_Controller_Athena, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue_2, class AFortVolume* CallFunc_CanPlayerCreateInCurrentVolume_OutCurrentVolume, bool CallFunc_CanPlayerCreateInCurrentVolume_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BlueprintCanInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_BlueprintCanInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BlueprintCanInteract");
+
+	Params::ABP_Creative_Device_Teleporter_C_BlueprintCanInteract_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -498,9 +558,12 @@ bool ABP_Creative_Device_Teleporter_C::BlueprintCanInteract(class AFortPawn* Int
 
 void ABP_Creative_Device_Teleporter_C::GetTeleporterManager(class UFortCreativeTeleporterManagerComponent** TeleporterManagerComponent, class AFortVolumeManager* CallFunc_GetVolumeManager_OutVolumeManager, enum class EVolumeValidityResult CallFunc_GetVolumeManager_OutIsValid, class AFortVolume* CallFunc_GetVolumeForActor_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, class AFortMinigame* CallFunc_GetMinigameForVolume_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "GetTeleporterManager");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_GetTeleporterManager_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "GetTeleporterManager");
+
+	Params::ABP_Creative_Device_Teleporter_C_GetTeleporterManager_Params Parms{};
 
 	Parms.CallFunc_GetVolumeManager_OutVolumeManager = CallFunc_GetVolumeManager_OutVolumeManager;
 	Parms.CallFunc_GetVolumeManager_OutIsValid = CallFunc_GetVolumeManager_OutIsValid;
@@ -544,9 +607,12 @@ void ABP_Creative_Device_Teleporter_C::GetTeleporterManager(class UFortCreativeT
 
 void ABP_Creative_Device_Teleporter_C::CanTeleportActor(class AFortPawn* PawnToTeleport, bool* bCanTeleportActor, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsEnabled_Enabled, bool CallFunc_IsInVehicle_ReturnValue, bool CallFunc_IsValid_ReturnValue, uint8 CallFunc_GetActorTeam_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsValid_ReturnValue_1, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAnyMatchingGameplayTags_self_CastInput, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue, uint8 CallFunc_Subtract_ByteByte_ReturnValue, int32 CallFunc_Conv_ByteToInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "CanTeleportActor");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_CanTeleportActor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "CanTeleportActor");
+
+	Params::ABP_Creative_Device_Teleporter_C_CanTeleportActor_Params Parms{};
 
 	Parms.PawnToTeleport = PawnToTeleport;
 	Parms.K2Node_DynamicCast_AsFort_Player_Pawn = K2Node_DynamicCast_AsFort_Player_Pawn;
@@ -582,12 +648,14 @@ void ABP_Creative_Device_Teleporter_C::CanTeleportActor(class AFortPawn* PawnToT
 
 void ABP_Creative_Device_Teleporter_C::TPEffectsTimeLine__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "TPEffectsTimeLine__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_TPEffectsTimeLine__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "TPEffectsTimeLine__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -598,12 +666,14 @@ void ABP_Creative_Device_Teleporter_C::TPEffectsTimeLine__FinishedFunc()
 
 void ABP_Creative_Device_Teleporter_C::TPEffectsTimeLine__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "TPEffectsTimeLine__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_TPEffectsTimeLine__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "TPEffectsTimeLine__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -614,12 +684,14 @@ void ABP_Creative_Device_Teleporter_C::TPEffectsTimeLine__UpdateFunc()
 
 void ABP_Creative_Device_Teleporter_C::TPEnabledFXTimeline__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "TPEnabledFXTimeline__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_TPEnabledFXTimeline__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "TPEnabledFXTimeline__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -630,12 +702,14 @@ void ABP_Creative_Device_Teleporter_C::TPEnabledFXTimeline__FinishedFunc()
 
 void ABP_Creative_Device_Teleporter_C::TPEnabledFXTimeline__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "TPEnabledFXTimeline__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_TPEnabledFXTimeline__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "TPEnabledFXTimeline__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -646,12 +720,14 @@ void ABP_Creative_Device_Teleporter_C::TPEnabledFXTimeline__UpdateFunc()
 
 void ABP_Creative_Device_Teleporter_C::TPDisabledFXTimeline__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "TPDisabledFXTimeline__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_TPDisabledFXTimeline__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "TPDisabledFXTimeline__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -662,12 +738,14 @@ void ABP_Creative_Device_Teleporter_C::TPDisabledFXTimeline__FinishedFunc()
 
 void ABP_Creative_Device_Teleporter_C::TPDisabledFXTimeline__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "TPDisabledFXTimeline__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_TPDisabledFXTimeline__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "TPDisabledFXTimeline__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -678,12 +756,14 @@ void ABP_Creative_Device_Teleporter_C::TPDisabledFXTimeline__UpdateFunc()
 
 void ABP_Creative_Device_Teleporter_C::UpdateTeleporterFX()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "UpdateTeleporterFX");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_UpdateTeleporterFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "UpdateTeleporterFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -694,12 +774,14 @@ void ABP_Creative_Device_Teleporter_C::UpdateTeleporterFX()
 
 void ABP_Creative_Device_Teleporter_C::PortalEnabledFX()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "PortalEnabledFX");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_PortalEnabledFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "PortalEnabledFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -710,12 +792,14 @@ void ABP_Creative_Device_Teleporter_C::PortalEnabledFX()
 
 void ABP_Creative_Device_Teleporter_C::PortalDisabledFX()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "PortalDisabledFX");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_PortalDisabledFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "PortalDisabledFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -727,9 +811,12 @@ void ABP_Creative_Device_Teleporter_C::PortalDisabledFX()
 
 void ABP_Creative_Device_Teleporter_C::PlayTeleportExitedFX(const struct FVector& Location)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "PlayTeleportExitedFX");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_PlayTeleportExitedFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "PlayTeleportExitedFX");
+
+	Params::ABP_Creative_Device_Teleporter_C_PlayTeleportExitedFX_Params Parms{};
 
 	Parms.Location = Location;
 
@@ -745,9 +832,12 @@ void ABP_Creative_Device_Teleporter_C::PlayTeleportExitedFX(const struct FVector
 
 void ABP_Creative_Device_Teleporter_C::BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_0_OnGameplayMessageReceived__DelegateSignature(class AController* TriggerInstigator)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_0_OnGameplayMessageReceived__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_0_OnGameplayMessageReceived__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_0_OnGameplayMessageReceived__DelegateSignature");
+
+	Params::ABP_Creative_Device_Teleporter_C_BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_0_OnGameplayMessageReceived__DelegateSignature_Params Parms{};
 
 	Parms.TriggerInstigator = TriggerInstigator;
 
@@ -763,9 +853,12 @@ void ABP_Creative_Device_Teleporter_C::BndEvt__EnableWhenReceived_K2Node_Compone
 
 void ABP_Creative_Device_Teleporter_C::BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_1_OnGameplayMessageReceived__DelegateSignature(class AController* TriggerInstigator)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_1_OnGameplayMessageReceived__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_1_OnGameplayMessageReceived__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_1_OnGameplayMessageReceived__DelegateSignature");
+
+	Params::ABP_Creative_Device_Teleporter_C_BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_1_OnGameplayMessageReceived__DelegateSignature_Params Parms{};
 
 	Parms.TriggerInstigator = TriggerInstigator;
 
@@ -786,9 +879,12 @@ void ABP_Creative_Device_Teleporter_C::BndEvt__DisableWhenReceived_K2Node_Compon
 
 void ABP_Creative_Device_Teleporter_C::BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, struct FHitResult& SweepResult)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
+
+	Params::ABP_Creative_Device_Teleporter_C_BndEvt__OverlapCapsule_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature_Params Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -809,9 +905,12 @@ void ABP_Creative_Device_Teleporter_C::BndEvt__OverlapCapsule_K2Node_ComponentBo
 
 void ABP_Creative_Device_Teleporter_C::BndEvt__DrainEnergyWhenReceived_K2Node_ComponentBoundEvent_1_OnGameplayMessageReceived__DelegateSignature(class AController* TriggerInstigator)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__DrainEnergyWhenReceived_K2Node_ComponentBoundEvent_1_OnGameplayMessageReceived__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_BndEvt__DrainEnergyWhenReceived_K2Node_ComponentBoundEvent_1_OnGameplayMessageReceived__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__DrainEnergyWhenReceived_K2Node_ComponentBoundEvent_1_OnGameplayMessageReceived__DelegateSignature");
+
+	Params::ABP_Creative_Device_Teleporter_C_BndEvt__DrainEnergyWhenReceived_K2Node_ComponentBoundEvent_1_OnGameplayMessageReceived__DelegateSignature_Params Parms{};
 
 	Parms.TriggerInstigator = TriggerInstigator;
 
@@ -827,9 +926,12 @@ void ABP_Creative_Device_Teleporter_C::BndEvt__DrainEnergyWhenReceived_K2Node_Co
 
 void ABP_Creative_Device_Teleporter_C::BndEvt__RechargeWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature(class AController* TriggerInstigator)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__RechargeWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_BndEvt__RechargeWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__RechargeWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature");
+
+	Params::ABP_Creative_Device_Teleporter_C_BndEvt__RechargeWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature_Params Parms{};
 
 	Parms.TriggerInstigator = TriggerInstigator;
 
@@ -844,12 +946,14 @@ void ABP_Creative_Device_Teleporter_C::BndEvt__RechargeWhenReceived_K2Node_Compo
 
 void ABP_Creative_Device_Teleporter_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_5_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_5_AnyPropertyChangedDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_5_AnyPropertyChangedDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_5_AnyPropertyChangedDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -861,9 +965,12 @@ void ABP_Creative_Device_Teleporter_C::BndEvt__ToyOptionsComponent_K2Node_Compon
 
 void ABP_Creative_Device_Teleporter_C::PlayTeleportEnteredFX(const struct FVector& Location)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "PlayTeleportEnteredFX");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_PlayTeleportEnteredFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "PlayTeleportEnteredFX");
+
+	Params::ABP_Creative_Device_Teleporter_C_PlayTeleportEnteredFX_Params Parms{};
 
 	Parms.Location = Location;
 
@@ -878,12 +985,14 @@ void ABP_Creative_Device_Teleporter_C::PlayTeleportEnteredFX(const struct FVecto
 
 void ABP_Creative_Device_Teleporter_C::BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_8_SimpleDynamicMulticastDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_8_SimpleDynamicMulticastDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_8_SimpleDynamicMulticastDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_8_SimpleDynamicMulticastDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -894,12 +1003,14 @@ void ABP_Creative_Device_Teleporter_C::BndEvt__FortMinigameLogic_K2Node_Componen
 
 void ABP_Creative_Device_Teleporter_C::BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_9_SimpleDynamicMulticastDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_9_SimpleDynamicMulticastDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_9_SimpleDynamicMulticastDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_9_SimpleDynamicMulticastDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -910,12 +1021,14 @@ void ABP_Creative_Device_Teleporter_C::BndEvt__FortMinigameLogic_K2Node_Componen
 
 void ABP_Creative_Device_Teleporter_C::UpdateRiftVisibility()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "UpdateRiftVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_UpdateRiftVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "UpdateRiftVisibility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -928,9 +1041,12 @@ void ABP_Creative_Device_Teleporter_C::UpdateRiftVisibility()
 
 void ABP_Creative_Device_Teleporter_C::BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_6_OnMinigameStateChanged__DelegateSignature(class AFortMinigame* Minigame, enum class EFortMinigameState NewMinigameState)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_6_OnMinigameStateChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_6_OnMinigameStateChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_6_OnMinigameStateChanged__DelegateSignature");
+
+	Params::ABP_Creative_Device_Teleporter_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_6_OnMinigameStateChanged__DelegateSignature_Params Parms{};
 
 	Parms.Minigame = Minigame;
 	Parms.NewMinigameState = NewMinigameState;
@@ -946,12 +1062,14 @@ void ABP_Creative_Device_Teleporter_C::BndEvt__FortMinigameLogic_K2Node_Componen
 
 void ABP_Creative_Device_Teleporter_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -962,12 +1080,14 @@ void ABP_Creative_Device_Teleporter_C::ReceiveBeginPlay()
 
 void ABP_Creative_Device_Teleporter_C::BndEvt__EnergyComponent_K2Node_ComponentBoundEvent_11_EnergyLevelsUpdated__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__EnergyComponent_K2Node_ComponentBoundEvent_11_EnergyLevelsUpdated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_BndEvt__EnergyComponent_K2Node_ComponentBoundEvent_11_EnergyLevelsUpdated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__EnergyComponent_K2Node_ComponentBoundEvent_11_EnergyLevelsUpdated__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -979,9 +1099,12 @@ void ABP_Creative_Device_Teleporter_C::BndEvt__EnergyComponent_K2Node_ComponentB
 
 void ABP_Creative_Device_Teleporter_C::BndEvt__EnabledComponent_K2Node_ComponentBoundEvent_12_On_Enabled_State_Changed__DelegateSignature(bool Enabled)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__EnabledComponent_K2Node_ComponentBoundEvent_12_On Enabled State Changed__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_BndEvt__EnabledComponent_K2Node_ComponentBoundEvent_12_On_Enabled_State_Changed__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__EnabledComponent_K2Node_ComponentBoundEvent_12_On Enabled State Changed__DelegateSignature");
+
+	Params::ABP_Creative_Device_Teleporter_C_BndEvt__EnabledComponent_K2Node_ComponentBoundEvent_12_On_Enabled_State_Changed__DelegateSignature_Params Parms{};
 
 	Parms.Enabled = Enabled;
 
@@ -997,9 +1120,12 @@ void ABP_Creative_Device_Teleporter_C::BndEvt__EnabledComponent_K2Node_Component
 
 void ABP_Creative_Device_Teleporter_C::BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_13_OnMinigameAssignmentChanged__DelegateSignature(class AFortMinigame* Minigame)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_13_OnMinigameAssignmentChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_13_OnMinigameAssignmentChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_13_OnMinigameAssignmentChanged__DelegateSignature");
+
+	Params::ABP_Creative_Device_Teleporter_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_13_OnMinigameAssignmentChanged__DelegateSignature_Params Parms{};
 
 	Parms.Minigame = Minigame;
 
@@ -1015,9 +1141,12 @@ void ABP_Creative_Device_Teleporter_C::BndEvt__FortMinigameLogic_K2Node_Componen
 
 void ABP_Creative_Device_Teleporter_C::BndEvt__TeleportToWhenReceived_K2Node_ComponentBoundEvent_7_OnGameplayMessageReceived__DelegateSignature(class AController* TriggerInstigator)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__TeleportToWhenReceived_K2Node_ComponentBoundEvent_7_OnGameplayMessageReceived__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_BndEvt__TeleportToWhenReceived_K2Node_ComponentBoundEvent_7_OnGameplayMessageReceived__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "BndEvt__TeleportToWhenReceived_K2Node_ComponentBoundEvent_7_OnGameplayMessageReceived__DelegateSignature");
+
+	Params::ABP_Creative_Device_Teleporter_C_BndEvt__TeleportToWhenReceived_K2Node_ComponentBoundEvent_7_OnGameplayMessageReceived__DelegateSignature_Params Parms{};
 
 	Parms.TriggerInstigator = TriggerInstigator;
 
@@ -1033,9 +1162,12 @@ void ABP_Creative_Device_Teleporter_C::BndEvt__TeleportToWhenReceived_K2Node_Com
 
 void ABP_Creative_Device_Teleporter_C::ReceiveEndPlay(enum class EEndPlayReason EndPlayReason)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "ReceiveEndPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_ReceiveEndPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "ReceiveEndPlay");
+
+	Params::ABP_Creative_Device_Teleporter_C_ReceiveEndPlay_Params Parms{};
 
 	Parms.EndPlayReason = EndPlayReason;
 
@@ -1111,7 +1243,7 @@ void ABP_Creative_Device_Teleporter_C::ReceiveEndPlay(enum class EEndPlayReason 
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortCreativeTeleporterManagerComponent*CallFunc_GetTeleporterManager_TeleporterManagerComponent_2       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_5                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayTagContainer       CallFunc_GetChannelId_ReturnValue                                ()
+// struct FGameplayTagContainer       CallFunc_GetChannelId_ReturnValue                                (None)
 // class UFortCreativeTeleporterManagerComponent*CallFunc_GetTeleporterManager_TeleporterManagerComponent_3       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_6                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsDedicatedServer_ReturnValue_2                         (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1177,9 +1309,12 @@ void ABP_Creative_Device_Teleporter_C::ReceiveEndPlay(enum class EEndPlayReason 
 
 void ABP_Creative_Device_Teleporter_C::ExecuteUbergraph_BP_Creative_Device_Teleporter(int32 EntryPoint, bool Temp_bool_Variable, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_1, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_1, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_2, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_2, float CallFunc_Subtract_FloatFloat_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue_2, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue_2, float CallFunc_FClamp_ReturnValue, float CallFunc_FClamp_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue_3, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_3, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue_1, float CallFunc_FClamp_ReturnValue_2, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue_2, bool CallFunc_Greater_FloatFloat_ReturnValue_1, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue_3, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue_4, bool CallFunc_Greater_FloatFloat_ReturnValue_2, const struct FVector& K2Node_CustomEvent_Location_1, bool CallFunc_IsValid_ReturnValue, float Temp_float_Variable, bool CallFunc_IsValid_ReturnValue_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, class AController* K2Node_ComponentBoundEvent_TriggerInstigator_4, class AController* K2Node_ComponentBoundEvent_TriggerInstigator_3, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent, class AActor* K2Node_ComponentBoundEvent_OtherActor, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp, int32 K2Node_ComponentBoundEvent_OtherBodyIndex, bool K2Node_ComponentBoundEvent_bFromSweep, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult, class AController* K2Node_ComponentBoundEvent_TriggerInstigator_2, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, class AController* K2Node_ComponentBoundEvent_TriggerInstigator_1, class ABP_Creative_Device_Teleporter_C* CallFunc_SelectDestinationTeleporter_SelectedTeleporter, bool CallFunc_CanTeleportActor_bCanTeleportActor, bool CallFunc_IsDedicatedServer_ReturnValue, class UFortCreativeTeleporterManagerComponent* CallFunc_GetTeleporterManager_TeleporterManagerComponent, bool CallFunc_IsValid_ReturnValue_3, class UFortCreativeTeleporterManagerComponent* CallFunc_GetTeleporterManager_TeleporterManagerComponent_1, bool CallFunc_IsValid_ReturnValue_4, const struct FVector& K2Node_CustomEvent_Location, bool Temp_bool_Variable_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_1, float K2Node_Select_Default, bool CallFunc_isMinigameInProgress_bInProgress, bool CallFunc_IsDedicatedServer_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue, class UFortCreativeTeleporterManagerComponent* CallFunc_GetTeleporterManager_TeleporterManagerComponent_2, bool CallFunc_IsValid_ReturnValue_5, const struct FGameplayTagContainer& CallFunc_GetChannelId_ReturnValue, class UFortCreativeTeleporterManagerComponent* CallFunc_GetTeleporterManager_TeleporterManagerComponent_3, bool CallFunc_IsValid_ReturnValue_6, bool CallFunc_IsDedicatedServer_ReturnValue_2, bool CallFunc_HasAuthority_ReturnValue, const struct FVector& Temp_struct_Variable, bool CallFunc_HasAuthority_ReturnValue_1, bool CallFunc_IsDedicatedServer_ReturnValue_3, class AController* CallFunc_GetController_ReturnValue, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, bool Temp_bool_Variable_2, bool CallFunc_HasAuthority_ReturnValue_2, class UPawnMovementComponent* CallFunc_GetMovementComponent_ReturnValue, const struct FVector& CallFunc_GetVelocity_ReturnValue, class AFortMinigame* K2Node_ComponentBoundEvent_Minigame_1, enum class EFortMinigameState K2Node_ComponentBoundEvent_NewMinigameState, bool CallFunc_IsDedicatedServer_ReturnValue_4, bool CallFunc_IsDedicatedServer_ReturnValue_5, float CallFunc_Lerp_ReturnValue, bool CallFunc_IsValid_ReturnValue_7, const struct FVector& CallFunc_Conv_LinearColorToVector_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_4, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, const struct FLinearColor& CallFunc_LinearColorLerp_ReturnValue, const struct FLinearColor& CallFunc_Multiply_LinearColorFloat_ReturnValue, bool K2Node_ComponentBoundEvent_Enabled, bool CallFunc_IsEnabled_Enabled, bool CallFunc_IsValid_ReturnValue_8, const struct FVector& Temp_struct_Variable_1, bool CallFunc_IsValid_ReturnValue_9, bool CallFunc_isMinigameInCreationMode_bInCreationMode, int32 Temp_int_Variable, bool CallFunc_BooleanOR_ReturnValue, const struct FVector& Temp_struct_Variable_2, class AFortMinigame* K2Node_ComponentBoundEvent_Minigame, uint8 CallFunc_Add_ByteByte_ReturnValue, uint8 CallFunc_Add_ByteByte_ReturnValue_1, bool Temp_bool_Variable_3, class AController* K2Node_ComponentBoundEvent_TriggerInstigator, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess_1, const struct FVector& K2Node_Select_Default_1, class AFortPlayerPawn* CallFunc_GetPlayerPawn_ReturnValue, bool CallFunc_CanTeleportActor_bCanTeleportActor_1, bool CallFunc_RequestPermissionToTeleportPawn_ReturnValue, bool CallFunc_IsValid_ReturnValue_10, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FVector& Temp_struct_Variable_3, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue_1, bool Temp_bool_Variable_4, const struct FRotator& CallFunc_NormalizedDeltaRotator_ReturnValue, const struct FVector& CallFunc_GreaterGreater_VectorRotator_ReturnValue, enum class EEndPlayReason K2Node_Event_EndPlayReason, float Temp_float_Variable_1, bool Temp_bool_Variable_5, float Temp_float_Variable_2, float K2Node_Select_Default_2, float K2Node_Select_Default_3, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& K2Node_Select_Default_4, const struct FVector& K2Node_Select_Default_5)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "ExecuteUbergraph_BP_Creative_Device_Teleporter");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Device_Teleporter_C_ExecuteUbergraph_BP_Creative_Device_Teleporter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Device_Teleporter_C", "ExecuteUbergraph_BP_Creative_Device_Teleporter");
+
+	Params::ABP_Creative_Device_Teleporter_C_ExecuteUbergraph_BP_Creative_Device_Teleporter_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -1315,6 +1450,4 @@ void ABP_Creative_Device_Teleporter_C::ExecuteUbergraph_BP_Creative_Device_Telep
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

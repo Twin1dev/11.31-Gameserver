@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass CommonUIInputData.CommonUIInputData_C
+// (None)
+
+class UClass* UCommonUIInputData_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CommonUIInputData_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// CommonUIInputData_C CommonUIInputData.Default__CommonUIInputData_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCommonUIInputData_C* UCommonUIInputData_C::GetDefaultObj()
+{
+	static class UCommonUIInputData_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCommonUIInputData_C*>(UCommonUIInputData_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

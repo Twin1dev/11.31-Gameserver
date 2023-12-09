@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -22,16 +19,16 @@ struct AB_SoundIndicator_01_C_CalculateFiringAngle_Params
 {
 public:
 	float                                        DotResult;                                         // 0x0(0x4)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_44CD[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_3B31[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                CallFunc_GetOwner_ReturnValue;                     // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               CallFunc_K2_GetActorLocation_ReturnValue;          // 0x10(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_44CE[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_3B32[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AFortPlayerPawn*                       K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_44CF[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_3B33[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AFortWeaponRanged*                     K2Node_DynamicCast_AsFort_Weapon_Ranged;           // 0x30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess_1;                     // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_44D0[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_3B34[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x3C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Multiply_FloatFloat_ReturnValue_1;        // 0x40(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x44(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -59,9 +56,9 @@ public:
 	bool                                         Temp_bool_Variable_1;                              // 0x89(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_Greater_FloatFloat_ReturnValue;           // 0x8A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x8B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_44D1[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	struct FRuntimeFloatCurve                    K2Node_Select_Default;                             // 0x90(0x88)()
-	struct FRuntimeFloatCurve                    K2Node_Select_Default_1;                           // 0x118(0x88)()
+	uint8                                        Pad_3B35[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FRuntimeFloatCurve                    K2Node_Select_Default;                             // 0x90(0x88)(None)
+	struct FRuntimeFloatCurve                    K2Node_Select_Default_1;                           // 0x118(0x88)(None)
 };
 
 // 0x4 (0x4 - 0x0)
@@ -72,27 +69,6 @@ public:
 	float                                        CallFunc_CalculateFiringAngle_DotResult;           // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function B_SoundIndicator_01.B_SoundIndicator_01_C.OnEffectActivated
-struct AB_SoundIndicator_01_C_OnEffectActivated_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function B_SoundIndicator_01.B_SoundIndicator_01_C.ReceiveBeginPlay
-struct AB_SoundIndicator_01_C_ReceiveBeginPlay_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function B_SoundIndicator_01.B_SoundIndicator_01_C.OnEffectDeactivated
-struct AB_SoundIndicator_01_C_OnEffectDeactivated_Params
-{
-public:
-};
-
 // 0x90 (0x90 - 0x0)
 // Function B_SoundIndicator_01.B_SoundIndicator_01_C.ExecuteUbergraph_B_SoundIndicator_01
 struct AB_SoundIndicator_01_C_ExecuteUbergraph_B_SoundIndicator_01_Params
@@ -100,13 +76,11 @@ struct AB_SoundIndicator_01_C_ExecuteUbergraph_B_SoundIndicator_01_Params
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_44D2[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	struct FRuntimeFloatCurve                    CallFunc_GetWeaponCurve_ReturnValue;               // 0x8(0x88)()
+	uint8                                        Pad_3B3A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FRuntimeFloatCurve                    CallFunc_GetWeaponCurve_ReturnValue;               // 0x8(0x88)(None)
 };
 
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

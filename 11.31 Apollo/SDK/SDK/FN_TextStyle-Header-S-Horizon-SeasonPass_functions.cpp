@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TextStyle-Header-S-Horizon-SeasonPass.TextStyle-Header-S-Horizon-SeasonPass_C
+// (None)
+
+class UClass* UTextStyleMinusHeaderMinusSMinusHorizonMinusSeasonPass_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextStyle-Header-S-Horizon-SeasonPass_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// TextStyle-Header-S-Horizon-SeasonPass_C TextStyle-Header-S-Horizon-SeasonPass.Default__TextStyle-Header-S-Horizon-SeasonPass_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTextStyleMinusHeaderMinusSMinusHorizonMinusSeasonPass_C* UTextStyleMinusHeaderMinusSMinusHorizonMinusSeasonPass_C::GetDefaultObj()
+{
+	static class UTextStyleMinusHeaderMinusSMinusHorizonMinusSeasonPass_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextStyleMinusHeaderMinusSMinusHorizonMinusSeasonPass_C*>(UTextStyleMinusHeaderMinusSMinusHorizonMinusSeasonPass_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

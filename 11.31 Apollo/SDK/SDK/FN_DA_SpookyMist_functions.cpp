@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass DA_SpookyMist.DA_SpookyMist_C
+// (Actor)
+
+class UClass* ADA_SpookyMist_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DA_SpookyMist_C");
+
+	return Clss;
+}
+
+
+// DA_SpookyMist_C DA_SpookyMist.Default__DA_SpookyMist_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ADA_SpookyMist_C* ADA_SpookyMist_C::GetDefaultObj()
+{
+	static class ADA_SpookyMist_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ADA_SpookyMist_C*>(ADA_SpookyMist_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function DA_SpookyMist.DA_SpookyMist_C.BPPressSecondaryFire
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ADA_SpookyMist_C::BPPressSecondaryFire(class AFortDecoHelper* FortDecoHelper)
 {
-	static auto Func = Class->GetFunction("DA_SpookyMist_C", "BPPressSecondaryFire");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_SpookyMist_C_BPPressSecondaryFire_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_SpookyMist_C", "BPPressSecondaryFire");
+
+	Params::ADA_SpookyMist_C_BPPressSecondaryFire_Params Parms{};
 
 	Parms.FortDecoHelper = FortDecoHelper;
 
@@ -40,9 +68,12 @@ void ADA_SpookyMist_C::BPPressSecondaryFire(class AFortDecoHelper* FortDecoHelpe
 
 void ADA_SpookyMist_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 {
-	static auto Func = Class->GetFunction("DA_SpookyMist_C", "BPPressTrigger");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_SpookyMist_C_BPPressTrigger_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_SpookyMist_C", "BPPressTrigger");
+
+	Params::ADA_SpookyMist_C_BPPressTrigger_Params Parms{};
 
 	Parms.FortDecoHelper = FortDecoHelper;
 
@@ -57,12 +88,14 @@ void ADA_SpookyMist_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 
 void ADA_SpookyMist_C::BPOnUnEquip()
 {
-	static auto Func = Class->GetFunction("DA_SpookyMist_C", "BPOnUnEquip");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_SpookyMist_C_BPOnUnEquip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_SpookyMist_C", "BPOnUnEquip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -74,9 +107,12 @@ void ADA_SpookyMist_C::BPOnUnEquip()
 
 void ADA_SpookyMist_C::BPReleaseSecondaryFire(class AFortDecoHelper* FortDecoHelper)
 {
-	static auto Func = Class->GetFunction("DA_SpookyMist_C", "BPReleaseSecondaryFire");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_SpookyMist_C_BPReleaseSecondaryFire_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_SpookyMist_C", "BPReleaseSecondaryFire");
+
+	Params::ADA_SpookyMist_C_BPReleaseSecondaryFire_Params Parms{};
 
 	Parms.FortDecoHelper = FortDecoHelper;
 
@@ -91,12 +127,14 @@ void ADA_SpookyMist_C::BPReleaseSecondaryFire(class AFortDecoHelper* FortDecoHel
 
 void ADA_SpookyMist_C::CanCancel()
 {
-	static auto Func = Class->GetFunction("DA_SpookyMist_C", "CanCancel");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_SpookyMist_C_CanCancel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_SpookyMist_C", "CanCancel");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -107,12 +145,14 @@ void ADA_SpookyMist_C::CanCancel()
 
 void ADA_SpookyMist_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("DA_SpookyMist_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_SpookyMist_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_SpookyMist_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -123,12 +163,14 @@ void ADA_SpookyMist_C::ReceiveBeginPlay()
 
 void ADA_SpookyMist_C::On_DBNO()
 {
-	static auto Func = Class->GetFunction("DA_SpookyMist_C", "On DBNO");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_SpookyMist_C_On_DBNO_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_SpookyMist_C", "On DBNO");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -144,8 +186,8 @@ void ADA_SpookyMist_C::On_DBNO()
 // bool                               CallFunc_IsDrivingVehicle_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor)
 // class APawn*                       CallFunc_GetInstigator_ReturnValue_1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData_1                            ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              (None)
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData_1                            (None)
 // class APawn*                       CallFunc_GetInstigator_ReturnValue_2                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortDecoHelper*             K2Node_Event_FortDecoHelper_2                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortDecoHelper*             K2Node_Event_FortDecoHelper_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -164,9 +206,12 @@ void ADA_SpookyMist_C::On_DBNO()
 
 void ADA_SpookyMist_C::ExecuteUbergraph_DA_SpookyMist(int32 EntryPoint, class APawn* CallFunc_GetInstigator_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_IsDrivingVehicle_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class APawn* CallFunc_GetInstigator_ReturnValue_1, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData_1, class APawn* CallFunc_GetInstigator_ReturnValue_2, class AFortDecoHelper* K2Node_Event_FortDecoHelper_2, class AFortDecoHelper* K2Node_Event_FortDecoHelper_1, class AFortDecoHelper* K2Node_Event_FortDecoHelper, float CallFunc_GetValueAtLevel_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue_3, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_1, bool K2Node_DynamicCast_bSuccess_1, class APawn* CallFunc_GetInstigator_ReturnValue_4, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_2, bool K2Node_DynamicCast_bSuccess_2, class APawn* CallFunc_GetInstigator_ReturnValue_5, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess_3)
 {
-	static auto Func = Class->GetFunction("DA_SpookyMist_C", "ExecuteUbergraph_DA_SpookyMist");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_SpookyMist_C_ExecuteUbergraph_DA_SpookyMist_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_SpookyMist_C", "ExecuteUbergraph_DA_SpookyMist");
+
+	Params::ADA_SpookyMist_C_ExecuteUbergraph_DA_SpookyMist_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetInstigator_ReturnValue = CallFunc_GetInstigator_ReturnValue;
@@ -200,6 +245,4 @@ void ADA_SpookyMist_C::ExecuteUbergraph_DA_SpookyMist(int32 EntryPoint, class AP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_Prj_Arrow_DemonHunter_Crossbow_Athena.B_Prj_Arrow_DemonHunter_Crossbow_Athena_C
+// (Actor)
+
+class UClass* AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Prj_Arrow_DemonHunter_Crossbow_Athena_C");
+
+	return Clss;
+}
+
+
+// B_Prj_Arrow_DemonHunter_Crossbow_Athena_C B_Prj_Arrow_DemonHunter_Crossbow_Athena.Default__B_Prj_Arrow_DemonHunter_Crossbow_Athena_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C* AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::GetDefaultObj()
+{
+	static class AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C*>(AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function B_Prj_Arrow_DemonHunter_Crossbow_Athena.B_Prj_Arrow_DemonHunter_Crossbow_Athena_C.OnTouched
@@ -25,9 +50,12 @@ namespace SDK
 
 void AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::OnTouched(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, struct FHitResult& HitResult, bool bIsOverlap)
 {
-	static auto Func = Class->GetFunction("B_Prj_Arrow_DemonHunter_Crossbow_Athena_C", "OnTouched");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C_OnTouched_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Arrow_DemonHunter_Crossbow_Athena_C", "OnTouched");
+
+	Params::AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C_OnTouched_Params Parms{};
 
 	Parms.OtherActor = OtherActor;
 	Parms.OtherComp = OtherComp;
@@ -156,9 +184,12 @@ void AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::OnTouched(class AActor* OtherAc
 
 void AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::ExecuteUbergraph_B_Prj_Arrow_DemonHunter_Crossbow_Athena(int32 EntryPoint, class USoundBase* Temp_object_Variable, int32 Temp_int_Variable, int32 Temp_int_Variable_1, int32 Temp_int_Variable_2, int32 Temp_int_Variable_3, int32 Temp_int_Variable_4, int32 Temp_int_Variable_5, int32 Temp_int_Variable_6, int32 Temp_int_Variable_7, int32 Temp_int_Variable_8, int32 Temp_int_Variable_9, int32 Temp_int_Variable_10, int32 Temp_int_Variable_11, int32 Temp_int_Variable_12, int32 Temp_int_Variable_13, int32 Temp_int_Variable_14, int32 Temp_int_Variable_15, int32 Temp_int_Variable_16, int32 Temp_int_Variable_17, int32 Temp_int_Variable_18, int32 Temp_int_Variable_19, int32 Temp_int_Variable_20, int32 Temp_int_Variable_21, int32 Temp_int_Variable_22, int32 Temp_int_Variable_23, class AActor* K2Node_Event_OtherActor, class UPrimitiveComponent* K2Node_Event_OtherComp, const struct FHitResult& K2Node_Event_HitResult, bool K2Node_Event_bIsOverlap, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, int32 Temp_int_Variable_24, int32 Temp_int_Variable_25, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue_1, bool Temp_bool_Variable, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1, bool CallFunc_IsDedicatedServer_ReturnValue_1, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue_1, enum class EPhysicalSurface Temp_byte_Variable, class FName Temp_name_Variable, bool Temp_bool_Variable_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterPlaneLocation, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterPlaneNormal, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterSurfacePosition, float CallFunc_GetLastWaterSurfaceInfo_WaterDepth, int32 CallFunc_GetLastWaterSurfaceInfo_WaterBodyIdx, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterVelocity, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, float CallFunc_Conv_IntToFloat_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue_2, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit_1, bool CallFunc_BreakHitResult_bInitialOverlap_1, float CallFunc_BreakHitResult_Time_1, float CallFunc_BreakHitResult_Distance_1, const struct FVector& CallFunc_BreakHitResult_Location_1, const struct FVector& CallFunc_BreakHitResult_ImpactPoint_1, const struct FVector& CallFunc_BreakHitResult_Normal_1, const struct FVector& CallFunc_BreakHitResult_ImpactNormal_1, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat_1, class AActor* CallFunc_BreakHitResult_HitActor_1, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent_1, class FName CallFunc_BreakHitResult_HitBoneName_1, int32 CallFunc_BreakHitResult_HitItem_1, int32 CallFunc_BreakHitResult_FaceIndex_1, const struct FVector& CallFunc_BreakHitResult_TraceStart_1, const struct FVector& CallFunc_BreakHitResult_TraceEnd_1, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, class ADeimos_Fiend_C* K2Node_DynamicCast_AsDeimos_Fiend, bool K2Node_DynamicCast_bSuccess_1, class FName CallFunc_Temp_FindClosestBone_ClosestBone, class USoundBase* K2Node_Select_Default, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess_2, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult, enum class EFortTeamAffiliation CallFunc_GetTeamAffiliation_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, const struct FVector& CallFunc_FindClosestBone_K2_BoneLocation, class FName CallFunc_FindClosestBone_K2_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue, enum class EPhysicalSurface CallFunc_GetSurfaceType_ReturnValue, class FName K2Node_Select_Default_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue_1, int32 K2Node_Select_Default_2, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult_1, bool CallFunc_Greater_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Prj_Arrow_DemonHunter_Crossbow_Athena_C", "ExecuteUbergraph_B_Prj_Arrow_DemonHunter_Crossbow_Athena");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C_ExecuteUbergraph_B_Prj_Arrow_DemonHunter_Crossbow_Athena_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Arrow_DemonHunter_Crossbow_Athena_C", "ExecuteUbergraph_B_Prj_Arrow_DemonHunter_Crossbow_Athena");
+
+	Params::AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C_ExecuteUbergraph_B_Prj_Arrow_DemonHunter_Crossbow_Athena_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -278,6 +309,4 @@ void AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::ExecuteUbergraph_B_Prj_Arrow_De
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

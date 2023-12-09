@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_Prj_ThrownConsumable.B_Prj_ThrownConsumable_C
+// (Actor)
+
+class UClass* AB_Prj_ThrownConsumable_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Prj_ThrownConsumable_C");
+
+	return Clss;
+}
+
+
+// B_Prj_ThrownConsumable_C B_Prj_ThrownConsumable.Default__B_Prj_ThrownConsumable_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Prj_ThrownConsumable_C* AB_Prj_ThrownConsumable_C::GetDefaultObj()
+{
+	static class AB_Prj_ThrownConsumable_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Prj_ThrownConsumable_C*>(AB_Prj_ThrownConsumable_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_Prj_ThrownConsumable.B_Prj_ThrownConsumable_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void AB_Prj_ThrownConsumable_C::UserConstructionScript(bool CallFunc_IsDedicatedServer_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "UserConstructionScript");
+
+	Params::AB_Prj_ThrownConsumable_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 
@@ -39,12 +67,14 @@ void AB_Prj_ThrownConsumable_C::UserConstructionScript(bool CallFunc_IsDedicated
 
 void AB_Prj_ThrownConsumable_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,9 +87,12 @@ void AB_Prj_ThrownConsumable_C::ReceiveBeginPlay()
 
 void AB_Prj_ThrownConsumable_C::OnExploded(TArray<class AActor*>& HitActors, TArray<struct FHitResult>& HitResults)
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "OnExploded");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_C_OnExploded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "OnExploded");
+
+	Params::AB_Prj_ThrownConsumable_C_OnExploded_Params Parms{};
 
 	Parms.HitActors = HitActors;
 	Parms.HitResults = HitResults;
@@ -76,9 +109,12 @@ void AB_Prj_ThrownConsumable_C::OnExploded(TArray<class AActor*>& HitActors, TAr
 
 void AB_Prj_ThrownConsumable_C::OnBounce(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "OnBounce");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_C_OnBounce_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "OnBounce");
+
+	Params::AB_Prj_ThrownConsumable_C_OnBounce_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -94,9 +130,12 @@ void AB_Prj_ThrownConsumable_C::OnBounce(struct FHitResult& Hit)
 
 void AB_Prj_ThrownConsumable_C::OnStop(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "OnStop");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_C_OnStop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "OnStop");
+
+	Params::AB_Prj_ThrownConsumable_C_OnStop_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -111,12 +150,14 @@ void AB_Prj_ThrownConsumable_C::OnStop(struct FHitResult& Hit)
 
 void AB_Prj_ThrownConsumable_C::ResetSimulatedComponents()
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "ResetSimulatedComponents");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_C_ResetSimulatedComponents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "ResetSimulatedComponents");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -170,9 +211,12 @@ void AB_Prj_ThrownConsumable_C::ResetSimulatedComponents()
 
 void AB_Prj_ThrownConsumable_C::ExecuteUbergraph_B_Prj_ThrownConsumable(int32 EntryPoint, bool CallFunc_IsDedicatedServer_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_3, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_4, TArray<enum class EFortTeamAffiliation>& K2Node_MakeArray_Array, uint8 CallFunc_GetActorTeam_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FHitResult& K2Node_Event_Hit_1, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, bool CallFunc_IsValid_ReturnValue_1, TArray<enum class EFortTeamAffiliation>& K2Node_MakeArray_Array_1, uint8 CallFunc_GetActorTeam_ReturnValue_1, class APawn* CallFunc_GetInstigator_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, TArray<class AActor*>& K2Node_Event_HitActors, TArray<struct FHitResult>& K2Node_Event_HitResults, const struct FHitResult& K2Node_Event_Hit, bool CallFunc_IsDedicatedServer_ReturnValue_1, bool CallFunc_OnCollision_OutResult, float CallFunc_OnCollision_OutMagnitude, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "ExecuteUbergraph_B_Prj_ThrownConsumable");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_C", "ExecuteUbergraph_B_Prj_ThrownConsumable");
+
+	Params::AB_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
@@ -224,6 +268,4 @@ void AB_Prj_ThrownConsumable_C::ExecuteUbergraph_B_Prj_ThrownConsumable(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

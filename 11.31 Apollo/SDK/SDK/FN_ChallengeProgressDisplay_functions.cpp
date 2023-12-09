@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ChallengeProgressDisplay.ChallengeProgressDisplay_C
+// (None)
+
+class UClass* UChallengeProgressDisplay_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChallengeProgressDisplay_C");
+
+	return Clss;
+}
+
+
+// ChallengeProgressDisplay_C ChallengeProgressDisplay.Default__ChallengeProgressDisplay_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChallengeProgressDisplay_C* UChallengeProgressDisplay_C::GetDefaultObj()
+{
+	static class UChallengeProgressDisplay_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChallengeProgressDisplay_C*>(UChallengeProgressDisplay_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ChallengeProgressDisplay.ChallengeProgressDisplay_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UChallengeProgressDisplay_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("ChallengeProgressDisplay_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeProgressDisplay_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeProgressDisplay_C", "PreConstruct");
+
+	Params::UChallengeProgressDisplay_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -41,9 +69,12 @@ void UChallengeProgressDisplay_C::PreConstruct(bool IsDesignTime)
 
 void UChallengeProgressDisplay_C::ExecuteUbergraph_ChallengeProgressDisplay(int32 EntryPoint, bool K2Node_Event_IsDesignTime)
 {
-	static auto Func = Class->GetFunction("ChallengeProgressDisplay_C", "ExecuteUbergraph_ChallengeProgressDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeProgressDisplay_C_ExecuteUbergraph_ChallengeProgressDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeProgressDisplay_C", "ExecuteUbergraph_ChallengeProgressDisplay");
+
+	Params::UChallengeProgressDisplay_C_ExecuteUbergraph_ChallengeProgressDisplay_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -54,6 +85,4 @@ void UChallengeProgressDisplay_C::ExecuteUbergraph_ChallengeProgressDisplay(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,62 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// Class BlueprintContext.BlueprintContextBase
+// (None)
+
+class UClass* UBlueprintContextBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BlueprintContextBase");
+
+	return Clss;
+}
+
+
+// BlueprintContextBase BlueprintContext.Default__BlueprintContextBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UBlueprintContextBase* UBlueprintContextBase::GetDefaultObj()
+{
+	static class UBlueprintContextBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBlueprintContextBase*>(UBlueprintContextBase::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class BlueprintContext.BlueprintContextLibrary
+// (None)
+
+class UClass* UBlueprintContextLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BlueprintContextLibrary");
+
+	return Clss;
+}
+
+
+// BlueprintContextLibrary BlueprintContext.Default__BlueprintContextLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UBlueprintContextLibrary* UBlueprintContextLibrary::GetDefaultObj()
+{
+	static class UBlueprintContextLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBlueprintContextLibrary*>(UBlueprintContextLibrary::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BlueprintContext.BlueprintContextLibrary.GetContext
@@ -24,20 +77,23 @@ namespace SDK
 
 class USubsystem* UBlueprintContextLibrary::GetContext(class UObject* ContextObject, TSubclassOf<class USubsystem> Class)
 {
-	static auto Func = Class->GetFunction("BlueprintContextLibrary", "GetContext");
+	static class UFunction* Func = nullptr;
 
-	Params::UBlueprintContextLibrary_GetContext_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BlueprintContextLibrary", "GetContext");
+
+	Params::UBlueprintContextLibrary_GetContext_Params Parms{};
 
 	Parms.ContextObject = ContextObject;
 	Parms.Class = Class;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -45,6 +101,4 @@ class USubsystem* UBlueprintContextLibrary::GetContext(class UObject* ContextObj
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

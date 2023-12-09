@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -23,11 +20,8 @@ public:
 	class AFortnite_CozyLodge_ExtCamera_C*       Fortnite_CozyLodge_Camera_Exterior_FarView_ExecuteUbergraph_Frontend_CozyLodge_Ext_RefProperty; // 0x250(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortnite_CozyLodge_ExtCamera_C*       Fortnite_CozyLodge_Camera_Exterior_CloseUp_ExecuteUbergraph_Frontend_CozyLodge_Ext_RefProperty; // 0x258(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("Frontend_CozyLodge_Ext_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AFrontend_CozyLodge_Ext_C* GetDefaultObj();
 
 	void SetUpCameraPairing(class AFortCameraBase* Camera, const struct FGameplayTag& Tag, const struct FFrontendEventCamera& K2Node_MakeStruct_FrontendEventCamera, int32 CallFunc_Array_Add_ReturnValue);
 	void ReceiveBeginPlay();
@@ -38,6 +32,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

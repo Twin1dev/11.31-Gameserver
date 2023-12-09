@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_Grenade_Playset_Athena.B_Grenade_Playset_Athena_C
+// (Actor)
+
+class UClass* AB_Grenade_Playset_Athena_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Grenade_Playset_Athena_C");
+
+	return Clss;
+}
+
+
+// B_Grenade_Playset_Athena_C B_Grenade_Playset_Athena.Default__B_Grenade_Playset_Athena_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Grenade_Playset_Athena_C* AB_Grenade_Playset_Athena_C::GetDefaultObj()
+{
+	static class AB_Grenade_Playset_Athena_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Grenade_Playset_Athena_C*>(AB_Grenade_Playset_Athena_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_Grenade_Playset_Athena.B_Grenade_Playset_Athena_C.K2_OnUnEquip
 // (Event, Public, BlueprintEvent)
 // Parameters:
 
 void AB_Grenade_Playset_Athena_C::K2_OnUnEquip()
 {
-	static auto Func = Class->GetFunction("B_Grenade_Playset_Athena_C", "K2_OnUnEquip");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Grenade_Playset_Athena_C_K2_OnUnEquip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Grenade_Playset_Athena_C", "K2_OnUnEquip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AB_Grenade_Playset_Athena_C::K2_OnUnEquip()
 
 void AB_Grenade_Playset_Athena_C::OnWeaponAttached()
 {
-	static auto Func = Class->GetFunction("B_Grenade_Playset_Athena_C", "OnWeaponAttached");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Grenade_Playset_Athena_C_OnWeaponAttached_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Grenade_Playset_Athena_C", "OnWeaponAttached");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void AB_Grenade_Playset_Athena_C::OnWeaponAttached()
 
 void AB_Grenade_Playset_Athena_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Grenade_Playset_Athena_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Grenade_Playset_Athena_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Grenade_Playset_Athena_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -76,9 +107,12 @@ void AB_Grenade_Playset_Athena_C::ReceiveBeginPlay()
 
 void AB_Grenade_Playset_Athena_C::ExecuteUbergraph_B_Grenade_Playset_Athena(int32 EntryPoint, class AController* CallFunc_GetInstigatorController_ReturnValue, class AController* CallFunc_GetInstigatorController_ReturnValue_1, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller_1, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("B_Grenade_Playset_Athena_C", "ExecuteUbergraph_B_Grenade_Playset_Athena");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Grenade_Playset_Athena_C_ExecuteUbergraph_B_Grenade_Playset_Athena_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Grenade_Playset_Athena_C", "ExecuteUbergraph_B_Grenade_Playset_Athena");
+
+	Params::AB_Grenade_Playset_Athena_C_ExecuteUbergraph_B_Grenade_Playset_Athena_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetInstigatorController_ReturnValue = CallFunc_GetInstigatorController_ReturnValue;
@@ -94,6 +128,4 @@ void AB_Grenade_Playset_Athena_C::ExecuteUbergraph_B_Grenade_Playset_Athena(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

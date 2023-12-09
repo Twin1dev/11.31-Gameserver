@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -24,11 +21,8 @@ public:
 	bool                                         bIsSelected;                                       // 0xC68(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         bCanHover;                                         // 0xC69(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ItemPresentationEntry_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UItemPresentationEntry_C* GetDefaultObj();
 
 	void HandelDeselectedAnim(class UAthenaSeasonItemRewardIcon_C* K2Node_DynamicCast_AsAthena_Season_Item_Reward_Icon, bool K2Node_DynamicCast_bSuccess);
 	void HandleSelectedAnim(float CallFunc_GetEndTime_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UAthenaSeasonItemRewardIcon_C* K2Node_DynamicCast_AsAthena_Season_Item_Reward_Icon, bool K2Node_DynamicCast_bSuccess);
@@ -46,6 +40,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GAT_Creative_TriggeredAbility_BuildingActor.GAT_Creative_TriggeredAbility_BuildingActor_C
+// (None)
+
+class UClass* UGAT_Creative_TriggeredAbility_BuildingActor_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAT_Creative_TriggeredAbility_BuildingActor_C");
+
+	return Clss;
+}
+
+
+// GAT_Creative_TriggeredAbility_BuildingActor_C GAT_Creative_TriggeredAbility_BuildingActor.Default__GAT_Creative_TriggeredAbility_BuildingActor_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAT_Creative_TriggeredAbility_BuildingActor_C* UGAT_Creative_TriggeredAbility_BuildingActor_C::GetDefaultObj()
+{
+	static class UGAT_Creative_TriggeredAbility_BuildingActor_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAT_Creative_TriggeredAbility_BuildingActor_C*>(UGAT_Creative_TriggeredAbility_BuildingActor_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GAT_Creative_TriggeredAbility_BuildingActor.GAT_Creative_TriggeredAbility_BuildingActor_C.SetupBuildingActorAbility
@@ -26,9 +51,12 @@ namespace SDK
 
 void UGAT_Creative_TriggeredAbility_BuildingActor_C::SetupBuildingActorAbility(class ABuildingActor** BuildingActor, class ABuildingActor* LocalBuildingActor, const struct FGameplayAbilityActorInfo& CallFunc_GetActorInfo_ReturnValue, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GAT_Creative_TriggeredAbility_BuildingActor_C", "SetupBuildingActorAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_Creative_TriggeredAbility_BuildingActor_C_SetupBuildingActorAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_Creative_TriggeredAbility_BuildingActor_C", "SetupBuildingActorAbility");
+
+	Params::UGAT_Creative_TriggeredAbility_BuildingActor_C_SetupBuildingActorAbility_Params Parms{};
 
 	Parms.LocalBuildingActor = LocalBuildingActor;
 	Parms.CallFunc_GetActorInfo_ReturnValue = CallFunc_GetActorInfo_ReturnValue;
@@ -50,9 +78,12 @@ void UGAT_Creative_TriggeredAbility_BuildingActor_C::SetupBuildingActorAbility(c
 
 void UGAT_Creative_TriggeredAbility_BuildingActor_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GAT_Creative_TriggeredAbility_BuildingActor_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_Creative_TriggeredAbility_BuildingActor_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_Creative_TriggeredAbility_BuildingActor_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGAT_Creative_TriggeredAbility_BuildingActor_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -70,9 +101,12 @@ void UGAT_Creative_TriggeredAbility_BuildingActor_C::K2_ActivateAbilityFromEvent
 
 void UGAT_Creative_TriggeredAbility_BuildingActor_C::ExecuteUbergraph_GAT_Creative_TriggeredAbility_BuildingActor(int32 EntryPoint, const struct FGameplayEventData& K2Node_Event_EventData, class ABuildingActor* CallFunc_SetupBuildingActorAbility_BuildingActor)
 {
-	static auto Func = Class->GetFunction("GAT_Creative_TriggeredAbility_BuildingActor_C", "ExecuteUbergraph_GAT_Creative_TriggeredAbility_BuildingActor");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_Creative_TriggeredAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_TriggeredAbility_BuildingActor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_Creative_TriggeredAbility_BuildingActor_C", "ExecuteUbergraph_GAT_Creative_TriggeredAbility_BuildingActor");
+
+	Params::UGAT_Creative_TriggeredAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_TriggeredAbility_BuildingActor_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_EventData = K2Node_Event_EventData;
@@ -84,6 +118,4 @@ void UGAT_Creative_TriggeredAbility_BuildingActor_C::ExecuteUbergraph_GAT_Creati
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

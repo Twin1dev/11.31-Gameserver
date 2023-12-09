@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass MASTER_TODM.MASTER_TODM_C
+// (Actor)
+
+class UClass* AMASTER_TODM_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MASTER_TODM_C");
+
+	return Clss;
+}
+
+
+// MASTER_TODM_C MASTER_TODM.Default__MASTER_TODM_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AMASTER_TODM_C* AMASTER_TODM_C::GetDefaultObj()
+{
+	static class AMASTER_TODM_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AMASTER_TODM_C*>(AMASTER_TODM_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MASTER_TODM.MASTER_TODM_C.EmptyTransform
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -23,16 +48,19 @@ namespace SDK
 
 void AMASTER_TODM_C::EmptyTransform(struct FTransform* Transform, const struct FTransform& CallFunc_MakeTransform_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "EmptyTransform");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_EmptyTransform_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "EmptyTransform");
+
+	Params::AMASTER_TODM_C_EmptyTransform_Params Parms{};
 
 	Parms.CallFunc_MakeTransform_ReturnValue = CallFunc_MakeTransform_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Transform != nullptr)
-		*Transform = Parms.Transform;
+		*Transform = std::move(Parms.Transform);
 
 }
 
@@ -46,9 +74,12 @@ void AMASTER_TODM_C::EmptyTransform(struct FTransform* Transform, const struct F
 
 void AMASTER_TODM_C::SetHeavySSAO(float CallFunc_GetNumericCVar_OutValue, bool CallFunc_GetNumericCVar_ReturnValue, bool CallFunc_EqualEqual_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "SetHeavySSAO");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_SetHeavySSAO_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "SetHeavySSAO");
+
+	Params::AMASTER_TODM_C_SetHeavySSAO_Params Parms{};
 
 	Parms.CallFunc_GetNumericCVar_OutValue = CallFunc_GetNumericCVar_OutValue;
 	Parms.CallFunc_GetNumericCVar_ReturnValue = CallFunc_GetNumericCVar_ReturnValue;
@@ -89,9 +120,12 @@ void AMASTER_TODM_C::SetHeavySSAO(float CallFunc_GetNumericCVar_OutValue, bool C
 
 void AMASTER_TODM_C::UserConstructionScript(float CallFunc_FClamp_ReturnValue, float CallFunc_FClamp_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue_1, const struct FLinearColor& CallFunc_MakeColor_ReturnValue, const struct FLinearColor& CallFunc_MakeColor_ReturnValue_1, float CallFunc_FClamp_ReturnValue_2, float CallFunc_Add_FloatFloat_ReturnValue_2, float CallFunc_FClamp_ReturnValue_3, float CallFunc_Add_FloatFloat_ReturnValue_3, const struct FLinearColor& CallFunc_MakeColor_ReturnValue_2, const struct FLinearColor& CallFunc_MakeColor_ReturnValue_3, float CallFunc_FClamp_ReturnValue_4, float CallFunc_Add_FloatFloat_ReturnValue_4, float CallFunc_FClamp_ReturnValue_5, float CallFunc_Add_FloatFloat_ReturnValue_5, const struct FLinearColor& CallFunc_MakeColor_ReturnValue_4, const struct FLinearColor& CallFunc_MakeColor_ReturnValue_5, float CallFunc_FClamp_ReturnValue_6, float CallFunc_Add_FloatFloat_ReturnValue_6, float CallFunc_FClamp_ReturnValue_7, float CallFunc_Add_FloatFloat_ReturnValue_7, const struct FLinearColor& CallFunc_MakeColor_ReturnValue_6, const struct FLinearColor& CallFunc_MakeColor_ReturnValue_7)
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "UserConstructionScript");
+
+	Params::AMASTER_TODM_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_FClamp_ReturnValue = CallFunc_FClamp_ReturnValue;
 	Parms.CallFunc_FClamp_ReturnValue_1 = CallFunc_FClamp_ReturnValue_1;
@@ -129,12 +163,14 @@ void AMASTER_TODM_C::UserConstructionScript(float CallFunc_FClamp_ReturnValue, f
 
 void AMASTER_TODM_C::FlashLightning__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "FlashLightning__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_FlashLightning__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "FlashLightning__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -145,12 +181,14 @@ void AMASTER_TODM_C::FlashLightning__FinishedFunc()
 
 void AMASTER_TODM_C::FlashLightning__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "FlashLightning__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_FlashLightning__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "FlashLightning__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -161,12 +199,14 @@ void AMASTER_TODM_C::FlashLightning__UpdateFunc()
 
 void AMASTER_TODM_C::New_Storm_Timeline__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "New Storm Timeline__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_New_Storm_Timeline__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "New Storm Timeline__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -177,12 +217,14 @@ void AMASTER_TODM_C::New_Storm_Timeline__FinishedFunc()
 
 void AMASTER_TODM_C::New_Storm_Timeline__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "New Storm Timeline__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_New_Storm_Timeline__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "New Storm Timeline__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -193,12 +235,14 @@ void AMASTER_TODM_C::New_Storm_Timeline__UpdateFunc()
 
 void AMASTER_TODM_C::New_Storm_Timeline__FireOffRain__EventFunc()
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "New Storm Timeline__FireOffRain__EventFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_New_Storm_Timeline__FireOffRain__EventFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "New Storm Timeline__FireOffRain__EventFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -209,12 +253,14 @@ void AMASTER_TODM_C::New_Storm_Timeline__FireOffRain__EventFunc()
 
 void AMASTER_TODM_C::StartStorm()
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "StartStorm");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_StartStorm_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "StartStorm");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -225,12 +271,14 @@ void AMASTER_TODM_C::StartStorm()
 
 void AMASTER_TODM_C::OnStormStart()
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "OnStormStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_OnStormStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "OnStormStart");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -241,12 +289,14 @@ void AMASTER_TODM_C::OnStormStart()
 
 void AMASTER_TODM_C::OnStormEnd()
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "OnStormEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_OnStormEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "OnStormEnd");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -257,12 +307,14 @@ void AMASTER_TODM_C::OnStormEnd()
 
 void AMASTER_TODM_C::LightningStrike()
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "LightningStrike");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_LightningStrike_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "LightningStrike");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -273,12 +325,14 @@ void AMASTER_TODM_C::LightningStrike()
 
 void AMASTER_TODM_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -290,9 +344,12 @@ void AMASTER_TODM_C::ReceiveBeginPlay()
 
 void AMASTER_TODM_C::DisableLightAndFog(bool Enable)
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "DisableLightAndFog");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_DisableLightAndFog_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "DisableLightAndFog");
+
+	Params::AMASTER_TODM_C_DisableLightAndFog_Params Parms{};
 
 	Parms.Enable = Enable;
 
@@ -307,12 +364,14 @@ void AMASTER_TODM_C::DisableLightAndFog(bool Enable)
 
 void AMASTER_TODM_C::EnableHDRRendering()
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "EnableHDRRendering");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_EnableHDRRendering_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "EnableHDRRendering");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -323,12 +382,14 @@ void AMASTER_TODM_C::EnableHDRRendering()
 
 void AMASTER_TODM_C::UpdateSSAO()
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "UpdateSSAO");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_UpdateSSAO_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "UpdateSSAO");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -415,9 +476,12 @@ void AMASTER_TODM_C::UpdateSSAO()
 
 void AMASTER_TODM_C::ExecuteUbergraph_MASTER_TODM(int32 EntryPoint, int32 CallFunc_FFloor_ReturnValue, bool CallFunc_Conv_IntToBool_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, float CallFunc_Square_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue, int32 CallFunc_GetShadowQuality_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, float CallFunc_Conv_BoolToFloat_ReturnValue, bool K2Node_SwitchInteger_CmpSuccess, bool Temp_bool_Variable, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_2, float CallFunc_GetStormStrength_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_3, float CallFunc_Add_FloatFloat_ReturnValue, bool K2Node_CustomEvent_Enable, bool CallFunc_Not_PreBool_ReturnValue_1, const struct FLinearColor& CallFunc_GetLightColor_ReturnValue, float CallFunc_BreakColor_R, float CallFunc_BreakColor_G, float CallFunc_BreakColor_B, float CallFunc_BreakColor_A, const struct FLinearColor& CallFunc_LinearColorLerp_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_4, float CallFunc_BreakColor_R_1, float CallFunc_BreakColor_G_1, float CallFunc_BreakColor_B_1, float CallFunc_BreakColor_A_1, float CallFunc_Multiply_FloatFloat_ReturnValue_5, float CallFunc_Multiply_FloatFloat_ReturnValue_6, float CallFunc_Multiply_FloatFloat_ReturnValue_7, float CallFunc_Multiply_FloatFloat_ReturnValue_8, float CallFunc_Add_FloatFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_9, float CallFunc_Add_FloatFloat_ReturnValue_2, float CallFunc_Add_FloatFloat_ReturnValue_3, float CallFunc_Add_FloatFloat_ReturnValue_4, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue_5, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, const struct FLinearColor& CallFunc_MakeColor_ReturnValue, float CallFunc_FClamp_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue_6, float CallFunc_FClamp_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue_7, const struct FLinearColor& CallFunc_MakeColor_ReturnValue_1, const struct FLinearColor& CallFunc_MakeColor_ReturnValue_2, float CallFunc_FClamp_ReturnValue_2, float CallFunc_FClamp_ReturnValue_3, float CallFunc_Add_FloatFloat_ReturnValue_8, float CallFunc_Add_FloatFloat_ReturnValue_9, const struct FLinearColor& CallFunc_MakeColor_ReturnValue_3, const struct FLinearColor& CallFunc_MakeColor_ReturnValue_4, float CallFunc_FClamp_ReturnValue_4, float CallFunc_Add_FloatFloat_ReturnValue_10, float CallFunc_FClamp_ReturnValue_5, float CallFunc_Add_FloatFloat_ReturnValue_11, const struct FLinearColor& CallFunc_MakeColor_ReturnValue_5, const struct FLinearColor& CallFunc_MakeColor_ReturnValue_6, float CallFunc_FClamp_ReturnValue_6, float CallFunc_Add_FloatFloat_ReturnValue_12, float CallFunc_FClamp_ReturnValue_7, float CallFunc_Add_FloatFloat_ReturnValue_13, float CallFunc_Multiply_FloatFloat_ReturnValue_10, const struct FLinearColor& CallFunc_MakeColor_ReturnValue_7, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("MASTER_TODM_C", "ExecuteUbergraph_MASTER_TODM");
+	static class UFunction* Func = nullptr;
 
-	Params::AMASTER_TODM_C_ExecuteUbergraph_MASTER_TODM_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MASTER_TODM_C", "ExecuteUbergraph_MASTER_TODM");
+
+	Params::AMASTER_TODM_C_ExecuteUbergraph_MASTER_TODM_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_FFloor_ReturnValue = CallFunc_FFloor_ReturnValue;
@@ -502,6 +566,4 @@ void AMASTER_TODM_C::ExecuteUbergraph_MASTER_TODM(int32 EntryPoint, int32 CallFu
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

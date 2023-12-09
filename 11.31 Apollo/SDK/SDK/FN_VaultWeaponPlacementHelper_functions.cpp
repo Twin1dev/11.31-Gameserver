@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C
+// (Actor)
+
+class UClass* AVaultWeaponPlacementHelper_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VaultWeaponPlacementHelper_C");
+
+	return Clss;
+}
+
+
+// VaultWeaponPlacementHelper_C VaultWeaponPlacementHelper.Default__VaultWeaponPlacementHelper_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AVaultWeaponPlacementHelper_C* AVaultWeaponPlacementHelper_C::GetDefaultObj()
+{
+	static class AVaultWeaponPlacementHelper_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AVaultWeaponPlacementHelper_C*>(AVaultWeaponPlacementHelper_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function VaultWeaponPlacementHelper.VaultWeaponPlacementHelper_C.GetFrontendAnimInstance
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void AVaultWeaponPlacementHelper_C::GetFrontendAnimInstance()
 {
-	static auto Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "GetFrontendAnimInstance");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultWeaponPlacementHelper_C_GetFrontendAnimInstance_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "GetFrontendAnimInstance");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -40,9 +67,12 @@ void AVaultWeaponPlacementHelper_C::GetFrontendAnimInstance()
 
 void AVaultWeaponPlacementHelper_C::OnFrontEndCameraChanged(enum class EFrontEndCamera NewCamera, enum class EFrontEndCamera OldCamera, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "OnFrontEndCameraChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultWeaponPlacementHelper_C_OnFrontEndCameraChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "OnFrontEndCameraChanged");
+
+	Params::AVaultWeaponPlacementHelper_C_OnFrontEndCameraChanged_Params Parms{};
 
 	Parms.NewCamera = NewCamera;
 	Parms.OldCamera = OldCamera;
@@ -59,12 +89,14 @@ void AVaultWeaponPlacementHelper_C::OnFrontEndCameraChanged(enum class EFrontEnd
 
 void AVaultWeaponPlacementHelper_C::Initialize()
 {
-	static auto Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "Initialize");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultWeaponPlacementHelper_C_Initialize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "Initialize");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -77,9 +109,12 @@ void AVaultWeaponPlacementHelper_C::Initialize()
 
 void AVaultWeaponPlacementHelper_C::InitializeContextEvents(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue)
 {
-	static auto Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "InitializeContextEvents");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultWeaponPlacementHelper_C_InitializeContextEvents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "InitializeContextEvents");
+
+	Params::AVaultWeaponPlacementHelper_C_InitializeContextEvents_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -95,12 +130,14 @@ void AVaultWeaponPlacementHelper_C::InitializeContextEvents(UDelegateProperty_ K
 
 void AVaultWeaponPlacementHelper_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultWeaponPlacementHelper_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -111,12 +148,14 @@ void AVaultWeaponPlacementHelper_C::ReceiveBeginPlay()
 
 void AVaultWeaponPlacementHelper_C::ItemRez()
 {
-	static auto Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "ItemRez");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultWeaponPlacementHelper_C_ItemRez_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "ItemRez");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -128,9 +167,12 @@ void AVaultWeaponPlacementHelper_C::ItemRez()
 
 void AVaultWeaponPlacementHelper_C::ExecuteUbergraph_VaultWeaponPlacementHelper(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "ExecuteUbergraph_VaultWeaponPlacementHelper");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultWeaponPlacementHelper_C_ExecuteUbergraph_VaultWeaponPlacementHelper_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "ExecuteUbergraph_VaultWeaponPlacementHelper");
+
+	Params::AVaultWeaponPlacementHelper_C_ExecuteUbergraph_VaultWeaponPlacementHelper_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -145,17 +187,17 @@ void AVaultWeaponPlacementHelper_C::ExecuteUbergraph_VaultWeaponPlacementHelper(
 
 void AVaultWeaponPlacementHelper_C::NewEventDispatcher_0__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "NewEventDispatcher_0__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultWeaponPlacementHelper_C_NewEventDispatcher_0__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultWeaponPlacementHelper_C", "NewEventDispatcher_0__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

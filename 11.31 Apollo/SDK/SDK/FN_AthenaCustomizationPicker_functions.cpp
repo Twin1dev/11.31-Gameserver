@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaCustomizationPicker.AthenaCustomizationPicker_C
+// (None)
+
+class UClass* UAthenaCustomizationPicker_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaCustomizationPicker_C");
+
+	return Clss;
+}
+
+
+// AthenaCustomizationPicker_C AthenaCustomizationPicker.Default__AthenaCustomizationPicker_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaCustomizationPicker_C* UAthenaCustomizationPicker_C::GetDefaultObj()
+{
+	static class UAthenaCustomizationPicker_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaCustomizationPicker_C*>(UAthenaCustomizationPicker_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AthenaCustomizationPicker.AthenaCustomizationPicker_C.NavigateDownFromSearch
@@ -24,9 +49,12 @@ namespace SDK
 
 void UAthenaCustomizationPicker_C::NavigateDownFromSearch(enum class EUINavigation Navigation, class UWidget** NewParam, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "NavigateDownFromSearch");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_NavigateDownFromSearch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "NavigateDownFromSearch");
+
+	Params::UAthenaCustomizationPicker_C_NavigateDownFromSearch_Params Parms{};
 
 	Parms.Navigation = Navigation;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
@@ -45,12 +73,14 @@ void UAthenaCustomizationPicker_C::NavigateDownFromSearch(enum class EUINavigati
 
 void UAthenaCustomizationPicker_C::ResetTextSearchFilter()
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "ResetTextSearchFilter");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_ResetTextSearchFilter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "ResetTextSearchFilter");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -58,15 +88,18 @@ void UAthenaCustomizationPicker_C::ResetTextSearchFilter()
 // Function AthenaCustomizationPicker.AthenaCustomizationPicker_C.HandleTextEntryTimer
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                        CallFunc_GetCurrentText_Text                                     ()
-// class FText                        CallFunc_GetEmptyText_ReturnValue                                ()
+// class FText                        CallFunc_GetCurrentText_Text                                     (None)
+// class FText                        CallFunc_GetEmptyText_ReturnValue                                (None)
 // bool                               CallFunc_EqualEqual_TextText_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaCustomizationPicker_C::HandleTextEntryTimer(class FText CallFunc_GetCurrentText_Text, class FText CallFunc_GetEmptyText_ReturnValue, bool CallFunc_EqualEqual_TextText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "HandleTextEntryTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_HandleTextEntryTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "HandleTextEntryTimer");
+
+	Params::UAthenaCustomizationPicker_C_HandleTextEntryTimer_Params Parms{};
 
 	Parms.CallFunc_GetCurrentText_Text = CallFunc_GetCurrentText_Text;
 	Parms.CallFunc_GetEmptyText_ReturnValue = CallFunc_GetEmptyText_ReturnValue;
@@ -82,17 +115,20 @@ void UAthenaCustomizationPicker_C::HandleTextEntryTimer(class FText CallFunc_Get
 // Parameters:
 // class FText                        Text                                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 // bool                               CallFunc_K2_IsTimerActiveHandle_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetCurrentText_Text                                     ()
+// class FText                        CallFunc_GetCurrentText_Text                                     (None)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// class FText                        CallFunc_GetEmptyText_ReturnValue                                ()
+// class FText                        CallFunc_GetEmptyText_ReturnValue                                (None)
 // struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_TextText_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaCustomizationPicker_C::HandleSearchTextFilterChanged(class FText Text, bool CallFunc_K2_IsTimerActiveHandle_ReturnValue, class FText CallFunc_GetCurrentText_Text, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FText CallFunc_GetEmptyText_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_EqualEqual_TextText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "HandleSearchTextFilterChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_HandleSearchTextFilterChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "HandleSearchTextFilterChanged");
+
+	Params::UAthenaCustomizationPicker_C_HandleSearchTextFilterChanged_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.CallFunc_K2_IsTimerActiveHandle_ReturnValue = CallFunc_K2_IsTimerActiveHandle_ReturnValue;
@@ -115,9 +151,12 @@ void UAthenaCustomizationPicker_C::HandleSearchTextFilterChanged(class FText Tex
 
 void UAthenaCustomizationPicker_C::GetTextFilterSelectedState(bool* bIsSelected, bool CallFunc_GetSelected_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "GetTextFilterSelectedState");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_GetTextFilterSelectedState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "GetTextFilterSelectedState");
+
+	Params::UAthenaCustomizationPicker_C_GetTextFilterSelectedState_Params Parms{};
 
 	Parms.CallFunc_GetSelected_ReturnValue = CallFunc_GetSelected_ReturnValue;
 
@@ -140,9 +179,12 @@ void UAthenaCustomizationPicker_C::GetTextFilterSelectedState(bool* bIsSelected,
 
 void UAthenaCustomizationPicker_C::SetTextFilterSelectedState(bool bIsSelected, bool Temp_bool_Variable, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, bool K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "SetTextFilterSelectedState");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_SetTextFilterSelectedState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "SetTextFilterSelectedState");
+
+	Params::UAthenaCustomizationPicker_C_SetTextFilterSelectedState_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -160,13 +202,16 @@ void UAthenaCustomizationPicker_C::SetTextFilterSelectedState(bool bIsSelected, 
 // Parameters:
 // class FText                        InText                                                           (BlueprintVisible, BlueprintReadOnly, Parm)
 // bool                               Clear                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetEmptyText_ReturnValue                                ()
+// class FText                        CallFunc_GetEmptyText_ReturnValue                                (None)
 
 void UAthenaCustomizationPicker_C::SetTextFilter(class FText InText, bool Clear, class FText CallFunc_GetEmptyText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "SetTextFilter");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_SetTextFilter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "SetTextFilter");
+
+	Params::UAthenaCustomizationPicker_C_SetTextFilter_Params Parms{};
 
 	Parms.InText = InText;
 	Parms.Clear = Clear;
@@ -184,9 +229,12 @@ void UAthenaCustomizationPicker_C::SetTextFilter(class FText InText, bool Clear,
 
 void UAthenaCustomizationPicker_C::OnNoItemsAvailableInFilter(class FText& EmptyDisplayText)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "OnNoItemsAvailableInFilter");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_OnNoItemsAvailableInFilter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "OnNoItemsAvailableInFilter");
+
+	Params::UAthenaCustomizationPicker_C_OnNoItemsAvailableInFilter_Params Parms{};
 
 	Parms.EmptyDisplayText = EmptyDisplayText;
 
@@ -201,12 +249,14 @@ void UAthenaCustomizationPicker_C::OnNoItemsAvailableInFilter(class FText& Empty
 
 void UAthenaCustomizationPicker_C::OnItemsAvailableInFilter()
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "OnItemsAvailableInFilter");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_OnItemsAvailableInFilter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "OnItemsAvailableInFilter");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -218,9 +268,12 @@ void UAthenaCustomizationPicker_C::OnItemsAvailableInFilter()
 
 void UAthenaCustomizationPicker_C::OnSearchEnabled(bool bEnabled)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "OnSearchEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_OnSearchEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "OnSearchEnabled");
+
+	Params::UAthenaCustomizationPicker_C_OnSearchEnabled_Params Parms{};
 
 	Parms.bEnabled = bEnabled;
 
@@ -235,12 +288,14 @@ void UAthenaCustomizationPicker_C::OnSearchEnabled(bool bEnabled)
 
 void UAthenaCustomizationPicker_C::OnInitialized()
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "OnInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_OnInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "OnInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -252,9 +307,12 @@ void UAthenaCustomizationPicker_C::OnInitialized()
 
 void UAthenaCustomizationPicker_C::HandleTextChanged(class FText& Text)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "HandleTextChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_HandleTextChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "HandleTextChanged");
+
+	Params::UAthenaCustomizationPicker_C_HandleTextChanged_Params Parms{};
 
 	Parms.Text = Text;
 
@@ -269,12 +327,14 @@ void UAthenaCustomizationPicker_C::HandleTextChanged(class FText& Text)
 
 void UAthenaCustomizationPicker_C::HandleDifferentFilterSetBP()
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "HandleDifferentFilterSetBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_HandleDifferentFilterSetBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "HandleDifferentFilterSetBP");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -286,9 +346,12 @@ void UAthenaCustomizationPicker_C::HandleDifferentFilterSetBP()
 
 void UAthenaCustomizationPicker_C::BndEvt__Button_TextSearch_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "BndEvt__Button_TextSearch_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_BndEvt__Button_TextSearch_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "BndEvt__Button_TextSearch_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaCustomizationPicker_C_BndEvt__Button_TextSearch_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -304,7 +367,7 @@ void UAthenaCustomizationPicker_C::BndEvt__Button_TextSearch_K2Node_ComponentBou
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetQualifiedFilterDisplayName_ReturnValue               ()
+// class FText                        CallFunc_GetQualifiedFilterDisplayName_ReturnValue               (None)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // class FText                        K2Node_Event_EmptyDisplayText                                    (ConstParm)
 // bool                               K2Node_Event_bEnabled                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -314,9 +377,12 @@ void UAthenaCustomizationPicker_C::BndEvt__Button_TextSearch_K2Node_ComponentBou
 
 void UAthenaCustomizationPicker_C::ExecuteUbergraph_AthenaCustomizationPicker(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class FText CallFunc_GetQualifiedFilterDisplayName_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FText K2Node_Event_EmptyDisplayText, bool K2Node_Event_bEnabled, enum class ESlateVisibility K2Node_Select_Default, class FText K2Node_CustomEvent_Text, class UCommonButton* K2Node_ComponentBoundEvent_Button)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "ExecuteUbergraph_AthenaCustomizationPicker");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_ExecuteUbergraph_AthenaCustomizationPicker_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "ExecuteUbergraph_AthenaCustomizationPicker");
+
+	Params::UAthenaCustomizationPicker_C_ExecuteUbergraph_AthenaCustomizationPicker_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -342,9 +408,12 @@ void UAthenaCustomizationPicker_C::ExecuteUbergraph_AthenaCustomizationPicker(in
 
 void UAthenaCustomizationPicker_C::OnTextSearchSelectedChanged__DelegateSignature(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "OnTextSearchSelectedChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_OnTextSearchSelectedChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "OnTextSearchSelectedChanged__DelegateSignature");
+
+	Params::UAthenaCustomizationPicker_C_OnTextSearchSelectedChanged__DelegateSignature_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -359,12 +428,14 @@ void UAthenaCustomizationPicker_C::OnTextSearchSelectedChanged__DelegateSignatur
 
 void UAthenaCustomizationPicker_C::OnEnableSaveButton__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "OnEnableSaveButton__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_OnEnableSaveButton__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "OnEnableSaveButton__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -375,17 +446,17 @@ void UAthenaCustomizationPicker_C::OnEnableSaveButton__DelegateSignature()
 
 void UAthenaCustomizationPicker_C::OnDisableSaveButton__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationPicker_C", "OnDisableSaveButton__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaCustomizationPicker_C_OnDisableSaveButton__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaCustomizationPicker_C", "OnDisableSaveButton__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass PBWA_S1_BalconyD.PBWA_S1_BalconyD_C
+// (Actor)
+
+class UClass* APBWA_S1_BalconyD_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PBWA_S1_BalconyD_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// PBWA_S1_BalconyD_C PBWA_S1_BalconyD.Default__PBWA_S1_BalconyD_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class APBWA_S1_BalconyD_C* APBWA_S1_BalconyD_C::GetDefaultObj()
+{
+	static class APBWA_S1_BalconyD_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APBWA_S1_BalconyD_C*>(APBWA_S1_BalconyD_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass DivisionIconButton.DivisionIconButton_C
+// (None)
+
+class UClass* UDivisionIconButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DivisionIconButton_C");
+
+	return Clss;
+}
+
+
+// DivisionIconButton_C DivisionIconButton.Default__DivisionIconButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UDivisionIconButton_C* UDivisionIconButton_C::GetDefaultObj()
+{
+	static class UDivisionIconButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UDivisionIconButton_C*>(UDivisionIconButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function DivisionIconButton.DivisionIconButton_C.OnRankButtonSelected
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UDivisionIconButton_C::OnRankButtonSelected(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("DivisionIconButton_C", "OnRankButtonSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UDivisionIconButton_C_OnRankButtonSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DivisionIconButton_C", "OnRankButtonSelected");
+
+	Params::UDivisionIconButton_C_OnRankButtonSelected_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -39,12 +67,14 @@ void UDivisionIconButton_C::OnRankButtonSelected(bool bIsSelected)
 
 void UDivisionIconButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("DivisionIconButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UDivisionIconButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DivisionIconButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void UDivisionIconButton_C::BP_OnHovered()
 
 void UDivisionIconButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("DivisionIconButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UDivisionIconButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DivisionIconButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -74,9 +106,12 @@ void UDivisionIconButton_C::BP_OnUnhovered()
 
 void UDivisionIconButton_C::ExecuteUbergraph_DivisionIconButton(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool K2Node_Event_bIsSelected)
 {
-	static auto Func = Class->GetFunction("DivisionIconButton_C", "ExecuteUbergraph_DivisionIconButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UDivisionIconButton_C_ExecuteUbergraph_DivisionIconButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DivisionIconButton_C", "ExecuteUbergraph_DivisionIconButton");
+
+	Params::UDivisionIconButton_C_ExecuteUbergraph_DivisionIconButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -88,6 +123,4 @@ void UDivisionIconButton_C::ExecuteUbergraph_DivisionIconButton(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

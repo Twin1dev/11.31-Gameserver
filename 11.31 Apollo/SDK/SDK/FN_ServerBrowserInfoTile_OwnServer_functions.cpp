@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ServerBrowserInfoTile_OwnServer.ServerBrowserInfoTile_OwnServer_C
+// (None)
+
+class UClass* UServerBrowserInfoTile_OwnServer_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ServerBrowserInfoTile_OwnServer_C");
+
+	return Clss;
+}
+
+
+// ServerBrowserInfoTile_OwnServer_C ServerBrowserInfoTile_OwnServer.Default__ServerBrowserInfoTile_OwnServer_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UServerBrowserInfoTile_OwnServer_C* UServerBrowserInfoTile_OwnServer_C::GetDefaultObj()
+{
+	static class UServerBrowserInfoTile_OwnServer_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UServerBrowserInfoTile_OwnServer_C*>(UServerBrowserInfoTile_OwnServer_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ServerBrowserInfoTile_OwnServer.ServerBrowserInfoTile_OwnServer_C.SetBGImage
@@ -25,7 +50,7 @@ namespace SDK
 // class FString                      CallFunc_Conv_IntToString_ReturnValue                            (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
 // class FName                        CallFunc_Conv_StringToName_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortCreativeServerDisplayOptionCallFunc_GetDataTableRowFromName_OutRow                          ()
+// struct FFortCreativeServerDisplayOptionCallFunc_GetDataTableRowFromName_OutRow                          (None)
 // bool                               CallFunc_GetDataTableRowFromName_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_RGBToHSV_H                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_RGBToHSV_S                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,9 +69,12 @@ namespace SDK
 
 void UServerBrowserInfoTile_OwnServer_C::SetBGImage(int32 ArrayIdx, int32 CallFunc_Percent_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, const class FString& CallFunc_MakeLiteralString_ReturnValue, const class FString& CallFunc_Conv_IntToString_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue, const struct FFortCreativeServerDisplayOption& CallFunc_GetDataTableRowFromName_OutRow, bool CallFunc_GetDataTableRowFromName_ReturnValue, float CallFunc_RGBToHSV_H, float CallFunc_RGBToHSV_S, float CallFunc_RGBToHSV_V, float CallFunc_RGBToHSV_A, float CallFunc_RGBToHSV_H_1, float CallFunc_RGBToHSV_S_1, float CallFunc_RGBToHSV_V_1, float CallFunc_RGBToHSV_A_1, const struct FLinearColor& CallFunc_HSVToRGB_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, const struct FLinearColor& CallFunc_HSVToRGB_ReturnValue_1, class UTexture2D* K2Node_DynamicCast_AsTexture_2D, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "SetBGImage");
+	static class UFunction* Func = nullptr;
 
-	Params::UServerBrowserInfoTile_OwnServer_C_SetBGImage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "SetBGImage");
+
+	Params::UServerBrowserInfoTile_OwnServer_C_SetBGImage_Params Parms{};
 
 	Parms.ArrayIdx = ArrayIdx;
 	Parms.CallFunc_Percent_IntInt_ReturnValue = CallFunc_Percent_IntInt_ReturnValue;
@@ -84,9 +112,12 @@ void UServerBrowserInfoTile_OwnServer_C::SetBGImage(int32 ArrayIdx, int32 CallFu
 
 void UServerBrowserInfoTile_OwnServer_C::BndEvt__Button_ShowFriends_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "BndEvt__Button_ShowFriends_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UServerBrowserInfoTile_OwnServer_C_BndEvt__Button_ShowFriends_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "BndEvt__Button_ShowFriends_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UServerBrowserInfoTile_OwnServer_C_BndEvt__Button_ShowFriends_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -101,12 +132,14 @@ void UServerBrowserInfoTile_OwnServer_C::BndEvt__Button_ShowFriends_K2Node_Compo
 
 void UServerBrowserInfoTile_OwnServer_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "BP_OnSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UServerBrowserInfoTile_OwnServer_C_BP_OnSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "BP_OnSelected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -117,12 +150,14 @@ void UServerBrowserInfoTile_OwnServer_C::BP_OnSelected()
 
 void UServerBrowserInfoTile_OwnServer_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "BP_OnDeselected");
+	static class UFunction* Func = nullptr;
 
-	Params::UServerBrowserInfoTile_OwnServer_C_BP_OnDeselected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "BP_OnDeselected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -133,12 +168,14 @@ void UServerBrowserInfoTile_OwnServer_C::BP_OnDeselected()
 
 void UServerBrowserInfoTile_OwnServer_C::InitializeSelectedButton()
 {
-	static auto Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "InitializeSelectedButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UServerBrowserInfoTile_OwnServer_C_InitializeSelectedButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "InitializeSelectedButton");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -150,9 +187,12 @@ void UServerBrowserInfoTile_OwnServer_C::InitializeSelectedButton()
 
 void UServerBrowserInfoTile_OwnServer_C::InputMethodChanged(enum class ECommonInputType bNewInputType)
 {
-	static auto Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "InputMethodChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UServerBrowserInfoTile_OwnServer_C_InputMethodChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "InputMethodChanged");
+
+	Params::UServerBrowserInfoTile_OwnServer_C_InputMethodChanged_Params Parms{};
 
 	Parms.bNewInputType = bNewInputType;
 
@@ -168,9 +208,12 @@ void UServerBrowserInfoTile_OwnServer_C::InputMethodChanged(enum class ECommonIn
 
 void UServerBrowserInfoTile_OwnServer_C::BndEvt__Button_CloseFriends_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "BndEvt__Button_CloseFriends_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UServerBrowserInfoTile_OwnServer_C_BndEvt__Button_CloseFriends_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "BndEvt__Button_CloseFriends_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UServerBrowserInfoTile_OwnServer_C_BndEvt__Button_CloseFriends_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -185,12 +228,14 @@ void UServerBrowserInfoTile_OwnServer_C::BndEvt__Button_CloseFriends_K2Node_Comp
 
 void UServerBrowserInfoTile_OwnServer_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UServerBrowserInfoTile_OwnServer_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -201,12 +246,14 @@ void UServerBrowserInfoTile_OwnServer_C::BP_OnHovered()
 
 void UServerBrowserInfoTile_OwnServer_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UServerBrowserInfoTile_OwnServer_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -218,9 +265,12 @@ void UServerBrowserInfoTile_OwnServer_C::BP_OnUnhovered()
 
 void UServerBrowserInfoTile_OwnServer_C::OnLaunchButtonEnableChanged(bool bEnableValue)
 {
-	static auto Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "OnLaunchButtonEnableChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UServerBrowserInfoTile_OwnServer_C_OnLaunchButtonEnableChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "OnLaunchButtonEnableChanged");
+
+	Params::UServerBrowserInfoTile_OwnServer_C_OnLaunchButtonEnableChanged_Params Parms{};
 
 	Parms.bEnableValue = bEnableValue;
 
@@ -235,12 +285,14 @@ void UServerBrowserInfoTile_OwnServer_C::OnLaunchButtonEnableChanged(bool bEnabl
 
 void UServerBrowserInfoTile_OwnServer_C::Construct()
 {
-	static auto Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UServerBrowserInfoTile_OwnServer_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -253,8 +305,8 @@ void UServerBrowserInfoTile_OwnServer_C::Construct()
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimationReverse_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_1                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimationForward_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -271,13 +323,16 @@ void UServerBrowserInfoTile_OwnServer_C::Construct()
 // class UUMGSequencePlayer*          CallFunc_PlayAnimationForward_ReturnValue_2                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsAnimationPlaying_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_Event_bEnableValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        K2Node_Select_Default                                            (None)
 
 void UServerBrowserInfoTile_OwnServer_C::ExecuteUbergraph_ServerBrowserInfoTile_OwnServer(int32 EntryPoint, class UPrimarySkewButton_C* K2Node_DynamicCast_AsPrimary_Skew_Button, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool Temp_bool_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue_1, class UCommonInputSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue, enum class ECommonInputType K2Node_CustomEvent_bNewInputType, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_1, float CallFunc_GetEndTime_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool CallFunc_GetSelected_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue_3, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_2, bool CallFunc_IsAnimationPlaying_ReturnValue, bool K2Node_Event_bEnableValue, class FText K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "ExecuteUbergraph_ServerBrowserInfoTile_OwnServer");
+	static class UFunction* Func = nullptr;
 
-	Params::UServerBrowserInfoTile_OwnServer_C_ExecuteUbergraph_ServerBrowserInfoTile_OwnServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ServerBrowserInfoTile_OwnServer_C", "ExecuteUbergraph_ServerBrowserInfoTile_OwnServer");
+
+	Params::UServerBrowserInfoTile_OwnServer_C_ExecuteUbergraph_ServerBrowserInfoTile_OwnServer_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_DynamicCast_AsPrimary_Skew_Button = K2Node_DynamicCast_AsPrimary_Skew_Button;
@@ -310,6 +365,4 @@ void UServerBrowserInfoTile_OwnServer_C::ExecuteUbergraph_ServerBrowserInfoTile_
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

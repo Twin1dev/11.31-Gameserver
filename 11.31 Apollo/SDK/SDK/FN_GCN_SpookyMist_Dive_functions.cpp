@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCN_SpookyMist_Dive.GCN_SpookyMist_Dive_C
+// (None)
+
+class UClass* UGCN_SpookyMist_Dive_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCN_SpookyMist_Dive_C");
+
+	return Clss;
+}
+
+
+// GCN_SpookyMist_Dive_C GCN_SpookyMist_Dive.Default__GCN_SpookyMist_Dive_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGCN_SpookyMist_Dive_C* UGCN_SpookyMist_Dive_C::GetDefaultObj()
+{
+	static class UGCN_SpookyMist_Dive_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGCN_SpookyMist_Dive_C*>(UGCN_SpookyMist_Dive_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCN_SpookyMist_Dive.GCN_SpookyMist_Dive_C.OnStartParticleSystemSpawned
@@ -24,9 +49,12 @@ namespace SDK
 
 void UGCN_SpookyMist_Dive_C::OnStartParticleSystemSpawned(class UParticleSystemComponent* SpawnedParticleSysComponent, struct FGameplayCueParameters& Parameters, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCN_SpookyMist_Dive_C", "OnStartParticleSystemSpawned");
+	static class UFunction* Func = nullptr;
 
-	Params::UGCN_SpookyMist_Dive_C_OnStartParticleSystemSpawned_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_SpookyMist_Dive_C", "OnStartParticleSystemSpawned");
+
+	Params::UGCN_SpookyMist_Dive_C_OnStartParticleSystemSpawned_Params Parms{};
 
 	Parms.SpawnedParticleSysComponent = SpawnedParticleSysComponent;
 	Parms.Parameters = Parameters;
@@ -46,9 +74,12 @@ void UGCN_SpookyMist_Dive_C::OnStartParticleSystemSpawned(class UParticleSystemC
 
 bool UGCN_SpookyMist_Dive_C::OnActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("GCN_SpookyMist_Dive_C", "OnActive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGCN_SpookyMist_Dive_C_OnActive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_SpookyMist_Dive_C", "OnActive");
+
+	Params::UGCN_SpookyMist_Dive_C_OnActive_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -61,6 +92,4 @@ bool UGCN_SpookyMist_Dive_C::OnActive(class AActor* MyTarget, struct FGameplayCu
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

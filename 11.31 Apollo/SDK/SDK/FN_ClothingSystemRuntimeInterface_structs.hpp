@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -43,7 +40,7 @@ public:
 	TArray<struct FPlane>                        Planes;                                            // 0x0(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FVector>                       SurfacePoints;                                     // 0x10(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                        BoneIndex;                                         // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4303[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_234B[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -52,7 +49,7 @@ struct FClothCollisionPrim_Box
 {
 public:
 	struct FVector                               LocalPosition;                                     // 0x0(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4304[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_234C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FQuat                                 LocalRotation;                                     // 0x10(0x10)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FVector                               HalfExtents;                                       // 0x20(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        BoneIndex;                                         // 0x2C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -86,14 +83,12 @@ struct FPointWeightMap
 public:
 	class FName                                  Name;                                              // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        CurrentTarget;                                     // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4305[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_234D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<float>                                Values;                                            // 0x10(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                         bEnabled;                                          // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4306[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_234E[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

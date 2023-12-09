@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,17 +15,12 @@ class IDeimosTypeInfo_C : public IInterface
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("DeimosTypeInfo_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class IDeimosTypeInfo_C* GetDefaultObj();
 
 	void GetEnemyColor(struct FLinearColor* Color);
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

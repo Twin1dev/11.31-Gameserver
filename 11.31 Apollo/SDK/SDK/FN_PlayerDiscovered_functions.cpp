@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass PlayerDiscovered.PlayerDiscovered_C
+// (None)
+
+class UClass* UPlayerDiscovered_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerDiscovered_C");
+
+	return Clss;
+}
+
+
+// PlayerDiscovered_C PlayerDiscovered.Default__PlayerDiscovered_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerDiscovered_C* UPlayerDiscovered_C::GetDefaultObj()
+{
+	static class UPlayerDiscovered_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerDiscovered_C*>(UPlayerDiscovered_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PlayerDiscovered.PlayerDiscovered_C.EndOfShow
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UPlayerDiscovered_C::EndOfShow()
 {
-	static auto Func = Class->GetFunction("PlayerDiscovered_C", "EndOfShow");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerDiscovered_C_EndOfShow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerDiscovered_C", "EndOfShow");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -39,9 +66,12 @@ void UPlayerDiscovered_C::EndOfShow()
 
 void UPlayerDiscovered_C::OnNewDiscovery(class FText& LocalizedLocationName, bool bIsNamedLocation)
 {
-	static auto Func = Class->GetFunction("PlayerDiscovered_C", "OnNewDiscovery");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerDiscovered_C_OnNewDiscovery_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerDiscovered_C", "OnNewDiscovery");
+
+	Params::UPlayerDiscovered_C_OnNewDiscovery_Params Parms{};
 
 	Parms.LocalizedLocationName = LocalizedLocationName;
 	Parms.bIsNamedLocation = bIsNamedLocation;
@@ -57,12 +87,14 @@ void UPlayerDiscovered_C::OnNewDiscovery(class FText& LocalizedLocationName, boo
 
 void UPlayerDiscovered_C::Construct()
 {
-	static auto Func = Class->GetFunction("PlayerDiscovered_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerDiscovered_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerDiscovered_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -73,12 +105,14 @@ void UPlayerDiscovered_C::Construct()
 
 void UPlayerDiscovered_C::Brief_Show_Finished()
 {
-	static auto Func = Class->GetFunction("PlayerDiscovered_C", "Brief Show Finished");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerDiscovered_C_Brief_Show_Finished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerDiscovered_C", "Brief Show Finished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -89,12 +123,14 @@ void UPlayerDiscovered_C::Brief_Show_Finished()
 
 void UPlayerDiscovered_C::OnStompFailed()
 {
-	static auto Func = Class->GetFunction("PlayerDiscovered_C", "OnStompFailed");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerDiscovered_C_OnStompFailed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerDiscovered_C", "OnStompFailed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,12 +141,14 @@ void UPlayerDiscovered_C::OnStompFailed()
 
 void UPlayerDiscovered_C::OnStompedByOtherWidget()
 {
-	static auto Func = Class->GetFunction("PlayerDiscovered_C", "OnStompedByOtherWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerDiscovered_C_OnStompedByOtherWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerDiscovered_C", "OnStompedByOtherWidget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -121,12 +159,14 @@ void UPlayerDiscovered_C::OnStompedByOtherWidget()
 
 void UPlayerDiscovered_C::Play_Brief_Show_Sound()
 {
-	static auto Func = Class->GetFunction("PlayerDiscovered_C", "Play Brief Show Sound");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerDiscovered_C_Play_Brief_Show_Sound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerDiscovered_C", "Play Brief Show Sound");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -154,9 +194,12 @@ void UPlayerDiscovered_C::Play_Brief_Show_Sound()
 
 void UPlayerDiscovered_C::ExecuteUbergraph_PlayerDiscovered(int32 EntryPoint, bool Temp_bool_Variable, class FText K2Node_Event_LocalizedLocationName, bool K2Node_Event_bIsNamedLocation, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, int32 Temp_int_Variable, bool CallFunc_IsAnimationPlaying_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, int32 Temp_int_Variable_1, int32 K2Node_Select_Default, bool CallFunc_IsMobileGame_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, const struct FWidgetTransform& K2Node_MakeStruct_WidgetTransform)
 {
-	static auto Func = Class->GetFunction("PlayerDiscovered_C", "ExecuteUbergraph_PlayerDiscovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerDiscovered_C", "ExecuteUbergraph_PlayerDiscovered");
+
+	Params::UPlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -182,6 +225,4 @@ void UPlayerDiscovered_C::ExecuteUbergraph_PlayerDiscovered(int32 EntryPoint, bo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

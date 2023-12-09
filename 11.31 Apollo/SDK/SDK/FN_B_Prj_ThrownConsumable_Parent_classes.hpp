@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -23,11 +20,8 @@ public:
 	bool                                         bSimulationRunning;                                // 0x848(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
 	bool                                         bShouldRestartSimulating;                          // 0x849(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_Prj_ThrownConsumable_Parent_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_Prj_ThrownConsumable_Parent_C* GetDefaultObj();
 
 	void ResetSimulatedComponents();
 	void OnRep_bSimulationRunning();
@@ -48,6 +42,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

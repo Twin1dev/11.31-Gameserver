@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ComOptionPreview.ComOptionPreview_C
+// (None)
+
+class UClass* UComOptionPreview_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ComOptionPreview_C");
+
+	return Clss;
+}
+
+
+// ComOptionPreview_C ComOptionPreview.Default__ComOptionPreview_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UComOptionPreview_C* UComOptionPreview_C::GetDefaultObj()
+{
+	static class UComOptionPreview_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UComOptionPreview_C*>(UComOptionPreview_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ComOptionPreview.ComOptionPreview_C.BP_OnEntryReleased
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UComOptionPreview_C::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("ComOptionPreview_C", "BP_OnEntryReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionPreview_C_BP_OnEntryReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionPreview_C", "BP_OnEntryReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UComOptionPreview_C::BP_OnEntryReleased()
 
 void UComOptionPreview_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("ComOptionPreview_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionPreview_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionPreview_C", "BP_OnItemExpansionChanged");
+
+	Params::UComOptionPreview_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -56,9 +86,12 @@ void UComOptionPreview_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UComOptionPreview_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("ComOptionPreview_C", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionPreview_C_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionPreview_C", "BP_OnItemSelectionChanged");
+
+	Params::UComOptionPreview_C_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -74,9 +107,12 @@ void UComOptionPreview_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UComOptionPreview_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("ComOptionPreview_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionPreview_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionPreview_C", "OnListItemObjectSet");
+
+	Params::UComOptionPreview_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -91,12 +127,14 @@ void UComOptionPreview_C::OnListItemObjectSet(class UObject* ListItemObject)
 
 void UComOptionPreview_C::PlayHoveredAnimation()
 {
-	static auto Func = Class->GetFunction("ComOptionPreview_C", "PlayHoveredAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionPreview_C_PlayHoveredAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionPreview_C", "PlayHoveredAnimation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -107,12 +145,14 @@ void UComOptionPreview_C::PlayHoveredAnimation()
 
 void UComOptionPreview_C::PlayUnhoveredAnimation()
 {
-	static auto Func = Class->GetFunction("ComOptionPreview_C", "PlayUnhoveredAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionPreview_C_PlayUnhoveredAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionPreview_C", "PlayUnhoveredAnimation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -123,12 +163,14 @@ void UComOptionPreview_C::PlayUnhoveredAnimation()
 
 void UComOptionPreview_C::PlayVotingAnimation()
 {
-	static auto Func = Class->GetFunction("ComOptionPreview_C", "PlayVotingAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionPreview_C_PlayVotingAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionPreview_C", "PlayVotingAnimation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -139,12 +181,14 @@ void UComOptionPreview_C::PlayVotingAnimation()
 
 void UComOptionPreview_C::Construct()
 {
-	static auto Func = Class->GetFunction("ComOptionPreview_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionPreview_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionPreview_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -163,9 +207,12 @@ void UComOptionPreview_C::Construct()
 
 void UComOptionPreview_C::ExecuteUbergraph_ComOptionPreview(int32 EntryPoint, bool K2Node_Event_bIsExpanded, bool K2Node_Event_bIsSelected, class UObject* K2Node_Event_ListItemObject, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("ComOptionPreview_C", "ExecuteUbergraph_ComOptionPreview");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionPreview_C_ExecuteUbergraph_ComOptionPreview_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionPreview_C", "ExecuteUbergraph_ComOptionPreview");
+
+	Params::UComOptionPreview_C_ExecuteUbergraph_ComOptionPreview_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bIsExpanded = K2Node_Event_bIsExpanded;
@@ -182,6 +229,4 @@ void UComOptionPreview_C::ExecuteUbergraph_ComOptionPreview(int32 EntryPoint, bo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

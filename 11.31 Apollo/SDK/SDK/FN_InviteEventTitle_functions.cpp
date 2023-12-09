@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass InviteEventTitle.InviteEventTitle_C
+// (None)
+
+class UClass* UInviteEventTitle_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("InviteEventTitle_C");
+
+	return Clss;
+}
+
+
+// InviteEventTitle_C InviteEventTitle.Default__InviteEventTitle_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UInviteEventTitle_C* UInviteEventTitle_C::GetDefaultObj()
+{
+	static class UInviteEventTitle_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UInviteEventTitle_C*>(UInviteEventTitle_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function InviteEventTitle.InviteEventTitle_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UInviteEventTitle_C::Construct()
 {
-	static auto Func = Class->GetFunction("InviteEventTitle_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UInviteEventTitle_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InviteEventTitle_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -40,9 +67,12 @@ void UInviteEventTitle_C::Construct()
 
 void UInviteEventTitle_C::ExecuteUbergraph_InviteEventTitle(int32 EntryPoint, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, bool CallFunc_IsInviteUIDisabled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("InviteEventTitle_C", "ExecuteUbergraph_InviteEventTitle");
+	static class UFunction* Func = nullptr;
 
-	Params::UInviteEventTitle_C_ExecuteUbergraph_InviteEventTitle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InviteEventTitle_C", "ExecuteUbergraph_InviteEventTitle");
+
+	Params::UInviteEventTitle_C_ExecuteUbergraph_InviteEventTitle_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetRuntimeOptions_ReturnValue = CallFunc_GetRuntimeOptions_ReturnValue;
@@ -54,6 +84,4 @@ void UInviteEventTitle_C::ExecuteUbergraph_InviteEventTitle(int32 EntryPoint, cl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

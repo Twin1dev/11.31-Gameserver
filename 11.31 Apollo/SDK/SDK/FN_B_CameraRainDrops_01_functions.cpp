@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_CameraRainDrops_01.B_CameraRainDrops_01_C
+// (Actor)
+
+class UClass* AB_CameraRainDrops_01_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_CameraRainDrops_01_C");
+
+	return Clss;
+}
+
+
+// B_CameraRainDrops_01_C B_CameraRainDrops_01.Default__B_CameraRainDrops_01_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_CameraRainDrops_01_C* AB_CameraRainDrops_01_C::GetDefaultObj()
+{
+	static class AB_CameraRainDrops_01_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_CameraRainDrops_01_C*>(AB_CameraRainDrops_01_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_CameraRainDrops_01.B_CameraRainDrops_01_C.Alpha__FinishedFunc
 // (BlueprintEvent)
 // Parameters:
 
 void AB_CameraRainDrops_01_C::Alpha__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_CameraRainDrops_01_C", "Alpha__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_CameraRainDrops_01_C_Alpha__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_CameraRainDrops_01_C", "Alpha__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AB_CameraRainDrops_01_C::Alpha__FinishedFunc()
 
 void AB_CameraRainDrops_01_C::Alpha__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_CameraRainDrops_01_C", "Alpha__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_CameraRainDrops_01_C_Alpha__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_CameraRainDrops_01_C", "Alpha__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void AB_CameraRainDrops_01_C::Alpha__UpdateFunc()
 
 void AB_CameraRainDrops_01_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_CameraRainDrops_01_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_CameraRainDrops_01_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_CameraRainDrops_01_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -72,9 +103,12 @@ void AB_CameraRainDrops_01_C::ReceiveBeginPlay()
 
 void AB_CameraRainDrops_01_C::ExecuteUbergraph_B_CameraRainDrops_01(int32 EntryPoint, int32 CallFunc_GetRenderingDetailMode_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_CameraRainDrops_01_C", "ExecuteUbergraph_B_CameraRainDrops_01");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_CameraRainDrops_01_C_ExecuteUbergraph_B_CameraRainDrops_01_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_CameraRainDrops_01_C", "ExecuteUbergraph_B_CameraRainDrops_01");
+
+	Params::AB_CameraRainDrops_01_C_ExecuteUbergraph_B_CameraRainDrops_01_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetRenderingDetailMode_ReturnValue = CallFunc_GetRenderingDetailMode_ReturnValue;
@@ -86,6 +120,4 @@ void AB_CameraRainDrops_01_C::ExecuteUbergraph_B_CameraRainDrops_01(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

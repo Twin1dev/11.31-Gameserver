@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SettingsListEntry_SubCollection.SettingsListEntry_SubCollection_C
+// (None)
+
+class UClass* USettingsListEntry_SubCollection_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SettingsListEntry_SubCollection_C");
+
+	return Clss;
+}
+
+
+// SettingsListEntry_SubCollection_C SettingsListEntry_SubCollection.Default__SettingsListEntry_SubCollection_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USettingsListEntry_SubCollection_C* USettingsListEntry_SubCollection_C::GetDefaultObj()
+{
+	static class USettingsListEntry_SubCollection_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USettingsListEntry_SubCollection_C*>(USettingsListEntry_SubCollection_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SettingsListEntry_SubCollection.SettingsListEntry_SubCollection_C.GetPrimaryGamepadFocusWidget
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 class UWidget* USettingsListEntry_SubCollection_C::GetPrimaryGamepadFocusWidget()
 {
-	static auto Func = Class->GetFunction("SettingsListEntry_SubCollection_C", "GetPrimaryGamepadFocusWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingsListEntry_SubCollection_C_GetPrimaryGamepadFocusWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingsListEntry_SubCollection_C", "GetPrimaryGamepadFocusWidget");
+
+	Params::USettingsListEntry_SubCollection_C_GetPrimaryGamepadFocusWidget_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -41,9 +69,12 @@ class UWidget* USettingsListEntry_SubCollection_C::GetPrimaryGamepadFocusWidget(
 
 void USettingsListEntry_SubCollection_C::OnSettingAssigned(class FText& ActionText)
 {
-	static auto Func = Class->GetFunction("SettingsListEntry_SubCollection_C", "OnSettingAssigned");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingsListEntry_SubCollection_C_OnSettingAssigned_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingsListEntry_SubCollection_C", "OnSettingAssigned");
+
+	Params::USettingsListEntry_SubCollection_C_OnSettingAssigned_Params Parms{};
 
 	Parms.ActionText = ActionText;
 
@@ -60,9 +91,12 @@ void USettingsListEntry_SubCollection_C::OnSettingAssigned(class FText& ActionTe
 
 void USettingsListEntry_SubCollection_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("SettingsListEntry_SubCollection_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingsListEntry_SubCollection_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingsListEntry_SubCollection_C", "OnMouseEnter");
+
+	Params::USettingsListEntry_SubCollection_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -79,9 +113,12 @@ void USettingsListEntry_SubCollection_C::OnMouseEnter(const struct FGeometry& My
 
 void USettingsListEntry_SubCollection_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("SettingsListEntry_SubCollection_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingsListEntry_SubCollection_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingsListEntry_SubCollection_C", "OnMouseLeave");
+
+	Params::USettingsListEntry_SubCollection_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -105,9 +142,12 @@ void USettingsListEntry_SubCollection_C::OnMouseLeave(struct FPointerEvent& Mous
 
 void USettingsListEntry_SubCollection_C::ExecuteUbergraph_SettingsListEntry_SubCollection(int32 EntryPoint, const struct FPointerEvent& K2Node_Event_MouseEvent, class FText K2Node_Event_ActionText, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SettingsListEntry_SubCollection_C", "ExecuteUbergraph_SettingsListEntry_SubCollection");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingsListEntry_SubCollection_C", "ExecuteUbergraph_SettingsListEntry_SubCollection");
+
+	Params::USettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_MouseEvent = K2Node_Event_MouseEvent;
@@ -125,6 +165,4 @@ void USettingsListEntry_SubCollection_C::ExecuteUbergraph_SettingsListEntry_SubC
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

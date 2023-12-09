@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GAT_Creative_TriggeredAbility.GAT_Creative_TriggeredAbility_C
+// (None)
+
+class UClass* UGAT_Creative_TriggeredAbility_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAT_Creative_TriggeredAbility_C");
+
+	return Clss;
+}
+
+
+// GAT_Creative_TriggeredAbility_C GAT_Creative_TriggeredAbility.Default__GAT_Creative_TriggeredAbility_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAT_Creative_TriggeredAbility_C* UGAT_Creative_TriggeredAbility_C::GetDefaultObj()
+{
+	static class UGAT_Creative_TriggeredAbility_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAT_Creative_TriggeredAbility_C*>(UGAT_Creative_TriggeredAbility_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GAT_Creative_TriggeredAbility.GAT_Creative_TriggeredAbility_C.IsPropertyOverridden
@@ -24,9 +49,12 @@ namespace SDK
 
 void UGAT_Creative_TriggeredAbility_C::IsPropertyOverridden(class FName PropertyName, bool* bResult, bool CallFunc_Array_Contains_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAT_Creative_TriggeredAbility_C", "IsPropertyOverridden");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_Creative_TriggeredAbility_C_IsPropertyOverridden_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_Creative_TriggeredAbility_C", "IsPropertyOverridden");
+
+	Params::UGAT_Creative_TriggeredAbility_C_IsPropertyOverridden_Params Parms{};
 
 	Parms.PropertyName = PropertyName;
 	Parms.CallFunc_Array_Contains_ReturnValue = CallFunc_Array_Contains_ReturnValue;
@@ -46,9 +74,12 @@ void UGAT_Creative_TriggeredAbility_C::IsPropertyOverridden(class FName Property
 
 void UGAT_Creative_TriggeredAbility_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GAT_Creative_TriggeredAbility_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_Creative_TriggeredAbility_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_Creative_TriggeredAbility_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGAT_Creative_TriggeredAbility_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -64,9 +95,12 @@ void UGAT_Creative_TriggeredAbility_C::K2_ActivateAbilityFromEvent(struct FGamep
 
 void UGAT_Creative_TriggeredAbility_C::SetupAbilityFailsafeTimer(float Duration)
 {
-	static auto Func = Class->GetFunction("GAT_Creative_TriggeredAbility_C", "SetupAbilityFailsafeTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_Creative_TriggeredAbility_C_SetupAbilityFailsafeTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_Creative_TriggeredAbility_C", "SetupAbilityFailsafeTimer");
+
+	Params::UGAT_Creative_TriggeredAbility_C_SetupAbilityFailsafeTimer_Params Parms{};
 
 	Parms.Duration = Duration;
 
@@ -81,12 +115,14 @@ void UGAT_Creative_TriggeredAbility_C::SetupAbilityFailsafeTimer(float Duration)
 
 void UGAT_Creative_TriggeredAbility_C::AbilityTimeout()
 {
-	static auto Func = Class->GetFunction("GAT_Creative_TriggeredAbility_C", "AbilityTimeout");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_Creative_TriggeredAbility_C_AbilityTimeout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_Creative_TriggeredAbility_C", "AbilityTimeout");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -107,9 +143,12 @@ void UGAT_Creative_TriggeredAbility_C::AbilityTimeout()
 
 void UGAT_Creative_TriggeredAbility_C::ExecuteUbergraph_GAT_Creative_TriggeredAbility(int32 EntryPoint, const class FString& CallFunc_GetDisplayName_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const class FString& CallFunc_Concat_StrStr_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_1, const struct FGameplayEventData& K2Node_Event_EventData, TArray<class FName>& CallFunc_ApplySourcePropertyOverrides_OverriddenPropertyNames, bool CallFunc_ApplySourcePropertyOverrides_ReturnValue, float K2Node_CustomEvent_Duration, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAT_Creative_TriggeredAbility_C", "ExecuteUbergraph_GAT_Creative_TriggeredAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_Creative_TriggeredAbility_C_ExecuteUbergraph_GAT_Creative_TriggeredAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_Creative_TriggeredAbility_C", "ExecuteUbergraph_GAT_Creative_TriggeredAbility");
+
+	Params::UGAT_Creative_TriggeredAbility_C_ExecuteUbergraph_GAT_Creative_TriggeredAbility_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetDisplayName_ReturnValue = CallFunc_GetDisplayName_ReturnValue;
@@ -128,6 +167,4 @@ void UGAT_Creative_TriggeredAbility_C::ExecuteUbergraph_GAT_Creative_TriggeredAb
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

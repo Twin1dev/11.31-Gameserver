@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Athena_Prop_SneakySnowman.Athena_Prop_SneakySnowman_C
+// (Actor)
+
+class UClass* AAthena_Prop_SneakySnowman_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Athena_Prop_SneakySnowman_C");
+
+	return Clss;
+}
+
+
+// Athena_Prop_SneakySnowman_C Athena_Prop_SneakySnowman.Default__Athena_Prop_SneakySnowman_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AAthena_Prop_SneakySnowman_C* AAthena_Prop_SneakySnowman_C::GetDefaultObj()
+{
+	static class AAthena_Prop_SneakySnowman_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AAthena_Prop_SneakySnowman_C*>(AAthena_Prop_SneakySnowman_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function Athena_Prop_SneakySnowman.Athena_Prop_SneakySnowman_C.TraceStartAndEnd
@@ -25,9 +50,12 @@ namespace SDK
 
 void AAthena_Prop_SneakySnowman_C::TraceStartAndEnd(struct FVector* Start, struct FVector* End, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "TraceStartAndEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_TraceStartAndEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "TraceStartAndEnd");
+
+	Params::AAthena_Prop_SneakySnowman_C_TraceStartAndEnd_Params Parms{};
 
 	Parms.CallFunc_K2_GetActorLocation_ReturnValue = CallFunc_K2_GetActorLocation_ReturnValue;
 	Parms.CallFunc_Subtract_VectorVector_ReturnValue = CallFunc_Subtract_VectorVector_ReturnValue;
@@ -35,10 +63,10 @@ void AAthena_Prop_SneakySnowman_C::TraceStartAndEnd(struct FVector* Start, struc
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Start != nullptr)
-		*Start = Parms.Start;
+		*Start = std::move(Parms.Start);
 
 	if (End != nullptr)
-		*End = Parms.End;
+		*End = std::move(Parms.End);
 
 }
 
@@ -53,9 +81,12 @@ void AAthena_Prop_SneakySnowman_C::TraceStartAndEnd(struct FVector* Start, struc
 
 void AAthena_Prop_SneakySnowman_C::ForceSetLocationOnLanding(const struct FHitResult& CallFunc_K2_SetActorLocation_SweepHitResult, bool CallFunc_K2_SetActorLocation_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_EqualEqual_VectorVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ForceSetLocationOnLanding");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_ForceSetLocationOnLanding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ForceSetLocationOnLanding");
+
+	Params::AAthena_Prop_SneakySnowman_C_ForceSetLocationOnLanding_Params Parms{};
 
 	Parms.CallFunc_K2_SetActorLocation_SweepHitResult = CallFunc_K2_SetActorLocation_SweepHitResult;
 	Parms.CallFunc_K2_SetActorLocation_ReturnValue = CallFunc_K2_SetActorLocation_ReturnValue;
@@ -74,9 +105,12 @@ void AAthena_Prop_SneakySnowman_C::ForceSetLocationOnLanding(const struct FHitRe
 
 void AAthena_Prop_SneakySnowman_C::OnRep_LandedLocation(bool CallFunc_HasAuthority_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "OnRep_LandedLocation");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_OnRep_LandedLocation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "OnRep_LandedLocation");
+
+	Params::AAthena_Prop_SneakySnowman_C_OnRep_LandedLocation_Params Parms{};
 
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 
@@ -91,12 +125,14 @@ void AAthena_Prop_SneakySnowman_C::OnRep_LandedLocation(bool CallFunc_HasAuthori
 
 void AAthena_Prop_SneakySnowman_C::OnRep_bSimulationRunning()
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "OnRep_bSimulationRunning");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_OnRep_bSimulationRunning_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "OnRep_bSimulationRunning");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -107,12 +143,14 @@ void AAthena_Prop_SneakySnowman_C::OnRep_bSimulationRunning()
 
 void AAthena_Prop_SneakySnowman_C::ResetSimulatedComponents()
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ResetSimulatedComponents");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_ResetSimulatedComponents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ResetSimulatedComponents");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -123,12 +161,14 @@ void AAthena_Prop_SneakySnowman_C::ResetSimulatedComponents()
 
 void AAthena_Prop_SneakySnowman_C::UserConstructionScript()
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "UserConstructionScript");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -140,9 +180,12 @@ void AAthena_Prop_SneakySnowman_C::UserConstructionScript()
 
 void AAthena_Prop_SneakySnowman_C::BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileStopDelegate__DelegateSignature(struct FHitResult& ImpactResult)
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileStopDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileStopDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileStopDelegate__DelegateSignature");
+
+	Params::AAthena_Prop_SneakySnowman_C_BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileStopDelegate__DelegateSignature_Params Parms{};
 
 	Parms.ImpactResult = ImpactResult;
 
@@ -165,9 +208,12 @@ void AAthena_Prop_SneakySnowman_C::BndEvt__ProjectileMovementComponent_K2Node_Co
 
 void AAthena_Prop_SneakySnowman_C::BuildingActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "BuildingActorDied");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_BuildingActorDied_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "BuildingActorDied");
+
+	Params::AAthena_Prop_SneakySnowman_C_BuildingActorDied_Params Parms{};
 
 	Parms.DamagedActor = DamagedActor;
 	Parms.Damage = Damage;
@@ -189,12 +235,14 @@ void AAthena_Prop_SneakySnowman_C::BuildingActorDied(class AActor* DamagedActor,
 
 void AAthena_Prop_SneakySnowman_C::RestartSimulating()
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "RestartSimulating");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_RestartSimulating_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "RestartSimulating");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -205,12 +253,14 @@ void AAthena_Prop_SneakySnowman_C::RestartSimulating()
 
 void AAthena_Prop_SneakySnowman_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -228,9 +278,12 @@ void AAthena_Prop_SneakySnowman_C::ReceiveBeginPlay()
 
 void AAthena_Prop_SneakySnowman_C::OnDamagePlayEffects(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "OnDamagePlayEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_OnDamagePlayEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "OnDamagePlayEffects");
+
+	Params::AAthena_Prop_SneakySnowman_C_OnDamagePlayEffects_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -257,9 +310,12 @@ void AAthena_Prop_SneakySnowman_C::OnDamagePlayEffects(float Damage, struct FGam
 
 void AAthena_Prop_SneakySnowman_C::BndEvt__OverlapCheck_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, struct FHitResult& SweepResult)
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "BndEvt__OverlapCheck_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_BndEvt__OverlapCheck_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "BndEvt__OverlapCheck_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
+
+	Params::AAthena_Prop_SneakySnowman_C_BndEvt__OverlapCheck_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature_Params Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -280,9 +336,12 @@ void AAthena_Prop_SneakySnowman_C::BndEvt__OverlapCheck_K2Node_ComponentBoundEve
 
 void AAthena_Prop_SneakySnowman_C::PreFinishSpawning(class AFortVolume* VolumeSpawnedWithin)
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "PreFinishSpawning");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_PreFinishSpawning_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "PreFinishSpawning");
+
+	Params::AAthena_Prop_SneakySnowman_C_PreFinishSpawning_Params Parms{};
 
 	Parms.VolumeSpawnedWithin = VolumeSpawnedWithin;
 
@@ -299,9 +358,12 @@ void AAthena_Prop_SneakySnowman_C::PreFinishSpawning(class AFortVolume* VolumeSp
 
 void AAthena_Prop_SneakySnowman_C::PlaylistLoaded(class FName PlaylistName, struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "PlaylistLoaded");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_PlaylistLoaded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "PlaylistLoaded");
+
+	Params::AAthena_Prop_SneakySnowman_C_PlaylistLoaded_Params Parms{};
 
 	Parms.PlaylistName = PlaylistName;
 	Parms.PlaylistContextTags = PlaylistContextTags;
@@ -317,12 +379,14 @@ void AAthena_Prop_SneakySnowman_C::PlaylistLoaded(class FName PlaylistName, stru
 
 void AAthena_Prop_SneakySnowman_C::WobbleAnims()
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "WobbleAnims");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_WobbleAnims_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "WobbleAnims");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -341,9 +405,12 @@ void AAthena_Prop_SneakySnowman_C::WobbleAnims()
 
 void AAthena_Prop_SneakySnowman_C::WorldPropSupportDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "WorldPropSupportDied");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_WorldPropSupportDied_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "WorldPropSupportDied");
+
+	Params::AAthena_Prop_SneakySnowman_C_WorldPropSupportDied_Params Parms{};
 
 	Parms.DamagedActor = DamagedActor;
 	Parms.Damage = Damage;
@@ -365,12 +432,14 @@ void AAthena_Prop_SneakySnowman_C::WorldPropSupportDied(class AActor* DamagedAct
 
 void AAthena_Prop_SneakySnowman_C::ResetDistanceCheck()
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ResetDistanceCheck");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_ResetDistanceCheck_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ResetDistanceCheck");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -435,7 +504,7 @@ void AAthena_Prop_SneakySnowman_C::ResetDistanceCheck()
 // struct FHitResult                  K2Node_Event_HitInfo                                             (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AFortPawn*                   K2Node_Event_InstigatedBy                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       (None)
 // float                              CallFunc_GetGameTimeInSeconds_ReturnValue_1                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // class UPrimitiveComponent*         K2Node_ComponentBoundEvent_OverlappedComponent                   (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -510,9 +579,12 @@ void AAthena_Prop_SneakySnowman_C::ResetDistanceCheck()
 
 void AAthena_Prop_SneakySnowman_C::ExecuteUbergraph_Athena_Prop_SneakySnowman(int32 EntryPoint, class UMaterialInstanceDynamic* CallFunc_GetOrCreateMIDOnDefaultMesh_ReturnValue, const struct FHitResult& K2Node_ComponentBoundEvent_ImpactResult, class AActor* K2Node_CustomEvent_DamagedActor_1, float K2Node_CustomEvent_Damage_1, class AController* K2Node_CustomEvent_InstigatedBy_1, class AActor* K2Node_CustomEvent_DamageCauser_1, const struct FVector& K2Node_CustomEvent_HitLocation_1, class UPrimitiveComponent* K2Node_CustomEvent_FHitComponent_1, class FName K2Node_CustomEvent_BoneName_1, const struct FVector& K2Node_CustomEvent_Momentum_1, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, TScriptInterface<class IFortVehicleInterface> K2Node_DynamicCast_AsFort_Vehicle_Interface, bool K2Node_DynamicCast_bSuccess, class AFortPickupAthena* K2Node_DynamicCast_AsFort_Pickup_Athena, bool K2Node_DynamicCast_bSuccess_1, TArray<class AFortPlayerPawn*>& CallFunc_GetAllPassengers_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_Greater_IntInt_ReturnValue, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor, bool K2Node_DynamicCast_bSuccess_3, bool Temp_bool_IsClosed_Variable, const struct FActiveGameplayEffectHandle& CallFunc_ApplyGlobalEnvironmentGameplayEffectToActor_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_HasAuthority_ReturnValue_1, float CallFunc_GetValueAtLevel_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, bool CallFunc_Greater_FloatFloat_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue, float K2Node_Event_Damage, const struct FGameplayTagContainer& K2Node_Event_DamageTags, const struct FVector& K2Node_Event_Momentum, const struct FHitResult& K2Node_Event_HitInfo, class AFortPawn* K2Node_Event_InstigatedBy, class AActor* K2Node_Event_DamageCauser, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext, float CallFunc_GetGameTimeInSeconds_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent, class AActor* K2Node_ComponentBoundEvent_OtherActor, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp, int32 K2Node_ComponentBoundEvent_OtherBodyIndex, bool K2Node_ComponentBoundEvent_bFromSweep, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_1, bool K2Node_DynamicCast_bSuccess_4, bool CallFunc_NotEqual_ObjectObject_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class AFortVolume* K2Node_Event_VolumeSpawnedWithin, int32 Temp_int_Array_Index_Variable, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class AFortPlayerPawn* CallFunc_Array_Get_Item, const struct FActiveGameplayEffectHandle& CallFunc_ApplyGlobalEnvironmentGameplayEffectToActor_ReturnValue_1, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput, bool CallFunc_HasMatchingGameplayTag_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class AGameStateBase* CallFunc_GetGameState_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena, bool K2Node_DynamicCast_bSuccess_5, class FName K2Node_CustomEvent_PlaylistName, const struct FGameplayTagContainer& K2Node_CustomEvent_PlaylistContextTags, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, TArray<class AActor*>& K2Node_MakeArray_Array, class AActor* K2Node_CustomEvent_DamagedActor, float K2Node_CustomEvent_Damage, class AController* K2Node_CustomEvent_InstigatedBy, class AActor* K2Node_CustomEvent_DamageCauser, const struct FVector& K2Node_CustomEvent_HitLocation, class UPrimitiveComponent* K2Node_CustomEvent_FHitComponent, class FName K2Node_CustomEvent_BoneName, const struct FVector& K2Node_CustomEvent_Momentum, bool CallFunc_IsActive_ReturnValue, const struct FVector& CallFunc_TraceStartAndEnd_Start, const struct FVector& CallFunc_TraceStartAndEnd_End, const struct FHitResult& CallFunc_LineTraceSingleForObjects_OutHit, bool CallFunc_LineTraceSingleForObjects_ReturnValue, float CallFunc_DistanceBetweenTwoVectors_Distance, bool CallFunc_BreakHitResult_bBlockingHit_1, bool CallFunc_BreakHitResult_bInitialOverlap_1, float CallFunc_BreakHitResult_Time_1, float CallFunc_BreakHitResult_Distance_1, const struct FVector& CallFunc_BreakHitResult_Location_1, const struct FVector& CallFunc_BreakHitResult_ImpactPoint_1, const struct FVector& CallFunc_BreakHitResult_Normal_1, const struct FVector& CallFunc_BreakHitResult_ImpactNormal_1, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat_1, class AActor* CallFunc_BreakHitResult_HitActor_1, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent_1, class FName CallFunc_BreakHitResult_HitBoneName_1, int32 CallFunc_BreakHitResult_HitItem_1, int32 CallFunc_BreakHitResult_FaceIndex_1, const struct FVector& CallFunc_BreakHitResult_TraceStart_1, const struct FVector& CallFunc_BreakHitResult_TraceEnd_1, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor_1, bool K2Node_DynamicCast_bSuccess_6, class APawn* CallFunc_GetInstigator_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_2, bool K2Node_DynamicCast_bSuccess_7, float CallFunc_GetValueAtLevel_ReturnValue_2, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UMaterialInstanceDynamic* CallFunc_GetOrCreateMIDOnDefaultMesh_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4)
 {
-	static auto Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ExecuteUbergraph_Athena_Prop_SneakySnowman");
+	static class UFunction* Func = nullptr;
 
-	Params::AAthena_Prop_SneakySnowman_C_ExecuteUbergraph_Athena_Prop_SneakySnowman_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Prop_SneakySnowman_C", "ExecuteUbergraph_Athena_Prop_SneakySnowman");
+
+	Params::AAthena_Prop_SneakySnowman_C_ExecuteUbergraph_Athena_Prop_SneakySnowman_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetOrCreateMIDOnDefaultMesh_ReturnValue = CallFunc_GetOrCreateMIDOnDefaultMesh_ReturnValue;
@@ -650,6 +722,4 @@ void AAthena_Prop_SneakySnowman_C::ExecuteUbergraph_Athena_Prop_SneakySnowman(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

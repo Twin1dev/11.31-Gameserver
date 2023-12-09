@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,11 +16,8 @@ class ABP_CozyLodge_GenericSelectable_C : public AFortEventLevelNavigationActor
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x468(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BP_CozyLodge_GenericSelectable_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ABP_CozyLodge_GenericSelectable_C* GetDefaultObj();
 
 	void ReceiveBeginPlay();
 	void ExecuteUbergraph_BP_CozyLodge_GenericSelectable(int32 EntryPoint);
@@ -31,6 +25,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

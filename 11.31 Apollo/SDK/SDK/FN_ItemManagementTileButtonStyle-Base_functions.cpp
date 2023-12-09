@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ItemManagementTileButtonStyle-Base.ItemManagementTileButtonStyle-Base_C
+// (None)
+
+class UClass* UItemManagementTileButtonStyleMinusBase_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemManagementTileButtonStyle-Base_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ItemManagementTileButtonStyle-Base_C ItemManagementTileButtonStyle-Base.Default__ItemManagementTileButtonStyle-Base_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemManagementTileButtonStyleMinusBase_C* UItemManagementTileButtonStyleMinusBase_C::GetDefaultObj()
+{
+	static class UItemManagementTileButtonStyleMinusBase_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemManagementTileButtonStyleMinusBase_C*>(UItemManagementTileButtonStyleMinusBase_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

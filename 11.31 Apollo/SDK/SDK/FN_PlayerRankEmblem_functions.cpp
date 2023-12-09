@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass PlayerRankEmblem.PlayerRankEmblem_C
+// (None)
+
+class UClass* UPlayerRankEmblem_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerRankEmblem_C");
+
+	return Clss;
+}
+
+
+// PlayerRankEmblem_C PlayerRankEmblem.Default__PlayerRankEmblem_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerRankEmblem_C* UPlayerRankEmblem_C::GetDefaultObj()
+{
+	static class UPlayerRankEmblem_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerRankEmblem_C*>(UPlayerRankEmblem_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PlayerRankEmblem.PlayerRankEmblem_C.SetBannerInfo
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,19 +47,22 @@ namespace SDK
 // class FName                        CallFunc_Conv_StringToName_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        CallFunc_Conv_StringToName_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 
 void UPlayerRankEmblem_C::SetBannerInfo(const struct FPlayerBannerInfo& Banner, class FName CallFunc_Conv_StringToName_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class FText CallFunc_Conv_StringToText_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerRankEmblem_C", "SetBannerInfo");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerRankEmblem_C_SetBannerInfo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerRankEmblem_C", "SetBannerInfo");
+
+	Params::UPlayerRankEmblem_C_SetBannerInfo_Params Parms{};
 
 	Parms.Banner = Banner;
 	Parms.CallFunc_Conv_StringToName_ReturnValue = CallFunc_Conv_StringToName_ReturnValue;
@@ -62,9 +90,12 @@ void UPlayerRankEmblem_C::SetBannerInfo(const struct FPlayerBannerInfo& Banner, 
 
 void UPlayerRankEmblem_C::SetBannerSurroundLevel(int32 Level, bool Animate, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerRankEmblem_C", "SetBannerSurroundLevel");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerRankEmblem_C_SetBannerSurroundLevel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerRankEmblem_C", "SetBannerSurroundLevel");
+
+	Params::UPlayerRankEmblem_C_SetBannerSurroundLevel_Params Parms{};
 
 	Parms.Level = Level;
 	Parms.Animate = Animate;
@@ -83,9 +114,12 @@ void UPlayerRankEmblem_C::SetBannerSurroundLevel(int32 Level, bool Animate, clas
 
 void UPlayerRankEmblem_C::SetBannerOwner(class AFortPlayerController* Target, const struct FUniqueNetIdRepl& CallFunc_GetGameAccountId_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerRankEmblem_C", "SetBannerOwner");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerRankEmblem_C_SetBannerOwner_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerRankEmblem_C", "SetBannerOwner");
+
+	Params::UPlayerRankEmblem_C_SetBannerOwner_Params Parms{};
 
 	Parms.Target = Target;
 	Parms.CallFunc_GetGameAccountId_ReturnValue = CallFunc_GetGameAccountId_ReturnValue;
@@ -101,12 +135,14 @@ void UPlayerRankEmblem_C::SetBannerOwner(class AFortPlayerController* Target, co
 
 void UPlayerRankEmblem_C::Construct()
 {
-	static auto Func = Class->GetFunction("PlayerRankEmblem_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerRankEmblem_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerRankEmblem_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -118,9 +154,12 @@ void UPlayerRankEmblem_C::Construct()
 
 void UPlayerRankEmblem_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("PlayerRankEmblem_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerRankEmblem_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerRankEmblem_C", "PreConstruct");
+
+	Params::UPlayerRankEmblem_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -141,9 +180,12 @@ void UPlayerRankEmblem_C::PreConstruct(bool IsDesignTime)
 
 void UPlayerRankEmblem_C::ExecuteUbergraph_PlayerRankEmblem(int32 EntryPoint, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, const struct FUniqueNetIdRepl& CallFunc_GetGameAccountId_ReturnValue, bool K2Node_Event_IsDesignTime)
 {
-	static auto Func = Class->GetFunction("PlayerRankEmblem_C", "ExecuteUbergraph_PlayerRankEmblem");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerRankEmblem_C", "ExecuteUbergraph_PlayerRankEmblem");
+
+	Params::UPlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
@@ -158,6 +200,4 @@ void UPlayerRankEmblem_C::ExecuteUbergraph_PlayerRankEmblem(int32 EntryPoint, cl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

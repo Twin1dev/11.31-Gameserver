@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SocialPanel_FriendLinkButton.SocialPanel_FriendLinkButton_C
+// (None)
+
+class UClass* USocialPanel_FriendLinkButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialPanel_FriendLinkButton_C");
+
+	return Clss;
+}
+
+
+// SocialPanel_FriendLinkButton_C SocialPanel_FriendLinkButton.Default__SocialPanel_FriendLinkButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USocialPanel_FriendLinkButton_C* USocialPanel_FriendLinkButton_C::GetDefaultObj()
+{
+	static class USocialPanel_FriendLinkButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialPanel_FriendLinkButton_C*>(USocialPanel_FriendLinkButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SocialPanel_FriendLinkButton.SocialPanel_FriendLinkButton_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void USocialPanel_FriendLinkButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("SocialPanel_FriendLinkButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_FriendLinkButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_FriendLinkButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void USocialPanel_FriendLinkButton_C::BP_OnUnhovered()
 
 void USocialPanel_FriendLinkButton_C::OnCopiedToClipboard()
 {
-	static auto Func = Class->GetFunction("SocialPanel_FriendLinkButton_C", "OnCopiedToClipboard");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_FriendLinkButton_C_OnCopiedToClipboard_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_FriendLinkButton_C", "OnCopiedToClipboard");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void USocialPanel_FriendLinkButton_C::OnCopiedToClipboard()
 
 void USocialPanel_FriendLinkButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("SocialPanel_FriendLinkButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_FriendLinkButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_FriendLinkButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void USocialPanel_FriendLinkButton_C::BP_OnHovered()
 
 void USocialPanel_FriendLinkButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("SocialPanel_FriendLinkButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_FriendLinkButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_FriendLinkButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -86,9 +119,12 @@ void USocialPanel_FriendLinkButton_C::Construct()
 
 void USocialPanel_FriendLinkButton_C::OnShareButtonTypeSet(enum class EFriendLinkShareButtonType Type)
 {
-	static auto Func = Class->GetFunction("SocialPanel_FriendLinkButton_C", "OnShareButtonTypeSet");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_FriendLinkButton_C_OnShareButtonTypeSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_FriendLinkButton_C", "OnShareButtonTypeSet");
+
+	Params::USocialPanel_FriendLinkButton_C_OnShareButtonTypeSet_Params Parms{};
 
 	Parms.Type = Type;
 
@@ -113,9 +149,12 @@ void USocialPanel_FriendLinkButton_C::OnShareButtonTypeSet(enum class EFriendLin
 
 void USocialPanel_FriendLinkButton_C::ExecuteUbergraph_SocialPanel_FriendLinkButton(int32 EntryPoint, enum class EFriendLinkShareButtonType Temp_byte_Variable, class UMaterialInterface* Temp_object_Variable, class UMaterialInterface* Temp_object_Variable_1, class UMaterialInterface* Temp_object_Variable_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, enum class EFriendLinkShareButtonType K2Node_Event_Type, class UMaterialInterface* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("SocialPanel_FriendLinkButton_C", "ExecuteUbergraph_SocialPanel_FriendLinkButton");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_FriendLinkButton_C_ExecuteUbergraph_SocialPanel_FriendLinkButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_FriendLinkButton_C", "ExecuteUbergraph_SocialPanel_FriendLinkButton");
+
+	Params::USocialPanel_FriendLinkButton_C_ExecuteUbergraph_SocialPanel_FriendLinkButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -134,6 +173,4 @@ void USocialPanel_FriendLinkButton_C::ExecuteUbergraph_SocialPanel_FriendLinkBut
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

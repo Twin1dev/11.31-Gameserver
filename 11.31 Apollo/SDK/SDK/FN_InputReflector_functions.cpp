@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass InputReflector.InputReflector_C
+// (None)
+
+class UClass* UInputReflector_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("InputReflector_C");
+
+	return Clss;
+}
+
+
+// InputReflector_C InputReflector.Default__InputReflector_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UInputReflector_C* UInputReflector_C::GetDefaultObj()
+{
+	static class UInputReflector_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UInputReflector_C*>(UInputReflector_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function InputReflector.InputReflector_C.StyleButton
@@ -30,9 +55,12 @@ namespace SDK
 
 void UInputReflector_C::StyleButton(class UCommonButton*& ButtonToStyle, class UCommonButton** ButtonStyled, class UInputReflectorButton_C* ReflectorButton, class UInputReflectorButton_C* K2Node_DynamicCast_AsInput_Reflector_Button, bool K2Node_DynamicCast_bSuccess, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, enum class EFortUIFeatureState CallFunc_GetFeatureState_OutFeatureState, enum class EFortUIFeatureStateReason CallFunc_GetFeatureState_OutReason, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("InputReflector_C", "StyleButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflector_C_StyleButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflector_C", "StyleButton");
+
+	Params::UInputReflector_C_StyleButton_Params Parms{};
 
 	Parms.ButtonToStyle = ButtonToStyle;
 	Parms.ReflectorButton = ReflectorButton;
@@ -65,9 +93,12 @@ void UInputReflector_C::StyleButton(class UCommonButton*& ButtonToStyle, class U
 
 void UInputReflector_C::HandleAddButton(class UCommonButton* AddedButton, class UHorizontalBoxSlot* HBoxSlot, class UCommonButton* CallFunc_StyleButton_ButtonStyled, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, enum class EFortUIFeatureState CallFunc_GetFeatureState_OutFeatureState, enum class EFortUIFeatureStateReason CallFunc_GetFeatureState_OutReason, bool K2Node_SwitchEnum_CmpSuccess, class UHorizontalBoxSlot* CallFunc_AddChildToHorizontalBox_ReturnValue)
 {
-	static auto Func = Class->GetFunction("InputReflector_C", "HandleAddButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflector_C_HandleAddButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflector_C", "HandleAddButton");
+
+	Params::UInputReflector_C_HandleAddButton_Params Parms{};
 
 	Parms.AddedButton = AddedButton;
 	Parms.HBoxSlot = HBoxSlot;
@@ -91,9 +122,12 @@ void UInputReflector_C::HandleAddButton(class UCommonButton* AddedButton, class 
 
 void UInputReflector_C::OnButtonAdded(class UCommonButton* AddedButton, struct FCommonInputActionHandlerData& Data)
 {
-	static auto Func = Class->GetFunction("InputReflector_C", "OnButtonAdded");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflector_C_OnButtonAdded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflector_C", "OnButtonAdded");
+
+	Params::UInputReflector_C_OnButtonAdded_Params Parms{};
 
 	Parms.AddedButton = AddedButton;
 	Parms.Data = Data;
@@ -112,9 +146,12 @@ void UInputReflector_C::OnButtonAdded(class UCommonButton* AddedButton, struct F
 
 void UInputReflector_C::ExecuteUbergraph_InputReflector(int32 EntryPoint, class UCommonButton* K2Node_Event_AddedButton, const struct FCommonInputActionHandlerData& K2Node_Event_Data)
 {
-	static auto Func = Class->GetFunction("InputReflector_C", "ExecuteUbergraph_InputReflector");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputReflector_C_ExecuteUbergraph_InputReflector_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputReflector_C", "ExecuteUbergraph_InputReflector");
+
+	Params::UInputReflector_C_ExecuteUbergraph_InputReflector_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_AddedButton = K2Node_Event_AddedButton;
@@ -126,6 +163,4 @@ void UInputReflector_C::ExecuteUbergraph_InputReflector(int32 EntryPoint, class 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

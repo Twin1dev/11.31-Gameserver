@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GA_Creative_OnKillSiphon.GA_Creative_OnKillSiphon_C
+// (None)
+
+class UClass* UGA_Creative_OnKillSiphon_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Creative_OnKillSiphon_C");
+
+	return Clss;
+}
+
+
+// GA_Creative_OnKillSiphon_C GA_Creative_OnKillSiphon.Default__GA_Creative_OnKillSiphon_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Creative_OnKillSiphon_C* UGA_Creative_OnKillSiphon_C::GetDefaultObj()
+{
+	static class UGA_Creative_OnKillSiphon_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Creative_OnKillSiphon_C*>(UGA_Creative_OnKillSiphon_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GA_Creative_OnKillSiphon.GA_Creative_OnKillSiphon_C.GiveResourcesToPlayer
@@ -29,9 +54,12 @@ namespace SDK
 
 void UGA_Creative_OnKillSiphon_C::GiveResourcesToPlayer(bool bShouldGrant, int32 GiveAmount, enum class EFortResourceType GiveType, bool* Success, class UFortWorldItemDefinition* LocalItemToGive, bool K2Node_SwitchEnum_CmpSuccess, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, TScriptInterface<class IFortInventoryOwnerInterface> CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput)
 {
-	static auto Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "GiveResourcesToPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_OnKillSiphon_C_GiveResourcesToPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "GiveResourcesToPlayer");
+
+	Params::UGA_Creative_OnKillSiphon_C_GiveResourcesToPlayer_Params Parms{};
 
 	Parms.bShouldGrant = bShouldGrant;
 	Parms.GiveAmount = GiveAmount;
@@ -77,9 +105,12 @@ void UGA_Creative_OnKillSiphon_C::GiveResourcesToPlayer(bool bShouldGrant, int32
 
 void UGA_Creative_OnKillSiphon_C::CalculateResources(enum class EFortResourceType ResourceGrantType, bool* bSuccess, int32* ResourceToGive, enum class EFortResourceType* ResourceType, class FName LocalDataTableRowName, int32 ILocalResourceToGive, float CallFunc_GetOverridenSiphonGoldValue_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, int32 CallFunc_FTrunc_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue_1, float CallFunc_GetOverridenSiphonMetalValue_ReturnValue, int32 CallFunc_FTrunc_ReturnValue_1, float CallFunc_GetOverridenSiphonWoodValue_ReturnValue, int32 CallFunc_FTrunc_ReturnValue_2, bool K2Node_SwitchEnum_CmpSuccess, bool K2Node_SwitchEnum_CmpSuccess_1, float CallFunc_GetOverridenSiphonStoneValue_ReturnValue, int32 CallFunc_FTrunc_ReturnValue_3, enum class EEvaluateCurveTableResult CallFunc_EvaluateCurveTableRow_OutResult, float CallFunc_EvaluateCurveTableRow_OutXY, int32 CallFunc_FTrunc_ReturnValue_4, bool K2Node_SwitchEnum_CmpSuccess_2)
 {
-	static auto Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "CalculateResources");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_OnKillSiphon_C_CalculateResources_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "CalculateResources");
+
+	Params::UGA_Creative_OnKillSiphon_C_CalculateResources_Params Parms{};
 
 	Parms.ResourceGrantType = ResourceGrantType;
 	Parms.LocalDataTableRowName = LocalDataTableRowName;
@@ -137,9 +168,12 @@ void UGA_Creative_OnKillSiphon_C::CalculateResources(enum class EFortResourceTyp
 
 void UGA_Creative_OnKillSiphon_C::AttemptMats(bool CallFunc_CalculateResources_bSuccess, int32 CallFunc_CalculateResources_ResourceToGive, enum class EFortResourceType CallFunc_CalculateResources_ResourceType, bool CallFunc_CalculateResources_bSuccess_1, int32 CallFunc_CalculateResources_ResourceToGive_1, enum class EFortResourceType CallFunc_CalculateResources_ResourceType_1, bool CallFunc_GiveResourcesToPlayer_Success, bool CallFunc_GiveResourcesToPlayer_Success_1, bool CallFunc_CalculateResources_bSuccess_2, int32 CallFunc_CalculateResources_ResourceToGive_2, enum class EFortResourceType CallFunc_CalculateResources_ResourceType_2, bool CallFunc_CalculateResources_bSuccess_3, int32 CallFunc_CalculateResources_ResourceToGive_3, enum class EFortResourceType CallFunc_CalculateResources_ResourceType_3, bool CallFunc_GiveResourcesToPlayer_Success_2, bool CallFunc_GiveResourcesToPlayer_Success_3)
 {
-	static auto Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "AttemptMats");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_OnKillSiphon_C_AttemptMats_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "AttemptMats");
+
+	Params::UGA_Creative_OnKillSiphon_C_AttemptMats_Params Parms{};
 
 	Parms.CallFunc_CalculateResources_bSuccess = CallFunc_CalculateResources_bSuccess;
 	Parms.CallFunc_CalculateResources_ResourceToGive = CallFunc_CalculateResources_ResourceToGive;
@@ -177,9 +211,12 @@ void UGA_Creative_OnKillSiphon_C::AttemptMats(bool CallFunc_CalculateResources_b
 
 void UGA_Creative_OnKillSiphon_C::AttemptHeal(bool CallFunc_RestoreHealth_Success, float CallFunc_RestoreHealth_InitialHealAmount, float CallFunc_RestoreHealth_ActualAppliedHeal, float CallFunc_RestoreHealth_ExcessHealing, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, bool CallFunc_AddShields_bAddedShields, float CallFunc_AddShields_ShieldAdded, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "AttemptHeal");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_OnKillSiphon_C_AttemptHeal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "AttemptHeal");
+
+	Params::UGA_Creative_OnKillSiphon_C_AttemptHeal_Params Parms{};
 
 	Parms.CallFunc_RestoreHealth_Success = CallFunc_RestoreHealth_Success;
 	Parms.CallFunc_RestoreHealth_InitialHealAmount = CallFunc_RestoreHealth_InitialHealAmount;
@@ -217,9 +254,12 @@ void UGA_Creative_OnKillSiphon_C::AttemptHeal(bool CallFunc_RestoreHealth_Succes
 
 void UGA_Creative_OnKillSiphon_C::SetupRestoreModes(bool* ShouldContinue, bool CallFunc_IsCreativeOrPlaygroundModePlaylist_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, enum class EEvaluateCurveTableResult CallFunc_EvaluateCurveTableRow_OutResult, float CallFunc_EvaluateCurveTableRow_OutXY, enum class EEvaluateCurveTableResult CallFunc_EvaluateCurveTableRow_OutResult_1, float CallFunc_EvaluateCurveTableRow_OutXY_1, bool CallFunc_EqualEqual_FloatFloat_ReturnValue, bool CallFunc_EqualEqual_FloatFloat_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue_2, bool K2Node_SwitchEnum_CmpSuccess, bool K2Node_SwitchEnum_CmpSuccess_1, class AGameStateBase* CallFunc_GetGameState_ReturnValue, class AAthena_GameState_C* K2Node_DynamicCast_AsAthena_Game_State, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "SetupRestoreModes");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_OnKillSiphon_C_SetupRestoreModes_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "SetupRestoreModes");
+
+	Params::UGA_Creative_OnKillSiphon_C_SetupRestoreModes_Params Parms{};
 
 	Parms.CallFunc_IsCreativeOrPlaygroundModePlaylist_ReturnValue = CallFunc_IsCreativeOrPlaygroundModePlaylist_ReturnValue;
 	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
@@ -264,9 +304,12 @@ void UGA_Creative_OnKillSiphon_C::SetupRestoreModes(bool* ShouldContinue, bool C
 
 void UGA_Creative_OnKillSiphon_C::DetermineHealthDelta(float HealingAmount, float* MaxHealth, float* CurrentHealth, float* HealthDelta, float* ExcessHealh, float Temp_float_Variable, bool Temp_bool_Variable, float CallFunc_GetHealth_ReturnValue, float CallFunc_GetMaxHealth_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue_1, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, float K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "DetermineHealthDelta");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_OnKillSiphon_C_DetermineHealthDelta_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "DetermineHealthDelta");
+
+	Params::UGA_Creative_OnKillSiphon_C_DetermineHealthDelta_Params Parms{};
 
 	Parms.HealingAmount = HealingAmount;
 	Parms.Temp_float_Variable = Temp_float_Variable;
@@ -308,15 +351,18 @@ void UGA_Creative_OnKillSiphon_C::DetermineHealthDelta(float HealingAmount, floa
 // class FString                      K2Node_Select_Default                                            (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_FloatFloat_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue              ()
-// struct FGameplayEffectSpecHandle   CallFunc_AssignTagSetByCallerMagnitude_ReturnValue               ()
+// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue              (None)
+// struct FGameplayEffectSpecHandle   CallFunc_AssignTagSetByCallerMagnitude_ReturnValue               (None)
 // struct FActiveGameplayEffectHandle CallFunc_K2_ApplyGameplayEffectSpecToOwner_ReturnValue           (NoDestructor, HasGetValueTypeHash)
 
 void UGA_Creative_OnKillSiphon_C::AddShields(bool bShouldConvertExcessHealthToShields, float ShieldToAdd, bool* bAddedShields, float* ShieldAdded, bool Temp_bool_Variable, const class FString& Temp_string_Variable, const class FString& Temp_string_Variable_1, const class FString& K2Node_Select_Default, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_AssignTagSetByCallerMagnitude_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_K2_ApplyGameplayEffectSpecToOwner_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "AddShields");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_OnKillSiphon_C_AddShields_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "AddShields");
+
+	Params::UGA_Creative_OnKillSiphon_C_AddShields_Params Parms{};
 
 	Parms.bShouldConvertExcessHealthToShields = bShouldConvertExcessHealthToShields;
 	Parms.ShieldToAdd = ShieldToAdd;
@@ -364,8 +410,8 @@ void UGA_Creative_OnKillSiphon_C::AddShields(bool bShouldConvertExcessHealthToSh
 // float                              CallFunc_DetermineHealthDelta_HealthDelta                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_DetermineHealthDelta_ExcessHealh                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_FMin_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue              ()
-// struct FGameplayEffectSpecHandle   CallFunc_AssignTagSetByCallerMagnitude_ReturnValue               ()
+// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue              (None)
+// struct FGameplayEffectSpecHandle   CallFunc_AssignTagSetByCallerMagnitude_ReturnValue               (None)
 // struct FActiveGameplayEffectHandle CallFunc_K2_ApplyGameplayEffectSpecToOwner_ReturnValue           (NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GreaterEqual_FloatFloat_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EEvaluateCurveTableResultCallFunc_EvaluateCurveTableRow_OutResult                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -376,9 +422,12 @@ void UGA_Creative_OnKillSiphon_C::AddShields(bool bShouldConvertExcessHealthToSh
 
 void UGA_Creative_OnKillSiphon_C::RestoreHealth(bool* Success, float* InitialHealAmount, float* ActualAppliedHeal, float* ExcessHealing, float FShieldRestored, float FActualAmountHealed, float FInitialAmountToHeal, bool Temp_bool_Variable, bool CallFunc_Greater_FloatFloat_ReturnValue, const class FString& CallFunc_Conv_FloatToString_ReturnValue, const class FString& CallFunc_Conv_FloatToString_ReturnValue_1, const class FString& CallFunc_Concat_StrStr_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_1, const class FString& CallFunc_Concat_StrStr_ReturnValue_2, const class FString& CallFunc_Concat_StrStr_ReturnValue_3, float CallFunc_DetermineHealthDelta_MaxHealth, float CallFunc_DetermineHealthDelta_CurrentHealth, float CallFunc_DetermineHealthDelta_HealthDelta, float CallFunc_DetermineHealthDelta_ExcessHealh, float CallFunc_FMin_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_AssignTagSetByCallerMagnitude_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_K2_ApplyGameplayEffectSpecToOwner_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, enum class EEvaluateCurveTableResult CallFunc_EvaluateCurveTableRow_OutResult, float CallFunc_EvaluateCurveTableRow_OutXY, bool K2Node_SwitchEnum_CmpSuccess, float CallFunc_GetOverridenSiphonHealthValue_ReturnValue, float K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "RestoreHealth");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_OnKillSiphon_C_RestoreHealth_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "RestoreHealth");
+
+	Params::UGA_Creative_OnKillSiphon_C_RestoreHealth_Params Parms{};
 
 	Parms.FShieldRestored = FShieldRestored;
 	Parms.FActualAmountHealed = FActualAmountHealed;
@@ -450,9 +499,12 @@ void UGA_Creative_OnKillSiphon_C::RestoreHealth(bool* Success, float* InitialHea
 
 bool UGA_Creative_OnKillSiphon_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload, bool bLocalMatsOnKill, bool bLocalHealthOnKill, bool bLocalShouldActivate, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, class AFortPlayerPawn* CallFunc_GetPlayerPawn_ReturnValue, bool CallFunc_IsDBNO_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, enum class EEvaluateCurveTableResult CallFunc_EvaluateCurveTableRow_OutResult, float CallFunc_EvaluateCurveTableRow_OutXY, bool CallFunc_EqualEqual_FloatFloat_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_BooleanAND_ReturnValue, enum class EEvaluateCurveTableResult CallFunc_EvaluateCurveTableRow_OutResult_1, float CallFunc_EvaluateCurveTableRow_OutXY_1, bool K2Node_SwitchEnum_CmpSuccess_1, bool CallFunc_EqualEqual_FloatFloat_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "K2_ShouldAbilityRespondToEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_OnKillSiphon_C_K2_ShouldAbilityRespondToEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "K2_ShouldAbilityRespondToEvent");
+
+	Params::UGA_Creative_OnKillSiphon_C_K2_ShouldAbilityRespondToEvent_Params Parms{};
 
 	Parms.ActorInfo = ActorInfo;
 	Parms.Payload = Payload;
@@ -489,9 +541,12 @@ bool UGA_Creative_OnKillSiphon_C::K2_ShouldAbilityRespondToEvent(const struct FG
 
 void UGA_Creative_OnKillSiphon_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_OnKillSiphon_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGA_Creative_OnKillSiphon_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -509,9 +564,12 @@ void UGA_Creative_OnKillSiphon_C::K2_ActivateAbilityFromEvent(struct FGameplayEv
 
 void UGA_Creative_OnKillSiphon_C::ExecuteUbergraph_GA_Creative_OnKillSiphon(int32 EntryPoint, const struct FGameplayEventData& K2Node_Event_EventData, bool CallFunc_SetupRestoreModes_ShouldContinue)
 {
-	static auto Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "ExecuteUbergraph_GA_Creative_OnKillSiphon");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Creative_OnKillSiphon_C_ExecuteUbergraph_GA_Creative_OnKillSiphon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Creative_OnKillSiphon_C", "ExecuteUbergraph_GA_Creative_OnKillSiphon");
+
+	Params::UGA_Creative_OnKillSiphon_C_ExecuteUbergraph_GA_Creative_OnKillSiphon_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_EventData = K2Node_Event_EventData;
@@ -523,6 +581,4 @@ void UGA_Creative_OnKillSiphon_C::ExecuteUbergraph_GA_Creative_OnKillSiphon(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

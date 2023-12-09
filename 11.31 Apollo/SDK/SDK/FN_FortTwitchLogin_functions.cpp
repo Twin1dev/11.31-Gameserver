@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass FortTwitchLogin.FortTwitchLogin_C
+// (None)
+
+class UClass* UFortTwitchLogin_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FortTwitchLogin_C");
+
+	return Clss;
+}
+
+
+// FortTwitchLogin_C FortTwitchLogin.Default__FortTwitchLogin_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UFortTwitchLogin_C* UFortTwitchLogin_C::GetDefaultObj()
+{
+	static class UFortTwitchLogin_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFortTwitchLogin_C*>(UFortTwitchLogin_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function FortTwitchLogin.FortTwitchLogin_C.Build Player Id Analytic Attribute
@@ -24,13 +49,16 @@ namespace SDK
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FUniqueNetIdRepl            CallFunc_GetGameAccountId_ReturnValue                            (HasGetValueTypeHash)
 // class FString                      CallFunc_GetDebugStringForUniqueId_ReturnValue                   (ZeroConstructor, HasGetValueTypeHash)
-// struct FFortAnalyticsEventAttributeCallFunc_ConstructAnalyticsAttribute_ReturnValue                 ()
+// struct FFortAnalyticsEventAttributeCallFunc_ConstructAnalyticsAttribute_ReturnValue                 (None)
 
 struct FFortAnalyticsEventAttribute UFortTwitchLogin_C::Build_Player_Id_Analytic_Attribute(class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, const struct FUniqueNetIdRepl& CallFunc_GetGameAccountId_ReturnValue, const class FString& CallFunc_GetDebugStringForUniqueId_ReturnValue, const struct FFortAnalyticsEventAttribute& CallFunc_ConstructAnalyticsAttribute_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "Build Player Id Analytic Attribute");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_Build_Player_Id_Analytic_Attribute_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "Build Player Id Analytic Attribute");
+
+	Params::UFortTwitchLogin_C_Build_Player_Id_Analytic_Attribute_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Controller = K2Node_DynamicCast_AsFort_Player_Controller;
@@ -50,15 +78,18 @@ struct FFortAnalyticsEventAttribute UFortTwitchLogin_C::Build_Player_Id_Analytic
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // struct FFortAnalyticsEventAttributeReturnValue                                                      (Parm, OutParm, ReturnParm)
-// class FText                        CallFunc_GetText_ReturnValue                                     ()
+// class FText                        CallFunc_GetText_ReturnValue                                     (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
-// struct FFortAnalyticsEventAttributeCallFunc_ConstructAnalyticsAttribute_ReturnValue                 ()
+// struct FFortAnalyticsEventAttributeCallFunc_ConstructAnalyticsAttribute_ReturnValue                 (None)
 
 struct FFortAnalyticsEventAttribute UFortTwitchLogin_C::Build_Twitch_Name_Analytic_Attribute(class FText CallFunc_GetText_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, const struct FFortAnalyticsEventAttribute& CallFunc_ConstructAnalyticsAttribute_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "Build Twitch Name Analytic Attribute");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "Build Twitch Name Analytic Attribute");
+
+	Params::UFortTwitchLogin_C_Build_Twitch_Name_Analytic_Attribute_Params Parms{};
 
 	Parms.CallFunc_GetText_ReturnValue = CallFunc_GetText_ReturnValue;
 	Parms.CallFunc_Conv_TextToString_ReturnValue = CallFunc_Conv_TextToString_ReturnValue;
@@ -81,13 +112,16 @@ struct FFortAnalyticsEventAttribute UFortTwitchLogin_C::Build_Twitch_Name_Analyt
 // struct FUniqueNetIdRepl            CallFunc_GetGameAccountId_ReturnValue                            (HasGetValueTypeHash)
 // class UFortRegisteredPlayerInfo*   CallFunc_GetPlayerInfoFromUniqueID_ReturnValue                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetPlayerName_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
-// struct FFortAnalyticsEventAttributeCallFunc_ConstructAnalyticsAttribute_ReturnValue                 ()
+// struct FFortAnalyticsEventAttributeCallFunc_ConstructAnalyticsAttribute_ReturnValue                 (None)
 
 struct FFortAnalyticsEventAttribute UFortTwitchLogin_C::Build_Player_Name_Analytic_Attribute(class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, const struct FUniqueNetIdRepl& CallFunc_GetGameAccountId_ReturnValue, class UFortRegisteredPlayerInfo* CallFunc_GetPlayerInfoFromUniqueID_ReturnValue, const class FString& CallFunc_GetPlayerName_ReturnValue, const struct FFortAnalyticsEventAttribute& CallFunc_ConstructAnalyticsAttribute_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "Build Player Name Analytic Attribute");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_Build_Player_Name_Analytic_Attribute_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "Build Player Name Analytic Attribute");
+
+	Params::UFortTwitchLogin_C_Build_Player_Name_Analytic_Attribute_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Controller = K2Node_DynamicCast_AsFort_Player_Controller;
@@ -107,16 +141,19 @@ struct FFortAnalyticsEventAttribute UFortTwitchLogin_C::Build_Player_Name_Analyt
 // Function FortTwitchLogin.FortTwitchLogin_C.Fire Logged In Analytic
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortAnalyticsEventAttributeCallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue          ()
-// struct FFortAnalyticsEventAttributeCallFunc_Build_Twitch_Name_Analytic_Attribute_ReturnValue        ()
-// struct FFortAnalyticsEventAttributeCallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue        ()
+// struct FFortAnalyticsEventAttributeCallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue          (None)
+// struct FFortAnalyticsEventAttributeCallFunc_Build_Twitch_Name_Analytic_Attribute_ReturnValue        (None)
+// struct FFortAnalyticsEventAttributeCallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue        (None)
 // TArray<struct FFortAnalyticsEventAttribute>K2Node_MakeArray_Array                                           (ConstParm, ZeroConstructor, ReferenceParm)
 
 void UFortTwitchLogin_C::Fire_Logged_In_Analytic(const struct FFortAnalyticsEventAttribute& CallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue, const struct FFortAnalyticsEventAttribute& CallFunc_Build_Twitch_Name_Analytic_Attribute_ReturnValue, const struct FFortAnalyticsEventAttribute& CallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue, TArray<struct FFortAnalyticsEventAttribute>& K2Node_MakeArray_Array)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "Fire Logged In Analytic");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_Fire_Logged_In_Analytic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "Fire Logged In Analytic");
+
+	Params::UFortTwitchLogin_C_Fire_Logged_In_Analytic_Params Parms{};
 
 	Parms.CallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue = CallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue;
 	Parms.CallFunc_Build_Twitch_Name_Analytic_Attribute_ReturnValue = CallFunc_Build_Twitch_Name_Analytic_Attribute_ReturnValue;
@@ -131,15 +168,18 @@ void UFortTwitchLogin_C::Fire_Logged_In_Analytic(const struct FFortAnalyticsEven
 // Function FortTwitchLogin.FortTwitchLogin_C.Fire SignIn Analytic
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FFortAnalyticsEventAttributeCallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue          ()
-// struct FFortAnalyticsEventAttributeCallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue        ()
+// struct FFortAnalyticsEventAttributeCallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue          (None)
+// struct FFortAnalyticsEventAttributeCallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue        (None)
 // TArray<struct FFortAnalyticsEventAttribute>K2Node_MakeArray_Array                                           (ConstParm, ZeroConstructor, ReferenceParm)
 
 void UFortTwitchLogin_C::Fire_SignIn_Analytic(const struct FFortAnalyticsEventAttribute& CallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue, const struct FFortAnalyticsEventAttribute& CallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue, TArray<struct FFortAnalyticsEventAttribute>& K2Node_MakeArray_Array)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "Fire SignIn Analytic");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_Fire_SignIn_Analytic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "Fire SignIn Analytic");
+
+	Params::UFortTwitchLogin_C_Fire_SignIn_Analytic_Params Parms{};
 
 	Parms.CallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue = CallFunc_Build_Player_Id_Analytic_Attribute_ReturnValue;
 	Parms.CallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue = CallFunc_Build_Player_Name_Analytic_Attribute_ReturnValue;
@@ -167,9 +207,12 @@ void UFortTwitchLogin_C::Fire_SignIn_Analytic(const struct FFortAnalyticsEventAt
 
 void UFortTwitchLogin_C::CenterActiveAuthButton(bool CallFunc_IsVisible_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool Temp_bool_Variable, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, int32 CallFunc_GetActiveWidgetIndex_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UWidget* CallFunc_GetWidgetAtIndex_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, class UWidget* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "CenterActiveAuthButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_CenterActiveAuthButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "CenterActiveAuthButton");
+
+	Params::UFortTwitchLogin_C_CenterActiveAuthButton_Params Parms{};
 
 	Parms.CallFunc_IsVisible_ReturnValue = CallFunc_IsVisible_ReturnValue;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
@@ -194,12 +237,14 @@ void UFortTwitchLogin_C::CenterActiveAuthButton(bool CallFunc_IsVisible_ReturnVa
 
 void UFortTwitchLogin_C::CenterOnWidget()
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "CenterOnWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_CenterOnWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "CenterOnWidget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -212,9 +257,12 @@ void UFortTwitchLogin_C::CenterOnWidget()
 
 void UFortTwitchLogin_C::DialogResult_5994C6BA48DC4D282A16D7BA54384F79(enum class EFortDialogResult Result, class FName ResultName)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "DialogResult_5994C6BA48DC4D282A16D7BA54384F79");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "DialogResult_5994C6BA48DC4D282A16D7BA54384F79");
+
+	Params::UFortTwitchLogin_C_DialogResult_5994C6BA48DC4D282A16D7BA54384F79_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.ResultName = ResultName;
@@ -230,12 +278,14 @@ void UFortTwitchLogin_C::DialogResult_5994C6BA48DC4D282A16D7BA54384F79(enum clas
 
 void UFortTwitchLogin_C::Initialize_Data()
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "Initialize Data");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_Initialize_Data_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "Initialize Data");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -248,9 +298,12 @@ void UFortTwitchLogin_C::Initialize_Data()
 
 void UFortTwitchLogin_C::OnLoginStatusChanged(bool bLoggedIn, const class FString& AccountName)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "OnLoginStatusChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_OnLoginStatusChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "OnLoginStatusChanged");
+
+	Params::UFortTwitchLogin_C_OnLoginStatusChanged_Params Parms{};
 
 	Parms.bLoggedIn = bLoggedIn;
 	Parms.AccountName = AccountName;
@@ -267,9 +320,12 @@ void UFortTwitchLogin_C::OnLoginStatusChanged(bool bLoggedIn, const class FStrin
 
 void UFortTwitchLogin_C::OnLoginFlowModalCreated(class UFortTwitchLoginModalWidget* Modal)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "OnLoginFlowModalCreated");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_OnLoginFlowModalCreated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "OnLoginFlowModalCreated");
+
+	Params::UFortTwitchLogin_C_OnLoginFlowModalCreated_Params Parms{};
 
 	Parms.Modal = Modal;
 
@@ -284,12 +340,14 @@ void UFortTwitchLogin_C::OnLoginFlowModalCreated(class UFortTwitchLoginModalWidg
 
 void UFortTwitchLogin_C::OnCancelButtonClicked()
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "OnCancelButtonClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_OnCancelButtonClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "OnCancelButtonClicked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -301,9 +359,12 @@ void UFortTwitchLogin_C::OnCancelButtonClicked()
 
 void UFortTwitchLogin_C::OnLoginFlowModalDismissed(class UFortTwitchLoginModalWidget* Modal)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "OnLoginFlowModalDismissed");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_OnLoginFlowModalDismissed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "OnLoginFlowModalDismissed");
+
+	Params::UFortTwitchLogin_C_OnLoginFlowModalDismissed_Params Parms{};
 
 	Parms.Modal = Modal;
 
@@ -319,9 +380,12 @@ void UFortTwitchLogin_C::OnLoginFlowModalDismissed(class UFortTwitchLoginModalWi
 
 void UFortTwitchLogin_C::BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature");
+
+	Params::UFortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -337,9 +401,12 @@ void UFortTwitchLogin_C::BndEvt__SignInButton_K2Node_ComponentBoundEvent_209_Com
 
 void UFortTwitchLogin_C::BndEvt__SignOutButton_K2Node_ComponentBoundEvent_229_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "BndEvt__SignOutButton_K2Node_ComponentBoundEvent_229_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_BndEvt__SignOutButton_K2Node_ComponentBoundEvent_229_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "BndEvt__SignOutButton_K2Node_ComponentBoundEvent_229_CommonButtonClicked__DelegateSignature");
+
+	Params::UFortTwitchLogin_C_BndEvt__SignOutButton_K2Node_ComponentBoundEvent_229_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -355,9 +422,12 @@ void UFortTwitchLogin_C::BndEvt__SignOutButton_K2Node_ComponentBoundEvent_229_Co
 
 void UFortTwitchLogin_C::BndEvt__SignInButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "BndEvt__SignInButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "BndEvt__SignInButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature");
+
+	Params::UFortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_46_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -373,9 +443,12 @@ void UFortTwitchLogin_C::BndEvt__SignInButton_K2Node_ComponentBoundEvent_46_Comm
 
 void UFortTwitchLogin_C::BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature");
+
+	Params::UFortTwitchLogin_C_BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -391,9 +464,12 @@ void UFortTwitchLogin_C::BndEvt__SignInButton_K2Node_ComponentBoundEvent_59_Comm
 
 void UFortTwitchLogin_C::BndEvt__SignOutButton_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "BndEvt__SignOutButton_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_BndEvt__SignOutButton_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "BndEvt__SignOutButton_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature");
+
+	Params::UFortTwitchLogin_C_BndEvt__SignOutButton_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -409,9 +485,12 @@ void UFortTwitchLogin_C::BndEvt__SignOutButton_K2Node_ComponentBoundEvent_116_Co
 
 void UFortTwitchLogin_C::BndEvt__SignOutButton_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "BndEvt__SignOutButton_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_BndEvt__SignOutButton_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "BndEvt__SignOutButton_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature");
+
+	Params::UFortTwitchLogin_C_BndEvt__SignOutButton_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -428,9 +507,12 @@ void UFortTwitchLogin_C::BndEvt__SignOutButton_K2Node_ComponentBoundEvent_131_Co
 
 void UFortTwitchLogin_C::OnShowLoginError(class FText& ErrorTitle, class FText& ErrorMessage)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "OnShowLoginError");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_OnShowLoginError_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "OnShowLoginError");
+
+	Params::UFortTwitchLogin_C_OnShowLoginError_Params Parms{};
 
 	Parms.ErrorTitle = ErrorTitle;
 	Parms.ErrorMessage = ErrorMessage;
@@ -463,27 +545,30 @@ void UFortTwitchLogin_C::OnShowLoginError(class FText& ErrorTitle, class FText& 
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_4                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetLinkedTwitchAccountName_ReturnValue                  (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_StrStr_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // bool                               CallFunc_IsVisible_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_3                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_2                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetEmptyText_ReturnValue                                ()
+// class FText                        CallFunc_GetEmptyText_ReturnValue                                (None)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_1                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetEmptyText_ReturnValue_1                              ()
+// class FText                        CallFunc_GetEmptyText_ReturnValue_1                              (None)
 // class FText                        K2Node_Event_ErrorTitle                                          (ConstParm)
 // class FText                        K2Node_Event_ErrorMessage                                        (ConstParm)
 // class UFortAsyncAction_ShowConfirmation_NUI*CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        K2Node_Select_Default                                            (None)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor)
 
 void UFortTwitchLogin_C::ExecuteUbergraph_FortTwitchLogin(int32 EntryPoint, enum class EFortDialogResult K2Node_CustomEvent_Result, class FName K2Node_CustomEvent_ResultName, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FName Temp_name_Variable, enum class EFortDialogResult Temp_byte_Variable, bool K2Node_Event_bLoggedIn, const class FString& K2Node_Event_AccountName, bool CallFunc_IsLoggedIn_ReturnValue, class UFortTwitchLoginModalWidget* K2Node_Event_Modal_1, class UTwitchLoginModalWidget_C* K2Node_DynamicCast_AsTwitch_Login_Modal_Widget, bool K2Node_DynamicCast_bSuccess, class UFortTwitchLoginModalWidget* K2Node_Event_Modal, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UTwitchLoginModalWidget_C* K2Node_DynamicCast_AsTwitch_Login_Modal_Widget_1, bool K2Node_DynamicCast_bSuccess_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_5, class UCommonButton* K2Node_ComponentBoundEvent_Button_4, const class FString& CallFunc_GetLinkedTwitchAccountName_ReturnValue, bool CallFunc_EqualEqual_StrStr_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, bool CallFunc_IsVisible_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class FText CallFunc_GetEmptyText_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, class FText CallFunc_GetEmptyText_ReturnValue_1, class FText K2Node_Event_ErrorTitle, class FText K2Node_Event_ErrorMessage, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue, bool Temp_bool_Variable, class FText K2Node_Select_Default, bool CallFunc_IsValid_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "ExecuteUbergraph_FortTwitchLogin");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_ExecuteUbergraph_FortTwitchLogin_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "ExecuteUbergraph_FortTwitchLogin");
+
+	Params::UFortTwitchLogin_C_ExecuteUbergraph_FortTwitchLogin_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_Result = K2Node_CustomEvent_Result;
@@ -533,9 +618,12 @@ void UFortTwitchLogin_C::ExecuteUbergraph_FortTwitchLogin(int32 EntryPoint, enum
 
 void UFortTwitchLogin_C::OnRequestToolTipChange__DelegateSignature(class FText NewTooltipText)
 {
-	static auto Func = Class->GetFunction("FortTwitchLogin_C", "OnRequestToolTipChange__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTwitchLogin_C_OnRequestToolTipChange__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTwitchLogin_C", "OnRequestToolTipChange__DelegateSignature");
+
+	Params::UFortTwitchLogin_C_OnRequestToolTipChange__DelegateSignature_Params Parms{};
 
 	Parms.NewTooltipText = NewTooltipText;
 
@@ -545,6 +633,4 @@ void UFortTwitchLogin_C::OnRequestToolTipChange__DelegateSignature(class FText N
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

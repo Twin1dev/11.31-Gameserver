@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -21,17 +18,12 @@ public:
 	class UWinterfest_CabinLogo_C*               Winterfest_CabinLogo;                              // 0x318(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWinterfest_Date_Label_C*              Winterfest_Date_Label;                             // 0x320(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("WinterQuestLobbyHeader_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UWinterQuestLobbyHeader_C* GetDefaultObj();
 
 	void HandleLogoIntro(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,62 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class LiveStreamVoice.LiveStreamVoiceChannel
+// (None)
+
+class UClass* ULiveStreamVoiceChannel::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LiveStreamVoiceChannel");
+
+	return Clss;
+}
+
+
+// LiveStreamVoiceChannel LiveStreamVoice.Default__LiveStreamVoiceChannel
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ULiveStreamVoiceChannel* ULiveStreamVoiceChannel::GetDefaultObj()
+{
+	static class ULiveStreamVoiceChannel* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULiveStreamVoiceChannel*>(ULiveStreamVoiceChannel::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class LiveStreamVoice.LiveStreamVoiceSubsystem
+// (None)
+
+class UClass* ULiveStreamVoiceSubsystem::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LiveStreamVoiceSubsystem");
+
+	return Clss;
+}
+
+
+// LiveStreamVoiceSubsystem LiveStreamVoice.Default__LiveStreamVoiceSubsystem
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ULiveStreamVoiceSubsystem* ULiveStreamVoiceSubsystem::GetDefaultObj()
+{
+	static class ULiveStreamVoiceSubsystem* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULiveStreamVoiceSubsystem*>(ULiveStreamVoiceSubsystem::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function LiveStreamVoice.LiveStreamVoiceSubsystem.SetVoiceSettings
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -22,19 +75,22 @@ namespace SDK
 
 void ULiveStreamVoiceSubsystem::SetVoiceSettings(struct FVoiceSettings& InSettings)
 {
-	static auto Func = Class->GetFunction("LiveStreamVoiceSubsystem", "SetVoiceSettings");
+	static class UFunction* Func = nullptr;
 
-	Params::ULiveStreamVoiceSubsystem_SetVoiceSettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LiveStreamVoiceSubsystem", "SetVoiceSettings");
+
+	Params::ULiveStreamVoiceSubsystem_SetVoiceSettings_Params Parms{};
 
 	Parms.InSettings = InSettings;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -47,20 +103,23 @@ void ULiveStreamVoiceSubsystem::SetVoiceSettings(struct FVoiceSettings& InSettin
 
 void ULiveStreamVoiceSubsystem::EnableLocalVoiceProcessing(uint8 LocalUserNum, bool bEnable)
 {
-	static auto Func = Class->GetFunction("LiveStreamVoiceSubsystem", "EnableLocalVoiceProcessing");
+	static class UFunction* Func = nullptr;
 
-	Params::ULiveStreamVoiceSubsystem_EnableLocalVoiceProcessing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LiveStreamVoiceSubsystem", "EnableLocalVoiceProcessing");
+
+	Params::ULiveStreamVoiceSubsystem_EnableLocalVoiceProcessing_Params Parms{};
 
 	Parms.LocalUserNum = LocalUserNum;
 	Parms.bEnable = bEnable;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -71,23 +130,23 @@ void ULiveStreamVoiceSubsystem::EnableLocalVoiceProcessing(uint8 LocalUserNum, b
 
 void ULiveStreamVoiceSubsystem::ClearVoiceSettings()
 {
-	static auto Func = Class->GetFunction("LiveStreamVoiceSubsystem", "ClearVoiceSettings");
+	static class UFunction* Func = nullptr;
 
-	Params::ULiveStreamVoiceSubsystem_ClearVoiceSettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LiveStreamVoiceSubsystem", "ClearVoiceSettings");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
-
-}
+	Func->FunctionFlags = Flgs;
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+}
+
+

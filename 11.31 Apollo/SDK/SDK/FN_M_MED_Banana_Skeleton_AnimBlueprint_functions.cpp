@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass M_MED_Banana_Skeleton_AnimBlueprint.M_MED_Banana_Skeleton_AnimBlueprint_C
+// (None)
+
+class UClass* UM_MED_Banana_Skeleton_AnimBlueprint_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("M_MED_Banana_Skeleton_AnimBlueprint_C");
+
+	return Clss;
+}
+
+
+// M_MED_Banana_Skeleton_AnimBlueprint_C M_MED_Banana_Skeleton_AnimBlueprint.Default__M_MED_Banana_Skeleton_AnimBlueprint_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UM_MED_Banana_Skeleton_AnimBlueprint_C* UM_MED_Banana_Skeleton_AnimBlueprint_C::GetDefaultObj()
+{
+	static class UM_MED_Banana_Skeleton_AnimBlueprint_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UM_MED_Banana_Skeleton_AnimBlueprint_C*>(UM_MED_Banana_Skeleton_AnimBlueprint_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function M_MED_Banana_Skeleton_AnimBlueprint.M_MED_Banana_Skeleton_AnimBlueprint_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void UM_MED_Banana_Skeleton_AnimBlueprint_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("M_MED_Banana_Skeleton_AnimBlueprint_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UM_MED_Banana_Skeleton_AnimBlueprint_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("M_MED_Banana_Skeleton_AnimBlueprint_C", "AnimGraph");
+
+	Params::UM_MED_Banana_Skeleton_AnimBlueprint_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -42,9 +70,12 @@ void UM_MED_Banana_Skeleton_AnimBlueprint_C::AnimGraph(struct FPoseLink* AnimGra
 
 void UM_MED_Banana_Skeleton_AnimBlueprint_C::ExecuteUbergraph_M_MED_Banana_Skeleton_AnimBlueprint(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("M_MED_Banana_Skeleton_AnimBlueprint_C", "ExecuteUbergraph_M_MED_Banana_Skeleton_AnimBlueprint");
+	static class UFunction* Func = nullptr;
 
-	Params::UM_MED_Banana_Skeleton_AnimBlueprint_C_ExecuteUbergraph_M_MED_Banana_Skeleton_AnimBlueprint_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("M_MED_Banana_Skeleton_AnimBlueprint_C", "ExecuteUbergraph_M_MED_Banana_Skeleton_AnimBlueprint");
+
+	Params::UM_MED_Banana_Skeleton_AnimBlueprint_C_ExecuteUbergraph_M_MED_Banana_Skeleton_AnimBlueprint_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -54,6 +85,4 @@ void UM_MED_Banana_Skeleton_AnimBlueprint_C::ExecuteUbergraph_M_MED_Banana_Skele
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -36,7 +33,7 @@ public:
 	bool                                         IncludeName;                                       // 0x2D8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         IncludeDescription;                                // 0x2D9(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         ShouldDisplayAsIgnored;                            // 0x2DA(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5CD7[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6C8D[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                UnlockedDisplayNameTextStyle;                      // 0x2E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                LockedDisplayNameTextStyle;                        // 0x2E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                IgnoredDisplayNameTextStyle;                       // 0x2F0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,25 +41,22 @@ public:
 	class UClass*                                LockedDescriptionTextStyle;                        // 0x300(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                IgnoredDescriptionTextStyle;                       // 0x308(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortBrushSize                    Icon_Size;                                         // 0x310(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5CD8[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6C8E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortHero*                             Host_Hero;                                         // 0x318(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortHeroLoadoutPerkType          Perk_Type_To_Represent;                            // 0x320(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_5CD9[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6C8F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        HoverAlphaValue;                                   // 0x324(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 	float                                        HoverHorizontalOffset;                             // 0x328(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5CDA[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6C90[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateBrush                           LockedIcon;                                        // 0x330(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateBrush                           WarningIcon;                                       // 0x3B8(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         ShouldDisplayWarning;                              // 0x440(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5CDB[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6C91[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortTeamPerkItem*                     Team_Perk;                                         // 0x448(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortAbilityKit*                       Raw_Ability_Kit;                                   // 0x450(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("HeroLoadoutPerkDetailRow_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UHeroLoadoutPerkDetailRow_C* GetDefaultObj();
 
 	void SetRawAbilityKit(class UFortAbilityKit* Ability_Kit);
 	void SetTeamPerk(class UFortTeamPerkItem* Team_Perk);
@@ -88,6 +82,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

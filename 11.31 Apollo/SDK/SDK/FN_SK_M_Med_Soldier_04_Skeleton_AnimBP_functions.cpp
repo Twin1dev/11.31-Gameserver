@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass SK_M_Med_Soldier_04_Skeleton_AnimBP.SK_M_Med_Soldier_04_Skeleton_AnimBP_C
+// (None)
+
+class UClass* USK_M_Med_Soldier_04_Skeleton_AnimBP_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SK_M_Med_Soldier_04_Skeleton_AnimBP_C");
+
+	return Clss;
+}
+
+
+// SK_M_Med_Soldier_04_Skeleton_AnimBP_C SK_M_Med_Soldier_04_Skeleton_AnimBP.Default__SK_M_Med_Soldier_04_Skeleton_AnimBP_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USK_M_Med_Soldier_04_Skeleton_AnimBP_C* USK_M_Med_Soldier_04_Skeleton_AnimBP_C::GetDefaultObj()
+{
+	static class USK_M_Med_Soldier_04_Skeleton_AnimBP_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USK_M_Med_Soldier_04_Skeleton_AnimBP_C*>(USK_M_Med_Soldier_04_Skeleton_AnimBP_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SK_M_Med_Soldier_04_Skeleton_AnimBP.SK_M_Med_Soldier_04_Skeleton_AnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::USK_M_Med_Soldier_04_Skeleton_AnimBP_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "AnimGraph");
+
+	Params::USK_M_Med_Soldier_04_Skeleton_AnimBP_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -41,12 +69,14 @@ void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::AnimGraph(struct FPoseLink* AnimGra
 
 void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::OnBeginCrouching()
 {
-	static auto Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "OnBeginCrouching");
+	static class UFunction* Func = nullptr;
 
-	Params::USK_M_Med_Soldier_04_Skeleton_AnimBP_C_OnBeginCrouching_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "OnBeginCrouching");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,12 +87,14 @@ void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::OnBeginCrouching()
 
 void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::OnEndCrouching()
 {
-	static auto Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "OnEndCrouching");
+	static class UFunction* Func = nullptr;
 
-	Params::USK_M_Med_Soldier_04_Skeleton_AnimBP_C_OnEndCrouching_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "OnEndCrouching");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -74,9 +106,12 @@ void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::OnEndCrouching()
 
 void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static auto Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "BlueprintUpdateAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::USK_M_Med_Soldier_04_Skeleton_AnimBP_C_BlueprintUpdateAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "BlueprintUpdateAnimation");
+
+	Params::USK_M_Med_Soldier_04_Skeleton_AnimBP_C_BlueprintUpdateAnimation_Params Parms{};
 
 	Parms.DeltaTimeX = DeltaTimeX;
 
@@ -93,9 +128,12 @@ void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::BlueprintUpdateAnimation(float Delt
 
 void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP(int32 EntryPoint, float K2Node_Event_DeltaTimeX)
 {
-	static auto Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP");
+	static class UFunction* Func = nullptr;
 
-	Params::USK_M_Med_Soldier_04_Skeleton_AnimBP_C_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP");
+
+	Params::USK_M_Med_Soldier_04_Skeleton_AnimBP_C_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_DeltaTimeX = K2Node_Event_DeltaTimeX;
@@ -106,6 +144,4 @@ void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::ExecuteUbergraph_SK_M_Med_Soldier_0
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass FortNavArea_Danger.FortNavArea_Danger_C
+// (None)
+
+class UClass* UFortNavArea_Danger_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FortNavArea_Danger_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// FortNavArea_Danger_C FortNavArea_Danger.Default__FortNavArea_Danger_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UFortNavArea_Danger_C* UFortNavArea_Danger_C::GetDefaultObj()
+{
+	static class UFortNavArea_Danger_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFortNavArea_Danger_C*>(UFortNavArea_Danger_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

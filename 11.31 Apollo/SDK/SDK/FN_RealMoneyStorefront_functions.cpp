@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass RealMoneyStorefront.RealMoneyStorefront_C
+// (None)
+
+class UClass* URealMoneyStorefront_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("RealMoneyStorefront_C");
+
+	return Clss;
+}
+
+
+// RealMoneyStorefront_C RealMoneyStorefront.Default__RealMoneyStorefront_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class URealMoneyStorefront_C* URealMoneyStorefront_C::GetDefaultObj()
+{
+	static class URealMoneyStorefront_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<URealMoneyStorefront_C*>(URealMoneyStorefront_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function RealMoneyStorefront.RealMoneyStorefront_C.OnSectionEstablished
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void URealMoneyStorefront_C::OnSectionEstablished(bool bEmptySection)
 {
-	static auto Func = Class->GetFunction("RealMoneyStorefront_C", "OnSectionEstablished");
+	static class UFunction* Func = nullptr;
 
-	Params::URealMoneyStorefront_C_OnSectionEstablished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RealMoneyStorefront_C", "OnSectionEstablished");
+
+	Params::URealMoneyStorefront_C_OnSectionEstablished_Params Parms{};
 
 	Parms.bEmptySection = bEmptySection;
 
@@ -43,9 +71,12 @@ void URealMoneyStorefront_C::OnSectionEstablished(bool bEmptySection)
 
 void URealMoneyStorefront_C::ExecuteUbergraph_RealMoneyStorefront(int32 EntryPoint, bool K2Node_Event_bEmptySection, bool Temp_bool_Variable, class UWidget* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("RealMoneyStorefront_C", "ExecuteUbergraph_RealMoneyStorefront");
+	static class UFunction* Func = nullptr;
 
-	Params::URealMoneyStorefront_C_ExecuteUbergraph_RealMoneyStorefront_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RealMoneyStorefront_C", "ExecuteUbergraph_RealMoneyStorefront");
+
+	Params::URealMoneyStorefront_C_ExecuteUbergraph_RealMoneyStorefront_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bEmptySection = K2Node_Event_bEmptySection;
@@ -58,6 +89,4 @@ void URealMoneyStorefront_C::ExecuteUbergraph_RealMoneyStorefront(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

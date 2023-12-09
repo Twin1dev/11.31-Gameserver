@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass PlayerSurveyPanel.PlayerSurveyPanel_C
+// (None)
+
+class UClass* UPlayerSurveyPanel_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerSurveyPanel_C");
+
+	return Clss;
+}
+
+
+// PlayerSurveyPanel_C PlayerSurveyPanel.Default__PlayerSurveyPanel_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerSurveyPanel_C* UPlayerSurveyPanel_C::GetDefaultObj()
+{
+	static class UPlayerSurveyPanel_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerSurveyPanel_C*>(UPlayerSurveyPanel_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PlayerSurveyPanel.PlayerSurveyPanel_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UPlayerSurveyPanel_C::Construct()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanel_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanel_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanel_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UPlayerSurveyPanel_C::Construct()
 
 void UPlayerSurveyPanel_C::BndEvt__PlayerSurveyPanelContents_K2Node_ComponentBoundEvent_0_OnSurveyEnded__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanel_C", "BndEvt__PlayerSurveyPanelContents_K2Node_ComponentBoundEvent_0_OnSurveyEnded__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanel_C_BndEvt__PlayerSurveyPanelContents_K2Node_ComponentBoundEvent_0_OnSurveyEnded__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanel_C", "BndEvt__PlayerSurveyPanelContents_K2Node_ComponentBoundEvent_0_OnSurveyEnded__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UPlayerSurveyPanel_C::BndEvt__PlayerSurveyPanelContents_K2Node_ComponentBou
 
 void UPlayerSurveyPanel_C::IntroDone()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanel_C", "IntroDone");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanel_C_IntroDone_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanel_C", "IntroDone");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void UPlayerSurveyPanel_C::IntroDone()
 
 void UPlayerSurveyPanel_C::OutroDone()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanel_C", "OutroDone");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanel_C_OutroDone_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanel_C", "OutroDone");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -85,12 +118,14 @@ void UPlayerSurveyPanel_C::OutroDone()
 
 void UPlayerSurveyPanel_C::HandleSurveyChanged()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanel_C", "HandleSurveyChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanel_C_HandleSurveyChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanel_C", "HandleSurveyChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -101,12 +136,14 @@ void UPlayerSurveyPanel_C::HandleSurveyChanged()
 
 void UPlayerSurveyPanel_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanel_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanel_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanel_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -117,12 +154,14 @@ void UPlayerSurveyPanel_C::BP_OnActivated()
 
 void UPlayerSurveyPanel_C::StartIntro()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanel_C", "StartIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanel_C_StartIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanel_C", "StartIntro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -143,9 +182,12 @@ void UPlayerSurveyPanel_C::StartIntro()
 
 void UPlayerSurveyPanel_C::ExecuteUbergraph_PlayerSurveyPanel(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool Temp_bool_Variable, float Temp_float_Variable, float Temp_float_Variable_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool CallFunc_IsMobilePlatform_ReturnValue, float K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanel_C", "ExecuteUbergraph_PlayerSurveyPanel");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanel_C", "ExecuteUbergraph_PlayerSurveyPanel");
+
+	Params::UPlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -164,6 +206,4 @@ void UPlayerSurveyPanel_C::ExecuteUbergraph_PlayerSurveyPanel(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

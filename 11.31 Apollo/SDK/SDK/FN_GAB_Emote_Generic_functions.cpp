@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GAB_Emote_Generic.GAB_Emote_Generic_C
+// (None)
+
+class UClass* UGAB_Emote_Generic_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAB_Emote_Generic_C");
+
+	return Clss;
+}
+
+
+// GAB_Emote_Generic_C GAB_Emote_Generic.Default__GAB_Emote_Generic_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAB_Emote_Generic_C* UGAB_Emote_Generic_C::GetDefaultObj()
+{
+	static class UGAB_Emote_Generic_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAB_Emote_Generic_C*>(UGAB_Emote_Generic_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GAB_Emote_Generic.GAB_Emote_Generic_C.IsMontagePlaying
@@ -26,9 +51,12 @@ namespace SDK
 
 void UGAB_Emote_Generic_C::IsMontagePlaying(class UAnimMontage* Montage, bool* Result, class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue, bool CallFunc_Montage_IsPlaying_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAB_Emote_Generic_C", "IsMontagePlaying");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Emote_Generic_C_IsMontagePlaying_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Emote_Generic_C", "IsMontagePlaying");
+
+	Params::UGAB_Emote_Generic_C_IsMontagePlaying_Params Parms{};
 
 	Parms.Montage = Montage;
 	Parms.CallFunc_GetAnimInstance_ReturnValue = CallFunc_GetAnimInstance_ReturnValue;
@@ -55,9 +83,12 @@ void UGAB_Emote_Generic_C::IsMontagePlaying(class UAnimMontage* Montage, bool* R
 
 void UGAB_Emote_Generic_C::ForceStopMontage(class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue, float CallFunc_GetDefaultBlendOutTime_ReturnValue, bool CallFunc_IsValid_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("GAB_Emote_Generic_C", "ForceStopMontage");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Emote_Generic_C_ForceStopMontage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Emote_Generic_C", "ForceStopMontage");
+
+	Params::UGAB_Emote_Generic_C_ForceStopMontage_Params Parms{};
 
 	Parms.CallFunc_GetActivatingPawn_ReturnValue = CallFunc_GetActivatingPawn_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -82,9 +113,12 @@ void UGAB_Emote_Generic_C::ForceStopMontage(class AFortPawn* CallFunc_GetActivat
 
 void UGAB_Emote_Generic_C::SetReticleVisibility(bool ShouldHide, bool CallFunc_IsServer_ReturnValue, class AController* CallFunc_GetInstigatorController_ReturnValue, class AFortPlayerControllerZone* K2Node_DynamicCast_AsFort_Player_Controller_Zone, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GAB_Emote_Generic_C", "SetReticleVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Emote_Generic_C_SetReticleVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Emote_Generic_C", "SetReticleVisibility");
+
+	Params::UGAB_Emote_Generic_C_SetReticleVisibility_Params Parms{};
 
 	Parms.ShouldHide = ShouldHide;
 	Parms.CallFunc_IsServer_ReturnValue = CallFunc_IsServer_ReturnValue;
@@ -108,9 +142,12 @@ void UGAB_Emote_Generic_C::SetReticleVisibility(bool ShouldHide, bool CallFunc_I
 
 TSoftObjectPtr<class UAnimMontage> UGAB_Emote_Generic_C::GetMontageToPlay(class UFortMontageItemDefinitionBase* EmoteAsset, enum class EFortCustomBodyType BodyType, enum class EFortCustomGender Gender, TSoftObjectPtr<class UAnimMontage> CallFunc_GetAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAB_Emote_Generic_C", "GetMontageToPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Emote_Generic_C_GetMontageToPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Emote_Generic_C", "GetMontageToPlay");
+
+	Params::UGAB_Emote_Generic_C_GetMontageToPlay_Params Parms{};
 
 	Parms.EmoteAsset = EmoteAsset;
 	Parms.BodyType = BodyType;
@@ -137,9 +174,12 @@ TSoftObjectPtr<class UAnimMontage> UGAB_Emote_Generic_C::GetMontageToPlay(class 
 
 void UGAB_Emote_Generic_C::GetBodyTypeAndGender(enum class EFortCustomBodyType* BodyType, enum class EFortCustomGender* Gender, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, enum class EFortCustomBodyType CallFunc_GetCharacterBodyType_ReturnValue, enum class EFortCustomGender CallFunc_GetCharacterGender_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAB_Emote_Generic_C", "GetBodyTypeAndGender");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Emote_Generic_C_GetBodyTypeAndGender_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Emote_Generic_C", "GetBodyTypeAndGender");
+
+	Params::UGAB_Emote_Generic_C_GetBodyTypeAndGender_Params Parms{};
 
 	Parms.CallFunc_GetActivatingPawn_ReturnValue = CallFunc_GetActivatingPawn_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Pawn = K2Node_DynamicCast_AsFort_Player_Pawn;
@@ -169,9 +209,12 @@ void UGAB_Emote_Generic_C::GetBodyTypeAndGender(enum class EFortCustomBodyType* 
 
 void UGAB_Emote_Generic_C::K2_OnEndAbility(bool bWasCancelled, class UObject* CallFunc_GetCurrentSourceObject_ReturnValue, class UFortMontageItemDefinitionBase* K2Node_DynamicCast_AsFort_Montage_Item_Definition_Base, bool K2Node_DynamicCast_bSuccess, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAB_Emote_Generic_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Emote_Generic_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Emote_Generic_C", "K2_OnEndAbility");
+
+	Params::UGAB_Emote_Generic_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 	Parms.CallFunc_GetCurrentSourceObject_ReturnValue = CallFunc_GetCurrentSourceObject_ReturnValue;
@@ -192,9 +235,12 @@ void UGAB_Emote_Generic_C::K2_OnEndAbility(bool bWasCancelled, class UObject* Ca
 
 void UGAB_Emote_Generic_C::Completed_DE7019AA4E006879EDD264899869FEE2(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GAB_Emote_Generic_C", "Completed_DE7019AA4E006879EDD264899869FEE2");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Emote_Generic_C_Completed_DE7019AA4E006879EDD264899869FEE2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Emote_Generic_C", "Completed_DE7019AA4E006879EDD264899869FEE2");
+
+	Params::UGAB_Emote_Generic_C_Completed_DE7019AA4E006879EDD264899869FEE2_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -212,9 +258,12 @@ void UGAB_Emote_Generic_C::Completed_DE7019AA4E006879EDD264899869FEE2(struct FGa
 
 void UGAB_Emote_Generic_C::Cancelled_DE7019AA4E006879EDD264899869FEE2(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GAB_Emote_Generic_C", "Cancelled_DE7019AA4E006879EDD264899869FEE2");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Emote_Generic_C_Cancelled_DE7019AA4E006879EDD264899869FEE2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Emote_Generic_C", "Cancelled_DE7019AA4E006879EDD264899869FEE2");
+
+	Params::UGAB_Emote_Generic_C_Cancelled_DE7019AA4E006879EDD264899869FEE2_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -232,9 +281,12 @@ void UGAB_Emote_Generic_C::Cancelled_DE7019AA4E006879EDD264899869FEE2(struct FGa
 
 void UGAB_Emote_Generic_C::Triggered_DE7019AA4E006879EDD264899869FEE2(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GAB_Emote_Generic_C", "Triggered_DE7019AA4E006879EDD264899869FEE2");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Emote_Generic_C_Triggered_DE7019AA4E006879EDD264899869FEE2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Emote_Generic_C", "Triggered_DE7019AA4E006879EDD264899869FEE2");
+
+	Params::UGAB_Emote_Generic_C_Triggered_DE7019AA4E006879EDD264899869FEE2_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -251,9 +303,12 @@ void UGAB_Emote_Generic_C::Triggered_DE7019AA4E006879EDD264899869FEE2(struct FGa
 
 void UGAB_Emote_Generic_C::OnLoaded_D5C2B0D14DEB9277D15965B97800FD1D(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("GAB_Emote_Generic_C", "OnLoaded_D5C2B0D14DEB9277D15965B97800FD1D");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Emote_Generic_C_OnLoaded_D5C2B0D14DEB9277D15965B97800FD1D_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Emote_Generic_C", "OnLoaded_D5C2B0D14DEB9277D15965B97800FD1D");
+
+	Params::UGAB_Emote_Generic_C_OnLoaded_D5C2B0D14DEB9277D15965B97800FD1D_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -269,9 +324,12 @@ void UGAB_Emote_Generic_C::OnLoaded_D5C2B0D14DEB9277D15965B97800FD1D(class UObje
 
 void UGAB_Emote_Generic_C::OnLoaded_DA96775D40CD998BF2FF0085FE5AB126(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("GAB_Emote_Generic_C", "OnLoaded_DA96775D40CD998BF2FF0085FE5AB126");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Emote_Generic_C_OnLoaded_DA96775D40CD998BF2FF0085FE5AB126_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Emote_Generic_C", "OnLoaded_DA96775D40CD998BF2FF0085FE5AB126");
+
+	Params::UGAB_Emote_Generic_C_OnLoaded_DA96775D40CD998BF2FF0085FE5AB126_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -286,12 +344,14 @@ void UGAB_Emote_Generic_C::OnLoaded_DA96775D40CD998BF2FF0085FE5AB126(class UObje
 
 void UGAB_Emote_Generic_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GAB_Emote_Generic_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Emote_Generic_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Emote_Generic_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -302,12 +362,14 @@ void UGAB_Emote_Generic_C::K2_ActivateAbility()
 
 void UGAB_Emote_Generic_C::OnMontageStartedPlaying()
 {
-	static auto Func = Class->GetFunction("GAB_Emote_Generic_C", "OnMontageStartedPlaying");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Emote_Generic_C_OnMontageStartedPlaying_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Emote_Generic_C", "OnMontageStartedPlaying");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -318,12 +380,14 @@ void UGAB_Emote_Generic_C::OnMontageStartedPlaying()
 
 void UGAB_Emote_Generic_C::PlayInitialEmoteMontage()
 {
-	static auto Func = Class->GetFunction("GAB_Emote_Generic_C", "PlayInitialEmoteMontage");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Emote_Generic_C_PlayInitialEmoteMontage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Emote_Generic_C", "PlayInitialEmoteMontage");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -334,12 +398,14 @@ void UGAB_Emote_Generic_C::PlayInitialEmoteMontage()
 
 void UGAB_Emote_Generic_C::NonMontageAsyncAssetsReady()
 {
-	static auto Func = Class->GetFunction("GAB_Emote_Generic_C", "NonMontageAsyncAssetsReady");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Emote_Generic_C_NonMontageAsyncAssetsReady_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Emote_Generic_C", "NonMontageAsyncAssetsReady");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -373,7 +439,7 @@ void UGAB_Emote_Generic_C::NonMontageAsyncAssetsReady()
 // bool                               CallFunc_HasCosmeticDrivenMotageSection_ReturnValue              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_ShouldPlayRandomSectionByName_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortGameplayAbilityMontageSectionToPlayK2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable                                             ()
+// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable                                             (None)
 // struct FGameplayTag                Temp_struct_Variable_1                                           (NoDestructor, HasGetValueTypeHash)
 // enum class EFortCustomBodyType     CallFunc_GetBodyTypeAndGender_BodyType                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortCustomGender       CallFunc_GetBodyTypeAndGender_Gender                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -416,9 +482,12 @@ void UGAB_Emote_Generic_C::NonMontageAsyncAssetsReady()
 
 void UGAB_Emote_Generic_C::ExecuteUbergraph_GAB_Emote_Generic(int32 EntryPoint, bool Temp_bool_Variable, enum class EFortGameplayAbilityMontageSectionToPlay Temp_byte_Variable, enum class EFortGameplayAbilityMontageSectionToPlay Temp_byte_Variable_1, class UObject* K2Node_CustomEvent_Loaded, class UObject* Temp_object_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, class UObject* Temp_object_Variable_1, class UAnimMontage* K2Node_DynamicCast_AsAnim_Montage, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsMontagePlaying_Result, bool CallFunc_IsMontagePlaying_Result_1, class UObject* K2Node_CustomEvent_Loaded_1, class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue, bool CallFunc_IsValid_ReturnValue, float CallFunc_GetDefaultBlendOutTime_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UObject* CallFunc_GetCurrentSourceObject_ReturnValue, class UFortMontageItemDefinitionBase* K2Node_DynamicCast_AsFort_Montage_Item_Definition_Base, bool K2Node_DynamicCast_bSuccess_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_HasCosmeticDrivenMotageSection_ReturnValue, bool CallFunc_ShouldPlayRandomSectionByName_ReturnValue, enum class EFortGameplayAbilityMontageSectionToPlay K2Node_Select_Default, const struct FGameplayAbilityTargetDataHandle& Temp_struct_Variable, const struct FGameplayTag& Temp_struct_Variable_1, enum class EFortCustomBodyType CallFunc_GetBodyTypeAndGender_BodyType, enum class EFortCustomGender CallFunc_GetBodyTypeAndGender_Gender, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag, TSoftObjectPtr<class UAnimMontage> CallFunc_GetMontageToPlay_ReturnValue, bool CallFunc_IsAssetNull_ReturnValue, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue, int32 Temp_int_Variable, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_EqualEqual_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue_1, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_2, class UObject* CallFunc_GetCurrentSourceObject_ReturnValue_1, class UFortMontageItemDefinitionBase* K2Node_DynamicCast_AsFort_Montage_Item_Definition_Base_1, bool K2Node_DynamicCast_bSuccess_3, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_1, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, bool CallFunc_ShouldHolsterWeapon_ReturnValue, class FName CallFunc_PickRandomSectionByName_ReturnValue, class FName CallFunc_PickCosmeticDrivenSectionByName_ReturnValue, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue_2, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess_4, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_2, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_2, TArray<struct FSoftObjectPath>& CallFunc_GatherVariantAssets_VariantAssetsNeeded, const struct FSoftObjectPath& CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, TSoftObjectPtr<class UObject> CallFunc_Conv_SoftObjPathToSoftObjRef_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, bool CallFunc_Conv_IntToBool_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, int32 CallFunc_Subtract_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAB_Emote_Generic_C", "ExecuteUbergraph_GAB_Emote_Generic");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_Emote_Generic_C_ExecuteUbergraph_GAB_Emote_Generic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_Emote_Generic_C", "ExecuteUbergraph_GAB_Emote_Generic");
+
+	Params::UGAB_Emote_Generic_C_ExecuteUbergraph_GAB_Emote_Generic_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -493,6 +562,4 @@ void UGAB_Emote_Generic_C::ExecuteUbergraph_GAB_Emote_Generic(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

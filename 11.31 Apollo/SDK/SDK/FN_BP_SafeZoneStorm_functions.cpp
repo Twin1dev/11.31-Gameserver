@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_SafeZoneStorm.BP_SafeZoneStorm_C
+// (Actor)
+
+class UClass* ABP_SafeZoneStorm_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_SafeZoneStorm_C");
+
+	return Clss;
+}
+
+
+// BP_SafeZoneStorm_C BP_SafeZoneStorm.Default__BP_SafeZoneStorm_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_SafeZoneStorm_C* ABP_SafeZoneStorm_C::GetDefaultObj()
+{
+	static class ABP_SafeZoneStorm_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_SafeZoneStorm_C*>(ABP_SafeZoneStorm_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_SafeZoneStorm.BP_SafeZoneStorm_C.UserConstructionScript
@@ -24,9 +49,12 @@ namespace SDK
 
 void ABP_SafeZoneStorm_C::UserConstructionScript(const struct FHitResult& CallFunc_K2_SetActorLocation_SweepHitResult, bool CallFunc_K2_SetActorLocation_ReturnValue, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_SafeZoneStorm_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SafeZoneStorm_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SafeZoneStorm_C", "UserConstructionScript");
+
+	Params::ABP_SafeZoneStorm_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_K2_SetActorLocation_SweepHitResult = CallFunc_K2_SetActorLocation_SweepHitResult;
 	Parms.CallFunc_K2_SetActorLocation_ReturnValue = CallFunc_K2_SetActorLocation_ReturnValue;
@@ -43,12 +71,14 @@ void ABP_SafeZoneStorm_C::UserConstructionScript(const struct FHitResult& CallFu
 
 void ABP_SafeZoneStorm_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_SafeZoneStorm_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SafeZoneStorm_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SafeZoneStorm_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -60,9 +90,12 @@ void ABP_SafeZoneStorm_C::ReceiveBeginPlay()
 
 void ABP_SafeZoneStorm_C::MobileClouds(bool Mobile)
 {
-	static auto Func = Class->GetFunction("BP_SafeZoneStorm_C", "MobileClouds");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SafeZoneStorm_C_MobileClouds_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SafeZoneStorm_C", "MobileClouds");
+
+	Params::ABP_SafeZoneStorm_C_MobileClouds_Params Parms{};
 
 	Parms.Mobile = Mobile;
 
@@ -78,9 +111,12 @@ void ABP_SafeZoneStorm_C::MobileClouds(bool Mobile)
 
 void ABP_SafeZoneStorm_C::ShowClouds(float Amount)
 {
-	static auto Func = Class->GetFunction("BP_SafeZoneStorm_C", "ShowClouds");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SafeZoneStorm_C_ShowClouds_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SafeZoneStorm_C", "ShowClouds");
+
+	Params::ABP_SafeZoneStorm_C_ShowClouds_Params Parms{};
 
 	Parms.Amount = Amount;
 
@@ -96,9 +132,12 @@ void ABP_SafeZoneStorm_C::ShowClouds(float Amount)
 
 void ABP_SafeZoneStorm_C::ShowStormScreenEffect(bool Show)
 {
-	static auto Func = Class->GetFunction("BP_SafeZoneStorm_C", "ShowStormScreenEffect");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SafeZoneStorm_C_ShowStormScreenEffect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SafeZoneStorm_C", "ShowStormScreenEffect");
+
+	Params::ABP_SafeZoneStorm_C_ShowStormScreenEffect_Params Parms{};
 
 	Parms.Show = Show;
 
@@ -119,9 +158,12 @@ void ABP_SafeZoneStorm_C::ShowStormScreenEffect(bool Show)
 
 void ABP_SafeZoneStorm_C::ExecuteUbergraph_BP_SafeZoneStorm(int32 EntryPoint, bool CallFunc_IsMobilePlatform_ReturnValue, bool K2Node_CustomEvent_Mobile, float K2Node_CustomEvent_Amount, bool K2Node_CustomEvent_Show, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_SafeZoneStorm_C", "ExecuteUbergraph_BP_SafeZoneStorm");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SafeZoneStorm_C_ExecuteUbergraph_BP_SafeZoneStorm_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SafeZoneStorm_C", "ExecuteUbergraph_BP_SafeZoneStorm");
+
+	Params::ABP_SafeZoneStorm_C_ExecuteUbergraph_BP_SafeZoneStorm_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsMobilePlatform_ReturnValue = CallFunc_IsMobilePlatform_ReturnValue;
@@ -136,6 +178,4 @@ void ABP_SafeZoneStorm_C::ExecuteUbergraph_BP_SafeZoneStorm(int32 EntryPoint, bo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

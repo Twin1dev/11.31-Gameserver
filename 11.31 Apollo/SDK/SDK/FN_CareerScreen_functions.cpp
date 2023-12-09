@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass CareerScreen.CareerScreen_C
+// (None)
+
+class UClass* UCareerScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CareerScreen_C");
+
+	return Clss;
+}
+
+
+// CareerScreen_C CareerScreen.Default__CareerScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCareerScreen_C* UCareerScreen_C::GetDefaultObj()
+{
+	static class UCareerScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCareerScreen_C*>(UCareerScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function CareerScreen.CareerScreen_C.ReplayCinematic
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UCareerScreen_C::ReplayCinematic(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("CareerScreen_C", "ReplayCinematic");
+	static class UFunction* Func = nullptr;
 
-	Params::UCareerScreen_C_ReplayCinematic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CareerScreen_C", "ReplayCinematic");
+
+	Params::UCareerScreen_C_ReplayCinematic_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -47,9 +75,12 @@ void UCareerScreen_C::ReplayCinematic(bool* PassThrough)
 
 void UCareerScreen_C::PlayCinematic(class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_UseElectraForReplayCinematic_ReturnValue, class UActivatableMovieWidget_Monolithic_C* CallFunc_Create_ReturnValue, bool CallFunc_LoadStreamingVideo_NoAutoPlay, class UFortStreamMediaSource* CallFunc_LoadStreamingVideo_MediaSource)
 {
-	static auto Func = Class->GetFunction("CareerScreen_C", "PlayCinematic");
+	static class UFunction* Func = nullptr;
 
-	Params::UCareerScreen_C_PlayCinematic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CareerScreen_C", "PlayCinematic");
+
+	Params::UCareerScreen_C_PlayCinematic_Params Parms{};
 
 	Parms.CallFunc_GetRuntimeOptions_ReturnValue = CallFunc_GetRuntimeOptions_ReturnValue;
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
@@ -71,9 +102,12 @@ void UCareerScreen_C::PlayCinematic(class UFortRuntimeOptions* CallFunc_GetRunti
 
 void UCareerScreen_C::ShowFeats(bool bShowFeats, bool bHasCompletedFeats)
 {
-	static auto Func = Class->GetFunction("CareerScreen_C", "ShowFeats");
+	static class UFunction* Func = nullptr;
 
-	Params::UCareerScreen_C_ShowFeats_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CareerScreen_C", "ShowFeats");
+
+	Params::UCareerScreen_C_ShowFeats_Params Parms{};
 
 	Parms.bShowFeats = bShowFeats;
 	Parms.bHasCompletedFeats = bHasCompletedFeats;
@@ -89,12 +123,14 @@ void UCareerScreen_C::ShowFeats(bool bShowFeats, bool bHasCompletedFeats)
 
 void UCareerScreen_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("CareerScreen_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UCareerScreen_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CareerScreen_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,12 +141,14 @@ void UCareerScreen_C::BP_OnActivated()
 
 void UCareerScreen_C::OnInitialized()
 {
-	static auto Func = Class->GetFunction("CareerScreen_C", "OnInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::UCareerScreen_C_OnInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CareerScreen_C", "OnInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -146,9 +184,12 @@ void UCareerScreen_C::OnInitialized()
 
 void UCareerScreen_C::ExecuteUbergraph_CareerScreen(int32 EntryPoint, bool Temp_bool_Variable, int32 Temp_int_Variable, class UFortFrontEndContext* CallFunc_GetLocalPlayerSubsystem_ReturnValue, bool Temp_bool_Variable_1, int32 Temp_int_Variable_1, int32 Temp_int_Variable_2, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool K2Node_Event_bShowFeats, bool K2Node_Event_bHasCompletedFeats, int32 K2Node_Select_Default, int32 Temp_int_Variable_3, int32 K2Node_Select_Default_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, TArray<class AVaultWorld_C*>& CallFunc_GetAllActorsOfClass_OutActors, int32 CallFunc_Array_Length_ReturnValue, class AVaultWorld_C* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, class AVaultRotator_C* CallFunc_GetVaultRotator_VaultRotator, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_ActorHasTag_ReturnValue)
 {
-	static auto Func = Class->GetFunction("CareerScreen_C", "ExecuteUbergraph_CareerScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UCareerScreen_C_ExecuteUbergraph_CareerScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CareerScreen_C", "ExecuteUbergraph_CareerScreen");
+
+	Params::UCareerScreen_C_ExecuteUbergraph_CareerScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -182,6 +223,4 @@ void UCareerScreen_C::ExecuteUbergraph_CareerScreen(int32 EntryPoint, bool Temp_
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

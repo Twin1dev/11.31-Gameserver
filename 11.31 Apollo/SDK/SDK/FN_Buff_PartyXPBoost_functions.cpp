@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Buff_PartyXPBoost.Buff_PartyXPBoost_C
+// (None)
+
+class UClass* UBuff_PartyXPBoost_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Buff_PartyXPBoost_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Buff_PartyXPBoost_C Buff_PartyXPBoost.Default__Buff_PartyXPBoost_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBuff_PartyXPBoost_C* UBuff_PartyXPBoost_C::GetDefaultObj()
+{
+	static class UBuff_PartyXPBoost_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBuff_PartyXPBoost_C*>(UBuff_PartyXPBoost_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

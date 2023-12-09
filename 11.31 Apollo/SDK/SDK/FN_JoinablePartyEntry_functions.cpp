@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass JoinablePartyEntry.JoinablePartyEntry_C
+// (None)
+
+class UClass* UJoinablePartyEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("JoinablePartyEntry_C");
+
+	return Clss;
+}
+
+
+// JoinablePartyEntry_C JoinablePartyEntry.Default__JoinablePartyEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UJoinablePartyEntry_C* UJoinablePartyEntry_C::GetDefaultObj()
+{
+	static class UJoinablePartyEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UJoinablePartyEntry_C*>(UJoinablePartyEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function JoinablePartyEntry.JoinablePartyEntry_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UJoinablePartyEntry_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("JoinablePartyEntry_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UJoinablePartyEntry_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("JoinablePartyEntry_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UJoinablePartyEntry_C::BP_OnUnhovered()
 
 void UJoinablePartyEntry_C::BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen)
 {
-	static auto Func = Class->GetFunction("JoinablePartyEntry_C", "BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UJoinablePartyEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("JoinablePartyEntry_C", "BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
+
+	Params::UJoinablePartyEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.bIsOpen = bIsOpen;
 
@@ -55,12 +85,14 @@ void UJoinablePartyEntry_C::BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEven
 
 void UJoinablePartyEntry_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("JoinablePartyEntry_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UJoinablePartyEntry_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("JoinablePartyEntry_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -72,9 +104,12 @@ void UJoinablePartyEntry_C::BP_OnHovered()
 
 void UJoinablePartyEntry_C::OnInviteStatusUpdated(bool bIsInvited)
 {
-	static auto Func = Class->GetFunction("JoinablePartyEntry_C", "OnInviteStatusUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UJoinablePartyEntry_C_OnInviteStatusUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("JoinablePartyEntry_C", "OnInviteStatusUpdated");
+
+	Params::UJoinablePartyEntry_C_OnInviteStatusUpdated_Params Parms{};
 
 	Parms.bIsInvited = bIsInvited;
 
@@ -97,9 +132,12 @@ void UJoinablePartyEntry_C::OnInviteStatusUpdated(bool bIsInvited)
 
 void UJoinablePartyEntry_C::ExecuteUbergraph_JoinablePartyEntry(int32 EntryPoint, bool K2Node_ComponentBoundEvent_bIsOpen, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, bool CallFunc_IsAnimationPlaying_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, bool K2Node_Event_bIsInvited)
 {
-	static auto Func = Class->GetFunction("JoinablePartyEntry_C", "ExecuteUbergraph_JoinablePartyEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UJoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("JoinablePartyEntry_C", "ExecuteUbergraph_JoinablePartyEntry");
+
+	Params::UJoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_bIsOpen = K2Node_ComponentBoundEvent_bIsOpen;
@@ -116,6 +154,4 @@ void UJoinablePartyEntry_C::ExecuteUbergraph_JoinablePartyEntry(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_Prj_Ranged_Rocket_Athena.B_Prj_Ranged_Rocket_Athena_C
+// (Actor)
+
+class UClass* AB_Prj_Ranged_Rocket_Athena_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Prj_Ranged_Rocket_Athena_C");
+
+	return Clss;
+}
+
+
+// B_Prj_Ranged_Rocket_Athena_C B_Prj_Ranged_Rocket_Athena.Default__B_Prj_Ranged_Rocket_Athena_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Prj_Ranged_Rocket_Athena_C* AB_Prj_Ranged_Rocket_Athena_C::GetDefaultObj()
+{
+	static class AB_Prj_Ranged_Rocket_Athena_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Prj_Ranged_Rocket_Athena_C*>(AB_Prj_Ranged_Rocket_Athena_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_Prj_Ranged_Rocket_Athena.B_Prj_Ranged_Rocket_Athena_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void AB_Prj_Ranged_Rocket_Athena_C::UserConstructionScript()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_Rocket_Athena_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "UserConstructionScript");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AB_Prj_Ranged_Rocket_Athena_C::UserConstructionScript()
 
 void AB_Prj_Ranged_Rocket_Athena_C::PPFader__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "PPFader__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_Rocket_Athena_C_PPFader__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "PPFader__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void AB_Prj_Ranged_Rocket_Athena_C::PPFader__FinishedFunc()
 
 void AB_Prj_Ranged_Rocket_Athena_C::PPFader__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "PPFader__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_Rocket_Athena_C_PPFader__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "PPFader__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void AB_Prj_Ranged_Rocket_Athena_C::PPFader__UpdateFunc()
 
 void AB_Prj_Ranged_Rocket_Athena_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_Rocket_Athena_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -85,12 +118,14 @@ void AB_Prj_Ranged_Rocket_Athena_C::ReceiveBeginPlay()
 
 void AB_Prj_Ranged_Rocket_Athena_C::FuseTimerMax()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "FuseTimerMax");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_Rocket_Athena_C_FuseTimerMax_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "FuseTimerMax");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -103,9 +138,12 @@ void AB_Prj_Ranged_Rocket_Athena_C::FuseTimerMax()
 
 void AB_Prj_Ranged_Rocket_Athena_C::OnExploded(TArray<class AActor*>& HitActors, TArray<struct FHitResult>& HitResults)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "OnExploded");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_Rocket_Athena_C_OnExploded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "OnExploded");
+
+	Params::AB_Prj_Ranged_Rocket_Athena_C_OnExploded_Params Parms{};
 
 	Parms.HitActors = HitActors;
 	Parms.HitResults = HitResults;
@@ -122,9 +160,12 @@ void AB_Prj_Ranged_Rocket_Athena_C::OnExploded(TArray<class AActor*>& HitActors,
 
 void AB_Prj_Ranged_Rocket_Athena_C::OnStop(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "OnStop");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_Rocket_Athena_C_OnStop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "OnStop");
+
+	Params::AB_Prj_Ranged_Rocket_Athena_C_OnStop_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -140,9 +181,12 @@ void AB_Prj_Ranged_Rocket_Athena_C::OnStop(struct FHitResult& Hit)
 
 void AB_Prj_Ranged_Rocket_Athena_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_Rocket_Athena_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "ReceiveTick");
+
+	Params::AB_Prj_Ranged_Rocket_Athena_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -158,9 +202,12 @@ void AB_Prj_Ranged_Rocket_Athena_C::ReceiveTick(float DeltaSeconds)
 
 void AB_Prj_Ranged_Rocket_Athena_C::OnBounce(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "OnBounce");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_Rocket_Athena_C_OnBounce_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "OnBounce");
+
+	Params::AB_Prj_Ranged_Rocket_Athena_C_OnBounce_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -175,12 +222,14 @@ void AB_Prj_Ranged_Rocket_Athena_C::OnBounce(struct FHitResult& Hit)
 
 void AB_Prj_Ranged_Rocket_Athena_C::ReceiveDestroyed()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "ReceiveDestroyed");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_Rocket_Athena_C_ReceiveDestroyed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "ReceiveDestroyed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -195,9 +244,12 @@ void AB_Prj_Ranged_Rocket_Athena_C::ReceiveDestroyed()
 
 void AB_Prj_Ranged_Rocket_Athena_C::OnTouched(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, struct FHitResult& HitResult, bool bIsOverlap)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "OnTouched");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_Rocket_Athena_C_OnTouched_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "OnTouched");
+
+	Params::AB_Prj_Ranged_Rocket_Athena_C_OnTouched_Params Parms{};
 
 	Parms.OtherActor = OtherActor;
 	Parms.OtherComp = OtherComp;
@@ -215,12 +267,14 @@ void AB_Prj_Ranged_Rocket_Athena_C::OnTouched(class AActor* OtherActor, class UP
 
 void AB_Prj_Ranged_Rocket_Athena_C::RocketWaterDelay()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "RocketWaterDelay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_Rocket_Athena_C_RocketWaterDelay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "RocketWaterDelay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -311,9 +365,12 @@ void AB_Prj_Ranged_Rocket_Athena_C::RocketWaterDelay()
 
 void AB_Prj_Ranged_Rocket_Athena_C::ExecuteUbergraph_B_Prj_Ranged_Rocket_Athena(int32 EntryPoint, bool CallFunc_IsBeingKilled_ReturnValue, TArray<class AActor*>& K2Node_Event_HitActors, TArray<struct FHitResult>& K2Node_Event_HitResults, const struct FHitResult& K2Node_Event_Hit_1, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, const struct FRotator& CallFunc_MakeRotFromZ_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, float K2Node_Event_DeltaSeconds, const struct FHitResult& K2Node_Event_Hit, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FHitResult& CallFunc_K2_AddLocalRotation_SweepHitResult, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsActive_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class APlayerCameraManager* CallFunc_GetPlayerCameraManager_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, float CallFunc_VSize_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_2, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue, class AActor* K2Node_Event_OtherActor, class UPrimitiveComponent* K2Node_Event_OtherComp, const struct FHitResult& K2Node_Event_HitResult, bool K2Node_Event_bIsOverlap, const struct FRotator& CallFunc_MakeRotator_ReturnValue_1, bool CallFunc_BreakHitResult_bBlockingHit_1, bool CallFunc_BreakHitResult_bInitialOverlap_1, float CallFunc_BreakHitResult_Time_1, float CallFunc_BreakHitResult_Distance_1, const struct FVector& CallFunc_BreakHitResult_Location_1, const struct FVector& CallFunc_BreakHitResult_ImpactPoint_1, const struct FVector& CallFunc_BreakHitResult_Normal_1, const struct FVector& CallFunc_BreakHitResult_ImpactNormal_1, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat_1, class AActor* CallFunc_BreakHitResult_HitActor_1, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent_1, class FName CallFunc_BreakHitResult_HitBoneName_1, int32 CallFunc_BreakHitResult_HitItem_1, int32 CallFunc_BreakHitResult_FaceIndex_1, const struct FVector& CallFunc_BreakHitResult_TraceStart_1, const struct FVector& CallFunc_BreakHitResult_TraceEnd_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, bool CallFunc_ComponentHasTag_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_3, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_1, bool CallFunc_IsInWater_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsBeingKilled_ReturnValue_1, bool CallFunc_IsInWater_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "ExecuteUbergraph_B_Prj_Ranged_Rocket_Athena");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ranged_Rocket_Athena_C_ExecuteUbergraph_B_Prj_Ranged_Rocket_Athena_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ranged_Rocket_Athena_C", "ExecuteUbergraph_B_Prj_Ranged_Rocket_Athena");
+
+	Params::AB_Prj_Ranged_Rocket_Athena_C_ExecuteUbergraph_B_Prj_Ranged_Rocket_Athena_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsBeingKilled_ReturnValue = CallFunc_IsBeingKilled_ReturnValue;
@@ -402,6 +459,4 @@ void AB_Prj_Ranged_Rocket_Athena_C::ExecuteUbergraph_B_Prj_Ranged_Rocket_Athena(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

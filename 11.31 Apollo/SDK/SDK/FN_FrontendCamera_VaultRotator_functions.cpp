@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass FrontendCamera_VaultRotator.FrontendCamera_VaultRotator_C
+// (Actor)
+
+class UClass* AFrontendCamera_VaultRotator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FrontendCamera_VaultRotator_C");
+
+	return Clss;
+}
+
+
+// FrontendCamera_VaultRotator_C FrontendCamera_VaultRotator.Default__FrontendCamera_VaultRotator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AFrontendCamera_VaultRotator_C* AFrontendCamera_VaultRotator_C::GetDefaultObj()
+{
+	static class AFrontendCamera_VaultRotator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AFrontendCamera_VaultRotator_C*>(AFrontendCamera_VaultRotator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function FrontendCamera_VaultRotator.FrontendCamera_VaultRotator_C.SetVaultRotatorLighting
@@ -32,9 +57,12 @@ namespace SDK
 
 void AFrontendCamera_VaultRotator_C::SetVaultRotatorLighting(class FName ItemRotatorTag, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, TArray<class AVaultWorld_C*>& CallFunc_GetAllActorsOfClass_OutActors, class AVaultWorld_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class AVaultRotator_C* CallFunc_GetVaultRotator_VaultRotator, bool CallFunc_Less_IntInt_ReturnValue, const class FString& CallFunc_GetDisplayName_ReturnValue, bool CallFunc_ActorHasTag_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FrontendCamera_VaultRotator_C", "SetVaultRotatorLighting");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontendCamera_VaultRotator_C_SetVaultRotatorLighting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontendCamera_VaultRotator_C", "SetVaultRotatorLighting");
+
+	Params::AFrontendCamera_VaultRotator_C_SetVaultRotatorLighting_Params Parms{};
 
 	Parms.ItemRotatorTag = ItemRotatorTag;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -59,12 +87,14 @@ void AFrontendCamera_VaultRotator_C::SetVaultRotatorLighting(class FName ItemRot
 
 void AFrontendCamera_VaultRotator_C::OnActivated()
 {
-	static auto Func = Class->GetFunction("FrontendCamera_VaultRotator_C", "OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontendCamera_VaultRotator_C_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontendCamera_VaultRotator_C", "OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -75,12 +105,14 @@ void AFrontendCamera_VaultRotator_C::OnActivated()
 
 void AFrontendCamera_VaultRotator_C::OnDeactivated()
 {
-	static auto Func = Class->GetFunction("FrontendCamera_VaultRotator_C", "OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontendCamera_VaultRotator_C_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontendCamera_VaultRotator_C", "OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -100,9 +132,12 @@ void AFrontendCamera_VaultRotator_C::OnDeactivated()
 
 void AFrontendCamera_VaultRotator_C::ExecuteUbergraph_FrontendCamera_VaultRotator(int32 EntryPoint, int32 Temp_int_Array_Index_Variable, class AFortTimeOfDayManager* CallFunc_GetTimeOfDayManagerFromContext_ReturnValue, TArray<class ATVPostProcessBP_C*>& CallFunc_GetAllActorsOfClass_OutActors, class ATVPostProcessBP_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FrontendCamera_VaultRotator_C", "ExecuteUbergraph_FrontendCamera_VaultRotator");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontendCamera_VaultRotator_C_ExecuteUbergraph_FrontendCamera_VaultRotator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FrontendCamera_VaultRotator_C", "ExecuteUbergraph_FrontendCamera_VaultRotator");
+
+	Params::AFrontendCamera_VaultRotator_C_ExecuteUbergraph_FrontendCamera_VaultRotator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -120,6 +155,4 @@ void AFrontendCamera_VaultRotator_C::ExecuteUbergraph_FrontendCamera_VaultRotato
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

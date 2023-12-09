@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass AthenaMinimapTeamIndicators.AthenaMinimapTeamIndicators_C
+// (None)
+
+class UClass* UAthenaMinimapTeamIndicators_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaMinimapTeamIndicators_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// AthenaMinimapTeamIndicators_C AthenaMinimapTeamIndicators.Default__AthenaMinimapTeamIndicators_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaMinimapTeamIndicators_C* UAthenaMinimapTeamIndicators_C::GetDefaultObj()
+{
+	static class UAthenaMinimapTeamIndicators_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaMinimapTeamIndicators_C*>(UAthenaMinimapTeamIndicators_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C
+// (Actor)
+
+class UClass* AFort_Entry_Music_Controller_BP_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Fort_Entry_Music_Controller_BP_C");
+
+	return Clss;
+}
+
+
+// Fort_Entry_Music_Controller_BP_C Fort_Entry_Music_Controller_BP.Default__Fort_Entry_Music_Controller_BP_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AFort_Entry_Music_Controller_BP_C* AFort_Entry_Music_Controller_BP_C::GetDefaultObj()
+{
+	static class AFort_Entry_Music_Controller_BP_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AFort_Entry_Music_Controller_BP_C*>(AFort_Entry_Music_Controller_BP_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Fort_Entry_Music_Controller_BP.Fort_Entry_Music_Controller_BP_C.Change Music
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void AFort_Entry_Music_Controller_BP_C::Change_Music(class USoundBase* New_Music)
 {
-	static auto Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "Change Music");
+	static class UFunction* Func = nullptr;
 
-	Params::AFort_Entry_Music_Controller_BP_C_Change_Music_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "Change Music");
+
+	Params::AFort_Entry_Music_Controller_BP_C_Change_Music_Params Parms{};
 
 	Parms.New_Music = New_Music;
 
@@ -39,12 +67,14 @@ void AFort_Entry_Music_Controller_BP_C::Change_Music(class USoundBase* New_Music
 
 void AFort_Entry_Music_Controller_BP_C::ListenToMusicPacks()
 {
-	static auto Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "ListenToMusicPacks");
+	static class UFunction* Func = nullptr;
 
-	Params::AFort_Entry_Music_Controller_BP_C_ListenToMusicPacks_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "ListenToMusicPacks");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +86,12 @@ void AFort_Entry_Music_Controller_BP_C::ListenToMusicPacks()
 
 void AFort_Entry_Music_Controller_BP_C::OnMusicPackChanged(class UAthenaMusicPackItemDefinition* NewMusicPack)
 {
-	static auto Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "OnMusicPackChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::AFort_Entry_Music_Controller_BP_C_OnMusicPackChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "OnMusicPackChanged");
+
+	Params::AFort_Entry_Music_Controller_BP_C_OnMusicPackChanged_Params Parms{};
 
 	Parms.NewMusicPack = NewMusicPack;
 
@@ -75,9 +108,12 @@ void AFort_Entry_Music_Controller_BP_C::OnMusicPackChanged(class UAthenaMusicPac
 
 void AFort_Entry_Music_Controller_BP_C::Lobby_Music_Override(bool Lobby_Music_Activate, class USoundBase* New_Music)
 {
-	static auto Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "Lobby Music Override");
+	static class UFunction* Func = nullptr;
 
-	Params::AFort_Entry_Music_Controller_BP_C_Lobby_Music_Override_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "Lobby Music Override");
+
+	Params::AFort_Entry_Music_Controller_BP_C_Lobby_Music_Override_Params Parms{};
 
 	Parms.Lobby_Music_Activate = Lobby_Music_Activate;
 	Parms.New_Music = New_Music;
@@ -93,12 +129,14 @@ void AFort_Entry_Music_Controller_BP_C::Lobby_Music_Override(bool Lobby_Music_Ac
 
 void AFort_Entry_Music_Controller_BP_C::MakeNextMusicPackStartFromBeginning()
 {
-	static auto Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "MakeNextMusicPackStartFromBeginning");
+	static class UFunction* Func = nullptr;
 
-	Params::AFort_Entry_Music_Controller_BP_C_MakeNextMusicPackStartFromBeginning_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "MakeNextMusicPackStartFromBeginning");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -110,9 +148,12 @@ void AFort_Entry_Music_Controller_BP_C::MakeNextMusicPackStartFromBeginning()
 
 void AFort_Entry_Music_Controller_BP_C::DelayedPlayMusicPack(class UAthenaMusicPackItemDefinition* MusicPackToPlayLater)
 {
-	static auto Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "DelayedPlayMusicPack");
+	static class UFunction* Func = nullptr;
 
-	Params::AFort_Entry_Music_Controller_BP_C_DelayedPlayMusicPack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "DelayedPlayMusicPack");
+
+	Params::AFort_Entry_Music_Controller_BP_C_DelayedPlayMusicPack_Params Parms{};
 
 	Parms.MusicPackToPlayLater = MusicPackToPlayLater;
 
@@ -127,12 +168,14 @@ void AFort_Entry_Music_Controller_BP_C::DelayedPlayMusicPack(class UAthenaMusicP
 
 void AFort_Entry_Music_Controller_BP_C::ClearDelayedPlayMusicPack()
 {
-	static auto Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "ClearDelayedPlayMusicPack");
+	static class UFunction* Func = nullptr;
 
-	Params::AFort_Entry_Music_Controller_BP_C_ClearDelayedPlayMusicPack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "ClearDelayedPlayMusicPack");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -143,12 +186,14 @@ void AFort_Entry_Music_Controller_BP_C::ClearDelayedPlayMusicPack()
 
 void AFort_Entry_Music_Controller_BP_C::PlayEquippedMusicPack()
 {
-	static auto Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "PlayEquippedMusicPack");
+	static class UFunction* Func = nullptr;
 
-	Params::AFort_Entry_Music_Controller_BP_C_PlayEquippedMusicPack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "PlayEquippedMusicPack");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -159,12 +204,14 @@ void AFort_Entry_Music_Controller_BP_C::PlayEquippedMusicPack()
 
 void AFort_Entry_Music_Controller_BP_C::StartMusic()
 {
-	static auto Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "StartMusic");
+	static class UFunction* Func = nullptr;
 
-	Params::AFort_Entry_Music_Controller_BP_C_StartMusic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "StartMusic");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -198,9 +245,12 @@ void AFort_Entry_Music_Controller_BP_C::StartMusic()
 
 void AFort_Entry_Music_Controller_BP_C::ExecuteUbergraph_Fort_Entry_Music_Controller_BP(int32 EntryPoint, class UFortMusicContext* CallFunc_GetContext_ReturnValue, class UAthenaMusicPackItemDefinition* CallFunc_GetEquippedMusicPack_ReturnValue, class USoundBase* K2Node_CustomEvent_New_Music_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_NotEqual_ObjectObject_ReturnValue, class UAthenaMusicPackItemDefinition* K2Node_CustomEvent_NewMusicPack, bool K2Node_CustomEvent_Lobby_Music_Activate, class USoundBase* K2Node_CustomEvent_New_Music, class UObject* CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue, class USoundBase* K2Node_DynamicCast_AsSound_Base, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortMusicContext* CallFunc_GetContext_ReturnValue_1, bool CallFunc_IsPlaying_ReturnValue, class UAthenaMusicPackItemDefinition* CallFunc_GetEquippedMusicPack_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, class UAthenaMusicPackItemDefinition* K2Node_CustomEvent_MusicPackToPlayLater, bool Temp_bool_Variable, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_NotEqual_ObjectObject_ReturnValue_1, class UFortMusicContext* CallFunc_GetContext_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "ExecuteUbergraph_Fort_Entry_Music_Controller_BP");
+	static class UFunction* Func = nullptr;
 
-	Params::AFort_Entry_Music_Controller_BP_C_ExecuteUbergraph_Fort_Entry_Music_Controller_BP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Fort_Entry_Music_Controller_BP_C", "ExecuteUbergraph_Fort_Entry_Music_Controller_BP");
+
+	Params::AFort_Entry_Music_Controller_BP_C_ExecuteUbergraph_Fort_Entry_Music_Controller_BP_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -232,6 +282,4 @@ void AFort_Entry_Music_Controller_BP_C::ExecuteUbergraph_Fort_Entry_Music_Contro
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

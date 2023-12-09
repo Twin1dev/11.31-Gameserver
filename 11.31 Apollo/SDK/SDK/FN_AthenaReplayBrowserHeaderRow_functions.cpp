@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaReplayBrowserHeaderRow.AthenaReplayBrowserHeaderRow_C
+// (None)
+
+class UClass* UAthenaReplayBrowserHeaderRow_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaReplayBrowserHeaderRow_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// AthenaReplayBrowserHeaderRow_C AthenaReplayBrowserHeaderRow.Default__AthenaReplayBrowserHeaderRow_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaReplayBrowserHeaderRow_C* UAthenaReplayBrowserHeaderRow_C::GetDefaultObj()
+{
+	static class UAthenaReplayBrowserHeaderRow_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaReplayBrowserHeaderRow_C*>(UAthenaReplayBrowserHeaderRow_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

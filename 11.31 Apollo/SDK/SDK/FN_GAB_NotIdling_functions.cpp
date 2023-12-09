@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GAB_NotIdling.GAB_NotIdling_C
+// (None)
+
+class UClass* UGAB_NotIdling_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAB_NotIdling_C");
+
+	return Clss;
+}
+
+
+// GAB_NotIdling_C GAB_NotIdling.Default__GAB_NotIdling_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAB_NotIdling_C* UGAB_NotIdling_C::GetDefaultObj()
+{
+	static class UGAB_NotIdling_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAB_NotIdling_C*>(UGAB_NotIdling_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GAB_NotIdling.GAB_NotIdling_C.K2_ActivateAbilityFromEvent
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UGAB_NotIdling_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GAB_NotIdling_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_NotIdling_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_NotIdling_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGAB_NotIdling_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -42,9 +70,12 @@ void UGAB_NotIdling_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& Ev
 
 void UGAB_NotIdling_C::ExecuteUbergraph_GAB_NotIdling(int32 EntryPoint, bool CallFunc_K2_CommitAbility_ReturnValue, const struct FGameplayEventData& K2Node_Event_EventData)
 {
-	static auto Func = Class->GetFunction("GAB_NotIdling_C", "ExecuteUbergraph_GAB_NotIdling");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_NotIdling_C_ExecuteUbergraph_GAB_NotIdling_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_NotIdling_C", "ExecuteUbergraph_GAB_NotIdling");
+
+	Params::UGAB_NotIdling_C_ExecuteUbergraph_GAB_NotIdling_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_K2_CommitAbility_ReturnValue = CallFunc_K2_CommitAbility_ReturnValue;
@@ -56,6 +87,4 @@ void UGAB_NotIdling_C::ExecuteUbergraph_GAB_NotIdling(int32 EntryPoint, bool Cal
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

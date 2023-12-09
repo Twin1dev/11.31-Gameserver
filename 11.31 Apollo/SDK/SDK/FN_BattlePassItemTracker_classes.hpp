@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -24,11 +21,8 @@ public:
 	class UWidgetAnimation*                      Increase;                                          // 0x288(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsSecondary;                                       // 0x290(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BattlePassItemTracker_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UBattlePassItemTracker_C* GetDefaultObj();
 
 	void HandleInitialState(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
 	void HandleNumberVisible(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
@@ -41,6 +35,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

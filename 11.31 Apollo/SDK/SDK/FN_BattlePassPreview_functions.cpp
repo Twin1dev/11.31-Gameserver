@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass BattlePassPreview.BattlePassPreview_C
+// (None)
+
+class UClass* UBattlePassPreview_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BattlePassPreview_C");
+
+	return Clss;
+}
+
+
+// BattlePassPreview_C BattlePassPreview.Default__BattlePassPreview_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBattlePassPreview_C* UBattlePassPreview_C::GetDefaultObj()
+{
+	static class UBattlePassPreview_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBattlePassPreview_C*>(UBattlePassPreview_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BattlePassPreview.BattlePassPreview_C.CallRenderSwapOnBlade
@@ -24,9 +49,12 @@ namespace SDK
 
 void UBattlePassPreview_C::CallRenderSwapOnBlade(class UObject* Object, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "CallRenderSwapOnBlade");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_CallRenderSwapOnBlade_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "CallRenderSwapOnBlade");
+
+	Params::UBattlePassPreview_C_CallRenderSwapOnBlade_Params Parms{};
 
 	Parms.Object = Object;
 	Parms.K2Node_DynamicCast_AsBattle_Pass_Preview_Widget = K2Node_DynamicCast_AsBattle_Pass_Preview_Widget;
@@ -43,21 +71,24 @@ void UBattlePassPreview_C::CallRenderSwapOnBlade(class UObject* Object, class UB
 // class UFortItem*                   ItemToDisplay                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               ReadyToUnlock                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              LevelUnlocked                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable                                               ()
+// class FText                        Temp_text_Variable                                               (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        CallFunc_GetDisplayName_ReturnValue                              ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        CallFunc_GetDisplayName_ReturnValue                              (None)
 // TSoftObjectPtr<class UTexture2D>   CallFunc_GetSmallPreviewImage_ReturnValue                        (HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        K2Node_Select_Default                                            (None)
 
 void UBattlePassPreview_C::SetRotatingPreviewData(class UFortItem* ItemToDisplay, bool ReadyToUnlock, int32 LevelUnlocked, class FText Temp_text_Variable, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, bool CallFunc_IsValid_ReturnValue, class FText CallFunc_Format_ReturnValue, class FText CallFunc_GetDisplayName_ReturnValue, TSoftObjectPtr<class UTexture2D> CallFunc_GetSmallPreviewImage_ReturnValue, bool Temp_bool_Variable, class FText K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "SetRotatingPreviewData");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_SetRotatingPreviewData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "SetRotatingPreviewData");
+
+	Params::UBattlePassPreview_C_SetRotatingPreviewData_Params Parms{};
 
 	Parms.ItemToDisplay = ItemToDisplay;
 	Parms.ReadyToUnlock = ReadyToUnlock;
@@ -108,9 +139,12 @@ void UBattlePassPreview_C::SetRotatingPreviewData(class UFortItem* ItemToDisplay
 
 void UBattlePassPreview_C::HandleUnhovered(class UBattlePassScreenPreviewRewardWidget* Button, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget, bool K2Node_DynamicCast_bSuccess, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_1, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_1, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_2, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_2, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_3, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_3, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_4, bool K2Node_DynamicCast_bSuccess_4, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_4, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_5, bool K2Node_DynamicCast_bSuccess_5, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_5, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_6, bool K2Node_DynamicCast_bSuccess_6, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_6, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_7, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_7, bool K2Node_DynamicCast_bSuccess_7)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "HandleUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_HandleUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "HandleUnhovered");
+
+	Params::UBattlePassPreview_C_HandleUnhovered_Params Parms{};
 
 	Parms.Button = Button;
 	Parms.K2Node_DynamicCast_AsBattle_Pass_Preview_Widget = K2Node_DynamicCast_AsBattle_Pass_Preview_Widget;
@@ -149,12 +183,14 @@ void UBattlePassPreview_C::HandleUnhovered(class UBattlePassScreenPreviewRewardW
 
 void UBattlePassPreview_C::ReplaceUpsellIcon()
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "ReplaceUpsellIcon");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_ReplaceUpsellIcon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "ReplaceUpsellIcon");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -169,15 +205,18 @@ void UBattlePassPreview_C::ReplaceUpsellIcon()
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBattlePassPreview_C::SetOtherRewardsEarned(class UTextBlock* TextOtherRewards, struct FPreviewUnlockRewardData& UpsellUnlockRewardData, enum class ESlateVisibility Temp_byte_Variable, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, bool CallFunc_Greater_IntInt_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, enum class ESlateVisibility Temp_byte_Variable_1, class FText CallFunc_Format_ReturnValue, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "SetOtherRewardsEarned");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_SetOtherRewardsEarned_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "SetOtherRewardsEarned");
+
+	Params::UBattlePassPreview_C_SetOtherRewardsEarned_Params Parms{};
 
 	Parms.TextOtherRewards = TextOtherRewards;
 	Parms.UpsellUnlockRewardData = UpsellUnlockRewardData;
@@ -205,15 +244,18 @@ void UBattlePassPreview_C::SetOtherRewardsEarned(class UTextBlock* TextOtherRewa
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBattlePassPreview_C::SetVbucksEarned(class UTextBlock* TextVbucks, struct FPreviewUnlockRewardData& UpsellUnlockRewardData, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, bool CallFunc_Greater_IntInt_ReturnValue, class FText CallFunc_Format_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "SetVbucksEarned");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_SetVbucksEarned_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "SetVbucksEarned");
+
+	Params::UBattlePassPreview_C_SetVbucksEarned_Params Parms{};
 
 	Parms.TextVbucks = TextVbucks;
 	Parms.UpsellUnlockRewardData = UpsellUnlockRewardData;
@@ -242,15 +284,18 @@ void UBattlePassPreview_C::SetVbucksEarned(class UTextBlock* TextVbucks, struct 
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBattlePassPreview_C::SetCharactersEarned(class UTextBlock* TextCharacters, struct FPreviewUnlockRewardData& UpsellUnlockRewardData, enum class ESlateVisibility Temp_byte_Variable, int32 CallFunc_GetRewardCharacterCount_CharacterCount, bool CallFunc_GetRewardCharacterCount_HasCharacters, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, enum class ESlateVisibility Temp_byte_Variable_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "SetCharactersEarned");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_SetCharactersEarned_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "SetCharactersEarned");
+
+	Params::UBattlePassPreview_C_SetCharactersEarned_Params Parms{};
 
 	Parms.TextCharacters = TextCharacters;
 	Parms.UpsellUnlockRewardData = UpsellUnlockRewardData;
@@ -286,9 +331,12 @@ void UBattlePassPreview_C::SetCharactersEarned(class UTextBlock* TextCharacters,
 
 enum class ESlateVisibility UBattlePassPreview_C::GetAdditionalRewardsVisibility(struct FPreviewUnlockRewardData& UpsellUnlockRewardData, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue_2, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "GetAdditionalRewardsVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_GetAdditionalRewardsVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "GetAdditionalRewardsVisibility");
+
+	Params::UBattlePassPreview_C_GetAdditionalRewardsVisibility_Params Parms{};
 
 	Parms.UpsellUnlockRewardData = UpsellUnlockRewardData;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -318,9 +366,12 @@ enum class ESlateVisibility UBattlePassPreview_C::GetAdditionalRewardsVisibility
 
 void UBattlePassPreview_C::GetRewardCharacterCount(struct FPreviewUnlockRewardData& UpsellUnlockRewardData, int32* CharacterCount, bool* HasCharacters, bool CallFunc_Greater_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "GetRewardCharacterCount");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_GetRewardCharacterCount_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "GetRewardCharacterCount");
+
+	Params::UBattlePassPreview_C_GetRewardCharacterCount_Params Parms{};
 
 	Parms.UpsellUnlockRewardData = UpsellUnlockRewardData;
 	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
@@ -366,9 +417,12 @@ void UBattlePassPreview_C::GetRewardCharacterCount(struct FPreviewUnlockRewardDa
 
 void UBattlePassPreview_C::HandleInitData(struct FPreviewUnlockData& UpsellUnlockData, class UFortItem* SinglePreviewReward, bool SingleRewardReadyToUnlock, int32 SingleRewardUnlockLevel, int32 RewardUnlockLevel, bool bRewardReadyToUnlock, class UFortItem* SinglePreviewRewardData, bool bEarnedRewardsHasCharacters, const struct FPreviewUnlockRewardData& EarnedRewards, const struct FPreviewUnlockRewardData& InstantRewards, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility CallFunc_GetAdditionalRewardsVisibility_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "HandleInitData");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_HandleInitData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "HandleInitData");
+
+	Params::UBattlePassPreview_C_HandleInitData_Params Parms{};
 
 	Parms.UpsellUnlockData = UpsellUnlockData;
 	Parms.SinglePreviewReward = SinglePreviewReward;
@@ -407,9 +461,12 @@ void UBattlePassPreview_C::HandleInitData(struct FPreviewUnlockData& UpsellUnloc
 
 void UBattlePassPreview_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "PreConstruct");
+
+	Params::UBattlePassPreview_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -424,12 +481,14 @@ void UBattlePassPreview_C::PreConstruct(bool IsDesignTime)
 
 void UBattlePassPreview_C::Construct()
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -442,9 +501,12 @@ void UBattlePassPreview_C::Construct()
 
 void UBattlePassPreview_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "Tick");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_Tick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "Tick");
+
+	Params::UBattlePassPreview_C_Tick_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InDeltaTime = InDeltaTime;
@@ -465,9 +527,12 @@ void UBattlePassPreview_C::Tick(const struct FGeometry& MyGeometry, float InDelt
 
 void UBattlePassPreview_C::OnInitData(struct FPreviewUnlockData& Data, class UFortItem* SinglePreviewCycleReward, bool bReadyToUnlock, int32 LevelUnlocked, bool bPurchasedAnnualPass)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "OnInitData");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_OnInitData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "OnInitData");
+
+	Params::UBattlePassPreview_C_OnInitData_Params Parms{};
 
 	Parms.Data = Data;
 	Parms.SinglePreviewCycleReward = SinglePreviewCycleReward;
@@ -487,9 +552,12 @@ void UBattlePassPreview_C::OnInitData(struct FPreviewUnlockData& Data, class UFo
 
 void UBattlePassPreview_C::BndEvt__Button_ViewAllRewards_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Button_ViewAllRewards_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_BndEvt__Button_ViewAllRewards_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Button_ViewAllRewards_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UBattlePassPreview_C_BndEvt__Button_ViewAllRewards_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -504,12 +572,14 @@ void UBattlePassPreview_C::BndEvt__Button_ViewAllRewards_K2Node_ComponentBoundEv
 
 void UBattlePassPreview_C::HandleOnGainedFocus()
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "HandleOnGainedFocus");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_HandleOnGainedFocus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "HandleOnGainedFocus");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -523,9 +593,12 @@ void UBattlePassPreview_C::HandleOnGainedFocus()
 
 void UBattlePassPreview_C::OnCyclePreviewReward(class UFortItem* NextReward, bool bReadyToUnlock, int32 LevelUnlocked)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "OnCyclePreviewReward");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_OnCyclePreviewReward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "OnCyclePreviewReward");
+
+	Params::UBattlePassPreview_C_OnCyclePreviewReward_Params Parms{};
 
 	Parms.NextReward = NextReward;
 	Parms.bReadyToUnlock = bReadyToUnlock;
@@ -543,9 +616,12 @@ void UBattlePassPreview_C::OnCyclePreviewReward(class UFortItem* NextReward, boo
 
 void UBattlePassPreview_C::BndEvt__Currency_Widget_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Currency_Widget_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_BndEvt__Currency_Widget_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Currency_Widget_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UBattlePassPreview_C_BndEvt__Currency_Widget_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -561,9 +637,12 @@ void UBattlePassPreview_C::BndEvt__Currency_Widget_K2Node_ComponentBoundEvent_1_
 
 void UBattlePassPreview_C::BndEvt__Character_Widget2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Character_Widget2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_BndEvt__Character_Widget2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Character_Widget2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UBattlePassPreview_C_BndEvt__Character_Widget2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -579,9 +658,12 @@ void UBattlePassPreview_C::BndEvt__Character_Widget2_K2Node_ComponentBoundEvent_
 
 void UBattlePassPreview_C::BndEvt__Character_Widget3_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Character_Widget3_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_BndEvt__Character_Widget3_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Character_Widget3_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+
+	Params::UBattlePassPreview_C_BndEvt__Character_Widget3_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -597,9 +679,12 @@ void UBattlePassPreview_C::BndEvt__Character_Widget3_K2Node_ComponentBoundEvent_
 
 void UBattlePassPreview_C::BndEvt__Character_Widget4_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Character_Widget4_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_BndEvt__Character_Widget4_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Character_Widget4_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+
+	Params::UBattlePassPreview_C_BndEvt__Character_Widget4_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -615,9 +700,12 @@ void UBattlePassPreview_C::BndEvt__Character_Widget4_K2Node_ComponentBoundEvent_
 
 void UBattlePassPreview_C::BndEvt__Character_Widget5_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Character_Widget5_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_BndEvt__Character_Widget5_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Character_Widget5_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+
+	Params::UBattlePassPreview_C_BndEvt__Character_Widget5_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -633,9 +721,12 @@ void UBattlePassPreview_C::BndEvt__Character_Widget5_K2Node_ComponentBoundEvent_
 
 void UBattlePassPreview_C::BndEvt__Character_Widget6_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Character_Widget6_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_BndEvt__Character_Widget6_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Character_Widget6_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+
+	Params::UBattlePassPreview_C_BndEvt__Character_Widget6_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -651,9 +742,12 @@ void UBattlePassPreview_C::BndEvt__Character_Widget6_K2Node_ComponentBoundEvent_
 
 void UBattlePassPreview_C::BndEvt__Character_Widget7_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Character_Widget7_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_BndEvt__Character_Widget7_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Character_Widget7_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature");
+
+	Params::UBattlePassPreview_C_BndEvt__Character_Widget7_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -669,9 +763,12 @@ void UBattlePassPreview_C::BndEvt__Character_Widget7_K2Node_ComponentBoundEvent_
 
 void UBattlePassPreview_C::BndEvt__Character_Widget1_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Character_Widget1_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_BndEvt__Character_Widget1_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "BndEvt__Character_Widget1_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
+
+	Params::UBattlePassPreview_C_BndEvt__Character_Widget1_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -774,9 +871,12 @@ void UBattlePassPreview_C::BndEvt__Character_Widget1_K2Node_ComponentBoundEvent_
 
 void UBattlePassPreview_C::ExecuteUbergraph_BattlePassPreview(int32 EntryPoint, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_1, bool K2Node_DynamicCast_bSuccess_1, class UHorizontalBoxSlot* CallFunc_SlotAsHorizontalBoxSlot_ReturnValue, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize_1, class UHorizontalBoxSlot* CallFunc_SlotAsHorizontalBoxSlot_ReturnValue_1, class UHorizontalBoxSlot* CallFunc_SlotAsHorizontalBoxSlot_ReturnValue_2, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_2, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsValid_ReturnValue_1, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize_2, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_3, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_IsValid_ReturnValue_2, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize_3, enum class ESlateVisibility Temp_byte_Variable, bool CallFunc_IsValid_ReturnValue_3, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_4, bool K2Node_DynamicCast_bSuccess_4, const struct FPreviewUnlockData& K2Node_Event_Data, class UFortItem* K2Node_Event_SinglePreviewCycleReward, bool K2Node_Event_bReadyToUnlock_1, int32 K2Node_Event_LevelUnlocked_1, bool K2Node_Event_bPurchasedAnnualPass, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize_4, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_8, class UBattlePassViewRewardsScreen_C* CallFunc_Create_ReturnValue, class UHorizontalBoxSlot* CallFunc_SlotAsHorizontalBoxSlot_ReturnValue_3, class UHorizontalBoxSlot* CallFunc_SlotAsHorizontalBoxSlot_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_4, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_5, bool K2Node_DynamicCast_bSuccess_5, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_6, bool K2Node_DynamicCast_bSuccess_6, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize_5, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize_6, bool CallFunc_IsValid_ReturnValue_5, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_2, class UFortItem* K2Node_Event_NextReward, bool K2Node_Event_bReadyToUnlock, int32 K2Node_Event_LevelUnlocked, class UCommonButton* K2Node_ComponentBoundEvent_Button_7, bool CallFunc_IsValid_ReturnValue_6, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_7, bool K2Node_DynamicCast_bSuccess_7, class UCommonButton* K2Node_ComponentBoundEvent_Button_6, class UCommonButton* K2Node_ComponentBoundEvent_Button_5, class UCommonButton* K2Node_ComponentBoundEvent_Button_4, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_8, bool K2Node_DynamicCast_bSuccess_8, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_9, bool K2Node_DynamicCast_bSuccess_9, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize_7, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_IsValid_ReturnValue_7, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_10, bool K2Node_DynamicCast_bSuccess_10, class UHorizontalBoxSlot* CallFunc_SlotAsHorizontalBoxSlot_ReturnValue_5, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_11, bool K2Node_DynamicCast_bSuccess_11, class UHorizontalBoxSlot* CallFunc_SlotAsHorizontalBoxSlot_ReturnValue_6, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_12, bool K2Node_DynamicCast_bSuccess_12, class UHorizontalBoxSlot* CallFunc_SlotAsHorizontalBoxSlot_ReturnValue_7, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_13, bool K2Node_DynamicCast_bSuccess_13, bool K2Node_Event_IsDesignTime, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_14, bool K2Node_DynamicCast_bSuccess_14, class UBattlePassPreview_Widget_C* K2Node_DynamicCast_AsBattle_Pass_Preview_Widget_15, bool K2Node_DynamicCast_bSuccess_15, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool Temp_bool_Variable, bool CallFunc_IsValid_ReturnValue_8, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BattlePassPreview_C", "ExecuteUbergraph_BattlePassPreview");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassPreview_C_ExecuteUbergraph_BattlePassPreview_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassPreview_C", "ExecuteUbergraph_BattlePassPreview");
+
+	Params::UBattlePassPreview_C_ExecuteUbergraph_BattlePassPreview_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_DynamicCast_AsBattle_Pass_Preview_Widget = K2Node_DynamicCast_AsBattle_Pass_Preview_Widget;
@@ -873,6 +973,4 @@ void UBattlePassPreview_C::ExecuteUbergraph_BattlePassPreview(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

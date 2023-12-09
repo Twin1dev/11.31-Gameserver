@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ButtonStyle_Radial.ButtonStyle_Radial_C
+// (None)
+
+class UClass* UButtonStyle_Radial_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ButtonStyle_Radial_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ButtonStyle_Radial_C ButtonStyle_Radial.Default__ButtonStyle_Radial_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UButtonStyle_Radial_C* UButtonStyle_Radial_C::GetDefaultObj()
+{
+	static class UButtonStyle_Radial_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UButtonStyle_Radial_C*>(UButtonStyle_Radial_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

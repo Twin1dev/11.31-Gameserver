@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaMatchmakingOptionsDisplay_v2.AthenaMatchmakingOptionsDisplay_v2_C
+// (None)
+
+class UClass* UAthenaMatchmakingOptionsDisplay_v2_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaMatchmakingOptionsDisplay_v2_C");
+
+	return Clss;
+}
+
+
+// AthenaMatchmakingOptionsDisplay_v2_C AthenaMatchmakingOptionsDisplay_v2.Default__AthenaMatchmakingOptionsDisplay_v2_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaMatchmakingOptionsDisplay_v2_C* UAthenaMatchmakingOptionsDisplay_v2_C::GetDefaultObj()
+{
+	static class UAthenaMatchmakingOptionsDisplay_v2_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaMatchmakingOptionsDisplay_v2_C*>(UAthenaMatchmakingOptionsDisplay_v2_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaMatchmakingOptionsDisplay_v2.AthenaMatchmakingOptionsDisplay_v2_C.Is Performing Transition
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::Is_Performing_Transition(bool* Performing_Transition, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "Is Performing Transition");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_Is_Performing_Transition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "Is Performing Transition");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_Is_Performing_Transition_Params Parms{};
 
 	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
 
@@ -46,9 +74,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::Is_Performing_Transition(bool* Perfo
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::OnSpectateMatch(bool* PassThrough, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UAthenaSpectateMatchModal_C* CallFunc_Create_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "OnSpectateMatch");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_OnSpectateMatch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "OnSpectateMatch");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_OnSpectateMatch_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
 	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
@@ -68,9 +99,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::OnSpectateMatch(bool* PassThrough, c
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::SetScrollWidget(class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "SetScrollWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_SetScrollWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "SetScrollWidget");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_SetScrollWidget_Params Parms{};
 
 	Parms.CallFunc_GetUINavigationManager_ReturnValue = CallFunc_GetUINavigationManager_ReturnValue;
 
@@ -88,9 +122,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::SetScrollWidget(class UFortUINavigat
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::OnCustomMatchmaking(bool* PassThrough, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UCustomMatchmakingKeyModal_C* CallFunc_Create_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "OnCustomMatchmaking");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_OnCustomMatchmaking_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "OnCustomMatchmaking");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_OnCustomMatchmaking_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
 	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
@@ -116,9 +153,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::OnCustomMatchmaking(bool* PassThroug
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::TriggerMatchmakingPageTileOutroAnim(int32 Temp_int_Variable, class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue, class UAthenaMatchmakingTile_C* K2Node_DynamicCast_AsAthena_Matchmaking_Tile, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_Add_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "TriggerMatchmakingPageTileOutroAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_TriggerMatchmakingPageTileOutroAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "TriggerMatchmakingPageTileOutroAnim");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_TriggerMatchmakingPageTileOutroAnim_Params Parms{};
 
 	Parms.Temp_int_Variable = Temp_int_Variable;
 	Parms.CallFunc_GetButtonAtIndex_ReturnValue = CallFunc_GetButtonAtIndex_ReturnValue;
@@ -146,9 +186,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::TriggerMatchmakingPageTileOutroAnim(
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::TriggerMatchmakingPageTileIntroAnim(class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class UAthenaMatchmakingTile_C* K2Node_DynamicCast_AsAthena_Matchmaking_Tile, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, int32 Temp_int_Variable)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "TriggerMatchmakingPageTileIntroAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_TriggerMatchmakingPageTileIntroAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "TriggerMatchmakingPageTileIntroAnim");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_TriggerMatchmakingPageTileIntroAnim_Params Parms{};
 
 	Parms.CallFunc_GetButtonAtIndex_ReturnValue = CallFunc_GetButtonAtIndex_ReturnValue;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
@@ -174,16 +217,19 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::TriggerMatchmakingPageTileIntroAnim(
 // bool                               CallFunc_EqualEqual_KeyKey_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
-// struct FEventReply                 K2Node_Select_Default                                            ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
+// struct FEventReply                 K2Node_Select_Default                                            (None)
 
 struct FEventReply UAthenaMatchmakingOptionsDisplay_v2_C::Touch_To_Close(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FKey& CallFunc_PointerEvent_GetEffectingButton_ReturnValue, bool CallFunc_PointerEvent_IsTouchEvent_ReturnValue, bool CallFunc_EqualEqual_KeyKey_ReturnValue, bool Temp_bool_Variable, bool CallFunc_BooleanOR_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const struct FEventReply& CallFunc_Unhandled_ReturnValue, const struct FEventReply& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "Touch To Close");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_Touch_To_Close_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "Touch To Close");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_Touch_To_Close_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -211,9 +257,12 @@ struct FEventReply UAthenaMatchmakingOptionsDisplay_v2_C::Touch_To_Close(const s
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::Handle_InputAction_Cancel(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "Handle_InputAction_Cancel");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_Handle_InputAction_Cancel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "Handle_InputAction_Cancel");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_Handle_InputAction_Cancel_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -233,9 +282,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::Handle_InputAction_Cancel(bool* Pass
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::SetupInput(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "SetupInput");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_SetupInput_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "SetupInput");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_SetupInput_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
@@ -253,9 +305,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::SetupInput(UDelegateProperty_ K2Node
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::SetSquadFillText(enum class ESquadFillSetting InSquadFillSetting)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "SetSquadFillText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_SetSquadFillText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "SetSquadFillText");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_SetSquadFillText_Params Parms{};
 
 	Parms.InSquadFillSetting = InSquadFillSetting;
 
@@ -271,9 +326,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::SetSquadFillText(enum class ESquadFi
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::BndEvt__CancelButton_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "BndEvt__CancelButton_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "BndEvt__CancelButton_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -288,12 +346,14 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::BndEvt__CancelButton_K2Node_Componen
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::OnRightPanelOutroFinshed()
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "OnRightPanelOutroFinshed");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_OnRightPanelOutroFinshed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "OnRightPanelOutroFinshed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -304,12 +364,14 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::OnRightPanelOutroFinshed()
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::OnBeginIntro()
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "OnBeginIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_OnBeginIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "OnBeginIntro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -320,12 +382,14 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::OnBeginIntro()
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::OnRightPanelIntroFinshed()
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "OnRightPanelIntroFinshed");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_OnRightPanelIntroFinshed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "OnRightPanelIntroFinshed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -337,9 +401,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::OnRightPanelIntroFinshed()
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::RepresentedPlaylistChanged(struct FPlaylistFrontEndData& NewRepresentedPlaylist)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "RepresentedPlaylistChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_RepresentedPlaylistChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "RepresentedPlaylistChanged");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_RepresentedPlaylistChanged_Params Parms{};
 
 	Parms.NewRepresentedPlaylist = NewRepresentedPlaylist;
 
@@ -355,9 +422,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::RepresentedPlaylistChanged(struct FP
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::OnTileDoubleClicked(class UCommonButton* ButtonClicked)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "OnTileDoubleClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_OnTileDoubleClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "OnTileDoubleClicked");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_OnTileDoubleClicked_Params Parms{};
 
 	Parms.ButtonClicked = ButtonClicked;
 
@@ -372,12 +442,14 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::OnTileDoubleClicked(class UCommonBut
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::Start_Closing_Matchmaking_Options()
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "Start Closing Matchmaking Options");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_Start_Closing_Matchmaking_Options_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "Start Closing Matchmaking Options");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -388,12 +460,14 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::Start_Closing_Matchmaking_Options()
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::ApplyCMSOverrides()
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "ApplyCMSOverrides");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_ApplyCMSOverrides_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "ApplyCMSOverrides");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -404,12 +478,14 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::ApplyCMSOverrides()
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -422,9 +498,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::BP_OnDeactivated()
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::UpdateMMButtonStatusBP(bool bPlaylistIsEnabled, enum class EFillDisableReason FillDisableReason)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "UpdateMMButtonStatusBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_UpdateMMButtonStatusBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "UpdateMMButtonStatusBP");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_UpdateMMButtonStatusBP_Params Parms{};
 
 	Parms.bPlaylistIsEnabled = bPlaylistIsEnabled;
 	Parms.FillDisableReason = FillDisableReason;
@@ -441,9 +520,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::UpdateMMButtonStatusBP(bool bPlaylis
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::SetServerAccessText(enum class EServerAccessSetting InServerAccessSetting)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "SetServerAccessText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_SetServerAccessText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "SetServerAccessText");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_SetServerAccessText_Params Parms{};
 
 	Parms.InServerAccessSetting = InServerAccessSetting;
 
@@ -459,9 +541,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::SetServerAccessText(enum class EServ
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::SetSpectatorButtonText(enum class ESpectatorQueueType InSpectatorQueueType)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "SetSpectatorButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_SetSpectatorButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "SetSpectatorButtonText");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_SetSpectatorButtonText_Params Parms{};
 
 	Parms.InSpectatorQueueType = InSpectatorQueueType;
 
@@ -477,9 +562,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::SetSpectatorButtonText(enum class ES
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::BndEvt__BacchusCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "BndEvt__BacchusCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_BndEvt__BacchusCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "BndEvt__BacchusCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_BndEvt__BacchusCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -495,9 +583,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::BndEvt__BacchusCloseButton_K2Node_Co
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::BndEvt__AcceptButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "BndEvt__AcceptButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "BndEvt__AcceptButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -513,9 +604,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::BndEvt__AcceptButton_K2Node_Componen
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::BndEvt__SupportAffliateButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "BndEvt__SupportAffliateButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_BndEvt__SupportAffliateButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "BndEvt__SupportAffliateButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_BndEvt__SupportAffliateButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -531,9 +625,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::BndEvt__SupportAffliateButton_K2Node
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::OnAffiliateUpdated(const class FString& AffiliateName)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "OnAffiliateUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_OnAffiliateUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "OnAffiliateUpdated");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_OnAffiliateUpdated_Params Parms{};
 
 	Parms.AffiliateName = AffiliateName;
 
@@ -548,12 +645,14 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::OnAffiliateUpdated(const class FStri
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -565,9 +664,12 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::Construct()
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::UpdateShowSupportAffiliateButton(bool bIsCreativeLTM)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "UpdateShowSupportAffiliateButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_UpdateShowSupportAffiliateButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "UpdateShowSupportAffiliateButton");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_UpdateShowSupportAffiliateButton_Params Parms{};
 
 	Parms.bIsCreativeLTM = bIsCreativeLTM;
 
@@ -582,12 +684,14 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::UpdateShowSupportAffiliateButton(boo
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::On_Intro_Complete()
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "On Intro Complete");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_On_Intro_Complete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "On Intro Complete");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -596,10 +700,10 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::On_Intro_Complete()
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
-// class FText                        Temp_text_Variable_2                                             ()
-// class FText                        Temp_text_Variable_3                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
+// class FText                        Temp_text_Variable_2                                             (None)
+// class FText                        Temp_text_Variable_3                                             (None)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -629,8 +733,8 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::On_Intro_Complete()
 // bool                               Temp_bool_Variable_8                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_9                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_10                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable_4                                             ()
-// class FText                        Temp_text_Variable_5                                             ()
+// class FText                        Temp_text_Variable_4                                             (None)
+// class FText                        Temp_text_Variable_5                                             (None)
 // enum class EServerAccessSetting    Temp_byte_Variable_7                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_11                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_12                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -656,15 +760,15 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::On_Intro_Complete()
 // int32                              CallFunc_Len_ReturnValue                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESpectatorQueueType     Temp_byte_Variable_16                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable_6                                             ()
-// class FText                        Temp_text_Variable_7                                             ()
-// class FText                        Temp_text_Variable_8                                             ()
+// class FText                        Temp_text_Variable_6                                             (None)
+// class FText                        Temp_text_Variable_7                                             (None)
+// class FText                        Temp_text_Variable_8                                             (None)
 // enum class ESquadFillSetting       K2Node_Event_InSquadFillSetting                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_Select_Default_3                                          (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable_9                                             ()
-// class FText                        Temp_text_Variable_10                                            ()
-// class FText                        Temp_text_Variable_11                                            ()
+// class FText                        Temp_text_Variable_9                                             (None)
+// class FText                        Temp_text_Variable_10                                            (None)
+// class FText                        Temp_text_Variable_11                                            (None)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_3                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor)
@@ -676,27 +780,27 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::On_Intro_Complete()
 // struct FPlaylistFrontEndData       K2Node_Event_NewRepresentedPlaylist                              (ConstParm)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSlateBrush                 CallFunc_MakeBrushFromTexture_ReturnValue                        ()
-// struct FSlateBrush                 CallFunc_MakeBrushFromTexture_ReturnValue_1                      ()
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// struct FSlateBrush                 CallFunc_MakeBrushFromTexture_ReturnValue                        (None)
+// struct FSlateBrush                 CallFunc_MakeBrushFromTexture_ReturnValue_1                      (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_TextToUpper_ReturnValue_1                               ()
+// class FText                        CallFunc_TextToUpper_ReturnValue_1                               (None)
 // class UCommonButton*               K2Node_Event_ButtonClicked                                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Len_ReturnValue_1                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_IntInt_ReturnValue_1                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_4                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Len_ReturnValue_2                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
 // bool                               CallFunc_Greater_IntInt_ReturnValue_2                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Len_ReturnValue_3                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_2                         ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_2                         (None)
 // bool                               CallFunc_Greater_IntInt_ReturnValue_3                            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_TextToUpper_ReturnValue_2                               ()
-// class FText                        Temp_text_Variable_12                                            ()
-// class FText                        Temp_text_Variable_13                                            ()
+// class FText                        CallFunc_TextToUpper_ReturnValue_2                               (None)
+// class FText                        Temp_text_Variable_12                                            (None)
+// class FText                        Temp_text_Variable_13                                            (None)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UIconTextButton_C*           K2Node_DynamicCast_AsIcon_Text_Button                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -714,7 +818,7 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::On_Intro_Complete()
 // struct FLinearColor                K2Node_Select_Default_10                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_BooleanAND_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFillDisableReason      Temp_byte_Variable_17                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_11                                         ()
+// class FText                        K2Node_Select_Default_11                                         (None)
 // class UWidget*                     Temp_object_Variable                                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortMatchmakingTileStyleTemp_byte_Variable_18                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     K2Node_Select_Default_12                                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -727,7 +831,7 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::On_Intro_Complete()
 // enum class EServerAccessSetting    K2Node_Event_InServerAccessSetting                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_Select_Default_14                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default_15                                         ()
+// class FText                        K2Node_Select_Default_15                                         (None)
 // class UIconTextButton_C*           K2Node_DynamicCast_AsIcon_Text_Button_1                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_19                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -737,7 +841,7 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::On_Intro_Complete()
 // bool                               K2Node_DynamicCast_bSuccess_2                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESpectatorQueueType     K2Node_Event_InSpectatorQueueType                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue_2                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default_17                                         ()
+// class FText                        K2Node_Select_Default_17                                         (None)
 // enum class ESlateVisibility        Temp_byte_Variable_24                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_2                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Handle_InputAction_Cancel_PassThrough                   (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -763,16 +867,19 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::On_Intro_Complete()
 // bool                               CallFunc_BooleanAND_ReturnValue_3                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue_4                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsMobileGame_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable_14                                            ()
+// class FText                        Temp_text_Variable_14                                            (None)
 // bool                               Temp_bool_Variable_21                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Is_Performing_Transition_Performing_Transition          (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default_20                                         ()
+// class FText                        K2Node_Select_Default_20                                         (None)
 
 void UAthenaMatchmakingOptionsDisplay_v2_C::ExecuteUbergraph_AthenaMatchmakingOptionsDisplay_v2(int32 EntryPoint, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class FText Temp_text_Variable_2, class FText Temp_text_Variable_3, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, class UClass* Temp_class_Variable, class UClass* Temp_class_Variable_1, bool Temp_bool_Variable_2, class UClass* Temp_class_Variable_2, class UClass* Temp_class_Variable_3, bool Temp_bool_Variable_3, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, bool Temp_bool_Variable_4, const struct FLinearColor& Temp_struct_Variable_2, const struct FLinearColor& Temp_struct_Variable_3, bool Temp_bool_Variable_5, enum class EInputActionState Temp_byte_Variable_2, enum class EInputActionState Temp_byte_Variable_3, class UFortMatchmakingContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_Variable_6, bool CallFunc_IsCustomMatchmakingKeyEnabled_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_4, enum class EInputActionState K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_5, enum class ESquadFillSetting Temp_byte_Variable_6, bool Temp_bool_Variable_7, bool Temp_bool_Variable_8, bool Temp_bool_Variable_9, bool Temp_bool_Variable_10, class FText Temp_text_Variable_4, class FText Temp_text_Variable_5, enum class EServerAccessSetting Temp_byte_Variable_7, bool Temp_bool_Variable_11, bool Temp_bool_Variable_12, bool Temp_bool_Variable_13, bool Temp_bool_Variable_14, enum class ESlateVisibility Temp_byte_Variable_8, enum class ESlateVisibility Temp_byte_Variable_9, bool Temp_bool_Variable_15, enum class EInputActionState Temp_byte_Variable_10, enum class EInputActionState Temp_byte_Variable_11, class UFortMatchmakingContext* CallFunc_GetContext_ReturnValue_1, bool Temp_bool_Variable_16, bool CallFunc_HasBroadcasterToken_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_12, enum class EInputActionState K2Node_Select_Default_1, enum class ESlateVisibility Temp_byte_Variable_13, bool Temp_bool_Variable_17, enum class ESlateVisibility Temp_byte_Variable_14, enum class ESlateVisibility Temp_byte_Variable_15, class UFortMcpContext* CallFunc_GetContext_ReturnValue_2, const class FString& CallFunc_GetAffiliateName_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_2, int32 CallFunc_Len_ReturnValue, enum class ESpectatorQueueType Temp_byte_Variable_16, bool CallFunc_EqualEqual_IntInt_ReturnValue, class FText Temp_text_Variable_6, class FText Temp_text_Variable_7, class FText Temp_text_Variable_8, enum class ESquadFillSetting K2Node_Event_InSquadFillSetting, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool K2Node_Select_Default_3, class FText Temp_text_Variable_9, class FText Temp_text_Variable_10, class FText Temp_text_Variable_11, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, const struct FPlaylistFrontEndData& K2Node_Event_NewRepresentedPlaylist, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, const struct FSlateBrush& CallFunc_MakeBrushFromTexture_ReturnValue, const struct FSlateBrush& CallFunc_MakeBrushFromTexture_ReturnValue_1, class FText CallFunc_TextToUpper_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue_1, class UCommonButton* K2Node_Event_ButtonClicked, int32 CallFunc_Array_Length_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, int32 CallFunc_Len_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_4, int32 CallFunc_Len_ReturnValue_2, class FText CallFunc_Conv_StringToText_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue_2, int32 CallFunc_Len_ReturnValue_3, class FText CallFunc_Conv_StringToText_ReturnValue_2, bool CallFunc_Greater_IntInt_ReturnValue_3, class FText CallFunc_TextToUpper_ReturnValue_2, class FText Temp_text_Variable_12, class FText Temp_text_Variable_13, bool CallFunc_IsValid_ReturnValue_1, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess, bool K2Node_Event_bPlaylistIsEnabled, enum class EFillDisableReason K2Node_Event_FillDisableReason, bool CallFunc_NotEqual_ByteByte_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_5, enum class ESlateVisibility K2Node_Select_Default_6, class UClass* K2Node_Select_Default_7, class UClass* K2Node_Select_Default_8, const struct FLinearColor& K2Node_Select_Default_9, bool CallFunc_Not_PreBool_ReturnValue, const struct FLinearColor& K2Node_Select_Default_10, bool CallFunc_BooleanAND_ReturnValue_1, enum class EFillDisableReason Temp_byte_Variable_17, class FText K2Node_Select_Default_11, class UWidget* Temp_object_Variable, enum class EFortMatchmakingTileStyle Temp_byte_Variable_18, class UWidget* K2Node_Select_Default_12, enum class ESlateVisibility Temp_byte_Variable_19, enum class ESlateVisibility Temp_byte_Variable_20, bool Temp_bool_Variable_18, enum class ESlateVisibility K2Node_Select_Default_13, enum class ESlateVisibility Temp_byte_Variable_21, enum class ESlateVisibility Temp_byte_Variable_22, enum class EServerAccessSetting K2Node_Event_InServerAccessSetting, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool K2Node_Select_Default_14, class FText K2Node_Select_Default_15, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button_1, bool K2Node_DynamicCast_bSuccess_1, bool Temp_bool_Variable_19, enum class ESlateVisibility K2Node_Select_Default_16, enum class ESlateVisibility Temp_byte_Variable_23, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button_2, bool K2Node_DynamicCast_bSuccess_2, enum class ESpectatorQueueType K2Node_Event_InSpectatorQueueType, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, class FText K2Node_Select_Default_17, enum class ESlateVisibility Temp_byte_Variable_24, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, bool CallFunc_Handle_InputAction_Cancel_PassThrough, bool CallFunc_IsMobileGame_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, enum class ESlateVisibility K2Node_Select_Default_18, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, int32 CallFunc_Len_ReturnValue_4, class UAffiliateKeyModal_C* CallFunc_Create_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue_4, bool CallFunc_NotEqual_StrStr_ReturnValue, const class FString& K2Node_Event_AffiliateName, bool CallFunc_BooleanOR_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_1, bool Temp_bool_Variable_20, bool CallFunc_EqualEqual_StrStr_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_19, bool CallFunc_BooleanAND_ReturnValue_2, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_2, bool K2Node_Event_bIsCreativeLTM, bool CallFunc_BooleanAND_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue_4, bool CallFunc_IsMobileGame_ReturnValue_1, class FText Temp_text_Variable_14, bool Temp_bool_Variable_21, bool CallFunc_Is_Performing_Transition_Performing_Transition, class FText K2Node_Select_Default_20)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "ExecuteUbergraph_AthenaMatchmakingOptionsDisplay_v2");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingOptionsDisplay_v2_C_ExecuteUbergraph_AthenaMatchmakingOptionsDisplay_v2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingOptionsDisplay_v2_C", "ExecuteUbergraph_AthenaMatchmakingOptionsDisplay_v2");
+
+	Params::UAthenaMatchmakingOptionsDisplay_v2_C_ExecuteUbergraph_AthenaMatchmakingOptionsDisplay_v2_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_text_Variable = Temp_text_Variable;
@@ -953,6 +1060,4 @@ void UAthenaMatchmakingOptionsDisplay_v2_C::ExecuteUbergraph_AthenaMatchmakingOp
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -65,11 +62,8 @@ public:
 	class FName                                  SettingTabToOpen;                                  // 0x5E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TSoftClassPtr<class UUserWidget>             AthenaMOTDPanel;                                   // 0x5F0(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BladeMenu_MainMenu_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UBladeMenu_MainMenu_C* GetDefaultObj();
 
 	void Close(class UWidget* CallFunc_FindParentWidgetOfType_ReturnValue, class UDualBladeMenu_C* K2Node_DynamicCast_AsDual_Blade_Menu, bool K2Node_DynamicCast_bSuccess);
 	void ShowMinigameButtons(class AFortVolume* Volume, class AFortPlayerControllerAthena* Player, class AFortGameStateAthena* FortGameStateAthena, bool* bResult, bool HasPermissionToStart, class AFortPlayerPawn* PlayerPawn, class AFortMinigame* Minigame, bool bShow, const struct FUniqueNetIdRepl& CallFunc_GetGameAccountId_ReturnValue, class AFortPlayerPawn* CallFunc_GetPlayerPawn_ReturnValue, class AFortMinigame* CallFunc_GetMinigameForVolume_ReturnValue, class UFortLevelSaveComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FUniqueNetIdRepl& CallFunc_GetAccountIdOfOwner_ReturnValue, bool CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_IsCreativeLTMPlaylist_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsDead_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_IsCuratedHub_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_2, bool CallFunc_IsMinigameStarter_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_HasStarted_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_Not_PreBool_ReturnValue_3, bool CallFunc_BooleanOR_ReturnValue_1);
@@ -135,6 +129,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

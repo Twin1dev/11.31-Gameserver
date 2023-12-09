@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass RejoinWindow.RejoinWindow_C
+// (None)
+
+class UClass* URejoinWindow_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("RejoinWindow_C");
+
+	return Clss;
+}
+
+
+// RejoinWindow_C RejoinWindow.Default__RejoinWindow_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class URejoinWindow_C* URejoinWindow_C::GetDefaultObj()
+{
+	static class URejoinWindow_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<URejoinWindow_C*>(URejoinWindow_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function RejoinWindow.RejoinWindow_C.OnRequestRejoinRetry__DelegateSignature
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void URejoinWindow_C::OnRequestRejoinRetry__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("RejoinWindow_C", "OnRequestRejoinRetry__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::URejoinWindow_C_OnRequestRejoinRetry__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RejoinWindow_C", "OnRequestRejoinRetry__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,17 +64,17 @@ void URejoinWindow_C::OnRequestRejoinRetry__DelegateSignature()
 
 void URejoinWindow_C::OnRequestAbandon__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("RejoinWindow_C", "OnRequestAbandon__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::URejoinWindow_C_OnRequestAbandon__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RejoinWindow_C", "OnRequestAbandon__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCNL_PurpleStuff.GCNL_PurpleStuff_C
+// (Actor)
+
+class UClass* AGCNL_PurpleStuff_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCNL_PurpleStuff_C");
+
+	return Clss;
+}
+
+
+// GCNL_PurpleStuff_C GCNL_PurpleStuff.Default__GCNL_PurpleStuff_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCNL_PurpleStuff_C* AGCNL_PurpleStuff_C::GetDefaultObj()
+{
+	static class AGCNL_PurpleStuff_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCNL_PurpleStuff_C*>(AGCNL_PurpleStuff_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCNL_PurpleStuff.GCNL_PurpleStuff_C.OnRemove
@@ -24,9 +49,12 @@ namespace SDK
 
 bool AGCNL_PurpleStuff_C::OnRemove(class AActor* MyTarget, struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("GCNL_PurpleStuff_C", "OnRemove");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_PurpleStuff_C_OnRemove_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_PurpleStuff_C", "OnRemove");
+
+	Params::AGCNL_PurpleStuff_C_OnRemove_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -49,9 +77,12 @@ bool AGCNL_PurpleStuff_C::OnRemove(class AActor* MyTarget, struct FGameplayCuePa
 
 bool AGCNL_PurpleStuff_C::OnActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, class APlayerPawn_Athena_Generic_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena_Generic, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GCNL_PurpleStuff_C", "OnActive");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_PurpleStuff_C_OnActive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_PurpleStuff_C", "OnActive");
+
+	Params::AGCNL_PurpleStuff_C_OnActive_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -71,12 +102,14 @@ bool AGCNL_PurpleStuff_C::OnActive(class AActor* MyTarget, struct FGameplayCuePa
 
 void AGCNL_PurpleStuff_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("GCNL_PurpleStuff_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_PurpleStuff_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_PurpleStuff_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -88,9 +121,12 @@ void AGCNL_PurpleStuff_C::ReceiveBeginPlay()
 
 void AGCNL_PurpleStuff_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("GCNL_PurpleStuff_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_PurpleStuff_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_PurpleStuff_C", "ReceiveTick");
+
+	Params::AGCNL_PurpleStuff_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -110,9 +146,12 @@ void AGCNL_PurpleStuff_C::ReceiveTick(float DeltaSeconds)
 
 void AGCNL_PurpleStuff_C::ExecuteUbergraph_GCNL_PurpleStuff(int32 EntryPoint, float K2Node_Event_DeltaSeconds, bool CallFunc_IsValid_ReturnValue, float CallFunc_GetShield_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCNL_PurpleStuff_C", "ExecuteUbergraph_GCNL_PurpleStuff");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_PurpleStuff_C_ExecuteUbergraph_GCNL_PurpleStuff_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_PurpleStuff_C", "ExecuteUbergraph_GCNL_PurpleStuff");
+
+	Params::AGCNL_PurpleStuff_C_ExecuteUbergraph_GCNL_PurpleStuff_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_DeltaSeconds = K2Node_Event_DeltaSeconds;
@@ -126,6 +165,4 @@ void AGCNL_PurpleStuff_C::ExecuteUbergraph_GCNL_PurpleStuff(int32 EntryPoint, fl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ChallengeInGameTreeEntry_Header.ChallengeInGameTreeEntry_Header_C
+// (None)
+
+class UClass* UChallengeInGameTreeEntry_Header_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChallengeInGameTreeEntry_Header_C");
+
+	return Clss;
+}
+
+
+// ChallengeInGameTreeEntry_Header_C ChallengeInGameTreeEntry_Header.Default__ChallengeInGameTreeEntry_Header_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChallengeInGameTreeEntry_Header_C* UChallengeInGameTreeEntry_Header_C::GetDefaultObj()
+{
+	static class UChallengeInGameTreeEntry_Header_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChallengeInGameTreeEntry_Header_C*>(UChallengeInGameTreeEntry_Header_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ChallengeInGameTreeEntry_Header.ChallengeInGameTreeEntry_Header_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UChallengeInGameTreeEntry_Header_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeInGameTreeEntry_Header_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "OnMouseEnter");
+
+	Params::UChallengeInGameTreeEntry_Header_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -42,9 +70,12 @@ void UChallengeInGameTreeEntry_Header_C::OnMouseEnter(const struct FGeometry& My
 
 void UChallengeInGameTreeEntry_Header_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeInGameTreeEntry_Header_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "OnMouseLeave");
+
+	Params::UChallengeInGameTreeEntry_Header_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -60,9 +91,12 @@ void UChallengeInGameTreeEntry_Header_C::OnMouseLeave(struct FPointerEvent& Mous
 
 void UChallengeInGameTreeEntry_Header_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeInGameTreeEntry_Header_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "BP_OnItemExpansionChanged");
+
+	Params::UChallengeInGameTreeEntry_Header_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -78,9 +112,12 @@ void UChallengeInGameTreeEntry_Header_C::BP_OnItemExpansionChanged(bool bIsExpan
 
 void UChallengeInGameTreeEntry_Header_C::OnChallengeSetEstablished(struct FFortChallengeSetStyle& DisplayStyle)
 {
-	static auto Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "OnChallengeSetEstablished");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeInGameTreeEntry_Header_C_OnChallengeSetEstablished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "OnChallengeSetEstablished");
+
+	Params::UChallengeInGameTreeEntry_Header_C_OnChallengeSetEstablished_Params Parms{};
 
 	Parms.DisplayStyle = DisplayStyle;
 
@@ -107,9 +144,12 @@ void UChallengeInGameTreeEntry_Header_C::OnChallengeSetEstablished(struct FFortC
 
 void UChallengeInGameTreeEntry_Header_C::ExecuteUbergraph_ChallengeInGameTreeEntry_Header(int32 EntryPoint, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FPointerEvent& K2Node_Event_MouseEvent, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, bool K2Node_Event_bIsExpanded, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_1, const struct FFortChallengeSetStyle& K2Node_Event_DisplayStyle, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "ExecuteUbergraph_ChallengeInGameTreeEntry_Header");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeInGameTreeEntry_Header_C_ExecuteUbergraph_ChallengeInGameTreeEntry_Header_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeInGameTreeEntry_Header_C", "ExecuteUbergraph_ChallengeInGameTreeEntry_Header");
+
+	Params::UChallengeInGameTreeEntry_Header_C_ExecuteUbergraph_ChallengeInGameTreeEntry_Header_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
@@ -130,6 +170,4 @@ void UChallengeInGameTreeEntry_Header_C::ExecuteUbergraph_ChallengeInGameTreeEnt
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

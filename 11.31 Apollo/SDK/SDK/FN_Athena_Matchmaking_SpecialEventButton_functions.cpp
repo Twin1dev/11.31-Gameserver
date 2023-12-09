@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass Athena_Matchmaking_SpecialEventButton.Athena_Matchmaking_SpecialEventButton_C
+// (None)
+
+class UClass* UAthena_Matchmaking_SpecialEventButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Athena_Matchmaking_SpecialEventButton_C");
+
+	return Clss;
+}
+
+
+// Athena_Matchmaking_SpecialEventButton_C Athena_Matchmaking_SpecialEventButton.Default__Athena_Matchmaking_SpecialEventButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthena_Matchmaking_SpecialEventButton_C* UAthena_Matchmaking_SpecialEventButton_C::GetDefaultObj()
+{
+	static class UAthena_Matchmaking_SpecialEventButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthena_Matchmaking_SpecialEventButton_C*>(UAthena_Matchmaking_SpecialEventButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Athena_Matchmaking_SpecialEventButton.Athena_Matchmaking_SpecialEventButton_C.SetupLTM
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UAthena_Matchmaking_SpecialEventButton_C::SetupLTM()
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_SpecialEventButton_C", "SetupLTM");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_SpecialEventButton_C_SetupLTM_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_SpecialEventButton_C", "SetupLTM");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UAthena_Matchmaking_SpecialEventButton_C::SetupLTM()
 
 void UAthena_Matchmaking_SpecialEventButton_C::SetLTMSplashArt(TSoftObjectPtr<class UTexture2D> NewParam)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_SpecialEventButton_C", "SetLTMSplashArt");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_SpecialEventButton_C_SetLTMSplashArt_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_SpecialEventButton_C", "SetLTMSplashArt");
+
+	Params::UAthena_Matchmaking_SpecialEventButton_C_SetLTMSplashArt_Params Parms{};
 
 	Parms.NewParam = NewParam;
 
@@ -56,9 +86,12 @@ void UAthena_Matchmaking_SpecialEventButton_C::SetLTMSplashArt(TSoftObjectPtr<cl
 
 void UAthena_Matchmaking_SpecialEventButton_C::FirstTime_NewBang(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_SpecialEventButton_C", "FirstTime_NewBang");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_SpecialEventButton_C_FirstTime_NewBang_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_SpecialEventButton_C", "FirstTime_NewBang");
+
+	Params::UAthena_Matchmaking_SpecialEventButton_C_FirstTime_NewBang_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -73,12 +106,14 @@ void UAthena_Matchmaking_SpecialEventButton_C::FirstTime_NewBang(class UUMGSeque
 
 void UAthena_Matchmaking_SpecialEventButton_C::PlayFirstTimeBang()
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_SpecialEventButton_C", "PlayFirstTimeBang");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_SpecialEventButton_C_PlayFirstTimeBang_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_SpecialEventButton_C", "PlayFirstTimeBang");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -89,12 +124,14 @@ void UAthena_Matchmaking_SpecialEventButton_C::PlayFirstTimeBang()
 
 void UAthena_Matchmaking_SpecialEventButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_SpecialEventButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_SpecialEventButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_SpecialEventButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -106,9 +143,12 @@ void UAthena_Matchmaking_SpecialEventButton_C::Construct()
 
 void UAthena_Matchmaking_SpecialEventButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_SpecialEventButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_SpecialEventButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_SpecialEventButton_C", "PreConstruct");
+
+	Params::UAthena_Matchmaking_SpecialEventButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -136,9 +176,12 @@ void UAthena_Matchmaking_SpecialEventButton_C::PreConstruct(bool IsDesignTime)
 
 void UAthena_Matchmaking_SpecialEventButton_C::ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, class UAthena_Matchmaking_GameModeButton_C* K2Node_DynamicCast_AsAthena_Matchmaking_Game_Mode_Button, bool K2Node_DynamicCast_bSuccess, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, bool K2Node_Event_IsDesignTime, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("Athena_Matchmaking_SpecialEventButton_C", "ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Athena_Matchmaking_SpecialEventButton_C", "ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton");
+
+	Params::UAthena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -160,6 +203,4 @@ void UAthena_Matchmaking_SpecialEventButton_C::ExecuteUbergraph_Athena_Matchmaki
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

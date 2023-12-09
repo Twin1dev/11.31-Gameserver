@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class MediaAssets.MediaSource
+// (None)
+
+class UClass* UMediaSource::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MediaSource");
+
+	return Clss;
+}
+
+
+// MediaSource MediaAssets.Default__MediaSource
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMediaSource* UMediaSource::GetDefaultObj()
+{
+	static class UMediaSource* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMediaSource*>(UMediaSource::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MediaAssets.MediaSource.Validate
 // (Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -22,18 +47,21 @@ namespace SDK
 
 bool UMediaSource::Validate()
 {
-	static auto Func = Class->GetFunction("MediaSource", "Validate");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaSource_Validate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaSource", "Validate");
+
+	Params::UMediaSource_Validate_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -48,20 +76,23 @@ bool UMediaSource::Validate()
 
 void UMediaSource::SetMediaOptionString(class FName& Key, const class FString& Value)
 {
-	static auto Func = Class->GetFunction("MediaSource", "SetMediaOptionString");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaSource_SetMediaOptionString_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaSource", "SetMediaOptionString");
+
+	Params::UMediaSource_SetMediaOptionString_Params Parms{};
 
 	Parms.Key = Key;
 	Parms.Value = Value;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -74,20 +105,23 @@ void UMediaSource::SetMediaOptionString(class FName& Key, const class FString& V
 
 void UMediaSource::SetMediaOptionInt64(class FName& Key, int64 Value)
 {
-	static auto Func = Class->GetFunction("MediaSource", "SetMediaOptionInt64");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaSource_SetMediaOptionInt64_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaSource", "SetMediaOptionInt64");
+
+	Params::UMediaSource_SetMediaOptionInt64_Params Parms{};
 
 	Parms.Key = Key;
 	Parms.Value = Value;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -100,20 +134,23 @@ void UMediaSource::SetMediaOptionInt64(class FName& Key, int64 Value)
 
 void UMediaSource::SetMediaOptionFloat(class FName& Key, float Value)
 {
-	static auto Func = Class->GetFunction("MediaSource", "SetMediaOptionFloat");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaSource_SetMediaOptionFloat_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaSource", "SetMediaOptionFloat");
+
+	Params::UMediaSource_SetMediaOptionFloat_Params Parms{};
 
 	Parms.Key = Key;
 	Parms.Value = Value;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -126,20 +163,23 @@ void UMediaSource::SetMediaOptionFloat(class FName& Key, float Value)
 
 void UMediaSource::SetMediaOptionBool(class FName& Key, bool Value)
 {
-	static auto Func = Class->GetFunction("MediaSource", "SetMediaOptionBool");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaSource_SetMediaOptionBool_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaSource", "SetMediaOptionBool");
+
+	Params::UMediaSource_SetMediaOptionBool_Params Parms{};
 
 	Parms.Key = Key;
 	Parms.Value = Value;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -151,21 +191,108 @@ void UMediaSource::SetMediaOptionBool(class FName& Key, bool Value)
 
 class FString UMediaSource::GetUrl()
 {
-	static auto Func = Class->GetFunction("MediaSource", "GetUrl");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaSource_GetUrl_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaSource", "GetUrl");
+
+	Params::UMediaSource_GetUrl_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class MediaAssets.BaseMediaSource
+// (None)
+
+class UClass* UBaseMediaSource::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BaseMediaSource");
+
+	return Clss;
+}
+
+
+// BaseMediaSource MediaAssets.Default__BaseMediaSource
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UBaseMediaSource* UBaseMediaSource::GetDefaultObj()
+{
+	static class UBaseMediaSource* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBaseMediaSource*>(UBaseMediaSource::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MediaAssets.StreamMediaSource
+// (None)
+
+class UClass* UStreamMediaSource::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("StreamMediaSource");
+
+	return Clss;
+}
+
+
+// StreamMediaSource MediaAssets.Default__StreamMediaSource
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UStreamMediaSource* UStreamMediaSource::GetDefaultObj()
+{
+	static class UStreamMediaSource* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UStreamMediaSource*>(UStreamMediaSource::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MediaAssets.FileMediaSource
+// (None)
+
+class UClass* UFileMediaSource::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FileMediaSource");
+
+	return Clss;
+}
+
+
+// FileMediaSource MediaAssets.Default__FileMediaSource
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UFileMediaSource* UFileMediaSource::GetDefaultObj()
+{
+	static class UFileMediaSource* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFileMediaSource*>(UFileMediaSource::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -176,20 +303,51 @@ class FString UMediaSource::GetUrl()
 
 void UFileMediaSource::SetFilePath(const class FString& Path)
 {
-	static auto Func = Class->GetFunction("FileMediaSource", "SetFilePath");
+	static class UFunction* Func = nullptr;
 
-	Params::UFileMediaSource_SetFilePath_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FileMediaSource", "SetFilePath");
+
+	Params::UFileMediaSource_SetFilePath_Params Parms{};
 
 	Parms.Path = Path;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class MediaAssets.MediaBlueprintFunctionLibrary
+// (None)
+
+class UClass* UMediaBlueprintFunctionLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MediaBlueprintFunctionLibrary");
+
+	return Clss;
+}
+
+
+// MediaBlueprintFunctionLibrary MediaAssets.Default__MediaBlueprintFunctionLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMediaBlueprintFunctionLibrary* UMediaBlueprintFunctionLibrary::GetDefaultObj()
+{
+	static class UMediaBlueprintFunctionLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMediaBlueprintFunctionLibrary*>(UMediaBlueprintFunctionLibrary::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -201,22 +359,25 @@ void UFileMediaSource::SetFilePath(const class FString& Path)
 
 void UMediaBlueprintFunctionLibrary::EnumerateWebcamCaptureDevices(TArray<struct FMediaCaptureDevice>* OutDevices, int32 Filter)
 {
-	static auto Func = Class->GetFunction("MediaBlueprintFunctionLibrary", "EnumerateWebcamCaptureDevices");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaBlueprintFunctionLibrary_EnumerateWebcamCaptureDevices_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaBlueprintFunctionLibrary", "EnumerateWebcamCaptureDevices");
+
+	Params::UMediaBlueprintFunctionLibrary_EnumerateWebcamCaptureDevices_Params Parms{};
 
 	Parms.Filter = Filter;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (OutDevices != nullptr)
-		*OutDevices = Parms.OutDevices;
+		*OutDevices = std::move(Parms.OutDevices);
 
 }
 
@@ -229,22 +390,25 @@ void UMediaBlueprintFunctionLibrary::EnumerateWebcamCaptureDevices(TArray<struct
 
 void UMediaBlueprintFunctionLibrary::EnumerateVideoCaptureDevices(TArray<struct FMediaCaptureDevice>* OutDevices, int32 Filter)
 {
-	static auto Func = Class->GetFunction("MediaBlueprintFunctionLibrary", "EnumerateVideoCaptureDevices");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaBlueprintFunctionLibrary_EnumerateVideoCaptureDevices_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaBlueprintFunctionLibrary", "EnumerateVideoCaptureDevices");
+
+	Params::UMediaBlueprintFunctionLibrary_EnumerateVideoCaptureDevices_Params Parms{};
 
 	Parms.Filter = Filter;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (OutDevices != nullptr)
-		*OutDevices = Parms.OutDevices;
+		*OutDevices = std::move(Parms.OutDevices);
 
 }
 
@@ -257,23 +421,54 @@ void UMediaBlueprintFunctionLibrary::EnumerateVideoCaptureDevices(TArray<struct 
 
 void UMediaBlueprintFunctionLibrary::EnumerateAudioCaptureDevices(TArray<struct FMediaCaptureDevice>* OutDevices, int32 Filter)
 {
-	static auto Func = Class->GetFunction("MediaBlueprintFunctionLibrary", "EnumerateAudioCaptureDevices");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaBlueprintFunctionLibrary_EnumerateAudioCaptureDevices_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaBlueprintFunctionLibrary", "EnumerateAudioCaptureDevices");
+
+	Params::UMediaBlueprintFunctionLibrary_EnumerateAudioCaptureDevices_Params Parms{};
 
 	Parms.Filter = Filter;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (OutDevices != nullptr)
-		*OutDevices = Parms.OutDevices;
+		*OutDevices = std::move(Parms.OutDevices);
 
+}
+
+
+// Class MediaAssets.MediaPlayer
+// (None)
+
+class UClass* UMediaPlayer::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MediaPlayer");
+
+	return Clss;
+}
+
+
+// MediaPlayer MediaAssets.Default__MediaPlayer
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMediaPlayer* UMediaPlayer::GetDefaultObj()
+{
+	static class UMediaPlayer* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMediaPlayer*>(UMediaPlayer::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -284,18 +479,21 @@ void UMediaBlueprintFunctionLibrary::EnumerateAudioCaptureDevices(TArray<struct 
 
 bool UMediaPlayer::SupportsSeeking()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "SupportsSeeking");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_SupportsSeeking_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "SupportsSeeking");
+
+	Params::UMediaPlayer_SupportsSeeking_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -309,18 +507,21 @@ bool UMediaPlayer::SupportsSeeking()
 
 bool UMediaPlayer::SupportsScrubbing()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "SupportsScrubbing");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_SupportsScrubbing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "SupportsScrubbing");
+
+	Params::UMediaPlayer_SupportsScrubbing_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -336,20 +537,23 @@ bool UMediaPlayer::SupportsScrubbing()
 
 bool UMediaPlayer::SupportsRate(float Rate, bool Unthinned)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "SupportsRate");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_SupportsRate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "SupportsRate");
+
+	Params::UMediaPlayer_SupportsRate_Params Parms{};
 
 	Parms.Rate = Rate;
 	Parms.Unthinned = Unthinned;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -365,20 +569,23 @@ bool UMediaPlayer::SupportsRate(float Rate, bool Unthinned)
 
 bool UMediaPlayer::SetViewRotation(struct FRotator& Rotation, bool Absolute)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "SetViewRotation");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_SetViewRotation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "SetViewRotation");
+
+	Params::UMediaPlayer_SetViewRotation_Params Parms{};
 
 	Parms.Rotation = Rotation;
 	Parms.Absolute = Absolute;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -395,21 +602,24 @@ bool UMediaPlayer::SetViewRotation(struct FRotator& Rotation, bool Absolute)
 
 bool UMediaPlayer::SetViewField(float Horizontal, float Vertical, bool Absolute)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "SetViewField");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_SetViewField_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "SetViewField");
+
+	Params::UMediaPlayer_SetViewField_Params Parms{};
 
 	Parms.Horizontal = Horizontal;
 	Parms.Vertical = Vertical;
 	Parms.Absolute = Absolute;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -426,21 +636,24 @@ bool UMediaPlayer::SetViewField(float Horizontal, float Vertical, bool Absolute)
 
 bool UMediaPlayer::SetVideoTrackFrameRate(int32 TrackIndex, int32 FormatIndex, float FrameRate)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "SetVideoTrackFrameRate");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_SetVideoTrackFrameRate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "SetVideoTrackFrameRate");
+
+	Params::UMediaPlayer_SetVideoTrackFrameRate_Params Parms{};
 
 	Parms.TrackIndex = TrackIndex;
 	Parms.FormatIndex = FormatIndex;
 	Parms.FrameRate = FrameRate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -457,21 +670,24 @@ bool UMediaPlayer::SetVideoTrackFrameRate(int32 TrackIndex, int32 FormatIndex, f
 
 bool UMediaPlayer::SetTrackFormat(enum class EMediaPlayerTrack TrackType, int32 TrackIndex, int32 FormatIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "SetTrackFormat");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_SetTrackFormat_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "SetTrackFormat");
+
+	Params::UMediaPlayer_SetTrackFormat_Params Parms{};
 
 	Parms.TrackType = TrackType;
 	Parms.TrackIndex = TrackIndex;
 	Parms.FormatIndex = FormatIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -485,19 +701,22 @@ bool UMediaPlayer::SetTrackFormat(enum class EMediaPlayerTrack TrackType, int32 
 
 void UMediaPlayer::SetTimeDelay(const struct FTimespan& TimeDelay)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "SetTimeDelay");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_SetTimeDelay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "SetTimeDelay");
+
+	Params::UMediaPlayer_SetTimeDelay_Params Parms{};
 
 	Parms.TimeDelay = TimeDelay;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -510,19 +729,22 @@ void UMediaPlayer::SetTimeDelay(const struct FTimespan& TimeDelay)
 
 bool UMediaPlayer::SetRate(float Rate)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "SetRate");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_SetRate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "SetRate");
+
+	Params::UMediaPlayer_SetRate_Params Parms{};
 
 	Parms.Rate = Rate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -537,19 +759,22 @@ bool UMediaPlayer::SetRate(float Rate)
 
 bool UMediaPlayer::SetNativeVolume(float Volume)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "SetNativeVolume");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_SetNativeVolume_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "SetNativeVolume");
+
+	Params::UMediaPlayer_SetNativeVolume_Params Parms{};
 
 	Parms.Volume = Volume;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -563,19 +788,22 @@ bool UMediaPlayer::SetNativeVolume(float Volume)
 
 void UMediaPlayer::SetMediaOptions(class UMediaSource* Options)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "SetMediaOptions");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_SetMediaOptions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "SetMediaOptions");
+
+	Params::UMediaPlayer_SetMediaOptions_Params Parms{};
 
 	Parms.Options = Options;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -588,19 +816,22 @@ void UMediaPlayer::SetMediaOptions(class UMediaSource* Options)
 
 bool UMediaPlayer::SetLooping(bool Looping)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "SetLooping");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_SetLooping_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "SetLooping");
+
+	Params::UMediaPlayer_SetLooping_Params Parms{};
 
 	Parms.Looping = Looping;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -614,19 +845,22 @@ bool UMediaPlayer::SetLooping(bool Looping)
 
 void UMediaPlayer::SetDesiredPlayerName(class FName PlayerName)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "SetDesiredPlayerName");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_SetDesiredPlayerName_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "SetDesiredPlayerName");
+
+	Params::UMediaPlayer_SetDesiredPlayerName_Params Parms{};
 
 	Parms.PlayerName = PlayerName;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -638,19 +872,22 @@ void UMediaPlayer::SetDesiredPlayerName(class FName PlayerName)
 
 void UMediaPlayer::SetBlockOnTime(struct FTimespan& Time)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "SetBlockOnTime");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_SetBlockOnTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "SetBlockOnTime");
+
+	Params::UMediaPlayer_SetBlockOnTime_Params Parms{};
 
 	Parms.Time = Time;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -664,20 +901,23 @@ void UMediaPlayer::SetBlockOnTime(struct FTimespan& Time)
 
 bool UMediaPlayer::SelectTrack(enum class EMediaPlayerTrack TrackType, int32 TrackIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "SelectTrack");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_SelectTrack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "SelectTrack");
+
+	Params::UMediaPlayer_SelectTrack_Params Parms{};
 
 	Parms.TrackType = TrackType;
 	Parms.TrackIndex = TrackIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -692,19 +932,22 @@ bool UMediaPlayer::SelectTrack(enum class EMediaPlayerTrack TrackType, int32 Tra
 
 bool UMediaPlayer::Seek(struct FTimespan& Time)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "Seek");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_Seek_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "Seek");
+
+	Params::UMediaPlayer_Seek_Params Parms{};
 
 	Parms.Time = Time;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -718,18 +961,21 @@ bool UMediaPlayer::Seek(struct FTimespan& Time)
 
 bool UMediaPlayer::Rewind()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "Rewind");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_Rewind_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "Rewind");
+
+	Params::UMediaPlayer_Rewind_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -743,18 +989,21 @@ bool UMediaPlayer::Rewind()
 
 bool UMediaPlayer::Reopen()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "Reopen");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_Reopen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "Reopen");
+
+	Params::UMediaPlayer_Reopen_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -768,18 +1017,21 @@ bool UMediaPlayer::Reopen()
 
 bool UMediaPlayer::Previous()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "Previous");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_Previous_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "Previous");
+
+	Params::UMediaPlayer_Previous_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -792,18 +1044,20 @@ bool UMediaPlayer::Previous()
 
 void UMediaPlayer::PlayAndSeek()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "PlayAndSeek");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_PlayAndSeek_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "PlayAndSeek");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -815,18 +1069,21 @@ void UMediaPlayer::PlayAndSeek()
 
 bool UMediaPlayer::Play()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "Play");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_Play_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "Play");
+
+	Params::UMediaPlayer_Play_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -840,18 +1097,21 @@ bool UMediaPlayer::Play()
 
 bool UMediaPlayer::Pause()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "Pause");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_Pause_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "Pause");
+
+	Params::UMediaPlayer_Pause_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -866,19 +1126,22 @@ bool UMediaPlayer::Pause()
 
 bool UMediaPlayer::OpenUrl(const class FString& URL)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "OpenUrl");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_OpenUrl_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "OpenUrl");
+
+	Params::UMediaPlayer_OpenUrl_Params Parms{};
 
 	Parms.URL = URL;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -894,20 +1157,23 @@ bool UMediaPlayer::OpenUrl(const class FString& URL)
 
 bool UMediaPlayer::OpenSourceWithOptions(class UMediaSource* MediaSource, struct FMediaPlayerOptions& Options)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "OpenSourceWithOptions");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_OpenSourceWithOptions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "OpenSourceWithOptions");
+
+	Params::UMediaPlayer_OpenSourceWithOptions_Params Parms{};
 
 	Parms.MediaSource = MediaSource;
 	Parms.Options = Options;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -925,22 +1191,25 @@ bool UMediaPlayer::OpenSourceWithOptions(class UMediaSource* MediaSource, struct
 
 void UMediaPlayer::OpenSourceLatent(class UObject* WorldContextObject, const struct FLatentActionInfo& LatentInfo, class UMediaSource* MediaSource, struct FMediaPlayerOptions& Options, bool* bSuccess)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "OpenSourceLatent");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_OpenSourceLatent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "OpenSourceLatent");
+
+	Params::UMediaPlayer_OpenSourceLatent_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.LatentInfo = LatentInfo;
 	Parms.MediaSource = MediaSource;
 	Parms.Options = Options;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (bSuccess != nullptr)
 		*bSuccess = Parms.bSuccess;
@@ -956,19 +1225,22 @@ void UMediaPlayer::OpenSourceLatent(class UObject* WorldContextObject, const str
 
 bool UMediaPlayer::OpenSource(class UMediaSource* MediaSource)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "OpenSource");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_OpenSource_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "OpenSource");
+
+	Params::UMediaPlayer_OpenSource_Params Parms{};
 
 	Parms.MediaSource = MediaSource;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -984,20 +1256,23 @@ bool UMediaPlayer::OpenSource(class UMediaSource* MediaSource)
 
 bool UMediaPlayer::OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, int32 Index)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "OpenPlaylistIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_OpenPlaylistIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "OpenPlaylistIndex");
+
+	Params::UMediaPlayer_OpenPlaylistIndex_Params Parms{};
 
 	Parms.InPlaylist = InPlaylist;
 	Parms.Index = Index;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1012,19 +1287,22 @@ bool UMediaPlayer::OpenPlaylistIndex(class UMediaPlaylist* InPlaylist, int32 Ind
 
 bool UMediaPlayer::OpenPlaylist(class UMediaPlaylist* InPlaylist)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "OpenPlaylist");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_OpenPlaylist_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "OpenPlaylist");
+
+	Params::UMediaPlayer_OpenPlaylist_Params Parms{};
 
 	Parms.InPlaylist = InPlaylist;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1039,19 +1317,22 @@ bool UMediaPlayer::OpenPlaylist(class UMediaPlaylist* InPlaylist)
 
 bool UMediaPlayer::OpenFile(const class FString& FilePath)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "OpenFile");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_OpenFile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "OpenFile");
+
+	Params::UMediaPlayer_OpenFile_Params Parms{};
 
 	Parms.FilePath = FilePath;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1065,18 +1346,21 @@ bool UMediaPlayer::OpenFile(const class FString& FilePath)
 
 bool UMediaPlayer::Next()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "Next");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_Next_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "Next");
+
+	Params::UMediaPlayer_Next_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1090,18 +1374,21 @@ bool UMediaPlayer::Next()
 
 bool UMediaPlayer::IsReady()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "IsReady");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_IsReady_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "IsReady");
+
+	Params::UMediaPlayer_IsReady_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1115,18 +1402,21 @@ bool UMediaPlayer::IsReady()
 
 bool UMediaPlayer::IsPreparing()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "IsPreparing");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_IsPreparing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "IsPreparing");
+
+	Params::UMediaPlayer_IsPreparing_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1140,18 +1430,21 @@ bool UMediaPlayer::IsPreparing()
 
 bool UMediaPlayer::IsPlaying()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "IsPlaying");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_IsPlaying_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "IsPlaying");
+
+	Params::UMediaPlayer_IsPlaying_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1165,18 +1458,21 @@ bool UMediaPlayer::IsPlaying()
 
 bool UMediaPlayer::IsPaused()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "IsPaused");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_IsPaused_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "IsPaused");
+
+	Params::UMediaPlayer_IsPaused_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1190,18 +1486,21 @@ bool UMediaPlayer::IsPaused()
 
 bool UMediaPlayer::IsLooping()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "IsLooping");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_IsLooping_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "IsLooping");
+
+	Params::UMediaPlayer_IsLooping_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1215,18 +1514,21 @@ bool UMediaPlayer::IsLooping()
 
 bool UMediaPlayer::IsConnecting()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "IsConnecting");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_IsConnecting_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "IsConnecting");
+
+	Params::UMediaPlayer_IsConnecting_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1240,18 +1542,21 @@ bool UMediaPlayer::IsConnecting()
 
 bool UMediaPlayer::IsClosed()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "IsClosed");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_IsClosed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "IsClosed");
+
+	Params::UMediaPlayer_IsClosed_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1265,18 +1570,21 @@ bool UMediaPlayer::IsClosed()
 
 bool UMediaPlayer::IsBuffering()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "IsBuffering");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_IsBuffering_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "IsBuffering");
+
+	Params::UMediaPlayer_IsBuffering_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1290,18 +1598,21 @@ bool UMediaPlayer::IsBuffering()
 
 bool UMediaPlayer::HasError()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "HasError");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_HasError_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "HasError");
+
+	Params::UMediaPlayer_HasError_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1315,18 +1626,21 @@ bool UMediaPlayer::HasError()
 
 struct FRotator UMediaPlayer::GetViewRotation()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetViewRotation");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetViewRotation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetViewRotation");
+
+	Params::UMediaPlayer_GetViewRotation_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1342,20 +1656,23 @@ struct FRotator UMediaPlayer::GetViewRotation()
 
 class FString UMediaPlayer::GetVideoTrackType(int32 TrackIndex, int32 FormatIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetVideoTrackType");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetVideoTrackType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetVideoTrackType");
+
+	Params::UMediaPlayer_GetVideoTrackType_Params Parms{};
 
 	Parms.TrackIndex = TrackIndex;
 	Parms.FormatIndex = FormatIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1371,20 +1688,23 @@ class FString UMediaPlayer::GetVideoTrackType(int32 TrackIndex, int32 FormatInde
 
 struct FFloatRange UMediaPlayer::GetVideoTrackFrameRates(int32 TrackIndex, int32 FormatIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetVideoTrackFrameRates");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetVideoTrackFrameRates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetVideoTrackFrameRates");
+
+	Params::UMediaPlayer_GetVideoTrackFrameRates_Params Parms{};
 
 	Parms.TrackIndex = TrackIndex;
 	Parms.FormatIndex = FormatIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1400,20 +1720,23 @@ struct FFloatRange UMediaPlayer::GetVideoTrackFrameRates(int32 TrackIndex, int32
 
 float UMediaPlayer::GetVideoTrackFrameRate(int32 TrackIndex, int32 FormatIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetVideoTrackFrameRate");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetVideoTrackFrameRate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetVideoTrackFrameRate");
+
+	Params::UMediaPlayer_GetVideoTrackFrameRate_Params Parms{};
 
 	Parms.TrackIndex = TrackIndex;
 	Parms.FormatIndex = FormatIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1429,20 +1752,23 @@ float UMediaPlayer::GetVideoTrackFrameRate(int32 TrackIndex, int32 FormatIndex)
 
 struct FIntPoint UMediaPlayer::GetVideoTrackDimensions(int32 TrackIndex, int32 FormatIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetVideoTrackDimensions");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetVideoTrackDimensions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetVideoTrackDimensions");
+
+	Params::UMediaPlayer_GetVideoTrackDimensions_Params Parms{};
 
 	Parms.TrackIndex = TrackIndex;
 	Parms.FormatIndex = FormatIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1458,20 +1784,23 @@ struct FIntPoint UMediaPlayer::GetVideoTrackDimensions(int32 TrackIndex, int32 F
 
 float UMediaPlayer::GetVideoTrackAspectRatio(int32 TrackIndex, int32 FormatIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetVideoTrackAspectRatio");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetVideoTrackAspectRatio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetVideoTrackAspectRatio");
+
+	Params::UMediaPlayer_GetVideoTrackAspectRatio_Params Parms{};
 
 	Parms.TrackIndex = TrackIndex;
 	Parms.FormatIndex = FormatIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1485,18 +1814,21 @@ float UMediaPlayer::GetVideoTrackAspectRatio(int32 TrackIndex, int32 FormatIndex
 
 float UMediaPlayer::GetVerticalFieldOfView()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetVerticalFieldOfView");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetVerticalFieldOfView_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetVerticalFieldOfView");
+
+	Params::UMediaPlayer_GetVerticalFieldOfView_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1510,18 +1842,21 @@ float UMediaPlayer::GetVerticalFieldOfView()
 
 class FString UMediaPlayer::GetUrl()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetUrl");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetUrl_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetUrl");
+
+	Params::UMediaPlayer_GetUrl_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1537,20 +1872,23 @@ class FString UMediaPlayer::GetUrl()
 
 class FString UMediaPlayer::GetTrackLanguage(enum class EMediaPlayerTrack TrackType, int32 TrackIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetTrackLanguage");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetTrackLanguage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetTrackLanguage");
+
+	Params::UMediaPlayer_GetTrackLanguage_Params Parms{};
 
 	Parms.TrackType = TrackType;
 	Parms.TrackIndex = TrackIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1566,20 +1904,23 @@ class FString UMediaPlayer::GetTrackLanguage(enum class EMediaPlayerTrack TrackT
 
 int32 UMediaPlayer::GetTrackFormat(enum class EMediaPlayerTrack TrackType, int32 TrackIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetTrackFormat");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetTrackFormat_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetTrackFormat");
+
+	Params::UMediaPlayer_GetTrackFormat_Params Parms{};
 
 	Parms.TrackType = TrackType;
 	Parms.TrackIndex = TrackIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1595,20 +1936,23 @@ int32 UMediaPlayer::GetTrackFormat(enum class EMediaPlayerTrack TrackType, int32
 
 class FText UMediaPlayer::GetTrackDisplayName(enum class EMediaPlayerTrack TrackType, int32 TrackIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetTrackDisplayName");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetTrackDisplayName_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetTrackDisplayName");
+
+	Params::UMediaPlayer_GetTrackDisplayName_Params Parms{};
 
 	Parms.TrackType = TrackType;
 	Parms.TrackIndex = TrackIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1622,18 +1966,21 @@ class FText UMediaPlayer::GetTrackDisplayName(enum class EMediaPlayerTrack Track
 
 struct FTimespan UMediaPlayer::GetTimeDelay()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetTimeDelay");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetTimeDelay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetTimeDelay");
+
+	Params::UMediaPlayer_GetTimeDelay_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1647,18 +1994,21 @@ struct FTimespan UMediaPlayer::GetTimeDelay()
 
 struct FTimespan UMediaPlayer::GetTime()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetTime");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetTime");
+
+	Params::UMediaPlayer_GetTime_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1673,22 +2023,25 @@ struct FTimespan UMediaPlayer::GetTime()
 
 void UMediaPlayer::GetSupportedRates(TArray<struct FFloatRange>* OutRates, bool Unthinned)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetSupportedRates");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetSupportedRates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetSupportedRates");
+
+	Params::UMediaPlayer_GetSupportedRates_Params Parms{};
 
 	Parms.Unthinned = Unthinned;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (OutRates != nullptr)
-		*OutRates = Parms.OutRates;
+		*OutRates = std::move(Parms.OutRates);
 
 }
 
@@ -1701,19 +2054,22 @@ void UMediaPlayer::GetSupportedRates(TArray<struct FFloatRange>* OutRates, bool 
 
 int32 UMediaPlayer::GetSelectedTrack(enum class EMediaPlayerTrack TrackType)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetSelectedTrack");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetSelectedTrack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetSelectedTrack");
+
+	Params::UMediaPlayer_GetSelectedTrack_Params Parms{};
 
 	Parms.TrackType = TrackType;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1727,18 +2083,21 @@ int32 UMediaPlayer::GetSelectedTrack(enum class EMediaPlayerTrack TrackType)
 
 float UMediaPlayer::GetRate()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetRate");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetRate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetRate");
+
+	Params::UMediaPlayer_GetRate_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1752,18 +2111,21 @@ float UMediaPlayer::GetRate()
 
 int32 UMediaPlayer::GetPlaylistIndex()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetPlaylistIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetPlaylistIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetPlaylistIndex");
+
+	Params::UMediaPlayer_GetPlaylistIndex_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1777,18 +2139,21 @@ int32 UMediaPlayer::GetPlaylistIndex()
 
 class UMediaPlaylist* UMediaPlayer::GetPlaylist()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetPlaylist");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetPlaylist_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetPlaylist");
+
+	Params::UMediaPlayer_GetPlaylist_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1802,18 +2167,21 @@ class UMediaPlaylist* UMediaPlayer::GetPlaylist()
 
 class FName UMediaPlayer::GetPlayerName()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetPlayerName");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetPlayerName_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetPlayerName");
+
+	Params::UMediaPlayer_GetPlayerName_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1828,19 +2196,22 @@ class FName UMediaPlayer::GetPlayerName()
 
 int32 UMediaPlayer::GetNumTracks(enum class EMediaPlayerTrack TrackType)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetNumTracks");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetNumTracks_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetNumTracks");
+
+	Params::UMediaPlayer_GetNumTracks_Params Parms{};
 
 	Parms.TrackType = TrackType;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1856,20 +2227,23 @@ int32 UMediaPlayer::GetNumTracks(enum class EMediaPlayerTrack TrackType)
 
 int32 UMediaPlayer::GetNumTrackFormats(enum class EMediaPlayerTrack TrackType, int32 TrackIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetNumTrackFormats");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetNumTrackFormats_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetNumTrackFormats");
+
+	Params::UMediaPlayer_GetNumTrackFormats_Params Parms{};
 
 	Parms.TrackType = TrackType;
 	Parms.TrackIndex = TrackIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1883,18 +2257,21 @@ int32 UMediaPlayer::GetNumTrackFormats(enum class EMediaPlayerTrack TrackType, i
 
 class FText UMediaPlayer::GetMediaName()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetMediaName");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetMediaName_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetMediaName");
+
+	Params::UMediaPlayer_GetMediaName_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1908,18 +2285,21 @@ class FText UMediaPlayer::GetMediaName()
 
 struct FTimespan UMediaPlayer::GetLastVideoSampleProcessedTime()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetLastVideoSampleProcessedTime");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetLastVideoSampleProcessedTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetLastVideoSampleProcessedTime");
+
+	Params::UMediaPlayer_GetLastVideoSampleProcessedTime_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1933,18 +2313,21 @@ struct FTimespan UMediaPlayer::GetLastVideoSampleProcessedTime()
 
 struct FTimespan UMediaPlayer::GetLastAudioSampleProcessedTime()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetLastAudioSampleProcessedTime");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetLastAudioSampleProcessedTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetLastAudioSampleProcessedTime");
+
+	Params::UMediaPlayer_GetLastAudioSampleProcessedTime_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1958,18 +2341,21 @@ struct FTimespan UMediaPlayer::GetLastAudioSampleProcessedTime()
 
 float UMediaPlayer::GetHorizontalFieldOfView()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetHorizontalFieldOfView");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetHorizontalFieldOfView_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetHorizontalFieldOfView");
+
+	Params::UMediaPlayer_GetHorizontalFieldOfView_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1983,18 +2369,21 @@ float UMediaPlayer::GetHorizontalFieldOfView()
 
 struct FTimespan UMediaPlayer::GetDuration()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetDuration");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetDuration_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetDuration");
+
+	Params::UMediaPlayer_GetDuration_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2008,18 +2397,21 @@ struct FTimespan UMediaPlayer::GetDuration()
 
 class FName UMediaPlayer::GetDesiredPlayerName()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetDesiredPlayerName");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetDesiredPlayerName_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetDesiredPlayerName");
+
+	Params::UMediaPlayer_GetDesiredPlayerName_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2035,20 +2427,23 @@ class FName UMediaPlayer::GetDesiredPlayerName()
 
 class FString UMediaPlayer::GetAudioTrackType(int32 TrackIndex, int32 FormatIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetAudioTrackType");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetAudioTrackType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetAudioTrackType");
+
+	Params::UMediaPlayer_GetAudioTrackType_Params Parms{};
 
 	Parms.TrackIndex = TrackIndex;
 	Parms.FormatIndex = FormatIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2064,20 +2459,23 @@ class FString UMediaPlayer::GetAudioTrackType(int32 TrackIndex, int32 FormatInde
 
 int32 UMediaPlayer::GetAudioTrackSampleRate(int32 TrackIndex, int32 FormatIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetAudioTrackSampleRate");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetAudioTrackSampleRate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetAudioTrackSampleRate");
+
+	Params::UMediaPlayer_GetAudioTrackSampleRate_Params Parms{};
 
 	Parms.TrackIndex = TrackIndex;
 	Parms.FormatIndex = FormatIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2093,20 +2491,23 @@ int32 UMediaPlayer::GetAudioTrackSampleRate(int32 TrackIndex, int32 FormatIndex)
 
 int32 UMediaPlayer::GetAudioTrackChannels(int32 TrackIndex, int32 FormatIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "GetAudioTrackChannels");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_GetAudioTrackChannels_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "GetAudioTrackChannels");
+
+	Params::UMediaPlayer_GetAudioTrackChannels_Params Parms{};
 
 	Parms.TrackIndex = TrackIndex;
 	Parms.FormatIndex = FormatIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2119,18 +2520,20 @@ int32 UMediaPlayer::GetAudioTrackChannels(int32 TrackIndex, int32 FormatIndex)
 
 void UMediaPlayer::Close()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "Close");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_Close_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "Close");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2143,19 +2546,22 @@ void UMediaPlayer::Close()
 
 bool UMediaPlayer::CanPlayUrl(const class FString& URL)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "CanPlayUrl");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_CanPlayUrl_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "CanPlayUrl");
+
+	Params::UMediaPlayer_CanPlayUrl_Params Parms{};
 
 	Parms.URL = URL;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2170,19 +2576,22 @@ bool UMediaPlayer::CanPlayUrl(const class FString& URL)
 
 bool UMediaPlayer::CanPlaySource(class UMediaSource* MediaSource)
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "CanPlaySource");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_CanPlaySource_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "CanPlaySource");
+
+	Params::UMediaPlayer_CanPlaySource_Params Parms{};
 
 	Parms.MediaSource = MediaSource;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2196,21 +2605,52 @@ bool UMediaPlayer::CanPlaySource(class UMediaSource* MediaSource)
 
 bool UMediaPlayer::CanPause()
 {
-	static auto Func = Class->GetFunction("MediaPlayer", "CanPause");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlayer_CanPause_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlayer", "CanPause");
+
+	Params::UMediaPlayer_CanPause_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class MediaAssets.MediaPlaylist
+// (None)
+
+class UClass* UMediaPlaylist::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MediaPlaylist");
+
+	return Clss;
+}
+
+
+// MediaPlaylist MediaAssets.Default__MediaPlaylist
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMediaPlaylist* UMediaPlaylist::GetDefaultObj()
+{
+	static class UMediaPlaylist* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMediaPlaylist*>(UMediaPlaylist::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -2223,20 +2663,23 @@ bool UMediaPlayer::CanPause()
 
 bool UMediaPlaylist::Replace(int32 Index, class UMediaSource* Replacement)
 {
-	static auto Func = Class->GetFunction("MediaPlaylist", "Replace");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlaylist_Replace_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlaylist", "Replace");
+
+	Params::UMediaPlaylist_Replace_Params Parms{};
 
 	Parms.Index = Index;
 	Parms.Replacement = Replacement;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2251,19 +2694,22 @@ bool UMediaPlaylist::Replace(int32 Index, class UMediaSource* Replacement)
 
 bool UMediaPlaylist::RemoveAt(int32 Index)
 {
-	static auto Func = Class->GetFunction("MediaPlaylist", "RemoveAt");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlaylist_RemoveAt_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlaylist", "RemoveAt");
+
+	Params::UMediaPlaylist_RemoveAt_Params Parms{};
 
 	Parms.Index = Index;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2278,19 +2724,22 @@ bool UMediaPlaylist::RemoveAt(int32 Index)
 
 bool UMediaPlaylist::Remove(class UMediaSource* MediaSource)
 {
-	static auto Func = Class->GetFunction("MediaPlaylist", "Remove");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlaylist_Remove_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlaylist", "Remove");
+
+	Params::UMediaPlaylist_Remove_Params Parms{};
 
 	Parms.MediaSource = MediaSource;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2304,18 +2753,21 @@ bool UMediaPlaylist::Remove(class UMediaSource* MediaSource)
 
 int32 UMediaPlaylist::Num()
 {
-	static auto Func = Class->GetFunction("MediaPlaylist", "Num");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlaylist_Num_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlaylist", "Num");
+
+	Params::UMediaPlaylist_Num_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2330,20 +2782,23 @@ int32 UMediaPlaylist::Num()
 
 void UMediaPlaylist::Insert(class UMediaSource* MediaSource, int32 Index)
 {
-	static auto Func = Class->GetFunction("MediaPlaylist", "Insert");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlaylist_Insert_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlaylist", "Insert");
+
+	Params::UMediaPlaylist_Insert_Params Parms{};
 
 	Parms.MediaSource = MediaSource;
 	Parms.Index = Index;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2356,18 +2811,21 @@ void UMediaPlaylist::Insert(class UMediaSource* MediaSource, int32 Index)
 
 class UMediaSource* UMediaPlaylist::GetRandom(int32* OutIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlaylist", "GetRandom");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlaylist_GetRandom_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlaylist", "GetRandom");
+
+	Params::UMediaPlaylist_GetRandom_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (OutIndex != nullptr)
 		*OutIndex = Parms.OutIndex;
@@ -2385,18 +2843,21 @@ class UMediaSource* UMediaPlaylist::GetRandom(int32* OutIndex)
 
 class UMediaSource* UMediaPlaylist::GetPrevious(int32* InOutIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlaylist", "GetPrevious");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlaylist_GetPrevious_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlaylist", "GetPrevious");
+
+	Params::UMediaPlaylist_GetPrevious_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (InOutIndex != nullptr)
 		*InOutIndex = Parms.InOutIndex;
@@ -2414,18 +2875,21 @@ class UMediaSource* UMediaPlaylist::GetPrevious(int32* InOutIndex)
 
 class UMediaSource* UMediaPlaylist::GetNext(int32* InOutIndex)
 {
-	static auto Func = Class->GetFunction("MediaPlaylist", "GetNext");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlaylist_GetNext_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlaylist", "GetNext");
+
+	Params::UMediaPlaylist_GetNext_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (InOutIndex != nullptr)
 		*InOutIndex = Parms.InOutIndex;
@@ -2443,19 +2907,22 @@ class UMediaSource* UMediaPlaylist::GetNext(int32* InOutIndex)
 
 class UMediaSource* UMediaPlaylist::Get(int32 Index)
 {
-	static auto Func = Class->GetFunction("MediaPlaylist", "Get");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlaylist_Get_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlaylist", "Get");
+
+	Params::UMediaPlaylist_Get_Params Parms{};
 
 	Parms.Index = Index;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2470,19 +2937,22 @@ class UMediaSource* UMediaPlaylist::Get(int32 Index)
 
 bool UMediaPlaylist::AddUrl(const class FString& URL)
 {
-	static auto Func = Class->GetFunction("MediaPlaylist", "AddUrl");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlaylist_AddUrl_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlaylist", "AddUrl");
+
+	Params::UMediaPlaylist_AddUrl_Params Parms{};
 
 	Parms.URL = URL;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2497,19 +2967,22 @@ bool UMediaPlaylist::AddUrl(const class FString& URL)
 
 bool UMediaPlaylist::AddFile(const class FString& FilePath)
 {
-	static auto Func = Class->GetFunction("MediaPlaylist", "AddFile");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlaylist_AddFile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlaylist", "AddFile");
+
+	Params::UMediaPlaylist_AddFile_Params Parms{};
 
 	Parms.FilePath = FilePath;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2524,22 +2997,53 @@ bool UMediaPlaylist::AddFile(const class FString& FilePath)
 
 bool UMediaPlaylist::Add(class UMediaSource* MediaSource)
 {
-	static auto Func = Class->GetFunction("MediaPlaylist", "Add");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaPlaylist_Add_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaPlaylist", "Add");
+
+	Params::UMediaPlaylist_Add_Params Parms{};
 
 	Parms.MediaSource = MediaSource;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class MediaAssets.MediaSoundComponent
+// (SceneComponent)
+
+class UClass* UMediaSoundComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MediaSoundComponent");
+
+	return Clss;
+}
+
+
+// MediaSoundComponent MediaAssets.Default__MediaSoundComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMediaSoundComponent* UMediaSoundComponent::GetDefaultObj()
+{
+	static class UMediaSoundComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMediaSoundComponent*>(UMediaSoundComponent::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -2551,20 +3055,23 @@ bool UMediaPlaylist::Add(class UMediaSource* MediaSource)
 
 void UMediaSoundComponent::SetSpectralAnalysisSettings(const TArray<float>& InFrequenciesToAnalyze, enum class EMediaSoundComponentFFTSize InFFTSize)
 {
-	static auto Func = Class->GetFunction("MediaSoundComponent", "SetSpectralAnalysisSettings");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaSoundComponent_SetSpectralAnalysisSettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaSoundComponent", "SetSpectralAnalysisSettings");
+
+	Params::UMediaSoundComponent_SetSpectralAnalysisSettings_Params Parms{};
 
 	Parms.InFrequenciesToAnalyze = InFrequenciesToAnalyze;
 	Parms.InFFTSize = InFFTSize;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2576,19 +3083,22 @@ void UMediaSoundComponent::SetSpectralAnalysisSettings(const TArray<float>& InFr
 
 void UMediaSoundComponent::SetMediaPlayer(class UMediaPlayer* NewMediaPlayer)
 {
-	static auto Func = Class->GetFunction("MediaSoundComponent", "SetMediaPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaSoundComponent_SetMediaPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaSoundComponent", "SetMediaPlayer");
+
+	Params::UMediaSoundComponent_SetMediaPlayer_Params Parms{};
 
 	Parms.NewMediaPlayer = NewMediaPlayer;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2601,20 +3111,23 @@ void UMediaSoundComponent::SetMediaPlayer(class UMediaPlayer* NewMediaPlayer)
 
 void UMediaSoundComponent::SetEnvelopeFollowingsettings(int32 AttackTimeMsec, int32 ReleaseTimeMsec)
 {
-	static auto Func = Class->GetFunction("MediaSoundComponent", "SetEnvelopeFollowingsettings");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaSoundComponent_SetEnvelopeFollowingsettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaSoundComponent", "SetEnvelopeFollowingsettings");
+
+	Params::UMediaSoundComponent_SetEnvelopeFollowingsettings_Params Parms{};
 
 	Parms.AttackTimeMsec = AttackTimeMsec;
 	Parms.ReleaseTimeMsec = ReleaseTimeMsec;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2626,19 +3139,22 @@ void UMediaSoundComponent::SetEnvelopeFollowingsettings(int32 AttackTimeMsec, in
 
 void UMediaSoundComponent::SetEnableSpectralAnalysis(bool bInSpectralAnalysisEnabled)
 {
-	static auto Func = Class->GetFunction("MediaSoundComponent", "SetEnableSpectralAnalysis");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaSoundComponent_SetEnableSpectralAnalysis_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaSoundComponent", "SetEnableSpectralAnalysis");
+
+	Params::UMediaSoundComponent_SetEnableSpectralAnalysis_Params Parms{};
 
 	Parms.bInSpectralAnalysisEnabled = bInSpectralAnalysisEnabled;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2650,19 +3166,22 @@ void UMediaSoundComponent::SetEnableSpectralAnalysis(bool bInSpectralAnalysisEna
 
 void UMediaSoundComponent::SetEnableEnvelopeFollowing(bool bInEnvelopeFollowing)
 {
-	static auto Func = Class->GetFunction("MediaSoundComponent", "SetEnableEnvelopeFollowing");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaSoundComponent_SetEnableEnvelopeFollowing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaSoundComponent", "SetEnableEnvelopeFollowing");
+
+	Params::UMediaSoundComponent_SetEnableEnvelopeFollowing_Params Parms{};
 
 	Parms.bInEnvelopeFollowing = bInEnvelopeFollowing;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2674,18 +3193,21 @@ void UMediaSoundComponent::SetEnableEnvelopeFollowing(bool bInEnvelopeFollowing)
 
 TArray<struct FMediaSoundComponentSpectralData> UMediaSoundComponent::GetSpectralData()
 {
-	static auto Func = Class->GetFunction("MediaSoundComponent", "GetSpectralData");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaSoundComponent_GetSpectralData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaSoundComponent", "GetSpectralData");
+
+	Params::UMediaSoundComponent_GetSpectralData_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2699,18 +3221,21 @@ TArray<struct FMediaSoundComponentSpectralData> UMediaSoundComponent::GetSpectra
 
 class UMediaPlayer* UMediaSoundComponent::GetMediaPlayer()
 {
-	static auto Func = Class->GetFunction("MediaSoundComponent", "GetMediaPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaSoundComponent_GetMediaPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaSoundComponent", "GetMediaPlayer");
+
+	Params::UMediaSoundComponent_GetMediaPlayer_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2724,18 +3249,21 @@ class UMediaPlayer* UMediaSoundComponent::GetMediaPlayer()
 
 float UMediaSoundComponent::GetEnvelopeValue()
 {
-	static auto Func = Class->GetFunction("MediaSoundComponent", "GetEnvelopeValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaSoundComponent_GetEnvelopeValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaSoundComponent", "GetEnvelopeValue");
+
+	Params::UMediaSoundComponent_GetEnvelopeValue_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2750,24 +3278,55 @@ float UMediaSoundComponent::GetEnvelopeValue()
 
 bool UMediaSoundComponent::BP_GetAttenuationSettingsToApply(struct FSoundAttenuationSettings* OutAttenuationSettings)
 {
-	static auto Func = Class->GetFunction("MediaSoundComponent", "BP_GetAttenuationSettingsToApply");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaSoundComponent_BP_GetAttenuationSettingsToApply_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaSoundComponent", "BP_GetAttenuationSettingsToApply");
+
+	Params::UMediaSoundComponent_BP_GetAttenuationSettingsToApply_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (OutAttenuationSettings != nullptr)
-		*OutAttenuationSettings = Parms.OutAttenuationSettings;
+		*OutAttenuationSettings = std::move(Parms.OutAttenuationSettings);
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class MediaAssets.MediaTexture
+// (None)
+
+class UClass* UMediaTexture::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MediaTexture");
+
+	return Clss;
+}
+
+
+// MediaTexture MediaAssets.Default__MediaTexture
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMediaTexture* UMediaTexture::GetDefaultObj()
+{
+	static class UMediaTexture* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMediaTexture*>(UMediaTexture::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -2778,19 +3337,22 @@ bool UMediaSoundComponent::BP_GetAttenuationSettingsToApply(struct FSoundAttenua
 
 void UMediaTexture::SetMediaPlayer(class UMediaPlayer* NewMediaPlayer)
 {
-	static auto Func = Class->GetFunction("MediaTexture", "SetMediaPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaTexture_SetMediaPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaTexture", "SetMediaPlayer");
+
+	Params::UMediaTexture_SetMediaPlayer_Params Parms{};
 
 	Parms.NewMediaPlayer = NewMediaPlayer;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -2802,18 +3364,21 @@ void UMediaTexture::SetMediaPlayer(class UMediaPlayer* NewMediaPlayer)
 
 int32 UMediaTexture::GetWidth()
 {
-	static auto Func = Class->GetFunction("MediaTexture", "GetWidth");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaTexture_GetWidth_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaTexture", "GetWidth");
+
+	Params::UMediaTexture_GetWidth_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2827,18 +3392,21 @@ int32 UMediaTexture::GetWidth()
 
 class UMediaPlayer* UMediaTexture::GetMediaPlayer()
 {
-	static auto Func = Class->GetFunction("MediaTexture", "GetMediaPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaTexture_GetMediaPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaTexture", "GetMediaPlayer");
+
+	Params::UMediaTexture_GetMediaPlayer_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2852,18 +3420,21 @@ class UMediaPlayer* UMediaTexture::GetMediaPlayer()
 
 int32 UMediaTexture::GetHeight()
 {
-	static auto Func = Class->GetFunction("MediaTexture", "GetHeight");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaTexture_GetHeight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaTexture", "GetHeight");
+
+	Params::UMediaTexture_GetHeight_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -2877,25 +3448,82 @@ int32 UMediaTexture::GetHeight()
 
 float UMediaTexture::GetAspectRatio()
 {
-	static auto Func = Class->GetFunction("MediaTexture", "GetAspectRatio");
+	static class UFunction* Func = nullptr;
 
-	Params::UMediaTexture_GetAspectRatio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MediaTexture", "GetAspectRatio");
+
+	Params::UMediaTexture_GetAspectRatio_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
 }
 
+
+// Class MediaAssets.PlatformMediaSource
+// (None)
+
+class UClass* UPlatformMediaSource::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlatformMediaSource");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// PlatformMediaSource MediaAssets.Default__PlatformMediaSource
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPlatformMediaSource* UPlatformMediaSource::GetDefaultObj()
+{
+	static class UPlatformMediaSource* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlatformMediaSource*>(UPlatformMediaSource::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class MediaAssets.TimeSynchronizableMediaSource
+// (None)
+
+class UClass* UTimeSynchronizableMediaSource::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TimeSynchronizableMediaSource");
+
+	return Clss;
+}
+
+
+// TimeSynchronizableMediaSource MediaAssets.Default__TimeSynchronizableMediaSource
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UTimeSynchronizableMediaSource* UTimeSynchronizableMediaSource::GetDefaultObj()
+{
+	static class UTimeSynchronizableMediaSource* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTimeSynchronizableMediaSource*>(UTimeSynchronizableMediaSource::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

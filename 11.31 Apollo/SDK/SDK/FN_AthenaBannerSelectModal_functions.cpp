@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,21 +12,52 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaBannerSelectModal.AthenaBannerSelectModal_C
+// (None)
+
+class UClass* UAthenaBannerSelectModal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaBannerSelectModal_C");
+
+	return Clss;
+}
+
+
+// AthenaBannerSelectModal_C AthenaBannerSelectModal.Default__AthenaBannerSelectModal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaBannerSelectModal_C* UAthenaBannerSelectModal_C::GetDefaultObj()
+{
+	static class UAthenaBannerSelectModal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaBannerSelectModal_C*>(UAthenaBannerSelectModal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaBannerSelectModal.AthenaBannerSelectModal_C.On_BorderTouch_MouseButtonDown_0
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FPointerEvent               MouseEvent                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 // bool                               CallFunc_IsMobileGame_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 
 struct FEventReply UAthenaBannerSelectModal_C::On_BorderTouch_MouseButtonDown_0(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Unhandled_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaBannerSelectModal_C", "On_BorderTouch_MouseButtonDown_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaBannerSelectModal_C", "On_BorderTouch_MouseButtonDown_0");
+
+	Params::UAthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -51,9 +79,12 @@ struct FEventReply UAthenaBannerSelectModal_C::On_BorderTouch_MouseButtonDown_0(
 
 void UAthenaBannerSelectModal_C::Setup_Input_Action_Handlers(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("AthenaBannerSelectModal_C", "Setup Input Action Handlers");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaBannerSelectModal_C_Setup_Input_Action_Handlers_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaBannerSelectModal_C", "Setup Input Action Handlers");
+
+	Params::UAthenaBannerSelectModal_C_Setup_Input_Action_Handlers_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 
@@ -72,9 +103,12 @@ void UAthenaBannerSelectModal_C::Setup_Input_Action_Handlers(UDelegateProperty_ 
 
 void UAthenaBannerSelectModal_C::HandleCloseAction(bool* PassThrough, bool CallFunc_IsErebus_ReturnValue, bool CallFunc_Attempt_Leave_Picker_Left, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaBannerSelectModal_C", "HandleCloseAction");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaBannerSelectModal_C_HandleCloseAction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaBannerSelectModal_C", "HandleCloseAction");
+
+	Params::UAthenaBannerSelectModal_C_HandleCloseAction_Params Parms{};
 
 	Parms.CallFunc_IsErebus_ReturnValue = CallFunc_IsErebus_ReturnValue;
 	Parms.CallFunc_Attempt_Leave_Picker_Left = CallFunc_Attempt_Leave_Picker_Left;
@@ -94,12 +128,14 @@ void UAthenaBannerSelectModal_C::HandleCloseAction(bool* PassThrough, bool CallF
 
 void UAthenaBannerSelectModal_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaBannerSelectModal_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaBannerSelectModal_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaBannerSelectModal_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -112,9 +148,12 @@ void UAthenaBannerSelectModal_C::Construct()
 
 void UAthenaBannerSelectModal_C::BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature(class FName IconId, class FName ColorId)
 {
-	static auto Func = Class->GetFunction("AthenaBannerSelectModal_C", "BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaBannerSelectModal_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaBannerSelectModal_C", "BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature");
+
+	Params::UAthenaBannerSelectModal_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_18_CloseBannerEditor__DelegateSignature_Params Parms{};
 
 	Parms.IconId = IconId;
 	Parms.ColorId = ColorId;
@@ -130,12 +169,14 @@ void UAthenaBannerSelectModal_C::BndEvt__BP_LocalPlayerBannerEditor_K2Node_Compo
 
 void UAthenaBannerSelectModal_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("AthenaBannerSelectModal_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaBannerSelectModal_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaBannerSelectModal_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -146,12 +187,14 @@ void UAthenaBannerSelectModal_C::BP_OnDeactivated()
 
 void UAthenaBannerSelectModal_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("AthenaBannerSelectModal_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaBannerSelectModal_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaBannerSelectModal_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -162,12 +205,14 @@ void UAthenaBannerSelectModal_C::BP_OnActivated()
 
 void UAthenaBannerSelectModal_C::Close()
 {
-	static auto Func = Class->GetFunction("AthenaBannerSelectModal_C", "Close");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaBannerSelectModal_C_Close_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaBannerSelectModal_C", "Close");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -186,9 +231,12 @@ void UAthenaBannerSelectModal_C::Close()
 
 void UAthenaBannerSelectModal_C::ExecuteUbergraph_AthenaBannerSelectModal(int32 EntryPoint, bool CallFunc_IsMobileGame_ReturnValue, bool CallFunc_HandleCloseAction_PassThrough, bool CallFunc_HandleCloseAction_PassThrough_1, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin, class FName K2Node_ComponentBoundEvent_IconId, class FName K2Node_ComponentBoundEvent_ColorId)
 {
-	static auto Func = Class->GetFunction("AthenaBannerSelectModal_C", "ExecuteUbergraph_AthenaBannerSelectModal");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaBannerSelectModal_C_ExecuteUbergraph_AthenaBannerSelectModal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaBannerSelectModal_C", "ExecuteUbergraph_AthenaBannerSelectModal");
+
+	Params::UAthenaBannerSelectModal_C_ExecuteUbergraph_AthenaBannerSelectModal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsMobileGame_ReturnValue = CallFunc_IsMobileGame_ReturnValue;
@@ -205,6 +253,4 @@ void UAthenaBannerSelectModal_C::ExecuteUbergraph_AthenaBannerSelectModal(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

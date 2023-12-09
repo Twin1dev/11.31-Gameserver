@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -66,14 +63,7 @@ public:
 	struct FKairosAnimationFramingInfo           FramingInfo;                                       // 0x0(0x50)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FKairosCaptureParams                  CaptureParams;                                     // 0x50(0x100)(Parm, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x150(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1794[0xF];                                     // Fixing Size Of Struct [ Dumper-8 ]
-};
-
-// 0x0 (0x0 - 0x0)
-// Function KairosSceneCapture.KairosSceneManagerActor.StopAR
-struct AKairosSceneManagerActor_StopAR_Params
-{
-public:
+	uint8                                        Pad_280[0xF];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -83,7 +73,7 @@ struct AKairosSceneManagerActor_PauseOrResumeSnippet_Params
 public:
 	class FString                                PlayerID;                                          // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bShouldPase;                                       // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1797[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_292[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -114,6 +104,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

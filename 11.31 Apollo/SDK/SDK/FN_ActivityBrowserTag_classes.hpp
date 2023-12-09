@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -23,11 +20,8 @@ public:
 	struct FLinearColor                          TagColor;                                          // 0x248(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                  TagText;                                           // 0x258(0x18)(Edit, BlueprintVisible)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ActivityBrowserTag_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UActivityBrowserTag_C* GetDefaultObj();
 
 	void HandleStyling(const struct FSlateColor& K2Node_MakeStruct_SlateColor);
 	void PreConstruct(bool IsDesignTime);
@@ -37,6 +31,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

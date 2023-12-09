@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,90 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// Class Water.LakeCollisionComponent
+// (SceneComponent, PrimitiveComponent)
+
+class UClass* ULakeCollisionComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LakeCollisionComponent");
+
+	return Clss;
+}
+
+
+// LakeCollisionComponent Water.Default__LakeCollisionComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ULakeCollisionComponent* ULakeCollisionComponent::GetDefaultObj()
+{
+	static class ULakeCollisionComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULakeCollisionComponent*>(ULakeCollisionComponent::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Water.NiagaraDataInterfaceWater
+// (None)
+
+class UClass* UNiagaraDataInterfaceWater::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("NiagaraDataInterfaceWater");
+
+	return Clss;
+}
+
+
+// NiagaraDataInterfaceWater Water.Default__NiagaraDataInterfaceWater
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UNiagaraDataInterfaceWater* UNiagaraDataInterfaceWater::GetDefaultObj()
+{
+	static class UNiagaraDataInterfaceWater* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UNiagaraDataInterfaceWater*>(UNiagaraDataInterfaceWater::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Water.NiagaraWaterFunctionLibrary
+// (None)
+
+class UClass* UNiagaraWaterFunctionLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("NiagaraWaterFunctionLibrary");
+
+	return Clss;
+}
+
+
+// NiagaraWaterFunctionLibrary Water.Default__NiagaraWaterFunctionLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UNiagaraWaterFunctionLibrary* UNiagaraWaterFunctionLibrary::GetDefaultObj()
+{
+	static class UNiagaraWaterFunctionLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UNiagaraWaterFunctionLibrary*>(UNiagaraWaterFunctionLibrary::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function Water.NiagaraWaterFunctionLibrary.SetWaterBody
@@ -24,22 +105,193 @@ namespace SDK
 
 void UNiagaraWaterFunctionLibrary::SetWaterBody(class UNiagaraComponent* NiagaraSystem, const class FString& OverrideName, class AWaterBody* WaterBody)
 {
-	static auto Func = Class->GetFunction("NiagaraWaterFunctionLibrary", "SetWaterBody");
+	static class UFunction* Func = nullptr;
 
-	Params::UNiagaraWaterFunctionLibrary_SetWaterBody_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("NiagaraWaterFunctionLibrary", "SetWaterBody");
+
+	Params::UNiagaraWaterFunctionLibrary_SetWaterBody_Params Parms{};
 
 	Parms.NiagaraSystem = NiagaraSystem;
 	Parms.OverrideName = OverrideName;
 	Parms.WaterBody = WaterBody;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class Water.WaterBodyGenerator
+// (None)
+
+class UClass* UWaterBodyGenerator::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WaterBodyGenerator");
+
+	return Clss;
+}
+
+
+// WaterBodyGenerator Water.Default__WaterBodyGenerator
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWaterBodyGenerator* UWaterBodyGenerator::GetDefaultObj()
+{
+	static class UWaterBodyGenerator* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWaterBodyGenerator*>(UWaterBodyGenerator::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Water.RiverGenerator
+// (None)
+
+class UClass* URiverGenerator::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("RiverGenerator");
+
+	return Clss;
+}
+
+
+// RiverGenerator Water.Default__RiverGenerator
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class URiverGenerator* URiverGenerator::GetDefaultObj()
+{
+	static class URiverGenerator* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<URiverGenerator*>(URiverGenerator::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Water.LakeGenerator
+// (None)
+
+class UClass* ULakeGenerator::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LakeGenerator");
+
+	return Clss;
+}
+
+
+// LakeGenerator Water.Default__LakeGenerator
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ULakeGenerator* ULakeGenerator::GetDefaultObj()
+{
+	static class ULakeGenerator* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULakeGenerator*>(ULakeGenerator::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Water.OceanGenerator
+// (None)
+
+class UClass* UOceanGenerator::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OceanGenerator");
+
+	return Clss;
+}
+
+
+// OceanGenerator Water.Default__OceanGenerator
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UOceanGenerator* UOceanGenerator::GetDefaultObj()
+{
+	static class UOceanGenerator* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UOceanGenerator*>(UOceanGenerator::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Water.CustomMeshGenerator
+// (None)
+
+class UClass* UCustomMeshGenerator::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CustomMeshGenerator");
+
+	return Clss;
+}
+
+
+// CustomMeshGenerator Water.Default__CustomMeshGenerator
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UCustomMeshGenerator* UCustomMeshGenerator::GetDefaultObj()
+{
+	static class UCustomMeshGenerator* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCustomMeshGenerator*>(UCustomMeshGenerator::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Water.WaterBody
+// (Actor)
+
+class UClass* AWaterBody::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WaterBody");
+
+	return Clss;
+}
+
+
+// WaterBody Water.Default__WaterBody
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AWaterBody* AWaterBody::GetDefaultObj()
+{
+	static class AWaterBody* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AWaterBody*>(AWaterBody::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -49,12 +301,14 @@ void UNiagaraWaterFunctionLibrary::SetWaterBody(class UNiagaraComponent* Niagara
 
 void AWaterBody::OnWaterBodyFinishedUpdating()
 {
-	static auto Func = Class->GetFunction("WaterBody", "OnWaterBodyFinishedUpdating");
+	static class UFunction* Func = nullptr;
 
-	Params::AWaterBody_OnWaterBodyFinishedUpdating_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterBody", "OnWaterBodyFinishedUpdating");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -67,20 +321,23 @@ void AWaterBody::OnWaterBodyFinishedUpdating()
 
 void AWaterBody::OnWaterBodyChanged(bool bShapeOrPositionChanged, bool bWeightmapSettingsChanged)
 {
-	static auto Func = Class->GetFunction("WaterBody", "OnWaterBodyChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::AWaterBody_OnWaterBodyChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterBody", "OnWaterBodyChanged");
+
+	Params::AWaterBody_OnWaterBodyChanged_Params Parms{};
 
 	Parms.bShapeOrPositionChanged = bShapeOrPositionChanged;
 	Parms.bWeightmapSettingsChanged = bWeightmapSettingsChanged;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -92,18 +349,21 @@ void AWaterBody::OnWaterBodyChanged(bool bShapeOrPositionChanged, bool bWeightma
 
 class UWaterSplineComponent* AWaterBody::GetWaterSpline()
 {
-	static auto Func = Class->GetFunction("WaterBody", "GetWaterSpline");
+	static class UFunction* Func = nullptr;
 
-	Params::AWaterBody_GetWaterSpline_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterBody", "GetWaterSpline");
+
+	Params::AWaterBody_GetWaterSpline_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -117,18 +377,21 @@ class UWaterSplineComponent* AWaterBody::GetWaterSpline()
 
 TArray<class UStaticMeshComponent*> AWaterBody::GetWaterMeshComponents()
 {
-	static auto Func = Class->GetFunction("WaterBody", "GetWaterMeshComponents");
+	static class UFunction* Func = nullptr;
 
-	Params::AWaterBody_GetWaterMeshComponents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterBody", "GetWaterMeshComponents");
+
+	Params::AWaterBody_GetWaterMeshComponents_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -142,18 +405,21 @@ TArray<class UStaticMeshComponent*> AWaterBody::GetWaterMeshComponents()
 
 class UMaterialInstanceDynamic* AWaterBody::GetWaterMaterialInstance()
 {
-	static auto Func = Class->GetFunction("WaterBody", "GetWaterMaterialInstance");
+	static class UFunction* Func = nullptr;
 
-	Params::AWaterBody_GetWaterMaterialInstance_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterBody", "GetWaterMaterialInstance");
+
+	Params::AWaterBody_GetWaterMaterialInstance_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -167,18 +433,21 @@ class UMaterialInstanceDynamic* AWaterBody::GetWaterMaterialInstance()
 
 class UMaterialInstanceDynamic* AWaterBody::GetRiverToOceanTransitionMaterialInstance()
 {
-	static auto Func = Class->GetFunction("WaterBody", "GetRiverToOceanTransitionMaterialInstance");
+	static class UFunction* Func = nullptr;
 
-	Params::AWaterBody_GetRiverToOceanTransitionMaterialInstance_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterBody", "GetRiverToOceanTransitionMaterialInstance");
+
+	Params::AWaterBody_GetRiverToOceanTransitionMaterialInstance_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -192,18 +461,21 @@ class UMaterialInstanceDynamic* AWaterBody::GetRiverToOceanTransitionMaterialIns
 
 class UMaterialInstanceDynamic* AWaterBody::GetRiverToLakeTransitionMaterialInstance()
 {
-	static auto Func = Class->GetFunction("WaterBody", "GetRiverToLakeTransitionMaterialInstance");
+	static class UFunction* Func = nullptr;
 
-	Params::AWaterBody_GetRiverToLakeTransitionMaterialInstance_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterBody", "GetRiverToLakeTransitionMaterialInstance");
+
+	Params::AWaterBody_GetRiverToLakeTransitionMaterialInstance_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -217,21 +489,52 @@ class UMaterialInstanceDynamic* AWaterBody::GetRiverToLakeTransitionMaterialInst
 
 TArray<class AWaterBodyIsland*> AWaterBody::GetIslands()
 {
-	static auto Func = Class->GetFunction("WaterBody", "GetIslands");
+	static class UFunction* Func = nullptr;
 
-	Params::AWaterBody_GetIslands_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterBody", "GetIslands");
+
+	Params::AWaterBody_GetIslands_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class Water.WaterBodyIsland
+// (Actor)
+
+class UClass* AWaterBodyIsland::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WaterBodyIsland");
+
+	return Clss;
+}
+
+
+// WaterBodyIsland Water.Default__WaterBodyIsland
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AWaterBodyIsland* AWaterBodyIsland::GetDefaultObj()
+{
+	static class AWaterBodyIsland* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AWaterBodyIsland*>(AWaterBodyIsland::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -242,21 +545,108 @@ TArray<class AWaterBodyIsland*> AWaterBody::GetIslands()
 
 class UWaterSplineComponent* AWaterBodyIsland::GetWaterSpline()
 {
-	static auto Func = Class->GetFunction("WaterBodyIsland", "GetWaterSpline");
+	static class UFunction* Func = nullptr;
 
-	Params::AWaterBodyIsland_GetWaterSpline_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterBodyIsland", "GetWaterSpline");
+
+	Params::AWaterBodyIsland_GetWaterSpline_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class Water.WaterBodyProxy
+// (Actor)
+
+class UClass* AWaterBodyProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WaterBodyProxy");
+
+	return Clss;
+}
+
+
+// WaterBodyProxy Water.Default__WaterBodyProxy
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AWaterBodyProxy* AWaterBodyProxy::GetDefaultObj()
+{
+	static class AWaterBodyProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AWaterBodyProxy*>(AWaterBodyProxy::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Water.WaterMeshActor
+// (Actor)
+
+class UClass* AWaterMeshActor::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WaterMeshActor");
+
+	return Clss;
+}
+
+
+// WaterMeshActor Water.Default__WaterMeshActor
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AWaterMeshActor* AWaterMeshActor::GetDefaultObj()
+{
+	static class AWaterMeshActor* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AWaterMeshActor*>(AWaterMeshActor::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Water.WaterMeshComponent
+// (SceneComponent, PrimitiveComponent)
+
+class UClass* UWaterMeshComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WaterMeshComponent");
+
+	return Clss;
+}
+
+
+// WaterMeshComponent Water.Default__WaterMeshComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWaterMeshComponent* UWaterMeshComponent::GetDefaultObj()
+{
+	static class UWaterMeshComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWaterMeshComponent*>(UWaterMeshComponent::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -267,21 +657,136 @@ class UWaterSplineComponent* AWaterBodyIsland::GetWaterSpline()
 
 bool UWaterMeshComponent::IsEnabled()
 {
-	static auto Func = Class->GetFunction("WaterMeshComponent", "IsEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UWaterMeshComponent_IsEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterMeshComponent", "IsEnabled");
+
+	Params::UWaterMeshComponent_IsEnabled_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class Water.WaterRuntimeSettings
+// (None)
+
+class UClass* UWaterRuntimeSettings::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WaterRuntimeSettings");
+
+	return Clss;
+}
+
+
+// WaterRuntimeSettings Water.Default__WaterRuntimeSettings
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWaterRuntimeSettings* UWaterRuntimeSettings::GetDefaultObj()
+{
+	static class UWaterRuntimeSettings* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWaterRuntimeSettings*>(UWaterRuntimeSettings::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Water.WaterSplineComponent
+// (SceneComponent, PrimitiveComponent)
+
+class UClass* UWaterSplineComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WaterSplineComponent");
+
+	return Clss;
+}
+
+
+// WaterSplineComponent Water.Default__WaterSplineComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWaterSplineComponent* UWaterSplineComponent::GetDefaultObj()
+{
+	static class UWaterSplineComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWaterSplineComponent*>(UWaterSplineComponent::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Water.WaterSplineMetadata
+// (None)
+
+class UClass* UWaterSplineMetadata::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WaterSplineMetadata");
+
+	return Clss;
+}
+
+
+// WaterSplineMetadata Water.Default__WaterSplineMetadata
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWaterSplineMetadata* UWaterSplineMetadata::GetDefaultObj()
+{
+	static class UWaterSplineMetadata* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWaterSplineMetadata*>(UWaterSplineMetadata::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Water.WaterSubsystem
+// (None)
+
+class UClass* UWaterSubsystem::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WaterSubsystem");
+
+	return Clss;
+}
+
+
+// WaterSubsystem Water.Default__WaterSubsystem
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWaterSubsystem* UWaterSubsystem::GetDefaultObj()
+{
+	static class UWaterSubsystem* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWaterSubsystem*>(UWaterSubsystem::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -293,20 +798,23 @@ bool UWaterMeshComponent::IsEnabled()
 
 void UWaterSubsystem::PrintToWaterLog(const class FString& Message, bool bWarning)
 {
-	static auto Func = Class->GetFunction("WaterSubsystem", "PrintToWaterLog");
+	static class UFunction* Func = nullptr;
 
-	Params::UWaterSubsystem_PrintToWaterLog_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterSubsystem", "PrintToWaterLog");
+
+	Params::UWaterSubsystem_PrintToWaterLog_Params Parms{};
 
 	Parms.Message = Message;
 	Parms.bWarning = bWarning;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -318,18 +826,21 @@ void UWaterSubsystem::PrintToWaterLog(const class FString& Message, bool bWarnin
 
 bool UWaterSubsystem::IsWaterRenderingEnabled()
 {
-	static auto Func = Class->GetFunction("WaterSubsystem", "IsWaterRenderingEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UWaterSubsystem_IsWaterRenderingEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterSubsystem", "IsWaterRenderingEnabled");
+
+	Params::UWaterSubsystem_IsWaterRenderingEnabled_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -343,18 +854,21 @@ bool UWaterSubsystem::IsWaterRenderingEnabled()
 
 bool UWaterSubsystem::IsUnderwaterPostProcessEnabled()
 {
-	static auto Func = Class->GetFunction("WaterSubsystem", "IsUnderwaterPostProcessEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UWaterSubsystem_IsUnderwaterPostProcessEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterSubsystem", "IsUnderwaterPostProcessEnabled");
+
+	Params::UWaterSubsystem_IsUnderwaterPostProcessEnabled_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -368,18 +882,21 @@ bool UWaterSubsystem::IsUnderwaterPostProcessEnabled()
 
 bool UWaterSubsystem::IsShallowWaterSimulationEnabled()
 {
-	static auto Func = Class->GetFunction("WaterSubsystem", "IsShallowWaterSimulationEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UWaterSubsystem_IsShallowWaterSimulationEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterSubsystem", "IsShallowWaterSimulationEnabled");
+
+	Params::UWaterSubsystem_IsShallowWaterSimulationEnabled_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -393,18 +910,21 @@ bool UWaterSubsystem::IsShallowWaterSimulationEnabled()
 
 float UWaterSubsystem::GetSmoothedWorldTimeSeconds()
 {
-	static auto Func = Class->GetFunction("WaterSubsystem", "GetSmoothedWorldTimeSeconds");
+	static class UFunction* Func = nullptr;
 
-	Params::UWaterSubsystem_GetSmoothedWorldTimeSeconds_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterSubsystem", "GetSmoothedWorldTimeSeconds");
+
+	Params::UWaterSubsystem_GetSmoothedWorldTimeSeconds_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -418,18 +938,21 @@ float UWaterSubsystem::GetSmoothedWorldTimeSeconds()
 
 int32 UWaterSubsystem::GetShallowWaterSimulationRenderTargetSize()
 {
-	static auto Func = Class->GetFunction("WaterSubsystem", "GetShallowWaterSimulationRenderTargetSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UWaterSubsystem_GetShallowWaterSimulationRenderTargetSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterSubsystem", "GetShallowWaterSimulationRenderTargetSize");
+
+	Params::UWaterSubsystem_GetShallowWaterSimulationRenderTargetSize_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -443,18 +966,21 @@ int32 UWaterSubsystem::GetShallowWaterSimulationRenderTargetSize()
 
 int32 UWaterSubsystem::GetShallowWaterMaxImpulseForces()
 {
-	static auto Func = Class->GetFunction("WaterSubsystem", "GetShallowWaterMaxImpulseForces");
+	static class UFunction* Func = nullptr;
 
-	Params::UWaterSubsystem_GetShallowWaterMaxImpulseForces_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterSubsystem", "GetShallowWaterMaxImpulseForces");
+
+	Params::UWaterSubsystem_GetShallowWaterMaxImpulseForces_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -468,18 +994,21 @@ int32 UWaterSubsystem::GetShallowWaterMaxImpulseForces()
 
 int32 UWaterSubsystem::GetShallowWaterMaxDynamicForces()
 {
-	static auto Func = Class->GetFunction("WaterSubsystem", "GetShallowWaterMaxDynamicForces");
+	static class UFunction* Func = nullptr;
 
-	Params::UWaterSubsystem_GetShallowWaterMaxDynamicForces_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterSubsystem", "GetShallowWaterMaxDynamicForces");
+
+	Params::UWaterSubsystem_GetShallowWaterMaxDynamicForces_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -493,18 +1022,21 @@ int32 UWaterSubsystem::GetShallowWaterMaxDynamicForces()
 
 float UWaterSubsystem::GetCameraUnderwaterDepth()
 {
-	static auto Func = Class->GetFunction("WaterSubsystem", "GetCameraUnderwaterDepth");
+	static class UFunction* Func = nullptr;
 
-	Params::UWaterSubsystem_GetCameraUnderwaterDepth_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WaterSubsystem", "GetCameraUnderwaterDepth");
+
+	Params::UWaterSubsystem_GetCameraUnderwaterDepth_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -512,6 +1044,4 @@ float UWaterSubsystem::GetCameraUnderwaterDepth()
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ItemPresentationScreen.ItemPresentationScreen_C
+// (None)
+
+class UClass* UItemPresentationScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemPresentationScreen_C");
+
+	return Clss;
+}
+
+
+// ItemPresentationScreen_C ItemPresentationScreen.Default__ItemPresentationScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemPresentationScreen_C* UItemPresentationScreen_C::GetDefaultObj()
+{
+	static class UItemPresentationScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemPresentationScreen_C*>(UItemPresentationScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ItemPresentationScreen.ItemPresentationScreen_C.Handle PaidItem Intro
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UItemPresentationScreen_C::Handle_PaidItem_Intro(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "Handle PaidItem Intro");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_Handle_PaidItem_Intro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "Handle PaidItem Intro");
+
+	Params::UItemPresentationScreen_C_Handle_PaidItem_Intro_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -40,9 +68,12 @@ void UItemPresentationScreen_C::Handle_PaidItem_Intro(class UUMGSequencePlayer* 
 
 void UItemPresentationScreen_C::Handle_Fade(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "Handle Fade");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_Handle_Fade_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "Handle Fade");
+
+	Params::UItemPresentationScreen_C_Handle_Fade_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -58,9 +89,12 @@ void UItemPresentationScreen_C::Handle_Fade(class UUMGSequencePlayer* CallFunc_P
 
 void UItemPresentationScreen_C::Handle_Intro(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "Handle Intro");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_Handle_Intro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "Handle Intro");
+
+	Params::UItemPresentationScreen_C_Handle_Intro_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -76,9 +110,12 @@ void UItemPresentationScreen_C::Handle_Intro(class UUMGSequencePlayer* CallFunc_
 
 void UItemPresentationScreen_C::Handle_Animation_InitialState(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "Handle Animation InitialState");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_Handle_Animation_InitialState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "Handle Animation InitialState");
+
+	Params::UItemPresentationScreen_C_Handle_Animation_InitialState_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -93,12 +130,14 @@ void UItemPresentationScreen_C::Handle_Animation_InitialState(class UUMGSequence
 
 void UItemPresentationScreen_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -110,9 +149,12 @@ void UItemPresentationScreen_C::BP_OnActivated()
 
 void UItemPresentationScreen_C::OnUpdateHeaderInformation(struct FFortItemHeaderInformation& HeaderInformation)
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateHeaderInformation");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_OnUpdateHeaderInformation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateHeaderInformation");
+
+	Params::UItemPresentationScreen_C_OnUpdateHeaderInformation_Params Parms{};
 
 	Parms.HeaderInformation = HeaderInformation;
 
@@ -128,9 +170,12 @@ void UItemPresentationScreen_C::OnUpdateHeaderInformation(struct FFortItemHeader
 
 void UItemPresentationScreen_C::OnUpdateItemInformation(class UFortItem* FortItem)
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateItemInformation");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_OnUpdateItemInformation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateItemInformation");
+
+	Params::UItemPresentationScreen_C_OnUpdateItemInformation_Params Parms{};
 
 	Parms.FortItem = FortItem;
 
@@ -146,9 +191,12 @@ void UItemPresentationScreen_C::OnUpdateItemInformation(class UFortItem* FortIte
 
 void UItemPresentationScreen_C::OnUpdateOwnedItemText(bool bShowText)
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateOwnedItemText");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_OnUpdateOwnedItemText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateOwnedItemText");
+
+	Params::UItemPresentationScreen_C_OnUpdateOwnedItemText_Params Parms{};
 
 	Parms.bShowText = bShowText;
 
@@ -163,12 +211,14 @@ void UItemPresentationScreen_C::OnUpdateOwnedItemText(bool bShowText)
 
 void UItemPresentationScreen_C::OnUpdateItemEquipped()
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateItemEquipped");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_OnUpdateItemEquipped_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateItemEquipped");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -180,9 +230,12 @@ void UItemPresentationScreen_C::OnUpdateItemEquipped()
 
 void UItemPresentationScreen_C::OnInitialIconAnimation(bool bUsingListView)
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "OnInitialIconAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_OnInitialIconAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "OnInitialIconAnimation");
+
+	Params::UItemPresentationScreen_C_OnInitialIconAnimation_Params Parms{};
 
 	Parms.bUsingListView = bUsingListView;
 
@@ -198,9 +251,12 @@ void UItemPresentationScreen_C::OnInitialIconAnimation(bool bUsingListView)
 
 void UItemPresentationScreen_C::OnDisplayEquipButton(bool bCanEquip)
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "OnDisplayEquipButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_OnDisplayEquipButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "OnDisplayEquipButton");
+
+	Params::UItemPresentationScreen_C_OnDisplayEquipButton_Params Parms{};
 
 	Parms.bCanEquip = bCanEquip;
 
@@ -215,12 +271,14 @@ void UItemPresentationScreen_C::OnDisplayEquipButton(bool bCanEquip)
 
 void UItemPresentationScreen_C::OnCloseScreen()
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "OnCloseScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_OnCloseScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "OnCloseScreen");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -232,9 +290,12 @@ void UItemPresentationScreen_C::OnCloseScreen()
 
 void UItemPresentationScreen_C::OnUpdateNextButtonText(bool bShowNext)
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateNextButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_OnUpdateNextButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateNextButtonText");
+
+	Params::UItemPresentationScreen_C_OnUpdateNextButtonText_Params Parms{};
 
 	Parms.bShowNext = bShowNext;
 
@@ -250,9 +311,12 @@ void UItemPresentationScreen_C::OnUpdateNextButtonText(bool bShowNext)
 
 void UItemPresentationScreen_C::OnFinishDisplayingHotItems(bool bShowOtherRewards)
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "OnFinishDisplayingHotItems");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_OnFinishDisplayingHotItems_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "OnFinishDisplayingHotItems");
+
+	Params::UItemPresentationScreen_C_OnFinishDisplayingHotItems_Params Parms{};
 
 	Parms.bShowOtherRewards = bShowOtherRewards;
 
@@ -268,9 +332,12 @@ void UItemPresentationScreen_C::OnFinishDisplayingHotItems(bool bShowOtherReward
 
 void UItemPresentationScreen_C::OnDisplayItemsCollectedText(bool bCloseScreen)
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "OnDisplayItemsCollectedText");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_OnDisplayItemsCollectedText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "OnDisplayItemsCollectedText");
+
+	Params::UItemPresentationScreen_C_OnDisplayItemsCollectedText_Params Parms{};
 
 	Parms.bCloseScreen = bCloseScreen;
 
@@ -285,12 +352,14 @@ void UItemPresentationScreen_C::OnDisplayItemsCollectedText(bool bCloseScreen)
 
 void UItemPresentationScreen_C::SwitchToPaidItems()
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "SwitchToPaidItems");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_SwitchToPaidItems_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "SwitchToPaidItems");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -303,9 +372,12 @@ void UItemPresentationScreen_C::SwitchToPaidItems()
 
 void UItemPresentationScreen_C::OnUpdateVaultWorld(class AFortItemPreviewVaultWorld* FortItemPreviewVaultWorld, bool bIsSpecialEventRewards)
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateVaultWorld");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_OnUpdateVaultWorld_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateVaultWorld");
+
+	Params::UItemPresentationScreen_C_OnUpdateVaultWorld_Params Parms{};
 
 	Parms.FortItemPreviewVaultWorld = FortItemPreviewVaultWorld;
 	Parms.bIsSpecialEventRewards = bIsSpecialEventRewards;
@@ -323,9 +395,12 @@ void UItemPresentationScreen_C::OnUpdateVaultWorld(class AFortItemPreviewVaultWo
 
 void UItemPresentationScreen_C::OnUpdateGradientColor(bool bIsWinterfestReward, struct FLinearColor& PresentColor)
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateGradientColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_OnUpdateGradientColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "OnUpdateGradientColor");
+
+	Params::UItemPresentationScreen_C_OnUpdateGradientColor_Params Parms{};
 
 	Parms.bIsWinterfestReward = bIsWinterfestReward;
 	Parms.PresentColor = PresentColor;
@@ -450,9 +525,12 @@ void UItemPresentationScreen_C::OnUpdateGradientColor(bool bIsWinterfestReward, 
 
 void UItemPresentationScreen_C::ExecuteUbergraph_ItemPresentationScreen(int32 EntryPoint, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Not_PreBool_ReturnValue, class UItemInfoPresentationWidget_C* K2Node_DynamicCast_AsItem_Info_Presentation_Widget, bool K2Node_DynamicCast_bSuccess, class UItemInfoPresentationWidget_C* K2Node_DynamicCast_AsItem_Info_Presentation_Widget_1, bool K2Node_DynamicCast_bSuccess_1, int32 Temp_int_Loop_Counter_Variable, TArray<class UUserWidget*>& CallFunc_GetDisplayedEntryWidgets_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, bool CallFunc_Less_IntInt_ReturnValue, TArray<class UUserWidget*>& CallFunc_GetAllEntries_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UItemPresentationGenericRewardHeader_C* K2Node_DynamicCast_AsItem_Presentation_Generic_Reward_Header, bool K2Node_DynamicCast_bSuccess_2, class UItemPresentationGenericRewardHeader_C* K2Node_DynamicCast_AsItem_Presentation_Generic_Reward_Header_1, bool K2Node_DynamicCast_bSuccess_3, enum class ESlateVisibility CallFunc_GetVisibility_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, int32 Temp_int_Loop_Counter_Variable_2, int32 CallFunc_Add_IntInt_ReturnValue_2, const struct FFortItemHeaderInformation& K2Node_Event_HeaderInformation, class UFortItem* K2Node_Event_FortItem, bool K2Node_Event_bShowText, bool K2Node_Event_bUsingListView, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, int32 Temp_int_Array_Index_Variable_1, TArray<class UUserWidget*>& CallFunc_GetDisplayedEntryWidgets_ReturnValue_1, class UUserWidget* CallFunc_Array_Get_Item, class UUserWidget* CallFunc_Array_Get_Item_1, class UItemPresentationEntry_C* K2Node_DynamicCast_AsItem_Presentation_Entry, bool K2Node_DynamicCast_bSuccess_4, class UItemPresentationEntry_C* K2Node_DynamicCast_AsItem_Presentation_Entry_1, bool K2Node_DynamicCast_bSuccess_5, float CallFunc_Multiply_IntFloat_ReturnValue, TArray<class UUserWidget*>& CallFunc_GetAllEntries_ReturnValue_1, class UUserWidget* CallFunc_Array_Get_Item_2, class UItemPresentationEntry_C* K2Node_DynamicCast_AsItem_Presentation_Entry_2, bool K2Node_DynamicCast_bSuccess_6, int32 Temp_int_Array_Index_Variable_2, bool K2Node_Event_bCanEquip, int32 Temp_int_Array_Index_Variable_3, class UObject* CallFunc_Array_Get_Item_3, float CallFunc_Multiply_IntFloat_ReturnValue_1, class UItemPresentationEntry_C* K2Node_DynamicCast_AsItem_Presentation_Entry_3, bool K2Node_DynamicCast_bSuccess_7, bool K2Node_Event_bShowNext, class USoloButton_C* K2Node_DynamicCast_AsSolo_Button, bool K2Node_DynamicCast_bSuccess_8, bool K2Node_Event_bShowOtherRewards, bool K2Node_Event_bCloseScreen, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool Temp_bool_True_if_break_was_hit_Variable_1, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_1, class USoloButton_C* K2Node_DynamicCast_AsSolo_Button_1, bool K2Node_DynamicCast_bSuccess_9, const struct FDataTableRowHandle& K2Node_MakeStruct_DataTableRowHandle, class UItemInfoPresentationWidget_C* K2Node_DynamicCast_AsItem_Info_Presentation_Widget_2, bool K2Node_DynamicCast_bSuccess_10, class UBattlePassTracker_C* K2Node_DynamicCast_AsBattle_Pass_Tracker, bool K2Node_DynamicCast_bSuccess_11, class UBattlePassTracker_C* K2Node_DynamicCast_AsBattle_Pass_Tracker_1, bool K2Node_DynamicCast_bSuccess_12, class UBattlePassItemTracker_C* K2Node_DynamicCast_AsBattle_Pass_Item_Tracker, bool K2Node_DynamicCast_bSuccess_13, class UBattlePassItemTracker_C* K2Node_DynamicCast_AsBattle_Pass_Item_Tracker_1, bool K2Node_DynamicCast_bSuccess_14, class UBattlePassItemTracker_C* K2Node_DynamicCast_AsBattle_Pass_Item_Tracker_2, bool K2Node_DynamicCast_bSuccess_15, class UBattlePassTracker_C* K2Node_DynamicCast_AsBattle_Pass_Tracker_2, bool K2Node_DynamicCast_bSuccess_16, class UBattlePassTracker_C* K2Node_DynamicCast_AsBattle_Pass_Tracker_3, bool K2Node_DynamicCast_bSuccess_17, class UBattlePassItemTracker_C* K2Node_DynamicCast_AsBattle_Pass_Item_Tracker_3, bool K2Node_DynamicCast_bSuccess_18, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class AFortItemPreviewVaultWorld* K2Node_Event_FortItemPreviewVaultWorld, bool K2Node_Event_bIsSpecialEventRewards, TArray<class AFrontendCamera_VaultRotator_C*>& CallFunc_GetAllActorsOfClass_OutActors, class AFrontendCamera_VaultRotator_C* CallFunc_Array_Get_Item_4, int32 CallFunc_Array_Length_ReturnValue_2, bool CallFunc_ActorHasTag_ReturnValue, class AVaultWorld_C* K2Node_DynamicCast_AsVault_World, bool K2Node_DynamicCast_bSuccess_19, class AVaultRotator_C* CallFunc_GetVaultRotator_VaultRotator, int32 Temp_int_Loop_Counter_Variable_3, bool CallFunc_Less_IntInt_ReturnValue_2, int32 CallFunc_Add_IntInt_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue, class UFortFrontEndContext* CallFunc_GetLocalPlayerSubsystem_ReturnValue, TArray<class AFrontendCamera_VaultRotator_C*>& CallFunc_GetAllActorsOfClass_OutActors_1, class AFrontendCamera_VaultRotator_C* CallFunc_Array_Get_Item_5, int32 CallFunc_Array_Length_ReturnValue_3, bool CallFunc_Less_IntInt_ReturnValue_3, bool CallFunc_ActorHasTag_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_1, bool K2Node_Event_bIsWinterfestReward, const struct FLinearColor& K2Node_Event_PresentColor, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, class USoloButton_WinterFest_C* K2Node_DynamicCast_AsSolo_Button_Winter_Fest, bool K2Node_DynamicCast_bSuccess_20)
 {
-	static auto Func = Class->GetFunction("ItemPresentationScreen_C", "ExecuteUbergraph_ItemPresentationScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemPresentationScreen_C", "ExecuteUbergraph_ItemPresentationScreen");
+
+	Params::UItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_True_if_break_was_hit_Variable = Temp_bool_True_if_break_was_hit_Variable;
@@ -570,6 +648,4 @@ void UItemPresentationScreen_C::ExecuteUbergraph_ItemPresentationScreen(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

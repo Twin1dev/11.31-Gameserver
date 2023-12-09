@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -21,18 +18,15 @@ public:
 	float                                        TimePressed;                                       // 0xAC8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        PunchPicker;                                       // 0xACC(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         HasLanded;                                         // 0xAD0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4428[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_E12[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 AshtonAbilityTags;                                 // 0xAD8(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FGameplayTagContainer                 GC_JumpTrails;                                     // 0xAF8(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FGameplayTagContainer                 GC_SkydiveTrails;                                  // 0xB18(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FGameplayTag                          PrimaryFireEventTag;                               // 0xB38(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          SecondaryFireEventTag;                             // 0xB40(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("DA_AshtonPack_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ADA_AshtonPack_C* GetDefaultObj();
 
 	void BPPressTrigger(class AFortDecoHelper* FortDecoHelper);
 	void BPPressSecondaryFire(class AFortDecoHelper* FortDecoHelper);
@@ -43,6 +37,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

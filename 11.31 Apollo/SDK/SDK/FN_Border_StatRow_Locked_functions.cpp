@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Border_StatRow_Locked.Border_StatRow_Locked_C
+// (None)
+
+class UClass* UBorder_StatRow_Locked_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Border_StatRow_Locked_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Border_StatRow_Locked_C Border_StatRow_Locked.Default__Border_StatRow_Locked_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBorder_StatRow_Locked_C* UBorder_StatRow_Locked_C::GetDefaultObj()
+{
+	static class UBorder_StatRow_Locked_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorder_StatRow_Locked_C*>(UBorder_StatRow_Locked_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

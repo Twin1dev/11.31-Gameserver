@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass PlayerBanner.PlayerBanner_C
+// (None)
+
+class UClass* UPlayerBanner_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerBanner_C");
+
+	return Clss;
+}
+
+
+// PlayerBanner_C PlayerBanner.Default__PlayerBanner_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerBanner_C* UPlayerBanner_C::GetDefaultObj()
+{
+	static class UPlayerBanner_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerBanner_C*>(UPlayerBanner_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function PlayerBanner.PlayerBanner_C.ShouldShowAthenaBanner
@@ -27,9 +52,12 @@ namespace SDK
 
 void UPlayerBanner_C::ShouldShowAthenaBanner(bool* ShowAthenaBanner, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "ShouldShowAthenaBanner");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_ShouldShowAthenaBanner_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "ShouldShowAthenaBanner");
+
+	Params::UPlayerBanner_C_ShouldShowAthenaBanner_Params Parms{};
 
 	Parms.CallFunc_GetRuntimeOptions_ReturnValue = CallFunc_GetRuntimeOptions_ReturnValue;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -56,9 +84,12 @@ void UPlayerBanner_C::ShouldShowAthenaBanner(bool* ShowAthenaBanner, class UFort
 
 void UPlayerBanner_C::UnbindDelegates(class UFortPartyContext* CallFunc_GetContext_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortUITeamInfo* CallFunc_GetLocalPlayerTeam_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UFortMcpContext* CallFunc_GetContext_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "UnbindDelegates");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_UnbindDelegates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "UnbindDelegates");
+
+	Params::UPlayerBanner_C_UnbindDelegates_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -80,9 +111,12 @@ void UPlayerBanner_C::UnbindDelegates(class UFortPartyContext* CallFunc_GetConte
 
 void UPlayerBanner_C::SetupSurround(const struct FMargin& K2Node_MakeStruct_Margin, class ULoadGuardSlot* K2Node_DynamicCast_AsLoad_Guard_Slot, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "SetupSurround");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_SetupSurround_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "SetupSurround");
+
+	Params::UPlayerBanner_C_SetupSurround_Params Parms{};
 
 	Parms.K2Node_MakeStruct_Margin = K2Node_MakeStruct_Margin;
 	Parms.K2Node_DynamicCast_AsLoad_Guard_Slot = K2Node_DynamicCast_AsLoad_Guard_Slot;
@@ -99,17 +133,20 @@ void UPlayerBanner_C::SetupSurround(const struct FMargin& K2Node_MakeStruct_Marg
 // bool                               CallFunc_ShouldShowAthenaBanner_ShowAthenaBanner                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortMcpContext*             CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortMcpContext*             CallFunc_GetContext_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortHomeBaseInfo           CallFunc_GetHomeBaseInfoForPlayer_Result                         ()
-// struct FFortAthenaLoadout          CallFunc_GetLoadoutForPlayer_ReturnValue                         ()
+// struct FFortHomeBaseInfo           CallFunc_GetHomeBaseInfoForPlayer_Result                         (None)
+// struct FFortAthenaLoadout          CallFunc_GetLoadoutForPlayer_ReturnValue                         (None)
 // bool                               CallFunc_SetBannerImage_Success                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FName                        CallFunc_Conv_StringToName_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        CallFunc_Conv_StringToName_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UPlayerBanner_C::SetBannerIconAndColorFromProfile(bool CallFunc_ShouldShowAthenaBanner_ShowAthenaBanner, class UFortMcpContext* CallFunc_GetContext_ReturnValue, class UFortMcpContext* CallFunc_GetContext_ReturnValue_1, const struct FFortHomeBaseInfo& CallFunc_GetHomeBaseInfoForPlayer_Result, const struct FFortAthenaLoadout& CallFunc_GetLoadoutForPlayer_ReturnValue, bool CallFunc_SetBannerImage_Success, class FName CallFunc_Conv_StringToName_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "SetBannerIconAndColorFromProfile");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_SetBannerIconAndColorFromProfile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "SetBannerIconAndColorFromProfile");
+
+	Params::UPlayerBanner_C_SetBannerIconAndColorFromProfile_Params Parms{};
 
 	Parms.CallFunc_ShouldShowAthenaBanner_ShowAthenaBanner = CallFunc_ShouldShowAthenaBanner_ShowAthenaBanner;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -133,9 +170,12 @@ void UPlayerBanner_C::SetBannerIconAndColorFromProfile(bool CallFunc_ShouldShowA
 
 void UPlayerBanner_C::SetBannerIconAndColor(class FName IconId, class FName ColorId)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "SetBannerIconAndColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_SetBannerIconAndColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "SetBannerIconAndColor");
+
+	Params::UPlayerBanner_C_SetBannerIconAndColor_Params Parms{};
 
 	Parms.IconId = IconId;
 	Parms.ColorId = ColorId;
@@ -157,9 +197,12 @@ void UPlayerBanner_C::SetBannerIconAndColor(class FName IconId, class FName Colo
 
 void UPlayerBanner_C::ToggleBannerMask(bool Enable, bool Temp_bool_Variable, float Temp_float_Variable, float Temp_float_Variable_1, class UMaterialInstanceDynamic* CallFunc_GetBannerMID_BannerMID, float K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "ToggleBannerMask");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_ToggleBannerMask_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "ToggleBannerMask");
+
+	Params::UPlayerBanner_C_ToggleBannerMask_Params Parms{};
 
 	Parms.Enable = Enable;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -177,7 +220,7 @@ void UPlayerBanner_C::ToggleBannerMask(bool Enable, bool Temp_bool_Variable, flo
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                              Level                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FAthenaSeasonBannerLevel    CallFunc_GetSeasonBannerInfo_ReturnValue                         ()
+// struct FAthenaSeasonBannerLevel    CallFunc_GetSeasonBannerInfo_ReturnValue                         (None)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsAssetNull_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -187,9 +230,12 @@ void UPlayerBanner_C::ToggleBannerMask(bool Enable, bool Temp_bool_Variable, flo
 
 void UPlayerBanner_C::RefreshSurround(int32 Level, const struct FAthenaSeasonBannerLevel& CallFunc_GetSeasonBannerInfo_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UObject* CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue, bool CallFunc_IsAssetNull_ReturnValue, class UMaterialInterface* K2Node_DynamicCast_AsMaterial_Interface, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "RefreshSurround");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_RefreshSurround_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "RefreshSurround");
+
+	Params::UPlayerBanner_C_RefreshSurround_Params Parms{};
 
 	Parms.Level = Level;
 	Parms.CallFunc_GetSeasonBannerInfo_ReturnValue = CallFunc_GetSeasonBannerInfo_ReturnValue;
@@ -215,9 +261,12 @@ void UPlayerBanner_C::RefreshSurround(int32 Level, const struct FAthenaSeasonBan
 
 void UPlayerBanner_C::OnSurroundIconLoaded(class UObject* LoadedObject, class UTexture* K2Node_DynamicCast_AsTexture, bool K2Node_DynamicCast_bSuccess, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "OnSurroundIconLoaded");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_OnSurroundIconLoaded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "OnSurroundIconLoaded");
+
+	Params::UPlayerBanner_C_OnSurroundIconLoaded_Params Parms{};
 
 	Parms.LoadedObject = LoadedObject;
 	Parms.K2Node_DynamicCast_AsTexture = K2Node_DynamicCast_AsTexture;
@@ -235,12 +284,14 @@ void UPlayerBanner_C::OnSurroundIconLoaded(class UObject* LoadedObject, class UT
 
 void UPlayerBanner_C::EnableSurround()
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "EnableSurround");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_EnableSurround_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "EnableSurround");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -251,12 +302,14 @@ void UPlayerBanner_C::EnableSurround()
 
 void UPlayerBanner_C::ClearBannerState()
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "ClearBannerState");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_ClearBannerState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "ClearBannerState");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -271,9 +324,12 @@ void UPlayerBanner_C::ClearBannerState()
 
 void UPlayerBanner_C::OnBannerIconLoaded(class UObject* LoadedObject, class UMaterialInstanceDynamic* CallFunc_GetBannerMID_BannerMID, class UTexture* K2Node_DynamicCast_AsTexture, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "OnBannerIconLoaded");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_OnBannerIconLoaded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "OnBannerIconLoaded");
+
+	Params::UPlayerBanner_C_OnBannerIconLoaded_Params Parms{};
 
 	Parms.LoadedObject = LoadedObject;
 	Parms.CallFunc_GetBannerMID_BannerMID = CallFunc_GetBannerMID_BannerMID;
@@ -293,9 +349,12 @@ void UPlayerBanner_C::OnBannerIconLoaded(class UObject* LoadedObject, class UMat
 
 void UPlayerBanner_C::GetBannerMID(class UMaterialInstanceDynamic** BannerMID, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "GetBannerMID");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_GetBannerMID_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "GetBannerMID");
+
+	Params::UPlayerBanner_C_GetBannerMID_Params Parms{};
 
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
 
@@ -320,9 +379,12 @@ void UPlayerBanner_C::GetBannerMID(class UMaterialInstanceDynamic** BannerMID, c
 
 void UPlayerBanner_C::SetBannerOwner(const struct FUniqueNetIdRepl& OwnerId, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UFortPartyContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsValid_UniqueNetIdRepl_ReturnValue, class UFortUITeamInfo* CallFunc_GetLocalPlayerTeam_ReturnValue, class UFortMcpContext* CallFunc_GetContext_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "SetBannerOwner");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_SetBannerOwner_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "SetBannerOwner");
+
+	Params::UPlayerBanner_C_SetBannerOwner_Params Parms{};
 
 	Parms.OwnerId = OwnerId;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -351,9 +413,12 @@ void UPlayerBanner_C::SetBannerOwner(const struct FUniqueNetIdRepl& OwnerId, UDe
 
 void UPlayerBanner_C::SetBannerColorId(class FName InBannerColorId, class UMaterialInstanceDynamic* CallFunc_GetBannerMID_BannerMID, bool CallFunc_NotEqual_NameName_ReturnValue, const struct FHomebaseBannerColor& CallFunc_GetBannerColorFromRowName_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetBannerMID_BannerMID_1, const struct FLinearColor& CallFunc_GetSecondaryColor_ReturnValue, const struct FLinearColor& CallFunc_GetPrimaryColor_ReturnValue, bool CallFunc_NotEqual_NameName_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "SetBannerColorId");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_SetBannerColorId_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "SetBannerColorId");
+
+	Params::UPlayerBanner_C_SetBannerColorId_Params Parms{};
 
 	Parms.InBannerColorId = InBannerColorId;
 	Parms.CallFunc_GetBannerMID_BannerMID = CallFunc_GetBannerMID_BannerMID;
@@ -385,9 +450,12 @@ void UPlayerBanner_C::SetBannerColorId(class FName InBannerColorId, class UMater
 
 void UPlayerBanner_C::SetBannerIconId(class FName InBannerIconId, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool Temp_bool_Option_B___If_false__use_Option_A_Variable, bool CallFunc_NotEqual_NameName_ReturnValue, bool Temp_bool_Variable, TSoftObjectPtr<class UTexture2D> CallFunc_GetBannerSmallIconAssetFromRowName_ReturnValue, TSoftObjectPtr<class UTexture2D> CallFunc_GetBannerLargeIconAssetFromRowName_ReturnValue, TSoftObjectPtr<class UObject> K2Node_Select_Default, class UMaterialInstanceDynamic* CallFunc_GetBannerMID_BannerMID, bool CallFunc_NotEqual_NameName_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "SetBannerIconId");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_SetBannerIconId_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "SetBannerIconId");
+
+	Params::UPlayerBanner_C_SetBannerIconId_Params Parms{};
 
 	Parms.InBannerIconId = InBannerIconId;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -415,9 +483,12 @@ void UPlayerBanner_C::SetBannerIconId(class FName InBannerIconId, UDelegatePrope
 
 void UPlayerBanner_C::SetBannerImage(const struct FFortHomeBaseInfo& Image_info, bool* Success, class FName CallFunc_Conv_StringToName_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "SetBannerImage");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_SetBannerImage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "SetBannerImage");
+
+	Params::UPlayerBanner_C_SetBannerImage_Params Parms{};
 
 	Parms.Image_info = Image_info;
 	Parms.CallFunc_Conv_StringToName_ReturnValue = CallFunc_Conv_StringToName_ReturnValue;
@@ -438,9 +509,12 @@ void UPlayerBanner_C::SetBannerImage(const struct FFortHomeBaseInfo& Image_info,
 
 void UPlayerBanner_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo& TeamMemberInfo)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "OnTeamMemberStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_OnTeamMemberStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "OnTeamMemberStateChanged");
+
+	Params::UPlayerBanner_C_OnTeamMemberStateChanged_Params Parms{};
 
 	Parms.TeamMemberInfo = TeamMemberInfo;
 
@@ -456,9 +530,12 @@ void UPlayerBanner_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo&
 
 void UPlayerBanner_C::Account_Info_Changed(const struct FFortPublicAccountInfo& NewInfo)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "Account Info Changed");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_Account_Info_Changed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "Account Info Changed");
+
+	Params::UPlayerBanner_C_Account_Info_Changed_Params Parms{};
 
 	Parms.NewInfo = NewInfo;
 
@@ -473,12 +550,14 @@ void UPlayerBanner_C::Account_Info_Changed(const struct FFortPublicAccountInfo& 
 
 void UPlayerBanner_C::Destruct()
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -497,9 +576,12 @@ void UPlayerBanner_C::Destruct()
 
 void UPlayerBanner_C::ExecuteUbergraph_PlayerBanner(int32 EntryPoint, bool CallFunc_ShouldShowAthenaBanner_ShowAthenaBanner, const struct FFortTeamMemberInfo& K2Node_CustomEvent_TeamMemberInfo, bool CallFunc_IsValid_UniqueNetIdRepl_ReturnValue, bool CallFunc_SetBannerImage_Success, bool CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, const struct FFortPublicAccountInfo& K2Node_CustomEvent_NewInfo)
 {
-	static auto Func = Class->GetFunction("PlayerBanner_C", "ExecuteUbergraph_PlayerBanner");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBanner_C_ExecuteUbergraph_PlayerBanner_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBanner_C", "ExecuteUbergraph_PlayerBanner");
+
+	Params::UPlayerBanner_C_ExecuteUbergraph_PlayerBanner_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_ShouldShowAthenaBanner_ShowAthenaBanner = CallFunc_ShouldShowAthenaBanner_ShowAthenaBanner;
@@ -516,6 +598,4 @@ void UPlayerBanner_C::ExecuteUbergraph_PlayerBanner(int32 EntryPoint, bool CallF
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass HeroLoadoutPerksDetailWidget.HeroLoadoutPerksDetailWidget_C
+// (None)
+
+class UClass* UHeroLoadoutPerksDetailWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("HeroLoadoutPerksDetailWidget_C");
+
+	return Clss;
+}
+
+
+// HeroLoadoutPerksDetailWidget_C HeroLoadoutPerksDetailWidget.Default__HeroLoadoutPerksDetailWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UHeroLoadoutPerksDetailWidget_C* UHeroLoadoutPerksDetailWidget_C::GetDefaultObj()
+{
+	static class UHeroLoadoutPerksDetailWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UHeroLoadoutPerksDetailWidget_C*>(UHeroLoadoutPerksDetailWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function HeroLoadoutPerksDetailWidget.HeroLoadoutPerksDetailWidget_C.IsValidHeroSlot
@@ -27,9 +52,12 @@ namespace SDK
 
 void UHeroLoadoutPerksDetailWidget_C::IsValidHeroSlot(bool* Result, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "IsValidHeroSlot");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerksDetailWidget_C_IsValidHeroSlot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "IsValidHeroSlot");
+
+	Params::UHeroLoadoutPerksDetailWidget_C_IsValidHeroSlot_Params Parms{};
 
 	Parms.CallFunc_EqualEqual_NameName_ReturnValue = CallFunc_EqualEqual_NameName_ReturnValue;
 	Parms.CallFunc_EqualEqual_NameName_ReturnValue_1 = CallFunc_EqualEqual_NameName_ReturnValue_1;
@@ -54,9 +82,12 @@ void UHeroLoadoutPerksDetailWidget_C::IsValidHeroSlot(bool* Result, bool CallFun
 
 void UHeroLoadoutPerksDetailWidget_C::UpdateCommanderSlotPerkVisibility(class UFortHero* CallFunc_GetCommanderHero_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_IsCommanderPerkUnlockedForHero_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "UpdateCommanderSlotPerkVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerksDetailWidget_C_UpdateCommanderSlotPerkVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "UpdateCommanderSlotPerkVisibility");
+
+	Params::UHeroLoadoutPerksDetailWidget_C_UpdateCommanderSlotPerkVisibility_Params Parms{};
 
 	Parms.CallFunc_GetCommanderHero_ReturnValue = CallFunc_GetCommanderHero_ReturnValue;
 	Parms.CallFunc_EqualEqual_NameName_ReturnValue = CallFunc_EqualEqual_NameName_ReturnValue;
@@ -75,7 +106,7 @@ void UHeroLoadoutPerksDetailWidget_C::UpdateCommanderSlotPerkVisibility(class UF
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValidHeroSlot_Result                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_IsHeroPerkValidForCommander_OutReason                   ()
+// class FText                        CallFunc_IsHeroPerkValidForCommander_OutReason                   (None)
 // bool                               CallFunc_IsHeroPerkValidForCommander_ReturnValue                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValidHeroSlot_Result_1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -87,9 +118,12 @@ void UHeroLoadoutPerksDetailWidget_C::UpdateCommanderSlotPerkVisibility(class UF
 
 void UHeroLoadoutPerksDetailWidget_C::UpdateHeroLoadoutSlotWarning(class UFortHero* Hero, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_IsValidHeroSlot_Result, class FText CallFunc_IsHeroPerkValidForCommander_OutReason, bool CallFunc_IsHeroPerkValidForCommander_ReturnValue, bool CallFunc_IsValidHeroSlot_Result_1, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, class UFortHero* K2Node_DynamicCast_AsFort_Hero, bool K2Node_DynamicCast_bSuccess, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "UpdateHeroLoadoutSlotWarning");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "UpdateHeroLoadoutSlotWarning");
+
+	Params::UHeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning_Params Parms{};
 
 	Parms.Hero = Hero;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -123,9 +157,12 @@ void UHeroLoadoutPerksDetailWidget_C::UpdateHeroLoadoutSlotWarning(class UFortHe
 
 void UHeroLoadoutPerksDetailWidget_C::UpdateRootVisibility(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UFortHero* K2Node_DynamicCast_AsFort_Hero, bool K2Node_DynamicCast_bSuccess, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "UpdateRootVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerksDetailWidget_C_UpdateRootVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "UpdateRootVisibility");
+
+	Params::UHeroLoadoutPerksDetailWidget_C_UpdateRootVisibility_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -159,9 +196,12 @@ void UHeroLoadoutPerksDetailWidget_C::UpdateRootVisibility(bool Temp_bool_Variab
 
 void UHeroLoadoutPerksDetailWidget_C::HandleDifferentLoadoutSlotContextSet(TSet<class UWidget*> PerkWidgetsToShow, int32 Temp_int_Array_Index_Variable, enum class ESlateVisibility Temp_byte_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, TArray<class UWidget*>& K2Node_MakeArray_Array, class UWidget* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Set_Contains_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_EqualEqual_NameName_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "HandleDifferentLoadoutSlotContextSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "HandleDifferentLoadoutSlotContextSet");
+
+	Params::UHeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet_Params Parms{};
 
 	Parms.PerkWidgetsToShow = PerkWidgetsToShow;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -189,12 +229,14 @@ void UHeroLoadoutPerksDetailWidget_C::HandleDifferentLoadoutSlotContextSet(TSet<
 
 void UHeroLoadoutPerksDetailWidget_C::ClearLoadoutSlotContext()
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "ClearLoadoutSlotContext");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerksDetailWidget_C_ClearLoadoutSlotContext_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "ClearLoadoutSlotContext");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -207,9 +249,12 @@ void UHeroLoadoutPerksDetailWidget_C::ClearLoadoutSlotContext()
 
 void UHeroLoadoutPerksDetailWidget_C::SetLoadoutSlotContext(class UFortCampaignHeroLoadoutItem* HeroLoadout, class FName SlotName)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "SetLoadoutSlotContext");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerksDetailWidget_C_SetLoadoutSlotContext_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "SetLoadoutSlotContext");
+
+	Params::UHeroLoadoutPerksDetailWidget_C_SetLoadoutSlotContext_Params Parms{};
 
 	Parms.HeroLoadout = HeroLoadout;
 	Parms.SlotName = SlotName;
@@ -225,12 +270,14 @@ void UHeroLoadoutPerksDetailWidget_C::SetLoadoutSlotContext(class UFortCampaignH
 
 void UHeroLoadoutPerksDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "HandlePostDifferentItemToDetailSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerksDetailWidget_C_HandlePostDifferentItemToDetailSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "HandlePostDifferentItemToDetailSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -241,12 +288,14 @@ void UHeroLoadoutPerksDetailWidget_C::HandlePostDifferentItemToDetailSet()
 
 void UHeroLoadoutPerksDetailWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerksDetailWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -258,9 +307,12 @@ void UHeroLoadoutPerksDetailWidget_C::Construct()
 
 void UHeroLoadoutPerksDetailWidget_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerksDetailWidget_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "PreConstruct");
+
+	Params::UHeroLoadoutPerksDetailWidget_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -310,9 +362,12 @@ void UHeroLoadoutPerksDetailWidget_C::PreConstruct(bool IsDesignTime)
 
 void UHeroLoadoutPerksDetailWidget_C::ExecuteUbergraph_HeroLoadoutPerksDetailWidget(int32 EntryPoint, bool Temp_bool_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool Temp_bool_Variable_3, class UFortHero* K2Node_DynamicCast_AsFort_Hero, bool K2Node_DynamicCast_bSuccess, class UVerticalBoxSlot* CallFunc_SlotAsVerticalBoxSlot_ReturnValue, const struct FLinearColor& K2Node_Select_Default, const struct FMargin& K2Node_MakeStruct_Margin, const struct FMargin& K2Node_MakeStruct_Margin_1, const struct FMargin& K2Node_Select_Default_1, bool K2Node_Event_IsDesignTime, enum class ESlateVisibility K2Node_Select_Default_2, class UFortHero* K2Node_DynamicCast_AsFort_Hero_1, bool K2Node_DynamicCast_bSuccess_1, enum class ESlateVisibility Temp_byte_Variable_2, class UFortHeroType* CallFunc_GetHeroTypeBP_ReturnValue, TArray<class UFortAbilityKit*>& CallFunc_GetAbilityKitsForClassPerks_ReturnValue, class UFortAbilityKit* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, class UHeroLoadoutPerkDetailRow_C* CallFunc_Create_ReturnValue, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_3, const struct FMargin& K2Node_MakeStruct_Margin_2, enum class ESlateVisibility K2Node_Select_Default_3)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "ExecuteUbergraph_HeroLoadoutPerksDetailWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerksDetailWidget_C", "ExecuteUbergraph_HeroLoadoutPerksDetailWidget");
+
+	Params::UHeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -356,6 +411,4 @@ void UHeroLoadoutPerksDetailWidget_C::ExecuteUbergraph_HeroLoadoutPerksDetailWid
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

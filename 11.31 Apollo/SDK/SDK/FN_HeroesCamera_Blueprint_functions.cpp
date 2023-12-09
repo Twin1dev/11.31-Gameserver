@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass HeroesCamera_Blueprint.HeroesCamera_Blueprint_C
+// (Actor)
+
+class UClass* AHeroesCamera_Blueprint_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("HeroesCamera_Blueprint_C");
+
+	return Clss;
+}
+
+
+// HeroesCamera_Blueprint_C HeroesCamera_Blueprint.Default__HeroesCamera_Blueprint_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AHeroesCamera_Blueprint_C* AHeroesCamera_Blueprint_C::GetDefaultObj()
+{
+	static class AHeroesCamera_Blueprint_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AHeroesCamera_Blueprint_C*>(AHeroesCamera_Blueprint_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function HeroesCamera_Blueprint.HeroesCamera_Blueprint_C.HandleMousePress
@@ -24,9 +49,12 @@ namespace SDK
 
 void AHeroesCamera_Blueprint_C::HandleMousePress(class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, class AFortPlayerPawn* CallFunc_GetHeroPlayerPawnByIndex_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HeroesCamera_Blueprint_C", "HandleMousePress");
+	static class UFunction* Func = nullptr;
 
-	Params::AHeroesCamera_Blueprint_C_HandleMousePress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroesCamera_Blueprint_C", "HandleMousePress");
+
+	Params::AHeroesCamera_Blueprint_C_HandleMousePress_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetHeroPlayerPawnByIndex_ReturnValue = CallFunc_GetHeroPlayerPawnByIndex_ReturnValue;
@@ -43,12 +71,14 @@ void AHeroesCamera_Blueprint_C::HandleMousePress(class UFortFrontEndContext* Cal
 
 void AHeroesCamera_Blueprint_C::HandleMouseRelease()
 {
-	static auto Func = Class->GetFunction("HeroesCamera_Blueprint_C", "HandleMouseRelease");
+	static class UFunction* Func = nullptr;
 
-	Params::AHeroesCamera_Blueprint_C_HandleMouseRelease_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroesCamera_Blueprint_C", "HandleMouseRelease");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -60,9 +90,12 @@ void AHeroesCamera_Blueprint_C::HandleMouseRelease()
 
 void AHeroesCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_3(const struct FKey& Key)
 {
-	static auto Func = Class->GetFunction("HeroesCamera_Blueprint_C", "InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_3");
+	static class UFunction* Func = nullptr;
 
-	Params::AHeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_3_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroesCamera_Blueprint_C", "InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_3");
+
+	Params::AHeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_3_Params Parms{};
 
 	Parms.Key = Key;
 
@@ -78,9 +111,12 @@ void AHeroesCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_3
 
 void AHeroesCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_2(const struct FKey& Key)
 {
-	static auto Func = Class->GetFunction("HeroesCamera_Blueprint_C", "InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_2");
+	static class UFunction* Func = nullptr;
 
-	Params::AHeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroesCamera_Blueprint_C", "InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_2");
+
+	Params::AHeroesCamera_Blueprint_C_InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_2_Params Parms{};
 
 	Parms.Key = Key;
 
@@ -96,9 +132,12 @@ void AHeroesCamera_Blueprint_C::InpActEvt_LeftMouseButton_K2Node_InputKeyEvent_2
 
 void AHeroesCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_1(const struct FKey& Key)
 {
-	static auto Func = Class->GetFunction("HeroesCamera_Blueprint_C", "InpActEvt_RightMouseButton_K2Node_InputKeyEvent_1");
+	static class UFunction* Func = nullptr;
 
-	Params::AHeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_1_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroesCamera_Blueprint_C", "InpActEvt_RightMouseButton_K2Node_InputKeyEvent_1");
+
+	Params::AHeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_1_Params Parms{};
 
 	Parms.Key = Key;
 
@@ -114,9 +153,12 @@ void AHeroesCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_
 
 void AHeroesCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_0(const struct FKey& Key)
 {
-	static auto Func = Class->GetFunction("HeroesCamera_Blueprint_C", "InpActEvt_RightMouseButton_K2Node_InputKeyEvent_0");
+	static class UFunction* Func = nullptr;
 
-	Params::AHeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroesCamera_Blueprint_C", "InpActEvt_RightMouseButton_K2Node_InputKeyEvent_0");
+
+	Params::AHeroesCamera_Blueprint_C_InpActEvt_RightMouseButton_K2Node_InputKeyEvent_0_Params Parms{};
 
 	Parms.Key = Key;
 
@@ -131,12 +173,14 @@ void AHeroesCamera_Blueprint_C::InpActEvt_RightMouseButton_K2Node_InputKeyEvent_
 
 void AHeroesCamera_Blueprint_C::OnActivated()
 {
-	static auto Func = Class->GetFunction("HeroesCamera_Blueprint_C", "OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AHeroesCamera_Blueprint_C_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroesCamera_Blueprint_C", "OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -147,12 +191,14 @@ void AHeroesCamera_Blueprint_C::OnActivated()
 
 void AHeroesCamera_Blueprint_C::OnDeactivated()
 {
-	static auto Func = Class->GetFunction("HeroesCamera_Blueprint_C", "OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AHeroesCamera_Blueprint_C_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroesCamera_Blueprint_C", "OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -164,9 +210,12 @@ void AHeroesCamera_Blueprint_C::OnDeactivated()
 
 void AHeroesCamera_Blueprint_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("HeroesCamera_Blueprint_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::AHeroesCamera_Blueprint_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroesCamera_Blueprint_C", "ReceiveTick");
+
+	Params::AHeroesCamera_Blueprint_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -211,9 +260,12 @@ void AHeroesCamera_Blueprint_C::ReceiveTick(float DeltaSeconds)
 
 void AHeroesCamera_Blueprint_C::ExecuteUbergraph_HeroesCamera_Blueprint(int32 EntryPoint, const struct FKey& Temp_struct_Variable, const struct FKey& K2Node_InputKeyEvent_Key_1, const struct FKey& K2Node_InputKeyEvent_Key, const struct FKey& Temp_struct_Variable_1, int32 Temp_int_Array_Index_Variable, const struct FKey& K2Node_InputKeyEvent_Key_2, class APlayerController* CallFunc_GetPlayerController_ReturnValue, const struct FKey& K2Node_InputKeyEvent_Key_3, float K2Node_Event_DeltaSeconds, class APlayerController* CallFunc_GetPlayerController_ReturnValue_1, float CallFunc_GetInputMouseDelta_DeltaX, float CallFunc_GetInputMouseDelta_DeltaY, float CallFunc_Multiply_FloatFloat_ReturnValue, TArray<class ATVPostProcessBP_C*>& CallFunc_GetAllActorsOfClass_OutActors, bool CallFunc_IsValid_ReturnValue, class ATVPostProcessBP_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, class APlayerController* CallFunc_GetPlayerController_ReturnValue_2, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, float CallFunc_Subtract_FloatFloat_ReturnValue, int32 Temp_int_Loop_Counter_Variable, const struct FRotator& CallFunc_MakeRotator_ReturnValue, bool CallFunc_K2_SetActorRotation_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class AFortTimeOfDayManager* CallFunc_GetTimeOfDayManagerFromContext_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HeroesCamera_Blueprint_C", "ExecuteUbergraph_HeroesCamera_Blueprint");
+	static class UFunction* Func = nullptr;
 
-	Params::AHeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroesCamera_Blueprint_C", "ExecuteUbergraph_HeroesCamera_Blueprint");
+
+	Params::AHeroesCamera_Blueprint_C_ExecuteUbergraph_HeroesCamera_Blueprint_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
@@ -252,6 +304,4 @@ void AHeroesCamera_Blueprint_C::ExecuteUbergraph_HeroesCamera_Blueprint(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

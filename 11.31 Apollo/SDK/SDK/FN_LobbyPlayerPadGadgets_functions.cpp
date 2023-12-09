@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C
+// (None)
+
+class UClass* ULobbyPlayerPadGadgets_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LobbyPlayerPadGadgets_C");
+
+	return Clss;
+}
+
+
+// LobbyPlayerPadGadgets_C LobbyPlayerPadGadgets.Default__LobbyPlayerPadGadgets_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULobbyPlayerPadGadgets_C* ULobbyPlayerPadGadgets_C::GetDefaultObj()
+{
+	static class ULobbyPlayerPadGadgets_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULobbyPlayerPadGadgets_C*>(ULobbyPlayerPadGadgets_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.Initialize
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ULobbyPlayerPadGadgets_C::Initialize(int32 PlayerIndex)
 {
-	static auto Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "Initialize");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyPlayerPadGadgets_C_Initialize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "Initialize");
+
+	Params::ULobbyPlayerPadGadgets_C_Initialize_Params Parms{};
 
 	Parms.PlayerIndex = PlayerIndex;
 
@@ -40,9 +68,12 @@ void ULobbyPlayerPadGadgets_C::Initialize(int32 PlayerIndex)
 
 void ULobbyPlayerPadGadgets_C::OnInputClicked(class UFortFrontEndContext* CallFunc_GetContext_ReturnValue)
 {
-	static auto Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "OnInputClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyPlayerPadGadgets_C_OnInputClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "OnInputClicked");
+
+	Params::ULobbyPlayerPadGadgets_C_OnInputClicked_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 
@@ -58,14 +89,17 @@ void ULobbyPlayerPadGadgets_C::OnInputClicked(class UFortFrontEndContext* CallFu
 // struct FPointerEvent               MouseEvent                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
 // struct FKey                        CallFunc_PointerEvent_GetEffectingButton_ReturnValue             (HasGetValueTypeHash)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 // bool                               CallFunc_EqualEqual_KeyKey_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 struct FEventReply ULobbyPlayerPadGadgets_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FKey& CallFunc_PointerEvent_GetEffectingButton_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue, bool CallFunc_EqualEqual_KeyKey_ReturnValue)
 {
-	static auto Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "OnMouseButtonDown");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyPlayerPadGadgets_C_OnMouseButtonDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "OnMouseButtonDown");
+
+	Params::ULobbyPlayerPadGadgets_C_OnMouseButtonDown_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -95,9 +129,12 @@ struct FEventReply ULobbyPlayerPadGadgets_C::OnMouseButtonDown(const struct FGeo
 
 void ULobbyPlayerPadGadgets_C::Refresh(const struct FFortTeamMemberInfo& TeamMemberInfo, class UFortItem* CallFunc_Array_Get_Item, class UFortItem* CallFunc_Array_Get_Item_1, class UFortWorldItem* K2Node_DynamicCast_AsFort_World_Item, bool K2Node_DynamicCast_bSuccess, class UFortWorldItem* K2Node_DynamicCast_AsFort_World_Item_1, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_Array_IsValidIndex_ReturnValue, bool CallFunc_Array_IsValidIndex_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "Refresh");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyPlayerPadGadgets_C_Refresh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "Refresh");
+
+	Params::ULobbyPlayerPadGadgets_C_Refresh_Params Parms{};
 
 	Parms.TeamMemberInfo = TeamMemberInfo;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
@@ -122,9 +159,12 @@ void ULobbyPlayerPadGadgets_C::Refresh(const struct FFortTeamMemberInfo& TeamMem
 
 void ULobbyPlayerPadGadgets_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyPlayerPadGadgets_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "OnMouseEnter");
+
+	Params::ULobbyPlayerPadGadgets_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -141,9 +181,12 @@ void ULobbyPlayerPadGadgets_C::OnMouseEnter(const struct FGeometry& MyGeometry, 
 
 void ULobbyPlayerPadGadgets_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyPlayerPadGadgets_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "OnMouseLeave");
+
+	Params::ULobbyPlayerPadGadgets_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -162,9 +205,12 @@ void ULobbyPlayerPadGadgets_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 
 void ULobbyPlayerPadGadgets_C::ExecuteUbergraph_LobbyPlayerPadGadgets(int32 EntryPoint, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FPointerEvent& K2Node_Event_MouseEvent)
 {
-	static auto Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "ExecuteUbergraph_LobbyPlayerPadGadgets");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyPlayerPadGadgets_C_ExecuteUbergraph_LobbyPlayerPadGadgets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "ExecuteUbergraph_LobbyPlayerPadGadgets");
+
+	Params::ULobbyPlayerPadGadgets_C_ExecuteUbergraph_LobbyPlayerPadGadgets_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_MyGeometry = K2Node_Event_MyGeometry;
@@ -182,12 +228,14 @@ void ULobbyPlayerPadGadgets_C::ExecuteUbergraph_LobbyPlayerPadGadgets(int32 Entr
 
 void ULobbyPlayerPadGadgets_C::OnGadgetsMouseLeft__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "OnGadgetsMouseLeft__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyPlayerPadGadgets_C_OnGadgetsMouseLeft__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "OnGadgetsMouseLeft__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -198,17 +246,17 @@ void ULobbyPlayerPadGadgets_C::OnGadgetsMouseLeft__DelegateSignature()
 
 void ULobbyPlayerPadGadgets_C::OnGadgetsMouseEntered__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "OnGadgetsMouseEntered__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyPlayerPadGadgets_C_OnGadgetsMouseEntered__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyPlayerPadGadgets_C", "OnGadgetsMouseEntered__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

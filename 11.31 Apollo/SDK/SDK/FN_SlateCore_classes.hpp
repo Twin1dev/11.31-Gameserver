@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -17,13 +14,10 @@ namespace SDK
 class UFontBulkData : public UObject
 {
 public:
-	uint8                                        Pad_41C3[0xB8];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1FC5[0xB8];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("FontBulkData");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UFontBulkData* GetDefaultObj();
 
 };
 
@@ -33,11 +27,8 @@ class IFontFaceInterface : public IInterface
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("FontFaceInterface");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class IFontFaceInterface* GetDefaultObj();
 
 };
 
@@ -47,11 +38,8 @@ class IFontProviderInterface : public IInterface
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("FontProviderInterface");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class IFontProviderInterface* GetDefaultObj();
 
 };
 
@@ -61,11 +49,8 @@ class USlateTypes : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SlateTypes");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USlateTypes* GetDefaultObj();
 
 };
 
@@ -76,11 +61,8 @@ class USlateWidgetStyleAsset : public UObject
 public:
 	class USlateWidgetStyleContainerBase*        CustomStyle;                                       // 0x28(0x8)(Edit, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SlateWidgetStyleAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USlateWidgetStyleAsset* GetDefaultObj();
 
 };
 
@@ -89,13 +71,10 @@ public:
 class USlateWidgetStyleContainerBase : public UObject
 {
 public:
-	uint8                                        Pad_41C4[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1FCC[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SlateWidgetStyleContainerBase");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USlateWidgetStyleContainerBase* GetDefaultObj();
 
 };
 
@@ -105,16 +84,11 @@ class ISlateWidgetStyleContainerInterface : public IInterface
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SlateWidgetStyleContainerInterface");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ISlateWidgetStyleContainerInterface* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

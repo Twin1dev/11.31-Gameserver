@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ShowdownPin.ShowdownPin_C
+// (None)
+
+class UClass* UShowdownPin_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ShowdownPin_C");
+
+	return Clss;
+}
+
+
+// ShowdownPin_C ShowdownPin.Default__ShowdownPin_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UShowdownPin_C* UShowdownPin_C::GetDefaultObj()
+{
+	static class UShowdownPin_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UShowdownPin_C*>(UShowdownPin_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ShowdownPin.ShowdownPin_C.Refresh
@@ -24,7 +49,7 @@ namespace SDK
 // enum class EFortShowdownPinState   Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetScoreToDisplay_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // class UTextBlock*                  K2Node_Select_Default                                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     K2Node_Select_Default_1                                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortShowdownPinState   CallFunc_GetEventPinState_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -33,9 +58,12 @@ namespace SDK
 
 void UShowdownPin_C::Refresh(enum class EFortShowdownPinState PinState, enum class EFortShowdownPinState Temp_byte_Variable, bool Temp_bool_Variable, enum class EFortShowdownPinState Temp_byte_Variable_1, int32 CallFunc_GetScoreToDisplay_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, class UTextBlock* K2Node_Select_Default, class UWidget* K2Node_Select_Default_1, enum class EFortShowdownPinState CallFunc_GetEventPinState_ReturnValue, enum class EFortShowdownPinState CallFunc_GetTournamentBestPinState_ReturnValue, enum class EFortShowdownPinState K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("ShowdownPin_C", "Refresh");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownPin_C_Refresh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownPin_C", "Refresh");
+
+	Params::UShowdownPin_C_Refresh_Params Parms{};
 
 	Parms.PinState = PinState;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -61,12 +89,14 @@ void UShowdownPin_C::Refresh(enum class EFortShowdownPinState PinState, enum cla
 
 void UShowdownPin_C::RefreshDataBP()
 {
-	static auto Func = Class->GetFunction("ShowdownPin_C", "RefreshDataBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownPin_C_RefreshDataBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownPin_C", "RefreshDataBP");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -78,9 +108,12 @@ void UShowdownPin_C::RefreshDataBP()
 
 void UShowdownPin_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("ShowdownPin_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownPin_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownPin_C", "PreConstruct");
+
+	Params::UShowdownPin_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -96,9 +129,12 @@ void UShowdownPin_C::PreConstruct(bool IsDesignTime)
 
 void UShowdownPin_C::EventSetTier(int32 Score)
 {
-	static auto Func = Class->GetFunction("ShowdownPin_C", "EventSetTier");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownPin_C_EventSetTier_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownPin_C", "EventSetTier");
+
+	Params::UShowdownPin_C_EventSetTier_Params Parms{};
 
 	Parms.Score = Score;
 
@@ -114,9 +150,12 @@ void UShowdownPin_C::EventSetTier(int32 Score)
 
 void UShowdownPin_C::EventFixPts(int32 Points)
 {
-	static auto Func = Class->GetFunction("ShowdownPin_C", "EventFixPts");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownPin_C_EventFixPts_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownPin_C", "EventFixPts");
+
+	Params::UShowdownPin_C_EventFixPts_Params Parms{};
 
 	Parms.Points = Points;
 
@@ -131,12 +170,14 @@ void UShowdownPin_C::EventFixPts(int32 Points)
 
 void UShowdownPin_C::EventColorize()
 {
-	static auto Func = Class->GetFunction("ShowdownPin_C", "EventColorize");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownPin_C_EventColorize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownPin_C", "EventColorize");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -147,12 +188,14 @@ void UShowdownPin_C::EventColorize()
 
 void UShowdownPin_C::EventRevealAnim()
 {
-	static auto Func = Class->GetFunction("ShowdownPin_C", "EventRevealAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownPin_C_EventRevealAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownPin_C", "EventRevealAnim");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -181,11 +224,11 @@ void UShowdownPin_C::EventRevealAnim()
 // int32                              K2Node_CustomEvent_Score                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable_4                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // int32                              K2Node_CustomEvent_Points                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // enum class ESlateVisibility        Temp_byte_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                CallFunc_MakeColor_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -221,9 +264,12 @@ void UShowdownPin_C::EventRevealAnim()
 
 void UShowdownPin_C::ExecuteUbergraph_ShowdownPin(int32 EntryPoint, bool Temp_bool_Variable, int32 Temp_int_Variable, bool Temp_bool_Variable_1, int32 Temp_int_Variable_1, bool Temp_bool_Variable_2, int32 Temp_int_Variable_2, int32 Temp_int_Variable_3, bool Temp_bool_Variable_3, float Temp_float_Variable, bool Temp_bool_Variable_4, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UMaterialInterface* Temp_object_Variable, class UMaterialInterface* Temp_object_Variable_1, class UMaterialInterface* Temp_object_Variable_2, class UMaterialInterface* Temp_object_Variable_3, bool K2Node_Event_IsDesignTime, int32 K2Node_CustomEvent_Score, float CallFunc_Conv_IntToFloat_ReturnValue, int32 Temp_int_Variable_4, class FText CallFunc_Conv_IntToText_ReturnValue, int32 K2Node_CustomEvent_Points, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_2, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, const struct FLinearColor& CallFunc_MakeColor_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_3, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, bool Temp_bool_Variable_5, enum class ESlateVisibility K2Node_Select_Default, int32 Temp_int_Variable_5, float CallFunc_PauseAnimation_ReturnValue, float CallFunc_GetStartTime_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float CallFunc_GetEndTime_ReturnValue, int32 Temp_int_Variable_6, float CallFunc_Subtract_FloatFloat_ReturnValue, float K2Node_Select_Default_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool Temp_bool_Variable_6, int32 CallFunc_GetTournamentPinUnlockScore_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, int32 K2Node_Select_Default_2, float CallFunc_Divide_FloatFloat_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue_1, int32 K2Node_Select_Default_3, bool CallFunc_Less_FloatFloat_ReturnValue_2, int32 K2Node_Select_Default_4, int32 K2Node_Select_Default_5, enum class ESlateVisibility K2Node_Select_Default_6, class UMaterialInterface* K2Node_Select_Default_7)
 {
-	static auto Func = Class->GetFunction("ShowdownPin_C", "ExecuteUbergraph_ShowdownPin");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownPin_C_ExecuteUbergraph_ShowdownPin_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownPin_C", "ExecuteUbergraph_ShowdownPin");
+
+	Params::UShowdownPin_C_ExecuteUbergraph_ShowdownPin_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -290,6 +336,4 @@ void UShowdownPin_C::ExecuteUbergraph_ShowdownPin(int32 EntryPoint, bool Temp_bo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

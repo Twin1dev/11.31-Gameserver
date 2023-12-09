@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TabRevealMeassage.TabRevealMeassage_C
+// (None)
+
+class UClass* UTabRevealMeassage_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TabRevealMeassage_C");
+
+	return Clss;
+}
+
+
+// TabRevealMeassage_C TabRevealMeassage.Default__TabRevealMeassage_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTabRevealMeassage_C* UTabRevealMeassage_C::GetDefaultObj()
+{
+	static class UTabRevealMeassage_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTabRevealMeassage_C*>(UTabRevealMeassage_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TabRevealMeassage.TabRevealMeassage_C.AutoClose
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UTabRevealMeassage_C::AutoClose(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool CallFunc_K2_IsValidTimerHandle_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TabRevealMeassage_C", "AutoClose");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabRevealMeassage_C_AutoClose_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabRevealMeassage_C", "AutoClose");
+
+	Params::UTabRevealMeassage_C_AutoClose_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 	Parms.CallFunc_K2_IsValidTimerHandle_ReturnValue = CallFunc_K2_IsValidTimerHandle_ReturnValue;
@@ -44,9 +72,12 @@ void UTabRevealMeassage_C::AutoClose(class UUMGSequencePlayer* CallFunc_PlayAnim
 
 void UTabRevealMeassage_C::ToggleTimer(bool Enabled, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TabRevealMeassage_C", "ToggleTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabRevealMeassage_C_ToggleTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabRevealMeassage_C", "ToggleTimer");
+
+	Params::UTabRevealMeassage_C_ToggleTimer_Params Parms{};
 
 	Parms.Enabled = Enabled;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -63,12 +94,14 @@ void UTabRevealMeassage_C::ToggleTimer(bool Enabled, UDelegateProperty_ K2Node_C
 
 void UTabRevealMeassage_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("TabRevealMeassage_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabRevealMeassage_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabRevealMeassage_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -80,9 +113,12 @@ void UTabRevealMeassage_C::BP_OnActivated()
 
 void UTabRevealMeassage_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TabRevealMeassage_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabRevealMeassage_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabRevealMeassage_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UTabRevealMeassage_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -97,12 +133,14 @@ void UTabRevealMeassage_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_Comm
 
 void UTabRevealMeassage_C::Construct()
 {
-	static auto Func = Class->GetFunction("TabRevealMeassage_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabRevealMeassage_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabRevealMeassage_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -113,12 +151,14 @@ void UTabRevealMeassage_C::Construct()
 
 void UTabRevealMeassage_C::CloseWindow()
 {
-	static auto Func = Class->GetFunction("TabRevealMeassage_C", "CloseWindow");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabRevealMeassage_C_CloseWindow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabRevealMeassage_C", "CloseWindow");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -131,7 +171,7 @@ void UTabRevealMeassage_C::CloseWindow()
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetEmptyText_ReturnValue                                ()
+// class FText                        CallFunc_GetEmptyText_ReturnValue                                (None)
 // bool                               CallFunc_EqualEqual_TextText_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
@@ -139,9 +179,12 @@ void UTabRevealMeassage_C::CloseWindow()
 
 void UTabRevealMeassage_C::ExecuteUbergraph_TabRevealMeassage(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, class FText CallFunc_GetEmptyText_ReturnValue, bool CallFunc_EqualEqual_TextText_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TabRevealMeassage_C", "ExecuteUbergraph_TabRevealMeassage");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabRevealMeassage_C", "ExecuteUbergraph_TabRevealMeassage");
+
+	Params::UTabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -165,17 +208,17 @@ void UTabRevealMeassage_C::ExecuteUbergraph_TabRevealMeassage(int32 EntryPoint, 
 
 void UTabRevealMeassage_C::TabMessageClosed__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("TabRevealMeassage_C", "TabMessageClosed__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabRevealMeassage_C_TabMessageClosed__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabRevealMeassage_C", "TabMessageClosed__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

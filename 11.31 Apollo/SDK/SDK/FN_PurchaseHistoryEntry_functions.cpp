@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass PurchaseHistoryEntry.PurchaseHistoryEntry_C
+// (None)
+
+class UClass* UPurchaseHistoryEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PurchaseHistoryEntry_C");
+
+	return Clss;
+}
+
+
+// PurchaseHistoryEntry_C PurchaseHistoryEntry.Default__PurchaseHistoryEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPurchaseHistoryEntry_C* UPurchaseHistoryEntry_C::GetDefaultObj()
+{
+	static class UPurchaseHistoryEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPurchaseHistoryEntry_C*>(UPurchaseHistoryEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PurchaseHistoryEntry.PurchaseHistoryEntry_C.SetPurchaseText
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UPurchaseHistoryEntry_C::SetPurchaseText(class FText& PurchaseText, bool bHasBeenRefunded)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryEntry_C", "SetPurchaseText");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryEntry_C_SetPurchaseText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryEntry_C", "SetPurchaseText");
+
+	Params::UPurchaseHistoryEntry_C_SetPurchaseText_Params Parms{};
 
 	Parms.PurchaseText = PurchaseText;
 	Parms.bHasBeenRefunded = bHasBeenRefunded;
@@ -42,9 +70,12 @@ void UPurchaseHistoryEntry_C::SetPurchaseText(class FText& PurchaseText, bool bH
 
 void UPurchaseHistoryEntry_C::DisableAppearance(bool IsDisabled)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryEntry_C", "DisableAppearance");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryEntry_C_DisableAppearance_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryEntry_C", "DisableAppearance");
+
+	Params::UPurchaseHistoryEntry_C_DisableAppearance_Params Parms{};
 
 	Parms.IsDisabled = IsDisabled;
 
@@ -60,9 +91,12 @@ void UPurchaseHistoryEntry_C::DisableAppearance(bool IsDisabled)
 
 void UPurchaseHistoryEntry_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryEntry_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryEntry_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryEntry_C", "PreConstruct");
+
+	Params::UPurchaseHistoryEntry_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -80,9 +114,12 @@ void UPurchaseHistoryEntry_C::PreConstruct(bool IsDesignTime)
 
 void UPurchaseHistoryEntry_C::OnSetHistory(bool bHasBeenRefunded, bool bIsTokenlessRefund, bool bPlayerHasTokens)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryEntry_C", "OnSetHistory");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryEntry_C_OnSetHistory_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryEntry_C", "OnSetHistory");
+
+	Params::UPurchaseHistoryEntry_C_OnSetHistory_Params Parms{};
 
 	Parms.bHasBeenRefunded = bHasBeenRefunded;
 	Parms.bIsTokenlessRefund = bIsTokenlessRefund;
@@ -100,9 +137,12 @@ void UPurchaseHistoryEntry_C::OnSetHistory(bool bHasBeenRefunded, bool bIsTokenl
 
 void UPurchaseHistoryEntry_C::UpdateItemList(TArray<class UFortCosmeticItemCard*>& ItemCards)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryEntry_C", "UpdateItemList");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryEntry_C_UpdateItemList_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryEntry_C", "UpdateItemList");
+
+	Params::UPurchaseHistoryEntry_C_UpdateItemList_Params Parms{};
 
 	Parms.ItemCards = ItemCards;
 
@@ -153,7 +193,7 @@ void UPurchaseHistoryEntry_C::UpdateItemList(TArray<class UFortCosmeticItemCard*
 // int32                              CallFunc_Subtract_IntInt_ReturnValue_1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // class UPanelSlot*                  CallFunc_AddChild_ReturnValue                                    (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPanelSlot*                  CallFunc_AddChild_ReturnValue_1                                  (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -166,9 +206,12 @@ void UPurchaseHistoryEntry_C::UpdateItemList(TArray<class UFortCosmeticItemCard*
 
 void UPurchaseHistoryEntry_C::ExecuteUbergraph_PurchaseHistoryEntry(int32 EntryPoint, bool Temp_bool_Variable, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, class FText K2Node_Event_PurchaseText, bool K2Node_Event_bHasBeenRefunded_1, bool K2Node_CustomEvent_isDisabled, bool K2Node_Event_IsDesignTime, int32 Temp_int_Loop_Counter_Variable, enum class ESlateVisibility Temp_byte_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, bool Temp_bool_Variable_1, int32 CallFunc_MakeLiteralInt_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_Greater_IntInt_ReturnValue, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, bool K2Node_Event_bHasBeenRefunded, bool K2Node_Event_bIsTokenlessRefund, bool K2Node_Event_bPlayerHasTokens, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue, bool Temp_bool_Variable_2, bool CallFunc_BooleanOR_ReturnValue, const struct FLinearColor& K2Node_Select_Default_1, class UMaterialInterface* Temp_object_Variable, class UMaterialInterface* Temp_object_Variable_1, class UMaterialInterface* K2Node_Select_Default_2, TArray<class UFortCosmeticItemCard*>& K2Node_Event_ItemCards, int32 CallFunc_Array_Length_ReturnValue, class UFortCosmeticItemCard* CallFunc_Array_Get_Item, int32 CallFunc_Subtract_IntInt_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue_1, bool CallFunc_GreaterEqual_IntInt_ReturnValue, class UHorizontalBoxSlot* K2Node_DynamicCast_AsHorizontal_Box_Slot, bool K2Node_DynamicCast_bSuccess, bool CallFunc_BooleanAND_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryEntry_C", "ExecuteUbergraph_PurchaseHistoryEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryEntry_C", "ExecuteUbergraph_PurchaseHistoryEntry");
+
+	Params::UPurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -226,6 +269,4 @@ void UPurchaseHistoryEntry_C::ExecuteUbergraph_PurchaseHistoryEntry(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

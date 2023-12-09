@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,16 +16,13 @@ class ADA_SpookyMist_C : public AFortCustomizableAbilityDecoTool
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xAC0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                         CanCancelAbility;                                  // 0xAC8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5A0D[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_55A6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          CanCancelTimer;                                    // 0xAD0(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FScalableFloat                        CancelDelay;                                       // 0xAD8(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class AFortPlayerPawn*                       PlayerPawn;                                        // 0xAF8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("DA_SpookyMist_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ADA_SpookyMist_C* GetDefaultObj();
 
 	void BPPressSecondaryFire(class AFortDecoHelper* FortDecoHelper);
 	void BPPressTrigger(class AFortDecoHelper* FortDecoHelper);
@@ -42,6 +36,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

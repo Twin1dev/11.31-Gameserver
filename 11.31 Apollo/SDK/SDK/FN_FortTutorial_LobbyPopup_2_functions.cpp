@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass FortTutorial_LobbyPopup_2.FortTutorial_LobbyPopup_2_C
+// (None)
+
+class UClass* UFortTutorial_LobbyPopup_2_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FortTutorial_LobbyPopup_2_C");
+
+	return Clss;
+}
+
+
+// FortTutorial_LobbyPopup_2_C FortTutorial_LobbyPopup_2.Default__FortTutorial_LobbyPopup_2_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UFortTutorial_LobbyPopup_2_C* UFortTutorial_LobbyPopup_2_C::GetDefaultObj()
+{
+	static class UFortTutorial_LobbyPopup_2_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFortTutorial_LobbyPopup_2_C*>(UFortTutorial_LobbyPopup_2_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function FortTutorial_LobbyPopup_2.FortTutorial_LobbyPopup_2_C.BndEvt__Skip_Button_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UFortTutorial_LobbyPopup_2_C::BndEvt__Skip_Button_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("FortTutorial_LobbyPopup_2_C", "BndEvt__Skip_Button_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTutorial_LobbyPopup_2_C_BndEvt__Skip_Button_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTutorial_LobbyPopup_2_C", "BndEvt__Skip_Button_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UFortTutorial_LobbyPopup_2_C_BndEvt__Skip_Button_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -39,12 +67,14 @@ void UFortTutorial_LobbyPopup_2_C::BndEvt__Skip_Button_K2Node_ComponentBoundEven
 
 void UFortTutorial_LobbyPopup_2_C::Construct()
 {
-	static auto Func = Class->GetFunction("FortTutorial_LobbyPopup_2_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTutorial_LobbyPopup_2_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTutorial_LobbyPopup_2_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +86,12 @@ void UFortTutorial_LobbyPopup_2_C::Construct()
 
 void UFortTutorial_LobbyPopup_2_C::BndEvt__Cancel_Button_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("FortTutorial_LobbyPopup_2_C", "BndEvt__Cancel_Button_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTutorial_LobbyPopup_2_C_BndEvt__Cancel_Button_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTutorial_LobbyPopup_2_C", "BndEvt__Cancel_Button_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+
+	Params::UFortTutorial_LobbyPopup_2_C_BndEvt__Cancel_Button_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -74,9 +107,12 @@ void UFortTutorial_LobbyPopup_2_C::BndEvt__Cancel_Button_K2Node_ComponentBoundEv
 
 void UFortTutorial_LobbyPopup_2_C::BndEvt__Close_Button_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("FortTutorial_LobbyPopup_2_C", "BndEvt__Close_Button_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTutorial_LobbyPopup_2_C_BndEvt__Close_Button_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTutorial_LobbyPopup_2_C", "BndEvt__Close_Button_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UFortTutorial_LobbyPopup_2_C_BndEvt__Close_Button_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -98,9 +134,12 @@ void UFortTutorial_LobbyPopup_2_C::BndEvt__Close_Button_K2Node_ComponentBoundEve
 
 void UFortTutorial_LobbyPopup_2_C::ExecuteUbergraph_FortTutorial_LobbyPopup_2(int32 EntryPoint, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UCommonButton* K2Node_ComponentBoundEvent_Button)
 {
-	static auto Func = Class->GetFunction("FortTutorial_LobbyPopup_2_C", "ExecuteUbergraph_FortTutorial_LobbyPopup_2");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortTutorial_LobbyPopup_2_C", "ExecuteUbergraph_FortTutorial_LobbyPopup_2");
+
+	Params::UFortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_Button_2 = K2Node_ComponentBoundEvent_Button_2;
@@ -116,6 +155,4 @@ void UFortTutorial_LobbyPopup_2_C::ExecuteUbergraph_FortTutorial_LobbyPopup_2(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

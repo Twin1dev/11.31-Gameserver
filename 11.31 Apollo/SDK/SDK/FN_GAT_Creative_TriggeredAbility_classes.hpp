@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -17,15 +14,12 @@ namespace SDK
 class UGAT_Creative_TriggeredAbility_C : public UGAT_TriggeredAbility_C
 {
 public:
-	uint8                                        Pad_428E[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2AA8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xA48(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	TArray<class FName>                          OverriddenPropertyNames;                           // 0xA50(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GAT_Creative_TriggeredAbility_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGAT_Creative_TriggeredAbility_C* GetDefaultObj();
 
 	void IsPropertyOverridden(class FName PropertyName, bool* bResult, bool CallFunc_Array_Contains_ReturnValue);
 	void K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData);
@@ -36,6 +30,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

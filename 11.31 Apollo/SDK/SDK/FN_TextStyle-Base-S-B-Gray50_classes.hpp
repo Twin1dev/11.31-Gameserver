@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -14,20 +11,15 @@ namespace SDK
 
 // 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Base-S-B-Gray50.TextStyle-Base-S-B-Gray50_C
-class UTextStyle_Base_S_B_Gray50_C : public UTextStyle_Base_S_B_Gray_C
+class UTextStyleMinusBaseMinusSMinusBMinusGray50_C : public UTextStyleMinusBaseMinusSMinusBMinusGray_C
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("TextStyle-Base-S-B-Gray50_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UTextStyleMinusBaseMinusSMinusBMinusGray50_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

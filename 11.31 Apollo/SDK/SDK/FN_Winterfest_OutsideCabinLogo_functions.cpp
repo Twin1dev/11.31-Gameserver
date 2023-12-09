@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass Winterfest_OutsideCabinLogo.Winterfest_OutsideCabinLogo_C
+// (None)
+
+class UClass* UWinterfest_OutsideCabinLogo_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Winterfest_OutsideCabinLogo_C");
+
+	return Clss;
+}
+
+
+// Winterfest_OutsideCabinLogo_C Winterfest_OutsideCabinLogo.Default__Winterfest_OutsideCabinLogo_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UWinterfest_OutsideCabinLogo_C* UWinterfest_OutsideCabinLogo_C::GetDefaultObj()
+{
+	static class UWinterfest_OutsideCabinLogo_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWinterfest_OutsideCabinLogo_C*>(UWinterfest_OutsideCabinLogo_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Winterfest_OutsideCabinLogo.Winterfest_OutsideCabinLogo_C.LogoOutro
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UWinterfest_OutsideCabinLogo_C::LogoOutro(class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Winterfest_OutsideCabinLogo_C", "LogoOutro");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterfest_OutsideCabinLogo_C_LogoOutro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Winterfest_OutsideCabinLogo_C", "LogoOutro");
+
+	Params::UWinterfest_OutsideCabinLogo_C_LogoOutro_Params Parms{};
 
 	Parms.CallFunc_PlayAnimationReverse_ReturnValue = CallFunc_PlayAnimationReverse_ReturnValue;
 
@@ -40,9 +68,12 @@ void UWinterfest_OutsideCabinLogo_C::LogoOutro(class UUMGSequencePlayer* CallFun
 
 void UWinterfest_OutsideCabinLogo_C::LogoIntro(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Winterfest_OutsideCabinLogo_C", "LogoIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterfest_OutsideCabinLogo_C_LogoIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Winterfest_OutsideCabinLogo_C", "LogoIntro");
+
+	Params::UWinterfest_OutsideCabinLogo_C_LogoIntro_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -58,9 +89,12 @@ void UWinterfest_OutsideCabinLogo_C::LogoIntro(class UUMGSequencePlayer* CallFun
 
 void UWinterfest_OutsideCabinLogo_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("Winterfest_OutsideCabinLogo_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterfest_OutsideCabinLogo_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Winterfest_OutsideCabinLogo_C", "PreConstruct");
+
+	Params::UWinterfest_OutsideCabinLogo_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -77,9 +111,12 @@ void UWinterfest_OutsideCabinLogo_C::PreConstruct(bool IsDesignTime)
 
 void UWinterfest_OutsideCabinLogo_C::ExecuteUbergraph_Winterfest_OutsideCabinLogo(int32 EntryPoint, bool K2Node_Event_IsDesignTime)
 {
-	static auto Func = Class->GetFunction("Winterfest_OutsideCabinLogo_C", "ExecuteUbergraph_Winterfest_OutsideCabinLogo");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterfest_OutsideCabinLogo_C_ExecuteUbergraph_Winterfest_OutsideCabinLogo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Winterfest_OutsideCabinLogo_C", "ExecuteUbergraph_Winterfest_OutsideCabinLogo");
+
+	Params::UWinterfest_OutsideCabinLogo_C_ExecuteUbergraph_Winterfest_OutsideCabinLogo_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -90,6 +127,4 @@ void UWinterfest_OutsideCabinLogo_C::ExecuteUbergraph_Winterfest_OutsideCabinLog
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

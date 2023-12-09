@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -36,11 +33,8 @@ public:
 	class ABGA_IslandPortal_C*                   Portal;                                            // 0x5B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                            SelectPlotSound;                                   // 0x5B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("CreativeIslandLinkScreen_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UCreativeIslandLinkScreen_C* GetDefaultObj();
 
 	void Construct();
 	void OnIslandLinkEntryTextChanged(class FText& Text);
@@ -59,6 +53,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

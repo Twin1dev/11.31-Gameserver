@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TabMouseAndKeyboardBindingOptions_New.TabMouseAndKeyboardBindingOptions_New_C
+// (None)
+
+class UClass* UTabMouseAndKeyboardBindingOptions_New_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TabMouseAndKeyboardBindingOptions_New_C");
+
+	return Clss;
+}
+
+
+// TabMouseAndKeyboardBindingOptions_New_C TabMouseAndKeyboardBindingOptions_New.Default__TabMouseAndKeyboardBindingOptions_New_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTabMouseAndKeyboardBindingOptions_New_C* UTabMouseAndKeyboardBindingOptions_New_C::GetDefaultObj()
+{
+	static class UTabMouseAndKeyboardBindingOptions_New_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTabMouseAndKeyboardBindingOptions_New_C*>(UTabMouseAndKeyboardBindingOptions_New_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TabMouseAndKeyboardBindingOptions_New.TabMouseAndKeyboardBindingOptions_New_C.OnComplete_CABEB38E4A74A3AE7304669F10DD9A94
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UTabMouseAndKeyboardBindingOptions_New_C::OnComplete_CABEB38E4A74A3AE7304669F10DD9A94(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "OnComplete_CABEB38E4A74A3AE7304669F10DD9A94");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabMouseAndKeyboardBindingOptions_New_C_OnComplete_CABEB38E4A74A3AE7304669F10DD9A94_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "OnComplete_CABEB38E4A74A3AE7304669F10DD9A94");
+
+	Params::UTabMouseAndKeyboardBindingOptions_New_C_OnComplete_CABEB38E4A74A3AE7304669F10DD9A94_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -41,9 +69,12 @@ void UTabMouseAndKeyboardBindingOptions_New_C::OnComplete_CABEB38E4A74A3AE730466
 
 void UTabMouseAndKeyboardBindingOptions_New_C::DialogResult_686847584DA2D10A8A0FBD8D84ED21B2(enum class EFortDialogResult Result, class FName ResultName)
 {
-	static auto Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "DialogResult_686847584DA2D10A8A0FBD8D84ED21B2");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabMouseAndKeyboardBindingOptions_New_C_DialogResult_686847584DA2D10A8A0FBD8D84ED21B2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "DialogResult_686847584DA2D10A8A0FBD8D84ED21B2");
+
+	Params::UTabMouseAndKeyboardBindingOptions_New_C_DialogResult_686847584DA2D10A8A0FBD8D84ED21B2_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.ResultName = ResultName;
@@ -59,12 +90,14 @@ void UTabMouseAndKeyboardBindingOptions_New_C::DialogResult_686847584DA2D10A8A0F
 
 void UTabMouseAndKeyboardBindingOptions_New_C::CenterOnTab()
 {
-	static auto Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "CenterOnTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabMouseAndKeyboardBindingOptions_New_C_CenterOnTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "CenterOnTab");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -76,9 +109,12 @@ void UTabMouseAndKeyboardBindingOptions_New_C::CenterOnTab()
 
 void UTabMouseAndKeyboardBindingOptions_New_C::SettingValueChanged(float Value)
 {
-	static auto Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "SettingValueChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabMouseAndKeyboardBindingOptions_New_C_SettingValueChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "SettingValueChanged");
+
+	Params::UTabMouseAndKeyboardBindingOptions_New_C_SettingValueChanged_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -95,9 +131,12 @@ void UTabMouseAndKeyboardBindingOptions_New_C::SettingValueChanged(float Value)
 
 void UTabMouseAndKeyboardBindingOptions_New_C::BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature(class UFortSetting* Setting, class FName Action)
 {
-	static auto Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabMouseAndKeyboardBindingOptions_New_C_BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature");
+
+	Params::UTabMouseAndKeyboardBindingOptions_New_C_BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature_Params Parms{};
 
 	Parms.Setting = Setting;
 	Parms.Action = Action;
@@ -137,9 +176,12 @@ void UTabMouseAndKeyboardBindingOptions_New_C::BndEvt__Settings_Panel_K2Node_Com
 
 void UTabMouseAndKeyboardBindingOptions_New_C::ExecuteUbergraph_TabMouseAndKeyboardBindingOptions_New(int32 EntryPoint, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUserWidget* K2Node_CustomEvent_UserWidget, class UUserWidget* Temp_object_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue, class UKeyboardPresetRotator_C* K2Node_DynamicCast_AsKeyboard_Preset_Rotator, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsValid_ReturnValue, enum class EFortDialogResult K2Node_CustomEvent_Result, class FName K2Node_CustomEvent_ResultName, class FName Temp_name_Variable, enum class EFortDialogResult Temp_byte_Variable, bool CallFunc_EqualEqual_ByteByte_ReturnValue, float K2Node_CustomEvent_Value, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_1, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue, class UFortSetting* K2Node_ComponentBoundEvent_Setting, class FName K2Node_ComponentBoundEvent_Action, bool K2Node_SwitchName_CmpSuccess, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "ExecuteUbergraph_TabMouseAndKeyboardBindingOptions_New");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabMouseAndKeyboardBindingOptions_New_C_ExecuteUbergraph_TabMouseAndKeyboardBindingOptions_New_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabMouseAndKeyboardBindingOptions_New_C", "ExecuteUbergraph_TabMouseAndKeyboardBindingOptions_New");
+
+	Params::UTabMouseAndKeyboardBindingOptions_New_C_ExecuteUbergraph_TabMouseAndKeyboardBindingOptions_New_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
@@ -172,6 +214,4 @@ void UTabMouseAndKeyboardBindingOptions_New_C::ExecuteUbergraph_TabMouseAndKeybo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

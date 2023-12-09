@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,19 +12,50 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SocialPanel_FriendSearchButton.SocialPanel_FriendSearchButton_C
+// (None)
+
+class UClass* USocialPanel_FriendSearchButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialPanel_FriendSearchButton_C");
+
+	return Clss;
+}
+
+
+// SocialPanel_FriendSearchButton_C SocialPanel_FriendSearchButton.Default__SocialPanel_FriendSearchButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USocialPanel_FriendSearchButton_C* USocialPanel_FriendSearchButton_C::GetDefaultObj()
+{
+	static class USocialPanel_FriendSearchButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialPanel_FriendSearchButton_C*>(USocialPanel_FriendSearchButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SocialPanel_FriendSearchButton.SocialPanel_FriendSearchButton_C.On_ClickCapture_MouseButtonDown_0
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FPointerEvent               MouseEvent                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 
 struct FEventReply USocialPanel_FriendSearchButton_C::On_ClickCapture_MouseButtonDown_0(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Handled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SocialPanel_FriendSearchButton_C", "On_ClickCapture_MouseButtonDown_0");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_FriendSearchButton_C_On_ClickCapture_MouseButtonDown_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_FriendSearchButton_C", "On_ClickCapture_MouseButtonDown_0");
+
+	Params::USocialPanel_FriendSearchButton_C_On_ClickCapture_MouseButtonDown_0_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -46,12 +74,14 @@ struct FEventReply USocialPanel_FriendSearchButton_C::On_ClickCapture_MouseButto
 
 void USocialPanel_FriendSearchButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("SocialPanel_FriendSearchButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_FriendSearchButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_FriendSearchButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -62,12 +92,14 @@ void USocialPanel_FriendSearchButton_C::BP_OnHovered()
 
 void USocialPanel_FriendSearchButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("SocialPanel_FriendSearchButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_FriendSearchButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_FriendSearchButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -81,9 +113,12 @@ void USocialPanel_FriendSearchButton_C::BP_OnUnhovered()
 
 void USocialPanel_FriendSearchButton_C::ExecuteUbergraph_SocialPanel_FriendSearchButton(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("SocialPanel_FriendSearchButton_C", "ExecuteUbergraph_SocialPanel_FriendSearchButton");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_FriendSearchButton_C_ExecuteUbergraph_SocialPanel_FriendSearchButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_FriendSearchButton_C", "ExecuteUbergraph_SocialPanel_FriendSearchButton");
+
+	Params::USocialPanel_FriendSearchButton_C_ExecuteUbergraph_SocialPanel_FriendSearchButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -95,6 +130,4 @@ void USocialPanel_FriendSearchButton_C::ExecuteUbergraph_SocialPanel_FriendSearc
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

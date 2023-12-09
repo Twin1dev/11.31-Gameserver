@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCL_Rift_Teleport.GCL_Rift_Teleport_C
+// (Actor)
+
+class UClass* AGCL_Rift_Teleport_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCL_Rift_Teleport_C");
+
+	return Clss;
+}
+
+
+// GCL_Rift_Teleport_C GCL_Rift_Teleport.Default__GCL_Rift_Teleport_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCL_Rift_Teleport_C* AGCL_Rift_Teleport_C::GetDefaultObj()
+{
+	static class AGCL_Rift_Teleport_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCL_Rift_Teleport_C*>(AGCL_Rift_Teleport_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCL_Rift_Teleport.GCL_Rift_Teleport_C.WhileActive
@@ -35,9 +60,12 @@ namespace SDK
 
 bool AGCL_Rift_Teleport_C::WhileActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, class AEmitterCameraLensEffectBase* CallFunc_SpawnCameraLensEffect_ReturnValue, class APlayerController* CallFunc_GetLocalViewingPlayerController_ReturnValue, TScriptInterface<class IFortVehicleInterface> CallFunc_GetVehicleUInterface_ReturnValue, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshComponent_ReturnValue, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsDrivingVehicle_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GCL_Rift_Teleport_C", "WhileActive");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_Rift_Teleport_C_WhileActive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_Rift_Teleport_C", "WhileActive");
+
+	Params::AGCL_Rift_Teleport_C_WhileActive_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -69,9 +97,12 @@ bool AGCL_Rift_Teleport_C::WhileActive(class AActor* MyTarget, struct FGameplayC
 
 bool AGCL_Rift_Teleport_C::OnRemove(class AActor* MyTarget, struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("GCL_Rift_Teleport_C", "OnRemove");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_Rift_Teleport_C_OnRemove_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_Rift_Teleport_C", "OnRemove");
+
+	Params::AGCL_Rift_Teleport_C_OnRemove_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -91,9 +122,12 @@ bool AGCL_Rift_Teleport_C::OnRemove(class AActor* MyTarget, struct FGameplayCueP
 
 void AGCL_Rift_Teleport_C::OnWhileActiveParticleSystemDeactivate(class UParticleSystemComponent* WhileActiveParticleSysComponent, struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("GCL_Rift_Teleport_C", "OnWhileActiveParticleSystemDeactivate");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_Rift_Teleport_C_OnWhileActiveParticleSystemDeactivate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_Rift_Teleport_C", "OnWhileActiveParticleSystemDeactivate");
+
+	Params::AGCL_Rift_Teleport_C_OnWhileActiveParticleSystemDeactivate_Params Parms{};
 
 	Parms.WhileActiveParticleSysComponent = WhileActiveParticleSysComponent;
 	Parms.Parameters = Parameters;
@@ -111,9 +145,12 @@ void AGCL_Rift_Teleport_C::OnWhileActiveParticleSystemDeactivate(class UParticle
 
 void AGCL_Rift_Teleport_C::OnStartParticleSystemSpawned(class UParticleSystemComponent* SpawnedParticleSysComponent, struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("GCL_Rift_Teleport_C", "OnStartParticleSystemSpawned");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_Rift_Teleport_C_OnStartParticleSystemSpawned_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_Rift_Teleport_C", "OnStartParticleSystemSpawned");
+
+	Params::AGCL_Rift_Teleport_C_OnStartParticleSystemSpawned_Params Parms{};
 
 	Parms.SpawnedParticleSysComponent = SpawnedParticleSysComponent;
 	Parms.Parameters = Parameters;
@@ -124,6 +161,4 @@ void AGCL_Rift_Teleport_C::OnStartParticleSystemSpawned(class UParticleSystemCom
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

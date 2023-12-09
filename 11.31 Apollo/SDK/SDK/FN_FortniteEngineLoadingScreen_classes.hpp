@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -28,16 +25,11 @@ public:
 	struct FRuntimeFloatCurve                    WidthScaleCurve_Android_FrontEnd;                  // 0x478(0x88)(Edit, Config, NativeAccessSpecifierPublic)
 	struct FRuntimeFloatCurve                    HeightScaleCurve_Android_FrontEnd;                 // 0x500(0x88)(Edit, Config, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("FortniteUserInterfaceSettings");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UFortniteUserInterfaceSettings* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

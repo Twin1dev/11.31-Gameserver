@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,24 +12,54 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class GameplayTasks.GameplayTasksComponent
+// (None)
+
+class UClass* UGameplayTasksComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameplayTasksComponent");
+
+	return Clss;
+}
+
+
+// GameplayTasksComponent GameplayTasks.Default__GameplayTasksComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UGameplayTasksComponent* UGameplayTasksComponent::GetDefaultObj()
+{
+	static class UGameplayTasksComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGameplayTasksComponent*>(UGameplayTasksComponent::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GameplayTasks.GameplayTasksComponent.OnRep_SimulatedTasks
 // (Final, Native, Public)
 // Parameters:
 
 void UGameplayTasksComponent::OnRep_SimulatedTasks()
 {
-	static auto Func = Class->GetFunction("GameplayTasksComponent", "OnRep_SimulatedTasks");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayTasksComponent_OnRep_SimulatedTasks_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayTasksComponent", "OnRep_SimulatedTasks");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -49,9 +76,12 @@ void UGameplayTasksComponent::OnRep_SimulatedTasks()
 
 enum class EGameplayTaskRunResult UGameplayTasksComponent::K2_RunGameplayTask(TScriptInterface<class IGameplayTaskOwnerInterface> TaskOwner, class UGameplayTask* Task, uint8 Priority, const TArray<TSubclassOf<class UGameplayTaskResource>>& AdditionalRequiredResources, const TArray<TSubclassOf<class UGameplayTaskResource>>& AdditionalClaimedResources)
 {
-	static auto Func = Class->GetFunction("GameplayTasksComponent", "K2_RunGameplayTask");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayTasksComponent_K2_RunGameplayTask_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayTasksComponent", "K2_RunGameplayTask");
+
+	Params::UGameplayTasksComponent_K2_RunGameplayTask_Params Parms{};
 
 	Parms.TaskOwner = TaskOwner;
 	Parms.Task = Task;
@@ -59,16 +89,44 @@ enum class EGameplayTaskRunResult UGameplayTasksComponent::K2_RunGameplayTask(TS
 	Parms.AdditionalRequiredResources = AdditionalRequiredResources;
 	Parms.AdditionalClaimedResources = AdditionalClaimedResources;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class GameplayTasks.GameplayTask
+// (None)
+
+class UClass* UGameplayTask::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameplayTask");
+
+	return Clss;
+}
+
+
+// GameplayTask GameplayTasks.Default__GameplayTask
+// (Public, ClassDefaultObject, ArchetypeObject, StrongRefOnFrame)
+
+class UGameplayTask* UGameplayTask::GetDefaultObj()
+{
+	static class UGameplayTask* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGameplayTask*>(UGameplayTask::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -78,18 +136,20 @@ enum class EGameplayTaskRunResult UGameplayTasksComponent::K2_RunGameplayTask(TS
 
 void UGameplayTask::ReadyForActivation()
 {
-	static auto Func = Class->GetFunction("GameplayTask", "ReadyForActivation");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayTask_ReadyForActivation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayTask", "ReadyForActivation");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -100,12 +160,14 @@ void UGameplayTask::ReadyForActivation()
 
 void UGameplayTask::GenericGameplayTaskDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("GameplayTask", "GenericGameplayTaskDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayTask_GenericGameplayTaskDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayTask", "GenericGameplayTaskDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -116,19 +178,49 @@ void UGameplayTask::GenericGameplayTaskDelegate__DelegateSignature()
 
 void UGameplayTask::EndTask()
 {
-	static auto Func = Class->GetFunction("GameplayTask", "EndTask");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayTask_EndTask_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayTask", "EndTask");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class GameplayTasks.GameplayTask_ClaimResource
+// (None)
+
+class UClass* UGameplayTask_ClaimResource::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameplayTask_ClaimResource");
+
+	return Clss;
+}
+
+
+// GameplayTask_ClaimResource GameplayTasks.Default__GameplayTask_ClaimResource
+// (Public, ClassDefaultObject, ArchetypeObject, StrongRefOnFrame)
+
+class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::GetDefaultObj()
+{
+	static class UGameplayTask_ClaimResource* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGameplayTask_ClaimResource*>(UGameplayTask_ClaimResource::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -143,22 +235,25 @@ void UGameplayTask::EndTask()
 
 class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::ClaimResources(TScriptInterface<class IGameplayTaskOwnerInterface> InTaskOwner, const TArray<TSubclassOf<class UGameplayTaskResource>>& ResourceClasses, uint8 Priority, class FName TaskInstanceName)
 {
-	static auto Func = Class->GetFunction("GameplayTask_ClaimResource", "ClaimResources");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayTask_ClaimResource_ClaimResources_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayTask_ClaimResource", "ClaimResources");
+
+	Params::UGameplayTask_ClaimResource_ClaimResources_Params Parms{};
 
 	Parms.InTaskOwner = InTaskOwner;
 	Parms.ResourceClasses = ResourceClasses;
 	Parms.Priority = Priority;
 	Parms.TaskInstanceName = TaskInstanceName;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -176,25 +271,56 @@ class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::ClaimResources(T
 
 class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::ClaimResource(TScriptInterface<class IGameplayTaskOwnerInterface> InTaskOwner, TSubclassOf<class UGameplayTaskResource> ResourceClass, uint8 Priority, class FName TaskInstanceName)
 {
-	static auto Func = Class->GetFunction("GameplayTask_ClaimResource", "ClaimResource");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayTask_ClaimResource_ClaimResource_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayTask_ClaimResource", "ClaimResource");
+
+	Params::UGameplayTask_ClaimResource_ClaimResource_Params Parms{};
 
 	Parms.InTaskOwner = InTaskOwner;
 	Parms.ResourceClass = ResourceClass;
 	Parms.Priority = Priority;
 	Parms.TaskInstanceName = TaskInstanceName;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class GameplayTasks.GameplayTask_SpawnActor
+// (None)
+
+class UClass* UGameplayTask_SpawnActor::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameplayTask_SpawnActor");
+
+	return Clss;
+}
+
+
+// GameplayTask_SpawnActor GameplayTasks.Default__GameplayTask_SpawnActor
+// (Public, ClassDefaultObject, ArchetypeObject, StrongRefOnFrame)
+
+class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::GetDefaultObj()
+{
+	static class UGameplayTask_SpawnActor* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGameplayTask_SpawnActor*>(UGameplayTask_SpawnActor::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -210,9 +336,12 @@ class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::ClaimResource(TS
 
 class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::SpawnActor(TScriptInterface<class IGameplayTaskOwnerInterface> TaskOwner, const struct FVector& SpawnLocation, const struct FRotator& SpawnRotation, TSubclassOf<class AActor> Class, bool bSpawnOnlyOnAuthority)
 {
-	static auto Func = Class->GetFunction("GameplayTask_SpawnActor", "SpawnActor");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayTask_SpawnActor_SpawnActor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayTask_SpawnActor", "SpawnActor");
+
+	Params::UGameplayTask_SpawnActor_SpawnActor_Params Parms{};
 
 	Parms.TaskOwner = TaskOwner;
 	Parms.SpawnLocation = SpawnLocation;
@@ -220,13 +349,13 @@ class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::SpawnActor(TScriptInte
 	Parms.Class = Class;
 	Parms.bSpawnOnlyOnAuthority = bSpawnOnlyOnAuthority;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -241,20 +370,23 @@ class UGameplayTask_SpawnActor* UGameplayTask_SpawnActor::SpawnActor(TScriptInte
 
 void UGameplayTask_SpawnActor::FinishSpawningActor(class UObject* WorldContextObject, class AActor* SpawnedActor)
 {
-	static auto Func = Class->GetFunction("GameplayTask_SpawnActor", "FinishSpawningActor");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayTask_SpawnActor_FinishSpawningActor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayTask_SpawnActor", "FinishSpawningActor");
+
+	Params::UGameplayTask_SpawnActor_FinishSpawningActor_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.SpawnedActor = SpawnedActor;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -268,25 +400,84 @@ void UGameplayTask_SpawnActor::FinishSpawningActor(class UObject* WorldContextOb
 
 bool UGameplayTask_SpawnActor::BeginSpawningActor(class UObject* WorldContextObject, class AActor** SpawnedActor)
 {
-	static auto Func = Class->GetFunction("GameplayTask_SpawnActor", "BeginSpawningActor");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayTask_SpawnActor_BeginSpawningActor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayTask_SpawnActor", "BeginSpawningActor");
+
+	Params::UGameplayTask_SpawnActor_BeginSpawningActor_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (SpawnedActor != nullptr)
 		*SpawnedActor = Parms.SpawnedActor;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class GameplayTasks.GameplayTask_TimeLimitedExecution
+// (None)
+
+class UClass* UGameplayTask_TimeLimitedExecution::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameplayTask_TimeLimitedExecution");
+
+	return Clss;
+}
+
+
+// GameplayTask_TimeLimitedExecution GameplayTasks.Default__GameplayTask_TimeLimitedExecution
+// (Public, ClassDefaultObject, ArchetypeObject, StrongRefOnFrame)
+
+class UGameplayTask_TimeLimitedExecution* UGameplayTask_TimeLimitedExecution::GetDefaultObj()
+{
+	static class UGameplayTask_TimeLimitedExecution* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGameplayTask_TimeLimitedExecution*>(UGameplayTask_TimeLimitedExecution::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class GameplayTasks.GameplayTask_WaitDelay
+// (None)
+
+class UClass* UGameplayTask_WaitDelay::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameplayTask_WaitDelay");
+
+	return Clss;
+}
+
+
+// GameplayTask_WaitDelay GameplayTasks.Default__GameplayTask_WaitDelay
+// (Public, ClassDefaultObject, ArchetypeObject, StrongRefOnFrame)
+
+class UGameplayTask_WaitDelay* UGameplayTask_WaitDelay::GetDefaultObj()
+{
+	static class UGameplayTask_WaitDelay* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGameplayTask_WaitDelay*>(UGameplayTask_WaitDelay::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -300,21 +491,24 @@ bool UGameplayTask_SpawnActor::BeginSpawningActor(class UObject* WorldContextObj
 
 class UGameplayTask_WaitDelay* UGameplayTask_WaitDelay::TaskWaitDelay(TScriptInterface<class IGameplayTaskOwnerInterface> TaskOwner, float Time, uint8 Priority)
 {
-	static auto Func = Class->GetFunction("GameplayTask_WaitDelay", "TaskWaitDelay");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayTask_WaitDelay_TaskWaitDelay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayTask_WaitDelay", "TaskWaitDelay");
+
+	Params::UGameplayTask_WaitDelay_TaskWaitDelay_Params Parms{};
 
 	Parms.TaskOwner = TaskOwner;
 	Parms.Time = Time;
 	Parms.Priority = Priority;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -327,17 +521,73 @@ class UGameplayTask_WaitDelay* UGameplayTask_WaitDelay::TaskWaitDelay(TScriptInt
 
 void UGameplayTask_WaitDelay::TaskDelayDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("GameplayTask_WaitDelay", "TaskDelayDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayTask_WaitDelay_TaskDelayDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayTask_WaitDelay", "TaskDelayDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
 
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Class GameplayTasks.GameplayTaskOwnerInterface
+// (None)
+
+class UClass* IGameplayTaskOwnerInterface::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameplayTaskOwnerInterface");
+
+	return Clss;
+}
+
+
+// GameplayTaskOwnerInterface GameplayTasks.Default__GameplayTaskOwnerInterface
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class IGameplayTaskOwnerInterface* IGameplayTaskOwnerInterface::GetDefaultObj()
+{
+	static class IGameplayTaskOwnerInterface* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<IGameplayTaskOwnerInterface*>(IGameplayTaskOwnerInterface::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class GameplayTasks.GameplayTaskResource
+// (None)
+
+class UClass* UGameplayTaskResource::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameplayTaskResource");
+
+	return Clss;
+}
+
+
+// GameplayTaskResource GameplayTasks.Default__GameplayTaskResource
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UGameplayTaskResource* UGameplayTaskResource::GetDefaultObj()
+{
+	static class UGameplayTaskResource* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGameplayTaskResource*>(UGameplayTaskResource::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

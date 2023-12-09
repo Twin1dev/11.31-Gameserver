@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_Galileo_Bun_Auto_Athena.B_Galileo_Bun_Auto_Athena_C
+// (Actor)
+
+class UClass* AB_Galileo_Bun_Auto_Athena_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Galileo_Bun_Auto_Athena_C");
+
+	return Clss;
+}
+
+
+// B_Galileo_Bun_Auto_Athena_C B_Galileo_Bun_Auto_Athena.Default__B_Galileo_Bun_Auto_Athena_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Galileo_Bun_Auto_Athena_C* AB_Galileo_Bun_Auto_Athena_C::GetDefaultObj()
+{
+	static class AB_Galileo_Bun_Auto_Athena_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Galileo_Bun_Auto_Athena_C*>(AB_Galileo_Bun_Auto_Athena_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_Galileo_Bun_Auto_Athena.B_Galileo_Bun_Auto_Athena_C.OverheatFX
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void AB_Galileo_Bun_Auto_Athena_C::OverheatFX(uint8 Overheat_Val)
 {
-	static auto Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "OverheatFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Bun_Auto_Athena_C_OverheatFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "OverheatFX");
+
+	Params::AB_Galileo_Bun_Auto_Athena_C_OverheatFX_Params Parms{};
 
 	Parms.Overheat_Val = Overheat_Val;
 
@@ -39,12 +67,14 @@ void AB_Galileo_Bun_Auto_Athena_C::OverheatFX(uint8 Overheat_Val)
 
 void AB_Galileo_Bun_Auto_Athena_C::OnFinishedCooling()
 {
-	static auto Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "OnFinishedCooling");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Bun_Auto_Athena_C_OnFinishedCooling_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "OnFinishedCooling");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void AB_Galileo_Bun_Auto_Athena_C::OnFinishedCooling()
 
 void AB_Galileo_Bun_Auto_Athena_C::OnStartCooling()
 {
-	static auto Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "OnStartCooling");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Bun_Auto_Athena_C_OnStartCooling_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "OnStartCooling");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -71,12 +103,14 @@ void AB_Galileo_Bun_Auto_Athena_C::OnStartCooling()
 
 void AB_Galileo_Bun_Auto_Athena_C::OnStartHeating()
 {
-	static auto Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "OnStartHeating");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Bun_Auto_Athena_C_OnStartHeating_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "OnStartHeating");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -87,12 +121,14 @@ void AB_Galileo_Bun_Auto_Athena_C::OnStartHeating()
 
 void AB_Galileo_Bun_Auto_Athena_C::OnWeaponAttached()
 {
-	static auto Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "OnWeaponAttached");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Bun_Auto_Athena_C_OnWeaponAttached_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "OnWeaponAttached");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,9 +141,12 @@ void AB_Galileo_Bun_Auto_Athena_C::OnWeaponAttached()
 
 void AB_Galileo_Bun_Auto_Athena_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondaryFire)
 {
-	static auto Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "OnPlayWeaponFireFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Bun_Auto_Athena_C_OnPlayWeaponFireFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "OnPlayWeaponFireFX");
+
+	Params::AB_Galileo_Bun_Auto_Athena_C_OnPlayWeaponFireFX_Params Parms{};
 
 	Parms.bPersistentFire = bPersistentFire;
 	Parms.bSecondaryFire = bSecondaryFire;
@@ -123,12 +162,14 @@ void AB_Galileo_Bun_Auto_Athena_C::OnPlayWeaponFireFX(bool bPersistentFire, bool
 
 void AB_Galileo_Bun_Auto_Athena_C::CustomEvent_0()
 {
-	static auto Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "CustomEvent_0");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Bun_Auto_Athena_C_CustomEvent_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "CustomEvent_0");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -140,9 +181,12 @@ void AB_Galileo_Bun_Auto_Athena_C::CustomEvent_0()
 
 void AB_Galileo_Bun_Auto_Athena_C::OverheatFXReplicated(uint8 Overheat_Val)
 {
-	static auto Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "OverheatFXReplicated");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Bun_Auto_Athena_C_OverheatFXReplicated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "OverheatFXReplicated");
+
+	Params::AB_Galileo_Bun_Auto_Athena_C_OverheatFXReplicated_Params Parms{};
 
 	Parms.Overheat_Val = Overheat_Val;
 
@@ -157,12 +201,14 @@ void AB_Galileo_Bun_Auto_Athena_C::OverheatFXReplicated(uint8 Overheat_Val)
 
 void AB_Galileo_Bun_Auto_Athena_C::OnStartOverheated()
 {
-	static auto Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "OnStartOverheated");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Bun_Auto_Athena_C_OnStartOverheated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "OnStartOverheated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -173,12 +219,14 @@ void AB_Galileo_Bun_Auto_Athena_C::OnStartOverheated()
 
 void AB_Galileo_Bun_Auto_Athena_C::CustomEvent_1()
 {
-	static auto Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "CustomEvent_1");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Bun_Auto_Athena_C_CustomEvent_1_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "CustomEvent_1");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -227,9 +275,12 @@ void AB_Galileo_Bun_Auto_Athena_C::CustomEvent_1()
 
 void AB_Galileo_Bun_Auto_Athena_C::ExecuteUbergraph_B_Galileo_Bun_Auto_Athena(int32 EntryPoint, float Temp_float_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, float Temp_float_Variable_1, uint8 K2Node_CustomEvent_Overheat_Val_1, bool CallFunc_IsMobilePlatform_ReturnValue, int32 CallFunc_Conv_ByteToInt_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_FClamp_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, bool Temp_bool_Variable, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, bool K2Node_Event_bPersistentFire, bool K2Node_Event_bSecondaryFire, float K2Node_Select_Default, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, float CallFunc_GetCurrentOverheatValue_ReturnValue, float CallFunc_GetOverheatingMaxValue_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_GetFloatValue_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue_1, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, uint8 K2Node_CustomEvent_Overheat_Val, bool CallFunc_IsLocallyControlled_ReturnValue, float CallFunc_GetCurrentOverheatValue_ReturnValue_1, float CallFunc_GetOverheatingMaxValue_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue_2, float CallFunc_Multiply_IntFloat_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue_2, int32 CallFunc_FTrunc_ReturnValue, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, uint8 CallFunc_Conv_IntToByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "ExecuteUbergraph_B_Galileo_Bun_Auto_Athena");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Galileo_Bun_Auto_Athena_C_ExecuteUbergraph_B_Galileo_Bun_Auto_Athena_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Galileo_Bun_Auto_Athena_C", "ExecuteUbergraph_B_Galileo_Bun_Auto_Athena");
+
+	Params::AB_Galileo_Bun_Auto_Athena_C_ExecuteUbergraph_B_Galileo_Bun_Auto_Athena_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_float_Variable = Temp_float_Variable;
@@ -276,6 +327,4 @@ void AB_Galileo_Bun_Auto_Athena_C::ExecuteUbergraph_B_Galileo_Bun_Auto_Athena(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

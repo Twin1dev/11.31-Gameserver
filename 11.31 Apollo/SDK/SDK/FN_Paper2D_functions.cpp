@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,90 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class Paper2D.MaterialExpressionSpriteTextureSampler
+// (None)
+
+class UClass* UMaterialExpressionSpriteTextureSampler::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MaterialExpressionSpriteTextureSampler");
+
+	return Clss;
+}
+
+
+// MaterialExpressionSpriteTextureSampler Paper2D.Default__MaterialExpressionSpriteTextureSampler
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UMaterialExpressionSpriteTextureSampler* UMaterialExpressionSpriteTextureSampler::GetDefaultObj()
+{
+	static class UMaterialExpressionSpriteTextureSampler* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMaterialExpressionSpriteTextureSampler*>(UMaterialExpressionSpriteTextureSampler::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Paper2D.PaperCharacter
+// (Actor, Pawn)
+
+class UClass* APaperCharacter::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperCharacter");
+
+	return Clss;
+}
+
+
+// PaperCharacter Paper2D.Default__PaperCharacter
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class APaperCharacter* APaperCharacter::GetDefaultObj()
+{
+	static class APaperCharacter* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APaperCharacter*>(APaperCharacter::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Paper2D.PaperFlipbook
+// (None)
+
+class UClass* UPaperFlipbook::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperFlipbook");
+
+	return Clss;
+}
+
+
+// PaperFlipbook Paper2D.Default__PaperFlipbook
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPaperFlipbook* UPaperFlipbook::GetDefaultObj()
+{
+	static class UPaperFlipbook* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPaperFlipbook*>(UPaperFlipbook::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Paper2D.PaperFlipbook.IsValidKeyFrameIndex
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -23,19 +104,22 @@ namespace SDK
 
 bool UPaperFlipbook::IsValidKeyFrameIndex(int32 Index)
 {
-	static auto Func = Class->GetFunction("PaperFlipbook", "IsValidKeyFrameIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbook_IsValidKeyFrameIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbook", "IsValidKeyFrameIndex");
+
+	Params::UPaperFlipbook_IsValidKeyFrameIndex_Params Parms{};
 
 	Parms.Index = Index;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -49,18 +133,21 @@ bool UPaperFlipbook::IsValidKeyFrameIndex(int32 Index)
 
 float UPaperFlipbook::GetTotalDuration()
 {
-	static auto Func = Class->GetFunction("PaperFlipbook", "GetTotalDuration");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbook_GetTotalDuration_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbook", "GetTotalDuration");
+
+	Params::UPaperFlipbook_GetTotalDuration_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -76,20 +163,23 @@ float UPaperFlipbook::GetTotalDuration()
 
 class UPaperSprite* UPaperFlipbook::GetSpriteAtTime(float Time, bool bClampToEnds)
 {
-	static auto Func = Class->GetFunction("PaperFlipbook", "GetSpriteAtTime");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbook_GetSpriteAtTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbook", "GetSpriteAtTime");
+
+	Params::UPaperFlipbook_GetSpriteAtTime_Params Parms{};
 
 	Parms.Time = Time;
 	Parms.bClampToEnds = bClampToEnds;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -104,19 +194,22 @@ class UPaperSprite* UPaperFlipbook::GetSpriteAtTime(float Time, bool bClampToEnd
 
 class UPaperSprite* UPaperFlipbook::GetSpriteAtFrame(int32 FrameIndex)
 {
-	static auto Func = Class->GetFunction("PaperFlipbook", "GetSpriteAtFrame");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbook_GetSpriteAtFrame_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbook", "GetSpriteAtFrame");
+
+	Params::UPaperFlipbook_GetSpriteAtFrame_Params Parms{};
 
 	Parms.FrameIndex = FrameIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -130,18 +223,21 @@ class UPaperSprite* UPaperFlipbook::GetSpriteAtFrame(int32 FrameIndex)
 
 int32 UPaperFlipbook::GetNumKeyFrames()
 {
-	static auto Func = Class->GetFunction("PaperFlipbook", "GetNumKeyFrames");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbook_GetNumKeyFrames_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbook", "GetNumKeyFrames");
+
+	Params::UPaperFlipbook_GetNumKeyFrames_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -155,18 +251,21 @@ int32 UPaperFlipbook::GetNumKeyFrames()
 
 int32 UPaperFlipbook::GetNumFrames()
 {
-	static auto Func = Class->GetFunction("PaperFlipbook", "GetNumFrames");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbook_GetNumFrames_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbook", "GetNumFrames");
+
+	Params::UPaperFlipbook_GetNumFrames_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -182,23 +281,82 @@ int32 UPaperFlipbook::GetNumFrames()
 
 int32 UPaperFlipbook::GetKeyFrameIndexAtTime(float Time, bool bClampToEnds)
 {
-	static auto Func = Class->GetFunction("PaperFlipbook", "GetKeyFrameIndexAtTime");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbook_GetKeyFrameIndexAtTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbook", "GetKeyFrameIndexAtTime");
+
+	Params::UPaperFlipbook_GetKeyFrameIndexAtTime_Params Parms{};
 
 	Parms.Time = Time;
 	Parms.bClampToEnds = bClampToEnds;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class Paper2D.PaperFlipbookActor
+// (Actor)
+
+class UClass* APaperFlipbookActor::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperFlipbookActor");
+
+	return Clss;
+}
+
+
+// PaperFlipbookActor Paper2D.Default__PaperFlipbookActor
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class APaperFlipbookActor* APaperFlipbookActor::GetDefaultObj()
+{
+	static class APaperFlipbookActor* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APaperFlipbookActor*>(APaperFlipbookActor::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Paper2D.PaperFlipbookComponent
+// (SceneComponent, PrimitiveComponent)
+
+class UClass* UPaperFlipbookComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperFlipbookComponent");
+
+	return Clss;
+}
+
+
+// PaperFlipbookComponent Paper2D.Default__PaperFlipbookComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPaperFlipbookComponent* UPaperFlipbookComponent::GetDefaultObj()
+{
+	static class UPaperFlipbookComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPaperFlipbookComponent*>(UPaperFlipbookComponent::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -208,18 +366,20 @@ int32 UPaperFlipbook::GetKeyFrameIndexAtTime(float Time, bool bClampToEnds)
 
 void UPaperFlipbookComponent::Stop()
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "Stop");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_Stop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "Stop");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -231,19 +391,22 @@ void UPaperFlipbookComponent::Stop()
 
 void UPaperFlipbookComponent::SetSpriteColor(const struct FLinearColor& NewColor)
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "SetSpriteColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_SetSpriteColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "SetSpriteColor");
+
+	Params::UPaperFlipbookComponent_SetSpriteColor_Params Parms{};
 
 	Parms.NewColor = NewColor;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -255,19 +418,22 @@ void UPaperFlipbookComponent::SetSpriteColor(const struct FLinearColor& NewColor
 
 void UPaperFlipbookComponent::SetPlayRate(float NewRate)
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "SetPlayRate");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_SetPlayRate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "SetPlayRate");
+
+	Params::UPaperFlipbookComponent_SetPlayRate_Params Parms{};
 
 	Parms.NewRate = NewRate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -280,20 +446,23 @@ void UPaperFlipbookComponent::SetPlayRate(float NewRate)
 
 void UPaperFlipbookComponent::SetPlaybackPositionInFrames(int32 NewFramePosition, bool bFireEvents)
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "SetPlaybackPositionInFrames");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_SetPlaybackPositionInFrames_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "SetPlaybackPositionInFrames");
+
+	Params::UPaperFlipbookComponent_SetPlaybackPositionInFrames_Params Parms{};
 
 	Parms.NewFramePosition = NewFramePosition;
 	Parms.bFireEvents = bFireEvents;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -306,20 +475,23 @@ void UPaperFlipbookComponent::SetPlaybackPositionInFrames(int32 NewFramePosition
 
 void UPaperFlipbookComponent::SetPlaybackPosition(float NewPosition, bool bFireEvents)
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "SetPlaybackPosition");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_SetPlaybackPosition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "SetPlaybackPosition");
+
+	Params::UPaperFlipbookComponent_SetPlaybackPosition_Params Parms{};
 
 	Parms.NewPosition = NewPosition;
 	Parms.bFireEvents = bFireEvents;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -331,19 +503,22 @@ void UPaperFlipbookComponent::SetPlaybackPosition(float NewPosition, bool bFireE
 
 void UPaperFlipbookComponent::SetNewTime(float NewTime)
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "SetNewTime");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_SetNewTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "SetNewTime");
+
+	Params::UPaperFlipbookComponent_SetNewTime_Params Parms{};
 
 	Parms.NewTime = NewTime;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -355,19 +530,22 @@ void UPaperFlipbookComponent::SetNewTime(float NewTime)
 
 void UPaperFlipbookComponent::SetLooping(bool bNewLooping)
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "SetLooping");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_SetLooping_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "SetLooping");
+
+	Params::UPaperFlipbookComponent_SetLooping_Params Parms{};
 
 	Parms.bNewLooping = bNewLooping;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -380,19 +558,22 @@ void UPaperFlipbookComponent::SetLooping(bool bNewLooping)
 
 bool UPaperFlipbookComponent::SetFlipbook(class UPaperFlipbook* NewFlipbook)
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "SetFlipbook");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_SetFlipbook_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "SetFlipbook");
+
+	Params::UPaperFlipbookComponent_SetFlipbook_Params Parms{};
 
 	Parms.NewFlipbook = NewFlipbook;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -405,18 +586,20 @@ bool UPaperFlipbookComponent::SetFlipbook(class UPaperFlipbook* NewFlipbook)
 
 void UPaperFlipbookComponent::ReverseFromEnd()
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "ReverseFromEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_ReverseFromEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "ReverseFromEnd");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -427,18 +610,20 @@ void UPaperFlipbookComponent::ReverseFromEnd()
 
 void UPaperFlipbookComponent::Reverse()
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "Reverse");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_Reverse_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "Reverse");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -449,18 +634,20 @@ void UPaperFlipbookComponent::Reverse()
 
 void UPaperFlipbookComponent::PlayFromStart()
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "PlayFromStart");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_PlayFromStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "PlayFromStart");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -471,18 +658,20 @@ void UPaperFlipbookComponent::PlayFromStart()
 
 void UPaperFlipbookComponent::Play()
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "Play");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_Play_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "Play");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -494,19 +683,22 @@ void UPaperFlipbookComponent::Play()
 
 void UPaperFlipbookComponent::OnRep_SourceFlipbook(class UPaperFlipbook* OldFlipbook)
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "OnRep_SourceFlipbook");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_OnRep_SourceFlipbook_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "OnRep_SourceFlipbook");
+
+	Params::UPaperFlipbookComponent_OnRep_SourceFlipbook_Params Parms{};
 
 	Parms.OldFlipbook = OldFlipbook;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -518,18 +710,21 @@ void UPaperFlipbookComponent::OnRep_SourceFlipbook(class UPaperFlipbook* OldFlip
 
 bool UPaperFlipbookComponent::IsReversing()
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "IsReversing");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_IsReversing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "IsReversing");
+
+	Params::UPaperFlipbookComponent_IsReversing_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -543,18 +738,21 @@ bool UPaperFlipbookComponent::IsReversing()
 
 bool UPaperFlipbookComponent::IsPlaying()
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "IsPlaying");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_IsPlaying_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "IsPlaying");
+
+	Params::UPaperFlipbookComponent_IsPlaying_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -568,18 +766,21 @@ bool UPaperFlipbookComponent::IsPlaying()
 
 bool UPaperFlipbookComponent::IsLooping()
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "IsLooping");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_IsLooping_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "IsLooping");
+
+	Params::UPaperFlipbookComponent_IsLooping_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -593,18 +794,21 @@ bool UPaperFlipbookComponent::IsLooping()
 
 float UPaperFlipbookComponent::GetPlayRate()
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "GetPlayRate");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_GetPlayRate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "GetPlayRate");
+
+	Params::UPaperFlipbookComponent_GetPlayRate_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -618,18 +822,21 @@ float UPaperFlipbookComponent::GetPlayRate()
 
 int32 UPaperFlipbookComponent::GetPlaybackPositionInFrames()
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "GetPlaybackPositionInFrames");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_GetPlaybackPositionInFrames_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "GetPlaybackPositionInFrames");
+
+	Params::UPaperFlipbookComponent_GetPlaybackPositionInFrames_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -643,18 +850,21 @@ int32 UPaperFlipbookComponent::GetPlaybackPositionInFrames()
 
 float UPaperFlipbookComponent::GetPlaybackPosition()
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "GetPlaybackPosition");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_GetPlaybackPosition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "GetPlaybackPosition");
+
+	Params::UPaperFlipbookComponent_GetPlaybackPosition_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -668,18 +878,21 @@ float UPaperFlipbookComponent::GetPlaybackPosition()
 
 int32 UPaperFlipbookComponent::GetFlipbookLengthInFrames()
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "GetFlipbookLengthInFrames");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_GetFlipbookLengthInFrames_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "GetFlipbookLengthInFrames");
+
+	Params::UPaperFlipbookComponent_GetFlipbookLengthInFrames_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -693,18 +906,21 @@ int32 UPaperFlipbookComponent::GetFlipbookLengthInFrames()
 
 float UPaperFlipbookComponent::GetFlipbookLength()
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "GetFlipbookLength");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_GetFlipbookLength_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "GetFlipbookLength");
+
+	Params::UPaperFlipbookComponent_GetFlipbookLength_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -718,18 +934,21 @@ float UPaperFlipbookComponent::GetFlipbookLength()
 
 float UPaperFlipbookComponent::GetFlipbookFramerate()
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "GetFlipbookFramerate");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_GetFlipbookFramerate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "GetFlipbookFramerate");
+
+	Params::UPaperFlipbookComponent_GetFlipbookFramerate_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -743,21 +962,80 @@ float UPaperFlipbookComponent::GetFlipbookFramerate()
 
 class UPaperFlipbook* UPaperFlipbookComponent::GetFlipbook()
 {
-	static auto Func = Class->GetFunction("PaperFlipbookComponent", "GetFlipbook");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperFlipbookComponent_GetFlipbook_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperFlipbookComponent", "GetFlipbook");
+
+	Params::UPaperFlipbookComponent_GetFlipbook_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class Paper2D.PaperGroupedSpriteActor
+// (Actor)
+
+class UClass* APaperGroupedSpriteActor::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperGroupedSpriteActor");
+
+	return Clss;
+}
+
+
+// PaperGroupedSpriteActor Paper2D.Default__PaperGroupedSpriteActor
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class APaperGroupedSpriteActor* APaperGroupedSpriteActor::GetDefaultObj()
+{
+	static class APaperGroupedSpriteActor* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APaperGroupedSpriteActor*>(APaperGroupedSpriteActor::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Paper2D.PaperGroupedSpriteComponent
+// (SceneComponent, PrimitiveComponent)
+
+class UClass* UPaperGroupedSpriteComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperGroupedSpriteComponent");
+
+	return Clss;
+}
+
+
+// PaperGroupedSpriteComponent Paper2D.Default__PaperGroupedSpriteComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPaperGroupedSpriteComponent* UPaperGroupedSpriteComponent::GetDefaultObj()
+{
+	static class UPaperGroupedSpriteComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPaperGroupedSpriteComponent*>(UPaperGroupedSpriteComponent::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -773,9 +1051,12 @@ class UPaperFlipbook* UPaperFlipbookComponent::GetFlipbook()
 
 bool UPaperGroupedSpriteComponent::UpdateInstanceTransform(int32 InstanceIndex, struct FTransform& NewInstanceTransform, bool bWorldSpace, bool bMarkRenderStateDirty, bool bTeleport)
 {
-	static auto Func = Class->GetFunction("PaperGroupedSpriteComponent", "UpdateInstanceTransform");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperGroupedSpriteComponent_UpdateInstanceTransform_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperGroupedSpriteComponent", "UpdateInstanceTransform");
+
+	Params::UPaperGroupedSpriteComponent_UpdateInstanceTransform_Params Parms{};
 
 	Parms.InstanceIndex = InstanceIndex;
 	Parms.NewInstanceTransform = NewInstanceTransform;
@@ -783,13 +1064,13 @@ bool UPaperGroupedSpriteComponent::UpdateInstanceTransform(int32 InstanceIndex, 
 	Parms.bMarkRenderStateDirty = bMarkRenderStateDirty;
 	Parms.bTeleport = bTeleport;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -806,21 +1087,24 @@ bool UPaperGroupedSpriteComponent::UpdateInstanceTransform(int32 InstanceIndex, 
 
 bool UPaperGroupedSpriteComponent::UpdateInstanceColor(int32 InstanceIndex, const struct FLinearColor& NewInstanceColor, bool bMarkRenderStateDirty)
 {
-	static auto Func = Class->GetFunction("PaperGroupedSpriteComponent", "UpdateInstanceColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperGroupedSpriteComponent_UpdateInstanceColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperGroupedSpriteComponent", "UpdateInstanceColor");
+
+	Params::UPaperGroupedSpriteComponent_UpdateInstanceColor_Params Parms{};
 
 	Parms.InstanceIndex = InstanceIndex;
 	Parms.NewInstanceColor = NewInstanceColor;
 	Parms.bMarkRenderStateDirty = bMarkRenderStateDirty;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -834,19 +1118,22 @@ bool UPaperGroupedSpriteComponent::UpdateInstanceColor(int32 InstanceIndex, cons
 
 void UPaperGroupedSpriteComponent::SortInstancesAlongAxis(const struct FVector& WorldSpaceSortAxis)
 {
-	static auto Func = Class->GetFunction("PaperGroupedSpriteComponent", "SortInstancesAlongAxis");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperGroupedSpriteComponent_SortInstancesAlongAxis_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperGroupedSpriteComponent", "SortInstancesAlongAxis");
+
+	Params::UPaperGroupedSpriteComponent_SortInstancesAlongAxis_Params Parms{};
 
 	Parms.WorldSpaceSortAxis = WorldSpaceSortAxis;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -859,19 +1146,22 @@ void UPaperGroupedSpriteComponent::SortInstancesAlongAxis(const struct FVector& 
 
 bool UPaperGroupedSpriteComponent::RemoveInstance(int32 InstanceIndex)
 {
-	static auto Func = Class->GetFunction("PaperGroupedSpriteComponent", "RemoveInstance");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperGroupedSpriteComponent_RemoveInstance_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperGroupedSpriteComponent", "RemoveInstance");
+
+	Params::UPaperGroupedSpriteComponent_RemoveInstance_Params Parms{};
 
 	Parms.InstanceIndex = InstanceIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -888,23 +1178,26 @@ bool UPaperGroupedSpriteComponent::RemoveInstance(int32 InstanceIndex)
 
 bool UPaperGroupedSpriteComponent::GetInstanceTransform(int32 InstanceIndex, struct FTransform* OutInstanceTransform, bool bWorldSpace)
 {
-	static auto Func = Class->GetFunction("PaperGroupedSpriteComponent", "GetInstanceTransform");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperGroupedSpriteComponent_GetInstanceTransform_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperGroupedSpriteComponent", "GetInstanceTransform");
+
+	Params::UPaperGroupedSpriteComponent_GetInstanceTransform_Params Parms{};
 
 	Parms.InstanceIndex = InstanceIndex;
 	Parms.bWorldSpace = bWorldSpace;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (OutInstanceTransform != nullptr)
-		*OutInstanceTransform = Parms.OutInstanceTransform;
+		*OutInstanceTransform = std::move(Parms.OutInstanceTransform);
 
 	return Parms.ReturnValue;
 
@@ -918,18 +1211,21 @@ bool UPaperGroupedSpriteComponent::GetInstanceTransform(int32 InstanceIndex, str
 
 int32 UPaperGroupedSpriteComponent::GetInstanceCount()
 {
-	static auto Func = Class->GetFunction("PaperGroupedSpriteComponent", "GetInstanceCount");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperGroupedSpriteComponent_GetInstanceCount_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperGroupedSpriteComponent", "GetInstanceCount");
+
+	Params::UPaperGroupedSpriteComponent_GetInstanceCount_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -942,18 +1238,20 @@ int32 UPaperGroupedSpriteComponent::GetInstanceCount()
 
 void UPaperGroupedSpriteComponent::ClearInstances()
 {
-	static auto Func = Class->GetFunction("PaperGroupedSpriteComponent", "ClearInstances");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperGroupedSpriteComponent_ClearInstances_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperGroupedSpriteComponent", "ClearInstances");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -969,25 +1267,168 @@ void UPaperGroupedSpriteComponent::ClearInstances()
 
 int32 UPaperGroupedSpriteComponent::AddInstance(struct FTransform& Transform, class UPaperSprite* Sprite, bool bWorldSpace, const struct FLinearColor& Color)
 {
-	static auto Func = Class->GetFunction("PaperGroupedSpriteComponent", "AddInstance");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperGroupedSpriteComponent_AddInstance_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperGroupedSpriteComponent", "AddInstance");
+
+	Params::UPaperGroupedSpriteComponent_AddInstance_Params Parms{};
 
 	Parms.Transform = Transform;
 	Parms.Sprite = Sprite;
 	Parms.bWorldSpace = bWorldSpace;
 	Parms.Color = Color;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class Paper2D.PaperRuntimeSettings
+// (None)
+
+class UClass* UPaperRuntimeSettings::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperRuntimeSettings");
+
+	return Clss;
+}
+
+
+// PaperRuntimeSettings Paper2D.Default__PaperRuntimeSettings
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPaperRuntimeSettings* UPaperRuntimeSettings::GetDefaultObj()
+{
+	static class UPaperRuntimeSettings* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPaperRuntimeSettings*>(UPaperRuntimeSettings::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Paper2D.PaperSprite
+// (None)
+
+class UClass* UPaperSprite::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperSprite");
+
+	return Clss;
+}
+
+
+// PaperSprite Paper2D.Default__PaperSprite
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPaperSprite* UPaperSprite::GetDefaultObj()
+{
+	static class UPaperSprite* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPaperSprite*>(UPaperSprite::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Paper2D.PaperSpriteActor
+// (Actor)
+
+class UClass* APaperSpriteActor::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperSpriteActor");
+
+	return Clss;
+}
+
+
+// PaperSpriteActor Paper2D.Default__PaperSpriteActor
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class APaperSpriteActor* APaperSpriteActor::GetDefaultObj()
+{
+	static class APaperSpriteActor* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APaperSpriteActor*>(APaperSpriteActor::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Paper2D.PaperSpriteAtlas
+// (None)
+
+class UClass* UPaperSpriteAtlas::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperSpriteAtlas");
+
+	return Clss;
+}
+
+
+// PaperSpriteAtlas Paper2D.Default__PaperSpriteAtlas
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPaperSpriteAtlas* UPaperSpriteAtlas::GetDefaultObj()
+{
+	static class UPaperSpriteAtlas* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPaperSpriteAtlas*>(UPaperSpriteAtlas::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Paper2D.PaperSpriteBlueprintLibrary
+// (None)
+
+class UClass* UPaperSpriteBlueprintLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperSpriteBlueprintLibrary");
+
+	return Clss;
+}
+
+
+// PaperSpriteBlueprintLibrary Paper2D.Default__PaperSpriteBlueprintLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPaperSpriteBlueprintLibrary* UPaperSpriteBlueprintLibrary::GetDefaultObj()
+{
+	static class UPaperSpriteBlueprintLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPaperSpriteBlueprintLibrary*>(UPaperSpriteBlueprintLibrary::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -1001,24 +1442,55 @@ int32 UPaperGroupedSpriteComponent::AddInstance(struct FTransform& Transform, cl
 
 struct FSlateBrush UPaperSpriteBlueprintLibrary::MakeBrushFromSprite(class UPaperSprite* Sprite, int32 Width, int32 Height)
 {
-	static auto Func = Class->GetFunction("PaperSpriteBlueprintLibrary", "MakeBrushFromSprite");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperSpriteBlueprintLibrary_MakeBrushFromSprite_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperSpriteBlueprintLibrary", "MakeBrushFromSprite");
+
+	Params::UPaperSpriteBlueprintLibrary_MakeBrushFromSprite_Params Parms{};
 
 	Parms.Sprite = Sprite;
 	Parms.Width = Width;
 	Parms.Height = Height;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class Paper2D.PaperSpriteComponent
+// (SceneComponent, PrimitiveComponent)
+
+class UClass* UPaperSpriteComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperSpriteComponent");
+
+	return Clss;
+}
+
+
+// PaperSpriteComponent Paper2D.Default__PaperSpriteComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPaperSpriteComponent* UPaperSpriteComponent::GetDefaultObj()
+{
+	static class UPaperSpriteComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPaperSpriteComponent*>(UPaperSpriteComponent::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -1029,19 +1501,22 @@ struct FSlateBrush UPaperSpriteBlueprintLibrary::MakeBrushFromSprite(class UPape
 
 void UPaperSpriteComponent::SetSpriteColor(const struct FLinearColor& NewColor)
 {
-	static auto Func = Class->GetFunction("PaperSpriteComponent", "SetSpriteColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperSpriteComponent_SetSpriteColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperSpriteComponent", "SetSpriteColor");
+
+	Params::UPaperSpriteComponent_SetSpriteColor_Params Parms{};
 
 	Parms.NewColor = NewColor;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1054,19 +1529,22 @@ void UPaperSpriteComponent::SetSpriteColor(const struct FLinearColor& NewColor)
 
 bool UPaperSpriteComponent::SetSprite(class UPaperSprite* NewSprite)
 {
-	static auto Func = Class->GetFunction("PaperSpriteComponent", "SetSprite");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperSpriteComponent_SetSprite_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperSpriteComponent", "SetSprite");
+
+	Params::UPaperSpriteComponent_SetSprite_Params Parms{};
 
 	Parms.NewSprite = NewSprite;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1080,21 +1558,80 @@ bool UPaperSpriteComponent::SetSprite(class UPaperSprite* NewSprite)
 
 class UPaperSprite* UPaperSpriteComponent::GetSprite()
 {
-	static auto Func = Class->GetFunction("PaperSpriteComponent", "GetSprite");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperSpriteComponent_GetSprite_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperSpriteComponent", "GetSprite");
+
+	Params::UPaperSpriteComponent_GetSprite_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class Paper2D.PaperTerrainActor
+// (Actor)
+
+class UClass* APaperTerrainActor::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperTerrainActor");
+
+	return Clss;
+}
+
+
+// PaperTerrainActor Paper2D.Default__PaperTerrainActor
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class APaperTerrainActor* APaperTerrainActor::GetDefaultObj()
+{
+	static class APaperTerrainActor* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APaperTerrainActor*>(APaperTerrainActor::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Paper2D.PaperTerrainComponent
+// (SceneComponent, PrimitiveComponent)
+
+class UClass* UPaperTerrainComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperTerrainComponent");
+
+	return Clss;
+}
+
+
+// PaperTerrainComponent Paper2D.Default__PaperTerrainComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPaperTerrainComponent* UPaperTerrainComponent::GetDefaultObj()
+{
+	static class UPaperTerrainComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPaperTerrainComponent*>(UPaperTerrainComponent::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -1105,20 +1642,191 @@ class UPaperSprite* UPaperSpriteComponent::GetSprite()
 
 void UPaperTerrainComponent::SetTerrainColor(const struct FLinearColor& NewColor)
 {
-	static auto Func = Class->GetFunction("PaperTerrainComponent", "SetTerrainColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTerrainComponent_SetTerrainColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTerrainComponent", "SetTerrainColor");
+
+	Params::UPaperTerrainComponent_SetTerrainColor_Params Parms{};
 
 	Parms.NewColor = NewColor;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class Paper2D.PaperTerrainMaterial
+// (None)
+
+class UClass* UPaperTerrainMaterial::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperTerrainMaterial");
+
+	return Clss;
+}
+
+
+// PaperTerrainMaterial Paper2D.Default__PaperTerrainMaterial
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPaperTerrainMaterial* UPaperTerrainMaterial::GetDefaultObj()
+{
+	static class UPaperTerrainMaterial* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPaperTerrainMaterial*>(UPaperTerrainMaterial::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Paper2D.PaperTerrainSplineComponent
+// (SceneComponent, PrimitiveComponent)
+
+class UClass* UPaperTerrainSplineComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperTerrainSplineComponent");
+
+	return Clss;
+}
+
+
+// PaperTerrainSplineComponent Paper2D.Default__PaperTerrainSplineComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPaperTerrainSplineComponent* UPaperTerrainSplineComponent::GetDefaultObj()
+{
+	static class UPaperTerrainSplineComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPaperTerrainSplineComponent*>(UPaperTerrainSplineComponent::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Paper2D.PaperTileLayer
+// (None)
+
+class UClass* UPaperTileLayer::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperTileLayer");
+
+	return Clss;
+}
+
+
+// PaperTileLayer Paper2D.Default__PaperTileLayer
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPaperTileLayer* UPaperTileLayer::GetDefaultObj()
+{
+	static class UPaperTileLayer* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPaperTileLayer*>(UPaperTileLayer::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Paper2D.PaperTileMap
+// (None)
+
+class UClass* UPaperTileMap::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperTileMap");
+
+	return Clss;
+}
+
+
+// PaperTileMap Paper2D.Default__PaperTileMap
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPaperTileMap* UPaperTileMap::GetDefaultObj()
+{
+	static class UPaperTileMap* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPaperTileMap*>(UPaperTileMap::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Paper2D.PaperTileMapActor
+// (Actor)
+
+class UClass* APaperTileMapActor::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperTileMapActor");
+
+	return Clss;
+}
+
+
+// PaperTileMapActor Paper2D.Default__PaperTileMapActor
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class APaperTileMapActor* APaperTileMapActor::GetDefaultObj()
+{
+	static class APaperTileMapActor* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APaperTileMapActor*>(APaperTileMapActor::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Paper2D.PaperTileMapComponent
+// (SceneComponent, PrimitiveComponent)
+
+class UClass* UPaperTileMapComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperTileMapComponent");
+
+	return Clss;
+}
+
+
+// PaperTileMapComponent Paper2D.Default__PaperTileMapComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPaperTileMapComponent* UPaperTileMapComponent::GetDefaultObj()
+{
+	static class UPaperTileMapComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPaperTileMapComponent*>(UPaperTileMapComponent::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -1129,19 +1837,22 @@ void UPaperTerrainComponent::SetTerrainColor(const struct FLinearColor& NewColor
 
 void UPaperTileMapComponent::SetTileMapColor(const struct FLinearColor& NewColor)
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "SetTileMapColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_SetTileMapColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "SetTileMapColor");
+
+	Params::UPaperTileMapComponent_SetTileMapColor_Params Parms{};
 
 	Parms.NewColor = NewColor;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1154,19 +1865,22 @@ void UPaperTileMapComponent::SetTileMapColor(const struct FLinearColor& NewColor
 
 bool UPaperTileMapComponent::SetTileMap(class UPaperTileMap* NewTileMap)
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "SetTileMap");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_SetTileMap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "SetTileMap");
+
+	Params::UPaperTileMapComponent_SetTileMap_Params Parms{};
 
 	Parms.NewTileMap = NewTileMap;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1183,22 +1897,25 @@ bool UPaperTileMapComponent::SetTileMap(class UPaperTileMap* NewTileMap)
 
 void UPaperTileMapComponent::SetTile(int32 X, int32 Y, int32 Layer, const struct FPaperTileInfo& NewValue)
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "SetTile");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_SetTile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "SetTile");
+
+	Params::UPaperTileMapComponent_SetTile_Params Parms{};
 
 	Parms.X = X;
 	Parms.Y = Y;
 	Parms.Layer = Layer;
 	Parms.NewValue = NewValue;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1211,20 +1928,23 @@ void UPaperTileMapComponent::SetTile(int32 X, int32 Y, int32 Layer, const struct
 
 void UPaperTileMapComponent::SetLayerColor(const struct FLinearColor& NewColor, int32 Layer)
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "SetLayerColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_SetLayerColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "SetLayerColor");
+
+	Params::UPaperTileMapComponent_SetLayerColor_Params Parms{};
 
 	Parms.NewColor = NewColor;
 	Parms.Layer = Layer;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1242,9 +1962,12 @@ void UPaperTileMapComponent::SetLayerColor(const struct FLinearColor& NewColor, 
 
 void UPaperTileMapComponent::SetLayerCollision(int32 Layer, bool bHasCollision, bool bOverrideThickness, float CustomThickness, bool bOverrideOffset, float CustomOffset, bool bRebuildCollision)
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "SetLayerCollision");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_SetLayerCollision_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "SetLayerCollision");
+
+	Params::UPaperTileMapComponent_SetLayerCollision_Params Parms{};
 
 	Parms.Layer = Layer;
 	Parms.bHasCollision = bHasCollision;
@@ -1254,13 +1977,13 @@ void UPaperTileMapComponent::SetLayerCollision(int32 Layer, bool bHasCollision, 
 	Parms.CustomOffset = CustomOffset;
 	Parms.bRebuildCollision = bRebuildCollision;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1273,20 +1996,23 @@ void UPaperTileMapComponent::SetLayerCollision(int32 Layer, bool bHasCollision, 
 
 void UPaperTileMapComponent::SetDefaultCollisionThickness(float Thickness, bool bRebuildCollision)
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "SetDefaultCollisionThickness");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_SetDefaultCollisionThickness_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "SetDefaultCollisionThickness");
+
+	Params::UPaperTileMapComponent_SetDefaultCollisionThickness_Params Parms{};
 
 	Parms.Thickness = Thickness;
 	Parms.bRebuildCollision = bRebuildCollision;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1299,20 +2025,23 @@ void UPaperTileMapComponent::SetDefaultCollisionThickness(float Thickness, bool 
 
 void UPaperTileMapComponent::ResizeMap(int32 NewWidthInTiles, int32 NewHeightInTiles)
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "ResizeMap");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_ResizeMap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "ResizeMap");
+
+	Params::UPaperTileMapComponent_ResizeMap_Params Parms{};
 
 	Parms.NewWidthInTiles = NewWidthInTiles;
 	Parms.NewHeightInTiles = NewHeightInTiles;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1323,18 +2052,20 @@ void UPaperTileMapComponent::ResizeMap(int32 NewWidthInTiles, int32 NewHeightInT
 
 void UPaperTileMapComponent::RebuildCollision()
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "RebuildCollision");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_RebuildCollision_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "RebuildCollision");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1346,18 +2077,21 @@ void UPaperTileMapComponent::RebuildCollision()
 
 bool UPaperTileMapComponent::OwnsTileMap()
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "OwnsTileMap");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_OwnsTileMap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "OwnsTileMap");
+
+	Params::UPaperTileMapComponent_OwnsTileMap_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1370,18 +2104,20 @@ bool UPaperTileMapComponent::OwnsTileMap()
 
 void UPaperTileMapComponent::MakeTileMapEditable()
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "MakeTileMapEditable");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_MakeTileMapEditable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "MakeTileMapEditable");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1397,25 +2133,28 @@ void UPaperTileMapComponent::MakeTileMapEditable()
 
 void UPaperTileMapComponent::GetTilePolygon(int32 TileX, int32 TileY, TArray<struct FVector>* Points, int32 LayerIndex, bool bWorldSpace)
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "GetTilePolygon");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_GetTilePolygon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "GetTilePolygon");
+
+	Params::UPaperTileMapComponent_GetTilePolygon_Params Parms{};
 
 	Parms.TileX = TileX;
 	Parms.TileY = TileY;
 	Parms.LayerIndex = LayerIndex;
 	Parms.bWorldSpace = bWorldSpace;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Points != nullptr)
-		*Points = Parms.Points;
+		*Points = std::move(Parms.Points);
 
 }
 
@@ -1427,18 +2166,21 @@ void UPaperTileMapComponent::GetTilePolygon(int32 TileX, int32 TileY, TArray<str
 
 struct FLinearColor UPaperTileMapComponent::GetTileMapColor()
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "GetTileMapColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_GetTileMapColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "GetTileMapColor");
+
+	Params::UPaperTileMapComponent_GetTileMapColor_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1456,22 +2198,25 @@ struct FLinearColor UPaperTileMapComponent::GetTileMapColor()
 
 struct FVector UPaperTileMapComponent::GetTileCornerPosition(int32 TileX, int32 TileY, int32 LayerIndex, bool bWorldSpace)
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "GetTileCornerPosition");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_GetTileCornerPosition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "GetTileCornerPosition");
+
+	Params::UPaperTileMapComponent_GetTileCornerPosition_Params Parms{};
 
 	Parms.TileX = TileX;
 	Parms.TileY = TileY;
 	Parms.LayerIndex = LayerIndex;
 	Parms.bWorldSpace = bWorldSpace;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1489,22 +2234,25 @@ struct FVector UPaperTileMapComponent::GetTileCornerPosition(int32 TileX, int32 
 
 struct FVector UPaperTileMapComponent::GetTileCenterPosition(int32 TileX, int32 TileY, int32 LayerIndex, bool bWorldSpace)
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "GetTileCenterPosition");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_GetTileCenterPosition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "GetTileCenterPosition");
+
+	Params::UPaperTileMapComponent_GetTileCenterPosition_Params Parms{};
 
 	Parms.TileX = TileX;
 	Parms.TileY = TileY;
 	Parms.LayerIndex = LayerIndex;
 	Parms.bWorldSpace = bWorldSpace;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1521,21 +2269,24 @@ struct FVector UPaperTileMapComponent::GetTileCenterPosition(int32 TileX, int32 
 
 struct FPaperTileInfo UPaperTileMapComponent::GetTile(int32 X, int32 Y, int32 Layer)
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "GetTile");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_GetTile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "GetTile");
+
+	Params::UPaperTileMapComponent_GetTile_Params Parms{};
 
 	Parms.X = X;
 	Parms.Y = Y;
 	Parms.Layer = Layer;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1551,18 +2302,21 @@ struct FPaperTileInfo UPaperTileMapComponent::GetTile(int32 X, int32 Y, int32 La
 
 void UPaperTileMapComponent::GetMapSize(int32* MapWidth, int32* MapHeight, int32* NumLayers)
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "GetMapSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_GetMapSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "GetMapSize");
+
+	Params::UPaperTileMapComponent_GetMapSize_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (MapWidth != nullptr)
 		*MapWidth = Parms.MapWidth;
@@ -1584,19 +2338,22 @@ void UPaperTileMapComponent::GetMapSize(int32* MapWidth, int32* MapHeight, int32
 
 struct FLinearColor UPaperTileMapComponent::GetLayerColor(int32 Layer)
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "GetLayerColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_GetLayerColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "GetLayerColor");
+
+	Params::UPaperTileMapComponent_GetLayerColor_Params Parms{};
 
 	Parms.Layer = Layer;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1615,9 +2372,12 @@ struct FLinearColor UPaperTileMapComponent::GetLayerColor(int32 Layer)
 
 void UPaperTileMapComponent::CreateNewTileMap(int32 MapWidth, int32 MapHeight, int32 TileWidth, int32 TileHeight, float PixelsPerUnrealUnit, bool bCreateLayer)
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "CreateNewTileMap");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_CreateNewTileMap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "CreateNewTileMap");
+
+	Params::UPaperTileMapComponent_CreateNewTileMap_Params Parms{};
 
 	Parms.MapWidth = MapWidth;
 	Parms.MapHeight = MapHeight;
@@ -1626,13 +2386,13 @@ void UPaperTileMapComponent::CreateNewTileMap(int32 MapWidth, int32 MapHeight, i
 	Parms.PixelsPerUnrealUnit = PixelsPerUnrealUnit;
 	Parms.bCreateLayer = bCreateLayer;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1644,21 +2404,80 @@ void UPaperTileMapComponent::CreateNewTileMap(int32 MapWidth, int32 MapHeight, i
 
 class UPaperTileLayer* UPaperTileMapComponent::AddNewLayer()
 {
-	static auto Func = Class->GetFunction("PaperTileMapComponent", "AddNewLayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UPaperTileMapComponent_AddNewLayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PaperTileMapComponent", "AddNewLayer");
+
+	Params::UPaperTileMapComponent_AddNewLayer_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class Paper2D.PaperTileSet
+// (None)
+
+class UClass* UPaperTileSet::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PaperTileSet");
+
+	return Clss;
+}
+
+
+// PaperTileSet Paper2D.Default__PaperTileSet
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPaperTileSet* UPaperTileSet::GetDefaultObj()
+{
+	static class UPaperTileSet* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPaperTileSet*>(UPaperTileSet::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class Paper2D.TileMapBlueprintLibrary
+// (None)
+
+class UClass* UTileMapBlueprintLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TileMapBlueprintLibrary");
+
+	return Clss;
+}
+
+
+// TileMapBlueprintLibrary Paper2D.Default__TileMapBlueprintLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UTileMapBlueprintLibrary* UTileMapBlueprintLibrary::GetDefaultObj()
+{
+	static class UTileMapBlueprintLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTileMapBlueprintLibrary*>(UTileMapBlueprintLibrary::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -1674,9 +2493,12 @@ class UPaperTileLayer* UPaperTileMapComponent::AddNewLayer()
 
 struct FPaperTileInfo UTileMapBlueprintLibrary::MakeTile(int32 TileIndex, class UPaperTileSet* TileSet, bool bFlipH, bool bFlipV, bool bFlipD)
 {
-	static auto Func = Class->GetFunction("TileMapBlueprintLibrary", "MakeTile");
+	static class UFunction* Func = nullptr;
 
-	Params::UTileMapBlueprintLibrary_MakeTile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TileMapBlueprintLibrary", "MakeTile");
+
+	Params::UTileMapBlueprintLibrary_MakeTile_Params Parms{};
 
 	Parms.TileIndex = TileIndex;
 	Parms.TileSet = TileSet;
@@ -1684,13 +2506,13 @@ struct FPaperTileInfo UTileMapBlueprintLibrary::MakeTile(int32 TileIndex, class 
 	Parms.bFlipV = bFlipV;
 	Parms.bFlipD = bFlipD;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1705,19 +2527,22 @@ struct FPaperTileInfo UTileMapBlueprintLibrary::MakeTile(int32 TileIndex, class 
 
 class FName UTileMapBlueprintLibrary::GetTileUserData(const struct FPaperTileInfo& Tile)
 {
-	static auto Func = Class->GetFunction("TileMapBlueprintLibrary", "GetTileUserData");
+	static class UFunction* Func = nullptr;
 
-	Params::UTileMapBlueprintLibrary_GetTileUserData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TileMapBlueprintLibrary", "GetTileUserData");
+
+	Params::UTileMapBlueprintLibrary_GetTileUserData_Params Parms{};
 
 	Parms.Tile = Tile;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1732,19 +2557,22 @@ class FName UTileMapBlueprintLibrary::GetTileUserData(const struct FPaperTileInf
 
 struct FTransform UTileMapBlueprintLibrary::GetTileTransform(const struct FPaperTileInfo& Tile)
 {
-	static auto Func = Class->GetFunction("TileMapBlueprintLibrary", "GetTileTransform");
+	static class UFunction* Func = nullptr;
 
-	Params::UTileMapBlueprintLibrary_GetTileTransform_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TileMapBlueprintLibrary", "GetTileTransform");
+
+	Params::UTileMapBlueprintLibrary_GetTileTransform_Params Parms{};
 
 	Parms.Tile = Tile;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1763,19 +2591,22 @@ struct FTransform UTileMapBlueprintLibrary::GetTileTransform(const struct FPaper
 
 void UTileMapBlueprintLibrary::BreakTile(const struct FPaperTileInfo& Tile, int32* TileIndex, class UPaperTileSet** TileSet, bool* bFlipH, bool* bFlipV, bool* bFlipD)
 {
-	static auto Func = Class->GetFunction("TileMapBlueprintLibrary", "BreakTile");
+	static class UFunction* Func = nullptr;
 
-	Params::UTileMapBlueprintLibrary_BreakTile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TileMapBlueprintLibrary", "BreakTile");
+
+	Params::UTileMapBlueprintLibrary_BreakTile_Params Parms{};
 
 	Parms.Tile = Tile;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (TileIndex != nullptr)
 		*TileIndex = Parms.TileIndex;
@@ -1796,6 +2627,4 @@ void UTileMapBlueprintLibrary::BreakTile(const struct FPaperTileInfo& Tile, int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

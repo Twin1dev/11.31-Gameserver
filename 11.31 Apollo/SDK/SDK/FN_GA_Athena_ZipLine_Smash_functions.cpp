@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GA_Athena_ZipLine_Smash.GA_Athena_ZipLine_Smash_C
+// (None)
+
+class UClass* UGA_Athena_ZipLine_Smash_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Athena_ZipLine_Smash_C");
+
+	return Clss;
+}
+
+
+// GA_Athena_ZipLine_Smash_C GA_Athena_ZipLine_Smash.Default__GA_Athena_ZipLine_Smash_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Athena_ZipLine_Smash_C* UGA_Athena_ZipLine_Smash_C::GetDefaultObj()
+{
+	static class UGA_Athena_ZipLine_Smash_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Athena_ZipLine_Smash_C*>(UGA_Athena_ZipLine_Smash_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GA_Athena_ZipLine_Smash.GA_Athena_ZipLine_Smash_C.CheckForQuestProgress
@@ -26,9 +51,12 @@ namespace SDK
 
 void UGA_Athena_ZipLine_Smash_C::CheckForQuestProgress(class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, bool CallFunc_SendComplexCustomStatEvent_QuestActive, bool CallFunc_SendComplexCustomStatEvent_QuestCompleted)
 {
-	static auto Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "CheckForQuestProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_ZipLine_Smash_C_CheckForQuestProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "CheckForQuestProgress");
+
+	Params::UGA_Athena_ZipLine_Smash_C_CheckForQuestProgress_Params Parms{};
 
 	Parms.CallFunc_GetFortPlayerControllerFromActor_ReturnValue = CallFunc_GetFortPlayerControllerFromActor_ReturnValue;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -60,9 +88,12 @@ void UGA_Athena_ZipLine_Smash_C::CheckForQuestProgress(class AFortPlayerControll
 
 void UGA_Athena_ZipLine_Smash_C::CheckMotor(bool HasHarness, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, TArray<class AActor*>& CallFunc_GetAttachedActors_OutActors, int32 CallFunc_Array_Length_ReturnValue, class AActor* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, class ABP_ZipLine_Athena_Harness_C* K2Node_DynamicCast_AsBP_Zip_Line_Athena_Harness, bool K2Node_DynamicCast_bSuccess, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "CheckMotor");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_ZipLine_Smash_C_CheckMotor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "CheckMotor");
+
+	Params::UGA_Athena_ZipLine_Smash_C_CheckMotor_Params Parms{};
 
 	Parms.HasHarness = HasHarness;
 	Parms.Temp_bool_True_if_break_was_hit_Variable = Temp_bool_True_if_break_was_hit_Variable;
@@ -111,9 +142,12 @@ void UGA_Athena_ZipLine_Smash_C::CheckMotor(bool HasHarness, bool Temp_bool_True
 
 void UGA_Athena_ZipLine_Smash_C::SpawnMotor(class AActor* PlayerPawn, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_HasAuthority_ReturnValue, const struct FHitResult& CallFunc_K2_AddLocalRotation_SweepHitResult, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FHitResult& CallFunc_K2_AddRelativeLocation_SweepHitResult, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FRotator& CallFunc_K2_GetComponentRotation_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, float CallFunc_Dot_VectorVector_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class ABP_ZipLine_Athena_Harness_Yellow_C* CallFunc_FinishSpawningActor_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult)
 {
-	static auto Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "SpawnMotor");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_ZipLine_Smash_C_SpawnMotor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "SpawnMotor");
+
+	Params::UGA_Athena_ZipLine_Smash_C_SpawnMotor_Params Parms{};
 
 	Parms.PlayerPawn = PlayerPawn;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -167,7 +201,7 @@ void UGA_Athena_ZipLine_Smash_C::SpawnMotor(class AActor* PlayerPawn, UDelegateP
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class ABuildingActor*              K2Node_DynamicCast_AsBuilding_Actor                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  ()
+// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  (None)
 // class AFortAthenaSupplyDropBalloon*K2Node_DynamicCast_AsFort_Athena_Supply_Drop_Balloon             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<struct FActiveGameplayEffectHandle>CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue              (ZeroConstructor, ReferenceParm)
@@ -180,9 +214,12 @@ void UGA_Athena_ZipLine_Smash_C::SpawnMotor(class AActor* PlayerPawn, UDelegateP
 
 void UGA_Athena_ZipLine_Smash_C::BreakNearbyStructures(class AFortPlayerPawn* PlayerPawn, int32 Temp_int_Array_Index_Variable, TArray<class AActor*>& K2Node_MakeArray_Array, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_Add_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, TArray<enum class EObjectTypeQuery>& K2Node_MakeArray_Array_1, TArray<class AActor*>& CallFunc_BoxOverlapActors_OutActors, bool CallFunc_BoxOverlapActors_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class AActor* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor, bool K2Node_DynamicCast_bSuccess, const struct FGameplayAbilityTargetDataHandle& CallFunc_AbilityTargetDataFromActor_ReturnValue, class AFortAthenaSupplyDropBalloon* K2Node_DynamicCast_AsFort_Athena_Supply_Drop_Balloon, bool K2Node_DynamicCast_bSuccess_1, TArray<struct FActiveGameplayEffectHandle>& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue, class ABuildingProp* K2Node_DynamicCast_AsBuilding_Prop, bool K2Node_DynamicCast_bSuccess_2, class UFortHeldObjectComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_3)
 {
-	static auto Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "BreakNearbyStructures");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_ZipLine_Smash_C_BreakNearbyStructures_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "BreakNearbyStructures");
+
+	Params::UGA_Athena_ZipLine_Smash_C_BreakNearbyStructures_Params Parms{};
 
 	Parms.PlayerPawn = PlayerPawn;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -228,9 +265,12 @@ void UGA_Athena_ZipLine_Smash_C::BreakNearbyStructures(class AFortPlayerPawn* Pl
 
 void UGA_Athena_ZipLine_Smash_C::OnChange_BF54003849C4B2FC73936CB3158F0A16(enum class EMovementMode NewMovementMode)
 {
-	static auto Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnChange_BF54003849C4B2FC73936CB3158F0A16");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_ZipLine_Smash_C_OnChange_BF54003849C4B2FC73936CB3158F0A16_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnChange_BF54003849C4B2FC73936CB3158F0A16");
+
+	Params::UGA_Athena_ZipLine_Smash_C_OnChange_BF54003849C4B2FC73936CB3158F0A16_Params Parms{};
 
 	Parms.NewMovementMode = NewMovementMode;
 
@@ -246,9 +286,12 @@ void UGA_Athena_ZipLine_Smash_C::OnChange_BF54003849C4B2FC73936CB3158F0A16(enum 
 
 void UGA_Athena_ZipLine_Smash_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_ZipLine_Smash_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGA_Athena_ZipLine_Smash_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -264,9 +307,12 @@ void UGA_Athena_ZipLine_Smash_C::K2_ActivateAbilityFromEvent(struct FGameplayEve
 
 void UGA_Athena_ZipLine_Smash_C::OnPawnLanded_Bind(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnPawnLanded_Bind");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_ZipLine_Smash_C_OnPawnLanded_Bind_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnPawnLanded_Bind");
+
+	Params::UGA_Athena_ZipLine_Smash_C_OnPawnLanded_Bind_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -282,9 +328,12 @@ void UGA_Athena_ZipLine_Smash_C::OnPawnLanded_Bind(struct FHitResult& Hit)
 
 void UGA_Athena_ZipLine_Smash_C::HandleZiplineStateChanged(bool bIsZiplining)
 {
-	static auto Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "HandleZiplineStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_ZipLine_Smash_C_HandleZiplineStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "HandleZiplineStateChanged");
+
+	Params::UGA_Athena_ZipLine_Smash_C_HandleZiplineStateChanged_Params Parms{};
 
 	Parms.bIsZiplining = bIsZiplining;
 
@@ -299,12 +348,14 @@ void UGA_Athena_ZipLine_Smash_C::HandleZiplineStateChanged(bool bIsZiplining)
 
 void UGA_Athena_ZipLine_Smash_C::SurroundingsCheck()
 {
-	static auto Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "SurroundingsCheck");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_ZipLine_Smash_C_SurroundingsCheck_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "SurroundingsCheck");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -315,12 +366,14 @@ void UGA_Athena_ZipLine_Smash_C::SurroundingsCheck()
 
 void UGA_Athena_ZipLine_Smash_C::RemoveFallDamageImmunity()
 {
-	static auto Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "RemoveFallDamageImmunity");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_ZipLine_Smash_C_RemoveFallDamageImmunity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "RemoveFallDamageImmunity");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -331,12 +384,14 @@ void UGA_Athena_ZipLine_Smash_C::RemoveFallDamageImmunity()
 
 void UGA_Athena_ZipLine_Smash_C::OnEnterVehicle_Bind()
 {
-	static auto Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnEnterVehicle_Bind");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_ZipLine_Smash_C_OnEnterVehicle_Bind_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnEnterVehicle_Bind");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -347,12 +402,14 @@ void UGA_Athena_ZipLine_Smash_C::OnEnterVehicle_Bind()
 
 void UGA_Athena_ZipLine_Smash_C::ZipliningComplete()
 {
-	static auto Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "ZipliningComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_ZipLine_Smash_C_ZipliningComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "ZipliningComplete");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -371,9 +428,12 @@ void UGA_Athena_ZipLine_Smash_C::ZipliningComplete()
 
 void UGA_Athena_ZipLine_Smash_C::OnPawnDied_Bind(class AActor* NewParam, float NewParam2, class AController* NewParam3, class AActor* NewParam4, const struct FVector& NewParam5, class UPrimitiveComponent* NewParam6, class FName NewParam7, const struct FVector& NewParam8)
 {
-	static auto Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnPawnDied_Bind");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_ZipLine_Smash_C_OnPawnDied_Bind_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnPawnDied_Bind");
+
+	Params::UGA_Athena_ZipLine_Smash_C_OnPawnDied_Bind_Params Parms{};
 
 	Parms.NewParam = NewParam;
 	Parms.NewParam2 = NewParam2;
@@ -395,12 +455,14 @@ void UGA_Athena_ZipLine_Smash_C::OnPawnDied_Bind(class AActor* NewParam, float N
 
 void UGA_Athena_ZipLine_Smash_C::OnEnteredAircraft_Bind()
 {
-	static auto Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnEnteredAircraft_Bind");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_ZipLine_Smash_C_OnEnteredAircraft_Bind_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnEnteredAircraft_Bind");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -411,12 +473,14 @@ void UGA_Athena_ZipLine_Smash_C::OnEnteredAircraft_Bind()
 
 void UGA_Athena_ZipLine_Smash_C::OnBeginSkydiving_Bind()
 {
-	static auto Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnBeginSkydiving_Bind");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_ZipLine_Smash_C_OnBeginSkydiving_Bind_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "OnBeginSkydiving_Bind");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -478,9 +542,12 @@ void UGA_Athena_ZipLine_Smash_C::OnBeginSkydiving_Bind()
 
 void UGA_Athena_ZipLine_Smash_C::ExecuteUbergraph_GA_Athena_ZipLine_Smash(int32 EntryPoint, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, const struct FGameplayEventData& K2Node_Event_EventData, class ABP_Athena_Environmental_ZipLine_C* K2Node_DynamicCast_AsBP_Athena_Environmental_Zip_Line, bool K2Node_DynamicCast_bSuccess, bool GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess, bool CallFunc_IsValid_ReturnValue, TScriptInterface<class IFortVehicleInterface> CallFunc_GetVehicleUInterface_ReturnValue, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue, class UPawnMovementComponent* CallFunc_GetMovementComponent_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UCharacterMovementComponent* K2Node_DynamicCast_AsCharacter_Movement_Component, bool K2Node_DynamicCast_bSuccess_1, uint8 CallFunc_GetValidValue_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, TScriptInterface<class IFortVehicleInterface> CallFunc_GetVehicleUInterface_ReturnValue_1, class UObject* CallFunc_Conv_InterfaceToObject_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_5, const struct FHitResult& K2Node_CustomEvent_Hit, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, class UAbilityTask_WaitMovementModeChange* CallFunc_CreateWaitMovementModeChange_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsValid_ReturnValue_6, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue_1, bool K2Node_CustomEvent_bIsZiplining, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, class AActor* K2Node_CustomEvent_NewParam, float K2Node_CustomEvent_NewParam2, class AController* K2Node_CustomEvent_NewParam3, class AActor* K2Node_CustomEvent_NewParam4, const struct FVector& K2Node_CustomEvent_NewParam5, class UPrimitiveComponent* K2Node_CustomEvent_NewParam6, class FName K2Node_CustomEvent_NewParam7, const struct FVector& K2Node_CustomEvent_NewParam8, enum class EMovementMode Temp_byte_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, enum class EMovementMode K2Node_CustomEvent_NewMovementMode, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_8)
 {
-	static auto Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "ExecuteUbergraph_GA_Athena_ZipLine_Smash");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_ZipLine_Smash_C", "ExecuteUbergraph_GA_Athena_ZipLine_Smash");
+
+	Params::UGA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetFortPlayerControllerFromActor_ReturnValue = CallFunc_GetFortPlayerControllerFromActor_ReturnValue;
@@ -540,6 +607,4 @@ void UGA_Athena_ZipLine_Smash_C::ExecuteUbergraph_GA_Athena_ZipLine_Smash(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

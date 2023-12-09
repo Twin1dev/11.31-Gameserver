@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SplashScreenWidget.SplashScreenWidget_C
+// (None)
+
+class UClass* USplashScreenWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SplashScreenWidget_C");
+
+	return Clss;
+}
+
+
+// SplashScreenWidget_C SplashScreenWidget.Default__SplashScreenWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USplashScreenWidget_C* USplashScreenWidget_C::GetDefaultObj()
+{
+	static class USplashScreenWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USplashScreenWidget_C*>(USplashScreenWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SplashScreenWidget.SplashScreenWidget_C.BP_OnActivated
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void USplashScreenWidget_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("SplashScreenWidget_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::USplashScreenWidget_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SplashScreenWidget_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void USplashScreenWidget_C::BP_OnActivated()
 
 void USplashScreenWidget_C::OnInputMethodChanged(enum class ECommonInputType InputType)
 {
-	static auto Func = Class->GetFunction("SplashScreenWidget_C", "OnInputMethodChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::USplashScreenWidget_C_OnInputMethodChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SplashScreenWidget_C", "OnInputMethodChanged");
+
+	Params::USplashScreenWidget_C_OnInputMethodChanged_Params Parms{};
 
 	Parms.InputType = InputType;
 
@@ -63,9 +93,12 @@ void USplashScreenWidget_C::OnInputMethodChanged(enum class ECommonInputType Inp
 
 void USplashScreenWidget_C::ExecuteUbergraph_SplashScreenWidget(int32 EntryPoint, enum class ECommonInputType K2Node_Event_InputType, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_IsMobileApp_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool Temp_bool_Variable, class UWidget* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("SplashScreenWidget_C", "ExecuteUbergraph_SplashScreenWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::USplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SplashScreenWidget_C", "ExecuteUbergraph_SplashScreenWidget");
+
+	Params::USplashScreenWidget_C_ExecuteUbergraph_SplashScreenWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_InputType = K2Node_Event_InputType;
@@ -82,6 +115,4 @@ void USplashScreenWidget_C::ExecuteUbergraph_SplashScreenWidget(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

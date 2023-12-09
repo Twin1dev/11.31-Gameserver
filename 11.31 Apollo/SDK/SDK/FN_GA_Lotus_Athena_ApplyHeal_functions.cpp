@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Lotus_Athena_ApplyHeal.GA_Lotus_Athena_ApplyHeal_C
+// (None)
+
+class UClass* UGA_Lotus_Athena_ApplyHeal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Lotus_Athena_ApplyHeal_C");
+
+	return Clss;
+}
+
+
+// GA_Lotus_Athena_ApplyHeal_C GA_Lotus_Athena_ApplyHeal.Default__GA_Lotus_Athena_ApplyHeal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Lotus_Athena_ApplyHeal_C* UGA_Lotus_Athena_ApplyHeal_C::GetDefaultObj()
+{
+	static class UGA_Lotus_Athena_ApplyHeal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Lotus_Athena_ApplyHeal_C*>(UGA_Lotus_Athena_ApplyHeal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Lotus_Athena_ApplyHeal.GA_Lotus_Athena_ApplyHeal_C.K2_ActivateAbility
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UGA_Lotus_Athena_ApplyHeal_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Lotus_Athena_ApplyHeal_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Lotus_Athena_ApplyHeal_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Lotus_Athena_ApplyHeal_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -40,7 +67,7 @@ void UGA_Lotus_Athena_ApplyHeal_C::K2_ActivateAbility()
 // class AActor*                      CallFunc_GetAvatarActorFromActorInfo_ReturnValue_1               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEffectContextHandleCallFunc_GetGrantedByEffectContext_ReturnValue                   ()
+// struct FGameplayEffectContextHandleCallFunc_GetGrantedByEffectContext_ReturnValue                   (None)
 // float                              CallFunc_GetMaxHealth_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_EffectContextGetInstigatorActor_ReturnValue             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetHealth_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -51,9 +78,12 @@ void UGA_Lotus_Athena_ApplyHeal_C::K2_ActivateAbility()
 
 void UGA_Lotus_Athena_ApplyHeal_C::ExecuteUbergraph_GA_Lotus_Athena_ApplyHeal(int32 EntryPoint, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, class UFortAbilitySystemComponent* CallFunc_GetFortAbilitySystemComponent_ReturnValue, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue_1, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FGameplayEffectContextHandle& CallFunc_GetGrantedByEffectContext_ReturnValue, float CallFunc_GetMaxHealth_ReturnValue, class AActor* CallFunc_EffectContextGetInstigatorActor_ReturnValue, float CallFunc_GetHealth_ReturnValue, class UFortAbilitySystemComponent* CallFunc_GetFortAbilitySystemComponent_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_FortApplyGameplayEffectToTarget_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Lotus_Athena_ApplyHeal_C", "ExecuteUbergraph_GA_Lotus_Athena_ApplyHeal");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Lotus_Athena_ApplyHeal_C_ExecuteUbergraph_GA_Lotus_Athena_ApplyHeal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Lotus_Athena_ApplyHeal_C", "ExecuteUbergraph_GA_Lotus_Athena_ApplyHeal");
+
+	Params::UGA_Lotus_Athena_ApplyHeal_C_ExecuteUbergraph_GA_Lotus_Athena_ApplyHeal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetAvatarActorFromActorInfo_ReturnValue = CallFunc_GetAvatarActorFromActorInfo_ReturnValue;
@@ -76,6 +106,4 @@ void UGA_Lotus_Athena_ApplyHeal_C::ExecuteUbergraph_GA_Lotus_Athena_ApplyHeal(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ChallengeSetDetails.ChallengeSetDetails_C
+// (None)
+
+class UClass* UChallengeSetDetails_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChallengeSetDetails_C");
+
+	return Clss;
+}
+
+
+// ChallengeSetDetails_C ChallengeSetDetails.Default__ChallengeSetDetails_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChallengeSetDetails_C* UChallengeSetDetails_C::GetDefaultObj()
+{
+	static class UChallengeSetDetails_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChallengeSetDetails_C*>(UChallengeSetDetails_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ChallengeSetDetails.ChallengeSetDetails_C.GetWidgetForFramingViewedItem
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 class UWidget* UChallengeSetDetails_C::GetWidgetForFramingViewedItem()
 {
-	static auto Func = Class->GetFunction("ChallengeSetDetails_C", "GetWidgetForFramingViewedItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeSetDetails_C_GetWidgetForFramingViewedItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeSetDetails_C", "GetWidgetForFramingViewedItem");
+
+	Params::UChallengeSetDetails_C_GetWidgetForFramingViewedItem_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -43,9 +71,12 @@ class UWidget* UChallengeSetDetails_C::GetWidgetForFramingViewedItem()
 
 void UChallengeSetDetails_C::SetDynamicColors(class UImage* DetailsDynamicMaterialTarget, struct FFortChallengeSetStyle& FortChallengeSetStyle, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ChallengeSetDetails_C", "SetDynamicColors");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeSetDetails_C_SetDynamicColors_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeSetDetails_C", "SetDynamicColors");
+
+	Params::UChallengeSetDetails_C_SetDynamicColors_Params Parms{};
 
 	Parms.DetailsDynamicMaterialTarget = DetailsDynamicMaterialTarget;
 	Parms.FortChallengeSetStyle = FortChallengeSetStyle;
@@ -63,9 +94,12 @@ void UChallengeSetDetails_C::SetDynamicColors(class UImage* DetailsDynamicMateri
 
 void UChallengeSetDetails_C::HandleBack(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("ChallengeSetDetails_C", "HandleBack");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeSetDetails_C_HandleBack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeSetDetails_C", "HandleBack");
+
+	Params::UChallengeSetDetails_C_HandleBack_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -84,9 +118,12 @@ void UChallengeSetDetails_C::HandleBack(bool* PassThrough)
 
 void UChallengeSetDetails_C::OnChallengeSetEstablished(struct FFortChallengeSetStyle& DisplayStyle, bool bIsComplete)
 {
-	static auto Func = Class->GetFunction("ChallengeSetDetails_C", "OnChallengeSetEstablished");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeSetDetails_C_OnChallengeSetEstablished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeSetDetails_C", "OnChallengeSetEstablished");
+
+	Params::UChallengeSetDetails_C_OnChallengeSetEstablished_Params Parms{};
 
 	Parms.DisplayStyle = DisplayStyle;
 	Parms.bIsComplete = bIsComplete;
@@ -102,12 +139,14 @@ void UChallengeSetDetails_C::OnChallengeSetEstablished(struct FFortChallengeSetS
 
 void UChallengeSetDetails_C::Construct()
 {
-	static auto Func = Class->GetFunction("ChallengeSetDetails_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeSetDetails_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeSetDetails_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -119,9 +158,12 @@ void UChallengeSetDetails_C::Construct()
 
 void UChallengeSetDetails_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ChallengeSetDetails_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeSetDetails_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeSetDetails_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UChallengeSetDetails_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -158,9 +200,12 @@ void UChallengeSetDetails_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEven
 
 void UChallengeSetDetails_C::ExecuteUbergraph_ChallengeSetDetails(int32 EntryPoint, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UCircleArrowButton_C* K2Node_DynamicCast_AsCircle_Arrow_Button, bool K2Node_DynamicCast_bSuccess, const struct FFortChallengeSetStyle& K2Node_Event_DisplayStyle, bool K2Node_Event_bIsComplete, class UCircleArrowButton_C* K2Node_DynamicCast_AsCircle_Arrow_Button_1, bool K2Node_DynamicCast_bSuccess_1, const struct FLinearColor& CallFunc_GetChallengeStyleLightAccentColor_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, class UCircleArrowButton_C* K2Node_DynamicCast_AsCircle_Arrow_Button_2, bool K2Node_DynamicCast_bSuccess_2, bool Temp_bool_Variable, class UItemInfoHeaderWidget_C* K2Node_DynamicCast_AsItem_Info_Header_Widget, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_IsMobileGame_ReturnValue, bool CallFunc_HandleBack_PassThrough, enum class ESlateVisibility K2Node_Select_Default, const struct FDataTableRowHandle& K2Node_MakeStruct_DataTableRowHandle, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("ChallengeSetDetails_C", "ExecuteUbergraph_ChallengeSetDetails");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeSetDetails_C_ExecuteUbergraph_ChallengeSetDetails_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeSetDetails_C", "ExecuteUbergraph_ChallengeSetDetails");
+
+	Params::UChallengeSetDetails_C_ExecuteUbergraph_ChallengeSetDetails_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
@@ -191,6 +236,4 @@ void UChallengeSetDetails_C::ExecuteUbergraph_ChallengeSetDetails(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

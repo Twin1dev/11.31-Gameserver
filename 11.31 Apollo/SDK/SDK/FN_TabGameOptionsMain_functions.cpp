@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TabGameOptionsMain.TabGameOptionsMain_C
+// (None)
+
+class UClass* UTabGameOptionsMain_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TabGameOptionsMain_C");
+
+	return Clss;
+}
+
+
+// TabGameOptionsMain_C TabGameOptionsMain.Default__TabGameOptionsMain_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTabGameOptionsMain_C* UTabGameOptionsMain_C::GetDefaultObj()
+{
+	static class UTabGameOptionsMain_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTabGameOptionsMain_C*>(UTabGameOptionsMain_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TabGameOptionsMain.TabGameOptionsMain_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UTabGameOptionsMain_C::Construct()
 {
-	static auto Func = Class->GetFunction("TabGameOptionsMain_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabGameOptionsMain_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabGameOptionsMain_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UTabGameOptionsMain_C::Construct()
 
 void UTabGameOptionsMain_C::UpdateOptionsTab()
 {
-	static auto Func = Class->GetFunction("TabGameOptionsMain_C", "UpdateOptionsTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabGameOptionsMain_C_UpdateOptionsTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabGameOptionsMain_C", "UpdateOptionsTab");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UTabGameOptionsMain_C::UpdateOptionsTab()
 
 void UTabGameOptionsMain_C::CenterOnTab()
 {
-	static auto Func = Class->GetFunction("TabGameOptionsMain_C", "CenterOnTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabGameOptionsMain_C_CenterOnTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabGameOptionsMain_C", "CenterOnTab");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -70,9 +101,12 @@ void UTabGameOptionsMain_C::CenterOnTab()
 
 void UTabGameOptionsMain_C::BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature(class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("TabGameOptionsMain_C", "BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabGameOptionsMain_C", "BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature");
+
+	Params::UTabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature_Params Parms{};
 
 	Parms.Widget = Widget;
 
@@ -89,9 +123,12 @@ void UTabGameOptionsMain_C::BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4
 
 void UTabGameOptionsMain_C::BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature(class UObject* Item, class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("TabGameOptionsMain_C", "BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabGameOptionsMain_C", "BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature");
+
+	Params::UTabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.Widget = Widget;
@@ -108,9 +145,12 @@ void UTabGameOptionsMain_C::BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5
 
 void UTabGameOptionsMain_C::Setting_Value_Changed(float Value)
 {
-	static auto Func = Class->GetFunction("TabGameOptionsMain_C", "Setting Value Changed");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabGameOptionsMain_C_Setting_Value_Changed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabGameOptionsMain_C", "Setting Value Changed");
+
+	Params::UTabGameOptionsMain_C_Setting_Value_Changed_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -151,7 +191,7 @@ void UTabGameOptionsMain_C::Setting_Value_Changed(float Value)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              K2Node_CustomEvent_Value                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsMobileGame_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
 // bool                               CallFunc_AreParentalControlsEnabled_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -165,9 +205,12 @@ void UTabGameOptionsMain_C::Setting_Value_Changed(float Value)
 
 void UTabGameOptionsMain_C::ExecuteUbergraph_TabGameOptionsMain(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUserWidget* K2Node_ComponentBoundEvent_Widget_1, class UFortOptionsMenuSetting* K2Node_DynamicCast_AsFort_Options_Menu_Setting, bool K2Node_DynamicCast_bSuccess, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, bool CallFunc_EqualEqual_ByteByte_ReturnValue_3, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_4, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_5, bool CallFunc_BooleanOR_ReturnValue_2, bool CallFunc_EqualEqual_ByteByte_ReturnValue_6, bool CallFunc_BooleanOR_ReturnValue_3, bool CallFunc_EqualEqual_ByteByte_ReturnValue_7, bool CallFunc_BooleanOR_ReturnValue_4, bool CallFunc_EqualEqual_ByteByte_ReturnValue_8, bool CallFunc_BooleanOR_ReturnValue_5, bool CallFunc_EqualEqual_ByteByte_ReturnValue_9, bool CallFunc_BooleanOR_ReturnValue_6, bool CallFunc_BooleanOR_ReturnValue_7, class UObject* K2Node_ComponentBoundEvent_Item, class UUserWidget* K2Node_ComponentBoundEvent_Widget, class UFortOptionsMenuSetting* K2Node_DynamicCast_AsFort_Options_Menu_Setting_1, bool K2Node_DynamicCast_bSuccess_1, float K2Node_CustomEvent_Value, bool CallFunc_IsMobileGame_ReturnValue, class FText CallFunc_MakeLiteralText_ReturnValue, bool CallFunc_AreParentalControlsEnabled_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsCrucibleControls_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, class UCommonTextBlock* Temp_object_Variable, bool Temp_bool_Variable, class UCommonTextBlock* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("TabGameOptionsMain_C", "ExecuteUbergraph_TabGameOptionsMain");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabGameOptionsMain_C", "ExecuteUbergraph_TabGameOptionsMain");
+
+	Params::UTabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -216,6 +259,4 @@ void UTabGameOptionsMain_C::ExecuteUbergraph_TabGameOptionsMain(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SpecialEventAthenaNewsTile_Spotlight.SpecialEventAthenaNewsTile_Spotlight_C
+// (None)
+
+class UClass* USpecialEventAthenaNewsTile_Spotlight_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SpecialEventAthenaNewsTile_Spotlight_C");
+
+	return Clss;
+}
+
+
+// SpecialEventAthenaNewsTile_Spotlight_C SpecialEventAthenaNewsTile_Spotlight.Default__SpecialEventAthenaNewsTile_Spotlight_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USpecialEventAthenaNewsTile_Spotlight_C* USpecialEventAthenaNewsTile_Spotlight_C::GetDefaultObj()
+{
+	static class USpecialEventAthenaNewsTile_Spotlight_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USpecialEventAthenaNewsTile_Spotlight_C*>(USpecialEventAthenaNewsTile_Spotlight_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SpecialEventAthenaNewsTile_Spotlight.SpecialEventAthenaNewsTile_Spotlight_C.PlayIntroAnim
 // (Event, Public, BlueprintEvent)
 // Parameters:
 
 void USpecialEventAthenaNewsTile_Spotlight_C::PlayIntroAnim()
 {
-	static auto Func = Class->GetFunction("SpecialEventAthenaNewsTile_Spotlight_C", "PlayIntroAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::USpecialEventAthenaNewsTile_Spotlight_C_PlayIntroAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpecialEventAthenaNewsTile_Spotlight_C", "PlayIntroAnim");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void USpecialEventAthenaNewsTile_Spotlight_C::PlayIntroAnim()
 
 void USpecialEventAthenaNewsTile_Spotlight_C::SetDefaultImage()
 {
-	static auto Func = Class->GetFunction("SpecialEventAthenaNewsTile_Spotlight_C", "SetDefaultImage");
+	static class UFunction* Func = nullptr;
 
-	Params::USpecialEventAthenaNewsTile_Spotlight_C_SetDefaultImage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpecialEventAthenaNewsTile_Spotlight_C", "SetDefaultImage");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,9 +84,12 @@ void USpecialEventAthenaNewsTile_Spotlight_C::SetDefaultImage()
 
 void USpecialEventAthenaNewsTile_Spotlight_C::ExecuteUbergraph_SpecialEventAthenaNewsTile_Spotlight(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SpecialEventAthenaNewsTile_Spotlight_C", "ExecuteUbergraph_SpecialEventAthenaNewsTile_Spotlight");
+	static class UFunction* Func = nullptr;
 
-	Params::USpecialEventAthenaNewsTile_Spotlight_C_ExecuteUbergraph_SpecialEventAthenaNewsTile_Spotlight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpecialEventAthenaNewsTile_Spotlight_C", "ExecuteUbergraph_SpecialEventAthenaNewsTile_Spotlight");
+
+	Params::USpecialEventAthenaNewsTile_Spotlight_C_ExecuteUbergraph_SpecialEventAthenaNewsTile_Spotlight_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -68,6 +100,4 @@ void USpecialEventAthenaNewsTile_Spotlight_C::ExecuteUbergraph_SpecialEventAthen
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass MissionGen_Wax.MissionGen_Wax_C
+// (None)
+
+class UClass* UMissionGen_Wax_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MissionGen_Wax_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// MissionGen_Wax_C MissionGen_Wax.Default__MissionGen_Wax_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMissionGen_Wax_C* UMissionGen_Wax_C::GetDefaultObj()
+{
+	static class UMissionGen_Wax_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMissionGen_Wax_C*>(UMissionGen_Wax_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

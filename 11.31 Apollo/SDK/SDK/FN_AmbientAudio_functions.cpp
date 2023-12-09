@@ -1,17 +1,72 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// Class AmbientAudio.AmbientAudioDataAsset
+// (None)
+
+class UClass* UAmbientAudioDataAsset::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AmbientAudioDataAsset");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// AmbientAudioDataAsset AmbientAudio.Default__AmbientAudioDataAsset
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UAmbientAudioDataAsset* UAmbientAudioDataAsset::GetDefaultObj()
+{
+	static class UAmbientAudioDataAsset* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAmbientAudioDataAsset*>(UAmbientAudioDataAsset::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class AmbientAudio.AmbientVolume
+// (Actor)
+
+class UClass* AAmbientVolume::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AmbientVolume");
+
+	return Clss;
+}
+
+
+// AmbientVolume AmbientAudio.Default__AmbientVolume
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AAmbientVolume* AAmbientVolume::GetDefaultObj()
+{
+	static class AAmbientVolume* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AAmbientVolume*>(AAmbientVolume::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

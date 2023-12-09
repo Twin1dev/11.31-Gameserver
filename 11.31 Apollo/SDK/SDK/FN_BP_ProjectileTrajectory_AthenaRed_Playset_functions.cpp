@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_ProjectileTrajectory_AthenaRed_Playset.BP_ProjectileTrajectory_AthenaRed_Playset_C
+// (Actor)
+
+class UClass* ABP_ProjectileTrajectory_AthenaRed_Playset_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_ProjectileTrajectory_AthenaRed_Playset_C");
+
+	return Clss;
+}
+
+
+// BP_ProjectileTrajectory_AthenaRed_Playset_C BP_ProjectileTrajectory_AthenaRed_Playset.Default__BP_ProjectileTrajectory_AthenaRed_Playset_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_ProjectileTrajectory_AthenaRed_Playset_C* ABP_ProjectileTrajectory_AthenaRed_Playset_C::GetDefaultObj()
+{
+	static class ABP_ProjectileTrajectory_AthenaRed_Playset_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_ProjectileTrajectory_AthenaRed_Playset_C*>(ABP_ProjectileTrajectory_AthenaRed_Playset_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_ProjectileTrajectory_AthenaRed_Playset.BP_ProjectileTrajectory_AthenaRed_Playset_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void ABP_ProjectileTrajectory_AthenaRed_Playset_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_AthenaRed_Playset_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_AthenaRed_Playset_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_AthenaRed_Playset_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void ABP_ProjectileTrajectory_AthenaRed_Playset_C::ReceiveBeginPlay()
 
 void ABP_ProjectileTrajectory_AthenaRed_Playset_C::ReceiveDestroyed()
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_AthenaRed_Playset_C", "ReceiveDestroyed");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_AthenaRed_Playset_C_ReceiveDestroyed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_AthenaRed_Playset_C", "ReceiveDestroyed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -62,9 +91,12 @@ void ABP_ProjectileTrajectory_AthenaRed_Playset_C::ReceiveDestroyed()
 
 void ABP_ProjectileTrajectory_AthenaRed_Playset_C::ExecuteUbergraph_BP_ProjectileTrajectory_AthenaRed_Playset(int32 EntryPoint, int32 Temp_int_Variable, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, const struct FTransform& Temp_struct_Variable, class USplineMeshComponent* CallFunc_AddComponent_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_AthenaRed_Playset_C", "ExecuteUbergraph_BP_ProjectileTrajectory_AthenaRed_Playset");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_AthenaRed_Playset_C_ExecuteUbergraph_BP_ProjectileTrajectory_AthenaRed_Playset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_AthenaRed_Playset_C", "ExecuteUbergraph_BP_ProjectileTrajectory_AthenaRed_Playset");
+
+	Params::ABP_ProjectileTrajectory_AthenaRed_Playset_C_ExecuteUbergraph_BP_ProjectileTrajectory_AthenaRed_Playset_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -82,6 +114,4 @@ void ABP_ProjectileTrajectory_AthenaRed_Playset_C::ExecuteUbergraph_BP_Projectil
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaRewardItemTypeRarityTag.AthenaRewardItemTypeRarityTag_C
+// (None)
+
+class UClass* UAthenaRewardItemTypeRarityTag_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaRewardItemTypeRarityTag_C");
+
+	return Clss;
+}
+
+
+// AthenaRewardItemTypeRarityTag_C AthenaRewardItemTypeRarityTag.Default__AthenaRewardItemTypeRarityTag_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaRewardItemTypeRarityTag_C* UAthenaRewardItemTypeRarityTag_C::GetDefaultObj()
+{
+	static class UAthenaRewardItemTypeRarityTag_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaRewardItemTypeRarityTag_C*>(UAthenaRewardItemTypeRarityTag_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaRewardItemTypeRarityTag.AthenaRewardItemTypeRarityTag_C.OnInitializeRarityWithSeries
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAthenaRewardItemTypeRarityTag_C::OnInitializeRarityWithSeries(class UFortItemSeriesDefinition* SeriesData)
 {
-	static auto Func = Class->GetFunction("AthenaRewardItemTypeRarityTag_C", "OnInitializeRarityWithSeries");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaRewardItemTypeRarityTag_C_OnInitializeRarityWithSeries_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaRewardItemTypeRarityTag_C", "OnInitializeRarityWithSeries");
+
+	Params::UAthenaRewardItemTypeRarityTag_C_OnInitializeRarityWithSeries_Params Parms{};
 
 	Parms.SeriesData = SeriesData;
 
@@ -40,9 +68,12 @@ void UAthenaRewardItemTypeRarityTag_C::OnInitializeRarityWithSeries(class UFortI
 
 void UAthenaRewardItemTypeRarityTag_C::OnInitializeRarityWithoutSeries(const struct FFortRarityItemData& RarityData)
 {
-	static auto Func = Class->GetFunction("AthenaRewardItemTypeRarityTag_C", "OnInitializeRarityWithoutSeries");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaRewardItemTypeRarityTag_C_OnInitializeRarityWithoutSeries_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaRewardItemTypeRarityTag_C", "OnInitializeRarityWithoutSeries");
+
+	Params::UAthenaRewardItemTypeRarityTag_C_OnInitializeRarityWithoutSeries_Params Parms{};
 
 	Parms.RarityData = RarityData;
 
@@ -56,15 +87,18 @@ void UAthenaRewardItemTypeRarityTag_C::OnInitializeRarityWithoutSeries(const str
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortItemSeriesDefinition*   K2Node_Event_SeriesData                                          (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortRarityItemData         K2Node_Event_RarityData                                          ()
+// struct FFortRarityItemData         K2Node_Event_RarityData                                          (None)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaRewardItemTypeRarityTag_C::ExecuteUbergraph_AthenaRewardItemTypeRarityTag(int32 EntryPoint, class UFortItemSeriesDefinition* K2Node_Event_SeriesData, const struct FFortRarityItemData& K2Node_Event_RarityData, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaRewardItemTypeRarityTag_C", "ExecuteUbergraph_AthenaRewardItemTypeRarityTag");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaRewardItemTypeRarityTag_C_ExecuteUbergraph_AthenaRewardItemTypeRarityTag_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaRewardItemTypeRarityTag_C", "ExecuteUbergraph_AthenaRewardItemTypeRarityTag");
+
+	Params::UAthenaRewardItemTypeRarityTag_C_ExecuteUbergraph_AthenaRewardItemTypeRarityTag_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_SeriesData = K2Node_Event_SeriesData;
@@ -78,6 +112,4 @@ void UAthenaRewardItemTypeRarityTag_C::ExecuteUbergraph_AthenaRewardItemTypeRari
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

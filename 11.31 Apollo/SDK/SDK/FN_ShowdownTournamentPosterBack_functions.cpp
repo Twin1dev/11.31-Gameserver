@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,44 +12,72 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ShowdownTournamentPosterBack.ShowdownTournamentPosterBack_C
+// (None)
+
+class UClass* UShowdownTournamentPosterBack_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ShowdownTournamentPosterBack_C");
+
+	return Clss;
+}
+
+
+// ShowdownTournamentPosterBack_C ShowdownTournamentPosterBack.Default__ShowdownTournamentPosterBack_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UShowdownTournamentPosterBack_C* UShowdownTournamentPosterBack_C::GetDefaultObj()
+{
+	static class UShowdownTournamentPosterBack_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UShowdownTournamentPosterBack_C*>(UShowdownTournamentPosterBack_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ShowdownTournamentPosterBack.ShowdownTournamentPosterBack_C.GetTournamentDateText
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FText                        TournamentDate                                                   (Parm, OutParm)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable_2                                             ()
+// class FText                        Temp_text_Variable_2                                             (None)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable_3                                             ()
+// class FText                        Temp_text_Variable_3                                             (None)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_4                                             ()
-// class FText                        Temp_text_Variable_5                                             ()
-// class FText                        Temp_text_Variable_6                                             ()
-// class FText                        Temp_text_Variable_7                                             ()
-// class FText                        Temp_text_Variable_8                                             ()
-// class FText                        Temp_text_Variable_9                                             ()
-// class FText                        Temp_text_Variable_10                                            ()
-// class FText                        Temp_text_Variable_11                                            ()
-// class FText                        Temp_text_Variable_12                                            ()
-// class FText                        Temp_text_Variable_13                                            ()
-// class FText                        Temp_text_Variable_14                                            ()
-// class FText                        Temp_text_Variable_15                                            ()
-// class FText                        Temp_text_Variable_16                                            ()
+// class FText                        Temp_text_Variable_4                                             (None)
+// class FText                        Temp_text_Variable_5                                             (None)
+// class FText                        Temp_text_Variable_6                                             (None)
+// class FText                        Temp_text_Variable_7                                             (None)
+// class FText                        Temp_text_Variable_8                                             (None)
+// class FText                        Temp_text_Variable_9                                             (None)
+// class FText                        Temp_text_Variable_10                                            (None)
+// class FText                        Temp_text_Variable_11                                            (None)
+// class FText                        Temp_text_Variable_12                                            (None)
+// class FText                        Temp_text_Variable_13                                            (None)
+// class FText                        Temp_text_Variable_14                                            (None)
+// class FText                        Temp_text_Variable_15                                            (None)
+// class FText                        Temp_text_Variable_16                                            (None)
 // int32                              Temp_int_Variable_1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_17                                            ()
-// class FText                        Temp_text_Variable_18                                            ()
-// class FText                        Temp_text_Variable_19                                            ()
-// class FText                        Temp_text_Variable_20                                            ()
-// class FText                        Temp_text_Variable_21                                            ()
-// class FText                        Temp_text_Variable_22                                            ()
-// class FText                        Temp_text_Variable_23                                            ()
-// class FText                        Temp_text_Variable_24                                            ()
-// class FText                        Temp_text_Variable_25                                            ()
-// class FText                        Temp_text_Variable_26                                            ()
-// class FText                        Temp_text_Variable_27                                            ()
-// class FText                        Temp_text_Variable_28                                            ()
-// class FText                        Temp_text_Variable_29                                            ()
+// class FText                        Temp_text_Variable_17                                            (None)
+// class FText                        Temp_text_Variable_18                                            (None)
+// class FText                        Temp_text_Variable_19                                            (None)
+// class FText                        Temp_text_Variable_20                                            (None)
+// class FText                        Temp_text_Variable_21                                            (None)
+// class FText                        Temp_text_Variable_22                                            (None)
+// class FText                        Temp_text_Variable_23                                            (None)
+// class FText                        Temp_text_Variable_24                                            (None)
+// class FText                        Temp_text_Variable_25                                            (None)
+// class FText                        Temp_text_Variable_26                                            (None)
+// class FText                        Temp_text_Variable_27                                            (None)
+// class FText                        Temp_text_Variable_28                                            (None)
+// class FText                        Temp_text_Variable_29                                            (None)
 // struct FDateTime                   CallFunc_GetTournamentEndTime_ReturnValue                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakDateTime_Year                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakDateTime_Month                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -79,8 +104,8 @@ namespace SDK
 // int32                              CallFunc_BreakDateTime_Minute_2                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakDateTime_Second_2                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakDateTime_Millisecond_2                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
+// class FText                        K2Node_Select_Default                                            (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // struct FDateTime                   CallFunc_GetTournamentBeginTime_ReturnValue_1                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -99,11 +124,11 @@ namespace SDK
 // int32                              CallFunc_BreakDateTime_Minute_4                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakDateTime_Second_4                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakDateTime_Millisecond_4                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            (None)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default_1                                          ()
+// class FText                        K2Node_Select_Default_1                                          (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_2                                          ()
+// class FText                        K2Node_Select_Default_2                                          (None)
 // struct FDateTime                   CallFunc_GetTournamentBeginTime_ReturnValue_2                    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_3                           (HasGetValueTypeHash)
 // int32                              CallFunc_BreakDateTime_Year_5                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -113,17 +138,20 @@ namespace SDK
 // int32                              CallFunc_BreakDateTime_Minute_5                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakDateTime_Second_5                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_BreakDateTime_Millisecond_5                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_3                                          ()
-// class FText                        K2Node_Select_Default_4                                          ()
+// class FText                        K2Node_Select_Default_3                                          (None)
+// class FText                        K2Node_Select_Default_4                                          (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_4                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 void UShowdownTournamentPosterBack_C::GetTournamentDateText(class FText* TournamentDate, class FText Temp_text_Variable, class FText Temp_text_Variable_1, bool Temp_bool_Variable, class FText Temp_text_Variable_2, bool Temp_bool_Variable_1, class FText Temp_text_Variable_3, int32 Temp_int_Variable, class FText Temp_text_Variable_4, class FText Temp_text_Variable_5, class FText Temp_text_Variable_6, class FText Temp_text_Variable_7, class FText Temp_text_Variable_8, class FText Temp_text_Variable_9, class FText Temp_text_Variable_10, class FText Temp_text_Variable_11, class FText Temp_text_Variable_12, class FText Temp_text_Variable_13, class FText Temp_text_Variable_14, class FText Temp_text_Variable_15, class FText Temp_text_Variable_16, int32 Temp_int_Variable_1, class FText Temp_text_Variable_17, class FText Temp_text_Variable_18, class FText Temp_text_Variable_19, class FText Temp_text_Variable_20, class FText Temp_text_Variable_21, class FText Temp_text_Variable_22, class FText Temp_text_Variable_23, class FText Temp_text_Variable_24, class FText Temp_text_Variable_25, class FText Temp_text_Variable_26, class FText Temp_text_Variable_27, class FText Temp_text_Variable_28, class FText Temp_text_Variable_29, const struct FDateTime& CallFunc_GetTournamentEndTime_ReturnValue, int32 CallFunc_BreakDateTime_Year, int32 CallFunc_BreakDateTime_Month, int32 CallFunc_BreakDateTime_Day, int32 CallFunc_BreakDateTime_Hour, int32 CallFunc_BreakDateTime_Minute, int32 CallFunc_BreakDateTime_Second, int32 CallFunc_BreakDateTime_Millisecond, const struct FDateTime& CallFunc_GetTournamentBeginTime_ReturnValue, bool Temp_bool_Variable_2, int32 CallFunc_BreakDateTime_Year_1, int32 CallFunc_BreakDateTime_Month_1, int32 CallFunc_BreakDateTime_Day_1, int32 CallFunc_BreakDateTime_Hour_1, int32 CallFunc_BreakDateTime_Minute_1, int32 CallFunc_BreakDateTime_Second_1, int32 CallFunc_BreakDateTime_Millisecond_1, const struct FDateTime& CallFunc_GetTournamentEndTime_ReturnValue_1, bool CallFunc_EqualEqual_IntInt_ReturnValue, int32 CallFunc_BreakDateTime_Year_2, int32 CallFunc_BreakDateTime_Month_2, int32 CallFunc_BreakDateTime_Day_2, int32 CallFunc_BreakDateTime_Hour_2, int32 CallFunc_BreakDateTime_Minute_2, int32 CallFunc_BreakDateTime_Second_2, int32 CallFunc_BreakDateTime_Millisecond_2, class FText CallFunc_Conv_IntToText_ReturnValue, class FText K2Node_Select_Default, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, const struct FDateTime& CallFunc_GetTournamentBeginTime_ReturnValue_1, const struct FDateTime& CallFunc_GetTournamentEndTime_ReturnValue_2, int32 CallFunc_BreakDateTime_Year_3, int32 CallFunc_BreakDateTime_Month_3, int32 CallFunc_BreakDateTime_Day_3, int32 CallFunc_BreakDateTime_Hour_3, int32 CallFunc_BreakDateTime_Minute_3, int32 CallFunc_BreakDateTime_Second_3, int32 CallFunc_BreakDateTime_Millisecond_3, int32 CallFunc_BreakDateTime_Year_4, int32 CallFunc_BreakDateTime_Month_4, int32 CallFunc_BreakDateTime_Day_4, int32 CallFunc_BreakDateTime_Hour_4, int32 CallFunc_BreakDateTime_Minute_4, int32 CallFunc_BreakDateTime_Second_4, int32 CallFunc_BreakDateTime_Millisecond_4, class FText CallFunc_Conv_IntToText_ReturnValue_1, bool CallFunc_EqualEqual_IntInt_ReturnValue_1, class FText K2Node_Select_Default_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, class FText K2Node_Select_Default_2, const struct FDateTime& CallFunc_GetTournamentBeginTime_ReturnValue_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, int32 CallFunc_BreakDateTime_Year_5, int32 CallFunc_BreakDateTime_Month_5, int32 CallFunc_BreakDateTime_Day_5, int32 CallFunc_BreakDateTime_Hour_5, int32 CallFunc_BreakDateTime_Minute_5, int32 CallFunc_BreakDateTime_Second_5, int32 CallFunc_BreakDateTime_Millisecond_5, class FText K2Node_Select_Default_3, class FText K2Node_Select_Default_4, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ShowdownTournamentPosterBack_C", "GetTournamentDateText");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownTournamentPosterBack_C_GetTournamentDateText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownTournamentPosterBack_C", "GetTournamentDateText");
+
+	Params::UShowdownTournamentPosterBack_C_GetTournamentDateText_Params Parms{};
 
 	Parms.Temp_text_Variable = Temp_text_Variable;
 	Parms.Temp_text_Variable_1 = Temp_text_Variable_1;
@@ -239,12 +267,14 @@ void UShowdownTournamentPosterBack_C::GetTournamentDateText(class FText* Tournam
 
 void UShowdownTournamentPosterBack_C::RefreshDataBP()
 {
-	static auto Func = Class->GetFunction("ShowdownTournamentPosterBack_C", "RefreshDataBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownTournamentPosterBack_C_RefreshDataBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownTournamentPosterBack_C", "RefreshDataBP");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -255,12 +285,14 @@ void UShowdownTournamentPosterBack_C::RefreshDataBP()
 
 void UShowdownTournamentPosterBack_C::EventColorize()
 {
-	static auto Func = Class->GetFunction("ShowdownTournamentPosterBack_C", "EventColorize");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownTournamentPosterBack_C_EventColorize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownTournamentPosterBack_C", "EventColorize");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -271,12 +303,14 @@ void UShowdownTournamentPosterBack_C::EventColorize()
 
 void UShowdownTournamentPosterBack_C::EventPopulateEventWindowData()
 {
-	static auto Func = Class->GetFunction("ShowdownTournamentPosterBack_C", "EventPopulateEventWindowData");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownTournamentPosterBack_C_EventPopulateEventWindowData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownTournamentPosterBack_C", "EventPopulateEventWindowData");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -287,12 +321,14 @@ void UShowdownTournamentPosterBack_C::EventPopulateEventWindowData()
 
 void UShowdownTournamentPosterBack_C::Construct()
 {
-	static auto Func = Class->GetFunction("ShowdownTournamentPosterBack_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownTournamentPosterBack_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownTournamentPosterBack_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -314,14 +350,14 @@ void UShowdownTournamentPosterBack_C::Construct()
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetTournamentId_ReturnValue                             (ZeroConstructor, HasGetValueTypeHash)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor_1                                   ()
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor_2                                   ()
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
-// class FText                        CallFunc_TextToUpper_ReturnValue_1                               ()
-// class FText                        CallFunc_TextToUpper_ReturnValue_2                               ()
-// class FText                        CallFunc_TextToUpper_ReturnValue_3                               ()
-// class FText                        CallFunc_TextToUpper_ReturnValue_4                               ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor_1                                   (None)
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor_2                                   (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue_1                               (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue_2                               (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue_3                               (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue_4                               (None)
 // TArray<class FString>              CallFunc_GetTournamentEvents_ReturnValue                         (ZeroConstructor, ReferenceParm)
 // class FString                      CallFunc_Array_Get_Item                                          (ZeroConstructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -353,9 +389,12 @@ void UShowdownTournamentPosterBack_C::Construct()
 
 void UShowdownTournamentPosterBack_C::ExecuteUbergraph_ShowdownTournamentPosterBack(int32 EntryPoint, class UVerticalBoxSlot* CallFunc_SlotAsVerticalBoxSlot_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Variable, int32 CallFunc_GetChildrenCount_ReturnValue, class UWidget* CallFunc_GetChildAt_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, class UTournamentDateEntry_C* K2Node_DynamicCast_AsTournament_Date_Entry, bool K2Node_DynamicCast_bSuccess, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue_1, const class FString& CallFunc_GetTournamentId_ReturnValue, const struct FSlateColor& K2Node_MakeStruct_SlateColor, const struct FSlateColor& K2Node_MakeStruct_SlateColor_1, const struct FSlateColor& K2Node_MakeStruct_SlateColor_2, class FText CallFunc_TextToUpper_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue_1, class FText CallFunc_TextToUpper_ReturnValue_2, class FText CallFunc_TextToUpper_ReturnValue_3, class FText CallFunc_TextToUpper_ReturnValue_4, TArray<class FString>& CallFunc_GetTournamentEvents_ReturnValue, const class FString& CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, class UTournamentDateEntry_C* CallFunc_Create_ReturnValue, class UUniformGridSlot* CallFunc_AddChildToUniformGrid_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, float Temp_float_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, int32 CallFunc_GetTournamentBestScore_ReturnValue, float K2Node_Select_Default, bool CallFunc_GreaterEqual_IntInt_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, int32 CallFunc_Round_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_1, int32 CallFunc_Percent_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue_1, int32 CallFunc_Divide_IntInt_ReturnValue, int32 K2Node_Select_Default_2, const class FString& CallFunc_GetTournamentId_ReturnValue_1, bool CallFunc_IsMobileGame_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ShowdownTournamentPosterBack_C", "ExecuteUbergraph_ShowdownTournamentPosterBack");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownTournamentPosterBack_C_ExecuteUbergraph_ShowdownTournamentPosterBack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownTournamentPosterBack_C", "ExecuteUbergraph_ShowdownTournamentPosterBack");
+
+	Params::UShowdownTournamentPosterBack_C_ExecuteUbergraph_ShowdownTournamentPosterBack_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_SlotAsVerticalBoxSlot_ReturnValue = CallFunc_SlotAsVerticalBoxSlot_ReturnValue;
@@ -414,6 +453,4 @@ void UShowdownTournamentPosterBack_C::ExecuteUbergraph_ShowdownTournamentPosterB
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

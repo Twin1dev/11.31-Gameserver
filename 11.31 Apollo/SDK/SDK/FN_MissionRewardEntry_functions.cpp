@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass MissionRewardEntry.MissionRewardEntry_C
+// (None)
+
+class UClass* UMissionRewardEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MissionRewardEntry_C");
+
+	return Clss;
+}
+
+
+// MissionRewardEntry_C MissionRewardEntry.Default__MissionRewardEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMissionRewardEntry_C* UMissionRewardEntry_C::GetDefaultObj()
+{
+	static class UMissionRewardEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMissionRewardEntry_C*>(UMissionRewardEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MissionRewardEntry.MissionRewardEntry_C.ShowCompletionCheck
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UMissionRewardEntry_C::ShowCompletionCheck()
 {
-	static auto Func = Class->GetFunction("MissionRewardEntry_C", "ShowCompletionCheck");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissionRewardEntry_C_ShowCompletionCheck_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissionRewardEntry_C", "ShowCompletionCheck");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UMissionRewardEntry_C::ShowCompletionCheck()
 
 void UMissionRewardEntry_C::HideCompletionCheck()
 {
-	static auto Func = Class->GetFunction("MissionRewardEntry_C", "HideCompletionCheck");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissionRewardEntry_C_HideCompletionCheck_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissionRewardEntry_C", "HideCompletionCheck");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UMissionRewardEntry_C::HideCompletionCheck()
 
 void UMissionRewardEntry_C::HideSelectionBorder()
 {
-	static auto Func = Class->GetFunction("MissionRewardEntry_C", "HideSelectionBorder");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissionRewardEntry_C_HideSelectionBorder_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissionRewardEntry_C", "HideSelectionBorder");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -70,9 +101,12 @@ void UMissionRewardEntry_C::HideSelectionBorder()
 
 void UMissionRewardEntry_C::ShowSelectionBorder(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MissionRewardEntry_C", "ShowSelectionBorder");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissionRewardEntry_C_ShowSelectionBorder_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissionRewardEntry_C", "ShowSelectionBorder");
+
+	Params::UMissionRewardEntry_C_ShowSelectionBorder_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -87,12 +121,14 @@ void UMissionRewardEntry_C::ShowSelectionBorder(class UUMGSequencePlayer* CallFu
 
 void UMissionRewardEntry_C::Construct()
 {
-	static auto Func = Class->GetFunction("MissionRewardEntry_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissionRewardEntry_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissionRewardEntry_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -104,9 +140,12 @@ void UMissionRewardEntry_C::Construct()
 
 void UMissionRewardEntry_C::ExecuteUbergraph_MissionRewardEntry(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("MissionRewardEntry_C", "ExecuteUbergraph_MissionRewardEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissionRewardEntry_C_ExecuteUbergraph_MissionRewardEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissionRewardEntry_C", "ExecuteUbergraph_MissionRewardEntry");
+
+	Params::UMissionRewardEntry_C_ExecuteUbergraph_MissionRewardEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -116,6 +155,4 @@ void UMissionRewardEntry_C::ExecuteUbergraph_MissionRewardEntry(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

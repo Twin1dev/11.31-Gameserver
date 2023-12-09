@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ShowdownEventTile.ShowdownEventTile_C
+// (None)
+
+class UClass* UShowdownEventTile_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ShowdownEventTile_C");
+
+	return Clss;
+}
+
+
+// ShowdownEventTile_C ShowdownEventTile.Default__ShowdownEventTile_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UShowdownEventTile_C* UShowdownEventTile_C::GetDefaultObj()
+{
+	static class UShowdownEventTile_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UShowdownEventTile_C*>(UShowdownEventTile_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ShowdownEventTile.ShowdownEventTile_C.SetData
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UShowdownEventTile_C::SetData(const class FString& TournamentInfo, const class FString& EventInfo)
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "SetData");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_SetData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "SetData");
+
+	Params::UShowdownEventTile_C_SetData_Params Parms{};
 
 	Parms.TournamentInfo = TournamentInfo;
 	Parms.EventInfo = EventInfo;
@@ -41,12 +69,14 @@ void UShowdownEventTile_C::SetData(const class FString& TournamentInfo, const cl
 
 void UShowdownEventTile_C::Construct()
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,12 +87,14 @@ void UShowdownEventTile_C::Construct()
 
 void UShowdownEventTile_C::BP_OnClicked()
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_BP_OnClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnClicked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -74,9 +106,12 @@ void UShowdownEventTile_C::BP_OnClicked()
 
 void UShowdownEventTile_C::EventIntro(int32 Index)
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "EventIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_EventIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "EventIntro");
+
+	Params::UShowdownEventTile_C_EventIntro_Params Parms{};
 
 	Parms.Index = Index;
 
@@ -92,9 +127,12 @@ void UShowdownEventTile_C::EventIntro(int32 Index)
 
 void UShowdownEventTile_C::EventResize(bool Out)
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "EventResize");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_EventResize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "EventResize");
+
+	Params::UShowdownEventTile_C_EventResize_Params Parms{};
 
 	Parms.Out = Out;
 
@@ -109,12 +147,14 @@ void UShowdownEventTile_C::EventResize(bool Out)
 
 void UShowdownEventTile_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -125,12 +165,14 @@ void UShowdownEventTile_C::BP_OnHovered()
 
 void UShowdownEventTile_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -141,12 +183,14 @@ void UShowdownEventTile_C::BP_OnUnhovered()
 
 void UShowdownEventTile_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_BP_OnSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnSelected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -157,12 +201,14 @@ void UShowdownEventTile_C::BP_OnSelected()
 
 void UShowdownEventTile_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnDeselected");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_BP_OnDeselected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnDeselected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -174,9 +220,12 @@ void UShowdownEventTile_C::BP_OnDeselected()
 
 void UShowdownEventTile_C::OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent)
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "OnAddedToFocusPath");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_OnAddedToFocusPath_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "OnAddedToFocusPath");
+
+	Params::UShowdownEventTile_C_OnAddedToFocusPath_Params Parms{};
 
 	Parms.InFocusEvent = InFocusEvent;
 
@@ -192,9 +241,12 @@ void UShowdownEventTile_C::OnAddedToFocusPath(const struct FFocusEvent& InFocusE
 
 void UShowdownEventTile_C::OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent)
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "OnRemovedFromFocusPath");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_OnRemovedFromFocusPath_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "OnRemovedFromFocusPath");
+
+	Params::UShowdownEventTile_C_OnRemovedFromFocusPath_Params Parms{};
 
 	Parms.InFocusEvent = InFocusEvent;
 
@@ -210,9 +262,12 @@ void UShowdownEventTile_C::OnRemovedFromFocusPath(const struct FFocusEvent& InFo
 
 void UShowdownEventTile_C::EventSetState(enum class EFortShowdownEventState EventState)
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "EventSetState");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_EventSetState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "EventSetState");
+
+	Params::UShowdownEventTile_C_EventSetState_Params Parms{};
 
 	Parms.EventState = EventState;
 
@@ -228,9 +283,12 @@ void UShowdownEventTile_C::EventSetState(enum class EFortShowdownEventState Even
 
 void UShowdownEventTile_C::EventColorize(const struct FFortTournamentDisplayInfo& DisplayInfo)
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "EventColorize");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_EventColorize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "EventColorize");
+
+	Params::UShowdownEventTile_C_EventColorize_Params Parms{};
 
 	Parms.DisplayInfo = DisplayInfo;
 
@@ -246,9 +304,12 @@ void UShowdownEventTile_C::EventColorize(const struct FFortTournamentDisplayInfo
 
 void UShowdownEventTile_C::EventColorizeDispatch(const struct FFortTournamentDisplayInfo& DisplayInfo)
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "EventColorizeDispatch");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_EventColorizeDispatch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "EventColorizeDispatch");
+
+	Params::UShowdownEventTile_C_EventColorizeDispatch_Params Parms{};
 
 	Parms.DisplayInfo = DisplayInfo;
 
@@ -263,12 +324,14 @@ void UShowdownEventTile_C::EventColorizeDispatch(const struct FFortTournamentDis
 
 void UShowdownEventTile_C::EventMultiRoundStyle()
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "EventMultiRoundStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_EventMultiRoundStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "EventMultiRoundStyle");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -385,10 +448,10 @@ void UShowdownEventTile_C::EventMultiRoundStyle()
 // float                              CallFunc_Subtract_FloatFloat_ReturnValue_7                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_5                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              K2Node_Select_Default_4                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortTournamentDisplayInfo  K2Node_CustomEvent_DisplayInfo_1                                 ()
+// struct FFortTournamentDisplayInfo  K2Node_CustomEvent_DisplayInfo_1                                 (None)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_13                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Temp_float_Variable_7                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortTournamentDisplayInfo  K2Node_CustomEvent_DisplayInfo                                   ()
+// struct FFortTournamentDisplayInfo  K2Node_CustomEvent_DisplayInfo                                   (None)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_6                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              Temp_float_Variable_8                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -418,9 +481,12 @@ void UShowdownEventTile_C::EventMultiRoundStyle()
 
 void UShowdownEventTile_C::ExecuteUbergraph_ShowdownEventTile(int32 EntryPoint, float Temp_float_Variable, bool Temp_bool_Variable, float Temp_float_Variable_1, float Temp_float_Variable_2, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, float Temp_float_Variable_3, bool Temp_bool_Variable_3, int32 K2Node_CustomEvent_Index, float CallFunc_Multiply_IntFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool K2Node_CustomEvent_Out, float CallFunc_GetEndTime_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, float CallFunc_PauseAnimation_ReturnValue, float CallFunc_GetStartTime_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_GetEndTime_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_GetStartTime_ReturnValue_1, float CallFunc_PauseAnimation_ReturnValue_2, float CallFunc_PauseAnimation_ReturnValue_3, float CallFunc_PauseAnimation_ReturnValue_4, float CallFunc_PauseAnimation_ReturnValue_5, bool CallFunc_LessEqual_FloatFloat_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, float CallFunc_GetEndTime_ReturnValue_2, float CallFunc_GetStartTime_ReturnValue_2, float CallFunc_Subtract_FloatFloat_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue_2, float K2Node_Select_Default, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_4, float CallFunc_Add_FloatFloat_ReturnValue_2, float CallFunc_GetEndTime_ReturnValue_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_5, float CallFunc_Subtract_FloatFloat_ReturnValue_2, float K2Node_Select_Default_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_6, const struct FFocusEvent& K2Node_Event_InFocusEvent_1, float CallFunc_PauseAnimation_ReturnValue_6, float CallFunc_GetStartTime_ReturnValue_3, float CallFunc_PauseAnimation_ReturnValue_7, bool CallFunc_LessEqual_FloatFloat_ReturnValue_3, float CallFunc_Add_FloatFloat_ReturnValue_3, float CallFunc_GetEndTime_ReturnValue_4, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_7, float CallFunc_Subtract_FloatFloat_ReturnValue_3, float CallFunc_PauseAnimation_ReturnValue_8, float CallFunc_GetStartTime_ReturnValue_4, float CallFunc_PauseAnimation_ReturnValue_9, bool CallFunc_LessEqual_FloatFloat_ReturnValue_4, float CallFunc_Add_FloatFloat_ReturnValue_4, float CallFunc_GetEndTime_ReturnValue_5, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_8, float CallFunc_Subtract_FloatFloat_ReturnValue_4, const struct FFocusEvent& K2Node_Event_InFocusEvent, enum class EFortShowdownEventState K2Node_CustomEvent_EventState, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_3, bool CallFunc_EqualEqual_ByteByte_ReturnValue_4, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue_2, bool CallFunc_EqualEqual_ByteByte_ReturnValue_5, bool CallFunc_BooleanOR_ReturnValue_3, float Temp_float_Variable_4, float Temp_float_Variable_5, float CallFunc_PauseAnimation_ReturnValue_10, float CallFunc_GetStartTime_ReturnValue_5, float CallFunc_PauseAnimation_ReturnValue_11, bool CallFunc_LessEqual_FloatFloat_ReturnValue_5, float CallFunc_Add_FloatFloat_ReturnValue_5, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_9, float CallFunc_GetEndTime_ReturnValue_6, bool Temp_bool_Variable_4, float CallFunc_Subtract_FloatFloat_ReturnValue_5, float K2Node_Select_Default_2, float K2Node_Select_Default_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_10, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, float Temp_float_Variable_6, float CallFunc_PauseAnimation_ReturnValue_12, float CallFunc_GetStartTime_ReturnValue_6, float CallFunc_PauseAnimation_ReturnValue_13, bool CallFunc_LessEqual_FloatFloat_ReturnValue_6, float CallFunc_Add_FloatFloat_ReturnValue_6, float CallFunc_GetEndTime_ReturnValue_7, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_11, float CallFunc_Subtract_FloatFloat_ReturnValue_6, float CallFunc_PauseAnimation_ReturnValue_14, float CallFunc_GetStartTime_ReturnValue_7, float CallFunc_PauseAnimation_ReturnValue_15, bool CallFunc_LessEqual_FloatFloat_ReturnValue_7, float CallFunc_Add_FloatFloat_ReturnValue_7, float CallFunc_GetEndTime_ReturnValue_8, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_12, float CallFunc_Subtract_FloatFloat_ReturnValue_7, bool Temp_bool_Variable_5, float K2Node_Select_Default_4, const struct FFortTournamentDisplayInfo& K2Node_CustomEvent_DisplayInfo_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_13, float Temp_float_Variable_7, const struct FFortTournamentDisplayInfo& K2Node_CustomEvent_DisplayInfo, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, bool Temp_bool_Variable_6, float Temp_float_Variable_8, float K2Node_Select_Default_5, bool Temp_bool_Variable_7, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_14, float Temp_float_Variable_9, float K2Node_Select_Default_6, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_15, bool Temp_bool_Variable_8, float K2Node_Select_Default_7, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_16, float CallFunc_PauseAnimation_ReturnValue_16, float CallFunc_GetStartTime_ReturnValue_8, float CallFunc_PauseAnimation_ReturnValue_17, bool CallFunc_LessEqual_FloatFloat_ReturnValue_8, float CallFunc_Add_FloatFloat_ReturnValue_8, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_17, float CallFunc_GetEndTime_ReturnValue_9, float Temp_float_Variable_10, float CallFunc_Subtract_FloatFloat_ReturnValue_8, float K2Node_Select_Default_8, bool Temp_bool_Variable_9, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_18, float K2Node_Select_Default_9, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_19)
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "ExecuteUbergraph_ShowdownEventTile");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_ExecuteUbergraph_ShowdownEventTile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "ExecuteUbergraph_ShowdownEventTile");
+
+	Params::UShowdownEventTile_C_ExecuteUbergraph_ShowdownEventTile_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_float_Variable = Temp_float_Variable;
@@ -573,17 +639,17 @@ void UShowdownEventTile_C::ExecuteUbergraph_ShowdownEventTile(int32 EntryPoint, 
 
 void UShowdownEventTile_C::OnWindowSelected__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("ShowdownEventTile_C", "OnWindowSelected__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTile_C_OnWindowSelected__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTile_C", "OnWindowSelected__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

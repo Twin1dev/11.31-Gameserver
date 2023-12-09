@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -60,11 +57,8 @@ public:
 	UMulticastInlineDelegateProperty_            ProfileSelectedFromSelector;                       // 0x398(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UEventPlayerStatProfileSelector_C*     ProfileSelectorInstance;                           // 0x3A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("EventLeaderboardEntryDetails_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UEventLeaderboardEntryDetails_C* GetDefaultObj();
 
 	void ShowDetails(class UFortEventLeaderboardEntryData* EntryData, int32 TotalScoredPoints, enum class ESlateVisibility Temp_byte_Variable, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility Temp_byte_Variable_4, int32 Temp_int_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class FText Temp_text_Variable_2, class FText Temp_text_Variable_3, class FText Temp_text_Variable_4, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_5, enum class ESlateVisibility Temp_byte_Variable_6, int32 CallFunc_GetTotalPointsForCategory_ReturnValue, int32 CallFunc_GetTotalPointsForCategory_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_7, int32 CallFunc_GetTotalMatchesPlayed_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, bool Temp_bool_Variable_3, int32 CallFunc_GetTotalPointsForCategory_ReturnValue_2, int32 CallFunc_GetTotalPointsForCategory_ReturnValue_3, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, enum class ESlateVisibility Temp_byte_Variable_8, class FText CallFunc_GetTeamDisplayNameText_ReturnValue, int32 CallFunc_GetNumTeammates_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText K2Node_Select_Default, class FText CallFunc_Format_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_1, enum class ESlateVisibility Temp_byte_Variable_9, const class FString& CallFunc_GetLiveSessionId_ReturnValue, bool CallFunc_EqualEqual_StrStr_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_2, enum class ESlateVisibility K2Node_Select_Default_2, bool Temp_bool_Variable_4, int32 CallFunc_GetTotalVictoryRoyales_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_3, float CallFunc_GetAveragePlacement_ReturnValue, int32 CallFunc_GetTotalEliminations_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_4, float CallFunc_GetAverageMatchScore_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, int32 CallFunc_GetTotalMatchesPlayed_ReturnValue_1, float CallFunc_Conv_IntToFloat_ReturnValue_5, int32 CallFunc_GetTotalPointsForCategory_ReturnValue_4, int32 CallFunc_GetTotalPointsForCategory_ReturnValue_5, float CallFunc_Conv_IntToFloat_ReturnValue_6, float CallFunc_Conv_IntToFloat_ReturnValue_7, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue_2, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, class FText CallFunc_Conv_FloatToText_ReturnValue, class FText CallFunc_Conv_FloatToText_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_2, class FText CallFunc_Format_ReturnValue_1, class FText CallFunc_Format_ReturnValue_2, int32 CallFunc_FFloor_ReturnValue, int32 CallFunc_FFloor_ReturnValue_1, float CallFunc_Conv_IntToFloat_ReturnValue_8, float CallFunc_Conv_IntToFloat_ReturnValue_9, float CallFunc_Divide_FloatFloat_ReturnValue_3, float CallFunc_Divide_FloatFloat_ReturnValue_4, bool CallFunc_Less_FloatFloat_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_3, enum class ESlateVisibility K2Node_Select_Default_4, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, int32 CallFunc_GetScore_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_5);
 	void Construct();
@@ -83,6 +77,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

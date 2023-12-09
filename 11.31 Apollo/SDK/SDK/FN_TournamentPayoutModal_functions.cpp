@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TournamentPayoutModal.TournamentPayoutModal_C
+// (None)
+
+class UClass* UTournamentPayoutModal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TournamentPayoutModal_C");
+
+	return Clss;
+}
+
+
+// TournamentPayoutModal_C TournamentPayoutModal.Default__TournamentPayoutModal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTournamentPayoutModal_C* UTournamentPayoutModal_C::GetDefaultObj()
+{
+	static class UTournamentPayoutModal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTournamentPayoutModal_C*>(UTournamentPayoutModal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TournamentPayoutModal.TournamentPayoutModal_C.EmptyFunction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UTournamentPayoutModal_C::EmptyFunction(bool* Handled)
 {
-	static auto Func = Class->GetFunction("TournamentPayoutModal_C", "EmptyFunction");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentPayoutModal_C_EmptyFunction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentPayoutModal_C", "EmptyFunction");
+
+	Params::UTournamentPayoutModal_C_EmptyFunction_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -41,12 +69,14 @@ void UTournamentPayoutModal_C::EmptyFunction(bool* Handled)
 
 void UTournamentPayoutModal_C::NotifyNoPayouts()
 {
-	static auto Func = Class->GetFunction("TournamentPayoutModal_C", "NotifyNoPayouts");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentPayoutModal_C_NotifyNoPayouts_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentPayoutModal_C", "NotifyNoPayouts");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -58,9 +88,12 @@ void UTournamentPayoutModal_C::NotifyNoPayouts()
 
 void UTournamentPayoutModal_C::BndEvt__BackButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TournamentPayoutModal_C", "BndEvt__BackButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentPayoutModal_C_BndEvt__BackButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentPayoutModal_C", "BndEvt__BackButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UTournamentPayoutModal_C_BndEvt__BackButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -77,9 +110,12 @@ void UTournamentPayoutModal_C::BndEvt__BackButton_K2Node_ComponentBoundEvent_0_C
 
 void UTournamentPayoutModal_C::Init(const class FString& EventWindowId, const class FString& TournamentId)
 {
-	static auto Func = Class->GetFunction("TournamentPayoutModal_C", "Init");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentPayoutModal_C_Init_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentPayoutModal_C", "Init");
+
+	Params::UTournamentPayoutModal_C_Init_Params Parms{};
 
 	Parms.EventWindowId = EventWindowId;
 	Parms.TournamentId = TournamentId;
@@ -95,12 +131,14 @@ void UTournamentPayoutModal_C::Init(const class FString& EventWindowId, const cl
 
 void UTournamentPayoutModal_C::EventIntro()
 {
-	static auto Func = Class->GetFunction("TournamentPayoutModal_C", "EventIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentPayoutModal_C_EventIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentPayoutModal_C", "EventIntro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -112,9 +150,12 @@ void UTournamentPayoutModal_C::EventIntro()
 
 void UTournamentPayoutModal_C::EventColorize(const struct FFortTournamentDisplayInfo& TournamentDisplayInfo)
 {
-	static auto Func = Class->GetFunction("TournamentPayoutModal_C", "EventColorize");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentPayoutModal_C_EventColorize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentPayoutModal_C", "EventColorize");
+
+	Params::UTournamentPayoutModal_C_EventColorize_Params Parms{};
 
 	Parms.TournamentDisplayInfo = TournamentDisplayInfo;
 
@@ -130,9 +171,12 @@ void UTournamentPayoutModal_C::EventColorize(const struct FFortTournamentDisplay
 
 void UTournamentPayoutModal_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TournamentPayoutModal_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentPayoutModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentPayoutModal_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UTournamentPayoutModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -147,12 +191,14 @@ void UTournamentPayoutModal_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEv
 
 void UTournamentPayoutModal_C::Construct()
 {
-	static auto Func = Class->GetFunction("TournamentPayoutModal_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentPayoutModal_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentPayoutModal_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -167,7 +213,7 @@ void UTournamentPayoutModal_C::Construct()
 // class FString                      K2Node_CustomEvent_TournamentId                                  (ZeroConstructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortTournamentDisplayInfo  K2Node_CustomEvent_TournamentDisplayInfo                         ()
+// struct FFortTournamentDisplayInfo  K2Node_CustomEvent_TournamentDisplayInfo                         (None)
 // struct FLinearColor                K2Node_MakeStruct_LinearColor                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -177,9 +223,12 @@ void UTournamentPayoutModal_C::Construct()
 
 void UTournamentPayoutModal_C::ExecuteUbergraph_TournamentPayoutModal(int32 EntryPoint, bool CallFunc_IsUsingTouch_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, const class FString& K2Node_CustomEvent_EventWindowId, const class FString& K2Node_CustomEvent_TournamentId, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, const struct FFortTournamentDisplayInfo& K2Node_CustomEvent_TournamentDisplayInfo, const struct FLinearColor& K2Node_MakeStruct_LinearColor, bool Temp_bool_Variable, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_IsMobileGame_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("TournamentPayoutModal_C", "ExecuteUbergraph_TournamentPayoutModal");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentPayoutModal_C", "ExecuteUbergraph_TournamentPayoutModal");
+
+	Params::UTournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsUsingTouch_ReturnValue = CallFunc_IsUsingTouch_ReturnValue;
@@ -207,12 +256,14 @@ void UTournamentPayoutModal_C::ExecuteUbergraph_TournamentPayoutModal(int32 Entr
 
 void UTournamentPayoutModal_C::NoPayout__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("TournamentPayoutModal_C", "NoPayout__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentPayoutModal_C_NoPayout__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentPayoutModal_C", "NoPayout__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -223,17 +274,17 @@ void UTournamentPayoutModal_C::NoPayout__DelegateSignature()
 
 void UTournamentPayoutModal_C::CallEventBack__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("TournamentPayoutModal_C", "CallEventBack__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentPayoutModal_C_CallEventBack__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentPayoutModal_C", "CallEventBack__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

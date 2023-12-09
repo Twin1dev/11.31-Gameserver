@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_FloppingRabbit_Weap_Athena.B_FloppingRabbit_Weap_Athena_C
+// (Actor)
+
+class UClass* AB_FloppingRabbit_Weap_Athena_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_FloppingRabbit_Weap_Athena_C");
+
+	return Clss;
+}
+
+
+// B_FloppingRabbit_Weap_Athena_C B_FloppingRabbit_Weap_Athena.Default__B_FloppingRabbit_Weap_Athena_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_FloppingRabbit_Weap_Athena_C* AB_FloppingRabbit_Weap_Athena_C::GetDefaultObj()
+{
+	static class AB_FloppingRabbit_Weap_Athena_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_FloppingRabbit_Weap_Athena_C*>(AB_FloppingRabbit_Weap_Athena_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_FloppingRabbit_Weap_Athena.B_FloppingRabbit_Weap_Athena_C.OnRep_OneHandGrip
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void AB_FloppingRabbit_Weap_Athena_C::OnRep_OneHandGrip()
 {
-	static auto Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "OnRep_OneHandGrip");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_FloppingRabbit_Weap_Athena_C_OnRep_OneHandGrip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "OnRep_OneHandGrip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AB_FloppingRabbit_Weap_Athena_C::OnRep_OneHandGrip()
 
 void AB_FloppingRabbit_Weap_Athena_C::OnRep_HideBobber()
 {
-	static auto Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "OnRep_HideBobber");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_FloppingRabbit_Weap_Athena_C_OnRep_HideBobber_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "OnRep_HideBobber");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void AB_FloppingRabbit_Weap_Athena_C::OnRep_HideBobber()
 
 void AB_FloppingRabbit_Weap_Athena_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_FloppingRabbit_Weap_Athena_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void AB_FloppingRabbit_Weap_Athena_C::ReceiveBeginPlay()
 
 void AB_FloppingRabbit_Weap_Athena_C::K2_OnUnEquip()
 {
-	static auto Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "K2_OnUnEquip");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_FloppingRabbit_Weap_Athena_C_K2_OnUnEquip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "K2_OnUnEquip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -85,12 +118,14 @@ void AB_FloppingRabbit_Weap_Athena_C::K2_OnUnEquip()
 
 void AB_FloppingRabbit_Weap_Athena_C::OnWeaponAttached()
 {
-	static auto Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "OnWeaponAttached");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_FloppingRabbit_Weap_Athena_C_OnWeaponAttached_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "OnWeaponAttached");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -101,12 +136,14 @@ void AB_FloppingRabbit_Weap_Athena_C::OnWeaponAttached()
 
 void AB_FloppingRabbit_Weap_Athena_C::ForceKillFishing()
 {
-	static auto Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "ForceKillFishing");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_FloppingRabbit_Weap_Athena_C_ForceKillFishing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "ForceKillFishing");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -120,9 +157,12 @@ void AB_FloppingRabbit_Weap_Athena_C::ForceKillFishing()
 
 void AB_FloppingRabbit_Weap_Athena_C::ExecuteUbergraph_B_FloppingRabbit_Weap_Athena(int32 EntryPoint, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "ExecuteUbergraph_B_FloppingRabbit_Weap_Athena");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_FloppingRabbit_Weap_Athena_C_ExecuteUbergraph_B_FloppingRabbit_Weap_Athena_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_FloppingRabbit_Weap_Athena_C", "ExecuteUbergraph_B_FloppingRabbit_Weap_Athena");
+
+	Params::AB_FloppingRabbit_Weap_Athena_C_ExecuteUbergraph_B_FloppingRabbit_Weap_Athena_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -134,6 +174,4 @@ void AB_FloppingRabbit_Weap_Athena_C::ExecuteUbergraph_B_FloppingRabbit_Weap_Ath
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

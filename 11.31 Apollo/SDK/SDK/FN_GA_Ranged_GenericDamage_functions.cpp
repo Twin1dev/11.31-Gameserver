@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GA_Ranged_GenericDamage.GA_Ranged_GenericDamage_C
+// (None)
+
+class UClass* UGA_Ranged_GenericDamage_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Ranged_GenericDamage_C");
+
+	return Clss;
+}
+
+
+// GA_Ranged_GenericDamage_C GA_Ranged_GenericDamage.Default__GA_Ranged_GenericDamage_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Ranged_GenericDamage_C* UGA_Ranged_GenericDamage_C::GetDefaultObj()
+{
+	static class UGA_Ranged_GenericDamage_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Ranged_GenericDamage_C*>(UGA_Ranged_GenericDamage_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GA_Ranged_GenericDamage.GA_Ranged_GenericDamage_C.GetEventData
@@ -29,16 +54,19 @@ namespace SDK
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AFortWeapon*                 CallFunc_GetCurrentSourceWeapon_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
-// struct FGameplayTagContainer       CallFunc_GetWeaponDataGameplayTags_GameplayTags                  ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              (None)
+// struct FGameplayTagContainer       CallFunc_GetWeaponDataGameplayTags_GameplayTags                  (None)
 // bool                               CallFunc_WeaponDataIsValid_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UGA_Ranged_GenericDamage_C::GetEventData(const struct FGameplayTag& EventTag, struct FGameplayEventData* GameplayEventData, const struct FGameplayTagContainer& GT_TargetTags, const struct FGameplayTagContainer& GT_InstigatorTags, class AActor* CallFunc_GetOwningActorFromActorInfo_ReturnValue, class AFortPlayerState* K2Node_DynamicCast_AsFort_Player_State, bool K2Node_DynamicCast_bSuccess, class AFortPlayerPawn* CallFunc_GetCurrentPawn_ReturnValue, bool CallFunc_IsValid_ReturnValue, class AFortWeapon* CallFunc_GetCurrentSourceWeapon_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData, const struct FGameplayTagContainer& CallFunc_GetWeaponDataGameplayTags_GameplayTags, bool CallFunc_WeaponDataIsValid_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Ranged_GenericDamage_C", "GetEventData");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Ranged_GenericDamage_C_GetEventData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Ranged_GenericDamage_C", "GetEventData");
+
+	Params::UGA_Ranged_GenericDamage_C_GetEventData_Params Parms{};
 
 	Parms.EventTag = EventTag;
 	Parms.GT_TargetTags = GT_TargetTags;
@@ -58,7 +86,7 @@ void UGA_Ranged_GenericDamage_C::GetEventData(const struct FGameplayTag& EventTa
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (GameplayEventData != nullptr)
-		*GameplayEventData = Parms.GameplayEventData;
+		*GameplayEventData = std::move(Parms.GameplayEventData);
 
 }
 
@@ -66,13 +94,16 @@ void UGA_Ranged_GenericDamage_C::GetEventData(const struct FGameplayTag& EventTa
 // Function GA_Ranged_GenericDamage.GA_Ranged_GenericDamage_C.K2_CommitExecute
 // (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayEventData          CallFunc_GetEventData_GameplayEventData                          ()
+// struct FGameplayEventData          CallFunc_GetEventData_GameplayEventData                          (None)
 
 void UGA_Ranged_GenericDamage_C::K2_CommitExecute(const struct FGameplayEventData& CallFunc_GetEventData_GameplayEventData)
 {
-	static auto Func = Class->GetFunction("GA_Ranged_GenericDamage_C", "K2_CommitExecute");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Ranged_GenericDamage_C_K2_CommitExecute_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Ranged_GenericDamage_C", "K2_CommitExecute");
+
+	Params::UGA_Ranged_GenericDamage_C_K2_CommitExecute_Params Parms{};
 
 	Parms.CallFunc_GetEventData_GameplayEventData = CallFunc_GetEventData_GameplayEventData;
 
@@ -82,6 +113,4 @@ void UGA_Ranged_GenericDamage_C::K2_CommitExecute(const struct FGameplayEventDat
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_ThrowConsumable.GA_ThrowConsumable_C
+// (None)
+
+class UClass* UGA_ThrowConsumable_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_ThrowConsumable_C");
+
+	return Clss;
+}
+
+
+// GA_ThrowConsumable_C GA_ThrowConsumable.Default__GA_ThrowConsumable_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_ThrowConsumable_C* UGA_ThrowConsumable_C::GetDefaultObj()
+{
+	static class UGA_ThrowConsumable_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_ThrowConsumable_C*>(UGA_ThrowConsumable_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.ShouldOnlyShowTrajectoryOnUse
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 bool UGA_ThrowConsumable_C::ShouldOnlyShowTrajectoryOnUse()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "ShouldOnlyShowTrajectoryOnUse");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_ShouldOnlyShowTrajectoryOnUse_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "ShouldOnlyShowTrajectoryOnUse");
+
+	Params::UGA_ThrowConsumable_C_ShouldOnlyShowTrajectoryOnUse_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -47,9 +75,12 @@ bool UGA_ThrowConsumable_C::ShouldOnlyShowTrajectoryOnUse()
 
 class AFortProjectileTrajectory* UGA_ThrowConsumable_C::SpawnTrajectoryIndicator(bool bSpawnOnEquip, bool CallFunc_IsValid_ReturnValue, class AFortPlayerPawn* CallFunc_GetOwningPlayer_Player_Pawn, bool CallFunc_IsLocallyControlled_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "SpawnTrajectoryIndicator");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_SpawnTrajectoryIndicator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "SpawnTrajectoryIndicator");
+
+	Params::UGA_ThrowConsumable_C_SpawnTrajectoryIndicator_Params Parms{};
 
 	Parms.bSpawnOnEquip = bSpawnOnEquip;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -72,9 +103,12 @@ class AFortProjectileTrajectory* UGA_ThrowConsumable_C::SpawnTrajectoryIndicator
 
 TSubclassOf<class AFortProjectileTrajectory> UGA_ThrowConsumable_C::GetProjectileTrajectoryActor()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "GetProjectileTrajectoryActor");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_GetProjectileTrajectoryActor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "GetProjectileTrajectoryActor");
+
+	Params::UGA_ThrowConsumable_C_GetProjectileTrajectoryActor_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -108,9 +142,12 @@ TSubclassOf<class AFortProjectileTrajectory> UGA_ThrowConsumable_C::GetProjectil
 
 void UGA_ThrowConsumable_C::GetProjectileTrajectoryPoints(TArray<struct FVector>* OutSplinePoints, TArray<struct FVector>* OutSplineTangents, struct FHitResult* OutHitResult, const struct FVector& LocalVelocity, const struct FVector& LocalLocation, class AFortPlayerPawn* LocalPawn, bool CallFunc_NotEqual_NameName_ReturnValue, const struct FHitResult& CallFunc_CalculateProjectileTrajectorySplineWithHit_OutHitResult, TArray<struct FVector>& CallFunc_CalculateProjectileTrajectorySplineWithHit_OutSplinePoints, TArray<struct FVector>& CallFunc_CalculateProjectileTrajectorySplineWithHit_OutSplineTangents, class AFortPlayerPawn* CallFunc_GetOwningPlayer_Player_Pawn, const struct FHitResult& CallFunc_CalculateProjectileTrajectorySplineWithHitProfile_OutHitResult, TArray<struct FVector>& CallFunc_CalculateProjectileTrajectorySplineWithHitProfile_OutSplinePoints, TArray<struct FVector>& CallFunc_CalculateProjectileTrajectorySplineWithHitProfile_OutSplineTangents, const struct FVector& CallFunc_GetSpawnLocationAndRotation_Location, const struct FRotator& CallFunc_GetSpawnLocationAndRotation_Rotation, const struct FVector& CallFunc_Conv_RotatorToVector_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "GetProjectileTrajectoryPoints");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_GetProjectileTrajectoryPoints_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "GetProjectileTrajectoryPoints");
+
+	Params::UGA_ThrowConsumable_C_GetProjectileTrajectoryPoints_Params Parms{};
 
 	Parms.LocalVelocity = LocalVelocity;
 	Parms.LocalLocation = LocalLocation;
@@ -131,13 +168,13 @@ void UGA_ThrowConsumable_C::GetProjectileTrajectoryPoints(TArray<struct FVector>
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (OutSplinePoints != nullptr)
-		*OutSplinePoints = Parms.OutSplinePoints;
+		*OutSplinePoints = std::move(Parms.OutSplinePoints);
 
 	if (OutSplineTangents != nullptr)
-		*OutSplineTangents = Parms.OutSplineTangents;
+		*OutSplineTangents = std::move(Parms.OutSplineTangents);
 
 	if (OutHitResult != nullptr)
-		*OutHitResult = Parms.OutHitResult;
+		*OutHitResult = std::move(Parms.OutHitResult);
 
 }
 
@@ -155,9 +192,12 @@ void UGA_ThrowConsumable_C::GetProjectileTrajectoryPoints(TArray<struct FVector>
 
 void UGA_ThrowConsumable_C::GetProjectileInitialGravityScaleToUse(float* GravityScaleToUse, const class FString& GetProjectileInitialGravityScaleContext, float CallFunc_GetValueAtLevel_ReturnValue, bool CallFunc_IsValidClass_ReturnValue, float CallFunc_EvaluateCurveTableRow_OutXY, bool CallFunc_EvaluateCurveTableRow_ReturnValue, bool CallFunc_IsCurveTableRowValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "GetProjectileInitialGravityScaleToUse");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "GetProjectileInitialGravityScaleToUse");
+
+	Params::UGA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse_Params Parms{};
 
 	Parms.GetProjectileInitialGravityScaleContext = GetProjectileInitialGravityScaleContext;
 	Parms.CallFunc_GetValueAtLevel_ReturnValue = CallFunc_GetValueAtLevel_ReturnValue;
@@ -187,9 +227,12 @@ void UGA_ThrowConsumable_C::GetProjectileInitialGravityScaleToUse(float* Gravity
 
 void UGA_ThrowConsumable_C::GetProjectileInitialSpeedToUse(float* ProjectileSpeedToUse, const class FString& GetProjectileInitialSpeedToUseContext, float CallFunc_GetValueAtLevel_ReturnValue, bool CallFunc_IsValidClass_ReturnValue, float CallFunc_EvaluateCurveTableRow_OutXY, bool CallFunc_EvaluateCurveTableRow_ReturnValue, bool CallFunc_IsCurveTableRowValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "GetProjectileInitialSpeedToUse");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_GetProjectileInitialSpeedToUse_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "GetProjectileInitialSpeedToUse");
+
+	Params::UGA_ThrowConsumable_C_GetProjectileInitialSpeedToUse_Params Parms{};
 
 	Parms.GetProjectileInitialSpeedToUseContext = GetProjectileInitialSpeedToUseContext;
 	Parms.CallFunc_GetValueAtLevel_ReturnValue = CallFunc_GetValueAtLevel_ReturnValue;
@@ -212,12 +255,14 @@ void UGA_ThrowConsumable_C::GetProjectileInitialSpeedToUse(float* ProjectileSpee
 
 void UGA_ThrowConsumable_C::CleanupTrajectory()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "CleanupTrajectory");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_CleanupTrajectory_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "CleanupTrajectory");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -229,9 +274,12 @@ void UGA_ThrowConsumable_C::CleanupTrajectory()
 
 void UGA_ThrowConsumable_C::PostThrowCleanup(bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "PostThrowCleanup");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_PostThrowCleanup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "PostThrowCleanup");
+
+	Params::UGA_ThrowConsumable_C_PostThrowCleanup_Params Parms{};
 
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 
@@ -250,9 +298,12 @@ void UGA_ThrowConsumable_C::PostThrowCleanup(bool CallFunc_Not_PreBool_ReturnVal
 
 void UGA_ThrowConsumable_C::UpdateTrajectorySpline(TArray<struct FVector>& CallFunc_GetProjectileTrajectoryPoints_OutSplinePoints, TArray<struct FVector>& CallFunc_GetProjectileTrajectoryPoints_OutSplineTangents, const struct FHitResult& CallFunc_GetProjectileTrajectoryPoints_OutHitResult, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "UpdateTrajectorySpline");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_UpdateTrajectorySpline_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "UpdateTrajectorySpline");
+
+	Params::UGA_ThrowConsumable_C_UpdateTrajectorySpline_Params Parms{};
 
 	Parms.CallFunc_GetProjectileTrajectoryPoints_OutSplinePoints = CallFunc_GetProjectileTrajectoryPoints_OutSplinePoints;
 	Parms.CallFunc_GetProjectileTrajectoryPoints_OutSplineTangents = CallFunc_GetProjectileTrajectoryPoints_OutSplineTangents;
@@ -277,9 +328,12 @@ void UGA_ThrowConsumable_C::UpdateTrajectorySpline(TArray<struct FVector>& CallF
 
 void UGA_ThrowConsumable_C::SetupDummyProjectile(class AFortPlayerPawn* CallFunc_GetOwningPlayer_Player_Pawn, const struct FTransform& CallFunc_GetTransform_ReturnValue, bool CallFunc_IsValidClass_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class AFortProjectileTrajectory* CallFunc_FinishSpawningActor_ReturnValue, class ABP_ProjectileTrajectory_C* K2Node_DynamicCast_AsBP_Projectile_Trajectory, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "SetupDummyProjectile");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_SetupDummyProjectile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "SetupDummyProjectile");
+
+	Params::UGA_ThrowConsumable_C_SetupDummyProjectile_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayer_Player_Pawn = CallFunc_GetOwningPlayer_Player_Pawn;
 	Parms.CallFunc_GetTransform_ReturnValue = CallFunc_GetTransform_ReturnValue;
@@ -300,12 +354,14 @@ void UGA_ThrowConsumable_C::SetupDummyProjectile(class AFortPlayerPawn* CallFunc
 
 void UGA_ThrowConsumable_C::OnProjectileSetup()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "OnProjectileSetup");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_OnProjectileSetup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "OnProjectileSetup");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -317,9 +373,12 @@ void UGA_ThrowConsumable_C::OnProjectileSetup()
 
 void UGA_ThrowConsumable_C::OnProjectileSpawned(class AFortProjectileBase* SpawnedProjectile)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "OnProjectileSpawned");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_OnProjectileSpawned_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "OnProjectileSpawned");
+
+	Params::UGA_ThrowConsumable_C_OnProjectileSpawned_Params Parms{};
 
 	Parms.SpawnedProjectile = SpawnedProjectile;
 
@@ -344,9 +403,12 @@ void UGA_ThrowConsumable_C::OnProjectileSpawned(class AFortProjectileBase* Spawn
 
 void UGA_ThrowConsumable_C::SpawnThrownProjectile(class UClass* ProjectileClass, struct FVector& ProjectileSpawnLocation, struct FRotator& ProjectileSpawnDirection, const struct FFortGameplayEffectContainerSpec& HitEffectContainerSpec, const struct FFortGameplayEffectContainerSpec& ExplosionEffectContainerSpec, float ProjectileInitialSpeed, float ProjectileGravityScale, class AFortProjectileBase** SpawnedProjectile, class AFortPlayerPawn* CallFunc_GetOwningPlayer_Player_Pawn, class AFortProjectileBase* CallFunc_SpawnProjectile_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "SpawnThrownProjectile");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_SpawnThrownProjectile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "SpawnThrownProjectile");
+
+	Params::UGA_ThrowConsumable_C_SpawnThrownProjectile_Params Parms{};
 
 	Parms.ProjectileClass = ProjectileClass;
 	Parms.ProjectileSpawnLocation = ProjectileSpawnLocation;
@@ -377,9 +439,12 @@ void UGA_ThrowConsumable_C::SpawnThrownProjectile(class UClass* ProjectileClass,
 
 void UGA_ThrowConsumable_C::GetOwningPlayer(class AFortPlayerPawn** Player_Pawn, bool CallFunc_IsValid_ReturnValue, const struct FGameplayAbilityActorInfo& CallFunc_GetActorInfo_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "GetOwningPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_GetOwningPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "GetOwningPlayer");
+
+	Params::UGA_ThrowConsumable_C_GetOwningPlayer_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_GetActorInfo_ReturnValue = CallFunc_GetActorInfo_ReturnValue;
@@ -421,9 +486,12 @@ void UGA_ThrowConsumable_C::GetOwningPlayer(class AFortPlayerPawn** Player_Pawn,
 
 void UGA_ThrowConsumable_C::GetSpawnLocationAndRotation(struct FVector* Location, struct FRotator* Rotation, class AFortPlayerPawn* CallFunc_GetOwningPlayer_Player_Pawn, const struct FRotator& CallFunc_GetDefaultTargetingRotation_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, bool Temp_bool_Variable, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_NormalizeAxis_ReturnValue, class AFortPlayerPawn* CallFunc_GetOwningPlayer_Player_Pawn_1, float CallFunc_FMin_ReturnValue, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, float CallFunc_BreakRotator_Roll_1, float CallFunc_BreakRotator_Pitch_1, float CallFunc_BreakRotator_Yaw_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& K2Node_Select_Default, const struct FVector& CallFunc_RotateAngleAxis_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "GetSpawnLocationAndRotation");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_GetSpawnLocationAndRotation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "GetSpawnLocationAndRotation");
+
+	Params::UGA_ThrowConsumable_C_GetSpawnLocationAndRotation_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayer_Player_Pawn = CallFunc_GetOwningPlayer_Player_Pawn;
 	Parms.CallFunc_GetDefaultTargetingRotation_ReturnValue = CallFunc_GetDefaultTargetingRotation_ReturnValue;
@@ -448,10 +516,10 @@ void UGA_ThrowConsumable_C::GetSpawnLocationAndRotation(struct FVector* Location
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Location != nullptr)
-		*Location = Parms.Location;
+		*Location = std::move(Parms.Location);
 
 	if (Rotation != nullptr)
-		*Rotation = Parms.Rotation;
+		*Rotation = std::move(Parms.Rotation);
 
 }
 
@@ -466,9 +534,12 @@ void UGA_ThrowConsumable_C::GetSpawnLocationAndRotation(struct FVector* Location
 
 void UGA_ThrowConsumable_C::PrethrowSetup(const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, const struct FGameplayAbilityActorInfo& CallFunc_GetActorInfo_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "PrethrowSetup");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_PrethrowSetup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "PrethrowSetup");
+
+	Params::UGA_ThrowConsumable_C_PrethrowSetup_Params Parms{};
 
 	Parms.CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue = CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue;
 	Parms.CallFunc_GetActorInfo_ReturnValue = CallFunc_GetActorInfo_ReturnValue;
@@ -488,9 +559,12 @@ void UGA_ThrowConsumable_C::PrethrowSetup(const struct FActiveGameplayEffectHand
 
 void UGA_ThrowConsumable_C::Completed_01C5B37D48E3DC6F82DDC58640CE2A27(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "Completed_01C5B37D48E3DC6F82DDC58640CE2A27");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_Completed_01C5B37D48E3DC6F82DDC58640CE2A27_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "Completed_01C5B37D48E3DC6F82DDC58640CE2A27");
+
+	Params::UGA_ThrowConsumable_C_Completed_01C5B37D48E3DC6F82DDC58640CE2A27_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -508,9 +582,12 @@ void UGA_ThrowConsumable_C::Completed_01C5B37D48E3DC6F82DDC58640CE2A27(struct FG
 
 void UGA_ThrowConsumable_C::Cancelled_01C5B37D48E3DC6F82DDC58640CE2A27(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "Cancelled_01C5B37D48E3DC6F82DDC58640CE2A27");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_Cancelled_01C5B37D48E3DC6F82DDC58640CE2A27_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "Cancelled_01C5B37D48E3DC6F82DDC58640CE2A27");
+
+	Params::UGA_ThrowConsumable_C_Cancelled_01C5B37D48E3DC6F82DDC58640CE2A27_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -528,9 +605,12 @@ void UGA_ThrowConsumable_C::Cancelled_01C5B37D48E3DC6F82DDC58640CE2A27(struct FG
 
 void UGA_ThrowConsumable_C::Triggered_01C5B37D48E3DC6F82DDC58640CE2A27(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "Triggered_01C5B37D48E3DC6F82DDC58640CE2A27");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_Triggered_01C5B37D48E3DC6F82DDC58640CE2A27_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "Triggered_01C5B37D48E3DC6F82DDC58640CE2A27");
+
+	Params::UGA_ThrowConsumable_C_Triggered_01C5B37D48E3DC6F82DDC58640CE2A27_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -546,12 +626,14 @@ void UGA_ThrowConsumable_C::Triggered_01C5B37D48E3DC6F82DDC58640CE2A27(struct FG
 
 void UGA_ThrowConsumable_C::OnFinish_96367E244486362FDDE5ED87D909C17B()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "OnFinish_96367E244486362FDDE5ED87D909C17B");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_OnFinish_96367E244486362FDDE5ED87D909C17B_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "OnFinish_96367E244486362FDDE5ED87D909C17B");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -562,12 +644,14 @@ void UGA_ThrowConsumable_C::OnFinish_96367E244486362FDDE5ED87D909C17B()
 
 void UGA_ThrowConsumable_C::OnCancelled_D89CCB8E47DB19D6DCF41F96F207CC3D()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "OnCancelled_D89CCB8E47DB19D6DCF41F96F207CC3D");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_OnCancelled_D89CCB8E47DB19D6DCF41F96F207CC3D_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "OnCancelled_D89CCB8E47DB19D6DCF41F96F207CC3D");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -578,12 +662,14 @@ void UGA_ThrowConsumable_C::OnCancelled_D89CCB8E47DB19D6DCF41F96F207CC3D()
 
 void UGA_ThrowConsumable_C::OnInterrupted_D89CCB8E47DB19D6DCF41F96F207CC3D()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "OnInterrupted_D89CCB8E47DB19D6DCF41F96F207CC3D");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_OnInterrupted_D89CCB8E47DB19D6DCF41F96F207CC3D_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "OnInterrupted_D89CCB8E47DB19D6DCF41F96F207CC3D");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -594,12 +680,14 @@ void UGA_ThrowConsumable_C::OnInterrupted_D89CCB8E47DB19D6DCF41F96F207CC3D()
 
 void UGA_ThrowConsumable_C::OnBlendOut_D89CCB8E47DB19D6DCF41F96F207CC3D()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "OnBlendOut_D89CCB8E47DB19D6DCF41F96F207CC3D");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_OnBlendOut_D89CCB8E47DB19D6DCF41F96F207CC3D_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "OnBlendOut_D89CCB8E47DB19D6DCF41F96F207CC3D");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -610,12 +698,14 @@ void UGA_ThrowConsumable_C::OnBlendOut_D89CCB8E47DB19D6DCF41F96F207CC3D()
 
 void UGA_ThrowConsumable_C::OnCompleted_D89CCB8E47DB19D6DCF41F96F207CC3D()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "OnCompleted_D89CCB8E47DB19D6DCF41F96F207CC3D");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_OnCompleted_D89CCB8E47DB19D6DCF41F96F207CC3D_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "OnCompleted_D89CCB8E47DB19D6DCF41F96F207CC3D");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -626,12 +716,14 @@ void UGA_ThrowConsumable_C::OnCompleted_D89CCB8E47DB19D6DCF41F96F207CC3D()
 
 void UGA_ThrowConsumable_C::ThrowProjectile()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "ThrowProjectile");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_ThrowProjectile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "ThrowProjectile");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -642,12 +734,14 @@ void UGA_ThrowConsumable_C::ThrowProjectile()
 
 void UGA_ThrowConsumable_C::AttemptSpawnThrownProjectile()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "AttemptSpawnThrownProjectile");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_AttemptSpawnThrownProjectile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "AttemptSpawnThrownProjectile");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -659,9 +753,12 @@ void UGA_ThrowConsumable_C::AttemptSpawnThrownProjectile()
 
 void UGA_ThrowConsumable_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "K2_OnEndAbility");
+
+	Params::UGA_ThrowConsumable_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -676,12 +773,14 @@ void UGA_ThrowConsumable_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_ThrowConsumable_C::InitTrajectoryVariables()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "InitTrajectoryVariables");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_InitTrajectoryVariables_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "InitTrajectoryVariables");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -692,12 +791,14 @@ void UGA_ThrowConsumable_C::InitTrajectoryVariables()
 
 void UGA_ThrowConsumable_C::OnAbilityInputReleased()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "OnAbilityInputReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_OnAbilityInputReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "OnAbilityInputReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -708,12 +809,14 @@ void UGA_ThrowConsumable_C::OnAbilityInputReleased()
 
 void UGA_ThrowConsumable_C::CleanupTrajectoryIndicatorOnUnequip()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "CleanupTrajectoryIndicatorOnUnequip");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_CleanupTrajectoryIndicatorOnUnequip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "CleanupTrajectoryIndicatorOnUnequip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -724,12 +827,14 @@ void UGA_ThrowConsumable_C::CleanupTrajectoryIndicatorOnUnequip()
 
 void UGA_ThrowConsumable_C::UpdateTrajectory()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "UpdateTrajectory");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_UpdateTrajectory_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "UpdateTrajectory");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -740,12 +845,14 @@ void UGA_ThrowConsumable_C::UpdateTrajectory()
 
 void UGA_ThrowConsumable_C::ThrowMontageStarted()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "ThrowMontageStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_ThrowMontageStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "ThrowMontageStarted");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -756,12 +863,14 @@ void UGA_ThrowConsumable_C::ThrowMontageStarted()
 
 void UGA_ThrowConsumable_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -774,7 +883,7 @@ void UGA_ThrowConsumable_C::K2_ActivateAbility()
 // struct FGameplayAbilityTargetDataHandleK2Node_CustomEvent_TargetData                                    (ConstParm)
 // struct FGameplayTag                K2Node_CustomEvent_ApplicationTag                                (NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                Temp_struct_Variable                                             (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           ()
+// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           (None)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // class UAbilityTask_WaitDelay*      CallFunc_WaitDelay_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetScaledCapsuleSize_OutRadius                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -811,9 +920,9 @@ void UGA_ThrowConsumable_C::K2_ActivateAbility()
 // struct FGameplayTag                K2Node_CustomEvent_ApplicationTag_1                              (NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_6                           (ZeroConstructor, NoDestructor)
 // class AFortProjectileTrajectory*   CallFunc_SpawnTrajectoryIndicator_ReturnValue                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortGameplayEffectContainerSpecCallFunc_MakeGameplayEffectContainerSpec_ReturnValue             ()
-// struct FFortGameplayEffectContainerSpecCallFunc_MakeGameplayEffectContainerSpec_ReturnValue_1           ()
-// struct FFortGameplayEffectContainerSpecCallFunc_MakeGameplayEffectContainerSpec_ReturnValue_2           ()
+// struct FFortGameplayEffectContainerSpecCallFunc_MakeGameplayEffectContainerSpec_ReturnValue             (None)
+// struct FFortGameplayEffectContainerSpecCallFunc_MakeGameplayEffectContainerSpec_ReturnValue_1           (None)
+// struct FFortGameplayEffectContainerSpecCallFunc_MakeGameplayEffectContainerSpec_ReturnValue_2           (None)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_7                           (ZeroConstructor, NoDestructor)
 // class AFortPlayerController*       CallFunc_GetFortPlayerControllerFromActor_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortQuestManager*           CallFunc_GetQuestManager_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -828,9 +937,12 @@ void UGA_ThrowConsumable_C::K2_ActivateAbility()
 
 void UGA_ThrowConsumable_C::ExecuteUbergraph_GA_ThrowConsumable(int32 EntryPoint, float CallFunc_GetProjectileInitialSpeedToUse_ProjectileSpeedToUse, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag, const struct FGameplayTag& Temp_struct_Variable, const struct FGameplayAbilityTargetDataHandle& Temp_struct_Variable_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UAbilityTask_WaitDelay* CallFunc_WaitDelay_ReturnValue, float CallFunc_GetScaledCapsuleSize_OutRadius, float CallFunc_GetScaledCapsuleSize_OutHalfHeight, float CallFunc_GetGravityZ_ReturnValue, float CallFunc_FMax_ReturnValue, bool CallFunc_IsCurveTableRowValid_ReturnValue, float CallFunc_GetGravityZ_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, bool Temp_bool_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageWaitTarget_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_K2_CommitAbility_ReturnValue, bool CallFunc_IsServer_ReturnValue, bool K2Node_Event_bWasCancelled, const struct FVector& CallFunc_GetSpawnLocationAndRotation_Location, const struct FRotator& CallFunc_GetSpawnLocationAndRotation_Rotation, class UAbilityTask_PlayMontageAndWait* CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, class AFortPlayerPawn* CallFunc_GetOwningPlayer_Player_Pawn, const struct FTransform& CallFunc_GetTransform_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float K2Node_Select_Default, class AFortProjectileBase* CallFunc_FinishSpawningActor_ReturnValue, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_1, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, class AFortProjectileTrajectory* CallFunc_SpawnTrajectoryIndicator_ReturnValue, const struct FFortGameplayEffectContainerSpec& CallFunc_MakeGameplayEffectContainerSpec_ReturnValue, const struct FFortGameplayEffectContainerSpec& CallFunc_MakeGameplayEffectContainerSpec_ReturnValue_1, const struct FFortGameplayEffectContainerSpec& CallFunc_MakeGameplayEffectContainerSpec_ReturnValue_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_2, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_2, bool CallFunc_SendComplexCustomStatEvent_QuestActive, bool CallFunc_SendComplexCustomStatEvent_QuestCompleted, float CallFunc_GetProjectileInitialSpeedToUse_ProjectileSpeedToUse_1, float CallFunc_GetProjectileInitialGravityScaleToUse_GravityScaleToUse, class AFortProjectileBase* CallFunc_SpawnThrownProjectile_SpawnedProjectile, bool CallFunc_IsValid_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "ExecuteUbergraph_GA_ThrowConsumable");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "ExecuteUbergraph_GA_ThrowConsumable");
+
+	Params::UGA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetProjectileInitialSpeedToUse_ProjectileSpeedToUse = CallFunc_GetProjectileInitialSpeedToUse_ProjectileSpeedToUse;
@@ -900,17 +1012,17 @@ void UGA_ThrowConsumable_C::ExecuteUbergraph_GA_ThrowConsumable(int32 EntryPoint
 
 void UGA_ThrowConsumable_C::OnProjectileSpawn__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("GA_ThrowConsumable_C", "OnProjectileSpawn__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_ThrowConsumable_C_OnProjectileSpawn__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_ThrowConsumable_C", "OnProjectileSpawn__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

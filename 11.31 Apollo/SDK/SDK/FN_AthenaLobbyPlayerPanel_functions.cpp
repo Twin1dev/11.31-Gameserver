@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,19 +12,50 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C
+// (None)
+
+class UClass* UAthenaLobbyPlayerPanel_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaLobbyPlayerPanel_C");
+
+	return Clss;
+}
+
+
+// AthenaLobbyPlayerPanel_C AthenaLobbyPlayerPanel.Default__AthenaLobbyPlayerPanel_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaLobbyPlayerPanel_C* UAthenaLobbyPlayerPanel_C::GetDefaultObj()
+{
+	static class UAthenaLobbyPlayerPanel_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaLobbyPlayerPanel_C*>(UAthenaLobbyPlayerPanel_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.OnMouseButtonDown_0
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FPointerEvent               MouseEvent                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 
 struct FEventReply UAthenaLobbyPlayerPanel_C::OnMouseButtonDown_0(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Handled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyPlayerPanel_C", "OnMouseButtonDown_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyPlayerPanel_C_OnMouseButtonDown_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyPlayerPanel_C", "OnMouseButtonDown_0");
+
+	Params::UAthenaLobbyPlayerPanel_C_OnMouseButtonDown_0_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -47,9 +75,12 @@ struct FEventReply UAthenaLobbyPlayerPanel_C::OnMouseButtonDown_0(const struct F
 
 void UAthenaLobbyPlayerPanel_C::OnHasBattlePassUpdated(bool bHasBattlePass)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyPlayerPanel_C", "OnHasBattlePassUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyPlayerPanel_C_OnHasBattlePassUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyPlayerPanel_C", "OnHasBattlePassUpdated");
+
+	Params::UAthenaLobbyPlayerPanel_C_OnHasBattlePassUpdated_Params Parms{};
 
 	Parms.bHasBattlePass = bHasBattlePass;
 
@@ -65,9 +96,12 @@ void UAthenaLobbyPlayerPanel_C::OnHasBattlePassUpdated(bool bHasBattlePass)
 
 void UAthenaLobbyPlayerPanel_C::OnFriendStatusUpdated(enum class EFortFriendRequestStatus FriendRequestStatus)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyPlayerPanel_C", "OnFriendStatusUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyPlayerPanel_C_OnFriendStatusUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyPlayerPanel_C", "OnFriendStatusUpdated");
+
+	Params::UAthenaLobbyPlayerPanel_C_OnFriendStatusUpdated_Params Parms{};
 
 	Parms.FriendRequestStatus = FriendRequestStatus;
 
@@ -83,9 +117,12 @@ void UAthenaLobbyPlayerPanel_C::OnFriendStatusUpdated(enum class EFortFriendRequ
 
 void UAthenaLobbyPlayerPanel_C::OnIsMutedUpdated(bool bIsMuted)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyPlayerPanel_C", "OnIsMutedUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyPlayerPanel_C_OnIsMutedUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyPlayerPanel_C", "OnIsMutedUpdated");
+
+	Params::UAthenaLobbyPlayerPanel_C_OnIsMutedUpdated_Params Parms{};
 
 	Parms.bIsMuted = bIsMuted;
 
@@ -109,8 +146,8 @@ void UAthenaLobbyPlayerPanel_C::OnIsMutedUpdated(bool bIsMuted)
 // bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_4                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
 // bool                               K2Node_Event_bHasBattlePass                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortFriendRequestStatusK2Node_Event_FriendRequestStatus                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UIconTextButton_C*           K2Node_DynamicCast_AsIcon_Text_Button_1                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -120,13 +157,16 @@ void UAthenaLobbyPlayerPanel_C::OnIsMutedUpdated(bool bIsMuted)
 // enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_bIsMuted                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                        K2Node_Select_Default_2                                          (ConstParm)
-// class FText                        K2Node_Select_Default_3                                          ()
+// class FText                        K2Node_Select_Default_3                                          (None)
 
 void UAthenaLobbyPlayerPanel_C::ExecuteUbergraph_AthenaLobbyPlayerPanel(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess, enum class ESlateVisibility Temp_byte_Variable_1, enum class EFortFriendRequestStatus Temp_byte_Variable_2, enum class EFortFriendRequestStatus Temp_byte_Variable_3, bool Temp_bool_Variable, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, bool Temp_bool_Variable_3, bool Temp_bool_Variable_4, class FText Temp_text_Variable, class FText Temp_text_Variable_1, bool K2Node_Event_bHasBattlePass, enum class EFortFriendRequestStatus K2Node_Event_FriendRequestStatus, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button_1, bool K2Node_DynamicCast_bSuccess_1, bool Temp_bool_Variable_5, bool K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, bool K2Node_Event_bIsMuted, class FText K2Node_Select_Default_2, class FText K2Node_Select_Default_3)
 {
-	static auto Func = Class->GetFunction("AthenaLobbyPlayerPanel_C", "ExecuteUbergraph_AthenaLobbyPlayerPanel");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyPlayerPanel_C_ExecuteUbergraph_AthenaLobbyPlayerPanel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyPlayerPanel_C", "ExecuteUbergraph_AthenaLobbyPlayerPanel");
+
+	Params::UAthenaLobbyPlayerPanel_C_ExecuteUbergraph_AthenaLobbyPlayerPanel_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -164,17 +204,17 @@ void UAthenaLobbyPlayerPanel_C::ExecuteUbergraph_AthenaLobbyPlayerPanel(int32 En
 
 void UAthenaLobbyPlayerPanel_C::OnGadgetsClicked__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaLobbyPlayerPanel_C", "OnGadgetsClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobbyPlayerPanel_C_OnGadgetsClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobbyPlayerPanel_C", "OnGadgetsClicked__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

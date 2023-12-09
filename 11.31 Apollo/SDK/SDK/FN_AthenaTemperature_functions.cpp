@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaTemperature.AthenaTemperature_C
+// (None)
+
+class UClass* UAthenaTemperature_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaTemperature_C");
+
+	return Clss;
+}
+
+
+// AthenaTemperature_C AthenaTemperature.Default__AthenaTemperature_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaTemperature_C* UAthenaTemperature_C::GetDefaultObj()
+{
+	static class UAthenaTemperature_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaTemperature_C*>(UAthenaTemperature_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AthenaTemperature.AthenaTemperature_C.ShowTemperatureChanged
@@ -26,9 +51,12 @@ namespace SDK
 
 void UAthenaTemperature_C::ShowTemperatureChanged(bool bShowTemperature, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaTemperature_C", "ShowTemperatureChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaTemperature_C_ShowTemperatureChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaTemperature_C", "ShowTemperatureChanged");
+
+	Params::UAthenaTemperature_C_ShowTemperatureChanged_Params Parms{};
 
 	Parms.bShowTemperature = bShowTemperature;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -47,12 +75,14 @@ void UAthenaTemperature_C::ShowTemperatureChanged(bool bShowTemperature, bool Te
 
 void UAthenaTemperature_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaTemperature_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaTemperature_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaTemperature_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -68,9 +98,12 @@ void UAthenaTemperature_C::Construct()
 
 void UAthenaTemperature_C::ExecuteUbergraph_AthenaTemperature(int32 EntryPoint, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AthenaTemperature_C", "ExecuteUbergraph_AthenaTemperature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaTemperature_C_ExecuteUbergraph_AthenaTemperature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaTemperature_C", "ExecuteUbergraph_AthenaTemperature");
+
+	Params::UAthenaTemperature_C_ExecuteUbergraph_AthenaTemperature_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
@@ -84,6 +117,4 @@ void UAthenaTemperature_C::ExecuteUbergraph_AthenaTemperature(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

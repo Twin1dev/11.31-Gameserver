@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,16 +15,11 @@ class UF_MED_HIS_Ramirez_Head_01_AnimBP_Child_C : public UFortnite_Base_Head_Exp
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("F_MED_HIS_Ramirez_Head_01_AnimBP_Child_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UF_MED_HIS_Ramirez_Head_01_AnimBP_Child_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

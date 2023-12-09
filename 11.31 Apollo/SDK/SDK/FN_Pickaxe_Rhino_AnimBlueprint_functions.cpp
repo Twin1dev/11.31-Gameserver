@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass Pickaxe_Rhino_AnimBlueprint.Pickaxe_Rhino_AnimBlueprint_C
+// (None)
+
+class UClass* UPickaxe_Rhino_AnimBlueprint_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Pickaxe_Rhino_AnimBlueprint_C");
+
+	return Clss;
+}
+
+
+// Pickaxe_Rhino_AnimBlueprint_C Pickaxe_Rhino_AnimBlueprint.Default__Pickaxe_Rhino_AnimBlueprint_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPickaxe_Rhino_AnimBlueprint_C* UPickaxe_Rhino_AnimBlueprint_C::GetDefaultObj()
+{
+	static class UPickaxe_Rhino_AnimBlueprint_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPickaxe_Rhino_AnimBlueprint_C*>(UPickaxe_Rhino_AnimBlueprint_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Pickaxe_Rhino_AnimBlueprint.Pickaxe_Rhino_AnimBlueprint_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,16 +48,19 @@ namespace SDK
 
 void UPickaxe_Rhino_AnimBlueprint_C::AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("Pickaxe_Rhino_AnimBlueprint_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UPickaxe_Rhino_AnimBlueprint_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Pickaxe_Rhino_AnimBlueprint_C", "AnimGraph");
+
+	Params::UPickaxe_Rhino_AnimBlueprint_C_AnimGraph_Params Parms{};
 
 	Parms.InPose = InPose;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -44,9 +72,12 @@ void UPickaxe_Rhino_AnimBlueprint_C::AnimGraph(const struct FPoseLink& InPose, s
 
 void UPickaxe_Rhino_AnimBlueprint_C::ExecuteUbergraph_Pickaxe_Rhino_AnimBlueprint(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("Pickaxe_Rhino_AnimBlueprint_C", "ExecuteUbergraph_Pickaxe_Rhino_AnimBlueprint");
+	static class UFunction* Func = nullptr;
 
-	Params::UPickaxe_Rhino_AnimBlueprint_C_ExecuteUbergraph_Pickaxe_Rhino_AnimBlueprint_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Pickaxe_Rhino_AnimBlueprint_C", "ExecuteUbergraph_Pickaxe_Rhino_AnimBlueprint");
+
+	Params::UPickaxe_Rhino_AnimBlueprint_C_ExecuteUbergraph_Pickaxe_Rhino_AnimBlueprint_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -56,6 +87,4 @@ void UPickaxe_Rhino_AnimBlueprint_C::ExecuteUbergraph_Pickaxe_Rhino_AnimBlueprin
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

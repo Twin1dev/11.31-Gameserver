@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Athena_Flopper_Effective.GA_Athena_Flopper_Effective_C
+// (None)
+
+class UClass* UGA_Athena_Flopper_Effective_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Athena_Flopper_Effective_C");
+
+	return Clss;
+}
+
+
+// GA_Athena_Flopper_Effective_C GA_Athena_Flopper_Effective.Default__GA_Athena_Flopper_Effective_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Athena_Flopper_Effective_C* UGA_Athena_Flopper_Effective_C::GetDefaultObj()
+{
+	static class UGA_Athena_Flopper_Effective_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Athena_Flopper_Effective_C*>(UGA_Athena_Flopper_Effective_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Athena_Flopper_Effective.GA_Athena_Flopper_Effective_C.K2_CommitExecute
 // (Event, Public, BlueprintEvent)
 // Parameters:
 
 void UGA_Athena_Flopper_Effective_C::K2_CommitExecute()
 {
-	static auto Func = Class->GetFunction("GA_Athena_Flopper_Effective_C", "K2_CommitExecute");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Flopper_Effective_C_K2_CommitExecute_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Flopper_Effective_C", "K2_CommitExecute");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -49,9 +76,12 @@ void UGA_Athena_Flopper_Effective_C::K2_CommitExecute()
 
 void UGA_Athena_Flopper_Effective_C::ExecuteUbergraph_GA_Athena_Flopper_Effective(int32 EntryPoint, bool CallFunc_IsServer_ReturnValue, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, bool CallFunc_Athena_CheckQuestAndObjectiveCompletion_QuestIsValid, bool CallFunc_Athena_CheckQuestAndObjectiveCompletion_QuestCompleted, bool CallFunc_Athena_CheckQuestAndObjectiveCompletion_ObjectiveCompleted, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_SendComplexCustomStatEvent_QuestActive, bool CallFunc_SendComplexCustomStatEvent_QuestCompleted, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Athena_Flopper_Effective_C", "ExecuteUbergraph_GA_Athena_Flopper_Effective");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_Flopper_Effective_C_ExecuteUbergraph_GA_Athena_Flopper_Effective_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_Flopper_Effective_C", "ExecuteUbergraph_GA_Athena_Flopper_Effective");
+
+	Params::UGA_Athena_Flopper_Effective_C_ExecuteUbergraph_GA_Athena_Flopper_Effective_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsServer_ReturnValue = CallFunc_IsServer_ReturnValue;
@@ -72,6 +102,4 @@ void UGA_Athena_Flopper_Effective_C::ExecuteUbergraph_GA_Athena_Flopper_Effectiv
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

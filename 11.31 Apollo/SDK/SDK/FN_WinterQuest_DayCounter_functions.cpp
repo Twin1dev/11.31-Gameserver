@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass WinterQuest_DayCounter.WinterQuest_DayCounter_C
+// (None)
+
+class UClass* UWinterQuest_DayCounter_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WinterQuest_DayCounter_C");
+
+	return Clss;
+}
+
+
+// WinterQuest_DayCounter_C WinterQuest_DayCounter.Default__WinterQuest_DayCounter_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UWinterQuest_DayCounter_C* UWinterQuest_DayCounter_C::GetDefaultObj()
+{
+	static class UWinterQuest_DayCounter_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWinterQuest_DayCounter_C*>(UWinterQuest_DayCounter_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function WinterQuest_DayCounter.WinterQuest_DayCounter_C.HandleDayCounterIntro
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UWinterQuest_DayCounter_C::HandleDayCounterIntro(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("WinterQuest_DayCounter_C", "HandleDayCounterIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuest_DayCounter_C_HandleDayCounterIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuest_DayCounter_C", "HandleDayCounterIntro");
+
+	Params::UWinterQuest_DayCounter_C_HandleDayCounterIntro_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -34,6 +62,4 @@ void UWinterQuest_DayCounter_C::HandleDayCounterIntro(class UUMGSequencePlayer* 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

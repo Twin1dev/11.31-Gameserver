@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GAB_FiendMelee.GAB_FiendMelee_C
+// (None)
+
+class UClass* UGAB_FiendMelee_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAB_FiendMelee_C");
+
+	return Clss;
+}
+
+
+// GAB_FiendMelee_C GAB_FiendMelee.Default__GAB_FiendMelee_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAB_FiendMelee_C* UGAB_FiendMelee_C::GetDefaultObj()
+{
+	static class UGAB_FiendMelee_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAB_FiendMelee_C*>(UGAB_FiendMelee_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GAB_FiendMelee.GAB_FiendMelee_C.Completed_35D25988427E4CF4800223AD6BCDA350
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UGAB_FiendMelee_C::Completed_35D25988427E4CF4800223AD6BCDA350(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GAB_FiendMelee_C", "Completed_35D25988427E4CF4800223AD6BCDA350");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_FiendMelee_C_Completed_35D25988427E4CF4800223AD6BCDA350_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_FiendMelee_C", "Completed_35D25988427E4CF4800223AD6BCDA350");
+
+	Params::UGAB_FiendMelee_C_Completed_35D25988427E4CF4800223AD6BCDA350_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -43,9 +71,12 @@ void UGAB_FiendMelee_C::Completed_35D25988427E4CF4800223AD6BCDA350(struct FGamep
 
 void UGAB_FiendMelee_C::Cancelled_35D25988427E4CF4800223AD6BCDA350(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GAB_FiendMelee_C", "Cancelled_35D25988427E4CF4800223AD6BCDA350");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_FiendMelee_C_Cancelled_35D25988427E4CF4800223AD6BCDA350_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_FiendMelee_C", "Cancelled_35D25988427E4CF4800223AD6BCDA350");
+
+	Params::UGAB_FiendMelee_C_Cancelled_35D25988427E4CF4800223AD6BCDA350_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -63,9 +94,12 @@ void UGAB_FiendMelee_C::Cancelled_35D25988427E4CF4800223AD6BCDA350(struct FGamep
 
 void UGAB_FiendMelee_C::Triggered_35D25988427E4CF4800223AD6BCDA350(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GAB_FiendMelee_C", "Triggered_35D25988427E4CF4800223AD6BCDA350");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_FiendMelee_C_Triggered_35D25988427E4CF4800223AD6BCDA350_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_FiendMelee_C", "Triggered_35D25988427E4CF4800223AD6BCDA350");
+
+	Params::UGAB_FiendMelee_C_Triggered_35D25988427E4CF4800223AD6BCDA350_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -83,9 +117,12 @@ void UGAB_FiendMelee_C::Triggered_35D25988427E4CF4800223AD6BCDA350(struct FGamep
 
 void UGAB_FiendMelee_C::OnMoveFinished_445BEF534036169059384B82E2963353(enum class EPathFollowingResult Result, class AAIController* AIController)
 {
-	static auto Func = Class->GetFunction("GAB_FiendMelee_C", "OnMoveFinished_445BEF534036169059384B82E2963353");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_FiendMelee_C_OnMoveFinished_445BEF534036169059384B82E2963353_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_FiendMelee_C", "OnMoveFinished_445BEF534036169059384B82E2963353");
+
+	Params::UGAB_FiendMelee_C_OnMoveFinished_445BEF534036169059384B82E2963353_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.AIController = AIController;
@@ -101,12 +138,14 @@ void UGAB_FiendMelee_C::OnMoveFinished_445BEF534036169059384B82E2963353(enum cla
 
 void UGAB_FiendMelee_C::OnRequestFailed_445BEF534036169059384B82E2963353()
 {
-	static auto Func = Class->GetFunction("GAB_FiendMelee_C", "OnRequestFailed_445BEF534036169059384B82E2963353");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_FiendMelee_C_OnRequestFailed_445BEF534036169059384B82E2963353_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_FiendMelee_C", "OnRequestFailed_445BEF534036169059384B82E2963353");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -117,12 +156,14 @@ void UGAB_FiendMelee_C::OnRequestFailed_445BEF534036169059384B82E2963353()
 
 void UGAB_FiendMelee_C::OnCancelled_445BEF534036169059384B82E2963353()
 {
-	static auto Func = Class->GetFunction("GAB_FiendMelee_C", "OnCancelled_445BEF534036169059384B82E2963353");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_FiendMelee_C_OnCancelled_445BEF534036169059384B82E2963353_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_FiendMelee_C", "OnCancelled_445BEF534036169059384B82E2963353");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -133,12 +174,14 @@ void UGAB_FiendMelee_C::OnCancelled_445BEF534036169059384B82E2963353()
 
 void UGAB_FiendMelee_C::OnInterrupted_445BEF534036169059384B82E2963353()
 {
-	static auto Func = Class->GetFunction("GAB_FiendMelee_C", "OnInterrupted_445BEF534036169059384B82E2963353");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_FiendMelee_C_OnInterrupted_445BEF534036169059384B82E2963353_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_FiendMelee_C", "OnInterrupted_445BEF534036169059384B82E2963353");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -149,12 +192,14 @@ void UGAB_FiendMelee_C::OnInterrupted_445BEF534036169059384B82E2963353()
 
 void UGAB_FiendMelee_C::OnComplete_445BEF534036169059384B82E2963353()
 {
-	static auto Func = Class->GetFunction("GAB_FiendMelee_C", "OnComplete_445BEF534036169059384B82E2963353");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_FiendMelee_C_OnComplete_445BEF534036169059384B82E2963353_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_FiendMelee_C", "OnComplete_445BEF534036169059384B82E2963353");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -167,9 +212,12 @@ void UGAB_FiendMelee_C::OnComplete_445BEF534036169059384B82E2963353()
 
 void UGAB_FiendMelee_C::Completed_7FA319D24D6A2844B0CE37B57B709AE5(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GAB_FiendMelee_C", "Completed_7FA319D24D6A2844B0CE37B57B709AE5");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_FiendMelee_C_Completed_7FA319D24D6A2844B0CE37B57B709AE5_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_FiendMelee_C", "Completed_7FA319D24D6A2844B0CE37B57B709AE5");
+
+	Params::UGAB_FiendMelee_C_Completed_7FA319D24D6A2844B0CE37B57B709AE5_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -187,9 +235,12 @@ void UGAB_FiendMelee_C::Completed_7FA319D24D6A2844B0CE37B57B709AE5(struct FGamep
 
 void UGAB_FiendMelee_C::Cancelled_7FA319D24D6A2844B0CE37B57B709AE5(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GAB_FiendMelee_C", "Cancelled_7FA319D24D6A2844B0CE37B57B709AE5");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_FiendMelee_C_Cancelled_7FA319D24D6A2844B0CE37B57B709AE5_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_FiendMelee_C", "Cancelled_7FA319D24D6A2844B0CE37B57B709AE5");
+
+	Params::UGAB_FiendMelee_C_Cancelled_7FA319D24D6A2844B0CE37B57B709AE5_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -207,9 +258,12 @@ void UGAB_FiendMelee_C::Cancelled_7FA319D24D6A2844B0CE37B57B709AE5(struct FGamep
 
 void UGAB_FiendMelee_C::Triggered_7FA319D24D6A2844B0CE37B57B709AE5(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GAB_FiendMelee_C", "Triggered_7FA319D24D6A2844B0CE37B57B709AE5");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_FiendMelee_C_Triggered_7FA319D24D6A2844B0CE37B57B709AE5_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_FiendMelee_C", "Triggered_7FA319D24D6A2844B0CE37B57B709AE5");
+
+	Params::UGAB_FiendMelee_C_Triggered_7FA319D24D6A2844B0CE37B57B709AE5_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -225,12 +279,14 @@ void UGAB_FiendMelee_C::Triggered_7FA319D24D6A2844B0CE37B57B709AE5(struct FGamep
 
 void UGAB_FiendMelee_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GAB_FiendMelee_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_FiendMelee_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_FiendMelee_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -242,9 +298,12 @@ void UGAB_FiendMelee_C::K2_ActivateAbility()
 
 void UGAB_FiendMelee_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GAB_FiendMelee_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_FiendMelee_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_FiendMelee_C", "K2_OnEndAbility");
+
+	Params::UGAB_FiendMelee_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -259,12 +318,14 @@ void UGAB_FiendMelee_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGAB_FiendMelee_C::ContinuousMoveTowardsTarget()
 {
-	static auto Func = Class->GetFunction("GAB_FiendMelee_C", "ContinuousMoveTowardsTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_FiendMelee_C_ContinuousMoveTowardsTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_FiendMelee_C", "ContinuousMoveTowardsTarget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -276,9 +337,12 @@ void UGAB_FiendMelee_C::ContinuousMoveTowardsTarget()
 
 void UGAB_FiendMelee_C::GameplayEffectContainerApplied(const struct FGameplayAbilityTargetDataHandle& Target_Data)
 {
-	static auto Func = Class->GetFunction("GAB_FiendMelee_C", "GameplayEffectContainerApplied");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_FiendMelee_C_GameplayEffectContainerApplied_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_FiendMelee_C", "GameplayEffectContainerApplied");
+
+	Params::UGAB_FiendMelee_C_GameplayEffectContainerApplied_Params Parms{};
 
 	Parms.Target_Data = Target_Data;
 
@@ -307,7 +371,7 @@ void UGAB_FiendMelee_C::GameplayEffectContainerApplied(const struct FGameplayAbi
 // struct FGameplayTag                K2Node_CustomEvent_ApplicationTag                                (NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_6                           (ZeroConstructor, NoDestructor)
 // struct FGameplayTag                Temp_struct_Variable                                             (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           ()
+// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           (None)
 // int32                              CallFunc_GetDataCountFromTargetData_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Subtract_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FActiveGameplayEffectHandle>CallFunc_ApplyGameplayEffectContainer_ReturnValue                (ConstParm, ZeroConstructor, ReferenceParm)
@@ -324,7 +388,7 @@ void UGAB_FiendMelee_C::GameplayEffectContainerApplied(const struct FGameplayAbi
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_7                           (ZeroConstructor, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_8                           (ZeroConstructor, NoDestructor)
-// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_2                                           ()
+// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_2                                           (None)
 // struct FGameplayTag                Temp_struct_Variable_3                                           (NoDestructor, HasGetValueTypeHash)
 // TArray<struct FActiveGameplayEffectHandle>CallFunc_ApplyGameplayEffectContainerWithCSVStats_ReturnValue    (ConstParm, ZeroConstructor, ReferenceParm)
 // int32                              CallFunc_GetDataCountFromTargetData_ReturnValue_1                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -351,7 +415,7 @@ void UGAB_FiendMelee_C::GameplayEffectContainerApplied(const struct FGameplayAbi
 // bool                               K2Node_DynamicCast_bSuccess_2                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue_3                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_NotEqual_ObjectObject_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayAbilityTargetDataHandleK2Node_CustomEvent_Target_Data                                   ()
+// struct FGameplayAbilityTargetDataHandleK2Node_CustomEvent_Target_Data                                   (None)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_9                           (ZeroConstructor, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue_4                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AActor*                      CallFunc_GetAIAbilityTarget_ReturnValue_2                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -377,9 +441,12 @@ void UGAB_FiendMelee_C::GameplayEffectContainerApplied(const struct FGameplayAbi
 
 void UGAB_FiendMelee_C::ExecuteUbergraph_GAB_FiendMelee(int32 EntryPoint, enum class EPathFollowingResult K2Node_CustomEvent_Result, class AAIController* K2Node_CustomEvent_AIController, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_2, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_1, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, const struct FGameplayTag& Temp_struct_Variable, const struct FGameplayAbilityTargetDataHandle& Temp_struct_Variable_1, int32 CallFunc_GetDataCountFromTargetData_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_ApplyGameplayEffectContainer_ReturnValue, int32 Temp_int_Variable, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_5, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_5, TArray<class AActor*>& CallFunc_GetActorsFromTargetData_ReturnValue, class AActor* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_8, const struct FGameplayAbilityTargetDataHandle& Temp_struct_Variable_2, const struct FGameplayTag& Temp_struct_Variable_3, TArray<struct FActiveGameplayEffectHandle>& CallFunc_ApplyGameplayEffectContainerWithCSVStats_ReturnValue, int32 CallFunc_GetDataCountFromTargetData_ReturnValue_1, int32 CallFunc_Subtract_IntInt_ReturnValue_1, bool K2Node_Event_bWasCancelled, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue, class ADeimos_Fiend_C* K2Node_DynamicCast_AsDeimos_Fiend, bool K2Node_DynamicCast_bSuccess, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue_1, class ADeimos_Fiend_C* K2Node_DynamicCast_AsDeimos_Fiend_1, bool K2Node_DynamicCast_bSuccess_1, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_3, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_3, const struct FRotator& CallFunc_MakeRotator_ReturnValue, class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue, class UFortAbilityTask_PlayAnimWaitTarget* CallFunc_PlayAnimWithMontageInfoAndWaitForTrigger_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_K2_CommitAbility_ReturnValue, class AActor* CallFunc_GetAIAbilityTarget_ReturnValue, class AActor* CallFunc_GetAIAbilityTarget_ReturnValue_1, class UFortAbilityTask_MoveAI* CallFunc_CreateMoveAITask_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_NotEqual_ObjectObject_ReturnValue, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_Target_Data, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_9, bool CallFunc_IsValid_ReturnValue_4, class AActor* CallFunc_GetAIAbilityTarget_ReturnValue_2, int32 Temp_int_Variable_1, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn_1, bool K2Node_DynamicCast_bSuccess_3, TArray<class AActor*>& CallFunc_GetActorsFromTargetData_ReturnValue_1, class AActor* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_5, bool CallFunc_Greater_IntInt_ReturnValue_1, int32 CallFunc_Array_Add_ReturnValue_1, bool CallFunc_LessEqual_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_6, class AActor* CallFunc_GetAIAbilityTarget_ReturnValue_3, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_4, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_4, bool CallFunc_Array_Contains_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_10, bool CallFunc_AnimationSharingEnabled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAB_FiendMelee_C", "ExecuteUbergraph_GAB_FiendMelee");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_FiendMelee_C_ExecuteUbergraph_GAB_FiendMelee_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_FiendMelee_C", "ExecuteUbergraph_GAB_FiendMelee");
+
+	Params::UGAB_FiendMelee_C_ExecuteUbergraph_GAB_FiendMelee_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_Result = K2Node_CustomEvent_Result;
@@ -472,6 +539,4 @@ void UGAB_FiendMelee_C::ExecuteUbergraph_GAB_FiendMelee(int32 EntryPoint, enum c
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

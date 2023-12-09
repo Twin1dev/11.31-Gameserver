@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TextStyle-Header-L-Horizon.TextStyle-Header-L-Horizon_C
+// (None)
+
+class UClass* UTextStyleMinusHeaderMinusLMinusHorizon_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextStyle-Header-L-Horizon_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// TextStyle-Header-L-Horizon_C TextStyle-Header-L-Horizon.Default__TextStyle-Header-L-Horizon_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTextStyleMinusHeaderMinusLMinusHorizon_C* UTextStyleMinusHeaderMinusLMinusHorizon_C::GetDefaultObj()
+{
+	static class UTextStyleMinusHeaderMinusLMinusHorizon_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextStyleMinusHeaderMinusLMinusHorizon_C*>(UTextStyleMinusHeaderMinusLMinusHorizon_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass DA_Glider_Item.DA_Glider_Item_C
+// (Actor)
+
+class UClass* ADA_Glider_Item_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DA_Glider_Item_C");
+
+	return Clss;
+}
+
+
+// DA_Glider_Item_C DA_Glider_Item.Default__DA_Glider_Item_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ADA_Glider_Item_C* ADA_Glider_Item_C::GetDefaultObj()
+{
+	static class ADA_Glider_Item_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ADA_Glider_Item_C*>(ADA_Glider_Item_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function DA_Glider_Item.DA_Glider_Item_C.IsOnGround
@@ -27,9 +52,12 @@ namespace SDK
 
 void ADA_Glider_Item_C::IsOnGround(bool* bOnGround, class APawn* CallFunc_GetInstigator_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsFalling_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("DA_Glider_Item_C", "IsOnGround");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_Glider_Item_C_IsOnGround_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_Glider_Item_C", "IsOnGround");
+
+	Params::ADA_Glider_Item_C_IsOnGround_Params Parms{};
 
 	Parms.CallFunc_GetInstigator_ReturnValue = CallFunc_GetInstigator_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Pawn = K2Node_DynamicCast_AsFort_Player_Pawn;
@@ -55,9 +83,12 @@ void ADA_Glider_Item_C::IsOnGround(bool* bOnGround, class APawn* CallFunc_GetIns
 
 void ADA_Glider_Item_C::RaiseUsageError(struct FGameplayTagContainer& FailedReason, class APawn* CallFunc_GetInstigator_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("DA_Glider_Item_C", "RaiseUsageError");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_Glider_Item_C_RaiseUsageError_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_Glider_Item_C", "RaiseUsageError");
+
+	Params::ADA_Glider_Item_C_RaiseUsageError_Params Parms{};
 
 	Parms.FailedReason = FailedReason;
 	Parms.CallFunc_GetInstigator_ReturnValue = CallFunc_GetInstigator_ReturnValue;
@@ -76,9 +107,12 @@ void ADA_Glider_Item_C::RaiseUsageError(struct FGameplayTagContainer& FailedReas
 
 void ADA_Glider_Item_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 {
-	static auto Func = Class->GetFunction("DA_Glider_Item_C", "BPPressTrigger");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_Glider_Item_C_BPPressTrigger_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_Glider_Item_C", "BPPressTrigger");
+
+	Params::ADA_Glider_Item_C_BPPressTrigger_Params Parms{};
 
 	Parms.FortDecoHelper = FortDecoHelper;
 
@@ -95,9 +129,12 @@ void ADA_Glider_Item_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 
 void ADA_Glider_Item_C::ExecuteUbergraph_DA_Glider_Item(int32 EntryPoint, class AFortDecoHelper* K2Node_Event_FortDecoHelper)
 {
-	static auto Func = Class->GetFunction("DA_Glider_Item_C", "ExecuteUbergraph_DA_Glider_Item");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_Glider_Item_C_ExecuteUbergraph_DA_Glider_Item_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_Glider_Item_C", "ExecuteUbergraph_DA_Glider_Item");
+
+	Params::ADA_Glider_Item_C_ExecuteUbergraph_DA_Glider_Item_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_FortDecoHelper = K2Node_Event_FortDecoHelper;
@@ -108,6 +145,4 @@ void ADA_Glider_Item_C::ExecuteUbergraph_DA_Glider_Item(int32 EntryPoint, class 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

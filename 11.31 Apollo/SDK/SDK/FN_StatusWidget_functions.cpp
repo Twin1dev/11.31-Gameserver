@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass StatusWidget.StatusWidget_C
+// (None)
+
+class UClass* UStatusWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("StatusWidget_C");
+
+	return Clss;
+}
+
+
+// StatusWidget_C StatusWidget.Default__StatusWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UStatusWidget_C* UStatusWidget_C::GetDefaultObj()
+{
+	static class UStatusWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UStatusWidget_C*>(UStatusWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function StatusWidget.StatusWidget_C.SetContinueButtonText
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UStatusWidget_C::SetContinueButtonText(class FText& ContinueText)
 {
-	static auto Func = Class->GetFunction("StatusWidget_C", "SetContinueButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::UStatusWidget_C_SetContinueButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StatusWidget_C", "SetContinueButtonText");
+
+	Params::UStatusWidget_C_SetContinueButtonText_Params Parms{};
 
 	Parms.ContinueText = ContinueText;
 
@@ -43,9 +71,12 @@ void UStatusWidget_C::SetContinueButtonText(class FText& ContinueText)
 
 void UStatusWidget_C::ExecuteUbergraph_StatusWidget(int32 EntryPoint, class FText K2Node_Event_ContinueText, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("StatusWidget_C", "ExecuteUbergraph_StatusWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UStatusWidget_C_ExecuteUbergraph_StatusWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StatusWidget_C", "ExecuteUbergraph_StatusWidget");
+
+	Params::UStatusWidget_C_ExecuteUbergraph_StatusWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_ContinueText = K2Node_Event_ContinueText;
@@ -58,6 +89,4 @@ void UStatusWidget_C::ExecuteUbergraph_StatusWidget(int32 EntryPoint, class FTex
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_Ranged_Lotus_Mustache.B_Ranged_Lotus_Mustache_C
+// (Actor)
+
+class UClass* AB_Ranged_Lotus_Mustache_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Ranged_Lotus_Mustache_C");
+
+	return Clss;
+}
+
+
+// B_Ranged_Lotus_Mustache_C B_Ranged_Lotus_Mustache.Default__B_Ranged_Lotus_Mustache_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Ranged_Lotus_Mustache_C* AB_Ranged_Lotus_Mustache_C::GetDefaultObj()
+{
+	static class AB_Ranged_Lotus_Mustache_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Ranged_Lotus_Mustache_C*>(AB_Ranged_Lotus_Mustache_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_Ranged_Lotus_Mustache.B_Ranged_Lotus_Mustache_C.Timeline_0__FinishedFunc
 // (BlueprintEvent)
 // Parameters:
 
 void AB_Ranged_Lotus_Mustache_C::Timeline_0__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "Timeline_0__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Lotus_Mustache_C_Timeline_0__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "Timeline_0__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AB_Ranged_Lotus_Mustache_C::Timeline_0__FinishedFunc()
 
 void AB_Ranged_Lotus_Mustache_C::Timeline_0__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "Timeline_0__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Lotus_Mustache_C_Timeline_0__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "Timeline_0__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void AB_Ranged_Lotus_Mustache_C::Timeline_0__UpdateFunc()
 
 void AB_Ranged_Lotus_Mustache_C::Timeline_1__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "Timeline_1__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Lotus_Mustache_C_Timeline_1__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "Timeline_1__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void AB_Ranged_Lotus_Mustache_C::Timeline_1__FinishedFunc()
 
 void AB_Ranged_Lotus_Mustache_C::Timeline_1__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "Timeline_1__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Lotus_Mustache_C_Timeline_1__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "Timeline_1__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -86,9 +119,12 @@ void AB_Ranged_Lotus_Mustache_C::Timeline_1__UpdateFunc()
 
 void AB_Ranged_Lotus_Mustache_C::OnSpawnProjectile(class AFortProjectileBase* SpawnProjectile)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "OnSpawnProjectile");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Lotus_Mustache_C_OnSpawnProjectile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "OnSpawnProjectile");
+
+	Params::AB_Ranged_Lotus_Mustache_C_OnSpawnProjectile_Params Parms{};
 
 	Parms.SpawnProjectile = SpawnProjectile;
 
@@ -103,12 +139,14 @@ void AB_Ranged_Lotus_Mustache_C::OnSpawnProjectile(class AFortProjectileBase* Sp
 
 void AB_Ranged_Lotus_Mustache_C::K2_OnUnEquip()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "K2_OnUnEquip");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Lotus_Mustache_C_K2_OnUnEquip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "K2_OnUnEquip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -119,12 +157,14 @@ void AB_Ranged_Lotus_Mustache_C::K2_OnUnEquip()
 
 void AB_Ranged_Lotus_Mustache_C::OnWeaponAttached()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "OnWeaponAttached");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Lotus_Mustache_C_OnWeaponAttached_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "OnWeaponAttached");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -136,9 +176,12 @@ void AB_Ranged_Lotus_Mustache_C::OnWeaponAttached()
 
 void AB_Ranged_Lotus_Mustache_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Lotus_Mustache_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "ReceiveTick");
+
+	Params::AB_Ranged_Lotus_Mustache_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -153,12 +196,14 @@ void AB_Ranged_Lotus_Mustache_C::ReceiveTick(float DeltaSeconds)
 
 void AB_Ranged_Lotus_Mustache_C::NewTarget()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "NewTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Lotus_Mustache_C_NewTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "NewTarget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -171,9 +216,12 @@ void AB_Ranged_Lotus_Mustache_C::NewTarget()
 
 void AB_Ranged_Lotus_Mustache_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondaryFire)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "OnPlayWeaponFireFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Lotus_Mustache_C_OnPlayWeaponFireFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "OnPlayWeaponFireFX");
+
+	Params::AB_Ranged_Lotus_Mustache_C_OnPlayWeaponFireFX_Params Parms{};
 
 	Parms.bPersistentFire = bPersistentFire;
 	Parms.bSecondaryFire = bSecondaryFire;
@@ -189,12 +237,14 @@ void AB_Ranged_Lotus_Mustache_C::OnPlayWeaponFireFX(bool bPersistentFire, bool b
 
 void AB_Ranged_Lotus_Mustache_C::SetHealthPercentServer()
 {
-	static auto Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "SetHealthPercentServer");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Lotus_Mustache_C_SetHealthPercentServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "SetHealthPercentServer");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -206,9 +256,12 @@ void AB_Ranged_Lotus_Mustache_C::SetHealthPercentServer()
 
 void AB_Ranged_Lotus_Mustache_C::SetHealthPercentClient(float HealthPercent)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "SetHealthPercentClient");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Lotus_Mustache_C_SetHealthPercentClient_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "SetHealthPercentClient");
+
+	Params::AB_Ranged_Lotus_Mustache_C_SetHealthPercentClient_Params Parms{};
 
 	Parms.HealthPercent = HealthPercent;
 
@@ -262,9 +315,12 @@ void AB_Ranged_Lotus_Mustache_C::SetHealthPercentClient(float HealthPercent)
 
 void AB_Ranged_Lotus_Mustache_C::ExecuteUbergraph_B_Ranged_Lotus_Mustache(int32 EntryPoint, class AFortProjectileBase* K2Node_Event_SpawnProjectile, bool CallFunc_IsValid_ReturnValue, TScriptInterface<class IFortProjectileMovementInterface> CallFunc_SetHomingStyle_self_CastInput, TScriptInterface<class IFortProjectileMovementInterface> CallFunc_SetHomingLockTargetDistanceThreshold_self_CastInput, TScriptInterface<class IFortProjectileMovementInterface> CallFunc_SetHomingTurnSpeedMax_self_CastInput, TScriptInterface<class IFortProjectileMovementInterface> CallFunc_SetHomingTurnSpeedMin_self_CastInput, bool CallFunc_IsValid_ReturnValue_1, TScriptInterface<class IFortProjectileMovementInterface> CallFunc_SetHomingTarget_self_CastInput, float K2Node_Event_DeltaSeconds, bool CallFunc_IsLocallyControlled_ReturnValue, bool K2Node_Event_bPersistentFire, bool K2Node_Event_bSecondaryFire, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, float K2Node_CustomEvent_HealthPercent, float CallFunc_GetMaxHealth_ReturnValue, float CallFunc_GetHealth_ReturnValue, bool CallFunc_IsServer_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsValid_ReturnValue_2, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FTransform& CallFunc_Conv_VectorToTransform_ReturnValue, const struct FHitResult& CallFunc_K2_SetActorLocation_SweepHitResult, bool CallFunc_K2_SetActorLocation_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class AAthena_LockOnWidgetActor_Proto_C* CallFunc_FinishSpawningActor_ReturnValue, class UUserWidget* CallFunc_GetUserWidgetObject_ReturnValue, class ULotus_Mustache_HealthBar_C* K2Node_DynamicCast_AsLotus_Mustache_Health_Bar, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsValid_ReturnValue_3, float CallFunc_GetDistanceTo_ReturnValue, bool CallFunc_RowToBool_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue, float CallFunc_SelectFloat_ReturnValue, TScriptInterface<class IFortProjectileMovementInterface> CallFunc_SetHomingTimeUntilMaxTurnSpeed_self_CastInput)
 {
-	static auto Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "ExecuteUbergraph_B_Ranged_Lotus_Mustache");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Ranged_Lotus_Mustache_C_ExecuteUbergraph_B_Ranged_Lotus_Mustache_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Ranged_Lotus_Mustache_C", "ExecuteUbergraph_B_Ranged_Lotus_Mustache");
+
+	Params::AB_Ranged_Lotus_Mustache_C_ExecuteUbergraph_B_Ranged_Lotus_Mustache_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_SpawnProjectile = K2Node_Event_SpawnProjectile;
@@ -312,6 +368,4 @@ void AB_Ranged_Lotus_Mustache_C::ExecuteUbergraph_B_Ranged_Lotus_Mustache(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

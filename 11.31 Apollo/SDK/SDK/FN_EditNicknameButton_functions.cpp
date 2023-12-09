@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass EditNicknameButton.EditNicknameButton_C
+// (None)
+
+class UClass* UEditNicknameButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EditNicknameButton_C");
+
+	return Clss;
+}
+
+
+// EditNicknameButton_C EditNicknameButton.Default__EditNicknameButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UEditNicknameButton_C* UEditNicknameButton_C::GetDefaultObj()
+{
+	static class UEditNicknameButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEditNicknameButton_C*>(UEditNicknameButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function EditNicknameButton.EditNicknameButton_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UEditNicknameButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("EditNicknameButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditNicknameButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditNicknameButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UEditNicknameButton_C::BP_OnHovered()
 
 void UEditNicknameButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("EditNicknameButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditNicknameButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditNicknameButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +85,12 @@ void UEditNicknameButton_C::BP_OnUnhovered()
 
 void UEditNicknameButton_C::ExecuteUbergraph_EditNicknameButton(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("EditNicknameButton_C", "ExecuteUbergraph_EditNicknameButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UEditNicknameButton_C_ExecuteUbergraph_EditNicknameButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EditNicknameButton_C", "ExecuteUbergraph_EditNicknameButton");
+
+	Params::UEditNicknameButton_C_ExecuteUbergraph_EditNicknameButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -70,6 +102,4 @@ void UEditNicknameButton_C::ExecuteUbergraph_EditNicknameButton(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

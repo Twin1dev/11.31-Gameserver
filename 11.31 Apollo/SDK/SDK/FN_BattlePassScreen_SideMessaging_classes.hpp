@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -30,11 +27,8 @@ public:
 	class UImage*                                TopAngle;                                          // 0x280(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         FlipAxis;                                          // 0x288(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BattlePassScreen_SideMessaging_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UBattlePassScreen_SideMessaging_C* GetDefaultObj();
 
 	void PreConstruct(bool IsDesignTime);
 	void ExecuteUbergraph_BattlePassScreen_SideMessaging(int32 EntryPoint, const struct FMargin& K2Node_MakeStruct_Margin, const struct FVector2D& Temp_struct_Variable, bool Temp_bool_Variable, const struct FVector2D& Temp_struct_Variable_1, const struct FVector2D& Temp_struct_Variable_2, bool Temp_bool_Variable_1, const struct FVector2D& Temp_struct_Variable_3, const struct FVector2D& Temp_struct_Variable_4, bool Temp_bool_Variable_2, bool K2Node_Event_IsDesignTime, const struct FVector2D& K2Node_Select_Default, const struct FVector2D& K2Node_Select_Default_1, const struct FVector2D& Temp_struct_Variable_5, class UHorizontalBoxSlot* CallFunc_SlotAsHorizontalBoxSlot_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin_1, bool Temp_bool_Variable_3, const struct FMargin& K2Node_Select_Default_2, const struct FVector2D& K2Node_Select_Default_3);
@@ -42,6 +36,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

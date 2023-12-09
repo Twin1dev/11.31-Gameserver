@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass Creative_Listener_PlayerEmote_Interface.Creative_Listener_PlayerEmote_Interface_C
+// (None)
+
+class UClass* ICreative_Listener_PlayerEmote_Interface_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Creative_Listener_PlayerEmote_Interface_C");
+
+	return Clss;
+}
+
+
+// Creative_Listener_PlayerEmote_Interface_C Creative_Listener_PlayerEmote_Interface.Default__Creative_Listener_PlayerEmote_Interface_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ICreative_Listener_PlayerEmote_Interface_C* ICreative_Listener_PlayerEmote_Interface_C::GetDefaultObj()
+{
+	static class ICreative_Listener_PlayerEmote_Interface_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ICreative_Listener_PlayerEmote_Interface_C*>(ICreative_Listener_PlayerEmote_Interface_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Creative_Listener_PlayerEmote_Interface.Creative_Listener_PlayerEmote_Interface_C.OnPlayerEmoteEnded
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ICreative_Listener_PlayerEmote_Interface_C::OnPlayerEmoteEnded(class AFortPawn* PlayerEmoting)
 {
-	static auto Func = Class->GetFunction("Creative_Listener_PlayerEmote_Interface_C", "OnPlayerEmoteEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::ICreative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_Listener_PlayerEmote_Interface_C", "OnPlayerEmoteEnded");
+
+	Params::ICreative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteEnded_Params Parms{};
 
 	Parms.PlayerEmoting = PlayerEmoting;
 
@@ -40,9 +68,12 @@ void ICreative_Listener_PlayerEmote_Interface_C::OnPlayerEmoteEnded(class AFortP
 
 void ICreative_Listener_PlayerEmote_Interface_C::OnPlayerEmoteStarted(class AFortPawn* PlayerEmoting)
 {
-	static auto Func = Class->GetFunction("Creative_Listener_PlayerEmote_Interface_C", "OnPlayerEmoteStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::ICreative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Creative_Listener_PlayerEmote_Interface_C", "OnPlayerEmoteStarted");
+
+	Params::ICreative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteStarted_Params Parms{};
 
 	Parms.PlayerEmoting = PlayerEmoting;
 
@@ -52,6 +83,4 @@ void ICreative_Listener_PlayerEmote_Interface_C::OnPlayerEmoteStarted(class AFor
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

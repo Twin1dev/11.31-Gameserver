@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_AthenaAlwaysLoadedContentHack.B_AthenaAlwaysLoadedContentHack_C
+// (Actor)
+
+class UClass* AB_AthenaAlwaysLoadedContentHack_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_AthenaAlwaysLoadedContentHack_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// B_AthenaAlwaysLoadedContentHack_C B_AthenaAlwaysLoadedContentHack.Default__B_AthenaAlwaysLoadedContentHack_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_AthenaAlwaysLoadedContentHack_C* AB_AthenaAlwaysLoadedContentHack_C::GetDefaultObj()
+{
+	static class AB_AthenaAlwaysLoadedContentHack_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_AthenaAlwaysLoadedContentHack_C*>(AB_AthenaAlwaysLoadedContentHack_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GC_Shield_FullyCharged.GC_Shield_FullyCharged_C
+// (None)
+
+class UClass* UGC_Shield_FullyCharged_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GC_Shield_FullyCharged_C");
+
+	return Clss;
+}
+
+
+// GC_Shield_FullyCharged_C GC_Shield_FullyCharged.Default__GC_Shield_FullyCharged_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGC_Shield_FullyCharged_C* UGC_Shield_FullyCharged_C::GetDefaultObj()
+{
+	static class UGC_Shield_FullyCharged_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGC_Shield_FullyCharged_C*>(UGC_Shield_FullyCharged_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GC_Shield_FullyCharged.GC_Shield_FullyCharged_C.OnBurst
@@ -32,9 +57,12 @@ namespace SDK
 
 void UGC_Shield_FullyCharged_C::OnBurst(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GC_Shield_FullyCharged_C", "OnBurst");
+	static class UFunction* Func = nullptr;
 
-	Params::UGC_Shield_FullyCharged_C_OnBurst_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Shield_FullyCharged_C", "OnBurst");
+
+	Params::UGC_Shield_FullyCharged_C_OnBurst_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -54,6 +82,4 @@ void UGC_Shield_FullyCharged_C::OnBurst(class AActor* MyTarget, struct FGameplay
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass StoreCamera_Blueprint.StoreCamera_Blueprint_C
+// (Actor)
+
+class UClass* AStoreCamera_Blueprint_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("StoreCamera_Blueprint_C");
+
+	return Clss;
+}
+
+
+// StoreCamera_Blueprint_C StoreCamera_Blueprint.Default__StoreCamera_Blueprint_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AStoreCamera_Blueprint_C* AStoreCamera_Blueprint_C::GetDefaultObj()
+{
+	static class AStoreCamera_Blueprint_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AStoreCamera_Blueprint_C*>(AStoreCamera_Blueprint_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function StoreCamera_Blueprint.StoreCamera_Blueprint_C.UserConstructionScript
@@ -25,9 +50,12 @@ namespace SDK
 
 void AStoreCamera_Blueprint_C::UserConstructionScript(const struct FRotator& CallFunc_K2_GetComponentRotation_ReturnValue, const struct FRotator& CallFunc_K2_GetComponentRotation_ReturnValue_1, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("StoreCamera_Blueprint_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AStoreCamera_Blueprint_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreCamera_Blueprint_C", "UserConstructionScript");
+
+	Params::AStoreCamera_Blueprint_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_K2_GetComponentRotation_ReturnValue = CallFunc_K2_GetComponentRotation_ReturnValue;
 	Parms.CallFunc_K2_GetComponentRotation_ReturnValue_1 = CallFunc_K2_GetComponentRotation_ReturnValue_1;
@@ -45,12 +73,14 @@ void AStoreCamera_Blueprint_C::UserConstructionScript(const struct FRotator& Cal
 
 void AStoreCamera_Blueprint_C::Timeline_0__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("StoreCamera_Blueprint_C", "Timeline_0__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AStoreCamera_Blueprint_C_Timeline_0__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreCamera_Blueprint_C", "Timeline_0__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -61,12 +91,14 @@ void AStoreCamera_Blueprint_C::Timeline_0__FinishedFunc()
 
 void AStoreCamera_Blueprint_C::Timeline_0__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("StoreCamera_Blueprint_C", "Timeline_0__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AStoreCamera_Blueprint_C_Timeline_0__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreCamera_Blueprint_C", "Timeline_0__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -77,12 +109,14 @@ void AStoreCamera_Blueprint_C::Timeline_0__UpdateFunc()
 
 void AStoreCamera_Blueprint_C::ChoicePack__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("StoreCamera_Blueprint_C", "ChoicePack__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AStoreCamera_Blueprint_C_ChoicePack__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreCamera_Blueprint_C", "ChoicePack__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -93,12 +127,14 @@ void AStoreCamera_Blueprint_C::ChoicePack__FinishedFunc()
 
 void AStoreCamera_Blueprint_C::ChoicePack__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("StoreCamera_Blueprint_C", "ChoicePack__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AStoreCamera_Blueprint_C_ChoicePack__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreCamera_Blueprint_C", "ChoicePack__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -109,12 +145,14 @@ void AStoreCamera_Blueprint_C::ChoicePack__UpdateFunc()
 
 void AStoreCamera_Blueprint_C::OnActivated()
 {
-	static auto Func = Class->GetFunction("StoreCamera_Blueprint_C", "OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AStoreCamera_Blueprint_C_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreCamera_Blueprint_C", "OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -125,12 +163,14 @@ void AStoreCamera_Blueprint_C::OnActivated()
 
 void AStoreCamera_Blueprint_C::OnDeactivated()
 {
-	static auto Func = Class->GetFunction("StoreCamera_Blueprint_C", "OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AStoreCamera_Blueprint_C_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreCamera_Blueprint_C", "OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -141,12 +181,14 @@ void AStoreCamera_Blueprint_C::OnDeactivated()
 
 void AStoreCamera_Blueprint_C::OpeningCameraTransition()
 {
-	static auto Func = Class->GetFunction("StoreCamera_Blueprint_C", "OpeningCameraTransition");
+	static class UFunction* Func = nullptr;
 
-	Params::AStoreCamera_Blueprint_C_OpeningCameraTransition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreCamera_Blueprint_C", "OpeningCameraTransition");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -157,12 +199,14 @@ void AStoreCamera_Blueprint_C::OpeningCameraTransition()
 
 void AStoreCamera_Blueprint_C::ResetCamera()
 {
-	static auto Func = Class->GetFunction("StoreCamera_Blueprint_C", "ResetCamera");
+	static class UFunction* Func = nullptr;
 
-	Params::AStoreCamera_Blueprint_C_ResetCamera_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreCamera_Blueprint_C", "ResetCamera");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -174,9 +218,12 @@ void AStoreCamera_Blueprint_C::ResetCamera()
 
 void AStoreCamera_Blueprint_C::DarkenBGVisibility(bool Enable)
 {
-	static auto Func = Class->GetFunction("StoreCamera_Blueprint_C", "DarkenBGVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::AStoreCamera_Blueprint_C_DarkenBGVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreCamera_Blueprint_C", "DarkenBGVisibility");
+
+	Params::AStoreCamera_Blueprint_C_DarkenBGVisibility_Params Parms{};
 
 	Parms.Enable = Enable;
 
@@ -189,14 +236,16 @@ void AStoreCamera_Blueprint_C::DarkenBGVisibility(bool Enable)
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
-void AStoreCamera_Blueprint_C::ChoicePackFOV_Out()
+void AStoreCamera_Blueprint_C::ChoicePackFOVMinusOut()
 {
-	static auto Func = Class->GetFunction("StoreCamera_Blueprint_C", "ChoicePackFOV-Out");
+	static class UFunction* Func = nullptr;
 
-	Params::AStoreCamera_Blueprint_C_ChoicePackFOV_Out_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreCamera_Blueprint_C", "ChoicePackFOV-Out");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -205,14 +254,16 @@ void AStoreCamera_Blueprint_C::ChoicePackFOV_Out()
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
-void AStoreCamera_Blueprint_C::ChoicePackFOV_In()
+void AStoreCamera_Blueprint_C::ChoicePackFOVMinusIn()
 {
-	static auto Func = Class->GetFunction("StoreCamera_Blueprint_C", "ChoicePackFOV-In");
+	static class UFunction* Func = nullptr;
 
-	Params::AStoreCamera_Blueprint_C_ChoicePackFOV_In_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreCamera_Blueprint_C", "ChoicePackFOV-In");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -256,9 +307,12 @@ void AStoreCamera_Blueprint_C::ChoicePackFOV_In()
 
 void AStoreCamera_Blueprint_C::ExecuteUbergraph_StoreCamera_Blueprint(int32 EntryPoint, int32 Temp_int_Loop_Counter_Variable, float CallFunc_Lerp_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, float CallFunc_Lerp_ReturnValue_1, const struct FRotator& CallFunc_RLerp_ReturnValue, const struct FVector& CallFunc_VLerp_ReturnValue, const struct FHitResult& CallFunc_K2_SetActorLocationAndRotation_SweepHitResult, bool CallFunc_K2_SetActorLocationAndRotation_ReturnValue, int32 Temp_int_Array_Index_Variable_1, bool K2Node_CustomEvent_Enable, TArray<class AStorePinataMaster_Parent_C*>& CallFunc_GetAllActorsOfClass_OutActors, class AStorePinataMaster_Parent_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, TArray<class AStoreCardReveal_Parent_C*>& CallFunc_GetAllActorsOfClass_OutActors_1, class AStoreCardReveal_Parent_C* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, TArray<class ATVPostProcessBP_C*>& CallFunc_GetAllActorsOfClass_OutActors_2, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Array_Length_ReturnValue_2, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1, class AFortTimeOfDayManager* CallFunc_GetTimeOfDayManagerFromContext_ReturnValue, int32 Temp_int_Loop_Counter_Variable_2, bool CallFunc_Less_IntInt_ReturnValue_2, int32 CallFunc_Add_IntInt_ReturnValue_2, int32 Temp_int_Array_Index_Variable_2, class ATVPostProcessBP_C* CallFunc_Array_Get_Item_2, bool CallFunc_IsValid_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("StoreCamera_Blueprint_C", "ExecuteUbergraph_StoreCamera_Blueprint");
+	static class UFunction* Func = nullptr;
 
-	Params::AStoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreCamera_Blueprint_C", "ExecuteUbergraph_StoreCamera_Blueprint");
+
+	Params::AStoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -300,6 +354,4 @@ void AStoreCamera_Blueprint_C::ExecuteUbergraph_StoreCamera_Blueprint(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

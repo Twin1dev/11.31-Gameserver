@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -49,27 +46,24 @@ public:
 	struct FSlateBrush                           DemoImage;                                         // 0x408(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         bIncludeName;                                      // 0x490(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	bool                                         bIncludeDescription;                               // 0x491(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                        Pad_4733[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4FF6[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTextBlock*                            LevelText_0;                                       // 0x498(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bUseLegacyFixedSizeIcons;                          // 0x4A0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	enum class EFortBrushSize                    IconSize;                                          // 0x4A1(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         bUseLargeFormatName;                               // 0x4A2(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                        Pad_4734[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4FF7[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                Locked_Text_Style;                                 // 0x4A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                Locked_Description_Style;                          // 0x4B0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FMargin                               ListPadding;                                       // 0x4B8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	class UClass*                                Default_Description_Style;                         // 0x4C8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                Default_Text_Style;                                // 0x4D0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bEnableMouseTooltips;                              // 0x4D8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                        Pad_4735[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4FF8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CachedTooltipDescription;                          // 0x4E0(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         bShowBadges;                                       // 0x4F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("PerkWidgetNew_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UPerkWidgetNew_C* GetDefaultObj();
 
 	void SetDescriptionWraptTextAt(float WrapTextAt, bool Temp_bool_Variable, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, float Temp_float_Variable, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue_1, float K2Node_Select_Default, int32 CallFunc_FTrunc_ReturnValue);
 	void UpdatePerk(bool Temp_bool_Variable, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_3, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, bool CallFunc_IsPerkHighlighted_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool CallFunc_HasAbility_ReturnValue, bool Temp_bool_Variable_4, bool CallFunc_ShouldFadePerk_Result, enum class ESlateVisibility K2Node_Select_Default, class UClass* K2Node_Select_Default_1, class UClass* K2Node_Select_Default_2, enum class ESlateVisibility K2Node_Select_Default_3, const struct FLinearColor& K2Node_Select_Default_4);
@@ -93,6 +87,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

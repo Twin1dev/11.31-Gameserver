@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_Melee_Generic.B_Melee_Generic_C
+// (Actor)
+
+class UClass* AB_Melee_Generic_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Melee_Generic_C");
+
+	return Clss;
+}
+
+
+// B_Melee_Generic_C B_Melee_Generic.Default__B_Melee_Generic_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Melee_Generic_C* AB_Melee_Generic_C::GetDefaultObj()
+{
+	static class AB_Melee_Generic_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Melee_Generic_C*>(AB_Melee_Generic_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_Melee_Generic.B_Melee_Generic_C.Melee_Effect_Color
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void AB_Melee_Generic_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "Melee_Effect_Color");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_Melee_Effect_Color_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "Melee_Effect_Color");
+
+	Params::AB_Melee_Generic_C_Melee_Effect_Color_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Melee_Color_Set != nullptr)
-		*Melee_Color_Set = Parms.Melee_Color_Set;
+		*Melee_Color_Set = std::move(Parms.Melee_Color_Set);
 
 }
 
@@ -68,9 +96,12 @@ void AB_Melee_Generic_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 
 void AB_Melee_Generic_C::PlayCQCPickaxeEnemyAudio(const struct FHitResult& Hit_Result, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, class APawn* CallFunc_GetInstigator_ReturnValue, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor, bool K2Node_DynamicCast_bSuccess, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess_1, class APlayerController* CallFunc_GetLocalViewingPlayerController_ReturnValue, uint8 CallFunc_GetActorTeam_ReturnValue, bool CallFunc_IsValid_ReturnValue, enum class EFortTeamAffiliation CallFunc_GetTeamAffiliationToLocalPlayer_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "PlayCQCPickaxeEnemyAudio");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_PlayCQCPickaxeEnemyAudio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "PlayCQCPickaxeEnemyAudio");
+
+	Params::AB_Melee_Generic_C_PlayCQCPickaxeEnemyAudio_Params Parms{};
 
 	Parms.Hit_Result = Hit_Result;
 	Parms.CallFunc_BreakHitResult_bBlockingHit = CallFunc_BreakHitResult_bBlockingHit;
@@ -115,9 +146,12 @@ void AB_Melee_Generic_C::PlayCQCPickaxeEnemyAudio(const struct FHitResult& Hit_R
 
 void AB_Melee_Generic_C::SetActiveAlterationIdleParticles(bool Active, bool Reset, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "SetActiveAlterationIdleParticles");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_SetActiveAlterationIdleParticles_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "SetActiveAlterationIdleParticles");
+
+	Params::AB_Melee_Generic_C_SetActiveAlterationIdleParticles_Params Parms{};
 
 	Parms.Active = Active;
 	Parms.Reset = Reset;
@@ -149,9 +183,12 @@ void AB_Melee_Generic_C::SetActiveAlterationIdleParticles(bool Active, bool Rese
 
 void AB_Melee_Generic_C::SetWpnRarity(enum class EFortRarity Temp_byte_Variable, uint8 Temp_byte_Variable_1, uint8 Temp_byte_Variable_2, uint8 Temp_byte_Variable_3, uint8 Temp_byte_Variable_4, uint8 Temp_byte_Variable_5, uint8 Temp_byte_Variable_6, uint8 Temp_byte_Variable_7, uint8 Temp_byte_Variable_8, class UFortWeaponItemDefinition* CallFunc_GetWeaponData_ReturnValue, enum class EFortRarity CallFunc_GetRarity_ReturnValue, uint8 K2Node_Select_Default, float CallFunc_Conv_ByteToFloat_ReturnValue, const class FString& CallFunc_Conv_FloatToString_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "SetWpnRarity");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_SetWpnRarity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "SetWpnRarity");
+
+	Params::AB_Melee_Generic_C_SetWpnRarity_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
@@ -179,12 +216,14 @@ void AB_Melee_Generic_C::SetWpnRarity(enum class EFortRarity Temp_byte_Variable,
 
 void AB_Melee_Generic_C::UserConstructionScript()
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "UserConstructionScript");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -196,9 +235,12 @@ void AB_Melee_Generic_C::UserConstructionScript()
 
 void AB_Melee_Generic_C::OnLoaded_CB594210420542B302428F8181D85E48(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "OnLoaded_CB594210420542B302428F8181D85E48");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_OnLoaded_CB594210420542B302428F8181D85E48_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "OnLoaded_CB594210420542B302428F8181D85E48");
+
+	Params::AB_Melee_Generic_C_OnLoaded_CB594210420542B302428F8181D85E48_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -214,9 +256,12 @@ void AB_Melee_Generic_C::OnLoaded_CB594210420542B302428F8181D85E48(class UObject
 
 void AB_Melee_Generic_C::MeleeSwingRight(bool First_Right)
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "MeleeSwingRight");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_MeleeSwingRight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "MeleeSwingRight");
+
+	Params::AB_Melee_Generic_C_MeleeSwingRight_Params Parms{};
 
 	Parms.First_Right = First_Right;
 
@@ -232,9 +277,12 @@ void AB_Melee_Generic_C::MeleeSwingRight(bool First_Right)
 
 void AB_Melee_Generic_C::MeleeSwingLeft(bool First_Left)
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "MeleeSwingLeft");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_MeleeSwingLeft_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "MeleeSwingLeft");
+
+	Params::AB_Melee_Generic_C_MeleeSwingLeft_Params Parms{};
 
 	Parms.First_Left = First_Left;
 
@@ -249,12 +297,14 @@ void AB_Melee_Generic_C::MeleeSwingLeft(bool First_Left)
 
 void AB_Melee_Generic_C::FootStepLeft()
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "FootStepLeft");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_FootStepLeft_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "FootStepLeft");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -265,12 +315,14 @@ void AB_Melee_Generic_C::FootStepLeft()
 
 void AB_Melee_Generic_C::FootStepRight()
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "FootStepRight");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_FootStepRight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "FootStepRight");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -281,12 +333,14 @@ void AB_Melee_Generic_C::FootStepRight()
 
 void AB_Melee_Generic_C::MeleeSwingRight_End()
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "MeleeSwingRight_End");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_MeleeSwingRight_End_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "MeleeSwingRight_End");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -297,12 +351,14 @@ void AB_Melee_Generic_C::MeleeSwingRight_End()
 
 void AB_Melee_Generic_C::MeleeSwingLeft_End()
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "MeleeSwingLeft_End");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_MeleeSwingLeft_End_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "MeleeSwingLeft_End");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -313,12 +369,14 @@ void AB_Melee_Generic_C::MeleeSwingLeft_End()
 
 void AB_Melee_Generic_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -331,9 +389,12 @@ void AB_Melee_Generic_C::ReceiveBeginPlay()
 
 void AB_Melee_Generic_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondaryFire)
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "OnPlayWeaponFireFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_OnPlayWeaponFireFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "OnPlayWeaponFireFX");
+
+	Params::AB_Melee_Generic_C_OnPlayWeaponFireFX_Params Parms{};
 
 	Parms.bPersistentFire = bPersistentFire;
 	Parms.bSecondaryFire = bSecondaryFire;
@@ -349,12 +410,14 @@ void AB_Melee_Generic_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondar
 
 void AB_Melee_Generic_C::PlayRClickImpacts()
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "PlayRClickImpacts");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_PlayRClickImpacts_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "PlayRClickImpacts");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -368,9 +431,12 @@ void AB_Melee_Generic_C::PlayRClickImpacts()
 
 void AB_Melee_Generic_C::OnPlayImpactFX(struct FHitResult& HitResult, enum class EPhysicalSurface ImpactPhysicalSurface, class UFXSystemComponent* SpawnedPSC)
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "OnPlayImpactFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_OnPlayImpactFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "OnPlayImpactFX");
+
+	Params::AB_Melee_Generic_C_OnPlayImpactFX_Params Parms{};
 
 	Parms.HitResult = HitResult;
 	Parms.ImpactPhysicalSurface = ImpactPhysicalSurface;
@@ -387,12 +453,14 @@ void AB_Melee_Generic_C::OnPlayImpactFX(struct FHitResult& HitResult, enum class
 
 void AB_Melee_Generic_C::OnEquippedWeaponDestory()
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "OnEquippedWeaponDestory");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_OnEquippedWeaponDestory_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "OnEquippedWeaponDestory");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -403,12 +471,14 @@ void AB_Melee_Generic_C::OnEquippedWeaponDestory()
 
 void AB_Melee_Generic_C::OnWeaponAttached()
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "OnWeaponAttached");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_OnWeaponAttached_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "OnWeaponAttached");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -420,9 +490,12 @@ void AB_Melee_Generic_C::OnWeaponAttached()
 
 void AB_Melee_Generic_C::OnInitCosmeticAlterations(const struct FFortCosmeticModification& CosmeticMod)
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "OnInitCosmeticAlterations");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_OnInitCosmeticAlterations_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "OnInitCosmeticAlterations");
+
+	Params::AB_Melee_Generic_C_OnInitCosmeticAlterations_Params Parms{};
 
 	Parms.CosmeticMod = CosmeticMod;
 
@@ -439,9 +512,12 @@ void AB_Melee_Generic_C::OnInitCosmeticAlterations(const struct FFortCosmeticMod
 
 void AB_Melee_Generic_C::OnWeaponVisibilityChanged(bool bVisible, bool bSetForLocalControllerOnly)
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "OnWeaponVisibilityChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_OnWeaponVisibilityChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "OnWeaponVisibilityChanged");
+
+	Params::AB_Melee_Generic_C_OnWeaponVisibilityChanged_Params Parms{};
 
 	Parms.bVisible = bVisible;
 	Parms.bSetForLocalControllerOnly = bSetForLocalControllerOnly;
@@ -457,12 +533,14 @@ void AB_Melee_Generic_C::OnWeaponVisibilityChanged(bool bVisible, bool bSetForLo
 
 void AB_Melee_Generic_C::OnWeaponDetached()
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "OnWeaponDetached");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_OnWeaponDetached_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "OnWeaponDetached");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -559,7 +637,7 @@ void AB_Melee_Generic_C::OnWeaponDetached()
 // bool                               CallFunc_Array_Contains_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FVector                     CallFunc_Cross_VectorVector_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FRotator                    CallFunc_MakeRotFromXY_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortCosmeticModification   K2Node_Event_CosmeticMod                                         ()
+// struct FFortCosmeticModification   K2Node_Event_CosmeticMod                                         (None)
 // bool                               CallFunc_IsAssetNull_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_Event_bVisible                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_Event_bSetForLocalControllerOnly                          (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -618,9 +696,12 @@ void AB_Melee_Generic_C::OnWeaponDetached()
 
 void AB_Melee_Generic_C::ExecuteUbergraph_B_Melee_Generic(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_IsDedicatedServer_ReturnValue, bool K2Node_Event_First_Right, bool K2Node_Event_First_Left, bool K2Node_Event_bPersistentFire, bool K2Node_Event_bSecondaryFire, const struct FHitResult& K2Node_Event_HitResult, enum class EPhysicalSurface K2Node_Event_ImpactPhysicalSurface, class UFXSystemComponent* K2Node_Event_SpawnedPSC, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_3, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_4, bool CallFunc_BooleanOR_ReturnValue_2, bool CallFunc_EqualEqual_ByteByte_ReturnValue_5, bool CallFunc_EqualEqual_ByteByte_ReturnValue_6, bool CallFunc_BooleanOR_ReturnValue_3, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, class APawn* CallFunc_GetInstigator_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue, const struct FRotator& CallFunc_GetSocketRotation_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, const struct FVector& CallFunc_Conv_RotatorToVector_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, class UAnimMontage* CallFunc_GetCurrentActiveMontage_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_1, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_1, const struct FVector& CallFunc_Normal_ReturnValue_1, float CallFunc_VSize_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, float CallFunc_MultiplyMultiply_FloatFloat_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_2, float CallFunc_GetPI_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue_1, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn_1, bool K2Node_DynamicCast_bSuccess_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue_1, class APawn* CallFunc_GetInstigator_ReturnValue_2, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_2, class APawn* CallFunc_GetInstigator_ReturnValue_3, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_1, bool K2Node_DynamicCast_bSuccess_3, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue_2, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_2, const struct FVector& CallFunc_VLerp_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_3, const struct FRotator& CallFunc_GetSocketRotation_ReturnValue_1, const struct FVector& CallFunc_Normal_ReturnValue_2, const struct FVector& CallFunc_Conv_RotatorToVector_ReturnValue_1, const struct FVector& CallFunc_Cross_VectorVector_ReturnValue, bool CallFunc_Array_Contains_ReturnValue, const struct FVector& CallFunc_Cross_VectorVector_ReturnValue_1, const struct FRotator& CallFunc_MakeRotFromXY_ReturnValue, const struct FFortCosmeticModification& K2Node_Event_CosmeticMod, bool CallFunc_IsAssetNull_ReturnValue, bool K2Node_Event_bVisible, bool K2Node_Event_bSetForLocalControllerOnly, bool CallFunc_IsValid_ReturnValue_3, class UObject* Temp_object_Variable, class UObject* K2Node_CustomEvent_Loaded, class UParticleSystem* K2Node_DynamicCast_AsParticle_System, bool K2Node_DynamicCast_bSuccess_4, bool Temp_bool_Variable, const struct FVector& K2Node_Select_Default, const struct FHitResult& CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult, bool CallFunc_IsValid_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_5, class UFortWeaponItemDefinition* CallFunc_GetWeaponData_ReturnValue, TSoftObjectPtr<class UTexture2D> CallFunc_GetSmallPreviewImage_ReturnValue, class UTexture2D* CallFunc_GetOrLoadSynchronously_ReturnValue, bool CallFunc_IsValid_ReturnValue_6, class APawn* CallFunc_GetInstigator_ReturnValue_4, class APlayerPawn_Generic_Parent_C* K2Node_DynamicCast_AsPlayer_Pawn_Generic_Parent, bool K2Node_DynamicCast_bSuccess_5, const struct FTransform& CallFunc_GetSocketTransform_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, const struct FTransform& CallFunc_GetSocketTransform_ReturnValue_1, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, const struct FVector& CallFunc_BreakTransform_Location_1, const struct FRotator& CallFunc_BreakTransform_Rotation_1, const struct FVector& CallFunc_BreakTransform_Scale_1, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_BreakVector_X_2, float CallFunc_BreakVector_Y_2, float CallFunc_BreakVector_Z_2, float CallFunc_Divide_FloatFloat_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_3, float CallFunc_Multiply_FloatFloat_ReturnValue_1, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_4, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue_3, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_4, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, float CallFunc_VSize_ReturnValue_1, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult, float CallFunc_Multiply_FloatFloat_ReturnValue_2, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue_2, const struct FVector& CallFunc_MakeVector_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue_3, float CallFunc_Divide_FloatFloat_ReturnValue_4, const struct FVector& CallFunc_MakeVector_ReturnValue_2, const struct FVector& CallFunc_MakeVector_ReturnValue_3, bool CallFunc_DoesSocketExist_ReturnValue, bool CallFunc_DoesSocketExist_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Melee_Generic_C", "ExecuteUbergraph_B_Melee_Generic");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Melee_Generic_C", "ExecuteUbergraph_B_Melee_Generic");
+
+	Params::AB_Melee_Generic_C_ExecuteUbergraph_B_Melee_Generic_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -774,6 +855,4 @@ void AB_Melee_Generic_C::ExecuteUbergraph_B_Melee_Generic(int32 EntryPoint, UDel
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

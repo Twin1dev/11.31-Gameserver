@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass SubgameSelectScreen.SubgameSelectScreen_C
+// (None)
+
+class UClass* USubgameSelectScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SubgameSelectScreen_C");
+
+	return Clss;
+}
+
+
+// SubgameSelectScreen_C SubgameSelectScreen.Default__SubgameSelectScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USubgameSelectScreen_C* USubgameSelectScreen_C::GetDefaultObj()
+{
+	static class USubgameSelectScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USubgameSelectScreen_C*>(USubgameSelectScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function SubgameSelectScreen.SubgameSelectScreen_C.StartSubgameSelectMusic
@@ -24,9 +49,12 @@ namespace SDK
 
 void USubgameSelectScreen_C::StartSubgameSelectMusic(TArray<class AFort_Entry_Music_Controller_BP_C*>& CallFunc_GetAllActorsOfClass_OutActors, class AFort_Entry_Music_Controller_BP_C* CallFunc_Array_Get_Item, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "StartSubgameSelectMusic");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_StartSubgameSelectMusic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "StartSubgameSelectMusic");
+
+	Params::USubgameSelectScreen_C_StartSubgameSelectMusic_Params Parms{};
 
 	Parms.CallFunc_GetAllActorsOfClass_OutActors = CallFunc_GetAllActorsOfClass_OutActors;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
@@ -48,9 +76,12 @@ void USubgameSelectScreen_C::StartSubgameSelectMusic(TArray<class AFort_Entry_Mu
 
 void USubgameSelectScreen_C::IsMinorShutdownWarningEnabled(bool* Enabled, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, enum class EFortUIFeatureState CallFunc_GetFeatureState_OutFeatureState, enum class EFortUIFeatureStateReason CallFunc_GetFeatureState_OutReason, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "IsMinorShutdownWarningEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_IsMinorShutdownWarningEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "IsMinorShutdownWarningEnabled");
+
+	Params::USubgameSelectScreen_C_IsMinorShutdownWarningEnabled_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetFeatureState_OutFeatureState = CallFunc_GetFeatureState_OutFeatureState;
@@ -74,9 +105,12 @@ void USubgameSelectScreen_C::IsMinorShutdownWarningEnabled(bool* Enabled, class 
 
 bool USubgameSelectScreen_C::IsBusyMatchmaking(class UFortMatchmakingContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsMatchmakingLocal_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "IsBusyMatchmaking");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_IsBusyMatchmaking_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "IsBusyMatchmaking");
+
+	Params::USubgameSelectScreen_C_IsBusyMatchmaking_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_IsMatchmakingLocal_ReturnValue = CallFunc_IsMatchmakingLocal_ReturnValue;
@@ -101,9 +135,12 @@ bool USubgameSelectScreen_C::IsBusyMatchmaking(class UFortMatchmakingContext* Ca
 
 void USubgameSelectScreen_C::AdvanceTextureCycle(int32 NextTextureIndex, int32 CurrentTextureIndex, int32 CallFunc_Array_Length_ReturnValue, class UTexture* CallFunc_Array_Get_Item, class UTexture* CallFunc_Array_Get_Item_1, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "AdvanceTextureCycle");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_AdvanceTextureCycle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "AdvanceTextureCycle");
+
+	Params::USubgameSelectScreen_C_AdvanceTextureCycle_Params Parms{};
 
 	Parms.NextTextureIndex = NextTextureIndex;
 	Parms.CurrentTextureIndex = CurrentTextureIndex;
@@ -127,9 +164,12 @@ void USubgameSelectScreen_C::AdvanceTextureCycle(int32 NextTextureIndex, int32 C
 
 void USubgameSelectScreen_C::InitializeTextureCycle(class UTexture* CallFunc_Array_Get_Item, int32 CallFunc_Array_LastIndex_ReturnValue, class UTexture* CallFunc_Array_Get_Item_1)
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "InitializeTextureCycle");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_InitializeTextureCycle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "InitializeTextureCycle");
+
+	Params::USubgameSelectScreen_C_InitializeTextureCycle_Params Parms{};
 
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_Array_LastIndex_ReturnValue = CallFunc_Array_LastIndex_ReturnValue;
@@ -148,9 +188,12 @@ void USubgameSelectScreen_C::InitializeTextureCycle(class UTexture* CallFunc_Arr
 
 void USubgameSelectScreen_C::DialogResult_FE9F49084346A08B6F02BA99FB50F5CD(enum class EFortDialogResult Result, class FName ResultName)
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "DialogResult_FE9F49084346A08B6F02BA99FB50F5CD");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_DialogResult_FE9F49084346A08B6F02BA99FB50F5CD_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "DialogResult_FE9F49084346A08B6F02BA99FB50F5CD");
+
+	Params::USubgameSelectScreen_C_DialogResult_FE9F49084346A08B6F02BA99FB50F5CD_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.ResultName = ResultName;
@@ -167,9 +210,12 @@ void USubgameSelectScreen_C::DialogResult_FE9F49084346A08B6F02BA99FB50F5CD(enum 
 
 void USubgameSelectScreen_C::BndEvt__ButtonExit_K2Node_ComponentBoundEvent_193_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "BndEvt__ButtonExit_K2Node_ComponentBoundEvent_193_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_BndEvt__ButtonExit_K2Node_ComponentBoundEvent_193_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "BndEvt__ButtonExit_K2Node_ComponentBoundEvent_193_CommonButtonClicked__DelegateSignature");
+
+	Params::USubgameSelectScreen_C_BndEvt__ButtonExit_K2Node_ComponentBoundEvent_193_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -184,12 +230,14 @@ void USubgameSelectScreen_C::BndEvt__ButtonExit_K2Node_ComponentBoundEvent_193_C
 
 void USubgameSelectScreen_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -201,9 +249,12 @@ void USubgameSelectScreen_C::BP_OnActivated()
 
 void USubgameSelectScreen_C::BndEvt__SubgameTile_Campaign_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "BndEvt__SubgameTile_Campaign_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_BndEvt__SubgameTile_Campaign_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "BndEvt__SubgameTile_Campaign_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::USubgameSelectScreen_C_BndEvt__SubgameTile_Campaign_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -219,9 +270,12 @@ void USubgameSelectScreen_C::BndEvt__SubgameTile_Campaign_K2Node_ComponentBoundE
 
 void USubgameSelectScreen_C::BndEvt__SubgameTile_BattleRoyale_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "BndEvt__SubgameTile_BattleRoyale_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_BndEvt__SubgameTile_BattleRoyale_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "BndEvt__SubgameTile_BattleRoyale_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::USubgameSelectScreen_C_BndEvt__SubgameTile_BattleRoyale_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -237,9 +291,12 @@ void USubgameSelectScreen_C::BndEvt__SubgameTile_BattleRoyale_K2Node_ComponentBo
 
 void USubgameSelectScreen_C::BndEvt__SubgameTile_Creative_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "BndEvt__SubgameTile_Creative_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_BndEvt__SubgameTile_Creative_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "BndEvt__SubgameTile_Creative_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+
+	Params::USubgameSelectScreen_C_BndEvt__SubgameTile_Creative_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -254,12 +311,14 @@ void USubgameSelectScreen_C::BndEvt__SubgameTile_Creative_K2Node_ComponentBoundE
 
 void USubgameSelectScreen_C::Clear_Party_and_Matchmaking_Delegates()
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "Clear Party and Matchmaking Delegates");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_Clear_Party_and_Matchmaking_Delegates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "Clear Party and Matchmaking Delegates");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -271,9 +330,12 @@ void USubgameSelectScreen_C::Clear_Party_and_Matchmaking_Delegates()
 
 void USubgameSelectScreen_C::CustomEvent_0(enum class EMatchmakingCompleteResult Result)
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "CustomEvent_0");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_CustomEvent_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "CustomEvent_0");
+
+	Params::USubgameSelectScreen_C_CustomEvent_0_Params Parms{};
 
 	Parms.Result = Result;
 
@@ -288,12 +350,14 @@ void USubgameSelectScreen_C::CustomEvent_0(enum class EMatchmakingCompleteResult
 
 void USubgameSelectScreen_C::CustomEvent_1()
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "CustomEvent_1");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_CustomEvent_1_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "CustomEvent_1");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -304,12 +368,14 @@ void USubgameSelectScreen_C::CustomEvent_1()
 
 void USubgameSelectScreen_C::OnShowPurchaseScreenFailed()
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "OnShowPurchaseScreenFailed");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_OnShowPurchaseScreenFailed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "OnShowPurchaseScreenFailed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -320,12 +386,14 @@ void USubgameSelectScreen_C::OnShowPurchaseScreenFailed()
 
 void USubgameSelectScreen_C::BndEvt__Screen_CampaignPurchase_K2Node_ComponentBoundEvent_1_OnWidgetActivationChanged__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "BndEvt__Screen_CampaignPurchase_K2Node_ComponentBoundEvent_1_OnWidgetActivationChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_BndEvt__Screen_CampaignPurchase_K2Node_ComponentBoundEvent_1_OnWidgetActivationChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "BndEvt__Screen_CampaignPurchase_K2Node_ComponentBoundEvent_1_OnWidgetActivationChanged__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -366,9 +434,12 @@ void USubgameSelectScreen_C::BndEvt__Screen_CampaignPurchase_K2Node_ComponentBou
 
 void USubgameSelectScreen_C::ExecuteUbergraph_SubgameSelectScreen(int32 EntryPoint, enum class EFortDialogResult K2Node_CustomEvent_Result_1, class FName K2Node_CustomEvent_ResultName, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FName Temp_name_Variable, enum class EFortDialogResult Temp_byte_Variable, bool K2Node_SwitchEnum_CmpSuccess, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UFortMatchmakingContext* CallFunc_GetContext_ReturnValue, class UFortPartyContext* CallFunc_GetContext_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_2, bool CallFunc_IsBusyMatchmaking_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_3, class FText Temp_text_Variable, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class FText Temp_text_Variable_1, class UProgressModalWidget_C* CallFunc_Create_ReturnValue, enum class EMatchmakingCompleteResult K2Node_CustomEvent_Result, bool CallFunc_IsBusyMatchmaking_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("SubgameSelectScreen_C", "ExecuteUbergraph_SubgameSelectScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameSelectScreen_C", "ExecuteUbergraph_SubgameSelectScreen");
+
+	Params::USubgameSelectScreen_C_ExecuteUbergraph_SubgameSelectScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_Result_1 = K2Node_CustomEvent_Result_1;
@@ -407,6 +478,4 @@ void USubgameSelectScreen_C::ExecuteUbergraph_SubgameSelectScreen(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

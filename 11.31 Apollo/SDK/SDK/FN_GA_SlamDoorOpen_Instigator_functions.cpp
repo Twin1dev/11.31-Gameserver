@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_SlamDoorOpen_Instigator.GA_SlamDoorOpen_Instigator_C
+// (None)
+
+class UClass* UGA_SlamDoorOpen_Instigator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_SlamDoorOpen_Instigator_C");
+
+	return Clss;
+}
+
+
+// GA_SlamDoorOpen_Instigator_C GA_SlamDoorOpen_Instigator.Default__GA_SlamDoorOpen_Instigator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_SlamDoorOpen_Instigator_C* UGA_SlamDoorOpen_Instigator_C::GetDefaultObj()
+{
+	static class UGA_SlamDoorOpen_Instigator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_SlamDoorOpen_Instigator_C*>(UGA_SlamDoorOpen_Instigator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_SlamDoorOpen_Instigator.GA_SlamDoorOpen_Instigator_C.Completed_6B6649DA4284DCE7779BA98D6543CFFB
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UGA_SlamDoorOpen_Instigator_C::Completed_6B6649DA4284DCE7779BA98D6543CFFB(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "Completed_6B6649DA4284DCE7779BA98D6543CFFB");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SlamDoorOpen_Instigator_C_Completed_6B6649DA4284DCE7779BA98D6543CFFB_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "Completed_6B6649DA4284DCE7779BA98D6543CFFB");
+
+	Params::UGA_SlamDoorOpen_Instigator_C_Completed_6B6649DA4284DCE7779BA98D6543CFFB_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -43,9 +71,12 @@ void UGA_SlamDoorOpen_Instigator_C::Completed_6B6649DA4284DCE7779BA98D6543CFFB(s
 
 void UGA_SlamDoorOpen_Instigator_C::Cancelled_6B6649DA4284DCE7779BA98D6543CFFB(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "Cancelled_6B6649DA4284DCE7779BA98D6543CFFB");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SlamDoorOpen_Instigator_C_Cancelled_6B6649DA4284DCE7779BA98D6543CFFB_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "Cancelled_6B6649DA4284DCE7779BA98D6543CFFB");
+
+	Params::UGA_SlamDoorOpen_Instigator_C_Cancelled_6B6649DA4284DCE7779BA98D6543CFFB_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -63,9 +94,12 @@ void UGA_SlamDoorOpen_Instigator_C::Cancelled_6B6649DA4284DCE7779BA98D6543CFFB(s
 
 void UGA_SlamDoorOpen_Instigator_C::Triggered_6B6649DA4284DCE7779BA98D6543CFFB(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "Triggered_6B6649DA4284DCE7779BA98D6543CFFB");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SlamDoorOpen_Instigator_C_Triggered_6B6649DA4284DCE7779BA98D6543CFFB_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "Triggered_6B6649DA4284DCE7779BA98D6543CFFB");
+
+	Params::UGA_SlamDoorOpen_Instigator_C_Triggered_6B6649DA4284DCE7779BA98D6543CFFB_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -82,9 +116,12 @@ void UGA_SlamDoorOpen_Instigator_C::Triggered_6B6649DA4284DCE7779BA98D6543CFFB(s
 
 void UGA_SlamDoorOpen_Instigator_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SlamDoorOpen_Instigator_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGA_SlamDoorOpen_Instigator_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -107,7 +144,7 @@ void UGA_SlamDoorOpen_Instigator_C::K2_ActivateAbilityFromEvent(struct FGameplay
 // struct FGameplayTag                K2Node_CustomEvent_ApplicationTag                                (NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor)
 // struct FGameplayTag                Temp_struct_Variable                                             (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           ()
+// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           (None)
 // class UFortAbilityTask_PlayMontageWaitTarget*CallFunc_PlayMontageWaitTarget_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FGameplayEventData          K2Node_Event_EventData                                           (ConstParm)
@@ -116,9 +153,12 @@ void UGA_SlamDoorOpen_Instigator_C::K2_ActivateAbilityFromEvent(struct FGameplay
 
 void UGA_SlamDoorOpen_Instigator_C::ExecuteUbergraph_GA_SlamDoorOpen_Instigator(int32 EntryPoint, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_2, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_1, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, const struct FGameplayTag& Temp_struct_Variable, const struct FGameplayAbilityTargetDataHandle& Temp_struct_Variable_1, class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageWaitTarget_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FGameplayEventData& K2Node_Event_EventData, class ABuildingWall* K2Node_DynamicCast_AsBuilding_Wall, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "ExecuteUbergraph_GA_SlamDoorOpen_Instigator");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SlamDoorOpen_Instigator_C_ExecuteUbergraph_GA_SlamDoorOpen_Instigator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SlamDoorOpen_Instigator_C", "ExecuteUbergraph_GA_SlamDoorOpen_Instigator");
+
+	Params::UGA_SlamDoorOpen_Instigator_C_ExecuteUbergraph_GA_SlamDoorOpen_Instigator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_TargetData_2 = K2Node_CustomEvent_TargetData_2;
@@ -144,6 +184,4 @@ void UGA_SlamDoorOpen_Instigator_C::ExecuteUbergraph_GA_SlamDoorOpen_Instigator(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

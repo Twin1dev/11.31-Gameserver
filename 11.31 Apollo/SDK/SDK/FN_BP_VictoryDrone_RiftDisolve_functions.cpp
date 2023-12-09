@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_VictoryDrone_RiftDisolve.BP_VictoryDrone_RiftDisolve_C
+// (Actor)
+
+class UClass* ABP_VictoryDrone_RiftDisolve_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_VictoryDrone_RiftDisolve_C");
+
+	return Clss;
+}
+
+
+// BP_VictoryDrone_RiftDisolve_C BP_VictoryDrone_RiftDisolve.Default__BP_VictoryDrone_RiftDisolve_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_VictoryDrone_RiftDisolve_C* ABP_VictoryDrone_RiftDisolve_C::GetDefaultObj()
+{
+	static class ABP_VictoryDrone_RiftDisolve_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_VictoryDrone_RiftDisolve_C*>(ABP_VictoryDrone_RiftDisolve_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_VictoryDrone_RiftDisolve.BP_VictoryDrone_RiftDisolve_C.PlaySpawnAnim
@@ -27,9 +52,12 @@ namespace SDK
 
 void ABP_VictoryDrone_RiftDisolve_C::PlaySpawnAnim(class UAnimMontage* Montage, float NewLocalVar_0, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_VictoryDrone_RiftDisolve_C", "PlaySpawnAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_VictoryDrone_RiftDisolve_C", "PlaySpawnAnim");
+
+	Params::ABP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim_Params Parms{};
 
 	Parms.Montage = Montage;
 	Parms.NewLocalVar_0 = NewLocalVar_0;
@@ -49,12 +77,14 @@ void ABP_VictoryDrone_RiftDisolve_C::PlaySpawnAnim(class UAnimMontage* Montage, 
 
 void ABP_VictoryDrone_RiftDisolve_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_VictoryDrone_RiftDisolve_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_VictoryDrone_RiftDisolve_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_VictoryDrone_RiftDisolve_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -66,9 +96,12 @@ void ABP_VictoryDrone_RiftDisolve_C::ReceiveBeginPlay()
 
 void ABP_VictoryDrone_RiftDisolve_C::ExecuteUbergraph_BP_VictoryDrone_RiftDisolve(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("BP_VictoryDrone_RiftDisolve_C", "ExecuteUbergraph_BP_VictoryDrone_RiftDisolve");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_VictoryDrone_RiftDisolve_C_ExecuteUbergraph_BP_VictoryDrone_RiftDisolve_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_VictoryDrone_RiftDisolve_C", "ExecuteUbergraph_BP_VictoryDrone_RiftDisolve");
+
+	Params::ABP_VictoryDrone_RiftDisolve_C_ExecuteUbergraph_BP_VictoryDrone_RiftDisolve_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -78,6 +111,4 @@ void ABP_VictoryDrone_RiftDisolve_C::ExecuteUbergraph_BP_VictoryDrone_RiftDisolv
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

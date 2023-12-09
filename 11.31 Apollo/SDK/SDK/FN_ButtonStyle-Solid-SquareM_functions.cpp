@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ButtonStyle-Solid-SquareM.ButtonStyle-Solid-SquareM_C
+// (None)
+
+class UClass* UButtonStyleMinusSolidMinusSquareM_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ButtonStyle-Solid-SquareM_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ButtonStyle-Solid-SquareM_C ButtonStyle-Solid-SquareM.Default__ButtonStyle-Solid-SquareM_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UButtonStyleMinusSolidMinusSquareM_C* UButtonStyleMinusSolidMinusSquareM_C::GetDefaultObj()
+{
+	static class UButtonStyleMinusSolidMinusSquareM_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UButtonStyleMinusSolidMinusSquareM_C*>(UButtonStyleMinusSolidMinusSquareM_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

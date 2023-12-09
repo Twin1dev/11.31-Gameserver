@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass EventPlayerStatProfileSelector.EventPlayerStatProfileSelector_C
+// (None)
+
+class UClass* UEventPlayerStatProfileSelector_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EventPlayerStatProfileSelector_C");
+
+	return Clss;
+}
+
+
+// EventPlayerStatProfileSelector_C EventPlayerStatProfileSelector.Default__EventPlayerStatProfileSelector_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UEventPlayerStatProfileSelector_C* UEventPlayerStatProfileSelector_C::GetDefaultObj()
+{
+	static class UEventPlayerStatProfileSelector_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEventPlayerStatProfileSelector_C*>(UEventPlayerStatProfileSelector_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function EventPlayerStatProfileSelector.EventPlayerStatProfileSelector_C.BndEvt__CloseMainPanel_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UEventPlayerStatProfileSelector_C::BndEvt__CloseMainPanel_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("EventPlayerStatProfileSelector_C", "BndEvt__CloseMainPanel_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventPlayerStatProfileSelector_C_BndEvt__CloseMainPanel_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventPlayerStatProfileSelector_C", "BndEvt__CloseMainPanel_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UEventPlayerStatProfileSelector_C_BndEvt__CloseMainPanel_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -39,12 +67,14 @@ void UEventPlayerStatProfileSelector_C::BndEvt__CloseMainPanel_K2Node_ComponentB
 
 void UEventPlayerStatProfileSelector_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("EventPlayerStatProfileSelector_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventPlayerStatProfileSelector_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventPlayerStatProfileSelector_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -58,9 +88,12 @@ void UEventPlayerStatProfileSelector_C::BP_OnActivated()
 
 void UEventPlayerStatProfileSelector_C::ExecuteUbergraph_EventPlayerStatProfileSelector(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button)
 {
-	static auto Func = Class->GetFunction("EventPlayerStatProfileSelector_C", "ExecuteUbergraph_EventPlayerStatProfileSelector");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventPlayerStatProfileSelector_C_ExecuteUbergraph_EventPlayerStatProfileSelector_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventPlayerStatProfileSelector_C", "ExecuteUbergraph_EventPlayerStatProfileSelector");
+
+	Params::UEventPlayerStatProfileSelector_C_ExecuteUbergraph_EventPlayerStatProfileSelector_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimationForward_ReturnValue = CallFunc_PlayAnimationForward_ReturnValue;
@@ -72,6 +105,4 @@ void UEventPlayerStatProfileSelector_C::ExecuteUbergraph_EventPlayerStatProfileS
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

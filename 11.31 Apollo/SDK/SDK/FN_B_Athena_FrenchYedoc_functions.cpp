@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_Athena_FrenchYedoc.B_Athena_FrenchYedoc_C
+// (Actor)
+
+class UClass* AB_Athena_FrenchYedoc_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Athena_FrenchYedoc_C");
+
+	return Clss;
+}
+
+
+// B_Athena_FrenchYedoc_C B_Athena_FrenchYedoc.Default__B_Athena_FrenchYedoc_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Athena_FrenchYedoc_C* AB_Athena_FrenchYedoc_C::GetDefaultObj()
+{
+	static class AB_Athena_FrenchYedoc_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Athena_FrenchYedoc_C*>(AB_Athena_FrenchYedoc_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_Athena_FrenchYedoc.B_Athena_FrenchYedoc_C.RemoveDecoy
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void AB_Athena_FrenchYedoc_C::RemoveDecoy()
 {
-	static auto Func = Class->GetFunction("B_Athena_FrenchYedoc_C", "RemoveDecoy");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_FrenchYedoc_C_RemoveDecoy_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_FrenchYedoc_C", "RemoveDecoy");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AB_Athena_FrenchYedoc_C::RemoveDecoy()
 
 void AB_Athena_FrenchYedoc_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Athena_FrenchYedoc_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_FrenchYedoc_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_FrenchYedoc_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -66,9 +95,12 @@ void AB_Athena_FrenchYedoc_C::ReceiveBeginPlay()
 
 void AB_Athena_FrenchYedoc_C::ExecuteUbergraph_B_Athena_FrenchYedoc(int32 EntryPoint, class AActor* CallFunc_GetOwner_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, class AController* CallFunc_GetController_ReturnValue_1, class AGameModeBase* CallFunc_GetGameMode_ReturnValue, class AAthena_GameMode_C* K2Node_DynamicCast_AsAthena_Game_Mode, bool K2Node_DynamicCast_bSuccess_1, class UFortServerBotManagerAthena* CallFunc_GetServerBotManager_ReturnValue, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class AFortPlayerPawnAthena* CallFunc_SpawnBot_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Athena_FrenchYedoc_C", "ExecuteUbergraph_B_Athena_FrenchYedoc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_FrenchYedoc_C", "ExecuteUbergraph_B_Athena_FrenchYedoc");
+
+	Params::AB_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
@@ -90,6 +122,4 @@ void AB_Athena_FrenchYedoc_C::ExecuteUbergraph_B_Athena_FrenchYedoc(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

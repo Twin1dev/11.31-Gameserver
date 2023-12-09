@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaStatsRow.AthenaStatsRow_C
+// (None)
+
+class UClass* UAthenaStatsRow_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaStatsRow_C");
+
+	return Clss;
+}
+
+
+// AthenaStatsRow_C AthenaStatsRow.Default__AthenaStatsRow_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaStatsRow_C* UAthenaStatsRow_C::GetDefaultObj()
+{
+	static class UAthenaStatsRow_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaStatsRow_C*>(UAthenaStatsRow_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaStatsRow.AthenaStatsRow_C.SetStatValueAsText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAthenaStatsRow_C::SetStatValueAsText(class FText StatValue)
 {
-	static auto Func = Class->GetFunction("AthenaStatsRow_C", "SetStatValueAsText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsRow_C_SetStatValueAsText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsRow_C", "SetStatValueAsText");
+
+	Params::UAthenaStatsRow_C_SetStatValueAsText_Params Parms{};
 
 	Parms.StatValue = StatValue;
 
@@ -40,9 +68,12 @@ void UAthenaStatsRow_C::SetStatValueAsText(class FText StatValue)
 
 void UAthenaStatsRow_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AthenaStatsRow_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsRow_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsRow_C", "PreConstruct");
+
+	Params::UAthenaStatsRow_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -59,9 +90,12 @@ void UAthenaStatsRow_C::PreConstruct(bool IsDesignTime)
 
 void UAthenaStatsRow_C::ExecuteUbergraph_AthenaStatsRow(int32 EntryPoint, bool K2Node_Event_IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AthenaStatsRow_C", "ExecuteUbergraph_AthenaStatsRow");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaStatsRow_C", "ExecuteUbergraph_AthenaStatsRow");
+
+	Params::UAthenaStatsRow_C_ExecuteUbergraph_AthenaStatsRow_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -72,6 +106,4 @@ void UAthenaStatsRow_C::ExecuteUbergraph_AthenaStatsRow(int32 EntryPoint, bool K
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

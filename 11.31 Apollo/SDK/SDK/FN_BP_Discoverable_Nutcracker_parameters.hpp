@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -16,61 +13,12 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x0 - 0x0)
-// Function BP_Discoverable_Nutcracker.BP_Discoverable_Nutcracker_C.HeadBoop__FinishedFunc
-struct ABP_Discoverable_Nutcracker_C_HeadBoop__FinishedFunc_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function BP_Discoverable_Nutcracker.BP_Discoverable_Nutcracker_C.HeadBoop__UpdateFunc
-struct ABP_Discoverable_Nutcracker_C_HeadBoop__UpdateFunc_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function BP_Discoverable_Nutcracker.BP_Discoverable_Nutcracker_C.Timeline_0__FinishedFunc
-struct ABP_Discoverable_Nutcracker_C_Timeline_0__FinishedFunc_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function BP_Discoverable_Nutcracker.BP_Discoverable_Nutcracker_C.Timeline_0__UpdateFunc
-struct ABP_Discoverable_Nutcracker_C_Timeline_0__UpdateFunc_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function BP_Discoverable_Nutcracker.BP_Discoverable_Nutcracker_C.Timeline_1__FinishedFunc
-struct ABP_Discoverable_Nutcracker_C_Timeline_1__FinishedFunc_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function BP_Discoverable_Nutcracker.BP_Discoverable_Nutcracker_C.Timeline_1__UpdateFunc
-struct ABP_Discoverable_Nutcracker_C_Timeline_1__UpdateFunc_Params
-{
-public:
-};
-
 // 0x8 (0x8 - 0x0)
 // Function BP_Discoverable_Nutcracker.BP_Discoverable_Nutcracker_C.ReceiveActorBeginOverlap
 struct ABP_Discoverable_Nutcracker_C_ReceiveActorBeginOverlap_Params
 {
 public:
 	class AActor*                                OtherActor;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function BP_Discoverable_Nutcracker.BP_Discoverable_Nutcracker_C.Commit_OnSpecialInteraction
-struct ABP_Discoverable_Nutcracker_C_Commit_OnSpecialInteraction_Params
-{
-public:
 };
 
 // 0x1 (0x1 - 0x0)
@@ -91,30 +39,23 @@ public:
 	bool                                         bIsStart;                                          // 0x10(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function BP_Discoverable_Nutcracker.BP_Discoverable_Nutcracker_C.ReceiveBeginPlay
-struct ABP_Discoverable_Nutcracker_C_ReceiveBeginPlay_Params
-{
-public:
-};
-
 // 0x348 (0x348 - 0x0)
 // Function BP_Discoverable_Nutcracker.BP_Discoverable_Nutcracker_C.ExecuteUbergraph_BP_Discoverable_Nutcracker
 struct ABP_Discoverable_Nutcracker_C_ExecuteUbergraph_BP_Discoverable_Nutcracker_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66C8[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6E3F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class USceneComponent*                       CallFunc_K2_GetRootComponent_ReturnValue;          // 0x8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                       CallFunc_K2_GetRootComponent_ReturnValue_1;        // 0x10(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_66C9[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6E40[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x20(0x30)(IsPlainOldData, NoDestructor)
 	class AActor*                                K2Node_Event_OtherActor;                           // 0x50(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               CallFunc_BreakTransform_Location;                  // 0x58(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              CallFunc_BreakTransform_Rotation;                  // 0x64(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                               CallFunc_BreakTransform_Scale;                     // 0x70(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_bIsStart;                       // 0x7C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_66CA[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6E41[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_BreakRotator_Roll;                        // 0x80(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_BreakRotator_Pitch;                       // 0x84(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_BreakRotator_Yaw;                         // 0x88(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -134,7 +75,7 @@ public:
 	struct FGameplayTag                          K2Node_Event_ActionTag;                            // 0x17C(0x8)(NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          K2Node_Event_CameraTag;                            // 0x184(0x8)(NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_bIsStart;                             // 0x18C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_66CB[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6E42[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FHitResult                            CallFunc_K2_SetRelativeRotation_SweepHitResult_1;  // 0x190(0x88)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FVector                               CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x218(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               CallFunc_BreakTransform_Location_2;                // 0x224(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -157,6 +98,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

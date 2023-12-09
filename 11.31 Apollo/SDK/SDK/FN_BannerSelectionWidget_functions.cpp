@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass BannerSelectionWidget.BannerSelectionWidget_C
+// (None)
+
+class UClass* UBannerSelectionWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BannerSelectionWidget_C");
+
+	return Clss;
+}
+
+
+// BannerSelectionWidget_C BannerSelectionWidget.Default__BannerSelectionWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBannerSelectionWidget_C* UBannerSelectionWidget_C::GetDefaultObj()
+{
+	static class UBannerSelectionWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBannerSelectionWidget_C*>(UBannerSelectionWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BannerSelectionWidget.BannerSelectionWidget_C.BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UBannerSelectionWidget_C::BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature(class FName IconId, class FName ColorId)
 {
-	static auto Func = Class->GetFunction("BannerSelectionWidget_C", "BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBannerSelectionWidget_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BannerSelectionWidget_C", "BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature");
+
+	Params::UBannerSelectionWidget_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_105_CloseBannerEditor__DelegateSignature_Params Parms{};
 
 	Parms.IconId = IconId;
 	Parms.ColorId = ColorId;
@@ -41,12 +69,14 @@ void UBannerSelectionWidget_C::BndEvt__BP_LocalPlayerBannerEditor_K2Node_Compone
 
 void UBannerSelectionWidget_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("BannerSelectionWidget_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UBannerSelectionWidget_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BannerSelectionWidget_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -58,9 +88,12 @@ void UBannerSelectionWidget_C::BP_OnActivated()
 
 void UBannerSelectionWidget_C::BndEvt__ConfirmHomebaseNameButton_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BannerSelectionWidget_C", "BndEvt__ConfirmHomebaseNameButton_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBannerSelectionWidget_C_BndEvt__ConfirmHomebaseNameButton_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BannerSelectionWidget_C", "BndEvt__ConfirmHomebaseNameButton_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature");
+
+	Params::UBannerSelectionWidget_C_BndEvt__ConfirmHomebaseNameButton_K2Node_ComponentBoundEvent_80_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -75,12 +108,14 @@ void UBannerSelectionWidget_C::BndEvt__ConfirmHomebaseNameButton_K2Node_Componen
 
 void UBannerSelectionWidget_C::OnHomebaseNameCommitFailed()
 {
-	static auto Func = Class->GetFunction("BannerSelectionWidget_C", "OnHomebaseNameCommitFailed");
+	static class UFunction* Func = nullptr;
 
-	Params::UBannerSelectionWidget_C_OnHomebaseNameCommitFailed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BannerSelectionWidget_C", "OnHomebaseNameCommitFailed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -91,12 +126,14 @@ void UBannerSelectionWidget_C::OnHomebaseNameCommitFailed()
 
 void UBannerSelectionWidget_C::OnHomebaseNameCommitSucceeded()
 {
-	static auto Func = Class->GetFunction("BannerSelectionWidget_C", "OnHomebaseNameCommitSucceeded");
+	static class UFunction* Func = nullptr;
 
-	Params::UBannerSelectionWidget_C_OnHomebaseNameCommitSucceeded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BannerSelectionWidget_C", "OnHomebaseNameCommitSucceeded");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -107,12 +144,14 @@ void UBannerSelectionWidget_C::OnHomebaseNameCommitSucceeded()
 
 void UBannerSelectionWidget_C::GainFocusOfTextBox()
 {
-	static auto Func = Class->GetFunction("BannerSelectionWidget_C", "GainFocusOfTextBox");
+	static class UFunction* Func = nullptr;
 
-	Params::UBannerSelectionWidget_C_GainFocusOfTextBox_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BannerSelectionWidget_C", "GainFocusOfTextBox");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -124,9 +163,12 @@ void UBannerSelectionWidget_C::GainFocusOfTextBox()
 
 void UBannerSelectionWidget_C::InitFromObject(class UObject* InitObject)
 {
-	static auto Func = Class->GetFunction("BannerSelectionWidget_C", "InitFromObject");
+	static class UFunction* Func = nullptr;
 
-	Params::UBannerSelectionWidget_C_InitFromObject_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BannerSelectionWidget_C", "InitFromObject");
+
+	Params::UBannerSelectionWidget_C_InitFromObject_Params Parms{};
 
 	Parms.InitObject = InitObject;
 
@@ -142,9 +184,12 @@ void UBannerSelectionWidget_C::InitFromObject(class UObject* InitObject)
 
 void UBannerSelectionWidget_C::OnInputModeChanged(bool bUsingGamepad)
 {
-	static auto Func = Class->GetFunction("BannerSelectionWidget_C", "OnInputModeChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UBannerSelectionWidget_C_OnInputModeChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BannerSelectionWidget_C", "OnInputModeChanged");
+
+	Params::UBannerSelectionWidget_C_OnInputModeChanged_Params Parms{};
 
 	Parms.bUsingGamepad = bUsingGamepad;
 
@@ -183,10 +228,10 @@ void UBannerSelectionWidget_C::OnInputModeChanged(bool bUsingGamepad)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue_4                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortPlayerController*       K2Node_DynamicCast_AsFort_Player_Controller_4                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_4                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetText_ReturnValue                                     ()
+// class FText                        CallFunc_GetText_ReturnValue                                     (None)
 // class UCommonInputSubsystem*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsPlayerNameValid_OutIsValid                            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_IsPlayerNameValid_OutErrorText                          ()
+// class FText                        CallFunc_IsPlayerNameValid_OutErrorText                          (None)
 // enum class ECommonInputType        CallFunc_GetCurrentInputType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     K2Node_Event_InitObject                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -195,9 +240,12 @@ void UBannerSelectionWidget_C::OnInputModeChanged(bool bUsingGamepad)
 
 void UBannerSelectionWidget_C::ExecuteUbergraph_BannerSelectionWidget(int32 EntryPoint, class FName K2Node_ComponentBoundEvent_IconId, class FName K2Node_ComponentBoundEvent_ColorId, bool CallFunc_NotEqual_NameName_ReturnValue, bool CallFunc_NotEqual_NameName_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_BooleanAND_ReturnValue, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller_1, bool K2Node_DynamicCast_bSuccess_1, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue_1, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_2, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_3, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller_2, bool K2Node_DynamicCast_bSuccess_2, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller_3, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_GetAtNameHomeBaseScreen_ReturnValue, class UFortGlobalUIContext* CallFunc_GetLocalPlayerSubsystem_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_4, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller_4, bool K2Node_DynamicCast_bSuccess_4, class FText CallFunc_GetText_ReturnValue, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, bool CallFunc_IsPlayerNameValid_OutIsValid, class FText CallFunc_IsPlayerNameValid_OutErrorText, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, class UObject* K2Node_Event_InitObject, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, bool K2Node_Event_bUsingGamepad, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("BannerSelectionWidget_C", "ExecuteUbergraph_BannerSelectionWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UBannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BannerSelectionWidget_C", "ExecuteUbergraph_BannerSelectionWidget");
+
+	Params::UBannerSelectionWidget_C_ExecuteUbergraph_BannerSelectionWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_IconId = K2Node_ComponentBoundEvent_IconId;
@@ -242,6 +290,4 @@ void UBannerSelectionWidget_C::ExecuteUbergraph_BannerSelectionWidget(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

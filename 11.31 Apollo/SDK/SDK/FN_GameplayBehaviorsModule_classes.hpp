@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,11 +16,8 @@ class UBTTask_StopGameplayBehavior : public UBTTaskNode
 public:
 	TSubclassOf<class UGameplayBehavior>         BehaviorToStop;                                    // 0x70(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BTTask_StopGameplayBehavior");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UBTTask_StopGameplayBehavior* GetDefaultObj();
 
 };
 
@@ -32,18 +26,15 @@ public:
 class UGameplayBehavior : public UObject
 {
 public:
-	uint8                                        Pad_2361[0x14];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_17AD[0x14];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTag                          ActionTag;                                         // 0x3C(0x8)(Edit, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_2362[0x1C];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_17AE[0x1C];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class AActor*>                        RelevantActors;                                    // 0x60(0x10)(Edit, BlueprintVisible, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	TArray<class UGameplayTask*>                 ActiveTasks;                                       // 0x70(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	class AActor*                                TransientAvatar;                                   // 0x80(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GameplayBehavior");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGameplayBehavior* GetDefaultObj();
 
 	void K2_TriggerBehavior(class AActor* Avatar, class UGameplayBehaviorConfig* Config);
 	void K2_OnTriggeredPawn(class APawn* Avatar, class UGameplayBehaviorConfig* Config);
@@ -64,11 +55,8 @@ class UGameplayBehavior_AnimationBased : public UGameplayBehavior
 public:
 	TArray<struct FMontagePlaybackData>          ActivePlayback;                                    // 0x88(0x10)(ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GameplayBehavior_AnimationBased");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGameplayBehavior_AnimationBased* GetDefaultObj();
 
 	void OnMontageFinished(class UAnimMontage* Montage, bool bInterrupted, class AActor* InAvatar);
 };
@@ -81,11 +69,8 @@ public:
 	class UBehaviorTree*                         PreviousBT;                                        // 0x88(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class AAIController*                         AIController;                                      // 0x90(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GameplayBehavior_BehaviorTree");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGameplayBehavior_BehaviorTree* GetDefaultObj();
 
 };
 
@@ -96,11 +81,8 @@ class UGameplayBehaviorConfig : public UObject
 public:
 	TSubclassOf<class UGameplayBehavior>         BehaviorClass;                                     // 0x28(0x8)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GameplayBehaviorConfig");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGameplayBehaviorConfig* GetDefaultObj();
 
 };
 
@@ -113,13 +95,10 @@ public:
 	float                                        PlayRate;                                          // 0x58(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class FName                                  StartSectionName;                                  // 0x5C(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                        bLoop : 1;                                         // Mask: 0x1, PropSize: 0x10x64(0x1)(Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_2364[0x3];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_17BE[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GameplayBehaviorConfig_Animation");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGameplayBehaviorConfig_Animation* GetDefaultObj();
 
 };
 
@@ -130,13 +109,10 @@ class UGameplayBehaviorConfig_BehaviorTree : public UGameplayBehaviorConfig
 public:
 	TSoftObjectPtr<class UBehaviorTree>          BehaviorTree;                                      // 0x30(0x28)(Edit, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                        bRevertToPreviousBTOnFinish : 1;                   // Mask: 0x1, PropSize: 0x10x58(0x1)(Edit, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_2365[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_17C4[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GameplayBehaviorConfig_BehaviorTree");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGameplayBehaviorConfig_BehaviorTree* GetDefaultObj();
 
 };
 
@@ -147,13 +123,10 @@ class UGameplayBehaviorManager : public UAISubsystem
 public:
 	TMap<class AActor*, struct FAgentGameplayBehaviors> AgentGameplayBehaviors;                            // 0x38(0x50)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	uint8                                        bCreateIfMissing : 1;                              // Mask: 0x1, PropSize: 0x10x88(0x1)(Config, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_2366[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_17C5[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GameplayBehaviorManager");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGameplayBehaviorManager* GetDefaultObj();
 
 };
 
@@ -163,16 +136,11 @@ class UGameplayBehaviorsBlueprintFunctionLibrary : public UBlueprintFunctionLibr
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GameplayBehaviorsBlueprintFunctionLibrary");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGameplayBehaviorsBlueprintFunctionLibrary* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

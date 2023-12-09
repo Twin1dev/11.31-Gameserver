@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_Discoverable_MusicPlayer.BP_Discoverable_MusicPlayer_C
+// (Actor)
+
+class UClass* ABP_Discoverable_MusicPlayer_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_Discoverable_MusicPlayer_C");
+
+	return Clss;
+}
+
+
+// BP_Discoverable_MusicPlayer_C BP_Discoverable_MusicPlayer.Default__BP_Discoverable_MusicPlayer_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_Discoverable_MusicPlayer_C* ABP_Discoverable_MusicPlayer_C::GetDefaultObj()
+{
+	static class ABP_Discoverable_MusicPlayer_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_Discoverable_MusicPlayer_C*>(ABP_Discoverable_MusicPlayer_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_Discoverable_MusicPlayer.BP_Discoverable_MusicPlayer_C.NotifiedByDiscoverable
@@ -24,9 +49,12 @@ namespace SDK
 
 void ABP_Discoverable_MusicPlayer_C::NotifiedByDiscoverable(const struct FGameplayTag& ActionTag, const struct FGameplayTag& CameraTag, bool bIsStart)
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_MusicPlayer_C", "NotifiedByDiscoverable");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_MusicPlayer_C_NotifiedByDiscoverable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_MusicPlayer_C", "NotifiedByDiscoverable");
+
+	Params::ABP_Discoverable_MusicPlayer_C_NotifiedByDiscoverable_Params Parms{};
 
 	Parms.ActionTag = ActionTag;
 	Parms.CameraTag = CameraTag;
@@ -48,9 +76,12 @@ void ABP_Discoverable_MusicPlayer_C::NotifiedByDiscoverable(const struct FGamepl
 
 void ABP_Discoverable_MusicPlayer_C::ExecuteUbergraph_BP_Discoverable_MusicPlayer(int32 EntryPoint, const struct FGameplayTag& K2Node_Event_ActionTag, const struct FGameplayTag& K2Node_Event_CameraTag, bool K2Node_Event_bIsStart, bool CallFunc_EqualEqual_GameplayTag_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_MusicPlayer_C", "ExecuteUbergraph_BP_Discoverable_MusicPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_MusicPlayer_C_ExecuteUbergraph_BP_Discoverable_MusicPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_MusicPlayer_C", "ExecuteUbergraph_BP_Discoverable_MusicPlayer");
+
+	Params::ABP_Discoverable_MusicPlayer_C_ExecuteUbergraph_BP_Discoverable_MusicPlayer_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_ActionTag = K2Node_Event_ActionTag;
@@ -64,6 +95,4 @@ void ABP_Discoverable_MusicPlayer_C::ExecuteUbergraph_BP_Discoverable_MusicPlaye
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

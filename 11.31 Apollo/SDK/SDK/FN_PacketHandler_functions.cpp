@@ -1,17 +1,72 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// Class PacketHandler.HandlerComponentFactory
+// (None)
+
+class UClass* UHandlerComponentFactory::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("HandlerComponentFactory");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// HandlerComponentFactory PacketHandler.Default__HandlerComponentFactory
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UHandlerComponentFactory* UHandlerComponentFactory::GetDefaultObj()
+{
+	static class UHandlerComponentFactory* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UHandlerComponentFactory*>(UHandlerComponentFactory::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class PacketHandler.PacketHandlerProfileConfig
+// (None)
+
+class UClass* UPacketHandlerProfileConfig::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PacketHandlerProfileConfig");
+
+	return Clss;
+}
+
+
+// PacketHandlerProfileConfig PacketHandler.Default__PacketHandlerProfileConfig
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPacketHandlerProfileConfig* UPacketHandlerProfileConfig::GetDefaultObj()
+{
+	static class UPacketHandlerProfileConfig* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPacketHandlerProfileConfig*>(UPacketHandlerProfileConfig::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

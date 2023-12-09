@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SettingsListEntry_Discrete.SettingsListEntry_Discrete_C
+// (None)
+
+class UClass* USettingsListEntry_Discrete_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SettingsListEntry_Discrete_C");
+
+	return Clss;
+}
+
+
+// SettingsListEntry_Discrete_C SettingsListEntry_Discrete.Default__SettingsListEntry_Discrete_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USettingsListEntry_Discrete_C* USettingsListEntry_Discrete_C::GetDefaultObj()
+{
+	static class USettingsListEntry_Discrete_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USettingsListEntry_Discrete_C*>(USettingsListEntry_Discrete_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SettingsListEntry_Discrete.SettingsListEntry_Discrete_C.GetPrimaryGamepadFocusWidget
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 class UWidget* USettingsListEntry_Discrete_C::GetPrimaryGamepadFocusWidget()
 {
-	static auto Func = Class->GetFunction("SettingsListEntry_Discrete_C", "GetPrimaryGamepadFocusWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingsListEntry_Discrete_C_GetPrimaryGamepadFocusWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingsListEntry_Discrete_C", "GetPrimaryGamepadFocusWidget");
+
+	Params::USettingsListEntry_Discrete_C_GetPrimaryGamepadFocusWidget_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -42,9 +70,12 @@ class UWidget* USettingsListEntry_Discrete_C::GetPrimaryGamepadFocusWidget()
 
 void USettingsListEntry_Discrete_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("SettingsListEntry_Discrete_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingsListEntry_Discrete_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingsListEntry_Discrete_C", "OnMouseEnter");
+
+	Params::USettingsListEntry_Discrete_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -61,9 +92,12 @@ void USettingsListEntry_Discrete_C::OnMouseEnter(const struct FGeometry& MyGeome
 
 void USettingsListEntry_Discrete_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("SettingsListEntry_Discrete_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingsListEntry_Discrete_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingsListEntry_Discrete_C", "OnMouseLeave");
+
+	Params::USettingsListEntry_Discrete_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -84,9 +118,12 @@ void USettingsListEntry_Discrete_C::OnMouseLeave(struct FPointerEvent& MouseEven
 
 void USettingsListEntry_Discrete_C::ExecuteUbergraph_SettingsListEntry_Discrete(int32 EntryPoint, const struct FPointerEvent& K2Node_Event_MouseEvent, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SettingsListEntry_Discrete_C", "ExecuteUbergraph_SettingsListEntry_Discrete");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingsListEntry_Discrete_C_ExecuteUbergraph_SettingsListEntry_Discrete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingsListEntry_Discrete_C", "ExecuteUbergraph_SettingsListEntry_Discrete");
+
+	Params::USettingsListEntry_Discrete_C_ExecuteUbergraph_SettingsListEntry_Discrete_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_MouseEvent = K2Node_Event_MouseEvent;
@@ -101,6 +138,4 @@ void USettingsListEntry_Discrete_C::ExecuteUbergraph_SettingsListEntry_Discrete(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

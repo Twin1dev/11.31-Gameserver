@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass DA_CarminePack.DA_CarminePack_C
+// (Actor)
+
+class UClass* ADA_CarminePack_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DA_CarminePack_C");
+
+	return Clss;
+}
+
+
+// DA_CarminePack_C DA_CarminePack.Default__DA_CarminePack_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ADA_CarminePack_C* ADA_CarminePack_C::GetDefaultObj()
+{
+	static class ADA_CarminePack_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ADA_CarminePack_C*>(ADA_CarminePack_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function DA_CarminePack.DA_CarminePack_C.OnRep_StoneTags
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void ADA_CarminePack_C::OnRep_StoneTags()
 {
-	static auto Func = Class->GetFunction("DA_CarminePack_C", "OnRep_StoneTags");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_CarminePack_C_OnRep_StoneTags_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_CarminePack_C", "OnRep_StoneTags");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void ADA_CarminePack_C::OnRep_StoneTags()
 
 void ADA_CarminePack_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 {
-	static auto Func = Class->GetFunction("DA_CarminePack_C", "BPPressTrigger");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_CarminePack_C_BPPressTrigger_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_CarminePack_C", "BPPressTrigger");
+
+	Params::ADA_CarminePack_C_BPPressTrigger_Params Parms{};
 
 	Parms.FortDecoHelper = FortDecoHelper;
 
@@ -56,9 +86,12 @@ void ADA_CarminePack_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 
 void ADA_CarminePack_C::BPPressSecondaryFire(class AFortDecoHelper* FortDecoHelper)
 {
-	static auto Func = Class->GetFunction("DA_CarminePack_C", "BPPressSecondaryFire");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_CarminePack_C_BPPressSecondaryFire_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_CarminePack_C", "BPPressSecondaryFire");
+
+	Params::ADA_CarminePack_C_BPPressSecondaryFire_Params Parms{};
 
 	Parms.FortDecoHelper = FortDecoHelper;
 
@@ -73,12 +106,14 @@ void ADA_CarminePack_C::BPPressSecondaryFire(class AFortDecoHelper* FortDecoHelp
 
 void ADA_CarminePack_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("DA_CarminePack_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_CarminePack_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_CarminePack_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -90,9 +125,12 @@ void ADA_CarminePack_C::ReceiveBeginPlay()
 
 void ADA_CarminePack_C::Landed(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("DA_CarminePack_C", "Landed");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_CarminePack_C_Landed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_CarminePack_C", "Landed");
+
+	Params::ADA_CarminePack_C_Landed_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -107,12 +145,14 @@ void ADA_CarminePack_C::Landed(struct FHitResult& Hit)
 
 void ADA_CarminePack_C::BindPartchanged()
 {
-	static auto Func = Class->GetFunction("DA_CarminePack_C", "BindPartchanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_CarminePack_C_BindPartchanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_CarminePack_C", "BindPartchanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -129,11 +169,11 @@ void ADA_CarminePack_C::BindPartchanged()
 // class AFortDecoHelper*             K2Node_Event_FortDecoHelper_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortDecoHelper*             K2Node_Event_FortDecoHelper                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APawn*                       CallFunc_GetInstigator_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              (None)
 // class AFortPawn*                   K2Node_DynamicCast_AsFort_Pawn                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsFalling_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData_1                            ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData_1                            (None)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_FloatFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Greater_FloatFloat_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -177,9 +217,12 @@ void ADA_CarminePack_C::BindPartchanged()
 
 void ADA_CarminePack_C::ExecuteUbergraph_DA_CarminePack(int32 EntryPoint, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, bool Temp_bool_Variable, bool CallFunc_Not_PreBool_ReturnValue, class AFortDecoHelper* K2Node_Event_FortDecoHelper_1, class AFortDecoHelper* K2Node_Event_FortDecoHelper, class APawn* CallFunc_GetInstigator_ReturnValue, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsFalling_ReturnValue, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData_1, int32 Temp_int_Variable, bool CallFunc_Less_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue_2, bool Temp_bool_Variable_1, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_Not_PreBool_ReturnValue_1, class APawn* CallFunc_GetInstigator_ReturnValue_3, const struct FHitResult& K2Node_CustomEvent_Hit, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn_1, bool K2Node_DynamicCast_bSuccess_2, class APawn* CallFunc_GetInstigator_ReturnValue_4, bool CallFunc_BooleanAND_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_1, bool K2Node_DynamicCast_bSuccess_3, class APawn* CallFunc_GetInstigator_ReturnValue_5, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn_2, bool K2Node_DynamicCast_bSuccess_4, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, int32 CallFunc_RemoveActiveEffectsWithSourceTags_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue_1, class APawn* CallFunc_GetInstigator_ReturnValue_6, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_5, const struct FGameplayTag& CallFunc_Array_Get_Item, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue, bool GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess, bool CallFunc_IsValid_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, bool CallFunc_IsServer_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, int32 CallFunc_RemoveActiveEffectsWithSourceTags_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("DA_CarminePack_C", "ExecuteUbergraph_DA_CarminePack");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_CarminePack_C_ExecuteUbergraph_DA_CarminePack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_CarminePack_C", "ExecuteUbergraph_DA_CarminePack");
+
+	Params::ADA_CarminePack_C_ExecuteUbergraph_DA_CarminePack_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -242,6 +285,4 @@ void ADA_CarminePack_C::ExecuteUbergraph_DA_CarminePack(int32 EntryPoint, int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

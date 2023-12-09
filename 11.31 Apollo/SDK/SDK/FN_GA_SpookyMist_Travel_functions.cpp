@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GA_SpookyMist_Travel.GA_SpookyMist_Travel_C
+// (None)
+
+class UClass* UGA_SpookyMist_Travel_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_SpookyMist_Travel_C");
+
+	return Clss;
+}
+
+
+// GA_SpookyMist_Travel_C GA_SpookyMist_Travel.Default__GA_SpookyMist_Travel_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_SpookyMist_Travel_C* UGA_SpookyMist_Travel_C::GetDefaultObj()
+{
+	static class UGA_SpookyMist_Travel_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_SpookyMist_Travel_C*>(UGA_SpookyMist_Travel_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GA_SpookyMist_Travel.GA_SpookyMist_Travel_C.PlayerCapsuleSizes
@@ -25,9 +50,12 @@ namespace SDK
 
 void UGA_SpookyMist_Travel_C::PlayerCapsuleSizes(float* Radius, float* HalfHeight, float CallFunc_GetScaledCapsuleRadius_ReturnValue, float CallFunc_GetScaledCapsuleHalfHeight_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_Travel_C", "PlayerCapsuleSizes");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_Travel_C_PlayerCapsuleSizes_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_Travel_C", "PlayerCapsuleSizes");
+
+	Params::UGA_SpookyMist_Travel_C_PlayerCapsuleSizes_Params Parms{};
 
 	Parms.CallFunc_GetScaledCapsuleRadius_ReturnValue = CallFunc_GetScaledCapsuleRadius_ReturnValue;
 	Parms.CallFunc_GetScaledCapsuleHalfHeight_ReturnValue = CallFunc_GetScaledCapsuleHalfHeight_ReturnValue;
@@ -67,9 +95,12 @@ void UGA_SpookyMist_Travel_C::PlayerCapsuleSizes(float* Radius, float* HalfHeigh
 
 void UGA_SpookyMist_Travel_C::SetDashStartEndAndDirection(struct FVector* StartPoint, struct FVector* EndPoint, struct FVector* Direction, const struct FVector& CallFunc_GetActorEyesViewPoint_OutLocation, const struct FRotator& CallFunc_GetActorEyesViewPoint_OutRotation, const struct FVector& CallFunc_GetForwardVector_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue, const struct FVector& CallFunc_GetUpVector_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FVector& CallFunc_GetRightVector_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_1, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_2, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_3, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_4, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_5, const struct FVector& CallFunc_GetDirectionUnitVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_Travel_C", "SetDashStartEndAndDirection");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_Travel_C_SetDashStartEndAndDirection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_Travel_C", "SetDashStartEndAndDirection");
+
+	Params::UGA_SpookyMist_Travel_C_SetDashStartEndAndDirection_Params Parms{};
 
 	Parms.CallFunc_GetActorEyesViewPoint_OutLocation = CallFunc_GetActorEyesViewPoint_OutLocation;
 	Parms.CallFunc_GetActorEyesViewPoint_OutRotation = CallFunc_GetActorEyesViewPoint_OutRotation;
@@ -90,13 +121,13 @@ void UGA_SpookyMist_Travel_C::SetDashStartEndAndDirection(struct FVector* StartP
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (StartPoint != nullptr)
-		*StartPoint = Parms.StartPoint;
+		*StartPoint = std::move(Parms.StartPoint);
 
 	if (EndPoint != nullptr)
-		*EndPoint = Parms.EndPoint;
+		*EndPoint = std::move(Parms.EndPoint);
 
 	if (Direction != nullptr)
-		*Direction = Parms.Direction;
+		*Direction = std::move(Parms.Direction);
 
 }
 
@@ -109,9 +140,12 @@ void UGA_SpookyMist_Travel_C::SetDashStartEndAndDirection(struct FVector* StartP
 
 void UGA_SpookyMist_Travel_C::HandlePawnDetachRC(class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_Travel_C", "HandlePawnDetachRC");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_Travel_C_HandlePawnDetachRC_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_Travel_C", "HandlePawnDetachRC");
+
+	Params::UGA_SpookyMist_Travel_C_HandlePawnDetachRC_Params Parms{};
 
 	Parms.K2Node_DynamicCast_AsFort_Player_Pawn = K2Node_DynamicCast_AsFort_Player_Pawn;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
@@ -127,12 +161,14 @@ void UGA_SpookyMist_Travel_C::HandlePawnDetachRC(class AFortPlayerPawn* K2Node_D
 
 void UGA_SpookyMist_Travel_C::OnFinish_7DCB8EEB464593BB57421A868DAD3B3E()
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_Travel_C", "OnFinish_7DCB8EEB464593BB57421A868DAD3B3E");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_Travel_C_OnFinish_7DCB8EEB464593BB57421A868DAD3B3E_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_Travel_C", "OnFinish_7DCB8EEB464593BB57421A868DAD3B3E");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -145,9 +181,12 @@ void UGA_SpookyMist_Travel_C::OnFinish_7DCB8EEB464593BB57421A868DAD3B3E()
 
 void UGA_SpookyMist_Travel_C::Completed_BA1318F5441CE862ADFAB5BA78450BAF(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_Travel_C", "Completed_BA1318F5441CE862ADFAB5BA78450BAF");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_Travel_C_Completed_BA1318F5441CE862ADFAB5BA78450BAF_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_Travel_C", "Completed_BA1318F5441CE862ADFAB5BA78450BAF");
+
+	Params::UGA_SpookyMist_Travel_C_Completed_BA1318F5441CE862ADFAB5BA78450BAF_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -165,9 +204,12 @@ void UGA_SpookyMist_Travel_C::Completed_BA1318F5441CE862ADFAB5BA78450BAF(struct 
 
 void UGA_SpookyMist_Travel_C::Cancelled_BA1318F5441CE862ADFAB5BA78450BAF(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_Travel_C", "Cancelled_BA1318F5441CE862ADFAB5BA78450BAF");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_Travel_C_Cancelled_BA1318F5441CE862ADFAB5BA78450BAF_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_Travel_C", "Cancelled_BA1318F5441CE862ADFAB5BA78450BAF");
+
+	Params::UGA_SpookyMist_Travel_C_Cancelled_BA1318F5441CE862ADFAB5BA78450BAF_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -185,9 +227,12 @@ void UGA_SpookyMist_Travel_C::Cancelled_BA1318F5441CE862ADFAB5BA78450BAF(struct 
 
 void UGA_SpookyMist_Travel_C::Triggered_BA1318F5441CE862ADFAB5BA78450BAF(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_Travel_C", "Triggered_BA1318F5441CE862ADFAB5BA78450BAF");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_Travel_C_Triggered_BA1318F5441CE862ADFAB5BA78450BAF_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_Travel_C", "Triggered_BA1318F5441CE862ADFAB5BA78450BAF");
+
+	Params::UGA_SpookyMist_Travel_C_Triggered_BA1318F5441CE862ADFAB5BA78450BAF_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -204,9 +249,12 @@ void UGA_SpookyMist_Travel_C::Triggered_BA1318F5441CE862ADFAB5BA78450BAF(struct 
 
 void UGA_SpookyMist_Travel_C::EventReceived_76DD035A4216DFB29C5E0DB3261B6CD8(const struct FGameplayEventData& Payload)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_Travel_C", "EventReceived_76DD035A4216DFB29C5E0DB3261B6CD8");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_Travel_C_EventReceived_76DD035A4216DFB29C5E0DB3261B6CD8_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_Travel_C", "EventReceived_76DD035A4216DFB29C5E0DB3261B6CD8");
+
+	Params::UGA_SpookyMist_Travel_C_EventReceived_76DD035A4216DFB29C5E0DB3261B6CD8_Params Parms{};
 
 	Parms.Payload = Payload;
 
@@ -222,9 +270,12 @@ void UGA_SpookyMist_Travel_C::EventReceived_76DD035A4216DFB29C5E0DB3261B6CD8(con
 
 void UGA_SpookyMist_Travel_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_Travel_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_Travel_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_Travel_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGA_SpookyMist_Travel_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -240,9 +291,12 @@ void UGA_SpookyMist_Travel_C::K2_ActivateAbilityFromEvent(struct FGameplayEventD
 
 void UGA_SpookyMist_Travel_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_Travel_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_Travel_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_Travel_C", "K2_OnEndAbility");
+
+	Params::UGA_SpookyMist_Travel_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -257,12 +311,14 @@ void UGA_SpookyMist_Travel_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_SpookyMist_Travel_C::CheckIfStillColliding()
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_Travel_C", "CheckIfStillColliding");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_Travel_C_CheckIfStillColliding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_Travel_C", "CheckIfStillColliding");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -273,12 +329,14 @@ void UGA_SpookyMist_Travel_C::CheckIfStillColliding()
 
 void UGA_SpookyMist_Travel_C::On_DBNO()
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_Travel_C", "On DBNO");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_Travel_C_On_DBNO_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_Travel_C", "On DBNO");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -289,12 +347,14 @@ void UGA_SpookyMist_Travel_C::On_DBNO()
 
 void UGA_SpookyMist_Travel_C::DestroyObjects()
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_Travel_C", "DestroyObjects");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_Travel_C_DestroyObjects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_Travel_C", "DestroyObjects");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -307,10 +367,10 @@ void UGA_SpookyMist_Travel_C::DestroyObjects()
 // struct FGameplayTag                K2Node_CustomEvent_ApplicationTag                                (NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // struct FGameplayTag                Temp_struct_Variable                                             (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           ()
-// struct FGameplayEventData          K2Node_CustomEvent_Payload                                       ()
+// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable_1                                           (None)
+// struct FGameplayEventData          K2Node_CustomEvent_Payload                                       (None)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor)
-// struct FGameplayEventData          Temp_struct_Variable_2                                           ()
+// struct FGameplayEventData          Temp_struct_Variable_2                                           (None)
 // class UAbilityTask_WaitGameplayEvent*CallFunc_WaitGameplayEvent_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor)
@@ -457,9 +517,12 @@ void UGA_SpookyMist_Travel_C::DestroyObjects()
 
 void UGA_SpookyMist_Travel_C::ExecuteUbergraph_GA_SpookyMist_Travel(int32 EntryPoint, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FGameplayTag& Temp_struct_Variable, const struct FGameplayAbilityTargetDataHandle& Temp_struct_Variable_1, const struct FGameplayEventData& K2Node_CustomEvent_Payload, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FGameplayEventData& Temp_struct_Variable_2, class UAbilityTask_WaitGameplayEvent* CallFunc_WaitGameplayEvent_ReturnValue, bool CallFunc_IsValid_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, TArray<class AActor*>& Temp_object_Variable, TArray<class AActor*>& Temp_object_Variable_1, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable_1, const struct FGameplayEventData& K2Node_Event_EventData, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, bool K2Node_Event_bWasCancelled, int32 Temp_int_Loop_Counter_Variable_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, int32 CallFunc_Add_IntInt_ReturnValue_1, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_1, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_1, int32 Temp_int_Array_Index_Variable_2, class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageWaitTarget_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, TArray<struct FHitResult>& CallFunc_CapsuleTraceMultiForObjects_OutHits, bool CallFunc_CapsuleTraceMultiForObjects_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, const struct FHitResult& CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, bool CallFunc_Less_IntInt_ReturnValue, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor, bool K2Node_DynamicCast_bSuccess_1, class ABP_DeimosRift_C* K2Node_DynamicCast_AsBP_Deimos_Rift, bool K2Node_DynamicCast_bSuccess_2, class AB_Athena_VendingMachine_C* K2Node_DynamicCast_AsB_Athena_Vending_Machine, bool K2Node_DynamicCast_bSuccess_3, class ACornField_Rectangle_C* K2Node_DynamicCast_AsCorn_Field_Rectangle, bool K2Node_DynamicCast_bSuccess_4, const struct FVector& CallFunc_GetActorEyesViewPoint_OutLocation, const struct FRotator& CallFunc_GetActorEyesViewPoint_OutRotation, float CallFunc_GetValueAtLevel_ReturnValue_2, const struct FVector& CallFunc_Conv_RotatorToVector_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_Multiply_FloatFloat_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, const struct FVector& CallFunc_SetDashStartEndAndDirection_StartPoint, const struct FVector& CallFunc_SetDashStartEndAndDirection_EndPoint, const struct FVector& CallFunc_SetDashStartEndAndDirection_Direction, class UAbilityTask_ApplyRootMotionConstantForce* CallFunc_ApplyRootMotionConstantForce_ReturnValue, float CallFunc_PlayerCapsuleSizes_Radius, float CallFunc_PlayerCapsuleSizes_HalfHeight, bool CallFunc_IsValid_ReturnValue_2, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_2, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, int32 Temp_int_Loop_Counter_Variable_2, int32 CallFunc_Add_IntInt_ReturnValue_2, bool CallFunc_Greater_IntInt_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_1, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue_1, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_1, TArray<struct FHitResult>& CallFunc_CapsuleTraceMultiForObjects_OutHits_1, bool CallFunc_CapsuleTraceMultiForObjects_ReturnValue_1, const struct FHitResult& CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_BreakHitResult_bBlockingHit_1, bool CallFunc_BreakHitResult_bInitialOverlap_1, float CallFunc_BreakHitResult_Time_1, float CallFunc_BreakHitResult_Distance_1, const struct FVector& CallFunc_BreakHitResult_Location_1, const struct FVector& CallFunc_BreakHitResult_ImpactPoint_1, const struct FVector& CallFunc_BreakHitResult_Normal_1, const struct FVector& CallFunc_BreakHitResult_ImpactNormal_1, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat_1, class AActor* CallFunc_BreakHitResult_HitActor_1, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent_1, class FName CallFunc_BreakHitResult_HitBoneName_1, int32 CallFunc_BreakHitResult_HitItem_1, int32 CallFunc_BreakHitResult_FaceIndex_1, const struct FVector& CallFunc_BreakHitResult_TraceStart_1, const struct FVector& CallFunc_BreakHitResult_TraceEnd_1, bool CallFunc_Less_IntInt_ReturnValue_1, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor_1, bool K2Node_DynamicCast_bSuccess_5, class ABP_DeimosRift_C* K2Node_DynamicCast_AsBP_Deimos_Rift_1, bool K2Node_DynamicCast_bSuccess_6, class ACornField_Rectangle_C* K2Node_DynamicCast_AsCorn_Field_Rectangle_1, bool K2Node_DynamicCast_bSuccess_7, TArray<class AActor*>& Temp_object_Variable_2, TArray<struct FHitResult>& CallFunc_CapsuleTraceMultiForObjects_OutHits_2, bool CallFunc_CapsuleTraceMultiForObjects_ReturnValue_2, const struct FHitResult& CallFunc_Array_Get_Item_2, int32 CallFunc_Array_Length_ReturnValue_2, bool CallFunc_BreakHitResult_bBlockingHit_2, bool CallFunc_BreakHitResult_bInitialOverlap_2, float CallFunc_BreakHitResult_Time_2, float CallFunc_BreakHitResult_Distance_2, const struct FVector& CallFunc_BreakHitResult_Location_2, const struct FVector& CallFunc_BreakHitResult_ImpactPoint_2, const struct FVector& CallFunc_BreakHitResult_Normal_2, const struct FVector& CallFunc_BreakHitResult_ImpactNormal_2, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat_2, class AActor* CallFunc_BreakHitResult_HitActor_2, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent_2, class FName CallFunc_BreakHitResult_HitBoneName_2, int32 CallFunc_BreakHitResult_HitItem_2, int32 CallFunc_BreakHitResult_FaceIndex_2, const struct FVector& CallFunc_BreakHitResult_TraceStart_2, const struct FVector& CallFunc_BreakHitResult_TraceEnd_2, bool CallFunc_Less_IntInt_ReturnValue_2, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor_2, bool K2Node_DynamicCast_bSuccess_8, class ABP_DeimosRift_C* K2Node_DynamicCast_AsBP_Deimos_Rift_2, bool K2Node_DynamicCast_bSuccess_9, class AB_Athena_VendingMachine_C* K2Node_DynamicCast_AsB_Athena_Vending_Machine_1, bool K2Node_DynamicCast_bSuccess_10)
 {
-	static auto Func = Class->GetFunction("GA_SpookyMist_Travel_C", "ExecuteUbergraph_GA_SpookyMist_Travel");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SpookyMist_Travel_C", "ExecuteUbergraph_GA_SpookyMist_Travel");
+
+	Params::UGA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_TargetData = K2Node_CustomEvent_TargetData;
@@ -620,6 +683,4 @@ void UGA_SpookyMist_Travel_C::ExecuteUbergraph_GA_SpookyMist_Travel(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

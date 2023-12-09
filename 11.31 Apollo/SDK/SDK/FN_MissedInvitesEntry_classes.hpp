@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -32,11 +29,8 @@ public:
 	struct FSlateColor                           InviteFontColor;                                   // 0xBF8(0x28)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateColor                           DefaultFontColor;                                  // 0xC20(0x28)(Edit, BlueprintVisible, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MissedInvitesEntry_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMissedInvitesEntry_C* GetDefaultObj();
 
 	void BP_OnUnhovered();
 	void BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen);
@@ -46,6 +40,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -14,20 +11,15 @@ namespace SDK
 
 // 0x0 (0xB0 - 0xB0)
 // BlueprintGeneratedClass Border-TabM-Solid-White100pc.Border-TabM-Solid-White100pc_C
-class UBorder_TabM_Solid_White100pc_C : public UBorder_TabM_Solid_C
+class UBorderMinusTabMMinusSolidMinusWhite100pc_C : public UBorderMinusTabMMinusSolid_C
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("Border-TabM-Solid-White100pc_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UBorderMinusTabMMinusSolidMinusWhite100pc_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

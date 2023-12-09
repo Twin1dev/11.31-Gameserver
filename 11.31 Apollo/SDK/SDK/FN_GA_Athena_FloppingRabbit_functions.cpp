@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GA_Athena_FloppingRabbit.GA_Athena_FloppingRabbit_C
+// (None)
+
+class UClass* UGA_Athena_FloppingRabbit_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Athena_FloppingRabbit_C");
+
+	return Clss;
+}
+
+
+// GA_Athena_FloppingRabbit_C GA_Athena_FloppingRabbit.Default__GA_Athena_FloppingRabbit_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Athena_FloppingRabbit_C* UGA_Athena_FloppingRabbit_C::GetDefaultObj()
+{
+	static class UGA_Athena_FloppingRabbit_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Athena_FloppingRabbit_C*>(UGA_Athena_FloppingRabbit_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GA_Athena_FloppingRabbit.GA_Athena_FloppingRabbit_C.K2_CanActivateAbility
@@ -34,9 +59,12 @@ namespace SDK
 
 bool UGA_Athena_FloppingRabbit_C::K2_CanActivateAbility(const struct FGameplayAbilityActorInfo& ActorInfo, struct FGameplayTagContainer* RelevantTags, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_DoesTagAssetInterfaceHaveTag_TagContainerInterface_CastInput, bool CallFunc_DoesTagAssetInterfaceHaveTag_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_DoesTagAssetInterfaceHaveTag_TagContainerInterface_CastInput_1, bool CallFunc_DoesTagAssetInterfaceHaveTag_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "K2_CanActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_FloppingRabbit_C_K2_CanActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "K2_CanActivateAbility");
+
+	Params::UGA_Athena_FloppingRabbit_C_K2_CanActivateAbility_Params Parms{};
 
 	Parms.ActorInfo = ActorInfo;
 	Parms.CallFunc_GetAvatarActorFromActorInfo_ReturnValue = CallFunc_GetAvatarActorFromActorInfo_ReturnValue;
@@ -53,7 +81,7 @@ bool UGA_Athena_FloppingRabbit_C::K2_CanActivateAbility(const struct FGameplayAb
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (RelevantTags != nullptr)
-		*RelevantTags = Parms.RelevantTags;
+		*RelevantTags = std::move(Parms.RelevantTags);
 
 	return Parms.ReturnValue;
 
@@ -67,9 +95,12 @@ bool UGA_Athena_FloppingRabbit_C::K2_CanActivateAbility(const struct FGameplayAb
 
 void UGA_Athena_FloppingRabbit_C::OnNotifyEnd_27A3BC8E4EB0B07EA2FD509EEE97AFC7(class FName NotifyName)
 {
-	static auto Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnNotifyEnd_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_FloppingRabbit_C_OnNotifyEnd_27A3BC8E4EB0B07EA2FD509EEE97AFC7_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnNotifyEnd_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
+
+	Params::UGA_Athena_FloppingRabbit_C_OnNotifyEnd_27A3BC8E4EB0B07EA2FD509EEE97AFC7_Params Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -85,9 +116,12 @@ void UGA_Athena_FloppingRabbit_C::OnNotifyEnd_27A3BC8E4EB0B07EA2FD509EEE97AFC7(c
 
 void UGA_Athena_FloppingRabbit_C::OnNotifyBegin_27A3BC8E4EB0B07EA2FD509EEE97AFC7(class FName NotifyName)
 {
-	static auto Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnNotifyBegin_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_FloppingRabbit_C_OnNotifyBegin_27A3BC8E4EB0B07EA2FD509EEE97AFC7_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnNotifyBegin_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
+
+	Params::UGA_Athena_FloppingRabbit_C_OnNotifyBegin_27A3BC8E4EB0B07EA2FD509EEE97AFC7_Params Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -103,9 +137,12 @@ void UGA_Athena_FloppingRabbit_C::OnNotifyBegin_27A3BC8E4EB0B07EA2FD509EEE97AFC7
 
 void UGA_Athena_FloppingRabbit_C::OnInterrupted_27A3BC8E4EB0B07EA2FD509EEE97AFC7(class FName NotifyName)
 {
-	static auto Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnInterrupted_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_FloppingRabbit_C_OnInterrupted_27A3BC8E4EB0B07EA2FD509EEE97AFC7_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnInterrupted_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
+
+	Params::UGA_Athena_FloppingRabbit_C_OnInterrupted_27A3BC8E4EB0B07EA2FD509EEE97AFC7_Params Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -121,9 +158,12 @@ void UGA_Athena_FloppingRabbit_C::OnInterrupted_27A3BC8E4EB0B07EA2FD509EEE97AFC7
 
 void UGA_Athena_FloppingRabbit_C::OnBlendOut_27A3BC8E4EB0B07EA2FD509EEE97AFC7(class FName NotifyName)
 {
-	static auto Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnBlendOut_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_FloppingRabbit_C_OnBlendOut_27A3BC8E4EB0B07EA2FD509EEE97AFC7_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnBlendOut_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
+
+	Params::UGA_Athena_FloppingRabbit_C_OnBlendOut_27A3BC8E4EB0B07EA2FD509EEE97AFC7_Params Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -139,9 +179,12 @@ void UGA_Athena_FloppingRabbit_C::OnBlendOut_27A3BC8E4EB0B07EA2FD509EEE97AFC7(cl
 
 void UGA_Athena_FloppingRabbit_C::OnCompleted_27A3BC8E4EB0B07EA2FD509EEE97AFC7(class FName NotifyName)
 {
-	static auto Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnCompleted_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_FloppingRabbit_C_OnCompleted_27A3BC8E4EB0B07EA2FD509EEE97AFC7_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "OnCompleted_27A3BC8E4EB0B07EA2FD509EEE97AFC7");
+
+	Params::UGA_Athena_FloppingRabbit_C_OnCompleted_27A3BC8E4EB0B07EA2FD509EEE97AFC7_Params Parms{};
 
 	Parms.NotifyName = NotifyName;
 
@@ -156,12 +199,14 @@ void UGA_Athena_FloppingRabbit_C::OnCompleted_27A3BC8E4EB0B07EA2FD509EEE97AFC7(c
 
 void UGA_Athena_FloppingRabbit_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_FloppingRabbit_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -172,12 +217,14 @@ void UGA_Athena_FloppingRabbit_C::K2_ActivateAbility()
 
 void UGA_Athena_FloppingRabbit_C::ThrowMontageStarted()
 {
-	static auto Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "ThrowMontageStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_FloppingRabbit_C_ThrowMontageStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "ThrowMontageStarted");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -212,9 +259,12 @@ void UGA_Athena_FloppingRabbit_C::ThrowMontageStarted()
 
 void UGA_Athena_FloppingRabbit_C::ExecuteUbergraph_GA_Athena_FloppingRabbit(int32 EntryPoint, class FName K2Node_CustomEvent_NotifyName_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FName K2Node_CustomEvent_NotifyName_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class FName K2Node_CustomEvent_NotifyName_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class FName K2Node_CustomEvent_NotifyName, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class FName Temp_name_Variable, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_DoesTagAssetInterfaceHaveTag_TagContainerInterface_CastInput, bool CallFunc_DoesTagAssetInterfaceHaveTag_ReturnValue, class AB_FloppingRabbit_Weap_Athena_C* K2Node_DynamicCast_AsB_Flopping_Rabbit_Weap_Athena, bool K2Node_DynamicCast_bSuccess_1, class APrj_Athena_FloppingRabbit_C* K2Node_DynamicCast_AsPrj_Athena_Flopping_Rabbit, bool K2Node_DynamicCast_bSuccess_2, class FName K2Node_CustomEvent_NotifyName_4, bool CallFunc_IsServer_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, class UPlayMontageCallbackProxy* CallFunc_CreateProxyObjectForPlayMontage_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "ExecuteUbergraph_GA_Athena_FloppingRabbit");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_FloppingRabbit_C_ExecuteUbergraph_GA_Athena_FloppingRabbit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_FloppingRabbit_C", "ExecuteUbergraph_GA_Athena_FloppingRabbit");
+
+	Params::UGA_Athena_FloppingRabbit_C_ExecuteUbergraph_GA_Athena_FloppingRabbit_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_NotifyName_3 = K2Node_CustomEvent_NotifyName_3;
@@ -247,6 +297,4 @@ void UGA_Athena_FloppingRabbit_C::ExecuteUbergraph_GA_Athena_FloppingRabbit(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

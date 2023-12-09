@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TVPostProcessBPAthena.TVPostProcessBPAthena_C
+// (Actor)
+
+class UClass* ATVPostProcessBPAthena_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TVPostProcessBPAthena_C");
+
+	return Clss;
+}
+
+
+// TVPostProcessBPAthena_C TVPostProcessBPAthena.Default__TVPostProcessBPAthena_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ATVPostProcessBPAthena_C* ATVPostProcessBPAthena_C::GetDefaultObj()
+{
+	static class ATVPostProcessBPAthena_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ATVPostProcessBPAthena_C*>(ATVPostProcessBPAthena_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function TVPostProcessBPAthena.TVPostProcessBPAthena_C.IsEnabledForCurrentSubgame
@@ -24,9 +49,12 @@ namespace SDK
 
 void ATVPostProcessBPAthena_C::IsEnabledForCurrentSubgame(bool* bEnabled, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TVPostProcessBPAthena_C", "IsEnabledForCurrentSubgame");
+	static class UFunction* Func = nullptr;
 
-	Params::ATVPostProcessBPAthena_C_IsEnabledForCurrentSubgame_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TVPostProcessBPAthena_C", "IsEnabledForCurrentSubgame");
+
+	Params::ATVPostProcessBPAthena_C_IsEnabledForCurrentSubgame_Params Parms{};
 
 	Parms.CallFunc_GetSubGame_ReturnValue = CallFunc_GetSubGame_ReturnValue;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
@@ -45,12 +73,14 @@ void ATVPostProcessBPAthena_C::IsEnabledForCurrentSubgame(bool* bEnabled, enum c
 
 void ATVPostProcessBPAthena_C::FrontEndCameraSwitchFadeAthena__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("TVPostProcessBPAthena_C", "FrontEndCameraSwitchFadeAthena__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ATVPostProcessBPAthena_C_FrontEndCameraSwitchFadeAthena__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TVPostProcessBPAthena_C", "FrontEndCameraSwitchFadeAthena__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -61,12 +91,14 @@ void ATVPostProcessBPAthena_C::FrontEndCameraSwitchFadeAthena__FinishedFunc()
 
 void ATVPostProcessBPAthena_C::FrontEndCameraSwitchFadeAthena__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("TVPostProcessBPAthena_C", "FrontEndCameraSwitchFadeAthena__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ATVPostProcessBPAthena_C_FrontEndCameraSwitchFadeAthena__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TVPostProcessBPAthena_C", "FrontEndCameraSwitchFadeAthena__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -77,12 +109,14 @@ void ATVPostProcessBPAthena_C::FrontEndCameraSwitchFadeAthena__UpdateFunc()
 
 void ATVPostProcessBPAthena_C::ExecuteCameraSwitch()
 {
-	static auto Func = Class->GetFunction("TVPostProcessBPAthena_C", "ExecuteCameraSwitch");
+	static class UFunction* Func = nullptr;
 
-	Params::ATVPostProcessBPAthena_C_ExecuteCameraSwitch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TVPostProcessBPAthena_C", "ExecuteCameraSwitch");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -93,12 +127,14 @@ void ATVPostProcessBPAthena_C::ExecuteCameraSwitch()
 
 void ATVPostProcessBPAthena_C::Camera_DisableEffects()
 {
-	static auto Func = Class->GetFunction("TVPostProcessBPAthena_C", "Camera_DisableEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::ATVPostProcessBPAthena_C_Camera_DisableEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TVPostProcessBPAthena_C", "Camera_DisableEffects");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -111,9 +147,12 @@ void ATVPostProcessBPAthena_C::Camera_DisableEffects()
 
 void ATVPostProcessBPAthena_C::ExecuteUbergraph_TVPostProcessBPAthena(int32 EntryPoint, float CallFunc_GetUnpausedTimeSeconds_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TVPostProcessBPAthena_C", "ExecuteUbergraph_TVPostProcessBPAthena");
+	static class UFunction* Func = nullptr;
 
-	Params::ATVPostProcessBPAthena_C_ExecuteUbergraph_TVPostProcessBPAthena_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TVPostProcessBPAthena_C", "ExecuteUbergraph_TVPostProcessBPAthena");
+
+	Params::ATVPostProcessBPAthena_C_ExecuteUbergraph_TVPostProcessBPAthena_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetUnpausedTimeSeconds_ReturnValue = CallFunc_GetUnpausedTimeSeconds_ReturnValue;
@@ -124,6 +163,4 @@ void ATVPostProcessBPAthena_C::ExecuteUbergraph_TVPostProcessBPAthena(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

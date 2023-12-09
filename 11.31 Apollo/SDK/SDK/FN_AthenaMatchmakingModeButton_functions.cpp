@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaMatchmakingModeButton.AthenaMatchmakingModeButton_C
+// (None)
+
+class UClass* UAthenaMatchmakingModeButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaMatchmakingModeButton_C");
+
+	return Clss;
+}
+
+
+// AthenaMatchmakingModeButton_C AthenaMatchmakingModeButton.Default__AthenaMatchmakingModeButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaMatchmakingModeButton_C* UAthenaMatchmakingModeButton_C::GetDefaultObj()
+{
+	static class UAthenaMatchmakingModeButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaMatchmakingModeButton_C*>(UAthenaMatchmakingModeButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaMatchmakingModeButton.AthenaMatchmakingModeButton_C.RefreshLimitedPoolWarning
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAthenaMatchmakingModeButton_C::RefreshLimitedPoolWarning(bool IsCrossplayEnabled)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "RefreshLimitedPoolWarning");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingModeButton_C_RefreshLimitedPoolWarning_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "RefreshLimitedPoolWarning");
+
+	Params::UAthenaMatchmakingModeButton_C_RefreshLimitedPoolWarning_Params Parms{};
 
 	Parms.IsCrossplayEnabled = IsCrossplayEnabled;
 
@@ -39,12 +67,14 @@ void UAthenaMatchmakingModeButton_C::RefreshLimitedPoolWarning(bool IsCrossplayE
 
 void UAthenaMatchmakingModeButton_C::RefreshFillText()
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "RefreshFillText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingModeButton_C_RefreshFillText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "RefreshFillText");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +86,12 @@ void UAthenaMatchmakingModeButton_C::RefreshFillText()
 
 void UAthenaMatchmakingModeButton_C::SetSquadFillText(bool bFill)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "SetSquadFillText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingModeButton_C_SetSquadFillText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "SetSquadFillText");
+
+	Params::UAthenaMatchmakingModeButton_C_SetSquadFillText_Params Parms{};
 
 	Parms.bFill = bFill;
 
@@ -75,9 +108,12 @@ void UAthenaMatchmakingModeButton_C::SetSquadFillText(bool bFill)
 
 void UAthenaMatchmakingModeButton_C::PlaylistChanged(class UFortPlaylistAthena* NewPlaylist, class FText OverrideName)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "PlaylistChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingModeButton_C_PlaylistChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "PlaylistChanged");
+
+	Params::UAthenaMatchmakingModeButton_C_PlaylistChanged_Params Parms{};
 
 	Parms.NewPlaylist = NewPlaylist;
 	Parms.OverrideName = OverrideName;
@@ -94,9 +130,12 @@ void UAthenaMatchmakingModeButton_C::PlaylistChanged(class UFortPlaylistAthena* 
 
 void UAthenaMatchmakingModeButton_C::SetTabLabelInfo(struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "SetTabLabelInfo");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingModeButton_C_SetTabLabelInfo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "SetTabLabelInfo");
+
+	Params::UAthenaMatchmakingModeButton_C_SetTabLabelInfo_Params Parms{};
 
 	Parms.TabLabelInfo = TabLabelInfo;
 
@@ -113,9 +152,12 @@ void UAthenaMatchmakingModeButton_C::SetTabLabelInfo(struct FFortTabButtonLabelI
 
 void UAthenaMatchmakingModeButton_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingModeButton_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "OnMouseEnter");
+
+	Params::UAthenaMatchmakingModeButton_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -132,9 +174,12 @@ void UAthenaMatchmakingModeButton_C::OnMouseEnter(const struct FGeometry& MyGeom
 
 void UAthenaMatchmakingModeButton_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingModeButton_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "OnMouseLeave");
+
+	Params::UAthenaMatchmakingModeButton_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -157,9 +202,12 @@ void UAthenaMatchmakingModeButton_C::OnMouseLeave(struct FPointerEvent& MouseEve
 
 void UAthenaMatchmakingModeButton_C::ExecuteUbergraph_AthenaMatchmakingModeButton(int32 EntryPoint, bool CallFunc_GetIsEnabled_ReturnValue, const struct FFortTabButtonLabelInfo& K2Node_Event_TabLabelInfo, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, const struct FPointerEvent& K2Node_Event_MouseEvent)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "ExecuteUbergraph_AthenaMatchmakingModeButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingModeButton_C_ExecuteUbergraph_AthenaMatchmakingModeButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingModeButton_C", "ExecuteUbergraph_AthenaMatchmakingModeButton");
+
+	Params::UAthenaMatchmakingModeButton_C_ExecuteUbergraph_AthenaMatchmakingModeButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetIsEnabled_ReturnValue = CallFunc_GetIsEnabled_ReturnValue;
@@ -176,6 +224,4 @@ void UAthenaMatchmakingModeButton_C::ExecuteUbergraph_AthenaMatchmakingModeButto
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

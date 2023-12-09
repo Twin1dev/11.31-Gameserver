@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass PlayerPawn_Generic_Parent.PlayerPawn_Generic_Parent_C
+// (Actor, Pawn)
+
+class UClass* APlayerPawn_Generic_Parent_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerPawn_Generic_Parent_C");
+
+	return Clss;
+}
+
+
+// PlayerPawn_Generic_Parent_C PlayerPawn_Generic_Parent.Default__PlayerPawn_Generic_Parent_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class APlayerPawn_Generic_Parent_C* APlayerPawn_Generic_Parent_C::GetDefaultObj()
+{
+	static class APlayerPawn_Generic_Parent_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APlayerPawn_Generic_Parent_C*>(APlayerPawn_Generic_Parent_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PlayerPawn_Generic_Parent.PlayerPawn_Generic_Parent_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void APlayerPawn_Generic_Parent_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_Parent_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void APlayerPawn_Generic_Parent_C::ReceiveBeginPlay()
 
 void APlayerPawn_Generic_Parent_C::Entered_Water_Volume()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "Entered Water Volume");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_Parent_C_Entered_Water_Volume_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "Entered Water Volume");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -54,9 +83,12 @@ void APlayerPawn_Generic_Parent_C::Entered_Water_Volume()
 
 void APlayerPawn_Generic_Parent_C::Player_Creates_a_Splash(struct FTransform& NewTransform)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "Player Creates a Splash");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_Parent_C_Player_Creates_a_Splash_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "Player Creates a Splash");
+
+	Params::APlayerPawn_Generic_Parent_C_Player_Creates_a_Splash_Params Parms{};
 
 	Parms.NewTransform = NewTransform;
 
@@ -71,12 +103,14 @@ void APlayerPawn_Generic_Parent_C::Player_Creates_a_Splash(struct FTransform& Ne
 
 void APlayerPawn_Generic_Parent_C::ReinitializeWeaponMaterials()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "ReinitializeWeaponMaterials");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_Parent_C_ReinitializeWeaponMaterials_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "ReinitializeWeaponMaterials");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -93,9 +127,12 @@ void APlayerPawn_Generic_Parent_C::ReinitializeWeaponMaterials()
 
 void APlayerPawn_Generic_Parent_C::ExecuteUbergraph_PlayerPawn_Generic_Parent(int32 EntryPoint, const struct FTransform& Temp_struct_Variable, bool CallFunc_IsLocallyControlled_ReturnValue, class UPostProcessComponent* CallFunc_AddComponent_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, const struct FTransform& K2Node_CustomEvent_NewTransform)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "ExecuteUbergraph_PlayerPawn_Generic_Parent");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "ExecuteUbergraph_PlayerPawn_Generic_Parent");
+
+	Params::APlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
@@ -118,9 +155,12 @@ void APlayerPawn_Generic_Parent_C::ExecuteUbergraph_PlayerPawn_Generic_Parent(in
 
 void APlayerPawn_Generic_Parent_C::OnOverlapWaterVolume__DelegateSignature(bool bIsInWater, class AFortPlayerPawn* Pawn, class AActor* Water)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "OnOverlapWaterVolume__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_Parent_C_OnOverlapWaterVolume__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "OnOverlapWaterVolume__DelegateSignature");
+
+	Params::APlayerPawn_Generic_Parent_C_OnOverlapWaterVolume__DelegateSignature_Params Parms{};
 
 	Parms.bIsInWater = bIsInWater;
 	Parms.Pawn = Pawn;
@@ -132,6 +172,4 @@ void APlayerPawn_Generic_Parent_C::OnOverlapWaterVolume__DelegateSignature(bool 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

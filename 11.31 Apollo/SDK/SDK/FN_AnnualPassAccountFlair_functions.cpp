@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AnnualPassAccountFlair.AnnualPassAccountFlair_C
+// (None)
+
+class UClass* UAnnualPassAccountFlair_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AnnualPassAccountFlair_C");
+
+	return Clss;
+}
+
+
+// AnnualPassAccountFlair_C AnnualPassAccountFlair.Default__AnnualPassAccountFlair_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAnnualPassAccountFlair_C* UAnnualPassAccountFlair_C::GetDefaultObj()
+{
+	static class UAnnualPassAccountFlair_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAnnualPassAccountFlair_C*>(UAnnualPassAccountFlair_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AnnualPassAccountFlair.AnnualPassAccountFlair_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAnnualPassAccountFlair_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AnnualPassAccountFlair_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnnualPassAccountFlair_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnnualPassAccountFlair_C", "PreConstruct");
+
+	Params::UAnnualPassAccountFlair_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -39,12 +67,14 @@ void UAnnualPassAccountFlair_C::PreConstruct(bool IsDesignTime)
 
 void UAnnualPassAccountFlair_C::Construct()
 {
-	static auto Func = Class->GetFunction("AnnualPassAccountFlair_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnnualPassAccountFlair_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnnualPassAccountFlair_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -65,9 +95,12 @@ void UAnnualPassAccountFlair_C::Construct()
 
 void UAnnualPassAccountFlair_C::ExecuteUbergraph_AnnualPassAccountFlair(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool K2Node_Event_IsDesignTime, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("AnnualPassAccountFlair_C", "ExecuteUbergraph_AnnualPassAccountFlair");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnnualPassAccountFlair_C_ExecuteUbergraph_AnnualPassAccountFlair_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnnualPassAccountFlair_C", "ExecuteUbergraph_AnnualPassAccountFlair");
+
+	Params::UAnnualPassAccountFlair_C_ExecuteUbergraph_AnnualPassAccountFlair_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -86,6 +119,4 @@ void UAnnualPassAccountFlair_C::ExecuteUbergraph_AnnualPassAccountFlair(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

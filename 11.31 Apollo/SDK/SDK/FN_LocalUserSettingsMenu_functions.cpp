@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass LocalUserSettingsMenu.LocalUserSettingsMenu_C
+// (None)
+
+class UClass* ULocalUserSettingsMenu_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LocalUserSettingsMenu_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// LocalUserSettingsMenu_C LocalUserSettingsMenu.Default__LocalUserSettingsMenu_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULocalUserSettingsMenu_C* ULocalUserSettingsMenu_C::GetDefaultObj()
+{
+	static class ULocalUserSettingsMenu_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULocalUserSettingsMenu_C*>(ULocalUserSettingsMenu_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass CampaignPurchaseScreen.CampaignPurchaseScreen_C
+// (None)
+
+class UClass* UCampaignPurchaseScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CampaignPurchaseScreen_C");
+
+	return Clss;
+}
+
+
+// CampaignPurchaseScreen_C CampaignPurchaseScreen.Default__CampaignPurchaseScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCampaignPurchaseScreen_C* UCampaignPurchaseScreen_C::GetDefaultObj()
+{
+	static class UCampaignPurchaseScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCampaignPurchaseScreen_C*>(UCampaignPurchaseScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function CampaignPurchaseScreen.CampaignPurchaseScreen_C.IsMinorShutdownWarningEnabled
@@ -26,9 +51,12 @@ namespace SDK
 
 void UCampaignPurchaseScreen_C::IsMinorShutdownWarningEnabled(bool* Enabled, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, enum class EFortUIFeatureState CallFunc_GetFeatureState_OutFeatureState, enum class EFortUIFeatureStateReason CallFunc_GetFeatureState_OutReason, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("CampaignPurchaseScreen_C", "IsMinorShutdownWarningEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UCampaignPurchaseScreen_C_IsMinorShutdownWarningEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CampaignPurchaseScreen_C", "IsMinorShutdownWarningEnabled");
+
+	Params::UCampaignPurchaseScreen_C_IsMinorShutdownWarningEnabled_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetFeatureState_OutFeatureState = CallFunc_GetFeatureState_OutFeatureState;
@@ -49,12 +77,14 @@ void UCampaignPurchaseScreen_C::IsMinorShutdownWarningEnabled(bool* Enabled, cla
 
 void UCampaignPurchaseScreen_C::InitializeRedeemButton()
 {
-	static auto Func = Class->GetFunction("CampaignPurchaseScreen_C", "InitializeRedeemButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UCampaignPurchaseScreen_C_InitializeRedeemButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CampaignPurchaseScreen_C", "InitializeRedeemButton");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -68,9 +98,12 @@ void UCampaignPurchaseScreen_C::InitializeRedeemButton()
 
 bool UCampaignPurchaseScreen_C::IsBusyMatchmaking(class UFortMatchmakingContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsMatchmakingLocal_ReturnValue)
 {
-	static auto Func = Class->GetFunction("CampaignPurchaseScreen_C", "IsBusyMatchmaking");
+	static class UFunction* Func = nullptr;
 
-	Params::UCampaignPurchaseScreen_C_IsBusyMatchmaking_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CampaignPurchaseScreen_C", "IsBusyMatchmaking");
+
+	Params::UCampaignPurchaseScreen_C_IsBusyMatchmaking_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_IsMatchmakingLocal_ReturnValue = CallFunc_IsMatchmakingLocal_ReturnValue;
@@ -88,12 +121,14 @@ bool UCampaignPurchaseScreen_C::IsBusyMatchmaking(class UFortMatchmakingContext*
 
 void UCampaignPurchaseScreen_C::Update()
 {
-	static auto Func = Class->GetFunction("CampaignPurchaseScreen_C", "Update");
+	static class UFunction* Func = nullptr;
 
-	Params::UCampaignPurchaseScreen_C_Update_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CampaignPurchaseScreen_C", "Update");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -111,9 +146,12 @@ void UCampaignPurchaseScreen_C::Update()
 
 void UCampaignPurchaseScreen_C::AdvanceTextureCycle(int32 NextTextureIndex, int32 CurrentTextureIndex, int32 CallFunc_Array_Length_ReturnValue, class UTexture* CallFunc_Array_Get_Item, class UTexture* CallFunc_Array_Get_Item_1, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("CampaignPurchaseScreen_C", "AdvanceTextureCycle");
+	static class UFunction* Func = nullptr;
 
-	Params::UCampaignPurchaseScreen_C_AdvanceTextureCycle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CampaignPurchaseScreen_C", "AdvanceTextureCycle");
+
+	Params::UCampaignPurchaseScreen_C_AdvanceTextureCycle_Params Parms{};
 
 	Parms.NextTextureIndex = NextTextureIndex;
 	Parms.CurrentTextureIndex = CurrentTextureIndex;
@@ -137,9 +175,12 @@ void UCampaignPurchaseScreen_C::AdvanceTextureCycle(int32 NextTextureIndex, int3
 
 void UCampaignPurchaseScreen_C::InitializeTextureCycle(class UTexture* CallFunc_Array_Get_Item, int32 CallFunc_Array_LastIndex_ReturnValue, class UTexture* CallFunc_Array_Get_Item_1)
 {
-	static auto Func = Class->GetFunction("CampaignPurchaseScreen_C", "InitializeTextureCycle");
+	static class UFunction* Func = nullptr;
 
-	Params::UCampaignPurchaseScreen_C_InitializeTextureCycle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CampaignPurchaseScreen_C", "InitializeTextureCycle");
+
+	Params::UCampaignPurchaseScreen_C_InitializeTextureCycle_Params Parms{};
 
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_Array_LastIndex_ReturnValue = CallFunc_Array_LastIndex_ReturnValue;
@@ -159,9 +200,12 @@ void UCampaignPurchaseScreen_C::InitializeTextureCycle(class UTexture* CallFunc_
 
 void UCampaignPurchaseScreen_C::ToggleTimer(bool Enabled, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
-	static auto Func = Class->GetFunction("CampaignPurchaseScreen_C", "ToggleTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::UCampaignPurchaseScreen_C_ToggleTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CampaignPurchaseScreen_C", "ToggleTimer");
+
+	Params::UCampaignPurchaseScreen_C_ToggleTimer_Params Parms{};
 
 	Parms.Enabled = Enabled;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -178,12 +222,14 @@ void UCampaignPurchaseScreen_C::ToggleTimer(bool Enabled, UDelegateProperty_ K2N
 
 void UCampaignPurchaseScreen_C::Construct()
 {
-	static auto Func = Class->GetFunction("CampaignPurchaseScreen_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCampaignPurchaseScreen_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CampaignPurchaseScreen_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -195,9 +241,12 @@ void UCampaignPurchaseScreen_C::Construct()
 
 void UCampaignPurchaseScreen_C::BndEvt__ButtonBack_K2Node_ComponentBoundEvent_128_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("CampaignPurchaseScreen_C", "BndEvt__ButtonBack_K2Node_ComponentBoundEvent_128_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCampaignPurchaseScreen_C_BndEvt__ButtonBack_K2Node_ComponentBoundEvent_128_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CampaignPurchaseScreen_C", "BndEvt__ButtonBack_K2Node_ComponentBoundEvent_128_CommonButtonClicked__DelegateSignature");
+
+	Params::UCampaignPurchaseScreen_C_BndEvt__ButtonBack_K2Node_ComponentBoundEvent_128_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -213,9 +262,12 @@ void UCampaignPurchaseScreen_C::BndEvt__ButtonBack_K2Node_ComponentBoundEvent_12
 
 void UCampaignPurchaseScreen_C::BndEvt__ButtonPurchase_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("CampaignPurchaseScreen_C", "BndEvt__ButtonPurchase_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCampaignPurchaseScreen_C_BndEvt__ButtonPurchase_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CampaignPurchaseScreen_C", "BndEvt__ButtonPurchase_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature");
+
+	Params::UCampaignPurchaseScreen_C_BndEvt__ButtonPurchase_K2Node_ComponentBoundEvent_39_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -230,12 +282,14 @@ void UCampaignPurchaseScreen_C::BndEvt__ButtonPurchase_K2Node_ComponentBoundEven
 
 void UCampaignPurchaseScreen_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("CampaignPurchaseScreen_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UCampaignPurchaseScreen_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CampaignPurchaseScreen_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -246,12 +300,14 @@ void UCampaignPurchaseScreen_C::BP_OnActivated()
 
 void UCampaignPurchaseScreen_C::OnImageCycleTimeElapsed()
 {
-	static auto Func = Class->GetFunction("CampaignPurchaseScreen_C", "OnImageCycleTimeElapsed");
+	static class UFunction* Func = nullptr;
 
-	Params::UCampaignPurchaseScreen_C_OnImageCycleTimeElapsed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CampaignPurchaseScreen_C", "OnImageCycleTimeElapsed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -273,9 +329,12 @@ void UCampaignPurchaseScreen_C::OnImageCycleTimeElapsed()
 
 void UCampaignPurchaseScreen_C::ExecuteUbergraph_CampaignPurchaseScreen(int32 EntryPoint, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UFortMtxStoreRootBase* CallFunc_Create_ReturnValue, class UStoreMain_Root_C* K2Node_DynamicCast_AsStore_Main_Root, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("CampaignPurchaseScreen_C", "ExecuteUbergraph_CampaignPurchaseScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UCampaignPurchaseScreen_C_ExecuteUbergraph_CampaignPurchaseScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CampaignPurchaseScreen_C", "ExecuteUbergraph_CampaignPurchaseScreen");
+
+	Params::UCampaignPurchaseScreen_C_ExecuteUbergraph_CampaignPurchaseScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
@@ -295,6 +354,4 @@ void UCampaignPurchaseScreen_C::ExecuteUbergraph_CampaignPurchaseScreen(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

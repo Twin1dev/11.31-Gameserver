@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TournamentEventWindowDetails.TournamentEventWindowDetails_C
+// (None)
+
+class UClass* UTournamentEventWindowDetails_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TournamentEventWindowDetails_C");
+
+	return Clss;
+}
+
+
+// TournamentEventWindowDetails_C TournamentEventWindowDetails.Default__TournamentEventWindowDetails_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTournamentEventWindowDetails_C* UTournamentEventWindowDetails_C::GetDefaultObj()
+{
+	static class UTournamentEventWindowDetails_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTournamentEventWindowDetails_C*>(UTournamentEventWindowDetails_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TournamentEventWindowDetails.TournamentEventWindowDetails_C.RefreshDataBP
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UTournamentEventWindowDetails_C::RefreshDataBP()
 {
-	static auto Func = Class->GetFunction("TournamentEventWindowDetails_C", "RefreshDataBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentEventWindowDetails_C_RefreshDataBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentEventWindowDetails_C", "RefreshDataBP");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UTournamentEventWindowDetails_C::RefreshDataBP()
 
 void UTournamentEventWindowDetails_C::EventColorize()
 {
-	static auto Func = Class->GetFunction("TournamentEventWindowDetails_C", "EventColorize");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentEventWindowDetails_C_EventColorize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentEventWindowDetails_C", "EventColorize");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -54,9 +83,12 @@ void UTournamentEventWindowDetails_C::EventColorize()
 
 void UTournamentEventWindowDetails_C::BndEvt__Button_Leaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TournamentEventWindowDetails_C", "BndEvt__Button_Leaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentEventWindowDetails_C_BndEvt__Button_Leaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentEventWindowDetails_C", "BndEvt__Button_Leaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UTournamentEventWindowDetails_C_BndEvt__Button_Leaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -72,9 +104,12 @@ void UTournamentEventWindowDetails_C::BndEvt__Button_Leaderboard_K2Node_Componen
 
 void UTournamentEventWindowDetails_C::BndEvt__Button_Leaderboard_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TournamentEventWindowDetails_C", "BndEvt__Button_Leaderboard_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentEventWindowDetails_C_BndEvt__Button_Leaderboard_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentEventWindowDetails_C", "BndEvt__Button_Leaderboard_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UTournamentEventWindowDetails_C_BndEvt__Button_Leaderboard_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -90,9 +125,12 @@ void UTournamentEventWindowDetails_C::BndEvt__Button_Leaderboard_K2Node_Componen
 
 void UTournamentEventWindowDetails_C::BndEvt__Button_Leaderboard_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TournamentEventWindowDetails_C", "BndEvt__Button_Leaderboard_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentEventWindowDetails_C_BndEvt__Button_Leaderboard_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentEventWindowDetails_C", "BndEvt__Button_Leaderboard_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UTournamentEventWindowDetails_C_BndEvt__Button_Leaderboard_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -108,9 +146,12 @@ void UTournamentEventWindowDetails_C::BndEvt__Button_Leaderboard_K2Node_Componen
 
 void UTournamentEventWindowDetails_C::BndEvt__Button_Payout_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TournamentEventWindowDetails_C", "BndEvt__Button_Payout_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentEventWindowDetails_C_BndEvt__Button_Payout_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentEventWindowDetails_C", "BndEvt__Button_Payout_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+
+	Params::UTournamentEventWindowDetails_C_BndEvt__Button_Payout_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -126,9 +167,12 @@ void UTournamentEventWindowDetails_C::BndEvt__Button_Payout_K2Node_ComponentBoun
 
 void UTournamentEventWindowDetails_C::BndEvt__Button_Payout_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TournamentEventWindowDetails_C", "BndEvt__Button_Payout_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentEventWindowDetails_C_BndEvt__Button_Payout_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentEventWindowDetails_C", "BndEvt__Button_Payout_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+
+	Params::UTournamentEventWindowDetails_C_BndEvt__Button_Payout_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -144,9 +188,12 @@ void UTournamentEventWindowDetails_C::BndEvt__Button_Payout_K2Node_ComponentBoun
 
 void UTournamentEventWindowDetails_C::BndEvt__Button_Payout_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TournamentEventWindowDetails_C", "BndEvt__Button_Payout_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentEventWindowDetails_C_BndEvt__Button_Payout_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentEventWindowDetails_C", "BndEvt__Button_Payout_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+
+	Params::UTournamentEventWindowDetails_C_BndEvt__Button_Payout_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -162,30 +209,30 @@ void UTournamentEventWindowDetails_C::BndEvt__Button_Payout_K2Node_ComponentBoun
 // class FString                      CallFunc_GetTournamentId_ReturnValue                             (ZeroConstructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortEventWindowEligibilityTemp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
-// class FText                        Temp_text_Variable_2                                             ()
-// class FText                        Temp_text_Variable_3                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
+// class FText                        Temp_text_Variable_2                                             (None)
+// class FText                        Temp_text_Variable_3                                             (None)
 // enum class EFortEventWindowEligibilityTemp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_4                                             ()
-// class FText                        Temp_text_Variable_5                                             ()
-// class FText                        Temp_text_Variable_6                                             ()
-// class FText                        Temp_text_Variable_7                                             ()
+// class FText                        Temp_text_Variable_4                                             (None)
+// class FText                        Temp_text_Variable_5                                             (None)
+// class FText                        Temp_text_Variable_6                                             (None)
+// class FText                        Temp_text_Variable_7                                             (None)
 // enum class EFortEventWindowEligibilityTemp_byte_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_8                                             ()
-// class FText                        Temp_text_Variable_9                                             ()
-// class FText                        Temp_text_Variable_10                                            ()
-// class FText                        Temp_text_Variable_11                                            ()
+// class FText                        Temp_text_Variable_8                                             (None)
+// class FText                        Temp_text_Variable_9                                             (None)
+// class FText                        Temp_text_Variable_10                                            (None)
+// class FText                        Temp_text_Variable_11                                            (None)
 // enum class EFortEventWindowEligibilityTemp_byte_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_12                                            ()
-// class FText                        Temp_text_Variable_13                                            ()
-// class FText                        Temp_text_Variable_14                                            ()
-// class FText                        Temp_text_Variable_15                                            ()
+// class FText                        Temp_text_Variable_12                                            (None)
+// class FText                        Temp_text_Variable_13                                            (None)
+// class FText                        Temp_text_Variable_14                                            (None)
+// class FText                        Temp_text_Variable_15                                            (None)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable_4                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_5                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable_16                                            ()
+// class FText                        Temp_text_Variable_16                                            (None)
 // bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable_6                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_7                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -212,12 +259,12 @@ void UTournamentEventWindowDetails_C::BndEvt__Button_Payout_K2Node_ComponentBoun
 // enum class EFortShowdownEventState Temp_byte_Variable_9                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_10                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_11                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetText_ReturnValue                                     ()
+// class FText                        CallFunc_GetText_ReturnValue                                     (None)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable_12                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 // enum class ESlateVisibility        Temp_byte_Variable_13                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortShowdownMatchType  CallFunc_GetTournamentMatchType_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_NotEqual_ByteByte_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -235,7 +282,7 @@ void UTournamentEventWindowDetails_C::BndEvt__Button_Payout_K2Node_ComponentBoun
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 // int32                              CallFunc_GetTournamentMatchCap_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Temp_float_Variable_1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_5                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -271,54 +318,54 @@ void UTournamentEventWindowDetails_C::BndEvt__Button_Payout_K2Node_ComponentBoun
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // bool                               Temp_bool_Variable_6                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        CallFunc_TextToUpper_ReturnValue_1                               ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue_1                               (None)
 // enum class EFortEventWindowEligibilityCallFunc_GetEventWindowEligibility_ReturnValue                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_3                                          ()
-// class FText                        K2Node_Select_Default_4                                          ()
+// class FText                        K2Node_Select_Default_3                                          (None)
+// class FText                        K2Node_Select_Default_4                                          (None)
 // bool                               Temp_bool_Variable_7                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default_5                                          ()
+// class FText                        K2Node_Select_Default_5                                          (None)
 // enum class EFortEventWindowEligibilityCallFunc_GetEventWindowEligibility_ReturnValue_1                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Select_Default_6                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_5                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_7                                          ()
+// class FText                        K2Node_Select_Default_7                                          (None)
 // float                              Temp_float_Variable_3                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortShowdownEventBestResultsSummaryCallFunc_GetEventResultsSummary_ReturnValue_1                    (NoDestructor)
 // struct FDateTime                   CallFunc_GetEventBeginTime_ReturnValue                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
-// class FText                        CallFunc_GetEventDateAsText_ReturnValue                          ()
+// class FText                        CallFunc_GetEventDateAsText_ReturnValue                          (None)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
 // bool                               CallFunc_NotEqual_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 // enum class ESlateVisibility        K2Node_Select_Default_8                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FDateTime                   CallFunc_GetEventEndTime_ReturnValue                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetEventDateAsText_ReturnValue_1                        ()
+// class FText                        CallFunc_GetEventDateAsText_ReturnValue_1                        (None)
 // bool                               CallFunc_EqualEqual_TextText_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FDateTime                   CallFunc_GetEventBeginTime_ReturnValue_1                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetEventTimeAsText_ReturnValue                          ()
+// class FText                        CallFunc_GetEventTimeAsText_ReturnValue                          (None)
 // struct FDateTime                   CallFunc_GetEventEndTime_ReturnValue_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
-// class FText                        CallFunc_GetEventTimeAsText_ReturnValue_1                        ()
+// class FText                        CallFunc_GetEventTimeAsText_ReturnValue_1                        (None)
 // bool                               Temp_bool_Variable_8                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_3                           (HasGetValueTypeHash)
 // struct FDateTime                   CallFunc_GetEventBeginTime_ReturnValue_2                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Select_Default_9                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetEventDateAsText_ReturnValue_2                        ()
+// class FText                        CallFunc_GetEventDateAsText_ReturnValue_2                        (None)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_6                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_4                           (HasGetValueTypeHash)
 // struct FDateTime                   CallFunc_GetEventEndTime_ReturnValue_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // float                              Temp_float_Variable_4                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetEventDateAsText_ReturnValue_3                        ()
+// class FText                        CallFunc_GetEventDateAsText_ReturnValue_3                        (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_5                           (HasGetValueTypeHash)
 // enum class EFortShowdownEventState CallFunc_GetEventTimeState_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_2                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue_2                                    ()
+// class FText                        CallFunc_Format_ReturnValue_2                                    (None)
 // class FText                        K2Node_Select_Default_10                                         (ConstParm)
-// class FText                        K2Node_Select_Default_11                                         ()
+// class FText                        K2Node_Select_Default_11                                         (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_6                           (HasGetValueTypeHash)
 // enum class EFortShowdownEventState CallFunc_GetEventPlayerParticipationState_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_3                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue_3                                    ()
+// class FText                        CallFunc_Format_ReturnValue_3                                    (None)
 // int32                              K2Node_Select_Default_12                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_NotEqual_TextText_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsEventLeaderboardAvailable_ReturnValue_2               (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -351,9 +398,12 @@ void UTournamentEventWindowDetails_C::BndEvt__Button_Payout_K2Node_ComponentBoun
 
 void UTournamentEventWindowDetails_C::ExecuteUbergraph_TournamentEventWindowDetails(int32 EntryPoint, const class FString& CallFunc_GetTournamentId_ReturnValue, int32 Temp_int_Variable, enum class EFortEventWindowEligibility Temp_byte_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class FText Temp_text_Variable_2, class FText Temp_text_Variable_3, enum class EFortEventWindowEligibility Temp_byte_Variable_1, class FText Temp_text_Variable_4, class FText Temp_text_Variable_5, class FText Temp_text_Variable_6, class FText Temp_text_Variable_7, enum class EFortEventWindowEligibility Temp_byte_Variable_2, class FText Temp_text_Variable_8, class FText Temp_text_Variable_9, class FText Temp_text_Variable_10, class FText Temp_text_Variable_11, enum class EFortEventWindowEligibility Temp_byte_Variable_3, class FText Temp_text_Variable_12, class FText Temp_text_Variable_13, class FText Temp_text_Variable_14, class FText Temp_text_Variable_15, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, bool Temp_bool_Variable_1, class FText Temp_text_Variable_16, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, int32 Temp_int_Variable_1, int32 Temp_int_Variable_2, int32 Temp_int_Variable_3, int32 Temp_int_Variable_4, int32 Temp_int_Variable_5, int32 Temp_int_Variable_6, int32 Temp_int_Variable_7, int32 Temp_int_Variable_8, int32 Temp_int_Variable_9, int32 Temp_int_Variable_10, float Temp_float_Variable, enum class EFortShowdownEventState Temp_byte_Variable_8, class FText Temp_text_Variable_17, class FText Temp_text_Variable_18, class FText Temp_text_Variable_19, class FText Temp_text_Variable_20, class FText Temp_text_Variable_21, class FText Temp_text_Variable_22, class FText Temp_text_Variable_23, class FText Temp_text_Variable_24, enum class EFortShowdownEventState Temp_byte_Variable_9, enum class ESlateVisibility Temp_byte_Variable_10, enum class ESlateVisibility Temp_byte_Variable_11, class FText CallFunc_GetText_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_12, class FText CallFunc_Conv_StringToText_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_13, enum class EFortShowdownMatchType CallFunc_GetTournamentMatchType_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, float CallFunc_PauseAnimation_ReturnValue, float CallFunc_GetStartTime_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_GetEndTime_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue, int32 CallFunc_GetTournamentPinUnlockScore_ReturnValue, bool Temp_bool_Variable_4, const struct FFortShowdownEventBestResultsSummary& CallFunc_GetEventResultsSummary_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, const struct FSlateColor& K2Node_MakeStruct_SlateColor, int32 CallFunc_GetTournamentMatchCap_ReturnValue, float Temp_float_Variable_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_5, bool CallFunc_IsEventLeaderboardAvailable_ReturnValue, bool CallFunc_IsEventLeaderboardAvailable_ReturnValue_1, const class FString& CallFunc_GetTournamentId_ReturnValue_1, const class FString& CallFunc_GetEventId_ReturnValue, bool Temp_bool_Variable_5, class UCommonButton* K2Node_ComponentBoundEvent_Button_4, float K2Node_Select_Default_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, float CallFunc_PauseAnimation_ReturnValue_2, float CallFunc_GetStartTime_ReturnValue_1, float CallFunc_PauseAnimation_ReturnValue_3, bool CallFunc_LessEqual_FloatFloat_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue_1, float CallFunc_GetEndTime_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, float CallFunc_Subtract_FloatFloat_ReturnValue_1, float CallFunc_PauseAnimation_ReturnValue_4, float CallFunc_GetStartTime_ReturnValue_2, float CallFunc_PauseAnimation_ReturnValue_5, bool CallFunc_LessEqual_FloatFloat_ReturnValue_2, float CallFunc_Add_FloatFloat_ReturnValue_2, float CallFunc_GetEndTime_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_4, float CallFunc_Subtract_FloatFloat_ReturnValue_2, float Temp_float_Variable_2, bool CallFunc_BooleanAND_ReturnValue_1, int32 CallFunc_GetEventWindowSessionNumber_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, bool Temp_bool_Variable_6, class FText CallFunc_Format_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue_1, enum class EFortEventWindowEligibility CallFunc_GetEventWindowEligibility_ReturnValue, class FText K2Node_Select_Default_3, class FText K2Node_Select_Default_4, bool Temp_bool_Variable_7, class FText K2Node_Select_Default_5, enum class EFortEventWindowEligibility CallFunc_GetEventWindowEligibility_ReturnValue_1, float K2Node_Select_Default_6, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_5, class FText K2Node_Select_Default_7, float Temp_float_Variable_3, const struct FFortShowdownEventBestResultsSummary& CallFunc_GetEventResultsSummary_ReturnValue_1, const struct FDateTime& CallFunc_GetEventBeginTime_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, class FText CallFunc_GetEventDateAsText_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, bool CallFunc_NotEqual_IntInt_ReturnValue, class FText CallFunc_Format_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_8, const struct FDateTime& CallFunc_GetEventEndTime_ReturnValue, class FText CallFunc_GetEventDateAsText_ReturnValue_1, bool CallFunc_EqualEqual_TextText_ReturnValue, const struct FDateTime& CallFunc_GetEventBeginTime_ReturnValue_1, class FText CallFunc_GetEventTimeAsText_ReturnValue, const struct FDateTime& CallFunc_GetEventEndTime_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, class FText CallFunc_GetEventTimeAsText_ReturnValue_1, bool Temp_bool_Variable_8, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, const struct FDateTime& CallFunc_GetEventBeginTime_ReturnValue_2, float K2Node_Select_Default_9, class FText CallFunc_GetEventDateAsText_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_6, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, const struct FDateTime& CallFunc_GetEventEndTime_ReturnValue_2, float Temp_float_Variable_4, class FText CallFunc_GetEventDateAsText_ReturnValue_3, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_5, enum class EFortShowdownEventState CallFunc_GetEventTimeState_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_2, class FText CallFunc_Format_ReturnValue_2, class FText K2Node_Select_Default_10, class FText K2Node_Select_Default_11, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_6, enum class EFortShowdownEventState CallFunc_GetEventPlayerParticipationState_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_3, class FText CallFunc_Format_ReturnValue_3, int32 K2Node_Select_Default_12, bool CallFunc_NotEqual_TextText_ReturnValue, bool CallFunc_IsEventLeaderboardAvailable_ReturnValue_2, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, enum class ESlateVisibility K2Node_Select_Default_13, const class FString& CallFunc_GetEventId_ReturnValue_1, float CallFunc_PauseAnimation_ReturnValue_6, float CallFunc_GetStartTime_ReturnValue_3, float CallFunc_PauseAnimation_ReturnValue_7, bool CallFunc_LessEqual_FloatFloat_ReturnValue_3, float CallFunc_Add_FloatFloat_ReturnValue_3, float CallFunc_GetEndTime_ReturnValue_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_7, float CallFunc_Subtract_FloatFloat_ReturnValue_3, float CallFunc_PauseAnimation_ReturnValue_8, float CallFunc_GetStartTime_ReturnValue_4, float CallFunc_PauseAnimation_ReturnValue_9, bool CallFunc_LessEqual_FloatFloat_ReturnValue_4, float CallFunc_Add_FloatFloat_ReturnValue_4, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_8, float CallFunc_GetEndTime_ReturnValue_4, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, float CallFunc_Subtract_FloatFloat_ReturnValue_4, class UCommonButton* K2Node_ComponentBoundEvent_Button, float K2Node_Select_Default_14, bool Temp_bool_Variable_9, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_9, float K2Node_Select_Default_15, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_10)
 {
-	static auto Func = Class->GetFunction("TournamentEventWindowDetails_C", "ExecuteUbergraph_TournamentEventWindowDetails");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentEventWindowDetails_C_ExecuteUbergraph_TournamentEventWindowDetails_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentEventWindowDetails_C", "ExecuteUbergraph_TournamentEventWindowDetails");
+
+	Params::UTournamentEventWindowDetails_C_ExecuteUbergraph_TournamentEventWindowDetails_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetTournamentId_ReturnValue = CallFunc_GetTournamentId_ReturnValue;
@@ -559,9 +609,12 @@ void UTournamentEventWindowDetails_C::ExecuteUbergraph_TournamentEventWindowDeta
 
 void UTournamentEventWindowDetails_C::ViewPayouts__DelegateSignature(const class FString& EventWindowId, const class FString& EventId)
 {
-	static auto Func = Class->GetFunction("TournamentEventWindowDetails_C", "ViewPayouts__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentEventWindowDetails_C_ViewPayouts__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentEventWindowDetails_C", "ViewPayouts__DelegateSignature");
+
+	Params::UTournamentEventWindowDetails_C_ViewPayouts__DelegateSignature_Params Parms{};
 
 	Parms.EventWindowId = EventWindowId;
 	Parms.EventId = EventId;
@@ -579,9 +632,12 @@ void UTournamentEventWindowDetails_C::ViewPayouts__DelegateSignature(const class
 
 void UTournamentEventWindowDetails_C::ViewLeaderboard__DelegateSignature(const class FString& TournamentId, const class FString& EventId)
 {
-	static auto Func = Class->GetFunction("TournamentEventWindowDetails_C", "ViewLeaderboard__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentEventWindowDetails_C_ViewLeaderboard__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentEventWindowDetails_C", "ViewLeaderboard__DelegateSignature");
+
+	Params::UTournamentEventWindowDetails_C_ViewLeaderboard__DelegateSignature_Params Parms{};
 
 	Parms.TournamentId = TournamentId;
 	Parms.EventId = EventId;
@@ -592,6 +648,4 @@ void UTournamentEventWindowDetails_C::ViewLeaderboard__DelegateSignature(const c
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

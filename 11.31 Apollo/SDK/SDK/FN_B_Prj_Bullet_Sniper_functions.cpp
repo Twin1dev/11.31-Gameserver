@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_Prj_Bullet_Sniper.B_Prj_Bullet_Sniper_C
+// (Actor)
+
+class UClass* AB_Prj_Bullet_Sniper_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Prj_Bullet_Sniper_C");
+
+	return Clss;
+}
+
+
+// B_Prj_Bullet_Sniper_C B_Prj_Bullet_Sniper.Default__B_Prj_Bullet_Sniper_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Prj_Bullet_Sniper_C* AB_Prj_Bullet_Sniper_C::GetDefaultObj()
+{
+	static class AB_Prj_Bullet_Sniper_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Prj_Bullet_Sniper_C*>(AB_Prj_Bullet_Sniper_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function B_Prj_Bullet_Sniper.B_Prj_Bullet_Sniper_C.PlayImpactSFX
@@ -26,9 +51,12 @@ namespace SDK
 
 void AB_Prj_Bullet_Sniper_C::PlayImpactSFX(bool IsPlayer, bool IsWater, bool Temp_bool_Variable, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class USoundBase* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "PlayImpactSFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Sniper_C_PlayImpactSFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "PlayImpactSFX");
+
+	Params::AB_Prj_Bullet_Sniper_C_PlayImpactSFX_Params Parms{};
 
 	Parms.IsPlayer = IsPlayer;
 	Parms.IsWater = IsWater;
@@ -48,9 +76,12 @@ void AB_Prj_Bullet_Sniper_C::PlayImpactSFX(bool IsPlayer, bool IsWater, bool Tem
 
 void AB_Prj_Bullet_Sniper_C::UserConstructionScript(float CallFunc_GetValueAtLevel_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Sniper_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "UserConstructionScript");
+
+	Params::AB_Prj_Bullet_Sniper_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_GetValueAtLevel_ReturnValue = CallFunc_GetValueAtLevel_ReturnValue;
 
@@ -66,9 +97,12 @@ void AB_Prj_Bullet_Sniper_C::UserConstructionScript(float CallFunc_GetValueAtLev
 
 void AB_Prj_Bullet_Sniper_C::OnStop(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "OnStop");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Sniper_C_OnStop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "OnStop");
+
+	Params::AB_Prj_Bullet_Sniper_C_OnStop_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -83,12 +117,14 @@ void AB_Prj_Bullet_Sniper_C::OnStop(struct FHitResult& Hit)
 
 void AB_Prj_Bullet_Sniper_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Sniper_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -103,9 +139,12 @@ void AB_Prj_Bullet_Sniper_C::ReceiveBeginPlay()
 
 void AB_Prj_Bullet_Sniper_C::OnTouched(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, struct FHitResult& HitResult, bool bIsOverlap)
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "OnTouched");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Sniper_C_OnTouched_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "OnTouched");
+
+	Params::AB_Prj_Bullet_Sniper_C_OnTouched_Params Parms{};
 
 	Parms.OtherActor = OtherActor;
 	Parms.OtherComp = OtherComp;
@@ -125,9 +164,12 @@ void AB_Prj_Bullet_Sniper_C::OnTouched(class AActor* OtherActor, class UPrimitiv
 
 void AB_Prj_Bullet_Sniper_C::OnSniperTraceWaterHit(struct FHitResult& WaterHit, class AFortWaterBodyActor* WaterBody)
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "OnSniperTraceWaterHit");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Sniper_C_OnSniperTraceWaterHit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "OnSniperTraceWaterHit");
+
+	Params::AB_Prj_Bullet_Sniper_C_OnSniperTraceWaterHit_Params Parms{};
 
 	Parms.WaterHit = WaterHit;
 	Parms.WaterBody = WaterBody;
@@ -241,9 +283,12 @@ void AB_Prj_Bullet_Sniper_C::OnSniperTraceWaterHit(struct FHitResult& WaterHit, 
 
 void AB_Prj_Bullet_Sniper_C::ExecuteUbergraph_B_Prj_Bullet_Sniper(int32 EntryPoint, class APawn* CallFunc_GetInstigator_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsMobilePlatform_ReturnValue, const struct FHitResult& K2Node_Event_Hit, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, class UDecalComponent* CallFunc_SpawnDecalAtLocation_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_1, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_1, const struct FVector& CallFunc_GetMuzzleLocation_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class AActor* K2Node_Event_OtherActor, class UPrimitiveComponent* K2Node_Event_OtherComp, const struct FHitResult& K2Node_Event_HitResult, bool K2Node_Event_bIsOverlap, const struct FHitResult& K2Node_Event_WaterHit, class AFortWaterBodyActor* K2Node_Event_WaterBody, bool CallFunc_BreakHitResult_bBlockingHit_1, bool CallFunc_BreakHitResult_bInitialOverlap_1, float CallFunc_BreakHitResult_Time_1, float CallFunc_BreakHitResult_Distance_1, const struct FVector& CallFunc_BreakHitResult_Location_1, const struct FVector& CallFunc_BreakHitResult_ImpactPoint_1, const struct FVector& CallFunc_BreakHitResult_Normal_1, const struct FVector& CallFunc_BreakHitResult_ImpactNormal_1, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat_1, class AActor* CallFunc_BreakHitResult_HitActor_1, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent_1, class FName CallFunc_BreakHitResult_HitBoneName_1, int32 CallFunc_BreakHitResult_HitItem_1, int32 CallFunc_BreakHitResult_FaceIndex_1, const struct FVector& CallFunc_BreakHitResult_TraceStart_1, const struct FVector& CallFunc_BreakHitResult_TraceEnd_1, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterPlaneLocation, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterPlaneNormal, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterSurfacePosition, float CallFunc_GetLastWaterSurfaceInfo_WaterDepth, int32 CallFunc_GetLastWaterSurfaceInfo_WaterBodyIdx, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterVelocity, bool CallFunc_IsDedicatedServer_ReturnValue_2, float CallFunc_Conv_IntToFloat_ReturnValue, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue_1, bool Temp_bool_Has_Been_Initd_Variable, bool Temp_bool_IsClosed_Variable, bool CallFunc_IsDedicatedServer_ReturnValue_3, bool CallFunc_BreakHitResult_bBlockingHit_2, bool CallFunc_BreakHitResult_bInitialOverlap_2, float CallFunc_BreakHitResult_Time_2, float CallFunc_BreakHitResult_Distance_2, const struct FVector& CallFunc_BreakHitResult_Location_2, const struct FVector& CallFunc_BreakHitResult_ImpactPoint_2, const struct FVector& CallFunc_BreakHitResult_Normal_2, const struct FVector& CallFunc_BreakHitResult_ImpactNormal_2, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat_2, class AActor* CallFunc_BreakHitResult_HitActor_2, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent_2, class FName CallFunc_BreakHitResult_HitBoneName_2, int32 CallFunc_BreakHitResult_HitItem_2, int32 CallFunc_BreakHitResult_FaceIndex_2, const struct FVector& CallFunc_BreakHitResult_TraceStart_2, const struct FVector& CallFunc_BreakHitResult_TraceEnd_2, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, const struct FRotator& CallFunc_MakeRotFromX_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_1, const struct FVector& CallFunc_GetWaterSurfaceInfo_WaterPlaneLocation, const struct FVector& CallFunc_GetWaterSurfaceInfo_WaterPlaneNormal, const struct FVector& CallFunc_GetWaterSurfaceInfo_WaterSurfacePosition, float CallFunc_GetWaterSurfaceInfo_WaterDepth, int32 CallFunc_GetWaterSurfaceInfo_WaterBodyIdx, const struct FVector& CallFunc_GetWaterSurfaceInfo_WaterVelocity)
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "ExecuteUbergraph_B_Prj_Bullet_Sniper");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Sniper_C", "ExecuteUbergraph_B_Prj_Bullet_Sniper");
+
+	Params::AB_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetInstigator_ReturnValue = CallFunc_GetInstigator_ReturnValue;
@@ -350,6 +395,4 @@ void AB_Prj_Bullet_Sniper_C::ExecuteUbergraph_B_Prj_Bullet_Sniper(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

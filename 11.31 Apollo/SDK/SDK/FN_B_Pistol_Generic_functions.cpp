@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_Pistol_Generic.B_Pistol_Generic_C
+// (Actor)
+
+class UClass* AB_Pistol_Generic_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Pistol_Generic_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// B_Pistol_Generic_C B_Pistol_Generic.Default__B_Pistol_Generic_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Pistol_Generic_C* AB_Pistol_Generic_C::GetDefaultObj()
+{
+	static class AB_Pistol_Generic_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Pistol_Generic_C*>(AB_Pistol_Generic_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

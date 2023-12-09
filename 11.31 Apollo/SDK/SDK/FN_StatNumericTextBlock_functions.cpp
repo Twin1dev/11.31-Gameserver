@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass StatNumericTextBlock.StatNumericTextBlock_C
+// (None)
+
+class UClass* UStatNumericTextBlock_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("StatNumericTextBlock_C");
+
+	return Clss;
+}
+
+
+// StatNumericTextBlock_C StatNumericTextBlock.Default__StatNumericTextBlock_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UStatNumericTextBlock_C* UStatNumericTextBlock_C::GetDefaultObj()
+{
+	static class UStatNumericTextBlock_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UStatNumericTextBlock_C*>(UStatNumericTextBlock_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function StatNumericTextBlock.StatNumericTextBlock_C.SetComparisonState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UStatNumericTextBlock_C::SetComparisonState(enum class EFortBuffState Buff_State)
 {
-	static auto Func = Class->GetFunction("StatNumericTextBlock_C", "SetComparisonState");
+	static class UFunction* Func = nullptr;
 
-	Params::UStatNumericTextBlock_C_SetComparisonState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StatNumericTextBlock_C", "SetComparisonState");
+
+	Params::UStatNumericTextBlock_C_SetComparisonState_Params Parms{};
 
 	Parms.Buff_State = Buff_State;
 
@@ -50,13 +78,16 @@ void UStatNumericTextBlock_C::SetComparisonState(enum class EFortBuffState Buff_
 // struct FLinearColor                CallFunc_Get_Base___Buff_Colors_Base                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                CallFunc_Get_Base___Buff_Colors_Buff                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                K2Node_Select_Default_2                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 
 void UStatNumericTextBlock_C::UpdateComparison(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class EFortBuffState Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class EFortBuffState Temp_byte_Variable_4, enum class ESlateVisibility K2Node_Select_Default, float Temp_float_Variable, float Temp_float_Variable_1, float Temp_float_Variable_2, enum class EFortBuffState Temp_byte_Variable_5, float K2Node_Select_Default_1, const struct FLinearColor& CallFunc_Get_Base___Buff_Colors_Base, const struct FLinearColor& CallFunc_Get_Base___Buff_Colors_Buff, const struct FLinearColor& K2Node_Select_Default_2, const struct FSlateColor& K2Node_MakeStruct_SlateColor)
 {
-	static auto Func = Class->GetFunction("StatNumericTextBlock_C", "UpdateComparison");
+	static class UFunction* Func = nullptr;
 
-	Params::UStatNumericTextBlock_C_UpdateComparison_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StatNumericTextBlock_C", "UpdateComparison");
+
+	Params::UStatNumericTextBlock_C_UpdateComparison_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
@@ -85,12 +116,14 @@ void UStatNumericTextBlock_C::UpdateComparison(enum class ESlateVisibility Temp_
 
 void UStatNumericTextBlock_C::Construct()
 {
-	static auto Func = Class->GetFunction("StatNumericTextBlock_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UStatNumericTextBlock_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StatNumericTextBlock_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -102,9 +135,12 @@ void UStatNumericTextBlock_C::Construct()
 
 void UStatNumericTextBlock_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("StatNumericTextBlock_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UStatNumericTextBlock_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StatNumericTextBlock_C", "PreConstruct");
+
+	Params::UStatNumericTextBlock_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -121,9 +157,12 @@ void UStatNumericTextBlock_C::PreConstruct(bool IsDesignTime)
 
 void UStatNumericTextBlock_C::ExecuteUbergraph_StatNumericTextBlock(int32 EntryPoint, bool K2Node_Event_IsDesignTime)
 {
-	static auto Func = Class->GetFunction("StatNumericTextBlock_C", "ExecuteUbergraph_StatNumericTextBlock");
+	static class UFunction* Func = nullptr;
 
-	Params::UStatNumericTextBlock_C_ExecuteUbergraph_StatNumericTextBlock_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StatNumericTextBlock_C", "ExecuteUbergraph_StatNumericTextBlock");
+
+	Params::UStatNumericTextBlock_C_ExecuteUbergraph_StatNumericTextBlock_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -134,6 +173,4 @@ void UStatNumericTextBlock_C::ExecuteUbergraph_StatNumericTextBlock(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

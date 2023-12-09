@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass VoiceChannelChangePopup.VoiceChannelChangePopup_C
+// (None)
+
+class UClass* UVoiceChannelChangePopup_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VoiceChannelChangePopup_C");
+
+	return Clss;
+}
+
+
+// VoiceChannelChangePopup_C VoiceChannelChangePopup.Default__VoiceChannelChangePopup_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UVoiceChannelChangePopup_C* UVoiceChannelChangePopup_C::GetDefaultObj()
+{
+	static class UVoiceChannelChangePopup_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UVoiceChannelChangePopup_C*>(UVoiceChannelChangePopup_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function VoiceChannelChangePopup.VoiceChannelChangePopup_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UVoiceChannelChangePopup_C::Construct()
 {
-	static auto Func = Class->GetFunction("VoiceChannelChangePopup_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelChangePopup_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelChangePopup_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UVoiceChannelChangePopup_C::Construct()
 
 void UVoiceChannelChangePopup_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("VoiceChannelChangePopup_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelChangePopup_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelChangePopup_C", "PreConstruct");
+
+	Params::UVoiceChannelChangePopup_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -55,12 +85,14 @@ void UVoiceChannelChangePopup_C::PreConstruct(bool IsDesignTime)
 
 void UVoiceChannelChangePopup_C::Popup_Animation_Finished()
 {
-	static auto Func = Class->GetFunction("VoiceChannelChangePopup_C", "Popup Animation Finished");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelChangePopup_C_Popup_Animation_Finished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelChangePopup_C", "Popup Animation Finished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -71,12 +103,14 @@ void UVoiceChannelChangePopup_C::Popup_Animation_Finished()
 
 void UVoiceChannelChangePopup_C::OnPlayOpenAnimation()
 {
-	static auto Func = Class->GetFunction("VoiceChannelChangePopup_C", "OnPlayOpenAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelChangePopup_C_OnPlayOpenAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelChangePopup_C", "OnPlayOpenAnimation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -87,12 +121,14 @@ void UVoiceChannelChangePopup_C::OnPlayOpenAnimation()
 
 void UVoiceChannelChangePopup_C::OnPlayCloseAnimation()
 {
-	static auto Func = Class->GetFunction("VoiceChannelChangePopup_C", "OnPlayCloseAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelChangePopup_C_OnPlayCloseAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelChangePopup_C", "OnPlayCloseAnimation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -104,9 +140,12 @@ void UVoiceChannelChangePopup_C::OnPlayCloseAnimation()
 
 void UVoiceChannelChangePopup_C::OnInputModeChanged(enum class ECommonInputType NewInputType)
 {
-	static auto Func = Class->GetFunction("VoiceChannelChangePopup_C", "OnInputModeChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelChangePopup_C_OnInputModeChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelChangePopup_C", "OnInputModeChanged");
+
+	Params::UVoiceChannelChangePopup_C_OnInputModeChanged_Params Parms{};
 
 	Parms.NewInputType = NewInputType;
 
@@ -130,9 +169,12 @@ void UVoiceChannelChangePopup_C::OnInputModeChanged(enum class ECommonInputType 
 
 void UVoiceChannelChangePopup_C::ExecuteUbergraph_VoiceChannelChangePopup(int32 EntryPoint, enum class ECommonInputType Temp_byte_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool K2Node_Event_IsDesignTime, enum class ECommonInputType K2Node_Event_NewInputType, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UWidget* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("VoiceChannelChangePopup_C", "ExecuteUbergraph_VoiceChannelChangePopup");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoiceChannelChangePopup_C", "ExecuteUbergraph_VoiceChannelChangePopup");
+
+	Params::UVoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -150,6 +192,4 @@ void UVoiceChannelChangePopup_C::ExecuteUbergraph_VoiceChannelChangePopup(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

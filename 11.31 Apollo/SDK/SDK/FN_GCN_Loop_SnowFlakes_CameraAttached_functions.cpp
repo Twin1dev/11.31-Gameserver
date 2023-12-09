@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCN_Loop_SnowFlakes_CameraAttached.GCN_Loop_SnowFlakes_CameraAttached_C
+// (Actor)
+
+class UClass* AGCN_Loop_SnowFlakes_CameraAttached_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCN_Loop_SnowFlakes_CameraAttached_C");
+
+	return Clss;
+}
+
+
+// GCN_Loop_SnowFlakes_CameraAttached_C GCN_Loop_SnowFlakes_CameraAttached.Default__GCN_Loop_SnowFlakes_CameraAttached_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCN_Loop_SnowFlakes_CameraAttached_C* AGCN_Loop_SnowFlakes_CameraAttached_C::GetDefaultObj()
+{
+	static class AGCN_Loop_SnowFlakes_CameraAttached_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCN_Loop_SnowFlakes_CameraAttached_C*>(AGCN_Loop_SnowFlakes_CameraAttached_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCN_Loop_SnowFlakes_CameraAttached.GCN_Loop_SnowFlakes_CameraAttached_C.OnLoopingStart
@@ -25,9 +50,12 @@ namespace SDK
 
 void AGCN_Loop_SnowFlakes_CameraAttached_C::OnLoopingStart(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SnowFlakes_CameraAttached_C", "OnLoopingStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SnowFlakes_CameraAttached_C_OnLoopingStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SnowFlakes_CameraAttached_C", "OnLoopingStart");
+
+	Params::AGCN_Loop_SnowFlakes_CameraAttached_C_OnLoopingStart_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -52,9 +80,12 @@ void AGCN_Loop_SnowFlakes_CameraAttached_C::OnLoopingStart(class AActor* MyTarge
 
 void AGCN_Loop_SnowFlakes_CameraAttached_C::ExecuteUbergraph_GCN_Loop_SnowFlakes_CameraAttached(int32 EntryPoint, bool CallFunc_IsErebus_ReturnValue, class AActor* K2Node_Event_MyTarget, const struct FGameplayCueParameters& K2Node_Event_Parameters, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents, class UParticleSystemComponent* CallFunc_Array_Get_Item)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SnowFlakes_CameraAttached_C", "ExecuteUbergraph_GCN_Loop_SnowFlakes_CameraAttached");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SnowFlakes_CameraAttached_C_ExecuteUbergraph_GCN_Loop_SnowFlakes_CameraAttached_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SnowFlakes_CameraAttached_C", "ExecuteUbergraph_GCN_Loop_SnowFlakes_CameraAttached");
+
+	Params::AGCN_Loop_SnowFlakes_CameraAttached_C_ExecuteUbergraph_GCN_Loop_SnowFlakes_CameraAttached_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsErebus_ReturnValue = CallFunc_IsErebus_ReturnValue;
@@ -70,6 +101,4 @@ void AGCN_Loop_SnowFlakes_CameraAttached_C::ExecuteUbergraph_GCN_Loop_SnowFlakes
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

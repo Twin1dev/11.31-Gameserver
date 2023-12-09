@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass PlayerPawn_Athena_Generic_Parent.PlayerPawn_Athena_Generic_Parent_C
+// (Actor, Pawn)
+
+class UClass* APlayerPawn_Athena_Generic_Parent_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerPawn_Athena_Generic_Parent_C");
+
+	return Clss;
+}
+
+
+// PlayerPawn_Athena_Generic_Parent_C PlayerPawn_Athena_Generic_Parent.Default__PlayerPawn_Athena_Generic_Parent_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class APlayerPawn_Athena_Generic_Parent_C* APlayerPawn_Athena_Generic_Parent_C::GetDefaultObj()
+{
+	static class APlayerPawn_Athena_Generic_Parent_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APlayerPawn_Athena_Generic_Parent_C*>(APlayerPawn_Athena_Generic_Parent_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PlayerPawn_Athena_Generic_Parent.PlayerPawn_Athena_Generic_Parent_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void APlayerPawn_Athena_Generic_Parent_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_Generic_Parent_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_Generic_Parent_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_Generic_Parent_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void APlayerPawn_Athena_Generic_Parent_C::ReceiveBeginPlay()
 
 void APlayerPawn_Athena_Generic_Parent_C::OnEnteredVehicle()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_Generic_Parent_C", "OnEnteredVehicle");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_Generic_Parent_C_OnEnteredVehicle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_Generic_Parent_C", "OnEnteredVehicle");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void APlayerPawn_Athena_Generic_Parent_C::OnEnteredVehicle()
 
 void APlayerPawn_Athena_Generic_Parent_C::OnExitedVehicle()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_Generic_Parent_C", "OnExitedVehicle");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_Generic_Parent_C_OnExitedVehicle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_Generic_Parent_C", "OnExitedVehicle");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void APlayerPawn_Athena_Generic_Parent_C::OnExitedVehicle()
 
 void APlayerPawn_Athena_Generic_Parent_C::OnJumped()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_Generic_Parent_C", "OnJumped");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_Generic_Parent_C_OnJumped_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_Generic_Parent_C", "OnJumped");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -87,9 +120,12 @@ void APlayerPawn_Athena_Generic_Parent_C::OnJumped()
 
 void APlayerPawn_Athena_Generic_Parent_C::K2_OnStartCrouch(float HalfHeightAdjust, float ScaledHalfHeightAdjust)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_Generic_Parent_C", "K2_OnStartCrouch");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_Generic_Parent_C_K2_OnStartCrouch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_Generic_Parent_C", "K2_OnStartCrouch");
+
+	Params::APlayerPawn_Athena_Generic_Parent_C_K2_OnStartCrouch_Params Parms{};
 
 	Parms.HalfHeightAdjust = HalfHeightAdjust;
 	Parms.ScaledHalfHeightAdjust = ScaledHalfHeightAdjust;
@@ -107,9 +143,12 @@ void APlayerPawn_Athena_Generic_Parent_C::K2_OnStartCrouch(float HalfHeightAdjus
 
 void APlayerPawn_Athena_Generic_Parent_C::K2_OnEndCrouch(float HalfHeightAdjust, float ScaledHalfHeightAdjust)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_Generic_Parent_C", "K2_OnEndCrouch");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_Generic_Parent_C_K2_OnEndCrouch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_Generic_Parent_C", "K2_OnEndCrouch");
+
+	Params::APlayerPawn_Athena_Generic_Parent_C_K2_OnEndCrouch_Params Parms{};
 
 	Parms.HalfHeightAdjust = HalfHeightAdjust;
 	Parms.ScaledHalfHeightAdjust = ScaledHalfHeightAdjust;
@@ -134,9 +173,12 @@ void APlayerPawn_Athena_Generic_Parent_C::K2_OnEndCrouch(float HalfHeightAdjust,
 
 void APlayerPawn_Athena_Generic_Parent_C::ExecuteUbergraph_PlayerPawn_Athena_Generic_Parent(int32 EntryPoint, const struct FTransform& Temp_struct_Variable, bool CallFunc_IsLocallyControlled_ReturnValue, class UPostProcessComponent* CallFunc_AddComponent_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, float K2Node_Event_HalfHeightAdjust_1, float K2Node_Event_ScaledHalfHeightAdjust_1, float K2Node_Event_HalfHeightAdjust, float K2Node_Event_ScaledHalfHeightAdjust)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_Generic_Parent_C", "ExecuteUbergraph_PlayerPawn_Athena_Generic_Parent");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Athena_Generic_Parent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_Generic_Parent_C", "ExecuteUbergraph_PlayerPawn_Athena_Generic_Parent");
+
+	Params::APlayerPawn_Athena_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Athena_Generic_Parent_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
@@ -160,9 +202,12 @@ void APlayerPawn_Athena_Generic_Parent_C::ExecuteUbergraph_PlayerPawn_Athena_Gen
 
 void APlayerPawn_Athena_Generic_Parent_C::ShootingTargetReactToJump__DelegateSignature(class AFortPlayerPawnAthena* JumpingPlayer)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_Generic_Parent_C", "ShootingTargetReactToJump__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Athena_Generic_Parent_C_ShootingTargetReactToJump__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Athena_Generic_Parent_C", "ShootingTargetReactToJump__DelegateSignature");
+
+	Params::APlayerPawn_Athena_Generic_Parent_C_ShootingTargetReactToJump__DelegateSignature_Params Parms{};
 
 	Parms.JumpingPlayer = JumpingPlayer;
 
@@ -172,6 +217,4 @@ void APlayerPawn_Athena_Generic_Parent_C::ShootingTargetReactToJump__DelegateSig
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

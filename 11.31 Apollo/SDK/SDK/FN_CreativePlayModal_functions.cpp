@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass CreativePlayModal.CreativePlayModal_C
+// (None)
+
+class UClass* UCreativePlayModal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CreativePlayModal_C");
+
+	return Clss;
+}
+
+
+// CreativePlayModal_C CreativePlayModal.Default__CreativePlayModal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCreativePlayModal_C* UCreativePlayModal_C::GetDefaultObj()
+{
+	static class UCreativePlayModal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCreativePlayModal_C*>(UCreativePlayModal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function CreativePlayModal.CreativePlayModal_C.ManageCancelButton
@@ -35,9 +60,12 @@ namespace SDK
 
 void UCreativePlayModal_C::ManageCancelButton(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_Variable_1, bool CallFunc_IsUsingGamepad_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_2, bool CallFunc_Not_PreBool_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_3, bool CallFunc_IsMobileGame_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "ManageCancelButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_ManageCancelButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "ManageCancelButton");
+
+	Params::UCreativePlayModal_C_ManageCancelButton_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -67,15 +95,18 @@ void UCreativePlayModal_C::ManageCancelButton(bool Temp_bool_Variable, enum clas
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        K2Node_Select_Default                                            (None)
 
 void UCreativePlayModal_C::SetStartIsland(class FText StartIslandName, bool Temp_bool_Variable, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, bool CallFunc_TextIsEmpty_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, class FText Temp_text_Variable, class FText K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "SetStartIsland");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_SetStartIsland_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "SetStartIsland");
+
+	Params::UCreativePlayModal_C_SetStartIsland_Params Parms{};
 
 	Parms.StartIslandName = StartIslandName;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -99,9 +130,12 @@ void UCreativePlayModal_C::SetStartIsland(class FText StartIslandName, bool Temp
 
 void UCreativePlayModal_C::HandleSocialImportClosed(class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "HandleSocialImportClosed");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_HandleSocialImportClosed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "HandleSocialImportClosed");
+
+	Params::UCreativePlayModal_C_HandleSocialImportClosed_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -122,16 +156,19 @@ void UCreativePlayModal_C::HandleSocialImportClosed(class UFortFrontEndContext* 
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // class FString                      CallFunc_GetPlatformName_ReturnValue                             (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_StrStr_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_StrStr_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UCreativePlayModal_C::InitializeAddFriends(class FText PlatformName, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_ShouldShowImportPlatformFriendsOption_ReturnValue, bool Temp_bool_Variable, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, enum class ESlateVisibility K2Node_Select_Default, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, const class FString& CallFunc_GetPlatformName_ReturnValue, bool CallFunc_EqualEqual_StrStr_ReturnValue, bool CallFunc_EqualEqual_StrStr_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "InitializeAddFriends");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_InitializeAddFriends_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "InitializeAddFriends");
+
+	Params::UCreativePlayModal_C_InitializeAddFriends_Params Parms{};
 
 	Parms.PlatformName = PlatformName;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -158,9 +195,12 @@ void UCreativePlayModal_C::InitializeAddFriends(class FText PlatformName, enum c
 
 void UCreativePlayModal_C::NullActionHandler(bool* bPassThrough)
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "NullActionHandler");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_NullActionHandler_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "NullActionHandler");
+
+	Params::UCreativePlayModal_C_NullActionHandler_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -178,9 +218,12 @@ void UCreativePlayModal_C::NullActionHandler(bool* bPassThrough)
 
 void UCreativePlayModal_C::InitFromObject(class UObject* InitObject)
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "InitFromObject");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_InitFromObject_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "InitFromObject");
+
+	Params::UCreativePlayModal_C_InitFromObject_Params Parms{};
 
 	Parms.InitObject = InitObject;
 
@@ -196,9 +239,12 @@ void UCreativePlayModal_C::InitFromObject(class UObject* InitObject)
 
 void UCreativePlayModal_C::BndEvt__CreativeOptionsServers_K2Node_ComponentBoundEvent_0_OnSelectedServerChanged__DelegateSignature(class UFortCreativeServerInfo* ServerInfo)
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "BndEvt__CreativeOptionsServers_K2Node_ComponentBoundEvent_0_OnSelectedServerChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_BndEvt__CreativeOptionsServers_K2Node_ComponentBoundEvent_0_OnSelectedServerChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "BndEvt__CreativeOptionsServers_K2Node_ComponentBoundEvent_0_OnSelectedServerChanged__DelegateSignature");
+
+	Params::UCreativePlayModal_C_BndEvt__CreativeOptionsServers_K2Node_ComponentBoundEvent_0_OnSelectedServerChanged__DelegateSignature_Params Parms{};
 
 	Parms.ServerInfo = ServerInfo;
 
@@ -213,12 +259,14 @@ void UCreativePlayModal_C::BndEvt__CreativeOptionsServers_K2Node_ComponentBoundE
 
 void UCreativePlayModal_C::Construct()
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -229,12 +277,14 @@ void UCreativePlayModal_C::Construct()
 
 void UCreativePlayModal_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -245,12 +295,14 @@ void UCreativePlayModal_C::BP_OnActivated()
 
 void UCreativePlayModal_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -261,12 +313,14 @@ void UCreativePlayModal_C::BP_OnDeactivated()
 
 void UCreativePlayModal_C::OnBeginOutro()
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "OnBeginOutro");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_OnBeginOutro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "OnBeginOutro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -278,9 +332,12 @@ void UCreativePlayModal_C::OnBeginOutro()
 
 void UCreativePlayModal_C::BndEvt__AddFriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "BndEvt__AddFriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_BndEvt__AddFriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "BndEvt__AddFriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UCreativePlayModal_C_BndEvt__AddFriendsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -296,9 +353,12 @@ void UCreativePlayModal_C::BndEvt__AddFriendsButton_K2Node_ComponentBoundEvent_1
 
 void UCreativePlayModal_C::BndEvt__IslandCodeButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "BndEvt__IslandCodeButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_BndEvt__IslandCodeButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "BndEvt__IslandCodeButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UCreativePlayModal_C_BndEvt__IslandCodeButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -314,9 +374,12 @@ void UCreativePlayModal_C::BndEvt__IslandCodeButton_K2Node_ComponentBoundEvent_2
 
 void UCreativePlayModal_C::CreativeIslandCodeConfirmedEvent(class UFortCreativeIslandLink* IslandLink)
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "CreativeIslandCodeConfirmedEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_CreativeIslandCodeConfirmedEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "CreativeIslandCodeConfirmedEvent");
+
+	Params::UCreativePlayModal_C_CreativeIslandCodeConfirmedEvent_Params Parms{};
 
 	Parms.IslandLink = IslandLink;
 
@@ -332,9 +395,12 @@ void UCreativePlayModal_C::CreativeIslandCodeConfirmedEvent(class UFortCreativeI
 
 void UCreativePlayModal_C::BndEvt__Mobile_CloseButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "BndEvt__Mobile_CloseButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_BndEvt__Mobile_CloseButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "BndEvt__Mobile_CloseButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+
+	Params::UCreativePlayModal_C_BndEvt__Mobile_CloseButton_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -350,9 +416,12 @@ void UCreativePlayModal_C::BndEvt__Mobile_CloseButton_K2Node_ComponentBoundEvent
 
 void UCreativePlayModal_C::OnInputMethodChanged(enum class ECommonInputType bNewInputType)
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "OnInputMethodChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_OnInputMethodChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "OnInputMethodChanged");
+
+	Params::UCreativePlayModal_C_OnInputMethodChanged_Params Parms{};
 
 	Parms.bNewInputType = bNewInputType;
 
@@ -408,7 +477,7 @@ void UCreativePlayModal_C::OnInputMethodChanged(enum class ECommonInputType bNew
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_2                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortCreativeIslandLink*     K2Node_CustomEvent_IslandLink                                    (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ECommonInputType        K2Node_CustomEvent_bNewInputType                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -417,9 +486,12 @@ void UCreativePlayModal_C::OnInputMethodChanged(enum class ECommonInputType bNew
 
 void UCreativePlayModal_C::ExecuteUbergraph_CreativePlayModal(int32 EntryPoint, float Temp_float_Variable, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UCommonInputSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UCreativeIslandLinkScreen_C* CallFunc_Create_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, class UObject* K2Node_Event_InitObject, class UFortCreativeServerInfo* K2Node_ComponentBoundEvent_ServerInfo, class UCreativeServerOptions_C* K2Node_DynamicCast_AsCreative_Server_Options, bool K2Node_DynamicCast_bSuccess, float CallFunc_PauseAnimation_ReturnValue, float CallFunc_GetStartTime_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_GetEndTime_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, bool Temp_bool_Variable_3, bool Temp_bool_Variable_4, float K2Node_Select_Default, class UFortGlobalUIContext* CallFunc_GetLocalPlayerSubsystem_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool CallFunc_IsCreativeModeAccessLimited_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class UClass* Temp_class_Variable, bool K2Node_Select_Default_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UClass* Temp_class_Variable_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, int32 CallFunc_GetSelectedButtonIndex_ReturnValue, bool Temp_bool_Variable_5, class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, class UCreativeServerOptionsTile_C* K2Node_DynamicCast_AsCreative_Server_Options_Tile, bool K2Node_DynamicCast_bSuccess_1, enum class ESlateVisibility K2Node_Select_Default_2, class UFortCreativeIslandLink* K2Node_CustomEvent_IslandLink, class FText CallFunc_Conv_StringToText_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, enum class ECommonInputType K2Node_CustomEvent_bNewInputType, bool CallFunc_IsUsingGamepad_ReturnValue, class UClass* K2Node_Select_Default_3)
 {
-	static auto Func = Class->GetFunction("CreativePlayModal_C", "ExecuteUbergraph_CreativePlayModal");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativePlayModal_C_ExecuteUbergraph_CreativePlayModal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativePlayModal_C", "ExecuteUbergraph_CreativePlayModal");
+
+	Params::UCreativePlayModal_C_ExecuteUbergraph_CreativePlayModal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_float_Variable = Temp_float_Variable;
@@ -478,6 +550,4 @@ void UCreativePlayModal_C::ExecuteUbergraph_CreativePlayModal(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

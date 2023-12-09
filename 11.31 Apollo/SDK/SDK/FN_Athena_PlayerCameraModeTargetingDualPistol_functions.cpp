@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Athena_PlayerCameraModeTargetingDualPistol.Athena_PlayerCameraModeTargetingDualPistol_C
+// (None)
+
+class UClass* UAthena_PlayerCameraModeTargetingDualPistol_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Athena_PlayerCameraModeTargetingDualPistol_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Athena_PlayerCameraModeTargetingDualPistol_C Athena_PlayerCameraModeTargetingDualPistol.Default__Athena_PlayerCameraModeTargetingDualPistol_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthena_PlayerCameraModeTargetingDualPistol_C* UAthena_PlayerCameraModeTargetingDualPistol_C::GetDefaultObj()
+{
+	static class UAthena_PlayerCameraModeTargetingDualPistol_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthena_PlayerCameraModeTargetingDualPistol_C*>(UAthena_PlayerCameraModeTargetingDualPistol_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

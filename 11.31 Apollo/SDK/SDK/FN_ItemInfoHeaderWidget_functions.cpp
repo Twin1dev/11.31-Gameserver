@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,29 +12,60 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ItemInfoHeaderWidget.ItemInfoHeaderWidget_C
+// (None)
+
+class UClass* UItemInfoHeaderWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemInfoHeaderWidget_C");
+
+	return Clss;
+}
+
+
+// ItemInfoHeaderWidget_C ItemInfoHeaderWidget.Default__ItemInfoHeaderWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemInfoHeaderWidget_C* UItemInfoHeaderWidget_C::GetDefaultObj()
+{
+	static class UItemInfoHeaderWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemInfoHeaderWidget_C*>(UItemInfoHeaderWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ItemInfoHeaderWidget.ItemInfoHeaderWidget_C.GetAlternateNameForItem
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // class UFortItemDefinition*         ItemDef                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// class FText                        Temp_text_Variable                                               ()
+// class FText                        Temp_text_Variable                                               (None)
 // enum class EFortItemType           CallFunc_GetItemType_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetEmptyText_ReturnValue                                ()
-// class FText                        Temp_text_Variable_1                                             ()
+// class FText                        CallFunc_GetEmptyText_ReturnValue                                (None)
+// class FText                        Temp_text_Variable_1                                             (None)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortItemType           CallFunc_GetItemType_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Map_Find_Value                                          ()
+// class FText                        CallFunc_Map_Find_Value                                          (None)
 // bool                               CallFunc_Map_Find_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortWorkerType*             K2Node_DynamicCast_AsFort_Worker_Type                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        K2Node_Select_Default                                            (None)
 
 class FText UItemInfoHeaderWidget_C::GetAlternateNameForItem(class UFortItemDefinition* ItemDef, class FText Temp_text_Variable, enum class EFortItemType CallFunc_GetItemType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class FText CallFunc_GetEmptyText_ReturnValue, class FText Temp_text_Variable_1, bool Temp_bool_Variable, enum class EFortItemType CallFunc_GetItemType_ReturnValue_1, class FText CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, class UFortWorkerType* K2Node_DynamicCast_AsFort_Worker_Type, bool K2Node_DynamicCast_bSuccess, class FText K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ItemInfoHeaderWidget_C", "GetAlternateNameForItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemInfoHeaderWidget_C_GetAlternateNameForItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "GetAlternateNameForItem");
+
+	Params::UItemInfoHeaderWidget_C_GetAlternateNameForItem_Params Parms{};
 
 	Parms.ItemDef = ItemDef;
 	Parms.Temp_text_Variable = Temp_text_Variable;
@@ -69,9 +97,12 @@ class FText UItemInfoHeaderWidget_C::GetAlternateNameForItem(class UFortItemDefi
 
 void UItemInfoHeaderWidget_C::HasValidItemDefinition(bool* HasValidDescription, class UFortItemDefinition* CallFunc_GetItemDefinition_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemInfoHeaderWidget_C", "HasValidItemDefinition");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemInfoHeaderWidget_C_HasValidItemDefinition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "HasValidItemDefinition");
+
+	Params::UItemInfoHeaderWidget_C_HasValidItemDefinition_Params Parms{};
 
 	Parms.CallFunc_GetItemDefinition_ReturnValue = CallFunc_GetItemDefinition_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -95,9 +126,12 @@ void UItemInfoHeaderWidget_C::HasValidItemDefinition(bool* HasValidDescription, 
 
 void UItemInfoHeaderWidget_C::UpdateColorRarity(struct FFortColorPalette& Colors, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicFontMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateColorRarity");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemInfoHeaderWidget_C_UpdateColorRarity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateColorRarity");
+
+	Params::UItemInfoHeaderWidget_C_UpdateColorRarity_Params Parms{};
 
 	Parms.Colors = Colors;
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
@@ -119,7 +153,7 @@ void UItemInfoHeaderWidget_C::UpdateColorRarity(struct FFortColorPalette& Colors
 // bool                               bUseAlternateHeaderBG                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortRarity             Rarity                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFortColorPalette           CallFunc_BPGetRarityColorPalette_ReturnValue                     (NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -129,9 +163,12 @@ void UItemInfoHeaderWidget_C::UpdateColorRarity(struct FFortColorPalette& Colors
 
 void UItemInfoHeaderWidget_C::OverrideHeaderAndDescription(class FText Header, class FText Description, class FText ItemType, bool bUseAlternateHeaderBG, enum class EFortRarity Rarity, enum class ESlateVisibility Temp_byte_Variable, class FText CallFunc_TextToUpper_ReturnValue, bool Temp_bool_Variable, const struct FFortColorPalette& CallFunc_BPGetRarityColorPalette_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, class UWidget* K2Node_Select_Default, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("ItemInfoHeaderWidget_C", "OverrideHeaderAndDescription");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemInfoHeaderWidget_C_OverrideHeaderAndDescription_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "OverrideHeaderAndDescription");
+
+	Params::UItemInfoHeaderWidget_C_OverrideHeaderAndDescription_Params Parms{};
 
 	Parms.Header = Header;
 	Parms.Description = Description;
@@ -164,9 +201,12 @@ void UItemInfoHeaderWidget_C::OverrideHeaderAndDescription(class FText Header, c
 
 void UItemInfoHeaderWidget_C::UpdateDetailVisibility(enum class EHorizontalAlignment Temp_byte_Variable, enum class EHorizontalAlignment Temp_byte_Variable_1, bool Temp_bool_Variable, class UOverlaySlot* K2Node_DynamicCast_AsOverlay_Slot, bool K2Node_DynamicCast_bSuccess, enum class EHorizontalAlignment K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateDetailVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemInfoHeaderWidget_C_UpdateDetailVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateDetailVisibility");
+
+	Params::UItemInfoHeaderWidget_C_UpdateDetailVisibility_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
@@ -186,12 +226,14 @@ void UItemInfoHeaderWidget_C::UpdateDetailVisibility(enum class EHorizontalAlign
 
 void UItemInfoHeaderWidget_C::SetScrollWidget()
 {
-	static auto Func = Class->GetFunction("ItemInfoHeaderWidget_C", "SetScrollWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemInfoHeaderWidget_C_SetScrollWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "SetScrollWidget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -202,12 +244,14 @@ void UItemInfoHeaderWidget_C::SetScrollWidget()
 
 void UItemInfoHeaderWidget_C::UpdateLocked()
 {
-	static auto Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateLocked");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemInfoHeaderWidget_C_UpdateLocked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateLocked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -220,9 +264,12 @@ void UItemInfoHeaderWidget_C::UpdateLocked()
 
 void UItemInfoHeaderWidget_C::SetLocked(bool ShouldShowLocked, class FText LockReason)
 {
-	static auto Func = Class->GetFunction("ItemInfoHeaderWidget_C", "SetLocked");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemInfoHeaderWidget_C_SetLocked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "SetLocked");
+
+	Params::UItemInfoHeaderWidget_C_SetLocked_Params Parms{};
 
 	Parms.ShouldShowLocked = ShouldShowLocked;
 	Parms.LockReason = LockReason;
@@ -240,9 +287,12 @@ void UItemInfoHeaderWidget_C::SetLocked(bool ShouldShowLocked, class FText LockR
 
 void UItemInfoHeaderWidget_C::SetRemainingQuantity(bool ShouldShowRemainingQuantity, int32 NewRemainingQuantity)
 {
-	static auto Func = Class->GetFunction("ItemInfoHeaderWidget_C", "SetRemainingQuantity");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemInfoHeaderWidget_C_SetRemainingQuantity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "SetRemainingQuantity");
+
+	Params::UItemInfoHeaderWidget_C_SetRemainingQuantity_Params Parms{};
 
 	Parms.ShouldShowRemainingQuantity = ShouldShowRemainingQuantity;
 	Parms.NewRemainingQuantity = NewRemainingQuantity;
@@ -256,19 +306,22 @@ void UItemInfoHeaderWidget_C::SetRemainingQuantity(bool ShouldShowRemainingQuant
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable                                               ()
+// class FText                        Temp_text_Variable                                               (None)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        K2Node_Select_Default                                            (None)
 
 void UItemInfoHeaderWidget_C::UpdateRemainingQuantity(bool Temp_bool_Variable, class FText Temp_text_Variable, bool CallFunc_Less_IntInt_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, class FText K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateRemainingQuantity");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemInfoHeaderWidget_C_UpdateRemainingQuantity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateRemainingQuantity");
+
+	Params::UItemInfoHeaderWidget_C_UpdateRemainingQuantity_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_text_Variable = Temp_text_Variable;
@@ -294,9 +347,12 @@ void UItemInfoHeaderWidget_C::UpdateRemainingQuantity(bool Temp_bool_Variable, c
 
 void UItemInfoHeaderWidget_C::UpdateCard(int32 CallFunc_GetQuantity_ReturnValue, class UFortItemDefinition* CallFunc_GetItemDefinition_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UFortItem* CallFunc_CreateTemporaryItemInstanceBP_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateCard");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemInfoHeaderWidget_C_UpdateCard_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateCard");
+
+	Params::UItemInfoHeaderWidget_C_UpdateCard_Params Parms{};
 
 	Parms.CallFunc_GetQuantity_ReturnValue = CallFunc_GetQuantity_ReturnValue;
 	Parms.CallFunc_GetItemDefinition_ReturnValue = CallFunc_GetItemDefinition_ReturnValue;
@@ -318,9 +374,12 @@ void UItemInfoHeaderWidget_C::UpdateCard(int32 CallFunc_GetQuantity_ReturnValue,
 
 void UItemInfoHeaderWidget_C::Setup(bool ShouldShowCard, enum class EFortItemCardSize CardSize, bool ShouldShowDetails, bool ShouldShowDescription)
 {
-	static auto Func = Class->GetFunction("ItemInfoHeaderWidget_C", "Setup");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemInfoHeaderWidget_C_Setup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "Setup");
+
+	Params::UItemInfoHeaderWidget_C_Setup_Params Parms{};
 
 	Parms.ShouldShowCard = ShouldShowCard;
 	Parms.CardSize = CardSize;
@@ -338,29 +397,32 @@ void UItemInfoHeaderWidget_C::Setup(bool ShouldShowCard, enum class EFortItemCar
 // class UFortItemDefinition*         ItemDefinition                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Quantity                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        DisplayName                                                      (Edit, BlueprintVisible)
-// class FText                        CallFunc_GetAlternateNameForItem_ReturnValue                     ()
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
-// class FText                        CallFunc_TextToUpper_ReturnValue_1                               ()
-// class FText                        CallFunc_TextToUpper_ReturnValue_2                               ()
+// class FText                        CallFunc_GetAlternateNameForItem_ReturnValue                     (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue_1                               (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue_2                               (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_3                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortTokenType*              K2Node_DynamicCast_AsFort_Token_Type                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetDisplayName_ReturnValue                              ()
+// class FText                        CallFunc_GetDisplayName_ReturnValue                              (None)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UItemInfoHeaderWidget_C::UpdateNameText(class UFortItemDefinition* ItemDefinition, int32 Quantity, class FText DisplayName, class FText CallFunc_GetAlternateNameForItem_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue_1, class FText CallFunc_TextToUpper_ReturnValue_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue, class FText CallFunc_Format_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue, class UFortTokenType* K2Node_DynamicCast_AsFort_Token_Type, bool K2Node_DynamicCast_bSuccess, class FText CallFunc_GetDisplayName_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateNameText");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemInfoHeaderWidget_C_UpdateNameText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "UpdateNameText");
+
+	Params::UItemInfoHeaderWidget_C_UpdateNameText_Params Parms{};
 
 	Parms.ItemDefinition = ItemDefinition;
 	Parms.Quantity = Quantity;
@@ -394,10 +456,10 @@ void UItemInfoHeaderWidget_C::UpdateNameText(class UFortItemDefinition* ItemDefi
 // class UFortItemDefinition*         ItemDefinition                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Quantity                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetRichDescription_ReturnValue                          ()
-// class FText                        CallFunc_GetItemTypeName_ReturnValue                             ()
+// class FText                        CallFunc_GetRichDescription_ReturnValue                          (None)
+// class FText                        CallFunc_GetItemTypeName_ReturnValue                             (None)
 // enum class EFortItemType           CallFunc_GetItemType_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetShortDescription_ReturnValue                         ()
+// class FText                        CallFunc_GetShortDescription_ReturnValue                         (None)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFortColorPalette           CallFunc_GetRarityOrSeriesColors_ReturnValue                     (NoDestructor)
@@ -407,9 +469,12 @@ void UItemInfoHeaderWidget_C::UpdateNameText(class UFortItemDefinition* ItemDefi
 
 void UItemInfoHeaderWidget_C::Update(class UFortItemDefinition* ItemDefinition, int32 Quantity, enum class ESlateVisibility Temp_byte_Variable, class FText CallFunc_GetRichDescription_ReturnValue, class FText CallFunc_GetItemTypeName_ReturnValue, enum class EFortItemType CallFunc_GetItemType_ReturnValue, class FText CallFunc_GetShortDescription_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, const struct FFortColorPalette& CallFunc_GetRarityOrSeriesColors_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ItemInfoHeaderWidget_C", "Update");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemInfoHeaderWidget_C_Update_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "Update");
+
+	Params::UItemInfoHeaderWidget_C_Update_Params Parms{};
 
 	Parms.ItemDefinition = ItemDefinition;
 	Parms.Quantity = Quantity;
@@ -436,12 +501,14 @@ void UItemInfoHeaderWidget_C::Update(class UFortItemDefinition* ItemDefinition, 
 
 void UItemInfoHeaderWidget_C::OnItemDefinitionChanged()
 {
-	static auto Func = Class->GetFunction("ItemInfoHeaderWidget_C", "OnItemDefinitionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemInfoHeaderWidget_C_OnItemDefinitionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "OnItemDefinitionChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -464,9 +531,12 @@ void UItemInfoHeaderWidget_C::OnItemDefinitionChanged()
 
 void UItemInfoHeaderWidget_C::ExecuteUbergraph_ItemInfoHeaderWidget(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, int32 CallFunc_GetQuantity_ReturnValue, class UFortItemDefinition* CallFunc_GetItemDefinition_ReturnValue, bool Temp_bool_Variable_1, bool CallFunc_IsValid_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("ItemInfoHeaderWidget_C", "ExecuteUbergraph_ItemInfoHeaderWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemInfoHeaderWidget_C_ExecuteUbergraph_ItemInfoHeaderWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemInfoHeaderWidget_C", "ExecuteUbergraph_ItemInfoHeaderWidget");
+
+	Params::UItemInfoHeaderWidget_C_ExecuteUbergraph_ItemInfoHeaderWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -487,6 +557,4 @@ void UItemInfoHeaderWidget_C::ExecuteUbergraph_ItemInfoHeaderWidget(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

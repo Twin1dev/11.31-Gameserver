@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TeamMemberPedestal_FeatInfo.TeamMemberPedestal_FeatInfo_C
+// (None)
+
+class UClass* UTeamMemberPedestal_FeatInfo_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TeamMemberPedestal_FeatInfo_C");
+
+	return Clss;
+}
+
+
+// TeamMemberPedestal_FeatInfo_C TeamMemberPedestal_FeatInfo.Default__TeamMemberPedestal_FeatInfo_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTeamMemberPedestal_FeatInfo_C* UTeamMemberPedestal_FeatInfo_C::GetDefaultObj()
+{
+	static class UTeamMemberPedestal_FeatInfo_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTeamMemberPedestal_FeatInfo_C*>(UTeamMemberPedestal_FeatInfo_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TeamMemberPedestal_FeatInfo.TeamMemberPedestal_FeatInfo_C.OnAnimationFinished
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UTeamMemberPedestal_FeatInfo_C::OnAnimationFinished(class UWidgetAnimation* Animation)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_FeatInfo_C", "OnAnimationFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberPedestal_FeatInfo_C_OnAnimationFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_FeatInfo_C", "OnAnimationFinished");
+
+	Params::UTeamMemberPedestal_FeatInfo_C_OnAnimationFinished_Params Parms{};
 
 	Parms.Animation = Animation;
 
@@ -39,12 +67,14 @@ void UTeamMemberPedestal_FeatInfo_C::OnAnimationFinished(class UWidgetAnimation*
 
 void UTeamMemberPedestal_FeatInfo_C::OnFeatDefinitionSet()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_FeatInfo_C", "OnFeatDefinitionSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberPedestal_FeatInfo_C_OnFeatDefinitionSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_FeatInfo_C", "OnFeatDefinitionSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -59,9 +89,12 @@ void UTeamMemberPedestal_FeatInfo_C::OnFeatDefinitionSet()
 
 void UTeamMemberPedestal_FeatInfo_C::ExecuteUbergraph_TeamMemberPedestal_FeatInfo(int32 EntryPoint, class UWidgetAnimation* K2Node_Event_Animation, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_FeatInfo_C", "ExecuteUbergraph_TeamMemberPedestal_FeatInfo");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberPedestal_FeatInfo_C_ExecuteUbergraph_TeamMemberPedestal_FeatInfo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_FeatInfo_C", "ExecuteUbergraph_TeamMemberPedestal_FeatInfo");
+
+	Params::UTeamMemberPedestal_FeatInfo_C_ExecuteUbergraph_TeamMemberPedestal_FeatInfo_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_Animation = K2Node_Event_Animation;
@@ -74,6 +107,4 @@ void UTeamMemberPedestal_FeatInfo_C::ExecuteUbergraph_TeamMemberPedestal_FeatInf
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

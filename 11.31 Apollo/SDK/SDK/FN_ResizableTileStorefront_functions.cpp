@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ResizableTileStorefront.ResizableTileStorefront_C
+// (None)
+
+class UClass* UResizableTileStorefront_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ResizableTileStorefront_C");
+
+	return Clss;
+}
+
+
+// ResizableTileStorefront_C ResizableTileStorefront.Default__ResizableTileStorefront_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UResizableTileStorefront_C* UResizableTileStorefront_C::GetDefaultObj()
+{
+	static class UResizableTileStorefront_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UResizableTileStorefront_C*>(UResizableTileStorefront_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ResizableTileStorefront.ResizableTileStorefront_C.OnSectionEstablished
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UResizableTileStorefront_C::OnSectionEstablished(bool bEmptySection)
 {
-	static auto Func = Class->GetFunction("ResizableTileStorefront_C", "OnSectionEstablished");
+	static class UFunction* Func = nullptr;
 
-	Params::UResizableTileStorefront_C_OnSectionEstablished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ResizableTileStorefront_C", "OnSectionEstablished");
+
+	Params::UResizableTileStorefront_C_OnSectionEstablished_Params Parms{};
 
 	Parms.bEmptySection = bEmptySection;
 
@@ -43,9 +71,12 @@ void UResizableTileStorefront_C::OnSectionEstablished(bool bEmptySection)
 
 void UResizableTileStorefront_C::ExecuteUbergraph_ResizableTileStorefront(int32 EntryPoint, bool K2Node_Event_bEmptySection, bool Temp_bool_Variable, class UWidget* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ResizableTileStorefront_C", "ExecuteUbergraph_ResizableTileStorefront");
+	static class UFunction* Func = nullptr;
 
-	Params::UResizableTileStorefront_C_ExecuteUbergraph_ResizableTileStorefront_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ResizableTileStorefront_C", "ExecuteUbergraph_ResizableTileStorefront");
+
+	Params::UResizableTileStorefront_C_ExecuteUbergraph_ResizableTileStorefront_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bEmptySection = K2Node_Event_bEmptySection;
@@ -58,6 +89,4 @@ void UResizableTileStorefront_C::ExecuteUbergraph_ResizableTileStorefront(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

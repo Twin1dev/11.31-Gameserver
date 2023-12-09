@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SocialPanel.SocialPanel_C
+// (None)
+
+class UClass* USocialPanel_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialPanel_C");
+
+	return Clss;
+}
+
+
+// SocialPanel_C SocialPanel.Default__SocialPanel_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USocialPanel_C* USocialPanel_C::GetDefaultObj()
+{
+	static class USocialPanel_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialPanel_C*>(USocialPanel_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SocialPanel.SocialPanel_C.Play Panel Animation Sound
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void USocialPanel_C::Play_Panel_Animation_Sound(bool CallFunc_IsAnimationPlaying_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SocialPanel_C", "Play Panel Animation Sound");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_C_Play_Panel_Animation_Sound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_C", "Play Panel Animation Sound");
+
+	Params::USocialPanel_C_Play_Panel_Animation_Sound_Params Parms{};
 
 	Parms.CallFunc_IsAnimationPlaying_ReturnValue = CallFunc_IsAnimationPlaying_ReturnValue;
 
@@ -39,12 +67,14 @@ void USocialPanel_C::Play_Panel_Animation_Sound(bool CallFunc_IsAnimationPlaying
 
 void USocialPanel_C::ClosePanelAfterAnimation()
 {
-	static auto Func = Class->GetFunction("SocialPanel_C", "ClosePanelAfterAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_C_ClosePanelAfterAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_C", "ClosePanelAfterAnimation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,17 +86,20 @@ void USocialPanel_C::ClosePanelAfterAnimation()
 // struct FPointerEvent               MouseEvent                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
 // bool                               CallFunc_IsActivated_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsAnySlideOutMenuOpen_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 struct FEventReply USocialPanel_C::OnMouseButtonDown_0(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, bool CallFunc_IsActivated_ReturnValue, const struct FEventReply& CallFunc_Unhandled_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsAnySlideOutMenuOpen_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SocialPanel_C", "OnMouseButtonDown_0");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_C_OnMouseButtonDown_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_C", "OnMouseButtonDown_0");
+
+	Params::USocialPanel_C_OnMouseButtonDown_0_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -91,9 +124,12 @@ struct FEventReply USocialPanel_C::OnMouseButtonDown_0(const struct FGeometry& M
 
 void USocialPanel_C::BndEvt__SocialPanel_TopBarExtension_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("SocialPanel_C", "BndEvt__SocialPanel_TopBarExtension_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_C_BndEvt__SocialPanel_TopBarExtension_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_C", "BndEvt__SocialPanel_TopBarExtension_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::USocialPanel_C_BndEvt__SocialPanel_TopBarExtension_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -108,12 +144,14 @@ void USocialPanel_C::BndEvt__SocialPanel_TopBarExtension_K2Node_ComponentBoundEv
 
 void USocialPanel_C::ClosePanel()
 {
-	static auto Func = Class->GetFunction("SocialPanel_C", "ClosePanel");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_C_ClosePanel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_C", "ClosePanel");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -124,12 +162,14 @@ void USocialPanel_C::ClosePanel()
 
 void USocialPanel_C::HandleOutroEnded()
 {
-	static auto Func = Class->GetFunction("SocialPanel_C", "HandleOutroEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_C_HandleOutroEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_C", "HandleOutroEnded");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -140,12 +180,14 @@ void USocialPanel_C::HandleOutroEnded()
 
 void USocialPanel_C::OnBeginOutro()
 {
-	static auto Func = Class->GetFunction("SocialPanel_C", "OnBeginOutro");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_C_OnBeginOutro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_C", "OnBeginOutro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -156,12 +198,14 @@ void USocialPanel_C::OnBeginOutro()
 
 void USocialPanel_C::OnBeginIntro()
 {
-	static auto Func = Class->GetFunction("SocialPanel_C", "OnBeginIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_C_OnBeginIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_C", "OnBeginIntro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -172,12 +216,14 @@ void USocialPanel_C::OnBeginIntro()
 
 void USocialPanel_C::HandleIntroEnded()
 {
-	static auto Func = Class->GetFunction("SocialPanel_C", "HandleIntroEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_C_HandleIntroEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_C", "HandleIntroEnded");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -195,9 +241,12 @@ void USocialPanel_C::HandleIntroEnded()
 
 void USocialPanel_C::ExecuteUbergraph_SocialPanel(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_IsAnySlideOutMenuOpen_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1)
 {
-	static auto Func = Class->GetFunction("SocialPanel_C", "ExecuteUbergraph_SocialPanel");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanel_C_ExecuteUbergraph_SocialPanel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanel_C", "ExecuteUbergraph_SocialPanel");
+
+	Params::USocialPanel_C_ExecuteUbergraph_SocialPanel_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -213,6 +262,4 @@ void USocialPanel_C::ExecuteUbergraph_SocialPanel(int32 EntryPoint, UDelegatePro
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

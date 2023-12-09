@@ -6,7 +6,7 @@ bool ReadyToStartMatchHook(AFortGameModeAthena* GameMode)
 {
 	
 	TArray<AActor*> WarmupActors;
-	GetDefaultObject<UGameplayStatics>()->GetAllActorsOfClass(GetWorld(), AFortPlayerStartWarmup::StaticClass(), &WarmupActors);
+	GetDefaultObject<UGameplayStatics>()->GetAllActorsOfClass(UWorld::GetWorld(), AFortPlayerStartWarmup::StaticClass(), &WarmupActors);
 
 	int WarmupSpots = WarmupActors.Num();
 
@@ -27,24 +27,24 @@ bool ReadyToStartMatchHook(AFortGameModeAthena* GameMode)
 		GetGameState()->CurrentPlaylistInfo.MarkArrayDirty();
 		GetGameState()->OnRep_CurrentPlaylistInfo();
 
-		GetWorld()->NetDriver = CreateNetDriver(GetEngine(), GetWorld(), GetDefaultObject<UKismetStringLibrary>()->Conv_StringToName(L"GameNetDriver"));
+		UWorld::GetWorld()->NetDriver = CreateNetDriver(UFortEngine::GetEngine(), UWorld::GetWorld(), GetDefaultObject<UKismetStringLibrary>()->Conv_StringToName(L"GameNetDriver"));
 
-		if (GetWorld()->NetDriver)
+		if (UWorld::GetWorld()->NetDriver)
 		{
-			GetWorld()->NetDriver->World = GetWorld();
-			GetWorld()->NetDriver->NetDriverName = GetDefaultObject<UKismetStringLibrary>()->Conv_StringToName(L"GameNetDriver");
+			UWorld::GetWorld()->NetDriver->World = UWorld::GetWorld();
+			UWorld::GetWorld()->NetDriver->NetDriverName = GetDefaultObject<UKismetStringLibrary>()->Conv_StringToName(L"GameNetDriver");
 
 			FString Err;
 			auto URL = FURL();
 			URL.Port = 7777;
 
-			InitListen(GetWorld()->NetDriver, GetWorld(), URL, true, Err);
-			SetWorld(GetWorld()->NetDriver, GetWorld());
+			InitListen(UWorld::GetWorld()->NetDriver, UWorld::GetWorld(), URL, true, Err);
+			SetWorld(UWorld::GetWorld()->NetDriver, UWorld::GetWorld());
 
 			GetGameMode()->GameSession->MaxPlayers = 100;
 
-			GetWorld()->LevelCollections[0].NetDriver = GetWorld()->NetDriver;
-			GetWorld()->LevelCollections[1].NetDriver = GetWorld()->NetDriver;
+			UWorld::GetWorld()->LevelCollections[0].NetDriver = UWorld::GetWorld()->NetDriver;
+			UWorld::GetWorld()->LevelCollections[1].NetDriver = UWorld::GetWorld()->NetDriver;
 
 			LOG("Listening on Port 7777");
 		}
@@ -59,8 +59,8 @@ bool ReadyToStartMatchHook(AFortGameModeAthena* GameMode)
 		TArray<AActor*> SpawnIslandActors;
 		TArray<AActor*> BRIslandActors;
 
-		GetDefaultObject<UGameplayStatics>()->GetAllActorsOfClass(GetWorld(), SpawnIsland_FloorLoot, &SpawnIslandActors);
-		GetDefaultObject<UGameplayStatics>()->GetAllActorsOfClass(GetWorld(), BRIsland_FloorLoot, &BRIslandActors);
+		GetDefaultObject<UGameplayStatics>()->GetAllActorsOfClass(UWorld::GetWorld(), SpawnIsland_FloorLoot, &SpawnIslandActors);
+		GetDefaultObject<UGameplayStatics>()->GetAllActorsOfClass(UWorld::GetWorld(), BRIsland_FloorLoot, &BRIslandActors);
 
 		GetGameMode()->WarmupRequiredPlayerCount = 1;
 	}
@@ -73,16 +73,6 @@ static void (*HandleStartingNewPlayer)(AFortGameModeAthena*, AFortPlayerControll
 static bool bFirstPlayer = false;
 void HandleStartingNewPlayerHook(AFortGameModeAthena* GameMode, AFortPlayerControllerAthena* NewPlayer)
 {
-	auto PlayerState = (AFortPlayerStateAthena*)NewPlayer->PlayerState;
-
-	NewPlayer->bHasServerFinishedLoading = true;
-	NewPlayer->bHasClientFinishedLoading = true;
-	NewPlayer->OnRep_bHasServerFinishedLoading();
-
-	PlayerState->bHasStartedPlaying = true;
-	PlayerState->bHasFinishedLoading = true;
-	PlayerState->OnRep_bHasStartedPlaying();
-
 	if (!bFirstPlayer)
 	{
 		bFirstPlayer = true;
@@ -143,4 +133,60 @@ APawn* SpawnDefaultPawnForHook(AGameModeBase* GameMode, AController* NewPlayer, 
 
 
 	return NewPawn;
+}
+
+static inline void (*OnDamageServer)(ABuildingActor* BuildingActor, float Damage, FGameplayTagContainer DamageTags, FVector Momentum, __int64 HitInfo, APlayerController* InstigatedBy, AActor* DamageCauser, __int64 EffectContext);
+void OnDamageServerHook(ABuildingActor* BuildingActor, float Damage, FGameplayTagContainer DamageTags, FVector Momentum, __int64 HitInfo, APlayerController* InstigatedBy, AActor* DamageCauser, __int64 EffectContext)
+{
+	auto BuildingSMActor = Cast<ABuildingSMActor>(BuildingActor);
+	auto PlayerController = Cast<AFortPlayerControllerAthena>(InstigatedBy);
+	auto Weapon = Cast<AFortWeapon>(DamageCauser);
+
+	if (!BuildingSMActor)
+		return OnDamageServer(BuildingActor, Damage, DamageTags, Momentum, HitInfo, InstigatedBy, DamageCauser, EffectContext);
+
+	if (BuildingSMActor->bDestroyed)
+		return OnDamageServer(BuildingActor, Damage, DamageTags, Momentum, HitInfo, InstigatedBy, DamageCauser, EffectContext);
+
+	if (!PlayerController || !Weapon)
+		return OnDamageServer(BuildingActor, Damage, DamageTags, Momentum, HitInfo, InstigatedBy, DamageCauser, EffectContext);
+
+	auto WeaponData = Cast<UFortWeaponMeleeItemDefinition>(Weapon->WeaponData);
+
+	if (!WeaponData)
+		return OnDamageServer(BuildingActor, Damage, DamageTags, Momentum, HitInfo, InstigatedBy, DamageCauser, EffectContext);
+
+	auto ResourceItemDefinition = GetDefaultObject<UFortKismetLibrary>()->K2_GetResourceItemDefinition(BuildingSMActor->ResourceType);
+
+	if (!ResourceItemDefinition)
+		return OnDamageServer(BuildingActor, Damage, DamageTags, Momentum, HitInfo, InstigatedBy, DamageCauser, EffectContext);
+
+	int ResourceCount = 0;
+
+	if (BuildingSMActor->BuildingResourceAmountOverride.RowName.ComparisonIndex > 0)
+	{
+		auto AthenaResourceRates = StaticFindObject<UCurveTable>("/Game/Athena/Balance/DataTables/AthenaResourceRates.AthenaResourceRates");
+
+		EEvaluateCurveTableResult shutthefuckup{};
+		float OutXY{};
+
+		GetDefaultObject<UDataTableFunctionLibrary>()->EvaluateCurveTableRow(AthenaResourceRates, BuildingSMActor->BuildingResourceAmountOverride.RowName, 0.f, &shutthefuckup, &OutXY, FString());
+
+		float ResourceCountNotRounded = OutXY / (BuildingActor->GetMaxHealth() / Damage);
+
+		ResourceCount = round(ResourceCountNotRounded);
+	}
+
+	if (ResourceCount <= 0)
+		return OnDamageServer(BuildingActor, Damage, DamageTags, Momentum, HitInfo, InstigatedBy, DamageCauser, EffectContext);
+
+	bool bIsWeakspot = Damage == 100.0f;
+
+	PlayerController->ClientReportDamagedResourceBuilding(BuildingSMActor, BuildingSMActor->ResourceType, ResourceCount, false, bIsWeakspot);
+
+	GivePCItem(PlayerController, ResourceItemDefinition, ResourceCount);
+
+	Update(PlayerController);
+
+	return OnDamageServer(BuildingActor, Damage, DamageTags, Momentum, HitInfo, InstigatedBy, DamageCauser, EffectContext);
 }

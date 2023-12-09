@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -24,7 +21,7 @@ public:
 	struct FGeometry                             MyGeometry;                                        // 0x0(0x38)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FAnalogInputEvent                     InAnalogInputEvent;                                // 0x38(0x40)(BlueprintVisible, BlueprintReadOnly, Parm)
 	struct FEventReply                           ReturnValue;                                       // 0x78(0xB8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                           CallFunc_Unhandled_ReturnValue;                    // 0x130(0xB8)()
+	struct FEventReply                           CallFunc_Unhandled_ReturnValue;                    // 0x130(0xB8)(None)
 };
 
 // 0xC (0xC - 0x0)
@@ -34,83 +31,6 @@ struct UErrorWindow_C_Initialize_Close_Button_Params
 public:
 	class UFortGlobalUIContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_GetInputPriority_ReturnValue;             // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ErrorWindow.ErrorWindow_C.Construct
-struct UErrorWindow_C_Construct_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ErrorWindow.ErrorWindow_C.Destruct
-struct UErrorWindow_C_Destruct_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ErrorWindow.ErrorWindow_C.OnBeginOutro
-struct UErrorWindow_C_OnBeginOutro_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ErrorWindow.ErrorWindow_C.OnBeginIntro
-struct UErrorWindow_C_OnBeginIntro_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ErrorWindow.ErrorWindow_C.BP_OnActivated
-struct UErrorWindow_C_BP_OnActivated_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ErrorWindow.ErrorWindow_C.HandleLlamaAnimFinish
-struct UErrorWindow_C_HandleLlamaAnimFinish_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ErrorWindow.ErrorWindow_C.LlamaReverse
-struct UErrorWindow_C_LlamaReverse_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ErrorWindow.ErrorWindow_C.HandleLlamaCycleFinished
-struct UErrorWindow_C_HandleLlamaCycleFinished_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ErrorWindow.ErrorWindow_C.PlayRandomAmbientLlama
-struct UErrorWindow_C_PlayRandomAmbientLlama_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ErrorWindow.ErrorWindow_C.StartAmbientLlamaSequence
-struct UErrorWindow_C_StartAmbientLlamaSequence_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ErrorWindow.ErrorWindow_C.ResetLlamas
-struct UErrorWindow_C_ResetLlamas_Params
-{
-public:
 };
 
 // 0x18 (0x18 - 0x0)
@@ -132,7 +52,7 @@ public:
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_RandomIntegerInRange_ReturnValue;         // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_454D[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4E3B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWidgetAnimation*                      K2Node_Select_Default;                             // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_1;              // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x30(0x10)(ZeroConstructor, NoDestructor)
@@ -141,27 +61,27 @@ public:
 	float                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x58(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_2;            // 0x5C(0x10)(ZeroConstructor, NoDestructor)
 	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_3;            // 0x6C(0x10)(ZeroConstructor, NoDestructor)
-	uint8                                        Pad_454E[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4E3C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x80(0x8)(NoDestructor, HasGetValueTypeHash)
 	TArray<class UErrorLlama_C*>                 K2Node_MakeArray_Array;                            // 0x88(0x10)(ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 	class UErrorLlama_C*                         CallFunc_Array_Get_Item;                           // 0x98(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0xA0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0xA4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_454F[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4E3D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_4;            // 0xA8(0x10)(ZeroConstructor, NoDestructor)
 	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_5;            // 0xB8(0x10)(ZeroConstructor, NoDestructor)
 	float                                        CallFunc_RandomFloatInRange_ReturnValue_1;         // 0xC8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4550[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4E3E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0xD0(0x8)(NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsMobileGame_ReturnValue;                 // 0xD8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4551[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4E3F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_GetEndTime_ReturnValue;                   // 0xDC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetEndTime_ReturnValue_1;                 // 0xE0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4552[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4E40[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_3;              // 0xE8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_4;              // 0xF0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetEndTime_ReturnValue_2;                 // 0xF8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4553[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4E41[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_5;              // 0x100(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                  K2Node_Event_OverrideText;                         // 0x108(0x18)(ConstParm)
 	class UIconTextButton_C*                     K2Node_DynamicCast_AsIcon_Text_Button;             // 0x120(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -171,6 +91,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_Pickups_Default.B_Pickups_Default_C
+// (Actor)
+
+class UClass* AB_Pickups_Default_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Pickups_Default_C");
+
+	return Clss;
+}
+
+
+// B_Pickups_Default_C B_Pickups_Default.Default__B_Pickups_Default_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Pickups_Default_C* AB_Pickups_Default_C::GetDefaultObj()
+{
+	static class AB_Pickups_Default_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Pickups_Default_C*>(AB_Pickups_Default_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function B_Pickups_Default.B_Pickups_Default_C.Set Initial BKGD Param
@@ -25,9 +50,12 @@ namespace SDK
 
 void AB_Pickups_Default_C::Set_Initial_BKGD_Param(class UMaterialInstanceDynamic* Mid, bool CallFunc_GreaterEqual_IntInt_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Default_C", "Set Initial BKGD Param");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Default_C_Set_Initial_BKGD_Param_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Default_C", "Set Initial BKGD Param");
+
+	Params::AB_Pickups_Default_C_Set_Initial_BKGD_Param_Params Parms{};
 
 	Parms.Mid = Mid;
 	Parms.CallFunc_GreaterEqual_IntInt_ReturnValue = CallFunc_GreaterEqual_IntInt_ReturnValue;
@@ -51,9 +79,12 @@ void AB_Pickups_Default_C::Set_Initial_BKGD_Param(class UMaterialInstanceDynamic
 
 void AB_Pickups_Default_C::Setup_Light(bool CallFunc_IsMobilePlatform_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, int32 CallFunc_GetVisualEffectQuality_ReturnValue, bool K2Node_SwitchInteger_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Default_C", "Setup Light");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Default_C_Setup_Light_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Default_C", "Setup Light");
+
+	Params::AB_Pickups_Default_C_Setup_Light_Params Parms{};
 
 	Parms.CallFunc_IsMobilePlatform_ReturnValue = CallFunc_IsMobilePlatform_ReturnValue;
 	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
@@ -73,12 +104,14 @@ void AB_Pickups_Default_C::Setup_Light(bool CallFunc_IsMobilePlatform_ReturnValu
 
 void AB_Pickups_Default_C::UserConstructionScript()
 {
-	static auto Func = Class->GetFunction("B_Pickups_Default_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Default_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Default_C", "UserConstructionScript");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -89,12 +122,14 @@ void AB_Pickups_Default_C::UserConstructionScript()
 
 void AB_Pickups_Default_C::Randomize_Mesh_Rotation_for_BR()
 {
-	static auto Func = Class->GetFunction("B_Pickups_Default_C", "Randomize Mesh Rotation for BR");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Default_C_Randomize_Mesh_Rotation_for_BR_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Default_C", "Randomize Mesh Rotation for BR");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,12 +140,14 @@ void AB_Pickups_Default_C::Randomize_Mesh_Rotation_for_BR()
 
 void AB_Pickups_Default_C::OnTossed()
 {
-	static auto Func = Class->GetFunction("B_Pickups_Default_C", "OnTossed");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Default_C_OnTossed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Default_C", "OnTossed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -121,12 +158,14 @@ void AB_Pickups_Default_C::OnTossed()
 
 void AB_Pickups_Default_C::OnPickedUp()
 {
-	static auto Func = Class->GetFunction("B_Pickups_Default_C", "OnPickedUp");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Default_C_OnPickedUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Default_C", "OnPickedUp");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -137,12 +176,14 @@ void AB_Pickups_Default_C::OnPickedUp()
 
 void AB_Pickups_Default_C::HideBackgroundAndSpotlight()
 {
-	static auto Func = Class->GetFunction("B_Pickups_Default_C", "HideBackgroundAndSpotlight");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Default_C_HideBackgroundAndSpotlight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Default_C", "HideBackgroundAndSpotlight");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -161,9 +202,12 @@ void AB_Pickups_Default_C::HideBackgroundAndSpotlight()
 
 void AB_Pickups_Default_C::ExecuteUbergraph_B_Pickups_Default(int32 EntryPoint, bool CallFunc_IsValid_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult, bool CallFunc_GetPickupRarityMID_bNeedsToBeInitialized, class UMaterialInstanceDynamic* CallFunc_GetPickupRarityMID_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("B_Pickups_Default_C", "ExecuteUbergraph_B_Pickups_Default");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Pickups_Default_C_ExecuteUbergraph_B_Pickups_Default_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Pickups_Default_C", "ExecuteUbergraph_B_Pickups_Default");
+
+	Params::AB_Pickups_Default_C_ExecuteUbergraph_B_Pickups_Default_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -180,6 +224,4 @@ void AB_Pickups_Default_C::ExecuteUbergraph_B_Pickups_Default(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

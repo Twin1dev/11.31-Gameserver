@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCN_Athena_OutsideSafeZoneDamage.GCN_Athena_OutsideSafeZoneDamage_C
+// (None)
+
+class UClass* UGCN_Athena_OutsideSafeZoneDamage_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCN_Athena_OutsideSafeZoneDamage_C");
+
+	return Clss;
+}
+
+
+// GCN_Athena_OutsideSafeZoneDamage_C GCN_Athena_OutsideSafeZoneDamage.Default__GCN_Athena_OutsideSafeZoneDamage_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGCN_Athena_OutsideSafeZoneDamage_C* UGCN_Athena_OutsideSafeZoneDamage_C::GetDefaultObj()
+{
+	static class UGCN_Athena_OutsideSafeZoneDamage_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGCN_Athena_OutsideSafeZoneDamage_C*>(UGCN_Athena_OutsideSafeZoneDamage_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCN_Athena_OutsideSafeZoneDamage.GCN_Athena_OutsideSafeZoneDamage_C.ZapFX
@@ -26,9 +51,12 @@ namespace SDK
 
 void UGCN_Athena_OutsideSafeZoneDamage_C::ZapFX(int32 ZapCount, class APlayerPawn_Athena_C* PlayerPawnAthena, float CallFunc_Conv_IntToFloat_ReturnValue, bool CallFunc_IsActive_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCN_Athena_OutsideSafeZoneDamage_C", "ZapFX");
+	static class UFunction* Func = nullptr;
 
-	Params::UGCN_Athena_OutsideSafeZoneDamage_C_ZapFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_OutsideSafeZoneDamage_C", "ZapFX");
+
+	Params::UGCN_Athena_OutsideSafeZoneDamage_C_ZapFX_Params Parms{};
 
 	Parms.ZapCount = ZapCount;
 	Parms.PlayerPawnAthena = PlayerPawnAthena;
@@ -53,11 +81,11 @@ void UGCN_Athena_OutsideSafeZoneDamage_C::ZapFX(int32 ZapCount, class APlayerPaw
 // bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_BreakGameplayCueParameters_NormalizedMagnitude          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakGameplayCueParameters_RawMagnitude                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleCallFunc_BreakGameplayCueParameters_EffectContext                ()
+// struct FGameplayEffectContextHandleCallFunc_BreakGameplayCueParameters_EffectContext                (None)
 // struct FGameplayTag                CallFunc_BreakGameplayCueParameters_MatchedTagName               (NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                CallFunc_BreakGameplayCueParameters_OriginalTag                  (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedSourceTags         ()
-// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedTargetTags         ()
+// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedSourceTags         (None)
+// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedTargetTags         (None)
 // struct FVector                     CallFunc_BreakGameplayCueParameters_Location                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_BreakGameplayCueParameters_Normal                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_BreakGameplayCueParameters_Instigator                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -77,9 +105,12 @@ void UGCN_Athena_OutsideSafeZoneDamage_C::ZapFX(int32 ZapCount, class APlayerPaw
 
 void UGCN_Athena_OutsideSafeZoneDamage_C::OnBurst(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance, bool CallFunc_IsDedicatedServer_ReturnValue, float CallFunc_BreakGameplayCueParameters_NormalizedMagnitude, float CallFunc_BreakGameplayCueParameters_RawMagnitude, const struct FGameplayEffectContextHandle& CallFunc_BreakGameplayCueParameters_EffectContext, const struct FGameplayTag& CallFunc_BreakGameplayCueParameters_MatchedTagName, const struct FGameplayTag& CallFunc_BreakGameplayCueParameters_OriginalTag, const struct FGameplayTagContainer& CallFunc_BreakGameplayCueParameters_AggregatedSourceTags, const struct FGameplayTagContainer& CallFunc_BreakGameplayCueParameters_AggregatedTargetTags, const struct FVector& CallFunc_BreakGameplayCueParameters_Location, const struct FVector& CallFunc_BreakGameplayCueParameters_Normal, class AActor* CallFunc_BreakGameplayCueParameters_Instigator, class AActor* CallFunc_BreakGameplayCueParameters_EffectCauser, class UObject* CallFunc_BreakGameplayCueParameters_SourceObject, class UPhysicalMaterial* CallFunc_BreakGameplayCueParameters_PhysicalMaterial, int32 CallFunc_BreakGameplayCueParameters_GameplayEffectLevel, int32 CallFunc_BreakGameplayCueParameters_AbilityLevel, class USceneComponent* CallFunc_BreakGameplayCueParameters_TargetAttachComponent, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, class APlayerController* CallFunc_GetLocalViewingPlayerController_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_InWarmup_InWarmUp, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCN_Athena_OutsideSafeZoneDamage_C", "OnBurst");
+	static class UFunction* Func = nullptr;
 
-	Params::UGCN_Athena_OutsideSafeZoneDamage_C_OnBurst_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_OutsideSafeZoneDamage_C", "OnBurst");
+
+	Params::UGCN_Athena_OutsideSafeZoneDamage_C_OnBurst_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -124,9 +155,12 @@ void UGCN_Athena_OutsideSafeZoneDamage_C::OnBurst(class AActor* MyTarget, struct
 
 void UGCN_Athena_OutsideSafeZoneDamage_C::ExecuteUbergraph_GCN_Athena_OutsideSafeZoneDamage(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("GCN_Athena_OutsideSafeZoneDamage_C", "ExecuteUbergraph_GCN_Athena_OutsideSafeZoneDamage");
+	static class UFunction* Func = nullptr;
 
-	Params::UGCN_Athena_OutsideSafeZoneDamage_C_ExecuteUbergraph_GCN_Athena_OutsideSafeZoneDamage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_OutsideSafeZoneDamage_C", "ExecuteUbergraph_GCN_Athena_OutsideSafeZoneDamage");
+
+	Params::UGCN_Athena_OutsideSafeZoneDamage_C_ExecuteUbergraph_GCN_Athena_OutsideSafeZoneDamage_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -136,6 +170,4 @@ void UGCN_Athena_OutsideSafeZoneDamage_C::ExecuteUbergraph_GCN_Athena_OutsideSaf
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

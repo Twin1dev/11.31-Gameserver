@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -24,11 +21,8 @@ public:
 	struct FActiveGameplayEffectHandle           GEH_KnockBackImmunity;                             // 0xA50(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                         bPlayerHolsterState;                               // 0xA58(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GAT_ActiveAbility_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGAT_ActiveAbility_C* GetDefaultObj();
 
 	void EndAbilityWithReason(const class FString& Reason);
 	void SendHeroAbilityActivationEvent(const struct FGameplayTag& T_Event_HeroAbilityActivate);
@@ -43,6 +37,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

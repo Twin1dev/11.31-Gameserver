@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass FortNavArea_JumpDown.FortNavArea_JumpDown_C
+// (None)
+
+class UClass* UFortNavArea_JumpDown_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FortNavArea_JumpDown_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// FortNavArea_JumpDown_C FortNavArea_JumpDown.Default__FortNavArea_JumpDown_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UFortNavArea_JumpDown_C* UFortNavArea_JumpDown_C::GetDefaultObj()
+{
+	static class UFortNavArea_JumpDown_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFortNavArea_JumpDown_C*>(UFortNavArea_JumpDown_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

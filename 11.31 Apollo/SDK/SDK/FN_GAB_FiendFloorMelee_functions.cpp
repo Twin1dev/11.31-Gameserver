@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GAB_FiendFloorMelee.GAB_FiendFloorMelee_C
+// (None)
+
+class UClass* UGAB_FiendFloorMelee_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAB_FiendFloorMelee_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// GAB_FiendFloorMelee_C GAB_FiendFloorMelee.Default__GAB_FiendFloorMelee_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAB_FiendFloorMelee_C* UGAB_FiendFloorMelee_C::GetDefaultObj()
+{
+	static class UGAB_FiendFloorMelee_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAB_FiendFloorMelee_C*>(UGAB_FiendFloorMelee_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

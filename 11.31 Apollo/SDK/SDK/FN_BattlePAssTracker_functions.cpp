@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass BattlePAssTracker.BattlePassTracker_C
+// (None)
+
+class UClass* UBattlePassTracker_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BattlePassTracker_C");
+
+	return Clss;
+}
+
+
+// BattlePassTracker_C BattlePAssTracker.Default__BattlePassTracker_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBattlePassTracker_C* UBattlePassTracker_C::GetDefaultObj()
+{
+	static class UBattlePassTracker_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBattlePassTracker_C*>(UBattlePassTracker_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BattlePAssTracker.BattlePassTracker_C.HandleButtonIn
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UBattlePassTracker_C::HandleButtonIn(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassTracker_C", "HandleButtonIn");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassTracker_C_HandleButtonIn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassTracker_C", "HandleButtonIn");
+
+	Params::UBattlePassTracker_C_HandleButtonIn_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -47,9 +75,12 @@ void UBattlePassTracker_C::HandleButtonIn(class UUMGSequencePlayer* CallFunc_Pla
 
 void UBattlePassTracker_C::HandleInitialState(class UBattlePassItemTracker_C* K2Node_DynamicCast_AsBattle_Pass_Item_Tracker, bool K2Node_DynamicCast_bSuccess, class UBattlePassItemTracker_C* K2Node_DynamicCast_AsBattle_Pass_Item_Tracker_1, bool K2Node_DynamicCast_bSuccess_1, class UBattlePassItemTracker_C* K2Node_DynamicCast_AsBattle_Pass_Item_Tracker_2, bool K2Node_DynamicCast_bSuccess_2, class UBattlePassItemTracker_C* K2Node_DynamicCast_AsBattle_Pass_Item_Tracker_3, bool K2Node_DynamicCast_bSuccess_3)
 {
-	static auto Func = Class->GetFunction("BattlePassTracker_C", "HandleInitialState");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassTracker_C_HandleInitialState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassTracker_C", "HandleInitialState");
+
+	Params::UBattlePassTracker_C_HandleInitialState_Params Parms{};
 
 	Parms.K2Node_DynamicCast_AsBattle_Pass_Item_Tracker = K2Node_DynamicCast_AsBattle_Pass_Item_Tracker;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
@@ -66,6 +97,4 @@ void UBattlePassTracker_C::HandleInitialState(class UBattlePassItemTracker_C* K2
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

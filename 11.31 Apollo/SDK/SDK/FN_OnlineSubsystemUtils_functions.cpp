@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// Class OnlineSubsystemUtils.AchievementBlueprintLibrary
+// (None)
+
+class UClass* UAchievementBlueprintLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AchievementBlueprintLibrary");
+
+	return Clss;
+}
+
+
+// AchievementBlueprintLibrary OnlineSubsystemUtils.Default__AchievementBlueprintLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UAchievementBlueprintLibrary* UAchievementBlueprintLibrary::GetDefaultObj()
+{
+	static class UAchievementBlueprintLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAchievementBlueprintLibrary*>(UAchievementBlueprintLibrary::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementProgress
@@ -26,21 +51,24 @@ namespace SDK
 
 void UAchievementBlueprintLibrary::GetCachedAchievementProgress(class UObject* WorldContextObject, class APlayerController* PlayerController, class FName AchievementID, bool* bFoundID, float* Progress)
 {
-	static auto Func = Class->GetFunction("AchievementBlueprintLibrary", "GetCachedAchievementProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::UAchievementBlueprintLibrary_GetCachedAchievementProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AchievementBlueprintLibrary", "GetCachedAchievementProgress");
+
+	Params::UAchievementBlueprintLibrary_GetCachedAchievementProgress_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
 	Parms.AchievementID = AchievementID;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (bFoundID != nullptr)
 		*bFoundID = Parms.bFoundID;
@@ -65,21 +93,24 @@ void UAchievementBlueprintLibrary::GetCachedAchievementProgress(class UObject* W
 
 void UAchievementBlueprintLibrary::GetCachedAchievementDescription(class UObject* WorldContextObject, class APlayerController* PlayerController, class FName AchievementID, bool* bFoundID, class FText* Title, class FText* LockedDescription, class FText* UnlockedDescription, bool* bHidden)
 {
-	static auto Func = Class->GetFunction("AchievementBlueprintLibrary", "GetCachedAchievementDescription");
+	static class UFunction* Func = nullptr;
 
-	Params::UAchievementBlueprintLibrary_GetCachedAchievementDescription_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AchievementBlueprintLibrary", "GetCachedAchievementDescription");
+
+	Params::UAchievementBlueprintLibrary_GetCachedAchievementDescription_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
 	Parms.AchievementID = AchievementID;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (bFoundID != nullptr)
 		*bFoundID = Parms.bFoundID;
@@ -99,6 +130,34 @@ void UAchievementBlueprintLibrary::GetCachedAchievementDescription(class UObject
 }
 
 
+// Class OnlineSubsystemUtils.AchievementQueryCallbackProxy
+// (None)
+
+class UClass* UAchievementQueryCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AchievementQueryCallbackProxy");
+
+	return Clss;
+}
+
+
+// AchievementQueryCallbackProxy OnlineSubsystemUtils.Default__AchievementQueryCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject, StrongRefOnFrame)
+
+class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::GetDefaultObj()
+{
+	static class UAchievementQueryCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAchievementQueryCallbackProxy*>(UAchievementQueryCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function OnlineSubsystemUtils.AchievementQueryCallbackProxy.CacheAchievements
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -108,20 +167,23 @@ void UAchievementBlueprintLibrary::GetCachedAchievementDescription(class UObject
 
 class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::CacheAchievements(class UObject* WorldContextObject, class APlayerController* PlayerController)
 {
-	static auto Func = Class->GetFunction("AchievementQueryCallbackProxy", "CacheAchievements");
+	static class UFunction* Func = nullptr;
 
-	Params::UAchievementQueryCallbackProxy_CacheAchievements_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AchievementQueryCallbackProxy", "CacheAchievements");
+
+	Params::UAchievementQueryCallbackProxy_CacheAchievements_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -137,23 +199,54 @@ class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::CacheAchie
 
 class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::CacheAchievementDescriptions(class UObject* WorldContextObject, class APlayerController* PlayerController)
 {
-	static auto Func = Class->GetFunction("AchievementQueryCallbackProxy", "CacheAchievementDescriptions");
+	static class UFunction* Func = nullptr;
 
-	Params::UAchievementQueryCallbackProxy_CacheAchievementDescriptions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AchievementQueryCallbackProxy", "CacheAchievementDescriptions");
+
+	Params::UAchievementQueryCallbackProxy_CacheAchievementDescriptions_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.AchievementWriteCallbackProxy
+// (None)
+
+class UClass* UAchievementWriteCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AchievementWriteCallbackProxy");
+
+	return Clss;
+}
+
+
+// AchievementWriteCallbackProxy OnlineSubsystemUtils.Default__AchievementWriteCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject, StrongRefOnFrame)
+
+class UAchievementWriteCallbackProxy* UAchievementWriteCallbackProxy::GetDefaultObj()
+{
+	static class UAchievementWriteCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAchievementWriteCallbackProxy*>(UAchievementWriteCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -169,9 +262,12 @@ class UAchievementQueryCallbackProxy* UAchievementQueryCallbackProxy::CacheAchie
 
 class UAchievementWriteCallbackProxy* UAchievementWriteCallbackProxy::WriteAchievementProgress(class UObject* WorldContextObject, class APlayerController* PlayerController, class FName AchievementName, float Progress, int32 UserTag)
 {
-	static auto Func = Class->GetFunction("AchievementWriteCallbackProxy", "WriteAchievementProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::UAchievementWriteCallbackProxy_WriteAchievementProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AchievementWriteCallbackProxy", "WriteAchievementProgress");
+
+	Params::UAchievementWriteCallbackProxy_WriteAchievementProgress_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
@@ -179,16 +275,44 @@ class UAchievementWriteCallbackProxy* UAchievementWriteCallbackProxy::WriteAchie
 	Parms.Progress = Progress;
 	Parms.UserTag = UserTag;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.ConnectionCallbackProxy
+// (None)
+
+class UClass* UConnectionCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ConnectionCallbackProxy");
+
+	return Clss;
+}
+
+
+// ConnectionCallbackProxy OnlineSubsystemUtils.Default__ConnectionCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject, StrongRefOnFrame)
+
+class UConnectionCallbackProxy* UConnectionCallbackProxy::GetDefaultObj()
+{
+	static class UConnectionCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UConnectionCallbackProxy*>(UConnectionCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -201,23 +325,54 @@ class UAchievementWriteCallbackProxy* UAchievementWriteCallbackProxy::WriteAchie
 
 class UConnectionCallbackProxy* UConnectionCallbackProxy::ConnectToService(class UObject* WorldContextObject, class APlayerController* PlayerController)
 {
-	static auto Func = Class->GetFunction("ConnectionCallbackProxy", "ConnectToService");
+	static class UFunction* Func = nullptr;
 
-	Params::UConnectionCallbackProxy_ConnectToService_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ConnectionCallbackProxy", "ConnectToService");
+
+	Params::UConnectionCallbackProxy_ConnectToService_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.CreateSessionCallbackProxy
+// (None)
+
+class UClass* UCreateSessionCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CreateSessionCallbackProxy");
+
+	return Clss;
+}
+
+
+// CreateSessionCallbackProxy OnlineSubsystemUtils.Default__CreateSessionCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject, StrongRefOnFrame)
+
+class UCreateSessionCallbackProxy* UCreateSessionCallbackProxy::GetDefaultObj()
+{
+	static class UCreateSessionCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCreateSessionCallbackProxy*>(UCreateSessionCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -232,25 +387,56 @@ class UConnectionCallbackProxy* UConnectionCallbackProxy::ConnectToService(class
 
 class UCreateSessionCallbackProxy* UCreateSessionCallbackProxy::CreateSession(class UObject* WorldContextObject, class APlayerController* PlayerController, int32 PublicConnections, bool bUseLAN)
 {
-	static auto Func = Class->GetFunction("CreateSessionCallbackProxy", "CreateSession");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreateSessionCallbackProxy_CreateSession_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreateSessionCallbackProxy", "CreateSession");
+
+	Params::UCreateSessionCallbackProxy_CreateSession_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
 	Parms.PublicConnections = PublicConnections;
 	Parms.bUseLAN = bUseLAN;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.DestroySessionCallbackProxy
+// (None)
+
+class UClass* UDestroySessionCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DestroySessionCallbackProxy");
+
+	return Clss;
+}
+
+
+// DestroySessionCallbackProxy OnlineSubsystemUtils.Default__DestroySessionCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject, StrongRefOnFrame)
+
+class UDestroySessionCallbackProxy* UDestroySessionCallbackProxy::GetDefaultObj()
+{
+	static class UDestroySessionCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UDestroySessionCallbackProxy*>(UDestroySessionCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -263,23 +449,54 @@ class UCreateSessionCallbackProxy* UCreateSessionCallbackProxy::CreateSession(cl
 
 class UDestroySessionCallbackProxy* UDestroySessionCallbackProxy::DestroySession(class UObject* WorldContextObject, class APlayerController* PlayerController)
 {
-	static auto Func = Class->GetFunction("DestroySessionCallbackProxy", "DestroySession");
+	static class UFunction* Func = nullptr;
 
-	Params::UDestroySessionCallbackProxy_DestroySession_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DestroySessionCallbackProxy", "DestroySession");
+
+	Params::UDestroySessionCallbackProxy_DestroySession_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.EndMatchCallbackProxy
+// (None)
+
+class UClass* UEndMatchCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EndMatchCallbackProxy");
+
+	return Clss;
+}
+
+
+// EndMatchCallbackProxy OnlineSubsystemUtils.Default__EndMatchCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject, StrongRefOnFrame)
+
+class UEndMatchCallbackProxy* UEndMatchCallbackProxy::GetDefaultObj()
+{
+	static class UEndMatchCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEndMatchCallbackProxy*>(UEndMatchCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -296,9 +513,12 @@ class UDestroySessionCallbackProxy* UDestroySessionCallbackProxy::DestroySession
 
 class UEndMatchCallbackProxy* UEndMatchCallbackProxy::EndMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, TScriptInterface<class ITurnBasedMatchInterface> MatchActor, const class FString& MatchID, enum class EMPMatchOutcome LocalPlayerOutcome, enum class EMPMatchOutcome OtherPlayersOutcome)
 {
-	static auto Func = Class->GetFunction("EndMatchCallbackProxy", "EndMatch");
+	static class UFunction* Func = nullptr;
 
-	Params::UEndMatchCallbackProxy_EndMatch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EndMatchCallbackProxy", "EndMatch");
+
+	Params::UEndMatchCallbackProxy_EndMatch_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
@@ -307,16 +527,44 @@ class UEndMatchCallbackProxy* UEndMatchCallbackProxy::EndMatch(class UObject* Wo
 	Parms.LocalPlayerOutcome = LocalPlayerOutcome;
 	Parms.OtherPlayersOutcome = OtherPlayersOutcome;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.EndTurnCallbackProxy
+// (None)
+
+class UClass* UEndTurnCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EndTurnCallbackProxy");
+
+	return Clss;
+}
+
+
+// EndTurnCallbackProxy OnlineSubsystemUtils.Default__EndTurnCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject, StrongRefOnFrame)
+
+class UEndTurnCallbackProxy* UEndTurnCallbackProxy::GetDefaultObj()
+{
+	static class UEndTurnCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEndTurnCallbackProxy*>(UEndTurnCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -331,25 +579,56 @@ class UEndMatchCallbackProxy* UEndMatchCallbackProxy::EndMatch(class UObject* Wo
 
 class UEndTurnCallbackProxy* UEndTurnCallbackProxy::EndTurn(class UObject* WorldContextObject, class APlayerController* PlayerController, const class FString& MatchID, TScriptInterface<class ITurnBasedMatchInterface> TurnBasedMatchInterface)
 {
-	static auto Func = Class->GetFunction("EndTurnCallbackProxy", "EndTurn");
+	static class UFunction* Func = nullptr;
 
-	Params::UEndTurnCallbackProxy_EndTurn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EndTurnCallbackProxy", "EndTurn");
+
+	Params::UEndTurnCallbackProxy_EndTurn_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
 	Parms.MatchID = MatchID;
 	Parms.TurnBasedMatchInterface = TurnBasedMatchInterface;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.FindSessionsCallbackProxy
+// (None)
+
+class UClass* UFindSessionsCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FindSessionsCallbackProxy");
+
+	return Clss;
+}
+
+
+// FindSessionsCallbackProxy OnlineSubsystemUtils.Default__FindSessionsCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject, StrongRefOnFrame)
+
+class UFindSessionsCallbackProxy* UFindSessionsCallbackProxy::GetDefaultObj()
+{
+	static class UFindSessionsCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFindSessionsCallbackProxy*>(UFindSessionsCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -361,19 +640,22 @@ class UEndTurnCallbackProxy* UEndTurnCallbackProxy::EndTurn(class UObject* World
 
 class FString UFindSessionsCallbackProxy::GetServerName(struct FBlueprintSessionResult& Result)
 {
-	static auto Func = Class->GetFunction("FindSessionsCallbackProxy", "GetServerName");
+	static class UFunction* Func = nullptr;
 
-	Params::UFindSessionsCallbackProxy_GetServerName_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FindSessionsCallbackProxy", "GetServerName");
+
+	Params::UFindSessionsCallbackProxy_GetServerName_Params Parms{};
 
 	Parms.Result = Result;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -388,19 +670,22 @@ class FString UFindSessionsCallbackProxy::GetServerName(struct FBlueprintSession
 
 int32 UFindSessionsCallbackProxy::GetPingInMs(struct FBlueprintSessionResult& Result)
 {
-	static auto Func = Class->GetFunction("FindSessionsCallbackProxy", "GetPingInMs");
+	static class UFunction* Func = nullptr;
 
-	Params::UFindSessionsCallbackProxy_GetPingInMs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FindSessionsCallbackProxy", "GetPingInMs");
+
+	Params::UFindSessionsCallbackProxy_GetPingInMs_Params Parms{};
 
 	Parms.Result = Result;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -415,19 +700,22 @@ int32 UFindSessionsCallbackProxy::GetPingInMs(struct FBlueprintSessionResult& Re
 
 int32 UFindSessionsCallbackProxy::GetMaxPlayers(struct FBlueprintSessionResult& Result)
 {
-	static auto Func = Class->GetFunction("FindSessionsCallbackProxy", "GetMaxPlayers");
+	static class UFunction* Func = nullptr;
 
-	Params::UFindSessionsCallbackProxy_GetMaxPlayers_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FindSessionsCallbackProxy", "GetMaxPlayers");
+
+	Params::UFindSessionsCallbackProxy_GetMaxPlayers_Params Parms{};
 
 	Parms.Result = Result;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -442,19 +730,22 @@ int32 UFindSessionsCallbackProxy::GetMaxPlayers(struct FBlueprintSessionResult& 
 
 int32 UFindSessionsCallbackProxy::GetCurrentPlayers(struct FBlueprintSessionResult& Result)
 {
-	static auto Func = Class->GetFunction("FindSessionsCallbackProxy", "GetCurrentPlayers");
+	static class UFunction* Func = nullptr;
 
-	Params::UFindSessionsCallbackProxy_GetCurrentPlayers_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FindSessionsCallbackProxy", "GetCurrentPlayers");
+
+	Params::UFindSessionsCallbackProxy_GetCurrentPlayers_Params Parms{};
 
 	Parms.Result = Result;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -472,25 +763,56 @@ int32 UFindSessionsCallbackProxy::GetCurrentPlayers(struct FBlueprintSessionResu
 
 class UFindSessionsCallbackProxy* UFindSessionsCallbackProxy::FindSessions(class UObject* WorldContextObject, class APlayerController* PlayerController, int32 MaxResults, bool bUseLAN)
 {
-	static auto Func = Class->GetFunction("FindSessionsCallbackProxy", "FindSessions");
+	static class UFunction* Func = nullptr;
 
-	Params::UFindSessionsCallbackProxy_FindSessions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FindSessionsCallbackProxy", "FindSessions");
+
+	Params::UFindSessionsCallbackProxy_FindSessions_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
 	Parms.MaxResults = MaxResults;
 	Parms.bUseLAN = bUseLAN;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.FindTurnBasedMatchCallbackProxy
+// (None)
+
+class UClass* UFindTurnBasedMatchCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FindTurnBasedMatchCallbackProxy");
+
+	return Clss;
+}
+
+
+// FindTurnBasedMatchCallbackProxy OnlineSubsystemUtils.Default__FindTurnBasedMatchCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject, StrongRefOnFrame)
+
+class UFindTurnBasedMatchCallbackProxy* UFindTurnBasedMatchCallbackProxy::GetDefaultObj()
+{
+	static class UFindTurnBasedMatchCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFindTurnBasedMatchCallbackProxy*>(UFindTurnBasedMatchCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -508,9 +830,12 @@ class UFindSessionsCallbackProxy* UFindSessionsCallbackProxy::FindSessions(class
 
 class UFindTurnBasedMatchCallbackProxy* UFindTurnBasedMatchCallbackProxy::FindTurnBasedMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, TScriptInterface<class ITurnBasedMatchInterface> MatchActor, int32 MinPlayers, int32 MaxPlayers, int32 PlayerGroup, bool ShowExistingMatches)
 {
-	static auto Func = Class->GetFunction("FindTurnBasedMatchCallbackProxy", "FindTurnBasedMatch");
+	static class UFunction* Func = nullptr;
 
-	Params::UFindTurnBasedMatchCallbackProxy_FindTurnBasedMatch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FindTurnBasedMatchCallbackProxy", "FindTurnBasedMatch");
+
+	Params::UFindTurnBasedMatchCallbackProxy_FindTurnBasedMatch_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
@@ -520,16 +845,44 @@ class UFindTurnBasedMatchCallbackProxy* UFindTurnBasedMatchCallbackProxy::FindTu
 	Parms.PlayerGroup = PlayerGroup;
 	Parms.ShowExistingMatches = ShowExistingMatches;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.InAppPurchaseCallbackProxy
+// (None)
+
+class UClass* UInAppPurchaseCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("InAppPurchaseCallbackProxy");
+
+	return Clss;
+}
+
+
+// InAppPurchaseCallbackProxy OnlineSubsystemUtils.Default__InAppPurchaseCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UInAppPurchaseCallbackProxy* UInAppPurchaseCallbackProxy::GetDefaultObj()
+{
+	static class UInAppPurchaseCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UInAppPurchaseCallbackProxy*>(UInAppPurchaseCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -542,23 +895,54 @@ class UFindTurnBasedMatchCallbackProxy* UFindTurnBasedMatchCallbackProxy::FindTu
 
 class UInAppPurchaseCallbackProxy* UInAppPurchaseCallbackProxy::CreateProxyObjectForInAppPurchase(class APlayerController* PlayerController, struct FInAppPurchaseProductRequest& ProductRequest)
 {
-	static auto Func = Class->GetFunction("InAppPurchaseCallbackProxy", "CreateProxyObjectForInAppPurchase");
+	static class UFunction* Func = nullptr;
 
-	Params::UInAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InAppPurchaseCallbackProxy", "CreateProxyObjectForInAppPurchase");
+
+	Params::UInAppPurchaseCallbackProxy_CreateProxyObjectForInAppPurchase_Params Parms{};
 
 	Parms.PlayerController = PlayerController;
 	Parms.ProductRequest = ProductRequest;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy
+// (None)
+
+class UClass* UInAppPurchaseQueryCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("InAppPurchaseQueryCallbackProxy");
+
+	return Clss;
+}
+
+
+// InAppPurchaseQueryCallbackProxy OnlineSubsystemUtils.Default__InAppPurchaseQueryCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UInAppPurchaseQueryCallbackProxy* UInAppPurchaseQueryCallbackProxy::GetDefaultObj()
+{
+	static class UInAppPurchaseQueryCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UInAppPurchaseQueryCallbackProxy*>(UInAppPurchaseQueryCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -571,23 +955,54 @@ class UInAppPurchaseCallbackProxy* UInAppPurchaseCallbackProxy::CreateProxyObjec
 
 class UInAppPurchaseQueryCallbackProxy* UInAppPurchaseQueryCallbackProxy::CreateProxyObjectForInAppPurchaseQuery(class APlayerController* PlayerController, TArray<class FString>& ProductIdentifiers)
 {
-	static auto Func = Class->GetFunction("InAppPurchaseQueryCallbackProxy", "CreateProxyObjectForInAppPurchaseQuery");
+	static class UFunction* Func = nullptr;
 
-	Params::UInAppPurchaseQueryCallbackProxy_CreateProxyObjectForInAppPurchaseQuery_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InAppPurchaseQueryCallbackProxy", "CreateProxyObjectForInAppPurchaseQuery");
+
+	Params::UInAppPurchaseQueryCallbackProxy_CreateProxyObjectForInAppPurchaseQuery_Params Parms{};
 
 	Parms.PlayerController = PlayerController;
 	Parms.ProductIdentifiers = ProductIdentifiers;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy
+// (None)
+
+class UClass* UInAppPurchaseRestoreCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("InAppPurchaseRestoreCallbackProxy");
+
+	return Clss;
+}
+
+
+// InAppPurchaseRestoreCallbackProxy OnlineSubsystemUtils.Default__InAppPurchaseRestoreCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UInAppPurchaseRestoreCallbackProxy* UInAppPurchaseRestoreCallbackProxy::GetDefaultObj()
+{
+	static class UInAppPurchaseRestoreCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UInAppPurchaseRestoreCallbackProxy*>(UInAppPurchaseRestoreCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -600,23 +1015,110 @@ class UInAppPurchaseQueryCallbackProxy* UInAppPurchaseQueryCallbackProxy::Create
 
 class UInAppPurchaseRestoreCallbackProxy* UInAppPurchaseRestoreCallbackProxy::CreateProxyObjectForInAppPurchaseRestore(TArray<struct FInAppPurchaseProductRequest>& ConsumableProductFlags, class APlayerController* PlayerController)
 {
-	static auto Func = Class->GetFunction("InAppPurchaseRestoreCallbackProxy", "CreateProxyObjectForInAppPurchaseRestore");
+	static class UFunction* Func = nullptr;
 
-	Params::UInAppPurchaseRestoreCallbackProxy_CreateProxyObjectForInAppPurchaseRestore_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InAppPurchaseRestoreCallbackProxy", "CreateProxyObjectForInAppPurchaseRestore");
+
+	Params::UInAppPurchaseRestoreCallbackProxy_CreateProxyObjectForInAppPurchaseRestore_Params Parms{};
 
 	Parms.ConsumableProductFlags = ConsumableProductFlags;
 	Parms.PlayerController = PlayerController;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.IpConnection
+// (None)
+
+class UClass* UIpConnection::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("IpConnection");
+
+	return Clss;
+}
+
+
+// IpConnection OnlineSubsystemUtils.Default__IpConnection
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UIpConnection* UIpConnection::GetDefaultObj()
+{
+	static class UIpConnection* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UIpConnection*>(UIpConnection::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class OnlineSubsystemUtils.IpNetDriver
+// (None)
+
+class UClass* UIpNetDriver::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("IpNetDriver");
+
+	return Clss;
+}
+
+
+// IpNetDriver OnlineSubsystemUtils.Default__IpNetDriver
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UIpNetDriver* UIpNetDriver::GetDefaultObj()
+{
+	static class UIpNetDriver* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UIpNetDriver*>(UIpNetDriver::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class OnlineSubsystemUtils.JoinSessionCallbackProxy
+// (None)
+
+class UClass* UJoinSessionCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("JoinSessionCallbackProxy");
+
+	return Clss;
+}
+
+
+// JoinSessionCallbackProxy OnlineSubsystemUtils.Default__JoinSessionCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject, StrongRefOnFrame)
+
+class UJoinSessionCallbackProxy* UJoinSessionCallbackProxy::GetDefaultObj()
+{
+	static class UJoinSessionCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UJoinSessionCallbackProxy*>(UJoinSessionCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -630,24 +1132,55 @@ class UInAppPurchaseRestoreCallbackProxy* UInAppPurchaseRestoreCallbackProxy::Cr
 
 class UJoinSessionCallbackProxy* UJoinSessionCallbackProxy::JoinSession(class UObject* WorldContextObject, class APlayerController* PlayerController, struct FBlueprintSessionResult& SearchResult)
 {
-	static auto Func = Class->GetFunction("JoinSessionCallbackProxy", "JoinSession");
+	static class UFunction* Func = nullptr;
 
-	Params::UJoinSessionCallbackProxy_JoinSession_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("JoinSessionCallbackProxy", "JoinSession");
+
+	Params::UJoinSessionCallbackProxy_JoinSession_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
 	Parms.SearchResult = SearchResult;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.LeaderboardBlueprintLibrary
+// (None)
+
+class UClass* ULeaderboardBlueprintLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LeaderboardBlueprintLibrary");
+
+	return Clss;
+}
+
+
+// LeaderboardBlueprintLibrary OnlineSubsystemUtils.Default__LeaderboardBlueprintLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ULeaderboardBlueprintLibrary* ULeaderboardBlueprintLibrary::GetDefaultObj()
+{
+	static class ULeaderboardBlueprintLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULeaderboardBlueprintLibrary*>(ULeaderboardBlueprintLibrary::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -661,24 +1194,55 @@ class UJoinSessionCallbackProxy* UJoinSessionCallbackProxy::JoinSession(class UO
 
 bool ULeaderboardBlueprintLibrary::WriteLeaderboardInteger(class APlayerController* PlayerController, class FName StatName, int32 StatValue)
 {
-	static auto Func = Class->GetFunction("LeaderboardBlueprintLibrary", "WriteLeaderboardInteger");
+	static class UFunction* Func = nullptr;
 
-	Params::ULeaderboardBlueprintLibrary_WriteLeaderboardInteger_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LeaderboardBlueprintLibrary", "WriteLeaderboardInteger");
+
+	Params::ULeaderboardBlueprintLibrary_WriteLeaderboardInteger_Params Parms{};
 
 	Parms.PlayerController = PlayerController;
 	Parms.StatName = StatName;
 	Parms.StatValue = StatValue;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.LeaderboardFlushCallbackProxy
+// (None)
+
+class UClass* ULeaderboardFlushCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LeaderboardFlushCallbackProxy");
+
+	return Clss;
+}
+
+
+// LeaderboardFlushCallbackProxy OnlineSubsystemUtils.Default__LeaderboardFlushCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ULeaderboardFlushCallbackProxy* ULeaderboardFlushCallbackProxy::GetDefaultObj()
+{
+	static class ULeaderboardFlushCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULeaderboardFlushCallbackProxy*>(ULeaderboardFlushCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -691,23 +1255,54 @@ bool ULeaderboardBlueprintLibrary::WriteLeaderboardInteger(class APlayerControll
 
 class ULeaderboardFlushCallbackProxy* ULeaderboardFlushCallbackProxy::CreateProxyObjectForFlush(class APlayerController* PlayerController, class FName SessionName)
 {
-	static auto Func = Class->GetFunction("LeaderboardFlushCallbackProxy", "CreateProxyObjectForFlush");
+	static class UFunction* Func = nullptr;
 
-	Params::ULeaderboardFlushCallbackProxy_CreateProxyObjectForFlush_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LeaderboardFlushCallbackProxy", "CreateProxyObjectForFlush");
+
+	Params::ULeaderboardFlushCallbackProxy_CreateProxyObjectForFlush_Params Parms{};
 
 	Parms.PlayerController = PlayerController;
 	Parms.SessionName = SessionName;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.LeaderboardQueryCallbackProxy
+// (None)
+
+class UClass* ULeaderboardQueryCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LeaderboardQueryCallbackProxy");
+
+	return Clss;
+}
+
+
+// LeaderboardQueryCallbackProxy OnlineSubsystemUtils.Default__LeaderboardQueryCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ULeaderboardQueryCallbackProxy* ULeaderboardQueryCallbackProxy::GetDefaultObj()
+{
+	static class ULeaderboardQueryCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULeaderboardQueryCallbackProxy*>(ULeaderboardQueryCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -720,23 +1315,54 @@ class ULeaderboardFlushCallbackProxy* ULeaderboardFlushCallbackProxy::CreateProx
 
 class ULeaderboardQueryCallbackProxy* ULeaderboardQueryCallbackProxy::CreateProxyObjectForIntQuery(class APlayerController* PlayerController, class FName StatName)
 {
-	static auto Func = Class->GetFunction("LeaderboardQueryCallbackProxy", "CreateProxyObjectForIntQuery");
+	static class UFunction* Func = nullptr;
 
-	Params::ULeaderboardQueryCallbackProxy_CreateProxyObjectForIntQuery_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LeaderboardQueryCallbackProxy", "CreateProxyObjectForIntQuery");
+
+	Params::ULeaderboardQueryCallbackProxy_CreateProxyObjectForIntQuery_Params Parms{};
 
 	Parms.PlayerController = PlayerController;
 	Parms.StatName = StatName;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.LogoutCallbackProxy
+// (None)
+
+class UClass* ULogoutCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LogoutCallbackProxy");
+
+	return Clss;
+}
+
+
+// LogoutCallbackProxy OnlineSubsystemUtils.Default__LogoutCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ULogoutCallbackProxy* ULogoutCallbackProxy::GetDefaultObj()
+{
+	static class ULogoutCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULogoutCallbackProxy*>(ULogoutCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -749,23 +1375,82 @@ class ULeaderboardQueryCallbackProxy* ULeaderboardQueryCallbackProxy::CreateProx
 
 class ULogoutCallbackProxy* ULogoutCallbackProxy::Logout(class UObject* WorldContextObject, class APlayerController* PlayerController)
 {
-	static auto Func = Class->GetFunction("LogoutCallbackProxy", "Logout");
+	static class UFunction* Func = nullptr;
 
-	Params::ULogoutCallbackProxy_Logout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LogoutCallbackProxy", "Logout");
+
+	Params::ULogoutCallbackProxy_Logout_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.OnlineBeacon
+// (Actor)
+
+class UClass* AOnlineBeacon::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OnlineBeacon");
+
+	return Clss;
+}
+
+
+// OnlineBeacon OnlineSubsystemUtils.Default__OnlineBeacon
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AOnlineBeacon* AOnlineBeacon::GetDefaultObj()
+{
+	static class AOnlineBeacon* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AOnlineBeacon*>(AOnlineBeacon::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class OnlineSubsystemUtils.OnlineBeaconClient
+// (Actor)
+
+class UClass* AOnlineBeaconClient::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OnlineBeaconClient");
+
+	return Clss;
+}
+
+
+// OnlineBeaconClient OnlineSubsystemUtils.Default__OnlineBeaconClient
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AOnlineBeaconClient* AOnlineBeaconClient::GetDefaultObj()
+{
+	static class AOnlineBeaconClient* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AOnlineBeaconClient*>(AOnlineBeaconClient::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -775,19 +1460,189 @@ class ULogoutCallbackProxy* ULogoutCallbackProxy::Logout(class UObject* WorldCon
 
 void AOnlineBeaconClient::ClientOnConnected()
 {
-	static auto Func = Class->GetFunction("OnlineBeaconClient", "ClientOnConnected");
+	static class UFunction* Func = nullptr;
 
-	Params::AOnlineBeaconClient_ClientOnConnected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OnlineBeaconClient", "ClientOnConnected");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class OnlineSubsystemUtils.OnlineBeaconHost
+// (Actor)
+
+class UClass* AOnlineBeaconHost::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OnlineBeaconHost");
+
+	return Clss;
+}
+
+
+// OnlineBeaconHost OnlineSubsystemUtils.Default__OnlineBeaconHost
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AOnlineBeaconHost* AOnlineBeaconHost::GetDefaultObj()
+{
+	static class AOnlineBeaconHost* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AOnlineBeaconHost*>(AOnlineBeaconHost::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class OnlineSubsystemUtils.OnlineBeaconHostObject
+// (Actor)
+
+class UClass* AOnlineBeaconHostObject::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OnlineBeaconHostObject");
+
+	return Clss;
+}
+
+
+// OnlineBeaconHostObject OnlineSubsystemUtils.Default__OnlineBeaconHostObject
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AOnlineBeaconHostObject* AOnlineBeaconHostObject::GetDefaultObj()
+{
+	static class AOnlineBeaconHostObject* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AOnlineBeaconHostObject*>(AOnlineBeaconHostObject::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class OnlineSubsystemUtils.OnlineEngineInterfaceImpl
+// (None)
+
+class UClass* UOnlineEngineInterfaceImpl::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OnlineEngineInterfaceImpl");
+
+	return Clss;
+}
+
+
+// OnlineEngineInterfaceImpl OnlineSubsystemUtils.Default__OnlineEngineInterfaceImpl
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UOnlineEngineInterfaceImpl* UOnlineEngineInterfaceImpl::GetDefaultObj()
+{
+	static class UOnlineEngineInterfaceImpl* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UOnlineEngineInterfaceImpl*>(UOnlineEngineInterfaceImpl::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class OnlineSubsystemUtils.OnlinePIESettings
+// (None)
+
+class UClass* UOnlinePIESettings::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OnlinePIESettings");
+
+	return Clss;
+}
+
+
+// OnlinePIESettings OnlineSubsystemUtils.Default__OnlinePIESettings
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UOnlinePIESettings* UOnlinePIESettings::GetDefaultObj()
+{
+	static class UOnlinePIESettings* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UOnlinePIESettings*>(UOnlinePIESettings::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class OnlineSubsystemUtils.OnlineSessionClient
+// (None)
+
+class UClass* UOnlineSessionClient::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OnlineSessionClient");
+
+	return Clss;
+}
+
+
+// OnlineSessionClient OnlineSubsystemUtils.Default__OnlineSessionClient
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UOnlineSessionClient* UOnlineSessionClient::GetDefaultObj()
+{
+	static class UOnlineSessionClient* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UOnlineSessionClient*>(UOnlineSessionClient::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class OnlineSubsystemUtils.PartyBeaconClient
+// (Actor)
+
+class UClass* APartyBeaconClient::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PartyBeaconClient");
+
+	return Clss;
+}
+
+
+// PartyBeaconClient OnlineSubsystemUtils.Default__PartyBeaconClient
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class APartyBeaconClient* APartyBeaconClient::GetDefaultObj()
+{
+	static class APartyBeaconClient* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APartyBeaconClient*>(APartyBeaconClient::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -799,20 +1654,23 @@ void AOnlineBeaconClient::ClientOnConnected()
 
 void APartyBeaconClient::ServerUpdateReservationRequest(const class FString& SessionId, struct FPartyReservation& ReservationUpdate)
 {
-	static auto Func = Class->GetFunction("PartyBeaconClient", "ServerUpdateReservationRequest");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyBeaconClient_ServerUpdateReservationRequest_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyBeaconClient", "ServerUpdateReservationRequest");
+
+	Params::APartyBeaconClient_ServerUpdateReservationRequest_Params Parms{};
 
 	Parms.SessionId = SessionId;
 	Parms.ReservationUpdate = ReservationUpdate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -825,20 +1683,23 @@ void APartyBeaconClient::ServerUpdateReservationRequest(const class FString& Ses
 
 void APartyBeaconClient::ServerReservationRequest(const class FString& SessionId, struct FPartyReservation& Reservation)
 {
-	static auto Func = Class->GetFunction("PartyBeaconClient", "ServerReservationRequest");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyBeaconClient_ServerReservationRequest_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyBeaconClient", "ServerReservationRequest");
+
+	Params::APartyBeaconClient_ServerReservationRequest_Params Parms{};
 
 	Parms.SessionId = SessionId;
 	Parms.Reservation = Reservation;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -851,20 +1712,23 @@ void APartyBeaconClient::ServerReservationRequest(const class FString& SessionId
 
 void APartyBeaconClient::ServerRemoveMemberFromReservationRequest(const class FString& SessionId, struct FPartyReservation& ReservationUpdate)
 {
-	static auto Func = Class->GetFunction("PartyBeaconClient", "ServerRemoveMemberFromReservationRequest");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyBeaconClient_ServerRemoveMemberFromReservationRequest_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyBeaconClient", "ServerRemoveMemberFromReservationRequest");
+
+	Params::APartyBeaconClient_ServerRemoveMemberFromReservationRequest_Params Parms{};
 
 	Parms.SessionId = SessionId;
 	Parms.ReservationUpdate = ReservationUpdate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -876,19 +1740,22 @@ void APartyBeaconClient::ServerRemoveMemberFromReservationRequest(const class FS
 
 void APartyBeaconClient::ServerCancelReservationRequest(struct FUniqueNetIdRepl& PartyLeader)
 {
-	static auto Func = Class->GetFunction("PartyBeaconClient", "ServerCancelReservationRequest");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyBeaconClient_ServerCancelReservationRequest_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyBeaconClient", "ServerCancelReservationRequest");
+
+	Params::APartyBeaconClient_ServerCancelReservationRequest_Params Parms{};
 
 	Parms.PartyLeader = PartyLeader;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -900,19 +1767,22 @@ void APartyBeaconClient::ServerCancelReservationRequest(struct FUniqueNetIdRepl&
 
 void APartyBeaconClient::ClientSendReservationUpdates(int32 NumRemainingReservations)
 {
-	static auto Func = Class->GetFunction("PartyBeaconClient", "ClientSendReservationUpdates");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyBeaconClient_ClientSendReservationUpdates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyBeaconClient", "ClientSendReservationUpdates");
+
+	Params::APartyBeaconClient_ClientSendReservationUpdates_Params Parms{};
 
 	Parms.NumRemainingReservations = NumRemainingReservations;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -923,18 +1793,20 @@ void APartyBeaconClient::ClientSendReservationUpdates(int32 NumRemainingReservat
 
 void APartyBeaconClient::ClientSendReservationFull()
 {
-	static auto Func = Class->GetFunction("PartyBeaconClient", "ClientSendReservationFull");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyBeaconClient_ClientSendReservationFull_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyBeaconClient", "ClientSendReservationFull");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -946,19 +1818,22 @@ void APartyBeaconClient::ClientSendReservationFull()
 
 void APartyBeaconClient::ClientReservationResponse(enum class EPartyReservationResult ReservationResponse)
 {
-	static auto Func = Class->GetFunction("PartyBeaconClient", "ClientReservationResponse");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyBeaconClient_ClientReservationResponse_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyBeaconClient", "ClientReservationResponse");
+
+	Params::APartyBeaconClient_ClientReservationResponse_Params Parms{};
 
 	Parms.ReservationResponse = ReservationResponse;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -970,20 +1845,107 @@ void APartyBeaconClient::ClientReservationResponse(enum class EPartyReservationR
 
 void APartyBeaconClient::ClientCancelReservationResponse(enum class EPartyReservationResult ReservationResponse)
 {
-	static auto Func = Class->GetFunction("PartyBeaconClient", "ClientCancelReservationResponse");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyBeaconClient_ClientCancelReservationResponse_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyBeaconClient", "ClientCancelReservationResponse");
+
+	Params::APartyBeaconClient_ClientCancelReservationResponse_Params Parms{};
 
 	Parms.ReservationResponse = ReservationResponse;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class OnlineSubsystemUtils.PartyBeaconHost
+// (Actor)
+
+class UClass* APartyBeaconHost::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PartyBeaconHost");
+
+	return Clss;
+}
+
+
+// PartyBeaconHost OnlineSubsystemUtils.Default__PartyBeaconHost
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class APartyBeaconHost* APartyBeaconHost::GetDefaultObj()
+{
+	static class APartyBeaconHost* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APartyBeaconHost*>(APartyBeaconHost::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class OnlineSubsystemUtils.PartyBeaconState
+// (None)
+
+class UClass* UPartyBeaconState::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PartyBeaconState");
+
+	return Clss;
+}
+
+
+// PartyBeaconState OnlineSubsystemUtils.Default__PartyBeaconState
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UPartyBeaconState* UPartyBeaconState::GetDefaultObj()
+{
+	static class UPartyBeaconState* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPartyBeaconState*>(UPartyBeaconState::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class OnlineSubsystemUtils.QuitMatchCallbackProxy
+// (None)
+
+class UClass* UQuitMatchCallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("QuitMatchCallbackProxy");
+
+	return Clss;
+}
+
+
+// QuitMatchCallbackProxy OnlineSubsystemUtils.Default__QuitMatchCallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject, StrongRefOnFrame)
+
+class UQuitMatchCallbackProxy* UQuitMatchCallbackProxy::GetDefaultObj()
+{
+	static class UQuitMatchCallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UQuitMatchCallbackProxy*>(UQuitMatchCallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -999,9 +1961,12 @@ void APartyBeaconClient::ClientCancelReservationResponse(enum class EPartyReserv
 
 class UQuitMatchCallbackProxy* UQuitMatchCallbackProxy::QuitMatch(class UObject* WorldContextObject, class APlayerController* PlayerController, const class FString& MatchID, enum class EMPMatchOutcome Outcome, int32 TurnTimeoutInSeconds)
 {
-	static auto Func = Class->GetFunction("QuitMatchCallbackProxy", "QuitMatch");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuitMatchCallbackProxy_QuitMatch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuitMatchCallbackProxy", "QuitMatch");
+
+	Params::UQuitMatchCallbackProxy_QuitMatch_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
@@ -1009,16 +1974,44 @@ class UQuitMatchCallbackProxy* UQuitMatchCallbackProxy::QuitMatch(class UObject*
 	Parms.Outcome = Outcome;
 	Parms.TurnTimeoutInSeconds = TurnTimeoutInSeconds;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.ShowLoginUICallbackProxy
+// (None)
+
+class UClass* UShowLoginUICallbackProxy::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ShowLoginUICallbackProxy");
+
+	return Clss;
+}
+
+
+// ShowLoginUICallbackProxy OnlineSubsystemUtils.Default__ShowLoginUICallbackProxy
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UShowLoginUICallbackProxy* UShowLoginUICallbackProxy::GetDefaultObj()
+{
+	static class UShowLoginUICallbackProxy* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UShowLoginUICallbackProxy*>(UShowLoginUICallbackProxy::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -1031,23 +2024,54 @@ class UQuitMatchCallbackProxy* UQuitMatchCallbackProxy::QuitMatch(class UObject*
 
 class UShowLoginUICallbackProxy* UShowLoginUICallbackProxy::ShowExternalLoginUI(class UObject* WorldContextObject, class APlayerController* InPlayerController)
 {
-	static auto Func = Class->GetFunction("ShowLoginUICallbackProxy", "ShowExternalLoginUI");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowLoginUICallbackProxy_ShowExternalLoginUI_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowLoginUICallbackProxy", "ShowExternalLoginUI");
+
+	Params::UShowLoginUICallbackProxy_ShowExternalLoginUI_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.InPlayerController = InPlayerController;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class OnlineSubsystemUtils.SpectatorBeaconClient
+// (Actor)
+
+class UClass* ASpectatorBeaconClient::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SpectatorBeaconClient");
+
+	return Clss;
+}
+
+
+// SpectatorBeaconClient OnlineSubsystemUtils.Default__SpectatorBeaconClient
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ASpectatorBeaconClient* ASpectatorBeaconClient::GetDefaultObj()
+{
+	static class ASpectatorBeaconClient* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ASpectatorBeaconClient*>(ASpectatorBeaconClient::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -1059,20 +2083,23 @@ class UShowLoginUICallbackProxy* UShowLoginUICallbackProxy::ShowExternalLoginUI(
 
 void ASpectatorBeaconClient::ServerReservationRequest(const class FString& SessionId, struct FSpectatorReservation& Reservation)
 {
-	static auto Func = Class->GetFunction("SpectatorBeaconClient", "ServerReservationRequest");
+	static class UFunction* Func = nullptr;
 
-	Params::ASpectatorBeaconClient_ServerReservationRequest_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpectatorBeaconClient", "ServerReservationRequest");
+
+	Params::ASpectatorBeaconClient_ServerReservationRequest_Params Parms{};
 
 	Parms.SessionId = SessionId;
 	Parms.Reservation = Reservation;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1084,19 +2111,22 @@ void ASpectatorBeaconClient::ServerReservationRequest(const class FString& Sessi
 
 void ASpectatorBeaconClient::ServerCancelReservationRequest(struct FUniqueNetIdRepl& Spectator)
 {
-	static auto Func = Class->GetFunction("SpectatorBeaconClient", "ServerCancelReservationRequest");
+	static class UFunction* Func = nullptr;
 
-	Params::ASpectatorBeaconClient_ServerCancelReservationRequest_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpectatorBeaconClient", "ServerCancelReservationRequest");
+
+	Params::ASpectatorBeaconClient_ServerCancelReservationRequest_Params Parms{};
 
 	Parms.Spectator = Spectator;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1108,19 +2138,22 @@ void ASpectatorBeaconClient::ServerCancelReservationRequest(struct FUniqueNetIdR
 
 void ASpectatorBeaconClient::ClientSendReservationUpdates(int32 NumRemainingReservations)
 {
-	static auto Func = Class->GetFunction("SpectatorBeaconClient", "ClientSendReservationUpdates");
+	static class UFunction* Func = nullptr;
 
-	Params::ASpectatorBeaconClient_ClientSendReservationUpdates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpectatorBeaconClient", "ClientSendReservationUpdates");
+
+	Params::ASpectatorBeaconClient_ClientSendReservationUpdates_Params Parms{};
 
 	Parms.NumRemainingReservations = NumRemainingReservations;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1131,18 +2164,20 @@ void ASpectatorBeaconClient::ClientSendReservationUpdates(int32 NumRemainingRese
 
 void ASpectatorBeaconClient::ClientSendReservationFull()
 {
-	static auto Func = Class->GetFunction("SpectatorBeaconClient", "ClientSendReservationFull");
+	static class UFunction* Func = nullptr;
 
-	Params::ASpectatorBeaconClient_ClientSendReservationFull_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpectatorBeaconClient", "ClientSendReservationFull");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1154,19 +2189,22 @@ void ASpectatorBeaconClient::ClientSendReservationFull()
 
 void ASpectatorBeaconClient::ClientReservationResponse(enum class ESpectatorReservationResult ReservationResponse)
 {
-	static auto Func = Class->GetFunction("SpectatorBeaconClient", "ClientReservationResponse");
+	static class UFunction* Func = nullptr;
 
-	Params::ASpectatorBeaconClient_ClientReservationResponse_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpectatorBeaconClient", "ClientReservationResponse");
+
+	Params::ASpectatorBeaconClient_ClientReservationResponse_Params Parms{};
 
 	Parms.ReservationResponse = ReservationResponse;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1178,20 +2216,107 @@ void ASpectatorBeaconClient::ClientReservationResponse(enum class ESpectatorRese
 
 void ASpectatorBeaconClient::ClientCancelReservationResponse(enum class ESpectatorReservationResult ReservationResponse)
 {
-	static auto Func = Class->GetFunction("SpectatorBeaconClient", "ClientCancelReservationResponse");
+	static class UFunction* Func = nullptr;
 
-	Params::ASpectatorBeaconClient_ClientCancelReservationResponse_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SpectatorBeaconClient", "ClientCancelReservationResponse");
+
+	Params::ASpectatorBeaconClient_ClientCancelReservationResponse_Params Parms{};
 
 	Parms.ReservationResponse = ReservationResponse;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class OnlineSubsystemUtils.SpectatorBeaconHost
+// (Actor)
+
+class UClass* ASpectatorBeaconHost::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SpectatorBeaconHost");
+
+	return Clss;
+}
+
+
+// SpectatorBeaconHost OnlineSubsystemUtils.Default__SpectatorBeaconHost
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ASpectatorBeaconHost* ASpectatorBeaconHost::GetDefaultObj()
+{
+	static class ASpectatorBeaconHost* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ASpectatorBeaconHost*>(ASpectatorBeaconHost::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class OnlineSubsystemUtils.SpectatorBeaconState
+// (None)
+
+class UClass* USpectatorBeaconState::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SpectatorBeaconState");
+
+	return Clss;
+}
+
+
+// SpectatorBeaconState OnlineSubsystemUtils.Default__SpectatorBeaconState
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USpectatorBeaconState* USpectatorBeaconState::GetDefaultObj()
+{
+	static class USpectatorBeaconState* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USpectatorBeaconState*>(USpectatorBeaconState::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class OnlineSubsystemUtils.TestBeaconClient
+// (Actor)
+
+class UClass* ATestBeaconClient::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TestBeaconClient");
+
+	return Clss;
+}
+
+
+// TestBeaconClient OnlineSubsystemUtils.Default__TestBeaconClient
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ATestBeaconClient* ATestBeaconClient::GetDefaultObj()
+{
+	static class ATestBeaconClient* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ATestBeaconClient*>(ATestBeaconClient::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -1201,18 +2326,20 @@ void ASpectatorBeaconClient::ClientCancelReservationResponse(enum class ESpectat
 
 void ATestBeaconClient::ServerPong()
 {
-	static auto Func = Class->GetFunction("TestBeaconClient", "ServerPong");
+	static class UFunction* Func = nullptr;
 
-	Params::ATestBeaconClient_ServerPong_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TestBeaconClient", "ServerPong");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1223,19 +2350,77 @@ void ATestBeaconClient::ServerPong()
 
 void ATestBeaconClient::ClientPing()
 {
-	static auto Func = Class->GetFunction("TestBeaconClient", "ClientPing");
+	static class UFunction* Func = nullptr;
 
-	Params::ATestBeaconClient_ClientPing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TestBeaconClient", "ClientPing");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class OnlineSubsystemUtils.TestBeaconHost
+// (Actor)
+
+class UClass* ATestBeaconHost::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TestBeaconHost");
+
+	return Clss;
+}
+
+
+// TestBeaconHost OnlineSubsystemUtils.Default__TestBeaconHost
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ATestBeaconHost* ATestBeaconHost::GetDefaultObj()
+{
+	static class ATestBeaconHost* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ATestBeaconHost*>(ATestBeaconHost::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class OnlineSubsystemUtils.TurnBasedBlueprintLibrary
+// (None)
+
+class UClass* UTurnBasedBlueprintLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TurnBasedBlueprintLibrary");
+
+	return Clss;
+}
+
+
+// TurnBasedBlueprintLibrary OnlineSubsystemUtils.Default__TurnBasedBlueprintLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UTurnBasedBlueprintLibrary* UTurnBasedBlueprintLibrary::GetDefaultObj()
+{
+	static class UTurnBasedBlueprintLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTurnBasedBlueprintLibrary*>(UTurnBasedBlueprintLibrary::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -1248,21 +2433,24 @@ void ATestBeaconClient::ClientPing()
 
 void UTurnBasedBlueprintLibrary::RegisterTurnBasedMatchInterfaceObject(class UObject* WorldContextObject, class APlayerController* PlayerController, class UObject* Object)
 {
-	static auto Func = Class->GetFunction("TurnBasedBlueprintLibrary", "RegisterTurnBasedMatchInterfaceObject");
+	static class UFunction* Func = nullptr;
 
-	Params::UTurnBasedBlueprintLibrary_RegisterTurnBasedMatchInterfaceObject_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TurnBasedBlueprintLibrary", "RegisterTurnBasedMatchInterfaceObject");
+
+	Params::UTurnBasedBlueprintLibrary_RegisterTurnBasedMatchInterfaceObject_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
 	Parms.Object = Object;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -1278,25 +2466,28 @@ void UTurnBasedBlueprintLibrary::RegisterTurnBasedMatchInterfaceObject(class UOb
 
 void UTurnBasedBlueprintLibrary::GetPlayerDisplayName(class UObject* WorldContextObject, class APlayerController* PlayerController, const class FString& MatchID, int32 PlayerIndex, class FString* PlayerDisplayName)
 {
-	static auto Func = Class->GetFunction("TurnBasedBlueprintLibrary", "GetPlayerDisplayName");
+	static class UFunction* Func = nullptr;
 
-	Params::UTurnBasedBlueprintLibrary_GetPlayerDisplayName_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TurnBasedBlueprintLibrary", "GetPlayerDisplayName");
+
+	Params::UTurnBasedBlueprintLibrary_GetPlayerDisplayName_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
 	Parms.MatchID = MatchID;
 	Parms.PlayerIndex = PlayerIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (PlayerDisplayName != nullptr)
-		*PlayerDisplayName = Parms.PlayerDisplayName;
+		*PlayerDisplayName = std::move(Parms.PlayerDisplayName);
 
 }
 
@@ -1311,21 +2502,24 @@ void UTurnBasedBlueprintLibrary::GetPlayerDisplayName(class UObject* WorldContex
 
 void UTurnBasedBlueprintLibrary::GetMyPlayerIndex(class UObject* WorldContextObject, class APlayerController* PlayerController, const class FString& MatchID, int32* PlayerIndex)
 {
-	static auto Func = Class->GetFunction("TurnBasedBlueprintLibrary", "GetMyPlayerIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::UTurnBasedBlueprintLibrary_GetMyPlayerIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TurnBasedBlueprintLibrary", "GetMyPlayerIndex");
+
+	Params::UTurnBasedBlueprintLibrary_GetMyPlayerIndex_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
 	Parms.MatchID = MatchID;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (PlayerIndex != nullptr)
 		*PlayerIndex = Parms.PlayerIndex;
@@ -1343,25 +2537,56 @@ void UTurnBasedBlueprintLibrary::GetMyPlayerIndex(class UObject* WorldContextObj
 
 void UTurnBasedBlueprintLibrary::GetIsMyTurn(class UObject* WorldContextObject, class APlayerController* PlayerController, const class FString& MatchID, bool* bIsMyTurn)
 {
-	static auto Func = Class->GetFunction("TurnBasedBlueprintLibrary", "GetIsMyTurn");
+	static class UFunction* Func = nullptr;
 
-	Params::UTurnBasedBlueprintLibrary_GetIsMyTurn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TurnBasedBlueprintLibrary", "GetIsMyTurn");
+
+	Params::UTurnBasedBlueprintLibrary_GetIsMyTurn_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 	Parms.PlayerController = PlayerController;
 	Parms.MatchID = MatchID;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (bIsMyTurn != nullptr)
 		*bIsMyTurn = Parms.bIsMyTurn;
 
+}
+
+
+// Class OnlineSubsystemUtils.VoipListenerSynthComponent
+// (SceneComponent)
+
+class UClass* UVoipListenerSynthComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VoipListenerSynthComponent");
+
+	return Clss;
+}
+
+
+// VoipListenerSynthComponent OnlineSubsystemUtils.Default__VoipListenerSynthComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UVoipListenerSynthComponent* UVoipListenerSynthComponent::GetDefaultObj()
+{
+	static class UVoipListenerSynthComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UVoipListenerSynthComponent*>(UVoipListenerSynthComponent::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -1372,18 +2597,21 @@ void UTurnBasedBlueprintLibrary::GetIsMyTurn(class UObject* WorldContextObject, 
 
 bool UVoipListenerSynthComponent::IsIdling()
 {
-	static auto Func = Class->GetFunction("VoipListenerSynthComponent", "IsIdling");
+	static class UFunction* Func = nullptr;
 
-	Params::UVoipListenerSynthComponent_IsIdling_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VoipListenerSynthComponent", "IsIdling");
+
+	Params::UVoipListenerSynthComponent_IsIdling_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -1391,6 +2619,4 @@ bool UVoipListenerSynthComponent::IsIdling()
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

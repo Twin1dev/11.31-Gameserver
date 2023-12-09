@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass PlayerVisited.PlayerVisited_C
+// (None)
+
+class UClass* UPlayerVisited_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerVisited_C");
+
+	return Clss;
+}
+
+
+// PlayerVisited_C PlayerVisited.Default__PlayerVisited_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerVisited_C* UPlayerVisited_C::GetDefaultObj()
+{
+	static class UPlayerVisited_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerVisited_C*>(UPlayerVisited_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PlayerVisited.PlayerVisited_C.EndOfShow
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UPlayerVisited_C::EndOfShow()
 {
-	static auto Func = Class->GetFunction("PlayerVisited_C", "EndOfShow");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerVisited_C_EndOfShow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerVisited_C", "EndOfShow");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UPlayerVisited_C::EndOfShow()
 
 void UPlayerVisited_C::Construct()
 {
-	static auto Func = Class->GetFunction("PlayerVisited_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerVisited_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerVisited_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,9 +84,12 @@ void UPlayerVisited_C::Construct()
 
 void UPlayerVisited_C::OnNewVisited(class FText& LocalizedLocationName, bool bIsNamedLocation)
 {
-	static auto Func = Class->GetFunction("PlayerVisited_C", "OnNewVisited");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerVisited_C_OnNewVisited_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerVisited_C", "OnNewVisited");
+
+	Params::UPlayerVisited_C_OnNewVisited_Params Parms{};
 
 	Parms.LocalizedLocationName = LocalizedLocationName;
 	Parms.bIsNamedLocation = bIsNamedLocation;
@@ -73,12 +105,14 @@ void UPlayerVisited_C::OnNewVisited(class FText& LocalizedLocationName, bool bIs
 
 void UPlayerVisited_C::Brief_Show_Finished()
 {
-	static auto Func = Class->GetFunction("PlayerVisited_C", "Brief Show Finished");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerVisited_C_Brief_Show_Finished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerVisited_C", "Brief Show Finished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -89,12 +123,14 @@ void UPlayerVisited_C::Brief_Show_Finished()
 
 void UPlayerVisited_C::OnStompFailed()
 {
-	static auto Func = Class->GetFunction("PlayerVisited_C", "OnStompFailed");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerVisited_C_OnStompFailed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerVisited_C", "OnStompFailed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,12 +141,14 @@ void UPlayerVisited_C::OnStompFailed()
 
 void UPlayerVisited_C::OnStompedByOtherWidget()
 {
-	static auto Func = Class->GetFunction("PlayerVisited_C", "OnStompedByOtherWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerVisited_C_OnStompedByOtherWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerVisited_C", "OnStompedByOtherWidget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -132,9 +170,12 @@ void UPlayerVisited_C::OnStompedByOtherWidget()
 
 void UPlayerVisited_C::ExecuteUbergraph_PlayerVisited(int32 EntryPoint, int32 Temp_int_Variable, int32 Temp_int_Variable_1, class FText K2Node_Event_LocalizedLocationName, bool K2Node_Event_bIsNamedLocation, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool Temp_bool_Variable, bool CallFunc_IsAnimationPlaying_ReturnValue, int32 K2Node_Select_Default, bool CallFunc_IsAnimationPlaying_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PlayerVisited_C", "ExecuteUbergraph_PlayerVisited");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerVisited_C_ExecuteUbergraph_PlayerVisited_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerVisited_C", "ExecuteUbergraph_PlayerVisited");
+
+	Params::UPlayerVisited_C_ExecuteUbergraph_PlayerVisited_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -154,6 +195,4 @@ void UPlayerVisited_C::ExecuteUbergraph_PlayerVisited(int32 EntryPoint, int32 Te
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

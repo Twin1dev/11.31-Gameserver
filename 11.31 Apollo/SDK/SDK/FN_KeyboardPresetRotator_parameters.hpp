@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -42,10 +39,10 @@ public:
 	bool                                         CallFunc_IsMobileGame_ReturnValue_2;               // 0x17(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	int32                                        Temp_int_Variable_1;                               // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_1;                              // 0x1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_67B3[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5FF2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_Select_Default;                             // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_2;                              // 0x24(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_67B4[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5FF3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector2D                             K2Node_Select_Default_1;                           // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                             K2Node_Select_Default_2;                           // 0x30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -58,7 +55,7 @@ public:
 	struct FGeometry                             MyGeometry;                                        // 0x0(0x38)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FFocusEvent                           InFocusEvent;                                      // 0x38(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FEventReply                           ReturnValue;                                       // 0x40(0xB8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                           CallFunc_Unhandled_ReturnValue;                    // 0xF8(0xB8)()
+	struct FEventReply                           CallFunc_Unhandled_ReturnValue;                    // 0xF8(0xB8)(None)
 };
 
 // 0x10 (0x10 - 0x0)
@@ -83,10 +80,10 @@ struct UKeyboardPresetRotator_C_Initialize_Params
 {
 public:
 	class UFortGlobalUIContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                  CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetDescription; // 0x8(0x18)()
-	class FText                                  CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetSubDescription; // 0x20(0x18)()
+	class FText                                  CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetDescription; // 0x8(0x18)(None)
+	class FText                                  CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetSubDescription; // 0x20(0x18)(None)
 	enum class ESubGame                          CallFunc_GetSubGame_ReturnValue;                   // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_67B5[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5FF4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        CallFunc_GetKBMPlayerInputPresetNamesForSubGame_InputPresetNames; // 0x40(0x10)(ZeroConstructor, ReferenceParm)
 	TArray<class FText>                          CallFunc_GetKBMPlayerInputPresetNamesForSubGame_InputPresetFriendlyNames; // 0x50(0x10)(ZeroConstructor, ReferenceParm)
 };
@@ -97,13 +94,6 @@ struct UKeyboardPresetRotator_C_Update_Row_Selector_Params
 {
 public:
 	int32                                        Currently_Selected;                                // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function KeyboardPresetRotator.KeyboardPresetRotator_C.Construct
-struct UKeyboardPresetRotator_C_Construct_Params
-{
-public:
 };
 
 // 0x4 (0x4 - 0x0)
@@ -148,17 +138,15 @@ public:
 	class UCommonButton*                         K2Node_ComponentBoundEvent_Button_1;               // 0x8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x10(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_IsDesignTime;                         // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_67B6[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5FF5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector2D                             CallFunc_MakeVector2D_ReturnValue;                 // 0x1C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_67B7[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5FF6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortGlobalUIContext*                  CallFunc_GetContext_ReturnValue;                   // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                  CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetDescription; // 0x30(0x18)()
-	class FText                                  CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetSubDescription; // 0x48(0x18)()
+	class FText                                  CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetDescription; // 0x30(0x18)(None)
+	class FText                                  CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetSubDescription; // 0x48(0x18)(None)
 };
 
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

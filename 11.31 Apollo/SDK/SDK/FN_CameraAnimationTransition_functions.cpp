@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass CameraAnimationTransition.CameraAnimationTransition_C
+// (Actor)
+
+class UClass* ACameraAnimationTransition_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CameraAnimationTransition_C");
+
+	return Clss;
+}
+
+
+// CameraAnimationTransition_C CameraAnimationTransition.Default__CameraAnimationTransition_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ACameraAnimationTransition_C* ACameraAnimationTransition_C::GetDefaultObj()
+{
+	static class ACameraAnimationTransition_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ACameraAnimationTransition_C*>(ACameraAnimationTransition_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function CameraAnimationTransition.CameraAnimationTransition_C.UserConstructionScript
@@ -30,9 +55,12 @@ namespace SDK
 
 void ACameraAnimationTransition_C::UserConstructionScript(bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue, const struct FTransform& CallFunc_GetTransform_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_2, const struct FTransform& CallFunc_GetTransform_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("CameraAnimationTransition_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ACameraAnimationTransition_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CameraAnimationTransition_C", "UserConstructionScript");
+
+	Params::ACameraAnimationTransition_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
@@ -55,12 +83,14 @@ void ACameraAnimationTransition_C::UserConstructionScript(bool CallFunc_IsValid_
 
 void ACameraAnimationTransition_C::Timeline_0__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("CameraAnimationTransition_C", "Timeline_0__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ACameraAnimationTransition_C_Timeline_0__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CameraAnimationTransition_C", "Timeline_0__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -71,12 +101,14 @@ void ACameraAnimationTransition_C::Timeline_0__FinishedFunc()
 
 void ACameraAnimationTransition_C::Timeline_0__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("CameraAnimationTransition_C", "Timeline_0__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ACameraAnimationTransition_C_Timeline_0__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CameraAnimationTransition_C", "Timeline_0__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -87,12 +119,14 @@ void ACameraAnimationTransition_C::Timeline_0__UpdateFunc()
 
 void ACameraAnimationTransition_C::MoveCameraUp()
 {
-	static auto Func = Class->GetFunction("CameraAnimationTransition_C", "MoveCameraUp");
+	static class UFunction* Func = nullptr;
 
-	Params::ACameraAnimationTransition_C_MoveCameraUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CameraAnimationTransition_C", "MoveCameraUp");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -103,12 +137,14 @@ void ACameraAnimationTransition_C::MoveCameraUp()
 
 void ACameraAnimationTransition_C::MoveCameraDown()
 {
-	static auto Func = Class->GetFunction("CameraAnimationTransition_C", "MoveCameraDown");
+	static class UFunction* Func = nullptr;
 
-	Params::ACameraAnimationTransition_C_MoveCameraDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CameraAnimationTransition_C", "MoveCameraDown");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -136,9 +172,12 @@ void ACameraAnimationTransition_C::MoveCameraDown()
 
 void ACameraAnimationTransition_C::ExecuteUbergraph_CameraAnimationTransition(int32 EntryPoint, const struct FTransform& CallFunc_GetTransform_ReturnValue, const struct FTransform& CallFunc_TLerp_ReturnValue, const struct FTransform& CallFunc_GetTransform_ReturnValue_1, const struct FHitResult& CallFunc_K2_SetActorTransform_SweepHitResult, bool CallFunc_K2_SetActorTransform_ReturnValue, const struct FTransform& CallFunc_TLerp_ReturnValue_1, const struct FHitResult& CallFunc_K2_SetActorTransform_SweepHitResult_1, bool CallFunc_K2_SetActorTransform_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue_2, float CallFunc_Lerp_ReturnValue)
 {
-	static auto Func = Class->GetFunction("CameraAnimationTransition_C", "ExecuteUbergraph_CameraAnimationTransition");
+	static class UFunction* Func = nullptr;
 
-	Params::ACameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CameraAnimationTransition_C", "ExecuteUbergraph_CameraAnimationTransition");
+
+	Params::ACameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetTransform_ReturnValue = CallFunc_GetTransform_ReturnValue;
@@ -164,6 +203,4 @@ void ACameraAnimationTransition_C::ExecuteUbergraph_CameraAnimationTransition(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

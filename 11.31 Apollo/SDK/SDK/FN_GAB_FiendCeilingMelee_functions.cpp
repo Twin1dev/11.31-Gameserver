@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GAB_FiendCeilingMelee.GAB_FiendCeilingMelee_C
+// (None)
+
+class UClass* UGAB_FiendCeilingMelee_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAB_FiendCeilingMelee_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// GAB_FiendCeilingMelee_C GAB_FiendCeilingMelee.Default__GAB_FiendCeilingMelee_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAB_FiendCeilingMelee_C* UGAB_FiendCeilingMelee_C::GetDefaultObj()
+{
+	static class UGAB_FiendCeilingMelee_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAB_FiendCeilingMelee_C*>(UGAB_FiendCeilingMelee_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

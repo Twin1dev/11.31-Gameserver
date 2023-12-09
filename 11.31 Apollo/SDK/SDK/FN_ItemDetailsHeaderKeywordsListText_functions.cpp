@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ItemDetailsHeaderKeywordsListText.ItemDetailsHeaderKeywordsListText_C
+// (None)
+
+class UClass* UItemDetailsHeaderKeywordsListText_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemDetailsHeaderKeywordsListText_C");
+
+	return Clss;
+}
+
+
+// ItemDetailsHeaderKeywordsListText_C ItemDetailsHeaderKeywordsListText.Default__ItemDetailsHeaderKeywordsListText_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemDetailsHeaderKeywordsListText_C* UItemDetailsHeaderKeywordsListText_C::GetDefaultObj()
+{
+	static class UItemDetailsHeaderKeywordsListText_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemDetailsHeaderKeywordsListText_C*>(UItemDetailsHeaderKeywordsListText_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ItemDetailsHeaderKeywordsListText.ItemDetailsHeaderKeywordsListText_C.FormatItemDisplayTags
 // (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -23,7 +48,7 @@ namespace SDK
 // class FText                        Result                                                           (Edit, BlueprintVisible)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Array_Get_Item                                          ()
+// class FText                        CallFunc_Array_Get_Item                                          (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -31,13 +56,16 @@ namespace SDK
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 void UItemDetailsHeaderKeywordsListText_C::FormatItemDisplayTags(TArray<class FText>& TagTexts, class FText* FormatedText, class FText Result, int32 Temp_int_Array_Index_Variable, int32 CallFunc_Array_Length_ReturnValue, class FText CallFunc_Array_Get_Item, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, bool CallFunc_TextIsEmpty_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemDetailsHeaderKeywordsListText_C", "FormatItemDisplayTags");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemDetailsHeaderKeywordsListText_C_FormatItemDisplayTags_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemDetailsHeaderKeywordsListText_C", "FormatItemDisplayTags");
+
+	Params::UItemDetailsHeaderKeywordsListText_C_FormatItemDisplayTags_Params Parms{};
 
 	Parms.TagTexts = TagTexts;
 	Parms.Result = Result;
@@ -67,12 +95,14 @@ void UItemDetailsHeaderKeywordsListText_C::FormatItemDisplayTags(TArray<class FT
 
 void UItemDetailsHeaderKeywordsListText_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto Func = Class->GetFunction("ItemDetailsHeaderKeywordsListText_C", "HandlePostDifferentItemToDetailSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemDetailsHeaderKeywordsListText_C_HandlePostDifferentItemToDetailSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemDetailsHeaderKeywordsListText_C", "HandlePostDifferentItemToDetailSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -83,12 +113,14 @@ void UItemDetailsHeaderKeywordsListText_C::HandlePostDifferentItemToDetailSet()
 
 void UItemDetailsHeaderKeywordsListText_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static auto Func = Class->GetFunction("ItemDetailsHeaderKeywordsListText_C", "HandlePostDifferentItemToCompareWithSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemDetailsHeaderKeywordsListText_C_HandlePostDifferentItemToCompareWithSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemDetailsHeaderKeywordsListText_C", "HandlePostDifferentItemToCompareWithSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -108,15 +140,18 @@ void UItemDetailsHeaderKeywordsListText_C::HandlePostDifferentItemToCompareWithS
 // class UFortHeroType*               CallFunc_GetHeroTypeBP_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<class FText>                CallFunc_GetKeywordDisplayNames_ReturnValue                      (ZeroConstructor, ReferenceParm)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_FormatItemDisplayTags_FormatedText                      ()
+// class FText                        CallFunc_FormatItemDisplayTags_FormatedText                      (None)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UItemDetailsHeaderKeywordsListText_C::ExecuteUbergraph_ItemDetailsHeaderKeywordsListText(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, class UFortHero* K2Node_DynamicCast_AsFort_Hero, bool K2Node_DynamicCast_bSuccess, class UFortHeroType* CallFunc_GetHeroTypeBP_ReturnValue, TArray<class FText>& CallFunc_GetKeywordDisplayNames_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, class FText CallFunc_FormatItemDisplayTags_FormatedText, bool CallFunc_TextIsEmpty_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("ItemDetailsHeaderKeywordsListText_C", "ExecuteUbergraph_ItemDetailsHeaderKeywordsListText");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemDetailsHeaderKeywordsListText_C_ExecuteUbergraph_ItemDetailsHeaderKeywordsListText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemDetailsHeaderKeywordsListText_C", "ExecuteUbergraph_ItemDetailsHeaderKeywordsListText");
+
+	Params::UItemDetailsHeaderKeywordsListText_C_ExecuteUbergraph_ItemDetailsHeaderKeywordsListText_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -140,6 +175,4 @@ void UItemDetailsHeaderKeywordsListText_C::ExecuteUbergraph_ItemDetailsHeaderKey
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

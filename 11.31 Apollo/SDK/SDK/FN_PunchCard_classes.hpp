@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -44,11 +41,8 @@ public:
 	int32                                        LocationType;                                      // 0x438(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsSuper;                                           // 0x43C(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("PunchCard_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UPunchCard_C* GetDefaultObj();
 
 	void PreConstruct(bool IsDesignTime);
 	void RunIntroAnim();
@@ -64,6 +58,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

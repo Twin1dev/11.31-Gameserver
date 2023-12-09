@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -68,7 +65,7 @@ struct FKairosSnippetPlayRecord
 public:
 	class FString                                PlayerID;                                          // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bPause;                                            // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_179B[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_297[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -78,7 +75,7 @@ struct FKairosSnippetParams
 public:
 	class FString                                PlayerID;                                          // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bPause;                                            // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_179C[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_298[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -107,7 +104,7 @@ public:
 	class FString                                DisplayName;                                       // 0x10(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         CurrentUser;                                       // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ShouldPlayFacialAnimation;                         // 0x21(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_179D[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_299[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FKairosAvatarItemMcpData              Character;                                         // 0x28(0x20)(NativeAccessSpecifierPublic)
 	struct FKairosAvatarItemMcpData              Backpack;                                          // 0x48(0x20)(NativeAccessSpecifierPublic)
 	struct FKairosAvatarItemMcpData              Dance;                                             // 0x68(0x20)(NativeAccessSpecifierPublic)
@@ -150,9 +147,9 @@ public:
 	int32                                        OverrideNumFrames;                                 // 0x4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                             Size;                                              // 0x8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FColor                                BackgroundColor;                                   // 0x10(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_179E[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_29F[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                FullPathAndName;                                   // 0x18(0x10)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_179F[0xD8];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2A0[0xD8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x3C0 (0x3C0 - 0x0)
@@ -162,31 +159,31 @@ struct FKairosAvatarDisplayInfo
 public:
 	enum class EKairosAvatarCaptureState         CurrentState;                                      // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EKairosAvatarCaptureState         TargetState;                                       // 0x1(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_17A0[0xE];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2A1[0xE];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            SpawnTransform;                                    // 0x10(0x30)(BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FKairosAvatarMcpData                  AvatarData;                                        // 0x40(0x98)(NativeAccessSpecifierPublic)
-	uint8                                        Pad_17A1[0x30];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2A2[0x30];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortAthenaLoadout                    Loadout;                                           // 0x108(0xF0)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	class UAnimSequenceBase*                     AnimToPlay;                                        // 0x1F8(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                SnippetPathToPlay;                                 // 0x200(0x10)(BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_17A2[0x10];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2A3[0x10];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortHero*                             HeroItem;                                          // 0x220(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_17A3[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2A4[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FKairosCaptureParams                  CaptureParams;                                     // 0x230(0x100)(BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	TArray<struct FLinearColor>                  BackgroundColors;                                  // 0x330(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	class AKairosHeroBase*                       KairosHero;                                        // 0x340(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AFortPlayerPawn*                       Pawn;                                              // 0x348(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsCurrentUser;                                    // 0x350(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_17A4[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2A7[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                DisplayName;                                       // 0x358(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_17A5[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2A9[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            HeadBoneTransform;                                 // 0x370(0x30)(BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         bSpawnTransformIsAbsolute;                         // 0x3A0(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsNewCharacter;                                   // 0x3A1(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_17A6[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2AA[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TSubclassOf<class AFortPlayerPawn>           HeroPawnClass;                                     // 0x3A8(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseDefaultFrontendAnimClass;                      // 0x3B0(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_17A7[0xF];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2AB[0xF];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -195,10 +192,10 @@ struct FKairosSceneInfo
 {
 public:
 	enum class EKairosAppMode                    SceneAppMode;                                      // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_17A8[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2AC[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FKairosAvatarDisplayInfo>      SpawnedAvatars;                                    // 0x8(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FColor                                BackgroundColor;                                   // 0x18(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_17A9[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2AD[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x50 (0x50 - 0x0)
@@ -210,12 +207,10 @@ public:
 	class UAnimMontage*                          IdleMontage;                                       // 0x8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EKairosHeroAnimationType          AnimationType;                                     // 0x10(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EKairosHeroSkeletonType           SkeletonType;                                      // 0x11(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_17AA[0xE];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2AE[0xE];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            CameraTransform;                                   // 0x20(0x30)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

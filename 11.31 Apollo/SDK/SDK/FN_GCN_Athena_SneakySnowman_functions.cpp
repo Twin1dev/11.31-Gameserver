@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GCN_Athena_SneakySnowman.GCN_Athena_SneakySnowman_C
+// (Actor)
+
+class UClass* AGCN_Athena_SneakySnowman_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCN_Athena_SneakySnowman_C");
+
+	return Clss;
+}
+
+
+// GCN_Athena_SneakySnowman_C GCN_Athena_SneakySnowman.Default__GCN_Athena_SneakySnowman_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCN_Athena_SneakySnowman_C* AGCN_Athena_SneakySnowman_C::GetDefaultObj()
+{
+	static class AGCN_Athena_SneakySnowman_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCN_Athena_SneakySnowman_C*>(AGCN_Athena_SneakySnowman_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GCN_Athena_SneakySnowman.GCN_Athena_SneakySnowman_C.On Player Step
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void AGCN_Athena_SneakySnowman_C::On_Player_Step()
 {
-	static auto Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "On Player Step");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_SneakySnowman_C_On_Player_Step_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "On Player Step");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -43,9 +70,12 @@ void AGCN_Athena_SneakySnowman_C::On_Player_Step()
 
 void AGCN_Athena_SneakySnowman_C::OnRemoval(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static auto Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "OnRemoval");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_SneakySnowman_C_OnRemoval_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "OnRemoval");
+
+	Params::AGCN_Athena_SneakySnowman_C_OnRemoval_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -69,9 +99,12 @@ void AGCN_Athena_SneakySnowman_C::OnRemoval(class AActor* MyTarget, struct FGame
 
 void AGCN_Athena_SneakySnowman_C::OnLoopingStart(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents)
 {
-	static auto Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "OnLoopingStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_SneakySnowman_C_OnLoopingStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "OnLoopingStart");
+
+	Params::AGCN_Athena_SneakySnowman_C_OnLoopingStart_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -89,12 +122,14 @@ void AGCN_Athena_SneakySnowman_C::OnLoopingStart(class AActor* MyTarget, struct 
 
 void AGCN_Athena_SneakySnowman_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_SneakySnowman_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,12 +140,14 @@ void AGCN_Athena_SneakySnowman_C::ReceiveBeginPlay()
 
 void AGCN_Athena_SneakySnowman_C::BeginPlay_Multicast()
 {
-	static auto Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "BeginPlay_Multicast");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_SneakySnowman_C_BeginPlay_Multicast_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "BeginPlay_Multicast");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -157,9 +194,12 @@ void AGCN_Athena_SneakySnowman_C::BeginPlay_Multicast()
 
 void AGCN_Athena_SneakySnowman_C::ExecuteUbergraph_GCN_Athena_SneakySnowman(int32 EntryPoint, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class AActor* K2Node_Event_MyTarget_1, const struct FGameplayCueParameters& K2Node_Event_Parameters_1, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents_1, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents_1, class UCameraShake* K2Node_Event_BurstCameraShakeInstance, class ADecalActor* K2Node_Event_BurstDecalInstance, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AActor* K2Node_Event_MyTarget, const struct FGameplayCueParameters& K2Node_Event_Parameters, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult, float CallFunc_GetGameTimeInSeconds_ReturnValue, const struct FTransform& CallFunc_GetTransform_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FTransform& CallFunc_MakeTransform_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_1, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, bool CallFunc_IsValid_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena_1, bool K2Node_DynamicCast_bSuccess_1, class AAthena_Prop_SneakySnowman_C* CallFunc_FinishSpawningActor_ReturnValue, const struct FHitResult& CallFunc_K2_SetActorRelativeRotation_SweepHitResult, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena_2, bool K2Node_DynamicCast_bSuccess_2, const struct FHitResult& CallFunc_K2_SetActorLocation_SweepHitResult, bool CallFunc_K2_SetActorLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "ExecuteUbergraph_GCN_Athena_SneakySnowman");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "ExecuteUbergraph_GCN_Athena_SneakySnowman");
+
+	Params::AGCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_K2_GetActorLocation_ReturnValue = CallFunc_K2_GetActorLocation_ReturnValue;
@@ -204,6 +244,4 @@ void AGCN_Athena_SneakySnowman_C::ExecuteUbergraph_GCN_Athena_SneakySnowman(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

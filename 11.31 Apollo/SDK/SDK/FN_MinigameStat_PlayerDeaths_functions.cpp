@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass MinigameStat_PlayerDeaths.MinigameStat_PlayerDeaths_C
+// (None)
+
+class UClass* UMinigameStat_PlayerDeaths_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MinigameStat_PlayerDeaths_C");
+
+	return Clss;
+}
+
+
+// MinigameStat_PlayerDeaths_C MinigameStat_PlayerDeaths.Default__MinigameStat_PlayerDeaths_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMinigameStat_PlayerDeaths_C* UMinigameStat_PlayerDeaths_C::GetDefaultObj()
+{
+	static class UMinigameStat_PlayerDeaths_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMinigameStat_PlayerDeaths_C*>(UMinigameStat_PlayerDeaths_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function MinigameStat_PlayerDeaths.MinigameStat_PlayerDeaths_C.Compare
@@ -25,9 +50,12 @@ namespace SDK
 
 int32 UMinigameStat_PlayerDeaths_C::Compare(int32 FirstScore, int32 SecondScore, int32 CallFunc_Subtract_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinigameStat_PlayerDeaths_C", "Compare");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameStat_PlayerDeaths_C_Compare_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameStat_PlayerDeaths_C", "Compare");
+
+	Params::UMinigameStat_PlayerDeaths_C_Compare_Params Parms{};
 
 	Parms.FirstScore = FirstScore;
 	Parms.SecondScore = SecondScore;
@@ -41,6 +69,4 @@ int32 UMinigameStat_PlayerDeaths_C::Compare(int32 FirstScore, int32 SecondScore,
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

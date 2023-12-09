@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GA_Device_Floor_EliminationZoneEndOverlap.GA_Device_Floor_EliminationZoneEndOverlap_C
+// (None)
+
+class UClass* UGA_Device_Floor_EliminationZoneEndOverlap_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Device_Floor_EliminationZoneEndOverlap_C");
+
+	return Clss;
+}
+
+
+// GA_Device_Floor_EliminationZoneEndOverlap_C GA_Device_Floor_EliminationZoneEndOverlap.Default__GA_Device_Floor_EliminationZoneEndOverlap_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Device_Floor_EliminationZoneEndOverlap_C* UGA_Device_Floor_EliminationZoneEndOverlap_C::GetDefaultObj()
+{
+	static class UGA_Device_Floor_EliminationZoneEndOverlap_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Device_Floor_EliminationZoneEndOverlap_C*>(UGA_Device_Floor_EliminationZoneEndOverlap_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GA_Device_Floor_EliminationZoneEndOverlap.GA_Device_Floor_EliminationZoneEndOverlap_C.RemoveGameplayEffects
@@ -41,9 +66,12 @@ namespace SDK
 
 void UGA_Device_Floor_EliminationZoneEndOverlap_C::RemoveGameplayEffects(class AActor* Actor, int32* EffectsRemoved, const TArray<class AFortPlayerPawn*>& Passengers, int32 TotalEffectsRemoved, int32 Temp_int_Loop_Counter_Variable, TScriptInterface<class IFortVehicleInterface> K2Node_DynamicCast_AsFort_Vehicle_Interface, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_Add_IntInt_ReturnValue, TArray<class AFortPlayerPawn*>& CallFunc_GetAllPassengers_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, int32 CallFunc_RemoveActiveEffectsWithTags_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 Temp_int_Array_Index_Variable, class AFortPlayerPawn* CallFunc_Array_Get_Item, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue_1, int32 CallFunc_RemoveActiveEffectsWithTags_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GA_Device_Floor_EliminationZoneEndOverlap_C", "RemoveGameplayEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Device_Floor_EliminationZoneEndOverlap_C_RemoveGameplayEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Device_Floor_EliminationZoneEndOverlap_C", "RemoveGameplayEffects");
+
+	Params::UGA_Device_Floor_EliminationZoneEndOverlap_C_RemoveGameplayEffects_Params Parms{};
 
 	Parms.Actor = Actor;
 	Parms.Passengers = Passengers;
@@ -79,12 +107,14 @@ void UGA_Device_Floor_EliminationZoneEndOverlap_C::RemoveGameplayEffects(class A
 
 void UGA_Device_Floor_EliminationZoneEndOverlap_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Device_Floor_EliminationZoneEndOverlap_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Device_Floor_EliminationZoneEndOverlap_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Device_Floor_EliminationZoneEndOverlap_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -98,9 +128,12 @@ void UGA_Device_Floor_EliminationZoneEndOverlap_C::K2_ActivateAbility()
 
 void UGA_Device_Floor_EliminationZoneEndOverlap_C::ExecuteUbergraph_GA_Device_Floor_EliminationZoneEndOverlap(int32 EntryPoint, int32 CallFunc_RemoveGameplayEffects_EffectsRemoved, bool CallFunc_EqualEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Device_Floor_EliminationZoneEndOverlap_C", "ExecuteUbergraph_GA_Device_Floor_EliminationZoneEndOverlap");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Device_Floor_EliminationZoneEndOverlap_C_ExecuteUbergraph_GA_Device_Floor_EliminationZoneEndOverlap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Device_Floor_EliminationZoneEndOverlap_C", "ExecuteUbergraph_GA_Device_Floor_EliminationZoneEndOverlap");
+
+	Params::UGA_Device_Floor_EliminationZoneEndOverlap_C_ExecuteUbergraph_GA_Device_Floor_EliminationZoneEndOverlap_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_RemoveGameplayEffects_EffectsRemoved = CallFunc_RemoveGameplayEffects_EffectsRemoved;
@@ -112,6 +145,4 @@ void UGA_Device_Floor_EliminationZoneEndOverlap_C::ExecuteUbergraph_GA_Device_Fl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

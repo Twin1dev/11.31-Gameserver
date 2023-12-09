@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -24,11 +21,8 @@ public:
 	class UWidgetAnimation*                      OnHover;                                           // 0xC10(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 	bool                                         NewVar_0;                                          // 0xC18(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ActivityBrowserTile_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UActivityBrowserTile_C* GetDefaultObj();
 
 	void Set_Disabled(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
 	void Set_Enabled(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
@@ -43,6 +37,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

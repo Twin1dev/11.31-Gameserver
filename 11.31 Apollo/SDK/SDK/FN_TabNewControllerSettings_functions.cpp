@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TabNewControllerSettings.TabNewControllerSettings_C
+// (None)
+
+class UClass* UTabNewControllerSettings_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TabNewControllerSettings_C");
+
+	return Clss;
+}
+
+
+// TabNewControllerSettings_C TabNewControllerSettings.Default__TabNewControllerSettings_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTabNewControllerSettings_C* UTabNewControllerSettings_C::GetDefaultObj()
+{
+	static class UTabNewControllerSettings_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTabNewControllerSettings_C*>(UTabNewControllerSettings_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TabNewControllerSettings.TabNewControllerSettings_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UTabNewControllerSettings_C::Construct()
 {
-	static auto Func = Class->GetFunction("TabNewControllerSettings_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabNewControllerSettings_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabNewControllerSettings_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UTabNewControllerSettings_C::Construct()
 
 void UTabNewControllerSettings_C::UpdateOptionsTab()
 {
-	static auto Func = Class->GetFunction("TabNewControllerSettings_C", "UpdateOptionsTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabNewControllerSettings_C_UpdateOptionsTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabNewControllerSettings_C", "UpdateOptionsTab");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -54,9 +83,12 @@ void UTabNewControllerSettings_C::UpdateOptionsTab()
 
 void UTabNewControllerSettings_C::BndEvt__TabListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature(class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("TabNewControllerSettings_C", "BndEvt__TabListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabNewControllerSettings_C", "BndEvt__TabListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature");
+
+	Params::UTabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature_Params Parms{};
 
 	Parms.Widget = Widget;
 
@@ -72,9 +104,12 @@ void UTabNewControllerSettings_C::BndEvt__TabListView_K2Node_ComponentBoundEvent
 
 void UTabNewControllerSettings_C::SettingValueChanged(float Value)
 {
-	static auto Func = Class->GetFunction("TabNewControllerSettings_C", "SettingValueChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabNewControllerSettings_C_SettingValueChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabNewControllerSettings_C", "SettingValueChanged");
+
+	Params::UTabNewControllerSettings_C_SettingValueChanged_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -89,12 +124,14 @@ void UTabNewControllerSettings_C::SettingValueChanged(float Value)
 
 void UTabNewControllerSettings_C::CenterOnTab()
 {
-	static auto Func = Class->GetFunction("TabNewControllerSettings_C", "CenterOnTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabNewControllerSettings_C_CenterOnTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabNewControllerSettings_C", "CenterOnTab");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -107,9 +144,12 @@ void UTabNewControllerSettings_C::CenterOnTab()
 
 void UTabNewControllerSettings_C::BndEvt__TabListView_K2Node_ComponentBoundEvent_1_OnListItemScrolledIntoViewDynamic__DelegateSignature(class UObject* Item, class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("TabNewControllerSettings_C", "BndEvt__TabListView_K2Node_ComponentBoundEvent_1_OnListItemScrolledIntoViewDynamic__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_1_OnListItemScrolledIntoViewDynamic__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabNewControllerSettings_C", "BndEvt__TabListView_K2Node_ComponentBoundEvent_1_OnListItemScrolledIntoViewDynamic__DelegateSignature");
+
+	Params::UTabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_1_OnListItemScrolledIntoViewDynamic__DelegateSignature_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.Widget = Widget;
@@ -126,9 +166,12 @@ void UTabNewControllerSettings_C::BndEvt__TabListView_K2Node_ComponentBoundEvent
 
 void UTabNewControllerSettings_C::AdvancedSettingsChanged(bool Enabled)
 {
-	static auto Func = Class->GetFunction("TabNewControllerSettings_C", "AdvancedSettingsChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabNewControllerSettings_C_AdvancedSettingsChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabNewControllerSettings_C", "AdvancedSettingsChanged");
+
+	Params::UTabNewControllerSettings_C_AdvancedSettingsChanged_Params Parms{};
 
 	Parms.Enabled = Enabled;
 
@@ -144,9 +187,12 @@ void UTabNewControllerSettings_C::AdvancedSettingsChanged(bool Enabled)
 
 void UTabNewControllerSettings_C::BndEvt__TabListView_K2Node_ComponentBoundEvent_2_OnListEntryReleasedDynamic__DelegateSignature(class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("TabNewControllerSettings_C", "BndEvt__TabListView_K2Node_ComponentBoundEvent_2_OnListEntryReleasedDynamic__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_2_OnListEntryReleasedDynamic__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabNewControllerSettings_C", "BndEvt__TabListView_K2Node_ComponentBoundEvent_2_OnListEntryReleasedDynamic__DelegateSignature");
+
+	Params::UTabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_2_OnListEntryReleasedDynamic__DelegateSignature_Params Parms{};
 
 	Parms.Widget = Widget;
 
@@ -191,9 +237,12 @@ void UTabNewControllerSettings_C::BndEvt__TabListView_K2Node_ComponentBoundEvent
 
 void UTabNewControllerSettings_C::ExecuteUbergraph_TabNewControllerSettings(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUserWidget* K2Node_ComponentBoundEvent_Widget_2, class UFortOptionsMenuSetting* K2Node_DynamicCast_AsFort_Options_Menu_Setting, bool K2Node_DynamicCast_bSuccess, float K2Node_CustomEvent_Value, class UOptionsMenuRotator_C* K2Node_DynamicCast_AsOptions_Menu_Rotator, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue, class UObject* K2Node_ComponentBoundEvent_Item, class UUserWidget* K2Node_ComponentBoundEvent_Widget_1, bool K2Node_CustomEvent_Enabled, class UFortOptionsMenuSetting* K2Node_DynamicCast_AsFort_Options_Menu_Setting_1, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsAdvancedSettingsEnabled_ReturnValue, int32 Temp_int_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, int32 Temp_int_Variable_1, bool Temp_bool_Variable, bool CallFunc_IsAdvancedSettingsEnabled_ReturnValue_1, int32 K2Node_Select_Default, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class UUserWidget* K2Node_ComponentBoundEvent_Widget, class UOptionsMenuRotator_C* K2Node_DynamicCast_AsOptions_Menu_Rotator_1, bool K2Node_DynamicCast_bSuccess_3)
 {
-	static auto Func = Class->GetFunction("TabNewControllerSettings_C", "ExecuteUbergraph_TabNewControllerSettings");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabNewControllerSettings_C", "ExecuteUbergraph_TabNewControllerSettings");
+
+	Params::UTabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -232,6 +281,4 @@ void UTabNewControllerSettings_C::ExecuteUbergraph_TabNewControllerSettings(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass Ashton_Indigo_LockOnWidget.Ashton_Indigo_LockOnWidget_C
+// (None)
+
+class UClass* UAshton_Indigo_LockOnWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Ashton_Indigo_LockOnWidget_C");
+
+	return Clss;
+}
+
+
+// Ashton_Indigo_LockOnWidget_C Ashton_Indigo_LockOnWidget.Default__Ashton_Indigo_LockOnWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAshton_Indigo_LockOnWidget_C* UAshton_Indigo_LockOnWidget_C::GetDefaultObj()
+{
+	static class UAshton_Indigo_LockOnWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAshton_Indigo_LockOnWidget_C*>(UAshton_Indigo_LockOnWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Ashton_Indigo_LockOnWidget.Ashton_Indigo_LockOnWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UAshton_Indigo_LockOnWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("Ashton_Indigo_LockOnWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAshton_Indigo_LockOnWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Ashton_Indigo_LockOnWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UAshton_Indigo_LockOnWidget_C::Construct()
 
 void UAshton_Indigo_LockOnWidget_C::MoveUI()
 {
-	static auto Func = Class->GetFunction("Ashton_Indigo_LockOnWidget_C", "MoveUI");
+	static class UFunction* Func = nullptr;
 
-	Params::UAshton_Indigo_LockOnWidget_C_MoveUI_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Ashton_Indigo_LockOnWidget_C", "MoveUI");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UAshton_Indigo_LockOnWidget_C::MoveUI()
 
 void UAshton_Indigo_LockOnWidget_C::Destruct()
 {
-	static auto Func = Class->GetFunction("Ashton_Indigo_LockOnWidget_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAshton_Indigo_LockOnWidget_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Ashton_Indigo_LockOnWidget_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -84,9 +115,12 @@ void UAshton_Indigo_LockOnWidget_C::Destruct()
 
 void UAshton_Indigo_LockOnWidget_C::ExecuteUbergraph_Ashton_Indigo_LockOnWidget(int32 EntryPoint, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FVector2D& CallFunc_GetViewportSize_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FVector2D& CallFunc_Subtract_Vector2DVector2D_ReturnValue, const struct FVector2D& CallFunc_Multiply_Vector2DFloat_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, float CallFunc_BroadcastPlayerImpactAtLocation_Loudness, float CallFunc_BroadcastPlayerImpactAtLocation_Duration, bool CallFunc_BroadcastPlayerImpactAtLocation_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Ashton_Indigo_LockOnWidget_C", "ExecuteUbergraph_Ashton_Indigo_LockOnWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAshton_Indigo_LockOnWidget_C_ExecuteUbergraph_Ashton_Indigo_LockOnWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Ashton_Indigo_LockOnWidget_C", "ExecuteUbergraph_Ashton_Indigo_LockOnWidget");
+
+	Params::UAshton_Indigo_LockOnWidget_C_ExecuteUbergraph_Ashton_Indigo_LockOnWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
@@ -110,6 +144,4 @@ void UAshton_Indigo_LockOnWidget_C::ExecuteUbergraph_Ashton_Indigo_LockOnWidget(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

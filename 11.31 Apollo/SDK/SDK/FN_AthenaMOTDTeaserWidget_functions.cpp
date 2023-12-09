@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaMOTDTeaserWidget.AthenaMOTDTeaserWidget_C
+// (None)
+
+class UClass* UAthenaMOTDTeaserWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaMOTDTeaserWidget_C");
+
+	return Clss;
+}
+
+
+// AthenaMOTDTeaserWidget_C AthenaMOTDTeaserWidget.Default__AthenaMOTDTeaserWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaMOTDTeaserWidget_C* UAthenaMOTDTeaserWidget_C::GetDefaultObj()
+{
+	static class UAthenaMOTDTeaserWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaMOTDTeaserWidget_C*>(UAthenaMOTDTeaserWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AthenaMOTDTeaserWidget.AthenaMOTDTeaserWidget_C.SetDynamicColors
@@ -25,9 +50,12 @@ namespace SDK
 
 void UAthenaMOTDTeaserWidget_C::SetDynamicColors(const struct FLinearColor& DarkColor, const struct FLinearColor& LightColor, bool CallFunc_IsValid_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "SetDynamicColors");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTeaserWidget_C_SetDynamicColors_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "SetDynamicColors");
+
+	Params::UAthenaMOTDTeaserWidget_C_SetDynamicColors_Params Parms{};
 
 	Parms.DarkColor = DarkColor;
 	Parms.LightColor = LightColor;
@@ -44,12 +72,12 @@ void UAthenaMOTDTeaserWidget_C::SetDynamicColors(const struct FLinearColor& Dark
 // Parameters:
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FAthenaNewsEntry            CallFunc_GetNewsByIndex_ReturnValue                              ()
+// struct FAthenaNewsEntry            CallFunc_GetNewsByIndex_ReturnValue                              (None)
 // int32                              CallFunc_GetNewsCount_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                CallFunc_Conv_ColorToLinearColor_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FLinearColor                K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Conv_IntToFloat_ReturnValue_1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -57,9 +85,12 @@ void UAthenaMOTDTeaserWidget_C::SetDynamicColors(const struct FLinearColor& Dark
 
 void UAthenaMOTDTeaserWidget_C::UpdateCurDisplayedNewsVisual(bool Temp_bool_Variable, float CallFunc_Conv_IntToFloat_ReturnValue, const struct FAthenaNewsEntry& CallFunc_GetNewsByIndex_ReturnValue, int32 CallFunc_GetNewsCount_ReturnValue, const struct FLinearColor& CallFunc_Conv_ColorToLinearColor_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, const struct FLinearColor& K2Node_Select_Default, class FText CallFunc_Conv_StringToText_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, float CallFunc_Conv_IntToFloat_ReturnValue_1, float CallFunc_Conv_IntToFloat_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "UpdateCurDisplayedNewsVisual");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "UpdateCurDisplayedNewsVisual");
+
+	Params::UAthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.CallFunc_Conv_IntToFloat_ReturnValue = CallFunc_Conv_IntToFloat_ReturnValue;
@@ -86,9 +117,12 @@ void UAthenaMOTDTeaserWidget_C::UpdateCurDisplayedNewsVisual(bool Temp_bool_Vari
 
 void UAthenaMOTDTeaserWidget_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTeaserWidget_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "PreConstruct");
+
+	Params::UAthenaMOTDTeaserWidget_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -103,12 +137,14 @@ void UAthenaMOTDTeaserWidget_C::PreConstruct(bool IsDesignTime)
 
 void UAthenaMOTDTeaserWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTeaserWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -120,9 +156,12 @@ void UAthenaMOTDTeaserWidget_C::Construct()
 
 void UAthenaMOTDTeaserWidget_C::BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature(class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature");
+
+	Params::UAthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature_Params Parms{};
 
 	Parms.Widget = Widget;
 
@@ -137,12 +176,14 @@ void UAthenaMOTDTeaserWidget_C::BndEvt__FortAthenaMOTDTileListView_K2Node_Compon
 
 void UAthenaMOTDTeaserWidget_C::ScrollNextItem()
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "ScrollNextItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTeaserWidget_C_ScrollNextItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "ScrollNextItem");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -154,9 +195,12 @@ void UAthenaMOTDTeaserWidget_C::ScrollNextItem()
 
 void UAthenaMOTDTeaserWidget_C::BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_1_OnListEntryReleasedDynamic__DelegateSignature(class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_1_OnListEntryReleasedDynamic__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_1_OnListEntryReleasedDynamic__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_1_OnListEntryReleasedDynamic__DelegateSignature");
+
+	Params::UAthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_1_OnListEntryReleasedDynamic__DelegateSignature_Params Parms{};
 
 	Parms.Widget = Widget;
 
@@ -172,9 +216,12 @@ void UAthenaMOTDTeaserWidget_C::BndEvt__FortAthenaMOTDTileListView_K2Node_Compon
 
 void UAthenaMOTDTeaserWidget_C::HandleEntryWidgetHoveredChanged(bool NewIsHovered)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "HandleEntryWidgetHoveredChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTeaserWidget_C_HandleEntryWidgetHoveredChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "HandleEntryWidgetHoveredChanged");
+
+	Params::UAthenaMOTDTeaserWidget_C_HandleEntryWidgetHoveredChanged_Params Parms{};
 
 	Parms.NewIsHovered = NewIsHovered;
 
@@ -190,9 +237,12 @@ void UAthenaMOTDTeaserWidget_C::HandleEntryWidgetHoveredChanged(bool NewIsHovere
 
 void UAthenaMOTDTeaserWidget_C::BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTeaserWidget_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaMOTDTeaserWidget_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -207,12 +257,14 @@ void UAthenaMOTDTeaserWidget_C::BndEvt__SimpleCommonButton_K2Node_ComponentBound
 
 void UAthenaMOTDTeaserWidget_C::OnNewsPopulated()
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "OnNewsPopulated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTeaserWidget_C_OnNewsPopulated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "OnNewsPopulated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -241,15 +293,18 @@ void UAthenaMOTDTeaserWidget_C::OnNewsPopulated()
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_CreateDynamicMaterialInstance_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 // struct FSlateFontInfo              K2Node_MakeStruct_SlateFontInfo                                  (HasGetValueTypeHash)
-// struct FTextBlockStyle             K2Node_MakeStruct_TextBlockStyle                                 ()
+// struct FTextBlockStyle             K2Node_MakeStruct_TextBlockStyle                                 (None)
 
 void UAthenaMOTDTeaserWidget_C::ExecuteUbergraph_AthenaMOTDTeaserWidget(int32 EntryPoint, int32 Temp_int_Variable, bool K2Node_Event_IsDesignTime, class UUserWidget* K2Node_ComponentBoundEvent_Widget_1, class UAthenaMOTDTile_C* K2Node_DynamicCast_AsAthena_MOTDTile, bool K2Node_DynamicCast_bSuccess, class UUserWidget* K2Node_ComponentBoundEvent_Widget, bool K2Node_CustomEvent_NewIsHovered, class UAthenaMOTDTile_C* K2Node_DynamicCast_AsAthena_MOTDTile_1, bool K2Node_DynamicCast_bSuccess_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, int32 CallFunc_Max_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, const struct FSlateColor& K2Node_MakeStruct_SlateColor, const struct FSlateFontInfo& K2Node_MakeStruct_SlateFontInfo, const struct FTextBlockStyle& K2Node_MakeStruct_TextBlockStyle)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "ExecuteUbergraph_AthenaMOTDTeaserWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDTeaserWidget_C", "ExecuteUbergraph_AthenaMOTDTeaserWidget");
+
+	Params::UAthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -282,6 +337,4 @@ void UAthenaMOTDTeaserWidget_C::ExecuteUbergraph_AthenaMOTDTeaserWidget(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

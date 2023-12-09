@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,49 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Device_Floor_EliminationZone.GA_Device_Floor_EliminationZone_C
+// (None)
+
+class UClass* UGA_Device_Floor_EliminationZone_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Device_Floor_EliminationZone_C");
+
+	return Clss;
+}
+
+
+// GA_Device_Floor_EliminationZone_C GA_Device_Floor_EliminationZone.Default__GA_Device_Floor_EliminationZone_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Device_Floor_EliminationZone_C* UGA_Device_Floor_EliminationZone_C::GetDefaultObj()
+{
+	static class UGA_Device_Floor_EliminationZone_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Device_Floor_EliminationZone_C*>(UGA_Device_Floor_EliminationZone_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Device_Floor_EliminationZone.GA_Device_Floor_EliminationZone_C.ApplyToRift
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ABuildingRift*               Rift                                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  ()
+// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  (None)
 // TArray<struct FActiveGameplayEffectHandle>CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue          (ZeroConstructor, ReferenceParm)
 
 void UGA_Device_Floor_EliminationZone_C::ApplyToRift(class ABuildingRift* Rift, const struct FGameplayAbilityTargetDataHandle& CallFunc_AbilityTargetDataFromActor_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "ApplyToRift");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Device_Floor_EliminationZone_C_ApplyToRift_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "ApplyToRift");
+
+	Params::UGA_Device_Floor_EliminationZone_C_ApplyToRift_Params Parms{};
 
 	Parms.Rift = Rift;
 	Parms.CallFunc_AbilityTargetDataFromActor_ReturnValue = CallFunc_AbilityTargetDataFromActor_ReturnValue;
@@ -50,9 +78,12 @@ void UGA_Device_Floor_EliminationZone_C::ApplyToRift(class ABuildingRift* Rift, 
 
 void UGA_Device_Floor_EliminationZone_C::IsPawnsTeamAffected(class AFortPawn* PlayerPawn, bool* bIsAffected, bool CallFunc_IsValid_ReturnValue, uint8 CallFunc_GetActorTeam_ReturnValue, int32 CallFunc_Conv_ByteToInt_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "IsPawnsTeamAffected");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "IsPawnsTeamAffected");
+
+	Params::UGA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected_Params Parms{};
 
 	Parms.PlayerPawn = PlayerPawn;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -74,7 +105,7 @@ void UGA_Device_Floor_EliminationZone_C::IsPawnsTeamAffected(class AFortPawn* Pl
 // Parameters:
 // TScriptInterface<class IFortVehicleInterface>VehicleInterface                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AActor*                      VehicleActor                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  ()
+// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  (None)
 // class AFortPlayerPawn*             CallFunc_GetDriver_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsPawnsTeamAffected_bIsAffected                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -82,9 +113,12 @@ void UGA_Device_Floor_EliminationZone_C::IsPawnsTeamAffected(class AFortPawn* Pl
 
 void UGA_Device_Floor_EliminationZone_C::ApplyToVehicle(TScriptInterface<class IFortVehicleInterface> VehicleInterface, class AActor* VehicleActor, const struct FGameplayAbilityTargetDataHandle& CallFunc_AbilityTargetDataFromActor_ReturnValue, class AFortPlayerPawn* CallFunc_GetDriver_ReturnValue, bool CallFunc_IsPawnsTeamAffected_bIsAffected, bool CallFunc_BooleanOR_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "ApplyToVehicle");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Device_Floor_EliminationZone_C_ApplyToVehicle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "ApplyToVehicle");
+
+	Params::UGA_Device_Floor_EliminationZone_C_ApplyToVehicle_Params Parms{};
 
 	Parms.VehicleInterface = VehicleInterface;
 	Parms.VehicleActor = VehicleActor;
@@ -104,7 +138,7 @@ void UGA_Device_Floor_EliminationZone_C::ApplyToVehicle(TScriptInterface<class I
 // Parameters:
 // class AFortPawn*                   Pawn                                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               PawnAffected                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  ()
+// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  (None)
 // bool                               CallFunc_IsPawnsTeamAffected_bIsAffected                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -115,9 +149,12 @@ void UGA_Device_Floor_EliminationZone_C::ApplyToVehicle(TScriptInterface<class I
 
 void UGA_Device_Floor_EliminationZone_C::ApplyToPawn(class AFortPawn* Pawn, bool* PawnAffected, const struct FGameplayAbilityTargetDataHandle& CallFunc_AbilityTargetDataFromActor_ReturnValue, bool CallFunc_IsPawnsTeamAffected_bIsAffected, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "ApplyToPawn");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Device_Floor_EliminationZone_C_ApplyToPawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "ApplyToPawn");
+
+	Params::UGA_Device_Floor_EliminationZone_C_ApplyToPawn_Params Parms{};
 
 	Parms.Pawn = Pawn;
 	Parms.CallFunc_AbilityTargetDataFromActor_ReturnValue = CallFunc_AbilityTargetDataFromActor_ReturnValue;
@@ -144,14 +181,17 @@ void UGA_Device_Floor_EliminationZone_C::ApplyToPawn(class AFortPawn* Pawn, bool
 // float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UClass*                      K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Conv_IntToFloat_ReturnValue_1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue              ()
-// struct FGameplayEffectSpecHandle   CallFunc_AssignTagSetByCallerMagnitude_ReturnValue               ()
+// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue              (None)
+// struct FGameplayEffectSpecHandle   CallFunc_AssignTagSetByCallerMagnitude_ReturnValue               (None)
 
 void UGA_Device_Floor_EliminationZone_C::UpdateSpecHandle(bool Temp_bool_Variable, float CallFunc_Conv_IntToFloat_ReturnValue, class UClass* K2Node_Select_Default, float CallFunc_Conv_IntToFloat_ReturnValue_1, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_AssignTagSetByCallerMagnitude_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "UpdateSpecHandle");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Device_Floor_EliminationZone_C_UpdateSpecHandle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "UpdateSpecHandle");
+
+	Params::UGA_Device_Floor_EliminationZone_C_UpdateSpecHandle_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.CallFunc_Conv_IntToFloat_ReturnValue = CallFunc_Conv_IntToFloat_ReturnValue;
@@ -202,9 +242,12 @@ void UGA_Device_Floor_EliminationZone_C::UpdateSpecHandle(bool Temp_bool_Variabl
 
 void UGA_Device_Floor_EliminationZone_C::ParseTargetData(const struct FGameplayAbilityTargetDataHandle& TargetData, const TArray<class AActor*>& ActorsFromTargetData, bool ValidActorsFound, const TArray<class AActor*>& Passengers, int32 Temp_int_Loop_Counter_Variable, TArray<class AActor*>& CallFunc_GetAllActorsFromTargetData_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Array_Index_Variable_1, int32 Temp_int_Loop_Counter_Variable_1, class AActor* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_ApplyToPawn_PawnAffected, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue_1, class AActor* CallFunc_Array_Get_Item_1, bool CallFunc_Greater_IntInt_ReturnValue, class ABuildingRift* K2Node_DynamicCast_AsBuilding_Rift, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_BooleanOR_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess_2, TScriptInterface<class IFortVehicleInterface> K2Node_DynamicCast_AsFort_Vehicle_Interface, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_ApplyToPawn_PawnAffected_1, TArray<class AFortPlayerPawn*>& CallFunc_GetAllPassengers_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_2, bool CallFunc_Less_IntInt_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "ParseTargetData");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Device_Floor_EliminationZone_C_ParseTargetData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "ParseTargetData");
+
+	Params::UGA_Device_Floor_EliminationZone_C_ParseTargetData_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ActorsFromTargetData = ActorsFromTargetData;
@@ -251,9 +294,12 @@ void UGA_Device_Floor_EliminationZone_C::ParseTargetData(const struct FGameplayA
 
 void UGA_Device_Floor_EliminationZone_C::Cancelled_FDB0569E41B2D20233CC5FAB885737C4(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "Cancelled_FDB0569E41B2D20233CC5FAB885737C4");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Device_Floor_EliminationZone_C_Cancelled_FDB0569E41B2D20233CC5FAB885737C4_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "Cancelled_FDB0569E41B2D20233CC5FAB885737C4");
+
+	Params::UGA_Device_Floor_EliminationZone_C_Cancelled_FDB0569E41B2D20233CC5FAB885737C4_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -271,9 +317,12 @@ void UGA_Device_Floor_EliminationZone_C::Cancelled_FDB0569E41B2D20233CC5FAB88573
 
 void UGA_Device_Floor_EliminationZone_C::Targeted_FDB0569E41B2D20233CC5FAB885737C4(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "Targeted_FDB0569E41B2D20233CC5FAB885737C4");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Device_Floor_EliminationZone_C_Targeted_FDB0569E41B2D20233CC5FAB885737C4_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "Targeted_FDB0569E41B2D20233CC5FAB885737C4");
+
+	Params::UGA_Device_Floor_EliminationZone_C_Targeted_FDB0569E41B2D20233CC5FAB885737C4_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -289,12 +338,14 @@ void UGA_Device_Floor_EliminationZone_C::Targeted_FDB0569E41B2D20233CC5FAB885737
 
 void UGA_Device_Floor_EliminationZone_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Device_Floor_EliminationZone_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -305,12 +356,14 @@ void UGA_Device_Floor_EliminationZone_C::K2_ActivateAbility()
 
 void UGA_Device_Floor_EliminationZone_C::GA_LifeTimer()
 {
-	static auto Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "GA_LifeTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Device_Floor_EliminationZone_C_GA_LifeTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "GA_LifeTimer");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -321,12 +374,14 @@ void UGA_Device_Floor_EliminationZone_C::GA_LifeTimer()
 
 void UGA_Device_Floor_EliminationZone_C::ExecuteActivateTrapGameplayCue()
 {
-	static auto Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "ExecuteActivateTrapGameplayCue");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Device_Floor_EliminationZone_C_ExecuteActivateTrapGameplayCue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "ExecuteActivateTrapGameplayCue");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -344,7 +399,7 @@ void UGA_Device_Floor_EliminationZone_C::ExecuteActivateTrapGameplayCue()
 // class ABuildingTrap*               K2Node_DynamicCast_AsBuilding_Trap                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FGameplayTag                CallFunc_GetReloadBeginGameplayCueTag_ReturnValue                (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable                                             ()
+// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable                                             (None)
 // struct FGameplayTag                Temp_struct_Variable_1                                           (NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_GetOwningActorFromActorInfo_ReturnValue_1               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayAbilityTargetDataHandleK2Node_CustomEvent_TargetData                                    (ConstParm)
@@ -365,7 +420,7 @@ void UGA_Device_Floor_EliminationZone_C::ExecuteActivateTrapGameplayCue()
 // struct FGameplayAbilityTargetDataHandleK2Node_CustomEvent_TargetData_1                                  (ConstParm)
 // struct FGameplayTag                K2Node_CustomEvent_ApplicationTag_1                              (NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue              ()
+// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue              (None)
 // struct FActiveGameplayEffectHandle CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue            (NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_IsClosed_Variable                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Has_Been_Initd_Variable                                (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -379,9 +434,12 @@ void UGA_Device_Floor_EliminationZone_C::ExecuteActivateTrapGameplayCue()
 
 void UGA_Device_Floor_EliminationZone_C::ExecuteUbergraph_GA_Device_Floor_EliminationZone(int32 EntryPoint, class UFortAbilityTask_WaitTargetSelection* CallFunc_WaitTargetSelection_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_IsValid_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, class AActor* CallFunc_GetOwningActorFromActorInfo_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, class ABuildingTrap* K2Node_DynamicCast_AsBuilding_Trap, bool K2Node_DynamicCast_bSuccess, const struct FGameplayTag& CallFunc_GetReloadBeginGameplayCueTag_ReturnValue, const struct FGameplayAbilityTargetDataHandle& Temp_struct_Variable, const struct FGameplayTag& Temp_struct_Variable_1, class AActor* CallFunc_GetOwningActorFromActorInfo_ReturnValue_1, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag, class ABuildingTrap* K2Node_DynamicCast_AsBuilding_Trap_1, bool K2Node_DynamicCast_bSuccess_1, const struct FGameplayTag& CallFunc_GetReloadBeginGameplayCueTag_ReturnValue_1, bool CallFunc_K2_CommitAbility_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class AActor* CallFunc_GetOwningActorFromActorInfo_ReturnValue_2, class ABuildingTrap* K2Node_DynamicCast_AsBuilding_Trap_2, bool K2Node_DynamicCast_bSuccess_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, float CallFunc_GetFireDelay_ReturnValue, const struct FGameplayTag& CallFunc_GetDelayBeginGameplayCueTag_ReturnValue, int32 CallFunc_GetAbilityLevel_ReturnValue, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_1, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_1, float CallFunc_Conv_IntToFloat_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue, bool Temp_bool_IsClosed_Variable, bool Temp_bool_Has_Been_Initd_Variable, class AActor* CallFunc_GetOwningActorFromActorInfo_ReturnValue_3, class ABuildingTrap* K2Node_DynamicCast_AsBuilding_Trap_3, bool K2Node_DynamicCast_bSuccess_3, const struct FGameplayTag& CallFunc_GetReloadBeginGameplayCueTag_ReturnValue_2, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, class ADevice_Floor_EliminationZone_C* K2Node_DynamicCast_AsDevice_Floor_Elimination_Zone, bool K2Node_DynamicCast_bSuccess_4)
 {
-	static auto Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "ExecuteUbergraph_GA_Device_Floor_EliminationZone");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Device_Floor_EliminationZone_C", "ExecuteUbergraph_GA_Device_Floor_EliminationZone");
+
+	Params::UGA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_WaitTargetSelection_ReturnValue = CallFunc_WaitTargetSelection_ReturnValue;
@@ -432,6 +490,4 @@ void UGA_Device_Floor_EliminationZone_C::ExecuteUbergraph_GA_Device_Floor_Elimin
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

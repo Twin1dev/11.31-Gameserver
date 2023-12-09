@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass MiniCraftingIngredientListEntry.MiniCraftingIngredientListEntry_C
+// (None)
+
+class UClass* UMiniCraftingIngredientListEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MiniCraftingIngredientListEntry_C");
+
+	return Clss;
+}
+
+
+// MiniCraftingIngredientListEntry_C MiniCraftingIngredientListEntry.Default__MiniCraftingIngredientListEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMiniCraftingIngredientListEntry_C* UMiniCraftingIngredientListEntry_C::GetDefaultObj()
+{
+	static class UMiniCraftingIngredientListEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMiniCraftingIngredientListEntry_C*>(UMiniCraftingIngredientListEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MiniCraftingIngredientListEntry.MiniCraftingIngredientListEntry_C.Get_ItemCountWidget_ToolTipWidget
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -22,18 +47,21 @@ namespace SDK
 // class UCommonInputSubsystem*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortItemDefinition*         CallFunc_GetItemDefinition_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ECommonInputType        CallFunc_GetCurrentInputType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetShortDescription_ReturnValue                         ()
+// class FText                        CallFunc_GetShortDescription_ReturnValue                         (None)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetDisplayName_ReturnValue                              ()
+// class FText                        CallFunc_GetDisplayName_ReturnValue                              (None)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUserWidget*                 CallFunc_Create_Basic_Tooltip_Output                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 class UWidget* UMiniCraftingIngredientListEntry_C::Get_ItemCountWidget_ToolTipWidget(class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, class UFortItemDefinition* CallFunc_GetItemDefinition_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, class FText CallFunc_GetShortDescription_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class FText CallFunc_GetDisplayName_ReturnValue, bool CallFunc_IsValid_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UUserWidget* CallFunc_Create_Basic_Tooltip_Output)
 {
-	static auto Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "Get_ItemCountWidget_ToolTipWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniCraftingIngredientListEntry_C_Get_ItemCountWidget_ToolTipWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "Get_ItemCountWidget_ToolTipWidget");
+
+	Params::UMiniCraftingIngredientListEntry_C_Get_ItemCountWidget_ToolTipWidget_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetItemDefinition_ReturnValue = CallFunc_GetItemDefinition_ReturnValue;
@@ -66,9 +94,12 @@ class UWidget* UMiniCraftingIngredientListEntry_C::Get_ItemCountWidget_ToolTipWi
 
 void UMiniCraftingIngredientListEntry_C::RefreshBeingPreviewed(const struct FFortItemEntryPreviewData& CallFunc_GetPreviewData_OutPreviewData, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_IsBeingPreviewed_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "RefreshBeingPreviewed");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniCraftingIngredientListEntry_C_RefreshBeingPreviewed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "RefreshBeingPreviewed");
+
+	Params::UMiniCraftingIngredientListEntry_C_RefreshBeingPreviewed_Params Parms{};
 
 	Parms.CallFunc_GetPreviewData_OutPreviewData = CallFunc_GetPreviewData_OutPreviewData;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
@@ -91,9 +122,12 @@ void UMiniCraftingIngredientListEntry_C::RefreshBeingPreviewed(const struct FFor
 
 void UMiniCraftingIngredientListEntry_C::Refresh(class UFortItemDefinition* CallFunc_GetItemDefinition_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "Refresh");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniCraftingIngredientListEntry_C_Refresh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "Refresh");
+
+	Params::UMiniCraftingIngredientListEntry_C_Refresh_Params Parms{};
 
 	Parms.CallFunc_GetItemDefinition_ReturnValue = CallFunc_GetItemDefinition_ReturnValue;
 
@@ -109,9 +143,12 @@ void UMiniCraftingIngredientListEntry_C::Refresh(class UFortItemDefinition* Call
 
 void UMiniCraftingIngredientListEntry_C::HandleDifferentItemOrQuantitySetBP(bool IsBeingReset)
 {
-	static auto Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "HandleDifferentItemOrQuantitySetBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniCraftingIngredientListEntry_C_HandleDifferentItemOrQuantitySetBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "HandleDifferentItemOrQuantitySetBP");
+
+	Params::UMiniCraftingIngredientListEntry_C_HandleDifferentItemOrQuantitySetBP_Params Parms{};
 
 	Parms.IsBeingReset = IsBeingReset;
 
@@ -126,12 +163,14 @@ void UMiniCraftingIngredientListEntry_C::HandleDifferentItemOrQuantitySetBP(bool
 
 void UMiniCraftingIngredientListEntry_C::PreviewStarted()
 {
-	static auto Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "PreviewStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniCraftingIngredientListEntry_C_PreviewStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "PreviewStarted");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -142,12 +181,14 @@ void UMiniCraftingIngredientListEntry_C::PreviewStarted()
 
 void UMiniCraftingIngredientListEntry_C::PreviewEnded()
 {
-	static auto Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "PreviewEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniCraftingIngredientListEntry_C_PreviewEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "PreviewEnded");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -158,12 +199,14 @@ void UMiniCraftingIngredientListEntry_C::PreviewEnded()
 
 void UMiniCraftingIngredientListEntry_C::RefreshListEntry()
 {
-	static auto Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "RefreshListEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniCraftingIngredientListEntry_C_RefreshListEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "RefreshListEntry");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -176,9 +219,12 @@ void UMiniCraftingIngredientListEntry_C::RefreshListEntry()
 
 void UMiniCraftingIngredientListEntry_C::ExecuteUbergraph_MiniCraftingIngredientListEntry(int32 EntryPoint, bool K2Node_Event_IsBeingReset)
 {
-	static auto Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "ExecuteUbergraph_MiniCraftingIngredientListEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniCraftingIngredientListEntry_C_ExecuteUbergraph_MiniCraftingIngredientListEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniCraftingIngredientListEntry_C", "ExecuteUbergraph_MiniCraftingIngredientListEntry");
+
+	Params::UMiniCraftingIngredientListEntry_C_ExecuteUbergraph_MiniCraftingIngredientListEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsBeingReset = K2Node_Event_IsBeingReset;
@@ -189,6 +235,4 @@ void UMiniCraftingIngredientListEntry_C::ExecuteUbergraph_MiniCraftingIngredient
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

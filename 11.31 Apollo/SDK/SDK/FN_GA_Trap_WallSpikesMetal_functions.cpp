@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GA_Trap_WallSpikesMetal.GA_Trap_WallSpikesMetal_C
+// (None)
+
+class UClass* UGA_Trap_WallSpikesMetal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Trap_WallSpikesMetal_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// GA_Trap_WallSpikesMetal_C GA_Trap_WallSpikesMetal.Default__GA_Trap_WallSpikesMetal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Trap_WallSpikesMetal_C* UGA_Trap_WallSpikesMetal_C::GetDefaultObj()
+{
+	static class UGA_Trap_WallSpikesMetal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Trap_WallSpikesMetal_C*>(UGA_Trap_WallSpikesMetal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

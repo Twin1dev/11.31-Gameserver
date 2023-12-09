@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TextStyle-MediumButton.TextStyle-MediumButton_C
+// (None)
+
+class UClass* UTextStyleMinusMediumButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextStyle-MediumButton_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// TextStyle-MediumButton_C TextStyle-MediumButton.Default__TextStyle-MediumButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTextStyleMinusMediumButton_C* UTextStyleMinusMediumButton_C::GetDefaultObj()
+{
+	static class UTextStyleMinusMediumButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextStyleMinusMediumButton_C*>(UTextStyleMinusMediumButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

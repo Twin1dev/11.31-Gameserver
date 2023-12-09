@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass Deimos_Fiend.Deimos_Fiend_C
+// (Actor, Pawn)
+
+class UClass* ADeimos_Fiend_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Deimos_Fiend_C");
+
+	return Clss;
+}
+
+
+// Deimos_Fiend_C Deimos_Fiend.Default__Deimos_Fiend_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ADeimos_Fiend_C* ADeimos_Fiend_C::GetDefaultObj()
+{
+	static class ADeimos_Fiend_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ADeimos_Fiend_C*>(ADeimos_Fiend_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Deimos_Fiend.Deimos_Fiend_C.GetEnemyColor
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void ADeimos_Fiend_C::GetEnemyColor(struct FLinearColor* Color)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "GetEnemyColor");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_GetEnemyColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "GetEnemyColor");
+
+	Params::ADeimos_Fiend_C_GetEnemyColor_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Color != nullptr)
-		*Color = Parms.Color;
+		*Color = std::move(Parms.Color);
 
 }
 
@@ -61,9 +89,12 @@ void ADeimos_Fiend_C::GetEnemyColor(struct FLinearColor* Color)
 
 void ADeimos_Fiend_C::Temp_FindClosestBone(const struct FVector& HitLocation, class FName* ClosestBone, float BoneDistance, class FName LocalClosestBone, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, bool Temp_bool_Has_Been_Initd_Variable, bool Temp_bool_IsClosed_Variable, TArray<class FName>& CallFunc_GetAllSocketNames_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class FName CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, const class FString& CallFunc_Conv_NameToString_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, bool CallFunc_Contains_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, float CallFunc_VSize_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "Temp_FindClosestBone");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_Temp_FindClosestBone_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "Temp_FindClosestBone");
+
+	Params::ADeimos_Fiend_C_Temp_FindClosestBone_Params Parms{};
 
 	Parms.HitLocation = HitLocation;
 	Parms.BoneDistance = BoneDistance;
@@ -102,9 +133,12 @@ void ADeimos_Fiend_C::Temp_FindClosestBone(const struct FVector& HitLocation, cl
 
 void ADeimos_Fiend_C::SetupMIDs(class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "SetupMIDs");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_SetupMIDs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "SetupMIDs");
+
+	Params::ADeimos_Fiend_C_SetupMIDs_Params Parms{};
 
 	Parms.CallFunc_GetMaterial_ReturnValue = CallFunc_GetMaterial_ReturnValue;
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
@@ -121,12 +155,14 @@ void ADeimos_Fiend_C::SetupMIDs(class UMaterialInterface* CallFunc_GetMaterial_R
 
 void ADeimos_Fiend_C::OnRep_HasBackPack()
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "OnRep_HasBackPack");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_OnRep_HasBackPack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "OnRep_HasBackPack");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -144,9 +180,12 @@ void ADeimos_Fiend_C::OnRep_HasBackPack()
 
 void ADeimos_Fiend_C::MantleStart(const struct FVector& StartPos, const struct FVector& MidPos, const struct FVector& EndPos, bool LowWall, bool MidWall, bool FullWall, bool WindowWall)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "MantleStart");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_MantleStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "MantleStart");
+
+	Params::ADeimos_Fiend_C_MantleStart_Params Parms{};
 
 	Parms.StartPos = StartPos;
 	Parms.MidPos = MidPos;
@@ -167,12 +206,14 @@ void ADeimos_Fiend_C::MantleStart(const struct FVector& StartPos, const struct F
 
 void ADeimos_Fiend_C::MantleEnd()
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "MantleEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_MantleEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "MantleEnd");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -183,12 +224,14 @@ void ADeimos_Fiend_C::MantleEnd()
 
 void ADeimos_Fiend_C::HuskEvadeStart()
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "HuskEvadeStart");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_HuskEvadeStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "HuskEvadeStart");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -203,9 +246,12 @@ void ADeimos_Fiend_C::HuskEvadeStart()
 
 void ADeimos_Fiend_C::VerifyTakerAttack(bool SpecialAttack, bool Swoop, bool Soul_Suck, bool Portal)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "VerifyTakerAttack");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_VerifyTakerAttack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "VerifyTakerAttack");
+
+	Params::ADeimos_Fiend_C_VerifyTakerAttack_Params Parms{};
 
 	Parms.SpecialAttack = SpecialAttack;
 	Parms.Swoop = Swoop;
@@ -226,9 +272,12 @@ void ADeimos_Fiend_C::VerifyTakerAttack(bool SpecialAttack, bool Swoop, bool Sou
 
 void ADeimos_Fiend_C::ResetTakerSpecialAttackTimer(bool Swoop, bool SoulSuckMelee, bool Portal)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "ResetTakerSpecialAttackTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_ResetTakerSpecialAttackTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "ResetTakerSpecialAttackTimer");
+
+	Params::ADeimos_Fiend_C_ResetTakerSpecialAttackTimer_Params Parms{};
 
 	Parms.Swoop = Swoop;
 	Parms.SoulSuckMelee = SoulSuckMelee;
@@ -245,12 +294,14 @@ void ADeimos_Fiend_C::ResetTakerSpecialAttackTimer(bool Swoop, bool SoulSuckMele
 
 void ADeimos_Fiend_C::BeginTakerSwoopAttack()
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "BeginTakerSwoopAttack");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_BeginTakerSwoopAttack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "BeginTakerSwoopAttack");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -261,12 +312,14 @@ void ADeimos_Fiend_C::BeginTakerSwoopAttack()
 
 void ADeimos_Fiend_C::EndTakerSwoopAttack()
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "EndTakerSwoopAttack");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_EndTakerSwoopAttack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "EndTakerSwoopAttack");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -281,9 +334,12 @@ void ADeimos_Fiend_C::EndTakerSwoopAttack()
 
 void ADeimos_Fiend_C::TakerWallPortalBehavior(class AActor* BuildingPart, class UBTTask_BlueprintBase* Task, const struct FVector& DesiredMoveLocation, bool Debug)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "TakerWallPortalBehavior");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_TakerWallPortalBehavior_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "TakerWallPortalBehavior");
+
+	Params::ADeimos_Fiend_C_TakerWallPortalBehavior_Params Parms{};
 
 	Parms.BuildingPart = BuildingPart;
 	Parms.Task = Task;
@@ -302,9 +358,12 @@ void ADeimos_Fiend_C::TakerWallPortalBehavior(class AActor* BuildingPart, class 
 
 void ADeimos_Fiend_C::IsTakerWallPortalAvailable(bool Portal_Available_)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "IsTakerWallPortalAvailable");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_IsTakerWallPortalAvailable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "IsTakerWallPortalAvailable");
+
+	Params::ADeimos_Fiend_C_IsTakerWallPortalAvailable_Params Parms{};
 
 	Parms.Portal_Available_ = Portal_Available_;
 
@@ -320,9 +379,12 @@ void ADeimos_Fiend_C::IsTakerWallPortalAvailable(bool Portal_Available_)
 
 void ADeimos_Fiend_C::TakerAttackFSM(bool SuccessfulHit)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "TakerAttackFSM");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_TakerAttackFSM_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "TakerAttackFSM");
+
+	Params::ADeimos_Fiend_C_TakerAttackFSM_Params Parms{};
 
 	Parms.SuccessfulHit = SuccessfulHit;
 
@@ -338,9 +400,12 @@ void ADeimos_Fiend_C::TakerAttackFSM(bool SuccessfulHit)
 
 void ADeimos_Fiend_C::TakerSoulSuckSoundBegin(bool Success)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "TakerSoulSuckSoundBegin");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_TakerSoulSuckSoundBegin_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "TakerSoulSuckSoundBegin");
+
+	Params::ADeimos_Fiend_C_TakerSoulSuckSoundBegin_Params Parms{};
 
 	Parms.Success = Success;
 
@@ -355,12 +420,14 @@ void ADeimos_Fiend_C::TakerSoulSuckSoundBegin(bool Success)
 
 void ADeimos_Fiend_C::TakerSoulSuckSoundEnd()
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "TakerSoulSuckSoundEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_TakerSoulSuckSoundEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "TakerSoulSuckSoundEnd");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -373,9 +440,12 @@ void ADeimos_Fiend_C::TakerSoulSuckSoundEnd()
 
 void ADeimos_Fiend_C::PortalAdd(class ABuildingActor* BuildingActor, TArray<class ABuildingActor*>& BuildingActorList)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "PortalAdd");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_PortalAdd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "PortalAdd");
+
+	Params::ADeimos_Fiend_C_PortalAdd_Params Parms{};
 
 	Parms.BuildingActor = BuildingActor;
 	Parms.BuildingActorList = BuildingActorList;
@@ -391,12 +461,14 @@ void ADeimos_Fiend_C::PortalAdd(class ABuildingActor* BuildingActor, TArray<clas
 
 void ADeimos_Fiend_C::PortalClear()
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "PortalClear");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_PortalClear_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "PortalClear");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -407,12 +479,14 @@ void ADeimos_Fiend_C::PortalClear()
 
 void ADeimos_Fiend_C::TakerSoulSuckInterrupted()
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "TakerSoulSuckInterrupted");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_TakerSoulSuckInterrupted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "TakerSoulSuckInterrupted");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -426,9 +500,12 @@ void ADeimos_Fiend_C::TakerSoulSuckInterrupted()
 
 void ADeimos_Fiend_C::PortalGet(class ABuildingActor* BuildingActor, TArray<class ABuildingActor*>& BuildingActorList, class AActor* BT)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "PortalGet");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_PortalGet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "PortalGet");
+
+	Params::ADeimos_Fiend_C_PortalGet_Params Parms{};
 
 	Parms.BuildingActor = BuildingActor;
 	Parms.BuildingActorList = BuildingActorList;
@@ -445,12 +522,14 @@ void ADeimos_Fiend_C::PortalGet(class ABuildingActor* BuildingActor, TArray<clas
 
 void ADeimos_Fiend_C::PortalFX()
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "PortalFX");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_PortalFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "PortalFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -462,9 +541,12 @@ void ADeimos_Fiend_C::PortalFX()
 
 void ADeimos_Fiend_C::PortalCollision(bool Collide_)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "PortalCollision");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_PortalCollision_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "PortalCollision");
+
+	Params::ADeimos_Fiend_C_PortalCollision_Params Parms{};
 
 	Parms.Collide_ = Collide_;
 
@@ -481,9 +563,12 @@ void ADeimos_Fiend_C::PortalCollision(bool Collide_)
 
 void ADeimos_Fiend_C::GameplayCue_Impact_Physical_Creature(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "GameplayCue.Impact.Physical.Creature");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_GameplayCue_Impact_Physical_Creature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "GameplayCue.Impact.Physical.Creature");
+
+	Params::ADeimos_Fiend_C_GameplayCue_Impact_Physical_Creature_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -499,12 +584,14 @@ void ADeimos_Fiend_C::GameplayCue_Impact_Physical_Creature(enum class EGameplayC
 
 void ADeimos_Fiend_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -515,12 +602,14 @@ void ADeimos_Fiend_C::ReceiveBeginPlay()
 
 void ADeimos_Fiend_C::OnStartedEncounterSpawn()
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "OnStartedEncounterSpawn");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_OnStartedEncounterSpawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "OnStartedEncounterSpawn");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -531,12 +620,14 @@ void ADeimos_Fiend_C::OnStartedEncounterSpawn()
 
 void ADeimos_Fiend_C::AnimateDeathMaterial()
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "AnimateDeathMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_AnimateDeathMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "AnimateDeathMaterial");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -555,9 +646,12 @@ void ADeimos_Fiend_C::AnimateDeathMaterial()
 
 void ADeimos_Fiend_C::CustomOnDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "CustomOnDied");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_CustomOnDied_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "CustomOnDied");
+
+	Params::ADeimos_Fiend_C_CustomOnDied_Params Parms{};
 
 	Parms.DamagedActor = DamagedActor;
 	Parms.Damage = Damage;
@@ -581,9 +675,12 @@ void ADeimos_Fiend_C::CustomOnDied(class AActor* DamagedActor, float Damage, cla
 
 void ADeimos_Fiend_C::GameplayCue_Athena_IceDeimos(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "GameplayCue.Athena.IceDeimos");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_GameplayCue_Athena_IceDeimos_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "GameplayCue.Athena.IceDeimos");
+
+	Params::ADeimos_Fiend_C_GameplayCue_Athena_IceDeimos_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -599,12 +696,14 @@ void ADeimos_Fiend_C::GameplayCue_Athena_IceDeimos(enum class EGameplayCueEvent 
 
 void ADeimos_Fiend_C::RemoveChillerMaterial()
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "RemoveChillerMaterial");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_RemoveChillerMaterial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "RemoveChillerMaterial");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -726,9 +825,12 @@ void ADeimos_Fiend_C::RemoveChillerMaterial()
 
 void ADeimos_Fiend_C::ExecuteUbergraph_Deimos_Fiend(int32 EntryPoint, class UParticleSystem* Temp_object_Variable, class UParticleSystem* Temp_object_Variable_1, class UParticleSystem* Temp_object_Variable_2, class UParticleSystem* Temp_object_Variable_3, bool CallFunc_HasAuthority_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_HasAuthority_ReturnValue_1, class UParticleSystem* Temp_object_Variable_4, bool CallFunc_HasAuthority_ReturnValue_2, const struct FVector& K2Node_Event_StartPos, const struct FVector& K2Node_Event_MidPos, const struct FVector& K2Node_Event_EndPos, bool K2Node_Event_LowWall, bool K2Node_Event_MidWall, bool K2Node_Event_FullWall, bool K2Node_Event_WindowWall, bool K2Node_Event_SpecialAttack, bool K2Node_Event_Swoop_1, bool K2Node_Event_Soul_Suck, bool K2Node_Event_Portal_1, bool K2Node_Event_Swoop, bool K2Node_Event_SoulSuckMelee, bool K2Node_Event_Portal, class AActor* K2Node_Event_BuildingPart, class UBTTask_BlueprintBase* K2Node_Event_Task, const struct FVector& K2Node_Event_DesiredMoveLocation, bool K2Node_Event_Debug, bool K2Node_Event_Portal_Available_, bool K2Node_Event_SuccessfulHit, bool K2Node_Event_Success, class ABuildingActor* K2Node_Event_BuildingActor_1, TArray<class ABuildingActor*>& K2Node_Event_BuildingActorList_1, class ABuildingActor* K2Node_Event_BuildingActor, TArray<class ABuildingActor*>& K2Node_Event_BuildingActorList, class AActor* K2Node_Event_BT, bool K2Node_Event_Collide_, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType_1, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters_1, const struct FHitResult& CallFunc_GetHitResult_ReturnValue, const struct FHitResult& CallFunc_GetHitResult_ReturnValue_1, enum class EPhysicalSurface CallFunc_GetFortPhysicalSurface_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, class USoundBase* CallFunc_GetImpactPhysicalSurfaceSound_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit_1, bool CallFunc_BreakHitResult_bInitialOverlap_1, float CallFunc_BreakHitResult_Time_1, float CallFunc_BreakHitResult_Distance_1, const struct FVector& CallFunc_BreakHitResult_Location_1, const struct FVector& CallFunc_BreakHitResult_ImpactPoint_1, const struct FVector& CallFunc_BreakHitResult_Normal_1, const struct FVector& CallFunc_BreakHitResult_ImpactNormal_1, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat_1, class AActor* CallFunc_BreakHitResult_HitActor_1, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent_1, class FName CallFunc_BreakHitResult_HitBoneName_1, int32 CallFunc_BreakHitResult_HitItem_1, int32 CallFunc_BreakHitResult_FaceIndex_1, const struct FVector& CallFunc_BreakHitResult_TraceStart_1, const struct FVector& CallFunc_BreakHitResult_TraceEnd_1, const struct FRotator& CallFunc_MakeRotFromX_ReturnValue, const struct FTransform& CallFunc_GetSocketTransform_ReturnValue, class UParticleSystem* Temp_object_Variable_5, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue, class UPrimitiveComponent* K2Node_DynamicCast_AsPrimitive_Component, bool K2Node_DynamicCast_bSuccess, enum class EPhysicalSurface Temp_byte_Variable, class AActor* K2Node_CustomEvent_DamagedActor, float K2Node_CustomEvent_Damage, class AController* K2Node_CustomEvent_InstigatedBy, class AActor* K2Node_CustomEvent_DamageCauser, const struct FVector& K2Node_CustomEvent_HitLocation, class UPrimitiveComponent* K2Node_CustomEvent_FHitComponent, class FName K2Node_CustomEvent_BoneName, const struct FVector& K2Node_CustomEvent_Momentum, class AFortPlayerControllerAthena* K2Node_DynamicCast_AsFort_Player_Controller_Athena, bool K2Node_DynamicCast_bSuccess_1, class AFortPlayerPawn* CallFunc_GetPlayerPawn_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters, bool K2Node_SwitchEnum_CmpSuccess, class UParticleSystem* Temp_object_Variable_6, float CallFunc_GetValue_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, class UParticleSystem* Temp_object_Variable_7, class UParticleSystem* K2Node_Select_Default, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("Deimos_Fiend_C", "ExecuteUbergraph_Deimos_Fiend");
+	static class UFunction* Func = nullptr;
 
-	Params::ADeimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Deimos_Fiend_C", "ExecuteUbergraph_Deimos_Fiend");
+
+	Params::ADeimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -848,6 +950,4 @@ void ADeimos_Fiend_C::ExecuteUbergraph_Deimos_Fiend(int32 EntryPoint, class UPar
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class UMissionBlueprintFunctionLibrary_C : public UBlueprintFunctionLibrary
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MissionBlueprintFunctionLibrary_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMissionBlueprintFunctionLibrary_C* GetDefaultObj();
 
 	void GetSeasonalEventManager(class UObject* WorldContextObject, class UObject* __WorldContext, class UFortSeasonalEventManager** SeasonalEventManager, class UGameInstance* CallFunc_GetGameInstance_ReturnValue, class UFortGameInstance* K2Node_DynamicCast_AsFort_Game_Instance, bool K2Node_DynamicCast_bSuccess, class UFortSeasonalEventManager* CallFunc_GetEventManager_ReturnValue);
 	void NPC_CanBeElemental(const struct FGameplayTag& PawnTag, class UObject* __WorldContext, bool* Value, const struct FGameplayTagContainer& ElementalEnablePawnTag, bool CallFunc_HasTag_ReturnValue);
@@ -67,6 +61,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

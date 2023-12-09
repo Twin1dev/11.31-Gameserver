@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCL_Cornfield_Movement.GCL_Cornfield_Movement_C
+// (Actor)
+
+class UClass* AGCL_Cornfield_Movement_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCL_Cornfield_Movement_C");
+
+	return Clss;
+}
+
+
+// GCL_Cornfield_Movement_C GCL_Cornfield_Movement.Default__GCL_Cornfield_Movement_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCL_Cornfield_Movement_C* AGCL_Cornfield_Movement_C::GetDefaultObj()
+{
+	static class AGCL_Cornfield_Movement_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCL_Cornfield_Movement_C*>(AGCL_Cornfield_Movement_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCL_Cornfield_Movement.GCL_Cornfield_Movement_C.WhileActive
@@ -26,9 +51,12 @@ namespace SDK
 
 bool AGCL_Cornfield_Movement_C::WhileActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GCL_Cornfield_Movement_C", "WhileActive");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_Cornfield_Movement_C_WhileActive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_Cornfield_Movement_C", "WhileActive");
+
+	Params::AGCL_Cornfield_Movement_C_WhileActive_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -56,9 +84,12 @@ bool AGCL_Cornfield_Movement_C::WhileActive(class AActor* MyTarget, struct FGame
 
 bool AGCL_Cornfield_Movement_C::OnActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, class AActor* PlayerPawn, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCL_Cornfield_Movement_C", "OnActive");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_Cornfield_Movement_C_OnActive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_Cornfield_Movement_C", "OnActive");
+
+	Params::AGCL_Cornfield_Movement_C_OnActive_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -90,9 +121,12 @@ bool AGCL_Cornfield_Movement_C::OnActive(class AActor* MyTarget, struct FGamepla
 
 bool AGCL_Cornfield_Movement_C::OnRemove(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCL_Cornfield_Movement_C", "OnRemove");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_Cornfield_Movement_C_OnRemove_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_Cornfield_Movement_C", "OnRemove");
+
+	Params::AGCL_Cornfield_Movement_C_OnRemove_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -116,12 +150,14 @@ bool AGCL_Cornfield_Movement_C::OnRemove(class AActor* MyTarget, struct FGamepla
 
 void AGCL_Cornfield_Movement_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("GCL_Cornfield_Movement_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_Cornfield_Movement_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_Cornfield_Movement_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -132,12 +168,14 @@ void AGCL_Cornfield_Movement_C::ReceiveBeginPlay()
 
 void AGCL_Cornfield_Movement_C::On_Player_Step()
 {
-	static auto Func = Class->GetFunction("GCL_Cornfield_Movement_C", "On Player Step");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_Cornfield_Movement_C_On_Player_Step_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_Cornfield_Movement_C", "On Player Step");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -157,9 +195,12 @@ void AGCL_Cornfield_Movement_C::On_Player_Step()
 
 void AGCL_Cornfield_Movement_C::ExecuteUbergraph_GCL_Cornfield_Movement(int32 EntryPoint, bool Temp_bool_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable_1, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue, class USoundBase* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("GCL_Cornfield_Movement_C", "ExecuteUbergraph_GCL_Cornfield_Movement");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_Cornfield_Movement_C_ExecuteUbergraph_GCL_Cornfield_Movement_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_Cornfield_Movement_C", "ExecuteUbergraph_GCL_Cornfield_Movement");
+
+	Params::AGCL_Cornfield_Movement_C_ExecuteUbergraph_GCL_Cornfield_Movement_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -177,6 +218,4 @@ void AGCL_Cornfield_Movement_C::ExecuteUbergraph_GCL_Cornfield_Movement(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

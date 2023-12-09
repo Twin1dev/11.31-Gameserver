@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -20,11 +17,8 @@ public:
 	class USocialChatChannel*                    ChatChannel;                                       // 0xB70(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UCommonTextBlock*                      CommonText_ChannelName;                            // 0xB78(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialChatChannelTab");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialChatChannelTab* GetDefaultObj();
 
 };
 
@@ -37,18 +31,15 @@ public:
 	TArray<class USocialChatChannel*>            JoinedChannels;                                    // 0x238(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	class USocialChatChannel*                    ActiveChannel;                                     // 0x248(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UCommonButtonGroup*                    TabButtonGroup;                                    // 0x250(0x8)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_20E3[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_141E[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class USocialChatMessageList*                ChatList_Messages;                                 // 0x260(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class USocialChatEditableText*               ChatEditableText_MessageEntry;                     // 0x268(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UCommonButton*                         Button_SendMessage;                                // 0x270(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UDynamicEntryBox*                      EntryBox_JoinedChannels;                           // 0x278(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UScrollBox*                            ScrollBox_Channels;                                // 0x280(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialChatContainer");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialChatContainer* GetDefaultObj();
 
 	void SendCurrentMessage();
 	void OnChatOpenChanged(bool bShouldBeOpen);
@@ -63,16 +54,13 @@ public:
 class USocialChatEditableText : public UWidget
 {
 public:
-	uint8                                        Pad_20E4[0x20];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1421[0x20];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FEditableTextStyle                    EditableTextStyle;                                 // 0x128(0x218)(Edit, NativeAccessSpecifierPrivate)
 	struct FTextBlockStyle                       AutoCompleteStyle;                                 // 0x340(0x268)(Edit, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_20E5[0x40];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1422[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialChatEditableText");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialChatEditableText* GetDefaultObj();
 
 };
 
@@ -81,16 +69,13 @@ public:
 class USocialChatMessageEntry : public UUserWidget
 {
 public:
-	uint8                                        Pad_20E6[0x18];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1423[0x18];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSocialChatMessageEntryStyle          DefaultStyle;                                      // 0x248(0x120)(Edit, Protected, NativeAccessSpecifierProtected)
 	class UCommonRichTextBlock*                  RichText_Message;                                  // 0x368(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UButton*                               Button_MessageButton;                              // 0x370(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialChatMessageEntry");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialChatMessageEntry* GetDefaultObj();
 
 	void OnMessageSet();
 	bool CanInteract();
@@ -101,17 +86,14 @@ public:
 class USocialChatMessageList : public UListViewBase
 {
 public:
-	uint8                                        Pad_20E7[0xC0];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1425[0xC0];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	bool                                         bIsFocusable;                                      // 0x2D8(0x1)(Edit, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_20E8[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1427[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class USocialChatChannel*                    ActiveChannel;                                     // 0x2E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_20E9[0x20];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1428[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialChatMessageList");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialChatMessageList* GetDefaultObj();
 
 };
 
@@ -120,17 +102,14 @@ public:
 class USocialGroupListEntry : public UCommonButton
 {
 public:
-	uint8                                        Pad_20EA[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1429[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TSubclassOf<class USocialActionMenu>         ActionMenuClass;                                   // 0xB78(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USocialGroupChannel*                   SocialGroup;                                       // 0xB80(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UTextBlock*                            Text_GroupName;                                    // 0xB88(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UMenuAnchor*                           MenuAnchor_Actions;                                // 0xB90(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialGroupListEntry");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialGroupListEntry* GetDefaultObj();
 
 	class UWidget* HandleGetMenuContent();
 };
@@ -145,11 +124,8 @@ public:
 	TSubclassOf<class USocialInteractionMenu>    ActionMenuClass;                                   // 0x3D0(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class USocialInteractionMenu*                ActionMenu;                                        // 0x3D8(0x8)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialGroupTreeView");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialGroupTreeView* GetDefaultObj();
 
 };
 
@@ -160,15 +136,12 @@ class USocialInteractionButton : public UCommonButton
 public:
 	struct FLinearColor                          DefaultIndicatorColor;                             // 0xB70(0x10)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FLinearColor                          AlertingIndicatorColor;                            // 0xB80(0x10)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_20EB[0x30];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_143F[0x30];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonTextBlock*                      Text_InteractionName;                              // 0xBC0(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UBorder*                               Border_InteractionIndicator;                       // 0xBC8(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialInteractionButton");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialInteractionButton* GetDefaultObj();
 
 	void OnInteractionSet();
 	bool IsPlatformOnlyFriend();
@@ -180,13 +153,10 @@ public:
 class USocialActionMenu : public UCommonActivatableWidget
 {
 public:
-	uint8                                        Pad_20EC[0x20];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1440[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialActionMenu");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialActionMenu* GetDefaultObj();
 
 	void OnOpened();
 };
@@ -196,7 +166,7 @@ public:
 class USocialInteractionMenu : public USocialActionMenu
 {
 public:
-	uint8                                        Pad_20ED[0x30];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_144C[0x30];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class UDynamicEntryBox*                      EntryBox_PositiveInteractions;                     // 0x320(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UDynamicEntryBox*                      EntryBox_NegativeInteractions;                     // 0x328(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class USpacer*                               Spacer_InteractionSeparator;                       // 0x330(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -205,11 +175,8 @@ public:
 	class UCommonButton*                         Button_Confirm;                                    // 0x348(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UCommonButton*                         Button_Decline;                                    // 0x350(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialInteractionMenu");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialInteractionMenu* GetDefaultObj();
 
 	void OnToggleConfirmation(bool bIsVisible);
 	void HandleMenuAnchorOpenChanged(bool bIsOpen);
@@ -227,16 +194,13 @@ public:
 	bool                                         bShowSecondName;                                   // 0x6B0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	enum class EPlatformIconDisplayRule          PlatformIconDisplayRule;                           // 0x6B1(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                         bWrapToNextLine;                                   // 0x6B2(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_20EE[0x1];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1453[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FColor                                SecondNameColor;                                   // 0x6B4(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	int32                                        SecondNameFontSize;                                // 0x6B8(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_20EF[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1455[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialNameTextBlock");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialNameTextBlock* GetDefaultObj();
 
 };
 
@@ -245,13 +209,10 @@ public:
 class UDesignerPreviewChatChannel : public USocialChatChannel
 {
 public:
-	uint8                                        Pad_20F0[0x68];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1459[0x68];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("DesignerPreviewChatChannel");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UDesignerPreviewChatChannel* GetDefaultObj();
 
 };
 
@@ -260,13 +221,10 @@ public:
 class USocialListEntryBase : public UCommonButton
 {
 public:
-	uint8                                        Pad_20F1[0x18];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_145B[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialListEntryBase");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialListEntryBase* GetDefaultObj();
 
 };
 
@@ -278,11 +236,8 @@ public:
 	TSubclassOf<class USocialActionMenu>         ActionMenuClass;                                   // 0xB88(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UMenuAnchor*                           MenuAnchor_Actions;                                // 0xB90(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialListInteractableEntryBase");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialListInteractableEntryBase* GetDefaultObj();
 
 	void HandleMenuOpenChanged(bool bIsMenuOpen);
 	class UWidget* HandleGetMenuContent();
@@ -293,15 +248,12 @@ public:
 class USocialListUserEntryBase : public USocialListInteractableEntryBase
 {
 public:
-	uint8                                        Pad_20F2[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1464[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class USocialNameTextBlock*                  Text_SocialName;                                   // 0xBA0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UCommonRichTextBlock*                  Text_RichPresence;                                 // 0xBA8(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialListUserEntryBase");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialListUserEntryBase* GetDefaultObj();
 
 };
 
@@ -313,11 +265,8 @@ public:
 	class UTextBlock*                            Text_ListName;                                     // 0xB88(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UTextBlock*                            Text_NumEntries;                                   // 0xB90(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialUserListHeaderEntry");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialUserListHeaderEntry* GetDefaultObj();
 
 };
 
@@ -326,15 +275,12 @@ public:
 class USocialUserListViewBase : public UListViewBase
 {
 public:
-	uint8                                        Pad_20F3[0xE0];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1467[0xE0];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        EntrySpacing;                                      // 0x2F8(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_20F4[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1468[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialUserListViewBase");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialUserListViewBase* GetDefaultObj();
 
 };
 
@@ -343,15 +289,12 @@ public:
 class USocialUserListView : public USocialUserListViewBase
 {
 public:
-	uint8                                        Pad_20F5[0x28];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1469[0x28];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class USocialActionMenu*                     ActiveActionMenu;                                  // 0x328(0x8)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TMap<TSubclassOf<class USocialActionMenu>, class USocialActionMenu*> CachedActionMenuPool;                              // 0x330(0x50)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialUserListView");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialUserListView* GetDefaultObj();
 
 };
 
@@ -360,21 +303,16 @@ public:
 class USocialUserTreeView : public USocialUserListView
 {
 public:
-	uint8                                        Pad_20F6[0x70];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_146A[0x70];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TSubclassOf<class USocialListUserEntryBase>  UserEntryWidgetClass;                              // 0x3F0(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TSubclassOf<class USocialListUserEntryBase>  InviteEntryWidgetClass;                            // 0x3F8(0x8)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_20F7[0x10];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_146C[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialUserTreeView");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialUserTreeView* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

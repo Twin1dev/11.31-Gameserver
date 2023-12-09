@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass FortVoiceChannelSpeaker.FortVoiceChannelSpeaker_C
+// (None)
+
+class UClass* UFortVoiceChannelSpeaker_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FortVoiceChannelSpeaker_C");
+
+	return Clss;
+}
+
+
+// FortVoiceChannelSpeaker_C FortVoiceChannelSpeaker.Default__FortVoiceChannelSpeaker_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UFortVoiceChannelSpeaker_C* UFortVoiceChannelSpeaker_C::GetDefaultObj()
+{
+	static class UFortVoiceChannelSpeaker_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFortVoiceChannelSpeaker_C*>(UFortVoiceChannelSpeaker_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function FortVoiceChannelSpeaker.FortVoiceChannelSpeaker_C.OnStyleAssigned
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UFortVoiceChannelSpeaker_C::OnStyleAssigned(enum class EChannelSpeakerStyle NewStyle)
 {
-	static auto Func = Class->GetFunction("FortVoiceChannelSpeaker_C", "OnStyleAssigned");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortVoiceChannelSpeaker_C_OnStyleAssigned_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortVoiceChannelSpeaker_C", "OnStyleAssigned");
+
+	Params::UFortVoiceChannelSpeaker_C_OnStyleAssigned_Params Parms{};
 
 	Parms.NewStyle = NewStyle;
 
@@ -40,9 +68,12 @@ void UFortVoiceChannelSpeaker_C::OnStyleAssigned(enum class EChannelSpeakerStyle
 
 void UFortVoiceChannelSpeaker_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("FortVoiceChannelSpeaker_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortVoiceChannelSpeaker_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortVoiceChannelSpeaker_C", "PreConstruct");
+
+	Params::UFortVoiceChannelSpeaker_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -58,9 +89,12 @@ void UFortVoiceChannelSpeaker_C::PreConstruct(bool IsDesignTime)
 
 void UFortVoiceChannelSpeaker_C::OnAnimateTalkingChanged(bool bIsNowTalking)
 {
-	static auto Func = Class->GetFunction("FortVoiceChannelSpeaker_C", "OnAnimateTalkingChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortVoiceChannelSpeaker_C_OnAnimateTalkingChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortVoiceChannelSpeaker_C", "OnAnimateTalkingChanged");
+
+	Params::UFortVoiceChannelSpeaker_C_OnAnimateTalkingChanged_Params Parms{};
 
 	Parms.bIsNowTalking = bIsNowTalking;
 
@@ -83,9 +117,12 @@ void UFortVoiceChannelSpeaker_C::OnAnimateTalkingChanged(bool bIsNowTalking)
 
 void UFortVoiceChannelSpeaker_C::ExecuteUbergraph_FortVoiceChannelSpeaker(int32 EntryPoint, enum class EChannelSpeakerStyle K2Node_Event_NewStyle, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, bool K2Node_Event_IsDesignTime, bool K2Node_Event_bIsNowTalking, bool CallFunc_IsAnimationPlaying_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("FortVoiceChannelSpeaker_C", "ExecuteUbergraph_FortVoiceChannelSpeaker");
+	static class UFunction* Func = nullptr;
 
-	Params::UFortVoiceChannelSpeaker_C_ExecuteUbergraph_FortVoiceChannelSpeaker_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortVoiceChannelSpeaker_C", "ExecuteUbergraph_FortVoiceChannelSpeaker");
+
+	Params::UFortVoiceChannelSpeaker_C_ExecuteUbergraph_FortVoiceChannelSpeaker_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_NewStyle = K2Node_Event_NewStyle;
@@ -102,6 +139,4 @@ void UFortVoiceChannelSpeaker_C::ExecuteUbergraph_FortVoiceChannelSpeaker(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

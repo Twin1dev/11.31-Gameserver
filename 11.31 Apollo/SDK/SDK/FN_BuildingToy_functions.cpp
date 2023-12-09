@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BuildingToy.BuildingToy_C
+// (Actor)
+
+class UClass* ABuildingToy_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BuildingToy_C");
+
+	return Clss;
+}
+
+
+// BuildingToy_C BuildingToy.Default__BuildingToy_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABuildingToy_C* ABuildingToy_C::GetDefaultObj()
+{
+	static class ABuildingToy_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABuildingToy_C*>(ABuildingToy_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BuildingToy.BuildingToy_C.GetVisualComponents
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -23,16 +48,19 @@ namespace SDK
 
 void ABuildingToy_C::GetVisualComponents(TArray<class USceneComponent*>* Components, TArray<class USceneComponent*>& CallFunc_K2_GetComponentsByClass_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BuildingToy_C", "GetVisualComponents");
+	static class UFunction* Func = nullptr;
 
-	Params::ABuildingToy_C_GetVisualComponents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildingToy_C", "GetVisualComponents");
+
+	Params::ABuildingToy_C_GetVisualComponents_Params Parms{};
 
 	Parms.CallFunc_K2_GetComponentsByClass_ReturnValue = CallFunc_K2_GetComponentsByClass_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Components != nullptr)
-		*Components = Parms.Components;
+		*Components = std::move(Parms.Components);
 
 }
 
@@ -49,9 +77,12 @@ void ABuildingToy_C::GetVisualComponents(TArray<class USceneComponent*>* Compone
 
 void ABuildingToy_C::DesiredVisibility(bool* Visibility, class AActor* Temp_object_Variable, bool CallFunc_IsVisibleDuringMinigame_IsVisibleDuringMinigame, bool CallFunc_IsInPlayMode_Play_Mode, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BuildingToy_C", "DesiredVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::ABuildingToy_C_DesiredVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildingToy_C", "DesiredVisibility");
+
+	Params::ABuildingToy_C_DesiredVisibility_Params Parms{};
 
 	Parms.Temp_object_Variable = Temp_object_Variable;
 	Parms.CallFunc_IsVisibleDuringMinigame_IsVisibleDuringMinigame = CallFunc_IsVisibleDuringMinigame_IsVisibleDuringMinigame;
@@ -74,9 +105,12 @@ void ABuildingToy_C::DesiredVisibility(bool* Visibility, class AActor* Temp_obje
 
 void ABuildingToy_C::IsVisibleDuringMinigame(bool* IsVisibleDuringMinigame)
 {
-	static auto Func = Class->GetFunction("BuildingToy_C", "IsVisibleDuringMinigame");
+	static class UFunction* Func = nullptr;
 
-	Params::ABuildingToy_C_IsVisibleDuringMinigame_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildingToy_C", "IsVisibleDuringMinigame");
+
+	Params::ABuildingToy_C_IsVisibleDuringMinigame_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -103,9 +137,12 @@ void ABuildingToy_C::IsVisibleDuringMinigame(bool* IsVisibleDuringMinigame)
 
 void ABuildingToy_C::UpdateVisuals(bool bShouldBeVisible, int32 Temp_int_Array_Index_Variable, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_DesiredVisibility_Visibility, TArray<class USceneComponent*>& CallFunc_GetVisualComponents_Components, class USceneComponent* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BuildingToy_C", "UpdateVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::ABuildingToy_C_UpdateVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildingToy_C", "UpdateVisuals");
+
+	Params::ABuildingToy_C_UpdateVisuals_Params Parms{};
 
 	Parms.bShouldBeVisible = bShouldBeVisible;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -132,9 +169,12 @@ void ABuildingToy_C::UpdateVisuals(bool bShouldBeVisible, int32 Temp_int_Array_I
 
 void ABuildingToy_C::MinigameIsRunning(bool* GameIsRunning, bool CallFunc_HasStarted_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BuildingToy_C", "MinigameIsRunning");
+	static class UFunction* Func = nullptr;
 
-	Params::ABuildingToy_C_MinigameIsRunning_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildingToy_C", "MinigameIsRunning");
+
+	Params::ABuildingToy_C_MinigameIsRunning_Params Parms{};
 
 	Parms.CallFunc_HasStarted_ReturnValue = CallFunc_HasStarted_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -156,9 +196,12 @@ void ABuildingToy_C::MinigameIsRunning(bool* GameIsRunning, bool CallFunc_HasSta
 
 class FText ABuildingToy_C::BlueprintGetInteractionString(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static auto Func = Class->GetFunction("BuildingToy_C", "BlueprintGetInteractionString");
+	static class UFunction* Func = nullptr;
 
-	Params::ABuildingToy_C_BlueprintGetInteractionString_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildingToy_C", "BlueprintGetInteractionString");
+
+	Params::ABuildingToy_C_BlueprintGetInteractionString_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -195,9 +238,12 @@ class FText ABuildingToy_C::BlueprintGetInteractionString(class AFortPawn* Inter
 
 bool ABuildingToy_C::BlueprintCanInteract(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted, bool bInteractSuccess, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsInVehicle_ReturnValue, bool CallFunc_IsValid_ReturnValue, class AController* CallFunc_GetController_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class AFortPlayerControllerAthena* K2Node_DynamicCast_AsFort_Player_Controller_Athena, bool K2Node_DynamicCast_bSuccess_1, class AFortVolume* CallFunc_CanPlayerCreateInCurrentVolume_OutCurrentVolume, bool CallFunc_CanPlayerCreateInCurrentVolume_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_HasStarted_ReturnValue, bool CallFunc_IsValid_ReturnValue_4, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BuildingToy_C", "BlueprintCanInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::ABuildingToy_C_BlueprintCanInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildingToy_C", "BlueprintCanInteract");
+
+	Params::ABuildingToy_C_BlueprintCanInteract_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -233,9 +279,12 @@ bool ABuildingToy_C::BlueprintCanInteract(class AFortPawn* InteractingPawn, enum
 
 bool ABuildingToy_C::BlueprintOnLocalInteract(class AFortPlayerPawn* InteractingPawn)
 {
-	static auto Func = Class->GetFunction("BuildingToy_C", "BlueprintOnLocalInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::ABuildingToy_C_BlueprintOnLocalInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildingToy_C", "BlueprintOnLocalInteract");
+
+	Params::ABuildingToy_C_BlueprintOnLocalInteract_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 
@@ -252,12 +301,14 @@ bool ABuildingToy_C::BlueprintOnLocalInteract(class AFortPlayerPawn* Interacting
 
 void ABuildingToy_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BuildingToy_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABuildingToy_C_BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildingToy_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -268,12 +319,14 @@ void ABuildingToy_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_An
 
 void ABuildingToy_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BuildingToy_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABuildingToy_C_BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildingToy_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -284,12 +337,14 @@ void ABuildingToy_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_An
 
 void ABuildingToy_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BuildingToy_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABuildingToy_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildingToy_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -300,12 +355,14 @@ void ABuildingToy_C::ReceiveBeginPlay()
 
 void ABuildingToy_C::OnMinigameStarted()
 {
-	static auto Func = Class->GetFunction("BuildingToy_C", "OnMinigameStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::ABuildingToy_C_OnMinigameStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildingToy_C", "OnMinigameStarted");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -316,12 +373,14 @@ void ABuildingToy_C::OnMinigameStarted()
 
 void ABuildingToy_C::OnMinigameEnded()
 {
-	static auto Func = Class->GetFunction("BuildingToy_C", "OnMinigameEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::ABuildingToy_C_OnMinigameEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildingToy_C", "OnMinigameEnded");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -333,9 +392,12 @@ void ABuildingToy_C::OnMinigameEnded()
 
 void ABuildingToy_C::BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_2_OnMinigameAssignmentChanged__DelegateSignature(class AFortMinigame* Minigame)
 {
-	static auto Func = Class->GetFunction("BuildingToy_C", "BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_2_OnMinigameAssignmentChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABuildingToy_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_2_OnMinigameAssignmentChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildingToy_C", "BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_2_OnMinigameAssignmentChanged__DelegateSignature");
+
+	Params::ABuildingToy_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_2_OnMinigameAssignmentChanged__DelegateSignature_Params Parms{};
 
 	Parms.Minigame = Minigame;
 
@@ -352,9 +414,12 @@ void ABuildingToy_C::BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_2_O
 
 void ABuildingToy_C::On_Play_Mode_Changed(class AFortMinigame* Minigame, bool bIsInPlayMode)
 {
-	static auto Func = Class->GetFunction("BuildingToy_C", "On Play Mode Changed");
+	static class UFunction* Func = nullptr;
 
-	Params::ABuildingToy_C_On_Play_Mode_Changed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildingToy_C", "On Play Mode Changed");
+
+	Params::ABuildingToy_C_On_Play_Mode_Changed_Params Parms{};
 
 	Parms.Minigame = Minigame;
 	Parms.bIsInPlayMode = bIsInPlayMode;
@@ -385,9 +450,12 @@ void ABuildingToy_C::On_Play_Mode_Changed(class AFortMinigame* Minigame, bool bI
 
 void ABuildingToy_C::ExecuteUbergraph_BuildingToy(int32 EntryPoint, bool CallFunc_HasAuthority_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, bool CallFunc_HasAuthority_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_2, class AActor* Temp_object_Variable, class AFortMinigame* K2Node_ComponentBoundEvent_Minigame, bool CallFunc_IsInPlayMode_Play_Mode, class AFortMinigame* K2Node_CustomEvent_Minigame, bool K2Node_CustomEvent_bIsInPlayMode)
 {
-	static auto Func = Class->GetFunction("BuildingToy_C", "ExecuteUbergraph_BuildingToy");
+	static class UFunction* Func = nullptr;
 
-	Params::ABuildingToy_C_ExecuteUbergraph_BuildingToy_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildingToy_C", "ExecuteUbergraph_BuildingToy");
+
+	Params::ABuildingToy_C_ExecuteUbergraph_BuildingToy_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -411,6 +479,4 @@ void ABuildingToy_C::ExecuteUbergraph_BuildingToy(int32 EntryPoint, bool CallFun
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

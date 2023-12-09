@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_SurfaceChange_Ice_IceCheckOnTimer.GA_SurfaceChange_Ice_IceCheckOnTimer_C
+// (None)
+
+class UClass* UGA_SurfaceChange_Ice_IceCheckOnTimer_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_SurfaceChange_Ice_IceCheckOnTimer_C");
+
+	return Clss;
+}
+
+
+// GA_SurfaceChange_Ice_IceCheckOnTimer_C GA_SurfaceChange_Ice_IceCheckOnTimer.Default__GA_SurfaceChange_Ice_IceCheckOnTimer_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_SurfaceChange_Ice_IceCheckOnTimer_C* UGA_SurfaceChange_Ice_IceCheckOnTimer_C::GetDefaultObj()
+{
+	static class UGA_SurfaceChange_Ice_IceCheckOnTimer_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_SurfaceChange_Ice_IceCheckOnTimer_C*>(UGA_SurfaceChange_Ice_IceCheckOnTimer_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_SurfaceChange_Ice_IceCheckOnTimer.GA_SurfaceChange_Ice_IceCheckOnTimer_C.K2_ActivateAbility
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UGA_SurfaceChange_Ice_IceCheckOnTimer_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_SurfaceChange_Ice_IceCheckOnTimer_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SurfaceChange_Ice_IceCheckOnTimer_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SurfaceChange_Ice_IceCheckOnTimer_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UGA_SurfaceChange_Ice_IceCheckOnTimer_C::K2_ActivateAbility()
 
 void UGA_SurfaceChange_Ice_IceCheckOnTimer_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GA_SurfaceChange_Ice_IceCheckOnTimer_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SurfaceChange_Ice_IceCheckOnTimer_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SurfaceChange_Ice_IceCheckOnTimer_C", "K2_OnEndAbility");
+
+	Params::UGA_SurfaceChange_Ice_IceCheckOnTimer_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -55,12 +85,14 @@ void UGA_SurfaceChange_Ice_IceCheckOnTimer_C::K2_OnEndAbility(bool bWasCancelled
 
 void UGA_SurfaceChange_Ice_IceCheckOnTimer_C::TraceForTerrain()
 {
-	static auto Func = Class->GetFunction("GA_SurfaceChange_Ice_IceCheckOnTimer_C", "TraceForTerrain");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SurfaceChange_Ice_IceCheckOnTimer_C_TraceForTerrain_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SurfaceChange_Ice_IceCheckOnTimer_C", "TraceForTerrain");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -71,12 +103,14 @@ void UGA_SurfaceChange_Ice_IceCheckOnTimer_C::TraceForTerrain()
 
 void UGA_SurfaceChange_Ice_IceCheckOnTimer_C::RemoveIceGE()
 {
-	static auto Func = Class->GetFunction("GA_SurfaceChange_Ice_IceCheckOnTimer_C", "RemoveIceGE");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SurfaceChange_Ice_IceCheckOnTimer_C_RemoveIceGE_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SurfaceChange_Ice_IceCheckOnTimer_C", "RemoveIceGE");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -111,9 +145,12 @@ void UGA_SurfaceChange_Ice_IceCheckOnTimer_C::RemoveIceGE()
 
 void UGA_SurfaceChange_Ice_IceCheckOnTimer_C::ExecuteUbergraph_GA_SurfaceChange_Ice_IceCheckOnTimer(int32 EntryPoint, TArray<class AActor*>& Temp_object_Variable, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_1, const struct FHitResult& CallFunc_LineTraceSingle_OutHit, bool CallFunc_LineTraceSingle_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class EPhysicalSurface CallFunc_GetFortPhysicalSurface_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, bool K2Node_Event_bWasCancelled, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_K2_IsTimerActiveHandle_ReturnValue, TArray<class AActor*>& Temp_object_Variable_1, const struct FHitResult& CallFunc_LineTraceSingle_OutHit_1, bool CallFunc_LineTraceSingle_ReturnValue_1, enum class EPhysicalSurface CallFunc_GetFortPhysicalSurface_ReturnValue_1, bool K2Node_SwitchEnum_CmpSuccess_1)
 {
-	static auto Func = Class->GetFunction("GA_SurfaceChange_Ice_IceCheckOnTimer_C", "ExecuteUbergraph_GA_SurfaceChange_Ice_IceCheckOnTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SurfaceChange_Ice_IceCheckOnTimer_C_ExecuteUbergraph_GA_SurfaceChange_Ice_IceCheckOnTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SurfaceChange_Ice_IceCheckOnTimer_C", "ExecuteUbergraph_GA_SurfaceChange_Ice_IceCheckOnTimer");
+
+	Params::UGA_SurfaceChange_Ice_IceCheckOnTimer_C_ExecuteUbergraph_GA_SurfaceChange_Ice_IceCheckOnTimer_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -146,6 +183,4 @@ void UGA_SurfaceChange_Ice_IceCheckOnTimer_C::ExecuteUbergraph_GA_SurfaceChange_
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

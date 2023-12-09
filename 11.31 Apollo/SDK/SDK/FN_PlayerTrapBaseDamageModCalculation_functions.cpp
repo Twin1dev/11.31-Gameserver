@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass PlayerTrapBaseDamageModCalculation.PlayerTrapBaseDamageModCalculation_C
+// (None)
+
+class UClass* UPlayerTrapBaseDamageModCalculation_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerTrapBaseDamageModCalculation_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// PlayerTrapBaseDamageModCalculation_C PlayerTrapBaseDamageModCalculation.Default__PlayerTrapBaseDamageModCalculation_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerTrapBaseDamageModCalculation_C* UPlayerTrapBaseDamageModCalculation_C::GetDefaultObj()
+{
+	static class UPlayerTrapBaseDamageModCalculation_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerTrapBaseDamageModCalculation_C*>(UPlayerTrapBaseDamageModCalculation_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

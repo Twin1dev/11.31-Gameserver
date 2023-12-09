@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_Prj_Athena_PlaysetGrenade.B_Prj_Athena_PlaysetGrenade_C
+// (Actor)
+
+class UClass* AB_Prj_Athena_PlaysetGrenade_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Prj_Athena_PlaysetGrenade_C");
+
+	return Clss;
+}
+
+
+// B_Prj_Athena_PlaysetGrenade_C B_Prj_Athena_PlaysetGrenade.Default__B_Prj_Athena_PlaysetGrenade_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Prj_Athena_PlaysetGrenade_C* AB_Prj_Athena_PlaysetGrenade_C::GetDefaultObj()
+{
+	static class AB_Prj_Athena_PlaysetGrenade_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Prj_Athena_PlaysetGrenade_C*>(AB_Prj_Athena_PlaysetGrenade_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_Prj_Athena_PlaysetGrenade.B_Prj_Athena_PlaysetGrenade_C.SetPlaysetData
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void AB_Prj_Athena_PlaysetGrenade_C::SetPlaysetData(class UFortPlaysetItemDefinition* NewPlayset)
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "SetPlaysetData");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_PlaysetGrenade_C_SetPlaysetData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "SetPlaysetData");
+
+	Params::AB_Prj_Athena_PlaysetGrenade_C_SetPlaysetData_Params Parms{};
 
 	Parms.NewPlayset = NewPlayset;
 
@@ -49,9 +77,12 @@ void AB_Prj_Athena_PlaysetGrenade_C::SetPlaysetData(class UFortPlaysetItemDefini
 
 void AB_Prj_Athena_PlaysetGrenade_C::CalculateCardinalDirection(class APawn* CallFunc_GetInstigator_ReturnValue, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_Abs_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, float CallFunc_Abs_ReturnValue_1, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue_1, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "CalculateCardinalDirection");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_PlaysetGrenade_C_CalculateCardinalDirection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "CalculateCardinalDirection");
+
+	Params::AB_Prj_Athena_PlaysetGrenade_C_CalculateCardinalDirection_Params Parms{};
 
 	Parms.CallFunc_GetInstigator_ReturnValue = CallFunc_GetInstigator_ReturnValue;
 	Parms.CallFunc_GetActorForwardVector_ReturnValue = CallFunc_GetActorForwardVector_ReturnValue;
@@ -106,9 +137,12 @@ void AB_Prj_Athena_PlaysetGrenade_C::CalculateCardinalDirection(class APawn* Cal
 
 void AB_Prj_Athena_PlaysetGrenade_C::SetBaseDestination(struct FHitResult& Hit, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, int32 CallFunc_Round_ReturnValue, int32 CallFunc_Round_ReturnValue_1, float CallFunc_Multiply_IntFloat_ReturnValue, float CallFunc_Multiply_IntFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue_2, int32 CallFunc_Round_ReturnValue_2, float CallFunc_Multiply_IntFloat_ReturnValue_2, const struct FVector& CallFunc_MakeVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "SetBaseDestination");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_PlaysetGrenade_C_SetBaseDestination_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "SetBaseDestination");
+
+	Params::AB_Prj_Athena_PlaysetGrenade_C_SetBaseDestination_Params Parms{};
 
 	Parms.Hit = Hit;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -154,9 +188,12 @@ void AB_Prj_Athena_PlaysetGrenade_C::SetBaseDestination(struct FHitResult& Hit, 
 
 void AB_Prj_Athena_PlaysetGrenade_C::UserConstructionScript(bool CallFunc_IsDedicatedServer_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_PlaysetGrenade_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "UserConstructionScript");
+
+	Params::AB_Prj_Athena_PlaysetGrenade_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 
@@ -172,9 +209,12 @@ void AB_Prj_Athena_PlaysetGrenade_C::UserConstructionScript(bool CallFunc_IsDedi
 
 void AB_Prj_Athena_PlaysetGrenade_C::OnLoaded_3645F4484F4ECED813C69D92F55C7A1F(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "OnLoaded_3645F4484F4ECED813C69D92F55C7A1F");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_PlaysetGrenade_C_OnLoaded_3645F4484F4ECED813C69D92F55C7A1F_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "OnLoaded_3645F4484F4ECED813C69D92F55C7A1F");
+
+	Params::AB_Prj_Athena_PlaysetGrenade_C_OnLoaded_3645F4484F4ECED813C69D92F55C7A1F_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -190,9 +230,12 @@ void AB_Prj_Athena_PlaysetGrenade_C::OnLoaded_3645F4484F4ECED813C69D92F55C7A1F(c
 
 void AB_Prj_Athena_PlaysetGrenade_C::OnStop(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "OnStop");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_PlaysetGrenade_C_OnStop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "OnStop");
+
+	Params::AB_Prj_Athena_PlaysetGrenade_C_OnStop_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -209,9 +252,12 @@ void AB_Prj_Athena_PlaysetGrenade_C::OnStop(struct FHitResult& Hit)
 
 void AB_Prj_Athena_PlaysetGrenade_C::OnExploded(TArray<class AActor*>& HitActors, TArray<struct FHitResult>& HitResults)
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "OnExploded");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_PlaysetGrenade_C_OnExploded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "OnExploded");
+
+	Params::AB_Prj_Athena_PlaysetGrenade_C_OnExploded_Params Parms{};
 
 	Parms.HitActors = HitActors;
 	Parms.HitResults = HitResults;
@@ -235,9 +281,12 @@ void AB_Prj_Athena_PlaysetGrenade_C::OnExploded(TArray<class AActor*>& HitActors
 
 void AB_Prj_Athena_PlaysetGrenade_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "ReceiveHit");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_PlaysetGrenade_C_ReceiveHit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "ReceiveHit");
+
+	Params::AB_Prj_Athena_PlaysetGrenade_C_ReceiveHit_Params Parms{};
 
 	Parms.MyComp = MyComp;
 	Parms.Other = Other;
@@ -259,12 +308,14 @@ void AB_Prj_Athena_PlaysetGrenade_C::ReceiveHit(class UPrimitiveComponent* MyCom
 
 void AB_Prj_Athena_PlaysetGrenade_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_PlaysetGrenade_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -276,9 +327,12 @@ void AB_Prj_Athena_PlaysetGrenade_C::ReceiveBeginPlay()
 
 void AB_Prj_Athena_PlaysetGrenade_C::ReceiveEndPlay(enum class EEndPlayReason EndPlayReason)
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "ReceiveEndPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_PlaysetGrenade_C_ReceiveEndPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "ReceiveEndPlay");
+
+	Params::AB_Prj_Athena_PlaysetGrenade_C_ReceiveEndPlay_Params Parms{};
 
 	Parms.EndPlayReason = EndPlayReason;
 
@@ -296,9 +350,12 @@ void AB_Prj_Athena_PlaysetGrenade_C::ReceiveEndPlay(enum class EEndPlayReason En
 
 void AB_Prj_Athena_PlaysetGrenade_C::SpawnPlayspaceServer(class UFortPlaysetItemDefinition* Playset, const struct FVector& Location, const struct FRotator& Rotation)
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "SpawnPlayspaceServer");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_PlaysetGrenade_C_SpawnPlayspaceServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "SpawnPlayspaceServer");
+
+	Params::AB_Prj_Athena_PlaysetGrenade_C_SpawnPlayspaceServer_Params Parms{};
 
 	Parms.Playset = Playset;
 	Parms.Location = Location;
@@ -316,9 +373,12 @@ void AB_Prj_Athena_PlaysetGrenade_C::SpawnPlayspaceServer(class UFortPlaysetItem
 
 void AB_Prj_Athena_PlaysetGrenade_C::Play_Spawn_Prefab_Sound(const struct FVector& Location)
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "Play Spawn Prefab Sound");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_PlaysetGrenade_C_Play_Spawn_Prefab_Sound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "Play Spawn Prefab Sound");
+
+	Params::AB_Prj_Athena_PlaysetGrenade_C_Play_Spawn_Prefab_Sound_Params Parms{};
 
 	Parms.Location = Location;
 
@@ -405,9 +465,12 @@ void AB_Prj_Athena_PlaysetGrenade_C::Play_Spawn_Prefab_Sound(const struct FVecto
 
 void AB_Prj_Athena_PlaysetGrenade_C::ExecuteUbergraph_B_Prj_Athena_PlaysetGrenade(int32 EntryPoint, class UObject* K2Node_CustomEvent_Loaded, TArray<class AActor*>& K2Node_Event_HitActors, TArray<struct FHitResult>& K2Node_Event_HitResults, bool Temp_bool_Has_Been_Initd_Variable, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class UPrimitiveComponent* K2Node_Event_MyComp, class AActor* K2Node_Event_Other, class UPrimitiveComponent* K2Node_Event_OtherComp, bool K2Node_Event_bSelfMoved, const struct FVector& K2Node_Event_HitLocation, const struct FVector& K2Node_Event_HitNormal, const struct FVector& K2Node_Event_NormalImpulse, const struct FHitResult& K2Node_Event_Hit, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, int32 CallFunc_Round_ReturnValue, int32 CallFunc_Round_ReturnValue_1, float CallFunc_Multiply_IntFloat_ReturnValue, float CallFunc_Multiply_IntFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue_2, int32 CallFunc_Round_ReturnValue_2, float CallFunc_Multiply_IntFloat_ReturnValue_2, float CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FHitResult& K2Node_Event_Hit_1, const struct FTransform& CallFunc_MakeTransform_ReturnValue, const struct FHitResult& CallFunc_K2_SetActorTransform_SweepHitResult, bool CallFunc_K2_SetActorTransform_ReturnValue, enum class EEvaluateCurveTableResult CallFunc_EvaluateCurveTableRow_OutResult, float CallFunc_EvaluateCurveTableRow_OutXY, bool K2Node_SwitchEnum_CmpSuccess, bool Temp_bool_IsClosed_Variable, enum class EEndPlayReason K2Node_Event_EndPlayReason, bool K2Node_SwitchEnum_CmpSuccess_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UFortPlaysetItemDefinition* K2Node_CustomEvent_Playset, const struct FVector& K2Node_CustomEvent_Location_1, const struct FRotator& K2Node_CustomEvent_Rotation, float CallFunc_Map_Find_Value_1, bool CallFunc_Map_Find_ReturnValue_1, const struct FRotator& CallFunc_MakeRotator_ReturnValue_1, class AFortVolumeManager* CallFunc_GetVolumeManager_OutVolumeManager, enum class EVolumeValidityResult CallFunc_GetVolumeManager_OutIsValid, const struct FRotator& CallFunc_ComposeRotators_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess_2, const struct FVector& CallFunc_AdjustToFinalLocation_ReturnValue, class AFortVolume* CallFunc_SpawnVolume_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerControllerAthena* K2Node_DynamicCast_AsFort_Player_Controller_Athena, bool K2Node_DynamicCast_bSuccess, class AFortVolume* CallFunc_CanPlayerCreateInCurrentVolume_OutCurrentVolume, bool CallFunc_CanPlayerCreateInCurrentVolume_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2, class UObject* Temp_object_Variable, const struct FVector& K2Node_CustomEvent_Location, class USoundBase* K2Node_DynamicCast_AsSound_Base, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "ExecuteUbergraph_B_Prj_Athena_PlaysetGrenade");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Athena_PlaysetGrenade_C_ExecuteUbergraph_B_Prj_Athena_PlaysetGrenade_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Athena_PlaysetGrenade_C", "ExecuteUbergraph_B_Prj_Athena_PlaysetGrenade");
+
+	Params::AB_Prj_Athena_PlaysetGrenade_C_ExecuteUbergraph_B_Prj_Athena_PlaysetGrenade_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_Loaded = K2Node_CustomEvent_Loaded;
@@ -488,6 +551,4 @@ void AB_Prj_Athena_PlaysetGrenade_C::ExecuteUbergraph_B_Prj_Athena_PlaysetGrenad
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

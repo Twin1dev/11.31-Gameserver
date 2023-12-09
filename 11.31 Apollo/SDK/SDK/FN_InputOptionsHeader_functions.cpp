@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass InputOptionsHeader.InputOptionsHeader_C
+// (None)
+
+class UClass* UInputOptionsHeader_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("InputOptionsHeader_C");
+
+	return Clss;
+}
+
+
+// InputOptionsHeader_C InputOptionsHeader.Default__InputOptionsHeader_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UInputOptionsHeader_C* UInputOptionsHeader_C::GetDefaultObj()
+{
+	static class UInputOptionsHeader_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UInputOptionsHeader_C*>(UInputOptionsHeader_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function InputOptionsHeader.InputOptionsHeader_C.BP_OnEntryReleased
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UInputOptionsHeader_C::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("InputOptionsHeader_C", "BP_OnEntryReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputOptionsHeader_C_BP_OnEntryReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputOptionsHeader_C", "BP_OnEntryReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UInputOptionsHeader_C::BP_OnEntryReleased()
 
 void UInputOptionsHeader_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("InputOptionsHeader_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputOptionsHeader_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputOptionsHeader_C", "BP_OnItemExpansionChanged");
+
+	Params::UInputOptionsHeader_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -56,9 +86,12 @@ void UInputOptionsHeader_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UInputOptionsHeader_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("InputOptionsHeader_C", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputOptionsHeader_C_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputOptionsHeader_C", "BP_OnItemSelectionChanged");
+
+	Params::UInputOptionsHeader_C_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -74,9 +107,12 @@ void UInputOptionsHeader_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UInputOptionsHeader_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("InputOptionsHeader_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputOptionsHeader_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputOptionsHeader_C", "OnListItemObjectSet");
+
+	Params::UInputOptionsHeader_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -97,9 +133,12 @@ void UInputOptionsHeader_C::OnListItemObjectSet(class UObject* ListItemObject)
 
 void UInputOptionsHeader_C::ExecuteUbergraph_InputOptionsHeader(int32 EntryPoint, bool K2Node_Event_bIsExpanded, bool K2Node_Event_bIsSelected, class UObject* K2Node_Event_ListItemObject, class UFortOptionsCategoryHeader* K2Node_DynamicCast_AsFort_Options_Category_Header, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("InputOptionsHeader_C", "ExecuteUbergraph_InputOptionsHeader");
+	static class UFunction* Func = nullptr;
 
-	Params::UInputOptionsHeader_C_ExecuteUbergraph_InputOptionsHeader_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("InputOptionsHeader_C", "ExecuteUbergraph_InputOptionsHeader");
+
+	Params::UInputOptionsHeader_C_ExecuteUbergraph_InputOptionsHeader_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bIsExpanded = K2Node_Event_bIsExpanded;
@@ -114,6 +153,4 @@ void UInputOptionsHeader_C::ExecuteUbergraph_InputOptionsHeader(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

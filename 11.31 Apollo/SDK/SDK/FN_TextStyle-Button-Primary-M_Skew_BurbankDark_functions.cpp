@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TextStyle-Button-Primary-M_Skew_BurbankDark.TextStyle-Button-Primary-M_Skew_BurbankDark_C
+// (None)
+
+class UClass* UTextStyleMinusButtonMinusPrimaryMinusM_Skew_BurbankDark_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextStyle-Button-Primary-M_Skew_BurbankDark_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// TextStyle-Button-Primary-M_Skew_BurbankDark_C TextStyle-Button-Primary-M_Skew_BurbankDark.Default__TextStyle-Button-Primary-M_Skew_BurbankDark_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTextStyleMinusButtonMinusPrimaryMinusM_Skew_BurbankDark_C* UTextStyleMinusButtonMinusPrimaryMinusM_Skew_BurbankDark_C::GetDefaultObj()
+{
+	static class UTextStyleMinusButtonMinusPrimaryMinusM_Skew_BurbankDark_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextStyleMinusButtonMinusPrimaryMinusM_Skew_BurbankDark_C*>(UTextStyleMinusButtonMinusPrimaryMinusM_Skew_BurbankDark_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

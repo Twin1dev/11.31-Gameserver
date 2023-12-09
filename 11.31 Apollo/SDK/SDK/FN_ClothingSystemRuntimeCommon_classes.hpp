@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class UClothingAssetCustomData : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClothingAssetCustomData");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClothingAssetCustomData* GetDefaultObj();
 
 };
 
@@ -40,14 +34,11 @@ public:
 	TArray<class FName>                          UsedBoneNames;                                     // 0x88(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<int32>                                UsedBoneIndices;                                   // 0x98(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                        ReferenceBoneIndex;                                // 0xA8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4347[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2398[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClothingAssetCustomData*              CustomData;                                        // 0xB0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClothingAssetCommon");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClothingAssetCommon* GetDefaultObj();
 
 };
 
@@ -58,18 +49,13 @@ class UClothLODDataCommon : public UObject
 public:
 	class UClothPhysicalMeshDataBase*            PhysicalMeshData;                                  // 0x28(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FClothCollisionData                   CollisionData;                                     // 0x30(0x40)(Edit, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4348[0x20];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2399[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClothLODDataCommon");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClothLODDataCommon* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

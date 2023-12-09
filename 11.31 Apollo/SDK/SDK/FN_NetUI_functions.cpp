@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class NetUI.BadNetworkIndicator
+// (None)
+
+class UClass* UBadNetworkIndicator::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BadNetworkIndicator");
+
+	return Clss;
+}
+
+
+// BadNetworkIndicator NetUI.Default__BadNetworkIndicator
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UBadNetworkIndicator* UBadNetworkIndicator::GetDefaultObj()
+{
+	static class UBadNetworkIndicator* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBadNetworkIndicator*>(UBadNetworkIndicator::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function NetUI.BadNetworkIndicator.UpdateDisplay
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UBadNetworkIndicator::UpdateDisplay()
 {
-	static auto Func = Class->GetFunction("BadNetworkIndicator", "UpdateDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::UBadNetworkIndicator_UpdateDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BadNetworkIndicator", "UpdateDisplay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,18 +65,21 @@ void UBadNetworkIndicator::UpdateDisplay()
 
 bool UBadNetworkIndicator::ShouldDisplay()
 {
-	static auto Func = Class->GetFunction("BadNetworkIndicator", "ShouldDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::UBadNetworkIndicator_ShouldDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BadNetworkIndicator", "ShouldDisplay");
+
+	Params::UBadNetworkIndicator_ShouldDisplay_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -63,18 +93,21 @@ bool UBadNetworkIndicator::ShouldDisplay()
 
 bool UBadNetworkIndicator::HasSeverePing()
 {
-	static auto Func = Class->GetFunction("BadNetworkIndicator", "HasSeverePing");
+	static class UFunction* Func = nullptr;
 
-	Params::UBadNetworkIndicator_HasSeverePing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BadNetworkIndicator", "HasSeverePing");
+
+	Params::UBadNetworkIndicator_HasSeverePing_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -88,18 +121,21 @@ bool UBadNetworkIndicator::HasSeverePing()
 
 bool UBadNetworkIndicator::HasSeverePacketLoss()
 {
-	static auto Func = Class->GetFunction("BadNetworkIndicator", "HasSeverePacketLoss");
+	static class UFunction* Func = nullptr;
 
-	Params::UBadNetworkIndicator_HasSeverePacketLoss_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BadNetworkIndicator", "HasSeverePacketLoss");
+
+	Params::UBadNetworkIndicator_HasSeverePacketLoss_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -113,18 +149,21 @@ bool UBadNetworkIndicator::HasSeverePacketLoss()
 
 bool UBadNetworkIndicator::HasBadPing()
 {
-	static auto Func = Class->GetFunction("BadNetworkIndicator", "HasBadPing");
+	static class UFunction* Func = nullptr;
 
-	Params::UBadNetworkIndicator_HasBadPing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BadNetworkIndicator", "HasBadPing");
+
+	Params::UBadNetworkIndicator_HasBadPing_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -138,18 +177,21 @@ bool UBadNetworkIndicator::HasBadPing()
 
 bool UBadNetworkIndicator::HasBadPacketLoss()
 {
-	static auto Func = Class->GetFunction("BadNetworkIndicator", "HasBadPacketLoss");
+	static class UFunction* Func = nullptr;
 
-	Params::UBadNetworkIndicator_HasBadPacketLoss_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BadNetworkIndicator", "HasBadPacketLoss");
+
+	Params::UBadNetworkIndicator_HasBadPacketLoss_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -163,18 +205,21 @@ bool UBadNetworkIndicator::HasBadPacketLoss()
 
 float UBadNetworkIndicator::GetPing()
 {
-	static auto Func = Class->GetFunction("BadNetworkIndicator", "GetPing");
+	static class UFunction* Func = nullptr;
 
-	Params::UBadNetworkIndicator_GetPing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BadNetworkIndicator", "GetPing");
+
+	Params::UBadNetworkIndicator_GetPing_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -188,21 +233,52 @@ float UBadNetworkIndicator::GetPing()
 
 float UBadNetworkIndicator::GetPacketLoss()
 {
-	static auto Func = Class->GetFunction("BadNetworkIndicator", "GetPacketLoss");
+	static class UFunction* Func = nullptr;
 
-	Params::UBadNetworkIndicator_GetPacketLoss_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BadNetworkIndicator", "GetPacketLoss");
+
+	Params::UBadNetworkIndicator_GetPacketLoss_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class NetUI.NetDebugWidget
+// (None)
+
+class UClass* UNetDebugWidget::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("NetDebugWidget");
+
+	return Clss;
+}
+
+
+// NetDebugWidget NetUI.Default__NetDebugWidget
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UNetDebugWidget* UNetDebugWidget::GetDefaultObj()
+{
+	static class UNetDebugWidget* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UNetDebugWidget*>(UNetDebugWidget::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -212,18 +288,20 @@ float UBadNetworkIndicator::GetPacketLoss()
 
 void UNetDebugWidget::StopTimer()
 {
-	static auto Func = Class->GetFunction("NetDebugWidget", "StopTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::UNetDebugWidget_StopTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("NetDebugWidget", "StopTimer");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -234,23 +312,51 @@ void UNetDebugWidget::StopTimer()
 
 void UNetDebugWidget::StartTimer()
 {
-	static auto Func = Class->GetFunction("NetDebugWidget", "StartTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::UNetDebugWidget_StartTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("NetDebugWidget", "StartTimer");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class NetUI.NetGraph
+// (None)
+
+class UClass* UNetGraph::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("NetGraph");
+
+	return Clss;
+}
+
+
+// NetGraph NetUI.Default__NetGraph
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UNetGraph* UNetGraph::GetDefaultObj()
+{
+	static class UNetGraph* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UNetGraph*>(UNetGraph::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

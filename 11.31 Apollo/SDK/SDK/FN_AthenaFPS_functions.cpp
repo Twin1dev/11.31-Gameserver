@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaFPS.AthenaFPS_C
+// (None)
+
+class UClass* UAthenaFPS_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaFPS_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// AthenaFPS_C AthenaFPS.Default__AthenaFPS_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaFPS_C* UAthenaFPS_C::GetDefaultObj()
+{
+	static class UAthenaFPS_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaFPS_C*>(UAthenaFPS_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

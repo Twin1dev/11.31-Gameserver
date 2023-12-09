@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class UBlueprintGameplayStatsLibrary : public UBlueprintFunctionLibrary
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BlueprintGameplayStatsLibrary");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UBlueprintGameplayStatsLibrary* GetDefaultObj();
 
 	bool NotEqual_GameplayStatTagGameplayStatTag(const struct FGameplayStatTag& A, const struct FGameplayStatTag& B);
 	bool EqualEqual_GameplayStatTagGameplayStatTag(const struct FGameplayStatTag& A, const struct FGameplayStatTag& B);
@@ -34,18 +28,13 @@ class UGameplayTagTableManager : public UDataAsset
 {
 public:
 	TArray<struct FManagedGameplayTagDataTableItem> Tables;                                            // 0x30(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_236A[0x58];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_17EF[0x58];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GameplayTagTableManager");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGameplayTagTableManager* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

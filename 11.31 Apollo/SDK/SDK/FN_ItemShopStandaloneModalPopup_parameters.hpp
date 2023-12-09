@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -29,19 +26,12 @@ public:
 	bool                                         CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x179(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Temp_bool_Variable;                                // 0x17A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_BooleanOR_ReturnValue;                    // 0x17B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_65D6[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	struct FEventReply                           CallFunc_Handled_ReturnValue;                      // 0x180(0xB8)()
+	uint8                                        Pad_642C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FEventReply                           CallFunc_Handled_ReturnValue;                      // 0x180(0xB8)(None)
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x238(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_65D7[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	struct FEventReply                           CallFunc_Unhandled_ReturnValue;                    // 0x240(0xB8)()
-	struct FEventReply                           K2Node_Select_Default;                             // 0x2F8(0xB8)()
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ItemShopStandaloneModalPopup.ItemShopStandaloneModalPopup_C.Construct
-struct UItemShopStandaloneModalPopup_C_Construct_Params
-{
-public:
+	uint8                                        Pad_642D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FEventReply                           CallFunc_Unhandled_ReturnValue;                    // 0x240(0xB8)(None)
+	struct FEventReply                           K2Node_Select_Default;                             // 0x2F8(0xB8)(None)
 };
 
 // 0x8 (0x8 - 0x0)
@@ -58,7 +48,7 @@ struct UItemShopStandaloneModalPopup_C_ExecuteUbergraph_ItemShopStandaloneModalP
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_65D8[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_642E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x10(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue_1;              // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -67,6 +57,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

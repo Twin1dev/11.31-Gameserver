@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass PBWA_BG_StairT.PBWA_BG_StairT_C
+// (Actor)
+
+class UClass* APBWA_BG_StairT_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PBWA_BG_StairT_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// PBWA_BG_StairT_C PBWA_BG_StairT.Default__PBWA_BG_StairT_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class APBWA_BG_StairT_C* APBWA_BG_StairT_C::GetDefaultObj()
+{
+	static class APBWA_BG_StairT_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APBWA_BG_StairT_C*>(APBWA_BG_StairT_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

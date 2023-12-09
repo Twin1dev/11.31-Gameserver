@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass WorldLightingMenu.WorldLightingMenu_C
+// (Actor)
+
+class UClass* AWorldLightingMenu_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WorldLightingMenu_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// WorldLightingMenu_C WorldLightingMenu.Default__WorldLightingMenu_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AWorldLightingMenu_C* AWorldLightingMenu_C::GetDefaultObj()
+{
+	static class AWorldLightingMenu_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AWorldLightingMenu_C*>(AWorldLightingMenu_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

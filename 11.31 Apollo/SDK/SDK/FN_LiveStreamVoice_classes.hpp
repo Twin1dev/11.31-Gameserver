@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class ULiveStreamVoiceChannel : public UVoiceChannel
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LiveStreamVoiceChannel");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULiveStreamVoiceChannel* GetDefaultObj();
 
 };
 
@@ -32,13 +26,10 @@ class ULiveStreamVoiceSubsystem : public UGameInstanceSubsystem
 {
 public:
 	struct FVoiceSettings                        PlaybackSettings;                                  // 0x30(0x18)(NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1F72[0x10];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1156[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LiveStreamVoiceSubsystem");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULiveStreamVoiceSubsystem* GetDefaultObj();
 
 	void SetVoiceSettings(struct FVoiceSettings& InSettings);
 	void EnableLocalVoiceProcessing(uint8 LocalUserNum, bool bEnable);
@@ -47,6 +38,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

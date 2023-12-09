@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -49,11 +46,9 @@ enum class EGameplayTaskState : uint8
 struct FGameplayResourceSet
 {
 public:
-	uint8                                        Pad_1826[0x2];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_31E[0x2];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

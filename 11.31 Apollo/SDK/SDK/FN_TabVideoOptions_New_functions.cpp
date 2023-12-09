@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TabVideoOptions_New.TabVideoOptions_New_C
+// (None)
+
+class UClass* UTabVideoOptions_New_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TabVideoOptions_New_C");
+
+	return Clss;
+}
+
+
+// TabVideoOptions_New_C TabVideoOptions_New.Default__TabVideoOptions_New_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTabVideoOptions_New_C* UTabVideoOptions_New_C::GetDefaultObj()
+{
+	static class UTabVideoOptions_New_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTabVideoOptions_New_C*>(UTabVideoOptions_New_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TabVideoOptions_New.TabVideoOptions_New_C.OnComplete_7E19F26B42A808FDADDB569CFB68CCB7
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UTabVideoOptions_New_C::OnComplete_7E19F26B42A808FDADDB569CFB68CCB7(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_New_C", "OnComplete_7E19F26B42A808FDADDB569CFB68CCB7");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_New_C_OnComplete_7E19F26B42A808FDADDB569CFB68CCB7_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_New_C", "OnComplete_7E19F26B42A808FDADDB569CFB68CCB7");
+
+	Params::UTabVideoOptions_New_C_OnComplete_7E19F26B42A808FDADDB569CFB68CCB7_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -39,12 +67,14 @@ void UTabVideoOptions_New_C::OnComplete_7E19F26B42A808FDADDB569CFB68CCB7(class U
 
 void UTabVideoOptions_New_C::CenterOnTab()
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_New_C", "CenterOnTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_New_C_CenterOnTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_New_C", "CenterOnTab");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +86,12 @@ void UTabVideoOptions_New_C::CenterOnTab()
 
 void UTabVideoOptions_New_C::SettingValueChanged(float Value)
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_New_C", "SettingValueChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_New_C_SettingValueChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_New_C", "SettingValueChanged");
+
+	Params::UTabVideoOptions_New_C_SettingValueChanged_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -75,9 +108,12 @@ void UTabVideoOptions_New_C::SettingValueChanged(float Value)
 
 void UTabVideoOptions_New_C::BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature(class UFortSetting* Setting, class FName Action)
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_New_C", "BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_New_C_BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_New_C", "BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature");
+
+	Params::UTabVideoOptions_New_C_BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1_OnExecuteNamedActionBP__DelegateSignature_Params Parms{};
 
 	Parms.Setting = Setting;
 	Parms.Action = Action;
@@ -106,9 +142,12 @@ void UTabVideoOptions_New_C::BndEvt__Settings_Panel_K2Node_ComponentBoundEvent_1
 
 void UTabVideoOptions_New_C::ExecuteUbergraph_TabVideoOptions_New(int32 EntryPoint, class UUserWidget* K2Node_CustomEvent_UserWidget, class UUserWidget* Temp_object_Variable, class USafeZoneEditor_C* K2Node_DynamicCast_AsSafe_Zone_Editor, bool K2Node_DynamicCast_bSuccess, float K2Node_CustomEvent_Value, class UFortSetting* K2Node_ComponentBoundEvent_Setting, class FName K2Node_ComponentBoundEvent_Action, bool K2Node_SwitchName_CmpSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_New_C", "ExecuteUbergraph_TabVideoOptions_New");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_New_C_ExecuteUbergraph_TabVideoOptions_New_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_New_C", "ExecuteUbergraph_TabVideoOptions_New");
+
+	Params::UTabVideoOptions_New_C_ExecuteUbergraph_TabVideoOptions_New_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_UserWidget = K2Node_CustomEvent_UserWidget;
@@ -130,6 +169,4 @@ void UTabVideoOptions_New_C::ExecuteUbergraph_TabVideoOptions_New(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

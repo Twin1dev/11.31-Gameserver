@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass VaultWorld.VaultWorld_C
+// (Actor)
+
+class UClass* AVaultWorld_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VaultWorld_C");
+
+	return Clss;
+}
+
+
+// VaultWorld_C VaultWorld.Default__VaultWorld_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AVaultWorld_C* AVaultWorld_C::GetDefaultObj()
+{
+	static class AVaultWorld_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AVaultWorld_C*>(AVaultWorld_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function VaultWorld.VaultWorld_C.GetVaultRotator
@@ -24,9 +49,12 @@ namespace SDK
 
 void AVaultWorld_C::GetVaultRotator(class AVaultRotator_C** VaultRotator, class AVaultRotator_C* K2Node_DynamicCast_AsVault_Rotator, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("VaultWorld_C", "GetVaultRotator");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultWorld_C_GetVaultRotator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultWorld_C", "GetVaultRotator");
+
+	Params::AVaultWorld_C_GetVaultRotator_Params Parms{};
 
 	Parms.K2Node_DynamicCast_AsVault_Rotator = K2Node_DynamicCast_AsVault_Rotator;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
@@ -45,12 +73,14 @@ void AVaultWorld_C::GetVaultRotator(class AVaultRotator_C** VaultRotator, class 
 
 void AVaultWorld_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("VaultWorld_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultWorld_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultWorld_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -65,9 +95,12 @@ void AVaultWorld_C::ReceiveBeginPlay()
 
 void AVaultWorld_C::ExecuteUbergraph_VaultWorld(int32 EntryPoint, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class AFortStaticMeshActor* K2Node_DynamicCast_AsFort_Static_Mesh_Actor, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("VaultWorld_C", "ExecuteUbergraph_VaultWorld");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultWorld_C_ExecuteUbergraph_VaultWorld_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultWorld_C", "ExecuteUbergraph_VaultWorld");
+
+	Params::AVaultWorld_C_ExecuteUbergraph_VaultWorld_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
@@ -80,6 +113,4 @@ void AVaultWorld_C::ExecuteUbergraph_VaultWorld(int32 EntryPoint, class UMateria
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

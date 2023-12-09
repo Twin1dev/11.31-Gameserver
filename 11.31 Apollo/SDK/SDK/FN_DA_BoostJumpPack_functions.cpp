@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass DA_BoostJumpPack.DA_BoostJumpPack_C
+// (Actor)
+
+class UClass* ADA_BoostJumpPack_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DA_BoostJumpPack_C");
+
+	return Clss;
+}
+
+
+// DA_BoostJumpPack_C DA_BoostJumpPack.Default__DA_BoostJumpPack_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ADA_BoostJumpPack_C* ADA_BoostJumpPack_C::GetDefaultObj()
+{
+	static class ADA_BoostJumpPack_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ADA_BoostJumpPack_C*>(ADA_BoostJumpPack_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function DA_BoostJumpPack.DA_BoostJumpPack_C.IsOnGround
@@ -27,9 +52,12 @@ namespace SDK
 
 void ADA_BoostJumpPack_C::IsOnGround(bool* bOnGround, class APawn* CallFunc_GetInstigator_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsFalling_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("DA_BoostJumpPack_C", "IsOnGround");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_BoostJumpPack_C_IsOnGround_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_BoostJumpPack_C", "IsOnGround");
+
+	Params::ADA_BoostJumpPack_C_IsOnGround_Params Parms{};
 
 	Parms.CallFunc_GetInstigator_ReturnValue = CallFunc_GetInstigator_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Pawn = K2Node_DynamicCast_AsFort_Player_Pawn;
@@ -55,9 +83,12 @@ void ADA_BoostJumpPack_C::IsOnGround(bool* bOnGround, class APawn* CallFunc_GetI
 
 void ADA_BoostJumpPack_C::RaiseUsageError(struct FGameplayTagContainer& FailedReason, class APawn* CallFunc_GetInstigator_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("DA_BoostJumpPack_C", "RaiseUsageError");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_BoostJumpPack_C_RaiseUsageError_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_BoostJumpPack_C", "RaiseUsageError");
+
+	Params::ADA_BoostJumpPack_C_RaiseUsageError_Params Parms{};
 
 	Parms.FailedReason = FailedReason;
 	Parms.CallFunc_GetInstigator_ReturnValue = CallFunc_GetInstigator_ReturnValue;
@@ -76,9 +107,12 @@ void ADA_BoostJumpPack_C::RaiseUsageError(struct FGameplayTagContainer& FailedRe
 
 void ADA_BoostJumpPack_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 {
-	static auto Func = Class->GetFunction("DA_BoostJumpPack_C", "BPPressTrigger");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_BoostJumpPack_C_BPPressTrigger_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_BoostJumpPack_C", "BPPressTrigger");
+
+	Params::ADA_BoostJumpPack_C_BPPressTrigger_Params Parms{};
 
 	Parms.FortDecoHelper = FortDecoHelper;
 
@@ -102,9 +136,12 @@ void ADA_BoostJumpPack_C::BPPressTrigger(class AFortDecoHelper* FortDecoHelper)
 
 void ADA_BoostJumpPack_C::ExecuteUbergraph_DA_BoostJumpPack(int32 EntryPoint, bool CallFunc_IsErebus_ReturnValue, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, class AFortDecoHelper* K2Node_Event_FortDecoHelper, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool Temp_bool_Variable, const struct FGameplayTagContainer& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("DA_BoostJumpPack_C", "ExecuteUbergraph_DA_BoostJumpPack");
+	static class UFunction* Func = nullptr;
 
-	Params::ADA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("DA_BoostJumpPack_C", "ExecuteUbergraph_DA_BoostJumpPack");
+
+	Params::ADA_BoostJumpPack_C_ExecuteUbergraph_DA_BoostJumpPack_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsErebus_ReturnValue = CallFunc_IsErebus_ReturnValue;
@@ -122,6 +159,4 @@ void ADA_BoostJumpPack_C::ExecuteUbergraph_DA_BoostJumpPack(int32 EntryPoint, bo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

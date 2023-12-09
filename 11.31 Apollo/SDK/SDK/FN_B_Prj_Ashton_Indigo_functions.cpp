@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_Prj_Ashton_Indigo.B_Prj_Ashton_Indigo_C
+// (Actor)
+
+class UClass* AB_Prj_Ashton_Indigo_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Prj_Ashton_Indigo_C");
+
+	return Clss;
+}
+
+
+// B_Prj_Ashton_Indigo_C B_Prj_Ashton_Indigo.Default__B_Prj_Ashton_Indigo_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Prj_Ashton_Indigo_C* AB_Prj_Ashton_Indigo_C::GetDefaultObj()
+{
+	static class AB_Prj_Ashton_Indigo_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Prj_Ashton_Indigo_C*>(AB_Prj_Ashton_Indigo_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_Prj_Ashton_Indigo.B_Prj_Ashton_Indigo_C.OnRep_Impact Location
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void AB_Prj_Ashton_Indigo_C::OnRep_Impact_Location(bool CallFunc_IsDedicatedServer_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "OnRep_Impact Location");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ashton_Indigo_C_OnRep_Impact_Location_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "OnRep_Impact Location");
+
+	Params::AB_Prj_Ashton_Indigo_C_OnRep_Impact_Location_Params Parms{};
 
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 
@@ -39,12 +67,14 @@ void AB_Prj_Ashton_Indigo_C::OnRep_Impact_Location(bool CallFunc_IsDedicatedServ
 
 void AB_Prj_Ashton_Indigo_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ashton_Indigo_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +86,12 @@ void AB_Prj_Ashton_Indigo_C::ReceiveBeginPlay()
 
 void AB_Prj_Ashton_Indigo_C::OnStop(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "OnStop");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ashton_Indigo_C_OnStop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "OnStop");
+
+	Params::AB_Prj_Ashton_Indigo_C_OnStop_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -73,12 +106,14 @@ void AB_Prj_Ashton_Indigo_C::OnStop(struct FHitResult& Hit)
 
 void AB_Prj_Ashton_Indigo_C::Play_Explosion_Sound()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "Play Explosion Sound");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ashton_Indigo_C_Play_Explosion_Sound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "Play Explosion Sound");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -89,12 +124,14 @@ void AB_Prj_Ashton_Indigo_C::Play_Explosion_Sound()
 
 void AB_Prj_Ashton_Indigo_C::Reset_Explosion_Sound()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "Reset Explosion Sound");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ashton_Indigo_C_Reset_Explosion_Sound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "Reset Explosion Sound");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,12 +142,14 @@ void AB_Prj_Ashton_Indigo_C::Reset_Explosion_Sound()
 
 void AB_Prj_Ashton_Indigo_C::Timeout()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "Timeout");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ashton_Indigo_C_Timeout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "Timeout");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -121,12 +160,14 @@ void AB_Prj_Ashton_Indigo_C::Timeout()
 
 void AB_Prj_Ashton_Indigo_C::Explosion_VFX()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "Explosion VFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ashton_Indigo_C_Explosion_VFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "Explosion VFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -137,12 +178,14 @@ void AB_Prj_Ashton_Indigo_C::Explosion_VFX()
 
 void AB_Prj_Ashton_Indigo_C::OnHomingPassedTarget()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "OnHomingPassedTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ashton_Indigo_C_OnHomingPassedTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "OnHomingPassedTarget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -153,12 +196,14 @@ void AB_Prj_Ashton_Indigo_C::OnHomingPassedTarget()
 
 void AB_Prj_Ashton_Indigo_C::OnReachedLockTargetDistanceThreshold()
 {
-	static auto Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "OnReachedLockTargetDistanceThreshold");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ashton_Indigo_C_OnReachedLockTargetDistanceThreshold_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "OnReachedLockTargetDistanceThreshold");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -244,9 +289,12 @@ void AB_Prj_Ashton_Indigo_C::OnReachedLockTargetDistanceThreshold()
 
 void AB_Prj_Ashton_Indigo_C::ExecuteUbergraph_B_Prj_Ashton_Indigo(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool Temp_bool_Has_Been_Initd_Variable, bool Temp_bool_IsClosed_Variable, bool CallFunc_HasAuthority_ReturnValue, bool Temp_bool_Variable, bool CallFunc_HasAuthority_ReturnValue_1, const struct FHitResult& K2Node_Event_Hit, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable_1, float CallFunc_RandomFloatInRange_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool Temp_bool_IsClosed_Variable_1, bool CallFunc_BreakHitResult_bBlockingHit_1, bool CallFunc_BreakHitResult_bInitialOverlap_1, float CallFunc_BreakHitResult_Time_1, float CallFunc_BreakHitResult_Distance_1, const struct FVector& CallFunc_BreakHitResult_Location_1, const struct FVector& CallFunc_BreakHitResult_ImpactPoint_1, const struct FVector& CallFunc_BreakHitResult_Normal_1, const struct FVector& CallFunc_BreakHitResult_ImpactNormal_1, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat_1, class AActor* CallFunc_BreakHitResult_HitActor_1, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent_1, class FName CallFunc_BreakHitResult_HitBoneName_1, int32 CallFunc_BreakHitResult_HitItem_1, int32 CallFunc_BreakHitResult_FaceIndex_1, const struct FVector& CallFunc_BreakHitResult_TraceStart_1, const struct FVector& CallFunc_BreakHitResult_TraceEnd_1, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, const struct FRotator& CallFunc_MakeRotFromX_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue, class FName Temp_name_Variable, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, const struct FVector& CallFunc_FindClosestBone_K2_BoneLocation, class FName CallFunc_FindClosestBone_K2_ReturnValue, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue, class FName Temp_name_Variable_1, class AActor* CallFunc_GetOwner_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_1, class AB_Ranged_Ashton_Indigo_Athena_C* K2Node_DynamicCast_AsB_Ranged_Ashton_Indigo_Athena, bool K2Node_DynamicCast_bSuccess_2, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue, enum class EDualWeaponHand Temp_byte_Variable, class FName K2Node_Select_Default, class FName Temp_name_Variable_2, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, class FName K2Node_Select_Default_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateNamedDynamicMaterialInstance_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class UAudioComponent* CallFunc_SpawnSoundAtLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "ExecuteUbergraph_B_Prj_Ashton_Indigo");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Ashton_Indigo_C_ExecuteUbergraph_B_Prj_Ashton_Indigo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Ashton_Indigo_C", "ExecuteUbergraph_B_Prj_Ashton_Indigo");
+
+	Params::AB_Prj_Ashton_Indigo_C_ExecuteUbergraph_B_Prj_Ashton_Indigo_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -330,6 +378,4 @@ void AB_Prj_Ashton_Indigo_C::ExecuteUbergraph_B_Prj_Ashton_Indigo(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -33,16 +30,7 @@ public:
 	bool                                         bEnable;                                           // 0x1(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function LiveStreamVoice.LiveStreamVoiceSubsystem.ClearVoiceSettings
-struct ULiveStreamVoiceSubsystem_ClearVoiceSettings_Params
-{
-public:
-};
-
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

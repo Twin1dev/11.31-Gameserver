@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GAB_SurfaceChange.GAB_SurfaceChange_C
+// (None)
+
+class UClass* UGAB_SurfaceChange_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAB_SurfaceChange_C");
+
+	return Clss;
+}
+
+
+// GAB_SurfaceChange_C GAB_SurfaceChange.Default__GAB_SurfaceChange_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAB_SurfaceChange_C* UGAB_SurfaceChange_C::GetDefaultObj()
+{
+	static class UGAB_SurfaceChange_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAB_SurfaceChange_C*>(UGAB_SurfaceChange_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GAB_SurfaceChange.GAB_SurfaceChange_C.OnRep_ReplicatedRandomAngle
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UGAB_SurfaceChange_C::OnRep_ReplicatedRandomAngle(const class FString& CallFunc_Conv_FloatToString_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAB_SurfaceChange_C", "OnRep_ReplicatedRandomAngle");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_SurfaceChange_C_OnRep_ReplicatedRandomAngle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_SurfaceChange_C", "OnRep_ReplicatedRandomAngle");
+
+	Params::UGAB_SurfaceChange_C_OnRep_ReplicatedRandomAngle_Params Parms{};
 
 	Parms.CallFunc_Conv_FloatToString_ReturnValue = CallFunc_Conv_FloatToString_ReturnValue;
 	Parms.CallFunc_Concat_StrStr_ReturnValue = CallFunc_Concat_StrStr_ReturnValue;
@@ -60,9 +88,12 @@ void UGAB_SurfaceChange_C::OnRep_ReplicatedRandomAngle(const class FString& Call
 
 void UGAB_SurfaceChange_C::SurfaceCleanup(bool AddLingeringEffects, enum class EPhysicalSurface SurfaceType, bool bHasSnow, bool bAddLingeringEffects, bool bHasLava, bool bHasIce, bool CallFunc_NotEqual_ByteByte_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue_1, bool CallFunc_NotEqual_ByteByte_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_2, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput_1, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue_1, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput_2, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("GAB_SurfaceChange_C", "SurfaceCleanup");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_SurfaceChange_C_SurfaceCleanup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_SurfaceChange_C", "SurfaceCleanup");
+
+	Params::UGAB_SurfaceChange_C_SurfaceCleanup_Params Parms{};
 
 	Parms.AddLingeringEffects = AddLingeringEffects;
 	Parms.SurfaceType = SurfaceType;
@@ -156,9 +187,12 @@ void UGAB_SurfaceChange_C::SurfaceCleanup(bool AddLingeringEffects, enum class E
 
 void UGAB_SurfaceChange_C::LavaBounce(const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_NormalizeAxis_ReturnValue, int32 CallFunc_FFloor_ReturnValue, int32 CallFunc_FFloor_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue_1, int32 CallFunc_FFloor_ReturnValue_2, float CallFunc_GetValueAtLevel_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, float CallFunc_RandomFloatFromStream_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, float CallFunc_GetValueAtLevel_ReturnValue_2, float CallFunc_GetValueAtLevel_ReturnValue_3, float CallFunc_GetValueAtLevel_ReturnValue_4, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_5, float CallFunc_Subtract_FloatFloat_ReturnValue_1, float CallFunc_GetValueAtLevel_ReturnValue_6, float CallFunc_Subtract_FloatFloat_ReturnValue_2, const struct FRotator& CallFunc_MakeRotator_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue_1, const struct FVector& CallFunc_Conv_RotatorToVector_ReturnValue, const struct FVector& CallFunc_GreaterGreater_VectorRotator_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, const struct FVector2D& CallFunc_Conv_VectorToVector2D_ReturnValue, float CallFunc_FMin_ReturnValue, const struct FVector2D& CallFunc_Normal2D_ReturnValue, const struct FVector2D& CallFunc_Multiply_Vector2DFloat_ReturnValue, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, const struct FVector& CallFunc_GetVelocity_ReturnValue, const struct FVector& CallFunc_MirrorVectorByNormal_ReturnValue, const struct FVector2D& CallFunc_Conv_VectorToVector2D_ReturnValue_1, const struct FVector2D& CallFunc_Normal2D_ReturnValue_1, const struct FVector2D& CallFunc_Multiply_Vector2DFloat_ReturnValue_1, const struct FVector2D& CallFunc_Add_Vector2DVector2D_ReturnValue, const struct FVector& CallFunc_Conv_Vector2DToVector_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, float CallFunc_VSize_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue_1, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, const struct FVector_NetQuantizeNormal& K2Node_MakeStruct_Vector_NetQuantizeNormal, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAB_SurfaceChange_C", "LavaBounce");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_SurfaceChange_C_LavaBounce_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_SurfaceChange_C", "LavaBounce");
+
+	Params::UGAB_SurfaceChange_C_LavaBounce_Params Parms{};
 
 	Parms.CallFunc_K2_GetActorLocation_ReturnValue = CallFunc_K2_GetActorLocation_ReturnValue;
 	Parms.CallFunc_K2_GetActorRotation_ReturnValue = CallFunc_K2_GetActorRotation_ReturnValue;
@@ -240,9 +274,12 @@ void UGAB_SurfaceChange_C::LavaBounce(const struct FVector& CallFunc_K2_GetActor
 
 void UGAB_SurfaceChange_C::HotfixableGEApplication(struct FScalableFloat& Input, class UClass* GameplayEffectAppliedOnTrue, class UClass* GameplayEffectAppliedOnFalse, float CallFunc_GetValueAtLevel_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GAB_SurfaceChange_C", "HotfixableGEApplication");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_SurfaceChange_C_HotfixableGEApplication_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_SurfaceChange_C", "HotfixableGEApplication");
+
+	Params::UGAB_SurfaceChange_C_HotfixableGEApplication_Params Parms{};
 
 	Parms.Input = Input;
 	Parms.GameplayEffectAppliedOnTrue = GameplayEffectAppliedOnTrue;
@@ -263,12 +300,14 @@ void UGAB_SurfaceChange_C::HotfixableGEApplication(struct FScalableFloat& Input,
 
 void UGAB_SurfaceChange_C::SurfaceCleanupSpecial()
 {
-	static auto Func = Class->GetFunction("GAB_SurfaceChange_C", "SurfaceCleanupSpecial");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_SurfaceChange_C_SurfaceCleanupSpecial_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_SurfaceChange_C", "SurfaceCleanupSpecial");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -280,9 +319,12 @@ void UGAB_SurfaceChange_C::SurfaceCleanupSpecial()
 
 void UGAB_SurfaceChange_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GAB_SurfaceChange_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_SurfaceChange_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_SurfaceChange_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGAB_SurfaceChange_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -300,9 +342,12 @@ void UGAB_SurfaceChange_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData
 
 void UGAB_SurfaceChange_C::MovementModeChanged(class ACharacter* Character, enum class EMovementMode PrevMovementMode, uint8 PreviousCustomMode)
 {
-	static auto Func = Class->GetFunction("GAB_SurfaceChange_C", "MovementModeChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_SurfaceChange_C_MovementModeChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_SurfaceChange_C", "MovementModeChanged");
+
+	Params::UGAB_SurfaceChange_C_MovementModeChanged_Params Parms{};
 
 	Parms.Character = Character;
 	Parms.PrevMovementMode = PrevMovementMode;
@@ -335,9 +380,12 @@ void UGAB_SurfaceChange_C::MovementModeChanged(class ACharacter* Character, enum
 
 void UGAB_SurfaceChange_C::ExecuteUbergraph_GAB_SurfaceChange(int32 EntryPoint, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput, bool CallFunc_HasMatchingGameplayTag_ReturnValue, const struct FGameplayEventData& K2Node_Event_EventData, bool GameplayTagsK2Node_SwitchGameplayTagContainer_CmpSuccess, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class ACharacter* K2Node_CustomEvent_Character, enum class EMovementMode K2Node_CustomEvent_PrevMovementMode, uint8 K2Node_CustomEvent_PreviousCustomMode, bool CallFunc_IsValid_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("GAB_SurfaceChange_C", "ExecuteUbergraph_GAB_SurfaceChange");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_SurfaceChange_C_ExecuteUbergraph_GAB_SurfaceChange_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_SurfaceChange_C", "ExecuteUbergraph_GAB_SurfaceChange");
+
+	Params::UGAB_SurfaceChange_C_ExecuteUbergraph_GAB_SurfaceChange_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue = CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue;
@@ -362,6 +410,4 @@ void UGAB_SurfaceChange_C::ExecuteUbergraph_GAB_SurfaceChange(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

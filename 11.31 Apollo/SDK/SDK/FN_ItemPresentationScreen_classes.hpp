@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -43,15 +40,12 @@ public:
 	class UHorizontalBox*                        WinterfestButtons;                                 // 0x6F0(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                              WinterfestContent;                                 // 0x6F8(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         bDelayIntro;                                       // 0x700(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4588[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5590[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        TimeFloat;                                         // 0x704(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         bSwitchingPhases;                                  // 0x708(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ItemPresentationScreen_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UItemPresentationScreen_C* GetDefaultObj();
 
 	void Handle_PaidItem_Intro(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
 	void Handle_Fade(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
@@ -76,6 +70,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

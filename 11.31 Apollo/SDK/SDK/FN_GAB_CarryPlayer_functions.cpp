@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GAB_CarryPlayer.GAB_CarryPlayer_C
+// (None)
+
+class UClass* UGAB_CarryPlayer_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAB_CarryPlayer_C");
+
+	return Clss;
+}
+
+
+// GAB_CarryPlayer_C GAB_CarryPlayer.Default__GAB_CarryPlayer_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAB_CarryPlayer_C* UGAB_CarryPlayer_C::GetDefaultObj()
+{
+	static class UGAB_CarryPlayer_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAB_CarryPlayer_C*>(UGAB_CarryPlayer_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GAB_CarryPlayer.GAB_CarryPlayer_C.OnCancelled_C4440F1640E9A8D79E44FD8C23525824
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UGAB_CarryPlayer_C::OnCancelled_C4440F1640E9A8D79E44FD8C23525824()
 {
-	static auto Func = Class->GetFunction("GAB_CarryPlayer_C", "OnCancelled_C4440F1640E9A8D79E44FD8C23525824");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_CarryPlayer_C_OnCancelled_C4440F1640E9A8D79E44FD8C23525824_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_CarryPlayer_C", "OnCancelled_C4440F1640E9A8D79E44FD8C23525824");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UGAB_CarryPlayer_C::OnCancelled_C4440F1640E9A8D79E44FD8C23525824()
 
 void UGAB_CarryPlayer_C::OnInterrupted_C4440F1640E9A8D79E44FD8C23525824()
 {
-	static auto Func = Class->GetFunction("GAB_CarryPlayer_C", "OnInterrupted_C4440F1640E9A8D79E44FD8C23525824");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_CarryPlayer_C_OnInterrupted_C4440F1640E9A8D79E44FD8C23525824_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_CarryPlayer_C", "OnInterrupted_C4440F1640E9A8D79E44FD8C23525824");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UGAB_CarryPlayer_C::OnInterrupted_C4440F1640E9A8D79E44FD8C23525824()
 
 void UGAB_CarryPlayer_C::OnBlendOut_C4440F1640E9A8D79E44FD8C23525824()
 {
-	static auto Func = Class->GetFunction("GAB_CarryPlayer_C", "OnBlendOut_C4440F1640E9A8D79E44FD8C23525824");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_CarryPlayer_C_OnBlendOut_C4440F1640E9A8D79E44FD8C23525824_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_CarryPlayer_C", "OnBlendOut_C4440F1640E9A8D79E44FD8C23525824");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void UGAB_CarryPlayer_C::OnBlendOut_C4440F1640E9A8D79E44FD8C23525824()
 
 void UGAB_CarryPlayer_C::OnCompleted_C4440F1640E9A8D79E44FD8C23525824()
 {
-	static auto Func = Class->GetFunction("GAB_CarryPlayer_C", "OnCompleted_C4440F1640E9A8D79E44FD8C23525824");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_CarryPlayer_C_OnCompleted_C4440F1640E9A8D79E44FD8C23525824_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_CarryPlayer_C", "OnCompleted_C4440F1640E9A8D79E44FD8C23525824");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -85,12 +118,14 @@ void UGAB_CarryPlayer_C::OnCompleted_C4440F1640E9A8D79E44FD8C23525824()
 
 void UGAB_CarryPlayer_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GAB_CarryPlayer_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_CarryPlayer_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_CarryPlayer_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -102,9 +137,12 @@ void UGAB_CarryPlayer_C::K2_ActivateAbility()
 
 void UGAB_CarryPlayer_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GAB_CarryPlayer_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_CarryPlayer_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_CarryPlayer_C", "K2_OnEndAbility");
+
+	Params::UGAB_CarryPlayer_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -139,7 +177,7 @@ void UGAB_CarryPlayer_C::K2_OnEndAbility(bool bWasCancelled)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_SendComplexCustomStatEvent_QuestActive                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_SendComplexCustomStatEvent_QuestCompleted               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  ()
+// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  (None)
 // TArray<struct FActiveGameplayEffectHandle>CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue              (ZeroConstructor, ReferenceParm)
 // bool                               CallFunc_K2_CommitAbility_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsServer_ReturnValue_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -152,9 +190,12 @@ void UGAB_CarryPlayer_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGAB_CarryPlayer_C::ExecuteUbergraph_GAB_CarryPlayer(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, bool K2Node_Event_bWasCancelled, bool CallFunc_IsValid_ReturnValue, class UAbilityTask_PlayMontageAndWait* CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_1, float CallFunc_Vector_Distance_ReturnValue, int32 CallFunc_Round_ReturnValue, int32 CallFunc_Divide_IntInt_ReturnValue, bool CallFunc_IsServer_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, const struct FGameplayAbilityActorInfo& CallFunc_GetActorInfo_ReturnValue, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_SendComplexCustomStatEvent_QuestActive, bool CallFunc_SendComplexCustomStatEvent_QuestCompleted, const struct FGameplayAbilityTargetDataHandle& CallFunc_AbilityTargetDataFromActor_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue, bool CallFunc_K2_CommitAbility_ReturnValue, bool CallFunc_IsServer_ReturnValue_1, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue_1, bool CallFunc_Athena_CheckQuestAndObjectiveCompletion_QuestIsValid, bool CallFunc_Athena_CheckQuestAndObjectiveCompletion_QuestCompleted, bool CallFunc_Athena_CheckQuestAndObjectiveCompletion_ObjectiveCompleted, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAB_CarryPlayer_C", "ExecuteUbergraph_GAB_CarryPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_CarryPlayer_C", "ExecuteUbergraph_GAB_CarryPlayer");
+
+	Params::UGAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -196,6 +237,4 @@ void UGAB_CarryPlayer_C::ExecuteUbergraph_GAB_CarryPlayer(int32 EntryPoint, UDel
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

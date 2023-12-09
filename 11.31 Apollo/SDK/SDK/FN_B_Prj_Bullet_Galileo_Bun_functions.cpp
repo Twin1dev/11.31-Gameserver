@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_Prj_Bullet_Galileo_Bun.B_Prj_Bullet_Galileo_Bun_C
+// (Actor)
+
+class UClass* AB_Prj_Bullet_Galileo_Bun_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Prj_Bullet_Galileo_Bun_C");
+
+	return Clss;
+}
+
+
+// B_Prj_Bullet_Galileo_Bun_C B_Prj_Bullet_Galileo_Bun.Default__B_Prj_Bullet_Galileo_Bun_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Prj_Bullet_Galileo_Bun_C* AB_Prj_Bullet_Galileo_Bun_C::GetDefaultObj()
+{
+	static class AB_Prj_Bullet_Galileo_Bun_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Prj_Bullet_Galileo_Bun_C*>(AB_Prj_Bullet_Galileo_Bun_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function B_Prj_Bullet_Galileo_Bun.B_Prj_Bullet_Galileo_Bun_C.PlayImpactSFX
@@ -26,9 +51,12 @@ namespace SDK
 
 void AB_Prj_Bullet_Galileo_Bun_C::PlayImpactSFX(bool IsPlayer, bool IsWater_, bool Temp_bool_Variable, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class USoundBase* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "PlayImpactSFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Galileo_Bun_C_PlayImpactSFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "PlayImpactSFX");
+
+	Params::AB_Prj_Bullet_Galileo_Bun_C_PlayImpactSFX_Params Parms{};
 
 	Parms.IsPlayer = IsPlayer;
 	Parms.IsWater_ = IsWater_;
@@ -48,9 +76,12 @@ void AB_Prj_Bullet_Galileo_Bun_C::PlayImpactSFX(bool IsPlayer, bool IsWater_, bo
 
 void AB_Prj_Bullet_Galileo_Bun_C::UserConstructionScript(float CallFunc_GetValueAtLevel_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Galileo_Bun_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "UserConstructionScript");
+
+	Params::AB_Prj_Bullet_Galileo_Bun_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_GetValueAtLevel_ReturnValue = CallFunc_GetValueAtLevel_ReturnValue;
 
@@ -66,9 +97,12 @@ void AB_Prj_Bullet_Galileo_Bun_C::UserConstructionScript(float CallFunc_GetValue
 
 void AB_Prj_Bullet_Galileo_Bun_C::OnStop(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "OnStop");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Galileo_Bun_C_OnStop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "OnStop");
+
+	Params::AB_Prj_Bullet_Galileo_Bun_C_OnStop_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -83,12 +117,14 @@ void AB_Prj_Bullet_Galileo_Bun_C::OnStop(struct FHitResult& Hit)
 
 void AB_Prj_Bullet_Galileo_Bun_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Galileo_Bun_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -103,9 +139,12 @@ void AB_Prj_Bullet_Galileo_Bun_C::ReceiveBeginPlay()
 
 void AB_Prj_Bullet_Galileo_Bun_C::OnTouched(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, struct FHitResult& HitResult, bool bIsOverlap)
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "OnTouched");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Galileo_Bun_C_OnTouched_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "OnTouched");
+
+	Params::AB_Prj_Bullet_Galileo_Bun_C_OnTouched_Params Parms{};
 
 	Parms.OtherActor = OtherActor;
 	Parms.OtherComp = OtherComp;
@@ -128,9 +167,12 @@ void AB_Prj_Bullet_Galileo_Bun_C::OnTouched(class AActor* OtherActor, class UPri
 
 void AB_Prj_Bullet_Galileo_Bun_C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Galileo_Bun_C_BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature");
+
+	Params::AB_Prj_Bullet_Galileo_Bun_C_BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature_Params Parms{};
 
 	Parms.HitComponent = HitComponent;
 	Parms.OtherActor = OtherActor;
@@ -150,9 +192,12 @@ void AB_Prj_Bullet_Galileo_Bun_C::BndEvt__CapsuleComponent_K2Node_ComponentBound
 
 void AB_Prj_Bullet_Galileo_Bun_C::ReplacedByRealProjectile(class AFortProjectileAthena* RealProjectile)
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "ReplacedByRealProjectile");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Galileo_Bun_C_ReplacedByRealProjectile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "ReplacedByRealProjectile");
+
+	Params::AB_Prj_Bullet_Galileo_Bun_C_ReplacedByRealProjectile_Params Parms{};
 
 	Parms.RealProjectile = RealProjectile;
 
@@ -168,9 +213,12 @@ void AB_Prj_Bullet_Galileo_Bun_C::ReplacedByRealProjectile(class AFortProjectile
 
 void AB_Prj_Bullet_Galileo_Bun_C::ReplacedPredictedProjectile(class AFortProjectileBase* PredictedProjectile)
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "ReplacedPredictedProjectile");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Galileo_Bun_C_ReplacedPredictedProjectile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "ReplacedPredictedProjectile");
+
+	Params::AB_Prj_Bullet_Galileo_Bun_C_ReplacedPredictedProjectile_Params Parms{};
 
 	Parms.PredictedProjectile = PredictedProjectile;
 
@@ -185,12 +233,14 @@ void AB_Prj_Bullet_Galileo_Bun_C::ReplacedPredictedProjectile(class AFortProject
 
 void AB_Prj_Bullet_Galileo_Bun_C::CheckForCreateDecal()
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "CheckForCreateDecal");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Galileo_Bun_C_CheckForCreateDecal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "CheckForCreateDecal");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -326,9 +376,12 @@ void AB_Prj_Bullet_Galileo_Bun_C::CheckForCreateDecal()
 
 void AB_Prj_Bullet_Galileo_Bun_C::ExecuteUbergraph_B_Prj_Bullet_Galileo_Bun(int32 EntryPoint, float CallFunc_GetGameTimeInSeconds_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FVector& CallFunc_GetMuzzleLocation_ReturnValue, class AActor* K2Node_Event_OtherActor, class UPrimitiveComponent* K2Node_Event_OtherComp, const struct FHitResult& K2Node_Event_HitResult, bool K2Node_Event_bIsOverlap, bool CallFunc_IsDedicatedServer_ReturnValue, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterPlaneLocation, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterPlaneNormal, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterSurfacePosition, float CallFunc_GetLastWaterSurfaceInfo_WaterDepth, int32 CallFunc_GetLastWaterSurfaceInfo_WaterBodyIdx, const struct FVector& CallFunc_GetLastWaterSurfaceInfo_WaterVelocity, float CallFunc_Conv_IntToFloat_ReturnValue, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, bool CallFunc_IsDedicatedServer_ReturnValue_1, class AFortAthenaWater* K2Node_DynamicCast_AsFort_Athena_Water, bool K2Node_DynamicCast_bSuccess_1, class AFortWaterBodyActor* K2Node_DynamicCast_AsFort_Water_Body_Actor, bool K2Node_DynamicCast_bSuccess_2, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue, class UPrimitiveComponent* K2Node_ComponentBoundEvent_HitComponent, class AActor* K2Node_ComponentBoundEvent_OtherActor, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp, const struct FVector& K2Node_ComponentBoundEvent_NormalImpulse, const struct FHitResult& K2Node_ComponentBoundEvent_Hit, class ABP_PlayerPawn_Athena_Galileo_C* K2Node_DynamicCast_AsBP_Player_Pawn_Athena_Galileo, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_BreakHitResult_bBlockingHit_1, bool CallFunc_BreakHitResult_bInitialOverlap_1, float CallFunc_BreakHitResult_Time_1, float CallFunc_BreakHitResult_Distance_1, const struct FVector& CallFunc_BreakHitResult_Location_1, const struct FVector& CallFunc_BreakHitResult_ImpactPoint_1, const struct FVector& CallFunc_BreakHitResult_Normal_1, const struct FVector& CallFunc_BreakHitResult_ImpactNormal_1, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat_1, class AActor* CallFunc_BreakHitResult_HitActor_1, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent_1, class FName CallFunc_BreakHitResult_HitBoneName_1, int32 CallFunc_BreakHitResult_HitItem_1, int32 CallFunc_BreakHitResult_FaceIndex_1, const struct FVector& CallFunc_BreakHitResult_TraceStart_1, const struct FVector& CallFunc_BreakHitResult_TraceEnd_1, bool CallFunc_IsLocallyControlled_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess_4, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue_1, class AFortProjectileAthena* K2Node_Event_RealProjectile, class AFortProjectileBase* K2Node_Event_PredictedProjectile, bool Temp_bool_Variable, class AB_Prj_Bullet_Galileo_Bun_C* K2Node_DynamicCast_AsB_Prj_Bullet_Galileo_Bun, bool K2Node_DynamicCast_bSuccess_5, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FHitResult& K2Node_Event_Hit, class UDecalComponent* CallFunc_SpawnDecalAtLocation_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit_2, bool CallFunc_BreakHitResult_bInitialOverlap_2, float CallFunc_BreakHitResult_Time_2, float CallFunc_BreakHitResult_Distance_2, const struct FVector& CallFunc_BreakHitResult_Location_2, const struct FVector& CallFunc_BreakHitResult_ImpactPoint_2, const struct FVector& CallFunc_BreakHitResult_Normal_2, const struct FVector& CallFunc_BreakHitResult_ImpactNormal_2, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat_2, class AActor* CallFunc_BreakHitResult_HitActor_2, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent_2, class FName CallFunc_BreakHitResult_HitBoneName_2, int32 CallFunc_BreakHitResult_HitItem_2, int32 CallFunc_BreakHitResult_FaceIndex_2, const struct FVector& CallFunc_BreakHitResult_TraceStart_2, const struct FVector& CallFunc_BreakHitResult_TraceEnd_2, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn_1, bool K2Node_DynamicCast_bSuccess_6, bool CallFunc_IsMobilePlatform_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_IsDedicatedServer_ReturnValue_2, bool CallFunc_WasRecentlyRendered_ReturnValue, float CallFunc_GetTimeSeconds_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit_3, bool CallFunc_BreakHitResult_bInitialOverlap_3, float CallFunc_BreakHitResult_Time_3, float CallFunc_BreakHitResult_Distance_3, const struct FVector& CallFunc_BreakHitResult_Location_3, const struct FVector& CallFunc_BreakHitResult_ImpactPoint_3, const struct FVector& CallFunc_BreakHitResult_Normal_3, const struct FVector& CallFunc_BreakHitResult_ImpactNormal_3, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat_3, class AActor* CallFunc_BreakHitResult_HitActor_3, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent_3, class FName CallFunc_BreakHitResult_HitBoneName_3, int32 CallFunc_BreakHitResult_HitItem_3, int32 CallFunc_BreakHitResult_FaceIndex_3, const struct FVector& CallFunc_BreakHitResult_TraceStart_3, const struct FVector& CallFunc_BreakHitResult_TraceEnd_3, bool CallFunc_IsValid_ReturnValue, bool CallFunc_WasRecentlyRendered_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_WasRecentlyRendered_ReturnValue_2, class USoundBase* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "ExecuteUbergraph_B_Prj_Bullet_Galileo_Bun");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Bullet_Galileo_Bun_C_ExecuteUbergraph_B_Prj_Bullet_Galileo_Bun_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Bullet_Galileo_Bun_C", "ExecuteUbergraph_B_Prj_Bullet_Galileo_Bun");
+
+	Params::AB_Prj_Bullet_Galileo_Bun_C_ExecuteUbergraph_B_Prj_Bullet_Galileo_Bun_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetGameTimeInSeconds_ReturnValue = CallFunc_GetGameTimeInSeconds_ReturnValue;
@@ -462,6 +515,4 @@ void AB_Prj_Bullet_Galileo_Bun_C::ExecuteUbergraph_B_Prj_Bullet_Galileo_Bun(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

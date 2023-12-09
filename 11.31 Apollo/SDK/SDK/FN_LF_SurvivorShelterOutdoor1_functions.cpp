@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass LF_SurvivorShelterOutdoor1.LF_SurvivorShelterOutdoor1_C
+// (Actor)
+
+class UClass* ALF_SurvivorShelterOutdoor1_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LF_SurvivorShelterOutdoor1_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// LF_SurvivorShelterOutdoor1_C LF_SurvivorShelterOutdoor1.Default__LF_SurvivorShelterOutdoor1_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ALF_SurvivorShelterOutdoor1_C* ALF_SurvivorShelterOutdoor1_C::GetDefaultObj()
+{
+	static class ALF_SurvivorShelterOutdoor1_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ALF_SurvivorShelterOutdoor1_C*>(ALF_SurvivorShelterOutdoor1_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

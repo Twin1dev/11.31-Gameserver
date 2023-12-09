@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,23 +12,51 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_BroadcastPost.BP_BroadcastPost_C
+// (Actor)
+
+class UClass* ABP_BroadcastPost_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_BroadcastPost_C");
+
+	return Clss;
+}
+
+
+// BP_BroadcastPost_C BP_BroadcastPost.Default__BP_BroadcastPost_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_BroadcastPost_C* ABP_BroadcastPost_C::GetDefaultObj()
+{
+	static class ABP_BroadcastPost_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_BroadcastPost_C*>(ABP_BroadcastPost_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_BroadcastPost.BP_BroadcastPost_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void ABP_BroadcastPost_C::UserConstructionScript()
 {
-	static auto Func = Class->GetFunction("BP_BroadcastPost_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_BroadcastPost_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_BroadcastPost_C", "UserConstructionScript");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

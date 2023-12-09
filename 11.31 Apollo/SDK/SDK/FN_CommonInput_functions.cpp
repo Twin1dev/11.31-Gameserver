@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,62 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class CommonInput.CommonInputSettings
+// (None)
+
+class UClass* UCommonInputSettings::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CommonInputSettings");
+
+	return Clss;
+}
+
+
+// CommonInputSettings CommonInput.Default__CommonInputSettings
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UCommonInputSettings* UCommonInputSettings::GetDefaultObj()
+{
+	static class UCommonInputSettings* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCommonInputSettings*>(UCommonInputSettings::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class CommonInput.CommonInputSubsystem
+// (None)
+
+class UClass* UCommonInputSubsystem::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CommonInputSubsystem");
+
+	return Clss;
+}
+
+
+// CommonInputSubsystem CommonInput.Default__CommonInputSubsystem
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UCommonInputSubsystem* UCommonInputSubsystem::GetDefaultObj()
+{
+	static class UCommonInputSubsystem* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCommonInputSubsystem*>(UCommonInputSubsystem::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function CommonInput.CommonInputSubsystem.ShouldShowInputKeys
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -22,18 +75,21 @@ namespace SDK
 
 bool UCommonInputSubsystem::ShouldShowInputKeys()
 {
-	static auto Func = Class->GetFunction("CommonInputSubsystem", "ShouldShowInputKeys");
+	static class UFunction* Func = nullptr;
 
-	Params::UCommonInputSubsystem_ShouldShowInputKeys_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CommonInputSubsystem", "ShouldShowInputKeys");
+
+	Params::UCommonInputSubsystem_ShouldShowInputKeys_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -47,19 +103,22 @@ bool UCommonInputSubsystem::ShouldShowInputKeys()
 
 void UCommonInputSubsystem::SetGamepadInputType(enum class ECommonGamepadType InGamepadInputType)
 {
-	static auto Func = Class->GetFunction("CommonInputSubsystem", "SetGamepadInputType");
+	static class UFunction* Func = nullptr;
 
-	Params::UCommonInputSubsystem_SetGamepadInputType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CommonInputSubsystem", "SetGamepadInputType");
+
+	Params::UCommonInputSubsystem_SetGamepadInputType_Params Parms{};
 
 	Parms.InGamepadInputType = InGamepadInputType;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -71,19 +130,22 @@ void UCommonInputSubsystem::SetGamepadInputType(enum class ECommonGamepadType In
 
 void UCommonInputSubsystem::SetCurrentInputType(enum class ECommonInputType NewInputType)
 {
-	static auto Func = Class->GetFunction("CommonInputSubsystem", "SetCurrentInputType");
+	static class UFunction* Func = nullptr;
 
-	Params::UCommonInputSubsystem_SetCurrentInputType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CommonInputSubsystem", "SetCurrentInputType");
+
+	Params::UCommonInputSubsystem_SetCurrentInputType_Params Parms{};
 
 	Parms.NewInputType = NewInputType;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -95,18 +157,21 @@ void UCommonInputSubsystem::SetCurrentInputType(enum class ECommonInputType NewI
 
 bool UCommonInputSubsystem::IsUsingPointerInput()
 {
-	static auto Func = Class->GetFunction("CommonInputSubsystem", "IsUsingPointerInput");
+	static class UFunction* Func = nullptr;
 
-	Params::UCommonInputSubsystem_IsUsingPointerInput_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CommonInputSubsystem", "IsUsingPointerInput");
+
+	Params::UCommonInputSubsystem_IsUsingPointerInput_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -121,19 +186,22 @@ bool UCommonInputSubsystem::IsUsingPointerInput()
 
 bool UCommonInputSubsystem::IsInputMethodActive(enum class ECommonInputType InputMethod)
 {
-	static auto Func = Class->GetFunction("CommonInputSubsystem", "IsInputMethodActive");
+	static class UFunction* Func = nullptr;
 
-	Params::UCommonInputSubsystem_IsInputMethodActive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CommonInputSubsystem", "IsInputMethodActive");
+
+	Params::UCommonInputSubsystem_IsInputMethodActive_Params Parms{};
 
 	Parms.InputMethod = InputMethod;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -147,18 +215,21 @@ bool UCommonInputSubsystem::IsInputMethodActive(enum class ECommonInputType Inpu
 
 enum class ECommonInputType UCommonInputSubsystem::GetDefaultInputType()
 {
-	static auto Func = Class->GetFunction("CommonInputSubsystem", "GetDefaultInputType");
+	static class UFunction* Func = nullptr;
 
-	Params::UCommonInputSubsystem_GetDefaultInputType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CommonInputSubsystem", "GetDefaultInputType");
+
+	Params::UCommonInputSubsystem_GetDefaultInputType_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -172,18 +243,21 @@ enum class ECommonInputType UCommonInputSubsystem::GetDefaultInputType()
 
 enum class ECommonInputType UCommonInputSubsystem::GetCurrentInputType()
 {
-	static auto Func = Class->GetFunction("CommonInputSubsystem", "GetCurrentInputType");
+	static class UFunction* Func = nullptr;
 
-	Params::UCommonInputSubsystem_GetCurrentInputType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CommonInputSubsystem", "GetCurrentInputType");
+
+	Params::UCommonInputSubsystem_GetCurrentInputType_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -197,25 +271,82 @@ enum class ECommonInputType UCommonInputSubsystem::GetCurrentInputType()
 
 enum class ECommonGamepadType UCommonInputSubsystem::GetCurrentGamepadType()
 {
-	static auto Func = Class->GetFunction("CommonInputSubsystem", "GetCurrentGamepadType");
+	static class UFunction* Func = nullptr;
 
-	Params::UCommonInputSubsystem_GetCurrentGamepadType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CommonInputSubsystem", "GetCurrentGamepadType");
+
+	Params::UCommonInputSubsystem_GetCurrentGamepadType_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
 }
 
+
+// Class CommonInput.CommonUIInputData
+// (None)
+
+class UClass* UCommonUIInputData::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CommonUIInputData");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// CommonUIInputData CommonInput.Default__CommonUIInputData
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UCommonUIInputData* UCommonUIInputData::GetDefaultObj()
+{
+	static class UCommonUIInputData* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCommonUIInputData*>(UCommonUIInputData::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class CommonInput.CommonInputControllerData
+// (None)
+
+class UClass* UCommonInputControllerData::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CommonInputControllerData");
+
+	return Clss;
+}
+
+
+// CommonInputControllerData CommonInput.Default__CommonInputControllerData
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UCommonInputControllerData* UCommonInputControllerData::GetDefaultObj()
+{
+	static class UCommonInputControllerData* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCommonInputControllerData*>(UCommonInputControllerData::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

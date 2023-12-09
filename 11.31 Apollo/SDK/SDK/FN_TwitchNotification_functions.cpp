@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TwitchNotification.TwitchNotification_C
+// (None)
+
+class UClass* UTwitchNotification_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TwitchNotification_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// TwitchNotification_C TwitchNotification.Default__TwitchNotification_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTwitchNotification_C* UTwitchNotification_C::GetDefaultObj()
+{
+	static class UTwitchNotification_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTwitchNotification_C*>(UTwitchNotification_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TooltipLibrary.TooltipLibrary_C
+// (None)
+
+class UClass* UTooltipLibrary_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TooltipLibrary_C");
+
+	return Clss;
+}
+
+
+// TooltipLibrary_C TooltipLibrary.Default__TooltipLibrary_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTooltipLibrary_C* UTooltipLibrary_C::GetDefaultObj()
+{
+	static class UTooltipLibrary_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTooltipLibrary_C*>(UTooltipLibrary_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function TooltipLibrary.TooltipLibrary_C.CreateXPTooltip
@@ -30,9 +55,12 @@ namespace SDK
 
 void UTooltipLibrary_C::CreateXPTooltip(class APlayerController* Owner, class FText Header, class FText CommanderXP, class FText BoostXP, class FText RestXP, class FText Body, class UObject* __WorldContext, class UCommonUserWidget** Out, class UXpBarToolTip_C* CallFunc_Create_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TooltipLibrary_C", "CreateXPTooltip");
+	static class UFunction* Func = nullptr;
 
-	Params::UTooltipLibrary_C_CreateXPTooltip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TooltipLibrary_C", "CreateXPTooltip");
+
+	Params::UTooltipLibrary_C_CreateXPTooltip_Params Parms{};
 
 	Parms.Owner = Owner;
 	Parms.Header = Header;
@@ -63,16 +91,19 @@ void UTooltipLibrary_C::CreateXPTooltip(class APlayerController* Owner, class FT
 // class UWidget*                     Return_Value                                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetObjectName_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 void UTooltipLibrary_C::Create_Compare_Item_Tooltip(class APlayerController* Owning_Player, class FText Header_Text, class USlateBrushAsset* Header_Icon, class UFortItem* Item, class UFortItem* ComparedItem, class UObject* __WorldContext, class UWidget** Return_Value, const class FString& CallFunc_GetObjectName_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class FText CallFunc_Conv_StringToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TooltipLibrary_C", "Create Compare Item Tooltip");
+	static class UFunction* Func = nullptr;
 
-	Params::UTooltipLibrary_C_Create_Compare_Item_Tooltip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TooltipLibrary_C", "Create Compare Item Tooltip");
+
+	Params::UTooltipLibrary_C_Create_Compare_Item_Tooltip_Params Parms{};
 
 	Parms.Owning_Player = Owning_Player;
 	Parms.Header_Text = Header_Text;
@@ -107,16 +138,19 @@ void UTooltipLibrary_C::Create_Compare_Item_Tooltip(class APlayerController* Own
 // class UWidget*                     Return_Value                                                     (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetObjectName_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 void UTooltipLibrary_C::Create_Item_Tooltip(class APlayerController* Owning_Player, class FText Header_Text, class USlateBrushAsset* Header_Icon, class UFortItem* Item, int32 OverrideQuantity, class UObject* __WorldContext, class UWidget** Return_Value, const class FString& CallFunc_GetObjectName_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class FText CallFunc_Conv_StringToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TooltipLibrary_C", "Create Item Tooltip");
+	static class UFunction* Func = nullptr;
 
-	Params::UTooltipLibrary_C_Create_Item_Tooltip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TooltipLibrary_C", "Create Item Tooltip");
+
+	Params::UTooltipLibrary_C_Create_Item_Tooltip_Params Parms{};
 
 	Parms.Owning_Player = Owning_Player;
 	Parms.Header_Text = Header_Text;
@@ -151,9 +185,12 @@ void UTooltipLibrary_C::Create_Item_Tooltip(class APlayerController* Owning_Play
 
 void UTooltipLibrary_C::Set_Enabled_And_Tooltip_Text(class UWidget* Widget, bool Enabled, class FText Tooltip_Text, class UObject* __WorldContext, class UUserWidget* CallFunc_Create_Basic_Tooltip_Output, bool CallFunc_TextIsEmpty_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TooltipLibrary_C", "Set Enabled And Tooltip Text");
+	static class UFunction* Func = nullptr;
 
-	Params::UTooltipLibrary_C_Set_Enabled_And_Tooltip_Text_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TooltipLibrary_C", "Set Enabled And Tooltip Text");
+
+	Params::UTooltipLibrary_C_Set_Enabled_And_Tooltip_Text_Params Parms{};
 
 	Parms.Widget = Widget;
 	Parms.Enabled = Enabled;
@@ -176,13 +213,16 @@ void UTooltipLibrary_C::Set_Enabled_And_Tooltip_Text(class UWidget* Widget, bool
 // class UUserWidget*                 Widget                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     __WorldContext                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUserWidget*                 Output                                                           (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTooltip_Custom_S_C*         CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTooltipMinusCustomMinusS_C* CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTooltipLibrary_C::Create_Custom_Tooltip(class APlayerController* Owning_Player, class FText Header_Text, class USlateBrushAsset* Icon_Brush, class UUserWidget* Widget, class UObject* __WorldContext, class UUserWidget** Output, class UTooltip_Custom_S_C* CallFunc_Create_ReturnValue)
+void UTooltipLibrary_C::Create_Custom_Tooltip(class APlayerController* Owning_Player, class FText Header_Text, class USlateBrushAsset* Icon_Brush, class UUserWidget* Widget, class UObject* __WorldContext, class UUserWidget** Output, class UTooltipMinusCustomMinusS_C* CallFunc_Create_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TooltipLibrary_C", "Create Custom Tooltip");
+	static class UFunction* Func = nullptr;
 
-	Params::UTooltipLibrary_C_Create_Custom_Tooltip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TooltipLibrary_C", "Create Custom Tooltip");
+
+	Params::UTooltipLibrary_C_Create_Custom_Tooltip_Params Parms{};
 
 	Parms.Owning_Player = Owning_Player;
 	Parms.Header_Text = Header_Text;
@@ -210,13 +250,16 @@ void UTooltipLibrary_C::Create_Custom_Tooltip(class APlayerController* Owning_Pl
 // class UClass*                      Body_Style                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     __WorldContext                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUserWidget*                 Output                                                           (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTooltip_Basic_S_C*          CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UTooltipMinusBasicMinusS_C*  CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTooltipLibrary_C::Create_Basic_Tooltip(class APlayerController* Owning_Player, class FText Body_Text, class FText Header_Text, class USlateBrushAsset* Icon_Brush, class UClass* Header_Style, class UClass* Body_Style, class UObject* __WorldContext, class UUserWidget** Output, class UTooltip_Basic_S_C* CallFunc_Create_ReturnValue)
+void UTooltipLibrary_C::Create_Basic_Tooltip(class APlayerController* Owning_Player, class FText Body_Text, class FText Header_Text, class USlateBrushAsset* Icon_Brush, class UClass* Header_Style, class UClass* Body_Style, class UObject* __WorldContext, class UUserWidget** Output, class UTooltipMinusBasicMinusS_C* CallFunc_Create_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TooltipLibrary_C", "Create Basic Tooltip");
+	static class UFunction* Func = nullptr;
 
-	Params::UTooltipLibrary_C_Create_Basic_Tooltip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TooltipLibrary_C", "Create Basic Tooltip");
+
+	Params::UTooltipLibrary_C_Create_Basic_Tooltip_Params Parms{};
 
 	Parms.Owning_Player = Owning_Player;
 	Parms.Body_Text = Body_Text;
@@ -236,6 +279,4 @@ void UTooltipLibrary_C::Create_Basic_Tooltip(class APlayerController* Owning_Pla
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

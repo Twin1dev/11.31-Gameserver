@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GCNL_EnvCampFire_Fire.GCNL_EnvCampFire_Fire_C
+// (Actor)
+
+class UClass* AGCNL_EnvCampFire_Fire_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCNL_EnvCampFire_Fire_C");
+
+	return Clss;
+}
+
+
+// GCNL_EnvCampFire_Fire_C GCNL_EnvCampFire_Fire.Default__GCNL_EnvCampFire_Fire_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCNL_EnvCampFire_Fire_C* AGCNL_EnvCampFire_Fire_C::GetDefaultObj()
+{
+	static class AGCNL_EnvCampFire_Fire_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCNL_EnvCampFire_Fire_C*>(AGCNL_EnvCampFire_Fire_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GCNL_EnvCampFire_Fire.GCNL_EnvCampFire_Fire_C.Darken Logs__FinishedFunc
 // (BlueprintEvent)
 // Parameters:
 
 void AGCNL_EnvCampFire_Fire_C::Darken_Logs__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "Darken Logs__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EnvCampFire_Fire_C_Darken_Logs__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "Darken Logs__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AGCNL_EnvCampFire_Fire_C::Darken_Logs__FinishedFunc()
 
 void AGCNL_EnvCampFire_Fire_C::Darken_Logs__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "Darken Logs__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EnvCampFire_Fire_C_Darken_Logs__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "Darken Logs__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,9 +86,12 @@ void AGCNL_EnvCampFire_Fire_C::Darken_Logs__UpdateFunc()
 
 void AGCNL_EnvCampFire_Fire_C::OnLoopingStart(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents)
 {
-	static auto Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "OnLoopingStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EnvCampFire_Fire_C_OnLoopingStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "OnLoopingStart");
+
+	Params::AGCNL_EnvCampFire_Fire_C_OnLoopingStart_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -83,9 +115,12 @@ void AGCNL_EnvCampFire_Fire_C::OnLoopingStart(class AActor* MyTarget, struct FGa
 
 void AGCNL_EnvCampFire_Fire_C::OnRemoval(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static auto Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "OnRemoval");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EnvCampFire_Fire_C_OnRemoval_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "OnRemoval");
+
+	Params::AGCNL_EnvCampFire_Fire_C_OnRemoval_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -143,9 +178,12 @@ void AGCNL_EnvCampFire_Fire_C::OnRemoval(class AActor* MyTarget, struct FGamepla
 
 void AGCNL_EnvCampFire_Fire_C::ExecuteUbergraph_GCNL_EnvCampFire_Fire(int32 EntryPoint, float CallFunc_GetValueAtLevel_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, class AActor* K2Node_Event_MyTarget_1, const struct FGameplayCueParameters& K2Node_Event_Parameters_1, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents_1, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents_1, int32 Temp_int_Array_Index_Variable_1, class UParticleSystemComponent* CallFunc_Array_Get_Item, class UParticleSystemComponent* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue, class AB_BGA_Athena_EnvCampFire_C* K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire, bool K2Node_DynamicCast_bSuccess, class AActor* K2Node_Event_MyTarget, const struct FGameplayCueParameters& K2Node_Event_Parameters, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents, class UCameraShake* K2Node_Event_BurstCameraShakeInstance, class ADecalActor* K2Node_Event_BurstDecalInstance, class UParticleSystemComponent* CallFunc_Array_Get_Item_2, int32 CallFunc_Array_Length_ReturnValue_1, class AB_BGA_Athena_EnvCampFire_C* K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire_1, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_Less_IntInt_ReturnValue, const struct FRotator& CallFunc_K2_GetComponentRotation_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldLocation_SweepHitResult, int32 Temp_int_Loop_Counter_Variable_1, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1, float CallFunc_Lerp_ReturnValue, const struct FVector& CallFunc_VLerp_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "ExecuteUbergraph_GCNL_EnvCampFire_Fire");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "ExecuteUbergraph_GCNL_EnvCampFire_Fire");
+
+	Params::AGCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetValueAtLevel_ReturnValue = CallFunc_GetValueAtLevel_ReturnValue;
@@ -192,6 +230,4 @@ void AGCNL_EnvCampFire_Fire_C::ExecuteUbergraph_GCNL_EnvCampFire_Fire(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

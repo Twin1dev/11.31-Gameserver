@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass CreativeIslandLinkScreen.CreativeIslandLinkScreen_C
+// (None)
+
+class UClass* UCreativeIslandLinkScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CreativeIslandLinkScreen_C");
+
+	return Clss;
+}
+
+
+// CreativeIslandLinkScreen_C CreativeIslandLinkScreen.Default__CreativeIslandLinkScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCreativeIslandLinkScreen_C* UCreativeIslandLinkScreen_C::GetDefaultObj()
+{
+	static class UCreativeIslandLinkScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCreativeIslandLinkScreen_C*>(UCreativeIslandLinkScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function CreativeIslandLinkScreen.CreativeIslandLinkScreen_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UCreativeIslandLinkScreen_C::Construct()
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkScreen_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkScreen_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UCreativeIslandLinkScreen_C::Construct()
 
 void UCreativeIslandLinkScreen_C::OnIslandLinkEntryTextChanged(class FText& Text)
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkScreen_C", "OnIslandLinkEntryTextChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkScreen_C_OnIslandLinkEntryTextChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "OnIslandLinkEntryTextChanged");
+
+	Params::UCreativeIslandLinkScreen_C_OnIslandLinkEntryTextChanged_Params Parms{};
 
 	Parms.Text = Text;
 
@@ -55,12 +85,14 @@ void UCreativeIslandLinkScreen_C::OnIslandLinkEntryTextChanged(class FText& Text
 
 void UCreativeIslandLinkScreen_C::OnCreativeIslandLinksPopulated()
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkScreen_C", "OnCreativeIslandLinksPopulated");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkScreen_C_OnCreativeIslandLinksPopulated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "OnCreativeIslandLinksPopulated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -72,9 +104,12 @@ void UCreativeIslandLinkScreen_C::OnCreativeIslandLinksPopulated()
 
 void UCreativeIslandLinkScreen_C::InitFromObject(class UObject* InitObject)
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkScreen_C", "InitFromObject");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkScreen_C_InitFromObject_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "InitFromObject");
+
+	Params::UCreativeIslandLinkScreen_C_InitFromObject_Params Parms{};
 
 	Parms.InitObject = InitObject;
 
@@ -89,12 +124,14 @@ void UCreativeIslandLinkScreen_C::InitFromObject(class UObject* InitObject)
 
 void UCreativeIslandLinkScreen_C::OnAddedToActivationStack()
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkScreen_C", "OnAddedToActivationStack");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkScreen_C_OnAddedToActivationStack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "OnAddedToActivationStack");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,12 +142,14 @@ void UCreativeIslandLinkScreen_C::OnAddedToActivationStack()
 
 void UCreativeIslandLinkScreen_C::Destruct()
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkScreen_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkScreen_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -122,9 +161,12 @@ void UCreativeIslandLinkScreen_C::Destruct()
 
 void UCreativeIslandLinkScreen_C::OnCreativeIslandLinkValidated(enum class EFortCreativeIslandLinkValidationResult ValidateResult)
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkScreen_C", "OnCreativeIslandLinkValidated");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkScreen_C_OnCreativeIslandLinkValidated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "OnCreativeIslandLinkValidated");
+
+	Params::UCreativeIslandLinkScreen_C_OnCreativeIslandLinkValidated_Params Parms{};
 
 	Parms.ValidateResult = ValidateResult;
 
@@ -139,12 +181,14 @@ void UCreativeIslandLinkScreen_C::OnCreativeIslandLinkValidated(enum class EFort
 
 void UCreativeIslandLinkScreen_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkScreen_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkScreen_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -156,9 +200,12 @@ void UCreativeIslandLinkScreen_C::BP_OnActivated()
 
 void UCreativeIslandLinkScreen_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkScreen_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkScreen_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "PreConstruct");
+
+	Params::UCreativeIslandLinkScreen_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -174,9 +221,12 @@ void UCreativeIslandLinkScreen_C::PreConstruct(bool IsDesignTime)
 
 void UCreativeIslandLinkScreen_C::BndEvt__CommonActionWidget_0_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad)
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkScreen_C", "BndEvt__CommonActionWidget_0_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkScreen_C_BndEvt__CommonActionWidget_0_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "BndEvt__CommonActionWidget_0_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+
+	Params::UCreativeIslandLinkScreen_C_BndEvt__CommonActionWidget_0_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature_Params Parms{};
 
 	Parms.bUsingGamepad = bUsingGamepad;
 
@@ -192,9 +242,12 @@ void UCreativeIslandLinkScreen_C::BndEvt__CommonActionWidget_0_K2Node_ComponentB
 
 void UCreativeIslandLinkScreen_C::BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkScreen_C", "BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkScreen_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UCreativeIslandLinkScreen_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -210,9 +263,12 @@ void UCreativeIslandLinkScreen_C::BndEvt__SimpleCommonButton_K2Node_ComponentBou
 
 void UCreativeIslandLinkScreen_C::BndEvt__Button_Refresh_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkScreen_C", "BndEvt__Button_Refresh_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkScreen_C_BndEvt__Button_Refresh_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "BndEvt__Button_Refresh_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UCreativeIslandLinkScreen_C_BndEvt__Button_Refresh_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -227,12 +283,12 @@ void UCreativeIslandLinkScreen_C::BndEvt__Button_Refresh_K2Node_ComponentBoundEv
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortCreativeIslandLinkValidationResultTemp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
-// class FText                        Temp_text_Variable_2                                             ()
-// class FText                        Temp_text_Variable_3                                             ()
-// class FText                        Temp_text_Variable_4                                             ()
-// class FText                        Temp_text_Variable_5                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
+// class FText                        Temp_text_Variable_2                                             (None)
+// class FText                        Temp_text_Variable_3                                             (None)
+// class FText                        Temp_text_Variable_4                                             (None)
+// class FText                        Temp_text_Variable_5                                             (None)
 // class FText                        K2Node_CustomEvent_Text                                          (ConstParm)
 // int32                              CallFunc_GetNumItems_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -246,21 +302,24 @@ void UCreativeIslandLinkScreen_C::BndEvt__Button_Refresh_K2Node_ComponentBoundEv
 // enum class EFortCreativeIslandLinkValidationResultK2Node_Event_ValidateResult                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     K2Node_Select_Default                                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_2                                          ()
+// class FText                        K2Node_Select_Default_2                                          (None)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortRuntimeOptions*         CallFunc_GetRuntimeOptions_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // bool                               K2Node_ComponentBoundEvent_bUsingGamepad                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_1                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UCreativeIslandLinkScreen_C::ExecuteUbergraph_CreativeIslandLinkScreen(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, enum class EFortCreativeIslandLinkValidationResult Temp_byte_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class FText Temp_text_Variable_2, class FText Temp_text_Variable_3, class FText Temp_text_Variable_4, class FText Temp_text_Variable_5, class FText K2Node_CustomEvent_Text, int32 CallFunc_GetNumItems_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, class UFortHUDContext* CallFunc_GetContext_ReturnValue, class UFortHUDContext* CallFunc_GetContext_ReturnValue_1, enum class EFortCreativeIslandLinkValidationResult Temp_byte_Variable_1, class UObject* K2Node_Event_InitObject, class ABGA_IslandPortal_C* K2Node_DynamicCast_AsBGA_Island_Portal, bool K2Node_DynamicCast_bSuccess, bool Temp_bool_Variable, enum class EFortCreativeIslandLinkValidationResult K2Node_Event_ValidateResult, class UWidget* K2Node_Select_Default, const struct FLinearColor& K2Node_Select_Default_1, class FText K2Node_Select_Default_2, bool K2Node_Event_IsDesignTime, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FText CallFunc_Conv_StringToText_ReturnValue, bool K2Node_ComponentBoundEvent_bUsingGamepad, class FText CallFunc_Conv_StringToText_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button)
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkScreen_C", "ExecuteUbergraph_CreativeIslandLinkScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkScreen_C_ExecuteUbergraph_CreativeIslandLinkScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkScreen_C", "ExecuteUbergraph_CreativeIslandLinkScreen");
+
+	Params::UCreativeIslandLinkScreen_C_ExecuteUbergraph_CreativeIslandLinkScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -300,6 +359,4 @@ void UCreativeIslandLinkScreen_C::ExecuteUbergraph_CreativeIslandLinkScreen(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

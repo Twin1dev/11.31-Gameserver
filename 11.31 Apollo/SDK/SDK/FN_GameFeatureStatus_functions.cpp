@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass GameFeatureStatus.GameFeatureStatus_C
+// (None)
+
+class UClass* UGameFeatureStatus_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameFeatureStatus_C");
+
+	return Clss;
+}
+
+
+// GameFeatureStatus_C GameFeatureStatus.Default__GameFeatureStatus_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGameFeatureStatus_C* UGameFeatureStatus_C::GetDefaultObj()
+{
+	static class UGameFeatureStatus_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGameFeatureStatus_C*>(UGameFeatureStatus_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GameFeatureStatus.GameFeatureStatus_C.HandleStatusChanged
@@ -31,9 +56,12 @@ namespace SDK
 
 void UGameFeatureStatus_C::HandleStatusChanged(enum class EAthenaGameFeatureStatus CurrentStatus, bool K2Node_SwitchEnum_CmpSuccess, enum class EAthenaGameFeatureStatus Temp_byte_Variable, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, enum class EAthenaGameFeatureStatus Temp_byte_Variable_1, const struct FLinearColor& K2Node_Select_Default, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UWidget* K2Node_Select_Default_1, bool CallFunc_IsAnimationPlaying_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GameFeatureStatus_C", "HandleStatusChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameFeatureStatus_C_HandleStatusChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameFeatureStatus_C", "HandleStatusChanged");
+
+	Params::UGameFeatureStatus_C_HandleStatusChanged_Params Parms{};
 
 	Parms.CurrentStatus = CurrentStatus;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
@@ -58,9 +86,12 @@ void UGameFeatureStatus_C::HandleStatusChanged(enum class EAthenaGameFeatureStat
 
 void UGameFeatureStatus_C::OnStatusChanged(enum class EAthenaGameFeatureStatus NewStatus)
 {
-	static auto Func = Class->GetFunction("GameFeatureStatus_C", "OnStatusChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameFeatureStatus_C_OnStatusChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameFeatureStatus_C", "OnStatusChanged");
+
+	Params::UGameFeatureStatus_C_OnStatusChanged_Params Parms{};
 
 	Parms.NewStatus = NewStatus;
 
@@ -77,9 +108,12 @@ void UGameFeatureStatus_C::OnStatusChanged(enum class EAthenaGameFeatureStatus N
 
 void UGameFeatureStatus_C::ExecuteUbergraph_GameFeatureStatus(int32 EntryPoint, enum class EAthenaGameFeatureStatus K2Node_Event_NewStatus)
 {
-	static auto Func = Class->GetFunction("GameFeatureStatus_C", "ExecuteUbergraph_GameFeatureStatus");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameFeatureStatus_C_ExecuteUbergraph_GameFeatureStatus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameFeatureStatus_C", "ExecuteUbergraph_GameFeatureStatus");
+
+	Params::UGameFeatureStatus_C_ExecuteUbergraph_GameFeatureStatus_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_NewStatus = K2Node_Event_NewStatus;
@@ -90,6 +124,4 @@ void UGameFeatureStatus_C::ExecuteUbergraph_GameFeatureStatus(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

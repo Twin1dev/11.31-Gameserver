@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,16 +15,11 @@ class UF_MED_Forest_Queen_Head_Export_Skeleton_AnimBP_Child_C : public UFortnite
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("F_MED_Forest_Queen_Head_Export_Skeleton_AnimBP_Child_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UF_MED_Forest_Queen_Head_Export_Skeleton_AnimBP_Child_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

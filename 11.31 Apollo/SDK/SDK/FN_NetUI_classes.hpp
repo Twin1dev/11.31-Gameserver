@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,17 +15,14 @@ class UBadNetworkIndicator : public UUserWidget
 {
 public:
 	bool                                         bEnabled;                                          // 0x230(0x1)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_208C[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1224[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        MinimumDisplayTime;                                // 0x234(0x4)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                        UpdateTime;                                        // 0x238(0x4)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                        InitialDelay;                                      // 0x23C(0x4)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_208D[0x18];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1226[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BadNetworkIndicator");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UBadNetworkIndicator* GetDefaultObj();
 
 	void UpdateDisplay();
 	bool ShouldDisplay();
@@ -52,13 +46,10 @@ public:
 	class UCommonTextBlock*                      PacketOutLossUI;                                   // 0x250(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UCommonTextBlock*                      UpBandwidthUI;                                     // 0x258(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UCommonTextBlock*                      DownBandwidthUI;                                   // 0x260(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_208E[0xB0];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1230[0xB0];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("NetDebugWidget");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UNetDebugWidget* GetDefaultObj();
 
 	void StopTimer();
 	void StartTimer();
@@ -75,18 +66,13 @@ public:
 	struct FColor                                PacketLossLineColor;                               // 0x23C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FVector2D                             DesiredSize;                                       // 0x240(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	float                                        MaxPingToGraph;                                    // 0x248(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_208F[0x14];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1236[0x14];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("NetGraph");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UNetGraph* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ImpactNumbers.ImpactNumbers_C
+// (Actor)
+
+class UClass* AImpactNumbers_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ImpactNumbers_C");
+
+	return Clss;
+}
+
+
+// ImpactNumbers_C ImpactNumbers.Default__ImpactNumbers_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AImpactNumbers_C* AImpactNumbers_C::GetDefaultObj()
+{
+	static class AImpactNumbers_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AImpactNumbers_C*>(AImpactNumbers_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ImpactNumbers.ImpactNumbers_C.init a new number set
@@ -67,9 +92,12 @@ namespace SDK
 
 void AImpactNumbers_C::Init_a_new_number_set(struct FFortDamageNumberInfo& NewDamageHitInfoStruct, struct FTransform* OutCameraTransform, struct FVector* OutNumberLocation, const struct FVector& NumberLocation, const struct FVector& LocationOffset, const struct FTransform& CameraTransform, float Temp_float_Variable, enum class EFortDamageNumberType Temp_byte_Variable, const struct FVector2D& Temp_struct_Variable, enum class EFortDamageNumberType Temp_byte_Variable_1, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, class ACharacter* CallFunc_GetPlayerCharacter_ReturnValue, bool CallFunc_IsValid_ReturnValue, class ACharacter* CallFunc_GetPlayerCharacter_ReturnValue_1, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, float CallFunc_MakeLiteralFloat_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue_1, float CallFunc_MakeLiteralFloat_ReturnValue_1, const struct FVector2D& K2Node_Select_Default, float K2Node_Select_Default_1, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, bool Temp_bool_Variable, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, const struct FHitResult& CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult, const struct FVector& K2Node_Select_Default_2, float CallFunc_RandomFloatInRange_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue_1, class APlayerCameraManager* CallFunc_GetPlayerCameraManager_ReturnValue, const struct FRotator& CallFunc_GetCameraRotation_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, const struct FVector& CallFunc_GetActorRightVector_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_GetActorUpVector_ReturnValue, const struct FVector& CallFunc_GetCameraLocation_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1, const struct FTransform& CallFunc_MakeTransform_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("ImpactNumbers_C", "init a new number set");
+	static class UFunction* Func = nullptr;
 
-	Params::AImpactNumbers_C_Init_a_new_number_set_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ImpactNumbers_C", "init a new number set");
+
+	Params::AImpactNumbers_C_Init_a_new_number_set_Params Parms{};
 
 	Parms.NewDamageHitInfoStruct = NewDamageHitInfoStruct;
 	Parms.NumberLocation = NumberLocation;
@@ -119,10 +147,10 @@ void AImpactNumbers_C::Init_a_new_number_set(struct FFortDamageNumberInfo& NewDa
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (OutCameraTransform != nullptr)
-		*OutCameraTransform = Parms.OutCameraTransform;
+		*OutCameraTransform = std::move(Parms.OutCameraTransform);
 
 	if (OutNumberLocation != nullptr)
-		*OutNumberLocation = Parms.OutNumberLocation;
+		*OutNumberLocation = std::move(Parms.OutNumberLocation);
 
 }
 
@@ -134,9 +162,12 @@ void AImpactNumbers_C::Init_a_new_number_set(struct FFortDamageNumberInfo& NewDa
 
 void AImpactNumbers_C::OnNewDamageNumber(struct FFortDamageNumberInfo& NewDamageNumberInfo)
 {
-	static auto Func = Class->GetFunction("ImpactNumbers_C", "OnNewDamageNumber");
+	static class UFunction* Func = nullptr;
 
-	Params::AImpactNumbers_C_OnNewDamageNumber_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ImpactNumbers_C", "OnNewDamageNumber");
+
+	Params::AImpactNumbers_C_OnNewDamageNumber_Params Parms{};
 
 	Parms.NewDamageNumberInfo = NewDamageNumberInfo;
 
@@ -155,9 +186,12 @@ void AImpactNumbers_C::OnNewDamageNumber(struct FFortDamageNumberInfo& NewDamage
 
 void AImpactNumbers_C::ExecuteUbergraph_ImpactNumbers(int32 EntryPoint, const struct FFortDamageNumberInfo& K2Node_Event_NewDamageNumberInfo, const struct FTransform& CallFunc_init_a_new_number_set_OutCameraTransform, const struct FVector& CallFunc_init_a_new_number_set_OutNumberLocation)
 {
-	static auto Func = Class->GetFunction("ImpactNumbers_C", "ExecuteUbergraph_ImpactNumbers");
+	static class UFunction* Func = nullptr;
 
-	Params::AImpactNumbers_C_ExecuteUbergraph_ImpactNumbers_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ImpactNumbers_C", "ExecuteUbergraph_ImpactNumbers");
+
+	Params::AImpactNumbers_C_ExecuteUbergraph_ImpactNumbers_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_NewDamageNumberInfo = K2Node_Event_NewDamageNumberInfo;
@@ -170,6 +204,4 @@ void AImpactNumbers_C::ExecuteUbergraph_ImpactNumbers(int32 EntryPoint, const st
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

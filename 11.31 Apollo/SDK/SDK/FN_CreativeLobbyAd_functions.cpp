@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass CreativeLobbyAd.CreativeLobbyAd_C
+// (None)
+
+class UClass* UCreativeLobbyAd_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CreativeLobbyAd_C");
+
+	return Clss;
+}
+
+
+// CreativeLobbyAd_C CreativeLobbyAd.Default__CreativeLobbyAd_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCreativeLobbyAd_C* UCreativeLobbyAd_C::GetDefaultObj()
+{
+	static class UCreativeLobbyAd_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCreativeLobbyAd_C*>(UCreativeLobbyAd_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function CreativeLobbyAd.CreativeLobbyAd_C.OnCMSDataUpdated
 // (Event, Public, BlueprintEvent)
 // Parameters:
 
 void UCreativeLobbyAd_C::OnCMSDataUpdated()
 {
-	static auto Func = Class->GetFunction("CreativeLobbyAd_C", "OnCMSDataUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeLobbyAd_C_OnCMSDataUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeLobbyAd_C", "OnCMSDataUpdated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UCreativeLobbyAd_C::OnCMSDataUpdated()
 
 void UCreativeLobbyAd_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("CreativeLobbyAd_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeLobbyAd_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeLobbyAd_C", "PreConstruct");
+
+	Params::UCreativeLobbyAd_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -55,12 +85,14 @@ void UCreativeLobbyAd_C::PreConstruct(bool IsDesignTime)
 
 void UCreativeLobbyAd_C::Construct()
 {
-	static auto Func = Class->GetFunction("CreativeLobbyAd_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeLobbyAd_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeLobbyAd_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -72,21 +104,24 @@ void UCreativeLobbyAd_C::Construct()
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         ()
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
-// class FText                        CallFunc_TextToUpper_ReturnValue_1                               ()
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_2                         ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue_1                               (None)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_2                         (None)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_TextToUpper_ReturnValue_2                               ()
+// class FText                        CallFunc_TextToUpper_ReturnValue_2                               (None)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UCreativeLobbyAd_C::ExecuteUbergraph_CreativeLobbyAd(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class FText CallFunc_Conv_StringToText_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_1, class FText CallFunc_TextToUpper_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue_1, class FText CallFunc_Conv_StringToText_ReturnValue_2, bool CallFunc_TextIsEmpty_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue_2, enum class ESlateVisibility K2Node_Select_Default, bool K2Node_Event_IsDesignTime)
 {
-	static auto Func = Class->GetFunction("CreativeLobbyAd_C", "ExecuteUbergraph_CreativeLobbyAd");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeLobbyAd_C_ExecuteUbergraph_CreativeLobbyAd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeLobbyAd_C", "ExecuteUbergraph_CreativeLobbyAd");
+
+	Params::UCreativeLobbyAd_C_ExecuteUbergraph_CreativeLobbyAd_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -108,6 +143,4 @@ void UCreativeLobbyAd_C::ExecuteUbergraph_CreativeLobbyAd(int32 EntryPoint, bool
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

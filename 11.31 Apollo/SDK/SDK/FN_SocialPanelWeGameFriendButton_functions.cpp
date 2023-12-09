@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SocialPanelWeGameFriendButton.SocialPanelWeGameFriendButton_C
+// (None)
+
+class UClass* USocialPanelWeGameFriendButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialPanelWeGameFriendButton_C");
+
+	return Clss;
+}
+
+
+// SocialPanelWeGameFriendButton_C SocialPanelWeGameFriendButton.Default__SocialPanelWeGameFriendButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USocialPanelWeGameFriendButton_C* USocialPanelWeGameFriendButton_C::GetDefaultObj()
+{
+	static class USocialPanelWeGameFriendButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialPanelWeGameFriendButton_C*>(USocialPanelWeGameFriendButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SocialPanelWeGameFriendButton.SocialPanelWeGameFriendButton_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void USocialPanelWeGameFriendButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("SocialPanelWeGameFriendButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanelWeGameFriendButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanelWeGameFriendButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void USocialPanelWeGameFriendButton_C::BP_OnHovered()
 
 void USocialPanelWeGameFriendButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("SocialPanelWeGameFriendButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanelWeGameFriendButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanelWeGameFriendButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +85,12 @@ void USocialPanelWeGameFriendButton_C::BP_OnUnhovered()
 
 void USocialPanelWeGameFriendButton_C::ExecuteUbergraph_SocialPanelWeGameFriendButton(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("SocialPanelWeGameFriendButton_C", "ExecuteUbergraph_SocialPanelWeGameFriendButton");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanelWeGameFriendButton_C_ExecuteUbergraph_SocialPanelWeGameFriendButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanelWeGameFriendButton_C", "ExecuteUbergraph_SocialPanelWeGameFriendButton");
+
+	Params::USocialPanelWeGameFriendButton_C_ExecuteUbergraph_SocialPanelWeGameFriendButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -70,6 +102,4 @@ void USocialPanelWeGameFriendButton_C::ExecuteUbergraph_SocialPanelWeGameFriendB
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

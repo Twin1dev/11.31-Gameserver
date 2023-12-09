@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass SocialSettingToggle.SocialSettingToggle_C
+// (None)
+
+class UClass* USocialSettingToggle_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialSettingToggle_C");
+
+	return Clss;
+}
+
+
+// SocialSettingToggle_C SocialSettingToggle.Default__SocialSettingToggle_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USocialSettingToggle_C* USocialSettingToggle_C::GetDefaultObj()
+{
+	static class USocialSettingToggle_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialSettingToggle_C*>(USocialSettingToggle_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function SocialSettingToggle.SocialSettingToggle_C.SetFontSize
@@ -28,9 +53,12 @@ namespace SDK
 
 void USocialSettingToggle_C::SetFontSize(class UCommonTextBlock* Text, int32 DefaultSize, int32 MobileSize, const struct FSlateFontInfo& TempFont, bool Temp_bool_Variable, bool CallFunc_IsMobileGame_ReturnValue, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("SocialSettingToggle_C", "SetFontSize");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialSettingToggle_C_SetFontSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialSettingToggle_C", "SetFontSize");
+
+	Params::USocialSettingToggle_C_SetFontSize_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.DefaultSize = DefaultSize;
@@ -81,9 +109,12 @@ void USocialSettingToggle_C::SetFontSize(class UCommonTextBlock* Text, int32 Def
 
 void USocialSettingToggle_C::UpdateSize(int32 HeightMobile, int32 HeightDefault, float LeftPaddingMobile, const struct FMargin& TempPadding, float MobileNameBoxSize, float DefaultNameBoxSize, const struct FVector2D& LargeSize, const struct FVector2D& SmallSize, bool Temp_bool_Variable, bool Temp_bool_Variable_1, bool CallFunc_IsMobileGame_ReturnValue, class USizeBoxSlot* K2Node_DynamicCast_AsSize_Box_Slot, bool K2Node_DynamicCast_bSuccess, bool Temp_bool_Variable_2, bool CallFunc_IsMobileGame_ReturnValue_1, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess_1, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button_1, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsMobileGame_ReturnValue_2, bool CallFunc_IsMobileGame_ReturnValue_3, const struct FVector2D& K2Node_Select_Default, int32 K2Node_Select_Default_1, bool CallFunc_IsMobileGame_ReturnValue_4, bool Temp_bool_Variable_3, const struct FVector2D& K2Node_Select_Default_2, float K2Node_Select_Default_3, bool Temp_bool_Variable_4, float K2Node_Select_Default_4, const struct FMargin& K2Node_MakeStruct_Margin)
 {
-	static auto Func = Class->GetFunction("SocialSettingToggle_C", "UpdateSize");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialSettingToggle_C_UpdateSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialSettingToggle_C", "UpdateSize");
+
+	Params::USocialSettingToggle_C_UpdateSize_Params Parms{};
 
 	Parms.HeightMobile = HeightMobile;
 	Parms.HeightDefault = HeightDefault;
@@ -127,12 +158,14 @@ void USocialSettingToggle_C::UpdateSize(int32 HeightMobile, int32 HeightDefault,
 
 void USocialSettingToggle_C::Construct()
 {
-	static auto Func = Class->GetFunction("SocialSettingToggle_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialSettingToggle_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialSettingToggle_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -144,9 +177,12 @@ void USocialSettingToggle_C::Construct()
 
 void USocialSettingToggle_C::ExecuteUbergraph_SocialSettingToggle(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("SocialSettingToggle_C", "ExecuteUbergraph_SocialSettingToggle");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialSettingToggle_C_ExecuteUbergraph_SocialSettingToggle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialSettingToggle_C", "ExecuteUbergraph_SocialSettingToggle");
+
+	Params::USocialSettingToggle_C_ExecuteUbergraph_SocialSettingToggle_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -156,6 +192,4 @@ void USocialSettingToggle_C::ExecuteUbergraph_SocialSettingToggle(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaMatchmakingKnobsModal.AthenaMatchmakingKnobsModal_C
+// (None)
+
+class UClass* UAthenaMatchmakingKnobsModal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaMatchmakingKnobsModal_C");
+
+	return Clss;
+}
+
+
+// AthenaMatchmakingKnobsModal_C AthenaMatchmakingKnobsModal.Default__AthenaMatchmakingKnobsModal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaMatchmakingKnobsModal_C* UAthenaMatchmakingKnobsModal_C::GetDefaultObj()
+{
+	static class UAthenaMatchmakingKnobsModal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaMatchmakingKnobsModal_C*>(UAthenaMatchmakingKnobsModal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaMatchmakingKnobsModal.AthenaMatchmakingKnobsModal_C.BP_OnActivated
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UAthenaMatchmakingKnobsModal_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingKnobsModal_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingKnobsModal_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingKnobsModal_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UAthenaMatchmakingKnobsModal_C::BP_OnActivated()
 
 void UAthenaMatchmakingKnobsModal_C::OnInputModeChanged(bool bUsingGamepad)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingKnobsModal_C", "OnInputModeChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingKnobsModal_C_OnInputModeChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingKnobsModal_C", "OnInputModeChanged");
+
+	Params::UAthenaMatchmakingKnobsModal_C_OnInputModeChanged_Params Parms{};
 
 	Parms.bUsingGamepad = bUsingGamepad;
 
@@ -56,9 +86,12 @@ void UAthenaMatchmakingKnobsModal_C::OnInputModeChanged(bool bUsingGamepad)
 
 void UAthenaMatchmakingKnobsModal_C::BndEvt__AcceptButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingKnobsModal_C", "BndEvt__AcceptButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingKnobsModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingKnobsModal_C", "BndEvt__AcceptButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaMatchmakingKnobsModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -74,9 +107,12 @@ void UAthenaMatchmakingKnobsModal_C::BndEvt__AcceptButton_K2Node_ComponentBoundE
 
 void UAthenaMatchmakingKnobsModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingKnobsModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingKnobsModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingKnobsModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaMatchmakingKnobsModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -91,12 +127,14 @@ void UAthenaMatchmakingKnobsModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEv
 
 void UAthenaMatchmakingKnobsModal_C::WidgetAnimationEvt_OutIn_K2Node_WidgetAnimationEvent_1()
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingKnobsModal_C", "WidgetAnimationEvt_OutIn_K2Node_WidgetAnimationEvent_1");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingKnobsModal_C_WidgetAnimationEvt_OutIn_K2Node_WidgetAnimationEvent_1_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingKnobsModal_C", "WidgetAnimationEvt_OutIn_K2Node_WidgetAnimationEvent_1");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -107,12 +145,14 @@ void UAthenaMatchmakingKnobsModal_C::WidgetAnimationEvt_OutIn_K2Node_WidgetAnima
 
 void UAthenaMatchmakingKnobsModal_C::WidgetAnimationEvt_OutIn_K2Node_WidgetAnimationEvent_0()
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingKnobsModal_C", "WidgetAnimationEvt_OutIn_K2Node_WidgetAnimationEvent_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingKnobsModal_C_WidgetAnimationEvt_OutIn_K2Node_WidgetAnimationEvent_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingKnobsModal_C", "WidgetAnimationEvt_OutIn_K2Node_WidgetAnimationEvent_0");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -135,9 +175,12 @@ void UAthenaMatchmakingKnobsModal_C::WidgetAnimationEvt_OutIn_K2Node_WidgetAnima
 
 void UAthenaMatchmakingKnobsModal_C::ExecuteUbergraph_AthenaMatchmakingKnobsModal(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool K2Node_Event_bUsingGamepad, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, bool CallFunc_IsAnimationPlaying_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_IsMobileGame_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaMatchmakingKnobsModal_C", "ExecuteUbergraph_AthenaMatchmakingKnobsModal");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMatchmakingKnobsModal_C_ExecuteUbergraph_AthenaMatchmakingKnobsModal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMatchmakingKnobsModal_C", "ExecuteUbergraph_AthenaMatchmakingKnobsModal");
+
+	Params::UAthenaMatchmakingKnobsModal_C_ExecuteUbergraph_AthenaMatchmakingKnobsModal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -158,6 +201,4 @@ void UAthenaMatchmakingKnobsModal_C::ExecuteUbergraph_AthenaMatchmakingKnobsModa
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

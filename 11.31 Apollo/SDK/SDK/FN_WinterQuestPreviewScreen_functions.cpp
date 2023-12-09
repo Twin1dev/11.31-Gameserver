@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass WinterQuestPreviewScreen.WinterQuestPreviewScreen_C
+// (None)
+
+class UClass* UWinterQuestPreviewScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WinterQuestPreviewScreen_C");
+
+	return Clss;
+}
+
+
+// WinterQuestPreviewScreen_C WinterQuestPreviewScreen.Default__WinterQuestPreviewScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UWinterQuestPreviewScreen_C* UWinterQuestPreviewScreen_C::GetDefaultObj()
+{
+	static class UWinterQuestPreviewScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWinterQuestPreviewScreen_C*>(UWinterQuestPreviewScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function WinterQuestPreviewScreen.WinterQuestPreviewScreen_C.UpdateOfferOneText
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UWinterQuestPreviewScreen_C::UpdateOfferOneText(class FText& OfferText)
 {
-	static auto Func = Class->GetFunction("WinterQuestPreviewScreen_C", "UpdateOfferOneText");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestPreviewScreen_C_UpdateOfferOneText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestPreviewScreen_C", "UpdateOfferOneText");
+
+	Params::UWinterQuestPreviewScreen_C_UpdateOfferOneText_Params Parms{};
 
 	Parms.OfferText = OfferText;
 
@@ -40,9 +68,12 @@ void UWinterQuestPreviewScreen_C::UpdateOfferOneText(class FText& OfferText)
 
 void UWinterQuestPreviewScreen_C::UpdateOfferTwoText(class FText& OfferText)
 {
-	static auto Func = Class->GetFunction("WinterQuestPreviewScreen_C", "UpdateOfferTwoText");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestPreviewScreen_C_UpdateOfferTwoText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestPreviewScreen_C", "UpdateOfferTwoText");
+
+	Params::UWinterQuestPreviewScreen_C_UpdateOfferTwoText_Params Parms{};
 
 	Parms.OfferText = OfferText;
 
@@ -64,9 +95,12 @@ void UWinterQuestPreviewScreen_C::UpdateOfferTwoText(class FText& OfferText)
 
 void UWinterQuestPreviewScreen_C::ExecuteUbergraph_WinterQuestPreviewScreen(int32 EntryPoint, class USimpleFeatured_YellowButton_C* K2Node_DynamicCast_AsSimple_Featured_Yellow_Button, bool K2Node_DynamicCast_bSuccess, class FText K2Node_Event_OfferText_1, class FText K2Node_Event_OfferText, class USimpleFeatured_YellowButton_C* K2Node_DynamicCast_AsSimple_Featured_Yellow_Button_1, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("WinterQuestPreviewScreen_C", "ExecuteUbergraph_WinterQuestPreviewScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestPreviewScreen_C", "ExecuteUbergraph_WinterQuestPreviewScreen");
+
+	Params::UWinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_DynamicCast_AsSimple_Featured_Yellow_Button = K2Node_DynamicCast_AsSimple_Featured_Yellow_Button;
@@ -82,6 +116,4 @@ void UWinterQuestPreviewScreen_C::ExecuteUbergraph_WinterQuestPreviewScreen(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

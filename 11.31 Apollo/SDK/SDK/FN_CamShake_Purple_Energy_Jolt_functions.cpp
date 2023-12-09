@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass CamShake_Purple_Energy_Jolt.CamShake_Purple_Energy_Jolt_C
+// (None)
+
+class UClass* UCamShake_Purple_Energy_Jolt_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CamShake_Purple_Energy_Jolt_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// CamShake_Purple_Energy_Jolt_C CamShake_Purple_Energy_Jolt.Default__CamShake_Purple_Energy_Jolt_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCamShake_Purple_Energy_Jolt_C* UCamShake_Purple_Energy_Jolt_C::GetDefaultObj()
+{
+	static class UCamShake_Purple_Energy_Jolt_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCamShake_Purple_Energy_Jolt_C*>(UCamShake_Purple_Energy_Jolt_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

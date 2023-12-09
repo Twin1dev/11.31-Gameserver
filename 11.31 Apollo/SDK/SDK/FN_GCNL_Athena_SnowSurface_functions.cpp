@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCNL_Athena_SnowSurface.GCNL_Athena_SnowSurface_C
+// (Actor)
+
+class UClass* AGCNL_Athena_SnowSurface_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCNL_Athena_SnowSurface_C");
+
+	return Clss;
+}
+
+
+// GCNL_Athena_SnowSurface_C GCNL_Athena_SnowSurface.Default__GCNL_Athena_SnowSurface_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCNL_Athena_SnowSurface_C* AGCNL_Athena_SnowSurface_C::GetDefaultObj()
+{
+	static class AGCNL_Athena_SnowSurface_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCNL_Athena_SnowSurface_C*>(AGCNL_Athena_SnowSurface_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCNL_Athena_SnowSurface.GCNL_Athena_SnowSurface_C.OnLoopingStart
@@ -25,9 +50,12 @@ namespace SDK
 
 void AGCNL_Athena_SnowSurface_C::OnLoopingStart(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents)
 {
-	static auto Func = Class->GetFunction("GCNL_Athena_SnowSurface_C", "OnLoopingStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_Athena_SnowSurface_C_OnLoopingStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_Athena_SnowSurface_C", "OnLoopingStart");
+
+	Params::AGCNL_Athena_SnowSurface_C_OnLoopingStart_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -51,9 +79,12 @@ void AGCNL_Athena_SnowSurface_C::OnLoopingStart(class AActor* MyTarget, struct F
 
 void AGCNL_Athena_SnowSurface_C::OnRemoval(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static auto Func = Class->GetFunction("GCNL_Athena_SnowSurface_C", "OnRemoval");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_Athena_SnowSurface_C_OnRemoval_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_Athena_SnowSurface_C", "OnRemoval");
+
+	Params::AGCNL_Athena_SnowSurface_C_OnRemoval_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -92,9 +123,12 @@ void AGCNL_Athena_SnowSurface_C::OnRemoval(class AActor* MyTarget, struct FGamep
 
 void AGCNL_Athena_SnowSurface_C::ExecuteUbergraph_GCNL_Athena_SnowSurface(int32 EntryPoint, class AActor* K2Node_Event_MyTarget, const struct FGameplayCueParameters& K2Node_Event_Parameters, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents, class UCameraShake* K2Node_Event_BurstCameraShakeInstance, class ADecalActor* K2Node_Event_BurstDecalInstance, class AActor* K2Node_Event_MyTarget_1, const struct FGameplayCueParameters& K2Node_Event_Parameters_1, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents_1, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents_1, class APlayerPawn_Athena_Generic_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena_Generic, bool K2Node_DynamicCast_bSuccess, class APlayerPawn_Athena_Generic_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena_Generic_1, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_GetCalendarEventInformation_bIsEventActive, const struct FTimespan& CallFunc_GetCalendarEventInformation_TimeSinceBegin, const struct FTimespan& CallFunc_GetCalendarEventInformation_TimeUntilEnd, float CallFunc_GetCalendarEventInformation_TimeSpanRatio)
 {
-	static auto Func = Class->GetFunction("GCNL_Athena_SnowSurface_C", "ExecuteUbergraph_GCNL_Athena_SnowSurface");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCNL_Athena_SnowSurface_C", "ExecuteUbergraph_GCNL_Athena_SnowSurface");
+
+	Params::AGCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_MyTarget = K2Node_Event_MyTarget;
@@ -122,6 +156,4 @@ void AGCNL_Athena_SnowSurface_C::ExecuteUbergraph_GCNL_Athena_SnowSurface(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

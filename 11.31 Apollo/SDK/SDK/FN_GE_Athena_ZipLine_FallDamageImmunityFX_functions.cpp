@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GE_Athena_ZipLine_FallDamageImmunityFX.GE_Athena_ZipLine_FallDamageImmunityFX_C
+// (None)
+
+class UClass* UGE_Athena_ZipLine_FallDamageImmunityFX_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GE_Athena_ZipLine_FallDamageImmunityFX_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// GE_Athena_ZipLine_FallDamageImmunityFX_C GE_Athena_ZipLine_FallDamageImmunityFX.Default__GE_Athena_ZipLine_FallDamageImmunityFX_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGE_Athena_ZipLine_FallDamageImmunityFX_C* UGE_Athena_ZipLine_FallDamageImmunityFX_C::GetDefaultObj()
+{
+	static class UGE_Athena_ZipLine_FallDamageImmunityFX_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGE_Athena_ZipLine_FallDamageImmunityFX_C*>(UGE_Athena_ZipLine_FallDamageImmunityFX_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

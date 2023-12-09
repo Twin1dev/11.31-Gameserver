@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass EventTeamMatchHistoryModal.EventTeamMatchHistoryModal_C
+// (None)
+
+class UClass* UEventTeamMatchHistoryModal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EventTeamMatchHistoryModal_C");
+
+	return Clss;
+}
+
+
+// EventTeamMatchHistoryModal_C EventTeamMatchHistoryModal.Default__EventTeamMatchHistoryModal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UEventTeamMatchHistoryModal_C* UEventTeamMatchHistoryModal_C::GetDefaultObj()
+{
+	static class UEventTeamMatchHistoryModal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEventTeamMatchHistoryModal_C*>(UEventTeamMatchHistoryModal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function EventTeamMatchHistoryModal.EventTeamMatchHistoryModal_C.BndEvt__CloseMainPanel_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UEventTeamMatchHistoryModal_C::BndEvt__CloseMainPanel_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("EventTeamMatchHistoryModal_C", "BndEvt__CloseMainPanel_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventTeamMatchHistoryModal_C_BndEvt__CloseMainPanel_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventTeamMatchHistoryModal_C", "BndEvt__CloseMainPanel_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UEventTeamMatchHistoryModal_C_BndEvt__CloseMainPanel_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -39,12 +67,14 @@ void UEventTeamMatchHistoryModal_C::BndEvt__CloseMainPanel_K2Node_ComponentBound
 
 void UEventTeamMatchHistoryModal_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("EventTeamMatchHistoryModal_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventTeamMatchHistoryModal_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventTeamMatchHistoryModal_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -60,9 +90,12 @@ void UEventTeamMatchHistoryModal_C::BP_OnActivated()
 
 void UEventTeamMatchHistoryModal_C::ExecuteUbergraph_EventTeamMatchHistoryModal(int32 EntryPoint, const class FString& CallFunc_GetEventWindowId_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, const class FString& CallFunc_GetEventId_ReturnValue)
 {
-	static auto Func = Class->GetFunction("EventTeamMatchHistoryModal_C", "ExecuteUbergraph_EventTeamMatchHistoryModal");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventTeamMatchHistoryModal_C_ExecuteUbergraph_EventTeamMatchHistoryModal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventTeamMatchHistoryModal_C", "ExecuteUbergraph_EventTeamMatchHistoryModal");
+
+	Params::UEventTeamMatchHistoryModal_C_ExecuteUbergraph_EventTeamMatchHistoryModal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetEventWindowId_ReturnValue = CallFunc_GetEventWindowId_ReturnValue;
@@ -76,6 +109,4 @@ void UEventTeamMatchHistoryModal_C::ExecuteUbergraph_EventTeamMatchHistoryModal(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass StoreCardReveal_Parent.StoreCardReveal_Parent_C
+// (Actor)
+
+class UClass* AStoreCardReveal_Parent_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("StoreCardReveal_Parent_C");
+
+	return Clss;
+}
+
+
+// StoreCardReveal_Parent_C StoreCardReveal_Parent.Default__StoreCardReveal_Parent_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AStoreCardReveal_Parent_C* AStoreCardReveal_Parent_C::GetDefaultObj()
+{
+	static class AStoreCardReveal_Parent_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AStoreCardReveal_Parent_C*>(AStoreCardReveal_Parent_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function StoreCardReveal_Parent.StoreCardReveal_Parent_C.InitiatePinata
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void AStoreCardReveal_Parent_C::InitiatePinata()
 {
-	static auto Func = Class->GetFunction("StoreCardReveal_Parent_C", "InitiatePinata");
+	static class UFunction* Func = nullptr;
 
-	Params::AStoreCardReveal_Parent_C_InitiatePinata_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreCardReveal_Parent_C", "InitiatePinata");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void AStoreCardReveal_Parent_C::InitiatePinata()
 
 void AStoreCardReveal_Parent_C::ExecuteUbergraph_StoreCardReveal_Parent(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("StoreCardReveal_Parent_C", "ExecuteUbergraph_StoreCardReveal_Parent");
+	static class UFunction* Func = nullptr;
 
-	Params::AStoreCardReveal_Parent_C_ExecuteUbergraph_StoreCardReveal_Parent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreCardReveal_Parent_C", "ExecuteUbergraph_StoreCardReveal_Parent");
+
+	Params::AStoreCardReveal_Parent_C_ExecuteUbergraph_StoreCardReveal_Parent_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -50,6 +80,4 @@ void AStoreCardReveal_Parent_C::ExecuteUbergraph_StoreCardReveal_Parent(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

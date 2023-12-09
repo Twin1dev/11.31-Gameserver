@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass Blueprint_Paper_VIM.Blueprint_Paper_VIM_C
+// (None)
+
+class UClass* UBlueprint_Paper_VIM_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Blueprint_Paper_VIM_C");
+
+	return Clss;
+}
+
+
+// Blueprint_Paper_VIM_C Blueprint_Paper_VIM.Default__Blueprint_Paper_VIM_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBlueprint_Paper_VIM_C* UBlueprint_Paper_VIM_C::GetDefaultObj()
+{
+	static class UBlueprint_Paper_VIM_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBlueprint_Paper_VIM_C*>(UBlueprint_Paper_VIM_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Blueprint_Paper_VIM.Blueprint_Paper_VIM_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void UBlueprint_Paper_VIM_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("Blueprint_Paper_VIM_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UBlueprint_Paper_VIM_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Blueprint_Paper_VIM_C", "AnimGraph");
+
+	Params::UBlueprint_Paper_VIM_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -42,9 +70,12 @@ void UBlueprint_Paper_VIM_C::AnimGraph(struct FPoseLink* AnimGraph)
 
 void UBlueprint_Paper_VIM_C::ExecuteUbergraph_Blueprint_Paper_VIM(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("Blueprint_Paper_VIM_C", "ExecuteUbergraph_Blueprint_Paper_VIM");
+	static class UFunction* Func = nullptr;
 
-	Params::UBlueprint_Paper_VIM_C_ExecuteUbergraph_Blueprint_Paper_VIM_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Blueprint_Paper_VIM_C", "ExecuteUbergraph_Blueprint_Paper_VIM");
+
+	Params::UBlueprint_Paper_VIM_C_ExecuteUbergraph_Blueprint_Paper_VIM_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -54,6 +85,4 @@ void UBlueprint_Paper_VIM_C::ExecuteUbergraph_Blueprint_Paper_VIM(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

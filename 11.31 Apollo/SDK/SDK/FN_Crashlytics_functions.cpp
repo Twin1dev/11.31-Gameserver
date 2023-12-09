@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class Crashlytics.CrashlyticsBlueprintLibrary
+// (None)
+
+class UClass* UCrashlyticsBlueprintLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CrashlyticsBlueprintLibrary");
+
+	return Clss;
+}
+
+
+// CrashlyticsBlueprintLibrary Crashlytics.Default__CrashlyticsBlueprintLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UCrashlyticsBlueprintLibrary* UCrashlyticsBlueprintLibrary::GetDefaultObj()
+{
+	static class UCrashlyticsBlueprintLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCrashlyticsBlueprintLibrary*>(UCrashlyticsBlueprintLibrary::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Crashlytics.CrashlyticsBlueprintLibrary.SetUserName
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -22,19 +47,22 @@ namespace SDK
 
 void UCrashlyticsBlueprintLibrary::SetUserName(const class FString& Name)
 {
-	static auto Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "SetUserName");
+	static class UFunction* Func = nullptr;
 
-	Params::UCrashlyticsBlueprintLibrary_SetUserName_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "SetUserName");
+
+	Params::UCrashlyticsBlueprintLibrary_SetUserName_Params Parms{};
 
 	Parms.Name = Name;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -46,19 +74,22 @@ void UCrashlyticsBlueprintLibrary::SetUserName(const class FString& Name)
 
 void UCrashlyticsBlueprintLibrary::SetUserIdentifier(const class FString& ID)
 {
-	static auto Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "SetUserIdentifier");
+	static class UFunction* Func = nullptr;
 
-	Params::UCrashlyticsBlueprintLibrary_SetUserIdentifier_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "SetUserIdentifier");
+
+	Params::UCrashlyticsBlueprintLibrary_SetUserIdentifier_Params Parms{};
 
 	Parms.ID = ID;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -70,19 +101,22 @@ void UCrashlyticsBlueprintLibrary::SetUserIdentifier(const class FString& ID)
 
 void UCrashlyticsBlueprintLibrary::SetUserEmail(const class FString& Email)
 {
-	static auto Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "SetUserEmail");
+	static class UFunction* Func = nullptr;
 
-	Params::UCrashlyticsBlueprintLibrary_SetUserEmail_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "SetUserEmail");
+
+	Params::UCrashlyticsBlueprintLibrary_SetUserEmail_Params Parms{};
 
 	Parms.Email = Email;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -95,20 +129,23 @@ void UCrashlyticsBlueprintLibrary::SetUserEmail(const class FString& Email)
 
 void UCrashlyticsBlueprintLibrary::SetStringKey(const class FString& Key, const class FString& Value)
 {
-	static auto Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "SetStringKey");
+	static class UFunction* Func = nullptr;
 
-	Params::UCrashlyticsBlueprintLibrary_SetStringKey_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "SetStringKey");
+
+	Params::UCrashlyticsBlueprintLibrary_SetStringKey_Params Parms{};
 
 	Parms.Key = Key;
 	Parms.Value = Value;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -121,20 +158,23 @@ void UCrashlyticsBlueprintLibrary::SetStringKey(const class FString& Key, const 
 
 void UCrashlyticsBlueprintLibrary::SetIntegerKey(const class FString& Key, int32 Value)
 {
-	static auto Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "SetIntegerKey");
+	static class UFunction* Func = nullptr;
 
-	Params::UCrashlyticsBlueprintLibrary_SetIntegerKey_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "SetIntegerKey");
+
+	Params::UCrashlyticsBlueprintLibrary_SetIntegerKey_Params Parms{};
 
 	Parms.Key = Key;
 	Parms.Value = Value;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -147,20 +187,23 @@ void UCrashlyticsBlueprintLibrary::SetIntegerKey(const class FString& Key, int32
 
 void UCrashlyticsBlueprintLibrary::SetFloatKey(const class FString& Key, float Value)
 {
-	static auto Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "SetFloatKey");
+	static class UFunction* Func = nullptr;
 
-	Params::UCrashlyticsBlueprintLibrary_SetFloatKey_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "SetFloatKey");
+
+	Params::UCrashlyticsBlueprintLibrary_SetFloatKey_Params Parms{};
 
 	Parms.Key = Key;
 	Parms.Value = Value;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -173,20 +216,23 @@ void UCrashlyticsBlueprintLibrary::SetFloatKey(const class FString& Key, float V
 
 void UCrashlyticsBlueprintLibrary::SetBooleanKey(const class FString& Key, bool Value)
 {
-	static auto Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "SetBooleanKey");
+	static class UFunction* Func = nullptr;
 
-	Params::UCrashlyticsBlueprintLibrary_SetBooleanKey_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "SetBooleanKey");
+
+	Params::UCrashlyticsBlueprintLibrary_SetBooleanKey_Params Parms{};
 
 	Parms.Key = Key;
 	Parms.Value = Value;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -198,19 +244,22 @@ void UCrashlyticsBlueprintLibrary::SetBooleanKey(const class FString& Key, bool 
 
 void UCrashlyticsBlueprintLibrary::LogMessage(const class FString& Message)
 {
-	static auto Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "LogMessage");
+	static class UFunction* Func = nullptr;
 
-	Params::UCrashlyticsBlueprintLibrary_LogMessage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "LogMessage");
+
+	Params::UCrashlyticsBlueprintLibrary_LogMessage_Params Parms{};
 
 	Parms.Message = Message;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -222,24 +271,25 @@ void UCrashlyticsBlueprintLibrary::LogMessage(const class FString& Message)
 
 void UCrashlyticsBlueprintLibrary::LogException(const class FString& Message)
 {
-	static auto Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "LogException");
+	static class UFunction* Func = nullptr;
 
-	Params::UCrashlyticsBlueprintLibrary_LogException_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CrashlyticsBlueprintLibrary", "LogException");
+
+	Params::UCrashlyticsBlueprintLibrary_LogException_Params Parms{};
 
 	Parms.Message = Message;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

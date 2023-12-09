@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -32,7 +29,7 @@ public:
 	float                                        ShatterShield_Opacity_3B96BD02488A8F69F3D086A2B7978EC8; // 0x2AD4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        ShatterShield_Highlight_Cracks_3B96BD02488A8F69F3D086A2B7978EC8; // 0x2AD8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ETimelineDirection                ShatterShield__Direction_3B96BD02488A8F69F3D086A2B7978EC8; // 0x2ADC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58A9[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2D1E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTimelineComponent*                    ShatterShield;                                     // 0x2AE0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                ScreenEffect_PlayerHealthDamageDirection;          // 0x2AE8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                ScreenEffect_PlayerHealthDamage;                   // 0x2AF0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -50,23 +47,23 @@ public:
 	bool                                         CanSpawnRunKickupFX_;                              // 0x2B4C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         CanSpawnWalkKickupFX_;                             // 0x2B4D(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         CanSpawnDustLandFX_;                               // 0x2B4E(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_58AA[0x1];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2D1F[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FRotator                              RunWalkParticleRotation;                           // 0x2B50(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         IsNinjaInShadowStance_;                            // 0x2B5C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_58AB[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2D20[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 GameplayTagsForHitByHuskMeleeSound;                // 0x2B60(0x20)(Edit, BlueprintVisible)
 	class UMaterialInterface*                    Shield_Material;                                   // 0x2B80(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UMaterialInstanceDynamic*>      BodyShieldMIDArray;                                // 0x2B88(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UMaterialInstanceDynamic*>      HeadShieldMIDArray;                                // 0x2B98(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	bool                                         Shield_Active;                                     // 0x2BA8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_58AC[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2D21[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Tick_Delta_Seconds;                                // 0x2BAC(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Shield_Damage_Wave_Animation;                      // 0x2BB0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Overall_Shield_Damage_Wave_Animation_Length;       // 0x2BB4(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Size;                                              // 0x2BB8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Dying;                                             // 0x2BBC(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         CanRippleAgain;                                    // 0x2BBD(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_58AD[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2D22[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class USoundBase*                            Sound_Shield_Impact;                               // 0x2BC0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                            Sound_Shield_Destroyed;                            // 0x2BC8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                            Sound_Shield_FullyCharged;                         // 0x2BD0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -81,13 +78,13 @@ public:
 	bool                                         ShieldVisible_Shatter;                             // 0x2BF6(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         ShieldVisible_FullHealth;                          // 0x2BF7(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	float                                        Fully_Regened_Shield_health_Opacity;               // 0x2BF8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58AE[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2D23[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTagContainer                 TC_GameplayCueDamageShielded;                      // 0x2C00(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         LatestDamageIsShieldDamage;                        // 0x2C20(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_58AF[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2D24[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Damage_Taken;                                      // 0x2C24(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Last_Shield_Damage_Time;                           // 0x2C28(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58B0[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2D25[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UMaterialInstanceDynamic*>      CharmShieldMIDArray;                               // 0x2C30(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	bool                                         BodyValid;                                         // 0x2C40(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         BackpackValid;                                     // 0x2C41(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -96,7 +93,7 @@ public:
 	bool                                         CharmValid;                                        // 0x2C44(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         HeadValid;                                         // 0x2C45(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         On_Player_Built_Floor;                             // 0x2C46(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor)
-	uint8                                        Pad_58B1[0x1];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2D27[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayTag                          Event_NeedRoadsActive;                             // 0x2C48(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          Event_NeedRoadsDeactive;                           // 0x2C50(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                 TC_WhereWereGoingWeNeedRoads;                      // 0x2C58(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -111,7 +108,7 @@ public:
 	class FText                                  LastSpeechText;                                    // 0x2CB8(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UClass*                                DamageCameraShake;                                 // 0x2CD0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         UseAnimTrailsNotifies;                             // 0x2CD8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_58B2[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2D28[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FHitResult                            WaterTraceHitLocation;                             // 0x2CDC(0x88)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FVector                               StableVelocityVector;                              // 0x2D64(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                       PlayerRunTemplate_Ground;                          // 0x2D70(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -119,13 +116,13 @@ public:
 	class UParticleSystem*                       PlayerRunTemplate_Water;                           // 0x2D80(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystem*                       PlayerWalkTemplate_Water;                          // 0x2D88(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         TickWaterLevel;                                    // 0x2D90(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_58B3[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2D29[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UTextureRenderTarget2D*                WetnessDepthTexture;                               // 0x2D98(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*              WaterLevelMID;                                     // 0x2DA0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*              WaterDecayMID;                                     // 0x2DA8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Was_RTT_Enabled_Var_Set;                           // 0x2DB0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         Water_Scene_Capture_Enabled;                       // 0x2DB1(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_58B4[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2D2A[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        StartingMinCapsuleShadowVis;                       // 0x2DB4(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                CachedEffect;                                      // 0x2DB8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UMaterialInstanceDynamic*>      WaterInteractionWakeMIDS;                          // 0x2DC0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
@@ -135,12 +132,12 @@ public:
 	struct FLinearColor                          WaterTraceImpactNormalAndZHeightLocation;          // 0x2DE8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               PlayerVelocity;                                    // 0x2DF8(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         EnableRunWalkWaterGroundFX;                        // 0x2E04(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_58B5[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2D2B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UMaterialInstanceDynamic*>      Previous_MID;                                      // 0x2E08(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UMaterialInstanceDynamic*>      Previous_Weapon_MID;                               // 0x2E18(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	class USkeletalMeshComponent*                DuplicateCharacterMesh;                            // 0x2E28(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        ArrayAlignment;                                    // 0x2E30(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_58B6[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2D2C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UMaterialInterface*>            CharacterPartMaterials;                            // 0x2E38(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UMaterialInstanceDynamic*>      Previous_Head_MID;                                 // 0x2E48(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UMaterialInstanceDynamic*>      Previous_Body_MID;                                 // 0x2E58(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
@@ -166,17 +163,14 @@ public:
 	UMulticastInlineDelegateProperty_            SwingLeft2;                                        // 0x2F70(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UFXSystemComponent*                    AnimTrailFx;                                       // 0x2F80(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         BlockedByPawns;                                    // 0x2F88(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	uint8                                        Pad_58B7[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2D2D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayAttribute                    Attribute_CurrentShield_Const;                     // 0x2F90(0x20)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FGameplayAttribute                    Attribute_Shield_Const;                            // 0x2FB0(0x20)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FGameplayAttribute                    Attribute_CurrentHealth_Const;                     // 0x2FD0(0x20)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FGameplayAttribute                    Attribute_Max_Health_Const;                        // 0x2FF0(0x20)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("PlayerPawn_Generic_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class APlayerPawn_Generic_C* GetDefaultObj();
 
 	void Melee_Effect_Color(struct FVector* Melee_Color_Set);
 	float GetHealthPercent2(class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_1, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue);
@@ -261,6 +255,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

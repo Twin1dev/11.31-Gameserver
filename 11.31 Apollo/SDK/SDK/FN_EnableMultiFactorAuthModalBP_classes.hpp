@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -31,27 +28,24 @@ public:
 	class USafeZone*                             SafeZone;                                          // 0x500(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UScaleBox*                             ScaleBox_TitleHeader;                              // 0x508(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	enum class EFrontEndCamera                   DesiredFrontEndCamera;                             // 0x510(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_62C6[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6028[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortItemDefinition*                   PreviewItemDef;                                    // 0x518(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        HeartbeatDelayIntroAnimation;                      // 0x520(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                        DebugSocialImportType;                             // 0x524(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bHasReward;                                        // 0x525(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_62C7[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_602A[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  FacebookHeader;                                    // 0x528(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  VKHeader;                                          // 0x540(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  SteamHeader;                                       // 0x558(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  PlaystationHeader;                                 // 0x570(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  XboxHeader;                                        // 0x588(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	enum class ESocialImportPanelPlatform        SocialPlatform;                                    // 0x5A0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_62C8[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_602E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  NewVar_0;                                          // 0x5A8(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UClass*                                MobileLimitedTimeHeaderStyle;                      // 0x5C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("EnableMultiFactorAuthModalBP_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UEnableMultiFactorAuthModalBP_C* GetDefaultObj();
 
 	void ScaleTitleForCulture(float ScaleCharThreshold, float MaxCharCountForScale, int32 StartScaleAfterCharCount, class FText CallFunc_GetText_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, int32 CallFunc_Len_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_FMax_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_FClamp_ReturnValue);
 	void AnimationFullyCompleteBP();
@@ -73,6 +67,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass BP_Shotgun_SG_BFPA.BP_Shotgun_SG_BFPA_C
+// (None)
+
+class UClass* UBP_Shotgun_SG_BFPA_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_Shotgun_SG_BFPA_C");
+
+	return Clss;
+}
+
+
+// BP_Shotgun_SG_BFPA_C BP_Shotgun_SG_BFPA.Default__BP_Shotgun_SG_BFPA_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBP_Shotgun_SG_BFPA_C* UBP_Shotgun_SG_BFPA_C::GetDefaultObj()
+{
+	static class UBP_Shotgun_SG_BFPA_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBP_Shotgun_SG_BFPA_C*>(UBP_Shotgun_SG_BFPA_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_Shotgun_SG_BFPA.BP_Shotgun_SG_BFPA_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void UBP_Shotgun_SG_BFPA_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("BP_Shotgun_SG_BFPA_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_Shotgun_SG_BFPA_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Shotgun_SG_BFPA_C", "AnimGraph");
+
+	Params::UBP_Shotgun_SG_BFPA_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -42,9 +70,12 @@ void UBP_Shotgun_SG_BFPA_C::AnimGraph(struct FPoseLink* AnimGraph)
 
 void UBP_Shotgun_SG_BFPA_C::ExecuteUbergraph_BP_Shotgun_SG_BFPA(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("BP_Shotgun_SG_BFPA_C", "ExecuteUbergraph_BP_Shotgun_SG_BFPA");
+	static class UFunction* Func = nullptr;
 
-	Params::UBP_Shotgun_SG_BFPA_C_ExecuteUbergraph_BP_Shotgun_SG_BFPA_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Shotgun_SG_BFPA_C", "ExecuteUbergraph_BP_Shotgun_SG_BFPA");
+
+	Params::UBP_Shotgun_SG_BFPA_C_ExecuteUbergraph_BP_Shotgun_SG_BFPA_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -54,6 +85,4 @@ void UBP_Shotgun_SG_BFPA_C::ExecuteUbergraph_BP_Shotgun_SG_BFPA(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

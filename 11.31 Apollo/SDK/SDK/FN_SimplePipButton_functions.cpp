@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,20 +12,51 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SimplePipButton.SimplePipButton_C
+// (None)
+
+class UClass* USimplePipButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SimplePipButton_C");
+
+	return Clss;
+}
+
+
+// SimplePipButton_C SimplePipButton.Default__SimplePipButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USimplePipButton_C* USimplePipButton_C::GetDefaultObj()
+{
+	static class USimplePipButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USimplePipButton_C*>(USimplePipButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SimplePipButton.SimplePipButton_C.UpdateInputActionLayout
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FSlateBrush                 RimBrush                                                         (Edit, BlueprintVisible)
-// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
+// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     (None)
 // class UOverlaySlot*                K2Node_DynamicCast_AsOverlay_Slot                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void USimplePipButton_C::UpdateInputActionLayout(const struct FSlateBrush& RimBrush, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, class UOverlaySlot* K2Node_DynamicCast_AsOverlay_Slot, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SimplePipButton_C", "UpdateInputActionLayout");
+	static class UFunction* Func = nullptr;
 
-	Params::USimplePipButton_C_UpdateInputActionLayout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimplePipButton_C", "UpdateInputActionLayout");
+
+	Params::USimplePipButton_C_UpdateInputActionLayout_Params Parms{};
 
 	Parms.RimBrush = RimBrush;
 	Parms.K2Node_MakeStruct_SlateBrush = K2Node_MakeStruct_SlateBrush;
@@ -49,9 +77,12 @@ void USimplePipButton_C::UpdateInputActionLayout(const struct FSlateBrush& RimBr
 
 void USimplePipButton_C::UpdateStyle(bool bUsingGamepad, class FText ActionText)
 {
-	static auto Func = Class->GetFunction("SimplePipButton_C", "UpdateStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::USimplePipButton_C_UpdateStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimplePipButton_C", "UpdateStyle");
+
+	Params::USimplePipButton_C_UpdateStyle_Params Parms{};
 
 	Parms.bUsingGamepad = bUsingGamepad;
 	Parms.ActionText = ActionText;
@@ -67,12 +98,14 @@ void USimplePipButton_C::UpdateStyle(bool bUsingGamepad, class FText ActionText)
 
 void USimplePipButton_C::InitializeButton()
 {
-	static auto Func = Class->GetFunction("SimplePipButton_C", "InitializeButton");
+	static class UFunction* Func = nullptr;
 
-	Params::USimplePipButton_C_InitializeButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimplePipButton_C", "InitializeButton");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -86,9 +119,12 @@ void USimplePipButton_C::InitializeButton()
 
 void USimplePipButton_C::UpdateTextAndStyle(class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SimplePipButton_C", "UpdateTextAndStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::USimplePipButton_C_UpdateTextAndStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimplePipButton_C", "UpdateTextAndStyle");
+
+	Params::USimplePipButton_C_UpdateTextAndStyle_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetCurrentInputType_ReturnValue = CallFunc_GetCurrentInputType_ReturnValue;
@@ -106,9 +142,12 @@ void USimplePipButton_C::UpdateTextAndStyle(class UCommonInputSubsystem* CallFun
 
 void USimplePipButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("SimplePipButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::USimplePipButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimplePipButton_C", "PreConstruct");
+
+	Params::USimplePipButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -124,9 +163,12 @@ void USimplePipButton_C::PreConstruct(bool IsDesignTime)
 
 void USimplePipButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad)
 {
-	static auto Func = Class->GetFunction("SimplePipButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::USimplePipButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimplePipButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+
+	Params::USimplePipButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature_Params Parms{};
 
 	Parms.bUsingGamepad = bUsingGamepad;
 
@@ -142,9 +184,12 @@ void USimplePipButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundE
 
 void USimplePipButton_C::OnTriggeredInputActionChanged(struct FDataTableRowHandle& NewTriggeredAction)
 {
-	static auto Func = Class->GetFunction("SimplePipButton_C", "OnTriggeredInputActionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::USimplePipButton_C_OnTriggeredInputActionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimplePipButton_C", "OnTriggeredInputActionChanged");
+
+	Params::USimplePipButton_C_OnTriggeredInputActionChanged_Params Parms{};
 
 	Parms.NewTriggeredAction = NewTriggeredAction;
 
@@ -160,9 +205,12 @@ void USimplePipButton_C::OnTriggeredInputActionChanged(struct FDataTableRowHandl
 
 void USimplePipButton_C::OnActionProgress(float HeldPercent)
 {
-	static auto Func = Class->GetFunction("SimplePipButton_C", "OnActionProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::USimplePipButton_C_OnActionProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimplePipButton_C", "OnActionProgress");
+
+	Params::USimplePipButton_C_OnActionProgress_Params Parms{};
 
 	Parms.HeldPercent = HeldPercent;
 
@@ -177,12 +225,14 @@ void USimplePipButton_C::OnActionProgress(float HeldPercent)
 
 void USimplePipButton_C::OnActionComplete()
 {
-	static auto Func = Class->GetFunction("SimplePipButton_C", "OnActionComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::USimplePipButton_C_OnActionComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimplePipButton_C", "OnActionComplete");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -193,12 +243,14 @@ void USimplePipButton_C::OnActionComplete()
 
 void USimplePipButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("SimplePipButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::USimplePipButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimplePipButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -209,12 +261,14 @@ void USimplePipButton_C::Construct()
 
 void USimplePipButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("SimplePipButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USimplePipButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimplePipButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -225,12 +279,14 @@ void USimplePipButton_C::BP_OnHovered()
 
 void USimplePipButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("SimplePipButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USimplePipButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimplePipButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -251,9 +307,12 @@ void USimplePipButton_C::BP_OnUnhovered()
 
 void USimplePipButton_C::ExecuteUbergraph_SimplePipButton(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool K2Node_Event_IsDesignTime, bool CallFunc_HasAnyChildren_ReturnValue, bool Temp_bool_Variable, bool K2Node_ComponentBoundEvent_bUsingGamepad, enum class ESlateVisibility K2Node_Select_Default, const struct FDataTableRowHandle& K2Node_Event_NewTriggeredAction, float K2Node_Event_HeldPercent)
 {
-	static auto Func = Class->GetFunction("SimplePipButton_C", "ExecuteUbergraph_SimplePipButton");
+	static class UFunction* Func = nullptr;
 
-	Params::USimplePipButton_C_ExecuteUbergraph_SimplePipButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimplePipButton_C", "ExecuteUbergraph_SimplePipButton");
+
+	Params::USimplePipButton_C_ExecuteUbergraph_SimplePipButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -272,6 +331,4 @@ void USimplePipButton_C::ExecuteUbergraph_SimplePipButton(int32 EntryPoint, enum
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

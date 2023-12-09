@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Border-ModalHeader-Dark.Border-ModalHeader-Dark_C
+// (None)
+
+class UClass* UBorderMinusModalHeaderMinusDark_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Border-ModalHeader-Dark_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Border-ModalHeader-Dark_C Border-ModalHeader-Dark.Default__Border-ModalHeader-Dark_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBorderMinusModalHeaderMinusDark_C* UBorderMinusModalHeaderMinusDark_C::GetDefaultObj()
+{
+	static class UBorderMinusModalHeaderMinusDark_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorderMinusModalHeaderMinusDark_C*>(UBorderMinusModalHeaderMinusDark_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

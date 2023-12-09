@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass OptionsMenuInputDisplayOnly.OptionsMenuInputDisplayOnly_C
+// (None)
+
+class UClass* UOptionsMenuInputDisplayOnly_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OptionsMenuInputDisplayOnly_C");
+
+	return Clss;
+}
+
+
+// OptionsMenuInputDisplayOnly_C OptionsMenuInputDisplayOnly.Default__OptionsMenuInputDisplayOnly_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UOptionsMenuInputDisplayOnly_C* UOptionsMenuInputDisplayOnly_C::GetDefaultObj()
+{
+	static class UOptionsMenuInputDisplayOnly_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UOptionsMenuInputDisplayOnly_C*>(UOptionsMenuInputDisplayOnly_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function OptionsMenuInputDisplayOnly.OptionsMenuInputDisplayOnly_C.BP_OnEntryReleased
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UOptionsMenuInputDisplayOnly_C::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("OptionsMenuInputDisplayOnly_C", "BP_OnEntryReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInputDisplayOnly_C_BP_OnEntryReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInputDisplayOnly_C", "BP_OnEntryReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UOptionsMenuInputDisplayOnly_C::BP_OnEntryReleased()
 
 void UOptionsMenuInputDisplayOnly_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInputDisplayOnly_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInputDisplayOnly_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInputDisplayOnly_C", "BP_OnItemExpansionChanged");
+
+	Params::UOptionsMenuInputDisplayOnly_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -56,9 +86,12 @@ void UOptionsMenuInputDisplayOnly_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UOptionsMenuInputDisplayOnly_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInputDisplayOnly_C", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInputDisplayOnly_C_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInputDisplayOnly_C", "BP_OnItemSelectionChanged");
+
+	Params::UOptionsMenuInputDisplayOnly_C_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -74,9 +107,12 @@ void UOptionsMenuInputDisplayOnly_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UOptionsMenuInputDisplayOnly_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInputDisplayOnly_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInputDisplayOnly_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInputDisplayOnly_C", "OnListItemObjectSet");
+
+	Params::UOptionsMenuInputDisplayOnly_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -95,9 +131,12 @@ void UOptionsMenuInputDisplayOnly_C::OnListItemObjectSet(class UObject* ListItem
 
 void UOptionsMenuInputDisplayOnly_C::ExecuteUbergraph_OptionsMenuInputDisplayOnly(int32 EntryPoint, class UObject* K2Node_Event_ListItemObject, bool K2Node_Event_bIsExpanded, bool K2Node_Event_bIsSelected)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInputDisplayOnly_C", "ExecuteUbergraph_OptionsMenuInputDisplayOnly");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInputDisplayOnly_C_ExecuteUbergraph_OptionsMenuInputDisplayOnly_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInputDisplayOnly_C", "ExecuteUbergraph_OptionsMenuInputDisplayOnly");
+
+	Params::UOptionsMenuInputDisplayOnly_C_ExecuteUbergraph_OptionsMenuInputDisplayOnly_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_ListItemObject = K2Node_Event_ListItemObject;
@@ -110,6 +149,4 @@ void UOptionsMenuInputDisplayOnly_C::ExecuteUbergraph_OptionsMenuInputDisplayOnl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,62 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class CableComponent.CableActor
+// (Actor)
+
+class UClass* ACableActor::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CableActor");
+
+	return Clss;
+}
+
+
+// CableActor CableComponent.Default__CableActor
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ACableActor* ACableActor::GetDefaultObj()
+{
+	static class ACableActor* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ACableActor*>(ACableActor::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class CableComponent.CableComponent
+// (SceneComponent, PrimitiveComponent)
+
+class UClass* UCableComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CableComponent");
+
+	return Clss;
+}
+
+
+// CableComponent CableComponent.Default__CableComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UCableComponent* UCableComponent::GetDefaultObj()
+{
+	static class UCableComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCableComponent*>(UCableComponent::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function CableComponent.CableComponent.SetAttachEndToComponent
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -23,20 +76,23 @@ namespace SDK
 
 void UCableComponent::SetAttachEndToComponent(class USceneComponent* Component, class FName SocketName)
 {
-	static auto Func = Class->GetFunction("CableComponent", "SetAttachEndToComponent");
+	static class UFunction* Func = nullptr;
 
-	Params::UCableComponent_SetAttachEndToComponent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CableComponent", "SetAttachEndToComponent");
+
+	Params::UCableComponent_SetAttachEndToComponent_Params Parms{};
 
 	Parms.Component = Component;
 	Parms.SocketName = SocketName;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -50,21 +106,24 @@ void UCableComponent::SetAttachEndToComponent(class USceneComponent* Component, 
 
 void UCableComponent::SetAttachEndTo(class AActor* Actor, class FName ComponentProperty, class FName SocketName)
 {
-	static auto Func = Class->GetFunction("CableComponent", "SetAttachEndTo");
+	static class UFunction* Func = nullptr;
 
-	Params::UCableComponent_SetAttachEndTo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CableComponent", "SetAttachEndTo");
+
+	Params::UCableComponent_SetAttachEndTo_Params Parms{};
 
 	Parms.Actor = Actor;
 	Parms.ComponentProperty = ComponentProperty;
 	Parms.SocketName = SocketName;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -76,21 +135,24 @@ void UCableComponent::SetAttachEndTo(class AActor* Actor, class FName ComponentP
 
 void UCableComponent::GetCableParticleLocations(TArray<struct FVector>* Locations)
 {
-	static auto Func = Class->GetFunction("CableComponent", "GetCableParticleLocations");
+	static class UFunction* Func = nullptr;
 
-	Params::UCableComponent_GetCableParticleLocations_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CableComponent", "GetCableParticleLocations");
+
+	Params::UCableComponent_GetCableParticleLocations_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Locations != nullptr)
-		*Locations = Parms.Locations;
+		*Locations = std::move(Parms.Locations);
 
 }
 
@@ -102,18 +164,21 @@ void UCableComponent::GetCableParticleLocations(TArray<struct FVector>* Location
 
 class USceneComponent* UCableComponent::GetAttachedComponent()
 {
-	static auto Func = Class->GetFunction("CableComponent", "GetAttachedComponent");
+	static class UFunction* Func = nullptr;
 
-	Params::UCableComponent_GetAttachedComponent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CableComponent", "GetAttachedComponent");
+
+	Params::UCableComponent_GetAttachedComponent_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -127,18 +192,21 @@ class USceneComponent* UCableComponent::GetAttachedComponent()
 
 class AActor* UCableComponent::GetAttachedActor()
 {
-	static auto Func = Class->GetFunction("CableComponent", "GetAttachedActor");
+	static class UFunction* Func = nullptr;
 
-	Params::UCableComponent_GetAttachedActor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CableComponent", "GetAttachedActor");
+
+	Params::UCableComponent_GetAttachedActor_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -146,6 +214,4 @@ class AActor* UCableComponent::GetAttachedActor()
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

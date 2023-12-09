@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TextStyle-Base-S-B-Black.TextStyle-Base-S-B-Black_C
+// (None)
+
+class UClass* UTextStyleMinusBaseMinusSMinusBMinusBlack_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextStyle-Base-S-B-Black_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// TextStyle-Base-S-B-Black_C TextStyle-Base-S-B-Black.Default__TextStyle-Base-S-B-Black_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTextStyleMinusBaseMinusSMinusBMinusBlack_C* UTextStyleMinusBaseMinusSMinusBMinusBlack_C::GetDefaultObj()
+{
+	static class UTextStyleMinusBaseMinusSMinusBMinusBlack_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextStyleMinusBaseMinusSMinusBMinusBlack_C*>(UTextStyleMinusBaseMinusSMinusBMinusBlack_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

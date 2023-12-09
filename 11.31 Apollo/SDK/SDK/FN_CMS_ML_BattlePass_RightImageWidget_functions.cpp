@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass CMS_ML_BattlePass_RightImageWidget.CMS_ML_BattlePass_RightImageWidget_C
+// (None)
+
+class UClass* UCMS_ML_BattlePass_RightImageWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CMS_ML_BattlePass_RightImageWidget_C");
+
+	return Clss;
+}
+
+
+// CMS_ML_BattlePass_RightImageWidget_C CMS_ML_BattlePass_RightImageWidget.Default__CMS_ML_BattlePass_RightImageWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCMS_ML_BattlePass_RightImageWidget_C* UCMS_ML_BattlePass_RightImageWidget_C::GetDefaultObj()
+{
+	static class UCMS_ML_BattlePass_RightImageWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCMS_ML_BattlePass_RightImageWidget_C*>(UCMS_ML_BattlePass_RightImageWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function CMS_ML_BattlePass_RightImageWidget.CMS_ML_BattlePass_RightImageWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UCMS_ML_BattlePass_RightImageWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("CMS_ML_BattlePass_RightImageWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCMS_ML_BattlePass_RightImageWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CMS_ML_BattlePass_RightImageWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -36,13 +63,16 @@ void UCMS_ML_BattlePass_RightImageWidget_C::Construct()
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAthenaAccountContext*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetCurrentChapterAndSeasonText_ReturnValue              ()
+// class FText                        CallFunc_GetCurrentChapterAndSeasonText_ReturnValue              (None)
 
 void UCMS_ML_BattlePass_RightImageWidget_C::ExecuteUbergraph_CMS_ML_BattlePass_RightImageWidget(int32 EntryPoint, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue, class FText CallFunc_GetCurrentChapterAndSeasonText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("CMS_ML_BattlePass_RightImageWidget_C", "ExecuteUbergraph_CMS_ML_BattlePass_RightImageWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UCMS_ML_BattlePass_RightImageWidget_C_ExecuteUbergraph_CMS_ML_BattlePass_RightImageWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CMS_ML_BattlePass_RightImageWidget_C", "ExecuteUbergraph_CMS_ML_BattlePass_RightImageWidget");
+
+	Params::UCMS_ML_BattlePass_RightImageWidget_C_ExecuteUbergraph_CMS_ML_BattlePass_RightImageWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -54,6 +84,4 @@ void UCMS_ML_BattlePass_RightImageWidget_C::ExecuteUbergraph_CMS_ML_BattlePass_R
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

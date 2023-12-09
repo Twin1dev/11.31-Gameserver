@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -24,11 +21,8 @@ public:
 	bool                                         bPreviousInvulnerable;                             // 0xC91(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         bIsVisibleDuringMinigame;                          // 0xC92(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BuildingToy_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ABuildingToy_C* GetDefaultObj();
 
 	void GetVisualComponents(TArray<class USceneComponent*>* Components, TArray<class USceneComponent*>& CallFunc_K2_GetComponentsByClass_ReturnValue);
 	void DesiredVisibility(bool* Visibility, class AActor* Temp_object_Variable, bool CallFunc_IsVisibleDuringMinigame_IsVisibleDuringMinigame, bool CallFunc_IsInPlayMode_Play_Mode, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanOR_ReturnValue);
@@ -50,6 +44,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

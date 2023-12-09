@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass ApplyMedkit_Athena_AnimBP.ApplyMedkit_Athena_AnimBP_C
+// (None)
+
+class UClass* UApplyMedkit_Athena_AnimBP_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ApplyMedkit_Athena_AnimBP_C");
+
+	return Clss;
+}
+
+
+// ApplyMedkit_Athena_AnimBP_C ApplyMedkit_Athena_AnimBP.Default__ApplyMedkit_Athena_AnimBP_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UApplyMedkit_Athena_AnimBP_C* UApplyMedkit_Athena_AnimBP_C::GetDefaultObj()
+{
+	static class UApplyMedkit_Athena_AnimBP_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UApplyMedkit_Athena_AnimBP_C*>(UApplyMedkit_Athena_AnimBP_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ApplyMedkit_Athena_AnimBP.ApplyMedkit_Athena_AnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void UApplyMedkit_Athena_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("ApplyMedkit_Athena_AnimBP_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UApplyMedkit_Athena_AnimBP_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ApplyMedkit_Athena_AnimBP_C", "AnimGraph");
+
+	Params::UApplyMedkit_Athena_AnimBP_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -42,9 +70,12 @@ void UApplyMedkit_Athena_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 
 void UApplyMedkit_Athena_AnimBP_C::ExecuteUbergraph_ApplyMedkit_Athena_AnimBP(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("ApplyMedkit_Athena_AnimBP_C", "ExecuteUbergraph_ApplyMedkit_Athena_AnimBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UApplyMedkit_Athena_AnimBP_C_ExecuteUbergraph_ApplyMedkit_Athena_AnimBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ApplyMedkit_Athena_AnimBP_C", "ExecuteUbergraph_ApplyMedkit_Athena_AnimBP");
+
+	Params::UApplyMedkit_Athena_AnimBP_C_ExecuteUbergraph_ApplyMedkit_Athena_AnimBP_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -54,6 +85,4 @@ void UApplyMedkit_Athena_AnimBP_C::ExecuteUbergraph_ApplyMedkit_Athena_AnimBP(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

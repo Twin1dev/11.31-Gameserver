@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass CMSImageSlideShow.CMSImageSlideShow_C
+// (None)
+
+class UClass* UCMSImageSlideShow_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CMSImageSlideShow_C");
+
+	return Clss;
+}
+
+
+// CMSImageSlideShow_C CMSImageSlideShow.Default__CMSImageSlideShow_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCMSImageSlideShow_C* UCMSImageSlideShow_C::GetDefaultObj()
+{
+	static class UCMSImageSlideShow_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCMSImageSlideShow_C*>(UCMSImageSlideShow_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function CMSImageSlideShow.CMSImageSlideShow_C.SetMediaURLs
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UCMSImageSlideShow_C::SetMediaURLs(TArray<class FString>& MediaURLs)
 {
-	static auto Func = Class->GetFunction("CMSImageSlideShow_C", "SetMediaURLs");
+	static class UFunction* Func = nullptr;
 
-	Params::UCMSImageSlideShow_C_SetMediaURLs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CMSImageSlideShow_C", "SetMediaURLs");
+
+	Params::UCMSImageSlideShow_C_SetMediaURLs_Params Parms{};
 
 	Parms.MediaURLs = MediaURLs;
 
@@ -41,9 +69,12 @@ void UCMSImageSlideShow_C::SetMediaURLs(TArray<class FString>& MediaURLs)
 
 void UCMSImageSlideShow_C::BndEvt__Images_K2Node_ComponentBoundEvent_0_OnCurrentPageIndexChanged__DelegateSignature(class UCommonWidgetCarousel* CarouselWidget, int32 CurrentPageIndex)
 {
-	static auto Func = Class->GetFunction("CMSImageSlideShow_C", "BndEvt__Images_K2Node_ComponentBoundEvent_0_OnCurrentPageIndexChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCMSImageSlideShow_C_BndEvt__Images_K2Node_ComponentBoundEvent_0_OnCurrentPageIndexChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CMSImageSlideShow_C", "BndEvt__Images_K2Node_ComponentBoundEvent_0_OnCurrentPageIndexChanged__DelegateSignature");
+
+	Params::UCMSImageSlideShow_C_BndEvt__Images_K2Node_ComponentBoundEvent_0_OnCurrentPageIndexChanged__DelegateSignature_Params Parms{};
 
 	Parms.CarouselWidget = CarouselWidget;
 	Parms.CurrentPageIndex = CurrentPageIndex;
@@ -71,9 +102,12 @@ void UCMSImageSlideShow_C::BndEvt__Images_K2Node_ComponentBoundEvent_0_OnCurrent
 
 void UCMSImageSlideShow_C::ExecuteUbergraph_CMSImageSlideShow(int32 EntryPoint, class UCommonWidgetCarousel* K2Node_ComponentBoundEvent_CarouselWidget, int32 K2Node_ComponentBoundEvent_CurrentPageIndex, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class UCMSImage_C* CallFunc_Create_ReturnValue, TArray<class FString>& K2Node_CustomEvent_MediaUrls, class UPanelSlot* CallFunc_AddChild_ReturnValue, const class FString& CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("CMSImageSlideShow_C", "ExecuteUbergraph_CMSImageSlideShow");
+	static class UFunction* Func = nullptr;
 
-	Params::UCMSImageSlideShow_C_ExecuteUbergraph_CMSImageSlideShow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CMSImageSlideShow_C", "ExecuteUbergraph_CMSImageSlideShow");
+
+	Params::UCMSImageSlideShow_C_ExecuteUbergraph_CMSImageSlideShow_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_CarouselWidget = K2Node_ComponentBoundEvent_CarouselWidget;
@@ -100,9 +134,12 @@ void UCMSImageSlideShow_C::ExecuteUbergraph_CMSImageSlideShow(int32 EntryPoint, 
 
 void UCMSImageSlideShow_C::CarouselIndexChanged__DelegateSignature(int32 CurrentPageIndex)
 {
-	static auto Func = Class->GetFunction("CMSImageSlideShow_C", "CarouselIndexChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCMSImageSlideShow_C_CarouselIndexChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CMSImageSlideShow_C", "CarouselIndexChanged__DelegateSignature");
+
+	Params::UCMSImageSlideShow_C_CarouselIndexChanged__DelegateSignature_Params Parms{};
 
 	Parms.CurrentPageIndex = CurrentPageIndex;
 
@@ -112,6 +149,4 @@ void UCMSImageSlideShow_C::CarouselIndexChanged__DelegateSignature(int32 Current
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

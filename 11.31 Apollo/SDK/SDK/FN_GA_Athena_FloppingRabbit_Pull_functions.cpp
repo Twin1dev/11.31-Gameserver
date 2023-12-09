@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Athena_FloppingRabbit_Pull.GA_Athena_FloppingRabbit_Pull_C
+// (None)
+
+class UClass* UGA_Athena_FloppingRabbit_Pull_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Athena_FloppingRabbit_Pull_C");
+
+	return Clss;
+}
+
+
+// GA_Athena_FloppingRabbit_Pull_C GA_Athena_FloppingRabbit_Pull.Default__GA_Athena_FloppingRabbit_Pull_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Athena_FloppingRabbit_Pull_C* UGA_Athena_FloppingRabbit_Pull_C::GetDefaultObj()
+{
+	static class UGA_Athena_FloppingRabbit_Pull_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Athena_FloppingRabbit_Pull_C*>(UGA_Athena_FloppingRabbit_Pull_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Athena_FloppingRabbit_Pull.GA_Athena_FloppingRabbit_Pull_C.K2_ActivateAbility
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UGA_Athena_FloppingRabbit_Pull_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Athena_FloppingRabbit_Pull_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_FloppingRabbit_Pull_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_FloppingRabbit_Pull_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -43,7 +70,7 @@ void UGA_Athena_FloppingRabbit_Pull_C::K2_ActivateAbility()
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_VSize_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_Normal_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleCallFunc_GetGrantedByEffectContext_ReturnValue                   ()
+// struct FGameplayEffectContextHandleCallFunc_GetGrantedByEffectContext_ReturnValue                   (None)
 // class AActor*                      CallFunc_EffectContextGetEffectCauser_ReturnValue                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AController*                 CallFunc_GetController_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn_1                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -82,9 +109,12 @@ void UGA_Athena_FloppingRabbit_Pull_C::K2_ActivateAbility()
 
 void UGA_Athena_FloppingRabbit_Pull_C::ExecuteUbergraph_GA_Athena_FloppingRabbit_Pull(int32 EntryPoint, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, float CallFunc_VSize_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, const struct FGameplayEffectContextHandle& CallFunc_GetGrantedByEffectContext_ReturnValue, class AActor* CallFunc_EffectContextGetEffectCauser_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_1, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput, bool CallFunc_HasMatchingGameplayTag_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_OnSameTeam_ReturnValue, bool CallFunc_IsInVehicle_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_Not_PreBool_ReturnValue, bool Temp_bool_Variable, float CallFunc_GetValueAtLevel_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, int32 CallFunc_FFloor_ReturnValue, bool CallFunc_Conv_IntToBool_ReturnValue, float K2Node_Select_Default, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FVector& CallFunc_SuggestProjectileVelocity_CustomArc_OutLaunchVelocity, bool CallFunc_SuggestProjectileVelocity_CustomArc_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_2, int32 CallFunc_FFloor_ReturnValue_1, bool CallFunc_OnSameTeam_ReturnValue_1, bool CallFunc_Conv_IntToBool_ReturnValue_1, bool CallFunc_OnSameTeam_ReturnValue_2, bool CallFunc_IsSkydiving_ReturnValue, bool CallFunc_IsInVehicle_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Athena_FloppingRabbit_Pull_C", "ExecuteUbergraph_GA_Athena_FloppingRabbit_Pull");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_FloppingRabbit_Pull_C_ExecuteUbergraph_GA_Athena_FloppingRabbit_Pull_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_FloppingRabbit_Pull_C", "ExecuteUbergraph_GA_Athena_FloppingRabbit_Pull");
+
+	Params::UGA_Athena_FloppingRabbit_Pull_C_ExecuteUbergraph_GA_Athena_FloppingRabbit_Pull_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_K2_GetActorLocation_ReturnValue = CallFunc_K2_GetActorLocation_ReturnValue;
@@ -138,6 +168,4 @@ void UGA_Athena_FloppingRabbit_Pull_C::ExecuteUbergraph_GA_Athena_FloppingRabbit
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

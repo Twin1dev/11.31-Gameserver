@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass AnimNotifyState_HolsterWeapon.AnimNotifyState_HolsterWeapon_C
+// (None)
+
+class UClass* UAnimNotifyState_HolsterWeapon_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AnimNotifyState_HolsterWeapon_C");
+
+	return Clss;
+}
+
+
+// AnimNotifyState_HolsterWeapon_C AnimNotifyState_HolsterWeapon.Default__AnimNotifyState_HolsterWeapon_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAnimNotifyState_HolsterWeapon_C* UAnimNotifyState_HolsterWeapon_C::GetDefaultObj()
+{
+	static class UAnimNotifyState_HolsterWeapon_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAnimNotifyState_HolsterWeapon_C*>(UAnimNotifyState_HolsterWeapon_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AnimNotifyState_HolsterWeapon.AnimNotifyState_HolsterWeapon_C.Received_NotifyEnd
@@ -31,9 +56,12 @@ namespace SDK
 
 bool UAnimNotifyState_HolsterWeapon_C::Received_NotifyEnd(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, const class FString& CallFunc_GetObjectName_ReturnValue, class AActor* CallFunc_GetOwner_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AnimNotifyState_HolsterWeapon_C", "Received_NotifyEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimNotifyState_HolsterWeapon_C_Received_NotifyEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimNotifyState_HolsterWeapon_C", "Received_NotifyEnd");
+
+	Params::UAnimNotifyState_HolsterWeapon_C_Received_NotifyEnd_Params Parms{};
 
 	Parms.MeshComp = MeshComp;
 	Parms.Animation = Animation;
@@ -67,9 +95,12 @@ bool UAnimNotifyState_HolsterWeapon_C::Received_NotifyEnd(class USkeletalMeshCom
 
 bool UAnimNotifyState_HolsterWeapon_C::Received_NotifyBegin(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, float TotalDuration, const class FString& CallFunc_GetObjectName_ReturnValue, class AActor* CallFunc_GetOwner_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AnimNotifyState_HolsterWeapon_C", "Received_NotifyBegin");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimNotifyState_HolsterWeapon_C_Received_NotifyBegin_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimNotifyState_HolsterWeapon_C", "Received_NotifyBegin");
+
+	Params::UAnimNotifyState_HolsterWeapon_C_Received_NotifyBegin_Params Parms{};
 
 	Parms.MeshComp = MeshComp;
 	Parms.Animation = Animation;
@@ -88,6 +119,4 @@ bool UAnimNotifyState_HolsterWeapon_C::Received_NotifyBegin(class USkeletalMeshC
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

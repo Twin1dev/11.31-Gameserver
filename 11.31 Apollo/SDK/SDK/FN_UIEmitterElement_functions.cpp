@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass UIEmitterElement.UIEmitterElement_C
+// (None)
+
+class UClass* UUIEmitterElement_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UIEmitterElement_C");
+
+	return Clss;
+}
+
+
+// UIEmitterElement_C UIEmitterElement.Default__UIEmitterElement_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UUIEmitterElement_C* UUIEmitterElement_C::GetDefaultObj()
+{
+	static class UUIEmitterElement_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUIEmitterElement_C*>(UUIEmitterElement_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function UIEmitterElement.UIEmitterElement_C.EndofLife
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UUIEmitterElement_C::EndofLife()
 {
-	static auto Func = Class->GetFunction("UIEmitterElement_C", "EndofLife");
+	static class UFunction* Func = nullptr;
 
-	Params::UUIEmitterElement_C_EndofLife_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UIEmitterElement_C", "EndofLife");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UUIEmitterElement_C::EndofLife()
 
 void UUIEmitterElement_C::EventDestroy()
 {
-	static auto Func = Class->GetFunction("UIEmitterElement_C", "EventDestroy");
+	static class UFunction* Func = nullptr;
 
-	Params::UUIEmitterElement_C_EventDestroy_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UIEmitterElement_C", "EventDestroy");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UUIEmitterElement_C::EventDestroy()
 
 void UUIEmitterElement_C::StartAnim()
 {
-	static auto Func = Class->GetFunction("UIEmitterElement_C", "StartAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UUIEmitterElement_C_StartAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UIEmitterElement_C", "StartAnim");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void UUIEmitterElement_C::StartAnim()
 
 void UUIEmitterElement_C::Construct()
 {
-	static auto Func = Class->GetFunction("UIEmitterElement_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UUIEmitterElement_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UIEmitterElement_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -96,9 +129,12 @@ void UUIEmitterElement_C::Construct()
 
 void UUIEmitterElement_C::ExecuteUbergraph_UIEmitterElement(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_4, float CallFunc_Multiply_IntFloat_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_5)
 {
-	static auto Func = Class->GetFunction("UIEmitterElement_C", "ExecuteUbergraph_UIEmitterElement");
+	static class UFunction* Func = nullptr;
 
-	Params::UUIEmitterElement_C_ExecuteUbergraph_UIEmitterElement_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UIEmitterElement_C", "ExecuteUbergraph_UIEmitterElement");
+
+	Params::UUIEmitterElement_C_ExecuteUbergraph_UIEmitterElement_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -123,12 +159,14 @@ void UUIEmitterElement_C::ExecuteUbergraph_UIEmitterElement(int32 EntryPoint, cl
 
 void UUIEmitterElement_C::EmitterDeath__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("UIEmitterElement_C", "EmitterDeath__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UUIEmitterElement_C_EmitterDeath__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UIEmitterElement_C", "EmitterDeath__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -139,17 +177,17 @@ void UUIEmitterElement_C::EmitterDeath__DelegateSignature()
 
 void UUIEmitterElement_C::EmitterBirth__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("UIEmitterElement_C", "EmitterBirth__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UUIEmitterElement_C_EmitterBirth__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UIEmitterElement_C", "EmitterBirth__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

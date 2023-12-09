@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,24 +12,82 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class SocialUMG.SocialChatChannelTab
+// (None)
+
+class UClass* USocialChatChannelTab::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialChatChannelTab");
+
+	return Clss;
+}
+
+
+// SocialChatChannelTab SocialUMG.Default__SocialChatChannelTab
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialChatChannelTab* USocialChatChannelTab::GetDefaultObj()
+{
+	static class USocialChatChannelTab* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialChatChannelTab*>(USocialChatChannelTab::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class SocialUMG.SocialChatContainer
+// (None)
+
+class UClass* USocialChatContainer::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialChatContainer");
+
+	return Clss;
+}
+
+
+// SocialChatContainer SocialUMG.Default__SocialChatContainer
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialChatContainer* USocialChatContainer::GetDefaultObj()
+{
+	static class USocialChatContainer* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialChatContainer*>(USocialChatContainer::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SocialUMG.SocialChatContainer.SendCurrentMessage
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 
 void USocialChatContainer::SendCurrentMessage()
 {
-	static auto Func = Class->GetFunction("SocialChatContainer", "SendCurrentMessage");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialChatContainer_SendCurrentMessage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialChatContainer", "SendCurrentMessage");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -44,9 +99,12 @@ void USocialChatContainer::SendCurrentMessage()
 
 void USocialChatContainer::OnChatOpenChanged(bool bShouldBeOpen)
 {
-	static auto Func = Class->GetFunction("SocialChatContainer", "OnChatOpenChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialChatContainer_OnChatOpenChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialChatContainer", "OnChatOpenChanged");
+
+	Params::USocialChatContainer_OnChatOpenChanged_Params Parms{};
 
 	Parms.bShouldBeOpen = bShouldBeOpen;
 
@@ -61,18 +119,20 @@ void USocialChatContainer::OnChatOpenChanged(bool bShouldBeOpen)
 
 void USocialChatContainer::HandleRightTabPressed()
 {
-	static auto Func = Class->GetFunction("SocialChatContainer", "HandleRightTabPressed");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialChatContainer_HandleRightTabPressed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialChatContainer", "HandleRightTabPressed");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -83,18 +143,20 @@ void USocialChatContainer::HandleRightTabPressed()
 
 void USocialChatContainer::HandleLeftTabPressed()
 {
-	static auto Func = Class->GetFunction("SocialChatContainer", "HandleLeftTabPressed");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialChatContainer_HandleLeftTabPressed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialChatContainer", "HandleLeftTabPressed");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -105,18 +167,20 @@ void USocialChatContainer::HandleLeftTabPressed()
 
 void USocialChatContainer::FocusEditableText()
 {
-	static auto Func = Class->GetFunction("SocialChatContainer", "FocusEditableText");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialChatContainer_FocusEditableText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialChatContainer", "FocusEditableText");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -129,21 +193,80 @@ void USocialChatContainer::FocusEditableText()
 
 void USocialChatContainer::DynamicHandleMessageTextCommitted(class FText& MessageText, enum class ETextCommit CommitMethod)
 {
-	static auto Func = Class->GetFunction("SocialChatContainer", "DynamicHandleMessageTextCommitted");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialChatContainer_DynamicHandleMessageTextCommitted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialChatContainer", "DynamicHandleMessageTextCommitted");
+
+	Params::USocialChatContainer_DynamicHandleMessageTextCommitted_Params Parms{};
 
 	Parms.MessageText = MessageText;
 	Parms.CommitMethod = CommitMethod;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class SocialUMG.SocialChatEditableText
+// (None)
+
+class UClass* USocialChatEditableText::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialChatEditableText");
+
+	return Clss;
+}
+
+
+// SocialChatEditableText SocialUMG.Default__SocialChatEditableText
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialChatEditableText* USocialChatEditableText::GetDefaultObj()
+{
+	static class USocialChatEditableText* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialChatEditableText*>(USocialChatEditableText::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class SocialUMG.SocialChatMessageEntry
+// (None)
+
+class UClass* USocialChatMessageEntry::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialChatMessageEntry");
+
+	return Clss;
+}
+
+
+// SocialChatMessageEntry SocialUMG.Default__SocialChatMessageEntry
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialChatMessageEntry* USocialChatMessageEntry::GetDefaultObj()
+{
+	static class USocialChatMessageEntry* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialChatMessageEntry*>(USocialChatMessageEntry::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -153,12 +276,14 @@ void USocialChatContainer::DynamicHandleMessageTextCommitted(class FText& Messag
 
 void USocialChatMessageEntry::OnMessageSet()
 {
-	static auto Func = Class->GetFunction("SocialChatMessageEntry", "OnMessageSet");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialChatMessageEntry_OnMessageSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialChatMessageEntry", "OnMessageSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -170,21 +295,80 @@ void USocialChatMessageEntry::OnMessageSet()
 
 bool USocialChatMessageEntry::CanInteract()
 {
-	static auto Func = Class->GetFunction("SocialChatMessageEntry", "CanInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialChatMessageEntry_CanInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialChatMessageEntry", "CanInteract");
+
+	Params::USocialChatMessageEntry_CanInteract_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class SocialUMG.SocialChatMessageList
+// (None)
+
+class UClass* USocialChatMessageList::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialChatMessageList");
+
+	return Clss;
+}
+
+
+// SocialChatMessageList SocialUMG.Default__SocialChatMessageList
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialChatMessageList* USocialChatMessageList::GetDefaultObj()
+{
+	static class USocialChatMessageList* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialChatMessageList*>(USocialChatMessageList::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class SocialUMG.SocialGroupListEntry
+// (None)
+
+class UClass* USocialGroupListEntry::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialGroupListEntry");
+
+	return Clss;
+}
+
+
+// SocialGroupListEntry SocialUMG.Default__SocialGroupListEntry
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialGroupListEntry* USocialGroupListEntry::GetDefaultObj()
+{
+	static class USocialGroupListEntry* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialGroupListEntry*>(USocialGroupListEntry::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -195,21 +379,80 @@ bool USocialChatMessageEntry::CanInteract()
 
 class UWidget* USocialGroupListEntry::HandleGetMenuContent()
 {
-	static auto Func = Class->GetFunction("SocialGroupListEntry", "HandleGetMenuContent");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialGroupListEntry_HandleGetMenuContent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialGroupListEntry", "HandleGetMenuContent");
+
+	Params::USocialGroupListEntry_HandleGetMenuContent_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class SocialUMG.SocialGroupTreeView
+// (None)
+
+class UClass* USocialGroupTreeView::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialGroupTreeView");
+
+	return Clss;
+}
+
+
+// SocialGroupTreeView SocialUMG.Default__SocialGroupTreeView
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialGroupTreeView* USocialGroupTreeView::GetDefaultObj()
+{
+	static class USocialGroupTreeView* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialGroupTreeView*>(USocialGroupTreeView::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class SocialUMG.SocialInteractionButton
+// (None)
+
+class UClass* USocialInteractionButton::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialInteractionButton");
+
+	return Clss;
+}
+
+
+// SocialInteractionButton SocialUMG.Default__SocialInteractionButton
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialInteractionButton* USocialInteractionButton::GetDefaultObj()
+{
+	static class USocialInteractionButton* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialInteractionButton*>(USocialInteractionButton::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -219,12 +462,14 @@ class UWidget* USocialGroupListEntry::HandleGetMenuContent()
 
 void USocialInteractionButton::OnInteractionSet()
 {
-	static auto Func = Class->GetFunction("SocialInteractionButton", "OnInteractionSet");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialInteractionButton_OnInteractionSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialInteractionButton", "OnInteractionSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -236,18 +481,21 @@ void USocialInteractionButton::OnInteractionSet()
 
 bool USocialInteractionButton::IsPlatformOnlyFriend()
 {
-	static auto Func = Class->GetFunction("SocialInteractionButton", "IsPlatformOnlyFriend");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialInteractionButton_IsPlatformOnlyFriend_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialInteractionButton", "IsPlatformOnlyFriend");
+
+	Params::USocialInteractionButton_IsPlatformOnlyFriend_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -261,21 +509,52 @@ bool USocialInteractionButton::IsPlatformOnlyFriend()
 
 class FName USocialInteractionButton::GetInteractionName()
 {
-	static auto Func = Class->GetFunction("SocialInteractionButton", "GetInteractionName");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialInteractionButton_GetInteractionName_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialInteractionButton", "GetInteractionName");
+
+	Params::USocialInteractionButton_GetInteractionName_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class SocialUMG.SocialActionMenu
+// (None)
+
+class UClass* USocialActionMenu::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialActionMenu");
+
+	return Clss;
+}
+
+
+// SocialActionMenu SocialUMG.Default__SocialActionMenu
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialActionMenu* USocialActionMenu::GetDefaultObj()
+{
+	static class USocialActionMenu* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialActionMenu*>(USocialActionMenu::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -285,13 +564,43 @@ class FName USocialInteractionButton::GetInteractionName()
 
 void USocialActionMenu::OnOpened()
 {
-	static auto Func = Class->GetFunction("SocialActionMenu", "OnOpened");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialActionMenu_OnOpened_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialActionMenu", "OnOpened");
 
 
-	UObject::ProcessEvent(Func, &Parms);
 
+	UObject::ProcessEvent(Func, nullptr);
+
+}
+
+
+// Class SocialUMG.SocialInteractionMenu
+// (None)
+
+class UClass* USocialInteractionMenu::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialInteractionMenu");
+
+	return Clss;
+}
+
+
+// SocialInteractionMenu SocialUMG.Default__SocialInteractionMenu
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialInteractionMenu* USocialInteractionMenu::GetDefaultObj()
+{
+	static class USocialInteractionMenu* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialInteractionMenu*>(USocialInteractionMenu::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -302,9 +611,12 @@ void USocialActionMenu::OnOpened()
 
 void USocialInteractionMenu::OnToggleConfirmation(bool bIsVisible)
 {
-	static auto Func = Class->GetFunction("SocialInteractionMenu", "OnToggleConfirmation");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialInteractionMenu_OnToggleConfirmation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialInteractionMenu", "OnToggleConfirmation");
+
+	Params::USocialInteractionMenu_OnToggleConfirmation_Params Parms{};
 
 	Parms.bIsVisible = bIsVisible;
 
@@ -320,19 +632,22 @@ void USocialInteractionMenu::OnToggleConfirmation(bool bIsVisible)
 
 void USocialInteractionMenu::HandleMenuAnchorOpenChanged(bool bIsOpen)
 {
-	static auto Func = Class->GetFunction("SocialInteractionMenu", "HandleMenuAnchorOpenChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialInteractionMenu_HandleMenuAnchorOpenChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialInteractionMenu", "HandleMenuAnchorOpenChanged");
+
+	Params::USocialInteractionMenu_HandleMenuAnchorOpenChanged_Params Parms{};
 
 	Parms.bIsOpen = bIsOpen;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -344,21 +659,136 @@ void USocialInteractionMenu::HandleMenuAnchorOpenChanged(bool bIsOpen)
 
 class UWidget* USocialInteractionMenu::GetFirstEntryToCenter()
 {
-	static auto Func = Class->GetFunction("SocialInteractionMenu", "GetFirstEntryToCenter");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialInteractionMenu_GetFirstEntryToCenter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialInteractionMenu", "GetFirstEntryToCenter");
+
+	Params::USocialInteractionMenu_GetFirstEntryToCenter_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class SocialUMG.SocialNameTextBlock
+// (None)
+
+class UClass* USocialNameTextBlock::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialNameTextBlock");
+
+	return Clss;
+}
+
+
+// SocialNameTextBlock SocialUMG.Default__SocialNameTextBlock
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialNameTextBlock* USocialNameTextBlock::GetDefaultObj()
+{
+	static class USocialNameTextBlock* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialNameTextBlock*>(USocialNameTextBlock::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class SocialUMG.DesignerPreviewChatChannel
+// (None)
+
+class UClass* UDesignerPreviewChatChannel::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DesignerPreviewChatChannel");
+
+	return Clss;
+}
+
+
+// DesignerPreviewChatChannel SocialUMG.Default__DesignerPreviewChatChannel
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UDesignerPreviewChatChannel* UDesignerPreviewChatChannel::GetDefaultObj()
+{
+	static class UDesignerPreviewChatChannel* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UDesignerPreviewChatChannel*>(UDesignerPreviewChatChannel::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class SocialUMG.SocialListEntryBase
+// (None)
+
+class UClass* USocialListEntryBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialListEntryBase");
+
+	return Clss;
+}
+
+
+// SocialListEntryBase SocialUMG.Default__SocialListEntryBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialListEntryBase* USocialListEntryBase::GetDefaultObj()
+{
+	static class USocialListEntryBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialListEntryBase*>(USocialListEntryBase::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class SocialUMG.SocialListInteractableEntryBase
+// (None)
+
+class UClass* USocialListInteractableEntryBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialListInteractableEntryBase");
+
+	return Clss;
+}
+
+
+// SocialListInteractableEntryBase SocialUMG.Default__SocialListInteractableEntryBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialListInteractableEntryBase* USocialListInteractableEntryBase::GetDefaultObj()
+{
+	static class USocialListInteractableEntryBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialListInteractableEntryBase*>(USocialListInteractableEntryBase::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -369,19 +799,22 @@ class UWidget* USocialInteractionMenu::GetFirstEntryToCenter()
 
 void USocialListInteractableEntryBase::HandleMenuOpenChanged(bool bIsMenuOpen)
 {
-	static auto Func = Class->GetFunction("SocialListInteractableEntryBase", "HandleMenuOpenChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialListInteractableEntryBase_HandleMenuOpenChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialListInteractableEntryBase", "HandleMenuOpenChanged");
+
+	Params::USocialListInteractableEntryBase_HandleMenuOpenChanged_Params Parms{};
 
 	Parms.bIsMenuOpen = bIsMenuOpen;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -393,25 +826,166 @@ void USocialListInteractableEntryBase::HandleMenuOpenChanged(bool bIsMenuOpen)
 
 class UWidget* USocialListInteractableEntryBase::HandleGetMenuContent()
 {
-	static auto Func = Class->GetFunction("SocialListInteractableEntryBase", "HandleGetMenuContent");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialListInteractableEntryBase_HandleGetMenuContent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialListInteractableEntryBase", "HandleGetMenuContent");
+
+	Params::USocialListInteractableEntryBase_HandleGetMenuContent_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
 }
 
+
+// Class SocialUMG.SocialListUserEntryBase
+// (None)
+
+class UClass* USocialListUserEntryBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialListUserEntryBase");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// SocialListUserEntryBase SocialUMG.Default__SocialListUserEntryBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialListUserEntryBase* USocialListUserEntryBase::GetDefaultObj()
+{
+	static class USocialListUserEntryBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialListUserEntryBase*>(USocialListUserEntryBase::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class SocialUMG.SocialUserListHeaderEntry
+// (None)
+
+class UClass* USocialUserListHeaderEntry::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialUserListHeaderEntry");
+
+	return Clss;
+}
+
+
+// SocialUserListHeaderEntry SocialUMG.Default__SocialUserListHeaderEntry
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialUserListHeaderEntry* USocialUserListHeaderEntry::GetDefaultObj()
+{
+	static class USocialUserListHeaderEntry* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialUserListHeaderEntry*>(USocialUserListHeaderEntry::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class SocialUMG.SocialUserListViewBase
+// (None)
+
+class UClass* USocialUserListViewBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialUserListViewBase");
+
+	return Clss;
+}
+
+
+// SocialUserListViewBase SocialUMG.Default__SocialUserListViewBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialUserListViewBase* USocialUserListViewBase::GetDefaultObj()
+{
+	static class USocialUserListViewBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialUserListViewBase*>(USocialUserListViewBase::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class SocialUMG.SocialUserListView
+// (None)
+
+class UClass* USocialUserListView::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialUserListView");
+
+	return Clss;
+}
+
+
+// SocialUserListView SocialUMG.Default__SocialUserListView
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialUserListView* USocialUserListView::GetDefaultObj()
+{
+	static class USocialUserListView* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialUserListView*>(USocialUserListView::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class SocialUMG.SocialUserTreeView
+// (None)
+
+class UClass* USocialUserTreeView::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialUserTreeView");
+
+	return Clss;
+}
+
+
+// SocialUserTreeView SocialUMG.Default__SocialUserTreeView
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USocialUserTreeView* USocialUserTreeView::GetDefaultObj()
+{
+	static class USocialUserTreeView* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialUserTreeView*>(USocialUserTreeView::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

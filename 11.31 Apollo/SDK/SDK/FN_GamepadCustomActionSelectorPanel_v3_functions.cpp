@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass GamepadCustomActionSelectorPanel_v3.GamepadCustomActionSelectorPanel_v3_C
+// (None)
+
+class UClass* UGamepadCustomActionSelectorPanel_v3_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GamepadCustomActionSelectorPanel_v3_C");
+
+	return Clss;
+}
+
+
+// GamepadCustomActionSelectorPanel_v3_C GamepadCustomActionSelectorPanel_v3.Default__GamepadCustomActionSelectorPanel_v3_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGamepadCustomActionSelectorPanel_v3_C* UGamepadCustomActionSelectorPanel_v3_C::GetDefaultObj()
+{
+	static class UGamepadCustomActionSelectorPanel_v3_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGamepadCustomActionSelectorPanel_v3_C*>(UGamepadCustomActionSelectorPanel_v3_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GamepadCustomActionSelectorPanel_v3.GamepadCustomActionSelectorPanel_v3_C.HandleClear
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UGamepadCustomActionSelectorPanel_v3_C::HandleClear(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "HandleClear");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadCustomActionSelectorPanel_v3_C_HandleClear_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "HandleClear");
+
+	Params::UGamepadCustomActionSelectorPanel_v3_C_HandleClear_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -53,15 +81,18 @@ void UGamepadCustomActionSelectorPanel_v3_C::HandleClear(bool* PassThrough)
 // class FName                        CallFunc_Conv_StringToName_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortInputData*              CallFunc_GetFortInputDataForBlueprint_ReturnValue                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UGamepadKeyTextButton_C*     CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetScreenLabel_ReturnValue                              ()
+// class FText                        CallFunc_GetScreenLabel_ReturnValue                              (None)
 // class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FKey                        CallFunc_GetKeyForAction_ReturnValue                             (HasGetValueTypeHash)
 
 void UGamepadCustomActionSelectorPanel_v3_C::CreateCustomListItem(class FName ActionName, enum class EFortInputActionGroup InputActionGroup, class UGamepadKeyTextButton_C** ReturnItem, class FName ActionName_Local, enum class EFortInputActionGroup InputActionGroup_Local, class FName CustomPresetName_Local, class UGamepadKeyTextButton_C* ReturnItem_Local, bool K2Node_SwitchEnum_CmpSuccess, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, const class FString& CallFunc_GetCustomGamepadInputPresetName_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue, class UFortInputData* CallFunc_GetFortInputDataForBlueprint_ReturnValue, class UGamepadKeyTextButton_C* CallFunc_Create_ReturnValue, class FText CallFunc_GetScreenLabel_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_2, const struct FKey& CallFunc_GetKeyForAction_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "CreateCustomListItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "CreateCustomListItem");
+
+	Params::UGamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem_Params Parms{};
 
 	Parms.ActionName = ActionName;
 	Parms.InputActionGroup = InputActionGroup;
@@ -96,9 +127,12 @@ void UGamepadCustomActionSelectorPanel_v3_C::CreateCustomListItem(class FName Ac
 
 void UGamepadCustomActionSelectorPanel_v3_C::HandleBack(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "HandleBack");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadCustomActionSelectorPanel_v3_C_HandleBack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "HandleBack");
+
+	Params::UGamepadCustomActionSelectorPanel_v3_C_HandleBack_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -115,12 +149,14 @@ void UGamepadCustomActionSelectorPanel_v3_C::HandleBack(bool* PassThrough)
 
 void UGamepadCustomActionSelectorPanel_v3_C::Construct()
 {
-	static auto Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadCustomActionSelectorPanel_v3_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -132,9 +168,12 @@ void UGamepadCustomActionSelectorPanel_v3_C::Construct()
 
 void UGamepadCustomActionSelectorPanel_v3_C::UpdatePanel(TArray<class UFortOptionsMenuInputData*>& InputData)
 {
-	static auto Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "UpdatePanel");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadCustomActionSelectorPanel_v3_C_UpdatePanel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "UpdatePanel");
+
+	Params::UGamepadCustomActionSelectorPanel_v3_C_UpdatePanel_Params Parms{};
 
 	Parms.InputData = InputData;
 
@@ -150,9 +189,12 @@ void UGamepadCustomActionSelectorPanel_v3_C::UpdatePanel(TArray<class UFortOptio
 
 void UGamepadCustomActionSelectorPanel_v3_C::BP_OnItemClicked_Bind(class UObject* Item)
 {
-	static auto Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "BP_OnItemClicked_Bind");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadCustomActionSelectorPanel_v3_C_BP_OnItemClicked_Bind_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "BP_OnItemClicked_Bind");
+
+	Params::UGamepadCustomActionSelectorPanel_v3_C_BP_OnItemClicked_Bind_Params Parms{};
 
 	Parms.Item = Item;
 
@@ -167,12 +209,14 @@ void UGamepadCustomActionSelectorPanel_v3_C::BP_OnItemClicked_Bind(class UObject
 
 void UGamepadCustomActionSelectorPanel_v3_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadCustomActionSelectorPanel_v3_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -183,12 +227,14 @@ void UGamepadCustomActionSelectorPanel_v3_C::BP_OnActivated()
 
 void UGamepadCustomActionSelectorPanel_v3_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadCustomActionSelectorPanel_v3_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -199,12 +245,14 @@ void UGamepadCustomActionSelectorPanel_v3_C::BP_OnDeactivated()
 
 void UGamepadCustomActionSelectorPanel_v3_C::BndEvt__Button_Clear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "BndEvt__Button_Clear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadCustomActionSelectorPanel_v3_C_BndEvt__Button_Clear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "BndEvt__Button_Clear_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -234,9 +282,12 @@ void UGamepadCustomActionSelectorPanel_v3_C::BndEvt__Button_Clear_K2Node_Compone
 
 void UGamepadCustomActionSelectorPanel_v3_C::ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3(int32 EntryPoint, int32 CallFunc_Array_Length_ReturnValue, TArray<class UFortOptionsMenuInputData*>& K2Node_CustomEvent_InputData, class UObject* K2Node_CustomEvent_Item, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UGamepadKeyTextButton_C* K2Node_DynamicCast_AsGamepad_Key_Text_Button, bool K2Node_DynamicCast_bSuccess, int32 Temp_int_Loop_Counter_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, class UObject* CallFunc_BP_GetSelectedItem_ReturnValue, class UFortOptionsMenuInputData* CallFunc_Array_Get_Item, int32 CallFunc_GetIndexForItem_ReturnValue, enum class EFortInputActionGroup CallFunc_GetInputActionGroup_ReturnValue, class UGamepadKeyTextButton_C* CallFunc_CreateCustomListItem_ReturnItem, bool CallFunc_IsValid_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2)
 {
-	static auto Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3");
+
+	Params::UGamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
@@ -269,12 +320,14 @@ void UGamepadCustomActionSelectorPanel_v3_C::ExecuteUbergraph_GamepadCustomActio
 
 void UGamepadCustomActionSelectorPanel_v3_C::CustomClearButton__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "CustomClearButton__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadCustomActionSelectorPanel_v3_C_CustomClearButton__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "CustomClearButton__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -285,12 +338,14 @@ void UGamepadCustomActionSelectorPanel_v3_C::CustomClearButton__DelegateSignatur
 
 void UGamepadCustomActionSelectorPanel_v3_C::CustomClosedUsingBack__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "CustomClosedUsingBack__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadCustomActionSelectorPanel_v3_C_CustomClosedUsingBack__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "CustomClosedUsingBack__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -303,9 +358,12 @@ void UGamepadCustomActionSelectorPanel_v3_C::CustomClosedUsingBack__DelegateSign
 
 void UGamepadCustomActionSelectorPanel_v3_C::CustomActionSelected__DelegateSignature(int32 SelectedIndex, class FName ActionName)
 {
-	static auto Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "CustomActionSelected__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UGamepadCustomActionSelectorPanel_v3_C_CustomActionSelected__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GamepadCustomActionSelectorPanel_v3_C", "CustomActionSelected__DelegateSignature");
+
+	Params::UGamepadCustomActionSelectorPanel_v3_C_CustomActionSelected__DelegateSignature_Params Parms{};
 
 	Parms.SelectedIndex = SelectedIndex;
 	Parms.ActionName = ActionName;
@@ -316,6 +374,4 @@ void UGamepadCustomActionSelectorPanel_v3_C::CustomActionSelected__DelegateSigna
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

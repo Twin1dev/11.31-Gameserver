@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -29,11 +26,8 @@ public:
 	float                                        TimespanWidthPerDay;                               // 0x2EC(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bWaitingForCompletedTimer;                         // 0x2F0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("FeatTimelineListEntry_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UFeatTimelineListEntry_C* GetDefaultObj();
 
 	void BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature();
 	void BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature();
@@ -48,6 +42,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

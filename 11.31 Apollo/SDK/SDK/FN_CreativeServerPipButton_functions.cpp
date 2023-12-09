@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,20 +12,51 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass CreativeServerPipButton.CreativeServerPipButton_C
+// (None)
+
+class UClass* UCreativeServerPipButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CreativeServerPipButton_C");
+
+	return Clss;
+}
+
+
+// CreativeServerPipButton_C CreativeServerPipButton.Default__CreativeServerPipButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCreativeServerPipButton_C* UCreativeServerPipButton_C::GetDefaultObj()
+{
+	static class UCreativeServerPipButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCreativeServerPipButton_C*>(UCreativeServerPipButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function CreativeServerPipButton.CreativeServerPipButton_C.UpdateInputActionLayout
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FSlateBrush                 RimBrush                                                         (Edit, BlueprintVisible)
-// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
+// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     (None)
 // class UOverlaySlot*                K2Node_DynamicCast_AsOverlay_Slot                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UCreativeServerPipButton_C::UpdateInputActionLayout(const struct FSlateBrush& RimBrush, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, class UOverlaySlot* K2Node_DynamicCast_AsOverlay_Slot, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("CreativeServerPipButton_C", "UpdateInputActionLayout");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerPipButton_C_UpdateInputActionLayout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerPipButton_C", "UpdateInputActionLayout");
+
+	Params::UCreativeServerPipButton_C_UpdateInputActionLayout_Params Parms{};
 
 	Parms.RimBrush = RimBrush;
 	Parms.K2Node_MakeStruct_SlateBrush = K2Node_MakeStruct_SlateBrush;
@@ -49,9 +77,12 @@ void UCreativeServerPipButton_C::UpdateInputActionLayout(const struct FSlateBrus
 
 void UCreativeServerPipButton_C::UpdateStyle(bool bUsingGamepad, class FText ActionText)
 {
-	static auto Func = Class->GetFunction("CreativeServerPipButton_C", "UpdateStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerPipButton_C_UpdateStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerPipButton_C", "UpdateStyle");
+
+	Params::UCreativeServerPipButton_C_UpdateStyle_Params Parms{};
 
 	Parms.bUsingGamepad = bUsingGamepad;
 	Parms.ActionText = ActionText;
@@ -67,12 +98,14 @@ void UCreativeServerPipButton_C::UpdateStyle(bool bUsingGamepad, class FText Act
 
 void UCreativeServerPipButton_C::InitializeButton()
 {
-	static auto Func = Class->GetFunction("CreativeServerPipButton_C", "InitializeButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerPipButton_C_InitializeButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerPipButton_C", "InitializeButton");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -86,9 +119,12 @@ void UCreativeServerPipButton_C::InitializeButton()
 
 void UCreativeServerPipButton_C::UpdateTextAndStyle(class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("CreativeServerPipButton_C", "UpdateTextAndStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerPipButton_C_UpdateTextAndStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerPipButton_C", "UpdateTextAndStyle");
+
+	Params::UCreativeServerPipButton_C_UpdateTextAndStyle_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetCurrentInputType_ReturnValue = CallFunc_GetCurrentInputType_ReturnValue;
@@ -106,9 +142,12 @@ void UCreativeServerPipButton_C::UpdateTextAndStyle(class UCommonInputSubsystem*
 
 void UCreativeServerPipButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("CreativeServerPipButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerPipButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerPipButton_C", "PreConstruct");
+
+	Params::UCreativeServerPipButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -124,9 +163,12 @@ void UCreativeServerPipButton_C::PreConstruct(bool IsDesignTime)
 
 void UCreativeServerPipButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad)
 {
-	static auto Func = Class->GetFunction("CreativeServerPipButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerPipButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerPipButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+
+	Params::UCreativeServerPipButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature_Params Parms{};
 
 	Parms.bUsingGamepad = bUsingGamepad;
 
@@ -142,9 +184,12 @@ void UCreativeServerPipButton_C::BndEvt__CommonActionWidgetAction_K2Node_Compone
 
 void UCreativeServerPipButton_C::OnTriggeredInputActionChanged(struct FDataTableRowHandle& NewTriggeredAction)
 {
-	static auto Func = Class->GetFunction("CreativeServerPipButton_C", "OnTriggeredInputActionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerPipButton_C_OnTriggeredInputActionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerPipButton_C", "OnTriggeredInputActionChanged");
+
+	Params::UCreativeServerPipButton_C_OnTriggeredInputActionChanged_Params Parms{};
 
 	Parms.NewTriggeredAction = NewTriggeredAction;
 
@@ -160,9 +205,12 @@ void UCreativeServerPipButton_C::OnTriggeredInputActionChanged(struct FDataTable
 
 void UCreativeServerPipButton_C::OnActionProgress(float HeldPercent)
 {
-	static auto Func = Class->GetFunction("CreativeServerPipButton_C", "OnActionProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerPipButton_C_OnActionProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerPipButton_C", "OnActionProgress");
+
+	Params::UCreativeServerPipButton_C_OnActionProgress_Params Parms{};
 
 	Parms.HeldPercent = HeldPercent;
 
@@ -177,12 +225,14 @@ void UCreativeServerPipButton_C::OnActionProgress(float HeldPercent)
 
 void UCreativeServerPipButton_C::OnActionComplete()
 {
-	static auto Func = Class->GetFunction("CreativeServerPipButton_C", "OnActionComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerPipButton_C_OnActionComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerPipButton_C", "OnActionComplete");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -193,12 +243,14 @@ void UCreativeServerPipButton_C::OnActionComplete()
 
 void UCreativeServerPipButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("CreativeServerPipButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerPipButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerPipButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -209,12 +261,14 @@ void UCreativeServerPipButton_C::Construct()
 
 void UCreativeServerPipButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("CreativeServerPipButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerPipButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerPipButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -225,12 +279,14 @@ void UCreativeServerPipButton_C::BP_OnHovered()
 
 void UCreativeServerPipButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("CreativeServerPipButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerPipButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerPipButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -251,9 +307,12 @@ void UCreativeServerPipButton_C::BP_OnUnhovered()
 
 void UCreativeServerPipButton_C::ExecuteUbergraph_CreativeServerPipButton(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool K2Node_Event_IsDesignTime, bool CallFunc_HasAnyChildren_ReturnValue, bool Temp_bool_Variable, bool K2Node_ComponentBoundEvent_bUsingGamepad, enum class ESlateVisibility K2Node_Select_Default, const struct FDataTableRowHandle& K2Node_Event_NewTriggeredAction, float K2Node_Event_HeldPercent)
 {
-	static auto Func = Class->GetFunction("CreativeServerPipButton_C", "ExecuteUbergraph_CreativeServerPipButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeServerPipButton_C_ExecuteUbergraph_CreativeServerPipButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeServerPipButton_C", "ExecuteUbergraph_CreativeServerPipButton");
+
+	Params::UCreativeServerPipButton_C_ExecuteUbergraph_CreativeServerPipButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -272,6 +331,4 @@ void UCreativeServerPipButton_C::ExecuteUbergraph_CreativeServerPipButton(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

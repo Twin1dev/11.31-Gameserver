@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_ProjectileTrajectory_Athena_SnapBoxToGrid.BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C
+// (Actor)
+
+class UClass* ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C");
+
+	return Clss;
+}
+
+
+// BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C BP_ProjectileTrajectory_Athena_SnapBoxToGrid.Default__BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C* ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::GetDefaultObj()
+{
+	static class ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C*>(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_ProjectileTrajectory_Athena_SnapBoxToGrid.BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C.GetPlaysetFromController
@@ -27,9 +52,12 @@ namespace SDK
 
 void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::GetPlaysetFromController(bool* bSuccess, bool CallFunc_IsValid_ReturnValue, class APlayerController* CallFunc_GetPlayerController_ReturnValue, class AFortPlayerControllerAthena* K2Node_DynamicCast_AsFort_Player_Controller_Athena, bool K2Node_DynamicCast_bSuccess, class UFortPlaysetItemDefinition* CallFunc_GetPlayset_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "GetPlaysetFromController");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_GetPlaysetFromController_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "GetPlaysetFromController");
+
+	Params::ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_GetPlaysetFromController_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_GetPlayerController_ReturnValue = CallFunc_GetPlayerController_ReturnValue;
@@ -78,9 +106,12 @@ void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::GetPlaysetFromController(b
 
 void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::UpdateScaleForPlayset(class APlayerController* CallFunc_GetPlayerController_ReturnValue, class AFortPlayerControllerAthena* K2Node_DynamicCast_AsFort_Player_Controller_Athena, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_GetPlaysetSize_SizeX, int32 CallFunc_GetPlaysetSize_SizeY, int32 CallFunc_GetPlaysetSize_SizeZ, class UFortPlaysetItemDefinition* CallFunc_GetPlayset_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_Conv_IntToFloat_ReturnValue_2, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue_2, float CallFunc_Multiply_FloatFloat_ReturnValue_2, const struct FVector& CallFunc_K2_GetComponentScale_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_GetComponentBounds_Origin, const struct FVector& CallFunc_GetComponentBounds_BoxExtent, float CallFunc_GetComponentBounds_SphereRadius, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue, const struct FVector& CallFunc_Divide_VectorVector_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FVector& CallFunc_MakeVector_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "UpdateScaleForPlayset");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_UpdateScaleForPlayset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "UpdateScaleForPlayset");
+
+	Params::ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_UpdateScaleForPlayset_Params Parms{};
 
 	Parms.CallFunc_GetPlayerController_ReturnValue = CallFunc_GetPlayerController_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Controller_Athena = K2Node_DynamicCast_AsFort_Player_Controller_Athena;
@@ -158,9 +189,12 @@ void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::UpdateScaleForPlayset(clas
 
 void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::HandleGridSnapUpdates(const struct FVector& NewLocation, const struct FVector& AdjustedPosition, const struct FRotator& PlaysetRotation, class APawn* CallFunc_GetInstigator_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, int32 CallFunc_Round_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, float CallFunc_Multiply_IntFloat_ReturnValue, float CallFunc_Abs_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue_1, float CallFunc_Abs_ReturnValue_1, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue_2, float CallFunc_Divide_FloatFloat_ReturnValue_1, int32 CallFunc_Round_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue_2, float CallFunc_Multiply_IntFloat_ReturnValue_1, int32 CallFunc_Round_ReturnValue_2, float CallFunc_Multiply_IntFloat_ReturnValue_2, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FRotator& CallFunc_ComposeRotators_ReturnValue, bool CallFunc_GetPlaysetFromController_bSuccess, const struct FVector& CallFunc_AdjustToFinalLocation_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FRotator& CallFunc_ComposeRotators_ReturnValue_1, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult_1, const struct FHitResult& CallFunc_K2_SetWorldLocation_SweepHitResult, bool CallFunc_NotEqual_RotatorRotator_ReturnValue, bool CallFunc_NotEqual_VectorVector_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "HandleGridSnapUpdates");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_HandleGridSnapUpdates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "HandleGridSnapUpdates");
+
+	Params::ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_HandleGridSnapUpdates_Params Parms{};
 
 	Parms.NewLocation = NewLocation;
 	Parms.AdjustedPosition = AdjustedPosition;
@@ -212,9 +246,12 @@ void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::HandleGridSnapUpdates(cons
 
 void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::UserConstructionScript(bool CallFunc_SetStaticMesh_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "UserConstructionScript");
+
+	Params::ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_SetStaticMesh_ReturnValue = CallFunc_SetStaticMesh_ReturnValue;
 
@@ -229,12 +266,14 @@ void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::UserConstructionScript(boo
 
 void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -246,9 +285,12 @@ void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::ReceiveBeginPlay()
 
 void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::ReceiveActorBeginOverlap(class AActor* OtherActor)
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "ReceiveActorBeginOverlap");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_ReceiveActorBeginOverlap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "ReceiveActorBeginOverlap");
+
+	Params::ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_ReceiveActorBeginOverlap_Params Parms{};
 
 	Parms.OtherActor = OtherActor;
 
@@ -265,9 +307,12 @@ void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::ReceiveActorBeginOverlap(c
 
 void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::SetTrajectorySpline(TArray<struct FVector>& SplinePoints, TArray<struct FVector>& SplineTangents)
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "SetTrajectorySpline");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_SetTrajectorySpline_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "SetTrajectorySpline");
+
+	Params::ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_SetTrajectorySpline_Params Parms{};
 
 	Parms.SplinePoints = SplinePoints;
 	Parms.SplineTangents = SplineTangents;
@@ -323,9 +368,12 @@ void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::SetTrajectorySpline(TArray
 
 void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::ExecuteUbergraph_BP_ProjectileTrajectory_Athena_SnapBoxToGrid(int32 EntryPoint, int32 Temp_int_Array_Index_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Multiply_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, class AActor* K2Node_Event_OtherActor, TArray<struct FVector>& K2Node_Event_SplinePoints, TArray<struct FVector>& K2Node_Event_SplineTangents, const struct FVector& CallFunc_Array_Get_Item, const struct FVector& CallFunc_Array_Get_Item_1, const struct FVector& CallFunc_Normal_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue_1, const struct FVector& CallFunc_Array_Get_Item_2, const struct FVector& CallFunc_Array_Get_Item_3, int32 CallFunc_Array_LastIndex_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, float CallFunc_VSize_ReturnValue, bool CallFunc_Array_IsValidIndex_ReturnValue, int32 CallFunc_Array_LastIndex_ReturnValue_1, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldLocation_SweepHitResult, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_2, int32 Temp_int_Loop_Counter_Variable_1, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_3, int32 Temp_int_Array_Index_Variable_1, class USplineMeshComponent* CallFunc_Array_Get_Item_4, const struct FVector& CallFunc_GetLocationAtSplinePoint_ReturnValue, const struct FVector& CallFunc_GetLeaveTangentAtSplinePoint_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_4, bool CallFunc_Less_IntInt_ReturnValue_2, const struct FVector& CallFunc_GetArriveTangentAtSplinePoint_ReturnValue, const struct FVector& CallFunc_GetLocationAtSplinePoint_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "ExecuteUbergraph_BP_ProjectileTrajectory_Athena_SnapBoxToGrid");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_ExecuteUbergraph_BP_ProjectileTrajectory_Athena_SnapBoxToGrid_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C", "ExecuteUbergraph_BP_ProjectileTrajectory_Athena_SnapBoxToGrid");
+
+	Params::ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C_ExecuteUbergraph_BP_ProjectileTrajectory_Athena_SnapBoxToGrid_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -374,6 +422,4 @@ void ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::ExecuteUbergraph_BP_Projec
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

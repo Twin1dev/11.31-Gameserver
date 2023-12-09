@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Device_Volume_Floor.Device_Volume_Floor_C
+// (Actor)
+
+class UClass* ADevice_Volume_Floor_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Device_Volume_Floor_C");
+
+	return Clss;
+}
+
+
+// Device_Volume_Floor_C Device_Volume_Floor.Default__Device_Volume_Floor_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ADevice_Volume_Floor_C* ADevice_Volume_Floor_C::GetDefaultObj()
+{
+	static class ADevice_Volume_Floor_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ADevice_Volume_Floor_C*>(ADevice_Volume_Floor_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.Transmit if Valid Actor
@@ -41,9 +66,12 @@ namespace SDK
 
 void ADevice_Volume_Floor_C::Transmit_if_Valid_Actor(class UFortGameplayTriggerMessageComponent* Transmitter, class AActor* Actor, bool Enter, bool* Valid, TSet<enum class EFortMinigameState> Exit_Game_States, TSet<enum class EFortMinigameState> Enter_Game_States, bool CallFunc_HasAuthority_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, class AController* CallFunc_GetController_ReturnValue, uint8 CallFunc_GetActorTeam_ReturnValue, TSet<enum class EFortMinigameState> K2Node_MakeVariable_MakeVariableOutput, bool Temp_bool_Variable, TSet<enum class EFortMinigameState> K2Node_Select_Default, TSet<enum class EFortMinigameState> K2Node_MakeVariable_MakeVariableOutput_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Set_Contains_ReturnValue, uint8 CallFunc_Conv_IntToByte_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "Transmit if Valid Actor");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_Transmit_if_Valid_Actor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "Transmit if Valid Actor");
+
+	Params::ADevice_Volume_Floor_C_Transmit_if_Valid_Actor_Params Parms{};
 
 	Parms.Transmitter = Transmitter;
 	Parms.Actor = Actor;
@@ -85,9 +113,12 @@ void ADevice_Volume_Floor_C::Transmit_if_Valid_Actor(class UFortGameplayTriggerM
 
 void ADevice_Volume_Floor_C::Minigame_State_Logic(enum class EFortMinigameState State, bool CallFunc_HasAuthority_ReturnValue, enum class EFortMinigameExec CallFunc_K2_IsInProgress_OutExec, bool CallFunc_IsValid_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_IsPregame_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "Minigame State Logic");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_Minigame_State_Logic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "Minigame State Logic");
+
+	Params::ADevice_Volume_Floor_C_Minigame_State_Logic_Params Parms{};
 
 	Parms.State = State;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -114,9 +145,12 @@ void ADevice_Volume_Floor_C::Minigame_State_Logic(enum class EFortMinigameState 
 
 void ADevice_Volume_Floor_C::Update_Volume_State(bool Temp_bool_Variable, enum class ECollisionEnabled Temp_byte_Variable, enum class ECollisionEnabled Temp_byte_Variable_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsInProgress_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, enum class ECollisionEnabled K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "Update Volume State");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_Update_Volume_State_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "Update Volume State");
+
+	Params::ADevice_Volume_Floor_C_Update_Volume_State_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -139,9 +173,12 @@ void ADevice_Volume_Floor_C::Update_Volume_State(bool Temp_bool_Variable, enum c
 
 struct FGameplayCueParameters ADevice_Volume_Floor_C::EmptyCueParameters(const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "EmptyCueParameters");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_EmptyCueParameters_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "EmptyCueParameters");
+
+	Params::ADevice_Volume_Floor_C_EmptyCueParameters_Params Parms{};
 
 	Parms.CallFunc_MakeGameplayCueParameters_ReturnValue = CallFunc_MakeGameplayCueParameters_ReturnValue;
 
@@ -159,9 +196,12 @@ struct FGameplayCueParameters ADevice_Volume_Floor_C::EmptyCueParameters(const s
 
 void ADevice_Volume_Floor_C::OnRep_bEnabled(class AFortMinigame* CurrentMinigame)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "OnRep_bEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_OnRep_bEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "OnRep_bEnabled");
+
+	Params::ADevice_Volume_Floor_C_OnRep_bEnabled_Params Parms{};
 
 	Parms.CurrentMinigame = CurrentMinigame;
 
@@ -218,9 +258,12 @@ void ADevice_Volume_Floor_C::OnRep_bEnabled(class AFortMinigame* CurrentMinigame
 
 void ADevice_Volume_Floor_C::OnAffectedPlayerExitedVehicle(const TArray<class AActor*>& OverlappingTargets, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, TArray<class AActor*>& CallFunc_GetTouchingDamageTargets_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_EqualEqual_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable_1, class AActor* CallFunc_Array_Get_Item, class AActor* CallFunc_Array_Get_Item_1, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue_1, int32 CallFunc_RemoveActiveEffectsWithTags_ReturnValue, int32 CallFunc_RemoveActiveEffectsWithTags_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, TScriptInterface<class IFortVehicleInterface> K2Node_DynamicCast_AsFort_Vehicle_Interface, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsValid_ReturnValue_2, TArray<class AFortPlayerPawn*>& CallFunc_GetAllPassengers_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_2, int32 CallFunc_Array_Find_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue_1, bool CallFunc_EqualEqual_IntInt_ReturnValue_2, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsInVehicle_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "OnAffectedPlayerExitedVehicle");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_OnAffectedPlayerExitedVehicle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "OnAffectedPlayerExitedVehicle");
+
+	Params::ADevice_Volume_Floor_C_OnAffectedPlayerExitedVehicle_Params Parms{};
 
 	Parms.OverlappingTargets = OverlappingTargets;
 	Parms.Temp_bool_True_if_break_was_hit_Variable = Temp_bool_True_if_break_was_hit_Variable;
@@ -282,9 +325,12 @@ void ADevice_Volume_Floor_C::OnAffectedPlayerExitedVehicle(const TArray<class AA
 
 void ADevice_Volume_Floor_C::BindOnExitVehicleForAffectPawn(class AFortPlayerPawnAthena* AffectedPawn, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_Array_AddUnique_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "BindOnExitVehicleForAffectPawn");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_BindOnExitVehicleForAffectPawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "BindOnExitVehicleForAffectPawn");
+
+	Params::ADevice_Volume_Floor_C_BindOnExitVehicleForAffectPawn_Params Parms{};
 
 	Parms.AffectedPawn = AffectedPawn;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -340,9 +386,12 @@ void ADevice_Volume_Floor_C::BindOnExitVehicleForAffectPawn(class AFortPlayerPaw
 
 void ADevice_Volume_Floor_C::WasActivatedByOverlappingActor(bool* bActivated, const TArray<class AActor*>& Passengers, const TArray<class AActor*>& OverlappingActors, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, bool CallFunc_BooleanAND_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, uint8 CallFunc_Conv_IntToByte_ReturnValue, uint8 CallFunc_Conv_IntToByte_ReturnValue_1, int32 Temp_int_Array_Index_Variable_1, class AActor* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue_1, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Greater_IntInt_ReturnValue, uint8 CallFunc_GetActorTeam_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, class AActor* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_2, class ABuildingRift* K2Node_DynamicCast_AsBuilding_Rift, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_Less_IntInt_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess_2, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_1, bool K2Node_DynamicCast_bSuccess_3, uint8 CallFunc_GetActorTeam_ReturnValue_1, TScriptInterface<class IFortVehicleInterface> K2Node_DynamicCast_AsFort_Vehicle_Interface, bool K2Node_DynamicCast_bSuccess_4, bool CallFunc_NotEqual_ByteByte_ReturnValue_1, TArray<class AFortPlayerPawn*>& CallFunc_GetAllPassengers_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1, TArray<class AActor*>& CallFunc_GetOverlappingActors_OverlappingActors)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "WasActivatedByOverlappingActor");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_WasActivatedByOverlappingActor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "WasActivatedByOverlappingActor");
+
+	Params::ADevice_Volume_Floor_C_WasActivatedByOverlappingActor_Params Parms{};
 
 	Parms.Passengers = Passengers;
 	Parms.OverlappingActors = OverlappingActors;
@@ -402,9 +451,12 @@ void ADevice_Volume_Floor_C::WasActivatedByOverlappingActor(bool* bActivated, co
 
 void ADevice_Volume_Floor_C::UpdateMinigameVisuals(bool bIsInPregame, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsPregame_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "UpdateMinigameVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_UpdateMinigameVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "UpdateMinigameVisuals");
+
+	Params::ADevice_Volume_Floor_C_UpdateMinigameVisuals_Params Parms{};
 
 	Parms.bIsInPregame = bIsInPregame;
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
@@ -457,9 +509,12 @@ void ADevice_Volume_Floor_C::UpdateMinigameVisuals(bool bIsInPregame, bool CallF
 
 void ADevice_Volume_Floor_C::VFXParameters(TArray<struct FParticleSysParam>* Array, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_FMax_ReturnValue, float CallFunc_FMax_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue_1, const struct FVector& CallFunc_MakeVector_ReturnValue_2, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam_1, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam_2, const struct FVector& CallFunc_MakeVector_ReturnValue_3, float CallFunc_Divide_FloatFloat_ReturnValue_2, const struct FVector& CallFunc_MakeVector_ReturnValue_4, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam_3, float CallFunc_MakeLiteralFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue_5, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_2, float CallFunc_Divide_FloatFloat_ReturnValue_3, float CallFunc_FMin_ReturnValue, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam_4, TArray<struct FParticleSysParam>& K2Node_MakeArray_Array)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "VFXParameters");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_VFXParameters_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "VFXParameters");
+
+	Params::ADevice_Volume_Floor_C_VFXParameters_Params Parms{};
 
 	Parms.CallFunc_MakeVector_ReturnValue = CallFunc_MakeVector_ReturnValue;
 	Parms.K2Node_MakeStruct_ParticleSysParam = K2Node_MakeStruct_ParticleSysParam;
@@ -495,7 +550,7 @@ void ADevice_Volume_Floor_C::VFXParameters(TArray<struct FParticleSysParam>* Arr
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Array != nullptr)
-		*Array = Parms.Array;
+		*Array = std::move(Parms.Array);
 
 }
 
@@ -517,9 +572,12 @@ void ADevice_Volume_Floor_C::VFXParameters(TArray<struct FParticleSysParam>* Arr
 
 void ADevice_Volume_Floor_C::GetTriggerLocation(struct FVector* Location, float CallFunc_Dot_VectorVector_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "GetTriggerLocation");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_GetTriggerLocation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "GetTriggerLocation");
+
+	Params::ADevice_Volume_Floor_C_GetTriggerLocation_Params Parms{};
 
 	Parms.CallFunc_Dot_VectorVector_ReturnValue = CallFunc_Dot_VectorVector_ReturnValue;
 	Parms.CallFunc_BreakVector_X = CallFunc_BreakVector_X;
@@ -535,7 +593,7 @@ void ADevice_Volume_Floor_C::GetTriggerLocation(struct FVector* Location, float 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Location != nullptr)
-		*Location = Parms.Location;
+		*Location = std::move(Parms.Location);
 
 }
 
@@ -551,9 +609,12 @@ void ADevice_Volume_Floor_C::GetTriggerLocation(struct FVector* Location, float 
 
 void ADevice_Volume_Floor_C::GetVolumeMID(class UMaterialInstanceDynamic** EliminationVolumeMID, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "GetVolumeMID");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_GetVolumeMID_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "GetVolumeMID");
+
+	Params::ADevice_Volume_Floor_C_GetVolumeMID_Params Parms{};
 
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
 	Parms.CallFunc_GetMaterial_ReturnValue = CallFunc_GetMaterial_ReturnValue;
@@ -574,12 +635,14 @@ void ADevice_Volume_Floor_C::GetVolumeMID(class UMaterialInstanceDynamic** Elimi
 
 void ADevice_Volume_Floor_C::OnRep_ZoneSizePresetIndex()
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "OnRep_ZoneSizePresetIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_OnRep_ZoneSizePresetIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "OnRep_ZoneSizePresetIndex");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -601,9 +664,12 @@ void ADevice_Volume_Floor_C::OnRep_ZoneSizePresetIndex()
 
 void ADevice_Volume_Floor_C::UpdateVolumeSize(const struct FVector& CallFunc_GetTriggerLocation_Location, class UMaterialInstanceDynamic* CallFunc_GetVolumeMID_EliminationVolumeMID, const struct FHitResult& CallFunc_K2_SetRelativeLocation_SweepHitResult, float CallFunc_FMax_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_FMax_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue_1, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "UpdateVolumeSize");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_UpdateVolumeSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "UpdateVolumeSize");
+
+	Params::ADevice_Volume_Floor_C_UpdateVolumeSize_Params Parms{};
 
 	Parms.CallFunc_GetTriggerLocation_Location = CallFunc_GetTriggerLocation_Location;
 	Parms.CallFunc_GetVolumeMID_EliminationVolumeMID = CallFunc_GetVolumeMID_EliminationVolumeMID;
@@ -630,9 +696,12 @@ void ADevice_Volume_Floor_C::UpdateVolumeSize(const struct FVector& CallFunc_Get
 
 void ADevice_Volume_Floor_C::UserConstructionScript(bool CallFunc_IsDedicatedServer_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "UserConstructionScript");
+
+	Params::ADevice_Volume_Floor_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
@@ -648,12 +717,14 @@ void ADevice_Volume_Floor_C::UserConstructionScript(bool CallFunc_IsDedicatedSer
 
 void ADevice_Volume_Floor_C::OnPlaced()
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "OnPlaced");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_OnPlaced_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "OnPlaced");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -664,12 +735,14 @@ void ADevice_Volume_Floor_C::OnPlaced()
 
 void ADevice_Volume_Floor_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_2_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_2_AnyPropertyChangedDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_2_AnyPropertyChangedDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_2_AnyPropertyChangedDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -680,12 +753,14 @@ void ADevice_Volume_Floor_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEv
 
 void ADevice_Volume_Floor_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_3_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_3_AnyPropertyChangedDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_3_AnyPropertyChangedDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_3_AnyPropertyChangedDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -698,9 +773,12 @@ void ADevice_Volume_Floor_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEv
 
 void ADevice_Volume_Floor_C::GameplayCue_Abilities_Activation_Traps_ActivateTrap(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "GameplayCue.Abilities.Activation.Traps.ActivateTrap");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "GameplayCue.Abilities.Activation.Traps.ActivateTrap");
+
+	Params::ADevice_Volume_Floor_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -716,12 +794,14 @@ void ADevice_Volume_Floor_C::GameplayCue_Abilities_Activation_Traps_ActivateTrap
 
 void ADevice_Volume_Floor_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -732,12 +812,14 @@ void ADevice_Volume_Floor_C::ReceiveBeginPlay()
 
 void ADevice_Volume_Floor_C::UpdateVisuals()
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "UpdateVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_UpdateVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "UpdateVisuals");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -749,9 +831,12 @@ void ADevice_Volume_Floor_C::UpdateVisuals()
 
 void ADevice_Volume_Floor_C::BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature(class AController* TriggerInstigator)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature");
+
+	Params::ADevice_Volume_Floor_C_BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature_Params Parms{};
 
 	Parms.TriggerInstigator = TriggerInstigator;
 
@@ -767,9 +852,12 @@ void ADevice_Volume_Floor_C::BndEvt__EnableWhenReceived_K2Node_ComponentBoundEve
 
 void ADevice_Volume_Floor_C::BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_5_OnGameplayMessageReceived__DelegateSignature(class AController* TriggerInstigator)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_5_OnGameplayMessageReceived__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_5_OnGameplayMessageReceived__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_5_OnGameplayMessageReceived__DelegateSignature");
+
+	Params::ADevice_Volume_Floor_C_BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_5_OnGameplayMessageReceived__DelegateSignature_Params Parms{};
 
 	Parms.TriggerInstigator = TriggerInstigator;
 
@@ -786,9 +874,12 @@ void ADevice_Volume_Floor_C::BndEvt__DisableWhenReceived_K2Node_ComponentBoundEv
 
 void ADevice_Volume_Floor_C::BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_9_OnMinigameStateChanged__DelegateSignature(class AFortMinigame* Minigame, enum class EFortMinigameState NewMinigameState)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_9_OnMinigameStateChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_9_OnMinigameStateChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_9_OnMinigameStateChanged__DelegateSignature");
+
+	Params::ADevice_Volume_Floor_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_9_OnMinigameStateChanged__DelegateSignature_Params Parms{};
 
 	Parms.Minigame = Minigame;
 	Parms.NewMinigameState = NewMinigameState;
@@ -804,12 +895,14 @@ void ADevice_Volume_Floor_C::BndEvt__FortMinigameProgress_K2Node_ComponentBoundE
 
 void ADevice_Volume_Floor_C::Initialize_Device()
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "Initialize Device");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_Initialize_Device_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "Initialize Device");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -835,9 +928,12 @@ void ADevice_Volume_Floor_C::Initialize_Device()
 
 void ADevice_Volume_Floor_C::ExecuteUbergraph_Device_Volume_Floor(int32 EntryPoint, bool Temp_bool_IsClosed_Variable, bool Temp_bool_Has_Been_Initd_Variable, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, uint8 CallFunc_Conv_IntToByte_ReturnValue, class AController* K2Node_ComponentBoundEvent_TriggerInstigator_1, class AController* K2Node_ComponentBoundEvent_TriggerInstigator, class AFortMinigame* K2Node_ComponentBoundEvent_Minigame, enum class EFortMinigameState K2Node_ComponentBoundEvent_NewMinigameState, bool CallFunc_GetIsPlayingReplay_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Device_Volume_Floor_C", "ExecuteUbergraph_Device_Volume_Floor");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "ExecuteUbergraph_Device_Volume_Floor");
+
+	Params::ADevice_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_IsClosed_Variable = Temp_bool_IsClosed_Variable;
@@ -861,6 +957,4 @@ void ADevice_Volume_Floor_C::ExecuteUbergraph_Device_Volume_Floor(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

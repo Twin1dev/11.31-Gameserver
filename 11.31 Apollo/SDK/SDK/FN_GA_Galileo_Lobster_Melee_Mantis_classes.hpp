@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -22,18 +19,15 @@ public:
 	struct FGameplayTag                          T_GCMeleeClash;                                    // 0xA60(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerPawn*                       PlayerCharacter;                                   // 0xA68(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         StaggerMelee;                                      // 0xA70(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_668D[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_62EA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FScalableFloat                        EnableStagger;                                     // 0xA78(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FScalableFloat                        ImpulseXY;                                         // 0xA98(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FScalableFloat                        ImpulseZ;                                          // 0xAB8(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FGameplayTag                          T_StaggerEvent;                                    // 0xAD8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                GE_StaggerEnemy;                                   // 0xAE0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GA_Galileo_Lobster_Melee_Mantis_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGA_Galileo_Lobster_Melee_Mantis_C* GetDefaultObj();
 
 	void Added_257119E44AAC9BD082F95A9F3201447E();
 	void EventReceived_3D9CCD6F49D4ABCB0E35DB855ADE0B29(const struct FGameplayEventData& Payload);
@@ -45,6 +39,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

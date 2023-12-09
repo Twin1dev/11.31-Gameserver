@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TeamMemberPedestal_XPBoostInfo.TeamMemberPedestal_XPBoostInfo_C
+// (None)
+
+class UClass* UTeamMemberPedestal_XPBoostInfo_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TeamMemberPedestal_XPBoostInfo_C");
+
+	return Clss;
+}
+
+
+// TeamMemberPedestal_XPBoostInfo_C TeamMemberPedestal_XPBoostInfo.Default__TeamMemberPedestal_XPBoostInfo_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTeamMemberPedestal_XPBoostInfo_C* UTeamMemberPedestal_XPBoostInfo_C::GetDefaultObj()
+{
+	static class UTeamMemberPedestal_XPBoostInfo_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTeamMemberPedestal_XPBoostInfo_C*>(UTeamMemberPedestal_XPBoostInfo_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TeamMemberPedestal_XPBoostInfo.TeamMemberPedestal_XPBoostInfo_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UTeamMemberPedestal_XPBoostInfo_C::Construct()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_XPBoostInfo_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberPedestal_XPBoostInfo_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_XPBoostInfo_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -39,9 +66,12 @@ void UTeamMemberPedestal_XPBoostInfo_C::Construct()
 
 void UTeamMemberPedestal_XPBoostInfo_C::OnCameraChanged(enum class EFrontEndCamera NewCamera, enum class EFrontEndCamera OldCamera)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_XPBoostInfo_C", "OnCameraChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberPedestal_XPBoostInfo_C_OnCameraChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_XPBoostInfo_C", "OnCameraChanged");
+
+	Params::UTeamMemberPedestal_XPBoostInfo_C_OnCameraChanged_Params Parms{};
 
 	Parms.NewCamera = NewCamera;
 	Parms.OldCamera = OldCamera;
@@ -67,9 +97,12 @@ void UTeamMemberPedestal_XPBoostInfo_C::OnCameraChanged(enum class EFrontEndCame
 
 void UTeamMemberPedestal_XPBoostInfo_C::ExecuteUbergraph_TeamMemberPedestal_XPBoostInfo(int32 EntryPoint, bool Temp_bool_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class EFrontEndCamera K2Node_CustomEvent_NewCamera, enum class EFrontEndCamera K2Node_CustomEvent_OldCamera, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_XPBoostInfo_C", "ExecuteUbergraph_TeamMemberPedestal_XPBoostInfo");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberPedestal_XPBoostInfo_C_ExecuteUbergraph_TeamMemberPedestal_XPBoostInfo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_XPBoostInfo_C", "ExecuteUbergraph_TeamMemberPedestal_XPBoostInfo");
+
+	Params::UTeamMemberPedestal_XPBoostInfo_C_ExecuteUbergraph_TeamMemberPedestal_XPBoostInfo_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -88,6 +121,4 @@ void UTeamMemberPedestal_XPBoostInfo_C::ExecuteUbergraph_TeamMemberPedestal_XPBo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass RotatorSelector.RotatorSelector_C
+// (None)
+
+class UClass* URotatorSelector_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("RotatorSelector_C");
+
+	return Clss;
+}
+
+
+// RotatorSelector_C RotatorSelector.Default__RotatorSelector_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class URotatorSelector_C* URotatorSelector_C::GetDefaultObj()
+{
+	static class URotatorSelector_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<URotatorSelector_C*>(URotatorSelector_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function RotatorSelector.RotatorSelector_C.Show Param Name
@@ -26,9 +51,12 @@ namespace SDK
 
 void URotatorSelector_C::Show_Param_Name(bool Show, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("RotatorSelector_C", "Show Param Name");
+	static class UFunction* Func = nullptr;
 
-	Params::URotatorSelector_C_Show_Param_Name_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RotatorSelector_C", "Show Param Name");
+
+	Params::URotatorSelector_C_Show_Param_Name_Params Parms{};
 
 	Parms.Show = Show;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -60,9 +88,12 @@ void URotatorSelector_C::Show_Param_Name(bool Show, bool Temp_bool_Variable, enu
 
 void URotatorSelector_C::Update_Size(const struct FVector2D& LargeSize, const struct FVector2D& SmallSize, int32 Temp_int_Variable, bool Temp_bool_Variable, bool CallFunc_IsMobileGame_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue_1, bool CallFunc_IsMobileGame_ReturnValue_2, int32 Temp_int_Variable_1, bool Temp_bool_Variable_1, int32 K2Node_Select_Default, bool Temp_bool_Variable_2, const struct FVector2D& K2Node_Select_Default_1, const struct FVector2D& K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("RotatorSelector_C", "Update Size");
+	static class UFunction* Func = nullptr;
 
-	Params::URotatorSelector_C_Update_Size_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RotatorSelector_C", "Update Size");
+
+	Params::URotatorSelector_C_Update_Size_Params Parms{};
 
 	Parms.LargeSize = LargeSize;
 	Parms.SmallSize = SmallSize;
@@ -89,13 +120,16 @@ void URotatorSelector_C::Update_Size(const struct FVector2D& LargeSize, const st
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FFocusEvent                 InFocusEvent                                                     (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 
 struct FEventReply URotatorSelector_C::OnFocusReceived(const struct FGeometry& MyGeometry, const struct FFocusEvent& InFocusEvent, const struct FEventReply& CallFunc_Unhandled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("RotatorSelector_C", "OnFocusReceived");
+	static class UFunction* Func = nullptr;
 
-	Params::URotatorSelector_C_OnFocusReceived_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RotatorSelector_C", "OnFocusReceived");
+
+	Params::URotatorSelector_C_OnFocusReceived_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InFocusEvent = InFocusEvent;
@@ -115,9 +149,12 @@ struct FEventReply URotatorSelector_C::OnFocusReceived(const struct FGeometry& M
 
 void URotatorSelector_C::Update_Options(TArray<class FText>& NewParam)
 {
-	static auto Func = Class->GetFunction("RotatorSelector_C", "Update Options");
+	static class UFunction* Func = nullptr;
 
-	Params::URotatorSelector_C_Update_Options_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RotatorSelector_C", "Update Options");
+
+	Params::URotatorSelector_C_Update_Options_Params Parms{};
 
 	Parms.NewParam = NewParam;
 
@@ -132,12 +169,14 @@ void URotatorSelector_C::Update_Options(TArray<class FText>& NewParam)
 
 void URotatorSelector_C::Center_On_Widget()
 {
-	static auto Func = Class->GetFunction("RotatorSelector_C", "Center On Widget");
+	static class UFunction* Func = nullptr;
 
-	Params::URotatorSelector_C_Center_On_Widget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RotatorSelector_C", "Center On Widget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -152,9 +191,12 @@ void URotatorSelector_C::Center_On_Widget()
 
 void URotatorSelector_C::Initialize(class FText Display_Text, TArray<class FText>& Options, class FText Hover_Text, class UCommonTextBlock* Tab_Tooltip)
 {
-	static auto Func = Class->GetFunction("RotatorSelector_C", "Initialize");
+	static class UFunction* Func = nullptr;
 
-	Params::URotatorSelector_C_Initialize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RotatorSelector_C", "Initialize");
+
+	Params::URotatorSelector_C_Initialize_Params Parms{};
 
 	Parms.Display_Text = Display_Text;
 	Parms.Options = Options;
@@ -173,9 +215,12 @@ void URotatorSelector_C::Initialize(class FText Display_Text, TArray<class FText
 
 void URotatorSelector_C::Update_Row_Selector(int32 Currently_Selected)
 {
-	static auto Func = Class->GetFunction("RotatorSelector_C", "Update Row Selector");
+	static class UFunction* Func = nullptr;
 
-	Params::URotatorSelector_C_Update_Row_Selector_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RotatorSelector_C", "Update Row Selector");
+
+	Params::URotatorSelector_C_Update_Row_Selector_Params Parms{};
 
 	Parms.Currently_Selected = Currently_Selected;
 
@@ -190,12 +235,14 @@ void URotatorSelector_C::Update_Row_Selector(int32 Currently_Selected)
 
 void URotatorSelector_C::Construct()
 {
-	static auto Func = Class->GetFunction("RotatorSelector_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::URotatorSelector_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RotatorSelector_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -207,9 +254,12 @@ void URotatorSelector_C::Construct()
 
 void URotatorSelector_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("RotatorSelector_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::URotatorSelector_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RotatorSelector_C", "OnMouseLeave");
+
+	Params::URotatorSelector_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -226,9 +276,12 @@ void URotatorSelector_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 
 void URotatorSelector_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("RotatorSelector_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::URotatorSelector_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RotatorSelector_C", "OnMouseEnter");
+
+	Params::URotatorSelector_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -245,9 +298,12 @@ void URotatorSelector_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct
 
 void URotatorSelector_C::BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature(int32 Value)
 {
-	static auto Func = Class->GetFunction("RotatorSelector_C", "BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::URotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RotatorSelector_C", "BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature");
+
+	Params::URotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -263,9 +319,12 @@ void URotatorSelector_C::BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRota
 
 void URotatorSelector_C::BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("RotatorSelector_C", "BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::URotatorSelector_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RotatorSelector_C", "BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::URotatorSelector_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -281,9 +340,12 @@ void URotatorSelector_C::BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonB
 
 void URotatorSelector_C::BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("RotatorSelector_C", "BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::URotatorSelector_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RotatorSelector_C", "BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
+
+	Params::URotatorSelector_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -299,9 +361,12 @@ void URotatorSelector_C::BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_Commo
 
 void URotatorSelector_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("RotatorSelector_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::URotatorSelector_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RotatorSelector_C", "PreConstruct");
+
+	Params::URotatorSelector_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -326,9 +391,12 @@ void URotatorSelector_C::PreConstruct(bool IsDesignTime)
 
 void URotatorSelector_C::ExecuteUbergraph_RotatorSelector(int32 EntryPoint, bool CallFunc_Not_PreBool_ReturnValue, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent, int32 K2Node_ComponentBoundEvent_Value, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool K2Node_Event_IsDesignTime, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue)
 {
-	static auto Func = Class->GetFunction("RotatorSelector_C", "ExecuteUbergraph_RotatorSelector");
+	static class UFunction* Func = nullptr;
 
-	Params::URotatorSelector_C_ExecuteUbergraph_RotatorSelector_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RotatorSelector_C", "ExecuteUbergraph_RotatorSelector");
+
+	Params::URotatorSelector_C_ExecuteUbergraph_RotatorSelector_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
@@ -353,9 +421,12 @@ void URotatorSelector_C::ExecuteUbergraph_RotatorSelector(int32 EntryPoint, bool
 
 void URotatorSelector_C::Selection_Changed__DelegateSignature(int32 Selected_Index)
 {
-	static auto Func = Class->GetFunction("RotatorSelector_C", "Selection Changed__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::URotatorSelector_C_Selection_Changed__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RotatorSelector_C", "Selection Changed__DelegateSignature");
+
+	Params::URotatorSelector_C_Selection_Changed__DelegateSignature_Params Parms{};
 
 	Parms.Selected_Index = Selected_Index;
 
@@ -365,6 +436,4 @@ void URotatorSelector_C::Selection_Changed__DelegateSignature(int32 Selected_Ind
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

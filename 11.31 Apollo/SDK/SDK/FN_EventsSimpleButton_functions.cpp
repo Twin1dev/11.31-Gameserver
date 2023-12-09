@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass EventsSimpleButton.EventsSimpleButton_C
+// (None)
+
+class UClass* UEventsSimpleButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EventsSimpleButton_C");
+
+	return Clss;
+}
+
+
+// EventsSimpleButton_C EventsSimpleButton.Default__EventsSimpleButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UEventsSimpleButton_C* UEventsSimpleButton_C::GetDefaultObj()
+{
+	static class UEventsSimpleButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEventsSimpleButton_C*>(UEventsSimpleButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function EventsSimpleButton.EventsSimpleButton_C.OnMouseButtonUp
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,7 +48,7 @@ namespace SDK
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
 // float                              Temp_float_Variable                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 // float                              CallFunc_PauseAnimation_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetStartTime_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_PauseAnimation_ReturnValue_1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -37,9 +62,12 @@ namespace SDK
 
 struct FEventReply UEventsSimpleButton_C::OnMouseButtonUp(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, float Temp_float_Variable, bool Temp_bool_Variable, const struct FEventReply& CallFunc_Unhandled_ReturnValue, float CallFunc_PauseAnimation_ReturnValue, float CallFunc_GetStartTime_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float CallFunc_GetEndTime_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float K2Node_Select_Default, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("EventsSimpleButton_C", "OnMouseButtonUp");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventsSimpleButton_C_OnMouseButtonUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventsSimpleButton_C", "OnMouseButtonUp");
+
+	Params::UEventsSimpleButton_C_OnMouseButtonUp_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -72,7 +100,7 @@ struct FEventReply UEventsSimpleButton_C::OnMouseButtonUp(const struct FGeometry
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
 // float                              Temp_float_Variable                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 // float                              CallFunc_PauseAnimation_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetStartTime_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_PauseAnimation_ReturnValue_1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -86,9 +114,12 @@ struct FEventReply UEventsSimpleButton_C::OnMouseButtonUp(const struct FGeometry
 
 struct FEventReply UEventsSimpleButton_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, float Temp_float_Variable, bool Temp_bool_Variable, const struct FEventReply& CallFunc_Unhandled_ReturnValue, float CallFunc_PauseAnimation_ReturnValue, float CallFunc_GetStartTime_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float CallFunc_GetEndTime_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float K2Node_Select_Default, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("EventsSimpleButton_C", "OnMouseButtonDown");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventsSimpleButton_C_OnMouseButtonDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventsSimpleButton_C", "OnMouseButtonDown");
+
+	Params::UEventsSimpleButton_C_OnMouseButtonDown_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -119,12 +150,14 @@ struct FEventReply UEventsSimpleButton_C::OnMouseButtonDown(const struct FGeomet
 
 void UEventsSimpleButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("EventsSimpleButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventsSimpleButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventsSimpleButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -135,12 +168,14 @@ void UEventsSimpleButton_C::Construct()
 
 void UEventsSimpleButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("EventsSimpleButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventsSimpleButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventsSimpleButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -151,12 +186,14 @@ void UEventsSimpleButton_C::BP_OnHovered()
 
 void UEventsSimpleButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("EventsSimpleButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventsSimpleButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventsSimpleButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -167,12 +204,14 @@ void UEventsSimpleButton_C::BP_OnUnhovered()
 
 void UEventsSimpleButton_C::BP_OnClicked()
 {
-	static auto Func = Class->GetFunction("EventsSimpleButton_C", "BP_OnClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventsSimpleButton_C_BP_OnClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventsSimpleButton_C", "BP_OnClicked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -184,9 +223,12 @@ void UEventsSimpleButton_C::BP_OnClicked()
 
 void UEventsSimpleButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad)
 {
-	static auto Func = Class->GetFunction("EventsSimpleButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventsSimpleButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventsSimpleButton_C", "BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature");
+
+	Params::UEventsSimpleButton_C_BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature_Params Parms{};
 
 	Parms.bUsingGamepad = bUsingGamepad;
 
@@ -202,9 +244,12 @@ void UEventsSimpleButton_C::BndEvt__CommonActionWidgetAction_K2Node_ComponentBou
 
 void UEventsSimpleButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("EventsSimpleButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventsSimpleButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventsSimpleButton_C", "PreConstruct");
+
+	Params::UEventsSimpleButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -220,9 +265,12 @@ void UEventsSimpleButton_C::PreConstruct(bool IsDesignTime)
 
 void UEventsSimpleButton_C::InputTypeChanged(bool bUsingGamepad)
 {
-	static auto Func = Class->GetFunction("EventsSimpleButton_C", "InputTypeChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventsSimpleButton_C_InputTypeChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventsSimpleButton_C", "InputTypeChanged");
+
+	Params::UEventsSimpleButton_C_InputTypeChanged_Params Parms{};
 
 	Parms.bUsingGamepad = bUsingGamepad;
 
@@ -267,7 +315,7 @@ void UEventsSimpleButton_C::InputTypeChanged(bool bUsingGamepad)
 // float                              CallFunc_Subtract_FloatFloat_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_ComponentBoundEvent_bUsingGamepad                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_2                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 // class FString                      Temp_string_Variable_5                                           (ConstParm, ZeroConstructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_CustomEvent_bUsingGamepad                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -298,7 +346,7 @@ void UEventsSimpleButton_C::InputTypeChanged(bool bUsingGamepad)
 // class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_4                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsUsingGamepad_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default_1                                          ()
+// class FText                        K2Node_Select_Default_1                                          (None)
 // enum class ESlateVisibility        K2Node_Select_Default_2                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicFontMaterial_ReturnValue_1                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -313,9 +361,12 @@ void UEventsSimpleButton_C::InputTypeChanged(bool bUsingGamepad)
 
 void UEventsSimpleButton_C::ExecuteUbergraph_EventsSimpleButton(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, const struct FMargin& K2Node_MakeStruct_Margin, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, const class FString& Temp_string_Variable, const class FString& Temp_string_Variable_1, const class FString& Temp_string_Variable_2, const class FString& Temp_string_Variable_3, const class FString& Temp_string_Variable_4, class UMaterialInstanceDynamic* CallFunc_GetDynamicFontMaterial_ReturnValue, float CallFunc_GetStartTime_ReturnValue, float CallFunc_GetEndTime_ReturnValue, float CallFunc_GetStartTime_ReturnValue_1, float CallFunc_GetEndTime_ReturnValue_1, float CallFunc_PauseAnimation_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_2, float CallFunc_PauseAnimation_ReturnValue_3, bool CallFunc_LessEqual_FloatFloat_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue_1, bool K2Node_ComponentBoundEvent_bUsingGamepad, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class FText CallFunc_TextToUpper_ReturnValue, const class FString& Temp_string_Variable_5, bool K2Node_Event_IsDesignTime, bool K2Node_CustomEvent_bUsingGamepad, const class FString& Temp_string_Variable_6, enum class ESlateVisibility Temp_byte_Variable_2, const struct FLinearColor& CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, const struct FLinearColor& CallFunc_Map_Find_Value_1, bool CallFunc_Map_Find_ReturnValue_1, const struct FLinearColor& CallFunc_Map_Find_Value_2, bool CallFunc_Map_Find_ReturnValue_2, enum class ESlateVisibility Temp_byte_Variable_3, float CallFunc_BreakColor_R, float CallFunc_BreakColor_G, float CallFunc_BreakColor_B, float CallFunc_BreakColor_A, bool CallFunc_LessEqual_FloatFloat_ReturnValue_2, enum class ESlateVisibility K2Node_Select_Default, const struct FLinearColor& CallFunc_Map_Find_Value_3, bool CallFunc_Map_Find_ReturnValue_3, const struct FLinearColor& CallFunc_Map_Find_Value_4, bool CallFunc_Map_Find_ReturnValue_4, const struct FLinearColor& CallFunc_Map_Find_Value_5, bool CallFunc_Map_Find_ReturnValue_5, const struct FLinearColor& CallFunc_Map_Find_Value_6, bool CallFunc_Map_Find_ReturnValue_6, bool Temp_bool_Variable_3, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_Variable_4, bool CallFunc_IsUsingGamepad_ReturnValue, class FText K2Node_Select_Default_1, enum class ESlateVisibility K2Node_Select_Default_2, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicFontMaterial_ReturnValue_1, float Temp_float_Variable, bool Temp_bool_Variable_5, const struct FLinearColor& K2Node_Select_Default_3, float K2Node_Select_Default_4, float Temp_float_Variable_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, float K2Node_Select_Default_5, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_4)
 {
-	static auto Func = Class->GetFunction("EventsSimpleButton_C", "ExecuteUbergraph_EventsSimpleButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventsSimpleButton_C_ExecuteUbergraph_EventsSimpleButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventsSimpleButton_C", "ExecuteUbergraph_EventsSimpleButton");
+
+	Params::UEventsSimpleButton_C_ExecuteUbergraph_EventsSimpleButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -400,6 +451,4 @@ void UEventsSimpleButton_C::ExecuteUbergraph_EventsSimpleButton(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

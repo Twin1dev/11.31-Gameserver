@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -18,16 +15,16 @@ namespace Params
 
 // 0x110 (0x110 - 0x0)
 // Function Tooltip-Basic-S.Tooltip-Basic-S_C.Get Icon Brush
-struct UTooltip_Basic_S_C_Get_Icon_Brush_Params
+struct UTooltipMinusBasicMinusS_C_Get_Icon_Brush_Params
 {
 public:
 	struct FSlateBrush                           ReturnValue;                                       // 0x0(0x88)(Parm, OutParm, ReturnParm)
-	struct FSlateBrush                           CallFunc_MakeBrushFromAsset_ReturnValue;           // 0x88(0x88)()
+	struct FSlateBrush                           CallFunc_MakeBrushFromAsset_ReturnValue;           // 0x88(0x88)(None)
 };
 
 // 0x18 (0x18 - 0x0)
 // Function Tooltip-Basic-S.Tooltip-Basic-S_C.Get Header Text
-struct UTooltip_Basic_S_C_Get_Header_Text_Params
+struct UTooltipMinusBasicMinusS_C_Get_Header_Text_Params
 {
 public:
 	class FText                                  ReturnValue;                                       // 0x0(0x18)(Parm, OutParm, ReturnParm)
@@ -35,22 +32,15 @@ public:
 
 // 0x18 (0x18 - 0x0)
 // Function Tooltip-Basic-S.Tooltip-Basic-S_C.Get Body Text
-struct UTooltip_Basic_S_C_Get_Body_Text_Params
+struct UTooltipMinusBasicMinusS_C_Get_Body_Text_Params
 {
 public:
 	class FText                                  ReturnValue;                                       // 0x0(0x18)(Parm, OutParm, ReturnParm)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function Tooltip-Basic-S.Tooltip-Basic-S_C.Construct
-struct UTooltip_Basic_S_C_Construct_Params
-{
-public:
-};
-
 // 0x21 (0x21 - 0x0)
 // Function Tooltip-Basic-S.Tooltip-Basic-S_C.ExecuteUbergraph_Tooltip-Basic-S
-struct UTooltip_Basic_S_C_ExecuteUbergraph_Tooltip_Basic_S_Params
+struct UTooltipMinusBasicMinusS_C_ExecuteUbergraph_TooltipMinusBasicMinusS_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -88,6 +78,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

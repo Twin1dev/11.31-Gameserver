@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_CameraShake_PortalWarp.BP_CameraShake_PortalWarp_C
+// (None)
+
+class UClass* UBP_CameraShake_PortalWarp_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_CameraShake_PortalWarp_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// BP_CameraShake_PortalWarp_C BP_CameraShake_PortalWarp.Default__BP_CameraShake_PortalWarp_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBP_CameraShake_PortalWarp_C* UBP_CameraShake_PortalWarp_C::GetDefaultObj()
+{
+	static class UBP_CameraShake_PortalWarp_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBP_CameraShake_PortalWarp_C*>(UBP_CameraShake_PortalWarp_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

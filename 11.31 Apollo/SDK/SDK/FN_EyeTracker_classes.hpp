@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class UEyeTrackerFunctionLibrary : public UBlueprintFunctionLibrary
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("EyeTrackerFunctionLibrary");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UEyeTrackerFunctionLibrary* GetDefaultObj();
 
 	void SetEyeTrackedPlayer(class APlayerController* PlayerController);
 	bool IsStereoGazeDataAvailable();
@@ -33,6 +27,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

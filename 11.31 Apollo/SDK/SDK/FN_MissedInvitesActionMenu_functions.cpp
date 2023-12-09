@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,22 +12,53 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass MissedInvitesActionMenu.MissedInvitesActionMenu_C
+// (None)
+
+class UClass* UMissedInvitesActionMenu_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MissedInvitesActionMenu_C");
+
+	return Clss;
+}
+
+
+// MissedInvitesActionMenu_C MissedInvitesActionMenu.Default__MissedInvitesActionMenu_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMissedInvitesActionMenu_C* UMissedInvitesActionMenu_C::GetDefaultObj()
+{
+	static class UMissedInvitesActionMenu_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMissedInvitesActionMenu_C*>(UMissedInvitesActionMenu_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MissedInvitesActionMenu.MissedInvitesActionMenu_C.OnKeyUp
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FKeyEvent                   InKeyEvent                                                       (BlueprintVisible, BlueprintReadOnly, Parm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 // struct FKey                        CallFunc_GetKey_ReturnValue                                      (HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_KeyKey_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 
 struct FEventReply UMissedInvitesActionMenu_C::OnKeyUp(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent, const struct FEventReply& CallFunc_Unhandled_ReturnValue, const struct FKey& CallFunc_GetKey_ReturnValue, bool CallFunc_EqualEqual_KeyKey_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MissedInvitesActionMenu_C", "OnKeyUp");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissedInvitesActionMenu_C_OnKeyUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissedInvitesActionMenu_C", "OnKeyUp");
+
+	Params::UMissedInvitesActionMenu_C_OnKeyUp_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InKeyEvent = InKeyEvent;
@@ -52,12 +80,14 @@ struct FEventReply UMissedInvitesActionMenu_C::OnKeyUp(const struct FGeometry& M
 
 void UMissedInvitesActionMenu_C::OnOpened()
 {
-	static auto Func = Class->GetFunction("MissedInvitesActionMenu_C", "OnOpened");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissedInvitesActionMenu_C_OnOpened_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissedInvitesActionMenu_C", "OnOpened");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -70,9 +100,12 @@ void UMissedInvitesActionMenu_C::OnOpened()
 
 void UMissedInvitesActionMenu_C::ExecuteUbergraph_MissedInvitesActionMenu(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MissedInvitesActionMenu_C", "ExecuteUbergraph_MissedInvitesActionMenu");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissedInvitesActionMenu_C_ExecuteUbergraph_MissedInvitesActionMenu_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissedInvitesActionMenu_C", "ExecuteUbergraph_MissedInvitesActionMenu");
+
+	Params::UMissedInvitesActionMenu_C_ExecuteUbergraph_MissedInvitesActionMenu_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -83,6 +116,4 @@ void UMissedInvitesActionMenu_C::ExecuteUbergraph_MissedInvitesActionMenu(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

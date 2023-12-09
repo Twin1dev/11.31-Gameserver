@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GET_DirectPhysicalDamage.GET_DirectPhysicalDamage_C
+// (None)
+
+class UClass* UGET_DirectPhysicalDamage_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GET_DirectPhysicalDamage_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// GET_DirectPhysicalDamage_C GET_DirectPhysicalDamage.Default__GET_DirectPhysicalDamage_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGET_DirectPhysicalDamage_C* UGET_DirectPhysicalDamage_C::GetDefaultObj()
+{
+	static class UGET_DirectPhysicalDamage_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGET_DirectPhysicalDamage_C*>(UGET_DirectPhysicalDamage_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

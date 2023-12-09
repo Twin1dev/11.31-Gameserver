@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SettingEntryBackground.SettingEntryBackground_C
+// (None)
+
+class UClass* USettingEntryBackground_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SettingEntryBackground_C");
+
+	return Clss;
+}
+
+
+// SettingEntryBackground_C SettingEntryBackground.Default__SettingEntryBackground_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USettingEntryBackground_C* USettingEntryBackground_C::GetDefaultObj()
+{
+	static class USettingEntryBackground_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USettingEntryBackground_C*>(USettingEntryBackground_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SettingEntryBackground.SettingEntryBackground_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void USettingEntryBackground_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("SettingEntryBackground_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingEntryBackground_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingEntryBackground_C", "OnMouseEnter");
+
+	Params::USettingEntryBackground_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -42,9 +70,12 @@ void USettingEntryBackground_C::OnMouseEnter(const struct FGeometry& MyGeometry,
 
 void USettingEntryBackground_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("SettingEntryBackground_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingEntryBackground_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingEntryBackground_C", "OnMouseLeave");
+
+	Params::USettingEntryBackground_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -65,9 +96,12 @@ void USettingEntryBackground_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 
 void USettingEntryBackground_C::ExecuteUbergraph_SettingEntryBackground(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FPointerEvent& K2Node_Event_MouseEvent)
 {
-	static auto Func = Class->GetFunction("SettingEntryBackground_C", "ExecuteUbergraph_SettingEntryBackground");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingEntryBackground_C", "ExecuteUbergraph_SettingEntryBackground");
+
+	Params::USettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimationForward_ReturnValue = CallFunc_PlayAnimationForward_ReturnValue;
@@ -88,9 +122,12 @@ void USettingEntryBackground_C::ExecuteUbergraph_SettingEntryBackground(int32 En
 
 void USettingEntryBackground_C::OnMouseEnterChanged__DelegateSignature(bool IsEnterEvent)
 {
-	static auto Func = Class->GetFunction("SettingEntryBackground_C", "OnMouseEnterChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingEntryBackground_C_OnMouseEnterChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingEntryBackground_C", "OnMouseEnterChanged__DelegateSignature");
+
+	Params::USettingEntryBackground_C_OnMouseEnterChanged__DelegateSignature_Params Parms{};
 
 	Parms.IsEnterEvent = IsEnterEvent;
 
@@ -100,6 +137,4 @@ void USettingEntryBackground_C::OnMouseEnterChanged__DelegateSignature(bool IsEn
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

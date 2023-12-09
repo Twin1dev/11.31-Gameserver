@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TabHUDOptions_New.TabHUDOptions_New_C
+// (None)
+
+class UClass* UTabHUDOptions_New_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TabHUDOptions_New_C");
+
+	return Clss;
+}
+
+
+// TabHUDOptions_New_C TabHUDOptions_New.Default__TabHUDOptions_New_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTabHUDOptions_New_C* UTabHUDOptions_New_C::GetDefaultObj()
+{
+	static class UTabHUDOptions_New_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTabHUDOptions_New_C*>(UTabHUDOptions_New_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TabHUDOptions_New.TabHUDOptions_New_C.SettingValueChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UTabHUDOptions_New_C::SettingValueChanged(float Value)
 {
-	static auto Func = Class->GetFunction("TabHUDOptions_New_C", "SettingValueChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabHUDOptions_New_C_SettingValueChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabHUDOptions_New_C", "SettingValueChanged");
+
+	Params::UTabHUDOptions_New_C_SettingValueChanged_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -39,12 +67,14 @@ void UTabHUDOptions_New_C::SettingValueChanged(float Value)
 
 void UTabHUDOptions_New_C::CenterOnTab()
 {
-	static auto Func = Class->GetFunction("TabHUDOptions_New_C", "CenterOnTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabHUDOptions_New_C_CenterOnTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabHUDOptions_New_C", "CenterOnTab");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,9 +87,12 @@ void UTabHUDOptions_New_C::CenterOnTab()
 
 void UTabHUDOptions_New_C::ExecuteUbergraph_TabHUDOptions_New(int32 EntryPoint, float K2Node_CustomEvent_Value)
 {
-	static auto Func = Class->GetFunction("TabHUDOptions_New_C", "ExecuteUbergraph_TabHUDOptions_New");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabHUDOptions_New_C_ExecuteUbergraph_TabHUDOptions_New_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabHUDOptions_New_C", "ExecuteUbergraph_TabHUDOptions_New");
+
+	Params::UTabHUDOptions_New_C_ExecuteUbergraph_TabHUDOptions_New_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_Value = K2Node_CustomEvent_Value;
@@ -70,6 +103,4 @@ void UTabHUDOptions_New_C::ExecuteUbergraph_TabHUDOptions_New(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

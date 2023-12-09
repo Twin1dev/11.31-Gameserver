@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -32,11 +29,8 @@ public:
 	class UImage*                                Unlockable_Via_Type;                               // 0x2D8(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                              UnlockableIconType;                                // 0x2E0(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BattlePassViewScreenReward_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UBattlePassViewScreenReward_C* GetDefaultObj();
 
 	void IntroIn(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
 	void BP_OnItemSelectionChanged(bool bIsSelected);
@@ -48,6 +42,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

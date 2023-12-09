@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass NavLink_BalconyI.NavLink_BalconyI_C
+// (None)
+
+class UClass* UNavLink_BalconyI_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("NavLink_BalconyI_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// NavLink_BalconyI_C NavLink_BalconyI.Default__NavLink_BalconyI_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UNavLink_BalconyI_C* UNavLink_BalconyI_C::GetDefaultObj()
+{
+	static class UNavLink_BalconyI_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UNavLink_BalconyI_C*>(UNavLink_BalconyI_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

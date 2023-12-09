@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass HorizontalTabList.HorizontalTabList_C
+// (None)
+
+class UClass* UHorizontalTabList_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("HorizontalTabList_C");
+
+	return Clss;
+}
+
+
+// HorizontalTabList_C HorizontalTabList.Default__HorizontalTabList_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UHorizontalTabList_C* UHorizontalTabList_C::GetDefaultObj()
+{
+	static class UHorizontalTabList_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UHorizontalTabList_C*>(UHorizontalTabList_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function HorizontalTabList.HorizontalTabList_C.SetVerticalAlignment
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UHorizontalTabList_C::SetVerticalAlignment(enum class EVerticalAlignment FillVertically, class UHorizontalBoxSlot* CallFunc_SlotAsHorizontalBoxSlot_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HorizontalTabList_C", "SetVerticalAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UHorizontalTabList_C_SetVerticalAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HorizontalTabList_C", "SetVerticalAlignment");
+
+	Params::UHorizontalTabList_C_SetVerticalAlignment_Params Parms{};
 
 	Parms.FillVertically = FillVertically;
 	Parms.CallFunc_SlotAsHorizontalBoxSlot_ReturnValue = CallFunc_SlotAsHorizontalBoxSlot_ReturnValue;
@@ -55,9 +83,12 @@ void UHorizontalTabList_C::SetVerticalAlignment(enum class EVerticalAlignment Fi
 
 void UHorizontalTabList_C::UpdateGamepadKeyVisibility(int32 NumVisibleTabs, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, int32 CallFunc_GetVisibleTabCount_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("HorizontalTabList_C", "UpdateGamepadKeyVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UHorizontalTabList_C_UpdateGamepadKeyVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HorizontalTabList_C", "UpdateGamepadKeyVisibility");
+
+	Params::UHorizontalTabList_C_UpdateGamepadKeyVisibility_Params Parms{};
 
 	Parms.NumVisibleTabs = NumVisibleTabs;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -88,9 +119,12 @@ void UHorizontalTabList_C::UpdateGamepadKeyVisibility(int32 NumVisibleTabs, bool
 
 class UCommonButton* UHorizontalTabList_C::Get_Tab_From_Id(class FName TabNameID, class UCommonButton* CallFunc_GetTabButtonByID_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HorizontalTabList_C", "Get Tab From Id");
+	static class UFunction* Func = nullptr;
 
-	Params::UHorizontalTabList_C_Get_Tab_From_Id_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HorizontalTabList_C", "Get Tab From Id");
+
+	Params::UHorizontalTabList_C_Get_Tab_From_Id_Params Parms{};
 
 	Parms.TabNameID = TabNameID;
 	Parms.CallFunc_GetTabButtonByID_ReturnValue = CallFunc_GetTabButtonByID_ReturnValue;
@@ -108,12 +142,14 @@ class UCommonButton* UHorizontalTabList_C::Get_Tab_From_Id(class FName TabNameID
 
 void UHorizontalTabList_C::Construct()
 {
-	static auto Func = Class->GetFunction("HorizontalTabList_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UHorizontalTabList_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HorizontalTabList_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -125,9 +161,12 @@ void UHorizontalTabList_C::Construct()
 
 void UHorizontalTabList_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("HorizontalTabList_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UHorizontalTabList_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HorizontalTabList_C", "PreConstruct");
+
+	Params::UHorizontalTabList_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -142,12 +181,14 @@ void UHorizontalTabList_C::PreConstruct(bool IsDesignTime)
 
 void UHorizontalTabList_C::Previous_Visibility()
 {
-	static auto Func = Class->GetFunction("HorizontalTabList_C", "Previous Visibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UHorizontalTabList_C_Previous_Visibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HorizontalTabList_C", "Previous Visibility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -159,9 +200,12 @@ void UHorizontalTabList_C::Previous_Visibility()
 
 void UHorizontalTabList_C::CustomEvent_0(class FName TabId)
 {
-	static auto Func = Class->GetFunction("HorizontalTabList_C", "CustomEvent_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UHorizontalTabList_C_CustomEvent_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HorizontalTabList_C", "CustomEvent_0");
+
+	Params::UHorizontalTabList_C_CustomEvent_0_Params Parms{};
 
 	Parms.TabId = TabId;
 
@@ -178,9 +222,12 @@ void UHorizontalTabList_C::CustomEvent_0(class FName TabId)
 
 void UHorizontalTabList_C::HandleTabCreated(class FName TabNameID, class UCommonButton* TabButton)
 {
-	static auto Func = Class->GetFunction("HorizontalTabList_C", "HandleTabCreated");
+	static class UFunction* Func = nullptr;
 
-	Params::UHorizontalTabList_C_HandleTabCreated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HorizontalTabList_C", "HandleTabCreated");
+
+	Params::UHorizontalTabList_C_HandleTabCreated_Params Parms{};
 
 	Parms.TabNameID = TabNameID;
 	Parms.TabButton = TabButton;
@@ -198,9 +245,12 @@ void UHorizontalTabList_C::HandleTabCreated(class FName TabNameID, class UCommon
 
 void UHorizontalTabList_C::HandleTabRemoved(class FName TabNameID, class UCommonButton* TabButton)
 {
-	static auto Func = Class->GetFunction("HorizontalTabList_C", "HandleTabRemoved");
+	static class UFunction* Func = nullptr;
 
-	Params::UHorizontalTabList_C_HandleTabRemoved_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HorizontalTabList_C", "HandleTabRemoved");
+
+	Params::UHorizontalTabList_C_HandleTabRemoved_Params Parms{};
 
 	Parms.TabNameID = TabNameID;
 	Parms.TabButton = TabButton;
@@ -217,9 +267,12 @@ void UHorizontalTabList_C::HandleTabRemoved(class FName TabNameID, class UCommon
 
 void UHorizontalTabList_C::HandleOnInputMethodChanged(enum class ECommonInputType bNewInputType)
 {
-	static auto Func = Class->GetFunction("HorizontalTabList_C", "HandleOnInputMethodChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UHorizontalTabList_C_HandleOnInputMethodChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HorizontalTabList_C", "HandleOnInputMethodChanged");
+
+	Params::UHorizontalTabList_C_HandleOnInputMethodChanged_Params Parms{};
 
 	Parms.bNewInputType = bNewInputType;
 
@@ -246,7 +299,7 @@ void UHorizontalTabList_C::HandleOnInputMethodChanged(enum class ECommonInputTyp
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        K2Node_CustomEvent_TabId                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetEmptyText_ReturnValue                                ()
+// class FText                        CallFunc_GetEmptyText_ReturnValue                                (None)
 // enum class ESlateVisibility        Temp_byte_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        K2Node_Event_TabNameId_1                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_Event_TabButton_1                                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -267,9 +320,12 @@ void UHorizontalTabList_C::HandleOnInputMethodChanged(enum class ECommonInputTyp
 
 void UHorizontalTabList_C::ExecuteUbergraph_HorizontalTabList(int32 EntryPoint, enum class ECommonInputType K2Node_CustomEvent_bNewInputType, class UCommonInputSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool K2Node_Event_IsDesignTime, int32 CallFunc_GetTabCount_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_GetTabCount_ReturnValue_1, bool CallFunc_LessEqual_IntInt_ReturnValue_1, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default, class FName K2Node_CustomEvent_TabId, class FText CallFunc_GetEmptyText_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_2, class FName K2Node_Event_TabNameId_1, class UCommonButton* K2Node_Event_TabButton_1, class UIconTabButton_C* K2Node_DynamicCast_AsIcon_Tab_Button, bool K2Node_DynamicCast_bSuccess, class UHorizontalBoxSlot* CallFunc_AddChildToHorizontalBox_ReturnValue, class UIconTabButton_C* K2Node_DynamicCast_AsIcon_Tab_Button_1, bool K2Node_DynamicCast_bSuccess_1, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility K2Node_Select_Default_1, enum class ESlateVisibility Temp_byte_Variable_5, bool Temp_bool_Variable_2, enum class ESlateVisibility K2Node_Select_Default_2, class FName K2Node_Event_TabNameId, class UCommonButton* K2Node_Event_TabButton)
 {
-	static auto Func = Class->GetFunction("HorizontalTabList_C", "ExecuteUbergraph_HorizontalTabList");
+	static class UFunction* Func = nullptr;
 
-	Params::UHorizontalTabList_C_ExecuteUbergraph_HorizontalTabList_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HorizontalTabList_C", "ExecuteUbergraph_HorizontalTabList");
+
+	Params::UHorizontalTabList_C_ExecuteUbergraph_HorizontalTabList_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_bNewInputType = K2Node_CustomEvent_bNewInputType;
@@ -311,6 +367,4 @@ void UHorizontalTabList_C::ExecuteUbergraph_HorizontalTabList(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

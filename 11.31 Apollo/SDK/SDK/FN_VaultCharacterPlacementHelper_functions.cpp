@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C
+// (Actor)
+
+class UClass* AVaultCharacterPlacementHelper_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VaultCharacterPlacementHelper_C");
+
+	return Clss;
+}
+
+
+// VaultCharacterPlacementHelper_C VaultCharacterPlacementHelper.Default__VaultCharacterPlacementHelper_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AVaultCharacterPlacementHelper_C* AVaultCharacterPlacementHelper_C::GetDefaultObj()
+{
+	static class AVaultCharacterPlacementHelper_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AVaultCharacterPlacementHelper_C*>(AVaultCharacterPlacementHelper_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function VaultCharacterPlacementHelper.VaultCharacterPlacementHelper_C.UpdatePosition For Camera
@@ -37,9 +62,12 @@ namespace SDK
 
 void AVaultCharacterPlacementHelper_C::UpdatePosition_For_Camera(enum class EFrontEndCamera FrontendCamera, bool CallFunc_IsUsingNewFrontEndCameraManagement_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, TArray<enum class EFrontEndCamera>& K2Node_MakeArray_Array, bool CallFunc_Array_Contains_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FRotator& CallFunc_ComposeRotators_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue, const struct FHitResult& CallFunc_K2_SetActorTransform_SweepHitResult, bool CallFunc_K2_SetActorTransform_ReturnValue)
 {
-	static auto Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "UpdatePosition For Camera");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultCharacterPlacementHelper_C_UpdatePosition_For_Camera_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "UpdatePosition For Camera");
+
+	Params::AVaultCharacterPlacementHelper_C_UpdatePosition_For_Camera_Params Parms{};
 
 	Parms.FrontendCamera = FrontendCamera;
 	Parms.CallFunc_IsUsingNewFrontEndCameraManagement_ReturnValue = CallFunc_IsUsingNewFrontEndCameraManagement_ReturnValue;
@@ -70,9 +98,12 @@ void AVaultCharacterPlacementHelper_C::UpdatePosition_For_Camera(enum class EFro
 
 void AVaultCharacterPlacementHelper_C::UserConstructionScript(const struct FTransform& CallFunc_GetTransform_ReturnValue)
 {
-	static auto Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultCharacterPlacementHelper_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "UserConstructionScript");
+
+	Params::AVaultCharacterPlacementHelper_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_GetTransform_ReturnValue = CallFunc_GetTransform_ReturnValue;
 
@@ -87,12 +118,14 @@ void AVaultCharacterPlacementHelper_C::UserConstructionScript(const struct FTran
 
 void AVaultCharacterPlacementHelper_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultCharacterPlacementHelper_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -104,9 +137,12 @@ void AVaultCharacterPlacementHelper_C::ReceiveBeginPlay()
 
 void AVaultCharacterPlacementHelper_C::SubGameChanged_Event_0(enum class ESubGame SubGame)
 {
-	static auto Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "SubGameChanged_Event_0");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultCharacterPlacementHelper_C_SubGameChanged_Event_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "SubGameChanged_Event_0");
+
+	Params::AVaultCharacterPlacementHelper_C_SubGameChanged_Event_0_Params Parms{};
 
 	Parms.SubGame = SubGame;
 
@@ -123,9 +159,12 @@ void AVaultCharacterPlacementHelper_C::SubGameChanged_Event_0(enum class ESubGam
 
 void AVaultCharacterPlacementHelper_C::OnFrontEndCameraChanged(enum class EFrontEndCamera NewCamera, enum class EFrontEndCamera OldCamera)
 {
-	static auto Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "OnFrontEndCameraChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultCharacterPlacementHelper_C_OnFrontEndCameraChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "OnFrontEndCameraChanged");
+
+	Params::AVaultCharacterPlacementHelper_C_OnFrontEndCameraChanged_Params Parms{};
 
 	Parms.NewCamera = NewCamera;
 	Parms.OldCamera = OldCamera;
@@ -153,9 +192,12 @@ void AVaultCharacterPlacementHelper_C::OnFrontEndCameraChanged(enum class EFront
 
 void AVaultCharacterPlacementHelper_C::ExecuteUbergraph_VaultCharacterPlacementHelper(int32 EntryPoint, enum class EFrontEndCamera K2Node_CustomEvent_NewCamera, enum class EFrontEndCamera K2Node_CustomEvent_OldCamera, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, enum class ESubGame K2Node_CustomEvent_SubGame, const struct FHitResult& CallFunc_K2_SetActorTransform_SweepHitResult, bool CallFunc_K2_SetActorTransform_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "ExecuteUbergraph_VaultCharacterPlacementHelper");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultCharacterPlacementHelper_C_ExecuteUbergraph_VaultCharacterPlacementHelper_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "ExecuteUbergraph_VaultCharacterPlacementHelper");
+
+	Params::AVaultCharacterPlacementHelper_C_ExecuteUbergraph_VaultCharacterPlacementHelper_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_NewCamera = K2Node_CustomEvent_NewCamera;
@@ -182,9 +224,12 @@ void AVaultCharacterPlacementHelper_C::ExecuteUbergraph_VaultCharacterPlacementH
 
 void AVaultCharacterPlacementHelper_C::OnZoomLevelUpdated__DelegateSignature(float CurrentZoomLevel)
 {
-	static auto Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "OnZoomLevelUpdated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AVaultCharacterPlacementHelper_C_OnZoomLevelUpdated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VaultCharacterPlacementHelper_C", "OnZoomLevelUpdated__DelegateSignature");
+
+	Params::AVaultCharacterPlacementHelper_C_OnZoomLevelUpdated__DelegateSignature_Params Parms{};
 
 	Parms.CurrentZoomLevel = CurrentZoomLevel;
 
@@ -194,6 +239,4 @@ void AVaultCharacterPlacementHelper_C::OnZoomLevelUpdated__DelegateSignature(flo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

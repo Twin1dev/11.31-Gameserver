@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass CameraShake_Melee_Lobster_Damage.CameraShake_Melee_Lobster_Damage_C
+// (None)
+
+class UClass* UCameraShake_Melee_Lobster_Damage_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CameraShake_Melee_Lobster_Damage_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// CameraShake_Melee_Lobster_Damage_C CameraShake_Melee_Lobster_Damage.Default__CameraShake_Melee_Lobster_Damage_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCameraShake_Melee_Lobster_Damage_C* UCameraShake_Melee_Lobster_Damage_C::GetDefaultObj()
+{
+	static class UCameraShake_Melee_Lobster_Damage_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCameraShake_Melee_Lobster_Damage_C*>(UCameraShake_Melee_Lobster_Damage_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

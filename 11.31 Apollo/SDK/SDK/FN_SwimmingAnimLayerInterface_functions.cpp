@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass SwimmingAnimLayerInterface.SwimmingAnimLayerInterface_C
+// (None)
+
+class UClass* ISwimmingAnimLayerInterface_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SwimmingAnimLayerInterface_C");
+
+	return Clss;
+}
+
+
+// SwimmingAnimLayerInterface_C SwimmingAnimLayerInterface.Default__SwimmingAnimLayerInterface_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ISwimmingAnimLayerInterface_C* ISwimmingAnimLayerInterface_C::GetDefaultObj()
+{
+	static class ISwimmingAnimLayerInterface_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ISwimmingAnimLayerInterface_C*>(ISwimmingAnimLayerInterface_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SwimmingAnimLayerInterface.SwimmingAnimLayerInterface_C.SwimmingDiveJumpingLayer
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,16 +48,19 @@ namespace SDK
 
 void ISwimmingAnimLayerInterface_C::SwimmingDiveJumpingLayer(const struct FPoseLink& PassThroughSwimmingDiveJumping, struct FPoseLink* SwimmingDiveJumpingLayer)
 {
-	static auto Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingDiveJumpingLayer");
+	static class UFunction* Func = nullptr;
 
-	Params::ISwimmingAnimLayerInterface_C_SwimmingDiveJumpingLayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingDiveJumpingLayer");
+
+	Params::ISwimmingAnimLayerInterface_C_SwimmingDiveJumpingLayer_Params Parms{};
 
 	Parms.PassThroughSwimmingDiveJumping = PassThroughSwimmingDiveJumping;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (SwimmingDiveJumpingLayer != nullptr)
-		*SwimmingDiveJumpingLayer = Parms.SwimmingDiveJumpingLayer;
+		*SwimmingDiveJumpingLayer = std::move(Parms.SwimmingDiveJumpingLayer);
 
 }
 
@@ -45,16 +73,19 @@ void ISwimmingAnimLayerInterface_C::SwimmingDiveJumpingLayer(const struct FPoseL
 
 void ISwimmingAnimLayerInterface_C::SwimmingFullBodyAdditiveLayer(const struct FPoseLink& PassThroughFullBodyAdditive, struct FPoseLink* SwimmingFullBodyAdditiveLayer)
 {
-	static auto Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingFullBodyAdditiveLayer");
+	static class UFunction* Func = nullptr;
 
-	Params::ISwimmingAnimLayerInterface_C_SwimmingFullBodyAdditiveLayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingFullBodyAdditiveLayer");
+
+	Params::ISwimmingAnimLayerInterface_C_SwimmingFullBodyAdditiveLayer_Params Parms{};
 
 	Parms.PassThroughFullBodyAdditive = PassThroughFullBodyAdditive;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (SwimmingFullBodyAdditiveLayer != nullptr)
-		*SwimmingFullBodyAdditiveLayer = Parms.SwimmingFullBodyAdditiveLayer;
+		*SwimmingFullBodyAdditiveLayer = std::move(Parms.SwimmingFullBodyAdditiveLayer);
 
 }
 
@@ -76,9 +107,12 @@ void ISwimmingAnimLayerInterface_C::SwimmingFullBodyAdditiveLayer(const struct F
 
 void ISwimmingAnimLayerInterface_C::SwimmingAdditiveLayer(const struct FPoseLink& IdleAdditive_Cache, const struct FPoseLink& MovementAdditiveLayerPose_Cache, const struct FPoseLink& FullBody, float PlayMeleeAttackAOLayer, float DisableArmsHeadAdditiveCurveAlphaLayer, float DisableIKRootAdditiveCurveAlphaLayer, float LocomotionAdditiveAlphaLayer, bool IsDBNOLayer, const struct FPoseLink& UpperAndLowerBody_Cache, const struct FPoseLink& SprintingPose_PostMask_Cache, struct FPoseLink* SwimmingAdditiveLayer)
 {
-	static auto Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingAdditiveLayer");
+	static class UFunction* Func = nullptr;
 
-	Params::ISwimmingAnimLayerInterface_C_SwimmingAdditiveLayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingAdditiveLayer");
+
+	Params::ISwimmingAnimLayerInterface_C_SwimmingAdditiveLayer_Params Parms{};
 
 	Parms.IdleAdditive_Cache = IdleAdditive_Cache;
 	Parms.MovementAdditiveLayerPose_Cache = MovementAdditiveLayerPose_Cache;
@@ -94,7 +128,7 @@ void ISwimmingAnimLayerInterface_C::SwimmingAdditiveLayer(const struct FPoseLink
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (SwimmingAdditiveLayer != nullptr)
-		*SwimmingAdditiveLayer = Parms.SwimmingAdditiveLayer;
+		*SwimmingAdditiveLayer = std::move(Parms.SwimmingAdditiveLayer);
 
 }
 
@@ -109,9 +143,12 @@ void ISwimmingAnimLayerInterface_C::SwimmingAdditiveLayer(const struct FPoseLink
 
 void ISwimmingAnimLayerInterface_C::SwimmingLowerBodyLayer(const struct FPoseLink& UpperBody_Cache, const struct FPoseLink& PreUpperBodySlot_Cache, const struct FPoseLink& PassThroughSwimmingLowerBody, struct FPoseLink* SwimmingLowerBodyLayer)
 {
-	static auto Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingLowerBodyLayer");
+	static class UFunction* Func = nullptr;
 
-	Params::ISwimmingAnimLayerInterface_C_SwimmingLowerBodyLayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingLowerBodyLayer");
+
+	Params::ISwimmingAnimLayerInterface_C_SwimmingLowerBodyLayer_Params Parms{};
 
 	Parms.UpperBody_Cache = UpperBody_Cache;
 	Parms.PreUpperBodySlot_Cache = PreUpperBodySlot_Cache;
@@ -120,7 +157,7 @@ void ISwimmingAnimLayerInterface_C::SwimmingLowerBodyLayer(const struct FPoseLin
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (SwimmingLowerBodyLayer != nullptr)
-		*SwimmingLowerBodyLayer = Parms.SwimmingLowerBodyLayer;
+		*SwimmingLowerBodyLayer = std::move(Parms.SwimmingLowerBodyLayer);
 
 }
 
@@ -133,16 +170,19 @@ void ISwimmingAnimLayerInterface_C::SwimmingLowerBodyLayer(const struct FPoseLin
 
 void ISwimmingAnimLayerInterface_C::SwimmingUpperBodyPoseNonTargetingLayer(const struct FPoseLink& PassThroughSwimmingUpperBodyPoseNonTargeting, struct FPoseLink* SwimmingUpperBodyPoseNonTargetingLayer)
 {
-	static auto Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingUpperBodyPoseNonTargetingLayer");
+	static class UFunction* Func = nullptr;
 
-	Params::ISwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseNonTargetingLayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingUpperBodyPoseNonTargetingLayer");
+
+	Params::ISwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseNonTargetingLayer_Params Parms{};
 
 	Parms.PassThroughSwimmingUpperBodyPoseNonTargeting = PassThroughSwimmingUpperBodyPoseNonTargeting;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (SwimmingUpperBodyPoseNonTargetingLayer != nullptr)
-		*SwimmingUpperBodyPoseNonTargetingLayer = Parms.SwimmingUpperBodyPoseNonTargetingLayer;
+		*SwimmingUpperBodyPoseNonTargetingLayer = std::move(Parms.SwimmingUpperBodyPoseNonTargetingLayer);
 
 }
 
@@ -155,16 +195,19 @@ void ISwimmingAnimLayerInterface_C::SwimmingUpperBodyPoseNonTargetingLayer(const
 
 void ISwimmingAnimLayerInterface_C::SwimmingUpperBodyPoseTargetingLayer(const struct FPoseLink& PassThroughSwimmingUpperBodyPoseTargeting, struct FPoseLink* SwimmingUpperBodyPoseTargetingLayer)
 {
-	static auto Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingUpperBodyPoseTargetingLayer");
+	static class UFunction* Func = nullptr;
 
-	Params::ISwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseTargetingLayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingUpperBodyPoseTargetingLayer");
+
+	Params::ISwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseTargetingLayer_Params Parms{};
 
 	Parms.PassThroughSwimmingUpperBodyPoseTargeting = PassThroughSwimmingUpperBodyPoseTargeting;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (SwimmingUpperBodyPoseTargetingLayer != nullptr)
-		*SwimmingUpperBodyPoseTargetingLayer = Parms.SwimmingUpperBodyPoseTargetingLayer;
+		*SwimmingUpperBodyPoseTargetingLayer = std::move(Parms.SwimmingUpperBodyPoseTargetingLayer);
 
 }
 
@@ -177,16 +220,19 @@ void ISwimmingAnimLayerInterface_C::SwimmingUpperBodyPoseTargetingLayer(const st
 
 void ISwimmingAnimLayerInterface_C::SwimmingSprintLayer(const struct FPoseLink& PassThroughSwimmingSprint, struct FPoseLink* SwimmingSprintLayer)
 {
-	static auto Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingSprintLayer");
+	static class UFunction* Func = nullptr;
 
-	Params::ISwimmingAnimLayerInterface_C_SwimmingSprintLayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingSprintLayer");
+
+	Params::ISwimmingAnimLayerInterface_C_SwimmingSprintLayer_Params Parms{};
 
 	Parms.PassThroughSwimmingSprint = PassThroughSwimmingSprint;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (SwimmingSprintLayer != nullptr)
-		*SwimmingSprintLayer = Parms.SwimmingSprintLayer;
+		*SwimmingSprintLayer = std::move(Parms.SwimmingSprintLayer);
 
 }
 
@@ -199,16 +245,19 @@ void ISwimmingAnimLayerInterface_C::SwimmingSprintLayer(const struct FPoseLink& 
 
 void ISwimmingAnimLayerInterface_C::SwimmingMovementAdditiveLayerPose(const struct FPoseLink& PassThroughSwimmingMovementAdditive, struct FPoseLink* SwimmingMovementAdditiveLayerPose)
 {
-	static auto Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingMovementAdditiveLayerPose");
+	static class UFunction* Func = nullptr;
 
-	Params::ISwimmingAnimLayerInterface_C_SwimmingMovementAdditiveLayerPose_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingMovementAdditiveLayerPose");
+
+	Params::ISwimmingAnimLayerInterface_C_SwimmingMovementAdditiveLayerPose_Params Parms{};
 
 	Parms.PassThroughSwimmingMovementAdditive = PassThroughSwimmingMovementAdditive;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (SwimmingMovementAdditiveLayerPose != nullptr)
-		*SwimmingMovementAdditiveLayerPose = Parms.SwimmingMovementAdditiveLayerPose;
+		*SwimmingMovementAdditiveLayerPose = std::move(Parms.SwimmingMovementAdditiveLayerPose);
 
 }
 
@@ -221,21 +270,22 @@ void ISwimmingAnimLayerInterface_C::SwimmingMovementAdditiveLayerPose(const stru
 
 void ISwimmingAnimLayerInterface_C::SwimmingLayer(const struct FPoseLink& MainPlayerAnimBP, struct FPoseLink* SwimmingLayer)
 {
-	static auto Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingLayer");
+	static class UFunction* Func = nullptr;
 
-	Params::ISwimmingAnimLayerInterface_C_SwimmingLayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SwimmingAnimLayerInterface_C", "SwimmingLayer");
+
+	Params::ISwimmingAnimLayerInterface_C_SwimmingLayer_Params Parms{};
 
 	Parms.MainPlayerAnimBP = MainPlayerAnimBP;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (SwimmingLayer != nullptr)
-		*SwimmingLayer = Parms.SwimmingLayer;
+		*SwimmingLayer = std::move(Parms.SwimmingLayer);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

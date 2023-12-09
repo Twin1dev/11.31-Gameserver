@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_AthenaMapMarkerBase.B_AthenaMapMarkerBase_C
+// (Actor)
+
+class UClass* AB_AthenaMapMarkerBase_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_AthenaMapMarkerBase_C");
+
+	return Clss;
+}
+
+
+// B_AthenaMapMarkerBase_C B_AthenaMapMarkerBase.Default__B_AthenaMapMarkerBase_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_AthenaMapMarkerBase_C* AB_AthenaMapMarkerBase_C::GetDefaultObj()
+{
+	static class AB_AthenaMapMarkerBase_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_AthenaMapMarkerBase_C*>(AB_AthenaMapMarkerBase_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_AthenaMapMarkerBase.B_AthenaMapMarkerBase_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void AB_AthenaMapMarkerBase_C::UserConstructionScript(class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_AthenaMapMarkerBase_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "UserConstructionScript");
+
+	Params::AB_AthenaMapMarkerBase_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
 
@@ -39,12 +67,14 @@ void AB_AthenaMapMarkerBase_C::UserConstructionScript(class UMaterialInstanceDyn
 
 void AB_AthenaMapMarkerBase_C::SpawnMarkerAnim__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "SpawnMarkerAnim__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_AthenaMapMarkerBase_C_SpawnMarkerAnim__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "SpawnMarkerAnim__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void AB_AthenaMapMarkerBase_C::SpawnMarkerAnim__FinishedFunc()
 
 void AB_AthenaMapMarkerBase_C::SpawnMarkerAnim__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "SpawnMarkerAnim__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_AthenaMapMarkerBase_C_SpawnMarkerAnim__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "SpawnMarkerAnim__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -71,12 +103,14 @@ void AB_AthenaMapMarkerBase_C::SpawnMarkerAnim__UpdateFunc()
 
 void AB_AthenaMapMarkerBase_C::OnProtoMarkerPlaced__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "OnProtoMarkerPlaced__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_AthenaMapMarkerBase_C_OnProtoMarkerPlaced__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "OnProtoMarkerPlaced__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -87,12 +121,14 @@ void AB_AthenaMapMarkerBase_C::OnProtoMarkerPlaced__FinishedFunc()
 
 void AB_AthenaMapMarkerBase_C::OnProtoMarkerPlaced__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "OnProtoMarkerPlaced__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_AthenaMapMarkerBase_C_OnProtoMarkerPlaced__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "OnProtoMarkerPlaced__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -103,12 +139,14 @@ void AB_AthenaMapMarkerBase_C::OnProtoMarkerPlaced__UpdateFunc()
 
 void AB_AthenaMapMarkerBase_C::OnMarkerPlaced()
 {
-	static auto Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "OnMarkerPlaced");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_AthenaMapMarkerBase_C_OnMarkerPlaced_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "OnMarkerPlaced");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -120,9 +158,12 @@ void AB_AthenaMapMarkerBase_C::OnMarkerPlaced()
 
 void AB_AthenaMapMarkerBase_C::OnSetupMarker(struct FFortWorldMarkerData& MarkerData)
 {
-	static auto Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "OnSetupMarker");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_AthenaMapMarkerBase_C_OnSetupMarker_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "OnSetupMarker");
+
+	Params::AB_AthenaMapMarkerBase_C_OnSetupMarker_Params Parms{};
 
 	Parms.MarkerData = MarkerData;
 
@@ -138,9 +179,12 @@ void AB_AthenaMapMarkerBase_C::OnSetupMarker(struct FFortWorldMarkerData& Marker
 
 void AB_AthenaMapMarkerBase_C::OnMarkerColorChanged(const struct FLinearColor& InColor)
 {
-	static auto Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "OnMarkerColorChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_AthenaMapMarkerBase_C_OnMarkerColorChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "OnMarkerColorChanged");
+
+	Params::AB_AthenaMapMarkerBase_C_OnMarkerColorChanged_Params Parms{};
 
 	Parms.InColor = InColor;
 
@@ -179,9 +223,12 @@ void AB_AthenaMapMarkerBase_C::OnMarkerColorChanged(const struct FLinearColor& I
 
 void AB_AthenaMapMarkerBase_C::ExecuteUbergraph_B_AthenaMapMarkerBase(int32 EntryPoint, bool Temp_bool_Variable, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, bool Temp_bool_Variable_3, const struct FFortWorldMarkerData& K2Node_Event_MarkerData, bool CallFunc_EqualEqual_ByteByte_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue, bool Temp_bool_Variable_4, enum class EFortWorldMarkerType Temp_byte_Variable, bool K2Node_Select_Default, float CallFunc_Lerp_ReturnValue, float CallFunc_Lerp_ReturnValue_1, float CallFunc_Lerp_ReturnValue_2, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_1, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, const struct FLinearColor& K2Node_Event_InColor, const struct FLinearColor& CallFunc_Multiply_LinearColorFloat_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "ExecuteUbergraph_B_AthenaMapMarkerBase");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_AthenaMapMarkerBase_C", "ExecuteUbergraph_B_AthenaMapMarkerBase");
+
+	Params::AB_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -214,6 +261,4 @@ void AB_AthenaMapMarkerBase_C::ExecuteUbergraph_B_AthenaMapMarkerBase(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaLobby.AthenaLobby_C
+// (None)
+
+class UClass* UAthenaLobby_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaLobby_C");
+
+	return Clss;
+}
+
+
+// AthenaLobby_C AthenaLobby.Default__AthenaLobby_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaLobby_C* UAthenaLobby_C::GetDefaultObj()
+{
+	static class UAthenaLobby_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaLobby_C*>(UAthenaLobby_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AthenaLobby.AthenaLobby_C.HandleLobbyColorSchemeChange
@@ -29,9 +54,12 @@ namespace SDK
 
 void UAthenaLobby_C::HandleLobbyColorSchemeChange(const struct FLinearColor& NewColorScheme, bool UseDefaultScheme, const struct FLinearColor& Temp_struct_Variable, class UAthenaLobbyMatchmakingPlay_C* K2Node_DynamicCast_AsAthena_Lobby_Matchmaking_Play, bool K2Node_DynamicCast_bSuccess, bool Temp_bool_Variable, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, const struct FLinearColor& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "HandleLobbyColorSchemeChange");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_HandleLobbyColorSchemeChange_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "HandleLobbyColorSchemeChange");
+
+	Params::UAthenaLobby_C_HandleLobbyColorSchemeChange_Params Parms{};
 
 	Parms.NewColorScheme = NewColorScheme;
 	Parms.UseDefaultScheme = UseDefaultScheme;
@@ -51,19 +79,22 @@ void UAthenaLobby_C::HandleLobbyColorSchemeChange(const struct FLinearColor& New
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable                                               ()
+// class FText                        Temp_text_Variable                                               (None)
 // TScriptInterface<class IFortClientAnnouncement_TutorialInterface>K2Node_DynamicCast_AsFort_Client_Announcement_Tutorial_Interface (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortRuntimeOptions*         CallFunc_GetRuntimeOptions_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetLobbyGenericLinkButtonOverrideText_ReturnValue       ()
+// class FText                        CallFunc_GetLobbyGenericLinkButtonOverrideText_ReturnValue       (None)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        K2Node_Select_Default                                            (None)
 
 void UAthenaLobby_C::ConfigureGenericLinkButton(bool Temp_bool_Variable, class FText Temp_text_Variable, TScriptInterface<class IFortClientAnnouncement_TutorialInterface> K2Node_DynamicCast_AsFort_Client_Announcement_Tutorial_Interface, bool K2Node_DynamicCast_bSuccess, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, class FText CallFunc_GetLobbyGenericLinkButtonOverrideText_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, class FText K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "ConfigureGenericLinkButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_ConfigureGenericLinkButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "ConfigureGenericLinkButton");
+
+	Params::UAthenaLobby_C_ConfigureGenericLinkButton_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_text_Variable = Temp_text_Variable;
@@ -94,9 +125,12 @@ void UAthenaLobby_C::ConfigureGenericLinkButton(bool Temp_bool_Variable, class F
 
 void UAthenaLobby_C::ShowPicker(enum class EFortPickerMode Mode, int32 InitialOption, bool IgnoreFirstAccept, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, enum class ESlateVisibility CallFunc_GetVisibility_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, class UAthenaFrontEndRadialPicker_C* K2Node_DynamicCast_AsAthena_Front_End_Radial_Picker, bool K2Node_DynamicCast_bSuccess, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "ShowPicker");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_ShowPicker_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "ShowPicker");
+
+	Params::UAthenaLobby_C_ShowPicker_Params Parms{};
 
 	Parms.Mode = Mode;
 	Parms.InitialOption = InitialOption;
@@ -122,9 +156,12 @@ void UAthenaLobby_C::ShowPicker(enum class EFortPickerMode Mode, int32 InitialOp
 
 void UAthenaLobby_C::StartAthenaLobbyMusic(TArray<class AFort_Entry_Music_Controller_BP_C*>& CallFunc_GetAllActorsOfClass_OutActors, class AFort_Entry_Music_Controller_BP_C* CallFunc_Array_Get_Item, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "StartAthenaLobbyMusic");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_StartAthenaLobbyMusic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "StartAthenaLobbyMusic");
+
+	Params::UAthenaLobby_C_StartAthenaLobbyMusic_Params Parms{};
 
 	Parms.CallFunc_GetAllActorsOfClass_OutActors = CallFunc_GetAllActorsOfClass_OutActors;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
@@ -141,12 +178,14 @@ void UAthenaLobby_C::StartAthenaLobbyMusic(TArray<class AFort_Entry_Music_Contro
 
 void UAthenaLobby_C::OnFailure_DA5E62624D068772EA890193344BA4AE()
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "OnFailure_DA5E62624D068772EA890193344BA4AE");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_OnFailure_DA5E62624D068772EA890193344BA4AE_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "OnFailure_DA5E62624D068772EA890193344BA4AE");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -157,12 +196,14 @@ void UAthenaLobby_C::OnFailure_DA5E62624D068772EA890193344BA4AE()
 
 void UAthenaLobby_C::OnSuccess_DA5E62624D068772EA890193344BA4AE()
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "OnSuccess_DA5E62624D068772EA890193344BA4AE");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_OnSuccess_DA5E62624D068772EA890193344BA4AE_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "OnSuccess_DA5E62624D068772EA890193344BA4AE");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -174,9 +215,12 @@ void UAthenaLobby_C::OnSuccess_DA5E62624D068772EA890193344BA4AE()
 
 void UAthenaLobby_C::OnComplete_CDEE9407403C60D364D45989D2D2A8CE(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "OnComplete_CDEE9407403C60D364D45989D2D2A8CE");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_OnComplete_CDEE9407403C60D364D45989D2D2A8CE_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "OnComplete_CDEE9407403C60D364D45989D2D2A8CE");
+
+	Params::UAthenaLobby_C_OnComplete_CDEE9407403C60D364D45989D2D2A8CE_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -192,9 +236,12 @@ void UAthenaLobby_C::OnComplete_CDEE9407403C60D364D45989D2D2A8CE(class UUserWidg
 
 void UAthenaLobby_C::BndEvt__ShadowPlayHighlights_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "BndEvt__ShadowPlayHighlights_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_BndEvt__ShadowPlayHighlights_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "BndEvt__ShadowPlayHighlights_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaLobby_C_BndEvt__ShadowPlayHighlights_K2Node_ComponentBoundEvent_116_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -209,12 +256,14 @@ void UAthenaLobby_C::BndEvt__ShadowPlayHighlights_K2Node_ComponentBoundEvent_116
 
 void UAthenaLobby_C::Destruct()
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -225,12 +274,14 @@ void UAthenaLobby_C::Destruct()
 
 void UAthenaLobby_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -241,12 +292,14 @@ void UAthenaLobby_C::Construct()
 
 void UAthenaLobby_C::ShowMobileAutoFireScreen()
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "ShowMobileAutoFireScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_ShowMobileAutoFireScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "ShowMobileAutoFireScreen");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -257,12 +310,14 @@ void UAthenaLobby_C::ShowMobileAutoFireScreen()
 
 void UAthenaLobby_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -274,9 +329,12 @@ void UAthenaLobby_C::BP_OnDeactivated()
 
 void UAthenaLobby_C::DisplayStoreUpdated(class UStoreToastRequest* StoreUpdatedRequest)
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "DisplayStoreUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_DisplayStoreUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "DisplayStoreUpdated");
+
+	Params::UAthenaLobby_C_DisplayStoreUpdated_Params Parms{};
 
 	Parms.StoreUpdatedRequest = StoreUpdatedRequest;
 
@@ -291,12 +349,14 @@ void UAthenaLobby_C::DisplayStoreUpdated(class UStoreToastRequest* StoreUpdatedR
 
 void UAthenaLobby_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -307,12 +367,14 @@ void UAthenaLobby_C::BP_OnActivated()
 
 void UAthenaLobby_C::AttemptToShowToast()
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "AttemptToShowToast");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_AttemptToShowToast_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "AttemptToShowToast");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -323,12 +385,14 @@ void UAthenaLobby_C::AttemptToShowToast()
 
 void UAthenaLobby_C::TryToastAgainNextFrame()
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "TryToastAgainNextFrame");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_TryToastAgainNextFrame_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "TryToastAgainNextFrame");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -339,12 +403,14 @@ void UAthenaLobby_C::TryToastAgainNextFrame()
 
 void UAthenaLobby_C::BndEvt__StoreToastWidget_K2Node_ComponentBoundEvent_2_OnFinishedToast__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "BndEvt__StoreToastWidget_K2Node_ComponentBoundEvent_2_OnFinishedToast__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_BndEvt__StoreToastWidget_K2Node_ComponentBoundEvent_2_OnFinishedToast__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "BndEvt__StoreToastWidget_K2Node_ComponentBoundEvent_2_OnFinishedToast__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -357,9 +423,12 @@ void UAthenaLobby_C::BndEvt__StoreToastWidget_K2Node_ComponentBoundEvent_2_OnFin
 
 void UAthenaLobby_C::OnPlaylistChanged(enum class EFortLobbyType LobbyType, class UFortPlaylistAthena* PlaylistData)
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "OnPlaylistChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_OnPlaylistChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "OnPlaylistChanged");
+
+	Params::UAthenaLobby_C_OnPlaylistChanged_Params Parms{};
 
 	Parms.LobbyType = LobbyType;
 	Parms.PlaylistData = PlaylistData;
@@ -376,9 +445,12 @@ void UAthenaLobby_C::OnPlaylistChanged(enum class EFortLobbyType LobbyType, clas
 
 void UAthenaLobby_C::DisplayGlyphQuestUpdated(int32 NewGlyphs)
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "DisplayGlyphQuestUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_DisplayGlyphQuestUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "DisplayGlyphQuestUpdated");
+
+	Params::UAthenaLobby_C_DisplayGlyphQuestUpdated_Params Parms{};
 
 	Parms.NewGlyphs = NewGlyphs;
 
@@ -424,7 +496,7 @@ void UAthenaLobby_C::DisplayGlyphQuestUpdated(int32 NewGlyphs)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UStoreToastRequest*          K2Node_Event_StoreUpdatedRequest                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_ShouldBeginRequest_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FStoreCallout               CallFunc_GetToast_ReturnValue                                    ()
+// struct FStoreCallout               CallFunc_GetToast_ReturnValue                                    (None)
 // bool                               CallFunc_IsRequestReady_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsActivated_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -445,9 +517,12 @@ void UAthenaLobby_C::DisplayGlyphQuestUpdated(int32 NewGlyphs)
 
 void UAthenaLobby_C::ExecuteUbergraph_AthenaLobby(int32 EntryPoint, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortPickerContext* CallFunc_GetContext_ReturnValue_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, enum class EFortLobbyType Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility Temp_byte_Variable_4, enum class EFortLobbyType Temp_byte_Variable_5, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_2, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UFortAsyncAction_EnsureClientQuestLogin* CallFunc_SendEnsureClientQuestLogin_ReturnValue, class UUserWidget* K2Node_CustomEvent_UserWidget, bool CallFunc_IsValid_ReturnValue, class UUserWidget* Temp_object_Variable, class UHUDLayoutToolFireModePanel_C* K2Node_DynamicCast_AsHUDLayout_Tool_Fire_Mode_Panel, bool K2Node_DynamicCast_bSuccess, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_IsBROnly_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin, bool CallFunc_BooleanAND_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin_1, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_3, bool Temp_bool_Variable, const struct FMargin& K2Node_Select_Default, bool CallFunc_IsValid_ReturnValue_1, class UStoreToastRequest* K2Node_Event_StoreUpdatedRequest, bool CallFunc_ShouldBeginRequest_ReturnValue, const struct FStoreCallout& CallFunc_GetToast_ReturnValue, bool CallFunc_IsRequestReady_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsActivated_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, enum class EFortLobbyType K2Node_Event_LobbyType, class UFortPlaylistAthena* K2Node_Event_PlaylistData, enum class ESlateVisibility K2Node_Select_Default_1, bool K2Node_SwitchEnum_CmpSuccess, class UAthenaMatchmakingPlayLegacy_C* K2Node_DynamicCast_AsAthena_Matchmaking_Play_Legacy, bool K2Node_DynamicCast_bSuccess_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, int32 K2Node_Event_NewGlyphs, class UWidget* K2Node_Select_Default_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue, bool CallFunc_IsValid_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("AthenaLobby_C", "ExecuteUbergraph_AthenaLobby");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLobby_C_ExecuteUbergraph_AthenaLobby_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLobby_C", "ExecuteUbergraph_AthenaLobby");
+
+	Params::UAthenaLobby_C_ExecuteUbergraph_AthenaLobby_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -508,6 +583,4 @@ void UAthenaLobby_C::ExecuteUbergraph_AthenaLobby(int32 EntryPoint, class UCommo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

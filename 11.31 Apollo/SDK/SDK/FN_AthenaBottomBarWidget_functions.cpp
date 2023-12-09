@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaBottomBarWidget.AthenaBottomBarWidget_C
+// (None)
+
+class UClass* UAthenaBottomBarWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaBottomBarWidget_C");
+
+	return Clss;
+}
+
+
+// AthenaBottomBarWidget_C AthenaBottomBarWidget.Default__AthenaBottomBarWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaBottomBarWidget_C* UAthenaBottomBarWidget_C::GetDefaultObj()
+{
+	static class UAthenaBottomBarWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaBottomBarWidget_C*>(UAthenaBottomBarWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaBottomBarWidget.AthenaBottomBarWidget_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UAthenaBottomBarWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaBottomBarWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaBottomBarWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaBottomBarWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UAthenaBottomBarWidget_C::Construct()
 
 void UAthenaBottomBarWidget_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AthenaBottomBarWidget_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaBottomBarWidget_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaBottomBarWidget_C", "PreConstruct");
+
+	Params::UAthenaBottomBarWidget_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -59,9 +89,12 @@ void UAthenaBottomBarWidget_C::PreConstruct(bool IsDesignTime)
 
 void UAthenaBottomBarWidget_C::ExecuteUbergraph_AthenaBottomBarWidget(int32 EntryPoint, bool CallFunc_IsMobileGame_ReturnValue, const struct FLinearColor& K2Node_MakeStruct_LinearColor, bool K2Node_Event_IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AthenaBottomBarWidget_C", "ExecuteUbergraph_AthenaBottomBarWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaBottomBarWidget_C_ExecuteUbergraph_AthenaBottomBarWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaBottomBarWidget_C", "ExecuteUbergraph_AthenaBottomBarWidget");
+
+	Params::UAthenaBottomBarWidget_C_ExecuteUbergraph_AthenaBottomBarWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsMobileGame_ReturnValue = CallFunc_IsMobileGame_ReturnValue;
@@ -74,6 +107,4 @@ void UAthenaBottomBarWidget_C::ExecuteUbergraph_AthenaBottomBarWidget(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

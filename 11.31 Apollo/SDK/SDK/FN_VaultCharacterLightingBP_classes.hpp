@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -43,11 +40,8 @@ public:
 	bool                                         AlwaysOn;                                          // 0x2BB(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         DebugLighting_LOWDetailPC;                         // 0x2BC(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("VaultCharacterLightingBP_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AVaultCharacterLightingBP_C* GetDefaultObj();
 
 	void SwitchPCLighting_LOWDetail(bool Visibility);
 	void SwitchPCLighting(bool Visibility);
@@ -63,6 +57,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass DualBladeMenu.DualBladeMenu_C
+// (None)
+
+class UClass* UDualBladeMenu_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DualBladeMenu_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// DualBladeMenu_C DualBladeMenu.Default__DualBladeMenu_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UDualBladeMenu_C* UDualBladeMenu_C::GetDefaultObj()
+{
+	static class UDualBladeMenu_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UDualBladeMenu_C*>(UDualBladeMenu_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_Prj_ThrownConsumable_Parent.B_Prj_ThrownConsumable_Parent_C
+// (Actor)
+
+class UClass* AB_Prj_ThrownConsumable_Parent_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Prj_ThrownConsumable_Parent_C");
+
+	return Clss;
+}
+
+
+// B_Prj_ThrownConsumable_Parent_C B_Prj_ThrownConsumable_Parent.Default__B_Prj_ThrownConsumable_Parent_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Prj_ThrownConsumable_Parent_C* AB_Prj_ThrownConsumable_Parent_C::GetDefaultObj()
+{
+	static class AB_Prj_ThrownConsumable_Parent_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Prj_ThrownConsumable_Parent_C*>(AB_Prj_ThrownConsumable_Parent_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_Prj_ThrownConsumable_Parent.B_Prj_ThrownConsumable_Parent_C.ResetSimulatedComponents
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void AB_Prj_ThrownConsumable_Parent_C::ResetSimulatedComponents()
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "ResetSimulatedComponents");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_Parent_C_ResetSimulatedComponents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "ResetSimulatedComponents");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AB_Prj_ThrownConsumable_Parent_C::ResetSimulatedComponents()
 
 void AB_Prj_ThrownConsumable_Parent_C::OnRep_bSimulationRunning()
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "OnRep_bSimulationRunning");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_Parent_C_OnRep_bSimulationRunning_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "OnRep_bSimulationRunning");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -60,9 +89,12 @@ void AB_Prj_ThrownConsumable_Parent_C::OnRep_bSimulationRunning()
 
 void AB_Prj_ThrownConsumable_Parent_C::SetBounceVelocityPawn(const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_Abs_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "SetBounceVelocityPawn");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_Parent_C_SetBounceVelocityPawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "SetBounceVelocityPawn");
+
+	Params::AB_Prj_ThrownConsumable_Parent_C_SetBounceVelocityPawn_Params Parms{};
 
 	Parms.CallFunc_Multiply_VectorFloat_ReturnValue = CallFunc_Multiply_VectorFloat_ReturnValue;
 	Parms.CallFunc_BreakVector_X = CallFunc_BreakVector_X;
@@ -88,9 +120,12 @@ void AB_Prj_ThrownConsumable_Parent_C::SetBounceVelocityPawn(const struct FVecto
 
 void AB_Prj_ThrownConsumable_Parent_C::SetBounceVelocity(const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, float CallFunc_VSize_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "SetBounceVelocity");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_Parent_C_SetBounceVelocity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "SetBounceVelocity");
+
+	Params::AB_Prj_ThrownConsumable_Parent_C_SetBounceVelocity_Params Parms{};
 
 	Parms.CallFunc_Multiply_VectorFloat_ReturnValue = CallFunc_Multiply_VectorFloat_ReturnValue;
 	Parms.CallFunc_VSize_ReturnValue = CallFunc_VSize_ReturnValue;
@@ -109,12 +144,14 @@ void AB_Prj_ThrownConsumable_Parent_C::SetBounceVelocity(const struct FVector& C
 
 void AB_Prj_ThrownConsumable_Parent_C::FuseEnded()
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "FuseEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_Parent_C_FuseEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "FuseEnded");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -129,9 +166,12 @@ void AB_Prj_ThrownConsumable_Parent_C::FuseEnded()
 
 void AB_Prj_ThrownConsumable_Parent_C::ReceiveAnyDamage(float Damage, class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "ReceiveAnyDamage");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_Parent_C_ReceiveAnyDamage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "ReceiveAnyDamage");
+
+	Params::AB_Prj_ThrownConsumable_Parent_C_ReceiveAnyDamage_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageType = DamageType;
@@ -155,9 +195,12 @@ void AB_Prj_ThrownConsumable_Parent_C::ReceiveAnyDamage(float Damage, class UDam
 
 void AB_Prj_ThrownConsumable_Parent_C::BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, struct FHitResult& SweepResult)
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_Parent_C_BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+
+	Params::AB_Prj_ThrownConsumable_Parent_C_BndEvt__CapsuleComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature_Params Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -178,9 +221,12 @@ void AB_Prj_ThrownConsumable_Parent_C::BndEvt__CapsuleComponent_K2Node_Component
 
 void AB_Prj_ThrownConsumable_Parent_C::BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature(struct FHitResult& ImpactResult)
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_Parent_C_BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature");
+
+	Params::AB_Prj_ThrownConsumable_Parent_C_BndEvt__ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature_Params Parms{};
 
 	Parms.ImpactResult = ImpactResult;
 
@@ -203,9 +249,12 @@ void AB_Prj_ThrownConsumable_Parent_C::BndEvt__ProjectileMovementComponent_K2Nod
 
 void AB_Prj_ThrownConsumable_Parent_C::Event_BuildingActorDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "Event_BuildingActorDied");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_Parent_C_Event_BuildingActorDied_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "Event_BuildingActorDied");
+
+	Params::AB_Prj_ThrownConsumable_Parent_C_Event_BuildingActorDied_Params Parms{};
 
 	Parms.DamagedActor = DamagedActor;
 	Parms.Damage = Damage;
@@ -228,9 +277,12 @@ void AB_Prj_ThrownConsumable_Parent_C::Event_BuildingActorDied(class AActor* Dam
 
 void AB_Prj_ThrownConsumable_Parent_C::Event_OnVehicleDestroyed(class AActor* DestroyedActor)
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "Event_OnVehicleDestroyed");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_Parent_C_Event_OnVehicleDestroyed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "Event_OnVehicleDestroyed");
+
+	Params::AB_Prj_ThrownConsumable_Parent_C_Event_OnVehicleDestroyed_Params Parms{};
 
 	Parms.DestroyedActor = DestroyedActor;
 
@@ -245,12 +297,14 @@ void AB_Prj_ThrownConsumable_Parent_C::Event_OnVehicleDestroyed(class AActor* De
 
 void AB_Prj_ThrownConsumable_Parent_C::RestartSimulating()
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "RestartSimulating");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_Parent_C_RestartSimulating_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "RestartSimulating");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -262,9 +316,12 @@ void AB_Prj_ThrownConsumable_Parent_C::RestartSimulating()
 
 void AB_Prj_ThrownConsumable_Parent_C::OnBounce(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "OnBounce");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_Parent_C_OnBounce_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "OnBounce");
+
+	Params::AB_Prj_ThrownConsumable_Parent_C_OnBounce_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -281,9 +338,12 @@ void AB_Prj_ThrownConsumable_Parent_C::OnBounce(struct FHitResult& Hit)
 
 void AB_Prj_ThrownConsumable_Parent_C::OnExploded(TArray<class AActor*>& HitActors, TArray<struct FHitResult>& HitResults)
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "OnExploded");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_Parent_C_OnExploded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "OnExploded");
+
+	Params::AB_Prj_ThrownConsumable_Parent_C_OnExploded_Params Parms{};
 
 	Parms.HitActors = HitActors;
 	Parms.HitResults = HitResults;
@@ -299,12 +359,14 @@ void AB_Prj_ThrownConsumable_Parent_C::OnExploded(TArray<class AActor*>& HitActo
 
 void AB_Prj_ThrownConsumable_Parent_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_Parent_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -405,9 +467,12 @@ void AB_Prj_ThrownConsumable_Parent_C::ReceiveBeginPlay()
 
 void AB_Prj_ThrownConsumable_Parent_C::ExecuteUbergraph_B_Prj_ThrownConsumable_Parent(int32 EntryPoint, class APawn* CallFunc_GetInstigator_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, float K2Node_Event_Damage, class UDamageType* K2Node_Event_DamageType, class AController* K2Node_Event_InstigatedBy, class AActor* K2Node_Event_DamageCauser, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent, class AActor* K2Node_ComponentBoundEvent_OtherActor, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp, int32 K2Node_ComponentBoundEvent_OtherBodyIndex, bool K2Node_ComponentBoundEvent_bFromSweep, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, class APawn* K2Node_DynamicCast_AsPawn, bool K2Node_DynamicCast_bSuccess, const struct FHitResult& K2Node_ComponentBoundEvent_ImpactResult, bool CallFunc_BreakHitResult_bBlockingHit_1, bool CallFunc_BreakHitResult_bInitialOverlap_1, float CallFunc_BreakHitResult_Time_1, float CallFunc_BreakHitResult_Distance_1, const struct FVector& CallFunc_BreakHitResult_Location_1, const struct FVector& CallFunc_BreakHitResult_ImpactPoint_1, const struct FVector& CallFunc_BreakHitResult_Normal_1, const struct FVector& CallFunc_BreakHitResult_ImpactNormal_1, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat_1, class AActor* CallFunc_BreakHitResult_HitActor_1, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent_1, class FName CallFunc_BreakHitResult_HitBoneName_1, int32 CallFunc_BreakHitResult_HitItem_1, int32 CallFunc_BreakHitResult_FaceIndex_1, const struct FVector& CallFunc_BreakHitResult_TraceStart_1, const struct FVector& CallFunc_BreakHitResult_TraceEnd_1, class AActor* K2Node_CustomEvent_DamagedActor, float K2Node_CustomEvent_Damage, class AController* K2Node_CustomEvent_InstigatedBy, class AActor* K2Node_CustomEvent_DamageCauser, const struct FVector& K2Node_CustomEvent_HitLocation, class UPrimitiveComponent* K2Node_CustomEvent_FHitComponent, class FName K2Node_CustomEvent_BoneName, const struct FVector& K2Node_CustomEvent_Momentum, TScriptInterface<class IFortVehicleInterface> K2Node_DynamicCast_AsFort_Vehicle_Interface, bool K2Node_DynamicCast_bSuccess_1, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor, bool K2Node_DynamicCast_bSuccess_2, class AActor* CallFunc_GetVehicleActorPtrConst_ReturnValue, class AActor* K2Node_CustomEvent_DestroyedActor, class APawn* CallFunc_GetInstigator_ReturnValue_1, bool CallFunc_NotEqual_ObjectObject_ReturnValue, const struct FHitResult& K2Node_Event_Hit, bool CallFunc_BreakHitResult_bBlockingHit_2, bool CallFunc_BreakHitResult_bInitialOverlap_2, float CallFunc_BreakHitResult_Time_2, float CallFunc_BreakHitResult_Distance_2, const struct FVector& CallFunc_BreakHitResult_Location_2, const struct FVector& CallFunc_BreakHitResult_ImpactPoint_2, const struct FVector& CallFunc_BreakHitResult_Normal_2, const struct FVector& CallFunc_BreakHitResult_ImpactNormal_2, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat_2, class AActor* CallFunc_BreakHitResult_HitActor_2, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent_2, class FName CallFunc_BreakHitResult_HitBoneName_2, int32 CallFunc_BreakHitResult_HitItem_2, int32 CallFunc_BreakHitResult_FaceIndex_2, const struct FVector& CallFunc_BreakHitResult_TraceStart_2, const struct FVector& CallFunc_BreakHitResult_TraceEnd_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_ComponentHasTag_ReturnValue, class APawn* K2Node_DynamicCast_AsPawn_1, bool K2Node_DynamicCast_bSuccess_3, TArray<class AActor*>& K2Node_Event_HitActors, TArray<struct FHitResult>& K2Node_Event_HitResults, bool CallFunc_NotEqual_ObjectObject_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2)
 {
-	static auto Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "ExecuteUbergraph_B_Prj_ThrownConsumable_Parent");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_ThrownConsumable_Parent_C_ExecuteUbergraph_B_Prj_ThrownConsumable_Parent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_ThrownConsumable_Parent_C", "ExecuteUbergraph_B_Prj_ThrownConsumable_Parent");
+
+	Params::AB_Prj_ThrownConsumable_Parent_C_ExecuteUbergraph_B_Prj_ThrownConsumable_Parent_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetInstigator_ReturnValue = CallFunc_GetInstigator_ReturnValue;
@@ -506,6 +571,4 @@ void AB_Prj_ThrownConsumable_Parent_C::ExecuteUbergraph_B_Prj_ThrownConsumable_P
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

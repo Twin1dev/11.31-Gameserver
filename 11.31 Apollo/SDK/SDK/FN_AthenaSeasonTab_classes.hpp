@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -65,11 +62,11 @@ public:
 	class UCommonTextBlock*                      VariantUnlockPreviewSet;                           // 0x758(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaSeasonPageWidget_C*             CurrentPage;                                       // 0x760(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         DoNotNavigateToFirstLevel;                         // 0x768(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5DFF[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_67B7[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDataTableRowHandle                   Input_ShowAbout;                                   // 0x770(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	struct FDataTableRowHandle                   Input_GiftBattlePass;                              // 0x780(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	enum class ECommonInputType                  CurrentInputType;                                  // 0x790(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5E00[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_67B8[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        MaxTranslationAmount;                              // 0x794(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        TouchTranslationPercent;                           // 0x798(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        TranslationDecayRate;                              // 0x79C(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -83,16 +80,13 @@ public:
 	class UActivatableMovieWidget_C*             ActivatableMovieWidget;                            // 0x7E0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UAthenaSeasonPaginationPips_C*> PaginationArray;                                   // 0x7E8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 	bool                                         IsLabelVisible;                                    // 0x7F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5E01[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_67B9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UUserWidget*>                   DyamicPipArray;                                    // 0x800(0x10)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference)
 	struct FDataTableRowHandle                   Input_ShowFAQ;                                     // 0x810(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                         HasDisplayedUpsell;                                // 0x820(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaSeasonTab_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaSeasonTab_C* GetDefaultObj();
 
 	void PlayOverviewVideo(class UBattlePassOverviewVideo_C* CallFunc_Create_ReturnValue, bool CallFunc_LoadVideo_ReturnValue);
 	void IntroAnim(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
@@ -161,6 +155,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GAT_Athena_Enemy_SneakySnowman.GAT_Athena_Enemy_SneakySnowman_C
+// (None)
+
+class UClass* UGAT_Athena_Enemy_SneakySnowman_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAT_Athena_Enemy_SneakySnowman_C");
+
+	return Clss;
+}
+
+
+// GAT_Athena_Enemy_SneakySnowman_C GAT_Athena_Enemy_SneakySnowman.Default__GAT_Athena_Enemy_SneakySnowman_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAT_Athena_Enemy_SneakySnowman_C* UGAT_Athena_Enemy_SneakySnowman_C::GetDefaultObj()
+{
+	static class UGAT_Athena_Enemy_SneakySnowman_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAT_Athena_Enemy_SneakySnowman_C*>(UGAT_Athena_Enemy_SneakySnowman_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GAT_Athena_Enemy_SneakySnowman.GAT_Athena_Enemy_SneakySnowman_C.Remove Snowman
@@ -32,9 +57,12 @@ namespace SDK
 
 void UGAT_Athena_Enemy_SneakySnowman_C::Remove_Snowman(class AFortPlayerPawn* PlayerPawn, TArray<class AActor*>& CallFunc_GetAttachedActors_OutActors, int32 Temp_int_Array_Index_Variable, int32 CallFunc_Array_Length_ReturnValue, class AActor* CallFunc_Array_Get_Item, class AAthena_Enemy_Player_SneakySnowman_C* K2Node_DynamicCast_AsAthena_Enemy_Player_Sneaky_Snowman, bool K2Node_DynamicCast_bSuccess, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAT_Athena_Enemy_SneakySnowman_C", "Remove Snowman");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_Athena_Enemy_SneakySnowman_C_Remove_Snowman_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_Athena_Enemy_SneakySnowman_C", "Remove Snowman");
+
+	Params::UGAT_Athena_Enemy_SneakySnowman_C_Remove_Snowman_Params Parms{};
 
 	Parms.PlayerPawn = PlayerPawn;
 	Parms.CallFunc_GetAttachedActors_OutActors = CallFunc_GetAttachedActors_OutActors;
@@ -59,12 +87,14 @@ void UGAT_Athena_Enemy_SneakySnowman_C::Remove_Snowman(class AFortPlayerPawn* Pl
 
 void UGAT_Athena_Enemy_SneakySnowman_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GAT_Athena_Enemy_SneakySnowman_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_Athena_Enemy_SneakySnowman_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_Athena_Enemy_SneakySnowman_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -77,14 +107,17 @@ void UGAT_Athena_Enemy_SneakySnowman_C::K2_ActivateAbility()
 // struct FGameplayAbilityActorInfo   CallFunc_GetActorInfo_ReturnValue                                (ContainsInstancedReference)
 // class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  ()
+// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  (None)
 // TArray<struct FActiveGameplayEffectHandle>CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue              (ZeroConstructor, ReferenceParm)
 
 void UGAT_Athena_Enemy_SneakySnowman_C::ExecuteUbergraph_GAT_Athena_Enemy_SneakySnowman(int32 EntryPoint, bool CallFunc_K2_CommitAbility_ReturnValue, const struct FGameplayAbilityActorInfo& CallFunc_GetActorInfo_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FGameplayAbilityTargetDataHandle& CallFunc_AbilityTargetDataFromActor_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAT_Athena_Enemy_SneakySnowman_C", "ExecuteUbergraph_GAT_Athena_Enemy_SneakySnowman");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_Athena_Enemy_SneakySnowman_C_ExecuteUbergraph_GAT_Athena_Enemy_SneakySnowman_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_Athena_Enemy_SneakySnowman_C", "ExecuteUbergraph_GAT_Athena_Enemy_SneakySnowman");
+
+	Params::UGAT_Athena_Enemy_SneakySnowman_C_ExecuteUbergraph_GAT_Athena_Enemy_SneakySnowman_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_K2_CommitAbility_ReturnValue = CallFunc_K2_CommitAbility_ReturnValue;
@@ -100,6 +133,4 @@ void UGAT_Athena_Enemy_SneakySnowman_C::ExecuteUbergraph_GAT_Athena_Enemy_Sneaky
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

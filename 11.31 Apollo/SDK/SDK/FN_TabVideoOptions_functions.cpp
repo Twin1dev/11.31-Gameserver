@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass TabVideoOptions.TabVideoOptions_C
+// (None)
+
+class UClass* UTabVideoOptions_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TabVideoOptions_C");
+
+	return Clss;
+}
+
+
+// TabVideoOptions_C TabVideoOptions.Default__TabVideoOptions_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTabVideoOptions_C* UTabVideoOptions_C::GetDefaultObj()
+{
+	static class UTabVideoOptions_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTabVideoOptions_C*>(UTabVideoOptions_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function TabVideoOptions.TabVideoOptions_C.Update Qualities
@@ -33,9 +58,12 @@ namespace SDK
 
 void UTabVideoOptions_C::Update_Qualities(const TArray<class FText>& NewLocalVar_0, class UFortSettingsContext* CallFunc_GetContext_ReturnValue, int32 Temp_int_Variable, int32 CallFunc_GetMaxQualityLevel_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, enum class ESettingType Temp_byte_Variable, class UFortOptionsMenuSetting* CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, class UOptionsMenuRowSelector_C* K2Node_DynamicCast_AsOptions_Menu_Row_Selector, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_C", "Update Qualities");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_C_Update_Qualities_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_C", "Update Qualities");
+
+	Params::UTabVideoOptions_C_Update_Qualities_Params Parms{};
 
 	Parms.NewLocalVar_0 = NewLocalVar_0;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -61,12 +89,14 @@ void UTabVideoOptions_C::Update_Qualities(const TArray<class FText>& NewLocalVar
 
 void UTabVideoOptions_C::Construct()
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -77,12 +107,14 @@ void UTabVideoOptions_C::Construct()
 
 void UTabVideoOptions_C::UpdateOptionsTab()
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_C", "UpdateOptionsTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_C_UpdateOptionsTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_C", "UpdateOptionsTab");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -93,12 +125,14 @@ void UTabVideoOptions_C::UpdateOptionsTab()
 
 void UTabVideoOptions_C::CenterOnTab()
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_C", "CenterOnTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_C_CenterOnTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_C", "CenterOnTab");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -109,12 +143,14 @@ void UTabVideoOptions_C::CenterOnTab()
 
 void UTabVideoOptions_C::OnGameUserSettingsUINeedsUpdate()
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_C", "OnGameUserSettingsUINeedsUpdate");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_C_OnGameUserSettingsUINeedsUpdate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_C", "OnGameUserSettingsUINeedsUpdate");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -125,12 +161,14 @@ void UTabVideoOptions_C::OnGameUserSettingsUINeedsUpdate()
 
 void UTabVideoOptions_C::Destruct()
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -142,9 +180,12 @@ void UTabVideoOptions_C::Destruct()
 
 void UTabVideoOptions_C::BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature(class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_C", "BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_C", "BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature");
+
+	Params::UTabVideoOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature_Params Parms{};
 
 	Parms.Widget = Widget;
 
@@ -161,9 +202,12 @@ void UTabVideoOptions_C::BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_On
 
 void UTabVideoOptions_C::BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature(class UObject* Item, class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_C", "BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_C", "BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature");
+
+	Params::UTabVideoOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.Widget = Widget;
@@ -180,9 +224,12 @@ void UTabVideoOptions_C::BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_On
 
 void UTabVideoOptions_C::Window_Mode_Changed(bool IsWindowedFullscreen)
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_C", "Window Mode Changed");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_C_Window_Mode_Changed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_C", "Window Mode Changed");
+
+	Params::UTabVideoOptions_C_Window_Mode_Changed_Params Parms{};
 
 	Parms.IsWindowedFullscreen = IsWindowedFullscreen;
 
@@ -198,9 +245,12 @@ void UTabVideoOptions_C::Window_Mode_Changed(bool IsWindowedFullscreen)
 
 void UTabVideoOptions_C::Quality_Changed(float Value)
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_C", "Quality Changed");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_C_Quality_Changed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_C", "Quality Changed");
+
+	Params::UTabVideoOptions_C_Quality_Changed_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -216,9 +266,12 @@ void UTabVideoOptions_C::Quality_Changed(float Value)
 
 void UTabVideoOptions_C::Setting_Value_Changed(float Value)
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_C", "Setting Value Changed");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_C_Setting_Value_Changed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_C", "Setting Value Changed");
+
+	Params::UTabVideoOptions_C_Setting_Value_Changed_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -276,9 +329,12 @@ void UTabVideoOptions_C::Setting_Value_Changed(float Value)
 
 void UTabVideoOptions_C::ExecuteUbergraph_TabVideoOptions(int32 EntryPoint, int32 Temp_int_Array_Index_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue_1, class UUserWidget* K2Node_ComponentBoundEvent_Widget_1, class UFortOptionsMenuSetting* K2Node_DynamicCast_AsFort_Options_Menu_Setting, bool K2Node_DynamicCast_bSuccess, class UObject* K2Node_ComponentBoundEvent_Item, class UUserWidget* K2Node_ComponentBoundEvent_Widget, class UFortOptionsMenuSetting* K2Node_DynamicCast_AsFort_Options_Menu_Setting_1, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, class UOptionsMenuSetting_C* K2Node_DynamicCast_AsOptions_Menu_Setting, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, bool CallFunc_EqualEqual_ByteByte_ReturnValue_3, bool CallFunc_EqualEqual_ByteByte_ReturnValue_4, bool CallFunc_BooleanOR_ReturnValue, bool K2Node_CustomEvent_IsWindowedFullscreen, class UOptionsMenuRotator_C* K2Node_DynamicCast_AsOptions_Menu_Rotator, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_Not_PreBool_ReturnValue, float K2Node_CustomEvent_Value_1, float K2Node_CustomEvent_Value, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, enum class ESlateVisibility Temp_byte_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, TArray<class UFortOptionsMenuSetting*>& CallFunc_Map_Values_Values, enum class ESlateVisibility Temp_byte_Variable_1, class UFortOptionsMenuSetting* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool Temp_bool_Variable, bool CallFunc_IsMobileGame_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class UFortSettingsContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_C", "ExecuteUbergraph_TabVideoOptions");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_C_ExecuteUbergraph_TabVideoOptions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_C", "ExecuteUbergraph_TabVideoOptions");
+
+	Params::UTabVideoOptions_C_ExecuteUbergraph_TabVideoOptions_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -335,12 +391,14 @@ void UTabVideoOptions_C::ExecuteUbergraph_TabVideoOptions(int32 EntryPoint, int3
 
 void UTabVideoOptions_C::Disable_Overlay__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_C", "Disable Overlay__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_C_Disable_Overlay__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_C", "Disable Overlay__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -352,9 +410,12 @@ void UTabVideoOptions_C::Disable_Overlay__DelegateSignature()
 
 void UTabVideoOptions_C::Enable_Overlay__DelegateSignature(bool Accept_Input)
 {
-	static auto Func = Class->GetFunction("TabVideoOptions_C", "Enable Overlay__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabVideoOptions_C_Enable_Overlay__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabVideoOptions_C", "Enable Overlay__DelegateSignature");
+
+	Params::UTabVideoOptions_C_Enable_Overlay__DelegateSignature_Params Parms{};
 
 	Parms.Accept_Input = Accept_Input;
 
@@ -364,6 +425,4 @@ void UTabVideoOptions_C::Enable_Overlay__DelegateSignature(bool Accept_Input)
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

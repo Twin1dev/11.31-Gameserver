@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GAB_GenericDeath.GAB_GenericDeath_C
+// (None)
+
+class UClass* UGAB_GenericDeath_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAB_GenericDeath_C");
+
+	return Clss;
+}
+
+
+// GAB_GenericDeath_C GAB_GenericDeath.Default__GAB_GenericDeath_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAB_GenericDeath_C* UGAB_GenericDeath_C::GetDefaultObj()
+{
+	static class UGAB_GenericDeath_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAB_GenericDeath_C*>(UGAB_GenericDeath_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GAB_GenericDeath.GAB_GenericDeath_C.GetRandomSectionName
@@ -31,9 +56,12 @@ namespace SDK
 
 void UGAB_GenericDeath_C::GetRandomSectionName(int32 MaxNumberOfSections, class FName OriginalSectionName, class FName* SectionName, int32 CallFunc_RandomInteger_ReturnValue, const class FString& CallFunc_Conv_NameToString_ReturnValue, const class FString& CallFunc_Conv_IntToString_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_1, const class FString& CallFunc_MakeLiteralString_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_C", "GetRandomSectionName");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_C_GetRandomSectionName_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_C", "GetRandomSectionName");
+
+	Params::UGAB_GenericDeath_C_GetRandomSectionName_Params Parms{};
 
 	Parms.MaxNumberOfSections = MaxNumberOfSections;
 	Parms.OriginalSectionName = OriginalSectionName;
@@ -65,9 +93,12 @@ void UGAB_GenericDeath_C::GetRandomSectionName(int32 MaxNumberOfSections, class 
 
 void UGAB_GenericDeath_C::InitializeDeathHitDirection(const struct FGameplayEventData& EventHitData, const struct FVector& CallFunc_GetImpulseData_ImpulseDirection, float CallFunc_GetImpulseData_KnockbackMagnitude, float CallFunc_GetImpulseData_KnockbackZAngle, const struct FHitResult& CallFunc_EffectContextGetHitResult_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_C", "InitializeDeathHitDirection");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_C_InitializeDeathHitDirection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_C", "InitializeDeathHitDirection");
+
+	Params::UGAB_GenericDeath_C_InitializeDeathHitDirection_Params Parms{};
 
 	Parms.EventHitData = EventHitData;
 	Parms.CallFunc_GetImpulseData_ImpulseDirection = CallFunc_GetImpulseData_ImpulseDirection;
@@ -87,12 +118,14 @@ void UGAB_GenericDeath_C::InitializeDeathHitDirection(const struct FGameplayEven
 
 void UGAB_GenericDeath_C::OnCancelled_CD8A514040DDA2A4EF94DD913E1B01E4()
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_C", "OnCancelled_CD8A514040DDA2A4EF94DD913E1B01E4");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_C_OnCancelled_CD8A514040DDA2A4EF94DD913E1B01E4_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_C", "OnCancelled_CD8A514040DDA2A4EF94DD913E1B01E4");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -103,12 +136,14 @@ void UGAB_GenericDeath_C::OnCancelled_CD8A514040DDA2A4EF94DD913E1B01E4()
 
 void UGAB_GenericDeath_C::OnInterrupted_CD8A514040DDA2A4EF94DD913E1B01E4()
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_C", "OnInterrupted_CD8A514040DDA2A4EF94DD913E1B01E4");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_C_OnInterrupted_CD8A514040DDA2A4EF94DD913E1B01E4_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_C", "OnInterrupted_CD8A514040DDA2A4EF94DD913E1B01E4");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -119,12 +154,14 @@ void UGAB_GenericDeath_C::OnInterrupted_CD8A514040DDA2A4EF94DD913E1B01E4()
 
 void UGAB_GenericDeath_C::OnBlendOut_CD8A514040DDA2A4EF94DD913E1B01E4()
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_C", "OnBlendOut_CD8A514040DDA2A4EF94DD913E1B01E4");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_C_OnBlendOut_CD8A514040DDA2A4EF94DD913E1B01E4_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_C", "OnBlendOut_CD8A514040DDA2A4EF94DD913E1B01E4");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -135,12 +172,14 @@ void UGAB_GenericDeath_C::OnBlendOut_CD8A514040DDA2A4EF94DD913E1B01E4()
 
 void UGAB_GenericDeath_C::OnCompleted_CD8A514040DDA2A4EF94DD913E1B01E4()
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_C", "OnCompleted_CD8A514040DDA2A4EF94DD913E1B01E4");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_C_OnCompleted_CD8A514040DDA2A4EF94DD913E1B01E4_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_C", "OnCompleted_CD8A514040DDA2A4EF94DD913E1B01E4");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -152,9 +191,12 @@ void UGAB_GenericDeath_C::OnCompleted_CD8A514040DDA2A4EF94DD913E1B01E4()
 
 void UGAB_GenericDeath_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_C", "K2_OnEndAbility");
+
+	Params::UGAB_GenericDeath_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -169,12 +211,14 @@ void UGAB_GenericDeath_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGAB_GenericDeath_C::PickDeathMontageSection()
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_C", "PickDeathMontageSection");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_C_PickDeathMontageSection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_C", "PickDeathMontageSection");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -186,9 +230,12 @@ void UGAB_GenericDeath_C::PickDeathMontageSection()
 
 void UGAB_GenericDeath_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGAB_GenericDeath_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -250,9 +297,12 @@ void UGAB_GenericDeath_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData&
 
 void UGAB_GenericDeath_C::ExecuteUbergraph_GAB_GenericDeath(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue, bool K2Node_Event_bWasCancelled, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue_1, bool CallFunc_HasAuthority_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, const struct FTransform& CallFunc_K2_GetComponentToWorld_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAnyMatchingGameplayTags_self_CastInput, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue, class ABP_VictoryDrone_C* CallFunc_FinishSpawningActor_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue_1, bool CallFunc_EqualEqual_NameName_ReturnValue_2, bool CallFunc_EqualEqual_NameName_ReturnValue_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class FName CallFunc_GetRandomSectionName_SectionName, class FName CallFunc_GetRandomSectionName_SectionName_1, class FName CallFunc_GetRandomSectionName_SectionName_2, class FName CallFunc_GetRandomSectionName_SectionName_3, bool CallFunc_EqualEqual_NameName_ReturnValue_4, bool CallFunc_EqualEqual_NameName_ReturnValue_5, bool CallFunc_EqualEqual_NameName_ReturnValue_6, bool CallFunc_EqualEqual_NameName_ReturnValue_7, class UAbilityTask_PlayMontageAndWait* CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue, bool CallFunc_IsValid_ReturnValue, class FName CallFunc_GetRandomSectionName_SectionName_4, class FName CallFunc_GetRandomSectionName_SectionName_5, class FName CallFunc_GetRandomSectionName_SectionName_6, class FName CallFunc_GetRandomSectionName_SectionName_7, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue_2, class AFortAIPawn* K2Node_DynamicCast_AsFort_AIPawn, bool K2Node_DynamicCast_bSuccess_1, enum class EFortDamageZone CallFunc_GetDamageZone_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, const struct FGameplayEventData& K2Node_Event_EventData, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class FName CallFunc_SetFNameBasedOnHitDirection_NameResult, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue, class FName CallFunc_SetFNameBasedOnHitDirection_NameResult_1)
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_C", "ExecuteUbergraph_GAB_GenericDeath");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_C", "ExecuteUbergraph_GAB_GenericDeath");
+
+	Params::UGAB_GenericDeath_C_ExecuteUbergraph_GAB_GenericDeath_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -308,6 +358,4 @@ void UGAB_GenericDeath_C::ExecuteUbergraph_GAB_GenericDeath(int32 EntryPoint, UD
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

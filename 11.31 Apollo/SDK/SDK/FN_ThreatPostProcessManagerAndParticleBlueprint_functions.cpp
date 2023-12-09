@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C
+// (Actor)
+
+class UClass* AThreatPostProcessManagerAndParticleBlueprint_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ThreatPostProcessManagerAndParticleBlueprint_C");
+
+	return Clss;
+}
+
+
+// ThreatPostProcessManagerAndParticleBlueprint_C ThreatPostProcessManagerAndParticleBlueprint.Default__ThreatPostProcessManagerAndParticleBlueprint_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AThreatPostProcessManagerAndParticleBlueprint_C* AThreatPostProcessManagerAndParticleBlueprint_C::GetDefaultObj()
+{
+	static class AThreatPostProcessManagerAndParticleBlueprint_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AThreatPostProcessManagerAndParticleBlueprint_C*>(AThreatPostProcessManagerAndParticleBlueprint_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ThreatPostProcessManagerAndParticleBlueprint.ThreatPostProcessManagerAndParticleBlueprint_C.SetForceOff
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::SetForceOff(bool bForceOff)
 {
-	static auto Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "SetForceOff");
+	static class UFunction* Func = nullptr;
 
-	Params::AThreatPostProcessManagerAndParticleBlueprint_C_SetForceOff_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "SetForceOff");
+
+	Params::AThreatPostProcessManagerAndParticleBlueprint_C_SetForceOff_Params Parms{};
 
 	Parms.bForceOff = bForceOff;
 
@@ -84,9 +112,12 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::SetForceOff(bool bForceOff
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::CalculatePlayerPositionNearBox(const struct FVector& BoxMin, const struct FVector& BoxMax, float* VolumePlayerCoveragePercentage, float SafeZoneRadius, float DistanceToSafeZone, const struct FVector& PlayerCameraLoc, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue, float CallFunc_VSize_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, class APlayerCameraManager* CallFunc_GetPlayerCameraManager_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FVector& CallFunc_GetCameraLocation_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_1, float CallFunc_MapRangeClamped_ReturnValue, const struct FVector& CallFunc_Divide_VectorFloat_ReturnValue, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_2, float CallFunc_FClamp_ReturnValue, const struct FVector& CallFunc_Divide_VectorFloat_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_BreakVector_X_2, float CallFunc_BreakVector_Y_2, float CallFunc_BreakVector_Z_2, float CallFunc_FClamp_ReturnValue_1, float CallFunc_FClamp_ReturnValue_2, float CallFunc_Subtract_FloatFloat_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue_2, float CallFunc_FClamp_ReturnValue_3, float CallFunc_FClamp_ReturnValue_4, float CallFunc_Subtract_FloatFloat_ReturnValue_3, float CallFunc_Subtract_FloatFloat_ReturnValue_4, float CallFunc_FClamp_ReturnValue_5, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue_5, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_2, float CallFunc_Multiply_FloatFloat_ReturnValue_3, float CallFunc_Multiply_FloatFloat_ReturnValue_4, float CallFunc_FClamp_ReturnValue_6)
 {
-	static auto Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "CalculatePlayerPositionNearBox");
+	static class UFunction* Func = nullptr;
 
-	Params::AThreatPostProcessManagerAndParticleBlueprint_C_CalculatePlayerPositionNearBox_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "CalculatePlayerPositionNearBox");
+
+	Params::AThreatPostProcessManagerAndParticleBlueprint_C_CalculatePlayerPositionNearBox_Params Parms{};
 
 	Parms.BoxMin = BoxMin;
 	Parms.BoxMax = BoxMax;
@@ -147,12 +178,14 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::CalculatePlayerPositionNea
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::Ramp_Up_down_values_on_death__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "Ramp Up down values on death__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AThreatPostProcessManagerAndParticleBlueprint_C_Ramp_Up_down_values_on_death__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "Ramp Up down values on death__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -163,12 +196,14 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::Ramp_Up_down_values_on_dea
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::Ramp_Up_down_values_on_death__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "Ramp Up down values on death__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AThreatPostProcessManagerAndParticleBlueprint_C_Ramp_Up_down_values_on_death__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "Ramp Up down values on death__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -180,9 +215,12 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::Ramp_Up_down_values_on_dea
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::AThreatPostProcessManagerAndParticleBlueprint_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "ReceiveTick");
+
+	Params::AThreatPostProcessManagerAndParticleBlueprint_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -198,9 +236,12 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::ReceiveTick(float DeltaSec
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::OnThreatCloudsChanged(TArray<struct FThreatLocationInfo>& ThreatLocationInfo)
 {
-	static auto Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "OnThreatCloudsChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::AThreatPostProcessManagerAndParticleBlueprint_C_OnThreatCloudsChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "OnThreatCloudsChanged");
+
+	Params::AThreatPostProcessManagerAndParticleBlueprint_C_OnThreatCloudsChanged_Params Parms{};
 
 	Parms.ThreatLocationInfo = ThreatLocationInfo;
 
@@ -215,12 +256,14 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::OnThreatCloudsChanged(TArr
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::OnWorldReady()
 {
-	static auto Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "OnWorldReady");
+	static class UFunction* Func = nullptr;
 
-	Params::AThreatPostProcessManagerAndParticleBlueprint_C_OnWorldReady_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "OnWorldReady");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -231,12 +274,14 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::OnWorldReady()
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::VFX_RainTracePeriodic()
 {
-	static auto Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "VFX_RainTracePeriodic");
+	static class UFunction* Func = nullptr;
 
-	Params::AThreatPostProcessManagerAndParticleBlueprint_C_VFX_RainTracePeriodic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "VFX_RainTracePeriodic");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -247,12 +292,14 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::VFX_RainTracePeriodic()
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::StartTraceTimer()
 {
-	static auto Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "StartTraceTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::AThreatPostProcessManagerAndParticleBlueprint_C_StartTraceTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "StartTraceTimer");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -263,12 +310,14 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::StartTraceTimer()
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::ForceUpdateLensEffect()
 {
-	static auto Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "ForceUpdateLensEffect");
+	static class UFunction* Func = nullptr;
 
-	Params::AThreatPostProcessManagerAndParticleBlueprint_C_ForceUpdateLensEffect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "ForceUpdateLensEffect");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -280,9 +329,12 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::ForceUpdateLensEffect()
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::OnThreatOverrideChanged(bool bForceThreatOn)
 {
-	static auto Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "OnThreatOverrideChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::AThreatPostProcessManagerAndParticleBlueprint_C_OnThreatOverrideChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "OnThreatOverrideChanged");
+
+	Params::AThreatPostProcessManagerAndParticleBlueprint_C_OnThreatOverrideChanged_Params Parms{};
 
 	Parms.bForceThreatOn = bForceThreatOn;
 
@@ -354,7 +406,7 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::OnThreatOverrideChanged(bo
 // float                              CallFunc_BreakColor_A_4                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FThreatLocationInfo> K2Node_Event_ThreatLocationInfo                                  (ConstParm, ZeroConstructor, ReferenceParm)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue_3                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FThreatLocationInfo         CallFunc_Array_Get_Item                                          ()
+// struct FThreatLocationInfo         CallFunc_Array_Get_Item                                          (None)
 // float                              CallFunc_Add_FloatFloat_ReturnValue_1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Add_FloatFloat_ReturnValue_2                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -422,9 +474,12 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::OnThreatOverrideChanged(bo
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::ExecuteUbergraph_ThreatPostProcessManagerAndParticleBlueprint(int32 EntryPoint, TArray<class AActor*>& Temp_object_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_1, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue, int32 Temp_int_Array_Index_Variable_1, int32 CallFunc_GetVisualEffectQuality_ReturnValue, bool K2Node_SwitchInteger_CmpSuccess, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_1, float K2Node_Event_DeltaSeconds, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_SelectInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, bool CallFunc_Greater_FloatFloat_ReturnValue, float CallFunc_FInterpTo_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue_1, const struct FLinearColor& CallFunc_GetVectorParameterValue_ReturnValue, int32 CallFunc_SelectInt_ReturnValue_1, float CallFunc_BreakColor_R, float CallFunc_BreakColor_G, float CallFunc_BreakColor_B, float CallFunc_BreakColor_A, int32 CallFunc_Add_IntInt_ReturnValue_2, bool CallFunc_Greater_IntInt_ReturnValue, float CallFunc_BreakColor_R_1, float CallFunc_BreakColor_G_1, float CallFunc_BreakColor_B_1, float CallFunc_BreakColor_A_1, float CallFunc_BreakColor_R_2, float CallFunc_BreakColor_G_2, float CallFunc_BreakColor_B_2, float CallFunc_BreakColor_A_2, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue_1, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1, float CallFunc_BreakColor_R_3, float CallFunc_BreakColor_G_3, float CallFunc_BreakColor_B_3, float CallFunc_BreakColor_A_3, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_2, const struct FVector& CallFunc_MakeVector_ReturnValue_2, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_2, float CallFunc_BreakColor_R_4, float CallFunc_BreakColor_G_4, float CallFunc_BreakColor_B_4, float CallFunc_BreakColor_A_4, TArray<struct FThreatLocationInfo>& K2Node_Event_ThreatLocationInfo, float CallFunc_Multiply_FloatFloat_ReturnValue_3, const struct FThreatLocationInfo& CallFunc_Array_Get_Item, float CallFunc_Add_FloatFloat_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue_2, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue_3, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_3, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_1, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_2, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FLinearColor& K2Node_MakeStruct_LinearColor, bool CallFunc_NotEqual_BoolBool_ReturnValue, const struct FBox& CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_2, bool CallFunc_Less_IntInt_ReturnValue_1, float CallFunc_CalculatePlayerPositionNearBox_VolumePlayerCoveragePercentage, float CallFunc_Add_FloatFloat_ReturnValue_3, float CallFunc_FClamp_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_4, class APlayerCameraManager* CallFunc_GetPlayerCameraManager_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_5, class AEmitterCameraLensEffectBase* CallFunc_AddCameraLensEffect_ReturnValue, int32 CallFunc_Round_ReturnValue, bool CallFunc_Conv_IntToBool_ReturnValue, class APlayerCameraManager* CallFunc_GetPlayerCameraManager_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class APawn* CallFunc_GetPlayerPawn_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue_2, class APawn* CallFunc_GetPlayerPawn_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_4, bool CallFunc_BooleanAND_ReturnValue_3, const struct FTransform& CallFunc_MakeTransform_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class AThreat_RainAttachedToPlayer_C* CallFunc_FinishSpawningActor_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, class APawn* CallFunc_GetPlayerPawn_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_5, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_3, const struct FHitResult& CallFunc_LineTraceSingle_OutHit, bool CallFunc_LineTraceSingle_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_6, bool CallFunc_NotEqual_FloatFloat_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_2, float CallFunc_Conv_BoolToFloat_ReturnValue, float CallFunc_MultiplyMultiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_7, bool CallFunc_BooleanAND_ReturnValue_4, bool CallFunc_EqualEqual_BoolBool_ReturnValue, class AGameStateBase* CallFunc_GetGameState_ReturnValue, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena, bool K2Node_DynamicCast_bSuccess, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, bool K2Node_Event_bForceThreatOn, bool CallFunc_Not_PreBool_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue_5, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "ExecuteUbergraph_ThreatPostProcessManagerAndParticleBlueprint");
+	static class UFunction* Func = nullptr;
 
-	Params::AThreatPostProcessManagerAndParticleBlueprint_C_ExecuteUbergraph_ThreatPostProcessManagerAndParticleBlueprint_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "ExecuteUbergraph_ThreatPostProcessManagerAndParticleBlueprint");
+
+	Params::AThreatPostProcessManagerAndParticleBlueprint_C_ExecuteUbergraph_ThreatPostProcessManagerAndParticleBlueprint_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -563,12 +618,14 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::ExecuteUbergraph_ThreatPos
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::NewEventDispatcher0__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "NewEventDispatcher0__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AThreatPostProcessManagerAndParticleBlueprint_C_NewEventDispatcher0__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "NewEventDispatcher0__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -579,17 +636,17 @@ void AThreatPostProcessManagerAndParticleBlueprint_C::NewEventDispatcher0__Deleg
 
 void AThreatPostProcessManagerAndParticleBlueprint_C::NewEventDispatcher__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "NewEventDispatcher__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AThreatPostProcessManagerAndParticleBlueprint_C_NewEventDispatcher__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ThreatPostProcessManagerAndParticleBlueprint_C", "NewEventDispatcher__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

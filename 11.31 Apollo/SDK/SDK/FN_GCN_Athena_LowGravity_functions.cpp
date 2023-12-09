@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCN_Athena_LowGravity.GCN_Athena_LowGravity_C
+// (Actor)
+
+class UClass* AGCN_Athena_LowGravity_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCN_Athena_LowGravity_C");
+
+	return Clss;
+}
+
+
+// GCN_Athena_LowGravity_C GCN_Athena_LowGravity.Default__GCN_Athena_LowGravity_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCN_Athena_LowGravity_C* AGCN_Athena_LowGravity_C::GetDefaultObj()
+{
+	static class AGCN_Athena_LowGravity_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCN_Athena_LowGravity_C*>(AGCN_Athena_LowGravity_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCN_Athena_LowGravity.GCN_Athena_LowGravity_C.OnRemove
@@ -25,9 +50,12 @@ namespace SDK
 
 bool AGCN_Athena_LowGravity_C::OnRemove(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCN_Athena_LowGravity_C", "OnRemove");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_LowGravity_C_OnRemove_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "OnRemove");
+
+	Params::AGCN_Athena_LowGravity_C_OnRemove_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -59,9 +87,12 @@ bool AGCN_Athena_LowGravity_C::OnRemove(class AActor* MyTarget, struct FGameplay
 
 void AGCN_Athena_LowGravity_C::Activated(class AActor* PlayerPawn, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, float CallFunc_Subtract_FloatFloat_ReturnValue, enum class EEvaluateCurveTableResult CallFunc_EvaluateCurveTableRow_OutResult, float CallFunc_EvaluateCurveTableRow_OutXY, float CallFunc_GetTimeSeconds_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, enum class EEvaluateCurveTableResult CallFunc_EvaluateCurveTableRow_OutResult_1, float CallFunc_EvaluateCurveTableRow_OutXY_1, bool K2Node_SwitchEnum_CmpSuccess_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCN_Athena_LowGravity_C", "Activated");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_LowGravity_C_Activated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "Activated");
+
+	Params::AGCN_Athena_LowGravity_C_Activated_Params Parms{};
 
 	Parms.PlayerPawn = PlayerPawn;
 	Parms.K2Node_DynamicCast_AsFort_Player_Pawn_Athena = K2Node_DynamicCast_AsFort_Player_Pawn_Athena;
@@ -92,9 +123,12 @@ void AGCN_Athena_LowGravity_C::Activated(class AActor* PlayerPawn, class AFortPl
 
 bool AGCN_Athena_LowGravity_C::WhileActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCN_Athena_LowGravity_C", "WhileActive");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_LowGravity_C_WhileActive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "WhileActive");
+
+	Params::AGCN_Athena_LowGravity_C_WhileActive_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -113,12 +147,14 @@ bool AGCN_Athena_LowGravity_C::WhileActive(class AActor* MyTarget, struct FGamep
 
 void AGCN_Athena_LowGravity_C::ExpireTell()
 {
-	static auto Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ExpireTell");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_LowGravity_C_ExpireTell_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ExpireTell");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -129,12 +165,14 @@ void AGCN_Athena_LowGravity_C::ExpireTell()
 
 void AGCN_Athena_LowGravity_C::ClearExpireTell()
 {
-	static auto Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ClearExpireTell");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_LowGravity_C_ClearExpireTell_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ClearExpireTell");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -148,9 +186,12 @@ void AGCN_Athena_LowGravity_C::ClearExpireTell()
 
 void AGCN_Athena_LowGravity_C::K2_HandleGameplayCue(class AActor* MyTarget, enum class EGameplayCueEvent EventType, struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("GCN_Athena_LowGravity_C", "K2_HandleGameplayCue");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_LowGravity_C_K2_HandleGameplayCue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "K2_HandleGameplayCue");
+
+	Params::AGCN_Athena_LowGravity_C_K2_HandleGameplayCue_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.EventType = EventType;
@@ -167,12 +208,14 @@ void AGCN_Athena_LowGravity_C::K2_HandleGameplayCue(class AActor* MyTarget, enum
 
 void AGCN_Athena_LowGravity_C::PlayExpirationSound()
 {
-	static auto Func = Class->GetFunction("GCN_Athena_LowGravity_C", "PlayExpirationSound");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_LowGravity_C_PlayExpirationSound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "PlayExpirationSound");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -184,9 +227,12 @@ void AGCN_Athena_LowGravity_C::PlayExpirationSound()
 
 void AGCN_Athena_LowGravity_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_LowGravity_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ReceiveTick");
+
+	Params::AGCN_Athena_LowGravity_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -201,12 +247,14 @@ void AGCN_Athena_LowGravity_C::ReceiveTick(float DeltaSeconds)
 
 void AGCN_Athena_LowGravity_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_LowGravity_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -250,9 +298,12 @@ void AGCN_Athena_LowGravity_C::ReceiveBeginPlay()
 
 void AGCN_Athena_LowGravity_C::ExecuteUbergraph_GCN_Athena_LowGravity(int32 EntryPoint, float CallFunc_GetWorldDeltaSeconds_ReturnValue, float CallFunc_TimeFromJumpApex_ReturnValue, bool CallFunc_IsFalling_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, bool CallFunc_Not_PreBool_ReturnValue, float CallFunc_Abs_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, float CallFunc_Abs_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, float CallFunc_MapRangeClamped_ReturnValue, float CallFunc_SelectFloat_ReturnValue, float CallFunc_SelectFloat_ReturnValue_1, float CallFunc_FInterpTo_ReturnValue, bool CallFunc_IsValid_ReturnValue, float CallFunc_GetTimeSeconds_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, class AActor* K2Node_Event_MyTarget, enum class EGameplayCueEvent K2Node_Event_EventType, const struct FGameplayCueParameters& K2Node_Event_Parameters, float CallFunc_MapRangeClamped_ReturnValue_1, bool K2Node_SwitchEnum_CmpSuccess, float CallFunc_Subtract_FloatFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue_1, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, float K2Node_Event_DeltaSeconds, float CallFunc_Subtract_FloatFloat_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ExecuteUbergraph_GCN_Athena_LowGravity");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Athena_LowGravity_C_ExecuteUbergraph_GCN_Athena_LowGravity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Athena_LowGravity_C", "ExecuteUbergraph_GCN_Athena_LowGravity");
+
+	Params::AGCN_Athena_LowGravity_C_ExecuteUbergraph_GCN_Athena_LowGravity_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetWorldDeltaSeconds_ReturnValue = CallFunc_GetWorldDeltaSeconds_ReturnValue;
@@ -294,6 +345,4 @@ void AGCN_Athena_LowGravity_C::ExecuteUbergraph_GCN_Athena_LowGravity(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

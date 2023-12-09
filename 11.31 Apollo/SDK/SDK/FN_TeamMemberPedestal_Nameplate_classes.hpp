@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -28,7 +25,7 @@ public:
 	bool                                         bHovered;                                          // 0xE44(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         bIsTalking;                                        // 0xE45(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         bIsMuted;                                          // 0xE46(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_66AB[0x1];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5E99[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateBrush                           TalkingBrush;                                      // 0xE48(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateBrush                           MutedBrush;                                        // 0xED0(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateBrush                           MicBrush;                                          // 0xF58(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -37,11 +34,8 @@ public:
 	class USoundBase*                            UnReadySound;                                      // 0x1000(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                            ReadySound;                                        // 0x1008(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("TeamMemberPedestal_Nameplate_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UTeamMemberPedestal_Nameplate_C* GetDefaultObj();
 
 	void OnReadyStatusChanged(enum class EGameReadiness GameReadiness);
 	void BP_OnTeamMemberEstablished(bool bHasValidMember);
@@ -54,6 +48,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

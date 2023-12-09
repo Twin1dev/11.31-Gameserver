@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_GalileoPlayerController.BP_GalileoPlayerController_C
+// (Actor)
+
+class UClass* ABP_GalileoPlayerController_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_GalileoPlayerController_C");
+
+	return Clss;
+}
+
+
+// BP_GalileoPlayerController_C BP_GalileoPlayerController.Default__BP_GalileoPlayerController_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_GalileoPlayerController_C* ABP_GalileoPlayerController_C::GetDefaultObj()
+{
+	static class ABP_GalileoPlayerController_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_GalileoPlayerController_C*>(ABP_GalileoPlayerController_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_GalileoPlayerController.BP_GalileoPlayerController_C.SetBlackboardValues
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ABP_GalileoPlayerController_C::SetBlackboardValues(class UBlackboardComponent* CallFunc_GetBlackboard_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_GalileoPlayerController_C", "SetBlackboardValues");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_GalileoPlayerController_C_SetBlackboardValues_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_GalileoPlayerController_C", "SetBlackboardValues");
+
+	Params::ABP_GalileoPlayerController_C_SetBlackboardValues_Params Parms{};
 
 	Parms.CallFunc_GetBlackboard_ReturnValue = CallFunc_GetBlackboard_ReturnValue;
 
@@ -39,12 +67,14 @@ void ABP_GalileoPlayerController_C::SetBlackboardValues(class UBlackboardCompone
 
 void ABP_GalileoPlayerController_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_GalileoPlayerController_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_GalileoPlayerController_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_GalileoPlayerController_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void ABP_GalileoPlayerController_C::ReceiveBeginPlay()
 
 void ABP_GalileoPlayerController_C::BlueprintOnBehaviorTreeStarted()
 {
-	static auto Func = Class->GetFunction("BP_GalileoPlayerController_C", "BlueprintOnBehaviorTreeStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_GalileoPlayerController_C_BlueprintOnBehaviorTreeStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_GalileoPlayerController_C", "BlueprintOnBehaviorTreeStarted");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -71,12 +103,14 @@ void ABP_GalileoPlayerController_C::BlueprintOnBehaviorTreeStarted()
 
 void ABP_GalileoPlayerController_C::BndEvt__FortAthenaNpcGalileo_K2Node_ComponentBoundEvent_0_GalileoComponentOnPatrollingStart__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BP_GalileoPlayerController_C", "BndEvt__FortAthenaNpcGalileo_K2Node_ComponentBoundEvent_0_GalileoComponentOnPatrollingStart__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_GalileoPlayerController_C_BndEvt__FortAthenaNpcGalileo_K2Node_ComponentBoundEvent_0_GalileoComponentOnPatrollingStart__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_GalileoPlayerController_C", "BndEvt__FortAthenaNpcGalileo_K2Node_ComponentBoundEvent_0_GalileoComponentOnPatrollingStart__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -87,12 +121,14 @@ void ABP_GalileoPlayerController_C::BndEvt__FortAthenaNpcGalileo_K2Node_Componen
 
 void ABP_GalileoPlayerController_C::BndEvt__FortAthenaNpcGalileo_K2Node_ComponentBoundEvent_1_GalileoComponentOnPatrollingStop__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BP_GalileoPlayerController_C", "BndEvt__FortAthenaNpcGalileo_K2Node_ComponentBoundEvent_1_GalileoComponentOnPatrollingStop__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_GalileoPlayerController_C_BndEvt__FortAthenaNpcGalileo_K2Node_ComponentBoundEvent_1_GalileoComponentOnPatrollingStop__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_GalileoPlayerController_C", "BndEvt__FortAthenaNpcGalileo_K2Node_ComponentBoundEvent_1_GalileoComponentOnPatrollingStop__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -113,9 +149,12 @@ void ABP_GalileoPlayerController_C::BndEvt__FortAthenaNpcGalileo_K2Node_Componen
 
 void ABP_GalileoPlayerController_C::ExecuteUbergraph_BP_GalileoPlayerController(int32 EntryPoint, class ABP_PlayerPawn_Athena_Galileo_C* K2Node_DynamicCast_AsBP_Player_Pawn_Athena_Galileo, bool K2Node_DynamicCast_bSuccess, class ABP_PlayerPawn_Athena_Galileo_C* K2Node_DynamicCast_AsBP_Player_Pawn_Athena_Galileo_1, bool K2Node_DynamicCast_bSuccess_1, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue_1, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue, bool CallFunc_RemoveActiveGameplayEffect_ReturnValue, bool CallFunc_HasAuthority_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_GalileoPlayerController_C", "ExecuteUbergraph_BP_GalileoPlayerController");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_GalileoPlayerController_C_ExecuteUbergraph_BP_GalileoPlayerController_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_GalileoPlayerController_C", "ExecuteUbergraph_BP_GalileoPlayerController");
+
+	Params::ABP_GalileoPlayerController_C_ExecuteUbergraph_BP_GalileoPlayerController_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_DynamicCast_AsBP_Player_Pawn_Athena_Galileo = K2Node_DynamicCast_AsBP_Player_Pawn_Athena_Galileo;
@@ -134,6 +173,4 @@ void ABP_GalileoPlayerController_C::ExecuteUbergraph_BP_GalileoPlayerController(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

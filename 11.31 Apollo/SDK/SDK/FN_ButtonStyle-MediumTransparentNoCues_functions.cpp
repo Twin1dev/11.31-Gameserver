@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ButtonStyle-MediumTransparentNoCues.ButtonStyle-MediumTransparentNoCues_C
+// (None)
+
+class UClass* UButtonStyleMinusMediumTransparentNoCues_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ButtonStyle-MediumTransparentNoCues_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ButtonStyle-MediumTransparentNoCues_C ButtonStyle-MediumTransparentNoCues.Default__ButtonStyle-MediumTransparentNoCues_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UButtonStyleMinusMediumTransparentNoCues_C* UButtonStyleMinusMediumTransparentNoCues_C::GetDefaultObj()
+{
+	static class UButtonStyleMinusMediumTransparentNoCues_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UButtonStyleMinusMediumTransparentNoCues_C*>(UButtonStyleMinusMediumTransparentNoCues_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

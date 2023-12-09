@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass UI_Background_Strings.UI_Background_Strings_C
+// (None)
+
+class UClass* UUI_Background_Strings_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UI_Background_Strings_C");
+
+	return Clss;
+}
+
+
+// UI_Background_Strings_C UI_Background_Strings.Default__UI_Background_Strings_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UUI_Background_Strings_C* UUI_Background_Strings_C::GetDefaultObj()
+{
+	static class UUI_Background_Strings_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUI_Background_Strings_C*>(UUI_Background_Strings_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function UI_Background_Strings.UI_Background_Strings_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UUI_Background_Strings_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("UI_Background_Strings_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UUI_Background_Strings_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UI_Background_Strings_C", "PreConstruct");
+
+	Params::UUI_Background_Strings_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -39,12 +67,14 @@ void UUI_Background_Strings_C::PreConstruct(bool IsDesignTime)
 
 void UUI_Background_Strings_C::Construct()
 {
-	static auto Func = Class->GetFunction("UI_Background_Strings_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UUI_Background_Strings_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UI_Background_Strings_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -62,9 +92,12 @@ void UUI_Background_Strings_C::Construct()
 
 void UUI_Background_Strings_C::ExecuteUbergraph_UI_Background_Strings(int32 EntryPoint, int32 Temp_int_Variable, int32 Temp_int_Variable_1, int32 Temp_int_Variable_2, bool K2Node_Event_IsDesignTime, int32 Temp_int_Variable_3, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("UI_Background_Strings_C", "ExecuteUbergraph_UI_Background_Strings");
+	static class UFunction* Func = nullptr;
 
-	Params::UUI_Background_Strings_C_ExecuteUbergraph_UI_Background_Strings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UI_Background_Strings_C", "ExecuteUbergraph_UI_Background_Strings");
+
+	Params::UUI_Background_Strings_C_ExecuteUbergraph_UI_Background_Strings_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -80,6 +113,4 @@ void UUI_Background_Strings_C::ExecuteUbergraph_UI_Background_Strings(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

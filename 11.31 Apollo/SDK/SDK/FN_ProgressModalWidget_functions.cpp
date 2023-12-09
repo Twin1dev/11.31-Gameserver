@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,20 +12,51 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ProgressModalWidget.ProgressModalWidget_C
+// (None)
+
+class UClass* UProgressModalWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ProgressModalWidget_C");
+
+	return Clss;
+}
+
+
+// ProgressModalWidget_C ProgressModalWidget.Default__ProgressModalWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UProgressModalWidget_C* UProgressModalWidget_C::GetDefaultObj()
+{
+	static class UProgressModalWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UProgressModalWidget_C*>(UProgressModalWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ProgressModalWidget.ProgressModalWidget_C.OnAnalogValueChanged
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FAnalogInputEvent           InAnalogInputEvent                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 
 struct FEventReply UProgressModalWidget_C::OnAnalogValueChanged(const struct FGeometry& MyGeometry, const struct FAnalogInputEvent& InAnalogInputEvent, const struct FEventReply& CallFunc_Unhandled_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ProgressModalWidget_C", "OnAnalogValueChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UProgressModalWidget_C_OnAnalogValueChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProgressModalWidget_C", "OnAnalogValueChanged");
+
+	Params::UProgressModalWidget_C_OnAnalogValueChanged_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InAnalogInputEvent = InAnalogInputEvent;
@@ -48,12 +76,14 @@ struct FEventReply UProgressModalWidget_C::OnAnalogValueChanged(const struct FGe
 
 void UProgressModalWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("ProgressModalWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UProgressModalWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProgressModalWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -64,12 +94,14 @@ void UProgressModalWidget_C::Construct()
 
 void UProgressModalWidget_C::HandleIntroEnded()
 {
-	static auto Func = Class->GetFunction("ProgressModalWidget_C", "HandleIntroEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::UProgressModalWidget_C_HandleIntroEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProgressModalWidget_C", "HandleIntroEnded");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -80,12 +112,14 @@ void UProgressModalWidget_C::HandleIntroEnded()
 
 void UProgressModalWidget_C::HandleOutroEnded()
 {
-	static auto Func = Class->GetFunction("ProgressModalWidget_C", "HandleOutroEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::UProgressModalWidget_C_HandleOutroEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProgressModalWidget_C", "HandleOutroEnded");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -96,12 +130,14 @@ void UProgressModalWidget_C::HandleOutroEnded()
 
 void UProgressModalWidget_C::OnBeginIntro()
 {
-	static auto Func = Class->GetFunction("ProgressModalWidget_C", "OnBeginIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UProgressModalWidget_C_OnBeginIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProgressModalWidget_C", "OnBeginIntro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -112,12 +148,14 @@ void UProgressModalWidget_C::OnBeginIntro()
 
 void UProgressModalWidget_C::OnBeginOutro()
 {
-	static auto Func = Class->GetFunction("ProgressModalWidget_C", "OnBeginOutro");
+	static class UFunction* Func = nullptr;
 
-	Params::UProgressModalWidget_C_OnBeginOutro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProgressModalWidget_C", "OnBeginOutro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -128,12 +166,14 @@ void UProgressModalWidget_C::OnBeginOutro()
 
 void UProgressModalWidget_C::Destruct()
 {
-	static auto Func = Class->GetFunction("ProgressModalWidget_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UProgressModalWidget_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProgressModalWidget_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -149,9 +189,12 @@ void UProgressModalWidget_C::Destruct()
 
 void UProgressModalWidget_C::ExecuteUbergraph_ProgressModalWidget(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3)
 {
-	static auto Func = Class->GetFunction("ProgressModalWidget_C", "ExecuteUbergraph_ProgressModalWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UProgressModalWidget_C_ExecuteUbergraph_ProgressModalWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProgressModalWidget_C", "ExecuteUbergraph_ProgressModalWidget");
+
+	Params::UProgressModalWidget_C_ExecuteUbergraph_ProgressModalWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -165,6 +208,4 @@ void UProgressModalWidget_C::ExecuteUbergraph_ProgressModalWidget(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass HelpListItem.HelpListItem_C
+// (None)
+
+class UClass* UHelpListItem_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("HelpListItem_C");
+
+	return Clss;
+}
+
+
+// HelpListItem_C HelpListItem.Default__HelpListItem_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UHelpListItem_C* UHelpListItem_C::GetDefaultObj()
+{
+	static class UHelpListItem_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UHelpListItem_C*>(UHelpListItem_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function HelpListItem.HelpListItem_C.SetupExpansion
@@ -26,9 +51,12 @@ namespace SDK
 
 void UHelpListItem_C::SetupExpansion(bool Expanded, bool Temp_bool_Variable, float Temp_float_Variable, float Temp_float_Variable_1, float K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("HelpListItem_C", "SetupExpansion");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpListItem_C_SetupExpansion_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpListItem_C", "SetupExpansion");
+
+	Params::UHelpListItem_C_SetupExpansion_Params Parms{};
 
 	Parms.Expanded = Expanded;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -48,9 +76,12 @@ void UHelpListItem_C::SetupExpansion(bool Expanded, bool Temp_bool_Variable, flo
 
 void UHelpListItem_C::InitializeItem(bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("HelpListItem_C", "InitializeItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpListItem_C_InitializeItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpListItem_C", "InitializeItem");
+
+	Params::UHelpListItem_C_InitializeItem_Params Parms{};
 
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
 
@@ -66,9 +97,12 @@ void UHelpListItem_C::InitializeItem(bool K2Node_SwitchEnum_CmpSuccess)
 
 void UHelpListItem_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("HelpListItem_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpListItem_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpListItem_C", "OnListItemObjectSet");
+
+	Params::UHelpListItem_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -84,9 +118,12 @@ void UHelpListItem_C::OnListItemObjectSet(class UObject* ListItemObject)
 
 void UHelpListItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("HelpListItem_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpListItem_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpListItem_C", "BP_OnItemExpansionChanged");
+
+	Params::UHelpListItem_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -105,9 +142,12 @@ void UHelpListItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UHelpListItem_C::ExecuteUbergraph_HelpListItem(int32 EntryPoint, bool K2Node_Event_bIsExpanded, bool CallFunc_IsListItemExpanded_ReturnValue, class UObject* K2Node_Event_ListItemObject)
 {
-	static auto Func = Class->GetFunction("HelpListItem_C", "ExecuteUbergraph_HelpListItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpListItem_C_ExecuteUbergraph_HelpListItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpListItem_C", "ExecuteUbergraph_HelpListItem");
+
+	Params::UHelpListItem_C_ExecuteUbergraph_HelpListItem_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bIsExpanded = K2Node_Event_bIsExpanded;
@@ -125,17 +165,17 @@ void UHelpListItem_C::ExecuteUbergraph_HelpListItem(int32 EntryPoint, bool K2Nod
 
 void UHelpListItem_C::InviteJoinChanged__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("HelpListItem_C", "InviteJoinChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UHelpListItem_C_InviteJoinChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HelpListItem_C", "InviteJoinChanged__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

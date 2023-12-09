@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass SettingsListEntry_Header.SettingsListEntry_Header_C
+// (None)
+
+class UClass* USettingsListEntry_Header_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SettingsListEntry_Header_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// SettingsListEntry_Header_C SettingsListEntry_Header.Default__SettingsListEntry_Header_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USettingsListEntry_Header_C* USettingsListEntry_Header_C::GetDefaultObj()
+{
+	static class USettingsListEntry_Header_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USettingsListEntry_Header_C*>(USettingsListEntry_Header_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

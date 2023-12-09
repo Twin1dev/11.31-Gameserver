@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass LocalUserEntry.LocalUserEntry_C
+// (None)
+
+class UClass* ULocalUserEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LocalUserEntry_C");
+
+	return Clss;
+}
+
+
+// LocalUserEntry_C LocalUserEntry.Default__LocalUserEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULocalUserEntry_C* ULocalUserEntry_C::GetDefaultObj()
+{
+	static class ULocalUserEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULocalUserEntry_C*>(ULocalUserEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function LocalUserEntry.LocalUserEntry_C.HandleOnlineIndicatorView
@@ -24,9 +49,12 @@ namespace SDK
 
 void ULocalUserEntry_C::HandleOnlineIndicatorView(enum class ELocalUserOnlineStatus InLocalUserOnlineStatus, enum class ELocalUserOnlineStatus Temp_byte_Variable, const struct FLinearColor& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("LocalUserEntry_C", "HandleOnlineIndicatorView");
+	static class UFunction* Func = nullptr;
 
-	Params::ULocalUserEntry_C_HandleOnlineIndicatorView_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LocalUserEntry_C", "HandleOnlineIndicatorView");
+
+	Params::ULocalUserEntry_C_HandleOnlineIndicatorView_Params Parms{};
 
 	Parms.InLocalUserOnlineStatus = InLocalUserOnlineStatus;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -43,12 +71,14 @@ void ULocalUserEntry_C::HandleOnlineIndicatorView(enum class ELocalUserOnlineSta
 
 void ULocalUserEntry_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("LocalUserEntry_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::ULocalUserEntry_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LocalUserEntry_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -59,12 +89,14 @@ void ULocalUserEntry_C::BP_OnHovered()
 
 void ULocalUserEntry_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("LocalUserEntry_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::ULocalUserEntry_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LocalUserEntry_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -76,9 +108,12 @@ void ULocalUserEntry_C::BP_OnUnhovered()
 
 void ULocalUserEntry_C::OnOnlineStatusChanged(enum class ELocalUserOnlineStatus OnlineStatus)
 {
-	static auto Func = Class->GetFunction("LocalUserEntry_C", "OnOnlineStatusChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ULocalUserEntry_C_OnOnlineStatusChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LocalUserEntry_C", "OnOnlineStatusChanged");
+
+	Params::ULocalUserEntry_C_OnOnlineStatusChanged_Params Parms{};
 
 	Parms.OnlineStatus = OnlineStatus;
 
@@ -97,9 +132,12 @@ void ULocalUserEntry_C::OnOnlineStatusChanged(enum class ELocalUserOnlineStatus 
 
 void ULocalUserEntry_C::ExecuteUbergraph_LocalUserEntry(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, enum class ELocalUserOnlineStatus K2Node_Event_OnlineStatus)
 {
-	static auto Func = Class->GetFunction("LocalUserEntry_C", "ExecuteUbergraph_LocalUserEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::ULocalUserEntry_C_ExecuteUbergraph_LocalUserEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LocalUserEntry_C", "ExecuteUbergraph_LocalUserEntry");
+
+	Params::ULocalUserEntry_C_ExecuteUbergraph_LocalUserEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -112,6 +150,4 @@ void ULocalUserEntry_C::ExecuteUbergraph_LocalUserEntry(int32 EntryPoint, class 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

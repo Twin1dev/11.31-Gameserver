@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ItemUIFunctionLibrary.ItemUIFunctionLibrary_C
+// (None)
+
+class UClass* UItemUIFunctionLibrary_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemUIFunctionLibrary_C");
+
+	return Clss;
+}
+
+
+// ItemUIFunctionLibrary_C ItemUIFunctionLibrary.Default__ItemUIFunctionLibrary_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemUIFunctionLibrary_C* UItemUIFunctionLibrary_C::GetDefaultObj()
+{
+	static class UItemUIFunctionLibrary_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemUIFunctionLibrary_C*>(UItemUIFunctionLibrary_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ItemUIFunctionLibrary.ItemUIFunctionLibrary_C.IsNullItem
@@ -27,9 +52,12 @@ namespace SDK
 
 void UItemUIFunctionLibrary_C::IsNullItem(class UObject* ItemObject, class UObject* __WorldContext, bool* Is_Null_Item, bool CallFunc_IsValid_ReturnValue, class UClass* CallFunc_GetObjectClass_ReturnValue, bool CallFunc_EqualEqual_ClassClass_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemUIFunctionLibrary_C", "IsNullItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemUIFunctionLibrary_C_IsNullItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemUIFunctionLibrary_C", "IsNullItem");
+
+	Params::UItemUIFunctionLibrary_C_IsNullItem_Params Parms{};
 
 	Parms.ItemObject = ItemObject;
 	Parms.__WorldContext = __WorldContext;
@@ -62,33 +90,36 @@ void UItemUIFunctionLibrary_C::IsNullItem(class UObject* ItemObject, class UObje
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue_2                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_Conv_IntToFloat_ReturnValue_2                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable                                               ()
+// class FText                        Temp_text_Variable                                               (None)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue_2                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable_1                                             ()
+// class FText                        Temp_text_Variable_1                                             (None)
 // bool                               Temp_bool_Variable_4                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable_2                                             ()
+// class FText                        Temp_text_Variable_2                                             (None)
 // float                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_3                                             ()
+// class FText                        Temp_text_Variable_3                                             (None)
 // float                              K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Select_Default_2                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_5                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_FloatToText_ReturnValue                            ()
+// class FText                        CallFunc_Conv_FloatToText_ReturnValue                            (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_3                                          ()
-// class FText                        K2Node_Select_Default_4                                          ()
-// class FText                        K2Node_Select_Default_5                                          ()
+// class FText                        K2Node_Select_Default_3                                          (None)
+// class FText                        K2Node_Select_Default_4                                          (None)
+// class FText                        K2Node_Select_Default_5                                          (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 void UItemUIFunctionLibrary_C::Truncate_Integer_Value(int32 Value, int32 Min_Fractional_Digits, int32 Max_Fractional_Digits, class UObject* __WorldContext, class FText* Formatted_Value, bool Temp_bool_Variable, float CallFunc_Conv_IntToFloat_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue_1, float CallFunc_Conv_IntToFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_1, bool CallFunc_GreaterEqual_IntInt_ReturnValue_2, float CallFunc_Conv_IntToFloat_ReturnValue_2, class FText Temp_text_Variable, float CallFunc_Multiply_FloatFloat_ReturnValue_2, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, bool Temp_bool_Variable_3, class FText Temp_text_Variable_1, bool Temp_bool_Variable_4, class FText Temp_text_Variable_2, float K2Node_Select_Default, class FText Temp_text_Variable_3, float K2Node_Select_Default_1, float K2Node_Select_Default_2, bool Temp_bool_Variable_5, class FText CallFunc_Conv_FloatToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class FText K2Node_Select_Default_3, class FText K2Node_Select_Default_4, class FText K2Node_Select_Default_5, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemUIFunctionLibrary_C", "Truncate Integer Value");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemUIFunctionLibrary_C_Truncate_Integer_Value_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemUIFunctionLibrary_C", "Truncate Integer Value");
+
+	Params::UItemUIFunctionLibrary_C_Truncate_Integer_Value_Params Parms{};
 
 	Parms.Value = Value;
 	Parms.Min_Fractional_Digits = Min_Fractional_Digits;
@@ -155,9 +186,12 @@ void UItemUIFunctionLibrary_C::Truncate_Integer_Value(int32 Value, int32 Min_Fra
 
 void UItemUIFunctionLibrary_C::Convert_Tier_To_Integer(enum class EFortItemTier Tier, class UObject* __WorldContext, int32* Numeric_Tier, enum class EFortItemTier Temp_byte_Variable, int32 Temp_int_Variable, int32 Temp_int_Variable_1, int32 Temp_int_Variable_2, int32 Temp_int_Variable_3, int32 Temp_int_Variable_4, int32 Temp_int_Variable_5, int32 Temp_int_Variable_6, int32 Temp_int_Variable_7, int32 Temp_int_Variable_8, int32 Temp_int_Variable_9, int32 Temp_int_Variable_10, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ItemUIFunctionLibrary_C", "Convert Tier To Integer");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemUIFunctionLibrary_C_Convert_Tier_To_Integer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemUIFunctionLibrary_C", "Convert Tier To Integer");
+
+	Params::UItemUIFunctionLibrary_C_Convert_Tier_To_Integer_Params Parms{};
 
 	Parms.Tier = Tier;
 	Parms.__WorldContext = __WorldContext;
@@ -200,9 +234,12 @@ void UItemUIFunctionLibrary_C::Convert_Tier_To_Integer(enum class EFortItemTier 
 
 void UItemUIFunctionLibrary_C::ParseLevelRequiredFromString(const class FString& InString, class UObject* __WorldContext, int32* OutInt, int32 CallFunc_FindSubstring_ReturnValue, int32 CallFunc_FindSubstring_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1, const class FString& CallFunc_GetSubstring_ReturnValue, int32 CallFunc_Conv_StringToInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemUIFunctionLibrary_C", "ParseLevelRequiredFromString");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemUIFunctionLibrary_C_ParseLevelRequiredFromString_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemUIFunctionLibrary_C", "ParseLevelRequiredFromString");
+
+	Params::UItemUIFunctionLibrary_C_ParseLevelRequiredFromString_Params Parms{};
 
 	Parms.InString = InString;
 	Parms.__WorldContext = __WorldContext;
@@ -224,6 +261,4 @@ void UItemUIFunctionLibrary_C::ParseLevelRequiredFromString(const class FString&
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

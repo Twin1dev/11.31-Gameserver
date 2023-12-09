@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ItemCalledOutAttributesDetailWidget.ItemCalledOutAttributesDetailWidget_C
+// (None)
+
+class UClass* UItemCalledOutAttributesDetailWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemCalledOutAttributesDetailWidget_C");
+
+	return Clss;
+}
+
+
+// ItemCalledOutAttributesDetailWidget_C ItemCalledOutAttributesDetailWidget.Default__ItemCalledOutAttributesDetailWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemCalledOutAttributesDetailWidget_C* UItemCalledOutAttributesDetailWidget_C::GetDefaultObj()
+{
+	static class UItemCalledOutAttributesDetailWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemCalledOutAttributesDetailWidget_C*>(UItemCalledOutAttributesDetailWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ItemCalledOutAttributesDetailWidget.ItemCalledOutAttributesDetailWidget_C.Clear Stats
@@ -27,9 +52,12 @@ namespace SDK
 
 void UItemCalledOutAttributesDetailWidget_C::Clear_Stats(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class UStatsListItemWIdget_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "Clear Stats");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCalledOutAttributesDetailWidget_C_Clear_Stats_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "Clear Stats");
+
+	Params::UItemCalledOutAttributesDetailWidget_C_Clear_Stats_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -59,10 +87,10 @@ void UItemCalledOutAttributesDetailWidget_C::Clear_Stats(int32 Temp_int_Array_In
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FFortDisplayAttribute>CallFunc_GetDisplayAttributesToCallOut_Attributes                (ZeroConstructor, ReferenceParm)
 // class UStatsListItemWIdget_C*      CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortDisplayAttribute       CallFunc_Array_Get_Item_1                                        ()
+// struct FFortDisplayAttribute       CallFunc_Array_Get_Item_1                                        (None)
 // class UWrapBoxSlot*                CallFunc_AddChildToWrapBox_ReturnValue                           (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Add_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortDisplayAttribute       CallFunc_Array_Get_Item_2                                        ()
+// struct FFortDisplayAttribute       CallFunc_Array_Get_Item_2                                        (None)
 // int32                              CallFunc_Array_Length_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Array_Length_ReturnValue_2                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -72,9 +100,12 @@ void UItemCalledOutAttributesDetailWidget_C::Clear_Stats(int32 Temp_int_Array_In
 
 void UItemCalledOutAttributesDetailWidget_C::UpdateStats(int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin, int32 Temp_int_Array_Index_Variable_1, class UStatsListItemWIdget_C* CallFunc_Array_Get_Item, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, TArray<struct FFortDisplayAttribute>& CallFunc_GetDisplayAttributesToCallOut_Attributes, class UStatsListItemWIdget_C* CallFunc_Create_ReturnValue, const struct FFortDisplayAttribute& CallFunc_Array_Get_Item_1, class UWrapBoxSlot* CallFunc_AddChildToWrapBox_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, const struct FFortDisplayAttribute& CallFunc_Array_Get_Item_2, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_2, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue_3, bool CallFunc_EqualEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "UpdateStats");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCalledOutAttributesDetailWidget_C_UpdateStats_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "UpdateStats");
+
+	Params::UItemCalledOutAttributesDetailWidget_C_UpdateStats_Params Parms{};
 
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
@@ -129,7 +160,7 @@ void UItemCalledOutAttributesDetailWidget_C::UpdateStats(int32 Temp_int_Loop_Cou
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortTooltipUIContext*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortDisplayAttribute       CallFunc_GetTooltipStat_OutDisplayAttribute                      ()
+// struct FFortDisplayAttribute       CallFunc_GetTooltipStat_OutDisplayAttribute                      (None)
 // bool                               CallFunc_GetTooltipStat_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortItemDefinition*         CallFunc_GetSchematicCraftingResultBP_ReturnValue                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortItemType           CallFunc_GetSchematicResultType_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -141,9 +172,12 @@ void UItemCalledOutAttributesDetailWidget_C::UpdateStats(int32 Temp_int_Loop_Cou
 
 void UItemCalledOutAttributesDetailWidget_C::GetDisplayAttributesToCallOut(TArray<struct FFortDisplayAttribute>* Attributes, const TArray<struct FGameplayTag>& Tokens, const TArray<struct FFortDisplayAttribute>& Results, TArray<struct FGameplayTag>& K2Node_MakeArray_Array, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, TArray<struct FGameplayTag>& K2Node_MakeArray_Array_1, TArray<struct FGameplayTag>& K2Node_MakeArray_Array_2, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, const struct FUniqueNetIdRepl& CallFunc_GetGameAccountId_ReturnValue, const struct FGameplayTag& CallFunc_Array_Get_Item, class UFortTooltipContext* CallFunc_SpawnTooltipContextWithNetID_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class UFortTooltipUIContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_Variable, const struct FFortDisplayAttribute& CallFunc_GetTooltipStat_OutDisplayAttribute, bool CallFunc_GetTooltipStat_ReturnValue, class UFortItemDefinition* CallFunc_GetSchematicCraftingResultBP_ReturnValue, enum class EFortItemType CallFunc_GetSchematicResultType_ReturnValue, bool CallFunc_IsValid_ReturnValue, enum class EFortItemType CallFunc_GetType_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, enum class EFortItemType K2Node_Select_Default, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "GetDisplayAttributesToCallOut");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "GetDisplayAttributesToCallOut");
+
+	Params::UItemCalledOutAttributesDetailWidget_C_GetDisplayAttributesToCallOut_Params Parms{};
 
 	Parms.Tokens = Tokens;
 	Parms.Results = Results;
@@ -178,7 +212,7 @@ void UItemCalledOutAttributesDetailWidget_C::GetDisplayAttributesToCallOut(TArra
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Attributes != nullptr)
-		*Attributes = Parms.Attributes;
+		*Attributes = std::move(Parms.Attributes);
 
 }
 
@@ -189,12 +223,14 @@ void UItemCalledOutAttributesDetailWidget_C::GetDisplayAttributesToCallOut(TArra
 
 void UItemCalledOutAttributesDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "HandlePostDifferentItemToDetailSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCalledOutAttributesDetailWidget_C_HandlePostDifferentItemToDetailSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "HandlePostDifferentItemToDetailSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -205,12 +241,14 @@ void UItemCalledOutAttributesDetailWidget_C::HandlePostDifferentItemToDetailSet(
 
 void UItemCalledOutAttributesDetailWidget_C::HandleItemToDetailChangedBP()
 {
-	static auto Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "HandleItemToDetailChangedBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCalledOutAttributesDetailWidget_C_HandleItemToDetailChangedBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "HandleItemToDetailChangedBP");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -235,9 +273,12 @@ void UItemCalledOutAttributesDetailWidget_C::HandleItemToDetailChangedBP()
 
 void UItemCalledOutAttributesDetailWidget_C::ExecuteUbergraph_ItemCalledOutAttributesDetailWidget(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_IsValid_ReturnValue, enum class EFortItemType CallFunc_GetSchematicResultType_ReturnValue, enum class EFortItemType CallFunc_GetType_ReturnValue, class UFortItemDefinition* CallFunc_GetSchematicCraftingResultBP_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, enum class EFortItemType K2Node_Select_Default, TArray<enum class EFortItemType>& K2Node_MakeArray_Array, bool Temp_bool_Variable_1, bool CallFunc_Array_Contains_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "ExecuteUbergraph_ItemCalledOutAttributesDetailWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCalledOutAttributesDetailWidget_C_ExecuteUbergraph_ItemCalledOutAttributesDetailWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCalledOutAttributesDetailWidget_C", "ExecuteUbergraph_ItemCalledOutAttributesDetailWidget");
+
+	Params::UItemCalledOutAttributesDetailWidget_C_ExecuteUbergraph_ItemCalledOutAttributesDetailWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -260,6 +301,4 @@ void UItemCalledOutAttributesDetailWidget_C::ExecuteUbergraph_ItemCalledOutAttri
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

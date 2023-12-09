@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -32,26 +29,12 @@ public:
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function Violator_ActiveFriends.Violator_ActiveFriends_C.UpdateData
-struct UViolator_ActiveFriends_C_UpdateData_Params
-{
-public:
-};
-
 // 0x1 (0x1 - 0x0)
 // Function Violator_ActiveFriends.Violator_ActiveFriends_C.PreConstruct
 struct UViolator_ActiveFriends_C_PreConstruct_Params
 {
 public:
 	bool                                         IsDesignTime;                                      // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function Violator_ActiveFriends.Violator_ActiveFriends_C.Construct
-struct UViolator_ActiveFriends_C_Construct_Params
-{
-public:
 };
 
 // 0x5 (0x5 - 0x0)
@@ -66,6 +49,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

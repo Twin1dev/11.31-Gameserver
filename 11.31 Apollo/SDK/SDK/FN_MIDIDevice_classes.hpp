@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,15 +16,12 @@ class UMIDIDeviceController : public UObject
 public:
 	UMulticastInlineDelegateProperty_            OnMIDIEvent;                                       // 0x28(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	int32                                        DeviceID;                                          // 0x38(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_1B84[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_B8A[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                DeviceName;                                        // 0x40(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_1B85[0x10];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_B8B[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MIDIDeviceController");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMIDIDeviceController* GetDefaultObj();
 
 };
 
@@ -44,15 +38,12 @@ public:
 	UMulticastInlineDelegateProperty_            OnMIDIProgramChange;                               // 0x78(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastInlineDelegateProperty_            OnMIDIChannelAftertouch;                           // 0x88(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	int32                                        DeviceID;                                          // 0x98(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_1B86[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_B8D[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                DeviceName;                                        // 0xA0(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_1B87[0x10];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_B8E[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MIDIDeviceInputController");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMIDIDeviceInputController* GetDefaultObj();
 
 };
 
@@ -62,11 +53,8 @@ class UMIDIDeviceManager : public UBlueprintFunctionLibrary
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MIDIDeviceManager");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMIDIDeviceManager* GetDefaultObj();
 
 	void GetMIDIOutputDeviceIDByName(const class FString& DeviceName, int32* DeviceID);
 	void GetMIDIInputDeviceIDByName(const class FString& DeviceName, int32* DeviceID);
@@ -85,15 +73,12 @@ class UMIDIDeviceOutputController : public UObject
 {
 public:
 	int32                                        DeviceID;                                          // 0x28(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_1B8C[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_BC8[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                DeviceName;                                        // 0x30(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_1B8D[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_BC9[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MIDIDeviceOutputController");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMIDIDeviceOutputController* GetDefaultObj();
 
 	void SendMIDIProgramChange(int32 Channel, int32 ProgramNumber);
 	void SendMIDIPitchBend(int32 Channel, int32 Pitch);
@@ -107,6 +92,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

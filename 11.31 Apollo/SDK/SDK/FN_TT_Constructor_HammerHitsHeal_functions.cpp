@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TT_Constructor_HammerHitsHeal.TT_Constructor_HammerHitsHeal_C
+// (None)
+
+class UClass* UTT_Constructor_HammerHitsHeal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TT_Constructor_HammerHitsHeal_C");
+
+	return Clss;
+}
+
+
+// TT_Constructor_HammerHitsHeal_C TT_Constructor_HammerHitsHeal.Default__TT_Constructor_HammerHitsHeal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTT_Constructor_HammerHitsHeal_C* UTT_Constructor_HammerHitsHeal_C::GetDefaultObj()
+{
+	static class UTT_Constructor_HammerHitsHeal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTT_Constructor_HammerHitsHeal_C*>(UTT_Constructor_HammerHitsHeal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function TT_Constructor_HammerHitsHeal.TT_Constructor_HammerHitsHeal_C.GetTextForTokenFromAbilityInstanceInternal
@@ -29,13 +54,16 @@ namespace SDK
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Round_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 
 bool UTT_Constructor_HammerHitsHeal_C::GetTextForTokenFromAbilityInstanceInternal(class UGameplayAbility* AbilityInstance, struct FGameplayTag& Tag, class UFortTooltipContext* Context, struct FGameplayTag& Token, class FText* OutText, bool GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess, class UGA_Constructor_HammerHitsHeal_C* K2Node_DynamicCast_AsGA_Constructor_Hammer_Hits_Heal, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_Round_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TT_Constructor_HammerHitsHeal_C", "GetTextForTokenFromAbilityInstanceInternal");
+	static class UFunction* Func = nullptr;
 
-	Params::UTT_Constructor_HammerHitsHeal_C_GetTextForTokenFromAbilityInstanceInternal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TT_Constructor_HammerHitsHeal_C", "GetTextForTokenFromAbilityInstanceInternal");
+
+	Params::UTT_Constructor_HammerHitsHeal_C_GetTextForTokenFromAbilityInstanceInternal_Params Parms{};
 
 	Parms.AbilityInstance = AbilityInstance;
 	Parms.Tag = Tag;
@@ -68,9 +96,12 @@ bool UTT_Constructor_HammerHitsHeal_C::GetTextForTokenFromAbilityInstanceInterna
 
 void UTT_Constructor_HammerHitsHeal_C::InitializeAbilityInstanceInternal(class UGameplayAbility* AbilityInstance, class UFortTooltipContext* Context, class UGA_Constructor_HammerHitsHeal_C* K2Node_DynamicCast_AsGA_Constructor_Hammer_Hits_Heal, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("TT_Constructor_HammerHitsHeal_C", "InitializeAbilityInstanceInternal");
+	static class UFunction* Func = nullptr;
 
-	Params::UTT_Constructor_HammerHitsHeal_C_InitializeAbilityInstanceInternal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TT_Constructor_HammerHitsHeal_C", "InitializeAbilityInstanceInternal");
+
+	Params::UTT_Constructor_HammerHitsHeal_C_InitializeAbilityInstanceInternal_Params Parms{};
 
 	Parms.AbilityInstance = AbilityInstance;
 	Parms.Context = Context;
@@ -83,6 +114,4 @@ void UTT_Constructor_HammerHitsHeal_C::InitializeAbilityInstanceInternal(class U
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

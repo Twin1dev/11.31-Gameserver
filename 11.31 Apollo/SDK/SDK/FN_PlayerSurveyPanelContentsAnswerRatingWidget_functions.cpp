@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass PlayerSurveyPanelContentsAnswerRatingWidget.PlayerSurveyPanelContentsAnswerRatingWidget_C
+// (None)
+
+class UClass* UPlayerSurveyPanelContentsAnswerRatingWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerSurveyPanelContentsAnswerRatingWidget_C");
+
+	return Clss;
+}
+
+
+// PlayerSurveyPanelContentsAnswerRatingWidget_C PlayerSurveyPanelContentsAnswerRatingWidget.Default__PlayerSurveyPanelContentsAnswerRatingWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerSurveyPanelContentsAnswerRatingWidget_C* UPlayerSurveyPanelContentsAnswerRatingWidget_C::GetDefaultObj()
+{
+	static class UPlayerSurveyPanelContentsAnswerRatingWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerSurveyPanelContentsAnswerRatingWidget_C*>(UPlayerSurveyPanelContentsAnswerRatingWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PlayerSurveyPanelContentsAnswerRatingWidget.PlayerSurveyPanelContentsAnswerRatingWidget_C.GetSubtitleText
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 class FText UPlayerSurveyPanelContentsAnswerRatingWidget_C::GetSubtitleText()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "GetSubtitleText");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_GetSubtitleText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "GetSubtitleText");
+
+	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_GetSubtitleText_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -43,9 +71,12 @@ class FText UPlayerSurveyPanelContentsAnswerRatingWidget_C::GetSubtitleText()
 
 void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandlePlayerRequestAnswer(int32 AnswerIndex, const struct FTimespan& CallFunc_GetStopwatchTime_ReturnValue, const struct FFortPlayerSurveyAnswerMultipleChoice& K2Node_MakeStruct_FortPlayerSurveyAnswerMultipleChoice)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandlePlayerRequestAnswer");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_HandlePlayerRequestAnswer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandlePlayerRequestAnswer");
+
+	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_HandlePlayerRequestAnswer_Params Parms{};
 
 	Parms.AnswerIndex = AnswerIndex;
 	Parms.CallFunc_GetStopwatchTime_ReturnValue = CallFunc_GetStopwatchTime_ReturnValue;
@@ -64,9 +95,12 @@ void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandlePlayerRequestAnswer(i
 
 class UWidget* UPlayerSurveyPanelContentsAnswerRatingWidget_C::GetDefaultFocusedWidgetPostDummy(enum class EUINavigation Navigation)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "GetDefaultFocusedWidgetPostDummy");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_GetDefaultFocusedWidgetPostDummy_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "GetDefaultFocusedWidgetPostDummy");
+
+	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_GetDefaultFocusedWidgetPostDummy_Params Parms{};
 
 	Parms.Navigation = Navigation;
 
@@ -92,9 +126,12 @@ class UWidget* UPlayerSurveyPanelContentsAnswerRatingWidget_C::GetDefaultFocused
 
 class UWidget* UPlayerSurveyPanelContentsAnswerRatingWidget_C::GetDefaultFocusedWidget(int32 DefaultIndex, class UWidget* TargetWidget, int32 SelectedIndex, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_GetCurrentAnswer_bOutIsSet, const struct FFortPlayerSurveyAnswerMultipleChoice& CallFunc_GetCurrentAnswer_OutAnswer, class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "GetDefaultFocusedWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_GetDefaultFocusedWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "GetDefaultFocusedWidget");
+
+	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_GetDefaultFocusedWidget_Params Parms{};
 
 	Parms.DefaultIndex = DefaultIndex;
 	Parms.TargetWidget = TargetWidget;
@@ -123,9 +160,12 @@ class UWidget* UPlayerSurveyPanelContentsAnswerRatingWidget_C::GetDefaultFocused
 
 void UPlayerSurveyPanelContentsAnswerRatingWidget_C::UpdateRatingButtons(class UFortPlayerSurveyQuestionMultipleChoice* CurrentQuestion, int32 NumRatingButtons, class UFortPlayerSurveyQuestionMultipleChoice* CallFunc_GetCurrentQuestion_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "UpdateRatingButtons");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_UpdateRatingButtons_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "UpdateRatingButtons");
+
+	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_UpdateRatingButtons_Params Parms{};
 
 	Parms.CurrentQuestion = CurrentQuestion;
 	Parms.NumRatingButtons = NumRatingButtons;
@@ -152,9 +192,12 @@ void UPlayerSurveyPanelContentsAnswerRatingWidget_C::UpdateRatingButtons(class U
 
 void UPlayerSurveyPanelContentsAnswerRatingWidget_C::UpdateText(class UFortPlayerSurveyQuestionMultipleChoice* CurrentQuestion, class FText MaxRatingText, class FText MinRatingText, class UFortPlayerSurveyQuestionMultipleChoice* CallFunc_GetCurrentQuestion_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "UpdateText");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_UpdateText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "UpdateText");
+
+	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_UpdateText_Params Parms{};
 
 	Parms.CurrentQuestion = CurrentQuestion;
 	Parms.MaxRatingText = MaxRatingText;
@@ -176,12 +219,14 @@ void UPlayerSurveyPanelContentsAnswerRatingWidget_C::UpdateText(class UFortPlaye
 
 void UPlayerSurveyPanelContentsAnswerRatingWidget_C::OnInitialized()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "OnInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_OnInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "OnInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -193,9 +238,12 @@ void UPlayerSurveyPanelContentsAnswerRatingWidget_C::OnInitialized()
 
 void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandleButtonClicked(int32 ButtonIndex)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandleButtonClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_HandleButtonClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandleButtonClicked");
+
+	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_HandleButtonClicked_Params Parms{};
 
 	Parms.ButtonIndex = ButtonIndex;
 
@@ -210,12 +258,14 @@ void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandleButtonClicked(int32 B
 
 void UPlayerSurveyPanelContentsAnswerRatingWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -227,9 +277,12 @@ void UPlayerSurveyPanelContentsAnswerRatingWidget_C::Construct()
 
 void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandleButtonFocused(int32 ButtonIndex)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandleButtonFocused");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_HandleButtonFocused_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandleButtonFocused");
+
+	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_HandleButtonFocused_Params Parms{};
 
 	Parms.ButtonIndex = ButtonIndex;
 
@@ -244,12 +297,14 @@ void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandleButtonFocused(int32 B
 
 void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandleCommitCurrentAnswer()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandleCommitCurrentAnswer");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_HandleCommitCurrentAnswer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandleCommitCurrentAnswer");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -260,12 +315,14 @@ void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandleCommitCurrentAnswer()
 
 void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandleQuestionChanged()
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandleQuestionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_HandleQuestionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "HandleQuestionChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -282,9 +339,12 @@ void UPlayerSurveyPanelContentsAnswerRatingWidget_C::HandleQuestionChanged()
 
 void UPlayerSurveyPanelContentsAnswerRatingWidget_C::ExecuteUbergraph_PlayerSurveyPanelContentsAnswerRatingWidget(int32 EntryPoint, int32 K2Node_Event_ButtonIndex_1, TArray<class UCommonButton*>& K2Node_MakeArray_Array, int32 K2Node_Event_ButtonIndex, bool CallFunc_GetCurrentAnswer_bOutIsSet, const struct FFortPlayerSurveyAnswerMultipleChoice& CallFunc_GetCurrentAnswer_OutAnswer)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "ExecuteUbergraph_PlayerSurveyPanelContentsAnswerRatingWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerRatingWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyPanelContentsAnswerRatingWidget_C", "ExecuteUbergraph_PlayerSurveyPanelContentsAnswerRatingWidget");
+
+	Params::UPlayerSurveyPanelContentsAnswerRatingWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerRatingWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_ButtonIndex_1 = K2Node_Event_ButtonIndex_1;
@@ -299,6 +359,4 @@ void UPlayerSurveyPanelContentsAnswerRatingWidget_C::ExecuteUbergraph_PlayerSurv
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

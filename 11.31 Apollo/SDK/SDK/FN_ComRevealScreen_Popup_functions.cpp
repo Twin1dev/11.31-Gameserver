@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ComRevealScreen_Popup.ComRevealScreen_Popup_C
+// (None)
+
+class UClass* UComRevealScreen_Popup_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ComRevealScreen_Popup_C");
+
+	return Clss;
+}
+
+
+// ComRevealScreen_Popup_C ComRevealScreen_Popup.Default__ComRevealScreen_Popup_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UComRevealScreen_Popup_C* UComRevealScreen_Popup_C::GetDefaultObj()
+{
+	static class UComRevealScreen_Popup_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UComRevealScreen_Popup_C*>(UComRevealScreen_Popup_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ComRevealScreen_Popup.ComRevealScreen_Popup_C.TapToClose
@@ -26,16 +51,19 @@ namespace SDK
 // bool                               CallFunc_EqualEqual_KeyKey_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
-// struct FEventReply                 K2Node_Select_Default                                            ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
+// struct FEventReply                 K2Node_Select_Default                                            (None)
 
 struct FEventReply UComRevealScreen_Popup_C::TapToClose(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FKey& CallFunc_PointerEvent_GetEffectingButton_ReturnValue, bool CallFunc_PointerEvent_IsTouchEvent_ReturnValue, bool CallFunc_EqualEqual_KeyKey_ReturnValue, bool Temp_bool_Variable, bool CallFunc_BooleanOR_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const struct FEventReply& CallFunc_Unhandled_ReturnValue, const struct FEventReply& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ComRevealScreen_Popup_C", "TapToClose");
+	static class UFunction* Func = nullptr;
 
-	Params::UComRevealScreen_Popup_C_TapToClose_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComRevealScreen_Popup_C", "TapToClose");
+
+	Params::UComRevealScreen_Popup_C_TapToClose_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -62,12 +90,14 @@ struct FEventReply UComRevealScreen_Popup_C::TapToClose(const struct FGeometry& 
 
 void UComRevealScreen_Popup_C::StartFinalAnimation()
 {
-	static auto Func = Class->GetFunction("ComRevealScreen_Popup_C", "StartFinalAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UComRevealScreen_Popup_C_StartFinalAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComRevealScreen_Popup_C", "StartFinalAnimation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -79,9 +109,12 @@ void UComRevealScreen_Popup_C::StartFinalAnimation()
 
 void UComRevealScreen_Popup_C::StartFadeOutScreen(float Delay)
 {
-	static auto Func = Class->GetFunction("ComRevealScreen_Popup_C", "StartFadeOutScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UComRevealScreen_Popup_C_StartFadeOutScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComRevealScreen_Popup_C", "StartFadeOutScreen");
+
+	Params::UComRevealScreen_Popup_C_StartFadeOutScreen_Params Parms{};
 
 	Parms.Delay = Delay;
 
@@ -96,12 +129,14 @@ void UComRevealScreen_Popup_C::StartFadeOutScreen(float Delay)
 
 void UComRevealScreen_Popup_C::Construct()
 {
-	static auto Func = Class->GetFunction("ComRevealScreen_Popup_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UComRevealScreen_Popup_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComRevealScreen_Popup_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -119,9 +154,12 @@ void UComRevealScreen_Popup_C::Construct()
 
 void UComRevealScreen_Popup_C::ExecuteUbergraph_ComRevealScreen_Popup(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, float K2Node_Event_Delay, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ComRevealScreen_Popup_C", "ExecuteUbergraph_ComRevealScreen_Popup");
+	static class UFunction* Func = nullptr;
 
-	Params::UComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComRevealScreen_Popup_C", "ExecuteUbergraph_ComRevealScreen_Popup");
+
+	Params::UComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -137,6 +175,4 @@ void UComRevealScreen_Popup_C::ExecuteUbergraph_ComRevealScreen_Popup(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

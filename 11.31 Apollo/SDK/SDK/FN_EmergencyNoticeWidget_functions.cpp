@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass EmergencyNoticeWidget.EmergencyNoticeWidget_C
+// (None)
+
+class UClass* UEmergencyNoticeWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EmergencyNoticeWidget_C");
+
+	return Clss;
+}
+
+
+// EmergencyNoticeWidget_C EmergencyNoticeWidget.Default__EmergencyNoticeWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UEmergencyNoticeWidget_C* UEmergencyNoticeWidget_C::GetDefaultObj()
+{
+	static class UEmergencyNoticeWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEmergencyNoticeWidget_C*>(UEmergencyNoticeWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function EmergencyNoticeWidget.EmergencyNoticeWidget_C.Show Notice
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UEmergencyNoticeWidget_C::Show_Notice(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("EmergencyNoticeWidget_C", "Show Notice");
+	static class UFunction* Func = nullptr;
 
-	Params::UEmergencyNoticeWidget_C_Show_Notice_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EmergencyNoticeWidget_C", "Show Notice");
+
+	Params::UEmergencyNoticeWidget_C_Show_Notice_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -41,9 +69,12 @@ void UEmergencyNoticeWidget_C::Show_Notice(class UUMGSequencePlayer* CallFunc_Pl
 
 void UEmergencyNoticeWidget_C::ShowNotice(class FText& Title, class FText& Body)
 {
-	static auto Func = Class->GetFunction("EmergencyNoticeWidget_C", "ShowNotice");
+	static class UFunction* Func = nullptr;
 
-	Params::UEmergencyNoticeWidget_C_ShowNotice_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EmergencyNoticeWidget_C", "ShowNotice");
+
+	Params::UEmergencyNoticeWidget_C_ShowNotice_Params Parms{};
 
 	Parms.Title = Title;
 	Parms.Body = Body;
@@ -59,12 +90,14 @@ void UEmergencyNoticeWidget_C::ShowNotice(class FText& Title, class FText& Body)
 
 void UEmergencyNoticeWidget_C::HideNotice()
 {
-	static auto Func = Class->GetFunction("EmergencyNoticeWidget_C", "HideNotice");
+	static class UFunction* Func = nullptr;
 
-	Params::UEmergencyNoticeWidget_C_HideNotice_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EmergencyNoticeWidget_C", "HideNotice");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -75,13 +108,16 @@ void UEmergencyNoticeWidget_C::HideNotice()
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        K2Node_Event_Title                                               (ConstParm)
 // class FText                        K2Node_Event_Body                                                (ConstParm)
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 
 void UEmergencyNoticeWidget_C::ExecuteUbergraph_EmergencyNoticeWidget(int32 EntryPoint, class FText K2Node_Event_Title, class FText K2Node_Event_Body, class FText CallFunc_TextToUpper_ReturnValue)
 {
-	static auto Func = Class->GetFunction("EmergencyNoticeWidget_C", "ExecuteUbergraph_EmergencyNoticeWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UEmergencyNoticeWidget_C_ExecuteUbergraph_EmergencyNoticeWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EmergencyNoticeWidget_C", "ExecuteUbergraph_EmergencyNoticeWidget");
+
+	Params::UEmergencyNoticeWidget_C_ExecuteUbergraph_EmergencyNoticeWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_Title = K2Node_Event_Title;
@@ -94,6 +130,4 @@ void UEmergencyNoticeWidget_C::ExecuteUbergraph_EmergencyNoticeWidget(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

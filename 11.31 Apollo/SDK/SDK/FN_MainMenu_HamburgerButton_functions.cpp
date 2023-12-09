@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass MainMenu_HamburgerButton.MainMenu_HamburgerButton_C
+// (None)
+
+class UClass* UMainMenu_HamburgerButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MainMenu_HamburgerButton_C");
+
+	return Clss;
+}
+
+
+// MainMenu_HamburgerButton_C MainMenu_HamburgerButton.Default__MainMenu_HamburgerButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMainMenu_HamburgerButton_C* UMainMenu_HamburgerButton_C::GetDefaultObj()
+{
+	static class UMainMenu_HamburgerButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMainMenu_HamburgerButton_C*>(UMainMenu_HamburgerButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MainMenu_HamburgerButton.MainMenu_HamburgerButton_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UMainMenu_HamburgerButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("MainMenu_HamburgerButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainMenu_HamburgerButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainMenu_HamburgerButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UMainMenu_HamburgerButton_C::BP_OnHovered()
 
 void UMainMenu_HamburgerButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("MainMenu_HamburgerButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainMenu_HamburgerButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainMenu_HamburgerButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UMainMenu_HamburgerButton_C::BP_OnUnhovered()
 
 void UMainMenu_HamburgerButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("MainMenu_HamburgerButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainMenu_HamburgerButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainMenu_HamburgerButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -81,9 +112,12 @@ void UMainMenu_HamburgerButton_C::Construct()
 
 void UMainMenu_HamburgerButton_C::ExecuteUbergraph_MainMenu_HamburgerButton(int32 EntryPoint, bool CallFunc_IsMobileGame_ReturnValue, bool Temp_bool_Variable, float Temp_float_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable_1, float K2Node_Select_Default, float Temp_float_Variable_2, float Temp_float_Variable_3, float K2Node_Select_Default_1, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MainMenu_HamburgerButton_C", "ExecuteUbergraph_MainMenu_HamburgerButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainMenu_HamburgerButton_C_ExecuteUbergraph_MainMenu_HamburgerButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainMenu_HamburgerButton_C", "ExecuteUbergraph_MainMenu_HamburgerButton");
+
+	Params::UMainMenu_HamburgerButton_C_ExecuteUbergraph_MainMenu_HamburgerButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsMobileGame_ReturnValue = CallFunc_IsMobileGame_ReturnValue;
@@ -104,6 +138,4 @@ void UMainMenu_HamburgerButton_C::ExecuteUbergraph_MainMenu_HamburgerButton(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

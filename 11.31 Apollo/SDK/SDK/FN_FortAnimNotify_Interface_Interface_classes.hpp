@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class IFortAnimNotify_Interface_Interface_C : public IInterface
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("FortAnimNotify_Interface_Interface_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class IFortAnimNotify_Interface_Interface_C* GetDefaultObj();
 
 	void TrailOn();
 	void TrailOff();
@@ -30,6 +24,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Galileo_Lobster_Melee_Mantis.GA_Galileo_Lobster_Melee_Mantis_C
+// (None)
+
+class UClass* UGA_Galileo_Lobster_Melee_Mantis_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Galileo_Lobster_Melee_Mantis_C");
+
+	return Clss;
+}
+
+
+// GA_Galileo_Lobster_Melee_Mantis_C GA_Galileo_Lobster_Melee_Mantis.Default__GA_Galileo_Lobster_Melee_Mantis_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Galileo_Lobster_Melee_Mantis_C* UGA_Galileo_Lobster_Melee_Mantis_C::GetDefaultObj()
+{
+	static class UGA_Galileo_Lobster_Melee_Mantis_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Galileo_Lobster_Melee_Mantis_C*>(UGA_Galileo_Lobster_Melee_Mantis_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Galileo_Lobster_Melee_Mantis.GA_Galileo_Lobster_Melee_Mantis_C.Added_257119E44AAC9BD082F95A9F3201447E
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UGA_Galileo_Lobster_Melee_Mantis_C::Added_257119E44AAC9BD082F95A9F3201447E()
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Melee_Mantis_C", "Added_257119E44AAC9BD082F95A9F3201447E");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Melee_Mantis_C_Added_257119E44AAC9BD082F95A9F3201447E_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Melee_Mantis_C", "Added_257119E44AAC9BD082F95A9F3201447E");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UGA_Galileo_Lobster_Melee_Mantis_C::Added_257119E44AAC9BD082F95A9F3201447E(
 
 void UGA_Galileo_Lobster_Melee_Mantis_C::EventReceived_3D9CCD6F49D4ABCB0E35DB855ADE0B29(const struct FGameplayEventData& Payload)
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Melee_Mantis_C", "EventReceived_3D9CCD6F49D4ABCB0E35DB855ADE0B29");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Melee_Mantis_C_EventReceived_3D9CCD6F49D4ABCB0E35DB855ADE0B29_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Melee_Mantis_C", "EventReceived_3D9CCD6F49D4ABCB0E35DB855ADE0B29");
+
+	Params::UGA_Galileo_Lobster_Melee_Mantis_C_EventReceived_3D9CCD6F49D4ABCB0E35DB855ADE0B29_Params Parms{};
 
 	Parms.Payload = Payload;
 
@@ -55,12 +85,14 @@ void UGA_Galileo_Lobster_Melee_Mantis_C::EventReceived_3D9CCD6F49D4ABCB0E35DB855
 
 void UGA_Galileo_Lobster_Melee_Mantis_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Melee_Mantis_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Melee_Mantis_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Melee_Mantis_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -72,9 +104,12 @@ void UGA_Galileo_Lobster_Melee_Mantis_C::K2_ActivateAbility()
 
 void UGA_Galileo_Lobster_Melee_Mantis_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Melee_Mantis_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Melee_Mantis_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Melee_Mantis_C", "K2_OnEndAbility");
+
+	Params::UGA_Galileo_Lobster_Melee_Mantis_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -91,9 +126,12 @@ void UGA_Galileo_Lobster_Melee_Mantis_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Galileo_Lobster_Melee_Mantis_C::BP_OnMantisAttackHit(struct FGameplayAbilityTargetDataHandle& TargetDataHandle, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Melee_Mantis_C", "BP_OnMantisAttackHit");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Melee_Mantis_C_BP_OnMantisAttackHit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Melee_Mantis_C", "BP_OnMantisAttackHit");
+
+	Params::UGA_Galileo_Lobster_Melee_Mantis_C_BP_OnMantisAttackHit_Params Parms{};
 
 	Parms.TargetDataHandle = TargetDataHandle;
 	Parms.ApplicationTag = ApplicationTag;
@@ -113,8 +151,8 @@ void UGA_Galileo_Lobster_Melee_Mantis_C::BP_OnMantisAttackHit(struct FGameplayAb
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// struct FGameplayEventData          K2Node_CustomEvent_Payload                                       ()
-// struct FGameplayEventData          Temp_struct_Variable                                             ()
+// struct FGameplayEventData          K2Node_CustomEvent_Payload                                       (None)
+// struct FGameplayEventData          Temp_struct_Variable                                             (None)
 // class UAbilityTask_WaitGameplayEvent*CallFunc_WaitGameplayEvent_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -161,9 +199,12 @@ void UGA_Galileo_Lobster_Melee_Mantis_C::BP_OnMantisAttackHit(struct FGameplayAb
 
 void UGA_Galileo_Lobster_Melee_Mantis_C::ExecuteUbergraph_GA_Galileo_Lobster_Melee_Mantis(int32 EntryPoint, int32 Temp_int_Loop_Counter_Variable, class UAbilityTask_WaitGameplayTagAdded* CallFunc_WaitGameplayTagAdd_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool Temp_bool_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FGameplayEventData& K2Node_CustomEvent_Payload, const struct FGameplayEventData& Temp_struct_Variable, class UAbilityTask_WaitGameplayEvent* CallFunc_WaitGameplayEvent_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, int32 Temp_int_Array_Index_Variable, bool CallFunc_IsDedicatedServer_ReturnValue, bool K2Node_Event_bWasCancelled, class AFortWeapon* CallFunc_GetCurrentSourceWeapon_ReturnValue, class AFortWeapon* CallFunc_GetCurrentSourceWeapon_ReturnValue_1, class AB_Athena_Galileo_Lobster_Parent_C* K2Node_DynamicCast_AsB_Athena_Galileo_Lobster_Parent, bool K2Node_DynamicCast_bSuccess, class AB_Athena_Galileo_Lobster_Parent_C* K2Node_DynamicCast_AsB_Athena_Galileo_Lobster_Parent_1, bool K2Node_DynamicCast_bSuccess_1, const struct FGameplayAbilityTargetDataHandle& K2Node_Event_TargetDataHandle, const struct FGameplayTag& K2Node_Event_ApplicationTag, float CallFunc_GetCurrentAbilitySourceLevel_OutSourceLevel, TArray<class AActor*>& CallFunc_GetAllActorsFromTargetData_ReturnValue, int32 CallFunc_FTrunc_ReturnValue, class AActor* CallFunc_Array_Get_Item, TArray<struct FActiveGameplayEffectHandle>& CallFunc_ApplyGameplayEffectContainer_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_2, int32 CallFunc_Array_Length_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_Less_IntInt_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, float CallFunc_GetValueAtLevel_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_2, int32 CallFunc_FTrunc_ReturnValue_1, bool CallFunc_Conv_IntToBool_ReturnValue, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_1, bool K2Node_DynamicCast_bSuccess_4, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue, bool CallFunc_HasMatchingGameplayTag_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Melee_Mantis_C", "ExecuteUbergraph_GA_Galileo_Lobster_Melee_Mantis");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Melee_Mantis_C_ExecuteUbergraph_GA_Galileo_Lobster_Melee_Mantis_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Melee_Mantis_C", "ExecuteUbergraph_GA_Galileo_Lobster_Melee_Mantis");
+
+	Params::UGA_Galileo_Lobster_Melee_Mantis_C_ExecuteUbergraph_GA_Galileo_Lobster_Melee_Mantis_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -224,6 +265,4 @@ void UGA_Galileo_Lobster_Melee_Mantis_C::ExecuteUbergraph_GA_Galileo_Lobster_Mel
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

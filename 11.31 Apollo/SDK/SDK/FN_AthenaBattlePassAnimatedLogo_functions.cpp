@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaBattlePassAnimatedLogo.AthenaBattlePassAnimatedLogo_C
+// (None)
+
+class UClass* UAthenaBattlePassAnimatedLogo_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaBattlePassAnimatedLogo_C");
+
+	return Clss;
+}
+
+
+// AthenaBattlePassAnimatedLogo_C AthenaBattlePassAnimatedLogo.Default__AthenaBattlePassAnimatedLogo_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaBattlePassAnimatedLogo_C* UAthenaBattlePassAnimatedLogo_C::GetDefaultObj()
+{
+	static class UAthenaBattlePassAnimatedLogo_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaBattlePassAnimatedLogo_C*>(UAthenaBattlePassAnimatedLogo_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaBattlePassAnimatedLogo.AthenaBattlePassAnimatedLogo_C.OnAnimationFinished
 // (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAthenaBattlePassAnimatedLogo_C::OnAnimationFinished(class UWidgetAnimation* Animation)
 {
-	static auto Func = Class->GetFunction("AthenaBattlePassAnimatedLogo_C", "OnAnimationFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaBattlePassAnimatedLogo_C_OnAnimationFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaBattlePassAnimatedLogo_C", "OnAnimationFinished");
+
+	Params::UAthenaBattlePassAnimatedLogo_C_OnAnimationFinished_Params Parms{};
 
 	Parms.Animation = Animation;
 
@@ -39,12 +67,14 @@ void UAthenaBattlePassAnimatedLogo_C::OnAnimationFinished(class UWidgetAnimation
 
 void UAthenaBattlePassAnimatedLogo_C::PlayIntroAnim()
 {
-	static auto Func = Class->GetFunction("AthenaBattlePassAnimatedLogo_C", "PlayIntroAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaBattlePassAnimatedLogo_C_PlayIntroAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaBattlePassAnimatedLogo_C", "PlayIntroAnim");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void UAthenaBattlePassAnimatedLogo_C::PlayIntroAnim()
 
 void UAthenaBattlePassAnimatedLogo_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaBattlePassAnimatedLogo_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaBattlePassAnimatedLogo_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaBattlePassAnimatedLogo_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -75,13 +107,16 @@ void UAthenaBattlePassAnimatedLogo_C::Construct()
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_2                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAthenaAccountContext*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetCurrentChapterAndSeasonText_ReturnValue              ()
+// class FText                        CallFunc_GetCurrentChapterAndSeasonText_ReturnValue              (None)
 
 void UAthenaBattlePassAnimatedLogo_C::ExecuteUbergraph_AthenaBattlePassAnimatedLogo(int32 EntryPoint, class UWidgetAnimation* K2Node_Event_Animation, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue, class FText CallFunc_GetCurrentChapterAndSeasonText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaBattlePassAnimatedLogo_C", "ExecuteUbergraph_AthenaBattlePassAnimatedLogo");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaBattlePassAnimatedLogo_C", "ExecuteUbergraph_AthenaBattlePassAnimatedLogo");
+
+	Params::UAthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_Animation = K2Node_Event_Animation;
@@ -98,6 +133,4 @@ void UAthenaBattlePassAnimatedLogo_C::ExecuteUbergraph_AthenaBattlePassAnimatedL
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

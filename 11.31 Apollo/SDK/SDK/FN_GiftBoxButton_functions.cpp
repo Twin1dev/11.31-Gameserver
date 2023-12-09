@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass GiftBoxButton.GiftBoxButton_C
+// (None)
+
+class UClass* UGiftBoxButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GiftBoxButton_C");
+
+	return Clss;
+}
+
+
+// GiftBoxButton_C GiftBoxButton.Default__GiftBoxButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGiftBoxButton_C* UGiftBoxButton_C::GetDefaultObj()
+{
+	static class UGiftBoxButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGiftBoxButton_C*>(UGiftBoxButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GiftBoxButton.GiftBoxButton_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UGiftBoxButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("GiftBoxButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftBoxButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftBoxButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UGiftBoxButton_C::Construct()
 
 void UGiftBoxButton_C::PlayGiftSelectedAnimation(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("GiftBoxButton_C", "PlayGiftSelectedAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftBoxButton_C_PlayGiftSelectedAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftBoxButton_C", "PlayGiftSelectedAnimation");
+
+	Params::UGiftBoxButton_C_PlayGiftSelectedAnimation_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -59,9 +89,12 @@ void UGiftBoxButton_C::PlayGiftSelectedAnimation(bool bIsSelected)
 
 void UGiftBoxButton_C::ExecuteUbergraph_GiftBoxButton(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool K2Node_Event_bIsSelected)
 {
-	static auto Func = Class->GetFunction("GiftBoxButton_C", "ExecuteUbergraph_GiftBoxButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UGiftBoxButton_C_ExecuteUbergraph_GiftBoxButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GiftBoxButton_C", "ExecuteUbergraph_GiftBoxButton");
+
+	Params::UGiftBoxButton_C_ExecuteUbergraph_GiftBoxButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -74,6 +107,4 @@ void UGiftBoxButton_C::ExecuteUbergraph_GiftBoxButton(int32 EntryPoint, class UU
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

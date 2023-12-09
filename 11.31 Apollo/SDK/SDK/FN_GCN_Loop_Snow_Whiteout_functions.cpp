@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GCN_Loop_Snow_Whiteout.GCN_Loop_Snow_Whiteout_C
+// (Actor)
+
+class UClass* AGCN_Loop_Snow_Whiteout_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCN_Loop_Snow_Whiteout_C");
+
+	return Clss;
+}
+
+
+// GCN_Loop_Snow_Whiteout_C GCN_Loop_Snow_Whiteout.Default__GCN_Loop_Snow_Whiteout_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCN_Loop_Snow_Whiteout_C* AGCN_Loop_Snow_Whiteout_C::GetDefaultObj()
+{
+	static class AGCN_Loop_Snow_Whiteout_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCN_Loop_Snow_Whiteout_C*>(AGCN_Loop_Snow_Whiteout_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GCN_Loop_Snow_Whiteout.GCN_Loop_Snow_Whiteout_C.FadeinOut__FinishedFunc
 // (BlueprintEvent)
 // Parameters:
 
 void AGCN_Loop_Snow_Whiteout_C::FadeinOut__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "FadeinOut__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_Snow_Whiteout_C_FadeinOut__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "FadeinOut__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void AGCN_Loop_Snow_Whiteout_C::FadeinOut__FinishedFunc()
 
 void AGCN_Loop_Snow_Whiteout_C::FadeinOut__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "FadeinOut__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_Snow_Whiteout_C_FadeinOut__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "FadeinOut__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void AGCN_Loop_Snow_Whiteout_C::FadeinOut__UpdateFunc()
 
 void AGCN_Loop_Snow_Whiteout_C::ReceiveDestroyed()
 {
-	static auto Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "ReceiveDestroyed");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_Snow_Whiteout_C_ReceiveDestroyed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "ReceiveDestroyed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -75,9 +106,12 @@ void AGCN_Loop_Snow_Whiteout_C::ReceiveDestroyed()
 
 void AGCN_Loop_Snow_Whiteout_C::OnRemoval(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "OnRemoval");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_Snow_Whiteout_C_OnRemoval_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "OnRemoval");
+
+	Params::AGCN_Loop_Snow_Whiteout_C_OnRemoval_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -101,9 +135,12 @@ void AGCN_Loop_Snow_Whiteout_C::OnRemoval(class AActor* MyTarget, struct FGamepl
 
 void AGCN_Loop_Snow_Whiteout_C::OnLoopingStart(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "OnLoopingStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_Snow_Whiteout_C_OnLoopingStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "OnLoopingStart");
+
+	Params::AGCN_Loop_Snow_Whiteout_C_OnLoopingStart_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -138,11 +175,11 @@ void AGCN_Loop_Snow_Whiteout_C::OnLoopingStart(class AActor* MyTarget, struct FG
 // class USceneComponent*             CallFunc_K2_GetRootComponent_ReturnValue                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakGameplayCueParameters_NormalizedMagnitude          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakGameplayCueParameters_RawMagnitude                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleCallFunc_BreakGameplayCueParameters_EffectContext                ()
+// struct FGameplayEffectContextHandleCallFunc_BreakGameplayCueParameters_EffectContext                (None)
 // struct FGameplayTag                CallFunc_BreakGameplayCueParameters_MatchedTagName               (NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                CallFunc_BreakGameplayCueParameters_OriginalTag                  (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedSourceTags         ()
-// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedTargetTags         ()
+// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedSourceTags         (None)
+// struct FGameplayTagContainer       CallFunc_BreakGameplayCueParameters_AggregatedTargetTags         (None)
 // struct FVector                     CallFunc_BreakGameplayCueParameters_Location                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_BreakGameplayCueParameters_Normal                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_BreakGameplayCueParameters_Instigator                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -163,9 +200,12 @@ void AGCN_Loop_Snow_Whiteout_C::OnLoopingStart(class AActor* MyTarget, struct FG
 
 void AGCN_Loop_Snow_Whiteout_C::ExecuteUbergraph_GCN_Loop_Snow_Whiteout(int32 EntryPoint, bool Temp_bool_Variable, float Temp_float_Variable, float Temp_float_Variable_1, bool K2Node_SwitchEnum_CmpSuccess, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue, class AFortPlayerController* CallFunc_Array_Get_Item, class AActor* K2Node_Event_MyTarget_1, const struct FGameplayCueParameters& K2Node_Event_Parameters_1, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents_1, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents_1, class UCameraShake* K2Node_Event_BurstCameraShakeInstance, class ADecalActor* K2Node_Event_BurstDecalInstance, class AActor* K2Node_Event_MyTarget, const struct FGameplayCueParameters& K2Node_Event_Parameters, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, float CallFunc_BreakGameplayCueParameters_NormalizedMagnitude, float CallFunc_BreakGameplayCueParameters_RawMagnitude, const struct FGameplayEffectContextHandle& CallFunc_BreakGameplayCueParameters_EffectContext, const struct FGameplayTag& CallFunc_BreakGameplayCueParameters_MatchedTagName, const struct FGameplayTag& CallFunc_BreakGameplayCueParameters_OriginalTag, const struct FGameplayTagContainer& CallFunc_BreakGameplayCueParameters_AggregatedSourceTags, const struct FGameplayTagContainer& CallFunc_BreakGameplayCueParameters_AggregatedTargetTags, const struct FVector& CallFunc_BreakGameplayCueParameters_Location, const struct FVector& CallFunc_BreakGameplayCueParameters_Normal, class AActor* CallFunc_BreakGameplayCueParameters_Instigator, class AActor* CallFunc_BreakGameplayCueParameters_EffectCauser, class UObject* CallFunc_BreakGameplayCueParameters_SourceObject, class UPhysicalMaterial* CallFunc_BreakGameplayCueParameters_PhysicalMaterial, int32 CallFunc_BreakGameplayCueParameters_GameplayEffectLevel, int32 CallFunc_BreakGameplayCueParameters_AbilityLevel, class USceneComponent* CallFunc_BreakGameplayCueParameters_TargetAttachComponent, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue_1, bool CallFunc_EqualEqual_FloatFloat_ReturnValue, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue_1, class AFortPlayerController* CallFunc_Array_Get_Item_1, float K2Node_Select_Default, int32 CallFunc_Conv_BoolToInt_ReturnValue, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "ExecuteUbergraph_GCN_Loop_Snow_Whiteout");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_Snow_Whiteout_C_ExecuteUbergraph_GCN_Loop_Snow_Whiteout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "ExecuteUbergraph_GCN_Loop_Snow_Whiteout");
+
+	Params::AGCN_Loop_Snow_Whiteout_C_ExecuteUbergraph_GCN_Loop_Snow_Whiteout_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -216,6 +256,4 @@ void AGCN_Loop_Snow_Whiteout_C::ExecuteUbergraph_GCN_Loop_Snow_Whiteout(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_Discoverable_Nutcracker.BP_Discoverable_Nutcracker_C
+// (Actor)
+
+class UClass* ABP_Discoverable_Nutcracker_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_Discoverable_Nutcracker_C");
+
+	return Clss;
+}
+
+
+// BP_Discoverable_Nutcracker_C BP_Discoverable_Nutcracker.Default__BP_Discoverable_Nutcracker_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_Discoverable_Nutcracker_C* ABP_Discoverable_Nutcracker_C::GetDefaultObj()
+{
+	static class ABP_Discoverable_Nutcracker_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_Discoverable_Nutcracker_C*>(ABP_Discoverable_Nutcracker_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_Discoverable_Nutcracker.BP_Discoverable_Nutcracker_C.HeadBoop__FinishedFunc
 // (BlueprintEvent)
 // Parameters:
 
 void ABP_Discoverable_Nutcracker_C::HeadBoop__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "HeadBoop__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Nutcracker_C_HeadBoop__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "HeadBoop__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void ABP_Discoverable_Nutcracker_C::HeadBoop__FinishedFunc()
 
 void ABP_Discoverable_Nutcracker_C::HeadBoop__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "HeadBoop__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Nutcracker_C_HeadBoop__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "HeadBoop__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void ABP_Discoverable_Nutcracker_C::HeadBoop__UpdateFunc()
 
 void ABP_Discoverable_Nutcracker_C::Timeline_0__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "Timeline_0__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Nutcracker_C_Timeline_0__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "Timeline_0__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void ABP_Discoverable_Nutcracker_C::Timeline_0__FinishedFunc()
 
 void ABP_Discoverable_Nutcracker_C::Timeline_0__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "Timeline_0__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Nutcracker_C_Timeline_0__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "Timeline_0__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -85,12 +118,14 @@ void ABP_Discoverable_Nutcracker_C::Timeline_0__UpdateFunc()
 
 void ABP_Discoverable_Nutcracker_C::Timeline_1__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "Timeline_1__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Nutcracker_C_Timeline_1__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "Timeline_1__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -101,12 +136,14 @@ void ABP_Discoverable_Nutcracker_C::Timeline_1__FinishedFunc()
 
 void ABP_Discoverable_Nutcracker_C::Timeline_1__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "Timeline_1__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Nutcracker_C_Timeline_1__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "Timeline_1__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -118,9 +155,12 @@ void ABP_Discoverable_Nutcracker_C::Timeline_1__UpdateFunc()
 
 void ABP_Discoverable_Nutcracker_C::ReceiveActorBeginOverlap(class AActor* OtherActor)
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "ReceiveActorBeginOverlap");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Nutcracker_C_ReceiveActorBeginOverlap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "ReceiveActorBeginOverlap");
+
+	Params::ABP_Discoverable_Nutcracker_C_ReceiveActorBeginOverlap_Params Parms{};
 
 	Parms.OtherActor = OtherActor;
 
@@ -135,12 +175,14 @@ void ABP_Discoverable_Nutcracker_C::ReceiveActorBeginOverlap(class AActor* Other
 
 void ABP_Discoverable_Nutcracker_C::Commit_OnSpecialInteraction()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "Commit_OnSpecialInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Nutcracker_C_Commit_OnSpecialInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "Commit_OnSpecialInteraction");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -152,9 +194,12 @@ void ABP_Discoverable_Nutcracker_C::Commit_OnSpecialInteraction()
 
 void ABP_Discoverable_Nutcracker_C::SaxDance(bool bIsStart)
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "SaxDance");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Nutcracker_C_SaxDance_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "SaxDance");
+
+	Params::ABP_Discoverable_Nutcracker_C_SaxDance_Params Parms{};
 
 	Parms.bIsStart = bIsStart;
 
@@ -172,9 +217,12 @@ void ABP_Discoverable_Nutcracker_C::SaxDance(bool bIsStart)
 
 void ABP_Discoverable_Nutcracker_C::NotifiedByDiscoverable(const struct FGameplayTag& ActionTag, const struct FGameplayTag& CameraTag, bool bIsStart)
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "NotifiedByDiscoverable");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Nutcracker_C_NotifiedByDiscoverable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "NotifiedByDiscoverable");
+
+	Params::ABP_Discoverable_Nutcracker_C_NotifiedByDiscoverable_Params Parms{};
 
 	Parms.ActionTag = ActionTag;
 	Parms.CameraTag = CameraTag;
@@ -191,12 +239,14 @@ void ABP_Discoverable_Nutcracker_C::NotifiedByDiscoverable(const struct FGamepla
 
 void ABP_Discoverable_Nutcracker_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Nutcracker_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -252,9 +302,12 @@ void ABP_Discoverable_Nutcracker_C::ReceiveBeginPlay()
 
 void ABP_Discoverable_Nutcracker_C::ExecuteUbergraph_BP_Discoverable_Nutcracker(int32 EntryPoint, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue_1, const struct FTransform& CallFunc_K2_GetComponentToWorld_ReturnValue, class AActor* K2Node_Event_OtherActor, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, bool K2Node_CustomEvent_bIsStart, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, float CallFunc_Add_FloatFloat_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FRotator& CallFunc_RLerp_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location_1, const struct FRotator& CallFunc_BreakTransform_Rotation_1, const struct FVector& CallFunc_BreakTransform_Scale_1, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult, float CallFunc_BreakRotator_Roll_1, float CallFunc_BreakRotator_Pitch_1, float CallFunc_BreakRotator_Yaw_1, float CallFunc_Add_FloatFloat_ReturnValue_1, const struct FRotator& CallFunc_MakeRotator_ReturnValue_1, const struct FRotator& CallFunc_RLerp_ReturnValue_1, const struct FGameplayTag& K2Node_Event_ActionTag, const struct FGameplayTag& K2Node_Event_CameraTag, bool K2Node_Event_bIsStart, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult_1, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location_2, const struct FRotator& CallFunc_BreakTransform_Rotation_2, const struct FVector& CallFunc_BreakTransform_Scale_2, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, float CallFunc_BreakRotator_Roll_2, float CallFunc_BreakRotator_Pitch_2, float CallFunc_BreakRotator_Yaw_2, const struct FVector& CallFunc_VLerp_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue_2, float CallFunc_Add_FloatFloat_ReturnValue_3, float CallFunc_Add_FloatFloat_ReturnValue_4, const struct FRotator& CallFunc_MakeRotator_ReturnValue_2, const struct FRotator& CallFunc_RLerp_ReturnValue_2, const struct FTransform& CallFunc_MakeTransform_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldTransform_SweepHitResult)
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "ExecuteUbergraph_BP_Discoverable_Nutcracker");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Nutcracker_C_ExecuteUbergraph_BP_Discoverable_Nutcracker_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Nutcracker_C", "ExecuteUbergraph_BP_Discoverable_Nutcracker");
+
+	Params::ABP_Discoverable_Nutcracker_C_ExecuteUbergraph_BP_Discoverable_Nutcracker_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_K2_GetRootComponent_ReturnValue = CallFunc_K2_GetRootComponent_ReturnValue;
@@ -308,6 +361,4 @@ void ABP_Discoverable_Nutcracker_C::ExecuteUbergraph_BP_Discoverable_Nutcracker(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

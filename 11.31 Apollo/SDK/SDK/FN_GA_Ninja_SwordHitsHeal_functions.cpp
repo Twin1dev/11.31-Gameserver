@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Ninja_SwordHitsHeal.GA_Ninja_SwordHitsHeal_C
+// (None)
+
+class UClass* UGA_Ninja_SwordHitsHeal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Ninja_SwordHitsHeal_C");
+
+	return Clss;
+}
+
+
+// GA_Ninja_SwordHitsHeal_C GA_Ninja_SwordHitsHeal.Default__GA_Ninja_SwordHitsHeal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Ninja_SwordHitsHeal_C* UGA_Ninja_SwordHitsHeal_C::GetDefaultObj()
+{
+	static class UGA_Ninja_SwordHitsHeal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Ninja_SwordHitsHeal_C*>(UGA_Ninja_SwordHitsHeal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Ninja_SwordHitsHeal.GA_Ninja_SwordHitsHeal_C.SetupAbility
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UGA_Ninja_SwordHitsHeal_C::SetupAbility(class UAbilitySystemComponent* AbilitySystem)
 {
-	static auto Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "SetupAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Ninja_SwordHitsHeal_C_SetupAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "SetupAbility");
+
+	Params::UGA_Ninja_SwordHitsHeal_C_SetupAbility_Params Parms{};
 
 	Parms.AbilitySystem = AbilitySystem;
 
@@ -43,9 +71,12 @@ void UGA_Ninja_SwordHitsHeal_C::SetupAbility(class UAbilitySystemComponent* Abil
 
 bool UGA_Ninja_SwordHitsHeal_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload, bool CallFunc_ShouldSwordHitsHealRespondToEvent_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "K2_ShouldAbilityRespondToEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Ninja_SwordHitsHeal_C_K2_ShouldAbilityRespondToEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "K2_ShouldAbilityRespondToEvent");
+
+	Params::UGA_Ninja_SwordHitsHeal_C_K2_ShouldAbilityRespondToEvent_Params Parms{};
 
 	Parms.ActorInfo = ActorInfo;
 	Parms.Payload = Payload;
@@ -65,9 +96,12 @@ bool UGA_Ninja_SwordHitsHeal_C::K2_ShouldAbilityRespondToEvent(const struct FGam
 
 void UGA_Ninja_SwordHitsHeal_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Ninja_SwordHitsHeal_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGA_Ninja_SwordHitsHeal_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -84,9 +118,12 @@ void UGA_Ninja_SwordHitsHeal_C::K2_ActivateAbilityFromEvent(struct FGameplayEven
 
 void UGA_Ninja_SwordHitsHeal_C::ExecuteUbergraph_GA_Ninja_SwordHitsHeal(int32 EntryPoint, const struct FGameplayEventData& K2Node_Event_EventData)
 {
-	static auto Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "ExecuteUbergraph_GA_Ninja_SwordHitsHeal");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Ninja_SwordHitsHeal_C_ExecuteUbergraph_GA_Ninja_SwordHitsHeal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Ninja_SwordHitsHeal_C", "ExecuteUbergraph_GA_Ninja_SwordHitsHeal");
+
+	Params::UGA_Ninja_SwordHitsHeal_C_ExecuteUbergraph_GA_Ninja_SwordHitsHeal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_EventData = K2Node_Event_EventData;
@@ -97,6 +134,4 @@ void UGA_Ninja_SwordHitsHeal_C::ExecuteUbergraph_GA_Ninja_SwordHitsHeal(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

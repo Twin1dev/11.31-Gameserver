@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -57,20 +54,13 @@ public:
 	bool                                         HadCompleted;                                      // 0x8(0x1)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function BattlePassItemTracker.BattlePassItemTracker_C.OnInterpStarted
-struct UBattlePassItemTracker_C_OnInterpStarted_Params
-{
-public:
-};
-
 // 0x11 (0x11 - 0x0)
 // Function BattlePassItemTracker.BattlePassItemTracker_C.ExecuteUbergraph_BattlePassItemTracker
 struct UBattlePassItemTracker_C_ExecuteUbergraph_BattlePassItemTracker_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1936[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_43B6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonNumericTextBlock*               K2Node_Event_NumericTextBlock;                     // 0x8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_HadCompleted;                         // 0x10(0x1)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -78,6 +68,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

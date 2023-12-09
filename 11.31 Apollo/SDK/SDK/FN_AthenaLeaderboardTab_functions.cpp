@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaLeaderboardTab.AthenaLeaderboardTab_C
+// (None)
+
+class UClass* UAthenaLeaderboardTab_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaLeaderboardTab_C");
+
+	return Clss;
+}
+
+
+// AthenaLeaderboardTab_C AthenaLeaderboardTab.Default__AthenaLeaderboardTab_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaLeaderboardTab_C* UAthenaLeaderboardTab_C::GetDefaultObj()
+{
+	static class UAthenaLeaderboardTab_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaLeaderboardTab_C*>(UAthenaLeaderboardTab_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AthenaLeaderboardTab.AthenaLeaderboardTab_C.Init Back Action
@@ -26,9 +51,12 @@ namespace SDK
 
 void UAthenaLeaderboardTab_C::Init_Back_Action(class UCommonInputSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_HasInputActionHandler_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "Init Back Action");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_Init_Back_Action_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "Init Back Action");
+
+	Params::UAthenaLeaderboardTab_C_Init_Back_Action_Params Parms{};
 
 	Parms.CallFunc_GetLocalPlayerSubsystem_ReturnValue = CallFunc_GetLocalPlayerSubsystem_ReturnValue;
 	Parms.CallFunc_GetCurrentInputType_ReturnValue = CallFunc_GetCurrentInputType_ReturnValue;
@@ -48,9 +76,12 @@ void UAthenaLeaderboardTab_C::Init_Back_Action(class UCommonInputSubsystem* Call
 
 void UAthenaLeaderboardTab_C::HandleBackAction(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "HandleBackAction");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_HandleBackAction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "HandleBackAction");
+
+	Params::UAthenaLeaderboardTab_C_HandleBackAction_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -69,9 +100,12 @@ void UAthenaLeaderboardTab_C::HandleBackAction(bool* PassThrough)
 
 void UAthenaLeaderboardTab_C::ToggleDisabledTabVisuals(bool bShouldBeDisabled, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "ToggleDisabledTabVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_ToggleDisabledTabVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "ToggleDisabledTabVisuals");
+
+	Params::UAthenaLeaderboardTab_C_ToggleDisabledTabVisuals_Params Parms{};
 
 	Parms.bShouldBeDisabled = bShouldBeDisabled;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
@@ -87,12 +121,14 @@ void UAthenaLeaderboardTab_C::ToggleDisabledTabVisuals(bool bShouldBeDisabled, b
 
 void UAthenaLeaderboardTab_C::OnShowQueryThrobber()
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnShowQueryThrobber");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_OnShowQueryThrobber_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnShowQueryThrobber");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -109,9 +145,12 @@ void UAthenaLeaderboardTab_C::OnShowQueryThrobber()
 
 void UAthenaLeaderboardTab_C::OnQueryStateChanged(bool bQueryInProgress, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_CanShowFriendsOnlyLeaderboard_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_BooleanAND_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnQueryStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_OnQueryStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnQueryStateChanged");
+
+	Params::UAthenaLeaderboardTab_C_OnQueryStateChanged_Params Parms{};
 
 	Parms.bQueryInProgress = bQueryInProgress;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
@@ -137,9 +176,12 @@ void UAthenaLeaderboardTab_C::OnQueryStateChanged(bool bQueryInProgress, bool Ca
 
 void UAthenaLeaderboardTab_C::OnFriendTypeChangeGamepad(bool* bCommitted, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, class UAthenaRotator_C* K2Node_DynamicCast_AsAthena_Rotator, bool K2Node_DynamicCast_bSuccess, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnFriendTypeChangeGamepad");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_OnFriendTypeChangeGamepad_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnFriendTypeChangeGamepad");
+
+	Params::UAthenaLeaderboardTab_C_OnFriendTypeChangeGamepad_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetCurrentInputType_ReturnValue = CallFunc_GetCurrentInputType_ReturnValue;
@@ -167,9 +209,12 @@ void UAthenaLeaderboardTab_C::OnFriendTypeChangeGamepad(bool* bCommitted, class 
 
 void UAthenaLeaderboardTab_C::OnPlaylistChangeGamepad(bool* bCommitted, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UAthenaRotator_C* K2Node_DynamicCast_AsAthena_Rotator, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnPlaylistChangeGamepad");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_OnPlaylistChangeGamepad_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnPlaylistChangeGamepad");
+
+	Params::UAthenaLeaderboardTab_C_OnPlaylistChangeGamepad_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetCurrentInputType_ReturnValue = CallFunc_GetCurrentInputType_ReturnValue;
@@ -193,9 +238,12 @@ void UAthenaLeaderboardTab_C::OnPlaylistChangeGamepad(bool* bCommitted, class UC
 
 void UAthenaLeaderboardTab_C::BndEvt__SecondaryTabList_K2Node_ComponentBoundEvent_189_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "BndEvt__SecondaryTabList_K2Node_ComponentBoundEvent_189_OnTabButtonCreated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_BndEvt__SecondaryTabList_K2Node_ComponentBoundEvent_189_OnTabButtonCreated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "BndEvt__SecondaryTabList_K2Node_ComponentBoundEvent_189_OnTabButtonCreated__DelegateSignature");
+
+	Params::UAthenaLeaderboardTab_C_BndEvt__SecondaryTabList_K2Node_ComponentBoundEvent_189_OnTabButtonCreated__DelegateSignature_Params Parms{};
 
 	Parms.TabId = TabId;
 	Parms.TabButton = TabButton;
@@ -211,12 +259,14 @@ void UAthenaLeaderboardTab_C::BndEvt__SecondaryTabList_K2Node_ComponentBoundEven
 
 void UAthenaLeaderboardTab_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -229,9 +279,12 @@ void UAthenaLeaderboardTab_C::Construct()
 
 void UAthenaLeaderboardTab_C::BndEvt__LeaderboardSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "BndEvt__LeaderboardSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_BndEvt__LeaderboardSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "BndEvt__LeaderboardSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature");
+
+	Params::UAthenaLeaderboardTab_C_BndEvt__LeaderboardSwitcher_K2Node_ComponentBoundEvent_17_OnActiveWidgetChanged__DelegateSignature_Params Parms{};
 
 	Parms.ActiveWidget = ActiveWidget;
 	Parms.ActiveWidgetIndex = ActiveWidgetIndex;
@@ -248,9 +301,12 @@ void UAthenaLeaderboardTab_C::BndEvt__LeaderboardSwitcher_K2Node_ComponentBoundE
 
 void UAthenaLeaderboardTab_C::BndEvt__MatchRotator_K2Node_ComponentBoundEvent_39_OnRotated__DelegateSignature(int32 Value)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "BndEvt__MatchRotator_K2Node_ComponentBoundEvent_39_OnRotated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_BndEvt__MatchRotator_K2Node_ComponentBoundEvent_39_OnRotated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "BndEvt__MatchRotator_K2Node_ComponentBoundEvent_39_OnRotated__DelegateSignature");
+
+	Params::UAthenaLeaderboardTab_C_BndEvt__MatchRotator_K2Node_ComponentBoundEvent_39_OnRotated__DelegateSignature_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -266,9 +322,12 @@ void UAthenaLeaderboardTab_C::BndEvt__MatchRotator_K2Node_ComponentBoundEvent_39
 
 void UAthenaLeaderboardTab_C::BndEvt__FriendsRotator_K2Node_ComponentBoundEvent_63_OnRotated__DelegateSignature(int32 Value)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "BndEvt__FriendsRotator_K2Node_ComponentBoundEvent_63_OnRotated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_BndEvt__FriendsRotator_K2Node_ComponentBoundEvent_63_OnRotated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "BndEvt__FriendsRotator_K2Node_ComponentBoundEvent_63_OnRotated__DelegateSignature");
+
+	Params::UAthenaLeaderboardTab_C_BndEvt__FriendsRotator_K2Node_ComponentBoundEvent_63_OnRotated__DelegateSignature_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -285,9 +344,12 @@ void UAthenaLeaderboardTab_C::BndEvt__FriendsRotator_K2Node_ComponentBoundEvent_
 
 void UAthenaLeaderboardTab_C::BndEvt__LeaderboardTabList_K2Node_ComponentBoundEvent_57_OnTabButtonRemoved__DelegateSignature(class FName TabId, class UCommonButton* TabButton)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "BndEvt__LeaderboardTabList_K2Node_ComponentBoundEvent_57_OnTabButtonRemoved__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_BndEvt__LeaderboardTabList_K2Node_ComponentBoundEvent_57_OnTabButtonRemoved__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "BndEvt__LeaderboardTabList_K2Node_ComponentBoundEvent_57_OnTabButtonRemoved__DelegateSignature");
+
+	Params::UAthenaLeaderboardTab_C_BndEvt__LeaderboardTabList_K2Node_ComponentBoundEvent_57_OnTabButtonRemoved__DelegateSignature_Params Parms{};
 
 	Parms.TabId = TabId;
 	Parms.TabButton = TabButton;
@@ -305,9 +367,12 @@ void UAthenaLeaderboardTab_C::BndEvt__LeaderboardTabList_K2Node_ComponentBoundEv
 
 void UAthenaLeaderboardTab_C::OnUpdateTabButtonText(class UCommonButton* Button, struct FAthenaPlaylistLeaderboardData& PlaylistTabData)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnUpdateTabButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_OnUpdateTabButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnUpdateTabButtonText");
+
+	Params::UAthenaLeaderboardTab_C_OnUpdateTabButtonText_Params Parms{};
 
 	Parms.Button = Button;
 	Parms.PlaylistTabData = PlaylistTabData;
@@ -326,9 +391,12 @@ void UAthenaLeaderboardTab_C::OnUpdateTabButtonText(class UCommonButton* Button,
 
 void UAthenaLeaderboardTab_C::OnUpdateLeaderboardListUI(bool bWasSuccessful, class UFortLeaderboardRowProxyInstance* LocalUserRow, class FText& QueryErrorStr)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnUpdateLeaderboardListUI");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_OnUpdateLeaderboardListUI_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnUpdateLeaderboardListUI");
+
+	Params::UAthenaLeaderboardTab_C_OnUpdateLeaderboardListUI_Params Parms{};
 
 	Parms.bWasSuccessful = bWasSuccessful;
 	Parms.LocalUserRow = LocalUserRow;
@@ -346,9 +414,12 @@ void UAthenaLeaderboardTab_C::OnUpdateLeaderboardListUI(bool bWasSuccessful, cla
 
 void UAthenaLeaderboardTab_C::OnUpdateListHeader(struct FAthenaPlaylistLeaderboardData& PlaylistTabData)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnUpdateListHeader");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_OnUpdateListHeader_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnUpdateListHeader");
+
+	Params::UAthenaLeaderboardTab_C_OnUpdateListHeader_Params Parms{};
 
 	Parms.PlaylistTabData = PlaylistTabData;
 
@@ -363,12 +434,14 @@ void UAthenaLeaderboardTab_C::OnUpdateListHeader(struct FAthenaPlaylistLeaderboa
 
 void UAthenaLeaderboardTab_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -379,12 +452,14 @@ void UAthenaLeaderboardTab_C::BP_OnDeactivated()
 
 void UAthenaLeaderboardTab_C::OnQueryFinished()
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnQueryFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_OnQueryFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnQueryFinished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -395,12 +470,14 @@ void UAthenaLeaderboardTab_C::OnQueryFinished()
 
 void UAthenaLeaderboardTab_C::OnQueryStarted()
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnQueryStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_OnQueryStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnQueryStarted");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -411,12 +488,14 @@ void UAthenaLeaderboardTab_C::OnQueryStarted()
 
 void UAthenaLeaderboardTab_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -428,9 +507,12 @@ void UAthenaLeaderboardTab_C::BP_OnActivated()
 
 void UAthenaLeaderboardTab_C::OnInputMethodChanged_Event_0(enum class ECommonInputType bNewInputType)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnInputMethodChanged_Event_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_OnInputMethodChanged_Event_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "OnInputMethodChanged_Event_0");
+
+	Params::UAthenaLeaderboardTab_C_OnInputMethodChanged_Event_0_Params Parms{};
 
 	Parms.bNewInputType = bNewInputType;
 
@@ -446,9 +528,12 @@ void UAthenaLeaderboardTab_C::OnInputMethodChanged_Event_0(enum class ECommonInp
 
 void UAthenaLeaderboardTab_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaLeaderboardTab_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -464,9 +549,12 @@ void UAthenaLeaderboardTab_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEve
 
 void UAthenaLeaderboardTab_C::BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaLeaderboardTab_C_BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -527,7 +615,7 @@ void UAthenaLeaderboardTab_C::BndEvt__MobileCloseButton2_K2Node_ComponentBoundEv
 // bool                               K2Node_Event_bWasSuccessful                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortLeaderboardRowProxyInstance*K2Node_Event_LocalUserRow                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        K2Node_Event_QueryErrorStr                                       (ConstParm)
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 // class UAthenaLeaderboardTabButton_C*K2Node_DynamicCast_AsAthena_Leaderboard_Tab_Button               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_NotEqual_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -575,9 +663,12 @@ void UAthenaLeaderboardTab_C::BndEvt__MobileCloseButton2_K2Node_ComponentBoundEv
 
 void UAthenaLeaderboardTab_C::ExecuteUbergraph_AthenaLeaderboardTab(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UFortLeaderboardContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_Variable, bool CallFunc_CanShowLeaderboards_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, class UFortLeaderboardContext* CallFunc_GetContext_ReturnValue_1, bool CallFunc_CanShowGlobalLeaderboards_ReturnValue, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_7, class UCommonInputSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue, bool Temp_bool_Variable_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class ESlateVisibility Temp_byte_Variable_8, enum class ESlateVisibility Temp_byte_Variable_9, bool Temp_bool_Variable_4, enum class ESlateVisibility Temp_byte_Variable_10, enum class ESlateVisibility Temp_byte_Variable_11, class UFortLeaderboardContext* CallFunc_GetContext_ReturnValue_2, bool Temp_bool_Variable_5, bool CallFunc_CanShowStats_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_12, enum class ESlateVisibility Temp_byte_Variable_13, bool Temp_bool_Variable_6, enum class ESlateVisibility K2Node_Select_Default_1, enum class ESlateVisibility Temp_byte_Variable_14, enum class ESlateVisibility Temp_byte_Variable_15, enum class ESlateVisibility K2Node_Select_Default_2, class FName K2Node_ComponentBoundEvent_TabId_1, class UCommonButton* K2Node_ComponentBoundEvent_TabButton_1, class UWidget* K2Node_ComponentBoundEvent_ActiveWidget, int32 K2Node_ComponentBoundEvent_ActiveWidgetIndex, int32 K2Node_ComponentBoundEvent_Value_1, int32 K2Node_ComponentBoundEvent_Value, class FName K2Node_ComponentBoundEvent_TabId, class UCommonButton* K2Node_ComponentBoundEvent_TabButton, bool CallFunc_Map_Remove_ReturnValue, class UCommonButton* K2Node_Event_Button, const struct FAthenaPlaylistLeaderboardData& K2Node_Event_PlaylistTabData_1, bool K2Node_Event_bWasSuccessful, class UFortLeaderboardRowProxyInstance* K2Node_Event_LocalUserRow, class FText K2Node_Event_QueryErrorStr, class FText CallFunc_TextToUpper_ReturnValue, class UAthenaLeaderboardTabButton_C* K2Node_DynamicCast_AsAthena_Leaderboard_Tab_Button, bool K2Node_DynamicCast_bSuccess, bool CallFunc_NotEqual_IntInt_ReturnValue, const struct FAthenaPlaylistLeaderboardData& K2Node_Event_PlaylistTabData, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, bool Temp_bool_Variable_7, enum class ESlateVisibility K2Node_Select_Default_3, bool CallFunc_CanShowFriendsOnlyLeaderboard_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_16, enum class ESlateVisibility Temp_byte_Variable_17, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_4, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_5, bool CallFunc_SelectTabByID_ReturnValue, bool Temp_bool_Variable_8, enum class ESlateVisibility K2Node_Select_Default_6, class UAthenaRotator_C* K2Node_DynamicCast_AsAthena_Rotator, bool K2Node_DynamicCast_bSuccess_1, enum class ESlateVisibility Temp_byte_Variable_18, class UAthenaRotator_C* K2Node_DynamicCast_AsAthena_Rotator_1, bool K2Node_DynamicCast_bSuccess_2, enum class ESlateVisibility Temp_byte_Variable_19, bool Temp_bool_Variable_9, bool CallFunc_HandleBackAction_PassThrough, bool CallFunc_IsMobileGame_ReturnValue, class UFortLeaderboardContext* CallFunc_GetContext_ReturnValue_3, enum class ESlateVisibility K2Node_Select_Default_7, bool CallFunc_CanShowLeaderboards_ReturnValue_1, bool CallFunc_IsMobileGame_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_8, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_4, enum class ECommonInputType K2Node_CustomEvent_bNewInputType, int32 Temp_int_Variable, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, int32 Temp_int_Variable_1, enum class ESlateVisibility K2Node_Select_Default_9, bool Temp_bool_Variable_10, int32 K2Node_Select_Default_10)
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTab_C", "ExecuteUbergraph_AthenaLeaderboardTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLeaderboardTab_C", "ExecuteUbergraph_AthenaLeaderboardTab");
+
+	Params::UAthenaLeaderboardTab_C_ExecuteUbergraph_AthenaLeaderboardTab_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -680,6 +771,4 @@ void UAthenaLeaderboardTab_C::ExecuteUbergraph_AthenaLeaderboardTab(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

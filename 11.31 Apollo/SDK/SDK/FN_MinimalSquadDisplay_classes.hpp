@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -20,11 +17,8 @@ public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x268(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UImage*                                SquadRibbon;                                       // 0x270(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("MinimalSquadDisplay_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UMinimalSquadDisplay_C* GetDefaultObj();
 
 	void OnLoaded_1B34C3FE47597A4DBA2DA7AFCF8744FB(class UObject* Loaded);
 	void OnLoaded_86B795124D19C878C8559FA7E78726E0(class UObject* Loaded);
@@ -35,6 +29,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaMOTDWatchVideoWidget.AthenaMOTDWatchVideoWidget_C
+// (None)
+
+class UClass* UAthenaMOTDWatchVideoWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaMOTDWatchVideoWidget_C");
+
+	return Clss;
+}
+
+
+// AthenaMOTDWatchVideoWidget_C AthenaMOTDWatchVideoWidget.Default__AthenaMOTDWatchVideoWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaMOTDWatchVideoWidget_C* UAthenaMOTDWatchVideoWidget_C::GetDefaultObj()
+{
+	static class UAthenaMOTDWatchVideoWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaMOTDWatchVideoWidget_C*>(UAthenaMOTDWatchVideoWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaMOTDWatchVideoWidget.AthenaMOTDWatchVideoWidget_C.BindVideoEvents
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UAthenaMOTDWatchVideoWidget_C::BindVideoEvents(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDWatchVideoWidget_C", "BindVideoEvents");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDWatchVideoWidget_C_BindVideoEvents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDWatchVideoWidget_C", "BindVideoEvents");
+
+	Params::UAthenaMOTDWatchVideoWidget_C_BindVideoEvents_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
@@ -41,12 +69,14 @@ void UAthenaMOTDWatchVideoWidget_C::BindVideoEvents(UDelegateProperty_ K2Node_Cr
 
 void UAthenaMOTDWatchVideoWidget_C::CloseWidgetNoURL()
 {
-	static auto Func = Class->GetFunction("AthenaMOTDWatchVideoWidget_C", "CloseWidgetNoURL");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDWatchVideoWidget_C_CloseWidgetNoURL_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDWatchVideoWidget_C", "CloseWidgetNoURL");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -60,9 +90,12 @@ void UAthenaMOTDWatchVideoWidget_C::CloseWidgetNoURL()
 
 void UAthenaMOTDWatchVideoWidget_C::CloseWidget(const class FString& URL, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDWatchVideoWidget_C", "CloseWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDWatchVideoWidget_C_CloseWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDWatchVideoWidget_C", "CloseWidget");
+
+	Params::UAthenaMOTDWatchVideoWidget_C_CloseWidget_Params Parms{};
 
 	Parms.URL = URL;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -80,9 +113,12 @@ void UAthenaMOTDWatchVideoWidget_C::CloseWidget(const class FString& URL, UDeleg
 
 void UAthenaMOTDWatchVideoWidget_C::OnPopulateNews(struct FAthenaNewsEntry& NewsEntry)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDWatchVideoWidget_C", "OnPopulateNews");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDWatchVideoWidget_C_OnPopulateNews_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDWatchVideoWidget_C", "OnPopulateNews");
+
+	Params::UAthenaMOTDWatchVideoWidget_C_OnPopulateNews_Params Parms{};
 
 	Parms.NewsEntry = NewsEntry;
 
@@ -106,9 +142,12 @@ void UAthenaMOTDWatchVideoWidget_C::OnPopulateNews(struct FAthenaNewsEntry& News
 
 void UAthenaMOTDWatchVideoWidget_C::ExecuteUbergraph_AthenaMOTDWatchVideoWidget(int32 EntryPoint, const struct FAthenaNewsEntry& K2Node_Event_NewsEntry, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UActivatableMovieWidget_Monolithic_C* CallFunc_Create_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue_1, class FName CallFunc_Conv_StringToName_ReturnValue_2, bool CallFunc_LoadStreamingVideo_NoAutoPlay, class UFortStreamMediaSource* CallFunc_LoadStreamingVideo_MediaSource)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDWatchVideoWidget_C", "ExecuteUbergraph_AthenaMOTDWatchVideoWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDWatchVideoWidget_C", "ExecuteUbergraph_AthenaMOTDWatchVideoWidget");
+
+	Params::UAthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_NewsEntry = K2Node_Event_NewsEntry;
@@ -126,6 +165,4 @@ void UAthenaMOTDWatchVideoWidget_C::ExecuteUbergraph_AthenaMOTDWatchVideoWidget(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

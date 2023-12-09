@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -17,7 +14,7 @@ namespace SDK
 class ADevice_Volume_Floor_C : public ABuildingToy_C
 {
 public:
-	uint8                                        Pad_52D9[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5883[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xC98(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UFortGameplayReceiverMessageComponent* DisableWhenReceived;                               // 0xCA0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UFortGameplayReceiverMessageComponent* EnableWhenReceived;                                // 0xCA8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -27,7 +24,7 @@ public:
 	class UBoxComponent*                         Trigger;                                           // 0xCC8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                       Scene;                                             // 0xCD0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                         ZoneVisibleInGame;                                 // 0xCD8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_52DA[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5884[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        ZoneZScale;                                        // 0xCDC(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        ZoneXScale;                                        // 0xCE0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        ZoneYScale;                                        // 0xCE4(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -39,7 +36,7 @@ public:
 	struct FVector                               TriggerLocationDotProduct;                         // 0xD1C(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        ZoneProtectedTeam;                                 // 0xD28(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         BaseMeshVisibleInGame;                             // 0xD2C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_52DB[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5885[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class AActor*>                        AffectedPlayersInVehicles;                         // 0xD30(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance)
 	bool                                         bDamageEmptyVehicles;                              // 0xD40(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         bDamagePlayers;                                    // 0xD41(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -48,11 +45,8 @@ public:
 	bool                                         EnabledOnStart;                                    // 0xD44(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         bEnabled;                                          // 0xD45(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("Device_Volume_Floor_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ADevice_Volume_Floor_C* GetDefaultObj();
 
 	void Transmit_if_Valid_Actor(class UFortGameplayTriggerMessageComponent* Transmitter, class AActor* Actor, bool Enter, bool* Valid, TSet<enum class EFortMinigameState> Exit_Game_States, TSet<enum class EFortMinigameState> Enter_Game_States, bool CallFunc_HasAuthority_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, class AController* CallFunc_GetController_ReturnValue, uint8 CallFunc_GetActorTeam_ReturnValue, TSet<enum class EFortMinigameState> K2Node_MakeVariable_MakeVariableOutput, bool Temp_bool_Variable, TSet<enum class EFortMinigameState> K2Node_Select_Default, TSet<enum class EFortMinigameState> K2Node_MakeVariable_MakeVariableOutput_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Set_Contains_ReturnValue, uint8 CallFunc_Conv_IntToByte_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, bool CallFunc_BooleanAND_ReturnValue);
 	void Minigame_State_Logic(enum class EFortMinigameState State, bool CallFunc_HasAuthority_ReturnValue, enum class EFortMinigameExec CallFunc_K2_IsInProgress_OutExec, bool CallFunc_IsValid_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_IsPregame_ReturnValue);
@@ -84,6 +78,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

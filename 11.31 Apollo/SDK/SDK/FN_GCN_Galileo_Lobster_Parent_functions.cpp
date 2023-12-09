@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCN_Galileo_Lobster_Parent.GCN_Galileo_Lobster_Parent_C
+// (None)
+
+class UClass* UGCN_Galileo_Lobster_Parent_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCN_Galileo_Lobster_Parent_C");
+
+	return Clss;
+}
+
+
+// GCN_Galileo_Lobster_Parent_C GCN_Galileo_Lobster_Parent.Default__GCN_Galileo_Lobster_Parent_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGCN_Galileo_Lobster_Parent_C* UGCN_Galileo_Lobster_Parent_C::GetDefaultObj()
+{
+	static class UGCN_Galileo_Lobster_Parent_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGCN_Galileo_Lobster_Parent_C*>(UGCN_Galileo_Lobster_Parent_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCN_Galileo_Lobster_Parent.GCN_Galileo_Lobster_Parent_C.GetSoundFromBank
@@ -24,23 +49,26 @@ namespace SDK
 // class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       CallFunc_GetWeaponDataGameplayTags_GameplayTags                  ()
+// struct FGameplayTagContainer       CallFunc_GetWeaponDataGameplayTags_GameplayTags                  (None)
 // TArray<struct FGameplayTag>        CallFunc_BreakGameplayTagContainer_GameplayTags                  (ZeroConstructor, ReferenceParm)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                CallFunc_Array_Get_Item                                          (NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                CallFunc_MakeLiteralGameplayTag_ReturnValue                      (NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       CallFunc_MakeLiteralGameplayTagContainer_ReturnValue             ()
+// struct FGameplayTagContainer       CallFunc_MakeLiteralGameplayTagContainer_ReturnValue             (None)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class USoundBase*                  CallFunc_GetSoundToPlay_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UGCN_Galileo_Lobster_Parent_C::GetSoundFromBank(class AActor* Tagged_Actor, bool* Sound_Exists, class USoundBase** Sound, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, int32 Temp_int_Array_Index_Variable, const struct FGameplayTagContainer& CallFunc_GetWeaponDataGameplayTags_GameplayTags, TArray<struct FGameplayTag>& CallFunc_BreakGameplayTagContainer_GameplayTags, int32 Temp_int_Loop_Counter_Variable, const struct FGameplayTag& CallFunc_Array_Get_Item, const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, const struct FGameplayTagContainer& CallFunc_MakeLiteralGameplayTagContainer_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, class USoundBase* CallFunc_GetSoundToPlay_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCN_Galileo_Lobster_Parent_C", "GetSoundFromBank");
+	static class UFunction* Func = nullptr;
 
-	Params::UGCN_Galileo_Lobster_Parent_C_GetSoundFromBank_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Galileo_Lobster_Parent_C", "GetSoundFromBank");
+
+	Params::UGCN_Galileo_Lobster_Parent_C_GetSoundFromBank_Params Parms{};
 
 	Parms.Tagged_Actor = Tagged_Actor;
 	Parms.K2Node_DynamicCast_AsFort_Player_Pawn = K2Node_DynamicCast_AsFort_Player_Pawn;
@@ -86,9 +114,12 @@ void UGCN_Galileo_Lobster_Parent_C::GetSoundFromBank(class AActor* Tagged_Actor,
 
 void UGCN_Galileo_Lobster_Parent_C::OnBurst(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance, class UAudioComponent* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_GetSoundFromBank_Sound_Exists, class USoundBase* CallFunc_GetSoundFromBank_Sound, bool CallFunc_Greater_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCN_Galileo_Lobster_Parent_C", "OnBurst");
+	static class UFunction* Func = nullptr;
 
-	Params::UGCN_Galileo_Lobster_Parent_C_OnBurst_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Galileo_Lobster_Parent_C", "OnBurst");
+
+	Params::UGCN_Galileo_Lobster_Parent_C_OnBurst_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -108,6 +139,4 @@ void UGCN_Galileo_Lobster_Parent_C::OnBurst(class AActor* MyTarget, struct FGame
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

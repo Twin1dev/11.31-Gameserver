@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass MinimalSquadDisplay.MinimalSquadDisplay_C
+// (None)
+
+class UClass* UMinimalSquadDisplay_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MinimalSquadDisplay_C");
+
+	return Clss;
+}
+
+
+// MinimalSquadDisplay_C MinimalSquadDisplay.Default__MinimalSquadDisplay_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMinimalSquadDisplay_C* UMinimalSquadDisplay_C::GetDefaultObj()
+{
+	static class UMinimalSquadDisplay_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMinimalSquadDisplay_C*>(UMinimalSquadDisplay_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MinimalSquadDisplay.MinimalSquadDisplay_C.OnLoaded_1B34C3FE47597A4DBA2DA7AFCF8744FB
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UMinimalSquadDisplay_C::OnLoaded_1B34C3FE47597A4DBA2DA7AFCF8744FB(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("MinimalSquadDisplay_C", "OnLoaded_1B34C3FE47597A4DBA2DA7AFCF8744FB");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinimalSquadDisplay_C_OnLoaded_1B34C3FE47597A4DBA2DA7AFCF8744FB_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinimalSquadDisplay_C", "OnLoaded_1B34C3FE47597A4DBA2DA7AFCF8744FB");
+
+	Params::UMinimalSquadDisplay_C_OnLoaded_1B34C3FE47597A4DBA2DA7AFCF8744FB_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -40,9 +68,12 @@ void UMinimalSquadDisplay_C::OnLoaded_1B34C3FE47597A4DBA2DA7AFCF8744FB(class UOb
 
 void UMinimalSquadDisplay_C::OnLoaded_86B795124D19C878C8559FA7E78726E0(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("MinimalSquadDisplay_C", "OnLoaded_86B795124D19C878C8559FA7E78726E0");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinimalSquadDisplay_C_OnLoaded_86B795124D19C878C8559FA7E78726E0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinimalSquadDisplay_C", "OnLoaded_86B795124D19C878C8559FA7E78726E0");
+
+	Params::UMinimalSquadDisplay_C_OnLoaded_86B795124D19C878C8559FA7E78726E0_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -58,9 +89,12 @@ void UMinimalSquadDisplay_C::OnLoaded_86B795124D19C878C8559FA7E78726E0(class UOb
 
 void UMinimalSquadDisplay_C::OnSquadAssigned(struct FAthenaTeamDisplayInfo& SquadStyle)
 {
-	static auto Func = Class->GetFunction("MinimalSquadDisplay_C", "OnSquadAssigned");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinimalSquadDisplay_C_OnSquadAssigned_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinimalSquadDisplay_C", "OnSquadAssigned");
+
+	Params::UMinimalSquadDisplay_C_OnSquadAssigned_Params Parms{};
 
 	Parms.SquadStyle = SquadStyle;
 
@@ -77,9 +111,12 @@ void UMinimalSquadDisplay_C::OnSquadAssigned(struct FAthenaTeamDisplayInfo& Squa
 
 void UMinimalSquadDisplay_C::OnSquadIsEmptyChanged(bool bSquadIsEmpty, bool bMultipleSquadsPopulated)
 {
-	static auto Func = Class->GetFunction("MinimalSquadDisplay_C", "OnSquadIsEmptyChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinimalSquadDisplay_C_OnSquadIsEmptyChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinimalSquadDisplay_C", "OnSquadIsEmptyChanged");
+
+	Params::UMinimalSquadDisplay_C_OnSquadIsEmptyChanged_Params Parms{};
 
 	Parms.bSquadIsEmpty = bSquadIsEmpty;
 	Parms.bMultipleSquadsPopulated = bMultipleSquadsPopulated;
@@ -114,9 +151,12 @@ void UMinimalSquadDisplay_C::OnSquadIsEmptyChanged(bool bSquadIsEmpty, bool bMul
 
 void UMinimalSquadDisplay_C::ExecuteUbergraph_MinimalSquadDisplay(int32 EntryPoint, bool K2Node_Event_bSquadIsEmpty, bool K2Node_Event_bMultipleSquadsPopulated, class UObject* K2Node_CustomEvent_Loaded_1, bool CallFunc_Not_PreBool_ReturnValue, class UObject* Temp_object_Variable, bool CallFunc_BooleanAND_ReturnValue, class UObject* K2Node_CustomEvent_Loaded, class UObject* Temp_object_Variable_1, class UTexture* K2Node_DynamicCast_AsTexture, bool K2Node_DynamicCast_bSuccess, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, const struct FAthenaTeamDisplayInfo& K2Node_Event_SquadStyle, enum class ESlateVisibility K2Node_Select_Default, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MinimalSquadDisplay_C", "ExecuteUbergraph_MinimalSquadDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinimalSquadDisplay_C_ExecuteUbergraph_MinimalSquadDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinimalSquadDisplay_C", "ExecuteUbergraph_MinimalSquadDisplay");
+
+	Params::UMinimalSquadDisplay_C_ExecuteUbergraph_MinimalSquadDisplay_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bSquadIsEmpty = K2Node_Event_bSquadIsEmpty;
@@ -144,6 +184,4 @@ void UMinimalSquadDisplay_C::ExecuteUbergraph_MinimalSquadDisplay(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

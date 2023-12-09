@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,17 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaRotator.AthenaRotator_C
+// (None)
+
+class UClass* UAthenaRotator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaRotator_C");
+
+	return Clss;
+}
+
+
+// AthenaRotator_C AthenaRotator.Default__AthenaRotator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaRotator_C* UAthenaRotator_C::GetDefaultObj()
+{
+	static class UAthenaRotator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaRotator_C*>(UAthenaRotator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaRotator.AthenaRotator_C.ConfigureForOneDirectionMode
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               UseOneDirectionalMode                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSlateBrush                 CallFunc_NoResourceBrush_ReturnValue                             ()
+// struct FSlateBrush                 CallFunc_NoResourceBrush_ReturnValue                             (None)
 
 void UAthenaRotator_C::ConfigureForOneDirectionMode(bool UseOneDirectionalMode, const struct FSlateBrush& CallFunc_NoResourceBrush_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaRotator_C", "ConfigureForOneDirectionMode");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaRotator_C_ConfigureForOneDirectionMode_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaRotator_C", "ConfigureForOneDirectionMode");
+
+	Params::UAthenaRotator_C_ConfigureForOneDirectionMode_Params Parms{};
 
 	Parms.UseOneDirectionalMode = UseOneDirectionalMode;
 	Parms.CallFunc_NoResourceBrush_ReturnValue = CallFunc_NoResourceBrush_ReturnValue;
@@ -43,9 +71,12 @@ void UAthenaRotator_C::ConfigureForOneDirectionMode(bool UseOneDirectionalMode, 
 
 void UAthenaRotator_C::ChangeDirection(bool bDirection, bool CallFunc_IsInteractionEnabled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaRotator_C", "ChangeDirection");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaRotator_C_ChangeDirection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaRotator_C", "ChangeDirection");
+
+	Params::UAthenaRotator_C_ChangeDirection_Params Parms{};
 
 	Parms.bDirection = bDirection;
 	Parms.CallFunc_IsInteractionEnabled_ReturnValue = CallFunc_IsInteractionEnabled_ReturnValue;
@@ -61,12 +92,14 @@ void UAthenaRotator_C::ChangeDirection(bool bDirection, bool CallFunc_IsInteract
 
 void UAthenaRotator_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaRotator_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaRotator_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaRotator_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -78,9 +111,12 @@ void UAthenaRotator_C::Construct()
 
 void UAthenaRotator_C::BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaRotator_C", "BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaRotator_C", "BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -96,9 +132,12 @@ void UAthenaRotator_C::BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonBut
 
 void UAthenaRotator_C::BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaRotator_C", "BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaRotator_C", "BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -115,9 +154,12 @@ void UAthenaRotator_C::BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonB
 
 void UAthenaRotator_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto Func = Class->GetFunction("AthenaRotator_C", "Tick");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaRotator_C_Tick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaRotator_C", "Tick");
+
+	Params::UAthenaRotator_C_Tick_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InDeltaTime = InDeltaTime;
@@ -134,9 +176,12 @@ void UAthenaRotator_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTim
 
 void UAthenaRotator_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AthenaRotator_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaRotator_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaRotator_C", "PreConstruct");
+
+	Params::UAthenaRotator_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -151,12 +196,14 @@ void UAthenaRotator_C::PreConstruct(bool IsDesignTime)
 
 void UAthenaRotator_C::BP_OnClicked()
 {
-	static auto Func = Class->GetFunction("AthenaRotator_C", "BP_OnClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaRotator_C_BP_OnClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaRotator_C", "BP_OnClicked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -193,9 +240,12 @@ void UAthenaRotator_C::BP_OnClicked()
 
 void UAthenaRotator_C::ExecuteUbergraph_AthenaRotator(int32 EntryPoint, bool CallFunc_IsMobileGame_ReturnValue, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_1, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime, const struct FWidgetTransform& K2Node_MakeStruct_WidgetTransform, const struct FWidgetTransform& K2Node_MakeStruct_WidgetTransform_1, bool CallFunc_IsInteractionEnabled_ReturnValue, bool K2Node_Event_IsDesignTime, bool CallFunc_IsInteractionEnabled_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsHovered_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaRotator_C", "ExecuteUbergraph_AthenaRotator");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaRotator_C_ExecuteUbergraph_AthenaRotator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaRotator_C", "ExecuteUbergraph_AthenaRotator");
+
+	Params::UAthenaRotator_C_ExecuteUbergraph_AthenaRotator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsMobileGame_ReturnValue = CallFunc_IsMobileGame_ReturnValue;
@@ -230,6 +280,4 @@ void UAthenaRotator_C::ExecuteUbergraph_AthenaRotator(int32 EntryPoint, bool Cal
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

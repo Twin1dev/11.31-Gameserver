@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ComOptionReveal.ComOptionReveal_C
+// (None)
+
+class UClass* UComOptionReveal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ComOptionReveal_C");
+
+	return Clss;
+}
+
+
+// ComOptionReveal_C ComOptionReveal.Default__ComOptionReveal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UComOptionReveal_C* UComOptionReveal_C::GetDefaultObj()
+{
+	static class UComOptionReveal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UComOptionReveal_C*>(UComOptionReveal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ComOptionReveal.ComOptionReveal_C.BP_OnItemExpansionChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UComOptionReveal_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("ComOptionReveal_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionReveal_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionReveal_C", "BP_OnItemExpansionChanged");
+
+	Params::UComOptionReveal_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -40,9 +68,12 @@ void UComOptionReveal_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UComOptionReveal_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("ComOptionReveal_C", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionReveal_C_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionReveal_C", "BP_OnItemSelectionChanged");
+
+	Params::UComOptionReveal_C_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -58,9 +89,12 @@ void UComOptionReveal_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UComOptionReveal_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("ComOptionReveal_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionReveal_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionReveal_C", "OnListItemObjectSet");
+
+	Params::UComOptionReveal_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -76,9 +110,12 @@ void UComOptionReveal_C::OnListItemObjectSet(class UObject* ListItemObject)
 
 void UComOptionReveal_C::StartRevealAnimation(float PlayRate)
 {
-	static auto Func = Class->GetFunction("ComOptionReveal_C", "StartRevealAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionReveal_C_StartRevealAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionReveal_C", "StartRevealAnimation");
+
+	Params::UComOptionReveal_C_StartRevealAnimation_Params Parms{};
 
 	Parms.PlayRate = PlayRate;
 
@@ -93,12 +130,14 @@ void UComOptionReveal_C::StartRevealAnimation(float PlayRate)
 
 void UComOptionReveal_C::RevealWinnerAnimation()
 {
-	static auto Func = Class->GetFunction("ComOptionReveal_C", "RevealWinnerAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionReveal_C_RevealWinnerAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionReveal_C", "RevealWinnerAnimation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -109,12 +148,14 @@ void UComOptionReveal_C::RevealWinnerAnimation()
 
 void UComOptionReveal_C::Construct()
 {
-	static auto Func = Class->GetFunction("ComOptionReveal_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionReveal_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionReveal_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -125,12 +166,14 @@ void UComOptionReveal_C::Construct()
 
 void UComOptionReveal_C::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("ComOptionReveal_C", "BP_OnEntryReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionReveal_C_BP_OnEntryReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionReveal_C", "BP_OnEntryReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -141,12 +184,14 @@ void UComOptionReveal_C::BP_OnEntryReleased()
 
 void UComOptionReveal_C::Destruct()
 {
-	static auto Func = Class->GetFunction("ComOptionReveal_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionReveal_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionReveal_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -167,9 +212,12 @@ void UComOptionReveal_C::Destruct()
 
 void UComOptionReveal_C::ExecuteUbergraph_ComOptionReveal(int32 EntryPoint, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool K2Node_Event_bIsExpanded, bool K2Node_Event_bIsSelected, class UObject* K2Node_Event_ListItemObject, float K2Node_Event_PlayRate, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("ComOptionReveal_C", "ExecuteUbergraph_ComOptionReveal");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionReveal_C_ExecuteUbergraph_ComOptionReveal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionReveal_C", "ExecuteUbergraph_ComOptionReveal");
+
+	Params::UComOptionReveal_C_ExecuteUbergraph_ComOptionReveal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_SpawnSound2D_ReturnValue = CallFunc_SpawnSound2D_ReturnValue;
@@ -188,6 +236,4 @@ void UComOptionReveal_C::ExecuteUbergraph_ComOptionReveal(int32 EntryPoint, clas
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

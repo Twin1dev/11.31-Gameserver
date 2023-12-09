@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass WinterQuestTitleScreen.WinterQuestTitleScreen_C
+// (None)
+
+class UClass* UWinterQuestTitleScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WinterQuestTitleScreen_C");
+
+	return Clss;
+}
+
+
+// WinterQuestTitleScreen_C WinterQuestTitleScreen.Default__WinterQuestTitleScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UWinterQuestTitleScreen_C* UWinterQuestTitleScreen_C::GetDefaultObj()
+{
+	static class UWinterQuestTitleScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWinterQuestTitleScreen_C*>(UWinterQuestTitleScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function WinterQuestTitleScreen.WinterQuestTitleScreen_C.EndTransition
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UWinterQuestTitleScreen_C::EndTransition()
 {
-	static auto Func = Class->GetFunction("WinterQuestTitleScreen_C", "EndTransition");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestTitleScreen_C_EndTransition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestTitleScreen_C", "EndTransition");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UWinterQuestTitleScreen_C::EndTransition()
 
 void UWinterQuestTitleScreen_C::OnBeginCabinTransition()
 {
-	static auto Func = Class->GetFunction("WinterQuestTitleScreen_C", "OnBeginCabinTransition");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestTitleScreen_C_OnBeginCabinTransition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestTitleScreen_C", "OnBeginCabinTransition");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UWinterQuestTitleScreen_C::OnBeginCabinTransition()
 
 void UWinterQuestTitleScreen_C::OnResetScreen()
 {
-	static auto Func = Class->GetFunction("WinterQuestTitleScreen_C", "OnResetScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestTitleScreen_C_OnResetScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestTitleScreen_C", "OnResetScreen");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void UWinterQuestTitleScreen_C::OnResetScreen()
 
 void UWinterQuestTitleScreen_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("WinterQuestTitleScreen_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestTitleScreen_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestTitleScreen_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -85,12 +118,14 @@ void UWinterQuestTitleScreen_C::BP_OnActivated()
 
 void UWinterQuestTitleScreen_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("WinterQuestTitleScreen_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestTitleScreen_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestTitleScreen_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -101,12 +136,14 @@ void UWinterQuestTitleScreen_C::BP_OnDeactivated()
 
 void UWinterQuestTitleScreen_C::Construct()
 {
-	static auto Func = Class->GetFunction("WinterQuestTitleScreen_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestTitleScreen_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestTitleScreen_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -126,9 +163,12 @@ void UWinterQuestTitleScreen_C::Construct()
 
 void UWinterQuestTitleScreen_C::ExecuteUbergraph_WinterQuestTitleScreen(int32 EntryPoint, bool CallFunc_IsValid_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, TArray<class AFort_Entry_Music_Controller_BP_C*>& CallFunc_GetAllActorsOfClass_OutActors, class AFort_Entry_Music_Controller_BP_C* CallFunc_Array_Get_Item, bool CallFunc_IsValid_ReturnValue_1, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue, bool CallFunc_IsValid_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("WinterQuestTitleScreen_C", "ExecuteUbergraph_WinterQuestTitleScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestTitleScreen_C_ExecuteUbergraph_WinterQuestTitleScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestTitleScreen_C", "ExecuteUbergraph_WinterQuestTitleScreen");
+
+	Params::UWinterQuestTitleScreen_C_ExecuteUbergraph_WinterQuestTitleScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -146,6 +186,4 @@ void UWinterQuestTitleScreen_C::ExecuteUbergraph_WinterQuestTitleScreen(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

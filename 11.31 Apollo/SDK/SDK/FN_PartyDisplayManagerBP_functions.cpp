@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass PartyDisplayManagerBP.PartyDisplayManagerBP_C
+// (Actor)
+
+class UClass* APartyDisplayManagerBP_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PartyDisplayManagerBP_C");
+
+	return Clss;
+}
+
+
+// PartyDisplayManagerBP_C PartyDisplayManagerBP.Default__PartyDisplayManagerBP_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class APartyDisplayManagerBP_C* APartyDisplayManagerBP_C::GetDefaultObj()
+{
+	static class APartyDisplayManagerBP_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APartyDisplayManagerBP_C*>(APartyDisplayManagerBP_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function PartyDisplayManagerBP.PartyDisplayManagerBP_C.ResetPreScaleLocations
@@ -25,9 +50,12 @@ namespace SDK
 
 void APartyDisplayManagerBP_C::ResetPreScaleLocations(const struct FHitResult& CallFunc_K2_SetRelativeLocation_SweepHitResult, const struct FHitResult& CallFunc_K2_SetRelativeLocation_SweepHitResult_1, const struct FHitResult& CallFunc_K2_SetRelativeLocation_SweepHitResult_2, const struct FHitResult& CallFunc_K2_SetRelativeLocation_SweepHitResult_3)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "ResetPreScaleLocations");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_ResetPreScaleLocations_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ResetPreScaleLocations");
+
+	Params::APartyDisplayManagerBP_C_ResetPreScaleLocations_Params Parms{};
 
 	Parms.CallFunc_K2_SetRelativeLocation_SweepHitResult = CallFunc_K2_SetRelativeLocation_SweepHitResult;
 	Parms.CallFunc_K2_SetRelativeLocation_SweepHitResult_1 = CallFunc_K2_SetRelativeLocation_SweepHitResult_1;
@@ -57,9 +85,12 @@ void APartyDisplayManagerBP_C::ResetPreScaleLocations(const struct FHitResult& C
 
 void APartyDisplayManagerBP_C::RestoreTeleportMIDsInProgress(class AFortPlayerPawn* Pawn, int32 CallFunc_GetPartyMemberIndexByPlayerPawn_OutPlayerIndex, bool CallFunc_GetPartyMemberIndexByPlayerPawn_ReturnValue, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, const struct FUniqueNetIdRepl& CallFunc_GetPlayerIdFromPartyMemberIndex_ReturnValue, class UFortPartyContext* CallFunc_GetContext_ReturnValue, enum class EFortPartyMemberLocation CallFunc_GetPartyMemberLocation_LocationOut, bool CallFunc_GetPartyMemberLocation_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "RestoreTeleportMIDsInProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "RestoreTeleportMIDsInProgress");
+
+	Params::APartyDisplayManagerBP_C_RestoreTeleportMIDsInProgress_Params Parms{};
 
 	Parms.Pawn = Pawn;
 	Parms.CallFunc_GetPartyMemberIndexByPlayerPawn_OutPlayerIndex = CallFunc_GetPartyMemberIndexByPlayerPawn_OutPlayerIndex;
@@ -122,9 +153,12 @@ void APartyDisplayManagerBP_C::RestoreTeleportMIDsInProgress(class AFortPlayerPa
 
 void APartyDisplayManagerBP_C::HandlePartyMemberInProgressDisplayChanges(class AFortPlayerPawn* Pawn, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, TArray<class USceneComponent*>& CallFunc_GetChildrenComponents_Children, int32 Temp_int_Array_Index_Variable, int32 CallFunc_Array_Length_ReturnValue, class USceneComponent* CallFunc_Array_Get_Item, class UParticleSystemComponent* K2Node_DynamicCast_AsParticle_System_Component, bool K2Node_DynamicCast_bSuccess_1, class UPrimitiveComponent* K2Node_DynamicCast_AsPrimitive_Component, bool K2Node_DynamicCast_bSuccess_2, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_GetNumMaterials_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Variable, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_LessEqual_IntInt_ReturnValue, class UTexture* CallFunc_K2_GetTextureParameterValue_ReturnValue, class UTexture* CallFunc_K2_GetTextureParameterValue_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1, float CallFunc_K2_GetScalarParameterValue_ReturnValue, float CallFunc_K2_GetScalarParameterValue_ReturnValue_1, float CallFunc_K2_GetScalarParameterValue_ReturnValue_2, float CallFunc_K2_GetScalarParameterValue_ReturnValue_3, float CallFunc_K2_GetScalarParameterValue_ReturnValue_4, float CallFunc_K2_GetScalarParameterValue_ReturnValue_5, float CallFunc_K2_GetScalarParameterValue_ReturnValue_6, float CallFunc_K2_GetScalarParameterValue_ReturnValue_7, float CallFunc_K2_GetScalarParameterValue_ReturnValue_8, float CallFunc_K2_GetScalarParameterValue_ReturnValue_9, float CallFunc_K2_GetScalarParameterValue_ReturnValue_10, bool CallFunc_IsValid_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "HandlePartyMemberInProgressDisplayChanges");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "HandlePartyMemberInProgressDisplayChanges");
+
+	Params::APartyDisplayManagerBP_C_HandlePartyMemberInProgressDisplayChanges_Params Parms{};
 
 	Parms.Pawn = Pawn;
 	Parms.K2Node_DynamicCast_AsPlayer_Pawn_Athena = K2Node_DynamicCast_AsPlayer_Pawn_Athena;
@@ -188,9 +222,12 @@ void APartyDisplayManagerBP_C::HandlePartyMemberInProgressDisplayChanges(class A
 
 void APartyDisplayManagerBP_C::PartyMemberInProgressCheck(class AFortPlayerPawn* Pawn, int32 PlayerIndex, int32 CallFunc_GetPartyMemberIndexByPlayerPawn_OutPlayerIndex, bool CallFunc_GetPartyMemberIndexByPlayerPawn_ReturnValue, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, bool CallFunc_IsPartyInProgressEnabled_ReturnValue, class UFortPartyContext* CallFunc_GetContext_ReturnValue, const struct FUniqueNetIdRepl& CallFunc_GetPlayerIdFromPartyMemberIndex_ReturnValue, enum class EFortPartyMemberLocation CallFunc_GetPartyMemberLocation_LocationOut, bool CallFunc_GetPartyMemberLocation_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "PartyMemberInProgressCheck");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_PartyMemberInProgressCheck_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "PartyMemberInProgressCheck");
+
+	Params::APartyDisplayManagerBP_C_PartyMemberInProgressCheck_Params Parms{};
 
 	Parms.Pawn = Pawn;
 	Parms.PlayerIndex = PlayerIndex;
@@ -218,9 +255,12 @@ void APartyDisplayManagerBP_C::PartyMemberInProgressCheck(class AFortPlayerPawn*
 
 class AActor* APartyDisplayManagerBP_C::GetPrefabActorForCurrentDisplayedItem()
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetPrefabActorForCurrentDisplayedItem");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_GetPrefabActorForCurrentDisplayedItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetPrefabActorForCurrentDisplayedItem");
+
+	Params::APartyDisplayManagerBP_C_GetPrefabActorForCurrentDisplayedItem_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -236,12 +276,14 @@ class AActor* APartyDisplayManagerBP_C::GetPrefabActorForCurrentDisplayedItem()
 
 void APartyDisplayManagerBP_C::PostSetupPrefabVisuals()
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "PostSetupPrefabVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_PostSetupPrefabVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "PostSetupPrefabVisuals");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -262,9 +304,12 @@ void APartyDisplayManagerBP_C::PostSetupPrefabVisuals()
 
 void APartyDisplayManagerBP_C::GetMeshForCurrentDisplayedItem(class UMeshComponent** OutDisplayedMesh, class AFortPlayerPawn* CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue, TScriptInterface<class ICustomCharacterPartOwnerInterface> CallFunc_GetCustomizationRootSkeletalMeshComponent_self_CastInput, class USkeletalMeshComponent* CallFunc_GetCustomizationRootSkeletalMeshComponent_ReturnValue, class AFortPlayerParachute* K2Node_DynamicCast_AsFort_Player_Parachute, bool K2Node_DynamicCast_bSuccess, class USkeletalMeshComponent* CallFunc_GetParachuteRootMesh_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetMeshForCurrentDisplayedItem");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetMeshForCurrentDisplayedItem");
+
+	Params::APartyDisplayManagerBP_C_GetMeshForCurrentDisplayedItem_Params Parms{};
 
 	Parms.CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue = CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue;
 	Parms.CallFunc_GetCustomizationRootSkeletalMeshComponent_self_CastInput = CallFunc_GetCustomizationRootSkeletalMeshComponent_self_CastInput;
@@ -297,9 +342,12 @@ void APartyDisplayManagerBP_C::GetMeshForCurrentDisplayedItem(class UMeshCompone
 
 void APartyDisplayManagerBP_C::GetItemDefinitionToShow(class UFortItemDefinition** ItemDefinition, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, class UFortItemDefinition* CallFunc_GetSchematicCraftingResultBP_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool Temp_bool_Variable, class UFortItemDefinition* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetItemDefinitionToShow");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_GetItemDefinitionToShow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetItemDefinitionToShow");
+
+	Params::APartyDisplayManagerBP_C_GetItemDefinitionToShow_Params Parms{};
 
 	Parms.CallFunc_GetItemDefinitionBP_ReturnValue = CallFunc_GetItemDefinitionBP_ReturnValue;
 	Parms.CallFunc_GetSchematicCraftingResultBP_ReturnValue = CallFunc_GetSchematicCraftingResultBP_ReturnValue;
@@ -322,7 +370,7 @@ void APartyDisplayManagerBP_C::GetItemDefinitionToShow(class UFortItemDefinition
 // class UTexture2D*                  Large_Texture                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortItemDefinition*         Item                                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortRarity             Rarity                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortRarityItemData         CallFunc_BPGetRarityData_ReturnValue                             ()
+// struct FFortRarityItemData         CallFunc_BPGetRarityData_ReturnValue                             (None)
 // class FString                      CallFunc_GetPersistentName_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 // int32                              CallFunc_FindSubstring_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_CreateDynamicMaterialInstance_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -336,9 +384,12 @@ void APartyDisplayManagerBP_C::GetItemDefinitionToShow(class UFortItemDefinition
 
 void APartyDisplayManagerBP_C::SetUIOverrideVisuals(class UTexture2D* Large_Texture, class UFortItemDefinition* Item, enum class EFortRarity Rarity, const struct FFortRarityItemData& CallFunc_BPGetRarityData_ReturnValue, const class FString& CallFunc_GetPersistentName_ReturnValue, int32 CallFunc_FindSubstring_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool CallFunc_Conv_IntToBool_ReturnValue, int32 CallFunc_FindSubstring_ReturnValue_1, int32 CallFunc_FindSubstring_ReturnValue_2, bool CallFunc_Conv_IntToBool_ReturnValue_1, bool CallFunc_Conv_IntToBool_ReturnValue_2, int32 CallFunc_FindSubstring_ReturnValue_3, bool CallFunc_Conv_IntToBool_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "SetUIOverrideVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_SetUIOverrideVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "SetUIOverrideVisuals");
+
+	Params::APartyDisplayManagerBP_C_SetUIOverrideVisuals_Params Parms{};
 
 	Parms.Large_Texture = Large_Texture;
 	Parms.Item = Item;
@@ -372,9 +423,12 @@ void APartyDisplayManagerBP_C::SetUIOverrideVisuals(class UTexture2D* Large_Text
 
 struct FTransform APartyDisplayManagerBP_C::GetWeaponPlacementTransform(const struct FTransform& CallFunc_MakeTransform_ReturnValue, const struct FTransform& CallFunc_GetTransform_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FTransform& CallFunc_GetTransform_ReturnValue_1, const struct FTransform& CallFunc_ComposeTransforms_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetWeaponPlacementTransform");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_GetWeaponPlacementTransform_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetWeaponPlacementTransform");
+
+	Params::APartyDisplayManagerBP_C_GetWeaponPlacementTransform_Params Parms{};
 
 	Parms.CallFunc_MakeTransform_ReturnValue = CallFunc_MakeTransform_ReturnValue;
 	Parms.CallFunc_GetTransform_ReturnValue = CallFunc_GetTransform_ReturnValue;
@@ -399,9 +453,12 @@ struct FTransform APartyDisplayManagerBP_C::GetWeaponPlacementTransform(const st
 
 void APartyDisplayManagerBP_C::UpdatePreviewMeshTransforms(const struct FTransform& CallFunc_GetPreviewMeshWorldTransform_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldTransform_SweepHitResult, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Percent_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "UpdatePreviewMeshTransforms");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_UpdatePreviewMeshTransforms_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "UpdatePreviewMeshTransforms");
+
+	Params::APartyDisplayManagerBP_C_UpdatePreviewMeshTransforms_Params Parms{};
 
 	Parms.CallFunc_GetPreviewMeshWorldTransform_ReturnValue = CallFunc_GetPreviewMeshWorldTransform_ReturnValue;
 	Parms.CallFunc_K2_SetWorldTransform_SweepHitResult = CallFunc_K2_SetWorldTransform_SweepHitResult;
@@ -439,9 +496,12 @@ void APartyDisplayManagerBP_C::UpdatePreviewMeshTransforms(const struct FTransfo
 
 struct FTransform APartyDisplayManagerBP_C::GetItemPreviewOffset(class UFortItemDefinition* ItemDefinition, bool Temp_bool_Variable, const struct FTransform& CallFunc_GetPreviewMeshOffset_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, bool CallFunc_EqualEqual_VectorVector_ReturnValue, bool CallFunc_EqualEqual_VectorVector_ReturnValue_1, bool CallFunc_EqualEqual_RotatorRotator_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, const struct FTransform& K2Node_Select_Default, const struct FVector& CallFunc_BreakTransform_Location_1, const struct FRotator& CallFunc_BreakTransform_Rotation_1, const struct FVector& CallFunc_BreakTransform_Scale_1, const struct FTransform& CallFunc_MakeTransform_ReturnValue_1, const struct FTransform& CallFunc_MakeTransform_ReturnValue_2, const struct FTransform& CallFunc_ComposeTransforms_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetItemPreviewOffset");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_GetItemPreviewOffset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetItemPreviewOffset");
+
+	Params::APartyDisplayManagerBP_C_GetItemPreviewOffset_Params Parms{};
 
 	Parms.ItemDefinition = ItemDefinition;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -488,9 +548,12 @@ struct FTransform APartyDisplayManagerBP_C::GetItemPreviewOffset(class UFortItem
 
 struct FTransform APartyDisplayManagerBP_C::GetPreviewMeshWorldTransform(float Temp_float_Variable, bool Temp_bool_Variable, class UFortItemDefinition* CallFunc_GetItemDefinitionToShow_ItemDefinition, bool CallFunc_IsValid_ReturnValue, const struct FTransform& CallFunc_GetItemPreviewOffset_ReturnValue, const struct FTransform& CallFunc_GetWeaponPlacementTransform_ReturnValue, float K2Node_Select_Default, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue, const struct FTransform& CallFunc_ComposeTransforms_ReturnValue, const struct FTransform& CallFunc_ComposeTransforms_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetPreviewMeshWorldTransform");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_GetPreviewMeshWorldTransform_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "GetPreviewMeshWorldTransform");
+
+	Params::APartyDisplayManagerBP_C_GetPreviewMeshWorldTransform_Params Parms{};
 
 	Parms.Temp_float_Variable = Temp_float_Variable;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -522,9 +585,12 @@ struct FTransform APartyDisplayManagerBP_C::GetPreviewMeshWorldTransform(float T
 
 void APartyDisplayManagerBP_C::SetupStaticMeshVisuals(class UStaticMesh* NewMesh, class UFortItemDefinition* CallFunc_GetItemDefinitionToShow_ItemDefinition, const struct FTransform& CallFunc_GetTransform_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldTransform_SweepHitResult, bool CallFunc_SetStaticMesh_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "SetupStaticMeshVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_SetupStaticMeshVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "SetupStaticMeshVisuals");
+
+	Params::APartyDisplayManagerBP_C_SetupStaticMeshVisuals_Params Parms{};
 
 	Parms.NewMesh = NewMesh;
 	Parms.CallFunc_GetItemDefinitionToShow_ItemDefinition = CallFunc_GetItemDefinitionToShow_ItemDefinition;
@@ -547,9 +613,12 @@ void APartyDisplayManagerBP_C::SetupStaticMeshVisuals(class UStaticMesh* NewMesh
 
 void APartyDisplayManagerBP_C::SetupSkeletalMeshVisuals(class USkeletalMesh* NewMesh, class UFortItemDefinition* CallFunc_GetItemDefinitionToShow_ItemDefinition, const struct FTransform& CallFunc_GetTransform_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldTransform_SweepHitResult)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "SetupSkeletalMeshVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_SetupSkeletalMeshVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "SetupSkeletalMeshVisuals");
+
+	Params::APartyDisplayManagerBP_C_SetupSkeletalMeshVisuals_Params Parms{};
 
 	Parms.NewMesh = NewMesh;
 	Parms.CallFunc_GetItemDefinitionToShow_ItemDefinition = CallFunc_GetItemDefinitionToShow_ItemDefinition;
@@ -573,9 +642,12 @@ void APartyDisplayManagerBP_C::SetupSkeletalMeshVisuals(class USkeletalMesh* New
 
 void APartyDisplayManagerBP_C::ResetVisuals(bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, const struct FTransform& CallFunc_MakeTransform_ReturnValue, const struct FHitResult& CallFunc_K2_SetRelativeTransform_SweepHitResult, bool CallFunc_SetStaticMesh_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "ResetVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_ResetVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ResetVisuals");
+
+	Params::APartyDisplayManagerBP_C_ResetVisuals_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
@@ -595,12 +667,14 @@ void APartyDisplayManagerBP_C::ResetVisuals(bool CallFunc_IsValid_ReturnValue, b
 
 void APartyDisplayManagerBP_C::ScaleAnimLevel__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "ScaleAnimLevel__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_ScaleAnimLevel__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ScaleAnimLevel__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -611,12 +685,14 @@ void APartyDisplayManagerBP_C::ScaleAnimLevel__FinishedFunc()
 
 void APartyDisplayManagerBP_C::ScaleAnimLevel__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "ScaleAnimLevel__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_ScaleAnimLevel__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ScaleAnimLevel__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -627,12 +703,14 @@ void APartyDisplayManagerBP_C::ScaleAnimLevel__UpdateFunc()
 
 void APartyDisplayManagerBP_C::ScaleAnimEvolve__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "ScaleAnimEvolve__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_ScaleAnimEvolve__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ScaleAnimEvolve__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -643,12 +721,14 @@ void APartyDisplayManagerBP_C::ScaleAnimEvolve__FinishedFunc()
 
 void APartyDisplayManagerBP_C::ScaleAnimEvolve__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "ScaleAnimEvolve__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_ScaleAnimEvolve__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ScaleAnimEvolve__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -659,12 +739,14 @@ void APartyDisplayManagerBP_C::ScaleAnimEvolve__UpdateFunc()
 
 void APartyDisplayManagerBP_C::HoloMatColorPulse__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "HoloMatColorPulse__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_HoloMatColorPulse__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "HoloMatColorPulse__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -675,12 +757,14 @@ void APartyDisplayManagerBP_C::HoloMatColorPulse__FinishedFunc()
 
 void APartyDisplayManagerBP_C::HoloMatColorPulse__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "HoloMatColorPulse__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_HoloMatColorPulse__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "HoloMatColorPulse__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -693,9 +777,12 @@ void APartyDisplayManagerBP_C::HoloMatColorPulse__UpdateFunc()
 
 void APartyDisplayManagerBP_C::Completed_01D864884864692DBB7035B0996A5437(class UFortItem* Item, const struct FGuid& RequestId)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "Completed_01D864884864692DBB7035B0996A5437");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_Completed_01D864884864692DBB7035B0996A5437_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "Completed_01D864884864692DBB7035B0996A5437");
+
+	Params::APartyDisplayManagerBP_C_Completed_01D864884864692DBB7035B0996A5437_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.RequestId = RequestId;
@@ -713,9 +800,12 @@ void APartyDisplayManagerBP_C::Completed_01D864884864692DBB7035B0996A5437(class 
 
 void APartyDisplayManagerBP_C::ShowItem(class UFortItem* ItemToView, struct FGuid& RequestId)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "ShowItem");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_ShowItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ShowItem");
+
+	Params::APartyDisplayManagerBP_C_ShowItem_Params Parms{};
 
 	Parms.ItemToView = ItemToView;
 	Parms.RequestId = RequestId;
@@ -731,12 +821,14 @@ void APartyDisplayManagerBP_C::ShowItem(class UFortItem* ItemToView, struct FGui
 
 void APartyDisplayManagerBP_C::PlayLevelUpEffect()
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "PlayLevelUpEffect");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_PlayLevelUpEffect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "PlayLevelUpEffect");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -747,12 +839,14 @@ void APartyDisplayManagerBP_C::PlayLevelUpEffect()
 
 void APartyDisplayManagerBP_C::PlayEvolutionEffect()
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "PlayEvolutionEffect");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_PlayEvolutionEffect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "PlayEvolutionEffect");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -763,12 +857,14 @@ void APartyDisplayManagerBP_C::PlayEvolutionEffect()
 
 void APartyDisplayManagerBP_C::CelebrateWithFX()
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "CelebrateWithFX");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_CelebrateWithFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "CelebrateWithFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -779,12 +875,14 @@ void APartyDisplayManagerBP_C::CelebrateWithFX()
 
 void APartyDisplayManagerBP_C::PerformScaleMeshFX()
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "PerformScaleMeshFX");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_PerformScaleMeshFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "PerformScaleMeshFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -798,9 +896,12 @@ void APartyDisplayManagerBP_C::PerformScaleMeshFX()
 
 void APartyDisplayManagerBP_C::HandleLoadingAssetsForItemCompleted(class UFortItem* ItemWhoseAssetsWereLoaded, TArray<class UObject*>& LoadedAssets, struct FGuid& RequestId)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "HandleLoadingAssetsForItemCompleted");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "HandleLoadingAssetsForItemCompleted");
+
+	Params::APartyDisplayManagerBP_C_HandleLoadingAssetsForItemCompleted_Params Parms{};
 
 	Parms.ItemWhoseAssetsWereLoaded = ItemWhoseAssetsWereLoaded;
 	Parms.LoadedAssets = LoadedAssets;
@@ -818,9 +919,12 @@ void APartyDisplayManagerBP_C::HandleLoadingAssetsForItemCompleted(class UFortIt
 
 void APartyDisplayManagerBP_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ReceiveTick");
+
+	Params::APartyDisplayManagerBP_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -836,9 +940,12 @@ void APartyDisplayManagerBP_C::ReceiveTick(float DeltaSeconds)
 
 void APartyDisplayManagerBP_C::Set_Character_Parts_Visibility(bool NewVisible)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "Set Character Parts Visibility");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_Set_Character_Parts_Visibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "Set Character Parts Visibility");
+
+	Params::APartyDisplayManagerBP_C_Set_Character_Parts_Visibility_Params Parms{};
 
 	Parms.NewVisible = NewVisible;
 
@@ -854,9 +961,12 @@ void APartyDisplayManagerBP_C::Set_Character_Parts_Visibility(bool NewVisible)
 
 void APartyDisplayManagerBP_C::CharacterCustomizationFinished(class AFortPlayerPawn* Pawn)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "CharacterCustomizationFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_CharacterCustomizationFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "CharacterCustomizationFinished");
+
+	Params::APartyDisplayManagerBP_C_CharacterCustomizationFinished_Params Parms{};
 
 	Parms.Pawn = Pawn;
 
@@ -871,12 +981,14 @@ void APartyDisplayManagerBP_C::CharacterCustomizationFinished(class AFortPlayerP
 
 void APartyDisplayManagerBP_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -888,9 +1000,12 @@ void APartyDisplayManagerBP_C::ReceiveBeginPlay()
 
 void APartyDisplayManagerBP_C::OnPlayerPawnAddedToLobby(class AFortPlayerPawn* Pawn)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "OnPlayerPawnAddedToLobby");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_OnPlayerPawnAddedToLobby_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "OnPlayerPawnAddedToLobby");
+
+	Params::APartyDisplayManagerBP_C_OnPlayerPawnAddedToLobby_Params Parms{};
 
 	Parms.Pawn = Pawn;
 
@@ -907,9 +1022,12 @@ void APartyDisplayManagerBP_C::OnPlayerPawnAddedToLobby(class AFortPlayerPawn* P
 
 void APartyDisplayManagerBP_C::ResOutPawnFromLobby(class AFortPlayerPawn* Pawn, int32 PartyIndex)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "ResOutPawnFromLobby");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_ResOutPawnFromLobby_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ResOutPawnFromLobby");
+
+	Params::APartyDisplayManagerBP_C_ResOutPawnFromLobby_Params Parms{};
 
 	Parms.Pawn = Pawn;
 	Parms.PartyIndex = PartyIndex;
@@ -925,12 +1043,14 @@ void APartyDisplayManagerBP_C::ResOutPawnFromLobby(class AFortPlayerPawn* Pawn, 
 
 void APartyDisplayManagerBP_C::SetupPrefabVisuals()
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "SetupPrefabVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_SetupPrefabVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "SetupPrefabVisuals");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1065,9 +1185,12 @@ void APartyDisplayManagerBP_C::SetupPrefabVisuals()
 
 void APartyDisplayManagerBP_C::ExecuteUbergraph_PartyDisplayManagerBP(int32 EntryPoint, class UFortItem* K2Node_Event_ItemWhoseAssetsWereLoaded, TArray<class UObject*>& K2Node_Event_LoadedAssets, const struct FGuid& K2Node_Event_RequestId, class UFortItemDefinition* CallFunc_GetItemDefinitionToShow_ItemDefinition, TArray<class UFortItem*>& K2Node_MakeArray_Array, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, TArray<class UFortItem*>& K2Node_MakeArray_Array_1, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, class UFortItemDefinition* CallFunc_GetItemDefinitionToShow_ItemDefinition_1, TSoftObjectPtr<class UStaticMesh> CallFunc_GetPreviewStaticMeshAsset_Asset, bool CallFunc_GetPreviewStaticMeshAsset_ReturnValue, enum class EFortRarity CallFunc_GetRarity_ReturnValue, class UObject* CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue, TSoftObjectPtr<class UTexture2D> CallFunc_GetLargePreviewImage_ReturnValue, class UStaticMesh* K2Node_DynamicCast_AsStatic_Mesh, bool K2Node_DynamicCast_bSuccess, class UObject* CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue_1, class UTexture2D* K2Node_DynamicCast_AsTexture_2D, bool K2Node_DynamicCast_bSuccess_1, TSoftObjectPtr<class USkeletalMesh> CallFunc_GetPreviewSkeletalMeshAsset_Asset, bool CallFunc_GetPreviewSkeletalMeshAsset_ReturnValue, class UFortItemDefinition* CallFunc_GetSchematicCraftingResultBP_ReturnValue, class UObject* CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_1, class USkeletalMesh* K2Node_DynamicCast_AsSkeletal_Mesh, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_1, class UFortItemDefinition* CallFunc_GetItemDefinitionToShow_ItemDefinition_2, float K2Node_Event_DeltaSeconds, const struct FHitResult& CallFunc_K2_SetRelativeLocation_SweepHitResult, TArray<TSoftObjectPtr<class UObject>>& CallFunc_GetPreviewAssets_ReturnValue, bool K2Node_CustomEvent_NewVisible, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_2, class AFortPlayerPawn* CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, const struct FTransform& CallFunc_GetTransform_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, TArray<class USceneComponent*>& CallFunc_GetChildrenComponents_Children, int32 CallFunc_Array_Length_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldLocation_SweepHitResult, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_1, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_1, const struct FTransform& CallFunc_GetWeaponPlacementTransform_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location_1, const struct FRotator& CallFunc_BreakTransform_Rotation_1, const struct FVector& CallFunc_BreakTransform_Scale_1, class AFortPlayerPawn* K2Node_Event_Pawn_2, const struct FHitResult& CallFunc_K2_SetWorldLocation_SweepHitResult_1, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, class AFortPlayerPawn* K2Node_Event_Pawn_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, int32 CallFunc_GetPartyMemberIndexByPlayerPawn_OutPlayerIndex, bool CallFunc_GetPartyMemberIndexByPlayerPawn_ReturnValue, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess_3, const struct FUniqueNetIdRepl& CallFunc_GetPlayerIdFromPartyMemberIndex_ReturnValue, class AFortPlayerPawn* K2Node_Event_Pawn, int32 K2Node_Event_PartyIndex, bool CallFunc_EqualEqual_IntInt_ReturnValue, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena_1, bool K2Node_DynamicCast_bSuccess_4, bool CallFunc_IsInCharacterCustomization_ReturnValue, class UFortItem* K2Node_Event_ItemToView, const struct FGuid& K2Node_Event_RequestId_1, TArray<class UFortItem*>& K2Node_MakeArray_Array_2, const struct FTransform& CallFunc_GetTransform_ReturnValue_1, class UFortItemDefinition* CallFunc_GetItemDefinitionToShow_ItemDefinition_3, const struct FHitResult& CallFunc_K2_SetWorldTransform_SweepHitResult, class AFortPlayerPawn* CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue_1, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena_2, bool K2Node_DynamicCast_bSuccess_5, class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue, bool CallFunc_IsValid_ReturnValue_4, class UFrontendAnimInstance* K2Node_DynamicCast_AsFrontend_Anim_Instance, bool K2Node_DynamicCast_bSuccess_6, class UFortAsyncAction_PartyDisplayManager_SetupPrefabVisuals* CallFunc_SetupPrefabVisuals_ReturnValue, bool CallFunc_IsValid_ReturnValue_5, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_2, enum class ESubGame CallFunc_GetSubGame_ReturnValue, int32 Temp_int_Array_Index_Variable, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class USceneComponent* CallFunc_Array_Get_Item, class USkeletalMeshComponent* K2Node_DynamicCast_AsSkeletal_Mesh_Component, bool K2Node_DynamicCast_bSuccess_7, class AFortPlayerPawn* CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue_2, class UFortItem* Temp_object_Variable, TArray<class UFortItem*>& K2Node_MakeArray_Array_3, const struct FGuid& Temp_struct_Variable, class UFortItem* K2Node_CustomEvent_Item, const struct FGuid& K2Node_CustomEvent_RequestId, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortPartyContext* CallFunc_GetContext_ReturnValue, enum class EFortPartyMemberLocation CallFunc_GetPartyMemberLocation_LocationOut, bool CallFunc_GetPartyMemberLocation_ReturnValue, const struct FLinearColor& CallFunc_LinearColorLerp_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, const struct FLinearColor& CallFunc_LinearColorLerp_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_IsValid_ReturnValue_6, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue_1, bool CallFunc_K2_AttachToComponent_ReturnValue, const struct FVector& CallFunc_Conv_FloatToVector_ReturnValue, const struct FTransform& CallFunc_GetRelativeTransform_ReturnValue, class UStaticMeshComponent* CallFunc_AddComponent_ReturnValue, const struct FVector& CallFunc_Conv_FloatToVector_ReturnValue_1, class AFortPlayerController* CallFunc_GetFirstLocalFortPlayerController_ReturnValue, class UFortFrontEndContext* CallFunc_GetLocalPlayerSubSystemFromPlayerController_ReturnValue, int32 CallFunc_GetCurrentLockerSubslotIndex_ReturnValue, TSoftClassPtr<class AActor> CallFunc_GetPreviewPrefabAssetAtSubSlot_Asset, bool CallFunc_GetPreviewPrefabAssetAtSubSlot_ReturnValue, class UClass* CallFunc_Conv_SoftClassReferenceToClass_ReturnValue, class UClass* K2Node_ClassDynamicCast_AsActor, bool K2Node_ClassDynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("PartyDisplayManagerBP_C", "ExecuteUbergraph_PartyDisplayManagerBP");
+	static class UFunction* Func = nullptr;
 
-	Params::APartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PartyDisplayManagerBP_C", "ExecuteUbergraph_PartyDisplayManagerBP");
+
+	Params::APartyDisplayManagerBP_C_ExecuteUbergraph_PartyDisplayManagerBP_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_ItemWhoseAssetsWereLoaded = K2Node_Event_ItemWhoseAssetsWereLoaded;
@@ -1200,6 +1323,4 @@ void APartyDisplayManagerBP_C::ExecuteUbergraph_PartyDisplayManagerBP(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

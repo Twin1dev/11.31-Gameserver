@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass KeybindWidget.KeybindWidget_C
+// (None)
+
+class UClass* UKeybindWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("KeybindWidget_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// KeybindWidget_C KeybindWidget.Default__KeybindWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UKeybindWidget_C* UKeybindWidget_C::GetDefaultObj()
+{
+	static class UKeybindWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UKeybindWidget_C*>(UKeybindWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

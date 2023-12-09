@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -33,11 +30,8 @@ public:
 	class UImage*                                SquadOverlay;                                      // 0xC40(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                SquadRibbon;                                       // 0xC48(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SquadMemberTile_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USquadMemberTile_C* GetDefaultObj();
 
 	void SetVisuals(enum class EGameReadiness Member_Readiness, bool Is_In_Frontend, class UMaterialInterface* Temp_object_Variable, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, class UMaterialInterface* Temp_object_Variable_1, bool CallFunc_BooleanOR_ReturnValue, class UMaterialInterface* Temp_object_Variable_2, enum class EGameReadiness Temp_byte_Variable, class UMaterialInterface* K2Node_Select_Default);
 	void SetEmptyVisuals(const struct FSlateColor& K2Node_MakeStruct_SlateColor, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1);
@@ -60,6 +54,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

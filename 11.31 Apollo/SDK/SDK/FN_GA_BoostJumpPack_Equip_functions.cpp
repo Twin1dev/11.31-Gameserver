@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GA_BoostJumpPack_Equip.GA_BoostJumpPack_Equip_C
+// (None)
+
+class UClass* UGA_BoostJumpPack_Equip_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_BoostJumpPack_Equip_C");
+
+	return Clss;
+}
+
+
+// GA_BoostJumpPack_Equip_C GA_BoostJumpPack_Equip.Default__GA_BoostJumpPack_Equip_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_BoostJumpPack_Equip_C* UGA_BoostJumpPack_Equip_C::GetDefaultObj()
+{
+	static class UGA_BoostJumpPack_Equip_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_BoostJumpPack_Equip_C*>(UGA_BoostJumpPack_Equip_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GA_BoostJumpPack_Equip.GA_BoostJumpPack_Equip_C.GetGadgetItem
@@ -28,9 +53,12 @@ namespace SDK
 
 class UFortItem* UGA_BoostJumpPack_Equip_C::GetGadgetItem(class AFortPlayerPawn* Pawn, bool CallFunc_IsValid_ReturnValue, const struct FGuid& CallFunc_GetInventoryGUID_ReturnValue, class AFortPlayerControllerZone* CallFunc_GetPlayerController_AsFort_Player_Controller_Zone, class UFortItem* CallFunc_BP_GetInventoryItemWithGuid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "GetGadgetItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_Equip_C_GetGadgetItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "GetGadgetItem");
+
+	Params::UGA_BoostJumpPack_Equip_C_GetGadgetItem_Params Parms{};
 
 	Parms.Pawn = Pawn;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -58,9 +86,12 @@ class UFortItem* UGA_BoostJumpPack_Equip_C::GetGadgetItem(class AFortPlayerPawn*
 
 void UGA_BoostJumpPack_Equip_C::GetPlayerController(class AFortPlayerPawn* Pawn, class AFortPlayerControllerZone** AsFort_Player_Controller_Zone, bool CallFunc_IsValid_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerControllerZone* K2Node_DynamicCast_AsFort_Player_Controller_Zone, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "GetPlayerController");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_Equip_C_GetPlayerController_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "GetPlayerController");
+
+	Params::UGA_BoostJumpPack_Equip_C_GetPlayerController_Params Parms{};
 
 	Parms.Pawn = Pawn;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -84,9 +115,12 @@ void UGA_BoostJumpPack_Equip_C::GetPlayerController(class AFortPlayerPawn* Pawn,
 
 void UGA_BoostJumpPack_Equip_C::IsAuthority(bool* bAuthority, bool CallFunc_HasAuthority_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "IsAuthority");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_Equip_C_IsAuthority_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "IsAuthority");
+
+	Params::UGA_BoostJumpPack_Equip_C_IsAuthority_Params Parms{};
 
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 
@@ -110,9 +144,12 @@ void UGA_BoostJumpPack_Equip_C::IsAuthority(bool* bAuthority, bool CallFunc_HasA
 
 bool UGA_BoostJumpPack_Equip_C::K2_CanActivateAbility(const struct FGameplayAbilityActorInfo& ActorInfo, struct FGameplayTagContainer* RelevantTags, class AFortPlayerPawn* LocalPlayerPawn, const struct FGameplayTagContainer& ErrorReasonGamepad, const struct FGameplayTagContainer& ErrorReason)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "K2_CanActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_Equip_C_K2_CanActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "K2_CanActivateAbility");
+
+	Params::UGA_BoostJumpPack_Equip_C_K2_CanActivateAbility_Params Parms{};
 
 	Parms.ActorInfo = ActorInfo;
 	Parms.LocalPlayerPawn = LocalPlayerPawn;
@@ -122,7 +159,7 @@ bool UGA_BoostJumpPack_Equip_C::K2_CanActivateAbility(const struct FGameplayAbil
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (RelevantTags != nullptr)
-		*RelevantTags = Parms.RelevantTags;
+		*RelevantTags = std::move(Parms.RelevantTags);
 
 	return Parms.ReturnValue;
 
@@ -135,12 +172,14 @@ bool UGA_BoostJumpPack_Equip_C::K2_CanActivateAbility(const struct FGameplayAbil
 
 void UGA_BoostJumpPack_Equip_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_Equip_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -152,9 +191,12 @@ void UGA_BoostJumpPack_Equip_C::K2_ActivateAbility()
 
 void UGA_BoostJumpPack_Equip_C::ExecuteUbergraph_GA_BoostJumpPack_Equip(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "ExecuteUbergraph_GA_BoostJumpPack_Equip");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_Equip_C_ExecuteUbergraph_GA_BoostJumpPack_Equip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_Equip_C", "ExecuteUbergraph_GA_BoostJumpPack_Equip");
+
+	Params::UGA_BoostJumpPack_Equip_C_ExecuteUbergraph_GA_BoostJumpPack_Equip_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -164,6 +206,4 @@ void UGA_BoostJumpPack_Equip_C::ExecuteUbergraph_GA_BoostJumpPack_Equip(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

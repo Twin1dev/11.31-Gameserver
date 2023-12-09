@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass CMSImage.CMSImage_C
+// (None)
+
+class UClass* UCMSImage_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CMSImage_C");
+
+	return Clss;
+}
+
+
+// CMSImage_C CMSImage.Default__CMSImage_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCMSImage_C* UCMSImage_C::GetDefaultObj()
+{
+	static class UCMSImage_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCMSImage_C*>(UCMSImage_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function CMSImage.CMSImage_C.SetMediaURL
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UCMSImage_C::SetMediaURL(const class FString& MediaUrl)
 {
-	static auto Func = Class->GetFunction("CMSImage_C", "SetMediaURL");
+	static class UFunction* Func = nullptr;
 
-	Params::UCMSImage_C_SetMediaURL_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CMSImage_C", "SetMediaURL");
+
+	Params::UCMSImage_C_SetMediaURL_Params Parms{};
 
 	Parms.MediaUrl = MediaUrl;
 
@@ -34,6 +62,4 @@ void UCMSImage_C::SetMediaURL(const class FString& MediaUrl)
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

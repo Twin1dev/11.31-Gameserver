@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_GrenadeCameraShake.B_GrenadeCameraShake_C
+// (None)
+
+class UClass* UB_GrenadeCameraShake_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_GrenadeCameraShake_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// B_GrenadeCameraShake_C B_GrenadeCameraShake.Default__B_GrenadeCameraShake_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UB_GrenadeCameraShake_C* UB_GrenadeCameraShake_C::GetDefaultObj()
+{
+	static class UB_GrenadeCameraShake_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UB_GrenadeCameraShake_C*>(UB_GrenadeCameraShake_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

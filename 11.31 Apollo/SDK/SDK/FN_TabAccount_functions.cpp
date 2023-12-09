@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TabAccount.TabAccount_C
+// (None)
+
+class UClass* UTabAccount_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TabAccount_C");
+
+	return Clss;
+}
+
+
+// TabAccount_C TabAccount.Default__TabAccount_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTabAccount_C* UTabAccount_C::GetDefaultObj()
+{
+	static class UTabAccount_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTabAccount_C*>(UTabAccount_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TabAccount.TabAccount_C.HandleUserSettingsUINeedsUpdate
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UTabAccount_C::HandleUserSettingsUINeedsUpdate()
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "HandleUserSettingsUINeedsUpdate");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_HandleUserSettingsUINeedsUpdate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "HandleUserSettingsUINeedsUpdate");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -39,9 +66,12 @@ void UTabAccount_C::HandleUserSettingsUINeedsUpdate()
 
 void UTabAccount_C::InitPreviousValues(class UFortSettingsContext* CallFunc_GetContext_ReturnValue, int32 CallFunc_GetRotatorSettingValue_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "InitPreviousValues");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_InitPreviousValues_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "InitPreviousValues");
+
+	Params::UTabAccount_C_InitPreviousValues_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetRotatorSettingValue_ReturnValue = CallFunc_GetRotatorSettingValue_ReturnValue;
@@ -105,9 +135,12 @@ void UTabAccount_C::InitPreviousValues(class UFortSettingsContext* CallFunc_GetC
 
 void UTabAccount_C::UpdateSize(const struct FMargin& TempPadding, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, int32 Temp_int_Loop_Counter_Variable_2, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_2, int32 Temp_int_Array_Index_Variable_1, int32 Temp_int_Array_Index_Variable_2, int32 Temp_int_Loop_Counter_Variable_3, const struct FVector2D& CallFunc_GetDesiredSize_ReturnValue, const struct FVector& CallFunc_Conv_Vector2DToVector_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_3, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, int32 CallFunc_FTrunc_ReturnValue, int32 CallFunc_FTrunc_ReturnValue_1, TArray<class URotatorSelector_C*>& K2Node_MakeArray_Array, class URotatorSelector_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class USizeBoxSlot* K2Node_DynamicCast_AsSize_Box_Slot, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Less_IntInt_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin, int32 Temp_int_Array_Index_Variable_3, TArray<class UWidget*>& K2Node_MakeArray_Array_1, class UWidget* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, class UCommonButton* K2Node_DynamicCast_AsCommon_Button, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_Less_IntInt_ReturnValue_1, bool CallFunc_IsMobileGame_ReturnValue, TArray<class UTextBlock*>& K2Node_MakeArray_Array_2, class UTextBlock* CallFunc_Array_Get_Item_2, int32 CallFunc_Array_Length_ReturnValue_2, class UWidget* CallFunc_FindParentWidgetOfType_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_2, class USizeBox* K2Node_DynamicCast_AsSize_Box, bool K2Node_DynamicCast_bSuccess_2, TArray<class UCommonTextBlock*>& K2Node_MakeArray_Array_3, int32 CallFunc_Array_Length_ReturnValue_3, class UCommonTextBlock* CallFunc_Array_Get_Item_3, bool CallFunc_Less_IntInt_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "UpdateSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_UpdateSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "UpdateSize");
+
+	Params::UTabAccount_C_UpdateSize_Params Parms{};
 
 	Parms.TempPadding = TempPadding;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -174,9 +207,12 @@ void UTabAccount_C::UpdateSize(const struct FMargin& TempPadding, int32 Temp_int
 
 void UTabAccount_C::SetScrollBar(const struct FVector2D& DefaultSize, const struct FVector2D& MobileSize, bool Temp_bool_Variable, bool CallFunc_IsMobileGame_ReturnValue, const struct FVector2D& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "SetScrollBar");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_SetScrollBar_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "SetScrollBar");
+
+	Params::UTabAccount_C_SetScrollBar_Params Parms{};
 
 	Parms.DefaultSize = DefaultSize;
 	Parms.MobileSize = MobileSize;
@@ -202,9 +238,12 @@ void UTabAccount_C::SetScrollBar(const struct FVector2D& DefaultSize, const stru
 
 void UTabAccount_C::SetFontSize(class UCommonTextBlock* Text, int32 DefaultFontSize, int32 MobileFontSize, const struct FSlateFontInfo& TempFont, bool Temp_bool_Variable, bool CallFunc_IsMobileGame_ReturnValue, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "SetFontSize");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_SetFontSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "SetFontSize");
+
+	Params::UTabAccount_C_SetFontSize_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.DefaultFontSize = DefaultFontSize;
@@ -240,9 +279,12 @@ void UTabAccount_C::SetFontSize(class UCommonTextBlock* Text, int32 DefaultFontS
 
 void UTabAccount_C::CenterAppropriateWidget(bool CallFunc_IsMobileGame_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, bool CallFunc_ShouldShowLeaderboardPrivacySettings_ReturnValue, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool CallFunc_IsDesktopPlatform_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_IsInZone_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "CenterAppropriateWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_CenterAppropriateWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "CenterAppropriateWidget");
+
+	Params::UTabAccount_C_CenterAppropriateWidget_Params Parms{};
 
 	Parms.CallFunc_IsMobileGame_ReturnValue = CallFunc_IsMobileGame_ReturnValue;
 	Parms.CallFunc_GetRuntimeOptions_ReturnValue = CallFunc_GetRuntimeOptions_ReturnValue;
@@ -275,9 +317,12 @@ void UTabAccount_C::CenterAppropriateWidget(bool CallFunc_IsMobileGame_ReturnVal
 
 void UTabAccount_C::PrivacySettingsFromSelection(int32 A, struct FMcpPrivacySettings* McpPrivacySettings, bool CallFunc_EqualEqual_IntInt_ReturnValue, const struct FMcpPrivacySettings& K2Node_MakeStruct_McpPrivacySettings)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "PrivacySettingsFromSelection");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_PrivacySettingsFromSelection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "PrivacySettingsFromSelection");
+
+	Params::UTabAccount_C_PrivacySettingsFromSelection_Params Parms{};
 
 	Parms.A = A;
 	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
@@ -286,7 +331,7 @@ void UTabAccount_C::PrivacySettingsFromSelection(int32 A, struct FMcpPrivacySett
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (McpPrivacySettings != nullptr)
-		*McpPrivacySettings = Parms.McpPrivacySettings;
+		*McpPrivacySettings = std::move(Parms.McpPrivacySettings);
 
 }
 
@@ -303,9 +348,12 @@ void UTabAccount_C::PrivacySettingsFromSelection(int32 A, struct FMcpPrivacySett
 
 int32 UTabAccount_C::PrivacySettingsToSelection(bool Temp_bool_Variable, int32 Temp_int_Variable, int32 Temp_int_Variable_1, class UFortMcpContext* CallFunc_GetContext_ReturnValue, int32 K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "PrivacySettingsToSelection");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_PrivacySettingsToSelection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "PrivacySettingsToSelection");
+
+	Params::UTabAccount_C_PrivacySettingsToSelection_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -327,9 +375,12 @@ int32 UTabAccount_C::PrivacySettingsToSelection(bool Temp_bool_Variable, int32 T
 
 void UTabAccount_C::OnStWContentUninstalled(float StWUninstallProgress)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "OnStWContentUninstalled");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_OnStWContentUninstalled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "OnStWContentUninstalled");
+
+	Params::UTabAccount_C_OnStWContentUninstalled_Params Parms{};
 
 	Parms.StWUninstallProgress = StWUninstallProgress;
 
@@ -344,13 +395,16 @@ void UTabAccount_C::OnStWContentUninstalled(float StWUninstallProgress)
 // class FText                        ReturnValue                                                      (Parm, OutParm, ReturnParm)
 // class UFortMcpContext*             CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetTencentIdString_ReturnValue                          (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 
 class FText UTabAccount_C::GetTencentId(class UFortMcpContext* CallFunc_GetContext_ReturnValue, const class FString& CallFunc_GetTencentIdString_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "GetTencentId");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_GetTencentId_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "GetTencentId");
+
+	Params::UTabAccount_C_GetTencentId_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetTencentIdString_ReturnValue = CallFunc_GetTencentIdString_ReturnValue;
@@ -370,23 +424,26 @@ class FText UTabAccount_C::GetTencentId(class UFortMcpContext* CallFunc_GetConte
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
 // bool                               CallFunc_IsAccountLinkingUIURLButtonEnabled_ReturnValue          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                      CallFunc_GetAccountLinkingUIURL_ReturnValue                      (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // int32                              CallFunc_Len_ReturnValue                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortAccountLinkingUIConfigCallFunc_GetAccountLinkingUIConfig_ReturnValue                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_1                                          ()
+// class FText                        K2Node_Select_Default_1                                          (None)
 
 void UTabAccount_C::InitializeWebsiteConfiguration(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, class FText Temp_text_Variable, class FText Temp_text_Variable_1, bool CallFunc_IsAccountLinkingUIURLButtonEnabled_ReturnValue, const class FString& CallFunc_GetAccountLinkingUIURL_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, int32 CallFunc_Len_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, enum class EFortAccountLinkingUIConfig CallFunc_GetAccountLinkingUIConfig_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, class FText K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "InitializeWebsiteConfiguration");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_InitializeWebsiteConfiguration_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "InitializeWebsiteConfiguration");
+
+	Params::UTabAccount_C_InitializeWebsiteConfiguration_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -418,13 +475,16 @@ void UTabAccount_C::InitializeWebsiteConfiguration(bool Temp_bool_Variable, enum
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FUniqueNetIdRepl            CallFunc_GetGameAccountId_ReturnValue                            (HasGetValueTypeHash)
 // class FString                      CallFunc_GetDebugStringForUniqueId_ReturnValue                   (ZeroConstructor, HasGetValueTypeHash)
-// struct FFortAnalyticsEventAttributeCallFunc_ConstructAnalyticsAttribute_ReturnValue                 ()
+// struct FFortAnalyticsEventAttributeCallFunc_ConstructAnalyticsAttribute_ReturnValue                 (None)
 
 struct FFortAnalyticsEventAttribute UTabAccount_C::Build_Player_Id_Analytic_Attribute(class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, const struct FUniqueNetIdRepl& CallFunc_GetGameAccountId_ReturnValue, const class FString& CallFunc_GetDebugStringForUniqueId_ReturnValue, const struct FFortAnalyticsEventAttribute& CallFunc_ConstructAnalyticsAttribute_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "Build Player Id Analytic Attribute");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_Build_Player_Id_Analytic_Attribute_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "Build Player Id Analytic Attribute");
+
+	Params::UTabAccount_C_Build_Player_Id_Analytic_Attribute_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Controller = K2Node_DynamicCast_AsFort_Player_Controller;
@@ -450,13 +510,16 @@ struct FFortAnalyticsEventAttribute UTabAccount_C::Build_Player_Id_Analytic_Attr
 // struct FUniqueNetIdRepl            CallFunc_GetGameAccountId_ReturnValue                            (HasGetValueTypeHash)
 // class UFortRegisteredPlayerInfo*   CallFunc_GetPlayerInfoFromUniqueID_ReturnValue                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetPlayerName_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
-// struct FFortAnalyticsEventAttributeCallFunc_ConstructAnalyticsAttribute_ReturnValue                 ()
+// struct FFortAnalyticsEventAttributeCallFunc_ConstructAnalyticsAttribute_ReturnValue                 (None)
 
 struct FFortAnalyticsEventAttribute UTabAccount_C::Build_Player_Name_Analytic_Attribute(class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, const struct FUniqueNetIdRepl& CallFunc_GetGameAccountId_ReturnValue, class UFortRegisteredPlayerInfo* CallFunc_GetPlayerInfoFromUniqueID_ReturnValue, const class FString& CallFunc_GetPlayerName_ReturnValue, const struct FFortAnalyticsEventAttribute& CallFunc_ConstructAnalyticsAttribute_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "Build Player Name Analytic Attribute");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_Build_Player_Name_Analytic_Attribute_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "Build Player Name Analytic Attribute");
+
+	Params::UTabAccount_C_Build_Player_Name_Analytic_Attribute_Params Parms{};
 
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Controller = K2Node_DynamicCast_AsFort_Player_Controller;
@@ -486,7 +549,7 @@ struct FFortAnalyticsEventAttribute UTabAccount_C::Build_Player_Name_Analytic_At
 // class UFortMcpContext*             CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_CanPlay_DenialReason                                    ()
+// class FText                        CallFunc_CanPlay_DenialReason                                    (None)
 // bool                               CallFunc_CanPlay_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable_5                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -542,15 +605,15 @@ struct FFortAnalyticsEventAttribute UTabAccount_C::Build_Player_Name_Analytic_At
 // bool                               CallFunc_CanLocalPlayerReceiveGifts_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Conv_BoolToInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<class FText>                K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
 // class UFortRuntimeOptions*         CallFunc_GetRuntimeOptions_ReturnValue_2                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // bool                               CallFunc_ShouldShowLeaderboardPrivacySettings_ReturnValue        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_4                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_18                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue_1                           ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue_1                           (None)
 // TArray<class FText>                K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue_2                           ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue_2                           (None)
 // bool                               CallFunc_IsConsolePlatform_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EChunkInstallState      CallFunc_GetOnDemandChunksInstallState_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -579,7 +642,7 @@ struct FFortAnalyticsEventAttribute UTabAccount_C::Build_Player_Name_Analytic_At
 // bool                               CallFunc_BooleanAND_ReturnValue_5                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_7                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default_8                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetTencentId_ReturnValue                                ()
+// class FText                        CallFunc_GetTencentId_ReturnValue                                (None)
 // bool                               CallFunc_IsTencentBuild_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_9                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -588,7 +651,7 @@ struct FFortAnalyticsEventAttribute UTabAccount_C::Build_Player_Name_Analytic_At
 // struct FUniqueNetIdRepl            CallFunc_GetGameAccountId_ReturnValue                            (HasGetValueTypeHash)
 // class FString                      CallFunc_GetDebugStringForUniqueId_ReturnValue                   (ZeroConstructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_20                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // enum class ESlateVisibility        Temp_byte_Variable_21                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_11                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_10                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -598,9 +661,12 @@ struct FFortAnalyticsEventAttribute UTabAccount_C::Build_Player_Name_Analytic_At
 
 void UTabAccount_C::Initialize_Data(enum class ESlateVisibility Temp_byte_Variable, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility Temp_byte_Variable_4, class UFortMcpContext* CallFunc_GetContext_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, bool Temp_bool_Variable_2, class FText CallFunc_CanPlay_DenialReason, bool CallFunc_CanPlay_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_5, bool CallFunc_Not_PreBool_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_6, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_2, enum class EFortUIFeatureState CallFunc_GetFeatureState_OutFeatureState, enum class EFortUIFeatureStateReason CallFunc_GetFeatureState_OutReason, bool Temp_bool_Variable_3, bool CallFunc_EqualEqual_ByteByte_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_7, enum class ESlateVisibility Temp_byte_Variable_8, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_3, bool Temp_bool_Variable_4, bool CallFunc_IsDesktopPlatform_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_9, enum class ESlateVisibility Temp_byte_Variable_10, bool Temp_bool_Variable_5, enum class ESlateVisibility Temp_byte_Variable_11, enum class ESlateVisibility Temp_byte_Variable_12, bool Temp_bool_Variable_6, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, bool CallFunc_GetEnableNotifyWhenPlaying_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_13, bool Temp_bool_Variable_7, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_4, bool CallFunc_IsInZone_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, uint8 CallFunc_MakeLiteralByte_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_14, bool CallFunc_BooleanOR_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_15, enum class ESlateVisibility K2Node_Select_Default, bool Temp_bool_Variable_8, enum class ESlateVisibility Temp_byte_Variable_16, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable_17, bool CallFunc_BooleanAND_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_1, bool CallFunc_ShouldDisableReceiveGiftOption_ReturnValue, bool CallFunc_GetDisablePurchaseHistoryScreen_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_2, enum class ESlateVisibility K2Node_Select_Default_1, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_3, bool CallFunc_ShouldShowSamsungStore_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_2, TArray<class FText>& CallFunc_LoadSamsungOptions_OutOptions, int32 CallFunc_LoadSamsungOptions_CurrentOptionIdx, bool Temp_bool_Variable_9, enum class ESlateVisibility K2Node_Select_Default_3, bool CallFunc_CanLocalPlayerReceiveGifts_ReturnValue, int32 CallFunc_Conv_BoolToInt_ReturnValue, TArray<class FText>& K2Node_MakeArray_Array, class FText CallFunc_MakeLiteralText_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_ShouldShowLeaderboardPrivacySettings_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_4, enum class ESlateVisibility Temp_byte_Variable_18, class FText CallFunc_MakeLiteralText_ReturnValue_1, TArray<class FText>& K2Node_MakeArray_Array_1, class FText CallFunc_MakeLiteralText_ReturnValue_2, bool CallFunc_IsConsolePlatform_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, enum class EChunkInstallState CallFunc_GetOnDemandChunksInstallState_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, enum class ESlateVisibility K2Node_Select_Default_5, enum class ESlateVisibility Temp_byte_Variable_19, bool CallFunc_IsAthena_ReturnValue, bool Temp_bool_Variable_10, bool CallFunc_IsXboxPlatform_ReturnValue, class UFortSettingsContext* CallFunc_GetContext_ReturnValue_5, bool CallFunc_BooleanAND_ReturnValue_2, int32 CallFunc_GetRotatorSettingValue_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_3, bool CallFunc_BooleanOR_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue_3, bool CallFunc_IsMobileGame_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue_4, enum class ESlateVisibility K2Node_Select_Default_6, class UFortSettingsContext* CallFunc_GetContext_ReturnValue_6, int32 CallFunc_GetRotatorSettingValue_ReturnValue_1, bool CallFunc_IsMobileGame_ReturnValue_2, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_3, bool CallFunc_Not_PreBool_ReturnValue_4, bool CallFunc_GetEnableLocalNotifications_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_4, bool CallFunc_BooleanAND_ReturnValue_5, enum class ESlateVisibility K2Node_Select_Default_7, enum class ESlateVisibility K2Node_Select_Default_8, class FText CallFunc_GetTencentId_ReturnValue, bool CallFunc_IsTencentBuild_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_9, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, const struct FUniqueNetIdRepl& CallFunc_GetGameAccountId_ReturnValue, const class FString& CallFunc_GetDebugStringForUniqueId_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_20, class FText CallFunc_Conv_StringToText_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_21, bool Temp_bool_Variable_11, enum class ESlateVisibility K2Node_Select_Default_10, enum class EFortAccountLinkingUIConfig CallFunc_GetAccountLinkingUIConfig_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, class UWidget* K2Node_Select_Default_11)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "Initialize Data");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_Initialize_Data_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "Initialize Data");
+
+	Params::UTabAccount_C_Initialize_Data_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -733,12 +799,14 @@ void UTabAccount_C::Initialize_Data(enum class ESlateVisibility Temp_byte_Variab
 
 void UTabAccount_C::Update_Data()
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "Update Data");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_Update_Data_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "Update Data");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -751,9 +819,12 @@ void UTabAccount_C::Update_Data()
 
 void UTabAccount_C::DialogResult_38AE683A4765B23E84C880991D01C356(enum class EFortDialogResult Result, class FName ResultName)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "DialogResult_38AE683A4765B23E84C880991D01C356");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_DialogResult_38AE683A4765B23E84C880991D01C356_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "DialogResult_38AE683A4765B23E84C880991D01C356");
+
+	Params::UTabAccount_C_DialogResult_38AE683A4765B23E84C880991D01C356_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.ResultName = ResultName;
@@ -769,12 +840,14 @@ void UTabAccount_C::DialogResult_38AE683A4765B23E84C880991D01C356(enum class EFo
 
 void UTabAccount_C::UpdateOptionsTab()
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "UpdateOptionsTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_UpdateOptionsTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "UpdateOptionsTab");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -785,12 +858,14 @@ void UTabAccount_C::UpdateOptionsTab()
 
 void UTabAccount_C::CenterOnTab()
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "CenterOnTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_CenterOnTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "CenterOnTab");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -801,12 +876,14 @@ void UTabAccount_C::CenterOnTab()
 
 void UTabAccount_C::Construct()
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -818,9 +895,12 @@ void UTabAccount_C::Construct()
 
 void UTabAccount_C::BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature(class FText NewTooltipText)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature");
+
+	Params::UTabAccount_C_BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnRequestToolTipChange__DelegateSignature_Params Parms{};
 
 	Parms.NewTooltipText = NewTooltipText;
 
@@ -836,9 +916,12 @@ void UTabAccount_C::BndEvt__FortTwitchLogin_K2Node_ComponentBoundEvent_0_OnReque
 
 void UTabAccount_C::BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature");
+
+	Params::UTabAccount_C_BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -854,9 +937,12 @@ void UTabAccount_C::BndEvt__URLButton_K2Node_ComponentBoundEvent_75_CommonButton
 
 void UTabAccount_C::BndEvt__CopyCustomerIDButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "BndEvt__CopyCustomerIDButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_BndEvt__CopyCustomerIDButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__CopyCustomerIDButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+
+	Params::UTabAccount_C_BndEvt__CopyCustomerIDButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -872,9 +958,12 @@ void UTabAccount_C::BndEvt__CopyCustomerIDButton_K2Node_ComponentBoundEvent_6_Co
 
 void UTabAccount_C::BndEvt__CopyEpicAccountIDButton_K2Node_ComponentBoundEvent_25_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "BndEvt__CopyEpicAccountIDButton_K2Node_ComponentBoundEvent_25_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_BndEvt__CopyEpicAccountIDButton_K2Node_ComponentBoundEvent_25_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__CopyEpicAccountIDButton_K2Node_ComponentBoundEvent_25_CommonButtonClicked__DelegateSignature");
+
+	Params::UTabAccount_C_BndEvt__CopyEpicAccountIDButton_K2Node_ComponentBoundEvent_25_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -890,9 +979,12 @@ void UTabAccount_C::BndEvt__CopyEpicAccountIDButton_K2Node_ComponentBoundEvent_2
 
 void UTabAccount_C::BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_54_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_54_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_54_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_54_CommonButtonClicked__DelegateSignature");
+
+	Params::UTabAccount_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_54_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -908,9 +1000,12 @@ void UTabAccount_C::BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_54_Com
 
 void UTabAccount_C::BndEvt__Button_CustomerService_K2Node_ComponentBoundEvent_108_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "BndEvt__Button_CustomerService_K2Node_ComponentBoundEvent_108_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_BndEvt__Button_CustomerService_K2Node_ComponentBoundEvent_108_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__Button_CustomerService_K2Node_ComponentBoundEvent_108_CommonButtonClicked__DelegateSignature");
+
+	Params::UTabAccount_C_BndEvt__Button_CustomerService_K2Node_ComponentBoundEvent_108_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -926,9 +1021,12 @@ void UTabAccount_C::BndEvt__Button_CustomerService_K2Node_ComponentBoundEvent_10
 
 void UTabAccount_C::BndEvt__Button_Logout_K2Node_ComponentBoundEvent_164_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "BndEvt__Button_Logout_K2Node_ComponentBoundEvent_164_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_BndEvt__Button_Logout_K2Node_ComponentBoundEvent_164_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__Button_Logout_K2Node_ComponentBoundEvent_164_CommonButtonClicked__DelegateSignature");
+
+	Params::UTabAccount_C_BndEvt__Button_Logout_K2Node_ComponentBoundEvent_164_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -944,9 +1042,12 @@ void UTabAccount_C::BndEvt__Button_Logout_K2Node_ComponentBoundEvent_164_CommonB
 
 void UTabAccount_C::BndEvt__UninstallStWButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "BndEvt__UninstallStWButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_BndEvt__UninstallStWButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__UninstallStWButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature");
+
+	Params::UTabAccount_C_BndEvt__UninstallStWButton_K2Node_ComponentBoundEvent_51_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -963,9 +1064,12 @@ void UTabAccount_C::BndEvt__UninstallStWButton_K2Node_ComponentBoundEvent_51_Com
 
 void UTabAccount_C::SetRefundRequestText(int32 RefundsRemaining, bool bCanRefundSomething)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "SetRefundRequestText");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_SetRefundRequestText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "SetRefundRequestText");
+
+	Params::UTabAccount_C_SetRefundRequestText_Params Parms{};
 
 	Parms.RefundsRemaining = RefundsRemaining;
 	Parms.bCanRefundSomething = bCanRefundSomething;
@@ -982,9 +1086,12 @@ void UTabAccount_C::SetRefundRequestText(int32 RefundsRemaining, bool bCanRefund
 
 void UTabAccount_C::BndEvt__Button_RefundRequest_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "BndEvt__Button_RefundRequest_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_BndEvt__Button_RefundRequest_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__Button_RefundRequest_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UTabAccount_C_BndEvt__Button_RefundRequest_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1000,9 +1107,12 @@ void UTabAccount_C::BndEvt__Button_RefundRequest_K2Node_ComponentBoundEvent_1_Co
 
 void UTabAccount_C::BndEvt__LeaderboardPrivacy_K2Node_ComponentBoundEvent_8_Selection_Changed__DelegateSignature(int32 Selected_Index)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "BndEvt__LeaderboardPrivacy_K2Node_ComponentBoundEvent_8_Selection Changed__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_BndEvt__LeaderboardPrivacy_K2Node_ComponentBoundEvent_8_Selection_Changed__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__LeaderboardPrivacy_K2Node_ComponentBoundEvent_8_Selection Changed__DelegateSignature");
+
+	Params::UTabAccount_C_BndEvt__LeaderboardPrivacy_K2Node_ComponentBoundEvent_8_Selection_Changed__DelegateSignature_Params Parms{};
 
 	Parms.Selected_Index = Selected_Index;
 
@@ -1019,9 +1129,12 @@ void UTabAccount_C::BndEvt__LeaderboardPrivacy_K2Node_ComponentBoundEvent_8_Sele
 
 void UTabAccount_C::OnReadPrivacySettings(bool bSuccess, struct FMcpPrivacySettings& Settings)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "OnReadPrivacySettings");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_OnReadPrivacySettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "OnReadPrivacySettings");
+
+	Params::UTabAccount_C_OnReadPrivacySettings_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 	Parms.Settings = Settings;
@@ -1038,9 +1151,12 @@ void UTabAccount_C::OnReadPrivacySettings(bool bSuccess, struct FMcpPrivacySetti
 
 void UTabAccount_C::BndEvt__ReceiveGiftToggle_K2Node_ComponentBoundEvent_0_Selection_Changed__DelegateSignature(int32 Selected_Index)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "BndEvt__ReceiveGiftToggle_K2Node_ComponentBoundEvent_0_Selection Changed__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_BndEvt__ReceiveGiftToggle_K2Node_ComponentBoundEvent_0_Selection_Changed__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__ReceiveGiftToggle_K2Node_ComponentBoundEvent_0_Selection Changed__DelegateSignature");
+
+	Params::UTabAccount_C_BndEvt__ReceiveGiftToggle_K2Node_ComponentBoundEvent_0_Selection_Changed__DelegateSignature_Params Parms{};
 
 	Parms.Selected_Index = Selected_Index;
 
@@ -1056,9 +1172,12 @@ void UTabAccount_C::BndEvt__ReceiveGiftToggle_K2Node_ComponentBoundEvent_0_Selec
 
 void UTabAccount_C::BndEvt__SamsungStoreToggle_K2Node_ComponentBoundEvent_0_Selection_Changed__DelegateSignature(int32 Selected_Index)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "BndEvt__SamsungStoreToggle_K2Node_ComponentBoundEvent_0_Selection Changed__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_BndEvt__SamsungStoreToggle_K2Node_ComponentBoundEvent_0_Selection_Changed__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__SamsungStoreToggle_K2Node_ComponentBoundEvent_0_Selection Changed__DelegateSignature");
+
+	Params::UTabAccount_C_BndEvt__SamsungStoreToggle_K2Node_ComponentBoundEvent_0_Selection_Changed__DelegateSignature_Params Parms{};
 
 	Parms.Selected_Index = Selected_Index;
 
@@ -1074,9 +1193,12 @@ void UTabAccount_C::BndEvt__SamsungStoreToggle_K2Node_ComponentBoundEvent_0_Sele
 
 void UTabAccount_C::BndEvt__PlayerSurveysToggle_K2Node_ComponentBoundEvent_4_Selection_Changed__DelegateSignature(int32 Selected_Index)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "BndEvt__PlayerSurveysToggle_K2Node_ComponentBoundEvent_4_Selection Changed__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_BndEvt__PlayerSurveysToggle_K2Node_ComponentBoundEvent_4_Selection_Changed__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__PlayerSurveysToggle_K2Node_ComponentBoundEvent_4_Selection Changed__DelegateSignature");
+
+	Params::UTabAccount_C_BndEvt__PlayerSurveysToggle_K2Node_ComponentBoundEvent_4_Selection_Changed__DelegateSignature_Params Parms{};
 
 	Parms.Selected_Index = Selected_Index;
 
@@ -1091,12 +1213,14 @@ void UTabAccount_C::BndEvt__PlayerSurveysToggle_K2Node_ComponentBoundEvent_4_Sel
 
 void UTabAccount_C::Destruct()
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1108,9 +1232,12 @@ void UTabAccount_C::Destruct()
 
 void UTabAccount_C::BndEvt__NotifyWhenPlayingToggle_K2Node_ComponentBoundEvent_5_Selection_Changed__DelegateSignature(int32 Selected_Index)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "BndEvt__NotifyWhenPlayingToggle_K2Node_ComponentBoundEvent_5_Selection Changed__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_BndEvt__NotifyWhenPlayingToggle_K2Node_ComponentBoundEvent_5_Selection_Changed__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__NotifyWhenPlayingToggle_K2Node_ComponentBoundEvent_5_Selection Changed__DelegateSignature");
+
+	Params::UTabAccount_C_BndEvt__NotifyWhenPlayingToggle_K2Node_ComponentBoundEvent_5_Selection_Changed__DelegateSignature_Params Parms{};
 
 	Parms.Selected_Index = Selected_Index;
 
@@ -1126,9 +1253,12 @@ void UTabAccount_C::BndEvt__NotifyWhenPlayingToggle_K2Node_ComponentBoundEvent_5
 
 void UTabAccount_C::BndEvt__LocalNotificationsToggle_K2Node_ComponentBoundEvent_7_Selection_Changed__DelegateSignature(int32 Selected_Index)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "BndEvt__LocalNotificationsToggle_K2Node_ComponentBoundEvent_7_Selection Changed__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_BndEvt__LocalNotificationsToggle_K2Node_ComponentBoundEvent_7_Selection_Changed__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "BndEvt__LocalNotificationsToggle_K2Node_ComponentBoundEvent_7_Selection Changed__DelegateSignature");
+
+	Params::UTabAccount_C_BndEvt__LocalNotificationsToggle_K2Node_ComponentBoundEvent_7_Selection_Changed__DelegateSignature_Params Parms{};
 
 	Parms.Selected_Index = Selected_Index;
 
@@ -1143,10 +1273,10 @@ void UTabAccount_C::BndEvt__LocalNotificationsToggle_K2Node_ComponentBoundEvent_
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // class UFortSettingsContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // class UFortSettingsContext*        CallFunc_GetContext_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortSettingsContext*        CallFunc_GetContext_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_ComponentBoundEvent_NewTooltipText                        ()
+// class FText                        K2Node_ComponentBoundEvent_NewTooltipText                        (None)
 // class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue_3                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_7                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortAsyncAction_ShowConfirmation_NUI*CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1159,9 +1289,9 @@ void UTabAccount_C::BndEvt__LocalNotificationsToggle_K2Node_ComponentBoundEvent_
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_5                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        Temp_name_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetText_ReturnValue                                     ()
+// class FText                        CallFunc_GetText_ReturnValue                                     (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetText_ReturnValue_1                                   ()
+// class FText                        CallFunc_GetText_ReturnValue_1                                   (None)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_4                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue_1                         (ZeroConstructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_3                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1180,7 +1310,7 @@ void UTabAccount_C::BndEvt__LocalNotificationsToggle_K2Node_ComponentBoundEvent_
 // bool                               K2Node_Event_bCanRefundSomething                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 // enum class EFortDialogResult       K2Node_CustomEvent_Result                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        K2Node_CustomEvent_ResultName                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1208,9 +1338,12 @@ void UTabAccount_C::BndEvt__LocalNotificationsToggle_K2Node_ComponentBoundEvent_
 
 void UTabAccount_C::ExecuteUbergraph_TabAccount(int32 EntryPoint, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class UFortSettingsContext* CallFunc_GetContext_ReturnValue, class FText CallFunc_Format_ReturnValue, class UFortSettingsContext* CallFunc_GetContext_ReturnValue_1, class UFortSettingsContext* CallFunc_GetContext_ReturnValue_2, class FText K2Node_ComponentBoundEvent_NewTooltipText, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_3, class UCommonButton* K2Node_ComponentBoundEvent_Button_7, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue, const class FString& CallFunc_GetAccountLinkingUIURL_ReturnValue, int32 CallFunc_Len_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, enum class EFortDialogResult Temp_byte_Variable, class UCommonButton* K2Node_ComponentBoundEvent_Button_6, bool K2Node_SwitchEnum_CmpSuccess, class UCommonButton* K2Node_ComponentBoundEvent_Button_5, class FName Temp_name_Variable, class FText CallFunc_GetText_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, class FText CallFunc_GetText_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_4, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_4, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, bool CallFunc_UninstallAllOnDemandChunks_ReturnValue, int32 CallFunc_GetAccurateRealTime_Seconds, float CallFunc_GetAccurateRealTime_PartialSeconds, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_MakeLiteralFloat_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, int32 K2Node_Event_RefundsRemaining, bool K2Node_Event_bCanRefundSomething, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue_1, enum class EFortDialogResult K2Node_CustomEvent_Result, class FName K2Node_CustomEvent_ResultName, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_5, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_ShowWebURL_ReturnValue, class UPurchaseHistoryScreen_C* CallFunc_Create_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue, int32 K2Node_ComponentBoundEvent_Selected_Index_5, bool K2Node_CustomEvent_bSuccess, const struct FMcpPrivacySettings& K2Node_CustomEvent_Settings, const struct FMcpPrivacySettings& CallFunc_PrivacySettingsFromSelection_McpPrivacySettings, int32 CallFunc_PrivacySettingsToSelection_ReturnValue, int32 K2Node_ComponentBoundEvent_Selected_Index_4, bool CallFunc_Conv_IntToBool_ReturnValue, int32 K2Node_ComponentBoundEvent_Selected_Index_3, int32 K2Node_ComponentBoundEvent_Selected_Index_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, int32 K2Node_ComponentBoundEvent_Selected_Index_1, int32 K2Node_ComponentBoundEvent_Selected_Index, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_6)
 {
-	static auto Func = Class->GetFunction("TabAccount_C", "ExecuteUbergraph_TabAccount");
+	static class UFunction* Func = nullptr;
 
-	Params::UTabAccount_C_ExecuteUbergraph_TabAccount_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TabAccount_C", "ExecuteUbergraph_TabAccount");
+
+	Params::UTabAccount_C_ExecuteUbergraph_TabAccount_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
@@ -1284,6 +1417,4 @@ void UTabAccount_C::ExecuteUbergraph_TabAccount(int32 EntryPoint, TArray<struct 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

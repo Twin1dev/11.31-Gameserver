@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -23,11 +20,8 @@ public:
 	class USizeBox*                              ItemDetailsContainer;                              // 0x570(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USafeZone*                             SetItems_SZ;                                       // 0x578(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("WinterQuestDetailsScreen_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UWinterQuestDetailsScreen_C* GetDefaultObj();
 
 	void OnSetRewardsVaultRotator(class AItemPreviewVaultRotator* ItemPreviewVaultRotator);
 	void OnResetVaultRotator(class AItemPreviewVaultRotator* ItemPreviewVaultRotator);
@@ -36,6 +30,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

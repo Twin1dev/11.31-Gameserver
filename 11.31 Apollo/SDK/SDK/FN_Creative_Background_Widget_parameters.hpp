@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -22,7 +19,7 @@ struct UCreative_Background_Widget_C_SetTextFont_Params
 {
 public:
 	int32                                        TextFont;                                          // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4F89[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5820[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateFontInfo                        NewLocalVar_0;                                     // 0x8(0x50)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	int32                                        Temp_int_Variable;                                 // 0x58(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                  Temp_name_Variable;                                // 0x5C(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,7 +40,7 @@ struct UCreative_Background_Widget_C_SetTextColor_Params
 {
 public:
 	struct FLinearColor                          TextColor;                                         // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                           K2Node_MakeStruct_SlateColor;                      // 0x10(0x28)()
+	struct FSlateColor                           K2Node_MakeStruct_SlateColor;                      // 0x10(0x28)(None)
 };
 
 // 0x1 (0x1 - 0x0)
@@ -60,7 +57,7 @@ struct UCreative_Background_Widget_C_SetTextScale_Params
 {
 public:
 	int32                                        FontSize;                                          // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4F8A[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5821[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateFontInfo                        K2Node_MakeStruct_SlateFontInfo;                   // 0x8(0x50)(HasGetValueTypeHash)
 };
 
@@ -78,7 +75,7 @@ struct UCreative_Background_Widget_C_SetText_Params
 {
 public:
 	class FString                                Text;                                              // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x10(0x18)()
+	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x10(0x18)(None)
 };
 
 // 0x4 (0x4 - 0x0)
@@ -92,6 +89,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

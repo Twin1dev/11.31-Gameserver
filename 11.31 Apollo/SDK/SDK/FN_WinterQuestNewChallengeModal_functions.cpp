@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass WinterQuestNewChallengeModal.WinterQuestNewChallengeModal_C
+// (None)
+
+class UClass* UWinterQuestNewChallengeModal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WinterQuestNewChallengeModal_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// WinterQuestNewChallengeModal_C WinterQuestNewChallengeModal.Default__WinterQuestNewChallengeModal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UWinterQuestNewChallengeModal_C* UWinterQuestNewChallengeModal_C::GetDefaultObj()
+{
+	static class UWinterQuestNewChallengeModal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWinterQuestNewChallengeModal_C*>(UWinterQuestNewChallengeModal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

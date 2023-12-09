@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SimpleFeatured_GoldButton.SimpleFeatured_GoldButton_C
+// (None)
+
+class UClass* USimpleFeatured_GoldButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SimpleFeatured_GoldButton_C");
+
+	return Clss;
+}
+
+
+// SimpleFeatured_GoldButton_C SimpleFeatured_GoldButton.Default__SimpleFeatured_GoldButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USimpleFeatured_GoldButton_C* USimpleFeatured_GoldButton_C::GetDefaultObj()
+{
+	static class USimpleFeatured_GoldButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USimpleFeatured_GoldButton_C*>(USimpleFeatured_GoldButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SimpleFeatured_GoldButton.SimpleFeatured_GoldButton_C.SetText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void USimpleFeatured_GoldButton_C::SetText(class FText NewText)
 {
-	static auto Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "SetText");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleFeatured_GoldButton_C_SetText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "SetText");
+
+	Params::USimpleFeatured_GoldButton_C_SetText_Params Parms{};
 
 	Parms.NewText = NewText;
 
@@ -45,9 +73,12 @@ void USimpleFeatured_GoldButton_C::SetText(class FText NewText)
 
 void USimpleFeatured_GoldButton_C::ChangeSecondaryText(class FText& InValue, bool Temp_bool_Variable, bool CallFunc_TextIsEmpty_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "ChangeSecondaryText");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleFeatured_GoldButton_C_ChangeSecondaryText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "ChangeSecondaryText");
+
+	Params::USimpleFeatured_GoldButton_C_ChangeSecondaryText_Params Parms{};
 
 	Parms.InValue = InValue;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -74,9 +105,12 @@ void USimpleFeatured_GoldButton_C::ChangeSecondaryText(class FText& InValue, boo
 
 void USimpleFeatured_GoldButton_C::HandleSize(bool Temp_bool_Variable, bool Temp_bool_Variable_1, int32 Temp_int_Variable, const struct FMargin& K2Node_MakeStruct_Margin, const struct FMargin& K2Node_Select_Default, int32 K2Node_Select_Default_1, const struct FSlateFontInfo& K2Node_MakeStruct_SlateFontInfo)
 {
-	static auto Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "HandleSize");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleFeatured_GoldButton_C_HandleSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "HandleSize");
+
+	Params::USimpleFeatured_GoldButton_C_HandleSize_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
@@ -98,9 +132,12 @@ void USimpleFeatured_GoldButton_C::HandleSize(bool Temp_bool_Variable, bool Temp
 
 void USimpleFeatured_GoldButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleFeatured_GoldButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "PreConstruct");
+
+	Params::USimpleFeatured_GoldButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -115,12 +152,14 @@ void USimpleFeatured_GoldButton_C::PreConstruct(bool IsDesignTime)
 
 void USimpleFeatured_GoldButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleFeatured_GoldButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -131,12 +170,14 @@ void USimpleFeatured_GoldButton_C::Construct()
 
 void USimpleFeatured_GoldButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleFeatured_GoldButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -147,12 +188,14 @@ void USimpleFeatured_GoldButton_C::BP_OnHovered()
 
 void USimpleFeatured_GoldButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleFeatured_GoldButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -163,12 +206,14 @@ void USimpleFeatured_GoldButton_C::BP_OnUnhovered()
 
 void USimpleFeatured_GoldButton_C::BP_OnClicked()
 {
-	static auto Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "BP_OnClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleFeatured_GoldButton_C_BP_OnClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "BP_OnClicked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -190,9 +235,12 @@ void USimpleFeatured_GoldButton_C::BP_OnClicked()
 
 void USimpleFeatured_GoldButton_C::ExecuteUbergraph_SimpleFeatured_GoldButton(int32 EntryPoint, bool Temp_bool_Variable, class UMaterialInterface* Temp_object_Variable, class UMaterialInterface* Temp_object_Variable_1, bool K2Node_Event_IsDesignTime, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UMaterialInterface* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "ExecuteUbergraph_SimpleFeatured_GoldButton");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleFeatured_GoldButton_C", "ExecuteUbergraph_SimpleFeatured_GoldButton");
+
+	Params::USimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -212,6 +260,4 @@ void USimpleFeatured_GoldButton_C::ExecuteUbergraph_SimpleFeatured_GoldButton(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass BladeMenu_SocialPanel.BladeMenu_SocialPanel_C
+// (None)
+
+class UClass* UBladeMenu_SocialPanel_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BladeMenu_SocialPanel_C");
+
+	return Clss;
+}
+
+
+// BladeMenu_SocialPanel_C BladeMenu_SocialPanel.Default__BladeMenu_SocialPanel_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBladeMenu_SocialPanel_C* UBladeMenu_SocialPanel_C::GetDefaultObj()
+{
+	static class UBladeMenu_SocialPanel_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBladeMenu_SocialPanel_C*>(UBladeMenu_SocialPanel_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BladeMenu_SocialPanel.BladeMenu_SocialPanel_C.OnOpened
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UBladeMenu_SocialPanel_C::OnOpened()
 {
-	static auto Func = Class->GetFunction("BladeMenu_SocialPanel_C", "OnOpened");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_SocialPanel_C_OnOpened_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_SocialPanel_C", "OnOpened");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UBladeMenu_SocialPanel_C::OnOpened()
 
 void UBladeMenu_SocialPanel_C::OnClosed()
 {
-	static auto Func = Class->GetFunction("BladeMenu_SocialPanel_C", "OnClosed");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_SocialPanel_C_OnClosed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_SocialPanel_C", "OnClosed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UBladeMenu_SocialPanel_C::OnClosed()
 
 void UBladeMenu_SocialPanel_C::OnInitialized()
 {
-	static auto Func = Class->GetFunction("BladeMenu_SocialPanel_C", "OnInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_SocialPanel_C_OnInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_SocialPanel_C", "OnInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void UBladeMenu_SocialPanel_C::OnInitialized()
 
 void UBladeMenu_SocialPanel_C::OnCloseAnimationFinished()
 {
-	static auto Func = Class->GetFunction("BladeMenu_SocialPanel_C", "OnCloseAnimationFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_SocialPanel_C_OnCloseAnimationFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_SocialPanel_C", "OnCloseAnimationFinished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -99,9 +132,12 @@ void UBladeMenu_SocialPanel_C::OnCloseAnimationFinished()
 
 void UBladeMenu_SocialPanel_C::ExecuteUbergraph_BladeMenu_SocialPanel(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float CallFunc_GetEndTime_ReturnValue, float CallFunc_PauseAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, float CallFunc_GetEndTime_ReturnValue_1, bool CallFunc_IsAnimationPlaying_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, float CallFunc_PauseAnimation_ReturnValue_1, bool CallFunc_IsAnimationPlaying_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("BladeMenu_SocialPanel_C", "ExecuteUbergraph_BladeMenu_SocialPanel");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_SocialPanel_C_ExecuteUbergraph_BladeMenu_SocialPanel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_SocialPanel_C", "ExecuteUbergraph_BladeMenu_SocialPanel");
+
+	Params::UBladeMenu_SocialPanel_C_ExecuteUbergraph_BladeMenu_SocialPanel_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -124,6 +160,4 @@ void UBladeMenu_SocialPanel_C::ExecuteUbergraph_BladeMenu_SocialPanel(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -27,7 +24,7 @@ public:
 	class USpacer*                               Spacer_Bottom;                                     // 0x2C0(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USpacer*                               Spacer_Right;                                      // 0x2C8(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	int32                                        FontSizeMobile;                                    // 0x2D0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4B79[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1250[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  Hover_Text;                                        // 0x2D8(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FVector2D                             ToolTipSizeMobile;                                 // 0x2F0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        HeightDefault;                                     // 0x2F8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -37,17 +34,14 @@ public:
 	class FText                                  TapToShootText;                                    // 0x320(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  DedicatedButtonText;                               // 0x338(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                  CustomText;                                        // 0x350(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FText                                  _3DTouchText;                                      // 0x368(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FText                                  ThreeDTouchText;                                   // 0x368(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("OptionsMenuFireModeButton_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UOptionsMenuFireModeButton_C* GetDefaultObj();
 
 	void HandleWidgetDeactivated(class UCommonActivatablePanel* ActivatableWidget);
 	void SetFireModeButtonText(class UFortGameUserSettings* CallFunc_GetFortGameUserSettings_ReturnValue, const struct FFireModeData& CallFunc_GetFireModeData_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess);
-	class UWidget* On_MenuAnchorSettingDescription_GetMenuContent_0(class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UTooltip_Basic_S_C* CallFunc_Create_ReturnValue);
+	class UWidget* On_MenuAnchorSettingDescription_GetMenuContent_0(class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UTooltipMinusBasicMinusS_C* CallFunc_Create_ReturnValue);
 	void Hide_Tooltip();
 	void SetToolTipSize(const struct FVector2D& DefaultSize, const struct FVector2D& MobileSize, bool CallFunc_IsMobileGame_ReturnValue, bool Temp_bool_Variable, const struct FVector2D& K2Node_Select_Default);
 	void ShowTooltip();
@@ -69,6 +63,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

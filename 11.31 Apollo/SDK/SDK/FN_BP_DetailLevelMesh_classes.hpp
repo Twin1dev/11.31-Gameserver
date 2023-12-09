@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -23,17 +20,12 @@ public:
 	bool                                         AlwaysVisible;                                     // 0x230(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         NotVisibleOnSwitch;                                // 0x231(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BP_DetailLevelMesh_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ABP_DetailLevelMesh_C* GetDefaultObj();
 
 	void ExecuteUbergraph_BP_DetailLevelMesh(int32 EntryPoint);
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

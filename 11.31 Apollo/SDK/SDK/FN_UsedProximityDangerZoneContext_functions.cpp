@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass UsedProximityDangerZoneContext.UsedProximityDangerZoneContext_C
+// (None)
+
+class UClass* UUsedProximityDangerZoneContext_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UsedProximityDangerZoneContext_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// UsedProximityDangerZoneContext_C UsedProximityDangerZoneContext.Default__UsedProximityDangerZoneContext_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UUsedProximityDangerZoneContext_C* UUsedProximityDangerZoneContext_C::GetDefaultObj()
+{
+	static class UUsedProximityDangerZoneContext_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUsedProximityDangerZoneContext_C*>(UUsedProximityDangerZoneContext_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

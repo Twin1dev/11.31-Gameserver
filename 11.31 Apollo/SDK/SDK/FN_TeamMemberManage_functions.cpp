@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TeamMemberManage.TeamMemberManage_C
+// (None)
+
+class UClass* UTeamMemberManage_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TeamMemberManage_C");
+
+	return Clss;
+}
+
+
+// TeamMemberManage_C TeamMemberManage.Default__TeamMemberManage_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTeamMemberManage_C* UTeamMemberManage_C::GetDefaultObj()
+{
+	static class UTeamMemberManage_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTeamMemberManage_C*>(UTeamMemberManage_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TeamMemberManage.TeamMemberManage_C.BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UTeamMemberManage_C::BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("TeamMemberManage_C", "BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberManage_C_BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberManage_C", "BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UTeamMemberManage_C_BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -40,9 +68,12 @@ void UTeamMemberManage_C::BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_
 
 void UTeamMemberManage_C::OnParticipationChanged(bool bIsParticipating)
 {
-	static auto Func = Class->GetFunction("TeamMemberManage_C", "OnParticipationChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberManage_C_OnParticipationChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberManage_C", "OnParticipationChanged");
+
+	Params::UTeamMemberManage_C_OnParticipationChanged_Params Parms{};
 
 	Parms.bIsParticipating = bIsParticipating;
 
@@ -57,12 +88,14 @@ void UTeamMemberManage_C::OnParticipationChanged(bool bIsParticipating)
 
 void UTeamMemberManage_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("TeamMemberManage_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberManage_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberManage_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -75,9 +108,12 @@ void UTeamMemberManage_C::BP_OnActivated()
 
 void UTeamMemberManage_C::BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature(class FName IconId, class FName ColorId)
 {
-	static auto Func = Class->GetFunction("TeamMemberManage_C", "BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberManage_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberManage_C", "BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature");
+
+	Params::UTeamMemberManage_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature_Params Parms{};
 
 	Parms.IconId = IconId;
 	Parms.ColorId = ColorId;
@@ -93,12 +129,14 @@ void UTeamMemberManage_C::BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBou
 
 void UTeamMemberManage_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("TeamMemberManage_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberManage_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberManage_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -111,9 +149,12 @@ void UTeamMemberManage_C::BP_OnDeactivated()
 
 void UTeamMemberManage_C::BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
 {
-	static auto Func = Class->GetFunction("TeamMemberManage_C", "BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberManage_C_BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberManage_C", "BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature");
+
+	Params::UTeamMemberManage_C_BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature_Params Parms{};
 
 	Parms.ActiveWidget = ActiveWidget;
 	Parms.ActiveWidgetIndex = ActiveWidgetIndex;
@@ -129,12 +170,14 @@ void UTeamMemberManage_C::BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_O
 
 void UTeamMemberManage_C::OpenBannerEditor()
 {
-	static auto Func = Class->GetFunction("TeamMemberManage_C", "OpenBannerEditor");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberManage_C_OpenBannerEditor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberManage_C", "OpenBannerEditor");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -144,11 +187,11 @@ void UTeamMemberManage_C::OpenBannerEditor()
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_bIsParticipating                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        K2Node_Select_Default                                            (None)
 // class UIconTextButton_C*           K2Node_DynamicCast_AsIcon_Text_Button                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FName                        K2Node_ComponentBoundEvent_IconId                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -159,9 +202,12 @@ void UTeamMemberManage_C::OpenBannerEditor()
 
 void UTeamMemberManage_C::ExecuteUbergraph_TeamMemberManage(int32 EntryPoint, bool Temp_bool_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool K2Node_Event_bIsParticipating, class FText K2Node_Select_Default, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess, class FName K2Node_ComponentBoundEvent_IconId, class FName K2Node_ComponentBoundEvent_ColorId, class UWidget* K2Node_ComponentBoundEvent_ActiveWidget, int32 K2Node_ComponentBoundEvent_ActiveWidgetIndex, bool CallFunc_EqualEqual_ObjectObject_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TeamMemberManage_C", "ExecuteUbergraph_TeamMemberManage");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberManage_C_ExecuteUbergraph_TeamMemberManage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberManage_C", "ExecuteUbergraph_TeamMemberManage");
+
+	Params::UTeamMemberManage_C_ExecuteUbergraph_TeamMemberManage_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -184,6 +230,4 @@ void UTeamMemberManage_C::ExecuteUbergraph_TeamMemberManage(int32 EntryPoint, bo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GE_HideOnMiniMap.GE_HideOnMiniMap_C
+// (None)
+
+class UClass* UGE_HideOnMiniMap_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GE_HideOnMiniMap_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// GE_HideOnMiniMap_C GE_HideOnMiniMap.Default__GE_HideOnMiniMap_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGE_HideOnMiniMap_C* UGE_HideOnMiniMap_C::GetDefaultObj()
+{
+	static class UGE_HideOnMiniMap_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGE_HideOnMiniMap_C*>(UGE_HideOnMiniMap_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass Announce_TutorialConversation.Announce_TutorialConversation_C
+// (Actor)
+
+class UClass* AAnnounce_TutorialConversation_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Announce_TutorialConversation_C");
+
+	return Clss;
+}
+
+
+// Announce_TutorialConversation_C Announce_TutorialConversation.Default__Announce_TutorialConversation_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AAnnounce_TutorialConversation_C* AAnnounce_TutorialConversation_C::GetDefaultObj()
+{
+	static class AAnnounce_TutorialConversation_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AAnnounce_TutorialConversation_C*>(AAnnounce_TutorialConversation_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Announce_TutorialConversation.Announce_TutorialConversation_C.HandleSentenceStop_UI
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void AAnnounce_TutorialConversation_C::HandleSentenceStop_UI(int32 SentenceIdx)
 {
-	static auto Func = Class->GetFunction("Announce_TutorialConversation_C", "HandleSentenceStop_UI");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_TutorialConversation_C_HandleSentenceStop_UI_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_TutorialConversation_C", "HandleSentenceStop_UI");
+
+	Params::AAnnounce_TutorialConversation_C_HandleSentenceStop_UI_Params Parms{};
 
 	Parms.SentenceIdx = SentenceIdx;
 
@@ -40,9 +68,12 @@ void AAnnounce_TutorialConversation_C::HandleSentenceStop_UI(int32 SentenceIdx)
 
 void AAnnounce_TutorialConversation_C::HandleSentenceStart_UI(int32 SentenceIdx)
 {
-	static auto Func = Class->GetFunction("Announce_TutorialConversation_C", "HandleSentenceStart_UI");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_TutorialConversation_C_HandleSentenceStart_UI_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_TutorialConversation_C", "HandleSentenceStart_UI");
+
+	Params::AAnnounce_TutorialConversation_C_HandleSentenceStart_UI_Params Parms{};
 
 	Parms.SentenceIdx = SentenceIdx;
 
@@ -57,12 +88,14 @@ void AAnnounce_TutorialConversation_C::HandleSentenceStart_UI(int32 SentenceIdx)
 
 void AAnnounce_TutorialConversation_C::InitAnnouncement()
 {
-	static auto Func = Class->GetFunction("Announce_TutorialConversation_C", "InitAnnouncement");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_TutorialConversation_C_InitAnnouncement_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_TutorialConversation_C", "InitAnnouncement");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -73,12 +106,14 @@ void AAnnounce_TutorialConversation_C::InitAnnouncement()
 
 void AAnnounce_TutorialConversation_C::OnClientAnnouncementStart()
 {
-	static auto Func = Class->GetFunction("Announce_TutorialConversation_C", "OnClientAnnouncementStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_TutorialConversation_C_OnClientAnnouncementStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_TutorialConversation_C", "OnClientAnnouncementStart");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -91,9 +126,12 @@ void AAnnounce_TutorialConversation_C::OnClientAnnouncementStart()
 
 void AAnnounce_TutorialConversation_C::OnSentenceStarted(struct FFortConversationSentence& Sentence, int32 SentenceIndex)
 {
-	static auto Func = Class->GetFunction("Announce_TutorialConversation_C", "OnSentenceStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_TutorialConversation_C_OnSentenceStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_TutorialConversation_C", "OnSentenceStarted");
+
+	Params::AAnnounce_TutorialConversation_C_OnSentenceStarted_Params Parms{};
 
 	Parms.Sentence = Sentence;
 	Parms.SentenceIndex = SentenceIndex;
@@ -111,9 +149,12 @@ void AAnnounce_TutorialConversation_C::OnSentenceStarted(struct FFortConversatio
 
 void AAnnounce_TutorialConversation_C::OnConversationFinished(const struct FFortConversationSentence& FinishingSentence, int32 FinishingSentenceSentenceIndex)
 {
-	static auto Func = Class->GetFunction("Announce_TutorialConversation_C", "OnConversationFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_TutorialConversation_C_OnConversationFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_TutorialConversation_C", "OnConversationFinished");
+
+	Params::AAnnounce_TutorialConversation_C_OnConversationFinished_Params Parms{};
 
 	Parms.FinishingSentence = FinishingSentence;
 	Parms.FinishingSentenceSentenceIndex = FinishingSentenceSentenceIndex;
@@ -131,9 +172,12 @@ void AAnnounce_TutorialConversation_C::OnConversationFinished(const struct FFort
 
 void AAnnounce_TutorialConversation_C::OnSentenceFinished(struct FFortConversationSentence& Sentence, int32 SentenceIndex)
 {
-	static auto Func = Class->GetFunction("Announce_TutorialConversation_C", "OnSentenceFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_TutorialConversation_C_OnSentenceFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_TutorialConversation_C", "OnSentenceFinished");
+
+	Params::AAnnounce_TutorialConversation_C_OnSentenceFinished_Params Parms{};
 
 	Parms.Sentence = Sentence;
 	Parms.SentenceIndex = SentenceIndex;
@@ -149,12 +193,14 @@ void AAnnounce_TutorialConversation_C::OnSentenceFinished(struct FFortConversati
 
 void AAnnounce_TutorialConversation_C::OnClientAnnouncementStop()
 {
-	static auto Func = Class->GetFunction("Announce_TutorialConversation_C", "OnClientAnnouncementStop");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_TutorialConversation_C_OnClientAnnouncementStop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_TutorialConversation_C", "OnClientAnnouncementStop");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -164,7 +210,7 @@ void AAnnounce_TutorialConversation_C::OnClientAnnouncementStop()
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_PlayConversation_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortConversationSentence   K2Node_Event_FinishingSentence                                   ()
+// struct FFortConversationSentence   K2Node_Event_FinishingSentence                                   (None)
 // int32                              K2Node_Event_FinishingSentenceSentenceIndex                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortConversationSentence   K2Node_Event_Sentence_1                                          (ConstParm)
@@ -180,9 +226,12 @@ void AAnnounce_TutorialConversation_C::OnClientAnnouncementStop()
 
 void AAnnounce_TutorialConversation_C::ExecuteUbergraph_Announce_TutorialConversation(int32 EntryPoint, bool CallFunc_PlayConversation_ReturnValue, const struct FFortConversationSentence& K2Node_Event_FinishingSentence, int32 K2Node_Event_FinishingSentenceSentenceIndex, int32 CallFunc_Array_Length_ReturnValue, const struct FFortConversationSentence& K2Node_Event_Sentence_1, int32 K2Node_Event_SentenceIndex_1, const struct FTutorialHighlightData& CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_NotEqual_NameName_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, const struct FFortConversationSentence& K2Node_Event_Sentence, int32 K2Node_Event_SentenceIndex, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_PlayConversationFromSentenceIndex_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Announce_TutorialConversation_C", "ExecuteUbergraph_Announce_TutorialConversation");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_TutorialConversation_C_ExecuteUbergraph_Announce_TutorialConversation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_TutorialConversation_C", "ExecuteUbergraph_Announce_TutorialConversation");
+
+	Params::AAnnounce_TutorialConversation_C_ExecuteUbergraph_Announce_TutorialConversation_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayConversation_ReturnValue = CallFunc_PlayConversation_ReturnValue;
@@ -206,6 +255,4 @@ void AAnnounce_TutorialConversation_C::ExecuteUbergraph_Announce_TutorialConvers
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

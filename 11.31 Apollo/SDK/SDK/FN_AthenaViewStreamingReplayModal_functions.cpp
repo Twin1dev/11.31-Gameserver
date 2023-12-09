@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaViewStreamingReplayModal.AthenaViewStreamingReplayModal_C
+// (None)
+
+class UClass* UAthenaViewStreamingReplayModal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaViewStreamingReplayModal_C");
+
+	return Clss;
+}
+
+
+// AthenaViewStreamingReplayModal_C AthenaViewStreamingReplayModal.Default__AthenaViewStreamingReplayModal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaViewStreamingReplayModal_C* UAthenaViewStreamingReplayModal_C::GetDefaultObj()
+{
+	static class UAthenaViewStreamingReplayModal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaViewStreamingReplayModal_C*>(UAthenaViewStreamingReplayModal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaViewStreamingReplayModal.AthenaViewStreamingReplayModal_C.BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAthenaViewStreamingReplayModal_C::BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaViewStreamingReplayModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaViewStreamingReplayModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaViewStreamingReplayModal_C", "BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaViewStreamingReplayModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -40,9 +68,12 @@ void UAthenaViewStreamingReplayModal_C::BndEvt__CloseButton_K2Node_ComponentBoun
 
 void UAthenaViewStreamingReplayModal_C::BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_5_OnEditableTextChangedEvent__DelegateSignature(class FText& Text)
 {
-	static auto Func = Class->GetFunction("AthenaViewStreamingReplayModal_C", "BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_5_OnEditableTextChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaViewStreamingReplayModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_5_OnEditableTextChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaViewStreamingReplayModal_C", "BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_5_OnEditableTextChangedEvent__DelegateSignature");
+
+	Params::UAthenaViewStreamingReplayModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_5_OnEditableTextChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Text = Text;
 
@@ -59,9 +90,12 @@ void UAthenaViewStreamingReplayModal_C::BndEvt__GameSessionSearchText_K2Node_Com
 
 void UAthenaViewStreamingReplayModal_C::BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature(class FText& Text, enum class ETextCommit CommitMethod)
 {
-	static auto Func = Class->GetFunction("AthenaViewStreamingReplayModal_C", "BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaViewStreamingReplayModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaViewStreamingReplayModal_C", "BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature");
+
+	Params::UAthenaViewStreamingReplayModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.CommitMethod = CommitMethod;
@@ -78,9 +112,12 @@ void UAthenaViewStreamingReplayModal_C::BndEvt__GameSessionSearchText_K2Node_Com
 
 void UAthenaViewStreamingReplayModal_C::BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaViewStreamingReplayModal_C", "BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaViewStreamingReplayModal_C_BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaViewStreamingReplayModal_C", "BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaViewStreamingReplayModal_C_BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -102,14 +139,17 @@ void UAthenaViewStreamingReplayModal_C::BndEvt__SearchButton_K2Node_ComponentBou
 // bool                               CallFunc_IsValidGameSessionId_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue_1                         (ZeroConstructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetText_ReturnValue                                     ()
+// class FText                        CallFunc_GetText_ReturnValue                                     (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue_2                         (ZeroConstructor, HasGetValueTypeHash)
 
 void UAthenaViewStreamingReplayModal_C::ExecuteUbergraph_AthenaViewStreamingReplayModal(int32 EntryPoint, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class FText K2Node_ComponentBoundEvent_Text_1, class FText K2Node_ComponentBoundEvent_Text, enum class ETextCommit K2Node_ComponentBoundEvent_CommitMethod, const class FString& CallFunc_Conv_TextToString_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_IsValidGameSessionId_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, class FText CallFunc_GetText_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("AthenaViewStreamingReplayModal_C", "ExecuteUbergraph_AthenaViewStreamingReplayModal");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaViewStreamingReplayModal_C_ExecuteUbergraph_AthenaViewStreamingReplayModal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaViewStreamingReplayModal_C", "ExecuteUbergraph_AthenaViewStreamingReplayModal");
+
+	Params::UAthenaViewStreamingReplayModal_C_ExecuteUbergraph_AthenaViewStreamingReplayModal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_Button_1 = K2Node_ComponentBoundEvent_Button_1;
@@ -130,6 +170,4 @@ void UAthenaViewStreamingReplayModal_C::ExecuteUbergraph_AthenaViewStreamingRepl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

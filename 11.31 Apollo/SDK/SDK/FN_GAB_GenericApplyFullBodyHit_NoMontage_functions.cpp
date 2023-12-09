@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GAB_GenericApplyFullBodyHit_NoMontage.GAB_GenericApplyFullBodyHit_NoMontage_C
+// (None)
+
+class UClass* UGAB_GenericApplyFullBodyHit_NoMontage_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAB_GenericApplyFullBodyHit_NoMontage_C");
+
+	return Clss;
+}
+
+
+// GAB_GenericApplyFullBodyHit_NoMontage_C GAB_GenericApplyFullBodyHit_NoMontage.Default__GAB_GenericApplyFullBodyHit_NoMontage_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAB_GenericApplyFullBodyHit_NoMontage_C* UGAB_GenericApplyFullBodyHit_NoMontage_C::GetDefaultObj()
+{
+	static class UGAB_GenericApplyFullBodyHit_NoMontage_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAB_GenericApplyFullBodyHit_NoMontage_C*>(UGAB_GenericApplyFullBodyHit_NoMontage_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GAB_GenericApplyFullBodyHit_NoMontage.GAB_GenericApplyFullBodyHit_NoMontage_C.K2_CanActivateAbility
@@ -24,16 +49,19 @@ namespace SDK
 
 bool UGAB_GenericApplyFullBodyHit_NoMontage_C::K2_CanActivateAbility(const struct FGameplayAbilityActorInfo& ActorInfo, struct FGameplayTagContainer* RelevantTags)
 {
-	static auto Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "K2_CanActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericApplyFullBodyHit_NoMontage_C_K2_CanActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "K2_CanActivateAbility");
+
+	Params::UGAB_GenericApplyFullBodyHit_NoMontage_C_K2_CanActivateAbility_Params Parms{};
 
 	Parms.ActorInfo = ActorInfo;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (RelevantTags != nullptr)
-		*RelevantTags = Parms.RelevantTags;
+		*RelevantTags = std::move(Parms.RelevantTags);
 
 	return Parms.ReturnValue;
 
@@ -46,12 +74,14 @@ bool UGAB_GenericApplyFullBodyHit_NoMontage_C::K2_CanActivateAbility(const struc
 
 void UGAB_GenericApplyFullBodyHit_NoMontage_C::OnCancelled_A0357285499905489D05F7AAD5DC6FEC()
 {
-	static auto Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "OnCancelled_A0357285499905489D05F7AAD5DC6FEC");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericApplyFullBodyHit_NoMontage_C_OnCancelled_A0357285499905489D05F7AAD5DC6FEC_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "OnCancelled_A0357285499905489D05F7AAD5DC6FEC");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -62,12 +92,14 @@ void UGAB_GenericApplyFullBodyHit_NoMontage_C::OnCancelled_A0357285499905489D05F
 
 void UGAB_GenericApplyFullBodyHit_NoMontage_C::OnInterrupted_A0357285499905489D05F7AAD5DC6FEC()
 {
-	static auto Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "OnInterrupted_A0357285499905489D05F7AAD5DC6FEC");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericApplyFullBodyHit_NoMontage_C_OnInterrupted_A0357285499905489D05F7AAD5DC6FEC_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "OnInterrupted_A0357285499905489D05F7AAD5DC6FEC");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -78,12 +110,14 @@ void UGAB_GenericApplyFullBodyHit_NoMontage_C::OnInterrupted_A0357285499905489D0
 
 void UGAB_GenericApplyFullBodyHit_NoMontage_C::OnBlendOut_A0357285499905489D05F7AAD5DC6FEC()
 {
-	static auto Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "OnBlendOut_A0357285499905489D05F7AAD5DC6FEC");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericApplyFullBodyHit_NoMontage_C_OnBlendOut_A0357285499905489D05F7AAD5DC6FEC_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "OnBlendOut_A0357285499905489D05F7AAD5DC6FEC");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -94,12 +128,14 @@ void UGAB_GenericApplyFullBodyHit_NoMontage_C::OnBlendOut_A0357285499905489D05F7
 
 void UGAB_GenericApplyFullBodyHit_NoMontage_C::OnCompleted_A0357285499905489D05F7AAD5DC6FEC()
 {
-	static auto Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "OnCompleted_A0357285499905489D05F7AAD5DC6FEC");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericApplyFullBodyHit_NoMontage_C_OnCompleted_A0357285499905489D05F7AAD5DC6FEC_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "OnCompleted_A0357285499905489D05F7AAD5DC6FEC");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -111,9 +147,12 @@ void UGAB_GenericApplyFullBodyHit_NoMontage_C::OnCompleted_A0357285499905489D05F
 
 void UGAB_GenericApplyFullBodyHit_NoMontage_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericApplyFullBodyHit_NoMontage_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "K2_OnEndAbility");
+
+	Params::UGAB_GenericApplyFullBodyHit_NoMontage_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -132,9 +171,12 @@ void UGAB_GenericApplyFullBodyHit_NoMontage_C::K2_OnEndAbility(bool bWasCancelle
 
 void UGAB_GenericApplyFullBodyHit_NoMontage_C::OnHitPawn(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "OnHitPawn");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericApplyFullBodyHit_NoMontage_C_OnHitPawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "OnHitPawn");
+
+	Params::UGAB_GenericApplyFullBodyHit_NoMontage_C_OnHitPawn_Params Parms{};
 
 	Parms.SelfActor = SelfActor;
 	Parms.OtherActor = OtherActor;
@@ -153,9 +195,12 @@ void UGAB_GenericApplyFullBodyHit_NoMontage_C::OnHitPawn(class AActor* SelfActor
 
 void UGAB_GenericApplyFullBodyHit_NoMontage_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericApplyFullBodyHit_NoMontage_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGAB_GenericApplyFullBodyHit_NoMontage_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -178,7 +223,7 @@ void UGAB_GenericApplyFullBodyHit_NoMontage_C::K2_ActivateAbilityFromEvent(struc
 // struct FVector                     K2Node_CustomEvent_NormalImpulse                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                  K2Node_CustomEvent_Hit                                           (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // struct FGameplayEventData          K2Node_Event_EventData                                           (ConstParm)
-// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromHitResult_ReturnValue              ()
+// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromHitResult_ReturnValue              (None)
 // class UAbilitySystemComponent*     CallFunc_GetAbilitySystemComponent_ReturnValue                   (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor)
@@ -207,9 +252,12 @@ void UGAB_GenericApplyFullBodyHit_NoMontage_C::K2_ActivateAbilityFromEvent(struc
 
 void UGAB_GenericApplyFullBodyHit_NoMontage_C::ExecuteUbergraph_GAB_GenericApplyFullBodyHit_NoMontage(int32 EntryPoint, class UFortAbilityTask_PlayAnimAndWait* CallFunc_CreatePlayAnimAndWaitProxy_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_IsValid_ReturnValue, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue, bool K2Node_Event_bWasCancelled, class AActor* K2Node_CustomEvent_SelfActor, class AActor* K2Node_CustomEvent_OtherActor, const struct FVector& K2Node_CustomEvent_NormalImpulse, const struct FHitResult& K2Node_CustomEvent_Hit, const struct FGameplayEventData& K2Node_Event_EventData, const struct FGameplayAbilityTargetDataHandle& CallFunc_AbilityTargetDataFromHitResult_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UFortAbilitySystemComponent* CallFunc_GetActivatingAbilityComponent_ReturnValue, bool CallFunc_NotEqual_ClassClass_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, bool CallFunc_NotEqual_ClassClass_ReturnValue_1, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue_1, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_1, bool K2Node_SwitchEnum_CmpSuccess, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue_2, bool CallFunc_RemoveActiveGameplayEffect_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UFortAbilitySystemComponent* CallFunc_GetActivatingAbilityComponent_ReturnValue_1, bool CallFunc_RemoveActiveGameplayEffect_ReturnValue_1, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue_3, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_2, bool K2Node_SwitchEnum_CmpSuccess_1, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4)
 {
-	static auto Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "ExecuteUbergraph_GAB_GenericApplyFullBodyHit_NoMontage");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericApplyFullBodyHit_NoMontage_C_ExecuteUbergraph_GAB_GenericApplyFullBodyHit_NoMontage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericApplyFullBodyHit_NoMontage_C", "ExecuteUbergraph_GAB_GenericApplyFullBodyHit_NoMontage");
+
+	Params::UGAB_GenericApplyFullBodyHit_NoMontage_C_ExecuteUbergraph_GAB_GenericApplyFullBodyHit_NoMontage_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_CreatePlayAnimAndWaitProxy_ReturnValue = CallFunc_CreatePlayAnimAndWaitProxy_ReturnValue;
@@ -255,6 +303,4 @@ void UGAB_GenericApplyFullBodyHit_NoMontage_C::ExecuteUbergraph_GAB_GenericApply
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

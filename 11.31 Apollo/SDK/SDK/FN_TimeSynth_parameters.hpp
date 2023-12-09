@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -23,9 +20,9 @@ struct UTimeSynthComponent_StopSoundsOnVolumeGroupWithFadeOverride_Params
 public:
 	class UTimeSynthVolumeGroup*                 InVolumeGroup;                                     // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ETimeSynthEventClipQuantization   EventQuantization;                                 // 0x8(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1F60[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_115C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimeSynthTimeDef                     FadeTime;                                          // 0xC(0x8)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1F61[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_115D[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -35,7 +32,7 @@ struct UTimeSynthComponent_StopSoundsOnVolumeGroup_Params
 public:
 	class UTimeSynthVolumeGroup*                 InVolumeGroup;                                     // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ETimeSynthEventClipQuantization   EventQuantization;                                 // 0x8(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1F62[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1164[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -45,7 +42,7 @@ struct UTimeSynthComponent_StopClipWithFadeOverride_Params
 public:
 	struct FTimeSynthClipHandle                  InClipHandle;                                      // 0x0(0xC)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	enum class ETimeSynthEventClipQuantization   EventQuantization;                                 // 0xC(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1F63[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1168[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimeSynthTimeDef                     FadeTime;                                          // 0x10(0x8)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 
@@ -56,7 +53,7 @@ struct UTimeSynthComponent_StopClip_Params
 public:
 	struct FTimeSynthClipHandle                  InClipHandle;                                      // 0x0(0xC)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	enum class ETimeSynthEventClipQuantization   EventQuantization;                                 // 0xC(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1F64[0x3];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_116A[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -91,7 +88,7 @@ struct UTimeSynthComponent_SetFilterSettings_Params
 {
 public:
 	enum class ETimeSynthFilter                  Filter;                                            // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1F65[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1179[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimeSynthFilterSettings              InSettings;                                        // 0x4(0xC)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
@@ -136,13 +133,6 @@ public:
 	float                                        BeatsPerMinute;                                    // 0x0(0x4)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function TimeSynth.TimeSynthComponent.ResetSeed
-struct UTimeSynthComponent_ResetSeed_Params
-{
-public:
-};
-
 // 0x20 (0x20 - 0x0)
 // Function TimeSynth.TimeSynthComponent.PlayClip
 struct UTimeSynthComponent_PlayClip_Params
@@ -151,7 +141,7 @@ public:
 	class UTimeSynthClip*                        InClip;                                            // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTimeSynthVolumeGroup*                 InVolumeGroup;                                     // 0x8(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FTimeSynthClipHandle                  ReturnValue;                                       // 0x10(0xC)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1F66[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1188[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -184,13 +174,11 @@ struct UTimeSynthComponent_AddQuantizationEventDelegate_Params
 {
 public:
 	enum class ETimeSynthEventQuantization       QuantizationType;                                  // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1F67[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1191[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	UDelegateProperty_                           OnQuantizationEvent;                               // 0x4(0x10)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,26 +1,16 @@
 #pragma once
 #include "Includes.h"
 
-// this is shit im gonna write a new way soon
-static UFortEngine* GetEngine()
-{
-	auto engine = UObject::FindObjectSlow<UFortEngine>("FortEngine_");
-	return engine;
-}
 
-static UWorld* GetWorld()
-{
-	return GetEngine()->GameViewport->World;
-}
 
 inline AFortGameStateAthena* GetGameState()
 {
-	return (AFortGameStateAthena*)GetWorld()->GameState;
+	return (AFortGameStateAthena*)UWorld::GetWorld()->GameState;
 }
 
 inline AFortGameModeAthena* GetGameMode()
 {
-	return (AFortGameModeAthena*)GetWorld()->AuthorityGameMode;
+	return (AFortGameModeAthena*)UWorld::GetWorld()->AuthorityGameMode;
 }
 
 static __forceinline uintptr_t BaseAddress()
@@ -75,7 +65,7 @@ T* SpawnActor(FVector Location, FRotator Rotation = FRotator{ 0, 0, 0 }, UClass*
 	Transform.Scale3D = Scale3D;
 	Transform.Translation = Location;
 
-	auto Actor = GetDefaultObject<UGameplayStatics>()->BeginSpawningActorFromClass(GetWorld(), Class, Transform, false, nullptr);
+	auto Actor = GetDefaultObject<UGameplayStatics>()->BeginSpawningActorFromClass(UWorld::GetWorld(), Class, Transform, false, nullptr);
 	if (Actor)
 		GetDefaultObject<UGameplayStatics>()->FinishSpawningActor(Actor, Transform);
 	return (T*)Actor;

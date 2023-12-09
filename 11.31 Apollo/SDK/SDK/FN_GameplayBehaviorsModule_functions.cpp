@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,62 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class GameplayBehaviorsModule.BTTask_StopGameplayBehavior
+// (None)
+
+class UClass* UBTTask_StopGameplayBehavior::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BTTask_StopGameplayBehavior");
+
+	return Clss;
+}
+
+
+// BTTask_StopGameplayBehavior GameplayBehaviorsModule.Default__BTTask_StopGameplayBehavior
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UBTTask_StopGameplayBehavior* UBTTask_StopGameplayBehavior::GetDefaultObj()
+{
+	static class UBTTask_StopGameplayBehavior* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBTTask_StopGameplayBehavior*>(UBTTask_StopGameplayBehavior::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class GameplayBehaviorsModule.GameplayBehavior
+// (None)
+
+class UClass* UGameplayBehavior::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameplayBehavior");
+
+	return Clss;
+}
+
+
+// GameplayBehavior GameplayBehaviorsModule.Default__GameplayBehavior
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UGameplayBehavior* UGameplayBehavior::GetDefaultObj()
+{
+	static class UGameplayBehavior* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGameplayBehavior*>(UGameplayBehavior::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GameplayBehaviorsModule.GameplayBehavior.K2_TriggerBehavior
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -23,20 +76,23 @@ namespace SDK
 
 void UGameplayBehavior::K2_TriggerBehavior(class AActor* Avatar, class UGameplayBehaviorConfig* Config)
 {
-	static auto Func = Class->GetFunction("GameplayBehavior", "K2_TriggerBehavior");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayBehavior_K2_TriggerBehavior_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayBehavior", "K2_TriggerBehavior");
+
+	Params::UGameplayBehavior_K2_TriggerBehavior_Params Parms{};
 
 	Parms.Avatar = Avatar;
 	Parms.Config = Config;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -49,9 +105,12 @@ void UGameplayBehavior::K2_TriggerBehavior(class AActor* Avatar, class UGameplay
 
 void UGameplayBehavior::K2_OnTriggeredPawn(class APawn* Avatar, class UGameplayBehaviorConfig* Config)
 {
-	static auto Func = Class->GetFunction("GameplayBehavior", "K2_OnTriggeredPawn");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayBehavior_K2_OnTriggeredPawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayBehavior", "K2_OnTriggeredPawn");
+
+	Params::UGameplayBehavior_K2_OnTriggeredPawn_Params Parms{};
 
 	Parms.Avatar = Avatar;
 	Parms.Config = Config;
@@ -69,9 +128,12 @@ void UGameplayBehavior::K2_OnTriggeredPawn(class APawn* Avatar, class UGameplayB
 
 void UGameplayBehavior::K2_OnTriggeredCharacter(class ACharacter* Avatar, class UGameplayBehaviorConfig* Config)
 {
-	static auto Func = Class->GetFunction("GameplayBehavior", "K2_OnTriggeredCharacter");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayBehavior_K2_OnTriggeredCharacter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayBehavior", "K2_OnTriggeredCharacter");
+
+	Params::UGameplayBehavior_K2_OnTriggeredCharacter_Params Parms{};
 
 	Parms.Avatar = Avatar;
 	Parms.Config = Config;
@@ -89,9 +151,12 @@ void UGameplayBehavior::K2_OnTriggeredCharacter(class ACharacter* Avatar, class 
 
 void UGameplayBehavior::K2_OnTriggered(class AActor* Avatar, class UGameplayBehaviorConfig* Config)
 {
-	static auto Func = Class->GetFunction("GameplayBehavior", "K2_OnTriggered");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayBehavior_K2_OnTriggered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayBehavior", "K2_OnTriggered");
+
+	Params::UGameplayBehavior_K2_OnTriggered_Params Parms{};
 
 	Parms.Avatar = Avatar;
 	Parms.Config = Config;
@@ -109,9 +174,12 @@ void UGameplayBehavior::K2_OnTriggered(class AActor* Avatar, class UGameplayBeha
 
 void UGameplayBehavior::K2_OnFinishedPawn(class APawn* Avatar, bool bWasInterrupted)
 {
-	static auto Func = Class->GetFunction("GameplayBehavior", "K2_OnFinishedPawn");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayBehavior_K2_OnFinishedPawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayBehavior", "K2_OnFinishedPawn");
+
+	Params::UGameplayBehavior_K2_OnFinishedPawn_Params Parms{};
 
 	Parms.Avatar = Avatar;
 	Parms.bWasInterrupted = bWasInterrupted;
@@ -129,9 +197,12 @@ void UGameplayBehavior::K2_OnFinishedPawn(class APawn* Avatar, bool bWasInterrup
 
 void UGameplayBehavior::K2_OnFinishedCharacter(class ACharacter* Avatar, bool bWasInterrupted)
 {
-	static auto Func = Class->GetFunction("GameplayBehavior", "K2_OnFinishedCharacter");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayBehavior_K2_OnFinishedCharacter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayBehavior", "K2_OnFinishedCharacter");
+
+	Params::UGameplayBehavior_K2_OnFinishedCharacter_Params Parms{};
 
 	Parms.Avatar = Avatar;
 	Parms.bWasInterrupted = bWasInterrupted;
@@ -149,9 +220,12 @@ void UGameplayBehavior::K2_OnFinishedCharacter(class ACharacter* Avatar, bool bW
 
 void UGameplayBehavior::K2_OnFinished(class AActor* Avatar, bool bWasInterrupted)
 {
-	static auto Func = Class->GetFunction("GameplayBehavior", "K2_OnFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayBehavior_K2_OnFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayBehavior", "K2_OnFinished");
+
+	Params::UGameplayBehavior_K2_OnFinished_Params Parms{};
 
 	Parms.Avatar = Avatar;
 	Parms.bWasInterrupted = bWasInterrupted;
@@ -169,19 +243,22 @@ void UGameplayBehavior::K2_OnFinished(class AActor* Avatar, bool bWasInterrupted
 
 int32 UGameplayBehavior::K2_GetNextActorIndexInSequence(int32 CurrentIndex)
 {
-	static auto Func = Class->GetFunction("GameplayBehavior", "K2_GetNextActorIndexInSequence");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayBehavior_K2_GetNextActorIndexInSequence_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayBehavior", "K2_GetNextActorIndexInSequence");
+
+	Params::UGameplayBehavior_K2_GetNextActorIndexInSequence_Params Parms{};
 
 	Parms.CurrentIndex = CurrentIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -195,19 +272,22 @@ int32 UGameplayBehavior::K2_GetNextActorIndexInSequence(int32 CurrentIndex)
 
 void UGameplayBehavior::K2_EndBehavior(class AActor* Avatar)
 {
-	static auto Func = Class->GetFunction("GameplayBehavior", "K2_EndBehavior");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayBehavior_K2_EndBehavior_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayBehavior", "K2_EndBehavior");
+
+	Params::UGameplayBehavior_K2_EndBehavior_Params Parms{};
 
 	Parms.Avatar = Avatar;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -219,20 +299,51 @@ void UGameplayBehavior::K2_EndBehavior(class AActor* Avatar)
 
 void UGameplayBehavior::K2_AbortBehavior(class AActor* Avatar)
 {
-	static auto Func = Class->GetFunction("GameplayBehavior", "K2_AbortBehavior");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayBehavior_K2_AbortBehavior_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayBehavior", "K2_AbortBehavior");
+
+	Params::UGameplayBehavior_K2_AbortBehavior_Params Parms{};
 
 	Parms.Avatar = Avatar;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class GameplayBehaviorsModule.GameplayBehavior_AnimationBased
+// (None)
+
+class UClass* UGameplayBehavior_AnimationBased::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameplayBehavior_AnimationBased");
+
+	return Clss;
+}
+
+
+// GameplayBehavior_AnimationBased GameplayBehaviorsModule.Default__GameplayBehavior_AnimationBased
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UGameplayBehavior_AnimationBased* UGameplayBehavior_AnimationBased::GetDefaultObj()
+{
+	static class UGameplayBehavior_AnimationBased* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGameplayBehavior_AnimationBased*>(UGameplayBehavior_AnimationBased::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -245,26 +356,195 @@ void UGameplayBehavior::K2_AbortBehavior(class AActor* Avatar)
 
 void UGameplayBehavior_AnimationBased::OnMontageFinished(class UAnimMontage* Montage, bool bInterrupted, class AActor* InAvatar)
 {
-	static auto Func = Class->GetFunction("GameplayBehavior_AnimationBased", "OnMontageFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UGameplayBehavior_AnimationBased_OnMontageFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GameplayBehavior_AnimationBased", "OnMontageFinished");
+
+	Params::UGameplayBehavior_AnimationBased_OnMontageFinished_Params Parms{};
 
 	Parms.Montage = Montage;
 	Parms.bInterrupted = bInterrupted;
 	Parms.InAvatar = InAvatar;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class GameplayBehaviorsModule.GameplayBehavior_BehaviorTree
+// (None)
+
+class UClass* UGameplayBehavior_BehaviorTree::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameplayBehavior_BehaviorTree");
+
+	return Clss;
+}
+
+
+// GameplayBehavior_BehaviorTree GameplayBehaviorsModule.Default__GameplayBehavior_BehaviorTree
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UGameplayBehavior_BehaviorTree* UGameplayBehavior_BehaviorTree::GetDefaultObj()
+{
+	static class UGameplayBehavior_BehaviorTree* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGameplayBehavior_BehaviorTree*>(UGameplayBehavior_BehaviorTree::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class GameplayBehaviorsModule.GameplayBehaviorConfig
+// (None)
+
+class UClass* UGameplayBehaviorConfig::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameplayBehaviorConfig");
+
+	return Clss;
+}
+
+
+// GameplayBehaviorConfig GameplayBehaviorsModule.Default__GameplayBehaviorConfig
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UGameplayBehaviorConfig* UGameplayBehaviorConfig::GetDefaultObj()
+{
+	static class UGameplayBehaviorConfig* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGameplayBehaviorConfig*>(UGameplayBehaviorConfig::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class GameplayBehaviorsModule.GameplayBehaviorConfig_Animation
+// (None)
+
+class UClass* UGameplayBehaviorConfig_Animation::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameplayBehaviorConfig_Animation");
+
+	return Clss;
+}
+
+
+// GameplayBehaviorConfig_Animation GameplayBehaviorsModule.Default__GameplayBehaviorConfig_Animation
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UGameplayBehaviorConfig_Animation* UGameplayBehaviorConfig_Animation::GetDefaultObj()
+{
+	static class UGameplayBehaviorConfig_Animation* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGameplayBehaviorConfig_Animation*>(UGameplayBehaviorConfig_Animation::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class GameplayBehaviorsModule.GameplayBehaviorConfig_BehaviorTree
+// (None)
+
+class UClass* UGameplayBehaviorConfig_BehaviorTree::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameplayBehaviorConfig_BehaviorTree");
+
+	return Clss;
+}
+
+
+// GameplayBehaviorConfig_BehaviorTree GameplayBehaviorsModule.Default__GameplayBehaviorConfig_BehaviorTree
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UGameplayBehaviorConfig_BehaviorTree* UGameplayBehaviorConfig_BehaviorTree::GetDefaultObj()
+{
+	static class UGameplayBehaviorConfig_BehaviorTree* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGameplayBehaviorConfig_BehaviorTree*>(UGameplayBehaviorConfig_BehaviorTree::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class GameplayBehaviorsModule.GameplayBehaviorManager
+// (None)
+
+class UClass* UGameplayBehaviorManager::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameplayBehaviorManager");
+
+	return Clss;
+}
+
+
+// GameplayBehaviorManager GameplayBehaviorsModule.Default__GameplayBehaviorManager
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UGameplayBehaviorManager* UGameplayBehaviorManager::GetDefaultObj()
+{
+	static class UGameplayBehaviorManager* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGameplayBehaviorManager*>(UGameplayBehaviorManager::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class GameplayBehaviorsModule.GameplayBehaviorsBlueprintFunctionLibrary
+// (None)
+
+class UClass* UGameplayBehaviorsBlueprintFunctionLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GameplayBehaviorsBlueprintFunctionLibrary");
+
+	return Clss;
+}
+
+
+// GameplayBehaviorsBlueprintFunctionLibrary GameplayBehaviorsModule.Default__GameplayBehaviorsBlueprintFunctionLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UGameplayBehaviorsBlueprintFunctionLibrary* UGameplayBehaviorsBlueprintFunctionLibrary::GetDefaultObj()
+{
+	static class UGameplayBehaviorsBlueprintFunctionLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGameplayBehaviorsBlueprintFunctionLibrary*>(UGameplayBehaviorsBlueprintFunctionLibrary::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass MissionInfoPanel.MissionInfoPanel_C
+// (None)
+
+class UClass* UMissionInfoPanel_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MissionInfoPanel_C");
+
+	return Clss;
+}
+
+
+// MissionInfoPanel_C MissionInfoPanel.Default__MissionInfoPanel_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMissionInfoPanel_C* UMissionInfoPanel_C::GetDefaultObj()
+{
+	static class UMissionInfoPanel_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMissionInfoPanel_C*>(UMissionInfoPanel_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MissionInfoPanel.MissionInfoPanel_C.SetMissionStyle
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UMissionInfoPanel_C::SetMissionStyle(const struct FFortChallengeSetStyle& Style)
 {
-	static auto Func = Class->GetFunction("MissionInfoPanel_C", "SetMissionStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissionInfoPanel_C_SetMissionStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissionInfoPanel_C", "SetMissionStyle");
+
+	Params::UMissionInfoPanel_C_SetMissionStyle_Params Parms{};
 
 	Parms.Style = Style;
 
@@ -39,12 +67,14 @@ void UMissionInfoPanel_C::SetMissionStyle(const struct FFortChallengeSetStyle& S
 
 void UMissionInfoPanel_C::Construct()
 {
-	static auto Func = Class->GetFunction("MissionInfoPanel_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissionInfoPanel_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissionInfoPanel_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +86,12 @@ void UMissionInfoPanel_C::Construct()
 
 void UMissionInfoPanel_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("MissionInfoPanel_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissionInfoPanel_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissionInfoPanel_C", "PreConstruct");
+
+	Params::UMissionInfoPanel_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -84,16 +117,19 @@ void UMissionInfoPanel_C::PreConstruct(bool IsDesignTime)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortChallengeSetStyle      K2Node_Event_Style                                               ()
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FFortChallengeSetStyle      K2Node_Event_Style                                               (None)
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_2                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UMissionInfoPanel_C::ExecuteUbergraph_MissionInfoPanel(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, bool Temp_bool_Variable_1, float Temp_float_Variable, float Temp_float_Variable_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, float K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_3, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, bool Temp_bool_Variable_2, enum class ESlateVisibility K2Node_Select_Default_1, const struct FFortChallengeSetStyle& K2Node_Event_Style, const struct FSlateColor& K2Node_MakeStruct_SlateColor, bool K2Node_Event_IsDesignTime, enum class ESlateVisibility K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("MissionInfoPanel_C", "ExecuteUbergraph_MissionInfoPanel");
+	static class UFunction* Func = nullptr;
 
-	Params::UMissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MissionInfoPanel_C", "ExecuteUbergraph_MissionInfoPanel");
+
+	Params::UMissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -120,6 +156,4 @@ void UMissionInfoPanel_C::ExecuteUbergraph_MissionInfoPanel(int32 EntryPoint, en
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass MiniShieldPotion_Prop_AnimBP.MiniShieldPotion_Prop_AnimBP_C
+// (None)
+
+class UClass* UMiniShieldPotion_Prop_AnimBP_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MiniShieldPotion_Prop_AnimBP_C");
+
+	return Clss;
+}
+
+
+// MiniShieldPotion_Prop_AnimBP_C MiniShieldPotion_Prop_AnimBP.Default__MiniShieldPotion_Prop_AnimBP_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMiniShieldPotion_Prop_AnimBP_C* UMiniShieldPotion_Prop_AnimBP_C::GetDefaultObj()
+{
+	static class UMiniShieldPotion_Prop_AnimBP_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMiniShieldPotion_Prop_AnimBP_C*>(UMiniShieldPotion_Prop_AnimBP_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MiniShieldPotion_Prop_AnimBP.MiniShieldPotion_Prop_AnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void UMiniShieldPotion_Prop_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("MiniShieldPotion_Prop_AnimBP_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniShieldPotion_Prop_AnimBP_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniShieldPotion_Prop_AnimBP_C", "AnimGraph");
+
+	Params::UMiniShieldPotion_Prop_AnimBP_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -42,9 +70,12 @@ void UMiniShieldPotion_Prop_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 
 void UMiniShieldPotion_Prop_AnimBP_C::ExecuteUbergraph_MiniShieldPotion_Prop_AnimBP(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("MiniShieldPotion_Prop_AnimBP_C", "ExecuteUbergraph_MiniShieldPotion_Prop_AnimBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniShieldPotion_Prop_AnimBP_C_ExecuteUbergraph_MiniShieldPotion_Prop_AnimBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniShieldPotion_Prop_AnimBP_C", "ExecuteUbergraph_MiniShieldPotion_Prop_AnimBP");
+
+	Params::UMiniShieldPotion_Prop_AnimBP_C_ExecuteUbergraph_MiniShieldPotion_Prop_AnimBP_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -54,6 +85,4 @@ void UMiniShieldPotion_Prop_AnimBP_C::ExecuteUbergraph_MiniShieldPotion_Prop_Ani
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

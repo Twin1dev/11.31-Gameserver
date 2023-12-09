@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GAT_CommandoActiveAbility.GAT_CommandoActiveAbility_C
+// (None)
+
+class UClass* UGAT_CommandoActiveAbility_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAT_CommandoActiveAbility_C");
+
+	return Clss;
+}
+
+
+// GAT_CommandoActiveAbility_C GAT_CommandoActiveAbility.Default__GAT_CommandoActiveAbility_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAT_CommandoActiveAbility_C* UGAT_CommandoActiveAbility_C::GetDefaultObj()
+{
+	static class UGAT_CommandoActiveAbility_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAT_CommandoActiveAbility_C*>(UGAT_CommandoActiveAbility_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GAT_CommandoActiveAbility.GAT_CommandoActiveAbility_C.K2_ActivateAbility
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UGAT_CommandoActiveAbility_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GAT_CommandoActiveAbility_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_CommandoActiveAbility_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_CommandoActiveAbility_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -39,15 +66,18 @@ void UGAT_CommandoActiveAbility_C::K2_ActivateAbility()
 // struct FGameplayAbilityActorInfo   CallFunc_GetActorInfo_ReturnValue                                (ContainsInstancedReference)
 // class AFortPawn*                   K2Node_DynamicCast_AsFort_Pawn                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
-// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              (None)
+// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  (None)
 // TArray<struct FActiveGameplayEffectHandle>CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue              (ZeroConstructor, ReferenceParm)
 
 void UGAT_CommandoActiveAbility_C::ExecuteUbergraph_GAT_CommandoActiveAbility(int32 EntryPoint, bool CallFunc_K2_CommitAbility_ReturnValue, const struct FGameplayAbilityActorInfo& CallFunc_GetActorInfo_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData, const struct FGameplayAbilityTargetDataHandle& CallFunc_AbilityTargetDataFromActor_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAT_CommandoActiveAbility_C", "ExecuteUbergraph_GAT_CommandoActiveAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_CommandoActiveAbility_C_ExecuteUbergraph_GAT_CommandoActiveAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_CommandoActiveAbility_C", "ExecuteUbergraph_GAT_CommandoActiveAbility");
+
+	Params::UGAT_CommandoActiveAbility_C_ExecuteUbergraph_GAT_CommandoActiveAbility_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_K2_CommitAbility_ReturnValue = CallFunc_K2_CommitAbility_ReturnValue;
@@ -64,6 +94,4 @@ void UGAT_CommandoActiveAbility_C::ExecuteUbergraph_GAT_CommandoActiveAbility(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass AI_skill_phoebe_bot_inventory.AI_skill_phoebe_bot_inventory_C
+// (None)
+
+class UClass* UAI_skill_phoebe_bot_inventory_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AI_skill_phoebe_bot_inventory_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// AI_skill_phoebe_bot_inventory_C AI_skill_phoebe_bot_inventory.Default__AI_skill_phoebe_bot_inventory_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAI_skill_phoebe_bot_inventory_C* UAI_skill_phoebe_bot_inventory_C::GetDefaultObj()
+{
+	static class UAI_skill_phoebe_bot_inventory_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAI_skill_phoebe_bot_inventory_C*>(UAI_skill_phoebe_bot_inventory_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

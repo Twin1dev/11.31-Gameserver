@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ShowdownDivisionLobbyPanel.ShowdownDivisionLobbyPanel_C
+// (None)
+
+class UClass* UShowdownDivisionLobbyPanel_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ShowdownDivisionLobbyPanel_C");
+
+	return Clss;
+}
+
+
+// ShowdownDivisionLobbyPanel_C ShowdownDivisionLobbyPanel.Default__ShowdownDivisionLobbyPanel_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UShowdownDivisionLobbyPanel_C* UShowdownDivisionLobbyPanel_C::GetDefaultObj()
+{
+	static class UShowdownDivisionLobbyPanel_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UShowdownDivisionLobbyPanel_C*>(UShowdownDivisionLobbyPanel_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ShowdownDivisionLobbyPanel.ShowdownDivisionLobbyPanel_C.RefreshDivisionData
@@ -29,9 +54,9 @@ namespace SDK
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // int32                              CallFunc_Subtract_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
-// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
+// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            (None)
 // int32                              CallFunc_GetNumericalDisplayAmountForNextDivision_ReturnValue    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -41,15 +66,18 @@ namespace SDK
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
 // int32                              CallFunc_GetRequiredAmountToAdvanceDivision_ReturnValue          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 // float                              CallFunc_Conv_IntToFloat_ReturnValue_1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Divide_FloatFloat_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UShowdownDivisionLobbyPanel_C::RefreshDivisionData(int32 TotalHypeForNextDivision, int32 TotalHype, int32 TotalNumberDivisions, int32 DivsionRank, int32 CallFunc_GetAmountEarnedWithinDivision_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, int32 CallFunc_GetTotalDivisionPoints_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, int32 CallFunc_Subtract_IntInt_ReturnValue, class FText CallFunc_Format_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue_1, int32 CallFunc_GetNumericalDisplayAmountForNextDivision_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, int32 CallFunc_GetTotalNumberOfDivisions_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 CallFunc_GetDivisionRank_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, int32 CallFunc_GetRequiredAmountToAdvanceDivision_ReturnValue, class FText CallFunc_Format_ReturnValue_1, float CallFunc_Conv_IntToFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "RefreshDivisionData");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownDivisionLobbyPanel_C_RefreshDivisionData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "RefreshDivisionData");
+
+	Params::UShowdownDivisionLobbyPanel_C_RefreshDivisionData_Params Parms{};
 
 	Parms.TotalHypeForNextDivision = TotalHypeForNextDivision;
 	Parms.TotalHype = TotalHype;
@@ -90,9 +118,12 @@ void UShowdownDivisionLobbyPanel_C::RefreshDivisionData(int32 TotalHypeForNextDi
 
 void UShowdownDivisionLobbyPanel_C::InputTypeChanged(bool IsGamepad)
 {
-	static auto Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "InputTypeChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownDivisionLobbyPanel_C_InputTypeChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "InputTypeChanged");
+
+	Params::UShowdownDivisionLobbyPanel_C_InputTypeChanged_Params Parms{};
 
 	Parms.IsGamepad = IsGamepad;
 
@@ -107,12 +138,14 @@ void UShowdownDivisionLobbyPanel_C::InputTypeChanged(bool IsGamepad)
 
 void UShowdownDivisionLobbyPanel_C::HandleCrossplayChanged()
 {
-	static auto Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "HandleCrossplayChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownDivisionLobbyPanel_C_HandleCrossplayChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "HandleCrossplayChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -123,12 +156,14 @@ void UShowdownDivisionLobbyPanel_C::HandleCrossplayChanged()
 
 void UShowdownDivisionLobbyPanel_C::UpdateColors()
 {
-	static auto Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "UpdateColors");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownDivisionLobbyPanel_C_UpdateColors_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "UpdateColors");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -137,22 +172,22 @@ void UShowdownDivisionLobbyPanel_C::UpdateColors()
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // enum class EFortShowdownEventState Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
-// class FText                        Temp_text_Variable_2                                             ()
-// class FText                        Temp_text_Variable_3                                             ()
-// class FText                        Temp_text_Variable_4                                             ()
-// class FText                        Temp_text_Variable_5                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
+// class FText                        Temp_text_Variable_2                                             (None)
+// class FText                        Temp_text_Variable_3                                             (None)
+// class FText                        Temp_text_Variable_4                                             (None)
+// class FText                        Temp_text_Variable_5                                             (None)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              Temp_float_Variable                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Temp_float_Variable_1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetLeagueSuffixDisplayName_ReturnValue                  ()
-// class FText                        CallFunc_GetLeaguePrefixDisplayName_ReturnValue                  ()
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
-// class FText                        CallFunc_TextToUpper_ReturnValue_1                               ()
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
+// class FText                        CallFunc_GetLeagueSuffixDisplayName_ReturnValue                  (None)
+// class FText                        CallFunc_GetLeaguePrefixDisplayName_ReturnValue                  (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue_1                               (None)
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
 // bool                               CallFunc_IsDivisionEvent_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortShowdownEventState CallFunc_GetEventTimeState_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_DoCalloutMFARequirement_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -165,7 +200,7 @@ void UShowdownDivisionLobbyPanel_C::UpdateColors()
 // int32                              CallFunc_Subtract_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // int32                              CallFunc_GetCurrentEventTeamNumMatchesPlayed_ReturnValue_1       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetTournamentMatchCap_ReturnValue_2                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Subtract_IntInt_ReturnValue_1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -175,9 +210,9 @@ void UShowdownDivisionLobbyPanel_C::UpdateColors()
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Temp_float_Variable_2                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue_1                           ()
-// class FText                        CallFunc_MakeLiteralText_ReturnValue_2                           ()
-// class FText                        K2Node_Select_Default_2                                          ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue_1                           (None)
+// class FText                        CallFunc_MakeLiteralText_ReturnValue_2                           (None)
+// class FText                        K2Node_Select_Default_2                                          (None)
 // class UVerticalBoxSlot*            CallFunc_SlotAsVerticalBoxSlot_ReturnValue                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_PauseAnimation_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FMargin                     K2Node_MakeStruct_Margin                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -196,9 +231,12 @@ void UShowdownDivisionLobbyPanel_C::UpdateColors()
 
 void UShowdownDivisionLobbyPanel_C::Refresh(enum class EFortShowdownEventState Temp_byte_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class FText Temp_text_Variable_2, class FText Temp_text_Variable_3, class FText Temp_text_Variable_4, class FText Temp_text_Variable_5, bool Temp_bool_Variable, float Temp_float_Variable, float Temp_float_Variable_1, enum class ESlateVisibility Temp_byte_Variable_1, float K2Node_Select_Default, class FText CallFunc_GetLeagueSuffixDisplayName_ReturnValue, class FText CallFunc_GetLeaguePrefixDisplayName_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue_1, class FText CallFunc_MakeLiteralText_ReturnValue, bool CallFunc_IsDivisionEvent_ReturnValue, enum class EFortShowdownEventState CallFunc_GetEventTimeState_ReturnValue, bool CallFunc_DoCalloutMFARequirement_ReturnValue, bool CallFunc_DoCalloutMFARequirement_ReturnValue_1, int32 CallFunc_GetTournamentMatchCap_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, int32 CallFunc_GetCurrentEventTeamNumMatchesPlayed_ReturnValue, int32 CallFunc_GetTournamentMatchCap_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable_2, int32 CallFunc_Subtract_IntInt_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, int32 CallFunc_GetCurrentEventTeamNumMatchesPlayed_ReturnValue_1, int32 CallFunc_GetTournamentMatchCap_ReturnValue_2, int32 CallFunc_Subtract_IntInt_ReturnValue_1, bool CallFunc_GreaterEqual_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default_1, float Temp_float_Variable_2, class FText CallFunc_MakeLiteralText_ReturnValue_1, class FText CallFunc_MakeLiteralText_ReturnValue_2, class FText K2Node_Select_Default_2, class UVerticalBoxSlot* CallFunc_SlotAsVerticalBoxSlot_ReturnValue, float CallFunc_PauseAnimation_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin, float CallFunc_GetStartTime_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_1, float CallFunc_GetEndTime_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool Temp_bool_Variable_2, float K2Node_Select_Default_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, const class FString& CallFunc_GetEventId_ReturnValue, bool CallFunc_EqualEqual_StrStr_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "Refresh");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownDivisionLobbyPanel_C_Refresh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "Refresh");
+
+	Params::UShowdownDivisionLobbyPanel_C_Refresh_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_text_Variable = Temp_text_Variable;
@@ -269,12 +307,14 @@ void UShowdownDivisionLobbyPanel_C::Refresh(enum class EFortShowdownEventState T
 
 void UShowdownDivisionLobbyPanel_C::RefreshDataBP()
 {
-	static auto Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "RefreshDataBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownDivisionLobbyPanel_C_RefreshDataBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "RefreshDataBP");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -285,12 +325,14 @@ void UShowdownDivisionLobbyPanel_C::RefreshDataBP()
 
 void UShowdownDivisionLobbyPanel_C::Construct()
 {
-	static auto Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownDivisionLobbyPanel_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -302,9 +344,12 @@ void UShowdownDivisionLobbyPanel_C::Construct()
 
 void UShowdownDivisionLobbyPanel_C::BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -320,9 +365,12 @@ void UShowdownDivisionLobbyPanel_C::BndEvt__EventDetailsButton_K2Node_ComponentB
 
 void UShowdownDivisionLobbyPanel_C::BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -338,9 +386,12 @@ void UShowdownDivisionLobbyPanel_C::BndEvt__EventDetailsButton_K2Node_ComponentB
 
 void UShowdownDivisionLobbyPanel_C::BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
+
+	Params::UShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -355,12 +406,14 @@ void UShowdownDivisionLobbyPanel_C::BndEvt__EventDetailsButton_K2Node_ComponentB
 
 void UShowdownDivisionLobbyPanel_C::EventColorize()
 {
-	static auto Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "EventColorize");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownDivisionLobbyPanel_C_EventColorize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "EventColorize");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -372,9 +425,12 @@ void UShowdownDivisionLobbyPanel_C::EventColorize()
 
 void UShowdownDivisionLobbyPanel_C::EventSwitchUI(enum class ECommonInputType bNewInputType)
 {
-	static auto Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "EventSwitchUI");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownDivisionLobbyPanel_C_EventSwitchUI_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "EventSwitchUI");
+
+	Params::UShowdownDivisionLobbyPanel_C_EventSwitchUI_Params Parms{};
 
 	Parms.bNewInputType = bNewInputType;
 
@@ -435,9 +491,12 @@ void UShowdownDivisionLobbyPanel_C::EventSwitchUI(enum class ECommonInputType bN
 
 void UShowdownDivisionLobbyPanel_C::ExecuteUbergraph_ShowdownDivisionLobbyPanel(int32 EntryPoint, float Temp_float_Variable, class UCommonInputSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsUsingGamepad_ReturnValue, float Temp_float_Variable_1, float Temp_float_Variable_2, bool Temp_bool_Variable, float K2Node_Select_Default, const struct FMargin& K2Node_MakeStruct_Margin, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, float CallFunc_GetStartTime_ReturnValue, float CallFunc_GetEndTime_ReturnValue, float CallFunc_GetStartTime_ReturnValue_1, float CallFunc_GetEndTime_ReturnValue_1, bool Temp_bool_Variable_1, class UFortPartyContext* CallFunc_GetContext_ReturnValue_1, float CallFunc_PauseAnimation_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_2, float K2Node_Select_Default_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue_1, float CallFunc_PauseAnimation_ReturnValue_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, float CallFunc_Add_FloatFloat_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue, class UDivisionDetailsScreen_C* CallFunc_Create_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, float Temp_float_Variable_3, const class FString& CallFunc_GetTournamentId_ReturnValue, const class FString& CallFunc_GetEventId_ReturnValue, bool Temp_bool_Variable_2, float K2Node_Select_Default_2, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, enum class ECommonInputType K2Node_CustomEvent_bNewInputType)
 {
-	static auto Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "ExecuteUbergraph_ShowdownDivisionLobbyPanel");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownDivisionLobbyPanel_C", "ExecuteUbergraph_ShowdownDivisionLobbyPanel");
+
+	Params::UShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_float_Variable = Temp_float_Variable;
@@ -492,6 +551,4 @@ void UShowdownDivisionLobbyPanel_C::ExecuteUbergraph_ShowdownDivisionLobbyPanel(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

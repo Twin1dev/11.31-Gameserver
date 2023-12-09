@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Border_Tab_DkBlue.Border_Tab_DkBlue_C
+// (None)
+
+class UClass* UBorder_Tab_DkBlue_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Border_Tab_DkBlue_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Border_Tab_DkBlue_C Border_Tab_DkBlue.Default__Border_Tab_DkBlue_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBorder_Tab_DkBlue_C* UBorder_Tab_DkBlue_C::GetDefaultObj()
+{
+	static class UBorder_Tab_DkBlue_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorder_Tab_DkBlue_C*>(UBorder_Tab_DkBlue_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

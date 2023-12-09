@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_TrapGeneric.GA_TrapGeneric_C
+// (None)
+
+class UClass* UGA_TrapGeneric_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_TrapGeneric_C");
+
+	return Clss;
+}
+
+
+// GA_TrapGeneric_C GA_TrapGeneric.Default__GA_TrapGeneric_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_TrapGeneric_C* UGA_TrapGeneric_C::GetDefaultObj()
+{
+	static class UGA_TrapGeneric_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_TrapGeneric_C*>(UGA_TrapGeneric_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_TrapGeneric.GA_TrapGeneric_C.Cancelled_EFEC611E4D988CAA3867F28EE35771B3
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UGA_TrapGeneric_C::Cancelled_EFEC611E4D988CAA3867F28EE35771B3(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_TrapGeneric_C", "Cancelled_EFEC611E4D988CAA3867F28EE35771B3");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_TrapGeneric_C_Cancelled_EFEC611E4D988CAA3867F28EE35771B3_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_TrapGeneric_C", "Cancelled_EFEC611E4D988CAA3867F28EE35771B3");
+
+	Params::UGA_TrapGeneric_C_Cancelled_EFEC611E4D988CAA3867F28EE35771B3_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -43,9 +71,12 @@ void UGA_TrapGeneric_C::Cancelled_EFEC611E4D988CAA3867F28EE35771B3(struct FGamep
 
 void UGA_TrapGeneric_C::Targeted_EFEC611E4D988CAA3867F28EE35771B3(struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)
 {
-	static auto Func = Class->GetFunction("GA_TrapGeneric_C", "Targeted_EFEC611E4D988CAA3867F28EE35771B3");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_TrapGeneric_C_Targeted_EFEC611E4D988CAA3867F28EE35771B3_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_TrapGeneric_C", "Targeted_EFEC611E4D988CAA3867F28EE35771B3");
+
+	Params::UGA_TrapGeneric_C_Targeted_EFEC611E4D988CAA3867F28EE35771B3_Params Parms{};
 
 	Parms.TargetData = TargetData;
 	Parms.ApplicationTag = ApplicationTag;
@@ -61,12 +92,14 @@ void UGA_TrapGeneric_C::Targeted_EFEC611E4D988CAA3867F28EE35771B3(struct FGamepl
 
 void UGA_TrapGeneric_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_TrapGeneric_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_TrapGeneric_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_TrapGeneric_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -79,9 +112,9 @@ void UGA_TrapGeneric_C::K2_ActivateAbility()
 // int32                              CallFunc_GetAbilityLevel_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortAbilityTask_WaitTargetSelection*CallFunc_WaitTargetSelection_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue              ()
+// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue              (None)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable                                             ()
+// struct FGameplayAbilityTargetDataHandleTemp_struct_Variable                                             (None)
 // struct FGameplayTag                Temp_struct_Variable_1                                           (NoDestructor, HasGetValueTypeHash)
 // class AActor*                      CallFunc_GetOwningActorFromActorInfo_ReturnValue                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
@@ -115,9 +148,12 @@ void UGA_TrapGeneric_C::K2_ActivateAbility()
 
 void UGA_TrapGeneric_C::ExecuteUbergraph_GA_TrapGeneric(int32 EntryPoint, bool CallFunc_K2_CommitAbility_ReturnValue, int32 CallFunc_GetAbilityLevel_ReturnValue, class UFortAbilityTask_WaitTargetSelection* CallFunc_WaitTargetSelection_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FGameplayAbilityTargetDataHandle& Temp_struct_Variable, const struct FGameplayTag& Temp_struct_Variable_1, class AActor* CallFunc_GetOwningActorFromActorInfo_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class ABuildingTrap* K2Node_DynamicCast_AsBuilding_Trap, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_GetTrapLevel_ReturnValue, float CallFunc_GetDamageDelay_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_ApplyGameplayEffectContainer_ReturnValue, const struct FGameplayTag& CallFunc_GetActivateTrapGameplayCueTag_ReturnValue, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue, float CallFunc_GetFireDelay_ReturnValue, const struct FGameplayTag& CallFunc_GetDelayBeginGameplayCueTag_ReturnValue, class AActor* CallFunc_GetOwningActorFromActorInfo_ReturnValue_1, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag, class ABuildingTrap* K2Node_DynamicCast_AsBuilding_Trap_1, bool K2Node_DynamicCast_bSuccess_1, const struct FGameplayTag& CallFunc_GetReloadBeginGameplayCueTag_ReturnValue, class AActor* CallFunc_GetOwningActorFromActorInfo_ReturnValue_2, class ABuildingTrap* K2Node_DynamicCast_AsBuilding_Trap_2, bool K2Node_DynamicCast_bSuccess_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FGameplayTag& CallFunc_GetReloadBeginGameplayCueTag_ReturnValue_1, class AActor* CallFunc_GetOwningActorFromActorInfo_ReturnValue_3, class ABuildingTrap* K2Node_DynamicCast_AsBuilding_Trap_3, bool K2Node_DynamicCast_bSuccess_3, const struct FGameplayTag& CallFunc_GetReloadBeginGameplayCueTag_ReturnValue_2, const struct FGameplayAbilityTargetDataHandle& K2Node_CustomEvent_TargetData_1, const struct FGameplayTag& K2Node_CustomEvent_ApplicationTag_1)
 {
-	static auto Func = Class->GetFunction("GA_TrapGeneric_C", "ExecuteUbergraph_GA_TrapGeneric");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_TrapGeneric_C_ExecuteUbergraph_GA_TrapGeneric_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_TrapGeneric_C", "ExecuteUbergraph_GA_TrapGeneric");
+
+	Params::UGA_TrapGeneric_C_ExecuteUbergraph_GA_TrapGeneric_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_K2_CommitAbility_ReturnValue = CallFunc_K2_CommitAbility_ReturnValue;
@@ -164,6 +200,4 @@ void UGA_TrapGeneric_C::ExecuteUbergraph_GA_TrapGeneric(int32 EntryPoint, bool C
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

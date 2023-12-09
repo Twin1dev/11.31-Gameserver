@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ItemCraftingIngredientList.ItemCraftingIngredientList_C
+// (None)
+
+class UClass* UItemCraftingIngredientList_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemCraftingIngredientList_C");
+
+	return Clss;
+}
+
+
+// ItemCraftingIngredientList_C ItemCraftingIngredientList.Default__ItemCraftingIngredientList_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemCraftingIngredientList_C* UItemCraftingIngredientList_C::GetDefaultObj()
+{
+	static class UItemCraftingIngredientList_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemCraftingIngredientList_C*>(UItemCraftingIngredientList_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.RefreshItemToRepresent
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UItemCraftingIngredientList_C::RefreshItemToRepresent()
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "RefreshItemToRepresent");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_RefreshItemToRepresent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "RefreshItemToRepresent");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -39,9 +66,12 @@ void UItemCraftingIngredientList_C::RefreshItemToRepresent()
 
 void UItemCraftingIngredientList_C::SetItemQuantity(int32 ItemQuantity, bool CallFunc_NotEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "SetItemQuantity");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_SetItemQuantity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "SetItemQuantity");
+
+	Params::UItemCraftingIngredientList_C_SetItemQuantity_Params Parms{};
 
 	Parms.ItemQuantity = ItemQuantity;
 	Parms.CallFunc_NotEqual_IntInt_ReturnValue = CallFunc_NotEqual_IntInt_ReturnValue;
@@ -67,9 +97,12 @@ void UItemCraftingIngredientList_C::SetItemQuantity(int32 ItemQuantity, bool Cal
 
 void UItemCraftingIngredientList_C::Bind_Delegates(class UFortInventoryContext* CallFunc_GetContext_ReturnValue, class UFortInventoryContext* CallFunc_GetContext_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UFortInventoryContext* CallFunc_GetContext_ReturnValue_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UFortInventoryContext* CallFunc_GetContext_ReturnValue_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, bool CallFunc_IsValid_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "Bind Delegates");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_Bind_Delegates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "Bind Delegates");
+
+	Params::UItemCraftingIngredientList_C_Bind_Delegates_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetContext_ReturnValue_1 = CallFunc_GetContext_ReturnValue_1;
@@ -103,9 +136,12 @@ void UItemCraftingIngredientList_C::Bind_Delegates(class UFortInventoryContext* 
 
 void UItemCraftingIngredientList_C::UnbindDelegates(class UFortInventoryContext* CallFunc_GetContext_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UFortInventoryContext* CallFunc_GetContext_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UFortInventoryContext* CallFunc_GetContext_ReturnValue_2, class UFortInventoryContext* CallFunc_GetContext_ReturnValue_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, bool CallFunc_IsValid_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "UnbindDelegates");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_UnbindDelegates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "UnbindDelegates");
+
+	Params::UItemCraftingIngredientList_C_UnbindDelegates_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -130,9 +166,12 @@ void UItemCraftingIngredientList_C::UnbindDelegates(class UFortInventoryContext*
 
 void UItemCraftingIngredientList_C::HandleCraftItemFailed(enum class EFortCraftFailCause FailCause)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "HandleCraftItemFailed");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_HandleCraftItemFailed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "HandleCraftItemFailed");
+
+	Params::UItemCraftingIngredientList_C_HandleCraftItemFailed_Params Parms{};
 
 	Parms.FailCause = FailCause;
 
@@ -150,7 +189,7 @@ void UItemCraftingIngredientList_C::HandleCraftItemFailed(enum class EFortCraftF
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortSchematicItem*          K2Node_DynamicCast_AsFort_Schematic_Item                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FRecipe                     CallFunc_GetSchematicRecipe_ReturnValue                          ()
+// struct FRecipe                     CallFunc_GetSchematicRecipe_ReturnValue                          (None)
 // struct FFortItemQuantityPair       CallFunc_Array_Get_Item                                          (NoDestructor)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Multiply_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -164,9 +203,12 @@ void UItemCraftingIngredientList_C::HandleCraftItemFailed(enum class EFortCraftF
 
 void UItemCraftingIngredientList_C::GetIngredients(class UObject* Item, TArray<struct FFortItemQuantityPair>* ReturnIngredients, const TArray<struct FFortItemQuantityPair>& Ingredients, int32 Temp_int_Array_Index_Variable, class UFortSchematicItem* K2Node_DynamicCast_AsFort_Schematic_Item, bool K2Node_DynamicCast_bSuccess, const struct FRecipe& CallFunc_GetSchematicRecipe_ReturnValue, const struct FFortItemQuantityPair& CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Multiply_IntInt_ReturnValue, int32 Temp_int_Loop_Counter_Variable, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, class UFortItemDefinition* CallFunc_GetItemFromItemQuantityPair_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, const struct FFortItemQuantityPair& CallFunc_MakeItemQuantityPair_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "GetIngredients");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_GetIngredients_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "GetIngredients");
+
+	Params::UItemCraftingIngredientList_C_GetIngredients_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.Ingredients = Ingredients;
@@ -188,7 +230,7 @@ void UItemCraftingIngredientList_C::GetIngredients(class UObject* Item, TArray<s
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ReturnIngredients != nullptr)
-		*ReturnIngredients = Parms.ReturnIngredients;
+		*ReturnIngredients = std::move(Parms.ReturnIngredients);
 
 }
 
@@ -201,9 +243,12 @@ void UItemCraftingIngredientList_C::GetIngredients(class UObject* Item, TArray<s
 
 void UItemCraftingIngredientList_C::SetItemToCompare(class UFortItem* ItemToCompare, TArray<struct FFortItemQuantityPair>& CallFunc_GetIngredients_ReturnIngredients)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "SetItemToCompare");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_SetItemToCompare_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "SetItemToCompare");
+
+	Params::UItemCraftingIngredientList_C_SetItemToCompare_Params Parms{};
 
 	Parms.ItemToCompare = ItemToCompare;
 	Parms.CallFunc_GetIngredients_ReturnIngredients = CallFunc_GetIngredients_ReturnIngredients;
@@ -223,9 +268,12 @@ void UItemCraftingIngredientList_C::SetItemToCompare(class UFortItem* ItemToComp
 
 void UItemCraftingIngredientList_C::ItemNeedsInventoryTracking(class UFortItem* Item, bool* NeedsTracking, bool CallFunc_IsValid_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "ItemNeedsInventoryTracking");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_ItemNeedsInventoryTracking_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "ItemNeedsInventoryTracking");
+
+	Params::UItemCraftingIngredientList_C_ItemNeedsInventoryTracking_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -248,9 +296,12 @@ void UItemCraftingIngredientList_C::ItemNeedsInventoryTracking(class UFortItem* 
 
 void UItemCraftingIngredientList_C::HandleItemChanged(bool ItemChanged, bool AmmoChanged, bool IngredientsChanged)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "HandleItemChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_HandleItemChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "HandleItemChanged");
+
+	Params::UItemCraftingIngredientList_C_HandleItemChanged_Params Parms{};
 
 	Parms.ItemChanged = ItemChanged;
 	Parms.AmmoChanged = AmmoChanged;
@@ -275,9 +326,12 @@ void UItemCraftingIngredientList_C::HandleItemChanged(bool ItemChanged, bool Amm
 
 void UItemCraftingIngredientList_C::RefreshInventoryTracking(int32 CallFunc_GetChildrenCount_ReturnValue, int32 Temp_int_Variable, int32 CallFunc_Subtract_IntInt_ReturnValue, class UWidget* CallFunc_GetChildAt_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, class UFortItemQuantityListEntryBase* K2Node_DynamicCast_AsFort_Item_Quantity_List_Entry_Base, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "RefreshInventoryTracking");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_RefreshInventoryTracking_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "RefreshInventoryTracking");
+
+	Params::UItemCraftingIngredientList_C_RefreshInventoryTracking_Params Parms{};
 
 	Parms.CallFunc_GetChildrenCount_ReturnValue = CallFunc_GetChildrenCount_ReturnValue;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -301,9 +355,12 @@ void UItemCraftingIngredientList_C::RefreshInventoryTracking(int32 CallFunc_GetC
 
 void UItemCraftingIngredientList_C::HandleWorldItemListChanged(TArray<class UFortWorldItem*>& ItemsAdded, TArray<class UFortWorldItem*>& ItemsRemoved)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "HandleWorldItemListChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_HandleWorldItemListChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "HandleWorldItemListChanged");
+
+	Params::UItemCraftingIngredientList_C_HandleWorldItemListChanged_Params Parms{};
 
 	Parms.ItemsAdded = ItemsAdded;
 	Parms.ItemsRemoved = ItemsRemoved;
@@ -320,9 +377,12 @@ void UItemCraftingIngredientList_C::HandleWorldItemListChanged(TArray<class UFor
 
 void UItemCraftingIngredientList_C::Refresh(TArray<struct FFortItemQuantityPair>& CallFunc_GetIngredients_ReturnIngredients)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "Refresh");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_Refresh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "Refresh");
+
+	Params::UItemCraftingIngredientList_C_Refresh_Params Parms{};
 
 	Parms.CallFunc_GetIngredients_ReturnIngredients = CallFunc_GetIngredients_ReturnIngredients;
 
@@ -340,9 +400,12 @@ void UItemCraftingIngredientList_C::Refresh(TArray<struct FFortItemQuantityPair>
 
 void UItemCraftingIngredientList_C::SetItemToRepresent(class UFortItem* Item, int32 ItemQuantity, bool CallFunc_ItemNeedsInventoryTracking_NeedsTracking)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "SetItemToRepresent");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_SetItemToRepresent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "SetItemToRepresent");
+
+	Params::UItemCraftingIngredientList_C_SetItemToRepresent_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.ItemQuantity = ItemQuantity;
@@ -360,9 +423,12 @@ void UItemCraftingIngredientList_C::SetItemToRepresent(class UFortItem* Item, in
 
 void UItemCraftingIngredientList_C::AddListEntry(class UFortItemQuantityListEntryBase* ListEntry)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "AddListEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_AddListEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "AddListEntry");
+
+	Params::UItemCraftingIngredientList_C_AddListEntry_Params Parms{};
 
 	Parms.ListEntry = ListEntry;
 
@@ -377,12 +443,14 @@ void UItemCraftingIngredientList_C::AddListEntry(class UFortItemQuantityListEntr
 
 void UItemCraftingIngredientList_C::Destruct()
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -393,12 +461,14 @@ void UItemCraftingIngredientList_C::Destruct()
 
 void UItemCraftingIngredientList_C::Construct()
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -414,9 +484,12 @@ void UItemCraftingIngredientList_C::Construct()
 
 void UItemCraftingIngredientList_C::ExecuteUbergraph_ItemCraftingIngredientList(int32 EntryPoint, class UFortItemQuantityListEntryBase* K2Node_Event_ListEntry, bool CallFunc_IsValid_ReturnValue, bool CallFunc_ItemNeedsInventoryTracking_NeedsTracking, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ItemCraftingIngredientList_C", "ExecuteUbergraph_ItemCraftingIngredientList");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "ExecuteUbergraph_ItemCraftingIngredientList");
+
+	Params::UItemCraftingIngredientList_C_ExecuteUbergraph_ItemCraftingIngredientList_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_ListEntry = K2Node_Event_ListEntry;
@@ -430,6 +503,4 @@ void UItemCraftingIngredientList_C::ExecuteUbergraph_ItemCraftingIngredientList(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

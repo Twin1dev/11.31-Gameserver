@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass OptionsMenu.OptionsMenu_C
+// (None)
+
+class UClass* UOptionsMenu_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OptionsMenu_C");
+
+	return Clss;
+}
+
+
+// OptionsMenu_C OptionsMenu.Default__OptionsMenu_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UOptionsMenu_C* UOptionsMenu_C::GetDefaultObj()
+{
+	static class UOptionsMenu_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UOptionsMenu_C*>(UOptionsMenu_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function OptionsMenu.OptionsMenu_C.RequestTab
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UOptionsMenu_C::RequestTab(class FName Tab, bool CallFunc_SelectTabByID_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "RequestTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_RequestTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "RequestTab");
+
+	Params::UOptionsMenu_C_RequestTab_Params Parms{};
 
 	Parms.Tab = Tab;
 	Parms.CallFunc_SelectTabByID_ReturnValue = CallFunc_SelectTabByID_ReturnValue;
@@ -46,9 +74,12 @@ void UOptionsMenu_C::RequestTab(class FName Tab, bool CallFunc_SelectTabByID_Ret
 
 void UOptionsMenu_C::CreateMobileBackButton(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_IsMobileGame_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "CreateMobileBackButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_CreateMobileBackButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "CreateMobileBackButton");
+
+	Params::UOptionsMenu_C_CreateMobileBackButton_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -75,9 +106,12 @@ void UOptionsMenu_C::CreateMobileBackButton(bool Temp_bool_Variable, enum class 
 
 void UOptionsMenu_C::NotifyTabsOfActivationState(class UFortOptionsTab* ActivatedTab, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class UFortOptionsTab* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_NotEqual_ObjectObject_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "NotifyTabsOfActivationState");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_NotifyTabsOfActivationState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "NotifyTabsOfActivationState");
+
+	Params::UOptionsMenu_C_NotifyTabsOfActivationState_Params Parms{};
 
 	Parms.ActivatedTab = ActivatedTab;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -103,9 +137,12 @@ void UOptionsMenu_C::NotifyTabsOfActivationState(class UFortOptionsTab* Activate
 
 void UOptionsMenu_C::HandleResetAvailableActionHandlerStates(bool Temp_bool_Variable, enum class EInputActionState Temp_byte_Variable, enum class EInputActionState Temp_byte_Variable_1, enum class EInputActionState K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "HandleResetAvailableActionHandlerStates");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_HandleResetAvailableActionHandlerStates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "HandleResetAvailableActionHandlerStates");
+
+	Params::UOptionsMenu_C_HandleResetAvailableActionHandlerStates_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -126,9 +163,12 @@ void UOptionsMenu_C::HandleResetAvailableActionHandlerStates(bool Temp_bool_Vari
 
 void UOptionsMenu_C::Update_Header_Text_by_Tab_ID(class FName TabId, int32 CallFunc_Array_Find_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "Update Header Text by Tab ID");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_Update_Header_Text_by_Tab_ID_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "Update Header Text by Tab ID");
+
+	Params::UOptionsMenu_C_Update_Header_Text_by_Tab_ID_Params Parms{};
 
 	Parms.TabId = TabId;
 	Parms.CallFunc_Array_Find_ReturnValue = CallFunc_Array_Find_ReturnValue;
@@ -146,9 +186,12 @@ void UOptionsMenu_C::Update_Header_Text_by_Tab_ID(class FName TabId, int32 CallF
 
 void UOptionsMenu_C::DoResetKBMToDefault(int32 Preset_To_Set)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "DoResetKBMToDefault");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_DoResetKBMToDefault_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "DoResetKBMToDefault");
+
+	Params::UOptionsMenu_C_DoResetKBMToDefault_Params Parms{};
 
 	Parms.Preset_To_Set = Preset_To_Set;
 
@@ -169,9 +212,12 @@ void UOptionsMenu_C::DoResetKBMToDefault(int32 Preset_To_Set)
 
 void UOptionsMenu_C::UpdateAllOptionsTabs(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class UFortOptionsTab* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "UpdateAllOptionsTabs");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_UpdateAllOptionsTabs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "UpdateAllOptionsTabs");
+
+	Params::UOptionsMenu_C_UpdateAllOptionsTabs_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -208,9 +254,12 @@ void UOptionsMenu_C::UpdateAllOptionsTabs(int32 Temp_int_Array_Index_Variable, i
 
 void UOptionsMenu_C::UpdateBasedOnActiveWidget(class UObject* ActiveWidget, bool ShouldCenterOnTab, class UTabAccount_C* K2Node_DynamicCast_AsTab_Account, bool K2Node_DynamicCast_bSuccess, class UFortOptionsTab* K2Node_DynamicCast_AsFort_Options_Tab, bool K2Node_DynamicCast_bSuccess_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UTabInputOptions_C* K2Node_DynamicCast_AsTab_Input_Options, bool K2Node_DynamicCast_bSuccess_2, class UTabGameOptions_C* K2Node_DynamicCast_AsTab_Game_Options, bool K2Node_DynamicCast_bSuccess_3, class UClass* CallFunc_GetObjectClass_ReturnValue, class UClass* CallFunc_GetObjectClass_ReturnValue_1, class UClass* CallFunc_GetObjectClass_ReturnValue_2, bool CallFunc_ClassIsChildOf_ReturnValue, bool CallFunc_ClassIsChildOf_ReturnValue_1, bool CallFunc_ClassIsChildOf_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "UpdateBasedOnActiveWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_UpdateBasedOnActiveWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "UpdateBasedOnActiveWidget");
+
+	Params::UOptionsMenu_C_UpdateBasedOnActiveWidget_Params Parms{};
 
 	Parms.ActiveWidget = ActiveWidget;
 	Parms.ShouldCenterOnTab = ShouldCenterOnTab;
@@ -244,9 +293,12 @@ void UOptionsMenu_C::UpdateBasedOnActiveWidget(class UObject* ActiveWidget, bool
 
 void UOptionsMenu_C::ApplySettings(class UCommonUISubsystem* CallFunc_GetContext_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue, class UCommonInputManager* CallFunc_GetInputManager_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "ApplySettings");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_ApplySettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "ApplySettings");
+
+	Params::UOptionsMenu_C_ApplySettings_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_AddChild_ReturnValue = CallFunc_AddChild_ReturnValue;
@@ -263,12 +315,14 @@ void UOptionsMenu_C::ApplySettings(class UCommonUISubsystem* CallFunc_GetContext
 
 void UOptionsMenu_C::DoResetHUDOptionsToDefault()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "DoResetHUDOptionsToDefault");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_DoResetHUDOptionsToDefault_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "DoResetHUDOptionsToDefault");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -280,9 +334,12 @@ void UOptionsMenu_C::DoResetHUDOptionsToDefault()
 
 void UOptionsMenu_C::DoResetGameOptionsToDefault(class UFortOptionsTab* Tab_To_Reset)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "DoResetGameOptionsToDefault");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_DoResetGameOptionsToDefault_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "DoResetGameOptionsToDefault");
+
+	Params::UOptionsMenu_C_DoResetGameOptionsToDefault_Params Parms{};
 
 	Parms.Tab_To_Reset = Tab_To_Reset;
 
@@ -305,9 +362,12 @@ void UOptionsMenu_C::DoResetGameOptionsToDefault(class UFortOptionsTab* Tab_To_R
 
 void UOptionsMenu_C::HandleTabGamepadConfigActionHandlerStates(bool Temp_bool_Variable, enum class EInputActionState Temp_byte_Variable, enum class EInputActionState Temp_byte_Variable_1, int32 CallFunc_GetActiveWidgetIndex_ReturnValue, enum class EInputActionState K2Node_Select_Default, class UWidget* CallFunc_GetWidgetAtIndex_ReturnValue, class UTabGamePadConfig_v3_C* K2Node_DynamicCast_AsTab_Game_Pad_Config_V_3, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "HandleTabGamepadConfigActionHandlerStates");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_HandleTabGamepadConfigActionHandlerStates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "HandleTabGamepadConfigActionHandlerStates");
+
+	Params::UOptionsMenu_C_HandleTabGamepadConfigActionHandlerStates_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -335,9 +395,12 @@ void UOptionsMenu_C::HandleTabGamepadConfigActionHandlerStates(bool Temp_bool_Va
 
 void UOptionsMenu_C::HandleResetUnavailableActionHandlerStates(bool ShouldShowApply, bool Temp_bool_Variable, enum class EInputActionState Temp_byte_Variable, enum class EInputActionState Temp_byte_Variable_1, bool CallFunc_BooleanAND_ReturnValue, enum class EInputActionState K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "HandleResetUnavailableActionHandlerStates");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_HandleResetUnavailableActionHandlerStates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "HandleResetUnavailableActionHandlerStates");
+
+	Params::UOptionsMenu_C_HandleResetUnavailableActionHandlerStates_Params Parms{};
 
 	Parms.ShouldShowApply = ShouldShowApply;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -358,9 +421,12 @@ void UOptionsMenu_C::HandleResetUnavailableActionHandlerStates(bool ShouldShowAp
 
 void UOptionsMenu_C::HandleTabInputOptionsActionHandlerStates(class UTabInputOptions_C* TabInputOptionsActor)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "HandleTabInputOptionsActionHandlerStates");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_HandleTabInputOptionsActionHandlerStates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "HandleTabInputOptionsActionHandlerStates");
+
+	Params::UOptionsMenu_C_HandleTabInputOptionsActionHandlerStates_Params Parms{};
 
 	Parms.TabInputOptionsActor = TabInputOptionsActor;
 
@@ -384,9 +450,12 @@ void UOptionsMenu_C::HandleTabInputOptionsActionHandlerStates(class UTabInputOpt
 
 void UOptionsMenu_C::HandleTabGameOptionsActionHandlerStates(int32 Active_Widget_Index, bool Temp_bool_Variable, bool CallFunc_EqualEqual_IntInt_ReturnValue, enum class EInputActionState Temp_byte_Variable, enum class EInputActionState Temp_byte_Variable_1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsInZone_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, enum class EInputActionState K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "HandleTabGameOptionsActionHandlerStates");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_HandleTabGameOptionsActionHandlerStates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "HandleTabGameOptionsActionHandlerStates");
+
+	Params::UOptionsMenu_C_HandleTabGameOptionsActionHandlerStates_Params Parms{};
 
 	Parms.Active_Widget_Index = Active_Widget_Index;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -413,9 +482,12 @@ void UOptionsMenu_C::HandleTabGameOptionsActionHandlerStates(int32 Active_Widget
 
 void UOptionsMenu_C::CenterOnActiveTab(int32 CallFunc_GetActiveWidgetIndex_ReturnValue, class UWidget* CallFunc_GetWidgetAtIndex_ReturnValue, class UFortOptionsTab* K2Node_DynamicCast_AsFort_Options_Tab, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "CenterOnActiveTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_CenterOnActiveTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "CenterOnActiveTab");
+
+	Params::UOptionsMenu_C_CenterOnActiveTab_Params Parms{};
 
 	Parms.CallFunc_GetActiveWidgetIndex_ReturnValue = CallFunc_GetActiveWidgetIndex_ReturnValue;
 	Parms.CallFunc_GetWidgetAtIndex_ReturnValue = CallFunc_GetWidgetAtIndex_ReturnValue;
@@ -443,9 +515,12 @@ void UOptionsMenu_C::CenterOnActiveTab(int32 CallFunc_GetActiveWidgetIndex_Retur
 
 void UOptionsMenu_C::SetBackground(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, bool CallFunc_IsInZone_ReturnValue, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "SetBackground");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_SetBackground_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "SetBackground");
+
+	Params::UOptionsMenu_C_SetBackground_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -471,7 +546,7 @@ void UOptionsMenu_C::SetBackground(bool Temp_bool_Variable, enum class ESlateVis
 // class FName                        NameId                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 Icon                                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 // enum class ESettingTab             Tab_Type                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortTabButtonLabelInfo     K2Node_MakeStruct_FortTabButtonLabelInfo                         ()
+// struct FFortTabButtonLabelInfo     K2Node_MakeStruct_FortTabButtonLabelInfo                         (None)
 // int32                              CallFunc_Array_Add_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Add_ReturnValue_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -482,9 +557,12 @@ void UOptionsMenu_C::SetBackground(bool Temp_bool_Variable, enum class ESlateVis
 
 void UOptionsMenu_C::AddTabs(class UClass* WidgetClass, class FText DisplayName, class FName NameId, const struct FSlateBrush& Icon, enum class ESettingTab Tab_Type, const struct FFortTabButtonLabelInfo& K2Node_MakeStruct_FortTabButtonLabelInfo, int32 CallFunc_Array_Add_ReturnValue, int32 CallFunc_Array_Add_ReturnValue_1, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UFortOptionsTab* CallFunc_Create_ReturnValue, bool CallFunc_RegisterFortTab_ReturnValue, int32 CallFunc_Array_Add_ReturnValue_2, class UPanelSlot* CallFunc_AddChild_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "AddTabs");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_AddTabs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "AddTabs");
+
+	Params::UOptionsMenu_C_AddTabs_Params Parms{};
 
 	Parms.WidgetClass = WidgetClass;
 	Parms.DisplayName = DisplayName;
@@ -512,9 +590,12 @@ void UOptionsMenu_C::AddTabs(class UClass* WidgetClass, class FText DisplayName,
 
 void UOptionsMenu_C::HandleCursorModeChanging(bool IsEnabled)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "HandleCursorModeChanging");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_HandleCursorModeChanging_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "HandleCursorModeChanging");
+
+	Params::UOptionsMenu_C_HandleCursorModeChanging_Params Parms{};
 
 	Parms.IsEnabled = IsEnabled;
 
@@ -532,9 +613,12 @@ void UOptionsMenu_C::HandleCursorModeChanging(bool IsEnabled)
 
 void UOptionsMenu_C::Handle_Toggle_Mode(class UWidget* CallFunc_GetActiveWidget_ReturnValue, class UFortGamepadInputOptions* K2Node_DynamicCast_AsFort_Gamepad_Input_Options, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "Handle Toggle Mode");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_Handle_Toggle_Mode_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "Handle Toggle Mode");
+
+	Params::UOptionsMenu_C_Handle_Toggle_Mode_Params Parms{};
 
 	Parms.CallFunc_GetActiveWidget_ReturnValue = CallFunc_GetActiveWidget_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Gamepad_Input_Options = K2Node_DynamicCast_AsFort_Gamepad_Input_Options;
@@ -551,12 +635,14 @@ void UOptionsMenu_C::Handle_Toggle_Mode(class UWidget* CallFunc_GetActiveWidget_
 
 void UOptionsMenu_C::HandleBack()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "HandleBack");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_HandleBack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "HandleBack");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -568,9 +654,12 @@ void UOptionsMenu_C::HandleBack()
 
 void UOptionsMenu_C::Handle_Reset(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "Handle Reset");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_Handle_Reset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "Handle Reset");
+
+	Params::UOptionsMenu_C_Handle_Reset_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -590,13 +679,16 @@ void UOptionsMenu_C::Handle_Reset(bool* PassThrough)
 // class UFortSettingsContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_NeedsLanguageChangeConfirmation_ReturnValue_1           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_NeedsVideoChangeConfirmation_ReturnValue                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
 
 void UOptionsMenu_C::Handle_Apply(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_NeedsLanguageChangeConfirmation_ReturnValue, class UFortSettingsContext* CallFunc_GetContext_ReturnValue, bool CallFunc_NeedsLanguageChangeConfirmation_ReturnValue_1, bool CallFunc_NeedsVideoChangeConfirmation_ReturnValue, class FText CallFunc_MakeLiteralText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "Handle Apply");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_Handle_Apply_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "Handle Apply");
+
+	Params::UOptionsMenu_C_Handle_Apply_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_K2_SetTimerDelegate_ReturnValue = CallFunc_K2_SetTimerDelegate_ReturnValue;
@@ -620,9 +712,9 @@ void UOptionsMenu_C::Handle_Apply(UDelegateProperty_ K2Node_CreateDelegate_Outpu
 // struct FKey                        CallFunc_GetKey_ReturnValue                                      (HasGetValueTypeHash)
 // bool                               CallFunc_Key_IsGamepadKey_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UWidget*                     CallFunc_GetActiveWidget_ReturnValue                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 // bool                               CallFunc_IsVisible_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     CallFunc_GetChildAt_ReturnValue                                  (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetChildrenCount_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -633,9 +725,12 @@ void UOptionsMenu_C::Handle_Apply(UDelegateProperty_ K2Node_CreateDelegate_Outpu
 
 struct FEventReply UOptionsMenu_C::OnPreviewKeyDown(const struct FGeometry& MyGeometry, const struct FKeyEvent& InKeyEvent, const struct FKey& CallFunc_GetKey_ReturnValue, bool CallFunc_Key_IsGamepadKey_ReturnValue, class UWidget* CallFunc_GetActiveWidget_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue, bool CallFunc_IsVisible_ReturnValue, const struct FEventReply& CallFunc_Unhandled_ReturnValue, int32 Temp_int_Variable, class UWidget* CallFunc_GetChildAt_ReturnValue, int32 CallFunc_GetChildrenCount_ReturnValue, class UTabInputOptions_C* K2Node_DynamicCast_AsTab_Input_Options, bool K2Node_DynamicCast_bSuccess, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnPreviewKeyDown");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnPreviewKeyDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnPreviewKeyDown");
+
+	Params::UOptionsMenu_C_OnPreviewKeyDown_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InKeyEvent = InKeyEvent;
@@ -669,9 +764,9 @@ struct FEventReply UOptionsMenu_C::OnPreviewKeyDown(const struct FGeometry& MyGe
 // float                              CallFunc_PointerEvent_GetWheelDelta_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_FloatFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UWidget*                     CallFunc_GetActiveWidget_ReturnValue                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 // bool                               CallFunc_IsVisible_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     CallFunc_GetChildAt_ReturnValue                                  (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetChildrenCount_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -682,9 +777,12 @@ struct FEventReply UOptionsMenu_C::OnPreviewKeyDown(const struct FGeometry& MyGe
 
 struct FEventReply UOptionsMenu_C::OnMouseWheel(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, float CallFunc_PointerEvent_GetWheelDelta_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue, class UWidget* CallFunc_GetActiveWidget_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue, bool CallFunc_IsVisible_ReturnValue, const struct FEventReply& CallFunc_Unhandled_ReturnValue, int32 Temp_int_Variable, class UWidget* CallFunc_GetChildAt_ReturnValue, int32 CallFunc_GetChildrenCount_ReturnValue, class UTabInputOptions_C* K2Node_DynamicCast_AsTab_Input_Options, bool K2Node_DynamicCast_bSuccess, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnMouseWheel");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnMouseWheel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnMouseWheel");
+
+	Params::UOptionsMenu_C_OnMouseWheel_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -716,10 +814,10 @@ struct FEventReply UOptionsMenu_C::OnMouseWheel(const struct FGeometry& MyGeomet
 // struct FPointerEvent               MouseEvent                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
 // struct FKey                        CallFunc_PointerEvent_GetEffectingButton_ReturnValue             (HasGetValueTypeHash)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 // class UWidget*                     CallFunc_GetActiveWidget_ReturnValue                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsVisible_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     CallFunc_GetChildAt_ReturnValue                                  (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetChildrenCount_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -730,9 +828,12 @@ struct FEventReply UOptionsMenu_C::OnMouseWheel(const struct FGeometry& MyGeomet
 
 struct FEventReply UOptionsMenu_C::OnPreviewMouseButtonDown(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FKey& CallFunc_PointerEvent_GetEffectingButton_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue, class UWidget* CallFunc_GetActiveWidget_ReturnValue, bool CallFunc_IsVisible_ReturnValue, const struct FEventReply& CallFunc_Unhandled_ReturnValue, int32 Temp_int_Variable, class UWidget* CallFunc_GetChildAt_ReturnValue, int32 CallFunc_GetChildrenCount_ReturnValue, class UTabInputOptions_C* K2Node_DynamicCast_AsTab_Input_Options, bool K2Node_DynamicCast_bSuccess, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnPreviewMouseButtonDown");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnPreviewMouseButtonDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnPreviewMouseButtonDown");
+
+	Params::UOptionsMenu_C_OnPreviewMouseButtonDown_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -774,8 +875,8 @@ struct FEventReply UOptionsMenu_C::OnPreviewMouseButtonDown(const struct FGeomet
 // bool                               CallFunc_ShowInputOptions_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortRuntimeOptions*         CallFunc_GetRuntimeOptions_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_ShowNewControllerSenseOptions_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
 // class FName                        CallFunc_GetTabIdAtIndex_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_ShowBrightnessOptions_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -788,7 +889,7 @@ struct FEventReply UOptionsMenu_C::OnPreviewMouseButtonDown(const struct FGeomet
 // class FString                      CallFunc_GetPlatformName_ReturnValue                             (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_StrStr_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_HasWidgets_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        K2Node_Select_Default                                            (None)
 // class UWidget*                     CallFunc_GetWidgetAtIndex_ReturnValue                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortOptionsTab*             K2Node_DynamicCast_AsFort_Options_Tab                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -801,9 +902,12 @@ struct FEventReply UOptionsMenu_C::OnPreviewMouseButtonDown(const struct FGeomet
 
 void UOptionsMenu_C::Initialize(const struct FSlateBrush& TouchIcon, const struct FSlateBrush& MKB_Icon, const struct FSlateBrush& HUD_Icon, const struct FSlateBrush& Game_Normal, const struct FSlateBrush& Accounts_Normal, const struct FSlateBrush& Keys_Normal, const struct FSlateBrush& Controller_Normal, const struct FSlateBrush& Color_Normal, const struct FSlateBrush& Brightness_Normal, const struct FSlateBrush& Audio_Normal, const struct FSlateBrush& Video_Normal, bool CallFunc_ShowTouchAndMotionOptions_ReturnValue, bool CallFunc_ShowInputOptions_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, bool CallFunc_ShowNewControllerSenseOptions_ReturnValue, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class FName CallFunc_GetTabIdAtIndex_ReturnValue, bool Temp_bool_Variable, bool CallFunc_ShowBrightnessOptions_ReturnValue, bool CallFunc_ShowAccessibilityOptions_ReturnValue, class UWidget* CallFunc_GetActiveWidget_ReturnValue, bool CallFunc_ShowAccountOptions_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UProgressModalWidget_C* CallFunc_Create_ReturnValue, bool CallFunc_ShowControllerOptions_ReturnValue, const class FString& CallFunc_GetPlatformName_ReturnValue, bool CallFunc_EqualEqual_StrStr_ReturnValue, bool CallFunc_HasWidgets_ReturnValue, class FText K2Node_Select_Default, class UWidget* CallFunc_GetWidgetAtIndex_ReturnValue, class UFortOptionsTab* K2Node_DynamicCast_AsFort_Options_Tab, bool K2Node_DynamicCast_bSuccess, class UFortGlobalUIContext* CallFunc_GetLocalPlayerSubsystem_ReturnValue, class FText Temp_text_Variable_2, bool CallFunc_IsInZone_ReturnValue, bool CallFunc_ShowInputOptions_ReturnValue_1, class FText Temp_text_Variable_3, bool CallFunc_ShowVideoOptions_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "Initialize");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_Initialize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "Initialize");
+
+	Params::UOptionsMenu_C_Initialize_Params Parms{};
 
 	Parms.TouchIcon = TouchIcon;
 	Parms.MKB_Icon = MKB_Icon;
@@ -857,9 +961,12 @@ void UOptionsMenu_C::Initialize(const struct FSlateBrush& TouchIcon, const struc
 
 void UOptionsMenu_C::OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426(class UClass* Loaded)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426");
+
+	Params::UOptionsMenu_C_OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -875,9 +982,12 @@ void UOptionsMenu_C::OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426(class UClass* Loa
 
 void UOptionsMenu_C::OnLoaded_56F757014AB176CE2140009FB54D0D23(class UClass* Loaded)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_56F757014AB176CE2140009FB54D0D23");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnLoaded_56F757014AB176CE2140009FB54D0D23_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_56F757014AB176CE2140009FB54D0D23");
+
+	Params::UOptionsMenu_C_OnLoaded_56F757014AB176CE2140009FB54D0D23_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -893,9 +1003,12 @@ void UOptionsMenu_C::OnLoaded_56F757014AB176CE2140009FB54D0D23(class UClass* Loa
 
 void UOptionsMenu_C::OnLoaded_488EE90943BFF7AA4DB2049A7D72238C(class UClass* Loaded)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_488EE90943BFF7AA4DB2049A7D72238C");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnLoaded_488EE90943BFF7AA4DB2049A7D72238C_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_488EE90943BFF7AA4DB2049A7D72238C");
+
+	Params::UOptionsMenu_C_OnLoaded_488EE90943BFF7AA4DB2049A7D72238C_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -911,9 +1024,12 @@ void UOptionsMenu_C::OnLoaded_488EE90943BFF7AA4DB2049A7D72238C(class UClass* Loa
 
 void UOptionsMenu_C::OnLoaded_598823E641B8288CD371F0B50BE07C91(class UClass* Loaded)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_598823E641B8288CD371F0B50BE07C91");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnLoaded_598823E641B8288CD371F0B50BE07C91_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_598823E641B8288CD371F0B50BE07C91");
+
+	Params::UOptionsMenu_C_OnLoaded_598823E641B8288CD371F0B50BE07C91_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -929,9 +1045,12 @@ void UOptionsMenu_C::OnLoaded_598823E641B8288CD371F0B50BE07C91(class UClass* Loa
 
 void UOptionsMenu_C::OnLoaded_B8BA00A14ACF4BA8F4B657B2B247D3CD(class UClass* Loaded)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_B8BA00A14ACF4BA8F4B657B2B247D3CD");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnLoaded_B8BA00A14ACF4BA8F4B657B2B247D3CD_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_B8BA00A14ACF4BA8F4B657B2B247D3CD");
+
+	Params::UOptionsMenu_C_OnLoaded_B8BA00A14ACF4BA8F4B657B2B247D3CD_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -947,9 +1066,12 @@ void UOptionsMenu_C::OnLoaded_B8BA00A14ACF4BA8F4B657B2B247D3CD(class UClass* Loa
 
 void UOptionsMenu_C::OnLoaded_EF0A182C49925D83A3E55080FA222F7D(class UClass* Loaded)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_EF0A182C49925D83A3E55080FA222F7D");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnLoaded_EF0A182C49925D83A3E55080FA222F7D_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_EF0A182C49925D83A3E55080FA222F7D");
+
+	Params::UOptionsMenu_C_OnLoaded_EF0A182C49925D83A3E55080FA222F7D_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -966,9 +1088,12 @@ void UOptionsMenu_C::OnLoaded_EF0A182C49925D83A3E55080FA222F7D(class UClass* Loa
 
 void UOptionsMenu_C::DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1(enum class EFortDialogResult Result, class FName ResultName)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1");
+
+	Params::UOptionsMenu_C_DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.ResultName = ResultName;
@@ -986,9 +1111,12 @@ void UOptionsMenu_C::DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1(enum class EF
 
 void UOptionsMenu_C::DialogResult_865D48E84DB087F08A2C9797E6CB619E(enum class EFortDialogResult Result, class FName ResultName)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "DialogResult_865D48E84DB087F08A2C9797E6CB619E");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_DialogResult_865D48E84DB087F08A2C9797E6CB619E_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "DialogResult_865D48E84DB087F08A2C9797E6CB619E");
+
+	Params::UOptionsMenu_C_DialogResult_865D48E84DB087F08A2C9797E6CB619E_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.ResultName = ResultName;
@@ -1006,9 +1134,12 @@ void UOptionsMenu_C::DialogResult_865D48E84DB087F08A2C9797E6CB619E(enum class EF
 
 void UOptionsMenu_C::DialogResult_505313CB4EC9E510DD07E6B544334958(enum class EFortDialogResult Result, class FName ResultName)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "DialogResult_505313CB4EC9E510DD07E6B544334958");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_DialogResult_505313CB4EC9E510DD07E6B544334958_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "DialogResult_505313CB4EC9E510DD07E6B544334958");
+
+	Params::UOptionsMenu_C_DialogResult_505313CB4EC9E510DD07E6B544334958_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.ResultName = ResultName;
@@ -1026,9 +1157,12 @@ void UOptionsMenu_C::DialogResult_505313CB4EC9E510DD07E6B544334958(enum class EF
 
 void UOptionsMenu_C::DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A(enum class EFortDialogResult Result, class FName ResultName)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A");
+
+	Params::UOptionsMenu_C_DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.ResultName = ResultName;
@@ -1046,9 +1180,12 @@ void UOptionsMenu_C::DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A(enum class EF
 
 void UOptionsMenu_C::DialogResult_826C59EC4C294BC872A644878B35A13B(enum class EFortDialogResult Result, class FName ResultName)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "DialogResult_826C59EC4C294BC872A644878B35A13B");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_DialogResult_826C59EC4C294BC872A644878B35A13B_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "DialogResult_826C59EC4C294BC872A644878B35A13B");
+
+	Params::UOptionsMenu_C_DialogResult_826C59EC4C294BC872A644878B35A13B_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.ResultName = ResultName;
@@ -1066,9 +1203,12 @@ void UOptionsMenu_C::DialogResult_826C59EC4C294BC872A644878B35A13B(enum class EF
 
 void UOptionsMenu_C::DialogResult_B31FF5BD4C0772716F27509EA83B418E(enum class EFortDialogResult Result, class FName ResultName)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "DialogResult_B31FF5BD4C0772716F27509EA83B418E");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_DialogResult_B31FF5BD4C0772716F27509EA83B418E_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "DialogResult_B31FF5BD4C0772716F27509EA83B418E");
+
+	Params::UOptionsMenu_C_DialogResult_B31FF5BD4C0772716F27509EA83B418E_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.ResultName = ResultName;
@@ -1085,9 +1225,12 @@ void UOptionsMenu_C::DialogResult_B31FF5BD4C0772716F27509EA83B418E(enum class EF
 
 void UOptionsMenu_C::OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE(class UClass* Loaded)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE");
+
+	Params::UOptionsMenu_C_OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -1104,9 +1247,12 @@ void UOptionsMenu_C::OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE(class UClass* Loa
 
 void UOptionsMenu_C::Enable_Overlay_Input(bool Accept_Input, class FText Overlay_Text)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "Enable Overlay Input");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_Enable_Overlay_Input_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "Enable Overlay Input");
+
+	Params::UOptionsMenu_C_Enable_Overlay_Input_Params Parms{};
 
 	Parms.Accept_Input = Accept_Input;
 	Parms.Overlay_Text = Overlay_Text;
@@ -1123,9 +1269,12 @@ void UOptionsMenu_C::Enable_Overlay_Input(bool Accept_Input, class FText Overlay
 
 void UOptionsMenu_C::Enable_Overlay_Video(bool Accept_Input)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "Enable Overlay Video");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_Enable_Overlay_Video_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "Enable Overlay Video");
+
+	Params::UOptionsMenu_C_Enable_Overlay_Video_Params Parms{};
 
 	Parms.Accept_Input = Accept_Input;
 
@@ -1140,12 +1289,14 @@ void UOptionsMenu_C::Enable_Overlay_Video(bool Accept_Input)
 
 void UOptionsMenu_C::Disable_Overlay()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "Disable Overlay");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_Disable_Overlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "Disable Overlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1157,9 +1308,12 @@ void UOptionsMenu_C::Disable_Overlay()
 
 void UOptionsMenu_C::BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_CommonButtonClicked__DelegateSignature");
+
+	Params::UOptionsMenu_C_BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1175,9 +1329,12 @@ void UOptionsMenu_C::BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_C
 
 void UOptionsMenu_C::BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature");
+
+	Params::UOptionsMenu_C_BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1192,12 +1349,14 @@ void UOptionsMenu_C::BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_C
 
 void UOptionsMenu_C::Destruct()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1208,12 +1367,14 @@ void UOptionsMenu_C::Destruct()
 
 void UOptionsMenu_C::Tab_Setting_Changed()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "Tab Setting Changed");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_Tab_Setting_Changed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "Tab Setting Changed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1224,12 +1385,14 @@ void UOptionsMenu_C::Tab_Setting_Changed()
 
 void UOptionsMenu_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1240,12 +1403,14 @@ void UOptionsMenu_C::BP_OnActivated()
 
 void UOptionsMenu_C::Disable_Overlay_Input()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "Disable Overlay Input");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_Disable_Overlay_Input_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "Disable Overlay Input");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1257,9 +1422,12 @@ void UOptionsMenu_C::Disable_Overlay_Input()
 
 void UOptionsMenu_C::Gamepad_Changed(bool Gamepad_Enabled)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "Gamepad Changed");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_Gamepad_Changed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "Gamepad Changed");
+
+	Params::UOptionsMenu_C_Gamepad_Changed_Params Parms{};
 
 	Parms.Gamepad_Enabled = Gamepad_Enabled;
 
@@ -1276,9 +1444,12 @@ void UOptionsMenu_C::Gamepad_Changed(bool Gamepad_Enabled)
 
 void UOptionsMenu_C::BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature(class FName TabId, class UCommonButton* TabButton)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature");
+
+	Params::UOptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature_Params Parms{};
 
 	Parms.TabId = TabId;
 	Parms.TabButton = TabButton;
@@ -1294,12 +1465,14 @@ void UOptionsMenu_C::BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabBut
 
 void UOptionsMenu_C::HandleBenchmarkComplete()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "HandleBenchmarkComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_HandleBenchmarkComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "HandleBenchmarkComplete");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1311,9 +1484,12 @@ void UOptionsMenu_C::HandleBenchmarkComplete()
 
 void UOptionsMenu_C::BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonButtonClicked__DelegateSignature");
+
+	Params::UOptionsMenu_C_BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1328,12 +1504,14 @@ void UOptionsMenu_C::BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonBut
 
 void UOptionsMenu_C::HandleSettingsErrorMessageClosed()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "HandleSettingsErrorMessageClosed");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_HandleSettingsErrorMessageClosed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "HandleSettingsErrorMessageClosed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1344,12 +1522,14 @@ void UOptionsMenu_C::HandleSettingsErrorMessageClosed()
 
 void UOptionsMenu_C::OnHandleBack()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnHandleBack");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnHandleBack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnHandleBack");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1362,9 +1542,12 @@ void UOptionsMenu_C::OnHandleBack()
 
 void UOptionsMenu_C::BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature");
+
+	Params::UOptionsMenu_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature_Params Parms{};
 
 	Parms.ActiveWidget = ActiveWidget;
 	Parms.ActiveWidgetIndex = ActiveWidgetIndex;
@@ -1380,12 +1563,14 @@ void UOptionsMenu_C::BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_On
 
 void UOptionsMenu_C::Construct()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1398,9 +1583,12 @@ void UOptionsMenu_C::Construct()
 
 void UOptionsMenu_C::TabGameOptions_OnActiveWidgetChanged_Bind(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "TabGameOptions_OnActiveWidgetChanged_Bind");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_TabGameOptions_OnActiveWidgetChanged_Bind_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "TabGameOptions_OnActiveWidgetChanged_Bind");
+
+	Params::UOptionsMenu_C_TabGameOptions_OnActiveWidgetChanged_Bind_Params Parms{};
 
 	Parms.ActiveWidget = ActiveWidget;
 	Parms.ActiveWidgetIndex = ActiveWidgetIndex;
@@ -1416,12 +1604,14 @@ void UOptionsMenu_C::TabGameOptions_OnActiveWidgetChanged_Bind(class UWidget* Ac
 
 void UOptionsMenu_C::HandleSettingsSaveComplete()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "HandleSettingsSaveComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_HandleSettingsSaveComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "HandleSettingsSaveComplete");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1432,12 +1622,14 @@ void UOptionsMenu_C::HandleSettingsSaveComplete()
 
 void UOptionsMenu_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1448,12 +1640,14 @@ void UOptionsMenu_C::BP_OnDeactivated()
 
 void UOptionsMenu_C::LoadTabClasses()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "LoadTabClasses");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_LoadTabClasses_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "LoadTabClasses");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1464,12 +1658,14 @@ void UOptionsMenu_C::LoadTabClasses()
 
 void UOptionsMenu_C::ResetVideoOptionsTimerDelegate()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "ResetVideoOptionsTimerDelegate");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_ResetVideoOptionsTimerDelegate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "ResetVideoOptionsTimerDelegate");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1481,9 +1677,12 @@ void UOptionsMenu_C::ResetVideoOptionsTimerDelegate()
 
 void UOptionsMenu_C::BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature(class FName TabId)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature");
+
+	Params::UOptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature_Params Parms{};
 
 	Parms.TabId = TabId;
 
@@ -1498,12 +1697,14 @@ void UOptionsMenu_C::BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSel
 
 void UOptionsMenu_C::ShowLangaugeConfirmation()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "ShowLangaugeConfirmation");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_ShowLangaugeConfirmation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "ShowLangaugeConfirmation");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1515,9 +1716,12 @@ void UOptionsMenu_C::ShowLangaugeConfirmation()
 
 void UOptionsMenu_C::HandleTabGamePadActionsNeedBinds(TArray<class FText>& ScreenLabels)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "HandleTabGamePadActionsNeedBinds");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_HandleTabGamePadActionsNeedBinds_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "HandleTabGamePadActionsNeedBinds");
+
+	Params::UOptionsMenu_C_HandleTabGamePadActionsNeedBinds_Params Parms{};
 
 	Parms.ScreenLabels = ScreenLabels;
 
@@ -1533,9 +1737,12 @@ void UOptionsMenu_C::HandleTabGamePadActionsNeedBinds(TArray<class FText>& Scree
 
 void UOptionsMenu_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UOptionsMenu_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1550,12 +1757,14 @@ void UOptionsMenu_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_Comm
 
 void UOptionsMenu_C::OnInputsResetToDefault()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnInputsResetToDefault");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnInputsResetToDefault_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnInputsResetToDefault");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1566,12 +1775,14 @@ void UOptionsMenu_C::OnInputsResetToDefault()
 
 void UOptionsMenu_C::OnResetToDefault()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnResetToDefault");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnResetToDefault_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnResetToDefault");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1582,12 +1793,14 @@ void UOptionsMenu_C::OnResetToDefault()
 
 void UOptionsMenu_C::OnBack()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnBack");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnBack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnBack");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1598,12 +1811,14 @@ void UOptionsMenu_C::OnBack()
 
 void UOptionsMenu_C::OnToggleMode()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnToggleMode");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnToggleMode_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnToggleMode");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1614,12 +1829,14 @@ void UOptionsMenu_C::OnToggleMode()
 
 void UOptionsMenu_C::OnApplySettings()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnApplySettings");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnApplySettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnApplySettings");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1681,9 +1898,9 @@ void UOptionsMenu_C::OnApplySettings()
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_CustomEvent_Accept_Input_1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_CustomEvent_Overlay_Text                                  ()
+// class FText                        K2Node_CustomEvent_Overlay_Text                                  (None)
 // bool                               K2Node_CustomEvent_Accept_Input                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_3                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button_2                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetActiveWidgetIndex_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1791,14 +2008,14 @@ void UOptionsMenu_C::OnApplySettings()
 // int32                              CallFunc_Add_IntInt_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_15                          (ZeroConstructor, NoDestructor)
 // TArray<class FText>                K2Node_CustomEvent_ScreenLabels                                  (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Array_Get_Item                                          ()
+// class FText                        CallFunc_Array_Get_Item                                          (None)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 // int32                              CallFunc_Subtract_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortAsyncAction_ShowConfirmation_NUI*CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue_1          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1835,9 +2052,12 @@ void UOptionsMenu_C::OnApplySettings()
 
 void UOptionsMenu_C::ExecuteUbergraph_OptionsMenu(int32 EntryPoint, class FName Temp_name_Variable, enum class EFortDialogResult Temp_byte_Variable, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, enum class EFortDialogResult K2Node_CustomEvent_Result_4, class FName K2Node_CustomEvent_ResultName_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FName Temp_name_Variable_1, enum class EFortDialogResult Temp_byte_Variable_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, enum class EFortDialogResult K2Node_CustomEvent_Result_3, class FName K2Node_CustomEvent_ResultName_3, class FName Temp_name_Variable_2, enum class EFortDialogResult Temp_byte_Variable_2, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, bool CallFunc_IsValid_ReturnValue_2, enum class EFortDialogResult K2Node_CustomEvent_Result_2, class FName K2Node_CustomEvent_ResultName_2, class FName Temp_name_Variable_3, enum class EFortDialogResult Temp_byte_Variable_3, bool CallFunc_EqualEqual_ByteByte_ReturnValue_3, class UInputPresetConfirmationRotator_C* CallFunc_Create_ReturnValue, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, enum class EFortDialogResult K2Node_CustomEvent_Result_1, class FName K2Node_CustomEvent_ResultName_1, class FName Temp_name_Variable_4, enum class EFortDialogResult Temp_byte_Variable_4, enum class EFortDialogResult K2Node_CustomEvent_Result, class FName K2Node_CustomEvent_ResultName, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, class FName Temp_name_Variable_5, enum class EFortDialogResult Temp_byte_Variable_5, bool K2Node_SwitchEnum_CmpSuccess, class UClass* K2Node_CustomEvent_Loaded, class UClass* Temp_class_Variable, class UClass* K2Node_ClassDynamicCast_AsFort_Options_Tab, bool K2Node_ClassDynamicCast_bSuccess, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool Temp_bool_Variable, bool CallFunc_EqualEqual_ByteByte_ReturnValue_4, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, bool K2Node_CustomEvent_Accept_Input_1, class FText K2Node_CustomEvent_Overlay_Text, bool K2Node_CustomEvent_Accept_Input, class FText CallFunc_MakeLiteralText_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, int32 CallFunc_GetActiveWidgetIndex_ReturnValue, class UWidget* CallFunc_GetWidgetAtIndex_ReturnValue, class UTabVideoOptions_New_C* K2Node_DynamicCast_AsTab_Video_Options_New, bool K2Node_DynamicCast_bSuccess, enum class EFortDialogResult K2Node_CustomEvent_Result_5, class FName K2Node_CustomEvent_ResultName_5, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, bool K2Node_CustomEvent_Gamepad_Enabled, class FName K2Node_ComponentBoundEvent_TabId_1, class UCommonButton* K2Node_ComponentBoundEvent_TabButton, class FName CallFunc_GetActiveTab_ReturnValue, class UIconTabButton_C* K2Node_DynamicCast_AsIcon_Tab_Button, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_EqualEqual_NameName_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, bool CallFunc_IsVisible_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Handle_Reset_PassThrough, int32 Temp_int_Variable, class UWidget* CallFunc_GetChildAt_ReturnValue, class UFortOptionsTab* K2Node_DynamicCast_AsFort_Options_Tab, bool K2Node_DynamicCast_bSuccess_2, int32 CallFunc_Add_IntInt_ReturnValue, class UTabGamePadConfig_v3_C* K2Node_DynamicCast_AsTab_Game_Pad_Config_V_3, bool K2Node_DynamicCast_bSuccess_3, class UTabGameOptions_C* K2Node_DynamicCast_AsTab_Game_Options, bool K2Node_DynamicCast_bSuccess_4, class UTabVideoOptions_C* K2Node_DynamicCast_AsTab_Video_Options, bool K2Node_DynamicCast_bSuccess_5, class UTabInputOptions_C* K2Node_DynamicCast_AsTab_Input_Options, bool K2Node_DynamicCast_bSuccess_6, class UWidget* K2Node_ComponentBoundEvent_ActiveWidget, int32 K2Node_ComponentBoundEvent_ActiveWidgetIndex, int32 CallFunc_GetChildrenCount_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, class UClass* Temp_class_Variable_1, class UClass* K2Node_CustomEvent_Loaded_1, class UClass* K2Node_ClassDynamicCast_AsFort_Options_Tab_1, bool K2Node_ClassDynamicCast_bSuccess_1, class UWidget* K2Node_CustomEvent_ActiveWidget, int32 K2Node_CustomEvent_ActiveWidgetIndex, int32 Temp_int_Array_Index_Variable, int32 CallFunc_Add_IntInt_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class UClass* Temp_class_Variable_2, class UClass* K2Node_ClassDynamicCast_AsFort_Options_Tab_2, bool K2Node_ClassDynamicCast_bSuccess_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, bool CallFunc_ShowVideoOptions_ReturnValue, bool CallFunc_ShowAccountOptions_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, bool CallFunc_ShowControllerOptions_ReturnValue, bool CallFunc_ShowInputOptions_ReturnValue, class UClass* K2Node_CustomEvent_Loaded_2, class UClass* Temp_class_Variable_3, class UClass* K2Node_CustomEvent_Loaded_3, class UClass* K2Node_ClassDynamicCast_AsFort_Options_Tab_3, bool K2Node_ClassDynamicCast_bSuccess_3, bool CallFunc_IsVisible_ReturnValue_1, class UWidget* CallFunc_GetActiveWidget_ReturnValue, class UClass* Temp_class_Variable_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_8, class UClass* K2Node_ClassDynamicCast_AsFort_Options_Tab_4, bool K2Node_ClassDynamicCast_bSuccess_4, bool CallFunc_ShowAccessibilityOptions_ReturnValue, class UClass* K2Node_CustomEvent_Loaded_4, bool CallFunc_ShowBrightnessOptions_ReturnValue, class FName K2Node_ComponentBoundEvent_TabId, class UClass* Temp_class_Variable_5, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_9, class UClass* K2Node_ClassDynamicCast_AsFort_Options_Tab_5, bool K2Node_ClassDynamicCast_bSuccess_5, class UWidget* CallFunc_GetActiveWidget_ReturnValue_1, class UClass* K2Node_CustomEvent_Loaded_5, class UTabNewControllerSettings_C* K2Node_DynamicCast_AsTab_New_Controller_Settings, bool K2Node_DynamicCast_bSuccess_7, class UFortOptionsTab* K2Node_DynamicCast_AsFort_Options_Tab_1, bool K2Node_DynamicCast_bSuccess_8, class UTabGameOptions_C* K2Node_DynamicCast_AsTab_Game_Options_1, bool K2Node_DynamicCast_bSuccess_9, int32 CallFunc_GetActiveWidgetIndex_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_10, class UWidget* CallFunc_GetWidgetAtIndex_ReturnValue_1, class UTabGameOptionsHud_C* K2Node_DynamicCast_AsTab_Game_Options_Hud, bool K2Node_DynamicCast_bSuccess_10, class UWidget* CallFunc_GetActiveWidget_ReturnValue_2, class UTabGameOptionsMain_C* K2Node_DynamicCast_AsTab_Game_Options_Main, bool K2Node_DynamicCast_bSuccess_11, class UWidget* CallFunc_GetActiveWidget_ReturnValue_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_11, class UTabInputOptions_C* K2Node_DynamicCast_AsTab_Input_Options_1, bool K2Node_DynamicCast_bSuccess_12, class UClass* Temp_class_Variable_6, class UClass* K2Node_ClassDynamicCast_AsFort_Options_Tab_6, bool K2Node_ClassDynamicCast_bSuccess_6, class UClass* K2Node_CustomEvent_Loaded_6, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_12, enum class EInputActionState Temp_byte_Variable_6, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_13, enum class EInputActionState Temp_byte_Variable_7, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_14, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_15, TArray<class FText>& K2Node_CustomEvent_ScreenLabels, class FText CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue, class FText CallFunc_Format_ReturnValue_1, int32 CallFunc_Subtract_IntInt_ReturnValue, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue_1, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue_4, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_5, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_16, bool Temp_bool_Variable_3, int32 CallFunc_GetActiveWidgetIndex_ReturnValue_2, class UWidget* CallFunc_GetWidgetAtIndex_ReturnValue_2, enum class EInputActionState K2Node_Select_Default, class UTabGamePadConfig_v3_C* K2Node_DynamicCast_AsTab_Game_Pad_Config_V_3_1, bool K2Node_DynamicCast_bSuccess_13, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_17, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_18, class UFortHUDContext* CallFunc_GetContext_ReturnValue_2, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_3, bool CallFunc_IsInZone_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_19, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_20, class UCommonButton* K2Node_ComponentBoundEvent_Button, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_21, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_22, bool CallFunc_ShowNewControllerSenseOptions_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_23, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_1, TSoftClassPtr<class UObject> K2Node_Select_Default_1, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_2, TSoftClassPtr<class UObject> K2Node_Select_Default_2, TSoftClassPtr<class UObject> K2Node_Select_Default_3)
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "ExecuteUbergraph_OptionsMenu");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_ExecuteUbergraph_OptionsMenu_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "ExecuteUbergraph_OptionsMenu");
+
+	Params::UOptionsMenu_C_ExecuteUbergraph_OptionsMenu_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_name_Variable = Temp_name_Variable;
@@ -2056,17 +2276,17 @@ void UOptionsMenu_C::ExecuteUbergraph_OptionsMenu(int32 EntryPoint, class FName 
 
 void UOptionsMenu_C::OnSettingsApplied__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("OptionsMenu_C", "OnSettingsApplied__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenu_C_OnSettingsApplied__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenu_C", "OnSettingsApplied__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

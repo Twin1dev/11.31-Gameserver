@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaMOTDLandingWidget.AthenaMOTDLandingWidget_C
+// (None)
+
+class UClass* UAthenaMOTDLandingWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaMOTDLandingWidget_C");
+
+	return Clss;
+}
+
+
+// AthenaMOTDLandingWidget_C AthenaMOTDLandingWidget.Default__AthenaMOTDLandingWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaMOTDLandingWidget_C* UAthenaMOTDLandingWidget_C::GetDefaultObj()
+{
+	static class UAthenaMOTDLandingWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaMOTDLandingWidget_C*>(UAthenaMOTDLandingWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaMOTDLandingWidget.AthenaMOTDLandingWidget_C.SetTextIfValidOrDefault
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,17 +47,20 @@ namespace SDK
 // class FString                      String                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // class FText                        DefaultText                                                      (BlueprintVisible, BlueprintReadOnly, Parm)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // class UIconTextButton_C*           K2Node_DynamicCast_AsIcon_Text_Button                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        K2Node_Select_Default                                            (None)
 
 void UAthenaMOTDLandingWidget_C::SetTextIfValidOrDefault(class UCommonButton* Button, const class FString& String, class FText DefaultText, bool Temp_bool_Variable, class FText CallFunc_Conv_StringToText_ReturnValue, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess, bool CallFunc_TextIsEmpty_ReturnValue, class FText K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDLandingWidget_C", "SetTextIfValidOrDefault");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDLandingWidget_C_SetTextIfValidOrDefault_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDLandingWidget_C", "SetTextIfValidOrDefault");
+
+	Params::UAthenaMOTDLandingWidget_C_SetTextIfValidOrDefault_Params Parms{};
 
 	Parms.Button = Button;
 	Parms.String = String;
@@ -55,12 +83,14 @@ void UAthenaMOTDLandingWidget_C::SetTextIfValidOrDefault(class UCommonButton* Bu
 
 void UAthenaMOTDLandingWidget_C::OnInitialized()
 {
-	static auto Func = Class->GetFunction("AthenaMOTDLandingWidget_C", "OnInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDLandingWidget_C_OnInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDLandingWidget_C", "OnInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -72,9 +102,12 @@ void UAthenaMOTDLandingWidget_C::OnInitialized()
 
 void UAthenaMOTDLandingWidget_C::OnPopulateNews(struct FAthenaNewsEntry& NewsEntry)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDLandingWidget_C", "OnPopulateNews");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDLandingWidget_C_OnPopulateNews_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDLandingWidget_C", "OnPopulateNews");
+
+	Params::UAthenaMOTDLandingWidget_C_OnPopulateNews_Params Parms{};
 
 	Parms.NewsEntry = NewsEntry;
 
@@ -98,9 +131,12 @@ void UAthenaMOTDLandingWidget_C::OnPopulateNews(struct FAthenaNewsEntry& NewsEnt
 
 void UAthenaMOTDLandingWidget_C::ExecuteUbergraph_AthenaMOTDLandingWidget(int32 EntryPoint, const struct FAthenaNewsEntry& K2Node_Event_NewsEntry, bool K2Node_SwitchEnum_CmpSuccess, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button_1, bool K2Node_DynamicCast_bSuccess_1, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button_2, bool K2Node_DynamicCast_bSuccess_2)
 {
-	static auto Func = Class->GetFunction("AthenaMOTDLandingWidget_C", "ExecuteUbergraph_AthenaMOTDLandingWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaMOTDLandingWidget_C", "ExecuteUbergraph_AthenaMOTDLandingWidget");
+
+	Params::UAthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_NewsEntry = K2Node_Event_NewsEntry;
@@ -118,6 +154,4 @@ void UAthenaMOTDLandingWidget_C::ExecuteUbergraph_AthenaMOTDLandingWidget(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

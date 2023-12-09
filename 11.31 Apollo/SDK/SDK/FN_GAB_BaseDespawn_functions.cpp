@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GAB_BaseDespawn.GAB_BaseDespawn_C
+// (None)
+
+class UClass* UGAB_BaseDespawn_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAB_BaseDespawn_C");
+
+	return Clss;
+}
+
+
+// GAB_BaseDespawn_C GAB_BaseDespawn.Default__GAB_BaseDespawn_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAB_BaseDespawn_C* UGAB_BaseDespawn_C::GetDefaultObj()
+{
+	static class UGAB_BaseDespawn_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAB_BaseDespawn_C*>(UGAB_BaseDespawn_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GAB_BaseDespawn.GAB_BaseDespawn_C.K2_ActivateAbilityFromEvent
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UGAB_BaseDespawn_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GAB_BaseDespawn_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_BaseDespawn_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_BaseDespawn_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGAB_BaseDespawn_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -45,9 +73,12 @@ void UGAB_BaseDespawn_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& 
 
 void UGAB_BaseDespawn_C::ExecuteUbergraph_GAB_BaseDespawn(int32 EntryPoint, const struct FGameplayEventData& K2Node_Event_EventData, bool CallFunc_K2_CommitAbility_ReturnValue, class AFortAIPawn* K2Node_DynamicCast_AsFort_AIPawn, bool K2Node_DynamicCast_bSuccess, class AController* CallFunc_GetController_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GAB_BaseDespawn_C", "ExecuteUbergraph_GAB_BaseDespawn");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_BaseDespawn_C_ExecuteUbergraph_GAB_BaseDespawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_BaseDespawn_C", "ExecuteUbergraph_GAB_BaseDespawn");
+
+	Params::UGAB_BaseDespawn_C_ExecuteUbergraph_GAB_BaseDespawn_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_EventData = K2Node_Event_EventData;
@@ -62,6 +93,4 @@ void UGAB_BaseDespawn_C::ExecuteUbergraph_GAB_BaseDespawn(int32 EntryPoint, cons
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

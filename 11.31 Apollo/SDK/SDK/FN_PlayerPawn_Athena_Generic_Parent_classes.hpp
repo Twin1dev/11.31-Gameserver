@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -32,11 +29,8 @@ public:
 	TArray<class UMaterialInstanceDynamic*>      PawnMaterials_ALL;                                 // 0x30D0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	UMulticastInlineDelegateProperty_            ShootingTargetReactToJump;                         // 0x30E0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("PlayerPawn_Athena_Generic_Parent_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class APlayerPawn_Athena_Generic_Parent_C* GetDefaultObj();
 
 	void ReceiveBeginPlay();
 	void OnEnteredVehicle();
@@ -50,6 +44,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

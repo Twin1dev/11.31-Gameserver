@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -36,11 +33,8 @@ public:
 	class UClass*                                ActionDisplayStyle_CannotToggle;                   // 0x3A0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                ActionDisplayStyle_CanToggle;                      // 0x3A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C* GetDefaultObj();
 
 	void UpdateActionDisplay(bool bWillSelect, bool bCanToggle, const struct FFortPlayerSurveyButtonListMultipleSelectionAnswerWidgetFocusInfo& FocusInfo, bool CallFunc_IsChoiceSelected_ReturnValue, bool CallFunc_CanToggleChoice_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, bool Temp_bool_Variable, class FText K2Node_Select_Default, bool Temp_bool_Variable_1, const struct FFortPlayerSurveyButtonListMultipleSelectionAnswerWidgetFocusInfo& CallFunc_GetFocusInfo_ReturnValue, class UClass* K2Node_Select_Default_1);
 	void UpdateQuestionAnswerDisplay();
@@ -65,6 +59,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

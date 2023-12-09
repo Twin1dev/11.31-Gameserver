@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass PlayerBattlePassXpAndReward.PlayerBattlePassXpAndReward_C
+// (None)
+
+class UClass* UPlayerBattlePassXpAndReward_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerBattlePassXpAndReward_C");
+
+	return Clss;
+}
+
+
+// PlayerBattlePassXpAndReward_C PlayerBattlePassXpAndReward.Default__PlayerBattlePassXpAndReward_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPlayerBattlePassXpAndReward_C* UPlayerBattlePassXpAndReward_C::GetDefaultObj()
+{
+	static class UPlayerBattlePassXpAndReward_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPlayerBattlePassXpAndReward_C*>(UPlayerBattlePassXpAndReward_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function PlayerBattlePassXpAndReward.PlayerBattlePassXpAndReward_C.SetupReward
@@ -25,7 +50,7 @@ namespace SDK
 // struct FFortItemQuantityPair       RewardItem                                                       (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 // int32                              LevelRewarded                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -33,9 +58,12 @@ namespace SDK
 
 void UPlayerBattlePassXpAndReward_C::SetupReward(class UWidget* Container, class UTextBlock* RewardText, class UDailyQuestRewardInfo_C* RewardInfoWidget, bool HasReward, const struct FFortItemQuantityPair& RewardItem, int32 LevelRewarded, enum class ESlateVisibility Temp_byte_Variable, class FText CallFunc_Conv_IntToText_ReturnValue, bool CallFunc_IsValid_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "SetupReward");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBattlePassXpAndReward_C_SetupReward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "SetupReward");
+
+	Params::UPlayerBattlePassXpAndReward_C_SetupReward_Params Parms{};
 
 	Parms.Container = Container;
 	Parms.RewardText = RewardText;
@@ -59,14 +87,17 @@ void UPlayerBattlePassXpAndReward_C::SetupReward(class UWidget* Container, class
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FFortPublicAccountInfo      FortPublicAccountInfo                                            (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-// class FText                        CallFunc_GetCurrentSeasonNumberAsText_ReturnValue                ()
-// class FText                        CallFunc_GetCurrentChapterAsText_ReturnValue                     ()
+// class FText                        CallFunc_GetCurrentSeasonNumberAsText_ReturnValue                (None)
+// class FText                        CallFunc_GetCurrentChapterAsText_ReturnValue                     (None)
 
 void UPlayerBattlePassXpAndReward_C::Refresh(struct FFortPublicAccountInfo& FortPublicAccountInfo, class FText CallFunc_GetCurrentSeasonNumberAsText_ReturnValue, class FText CallFunc_GetCurrentChapterAsText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "Refresh");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBattlePassXpAndReward_C_Refresh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "Refresh");
+
+	Params::UPlayerBattlePassXpAndReward_C_Refresh_Params Parms{};
 
 	Parms.FortPublicAccountInfo = FortPublicAccountInfo;
 	Parms.CallFunc_GetCurrentSeasonNumberAsText_ReturnValue = CallFunc_GetCurrentSeasonNumberAsText_ReturnValue;
@@ -84,9 +115,12 @@ void UPlayerBattlePassXpAndReward_C::Refresh(struct FFortPublicAccountInfo& Fort
 
 void UPlayerBattlePassXpAndReward_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBattlePassXpAndReward_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "PreConstruct");
+
+	Params::UPlayerBattlePassXpAndReward_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -102,9 +136,12 @@ void UPlayerBattlePassXpAndReward_C::PreConstruct(bool IsDesignTime)
 
 void UPlayerBattlePassXpAndReward_C::OnAccountInfoChanged(struct FFortPublicAccountInfo& Result)
 {
-	static auto Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "OnAccountInfoChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBattlePassXpAndReward_C_OnAccountInfoChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "OnAccountInfoChanged");
+
+	Params::UPlayerBattlePassXpAndReward_C_OnAccountInfoChanged_Params Parms{};
 
 	Parms.Result = Result;
 
@@ -130,9 +167,12 @@ void UPlayerBattlePassXpAndReward_C::OnAccountInfoChanged(struct FFortPublicAcco
 
 void UPlayerBattlePassXpAndReward_C::ExecuteUbergraph_PlayerBattlePassXpAndReward(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool K2Node_Event_IsDesignTime, const struct FFortPublicAccountInfo& K2Node_Event_Result, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "ExecuteUbergraph_PlayerBattlePassXpAndReward");
+	static class UFunction* Func = nullptr;
 
-	Params::UPlayerBattlePassXpAndReward_C_ExecuteUbergraph_PlayerBattlePassXpAndReward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerBattlePassXpAndReward_C", "ExecuteUbergraph_PlayerBattlePassXpAndReward");
+
+	Params::UPlayerBattlePassXpAndReward_C_ExecuteUbergraph_PlayerBattlePassXpAndReward_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -152,6 +192,4 @@ void UPlayerBattlePassXpAndReward_C::ExecuteUbergraph_PlayerBattlePassXpAndRewar
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

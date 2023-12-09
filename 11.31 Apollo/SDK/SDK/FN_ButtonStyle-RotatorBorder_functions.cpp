@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ButtonStyle-RotatorBorder.ButtonStyle-RotatorBorder_C
+// (None)
+
+class UClass* UButtonStyleMinusRotatorBorder_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ButtonStyle-RotatorBorder_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ButtonStyle-RotatorBorder_C ButtonStyle-RotatorBorder.Default__ButtonStyle-RotatorBorder_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UButtonStyleMinusRotatorBorder_C* UButtonStyleMinusRotatorBorder_C::GetDefaultObj()
+{
+	static class UButtonStyleMinusRotatorBorder_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UButtonStyleMinusRotatorBorder_C*>(UButtonStyleMinusRotatorBorder_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

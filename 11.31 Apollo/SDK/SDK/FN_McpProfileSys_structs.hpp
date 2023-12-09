@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -25,7 +22,7 @@ public:
 	class FString                                ItemType;                                          // 0x0(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                ItemGuid;                                          // 0x10(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        Quantity;                                          // 0x20(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1AD2[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_9C0[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FJsonObjectWrapper                    Attributes;                                        // 0x28(0x20)(Edit, NativeAccessSpecifierPublic)
 	class FString                                ItemProfile;                                       // 0x48(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -42,7 +39,7 @@ public:
 	struct FDateTime                             LockExpiration;                                    // 0x30(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FJsonObjectWrapper>            Notifications;                                     // 0x38(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                        ProfileCommandRevision;                            // 0x48(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1AD3[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_9C2[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x80 (0x80 - 0x0)
@@ -50,7 +47,7 @@ public:
 struct FBaseUrlContext
 {
 public:
-	uint8                                        Pad_1AD4[0x80];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_9C3[0x80];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x80 - 0x80)
@@ -75,7 +72,7 @@ public:
 	class FString                                ItemId;                                            // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                TemplateId;                                        // 0x10(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        Quantity;                                          // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1AD5[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_9C4[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FJsonObjectWrapper                    Attributes;                                        // 0x28(0x20)(NativeAccessSpecifierPublic)
 };
 
@@ -94,7 +91,7 @@ struct FMcpChangeQuantityRequest
 public:
 	class FString                                ItemId;                                            // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        DeltaQuantity;                                     // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1AD6[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_9C5[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -112,7 +109,7 @@ struct FMcpProfileChangeRequest
 {
 public:
 	int32                                        BaseCommandRevision;                               // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1AD7[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_9C6[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FMcpAddItemRequest>            AddRequests;                                       // 0x8(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FMcpRemoveItemRequest>         RemoveRequests;                                    // 0x18(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FMcpChangeQuantityRequest>     ChangeQuantityRequests;                            // 0x28(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
@@ -136,7 +133,7 @@ public:
 	class UMcpProfile*                           ProfileObject;                                     // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bWaitingForRefreshAllProfilesResponse;             // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bForwardUpdatesToClient;                           // 0x19(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1AD8[0x6];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_9C7[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -144,7 +141,7 @@ public:
 struct FProfileGroupEntry
 {
 public:
-	uint8                                        Pad_1AD9[0x18];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_9C8[0x18];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMcpProfileGroup*                      ProfileGroup;                                      // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -156,7 +153,7 @@ public:
 	TArray<struct FJsonObjectWrapper>            Changes;                                           // 0x0(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FDateTime                             LockExpiration;                                    // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        CommandRevision;                                   // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1ADA[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_9CA[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int64                                        Revision;                                          // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -166,7 +163,7 @@ struct FProfileUpdate : public FProfileUpdateSingle
 {
 public:
 	int32                                        ResponseVersion;                                   // 0x50(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1ADB[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_9CB[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDateTime                             ServerTime;                                        // 0x58(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FProfileUpdateSingle>          MultiUpdate;                                       // 0x60(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
@@ -209,6 +206,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

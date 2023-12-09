@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_KairosHero.BP_KairosHero_C
+// (Actor)
+
+class UClass* ABP_KairosHero_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_KairosHero_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// BP_KairosHero_C BP_KairosHero.Default__BP_KairosHero_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_KairosHero_C* ABP_KairosHero_C::GetDefaultObj()
+{
+	static class ABP_KairosHero_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_KairosHero_C*>(ABP_KairosHero_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

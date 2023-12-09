@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ActivityDetailsView.ActivityDetailsView_C
+// (None)
+
+class UClass* UActivityDetailsView_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ActivityDetailsView_C");
+
+	return Clss;
+}
+
+
+// ActivityDetailsView_C ActivityDetailsView.Default__ActivityDetailsView_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UActivityDetailsView_C* UActivityDetailsView_C::GetDefaultObj()
+{
+	static class UActivityDetailsView_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UActivityDetailsView_C*>(UActivityDetailsView_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ActivityDetailsView.ActivityDetailsView_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UActivityDetailsView_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("ActivityDetailsView_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityDetailsView_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityDetailsView_C", "PreConstruct");
+
+	Params::UActivityDetailsView_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -39,12 +67,14 @@ void UActivityDetailsView_C::PreConstruct(bool IsDesignTime)
 
 void UActivityDetailsView_C::Construct()
 {
-	static auto Func = Class->GetFunction("ActivityDetailsView_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityDetailsView_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityDetailsView_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,9 +87,12 @@ void UActivityDetailsView_C::Construct()
 
 void UActivityDetailsView_C::ExecuteUbergraph_ActivityDetailsView(int32 EntryPoint, bool K2Node_Event_IsDesignTime)
 {
-	static auto Func = Class->GetFunction("ActivityDetailsView_C", "ExecuteUbergraph_ActivityDetailsView");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityDetailsView_C_ExecuteUbergraph_ActivityDetailsView_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityDetailsView_C", "ExecuteUbergraph_ActivityDetailsView");
+
+	Params::UActivityDetailsView_C_ExecuteUbergraph_ActivityDetailsView_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -70,6 +103,4 @@ void UActivityDetailsView_C::ExecuteUbergraph_ActivityDetailsView(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

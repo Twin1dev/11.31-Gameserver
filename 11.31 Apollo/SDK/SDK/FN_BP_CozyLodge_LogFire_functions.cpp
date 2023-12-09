@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_CozyLodge_LogFire.BP_CozyLodge_LogFire_C
+// (Actor)
+
+class UClass* ABP_CozyLodge_LogFire_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_CozyLodge_LogFire_C");
+
+	return Clss;
+}
+
+
+// BP_CozyLodge_LogFire_C BP_CozyLodge_LogFire.Default__BP_CozyLodge_LogFire_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_CozyLodge_LogFire_C* ABP_CozyLodge_LogFire_C::GetDefaultObj()
+{
+	static class ABP_CozyLodge_LogFire_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_CozyLodge_LogFire_C*>(ABP_CozyLodge_LogFire_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_CozyLodge_LogFire.BP_CozyLodge_LogFire_C.SpawnXPFX
@@ -57,9 +82,12 @@ namespace SDK
 
 void ABP_CozyLodge_LogFire_C::SpawnXPFX(const struct FVector& SpawnLocation, int32 XPIndex, const class FString& CallFunc_Conv_IntToString_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_1, const class FString& CallFunc_Conv_IntToString_ReturnValue_1, const class FString& CallFunc_Conv_IntToString_ReturnValue_2, const class FString& CallFunc_Concat_StrStr_ReturnValue_2, const class FString& CallFunc_Concat_StrStr_ReturnValue_3, const class FString& CallFunc_Concat_StrStr_ReturnValue_4, const class FString& CallFunc_Concat_StrStr_ReturnValue_5, const class FString& CallFunc_Conv_IntToString_ReturnValue_3, const class FString& CallFunc_Conv_IntToString_ReturnValue_4, const class FString& CallFunc_Concat_StrStr_ReturnValue_6, const class FString& CallFunc_Concat_StrStr_ReturnValue_7, const class FString& CallFunc_Concat_StrStr_ReturnValue_8, const class FString& CallFunc_Concat_StrStr_ReturnValue_9, const class FString& CallFunc_Conv_IntToString_ReturnValue_5, bool K2Node_SwitchInteger_CmpSuccess, const class FString& CallFunc_Concat_StrStr_ReturnValue_10, const class FString& CallFunc_Conv_VectorToString_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_11, const class FString& CallFunc_Conv_VectorToString_ReturnValue_1, const class FString& CallFunc_Concat_StrStr_ReturnValue_12, const class FString& CallFunc_Conv_VectorToString_ReturnValue_2, const class FString& CallFunc_Concat_StrStr_ReturnValue_13, const class FString& CallFunc_Conv_VectorToString_ReturnValue_3, const class FString& CallFunc_Concat_StrStr_ReturnValue_14, const class FString& CallFunc_Conv_VectorToString_ReturnValue_4, const class FString& CallFunc_Concat_StrStr_ReturnValue_15, class UFXSystemComponent* CallFunc_SpawnFXAtLocation_ReturnValue, class UFXSystemComponent* CallFunc_SpawnFXAtLocation_ReturnValue_1, class UFXSystemComponent* CallFunc_SpawnFXAtLocation_ReturnValue_2, class UFXSystemComponent* CallFunc_SpawnFXAtLocation_ReturnValue_3, class UFXSystemComponent* CallFunc_SpawnFXAtLocation_ReturnValue_4, class UAudioComponent* CallFunc_SpawnSoundAtLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_LogFire_C", "SpawnXPFX");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_LogFire_C_SpawnXPFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_LogFire_C", "SpawnXPFX");
+
+	Params::ABP_CozyLodge_LogFire_C_SpawnXPFX_Params Parms{};
 
 	Parms.SpawnLocation = SpawnLocation;
 	Parms.XPIndex = XPIndex;
@@ -110,9 +138,12 @@ void ABP_CozyLodge_LogFire_C::SpawnXPFX(const struct FVector& SpawnLocation, int
 
 void ABP_CozyLodge_LogFire_C::UserConstructionScript(const class FString& CallFunc_Concat_StrStr_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_LogFire_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_LogFire_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_LogFire_C", "UserConstructionScript");
+
+	Params::ABP_CozyLodge_LogFire_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_Concat_StrStr_ReturnValue = CallFunc_Concat_StrStr_ReturnValue;
 
@@ -127,12 +158,14 @@ void ABP_CozyLodge_LogFire_C::UserConstructionScript(const class FString& CallFu
 
 void ABP_CozyLodge_LogFire_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_LogFire_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_LogFire_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_LogFire_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -143,12 +176,14 @@ void ABP_CozyLodge_LogFire_C::ReceiveBeginPlay()
 
 void ABP_CozyLodge_LogFire_C::StartXPgain()
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_LogFire_C", "StartXPgain");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_LogFire_C_StartXPgain_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_LogFire_C", "StartXPgain");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -159,12 +194,14 @@ void ABP_CozyLodge_LogFire_C::StartXPgain()
 
 void ABP_CozyLodge_LogFire_C::EndXPgain()
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_LogFire_C", "EndXPgain");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_LogFire_C_EndXPgain_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_LogFire_C", "EndXPgain");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -177,9 +214,12 @@ void ABP_CozyLodge_LogFire_C::EndXPgain()
 
 void ABP_CozyLodge_LogFire_C::HandleObjectSpecialInteraction(const struct FGameplayTag& ActionTag, const struct FGameplayTag& CameraTag)
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_LogFire_C", "HandleObjectSpecialInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_LogFire_C_HandleObjectSpecialInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_LogFire_C", "HandleObjectSpecialInteraction");
+
+	Params::ABP_CozyLodge_LogFire_C_HandleObjectSpecialInteraction_Params Parms{};
 
 	Parms.ActionTag = ActionTag;
 	Parms.CameraTag = CameraTag;
@@ -197,9 +237,12 @@ void ABP_CozyLodge_LogFire_C::HandleObjectSpecialInteraction(const struct FGamep
 
 void ABP_CozyLodge_LogFire_C::GrantXP(int32 XPIndex, int32 XpValue)
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_LogFire_C", "GrantXP");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_LogFire_C_GrantXP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_LogFire_C", "GrantXP");
+
+	Params::ABP_CozyLodge_LogFire_C_GrantXP_Params Parms{};
 
 	Parms.XPIndex = XPIndex;
 	Parms.XpValue = XpValue;
@@ -240,7 +283,7 @@ void ABP_CozyLodge_LogFire_C::GrantXP(int32 XPIndex, int32 XpValue)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // bool                               CallFunc_LessEqual_IntInt_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        CallFunc_Conv_StringToName_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -274,9 +317,12 @@ void ABP_CozyLodge_LogFire_C::GrantXP(int32 XPIndex, int32 XpValue)
 
 void ABP_CozyLodge_LogFire_C::ExecuteUbergraph_BP_CozyLodge_LogFire(int32 EntryPoint, int32 CallFunc_RandomIntegerInRange_ReturnValue, bool Temp_bool_True_if_break_was_hit_Variable, const struct FGameplayTag& K2Node_Event_ActionTag, const struct FGameplayTag& K2Node_Event_CameraTag, bool CallFunc_EqualEqual_GameplayTag_ReturnValue, bool CallFunc_EqualEqual_GameplayTag_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class UFortGameStateComponent_EventLevel* CallFunc_GetOwningGameStateComp_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortGameStateComponent_EventLevel* CallFunc_GetOwningGameStateComp_ReturnValue_1, bool CallFunc_CanGainRestedXp_bResult, int32 CallFunc_RandomIntegerInRange_ReturnValue_1, class UFortGameStateComponent_EventLevel* CallFunc_GetOwningGameStateComp_ReturnValue_2, const struct FVector& CallFunc_Array_Get_Item, int32 K2Node_CustomEvent_XPIndex, int32 K2Node_CustomEvent_XPValue, int32 Temp_int_Array_Index_Variable, float CallFunc_Multiply_FloatFloat_ReturnValue, TArray<class FString>& CallFunc_GetDataTableColumnAsString_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, int32 Temp_int_Variable, int32 CallFunc_Array_Length_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, bool CallFunc_LessEqual_IntInt_ReturnValue, class FText CallFunc_Format_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue, const struct FLogFireXPData& CallFunc_GetDataTableRowFromName_OutRow, bool CallFunc_GetDataTableRowFromName_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, float CallFunc_EvaluateCurveTableRow_OutXY, bool CallFunc_EvaluateCurveTableRow_ReturnValue, float CallFunc_EvaluateCurveTableRow_OutXY_1, bool CallFunc_EvaluateCurveTableRow_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue_2, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue_1, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_1, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_2, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_3, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_4, int32 Temp_int_Array_Index_Variable_1, TArray<struct FVector>& K2Node_MakeArray_Array_1, const struct FLogFireXPData& CallFunc_Array_Get_Item_1, bool CallFunc_LessEqual_IntInt_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_LogFire_C", "ExecuteUbergraph_BP_CozyLodge_LogFire");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_LogFire_C_ExecuteUbergraph_BP_CozyLodge_LogFire_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_LogFire_C", "ExecuteUbergraph_BP_CozyLodge_LogFire");
+
+	Params::ABP_CozyLodge_LogFire_C_ExecuteUbergraph_BP_CozyLodge_LogFire_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_RandomIntegerInRange_ReturnValue = CallFunc_RandomIntegerInRange_ReturnValue;
@@ -344,6 +390,4 @@ void ABP_CozyLodge_LogFire_C::ExecuteUbergraph_BP_CozyLodge_LogFire(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

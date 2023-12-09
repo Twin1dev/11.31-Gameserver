@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ControllerActionsMenu.ControllerActionsMenu_C
+// (None)
+
+class UClass* UControllerActionsMenu_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ControllerActionsMenu_C");
+
+	return Clss;
+}
+
+
+// ControllerActionsMenu_C ControllerActionsMenu.Default__ControllerActionsMenu_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UControllerActionsMenu_C* UControllerActionsMenu_C::GetDefaultObj()
+{
+	static class UControllerActionsMenu_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UControllerActionsMenu_C*>(UControllerActionsMenu_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ControllerActionsMenu.ControllerActionsMenu_C.BP_OnActivated
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UControllerActionsMenu_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("ControllerActionsMenu_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UControllerActionsMenu_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ControllerActionsMenu_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UControllerActionsMenu_C::BP_OnActivated()
 
 void UControllerActionsMenu_C::ExecuteUbergraph_ControllerActionsMenu(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("ControllerActionsMenu_C", "ExecuteUbergraph_ControllerActionsMenu");
+	static class UFunction* Func = nullptr;
 
-	Params::UControllerActionsMenu_C_ExecuteUbergraph_ControllerActionsMenu_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ControllerActionsMenu_C", "ExecuteUbergraph_ControllerActionsMenu");
+
+	Params::UControllerActionsMenu_C_ExecuteUbergraph_ControllerActionsMenu_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -50,6 +80,4 @@ void UControllerActionsMenu_C::ExecuteUbergraph_ControllerActionsMenu(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

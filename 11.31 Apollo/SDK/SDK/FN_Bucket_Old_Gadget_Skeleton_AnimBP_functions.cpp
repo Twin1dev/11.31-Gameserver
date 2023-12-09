@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass Bucket_Old_Gadget_Skeleton_AnimBP.Bucket_Old_Gadget_Skeleton_AnimBP_C
+// (None)
+
+class UClass* UBucket_Old_Gadget_Skeleton_AnimBP_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Bucket_Old_Gadget_Skeleton_AnimBP_C");
+
+	return Clss;
+}
+
+
+// Bucket_Old_Gadget_Skeleton_AnimBP_C Bucket_Old_Gadget_Skeleton_AnimBP.Default__Bucket_Old_Gadget_Skeleton_AnimBP_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBucket_Old_Gadget_Skeleton_AnimBP_C* UBucket_Old_Gadget_Skeleton_AnimBP_C::GetDefaultObj()
+{
+	static class UBucket_Old_Gadget_Skeleton_AnimBP_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBucket_Old_Gadget_Skeleton_AnimBP_C*>(UBucket_Old_Gadget_Skeleton_AnimBP_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Bucket_Old_Gadget_Skeleton_AnimBP.Bucket_Old_Gadget_Skeleton_AnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,16 +48,19 @@ namespace SDK
 
 void UBucket_Old_Gadget_Skeleton_AnimBP_C::AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("Bucket_Old_Gadget_Skeleton_AnimBP_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UBucket_Old_Gadget_Skeleton_AnimBP_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Bucket_Old_Gadget_Skeleton_AnimBP_C", "AnimGraph");
+
+	Params::UBucket_Old_Gadget_Skeleton_AnimBP_C_AnimGraph_Params Parms{};
 
 	Parms.InPose = InPose;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -44,9 +72,12 @@ void UBucket_Old_Gadget_Skeleton_AnimBP_C::AnimGraph(const struct FPoseLink& InP
 
 void UBucket_Old_Gadget_Skeleton_AnimBP_C::ExecuteUbergraph_Bucket_Old_Gadget_Skeleton_AnimBP(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("Bucket_Old_Gadget_Skeleton_AnimBP_C", "ExecuteUbergraph_Bucket_Old_Gadget_Skeleton_AnimBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UBucket_Old_Gadget_Skeleton_AnimBP_C_ExecuteUbergraph_Bucket_Old_Gadget_Skeleton_AnimBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Bucket_Old_Gadget_Skeleton_AnimBP_C", "ExecuteUbergraph_Bucket_Old_Gadget_Skeleton_AnimBP");
+
+	Params::UBucket_Old_Gadget_Skeleton_AnimBP_C_ExecuteUbergraph_Bucket_Old_Gadget_Skeleton_AnimBP_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -56,6 +87,4 @@ void UBucket_Old_Gadget_Skeleton_AnimBP_C::ExecuteUbergraph_Bucket_Old_Gadget_Sk
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

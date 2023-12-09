@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ContextTutorialIndicator.ContextTutorialIndicator_C
+// (None)
+
+class UClass* UContextTutorialIndicator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ContextTutorialIndicator_C");
+
+	return Clss;
+}
+
+
+// ContextTutorialIndicator_C ContextTutorialIndicator.Default__ContextTutorialIndicator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UContextTutorialIndicator_C* UContextTutorialIndicator_C::GetDefaultObj()
+{
+	static class UContextTutorialIndicator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UContextTutorialIndicator_C*>(UContextTutorialIndicator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ContextTutorialIndicator.ContextTutorialIndicator_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UContextTutorialIndicator_C::Construct()
 {
-	static auto Func = Class->GetFunction("ContextTutorialIndicator_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UContextTutorialIndicator_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ContextTutorialIndicator_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -39,9 +66,12 @@ void UContextTutorialIndicator_C::Construct()
 
 void UContextTutorialIndicator_C::ExecuteUbergraph_ContextTutorialIndicator(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ContextTutorialIndicator_C", "ExecuteUbergraph_ContextTutorialIndicator");
+	static class UFunction* Func = nullptr;
 
-	Params::UContextTutorialIndicator_C_ExecuteUbergraph_ContextTutorialIndicator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ContextTutorialIndicator_C", "ExecuteUbergraph_ContextTutorialIndicator");
+
+	Params::UContextTutorialIndicator_C_ExecuteUbergraph_ContextTutorialIndicator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -52,6 +82,4 @@ void UContextTutorialIndicator_C::ExecuteUbergraph_ContextTutorialIndicator(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

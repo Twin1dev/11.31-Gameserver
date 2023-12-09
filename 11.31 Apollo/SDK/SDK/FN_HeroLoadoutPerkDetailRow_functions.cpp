@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C
+// (None)
+
+class UClass* UHeroLoadoutPerkDetailRow_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("HeroLoadoutPerkDetailRow_C");
+
+	return Clss;
+}
+
+
+// HeroLoadoutPerkDetailRow_C HeroLoadoutPerkDetailRow.Default__HeroLoadoutPerkDetailRow_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UHeroLoadoutPerkDetailRow_C* UHeroLoadoutPerkDetailRow_C::GetDefaultObj()
+{
+	static class UHeroLoadoutPerkDetailRow_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UHeroLoadoutPerkDetailRow_C*>(UHeroLoadoutPerkDetailRow_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.SetRawAbilityKit
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UHeroLoadoutPerkDetailRow_C::SetRawAbilityKit(class UFortAbilityKit* Ability_Kit)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetRawAbilityKit");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_SetRawAbilityKit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetRawAbilityKit");
+
+	Params::UHeroLoadoutPerkDetailRow_C_SetRawAbilityKit_Params Parms{};
 
 	Parms.Ability_Kit = Ability_Kit;
 
@@ -40,9 +68,12 @@ void UHeroLoadoutPerkDetailRow_C::SetRawAbilityKit(class UFortAbilityKit* Abilit
 
 void UHeroLoadoutPerkDetailRow_C::SetTeamPerk(class UFortTeamPerkItem* Team_Perk)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetTeamPerk");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_SetTeamPerk_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetTeamPerk");
+
+	Params::UHeroLoadoutPerkDetailRow_C_SetTeamPerk_Params Parms{};
 
 	Parms.Team_Perk = Team_Perk;
 
@@ -58,9 +89,12 @@ void UHeroLoadoutPerkDetailRow_C::SetTeamPerk(class UFortTeamPerkItem* Team_Perk
 
 void UHeroLoadoutPerkDetailRow_C::PlayUnHover(class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PlayUnHover");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_PlayUnHover_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PlayUnHover");
+
+	Params::UHeroLoadoutPerkDetailRow_C_PlayUnHover_Params Parms{};
 
 	Parms.CallFunc_PlayAnimationReverse_ReturnValue = CallFunc_PlayAnimationReverse_ReturnValue;
 
@@ -76,9 +110,12 @@ void UHeroLoadoutPerkDetailRow_C::PlayUnHover(class UUMGSequencePlayer* CallFunc
 
 void UHeroLoadoutPerkDetailRow_C::PlayHover(class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PlayHover");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_PlayHover_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PlayHover");
+
+	Params::UHeroLoadoutPerkDetailRow_C_PlayHover_Params Parms{};
 
 	Parms.CallFunc_PlayAnimationForward_ReturnValue = CallFunc_PlayAnimationForward_ReturnValue;
 
@@ -95,9 +132,12 @@ void UHeroLoadoutPerkDetailRow_C::PlayHover(class UUMGSequencePlayer* CallFunc_P
 
 void UHeroLoadoutPerkDetailRow_C::SetShouldDisplayWarning(bool InShouldDisplayWarning, bool CallFunc_NotEqual_BoolBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetShouldDisplayWarning");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_SetShouldDisplayWarning_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetShouldDisplayWarning");
+
+	Params::UHeroLoadoutPerkDetailRow_C_SetShouldDisplayWarning_Params Parms{};
 
 	Parms.InShouldDisplayWarning = InShouldDisplayWarning;
 	Parms.CallFunc_NotEqual_BoolBool_ReturnValue = CallFunc_NotEqual_BoolBool_ReturnValue;
@@ -122,9 +162,12 @@ void UHeroLoadoutPerkDetailRow_C::SetShouldDisplayWarning(bool InShouldDisplayWa
 
 void UHeroLoadoutPerkDetailRow_C::UpdateLockedImage(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsPerkUnlocked_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, const struct FSlateBrush& K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateLockedImage");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_UpdateLockedImage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateLockedImage");
+
+	Params::UHeroLoadoutPerkDetailRow_C_UpdateLockedImage_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -148,9 +191,12 @@ void UHeroLoadoutPerkDetailRow_C::UpdateLockedImage(bool Temp_bool_Variable, enu
 
 void UHeroLoadoutPerkDetailRow_C::PlayUnhoverCue(class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PlayUnhoverCue");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_PlayUnhoverCue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PlayUnhoverCue");
+
+	Params::UHeroLoadoutPerkDetailRow_C_PlayUnhoverCue_Params Parms{};
 
 	Parms.CallFunc_PlayAnimationReverse_ReturnValue = CallFunc_PlayAnimationReverse_ReturnValue;
 
@@ -166,9 +212,12 @@ void UHeroLoadoutPerkDetailRow_C::PlayUnhoverCue(class UUMGSequencePlayer* CallF
 
 void UHeroLoadoutPerkDetailRow_C::PlayHoverCue(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PlayHoverCue");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_PlayHoverCue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PlayHoverCue");
+
+	Params::UHeroLoadoutPerkDetailRow_C_PlayHoverCue_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -185,9 +234,12 @@ void UHeroLoadoutPerkDetailRow_C::PlayHoverCue(class UUMGSequencePlayer* CallFun
 
 void UHeroLoadoutPerkDetailRow_C::SetShouldDisplayAsIgnored(bool InShouldDisplayAsIgnored, bool CallFunc_NotEqual_BoolBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetShouldDisplayAsIgnored");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_SetShouldDisplayAsIgnored_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetShouldDisplayAsIgnored");
+
+	Params::UHeroLoadoutPerkDetailRow_C_SetShouldDisplayAsIgnored_Params Parms{};
 
 	Parms.InShouldDisplayAsIgnored = InShouldDisplayAsIgnored;
 	Parms.CallFunc_NotEqual_BoolBool_ReturnValue = CallFunc_NotEqual_BoolBool_ReturnValue;
@@ -204,9 +256,12 @@ void UHeroLoadoutPerkDetailRow_C::SetShouldDisplayAsIgnored(bool InShouldDisplay
 
 void UHeroLoadoutPerkDetailRow_C::SetPerkTypeToRepresent(enum class EFortHeroLoadoutPerkType Perk_Type)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetPerkTypeToRepresent");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_SetPerkTypeToRepresent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetPerkTypeToRepresent");
+
+	Params::UHeroLoadoutPerkDetailRow_C_SetPerkTypeToRepresent_Params Parms{};
 
 	Parms.Perk_Type = Perk_Type;
 
@@ -227,9 +282,12 @@ void UHeroLoadoutPerkDetailRow_C::SetPerkTypeToRepresent(enum class EFortHeroLoa
 
 bool UHeroLoadoutPerkDetailRow_C::IsPerkUnlocked(bool Temp_bool_Variable, enum class EFortHeroLoadoutPerkType Temp_byte_Variable, bool CallFunc_IsCommanderPerkUnlockedForHero_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "IsPerkUnlocked");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_IsPerkUnlocked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "IsPerkUnlocked");
+
+	Params::UHeroLoadoutPerkDetailRow_C_IsPerkUnlocked_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -264,9 +322,12 @@ bool UHeroLoadoutPerkDetailRow_C::IsPerkUnlocked(bool Temp_bool_Variable, enum c
 
 class UFortAbilityKit* UHeroLoadoutPerkDetailRow_C::GetPerkAbilityKit(class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UFortTeamPerkItemDefinition* K2Node_DynamicCast_AsFort_Team_Perk_Item_Definition, bool K2Node_DynamicCast_bSuccess, class UFortAbilityKit* CallFunc_GetAbilityKitBP_ReturnValue, enum class EFortHeroLoadoutPerkType Temp_byte_Variable, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, class UFortHeroType* K2Node_DynamicCast_AsFort_Hero_Type, bool K2Node_DynamicCast_bSuccess_1, class UFortAbilityKit* CallFunc_GetAbilityKitForHeroPerk_ReturnValue, class UFortAbilityKit* CallFunc_GetAbilityKitForCommanderPerk_ReturnValue, class UFortAbilityKit* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "GetPerkAbilityKit");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_GetPerkAbilityKit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "GetPerkAbilityKit");
+
+	Params::UHeroLoadoutPerkDetailRow_C_GetPerkAbilityKit_Params Parms{};
 
 	Parms.CallFunc_GetItemDefinitionBP_ReturnValue = CallFunc_GetItemDefinitionBP_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -296,9 +357,12 @@ class UFortAbilityKit* UHeroLoadoutPerkDetailRow_C::GetPerkAbilityKit(class UFor
 
 void UHeroLoadoutPerkDetailRow_C::SetHero(class UFortHero* Hero)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHero");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_SetHero_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHero");
+
+	Params::UHeroLoadoutPerkDetailRow_C_SetHero_Params Parms{};
 
 	Parms.Hero = Hero;
 
@@ -336,9 +400,12 @@ void UHeroLoadoutPerkDetailRow_C::SetHero(class UFortHero* Hero)
 
 void UHeroLoadoutPerkDetailRow_C::UpdateTextStyles(float Temp_float_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable, float Temp_float_Variable_2, float Temp_float_Variable_3, bool Temp_bool_Variable_1, float Temp_float_Variable_4, bool Temp_bool_Variable_2, float Temp_float_Variable_5, float Temp_float_Variable_6, bool Temp_bool_Variable_3, bool Temp_bool_Variable_4, bool CallFunc_IsPerkUnlocked_ReturnValue, bool CallFunc_IsPerkUnlocked_ReturnValue_1, float K2Node_Select_Default, float K2Node_Select_Default_1, bool Temp_bool_Variable_5, float K2Node_Select_Default_2, bool CallFunc_IsPerkUnlocked_ReturnValue_2, float K2Node_Select_Default_3, float CallFunc_Multiply_FloatFloat_ReturnValue, class UClass* K2Node_Select_Default_4, class UClass* K2Node_Select_Default_5)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateTextStyles");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_UpdateTextStyles_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateTextStyles");
+
+	Params::UHeroLoadoutPerkDetailRow_C_UpdateTextStyles_Params Parms{};
 
 	Parms.Temp_float_Variable = Temp_float_Variable;
 	Parms.Temp_float_Variable_1 = Temp_float_Variable_1;
@@ -378,37 +445,40 @@ void UHeroLoadoutPerkDetailRow_C::UpdateTextStyles(float Temp_float_Variable, fl
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_HasProgressiveBonus_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortAbilityKit*             CallFunc_GetAbilityKitBP_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
 // class UFortAbilityKit*             CallFunc_GetPerkAbilityKit_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortAbilityKit*             CallFunc_GetPerkAbilityKit_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortAbilityKit*             CallFunc_GetPerkAbilityKit_ReturnValue_2                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_3                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
-// struct FSlateBrush                 CallFunc_NoResourceBrush_ReturnValue                             ()
-// struct FSlateBrush                 CallFunc_ResizeBrush_ResizedBrush                                ()
-// struct FSlateBrush                 CallFunc_ResizeBrush_ResizedBrush_1                              ()
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
+// struct FSlateBrush                 CallFunc_NoResourceBrush_ReturnValue                             (None)
+// struct FSlateBrush                 CallFunc_ResizeBrush_ResizedBrush                                (None)
+// struct FSlateBrush                 CallFunc_ResizeBrush_ResizedBrush_1                              (None)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortTooltipContext*         CallFunc_SpawnTooltipContextWithSource_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue_1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortTooltipContext*         CallFunc_SpawnTooltipContextWithSource_ReturnValue_1             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortTooltipUIContext*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetCombinedDescription_OutDescription                   ()
+// class FText                        CallFunc_GetCombinedDescription_OutDescription                   (None)
 // bool                               CallFunc_GetCombinedDescription_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UObject*                     K2Node_Select_Default                                            (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortTooltipUIContext*       CallFunc_GetContext_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_1                                          ()
-// class FText                        CallFunc_GetCombinedDescription_OutDescription_1                 ()
+// class FText                        K2Node_Select_Default_1                                          (None)
+// class FText                        CallFunc_GetCombinedDescription_OutDescription_1                 (None)
 // bool                               CallFunc_GetCombinedDescription_ReturnValue_1                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UHeroLoadoutPerkDetailRow_C::UpdateFromState(bool CallFunc_IsValid_ReturnValue, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, class UFortTeamPerkItemDefinition* K2Node_DynamicCast_AsFort_Team_Perk_Item_Definition, bool K2Node_DynamicCast_bSuccess, bool CallFunc_HasProgressiveBonus_ReturnValue, class UFortAbilityKit* CallFunc_GetAbilityKitBP_ReturnValue, class FText CallFunc_MakeLiteralText_ReturnValue, class UFortAbilityKit* CallFunc_GetPerkAbilityKit_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UFortAbilityKit* CallFunc_GetPerkAbilityKit_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, class UFortAbilityKit* CallFunc_GetPerkAbilityKit_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, class FText CallFunc_TextToUpper_ReturnValue, const struct FSlateBrush& CallFunc_NoResourceBrush_ReturnValue, const struct FSlateBrush& CallFunc_ResizeBrush_ResizedBrush, const struct FSlateBrush& CallFunc_ResizeBrush_ResizedBrush_1, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UFortTooltipContext* CallFunc_SpawnTooltipContextWithSource_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_1, class UFortTooltipContext* CallFunc_SpawnTooltipContextWithSource_ReturnValue_1, bool Temp_bool_Variable, class UFortTooltipUIContext* CallFunc_GetContext_ReturnValue, class FText CallFunc_GetCombinedDescription_OutDescription, bool CallFunc_GetCombinedDescription_ReturnValue, class UObject* K2Node_Select_Default, bool Temp_bool_Variable_1, class UFortTooltipUIContext* CallFunc_GetContext_ReturnValue_1, class FText K2Node_Select_Default_1, class FText CallFunc_GetCombinedDescription_OutDescription_1, bool CallFunc_GetCombinedDescription_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateFromState");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_UpdateFromState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateFromState");
+
+	Params::UHeroLoadoutPerkDetailRow_C_UpdateFromState_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_GetItemDefinitionBP_ReturnValue = CallFunc_GetItemDefinitionBP_ReturnValue;
@@ -459,9 +529,12 @@ void UHeroLoadoutPerkDetailRow_C::UpdateFromState(bool CallFunc_IsValid_ReturnVa
 
 void UHeroLoadoutPerkDetailRow_C::UpdateFromStyle(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, bool Temp_bool_Variable_1, class UWidget* K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateFromStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_UpdateFromStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateFromStyle");
+
+	Params::UHeroLoadoutPerkDetailRow_C_UpdateFromStyle_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
@@ -482,9 +555,12 @@ void UHeroLoadoutPerkDetailRow_C::UpdateFromStyle(enum class ESlateVisibility Te
 
 void UHeroLoadoutPerkDetailRow_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PreConstruct");
+
+	Params::UHeroLoadoutPerkDetailRow_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -500,9 +576,12 @@ void UHeroLoadoutPerkDetailRow_C::PreConstruct(bool IsDesignTime)
 
 void UHeroLoadoutPerkDetailRow_C::SetHoverAlphaValue(float NewValue)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHoverAlphaValue");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_SetHoverAlphaValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHoverAlphaValue");
+
+	Params::UHeroLoadoutPerkDetailRow_C_SetHoverAlphaValue_Params Parms{};
 
 	Parms.NewValue = NewValue;
 
@@ -518,9 +597,12 @@ void UHeroLoadoutPerkDetailRow_C::SetHoverAlphaValue(float NewValue)
 
 void UHeroLoadoutPerkDetailRow_C::SetHoverHorizontalOffset(float NewValue)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHoverHorizontalOffset");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_SetHoverHorizontalOffset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHoverHorizontalOffset");
+
+	Params::UHeroLoadoutPerkDetailRow_C_SetHoverHorizontalOffset_Params Parms{};
 
 	Parms.NewValue = NewValue;
 
@@ -536,19 +618,22 @@ void UHeroLoadoutPerkDetailRow_C::SetHoverHorizontalOffset(float NewValue)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              K2Node_CustomEvent_NewValue_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetEnumeratorUserFriendlyName_ReturnValue               (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // float                              K2Node_CustomEvent_NewValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 // struct FVector2D                   CallFunc_MakeVector2D_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UHeroLoadoutPerkDetailRow_C::ExecuteUbergraph_HeroLoadoutPerkDetailRow(int32 EntryPoint, bool K2Node_Event_IsDesignTime, float K2Node_CustomEvent_NewValue_1, const class FString& CallFunc_GetEnumeratorUserFriendlyName_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, float K2Node_CustomEvent_NewValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "ExecuteUbergraph_HeroLoadoutPerkDetailRow");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutPerkDetailRow_C_ExecuteUbergraph_HeroLoadoutPerkDetailRow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "ExecuteUbergraph_HeroLoadoutPerkDetailRow");
+
+	Params::UHeroLoadoutPerkDetailRow_C_ExecuteUbergraph_HeroLoadoutPerkDetailRow_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -568,6 +653,4 @@ void UHeroLoadoutPerkDetailRow_C::ExecuteUbergraph_HeroLoadoutPerkDetailRow(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

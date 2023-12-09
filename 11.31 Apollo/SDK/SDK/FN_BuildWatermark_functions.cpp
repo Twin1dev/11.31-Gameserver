@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass BuildWatermark.BuildWatermark_C
+// (None)
+
+class UClass* UBuildWatermark_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BuildWatermark_C");
+
+	return Clss;
+}
+
+
+// BuildWatermark_C BuildWatermark.Default__BuildWatermark_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBuildWatermark_C* UBuildWatermark_C::GetDefaultObj()
+{
+	static class UBuildWatermark_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBuildWatermark_C*>(UBuildWatermark_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BuildWatermark.BuildWatermark_C.UpdateCalenderOffset
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,13 +48,16 @@ namespace SDK
 // class FString                      CallFunc_GetServerOffsetString_OutString                         (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetServerOffsetString_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 
 void UBuildWatermark_C::UpdateCalenderOffset(class UFortMcpContext* CallFunc_GetContext_ReturnValue, enum class ESubGame CallFunc_GetCurrentSubGame_ReturnValue, const class FString& CallFunc_GetServerOffsetString_OutString, bool CallFunc_GetServerOffsetString_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, class FText CallFunc_Conv_StringToText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BuildWatermark_C", "UpdateCalenderOffset");
+	static class UFunction* Func = nullptr;
 
-	Params::UBuildWatermark_C_UpdateCalenderOffset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildWatermark_C", "UpdateCalenderOffset");
+
+	Params::UBuildWatermark_C_UpdateCalenderOffset_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetCurrentSubGame_ReturnValue = CallFunc_GetCurrentSubGame_ReturnValue;
@@ -50,13 +78,16 @@ void UBuildWatermark_C::UpdateCalenderOffset(class UFortMcpContext* CallFunc_Get
 // class FString                      InputText                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // class FString                      DefaultText                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_StriStri_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 
 void UBuildWatermark_C::SetTextCollapseIfDefault(class UTextBlock* Text_Widget, const class FString& InputText, const class FString& DefaultText, bool CallFunc_EqualEqual_StriStri_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BuildWatermark_C", "SetTextCollapseIfDefault");
+	static class UFunction* Func = nullptr;
 
-	Params::UBuildWatermark_C_SetTextCollapseIfDefault_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildWatermark_C", "SetTextCollapseIfDefault");
+
+	Params::UBuildWatermark_C_SetTextCollapseIfDefault_Params Parms{};
 
 	Parms.Text_Widget = Text_Widget;
 	Parms.InputText = InputText;
@@ -79,9 +110,12 @@ void UBuildWatermark_C::SetTextCollapseIfDefault(class UTextBlock* Text_Widget, 
 
 void UBuildWatermark_C::Update_Watermark(class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, const class FString& CallFunc_GetWatermark_ReturnValue, class UFortMcpContext* CallFunc_GetContext_ReturnValue_1, const class FString& CallFunc_GetAppName_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BuildWatermark_C", "Update Watermark");
+	static class UFunction* Func = nullptr;
 
-	Params::UBuildWatermark_C_Update_Watermark_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildWatermark_C", "Update Watermark");
+
+	Params::UBuildWatermark_C_Update_Watermark_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetWatermark_ReturnValue = CallFunc_GetWatermark_ReturnValue;
@@ -99,12 +133,14 @@ void UBuildWatermark_C::Update_Watermark(class UFortGlobalUIContext* CallFunc_Ge
 
 void UBuildWatermark_C::Construct()
 {
-	static auto Func = Class->GetFunction("BuildWatermark_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UBuildWatermark_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildWatermark_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -115,12 +151,14 @@ void UBuildWatermark_C::Construct()
 
 void UBuildWatermark_C::HandlePartyJoined()
 {
-	static auto Func = Class->GetFunction("BuildWatermark_C", "HandlePartyJoined");
+	static class UFunction* Func = nullptr;
 
-	Params::UBuildWatermark_C_HandlePartyJoined_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildWatermark_C", "HandlePartyJoined");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -131,12 +169,14 @@ void UBuildWatermark_C::HandlePartyJoined()
 
 void UBuildWatermark_C::Destruct()
 {
-	static auto Func = Class->GetFunction("BuildWatermark_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UBuildWatermark_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildWatermark_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -148,9 +188,12 @@ void UBuildWatermark_C::Destruct()
 
 void UBuildWatermark_C::HandlePlayerStateChanged(struct FFortTeamMemberInfo& PlayerInfo)
 {
-	static auto Func = Class->GetFunction("BuildWatermark_C", "HandlePlayerStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UBuildWatermark_C_HandlePlayerStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildWatermark_C", "HandlePlayerStateChanged");
+
+	Params::UBuildWatermark_C_HandlePlayerStateChanged_Params Parms{};
 
 	Parms.PlayerInfo = PlayerInfo;
 
@@ -170,9 +213,12 @@ void UBuildWatermark_C::HandlePlayerStateChanged(struct FFortTeamMemberInfo& Pla
 
 void UBuildWatermark_C::ExecuteUbergraph_BuildWatermark(int32 EntryPoint, const struct FFortTeamMemberInfo& K2Node_CustomEvent_PlayerInfo, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UFortPartyContext* CallFunc_GetContext_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BuildWatermark_C", "ExecuteUbergraph_BuildWatermark");
+	static class UFunction* Func = nullptr;
 
-	Params::UBuildWatermark_C_ExecuteUbergraph_BuildWatermark_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BuildWatermark_C", "ExecuteUbergraph_BuildWatermark");
+
+	Params::UBuildWatermark_C_ExecuteUbergraph_BuildWatermark_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_PlayerInfo = K2Node_CustomEvent_PlayerInfo;
@@ -186,6 +232,4 @@ void UBuildWatermark_C::ExecuteUbergraph_BuildWatermark(int32 EntryPoint, const 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

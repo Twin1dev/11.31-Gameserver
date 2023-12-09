@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Sniper3PCamera.Sniper3PCamera_C
+// (None)
+
+class UClass* USniper3PCamera_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Sniper3PCamera_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Sniper3PCamera_C Sniper3PCamera.Default__Sniper3PCamera_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USniper3PCamera_C* USniper3PCamera_C::GetDefaultObj()
+{
+	static class USniper3PCamera_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USniper3PCamera_C*>(USniper3PCamera_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

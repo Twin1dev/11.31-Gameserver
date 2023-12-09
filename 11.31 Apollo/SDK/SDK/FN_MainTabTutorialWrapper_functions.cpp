@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass MainTabTutorialWrapper.MainTabTutorialWrapper_C
+// (None)
+
+class UClass* UMainTabTutorialWrapper_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MainTabTutorialWrapper_C");
+
+	return Clss;
+}
+
+
+// MainTabTutorialWrapper_C MainTabTutorialWrapper.Default__MainTabTutorialWrapper_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMainTabTutorialWrapper_C* UMainTabTutorialWrapper_C::GetDefaultObj()
+{
+	static class UMainTabTutorialWrapper_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMainTabTutorialWrapper_C*>(UMainTabTutorialWrapper_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MainTabTutorialWrapper.MainTabTutorialWrapper_C.TutorialWrapperFinished
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UMainTabTutorialWrapper_C::TutorialWrapperFinished()
 {
-	static auto Func = Class->GetFunction("MainTabTutorialWrapper_C", "TutorialWrapperFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialWrapper_C_TutorialWrapperFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialWrapper_C", "TutorialWrapperFinished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UMainTabTutorialWrapper_C::TutorialWrapperFinished()
 
 void UMainTabTutorialWrapper_C::SetParentButton(class UCommonButton* ParentButton)
 {
-	static auto Func = Class->GetFunction("MainTabTutorialWrapper_C", "SetParentButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialWrapper_C_SetParentButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialWrapper_C", "SetParentButton");
+
+	Params::UMainTabTutorialWrapper_C_SetParentButton_Params Parms{};
 
 	Parms.ParentButton = ParentButton;
 
@@ -54,15 +84,18 @@ void UMainTabTutorialWrapper_C::SetParentButton(class UCommonButton* ParentButto
 // Parameters:
 // struct FFortUITutorialData         TutorialData                                                     (BlueprintVisible, BlueprintReadOnly, Parm)
 // struct FFortToastDisplayInfo       FortToastDisplayInfo                                             (Parm, OutParm)
-// class FText                        CallFunc_Array_Get_Item                                          ()
+// class FText                        CallFunc_Array_Get_Item                                          (None)
 // TSoftObjectPtr<class UTexture2D>   CallFunc_Array_Get_Item_1                                        (HasGetValueTypeHash)
-// struct FFortToastDisplayInfo       K2Node_MakeStruct_FortToastDisplayInfo                           ()
+// struct FFortToastDisplayInfo       K2Node_MakeStruct_FortToastDisplayInfo                           (None)
 
 void UMainTabTutorialWrapper_C::GetTutorialCalloutData(const struct FFortUITutorialData& TutorialData, struct FFortToastDisplayInfo* FortToastDisplayInfo, class FText CallFunc_Array_Get_Item, TSoftObjectPtr<class UTexture2D> CallFunc_Array_Get_Item_1, const struct FFortToastDisplayInfo& K2Node_MakeStruct_FortToastDisplayInfo)
 {
-	static auto Func = Class->GetFunction("MainTabTutorialWrapper_C", "GetTutorialCalloutData");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialWrapper_C_GetTutorialCalloutData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialWrapper_C", "GetTutorialCalloutData");
+
+	Params::UMainTabTutorialWrapper_C_GetTutorialCalloutData_Params Parms{};
 
 	Parms.TutorialData = TutorialData;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
@@ -72,7 +105,7 @@ void UMainTabTutorialWrapper_C::GetTutorialCalloutData(const struct FFortUITutor
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (FortToastDisplayInfo != nullptr)
-		*FortToastDisplayInfo = Parms.FortToastDisplayInfo;
+		*FortToastDisplayInfo = std::move(Parms.FortToastDisplayInfo);
 
 }
 
@@ -90,9 +123,12 @@ void UMainTabTutorialWrapper_C::GetTutorialCalloutData(const struct FFortUITutor
 
 void UMainTabTutorialWrapper_C::HasValidData(struct FFortUITutorialData& FortUITutorialData, bool* Result, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MainTabTutorialWrapper_C", "HasValidData");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialWrapper_C_HasValidData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialWrapper_C", "HasValidData");
+
+	Params::UMainTabTutorialWrapper_C_HasValidData_Params Parms{};
 
 	Parms.FortUITutorialData = FortUITutorialData;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
@@ -119,16 +155,19 @@ void UMainTabTutorialWrapper_C::HasValidData(struct FFortUITutorialData& FortUIT
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_GetSelected_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortUITutorialData         CallFunc_GetTutorialData_OutTutorialData                         ()
+// struct FFortUITutorialData         CallFunc_GetTutorialData_OutTutorialData                         (None)
 // bool                               CallFunc_GetTutorialData_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_HasValidData_Result                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortToastDisplayInfo       CallFunc_GetTutorialCalloutData_FortToastDisplayInfo             ()
+// struct FFortToastDisplayInfo       CallFunc_GetTutorialCalloutData_FortToastDisplayInfo             (None)
 
 void UMainTabTutorialWrapper_C::HandleTutorialCallout(class FName& TutorialObjectiveName, enum class ETutorialType TutorialType, const struct FFortUITutorialData& TutorialData, class UFortTutorialContext* CallFunc_GetContext_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_GetSelected_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FFortUITutorialData& CallFunc_GetTutorialData_OutTutorialData, bool CallFunc_GetTutorialData_ReturnValue, bool CallFunc_HasValidData_Result, const struct FFortToastDisplayInfo& CallFunc_GetTutorialCalloutData_FortToastDisplayInfo)
 {
-	static auto Func = Class->GetFunction("MainTabTutorialWrapper_C", "HandleTutorialCallout");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialWrapper_C_HandleTutorialCallout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialWrapper_C", "HandleTutorialCallout");
+
+	Params::UMainTabTutorialWrapper_C_HandleTutorialCallout_Params Parms{};
 
 	Parms.TutorialObjectiveName = TutorialObjectiveName;
 	Parms.TutorialType = TutorialType;
@@ -155,9 +194,12 @@ void UMainTabTutorialWrapper_C::HandleTutorialCallout(class FName& TutorialObjec
 
 void UMainTabTutorialWrapper_C::CheckFinishTutorialWrapper(class UFortTutorialContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsTutorialCalloutVisible_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MainTabTutorialWrapper_C", "CheckFinishTutorialWrapper");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialWrapper_C_CheckFinishTutorialWrapper_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialWrapper_C", "CheckFinishTutorialWrapper");
+
+	Params::UMainTabTutorialWrapper_C_CheckFinishTutorialWrapper_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_IsTutorialCalloutVisible_ReturnValue = CallFunc_IsTutorialCalloutVisible_ReturnValue;
@@ -173,12 +215,14 @@ void UMainTabTutorialWrapper_C::CheckFinishTutorialWrapper(class UFortTutorialCo
 
 void UMainTabTutorialWrapper_C::OnStopCallout()
 {
-	static auto Func = Class->GetFunction("MainTabTutorialWrapper_C", "OnStopCallout");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialWrapper_C_OnStopCallout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialWrapper_C", "OnStopCallout");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -191,9 +235,12 @@ void UMainTabTutorialWrapper_C::OnStopCallout()
 
 void UMainTabTutorialWrapper_C::OnStartCallout(class FName TutorialObjectiveName, enum class ETutorialType TutorialType)
 {
-	static auto Func = Class->GetFunction("MainTabTutorialWrapper_C", "OnStartCallout");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialWrapper_C_OnStartCallout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialWrapper_C", "OnStartCallout");
+
+	Params::UMainTabTutorialWrapper_C_OnStartCallout_Params Parms{};
 
 	Parms.TutorialObjectiveName = TutorialObjectiveName;
 	Parms.TutorialType = TutorialType;
@@ -209,12 +256,14 @@ void UMainTabTutorialWrapper_C::OnStartCallout(class FName TutorialObjectiveName
 
 void UMainTabTutorialWrapper_C::Construct()
 {
-	static auto Func = Class->GetFunction("MainTabTutorialWrapper_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialWrapper_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialWrapper_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -225,12 +274,14 @@ void UMainTabTutorialWrapper_C::Construct()
 
 void UMainTabTutorialWrapper_C::Destruct()
 {
-	static auto Func = Class->GetFunction("MainTabTutorialWrapper_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialWrapper_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialWrapper_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -241,12 +292,14 @@ void UMainTabTutorialWrapper_C::Destruct()
 
 void UMainTabTutorialWrapper_C::OnFinishedToast()
 {
-	static auto Func = Class->GetFunction("MainTabTutorialWrapper_C", "OnFinishedToast");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialWrapper_C_OnFinishedToast_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialWrapper_C", "OnFinishedToast");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -261,9 +314,12 @@ void UMainTabTutorialWrapper_C::OnFinishedToast()
 
 void UMainTabTutorialWrapper_C::ExecuteUbergraph_MainTabTutorialWrapper(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FName K2Node_Event_TutorialObjectiveName, enum class ETutorialType K2Node_Event_TutorialType)
 {
-	static auto Func = Class->GetFunction("MainTabTutorialWrapper_C", "ExecuteUbergraph_MainTabTutorialWrapper");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainTabTutorialWrapper_C_ExecuteUbergraph_MainTabTutorialWrapper_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainTabTutorialWrapper_C", "ExecuteUbergraph_MainTabTutorialWrapper");
+
+	Params::UMainTabTutorialWrapper_C_ExecuteUbergraph_MainTabTutorialWrapper_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -276,6 +332,4 @@ void UMainTabTutorialWrapper_C::ExecuteUbergraph_MainTabTutorialWrapper(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

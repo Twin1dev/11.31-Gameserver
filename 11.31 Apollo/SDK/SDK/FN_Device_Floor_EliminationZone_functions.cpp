@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass Device_Floor_EliminationZone.Device_Floor_EliminationZone_C
+// (Actor)
+
+class UClass* ADevice_Floor_EliminationZone_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Device_Floor_EliminationZone_C");
+
+	return Clss;
+}
+
+
+// Device_Floor_EliminationZone_C Device_Floor_EliminationZone.Default__Device_Floor_EliminationZone_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ADevice_Floor_EliminationZone_C* ADevice_Floor_EliminationZone_C::GetDefaultObj()
+{
+	static class ADevice_Floor_EliminationZone_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ADevice_Floor_EliminationZone_C*>(ADevice_Floor_EliminationZone_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Device_Floor_EliminationZone.Device_Floor_EliminationZone_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ADevice_Floor_EliminationZone_C::UserConstructionScript(bool CallFunc_IsDedicatedServer_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Device_Floor_EliminationZone_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Floor_EliminationZone_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Floor_EliminationZone_C", "UserConstructionScript");
+
+	Params::ADevice_Floor_EliminationZone_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 
@@ -39,12 +67,14 @@ void ADevice_Floor_EliminationZone_C::UserConstructionScript(bool CallFunc_IsDed
 
 void ADevice_Floor_EliminationZone_C::UpdateMinigameVisuals()
 {
-	static auto Func = Class->GetFunction("Device_Floor_EliminationZone_C", "UpdateMinigameVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Floor_EliminationZone_C_UpdateMinigameVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Floor_EliminationZone_C", "UpdateMinigameVisuals");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void ADevice_Floor_EliminationZone_C::UpdateMinigameVisuals()
 
 void ADevice_Floor_EliminationZone_C::UpdateVolumeSize()
 {
-	static auto Func = Class->GetFunction("Device_Floor_EliminationZone_C", "UpdateVolumeSize");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Floor_EliminationZone_C_UpdateVolumeSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Floor_EliminationZone_C", "UpdateVolumeSize");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -77,9 +109,12 @@ void ADevice_Floor_EliminationZone_C::UpdateVolumeSize()
 
 void ADevice_Floor_EliminationZone_C::BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, struct FHitResult& SweepResult)
 {
-	static auto Func = Class->GetFunction("Device_Floor_EliminationZone_C", "BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Floor_EliminationZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Floor_EliminationZone_C", "BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+
+	Params::ADevice_Floor_EliminationZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature_Params Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -103,9 +138,12 @@ void ADevice_Floor_EliminationZone_C::BndEvt__Trigger_K2Node_ComponentBoundEvent
 
 void ADevice_Floor_EliminationZone_C::BndEvt__Trigger_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static auto Func = Class->GetFunction("Device_Floor_EliminationZone_C", "BndEvt__Trigger_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Floor_EliminationZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Floor_EliminationZone_C", "BndEvt__Trigger_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
+
+	Params::ADevice_Floor_EliminationZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature_Params Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -154,9 +192,12 @@ void ADevice_Floor_EliminationZone_C::BndEvt__Trigger_K2Node_ComponentBoundEvent
 
 void ADevice_Floor_EliminationZone_C::ExecuteUbergraph_Device_Floor_EliminationZone(int32 EntryPoint, bool Temp_bool_Variable, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsPregame_ReturnValue, TArray<struct FParticleSysParam>& CallFunc_VFXParameters_Array, bool CallFunc_EqualEqual_IntInt_ReturnValue, class UParticleSystem* K2Node_Select_Default, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue_1, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_2, float CallFunc_FMax_ReturnValue, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent_1, class AActor* K2Node_ComponentBoundEvent_OtherActor_1, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp_1, int32 K2Node_ComponentBoundEvent_OtherBodyIndex_1, bool K2Node_ComponentBoundEvent_bFromSweep, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult, float CallFunc_FMax_ReturnValue_1, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent, class AActor* K2Node_ComponentBoundEvent_OtherActor, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp, int32 K2Node_ComponentBoundEvent_OtherBodyIndex, float CallFunc_FMax_ReturnValue_2, bool CallFunc_Transmit_if_Valid_Actor_Valid, bool CallFunc_Transmit_if_Valid_Actor_Valid_1)
 {
-	static auto Func = Class->GetFunction("Device_Floor_EliminationZone_C", "ExecuteUbergraph_Device_Floor_EliminationZone");
+	static class UFunction* Func = nullptr;
 
-	Params::ADevice_Floor_EliminationZone_C_ExecuteUbergraph_Device_Floor_EliminationZone_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Device_Floor_EliminationZone_C", "ExecuteUbergraph_Device_Floor_EliminationZone");
+
+	Params::ADevice_Floor_EliminationZone_C_ExecuteUbergraph_Device_Floor_EliminationZone_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -196,6 +237,4 @@ void ADevice_Floor_EliminationZone_C::ExecuteUbergraph_Device_Floor_EliminationZ
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

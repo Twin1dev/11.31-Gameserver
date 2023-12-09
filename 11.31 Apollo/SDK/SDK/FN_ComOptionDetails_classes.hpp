@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -21,11 +18,8 @@ public:
 	class UWidgetAnimation*                      FadeIn;                                            // 0xB78(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                      FadeOut;                                           // 0xB80(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ComOptionDetails_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UComOptionDetails_C* GetDefaultObj();
 
 	void PlayeFadeOut(class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue);
 	void PlayeFadeIn(class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue);
@@ -40,6 +34,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

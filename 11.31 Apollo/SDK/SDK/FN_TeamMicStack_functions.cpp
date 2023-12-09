@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TeamMicStack.TeamMicStack_C
+// (None)
+
+class UClass* UTeamMicStack_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TeamMicStack_C");
+
+	return Clss;
+}
+
+
+// TeamMicStack_C TeamMicStack.Default__TeamMicStack_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTeamMicStack_C* UTeamMicStack_C::GetDefaultObj()
+{
+	static class UTeamMicStack_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTeamMicStack_C*>(UTeamMicStack_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TeamMicStack.TeamMicStack_C.ClearContents
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UTeamMicStack_C::ClearContents()
 {
-	static auto Func = Class->GetFunction("TeamMicStack_C", "ClearContents");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMicStack_C_ClearContents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMicStack_C", "ClearContents");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,15 +65,18 @@ void UTeamMicStack_C::ClearContents()
 // int32                              CurrentIndex                                                     (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FMargin                     K2Node_MakeStruct_Margin                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCinematic_TeamMics_C*       CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCinematicMinusTeamMics_C*   CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Add_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UVerticalBoxSlot*            CallFunc_AddChildToVerticalBox_ReturnValue                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTeamMicStack_C::AppendTeamMember(struct FFortTeamMemberInfo& TeamMemberInfo, int32 CurrentIndex, const struct FMargin& K2Node_MakeStruct_Margin, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UCinematic_TeamMics_C* CallFunc_Create_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue)
+void UTeamMicStack_C::AppendTeamMember(struct FFortTeamMemberInfo& TeamMemberInfo, int32 CurrentIndex, const struct FMargin& K2Node_MakeStruct_Margin, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UCinematicMinusTeamMics_C* CallFunc_Create_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TeamMicStack_C", "AppendTeamMember");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMicStack_C_AppendTeamMember_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMicStack_C", "AppendTeamMember");
+
+	Params::UTeamMicStack_C_AppendTeamMember_Params Parms{};
 
 	Parms.TeamMemberInfo = TeamMemberInfo;
 	Parms.CurrentIndex = CurrentIndex;
@@ -69,14 +99,17 @@ void UTeamMicStack_C::AppendTeamMember(struct FFortTeamMemberInfo& TeamMemberInf
 // class UFortMcpContext*             CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Subtract_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsLocalPlayersUniqueID_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UCinematic_TeamMics_C*       CallFunc_Array_Get_Item                                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCinematicMinusTeamMics_C*   CallFunc_Array_Get_Item                                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UTeamMicStack_C::HandleTeamMemberChanged(const struct FFortTeamMemberInfo& Member_Info, int32 CallFunc_Array_Length_ReturnValue, class UFortMcpContext* CallFunc_GetContext_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_IsLocalPlayersUniqueID_ReturnValue, class UCinematic_TeamMics_C* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue)
+void UTeamMicStack_C::HandleTeamMemberChanged(const struct FFortTeamMemberInfo& Member_Info, int32 CallFunc_Array_Length_ReturnValue, class UFortMcpContext* CallFunc_GetContext_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_IsLocalPlayersUniqueID_ReturnValue, class UCinematicMinusTeamMics_C* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TeamMicStack_C", "HandleTeamMemberChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMicStack_C_HandleTeamMemberChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMicStack_C", "HandleTeamMemberChanged");
+
+	Params::UTeamMicStack_C_HandleTeamMemberChanged_Params Parms{};
 
 	Parms.Member_Info = Member_Info;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
@@ -102,9 +135,12 @@ void UTeamMicStack_C::HandleTeamMemberChanged(const struct FFortTeamMemberInfo& 
 
 void UTeamMicStack_C::HandleTeamMemberRemoved(int32 Member_Index, int32 CallFunc_Subtract_IntInt_ReturnValue, int32 CallFunc_GetChildrenCount_ReturnValue, bool CallFunc_RemoveChildAt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TeamMicStack_C", "HandleTeamMemberRemoved");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMicStack_C_HandleTeamMemberRemoved_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMicStack_C", "HandleTeamMemberRemoved");
+
+	Params::UTeamMicStack_C_HandleTeamMemberRemoved_Params Parms{};
 
 	Parms.Member_Index = Member_Index;
 	Parms.CallFunc_Subtract_IntInt_ReturnValue = CallFunc_Subtract_IntInt_ReturnValue;
@@ -123,12 +159,14 @@ void UTeamMicStack_C::HandleTeamMemberRemoved(int32 Member_Index, int32 CallFunc
 
 void UTeamMicStack_C::Construct()
 {
-	static auto Func = Class->GetFunction("TeamMicStack_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMicStack_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMicStack_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -139,12 +177,14 @@ void UTeamMicStack_C::Construct()
 
 void UTeamMicStack_C::HandlePartyLeft()
 {
-	static auto Func = Class->GetFunction("TeamMicStack_C", "HandlePartyLeft");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMicStack_C_HandlePartyLeft_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMicStack_C", "HandlePartyLeft");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -170,9 +210,12 @@ void UTeamMicStack_C::HandlePartyLeft()
 
 void UTeamMicStack_C::ExecuteUbergraph_TeamMicStack(int32 EntryPoint, int32 Temp_int_Array_Index_Variable, bool CallFunc_Greater_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, int32 Temp_int_Loop_Counter_Variable, class UFortPartyContext* CallFunc_GetContext_ReturnValue, class UFortUITeamInfo* CallFunc_GetLocalPlayerTeam_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, TArray<struct FFortTeamMemberInfo>& CallFunc_GetTeamMembers_TeamMembers, const struct FFortTeamMemberInfo& CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3)
 {
-	static auto Func = Class->GetFunction("TeamMicStack_C", "ExecuteUbergraph_TeamMicStack");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMicStack_C_ExecuteUbergraph_TeamMicStack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMicStack_C", "ExecuteUbergraph_TeamMicStack");
+
+	Params::UTeamMicStack_C_ExecuteUbergraph_TeamMicStack_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -196,6 +239,4 @@ void UTeamMicStack_C::ExecuteUbergraph_TeamMicStack(int32 EntryPoint, int32 Temp
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

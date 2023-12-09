@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -28,16 +25,13 @@ public:
 	class UClass*                                MouseKeyboardStyle;                                // 0xC40(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EHorizontalAlignment              ContentAlignment;                                  // 0xC48(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bMouseKeyboardStyleSet;                            // 0xC49(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4B29[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_E52[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  OverrideButtonText;                                // 0xC50(0x18)(Edit, BlueprintVisible, DisableEditOnInstance)
 	enum class ETextJustify                      ButtonTextJustification;                           // 0xC68(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         bDisplayAllCaps;                                   // 0xC69(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("IconTextButton_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UIconTextButton_C* GetDefaultObj();
 
 	void Get_Dynamic_Material(class UMaterialInstanceDynamic** Ret_Material, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue);
 	void ShowIcon(bool bShouldShow);
@@ -67,6 +61,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

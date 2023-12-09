@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass PlayerPawn_Generic.PlayerPawn_Generic_C
+// (Actor, Pawn)
+
+class UClass* APlayerPawn_Generic_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerPawn_Generic_C");
+
+	return Clss;
+}
+
+
+// PlayerPawn_Generic_C PlayerPawn_Generic.Default__PlayerPawn_Generic_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class APlayerPawn_Generic_C* APlayerPawn_Generic_C::GetDefaultObj()
+{
+	static class APlayerPawn_Generic_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APlayerPawn_Generic_C*>(APlayerPawn_Generic_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PlayerPawn_Generic.PlayerPawn_Generic_C.Melee_Effect_Color
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void APlayerPawn_Generic_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "Melee_Effect_Color");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_Melee_Effect_Color_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "Melee_Effect_Color");
+
+	Params::APlayerPawn_Generic_C_Melee_Effect_Color_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Melee_Color_Set != nullptr)
-		*Melee_Color_Set = Parms.Melee_Color_Set;
+		*Melee_Color_Set = std::move(Parms.Melee_Color_Set);
 
 }
 
@@ -50,9 +78,12 @@ void APlayerPawn_Generic_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 
 float APlayerPawn_Generic_C::GetHealthPercent2(class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_1, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "GetHealthPercent2");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_GetHealthPercent2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "GetHealthPercent2");
+
+	Params::APlayerPawn_Generic_C_GetHealthPercent2_Params Parms{};
 
 	Parms.CallFunc_GetAbilitySystemComponent_ReturnValue = CallFunc_GetAbilitySystemComponent_ReturnValue;
 	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute;
@@ -85,9 +116,12 @@ float APlayerPawn_Generic_C::GetHealthPercent2(class UAbilitySystemComponent* Ca
 
 float APlayerPawn_Generic_C::GetShieldPercent2(class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute_1, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "GetShieldPercent2");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_GetShieldPercent2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "GetShieldPercent2");
+
+	Params::APlayerPawn_Generic_C_GetShieldPercent2_Params Parms{};
 
 	Parms.CallFunc_GetAbilitySystemComponent_ReturnValue = CallFunc_GetAbilitySystemComponent_ReturnValue;
 	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute;
@@ -115,9 +149,12 @@ float APlayerPawn_Generic_C::GetShieldPercent2(class UAbilitySystemComponent* Ca
 
 void APlayerPawn_Generic_C::OnRep_BlockedByPawns(bool Temp_bool_Variable, enum class ECollisionResponse Temp_byte_Variable, enum class ECollisionResponse Temp_byte_Variable_1, enum class ECollisionResponse K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "OnRep_BlockedByPawns");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_OnRep_BlockedByPawns_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnRep_BlockedByPawns");
+
+	Params::APlayerPawn_Generic_C_OnRep_BlockedByPawns_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -159,9 +196,12 @@ void APlayerPawn_Generic_C::OnRep_BlockedByPawns(bool Temp_bool_Variable, enum c
 
 void APlayerPawn_Generic_C::PlayHitSound(class AFortPawn* Instigator, class AActor* Damage_Causer, class AActor* HitSource, class USoundBase* HitSound, bool Temp_bool_Variable, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface, bool K2Node_DynamicCast_bSuccess, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_1, bool K2Node_DynamicCast_bSuccess_1, bool Temp_bool_Variable_1, bool CallFunc_IsValid_ReturnValue, bool Temp_bool_Variable_2, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue, bool Temp_bool_Variable_3, class USoundBase* K2Node_Select_Default, class USoundBase* K2Node_Select_Default_1, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue_1, bool Temp_bool_Variable_4, class USoundBase* K2Node_Select_Default_2, bool CallFunc_IsValid_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess_2)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "PlayHitSound");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_PlayHitSound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "PlayHitSound");
+
+	Params::APlayerPawn_Generic_C_PlayHitSound_Params Parms{};
 
 	Parms.Instigator = Instigator;
 	Parms.Damage_Causer = Damage_Causer;
@@ -214,9 +254,12 @@ void APlayerPawn_Generic_C::PlayHitSound(class AFortPawn* Instigator, class AAct
 
 void APlayerPawn_Generic_C::EnableWaterAudio(bool IsEnteringWater, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable_1, bool Temp_bool_Variable, class USoundBase* Temp_object_Variable_2, class USoundBase* Temp_object_Variable_3, bool Temp_bool_Variable_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, class USoundBase* K2Node_Select_Default, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_1, bool CallFunc_IsLocallyControlled_ReturnValue_1, class USoundBase* K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "EnableWaterAudio");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_EnableWaterAudio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "EnableWaterAudio");
+
+	Params::APlayerPawn_Generic_C_EnableWaterAudio_Params Parms{};
 
 	Parms.IsEnteringWater = IsEnteringWater;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -247,9 +290,12 @@ void APlayerPawn_Generic_C::EnableWaterAudio(bool IsEnteringWater, class USoundB
 
 void APlayerPawn_Generic_C::Set_Body_Type_Sounds(enum class EFortCustomBodyType CallFunc_GetCharacterBodyType_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "Set Body Type Sounds");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_Set_Body_Type_Sounds_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "Set Body Type Sounds");
+
+	Params::APlayerPawn_Generic_C_Set_Body_Type_Sounds_Params Parms{};
 
 	Parms.CallFunc_GetCharacterBodyType_ReturnValue = CallFunc_GetCharacterBodyType_ReturnValue;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
@@ -268,9 +314,12 @@ void APlayerPawn_Generic_C::Set_Body_Type_Sounds(enum class EFortCustomBodyType 
 
 void APlayerPawn_Generic_C::Set_Scalar_Parameter_on_Duplicate_Mesh_MIDs(class FName Parameter_Name, float Parameter_Value, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "Set Scalar Parameter on Duplicate Mesh MIDs");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_Set_Scalar_Parameter_on_Duplicate_Mesh_MIDs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "Set Scalar Parameter on Duplicate Mesh MIDs");
+
+	Params::APlayerPawn_Generic_C_Set_Scalar_Parameter_on_Duplicate_Mesh_MIDs_Params Parms{};
 
 	Parms.Parameter_Name = Parameter_Name;
 	Parms.Parameter_Value = Parameter_Value;
@@ -302,9 +351,12 @@ void APlayerPawn_Generic_C::Set_Scalar_Parameter_on_Duplicate_Mesh_MIDs(class FN
 
 void APlayerPawn_Generic_C::Set_Scalar_Parameter_on_Character_MIDs(class FName Parameter_Name, float Parameter_Value, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_1, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_3, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_5, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_5, bool CallFunc_IsValid_ReturnValue_6)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "Set Scalar Parameter on Character MIDs");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_Set_Scalar_Parameter_on_Character_MIDs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "Set Scalar Parameter on Character MIDs");
+
+	Params::APlayerPawn_Generic_C_Set_Scalar_Parameter_on_Character_MIDs_Params Parms{};
 
 	Parms.Parameter_Name = Parameter_Name;
 	Parms.Parameter_Value = Parameter_Value;
@@ -344,9 +396,12 @@ void APlayerPawn_Generic_C::Set_Scalar_Parameter_on_Character_MIDs(class FName P
 
 void APlayerPawn_Generic_C::Restore_Previous_Materials_on_Weapons_Mesh(class AFortWeapon* Weapon_to_Restore, int32 Temp_int_Array_Index_Variable, class UMaterialInstanceDynamic* CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "Restore Previous Materials on Weapons Mesh");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_Restore_Previous_Materials_on_Weapons_Mesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "Restore Previous Materials on Weapons Mesh");
+
+	Params::APlayerPawn_Generic_C_Restore_Previous_Materials_on_Weapons_Mesh_Params Parms{};
 
 	Parms.Weapon_to_Restore = Weapon_to_Restore;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -447,9 +502,12 @@ void APlayerPawn_Generic_C::Restore_Previous_Materials_on_Weapons_Mesh(class AFo
 
 void APlayerPawn_Generic_C::Restore_Previous_Materials_on_Character_Mesh(int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, bool CallFunc_IsDedicatedServer_ReturnValue, int32 Temp_int_Array_Index_Variable_1, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Array_Index_Variable_2, int32 Temp_int_Array_Index_Variable_3, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, int32 Temp_int_Array_Index_Variable_4, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_4, int32 CallFunc_Array_Length_ReturnValue_2, int32 Temp_int_Loop_Counter_Variable_2, int32 Temp_int_Loop_Counter_Variable_3, int32 CallFunc_Add_IntInt_ReturnValue_2, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_3, int32 Temp_int_Loop_Counter_Variable_4, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_3, bool CallFunc_Less_IntInt_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_5, int32 CallFunc_Add_IntInt_ReturnValue_4, int32 CallFunc_Array_Length_ReturnValue_3, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_4, class UMaterialInstanceDynamic* CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue_2, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item_2, int32 CallFunc_Array_Length_ReturnValue_4, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_2, bool CallFunc_Less_IntInt_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_6, bool CallFunc_IsValid_ReturnValue_7, int32 Temp_int_Loop_Counter_Variable_5, int32 Temp_int_Array_Index_Variable_5, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item_3, class UMaterialInstanceDynamic* CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue_3, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_8, bool CallFunc_Less_IntInt_ReturnValue_3, int32 CallFunc_Add_IntInt_ReturnValue_5, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_5, class UMaterialInstanceDynamic* CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_9, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item_4, int32 CallFunc_Array_Length_ReturnValue_5, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_4, bool CallFunc_Less_IntInt_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_10, int32 Temp_int_Array_Index_Variable_6, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item_5, bool CallFunc_IsValid_ReturnValue_11, class UMaterialInstanceDynamic* CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue_5, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_5, int32 Temp_int_Loop_Counter_Variable_6, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item_6, bool CallFunc_IsValid_ReturnValue_12, bool CallFunc_Less_IntInt_ReturnValue_5, int32 CallFunc_Add_IntInt_ReturnValue_6, int32 CallFunc_Array_Length_ReturnValue_6, bool CallFunc_Less_IntInt_ReturnValue_6, class UMaterialInstanceDynamic* CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue_6, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_6)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "Restore Previous Materials on Character Mesh");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_Restore_Previous_Materials_on_Character_Mesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "Restore Previous Materials on Character Mesh");
+
+	Params::APlayerPawn_Generic_C_Restore_Previous_Materials_on_Character_Mesh_Params Parms{};
 
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
@@ -554,9 +612,12 @@ void APlayerPawn_Generic_C::Restore_Previous_Materials_on_Character_Mesh(int32 T
 
 void APlayerPawn_Generic_C::Override_Materials_and_Copy_Parameters_on_Weapons_Mesh(class UMaterialInterface* Material_to_Apply, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Less_IntInt_ReturnValue, class UMaterialInterface* CallFunc_Array_Get_Item, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_2, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "Override Materials and Copy Parameters on Weapons Mesh");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_Override_Materials_and_Copy_Parameters_on_Weapons_Mesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "Override Materials and Copy Parameters on Weapons Mesh");
+
+	Params::APlayerPawn_Generic_C_Override_Materials_and_Copy_Parameters_on_Weapons_Mesh_Params Parms{};
 
 	Parms.Material_to_Apply = Material_to_Apply;
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
@@ -599,9 +660,12 @@ void APlayerPawn_Generic_C::Override_Materials_and_Copy_Parameters_on_Weapons_Me
 
 void APlayerPawn_Generic_C::TriggerGameplayWindEmitter(enum class EPlayerWindParticleEmitters Player_Wind_Particle_Emitter_To_Fire, int32 Temp_int_Variable, int32 Temp_int_Variable_1, uint8 CallFunc_Conv_IntToByte_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, uint8 CallFunc_GetValidValue_ReturnValue, uint8 CallFunc_Conv_IntToByte_ReturnValue_1, const class FString& CallFunc_GetEnumeratorUserFriendlyName_ReturnValue, uint8 CallFunc_GetEnumeratorValueFromIndex_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue, int32 CallFunc_Conv_ByteToInt_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, int32 CallFunc_MakeLiteralInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "TriggerGameplayWindEmitter");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_TriggerGameplayWindEmitter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "TriggerGameplayWindEmitter");
+
+	Params::APlayerPawn_Generic_C_TriggerGameplayWindEmitter_Params Parms{};
 
 	Parms.Player_Wind_Particle_Emitter_To_Fire = Player_Wind_Particle_Emitter_To_Fire;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -632,9 +696,12 @@ void APlayerPawn_Generic_C::TriggerGameplayWindEmitter(enum class EPlayerWindPar
 
 void APlayerPawn_Generic_C::Are_the_wind_and_water_RTT_passes_enabled(bool* NewParam, float CallFunc_GetScalarParameterValue_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "Are the wind and water RTT passes enabled");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_Are_the_wind_and_water_RTT_passes_enabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "Are the wind and water RTT passes enabled");
+
+	Params::APlayerPawn_Generic_C_Are_the_wind_and_water_RTT_passes_enabled_Params Parms{};
 
 	Parms.CallFunc_GetScalarParameterValue_ReturnValue = CallFunc_GetScalarParameterValue_ReturnValue;
 	Parms.CallFunc_Greater_FloatFloat_ReturnValue = CallFunc_Greater_FloatFloat_ReturnValue;
@@ -653,12 +720,14 @@ void APlayerPawn_Generic_C::Are_the_wind_and_water_RTT_passes_enabled(bool* NewP
 
 void APlayerPawn_Generic_C::DisableWaterLevelTick()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "DisableWaterLevelTick");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_DisableWaterLevelTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "DisableWaterLevelTick");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -666,13 +735,16 @@ void APlayerPawn_Generic_C::DisableWaterLevelTick()
 // Function PlayerPawn_Generic.PlayerPawn_Generic_C.OnRep_On_Player_Built_Floor
 // (HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              (None)
 
 void APlayerPawn_Generic_C::OnRep_On_Player_Built_Floor(const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "OnRep_On_Player_Built_Floor");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_OnRep_On_Player_Built_Floor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnRep_On_Player_Built_Floor");
+
+	Params::APlayerPawn_Generic_C_OnRep_On_Player_Built_Floor_Params Parms{};
 
 	Parms.K2Node_MakeStruct_GameplayEventData = K2Node_MakeStruct_GameplayEventData;
 
@@ -759,9 +831,12 @@ void APlayerPawn_Generic_C::OnRep_On_Player_Built_Floor(const struct FGameplayEv
 
 void APlayerPawn_Generic_C::Setup_FX_Mesh_Duplicates(class UMaterialInterface*& Material_to_Apply, TArray<class UMaterialInstanceDynamic*>& Charm_MID_Array, class USkeletalMeshComponent*& Charm_Mesh, TArray<class UMaterialInstanceDynamic*>& Head_MID_Array, class USkeletalMeshComponent*& Head_Mesh, TArray<class UMaterialInstanceDynamic*>& Body_MID_Array, class USkeletalMeshComponent*& Body_Mesh, int32 Translucent_Sort_Order, bool Transfer_Material_Parameters, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue_2, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, int32 CallFunc_Array_LastIndex_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_5, bool CallFunc_IsValid_ReturnValue_6, int32 CallFunc_Array_LastIndex_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_7, bool CallFunc_IsValid_ReturnValue_8, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, int32 CallFunc_Array_LastIndex_ReturnValue_2, int32 CallFunc_Array_Add_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_2, int32 CallFunc_Array_Add_ReturnValue_1, int32 CallFunc_Array_Add_ReturnValue_2, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_3, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_4, int32 CallFunc_Array_Add_ReturnValue_3, int32 CallFunc_Array_Add_ReturnValue_4, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_5, int32 CallFunc_Array_Add_ReturnValue_5, uint8 CallFunc_MakeLiteralByte_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue_1, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_9, bool CallFunc_IsValid_ReturnValue_10, bool CallFunc_IsValid_ReturnValue_11, int32 Temp_int_Variable, bool CallFunc_IsValid_ReturnValue_12, int32 CallFunc_Add_IntInt_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue_2, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_2, bool Temp_bool_Variable, bool CallFunc_IsValid_ReturnValue_13, bool Temp_bool_Variable_1, bool CallFunc_IsValid_ReturnValue_14, int32 Temp_int_Variable_1, bool Temp_bool_Variable_2, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Variable_2, int32 CallFunc_Array_LastIndex_ReturnValue_3, class UMaterialInterface* CallFunc_Array_Get_Item, int32 CallFunc_Min_ReturnValue, int32 K2Node_Select_Default, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_2, class UMaterialInterface* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_LastIndex_ReturnValue_4, int32 CallFunc_Min_ReturnValue_1, int32 K2Node_Select_Default_1, bool CallFunc_LessEqual_IntInt_ReturnValue_1, class UMaterialInterface* CallFunc_Array_Get_Item_2, int32 CallFunc_Array_LastIndex_ReturnValue_5, int32 CallFunc_Min_ReturnValue_2, int32 K2Node_Select_Default_2, bool CallFunc_LessEqual_IntInt_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "Setup FX Mesh Duplicates");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_Setup_FX_Mesh_Duplicates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "Setup FX Mesh Duplicates");
+
+	Params::APlayerPawn_Generic_C_Setup_FX_Mesh_Duplicates_Params Parms{};
 
 	Parms.Material_to_Apply = Material_to_Apply;
 	Parms.Charm_MID_Array = Charm_MID_Array;
@@ -882,9 +957,12 @@ void APlayerPawn_Generic_C::Setup_FX_Mesh_Duplicates(class UMaterialInterface*& 
 
 void APlayerPawn_Generic_C::Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh(enum class EFortCustomPartType BodyType, class UMaterialInterface* Material_to_Apply, TArray<class UMaterialInstanceDynamic*>& Empty_MID_Array, int32 TranslucentSortPriority, class UPoseableMeshComponent*& PoseableMesh, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_Array_LastIndex_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue, int32 CallFunc_GetNumMaterials_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, int32 Temp_int_Variable, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, class UMaterialInterface* CallFunc_Array_Get_Item_1, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Variable_1, bool Temp_bool_Variable, bool CallFunc_LessEqual_IntInt_ReturnValue_1, class USceneComponent* K2Node_Select_Default, const struct FTransform& CallFunc_GetRelativeTransform_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, const struct FHitResult& CallFunc_K2_SetRelativeTransform_SweepHitResult, const struct FTransform& Temp_struct_Variable, bool Temp_bool_Variable_1, class UPoseableMeshComponent* CallFunc_AddComponent_ReturnValue, class USkinnedMeshComponent* K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "Create and Duplicate Effect Poseable Skeletal Mesh");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "Create and Duplicate Effect Poseable Skeletal Mesh");
+
+	Params::APlayerPawn_Generic_C_Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh_Params Parms{};
 
 	Parms.BodyType = BodyType;
 	Parms.Material_to_Apply = Material_to_Apply;
@@ -944,9 +1022,12 @@ void APlayerPawn_Generic_C::Create_and_Duplicate_Effect_Poseable_Skeletal_Mesh(e
 
 void APlayerPawn_Generic_C::ToggleShieldVisibility(const struct FTransform& Temp_struct_Variable, const struct FTransform& Temp_struct_Variable_1, class USkeletalMeshComponent* CallFunc_AddComponent_ReturnValue, class USkeletalMeshComponent* CallFunc_AddComponent_ReturnValue_1, const struct FTransform& Temp_struct_Variable_2, class USkeletalMeshComponent* CallFunc_AddComponent_ReturnValue_2, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "ToggleShieldVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_ToggleShieldVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "ToggleShieldVisibility");
+
+	Params::APlayerPawn_Generic_C_ToggleShieldVisibility_Params Parms{};
 
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.Temp_struct_Variable_1 = Temp_struct_Variable_1;
@@ -981,9 +1062,12 @@ void APlayerPawn_Generic_C::ToggleShieldVisibility(const struct FTransform& Temp
 
 void APlayerPawn_Generic_C::SlaveAMeshToTheBody(class USkeletalMeshComponent* Mesh, class USkeletalMeshComponent* Master, class USkinnedMeshComponent* MasterToUse, class FName CallFunc_GetAttachSocketName_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue, class USceneComponent* CallFunc_GetAttachParent_ReturnValue, bool CallFunc_K2_AttachToComponent_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FTransform& CallFunc_GetRelativeTransform_ReturnValue, const struct FHitResult& CallFunc_K2_SetRelativeTransform_SweepHitResult)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "SlaveAMeshToTheBody");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_SlaveAMeshToTheBody_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "SlaveAMeshToTheBody");
+
+	Params::APlayerPawn_Generic_C_SlaveAMeshToTheBody_Params Parms{};
 
 	Parms.Mesh = Mesh;
 	Parms.Master = Master;
@@ -1018,9 +1102,12 @@ void APlayerPawn_Generic_C::SlaveAMeshToTheBody(class USkeletalMeshComponent* Me
 
 void APlayerPawn_Generic_C::SetShieldMids_InternalLoop(float Highlight_Cracks, bool Set_Highlight_Cracks, float Push, bool Set_Push, TArray<class UMaterialInstanceDynamic*>& NewParam1, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "SetShieldMids_InternalLoop");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_SetShieldMids_InternalLoop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "SetShieldMids_InternalLoop");
+
+	Params::APlayerPawn_Generic_C_SetShieldMids_InternalLoop_Params Parms{};
 
 	Parms.Highlight_Cracks = Highlight_Cracks;
 	Parms.Set_Highlight_Cracks = Set_Highlight_Cracks;
@@ -1049,9 +1136,12 @@ void APlayerPawn_Generic_C::SetShieldMids_InternalLoop(float Highlight_Cracks, b
 
 void APlayerPawn_Generic_C::SetShieldMids(float Highlight_Cracks, bool Set_Highlight_Cracks, float Push, bool Set_Push)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "SetShieldMids");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_SetShieldMids_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "SetShieldMids");
+
+	Params::APlayerPawn_Generic_C_SetShieldMids_Params Parms{};
 
 	Parms.Highlight_Cracks = Highlight_Cracks;
 	Parms.Set_Highlight_Cracks = Set_Highlight_Cracks;
@@ -1091,9 +1181,12 @@ void APlayerPawn_Generic_C::SetShieldMids(float Highlight_Cracks, bool Set_Highl
 
 void APlayerPawn_Generic_C::FindShieldOpacity(int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Array_Index_Variable_1, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Array_Index_Variable_2, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Loop_Counter_Variable_2, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_2, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item_2, int32 CallFunc_Array_Length_ReturnValue_2, bool CallFunc_Less_IntInt_ReturnValue_2, float CallFunc_FMax_ReturnValue, float CallFunc_FMax_ReturnValue_1, float CallFunc_FMax_ReturnValue_2, float CallFunc_Multiply_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "FindShieldOpacity");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_FindShieldOpacity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "FindShieldOpacity");
+
+	Params::APlayerPawn_Generic_C_FindShieldOpacity_Params Parms{};
 
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
@@ -1165,9 +1258,12 @@ void APlayerPawn_Generic_C::FindShieldOpacity(int32 Temp_int_Loop_Counter_Variab
 
 void APlayerPawn_Generic_C::Create_and_Duplicate_Effect_Skeletal_Meshes_Parent(enum class EFortCustomPartType BodyType, class USkeletalMeshComponent*& DuplicatedSkeletalMeshComponent, class UMaterialInterface* Material_to_Apply, TArray<class UMaterialInstanceDynamic*>& Empty_MID_Array, int32 TranslucentSortPriority, int32 CallFunc_Array_LastIndex_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, bool CallFunc_K2_AttachToComponent_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue, int32 CallFunc_GetNumMaterials_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, int32 Temp_int_Variable, bool Temp_bool_Variable, bool CallFunc_LessEqual_IntInt_ReturnValue, class USceneComponent* K2Node_Select_Default, const struct FTransform& CallFunc_GetRelativeTransform_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, const struct FHitResult& CallFunc_K2_SetRelativeTransform_SweepHitResult, const struct FTransform& Temp_struct_Variable, bool Temp_bool_Variable_1, class USkeletalMeshComponent* CallFunc_AddComponent_ReturnValue, class USkeletalMeshComponent* K2Node_Select_Default_1, int32 Temp_int_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, class UMaterialInterface* CallFunc_Array_Get_Item_1, bool CallFunc_LessEqual_IntInt_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "Create and Duplicate Effect Skeletal Meshes Parent");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "Create and Duplicate Effect Skeletal Meshes Parent");
+
+	Params::APlayerPawn_Generic_C_Create_and_Duplicate_Effect_Skeletal_Meshes_Parent_Params Parms{};
 
 	Parms.BodyType = BodyType;
 	Parms.DuplicatedSkeletalMeshComponent = DuplicatedSkeletalMeshComponent;
@@ -1221,9 +1317,12 @@ void APlayerPawn_Generic_C::Create_and_Duplicate_Effect_Skeletal_Meshes_Parent(e
 
 void APlayerPawn_Generic_C::UserConstructionScript(class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, bool CallFunc_K2_AttachToComponent_ReturnValue, bool CallFunc_Are_the_wind_and_water_RTT_passes_enabled_NewParam, bool CallFunc_K2_AttachToComponent_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "UserConstructionScript");
+
+	Params::APlayerPawn_Generic_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_K2_GetRootComponent_ReturnValue = CallFunc_K2_GetRootComponent_ReturnValue;
 	Parms.CallFunc_K2_AttachToComponent_ReturnValue = CallFunc_K2_AttachToComponent_ReturnValue;
@@ -1241,12 +1340,14 @@ void APlayerPawn_Generic_C::UserConstructionScript(class USceneComponent* CallFu
 
 void APlayerPawn_Generic_C::ShatterShield__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "ShatterShield__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_ShatterShield__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "ShatterShield__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1257,12 +1358,14 @@ void APlayerPawn_Generic_C::ShatterShield__FinishedFunc()
 
 void APlayerPawn_Generic_C::ShatterShield__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "ShatterShield__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_ShatterShield__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "ShatterShield__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1280,9 +1383,12 @@ void APlayerPawn_Generic_C::ShatterShield__UpdateFunc()
 
 void APlayerPawn_Generic_C::OnDamagePlayEffects(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "OnDamagePlayEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_OnDamagePlayEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnDamagePlayEffects");
+
+	Params::APlayerPawn_Generic_C_OnDamagePlayEffects_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -1304,9 +1410,12 @@ void APlayerPawn_Generic_C::OnDamagePlayEffects(float Damage, struct FGameplayTa
 
 void APlayerPawn_Generic_C::OnLanded(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "OnLanded");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_OnLanded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnLanded");
+
+	Params::APlayerPawn_Generic_C_OnLanded_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -1323,9 +1432,12 @@ void APlayerPawn_Generic_C::OnLanded(struct FHitResult& Hit)
 
 void APlayerPawn_Generic_C::OnWeaponEquipped(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "OnWeaponEquipped");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_OnWeaponEquipped_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnWeaponEquipped");
+
+	Params::APlayerPawn_Generic_C_OnWeaponEquipped_Params Parms{};
 
 	Parms.NewWeapon = NewWeapon;
 	Parms.PrevWeapon = PrevWeapon;
@@ -1342,9 +1454,12 @@ void APlayerPawn_Generic_C::OnWeaponEquipped(class AFortWeapon* NewWeapon, class
 
 void APlayerPawn_Generic_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "ReceiveTick");
+
+	Params::APlayerPawn_Generic_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -1359,12 +1474,14 @@ void APlayerPawn_Generic_C::ReceiveTick(float DeltaSeconds)
 
 void APlayerPawn_Generic_C::FootStepLeft()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "FootStepLeft");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_FootStepLeft_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "FootStepLeft");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1375,12 +1492,14 @@ void APlayerPawn_Generic_C::FootStepLeft()
 
 void APlayerPawn_Generic_C::FootStepRight()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "FootStepRight");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_FootStepRight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "FootStepRight");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1391,12 +1510,14 @@ void APlayerPawn_Generic_C::FootStepRight()
 
 void APlayerPawn_Generic_C::OnCharacterPartsReinitialized()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "OnCharacterPartsReinitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_OnCharacterPartsReinitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnCharacterPartsReinitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1409,9 +1530,12 @@ void APlayerPawn_Generic_C::OnCharacterPartsReinitialized()
 
 void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
+
+	Params::APlayerPawn_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -1429,9 +1553,12 @@ void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff
 
 void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier2");
+
+	Params::APlayerPawn_Generic_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier2_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -1448,9 +1575,12 @@ void APlayerPawn_Generic_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff
 
 void APlayerPawn_Generic_C::SetFirstPersonCamera(bool bNewUseFirstPersonCamera)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "SetFirstPersonCamera");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_SetFirstPersonCamera_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "SetFirstPersonCamera");
+
+	Params::APlayerPawn_Generic_C_SetFirstPersonCamera_Params Parms{};
 
 	Parms.bNewUseFirstPersonCamera = bNewUseFirstPersonCamera;
 
@@ -1466,9 +1596,12 @@ void APlayerPawn_Generic_C::SetFirstPersonCamera(bool bNewUseFirstPersonCamera)
 
 void APlayerPawn_Generic_C::InternalSetFirstPersonCamera(bool NewUseFirstPersonCamera)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "InternalSetFirstPersonCamera");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_InternalSetFirstPersonCamera_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "InternalSetFirstPersonCamera");
+
+	Params::APlayerPawn_Generic_C_InternalSetFirstPersonCamera_Params Parms{};
 
 	Parms.NewUseFirstPersonCamera = NewUseFirstPersonCamera;
 
@@ -1484,9 +1617,12 @@ void APlayerPawn_Generic_C::InternalSetFirstPersonCamera(bool NewUseFirstPersonC
 
 void APlayerPawn_Generic_C::OnBaseChanged(class AActor* NewBase)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "OnBaseChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_OnBaseChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnBaseChanged");
+
+	Params::APlayerPawn_Generic_C_OnBaseChanged_Params Parms{};
 
 	Parms.NewBase = NewBase;
 
@@ -1502,9 +1638,12 @@ void APlayerPawn_Generic_C::OnBaseChanged(class AActor* NewBase)
 
 void APlayerPawn_Generic_C::ReceivePossessed(class AController* NewController)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "ReceivePossessed");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_ReceivePossessed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "ReceivePossessed");
+
+	Params::APlayerPawn_Generic_C_ReceivePossessed_Params Parms{};
 
 	Parms.NewController = NewController;
 
@@ -1520,9 +1659,12 @@ void APlayerPawn_Generic_C::ReceivePossessed(class AController* NewController)
 
 void APlayerPawn_Generic_C::OnDisplaySentence(class FText& SpeechText)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "OnDisplaySentence");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_OnDisplaySentence_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnDisplaySentence");
+
+	Params::APlayerPawn_Generic_C_OnDisplaySentence_Params Parms{};
 
 	Parms.SpeechText = SpeechText;
 
@@ -1537,12 +1679,14 @@ void APlayerPawn_Generic_C::OnDisplaySentence(class FText& SpeechText)
 
 void APlayerPawn_Generic_C::OnClearSentence()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "OnClearSentence");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_OnClearSentence_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnClearSentence");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1555,9 +1699,12 @@ void APlayerPawn_Generic_C::OnClearSentence()
 
 void APlayerPawn_Generic_C::ClientBindWeaponSwap(class AFortWeapon* NewWeapon, class AFortWeapon* PrevWeapon)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "ClientBindWeaponSwap");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_ClientBindWeaponSwap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "ClientBindWeaponSwap");
+
+	Params::APlayerPawn_Generic_C_ClientBindWeaponSwap_Params Parms{};
 
 	Parms.NewWeapon = NewWeapon;
 	Parms.PrevWeapon = PrevWeapon;
@@ -1574,9 +1721,12 @@ void APlayerPawn_Generic_C::ClientBindWeaponSwap(class AFortWeapon* NewWeapon, c
 
 void APlayerPawn_Generic_C::BindWeaponSwap(float InDuration)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "BindWeaponSwap");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_BindWeaponSwap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "BindWeaponSwap");
+
+	Params::APlayerPawn_Generic_C_BindWeaponSwap_Params Parms{};
 
 	Parms.InDuration = InDuration;
 
@@ -1593,9 +1743,12 @@ void APlayerPawn_Generic_C::BindWeaponSwap(float InDuration)
 
 void APlayerPawn_Generic_C::MultiSwapWeapon(class AFortWeapon* New, class AFortWeapon* Prev)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "MultiSwapWeapon");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_MultiSwapWeapon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "MultiSwapWeapon");
+
+	Params::APlayerPawn_Generic_C_MultiSwapWeapon_Params Parms{};
 
 	Parms.New = New;
 	Parms.Prev = Prev;
@@ -1611,12 +1764,14 @@ void APlayerPawn_Generic_C::MultiSwapWeapon(class AFortWeapon* New, class AFortW
 
 void APlayerPawn_Generic_C::UnBindWeaponSwap()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "UnBindWeaponSwap");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_UnBindWeaponSwap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "UnBindWeaponSwap");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1628,9 +1783,12 @@ void APlayerPawn_Generic_C::UnBindWeaponSwap()
 
 void APlayerPawn_Generic_C::MultiEndSwap(class AFortWeapon* CurrentWeapon)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "MultiEndSwap");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_MultiEndSwap_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "MultiEndSwap");
+
+	Params::APlayerPawn_Generic_C_MultiEndSwap_Params Parms{};
 
 	Parms.CurrentWeapon = CurrentWeapon;
 
@@ -1652,9 +1810,12 @@ void APlayerPawn_Generic_C::MultiEndSwap(class AFortWeapon* CurrentWeapon)
 
 void APlayerPawn_Generic_C::OnDeathServer(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "OnDeathServer");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_OnDeathServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnDeathServer");
+
+	Params::APlayerPawn_Generic_C_OnDeathServer_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -1676,9 +1837,12 @@ void APlayerPawn_Generic_C::OnDeathServer(float Damage, struct FGameplayTagConta
 
 void APlayerPawn_Generic_C::PlayGameplayWindEffect(enum class EPlayerWindParticleEmitters Player_Wind_Particle_Emitter_To_Fire)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "PlayGameplayWindEffect");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_PlayGameplayWindEffect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "PlayGameplayWindEffect");
+
+	Params::APlayerPawn_Generic_C_PlayGameplayWindEffect_Params Parms{};
 
 	Parms.Player_Wind_Particle_Emitter_To_Fire = Player_Wind_Particle_Emitter_To_Fire;
 
@@ -1693,12 +1857,14 @@ void APlayerPawn_Generic_C::PlayGameplayWindEffect(enum class EPlayerWindParticl
 
 void APlayerPawn_Generic_C::Entered_Water_Volume()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "Entered Water Volume");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_Entered_Water_Volume_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "Entered Water Volume");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1710,9 +1876,12 @@ void APlayerPawn_Generic_C::Entered_Water_Volume()
 
 void APlayerPawn_Generic_C::Player_Creates_a_Splash(struct FTransform& NewTransform)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "Player Creates a Splash");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_Player_Creates_a_Splash_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "Player Creates a Splash");
+
+	Params::APlayerPawn_Generic_C_Player_Creates_a_Splash_Params Parms{};
 
 	Parms.NewTransform = NewTransform;
 
@@ -1727,12 +1896,14 @@ void APlayerPawn_Generic_C::Player_Creates_a_Splash(struct FTransform& NewTransf
 
 void APlayerPawn_Generic_C::ReinitializeWeaponMaterials()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "ReinitializeWeaponMaterials");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_ReinitializeWeaponMaterials_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "ReinitializeWeaponMaterials");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1750,9 +1921,12 @@ void APlayerPawn_Generic_C::ReinitializeWeaponMaterials()
 
 void APlayerPawn_Generic_C::OnDeathPlayEffects(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "OnDeathPlayEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_OnDeathPlayEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnDeathPlayEffects");
+
+	Params::APlayerPawn_Generic_C_OnDeathPlayEffects_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -1775,9 +1949,12 @@ void APlayerPawn_Generic_C::OnDeathPlayEffects(float Damage, struct FGameplayTag
 
 void APlayerPawn_Generic_C::GameplayCue_Shield_FullyCharged(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Shield.FullyCharged");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_GameplayCue_Shield_FullyCharged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Shield.FullyCharged");
+
+	Params::APlayerPawn_Generic_C_GameplayCue_Shield_FullyCharged_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -1795,9 +1972,12 @@ void APlayerPawn_Generic_C::GameplayCue_Shield_FullyCharged(enum class EGameplay
 
 void APlayerPawn_Generic_C::GameplayCue_Damage_Shielded(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Damage.Shielded");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_GameplayCue_Damage_Shielded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Damage.Shielded");
+
+	Params::APlayerPawn_Generic_C_GameplayCue_Damage_Shielded_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -1815,9 +1995,12 @@ void APlayerPawn_Generic_C::GameplayCue_Damage_Shielded(enum class EGameplayCueE
 
 void APlayerPawn_Generic_C::GameplayCue_Shield_Destroyed(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Shield.Destroyed");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_GameplayCue_Shield_Destroyed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Shield.Destroyed");
+
+	Params::APlayerPawn_Generic_C_GameplayCue_Shield_Destroyed_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -1835,9 +2018,12 @@ void APlayerPawn_Generic_C::GameplayCue_Shield_Destroyed(enum class EGameplayCue
 
 void APlayerPawn_Generic_C::GameplayCue_Damage(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Damage");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_GameplayCue_Damage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "GameplayCue.Damage");
+
+	Params::APlayerPawn_Generic_C_GameplayCue_Damage_Params Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = Parameters;
@@ -1853,12 +2039,14 @@ void APlayerPawn_Generic_C::GameplayCue_Damage(enum class EGameplayCueEvent Even
 
 void APlayerPawn_Generic_C::OnEnteredVehicle()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "OnEnteredVehicle");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_OnEnteredVehicle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnEnteredVehicle");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1869,12 +2057,14 @@ void APlayerPawn_Generic_C::OnEnteredVehicle()
 
 void APlayerPawn_Generic_C::OnExitedVehicle()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "OnExitedVehicle");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_OnExitedVehicle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnExitedVehicle");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1886,9 +2076,12 @@ void APlayerPawn_Generic_C::OnExitedVehicle()
 
 void APlayerPawn_Generic_C::MeleeSwingLeft(bool First_Left)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "MeleeSwingLeft");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_MeleeSwingLeft_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "MeleeSwingLeft");
+
+	Params::APlayerPawn_Generic_C_MeleeSwingLeft_Params Parms{};
 
 	Parms.First_Left = First_Left;
 
@@ -1904,9 +2097,12 @@ void APlayerPawn_Generic_C::MeleeSwingLeft(bool First_Left)
 
 void APlayerPawn_Generic_C::MeleeSwingRight(bool First_Right)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "MeleeSwingRight");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_MeleeSwingRight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "MeleeSwingRight");
+
+	Params::APlayerPawn_Generic_C_MeleeSwingRight_Params Parms{};
 
 	Parms.First_Right = First_Right;
 
@@ -1921,12 +2117,14 @@ void APlayerPawn_Generic_C::MeleeSwingRight(bool First_Right)
 
 void APlayerPawn_Generic_C::MeleeSwingLeft_End()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "MeleeSwingLeft_End");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_MeleeSwingLeft_End_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "MeleeSwingLeft_End");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1937,12 +2135,14 @@ void APlayerPawn_Generic_C::MeleeSwingLeft_End()
 
 void APlayerPawn_Generic_C::MeleeSwingRight_End()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "MeleeSwingRight_End");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_MeleeSwingRight_End_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "MeleeSwingRight_End");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1953,12 +2153,14 @@ void APlayerPawn_Generic_C::MeleeSwingRight_End()
 
 void APlayerPawn_Generic_C::OnEnteredWaterVolume()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "OnEnteredWaterVolume");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_OnEnteredWaterVolume_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnEnteredWaterVolume");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1969,12 +2171,14 @@ void APlayerPawn_Generic_C::OnEnteredWaterVolume()
 
 void APlayerPawn_Generic_C::OnExitedWaterVolume()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "OnExitedWaterVolume");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_OnExitedWaterVolume_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnExitedWaterVolume");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1986,9 +2190,12 @@ void APlayerPawn_Generic_C::OnExitedWaterVolume()
 
 void APlayerPawn_Generic_C::SetBlockedByPawns(bool bLocked)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "SetBlockedByPawns");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_SetBlockedByPawns_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "SetBlockedByPawns");
+
+	Params::APlayerPawn_Generic_C_SetBlockedByPawns_Params Parms{};
 
 	Parms.bLocked = bLocked;
 
@@ -2003,12 +2210,14 @@ void APlayerPawn_Generic_C::SetBlockedByPawns(bool bLocked)
 
 void APlayerPawn_Generic_C::OnLand_CE()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "OnLand_CE");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_OnLand_CE_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "OnLand_CE");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -2019,12 +2228,14 @@ void APlayerPawn_Generic_C::OnLand_CE()
 
 void APlayerPawn_Generic_C::AnimTrailsDisable()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "AnimTrailsDisable");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_AnimTrailsDisable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "AnimTrailsDisable");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -2043,9 +2254,12 @@ void APlayerPawn_Generic_C::AnimTrailsDisable()
 
 void APlayerPawn_Generic_C::AnimTrailsSetup(class UParticleSystem* ParticleSystemReference, class UNiagaraSystem* NiagaraSystemReference, class FName FirstSocketName, class FName SecondSocketName, float Width, class UFXSystemComponent* OverrideParticleComp, class FName OverideFirstSocketName, class FName OverideSecondSocketName)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "AnimTrailsSetup");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_AnimTrailsSetup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "AnimTrailsSetup");
+
+	Params::APlayerPawn_Generic_C_AnimTrailsSetup_Params Parms{};
 
 	Parms.ParticleSystemReference = ParticleSystemReference;
 	Parms.NiagaraSystemReference = NiagaraSystemReference;
@@ -2068,9 +2282,12 @@ void APlayerPawn_Generic_C::AnimTrailsSetup(class UParticleSystem* ParticleSyste
 
 void APlayerPawn_Generic_C::AnimTrailsNotify(bool bActive)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "AnimTrailsNotify");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_AnimTrailsNotify_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "AnimTrailsNotify");
+
+	Params::APlayerPawn_Generic_C_AnimTrailsNotify_Params Parms{};
 
 	Parms.bActive = bActive;
 
@@ -2257,7 +2474,7 @@ void APlayerPawn_Generic_C::AnimTrailsNotify(bool bActive)
 // struct FHitResult                  K2Node_Event_HitInfo_2                                           (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AFortPawn*                   K2Node_Event_InstigatedBy_2                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser_2                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext_2                                     ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext_2                                     (None)
 // struct FHitResult                  K2Node_Event_Hit                                                 (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_19                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -2385,7 +2602,7 @@ void APlayerPawn_Generic_C::AnimTrailsNotify(bool bActive)
 // struct FHitResult                  K2Node_Event_HitInfo_1                                           (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AController*                 K2Node_Event_InstigatedBy_1                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser_1                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext_1                                     ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext_1                                     (None)
 // class AController*                 CallFunc_GetController_ReturnValue_1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ObjectObject_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AFortPlayerController*       K2Node_DynamicCast_AsFort_Player_Controller_1                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2429,7 +2646,7 @@ void APlayerPawn_Generic_C::AnimTrailsNotify(bool bActive)
 // struct FHitResult                  K2Node_Event_HitInfo                                             (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AFortPawn*                   K2Node_Event_InstigatedBy                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       (None)
 // bool                               CallFunc_IsDBNO_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsSkydiving_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UAnimMontage*                K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2736,9 +2953,12 @@ void APlayerPawn_Generic_C::AnimTrailsNotify(bool bActive)
 
 void APlayerPawn_Generic_C::ExecuteUbergraph_PlayerPawn_Generic(int32 EntryPoint, int32 Temp_int_Variable, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, int32 CallFunc_GetNumMaterials_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Variable_1, float CallFunc_MakeLiteralFloat_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, TArray<class UMaterialInstanceDynamic*>& K2Node_MakeArray_Array, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_1, bool Temp_bool_IsClosed_Variable, bool Temp_bool_Has_Been_Initd_Variable, bool Temp_bool_IsClosed_Variable_1, bool Temp_bool_Has_Been_Initd_Variable_1, bool CallFunc_IsDedicatedServer_ReturnValue_2, bool CallFunc_IsDedicatedServer_ReturnValue_3, bool Temp_bool_IsClosed_Variable_2, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue_2, int32 Temp_int_Array_Index_Variable, bool Temp_bool_IsClosed_Variable_3, bool CallFunc_HasAuthority_ReturnValue, class UCanvas* CallFunc_BeginDrawCanvasToRenderTarget_Canvas, const struct FVector2D& CallFunc_BeginDrawCanvasToRenderTarget_Size, const struct FDrawToRenderTargetContext& CallFunc_BeginDrawCanvasToRenderTarget_Context, float CallFunc_GetWorldDeltaSeconds_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, const struct FVector& CallFunc_GetVelocity_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable_2, const struct FVector& CallFunc_GetVelocity_ReturnValue_1, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, bool CallFunc_Greater_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue_1, bool CallFunc_Less_FloatFloat_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable_3, int32 Temp_int_Variable_2, int32 CallFunc_Add_IntInt_ReturnValue_3, class AFortWindManager* CallFunc_GetWindManager_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_4, int32 Temp_int_Array_Index_Variable_1, const struct FVector& CallFunc_GetVelocity_ReturnValue_2, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, bool CallFunc_Greater_FloatFloat_ReturnValue_2, const struct FVector& CallFunc_MakeVector_ReturnValue_1, bool CallFunc_Greater_FloatFloat_ReturnValue_3, bool Temp_bool_IsClosed_Variable_4, bool CallFunc_Less_FloatFloat_ReturnValue_1, int32 Temp_int_Variable_3, int32 CallFunc_Add_IntInt_ReturnValue_4, bool Temp_bool_Variable, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_5, bool Temp_bool_Variable_1, bool Temp_bool_Has_Been_Initd_Variable_4, bool Temp_bool_IsClosed_Variable_5, bool Temp_bool_Has_Been_Initd_Variable_5, bool Temp_bool_IsClosed_Variable_6, int32 Temp_int_Array_Index_Variable_2, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, bool CallFunc_IsDedicatedServer_ReturnValue_5, bool Temp_bool_Variable_2, int32 Temp_int_Loop_Counter_Variable_2, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_6, bool Temp_bool_Variable_3, bool Temp_bool_Variable_4, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, int32 CallFunc_GetNumMaterials_ReturnValue_1, int32 CallFunc_Subtract_IntInt_ReturnValue_1, int32 Temp_int_Variable_4, float CallFunc_MakeLiteralFloat_ReturnValue_1, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_7, TArray<class UMaterialInterface*>& K2Node_MakeArray_Array_1, int32 Temp_int_Variable_5, int32 CallFunc_Array_Add_ReturnValue, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_1, bool CallFunc_LessEqual_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_8, int32 Temp_int_Variable_6, bool CallFunc_IsValid_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_5, int32 CallFunc_GetNumMaterials_ReturnValue_2, int32 CallFunc_Subtract_IntInt_ReturnValue_2, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_2, bool CallFunc_LessEqual_IntInt_ReturnValue_2, int32 CallFunc_Add_IntInt_ReturnValue_9, float CallFunc_MakeLiteralFloat_ReturnValue_2, TArray<class UMaterialInterface*>& K2Node_MakeArray_Array_2, int32 CallFunc_Array_Add_ReturnValue_1, bool Temp_bool_IsClosed_Variable_7, bool CallFunc_IsValid_ReturnValue_6, bool CallFunc_IsValid_ReturnValue_7, int32 CallFunc_GetNumMaterials_ReturnValue_3, int32 CallFunc_Subtract_IntInt_ReturnValue_3, float CallFunc_MakeLiteralFloat_ReturnValue_3, TArray<class UMaterialInstanceDynamic*>& K2Node_MakeArray_Array_3, int32 Temp_int_Variable_7, bool CallFunc_IsValid_ReturnValue_8, bool CallFunc_IsValid_ReturnValue_9, int32 CallFunc_GetNumMaterials_ReturnValue_4, int32 CallFunc_Subtract_IntInt_ReturnValue_4, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_3, bool CallFunc_LessEqual_IntInt_ReturnValue_3, int32 CallFunc_Add_IntInt_ReturnValue_10, float CallFunc_GetScalarParameterValue_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue_4, int32 Temp_int_Variable_8, int32 CallFunc_Add_IntInt_ReturnValue_11, bool CallFunc_HasAuthority_ReturnValue_1, float CallFunc_MakeLiteralFloat_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_10, TArray<class UMaterialInterface*>& K2Node_MakeArray_Array_4, int32 CallFunc_Array_Add_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_11, bool CallFunc_IsValid_ReturnValue_12, bool CallFunc_IsValid_ReturnValue_13, int32 CallFunc_GetNumMaterials_ReturnValue_5, int32 CallFunc_Subtract_IntInt_ReturnValue_5, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_4, bool CallFunc_LessEqual_IntInt_ReturnValue_4, bool CallFunc_HasAuthority_ReturnValue_2, int32 Temp_int_Variable_9, float CallFunc_MakeLiteralFloat_ReturnValue_5, int32 CallFunc_Add_IntInt_ReturnValue_12, TArray<class UMaterialInterface*>& K2Node_MakeArray_Array_5, int32 CallFunc_Array_Add_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_14, bool CallFunc_IsValid_ReturnValue_15, int32 CallFunc_GetNumMaterials_ReturnValue_6, int32 CallFunc_Subtract_IntInt_ReturnValue_6, bool Temp_bool_Has_Been_Initd_Variable_6, bool CallFunc_IsValid_ReturnValue_16, class FName Temp_name_Variable, class FName Temp_name_Variable_1, float CallFunc_MakeLiteralFloat_ReturnValue_6, TArray<class UMaterialInterface*>& K2Node_MakeArray_Array_6, class FName Temp_name_Variable_2, bool CallFunc_IsValid_ReturnValue_17, bool CallFunc_IsValid_ReturnValue_18, int32 CallFunc_GetNumMaterials_ReturnValue_7, int32 CallFunc_Subtract_IntInt_ReturnValue_7, class FName Temp_name_Variable_3, int32 Temp_int_Variable_10, float CallFunc_MakeLiteralFloat_ReturnValue_7, TArray<class UMaterialInterface*>& K2Node_MakeArray_Array_7, int32 Temp_int_Array_Index_Variable_3, bool Temp_bool_Variable_5, bool Temp_bool_Variable_6, bool Temp_bool_Variable_7, bool Temp_bool_Variable_8, bool CallFunc_IsDedicatedServer_ReturnValue_6, bool CallFunc_IsMovingOnGround_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, TArray<class AActor*>& Temp_object_Variable, bool CallFunc_IsDedicatedServer_ReturnValue_7, bool CallFunc_IsDedicatedServer_ReturnValue_8, float K2Node_Event_Damage_2, const struct FGameplayTagContainer& K2Node_Event_DamageTags_2, const struct FVector& K2Node_Event_Momentum_2, const struct FHitResult& K2Node_Event_HitInfo_2, class AFortPawn* K2Node_Event_InstigatedBy_2, class AActor* K2Node_Event_DamageCauser_2, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext_2, const struct FHitResult& K2Node_Event_Hit, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_IsValid_ReturnValue_19, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, float CallFunc_VSizeSquared_ReturnValue, const struct FRotator& CallFunc_MakeRotFromX_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue_5, class AFortWeapon* K2Node_Event_NewWeapon, class AFortWeapon* K2Node_Event_PrevWeapon, float CallFunc_RandomFloatInRange_ReturnValue, float K2Node_Event_DeltaSeconds, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FVector& CallFunc_GetVelocity_ReturnValue_3, float CallFunc_BreakVector_X_2, float CallFunc_BreakVector_Y_2, float CallFunc_BreakVector_Z_2, const struct FVector& CallFunc_MakeVector_ReturnValue_2, float CallFunc_VSize_ReturnValue, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType_5, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters_5, bool K2Node_SwitchEnum_CmpSuccess, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType_4, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters_4, bool K2Node_SwitchEnum_CmpSuccess_1, bool K2Node_Event_bNewUseFirstPersonCamera, class AB_Ranged_Generic_C* K2Node_DynamicCast_AsB_Ranged_Generic, bool K2Node_DynamicCast_bSuccess, int32 Temp_int_Variable_11, class AFortWeap_BuildingToolBase* K2Node_DynamicCast_AsFort_Weap_Building_Tool_Base, bool K2Node_DynamicCast_bSuccess_1, class AFortWeap_BuildingToolBase* K2Node_DynamicCast_AsFort_Weap_Building_Tool_Base_1, bool K2Node_DynamicCast_bSuccess_2, class UStaticMeshComponent* CallFunc_GetPencilMeshComponent_ReturnValue, class UStaticMeshComponent* CallFunc_GetPencilMeshComponent_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_20, bool CallFunc_IsValid_ReturnValue_21, int32 CallFunc_Add_IntInt_ReturnValue_13, class AController* CallFunc_GetController_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_IsPlayerControlled_ReturnValue, bool CallFunc_IsUsingFirstPersonCamera_ReturnValue, float CallFunc_GetScalarParameterValue_ReturnValue_1, bool K2Node_CustomEvent_NewUseFirstPersonCamera, int32 CallFunc_Round_ReturnValue, bool CallFunc_IsWeaponHolstered_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, class AActor* K2Node_Event_NewBase, class ABuildingSMActor* K2Node_DynamicCast_AsBuilding_SMActor, bool K2Node_DynamicCast_bSuccess_4, bool CallFunc_IsValid_ReturnValue_22, bool CallFunc_IsPlayerBuilt_ReturnValue, class AController* K2Node_Event_NewController, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, class FText K2Node_Event_SpeechText, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, class AFortPlayerController* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, class AFortPlayerPawn* CallFunc_GetPlayerPawn_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_1, float CallFunc_VSize_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, const struct FTransform& CallFunc_GetTransform_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, bool Temp_bool_True_if_break_was_hit_Variable, const struct FRotator& CallFunc_ComposeRotators_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_2, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue, bool CallFunc_IsValid_ReturnValue_23, const struct FVector& CallFunc_BreakTransform_Location_1, const struct FRotator& CallFunc_BreakTransform_Rotation_1, const struct FVector& CallFunc_BreakTransform_Scale_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, bool CallFunc_IsValid_ReturnValue_24, class UAnimMontage* Temp_object_Variable_1, class AFortWeapon* K2Node_CustomEvent_NewWeapon, class AFortWeapon* K2Node_CustomEvent_PrevWeapon, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_1, float K2Node_CustomEvent_InDuration, class AFortWeapon* K2Node_CustomEvent_New, class AFortWeapon* K2Node_CustomEvent_Prev, bool CallFunc_IsValid_ReturnValue_25, bool CallFunc_IsValid_ReturnValue_26, class AFortWeapon* K2Node_CustomEvent_CurrentWeapon, int32 Temp_int_Variable_12, bool CallFunc_IsValid_ReturnValue_27, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_5, bool CallFunc_LessEqual_IntInt_ReturnValue_5, int32 CallFunc_Add_IntInt_ReturnValue_14, bool Temp_bool_Variable_9, int32 Temp_int_Loop_Counter_Variable_3, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_15, bool CallFunc_BooleanAND_ReturnValue, class UAnimMontage* Temp_object_Variable_2, class UUserWidget* CallFunc_Create_ReturnValue, TScriptInterface<class IFortInitializeFromObjectInterface> K2Node_DynamicCast_AsFort_Initialize_from_Object_Interface, bool K2Node_DynamicCast_bSuccess_5, float K2Node_Event_Damage_1, const struct FGameplayTagContainer& K2Node_Event_DamageTags_1, const struct FVector& K2Node_Event_Momentum_1, const struct FHitResult& K2Node_Event_HitInfo_1, class AController* K2Node_Event_InstigatedBy_1, class AActor* K2Node_Event_DamageCauser_1, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext_1, class AController* CallFunc_GetController_ReturnValue_1, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller_1, bool K2Node_DynamicCast_bSuccess_6, class UAnimMontage* Temp_object_Variable_3, class AFortWindManager* CallFunc_GetWindManager_ReturnValue_1, class AWindManager_C* K2Node_DynamicCast_AsWind_Manager, bool K2Node_DynamicCast_bSuccess_7, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UTextureRenderTarget2D* CallFunc_CreateRenderTarget2D_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item_2, int32 CallFunc_Array_Length_ReturnValue_2, bool CallFunc_Less_IntInt_ReturnValue_2, bool Temp_bool_IsClosed_Variable_8, bool CallFunc_IsValid_ReturnValue_28, bool Temp_bool_Variable_10, bool CallFunc_IsValid_ReturnValue_29, enum class EPlayerWindParticleEmitters K2Node_CustomEvent_Player_Wind_Particle_Emitter_To_Fire, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_2, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_3, int32 Temp_int_Variable_13, int32 CallFunc_Add_IntInt_ReturnValue_16, bool Temp_bool_Has_Been_Initd_Variable_7, bool CallFunc_BooleanOR_ReturnValue, const struct FTransform& K2Node_Event_NewTransform, const struct FHitResult& CallFunc_K2_SetWorldTransform_SweepHitResult, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FVector& CallFunc_BreakTransform_Location_2, const struct FRotator& CallFunc_BreakTransform_Rotation_2, const struct FVector& CallFunc_BreakTransform_Scale_2, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, float CallFunc_BreakVector_X_3, float CallFunc_BreakVector_Y_3, float CallFunc_BreakVector_Z_3, int32 CallFunc_Array_Add_ReturnValue_4, float K2Node_Event_Damage, const struct FGameplayTagContainer& K2Node_Event_DamageTags, const struct FVector& K2Node_Event_Momentum, const struct FHitResult& K2Node_Event_HitInfo, class AFortPawn* K2Node_Event_InstigatedBy, class AActor* K2Node_Event_DamageCauser, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext, bool CallFunc_IsDBNO_ReturnValue, bool CallFunc_IsSkydiving_ReturnValue, class UAnimMontage* K2Node_Select_Default, bool CallFunc_ShouldPlayDeathAnimation_ReturnValue, class UAnimMontage* K2Node_Select_Default_1, float CallFunc_PlayLocalAnimMontage_ReturnValue, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType_3, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters_3, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType_2, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters_2, bool K2Node_SwitchEnum_CmpSuccess_2, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue_1, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType_1, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters_1, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue_1, bool K2Node_SwitchEnum_CmpSuccess_3, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters, bool K2Node_Event_First_Left, bool CallFunc_IsValid_ReturnValue_30, bool K2Node_Event_First_Right, bool CallFunc_IsValid_ReturnValue_31, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_2, class AGameStateBase* CallFunc_GetGameState_ReturnValue, class AFortGameState* K2Node_DynamicCast_AsFort_Game_State, bool K2Node_DynamicCast_bSuccess_8, bool CallFunc_DBNOEnabledForGameMode_ReturnValue, bool CallFunc_IsValid_ReturnValue_32, uint8 CallFunc_MakeLiteralByte_ReturnValue, class USkeletalMeshComponent* CallFunc_Array_Get_Item_3, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_33, bool CallFunc_Less_IntInt_ReturnValue_3, int32 CallFunc_Array_Add_ReturnValue_5, int32 CallFunc_GetNumMaterials_ReturnValue_8, int32 CallFunc_Subtract_IntInt_ReturnValue_8, bool CallFunc_IsValid_ReturnValue_34, const struct FTransform& CallFunc_GetTransform_ReturnValue_1, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class ADuplicateResOutMesh_C* CallFunc_FinishSpawningActor_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue_1, bool K2Node_CustomEvent_Blocked, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_35, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_4, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_6, int32 CallFunc_Array_Add_ReturnValue_6, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic, bool K2Node_DynamicCast_bSuccess_9, int32 CallFunc_GetNumMaterials_ReturnValue_9, int32 CallFunc_Subtract_IntInt_ReturnValue_9, bool CallFunc_LessEqual_IntInt_ReturnValue_6, bool CallFunc_IsValid_ReturnValue_36, bool CallFunc_Not_PreBool_ReturnValue_3, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult_1, bool CallFunc_IsDedicatedServer_ReturnValue_9, uint8 CallFunc_MakeLiteralByte_ReturnValue_2, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_37, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_5, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_7, int32 CallFunc_Array_Add_ReturnValue_7, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic_1, bool K2Node_DynamicCast_bSuccess_10, int32 CallFunc_GetNumMaterials_ReturnValue_10, int32 CallFunc_Subtract_IntInt_ReturnValue_10, bool CallFunc_LessEqual_IntInt_ReturnValue_7, bool CallFunc_IsValid_ReturnValue_38, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult_2, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult_3, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult_4, const struct FVector& CallFunc_GetVelocity_ReturnValue_4, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, float CallFunc_BreakVector_X_4, float CallFunc_BreakVector_Y_4, float CallFunc_BreakVector_Z_4, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue_3, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult_5, const struct FRotator& CallFunc_MakeRotFromX_ReturnValue_1, uint8 CallFunc_MakeLiteralByte_ReturnValue_3, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue_2, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_3, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_39, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_1, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_2, const struct FHitResult& CallFunc_LineTraceSingle_OutHit, bool CallFunc_LineTraceSingle_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_6, bool CallFunc_BreakHitResult_bBlockingHit_1, bool CallFunc_BreakHitResult_bInitialOverlap_1, float CallFunc_BreakHitResult_Time_1, float CallFunc_BreakHitResult_Distance_1, const struct FVector& CallFunc_BreakHitResult_Location_1, const struct FVector& CallFunc_BreakHitResult_ImpactPoint_1, const struct FVector& CallFunc_BreakHitResult_Normal_1, const struct FVector& CallFunc_BreakHitResult_ImpactNormal_1, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat_1, class AActor* CallFunc_BreakHitResult_HitActor_1, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent_1, class FName CallFunc_BreakHitResult_HitBoneName_1, int32 CallFunc_BreakHitResult_HitItem_1, int32 CallFunc_BreakHitResult_FaceIndex_1, const struct FVector& CallFunc_BreakHitResult_TraceStart_1, const struct FVector& CallFunc_BreakHitResult_TraceEnd_1, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_8, const struct FHitResult& CallFunc_K2_SetWorldLocation_SweepHitResult, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic_2, bool K2Node_DynamicCast_bSuccess_11, int32 CallFunc_Array_Add_ReturnValue_8, int32 CallFunc_GetNumMaterials_ReturnValue_11, int32 CallFunc_Subtract_IntInt_ReturnValue_11, bool CallFunc_IsValid_ReturnValue_40, bool CallFunc_LessEqual_IntInt_ReturnValue_8, const struct FVector& CallFunc_GetVelocity_ReturnValue_5, const struct FVector& CallFunc_Cross_VectorVector_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue_1, bool CallFunc_EqualEqual_VectorVector_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_10, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue_2, uint8 CallFunc_MakeLiteralByte_ReturnValue_4, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_41, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_7, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_9, int32 CallFunc_Array_Add_ReturnValue_9, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic_3, bool K2Node_DynamicCast_bSuccess_12, int32 CallFunc_Array_Add_ReturnValue_10, int32 CallFunc_Array_Add_ReturnValue_11, int32 CallFunc_GetNumMaterials_ReturnValue_12, int32 CallFunc_Subtract_IntInt_ReturnValue_12, bool CallFunc_IsValid_ReturnValue_42, bool CallFunc_LessEqual_IntInt_ReturnValue_9, uint8 CallFunc_MakeLiteralByte_ReturnValue_5, float CallFunc_GetScalarParameterValue_ReturnValue_2, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_5, int32 CallFunc_Round_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_43, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_8, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_10, int32 CallFunc_Array_Add_ReturnValue_12, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic_4, bool K2Node_DynamicCast_bSuccess_13, int32 CallFunc_GetNumMaterials_ReturnValue_13, int32 CallFunc_Subtract_IntInt_ReturnValue_13, bool CallFunc_LessEqual_IntInt_ReturnValue_10, bool CallFunc_IsValid_ReturnValue_44, bool CallFunc_IsValid_ReturnValue_45, bool CallFunc_IsValid_ReturnValue_46, bool CallFunc_IsLocallyControlled_ReturnValue, float CallFunc_GetScalarParameterValue_ReturnValue_3, int32 CallFunc_Round_ReturnValue_2, uint8 CallFunc_MakeLiteralByte_ReturnValue_6, int32 K2Node_Select_Default_2, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_6, bool CallFunc_IsValid_ReturnValue_47, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_9, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_11, int32 CallFunc_Array_Add_ReturnValue_13, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic_5, bool K2Node_DynamicCast_bSuccess_14, int32 CallFunc_GetNumMaterials_ReturnValue_14, int32 CallFunc_Subtract_IntInt_ReturnValue_14, bool CallFunc_LessEqual_IntInt_ReturnValue_11, bool CallFunc_IsValid_ReturnValue_48, uint8 CallFunc_MakeLiteralByte_ReturnValue_7, int32 CallFunc_Array_Add_ReturnValue_14, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_7, int32 CallFunc_Array_Add_ReturnValue_15, bool CallFunc_IsValid_ReturnValue_49, int32 CallFunc_Array_Add_ReturnValue_16, int32 CallFunc_Array_Add_ReturnValue_17, int32 CallFunc_Array_Add_ReturnValue_18, int32 CallFunc_Array_Add_ReturnValue_19, int32 CallFunc_Array_Add_ReturnValue_20, int32 CallFunc_Array_Add_ReturnValue_21, int32 CallFunc_Array_Add_ReturnValue_22, int32 CallFunc_Array_Add_ReturnValue_23, int32 CallFunc_Array_Add_ReturnValue_24, uint8 CallFunc_MakeLiteralByte_ReturnValue_8, bool CallFunc_IsValid_ReturnValue_50, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_8, bool CallFunc_IsValid_ReturnValue_51, bool CallFunc_IsValid_ReturnValue_52, uint8 CallFunc_MakeLiteralByte_ReturnValue_9, bool Temp_bool_Variable_11, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_9, bool CallFunc_IsValid_ReturnValue_53, float CallFunc_GetHealthPercent2_ReturnValue, float CallFunc_GetShieldPercent2_ReturnValue, int32 Temp_int_Variable_14, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_12, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput, bool CallFunc_HasMatchingGameplayTag_ReturnValue, int32 CallFunc_Array_Add_ReturnValue_25, bool CallFunc_Not_PreBool_ReturnValue_4, bool CallFunc_LessEqual_IntInt_ReturnValue_12, int32 CallFunc_Add_IntInt_ReturnValue_17, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_3, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput_1, bool CallFunc_HasMatchingGameplayTag_ReturnValue_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_2, bool CallFunc_Not_PreBool_ReturnValue_5, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue_2, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_1, const struct FHitResult& CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult, const struct FHitResult& CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult_1, bool Temp_bool_IsClosed_Variable_9, uint8 CallFunc_MakeLiteralByte_ReturnValue_10, float CallFunc_GetGameTimeInSeconds_ReturnValue, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_10, bool CallFunc_IsValid_ReturnValue_54, uint8 CallFunc_MakeLiteralByte_ReturnValue_11, uint8 CallFunc_MakeLiteralByte_ReturnValue_12, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_11, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_12, bool CallFunc_IsValid_ReturnValue_55, bool CallFunc_IsValid_ReturnValue_56, bool Temp_bool_Has_Been_Initd_Variable_8, class UClass* K2Node_Select_Default_3, class AEmitterCameraLensEffectBase* CallFunc_SpawnCameraLensEffect_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_6, class AB_PlayerShieldDamage_CameraLensEffect_C* K2Node_DynamicCast_AsB_Player_Shield_Damage_Camera_Lens_Effect, bool K2Node_DynamicCast_bSuccess_15, class AB_PlayerHealthDamage_CameraLensEffect_C* K2Node_DynamicCast_AsB_Player_Health_Damage_Camera_Lens_Effect, bool K2Node_DynamicCast_bSuccess_16, bool CallFunc_HasAnyTags_ReturnValue, int32 CallFunc_RandomInteger_ReturnValue, class FName K2Node_Select_Default_4, class UClass* K2Node_Select_Default_5, float CallFunc_PlayLocalAnimMontage_ReturnValue_1, class AFortEmitterCameraLensEffectDirectional* CallFunc_SpawnCameraLensEffectDirectional_ReturnValue, class AController* CallFunc_GetController_ReturnValue_2, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller_2, bool K2Node_DynamicCast_bSuccess_17, bool CallFunc_Not_PreBool_ReturnValue_7, bool CallFunc_IsLocalPlayerController_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue_1, bool CallFunc_Less_FloatFloat_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue_1, uint8 CallFunc_MakeLiteralByte_ReturnValue_13, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_13, bool CallFunc_IsValid_ReturnValue_57, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_10, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_13, int32 CallFunc_Array_Add_ReturnValue_26, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic_6, bool K2Node_DynamicCast_bSuccess_18, int32 CallFunc_Array_Add_ReturnValue_27, int32 CallFunc_Array_Add_ReturnValue_28, int32 CallFunc_GetNumMaterials_ReturnValue_15, int32 CallFunc_Subtract_IntInt_ReturnValue_15, bool CallFunc_IsValid_ReturnValue_58, bool CallFunc_LessEqual_IntInt_ReturnValue_13, bool CallFunc_IsValid_ReturnValue_59, int32 Temp_int_Variable_15, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_11, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_14, int32 CallFunc_Array_Add_ReturnValue_29, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic_7, bool K2Node_DynamicCast_bSuccess_19, int32 CallFunc_Array_Add_ReturnValue_30, bool CallFunc_LessEqual_IntInt_ReturnValue_14, int32 CallFunc_Add_IntInt_ReturnValue_18, bool Temp_bool_Variable_12, bool Temp_bool_Has_Been_Initd_Variable_9, bool CallFunc_IsValid_ReturnValue_60, class UParticleSystem* K2Node_Event_ParticleSystemReference, class UNiagaraSystem* K2Node_Event_NiagaraSystemReference, class FName K2Node_Event_FirstSocketName, class FName K2Node_Event_SecondSocketName, float K2Node_Event_Width, class UFXSystemComponent* K2Node_Event_OverrideParticleComp, class FName K2Node_Event_OverideFirstSocketName, class FName K2Node_Event_OverideSecondSocketName, bool CallFunc_IsValid_ReturnValue_61, class UFXSystemAsset* CallFunc_GetFXSystemAsset_ReturnValue, bool CallFunc_IsValid_ReturnValue_62, class UFXSystemComponent* CallFunc_SetAssetOrSpawnAltFXAttached_ReturnValue, bool K2Node_Event_bActive, bool CallFunc_IsValid_ReturnValue_63, bool CallFunc_IsValid_ReturnValue_64, int32 Temp_int_Variable_16, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_15, int32 CallFunc_Array_Add_ReturnValue_31, bool CallFunc_LessEqual_IntInt_ReturnValue_15, int32 CallFunc_Add_IntInt_ReturnValue_19, uint8 CallFunc_MakeLiteralByte_ReturnValue_14, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_14, bool CallFunc_IsValid_ReturnValue_65, float CallFunc_Add_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "ExecuteUbergraph_PlayerPawn_Generic");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_ExecuteUbergraph_PlayerPawn_Generic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "ExecuteUbergraph_PlayerPawn_Generic");
+
+	Params::APlayerPawn_Generic_C_ExecuteUbergraph_PlayerPawn_Generic_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -3403,12 +3623,14 @@ void APlayerPawn_Generic_C::ExecuteUbergraph_PlayerPawn_Generic(int32 EntryPoint
 
 void APlayerPawn_Generic_C::SwingLeft2__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "SwingLeft2__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_SwingLeft2__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "SwingLeft2__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -3419,12 +3641,14 @@ void APlayerPawn_Generic_C::SwingLeft2__DelegateSignature()
 
 void APlayerPawn_Generic_C::SwingRight2__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "SwingRight2__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_SwingRight2__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "SwingRight2__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -3435,12 +3659,14 @@ void APlayerPawn_Generic_C::SwingRight2__DelegateSignature()
 
 void APlayerPawn_Generic_C::AnimNotify_End__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "AnimNotify_End__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_AnimNotify_End__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "AnimNotify_End__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -3452,9 +3678,12 @@ void APlayerPawn_Generic_C::AnimNotify_End__DelegateSignature()
 
 void APlayerPawn_Generic_C::AnimNotify_Begin__DelegateSignature(bool bActive)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "AnimNotify_Begin__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_AnimNotify_Begin__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "AnimNotify_Begin__DelegateSignature");
+
+	Params::APlayerPawn_Generic_C_AnimNotify_Begin__DelegateSignature_Params Parms{};
 
 	Parms.bActive = bActive;
 
@@ -3469,12 +3698,14 @@ void APlayerPawn_Generic_C::AnimNotify_Begin__DelegateSignature(bool bActive)
 
 void APlayerPawn_Generic_C::SwingLeftEnd__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "SwingLeftEnd__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_SwingLeftEnd__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "SwingLeftEnd__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -3485,12 +3716,14 @@ void APlayerPawn_Generic_C::SwingLeftEnd__DelegateSignature()
 
 void APlayerPawn_Generic_C::SwingLeft__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "SwingLeft__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_SwingLeft__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "SwingLeft__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -3501,12 +3734,14 @@ void APlayerPawn_Generic_C::SwingLeft__DelegateSignature()
 
 void APlayerPawn_Generic_C::SwingRightEnd__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "SwingRightEnd__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_SwingRightEnd__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "SwingRightEnd__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -3517,17 +3752,17 @@ void APlayerPawn_Generic_C::SwingRightEnd__DelegateSignature()
 
 void APlayerPawn_Generic_C::SwingRight__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Generic_C", "SwingRight__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::APlayerPawn_Generic_C_SwingRight__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerPawn_Generic_C", "SwingRight__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass DecoTool.DecoTool_C
+// (Actor)
+
+class UClass* ADecoTool_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("DecoTool_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// DecoTool_C DecoTool.Default__DecoTool_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ADecoTool_C* ADecoTool_C::GetDefaultObj()
+{
+	static class ADecoTool_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ADecoTool_C*>(ADecoTool_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

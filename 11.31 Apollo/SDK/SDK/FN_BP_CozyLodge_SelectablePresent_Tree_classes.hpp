@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,11 +16,8 @@ class ABP_CozyLodge_SelectablePresent_Tree_C : public ABP_CozyLodge_SelectablePr
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x548(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BP_CozyLodge_SelectablePresent_Tree_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ABP_CozyLodge_SelectablePresent_Tree_C* GetDefaultObj();
 
 	void UserConstructionScript();
 	void HandleObjectSpecialInteraction(const struct FGameplayTag& ActionTag, const struct FGameplayTag& CameraTag);
@@ -32,6 +26,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass WinterQuestUnlockedScreen.WinterQuestUnlockedScreen_C
+// (None)
+
+class UClass* UWinterQuestUnlockedScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WinterQuestUnlockedScreen_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// WinterQuestUnlockedScreen_C WinterQuestUnlockedScreen.Default__WinterQuestUnlockedScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UWinterQuestUnlockedScreen_C* UWinterQuestUnlockedScreen_C::GetDefaultObj()
+{
+	static class UWinterQuestUnlockedScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWinterQuestUnlockedScreen_C*>(UWinterQuestUnlockedScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

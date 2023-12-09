@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCL_BoostJumpPack_Hovering.GCL_BoostJumpPack_Hovering_C
+// (Actor)
+
+class UClass* AGCL_BoostJumpPack_Hovering_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCL_BoostJumpPack_Hovering_C");
+
+	return Clss;
+}
+
+
+// GCL_BoostJumpPack_Hovering_C GCL_BoostJumpPack_Hovering.Default__GCL_BoostJumpPack_Hovering_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCL_BoostJumpPack_Hovering_C* AGCL_BoostJumpPack_Hovering_C::GetDefaultObj()
+{
+	static class AGCL_BoostJumpPack_Hovering_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCL_BoostJumpPack_Hovering_C*>(AGCL_BoostJumpPack_Hovering_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCL_BoostJumpPack_Hovering.GCL_BoostJumpPack_Hovering_C.SetJetpackAudioEnabled
@@ -49,9 +74,12 @@ namespace SDK
 
 void AGCL_BoostJumpPack_Hovering_C::SetJetpackAudioEnabled(bool Enabled, bool CallFunc_IsValid_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue_1, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue_2, bool CallFunc_IsLocallyControlled_ReturnValue, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue_3, bool Temp_bool_Variable, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class USoundBase* K2Node_Select_Default, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue_1, float CallFunc_RandomFloatInRange_ReturnValue_2, bool Temp_bool_Variable_1, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue_1, class USoundBase* K2Node_Select_Default_1, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue_2, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue_3, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue_4)
 {
-	static auto Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "SetJetpackAudioEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "SetJetpackAudioEnabled");
+
+	Params::AGCL_BoostJumpPack_Hovering_C_SetJetpackAudioEnabled_Params Parms{};
 
 	Parms.Enabled = Enabled;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -99,9 +127,12 @@ void AGCL_BoostJumpPack_Hovering_C::SetJetpackAudioEnabled(bool Enabled, bool Ca
 
 bool AGCL_BoostJumpPack_Hovering_C::OnRemove(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, bool CallFunc_OnRemove_ReturnValue, bool CallFunc_IsValid_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "OnRemove");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_BoostJumpPack_Hovering_C_OnRemove_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "OnRemove");
+
+	Params::AGCL_BoostJumpPack_Hovering_C_OnRemove_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -134,9 +165,12 @@ bool AGCL_BoostJumpPack_Hovering_C::OnRemove(class AActor* MyTarget, struct FGam
 
 bool AGCL_BoostJumpPack_Hovering_C::OnActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, bool CallFunc_OnActive_ReturnValue, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, TSoftObjectPtr<class USkeletalMesh> CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FVector& Temp_struct_Variable, bool CallFunc_EqualEqual_SoftObjectReference_ReturnValue, bool Temp_bool_Variable, const struct FVector& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "OnActive");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_BoostJumpPack_Hovering_C_OnActive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "OnActive");
+
+	Params::AGCL_BoostJumpPack_Hovering_C_OnActive_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -164,9 +198,12 @@ bool AGCL_BoostJumpPack_Hovering_C::OnActive(class AActor* MyTarget, struct FGam
 
 void AGCL_BoostJumpPack_Hovering_C::On_Pawn_Landed(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "On Pawn Landed");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_BoostJumpPack_Hovering_C_On_Pawn_Landed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "On Pawn Landed");
+
+	Params::AGCL_BoostJumpPack_Hovering_C_On_Pawn_Landed_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -181,12 +218,14 @@ void AGCL_BoostJumpPack_Hovering_C::On_Pawn_Landed(struct FHitResult& Hit)
 
 void AGCL_BoostJumpPack_Hovering_C::ResetFX()
 {
-	static auto Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "ResetFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_BoostJumpPack_Hovering_C_ResetFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "ResetFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -200,9 +239,12 @@ void AGCL_BoostJumpPack_Hovering_C::ResetFX()
 
 void AGCL_BoostJumpPack_Hovering_C::K2_HandleGameplayCue(class AActor* MyTarget, enum class EGameplayCueEvent EventType, struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "K2_HandleGameplayCue");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_BoostJumpPack_Hovering_C_K2_HandleGameplayCue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "K2_HandleGameplayCue");
+
+	Params::AGCL_BoostJumpPack_Hovering_C_K2_HandleGameplayCue_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.EventType = EventType;
@@ -219,12 +261,14 @@ void AGCL_BoostJumpPack_Hovering_C::K2_HandleGameplayCue(class AActor* MyTarget,
 
 void AGCL_BoostJumpPack_Hovering_C::ReceiveDestroyed()
 {
-	static auto Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "ReceiveDestroyed");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_BoostJumpPack_Hovering_C_ReceiveDestroyed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "ReceiveDestroyed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -235,12 +279,14 @@ void AGCL_BoostJumpPack_Hovering_C::ReceiveDestroyed()
 
 void AGCL_BoostJumpPack_Hovering_C::PlayLowFuelWarning()
 {
-	static auto Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "PlayLowFuelWarning");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_BoostJumpPack_Hovering_C_PlayLowFuelWarning_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "PlayLowFuelWarning");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -251,12 +297,14 @@ void AGCL_BoostJumpPack_Hovering_C::PlayLowFuelWarning()
 
 void AGCL_BoostJumpPack_Hovering_C::TryToPlayGroundEffects()
 {
-	static auto Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "TryToPlayGroundEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_BoostJumpPack_Hovering_C_TryToPlayGroundEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "TryToPlayGroundEffects");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -313,9 +361,12 @@ void AGCL_BoostJumpPack_Hovering_C::TryToPlayGroundEffects()
 
 void AGCL_BoostJumpPack_Hovering_C::ExecuteUbergraph_GCL_BoostJumpPack_Hovering(int32 EntryPoint, TArray<class AActor*>& Temp_object_Variable, bool CallFunc_IsValid_ReturnValue, const struct FHitResult& K2Node_CustomEvent_Hit, TArray<enum class EObjectTypeQuery>& K2Node_MakeArray_Array, bool Temp_bool_Has_Been_Initd_Variable, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, class AActor* K2Node_Event_MyTarget, enum class EGameplayCueEvent K2Node_Event_EventType, const struct FGameplayCueParameters& K2Node_Event_Parameters, bool CallFunc_IsValid_ReturnValue_4, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_IsValid_ReturnValue_5, bool Temp_bool_IsClosed_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_1, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, const struct FHitResult& CallFunc_LineTraceSingleForObjects_OutHit, bool CallFunc_LineTraceSingleForObjects_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, float CallFunc_VSize_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult, float CallFunc_Divide_FloatFloat_ReturnValue, bool CallFunc_IsPlaying_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "ExecuteUbergraph_GCL_BoostJumpPack_Hovering");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCL_BoostJumpPack_Hovering_C", "ExecuteUbergraph_GCL_BoostJumpPack_Hovering");
+
+	Params::AGCL_BoostJumpPack_Hovering_C_ExecuteUbergraph_GCL_BoostJumpPack_Hovering_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -370,6 +421,4 @@ void AGCL_BoostJumpPack_Hovering_C::ExecuteUbergraph_GCL_BoostJumpPack_Hovering(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

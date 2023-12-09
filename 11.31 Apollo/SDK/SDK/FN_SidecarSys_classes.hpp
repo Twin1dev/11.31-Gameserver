@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -24,11 +21,8 @@ public:
 	class FString                                DssRestoreUrl;                                     // 0xA8(0x10)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class FString                                DssCheckinUrl;                                     // 0xB8(0x10)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SidecarDss");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USidecarDss* GetDefaultObj();
 
 };
 
@@ -41,13 +35,10 @@ public:
 	class FString                                InventoryLockUrl;                                  // 0x38(0x10)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class FString                                ItemUpdateUrl;                                     // 0x48(0x10)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class FString                                ReleaseAllUrl;                                     // 0x58(0x10)(ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_0[0x78];                                       // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_0[0x78];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SidecarInventorySys");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USidecarInventorySys* GetDefaultObj();
 
 };
 
@@ -56,20 +47,15 @@ public:
 class USidecarSys : public UObject
 {
 public:
-	uint8                                        Pad_1[0x10];                                       // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1[0x10];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 	class USidecarDss*                           SidecarDss;                                        // 0x38(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class USidecarInventorySys*                  SidecarInventory;                                  // 0x40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SidecarSys");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USidecarSys* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

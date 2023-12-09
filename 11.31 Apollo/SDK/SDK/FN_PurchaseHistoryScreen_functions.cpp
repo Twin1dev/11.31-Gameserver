@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass PurchaseHistoryScreen.PurchaseHistoryScreen_C
+// (None)
+
+class UClass* UPurchaseHistoryScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PurchaseHistoryScreen_C");
+
+	return Clss;
+}
+
+
+// PurchaseHistoryScreen_C PurchaseHistoryScreen.Default__PurchaseHistoryScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPurchaseHistoryScreen_C* UPurchaseHistoryScreen_C::GetDefaultObj()
+{
+	static class UPurchaseHistoryScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPurchaseHistoryScreen_C*>(UPurchaseHistoryScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function PurchaseHistoryScreen.PurchaseHistoryScreen_C.ToggleBackAction
@@ -25,9 +50,12 @@ namespace SDK
 
 void UPurchaseHistoryScreen_C::ToggleBackAction(bool bShouldShow, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_HasInputActionHandler_ReturnValue, bool CallFunc_HasInputActionHandler_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "ToggleBackAction");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_ToggleBackAction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "ToggleBackAction");
+
+	Params::UPurchaseHistoryScreen_C_ToggleBackAction_Params Parms{};
 
 	Parms.bShouldShow = bShouldShow;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -47,9 +75,12 @@ void UPurchaseHistoryScreen_C::ToggleBackAction(bool bShouldShow, UDelegatePrope
 
 void UPurchaseHistoryScreen_C::HandleBack(bool* PassThrough, bool CallFunc_HandlePreviousStepAction_bPassthrough)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "HandleBack");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_HandleBack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "HandleBack");
+
+	Params::UPurchaseHistoryScreen_C_HandleBack_Params Parms{};
 
 	Parms.CallFunc_HandlePreviousStepAction_bPassthrough = CallFunc_HandlePreviousStepAction_bPassthrough;
 
@@ -68,9 +99,12 @@ void UPurchaseHistoryScreen_C::HandleBack(bool* PassThrough, bool CallFunc_Handl
 
 void UPurchaseHistoryScreen_C::OnItemRefresh(const struct FMtxPurchaseHistory& PurchaseHistory)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "OnItemRefresh");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_OnItemRefresh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "OnItemRefresh");
+
+	Params::UPurchaseHistoryScreen_C_OnItemRefresh_Params Parms{};
 
 	Parms.PurchaseHistory = PurchaseHistory;
 
@@ -85,12 +119,14 @@ void UPurchaseHistoryScreen_C::OnItemRefresh(const struct FMtxPurchaseHistory& P
 
 void UPurchaseHistoryScreen_C::Construct()
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -102,9 +138,12 @@ void UPurchaseHistoryScreen_C::Construct()
 
 void UPurchaseHistoryScreen_C::OnPopulateView(enum class EPurchaseReturnStep CurrentStep)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "OnPopulateView");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_OnPopulateView_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "OnPopulateView");
+
+	Params::UPurchaseHistoryScreen_C_OnPopulateView_Params Parms{};
 
 	Parms.CurrentStep = CurrentStep;
 
@@ -119,12 +158,14 @@ void UPurchaseHistoryScreen_C::OnPopulateView(enum class EPurchaseReturnStep Cur
 
 void UPurchaseHistoryScreen_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -135,12 +176,14 @@ void UPurchaseHistoryScreen_C::BP_OnActivated()
 
 void UPurchaseHistoryScreen_C::OnNoPurchasesAvailable()
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "OnNoPurchasesAvailable");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_OnNoPurchasesAvailable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "OnNoPurchasesAvailable");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -152,9 +195,12 @@ void UPurchaseHistoryScreen_C::OnNoPurchasesAvailable()
 
 void UPurchaseHistoryScreen_C::BndEvt__Button_ItemSelect_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "BndEvt__Button_ItemSelect_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_BndEvt__Button_ItemSelect_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "BndEvt__Button_ItemSelect_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UPurchaseHistoryScreen_C_BndEvt__Button_ItemSelect_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -170,9 +216,12 @@ void UPurchaseHistoryScreen_C::BndEvt__Button_ItemSelect_K2Node_ComponentBoundEv
 
 void UPurchaseHistoryScreen_C::BndEvt__Button_Reason_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "BndEvt__Button_Reason_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_BndEvt__Button_Reason_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "BndEvt__Button_Reason_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature");
+
+	Params::UPurchaseHistoryScreen_C_BndEvt__Button_Reason_K2Node_ComponentBoundEvent_18_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -188,9 +237,12 @@ void UPurchaseHistoryScreen_C::BndEvt__Button_Reason_K2Node_ComponentBoundEvent_
 
 void UPurchaseHistoryScreen_C::BndEvt__Button_ClosePostApproval_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "BndEvt__Button_ClosePostApproval_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_BndEvt__Button_ClosePostApproval_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "BndEvt__Button_ClosePostApproval_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature");
+
+	Params::UPurchaseHistoryScreen_C_BndEvt__Button_ClosePostApproval_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -205,12 +257,14 @@ void UPurchaseHistoryScreen_C::BndEvt__Button_ClosePostApproval_K2Node_Component
 
 void UPurchaseHistoryScreen_C::OnBeginRefundSubmission()
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "OnBeginRefundSubmission");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_OnBeginRefundSubmission_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "OnBeginRefundSubmission");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -226,9 +280,12 @@ void UPurchaseHistoryScreen_C::OnBeginRefundSubmission()
 
 void UPurchaseHistoryScreen_C::OnEndRefundSubmission(bool bSuccess, int32 MtxRefunded, class UFortItemDefinition* ReturnedItem, int32 TicketIndex, bool WasFreeRefund)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "OnEndRefundSubmission");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_OnEndRefundSubmission_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "OnEndRefundSubmission");
+
+	Params::UPurchaseHistoryScreen_C_OnEndRefundSubmission_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 	Parms.MtxRefunded = MtxRefunded;
@@ -248,9 +305,12 @@ void UPurchaseHistoryScreen_C::OnEndRefundSubmission(bool bSuccess, int32 MtxRef
 
 void UPurchaseHistoryScreen_C::InitializeTickets(int32 NumTicketsAvailableToUse)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "InitializeTickets");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_InitializeTickets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "InitializeTickets");
+
+	Params::UPurchaseHistoryScreen_C_InitializeTickets_Params Parms{};
 
 	Parms.NumTicketsAvailableToUse = NumTicketsAvailableToUse;
 
@@ -266,9 +326,12 @@ void UPurchaseHistoryScreen_C::InitializeTickets(int32 NumTicketsAvailableToUse)
 
 void UPurchaseHistoryScreen_C::UpdateItemList(TArray<class UCommonTextBlock*>& ItemsToReturn)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "UpdateItemList");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_UpdateItemList_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "UpdateItemList");
+
+	Params::UPurchaseHistoryScreen_C_UpdateItemList_Params Parms{};
 
 	Parms.ItemsToReturn = ItemsToReturn;
 
@@ -284,9 +347,12 @@ void UPurchaseHistoryScreen_C::UpdateItemList(TArray<class UCommonTextBlock*>& I
 
 void UPurchaseHistoryScreen_C::OnInputMethodChanged(enum class ECommonInputType bNewInputType)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "OnInputMethodChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_OnInputMethodChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "OnInputMethodChanged");
+
+	Params::UPurchaseHistoryScreen_C_OnInputMethodChanged_Params Parms{};
 
 	Parms.bNewInputType = bNewInputType;
 
@@ -302,9 +368,12 @@ void UPurchaseHistoryScreen_C::OnInputMethodChanged(enum class ECommonInputType 
 
 void UPurchaseHistoryScreen_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UPurchaseHistoryScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -320,9 +389,12 @@ void UPurchaseHistoryScreen_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEv
 
 void UPurchaseHistoryScreen_C::OnOpenSubmitRequest(bool bIsSelectionTokenlessRefundable)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "OnOpenSubmitRequest");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_OnOpenSubmitRequest_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "OnOpenSubmitRequest");
+
+	Params::UPurchaseHistoryScreen_C_OnOpenSubmitRequest_Params Parms{};
 
 	Parms.bIsSelectionTokenlessRefundable = bIsSelectionTokenlessRefundable;
 
@@ -339,7 +411,7 @@ void UPurchaseHistoryScreen_C::OnOpenSubmitRequest(bool bIsSelectionTokenlessRef
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FMtxPurchaseHistory         K2Node_Event_PurchaseHistory                                     ()
+// struct FMtxPurchaseHistory         K2Node_Event_PurchaseHistory                                     (None)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsMobileGame_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -353,13 +425,13 @@ void UPurchaseHistoryScreen_C::OnOpenSubmitRequest(bool bIsSelectionTokenlessRef
 // class UFortItemDefinition*         K2Node_Event_ReturnedItem                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_Event_TicketIndex                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_WasFreeRefund                                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetDisplayName_ReturnValue                              ()
+// class FText                        CallFunc_GetDisplayName_ReturnValue                              (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_Event_NumTicketsAvailableToUse                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -382,9 +454,12 @@ void UPurchaseHistoryScreen_C::OnOpenSubmitRequest(bool bIsSelectionTokenlessRef
 
 void UPurchaseHistoryScreen_C::ExecuteUbergraph_PurchaseHistoryScreen(int32 EntryPoint, class UCommonInputSubsystem* CallFunc_GetLocalPlayerSubsystem_ReturnValue, bool Temp_bool_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, int32 Temp_int_Array_Index_Variable, const struct FMtxPurchaseHistory& K2Node_Event_PurchaseHistory, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue, enum class EPurchaseReturnStep K2Node_Event_CurrentStep, bool K2Node_SwitchEnum_CmpSuccess, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, bool K2Node_Event_bSuccess, int32 K2Node_Event_MtxRefunded, class UFortItemDefinition* K2Node_Event_ReturnedItem, int32 K2Node_Event_TicketIndex, bool K2Node_Event_WasFreeRefund, class FText CallFunc_GetDisplayName_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue, class FText CallFunc_Format_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 K2Node_Event_NumTicketsAvailableToUse, float CallFunc_RandomFloatInRange_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, TArray<class UCommonTextBlock*>& K2Node_Event_ItemsToReturn, class UCommonTextBlock* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, const struct FSlateFontInfo& K2Node_MakeStruct_SlateFontInfo, enum class ESlateVisibility Temp_byte_Variable, class UPanelSlot* CallFunc_AddChild_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, enum class ECommonInputType K2Node_CustomEvent_bNewInputType, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool K2Node_Event_bIsSelectionTokenlessRefundable, bool Temp_bool_Variable_1, class UWidget* K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("PurchaseHistoryScreen_C", "ExecuteUbergraph_PurchaseHistoryScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseHistoryScreen_C", "ExecuteUbergraph_PurchaseHistoryScreen");
+
+	Params::UPurchaseHistoryScreen_C_ExecuteUbergraph_PurchaseHistoryScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetLocalPlayerSubsystem_ReturnValue = CallFunc_GetLocalPlayerSubsystem_ReturnValue;
@@ -438,6 +513,4 @@ void UPurchaseHistoryScreen_C::ExecuteUbergraph_PurchaseHistoryScreen(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

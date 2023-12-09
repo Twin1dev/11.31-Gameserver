@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -86,7 +83,7 @@ struct FGameplayTagQuery
 {
 public:
 	int32                                        TokenStreamVersion;                                // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_42FB[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2331[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FGameplayTag>                  TagDictionary;                                     // 0x8(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<uint8>                                QueryTokenStream;                                  // 0x18(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	class FString                                UserDescription;                                   // 0x28(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -98,7 +95,7 @@ public:
 struct FGameplayTagReferenceHelper
 {
 public:
-	uint8                                        Pad_42FC[0x10];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2334[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -106,7 +103,7 @@ public:
 struct FGameplayTagCreationWidgetHelper
 {
 public:
-	uint8                                        Pad_42FD[0x1];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2335[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x50 (0x50 - 0x0)
@@ -114,7 +111,7 @@ public:
 struct FGameplayTagNode
 {
 public:
-	uint8                                        Pad_42FE[0x50];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2337[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -124,7 +121,7 @@ struct FGameplayTagSource
 public:
 	class FName                                  SourceName;                                        // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EGameplayTagSourceType            SourceType;                                        // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42FF[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2338[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UGameplayTagsList*                     SourceTagList;                                     // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class URestrictedGameplayTagsList*           SourceRestrictedTagList;                           // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -144,7 +141,7 @@ struct FRestrictedGameplayTagTableRow : public FGameplayTagTableRow
 {
 public:
 	bool                                         bAllowNonRestrictedChildren;                       // 0x20(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4300[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_233A[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -176,6 +173,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class UBlueprintContextBase : public USubsystem
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BlueprintContextBase");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UBlueprintContextBase* GetDefaultObj();
 
 };
 
@@ -32,17 +26,12 @@ class UBlueprintContextLibrary : public UBlueprintFunctionLibrary
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BlueprintContextLibrary");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UBlueprintContextLibrary* GetDefaultObj();
 
 	class USubsystem* GetContext(class UObject* ContextObject, TSubclassOf<class USubsystem> Class);
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

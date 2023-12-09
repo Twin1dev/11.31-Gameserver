@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -38,15 +35,12 @@ public:
 	TSoftClassPtr<class UUserWidget>             CreativeOptionsSoftClass;                          // 0x5F8(0x28)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	class UClass*                                CreativeOptionsClass;                              // 0x620(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         SquadFill;                                         // 0x628(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5E2B[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_60E0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortPlaylistAthena*                   PlaylistData;                                      // 0x630(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         IsShowingMatchmakingDetails;                       // 0x638(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaLobbyMatchmakingPlay_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaLobbyMatchmakingPlay_C* GetDefaultObj();
 
 	void SetBasePanelColor(const struct FLinearColor& NewColor, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue);
 	void RefreshFillText(class UFortMatchmakingContext* CallFunc_GetContext_ReturnValue, class FText CallFunc_GetMatchmakingFillText_ReturnValue);
@@ -73,6 +67,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

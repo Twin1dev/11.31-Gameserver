@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -56,11 +53,8 @@ public:
 	struct FSlateColor                           ShadowColor;                                       // 0x780(0x28)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FSlateColor                           HighlightColor;                                    // 0x7A8(0x28)(Edit, BlueprintVisible, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ShowdownDivisionLobbyPanel_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UShowdownDivisionLobbyPanel_C* GetDefaultObj();
 
 	void RefreshDivisionData(int32 TotalHypeForNextDivision, int32 TotalHype, int32 TotalNumberDivisions, int32 DivsionRank, int32 CallFunc_GetAmountEarnedWithinDivision_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, int32 CallFunc_GetTotalDivisionPoints_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, int32 CallFunc_Subtract_IntInt_ReturnValue, class FText CallFunc_Format_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue_1, int32 CallFunc_GetNumericalDisplayAmountForNextDivision_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, int32 CallFunc_GetTotalNumberOfDivisions_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 CallFunc_GetDivisionRank_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, int32 CallFunc_GetRequiredAmountToAdvanceDivision_ReturnValue, class FText CallFunc_Format_ReturnValue_1, float CallFunc_Conv_IntToFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue);
 	void InputTypeChanged(bool IsGamepad);
@@ -79,6 +73,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCN_BattleLab_FrenchYedoc_Hit.GCN_BattleLab_FrenchYedoc_Hit_C
+// (None)
+
+class UClass* UGCN_BattleLab_FrenchYedoc_Hit_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCN_BattleLab_FrenchYedoc_Hit_C");
+
+	return Clss;
+}
+
+
+// GCN_BattleLab_FrenchYedoc_Hit_C GCN_BattleLab_FrenchYedoc_Hit.Default__GCN_BattleLab_FrenchYedoc_Hit_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGCN_BattleLab_FrenchYedoc_Hit_C* UGCN_BattleLab_FrenchYedoc_Hit_C::GetDefaultObj()
+{
+	static class UGCN_BattleLab_FrenchYedoc_Hit_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGCN_BattleLab_FrenchYedoc_Hit_C*>(UGCN_BattleLab_FrenchYedoc_Hit_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCN_BattleLab_FrenchYedoc_Hit.GCN_BattleLab_FrenchYedoc_Hit_C.OnBurst
@@ -31,9 +56,12 @@ namespace SDK
 
 void UGCN_BattleLab_FrenchYedoc_Hit_C::OnBurst(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance, class UParticleSystemComponent* CallFunc_Array_Get_Item, class APrj_Athena_FrenchYedoc_JWUnfriendly_C* K2Node_DynamicCast_AsPrj_Athena_French_Yedoc_JWUnfriendly, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCN_BattleLab_FrenchYedoc_Hit_C", "OnBurst");
+	static class UFunction* Func = nullptr;
 
-	Params::UGCN_BattleLab_FrenchYedoc_Hit_C_OnBurst_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_BattleLab_FrenchYedoc_Hit_C", "OnBurst");
+
+	Params::UGCN_BattleLab_FrenchYedoc_Hit_C_OnBurst_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -52,6 +80,4 @@ void UGCN_BattleLab_FrenchYedoc_Hit_C::OnBurst(class AActor* MyTarget, struct FG
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

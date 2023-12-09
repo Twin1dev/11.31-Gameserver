@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass HuntingGeneratorLocationContext.HuntingGeneratorLocationContext_C
+// (None)
+
+class UClass* UHuntingGeneratorLocationContext_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("HuntingGeneratorLocationContext_C");
+
+	return Clss;
+}
+
+
+// HuntingGeneratorLocationContext_C HuntingGeneratorLocationContext.Default__HuntingGeneratorLocationContext_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UHuntingGeneratorLocationContext_C* UHuntingGeneratorLocationContext_C::GetDefaultObj()
+{
+	static class UHuntingGeneratorLocationContext_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UHuntingGeneratorLocationContext_C*>(UHuntingGeneratorLocationContext_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function HuntingGeneratorLocationContext.HuntingGeneratorLocationContext_C.ProvideSingleLocation
@@ -59,9 +84,12 @@ namespace SDK
 
 void UHuntingGeneratorLocationContext_C::ProvideSingleLocation(class UObject* QuerierObject, class AActor* QuerierActor, struct FVector* ResultingLocation, float HuntPercentBiasTowardHunted, float HuntRadiusMax, float HuntRadiusMin, class AFortAIPawn* Querier, const struct FVector& FinalHuntingRadiusLocationToUse, float FinalHuntingRadiusToUse, float DistanceBetweenQuerierAndGoal, const struct FVector& GoalActorLocation, const struct FVector& QuerierLocation, class AFortAIPawn* K2Node_DynamicCast_AsFort_AIPawn, bool K2Node_DynamicCast_bSuccess, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_1, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, float CallFunc_VSize_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class UBlackboardComponent* CallFunc_GetBlackboard_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue, float CallFunc_Abs_ReturnValue, const struct FVector& CallFunc_SelectVector_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1, float CallFunc_FClamp_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, class AFortPlayerPawn* CallFunc_GetClosestFortPlayerPawn_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, class FName CallFunc_MakeLiteralName_ReturnValue, class UObject* CallFunc_GetValueAsObject_ReturnValue, class AActor* K2Node_DynamicCast_AsActor, bool K2Node_DynamicCast_bSuccess_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("HuntingGeneratorLocationContext_C", "ProvideSingleLocation");
+	static class UFunction* Func = nullptr;
 
-	Params::UHuntingGeneratorLocationContext_C_ProvideSingleLocation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HuntingGeneratorLocationContext_C", "ProvideSingleLocation");
+
+	Params::UHuntingGeneratorLocationContext_C_ProvideSingleLocation_Params Parms{};
 
 	Parms.QuerierObject = QuerierObject;
 	Parms.QuerierActor = QuerierActor;
@@ -104,12 +132,10 @@ void UHuntingGeneratorLocationContext_C::ProvideSingleLocation(class UObject* Qu
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ResultingLocation != nullptr)
-		*ResultingLocation = Parms.ResultingLocation;
+		*ResultingLocation = std::move(Parms.ResultingLocation);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

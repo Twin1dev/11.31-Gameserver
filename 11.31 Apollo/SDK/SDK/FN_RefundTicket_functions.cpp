@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass RefundTicket.RefundTicket_C
+// (None)
+
+class UClass* URefundTicket_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("RefundTicket_C");
+
+	return Clss;
+}
+
+
+// RefundTicket_C RefundTicket.Default__RefundTicket_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class URefundTicket_C* URefundTicket_C::GetDefaultObj()
+{
+	static class URefundTicket_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<URefundTicket_C*>(URefundTicket_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function RefundTicket.RefundTicket_C.ConsumeEvent
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void URefundTicket_C::ConsumeEvent()
 {
-	static auto Func = Class->GetFunction("RefundTicket_C", "ConsumeEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::URefundTicket_C_ConsumeEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RefundTicket_C", "ConsumeEvent");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void URefundTicket_C::ConsumeEvent()
 
 void URefundTicket_C::IsConsumed()
 {
-	static auto Func = Class->GetFunction("RefundTicket_C", "IsConsumed");
+	static class UFunction* Func = nullptr;
 
-	Params::URefundTicket_C_IsConsumed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RefundTicket_C", "IsConsumed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -54,9 +83,12 @@ void URefundTicket_C::IsConsumed()
 
 void URefundTicket_C::PendingEvent(bool IsPending)
 {
-	static auto Func = Class->GetFunction("RefundTicket_C", "PendingEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::URefundTicket_C_PendingEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RefundTicket_C", "PendingEvent");
+
+	Params::URefundTicket_C_PendingEvent_Params Parms{};
 
 	Parms.IsPending = IsPending;
 
@@ -76,9 +108,12 @@ void URefundTicket_C::PendingEvent(bool IsPending)
 
 void URefundTicket_C::ExecuteUbergraph_RefundTicket(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool K2Node_CustomEvent_isPending, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("RefundTicket_C", "ExecuteUbergraph_RefundTicket");
+	static class UFunction* Func = nullptr;
 
-	Params::URefundTicket_C_ExecuteUbergraph_RefundTicket_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RefundTicket_C", "ExecuteUbergraph_RefundTicket");
+
+	Params::URefundTicket_C_ExecuteUbergraph_RefundTicket_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -92,6 +127,4 @@ void URefundTicket_C::ExecuteUbergraph_RefundTicket(int32 EntryPoint, class UUMG
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

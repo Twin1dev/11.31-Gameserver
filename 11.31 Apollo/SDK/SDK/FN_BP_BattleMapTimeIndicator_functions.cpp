@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_BattleMapTimeIndicator.BP_BattleMapTimeIndicator_C
+// (Actor)
+
+class UClass* ABP_BattleMapTimeIndicator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_BattleMapTimeIndicator_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// BP_BattleMapTimeIndicator_C BP_BattleMapTimeIndicator.Default__BP_BattleMapTimeIndicator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_BattleMapTimeIndicator_C* ABP_BattleMapTimeIndicator_C::GetDefaultObj()
+{
+	static class ABP_BattleMapTimeIndicator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_BattleMapTimeIndicator_C*>(ABP_BattleMapTimeIndicator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

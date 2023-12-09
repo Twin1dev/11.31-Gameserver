@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ChallengeImageGrid_Button.ChallengeImageGrid_Button_C
+// (None)
+
+class UClass* UChallengeImageGrid_Button_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChallengeImageGrid_Button_C");
+
+	return Clss;
+}
+
+
+// ChallengeImageGrid_Button_C ChallengeImageGrid_Button.Default__ChallengeImageGrid_Button_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChallengeImageGrid_Button_C* UChallengeImageGrid_Button_C::GetDefaultObj()
+{
+	static class UChallengeImageGrid_Button_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChallengeImageGrid_Button_C*>(UChallengeImageGrid_Button_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ChallengeImageGrid_Button.ChallengeImageGrid_Button_C.OnChallengeSet
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UChallengeImageGrid_Button_C::OnChallengeSet(bool bIsComplete, bool bIsLocked)
 {
-	static auto Func = Class->GetFunction("ChallengeImageGrid_Button_C", "OnChallengeSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeImageGrid_Button_C_OnChallengeSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeImageGrid_Button_C", "OnChallengeSet");
+
+	Params::UChallengeImageGrid_Button_C_OnChallengeSet_Params Parms{};
 
 	Parms.bIsComplete = bIsComplete;
 	Parms.bIsLocked = bIsLocked;
@@ -41,12 +69,14 @@ void UChallengeImageGrid_Button_C::OnChallengeSet(bool bIsComplete, bool bIsLock
 
 void UChallengeImageGrid_Button_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("ChallengeImageGrid_Button_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeImageGrid_Button_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeImageGrid_Button_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,12 +87,14 @@ void UChallengeImageGrid_Button_C::BP_OnHovered()
 
 void UChallengeImageGrid_Button_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("ChallengeImageGrid_Button_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeImageGrid_Button_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeImageGrid_Button_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -73,12 +105,14 @@ void UChallengeImageGrid_Button_C::BP_OnUnhovered()
 
 void UChallengeImageGrid_Button_C::TransitionFromLockedToOwnedState()
 {
-	static auto Func = Class->GetFunction("ChallengeImageGrid_Button_C", "TransitionFromLockedToOwnedState");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeImageGrid_Button_C_TransitionFromLockedToOwnedState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeImageGrid_Button_C", "TransitionFromLockedToOwnedState");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -89,12 +123,14 @@ void UChallengeImageGrid_Button_C::TransitionFromLockedToOwnedState()
 
 void UChallengeImageGrid_Button_C::TransitionFromOwnedToCompletedState()
 {
-	static auto Func = Class->GetFunction("ChallengeImageGrid_Button_C", "TransitionFromOwnedToCompletedState");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeImageGrid_Button_C_TransitionFromOwnedToCompletedState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeImageGrid_Button_C", "TransitionFromOwnedToCompletedState");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,12 +141,14 @@ void UChallengeImageGrid_Button_C::TransitionFromOwnedToCompletedState()
 
 void UChallengeImageGrid_Button_C::Construct()
 {
-	static auto Func = Class->GetFunction("ChallengeImageGrid_Button_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeImageGrid_Button_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeImageGrid_Button_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -121,12 +159,14 @@ void UChallengeImageGrid_Button_C::Construct()
 
 void UChallengeImageGrid_Button_C::SetupLockedToOwnState()
 {
-	static auto Func = Class->GetFunction("ChallengeImageGrid_Button_C", "SetupLockedToOwnState");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeImageGrid_Button_C_SetupLockedToOwnState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeImageGrid_Button_C", "SetupLockedToOwnState");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -137,12 +177,14 @@ void UChallengeImageGrid_Button_C::SetupLockedToOwnState()
 
 void UChallengeImageGrid_Button_C::SetupGridLocationText()
 {
-	static auto Func = Class->GetFunction("ChallengeImageGrid_Button_C", "SetupGridLocationText");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeImageGrid_Button_C_SetupGridLocationText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeImageGrid_Button_C", "SetupGridLocationText");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -157,12 +199,12 @@ void UChallengeImageGrid_Button_C::SetupGridLocationText()
 // bool                               K2Node_Event_bIsComplete                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_Event_bIsLocked                                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -178,9 +220,12 @@ void UChallengeImageGrid_Button_C::SetupGridLocationText()
 
 void UChallengeImageGrid_Button_C::ExecuteUbergraph_ChallengeImageGrid_Button(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool K2Node_Event_bIsComplete, bool K2Node_Event_bIsLocked, int32 CallFunc_Add_IntInt_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, bool CallFunc_Less_IntInt_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, int32 CallFunc_Multiply_IntInt_ReturnValue, int32 CallFunc_Divide_IntInt_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, int32 CallFunc_Percent_IntInt_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_4, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_5)
 {
-	static auto Func = Class->GetFunction("ChallengeImageGrid_Button_C", "ExecuteUbergraph_ChallengeImageGrid_Button");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeImageGrid_Button_C", "ExecuteUbergraph_ChallengeImageGrid_Button");
+
+	Params::UChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -214,6 +259,4 @@ void UChallengeImageGrid_Button_C::ExecuteUbergraph_ChallengeImageGrid_Button(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

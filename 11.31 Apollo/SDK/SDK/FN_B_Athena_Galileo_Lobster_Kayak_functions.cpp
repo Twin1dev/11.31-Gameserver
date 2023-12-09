@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_Athena_Galileo_Lobster_Kayak.B_Athena_Galileo_Lobster_Kayak_C
+// (Actor)
+
+class UClass* AB_Athena_Galileo_Lobster_Kayak_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Athena_Galileo_Lobster_Kayak_C");
+
+	return Clss;
+}
+
+
+// B_Athena_Galileo_Lobster_Kayak_C B_Athena_Galileo_Lobster_Kayak.Default__B_Athena_Galileo_Lobster_Kayak_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Athena_Galileo_Lobster_Kayak_C* AB_Athena_Galileo_Lobster_Kayak_C::GetDefaultObj()
+{
+	static class AB_Athena_Galileo_Lobster_Kayak_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Athena_Galileo_Lobster_Kayak_C*>(AB_Athena_Galileo_Lobster_Kayak_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function B_Athena_Galileo_Lobster_Kayak.B_Athena_Galileo_Lobster_Kayak_C.CreateSkeletalAudioComp
@@ -24,9 +49,12 @@ namespace SDK
 
 void AB_Athena_Galileo_Lobster_Kayak_C::CreateSkeletalAudioComp(class UFortSkeletalAudioComponent** Component, const struct FTransform& Temp_struct_Variable, class UFortSkeletalAudioComponent* CallFunc_AddComponent_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "CreateSkeletalAudioComp");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Kayak_C_CreateSkeletalAudioComp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "CreateSkeletalAudioComp");
+
+	Params::AB_Athena_Galileo_Lobster_Kayak_C_CreateSkeletalAudioComp_Params Parms{};
 
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.CallFunc_AddComponent_ReturnValue = CallFunc_AddComponent_ReturnValue;
@@ -45,12 +73,14 @@ void AB_Athena_Galileo_Lobster_Kayak_C::CreateSkeletalAudioComp(class UFortSkele
 
 void AB_Athena_Galileo_Lobster_Kayak_C::Timeline_2__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "Timeline_2__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Kayak_C_Timeline_2__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "Timeline_2__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -61,12 +91,14 @@ void AB_Athena_Galileo_Lobster_Kayak_C::Timeline_2__FinishedFunc()
 
 void AB_Athena_Galileo_Lobster_Kayak_C::Timeline_2__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "Timeline_2__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Kayak_C_Timeline_2__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "Timeline_2__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -77,12 +109,14 @@ void AB_Athena_Galileo_Lobster_Kayak_C::Timeline_2__UpdateFunc()
 
 void AB_Athena_Galileo_Lobster_Kayak_C::Timeline_2__TurnOnIdleLightningBeam__EventFunc()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "Timeline_2__TurnOnIdleLightningBeam__EventFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Kayak_C_Timeline_2__TurnOnIdleLightningBeam__EventFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "Timeline_2__TurnOnIdleLightningBeam__EventFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -93,12 +127,14 @@ void AB_Athena_Galileo_Lobster_Kayak_C::Timeline_2__TurnOnIdleLightningBeam__Eve
 
 void AB_Athena_Galileo_Lobster_Kayak_C::BlockBreak()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "BlockBreak");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Kayak_C_BlockBreak_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "BlockBreak");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -110,9 +146,12 @@ void AB_Athena_Galileo_Lobster_Kayak_C::BlockBreak()
 
 void AB_Athena_Galileo_Lobster_Kayak_C::CurrentPoiseChanged(float CurrentPoise)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "CurrentPoiseChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Kayak_C_CurrentPoiseChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "CurrentPoiseChanged");
+
+	Params::AB_Athena_Galileo_Lobster_Kayak_C_CurrentPoiseChanged_Params Parms{};
 
 	Parms.CurrentPoise = CurrentPoise;
 
@@ -127,12 +166,14 @@ void AB_Athena_Galileo_Lobster_Kayak_C::CurrentPoiseChanged(float CurrentPoise)
 
 void AB_Athena_Galileo_Lobster_Kayak_C::StartIdleFX()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "StartIdleFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Kayak_C_StartIdleFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "StartIdleFX");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -144,9 +185,12 @@ void AB_Athena_Galileo_Lobster_Kayak_C::StartIdleFX()
 
 void AB_Athena_Galileo_Lobster_Kayak_C::DoBulletBlockEffect(const struct FVector& ImpactLocation)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "DoBulletBlockEffect");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Kayak_C_DoBulletBlockEffect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "DoBulletBlockEffect");
+
+	Params::AB_Athena_Galileo_Lobster_Kayak_C_DoBulletBlockEffect_Params Parms{};
 
 	Parms.ImpactLocation = ImpactLocation;
 
@@ -161,12 +205,14 @@ void AB_Athena_Galileo_Lobster_Kayak_C::DoBulletBlockEffect(const struct FVector
 
 void AB_Athena_Galileo_Lobster_Kayak_C::TurnOnLobster()
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "TurnOnLobster");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Kayak_C_TurnOnLobster_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "TurnOnLobster");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -183,9 +229,12 @@ void AB_Athena_Galileo_Lobster_Kayak_C::TurnOnLobster()
 
 void AB_Athena_Galileo_Lobster_Kayak_C::ExecuteUbergraph_B_Athena_Galileo_Lobster_Kayak(int32 EntryPoint, float CallFunc_Lerp_ReturnValue, float CallFunc_Lerp_ReturnValue_1, float K2Node_Event_CurrentPoise, const struct FVector& K2Node_Event_ImpactLocation, float CallFunc_GetGameTimeInSeconds_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "ExecuteUbergraph_B_Athena_Galileo_Lobster_Kayak");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Galileo_Lobster_Kayak_C_ExecuteUbergraph_B_Athena_Galileo_Lobster_Kayak_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Galileo_Lobster_Kayak_C", "ExecuteUbergraph_B_Athena_Galileo_Lobster_Kayak");
+
+	Params::AB_Athena_Galileo_Lobster_Kayak_C_ExecuteUbergraph_B_Athena_Galileo_Lobster_Kayak_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_Lerp_ReturnValue = CallFunc_Lerp_ReturnValue;
@@ -200,6 +249,4 @@ void AB_Athena_Galileo_Lobster_Kayak_C::ExecuteUbergraph_B_Athena_Galileo_Lobste
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

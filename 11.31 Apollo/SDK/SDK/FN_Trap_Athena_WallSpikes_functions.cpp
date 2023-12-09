@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass Trap_Athena_WallSpikes.Trap_Athena_WallSpikes_C
+// (Actor)
+
+class UClass* ATrap_Athena_WallSpikes_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Trap_Athena_WallSpikes_C");
+
+	return Clss;
+}
+
+
+// Trap_Athena_WallSpikes_C Trap_Athena_WallSpikes.Default__Trap_Athena_WallSpikes_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ATrap_Athena_WallSpikes_C* ATrap_Athena_WallSpikes_C::GetDefaultObj()
+{
+	static class ATrap_Athena_WallSpikes_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ATrap_Athena_WallSpikes_C*>(ATrap_Athena_WallSpikes_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Trap_Athena_WallSpikes.Trap_Athena_WallSpikes_C.SetSpikePosition
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ATrap_Athena_WallSpikes_C::SetSpikePosition(float NewSpikePosition)
 {
-	static auto Func = Class->GetFunction("Trap_Athena_WallSpikes_C", "SetSpikePosition");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Athena_WallSpikes_C_SetSpikePosition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Athena_WallSpikes_C", "SetSpikePosition");
+
+	Params::ATrap_Athena_WallSpikes_C_SetSpikePosition_Params Parms{};
 
 	Parms.NewSpikePosition = NewSpikePosition;
 
@@ -42,9 +70,12 @@ void ATrap_Athena_WallSpikes_C::SetSpikePosition(float NewSpikePosition)
 
 void ATrap_Athena_WallSpikes_C::ExecuteUbergraph_Trap_Athena_WallSpikes(int32 EntryPoint, float K2Node_Event_NewSpikePosition, const struct FVector& CallFunc_MakeVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Trap_Athena_WallSpikes_C", "ExecuteUbergraph_Trap_Athena_WallSpikes");
+	static class UFunction* Func = nullptr;
 
-	Params::ATrap_Athena_WallSpikes_C_ExecuteUbergraph_Trap_Athena_WallSpikes_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Trap_Athena_WallSpikes_C", "ExecuteUbergraph_Trap_Athena_WallSpikes");
+
+	Params::ATrap_Athena_WallSpikes_C_ExecuteUbergraph_Trap_Athena_WallSpikes_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_NewSpikePosition = K2Node_Event_NewSpikePosition;
@@ -56,6 +87,4 @@ void ATrap_Athena_WallSpikes_C::ExecuteUbergraph_Trap_Athena_WallSpikes(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

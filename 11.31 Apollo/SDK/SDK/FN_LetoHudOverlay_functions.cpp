@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass LetoHudOverlay.LetoHudOverlay_C
+// (None)
+
+class UClass* ULetoHudOverlay_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LetoHudOverlay_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// LetoHudOverlay_C LetoHudOverlay.Default__LetoHudOverlay_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULetoHudOverlay_C* ULetoHudOverlay_C::GetDefaultObj()
+{
+	static class ULetoHudOverlay_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULetoHudOverlay_C*>(ULetoHudOverlay_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

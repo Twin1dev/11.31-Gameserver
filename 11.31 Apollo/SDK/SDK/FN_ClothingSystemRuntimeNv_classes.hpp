@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,7 +15,7 @@ class UClothConfigNv : public UClothConfigBase
 {
 public:
 	enum class EClothingWindMethod               WindMethod;                                        // 0x28(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4349[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2468[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FClothConstraintSetup                 VerticalConstraintConfig;                          // 0x2C(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FClothConstraintSetup                 HorizontalConstraintConfig;                        // 0x3C(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FClothConstraintSetup                 BendConstraintConfig;                              // 0x4C(0x10)(Edit, NoDestructor, NativeAccessSpecifierPublic)
@@ -40,19 +37,16 @@ public:
 	float                                        GravityScale;                                      // 0xD4(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                               GravityOverride;                                   // 0xD8(0xC)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bUseGravityOverride;                               // 0xE4(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_434A[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_246E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        TetherStiffness;                                   // 0xE8(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        TetherLimit;                                       // 0xEC(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        CollisionThickness;                                // 0xF0(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        AnimDriveSpringStiffness;                          // 0xF4(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        AnimDriveDamperStiffness;                          // 0xF8(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_434B[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_246F[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClothConfigNv");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClothConfigNv* GetDefaultObj();
 
 };
 
@@ -62,14 +56,11 @@ class UClothingAssetNv : public UClothingAssetCommon
 {
 public:
 	struct FClothConfig                          ClothConfig;                                       // 0xB8(0xD4)(Deprecated, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_434C[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2471[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FClothLODData>                 LODData;                                           // 0x190(0x10)(ZeroConstructor, Deprecated, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClothingAssetNv");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClothingAssetNv* GetDefaultObj();
 
 };
 
@@ -79,11 +70,8 @@ class UClothingSimulationFactoryNv : public UClothingSimulationFactory
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClothingSimulationFactoryNv");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClothingSimulationFactoryNv* GetDefaultObj();
 
 };
 
@@ -92,13 +80,10 @@ public:
 class UClothingSimulationInteractorNv : public UClothingSimulationInteractor
 {
 public:
-	uint8                                        Pad_434D[0x10];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2477[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClothingSimulationInteractorNv");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClothingSimulationInteractorNv* GetDefaultObj();
 
 	void SetAnimDriveSpringStiffness(float InStiffness);
 	void SetAnimDriveDamperStiffness(float InStiffness);
@@ -112,11 +97,8 @@ class UClothLODDataNv : public UClothLODDataCommon
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClothLODDataNv");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClothLODDataNv* GetDefaultObj();
 
 };
 
@@ -130,16 +112,11 @@ public:
 	TArray<float>                                BackstopRadiuses;                                  // 0x100(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<float>                                AnimDriveMultipliers;                              // 0x110(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClothPhysicalMeshDataNv");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClothPhysicalMeshDataNv* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

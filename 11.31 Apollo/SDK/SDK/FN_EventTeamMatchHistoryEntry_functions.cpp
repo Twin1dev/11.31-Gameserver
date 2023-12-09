@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass EventTeamMatchHistoryEntry.EventTeamMatchHistoryEntry_C
+// (None)
+
+class UClass* UEventTeamMatchHistoryEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EventTeamMatchHistoryEntry_C");
+
+	return Clss;
+}
+
+
+// EventTeamMatchHistoryEntry_C EventTeamMatchHistoryEntry.Default__EventTeamMatchHistoryEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UEventTeamMatchHistoryEntry_C* UEventTeamMatchHistoryEntry_C::GetDefaultObj()
+{
+	static class UEventTeamMatchHistoryEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEventTeamMatchHistoryEntry_C*>(UEventTeamMatchHistoryEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function EventTeamMatchHistoryEntry.EventTeamMatchHistoryEntry_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UEventTeamMatchHistoryEntry_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventTeamMatchHistoryEntry_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UEventTeamMatchHistoryEntry_C::BP_OnHovered()
 
 void UEventTeamMatchHistoryEntry_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventTeamMatchHistoryEntry_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -54,9 +83,12 @@ void UEventTeamMatchHistoryEntry_C::BP_OnUnhovered()
 
 void UEventTeamMatchHistoryEntry_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventTeamMatchHistoryEntry_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "OnListItemObjectSet");
+
+	Params::UEventTeamMatchHistoryEntry_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -83,9 +115,12 @@ void UEventTeamMatchHistoryEntry_C::OnListItemObjectSet(class UObject* ListItemO
 
 void UEventTeamMatchHistoryEntry_C::ExecuteUbergraph_EventTeamMatchHistoryEntry(int32 EntryPoint, bool Temp_bool_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UObject* K2Node_Event_ListItemObject, class UFortEventTeamMatchHistoryEntryData* K2Node_DynamicCast_AsFort_Event_Team_Match_History_Entry_Data, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_Percent_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, const struct FLinearColor& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "ExecuteUbergraph_EventTeamMatchHistoryEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventTeamMatchHistoryEntry_C_ExecuteUbergraph_EventTeamMatchHistoryEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "ExecuteUbergraph_EventTeamMatchHistoryEntry");
+
+	Params::UEventTeamMatchHistoryEntry_C_ExecuteUbergraph_EventTeamMatchHistoryEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -111,12 +146,14 @@ void UEventTeamMatchHistoryEntry_C::ExecuteUbergraph_EventTeamMatchHistoryEntry(
 
 void UEventTeamMatchHistoryEntry_C::Unhovered__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "Unhovered__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventTeamMatchHistoryEntry_C_Unhovered__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "Unhovered__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -127,17 +164,17 @@ void UEventTeamMatchHistoryEntry_C::Unhovered__DelegateSignature()
 
 void UEventTeamMatchHistoryEntry_C::Hovered__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "Hovered__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventTeamMatchHistoryEntry_C_Hovered__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventTeamMatchHistoryEntry_C", "Hovered__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Border_Notification_Rectangle.Border_Notification_Rectangle_C
+// (None)
+
+class UClass* UBorder_Notification_Rectangle_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Border_Notification_Rectangle_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Border_Notification_Rectangle_C Border_Notification_Rectangle.Default__Border_Notification_Rectangle_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBorder_Notification_Rectangle_C* UBorder_Notification_Rectangle_C::GetDefaultObj()
+{
+	static class UBorder_Notification_Rectangle_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorder_Notification_Rectangle_C*>(UBorder_Notification_Rectangle_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

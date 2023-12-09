@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -40,13 +37,13 @@ struct UPlayerSurveyMultipleChoiceStandardListItem_C_MakeChoiceIndexText_Params
 {
 public:
 	int32                                        Index;                                             // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5310[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4FF9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  Text;                                              // 0x8(0x18)(Parm, OutParm)
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5311[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4FFA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x28(0x40)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x68(0x10)(ZeroConstructor, ReferenceParm)
-	class FText                                  CallFunc_Format_ReturnValue;                       // 0x78(0x18)()
+	class FText                                  CallFunc_Format_ReturnValue;                       // 0x78(0x18)(None)
 };
 
 // 0x18 (0x18 - 0x0)
@@ -54,35 +51,7 @@ public:
 struct UPlayerSurveyMultipleChoiceStandardListItem_C_UpdateChoiceIndexText_Params
 {
 public:
-	class FText                                  CallFunc_MakeChoiceIndexText_Text;                 // 0x0(0x18)()
-};
-
-// 0x0 (0x0 - 0x0)
-// Function PlayerSurveyMultipleChoiceStandardListItem.PlayerSurveyMultipleChoiceStandardListItem_C.UpdateChoiceText
-struct UPlayerSurveyMultipleChoiceStandardListItem_C_UpdateChoiceText_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function PlayerSurveyMultipleChoiceStandardListItem.PlayerSurveyMultipleChoiceStandardListItem_C.Construct
-struct UPlayerSurveyMultipleChoiceStandardListItem_C_Construct_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function PlayerSurveyMultipleChoiceStandardListItem.PlayerSurveyMultipleChoiceStandardListItem_C.BP_OnSelected
-struct UPlayerSurveyMultipleChoiceStandardListItem_C_BP_OnSelected_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function PlayerSurveyMultipleChoiceStandardListItem.PlayerSurveyMultipleChoiceStandardListItem_C.BP_OnDeselected
-struct UPlayerSurveyMultipleChoiceStandardListItem_C_BP_OnDeselected_Params
-{
-public:
+	class FText                                  CallFunc_MakeChoiceIndexText_Text;                 // 0x0(0x18)(None)
 };
 
 // 0x18 (0x18 - 0x0)
@@ -101,27 +70,18 @@ public:
 	int32                                        Value;                                             // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function PlayerSurveyMultipleChoiceStandardListItem.PlayerSurveyMultipleChoiceStandardListItem_C.OnCurrentTextStyleChanged
-struct UPlayerSurveyMultipleChoiceStandardListItem_C_OnCurrentTextStyleChanged_Params
-{
-public:
-};
-
 // 0x24 (0x24 - 0x0)
 // Function PlayerSurveyMultipleChoiceStandardListItem.PlayerSurveyMultipleChoiceStandardListItem_C.ExecuteUbergraph_PlayerSurveyMultipleChoiceStandardListItem
 struct UPlayerSurveyMultipleChoiceStandardListItem_C_ExecuteUbergraph_PlayerSurveyMultipleChoiceStandardListItem_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5312[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	struct FFortPlayerSurveyQuestionChoice       K2Node_Event_Value_1;                              // 0x8(0x18)()
+	uint8                                        Pad_4FFB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FFortPlayerSurveyQuestionChoice       K2Node_Event_Value_1;                              // 0x8(0x18)(None)
 	int32                                        K2Node_Event_Value;                                // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

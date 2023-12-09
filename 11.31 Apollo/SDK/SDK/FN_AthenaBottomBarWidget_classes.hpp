@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -23,11 +20,8 @@ public:
 	struct FSlateBrush                           MobileBackground;                                  // 0x270(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                         Display_Owner_Actions_Only;                        // 0x2F8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaBottomBarWidget_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaBottomBarWidget_C* GetDefaultObj();
 
 	void Construct();
 	void PreConstruct(bool IsDesignTime);
@@ -36,6 +30,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

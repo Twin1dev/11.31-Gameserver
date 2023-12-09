@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GC_Athena_OutsideSafeZone_Stage03.GC_Athena_OutsideSafeZone_Stage03_C
+// (Actor)
+
+class UClass* AGC_Athena_OutsideSafeZone_Stage03_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GC_Athena_OutsideSafeZone_Stage03_C");
+
+	return Clss;
+}
+
+
+// GC_Athena_OutsideSafeZone_Stage03_C GC_Athena_OutsideSafeZone_Stage03.Default__GC_Athena_OutsideSafeZone_Stage03_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGC_Athena_OutsideSafeZone_Stage03_C* AGC_Athena_OutsideSafeZone_Stage03_C::GetDefaultObj()
+{
+	static class AGC_Athena_OutsideSafeZone_Stage03_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGC_Athena_OutsideSafeZone_Stage03_C*>(AGC_Athena_OutsideSafeZone_Stage03_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GC_Athena_OutsideSafeZone_Stage03.GC_Athena_OutsideSafeZone_Stage03_C.OnLoopingStart
@@ -25,9 +50,12 @@ namespace SDK
 
 void AGC_Athena_OutsideSafeZone_Stage03_C::OnLoopingStart(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents)
 {
-	static auto Func = Class->GetFunction("GC_Athena_OutsideSafeZone_Stage03_C", "OnLoopingStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_Stage03_C", "OnLoopingStart");
+
+	Params::AGC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -49,9 +77,12 @@ void AGC_Athena_OutsideSafeZone_Stage03_C::OnLoopingStart(class AActor* MyTarget
 
 void AGC_Athena_OutsideSafeZone_Stage03_C::On_Distant_Lightning_Spawn(class FName EventName, float EmitterTime, const struct FVector& Location, const struct FVector& Velocity)
 {
-	static auto Func = Class->GetFunction("GC_Athena_OutsideSafeZone_Stage03_C", "On Distant Lightning Spawn");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Athena_OutsideSafeZone_Stage03_C_On_Distant_Lightning_Spawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_Stage03_C", "On Distant Lightning Spawn");
+
+	Params::AGC_Athena_OutsideSafeZone_Stage03_C_On_Distant_Lightning_Spawn_Params Parms{};
 
 	Parms.EventName = EventName;
 	Parms.EmitterTime = EmitterTime;
@@ -85,9 +116,12 @@ void AGC_Athena_OutsideSafeZone_Stage03_C::On_Distant_Lightning_Spawn(class FNam
 
 void AGC_Athena_OutsideSafeZone_Stage03_C::ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03(int32 EntryPoint, class AActor* K2Node_Event_MyTarget, const struct FGameplayCueParameters& K2Node_Event_Parameters, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UParticleSystemComponent* CallFunc_Array_Get_Item, class FName K2Node_CustomEvent_EventName, float K2Node_CustomEvent_EmitterTime, const struct FVector& K2Node_CustomEvent_Location, const struct FVector& K2Node_CustomEvent_Velocity, class UAudioComponent* CallFunc_SpawnSoundAtLocation_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GC_Athena_OutsideSafeZone_Stage03_C", "ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_Stage03_C", "ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03");
+
+	Params::AGC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_MyTarget = K2Node_Event_MyTarget;
@@ -112,6 +146,4 @@ void AGC_Athena_OutsideSafeZone_Stage03_C::ExecuteUbergraph_GC_Athena_OutsideSaf
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

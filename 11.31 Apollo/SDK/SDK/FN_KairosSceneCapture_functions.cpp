@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class KairosSceneCapture.KairosCaptureStatics
+// (None)
+
+class UClass* UKairosCaptureStatics::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("KairosCaptureStatics");
+
+	return Clss;
+}
+
+
+// KairosCaptureStatics KairosSceneCapture.Default__KairosCaptureStatics
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UKairosCaptureStatics* UKairosCaptureStatics::GetDefaultObj()
+{
+	static class UKairosCaptureStatics* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UKairosCaptureStatics*>(UKairosCaptureStatics::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function KairosSceneCapture.KairosCaptureStatics.ToggleAutoRotate
 // (Final, Native, Static, Public, BlueprintCallable)
 // Parameters:
@@ -22,19 +47,22 @@ namespace SDK
 
 void UKairosCaptureStatics::ToggleAutoRotate(bool bIsAutoRotateAllowed)
 {
-	static auto Func = Class->GetFunction("KairosCaptureStatics", "ToggleAutoRotate");
+	static class UFunction* Func = nullptr;
 
-	Params::UKairosCaptureStatics_ToggleAutoRotate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KairosCaptureStatics", "ToggleAutoRotate");
+
+	Params::UKairosCaptureStatics_ToggleAutoRotate_Params Parms{};
 
 	Parms.bIsAutoRotateAllowed = bIsAutoRotateAllowed;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -47,20 +75,23 @@ void UKairosCaptureStatics::ToggleAutoRotate(bool bIsAutoRotateAllowed)
 
 void UKairosCaptureStatics::PauseOrResumeSnippet(const struct FKairosSnippetParams& Params, const struct FWebJSResponse& Response)
 {
-	static auto Func = Class->GetFunction("KairosCaptureStatics", "PauseOrResumeSnippet");
+	static class UFunction* Func = nullptr;
 
-	Params::UKairosCaptureStatics_PauseOrResumeSnippet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KairosCaptureStatics", "PauseOrResumeSnippet");
+
+	Params::UKairosCaptureStatics_PauseOrResumeSnippet_Params Parms{};
 
 	Parms.Params = Params;
 	Parms.Response = Response;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -73,22 +104,81 @@ void UKairosCaptureStatics::PauseOrResumeSnippet(const struct FKairosSnippetPara
 
 class AKairosSceneManagerActor* UKairosCaptureStatics::GetSceneManager(class UObject* WorldContextObject)
 {
-	static auto Func = Class->GetFunction("KairosCaptureStatics", "GetSceneManager");
+	static class UFunction* Func = nullptr;
 
-	Params::UKairosCaptureStatics_GetSceneManager_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KairosCaptureStatics", "GetSceneManager");
+
+	Params::UKairosCaptureStatics_GetSceneManager_Params Parms{};
 
 	Parms.WorldContextObject = WorldContextObject;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class KairosSceneCapture.KairosConfig
+// (None)
+
+class UClass* UKairosConfig::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("KairosConfig");
+
+	return Clss;
+}
+
+
+// KairosConfig KairosSceneCapture.Default__KairosConfig
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UKairosConfig* UKairosConfig::GetDefaultObj()
+{
+	static class UKairosConfig* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UKairosConfig*>(UKairosConfig::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class KairosSceneCapture.KairosGameModeBase
+// (Actor)
+
+class UClass* AKairosGameModeBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("KairosGameModeBase");
+
+	return Clss;
+}
+
+
+// KairosGameModeBase KairosSceneCapture.Default__KairosGameModeBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AKairosGameModeBase* AKairosGameModeBase::GetDefaultObj()
+{
+	static class AKairosGameModeBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AKairosGameModeBase*>(AKairosGameModeBase::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -99,21 +189,52 @@ class AKairosSceneManagerActor* UKairosCaptureStatics::GetSceneManager(class UOb
 
 class UKairosConfig* AKairosGameModeBase::GetDefaultConfig()
 {
-	static auto Func = Class->GetFunction("KairosGameModeBase", "GetDefaultConfig");
+	static class UFunction* Func = nullptr;
 
-	Params::AKairosGameModeBase_GetDefaultConfig_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KairosGameModeBase", "GetDefaultConfig");
+
+	Params::AKairosGameModeBase_GetDefaultConfig_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class KairosSceneCapture.KairosHeroBase
+// (Actor)
+
+class UClass* AKairosHeroBase::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("KairosHeroBase");
+
+	return Clss;
+}
+
+
+// KairosHeroBase KairosSceneCapture.Default__KairosHeroBase
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AKairosHeroBase* AKairosHeroBase::GetDefaultObj()
+{
+	static class AKairosHeroBase* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AKairosHeroBase*>(AKairosHeroBase::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -124,18 +245,21 @@ class UKairosConfig* AKairosGameModeBase::GetDefaultConfig()
 
 bool AKairosHeroBase::EndCapture()
 {
-	static auto Func = Class->GetFunction("KairosHeroBase", "EndCapture");
+	static class UFunction* Func = nullptr;
 
-	Params::AKairosHeroBase_EndCapture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KairosHeroBase", "EndCapture");
+
+	Params::AKairosHeroBase_EndCapture_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -151,23 +275,110 @@ bool AKairosHeroBase::EndCapture()
 
 bool AKairosHeroBase::BeginCapture(const struct FKairosAnimationFramingInfo& FramingInfo, const struct FKairosCaptureParams& CaptureParams)
 {
-	static auto Func = Class->GetFunction("KairosHeroBase", "BeginCapture");
+	static class UFunction* Func = nullptr;
 
-	Params::AKairosHeroBase_BeginCapture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KairosHeroBase", "BeginCapture");
+
+	Params::AKairosHeroBase_BeginCapture_Params Parms{};
 
 	Parms.FramingInfo = FramingInfo;
 	Parms.CaptureParams = CaptureParams;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class KairosSceneCapture.KairosPawn
+// (Actor, Pawn)
+
+class UClass* AKairosPawn::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("KairosPawn");
+
+	return Clss;
+}
+
+
+// KairosPawn KairosSceneCapture.Default__KairosPawn
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AKairosPawn* AKairosPawn::GetDefaultObj()
+{
+	static class AKairosPawn* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AKairosPawn*>(AKairosPawn::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class KairosSceneCapture.KairosPlayerController
+// (Actor, PlayerController)
+
+class UClass* AKairosPlayerController::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("KairosPlayerController");
+
+	return Clss;
+}
+
+
+// KairosPlayerController KairosSceneCapture.Default__KairosPlayerController
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AKairosPlayerController* AKairosPlayerController::GetDefaultObj()
+{
+	static class AKairosPlayerController* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AKairosPlayerController*>(AKairosPlayerController::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class KairosSceneCapture.KairosSceneManagerActor
+// (Actor)
+
+class UClass* AKairosSceneManagerActor::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("KairosSceneManagerActor");
+
+	return Clss;
+}
+
+
+// KairosSceneManagerActor KairosSceneCapture.Default__KairosSceneManagerActor
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AKairosSceneManagerActor* AKairosSceneManagerActor::GetDefaultObj()
+{
+	static class AKairosSceneManagerActor* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AKairosSceneManagerActor*>(AKairosSceneManagerActor::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -177,18 +388,20 @@ bool AKairosHeroBase::BeginCapture(const struct FKairosAnimationFramingInfo& Fra
 
 void AKairosSceneManagerActor::StopAR()
 {
-	static auto Func = Class->GetFunction("KairosSceneManagerActor", "StopAR");
+	static class UFunction* Func = nullptr;
 
-	Params::AKairosSceneManagerActor_StopAR_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KairosSceneManagerActor", "StopAR");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -201,20 +414,23 @@ void AKairosSceneManagerActor::StopAR()
 
 void AKairosSceneManagerActor::PauseOrResumeSnippet(const class FString& PlayerID, bool bShouldPase)
 {
-	static auto Func = Class->GetFunction("KairosSceneManagerActor", "PauseOrResumeSnippet");
+	static class UFunction* Func = nullptr;
 
-	Params::AKairosSceneManagerActor_PauseOrResumeSnippet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KairosSceneManagerActor", "PauseOrResumeSnippet");
+
+	Params::AKairosSceneManagerActor_PauseOrResumeSnippet_Params Parms{};
 
 	Parms.PlayerID = PlayerID;
 	Parms.bShouldPase = bShouldPase;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -226,9 +442,12 @@ void AKairosSceneManagerActor::PauseOrResumeSnippet(const class FString& PlayerI
 
 void AKairosSceneManagerActor::OLD_OnSceneSetupComplete(const struct FKairosSceneInfo& CompleteSceneInfoCopy)
 {
-	static auto Func = Class->GetFunction("KairosSceneManagerActor", "OLD_OnSceneSetupComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::AKairosSceneManagerActor_OLD_OnSceneSetupComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KairosSceneManagerActor", "OLD_OnSceneSetupComplete");
+
+	Params::AKairosSceneManagerActor_OLD_OnSceneSetupComplete_Params Parms{};
 
 	Parms.CompleteSceneInfoCopy = CompleteSceneInfoCopy;
 
@@ -244,18 +463,21 @@ void AKairosSceneManagerActor::OLD_OnSceneSetupComplete(const struct FKairosScen
 
 struct FKairosSceneInfo AKairosSceneManagerActor::GetSceneInfo()
 {
-	static auto Func = Class->GetFunction("KairosSceneManagerActor", "GetSceneInfo");
+	static class UFunction* Func = nullptr;
 
-	Params::AKairosSceneManagerActor_GetSceneInfo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KairosSceneManagerActor", "GetSceneInfo");
+
+	Params::AKairosSceneManagerActor_GetSceneInfo_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -270,25 +492,26 @@ struct FKairosSceneInfo AKairosSceneManagerActor::GetSceneInfo()
 
 void AKairosSceneManagerActor::BeginEmotePlaybackForPlayer(const class FString& PlayerID, const class FString& EmoteID)
 {
-	static auto Func = Class->GetFunction("KairosSceneManagerActor", "BeginEmotePlaybackForPlayer");
+	static class UFunction* Func = nullptr;
 
-	Params::AKairosSceneManagerActor_BeginEmotePlaybackForPlayer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KairosSceneManagerActor", "BeginEmotePlaybackForPlayer");
+
+	Params::AKairosSceneManagerActor_BeginEmotePlaybackForPlayer_Params Parms{};
 
 	Parms.PlayerID = PlayerID;
 	Parms.EmoteID = EmoteID;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

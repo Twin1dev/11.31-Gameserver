@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_SprayDecal.BP_SprayDecal_C
+// (Actor)
+
+class UClass* ABP_SprayDecal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_SprayDecal_C");
+
+	return Clss;
+}
+
+
+// BP_SprayDecal_C BP_SprayDecal.Default__BP_SprayDecal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_SprayDecal_C* ABP_SprayDecal_C::GetDefaultObj()
+{
+	static class ABP_SprayDecal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_SprayDecal_C*>(ABP_SprayDecal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BP_SprayDecal.BP_SprayDecal_C.AddBoxCollisionForCreative
@@ -26,9 +51,12 @@ namespace SDK
 
 void ABP_SprayDecal_C::AddBoxCollisionForCreative(float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue, class UBoxComponent* CallFunc_AddComponent_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "AddBoxCollisionForCreative");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_AddBoxCollisionForCreative_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "AddBoxCollisionForCreative");
+
+	Params::ABP_SprayDecal_C_AddBoxCollisionForCreative_Params Parms{};
 
 	Parms.CallFunc_Multiply_FloatFloat_ReturnValue = CallFunc_Multiply_FloatFloat_ReturnValue;
 	Parms.CallFunc_MakeVector_ReturnValue = CallFunc_MakeVector_ReturnValue;
@@ -63,7 +91,7 @@ void ABP_SprayDecal_C::AddBoxCollisionForCreative(float CallFunc_Multiply_FloatF
 // class ABuildingActor*              K2Node_DynamicCast_AsBuilding_Actor                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TScriptInterface<class IGameplayTagAssetInterface>CallFunc_GetOwnedGameplayTags_self_CastInput                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayTagContainer       CallFunc_GetOwnedGameplayTags_TagContainer                       ()
+// struct FGameplayTagContainer       CallFunc_GetOwnedGameplayTags_TagContainer                       (None)
 // bool                               CallFunc_DoesImplementInterface_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_SendComplexCustomStatEvent_QuestActive                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_SendComplexCustomStatEvent_QuestCompleted               (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -78,9 +106,12 @@ void ABP_SprayDecal_C::AddBoxCollisionForCreative(float CallFunc_Multiply_FloatF
 
 void ABP_SprayDecal_C::FindNearbyBuildingActorsAndBindDelegates(int32 Temp_int_Array_Index_Variable, class AGameStateBase* CallFunc_GetGameState_ReturnValue, bool CallFunc_Athena_CheckCreativeMode_CanCompleteQuest, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, TArray<class AActor*>& K2Node_MakeArray_Array, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class AActor* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class ABP_SprayDecal_C* K2Node_DynamicCast_AsBP_Spray_Decal, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Less_IntInt_ReturnValue, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor, bool K2Node_DynamicCast_bSuccess_1, TScriptInterface<class IGameplayTagAssetInterface> CallFunc_GetOwnedGameplayTags_self_CastInput, const struct FGameplayTagContainer& CallFunc_GetOwnedGameplayTags_TagContainer, bool CallFunc_DoesImplementInterface_ReturnValue, bool CallFunc_SendComplexCustomStatEvent_QuestActive, bool CallFunc_SendComplexCustomStatEvent_QuestCompleted, class ABuildingSMActor* K2Node_DynamicCast_AsBuilding_SMActor, bool K2Node_DynamicCast_bSuccess_2, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, TArray<enum class EObjectTypeQuery>& K2Node_MakeArray_Array_1, const struct FVector& CallFunc_Conv_FloatToVector_ReturnValue, TArray<class AActor*>& CallFunc_BoxOverlapActors_OutActors, bool CallFunc_BoxOverlapActors_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "FindNearbyBuildingActorsAndBindDelegates");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "FindNearbyBuildingActorsAndBindDelegates");
+
+	Params::ABP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.CallFunc_GetGameState_ReturnValue = CallFunc_GetGameState_ReturnValue;
@@ -139,9 +170,12 @@ void ABP_SprayDecal_C::FindNearbyBuildingActorsAndBindDelegates(int32 Temp_int_A
 
 void ABP_SprayDecal_C::UnbindAndClearNearbyBuildingActors(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, int32 CallFunc_Array_Length_ReturnValue, class AActor* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor, bool K2Node_DynamicCast_bSuccess, class ABuildingSMActor* K2Node_DynamicCast_AsBuilding_SMActor, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "UnbindAndClearNearbyBuildingActors");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_UnbindAndClearNearbyBuildingActors_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "UnbindAndClearNearbyBuildingActors");
+
+	Params::ABP_SprayDecal_C_UnbindAndClearNearbyBuildingActors_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -171,9 +205,12 @@ void ABP_SprayDecal_C::UnbindAndClearNearbyBuildingActors(int32 Temp_int_Array_I
 
 void ABP_SprayDecal_C::OnRep_DecalFadeoutTime(bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "OnRep_DecalFadeoutTime");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_OnRep_DecalFadeoutTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "OnRep_DecalFadeoutTime");
+
+	Params::ABP_SprayDecal_C_OnRep_DecalFadeoutTime_Params Parms{};
 
 	Parms.CallFunc_Greater_FloatFloat_ReturnValue = CallFunc_Greater_FloatFloat_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -192,9 +229,12 @@ void ABP_SprayDecal_C::OnRep_DecalFadeoutTime(bool CallFunc_Greater_FloatFloat_R
 
 struct FUniqueNetIdRepl ABP_SprayDecal_C::GetInstigatorPlayerId(class AFortPlayerController* TestController, const struct FUniqueNetIdRepl& CallFunc_GetGameAccountId_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "GetInstigatorPlayerId");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_GetInstigatorPlayerId_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "GetInstigatorPlayerId");
+
+	Params::ABP_SprayDecal_C_GetInstigatorPlayerId_Params Parms{};
 
 	Parms.TestController = TestController;
 	Parms.CallFunc_GetGameAccountId_ReturnValue = CallFunc_GetGameAccountId_ReturnValue;
@@ -221,9 +261,12 @@ struct FUniqueNetIdRepl ABP_SprayDecal_C::GetInstigatorPlayerId(class AFortPlaye
 
 void ABP_SprayDecal_C::CreateDecalComponents(float CallFunc_GetRealTimeSeconds_ReturnValue, const struct FTransform& Temp_struct_Variable, float CallFunc_Add_FloatFloat_ReturnValue, class UDecalComponent* CallFunc_AddComponent_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, bool CallFunc_ShouldUseBannerAsTexture_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "CreateDecalComponents");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_CreateDecalComponents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "CreateDecalComponents");
+
+	Params::ABP_SprayDecal_C_CreateDecalComponents_Params Parms{};
 
 	Parms.CallFunc_GetRealTimeSeconds_ReturnValue = CallFunc_GetRealTimeSeconds_ReturnValue;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
@@ -246,12 +289,14 @@ void ABP_SprayDecal_C::CreateDecalComponents(float CallFunc_GetRealTimeSeconds_R
 
 void ABP_SprayDecal_C::UserConstructionScript()
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "UserConstructionScript");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -263,9 +308,12 @@ void ABP_SprayDecal_C::UserConstructionScript()
 
 void ABP_SprayDecal_C::OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA");
+
+	Params::ABP_SprayDecal_C_OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -281,9 +329,12 @@ void ABP_SprayDecal_C::OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA(class UObject* 
 
 void ABP_SprayDecal_C::OnLoaded_F925FF00475A018319C73E9FB1540BC6(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "OnLoaded_F925FF00475A018319C73E9FB1540BC6");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_OnLoaded_F925FF00475A018319C73E9FB1540BC6_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "OnLoaded_F925FF00475A018319C73E9FB1540BC6");
+
+	Params::ABP_SprayDecal_C_OnLoaded_F925FF00475A018319C73E9FB1540BC6_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -301,9 +352,12 @@ void ABP_SprayDecal_C::OnLoaded_F925FF00475A018319C73E9FB1540BC6(class UObject* 
 
 void ABP_SprayDecal_C::OnReady_B252FED346EAB98D54D786BD15C1CC7B(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "OnReady_B252FED346EAB98D54D786BD15C1CC7B");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_OnReady_B252FED346EAB98D54D786BD15C1CC7B_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "OnReady_B252FED346EAB98D54D786BD15C1CC7B");
+
+	Params::ABP_SprayDecal_C_OnReady_B252FED346EAB98D54D786BD15C1CC7B_Params Parms{};
 
 	Parms.GameState = GameState;
 	Parms.Playlist = Playlist;
@@ -320,12 +374,14 @@ void ABP_SprayDecal_C::OnReady_B252FED346EAB98D54D786BD15C1CC7B(class AFortGameS
 
 void ABP_SprayDecal_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -336,12 +392,14 @@ void ABP_SprayDecal_C::ReceiveBeginPlay()
 
 void ABP_SprayDecal_C::OnSprayAssetReplicatedDown()
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "OnSprayAssetReplicatedDown");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_OnSprayAssetReplicatedDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "OnSprayAssetReplicatedDown");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -352,12 +410,14 @@ void ABP_SprayDecal_C::OnSprayAssetReplicatedDown()
 
 void ABP_SprayDecal_C::OnSprayInfoReady()
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "OnSprayInfoReady");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_OnSprayInfoReady_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "OnSprayInfoReady");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -368,12 +428,14 @@ void ABP_SprayDecal_C::OnSprayInfoReady()
 
 void ABP_SprayDecal_C::StartSprayFadeOutDueToNewPlacement()
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "StartSprayFadeOutDueToNewPlacement");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_StartSprayFadeOutDueToNewPlacement_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "StartSprayFadeOutDueToNewPlacement");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -392,9 +454,12 @@ void ABP_SprayDecal_C::StartSprayFadeOutDueToNewPlacement()
 
 void ABP_SprayDecal_C::OnNearbyWallDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "OnNearbyWallDied");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_OnNearbyWallDied_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "OnNearbyWallDied");
+
+	Params::ABP_SprayDecal_C_OnNearbyWallDied_Params Parms{};
 
 	Parms.DamagedActor = DamagedActor;
 	Parms.Damage = Damage;
@@ -424,9 +489,12 @@ void ABP_SprayDecal_C::OnNearbyWallDied(class AActor* DamagedActor, float Damage
 
 void ABP_SprayDecal_C::OnNearbyWallDamaged(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "OnNearbyWallDamaged");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_OnNearbyWallDamaged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "OnNearbyWallDamaged");
+
+	Params::ABP_SprayDecal_C_OnNearbyWallDamaged_Params Parms{};
 
 	Parms.DamagedActor = DamagedActor;
 	Parms.Damage = Damage;
@@ -448,12 +516,14 @@ void ABP_SprayDecal_C::OnNearbyWallDamaged(class AActor* DamagedActor, float Dam
 
 void ABP_SprayDecal_C::OnBounceOccurs()
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "OnBounceOccurs");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_OnBounceOccurs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "OnBounceOccurs");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -466,9 +536,12 @@ void ABP_SprayDecal_C::OnBounceOccurs()
 
 void ABP_SprayDecal_C::OnNearbyTrapPlaced(class ABuildingTrap* Trap, bool bDetatched)
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "OnNearbyTrapPlaced");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_OnNearbyTrapPlaced_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "OnNearbyTrapPlaced");
+
+	Params::ABP_SprayDecal_C_OnNearbyTrapPlaced_Params Parms{};
 
 	Parms.Trap = Trap;
 	Parms.bDetatched = bDetatched;
@@ -484,12 +557,14 @@ void ABP_SprayDecal_C::OnNearbyTrapPlaced(class ABuildingTrap* Trap, bool bDetat
 
 void ABP_SprayDecal_C::PostLevelSaveSpawnCleanup()
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "PostLevelSaveSpawnCleanup");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_PostLevelSaveSpawnCleanup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "PostLevelSaveSpawnCleanup");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -501,9 +576,12 @@ void ABP_SprayDecal_C::PostLevelSaveSpawnCleanup()
 
 void ABP_SprayDecal_C::OnWallDestoryed(class AActor* DestroyedActor)
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "OnWallDestoryed");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_OnWallDestoryed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "OnWallDestoryed");
+
+	Params::ABP_SprayDecal_C_OnWallDestoryed_Params Parms{};
 
 	Parms.DestroyedActor = DestroyedActor;
 
@@ -520,7 +598,7 @@ void ABP_SprayDecal_C::OnWallDestoryed(class AActor* DestroyedActor)
 // class UFortPlaylist*               K2Node_CustomEvent_Playlist                                      (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTagContainer       K2Node_CustomEvent_PlaylistContextTags                           (ConstParm)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// struct FGameplayTagContainer       Temp_struct_Variable                                             ()
+// struct FGameplayTagContainer       Temp_struct_Variable                                             (None)
 // class UFortPlaylist*               Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortGameStateAthena*        Temp_object_Variable_1                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortAsyncAction_CurrentPlaylistReady*CallFunc_PlaylistDataReadyAsync_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -590,9 +668,12 @@ void ABP_SprayDecal_C::OnWallDestoryed(class AActor* DestroyedActor)
 
 void ABP_SprayDecal_C::ExecuteUbergraph_BP_SprayDecal(int32 EntryPoint, class AFortGameStateAthena* K2Node_CustomEvent_GameState, class UFortPlaylist* K2Node_CustomEvent_Playlist, const struct FGameplayTagContainer& K2Node_CustomEvent_PlaylistContextTags, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FGameplayTagContainer& Temp_struct_Variable, class UFortPlaylist* Temp_object_Variable, class AFortGameStateAthena* Temp_object_Variable_1, class UFortAsyncAction_CurrentPlaylistReady* CallFunc_PlaylistDataReadyAsync_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsCreativeModePlaylist_ReturnValue, bool Temp_bool_IsClosed_Variable, bool Temp_bool_Has_Been_Initd_Variable, bool CallFunc_HasAuthority_ReturnValue, class UObject* Temp_object_Variable_2, class UMaterialInterface* K2Node_DynamicCast_AsMaterial_Interface, bool K2Node_DynamicCast_bSuccess, bool CallFunc_HasAuthority_ReturnValue_1, TSoftObjectPtr<class UMaterialInterface> CallFunc_GetDecalMaterial_ReturnValue, int32 Temp_int_Variable, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_IsAssetNull_ReturnValue, class UObject* K2Node_CustomEvent_Loaded_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, TSoftObjectPtr<class UTexture2D> CallFunc_GetDecalTexture_ReturnValue, class UObject* Temp_object_Variable_3, class UTexture2D* K2Node_DynamicCast_AsTexture_2D, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_ShouldUseBannerAsTexture_ReturnValue, const struct FHomebaseBannerColor& CallFunc_GetBannerColorFromRowName_ReturnValue, TSoftObjectPtr<class UTexture2D> CallFunc_GetBannerLargeIconAssetFromRowName_ReturnValue, const struct FLinearColor& CallFunc_GetSecondaryColor_ReturnValue, const struct FLinearColor& CallFunc_GetPrimaryColor_ReturnValue, bool CallFunc_NotEqual_NameName_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_NotEqual_NameName_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_1, class UObject* K2Node_CustomEvent_Loaded, int32 Temp_int_Variable_1, class AActor* K2Node_CustomEvent_DamagedActor_1, float K2Node_CustomEvent_Damage_1, class AController* K2Node_CustomEvent_InstigatedBy_1, class AActor* K2Node_CustomEvent_DamageCauser_1, const struct FVector& K2Node_CustomEvent_HitLocation_1, class UPrimitiveComponent* K2Node_CustomEvent_FHitComponent_1, class FName K2Node_CustomEvent_BoneName_1, const struct FVector& K2Node_CustomEvent_Momentum_1, class AActor* K2Node_CustomEvent_DamagedActor, float K2Node_CustomEvent_Damage, class AController* K2Node_CustomEvent_InstigatedBy, class AActor* K2Node_CustomEvent_DamageCauser, const struct FVector& K2Node_CustomEvent_HitLocation, class UPrimitiveComponent* K2Node_CustomEvent_FHitComponent, class FName K2Node_CustomEvent_BoneName, const struct FVector& K2Node_CustomEvent_Momentum, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, class ABuildingTrap* K2Node_CustomEvent_Trap, bool K2Node_CustomEvent_bDetatched, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, bool CallFunc_IsValid_ReturnValue_1, int32 Temp_int_Variable_2, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue_2, class AActor* K2Node_CustomEvent_DestroyedActor, bool Temp_bool_Variable, const struct FRotator& CallFunc_MakeRotator_ReturnValue, int32 K2Node_Select_Default, bool CallFunc_HasPermissionToEditWorld_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_SprayDecal_C", "ExecuteUbergraph_BP_SprayDecal");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_SprayDecal_C", "ExecuteUbergraph_BP_SprayDecal");
+
+	Params::ABP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_GameState = K2Node_CustomEvent_GameState;
@@ -673,6 +754,4 @@ void ABP_SprayDecal_C::ExecuteUbergraph_BP_SprayDecal(int32 EntryPoint, class AF
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

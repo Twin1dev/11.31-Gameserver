@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Athena_HidingProp_HidingInProp.GA_Athena_HidingProp_HidingInProp_C
+// (None)
+
+class UClass* UGA_Athena_HidingProp_HidingInProp_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Athena_HidingProp_HidingInProp_C");
+
+	return Clss;
+}
+
+
+// GA_Athena_HidingProp_HidingInProp_C GA_Athena_HidingProp_HidingInProp.Default__GA_Athena_HidingProp_HidingInProp_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Athena_HidingProp_HidingInProp_C* UGA_Athena_HidingProp_HidingInProp_C::GetDefaultObj()
+{
+	static class UGA_Athena_HidingProp_HidingInProp_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Athena_HidingProp_HidingInProp_C*>(UGA_Athena_HidingProp_HidingInProp_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Athena_HidingProp_HidingInProp.GA_Athena_HidingProp_HidingInProp_C.K2_ActivateAbility
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UGA_Athena_HidingProp_HidingInProp_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Athena_HidingProp_HidingInProp_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_HidingProp_HidingInProp_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_HidingProp_HidingInProp_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UGA_Athena_HidingProp_HidingInProp_C::K2_ActivateAbility()
 
 void UGA_Athena_HidingProp_HidingInProp_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GA_Athena_HidingProp_HidingInProp_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_HidingProp_HidingInProp_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_HidingProp_HidingInProp_C", "K2_OnEndAbility");
+
+	Params::UGA_Athena_HidingProp_HidingInProp_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -64,9 +94,12 @@ void UGA_Athena_HidingProp_HidingInProp_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Athena_HidingProp_HidingInProp_C::ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp(int32 EntryPoint, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue_1, bool K2Node_Event_bWasCancelled, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_1, bool K2Node_DynamicCast_bSuccess_1, float CallFunc_PlayAnimMontage_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_Athena_HidingProp_HidingInProp_C", "ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_HidingProp_HidingInProp_C", "ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp");
+
+	Params::UGA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetAvatarActorFromActorInfo_ReturnValue = CallFunc_GetAvatarActorFromActorInfo_ReturnValue;
@@ -84,6 +117,4 @@ void UGA_Athena_HidingProp_HidingInProp_C::ExecuteUbergraph_GA_Athena_HidingProp
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

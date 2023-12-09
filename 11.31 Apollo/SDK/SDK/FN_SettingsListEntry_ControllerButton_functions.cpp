@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SettingsListEntry_ControllerButton.SettingsListEntry_ControllerButton_C
+// (None)
+
+class UClass* USettingsListEntry_ControllerButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SettingsListEntry_ControllerButton_C");
+
+	return Clss;
+}
+
+
+// SettingsListEntry_ControllerButton_C SettingsListEntry_ControllerButton.Default__SettingsListEntry_ControllerButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USettingsListEntry_ControllerButton_C* USettingsListEntry_ControllerButton_C::GetDefaultObj()
+{
+	static class USettingsListEntry_ControllerButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USettingsListEntry_ControllerButton_C*>(USettingsListEntry_ControllerButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SettingsListEntry_ControllerButton.SettingsListEntry_ControllerButton_C.OnSettingAssigned
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void USettingsListEntry_ControllerButton_C::OnSettingAssigned(class FText& ActionText)
 {
-	static auto Func = Class->GetFunction("SettingsListEntry_ControllerButton_C", "OnSettingAssigned");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingsListEntry_ControllerButton_C_OnSettingAssigned_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingsListEntry_ControllerButton_C", "OnSettingAssigned");
+
+	Params::USettingsListEntry_ControllerButton_C_OnSettingAssigned_Params Parms{};
 
 	Parms.ActionText = ActionText;
 
@@ -41,9 +69,12 @@ void USettingsListEntry_ControllerButton_C::OnSettingAssigned(class FText& Actio
 
 void USettingsListEntry_ControllerButton_C::ExecuteUbergraph_SettingsListEntry_ControllerButton(int32 EntryPoint, class FText K2Node_Event_ActionText)
 {
-	static auto Func = Class->GetFunction("SettingsListEntry_ControllerButton_C", "ExecuteUbergraph_SettingsListEntry_ControllerButton");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingsListEntry_ControllerButton_C_ExecuteUbergraph_SettingsListEntry_ControllerButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingsListEntry_ControllerButton_C", "ExecuteUbergraph_SettingsListEntry_ControllerButton");
+
+	Params::USettingsListEntry_ControllerButton_C_ExecuteUbergraph_SettingsListEntry_ControllerButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_ActionText = K2Node_Event_ActionText;
@@ -54,6 +85,4 @@ void USettingsListEntry_ControllerButton_C::ExecuteUbergraph_SettingsListEntry_C
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

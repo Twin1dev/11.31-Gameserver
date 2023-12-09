@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ComScreenTile.ComScreenTile_C
+// (None)
+
+class UClass* UComScreenTile_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ComScreenTile_C");
+
+	return Clss;
+}
+
+
+// ComScreenTile_C ComScreenTile.Default__ComScreenTile_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UComScreenTile_C* UComScreenTile_C::GetDefaultObj()
+{
+	static class UComScreenTile_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UComScreenTile_C*>(UComScreenTile_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ComScreenTile.ComScreenTile_C.BP_OnEntryReleased
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UComScreenTile_C::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("ComScreenTile_C", "BP_OnEntryReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UComScreenTile_C_BP_OnEntryReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComScreenTile_C", "BP_OnEntryReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UComScreenTile_C::BP_OnEntryReleased()
 
 void UComScreenTile_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("ComScreenTile_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UComScreenTile_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComScreenTile_C", "BP_OnItemExpansionChanged");
+
+	Params::UComScreenTile_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -56,9 +86,12 @@ void UComScreenTile_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UComScreenTile_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("ComScreenTile_C", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UComScreenTile_C_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComScreenTile_C", "BP_OnItemSelectionChanged");
+
+	Params::UComScreenTile_C_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -74,9 +107,12 @@ void UComScreenTile_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UComScreenTile_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("ComScreenTile_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UComScreenTile_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComScreenTile_C", "OnListItemObjectSet");
+
+	Params::UComScreenTile_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -95,9 +131,12 @@ void UComScreenTile_C::OnListItemObjectSet(class UObject* ListItemObject)
 
 void UComScreenTile_C::ExecuteUbergraph_ComScreenTile(int32 EntryPoint, class UObject* K2Node_Event_ListItemObject, bool K2Node_Event_bIsExpanded, bool K2Node_Event_bIsSelected)
 {
-	static auto Func = Class->GetFunction("ComScreenTile_C", "ExecuteUbergraph_ComScreenTile");
+	static class UFunction* Func = nullptr;
 
-	Params::UComScreenTile_C_ExecuteUbergraph_ComScreenTile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComScreenTile_C", "ExecuteUbergraph_ComScreenTile");
+
+	Params::UComScreenTile_C_ExecuteUbergraph_ComScreenTile_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_ListItemObject = K2Node_Event_ListItemObject;
@@ -110,6 +149,4 @@ void UComScreenTile_C::ExecuteUbergraph_ComScreenTile(int32 EntryPoint, class UO
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

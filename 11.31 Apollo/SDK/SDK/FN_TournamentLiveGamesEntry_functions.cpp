@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TournamentLiveGamesEntry.TournamentLiveGamesEntry_C
+// (None)
+
+class UClass* UTournamentLiveGamesEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TournamentLiveGamesEntry_C");
+
+	return Clss;
+}
+
+
+// TournamentLiveGamesEntry_C TournamentLiveGamesEntry.Default__TournamentLiveGamesEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTournamentLiveGamesEntry_C* UTournamentLiveGamesEntry_C::GetDefaultObj()
+{
+	static class UTournamentLiveGamesEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTournamentLiveGamesEntry_C*>(UTournamentLiveGamesEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TournamentLiveGamesEntry.TournamentLiveGamesEntry_C.OnEntrySet
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UTournamentLiveGamesEntry_C::OnEntrySet(int32 EntryIndex)
 {
-	static auto Func = Class->GetFunction("TournamentLiveGamesEntry_C", "OnEntrySet");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentLiveGamesEntry_C_OnEntrySet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentLiveGamesEntry_C", "OnEntrySet");
+
+	Params::UTournamentLiveGamesEntry_C_OnEntrySet_Params Parms{};
 
 	Parms.EntryIndex = EntryIndex;
 
@@ -39,12 +67,14 @@ void UTournamentLiveGamesEntry_C::OnEntrySet(int32 EntryIndex)
 
 void UTournamentLiveGamesEntry_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("TournamentLiveGamesEntry_C", "BP_OnSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentLiveGamesEntry_C_BP_OnSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentLiveGamesEntry_C", "BP_OnSelected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void UTournamentLiveGamesEntry_C::BP_OnSelected()
 
 void UTournamentLiveGamesEntry_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("TournamentLiveGamesEntry_C", "BP_OnDeselected");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentLiveGamesEntry_C_BP_OnDeselected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentLiveGamesEntry_C", "BP_OnDeselected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -81,9 +113,12 @@ void UTournamentLiveGamesEntry_C::BP_OnDeselected()
 
 void UTournamentLiveGamesEntry_C::ExecuteUbergraph_TournamentLiveGamesEntry(int32 EntryPoint, bool Temp_bool_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, int32 K2Node_Event_EntryIndex, int32 CallFunc_Percent_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, const struct FLinearColor& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("TournamentLiveGamesEntry_C", "ExecuteUbergraph_TournamentLiveGamesEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentLiveGamesEntry_C_ExecuteUbergraph_TournamentLiveGamesEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentLiveGamesEntry_C", "ExecuteUbergraph_TournamentLiveGamesEntry");
+
+	Params::UTournamentLiveGamesEntry_C_ExecuteUbergraph_TournamentLiveGamesEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -102,6 +137,4 @@ void UTournamentLiveGamesEntry_C::ExecuteUbergraph_TournamentLiveGamesEntry(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

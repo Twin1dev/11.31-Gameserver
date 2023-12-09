@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -14,20 +11,15 @@ namespace SDK
 
 // 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Header-M-BrightBlue.TextStyle-Header-M-BrightBlue_C
-class UTextStyle_Header_M_BrightBlue_C : public UTextStyle_HeaderParent_C
+class UTextStyleMinusHeaderMinusMMinusBrightBlue_C : public UTextStyleMinusHeaderParent_C
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("TextStyle-Header-M-BrightBlue_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UTextStyleMinusHeaderMinusMMinusBrightBlue_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

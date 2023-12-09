@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// Class FacialAnimSystem.FacialLiveLinkRemapAsset
+// (None)
+
+class UClass* UFacialLiveLinkRemapAsset::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FacialLiveLinkRemapAsset");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// FacialLiveLinkRemapAsset FacialAnimSystem.Default__FacialLiveLinkRemapAsset
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UFacialLiveLinkRemapAsset* UFacialLiveLinkRemapAsset::GetDefaultObj()
+{
+	static class UFacialLiveLinkRemapAsset* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFacialLiveLinkRemapAsset*>(UFacialLiveLinkRemapAsset::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

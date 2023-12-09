@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,20 +12,51 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SkewButton.SkewButton_C
+// (None)
+
+class UClass* USkewButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SkewButton_C");
+
+	return Clss;
+}
+
+
+// SkewButton_C SkewButton.Default__SkewButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USkewButton_C* USkewButton_C::GetDefaultObj()
+{
+	static class USkewButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USkewButton_C*>(USkewButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SkewButton.SkewButton_C.OnMouseButtonUp
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FPointerEvent               MouseEvent                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 struct FEventReply USkewButton_C::OnMouseButtonUp(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Unhandled_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SkewButton_C", "OnMouseButtonUp");
+	static class UFunction* Func = nullptr;
 
-	Params::USkewButton_C_OnMouseButtonUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SkewButton_C", "OnMouseButtonUp");
+
+	Params::USkewButton_C_OnMouseButtonUp_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -48,14 +76,17 @@ struct FEventReply USkewButton_C::OnMouseButtonUp(const struct FGeometry& MyGeom
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FPointerEvent               MouseEvent                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 struct FEventReply USkewButton_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Unhandled_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SkewButton_C", "OnMouseButtonDown");
+	static class UFunction* Func = nullptr;
 
-	Params::USkewButton_C_OnMouseButtonDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SkewButton_C", "OnMouseButtonDown");
+
+	Params::USkewButton_C_OnMouseButtonDown_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -75,14 +106,17 @@ struct FEventReply USkewButton_C::OnMouseButtonDown(const struct FGeometry& MyGe
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FPointerEvent               InTouchEvent                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 struct FEventReply USkewButton_C::OnTouchEnded(const struct FGeometry& MyGeometry, struct FPointerEvent& InTouchEvent, const struct FEventReply& CallFunc_Unhandled_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SkewButton_C", "OnTouchEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::USkewButton_C_OnTouchEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SkewButton_C", "OnTouchEnded");
+
+	Params::USkewButton_C_OnTouchEnded_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InTouchEvent = InTouchEvent;
@@ -102,14 +136,17 @@ struct FEventReply USkewButton_C::OnTouchEnded(const struct FGeometry& MyGeometr
 // struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 // struct FPointerEvent               InTouchEvent                                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 struct FEventReply USkewButton_C::OnTouchStarted(const struct FGeometry& MyGeometry, struct FPointerEvent& InTouchEvent, const struct FEventReply& CallFunc_Unhandled_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SkewButton_C", "OnTouchStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::USkewButton_C_OnTouchStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SkewButton_C", "OnTouchStarted");
+
+	Params::USkewButton_C_OnTouchStarted_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InTouchEvent = InTouchEvent;
@@ -129,12 +166,14 @@ struct FEventReply USkewButton_C::OnTouchStarted(const struct FGeometry& MyGeome
 
 void USkewButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("SkewButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::USkewButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SkewButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -147,9 +186,12 @@ void USkewButton_C::Construct()
 
 void USkewButton_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("SkewButton_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::USkewButton_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SkewButton_C", "OnMouseEnter");
+
+	Params::USkewButton_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -165,12 +207,14 @@ void USkewButton_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPoi
 
 void USkewButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("SkewButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USkewButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SkewButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -181,12 +225,14 @@ void USkewButton_C::BP_OnHovered()
 
 void USkewButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("SkewButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USkewButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SkewButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -198,9 +244,12 @@ void USkewButton_C::BP_OnUnhovered()
 
 void USkewButton_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("SkewButton_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::USkewButton_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SkewButton_C", "OnMouseLeave");
+
+	Params::USkewButton_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -215,12 +264,14 @@ void USkewButton_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 
 void USkewButton_C::BP_OnClicked()
 {
-	static auto Func = Class->GetFunction("SkewButton_C", "BP_OnClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::USkewButton_C_BP_OnClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SkewButton_C", "BP_OnClicked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -232,9 +283,12 @@ void USkewButton_C::BP_OnClicked()
 
 void USkewButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("SkewButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::USkewButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SkewButton_C", "PreConstruct");
+
+	Params::USkewButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -278,9 +332,12 @@ void USkewButton_C::PreConstruct(bool IsDesignTime)
 
 void USkewButton_C::ExecuteUbergraph_SkewButton(int32 EntryPoint, bool Temp_bool_Variable, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue_1, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, float CallFunc_RGBToHSV_H, float CallFunc_RGBToHSV_S, float CallFunc_RGBToHSV_V, float CallFunc_RGBToHSV_A, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, const struct FLinearColor& CallFunc_HSVToRGB_ReturnValue, bool Temp_bool_Variable_1, class UMaterialInterface* Temp_object_Variable, class UMaterialInterface* Temp_object_Variable_1, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, class UMaterialInterface* K2Node_Select_Default, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, const struct FPointerEvent& K2Node_Event_MouseEvent, bool K2Node_Event_IsDesignTime, float CallFunc_BreakColor_R, float CallFunc_BreakColor_G, float CallFunc_BreakColor_B, float CallFunc_BreakColor_A, bool CallFunc_EqualEqual_FloatFloat_ReturnValue, const struct FLinearColor& K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("SkewButton_C", "ExecuteUbergraph_SkewButton");
+	static class UFunction* Func = nullptr;
 
-	Params::USkewButton_C_ExecuteUbergraph_SkewButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SkewButton_C", "ExecuteUbergraph_SkewButton");
+
+	Params::USkewButton_C_ExecuteUbergraph_SkewButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -318,6 +375,4 @@ void USkewButton_C::ExecuteUbergraph_SkewButton(int32 EntryPoint, bool Temp_bool
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

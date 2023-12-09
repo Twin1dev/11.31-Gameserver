@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,13 +12,6 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
-
-// 0x0 (0x0 - 0x0)
-// Function NetUI.BadNetworkIndicator.UpdateDisplay
-struct UBadNetworkIndicator_UpdateDisplay_Params
-{
-public:
-};
 
 // 0x1 (0x1 - 0x0)
 // Function NetUI.BadNetworkIndicator.ShouldDisplay
@@ -79,23 +69,7 @@ public:
 	float                                        ReturnValue;                                       // 0x0(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function NetUI.NetDebugWidget.StopTimer
-struct UNetDebugWidget_StopTimer_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function NetUI.NetDebugWidget.StartTimer
-struct UNetDebugWidget_StartTimer_Params
-{
-public:
-};
-
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

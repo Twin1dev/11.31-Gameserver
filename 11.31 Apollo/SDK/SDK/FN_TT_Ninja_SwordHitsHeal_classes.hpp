@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class UTT_Ninja_SwordHitsHeal_C : public UFortGameplayAbilityTooltip
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("TT_Ninja_SwordHitsHeal_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UTT_Ninja_SwordHitsHeal_C* GetDefaultObj();
 
 	bool GetTextForTokenFromAbilityInstanceInternal(class UGameplayAbility* AbilityInstance, struct FGameplayTag& Tag, class UFortTooltipContext* Context, struct FGameplayTag& Token, class FText* OutText, bool GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess, class UGA_Ninja_SwordHitsHeal_C* K2Node_DynamicCast_AsGA_Ninja_Sword_Hits_Heal, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_Round_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, class FText CallFunc_Conv_FloatToText_ReturnValue);
 	void InitializeAbilityInstanceInternal(class UGameplayAbility* AbilityInstance, class UFortTooltipContext* Context, class UGA_Ninja_SwordHitsHeal_C* K2Node_DynamicCast_AsGA_Ninja_Sword_Hits_Heal, bool K2Node_DynamicCast_bSuccess);
@@ -30,6 +24,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

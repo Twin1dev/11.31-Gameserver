@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass RootLayout_Athena.RootLayout_Athena_C
+// (None)
+
+class UClass* URootLayout_Athena_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("RootLayout_Athena_C");
+
+	return Clss;
+}
+
+
+// RootLayout_Athena_C RootLayout_Athena.Default__RootLayout_Athena_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class URootLayout_Athena_C* URootLayout_Athena_C::GetDefaultObj()
+{
+	static class URootLayout_Athena_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<URootLayout_Athena_C*>(URootLayout_Athena_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function RootLayout_Athena.RootLayout_Athena_C.IsConsole
@@ -26,9 +51,12 @@ namespace SDK
 
 bool URootLayout_Athena_C::IsConsole(const class FString& CallFunc_GetPlatformName_ReturnValue, bool CallFunc_EqualEqual_StrStr_ReturnValue, bool CallFunc_EqualEqual_StrStr_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("RootLayout_Athena_C", "IsConsole");
+	static class UFunction* Func = nullptr;
 
-	Params::URootLayout_Athena_C_IsConsole_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RootLayout_Athena_C", "IsConsole");
+
+	Params::URootLayout_Athena_C_IsConsole_Params Parms{};
 
 	Parms.CallFunc_GetPlatformName_ReturnValue = CallFunc_GetPlatformName_ReturnValue;
 	Parms.CallFunc_EqualEqual_StrStr_ReturnValue = CallFunc_EqualEqual_StrStr_ReturnValue;
@@ -50,9 +78,12 @@ bool URootLayout_Athena_C::IsConsole(const class FString& CallFunc_GetPlatformNa
 
 void URootLayout_Athena_C::DialogResult_0099D78247C40A9775C753A2024EA419(enum class EFortDialogResult Result, class FName ResultName)
 {
-	static auto Func = Class->GetFunction("RootLayout_Athena_C", "DialogResult_0099D78247C40A9775C753A2024EA419");
+	static class UFunction* Func = nullptr;
 
-	Params::URootLayout_Athena_C_DialogResult_0099D78247C40A9775C753A2024EA419_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RootLayout_Athena_C", "DialogResult_0099D78247C40A9775C753A2024EA419");
+
+	Params::URootLayout_Athena_C_DialogResult_0099D78247C40A9775C753A2024EA419_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.ResultName = ResultName;
@@ -68,12 +99,14 @@ void URootLayout_Athena_C::DialogResult_0099D78247C40A9775C753A2024EA419(enum cl
 
 void URootLayout_Athena_C::Construct()
 {
-	static auto Func = Class->GetFunction("RootLayout_Athena_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::URootLayout_Athena_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RootLayout_Athena_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -84,12 +117,14 @@ void URootLayout_Athena_C::Construct()
 
 void URootLayout_Athena_C::OnGameWindowCloseButtonClicked()
 {
-	static auto Func = Class->GetFunction("RootLayout_Athena_C", "OnGameWindowCloseButtonClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::URootLayout_Athena_C_OnGameWindowCloseButtonClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RootLayout_Athena_C", "OnGameWindowCloseButtonClicked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -100,12 +135,14 @@ void URootLayout_Athena_C::OnGameWindowCloseButtonClicked()
 
 void URootLayout_Athena_C::OnModalQueueEmptied_1()
 {
-	static auto Func = Class->GetFunction("RootLayout_Athena_C", "OnModalQueueEmptied_1");
+	static class UFunction* Func = nullptr;
 
-	Params::URootLayout_Athena_C_OnModalQueueEmptied_1_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RootLayout_Athena_C", "OnModalQueueEmptied_1");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -127,9 +164,12 @@ void URootLayout_Athena_C::OnModalQueueEmptied_1()
 
 void URootLayout_Athena_C::ExecuteUbergraph_RootLayout_Athena(int32 EntryPoint, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class EFortDialogResult K2Node_CustomEvent_Result, class FName K2Node_CustomEvent_ResultName, class FName Temp_name_Variable, enum class EFortDialogResult Temp_byte_Variable, bool K2Node_SwitchEnum_CmpSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("RootLayout_Athena_C", "ExecuteUbergraph_RootLayout_Athena");
+	static class UFunction* Func = nullptr;
 
-	Params::URootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("RootLayout_Athena_C", "ExecuteUbergraph_RootLayout_Athena");
+
+	Params::URootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -149,6 +189,4 @@ void URootLayout_Athena_C::ExecuteUbergraph_RootLayout_Athena(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

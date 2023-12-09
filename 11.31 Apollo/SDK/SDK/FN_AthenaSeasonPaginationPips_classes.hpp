@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -37,11 +34,8 @@ public:
 	struct FFloatSpringState                     SpringState_Scale;                                 // 0x288(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	float                                        Spring_Scale_Target;                               // 0x290(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaSeasonPaginationPips_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaSeasonPaginationPips_C* GetDefaultObj();
 
 	void Construct();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
@@ -52,6 +46,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

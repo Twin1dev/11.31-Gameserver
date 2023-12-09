@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass CrackShot_Frontend_AnimBP.CrackShot_Frontend_AnimBP_C
+// (None)
+
+class UClass* UCrackShot_Frontend_AnimBP_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CrackShot_Frontend_AnimBP_C");
+
+	return Clss;
+}
+
+
+// CrackShot_Frontend_AnimBP_C CrackShot_Frontend_AnimBP.Default__CrackShot_Frontend_AnimBP_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCrackShot_Frontend_AnimBP_C* UCrackShot_Frontend_AnimBP_C::GetDefaultObj()
+{
+	static class UCrackShot_Frontend_AnimBP_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCrackShot_Frontend_AnimBP_C*>(UCrackShot_Frontend_AnimBP_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function CrackShot_Frontend_AnimBP.CrackShot_Frontend_AnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void UCrackShot_Frontend_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("CrackShot_Frontend_AnimBP_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UCrackShot_Frontend_AnimBP_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CrackShot_Frontend_AnimBP_C", "AnimGraph");
+
+	Params::UCrackShot_Frontend_AnimBP_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -41,12 +69,14 @@ void UCrackShot_Frontend_AnimBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 
 void UCrackShot_Frontend_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CrackShot_Frontend_AnimBP_AnimGraphNode_TransitionResult_C6604ADE415A07BC5D79DD8A1A32DF58()
 {
-	static auto Func = Class->GetFunction("CrackShot_Frontend_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_CrackShot_Frontend_AnimBP_AnimGraphNode_TransitionResult_C6604ADE415A07BC5D79DD8A1A32DF58");
+	static class UFunction* Func = nullptr;
 
-	Params::UCrackShot_Frontend_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_CrackShot_Frontend_AnimBP_AnimGraphNode_TransitionResult_C6604ADE415A07BC5D79DD8A1A32DF58_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CrackShot_Frontend_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_CrackShot_Frontend_AnimBP_AnimGraphNode_TransitionResult_C6604ADE415A07BC5D79DD8A1A32DF58");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,12 +87,14 @@ void UCrackShot_Frontend_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_C
 
 void UCrackShot_Frontend_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_CrackShot_Frontend_AnimBP_AnimGraphNode_TransitionResult_93D1A9E646C8ECD8EE982F93947F0EC5()
 {
-	static auto Func = Class->GetFunction("CrackShot_Frontend_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_CrackShot_Frontend_AnimBP_AnimGraphNode_TransitionResult_93D1A9E646C8ECD8EE982F93947F0EC5");
+	static class UFunction* Func = nullptr;
 
-	Params::UCrackShot_Frontend_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_CrackShot_Frontend_AnimBP_AnimGraphNode_TransitionResult_93D1A9E646C8ECD8EE982F93947F0EC5_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CrackShot_Frontend_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_CrackShot_Frontend_AnimBP_AnimGraphNode_TransitionResult_93D1A9E646C8ECD8EE982F93947F0EC5");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -74,9 +106,12 @@ void UCrackShot_Frontend_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_C
 
 void UCrackShot_Frontend_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static auto Func = Class->GetFunction("CrackShot_Frontend_AnimBP_C", "BlueprintUpdateAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UCrackShot_Frontend_AnimBP_C_BlueprintUpdateAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CrackShot_Frontend_AnimBP_C", "BlueprintUpdateAnimation");
+
+	Params::UCrackShot_Frontend_AnimBP_C_BlueprintUpdateAnimation_Params Parms{};
 
 	Parms.DeltaTimeX = DeltaTimeX;
 
@@ -105,9 +140,12 @@ void UCrackShot_Frontend_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void UCrackShot_Frontend_AnimBP_C::ExecuteUbergraph_CrackShot_Frontend_AnimBP(int32 EntryPoint, const struct FRotator& CallFunc_MakeRotator_ReturnValue, float CallFunc_GetInstanceCurrentStateElapsedTime_ReturnValue, float CallFunc_GetInstanceCurrentStateElapsedTime_ReturnValue_1, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue_1, float K2Node_Event_DeltaTimeX, class AFortPlayerController* CallFunc_GetFirstLocalFortPlayerController_ReturnValue, bool CallFunc_IsValid_ReturnValue, class AActor* CallFunc_GetViewTarget_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, const class FString& CallFunc_GetObjectName_ReturnValue, bool CallFunc_Contains_ReturnValue, float CallFunc_GetCurveValue_ReturnValue)
 {
-	static auto Func = Class->GetFunction("CrackShot_Frontend_AnimBP_C", "ExecuteUbergraph_CrackShot_Frontend_AnimBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UCrackShot_Frontend_AnimBP_C_ExecuteUbergraph_CrackShot_Frontend_AnimBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CrackShot_Frontend_AnimBP_C", "ExecuteUbergraph_CrackShot_Frontend_AnimBP");
+
+	Params::UCrackShot_Frontend_AnimBP_C_ExecuteUbergraph_CrackShot_Frontend_AnimBP_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_MakeRotator_ReturnValue = CallFunc_MakeRotator_ReturnValue;
@@ -130,6 +168,4 @@ void UCrackShot_Frontend_AnimBP_C::ExecuteUbergraph_CrackShot_Frontend_AnimBP(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

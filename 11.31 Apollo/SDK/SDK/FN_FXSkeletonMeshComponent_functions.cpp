@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass FXSkeletonMeshComponent.FXSkeletonMeshComponent_C
+// (SceneComponent, PrimitiveComponent, SkinnedMeshComponent, SkeletalMeshComponent)
+
+class UClass* UFXSkeletonMeshComponent_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FXSkeletonMeshComponent_C");
+
+	return Clss;
+}
+
+
+// FXSkeletonMeshComponent_C FXSkeletonMeshComponent.Default__FXSkeletonMeshComponent_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UFXSkeletonMeshComponent_C* UFXSkeletonMeshComponent_C::GetDefaultObj()
+{
+	static class UFXSkeletonMeshComponent_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFXSkeletonMeshComponent_C*>(UFXSkeletonMeshComponent_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function FXSkeletonMeshComponent.FXSkeletonMeshComponent_C.ApplyAwakenEffect
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UFXSkeletonMeshComponent_C::ApplyAwakenEffect()
 {
-	static auto Func = Class->GetFunction("FXSkeletonMeshComponent_C", "ApplyAwakenEffect");
+	static class UFunction* Func = nullptr;
 
-	Params::UFXSkeletonMeshComponent_C_ApplyAwakenEffect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FXSkeletonMeshComponent_C", "ApplyAwakenEffect");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -58,9 +85,12 @@ void UFXSkeletonMeshComponent_C::ApplyAwakenEffect()
 
 void UFXSkeletonMeshComponent_C::ApplyEffect(class UMaterialInterface* SourceMaterial, float FadeInTime, float Duration, float FadeOutTime, class UMaterialInstanceDynamic* Effect_MID, float CallFunc_Subtract_FloatFloat_ReturnValue, int32 Temp_int_Variable, float CallFunc_GetGameTimeInSeconds_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue, class UTexture* CallFunc_K2_GetTextureParameterValue_ReturnValue, class UTexture* CallFunc_K2_GetTextureParameterValue_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, int32 CallFunc_GetNumMaterials_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue_1, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FXSkeletonMeshComponent_C", "ApplyEffect");
+	static class UFunction* Func = nullptr;
 
-	Params::UFXSkeletonMeshComponent_C_ApplyEffect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FXSkeletonMeshComponent_C", "ApplyEffect");
+
+	Params::UFXSkeletonMeshComponent_C_ApplyEffect_Params Parms{};
 
 	Parms.SourceMaterial = SourceMaterial;
 	Parms.FadeInTime = FadeInTime;
@@ -96,9 +126,12 @@ void UFXSkeletonMeshComponent_C::ApplyEffect(class UMaterialInterface* SourceMat
 
 void UFXSkeletonMeshComponent_C::ApplyBuildingHitEffect(class UMaterialInstanceDynamic* Effect_MID)
 {
-	static auto Func = Class->GetFunction("FXSkeletonMeshComponent_C", "ApplyBuildingHitEffect");
+	static class UFunction* Func = nullptr;
 
-	Params::UFXSkeletonMeshComponent_C_ApplyBuildingHitEffect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FXSkeletonMeshComponent_C", "ApplyBuildingHitEffect");
+
+	Params::UFXSkeletonMeshComponent_C_ApplyBuildingHitEffect_Params Parms{};
 
 	Parms.Effect_MID = Effect_MID;
 
@@ -108,6 +141,4 @@ void UFXSkeletonMeshComponent_C::ApplyBuildingHitEffect(class UMaterialInstanceD
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ChallengeCountdown.ChallengeCountdown_C
+// (None)
+
+class UClass* UChallengeCountdown_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChallengeCountdown_C");
+
+	return Clss;
+}
+
+
+// ChallengeCountdown_C ChallengeCountdown.Default__ChallengeCountdown_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChallengeCountdown_C* UChallengeCountdown_C::GetDefaultObj()
+{
+	static class UChallengeCountdown_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChallengeCountdown_C*>(UChallengeCountdown_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ChallengeCountdown.ChallengeCountdown_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UChallengeCountdown_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("ChallengeCountdown_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeCountdown_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeCountdown_C", "PreConstruct");
+
+	Params::UChallengeCountdown_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -39,12 +67,14 @@ void UChallengeCountdown_C::PreConstruct(bool IsDesignTime)
 
 void UChallengeCountdown_C::Construct()
 {
-	static auto Func = Class->GetFunction("ChallengeCountdown_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeCountdown_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeCountdown_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +86,12 @@ void UChallengeCountdown_C::Construct()
 
 void UChallengeCountdown_C::OnChallengeSet(struct FTimerDisplayData& DisplayStyle)
 {
-	static auto Func = Class->GetFunction("ChallengeCountdown_C", "OnChallengeSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeCountdown_C_OnChallengeSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeCountdown_C", "OnChallengeSet");
+
+	Params::UChallengeCountdown_C_OnChallengeSet_Params Parms{};
 
 	Parms.DisplayStyle = DisplayStyle;
 
@@ -79,21 +112,24 @@ void UChallengeCountdown_C::OnChallengeSet(struct FTimerDisplayData& DisplayStyl
 // float                              CallFunc_MakeLiteralFloat_ReturnValue_1                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FTimerDisplayData           K2Node_Event_DisplayStyle                                        (ConstParm)
 // float                              CallFunc_Divide_FloatFloat_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor_1                                   ()
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor_2                                   ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor_1                                   (None)
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor_2                                   (None)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateColor                 K2Node_Select_Default_1                                          ()
+// struct FSlateColor                 K2Node_Select_Default_1                                          (None)
 
 void UChallengeCountdown_C::ExecuteUbergraph_ChallengeCountdown(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool K2Node_Event_IsDesignTime, float CallFunc_MakeLiteralFloat_ReturnValue, float CallFunc_MakeLiteralFloat_ReturnValue_1, const struct FTimerDisplayData& K2Node_Event_DisplayStyle, float CallFunc_Divide_FloatFloat_ReturnValue, const struct FSlateColor& K2Node_MakeStruct_SlateColor, bool Temp_bool_Variable_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, const struct FSlateColor& K2Node_MakeStruct_SlateColor_1, const struct FSlateColor& K2Node_MakeStruct_SlateColor_2, enum class ESlateVisibility K2Node_Select_Default, const struct FSlateColor& K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("ChallengeCountdown_C", "ExecuteUbergraph_ChallengeCountdown");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeCountdown_C", "ExecuteUbergraph_ChallengeCountdown");
+
+	Params::UChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -120,6 +156,4 @@ void UChallengeCountdown_C::ExecuteUbergraph_ChallengeCountdown(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

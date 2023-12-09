@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -26,11 +23,8 @@ public:
 	struct FActiveGameplayEffectHandle           InWaterHandle;                                     // 0xA78(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FActiveGameplayEffectHandle           LoopingAudioHandle;                                // 0xA80(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GA_Galileo_Lobster_Passive_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGA_Galileo_Lobster_Passive_C* GetDefaultObj();
 
 	void Added_838B8ED24C4D728B5BB3BB8B8253BE08();
 	void Removed_AAEFAAA5419B598A3E4ADA8A42217856();
@@ -45,6 +39,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

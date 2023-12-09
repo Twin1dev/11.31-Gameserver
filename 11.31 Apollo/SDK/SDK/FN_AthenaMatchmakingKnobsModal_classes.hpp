@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -27,11 +24,8 @@ public:
 	TArray<class FString>                        DebugOptions;                                      // 0x5A8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TArray<class UObject*>                       ListItems;                                         // 0x5B8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaMatchmakingKnobsModal_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaMatchmakingKnobsModal_C* GetDefaultObj();
 
 	void BP_OnActivated();
 	void OnInputModeChanged(bool bUsingGamepad);
@@ -44,6 +38,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

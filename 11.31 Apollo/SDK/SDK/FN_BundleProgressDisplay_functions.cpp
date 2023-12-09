@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass BundleProgressDisplay.BundleProgressDisplay_C
+// (None)
+
+class UClass* UBundleProgressDisplay_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BundleProgressDisplay_C");
+
+	return Clss;
+}
+
+
+// BundleProgressDisplay_C BundleProgressDisplay.Default__BundleProgressDisplay_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBundleProgressDisplay_C* UBundleProgressDisplay_C::GetDefaultObj()
+{
+	static class UBundleProgressDisplay_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBundleProgressDisplay_C*>(UBundleProgressDisplay_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BundleProgressDisplay.BundleProgressDisplay_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UBundleProgressDisplay_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("BundleProgressDisplay_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UBundleProgressDisplay_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BundleProgressDisplay_C", "PreConstruct");
+
+	Params::UBundleProgressDisplay_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -44,9 +72,12 @@ void UBundleProgressDisplay_C::PreConstruct(bool IsDesignTime)
 
 void UBundleProgressDisplay_C::ExecuteUbergraph_BundleProgressDisplay(int32 EntryPoint, float CallFunc_MakeLiteralFloat_ReturnValue, bool K2Node_Event_IsDesignTime, float CallFunc_MakeLiteralFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BundleProgressDisplay_C", "ExecuteUbergraph_BundleProgressDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::UBundleProgressDisplay_C_ExecuteUbergraph_BundleProgressDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BundleProgressDisplay_C", "ExecuteUbergraph_BundleProgressDisplay");
+
+	Params::UBundleProgressDisplay_C_ExecuteUbergraph_BundleProgressDisplay_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_MakeLiteralFloat_ReturnValue = CallFunc_MakeLiteralFloat_ReturnValue;
@@ -60,6 +91,4 @@ void UBundleProgressDisplay_C::ExecuteUbergraph_BundleProgressDisplay(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_SoundIndicator_01.B_SoundIndicator_01_C
+// (Actor)
+
+class UClass* AB_SoundIndicator_01_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_SoundIndicator_01_C");
+
+	return Clss;
+}
+
+
+// B_SoundIndicator_01_C B_SoundIndicator_01.Default__B_SoundIndicator_01_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_SoundIndicator_01_C* AB_SoundIndicator_01_C::GetDefaultObj()
+{
+	static class AB_SoundIndicator_01_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_SoundIndicator_01_C*>(AB_SoundIndicator_01_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function B_SoundIndicator_01.B_SoundIndicator_01_C.CalculateFiringAngle
@@ -43,9 +68,12 @@ namespace SDK
 
 void AB_SoundIndicator_01_C::CalculateFiringAngle(float* DotResult, class AActor* CallFunc_GetOwner_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, class AFortWeaponRanged* K2Node_DynamicCast_AsFort_Weapon_Ranged, bool K2Node_DynamicCast_bSuccess_1, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FVector& CallFunc_GetRightVector_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, float CallFunc_VSize_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Dot_VectorVector_ReturnValue, float CallFunc_FClamp_ReturnValue, float CallFunc_FClamp_ReturnValue_1, float CallFunc_Lerp_ReturnValue, float CallFunc_MultiplyMultiply_FloatFloat_ReturnValue, float CallFunc_Lerp_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("B_SoundIndicator_01_C", "CalculateFiringAngle");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_SoundIndicator_01_C_CalculateFiringAngle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_SoundIndicator_01_C", "CalculateFiringAngle");
+
+	Params::AB_SoundIndicator_01_C_CalculateFiringAngle_Params Parms{};
 
 	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
 	Parms.CallFunc_K2_GetActorLocation_ReturnValue = CallFunc_K2_GetActorLocation_ReturnValue;
@@ -85,14 +113,17 @@ void AB_SoundIndicator_01_C::CalculateFiringAngle(float* DotResult, class AActor
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Greater_FloatFloat_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_LessEqual_FloatFloat_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FRuntimeFloatCurve          K2Node_Select_Default                                            ()
-// struct FRuntimeFloatCurve          K2Node_Select_Default_1                                          ()
+// struct FRuntimeFloatCurve          K2Node_Select_Default                                            (None)
+// struct FRuntimeFloatCurve          K2Node_Select_Default_1                                          (None)
 
 struct FRuntimeFloatCurve AB_SoundIndicator_01_C::GetWeaponCurve(bool Temp_bool_Variable, bool Temp_bool_Variable_1, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue, const struct FRuntimeFloatCurve& K2Node_Select_Default, const struct FRuntimeFloatCurve& K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("B_SoundIndicator_01_C", "GetWeaponCurve");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_SoundIndicator_01_C_GetWeaponCurve_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_SoundIndicator_01_C", "GetWeaponCurve");
+
+	Params::AB_SoundIndicator_01_C_GetWeaponCurve_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
@@ -115,9 +146,12 @@ struct FRuntimeFloatCurve AB_SoundIndicator_01_C::GetWeaponCurve(bool Temp_bool_
 
 void AB_SoundIndicator_01_C::UpdateEmitterStates(float CallFunc_CalculateFiringAngle_DotResult)
 {
-	static auto Func = Class->GetFunction("B_SoundIndicator_01_C", "UpdateEmitterStates");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_SoundIndicator_01_C_UpdateEmitterStates_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_SoundIndicator_01_C", "UpdateEmitterStates");
+
+	Params::AB_SoundIndicator_01_C_UpdateEmitterStates_Params Parms{};
 
 	Parms.CallFunc_CalculateFiringAngle_DotResult = CallFunc_CalculateFiringAngle_DotResult;
 
@@ -132,12 +166,14 @@ void AB_SoundIndicator_01_C::UpdateEmitterStates(float CallFunc_CalculateFiringA
 
 void AB_SoundIndicator_01_C::OnEffectActivated()
 {
-	static auto Func = Class->GetFunction("B_SoundIndicator_01_C", "OnEffectActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_SoundIndicator_01_C_OnEffectActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_SoundIndicator_01_C", "OnEffectActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -148,12 +184,14 @@ void AB_SoundIndicator_01_C::OnEffectActivated()
 
 void AB_SoundIndicator_01_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_SoundIndicator_01_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_SoundIndicator_01_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_SoundIndicator_01_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -164,12 +202,14 @@ void AB_SoundIndicator_01_C::ReceiveBeginPlay()
 
 void AB_SoundIndicator_01_C::OnEffectDeactivated()
 {
-	static auto Func = Class->GetFunction("B_SoundIndicator_01_C", "OnEffectDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_SoundIndicator_01_C_OnEffectDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_SoundIndicator_01_C", "OnEffectDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -179,13 +219,16 @@ void AB_SoundIndicator_01_C::OnEffectDeactivated()
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FRuntimeFloatCurve          CallFunc_GetWeaponCurve_ReturnValue                              ()
+// struct FRuntimeFloatCurve          CallFunc_GetWeaponCurve_ReturnValue                              (None)
 
 void AB_SoundIndicator_01_C::ExecuteUbergraph_B_SoundIndicator_01(int32 EntryPoint, bool K2Node_SwitchEnum_CmpSuccess, const struct FRuntimeFloatCurve& CallFunc_GetWeaponCurve_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_SoundIndicator_01_C", "ExecuteUbergraph_B_SoundIndicator_01");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_SoundIndicator_01_C_ExecuteUbergraph_B_SoundIndicator_01_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_SoundIndicator_01_C", "ExecuteUbergraph_B_SoundIndicator_01");
+
+	Params::AB_SoundIndicator_01_C_ExecuteUbergraph_B_SoundIndicator_01_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
@@ -197,6 +240,4 @@ void AB_SoundIndicator_01_C::ExecuteUbergraph_B_SoundIndicator_01(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_DefaultPlayer_PetOtherPet.GA_DefaultPlayer_PetOtherPet_C
+// (None)
+
+class UClass* UGA_DefaultPlayer_PetOtherPet_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_DefaultPlayer_PetOtherPet_C");
+
+	return Clss;
+}
+
+
+// GA_DefaultPlayer_PetOtherPet_C GA_DefaultPlayer_PetOtherPet.Default__GA_DefaultPlayer_PetOtherPet_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_DefaultPlayer_PetOtherPet_C* UGA_DefaultPlayer_PetOtherPet_C::GetDefaultObj()
+{
+	static class UGA_DefaultPlayer_PetOtherPet_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_DefaultPlayer_PetOtherPet_C*>(UGA_DefaultPlayer_PetOtherPet_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_DefaultPlayer_PetOtherPet.GA_DefaultPlayer_PetOtherPet_C.OnCancelled_FB7AFE5D4FF547CAEB1ECA8264EE1330
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UGA_DefaultPlayer_PetOtherPet_C::OnCancelled_FB7AFE5D4FF547CAEB1ECA8264EE1330()
 {
-	static auto Func = Class->GetFunction("GA_DefaultPlayer_PetOtherPet_C", "OnCancelled_FB7AFE5D4FF547CAEB1ECA8264EE1330");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_DefaultPlayer_PetOtherPet_C_OnCancelled_FB7AFE5D4FF547CAEB1ECA8264EE1330_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_DefaultPlayer_PetOtherPet_C", "OnCancelled_FB7AFE5D4FF547CAEB1ECA8264EE1330");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UGA_DefaultPlayer_PetOtherPet_C::OnCancelled_FB7AFE5D4FF547CAEB1ECA8264EE13
 
 void UGA_DefaultPlayer_PetOtherPet_C::OnInterrupted_FB7AFE5D4FF547CAEB1ECA8264EE1330()
 {
-	static auto Func = Class->GetFunction("GA_DefaultPlayer_PetOtherPet_C", "OnInterrupted_FB7AFE5D4FF547CAEB1ECA8264EE1330");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_DefaultPlayer_PetOtherPet_C_OnInterrupted_FB7AFE5D4FF547CAEB1ECA8264EE1330_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_DefaultPlayer_PetOtherPet_C", "OnInterrupted_FB7AFE5D4FF547CAEB1ECA8264EE1330");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UGA_DefaultPlayer_PetOtherPet_C::OnInterrupted_FB7AFE5D4FF547CAEB1ECA8264EE
 
 void UGA_DefaultPlayer_PetOtherPet_C::OnBlendOut_FB7AFE5D4FF547CAEB1ECA8264EE1330()
 {
-	static auto Func = Class->GetFunction("GA_DefaultPlayer_PetOtherPet_C", "OnBlendOut_FB7AFE5D4FF547CAEB1ECA8264EE1330");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_DefaultPlayer_PetOtherPet_C_OnBlendOut_FB7AFE5D4FF547CAEB1ECA8264EE1330_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_DefaultPlayer_PetOtherPet_C", "OnBlendOut_FB7AFE5D4FF547CAEB1ECA8264EE1330");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void UGA_DefaultPlayer_PetOtherPet_C::OnBlendOut_FB7AFE5D4FF547CAEB1ECA8264EE133
 
 void UGA_DefaultPlayer_PetOtherPet_C::OnCompleted_FB7AFE5D4FF547CAEB1ECA8264EE1330()
 {
-	static auto Func = Class->GetFunction("GA_DefaultPlayer_PetOtherPet_C", "OnCompleted_FB7AFE5D4FF547CAEB1ECA8264EE1330");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_DefaultPlayer_PetOtherPet_C_OnCompleted_FB7AFE5D4FF547CAEB1ECA8264EE1330_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_DefaultPlayer_PetOtherPet_C", "OnCompleted_FB7AFE5D4FF547CAEB1ECA8264EE1330");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -85,12 +118,14 @@ void UGA_DefaultPlayer_PetOtherPet_C::OnCompleted_FB7AFE5D4FF547CAEB1ECA8264EE13
 
 void UGA_DefaultPlayer_PetOtherPet_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_DefaultPlayer_PetOtherPet_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_DefaultPlayer_PetOtherPet_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_DefaultPlayer_PetOtherPet_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -108,9 +143,12 @@ void UGA_DefaultPlayer_PetOtherPet_C::K2_ActivateAbility()
 
 void UGA_DefaultPlayer_PetOtherPet_C::ExecuteUbergraph_GA_DefaultPlayer_PetOtherPet(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UAbilityTask_PlayMontageAndWait* CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_DefaultPlayer_PetOtherPet_C", "ExecuteUbergraph_GA_DefaultPlayer_PetOtherPet");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_DefaultPlayer_PetOtherPet_C_ExecuteUbergraph_GA_DefaultPlayer_PetOtherPet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_DefaultPlayer_PetOtherPet_C", "ExecuteUbergraph_GA_DefaultPlayer_PetOtherPet");
+
+	Params::UGA_DefaultPlayer_PetOtherPet_C_ExecuteUbergraph_GA_DefaultPlayer_PetOtherPet_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -126,6 +164,4 @@ void UGA_DefaultPlayer_PetOtherPet_C::ExecuteUbergraph_GA_DefaultPlayer_PetOther
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

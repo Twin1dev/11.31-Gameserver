@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -32,10 +29,10 @@ public:
 	TArray<class FString>                        A_0;                                               // 0xCC0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	bool                                         DebugOnMobileOrPC;                                 // 0xCD0(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                         IsGamepad;                                         // 0xCD1(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6251[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2F39[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Mobile_Size_Override;                              // 0xCD4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  VisibilitySetting;                                 // 0xCD8(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6252[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2F3A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                DefaultStyleMouse;                                 // 0xCE0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UClass*                                DefaultStyleGamepad;                               // 0xCE8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FSlateColor                           TextColor_Normal;                                  // 0xCF0(0x28)(Edit, BlueprintVisible, ExposeOnSpawn)
@@ -43,11 +40,8 @@ public:
 	UMulticastInlineDelegateProperty_            OnSpinnerValueChanged;                             // 0xD40(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UClass*                                DefaultStyleTouch;                                 // 0xD50(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaMatchmakingSpinnerButton_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaMatchmakingSpinnerButton_C* GetDefaultObj();
 
 	void UpdateSyle(enum class ECommonInputType InputType, enum class ECommonInputType Temp_byte_Variable, const struct FSlateFontInfo& Temp_struct_Variable, enum class ECommonInputType Temp_byte_Variable_1, float Temp_float_Variable, float Temp_float_Variable_1, float Temp_float_Variable_2, float Temp_float_Variable_3, enum class ECommonInputType Temp_byte_Variable_2, float Temp_float_Variable_4, float Temp_float_Variable_5, float Temp_float_Variable_6, float Temp_float_Variable_7, enum class ECommonInputType Temp_byte_Variable_3, class UClass* Temp_class_Variable, const struct FSlateFontInfo& K2Node_MakeStruct_SlateFontInfo, const struct FSlateFontInfo& K2Node_MakeStruct_SlateFontInfo_1, const struct FSlateFontInfo& K2Node_Select_Default, float K2Node_Select_Default_1, float K2Node_Select_Default_2, class UClass* K2Node_Select_Default_3);
 	class UWidget* DoCustomNavigation_0(enum class EUINavigation Navigation);
@@ -75,6 +69,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

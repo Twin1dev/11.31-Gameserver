@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass IntroRotatingText.IntroRotatingText_C
+// (None)
+
+class UClass* UIntroRotatingText_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("IntroRotatingText_C");
+
+	return Clss;
+}
+
+
+// IntroRotatingText_C IntroRotatingText.Default__IntroRotatingText_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UIntroRotatingText_C* UIntroRotatingText_C::GetDefaultObj()
+{
+	static class UIntroRotatingText_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UIntroRotatingText_C*>(UIntroRotatingText_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function IntroRotatingText.IntroRotatingText_C.Tick
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UIntroRotatingText_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto Func = Class->GetFunction("IntroRotatingText_C", "Tick");
+	static class UFunction* Func = nullptr;
 
-	Params::UIntroRotatingText_C_Tick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IntroRotatingText_C", "Tick");
+
+	Params::UIntroRotatingText_C_Tick_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InDeltaTime = InDeltaTime;
@@ -41,12 +69,14 @@ void UIntroRotatingText_C::Tick(const struct FGeometry& MyGeometry, float InDelt
 
 void UIntroRotatingText_C::Construct()
 {
-	static auto Func = Class->GetFunction("IntroRotatingText_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UIntroRotatingText_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IntroRotatingText_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,12 +87,14 @@ void UIntroRotatingText_C::Construct()
 
 void UIntroRotatingText_C::RotateText()
 {
-	static auto Func = Class->GetFunction("IntroRotatingText_C", "RotateText");
+	static class UFunction* Func = nullptr;
 
-	Params::UIntroRotatingText_C_RotateText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IntroRotatingText_C", "RotateText");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -82,9 +114,12 @@ void UIntroRotatingText_C::RotateText()
 
 void UIntroRotatingText_C::ExecuteUbergraph_IntroRotatingText(int32 EntryPoint, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Variable, int32 CallFunc_Array_Length_ReturnValue_1, int32 CallFunc_Percent_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("IntroRotatingText_C", "ExecuteUbergraph_IntroRotatingText");
+	static class UFunction* Func = nullptr;
 
-	Params::UIntroRotatingText_C_ExecuteUbergraph_IntroRotatingText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IntroRotatingText_C", "ExecuteUbergraph_IntroRotatingText");
+
+	Params::UIntroRotatingText_C_ExecuteUbergraph_IntroRotatingText_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_MyGeometry = K2Node_Event_MyGeometry;
@@ -102,6 +137,4 @@ void UIntroRotatingText_C::ExecuteUbergraph_IntroRotatingText(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TeamMemberListEntry.TeamMemberListEntry_C
+// (None)
+
+class UClass* UTeamMemberListEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TeamMemberListEntry_C");
+
+	return Clss;
+}
+
+
+// TeamMemberListEntry_C TeamMemberListEntry.Default__TeamMemberListEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTeamMemberListEntry_C* UTeamMemberListEntry_C::GetDefaultObj()
+{
+	static class UTeamMemberListEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTeamMemberListEntry_C*>(UTeamMemberListEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TeamMemberListEntry.TeamMemberListEntry_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UTeamMemberListEntry_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("TeamMemberListEntry_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberListEntry_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberListEntry_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UTeamMemberListEntry_C::BP_OnUnhovered()
 
 void UTeamMemberListEntry_C::BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen)
 {
-	static auto Func = Class->GetFunction("TeamMemberListEntry_C", "BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberListEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberListEntry_C", "BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
+
+	Params::UTeamMemberListEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature_Params Parms{};
 
 	Parms.bIsOpen = bIsOpen;
 
@@ -55,12 +85,14 @@ void UTeamMemberListEntry_C::BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEve
 
 void UTeamMemberListEntry_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("TeamMemberListEntry_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberListEntry_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberListEntry_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -78,9 +110,12 @@ void UTeamMemberListEntry_C::BP_OnHovered()
 
 void UTeamMemberListEntry_C::ExecuteUbergraph_TeamMemberListEntry(int32 EntryPoint, bool K2Node_ComponentBoundEvent_bIsOpen, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, bool CallFunc_IsAnimationPlaying_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("TeamMemberListEntry_C", "ExecuteUbergraph_TeamMemberListEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UTeamMemberListEntry_C_ExecuteUbergraph_TeamMemberListEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberListEntry_C", "ExecuteUbergraph_TeamMemberListEntry");
+
+	Params::UTeamMemberListEntry_C_ExecuteUbergraph_TeamMemberListEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_bIsOpen = K2Node_ComponentBoundEvent_bIsOpen;
@@ -96,6 +131,4 @@ void UTeamMemberListEntry_C::ExecuteUbergraph_TeamMemberListEntry(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

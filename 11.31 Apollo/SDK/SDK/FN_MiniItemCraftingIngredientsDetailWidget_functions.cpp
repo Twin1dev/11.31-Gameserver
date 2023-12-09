@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass MiniItemCraftingIngredientsDetailWidget.MiniItemCraftingIngredientsDetailWidget_C
+// (None)
+
+class UClass* UMiniItemCraftingIngredientsDetailWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MiniItemCraftingIngredientsDetailWidget_C");
+
+	return Clss;
+}
+
+
+// MiniItemCraftingIngredientsDetailWidget_C MiniItemCraftingIngredientsDetailWidget.Default__MiniItemCraftingIngredientsDetailWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMiniItemCraftingIngredientsDetailWidget_C* UMiniItemCraftingIngredientsDetailWidget_C::GetDefaultObj()
+{
+	static class UMiniItemCraftingIngredientsDetailWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMiniItemCraftingIngredientsDetailWidget_C*>(UMiniItemCraftingIngredientsDetailWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function MiniItemCraftingIngredientsDetailWidget.MiniItemCraftingIngredientsDetailWidget_C.GetRecipeItemQuantityPairs
@@ -25,7 +50,7 @@ namespace SDK
 // class UFortSchematicItem*          K2Node_DynamicCast_AsFort_Schematic_Item                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FRecipe                     CallFunc_GetSchematicRecipe_ReturnValue                          ()
+// struct FRecipe                     CallFunc_GetSchematicRecipe_ReturnValue                          (None)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -37,9 +62,12 @@ namespace SDK
 
 void UMiniItemCraftingIngredientsDetailWidget_C::GetRecipeItemQuantityPairs(class UFortItem* Item, TArray<struct FFortItemQuantityPair>* Pairs, const TArray<struct FFortItemQuantityPair>& Results, int32 Temp_int_Loop_Counter_Variable, class UFortSchematicItem* K2Node_DynamicCast_AsFort_Schematic_Item, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_Add_IntInt_ReturnValue, const struct FRecipe& CallFunc_GetSchematicRecipe_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Array_Index_Variable, bool CallFunc_Less_IntInt_ReturnValue, const struct FFortItemQuantityPair& CallFunc_Array_Get_Item, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, class UFortItemDefinition* CallFunc_GetItemFromItemQuantityPair_ReturnValue, const struct FFortItemQuantityPair& CallFunc_MakeItemQuantityPair_ReturnValue, int32 CallFunc_Array_Add_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "GetRecipeItemQuantityPairs");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "GetRecipeItemQuantityPairs");
+
+	Params::UMiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.Results = Results;
@@ -60,7 +88,7 @@ void UMiniItemCraftingIngredientsDetailWidget_C::GetRecipeItemQuantityPairs(clas
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Pairs != nullptr)
-		*Pairs = Parms.Pairs;
+		*Pairs = std::move(Parms.Pairs);
 
 }
 
@@ -71,12 +99,14 @@ void UMiniItemCraftingIngredientsDetailWidget_C::GetRecipeItemQuantityPairs(clas
 
 void UMiniItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToDetailSet()
 {
-	static auto Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "HandlePostDifferentItemToDetailSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniItemCraftingIngredientsDetailWidget_C_HandlePostDifferentItemToDetailSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "HandlePostDifferentItemToDetailSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -87,12 +117,14 @@ void UMiniItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToDetail
 
 void UMiniItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToCompareWithSet()
 {
-	static auto Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "HandlePostDifferentItemToCompareWithSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniItemCraftingIngredientsDetailWidget_C_HandlePostDifferentItemToCompareWithSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "HandlePostDifferentItemToCompareWithSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -103,12 +135,14 @@ void UMiniItemCraftingIngredientsDetailWidget_C::HandlePostDifferentItemToCompar
 
 void UMiniItemCraftingIngredientsDetailWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniItemCraftingIngredientsDetailWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -122,9 +156,12 @@ void UMiniItemCraftingIngredientsDetailWidget_C::Construct()
 
 void UMiniItemCraftingIngredientsDetailWidget_C::ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget(int32 EntryPoint, TArray<struct FFortItemQuantityPair>& CallFunc_GetRecipeItemQuantityPairs_Pairs, TArray<struct FFortItemQuantityPair>& CallFunc_GetRecipeItemQuantityPairs_Pairs_1)
 {
-	static auto Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniItemCraftingIngredientsDetailWidget_C", "ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget");
+
+	Params::UMiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetRecipeItemQuantityPairs_Pairs = CallFunc_GetRecipeItemQuantityPairs_Pairs;
@@ -136,6 +173,4 @@ void UMiniItemCraftingIngredientsDetailWidget_C::ExecuteUbergraph_MiniItemCrafti
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

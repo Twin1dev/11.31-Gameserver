@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass AthenaFunctionLibrary.AthenaFunctionLibrary_C
+// (None)
+
+class UClass* UAthenaFunctionLibrary_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaFunctionLibrary_C");
+
+	return Clss;
+}
+
+
+// AthenaFunctionLibrary_C AthenaFunctionLibrary.Default__AthenaFunctionLibrary_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaFunctionLibrary_C* UAthenaFunctionLibrary_C::GetDefaultObj()
+{
+	static class UAthenaFunctionLibrary_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaFunctionLibrary_C*>(UAthenaFunctionLibrary_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AthenaFunctionLibrary.AthenaFunctionLibrary_C.RowToBool
@@ -32,9 +57,12 @@ namespace SDK
 
 bool UAthenaFunctionLibrary_C::RowToBool(struct FScalableFloat& Input, float Level, class UObject* __WorldContext, bool Temp_bool_Variable, float CallFunc_GetValueAtLevel_ReturnValue, bool Temp_bool_Variable_1, int32 CallFunc_FFloor_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_Conv_IntToBool_ReturnValue, bool K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaFunctionLibrary_C", "RowToBool");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFunctionLibrary_C_RowToBool_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFunctionLibrary_C", "RowToBool");
+
+	Params::UAthenaFunctionLibrary_C_RowToBool_Params Parms{};
 
 	Parms.Input = Input;
 	Parms.Level = Level;
@@ -72,9 +100,12 @@ bool UAthenaFunctionLibrary_C::RowToBool(struct FScalableFloat& Input, float Lev
 
 void UAthenaFunctionLibrary_C::AllOnSameTeam(class AActor* Actor, TArray<class AActor*>& ActorArray, class UObject* __WorldContext, bool* Result, bool _Result, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, class AActor* CallFunc_Array_Get_Item, bool CallFunc_OnSameTeam_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaFunctionLibrary_C", "AllOnSameTeam");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFunctionLibrary_C_AllOnSameTeam_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFunctionLibrary_C", "AllOnSameTeam");
+
+	Params::UAthenaFunctionLibrary_C_AllOnSameTeam_Params Parms{};
 
 	Parms.Actor = Actor;
 	Parms.ActorArray = ActorArray;
@@ -157,9 +188,12 @@ void UAthenaFunctionLibrary_C::AllOnSameTeam(class AActor* Actor, TArray<class A
 
 void UAthenaFunctionLibrary_C::CreateEnvironmentalKnockbackExplosion(const struct FVector& ExplosionSourcePoint, float ExplosionRadius, float Intensity, float MinKnockbackAngle, bool Reverse, class AActor* SpecificActor, class UObject* __WorldContext, bool _Reverse, const struct FVector& VecToCurrentActor, float _MinKnockbackAngle, float _Intensity, class AActor* _CurrentActorBeingLaunched, float _Radius, const struct FVector& _SourcePoint, int32 Temp_int_Array_Index_Variable, bool CallFunc_IsValid_ReturnValue, TArray<class AActor*>& Temp_object_Variable, float CallFunc_VSize_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, int32 Temp_int_Loop_Counter_Variable, const struct FVector& CallFunc_SelectVector_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, float CallFunc_VSize_ReturnValue_1, bool CallFunc_Greater_FloatFloat_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FActiveGameplayEffectHandle& CallFunc_ApplyGlobalEnvironmentGameplayEffectToActor_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FVector& CallFunc_GetActorUpVector_ReturnValue, const struct FVector& CallFunc_GetActorBounds_Origin, const struct FVector& CallFunc_GetActorBounds_BoxExtent, const struct FVector& CallFunc_ProjectVectorOnToPlane_ReturnValue, float CallFunc_Dot_VectorVector_ReturnValue, const struct FVector& CallFunc_Cross_VectorVector_ReturnValue, float CallFunc_DegAcos_ReturnValue, const struct FVector& CallFunc_RotateAngleAxis_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue, float CallFunc_Dot_VectorVector_ReturnValue_1, const struct FVector& CallFunc_NegateVector_ReturnValue, const struct FVector& CallFunc_RotateAngleAxis_ReturnValue_1, float CallFunc_Dot_VectorVector_ReturnValue_2, bool CallFunc_Greater_FloatFloat_ReturnValue_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FVector& CallFunc_SelectVector_ReturnValue_1, const struct FVector& CallFunc_SelectVector_ReturnValue_2, TArray<enum class EObjectTypeQuery>& K2Node_MakeArray_Array, const struct FVector& CallFunc_SelectVector_ReturnValue_3, TArray<class AActor*>& CallFunc_SphereOverlapActors_OutActors, bool CallFunc_SphereOverlapActors_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, class AActor* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaFunctionLibrary_C", "CreateEnvironmentalKnockbackExplosion");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaFunctionLibrary_C_CreateEnvironmentalKnockbackExplosion_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaFunctionLibrary_C", "CreateEnvironmentalKnockbackExplosion");
+
+	Params::UAthenaFunctionLibrary_C_CreateEnvironmentalKnockbackExplosion_Params Parms{};
 
 	Parms.ExplosionSourcePoint = ExplosionSourcePoint;
 	Parms.ExplosionRadius = ExplosionRadius;
@@ -223,6 +257,4 @@ void UAthenaFunctionLibrary_C::CreateEnvironmentalKnockbackExplosion(const struc
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

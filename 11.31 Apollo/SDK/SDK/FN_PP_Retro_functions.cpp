@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass PP_Retro.PP_Retro_C
+// (Actor)
+
+class UClass* APP_Retro_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PP_Retro_C");
+
+	return Clss;
+}
+
+
+// PP_Retro_C PP_Retro.Default__PP_Retro_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class APP_Retro_C* APP_Retro_C::GetDefaultObj()
+{
+	static class APP_Retro_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APP_Retro_C*>(APP_Retro_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PP_Retro.PP_Retro_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void APP_Retro_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("PP_Retro_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::APP_Retro_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PP_Retro_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void APP_Retro_C::ReceiveBeginPlay()
 
 void APP_Retro_C::ExecuteUbergraph_PP_Retro(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("PP_Retro_C", "ExecuteUbergraph_PP_Retro");
+	static class UFunction* Func = nullptr;
 
-	Params::APP_Retro_C_ExecuteUbergraph_PP_Retro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PP_Retro_C", "ExecuteUbergraph_PP_Retro");
+
+	Params::APP_Retro_C_ExecuteUbergraph_PP_Retro_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -50,6 +80,4 @@ void APP_Retro_C::ExecuteUbergraph_PP_Retro(int32 EntryPoint)
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

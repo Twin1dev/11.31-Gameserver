@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class UARBlueprintLibrary : public UBlueprintFunctionLibrary
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARBlueprintLibrary");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARBlueprintLibrary* GetDefaultObj();
 
 	void UnpinComponent(class USceneComponent* ComponentToUnpin);
 	void StopARSession();
@@ -64,11 +58,8 @@ class UARTraceResultLibrary : public UBlueprintFunctionLibrary
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARTraceResultLibrary");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARTraceResultLibrary* GetDefaultObj();
 
 	class UARTrackedGeometry* GetTrackedGeometry(struct FARTraceResult& TraceResult);
 	enum class EARLineTraceChannels GetTraceChannel(struct FARTraceResult& TraceResult);
@@ -82,13 +73,10 @@ public:
 class UARBaseAsyncTaskBlueprintProxy : public UBlueprintAsyncActionBase
 {
 public:
-	uint8                                        Pad_1911[0x20];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_564[0x20];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARBaseAsyncTaskBlueprintProxy");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARBaseAsyncTaskBlueprintProxy* GetDefaultObj();
 
 };
 
@@ -99,13 +87,10 @@ class UARSaveWorldAsyncTaskBlueprintProxy : public UARBaseAsyncTaskBlueprintProx
 public:
 	UMulticastInlineDelegateProperty_            OnSuccess;                                         // 0x50(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastInlineDelegateProperty_            OnFailed;                                          // 0x60(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1912[0x10];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_56D[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARSaveWorldAsyncTaskBlueprintProxy");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARSaveWorldAsyncTaskBlueprintProxy* GetDefaultObj();
 
 	class UARSaveWorldAsyncTaskBlueprintProxy* ARSaveWorld(class UObject* WorldContextObject);
 };
@@ -117,13 +102,10 @@ class UARGetCandidateObjectAsyncTaskBlueprintProxy : public UARBaseAsyncTaskBlue
 public:
 	UMulticastInlineDelegateProperty_            OnSuccess;                                         // 0x50(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastInlineDelegateProperty_            OnFailed;                                          // 0x60(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1913[0x28];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_576[0x28];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARGetCandidateObjectAsyncTaskBlueprintProxy");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARGetCandidateObjectAsyncTaskBlueprintProxy* GetDefaultObj();
 
 	class UARGetCandidateObjectAsyncTaskBlueprintProxy* ARGetCandidateObject(class UObject* WorldContextObject, const struct FVector& Location, const struct FVector& Extent);
 };
@@ -134,11 +116,8 @@ class UARLightEstimate : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARLightEstimate");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARLightEstimate* GetDefaultObj();
 
 };
 
@@ -151,11 +130,8 @@ public:
 	float                                        AmbientColorTemperatureKelvin;                     // 0x2C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FLinearColor                          AmbientColor;                                      // 0x30(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARBasicLightEstimate");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARBasicLightEstimate* GetDefaultObj();
 
 	float GetAmbientIntensityLumens();
 	float GetAmbientColorTemperatureKelvin();
@@ -168,11 +144,8 @@ class AAROriginActor : public AActor
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AROriginActor");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AAROriginActor* GetDefaultObj();
 
 };
 
@@ -183,20 +156,17 @@ class UARPin : public UObject
 public:
 	class UARTrackedGeometry*                    TrackedGeometry;                                   // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class USceneComponent*                       PinnedComponent;                                   // 0x30(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1914[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_594[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            LocalToTrackingTransform;                          // 0x40(0x30)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
 	struct FTransform                            LocalToAlignedTrackingTransform;                   // 0x70(0x30)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
 	enum class EARTrackingState                  TrackingState;                                     // 0xA0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1915[0x1F];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_595[0x1F];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	UMulticastInlineDelegateProperty_            OnARTrackingStateChanged;                          // 0xC0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
 	UMulticastInlineDelegateProperty_            OnARTransformUpdated;                              // 0xD0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1916[0x10];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_596[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARPin");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARPin* GetDefaultObj();
 
 	enum class EARTrackingState GetTrackingState();
 	class UARTrackedGeometry* GetTrackedGeometry();
@@ -230,24 +200,21 @@ public:
 	bool                                         bEnableAutomaticCameraTracking;                    // 0x3F(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                         bResetCameraTracking;                              // 0x40(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                         bResetTrackedObjects;                              // 0x41(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_1917[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5BF[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UARCandidateImage*>             CandidateImages;                                   // 0x48(0x10)(Edit, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	int32                                        MaxNumSimultaneousImagesTracked;                   // 0x58(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	enum class EAREnvironmentCaptureProbeType    EnvironmentCaptureProbeType;                       // 0x5C(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_1918[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5C0[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<uint8>                                WorldMapData;                                      // 0x60(0x10)(Edit, ZeroConstructor, EditConst, Protected, NativeAccessSpecifierProtected)
 	TArray<class UARCandidateObject*>            CandidateObjects;                                  // 0x70(0x10)(Edit, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	struct FARVideoFormat                        DesiredVideoFormat;                                // 0x80(0xC)(Edit, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	enum class EARFaceTrackingDirection          FaceTrackingDirection;                             // 0x8C(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	enum class EARFaceTrackingUpdate             FaceTrackingUpdate;                                // 0x8D(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_1919[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5C1[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<uint8>                                SerializedARCandidateImageDatabase;                // 0x90(0x10)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARSessionConfig");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARSessionConfig* GetDefaultObj();
 
 	bool ShouldResetTrackedObjects();
 	bool ShouldResetCameraTracking();
@@ -285,13 +252,10 @@ class AARSharedWorldGameMode : public AGameMode
 {
 public:
 	int32                                        BufferSizePerChunk;                                // 0x300(0x4)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_191A[0x64];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_5C7[0x64];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARSharedWorldGameMode");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AARSharedWorldGameMode* GetDefaultObj();
 
 	void SetPreviewImageData(const TArray<uint8>& ImageData);
 	void SetARWorldSharingIsReady();
@@ -310,13 +274,10 @@ public:
 	int32                                        ARWorldBytesTotal;                                 // 0x29C(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        PreviewImageBytesDelivered;                        // 0x2A0(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ARWorldBytesDelivered;                             // 0x2A4(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_191B[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_5CA[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARSharedWorldGameState");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AARSharedWorldGameState* GetDefaultObj();
 
 	void K2_OnARWorldMapIsReady();
 };
@@ -326,13 +287,10 @@ public:
 class AARSharedWorldPlayerController : public APlayerController
 {
 public:
-	uint8                                        Pad_191E[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_5D0[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARSharedWorldPlayerController");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AARSharedWorldPlayerController* GetDefaultObj();
 
 	void ServerMarkReadyForReceiving();
 	void ClientUpdatePreviewImageData(int32 Offset, TArray<uint8>& Buffer);
@@ -346,13 +304,10 @@ class AARSkyLight : public ASkyLight
 {
 public:
 	class UAREnvironmentCaptureProbe*            CaptureProbe;                                      // 0x228(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_191F[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_5D1[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARSkyLight");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AARSkyLight* GetDefaultObj();
 
 	void SetEnvironmentCaptureProbe(class UAREnvironmentCaptureProbe* InCaptureProbe);
 };
@@ -363,16 +318,13 @@ class UARTexture : public UTexture
 {
 public:
 	enum class EARTextureType                    TextureType;                                       // 0xD0(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1920[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5D3[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Timestamp;                                         // 0xD4(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGuid                                 ExternalTextureGuid;                               // 0xD8(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                             Size;                                              // 0xE8(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARTexture");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARTexture* GetDefaultObj();
 
 };
 
@@ -382,11 +334,8 @@ class UARTextureCameraImage : public UARTexture
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARTextureCameraImage");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARTextureCameraImage* GetDefaultObj();
 
 };
 
@@ -398,13 +347,10 @@ public:
 	enum class EARDepthQuality                   DepthQuality;                                      // 0xF0(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EARDepthAccuracy                  DepthAccuracy;                                     // 0xF1(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsTemporallySmoothed;                             // 0xF2(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1921[0x5];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_5D4[0x5];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARTextureCameraDepth");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARTextureCameraDepth* GetDefaultObj();
 
 };
 
@@ -414,16 +360,13 @@ class UAREnvironmentCaptureProbeTexture : public UTextureCube
 {
 public:
 	enum class EARTextureType                    TextureType;                                       // 0x128(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1922[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5D5[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        Timestamp;                                         // 0x12C(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGuid                                 ExternalTextureGuid;                               // 0x130(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector2D                             Size;                                              // 0x140(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AREnvironmentCaptureProbeTexture");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAREnvironmentCaptureProbeTexture* GetDefaultObj();
 
 };
 
@@ -433,11 +376,8 @@ class UARTraceResultDummy : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARTraceResultDummy");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARTraceResultDummy* GetDefaultObj();
 
 };
 
@@ -447,23 +387,20 @@ class UARTrackedGeometry : public UObject
 {
 public:
 	struct FGuid                                 UniqueId;                                          // 0x28(0x10)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1923[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5E1[0x8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTransform                            LocalToTrackingTransform;                          // 0x40(0x30)(IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	struct FTransform                            LocalToAlignedTrackingTransform;                   // 0x70(0x30)(IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
 	enum class EARTrackingState                  TrackingState;                                     // 0xA0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_1924[0xF];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5E3[0xF];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMRMeshComponent*                      UnderlyingMesh;                                    // 0xB0(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	enum class EARObjectClassification           ObjectClassification;                              // 0xB8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_1925[0x17];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5E4[0x17];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        LastUpdateFrameNumber;                             // 0xD0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1926[0xC];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5E5[0xC];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FName                                  DebugName;                                         // 0xE0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARTrackedGeometry");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARTrackedGeometry* GetDefaultObj();
 
 	bool IsTracked();
 	class UMRMeshComponent* GetUnderlyingMesh();
@@ -482,17 +419,14 @@ class UARPlaneGeometry : public UARTrackedGeometry
 {
 public:
 	enum class EARPlaneOrientation               Orientation;                                       // 0xE8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1927[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5E9[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               Center;                                            // 0xEC(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FVector                               Extent;                                            // 0xF8(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1928[0x14];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5EA[0x14];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UARPlaneGeometry*                      SubsumedBy;                                        // 0x118(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARPlaneGeometry");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARPlaneGeometry* GetDefaultObj();
 
 	class UARPlaneGeometry* GetSubsumedBy();
 	enum class EARPlaneOrientation GetOrientation();
@@ -506,13 +440,10 @@ public:
 class UARTrackedPoint : public UARTrackedGeometry
 {
 public:
-	uint8                                        Pad_1929[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_5EB[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARTrackedPoint");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARTrackedPoint* GetDefaultObj();
 
 };
 
@@ -523,13 +454,10 @@ class UARTrackedImage : public UARTrackedGeometry
 public:
 	class UARCandidateImage*                     DetectedImage;                                     // 0xE8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FVector2D                             EstimatedSize;                                     // 0xF0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                        Pad_192A[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_5EC[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARTrackedImage");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARTrackedImage* GetDefaultObj();
 
 	struct FVector2D GetEstimateSize();
 	class UARCandidateImage* GetDetectedImage();
@@ -542,15 +470,12 @@ class UARFaceGeometry : public UARTrackedGeometry
 public:
 	struct FVector                               LookAtTarget;                                      // 0xE8(0xC)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsTracked;                                        // 0xF4(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_192E[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5F2[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TMap<enum class EARFaceBlendShape, float>    BlendShapes;                                       // 0xF8(0x50)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_192F[0x98];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_5F3[0x98];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARFaceGeometry");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARFaceGeometry* GetDefaultObj();
 
 	struct FTransform GetWorldSpaceEyeTransform(enum class EAREye Eye);
 	struct FTransform GetLocalSpaceEyeTransform(enum class EAREye Eye);
@@ -563,14 +488,11 @@ public:
 class UAREnvironmentCaptureProbe : public UARTrackedGeometry
 {
 public:
-	uint8                                        Pad_1930[0x10];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5F9[0x10];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UAREnvironmentCaptureProbeTexture*     EnvironmentCaptureTexture;                         // 0xF8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AREnvironmentCaptureProbe");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAREnvironmentCaptureProbe* GetDefaultObj();
 
 	struct FVector GetExtent();
 	class UAREnvironmentCaptureProbeTexture* GetEnvironmentCaptureTexture();
@@ -583,11 +505,8 @@ class UARTrackedObject : public UARTrackedGeometry
 public:
 	class UARCandidateObject*                    DetectedObject;                                    // 0xE8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARTrackedObject");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARTrackedObject* GetDefaultObj();
 
 	class UARCandidateObject* GetDetectedObject();
 };
@@ -619,11 +538,8 @@ public:
 	UMulticastInlineDelegateProperty_            OnUpdateTrackedObject;                             // 0x1E0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastInlineDelegateProperty_            OnRemoveTrackedObject;                             // 0x1F0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARTrackableNotifyComponent");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARTrackableNotifyComponent* GetDefaultObj();
 
 };
 
@@ -633,11 +549,8 @@ class UARTypesDummyClass : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARTypesDummyClass");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARTypesDummyClass* GetDefaultObj();
 
 };
 
@@ -651,13 +564,10 @@ public:
 	float                                        Width;                                             // 0x48(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	float                                        Height;                                            // 0x4C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	enum class EARCandidateImageOrientation      Orientation;                                       // 0x50(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1931[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_604[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARCandidateImage");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARCandidateImage* GetDefaultObj();
 
 	float GetPhysicalWidth();
 	float GetPhysicalHeight();
@@ -674,13 +584,10 @@ public:
 	TArray<uint8>                                CandidateObjectData;                               // 0x30(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
 	class FString                                FriendlyName;                                      // 0x40(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	struct FBox                                  BoundingBox;                                       // 0x50(0x1C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1932[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_60B[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ARCandidateObject");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UARCandidateObject* GetDefaultObj();
 
 	void SetFriendlyName(const class FString& NewName);
 	void SetCandidateObjectData(TArray<uint8>& InCandidateObject);
@@ -692,6 +599,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

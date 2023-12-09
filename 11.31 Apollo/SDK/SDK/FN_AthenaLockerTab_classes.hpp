@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -58,21 +55,18 @@ public:
 	class UProgressModalWidget_C*                ProgressModal;                                     // 0xAE8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UAthenaCustomizationSlotButtonWrapper_C*> AllSlots;                                          // 0xAF0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 	enum class EAthenaCustomizationCategory      CurrentCustomizationType;                          // 0xB00(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_6167[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_68F4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CurrentSubslotIndex;                               // 0xB04(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAthenaItemCustomizationSelector_C*    ItemCustomizationSelector;                         // 0xB08(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAthenaCustomizationSlotButton_C*      CustomizationSlotButtonToPlayConfirmationOn;       // 0xB10(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          AutoHideDetailsForDances;                          // 0xB18(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UAthenaCustomizationSlotButtonWrapper_C* FirstSlotInMenu;                                   // 0xB20(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         bIsFirstSlotBannerSlot;                            // 0xB28(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6168[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_68F5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWidget*                               LastHoveredSlot;                                   // 0xB30(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AthenaLockerTab_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthenaLockerTab_C* GetDefaultObj();
 
 	class UWidget* BP_GetDesiredFocusTarget(bool CallFunc_IsValid_ReturnValue);
 	void CheckOverrideCampaignHeroItemDetails(class UAthenaCustomizationSlotButtonWrapper_C* SlotButtonWrapper, class UFortItem* CallFunc_GetCampaignHeroPartItem_ReturnValue, class UAthenaCosmeticAccountItem* K2Node_DynamicCast_AsAthena_Cosmetic_Account_Item, bool K2Node_DynamicCast_bSuccess, class FText CallFunc_GetLockerItemTypeText_ReturnValue, class UFortHero* CallFunc_GetHero_ReturnValue, class FText CallFunc_GetLockerDescriptionText_ReturnValue, bool CallFunc_IsValid_ReturnValue, class FText CallFunc_GetDisplayName_ReturnValue, enum class EFortRarity CallFunc_GetRarity_ReturnValue, bool CallFunc_IsValid_ReturnValue_1);
@@ -111,6 +105,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

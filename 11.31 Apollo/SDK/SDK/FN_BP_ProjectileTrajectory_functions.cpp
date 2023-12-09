@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_ProjectileTrajectory.BP_ProjectileTrajectory_C
+// (Actor)
+
+class UClass* ABP_ProjectileTrajectory_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_ProjectileTrajectory_C");
+
+	return Clss;
+}
+
+
+// BP_ProjectileTrajectory_C BP_ProjectileTrajectory.Default__BP_ProjectileTrajectory_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_ProjectileTrajectory_C* ABP_ProjectileTrajectory_C::GetDefaultObj()
+{
+	static class ABP_ProjectileTrajectory_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_ProjectileTrajectory_C*>(ABP_ProjectileTrajectory_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.SetShouldUpdateFromOwner
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void ABP_ProjectileTrajectory_C::SetShouldUpdateFromOwner(bool ShouldUpdate, class UObject* Owner)
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_C", "SetShouldUpdateFromOwner");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_C_SetShouldUpdateFromOwner_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_C", "SetShouldUpdateFromOwner");
+
+	Params::ABP_ProjectileTrajectory_C_SetShouldUpdateFromOwner_Params Parms{};
 
 	Parms.ShouldUpdate = ShouldUpdate;
 	Parms.Owner = Owner;
@@ -43,9 +71,12 @@ void ABP_ProjectileTrajectory_C::SetShouldUpdateFromOwner(bool ShouldUpdate, cla
 
 void ABP_ProjectileTrajectory_C::UpdateFromTrajectoryOwner(TScriptInterface<class IFortTrajectoryAbilityInterface> K2Node_DynamicCast_AsFort_Trajectory_Ability_Interface, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_C", "UpdateFromTrajectoryOwner");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_C_UpdateFromTrajectoryOwner_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_C", "UpdateFromTrajectoryOwner");
+
+	Params::ABP_ProjectileTrajectory_C_UpdateFromTrajectoryOwner_Params Parms{};
 
 	Parms.K2Node_DynamicCast_AsFort_Trajectory_Ability_Interface = K2Node_DynamicCast_AsFort_Trajectory_Ability_Interface;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
@@ -111,9 +142,12 @@ void ABP_ProjectileTrajectory_C::UpdateFromTrajectoryOwner(TScriptInterface<clas
 
 void ABP_ProjectileTrajectory_C::SetTrajectorySpline(TArray<struct FVector>& SplinePoints, TArray<struct FVector>& SplineTangents, int32 CallFunc_Array_Length_ReturnValue, int32 Temp_int_Array_Index_Variable, bool CallFunc_Greater_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Array_Index_Variable_1, int32 CallFunc_Array_Length_ReturnValue_1, const struct FVector& CallFunc_Array_Get_Item, int32 CallFunc_Multiply_IntInt_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, const struct FVector& CallFunc_Array_Get_Item_1, bool CallFunc_Array_IsValidIndex_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, int32 CallFunc_Multiply_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_2, int32 CallFunc_Add_IntInt_ReturnValue_3, int32 CallFunc_Multiply_IntInt_ReturnValue_2, const struct FVector& CallFunc_Array_Get_Item_2, const struct FVector& CallFunc_Array_Get_Item_3, const struct FVector& CallFunc_Normal_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_4, const struct FVector& CallFunc_Array_Get_Item_4, int32 CallFunc_Array_LastIndex_ReturnValue, int32 CallFunc_Array_LastIndex_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue_1, const struct FVector& CallFunc_Array_Get_Item_5, bool CallFunc_Array_IsValidIndex_ReturnValue_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, float CallFunc_Dot_VectorVector_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Array_Get_Item_6, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_1, float CallFunc_Dot_VectorVector_ReturnValue_1, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue_1, const struct FHitResult& CallFunc_K2_SetWorldLocation_SweepHitResult, int32 Temp_int_Loop_Counter_Variable_1, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_5, const struct FVector& CallFunc_GetLocationAtSplinePoint_ReturnValue, const struct FVector& CallFunc_GetLocationAtSplinePoint_ReturnValue_1, const struct FVector& CallFunc_GetArriveTangentAtSplinePoint_ReturnValue, const struct FVector& CallFunc_GetLeaveTangentAtSplinePoint_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_2, class USplineMeshComponent* CallFunc_Array_Get_Item_7, bool CallFunc_Less_IntInt_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_C", "SetTrajectorySpline");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_C_SetTrajectorySpline_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_C", "SetTrajectorySpline");
+
+	Params::ABP_ProjectileTrajectory_C_SetTrajectorySpline_Params Parms{};
 
 	Parms.SplinePoints = SplinePoints;
 	Parms.SplineTangents = SplineTangents;
@@ -177,12 +211,14 @@ void ABP_ProjectileTrajectory_C::SetTrajectorySpline(TArray<struct FVector>& Spl
 
 void ABP_ProjectileTrajectory_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -195,9 +231,12 @@ void ABP_ProjectileTrajectory_C::ReceiveBeginPlay()
 
 void ABP_ProjectileTrajectory_C::SetTrajectoryFromNative(TArray<struct FVector>& SplinePoints, TArray<struct FVector>& SplineTangents)
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_C", "SetTrajectoryFromNative");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_C_SetTrajectoryFromNative_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_C", "SetTrajectoryFromNative");
+
+	Params::ABP_ProjectileTrajectory_C_SetTrajectoryFromNative_Params Parms{};
 
 	Parms.SplinePoints = SplinePoints;
 	Parms.SplineTangents = SplineTangents;
@@ -214,9 +253,12 @@ void ABP_ProjectileTrajectory_C::SetTrajectoryFromNative(TArray<struct FVector>&
 
 void ABP_ProjectileTrajectory_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_C", "ReceiveTick");
+
+	Params::ABP_ProjectileTrajectory_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -243,9 +285,12 @@ void ABP_ProjectileTrajectory_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_ProjectileTrajectory_C::ExecuteUbergraph_BP_ProjectileTrajectory(int32 EntryPoint, int32 Temp_int_Variable, bool CallFunc_EqualEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, const struct FTransform& Temp_struct_Variable, class USplineMeshComponent* CallFunc_AddComponent_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, TArray<struct FVector>& K2Node_Event_SplinePoints, TArray<struct FVector>& K2Node_Event_SplineTangents, float K2Node_Event_DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("BP_ProjectileTrajectory_C", "ExecuteUbergraph_BP_ProjectileTrajectory");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ProjectileTrajectory_C", "ExecuteUbergraph_BP_ProjectileTrajectory");
+
+	Params::ABP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -266,6 +311,4 @@ void ABP_ProjectileTrajectory_C::ExecuteUbergraph_BP_ProjectileTrajectory(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

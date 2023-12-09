@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_Athena_Pickaxe_DualWield_Generic.B_Athena_Pickaxe_DualWield_Generic_C
+// (Actor)
+
+class UClass* AB_Athena_Pickaxe_DualWield_Generic_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Athena_Pickaxe_DualWield_Generic_C");
+
+	return Clss;
+}
+
+
+// B_Athena_Pickaxe_DualWield_Generic_C B_Athena_Pickaxe_DualWield_Generic.Default__B_Athena_Pickaxe_DualWield_Generic_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Athena_Pickaxe_DualWield_Generic_C* AB_Athena_Pickaxe_DualWield_Generic_C::GetDefaultObj()
+{
+	static class AB_Athena_Pickaxe_DualWield_Generic_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Athena_Pickaxe_DualWield_Generic_C*>(AB_Athena_Pickaxe_DualWield_Generic_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function B_Athena_Pickaxe_DualWield_Generic.B_Athena_Pickaxe_DualWield_Generic_C.Impact Sequence
@@ -86,9 +111,12 @@ namespace SDK
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Impact_Sequence(const struct FHitResult& Hit_Result, enum class EPhysicalSurface IMpact_Physical_Surface, class UFXSystemComponent* SpawnedPSC, const struct FRotator& FX_Combat_Rotation, const struct FVector& FX_Chest_Location, const struct FRotator& CallFunc_GetSocketRotation_ReturnValue, const struct FVector& CallFunc_Conv_RotatorToVector_ReturnValue, const struct FVector& CallFunc_Conv_RotatorToVector_ReturnValue_1, const struct FVector& CallFunc_Normal_ReturnValue, const struct FVector& CallFunc_Conv_RotatorToVector_ReturnValue_2, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, const struct FVector& CallFunc_VLerp_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, class APawn* CallFunc_GetInstigator_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue_1, class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue, const struct FRotator& CallFunc_GetSocketRotation_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, class UAnimMontage* CallFunc_GetCurrentActiveMontage_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_1, float CallFunc_VSize_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_3, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_4, bool CallFunc_EqualEqual_ByteByte_ReturnValue_5, bool CallFunc_EqualEqual_ByteByte_ReturnValue_6, bool CallFunc_BooleanOR_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue_3, bool CallFunc_Array_Contains_ReturnValue, bool Temp_bool_Variable, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_2, const struct FVector& K2Node_Select_Default, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_3, const struct FVector& CallFunc_Normal_ReturnValue_2, const struct FVector& CallFunc_Cross_VectorVector_ReturnValue, const struct FVector& CallFunc_Cross_VectorVector_ReturnValue_1, const struct FRotator& CallFunc_MakeRotFromXY_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult)
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Impact Sequence");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_Impact_Sequence_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Impact Sequence");
+
+	Params::AB_Athena_Pickaxe_DualWield_Generic_C_Impact_Sequence_Params Parms{};
 
 	Parms.Hit_Result = Hit_Result;
 	Parms.IMpact_Physical_Surface = IMpact_Physical_Surface;
@@ -194,9 +222,12 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Impact_Sequence(const struct FHitRes
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::PlayCQCPickaxeEnemyAudio(struct FHitResult& Hit, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, class APawn* CallFunc_GetInstigator_ReturnValue, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor, bool K2Node_DynamicCast_bSuccess, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess_1, class APlayerController* CallFunc_GetLocalViewingPlayerController_ReturnValue, uint8 CallFunc_GetActorTeam_ReturnValue, bool CallFunc_IsValid_ReturnValue, enum class EFortTeamAffiliation CallFunc_GetTeamAffiliationToLocalPlayer_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "PlayCQCPickaxeEnemyAudio");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_PlayCQCPickaxeEnemyAudio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "PlayCQCPickaxeEnemyAudio");
+
+	Params::AB_Athena_Pickaxe_DualWield_Generic_C_PlayCQCPickaxeEnemyAudio_Params Parms{};
 
 	Parms.Hit = Hit;
 	Parms.CallFunc_BreakHitResult_bBlockingHit = CallFunc_BreakHitResult_bBlockingHit;
@@ -251,9 +282,12 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::PlayCQCPickaxeEnemyAudio(struct FHit
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::SetWpnRarity(enum class EFortRarity Temp_byte_Variable, uint8 Temp_byte_Variable_1, uint8 Temp_byte_Variable_2, uint8 Temp_byte_Variable_3, uint8 Temp_byte_Variable_4, uint8 Temp_byte_Variable_5, uint8 Temp_byte_Variable_6, uint8 Temp_byte_Variable_7, uint8 Temp_byte_Variable_8, class UFortWeaponItemDefinition* CallFunc_GetWeaponData_ReturnValue, enum class EFortRarity CallFunc_GetRarity_ReturnValue, uint8 K2Node_Select_Default, float CallFunc_Conv_ByteToFloat_ReturnValue, const class FString& CallFunc_Conv_FloatToString_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "SetWpnRarity");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_SetWpnRarity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "SetWpnRarity");
+
+	Params::AB_Athena_Pickaxe_DualWield_Generic_C_SetWpnRarity_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
@@ -302,9 +336,12 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::SetWpnRarity(enum class EFortRarity 
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Unbind_Dual_Melee_Swing_Events(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, class APawn* CallFunc_GetInstigator_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue_1, class APlayerPawn_Generic_C* K2Node_DynamicCast_AsPlayer_Pawn_Generic, bool K2Node_DynamicCast_bSuccess, const class FString& CallFunc_Conv_ObjectToString_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_8, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_9, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_10, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_11, class APawn* CallFunc_GetInstigator_ReturnValue_2, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Unbind Dual Melee Swing Events");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_Unbind_Dual_Melee_Swing_Events_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Unbind Dual Melee Swing Events");
+
+	Params::AB_Athena_Pickaxe_DualWield_Generic_C_Unbind_Dual_Melee_Swing_Events_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
@@ -360,9 +397,12 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Unbind_Dual_Melee_Swing_Events(UDele
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Bind_Dual_Melee_Swing_Events(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, class APawn* CallFunc_GetInstigator_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue_1, const class FString& CallFunc_Conv_ObjectToString_ReturnValue, class APlayerPawn_Generic_C* K2Node_DynamicCast_AsPlayer_Pawn_Generic, bool K2Node_DynamicCast_bSuccess, const class FString& CallFunc_Concat_StrStr_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_8, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_9, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_10, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_11, class APawn* CallFunc_GetInstigator_ReturnValue_2, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Bind Dual Melee Swing Events");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_Bind_Dual_Melee_Swing_Events_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Bind Dual Melee Swing Events");
+
+	Params::AB_Athena_Pickaxe_DualWield_Generic_C_Bind_Dual_Melee_Swing_Events_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
@@ -402,9 +442,12 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Bind_Dual_Melee_Swing_Events(UDelega
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Set_Active_Alteration_Idle_Particles(bool Active, bool Reset, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Set Active Alteration Idle Particles");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_Set_Active_Alteration_Idle_Particles_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Set Active Alteration Idle Particles");
+
+	Params::AB_Athena_Pickaxe_DualWield_Generic_C_Set_Active_Alteration_Idle_Particles_Params Parms{};
 
 	Parms.Active = Active;
 	Parms.Reset = Reset;
@@ -423,12 +466,14 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Set_Active_Alteration_Idle_Particles
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::UserConstructionScript()
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "UserConstructionScript");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -440,9 +485,12 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::UserConstructionScript()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnLoaded_F1C7B8E24518F4F2DE2C8DBABB95E06D(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnLoaded_F1C7B8E24518F4F2DE2C8DBABB95E06D");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_OnLoaded_F1C7B8E24518F4F2DE2C8DBABB95E06D_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnLoaded_F1C7B8E24518F4F2DE2C8DBABB95E06D");
+
+	Params::AB_Athena_Pickaxe_DualWield_Generic_C_OnLoaded_F1C7B8E24518F4F2DE2C8DBABB95E06D_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -459,9 +507,12 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnLoaded_F1C7B8E24518F4F2DE2C8DBABB9
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnPlayWeaponFireFX(bool bPersistentFire, bool bSecondaryFire)
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnPlayWeaponFireFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_OnPlayWeaponFireFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnPlayWeaponFireFX");
+
+	Params::AB_Athena_Pickaxe_DualWield_Generic_C_OnPlayWeaponFireFX_Params Parms{};
 
 	Parms.bPersistentFire = bPersistentFire;
 	Parms.bSecondaryFire = bSecondaryFire;
@@ -477,12 +528,14 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnPlayWeaponFireFX(bool bPersistentF
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::PlayRClickImpacts()
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "PlayRClickImpacts");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_PlayRClickImpacts_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "PlayRClickImpacts");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -496,9 +549,12 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::PlayRClickImpacts()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnPlayImpactFX(struct FHitResult& HitResult, enum class EPhysicalSurface ImpactPhysicalSurface, class UFXSystemComponent* SpawnedPSC)
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnPlayImpactFX");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_OnPlayImpactFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnPlayImpactFX");
+
+	Params::AB_Athena_Pickaxe_DualWield_Generic_C_OnPlayImpactFX_Params Parms{};
 
 	Parms.HitResult = HitResult;
 	Parms.ImpactPhysicalSurface = ImpactPhysicalSurface;
@@ -515,12 +571,14 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnPlayImpactFX(struct FHitResult& Hi
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnEquippedWeaponDestory()
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnEquippedWeaponDestory");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_OnEquippedWeaponDestory_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnEquippedWeaponDestory");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -531,12 +589,14 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnEquippedWeaponDestory()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnWeaponAttached()
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnWeaponAttached");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_OnWeaponAttached_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnWeaponAttached");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -548,9 +608,12 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnWeaponAttached()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnInitCosmeticAlterations(const struct FFortCosmeticModification& CosmeticMod)
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnInitCosmeticAlterations");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_OnInitCosmeticAlterations_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnInitCosmeticAlterations");
+
+	Params::AB_Athena_Pickaxe_DualWield_Generic_C_OnInitCosmeticAlterations_Params Parms{};
 
 	Parms.CosmeticMod = CosmeticMod;
 
@@ -567,9 +630,12 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnInitCosmeticAlterations(const stru
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnWeaponVisibilityChanged(bool bVisible, bool bSetForLocalControllerOnly)
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnWeaponVisibilityChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_OnWeaponVisibilityChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnWeaponVisibilityChanged");
+
+	Params::AB_Athena_Pickaxe_DualWield_Generic_C_OnWeaponVisibilityChanged_Params Parms{};
 
 	Parms.bVisible = bVisible;
 	Parms.bSetForLocalControllerOnly = bSetForLocalControllerOnly;
@@ -585,12 +651,14 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnWeaponVisibilityChanged(bool bVisi
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnWeaponDetached()
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnWeaponDetached");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_OnWeaponDetached_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnWeaponDetached");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -601,12 +669,14 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnWeaponDetached()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnInitWeaponCosmetics()
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnInitWeaponCosmetics");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_OnInitWeaponCosmetics_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnInitWeaponCosmetics");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -617,12 +687,14 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnInitWeaponCosmetics()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Left()
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Left");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_Swing_Left_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Left");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -633,12 +705,14 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Left()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Left_End()
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Left End");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_Swing_Left_End_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Left End");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -649,12 +723,14 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Left_End()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Right()
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Right");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_Swing_Right_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Right");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -665,12 +741,14 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Right()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Right_End()
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Right End");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_Swing_Right_End_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Right End");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -681,12 +759,14 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Right_End()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Left_2()
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Left 2");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_Swing_Left_2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Left 2");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -697,12 +777,14 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Left_2()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Right_2()
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Right 2");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_Swing_Right_2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "Swing Right 2");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -713,12 +795,14 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::Swing_Right_2()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::OnInstigatorSet()
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnInstigatorSet");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_OnInstigatorSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "OnInstigatorSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -729,12 +813,14 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::OnInstigatorSet()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::K2_OnUnEquip()
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "K2_OnUnEquip");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_K2_OnUnEquip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "K2_OnUnEquip");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -760,7 +846,7 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::K2_OnUnEquip()
 // class APawn*                       CallFunc_GetInstigator_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortPawn*                   K2Node_DynamicCast_AsFort_Pawn                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortCosmeticModification   K2Node_Event_CosmeticMod                                         ()
+// struct FFortCosmeticModification   K2Node_Event_CosmeticMod                                         (None)
 // class UParticleSystemComponent*    CallFunc_SpawnEmitterAttached_ReturnValue                        (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_CreateDynamicMaterialInstance_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsAssetNull_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -909,9 +995,12 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::K2_OnUnEquip()
 
 void AB_Athena_Pickaxe_DualWield_Generic_C::ExecuteUbergraph_B_Athena_Pickaxe_DualWield_Generic(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, float CallFunc_MultiplyMultiply_FloatFloat_ReturnValue, float CallFunc_GetPI_ReturnValue, class UObject* K2Node_CustomEvent_Loaded, float CallFunc_Multiply_FloatFloat_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, bool K2Node_Event_bPersistentFire, bool K2Node_Event_bSecondaryFire, const struct FHitResult& K2Node_Event_HitResult, enum class EPhysicalSurface K2Node_Event_ImpactPhysicalSurface, class UFXSystemComponent* K2Node_Event_SpawnedPSC, bool CallFunc_DoesSocketExist_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FFortCosmeticModification& K2Node_Event_CosmeticMod, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool CallFunc_IsAssetNull_ReturnValue, bool K2Node_Event_bVisible, bool K2Node_Event_bSetForLocalControllerOnly, bool CallFunc_IsValid_ReturnValue, class UFortWeaponItemDefinition* CallFunc_GetWeaponData_ReturnValue, class UParticleSystemComponent* CallFunc_GetSwingPSC_ReturnValue, TSoftObjectPtr<class UTexture2D> CallFunc_GetSmallPreviewImage_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UTexture2D* CallFunc_GetOrLoadSynchronously_ReturnValue, class UParticleSystemComponent* CallFunc_GetSwingPSC_ReturnValue_1, class UParticleSystemComponent* CallFunc_GetIdlePSC_ReturnValue, class UParticleSystemComponent* CallFunc_GetIdlePSC_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, class FName CallFunc_GetIdleFXSocketName_ReturnValue, class FName CallFunc_GetSwingFXSocketName_ReturnValue, bool CallFunc_K2_AttachToComponent_ReturnValue, bool CallFunc_K2_AttachToComponent_ReturnValue_1, class UObject* Temp_object_Variable, class UParticleSystem* K2Node_DynamicCast_AsParticle_System, bool K2Node_DynamicCast_bSuccess_1, class UParticleSystemComponent* CallFunc_GetIdleOffhandPSC_ReturnValue, class UParticleSystemComponent* CallFunc_GetSwingOffhandPSC_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_4, class UParticleSystemComponent* CallFunc_GetSwingOffhandPSC_ReturnValue_1, class FName CallFunc_GetIdleFXOffhandSocketName_ReturnValue, bool CallFunc_K2_AttachToComponent_ReturnValue_2, class FName CallFunc_GetSwingFXOffhandSocketName_ReturnValue, class UFXSystemComponent* CallFunc_GetAnimTrailsPSC_ReturnValue, class FName CallFunc_GetAnimTrailsSecondSocketName_ReturnValue, bool CallFunc_IsValid_ReturnValue_5, class FName CallFunc_GetAnimTrailsFirstSocketName_ReturnValue, float CallFunc_GetAnimTrailsWidth_ReturnValue, class UFXSystemComponent* CallFunc_GetAnimTrailsOffhandPSC_ReturnValue, bool CallFunc_IsValid_ReturnValue_6, class FName CallFunc_GetAnimTrailsOffhandSecondSocketName_ReturnValue, class FName CallFunc_GetAnimTrailsOffhandFirstSocketName_ReturnValue, float CallFunc_GetAnimTrailsOffhandWidth_ReturnValue, class UParticleSystemComponent* CallFunc_GetSwingOffhandPSC_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_7, class UFXSystemComponent* CallFunc_GetAnimTrailsOffhandPSC_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_8, class UFXSystemComponent* CallFunc_GetAnimTrailsPSC_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_9, float CallFunc_MultiplyMultiply_FloatFloat_ReturnValue_1, class UParticleSystemComponent* CallFunc_GetSwingPSC_ReturnValue_2, bool CallFunc_GetUseAnimTrailsPSC_ReturnValue, bool CallFunc_IsValid_ReturnValue_10, bool CallFunc_GetUseAnimTrailsOffhandPSC_ReturnValue, float CallFunc_GetPI_ReturnValue_1, bool CallFunc_GetUseAnimTrailsOffhandPSC_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_1, bool CallFunc_GetUseAnimTrailsPSC_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_11, class APawn* CallFunc_GetInstigator_ReturnValue_1, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn_1, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsValid_ReturnValue_12, class UFXSystemComponent* CallFunc_GetAnimTrailsPSC_ReturnValue_2, class UFXSystemComponent* CallFunc_GetAnimTrailsOffhandPSC_ReturnValue_2, class UParticleSystemComponent* CallFunc_GetIdleOffhandPSC_ReturnValue_1, bool CallFunc_DoesSocketExist_ReturnValue_1, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_1, bool CallFunc_K2_AttachToComponent_ReturnValue_3, class UParticleSystemComponent* CallFunc_GetSwingOffhandPSC_ReturnValue_3, bool CallFunc_K2_AttachToComponent_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_13, class UParticleSystemComponent* CallFunc_GetSwingPSC_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_14, const struct FTransform& CallFunc_GetSocketTransform_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue_2, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, class APlayerPawn_Generic_Parent_C* K2Node_DynamicCast_AsPlayer_Pawn_Generic_Parent, bool K2Node_DynamicCast_bSuccess_3, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_Add_FloatFloat_ReturnValue, const struct FTransform& CallFunc_GetSocketTransform_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location_1, const struct FRotator& CallFunc_BreakTransform_Rotation_1, const struct FVector& CallFunc_BreakTransform_Scale_1, float CallFunc_Multiply_FloatFloat_ReturnValue_2, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_2, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_3, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, float CallFunc_VSize_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult, float CallFunc_Multiply_FloatFloat_ReturnValue_3, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_Divide_FloatFloat_ReturnValue_2, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_3, float CallFunc_Divide_FloatFloat_ReturnValue_4, const struct FVector& CallFunc_MakeVector_ReturnValue_1, const struct FVector& CallFunc_MakeVector_ReturnValue_2, bool CallFunc_DoesSocketExist_ReturnValue_2, bool CallFunc_DoesSocketExist_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue, const struct FTransform& CallFunc_GetSocketTransform_ReturnValue_2, const struct FTransform& CallFunc_GetSocketTransform_ReturnValue_3, const struct FVector& CallFunc_BreakTransform_Location_2, const struct FRotator& CallFunc_BreakTransform_Rotation_2, const struct FVector& CallFunc_BreakTransform_Scale_2, const struct FVector& CallFunc_BreakTransform_Location_3, const struct FRotator& CallFunc_BreakTransform_Rotation_3, const struct FVector& CallFunc_BreakTransform_Scale_3, float CallFunc_BreakVector_X_2, float CallFunc_BreakVector_Y_2, float CallFunc_BreakVector_Z_2, float CallFunc_BreakVector_X_3, float CallFunc_BreakVector_Y_3, float CallFunc_BreakVector_Z_3, float CallFunc_Add_FloatFloat_ReturnValue_1, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_4, float CallFunc_Divide_FloatFloat_ReturnValue_5, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_5, float CallFunc_Multiply_FloatFloat_ReturnValue_4, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue_2, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue_1, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult_1, float CallFunc_VSize_ReturnValue_1, bool CallFunc_DoesSocketExist_ReturnValue_4, float CallFunc_Multiply_FloatFloat_ReturnValue_5, float CallFunc_Divide_FloatFloat_ReturnValue_6, float CallFunc_Divide_FloatFloat_ReturnValue_7, const struct FVector& CallFunc_MakeVector_ReturnValue_3, float CallFunc_Divide_FloatFloat_ReturnValue_8, float CallFunc_Divide_FloatFloat_ReturnValue_9, const struct FVector& CallFunc_MakeVector_ReturnValue_4, const struct FVector& CallFunc_MakeVector_ReturnValue_5, bool CallFunc_DoesSocketExist_ReturnValue_5, bool CallFunc_BooleanAND_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "ExecuteUbergraph_B_Athena_Pickaxe_DualWield_Generic");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_Pickaxe_DualWield_Generic_C_ExecuteUbergraph_B_Athena_Pickaxe_DualWield_Generic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_Pickaxe_DualWield_Generic_C", "ExecuteUbergraph_B_Athena_Pickaxe_DualWield_Generic");
+
+	Params::AB_Athena_Pickaxe_DualWield_Generic_C_ExecuteUbergraph_B_Athena_Pickaxe_DualWield_Generic_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -1084,6 +1173,4 @@ void AB_Athena_Pickaxe_DualWield_Generic_C::ExecuteUbergraph_B_Athena_Pickaxe_Du
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

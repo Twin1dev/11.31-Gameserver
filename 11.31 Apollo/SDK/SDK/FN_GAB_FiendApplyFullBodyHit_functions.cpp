@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GAB_FiendApplyFullBodyHit.GAB_FiendApplyFullBodyHit_C
+// (None)
+
+class UClass* UGAB_FiendApplyFullBodyHit_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAB_FiendApplyFullBodyHit_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// GAB_FiendApplyFullBodyHit_C GAB_FiendApplyFullBodyHit.Default__GAB_FiendApplyFullBodyHit_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAB_FiendApplyFullBodyHit_C* UGAB_FiendApplyFullBodyHit_C::GetDefaultObj()
+{
+	static class UGAB_FiendApplyFullBodyHit_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAB_FiendApplyFullBodyHit_C*>(UGAB_FiendApplyFullBodyHit_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

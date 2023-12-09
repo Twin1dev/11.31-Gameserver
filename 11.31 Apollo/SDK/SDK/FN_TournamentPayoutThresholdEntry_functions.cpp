@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TournamentPayoutThresholdEntry.TournamentPayoutThresholdEntry_C
+// (None)
+
+class UClass* UTournamentPayoutThresholdEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TournamentPayoutThresholdEntry_C");
+
+	return Clss;
+}
+
+
+// TournamentPayoutThresholdEntry_C TournamentPayoutThresholdEntry.Default__TournamentPayoutThresholdEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTournamentPayoutThresholdEntry_C* UTournamentPayoutThresholdEntry_C::GetDefaultObj()
+{
+	static class UTournamentPayoutThresholdEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTournamentPayoutThresholdEntry_C*>(UTournamentPayoutThresholdEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TournamentPayoutThresholdEntry.TournamentPayoutThresholdEntry_C.OnAddedToFocusPath
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UTournamentPayoutThresholdEntry_C::OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent)
 {
-	static auto Func = Class->GetFunction("TournamentPayoutThresholdEntry_C", "OnAddedToFocusPath");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentPayoutThresholdEntry_C_OnAddedToFocusPath_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentPayoutThresholdEntry_C", "OnAddedToFocusPath");
+
+	Params::UTournamentPayoutThresholdEntry_C_OnAddedToFocusPath_Params Parms{};
 
 	Parms.InFocusEvent = InFocusEvent;
 
@@ -40,9 +68,12 @@ void UTournamentPayoutThresholdEntry_C::OnAddedToFocusPath(const struct FFocusEv
 
 void UTournamentPayoutThresholdEntry_C::OnRemovedFromFocusPath(const struct FFocusEvent& InFocusEvent)
 {
-	static auto Func = Class->GetFunction("TournamentPayoutThresholdEntry_C", "OnRemovedFromFocusPath");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentPayoutThresholdEntry_C_OnRemovedFromFocusPath_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentPayoutThresholdEntry_C", "OnRemovedFromFocusPath");
+
+	Params::UTournamentPayoutThresholdEntry_C_OnRemovedFromFocusPath_Params Parms{};
 
 	Parms.InFocusEvent = InFocusEvent;
 
@@ -58,9 +89,12 @@ void UTournamentPayoutThresholdEntry_C::OnRemovedFromFocusPath(const struct FFoc
 
 void UTournamentPayoutThresholdEntry_C::OnPayoutDataSet(int32 EntryIndex)
 {
-	static auto Func = Class->GetFunction("TournamentPayoutThresholdEntry_C", "OnPayoutDataSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentPayoutThresholdEntry_C_OnPayoutDataSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentPayoutThresholdEntry_C", "OnPayoutDataSet");
+
+	Params::UTournamentPayoutThresholdEntry_C_OnPayoutDataSet_Params Parms{};
 
 	Parms.EntryIndex = EntryIndex;
 
@@ -87,9 +121,12 @@ void UTournamentPayoutThresholdEntry_C::OnPayoutDataSet(int32 EntryIndex)
 
 void UTournamentPayoutThresholdEntry_C::ExecuteUbergraph_TournamentPayoutThresholdEntry(int32 EntryPoint, bool Temp_bool_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, const struct FFocusEvent& K2Node_Event_InFocusEvent_1, const struct FFocusEvent& K2Node_Event_InFocusEvent, int32 K2Node_Event_EntryIndex, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, int32 CallFunc_Percent_IntInt_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool CallFunc_EqualEqual_IntInt_ReturnValue, const struct FLinearColor& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("TournamentPayoutThresholdEntry_C", "ExecuteUbergraph_TournamentPayoutThresholdEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentPayoutThresholdEntry_C_ExecuteUbergraph_TournamentPayoutThresholdEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentPayoutThresholdEntry_C", "ExecuteUbergraph_TournamentPayoutThresholdEntry");
+
+	Params::UTournamentPayoutThresholdEntry_C_ExecuteUbergraph_TournamentPayoutThresholdEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -110,6 +147,4 @@ void UTournamentPayoutThresholdEntry_C::ExecuteUbergraph_TournamentPayoutThresho
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -23,11 +20,8 @@ public:
 	struct FLinearColor                          Linear_color;                                      // 0x248(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class FText                                  Text;                                              // 0x258(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("RMT_Offer_EntryRow_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class URMT_Offer_EntryRow_C* GetDefaultObj();
 
 	void Construct();
 	void ExecuteUbergraph_RMT_Offer_EntryRow(int32 EntryPoint, const struct FSlateColor& K2Node_MakeStruct_SlateColor);
@@ -35,6 +29,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

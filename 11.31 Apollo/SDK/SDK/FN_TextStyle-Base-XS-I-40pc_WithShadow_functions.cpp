@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TextStyle-Base-XS-I-40pc_WithShadow.TextStyle-Base-XS-I-40pc_WithShadow_C
+// (None)
+
+class UClass* UTextStyleMinusBaseMinusXSMinusIMinus40pc_WithShadow_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextStyle-Base-XS-I-40pc_WithShadow_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// TextStyle-Base-XS-I-40pc_WithShadow_C TextStyle-Base-XS-I-40pc_WithShadow.Default__TextStyle-Base-XS-I-40pc_WithShadow_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTextStyleMinusBaseMinusXSMinusIMinus40pc_WithShadow_C* UTextStyleMinusBaseMinusXSMinusIMinus40pc_WithShadow_C::GetDefaultObj()
+{
+	static class UTextStyleMinusBaseMinusXSMinusIMinus40pc_WithShadow_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextStyleMinusBaseMinusXSMinusIMinus40pc_WithShadow_C*>(UTextStyleMinusBaseMinusXSMinusIMinus40pc_WithShadow_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class ULiveLinkRetargetAsset : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LiveLinkRetargetAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULiveLinkRetargetAsset* GetDefaultObj();
 
 };
 
@@ -31,13 +25,10 @@ public:
 class ULiveLinkAnimationVirtualSubject : public ULiveLinkVirtualSubject
 {
 public:
-	uint8                                        Pad_1827[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_378[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LiveLinkAnimationVirtualSubject");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULiveLinkAnimationVirtualSubject* GetDefaultObj();
 
 };
 
@@ -47,11 +38,8 @@ class ULiveLinkBlueprintLibrary : public UBlueprintFunctionLibrary
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LiveLinkBlueprintLibrary");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULiveLinkBlueprintLibrary* GetDefaultObj();
 
 	void TransformNames(struct FSubjectFrameHandle& SubjectFrameHandle, TArray<class FName>* TransformNames);
 	void TransformName(struct FLiveLinkTransform& LiveLinkTransform, class FName* Name);
@@ -93,13 +81,10 @@ class ULiveLinkComponent : public UActorComponent
 {
 public:
 	UMulticastInlineDelegateProperty_            OnLiveLinkUpdated;                                 // 0xB0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_183D[0x10];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_40D[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LiveLinkComponent");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULiveLinkComponent* GetDefaultObj();
 
 	void GetSubjectDataAtWorldTime(class FName SubjectName, float WorldTime, bool* bSuccess, struct FSubjectFrameHandle* SubjectFrameHandle);
 	void GetSubjectDataAtSceneTime(class FName SubjectName, struct FTimecode& SceneTime, bool* bSuccess, struct FSubjectFrameHandle* SubjectFrameHandle);
@@ -116,28 +101,22 @@ public:
 	class FName                                  ActorTransformBone;                                // 0xB8(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bModifyActorTransform;                             // 0xC0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bSetRelativeLocation;                              // 0xC1(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_183E[0xE];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_40E[0xE];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LiveLinkDrivenComponent");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULiveLinkDrivenComponent* GetDefaultObj();
 
 };
 
-// 0x0 (0x270 - 0x270)
+// 0x8 (0x270 - 0x268)
 // Class LiveLink.LiveLinkInstance
 class ULiveLinkInstance : public UAnimInstance
 {
 public:
 	class ULiveLinkRetargetAsset*                CurrentRetargetAsset;                              // 0x268(0x8)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LiveLinkInstance");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULiveLinkInstance* GetDefaultObj();
 
 };
 
@@ -146,13 +125,10 @@ public:
 class ULiveLinkMessageBusFinder : public UObject
 {
 public:
-	uint8                                        Pad_1840[0x58];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_418[0x58];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LiveLinkMessageBusFinder");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULiveLinkMessageBusFinder* GetDefaultObj();
 
 	void GetAvailableProviders(class UObject* WorldContextObject, const struct FLatentActionInfo& LatentInfo, float Duration, TArray<struct FProviderPollResult>* AvailableProviders);
 	class ULiveLinkMessageBusFinder* ConstructMessageBusFinder();
@@ -165,11 +141,8 @@ class ULiveLinkMessageBusSourceFactory : public ULiveLinkSourceFactory
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LiveLinkMessageBusSourceFactory");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULiveLinkMessageBusSourceFactory* GetDefaultObj();
 
 };
 
@@ -181,11 +154,8 @@ public:
 	TArray<struct FLiveLinkSourcePreset>         Sources;                                           // 0x28(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<struct FLiveLinkSubjectPreset>        Subjects;                                          // 0x38(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LiveLinkPreset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULiveLinkPreset* GetDefaultObj();
 
 	void BuildFromClient();
 	bool ApplyToClient();
@@ -196,13 +166,10 @@ public:
 class ULiveLinkRemapAsset : public ULiveLinkRetargetAsset
 {
 public:
-	uint8                                        Pad_1841[0xA8];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_423[0xA8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LiveLinkRemapAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULiveLinkRemapAsset* GetDefaultObj();
 
 	void RemapCurveElements(TMap<class FName, float>& CurveItems);
 	class FName GetRemappedCurveName(class FName CurveName);
@@ -223,11 +190,8 @@ public:
 	struct FLinearColor                          ValidColor;                                        // 0x68(0x10)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                          InvalidColor;                                      // 0x78(0x10)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LiveLinkSettings");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULiveLinkSettings* GetDefaultObj();
 
 };
 
@@ -237,18 +201,13 @@ class ULiveLinkTimeSynchronizationSource : public UTimeSynchronizationSource
 {
 public:
 	class FName                                  SubjectName;                                       // 0x30(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_1842[0x58];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_427[0x58];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("LiveLinkTimeSynchronizationSource");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ULiveLinkTimeSynchronizationSource* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

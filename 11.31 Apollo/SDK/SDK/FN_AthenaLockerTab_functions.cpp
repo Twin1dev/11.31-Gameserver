@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaLockerTab.AthenaLockerTab_C
+// (None)
+
+class UClass* UAthenaLockerTab_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaLockerTab_C");
+
+	return Clss;
+}
+
+
+// AthenaLockerTab_C AthenaLockerTab.Default__AthenaLockerTab_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaLockerTab_C* UAthenaLockerTab_C::GetDefaultObj()
+{
+	static class UAthenaLockerTab_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaLockerTab_C*>(UAthenaLockerTab_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaLockerTab.AthenaLockerTab_C.BP_GetDesiredFocusTarget
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 class UWidget* UAthenaLockerTab_C::BP_GetDesiredFocusTarget(bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "BP_GetDesiredFocusTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_BP_GetDesiredFocusTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "BP_GetDesiredFocusTarget");
+
+	Params::UAthenaLockerTab_C_BP_GetDesiredFocusTarget_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
@@ -43,19 +71,22 @@ class UWidget* UAthenaLockerTab_C::BP_GetDesiredFocusTarget(bool CallFunc_IsVali
 // class UFortItem*                   CallFunc_GetCampaignHeroPartItem_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAthenaCosmeticAccountItem*  K2Node_DynamicCast_AsAthena_Cosmetic_Account_Item                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetLockerItemTypeText_ReturnValue                       ()
+// class FText                        CallFunc_GetLockerItemTypeText_ReturnValue                       (None)
 // class UFortHero*                   CallFunc_GetHero_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetLockerDescriptionText_ReturnValue                    ()
+// class FText                        CallFunc_GetLockerDescriptionText_ReturnValue                    (None)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetDisplayName_ReturnValue                              ()
+// class FText                        CallFunc_GetDisplayName_ReturnValue                              (None)
 // enum class EFortRarity             CallFunc_GetRarity_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaLockerTab_C::CheckOverrideCampaignHeroItemDetails(class UAthenaCustomizationSlotButtonWrapper_C* SlotButtonWrapper, class UFortItem* CallFunc_GetCampaignHeroPartItem_ReturnValue, class UAthenaCosmeticAccountItem* K2Node_DynamicCast_AsAthena_Cosmetic_Account_Item, bool K2Node_DynamicCast_bSuccess, class FText CallFunc_GetLockerItemTypeText_ReturnValue, class UFortHero* CallFunc_GetHero_ReturnValue, class FText CallFunc_GetLockerDescriptionText_ReturnValue, bool CallFunc_IsValid_ReturnValue, class FText CallFunc_GetDisplayName_ReturnValue, enum class EFortRarity CallFunc_GetRarity_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "CheckOverrideCampaignHeroItemDetails");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_CheckOverrideCampaignHeroItemDetails_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "CheckOverrideCampaignHeroItemDetails");
+
+	Params::UAthenaLockerTab_C_CheckOverrideCampaignHeroItemDetails_Params Parms{};
 
 	Parms.SlotButtonWrapper = SlotButtonWrapper;
 	Parms.CallFunc_GetCampaignHeroPartItem_ReturnValue = CallFunc_GetCampaignHeroPartItem_ReturnValue;
@@ -83,9 +114,12 @@ void UAthenaLockerTab_C::CheckOverrideCampaignHeroItemDetails(class UAthenaCusto
 
 void UAthenaLockerTab_C::PlaySlotAnimationAndCenterSlot(class UWidget* CallFunc_FindParentWidgetOfType_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "PlaySlotAnimationAndCenterSlot");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_PlaySlotAnimationAndCenterSlot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "PlaySlotAnimationAndCenterSlot");
+
+	Params::UAthenaLockerTab_C_PlaySlotAnimationAndCenterSlot_Params Parms{};
 
 	Parms.CallFunc_FindParentWidgetOfType_ReturnValue = CallFunc_FindParentWidgetOfType_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -103,9 +137,12 @@ void UAthenaLockerTab_C::PlaySlotAnimationAndCenterSlot(class UWidget* CallFunc_
 
 void UAthenaLockerTab_C::SetupWarningForSlot(class UAthenaCustomizationSlotButtonWrapper_C* InSlot)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "SetupWarningForSlot");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_SetupWarningForSlot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "SetupWarningForSlot");
+
+	Params::UAthenaLockerTab_C_SetupWarningForSlot_Params Parms{};
 
 	Parms.InSlot = InSlot;
 
@@ -128,9 +165,12 @@ void UAthenaLockerTab_C::SetupWarningForSlot(class UAthenaCustomizationSlotButto
 
 void UAthenaLockerTab_C::SetupNavigation(int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, enum class ESubGame CallFunc_GetSubGame_ReturnValue, class UAthenaCustomizationSlotButtonWrapper_C* CallFunc_Array_Get_Item, bool CallFunc_EqualEqual_ByteByte_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "SetupNavigation");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_SetupNavigation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "SetupNavigation");
+
+	Params::UAthenaLockerTab_C_SetupNavigation_Params Parms{};
 
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
@@ -157,9 +197,12 @@ void UAthenaLockerTab_C::SetupNavigation(int32 Temp_int_Loop_Counter_Variable, i
 
 void UAthenaLockerTab_C::PlayEquippedLockerMusic_STW(enum class ESubGame CallFunc_GetSubGame_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, TArray<class AFort_Entry_Music_Controller_BP_C*>& CallFunc_GetAllActorsOfClass_OutActors, class AFort_Entry_Music_Controller_BP_C* CallFunc_Array_Get_Item)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "PlayEquippedLockerMusic_STW");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_PlayEquippedLockerMusic_STW_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "PlayEquippedLockerMusic_STW");
+
+	Params::UAthenaLockerTab_C_PlayEquippedLockerMusic_STW_Params Parms{};
 
 	Parms.CallFunc_GetSubGame_ReturnValue = CallFunc_GetSubGame_ReturnValue;
 	Parms.CallFunc_GetRuntimeOptions_ReturnValue = CallFunc_GetRuntimeOptions_ReturnValue;
@@ -192,9 +235,12 @@ void UAthenaLockerTab_C::PlayEquippedLockerMusic_STW(enum class ESubGame CallFun
 
 void UAthenaLockerTab_C::EnableSlotsForSTW(bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_5, bool CallFunc_IsValid_ReturnValue_6, bool CallFunc_IsValid_ReturnValue_7, bool CallFunc_IsValid_ReturnValue_8, bool CallFunc_IsValid_ReturnValue_9, bool CallFunc_IsValid_ReturnValue_10, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "EnableSlotsForSTW");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_EnableSlotsForSTW_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "EnableSlotsForSTW");
+
+	Params::UAthenaLockerTab_C_EnableSlotsForSTW_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue_1 = CallFunc_IsValid_ReturnValue_1;
@@ -234,9 +280,12 @@ void UAthenaLockerTab_C::EnableSlotsForSTW(bool CallFunc_IsValid_ReturnValue, bo
 
 void UAthenaLockerTab_C::OkToReshowOnHover(enum class EAthenaCustomizationCategory Type, int32 Index, bool* Ok, bool CallFunc_NotEqual_ByteByte_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, class AFortPlayerPawn* CallFunc_GetHeroPlayerPawnForCurrentDisplayedItem_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue_1, class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsAnyMontagePlaying_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "OkToReshowOnHover");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_OkToReshowOnHover_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "OkToReshowOnHover");
+
+	Params::UAthenaLockerTab_C_OkToReshowOnHover_Params Parms{};
 
 	Parms.Type = Type;
 	Parms.Index = Index;
@@ -266,9 +315,12 @@ void UAthenaLockerTab_C::OkToReshowOnHover(enum class EAthenaCustomizationCatego
 
 void UAthenaLockerTab_C::PlaySlotClickedAnimation(class UAthenaCustomizationSlotButton_C* SlotToPlayAnimOn, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "PlaySlotClickedAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_PlaySlotClickedAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "PlaySlotClickedAnimation");
+
+	Params::UAthenaLockerTab_C_PlaySlotClickedAnimation_Params Parms{};
 
 	Parms.SlotToPlayAnimOn = SlotToPlayAnimOn;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -308,9 +360,12 @@ void UAthenaLockerTab_C::PlaySlotClickedAnimation(class UAthenaCustomizationSlot
 
 void UAthenaLockerTab_C::CanShowEmptyForType(enum class EAthenaCustomizationCategory CustomizationType, bool* bCanShowEmpty, enum class EAthenaCustomizationCategory Temp_byte_Variable, bool Temp_bool_Variable, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, bool Temp_bool_Variable_3, bool Temp_bool_Variable_4, bool Temp_bool_Variable_5, bool Temp_bool_Variable_6, bool Temp_bool_Variable_7, bool Temp_bool_Variable_8, bool Temp_bool_Variable_9, bool Temp_bool_Variable_10, bool Temp_bool_Variable_11, bool Temp_bool_Variable_12, bool Temp_bool_Variable_13, bool Temp_bool_Variable_14, bool Temp_bool_Variable_15, bool Temp_bool_Variable_16, bool Temp_bool_Variable_17, bool Temp_bool_Variable_18, bool Temp_bool_Variable_19, bool K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "CanShowEmptyForType");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_CanShowEmptyForType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "CanShowEmptyForType");
+
+	Params::UAthenaLockerTab_C_CanShowEmptyForType_Params Parms{};
 
 	Parms.CustomizationType = CustomizationType;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -351,9 +406,12 @@ void UAthenaLockerTab_C::CanShowEmptyForType(enum class EAthenaCustomizationCate
 
 void UAthenaLockerTab_C::SelectWidget(class UAthenaCustomizationSlotButtonWrapper_C* InSelection)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "SelectWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_SelectWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "SelectWidget");
+
+	Params::UAthenaLockerTab_C_SelectWidget_Params Parms{};
 
 	Parms.InSelection = InSelection;
 
@@ -368,12 +426,14 @@ void UAthenaLockerTab_C::SelectWidget(class UAthenaCustomizationSlotButtonWrappe
 
 void UAthenaLockerTab_C::SetHeaderToBanner()
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "SetHeaderToBanner");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_SetHeaderToBanner_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "SetHeaderToBanner");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -392,9 +452,12 @@ void UAthenaLockerTab_C::SetHeaderToBanner()
 
 void UAthenaLockerTab_C::BeginPickingCustomization(class UCommonButton* WidgetToReturnFocusTo, const struct FAthenaCustomizationParams& CustomizationParams, class UAthenaCustomizationSlotButton_C* SlotButton, class UAthenaCustomizationSlotButton_C* K2Node_DynamicCast_AsAthena_Customization_Slot_Button, bool K2Node_DynamicCast_bSuccess, bool CallFunc_GetCustomizationSlotActiveState_bOutAttachableCosmeticAvailable, bool CallFunc_GetCustomizationSlotActiveState_bOutActive, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "BeginPickingCustomization");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_BeginPickingCustomization_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "BeginPickingCustomization");
+
+	Params::UAthenaLockerTab_C_BeginPickingCustomization_Params Parms{};
 
 	Parms.WidgetToReturnFocusTo = WidgetToReturnFocusTo;
 	Parms.CustomizationParams = CustomizationParams;
@@ -417,9 +480,12 @@ void UAthenaLockerTab_C::BeginPickingCustomization(class UCommonButton* WidgetTo
 
 class UWidget* UAthenaLockerTab_C::GetWidgetForFramingViewedItem()
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "GetWidgetForFramingViewedItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_GetWidgetForFramingViewedItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "GetWidgetForFramingViewedItem");
+
+	Params::UAthenaLockerTab_C_GetWidgetForFramingViewedItem_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -437,9 +503,12 @@ class UWidget* UAthenaLockerTab_C::GetWidgetForFramingViewedItem()
 
 void UAthenaLockerTab_C::SetItemDetailsToDisplay(class UFortItem* InputPin, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "SetItemDetailsToDisplay");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_SetItemDetailsToDisplay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "SetItemDetailsToDisplay");
+
+	Params::UAthenaLockerTab_C_SetItemDetailsToDisplay_Params Parms{};
 
 	Parms.InputPin = InputPin;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -471,7 +540,7 @@ void UAthenaLockerTab_C::SetItemDetailsToDisplay(class UFortItem* InputPin, bool
 // struct FUniqueNetIdRepl            CallFunc_GetGameAccountId_ReturnValue                            (HasGetValueTypeHash)
 // class UFortMcpContext*             CallFunc_GetContext_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortFrontEndContext*        CallFunc_GetContext_ReturnValue_3                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortAthenaLoadout          CallFunc_GetLoadoutForPlayer_ReturnValue                         ()
+// struct FFortAthenaLoadout          CallFunc_GetLoadoutForPlayer_ReturnValue                         (None)
 // class UFortMcpContext*             CallFunc_GetContext_ReturnValue_4                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortMcpProfileAthena*       CallFunc_GetAthenaProfile_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAthenaCharacterItemDefinition*CallFunc_GetRandomDefaultAthenaCharacterDefinition_ReturnValue   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -480,9 +549,12 @@ void UAthenaLockerTab_C::SetItemDetailsToDisplay(class UFortItem* InputPin, bool
 
 void UAthenaLockerTab_C::ShowVaultItemByCategory(enum class EAthenaCustomizationCategory CustomizationType, int32 SubslotIndex, bool CanShowEmpty, class UFortItem* CallFunc_GetFavoriteItemForCategory_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, enum class ESubGame CallFunc_GetSubGame_ReturnValue, class UFortHomebaseUIContext* CallFunc_GetContext_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, class UFortHero* CallFunc_GetSlottedPrimaryHero_ReturnValue, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue_1, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_1, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, const struct FUniqueNetIdRepl& CallFunc_GetGameAccountId_ReturnValue, class UFortMcpContext* CallFunc_GetContext_ReturnValue_2, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_3, const struct FFortAthenaLoadout& CallFunc_GetLoadoutForPlayer_ReturnValue, class UFortMcpContext* CallFunc_GetContext_ReturnValue_4, class UFortMcpProfileAthena* CallFunc_GetAthenaProfile_ReturnValue, class UAthenaCharacterItemDefinition* CallFunc_GetRandomDefaultAthenaCharacterDefinition_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_5)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "ShowVaultItemByCategory");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_ShowVaultItemByCategory_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "ShowVaultItemByCategory");
+
+	Params::UAthenaLockerTab_C_ShowVaultItemByCategory_Params Parms{};
 
 	Parms.CustomizationType = CustomizationType;
 	Parms.SubslotIndex = SubslotIndex;
@@ -526,7 +598,7 @@ void UAthenaLockerTab_C::ShowVaultItemByCategory(enum class EAthenaCustomization
 // class UFortItem*                   CallFunc_GetCampaignHeroPartItem_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsActivated_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetCategoryDisplayName_ReturnValue                      ()
+// class FText                        CallFunc_GetCategoryDisplayName_ReturnValue                      (None)
 // class UFortItem*                   CallFunc_GetFavoriteItemForCategory_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_NotEqual_ByteByte_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue_1                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -540,9 +612,12 @@ void UAthenaLockerTab_C::ShowVaultItemByCategory(enum class EAthenaCustomization
 
 void UAthenaLockerTab_C::HandleSlotHovered(class UAthenaCustomizationSlotButtonWrapper_C* HoveredSlot, enum class EAthenaCustomizationCategory Type, class FText HeaderText, class FText DescriptionText, int32 SubslotIndex, class UFortItem* CallFunc_GetCampaignHeroPartItem_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsActivated_ReturnValue, class FText CallFunc_GetCategoryDisplayName_ReturnValue, class UFortItem* CallFunc_GetFavoriteItemForCategory_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, bool CallFunc_OkToReshowOnHover_Ok, bool CallFunc_K2_IsValidTimerHandle_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, class UFortFrontEndContext* CallFunc_GetLocalPlayerSubsystem_ReturnValue, bool CallFunc_CanShowEmptyForType_bCanShowEmpty)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "HandleSlotHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_HandleSlotHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "HandleSlotHovered");
+
+	Params::UAthenaLockerTab_C_HandleSlotHovered_Params Parms{};
 
 	Parms.HoveredSlot = HoveredSlot;
 	Parms.Type = Type;
@@ -575,12 +650,14 @@ void UAthenaLockerTab_C::HandleSlotHovered(class UAthenaCustomizationSlotButtonW
 
 void UAthenaLockerTab_C::SelectFirstWidget()
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "SelectFirstWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_SelectFirstWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "SelectFirstWidget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -590,16 +667,19 @@ void UAthenaLockerTab_C::SelectFirstWidget()
 // Parameters:
 // class FText                        Temp_text_Variable                                               (ConstParm)
 // class FText                        Temp_text_Variable_1                                             (ConstParm)
-// struct FSlateBrush                 CallFunc_NoResourceBrush_ReturnValue                             ()
+// struct FSlateBrush                 CallFunc_NoResourceBrush_ReturnValue                             (None)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UProgressModalWidget_C*      CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UAthenaLockerTab_C::ShowSavingModal(class FText Temp_text_Variable, class FText Temp_text_Variable_1, const struct FSlateBrush& CallFunc_NoResourceBrush_ReturnValue, bool CallFunc_IsValid_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UProgressModalWidget_C* CallFunc_Create_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "ShowSavingModal");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_ShowSavingModal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "ShowSavingModal");
+
+	Params::UAthenaLockerTab_C_ShowSavingModal_Params Parms{};
 
 	Parms.Temp_text_Variable = Temp_text_Variable;
 	Parms.Temp_text_Variable_1 = Temp_text_Variable_1;
@@ -619,12 +699,14 @@ void UAthenaLockerTab_C::ShowSavingModal(class FText Temp_text_Variable, class F
 
 void UAthenaLockerTab_C::SelectInitialWidgetForGamepad()
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "SelectInitialWidgetForGamepad");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_SelectInitialWidgetForGamepad_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "SelectInitialWidgetForGamepad");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -635,12 +717,14 @@ void UAthenaLockerTab_C::SelectInitialWidgetForGamepad()
 
 void UAthenaLockerTab_C::RegisterInputActions()
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "RegisterInputActions");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_RegisterInputActions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "RegisterInputActions");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -652,9 +736,12 @@ void UAthenaLockerTab_C::RegisterInputActions()
 
 void UAthenaLockerTab_C::OnInputModeChanged(bool bUsingGamepad)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "OnInputModeChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_OnInputModeChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "OnInputModeChanged");
+
+	Params::UAthenaLockerTab_C_OnInputModeChanged_Params Parms{};
 
 	Parms.bUsingGamepad = bUsingGamepad;
 
@@ -669,12 +756,14 @@ void UAthenaLockerTab_C::OnInputModeChanged(bool bUsingGamepad)
 
 void UAthenaLockerTab_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -685,12 +774,14 @@ void UAthenaLockerTab_C::BP_OnActivated()
 
 void UAthenaLockerTab_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -701,12 +792,14 @@ void UAthenaLockerTab_C::BP_OnDeactivated()
 
 void UAthenaLockerTab_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -717,12 +810,14 @@ void UAthenaLockerTab_C::Construct()
 
 void UAthenaLockerTab_C::Destruct()
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -734,9 +829,12 @@ void UAthenaLockerTab_C::Destruct()
 
 void UAthenaLockerTab_C::BndEvt__AthenaCustomizationBannerButton_490_K2Node_ComponentBoundEvent_205_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "BndEvt__AthenaCustomizationBannerButton_490_K2Node_ComponentBoundEvent_205_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_BndEvt__AthenaCustomizationBannerButton_490_K2Node_ComponentBoundEvent_205_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "BndEvt__AthenaCustomizationBannerButton_490_K2Node_ComponentBoundEvent_205_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaLockerTab_C_BndEvt__AthenaCustomizationBannerButton_490_K2Node_ComponentBoundEvent_205_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -752,9 +850,12 @@ void UAthenaLockerTab_C::BndEvt__AthenaCustomizationBannerButton_490_K2Node_Comp
 
 void UAthenaLockerTab_C::BndEvt__BannerSlot_K2Node_ComponentBoundEvent_547_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "BndEvt__BannerSlot_K2Node_ComponentBoundEvent_547_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_BndEvt__BannerSlot_K2Node_ComponentBoundEvent_547_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "BndEvt__BannerSlot_K2Node_ComponentBoundEvent_547_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaLockerTab_C_BndEvt__BannerSlot_K2Node_ComponentBoundEvent_547_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -769,12 +870,14 @@ void UAthenaLockerTab_C::BndEvt__BannerSlot_K2Node_ComponentBoundEvent_547_Commo
 
 void UAthenaLockerTab_C::HideDetailsForDances()
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "HideDetailsForDances");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_HideDetailsForDances_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "HideDetailsForDances");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -785,12 +888,14 @@ void UAthenaLockerTab_C::HideDetailsForDances()
 
 void UAthenaLockerTab_C::SetSlotToBannerSlot()
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "SetSlotToBannerSlot");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_SetSlotToBannerSlot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "SetSlotToBannerSlot");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -801,12 +906,14 @@ void UAthenaLockerTab_C::SetSlotToBannerSlot()
 
 void UAthenaLockerTab_C::OnTransitionedBySwitcher()
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "OnTransitionedBySwitcher");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_OnTransitionedBySwitcher_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "OnTransitionedBySwitcher");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -817,12 +924,14 @@ void UAthenaLockerTab_C::OnTransitionedBySwitcher()
 
 void UAthenaLockerTab_C::BannerModalDeactivated()
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "BannerModalDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_BannerModalDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "BannerModalDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -867,9 +976,12 @@ void UAthenaLockerTab_C::BannerModalDeactivated()
 
 void UAthenaLockerTab_C::ExecuteUbergraph_AthenaLockerTab(int32 EntryPoint, int32 Temp_int_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, int32 Temp_int_Variable_2, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_2, class UAthenaCustomizationSlotButtonWrapper_C* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, bool K2Node_Event_bUsingGamepad, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, int32 Temp_int_Variable_3, int32 CallFunc_Add_IntInt_ReturnValue_3, class UAthenaCustomizationSlotButtonWrapper_C* CallFunc_Array_Get_Item_1, bool CallFunc_Less_IntInt_ReturnValue_1, class UAthenaCustomizationSlotButtonWrapper_C* CallFunc_Array_Get_Item_2, int32 CallFunc_Array_Length_ReturnValue_2, bool CallFunc_Less_IntInt_ReturnValue_2, class UAthenaCustomizationSlotButtonWrapper_C* CallFunc_Array_Get_Item_3, int32 CallFunc_Array_Length_ReturnValue_3, bool CallFunc_Less_IntInt_ReturnValue_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UAthenaBannerSelectModal_C* CallFunc_Create_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, TArray<class UAthenaCustomizationSlotButtonWrapper_C*>& K2Node_MakeArray_Array, bool CallFunc_K2_IsValidTimerHandle_ReturnValue, bool CallFunc_IsActivated_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaLockerTab_C", "ExecuteUbergraph_AthenaLockerTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaLockerTab_C_ExecuteUbergraph_AthenaLockerTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaLockerTab_C", "ExecuteUbergraph_AthenaLockerTab");
+
+	Params::UAthenaLockerTab_C_ExecuteUbergraph_AthenaLockerTab_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -912,6 +1024,4 @@ void UAthenaLockerTab_C::ExecuteUbergraph_AthenaLockerTab(int32 EntryPoint, int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

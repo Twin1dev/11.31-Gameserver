@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass EnemyPawn_Interface.EnemyPawn_Interface_C
+// (None)
+
+class UClass* IEnemyPawn_Interface_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EnemyPawn_Interface_C");
+
+	return Clss;
+}
+
+
+// EnemyPawn_Interface_C EnemyPawn_Interface.Default__EnemyPawn_Interface_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class IEnemyPawn_Interface_C* IEnemyPawn_Interface_C::GetDefaultObj()
+{
+	static class IEnemyPawn_Interface_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<IEnemyPawn_Interface_C*>(IEnemyPawn_Interface_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function EnemyPawn_Interface.EnemyPawn_Interface_C.Orphaned
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void IEnemyPawn_Interface_C::Orphaned(bool* IsOrphaned, class AFortPawn** AttachedPawn)
 {
-	static auto Func = Class->GetFunction("EnemyPawn_Interface_C", "Orphaned");
+	static class UFunction* Func = nullptr;
 
-	Params::IEnemyPawn_Interface_C_Orphaned_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnemyPawn_Interface_C", "Orphaned");
+
+	Params::IEnemyPawn_Interface_C_Orphaned_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -40,6 +68,4 @@ void IEnemyPawn_Interface_C::Orphaned(bool* IsOrphaned, class AFortPawn** Attach
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

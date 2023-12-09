@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -92,7 +89,7 @@ struct UGAB_AthenaDBNORevive_C_ExecuteUbergraph_GAB_AthenaDBNORevive_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4F8B[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4E42[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UAnimMontage*                          CallFunc_Get_DBNO_Outro_Montage_DBNOMontageOutro;  // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilityTargetDataHandle      K2Node_CustomEvent_TargetData_3;                   // 0x10(0x28)(ConstParm)
 	struct FGameplayTag                          K2Node_CustomEvent_ApplicationTag_3;               // 0x38(0x8)(NoDestructor, HasGetValueTypeHash)
@@ -101,7 +98,7 @@ public:
 	struct FGameplayTag                          K2Node_CustomEvent_ApplicationTag_2;               // 0x78(0x8)(NoDestructor, HasGetValueTypeHash)
 	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_1;            // 0x80(0x10)(ZeroConstructor, NoDestructor)
 	struct FGameplayTag                          Temp_struct_Variable;                              // 0x90(0x8)(NoDestructor, HasGetValueTypeHash)
-	struct FGameplayAbilityTargetDataHandle      Temp_struct_Variable_1;                            // 0x98(0x28)()
+	struct FGameplayAbilityTargetDataHandle      Temp_struct_Variable_1;                            // 0x98(0x28)(None)
 	struct FGameplayAbilityTargetDataHandle      K2Node_CustomEvent_TargetData_1;                   // 0xC0(0x28)(ConstParm)
 	struct FGameplayTag                          K2Node_CustomEvent_ApplicationTag_1;               // 0xE8(0x8)(NoDestructor, HasGetValueTypeHash)
 	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_2;            // 0xF0(0x10)(ZeroConstructor, NoDestructor)
@@ -109,20 +106,20 @@ public:
 	struct FGameplayTag                          K2Node_CustomEvent_ApplicationTag;                 // 0x128(0x8)(NoDestructor, HasGetValueTypeHash)
 	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_3;            // 0x130(0x10)(ZeroConstructor, NoDestructor)
 	struct FGameplayTag                          Temp_struct_Variable_2;                            // 0x140(0x8)(NoDestructor, HasGetValueTypeHash)
-	struct FGameplayAbilityTargetDataHandle      Temp_struct_Variable_3;                            // 0x148(0x28)()
+	struct FGameplayAbilityTargetDataHandle      Temp_struct_Variable_3;                            // 0x148(0x28)(None)
 	class UFortAbilityTask_WaitTargetSelection*  CallFunc_WaitTargetSelection_ReturnValue;          // 0x170(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x178(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4F8C[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4E43[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayEventData                    K2Node_Event_EventData;                            // 0x180(0xB0)(ConstParm)
-	struct FFortGameplayAbilityMontageInfo       K2Node_MakeStruct_FortGameplayAbilityMontageInfo;  // 0x230(0x58)()
-	struct FFortGameplayEffectContainerSpec      CallFunc_MakeGameplayEffectContainerSpec_ReturnValue; // 0x288(0xB8)()
+	struct FFortGameplayAbilityMontageInfo       K2Node_MakeStruct_FortGameplayAbilityMontageInfo;  // 0x230(0x58)(None)
+	struct FFortGameplayEffectContainerSpec      CallFunc_MakeGameplayEffectContainerSpec_ReturnValue; // 0x288(0xB8)(None)
 	class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue; // 0x340(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0x348(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4F8D[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4E44[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayAbilityActorInfo             CallFunc_GetActorInfo_ReturnValue;                 // 0x350(0x40)(ContainsInstancedReference)
 	class AFortPlayerPawn*                       K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x390(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x398(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4F8E[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4E45[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               CallFunc_GetSocketLocation_ReturnValue;            // 0x39C(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                              CallFunc_GetSocketRotation_ReturnValue;            // 0x3A8(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                        CallFunc_BreakVector_X;                            // 0x3B4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -135,7 +132,7 @@ public:
 	float                                        CallFunc_BreakVector_Z_1;                          // 0x3E0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector_NetQuantizeNormal             K2Node_MakeStruct_Vector_NetQuantizeNormal;        // 0x3E4(0xC)(NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_bWasCancelled;                        // 0x3F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4F8F[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4E48[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayAbilityTargetDataHandle      K2Node_CustomEvent_TargetData_4;                   // 0x3F8(0x28)(ConstParm)
 	struct FGameplayTag                          K2Node_CustomEvent_ApplicationTag_4;               // 0x420(0x8)(NoDestructor, HasGetValueTypeHash)
 	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate_4;            // 0x428(0x10)(ZeroConstructor, NoDestructor)
@@ -145,6 +142,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

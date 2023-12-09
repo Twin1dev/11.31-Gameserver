@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass StoreSelectionPopup.StoreSelectionPopup_C
+// (None)
+
+class UClass* UStoreSelectionPopup_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("StoreSelectionPopup_C");
+
+	return Clss;
+}
+
+
+// StoreSelectionPopup_C StoreSelectionPopup.Default__StoreSelectionPopup_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UStoreSelectionPopup_C* UStoreSelectionPopup_C::GetDefaultObj()
+{
+	static class UStoreSelectionPopup_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UStoreSelectionPopup_C*>(UStoreSelectionPopup_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function StoreSelectionPopup.StoreSelectionPopup_C.BP_OnActivated
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UStoreSelectionPopup_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("StoreSelectionPopup_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreSelectionPopup_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreSelectionPopup_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -39,9 +66,12 @@ void UStoreSelectionPopup_C::BP_OnActivated()
 
 void UStoreSelectionPopup_C::ExecuteUbergraph_StoreSelectionPopup(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("StoreSelectionPopup_C", "ExecuteUbergraph_StoreSelectionPopup");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreSelectionPopup_C_ExecuteUbergraph_StoreSelectionPopup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreSelectionPopup_C", "ExecuteUbergraph_StoreSelectionPopup");
+
+	Params::UStoreSelectionPopup_C_ExecuteUbergraph_StoreSelectionPopup_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -52,6 +82,4 @@ void UStoreSelectionPopup_C::ExecuteUbergraph_StoreSelectionPopup(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

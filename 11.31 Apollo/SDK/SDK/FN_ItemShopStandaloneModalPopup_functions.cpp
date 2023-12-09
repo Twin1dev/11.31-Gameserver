@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ItemShopStandaloneModalPopup.ItemShopStandaloneModalPopup_C
+// (None)
+
+class UClass* UItemShopStandaloneModalPopup_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ItemShopStandaloneModalPopup_C");
+
+	return Clss;
+}
+
+
+// ItemShopStandaloneModalPopup_C ItemShopStandaloneModalPopup.Default__ItemShopStandaloneModalPopup_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UItemShopStandaloneModalPopup_C* UItemShopStandaloneModalPopup_C::GetDefaultObj()
+{
+	static class UItemShopStandaloneModalPopup_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UItemShopStandaloneModalPopup_C*>(UItemShopStandaloneModalPopup_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ItemShopStandaloneModalPopup.ItemShopStandaloneModalPopup_C.TapToClose
@@ -26,16 +51,19 @@ namespace SDK
 // bool                               CallFunc_EqualEqual_KeyKey_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
-// struct FEventReply                 K2Node_Select_Default                                            ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
+// struct FEventReply                 K2Node_Select_Default                                            (None)
 
 struct FEventReply UItemShopStandaloneModalPopup_C::TapToClose(const struct FGeometry& MyGeometry, struct FPointerEvent& Mouse_Event, const struct FKey& CallFunc_PointerEvent_GetEffectingButton_ReturnValue, bool CallFunc_PointerEvent_IsTouchEvent_ReturnValue, bool CallFunc_EqualEqual_KeyKey_ReturnValue, bool Temp_bool_Variable, bool CallFunc_BooleanOR_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const struct FEventReply& CallFunc_Unhandled_ReturnValue, const struct FEventReply& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ItemShopStandaloneModalPopup_C", "TapToClose");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemShopStandaloneModalPopup_C_TapToClose_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemShopStandaloneModalPopup_C", "TapToClose");
+
+	Params::UItemShopStandaloneModalPopup_C_TapToClose_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.Mouse_Event = Mouse_Event;
@@ -62,12 +90,14 @@ struct FEventReply UItemShopStandaloneModalPopup_C::TapToClose(const struct FGeo
 
 void UItemShopStandaloneModalPopup_C::Construct()
 {
-	static auto Func = Class->GetFunction("ItemShopStandaloneModalPopup_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemShopStandaloneModalPopup_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemShopStandaloneModalPopup_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -79,9 +109,12 @@ void UItemShopStandaloneModalPopup_C::Construct()
 
 void UItemShopStandaloneModalPopup_C::BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ItemShopStandaloneModalPopup_C", "BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemShopStandaloneModalPopup_C_BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemShopStandaloneModalPopup_C", "BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UItemShopStandaloneModalPopup_C_BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -100,9 +133,12 @@ void UItemShopStandaloneModalPopup_C::BndEvt__Button_ItemShop_K2Node_ComponentBo
 
 void UItemShopStandaloneModalPopup_C::ExecuteUbergraph_ItemShopStandaloneModalPopup(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("ItemShopStandaloneModalPopup_C", "ExecuteUbergraph_ItemShopStandaloneModalPopup");
+	static class UFunction* Func = nullptr;
 
-	Params::UItemShopStandaloneModalPopup_C_ExecuteUbergraph_ItemShopStandaloneModalPopup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ItemShopStandaloneModalPopup_C", "ExecuteUbergraph_ItemShopStandaloneModalPopup");
+
+	Params::UItemShopStandaloneModalPopup_C_ExecuteUbergraph_ItemShopStandaloneModalPopup_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -115,6 +151,4 @@ void UItemShopStandaloneModalPopup_C::ExecuteUbergraph_ItemShopStandaloneModalPo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

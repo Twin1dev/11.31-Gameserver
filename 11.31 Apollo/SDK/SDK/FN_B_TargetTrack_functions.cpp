@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_TargetTrack.B_TargetTrack_C
+// (Actor)
+
+class UClass* AB_TargetTrack_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_TargetTrack_C");
+
+	return Clss;
+}
+
+
+// B_TargetTrack_C B_TargetTrack.Default__B_TargetTrack_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_TargetTrack_C* AB_TargetTrack_C::GetDefaultObj()
+{
+	static class AB_TargetTrack_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_TargetTrack_C*>(AB_TargetTrack_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_TargetTrack.B_TargetTrack_C.GetMeshComponents
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 TArray<class UMeshComponent*> AB_TargetTrack_C::GetMeshComponents()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "GetMeshComponents");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_GetMeshComponents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "GetMeshComponents");
+
+	Params::AB_TargetTrack_C_GetMeshComponents_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -41,9 +69,12 @@ TArray<class UMeshComponent*> AB_TargetTrack_C::GetMeshComponents()
 
 class UStaticMesh* AB_TargetTrack_C::GetCollisionStaticMesh()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "GetCollisionStaticMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_GetCollisionStaticMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "GetCollisionStaticMesh");
+
+	Params::AB_TargetTrack_C_GetCollisionStaticMesh_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -65,9 +96,12 @@ class UStaticMesh* AB_TargetTrack_C::GetCollisionStaticMesh()
 
 void AB_TargetTrack_C::Set_Audio_Speed_Sound(float Target_Speed, bool CallFunc_LessEqual_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "Set Audio Speed Sound");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_Set_Audio_Speed_Sound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "Set Audio Speed Sound");
+
+	Params::AB_TargetTrack_C_Set_Audio_Speed_Sound_Params Parms{};
 
 	Parms.Target_Speed = Target_Speed;
 	Parms.CallFunc_LessEqual_FloatFloat_ReturnValue = CallFunc_LessEqual_FloatFloat_ReturnValue;
@@ -89,9 +123,12 @@ void AB_TargetTrack_C::Set_Audio_Speed_Sound(float Target_Speed, bool CallFunc_L
 
 void AB_TargetTrack_C::OnRep_CurrentMovementState(int32 CallFunc_Conv_ByteToInt_ReturnValue, bool K2Node_SwitchInteger_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "OnRep_CurrentMovementState");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_OnRep_CurrentMovementState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "OnRep_CurrentMovementState");
+
+	Params::AB_TargetTrack_C_OnRep_CurrentMovementState_Params Parms{};
 
 	Parms.CallFunc_Conv_ByteToInt_ReturnValue = CallFunc_Conv_ByteToInt_ReturnValue;
 	Parms.K2Node_SwitchInteger_CmpSuccess = K2Node_SwitchInteger_CmpSuccess;
@@ -110,9 +147,12 @@ void AB_TargetTrack_C::OnRep_CurrentMovementState(int32 CallFunc_Conv_ByteToInt_
 
 void AB_TargetTrack_C::SetMovementState(uint8 State, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "SetMovementState");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_SetMovementState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "SetMovementState");
+
+	Params::AB_TargetTrack_C_SetMovementState_Params Parms{};
 
 	Parms.State = State;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -133,9 +173,12 @@ void AB_TargetTrack_C::SetMovementState(uint8 State, bool CallFunc_HasAuthority_
 
 void AB_TargetTrack_C::UpdateLerpedPosition(float Alpha, const struct FVector& CallFunc_GetFinalDestinationOfTarget_Destination, const struct FVector& CallFunc_VLerp_ReturnValue, const struct FHitResult& CallFunc_K2_SetRelativeLocation_SweepHitResult)
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "UpdateLerpedPosition");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_UpdateLerpedPosition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "UpdateLerpedPosition");
+
+	Params::AB_TargetTrack_C_UpdateLerpedPosition_Params Parms{};
 
 	Parms.Alpha = Alpha;
 	Parms.CallFunc_GetFinalDestinationOfTarget_Destination = CallFunc_GetFinalDestinationOfTarget_Destination;
@@ -153,12 +196,14 @@ void AB_TargetTrack_C::UpdateLerpedPosition(float Alpha, const struct FVector& C
 
 void AB_TargetTrack_C::OnRep_CurrentLerpValue()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "OnRep_CurrentLerpValue");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_OnRep_CurrentLerpValue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "OnRep_CurrentLerpValue");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -169,12 +214,14 @@ void AB_TargetTrack_C::OnRep_CurrentLerpValue()
 
 void AB_TargetTrack_C::UpdateForRepNotify()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "UpdateForRepNotify");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_UpdateForRepNotify_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "UpdateForRepNotify");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -185,12 +232,14 @@ void AB_TargetTrack_C::UpdateForRepNotify()
 
 void AB_TargetTrack_C::OnRep_IsCurrentlyMoving()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "OnRep_IsCurrentlyMoving");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_OnRep_IsCurrentlyMoving_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "OnRep_IsCurrentlyMoving");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -201,12 +250,14 @@ void AB_TargetTrack_C::OnRep_IsCurrentlyMoving()
 
 void AB_TargetTrack_C::OnRep_CurrentDirection()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "OnRep_CurrentDirection");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_OnRep_CurrentDirection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "OnRep_CurrentDirection");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -217,12 +268,14 @@ void AB_TargetTrack_C::OnRep_CurrentDirection()
 
 void AB_TargetTrack_C::OnRep_IsTargetUp()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "OnRep_IsTargetUp");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_OnRep_IsTargetUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "OnRep_IsTargetUp");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -233,12 +286,14 @@ void AB_TargetTrack_C::OnRep_IsTargetUp()
 
 void AB_TargetTrack_C::OnRep_ServerMoveStartTime()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "OnRep_ServerMoveStartTime");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_OnRep_ServerMoveStartTime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "OnRep_ServerMoveStartTime");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -250,9 +305,12 @@ void AB_TargetTrack_C::OnRep_ServerMoveStartTime()
 
 void AB_TargetTrack_C::SetTrackLength(const struct FVector& CallFunc_MakeVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "SetTrackLength");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_SetTrackLength_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "SetTrackLength");
+
+	Params::AB_TargetTrack_C_SetTrackLength_Params Parms{};
 
 	Parms.CallFunc_MakeVector_ReturnValue = CallFunc_MakeVector_ReturnValue;
 
@@ -273,9 +331,12 @@ void AB_TargetTrack_C::SetTrackLength(const struct FVector& CallFunc_MakeVector_
 
 void AB_TargetTrack_C::SetTargetRotationAndBaseMesh(const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult, bool CallFunc_IsValid_ReturnValue, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult_1, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult_2, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult_3, bool K2Node_SwitchInteger_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "SetTargetRotationAndBaseMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_SetTargetRotationAndBaseMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "SetTargetRotationAndBaseMesh");
+
+	Params::AB_TargetTrack_C_SetTargetRotationAndBaseMesh_Params Parms{};
 
 	Parms.CallFunc_K2_SetRelativeRotation_SweepHitResult = CallFunc_K2_SetRelativeRotation_SweepHitResult;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -298,9 +359,12 @@ void AB_TargetTrack_C::SetTargetRotationAndBaseMesh(const struct FHitResult& Cal
 
 float AB_TargetTrack_C::CalculatePlayRate(float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "CalculatePlayRate");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_CalculatePlayRate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "CalculatePlayRate");
+
+	Params::AB_TargetTrack_C_CalculatePlayRate_Params Parms{};
 
 	Parms.CallFunc_Divide_FloatFloat_ReturnValue = CallFunc_Divide_FloatFloat_ReturnValue;
 	Parms.CallFunc_Multiply_FloatFloat_ReturnValue = CallFunc_Multiply_FloatFloat_ReturnValue;
@@ -321,9 +385,12 @@ float AB_TargetTrack_C::CalculatePlayRate(float CallFunc_Divide_FloatFloat_Retur
 
 void AB_TargetTrack_C::GetFinalDestinationOfTarget(struct FVector* Destination, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "GetFinalDestinationOfTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_GetFinalDestinationOfTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "GetFinalDestinationOfTarget");
+
+	Params::AB_TargetTrack_C_GetFinalDestinationOfTarget_Params Parms{};
 
 	Parms.CallFunc_Multiply_FloatFloat_ReturnValue = CallFunc_Multiply_FloatFloat_ReturnValue;
 	Parms.CallFunc_MakeVector_ReturnValue = CallFunc_MakeVector_ReturnValue;
@@ -331,7 +398,7 @@ void AB_TargetTrack_C::GetFinalDestinationOfTarget(struct FVector* Destination, 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Destination != nullptr)
-		*Destination = Parms.Destination;
+		*Destination = std::move(Parms.Destination);
 
 }
 
@@ -342,12 +409,14 @@ void AB_TargetTrack_C::GetFinalDestinationOfTarget(struct FVector* Destination, 
 
 void AB_TargetTrack_C::TargetMovement__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "TargetMovement__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_TargetMovement__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "TargetMovement__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -358,12 +427,14 @@ void AB_TargetTrack_C::TargetMovement__FinishedFunc()
 
 void AB_TargetTrack_C::TargetMovement__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "TargetMovement__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_TargetMovement__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "TargetMovement__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -375,9 +446,12 @@ void AB_TargetTrack_C::TargetMovement__UpdateFunc()
 
 void AB_TargetTrack_C::OnLoaded_27B7684A423E01CDEC2BFC9631F88BF8(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "OnLoaded_27B7684A423E01CDEC2BFC9631F88BF8");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_OnLoaded_27B7684A423E01CDEC2BFC9631F88BF8_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "OnLoaded_27B7684A423E01CDEC2BFC9631F88BF8");
+
+	Params::AB_TargetTrack_C_OnLoaded_27B7684A423E01CDEC2BFC9631F88BF8_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -393,9 +467,12 @@ void AB_TargetTrack_C::OnLoaded_27B7684A423E01CDEC2BFC9631F88BF8(class UObject* 
 
 void AB_TargetTrack_C::OnLoaded_3C01053C48BCC07B689033B6DB9706E0(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "OnLoaded_3C01053C48BCC07B689033B6DB9706E0");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_OnLoaded_3C01053C48BCC07B689033B6DB9706E0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "OnLoaded_3C01053C48BCC07B689033B6DB9706E0");
+
+	Params::AB_TargetTrack_C_OnLoaded_3C01053C48BCC07B689033B6DB9706E0_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -410,12 +487,14 @@ void AB_TargetTrack_C::OnLoaded_3C01053C48BCC07B689033B6DB9706E0(class UObject* 
 
 void AB_TargetTrack_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -426,12 +505,14 @@ void AB_TargetTrack_C::ReceiveBeginPlay()
 
 void AB_TargetTrack_C::MoveTarget()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "MoveTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_MoveTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "MoveTarget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -442,12 +523,14 @@ void AB_TargetTrack_C::MoveTarget()
 
 void AB_TargetTrack_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -458,12 +541,14 @@ void AB_TargetTrack_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_
 
 void AB_TargetTrack_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_2_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_2_AnyPropertyChangedDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_2_AnyPropertyChangedDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_2_AnyPropertyChangedDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -474,12 +559,14 @@ void AB_TargetTrack_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_2_
 
 void AB_TargetTrack_C::AttachedTargetKnockedDown()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "AttachedTargetKnockedDown");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_AttachedTargetKnockedDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "AttachedTargetKnockedDown");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -490,12 +577,14 @@ void AB_TargetTrack_C::AttachedTargetKnockedDown()
 
 void AB_TargetTrack_C::StopTargetMovement()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "StopTargetMovement");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_StopTargetMovement_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "StopTargetMovement");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -506,12 +595,14 @@ void AB_TargetTrack_C::StopTargetMovement()
 
 void AB_TargetTrack_C::AttachedTargetPoppedUp()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "AttachedTargetPoppedUp");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_AttachedTargetPoppedUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "AttachedTargetPoppedUp");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -522,12 +613,14 @@ void AB_TargetTrack_C::AttachedTargetPoppedUp()
 
 void AB_TargetTrack_C::ReverseTargetMovement()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "ReverseTargetMovement");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_ReverseTargetMovement_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "ReverseTargetMovement");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -538,12 +631,14 @@ void AB_TargetTrack_C::ReverseTargetMovement()
 
 void AB_TargetTrack_C::AsyncLoadTargetBase()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "AsyncLoadTargetBase");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_AsyncLoadTargetBase_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "AsyncLoadTargetBase");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -560,9 +655,12 @@ void AB_TargetTrack_C::AsyncLoadTargetBase()
 
 void AB_TargetTrack_C::BndEvt__Sphere_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, struct FHitResult& SweepResult)
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "BndEvt__Sphere_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_BndEvt__Sphere_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "BndEvt__Sphere_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature");
+
+	Params::AB_TargetTrack_C_BndEvt__Sphere_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature_Params Parms{};
 
 	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
@@ -582,12 +680,14 @@ void AB_TargetTrack_C::BndEvt__Sphere_K2Node_ComponentBoundEvent_3_ComponentBegi
 
 void AB_TargetTrack_C::InitializeSettings()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "InitializeSettings");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_InitializeSettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "InitializeSettings");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -599,9 +699,12 @@ void AB_TargetTrack_C::InitializeSettings()
 
 void AB_TargetTrack_C::ReceiveEndPlay(enum class EEndPlayReason EndPlayReason)
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "ReceiveEndPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_ReceiveEndPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "ReceiveEndPlay");
+
+	Params::AB_TargetTrack_C_ReceiveEndPlay_Params Parms{};
 
 	Parms.EndPlayReason = EndPlayReason;
 
@@ -616,12 +719,14 @@ void AB_TargetTrack_C::ReceiveEndPlay(enum class EEndPlayReason EndPlayReason)
 
 void AB_TargetTrack_C::Move_Target_Audio()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "Move Target Audio");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_Move_Target_Audio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "Move Target Audio");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -632,12 +737,14 @@ void AB_TargetTrack_C::Move_Target_Audio()
 
 void AB_TargetTrack_C::Stop_Move_Target_Audio()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "Stop Move Target Audio");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_Stop_Move_Target_Audio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "Stop Move Target Audio");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -648,12 +755,14 @@ void AB_TargetTrack_C::Stop_Move_Target_Audio()
 
 void AB_TargetTrack_C::ReceiveDestroyed()
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "ReceiveDestroyed");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_ReceiveDestroyed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "ReceiveDestroyed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -723,9 +832,12 @@ void AB_TargetTrack_C::ReceiveDestroyed()
 
 void AB_TargetTrack_C::ExecuteUbergraph_B_TargetTrack(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_HasAuthority_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class AB_ShootingTarget_Master_C* CallFunc_FinishSpawningActor_ReturnValue, float CallFunc_CalculatePlayRate_ReturnValue, bool CallFunc_EqualEqual_BoolBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class UObject* CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue, class UStaticMesh* K2Node_DynamicCast_AsStatic_Mesh, bool K2Node_DynamicCast_bSuccess, bool CallFunc_SetStaticMesh_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValidSoftObjectReference_ReturnValue, class UObject* Temp_object_Variable, class UStaticMesh* K2Node_DynamicCast_AsStatic_Mesh_1, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_HasAuthority_ReturnValue_1, bool CallFunc_LessEqual_IntInt_ReturnValue, class UObject* K2Node_CustomEvent_Loaded, bool CallFunc_SetStaticMesh_ReturnValue_1, class UObject* Temp_object_Variable_1, class UObject* CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue_1, class UStaticMesh* K2Node_DynamicCast_AsStatic_Mesh_2, bool K2Node_DynamicCast_bSuccess_2, class UStaticMesh* K2Node_DynamicCast_AsStatic_Mesh_3, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_SetStaticMesh_ReturnValue_2, bool CallFunc_SetStaticMesh_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValidSoftObjectReference_ReturnValue_1, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent, class AActor* K2Node_ComponentBoundEvent_OtherActor, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp, int32 K2Node_ComponentBoundEvent_OtherBodyIndex, bool K2Node_ComponentBoundEvent_bFromSweep, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult, float CallFunc_Multiply_FloatFloat_ReturnValue, bool CallFunc_EqualEqual_BoolBool_ReturnValue_1, bool CallFunc_EqualEqual_BoolBool_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_EqualEqual_BoolBool_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue_3, bool CallFunc_EqualEqual_BoolBool_ReturnValue_4, class UObject* K2Node_CustomEvent_Loaded_1, bool CallFunc_EqualEqual_BoolBool_ReturnValue_5, bool CallFunc_BooleanAND_ReturnValue_4, enum class EEndPlayReason K2Node_Event_EndPlayReason, TMap<class FString, class FString> CallFunc_GetPropertyOverrides_CurrentOptions, bool CallFunc_GetPropertyOverrides_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_SetPropertyOverrides_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_IsValid_ReturnValue_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3)
 {
-	static auto Func = Class->GetFunction("B_TargetTrack_C", "ExecuteUbergraph_B_TargetTrack");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_TargetTrack_C_ExecuteUbergraph_B_TargetTrack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_TargetTrack_C", "ExecuteUbergraph_B_TargetTrack");
+
+	Params::AB_TargetTrack_C_ExecuteUbergraph_B_TargetTrack_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -793,6 +905,4 @@ void AB_TargetTrack_C::ExecuteUbergraph_B_TargetTrack(int32 EntryPoint, UDelegat
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

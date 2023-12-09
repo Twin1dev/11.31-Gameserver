@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// AnimBlueprintGeneratedClass B_MasterPetAnimBP.B_MasterPetAnimBP_C
+// (None)
+
+class UClass* UB_MasterPetAnimBP_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_MasterPetAnimBP_C");
+
+	return Clss;
+}
+
+
+// B_MasterPetAnimBP_C B_MasterPetAnimBP.Default__B_MasterPetAnimBP_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UB_MasterPetAnimBP_C* UB_MasterPetAnimBP_C::GetDefaultObj()
+{
+	static class UB_MasterPetAnimBP_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UB_MasterPetAnimBP_C*>(UB_MasterPetAnimBP_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_MasterPetAnimBP.B_MasterPetAnimBP_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,15 +47,18 @@ namespace SDK
 
 void UB_MasterPetAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimGraph");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_AnimGraph_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimGraph");
+
+	Params::UB_MasterPetAnimBP_C_AnimGraph_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (AnimGraph != nullptr)
-		*AnimGraph = Parms.AnimGraph;
+		*AnimGraph = std::move(Parms.AnimGraph);
 
 }
 
@@ -41,12 +69,14 @@ void UB_MasterPetAnimBP_C::AnimGraph(struct FPoseLink* AnimGraph)
 
 void UB_MasterPetAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_3C816C0C48CA2CAFFBF09392A11667F5()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_3C816C0C48CA2CAFFBF09392A11667F5");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_3C816C0C48CA2CAFFBF09392A11667F5_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_3C816C0C48CA2CAFFBF09392A11667F5");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,12 +87,14 @@ void UB_MasterPetAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterP
 
 void UB_MasterPetAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_E0DEFD6D4A6F7885EF0C1ABF6CCDE727()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_E0DEFD6D4A6F7885EF0C1ABF6CCDE727");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_E0DEFD6D4A6F7885EF0C1ABF6CCDE727_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_E0DEFD6D4A6F7885EF0C1ABF6CCDE727");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -73,12 +105,14 @@ void UB_MasterPetAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterP
 
 void UB_MasterPetAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_FE9887D54DE05D68FF6E8193A157347B()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_FE9887D54DE05D68FF6E8193A157347B");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_FE9887D54DE05D68FF6E8193A157347B_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_FE9887D54DE05D68FF6E8193A157347B");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -89,12 +123,14 @@ void UB_MasterPetAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterP
 
 void UB_MasterPetAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_685F2EBC4468C9B009E6B8B7D3AE964F()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_685F2EBC4468C9B009E6B8B7D3AE964F");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_685F2EBC4468C9B009E6B8B7D3AE964F_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_685F2EBC4468C9B009E6B8B7D3AE964F");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,12 +141,14 @@ void UB_MasterPetAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterP
 
 void UB_MasterPetAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_BF172D7F484DFFB51CE2DA86C34FBFFB()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_BF172D7F484DFFB51CE2DA86C34FBFFB");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_BF172D7F484DFFB51CE2DA86C34FBFFB_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_BF172D7F484DFFB51CE2DA86C34FBFFB");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -121,12 +159,14 @@ void UB_MasterPetAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterP
 
 void UB_MasterPetAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_9E2754D640022DD00B4C618375D7CDE8()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_9E2754D640022DD00B4C618375D7CDE8");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_9E2754D640022DD00B4C618375D7CDE8_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_9E2754D640022DD00B4C618375D7CDE8");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -137,12 +177,14 @@ void UB_MasterPetAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterP
 
 void UB_MasterPetAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_LayeredBoneBlend_8F44D9504941E8105FB3BFBD14102B06()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_LayeredBoneBlend_8F44D9504941E8105FB3BFBD14102B06");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_LayeredBoneBlend_8F44D9504941E8105FB3BFBD14102B06_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_LayeredBoneBlend_8F44D9504941E8105FB3BFBD14102B06");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -153,12 +195,14 @@ void UB_MasterPetAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterP
 
 void UB_MasterPetAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_7514C8CF49770043B15C23B4C927EF86()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_7514C8CF49770043B15C23B4C927EF86");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_7514C8CF49770043B15C23B4C927EF86_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterPetAnimBP_AnimGraphNode_TransitionResult_7514C8CF49770043B15C23B4C927EF86");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -169,12 +213,14 @@ void UB_MasterPetAnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_B_MasterP
 
 void UB_MasterPetAnimBP_C::AnimNotify_RollRandomIdle()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimNotify_RollRandomIdle");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_AnimNotify_RollRandomIdle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimNotify_RollRandomIdle");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -185,12 +231,14 @@ void UB_MasterPetAnimBP_C::AnimNotify_RollRandomIdle()
 
 void UB_MasterPetAnimBP_C::AnimNotify_RollRandomIdle2()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimNotify_RollRandomIdle2");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_AnimNotify_RollRandomIdle2_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimNotify_RollRandomIdle2");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -201,12 +249,14 @@ void UB_MasterPetAnimBP_C::AnimNotify_RollRandomIdle2()
 
 void UB_MasterPetAnimBP_C::AnimNotify_StartJump_Entered()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimNotify_StartJump_Entered");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_AnimNotify_StartJump_Entered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimNotify_StartJump_Entered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -217,12 +267,14 @@ void UB_MasterPetAnimBP_C::AnimNotify_StartJump_Entered()
 
 void UB_MasterPetAnimBP_C::AnimNotify_StartJump_Entered_Test()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimNotify_StartJump_Entered_Test");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_AnimNotify_StartJump_Entered_Test_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimNotify_StartJump_Entered_Test");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -233,12 +285,14 @@ void UB_MasterPetAnimBP_C::AnimNotify_StartJump_Entered_Test()
 
 void UB_MasterPetAnimBP_C::AnimNotify_CrouchIdle1_FullyBlended()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimNotify_CrouchIdle1_FullyBlended");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_AnimNotify_CrouchIdle1_FullyBlended_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimNotify_CrouchIdle1_FullyBlended");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -249,12 +303,14 @@ void UB_MasterPetAnimBP_C::AnimNotify_CrouchIdle1_FullyBlended()
 
 void UB_MasterPetAnimBP_C::AnimNotify_CrouchIdle2_FullyBlended()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimNotify_CrouchIdle2_FullyBlended");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_AnimNotify_CrouchIdle2_FullyBlended_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimNotify_CrouchIdle2_FullyBlended");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -265,12 +321,14 @@ void UB_MasterPetAnimBP_C::AnimNotify_CrouchIdle2_FullyBlended()
 
 void UB_MasterPetAnimBP_C::AnimNotify_Entered_Crouching()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimNotify_Entered_Crouching");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_AnimNotify_Entered_Crouching_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimNotify_Entered_Crouching");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -281,12 +339,14 @@ void UB_MasterPetAnimBP_C::AnimNotify_Entered_Crouching()
 
 void UB_MasterPetAnimBP_C::AnimNotify_Entered_DownSightsToCrouch()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimNotify_Entered_DownSightsToCrouch");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_AnimNotify_Entered_DownSightsToCrouch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "AnimNotify_Entered_DownSightsToCrouch");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -297,12 +357,14 @@ void UB_MasterPetAnimBP_C::AnimNotify_Entered_DownSightsToCrouch()
 
 void UB_MasterPetAnimBP_C::LobbySkyDive_IsDiving()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "LobbySkyDive_IsDiving");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_LobbySkyDive_IsDiving_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "LobbySkyDive_IsDiving");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -313,12 +375,14 @@ void UB_MasterPetAnimBP_C::LobbySkyDive_IsDiving()
 
 void UB_MasterPetAnimBP_C::LobbySkyDive_IsGliding()
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "LobbySkyDive_IsGliding");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_LobbySkyDive_IsGliding_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "LobbySkyDive_IsGliding");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -330,9 +394,12 @@ void UB_MasterPetAnimBP_C::LobbySkyDive_IsGliding()
 
 void UB_MasterPetAnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "BlueprintUpdateAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_BlueprintUpdateAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "BlueprintUpdateAnimation");
+
+	Params::UB_MasterPetAnimBP_C_BlueprintUpdateAnimation_Params Parms{};
 
 	Parms.DeltaTimeX = DeltaTimeX;
 
@@ -369,9 +436,12 @@ void UB_MasterPetAnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void UB_MasterPetAnimBP_C::ExecuteUbergraph_B_MasterPetAnimBP(int32 EntryPoint, float K2Node_Event_DeltaTimeX, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, float CallFunc_GetCurveValue_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_Not_PreBool_ReturnValue_2, float CallFunc_GetInstanceAssetPlayerTimeFromEnd_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_3, bool CallFunc_Less_FloatFloat_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_3, bool CallFunc_BooleanAND_ReturnValue_4, bool CallFunc_BooleanAND_ReturnValue_5, int32 CallFunc_RandomIntegerInRange_ReturnValue, int32 CallFunc_Clamp_ReturnValue, int32 CallFunc_RandomInteger_ReturnValue, float CallFunc_GetInstanceAssetPlayerTimeFromEnd_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_6)
 {
-	static auto Func = Class->GetFunction("B_MasterPetAnimBP_C", "ExecuteUbergraph_B_MasterPetAnimBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UB_MasterPetAnimBP_C_ExecuteUbergraph_B_MasterPetAnimBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_MasterPetAnimBP_C", "ExecuteUbergraph_B_MasterPetAnimBP");
+
+	Params::UB_MasterPetAnimBP_C_ExecuteUbergraph_B_MasterPetAnimBP_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_DeltaTimeX = K2Node_Event_DeltaTimeX;
@@ -402,6 +472,4 @@ void UB_MasterPetAnimBP_C::ExecuteUbergraph_B_MasterPetAnimBP(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass LobbyGadgetButton.LobbyGadgetButton_C
+// (None)
+
+class UClass* ULobbyGadgetButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LobbyGadgetButton_C");
+
+	return Clss;
+}
+
+
+// LobbyGadgetButton_C LobbyGadgetButton.Default__LobbyGadgetButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULobbyGadgetButton_C* ULobbyGadgetButton_C::GetDefaultObj()
+{
+	static class ULobbyGadgetButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULobbyGadgetButton_C*>(ULobbyGadgetButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function LobbyGadgetButton.LobbyGadgetButton_C.Focus
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ULobbyGadgetButton_C::Focus(class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue)
 {
-	static auto Func = Class->GetFunction("LobbyGadgetButton_C", "Focus");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyGadgetButton_C_Focus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyGadgetButton_C", "Focus");
+
+	Params::ULobbyGadgetButton_C_Focus_Params Parms{};
 
 	Parms.CallFunc_GetUINavigationManager_ReturnValue = CallFunc_GetUINavigationManager_ReturnValue;
 
@@ -40,9 +68,12 @@ void ULobbyGadgetButton_C::Focus(class UFortUINavigationManager* CallFunc_GetUIN
 
 void ULobbyGadgetButton_C::GetLocked(bool* bLocked)
 {
-	static auto Func = Class->GetFunction("LobbyGadgetButton_C", "GetLocked");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyGadgetButton_C_GetLocked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyGadgetButton_C", "GetLocked");
+
+	Params::ULobbyGadgetButton_C_GetLocked_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -61,9 +92,12 @@ void ULobbyGadgetButton_C::GetLocked(bool* bLocked)
 
 void ULobbyGadgetButton_C::SetLocked(bool bLocked, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("LobbyGadgetButton_C", "SetLocked");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyGadgetButton_C_SetLocked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyGadgetButton_C", "SetLocked");
+
+	Params::ULobbyGadgetButton_C_SetLocked_Params Parms{};
 
 	Parms.bLocked = bLocked;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
@@ -80,9 +114,12 @@ void ULobbyGadgetButton_C::SetLocked(bool bLocked, bool CallFunc_Not_PreBool_Ret
 
 void ULobbyGadgetButton_C::GetGadgetItem(class UFortWorldItem** GadgetItem)
 {
-	static auto Func = Class->GetFunction("LobbyGadgetButton_C", "GetGadgetItem");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyGadgetButton_C_GetGadgetItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyGadgetButton_C", "GetGadgetItem");
+
+	Params::ULobbyGadgetButton_C_GetGadgetItem_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -101,9 +138,12 @@ void ULobbyGadgetButton_C::GetGadgetItem(class UFortWorldItem** GadgetItem)
 
 void ULobbyGadgetButton_C::Refresh(class UFortWorldItem* WorldItem, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("LobbyGadgetButton_C", "Refresh");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyGadgetButton_C_Refresh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyGadgetButton_C", "Refresh");
+
+	Params::ULobbyGadgetButton_C_Refresh_Params Parms{};
 
 	Parms.WorldItem = WorldItem;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -120,9 +160,12 @@ void ULobbyGadgetButton_C::Refresh(class UFortWorldItem* WorldItem, bool CallFun
 
 void ULobbyGadgetButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("LobbyGadgetButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyGadgetButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyGadgetButton_C", "PreConstruct");
+
+	Params::ULobbyGadgetButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -138,9 +181,12 @@ void ULobbyGadgetButton_C::PreConstruct(bool IsDesignTime)
 
 void ULobbyGadgetButton_C::BndEvt__Button_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("LobbyGadgetButton_C", "BndEvt__Button_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyGadgetButton_C_BndEvt__Button_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyGadgetButton_C", "BndEvt__Button_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature");
+
+	Params::ULobbyGadgetButton_C_BndEvt__Button_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -156,9 +202,12 @@ void ULobbyGadgetButton_C::BndEvt__Button_K2Node_ComponentBoundEvent_81_CommonBu
 
 void ULobbyGadgetButton_C::BndEvt__Button_K2Node_ComponentBoundEvent_96_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("LobbyGadgetButton_C", "BndEvt__Button_K2Node_ComponentBoundEvent_96_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyGadgetButton_C_BndEvt__Button_K2Node_ComponentBoundEvent_96_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyGadgetButton_C", "BndEvt__Button_K2Node_ComponentBoundEvent_96_CommonButtonClicked__DelegateSignature");
+
+	Params::ULobbyGadgetButton_C_BndEvt__Button_K2Node_ComponentBoundEvent_96_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -181,9 +230,12 @@ void ULobbyGadgetButton_C::BndEvt__Button_K2Node_ComponentBoundEvent_96_CommonBu
 
 void ULobbyGadgetButton_C::ExecuteUbergraph_LobbyGadgetButton(int32 EntryPoint, bool K2Node_Event_IsDesignTime, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, int32 CallFunc_Array_Length_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, int32 CallFunc_RandomInteger_ReturnValue, class UFortWorldItemDefinition* CallFunc_Array_Get_Item, class UFortItem* CallFunc_CreateTemporaryItemInstanceBP_ReturnValue)
 {
-	static auto Func = Class->GetFunction("LobbyGadgetButton_C", "ExecuteUbergraph_LobbyGadgetButton");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyGadgetButton_C_ExecuteUbergraph_LobbyGadgetButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyGadgetButton_C", "ExecuteUbergraph_LobbyGadgetButton");
+
+	Params::ULobbyGadgetButton_C_ExecuteUbergraph_LobbyGadgetButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -206,9 +258,12 @@ void ULobbyGadgetButton_C::ExecuteUbergraph_LobbyGadgetButton(int32 EntryPoint, 
 
 void ULobbyGadgetButton_C::OnButtonHovered__DelegateSignature(class ULobbyGadgetButton_C* GadgetButton)
 {
-	static auto Func = Class->GetFunction("LobbyGadgetButton_C", "OnButtonHovered__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyGadgetButton_C_OnButtonHovered__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyGadgetButton_C", "OnButtonHovered__DelegateSignature");
+
+	Params::ULobbyGadgetButton_C_OnButtonHovered__DelegateSignature_Params Parms{};
 
 	Parms.GadgetButton = GadgetButton;
 
@@ -224,9 +279,12 @@ void ULobbyGadgetButton_C::OnButtonHovered__DelegateSignature(class ULobbyGadget
 
 void ULobbyGadgetButton_C::OnButtonClicked__DelegateSignature(class ULobbyGadgetButton_C* GadgetButton)
 {
-	static auto Func = Class->GetFunction("LobbyGadgetButton_C", "OnButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ULobbyGadgetButton_C_OnButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LobbyGadgetButton_C", "OnButtonClicked__DelegateSignature");
+
+	Params::ULobbyGadgetButton_C_OnButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.GadgetButton = GadgetButton;
 
@@ -236,6 +294,4 @@ void ULobbyGadgetButton_C::OnButtonClicked__DelegateSignature(class ULobbyGadget
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

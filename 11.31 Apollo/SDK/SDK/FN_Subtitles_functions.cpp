@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass Subtitles.Subtitles_C
+// (None)
+
+class UClass* USubtitles_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Subtitles_C");
+
+	return Clss;
+}
+
+
+// Subtitles_C Subtitles.Default__Subtitles_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USubtitles_C* USubtitles_C::GetDefaultObj()
+{
+	static class USubtitles_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USubtitles_C*>(USubtitles_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Subtitles.Subtitles_C.BndEvt__SubtitleDisplay_K2Node_ComponentBoundEvent_0_OnSubtitleChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void USubtitles_C::BndEvt__SubtitleDisplay_K2Node_ComponentBoundEvent_0_OnSubtitleChanged__DelegateSignature(class FText Subtitle)
 {
-	static auto Func = Class->GetFunction("Subtitles_C", "BndEvt__SubtitleDisplay_K2Node_ComponentBoundEvent_0_OnSubtitleChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::USubtitles_C_BndEvt__SubtitleDisplay_K2Node_ComponentBoundEvent_0_OnSubtitleChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Subtitles_C", "BndEvt__SubtitleDisplay_K2Node_ComponentBoundEvent_0_OnSubtitleChanged__DelegateSignature");
+
+	Params::USubtitles_C_BndEvt__SubtitleDisplay_K2Node_ComponentBoundEvent_0_OnSubtitleChanged__DelegateSignature_Params Parms{};
 
 	Parms.Subtitle = Subtitle;
 
@@ -40,15 +68,18 @@ void USubtitles_C::BndEvt__SubtitleDisplay_K2Node_ComponentBoundEvent_0_OnSubtit
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_ComponentBoundEvent_Subtitle                              ()
+// class FText                        K2Node_ComponentBoundEvent_Subtitle                              (None)
 // bool                               CallFunc_HasSubtitles_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USubtitles_C::ExecuteUbergraph_Subtitles(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class FText K2Node_ComponentBoundEvent_Subtitle, bool CallFunc_HasSubtitles_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("Subtitles_C", "ExecuteUbergraph_Subtitles");
+	static class UFunction* Func = nullptr;
 
-	Params::USubtitles_C_ExecuteUbergraph_Subtitles_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Subtitles_C", "ExecuteUbergraph_Subtitles");
+
+	Params::USubtitles_C_ExecuteUbergraph_Subtitles_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -64,6 +95,4 @@ void USubtitles_C::ExecuteUbergraph_Subtitles(int32 EntryPoint, bool Temp_bool_V
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

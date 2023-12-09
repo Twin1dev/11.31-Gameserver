@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class UCreative_CommonDeviceFunctionLibrary_C : public UBlueprintFunctionLibrary
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("Creative_CommonDeviceFunctionLibrary_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UCreative_CommonDeviceFunctionLibrary_C* GetDefaultObj();
 
 	void Get_Dynamic_Team_Color(class AActor* Actor, class AFortMinigame* Minigame, enum class ECreativeColorSetType Color_Type, class UObject* __WorldContext, int32* Array_Index, const TArray<struct FGameplayTag>& GameplayTags, const TArray<struct FGameplayTag>& GameplayColorTags, enum class ECreativeTeamColor Temp_byte_Variable, class AFortPlayerController* CallFunc_GetFirstLocalFortPlayerController_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, enum class ECreativeTeamColor Temp_byte_Variable_1, enum class ECreativeTeamColor Temp_byte_Variable_2, uint8 CallFunc_MakeLiteralByte_ReturnValue, TArray<struct FGameplayTag>& K2Node_MakeArray_Array, enum class EFortTeamAffiliation Temp_byte_Variable_3, enum class EFortTeamAffiliation CallFunc_GetTeamAffiliation_ReturnValue, uint8 CallFunc_GetActorPvPTeamIndex_TeamIndex, bool CallFunc_GetActorPvPTeamIndex_ReturnValue, uint8 CallFunc_Add_ByteByte_ReturnValue, enum class ECreativeTeamColor K2Node_Select_Default, int32 CallFunc_Conv_ByteToInt_ReturnValue, int32 CallFunc_GetTeamColorIndex_ReturnValue);
 	void Get_Team_Color_Index_from_Tag(class AActor* Actor_with_Tag, class AFortMinigame* Minigame, class UObject* __WorldContext, int32* Array_Index, enum class ECreativeColorSetType* Color_Type_Out, const struct FGameplayTag& Check_Tag, const TArray<struct FGameplayTag>& GameplayTags, const TArray<struct FGameplayTag>& GameplayColorTags, const struct FGameplayTagContainer& Temp_struct_Variable, TArray<struct FGameplayTag>& K2Node_MakeArray_Array, TArray<struct FGameplayTag>& CallFunc_BreakGameplayTagContainer_GameplayTags, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, const struct FGameplayTag& CallFunc_Array_Get_Item, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue_1, int32 CallFunc_Max_ReturnValue, int32 CallFunc_Get_Dynamic_Team_Color_Array_Index, int32 CallFunc_Get_Dynamic_Team_Color_Array_Index_1, bool CallFunc_EqualEqual_GameplayTag_ReturnValue, bool CallFunc_EqualEqual_GameplayTag_ReturnValue_1, int32 CallFunc_Array_Find_ReturnValue, bool CallFunc_MatchesTag_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface, bool K2Node_DynamicCast_bSuccess, const struct FGameplayTagContainer& CallFunc_GetOwnedGameplayTags_TagContainer);
@@ -44,6 +38,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

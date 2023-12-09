@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass MinigameStat_PlayerAssists.MinigameStat_PlayerAssists_C
+// (None)
+
+class UClass* UMinigameStat_PlayerAssists_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MinigameStat_PlayerAssists_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// MinigameStat_PlayerAssists_C MinigameStat_PlayerAssists.Default__MinigameStat_PlayerAssists_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMinigameStat_PlayerAssists_C* UMinigameStat_PlayerAssists_C::GetDefaultObj()
+{
+	static class UMinigameStat_PlayerAssists_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMinigameStat_PlayerAssists_C*>(UMinigameStat_PlayerAssists_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

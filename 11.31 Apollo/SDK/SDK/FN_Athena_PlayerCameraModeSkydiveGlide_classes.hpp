@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,16 +15,11 @@ class UAthena_PlayerCameraModeSkydiveGlide_C : public UAthena_PlayerCameraModeBa
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("Athena_PlayerCameraModeSkydiveGlide_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UAthena_PlayerCameraModeSkydiveGlide_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

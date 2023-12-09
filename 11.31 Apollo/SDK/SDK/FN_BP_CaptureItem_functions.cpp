@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_CaptureItem.BP_CaptureItem_C
+// (Actor)
+
+class UClass* ABP_CaptureItem_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_CaptureItem_C");
+
+	return Clss;
+}
+
+
+// BP_CaptureItem_C BP_CaptureItem.Default__BP_CaptureItem_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_CaptureItem_C* ABP_CaptureItem_C::GetDefaultObj()
+{
+	static class ABP_CaptureItem_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_CaptureItem_C*>(ABP_CaptureItem_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_CaptureItem.BP_CaptureItem_C.OnWrapAsyncLoaded
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ABP_CaptureItem_C::OnWrapAsyncLoaded(bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_CaptureItem_C", "OnWrapAsyncLoaded");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CaptureItem_C_OnWrapAsyncLoaded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CaptureItem_C", "OnWrapAsyncLoaded");
+
+	Params::ABP_CaptureItem_C_OnWrapAsyncLoaded_Params Parms{};
 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
@@ -50,9 +78,12 @@ void ABP_CaptureItem_C::OnWrapAsyncLoaded(bool CallFunc_IsValid_ReturnValue)
 
 void ABP_CaptureItem_C::CreateWrapPreview(class AActor** WrapActor, class AFortWrapSkeletalMeshActor* WrapPreviewActor, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTransform& CallFunc_K2_GetComponentToWorld_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class AFortWrapSkeletalMeshActor* CallFunc_FinishSpawningActor_ReturnValue, bool CallFunc_IsValid_ReturnValue, class AFortWrapSkeletalMeshActor* K2Node_DynamicCast_AsFort_Wrap_Skeletal_Mesh_Actor, bool K2Node_DynamicCast_bSuccess, class UAthenaItemWrapDefinition* K2Node_DynamicCast_AsAthena_Item_Wrap_Definition, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("BP_CaptureItem_C", "CreateWrapPreview");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CaptureItem_C_CreateWrapPreview_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CaptureItem_C", "CreateWrapPreview");
+
+	Params::ABP_CaptureItem_C_CreateWrapPreview_Params Parms{};
 
 	Parms.WrapPreviewActor = WrapPreviewActor;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -83,9 +114,12 @@ void ABP_CaptureItem_C::CreateWrapPreview(class AActor** WrapActor, class AFortW
 
 void ABP_CaptureItem_C::SetIsLarge(bool Is_Large_Tile, bool Temp_bool_Variable, const struct FTransform& K2Node_Select_Default, const struct FHitResult& CallFunc_K2_SetRelativeTransform_SweepHitResult)
 {
-	static auto Func = Class->GetFunction("BP_CaptureItem_C", "SetIsLarge");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CaptureItem_C_SetIsLarge_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CaptureItem_C", "SetIsLarge");
+
+	Params::ABP_CaptureItem_C_SetIsLarge_Params Parms{};
 
 	Parms.Is_Large_Tile = Is_Large_Tile;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -114,9 +148,12 @@ void ABP_CaptureItem_C::SetIsLarge(bool Is_Large_Tile, bool Temp_bool_Variable, 
 
 void ABP_CaptureItem_C::SetWrapIsGun(bool WrapIsGun, class USkeletalMesh* Temp_object_Variable, class USkeletalMesh* Temp_object_Variable_1, bool Temp_bool_Variable, bool Temp_bool_Variable_1, class USkeletalMesh* K2Node_Select_Default, class UAthenaItemWrapDefinition* K2Node_DynamicCast_AsAthena_Item_Wrap_Definition, bool K2Node_DynamicCast_bSuccess, class AFortWrapSkeletalMeshActor* K2Node_DynamicCast_AsFort_Wrap_Skeletal_Mesh_Actor, bool K2Node_DynamicCast_bSuccess_1, class USceneComponent* K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("BP_CaptureItem_C", "SetWrapIsGun");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CaptureItem_C_SetWrapIsGun_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CaptureItem_C", "SetWrapIsGun");
+
+	Params::ABP_CaptureItem_C_SetWrapIsGun_Params Parms{};
 
 	Parms.WrapIsGun = WrapIsGun;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -141,12 +178,14 @@ void ABP_CaptureItem_C::SetWrapIsGun(bool WrapIsGun, class USkeletalMesh* Temp_o
 
 void ABP_CaptureItem_C::UserConstructionScript()
 {
-	static auto Func = Class->GetFunction("BP_CaptureItem_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CaptureItem_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CaptureItem_C", "UserConstructionScript");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -157,12 +196,14 @@ void ABP_CaptureItem_C::UserConstructionScript()
 
 void ABP_CaptureItem_C::Timeline_PanCamera__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_CaptureItem_C", "Timeline_PanCamera__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CaptureItem_C_Timeline_PanCamera__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CaptureItem_C", "Timeline_PanCamera__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -173,12 +214,14 @@ void ABP_CaptureItem_C::Timeline_PanCamera__FinishedFunc()
 
 void ABP_CaptureItem_C::Timeline_PanCamera__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_CaptureItem_C", "Timeline_PanCamera__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CaptureItem_C_Timeline_PanCamera__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CaptureItem_C", "Timeline_PanCamera__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -191,9 +234,12 @@ void ABP_CaptureItem_C::Timeline_PanCamera__UpdateFunc()
 
 void ABP_CaptureItem_C::OnSetupCapture(class UFortItemThumbnailRenderer* InRenderer, class UFortItemDefinition* InItemDefinition)
 {
-	static auto Func = Class->GetFunction("BP_CaptureItem_C", "OnSetupCapture");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CaptureItem_C_OnSetupCapture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CaptureItem_C", "OnSetupCapture");
+
+	Params::ABP_CaptureItem_C_OnSetupCapture_Params Parms{};
 
 	Parms.InRenderer = InRenderer;
 	Parms.InItemDefinition = InItemDefinition;
@@ -209,12 +255,14 @@ void ABP_CaptureItem_C::OnSetupCapture(class UFortItemThumbnailRenderer* InRende
 
 void ABP_CaptureItem_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_CaptureItem_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CaptureItem_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CaptureItem_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -225,12 +273,14 @@ void ABP_CaptureItem_C::ReceiveBeginPlay()
 
 void ABP_CaptureItem_C::ReceiveDestroyed()
 {
-	static auto Func = Class->GetFunction("BP_CaptureItem_C", "ReceiveDestroyed");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CaptureItem_C_ReceiveDestroyed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CaptureItem_C", "ReceiveDestroyed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -251,9 +301,12 @@ void ABP_CaptureItem_C::ReceiveDestroyed()
 
 void ABP_CaptureItem_C::ExecuteUbergraph_BP_CaptureItem(int32 EntryPoint, const struct FVector& CallFunc_VLerp_ReturnValue, class UFortItemThumbnailRenderer* K2Node_Event_InRenderer, class UFortItemDefinition* K2Node_Event_InItemDefinition, enum class EFortItemType CallFunc_GetItemType_ReturnValue, class AActor* CallFunc_CreateWrapPreview_WrapActor, bool K2Node_SwitchEnum_CmpSuccess, TArray<class AActor*>& K2Node_MakeArray_Array, const struct FHitResult& CallFunc_K2_SetRelativeLocationAndRotation_SweepHitResult, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_CaptureItem_C", "ExecuteUbergraph_BP_CaptureItem");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CaptureItem_C", "ExecuteUbergraph_BP_CaptureItem");
+
+	Params::ABP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_VLerp_ReturnValue = CallFunc_VLerp_ReturnValue;
@@ -272,6 +325,4 @@ void ABP_CaptureItem_C::ExecuteUbergraph_BP_CaptureItem(int32 EntryPoint, const 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

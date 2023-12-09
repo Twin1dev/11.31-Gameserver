@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -22,26 +19,26 @@ struct UItemSeriesOrRarity_C_UpdateItemDefinition_Params
 {
 public:
 	class UFortItemDefinition*                   ItemDefinition;                                    // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                  Temp_text_Variable;                                // 0x8(0x18)()
+	class FText                                  Temp_text_Variable;                                // 0x8(0x18)(None)
 	struct FFortColorPalette                     CallFunc_GetRarityOrSeriesColors_ReturnValue;      // 0x20(0x50)(NoDestructor)
-	struct FSlateColor                           K2Node_MakeStruct_SlateColor;                      // 0x70(0x28)()
+	struct FSlateColor                           K2Node_MakeStruct_SlateColor;                      // 0x70(0x28)(None)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x98(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_1C96[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	struct FSlateColor                           K2Node_MakeStruct_SlateColor_1;                    // 0xA0(0x28)()
+	uint8                                        Pad_6DBB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FSlateColor                           K2Node_MakeStruct_SlateColor_1;                    // 0xA0(0x28)(None)
 	enum class EFortRarity                       CallFunc_GetRarity_ReturnValue;                    // 0xC8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue_1;                    // 0xC9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_1C97[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	struct FFortRarityItemData                   CallFunc_BPGetRarityData_ReturnValue;              // 0xD0(0x80)()
+	uint8                                        Pad_6DBC[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FFortRarityItemData                   CallFunc_BPGetRarityData_ReturnValue;              // 0xD0(0x80)(None)
 	bool                                         CallFunc_IsValid_ReturnValue_2;                    // 0x150(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsValid_ReturnValue_3;                    // 0x151(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x152(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Temp_bool_Variable;                                // 0x153(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Temp_bool_Variable_1;                              // 0x154(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x155(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_1C98[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  K2Node_Select_Default;                             // 0x158(0x18)()
+	uint8                                        Pad_6DBD[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  K2Node_Select_Default;                             // 0x158(0x18)(None)
 	enum class ESlateVisibility                  Temp_byte_Variable;                                // 0x170(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_1C99[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6DBE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWidget*                               K2Node_Select_Default_1;                           // 0x178(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable_1;                              // 0x180(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable_2;                              // 0x181(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -51,6 +48,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

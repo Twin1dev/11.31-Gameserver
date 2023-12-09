@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass BladeMenu_MainMenu.BladeMenu_MainMenu_C
+// (None)
+
+class UClass* UBladeMenu_MainMenu_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BladeMenu_MainMenu_C");
+
+	return Clss;
+}
+
+
+// BladeMenu_MainMenu_C BladeMenu_MainMenu.Default__BladeMenu_MainMenu_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBladeMenu_MainMenu_C* UBladeMenu_MainMenu_C::GetDefaultObj()
+{
+	static class UBladeMenu_MainMenu_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBladeMenu_MainMenu_C*>(UBladeMenu_MainMenu_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BladeMenu_MainMenu.BladeMenu_MainMenu_C.Close
@@ -24,9 +49,12 @@ namespace SDK
 
 void UBladeMenu_MainMenu_C::Close(class UWidget* CallFunc_FindParentWidgetOfType_ReturnValue, class UDualBladeMenu_C* K2Node_DynamicCast_AsDual_Blade_Menu, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "Close");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_Close_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "Close");
+
+	Params::UBladeMenu_MainMenu_C_Close_Params Parms{};
 
 	Parms.CallFunc_FindParentWidgetOfType_ReturnValue = CallFunc_FindParentWidgetOfType_ReturnValue;
 	Parms.K2Node_DynamicCast_AsDual_Blade_Menu = K2Node_DynamicCast_AsDual_Blade_Menu;
@@ -75,9 +103,12 @@ void UBladeMenu_MainMenu_C::Close(class UWidget* CallFunc_FindParentWidgetOfType
 
 void UBladeMenu_MainMenu_C::ShowMinigameButtons(class AFortVolume* Volume, class AFortPlayerControllerAthena* Player, class AFortGameStateAthena* FortGameStateAthena, bool* bResult, bool HasPermissionToStart, class AFortPlayerPawn* PlayerPawn, class AFortMinigame* Minigame, bool bShow, const struct FUniqueNetIdRepl& CallFunc_GetGameAccountId_ReturnValue, class AFortPlayerPawn* CallFunc_GetPlayerPawn_ReturnValue, class AFortMinigame* CallFunc_GetMinigameForVolume_ReturnValue, class UFortLevelSaveComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FUniqueNetIdRepl& CallFunc_GetAccountIdOfOwner_ReturnValue, bool CallFunc_EqualEqual_UniqueNetIdReplUniqueNetIdRepl_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_IsCreativeLTMPlaylist_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsDead_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_IsCuratedHub_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_2, bool CallFunc_IsMinigameStarter_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_HasStarted_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_Not_PreBool_ReturnValue_3, bool CallFunc_BooleanOR_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "ShowMinigameButtons");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_ShowMinigameButtons_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "ShowMinigameButtons");
+
+	Params::UBladeMenu_MainMenu_C_ShowMinigameButtons_Params Parms{};
 
 	Parms.Volume = Volume;
 	Parms.Player = Player;
@@ -167,9 +198,12 @@ void UBladeMenu_MainMenu_C::ShowMinigameButtons(class AFortVolume* Volume, class
 
 void UBladeMenu_MainMenu_C::UpdateCreativeButtonsVisibility(class AFortPlayerState* OwningPlayerState, class AFortVolume* Volume, class AFortGameStateAthena* Fort_Game_State_Athena, enum class ESlateVisibility Temp_byte_Variable, bool Temp_bool_Variable, bool CallFunc_Not_PreBool_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_1, bool CallFunc_IsValid_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_4, class AGameStateBase* CallFunc_GetGameState_ReturnValue, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsCreativeModePlaylist_ReturnValue, bool CallFunc_IsTeleportToCreativeHubAllowed_ReturnValue, bool CallFunc_CanRespawnOnStarterIsland_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class AFortPlayerControllerAthena* K2Node_DynamicCast_AsFort_Player_Controller_Athena, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_OwnsIslandVolume_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_BooleanAND_ReturnValue_1, class AFortVolume* CallFunc_GetCurrentVolume_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_2, class APlayerController* CallFunc_GetPlayerController_ReturnValue, class AFortPlayerState* K2Node_DynamicCast_AsFort_Player_State, bool K2Node_DynamicCast_bSuccess_2, enum class ESlateVisibility Temp_byte_Variable_5, class APlayerController* CallFunc_GetPlayerController_ReturnValue_1, class AAthena_PlayerController_C* K2Node_DynamicCast_AsAthena_Player_Controller, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_ShowMinigameButtons_bResult, bool CallFunc_IsMoveInputIgnored_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_1, bool Temp_bool_Variable_2, class AGameStateBase* CallFunc_GetGameState_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_2, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena_1, bool K2Node_DynamicCast_bSuccess_4)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "UpdateCreativeButtonsVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_UpdateCreativeButtonsVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "UpdateCreativeButtonsVisibility");
+
+	Params::UBladeMenu_MainMenu_C_UpdateCreativeButtonsVisibility_Params Parms{};
 
 	Parms.OwningPlayerState = OwningPlayerState;
 	Parms.Volume = Volume;
@@ -242,9 +276,12 @@ void UBladeMenu_MainMenu_C::UpdateCreativeButtonsVisibility(class AFortPlayerSta
 
 void UBladeMenu_MainMenu_C::UpdateRespawnWidgetVisibility(bool PlayerTriggeredSpawnAllowed, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool Temp_bool_Variable, class AGameStateBase* CallFunc_GetGameState_ReturnValue, class AFortPlayerState* K2Node_DynamicCast_AsFort_Player_State, bool K2Node_DynamicCast_bSuccess, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena, bool K2Node_DynamicCast_bSuccess_1, class APawn* CallFunc_GetOwningPlayerPawn_ReturnValue, bool CallFunc_IsRespawningAllowed_ReturnValue, class AFortRemoteControlledPawnAthena* K2Node_DynamicCast_AsFort_Remote_Controlled_Pawn_Athena, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_IsPlayerTriggeredRespawnAllowed_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "UpdateRespawnWidgetVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_UpdateRespawnWidgetVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "UpdateRespawnWidgetVisibility");
+
+	Params::UBladeMenu_MainMenu_C_UpdateRespawnWidgetVisibility_Params Parms{};
 
 	Parms.PlayerTriggeredSpawnAllowed = PlayerTriggeredSpawnAllowed;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -291,9 +328,12 @@ void UBladeMenu_MainMenu_C::UpdateRespawnWidgetVisibility(bool PlayerTriggeredSp
 
 void UBladeMenu_MainMenu_C::Update_Team_Select_Visibility(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_GetShowTeamSelectButton_ReturnValue, bool Temp_bool_Variable, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AGameStateBase* CallFunc_GetGameState_ReturnValue, class APawn* CallFunc_K2_GetPawn_ReturnValue, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena, bool K2Node_DynamicCast_bSuccess, class AFortRemoteControlledPawnAthena* K2Node_DynamicCast_AsFort_Remote_Controlled_Pawn_Athena, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsTeamSwitchAllowed_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "Update Team Select Visibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_Update_Team_Select_Visibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "Update Team Select Visibility");
+
+	Params::UBladeMenu_MainMenu_C_Update_Team_Select_Visibility_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
@@ -338,9 +378,12 @@ void UBladeMenu_MainMenu_C::Update_Team_Select_Visibility(enum class ESlateVisib
 
 void UBladeMenu_MainMenu_C::HandleOpened(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_Variable, bool CallFunc_IsInZone_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, class AFortVolumeManager* CallFunc_GetVolumeManager_OutVolumeManager, enum class EVolumeValidityResult CallFunc_GetVolumeManager_OutIsValid, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, class APawn* CallFunc_K2_GetPawn_ReturnValue, class AFortVolume* CallFunc_GetVolumeForActor_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UFortMinigameVolumeComponent* CallFunc_GetComponentByClass_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "HandleOpened");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_HandleOpened_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "HandleOpened");
+
+	Params::UBladeMenu_MainMenu_C_HandleOpened_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
@@ -377,9 +420,12 @@ void UBladeMenu_MainMenu_C::HandleOpened(enum class ESlateVisibility Temp_byte_V
 
 void UBladeMenu_MainMenu_C::SetLegalButtonVisibility(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, enum class EFortUIFeatureState CallFunc_GetFeatureState_OutFeatureState, enum class EFortUIFeatureStateReason CallFunc_GetFeatureState_OutReason, bool CallFunc_EqualEqual_ByteByte_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "SetLegalButtonVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_SetLegalButtonVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "SetLegalButtonVisibility");
+
+	Params::UBladeMenu_MainMenu_C_SetLegalButtonVisibility_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -409,9 +455,12 @@ void UBladeMenu_MainMenu_C::SetLegalButtonVisibility(bool Temp_bool_Variable, en
 
 void UBladeMenu_MainMenu_C::SetSupportButtonVisibility(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, enum class EFortUIFeatureState CallFunc_GetFeatureState_OutFeatureState, enum class EFortUIFeatureStateReason CallFunc_GetFeatureState_OutReason, bool CallFunc_EqualEqual_ByteByte_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "SetSupportButtonVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_SetSupportButtonVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "SetSupportButtonVisibility");
+
+	Params::UBladeMenu_MainMenu_C_SetSupportButtonVisibility_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -435,9 +484,12 @@ void UBladeMenu_MainMenu_C::SetSupportButtonVisibility(bool Temp_bool_Variable, 
 
 void UBladeMenu_MainMenu_C::Handle_Low_Power_Mode(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UAthenaHUDContext* CallFunc_GetContext_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "Handle Low Power Mode");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_Handle_Low_Power_Mode_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "Handle Low Power Mode");
+
+	Params::UBladeMenu_MainMenu_C_Handle_Low_Power_Mode_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -460,9 +512,12 @@ void UBladeMenu_MainMenu_C::Handle_Low_Power_Mode(UDelegateProperty_ K2Node_Crea
 
 void UBladeMenu_MainMenu_C::UpdateLowPowerMessage(bool PassThrough, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UAthenaHUDContext* CallFunc_GetContext_ReturnValue, bool CallFunc_GetInLowPerformanceMode_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "UpdateLowPowerMessage");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_UpdateLowPowerMessage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "UpdateLowPowerMessage");
+
+	Params::UBladeMenu_MainMenu_C_UpdateLowPowerMessage_Params Parms{};
 
 	Parms.PassThrough = PassThrough;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -524,9 +579,12 @@ void UBladeMenu_MainMenu_C::UpdateLowPowerMessage(bool PassThrough, bool Temp_bo
 
 void UBladeMenu_MainMenu_C::InitializeMainMenu(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_Variable, bool CallFunc_IsInZone_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, bool Temp_bool_Variable_1, bool CallFunc_AllowQuit_ReturnValue, bool CallFunc_IsInZone_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable_4, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_5, enum class ESlateVisibility K2Node_Select_Default, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_2, bool Temp_bool_Variable_2, bool CallFunc_AllowLogout_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility K2Node_Select_Default_1, enum class ESlateVisibility Temp_byte_Variable_7, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_3, bool CallFunc_IsInZone_ReturnValue_2, enum class ESlateVisibility K2Node_Select_Default_2, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, bool Temp_bool_Variable_3, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_3, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_4, bool CallFunc_IsInZone_ReturnValue_3, enum class ESlateVisibility Temp_byte_Variable_8, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_IsInAthena_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_9, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue_3, bool Temp_bool_Variable_4, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, enum class ESlateVisibility K2Node_Select_Default_4, class UOptionsMenu_C* CallFunc_Create_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "InitializeMainMenu");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_InitializeMainMenu_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "InitializeMainMenu");
+
+	Params::UBladeMenu_MainMenu_C_InitializeMainMenu_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
@@ -583,9 +641,12 @@ void UBladeMenu_MainMenu_C::InitializeMainMenu(enum class ESlateVisibility Temp_
 
 void UBladeMenu_MainMenu_C::DialogResult_13A3B92E4AD04C85D3EBFCB4331D32CA(enum class EFortDialogResult Result, class FName ResultName)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "DialogResult_13A3B92E4AD04C85D3EBFCB4331D32CA");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_DialogResult_13A3B92E4AD04C85D3EBFCB4331D32CA_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "DialogResult_13A3B92E4AD04C85D3EBFCB4331D32CA");
+
+	Params::UBladeMenu_MainMenu_C_DialogResult_13A3B92E4AD04C85D3EBFCB4331D32CA_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.ResultName = ResultName;
@@ -603,9 +664,12 @@ void UBladeMenu_MainMenu_C::DialogResult_13A3B92E4AD04C85D3EBFCB4331D32CA(enum c
 
 void UBladeMenu_MainMenu_C::DialogResult_249B76DB49778A79985F7E953CDD60BD(enum class EFortDialogResult Result, class FName ResultName)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "DialogResult_249B76DB49778A79985F7E953CDD60BD");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_DialogResult_249B76DB49778A79985F7E953CDD60BD_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "DialogResult_249B76DB49778A79985F7E953CDD60BD");
+
+	Params::UBladeMenu_MainMenu_C_DialogResult_249B76DB49778A79985F7E953CDD60BD_Params Parms{};
 
 	Parms.Result = Result;
 	Parms.ResultName = ResultName;
@@ -622,9 +686,12 @@ void UBladeMenu_MainMenu_C::DialogResult_249B76DB49778A79985F7E953CDD60BD(enum c
 
 void UBladeMenu_MainMenu_C::OnComplete_A6D8547844A6293BDF92C6BE7D0DFBD4(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_A6D8547844A6293BDF92C6BE7D0DFBD4");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnComplete_A6D8547844A6293BDF92C6BE7D0DFBD4_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_A6D8547844A6293BDF92C6BE7D0DFBD4");
+
+	Params::UBladeMenu_MainMenu_C_OnComplete_A6D8547844A6293BDF92C6BE7D0DFBD4_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -640,9 +707,12 @@ void UBladeMenu_MainMenu_C::OnComplete_A6D8547844A6293BDF92C6BE7D0DFBD4(class UU
 
 void UBladeMenu_MainMenu_C::OnComplete_68346168454CE4BD30A1459D7C362A80(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_68346168454CE4BD30A1459D7C362A80");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnComplete_68346168454CE4BD30A1459D7C362A80_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_68346168454CE4BD30A1459D7C362A80");
+
+	Params::UBladeMenu_MainMenu_C_OnComplete_68346168454CE4BD30A1459D7C362A80_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -658,9 +728,12 @@ void UBladeMenu_MainMenu_C::OnComplete_68346168454CE4BD30A1459D7C362A80(class UU
 
 void UBladeMenu_MainMenu_C::OnComplete_06E498CF409465D990D12C97DC0A19FB(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_06E498CF409465D990D12C97DC0A19FB");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnComplete_06E498CF409465D990D12C97DC0A19FB_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_06E498CF409465D990D12C97DC0A19FB");
+
+	Params::UBladeMenu_MainMenu_C_OnComplete_06E498CF409465D990D12C97DC0A19FB_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -676,9 +749,12 @@ void UBladeMenu_MainMenu_C::OnComplete_06E498CF409465D990D12C97DC0A19FB(class UU
 
 void UBladeMenu_MainMenu_C::OnComplete_9705B2DA4E1935041A94D1BCE262B043(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_9705B2DA4E1935041A94D1BCE262B043");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnComplete_9705B2DA4E1935041A94D1BCE262B043_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_9705B2DA4E1935041A94D1BCE262B043");
+
+	Params::UBladeMenu_MainMenu_C_OnComplete_9705B2DA4E1935041A94D1BCE262B043_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -694,9 +770,12 @@ void UBladeMenu_MainMenu_C::OnComplete_9705B2DA4E1935041A94D1BCE262B043(class UU
 
 void UBladeMenu_MainMenu_C::OnComplete_DB4AEC7B48BCA8595C98A8AD430E3ECC(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_DB4AEC7B48BCA8595C98A8AD430E3ECC");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnComplete_DB4AEC7B48BCA8595C98A8AD430E3ECC_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_DB4AEC7B48BCA8595C98A8AD430E3ECC");
+
+	Params::UBladeMenu_MainMenu_C_OnComplete_DB4AEC7B48BCA8595C98A8AD430E3ECC_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -712,9 +791,12 @@ void UBladeMenu_MainMenu_C::OnComplete_DB4AEC7B48BCA8595C98A8AD430E3ECC(class UU
 
 void UBladeMenu_MainMenu_C::OnComplete_713FC70C4ABDCB2B10F83992B0F2CFBA(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_713FC70C4ABDCB2B10F83992B0F2CFBA");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnComplete_713FC70C4ABDCB2B10F83992B0F2CFBA_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_713FC70C4ABDCB2B10F83992B0F2CFBA");
+
+	Params::UBladeMenu_MainMenu_C_OnComplete_713FC70C4ABDCB2B10F83992B0F2CFBA_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -730,9 +812,12 @@ void UBladeMenu_MainMenu_C::OnComplete_713FC70C4ABDCB2B10F83992B0F2CFBA(class UU
 
 void UBladeMenu_MainMenu_C::OnComplete_5ACD562A46D3600D9E96DD93D9BA79CB(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_5ACD562A46D3600D9E96DD93D9BA79CB");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnComplete_5ACD562A46D3600D9E96DD93D9BA79CB_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_5ACD562A46D3600D9E96DD93D9BA79CB");
+
+	Params::UBladeMenu_MainMenu_C_OnComplete_5ACD562A46D3600D9E96DD93D9BA79CB_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -748,9 +833,12 @@ void UBladeMenu_MainMenu_C::OnComplete_5ACD562A46D3600D9E96DD93D9BA79CB(class UU
 
 void UBladeMenu_MainMenu_C::OnComplete_5E4638054E1B5D43CC83EA89C54063C9(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_5E4638054E1B5D43CC83EA89C54063C9");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnComplete_5E4638054E1B5D43CC83EA89C54063C9_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_5E4638054E1B5D43CC83EA89C54063C9");
+
+	Params::UBladeMenu_MainMenu_C_OnComplete_5E4638054E1B5D43CC83EA89C54063C9_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -766,9 +854,12 @@ void UBladeMenu_MainMenu_C::OnComplete_5E4638054E1B5D43CC83EA89C54063C9(class UU
 
 void UBladeMenu_MainMenu_C::OnComplete_C40B546F4D559C0DDE942C8D05981EC0(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_C40B546F4D559C0DDE942C8D05981EC0");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnComplete_C40B546F4D559C0DDE942C8D05981EC0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_C40B546F4D559C0DDE942C8D05981EC0");
+
+	Params::UBladeMenu_MainMenu_C_OnComplete_C40B546F4D559C0DDE942C8D05981EC0_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -784,9 +875,12 @@ void UBladeMenu_MainMenu_C::OnComplete_C40B546F4D559C0DDE942C8D05981EC0(class UU
 
 void UBladeMenu_MainMenu_C::OnComplete_E1DA5E5449DFBCC127E4789768A15824(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_E1DA5E5449DFBCC127E4789768A15824");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnComplete_E1DA5E5449DFBCC127E4789768A15824_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_E1DA5E5449DFBCC127E4789768A15824");
+
+	Params::UBladeMenu_MainMenu_C_OnComplete_E1DA5E5449DFBCC127E4789768A15824_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -802,9 +896,12 @@ void UBladeMenu_MainMenu_C::OnComplete_E1DA5E5449DFBCC127E4789768A15824(class UU
 
 void UBladeMenu_MainMenu_C::OnComplete_3602692F4ADF61C0F3DB968BD3E6C0DB(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_3602692F4ADF61C0F3DB968BD3E6C0DB");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnComplete_3602692F4ADF61C0F3DB968BD3E6C0DB_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_3602692F4ADF61C0F3DB968BD3E6C0DB");
+
+	Params::UBladeMenu_MainMenu_C_OnComplete_3602692F4ADF61C0F3DB968BD3E6C0DB_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -820,9 +917,12 @@ void UBladeMenu_MainMenu_C::OnComplete_3602692F4ADF61C0F3DB968BD3E6C0DB(class UU
 
 void UBladeMenu_MainMenu_C::OnComplete_9D58A4A2427B684258DCD2B74D16F33D(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_9D58A4A2427B684258DCD2B74D16F33D");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnComplete_9D58A4A2427B684258DCD2B74D16F33D_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_9D58A4A2427B684258DCD2B74D16F33D");
+
+	Params::UBladeMenu_MainMenu_C_OnComplete_9D58A4A2427B684258DCD2B74D16F33D_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -838,9 +938,12 @@ void UBladeMenu_MainMenu_C::OnComplete_9D58A4A2427B684258DCD2B74D16F33D(class UU
 
 void UBladeMenu_MainMenu_C::OnComplete_1B16FD0540EB01F71EE4CB9487DE008F(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_1B16FD0540EB01F71EE4CB9487DE008F");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnComplete_1B16FD0540EB01F71EE4CB9487DE008F_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_1B16FD0540EB01F71EE4CB9487DE008F");
+
+	Params::UBladeMenu_MainMenu_C_OnComplete_1B16FD0540EB01F71EE4CB9487DE008F_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -856,9 +959,12 @@ void UBladeMenu_MainMenu_C::OnComplete_1B16FD0540EB01F71EE4CB9487DE008F(class UU
 
 void UBladeMenu_MainMenu_C::OnComplete_DBC095954402329D4BF52AB37EE431FE(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_DBC095954402329D4BF52AB37EE431FE");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnComplete_DBC095954402329D4BF52AB37EE431FE_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_DBC095954402329D4BF52AB37EE431FE");
+
+	Params::UBladeMenu_MainMenu_C_OnComplete_DBC095954402329D4BF52AB37EE431FE_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -874,9 +980,12 @@ void UBladeMenu_MainMenu_C::OnComplete_DBC095954402329D4BF52AB37EE431FE(class UU
 
 void UBladeMenu_MainMenu_C::OnComplete_367A73034FD99CE63E29E3AE4D9152D9(class UUserWidget* UserWidget)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_367A73034FD99CE63E29E3AE4D9152D9");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnComplete_367A73034FD99CE63E29E3AE4D9152D9_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnComplete_367A73034FD99CE63E29E3AE4D9152D9");
+
+	Params::UBladeMenu_MainMenu_C_OnComplete_367A73034FD99CE63E29E3AE4D9152D9_Params Parms{};
 
 	Parms.UserWidget = UserWidget;
 
@@ -892,9 +1001,12 @@ void UBladeMenu_MainMenu_C::OnComplete_367A73034FD99CE63E29E3AE4D9152D9(class UU
 
 void UBladeMenu_MainMenu_C::BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_1184_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -910,9 +1022,12 @@ void UBladeMenu_MainMenu_C::BndEvt__ButtonCredits_K2Node_ComponentBoundEvent_118
 
 void UBladeMenu_MainMenu_C::BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -928,9 +1043,12 @@ void UBladeMenu_MainMenu_C::BndEvt__LogoutButton_K2Node_ComponentBoundEvent_434_
 
 void UBladeMenu_MainMenu_C::BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -946,9 +1064,12 @@ void UBladeMenu_MainMenu_C::BndEvt__Legal_K2Node_ComponentBoundEvent_146_CommonB
 
 void UBladeMenu_MainMenu_C::BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_321_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -964,9 +1085,12 @@ void UBladeMenu_MainMenu_C::BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEven
 
 void UBladeMenu_MainMenu_C::BndEvt__ButtonSupport_K2Node_ComponentBoundEvent_281_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__ButtonSupport_K2Node_ComponentBoundEvent_281_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__ButtonSupport_K2Node_ComponentBoundEvent_281_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__ButtonSupport_K2Node_ComponentBoundEvent_281_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__ButtonSupport_K2Node_ComponentBoundEvent_281_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -982,9 +1106,12 @@ void UBladeMenu_MainMenu_C::BndEvt__ButtonSupport_K2Node_ComponentBoundEvent_281
 
 void UBladeMenu_MainMenu_C::BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_30_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1000,9 +1127,12 @@ void UBladeMenu_MainMenu_C::BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEven
 
 void UBladeMenu_MainMenu_C::BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__Feedback_K2Node_ComponentBoundEvent_131_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1018,9 +1148,12 @@ void UBladeMenu_MainMenu_C::BndEvt__Feedback_K2Node_ComponentBoundEvent_131_Comm
 
 void UBladeMenu_MainMenu_C::BndEvt__Challenges_K2Node_ComponentBoundEvent_48_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__Challenges_K2Node_ComponentBoundEvent_48_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__Challenges_K2Node_ComponentBoundEvent_48_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__Challenges_K2Node_ComponentBoundEvent_48_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__Challenges_K2Node_ComponentBoundEvent_48_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1036,9 +1169,12 @@ void UBladeMenu_MainMenu_C::BndEvt__Challenges_K2Node_ComponentBoundEvent_48_Com
 
 void UBladeMenu_MainMenu_C::BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1054,9 +1190,12 @@ void UBladeMenu_MainMenu_C::BndEvt__SettingsButton_K2Node_ComponentBoundEvent_13
 
 void UBladeMenu_MainMenu_C::BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1072,9 +1211,12 @@ void UBladeMenu_MainMenu_C::BndEvt__ButtonNews_K2Node_ComponentBoundEvent_376_Co
 
 void UBladeMenu_MainMenu_C::BndEvt__TeamSelectButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__TeamSelectButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__TeamSelectButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__TeamSelectButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__TeamSelectButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1090,9 +1232,12 @@ void UBladeMenu_MainMenu_C::BndEvt__TeamSelectButton_K2Node_ComponentBoundEvent_
 
 void UBladeMenu_MainMenu_C::BndEvt__RespawnButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__RespawnButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__RespawnButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__RespawnButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__RespawnButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1108,9 +1253,12 @@ void UBladeMenu_MainMenu_C::BndEvt__RespawnButton_K2Node_ComponentBoundEvent_1_C
 
 void UBladeMenu_MainMenu_C::BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1126,9 +1274,12 @@ void UBladeMenu_MainMenu_C::BndEvt__ExitButton_K2Node_ComponentBoundEvent_1_Comm
 
 void UBladeMenu_MainMenu_C::BndEvt__ButtonBacchusHelp_K2Node_ComponentBoundEvent_294_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__ButtonBacchusHelp_K2Node_ComponentBoundEvent_294_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__ButtonBacchusHelp_K2Node_ComponentBoundEvent_294_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__ButtonBacchusHelp_K2Node_ComponentBoundEvent_294_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__ButtonBacchusHelp_K2Node_ComponentBoundEvent_294_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1143,12 +1294,14 @@ void UBladeMenu_MainMenu_C::BndEvt__ButtonBacchusHelp_K2Node_ComponentBoundEvent
 
 void UBladeMenu_MainMenu_C::Construct()
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1160,9 +1313,12 @@ void UBladeMenu_MainMenu_C::Construct()
 
 void UBladeMenu_MainMenu_C::BndEvt__ButtonHUDLayoutTool_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__ButtonHUDLayoutTool_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__ButtonHUDLayoutTool_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__ButtonHUDLayoutTool_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__ButtonHUDLayoutTool_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1177,12 +1333,14 @@ void UBladeMenu_MainMenu_C::BndEvt__ButtonHUDLayoutTool_K2Node_ComponentBoundEve
 
 void UBladeMenu_MainMenu_C::BndEvt__MinigameButtons_K2Node_ComponentBoundEvent_3_StartButtonClicked__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__MinigameButtons_K2Node_ComponentBoundEvent_3_StartButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__MinigameButtons_K2Node_ComponentBoundEvent_3_StartButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__MinigameButtons_K2Node_ComponentBoundEvent_3_StartButtonClicked__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1193,12 +1351,14 @@ void UBladeMenu_MainMenu_C::BndEvt__MinigameButtons_K2Node_ComponentBoundEvent_3
 
 void UBladeMenu_MainMenu_C::BndEvt__MinigameButtons_K2Node_ComponentBoundEvent_4_EndButtonClicked__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__MinigameButtons_K2Node_ComponentBoundEvent_4_EndButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__MinigameButtons_K2Node_ComponentBoundEvent_4_EndButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__MinigameButtons_K2Node_ComponentBoundEvent_4_EndButtonClicked__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1209,12 +1369,14 @@ void UBladeMenu_MainMenu_C::BndEvt__MinigameButtons_K2Node_ComponentBoundEvent_4
 
 void UBladeMenu_MainMenu_C::UpdateMinigameButtons()
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "UpdateMinigameButtons");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_UpdateMinigameButtons_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "UpdateMinigameButtons");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1225,12 +1387,14 @@ void UBladeMenu_MainMenu_C::UpdateMinigameButtons()
 
 void UBladeMenu_MainMenu_C::Bind_To_State_Change_Delegate()
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "Bind To State Change Delegate");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_Bind_To_State_Change_Delegate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "Bind To State Change Delegate");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1243,9 +1407,12 @@ void UBladeMenu_MainMenu_C::Bind_To_State_Change_Delegate()
 
 void UBladeMenu_MainMenu_C::OnMinigameStateChanged(class AFortMinigame* Minigame, enum class EFortMinigameState MinigameState)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnMinigameStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnMinigameStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnMinigameStateChanged");
+
+	Params::UBladeMenu_MainMenu_C_OnMinigameStateChanged_Params Parms{};
 
 	Parms.Minigame = Minigame;
 	Parms.MinigameState = MinigameState;
@@ -1261,12 +1428,14 @@ void UBladeMenu_MainMenu_C::OnMinigameStateChanged(class AFortMinigame* Minigame
 
 void UBladeMenu_MainMenu_C::OnOpened()
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnOpened");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnOpened_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnOpened");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1277,12 +1446,14 @@ void UBladeMenu_MainMenu_C::OnOpened()
 
 void UBladeMenu_MainMenu_C::OnClosed()
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnClosed");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnClosed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnClosed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1293,12 +1464,14 @@ void UBladeMenu_MainMenu_C::OnClosed()
 
 void UBladeMenu_MainMenu_C::OnCloseAnimationFinished()
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnCloseAnimationFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnCloseAnimationFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnCloseAnimationFinished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1310,9 +1483,12 @@ void UBladeMenu_MainMenu_C::OnCloseAnimationFinished()
 
 void UBladeMenu_MainMenu_C::BndEvt__ParentalControlsButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__ParentalControlsButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__ParentalControlsButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__ParentalControlsButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__ParentalControlsButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1328,9 +1504,12 @@ void UBladeMenu_MainMenu_C::BndEvt__ParentalControlsButton_K2Node_ComponentBound
 
 void UBladeMenu_MainMenu_C::BndEvt__NewSettingsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__NewSettingsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__NewSettingsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__NewSettingsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__NewSettingsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1345,12 +1524,14 @@ void UBladeMenu_MainMenu_C::BndEvt__NewSettingsButton_K2Node_ComponentBoundEvent
 
 void UBladeMenu_MainMenu_C::OnInitialized()
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnInitialized");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnInitialized_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnInitialized");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1362,9 +1543,12 @@ void UBladeMenu_MainMenu_C::OnInitialized()
 
 void UBladeMenu_MainMenu_C::BndEvt__CheatsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__CheatsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__CheatsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__CheatsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__CheatsButton_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1380,9 +1564,12 @@ void UBladeMenu_MainMenu_C::BndEvt__CheatsButton_K2Node_ComponentBoundEvent_6_Co
 
 void UBladeMenu_MainMenu_C::BndEvt__Button_BackToHub_1_K2Node_ComponentBoundEvent_10_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__Button_BackToHub_1_K2Node_ComponentBoundEvent_10_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__Button_BackToHub_1_K2Node_ComponentBoundEvent_10_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__Button_BackToHub_1_K2Node_ComponentBoundEvent_10_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__Button_BackToHub_1_K2Node_ComponentBoundEvent_10_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1398,9 +1585,12 @@ void UBladeMenu_MainMenu_C::BndEvt__Button_BackToHub_1_K2Node_ComponentBoundEven
 
 void UBladeMenu_MainMenu_C::OnOpenSettings(class FName TabNameID)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnOpenSettings");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_OnOpenSettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "OnOpenSettings");
+
+	Params::UBladeMenu_MainMenu_C_OnOpenSettings_Params Parms{};
 
 	Parms.TabNameID = TabNameID;
 
@@ -1416,9 +1606,12 @@ void UBladeMenu_MainMenu_C::OnOpenSettings(class FName TabNameID)
 
 void UBladeMenu_MainMenu_C::BndEvt__Button_Store_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__Button_Store_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_BndEvt__Button_Store_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "BndEvt__Button_Store_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
+
+	Params::UBladeMenu_MainMenu_C_BndEvt__Button_Store_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1641,9 +1834,12 @@ void UBladeMenu_MainMenu_C::BndEvt__Button_Store_K2Node_ComponentBoundEvent_8_Co
 
 void UBladeMenu_MainMenu_C::ExecuteUbergraph_BladeMenu_MainMenu(int32 EntryPoint, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, class UUserWidget* K2Node_CustomEvent_UserWidget_14, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUserWidget* Temp_object_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UUserWidget* K2Node_CustomEvent_UserWidget_13, class UUserWidget* Temp_object_Variable_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UUserWidget* K2Node_CustomEvent_UserWidget_12, class UUserWidget* Temp_object_Variable_2, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, class UUserWidget* K2Node_CustomEvent_UserWidget_11, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class UUserWidget* Temp_object_Variable_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, class UUserWidget* K2Node_CustomEvent_UserWidget_10, class UUserWidget* Temp_object_Variable_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, class UUserWidget* K2Node_CustomEvent_UserWidget_9, class UUserWidget* Temp_object_Variable_5, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, class UUserWidget* K2Node_CustomEvent_UserWidget_8, class UUserWidget* Temp_object_Variable_6, class UHUDLayoutToolContext* CallFunc_GetContext_ReturnValue_2, class UUserWidget* K2Node_CustomEvent_UserWidget_7, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, class UUserWidget* Temp_object_Variable_7, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_8, class UUserWidget* K2Node_CustomEvent_UserWidget_6, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_9, class UUserWidget* Temp_object_Variable_8, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_10, class UUserWidget* K2Node_CustomEvent_UserWidget_5, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_11, class UUserWidget* Temp_object_Variable_9, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_12, class UUserWidget* K2Node_CustomEvent_UserWidget_4, class UUserWidget* Temp_object_Variable_10, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_3, bool Temp_bool_Variable_1, bool CallFunc_IsInZone_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_2, bool CallFunc_Not_PreBool_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_13, class UUserWidget* K2Node_CustomEvent_UserWidget_3, class UUserWidget* Temp_object_Variable_11, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_14, class UCommonActivatablePanel* K2Node_DynamicCast_AsCommon_Activatable_Panel, bool K2Node_DynamicCast_bSuccess, class UUserWidget* K2Node_CustomEvent_UserWidget_2, class UUserWidget* Temp_object_Variable_12, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, class UUserWidget* K2Node_CustomEvent_UserWidget_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_15, class UUserWidget* Temp_object_Variable_13, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_16, class UUserWidget* K2Node_CustomEvent_UserWidget, class UUserWidget* Temp_object_Variable_14, bool Temp_bool_Variable_3, enum class ESlateVisibility Temp_byte_Variable_6, enum class ESlateVisibility Temp_byte_Variable_7, class FName Temp_name_Variable, enum class ESlateVisibility K2Node_Select_Default, class UCommonButton* K2Node_ComponentBoundEvent_Button_19, class UCommonButton* K2Node_ComponentBoundEvent_Button_18, enum class ESlateVisibility Temp_byte_Variable_8, enum class ESlateVisibility Temp_byte_Variable_9, class UCommonButton* K2Node_ComponentBoundEvent_Button_17, bool Temp_bool_Variable_4, class UCommonButton* K2Node_ComponentBoundEvent_Button_16, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_15, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_14, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_2, bool CallFunc_GetIsPlayerReportingFlowEnabled_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_13, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_3, enum class ESlateVisibility K2Node_Select_Default_1, class UFortHUDContext* CallFunc_GetContext_ReturnValue_4, bool CallFunc_ShowWebURL_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_12, enum class EFortDialogResult K2Node_CustomEvent_Result, class FName K2Node_CustomEvent_ResultName, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_11, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_17, class UCommonButton* K2Node_ComponentBoundEvent_Button_10, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_5, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_3, bool CallFunc_IsInZone_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_9, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_4, class UCommonButton* K2Node_ComponentBoundEvent_Button_8, class UCommonButton* K2Node_ComponentBoundEvent_Button_7, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_5, class UCommonButton* K2Node_ComponentBoundEvent_Button_6, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_6, class UCommonButton* K2Node_ComponentBoundEvent_Button_5, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_6, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue, bool CallFunc_IsValid_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_7, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue_2, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_4, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue_4, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue_5, bool CallFunc_IsValid_ReturnValue_5, bool CallFunc_IsValid_ReturnValue_6, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue_6, bool CallFunc_IsValid_ReturnValue_7, class AMinigameSettingsMachine_C* K2Node_DynamicCast_AsMinigame_Settings_Machine, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsValid_ReturnValue_8, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_7, class AMinigameSettingsMachine_C* K2Node_DynamicCast_AsMinigame_Settings_Machine_1, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsValid_ReturnValue_9, enum class EFortDialogResult Temp_byte_Variable_10, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_8, bool K2Node_SwitchEnum_CmpSuccess, class AFortMinigame* K2Node_CustomEvent_Minigame, enum class EFortMinigameState K2Node_CustomEvent_MinigameState, bool CallFunc_IsValid_ReturnValue_10, class AMinigameSettingsMachine_C* K2Node_DynamicCast_AsMinigame_Settings_Machine_2, bool K2Node_DynamicCast_bSuccess_3, class AFortMinigame* CallFunc_GetCurrentMinigame_Minigame, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue_7, bool CallFunc_IsValid_ReturnValue_11, bool CallFunc_IsValid_ReturnValue_12, class FName Temp_name_Variable_1, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_8, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue_8, bool CallFunc_IsValid_ReturnValue_13, class UCommonButton* K2Node_ComponentBoundEvent_Button_4, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_9, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_10, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue_9, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_4, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_IsValid_ReturnValue_14, enum class ESlateVisibility K2Node_Select_Default_2, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue_1, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_5, bool CallFunc_GetNewSettingsScreenEnabled_ReturnValue, bool CallFunc_IsValid_ReturnValue_15, enum class ESlateVisibility K2Node_Select_Default_3, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue_10, enum class EFortDialogResult K2Node_CustomEvent_Result_1, class FName K2Node_CustomEvent_ResultName_1, bool CallFunc_IsValid_ReturnValue_16, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_11, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue_11, bool CallFunc_IsValid_ReturnValue_17, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float CallFunc_PauseAnimation_ReturnValue, bool CallFunc_IsAnimationPlaying_ReturnValue, float CallFunc_GetEndTime_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, float CallFunc_PauseAnimation_ReturnValue_1, bool CallFunc_IsAnimationPlaying_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, float CallFunc_GetEndTime_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_12, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue_12, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_6, bool CallFunc_IsShippingBuild_ReturnValue, bool CallFunc_IsValid_ReturnValue_18, enum class ESlateVisibility K2Node_Select_Default_4, bool CallFunc_IsMobileGame_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_13, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_18, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess_4, enum class EFortDialogResult Temp_byte_Variable_11, class FName K2Node_Event_TabNameId, bool K2Node_SwitchEnum_CmpSuccess_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_14, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue_13, bool CallFunc_IsValid_ReturnValue_19, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_7, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_15, bool CallFunc_ShouldShowMOTDNews_ReturnValue, class UFortAsyncAction_CreateWidgetAsync* CallFunc_CreateWidgetAsync_ReturnValue_14, bool CallFunc_IsValid_ReturnValue_20, bool CallFunc_IsMobileGame_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BladeMenu_MainMenu_C", "ExecuteUbergraph_BladeMenu_MainMenu");
+	static class UFunction* Func = nullptr;
 
-	Params::UBladeMenu_MainMenu_C_ExecuteUbergraph_BladeMenu_MainMenu_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BladeMenu_MainMenu_C", "ExecuteUbergraph_BladeMenu_MainMenu");
+
+	Params::UBladeMenu_MainMenu_C_ExecuteUbergraph_BladeMenu_MainMenu_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetRuntimeOptions_ReturnValue = CallFunc_GetRuntimeOptions_ReturnValue;
@@ -1860,6 +2056,4 @@ void UBladeMenu_MainMenu_C::ExecuteUbergraph_BladeMenu_MainMenu(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

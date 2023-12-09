@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass WinterQuestPresentTag.WinterQuestPresentTag_C
+// (None)
+
+class UClass* UWinterQuestPresentTag_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WinterQuestPresentTag_C");
+
+	return Clss;
+}
+
+
+// WinterQuestPresentTag_C WinterQuestPresentTag.Default__WinterQuestPresentTag_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UWinterQuestPresentTag_C* UWinterQuestPresentTag_C::GetDefaultObj()
+{
+	static class UWinterQuestPresentTag_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWinterQuestPresentTag_C*>(UWinterQuestPresentTag_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function WinterQuestPresentTag.WinterQuestPresentTag_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UWinterQuestPresentTag_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("WinterQuestPresentTag_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestPresentTag_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestPresentTag_C", "PreConstruct");
+
+	Params::UWinterQuestPresentTag_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -39,12 +67,14 @@ void UWinterQuestPresentTag_C::PreConstruct(bool IsDesignTime)
 
 void UWinterQuestPresentTag_C::Construct()
 {
-	static auto Func = Class->GetFunction("WinterQuestPresentTag_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestPresentTag_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestPresentTag_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +86,12 @@ void UWinterQuestPresentTag_C::Construct()
 
 void UWinterQuestPresentTag_C::OnSetupCharacterNameTag(struct FLinearColor& CharacterName)
 {
-	static auto Func = Class->GetFunction("WinterQuestPresentTag_C", "OnSetupCharacterNameTag");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestPresentTag_C_OnSetupCharacterNameTag_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestPresentTag_C", "OnSetupCharacterNameTag");
+
+	Params::UWinterQuestPresentTag_C_OnSetupCharacterNameTag_Params Parms{};
 
 	Parms.CharacterName = CharacterName;
 
@@ -102,17 +135,20 @@ void UWinterQuestPresentTag_C::OnSetupCharacterNameTag(struct FLinearColor& Char
 // bool                               CallFunc_LinearColor_IsNearEqual_ReturnValue_2                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_LinearColor_IsNearEqual_ReturnValue_3                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_LinearColor_IsNearEqual_ReturnValue_4                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default_3                                          ()
-// class FText                        K2Node_Select_Default_4                                          ()
-// class FText                        K2Node_Select_Default_5                                          ()
-// class FText                        K2Node_Select_Default_6                                          ()
-// class FText                        K2Node_Select_Default_7                                          ()
+// class FText                        K2Node_Select_Default_3                                          (None)
+// class FText                        K2Node_Select_Default_4                                          (None)
+// class FText                        K2Node_Select_Default_5                                          (None)
+// class FText                        K2Node_Select_Default_6                                          (None)
+// class FText                        K2Node_Select_Default_7                                          (None)
 
 void UWinterQuestPresentTag_C::ExecuteUbergraph_WinterQuestPresentTag(int32 EntryPoint, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, const struct FLinearColor& Temp_struct_Variable_2, int32 Temp_int_Variable, float Temp_float_Variable, float Temp_float_Variable_1, float Temp_float_Variable_2, int32 Temp_int_Variable_1, float Temp_float_Variable_3, float Temp_float_Variable_4, float Temp_float_Variable_5, float K2Node_Select_Default, float K2Node_Select_Default_1, bool Temp_bool_Variable, const struct FMargin& K2Node_MakeStruct_Margin, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, bool Temp_bool_Variable_3, bool Temp_bool_Variable_4, bool K2Node_Event_IsDesignTime, int32 CallFunc_RandomInteger_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, int32 Temp_int_Variable_2, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue, const struct FLinearColor& K2Node_Select_Default_2, const struct FLinearColor& K2Node_Event_CharacterName, bool CallFunc_LinearColor_IsNearEqual_ReturnValue, bool CallFunc_LinearColor_IsNearEqual_ReturnValue_1, bool CallFunc_LinearColor_IsNearEqual_ReturnValue_2, bool CallFunc_LinearColor_IsNearEqual_ReturnValue_3, bool CallFunc_LinearColor_IsNearEqual_ReturnValue_4, class FText K2Node_Select_Default_3, class FText K2Node_Select_Default_4, class FText K2Node_Select_Default_5, class FText K2Node_Select_Default_6, class FText K2Node_Select_Default_7)
 {
-	static auto Func = Class->GetFunction("WinterQuestPresentTag_C", "ExecuteUbergraph_WinterQuestPresentTag");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestPresentTag_C", "ExecuteUbergraph_WinterQuestPresentTag");
+
+	Params::UWinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
@@ -158,6 +194,4 @@ void UWinterQuestPresentTag_C::ExecuteUbergraph_WinterQuestPresentTag(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ChallengeRewardTrackEntry.ChallengeRewardTrackEntry_C
+// (None)
+
+class UClass* UChallengeRewardTrackEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChallengeRewardTrackEntry_C");
+
+	return Clss;
+}
+
+
+// ChallengeRewardTrackEntry_C ChallengeRewardTrackEntry.Default__ChallengeRewardTrackEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChallengeRewardTrackEntry_C* UChallengeRewardTrackEntry_C::GetDefaultObj()
+{
+	static class UChallengeRewardTrackEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChallengeRewardTrackEntry_C*>(UChallengeRewardTrackEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ChallengeRewardTrackEntry.ChallengeRewardTrackEntry_C.SetIsInactive
@@ -28,9 +53,12 @@ namespace SDK
 
 void UChallengeRewardTrackEntry_C::SetIsInactive(class UImage* MaterialBrush, bool IsInactive, bool Temp_bool_Variable, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, float Temp_float_Variable, float Temp_float_Variable_1, float K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "SetIsInactive");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeRewardTrackEntry_C_SetIsInactive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "SetIsInactive");
+
+	Params::UChallengeRewardTrackEntry_C_SetIsInactive_Params Parms{};
 
 	Parms.MaterialBrush = MaterialBrush;
 	Parms.IsInactive = IsInactive;
@@ -58,9 +86,12 @@ void UChallengeRewardTrackEntry_C::SetIsInactive(class UImage* MaterialBrush, bo
 
 void UChallengeRewardTrackEntry_C::SetIsPrestige(class UImage* MaterialBrush, bool ViewingPrestige, bool Temp_bool_Variable, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, float Temp_float_Variable, float Temp_float_Variable_1, float K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "SetIsPrestige");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeRewardTrackEntry_C_SetIsPrestige_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "SetIsPrestige");
+
+	Params::UChallengeRewardTrackEntry_C_SetIsPrestige_Params Parms{};
 
 	Parms.MaterialBrush = MaterialBrush;
 	Parms.ViewingPrestige = ViewingPrestige;
@@ -81,12 +112,14 @@ void UChallengeRewardTrackEntry_C::SetIsPrestige(class UImage* MaterialBrush, bo
 
 void UChallengeRewardTrackEntry_C::Construct()
 {
-	static auto Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeRewardTrackEntry_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -98,9 +131,12 @@ void UChallengeRewardTrackEntry_C::Construct()
 
 void UChallengeRewardTrackEntry_C::NextRewardToEarn(bool bNext)
 {
-	static auto Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "NextRewardToEarn");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeRewardTrackEntry_C_NextRewardToEarn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "NextRewardToEarn");
+
+	Params::UChallengeRewardTrackEntry_C_NextRewardToEarn_Params Parms{};
 
 	Parms.bNext = bNext;
 
@@ -116,9 +152,12 @@ void UChallengeRewardTrackEntry_C::NextRewardToEarn(bool bNext)
 
 void UChallengeRewardTrackEntry_C::CompletedNextNode(bool bAnimate)
 {
-	static auto Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "CompletedNextNode");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeRewardTrackEntry_C_CompletedNextNode_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "CompletedNextNode");
+
+	Params::UChallengeRewardTrackEntry_C_CompletedNextNode_Params Parms{};
 
 	Parms.bAnimate = bAnimate;
 
@@ -133,12 +172,14 @@ void UChallengeRewardTrackEntry_C::CompletedNextNode(bool bAnimate)
 
 void UChallengeRewardTrackEntry_C::SetToDefaultState()
 {
-	static auto Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "SetToDefaultState");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeRewardTrackEntry_C_SetToDefaultState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "SetToDefaultState");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -151,9 +192,12 @@ void UChallengeRewardTrackEntry_C::SetToDefaultState()
 
 void UChallengeRewardTrackEntry_C::CompletedCurrentNode(bool bAnimate, bool LastReward)
 {
-	static auto Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "CompletedCurrentNode");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeRewardTrackEntry_C_CompletedCurrentNode_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "CompletedCurrentNode");
+
+	Params::UChallengeRewardTrackEntry_C_CompletedCurrentNode_Params Parms{};
 
 	Parms.bAnimate = bAnimate;
 	Parms.LastReward = LastReward;
@@ -169,12 +213,14 @@ void UChallengeRewardTrackEntry_C::CompletedCurrentNode(bool bAnimate, bool Last
 
 void UChallengeRewardTrackEntry_C::SetAsCurrentPreviewItem()
 {
-	static auto Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "SetAsCurrentPreviewItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeRewardTrackEntry_C_SetAsCurrentPreviewItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "SetAsCurrentPreviewItem");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -185,12 +231,14 @@ void UChallengeRewardTrackEntry_C::SetAsCurrentPreviewItem()
 
 void UChallengeRewardTrackEntry_C::ClearPreviewSelection()
 {
-	static auto Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "ClearPreviewSelection");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeRewardTrackEntry_C_ClearPreviewSelection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "ClearPreviewSelection");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -202,9 +250,12 @@ void UChallengeRewardTrackEntry_C::ClearPreviewSelection()
 
 void UChallengeRewardTrackEntry_C::StyleChange(bool bViewingPrestige)
 {
-	static auto Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "StyleChange");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeRewardTrackEntry_C_StyleChange_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "StyleChange");
+
+	Params::UChallengeRewardTrackEntry_C_StyleChange_Params Parms{};
 
 	Parms.bViewingPrestige = bViewingPrestige;
 
@@ -220,9 +271,12 @@ void UChallengeRewardTrackEntry_C::StyleChange(bool bViewingPrestige)
 
 void UChallengeRewardTrackEntry_C::SetLastNodeInTrack(bool bIsLast)
 {
-	static auto Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "SetLastNodeInTrack");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeRewardTrackEntry_C_SetLastNodeInTrack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "SetLastNodeInTrack");
+
+	Params::UChallengeRewardTrackEntry_C_SetLastNodeInTrack_Params Parms{};
 
 	Parms.bIsLast = bIsLast;
 
@@ -268,9 +322,12 @@ void UChallengeRewardTrackEntry_C::SetLastNodeInTrack(bool bIsLast)
 
 void UChallengeRewardTrackEntry_C::ExecuteUbergraph_ChallengeRewardTrackEntry(int32 EntryPoint, bool Temp_bool_Variable, bool Temp_bool_Variable_1, float Temp_float_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable_2, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable_1, bool K2Node_Event_bNext, bool K2Node_Event_bAnimate_1, bool K2Node_Event_bAnimate, bool K2Node_Event_LastReward, bool K2Node_Event_bViewingPrestige, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default, class UMissionRewardEntry_C* K2Node_DynamicCast_AsMission_Reward_Entry, bool K2Node_DynamicCast_bSuccess, class UMissionRewardEntry_C* K2Node_DynamicCast_AsMission_Reward_Entry_1, bool K2Node_DynamicCast_bSuccess_1, class UMissionRewardEntry_C* K2Node_DynamicCast_AsMission_Reward_Entry_2, bool K2Node_DynamicCast_bSuccess_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UMissionRewardEntry_C* K2Node_DynamicCast_AsMission_Reward_Entry_3, bool K2Node_DynamicCast_bSuccess_3, class UMissionRewardEntry_C* K2Node_DynamicCast_AsMission_Reward_Entry_4, bool K2Node_DynamicCast_bSuccess_4, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, bool K2Node_Event_bIsLast, const struct FLinearColor& K2Node_Select_Default_1, float K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "ExecuteUbergraph_ChallengeRewardTrackEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ChallengeRewardTrackEntry_C", "ExecuteUbergraph_ChallengeRewardTrackEntry");
+
+	Params::UChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -310,6 +367,4 @@ void UChallengeRewardTrackEntry_C::ExecuteUbergraph_ChallengeRewardTrackEntry(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

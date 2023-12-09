@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass CreativeIslandLinkEntry.CreativeIslandLinkEntry_C
+// (None)
+
+class UClass* UCreativeIslandLinkEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("CreativeIslandLinkEntry_C");
+
+	return Clss;
+}
+
+
+// CreativeIslandLinkEntry_C CreativeIslandLinkEntry.Default__CreativeIslandLinkEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UCreativeIslandLinkEntry_C* UCreativeIslandLinkEntry_C::GetDefaultObj()
+{
+	static class UCreativeIslandLinkEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UCreativeIslandLinkEntry_C*>(UCreativeIslandLinkEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function CreativeIslandLinkEntry.CreativeIslandLinkEntry_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UCreativeIslandLinkEntry_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkEntry_C", "BP_OnSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkEntry_C_BP_OnSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkEntry_C", "BP_OnSelected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UCreativeIslandLinkEntry_C::BP_OnSelected()
 
 void UCreativeIslandLinkEntry_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkEntry_C", "BP_OnDeselected");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkEntry_C_BP_OnDeselected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkEntry_C", "BP_OnDeselected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -54,9 +83,12 @@ void UCreativeIslandLinkEntry_C::BP_OnDeselected()
 
 void UCreativeIslandLinkEntry_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkEntry_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkEntry_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkEntry_C", "OnListItemObjectSet");
+
+	Params::UCreativeIslandLinkEntry_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -72,9 +104,12 @@ void UCreativeIslandLinkEntry_C::OnListItemObjectSet(class UObject* ListItemObje
 
 void UCreativeIslandLinkEntry_C::BndEvt__SimplePipButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkEntry_C", "BndEvt__SimplePipButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkEntry_C_BndEvt__SimplePipButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkEntry_C", "BndEvt__SimplePipButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
+
+	Params::UCreativeIslandLinkEntry_C_BndEvt__SimplePipButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -93,20 +128,20 @@ void UCreativeIslandLinkEntry_C::BndEvt__SimplePipButton_K2Node_ComponentBoundEv
 // class UObject*                     K2Node_Event_ListItemObject                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortCreativeIslandLink*     K2Node_DynamicCast_AsFort_Creative_Island_Link                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         ()
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_2                         ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_2                         (None)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_TextToUpper_ReturnValue_1                               ()
+// class FText                        CallFunc_TextToUpper_ReturnValue_1                               (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     CallFunc_FindParentWidgetOfType_ReturnValue                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCreativeIslandLinkScreen_C* K2Node_DynamicCast_AsCreative_Island_Link_Screen                 (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -114,9 +149,12 @@ void UCreativeIslandLinkEntry_C::BndEvt__SimplePipButton_K2Node_ComponentBoundEv
 
 void UCreativeIslandLinkEntry_C::ExecuteUbergraph_CreativeIslandLinkEntry(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, class UObject* K2Node_Event_ListItemObject, class UFortCreativeIslandLink* K2Node_DynamicCast_AsFort_Creative_Island_Link, bool K2Node_DynamicCast_bSuccess, class FText CallFunc_Conv_StringToText_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_1, class FText CallFunc_TextToUpper_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_2, bool CallFunc_TextIsEmpty_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, enum class ESlateVisibility K2Node_Select_Default, class FText CallFunc_Format_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UWidget* CallFunc_FindParentWidgetOfType_ReturnValue, class UCreativeIslandLinkScreen_C* K2Node_DynamicCast_AsCreative_Island_Link_Screen, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("CreativeIslandLinkEntry_C", "ExecuteUbergraph_CreativeIslandLinkEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UCreativeIslandLinkEntry_C_ExecuteUbergraph_CreativeIslandLinkEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("CreativeIslandLinkEntry_C", "ExecuteUbergraph_CreativeIslandLinkEntry");
+
+	Params::UCreativeIslandLinkEntry_C_ExecuteUbergraph_CreativeIslandLinkEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -150,6 +188,4 @@ void UCreativeIslandLinkEntry_C::ExecuteUbergraph_CreativeIslandLinkEntry(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

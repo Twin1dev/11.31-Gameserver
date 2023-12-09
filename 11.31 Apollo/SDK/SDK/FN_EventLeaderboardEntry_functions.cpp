@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,43 +12,74 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass EventLeaderboardEntry.EventLeaderboardEntry_C
+// (None)
+
+class UClass* UEventLeaderboardEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EventLeaderboardEntry_C");
+
+	return Clss;
+}
+
+
+// EventLeaderboardEntry_C EventLeaderboardEntry.Default__EventLeaderboardEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UEventLeaderboardEntry_C* UEventLeaderboardEntry_C::GetDefaultObj()
+{
+	static class UEventLeaderboardEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEventLeaderboardEntry_C*>(UEventLeaderboardEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function EventLeaderboardEntry.EventLeaderboardEntry_C.SetTeamDisplayNames
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortEventLeaderboardEntryData*Entry_Data                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_GetNumTeammates_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetTeamDisplayNameText_ReturnValue                      ()
+// class FText                        CallFunc_GetTeamDisplayNameText_ReturnValue                      (None)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<class FString>              CallFunc_GetTeammateDisplayNames_DisplayNames                    (ZeroConstructor, ReferenceParm)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_2                         ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_2                         (None)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_3                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_3                         ()
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_3                         (None)
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_4                           (HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_2                                         (ZeroConstructor, ReferenceParm)
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Format_ReturnValue_2                                    ()
+// class FText                        CallFunc_Format_ReturnValue_2                                    (None)
 // int32                              Temp_int_Variable_1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_1                                          ()
+// class FText                        K2Node_Select_Default_1                                          (None)
 
 void UEventLeaderboardEntry_C::SetTeamDisplayNames(class UFortEventLeaderboardEntryData* Entry_Data, bool Temp_bool_Variable, int32 CallFunc_GetNumTeammates_ReturnValue, class FText CallFunc_GetTeamDisplayNameText_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, TArray<class FString>& CallFunc_GetTeammateDisplayNames_DisplayNames, int32 Temp_int_Variable, class FText CallFunc_Conv_StringToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class FText CallFunc_Conv_StringToText_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, class FText CallFunc_Conv_StringToText_ReturnValue_2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, class FText CallFunc_Format_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Conv_StringToText_ReturnValue_3, class FText CallFunc_Format_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, int32 CallFunc_Array_Length_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_2, bool CallFunc_GreaterEqual_IntInt_ReturnValue, class FText CallFunc_Format_ReturnValue_2, int32 Temp_int_Variable_1, bool Temp_bool_Variable_1, int32 K2Node_Select_Default, class FText K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardEntry_C", "SetTeamDisplayNames");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardEntry_C_SetTeamDisplayNames_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardEntry_C", "SetTeamDisplayNames");
+
+	Params::UEventLeaderboardEntry_C_SetTeamDisplayNames_Params Parms{};
 
 	Parms.Entry_Data = Entry_Data;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -96,20 +124,20 @@ void UEventLeaderboardEntry_C::SetTeamDisplayNames(class UFortEventLeaderboardEn
 // bool                               CallFunc_DoesLeaderboardHaveQualifiedIcons_ReturnValue           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_GetScore_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetLiveSessionId_ReturnValue                            (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_GetPageIndex_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Percent_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetRank_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            (None)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // float                              Temp_float_Variable                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // float                              Temp_float_Variable_1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -127,9 +155,12 @@ void UEventLeaderboardEntry_C::SetTeamDisplayNames(class UFortEventLeaderboardEn
 
 void UEventLeaderboardEntry_C::SetEntryDetails(class UFortEventLeaderboardEntryData* EntryData, enum class ESlateVisibility Temp_byte_Variable, bool CallFunc_ShouldShowQualifiedIcon_ReturnValue, bool CallFunc_DoesLeaderboardHaveQualifiedIcons_ReturnValue, int32 CallFunc_GetScore_ReturnValue, const class FString& CallFunc_GetLiveSessionId_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, int32 CallFunc_GetPageIndex_ReturnValue, int32 CallFunc_Percent_IntInt_ReturnValue, int32 CallFunc_GetRank_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue_1, class FText CallFunc_Conv_IntToText_ReturnValue_1, bool Temp_bool_Variable, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, float Temp_float_Variable, class FText CallFunc_Format_ReturnValue, float Temp_float_Variable_1, bool Temp_bool_Variable_1, float K2Node_Select_Default, int32 Temp_int_Variable, const struct FMargin& K2Node_MakeStruct_Margin, int32 Temp_int_Variable_1, enum class ESlateVisibility Temp_byte_Variable_1, int32 K2Node_Select_Default_1, bool Temp_bool_Variable_2, enum class ESlateVisibility K2Node_Select_Default_2, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_3, enum class ESlateVisibility K2Node_Select_Default_3)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardEntry_C", "SetEntryDetails");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardEntry_C_SetEntryDetails_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardEntry_C", "SetEntryDetails");
+
+	Params::UEventLeaderboardEntry_C_SetEntryDetails_Params Parms{};
 
 	Parms.EntryData = EntryData;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -178,9 +209,12 @@ void UEventLeaderboardEntry_C::SetEntryDetails(class UFortEventLeaderboardEntryD
 
 void UEventLeaderboardEntry_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardEntry_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardEntry_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardEntry_C", "PreConstruct");
+
+	Params::UEventLeaderboardEntry_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -196,9 +230,12 @@ void UEventLeaderboardEntry_C::PreConstruct(bool IsDesignTime)
 
 void UEventLeaderboardEntry_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardEntry_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardEntry_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardEntry_C", "OnListItemObjectSet");
+
+	Params::UEventLeaderboardEntry_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -213,12 +250,14 @@ void UEventLeaderboardEntry_C::OnListItemObjectSet(class UObject* ListItemObject
 
 void UEventLeaderboardEntry_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("EventLeaderboardEntry_C", "BP_OnSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardEntry_C_BP_OnSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardEntry_C", "BP_OnSelected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -229,12 +268,14 @@ void UEventLeaderboardEntry_C::BP_OnSelected()
 
 void UEventLeaderboardEntry_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("EventLeaderboardEntry_C", "BP_OnDeselected");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardEntry_C_BP_OnDeselected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardEntry_C", "BP_OnDeselected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -245,12 +286,14 @@ void UEventLeaderboardEntry_C::BP_OnDeselected()
 
 void UEventLeaderboardEntry_C::EventStyleEntry()
 {
-	static auto Func = Class->GetFunction("EventLeaderboardEntry_C", "EventStyleEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardEntry_C_EventStyleEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardEntry_C", "EventStyleEntry");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -261,12 +304,14 @@ void UEventLeaderboardEntry_C::EventStyleEntry()
 
 void UEventLeaderboardEntry_C::EventColorize()
 {
-	static auto Func = Class->GetFunction("EventLeaderboardEntry_C", "EventColorize");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardEntry_C_EventColorize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardEntry_C", "EventColorize");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -278,9 +323,12 @@ void UEventLeaderboardEntry_C::EventColorize()
 
 void UEventLeaderboardEntry_C::OnTeammateDisplayNameAdded(class UFortEventLeaderboardEntryData* LeaderboardEntryData)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardEntry_C", "OnTeammateDisplayNameAdded");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardEntry_C_OnTeammateDisplayNameAdded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardEntry_C", "OnTeammateDisplayNameAdded");
+
+	Params::UEventLeaderboardEntry_C_OnTeammateDisplayNameAdded_Params Parms{};
 
 	Parms.LeaderboardEntryData = LeaderboardEntryData;
 
@@ -311,7 +359,7 @@ void UEventLeaderboardEntry_C::OnTeammateDisplayNameAdded(class UFortEventLeader
 // class UWidget*                     CallFunc_FindParentWidgetOfType_ReturnValue                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortShowdownDetailView*     K2Node_DynamicCast_AsFort_Showdown_Detail_View                   (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 // struct FLinearColor                K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakColor_R                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakColor_G                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -324,9 +372,12 @@ void UEventLeaderboardEntry_C::OnTeammateDisplayNameAdded(class UFortEventLeader
 
 void UEventLeaderboardEntry_C::ExecuteUbergraph_EventLeaderboardEntry(int32 EntryPoint, class UFortEventLeaderboardEntryData* K2Node_Event_LeaderboardEntryData, bool Temp_bool_Variable, const struct FLinearColor& Temp_struct_Variable, bool Temp_bool_Variable_1, const struct FLinearColor& Temp_struct_Variable_1, bool Temp_bool_Variable_2, const struct FLinearColor& Temp_struct_Variable_2, bool K2Node_Event_IsDesignTime, bool CallFunc_Not_PreBool_ReturnValue, class UObject* K2Node_Event_ListItemObject, bool CallFunc_BooleanAND_ReturnValue, class UFortEventLeaderboardEntryData* K2Node_DynamicCast_AsFort_Event_Leaderboard_Entry_Data, bool K2Node_DynamicCast_bSuccess, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UWidget* CallFunc_FindParentWidgetOfType_ReturnValue, class UFortShowdownDetailView* K2Node_DynamicCast_AsFort_Showdown_Detail_View, bool K2Node_DynamicCast_bSuccess_1, const struct FSlateColor& K2Node_MakeStruct_SlateColor, const struct FLinearColor& K2Node_Select_Default, float CallFunc_BreakColor_R, float CallFunc_BreakColor_G, float CallFunc_BreakColor_B, float CallFunc_BreakColor_A, const struct FLinearColor& CallFunc_MakeColor_ReturnValue, const struct FLinearColor& K2Node_MakeStruct_LinearColor, const struct FLinearColor& K2Node_Select_Default_1, const struct FLinearColor& K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardEntry_C", "ExecuteUbergraph_EventLeaderboardEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardEntry_C_ExecuteUbergraph_EventLeaderboardEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardEntry_C", "ExecuteUbergraph_EventLeaderboardEntry");
+
+	Params::UEventLeaderboardEntry_C_ExecuteUbergraph_EventLeaderboardEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_LeaderboardEntryData = K2Node_Event_LeaderboardEntryData;
@@ -364,6 +415,4 @@ void UEventLeaderboardEntry_C::ExecuteUbergraph_EventLeaderboardEntry(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ButtonStyle-Outline-FadedBlue.ButtonStyle-Outline-FadedBlue_C
+// (None)
+
+class UClass* UButtonStyleMinusOutlineMinusFadedBlue_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ButtonStyle-Outline-FadedBlue_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ButtonStyle-Outline-FadedBlue_C ButtonStyle-Outline-FadedBlue.Default__ButtonStyle-Outline-FadedBlue_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UButtonStyleMinusOutlineMinusFadedBlue_C* UButtonStyleMinusOutlineMinusFadedBlue_C::GetDefaultObj()
+{
+	static class UButtonStyleMinusOutlineMinusFadedBlue_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UButtonStyleMinusOutlineMinusFadedBlue_C*>(UButtonStyleMinusOutlineMinusFadedBlue_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

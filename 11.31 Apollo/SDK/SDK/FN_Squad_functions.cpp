@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass Squad.Squad_C
+// (None)
+
+class UClass* USquad_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Squad_C");
+
+	return Clss;
+}
+
+
+// Squad_C Squad.Default__Squad_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USquad_C* USquad_C::GetDefaultObj()
+{
+	static class USquad_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USquad_C*>(USquad_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Squad.Squad_C.OnLoaded_68F5F01141304474DB5D18BD77CD085C
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void USquad_C::OnLoaded_68F5F01141304474DB5D18BD77CD085C(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("Squad_C", "OnLoaded_68F5F01141304474DB5D18BD77CD085C");
+	static class UFunction* Func = nullptr;
 
-	Params::USquad_C_OnLoaded_68F5F01141304474DB5D18BD77CD085C_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Squad_C", "OnLoaded_68F5F01141304474DB5D18BD77CD085C");
+
+	Params::USquad_C_OnLoaded_68F5F01141304474DB5D18BD77CD085C_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -40,9 +68,12 @@ void USquad_C::OnLoaded_68F5F01141304474DB5D18BD77CD085C(class UObject* Loaded)
 
 void USquad_C::OnLoaded_2EC4A7E44D1A9CF51A66D8904054E26E(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("Squad_C", "OnLoaded_2EC4A7E44D1A9CF51A66D8904054E26E");
+	static class UFunction* Func = nullptr;
 
-	Params::USquad_C_OnLoaded_2EC4A7E44D1A9CF51A66D8904054E26E_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Squad_C", "OnLoaded_2EC4A7E44D1A9CF51A66D8904054E26E");
+
+	Params::USquad_C_OnLoaded_2EC4A7E44D1A9CF51A66D8904054E26E_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -58,9 +89,12 @@ void USquad_C::OnLoaded_2EC4A7E44D1A9CF51A66D8904054E26E(class UObject* Loaded)
 
 void USquad_C::OnSquadAssigned(struct FAthenaTeamDisplayInfo& SquadStyle)
 {
-	static auto Func = Class->GetFunction("Squad_C", "OnSquadAssigned");
+	static class UFunction* Func = nullptr;
 
-	Params::USquad_C_OnSquadAssigned_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Squad_C", "OnSquadAssigned");
+
+	Params::USquad_C_OnSquadAssigned_Params Parms{};
 
 	Parms.SquadStyle = SquadStyle;
 
@@ -77,9 +111,12 @@ void USquad_C::OnSquadAssigned(struct FAthenaTeamDisplayInfo& SquadStyle)
 
 void USquad_C::OnSquadIsEmptyChanged(bool bSquadIsEmpty, bool bMultipleSquadsPopulated)
 {
-	static auto Func = Class->GetFunction("Squad_C", "OnSquadIsEmptyChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::USquad_C_OnSquadIsEmptyChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Squad_C", "OnSquadIsEmptyChanged");
+
+	Params::USquad_C_OnSquadIsEmptyChanged_Params Parms{};
 
 	Parms.bSquadIsEmpty = bSquadIsEmpty;
 	Parms.bMultipleSquadsPopulated = bMultipleSquadsPopulated;
@@ -115,9 +152,12 @@ void USquad_C::OnSquadIsEmptyChanged(bool bSquadIsEmpty, bool bMultipleSquadsPop
 
 void USquad_C::ExecuteUbergraph_Squad(int32 EntryPoint, class UObject* K2Node_CustomEvent_Loaded_1, class UObject* Temp_object_Variable, class UTexture* K2Node_DynamicCast_AsTexture, bool K2Node_DynamicCast_bSuccess, class UObject* K2Node_CustomEvent_Loaded, class UObject* Temp_object_Variable_1, class UTexture* K2Node_DynamicCast_AsTexture_1, bool K2Node_DynamicCast_bSuccess_1, const struct FAthenaTeamDisplayInfo& K2Node_Event_SquadStyle, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool K2Node_Event_bSquadIsEmpty, bool K2Node_Event_bMultipleSquadsPopulated, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_2, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_3, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_4, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_5)
 {
-	static auto Func = Class->GetFunction("Squad_C", "ExecuteUbergraph_Squad");
+	static class UFunction* Func = nullptr;
 
-	Params::USquad_C_ExecuteUbergraph_Squad_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Squad_C", "ExecuteUbergraph_Squad");
+
+	Params::USquad_C_ExecuteUbergraph_Squad_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CustomEvent_Loaded_1 = K2Node_CustomEvent_Loaded_1;
@@ -146,6 +186,4 @@ void USquad_C::ExecuteUbergraph_Squad(int32 EntryPoint, class UObject* K2Node_Cu
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

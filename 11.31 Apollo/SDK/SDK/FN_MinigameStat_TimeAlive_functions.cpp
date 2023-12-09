@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass MinigameStat_TimeAlive.MinigameStat_TimeAlive_C
+// (None)
+
+class UClass* UMinigameStat_TimeAlive_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MinigameStat_TimeAlive_C");
+
+	return Clss;
+}
+
+
+// MinigameStat_TimeAlive_C MinigameStat_TimeAlive.Default__MinigameStat_TimeAlive_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMinigameStat_TimeAlive_C* UMinigameStat_TimeAlive_C::GetDefaultObj()
+{
+	static class UMinigameStat_TimeAlive_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMinigameStat_TimeAlive_C*>(UMinigameStat_TimeAlive_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function MinigameStat_TimeAlive.MinigameStat_TimeAlive_C.Compare
@@ -34,9 +59,12 @@ namespace SDK
 
 int32 UMinigameStat_TimeAlive_C::Compare(int32 FirstScore, int32 SecondScore, bool IsSecondValid, bool IsFirstValid, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_EqualEqual_BoolBool_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_1, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("MinigameStat_TimeAlive_C", "Compare");
+	static class UFunction* Func = nullptr;
 
-	Params::UMinigameStat_TimeAlive_C_Compare_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MinigameStat_TimeAlive_C", "Compare");
+
+	Params::UMinigameStat_TimeAlive_C_Compare_Params Parms{};
 
 	Parms.FirstScore = FirstScore;
 	Parms.SecondScore = SecondScore;
@@ -59,6 +87,4 @@ int32 UMinigameStat_TimeAlive_C::Compare(int32 FirstScore, int32 SecondScore, bo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

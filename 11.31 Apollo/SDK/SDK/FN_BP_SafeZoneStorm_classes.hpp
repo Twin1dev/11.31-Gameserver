@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -57,18 +54,15 @@ public:
 	class USceneComponent*                       DefaultSceneRoot;                                  // 0x368(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                         MobileMode;                                        // 0x370(0x1)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor)
 	bool                                         ShowStorm;                                         // 0x371(0x1)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_56A5[0x2];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4053[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        StormSize;                                         // 0x374(0x4)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 	float                                        StormBias;                                         // 0x378(0x4)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 	struct FVector                               StormCenter;                                       // 0x37C(0xC)(Edit, BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash)
 	bool                                         UseNewStorm;                                       // 0x388(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         UseSeason11Storm;                                  // 0x389(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BP_SafeZoneStorm_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ABP_SafeZoneStorm_C* GetDefaultObj();
 
 	void UserConstructionScript(const struct FHitResult& CallFunc_K2_SetActorLocation_SweepHitResult, bool CallFunc_K2_SetActorLocation_ReturnValue, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue);
 	void ReceiveBeginPlay();
@@ -80,6 +74,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

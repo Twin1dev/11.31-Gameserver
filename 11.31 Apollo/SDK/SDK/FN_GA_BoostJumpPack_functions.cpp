@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GA_BoostJumpPack.GA_BoostJumpPack_C
+// (None)
+
+class UClass* UGA_BoostJumpPack_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_BoostJumpPack_C");
+
+	return Clss;
+}
+
+
+// GA_BoostJumpPack_C GA_BoostJumpPack.Default__GA_BoostJumpPack_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_BoostJumpPack_C* UGA_BoostJumpPack_C::GetDefaultObj()
+{
+	static class UGA_BoostJumpPack_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_BoostJumpPack_C*>(UGA_BoostJumpPack_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GA_BoostJumpPack.GA_BoostJumpPack_C.K2_CanActivateAbility
@@ -28,9 +53,12 @@ namespace SDK
 
 bool UGA_BoostJumpPack_C::K2_CanActivateAbility(const struct FGameplayAbilityActorInfo& ActorInfo, struct FGameplayTagContainer* RelevantTags, class AFortPlayerControllerGameplay* K2Node_DynamicCast_AsFort_Player_Controller_Gameplay, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsAllowedToFly_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "K2_CanActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_K2_CanActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "K2_CanActivateAbility");
+
+	Params::UGA_BoostJumpPack_C_K2_CanActivateAbility_Params Parms{};
 
 	Parms.ActorInfo = ActorInfo;
 	Parms.K2Node_DynamicCast_AsFort_Player_Controller_Gameplay = K2Node_DynamicCast_AsFort_Player_Controller_Gameplay;
@@ -41,7 +69,7 @@ bool UGA_BoostJumpPack_C::K2_CanActivateAbility(const struct FGameplayAbilityAct
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (RelevantTags != nullptr)
-		*RelevantTags = Parms.RelevantTags;
+		*RelevantTags = std::move(Parms.RelevantTags);
 
 	return Parms.ReturnValue;
 
@@ -60,9 +88,12 @@ bool UGA_BoostJumpPack_C::K2_CanActivateAbility(const struct FGameplayAbilityAct
 
 void UGA_BoostJumpPack_C::Handle_Jetpack_Equipped(float CallFunc_GetMaxFuel_MaxFuel, float CallFunc_GetFuel_Fuel, float CallFunc_Divide_FloatFloat_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue, bool CallFunc_MatchesTag_ReturnValue, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "Handle Jetpack Equipped");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_Handle_Jetpack_Equipped_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Handle Jetpack Equipped");
+
+	Params::UGA_BoostJumpPack_C_Handle_Jetpack_Equipped_Params Parms{};
 
 	Parms.CallFunc_GetMaxFuel_MaxFuel = CallFunc_GetMaxFuel_MaxFuel;
 	Parms.CallFunc_GetFuel_Fuel = CallFunc_GetFuel_Fuel;
@@ -102,9 +133,12 @@ void UGA_BoostJumpPack_C::Handle_Jetpack_Equipped(float CallFunc_GetMaxFuel_MaxF
 
 bool UGA_BoostJumpPack_C::Reasons_To_Reset_on_Transition(const struct FGameplayTag& Tag, class AController* CallFunc_GetController_ReturnValue, bool CallFunc_MatchesTag_ReturnValue, class AFortPlayerControllerZone* K2Node_DynamicCast_AsFort_Player_Controller_Zone, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsInGhostMode_ReturnValue, bool CallFunc_MatchesTag_ReturnValue_1, bool CallFunc_MatchesTag_ReturnValue_2, bool CallFunc_IsInVehicle_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_IsSkydiving_ReturnValue, bool CallFunc_GetPendingSkydiveLaunch_ReturnValue, bool CallFunc_IsParachuteOpen_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue_3, bool CallFunc_BooleanOR_ReturnValue_4, bool CallFunc_BooleanOR_ReturnValue_5, bool CallFunc_BooleanOR_ReturnValue_6)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "Reasons To Reset on Transition");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_Reasons_To_Reset_on_Transition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Reasons To Reset on Transition");
+
+	Params::UGA_BoostJumpPack_C_Reasons_To_Reset_on_Transition_Params Parms{};
 
 	Parms.Tag = Tag;
 	Parms.CallFunc_GetController_ReturnValue = CallFunc_GetController_ReturnValue;
@@ -146,9 +180,12 @@ bool UGA_BoostJumpPack_C::Reasons_To_Reset_on_Transition(const struct FGameplayT
 
 class AFortPlayerPawn* UGA_BoostJumpPack_C::Get_Player_Pawn(class UObject* Object, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, class AFortPlayerControllerAthena* K2Node_DynamicCast_AsFort_Player_Controller_Athena, bool K2Node_DynamicCast_bSuccess_1, class AFortPlayerPawn* CallFunc_GetPlayerPawn_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "Get Player Pawn");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_Get_Player_Pawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Get Player Pawn");
+
+	Params::UGA_BoostJumpPack_C_Get_Player_Pawn_Params Parms{};
 
 	Parms.Object = Object;
 	Parms.K2Node_DynamicCast_AsFort_Player_Pawn = K2Node_DynamicCast_AsFort_Player_Pawn;
@@ -179,9 +216,12 @@ class AFortPlayerPawn* UGA_BoostJumpPack_C::Get_Player_Pawn(class UObject* Objec
 
 bool UGA_BoostJumpPack_C::IsCurrentlyDead(const struct FGameplayTag& TagOne, bool CallFunc_MatchesTag_ReturnValue, bool CallFunc_IsDBNO_ReturnValue, bool CallFunc_MatchesTag_ReturnValue_1, bool CallFunc_MatchesTag_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "IsCurrentlyDead");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_IsCurrentlyDead_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "IsCurrentlyDead");
+
+	Params::UGA_BoostJumpPack_C_IsCurrentlyDead_Params Parms{};
 
 	Parms.TagOne = TagOne;
 	Parms.CallFunc_MatchesTag_ReturnValue = CallFunc_MatchesTag_ReturnValue;
@@ -207,9 +247,12 @@ bool UGA_BoostJumpPack_C::IsCurrentlyDead(const struct FGameplayTag& TagOne, boo
 
 void UGA_BoostJumpPack_C::Reengage_Falling_Movement(bool CallFunc_IsFalling_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "Reengage Falling Movement");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_Reengage_Falling_Movement_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Reengage Falling Movement");
+
+	Params::UGA_BoostJumpPack_C_Reengage_Falling_Movement_Params Parms{};
 
 	Parms.CallFunc_IsFalling_ReturnValue = CallFunc_IsFalling_ReturnValue;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
@@ -226,9 +269,12 @@ void UGA_BoostJumpPack_C::Reengage_Falling_Movement(bool CallFunc_IsFalling_Retu
 
 void UGA_BoostJumpPack_C::Reengage_Hovering_Movement(bool CallFunc_IsFalling_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "Reengage Hovering Movement");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_Reengage_Hovering_Movement_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Reengage Hovering Movement");
+
+	Params::UGA_BoostJumpPack_C_Reengage_Hovering_Movement_Params Parms{};
 
 	Parms.CallFunc_IsFalling_ReturnValue = CallFunc_IsFalling_ReturnValue;
 
@@ -246,9 +292,12 @@ void UGA_BoostJumpPack_C::Reengage_Hovering_Movement(bool CallFunc_IsFalling_Ret
 
 void UGA_BoostJumpPack_C::SavePlayerPawn(const struct FGameplayAbilityActorInfo& CallFunc_GetActorInfo_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "SavePlayerPawn");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_SavePlayerPawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "SavePlayerPawn");
+
+	Params::UGA_BoostJumpPack_C_SavePlayerPawn_Params Parms{};
 
 	Parms.CallFunc_GetActorInfo_ReturnValue = CallFunc_GetActorInfo_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Pawn = K2Node_DynamicCast_AsFort_Player_Pawn;
@@ -265,12 +314,14 @@ void UGA_BoostJumpPack_C::SavePlayerPawn(const struct FGameplayAbilityActorInfo&
 
 void UGA_BoostJumpPack_C::OnAbilityCanceled()
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "OnAbilityCanceled");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_OnAbilityCanceled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "OnAbilityCanceled");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -281,12 +332,14 @@ void UGA_BoostJumpPack_C::OnAbilityCanceled()
 
 void UGA_BoostJumpPack_C::OnFuelIsEmpty()
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "OnFuelIsEmpty");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_OnFuelIsEmpty_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "OnFuelIsEmpty");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -297,12 +350,14 @@ void UGA_BoostJumpPack_C::OnFuelIsEmpty()
 
 void UGA_BoostJumpPack_C::OnFuelIsFull()
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "OnFuelIsFull");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_OnFuelIsFull_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "OnFuelIsFull");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -316,9 +371,12 @@ void UGA_BoostJumpPack_C::OnFuelIsFull()
 
 void UGA_BoostJumpPack_C::Reset_Toggle_Input_State(class AController* CallFunc_GetController_ReturnValue, class AFortPlayerControllerZone* K2Node_DynamicCast_AsFort_Player_Controller_Zone, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "Reset Toggle Input State");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_Reset_Toggle_Input_State_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Reset Toggle Input State");
+
+	Params::UGA_BoostJumpPack_C_Reset_Toggle_Input_State_Params Parms{};
 
 	Parms.CallFunc_GetController_ReturnValue = CallFunc_GetController_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Controller_Zone = K2Node_DynamicCast_AsFort_Player_Controller_Zone;
@@ -346,9 +404,12 @@ void UGA_BoostJumpPack_C::Reset_Toggle_Input_State(class AController* CallFunc_G
 
 void UGA_BoostJumpPack_C::ProcessTriggerData(const struct FGameplayTag& TagOne, bool CallFunc_MatchesTag_ReturnValue, bool CallFunc_IsMovingOnGround_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Max_ReturnValue, bool CallFunc_MatchesAnyTags_ReturnValue, bool CallFunc_MatchesAnyTags_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "ProcessTriggerData");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_ProcessTriggerData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "ProcessTriggerData");
+
+	Params::UGA_BoostJumpPack_C_ProcessTriggerData_Params Parms{};
 
 	Parms.TagOne = TagOne;
 	Parms.CallFunc_MatchesTag_ReturnValue = CallFunc_MatchesTag_ReturnValue;
@@ -375,9 +436,12 @@ void UGA_BoostJumpPack_C::ProcessTriggerData(const struct FGameplayTag& TagOne, 
 
 void UGA_BoostJumpPack_C::Stop_Regen_Effect(class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, bool CallFunc_HasAuthority_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "Stop Regen Effect");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_Stop_Regen_Effect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Stop Regen Effect");
+
+	Params::UGA_BoostJumpPack_C_Stop_Regen_Effect_Params Parms{};
 
 	Parms.CallFunc_GetAvatarActorFromActorInfo_ReturnValue = CallFunc_GetAvatarActorFromActorInfo_ReturnValue;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -397,9 +461,12 @@ void UGA_BoostJumpPack_C::Stop_Regen_Effect(class AActor* CallFunc_GetAvatarActo
 
 void UGA_BoostJumpPack_C::Start_Regen_Effect(class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, bool CallFunc_HasAuthority_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "Start Regen Effect");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_Start_Regen_Effect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Start Regen Effect");
+
+	Params::UGA_BoostJumpPack_C_Start_Regen_Effect_Params Parms{};
 
 	Parms.CallFunc_GetAvatarActorFromActorInfo_ReturnValue = CallFunc_GetAvatarActorFromActorInfo_ReturnValue;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -421,9 +488,12 @@ void UGA_BoostJumpPack_C::Start_Regen_Effect(class AActor* CallFunc_GetAvatarAct
 
 void UGA_BoostJumpPack_C::Consider_Stopping_Regen_Effect(float CallFunc_GetMaxFuel_MaxFuel, float CallFunc_GetFuel_Fuel, float CallFunc_Divide_FloatFloat_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "Consider Stopping Regen Effect");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_Consider_Stopping_Regen_Effect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Consider Stopping Regen Effect");
+
+	Params::UGA_BoostJumpPack_C_Consider_Stopping_Regen_Effect_Params Parms{};
 
 	Parms.CallFunc_GetMaxFuel_MaxFuel = CallFunc_GetMaxFuel_MaxFuel;
 	Parms.CallFunc_GetFuel_Fuel = CallFunc_GetFuel_Fuel;
@@ -449,9 +519,12 @@ void UGA_BoostJumpPack_C::Consider_Stopping_Regen_Effect(float CallFunc_GetMaxFu
 
 void UGA_BoostJumpPack_C::Consider_Starting_Regen_Effect(float CallFunc_GetMaxFuel_MaxFuel, float CallFunc_GetFuel_Fuel, float CallFunc_Divide_FloatFloat_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "Consider Starting Regen Effect");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_Consider_Starting_Regen_Effect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Consider Starting Regen Effect");
+
+	Params::UGA_BoostJumpPack_C_Consider_Starting_Regen_Effect_Params Parms{};
 
 	Parms.CallFunc_GetMaxFuel_MaxFuel = CallFunc_GetMaxFuel_MaxFuel;
 	Parms.CallFunc_GetFuel_Fuel = CallFunc_GetFuel_Fuel;
@@ -477,9 +550,12 @@ void UGA_BoostJumpPack_C::Consider_Starting_Regen_Effect(float CallFunc_GetMaxFu
 
 bool UGA_BoostJumpPack_C::IsBoostAllowed(bool CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute, float CallFunc_GetFloatAttribute_ReturnValue, bool CallFunc_NearlyEqual_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "IsBoostAllowed");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_IsBoostAllowed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "IsBoostAllowed");
+
+	Params::UGA_BoostJumpPack_C_IsBoostAllowed_Params Parms{};
 
 	Parms.CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute = CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute;
 	Parms.CallFunc_GetFloatAttribute_ReturnValue = CallFunc_GetFloatAttribute_ReturnValue;
@@ -499,9 +575,12 @@ bool UGA_BoostJumpPack_C::IsBoostAllowed(bool CallFunc_GetFloatAttribute_bSucces
 
 void UGA_BoostJumpPack_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "K2_OnEndAbility");
+
+	Params::UGA_BoostJumpPack_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -524,9 +603,12 @@ void UGA_BoostJumpPack_C::K2_OnEndAbility(bool bWasCancelled)
 
 bool UGA_BoostJumpPack_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayAbilityActorInfo& ActorInfo, const struct FGameplayEventData& Payload, class AFortPlayerPawnAthena* PlayerPawn, const struct FGameplayTagContainer& ExplicitExecutionTags, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "K2_ShouldAbilityRespondToEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_K2_ShouldAbilityRespondToEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "K2_ShouldAbilityRespondToEvent");
+
+	Params::UGA_BoostJumpPack_C_K2_ShouldAbilityRespondToEvent_Params Parms{};
 
 	Parms.ActorInfo = ActorInfo;
 	Parms.Payload = Payload;
@@ -555,9 +637,12 @@ bool UGA_BoostJumpPack_C::K2_ShouldAbilityRespondToEvent(const struct FGameplayA
 
 void UGA_BoostJumpPack_C::GetMaxFuel(float* MaxFuel, bool Temp_bool_Variable, float Temp_float_Variable, bool CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute, float CallFunc_GetFloatAttribute_ReturnValue, float K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "GetMaxFuel");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_GetMaxFuel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "GetMaxFuel");
+
+	Params::UGA_BoostJumpPack_C_GetMaxFuel_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_float_Variable = Temp_float_Variable;
@@ -585,9 +670,12 @@ void UGA_BoostJumpPack_C::GetMaxFuel(float* MaxFuel, bool Temp_bool_Variable, fl
 
 void UGA_BoostJumpPack_C::GetFuel(float* Fuel, bool Temp_bool_Variable, float Temp_float_Variable, bool CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute, float CallFunc_GetFloatAttribute_ReturnValue, float K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "GetFuel");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_GetFuel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "GetFuel");
+
+	Params::UGA_BoostJumpPack_C_GetFuel_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_float_Variable = Temp_float_Variable;
@@ -610,9 +698,12 @@ void UGA_BoostJumpPack_C::GetFuel(float* Fuel, bool Temp_bool_Variable, float Te
 
 void UGA_BoostJumpPack_C::Setup_PlayerPawn(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "Setup PlayerPawn");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_Setup_PlayerPawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Setup PlayerPawn");
+
+	Params::UGA_BoostJumpPack_C_Setup_PlayerPawn_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 
@@ -630,9 +721,12 @@ void UGA_BoostJumpPack_C::Setup_PlayerPawn(UDelegateProperty_ K2Node_CreateDeleg
 
 bool UGA_BoostJumpPack_C::IsUsingJetpackEffectActive(int32 CallFunc_GetActiveGameplayEffectStackCount_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "IsUsingJetpackEffectActive");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_IsUsingJetpackEffectActive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "IsUsingJetpackEffectActive");
+
+	Params::UGA_BoostJumpPack_C_IsUsingJetpackEffectActive_Params Parms{};
 
 	Parms.CallFunc_GetActiveGameplayEffectStackCount_ReturnValue = CallFunc_GetActiveGameplayEffectStackCount_ReturnValue;
 	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
@@ -657,9 +751,12 @@ bool UGA_BoostJumpPack_C::IsUsingJetpackEffectActive(int32 CallFunc_GetActiveGam
 
 void UGA_BoostJumpPack_C::HandleCurrentBoostStateChanged(enum class EJumpBoostPackState PreviousState, enum class EJumpBoostPackState CurrentState, bool K2Node_SwitchEnum_CmpSuccess, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, bool CallFunc_IsUsingJetpackEffectActive_ReturnValue, bool CallFunc_IsUsingJetpackEffectActive_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleCurrentBoostStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_HandleCurrentBoostStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleCurrentBoostStateChanged");
+
+	Params::UGA_BoostJumpPack_C_HandleCurrentBoostStateChanged_Params Parms{};
 
 	Parms.PreviousState = PreviousState;
 	Parms.CurrentState = CurrentState;
@@ -683,9 +780,12 @@ void UGA_BoostJumpPack_C::HandleCurrentBoostStateChanged(enum class EJumpBoostPa
 
 void UGA_BoostJumpPack_C::SetCurrentBoostState(enum class EJumpBoostPackState NewState, enum class EJumpBoostPackState PreviousState, enum class Enum_BoostJumpStates PreviewBoostState)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "SetCurrentBoostState");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_SetCurrentBoostState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "SetCurrentBoostState");
+
+	Params::UGA_BoostJumpPack_C_SetCurrentBoostState_Params Parms{};
 
 	Parms.NewState = NewState;
 	Parms.PreviousState = PreviousState;
@@ -705,9 +805,12 @@ void UGA_BoostJumpPack_C::SetCurrentBoostState(enum class EJumpBoostPackState Ne
 
 void UGA_BoostJumpPack_C::PotentiallyEndHovering(bool bForceEndHovering, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "PotentiallyEndHovering");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_PotentiallyEndHovering_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "PotentiallyEndHovering");
+
+	Params::UGA_BoostJumpPack_C_PotentiallyEndHovering_Params Parms{};
 
 	Parms.bForceEndHovering = bForceEndHovering;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
@@ -728,9 +831,12 @@ void UGA_BoostJumpPack_C::PotentiallyEndHovering(bool bForceEndHovering, bool Ca
 
 void UGA_BoostJumpPack_C::Setup_Notify_at_Apex(bool bNotifyApex, class UPawnMovementComponent* CallFunc_GetMovementComponent_ReturnValue, class UFortMovementComp_CharacterAthena* K2Node_DynamicCast_AsFort_Movement_Comp_Character_Athena, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "Setup Notify at Apex");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_Setup_Notify_at_Apex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Setup Notify at Apex");
+
+	Params::UGA_BoostJumpPack_C_Setup_Notify_at_Apex_Params Parms{};
 
 	Parms.bNotifyApex = bNotifyApex;
 	Parms.CallFunc_GetMovementComponent_ReturnValue = CallFunc_GetMovementComponent_ReturnValue;
@@ -748,12 +854,14 @@ void UGA_BoostJumpPack_C::Setup_Notify_at_Apex(bool bNotifyApex, class UPawnMove
 
 void UGA_BoostJumpPack_C::HandleIdle()
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleIdle");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_HandleIdle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleIdle");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -774,9 +882,12 @@ void UGA_BoostJumpPack_C::HandleIdle()
 
 void UGA_BoostJumpPack_C::HandleFalling(float CallFunc_GetTimeSeconds_ReturnValue, float CallFunc_GetTimeSeconds_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, float CallFunc_Subtract_FloatFloat_ReturnValue_1, float CallFunc_FMax_ReturnValue, float CallFunc_GetTimeSeconds_ReturnValue_2, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue_2, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleFalling");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_HandleFalling_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleFalling");
+
+	Params::UGA_BoostJumpPack_C_HandleFalling_Params Parms{};
 
 	Parms.CallFunc_GetTimeSeconds_ReturnValue = CallFunc_GetTimeSeconds_ReturnValue;
 	Parms.CallFunc_GetTimeSeconds_ReturnValue_1 = CallFunc_GetTimeSeconds_ReturnValue_1;
@@ -810,9 +921,12 @@ void UGA_BoostJumpPack_C::HandleFalling(float CallFunc_GetTimeSeconds_ReturnValu
 
 void UGA_BoostJumpPack_C::HandleHovering(float CallFunc_GetTimeSeconds_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_GetTimeSeconds_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue_2, float CallFunc_FMax_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, float CallFunc_GetTimeSeconds_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleHovering");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_HandleHovering_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleHovering");
+
+	Params::UGA_BoostJumpPack_C_HandleHovering_Params Parms{};
 
 	Parms.CallFunc_GetTimeSeconds_ReturnValue = CallFunc_GetTimeSeconds_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -837,9 +951,12 @@ void UGA_BoostJumpPack_C::HandleHovering(float CallFunc_GetTimeSeconds_ReturnVal
 
 void UGA_BoostJumpPack_C::ResetTransitionVariables(const struct FGameplayTag& TargetTag)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "ResetTransitionVariables");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_ResetTransitionVariables_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "ResetTransitionVariables");
+
+	Params::UGA_BoostJumpPack_C_ResetTransitionVariables_Params Parms{};
 
 	Parms.TargetTag = TargetTag;
 
@@ -860,9 +977,12 @@ void UGA_BoostJumpPack_C::ResetTransitionVariables(const struct FGameplayTag& Ta
 
 void UGA_BoostJumpPack_C::TransitionFromFalling(enum class Enum_BoostJumpStates* TargetBoostState, bool CallFunc_Not_PreBool_ReturnValue, float CallFunc_GetFuel_Fuel, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "TransitionFromFalling");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_TransitionFromFalling_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "TransitionFromFalling");
+
+	Params::UGA_BoostJumpPack_C_TransitionFromFalling_Params Parms{};
 
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 	Parms.CallFunc_GetFuel_Fuel = CallFunc_GetFuel_Fuel;
@@ -890,9 +1010,12 @@ void UGA_BoostJumpPack_C::TransitionFromFalling(enum class Enum_BoostJumpStates*
 
 void UGA_BoostJumpPack_C::TransitionFromHovering(enum class Enum_BoostJumpStates* TargetBoostState, float CallFunc_GetFuel_Fuel, bool CallFunc_LessEqual_FloatFloat_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "TransitionFromHovering");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_TransitionFromHovering_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "TransitionFromHovering");
+
+	Params::UGA_BoostJumpPack_C_TransitionFromHovering_Params Parms{};
 
 	Parms.CallFunc_GetFuel_Fuel = CallFunc_GetFuel_Fuel;
 	Parms.CallFunc_LessEqual_FloatFloat_ReturnValue = CallFunc_LessEqual_FloatFloat_ReturnValue;
@@ -920,9 +1043,12 @@ void UGA_BoostJumpPack_C::TransitionFromHovering(enum class Enum_BoostJumpStates
 
 void UGA_BoostJumpPack_C::TransitionFromBoost(enum class Enum_BoostJumpStates* TargetBoostState, bool CallFunc_Not_PreBool_ReturnValue, float CallFunc_GetFuel_Fuel, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "TransitionFromBoost");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_TransitionFromBoost_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "TransitionFromBoost");
+
+	Params::UGA_BoostJumpPack_C_TransitionFromBoost_Params Parms{};
 
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 	Parms.CallFunc_GetFuel_Fuel = CallFunc_GetFuel_Fuel;
@@ -955,9 +1081,12 @@ void UGA_BoostJumpPack_C::TransitionFromBoost(enum class Enum_BoostJumpStates* T
 
 void UGA_BoostJumpPack_C::TransitionFromIdle(enum class Enum_BoostJumpStates* TargetBoostState, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsBoostAllowed_ReturnValue, float CallFunc_GetFuel_Fuel, bool CallFunc_Greater_FloatFloat_ReturnValue, float CallFunc_GetFuel_Fuel_1, float CallFunc_GetMaxFuel_MaxFuel, float CallFunc_Divide_FloatFloat_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "TransitionFromIdle");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_TransitionFromIdle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "TransitionFromIdle");
+
+	Params::UGA_BoostJumpPack_C_TransitionFromIdle_Params Parms{};
 
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 	Parms.CallFunc_IsBoostAllowed_ReturnValue = CallFunc_IsBoostAllowed_ReturnValue;
@@ -987,9 +1116,12 @@ void UGA_BoostJumpPack_C::TransitionFromIdle(enum class Enum_BoostJumpStates* Ta
 
 void UGA_BoostJumpPack_C::ProcessAbilityStateMachine(bool K2Node_SwitchEnum_CmpSuccess, enum class Enum_BoostJumpStates CallFunc_DetermineStateToTransitionTo_BoostState, bool K2Node_SwitchEnum_CmpSuccess_1)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "ProcessAbilityStateMachine");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_ProcessAbilityStateMachine_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "ProcessAbilityStateMachine");
+
+	Params::UGA_BoostJumpPack_C_ProcessAbilityStateMachine_Params Parms{};
 
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
 	Parms.CallFunc_DetermineStateToTransitionTo_BoostState = CallFunc_DetermineStateToTransitionTo_BoostState;
@@ -1012,9 +1144,12 @@ void UGA_BoostJumpPack_C::ProcessAbilityStateMachine(bool K2Node_SwitchEnum_CmpS
 
 void UGA_BoostJumpPack_C::DetermineStateToTransitionTo(enum class Enum_BoostJumpStates* BoostState, bool K2Node_SwitchEnum_CmpSuccess, enum class Enum_BoostJumpStates CallFunc_TransitionFromFalling_TargetBoostState, enum class Enum_BoostJumpStates CallFunc_TransitionFromHovering_TargetBoostState, enum class Enum_BoostJumpStates CallFunc_TransitionFromBoost_TargetBoostState, enum class Enum_BoostJumpStates CallFunc_TransitionFromIdle_TargetBoostState)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "DetermineStateToTransitionTo");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_DetermineStateToTransitionTo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "DetermineStateToTransitionTo");
+
+	Params::UGA_BoostJumpPack_C_DetermineStateToTransitionTo_Params Parms{};
 
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
 	Parms.CallFunc_TransitionFromFalling_TargetBoostState = CallFunc_TransitionFromFalling_TargetBoostState;
@@ -1041,9 +1176,12 @@ void UGA_BoostJumpPack_C::DetermineStateToTransitionTo(enum class Enum_BoostJump
 
 void UGA_BoostJumpPack_C::SetupTransitionVariables(const struct FGameplayTag& Tag, const struct FGameplayTag& TargetTag, bool CallFunc_Reasons_To_Reset_on_Transition_ReturnValue, bool CallFunc_IsCurrentlyDead_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "SetupTransitionVariables");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_SetupTransitionVariables_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "SetupTransitionVariables");
+
+	Params::UGA_BoostJumpPack_C_SetupTransitionVariables_Params Parms{};
 
 	Parms.Tag = Tag;
 	Parms.TargetTag = TargetTag;
@@ -1066,9 +1204,12 @@ void UGA_BoostJumpPack_C::SetupTransitionVariables(const struct FGameplayTag& Ta
 
 void UGA_BoostJumpPack_C::HandleBoostJump(const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AFortPlayerPawn* CallFunc_SetJumpHeight_Pawn_Out, const struct FVector& CallFunc_SetJumpHeight_Jump_Height)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleBoostJump");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_HandleBoostJump_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "HandleBoostJump");
+
+	Params::UGA_BoostJumpPack_C_HandleBoostJump_Params Parms{};
 
 	Parms.CallFunc_MakeGameplayCueParameters_ReturnValue = CallFunc_MakeGameplayCueParameters_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -1093,9 +1234,12 @@ void UGA_BoostJumpPack_C::HandleBoostJump(const struct FGameplayCueParameters& C
 
 void UGA_BoostJumpPack_C::SetJumpHeight(class AFortPlayerPawn* Pawn, class AFortPlayerPawn** Pawn_Out, struct FVector* Jump_Height, const struct FVector& CallFunc_GetVelocity_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "SetJumpHeight");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_SetJumpHeight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "SetJumpHeight");
+
+	Params::UGA_BoostJumpPack_C_SetJumpHeight_Params Parms{};
 
 	Parms.Pawn = Pawn;
 	Parms.CallFunc_GetVelocity_ReturnValue = CallFunc_GetVelocity_ReturnValue;
@@ -1109,7 +1253,7 @@ void UGA_BoostJumpPack_C::SetJumpHeight(class AFortPlayerPawn* Pawn, class AFort
 		*Pawn_Out = Parms.Pawn_Out;
 
 	if (Jump_Height != nullptr)
-		*Jump_Height = Parms.Jump_Height;
+		*Jump_Height = std::move(Parms.Jump_Height);
 
 }
 
@@ -1120,12 +1264,14 @@ void UGA_BoostJumpPack_C::SetJumpHeight(class AFortPlayerPawn* Pawn, class AFort
 
 void UGA_BoostJumpPack_C::On_Reached_Jump_Apex()
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "On Reached Jump Apex");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_On_Reached_Jump_Apex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "On Reached Jump Apex");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1137,9 +1283,12 @@ void UGA_BoostJumpPack_C::On_Reached_Jump_Apex()
 
 void UGA_BoostJumpPack_C::OnPawnLanded(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "OnPawnLanded");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_OnPawnLanded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "OnPawnLanded");
+
+	Params::UGA_BoostJumpPack_C_OnPawnLanded_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -1155,9 +1304,12 @@ void UGA_BoostJumpPack_C::OnPawnLanded(struct FHitResult& Hit)
 
 void UGA_BoostJumpPack_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGA_BoostJumpPack_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -1174,9 +1326,12 @@ void UGA_BoostJumpPack_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData&
 
 void UGA_BoostJumpPack_C::OnCurrentStateChanged(enum class EJumpBoostPackState InPreviousState, enum class EJumpBoostPackState InCurrentState)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "OnCurrentStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_OnCurrentStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "OnCurrentStateChanged");
+
+	Params::UGA_BoostJumpPack_C_OnCurrentStateChanged_Params Parms{};
 
 	Parms.InPreviousState = InPreviousState;
 	Parms.InCurrentState = InCurrentState;
@@ -1192,12 +1347,14 @@ void UGA_BoostJumpPack_C::OnCurrentStateChanged(enum class EJumpBoostPackState I
 
 void UGA_BoostJumpPack_C::Delay_ProcessAbilityStateMachine()
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "Delay_ProcessAbilityStateMachine");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_Delay_ProcessAbilityStateMachine_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "Delay_ProcessAbilityStateMachine");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1215,9 +1372,12 @@ void UGA_BoostJumpPack_C::Delay_ProcessAbilityStateMachine()
 
 void UGA_BoostJumpPack_C::ExecuteUbergraph_GA_BoostJumpPack(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FHitResult& K2Node_CustomEvent_Hit, const struct FGameplayEventData& K2Node_Event_EventData, enum class EJumpBoostPackState K2Node_Event_InPreviousState, enum class EJumpBoostPackState K2Node_Event_InCurrentState, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_BoostJumpPack_C", "ExecuteUbergraph_GA_BoostJumpPack");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_BoostJumpPack_C_ExecuteUbergraph_GA_BoostJumpPack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_BoostJumpPack_C", "ExecuteUbergraph_GA_BoostJumpPack");
+
+	Params::UGA_BoostJumpPack_C_ExecuteUbergraph_GA_BoostJumpPack_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -1233,6 +1393,4 @@ void UGA_BoostJumpPack_C::ExecuteUbergraph_GA_BoostJumpPack(int32 EntryPoint, UD
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

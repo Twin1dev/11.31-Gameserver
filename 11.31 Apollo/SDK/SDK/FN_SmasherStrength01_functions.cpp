@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass SmasherStrength01.SmasherStrength01_C
+// (None)
+
+class UClass* USmasherStrength01_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SmasherStrength01_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// SmasherStrength01_C SmasherStrength01.Default__SmasherStrength01_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USmasherStrength01_C* USmasherStrength01_C::GetDefaultObj()
+{
+	static class USmasherStrength01_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USmasherStrength01_C*>(USmasherStrength01_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

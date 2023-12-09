@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCN_Loop_Ice_Feet_Environmental.GCN_Loop_Ice_Feet_Environmental_C
+// (Actor)
+
+class UClass* AGCN_Loop_Ice_Feet_Environmental_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCN_Loop_Ice_Feet_Environmental_C");
+
+	return Clss;
+}
+
+
+// GCN_Loop_Ice_Feet_Environmental_C GCN_Loop_Ice_Feet_Environmental.Default__GCN_Loop_Ice_Feet_Environmental_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCN_Loop_Ice_Feet_Environmental_C* AGCN_Loop_Ice_Feet_Environmental_C::GetDefaultObj()
+{
+	static class AGCN_Loop_Ice_Feet_Environmental_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCN_Loop_Ice_Feet_Environmental_C*>(AGCN_Loop_Ice_Feet_Environmental_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCN_Loop_Ice_Feet_Environmental.GCN_Loop_Ice_Feet_Environmental_C.OnRemoval
@@ -27,9 +52,12 @@ namespace SDK
 
 void AGCN_Loop_Ice_Feet_Environmental_C::OnRemoval(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "OnRemoval");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_Ice_Feet_Environmental_C_OnRemoval_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "OnRemoval");
+
+	Params::AGCN_Loop_Ice_Feet_Environmental_C_OnRemoval_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -49,12 +77,14 @@ void AGCN_Loop_Ice_Feet_Environmental_C::OnRemoval(class AActor* MyTarget, struc
 
 void AGCN_Loop_Ice_Feet_Environmental_C::On_Player_Step()
 {
-	static auto Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "On Player Step");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_Ice_Feet_Environmental_C_On_Player_Step_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "On Player Step");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,9 +99,12 @@ void AGCN_Loop_Ice_Feet_Environmental_C::On_Player_Step()
 
 void AGCN_Loop_Ice_Feet_Environmental_C::OnLoopingStart(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "OnLoopingStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_Ice_Feet_Environmental_C_OnLoopingStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "OnLoopingStart");
+
+	Params::AGCN_Loop_Ice_Feet_Environmental_C_OnLoopingStart_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -93,9 +126,12 @@ void AGCN_Loop_Ice_Feet_Environmental_C::OnLoopingStart(class AActor* MyTarget, 
 
 void AGCN_Loop_Ice_Feet_Environmental_C::On_Target_Pawn_Hit_Event(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "On Target Pawn Hit Event");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_Ice_Feet_Environmental_C_On_Target_Pawn_Hit_Event_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "On Target Pawn Hit Event");
+
+	Params::AGCN_Loop_Ice_Feet_Environmental_C_On_Target_Pawn_Hit_Event_Params Parms{};
 
 	Parms.SelfActor = SelfActor;
 	Parms.OtherActor = OtherActor;
@@ -114,9 +150,12 @@ void AGCN_Loop_Ice_Feet_Environmental_C::On_Target_Pawn_Hit_Event(class AActor* 
 
 void AGCN_Loop_Ice_Feet_Environmental_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_Ice_Feet_Environmental_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "ReceiveTick");
+
+	Params::AGCN_Loop_Ice_Feet_Environmental_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -132,9 +171,12 @@ void AGCN_Loop_Ice_Feet_Environmental_C::ReceiveTick(float DeltaSeconds)
 
 void AGCN_Loop_Ice_Feet_Environmental_C::On_Target_Pawn_Landed(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "On Target Pawn Landed");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_Ice_Feet_Environmental_C_On_Target_Pawn_Landed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "On Target Pawn Landed");
+
+	Params::AGCN_Loop_Ice_Feet_Environmental_C_On_Target_Pawn_Landed_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -152,9 +194,12 @@ void AGCN_Loop_Ice_Feet_Environmental_C::On_Target_Pawn_Landed(struct FHitResult
 
 void AGCN_Loop_Ice_Feet_Environmental_C::On_Target_Pawn_Movement_Mode_Changed(class ACharacter* Character, enum class EMovementMode PrevMovementMode, uint8 PreviousCustomMode)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "On Target Pawn Movement Mode Changed");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_Ice_Feet_Environmental_C_On_Target_Pawn_Movement_Mode_Changed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "On Target Pawn Movement Mode Changed");
+
+	Params::AGCN_Loop_Ice_Feet_Environmental_C_On_Target_Pawn_Movement_Mode_Changed_Params Parms{};
 
 	Parms.Character = Character;
 	Parms.PrevMovementMode = PrevMovementMode;
@@ -179,9 +224,12 @@ void AGCN_Loop_Ice_Feet_Environmental_C::On_Target_Pawn_Movement_Mode_Changed(cl
 
 void AGCN_Loop_Ice_Feet_Environmental_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "ReceiveHit");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_Ice_Feet_Environmental_C_ReceiveHit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "ReceiveHit");
+
+	Params::AGCN_Loop_Ice_Feet_Environmental_C_ReceiveHit_Params Parms{};
 
 	Parms.MyComp = MyComp;
 	Parms.Other = Other;
@@ -301,9 +349,12 @@ void AGCN_Loop_Ice_Feet_Environmental_C::ReceiveHit(class UPrimitiveComponent* M
 
 void AGCN_Loop_Ice_Feet_Environmental_C::ExecuteUbergraph_GCN_Loop_Ice_Feet_Environmental(int32 EntryPoint, float CallFunc_GetGameTimeInSeconds_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_IsFalling_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class AActor* K2Node_Event_MyTarget, const struct FGameplayCueParameters& K2Node_Event_Parameters, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents, class UParticleSystemComponent* CallFunc_Array_Get_Item, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_1, class UParticleSystemComponent* CallFunc_Array_Get_Item_1, bool CallFunc_K2_AttachToComponent_ReturnValue, bool CallFunc_K2_AttachToComponent_ReturnValue_1, class AActor* K2Node_Event_MyTarget_1, const struct FGameplayCueParameters& K2Node_Event_Parameters_1, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents_1, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents_1, class UCameraShake* K2Node_Event_BurstCameraShakeInstance, class ADecalActor* K2Node_Event_BurstDecalInstance, class AActor* K2Node_CustomEvent_SelfActor, class AActor* K2Node_CustomEvent_OtherActor, const struct FVector& K2Node_CustomEvent_NormalImpulse, const struct FHitResult& K2Node_CustomEvent_Hit_1, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena_1, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_1, bool K2Node_DynamicCast_bSuccess_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, float K2Node_Event_DeltaSeconds, class UAudioComponent* CallFunc_Array_Get_Item_2, const struct FVector& CallFunc_GetVelocity_ReturnValue, float CallFunc_VSize_ReturnValue, bool CallFunc_IsValid_ReturnValue, float CallFunc_MapRangeClamped_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue, const struct FVector& CallFunc_GetVelocity_ReturnValue_1, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue, const struct FHitResult& K2Node_CustomEvent_Hit, bool CallFunc_OnCollision_OutResult, float CallFunc_OnCollision_OutMagnitude, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, const struct FTransform& Temp_struct_Variable, class ACharacter* K2Node_CustomEvent_Character, enum class EMovementMode K2Node_CustomEvent_PrevMovementMode, uint8 K2Node_CustomEvent_PreviousCustomMode, class UFortCollisionAudioComponent* CallFunc_AddComponent_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_6, bool K2Node_SwitchEnum_CmpSuccess, bool Temp_bool_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_7, class USoundBase* K2Node_Select_Default, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue_1, int32 Temp_int_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue_1, class UParticleSystemComponent* CallFunc_Array_Get_Item_3, bool CallFunc_Less_IntInt_ReturnValue, class UPrimitiveComponent* K2Node_Event_MyComp, class AActor* K2Node_Event_Other, class UPrimitiveComponent* K2Node_Event_OtherComp, bool K2Node_Event_bSelfMoved, const struct FVector& K2Node_Event_HitLocation, const struct FVector& K2Node_Event_HitNormal, const struct FVector& K2Node_Event_NormalImpulse, const struct FHitResult& K2Node_Event_Hit)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "ExecuteUbergraph_GCN_Loop_Ice_Feet_Environmental");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_Ice_Feet_Environmental_C_ExecuteUbergraph_GCN_Loop_Ice_Feet_Environmental_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_Ice_Feet_Environmental_C", "ExecuteUbergraph_GCN_Loop_Ice_Feet_Environmental");
+
+	Params::AGCN_Loop_Ice_Feet_Environmental_C_ExecuteUbergraph_GCN_Loop_Ice_Feet_Environmental_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetGameTimeInSeconds_ReturnValue = CallFunc_GetGameTimeInSeconds_ReturnValue;
@@ -410,6 +461,4 @@ void AGCN_Loop_Ice_Feet_Environmental_C::ExecuteUbergraph_GCN_Loop_Ice_Feet_Envi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

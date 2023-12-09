@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaSeasonTab.AthenaSeasonTab_C
+// (None)
+
+class UClass* UAthenaSeasonTab_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaSeasonTab_C");
+
+	return Clss;
+}
+
+
+// AthenaSeasonTab_C AthenaSeasonTab.Default__AthenaSeasonTab_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaSeasonTab_C* UAthenaSeasonTab_C::GetDefaultObj()
+{
+	static class UAthenaSeasonTab_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaSeasonTab_C*>(UAthenaSeasonTab_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaSeasonTab.AthenaSeasonTab_C.PlayOverviewVideo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UAthenaSeasonTab_C::PlayOverviewVideo(class UBattlePassOverviewVideo_C* CallFunc_Create_ReturnValue, bool CallFunc_LoadVideo_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "PlayOverviewVideo");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_PlayOverviewVideo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "PlayOverviewVideo");
+
+	Params::UAthenaSeasonTab_C_PlayOverviewVideo_Params Parms{};
 
 	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
 	Parms.CallFunc_LoadVideo_ReturnValue = CallFunc_LoadVideo_ReturnValue;
@@ -42,9 +70,12 @@ void UAthenaSeasonTab_C::PlayOverviewVideo(class UBattlePassOverviewVideo_C* Cal
 
 void UAthenaSeasonTab_C::IntroAnim(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "IntroAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_IntroAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "IntroAnim");
+
+	Params::UAthenaSeasonTab_C_IntroAnim_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -60,9 +91,12 @@ void UAthenaSeasonTab_C::IntroAnim(class UUMGSequencePlayer* CallFunc_PlayAnimat
 
 void UAthenaSeasonTab_C::SetBattleStarBackingStyle(bool CallFunc_OwnsSeasonPass_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "SetBattleStarBackingStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_SetBattleStarBackingStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "SetBattleStarBackingStyle");
+
+	Params::UAthenaSeasonTab_C_SetBattleStarBackingStyle_Params Parms{};
 
 	Parms.CallFunc_OwnsSeasonPass_ReturnValue = CallFunc_OwnsSeasonPass_ReturnValue;
 
@@ -80,9 +114,12 @@ void UAthenaSeasonTab_C::SetBattleStarBackingStyle(bool CallFunc_OwnsSeasonPass_
 
 void UAthenaSeasonTab_C::AnimatePassLabels(int32 CallFunc_GetActiveWidgetIndex_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "AnimatePassLabels");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_AnimatePassLabels_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "AnimatePassLabels");
+
+	Params::UAthenaSeasonTab_C_AnimatePassLabels_Params Parms{};
 
 	Parms.CallFunc_GetActiveWidgetIndex_ReturnValue = CallFunc_GetActiveWidgetIndex_ReturnValue;
 	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
@@ -105,9 +142,12 @@ void UAthenaSeasonTab_C::AnimatePassLabels(int32 CallFunc_GetActiveWidgetIndex_R
 
 void UAthenaSeasonTab_C::SetRightPaginationVisibility(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, int32 CallFunc_GetActiveWidgetIndex_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "SetRightPaginationVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_SetRightPaginationVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "SetRightPaginationVisibility");
+
+	Params::UAthenaSeasonTab_C_SetRightPaginationVisibility_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -131,9 +171,12 @@ void UAthenaSeasonTab_C::SetRightPaginationVisibility(bool Temp_bool_Variable, e
 
 void UAthenaSeasonTab_C::ClearPaginationPip(int32 CallFunc_GetActiveWidgetIndex_ReturnValue, class UUserWidget* CallFunc_Array_Get_Item, class UAthenaSeasonPaginationPips_C* K2Node_DynamicCast_AsAthena_Season_Pagination_Pips, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "ClearPaginationPip");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_ClearPaginationPip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "ClearPaginationPip");
+
+	Params::UAthenaSeasonTab_C_ClearPaginationPip_Params Parms{};
 
 	Parms.CallFunc_GetActiveWidgetIndex_ReturnValue = CallFunc_GetActiveWidgetIndex_ReturnValue;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
@@ -155,9 +198,12 @@ void UAthenaSeasonTab_C::ClearPaginationPip(int32 CallFunc_GetActiveWidgetIndex_
 
 void UAthenaSeasonTab_C::SetCurrentPaginationPip(int32 CallFunc_GetActiveWidgetIndex_ReturnValue, class UUserWidget* CallFunc_Array_Get_Item, class UAthenaSeasonPaginationPips_C* K2Node_DynamicCast_AsAthena_Season_Pagination_Pips, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "SetCurrentPaginationPip");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_SetCurrentPaginationPip_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "SetCurrentPaginationPip");
+
+	Params::UAthenaSeasonTab_C_SetCurrentPaginationPip_Params Parms{};
 
 	Parms.CallFunc_GetActiveWidgetIndex_ReturnValue = CallFunc_GetActiveWidgetIndex_ReturnValue;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
@@ -181,9 +227,12 @@ void UAthenaSeasonTab_C::SetCurrentPaginationPip(int32 CallFunc_GetActiveWidgetI
 
 void UAthenaSeasonTab_C::ClearPagePipLeft(int32 CallFunc_GetActiveWidgetIndex_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, class UUserWidget* CallFunc_Array_Get_Item, class UAthenaSeasonPaginationPips_C* K2Node_DynamicCast_AsAthena_Season_Pagination_Pips, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "ClearPagePipLeft");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_ClearPagePipLeft_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "ClearPagePipLeft");
+
+	Params::UAthenaSeasonTab_C_ClearPagePipLeft_Params Parms{};
 
 	Parms.CallFunc_GetActiveWidgetIndex_ReturnValue = CallFunc_GetActiveWidgetIndex_ReturnValue;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
@@ -208,9 +257,12 @@ void UAthenaSeasonTab_C::ClearPagePipLeft(int32 CallFunc_GetActiveWidgetIndex_Re
 
 void UAthenaSeasonTab_C::ClearPagePipRight(int32 CallFunc_GetActiveWidgetIndex_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, class UUserWidget* CallFunc_Array_Get_Item, class UAthenaSeasonPaginationPips_C* K2Node_DynamicCast_AsAthena_Season_Pagination_Pips, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "ClearPagePipRight");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_ClearPagePipRight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "ClearPagePipRight");
+
+	Params::UAthenaSeasonTab_C_ClearPagePipRight_Params Parms{};
 
 	Parms.CallFunc_GetActiveWidgetIndex_ReturnValue = CallFunc_GetActiveWidgetIndex_ReturnValue;
 	Parms.CallFunc_Subtract_IntInt_ReturnValue = CallFunc_Subtract_IntInt_ReturnValue;
@@ -236,9 +288,12 @@ void UAthenaSeasonTab_C::ClearPagePipRight(int32 CallFunc_GetActiveWidgetIndex_R
 
 void UAthenaSeasonTab_C::SetupPaginationPips(int32 Temp_int_Variable, int32 CallFunc_GetChildrenCount_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, class UUserWidget* CallFunc_BP_CreateEntry_ReturnValue, TArray<class UUserWidget*>& CallFunc_GetAllEntries_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "SetupPaginationPips");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_SetupPaginationPips_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "SetupPaginationPips");
+
+	Params::UAthenaSeasonTab_C_SetupPaginationPips_Params Parms{};
 
 	Parms.Temp_int_Variable = Temp_int_Variable;
 	Parms.CallFunc_GetChildrenCount_ReturnValue = CallFunc_GetChildrenCount_ReturnValue;
@@ -267,9 +322,12 @@ void UAthenaSeasonTab_C::SetupPaginationPips(int32 Temp_int_Variable, int32 Call
 
 void UAthenaSeasonTab_C::StreamedVideoOnUrlFailure(const class FString& URL, class APlayerController* CallFunc_GetPlayerController_ReturnValue, bool CallFunc_LoadVideo_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "StreamedVideoOnUrlFailure");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_StreamedVideoOnUrlFailure_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "StreamedVideoOnUrlFailure");
+
+	Params::UAthenaSeasonTab_C_StreamedVideoOnUrlFailure_Params Parms{};
 
 	Parms.URL = URL;
 	Parms.CallFunc_GetPlayerController_ReturnValue = CallFunc_GetPlayerController_ReturnValue;
@@ -301,9 +359,12 @@ void UAthenaSeasonTab_C::StreamedVideoOnUrlFailure(const class FString& URL, cla
 
 void UAthenaSeasonTab_C::StreamedVideoOnUrlSuccess(const class FString& URL, float CallFunc_GetTimeLimitForReplayCinematic_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, bool CallFunc_LoadVideo_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "StreamedVideoOnUrlSuccess");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_StreamedVideoOnUrlSuccess_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "StreamedVideoOnUrlSuccess");
+
+	Params::UAthenaSeasonTab_C_StreamedVideoOnUrlSuccess_Params Parms{};
 
 	Parms.URL = URL;
 	Parms.CallFunc_GetTimeLimitForReplayCinematic_ReturnValue = CallFunc_GetTimeLimitForReplayCinematic_ReturnValue;
@@ -330,9 +391,12 @@ void UAthenaSeasonTab_C::StreamedVideoOnUrlSuccess(const class FString& URL, flo
 
 void UAthenaSeasonTab_C::StreamedVideoOnSkipBeforeVideoURLReceived(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "StreamedVideoOnSkipBeforeVideoURLReceived");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_StreamedVideoOnSkipBeforeVideoURLReceived_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "StreamedVideoOnSkipBeforeVideoURLReceived");
+
+	Params::UAthenaSeasonTab_C_StreamedVideoOnSkipBeforeVideoURLReceived_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
@@ -355,9 +419,12 @@ void UAthenaSeasonTab_C::StreamedVideoOnSkipBeforeVideoURLReceived(UDelegateProp
 
 void UAthenaSeasonTab_C::SetLeftPaginationVisibility(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, int32 CallFunc_GetActiveWidgetIndex_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "SetLeftPaginationVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_SetLeftPaginationVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "SetLeftPaginationVisibility");
+
+	Params::UAthenaSeasonTab_C_SetLeftPaginationVisibility_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -385,9 +452,12 @@ void UAthenaSeasonTab_C::SetLeftPaginationVisibility(bool Temp_bool_Variable, en
 
 void UAthenaSeasonTab_C::StreamedVideoPlayingTimedOut(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue, class AFortPlayerController* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "StreamedVideoPlayingTimedOut");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_StreamedVideoPlayingTimedOut_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "StreamedVideoPlayingTimedOut");
+
+	Params::UAthenaSeasonTab_C_StreamedVideoPlayingTimedOut_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -418,9 +488,12 @@ void UAthenaSeasonTab_C::StreamedVideoPlayingTimedOut(int32 Temp_int_Array_Index
 
 void UAthenaSeasonTab_C::StreamedVideoOnSkipButtonClicked(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class AFortPlayerController* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "StreamedVideoOnSkipButtonClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "StreamedVideoOnSkipButtonClicked");
+
+	Params::UAthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -451,9 +524,12 @@ void UAthenaSeasonTab_C::StreamedVideoOnSkipButtonClicked(int32 Temp_int_Array_I
 
 void UAthenaSeasonTab_C::StreamedVideoOnMediaPlayerEndReached(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class AFortPlayerController* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "StreamedVideoOnMediaPlayerEndReached");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "StreamedVideoOnMediaPlayerEndReached");
+
+	Params::UAthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -485,9 +561,12 @@ void UAthenaSeasonTab_C::StreamedVideoOnMediaPlayerEndReached(int32 Temp_int_Arr
 
 void UAthenaSeasonTab_C::StreamedVideoOpeningTimedOut(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue, class AFortPlayerController* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_LoadVideo_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "StreamedVideoOpeningTimedOut");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_StreamedVideoOpeningTimedOut_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "StreamedVideoOpeningTimedOut");
+
+	Params::UAthenaSeasonTab_C_StreamedVideoOpeningTimedOut_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -523,9 +602,12 @@ void UAthenaSeasonTab_C::StreamedVideoOpeningTimedOut(int32 Temp_int_Array_Index
 
 void UAthenaSeasonTab_C::StreamedVideoOnMediaOpened(const class FString& OpenedUrl, float CallFunc_GetTimeLimitForReplayCinematic_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, const struct FTimespan& CallFunc_GetDuration_ReturnValue, float CallFunc_GetTimeLimitForReplayCinematic_ReturnValue_1, float CallFunc_GetTotalSeconds_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_FMin_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "StreamedVideoOnMediaOpened");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_StreamedVideoOnMediaOpened_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "StreamedVideoOnMediaOpened");
+
+	Params::UAthenaSeasonTab_C_StreamedVideoOnMediaOpened_Params Parms{};
 
 	Parms.OpenedUrl = OpenedUrl;
 	Parms.CallFunc_GetTimeLimitForReplayCinematic_ReturnValue = CallFunc_GetTimeLimitForReplayCinematic_ReturnValue;
@@ -551,12 +633,14 @@ void UAthenaSeasonTab_C::StreamedVideoOnMediaOpened(const class FString& OpenedU
 
 void UAthenaSeasonTab_C::UpdateSeasonPurchaseStateNoTransition()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "UpdateSeasonPurchaseStateNoTransition");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_UpdateSeasonPurchaseStateNoTransition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "UpdateSeasonPurchaseStateNoTransition");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -568,9 +652,12 @@ void UAthenaSeasonTab_C::UpdateSeasonPurchaseStateNoTransition()
 
 class UWidget* UAthenaSeasonTab_C::GetWidgetForFramingViewedItem()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "GetWidgetForFramingViewedItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_GetWidgetForFramingViewedItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "GetWidgetForFramingViewedItem");
+
+	Params::UAthenaSeasonTab_C_GetWidgetForFramingViewedItem_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -593,9 +680,12 @@ class UWidget* UAthenaSeasonTab_C::GetWidgetForFramingViewedItem()
 
 void UAthenaSeasonTab_C::PlaySeasonCinematic(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class APlayerController* CallFunc_GetPlayerController_ReturnValue, bool CallFunc_UseElectraForReplayCinematic_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UActivatableMovieWidget_C* CallFunc_Create_ReturnValue, bool CallFunc_LoadVideo_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "PlaySeasonCinematic");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_PlaySeasonCinematic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "PlaySeasonCinematic");
+
+	Params::UAthenaSeasonTab_C_PlaySeasonCinematic_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate_1 = K2Node_CreateDelegate_OutputDelegate_1;
@@ -617,9 +707,12 @@ void UAthenaSeasonTab_C::PlaySeasonCinematic(UDelegateProperty_ K2Node_CreateDel
 
 void UAthenaSeasonTab_C::Handle_ReplayCinematic(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "Handle_ReplayCinematic");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_Handle_ReplayCinematic_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "Handle_ReplayCinematic");
+
+	Params::UAthenaSeasonTab_C_Handle_ReplayCinematic_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -640,9 +733,12 @@ void UAthenaSeasonTab_C::Handle_ReplayCinematic(bool* PassThrough)
 
 void UAthenaSeasonTab_C::UpdateLevelPageWidgetSwitcherTranslation(float CallFunc_FClamp_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "UpdateLevelPageWidgetSwitcherTranslation");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_UpdateLevelPageWidgetSwitcherTranslation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "UpdateLevelPageWidgetSwitcherTranslation");
+
+	Params::UAthenaSeasonTab_C_UpdateLevelPageWidgetSwitcherTranslation_Params Parms{};
 
 	Parms.CallFunc_FClamp_ReturnValue = CallFunc_FClamp_ReturnValue;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
@@ -663,9 +759,12 @@ void UAthenaSeasonTab_C::UpdateLevelPageWidgetSwitcherTranslation(float CallFunc
 
 void UAthenaSeasonTab_C::OnUpdateInputType(enum class ECommonInputType NewInputType, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "OnUpdateInputType");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_OnUpdateInputType_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "OnUpdateInputType");
+
+	Params::UAthenaSeasonTab_C_OnUpdateInputType_Params Parms{};
 
 	Parms.NewInputType = NewInputType;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
@@ -693,9 +792,12 @@ void UAthenaSeasonTab_C::OnUpdateInputType(enum class ECommonInputType NewInputT
 
 void UAthenaSeasonTab_C::OpenPurchaseScreen(bool CallFunc_IsMobileGame_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue_1, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_2, class UAthenaSeasonItemDefinition* CallFunc_GetCurrentSeasonDefinition_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UBattlePassDirectAcquisitionScreen_C* CallFunc_Create_ReturnValue, TArray<class FString>& K2Node_MakeArray_Array, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue_3, int32 CallFunc_GetCurrentSeasonNumber_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "OpenPurchaseScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_OpenPurchaseScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "OpenPurchaseScreen");
+
+	Params::UAthenaSeasonTab_C_OpenPurchaseScreen_Params Parms{};
 
 	Parms.CallFunc_IsMobileGame_ReturnValue = CallFunc_IsMobileGame_ReturnValue;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -728,9 +830,12 @@ void UAthenaSeasonTab_C::OpenPurchaseScreen(bool CallFunc_IsMobileGame_ReturnVal
 
 void UAthenaSeasonTab_C::Handle_ShowAbout(bool* PassThrough, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class FText Temp_text_Variable, class UHelpPanel_C* CallFunc_Create_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_1, class UAthenaSeasonAboutWidget_C* CallFunc_Create_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "Handle_ShowAbout");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_Handle_ShowAbout_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "Handle_ShowAbout");
+
+	Params::UAthenaSeasonTab_C_Handle_ShowAbout_Params Parms{};
 
 	Parms.CallFunc_GetRuntimeOptions_ReturnValue = CallFunc_GetRuntimeOptions_ReturnValue;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -755,18 +860,21 @@ void UAthenaSeasonTab_C::Handle_ShowAbout(bool* PassThrough, class UFortRuntimeO
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // int32                              CallFunc_GetNumWidgets_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            (None)
 // int32                              CallFunc_Subtract_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaSeasonTab_C::UpdatePageCount(int32 ActiveIndex, bool CallFunc_EqualEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, int32 CallFunc_GetNumWidgets_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue_1, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "UpdatePageCount");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_UpdatePageCount_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "UpdatePageCount");
+
+	Params::UAthenaSeasonTab_C_UpdatePageCount_Params Parms{};
 
 	Parms.ActiveIndex = ActiveIndex;
 	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
@@ -788,31 +896,34 @@ void UAthenaSeasonTab_C::UpdatePageCount(int32 ActiveIndex, bool CallFunc_EqualE
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               bAlreadyOwnsPass                                                 (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortToastDisplayInfo       K2Node_MakeStruct_FortToastDisplayInfo                           ()
+// struct FFortToastDisplayInfo       K2Node_MakeStruct_FortToastDisplayInfo                           (None)
 // bool                               CallFunc_CanClaimBattlePassDiscountToken_ReturnValue             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_HasUnclaimedBattlePassDiscountToken_ReturnValue         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_GetSeasonPassLevelForPurchase_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortSeasonPassLevelInfo*    CallFunc_GetLevelInfo_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetFormattedPurchaseBattlePassDescriptionText_ReturnValue()
-// class FText                        CallFunc_GetFormattedPurchaseTierDescriptionText_ReturnValue     ()
+// class FText                        CallFunc_GetFormattedPurchaseBattlePassDescriptionText_ReturnValue(None)
+// class FText                        CallFunc_GetFormattedPurchaseTierDescriptionText_ReturnValue     (None)
 // bool                               CallFunc_PurchaseAvailible_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FDateTime                   CallFunc_GetSeasonEndDate_ReturnValue                            (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UAthenaAccountContext*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetCurrentSeasonNumber_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // bool                               CallFunc_OwnsSeasonPass_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAthenaSeasonTab_C::UpdateSeasonPurchaseState(bool bAlreadyOwnsPass, const struct FFortToastDisplayInfo& K2Node_MakeStruct_FortToastDisplayInfo, bool CallFunc_CanClaimBattlePassDiscountToken_ReturnValue, bool CallFunc_HasUnclaimedBattlePassDiscountToken_ReturnValue, int32 CallFunc_GetSeasonPassLevelForPurchase_ReturnValue, class UFortSeasonPassLevelInfo* CallFunc_GetLevelInfo_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class FText CallFunc_GetFormattedPurchaseBattlePassDescriptionText_ReturnValue, class FText CallFunc_GetFormattedPurchaseTierDescriptionText_ReturnValue, bool CallFunc_PurchaseAvailible_ReturnValue, const struct FDateTime& CallFunc_GetSeasonEndDate_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue, int32 CallFunc_GetCurrentSeasonNumber_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, bool CallFunc_OwnsSeasonPass_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "UpdateSeasonPurchaseState");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_UpdateSeasonPurchaseState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "UpdateSeasonPurchaseState");
+
+	Params::UAthenaSeasonTab_C_UpdateSeasonPurchaseState_Params Parms{};
 
 	Parms.bAlreadyOwnsPass = bAlreadyOwnsPass;
 	Parms.K2Node_MakeStruct_FortToastDisplayInfo = K2Node_MakeStruct_FortToastDisplayInfo;
@@ -857,9 +968,12 @@ void UAthenaSeasonTab_C::UpdateSeasonPurchaseState(bool bAlreadyOwnsPass, const 
 
 void UAthenaSeasonTab_C::SetupViewedItemData(class UFortItem* Item, int32 CallFunc_GetNumInStack_ReturnValue, class UFortItemDefinition* CallFunc_GetItemDefinitionBP_ReturnValue, const struct FFortItemQuantityPair& CallFunc_MakeItemQuantityPair_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_SetItemQuantityPairToRepresent_ReturnValue, bool CallFunc_HasValidItemDefinition_HasValidDescription, float CallFunc_GetEndTime_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "SetupViewedItemData");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_SetupViewedItemData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "SetupViewedItemData");
+
+	Params::UAthenaSeasonTab_C_SetupViewedItemData_Params Parms{};
 
 	Parms.Item = Item;
 	Parms.CallFunc_GetNumInStack_ReturnValue = CallFunc_GetNumInStack_ReturnValue;
@@ -894,9 +1008,12 @@ void UAthenaSeasonTab_C::SetupViewedItemData(class UFortItem* Item, int32 CallFu
 
 void UAthenaSeasonTab_C::SelectPageByLevel(int32 TargetLevel, int32 Temp_int_Variable, class UWidget* CallFunc_GetChildAt_ReturnValue, int32 CallFunc_GetChildrenCount_ReturnValue, class USeasonPassPageWidget* K2Node_DynamicCast_AsSeason_Pass_Page_Widget, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_ContainsLevel_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "SelectPageByLevel");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_SelectPageByLevel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "SelectPageByLevel");
+
+	Params::UAthenaSeasonTab_C_SelectPageByLevel_Params Parms{};
 
 	Parms.TargetLevel = TargetLevel;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -930,9 +1047,12 @@ void UAthenaSeasonTab_C::SelectPageByLevel(int32 TargetLevel, int32 Temp_int_Var
 
 TArray<class USeasonPassLevelWidget*> UAthenaSeasonTab_C::GenerateLevelWidgets(class UFortSeasonPassLevelInfo* LevelInfo, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, TArray<class USeasonPassLevelWidget*>& CallFunc_AddLevelWidgets_LevelWidgets, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UAthenaSeasonPageWidget_C* CallFunc_Create_ReturnValue, bool CallFunc_IsFull_Full, bool CallFunc_IsValid_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "GenerateLevelWidgets");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_GenerateLevelWidgets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "GenerateLevelWidgets");
+
+	Params::UAthenaSeasonTab_C_GenerateLevelWidgets_Params Parms{};
 
 	Parms.LevelInfo = LevelInfo;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -957,12 +1077,14 @@ TArray<class USeasonPassLevelWidget*> UAthenaSeasonTab_C::GenerateLevelWidgets(c
 
 void UAthenaSeasonTab_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -973,12 +1095,14 @@ void UAthenaSeasonTab_C::Construct()
 
 void UAthenaSeasonTab_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -989,12 +1113,14 @@ void UAthenaSeasonTab_C::BP_OnActivated()
 
 void UAthenaSeasonTab_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1006,9 +1132,12 @@ void UAthenaSeasonTab_C::BP_OnDeactivated()
 
 void UAthenaSeasonTab_C::OnNavigateToLevel(int32 Level)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "OnNavigateToLevel");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_OnNavigateToLevel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "OnNavigateToLevel");
+
+	Params::UAthenaSeasonTab_C_OnNavigateToLevel_Params Parms{};
 
 	Parms.Level = Level;
 
@@ -1023,12 +1152,14 @@ void UAthenaSeasonTab_C::OnNavigateToLevel(int32 Level)
 
 void UAthenaSeasonTab_C::OnSeasonPassChanged()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "OnSeasonPassChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_OnSeasonPassChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "OnSeasonPassChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1040,9 +1171,12 @@ void UAthenaSeasonTab_C::OnSeasonPassChanged()
 
 void UAthenaSeasonTab_C::BndEvt__PurchaseSeasonBtn_K2Node_ComponentBoundEvent_61_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__PurchaseSeasonBtn_K2Node_ComponentBoundEvent_61_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_BndEvt__PurchaseSeasonBtn_K2Node_ComponentBoundEvent_61_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__PurchaseSeasonBtn_K2Node_ComponentBoundEvent_61_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSeasonTab_C_BndEvt__PurchaseSeasonBtn_K2Node_ComponentBoundEvent_61_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1057,12 +1191,14 @@ void UAthenaSeasonTab_C::BndEvt__PurchaseSeasonBtn_K2Node_ComponentBoundEvent_61
 
 void UAthenaSeasonTab_C::OnLevelsGenerated()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "OnLevelsGenerated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_OnLevelsGenerated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "OnLevelsGenerated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1073,12 +1209,14 @@ void UAthenaSeasonTab_C::OnLevelsGenerated()
 
 void UAthenaSeasonTab_C::HandlePageLeft()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "HandlePageLeft");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_HandlePageLeft_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "HandlePageLeft");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1089,12 +1227,14 @@ void UAthenaSeasonTab_C::HandlePageLeft()
 
 void UAthenaSeasonTab_C::HandlePageRight()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "HandlePageRight");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_HandlePageRight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "HandlePageRight");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1107,9 +1247,12 @@ void UAthenaSeasonTab_C::HandlePageRight()
 
 void UAthenaSeasonTab_C::BndEvt__LevelPageWidgetSwitcher_K2Node_ComponentBoundEvent_1_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__LevelPageWidgetSwitcher_K2Node_ComponentBoundEvent_1_OnActiveWidgetChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_BndEvt__LevelPageWidgetSwitcher_K2Node_ComponentBoundEvent_1_OnActiveWidgetChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__LevelPageWidgetSwitcher_K2Node_ComponentBoundEvent_1_OnActiveWidgetChanged__DelegateSignature");
+
+	Params::UAthenaSeasonTab_C_BndEvt__LevelPageWidgetSwitcher_K2Node_ComponentBoundEvent_1_OnActiveWidgetChanged__DelegateSignature_Params Parms{};
 
 	Parms.ActiveWidget = ActiveWidget;
 	Parms.ActiveWidgetIndex = ActiveWidgetIndex;
@@ -1126,9 +1269,12 @@ void UAthenaSeasonTab_C::BndEvt__LevelPageWidgetSwitcher_K2Node_ComponentBoundEv
 
 void UAthenaSeasonTab_C::BndEvt__PurchaseLevelBtn_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__PurchaseLevelBtn_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_BndEvt__PurchaseLevelBtn_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__PurchaseLevelBtn_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSeasonTab_C_BndEvt__PurchaseLevelBtn_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1143,12 +1289,14 @@ void UAthenaSeasonTab_C::BndEvt__PurchaseLevelBtn_K2Node_ComponentBoundEvent_40_
 
 void UAthenaSeasonTab_C::ScrollPositive()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "ScrollPositive");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_ScrollPositive_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "ScrollPositive");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1159,12 +1307,14 @@ void UAthenaSeasonTab_C::ScrollPositive()
 
 void UAthenaSeasonTab_C::ScrollNegative()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "ScrollNegative");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_ScrollNegative_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "ScrollNegative");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1176,9 +1326,12 @@ void UAthenaSeasonTab_C::ScrollNegative()
 
 void UAthenaSeasonTab_C::UpdateStoreHasStarsNotification(bool bShowNotification)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "UpdateStoreHasStarsNotification");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_UpdateStoreHasStarsNotification_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "UpdateStoreHasStarsNotification");
+
+	Params::UAthenaSeasonTab_C_UpdateStoreHasStarsNotification_Params Parms{};
 
 	Parms.bShowNotification = bShowNotification;
 
@@ -1193,12 +1346,14 @@ void UAthenaSeasonTab_C::UpdateStoreHasStarsNotification(bool bShowNotification)
 
 void UAthenaSeasonTab_C::SetupInput()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "SetupInput");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_SetupInput_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "SetupInput");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1212,9 +1367,12 @@ void UAthenaSeasonTab_C::SetupInput()
 
 void UAthenaSeasonTab_C::OnFAQStateChanged(enum class EFortUIFeature ChangedFeature, enum class EFortUIFeatureState NewState, enum class EFortUIFeatureStateReason StateReason)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "OnFAQStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_OnFAQStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "OnFAQStateChanged");
+
+	Params::UAthenaSeasonTab_C_OnFAQStateChanged_Params Parms{};
 
 	Parms.ChangedFeature = ChangedFeature;
 	Parms.NewState = NewState;
@@ -1233,9 +1391,12 @@ void UAthenaSeasonTab_C::OnFAQStateChanged(enum class EFortUIFeature ChangedFeat
 
 void UAthenaSeasonTab_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "Tick");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_Tick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "Tick");
+
+	Params::UAthenaSeasonTab_C_Tick_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.InDeltaTime = InDeltaTime;
@@ -1251,12 +1412,14 @@ void UAthenaSeasonTab_C::Tick(const struct FGeometry& MyGeometry, float InDeltaT
 
 void UAthenaSeasonTab_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_103_OnFortSwipeEvent__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_103_OnFortSwipeEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_BndEvt__SwipePanel_K2Node_ComponentBoundEvent_103_OnFortSwipeEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_103_OnFortSwipeEvent__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1267,12 +1430,14 @@ void UAthenaSeasonTab_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_103_OnFor
 
 void UAthenaSeasonTab_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_118_OnFortSwipeEvent__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_118_OnFortSwipeEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_BndEvt__SwipePanel_K2Node_ComponentBoundEvent_118_OnFortSwipeEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__SwipePanel_K2Node_ComponentBoundEvent_118_OnFortSwipeEvent__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1283,12 +1448,14 @@ void UAthenaSeasonTab_C::BndEvt__SwipePanel_K2Node_ComponentBoundEvent_118_OnFor
 
 void UAthenaSeasonTab_C::OnNoCurrentSeason()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "OnNoCurrentSeason");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_OnNoCurrentSeason_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "OnNoCurrentSeason");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1301,9 +1468,12 @@ void UAthenaSeasonTab_C::OnNoCurrentSeason()
 
 void UAthenaSeasonTab_C::OnSetGiftability(bool bIsGiftable, class FText& FinalPriceText)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "OnSetGiftability");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_OnSetGiftability_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "OnSetGiftability");
+
+	Params::UAthenaSeasonTab_C_OnSetGiftability_Params Parms{};
 
 	Parms.bIsGiftable = bIsGiftable;
 	Parms.FinalPriceText = FinalPriceText;
@@ -1319,12 +1489,14 @@ void UAthenaSeasonTab_C::OnSetGiftability(bool bIsGiftable, class FText& FinalPr
 
 void UAthenaSeasonTab_C::Season_Variant_Preview_Info_Updated()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "Season Variant Preview Info Updated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_Season_Variant_Preview_Info_Updated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "Season Variant Preview Info Updated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1335,12 +1507,14 @@ void UAthenaSeasonTab_C::Season_Variant_Preview_Info_Updated()
 
 void UAthenaSeasonTab_C::OnAddedToActivationStack()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "OnAddedToActivationStack");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_OnAddedToActivationStack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "OnAddedToActivationStack");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1352,9 +1526,12 @@ void UAthenaSeasonTab_C::OnAddedToActivationStack()
 
 void UAthenaSeasonTab_C::BndEvt__ClaimFreeSeasonBtn_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__ClaimFreeSeasonBtn_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_BndEvt__ClaimFreeSeasonBtn_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__ClaimFreeSeasonBtn_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSeasonTab_C_BndEvt__ClaimFreeSeasonBtn_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1369,12 +1546,14 @@ void UAthenaSeasonTab_C::BndEvt__ClaimFreeSeasonBtn_K2Node_ComponentBoundEvent_0
 
 void UAthenaSeasonTab_C::BndEvt__FancyToastWidget_K2Node_ComponentBoundEvent_3_OnToastClicked__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__FancyToastWidget_K2Node_ComponentBoundEvent_3_OnToastClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_BndEvt__FancyToastWidget_K2Node_ComponentBoundEvent_3_OnToastClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__FancyToastWidget_K2Node_ComponentBoundEvent_3_OnToastClicked__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1386,9 +1565,12 @@ void UAthenaSeasonTab_C::BndEvt__FancyToastWidget_K2Node_ComponentBoundEvent_3_O
 
 void UAthenaSeasonTab_C::BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSeasonTab_C_BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1404,9 +1586,12 @@ void UAthenaSeasonTab_C::BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_Common
 
 void UAthenaSeasonTab_C::BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSeasonTab_C_BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1422,9 +1607,12 @@ void UAthenaSeasonTab_C::BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_5_Commo
 
 void UAthenaSeasonTab_C::BndEvt__ViewAllRewards_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__ViewAllRewards_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_BndEvt__ViewAllRewards_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__ViewAllRewards_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSeasonTab_C_BndEvt__ViewAllRewards_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1439,12 +1627,14 @@ void UAthenaSeasonTab_C::BndEvt__ViewAllRewards_K2Node_ComponentBoundEvent_6_Com
 
 void UAthenaSeasonTab_C::UpdatePurchaseDescription()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "UpdatePurchaseDescription");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_UpdatePurchaseDescription_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "UpdatePurchaseDescription");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1456,9 +1646,12 @@ void UAthenaSeasonTab_C::UpdatePurchaseDescription()
 
 void UAthenaSeasonTab_C::BndEvt__GiftSeasonPass_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__GiftSeasonPass_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_BndEvt__GiftSeasonPass_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "BndEvt__GiftSeasonPass_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSeasonTab_C_BndEvt__GiftSeasonPass_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -1493,10 +1686,10 @@ void UAthenaSeasonTab_C::BndEvt__GiftSeasonPass_K2Node_ComponentBoundEvent_2_Com
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_GetSeasonPassLevel_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortFrontEndContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // TMap<int32, class UFortSeasonPassLevelInfo*>CallFunc_GetAllLevelInfos_ReturnValue                            (ConstParm, ZeroConstructor)
 // int32                              CallFunc_GetSeasonPassLevelMax_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_bShowNotification                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1515,21 +1708,21 @@ void UAthenaSeasonTab_C::BndEvt__GiftSeasonPass_K2Node_ComponentBoundEvent_2_Com
 // class UFortFrontEndContext*        CallFunc_GetContext_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAthenaSeasonPageWidget_C*   K2Node_DynamicCast_AsAthena_Season_Page_Widget_1                 (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FUnlockableVariantPreviewInfoCallFunc_GetSeasonTabVariantPreviewInfo_ReturnValue              ()
+// struct FUnlockableVariantPreviewInfoCallFunc_GetSeasonTabVariantPreviewInfo_ReturnValue              (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // float                              CallFunc_Abs_ReturnValue                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
 // bool                               CallFunc_Greater_FloatFloat_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAthenaAccountContext*       CallFunc_GetContext_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonInputSubsystem*       CallFunc_GetContext_ReturnValue_3                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetCurrentChapterAndSeasonText_ReturnValue              ()
+// class FText                        CallFunc_GetCurrentChapterAndSeasonText_ReturnValue              (None)
 // enum class ECommonInputType        CallFunc_GetCurrentInputType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_3                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_2                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue_2                                    ()
+// class FText                        CallFunc_Format_ReturnValue_2                                    (None)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_2                           (ZeroConstructor, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_3                           (ZeroConstructor, NoDestructor)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1594,9 +1787,12 @@ void UAthenaSeasonTab_C::BndEvt__GiftSeasonPass_K2Node_ComponentBoundEvent_2_Com
 
 void UAthenaSeasonTab_C::ExecuteUbergraph_AthenaSeasonTab(int32 EntryPoint, int32 K2Node_Event_Level, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UCommonButton* K2Node_ComponentBoundEvent_Button_6, bool Temp_bool_Variable, bool CallFunc_IsValid_ReturnValue, class UWidget* K2Node_ComponentBoundEvent_ActiveWidget, int32 K2Node_ComponentBoundEvent_ActiveWidgetIndex, int32 CallFunc_GetSeasonPassLevel_ReturnValue, class UAthenaSeasonPageWidget_C* K2Node_DynamicCast_AsAthena_Season_Page_Widget, bool K2Node_DynamicCast_bSuccess, enum class ESlateVisibility Temp_byte_Variable, int32 CallFunc_GetLastLevel_LastLevel, int32 CallFunc_GetFirstLevel_FirstLevel, const class FString& CallFunc_Conv_IntToString_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_5, const class FString& CallFunc_Concat_StrStr_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UAthenaSeasonLevelConfirmationScreen_C* CallFunc_Create_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, int32 CallFunc_GetSeasonPassLevel_ReturnValue_1, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, TMap<int32, class UFortSeasonPassLevelInfo*> CallFunc_GetAllLevelInfos_ReturnValue, int32 CallFunc_GetSeasonPassLevelMax_ReturnValue, bool K2Node_Event_bShowNotification, enum class ESlateVisibility Temp_byte_Variable_2, enum class EFortUIFeature K2Node_CustomEvent_ChangedFeature, enum class EFortUIFeatureState K2Node_CustomEvent_NewState, enum class EFortUIFeatureStateReason K2Node_CustomEvent_StateReason, bool K2Node_SwitchEnum_CmpSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, enum class ESlateVisibility Temp_byte_Variable_3, bool CallFunc_IsActivated_ReturnValue, bool Temp_bool_Variable_2, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime, class UWidget* CallFunc_GetActiveWidget_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_1, class UAthenaSeasonPageWidget_C* K2Node_DynamicCast_AsAthena_Season_Page_Widget_1, bool K2Node_DynamicCast_bSuccess_1, const struct FUnlockableVariantPreviewInfo& CallFunc_GetSeasonTabVariantPreviewInfo_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, float CallFunc_Abs_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, bool CallFunc_Greater_FloatFloat_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue_2, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_3, class FText CallFunc_GetCurrentChapterAndSeasonText_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_2, class FText CallFunc_Format_ReturnValue_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, float CallFunc_Multiply_FloatFloat_ReturnValue, int32 CallFunc_GetSwipeInfo_OutIndex, const struct FVector2D& CallFunc_GetSwipeInfo_OutSwipePercentage, int32 CallFunc_GetActiveWidgetIndex_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, bool CallFunc_NotEqual_IntInt_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue_1, int32 CallFunc_GetNumWidgets_ReturnValue, int32 CallFunc_GetActiveWidgetIndex_ReturnValue_1, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, bool CallFunc_GetShowReplayTrailerButton_Athena_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_4, const struct FGeometry& CallFunc_GetCachedGeometry_ReturnValue, const struct FVector2D& CallFunc_GetLocalSize_ReturnValue, float CallFunc_BreakVector2D_X_1, float CallFunc_BreakVector2D_Y_1, bool K2Node_Event_bIsGiftable, class FText K2Node_Event_FinalPriceText, enum class ESlateVisibility K2Node_Select_Default_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue_5, class UAthenaSeasonItemDefinition* CallFunc_GetCurrentSeasonDefinition_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, class UCommonButton* K2Node_ComponentBoundEvent_Button_4, bool Temp_bool_Variable_3, int32 CallFunc_GetSeasonPassLevelForPurchase_ReturnValue, int32 CallFunc_GetSeasonPassLevel_ReturnValue_2, enum class ESlateVisibility K2Node_Select_Default_2, int32 CallFunc_Add_IntInt_ReturnValue, class UFortSeasonPassLevelInfo* CallFunc_GetLevelInfo_ReturnValue, const struct FGeometry& CallFunc_GetCachedGeometry_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, const struct FVector2D& CallFunc_GetLocalSize_ReturnValue_1, const struct FVector2D& CallFunc_LocalToAbsolute_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, const struct FVector2D& CallFunc_AbsoluteToLocal_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, float CallFunc_BreakVector2D_X_2, float CallFunc_BreakVector2D_Y_2, float CallFunc_Subtract_FloatFloat_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_6, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_1, class UBattlePassViewRewardsScreen_C* CallFunc_Create_ReturnValue_1, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_1, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_7, const struct FDataTableRowHandle& K2Node_Select_Default_3, bool CallFunc_ShouldDisplayUpsell_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Handle_ShowAbout_Passthrough, bool CallFunc_BooleanAND_ReturnValue_1, class UCommonButton* K2Node_ComponentBoundEvent_Button)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonTab_C", "ExecuteUbergraph_AthenaSeasonTab");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonTab_C", "ExecuteUbergraph_AthenaSeasonTab");
+
+	Params::UAthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_Level = K2Node_Event_Level;
@@ -1726,6 +1922,4 @@ void UAthenaSeasonTab_C::ExecuteUbergraph_AthenaSeasonTab(int32 EntryPoint, int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

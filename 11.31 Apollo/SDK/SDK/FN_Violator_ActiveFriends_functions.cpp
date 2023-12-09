@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass Violator_ActiveFriends.Violator_ActiveFriends_C
+// (None)
+
+class UClass* UViolator_ActiveFriends_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Violator_ActiveFriends_C");
+
+	return Clss;
+}
+
+
+// Violator_ActiveFriends_C Violator_ActiveFriends.Default__Violator_ActiveFriends_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UViolator_ActiveFriends_C* UViolator_ActiveFriends_C::GetDefaultObj()
+{
+	static class UViolator_ActiveFriends_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UViolator_ActiveFriends_C*>(UViolator_ActiveFriends_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Violator_ActiveFriends.Violator_ActiveFriends_C.CallOut Hide
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UViolator_ActiveFriends_C::CallOut_Hide(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Violator_ActiveFriends_C", "CallOut Hide");
+	static class UFunction* Func = nullptr;
 
-	Params::UViolator_ActiveFriends_C_CallOut_Hide_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Violator_ActiveFriends_C", "CallOut Hide");
+
+	Params::UViolator_ActiveFriends_C_CallOut_Hide_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -40,9 +68,12 @@ void UViolator_ActiveFriends_C::CallOut_Hide(class UUMGSequencePlayer* CallFunc_
 
 void UViolator_ActiveFriends_C::CallOut_Surface(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Violator_ActiveFriends_C", "CallOut Surface");
+	static class UFunction* Func = nullptr;
 
-	Params::UViolator_ActiveFriends_C_CallOut_Surface_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Violator_ActiveFriends_C", "CallOut Surface");
+
+	Params::UViolator_ActiveFriends_C_CallOut_Surface_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -57,12 +88,14 @@ void UViolator_ActiveFriends_C::CallOut_Surface(class UUMGSequencePlayer* CallFu
 
 void UViolator_ActiveFriends_C::UpdateData()
 {
-	static auto Func = Class->GetFunction("Violator_ActiveFriends_C", "UpdateData");
+	static class UFunction* Func = nullptr;
 
-	Params::UViolator_ActiveFriends_C_UpdateData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Violator_ActiveFriends_C", "UpdateData");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -74,9 +107,12 @@ void UViolator_ActiveFriends_C::UpdateData()
 
 void UViolator_ActiveFriends_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("Violator_ActiveFriends_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UViolator_ActiveFriends_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Violator_ActiveFriends_C", "PreConstruct");
+
+	Params::UViolator_ActiveFriends_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -91,12 +127,14 @@ void UViolator_ActiveFriends_C::PreConstruct(bool IsDesignTime)
 
 void UViolator_ActiveFriends_C::Construct()
 {
-	static auto Func = Class->GetFunction("Violator_ActiveFriends_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UViolator_ActiveFriends_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Violator_ActiveFriends_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -109,9 +147,12 @@ void UViolator_ActiveFriends_C::Construct()
 
 void UViolator_ActiveFriends_C::ExecuteUbergraph_Violator_ActiveFriends(int32 EntryPoint, bool K2Node_Event_IsDesignTime)
 {
-	static auto Func = Class->GetFunction("Violator_ActiveFriends_C", "ExecuteUbergraph_Violator_ActiveFriends");
+	static class UFunction* Func = nullptr;
 
-	Params::UViolator_ActiveFriends_C_ExecuteUbergraph_Violator_ActiveFriends_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Violator_ActiveFriends_C", "ExecuteUbergraph_Violator_ActiveFriends");
+
+	Params::UViolator_ActiveFriends_C_ExecuteUbergraph_Violator_ActiveFriends_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -122,6 +163,4 @@ void UViolator_ActiveFriends_C::ExecuteUbergraph_Violator_ActiveFriends(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

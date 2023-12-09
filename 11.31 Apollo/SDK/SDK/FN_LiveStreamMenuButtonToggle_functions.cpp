@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass LiveStreamMenuButtonToggle.LiveStreamMenuButtonToggle_C
+// (None)
+
+class UClass* ULiveStreamMenuButtonToggle_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LiveStreamMenuButtonToggle_C");
+
+	return Clss;
+}
+
+
+// LiveStreamMenuButtonToggle_C LiveStreamMenuButtonToggle.Default__LiveStreamMenuButtonToggle_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULiveStreamMenuButtonToggle_C* ULiveStreamMenuButtonToggle_C::GetDefaultObj()
+{
+	static class ULiveStreamMenuButtonToggle_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULiveStreamMenuButtonToggle_C*>(ULiveStreamMenuButtonToggle_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function LiveStreamMenuButtonToggle.LiveStreamMenuButtonToggle_C.OnMouseEnter
 // (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void ULiveStreamMenuButtonToggle_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("LiveStreamMenuButtonToggle_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::ULiveStreamMenuButtonToggle_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LiveStreamMenuButtonToggle_C", "OnMouseEnter");
+
+	Params::ULiveStreamMenuButtonToggle_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -42,9 +70,12 @@ void ULiveStreamMenuButtonToggle_C::OnMouseEnter(const struct FGeometry& MyGeome
 
 void ULiveStreamMenuButtonToggle_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("LiveStreamMenuButtonToggle_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::ULiveStreamMenuButtonToggle_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LiveStreamMenuButtonToggle_C", "OnMouseLeave");
+
+	Params::ULiveStreamMenuButtonToggle_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -60,9 +91,12 @@ void ULiveStreamMenuButtonToggle_C::OnMouseLeave(struct FPointerEvent& MouseEven
 
 void ULiveStreamMenuButtonToggle_C::RefreshButton(bool IsLiveStreamEnabled)
 {
-	static auto Func = Class->GetFunction("LiveStreamMenuButtonToggle_C", "RefreshButton");
+	static class UFunction* Func = nullptr;
 
-	Params::ULiveStreamMenuButtonToggle_C_RefreshButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LiveStreamMenuButtonToggle_C", "RefreshButton");
+
+	Params::ULiveStreamMenuButtonToggle_C_RefreshButton_Params Parms{};
 
 	Parms.IsLiveStreamEnabled = IsLiveStreamEnabled;
 
@@ -76,21 +110,24 @@ void ULiveStreamMenuButtonToggle_C::RefreshButton(bool IsLiveStreamEnabled)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
 // struct FGeometry                   K2Node_Event_MyGeometry                                          (IsPlainOldData, NoDestructor)
 // struct FPointerEvent               K2Node_Event_MouseEvent_1                                        (ConstParm)
 // struct FPointerEvent               K2Node_Event_MouseEvent                                          (ConstParm)
 // bool                               K2Node_Event_IsLiveStreamEnabled                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimationReverse_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimationForward_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        K2Node_Select_Default                                            (None)
 
 void ULiveStreamMenuButtonToggle_C::ExecuteUbergraph_LiveStreamMenuButtonToggle(int32 EntryPoint, bool Temp_bool_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable_1, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FPointerEvent& K2Node_Event_MouseEvent, bool K2Node_Event_IsLiveStreamEnabled, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class FText K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("LiveStreamMenuButtonToggle_C", "ExecuteUbergraph_LiveStreamMenuButtonToggle");
+	static class UFunction* Func = nullptr;
 
-	Params::ULiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LiveStreamMenuButtonToggle_C", "ExecuteUbergraph_LiveStreamMenuButtonToggle");
+
+	Params::ULiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -110,6 +147,4 @@ void ULiveStreamMenuButtonToggle_C::ExecuteUbergraph_LiveStreamMenuButtonToggle(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

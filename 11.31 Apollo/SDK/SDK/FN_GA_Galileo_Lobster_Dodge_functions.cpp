@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GA_Galileo_Lobster_Dodge.GA_Galileo_Lobster_Dodge_C
+// (None)
+
+class UClass* UGA_Galileo_Lobster_Dodge_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Galileo_Lobster_Dodge_C");
+
+	return Clss;
+}
+
+
+// GA_Galileo_Lobster_Dodge_C GA_Galileo_Lobster_Dodge.Default__GA_Galileo_Lobster_Dodge_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Galileo_Lobster_Dodge_C* UGA_Galileo_Lobster_Dodge_C::GetDefaultObj()
+{
+	static class UGA_Galileo_Lobster_Dodge_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Galileo_Lobster_Dodge_C*>(UGA_Galileo_Lobster_Dodge_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GA_Galileo_Lobster_Dodge.GA_Galileo_Lobster_Dodge_C.SelectDodgeMontage
@@ -63,9 +88,12 @@ namespace SDK
 
 void UGA_Galileo_Lobster_Dodge_C::SelectDodgeMontage(struct FVector* Direction, class UAnimMontage** DodgeMontage, int32 LOCAL_Direction, int32 Temp_int_Variable, class UClass* Temp_class_Variable, class UClass* Temp_class_Variable_1, class UClass* Temp_class_Variable_2, class UClass* Temp_class_Variable_3, bool Temp_bool_Variable, int32 Temp_int_Variable_1, class UAnimMontage* Temp_object_Variable, class UAnimMontage* Temp_object_Variable_1, class UAnimMontage* Temp_object_Variable_2, class UAnimMontage* Temp_object_Variable_3, class UClass* K2Node_Select_Default, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue, class UAnimMontage* K2Node_Select_Default_1, class AController* CallFunc_GetController_ReturnValue, const struct FVector& CallFunc_GetCurrentAcceleration_ReturnValue, const struct FRotator& CallFunc_GetControlRotation_ReturnValue, bool CallFunc_Vector_IsNearlyZero_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue_1, const struct FVector& CallFunc_GetRightVector_ReturnValue, const struct FVector& CallFunc_GetForwardVector_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_Dot_VectorVector_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, bool CallFunc_NearlyEqual_FloatFloat_ReturnValue, const struct FVector& K2Node_Select_Default_2, bool CallFunc_NearlyEqual_FloatFloat_ReturnValue_1, float CallFunc_Dot_VectorVector_ReturnValue_1, bool CallFunc_NearlyEqual_FloatFloat_ReturnValue_2, const class FString& CallFunc_Conv_FloatToString_ReturnValue, bool CallFunc_NearlyEqual_FloatFloat_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "SelectDodgeMontage");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Dodge_C_SelectDodgeMontage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "SelectDodgeMontage");
+
+	Params::UGA_Galileo_Lobster_Dodge_C_SelectDodgeMontage_Params Parms{};
 
 	Parms.LOCAL_Direction = LOCAL_Direction;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -111,7 +139,7 @@ void UGA_Galileo_Lobster_Dodge_C::SelectDodgeMontage(struct FVector* Direction, 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Direction != nullptr)
-		*Direction = Parms.Direction;
+		*Direction = std::move(Parms.Direction);
 
 	if (DodgeMontage != nullptr)
 		*DodgeMontage = Parms.DodgeMontage;
@@ -125,12 +153,14 @@ void UGA_Galileo_Lobster_Dodge_C::SelectDodgeMontage(struct FVector* Direction, 
 
 void UGA_Galileo_Lobster_Dodge_C::OnFinish_3701CDDB4ABF86025C059291A706D4B9()
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "OnFinish_3701CDDB4ABF86025C059291A706D4B9");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Dodge_C_OnFinish_3701CDDB4ABF86025C059291A706D4B9_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "OnFinish_3701CDDB4ABF86025C059291A706D4B9");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -141,12 +171,14 @@ void UGA_Galileo_Lobster_Dodge_C::OnFinish_3701CDDB4ABF86025C059291A706D4B9()
 
 void UGA_Galileo_Lobster_Dodge_C::OnCancelled_B50D26204DCDE54864E4E4BE01DD0702()
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "OnCancelled_B50D26204DCDE54864E4E4BE01DD0702");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Dodge_C_OnCancelled_B50D26204DCDE54864E4E4BE01DD0702_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "OnCancelled_B50D26204DCDE54864E4E4BE01DD0702");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -157,12 +189,14 @@ void UGA_Galileo_Lobster_Dodge_C::OnCancelled_B50D26204DCDE54864E4E4BE01DD0702()
 
 void UGA_Galileo_Lobster_Dodge_C::OnInterrupted_B50D26204DCDE54864E4E4BE01DD0702()
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "OnInterrupted_B50D26204DCDE54864E4E4BE01DD0702");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Dodge_C_OnInterrupted_B50D26204DCDE54864E4E4BE01DD0702_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "OnInterrupted_B50D26204DCDE54864E4E4BE01DD0702");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -173,12 +207,14 @@ void UGA_Galileo_Lobster_Dodge_C::OnInterrupted_B50D26204DCDE54864E4E4BE01DD0702
 
 void UGA_Galileo_Lobster_Dodge_C::OnBlendOut_B50D26204DCDE54864E4E4BE01DD0702()
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "OnBlendOut_B50D26204DCDE54864E4E4BE01DD0702");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Dodge_C_OnBlendOut_B50D26204DCDE54864E4E4BE01DD0702_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "OnBlendOut_B50D26204DCDE54864E4E4BE01DD0702");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -189,12 +225,14 @@ void UGA_Galileo_Lobster_Dodge_C::OnBlendOut_B50D26204DCDE54864E4E4BE01DD0702()
 
 void UGA_Galileo_Lobster_Dodge_C::OnCompleted_B50D26204DCDE54864E4E4BE01DD0702()
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "OnCompleted_B50D26204DCDE54864E4E4BE01DD0702");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Dodge_C_OnCompleted_B50D26204DCDE54864E4E4BE01DD0702_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "OnCompleted_B50D26204DCDE54864E4E4BE01DD0702");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -205,12 +243,14 @@ void UGA_Galileo_Lobster_Dodge_C::OnCompleted_B50D26204DCDE54864E4E4BE01DD0702()
 
 void UGA_Galileo_Lobster_Dodge_C::Added_F353C9544720980739529CBB2776F7E1()
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "Added_F353C9544720980739529CBB2776F7E1");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Dodge_C_Added_F353C9544720980739529CBB2776F7E1_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "Added_F353C9544720980739529CBB2776F7E1");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -221,12 +261,14 @@ void UGA_Galileo_Lobster_Dodge_C::Added_F353C9544720980739529CBB2776F7E1()
 
 void UGA_Galileo_Lobster_Dodge_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Dodge_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -238,9 +280,12 @@ void UGA_Galileo_Lobster_Dodge_C::K2_ActivateAbility()
 
 void UGA_Galileo_Lobster_Dodge_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Dodge_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "K2_OnEndAbility");
+
+	Params::UGA_Galileo_Lobster_Dodge_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -281,9 +326,12 @@ void UGA_Galileo_Lobster_Dodge_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGA_Galileo_Lobster_Dodge_C::ExecuteUbergraph_GA_Galileo_Lobster_Dodge(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, class UAbilityTask_WaitGameplayTagAdded* CallFunc_WaitGameplayTagAdd_ReturnValue, bool CallFunc_IsValid_ReturnValue, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, class ACharacter* K2Node_DynamicCast_AsCharacter, bool K2Node_DynamicCast_bSuccess, class AController* CallFunc_GetController_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, bool K2Node_Event_bWasCancelled, float CallFunc_GetValueAtLevel_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, float CallFunc_GetValueAtLevel_ReturnValue_2, const struct FVector& CallFunc_SelectDodgeMontage_Direction, class UAnimMontage* CallFunc_SelectDodgeMontage_DodgeMontage, bool CallFunc_K2_CommitAbility_ReturnValue, class UAbilityTask_PlayMontageAndWait* CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UAbilityTask_ApplyRootMotionConstantForce* CallFunc_ApplyRootMotionConstantForce_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, class AController* CallFunc_GetController_ReturnValue_1, class AController* CallFunc_GetController_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "ExecuteUbergraph_GA_Galileo_Lobster_Dodge");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Galileo_Lobster_Dodge_C_ExecuteUbergraph_GA_Galileo_Lobster_Dodge_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Galileo_Lobster_Dodge_C", "ExecuteUbergraph_GA_Galileo_Lobster_Dodge");
+
+	Params::UGA_Galileo_Lobster_Dodge_C_ExecuteUbergraph_GA_Galileo_Lobster_Dodge_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -318,6 +366,4 @@ void UGA_Galileo_Lobster_Dodge_C::ExecuteUbergraph_GA_Galileo_Lobster_Dodge(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

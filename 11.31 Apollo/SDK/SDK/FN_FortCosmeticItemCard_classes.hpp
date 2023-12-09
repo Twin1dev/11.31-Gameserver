@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,11 +16,8 @@ class UFortCosmeticItemCard_C : public UFortCosmeticItemCard
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x298(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("FortCosmeticItemCard_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UFortCosmeticItemCard_C* GetDefaultObj();
 
 	void UpdateVisuals(struct FFortColorPalette& ColorPalette, bool bIsItem, bool bIsBorderAnimated, bool bIsHero);
 	void UpdateItemIconVisibility();
@@ -33,6 +27,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

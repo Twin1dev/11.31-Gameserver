@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,11 +16,8 @@ class ASpecialEventsCamera_Blueprint_C : public AFortCameraBase
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x7C0(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SpecialEventsCamera_Blueprint_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class ASpecialEventsCamera_Blueprint_C* GetDefaultObj();
 
 	void OnActivated();
 	void OnDeactivated();
@@ -32,6 +26,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

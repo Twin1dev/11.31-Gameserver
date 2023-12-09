@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass PowerRatingWidget.PowerRatingWidget_C
+// (None)
+
+class UClass* UPowerRatingWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PowerRatingWidget_C");
+
+	return Clss;
+}
+
+
+// PowerRatingWidget_C PowerRatingWidget.Default__PowerRatingWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPowerRatingWidget_C* UPowerRatingWidget_C::GetDefaultObj()
+{
+	static class UPowerRatingWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPowerRatingWidget_C*>(UPowerRatingWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function PowerRatingWidget.PowerRatingWidget_C.UpdateWidgetState
@@ -33,16 +58,19 @@ namespace SDK
 // bool                               CallFunc_BooleanAND_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
-// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush_1                                   ()
-// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush_2                                   ()
-// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush_3                                   ()
+// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     (None)
+// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush_1                                   (None)
+// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush_2                                   (None)
+// struct FSlateBrush                 K2Node_MakeStruct_SlateBrush_3                                   (None)
 
 void UPowerRatingWidget_C::UpdateWidgetState(bool IsContributingToTeamPowerRating, enum class ESlateVisibility Temp_byte_Variable, bool Temp_bool_Has_Been_Initd_Variable, bool Temp_bool_IsClosed_Variable, enum class ESlateVisibility Temp_byte_Variable_1, int32 CallFunc_GetBasePowerRating_ReturnValue, bool CallFunc_HasTeamMembers_ReturnValue, int32 CallFunc_GetBasePowerRating_ReturnValue_1, bool CallFunc_NotEqual_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_HasTeamMembers_ReturnValue_1, bool Temp_bool_Variable, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_2, enum class ESlateVisibility K2Node_Select_Default, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush_1, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush_2, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush_3)
 {
-	static auto Func = Class->GetFunction("PowerRatingWidget_C", "UpdateWidgetState");
+	static class UFunction* Func = nullptr;
 
-	Params::UPowerRatingWidget_C_UpdateWidgetState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PowerRatingWidget_C", "UpdateWidgetState");
+
+	Params::UPowerRatingWidget_C_UpdateWidgetState_Params Parms{};
 
 	Parms.IsContributingToTeamPowerRating = IsContributingToTeamPowerRating;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -75,12 +103,14 @@ void UPowerRatingWidget_C::UpdateWidgetState(bool IsContributingToTeamPowerRatin
 
 void UPowerRatingWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("PowerRatingWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPowerRatingWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PowerRatingWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -92,9 +122,12 @@ void UPowerRatingWidget_C::Construct()
 
 void UPowerRatingWidget_C::OnBasePowerRatingUpdated(int32 BasePowerRating)
 {
-	static auto Func = Class->GetFunction("PowerRatingWidget_C", "OnBasePowerRatingUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UPowerRatingWidget_C_OnBasePowerRatingUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PowerRatingWidget_C", "OnBasePowerRatingUpdated");
+
+	Params::UPowerRatingWidget_C_OnBasePowerRatingUpdated_Params Parms{};
 
 	Parms.BasePowerRating = BasePowerRating;
 
@@ -110,9 +143,12 @@ void UPowerRatingWidget_C::OnBasePowerRatingUpdated(int32 BasePowerRating)
 
 void UPowerRatingWidget_C::OnTeamPowerRatingUpdated(int32 TeamPowerRating)
 {
-	static auto Func = Class->GetFunction("PowerRatingWidget_C", "OnTeamPowerRatingUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UPowerRatingWidget_C_OnTeamPowerRatingUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PowerRatingWidget_C", "OnTeamPowerRatingUpdated");
+
+	Params::UPowerRatingWidget_C_OnTeamPowerRatingUpdated_Params Parms{};
 
 	Parms.TeamPowerRating = TeamPowerRating;
 
@@ -129,9 +165,12 @@ void UPowerRatingWidget_C::OnTeamPowerRatingUpdated(int32 TeamPowerRating)
 
 void UPowerRatingWidget_C::OnPowerRatingProgressUpdated(float BaseRatingProgress, float TeamRatingProgress)
 {
-	static auto Func = Class->GetFunction("PowerRatingWidget_C", "OnPowerRatingProgressUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::UPowerRatingWidget_C_OnPowerRatingProgressUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PowerRatingWidget_C", "OnPowerRatingProgressUpdated");
+
+	Params::UPowerRatingWidget_C_OnPowerRatingProgressUpdated_Params Parms{};
 
 	Parms.BaseRatingProgress = BaseRatingProgress;
 	Parms.TeamRatingProgress = TeamRatingProgress;
@@ -148,9 +187,12 @@ void UPowerRatingWidget_C::OnPowerRatingProgressUpdated(float BaseRatingProgress
 
 void UPowerRatingWidget_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("PowerRatingWidget_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UPowerRatingWidget_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PowerRatingWidget_C", "PreConstruct");
+
+	Params::UPowerRatingWidget_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -165,12 +207,14 @@ void UPowerRatingWidget_C::PreConstruct(bool IsDesignTime)
 
 void UPowerRatingWidget_C::OnTeamMembershipChanged()
 {
-	static auto Func = Class->GetFunction("PowerRatingWidget_C", "OnTeamMembershipChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UPowerRatingWidget_C_OnTeamMembershipChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PowerRatingWidget_C", "OnTeamMembershipChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -190,7 +234,7 @@ void UPowerRatingWidget_C::OnTeamMembershipChanged()
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // float                              K2Node_Event_BaseRatingProgress                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Event_TeamRatingProgress                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // float                              CallFunc_Subtract_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -207,9 +251,12 @@ void UPowerRatingWidget_C::OnTeamMembershipChanged()
 
 void UPowerRatingWidget_C::ExecuteUbergraph_PowerRatingWidget(int32 EntryPoint, bool CallFunc_HasTeamMembers_ReturnValue, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, int32 K2Node_Event_BasePowerRating, int32 K2Node_Event_TeamPowerRating, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, float CallFunc_Conv_IntToFloat_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, float K2Node_Event_BaseRatingProgress, float K2Node_Event_TeamRatingProgress, class FText CallFunc_Format_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, bool K2Node_Event_IsDesignTime, enum class ESlateVisibility Temp_byte_Variable_2, bool CallFunc_Greater_FloatFloat_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default_1, int32 CallFunc_GetBasePowerRating_ReturnValue, int32 CallFunc_GetTeamPowerRating_ReturnValue, bool Temp_bool_Variable_2, bool CallFunc_EqualEqual_IntInt_ReturnValue, class UWidget* K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("PowerRatingWidget_C", "ExecuteUbergraph_PowerRatingWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UPowerRatingWidget_C_ExecuteUbergraph_PowerRatingWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PowerRatingWidget_C", "ExecuteUbergraph_PowerRatingWidget");
+
+	Params::UPowerRatingWidget_C_ExecuteUbergraph_PowerRatingWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_HasTeamMembers_ReturnValue = CallFunc_HasTeamMembers_ReturnValue;
@@ -244,6 +291,4 @@ void UPowerRatingWidget_C::ExecuteUbergraph_PowerRatingWidget(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

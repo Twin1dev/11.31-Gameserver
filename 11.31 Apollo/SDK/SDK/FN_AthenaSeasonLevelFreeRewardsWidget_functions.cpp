@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaSeasonLevelFreeRewardsWidget.AthenaSeasonLevelFreeRewardsWidget_C
+// (None)
+
+class UClass* UAthenaSeasonLevelFreeRewardsWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaSeasonLevelFreeRewardsWidget_C");
+
+	return Clss;
+}
+
+
+// AthenaSeasonLevelFreeRewardsWidget_C AthenaSeasonLevelFreeRewardsWidget.Default__AthenaSeasonLevelFreeRewardsWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaSeasonLevelFreeRewardsWidget_C* UAthenaSeasonLevelFreeRewardsWidget_C::GetDefaultObj()
+{
+	static class UAthenaSeasonLevelFreeRewardsWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaSeasonLevelFreeRewardsWidget_C*>(UAthenaSeasonLevelFreeRewardsWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AthenaSeasonLevelFreeRewardsWidget.AthenaSeasonLevelFreeRewardsWidget_C.UpdateStyling
@@ -42,9 +67,12 @@ namespace SDK
 
 void UAthenaSeasonLevelFreeRewardsWidget_C::UpdateStyling(enum class ESlateVisibility Temp_byte_Variable, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, bool Temp_bool_Variable_1, float Temp_float_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable_2, float Temp_float_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_3, class UFortSeasonPassLevelInfo* CallFunc_GetLevelInfo_ReturnValue, int32 CallFunc_GetLevel_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, class UFortSeasonPassLevelInfo* CallFunc_GetLevelInfo_ReturnValue_1, bool CallFunc_IsFreeUnlocked_ReturnValue, bool CallFunc_IsPaidClaimed_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, float K2Node_Select_Default_1, enum class ESlateVisibility K2Node_Select_Default_2, float K2Node_Select_Default_3)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelFreeRewardsWidget_C", "UpdateStyling");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelFreeRewardsWidget_C_UpdateStyling_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelFreeRewardsWidget_C", "UpdateStyling");
+
+	Params::UAthenaSeasonLevelFreeRewardsWidget_C_UpdateStyling_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -79,12 +107,14 @@ void UAthenaSeasonLevelFreeRewardsWidget_C::UpdateStyling(enum class ESlateVisib
 
 void UAthenaSeasonLevelFreeRewardsWidget_C::OnSetup()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelFreeRewardsWidget_C", "OnSetup");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelFreeRewardsWidget_C_OnSetup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelFreeRewardsWidget_C", "OnSetup");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -97,9 +127,12 @@ void UAthenaSeasonLevelFreeRewardsWidget_C::OnSetup()
 
 void UAthenaSeasonLevelFreeRewardsWidget_C::OnLockedStatusChanged(bool FreeUnlocked, bool PaidUnlocked)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelFreeRewardsWidget_C", "OnLockedStatusChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelFreeRewardsWidget_C_OnLockedStatusChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelFreeRewardsWidget_C", "OnLockedStatusChanged");
+
+	Params::UAthenaSeasonLevelFreeRewardsWidget_C_OnLockedStatusChanged_Params Parms{};
 
 	Parms.FreeUnlocked = FreeUnlocked;
 	Parms.PaidUnlocked = PaidUnlocked;
@@ -115,12 +148,14 @@ void UAthenaSeasonLevelFreeRewardsWidget_C::OnLockedStatusChanged(bool FreeUnloc
 
 void UAthenaSeasonLevelFreeRewardsWidget_C::PlayIntro()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelFreeRewardsWidget_C", "PlayIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelFreeRewardsWidget_C_PlayIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelFreeRewardsWidget_C", "PlayIntro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -170,9 +205,12 @@ void UAthenaSeasonLevelFreeRewardsWidget_C::PlayIntro()
 
 void UAthenaSeasonLevelFreeRewardsWidget_C::ExecuteUbergraph_AthenaSeasonLevelFreeRewardsWidget(int32 EntryPoint, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Array_Index_Variable_1, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Array_Index_Variable_2, int32 CallFunc_Percent_IntInt_ReturnValue, int32 CallFunc_Divide_IntInt_ReturnValue, class UFortSeasonPassLevelInfo* CallFunc_GetLevelInfo_ReturnValue, class UFortSeasonPassLevelInfo* CallFunc_GetLevelInfo_ReturnValue_1, TArray<class UFortItem*>& CallFunc_GetRewardItems_ReturnValue, bool CallFunc_IsFreeClaimed_ReturnValue, class UFortItem* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_IsFreeUnlocked_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsFreeClaimed_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable_2, int32 CallFunc_Add_IntInt_ReturnValue_2, bool K2Node_Event_FreeUnlocked, bool K2Node_Event_PaidUnlocked, class UAthenaSeasonReward_C* CallFunc_Create_ReturnValue, class UAthenaSeasonReward_C* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_1, int32 CallFunc_Array_Add_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_1, class UGridSlot* CallFunc_AddChildToGrid_ReturnValue, class UFortSeasonPassLevelInfo* CallFunc_GetLevelInfo_ReturnValue_2, const struct FMargin& K2Node_MakeStruct_Margin, bool CallFunc_IsFreeClaimed_ReturnValue_2, bool CallFunc_IsFreeUnlocked_ReturnValue_1, bool CallFunc_IsFreeClaimed_ReturnValue_3, bool CallFunc_Not_PreBool_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue_2, class UAthenaSeasonReward_C* CallFunc_Array_Get_Item_2, bool CallFunc_Less_IntInt_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelFreeRewardsWidget_C", "ExecuteUbergraph_AthenaSeasonLevelFreeRewardsWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelFreeRewardsWidget_C_ExecuteUbergraph_AthenaSeasonLevelFreeRewardsWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelFreeRewardsWidget_C", "ExecuteUbergraph_AthenaSeasonLevelFreeRewardsWidget");
+
+	Params::UAthenaSeasonLevelFreeRewardsWidget_C_ExecuteUbergraph_AthenaSeasonLevelFreeRewardsWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -220,6 +258,4 @@ void UAthenaSeasonLevelFreeRewardsWidget_C::ExecuteUbergraph_AthenaSeasonLevelFr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,62 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class OnlineSubsystem.NamedInterfaces
+// (None)
+
+class UClass* UNamedInterfaces::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("NamedInterfaces");
+
+	return Clss;
+}
+
+
+// NamedInterfaces OnlineSubsystem.Default__NamedInterfaces
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UNamedInterfaces* UNamedInterfaces::GetDefaultObj()
+{
+	static class UNamedInterfaces* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UNamedInterfaces*>(UNamedInterfaces::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class OnlineSubsystem.TurnBasedMatchInterface
+// (None)
+
+class UClass* ITurnBasedMatchInterface::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TurnBasedMatchInterface");
+
+	return Clss;
+}
+
+
+// TurnBasedMatchInterface OnlineSubsystem.Default__TurnBasedMatchInterface
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class ITurnBasedMatchInterface* ITurnBasedMatchInterface::GetDefaultObj()
+{
+	static class ITurnBasedMatchInterface* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ITurnBasedMatchInterface*>(ITurnBasedMatchInterface::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function OnlineSubsystem.TurnBasedMatchInterface.OnMatchReceivedTurn
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -23,9 +76,12 @@ namespace SDK
 
 void ITurnBasedMatchInterface::OnMatchReceivedTurn(const class FString& Match, bool bDidBecomeActive)
 {
-	static auto Func = Class->GetFunction("TurnBasedMatchInterface", "OnMatchReceivedTurn");
+	static class UFunction* Func = nullptr;
 
-	Params::ITurnBasedMatchInterface_OnMatchReceivedTurn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TurnBasedMatchInterface", "OnMatchReceivedTurn");
+
+	Params::ITurnBasedMatchInterface_OnMatchReceivedTurn_Params Parms{};
 
 	Parms.Match = Match;
 	Parms.bDidBecomeActive = bDidBecomeActive;
@@ -42,9 +98,12 @@ void ITurnBasedMatchInterface::OnMatchReceivedTurn(const class FString& Match, b
 
 void ITurnBasedMatchInterface::OnMatchEnded(const class FString& Match)
 {
-	static auto Func = Class->GetFunction("TurnBasedMatchInterface", "OnMatchEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::ITurnBasedMatchInterface_OnMatchEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TurnBasedMatchInterface", "OnMatchEnded");
+
+	Params::ITurnBasedMatchInterface_OnMatchEnded_Params Parms{};
 
 	Parms.Match = Match;
 
@@ -54,6 +113,4 @@ void ITurnBasedMatchInterface::OnMatchEnded(const class FString& Match)
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

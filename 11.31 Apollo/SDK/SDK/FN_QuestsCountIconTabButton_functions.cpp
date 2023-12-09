@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass QuestsCountIconTabButton.QuestsCountIconTabButton_C
+// (None)
+
+class UClass* UQuestsCountIconTabButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("QuestsCountIconTabButton_C");
+
+	return Clss;
+}
+
+
+// QuestsCountIconTabButton_C QuestsCountIconTabButton.Default__QuestsCountIconTabButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UQuestsCountIconTabButton_C* UQuestsCountIconTabButton_C::GetDefaultObj()
+{
+	static class UQuestsCountIconTabButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UQuestsCountIconTabButton_C*>(UQuestsCountIconTabButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.SetTutorialNameID
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UQuestsCountIconTabButton_C::SetTutorialNameID(class FName InTutorialBangID)
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "SetTutorialNameID");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_SetTutorialNameID_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "SetTutorialNameID");
+
+	Params::UQuestsCountIconTabButton_C_SetTutorialNameID_Params Parms{};
 
 	Parms.InTutorialBangID = InTutorialBangID;
 
@@ -43,9 +71,12 @@ void UQuestsCountIconTabButton_C::SetTutorialNameID(class FName InTutorialBangID
 
 void UQuestsCountIconTabButton_C::Update_Bang_State(bool bBangEnabled, int32 Count, bool CallFunc_GetIsEnabled_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "Update Bang State");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_Update_Bang_State_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "Update Bang State");
+
+	Params::UQuestsCountIconTabButton_C_Update_Bang_State_Params Parms{};
 
 	Parms.bBangEnabled = bBangEnabled;
 	Parms.Count = Count;
@@ -84,9 +115,12 @@ void UQuestsCountIconTabButton_C::Update_Bang_State(bool bBangEnabled, int32 Cou
 
 void UQuestsCountIconTabButton_C::Update_Text(int32 QuestCount, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, int32 Temp_int_Loop_Counter_Variable, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, TArray<class UFortQuestCategory*>& CallFunc_GetCurrentQuestsCategories_Categories, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Array_Index_Variable, class UFortQuestCategory* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue_1, int32 Temp_int_Array_Index_Variable_1, bool CallFunc_Less_IntInt_ReturnValue_1, class UFortQuestItem* CallFunc_Array_Get_Item_1, enum class EFortQuestState CallFunc_GetQuestState_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, int32 Temp_int_Variable, int32 CallFunc_Add_IntInt_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "Update Text");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_Update_Text_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "Update Text");
+
+	Params::UQuestsCountIconTabButton_C_Update_Text_Params Parms{};
 
 	Parms.QuestCount = QuestCount;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -122,9 +156,12 @@ void UQuestsCountIconTabButton_C::Update_Text(int32 QuestCount, class UFortGloba
 
 void UQuestsCountIconTabButton_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "SetTutorialBorderStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_SetTutorialBorderStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "SetTutorialBorderStyle");
+
+	Params::UQuestsCountIconTabButton_C_SetTutorialBorderStyle_Params Parms{};
 
 	Parms.BorderStyle = BorderStyle;
 
@@ -139,12 +176,14 @@ void UQuestsCountIconTabButton_C::SetTutorialBorderStyle(class UClass* BorderSty
 
 void UQuestsCountIconTabButton_C::ShowText()
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "ShowText");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_ShowText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "ShowText");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -156,9 +195,12 @@ void UQuestsCountIconTabButton_C::ShowText()
 
 void UQuestsCountIconTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "Set Icon");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_Set_Icon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "Set Icon");
+
+	Params::UQuestsCountIconTabButton_C_Set_Icon_Params Parms{};
 
 	Parms.IconBrush = IconBrush;
 
@@ -179,9 +221,12 @@ void UQuestsCountIconTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 
 void UQuestsCountIconTabButton_C::Set_Text(class FText ButtonText, bool CallFunc_TextIsEmpty_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class UUserWidget* CallFunc_Create_Basic_Tooltip_Output)
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "Set Text");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_Set_Text_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "Set Text");
+
+	Params::UQuestsCountIconTabButton_C_Set_Text_Params Parms{};
 
 	Parms.ButtonText = ButtonText;
 	Parms.CallFunc_TextIsEmpty_ReturnValue = CallFunc_TextIsEmpty_ReturnValue;
@@ -201,12 +246,14 @@ void UQuestsCountIconTabButton_C::Set_Text(class FText ButtonText, bool CallFunc
 
 void UQuestsCountIconTabButton_C::OnCurrentTextStyleChanged()
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "OnCurrentTextStyleChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_OnCurrentTextStyleChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "OnCurrentTextStyleChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -218,9 +265,12 @@ void UQuestsCountIconTabButton_C::OnCurrentTextStyleChanged()
 
 void UQuestsCountIconTabButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "PreConstruct");
+
+	Params::UQuestsCountIconTabButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -236,9 +286,12 @@ void UQuestsCountIconTabButton_C::PreConstruct(bool IsDesignTime)
 
 void UQuestsCountIconTabButton_C::SetTabLabelInfo(struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "SetTabLabelInfo");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_SetTabLabelInfo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "SetTabLabelInfo");
+
+	Params::UQuestsCountIconTabButton_C_SetTabLabelInfo_Params Parms{};
 
 	Parms.TabLabelInfo = TabLabelInfo;
 
@@ -253,12 +306,14 @@ void UQuestsCountIconTabButton_C::SetTabLabelInfo(struct FFortTabButtonLabelInfo
 
 void UQuestsCountIconTabButton_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_BP_OnSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnSelected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -269,12 +324,14 @@ void UQuestsCountIconTabButton_C::BP_OnSelected()
 
 void UQuestsCountIconTabButton_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnDeselected");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_BP_OnDeselected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnDeselected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -285,12 +342,14 @@ void UQuestsCountIconTabButton_C::BP_OnDeselected()
 
 void UQuestsCountIconTabButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -301,12 +360,14 @@ void UQuestsCountIconTabButton_C::Construct()
 
 void UQuestsCountIconTabButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -317,12 +378,14 @@ void UQuestsCountIconTabButton_C::BP_OnHovered()
 
 void UQuestsCountIconTabButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -333,12 +396,14 @@ void UQuestsCountIconTabButton_C::BP_OnUnhovered()
 
 void UQuestsCountIconTabButton_C::Handle_Quest_Count_Updated()
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "Handle Quest Count Updated");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_Handle_Quest_Count_Updated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "Handle Quest Count Updated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -349,12 +414,14 @@ void UQuestsCountIconTabButton_C::Handle_Quest_Count_Updated()
 
 void UQuestsCountIconTabButton_C::BP_OnEnabled()
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_BP_OnEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnEnabled");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -365,12 +432,14 @@ void UQuestsCountIconTabButton_C::BP_OnEnabled()
 
 void UQuestsCountIconTabButton_C::BP_OnDisabled()
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnDisabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_BP_OnDisabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnDisabled");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -400,9 +469,12 @@ void UQuestsCountIconTabButton_C::BP_OnDisabled()
 
 void UQuestsCountIconTabButton_C::ExecuteUbergraph_QuestsCountIconTabButton(int32 EntryPoint, bool CallFunc_GetSelected_ReturnValue, bool CallFunc_GetSelected_ReturnValue_1, bool CallFunc_EqualEqual_ClassClass_ReturnValue, bool CallFunc_EqualEqual_ClassClass_ReturnValue_1, const struct FFortTabButtonLabelInfo& K2Node_Event_TabLabelInfo, bool CallFunc_EqualEqual_ClassClass_ReturnValue_2, bool CallFunc_EqualEqual_ClassClass_ReturnValue_3, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ClassClass_ReturnValue_4, bool CallFunc_EqualEqual_ClassClass_ReturnValue_5, bool K2Node_Event_IsDesignTime, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue, bool CallFunc_EqualEqual_ClassClass_ReturnValue_6, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue_1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "ExecuteUbergraph_QuestsCountIconTabButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UQuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("QuestsCountIconTabButton_C", "ExecuteUbergraph_QuestsCountIconTabButton");
+
+	Params::UQuestsCountIconTabButton_C_ExecuteUbergraph_QuestsCountIconTabButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetSelected_ReturnValue = CallFunc_GetSelected_ReturnValue;
@@ -430,6 +502,4 @@ void UQuestsCountIconTabButton_C::ExecuteUbergraph_QuestsCountIconTabButton(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

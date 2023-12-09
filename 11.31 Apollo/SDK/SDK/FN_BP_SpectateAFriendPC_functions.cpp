@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_SpectateAFriendPC.BP_SpectateAFriendPC_C
+// (Actor, PlayerController)
+
+class UClass* ABP_SpectateAFriendPC_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_SpectateAFriendPC_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// BP_SpectateAFriendPC_C BP_SpectateAFriendPC.Default__BP_SpectateAFriendPC_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_SpectateAFriendPC_C* ABP_SpectateAFriendPC_C::GetDefaultObj()
+{
+	static class ABP_SpectateAFriendPC_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_SpectateAFriendPC_C*>(ABP_SpectateAFriendPC_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

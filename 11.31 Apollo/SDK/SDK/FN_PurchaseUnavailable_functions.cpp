@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass PurchaseUnavailable.PurchaseUnavailable_C
+// (None)
+
+class UClass* UPurchaseUnavailable_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PurchaseUnavailable_C");
+
+	return Clss;
+}
+
+
+// PurchaseUnavailable_C PurchaseUnavailable.Default__PurchaseUnavailable_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UPurchaseUnavailable_C* UPurchaseUnavailable_C::GetDefaultObj()
+{
+	static class UPurchaseUnavailable_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UPurchaseUnavailable_C*>(UPurchaseUnavailable_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PurchaseUnavailable.PurchaseUnavailable_C.OnUpdateTextStyle
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UPurchaseUnavailable_C::OnUpdateTextStyle(class FText& OfferDisplayName)
 {
-	static auto Func = Class->GetFunction("PurchaseUnavailable_C", "OnUpdateTextStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseUnavailable_C_OnUpdateTextStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseUnavailable_C", "OnUpdateTextStyle");
+
+	Params::UPurchaseUnavailable_C_OnUpdateTextStyle_Params Parms{};
 
 	Parms.OfferDisplayName = OfferDisplayName;
 
@@ -40,13 +68,16 @@ void UPurchaseUnavailable_C::OnUpdateTextStyle(class FText& OfferDisplayName)
 // class FText                        K2Node_Event_OfferDisplayName                                    (ConstParm)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 void UPurchaseUnavailable_C::ExecuteUbergraph_PurchaseUnavailable(int32 EntryPoint, class FText K2Node_Event_OfferDisplayName, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PurchaseUnavailable_C", "ExecuteUbergraph_PurchaseUnavailable");
+	static class UFunction* Func = nullptr;
 
-	Params::UPurchaseUnavailable_C_ExecuteUbergraph_PurchaseUnavailable_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PurchaseUnavailable_C", "ExecuteUbergraph_PurchaseUnavailable");
+
+	Params::UPurchaseUnavailable_C_ExecuteUbergraph_PurchaseUnavailable_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_OfferDisplayName = K2Node_Event_OfferDisplayName;
@@ -60,6 +91,4 @@ void UPurchaseUnavailable_C::ExecuteUbergraph_PurchaseUnavailable(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

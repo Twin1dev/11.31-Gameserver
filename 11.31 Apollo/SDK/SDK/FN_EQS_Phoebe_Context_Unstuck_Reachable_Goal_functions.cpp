@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass EQS_Phoebe_Context_Unstuck_Reachable_Goal.EQS_Phoebe_Context_Unstuck_Reachable_Goal_C
+// (None)
+
+class UClass* UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EQS_Phoebe_Context_Unstuck_Reachable_Goal_C");
+
+	return Clss;
+}
+
+
+// EQS_Phoebe_Context_Unstuck_Reachable_Goal_C EQS_Phoebe_Context_Unstuck_Reachable_Goal.Default__EQS_Phoebe_Context_Unstuck_Reachable_Goal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C* UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C::GetDefaultObj()
+{
+	static class UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C*>(UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function EQS_Phoebe_Context_Unstuck_Reachable_Goal.EQS_Phoebe_Context_Unstuck_Reachable_Goal_C.ProvideSingleLocation
@@ -43,9 +68,12 @@ namespace SDK
 
 void UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C::ProvideSingleLocation(class UObject* QuerierObject, class AActor* QuerierActor, struct FVector* ResultingLocation, const struct FVector& QuerierLocation, uint8 CallFunc_MakeLiteralByte_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class APawn* K2Node_DynamicCast_AsPawn, bool K2Node_DynamicCast_bSuccess, uint8 CallFunc_MakeLiteralByte_ReturnValue_1, class AController* CallFunc_GetController_ReturnValue, class AAIController* K2Node_DynamicCast_AsAIController, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_NotEqual_ByteByte_ReturnValue, class UBlackboardComponent* CallFunc_GetBlackboard_ReturnValue, bool CallFunc_LessEqual_ByteByte_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class FName CallFunc_MakeLiteralName_ReturnValue, const struct FVector& CallFunc_GetValueAsVector_ReturnValue, bool CallFunc_IsValidAILocation_ReturnValue, bool CallFunc_Vector_IsNAN_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("EQS_Phoebe_Context_Unstuck_Reachable_Goal_C", "ProvideSingleLocation");
+	static class UFunction* Func = nullptr;
 
-	Params::UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C_ProvideSingleLocation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EQS_Phoebe_Context_Unstuck_Reachable_Goal_C", "ProvideSingleLocation");
+
+	Params::UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C_ProvideSingleLocation_Params Parms{};
 
 	Parms.QuerierObject = QuerierObject;
 	Parms.QuerierActor = QuerierActor;
@@ -72,12 +100,10 @@ void UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C::ProvideSingleLocation(class U
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ResultingLocation != nullptr)
-		*ResultingLocation = Parms.ResultingLocation;
+		*ResultingLocation = std::move(Parms.ResultingLocation);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

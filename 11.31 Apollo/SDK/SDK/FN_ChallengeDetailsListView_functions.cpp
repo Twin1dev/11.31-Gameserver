@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ChallengeDetailsListView.ChallengeDetailsListView_C
+// (None)
+
+class UClass* UChallengeDetailsListView_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ChallengeDetailsListView_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// ChallengeDetailsListView_C ChallengeDetailsListView.Default__ChallengeDetailsListView_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UChallengeDetailsListView_C* UChallengeDetailsListView_C::GetDefaultObj()
+{
+	static class UChallengeDetailsListView_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UChallengeDetailsListView_C*>(UChallengeDetailsListView_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass Prj_Athena_Bucket_Nice.Prj_Athena_Bucket_Nice_C
+// (Actor)
+
+class UClass* APrj_Athena_Bucket_Nice_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Prj_Athena_Bucket_Nice_C");
+
+	return Clss;
+}
+
+
+// Prj_Athena_Bucket_Nice_C Prj_Athena_Bucket_Nice.Default__Prj_Athena_Bucket_Nice_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class APrj_Athena_Bucket_Nice_C* APrj_Athena_Bucket_Nice_C::GetDefaultObj()
+{
+	static class APrj_Athena_Bucket_Nice_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<APrj_Athena_Bucket_Nice_C*>(APrj_Athena_Bucket_Nice_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Prj_Athena_Bucket_Nice.Prj_Athena_Bucket_Nice_C.OnRep_TurnOffTrail
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void APrj_Athena_Bucket_Nice_C::OnRep_TurnOffTrail()
 {
-	static auto Func = Class->GetFunction("Prj_Athena_Bucket_Nice_C", "OnRep_TurnOffTrail");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_Bucket_Nice_C_OnRep_TurnOffTrail_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_Bucket_Nice_C", "OnRep_TurnOffTrail");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -39,9 +66,12 @@ void APrj_Athena_Bucket_Nice_C::OnRep_TurnOffTrail()
 
 void APrj_Athena_Bucket_Nice_C::OnExploded(TArray<class AActor*>& HitActors, TArray<struct FHitResult>& HitResults)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_Bucket_Nice_C", "OnExploded");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_Bucket_Nice_C_OnExploded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_Bucket_Nice_C", "OnExploded");
+
+	Params::APrj_Athena_Bucket_Nice_C_OnExploded_Params Parms{};
 
 	Parms.HitActors = HitActors;
 	Parms.HitResults = HitResults;
@@ -60,9 +90,12 @@ void APrj_Athena_Bucket_Nice_C::OnExploded(TArray<class AActor*>& HitActors, TAr
 
 void APrj_Athena_Bucket_Nice_C::ExecuteUbergraph_Prj_Athena_Bucket_Nice(int32 EntryPoint, TArray<class AActor*>& K2Node_Event_HitActors, TArray<struct FHitResult>& K2Node_Event_HitResults)
 {
-	static auto Func = Class->GetFunction("Prj_Athena_Bucket_Nice_C", "ExecuteUbergraph_Prj_Athena_Bucket_Nice");
+	static class UFunction* Func = nullptr;
 
-	Params::APrj_Athena_Bucket_Nice_C_ExecuteUbergraph_Prj_Athena_Bucket_Nice_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Prj_Athena_Bucket_Nice_C", "ExecuteUbergraph_Prj_Athena_Bucket_Nice");
+
+	Params::APrj_Athena_Bucket_Nice_C_ExecuteUbergraph_Prj_Athena_Bucket_Nice_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_HitActors = K2Node_Event_HitActors;
@@ -74,6 +107,4 @@ void APrj_Athena_Bucket_Nice_C::ExecuteUbergraph_Prj_Athena_Bucket_Nice(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

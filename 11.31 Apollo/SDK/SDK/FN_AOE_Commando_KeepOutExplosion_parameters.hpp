@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -21,11 +18,11 @@ namespace Params
 struct AAOE_Commando_KeepOutExplosion_C_OnRep_Radius_Params
 {
 public:
-	struct FSoundAttenuationSettings             CallFunc_BP_GetAttenuationSettingsToApply_OutAttenuationSettings; // 0x0(0x2F0)()
+	struct FSoundAttenuationSettings             CallFunc_BP_GetAttenuationSettingsToApply_OutAttenuationSettings; // 0x0(0x2F0)(None)
 	bool                                         CallFunc_BP_GetAttenuationSettingsToApply_ReturnValue; // 0x2F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_1F51[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_1406[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector                               CallFunc_MakeVector_ReturnValue;                   // 0x2F4(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSoundAttenuationSettings             K2Node_MakeStruct_SoundAttenuationSettings;        // 0x300(0x2F0)()
+	struct FSoundAttenuationSettings             K2Node_MakeStruct_SoundAttenuationSettings;        // 0x300(0x2F0)(None)
 };
 
 // 0x4 (0x4 - 0x0)
@@ -34,20 +31,6 @@ struct AAOE_Commando_KeepOutExplosion_C_Send_Info_Params
 {
 public:
 	float                                        Radius;                                            // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function AOE_Commando_KeepOutExplosion.AOE_Commando_KeepOutExplosion_C.ReceiveDestroyed
-struct AAOE_Commando_KeepOutExplosion_C_ReceiveDestroyed_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function AOE_Commando_KeepOutExplosion.AOE_Commando_KeepOutExplosion_C.ReceiveBeginPlay
-struct AAOE_Commando_KeepOutExplosion_C_ReceiveBeginPlay_Params
-{
-public:
 };
 
 // 0x8 (0x8 - 0x0)
@@ -62,6 +45,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GAT_GenericTriggeredAbility.GAT_GenericTriggeredAbility_C
+// (None)
+
+class UClass* UGAT_GenericTriggeredAbility_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAT_GenericTriggeredAbility_C");
+
+	return Clss;
+}
+
+
+// GAT_GenericTriggeredAbility_C GAT_GenericTriggeredAbility.Default__GAT_GenericTriggeredAbility_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAT_GenericTriggeredAbility_C* UGAT_GenericTriggeredAbility_C::GetDefaultObj()
+{
+	static class UGAT_GenericTriggeredAbility_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAT_GenericTriggeredAbility_C*>(UGAT_GenericTriggeredAbility_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GAT_GenericTriggeredAbility.GAT_GenericTriggeredAbility_C.K2_ActivateAbilityFromEvent
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UGAT_GenericTriggeredAbility_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GAT_GenericTriggeredAbility_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_GenericTriggeredAbility_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_GenericTriggeredAbility_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGAT_GenericTriggeredAbility_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -41,16 +69,19 @@ void UGAT_GenericTriggeredAbility_C::K2_ActivateAbilityFromEvent(struct FGamepla
 // struct FGameplayAbilityActorInfo   CallFunc_GetActorInfo_ReturnValue                                (ContainsInstancedReference)
 // class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
-// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              (None)
+// struct FGameplayAbilityTargetDataHandleCallFunc_AbilityTargetDataFromActor_ReturnValue                  (None)
 // TArray<struct FActiveGameplayEffectHandle>CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue              (ZeroConstructor, ReferenceParm)
 // struct FGameplayEventData          K2Node_Event_EventData                                           (ConstParm)
 
 void UGAT_GenericTriggeredAbility_C::ExecuteUbergraph_GAT_GenericTriggeredAbility(int32 EntryPoint, bool CallFunc_K2_CommitAbility_ReturnValue, const struct FGameplayAbilityActorInfo& CallFunc_GetActorInfo_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData, const struct FGameplayAbilityTargetDataHandle& CallFunc_AbilityTargetDataFromActor_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue, const struct FGameplayEventData& K2Node_Event_EventData)
 {
-	static auto Func = Class->GetFunction("GAT_GenericTriggeredAbility_C", "ExecuteUbergraph_GAT_GenericTriggeredAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAT_GenericTriggeredAbility_C_ExecuteUbergraph_GAT_GenericTriggeredAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAT_GenericTriggeredAbility_C", "ExecuteUbergraph_GAT_GenericTriggeredAbility");
+
+	Params::UGAT_GenericTriggeredAbility_C_ExecuteUbergraph_GAT_GenericTriggeredAbility_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_K2_CommitAbility_ReturnValue = CallFunc_K2_CommitAbility_ReturnValue;
@@ -68,6 +99,4 @@ void UGAT_GenericTriggeredAbility_C::ExecuteUbergraph_GAT_GenericTriggeredAbilit
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

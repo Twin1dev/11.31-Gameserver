@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AlterationsWidget.AlterationsWidget_C
+// (None)
+
+class UClass* UAlterationsWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AlterationsWidget_C");
+
+	return Clss;
+}
+
+
+// AlterationsWidget_C AlterationsWidget.Default__AlterationsWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAlterationsWidget_C* UAlterationsWidget_C::GetDefaultObj()
+{
+	static class UAlterationsWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAlterationsWidget_C*>(UAlterationsWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AlterationsWidget.AlterationsWidget_C.Clear
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UAlterationsWidget_C::Clear()
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "Clear");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_Clear_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "Clear");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UAlterationsWidget_C::Clear()
 
 void UAlterationsWidget_C::ClearAndInitialize(bool IntroAlterations)
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "ClearAndInitialize");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_ClearAndInitialize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "ClearAndInitialize");
+
+	Params::UAlterationsWidget_C_ClearAndInitialize_Params Parms{};
 
 	Parms.IntroAlterations = IntroAlterations;
 
@@ -55,12 +85,14 @@ void UAlterationsWidget_C::ClearAndInitialize(bool IntroAlterations)
 
 void UAlterationsWidget_C::Reset()
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "Reset");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_Reset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "Reset");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -81,9 +113,12 @@ void UAlterationsWidget_C::Reset()
 
 void UAlterationsWidget_C::CreateAnimations(bool IntroAnims, int32 Temp_int_Variable, class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue, int32 CallFunc_GetButtonCount_ReturnValue, class UAlterationWidgetButton_C* K2Node_DynamicCast_AsAlteration_Widget_Button, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "CreateAnimations");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_CreateAnimations_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "CreateAnimations");
+
+	Params::UAlterationsWidget_C_CreateAnimations_Params Parms{};
 
 	Parms.IntroAnims = IntroAnims;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -117,9 +152,12 @@ void UAlterationsWidget_C::CreateAnimations(bool IntroAnims, int32 Temp_int_Vari
 
 void UAlterationsWidget_C::IntroAnim(int32 Temp_int_Variable, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_GetButtonCount_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue, class UAlterationWidgetButton_C* K2Node_DynamicCast_AsAlteration_Widget_Button, bool K2Node_DynamicCast_bSuccess, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "IntroAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_IntroAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "IntroAnim");
+
+	Params::UAlterationsWidget_C_IntroAnim_Params Parms{};
 
 	Parms.Temp_int_Variable = Temp_int_Variable;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -148,9 +186,12 @@ void UAlterationsWidget_C::IntroAnim(int32 Temp_int_Variable, bool CallFunc_IsVa
 
 void UAlterationsWidget_C::CenterWidget(class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue, class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "CenterWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_CenterWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "CenterWidget");
+
+	Params::UAlterationsWidget_C_CenterWidget_Params Parms{};
 
 	Parms.CallFunc_GetUINavigationManager_ReturnValue = CallFunc_GetUINavigationManager_ReturnValue;
 	Parms.CallFunc_GetButtonAtIndex_ReturnValue = CallFunc_GetButtonAtIndex_ReturnValue;
@@ -169,12 +210,14 @@ void UAlterationsWidget_C::CenterWidget(class UFortUINavigationManager* CallFunc
 
 void UAlterationsWidget_C::SetupBorders()
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "SetupBorders");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_SetupBorders_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "SetupBorders");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -189,9 +232,12 @@ void UAlterationsWidget_C::SetupBorders()
 
 void UAlterationsWidget_C::TriggerModificationAnim(int32 ModifiedSlotIndex, class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue, class UAlterationWidgetButton_C* K2Node_DynamicCast_AsAlteration_Widget_Button, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "TriggerModificationAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_TriggerModificationAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "TriggerModificationAnim");
+
+	Params::UAlterationsWidget_C_TriggerModificationAnim_Params Parms{};
 
 	Parms.ModifiedSlotIndex = ModifiedSlotIndex;
 	Parms.CallFunc_GetButtonAtIndex_ReturnValue = CallFunc_GetButtonAtIndex_ReturnValue;
@@ -215,9 +261,12 @@ void UAlterationsWidget_C::TriggerModificationAnim(int32 ModifiedSlotIndex, clas
 
 void UAlterationsWidget_C::SetupAlteration(class UCommonUserWidget* Alteration, class UFortAlterationInfo* AlterationInfo, class UAlterationWidgetButton_C* K2Node_DynamicCast_AsAlteration_Widget_Button, bool K2Node_DynamicCast_bSuccess, class UAlterationWidget_C* K2Node_DynamicCast_AsAlteration_Widget, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "SetupAlteration");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_SetupAlteration_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "SetupAlteration");
+
+	Params::UAlterationsWidget_C_SetupAlteration_Params Parms{};
 
 	Parms.Alteration = Alteration;
 	Parms.AlterationInfo = AlterationInfo;
@@ -246,9 +295,12 @@ void UAlterationsWidget_C::SetupAlteration(class UCommonUserWidget* Alteration, 
 
 class UCommonUserWidget* UAlterationsWidget_C::CreateAlterationWidget(enum class EFortItemType CallFunc_GetType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UAlterationWidgetButton_C* CallFunc_Create_ReturnValue, enum class EFortItemType CallFunc_GetType_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue_1, class UAlterationWidget_C* CallFunc_Create_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "CreateAlterationWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_CreateAlterationWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "CreateAlterationWidget");
+
+	Params::UAlterationsWidget_C_CreateAlterationWidget_Params Parms{};
 
 	Parms.CallFunc_GetType_ReturnValue = CallFunc_GetType_ReturnValue;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
@@ -276,9 +328,12 @@ class UCommonUserWidget* UAlterationsWidget_C::CreateAlterationWidget(enum class
 
 void UAlterationsWidget_C::GenerateAlteration(class UFortAlterationInfo* AlterationInfo, class UCommonUserWidget* Alteration, class UCommonUserWidget* CallFunc_CreateAlterationWidget_ReturnValue, bool CallFunc_IsAlterationUnlocked_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "GenerateAlteration");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_GenerateAlteration_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "GenerateAlteration");
+
+	Params::UAlterationsWidget_C_GenerateAlteration_Params Parms{};
 
 	Parms.AlterationInfo = AlterationInfo;
 	Parms.Alteration = Alteration;
@@ -307,9 +362,12 @@ void UAlterationsWidget_C::GenerateAlteration(class UFortAlterationInfo* Alterat
 
 void UAlterationsWidget_C::AddAlterationToVerticalbox(class UCommonUserWidget* Alteration, bool IsUnlocked, const struct FMargin& SpacePadding, class UVerticalBox* DestinationVerticalBox, bool Temp_bool_Variable, bool K2Node_Select_Default, class UAlterationWidget_C* K2Node_DynamicCast_AsAlteration_Widget, bool K2Node_DynamicCast_bSuccess, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue, bool Temp_bool_Variable_1, class UVerticalBox* K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "AddAlterationToVerticalbox");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_AddAlterationToVerticalbox_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "AddAlterationToVerticalbox");
+
+	Params::UAlterationsWidget_C_AddAlterationToVerticalbox_Params Parms{};
 
 	Parms.Alteration = Alteration;
 	Parms.IsUnlocked = IsUnlocked;
@@ -335,16 +393,19 @@ void UAlterationsWidget_C::AddAlterationToVerticalbox(class UCommonUserWidget* A
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 // enum class EFortRarity             CallFunc_GetRarity_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UAlterationsWidget_C::UpdatePerksMessage(class FText PerkCount, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue, class FText CallFunc_Format_ReturnValue_1, enum class EFortRarity CallFunc_GetRarity_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "UpdatePerksMessage");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_UpdatePerksMessage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "UpdatePerksMessage");
+
+	Params::UAlterationsWidget_C_UpdatePerksMessage_Params Parms{};
 
 	Parms.PerkCount = PerkCount;
 	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
@@ -366,12 +427,14 @@ void UAlterationsWidget_C::UpdatePerksMessage(class FText PerkCount, const struc
 
 void UAlterationsWidget_C::Construct()
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -383,9 +446,12 @@ void UAlterationsWidget_C::Construct()
 
 void UAlterationsWidget_C::OnItemChanged(bool bIntroAlterations)
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "OnItemChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_OnItemChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "OnItemChanged");
+
+	Params::UAlterationsWidget_C_OnItemChanged_Params Parms{};
 
 	Parms.bIntroAlterations = bIntroAlterations;
 
@@ -400,12 +466,14 @@ void UAlterationsWidget_C::OnItemChanged(bool bIntroAlterations)
 
 void UAlterationsWidget_C::OnItemToCompareWithChanged()
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "OnItemToCompareWithChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_OnItemToCompareWithChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "OnItemToCompareWithChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -416,12 +484,14 @@ void UAlterationsWidget_C::OnItemToCompareWithChanged()
 
 void UAlterationsWidget_C::OnStateChanged()
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "OnStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_OnStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "OnStateChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -433,9 +503,12 @@ void UAlterationsWidget_C::OnStateChanged()
 
 void UAlterationsWidget_C::OnGenerateAlteration(class UFortAlterationInfo* AlterationInfo)
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "OnGenerateAlteration");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_OnGenerateAlteration_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "OnGenerateAlteration");
+
+	Params::UAlterationsWidget_C_OnGenerateAlteration_Params Parms{};
 
 	Parms.AlterationInfo = AlterationInfo;
 
@@ -450,12 +523,14 @@ void UAlterationsWidget_C::OnGenerateAlteration(class UFortAlterationInfo* Alter
 
 void UAlterationsWidget_C::OnFocusFirstItem()
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "OnFocusFirstItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_OnFocusFirstItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "OnFocusFirstItem");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -467,9 +542,12 @@ void UAlterationsWidget_C::OnFocusFirstItem()
 
 void UAlterationsWidget_C::OnAlterationSlotIndexModifiedBP(int32 ModifiedIndex)
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "OnAlterationSlotIndexModifiedBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_OnAlterationSlotIndexModifiedBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "OnAlterationSlotIndexModifiedBP");
+
+	Params::UAlterationsWidget_C_OnAlterationSlotIndexModifiedBP_Params Parms{};
 
 	Parms.ModifiedIndex = ModifiedIndex;
 
@@ -484,12 +562,14 @@ void UAlterationsWidget_C::OnAlterationSlotIndexModifiedBP(int32 ModifiedIndex)
 
 void UAlterationsWidget_C::Destruct()
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -501,9 +581,12 @@ void UAlterationsWidget_C::Destruct()
 
 void UAlterationsWidget_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "PreConstruct");
+
+	Params::UAlterationsWidget_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -527,9 +610,12 @@ void UAlterationsWidget_C::PreConstruct(bool IsDesignTime)
 
 void UAlterationsWidget_C::ExecuteUbergraph_AlterationsWidget(int32 EntryPoint, class UCommonUserWidget* CallFunc_CreateAlterationWidget_ReturnValue, bool K2Node_Event_bIntroAlterations, class UFortAlterationInfo* K2Node_Event_AlterationInfo, int32 K2Node_Event_ModifiedIndex, bool K2Node_Event_IsDesignTime, class UCommonUserWidget* CallFunc_CreateAlterationWidget_ReturnValue_1, class UCommonUserWidget* CallFunc_CreateAlterationWidget_ReturnValue_2, class UCommonUserWidget* CallFunc_CreateAlterationWidget_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("AlterationsWidget_C", "ExecuteUbergraph_AlterationsWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAlterationsWidget_C_ExecuteUbergraph_AlterationsWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AlterationsWidget_C", "ExecuteUbergraph_AlterationsWidget");
+
+	Params::UAlterationsWidget_C_ExecuteUbergraph_AlterationsWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_CreateAlterationWidget_ReturnValue = CallFunc_CreateAlterationWidget_ReturnValue;
@@ -547,6 +633,4 @@ void UAlterationsWidget_C::ExecuteUbergraph_AlterationsWidget(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

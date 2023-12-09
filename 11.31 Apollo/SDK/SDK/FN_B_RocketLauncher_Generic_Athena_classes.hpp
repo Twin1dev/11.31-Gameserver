@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -17,15 +14,12 @@ namespace SDK
 class AB_RocketLauncher_Generic_Athena_C : public AB_Ranged_Generic_C
 {
 public:
-	uint8                                        Pad_5A8A[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5E84[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xFB8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	class UParticleSystemComponent*              RearMuzzle;                                        // 0xFC0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("B_RocketLauncher_Generic_Athena_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AB_RocketLauncher_Generic_Athena_C* GetDefaultObj();
 
 	void Muzzle_Flash_FX(bool Persistent_Fire);
 	void ExecuteUbergraph_B_RocketLauncher_Generic_Athena(int32 EntryPoint, bool K2Node_Event_Persistent_Fire);
@@ -33,6 +27,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

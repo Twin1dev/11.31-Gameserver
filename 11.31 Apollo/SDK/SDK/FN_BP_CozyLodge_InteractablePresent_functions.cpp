@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_CozyLodge_InteractablePresent.BP_CozyLodge_InteractablePresent_C
+// (Actor)
+
+class UClass* ABP_CozyLodge_InteractablePresent_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_CozyLodge_InteractablePresent_C");
+
+	return Clss;
+}
+
+
+// BP_CozyLodge_InteractablePresent_C BP_CozyLodge_InteractablePresent.Default__BP_CozyLodge_InteractablePresent_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_CozyLodge_InteractablePresent_C* ABP_CozyLodge_InteractablePresent_C::GetDefaultObj()
+{
+	static class ABP_CozyLodge_InteractablePresent_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_CozyLodge_InteractablePresent_C*>(ABP_CozyLodge_InteractablePresent_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_CozyLodge_InteractablePresent.BP_CozyLodge_InteractablePresent_C.Timeline_OpenPresent__FinishedFunc
 // (BlueprintEvent)
 // Parameters:
 
 void ABP_CozyLodge_InteractablePresent_C::Timeline_OpenPresent__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "Timeline_OpenPresent__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_InteractablePresent_C_Timeline_OpenPresent__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "Timeline_OpenPresent__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void ABP_CozyLodge_InteractablePresent_C::Timeline_OpenPresent__FinishedFunc()
 
 void ABP_CozyLodge_InteractablePresent_C::Timeline_OpenPresent__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "Timeline_OpenPresent__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_InteractablePresent_C_Timeline_OpenPresent__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "Timeline_OpenPresent__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void ABP_CozyLodge_InteractablePresent_C::Timeline_OpenPresent__UpdateFunc()
 
 void ABP_CozyLodge_InteractablePresent_C::Timeline_0__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "Timeline_0__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_InteractablePresent_C_Timeline_0__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "Timeline_0__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void ABP_CozyLodge_InteractablePresent_C::Timeline_0__FinishedFunc()
 
 void ABP_CozyLodge_InteractablePresent_C::Timeline_0__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "Timeline_0__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_InteractablePresent_C_Timeline_0__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "Timeline_0__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -85,12 +118,14 @@ void ABP_CozyLodge_InteractablePresent_C::Timeline_0__UpdateFunc()
 
 void ABP_CozyLodge_InteractablePresent_C::Timeline_0__TriggerFX__EventFunc()
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "Timeline_0__TriggerFX__EventFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_InteractablePresent_C_Timeline_0__TriggerFX__EventFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "Timeline_0__TriggerFX__EventFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -101,12 +136,14 @@ void ABP_CozyLodge_InteractablePresent_C::Timeline_0__TriggerFX__EventFunc()
 
 void ABP_CozyLodge_InteractablePresent_C::Timeline_Shake__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "Timeline_Shake__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_InteractablePresent_C_Timeline_Shake__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "Timeline_Shake__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -117,12 +154,14 @@ void ABP_CozyLodge_InteractablePresent_C::Timeline_Shake__FinishedFunc()
 
 void ABP_CozyLodge_InteractablePresent_C::Timeline_Shake__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "Timeline_Shake__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_InteractablePresent_C_Timeline_Shake__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "Timeline_Shake__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -134,9 +173,12 @@ void ABP_CozyLodge_InteractablePresent_C::Timeline_Shake__UpdateFunc()
 
 void ABP_CozyLodge_InteractablePresent_C::OnShakePresent(class UFortItemDefinition* ItemDef)
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "OnShakePresent");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_InteractablePresent_C_OnShakePresent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "OnShakePresent");
+
+	Params::ABP_CozyLodge_InteractablePresent_C_OnShakePresent_Params Parms{};
 
 	Parms.ItemDef = ItemDef;
 
@@ -152,9 +194,12 @@ void ABP_CozyLodge_InteractablePresent_C::OnShakePresent(class UFortItemDefiniti
 
 void ABP_CozyLodge_InteractablePresent_C::OnOpenPresent(bool bActionCancelled)
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "OnOpenPresent");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_InteractablePresent_C_OnOpenPresent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "OnOpenPresent");
+
+	Params::ABP_CozyLodge_InteractablePresent_C_OnOpenPresent_Params Parms{};
 
 	Parms.bActionCancelled = bActionCancelled;
 
@@ -169,12 +214,14 @@ void ABP_CozyLodge_InteractablePresent_C::OnOpenPresent(bool bActionCancelled)
 
 void ABP_CozyLodge_InteractablePresent_C::OnResetPresent()
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "OnResetPresent");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_InteractablePresent_C_OnResetPresent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "OnResetPresent");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -185,12 +232,14 @@ void ABP_CozyLodge_InteractablePresent_C::OnResetPresent()
 
 void ABP_CozyLodge_InteractablePresent_C::TestOpen()
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "TestOpen");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_InteractablePresent_C_TestOpen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "TestOpen");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -201,12 +250,14 @@ void ABP_CozyLodge_InteractablePresent_C::TestOpen()
 
 void ABP_CozyLodge_InteractablePresent_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_InteractablePresent_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -265,9 +316,12 @@ void ABP_CozyLodge_InteractablePresent_C::ReceiveBeginPlay()
 
 void ABP_CozyLodge_InteractablePresent_C::ExecuteUbergraph_BP_CozyLodge_InteractablePresent(int32 EntryPoint, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_GetPI_ReturnValue, float CallFunc_FClamp_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue_1, float CallFunc_GetTimeSeconds_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_2, float CallFunc_Multiply_FloatFloat_ReturnValue_3, float CallFunc_Sin_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_4, float CallFunc_Multiply_FloatFloat_ReturnValue_5, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FHitResult& CallFunc_K2_AddWorldRotation_SweepHitResult, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_GetWorldDeltaSeconds_ReturnValue, const struct FRotator& CallFunc_RInterpTo_ReturnValue, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult, bool K2Node_SwitchEnum_CmpSuccess, bool K2Node_SwitchEnum_CmpSuccess_1, class UFortItemDefinition* K2Node_Event_ItemDef, bool K2Node_Event_bActionCancelled, const struct FLinearColor& CallFunc_K2_GetVectorParameterValue_ReturnValue, const struct FVector& CallFunc_Conv_LinearColorToVector_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, class UAudioComponent* CallFunc_SpawnSoundAtLocation_ReturnValue, float CallFunc_FClamp_ReturnValue_1, const class FString& CallFunc_GetDisplayName_ReturnValue, bool CallFunc_EqualEqual_StrStr_ReturnValue, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic, bool K2Node_DynamicCast_bSuccess, class UAudioComponent* CallFunc_SpawnSoundAtLocation_ReturnValue_1, class AGameStateBase* CallFunc_GetGameState_ReturnValue, TArray<class UGSC_DynamicLevelStreaming_C*>& CallFunc_K2_GetComponentsByClass_ReturnValue, class UGSC_DynamicLevelStreaming_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class AFortEventLevelNavigationActor* CallFunc_GetLastNavObject_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, class ABP_CozyLodge_SelectablePresent_C* K2Node_DynamicCast_AsBP_Cozy_Lodge_Selectable_Present, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "ExecuteUbergraph_BP_CozyLodge_InteractablePresent");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_CozyLodge_InteractablePresent_C_ExecuteUbergraph_BP_CozyLodge_InteractablePresent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_CozyLodge_InteractablePresent_C", "ExecuteUbergraph_BP_CozyLodge_InteractablePresent");
+
+	Params::ABP_CozyLodge_InteractablePresent_C_ExecuteUbergraph_BP_CozyLodge_InteractablePresent_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_K2_GetRootComponent_ReturnValue = CallFunc_K2_GetRootComponent_ReturnValue;
@@ -324,6 +378,4 @@ void ABP_CozyLodge_InteractablePresent_C::ExecuteUbergraph_BP_CozyLodge_Interact
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

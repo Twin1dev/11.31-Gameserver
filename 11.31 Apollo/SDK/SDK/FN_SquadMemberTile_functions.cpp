@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass SquadMemberTile.SquadMemberTile_C
+// (None)
+
+class UClass* USquadMemberTile_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SquadMemberTile_C");
+
+	return Clss;
+}
+
+
+// SquadMemberTile_C SquadMemberTile.Default__SquadMemberTile_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USquadMemberTile_C* USquadMemberTile_C::GetDefaultObj()
+{
+	static class USquadMemberTile_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USquadMemberTile_C*>(USquadMemberTile_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function SquadMemberTile.SquadMemberTile_C.SetVisuals
@@ -33,9 +58,12 @@ namespace SDK
 
 void USquadMemberTile_C::SetVisuals(enum class EGameReadiness Member_Readiness, bool Is_In_Frontend, class UMaterialInterface* Temp_object_Variable, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, class UMaterialInterface* Temp_object_Variable_1, bool CallFunc_BooleanOR_ReturnValue, class UMaterialInterface* Temp_object_Variable_2, enum class EGameReadiness Temp_byte_Variable, class UMaterialInterface* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "SetVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_SetVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "SetVisuals");
+
+	Params::USquadMemberTile_C_SetVisuals_Params Parms{};
 
 	Parms.Member_Readiness = Member_Readiness;
 	Parms.Is_In_Frontend = Is_In_Frontend;
@@ -58,15 +86,18 @@ void USquadMemberTile_C::SetVisuals(enum class EGameReadiness Member_Readiness, 
 // Function SquadMemberTile.SquadMemberTile_C.SetEmptyVisuals
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USquadMemberTile_C::SetEmptyVisuals(const struct FSlateColor& K2Node_MakeStruct_SlateColor, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "SetEmptyVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_SetEmptyVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "SetEmptyVisuals");
+
+	Params::USquadMemberTile_C_SetEmptyVisuals_Params Parms{};
 
 	Parms.K2Node_MakeStruct_SlateColor = K2Node_MakeStruct_SlateColor;
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
@@ -80,15 +111,18 @@ void USquadMemberTile_C::SetEmptyVisuals(const struct FSlateColor& K2Node_MakeSt
 // Function SquadMemberTile.SquadMemberTile_C.SetSitOutVisuals
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USquadMemberTile_C::SetSitOutVisuals(const struct FSlateColor& K2Node_MakeStruct_SlateColor, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "SetSitOutVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_SetSitOutVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "SetSitOutVisuals");
+
+	Params::USquadMemberTile_C_SetSitOutVisuals_Params Parms{};
 
 	Parms.K2Node_MakeStruct_SlateColor = K2Node_MakeStruct_SlateColor;
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
@@ -102,15 +136,18 @@ void USquadMemberTile_C::SetSitOutVisuals(const struct FSlateColor& K2Node_MakeS
 // Function SquadMemberTile.SquadMemberTile_C.SetReadyVisuals
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USquadMemberTile_C::SetReadyVisuals(const struct FSlateColor& K2Node_MakeStruct_SlateColor, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "SetReadyVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_SetReadyVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "SetReadyVisuals");
+
+	Params::USquadMemberTile_C_SetReadyVisuals_Params Parms{};
 
 	Parms.K2Node_MakeStruct_SlateColor = K2Node_MakeStruct_SlateColor;
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
@@ -124,15 +161,18 @@ void USquadMemberTile_C::SetReadyVisuals(const struct FSlateColor& K2Node_MakeSt
 // Function SquadMemberTile.SquadMemberTile_C.SetNotReadyVisuals
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void USquadMemberTile_C::SetNotReadyVisuals(const struct FSlateColor& K2Node_MakeStruct_SlateColor, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "SetNotReadyVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_SetNotReadyVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "SetNotReadyVisuals");
+
+	Params::USquadMemberTile_C_SetNotReadyVisuals_Params Parms{};
 
 	Parms.K2Node_MakeStruct_SlateColor = K2Node_MakeStruct_SlateColor;
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
@@ -150,9 +190,12 @@ void USquadMemberTile_C::SetNotReadyVisuals(const struct FSlateColor& K2Node_Mak
 
 void USquadMemberTile_C::OnLoaded_A3B69DDA4214DBAA66546FAB9F43D5E7(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "OnLoaded_A3B69DDA4214DBAA66546FAB9F43D5E7");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_OnLoaded_A3B69DDA4214DBAA66546FAB9F43D5E7_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "OnLoaded_A3B69DDA4214DBAA66546FAB9F43D5E7");
+
+	Params::USquadMemberTile_C_OnLoaded_A3B69DDA4214DBAA66546FAB9F43D5E7_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -167,12 +210,14 @@ void USquadMemberTile_C::OnLoaded_A3B69DDA4214DBAA66546FAB9F43D5E7(class UObject
 
 void USquadMemberTile_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -183,12 +228,14 @@ void USquadMemberTile_C::BP_OnUnhovered()
 
 void USquadMemberTile_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -199,12 +246,14 @@ void USquadMemberTile_C::BP_OnHovered()
 
 void USquadMemberTile_C::OnSquadAssigned()
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "OnSquadAssigned");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_OnSquadAssigned_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "OnSquadAssigned");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -215,12 +264,14 @@ void USquadMemberTile_C::OnSquadAssigned()
 
 void USquadMemberTile_C::Construct()
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -232,9 +283,12 @@ void USquadMemberTile_C::Construct()
 
 void USquadMemberTile_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "PreConstruct");
+
+	Params::USquadMemberTile_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -250,9 +304,12 @@ void USquadMemberTile_C::PreConstruct(bool IsDesignTime)
 
 void USquadMemberTile_C::OnMemberGameReadinessChanged(enum class EGameReadiness ReadyStatus)
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "OnMemberGameReadinessChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_OnMemberGameReadinessChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "OnMemberGameReadinessChanged");
+
+	Params::USquadMemberTile_C_OnMemberGameReadinessChanged_Params Parms{};
 
 	Parms.ReadyStatus = ReadyStatus;
 
@@ -267,12 +324,14 @@ void USquadMemberTile_C::OnMemberGameReadinessChanged(enum class EGameReadiness 
 
 void USquadMemberTile_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "BP_OnSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_BP_OnSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "BP_OnSelected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -283,12 +342,14 @@ void USquadMemberTile_C::BP_OnSelected()
 
 void USquadMemberTile_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "BP_OnDeselected");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_BP_OnDeselected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "BP_OnDeselected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -300,9 +361,12 @@ void USquadMemberTile_C::BP_OnDeselected()
 
 void USquadMemberTile_C::BP_OnTeamMemberEstablished(bool bHasValidMember)
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "BP_OnTeamMemberEstablished");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_BP_OnTeamMemberEstablished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "BP_OnTeamMemberEstablished");
+
+	Params::USquadMemberTile_C_BP_OnTeamMemberEstablished_Params Parms{};
 
 	Parms.bHasValidMember = bHasValidMember;
 
@@ -318,9 +382,12 @@ void USquadMemberTile_C::BP_OnTeamMemberEstablished(bool bHasValidMember)
 
 void USquadMemberTile_C::OnMemberIsInFrontendChanged(bool bIsInFrontend)
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "OnMemberIsInFrontendChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_OnMemberIsInFrontendChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "OnMemberIsInFrontendChanged");
+
+	Params::USquadMemberTile_C_OnMemberIsInFrontendChanged_Params Parms{};
 
 	Parms.bIsInFrontend = bIsInFrontend;
 
@@ -337,7 +404,7 @@ void USquadMemberTile_C::OnMemberIsInFrontendChanged(bool bIsInFrontend)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FAthenaTeamDisplayInfo      CallFunc_GetSquadDisplayInfo_ReturnValue                         ()
+// struct FAthenaTeamDisplayInfo      CallFunc_GetSquadDisplayInfo_ReturnValue                         (None)
 // class UTexture*                    K2Node_DynamicCast_AsTexture                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsCurrentMemberLocal_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -356,9 +423,12 @@ void USquadMemberTile_C::OnMemberIsInFrontendChanged(bool bIsInFrontend)
 
 void USquadMemberTile_C::ExecuteUbergraph_SquadMemberTile(int32 EntryPoint, enum class EGameReadiness CallFunc_GetCurrentMemberGameReadiness_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UObject* Temp_object_Variable, const struct FAthenaTeamDisplayInfo& CallFunc_GetSquadDisplayInfo_ReturnValue, class UTexture* K2Node_DynamicCast_AsTexture, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsCurrentMemberLocal_ReturnValue, bool K2Node_Event_IsDesignTime, enum class EGameReadiness K2Node_Event_ReadyStatus, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, class UObject* K2Node_CustomEvent_Loaded, bool K2Node_Event_bHasValidMember, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool K2Node_Event_bIsInFrontend, bool CallFunc_IsCurrentMemberInFrontend_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SquadMemberTile_C", "ExecuteUbergraph_SquadMemberTile");
+	static class UFunction* Func = nullptr;
 
-	Params::USquadMemberTile_C_ExecuteUbergraph_SquadMemberTile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SquadMemberTile_C", "ExecuteUbergraph_SquadMemberTile");
+
+	Params::USquadMemberTile_C_ExecuteUbergraph_SquadMemberTile_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetCurrentMemberGameReadiness_ReturnValue = CallFunc_GetCurrentMemberGameReadiness_ReturnValue;
@@ -388,6 +458,4 @@ void USquadMemberTile_C::ExecuteUbergraph_SquadMemberTile(int32 EntryPoint, enum
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

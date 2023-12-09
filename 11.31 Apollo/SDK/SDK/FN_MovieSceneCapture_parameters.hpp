@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -104,13 +101,6 @@ public:
 	class UMovieSceneAudioCaptureProtocolBase*   ReturnValue;                                       // 0x0(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function MovieSceneCapture.UserDefinedCaptureProtocol.StopCapturingFinalPixels
-struct UUserDefinedCaptureProtocol_StopCapturingFinalPixels_Params
-{
-public:
-};
-
 // 0x50 (0x50 - 0x0)
 // Function MovieSceneCapture.UserDefinedCaptureProtocol.StartCapturingFinalPixels
 struct UUserDefinedCaptureProtocol_StartCapturingFinalPixels_Params
@@ -128,40 +118,12 @@ public:
 	struct FCapturedPixelsID                     BufferID;                                          // 0x8(0x50)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnWarmUp
-struct UUserDefinedCaptureProtocol_OnWarmUp_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnTick
-struct UUserDefinedCaptureProtocol_OnTick_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnStartCapture
-struct UUserDefinedCaptureProtocol_OnStartCapture_Params
-{
-public:
-};
-
 // 0x1 (0x1 - 0x0)
 // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnSetup
 struct UUserDefinedCaptureProtocol_OnSetup_Params
 {
 public:
 	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPreTick
-struct UUserDefinedCaptureProtocol_OnPreTick_Params
-{
-public:
 };
 
 // 0x70 (0x70 - 0x0)
@@ -174,40 +136,12 @@ public:
 	struct FFrameMetrics                         FrameMetrics;                                      // 0x60(0x10)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnPauseCapture
-struct UUserDefinedCaptureProtocol_OnPauseCapture_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnFinalize
-struct UUserDefinedCaptureProtocol_OnFinalize_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCaptureFrame
-struct UUserDefinedCaptureProtocol_OnCaptureFrame_Params
-{
-public:
-};
-
 // 0x1 (0x1 - 0x0)
 // Function MovieSceneCapture.UserDefinedCaptureProtocol.OnCanFinalize
 struct UUserDefinedCaptureProtocol_OnCanFinalize_Params
 {
 public:
 	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function MovieSceneCapture.UserDefinedCaptureProtocol.OnBeginFinalize
-struct UUserDefinedCaptureProtocol_OnBeginFinalize_Params
-{
-public:
 };
 
 // 0x10 (0x10 - 0x0)
@@ -236,7 +170,7 @@ public:
 	struct FCapturedPixelsID                     StreamID;                                          // 0x10(0x50)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FFrameMetrics                         FrameMetrics;                                      // 0x60(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         bCopyImageData;                                    // 0x70(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4334[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_23E2[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -260,6 +194,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

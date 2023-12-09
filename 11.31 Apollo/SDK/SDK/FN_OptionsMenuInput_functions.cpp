@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,13 +12,41 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass OptionsMenuInput.OptionsMenuInput_C
+// (None)
+
+class UClass* UOptionsMenuInput_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("OptionsMenuInput_C");
+
+	return Clss;
+}
+
+
+// OptionsMenuInput_C OptionsMenuInput.Default__OptionsMenuInput_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UOptionsMenuInput_C* UOptionsMenuInput_C::GetDefaultObj()
+{
+	static class UOptionsMenuInput_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UOptionsMenuInput_C*>(UOptionsMenuInput_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function OptionsMenuInput.OptionsMenuInput_C.SetClearButtonVisibility
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
 // bool                               CallFunc_EqualEqual_TextText_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_TextText_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -29,9 +54,12 @@ namespace SDK
 
 void UOptionsMenuInput_C::SetClearButtonVisibility(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class FText CallFunc_MakeLiteralText_ReturnValue, bool CallFunc_EqualEqual_TextText_ReturnValue, bool CallFunc_EqualEqual_TextText_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "SetClearButtonVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInput_C_SetClearButtonVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInput_C", "SetClearButtonVisibility");
+
+	Params::UOptionsMenuInput_C_SetClearButtonVisibility_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -55,9 +83,12 @@ void UOptionsMenuInput_C::SetClearButtonVisibility(bool Temp_bool_Variable, enum
 
 void UOptionsMenuInput_C::Change_Key(bool Primary_Key, class FText Key_To_Sets)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "Change Key");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInput_C_Change_Key_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInput_C", "Change Key");
+
+	Params::UOptionsMenuInput_C_Change_Key_Params Parms{};
 
 	Parms.Primary_Key = Primary_Key;
 	Parms.Key_To_Sets = Key_To_Sets;
@@ -74,9 +105,12 @@ void UOptionsMenuInput_C::Change_Key(bool Primary_Key, class FText Key_To_Sets)
 
 void UOptionsMenuInput_C::Center_On_Widget(class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "Center On Widget");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInput_C_Center_On_Widget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInput_C", "Center On Widget");
+
+	Params::UOptionsMenuInput_C_Center_On_Widget_Params Parms{};
 
 	Parms.CallFunc_GetUINavigationManager_ReturnValue = CallFunc_GetUINavigationManager_ReturnValue;
 
@@ -92,9 +126,12 @@ void UOptionsMenuInput_C::Center_On_Widget(class UFortUINavigationManager* CallF
 
 void UOptionsMenuInput_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInput_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInput_C", "OnListItemObjectSet");
+
+	Params::UOptionsMenuInput_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -110,9 +147,12 @@ void UOptionsMenuInput_C::OnListItemObjectSet(class UObject* ListItemObject)
 
 void UOptionsMenuInput_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInput_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInput_C", "OnMouseLeave");
+
+	Params::UOptionsMenuInput_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -129,9 +169,12 @@ void UOptionsMenuInput_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 
 void UOptionsMenuInput_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInput_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInput_C", "OnMouseEnter");
+
+	Params::UOptionsMenuInput_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -148,9 +191,12 @@ void UOptionsMenuInput_C::OnMouseEnter(const struct FGeometry& MyGeometry, struc
 
 void UOptionsMenuInput_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_226_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "BndEvt__IconTextButton_K2Node_ComponentBoundEvent_226_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInput_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_226_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInput_C", "BndEvt__IconTextButton_K2Node_ComponentBoundEvent_226_CommonButtonClicked__DelegateSignature");
+
+	Params::UOptionsMenuInput_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_226_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -166,9 +212,12 @@ void UOptionsMenuInput_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_226_
 
 void UOptionsMenuInput_C::BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInput_C", "BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature");
+
+	Params::UOptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -184,9 +233,12 @@ void UOptionsMenuInput_C::BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_C
 
 void UOptionsMenuInput_C::BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInput_C", "BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature");
+
+	Params::UOptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -202,9 +254,12 @@ void UOptionsMenuInput_C::BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_Com
 
 void UOptionsMenuInput_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInput_C_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInput_C", "BP_OnItemSelectionChanged");
+
+	Params::UOptionsMenuInput_C_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -220,9 +275,12 @@ void UOptionsMenuInput_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UOptionsMenuInput_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInput_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInput_C", "BP_OnItemExpansionChanged");
+
+	Params::UOptionsMenuInput_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -237,12 +295,14 @@ void UOptionsMenuInput_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UOptionsMenuInput_C::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "BP_OnEntryReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInput_C_BP_OnEntryReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInput_C", "BP_OnEntryReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -256,7 +316,7 @@ void UOptionsMenuInput_C::BP_OnEntryReleased()
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // struct FPointerEvent               K2Node_Event_MouseEvent_1                                        (ConstParm)
 // struct FGeometry                   K2Node_Event_MyGeometry                                          (IsPlainOldData, NoDestructor)
 // struct FPointerEvent               K2Node_Event_MouseEvent                                          (ConstParm)
@@ -268,9 +328,12 @@ void UOptionsMenuInput_C::BP_OnEntryReleased()
 
 void UOptionsMenuInput_C::ExecuteUbergraph_OptionsMenuInput(int32 EntryPoint, class UObject* K2Node_Event_ListItemObject, class UFortOptionsMenuInputData* K2Node_DynamicCast_AsFort_Options_Menu_Input_Data, bool K2Node_DynamicCast_bSuccess, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool K2Node_Event_bIsSelected, bool K2Node_Event_bIsExpanded)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "ExecuteUbergraph_OptionsMenuInput");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInput_C", "ExecuteUbergraph_OptionsMenuInput");
+
+	Params::UOptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_ListItemObject = K2Node_Event_ListItemObject;
@@ -301,9 +364,12 @@ void UOptionsMenuInput_C::ExecuteUbergraph_OptionsMenuInput(int32 EntryPoint, cl
 
 void UOptionsMenuInput_C::UnbindClicked__DelegateSignature(int32 Number_In_List, class UOptionsMenuInput_C* Widget)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "UnbindClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInput_C_UnbindClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInput_C", "UnbindClicked__DelegateSignature");
+
+	Params::UOptionsMenuInput_C_UnbindClicked__DelegateSignature_Params Parms{};
 
 	Parms.Number_In_List = Number_In_List;
 	Parms.Widget = Widget;
@@ -321,9 +387,12 @@ void UOptionsMenuInput_C::UnbindClicked__DelegateSignature(int32 Number_In_List,
 
 void UOptionsMenuInput_C::Input_Clicked__DelegateSignature(int32 Number_In_List, bool Is_Primary_Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "Input Clicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UOptionsMenuInput_C_Input_Clicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("OptionsMenuInput_C", "Input Clicked__DelegateSignature");
+
+	Params::UOptionsMenuInput_C_Input_Clicked__DelegateSignature_Params Parms{};
 
 	Parms.Number_In_List = Number_In_List;
 	Parms.Is_Primary_Button = Is_Primary_Button;
@@ -334,6 +403,4 @@ void UOptionsMenuInput_C::Input_Clicked__DelegateSignature(int32 Number_In_List,
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

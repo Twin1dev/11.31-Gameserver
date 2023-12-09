@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_ZipLine_Athena_Harness.BP_ZipLine_Athena_Harness_C
+// (Actor)
+
+class UClass* ABP_ZipLine_Athena_Harness_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_ZipLine_Athena_Harness_C");
+
+	return Clss;
+}
+
+
+// BP_ZipLine_Athena_Harness_C BP_ZipLine_Athena_Harness.Default__BP_ZipLine_Athena_Harness_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_ZipLine_Athena_Harness_C* ABP_ZipLine_Athena_Harness_C::GetDefaultObj()
+{
+	static class ABP_ZipLine_Athena_Harness_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_ZipLine_Athena_Harness_C*>(ABP_ZipLine_Athena_Harness_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_ZipLine_Athena_Harness.BP_ZipLine_Athena_Harness_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void ABP_ZipLine_Athena_Harness_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ZipLine_Athena_Harness_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void ABP_ZipLine_Athena_Harness_C::ReceiveBeginPlay()
 
 void ABP_ZipLine_Athena_Harness_C::Start_Travel_Audio()
 {
-	static auto Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "Start Travel Audio");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ZipLine_Athena_Harness_C_Start_Travel_Audio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "Start Travel Audio");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void ABP_ZipLine_Athena_Harness_C::Start_Travel_Audio()
 
 void ABP_ZipLine_Athena_Harness_C::Stop_Travel_Audio()
 {
-	static auto Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "Stop Travel Audio");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ZipLine_Athena_Harness_C_Stop_Travel_Audio_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "Stop Travel Audio");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void ABP_ZipLine_Athena_Harness_C::Stop_Travel_Audio()
 
 void ABP_ZipLine_Athena_Harness_C::ReceiveDestroyed()
 {
-	static auto Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "ReceiveDestroyed");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ZipLine_Athena_Harness_C_ReceiveDestroyed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "ReceiveDestroyed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -93,9 +126,12 @@ void ABP_ZipLine_Athena_Harness_C::ReceiveDestroyed()
 
 void ABP_ZipLine_Athena_Harness_C::HandleOnDied(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static auto Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "HandleOnDied");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ZipLine_Athena_Harness_C_HandleOnDied_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "HandleOnDied");
+
+	Params::ABP_ZipLine_Athena_Harness_C_HandleOnDied_Params Parms{};
 
 	Parms.DamagedActor = DamagedActor;
 	Parms.Damage = Damage;
@@ -117,12 +153,14 @@ void ABP_ZipLine_Athena_Harness_C::HandleOnDied(class AActor* DamagedActor, floa
 
 void ABP_ZipLine_Athena_Harness_C::Chime_Visual()
 {
-	static auto Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "Chime Visual");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ZipLine_Athena_Harness_C_Chime_Visual_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "Chime Visual");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -175,9 +213,12 @@ void ABP_ZipLine_Athena_Harness_C::Chime_Visual()
 
 void ABP_ZipLine_Athena_Harness_C::ExecuteUbergraph_BP_ZipLine_Athena_Harness(int32 EntryPoint, int32 Temp_int_Variable, uint8 CallFunc_GetActorTeam_ReturnValue, int32 Temp_int_Variable_1, bool Temp_bool_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue_1, bool Temp_bool_Variable_1, bool CallFunc_HasAuthority_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, const struct FTransform& CallFunc_K2_GetComponentToWorld_ReturnValue, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, const struct FRotator& CallFunc_K2_GetComponentRotation_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, const struct FRotator& CallFunc_MakeRotator_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldRotation_SweepHitResult, bool Temp_bool_Option_B___If_false__use_Option_A_Variable, class UParticleSystem* K2Node_Select_Default, int32 K2Node_Select_Default_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, class AActor* K2Node_CustomEvent_DamagedActor, float K2Node_CustomEvent_Damage, class AController* K2Node_CustomEvent_InstigatedBy, class AActor* K2Node_CustomEvent_DamageCauser, const struct FVector& K2Node_CustomEvent_HitLocation, class UPrimitiveComponent* K2Node_CustomEvent_FHitComponent, class FName K2Node_CustomEvent_BoneName, const struct FVector& K2Node_CustomEvent_Momentum, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, TArray<enum class EFortTeamAffiliation>& K2Node_MakeArray_Array)
 {
-	static auto Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "ExecuteUbergraph_BP_ZipLine_Athena_Harness");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_ZipLine_Athena_Harness_C_ExecuteUbergraph_BP_ZipLine_Athena_Harness_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_ZipLine_Athena_Harness_C", "ExecuteUbergraph_BP_ZipLine_Athena_Harness");
+
+	Params::ABP_ZipLine_Athena_Harness_C_ExecuteUbergraph_BP_ZipLine_Athena_Harness_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -228,6 +269,4 @@ void ABP_ZipLine_Athena_Harness_C::ExecuteUbergraph_BP_ZipLine_Athena_Harness(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

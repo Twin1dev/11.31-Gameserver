@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TournamentModal.TournamentModal_C
+// (None)
+
+class UClass* UTournamentModal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TournamentModal_C");
+
+	return Clss;
+}
+
+
+// TournamentModal_C TournamentModal.Default__TournamentModal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTournamentModal_C* UTournamentModal_C::GetDefaultObj()
+{
+	static class UTournamentModal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTournamentModal_C*>(UTournamentModal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TournamentModal.TournamentModal_C.BP_OnActivated
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UTournamentModal_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("TournamentModal_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentModal_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentModal_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -39,9 +66,12 @@ void UTournamentModal_C::BP_OnActivated()
 
 void UTournamentModal_C::OnTournamentSet(const struct FLinearColor& LeftColor, const struct FLinearColor& RightColor)
 {
-	static auto Func = Class->GetFunction("TournamentModal_C", "OnTournamentSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentModal_C_OnTournamentSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentModal_C", "OnTournamentSet");
+
+	Params::UTournamentModal_C_OnTournamentSet_Params Parms{};
 
 	Parms.LeftColor = LeftColor;
 	Parms.RightColor = RightColor;
@@ -62,9 +92,12 @@ void UTournamentModal_C::OnTournamentSet(const struct FLinearColor& LeftColor, c
 
 void UTournamentModal_C::ExecuteUbergraph_TournamentModal(int32 EntryPoint, const struct FLinearColor& K2Node_Event_LeftColor, const struct FLinearColor& K2Node_Event_RightColor, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TournamentModal_C", "ExecuteUbergraph_TournamentModal");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentModal_C_ExecuteUbergraph_TournamentModal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentModal_C", "ExecuteUbergraph_TournamentModal");
+
+	Params::UTournamentModal_C_ExecuteUbergraph_TournamentModal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_LeftColor = K2Node_Event_LeftColor;
@@ -78,6 +111,4 @@ void UTournamentModal_C::ExecuteUbergraph_TournamentModal(int32 EntryPoint, cons
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

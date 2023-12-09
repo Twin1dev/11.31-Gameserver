@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -22,11 +19,8 @@ public:
 	struct FTimerHandle                          TraceTimer;                                        // 0xA40(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                          OffIceTimer;                                       // 0xA48(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GA_SurfaceChange_Ice_IceCheckOnTimer_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGA_SurfaceChange_Ice_IceCheckOnTimer_C* GetDefaultObj();
 
 	void K2_ActivateAbility();
 	void K2_OnEndAbility(bool bWasCancelled);
@@ -37,6 +31,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

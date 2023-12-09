@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass WinterQuestScreen.WinterQuestScreen_C
+// (None)
+
+class UClass* UWinterQuestScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WinterQuestScreen_C");
+
+	return Clss;
+}
+
+
+// WinterQuestScreen_C WinterQuestScreen.Default__WinterQuestScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UWinterQuestScreen_C* UWinterQuestScreen_C::GetDefaultObj()
+{
+	static class UWinterQuestScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWinterQuestScreen_C*>(UWinterQuestScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function WinterQuestScreen.WinterQuestScreen_C.DeactivateAllWidgets
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UWinterQuestScreen_C::DeactivateAllWidgets()
 {
-	static auto Func = Class->GetFunction("WinterQuestScreen_C", "DeactivateAllWidgets");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestScreen_C_DeactivateAllWidgets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestScreen_C", "DeactivateAllWidgets");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -46,9 +73,12 @@ void UWinterQuestScreen_C::DeactivateAllWidgets()
 
 void UWinterQuestScreen_C::SetScreenStateVisibilty(bool bHideBackButton, bool bHideSpoilersButton, bool Temp_bool_Variable, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default, class UWidgetAnimation* K2Node_Select_Default_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("WinterQuestScreen_C", "SetScreenStateVisibilty");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestScreen_C_SetScreenStateVisibilty_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestScreen_C", "SetScreenStateVisibilty");
+
+	Params::UWinterQuestScreen_C_SetScreenStateVisibilty_Params Parms{};
 
 	Parms.bHideBackButton = bHideBackButton;
 	Parms.bHideSpoilersButton = bHideSpoilersButton;
@@ -72,9 +102,12 @@ void UWinterQuestScreen_C::SetScreenStateVisibilty(bool bHideBackButton, bool bH
 
 void UWinterQuestScreen_C::OnScreenStateChanged(enum class EWinterQuestViewState NewState)
 {
-	static auto Func = Class->GetFunction("WinterQuestScreen_C", "OnScreenStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestScreen_C_OnScreenStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestScreen_C", "OnScreenStateChanged");
+
+	Params::UWinterQuestScreen_C_OnScreenStateChanged_Params Parms{};
 
 	Parms.NewState = NewState;
 
@@ -89,12 +122,14 @@ void UWinterQuestScreen_C::OnScreenStateChanged(enum class EWinterQuestViewState
 
 void UWinterQuestScreen_C::Construct()
 {
-	static auto Func = Class->GetFunction("WinterQuestScreen_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestScreen_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestScreen_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,12 +140,14 @@ void UWinterQuestScreen_C::Construct()
 
 void UWinterQuestScreen_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("WinterQuestScreen_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestScreen_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestScreen_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -121,12 +158,14 @@ void UWinterQuestScreen_C::BP_OnActivated()
 
 void UWinterQuestScreen_C::OnUserExitCabin()
 {
-	static auto Func = Class->GetFunction("WinterQuestScreen_C", "OnUserExitCabin");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestScreen_C_OnUserExitCabin_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestScreen_C", "OnUserExitCabin");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -137,12 +176,14 @@ void UWinterQuestScreen_C::OnUserExitCabin()
 
 void UWinterQuestScreen_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("WinterQuestScreen_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestScreen_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestScreen_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -153,12 +194,14 @@ void UWinterQuestScreen_C::BP_OnDeactivated()
 
 void UWinterQuestScreen_C::Reset_Enter_Sound()
 {
-	static auto Func = Class->GetFunction("WinterQuestScreen_C", "Reset Enter Sound");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestScreen_C_Reset_Enter_Sound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestScreen_C", "Reset Enter Sound");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -170,9 +213,12 @@ void UWinterQuestScreen_C::Reset_Enter_Sound()
 
 void UWinterQuestScreen_C::OnSetAllUIVisibilityState(bool bIsHidden)
 {
-	static auto Func = Class->GetFunction("WinterQuestScreen_C", "OnSetAllUIVisibilityState");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestScreen_C_OnSetAllUIVisibilityState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestScreen_C", "OnSetAllUIVisibilityState");
+
+	Params::UWinterQuestScreen_C_OnSetAllUIVisibilityState_Params Parms{};
 
 	Parms.bIsHidden = bIsHidden;
 
@@ -187,12 +233,14 @@ void UWinterQuestScreen_C::OnSetAllUIVisibilityState(bool bIsHidden)
 
 void UWinterQuestScreen_C::OnPresentOpened()
 {
-	static auto Func = Class->GetFunction("WinterQuestScreen_C", "OnPresentOpened");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestScreen_C_OnPresentOpened_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestScreen_C", "OnPresentOpened");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -239,9 +287,12 @@ void UWinterQuestScreen_C::OnPresentOpened()
 
 void UWinterQuestScreen_C::ExecuteUbergraph_WinterQuestScreen(int32 EntryPoint, bool Temp_bool_IsClosed_Variable, enum class EWinterQuestViewState K2Node_Event_NewState, bool K2Node_SwitchEnum_CmpSuccess, class UWinterQuestLobbyHeader_C* K2Node_DynamicCast_AsWinter_Quest_Lobby_Header, bool K2Node_DynamicCast_bSuccess, class UWinterQuest_OpenPrompt_C* K2Node_DynamicCast_AsWinter_Quest_Open_Prompt, bool K2Node_DynamicCast_bSuccess_1, class UWinterQuest_ShakePrompt_C* K2Node_DynamicCast_AsWinter_Quest_Shake_Prompt, bool K2Node_DynamicCast_bSuccess_2, TArray<class AFort_Entry_Music_Controller_BP_C*>& CallFunc_GetAllActorsOfClass_OutActors, class AFort_Entry_Music_Controller_BP_C* CallFunc_Array_Get_Item, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable, class UWinterQuest_DayCounter_C* K2Node_DynamicCast_AsWinter_Quest_Day_Counter, bool K2Node_DynamicCast_bSuccess_3, class UWinterQuest_PresentsCounter_Notifier_C* K2Node_DynamicCast_AsWinter_Quest_Presents_Counter_Notifier, bool K2Node_DynamicCast_bSuccess_4, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, bool K2Node_Event_bIsHidden, float CallFunc_GetEndTime_ReturnValue, float CallFunc_GetAnimationCurrentTime_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_4, float CallFunc_Subtract_FloatFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_5, class UWinterQuest_OpenPrompt_C* K2Node_DynamicCast_AsWinter_Quest_Open_Prompt_1, bool K2Node_DynamicCast_bSuccess_5, class UWinterQuest_OpenPrompt_C* K2Node_DynamicCast_AsWinter_Quest_Open_Prompt_2, bool K2Node_DynamicCast_bSuccess_6, bool CallFunc_IsValid_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("WinterQuestScreen_C", "ExecuteUbergraph_WinterQuestScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UWinterQuestScreen_C_ExecuteUbergraph_WinterQuestScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WinterQuestScreen_C", "ExecuteUbergraph_WinterQuestScreen");
+
+	Params::UWinterQuestScreen_C_ExecuteUbergraph_WinterQuestScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_IsClosed_Variable = Temp_bool_IsClosed_Variable;
@@ -286,6 +337,4 @@ void UWinterQuestScreen_C::ExecuteUbergraph_WinterQuestScreen(int32 EntryPoint, 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BGA_Athena_FlopperSpawn_World.BGA_Athena_FlopperSpawn_World_C
+// (Actor)
+
+class UClass* ABGA_Athena_FlopperSpawn_World_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BGA_Athena_FlopperSpawn_World_C");
+
+	return Clss;
+}
+
+
+// BGA_Athena_FlopperSpawn_World_C BGA_Athena_FlopperSpawn_World.Default__BGA_Athena_FlopperSpawn_World_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABGA_Athena_FlopperSpawn_World_C* ABGA_Athena_FlopperSpawn_World_C::GetDefaultObj()
+{
+	static class ABGA_Athena_FlopperSpawn_World_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABGA_Athena_FlopperSpawn_World_C*>(ABGA_Athena_FlopperSpawn_World_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function BGA_Athena_FlopperSpawn_World.BGA_Athena_FlopperSpawn_World_C.Client Setup Flopper Spot
@@ -40,9 +65,12 @@ namespace SDK
 
 void ABGA_Athena_FlopperSpawn_World_C::Client_Setup_Flopper_Spot(int32 WaterBodyIndex, float WaterDepth, const struct FVector& Location, const struct FRotator& CallFunc_MakeRotFromZ_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldTransform_SweepHitResult, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_GetWaterSurfaceInfo_WaterPlaneLocation, const struct FVector& CallFunc_GetWaterSurfaceInfo_WaterPlaneNormal, const struct FVector& CallFunc_GetWaterSurfaceInfo_WaterSurfacePosition, float CallFunc_GetWaterSurfaceInfo_WaterDepth, int32 CallFunc_GetWaterSurfaceInfo_WaterBodyIdx, const struct FVector& CallFunc_GetWaterSurfaceInfo_WaterVelocity, const struct FVector& CallFunc_Add_VectorVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "Client Setup Flopper Spot");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_FlopperSpawn_World_C_Client_Setup_Flopper_Spot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "Client Setup Flopper Spot");
+
+	Params::ABGA_Athena_FlopperSpawn_World_C_Client_Setup_Flopper_Spot_Params Parms{};
 
 	Parms.WaterBodyIndex = WaterBodyIndex;
 	Parms.WaterDepth = WaterDepth;
@@ -74,22 +102,25 @@ void ABGA_Athena_FlopperSpawn_World_C::Client_Setup_Flopper_Spot(int32 WaterBody
 // Parameters:
 // class AActor*                      Instigator                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      DamageCauser                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       Temp_struct_Variable                                             ()
+// struct FGameplayTagContainer       Temp_struct_Variable                                             (None)
 // class AFortPlayerController*       K2Node_DynamicCast_AsFort_Player_Controller                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TScriptInterface<class IGameplayTagAssetInterface>K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AFortPlayerController*       CallFunc_GetFortPlayerControllerFromActor_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       CallFunc_GetOwnedGameplayTags_TagContainer                       ()
+// struct FGameplayTagContainer       CallFunc_GetOwnedGameplayTags_TagContainer                       (None)
 // class UFortQuestManager*           CallFunc_GetQuestManager_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_SendComplexCustomStatEvent_QuestActive                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_SendComplexCustomStatEvent_QuestCompleted               (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ABGA_Athena_FlopperSpawn_World_C::ExplosionQuestProgress(class AActor* Instigator, class AActor* DamageCauser, const struct FGameplayTagContainer& Temp_struct_Variable, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface, bool K2Node_DynamicCast_bSuccess_1, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, const struct FGameplayTagContainer& CallFunc_GetOwnedGameplayTags_TagContainer, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, bool CallFunc_SendComplexCustomStatEvent_QuestActive, bool CallFunc_SendComplexCustomStatEvent_QuestCompleted)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "ExplosionQuestProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_FlopperSpawn_World_C_ExplosionQuestProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "ExplosionQuestProgress");
+
+	Params::ABGA_Athena_FlopperSpawn_World_C_ExplosionQuestProgress_Params Parms{};
 
 	Parms.Instigator = Instigator;
 	Parms.DamageCauser = DamageCauser;
@@ -118,9 +149,12 @@ void ABGA_Athena_FlopperSpawn_World_C::ExplosionQuestProgress(class AActor* Inst
 
 void ABGA_Athena_FlopperSpawn_World_C::OnRep_FortWaterBody(bool CallFunc_IsServer_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "OnRep_FortWaterBody");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_FlopperSpawn_World_C_OnRep_FortWaterBody_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "OnRep_FortWaterBody");
+
+	Params::ABGA_Athena_FlopperSpawn_World_C_OnRep_FortWaterBody_Params Parms{};
 
 	Parms.CallFunc_IsServer_ReturnValue = CallFunc_IsServer_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -141,9 +175,12 @@ void ABGA_Athena_FlopperSpawn_World_C::OnRep_FortWaterBody(bool CallFunc_IsServe
 
 float ABGA_Athena_FlopperSpawn_World_C::RandomTimeInterval(float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "RandomTimeInterval");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_FlopperSpawn_World_C_RandomTimeInterval_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "RandomTimeInterval");
+
+	Params::ABGA_Athena_FlopperSpawn_World_C_RandomTimeInterval_Params Parms{};
 
 	Parms.CallFunc_Add_FloatFloat_ReturnValue = CallFunc_Add_FloatFloat_ReturnValue;
 	Parms.CallFunc_Subtract_FloatFloat_ReturnValue = CallFunc_Subtract_FloatFloat_ReturnValue;
@@ -162,12 +199,14 @@ float ABGA_Athena_FlopperSpawn_World_C::RandomTimeInterval(float CallFunc_Add_Fl
 
 void ABGA_Athena_FlopperSpawn_World_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_FlopperSpawn_World_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -185,9 +224,12 @@ void ABGA_Athena_FlopperSpawn_World_C::ReceiveBeginPlay()
 
 void ABGA_Athena_FlopperSpawn_World_C::OnDeathPlayEffects(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "OnDeathPlayEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_FlopperSpawn_World_C_OnDeathPlayEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "OnDeathPlayEffects");
+
+	Params::ABGA_Athena_FlopperSpawn_World_C_OnDeathPlayEffects_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -208,12 +250,14 @@ void ABGA_Athena_FlopperSpawn_World_C::OnDeathPlayEffects(float Damage, struct F
 
 void ABGA_Athena_FlopperSpawn_World_C::SpawnJumpingFish()
 {
-	static auto Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "SpawnJumpingFish");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_FlopperSpawn_World_C_SpawnJumpingFish_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "SpawnJumpingFish");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -231,9 +275,12 @@ void ABGA_Athena_FlopperSpawn_World_C::SpawnJumpingFish()
 
 void ABGA_Athena_FlopperSpawn_World_C::OnDamageServer(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AController* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "OnDamageServer");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_FlopperSpawn_World_C_OnDamageServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "OnDamageServer");
+
+	Params::ABGA_Athena_FlopperSpawn_World_C_OnDamageServer_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -256,9 +303,12 @@ void ABGA_Athena_FlopperSpawn_World_C::OnDamageServer(float Damage, struct FGame
 
 void ABGA_Athena_FlopperSpawn_World_C::SpawnFromExplosion(class AActor* Instigator, class AActor* DamageCauser)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "SpawnFromExplosion");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_FlopperSpawn_World_C_SpawnFromExplosion_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "SpawnFromExplosion");
+
+	Params::ABGA_Athena_FlopperSpawn_World_C_SpawnFromExplosion_Params Parms{};
 
 	Parms.Instigator = Instigator;
 	Parms.DamageCauser = DamageCauser;
@@ -297,7 +347,7 @@ void ABGA_Athena_FlopperSpawn_World_C::SpawnFromExplosion(class AActor* Instigat
 // struct FHitResult                  K2Node_Event_HitInfo_1                                           (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AFortPawn*                   K2Node_Event_InstigatedBy_1                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser_1                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext_1                                     ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext_1                                     (None)
 // struct FHitResult                  CallFunc_LineTraceSingle_OutHit                                  (IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // bool                               CallFunc_LineTraceSingle_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue_2                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -329,7 +379,7 @@ void ABGA_Athena_FlopperSpawn_World_C::SpawnFromExplosion(class AActor* Instigat
 // struct FHitResult                  K2Node_Event_HitInfo                                             (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AController*                 K2Node_Event_InstigatedBy                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       (None)
 // TArray<struct FFortItemEntry>      CallFunc_PickLootDrops_OutLootToDrop                             (ZeroConstructor, ReferenceParm)
 // bool                               CallFunc_PickLootDrops_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -345,7 +395,7 @@ void ABGA_Athena_FlopperSpawn_World_C::SpawnFromExplosion(class AActor* Instigat
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FVector                     CallFunc_Add_VectorVector_ReturnValue_2                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortItemEntry              CallFunc_Array_Get_Item                                          ()
+// struct FFortItemEntry              CallFunc_Array_Get_Item                                          (None)
 // class UFortWorldItemDefinition*    K2Node_DynamicCast_AsFort_World_Item_Definition                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess_2                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AFortPickup*                 CallFunc_K2_SpawnPickupInWorld_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -377,9 +427,12 @@ void ABGA_Athena_FlopperSpawn_World_C::SpawnFromExplosion(class AActor* Instigat
 
 void ABGA_Athena_FlopperSpawn_World_C::ExecuteUbergraph_BGA_Athena_FlopperSpawn_World(int32 EntryPoint, TArray<class AActor*>& Temp_object_Variable, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue, bool CallFunc_IsServer_ReturnValue, const struct FVector& CallFunc_RotateAngleAxis_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, float CallFunc_RandomTimeInterval_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, float CallFunc_RandomTimeInterval_ReturnValue_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, const struct FRotator& CallFunc_MakeRotFromX_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue_1, float K2Node_Event_Damage_1, const struct FGameplayTagContainer& K2Node_Event_DamageTags_1, const struct FVector& K2Node_Event_Momentum_1, const struct FHitResult& K2Node_Event_HitInfo_1, class AFortPawn* K2Node_Event_InstigatedBy_1, class AActor* K2Node_Event_DamageCauser_1, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext_1, const struct FHitResult& CallFunc_LineTraceSingle_OutHit, bool CallFunc_LineTraceSingle_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_3, class AFortWaterBodyActor* K2Node_DynamicCast_AsFort_Water_Body_Actor, bool K2Node_DynamicCast_bSuccess, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float K2Node_Event_Damage, const struct FGameplayTagContainer& K2Node_Event_DamageTags, const struct FVector& K2Node_Event_Momentum, const struct FHitResult& K2Node_Event_HitInfo, class AController* K2Node_Event_InstigatedBy, class AActor* K2Node_Event_DamageCauser, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext, TArray<struct FFortItemEntry>& CallFunc_PickLootDrops_OutLootToDrop, bool CallFunc_PickLootDrops_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, const struct FVector& CallFunc_GetActorForwardVector_ReturnValue_1, bool CallFunc_IsServer_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_4, class AActor* K2Node_CustomEvent_Instigator, class AActor* K2Node_CustomEvent_DamageCauser, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, bool CallFunc_IsValid_ReturnValue, class APawn* CallFunc_K2_GetPawn_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_1, int32 Temp_int_Array_Index_Variable, const struct FVector& CallFunc_Add_VectorVector_ReturnValue_2, const struct FFortItemEntry& CallFunc_Array_Get_Item, class UFortWorldItemDefinition* K2Node_DynamicCast_AsFort_World_Item_Definition, bool K2Node_DynamicCast_bSuccess_2, class AFortPickup* CallFunc_K2_SpawnPickupInWorld_ReturnValue, float CallFunc_GetDistanceTo_ReturnValue, const struct FFortItemEntry& CallFunc_GetItemEntry_ReturnValue, class UFortWeaponItemDefinition* K2Node_DynamicCast_AsFort_Weapon_Item_Definition, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_Less_FloatFloat_ReturnValue, int32 Temp_int_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_LessEqual_IntInt_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Loop_Counter_Variable, const struct FVector& CallFunc_GetWaterSurfaceInfo_WaterPlaneLocation, const struct FVector& CallFunc_GetWaterSurfaceInfo_WaterPlaneNormal, const struct FVector& CallFunc_GetWaterSurfaceInfo_WaterSurfacePosition, float CallFunc_GetWaterSurfaceInfo_WaterDepth, int32 CallFunc_GetWaterSurfaceInfo_WaterBodyIdx, const struct FVector& CallFunc_GetWaterSurfaceInfo_WaterVelocity, bool CallFunc_Less_IntInt_ReturnValue, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, const struct FVector& CallFunc_MakeVector_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, const struct FHitResult& CallFunc_K2_SetActorLocation_SweepHitResult, bool CallFunc_K2_SetActorLocation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "ExecuteUbergraph_BGA_Athena_FlopperSpawn_World");
+	static class UFunction* Func = nullptr;
 
-	Params::ABGA_Athena_FlopperSpawn_World_C_ExecuteUbergraph_BGA_Athena_FlopperSpawn_World_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BGA_Athena_FlopperSpawn_World_C", "ExecuteUbergraph_BGA_Athena_FlopperSpawn_World");
+
+	Params::ABGA_Athena_FlopperSpawn_World_C_ExecuteUbergraph_BGA_Athena_FlopperSpawn_World_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_object_Variable = Temp_object_Variable;
@@ -491,6 +544,4 @@ void ABGA_Athena_FlopperSpawn_World_C::ExecuteUbergraph_BGA_Athena_FlopperSpawn_
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

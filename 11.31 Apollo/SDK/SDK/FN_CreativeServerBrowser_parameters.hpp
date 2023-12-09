@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,13 +12,6 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
-
-// 0x0 (0x0 - 0x0)
-// Function CreativeServerBrowser.CreativeServerBrowser_C.Construct
-struct UCreativeServerBrowser_C_Construct_Params
-{
-public:
-};
 
 // 0x9 (0x9 - 0x0)
 // Function CreativeServerBrowser.CreativeServerBrowser_C.ExecuteUbergraph_CreativeServerBrowser
@@ -39,6 +29,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

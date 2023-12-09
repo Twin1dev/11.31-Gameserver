@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCN_Loop_SpookyMist.GCN_Loop_SpookyMist_C
+// (Actor)
+
+class UClass* AGCN_Loop_SpookyMist_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCN_Loop_SpookyMist_C");
+
+	return Clss;
+}
+
+
+// GCN_Loop_SpookyMist_C GCN_Loop_SpookyMist.Default__GCN_Loop_SpookyMist_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGCN_Loop_SpookyMist_C* AGCN_Loop_SpookyMist_C::GetDefaultObj()
+{
+	static class AGCN_Loop_SpookyMist_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGCN_Loop_SpookyMist_C*>(AGCN_Loop_SpookyMist_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCN_Loop_SpookyMist.GCN_Loop_SpookyMist_C.GetSkeletalMeshes
@@ -32,9 +57,12 @@ namespace SDK
 
 void AGCN_Loop_SpookyMist_C::GetSkeletalMeshes(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue, TArray<class USceneComponent*>& CallFunc_GetChildrenComponents_Children, class USceneComponent* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class USkeletalMeshComponent* K2Node_DynamicCast_AsSkeletal_Mesh_Component, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Array_AddUnique_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "GetSkeletalMeshes");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SpookyMist_C_GetSkeletalMeshes_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "GetSkeletalMeshes");
+
+	Params::AGCN_Loop_SpookyMist_C_GetSkeletalMeshes_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -59,12 +87,14 @@ void AGCN_Loop_SpookyMist_C::GetSkeletalMeshes(int32 Temp_int_Array_Index_Variab
 
 void AGCN_Loop_SpookyMist_C::FadeinOut__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "FadeinOut__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SpookyMist_C_FadeinOut__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "FadeinOut__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -75,12 +105,14 @@ void AGCN_Loop_SpookyMist_C::FadeinOut__FinishedFunc()
 
 void AGCN_Loop_SpookyMist_C::FadeinOut__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "FadeinOut__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SpookyMist_C_FadeinOut__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "FadeinOut__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -95,9 +127,12 @@ void AGCN_Loop_SpookyMist_C::FadeinOut__UpdateFunc()
 
 void AGCN_Loop_SpookyMist_C::OnLoopingStart(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "OnLoopingStart");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SpookyMist_C_OnLoopingStart_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "OnLoopingStart");
+
+	Params::AGCN_Loop_SpookyMist_C_OnLoopingStart_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -121,9 +156,12 @@ void AGCN_Loop_SpookyMist_C::OnLoopingStart(class AActor* MyTarget, struct FGame
 
 void AGCN_Loop_SpookyMist_C::OnRemoval(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "OnRemoval");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SpookyMist_C_OnRemoval_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "OnRemoval");
+
+	Params::AGCN_Loop_SpookyMist_C_OnRemoval_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -144,9 +182,12 @@ void AGCN_Loop_SpookyMist_C::OnRemoval(class AActor* MyTarget, struct FGameplayC
 
 void AGCN_Loop_SpookyMist_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SpookyMist_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "ReceiveTick");
+
+	Params::AGCN_Loop_SpookyMist_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -161,12 +202,14 @@ void AGCN_Loop_SpookyMist_C::ReceiveTick(float DeltaSeconds)
 
 void AGCN_Loop_SpookyMist_C::BeginExpireTell()
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "BeginExpireTell");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SpookyMist_C_BeginExpireTell_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "BeginExpireTell");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -177,12 +220,14 @@ void AGCN_Loop_SpookyMist_C::BeginExpireTell()
 
 void AGCN_Loop_SpookyMist_C::ClearExpireTell()
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "ClearExpireTell");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SpookyMist_C_ClearExpireTell_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "ClearExpireTell");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -193,12 +238,14 @@ void AGCN_Loop_SpookyMist_C::ClearExpireTell()
 
 void AGCN_Loop_SpookyMist_C::ExpireWarningTick()
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "ExpireWarningTick");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SpookyMist_C_ExpireWarningTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "ExpireWarningTick");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -209,12 +256,14 @@ void AGCN_Loop_SpookyMist_C::ExpireWarningTick()
 
 void AGCN_Loop_SpookyMist_C::UpdateTeamVisbility()
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "UpdateTeamVisbility");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SpookyMist_C_UpdateTeamVisbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "UpdateTeamVisbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -226,9 +275,12 @@ void AGCN_Loop_SpookyMist_C::UpdateTeamVisbility()
 
 void AGCN_Loop_SpookyMist_C::Audio_Tick(float Velocity)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "Audio Tick");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SpookyMist_C_Audio_Tick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "Audio Tick");
+
+	Params::AGCN_Loop_SpookyMist_C_Audio_Tick_Params Parms{};
 
 	Parms.Velocity = Velocity;
 
@@ -243,12 +295,14 @@ void AGCN_Loop_SpookyMist_C::Audio_Tick(float Velocity)
 
 void AGCN_Loop_SpookyMist_C::StartedInteract()
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "StartedInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SpookyMist_C_StartedInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "StartedInteract");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -259,12 +313,14 @@ void AGCN_Loop_SpookyMist_C::StartedInteract()
 
 void AGCN_Loop_SpookyMist_C::EndedInteract()
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "EndedInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SpookyMist_C_EndedInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "EndedInteract");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -381,9 +437,12 @@ void AGCN_Loop_SpookyMist_C::EndedInteract()
 
 void AGCN_Loop_SpookyMist_C::ExecuteUbergraph_GCN_Loop_SpookyMist(int32 EntryPoint, float CallFunc_Conv_BoolToFloat_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Loop_Counter_Variable_1, int32 Temp_int_Array_Index_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable_2, int32 CallFunc_Add_IntInt_ReturnValue_2, int32 Temp_int_Array_Index_Variable_2, class AActor* K2Node_Event_MyTarget_1, const struct FGameplayCueParameters& K2Node_Event_Parameters_1, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents_1, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents_1, class AActor* K2Node_Event_MyTarget, const struct FGameplayCueParameters& K2Node_Event_Parameters, TArray<class UParticleSystemComponent*>& K2Node_Event_ParticleComponents, TArray<class UAudioComponent*>& K2Node_Event_AudioComponents, class UCameraShake* K2Node_Event_BurstCameraShakeInstance, class ADecalActor* K2Node_Event_BurstDecalInstance, class UAudioComponent* CallFunc_Array_Get_Item, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn_1, bool K2Node_DynamicCast_bSuccess_1, TArray<class AFortPlayerController*>& CallFunc_GetLocalFortPlayerControllers_ReturnValue, class AFortPlayerController* CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, float K2Node_Event_DeltaSeconds, bool CallFunc_IsValid_ReturnValue, bool CallFunc_OnSameTeam_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue, float K2Node_CustomEvent_Velocity, float CallFunc_MapRangeClamped_ReturnValue, float CallFunc_GetWorldDeltaSeconds_ReturnValue, float CallFunc_FInterpTo_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UParticleSystemComponent* CallFunc_Array_Get_Item_2, bool CallFunc_IsValid_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, bool CallFunc_IsLocallyControlled_ReturnValue, bool CallFunc_GetIsPlayingReplay_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_5, bool CallFunc_BooleanOR_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_GetIsPlayingReplay_ReturnValue_1, float CallFunc_Conv_BoolToFloat_ReturnValue_1, bool CallFunc_IsLocallyControlled_ReturnValue_1, float CallFunc_GetWorldDeltaSeconds_ReturnValue_1, float CallFunc_Conv_BoolToFloat_ReturnValue_2, class UParticleSystemComponent* CallFunc_Array_Get_Item_3, class UParticleSystemComponent* CallFunc_Array_Get_Item_4, float CallFunc_GetValueAtLevel_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, class USkeletalMeshComponent* CallFunc_Array_Get_Item_5, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue_1, class USkeletalMeshComponent* CallFunc_Array_Get_Item_6, int32 CallFunc_Array_Length_ReturnValue_2, int32 CallFunc_Array_Length_ReturnValue_3, bool CallFunc_Less_IntInt_ReturnValue_2, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue_2, const struct FVector& CallFunc_GetVelocity_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, float CallFunc_VSize_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue_1, float CallFunc_Conv_BoolToFloat_ReturnValue_3, bool CallFunc_IsInVehicle_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue_2, float CallFunc_Conv_BoolToFloat_ReturnValue_4, float CallFunc_Conv_BoolToFloat_ReturnValue_5, float CallFunc_Multiply_FloatFloat_ReturnValue_1, class UParticleSystemComponent* CallFunc_Array_Get_Item_7, class UParticleSystemComponent* CallFunc_Array_Get_Item_8, float CallFunc_GetScalarParameterValue_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue_2, bool CallFunc_Not_PreBool_ReturnValue_1, float CallFunc_Conv_BoolToFloat_ReturnValue_6, float CallFunc_GetValueAtLevel_ReturnValue_2, float CallFunc_Multiply_FloatFloat_ReturnValue_2, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue_1, float CallFunc_GetValueAtLevel_ReturnValue_3, float CallFunc_Add_FloatFloat_ReturnValue_2, float CallFunc_FClamp_ReturnValue, float CallFunc_FInterpTo_ReturnValue_1, float CallFunc_GetValueAtLevel_ReturnValue_4, float CallFunc_Multiply_FloatFloat_ReturnValue_3, float CallFunc_GetValueAtLevel_ReturnValue_5, float CallFunc_FClamp_ReturnValue_1, bool CallFunc_GetIsBroadcastClient_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "ExecuteUbergraph_GCN_Loop_SpookyMist");
+	static class UFunction* Func = nullptr;
 
-	Params::AGCN_Loop_SpookyMist_C_ExecuteUbergraph_GCN_Loop_SpookyMist_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Loop_SpookyMist_C", "ExecuteUbergraph_GCN_Loop_SpookyMist");
+
+	Params::AGCN_Loop_SpookyMist_C_ExecuteUbergraph_GCN_Loop_SpookyMist_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_Conv_BoolToFloat_ReturnValue = CallFunc_Conv_BoolToFloat_ReturnValue;
@@ -498,6 +557,4 @@ void AGCN_Loop_SpookyMist_C::ExecuteUbergraph_GCN_Loop_SpookyMist(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

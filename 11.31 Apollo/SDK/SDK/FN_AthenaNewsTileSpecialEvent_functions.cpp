@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaNewsTileSpecialEvent.AthenaNewsTileSpecialEvent_C
+// (None)
+
+class UClass* UAthenaNewsTileSpecialEvent_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaNewsTileSpecialEvent_C");
+
+	return Clss;
+}
+
+
+// AthenaNewsTileSpecialEvent_C AthenaNewsTileSpecialEvent.Default__AthenaNewsTileSpecialEvent_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaNewsTileSpecialEvent_C* UAthenaNewsTileSpecialEvent_C::GetDefaultObj()
+{
+	static class UAthenaNewsTileSpecialEvent_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaNewsTileSpecialEvent_C*>(UAthenaNewsTileSpecialEvent_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaNewsTileSpecialEvent.AthenaNewsTileSpecialEvent_C.PlayIntroAnim
 // (Event, Public, BlueprintEvent)
 // Parameters:
 
 void UAthenaNewsTileSpecialEvent_C::PlayIntroAnim()
 {
-	static auto Func = Class->GetFunction("AthenaNewsTileSpecialEvent_C", "PlayIntroAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsTileSpecialEvent_C_PlayIntroAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsTileSpecialEvent_C", "PlayIntroAnim");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UAthenaNewsTileSpecialEvent_C::PlayIntroAnim()
 
 void UAthenaNewsTileSpecialEvent_C::SetDefaultImage()
 {
-	static auto Func = Class->GetFunction("AthenaNewsTileSpecialEvent_C", "SetDefaultImage");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsTileSpecialEvent_C_SetDefaultImage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsTileSpecialEvent_C", "SetDefaultImage");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -56,9 +85,12 @@ void UAthenaNewsTileSpecialEvent_C::SetDefaultImage()
 
 void UAthenaNewsTileSpecialEvent_C::ExecuteUbergraph_AthenaNewsTileSpecialEvent(int32 EntryPoint, float CallFunc_RandomFloatInRange_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaNewsTileSpecialEvent_C", "ExecuteUbergraph_AthenaNewsTileSpecialEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaNewsTileSpecialEvent_C_ExecuteUbergraph_AthenaNewsTileSpecialEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaNewsTileSpecialEvent_C", "ExecuteUbergraph_AthenaNewsTileSpecialEvent");
+
+	Params::UAthenaNewsTileSpecialEvent_C_ExecuteUbergraph_AthenaNewsTileSpecialEvent_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_RandomFloatInRange_ReturnValue = CallFunc_RandomFloatInRange_ReturnValue;
@@ -70,6 +102,4 @@ void UAthenaNewsTileSpecialEvent_C::ExecuteUbergraph_AthenaNewsTileSpecialEvent(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

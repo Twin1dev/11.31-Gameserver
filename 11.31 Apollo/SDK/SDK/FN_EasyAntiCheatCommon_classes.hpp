@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -17,13 +14,10 @@ namespace SDK
 class UEasyAntiCheatNetComponent : public UActorComponent
 {
 public:
-	uint8                                        Pad_4354[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2478[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("EasyAntiCheatNetComponent");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UEasyAntiCheatNetComponent* GetDefaultObj();
 
 	void ServerMessage(TArray<uint8>& Message);
 	void ClientMessage(TArray<uint8>& Message);
@@ -31,6 +25,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

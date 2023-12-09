@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass TournamentDateEntry.TournamentDateEntry_C
+// (None)
+
+class UClass* UTournamentDateEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TournamentDateEntry_C");
+
+	return Clss;
+}
+
+
+// TournamentDateEntry_C TournamentDateEntry.Default__TournamentDateEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTournamentDateEntry_C* UTournamentDateEntry_C::GetDefaultObj()
+{
+	static class UTournamentDateEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTournamentDateEntry_C*>(UTournamentDateEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TournamentDateEntry.TournamentDateEntry_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UTournamentDateEntry_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("TournamentDateEntry_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentDateEntry_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentDateEntry_C", "PreConstruct");
+
+	Params::UTournamentDateEntry_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -40,9 +68,12 @@ void UTournamentDateEntry_C::PreConstruct(bool IsDesignTime)
 
 void UTournamentDateEntry_C::EventColor(struct FFortTournamentDisplayInfo& ShowdownData)
 {
-	static auto Func = Class->GetFunction("TournamentDateEntry_C", "EventColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentDateEntry_C_EventColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentDateEntry_C", "EventColor");
+
+	Params::UTournamentDateEntry_C_EventColor_Params Parms{};
 
 	Parms.ShowdownData = ShowdownData;
 
@@ -57,12 +88,14 @@ void UTournamentDateEntry_C::EventColor(struct FFortTournamentDisplayInfo& Showd
 
 void UTournamentDateEntry_C::RefreshDataBP()
 {
-	static auto Func = Class->GetFunction("TournamentDateEntry_C", "RefreshDataBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentDateEntry_C_RefreshDataBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentDateEntry_C", "RefreshDataBP");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -82,47 +115,50 @@ void UTournamentDateEntry_C::RefreshDataBP()
 // struct FLinearColor                Temp_struct_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable                                               ()
+// class FText                        Temp_text_Variable                                               (None)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFortTournamentDisplayInfo  K2Node_CustomEvent_showdownData                                  (ConstParm)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor_1                                   ()
-// struct FSlateColor                 K2Node_Select_Default_1                                          ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor_1                                   (None)
+// struct FSlateColor                 K2Node_Select_Default_1                                          (None)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_RandomFloatInRange_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable_1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FDateTime                   CallFunc_GetEventBeginTime_ReturnValue                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetEventDateAsText_ReturnValue                          ()
+// class FText                        CallFunc_GetEventDateAsText_ReturnValue                          (None)
 // struct FDateTime                   CallFunc_GetEventEndTime_ReturnValue                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                K2Node_Select_Default_2                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetEventDateAsText_ReturnValue_1                        ()
+// class FText                        CallFunc_GetEventDateAsText_ReturnValue_1                        (None)
 // bool                               CallFunc_EqualEqual_TextText_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FDateTime                   CallFunc_GetEventBeginTime_ReturnValue_1                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetEventTimeAsText_ReturnValue                          ()
+// class FText                        CallFunc_GetEventTimeAsText_ReturnValue                          (None)
 // struct FDateTime                   CallFunc_GetEventEndTime_ReturnValue_1                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
-// class FText                        CallFunc_GetEventTimeAsText_ReturnValue_1                        ()
+// class FText                        CallFunc_GetEventTimeAsText_ReturnValue_1                        (None)
 // struct FDateTime                   CallFunc_GetEventBeginTime_ReturnValue_2                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
-// class FText                        CallFunc_GetEventDateAsText_ReturnValue_2                        ()
+// class FText                        CallFunc_GetEventDateAsText_ReturnValue_2                        (None)
 // struct FDateTime                   CallFunc_GetEventEndTime_ReturnValue_2                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
-// class FText                        CallFunc_GetEventDateAsText_ReturnValue_3                        ()
+// class FText                        CallFunc_GetEventDateAsText_ReturnValue_3                        (None)
 // bool                               Temp_bool_Variable_4                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_3                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // int32                              K2Node_Select_Default_3                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
-// class FText                        K2Node_Select_Default_4                                          ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
+// class FText                        K2Node_Select_Default_4                                          (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_4                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
 
 void UTournamentDateEntry_C::ExecuteUbergraph_TournamentDateEntry(int32 EntryPoint, enum class EFortShowdownEventState CallFunc_GetEventTimeState_ReturnValue, int32 Temp_int_Variable, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default, const struct FLinearColor& Temp_struct_Variable, bool Temp_bool_Variable_2, bool Temp_bool_Variable_3, class FText Temp_text_Variable, bool K2Node_Event_IsDesignTime, const struct FFortTournamentDisplayInfo& K2Node_CustomEvent_showdownData, const struct FSlateColor& K2Node_MakeStruct_SlateColor, const struct FSlateColor& K2Node_MakeStruct_SlateColor_1, const struct FSlateColor& K2Node_Select_Default_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue, int32 Temp_int_Variable_1, const struct FDateTime& CallFunc_GetEventBeginTime_ReturnValue, class FText CallFunc_GetEventDateAsText_ReturnValue, const struct FDateTime& CallFunc_GetEventEndTime_ReturnValue, const struct FLinearColor& K2Node_Select_Default_2, class FText CallFunc_GetEventDateAsText_ReturnValue_1, bool CallFunc_EqualEqual_TextText_ReturnValue, const struct FDateTime& CallFunc_GetEventBeginTime_ReturnValue_1, class FText CallFunc_GetEventTimeAsText_ReturnValue, const struct FDateTime& CallFunc_GetEventEndTime_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class FText CallFunc_GetEventTimeAsText_ReturnValue_1, const struct FDateTime& CallFunc_GetEventBeginTime_ReturnValue_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, class FText CallFunc_GetEventDateAsText_ReturnValue_2, const struct FDateTime& CallFunc_GetEventEndTime_ReturnValue_2, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, class FText CallFunc_GetEventDateAsText_ReturnValue_3, bool Temp_bool_Variable_4, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, int32 K2Node_Select_Default_3, class FText CallFunc_Format_ReturnValue, class FText K2Node_Select_Default_4, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("TournamentDateEntry_C", "ExecuteUbergraph_TournamentDateEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UTournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TournamentDateEntry_C", "ExecuteUbergraph_TournamentDateEntry");
+
+	Params::UTournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetEventTimeState_ReturnValue = CallFunc_GetEventTimeState_ReturnValue;
@@ -178,6 +214,4 @@ void UTournamentDateEntry_C::ExecuteUbergraph_TournamentDateEntry(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

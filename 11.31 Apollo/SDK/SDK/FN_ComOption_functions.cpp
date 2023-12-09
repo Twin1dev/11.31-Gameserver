@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ComOption.ComOption_C
+// (None)
+
+class UClass* UComOption_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ComOption_C");
+
+	return Clss;
+}
+
+
+// ComOption_C ComOption.Default__ComOption_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UComOption_C* UComOption_C::GetDefaultObj()
+{
+	static class UComOption_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UComOption_C*>(UComOption_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ComOption.ComOption_C.DisableButtons
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UComOption_C::DisableButtons()
 {
-	static auto Func = Class->GetFunction("ComOption_C", "DisableButtons");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOption_C_DisableButtons_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOption_C", "DisableButtons");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UComOption_C::DisableButtons()
 
 void UComOption_C::EnableButtons()
 {
-	static auto Func = Class->GetFunction("ComOption_C", "EnableButtons");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOption_C_EnableButtons_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOption_C", "EnableButtons");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -65,9 +94,12 @@ void UComOption_C::EnableButtons()
 
 void UComOption_C::ExecuteUbergraph_ComOption(int32 EntryPoint, class UComOptionDetails_C* K2Node_DynamicCast_AsCom_Option_Details, bool K2Node_DynamicCast_bSuccess, class UComOptionDetails_C* K2Node_DynamicCast_AsCom_Option_Details_1, bool K2Node_DynamicCast_bSuccess_1, class UComOptionVote_C* K2Node_DynamicCast_AsCom_Option_Vote, bool K2Node_DynamicCast_bSuccess_2, class UFlameCounter_C* K2Node_DynamicCast_AsFlame_Counter, bool K2Node_DynamicCast_bSuccess_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UComOptionVote_C* K2Node_DynamicCast_AsCom_Option_Vote_1, bool K2Node_DynamicCast_bSuccess_4)
 {
-	static auto Func = Class->GetFunction("ComOption_C", "ExecuteUbergraph_ComOption");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOption_C_ExecuteUbergraph_ComOption_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOption_C", "ExecuteUbergraph_ComOption");
+
+	Params::UComOption_C_ExecuteUbergraph_ComOption_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_DynamicCast_AsCom_Option_Details = K2Node_DynamicCast_AsCom_Option_Details;
@@ -88,6 +120,4 @@ void UComOption_C::ExecuteUbergraph_ComOption(int32 EntryPoint, class UComOption
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ActivityBrowserTile.ActivityBrowserTile_C
+// (None)
+
+class UClass* UActivityBrowserTile_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ActivityBrowserTile_C");
+
+	return Clss;
+}
+
+
+// ActivityBrowserTile_C ActivityBrowserTile.Default__ActivityBrowserTile_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UActivityBrowserTile_C* UActivityBrowserTile_C::GetDefaultObj()
+{
+	static class UActivityBrowserTile_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UActivityBrowserTile_C*>(UActivityBrowserTile_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ActivityBrowserTile.ActivityBrowserTile_C.Set Disabled
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UActivityBrowserTile_C::Set_Disabled(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ActivityBrowserTile_C", "Set Disabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityBrowserTile_C_Set_Disabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityBrowserTile_C", "Set Disabled");
+
+	Params::UActivityBrowserTile_C_Set_Disabled_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -40,9 +68,12 @@ void UActivityBrowserTile_C::Set_Disabled(class UUMGSequencePlayer* CallFunc_Pla
 
 void UActivityBrowserTile_C::Set_Enabled(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ActivityBrowserTile_C", "Set Enabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityBrowserTile_C_Set_Enabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityBrowserTile_C", "Set Enabled");
+
+	Params::UActivityBrowserTile_C_Set_Enabled_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -57,12 +88,14 @@ void UActivityBrowserTile_C::Set_Enabled(class UUMGSequencePlayer* CallFunc_Play
 
 void UActivityBrowserTile_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("ActivityBrowserTile_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityBrowserTile_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityBrowserTile_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -73,12 +106,14 @@ void UActivityBrowserTile_C::BP_OnHovered()
 
 void UActivityBrowserTile_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("ActivityBrowserTile_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityBrowserTile_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityBrowserTile_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -89,12 +124,14 @@ void UActivityBrowserTile_C::BP_OnUnhovered()
 
 void UActivityBrowserTile_C::Construct()
 {
-	static auto Func = Class->GetFunction("ActivityBrowserTile_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityBrowserTile_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityBrowserTile_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,12 +142,14 @@ void UActivityBrowserTile_C::Construct()
 
 void UActivityBrowserTile_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("ActivityBrowserTile_C", "BP_OnSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityBrowserTile_C_BP_OnSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityBrowserTile_C", "BP_OnSelected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -121,12 +160,14 @@ void UActivityBrowserTile_C::BP_OnSelected()
 
 void UActivityBrowserTile_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("ActivityBrowserTile_C", "BP_OnDeselected");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityBrowserTile_C_BP_OnDeselected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityBrowserTile_C", "BP_OnDeselected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -138,9 +179,12 @@ void UActivityBrowserTile_C::BP_OnDeselected()
 
 void UActivityBrowserTile_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("ActivityBrowserTile_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityBrowserTile_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityBrowserTile_C", "PreConstruct");
+
+	Params::UActivityBrowserTile_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -160,9 +204,12 @@ void UActivityBrowserTile_C::PreConstruct(bool IsDesignTime)
 
 void UActivityBrowserTile_C::ExecuteUbergraph_ActivityBrowserTile(int32 EntryPoint, bool K2Node_Event_IsDesignTime, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("ActivityBrowserTile_C", "ExecuteUbergraph_ActivityBrowserTile");
+	static class UFunction* Func = nullptr;
 
-	Params::UActivityBrowserTile_C_ExecuteUbergraph_ActivityBrowserTile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ActivityBrowserTile_C", "ExecuteUbergraph_ActivityBrowserTile");
+
+	Params::UActivityBrowserTile_C_ExecuteUbergraph_ActivityBrowserTile_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -176,6 +223,4 @@ void UActivityBrowserTile_C::ExecuteUbergraph_ActivityBrowserTile(int32 EntryPoi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

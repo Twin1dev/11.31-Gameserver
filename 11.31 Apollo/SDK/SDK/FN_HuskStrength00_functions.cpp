@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass HuskStrength00.HuskStrength00_C
+// (None)
+
+class UClass* UHuskStrength00_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("HuskStrength00_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// HuskStrength00_C HuskStrength00.Default__HuskStrength00_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UHuskStrength00_C* UHuskStrength00_C::GetDefaultObj()
+{
+	static class UHuskStrength00_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UHuskStrength00_C*>(UHuskStrength00_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

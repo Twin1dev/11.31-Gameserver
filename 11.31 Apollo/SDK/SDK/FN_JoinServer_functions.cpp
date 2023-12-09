@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass JoinServer.JoinServer_C
+// (None)
+
+class UClass* UJoinServer_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("JoinServer_C");
+
+	return Clss;
+}
+
+
+// JoinServer_C JoinServer.Default__JoinServer_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UJoinServer_C* UJoinServer_C::GetDefaultObj()
+{
+	static class UJoinServer_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UJoinServer_C*>(UJoinServer_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function JoinServer.JoinServer_C.OnEnterState
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UJoinServer_C::OnEnterState(enum class EFortUIState PreviousUIState)
 {
-	static auto Func = Class->GetFunction("JoinServer_C", "OnEnterState");
+	static class UFunction* Func = nullptr;
 
-	Params::UJoinServer_C_OnEnterState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("JoinServer_C", "OnEnterState");
+
+	Params::UJoinServer_C_OnEnterState_Params Parms{};
 
 	Parms.PreviousUIState = PreviousUIState;
 
@@ -39,12 +67,14 @@ void UJoinServer_C::OnEnterState(enum class EFortUIState PreviousUIState)
 
 void UJoinServer_C::OnShowTutorialDialog()
 {
-	static auto Func = Class->GetFunction("JoinServer_C", "OnShowTutorialDialog");
+	static class UFunction* Func = nullptr;
 
-	Params::UJoinServer_C_OnShowTutorialDialog_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("JoinServer_C", "OnShowTutorialDialog");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,9 +87,12 @@ void UJoinServer_C::OnShowTutorialDialog()
 
 void UJoinServer_C::ExecuteUbergraph_JoinServer(int32 EntryPoint, enum class EFortUIState K2Node_Event_PreviousUIState)
 {
-	static auto Func = Class->GetFunction("JoinServer_C", "ExecuteUbergraph_JoinServer");
+	static class UFunction* Func = nullptr;
 
-	Params::UJoinServer_C_ExecuteUbergraph_JoinServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("JoinServer_C", "ExecuteUbergraph_JoinServer");
+
+	Params::UJoinServer_C_ExecuteUbergraph_JoinServer_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_PreviousUIState = K2Node_Event_PreviousUIState;
@@ -70,6 +103,4 @@ void UJoinServer_C::ExecuteUbergraph_JoinServer(int32 EntryPoint, enum class EFo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_Discoverable_Saxaphone.BP_Discoverable_Saxaphone_C
+// (Actor)
+
+class UClass* ABP_Discoverable_Saxaphone_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_Discoverable_Saxaphone_C");
+
+	return Clss;
+}
+
+
+// BP_Discoverable_Saxaphone_C BP_Discoverable_Saxaphone.Default__BP_Discoverable_Saxaphone_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_Discoverable_Saxaphone_C* ABP_Discoverable_Saxaphone_C::GetDefaultObj()
+{
+	static class ABP_Discoverable_Saxaphone_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_Discoverable_Saxaphone_C*>(ABP_Discoverable_Saxaphone_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_Discoverable_Saxaphone.BP_Discoverable_Saxaphone_C.SaxElevate__FinishedFunc
 // (BlueprintEvent)
 // Parameters:
 
 void ABP_Discoverable_Saxaphone_C::SaxElevate__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "SaxElevate__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Saxaphone_C_SaxElevate__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "SaxElevate__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void ABP_Discoverable_Saxaphone_C::SaxElevate__FinishedFunc()
 
 void ABP_Discoverable_Saxaphone_C::SaxElevate__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "SaxElevate__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Saxaphone_C_SaxElevate__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "SaxElevate__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void ABP_Discoverable_Saxaphone_C::SaxElevate__UpdateFunc()
 
 void ABP_Discoverable_Saxaphone_C::SaxBackToOrigin__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "SaxBackToOrigin__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Saxaphone_C_SaxBackToOrigin__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "SaxBackToOrigin__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void ABP_Discoverable_Saxaphone_C::SaxBackToOrigin__FinishedFunc()
 
 void ABP_Discoverable_Saxaphone_C::SaxBackToOrigin__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "SaxBackToOrigin__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Saxaphone_C_SaxBackToOrigin__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "SaxBackToOrigin__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -85,12 +118,14 @@ void ABP_Discoverable_Saxaphone_C::SaxBackToOrigin__UpdateFunc()
 
 void ABP_Discoverable_Saxaphone_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Saxaphone_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -101,12 +136,14 @@ void ABP_Discoverable_Saxaphone_C::ReceiveBeginPlay()
 
 void ABP_Discoverable_Saxaphone_C::Commit_OnSpecialInteraction()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "Commit_OnSpecialInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Saxaphone_C_Commit_OnSpecialInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "Commit_OnSpecialInteraction");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -117,12 +154,14 @@ void ABP_Discoverable_Saxaphone_C::Commit_OnSpecialInteraction()
 
 void ABP_Discoverable_Saxaphone_C::StopAnim()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "StopAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Saxaphone_C_StopAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "StopAnim");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -133,12 +172,14 @@ void ABP_Discoverable_Saxaphone_C::StopAnim()
 
 void ABP_Discoverable_Saxaphone_C::PriorAudioFadeOut()
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "PriorAudioFadeOut");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Saxaphone_C_PriorAudioFadeOut_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "PriorAudioFadeOut");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -185,9 +226,12 @@ void ABP_Discoverable_Saxaphone_C::PriorAudioFadeOut()
 
 void ABP_Discoverable_Saxaphone_C::ExecuteUbergraph_BP_Discoverable_Saxaphone(int32 EntryPoint, int32 Temp_int_Array_Index_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_K2_AttachToComponent_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_K2_AttachToComponent_ReturnValue_1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue_1, const struct FRotator& CallFunc_K2_GetComponentRotation_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue_1, const struct FRotator& CallFunc_GetSocketRotation_ReturnValue, const struct FRotator& CallFunc_GetSocketRotation_ReturnValue_1, const struct FRotator& CallFunc_RLerp_ReturnValue, const struct FRotator& CallFunc_RLerp_ReturnValue_1, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue_1, const struct FVector& CallFunc_VLerp_ReturnValue, const struct FVector& CallFunc_VLerp_ReturnValue_1, const struct FHitResult& CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult, const struct FHitResult& CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult_1, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class ABP_Cozy_Discoverable_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue_1, const struct FRotator& CallFunc_K2_GetComponentRotation_ReturnValue_1, int32 Temp_int_Array_Index_Variable_1, class ABP_Cozy_Discoverable_C* CallFunc_Array_Get_Item_1, int32 Temp_int_Loop_Counter_Variable_1, bool CallFunc_Less_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "ExecuteUbergraph_BP_Discoverable_Saxaphone");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Discoverable_Saxaphone_C_ExecuteUbergraph_BP_Discoverable_Saxaphone_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Discoverable_Saxaphone_C", "ExecuteUbergraph_BP_Discoverable_Saxaphone");
+
+	Params::ABP_Discoverable_Saxaphone_C_ExecuteUbergraph_BP_Discoverable_Saxaphone_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -232,6 +276,4 @@ void ABP_Discoverable_Saxaphone_C::ExecuteUbergraph_BP_Discoverable_Saxaphone(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

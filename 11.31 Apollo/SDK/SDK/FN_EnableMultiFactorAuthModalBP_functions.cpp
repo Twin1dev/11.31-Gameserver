@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,13 +12,41 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass EnableMultiFactorAuthModalBP.EnableMultiFactorAuthModalBP_C
+// (None)
+
+class UClass* UEnableMultiFactorAuthModalBP_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EnableMultiFactorAuthModalBP_C");
+
+	return Clss;
+}
+
+
+// EnableMultiFactorAuthModalBP_C EnableMultiFactorAuthModalBP.Default__EnableMultiFactorAuthModalBP_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UEnableMultiFactorAuthModalBP_C* UEnableMultiFactorAuthModalBP_C::GetDefaultObj()
+{
+	static class UEnableMultiFactorAuthModalBP_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEnableMultiFactorAuthModalBP_C*>(UEnableMultiFactorAuthModalBP_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function EnableMultiFactorAuthModalBP.EnableMultiFactorAuthModalBP_C.ScaleTitleForCulture
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                              ScaleCharThreshold                                               (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              MaxCharCountForScale                                             (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              StartScaleAfterCharCount                                         (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetText_ReturnValue                                     ()
+// class FText                        CallFunc_GetText_ReturnValue                                     (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 // int32                              CallFunc_Len_ReturnValue                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -32,9 +57,12 @@ namespace SDK
 
 void UEnableMultiFactorAuthModalBP_C::ScaleTitleForCulture(float ScaleCharThreshold, float MaxCharCountForScale, int32 StartScaleAfterCharCount, class FText CallFunc_GetText_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, int32 CallFunc_Len_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_FMax_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue_1, float CallFunc_FClamp_ReturnValue)
 {
-	static auto Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "ScaleTitleForCulture");
+	static class UFunction* Func = nullptr;
 
-	Params::UEnableMultiFactorAuthModalBP_C_ScaleTitleForCulture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "ScaleTitleForCulture");
+
+	Params::UEnableMultiFactorAuthModalBP_C_ScaleTitleForCulture_Params Parms{};
 
 	Parms.ScaleCharThreshold = ScaleCharThreshold;
 	Parms.MaxCharCountForScale = MaxCharCountForScale;
@@ -59,12 +87,14 @@ void UEnableMultiFactorAuthModalBP_C::ScaleTitleForCulture(float ScaleCharThresh
 
 void UEnableMultiFactorAuthModalBP_C::AnimationFullyCompleteBP()
 {
-	static auto Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "AnimationFullyCompleteBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UEnableMultiFactorAuthModalBP_C_AnimationFullyCompleteBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "AnimationFullyCompleteBP");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -75,12 +105,14 @@ void UEnableMultiFactorAuthModalBP_C::AnimationFullyCompleteBP()
 
 void UEnableMultiFactorAuthModalBP_C::HandleSetScreenMode()
 {
-	static auto Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "HandleSetScreenMode");
+	static class UFunction* Func = nullptr;
 
-	Params::UEnableMultiFactorAuthModalBP_C_HandleSetScreenMode_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "HandleSetScreenMode");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -95,9 +127,12 @@ void UEnableMultiFactorAuthModalBP_C::HandleSetScreenMode()
 
 void UEnableMultiFactorAuthModalBP_C::NavUp(int32 CallFunc_GetActiveWidgetIndex_ReturnValue, bool CallFunc_GetIsEnabled_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_GetIsEnabled_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "NavUp");
+	static class UFunction* Func = nullptr;
 
-	Params::UEnableMultiFactorAuthModalBP_C_NavUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "NavUp");
+
+	Params::UEnableMultiFactorAuthModalBP_C_NavUp_Params Parms{};
 
 	Parms.CallFunc_GetActiveWidgetIndex_ReturnValue = CallFunc_GetActiveWidgetIndex_ReturnValue;
 	Parms.CallFunc_GetIsEnabled_ReturnValue = CallFunc_GetIsEnabled_ReturnValue;
@@ -117,9 +152,12 @@ void UEnableMultiFactorAuthModalBP_C::NavUp(int32 CallFunc_GetActiveWidgetIndex_
 
 void UEnableMultiFactorAuthModalBP_C::NavRight(bool CallFunc_HasAnyUserFocus_ReturnValue, bool CallFunc_GetIsEnabled_ReturnValue)
 {
-	static auto Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "NavRight");
+	static class UFunction* Func = nullptr;
 
-	Params::UEnableMultiFactorAuthModalBP_C_NavRight_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "NavRight");
+
+	Params::UEnableMultiFactorAuthModalBP_C_NavRight_Params Parms{};
 
 	Parms.CallFunc_HasAnyUserFocus_ReturnValue = CallFunc_HasAnyUserFocus_ReturnValue;
 	Parms.CallFunc_GetIsEnabled_ReturnValue = CallFunc_GetIsEnabled_ReturnValue;
@@ -135,12 +173,14 @@ void UEnableMultiFactorAuthModalBP_C::NavRight(bool CallFunc_HasAnyUserFocus_Ret
 
 void UEnableMultiFactorAuthModalBP_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UEnableMultiFactorAuthModalBP_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -152,9 +192,12 @@ void UEnableMultiFactorAuthModalBP_C::BP_OnActivated()
 
 void UEnableMultiFactorAuthModalBP_C::BndEvt__Button_RemindMeLater_K2Node_ComponentBoundEvent_796_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "BndEvt__Button_RemindMeLater_K2Node_ComponentBoundEvent_796_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UEnableMultiFactorAuthModalBP_C_BndEvt__Button_RemindMeLater_K2Node_ComponentBoundEvent_796_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "BndEvt__Button_RemindMeLater_K2Node_ComponentBoundEvent_796_CommonButtonClicked__DelegateSignature");
+
+	Params::UEnableMultiFactorAuthModalBP_C_BndEvt__Button_RemindMeLater_K2Node_ComponentBoundEvent_796_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -169,12 +212,14 @@ void UEnableMultiFactorAuthModalBP_C::BndEvt__Button_RemindMeLater_K2Node_Compon
 
 void UEnableMultiFactorAuthModalBP_C::HandleHeaderText()
 {
-	static auto Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "HandleHeaderText");
+	static class UFunction* Func = nullptr;
 
-	Params::UEnableMultiFactorAuthModalBP_C_HandleHeaderText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "HandleHeaderText");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -186,9 +231,12 @@ void UEnableMultiFactorAuthModalBP_C::HandleHeaderText()
 
 void UEnableMultiFactorAuthModalBP_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UEnableMultiFactorAuthModalBP_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "PreConstruct");
+
+	Params::UEnableMultiFactorAuthModalBP_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -204,9 +252,12 @@ void UEnableMultiFactorAuthModalBP_C::PreConstruct(bool IsDesignTime)
 
 void UEnableMultiFactorAuthModalBP_C::OnPanelTypeSet(enum class ESocialImportPanelType NewType)
 {
-	static auto Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnPanelTypeSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UEnableMultiFactorAuthModalBP_C_OnPanelTypeSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnPanelTypeSet");
+
+	Params::UEnableMultiFactorAuthModalBP_C_OnPanelTypeSet_Params Parms{};
 
 	Parms.NewType = NewType;
 
@@ -222,9 +273,12 @@ void UEnableMultiFactorAuthModalBP_C::OnPanelTypeSet(enum class ESocialImportPan
 
 void UEnableMultiFactorAuthModalBP_C::OnIncentivizedSet(bool bIncentivized)
 {
-	static auto Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnIncentivizedSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UEnableMultiFactorAuthModalBP_C_OnIncentivizedSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnIncentivizedSet");
+
+	Params::UEnableMultiFactorAuthModalBP_C_OnIncentivizedSet_Params Parms{};
 
 	Parms.bIncentivized = bIncentivized;
 
@@ -240,9 +294,12 @@ void UEnableMultiFactorAuthModalBP_C::OnIncentivizedSet(bool bIncentivized)
 
 void UEnableMultiFactorAuthModalBP_C::OnSetExitButtonText(class FText& NewButtonText)
 {
-	static auto Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnSetExitButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::UEnableMultiFactorAuthModalBP_C_OnSetExitButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnSetExitButtonText");
+
+	Params::UEnableMultiFactorAuthModalBP_C_OnSetExitButtonText_Params Parms{};
 
 	Parms.NewButtonText = NewButtonText;
 
@@ -258,9 +315,12 @@ void UEnableMultiFactorAuthModalBP_C::OnSetExitButtonText(class FText& NewButton
 
 void UEnableMultiFactorAuthModalBP_C::OnConsoleDisplayURLProvided(class FText& UniquePlayerURLText)
 {
-	static auto Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnConsoleDisplayURLProvided");
+	static class UFunction* Func = nullptr;
 
-	Params::UEnableMultiFactorAuthModalBP_C_OnConsoleDisplayURLProvided_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnConsoleDisplayURLProvided");
+
+	Params::UEnableMultiFactorAuthModalBP_C_OnConsoleDisplayURLProvided_Params Parms{};
 
 	Parms.UniquePlayerURLText = UniquePlayerURLText;
 
@@ -276,9 +336,12 @@ void UEnableMultiFactorAuthModalBP_C::OnConsoleDisplayURLProvided(class FText& U
 
 void UEnableMultiFactorAuthModalBP_C::OnSetScreenConfiguration(bool bIsConsole)
 {
-	static auto Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnSetScreenConfiguration");
+	static class UFunction* Func = nullptr;
 
-	Params::UEnableMultiFactorAuthModalBP_C_OnSetScreenConfiguration_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "OnSetScreenConfiguration");
+
+	Params::UEnableMultiFactorAuthModalBP_C_OnSetScreenConfiguration_Params Parms{};
 
 	Parms.bIsConsole = bIsConsole;
 
@@ -293,12 +356,14 @@ void UEnableMultiFactorAuthModalBP_C::OnSetScreenConfiguration(bool bIsConsole)
 
 void UEnableMultiFactorAuthModalBP_C::Construct()
 {
-	static auto Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UEnableMultiFactorAuthModalBP_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -309,8 +374,8 @@ void UEnableMultiFactorAuthModalBP_C::Construct()
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESocialImportPanelType  K2Node_Event_NewType                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetEndTime_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -326,9 +391,12 @@ void UEnableMultiFactorAuthModalBP_C::Construct()
 
 void UEnableMultiFactorAuthModalBP_C::ExecuteUbergraph_EnableMultiFactorAuthModalBP(int32 EntryPoint, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool K2Node_Event_IsDesignTime, class FText CallFunc_MakeLiteralText_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, enum class ESocialImportPanelType K2Node_Event_NewType, float CallFunc_GetEndTime_ReturnValue, bool K2Node_Event_bIncentivized, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class FText K2Node_Event_NewButtonText, class FText K2Node_Event_UniquePlayerURLText, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, bool K2Node_Event_bIsConsole, bool CallFunc_IsMobileGame_ReturnValue)
 {
-	static auto Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "ExecuteUbergraph_EnableMultiFactorAuthModalBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UEnableMultiFactorAuthModalBP_C_ExecuteUbergraph_EnableMultiFactorAuthModalBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EnableMultiFactorAuthModalBP_C", "ExecuteUbergraph_EnableMultiFactorAuthModalBP");
+
+	Params::UEnableMultiFactorAuthModalBP_C_ExecuteUbergraph_EnableMultiFactorAuthModalBP_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
@@ -354,6 +422,4 @@ void UEnableMultiFactorAuthModalBP_C::ExecuteUbergraph_EnableMultiFactorAuthModa
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

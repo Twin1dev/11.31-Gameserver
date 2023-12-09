@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass MiniPartyBar.MiniPartyBar_C
+// (None)
+
+class UClass* UMiniPartyBar_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MiniPartyBar_C");
+
+	return Clss;
+}
+
+
+// MiniPartyBar_C MiniPartyBar.Default__MiniPartyBar_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMiniPartyBar_C* UMiniPartyBar_C::GetDefaultObj()
+{
+	static class UMiniPartyBar_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMiniPartyBar_C*>(UMiniPartyBar_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function MiniPartyBar.MiniPartyBar_C.Get Banners Tooltip Widget
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -22,16 +47,19 @@ namespace SDK
 // class UCommonInputSubsystem*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ECommonInputType        CallFunc_GetCurrentInputType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue_1                           ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue_1                           (None)
 // class UUserWidget*                 CallFunc_Create_Basic_Tooltip_Output                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 class UWidget* UMiniPartyBar_C::Get_Banners_Tooltip_Widget(class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, class FText CallFunc_MakeLiteralText_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class FText CallFunc_MakeLiteralText_ReturnValue_1, class UUserWidget* CallFunc_Create_Basic_Tooltip_Output)
 {
-	static auto Func = Class->GetFunction("MiniPartyBar_C", "Get Banners Tooltip Widget");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniPartyBar_C_Get_Banners_Tooltip_Widget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniPartyBar_C", "Get Banners Tooltip Widget");
+
+	Params::UMiniPartyBar_C_Get_Banners_Tooltip_Widget_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
@@ -66,9 +94,12 @@ class UWidget* UMiniPartyBar_C::Get_Banners_Tooltip_Widget(class UCommonInputSub
 
 void UMiniPartyBar_C::HandlePartybarUIFeatureChanged(enum class EFortUIFeature Feature, enum class EFortUIFeatureState FeatureState, enum class ESlateVisibility Temp_byte_Variable, bool CallFunc_EqualEqual_ByteByte_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class EFortUIFeatureState Temp_byte_Variable_4, class UFortUIDataConfigurationContext* CallFunc_GetContext_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_ArePartyFeaturesEnabled_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MiniPartyBar_C", "HandlePartybarUIFeatureChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniPartyBar_C_HandlePartybarUIFeatureChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniPartyBar_C", "HandlePartybarUIFeatureChanged");
+
+	Params::UMiniPartyBar_C_HandlePartybarUIFeatureChanged_Params Parms{};
 
 	Parms.Feature = Feature;
 	Parms.FeatureState = FeatureState;
@@ -94,12 +125,14 @@ void UMiniPartyBar_C::HandlePartybarUIFeatureChanged(enum class EFortUIFeature F
 
 void UMiniPartyBar_C::Construct()
 {
-	static auto Func = Class->GetFunction("MiniPartyBar_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniPartyBar_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniPartyBar_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -111,9 +144,12 @@ void UMiniPartyBar_C::Construct()
 
 void UMiniPartyBar_C::BndEvt__ButtonLocalPlayer_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("MiniPartyBar_C", "BndEvt__ButtonLocalPlayer_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniPartyBar_C_BndEvt__ButtonLocalPlayer_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniPartyBar_C", "BndEvt__ButtonLocalPlayer_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature");
+
+	Params::UMiniPartyBar_C_BndEvt__ButtonLocalPlayer_K2Node_ComponentBoundEvent_81_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -143,9 +179,12 @@ void UMiniPartyBar_C::BndEvt__ButtonLocalPlayer_K2Node_ComponentBoundEvent_81_Co
 
 void UMiniPartyBar_C::ExecuteUbergraph_MiniPartyBar(int32 EntryPoint, int32 Temp_int_Array_Index_Variable, bool CallFunc_IsActivated_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UTeamMemberManage_C* CallFunc_Create_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class UFortUIDataConfigurationContext* CallFunc_GetContext_ReturnValue, bool CallFunc_ArePartyFeaturesEnabled_ReturnValue, TArray<class UWidget*>& K2Node_MakeArray_Array, class UWidget* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("MiniPartyBar_C", "ExecuteUbergraph_MiniPartyBar");
+	static class UFunction* Func = nullptr;
 
-	Params::UMiniPartyBar_C_ExecuteUbergraph_MiniPartyBar_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MiniPartyBar_C", "ExecuteUbergraph_MiniPartyBar");
+
+	Params::UMiniPartyBar_C_ExecuteUbergraph_MiniPartyBar_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -169,6 +208,4 @@ void UMiniPartyBar_C::ExecuteUbergraph_MiniPartyBar(int32 EntryPoint, int32 Temp
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

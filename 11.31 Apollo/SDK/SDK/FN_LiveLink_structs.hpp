@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -26,7 +23,7 @@ public:
 	struct FLiveLinkSubjectName                  LiveLinkSubjectName;                               // 0x20(0x8)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class ULiveLinkRetargetAsset>    RetargetAsset;                                     // 0x28(0x8)(Edit, BlueprintVisible, ZeroConstructor, NoClear, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ULiveLinkRetargetAsset*                CurrentRetargetAsset;                              // 0x30(0x8)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1843[0x10];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_429[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x50 (0x730 - 0x6E0)
@@ -35,7 +32,7 @@ struct FLiveLinkInstanceProxy : public FAnimInstanceProxy
 {
 public:
 	struct FAnimNode_LiveLinkPose                PoseNode;                                          // 0x6E0(0x48)(Edit, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1844[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_42B[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -43,7 +40,7 @@ public:
 struct FProviderPollResult
 {
 public:
-	uint8                                        Pad_1845[0x10];                                    // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_42C[0x10];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                Name;                                              // 0x10(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                MachineName;                                       // 0x20(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -53,7 +50,7 @@ public:
 struct FLiveLinkRetargetAssetReference
 {
 public:
-	uint8                                        Pad_1846[0x1];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_42D[0x1];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -69,6 +66,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass BattlePassOverviewVideo.BattlePassOverviewVideo_C
+// (None)
+
+class UClass* UBattlePassOverviewVideo_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BattlePassOverviewVideo_C");
+
+	return Clss;
+}
+
+
+// BattlePassOverviewVideo_C BattlePassOverviewVideo.Default__BattlePassOverviewVideo_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBattlePassOverviewVideo_C* UBattlePassOverviewVideo_C::GetDefaultObj()
+{
+	static class UBattlePassOverviewVideo_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBattlePassOverviewVideo_C*>(UBattlePassOverviewVideo_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BattlePassOverviewVideo.BattlePassOverviewVideo_C.BP_OnActivated
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UBattlePassOverviewVideo_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("BattlePassOverviewVideo_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassOverviewVideo_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassOverviewVideo_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UBattlePassOverviewVideo_C::BP_OnActivated()
 
 void UBattlePassOverviewVideo_C::BP_OnDeactivated()
 {
-	static auto Func = Class->GetFunction("BattlePassOverviewVideo_C", "BP_OnDeactivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassOverviewVideo_C_BP_OnDeactivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassOverviewVideo_C", "BP_OnDeactivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UBattlePassOverviewVideo_C::BP_OnDeactivated()
 
 void UBattlePassOverviewVideo_C::MediaOpened()
 {
-	static auto Func = Class->GetFunction("BattlePassOverviewVideo_C", "MediaOpened");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassOverviewVideo_C_MediaOpened_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassOverviewVideo_C", "MediaOpened");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -70,9 +101,12 @@ void UBattlePassOverviewVideo_C::MediaOpened()
 
 void UBattlePassOverviewVideo_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("BattlePassOverviewVideo_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassOverviewVideo_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassOverviewVideo_C", "PreConstruct");
+
+	Params::UBattlePassOverviewVideo_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -90,9 +124,12 @@ void UBattlePassOverviewVideo_C::PreConstruct(bool IsDesignTime)
 
 void UBattlePassOverviewVideo_C::ExecuteUbergraph_BattlePassOverviewVideo(int32 EntryPoint, bool K2Node_Event_IsDesignTime, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BattlePassOverviewVideo_C", "ExecuteUbergraph_BattlePassOverviewVideo");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassOverviewVideo_C_ExecuteUbergraph_BattlePassOverviewVideo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassOverviewVideo_C", "ExecuteUbergraph_BattlePassOverviewVideo");
+
+	Params::UBattlePassOverviewVideo_C_ExecuteUbergraph_BattlePassOverviewVideo_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -104,6 +141,4 @@ void UBattlePassOverviewVideo_C::ExecuteUbergraph_BattlePassOverviewVideo(int32 
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

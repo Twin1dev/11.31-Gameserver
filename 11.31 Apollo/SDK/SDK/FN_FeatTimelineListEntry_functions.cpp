@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass FeatTimelineListEntry.FeatTimelineListEntry_C
+// (None)
+
+class UClass* UFeatTimelineListEntry_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FeatTimelineListEntry_C");
+
+	return Clss;
+}
+
+
+// FeatTimelineListEntry_C FeatTimelineListEntry.Default__FeatTimelineListEntry_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UFeatTimelineListEntry_C* UFeatTimelineListEntry_C::GetDefaultObj()
+{
+	static class UFeatTimelineListEntry_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFeatTimelineListEntry_C*>(UFeatTimelineListEntry_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function FeatTimelineListEntry.FeatTimelineListEntry_C.BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 
 void UFeatTimelineListEntry_C::BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("FeatTimelineListEntry_C", "BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeatTimelineListEntry_C_BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FeatTimelineListEntry_C", "BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_0_OnButtonHoverEvent__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UFeatTimelineListEntry_C::BndEvt__SimpleButton_ClickArea_K2Node_ComponentBo
 
 void UFeatTimelineListEntry_C::BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("FeatTimelineListEntry_C", "BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeatTimelineListEntry_C_BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FeatTimelineListEntry_C", "BndEvt__SimpleButton_ClickArea_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,9 +84,12 @@ void UFeatTimelineListEntry_C::BndEvt__SimpleButton_ClickArea_K2Node_ComponentBo
 
 void UFeatTimelineListEntry_C::OnFeatInfoSet(int32 NumFeatsOnDay, int32 IdxOnDay)
 {
-	static auto Func = Class->GetFunction("FeatTimelineListEntry_C", "OnFeatInfoSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeatTimelineListEntry_C_OnFeatInfoSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FeatTimelineListEntry_C", "OnFeatInfoSet");
+
+	Params::UFeatTimelineListEntry_C_OnFeatInfoSet_Params Parms{};
 
 	Parms.NumFeatsOnDay = NumFeatsOnDay;
 	Parms.IdxOnDay = IdxOnDay;
@@ -74,9 +106,12 @@ void UFeatTimelineListEntry_C::OnFeatInfoSet(int32 NumFeatsOnDay, int32 IdxOnDay
 
 void UFeatTimelineListEntry_C::OnTimespanInfoSet(int32 NumDays)
 {
-	static auto Func = Class->GetFunction("FeatTimelineListEntry_C", "OnTimespanInfoSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeatTimelineListEntry_C_OnTimespanInfoSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FeatTimelineListEntry_C", "OnTimespanInfoSet");
+
+	Params::UFeatTimelineListEntry_C_OnTimespanInfoSet_Params Parms{};
 
 	Parms.NumDays = NumDays;
 
@@ -92,9 +127,12 @@ void UFeatTimelineListEntry_C::OnTimespanInfoSet(int32 NumDays)
 
 void UFeatTimelineListEntry_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("FeatTimelineListEntry_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeatTimelineListEntry_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FeatTimelineListEntry_C", "PreConstruct");
+
+	Params::UFeatTimelineListEntry_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -109,12 +147,14 @@ void UFeatTimelineListEntry_C::PreConstruct(bool IsDesignTime)
 
 void UFeatTimelineListEntry_C::OnFeatCompletedThisSession()
 {
-	static auto Func = Class->GetFunction("FeatTimelineListEntry_C", "OnFeatCompletedThisSession");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeatTimelineListEntry_C_OnFeatCompletedThisSession_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FeatTimelineListEntry_C", "OnFeatCompletedThisSession");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -125,12 +165,14 @@ void UFeatTimelineListEntry_C::OnFeatCompletedThisSession()
 
 void UFeatTimelineListEntry_C::WidgetAnimationEvt_OnShowCompleted_K2Node_WidgetAnimationEvent_0()
 {
-	static auto Func = Class->GetFunction("FeatTimelineListEntry_C", "WidgetAnimationEvt_OnShowCompleted_K2Node_WidgetAnimationEvent_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeatTimelineListEntry_C_WidgetAnimationEvt_OnShowCompleted_K2Node_WidgetAnimationEvent_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FeatTimelineListEntry_C", "WidgetAnimationEvt_OnShowCompleted_K2Node_WidgetAnimationEvent_0");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -141,12 +183,14 @@ void UFeatTimelineListEntry_C::WidgetAnimationEvt_OnShowCompleted_K2Node_WidgetA
 
 void UFeatTimelineListEntry_C::OnWaitingForCompletedTimer()
 {
-	static auto Func = Class->GetFunction("FeatTimelineListEntry_C", "OnWaitingForCompletedTimer");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeatTimelineListEntry_C_OnWaitingForCompletedTimer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FeatTimelineListEntry_C", "OnWaitingForCompletedTimer");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -178,9 +222,12 @@ void UFeatTimelineListEntry_C::OnWaitingForCompletedTimer()
 
 void UFeatTimelineListEntry_C::ExecuteUbergraph_FeatTimelineListEntry(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, int32 K2Node_Event_NumFeatsOnDay, int32 K2Node_Event_IdxOnDay, float CallFunc_Multiply_IntFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin, const struct FMargin& K2Node_MakeStruct_Margin_1, float CallFunc_Multiply_IntFloat_ReturnValue_1, int32 K2Node_Event_NumDays, bool K2Node_Event_IsDesignTime, float CallFunc_Multiply_IntFloat_ReturnValue_2, bool CallFunc_IsVisible_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UHorizontalBoxSlot* CallFunc_SlotAsHorizontalBoxSlot_ReturnValue, class UHorizontalBoxSlot* CallFunc_SlotAsHorizontalBoxSlot_ReturnValue_1, bool CallFunc_IsAnimationPlaying_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, bool CallFunc_IsHovered_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FeatTimelineListEntry_C", "ExecuteUbergraph_FeatTimelineListEntry");
+	static class UFunction* Func = nullptr;
 
-	Params::UFeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FeatTimelineListEntry_C", "ExecuteUbergraph_FeatTimelineListEntry");
+
+	Params::UFeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
@@ -210,6 +257,4 @@ void UFeatTimelineListEntry_C::ExecuteUbergraph_FeatTimelineListEntry(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

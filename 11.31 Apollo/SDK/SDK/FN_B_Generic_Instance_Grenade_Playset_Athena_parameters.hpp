@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,27 +12,6 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
-
-// 0x0 (0x0 - 0x0)
-// Function B_Generic_Instance_Grenade_Playset_Athena.B_Generic_Instance_Grenade_Playset_Athena_C.ReceiveBeginPlay
-struct AB_Generic_Instance_Grenade_Playset_Athena_C_ReceiveBeginPlay_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function B_Generic_Instance_Grenade_Playset_Athena.B_Generic_Instance_Grenade_Playset_Athena_C.K2_OnUnEquip
-struct AB_Generic_Instance_Grenade_Playset_Athena_C_K2_OnUnEquip_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function B_Generic_Instance_Grenade_Playset_Athena.B_Generic_Instance_Grenade_Playset_Athena_C.OnWeaponAttached
-struct AB_Generic_Instance_Grenade_Playset_Athena_C_OnWeaponAttached_Params
-{
-public:
-};
 
 // 0x4 (0x4 - 0x0)
 // Function B_Generic_Instance_Grenade_Playset_Athena.B_Generic_Instance_Grenade_Playset_Athena_C.ExecuteUbergraph_B_Generic_Instance_Grenade_Playset_Athena
@@ -48,6 +24,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

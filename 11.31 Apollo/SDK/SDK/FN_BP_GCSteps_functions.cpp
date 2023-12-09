@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass BP_GCSteps.BP_GCSteps_C
+// (None)
+
+class UClass* UBP_GCSteps_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_GCSteps_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// BP_GCSteps_C BP_GCSteps.Default__BP_GCSteps_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBP_GCSteps_C* UBP_GCSteps_C::GetDefaultObj()
+{
+	static class UBP_GCSteps_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBP_GCSteps_C*>(UBP_GCSteps_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

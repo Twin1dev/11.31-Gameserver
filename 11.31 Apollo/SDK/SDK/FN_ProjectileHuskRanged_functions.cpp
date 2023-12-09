@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass ProjectileHuskRanged.ProjectileHuskRanged_C
+// (Actor)
+
+class UClass* AProjectileHuskRanged_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ProjectileHuskRanged_C");
+
+	return Clss;
+}
+
+
+// ProjectileHuskRanged_C ProjectileHuskRanged.Default__ProjectileHuskRanged_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AProjectileHuskRanged_C* AProjectileHuskRanged_C::GetDefaultObj()
+{
+	static class AProjectileHuskRanged_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AProjectileHuskRanged_C*>(AProjectileHuskRanged_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ProjectileHuskRanged.ProjectileHuskRanged_C.ReceiveHit
@@ -29,9 +54,12 @@ namespace SDK
 
 void AProjectileHuskRanged_C::ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("ProjectileHuskRanged_C", "ReceiveHit");
+	static class UFunction* Func = nullptr;
 
-	Params::AProjectileHuskRanged_C_ReceiveHit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProjectileHuskRanged_C", "ReceiveHit");
+
+	Params::AProjectileHuskRanged_C_ReceiveHit_Params Parms{};
 
 	Parms.MyComp = MyComp;
 	Parms.Other = Other;
@@ -53,12 +81,14 @@ void AProjectileHuskRanged_C::ReceiveHit(class UPrimitiveComponent* MyComp, clas
 
 void AProjectileHuskRanged_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("ProjectileHuskRanged_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AProjectileHuskRanged_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProjectileHuskRanged_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +99,14 @@ void AProjectileHuskRanged_C::ReceiveBeginPlay()
 
 void AProjectileHuskRanged_C::ProjectileCheck()
 {
-	static auto Func = Class->GetFunction("ProjectileHuskRanged_C", "ProjectileCheck");
+	static class UFunction* Func = nullptr;
 
-	Params::AProjectileHuskRanged_C_ProjectileCheck_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProjectileHuskRanged_C", "ProjectileCheck");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -85,12 +117,14 @@ void AProjectileHuskRanged_C::ProjectileCheck()
 
 void AProjectileHuskRanged_C::StopHoming()
 {
-	static auto Func = Class->GetFunction("ProjectileHuskRanged_C", "StopHoming");
+	static class UFunction* Func = nullptr;
 
-	Params::AProjectileHuskRanged_C_StopHoming_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProjectileHuskRanged_C", "StopHoming");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -103,9 +137,12 @@ void AProjectileHuskRanged_C::StopHoming()
 
 void AProjectileHuskRanged_C::OnExploded(TArray<class AActor*>& HitActors, TArray<struct FHitResult>& HitResults)
 {
-	static auto Func = Class->GetFunction("ProjectileHuskRanged_C", "OnExploded");
+	static class UFunction* Func = nullptr;
 
-	Params::AProjectileHuskRanged_C_OnExploded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProjectileHuskRanged_C", "OnExploded");
+
+	Params::AProjectileHuskRanged_C_OnExploded_Params Parms{};
 
 	Parms.HitActors = HitActors;
 	Parms.HitResults = HitResults;
@@ -121,12 +158,14 @@ void AProjectileHuskRanged_C::OnExploded(TArray<class AActor*>& HitActors, TArra
 
 void AProjectileHuskRanged_C::OnStoppedOnServer()
 {
-	static auto Func = Class->GetFunction("ProjectileHuskRanged_C", "OnStoppedOnServer");
+	static class UFunction* Func = nullptr;
 
-	Params::AProjectileHuskRanged_C_OnStoppedOnServer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProjectileHuskRanged_C", "OnStoppedOnServer");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -178,9 +217,12 @@ void AProjectileHuskRanged_C::OnStoppedOnServer()
 
 void AProjectileHuskRanged_C::ExecuteUbergraph_ProjectileHuskRanged(int32 EntryPoint, bool Temp_bool_Has_Been_Initd_Variable, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class AController* CallFunc_GetInstigatorController_ReturnValue, class AFortAIController* K2Node_DynamicCast_AsFort_AIController, bool K2Node_DynamicCast_bSuccess, class UPrimitiveComponent* K2Node_Event_MyComp, class AActor* K2Node_Event_Other, class UPrimitiveComponent* K2Node_Event_OtherComp, bool K2Node_Event_bSelfMoved, const struct FVector& K2Node_Event_HitLocation, const struct FVector& K2Node_Event_HitNormal, const struct FVector& K2Node_Event_NormalImpulse, const struct FHitResult& K2Node_Event_Hit, class AActor* CallFunc_GetGoalActor_ReturnValue, const struct FRotator& CallFunc_MakeRotFromX_ReturnValue, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess_1, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, class APawn* CallFunc_GetInstigator_ReturnValue, class FName CallFunc_MakeLiteralName_ReturnValue, class UBlackboardComponent* CallFunc_GetBlackboard_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, class UObject* CallFunc_GetValueAsObject_ReturnValue, class AActor* K2Node_DynamicCast_AsActor, bool K2Node_DynamicCast_bSuccess_2, bool CallFunc_IsValid_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_GetVelocity_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, float CallFunc_Dot_VectorVector_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue, bool Temp_bool_IsClosed_Variable, TArray<class AActor*>& K2Node_Event_HitActors, TArray<struct FHitResult>& K2Node_Event_HitResults, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_3, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("ProjectileHuskRanged_C", "ExecuteUbergraph_ProjectileHuskRanged");
+	static class UFunction* Func = nullptr;
 
-	Params::AProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProjectileHuskRanged_C", "ExecuteUbergraph_ProjectileHuskRanged");
+
+	Params::AProjectileHuskRanged_C_ExecuteUbergraph_ProjectileHuskRanged_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Has_Been_Initd_Variable = Temp_bool_Has_Been_Initd_Variable;
@@ -230,6 +272,4 @@ void AProjectileHuskRanged_C::ExecuteUbergraph_ProjectileHuskRanged(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

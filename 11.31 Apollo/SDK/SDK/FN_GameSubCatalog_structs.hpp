@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -91,7 +88,7 @@ struct FCatalogOfferRequirement
 {
 public:
 	enum class ECatalogRequirementType           RequirementType;                                   // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DC1[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_ED9[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        MinQuantity;                                       // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                RequiredId;                                        // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -102,13 +99,13 @@ struct FCatalogItemPrice
 {
 public:
 	enum class EStoreCurrencyType                CurrencyType;                                      // 0x0(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DC2[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EDB[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CurrencySubType;                                   // 0x8(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        RegularPrice;                                      // 0x18(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        FinalPrice;                                        // 0x1C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                  PriceTextOverride;                                 // 0x20(0x18)(NativeAccessSpecifierPublic)
 	enum class ECatalogSaleType                  SaleType;                                          // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DC3[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EDE[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDateTime                             SaleExpiration;                                    // 0x40(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -119,7 +116,7 @@ struct FItemQuantity
 public:
 	class FString                                TemplateId;                                        // 0x0(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        Quantity;                                          // 0x10(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DC4[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EE1[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FJsonObjectWrapper                    Attributes;                                        // 0x18(0x20)(Edit, NativeAccessSpecifierPublic)
 };
 
@@ -130,7 +127,7 @@ struct FCatalogDynamicBundleItem
 public:
 	struct FItemQuantity                         Item;                                              // 0x0(0x38)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	bool                                         bCanOwnMultiple;                                   // 0x38(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DC5[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EE2[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        RegularPrice;                                      // 0x3C(0x4)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        DiscountedPrice;                                   // 0x40(0x4)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        AlreadyOwnedPriceReduction;                        // 0x44(0x4)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -147,10 +144,10 @@ public:
 	int32                                        RegularBasePrice;                                  // 0x4(0x4)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        FloorPrice;                                        // 0x8(0x4)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EStoreCurrencyType                CurrencyType;                                      // 0xC(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DC6[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EE4[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CurrencySubType;                                   // 0x10(0x10)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ECatalogSaleType                  DisplayType;                                       // 0x20(0x1)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DC7[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EE6[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FCatalogDynamicBundleItem>     BundleItems;                                       // 0x28(0x10)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
 
@@ -169,7 +166,7 @@ struct FCatalogGiftInfo
 {
 public:
 	bool                                         bIsEnabled;                                        // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DC8[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EE9[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                ForcedGiftBoxTemplateId;                           // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FCatalogOfferRequirement>      PurchaseRequirements;                              // 0x18(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
@@ -183,13 +180,13 @@ public:
 	class FString                                DevName;                                           // 0x10(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FCatalogKeyValue>              MetaInfo;                                          // 0x20(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	enum class ECatalogOfferType                 OfferType;                                         // 0x30(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DC9[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EEF[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FCatalogItemPrice>             Prices;                                            // 0x38(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FCatalogDynamicBundle                 DynamicBundleInfo;                                 // 0x48(0x38)(Edit, NativeAccessSpecifierPublic)
 	int32                                        DailyLimit;                                        // 0x80(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        WeeklyLimit;                                       // 0x84(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MonthlyLimit;                                      // 0x88(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DCA[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EF1[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        Categories;                                        // 0x90(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	class FString                                CatalogGroup;                                      // 0xA0(0x10)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        CatalogGroupPriority;                              // 0xB0(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -204,7 +201,7 @@ public:
 	TArray<struct FCatalogOfferRequirement>      Requirements;                                      // 0x1F0(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FCatalogGiftInfo                      GiftInfo;                                          // 0x200(0x28)(NativeAccessSpecifierPublic)
 	bool                                         Refundable;                                        // 0x228(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DCB[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EF4[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class FString>                        DenyItemTemplateIds;                               // 0x230(0x10)(ZeroConstructor, Deprecated, NativeAccessSpecifierPrivate)
 };
 
@@ -235,7 +232,7 @@ struct FCatalogItemSalePrice
 public:
 	int32                                        SalePrice;                                         // 0x0(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ECatalogSaleType                  SaleType;                                          // 0x4(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DCC[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EF5[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDateTime                             StartTime;                                         // 0x8(0x8)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FDateTime                             EndTime;                                           // 0x10(0x8)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -247,10 +244,10 @@ struct FCatalogPurchaseInfoGift
 public:
 	class FString                                OfferId;                                           // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EStoreCurrencyType                Currency;                                          // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DCD[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EF7[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CurrencySubType;                                   // 0x18(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ExpectedTotalPrice;                                // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DCE[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EF8[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                GameContext;                                       // 0x30(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                        ReceiverAccountIds;                                // 0x40(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	class FString                                GiftWrapTemplateId;                                // 0x50(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -265,10 +262,10 @@ public:
 	class FString                                OfferId;                                           // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        PurchaseQuantity;                                  // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EStoreCurrencyType                Currency;                                          // 0x14(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DCF[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EF9[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                CurrencySubType;                                   // 0x18(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ExpectedTotalPrice;                                // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DD0[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EFA[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                GameContext;                                       // 0x30(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -278,12 +275,12 @@ struct FCatalogReceiptInfo
 {
 public:
 	enum class EAppStore                         AppStore;                                          // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DD1[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_EFB[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                AppStoreId;                                        // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                ReceiptId;                                         // 0x18(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                ReceiptInfo;                                       // 0x28(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                PurchaseCorrelationId;                             // 0x38(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_1DD2[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_EFC[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -291,11 +288,9 @@ public:
 struct FKeychainDownload
 {
 public:
-	uint8                                        Pad_1DD3[0x10];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_EFD[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

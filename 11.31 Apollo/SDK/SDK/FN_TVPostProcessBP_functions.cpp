@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass TVPostProcessBP.TVPostProcessBP_C
+// (Actor)
+
+class UClass* ATVPostProcessBP_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TVPostProcessBP_C");
+
+	return Clss;
+}
+
+
+// TVPostProcessBP_C TVPostProcessBP.Default__TVPostProcessBP_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ATVPostProcessBP_C* ATVPostProcessBP_C::GetDefaultObj()
+{
+	static class ATVPostProcessBP_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ATVPostProcessBP_C*>(ATVPostProcessBP_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TVPostProcessBP.TVPostProcessBP_C.IsEnabledForCurrentSubgame
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ATVPostProcessBP_C::IsEnabledForCurrentSubgame(bool* bEnabled)
 {
-	static auto Func = Class->GetFunction("TVPostProcessBP_C", "IsEnabledForCurrentSubgame");
+	static class UFunction* Func = nullptr;
 
-	Params::ATVPostProcessBP_C_IsEnabledForCurrentSubgame_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TVPostProcessBP_C", "IsEnabledForCurrentSubgame");
+
+	Params::ATVPostProcessBP_C_IsEnabledForCurrentSubgame_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -41,12 +69,14 @@ void ATVPostProcessBP_C::IsEnabledForCurrentSubgame(bool* bEnabled)
 
 void ATVPostProcessBP_C::UserConstructionScript()
 {
-	static auto Func = Class->GetFunction("TVPostProcessBP_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ATVPostProcessBP_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TVPostProcessBP_C", "UserConstructionScript");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,12 +87,14 @@ void ATVPostProcessBP_C::UserConstructionScript()
 
 void ATVPostProcessBP_C::Camera_DisableEffects()
 {
-	static auto Func = Class->GetFunction("TVPostProcessBP_C", "Camera_DisableEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::ATVPostProcessBP_C_Camera_DisableEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TVPostProcessBP_C", "Camera_DisableEffects");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -73,12 +105,14 @@ void ATVPostProcessBP_C::Camera_DisableEffects()
 
 void ATVPostProcessBP_C::FrontEndCameraSwitch()
 {
-	static auto Func = Class->GetFunction("TVPostProcessBP_C", "FrontEndCameraSwitch");
+	static class UFunction* Func = nullptr;
 
-	Params::ATVPostProcessBP_C_FrontEndCameraSwitch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TVPostProcessBP_C", "FrontEndCameraSwitch");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -89,12 +123,14 @@ void ATVPostProcessBP_C::FrontEndCameraSwitch()
 
 void ATVPostProcessBP_C::ExecuteCameraSwitch()
 {
-	static auto Func = Class->GetFunction("TVPostProcessBP_C", "ExecuteCameraSwitch");
+	static class UFunction* Func = nullptr;
 
-	Params::ATVPostProcessBP_C_ExecuteCameraSwitch_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TVPostProcessBP_C", "ExecuteCameraSwitch");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -107,9 +143,12 @@ void ATVPostProcessBP_C::ExecuteCameraSwitch()
 
 void ATVPostProcessBP_C::ExecuteUbergraph_TVPostProcessBP(int32 EntryPoint, bool CallFunc_IsEnabledForCurrentSubgame_bEnabled)
 {
-	static auto Func = Class->GetFunction("TVPostProcessBP_C", "ExecuteUbergraph_TVPostProcessBP");
+	static class UFunction* Func = nullptr;
 
-	Params::ATVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TVPostProcessBP_C", "ExecuteUbergraph_TVPostProcessBP");
+
+	Params::ATVPostProcessBP_C_ExecuteUbergraph_TVPostProcessBP_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsEnabledForCurrentSubgame_bEnabled = CallFunc_IsEnabledForCurrentSubgame_bEnabled;
@@ -120,6 +159,4 @@ void ATVPostProcessBP_C::ExecuteUbergraph_TVPostProcessBP(int32 EntryPoint, bool
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

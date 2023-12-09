@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_SlamDoorOpen_Victim.GA_SlamDoorOpen_Victim_C
+// (None)
+
+class UClass* UGA_SlamDoorOpen_Victim_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_SlamDoorOpen_Victim_C");
+
+	return Clss;
+}
+
+
+// GA_SlamDoorOpen_Victim_C GA_SlamDoorOpen_Victim.Default__GA_SlamDoorOpen_Victim_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_SlamDoorOpen_Victim_C* UGA_SlamDoorOpen_Victim_C::GetDefaultObj()
+{
+	static class UGA_SlamDoorOpen_Victim_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_SlamDoorOpen_Victim_C*>(UGA_SlamDoorOpen_Victim_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_SlamDoorOpen_Victim.GA_SlamDoorOpen_Victim_C.K2_ActivateAbilityFromEvent
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UGA_SlamDoorOpen_Victim_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GA_SlamDoorOpen_Victim_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SlamDoorOpen_Victim_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SlamDoorOpen_Victim_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGA_SlamDoorOpen_Victim_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -55,9 +83,12 @@ void UGA_SlamDoorOpen_Victim_C::K2_ActivateAbilityFromEvent(struct FGameplayEven
 
 void UGA_SlamDoorOpen_Victim_C::ExecuteUbergraph_GA_SlamDoorOpen_Victim(int32 EntryPoint, const struct FGameplayEventData& K2Node_Event_EventData, class AActor* CallFunc_GetAvatarActorFromActorInfo_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, class ABuildingWall* K2Node_DynamicCast_AsBuilding_Wall, bool K2Node_DynamicCast_bSuccess_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FVector& CallFunc_MakeVector_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GA_SlamDoorOpen_Victim_C", "ExecuteUbergraph_GA_SlamDoorOpen_Victim");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_SlamDoorOpen_Victim_C", "ExecuteUbergraph_GA_SlamDoorOpen_Victim");
+
+	Params::UGA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_EventData = K2Node_Event_EventData;
@@ -82,6 +113,4 @@ void UGA_SlamDoorOpen_Victim_C::ExecuteUbergraph_GA_SlamDoorOpen_Victim(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

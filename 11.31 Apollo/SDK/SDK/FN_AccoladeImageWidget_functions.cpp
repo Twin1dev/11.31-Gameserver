@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AccoladeImageWidget.AccoladeImageWidget_C
+// (None)
+
+class UClass* UAccoladeImageWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AccoladeImageWidget_C");
+
+	return Clss;
+}
+
+
+// AccoladeImageWidget_C AccoladeImageWidget.Default__AccoladeImageWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAccoladeImageWidget_C* UAccoladeImageWidget_C::GetDefaultObj()
+{
+	static class UAccoladeImageWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAccoladeImageWidget_C*>(UAccoladeImageWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AccoladeImageWidget.AccoladeImageWidget_C.SequenceEvent_0
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UAccoladeImageWidget_C::SequenceEvent_0()
 {
-	static auto Func = Class->GetFunction("AccoladeImageWidget_C", "SequenceEvent_0");
+	static class UFunction* Func = nullptr;
 
-	Params::UAccoladeImageWidget_C_SequenceEvent_0_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AccoladeImageWidget_C", "SequenceEvent_0");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UAccoladeImageWidget_C::SequenceEvent_0()
 
 void UAccoladeImageWidget_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("AccoladeImageWidget_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAccoladeImageWidget_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AccoladeImageWidget_C", "PreConstruct");
+
+	Params::UAccoladeImageWidget_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -55,12 +85,14 @@ void UAccoladeImageWidget_C::PreConstruct(bool IsDesignTime)
 
 void UAccoladeImageWidget_C::MedalInit()
 {
-	static auto Func = Class->GetFunction("AccoladeImageWidget_C", "MedalInit");
+	static class UFunction* Func = nullptr;
 
-	Params::UAccoladeImageWidget_C_MedalInit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AccoladeImageWidget_C", "MedalInit");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -71,12 +103,14 @@ void UAccoladeImageWidget_C::MedalInit()
 
 void UAccoladeImageWidget_C::TriggerParticles()
 {
-	static auto Func = Class->GetFunction("AccoladeImageWidget_C", "TriggerParticles");
+	static class UFunction* Func = nullptr;
 
-	Params::UAccoladeImageWidget_C_TriggerParticles_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AccoladeImageWidget_C", "TriggerParticles");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -88,9 +122,12 @@ void UAccoladeImageWidget_C::TriggerParticles()
 
 void UAccoladeImageWidget_C::EventSocket(bool bAlreadySocketed)
 {
-	static auto Func = Class->GetFunction("AccoladeImageWidget_C", "EventSocket");
+	static class UFunction* Func = nullptr;
 
-	Params::UAccoladeImageWidget_C_EventSocket_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AccoladeImageWidget_C", "EventSocket");
+
+	Params::UAccoladeImageWidget_C_EventSocket_Params Parms{};
 
 	Parms.bAlreadySocketed = bAlreadySocketed;
 
@@ -105,12 +142,14 @@ void UAccoladeImageWidget_C::EventSocket(bool bAlreadySocketed)
 
 void UAccoladeImageWidget_C::EventSetSocketed()
 {
-	static auto Func = Class->GetFunction("AccoladeImageWidget_C", "EventSetSocketed");
+	static class UFunction* Func = nullptr;
 
-	Params::UAccoladeImageWidget_C_EventSetSocketed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AccoladeImageWidget_C", "EventSetSocketed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -121,12 +160,14 @@ void UAccoladeImageWidget_C::EventSetSocketed()
 
 void UAccoladeImageWidget_C::Make_Small()
 {
-	static auto Func = Class->GetFunction("AccoladeImageWidget_C", "Make Small");
+	static class UFunction* Func = nullptr;
 
-	Params::UAccoladeImageWidget_C_Make_Small_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AccoladeImageWidget_C", "Make Small");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -166,9 +207,12 @@ void UAccoladeImageWidget_C::Make_Small()
 
 void UAccoladeImageWidget_C::ExecuteUbergraph_AccoladeImageWidget(int32 EntryPoint, const struct FVector2D& Temp_struct_Variable, const struct FVector2D& Temp_struct_Variable_1, bool Temp_bool_Variable, float Temp_float_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, bool K2Node_Event_IsDesignTime, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool Temp_bool_Variable_3, const struct FVector2D& K2Node_Select_Default, bool CallFunc_BooleanAND_ReturnValue, bool K2Node_CustomEvent_bAlreadySocketed, float K2Node_Select_Default_1, enum class ESlateVisibility Temp_byte_Variable, bool CallFunc_Less_IntInt_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, class UWidgetAnimation* K2Node_Select_Default_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, bool Temp_bool_Variable_4, float CallFunc_GetEndTime_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, enum class ESlateVisibility K2Node_Select_Default_3, bool CallFunc_Less_IntInt_ReturnValue_1, class USoundBase* K2Node_Select_Default_4)
 {
-	static auto Func = Class->GetFunction("AccoladeImageWidget_C", "ExecuteUbergraph_AccoladeImageWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AccoladeImageWidget_C", "ExecuteUbergraph_AccoladeImageWidget");
+
+	Params::UAccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
@@ -211,17 +255,17 @@ void UAccoladeImageWidget_C::ExecuteUbergraph_AccoladeImageWidget(int32 EntryPoi
 
 void UAccoladeImageWidget_C::SocketSmash__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AccoladeImageWidget_C", "SocketSmash__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAccoladeImageWidget_C_SocketSmash__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AccoladeImageWidget_C", "SocketSmash__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

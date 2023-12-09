@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaSeasonLevelConfirmationScreen.AthenaSeasonLevelConfirmationScreen_C
+// (None)
+
+class UClass* UAthenaSeasonLevelConfirmationScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaSeasonLevelConfirmationScreen_C");
+
+	return Clss;
+}
+
+
+// AthenaSeasonLevelConfirmationScreen_C AthenaSeasonLevelConfirmationScreen.Default__AthenaSeasonLevelConfirmationScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaSeasonLevelConfirmationScreen_C* UAthenaSeasonLevelConfirmationScreen_C::GetDefaultObj()
+{
+	static class UAthenaSeasonLevelConfirmationScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaSeasonLevelConfirmationScreen_C*>(UAthenaSeasonLevelConfirmationScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaSeasonLevelConfirmationScreen.AthenaSeasonLevelConfirmationScreen_C.GetWidgetForFramingViewedItem
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 class UWidget* UAthenaSeasonLevelConfirmationScreen_C::GetWidgetForFramingViewedItem()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "GetWidgetForFramingViewedItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_GetWidgetForFramingViewedItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "GetWidgetForFramingViewedItem");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_GetWidgetForFramingViewedItem_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -46,9 +74,12 @@ class UWidget* UAthenaSeasonLevelConfirmationScreen_C::GetWidgetForFramingViewed
 
 void UAthenaSeasonLevelConfirmationScreen_C::SelectReward(int32 CallFunc_GetChildrenCount_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, class UWidget* CallFunc_GetChildAt_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UAthenaSeasonReward_C* K2Node_DynamicCast_AsAthena_Season_Reward, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "SelectReward");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_SelectReward_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "SelectReward");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_SelectReward_Params Parms{};
 
 	Parms.CallFunc_GetChildrenCount_ReturnValue = CallFunc_GetChildrenCount_ReturnValue;
 	Parms.CallFunc_Subtract_IntInt_ReturnValue = CallFunc_Subtract_IntInt_ReturnValue;
@@ -69,9 +100,12 @@ void UAthenaSeasonLevelConfirmationScreen_C::SelectReward(int32 CallFunc_GetChil
 
 void UAthenaSeasonLevelConfirmationScreen_C::HandleBack(bool* bPassThrough)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "HandleBack");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_HandleBack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "HandleBack");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_HandleBack_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -92,9 +126,12 @@ void UAthenaSeasonLevelConfirmationScreen_C::HandleBack(bool* bPassThrough)
 
 void UAthenaSeasonLevelConfirmationScreen_C::ModifyNumberOfTiersToBuy(int32 Delta, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Min_ReturnValue, int32 CallFunc_Clamp_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "ModifyNumberOfTiersToBuy");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_ModifyNumberOfTiersToBuy_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "ModifyNumberOfTiersToBuy");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_ModifyNumberOfTiersToBuy_Params Parms{};
 
 	Parms.Delta = Delta;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
@@ -125,9 +162,12 @@ void UAthenaSeasonLevelConfirmationScreen_C::ModifyNumberOfTiersToBuy(int32 Delt
 
 void UAthenaSeasonLevelConfirmationScreen_C::GenerateItemWidgets(bool FirstItem, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, TArray<class UFortItem*>& CallFunc_GetRewards_Output_Get, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UFortItem* CallFunc_Array_Get_Item, class UAthenaSeasonReward_C* CallFunc_Create_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue, class UScrollBoxSlot* K2Node_DynamicCast_AsScroll_Box_Slot, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "GenerateItemWidgets");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_GenerateItemWidgets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "GenerateItemWidgets");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_GenerateItemWidgets_Params Parms{};
 
 	Parms.FirstItem = FirstItem;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -156,9 +196,12 @@ void UAthenaSeasonLevelConfirmationScreen_C::GenerateItemWidgets(bool FirstItem,
 
 int32 UAthenaSeasonLevelConfirmationScreen_C::GetNumberOfTiersBuying(int32 CallFunc_Add_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "GetNumberOfTiersBuying");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_GetNumberOfTiersBuying_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "GetNumberOfTiersBuying");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_GetNumberOfTiersBuying_Params Parms{};
 
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 
@@ -176,13 +219,16 @@ int32 UAthenaSeasonLevelConfirmationScreen_C::GetNumberOfTiersBuying(int32 CallF
 // int32                              CallFunc_MakeLiteralInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Multiply_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 
 class FText UAthenaSeasonLevelConfirmationScreen_C::GetVBuckPrice(int32 CallFunc_MakeLiteralInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Multiply_IntInt_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "GetVBuckPrice");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_GetVBuckPrice_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "GetVBuckPrice");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_GetVBuckPrice_Params Parms{};
 
 	Parms.CallFunc_MakeLiteralInt_ReturnValue = CallFunc_MakeLiteralInt_ReturnValue;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
@@ -213,9 +259,12 @@ class FText UAthenaSeasonLevelConfirmationScreen_C::GetVBuckPrice(int32 CallFunc
 
 void UAthenaSeasonLevelConfirmationScreen_C::GetRewards(TArray<class UFortItem*>* Output_Get, const TArray<class UFortItem*>& Rewards, int32 Temp_int_Variable, int32 CallFunc_GetLevel_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, bool CallFunc_LessEqual_IntInt_ReturnValue, class UFortSeasonPassLevelInfo* CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue, TArray<class UFortItem*>& CallFunc_GetRewardItems_ReturnValue, TArray<class UFortItem*>& CallFunc_GetRewardItems_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "GetRewards");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_GetRewards_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "GetRewards");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_GetRewards_Params Parms{};
 
 	Parms.Rewards = Rewards;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -231,7 +280,7 @@ void UAthenaSeasonLevelConfirmationScreen_C::GetRewards(TArray<class UFortItem*>
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (Output_Get != nullptr)
-		*Output_Get = Parms.Output_Get;
+		*Output_Get = std::move(Parms.Output_Get);
 
 }
 
@@ -250,17 +299,20 @@ void UAthenaSeasonLevelConfirmationScreen_C::GetRewards(TArray<class UFortItem*>
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // int32                              CallFunc_GetLevel_ReturnValue_1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array_1                                         (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue_1                                    ()
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        CallFunc_Format_ReturnValue_1                                    (None)
+// class FText                        K2Node_Select_Default                                            (None)
 
 void UAthenaSeasonLevelConfirmationScreen_C::GetHeaderText(class FText* Result, int32* TierPurchaseNumber, bool Temp_bool_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_GetLevel_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, bool CallFunc_Greater_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, int32 CallFunc_GetLevel_ReturnValue_1, class FText CallFunc_Format_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array_1, class FText CallFunc_Format_ReturnValue_1, class FText K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "GetHeaderText");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_GetHeaderText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "GetHeaderText");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_GetHeaderText_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
@@ -305,9 +357,12 @@ void UAthenaSeasonLevelConfirmationScreen_C::GetHeaderText(class FText* Result, 
 
 void UAthenaSeasonLevelConfirmationScreen_C::Setup(class UFortSeasonPassLevelInfo* Level, TMap<int32, class UFortSeasonPassLevelInfo*>& AllLevels, int32 MaxLevel, int32 PurchaseLevel, int32 CallFunc_GetLevel_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue, int32 CallFunc_GetBattleBookPurchaseLimit_MaxNumLevelsPossibleToPurchase, int32 CallFunc_GetBattleBookPurchaseLimit_BonusLevelsGranted, int32 CallFunc_Subtract_IntInt_ReturnValue_1, int32 CallFunc_Clamp_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "Setup");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_Setup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "Setup");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_Setup_Params Parms{};
 
 	Parms.Level = Level;
 	Parms.AllLevels = AllLevels;
@@ -347,18 +402,21 @@ void UAthenaSeasonLevelConfirmationScreen_C::Setup(class UFortSeasonPassLevelInf
 // bool                               CallFunc_LessEqual_IntInt_ReturnValue_2                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetVBuckPrice_ReturnValue                               ()
-// class FText                        CallFunc_GetHeaderText_Result                                    ()
+// class FText                        CallFunc_GetVBuckPrice_ReturnValue                               (None)
+// class FText                        CallFunc_GetHeaderText_Result                                    (None)
 // int32                              CallFunc_GetHeaderText_TierPurchaseNumber                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 
 void UAthenaSeasonLevelConfirmationScreen_C::InitWidgets(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UFortStoreContext* CallFunc_GetContext_ReturnValue, class UFortMcpContext* CallFunc_GetContext_ReturnValue_1, bool CallFunc_StoreHasStarsForSale_ReturnValue, const struct FFortPrivateAccountInfo& CallFunc_GetLocalAccountInfo_Result, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Multiply_IntInt_ReturnValue, int32 CallFunc_GetLevel_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue_1, int32 CallFunc_Add_IntInt_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue_2, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, class FText CallFunc_GetVBuckPrice_ReturnValue, class FText CallFunc_GetHeaderText_Result, int32 CallFunc_GetHeaderText_TierPurchaseNumber, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "InitWidgets");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_InitWidgets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "InitWidgets");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_InitWidgets_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
@@ -399,9 +457,12 @@ void UAthenaSeasonLevelConfirmationScreen_C::InitWidgets(enum class ESlateVisibi
 
 void UAthenaSeasonLevelConfirmationScreen_C::OnPurchaseFinished(bool bSuccess, TArray<struct FPurchasedItemInfo>& PurchasedItems, const class FString& OfferId)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "OnPurchaseFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_OnPurchaseFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "OnPurchaseFinished");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_OnPurchaseFinished_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 	Parms.PurchasedItems = PurchasedItems;
@@ -419,9 +480,12 @@ void UAthenaSeasonLevelConfirmationScreen_C::OnPurchaseFinished(bool bSuccess, T
 
 void UAthenaSeasonLevelConfirmationScreen_C::BndEvt__IncreasePurchaseTier_K2Node_ComponentBoundEvent_396_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "BndEvt__IncreasePurchaseTier_K2Node_ComponentBoundEvent_396_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_BndEvt__IncreasePurchaseTier_K2Node_ComponentBoundEvent_396_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "BndEvt__IncreasePurchaseTier_K2Node_ComponentBoundEvent_396_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_BndEvt__IncreasePurchaseTier_K2Node_ComponentBoundEvent_396_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -437,9 +501,12 @@ void UAthenaSeasonLevelConfirmationScreen_C::BndEvt__IncreasePurchaseTier_K2Node
 
 void UAthenaSeasonLevelConfirmationScreen_C::BndEvt__DecreasePurchaseTier_K2Node_ComponentBoundEvent_429_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "BndEvt__DecreasePurchaseTier_K2Node_ComponentBoundEvent_429_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_BndEvt__DecreasePurchaseTier_K2Node_ComponentBoundEvent_429_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "BndEvt__DecreasePurchaseTier_K2Node_ComponentBoundEvent_429_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_BndEvt__DecreasePurchaseTier_K2Node_ComponentBoundEvent_429_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -454,12 +521,14 @@ void UAthenaSeasonLevelConfirmationScreen_C::BndEvt__DecreasePurchaseTier_K2Node
 
 void UAthenaSeasonLevelConfirmationScreen_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -470,12 +539,14 @@ void UAthenaSeasonLevelConfirmationScreen_C::Construct()
 
 void UAthenaSeasonLevelConfirmationScreen_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -487,9 +558,12 @@ void UAthenaSeasonLevelConfirmationScreen_C::BP_OnActivated()
 
 void UAthenaSeasonLevelConfirmationScreen_C::BndEvt__PurchaseBtn_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "BndEvt__PurchaseBtn_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_BndEvt__PurchaseBtn_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "BndEvt__PurchaseBtn_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_BndEvt__PurchaseBtn_K2Node_ComponentBoundEvent_49_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -505,9 +579,12 @@ void UAthenaSeasonLevelConfirmationScreen_C::BndEvt__PurchaseBtn_K2Node_Componen
 
 void UAthenaSeasonLevelConfirmationScreen_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -551,9 +628,12 @@ void UAthenaSeasonLevelConfirmationScreen_C::BndEvt__MobileCloseButton_K2Node_Co
 
 void UAthenaSeasonLevelConfirmationScreen_C::ExecuteUbergraph_AthenaSeasonLevelConfirmationScreen(int32 EntryPoint, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_Variable, int32 CallFunc_GetBattleBookPurchaseLimit_MaxNumLevelsPossibleToPurchase, int32 CallFunc_GetBattleBookPurchaseLimit_BonusLevelsGranted, enum class ESlateVisibility Temp_byte_Variable, int32 CallFunc_Subtract_IntInt_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_1, class UFortMcpContext* CallFunc_GetContext_ReturnValue_1, bool K2Node_CustomEvent_bSuccess, TArray<struct FPurchasedItemInfo>& K2Node_CustomEvent_PurchasedItems, const class FString& K2Node_CustomEvent_OfferId, int32 CallFunc_GetNumberOfTiersBuying_ReturnValue, int32 CallFunc_GetNumberOfTiersBuying_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class EOfferPurchaseError CallFunc_CanPurchaseOffer_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_3, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UFortMcpContext* CallFunc_GetContext_ReturnValue_2, enum class EOfferPurchaseError CallFunc_PurchaseOffer_ReturnValue, bool CallFunc_IsUsingTouch_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_HandleBack_bPassThrough, enum class ESlateVisibility K2Node_Select_Default, int32 CallFunc_GetNumberOfTiersBuying_ReturnValue_2, int32 CallFunc_GetNumberOfTiersBuying_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "ExecuteUbergraph_AthenaSeasonLevelConfirmationScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonLevelConfirmationScreen_C_ExecuteUbergraph_AthenaSeasonLevelConfirmationScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonLevelConfirmationScreen_C", "ExecuteUbergraph_AthenaSeasonLevelConfirmationScreen");
+
+	Params::UAthenaSeasonLevelConfirmationScreen_C_ExecuteUbergraph_AthenaSeasonLevelConfirmationScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -591,6 +671,4 @@ void UAthenaSeasonLevelConfirmationScreen_C::ExecuteUbergraph_AthenaSeasonLevelC
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

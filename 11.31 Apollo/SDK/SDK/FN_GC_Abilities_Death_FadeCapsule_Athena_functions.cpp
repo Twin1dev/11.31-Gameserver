@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GC_Abilities_Death_FadeCapsule_Athena.GC_Abilities_Death_FadeCapsule_Athena_C
+// (Actor)
+
+class UClass* AGC_Abilities_Death_FadeCapsule_Athena_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GC_Abilities_Death_FadeCapsule_Athena_C");
+
+	return Clss;
+}
+
+
+// GC_Abilities_Death_FadeCapsule_Athena_C GC_Abilities_Death_FadeCapsule_Athena.Default__GC_Abilities_Death_FadeCapsule_Athena_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AGC_Abilities_Death_FadeCapsule_Athena_C* AGC_Abilities_Death_FadeCapsule_Athena_C::GetDefaultObj()
+{
+	static class AGC_Abilities_Death_FadeCapsule_Athena_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AGC_Abilities_Death_FadeCapsule_Athena_C*>(AGC_Abilities_Death_FadeCapsule_Athena_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GC_Abilities_Death_FadeCapsule_Athena.GC_Abilities_Death_FadeCapsule_Athena_C.SkeletalMeshSetup
@@ -46,9 +71,12 @@ namespace SDK
 
 void AGC_Abilities_Death_FadeCapsule_Athena_C::SkeletalMeshSetup(class AFortPlayerPawnAthena* FortPawn, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue, bool CallFunc_IsValid_ReturnValue, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_2, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_3, bool CallFunc_IsValid_ReturnValue_3, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_4, bool CallFunc_IsValid_ReturnValue_4, class USkeletalMeshComponent* CallFunc_GetSkeletalMeshForPartType_ReturnValue_5, bool CallFunc_IsValid_ReturnValue_5, class USkeletalMeshComponent* Temp_object_Variable, class USkeletalMeshComponent* Temp_object_Variable_1, class USkeletalMeshComponent* Temp_object_Variable_2, class USkeletalMeshComponent* Temp_object_Variable_3, int32 CallFunc_Array_Add_ReturnValue, int32 CallFunc_Array_Add_ReturnValue_1, class USkeletalMeshComponent* Temp_object_Variable_4, int32 CallFunc_Array_Add_ReturnValue_2, int32 CallFunc_Array_Add_ReturnValue_3, int32 CallFunc_Array_Add_ReturnValue_4, class USkeletalMeshComponent* Temp_object_Variable_5, int32 CallFunc_Array_Add_ReturnValue_5)
 {
-	static auto Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "SkeletalMeshSetup");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Abilities_Death_FadeCapsule_Athena_C_SkeletalMeshSetup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "SkeletalMeshSetup");
+
+	Params::AGC_Abilities_Death_FadeCapsule_Athena_C_SkeletalMeshSetup_Params Parms{};
 
 	Parms.FortPawn = FortPawn;
 	Parms.CallFunc_GetSkeletalMeshForPartType_ReturnValue = CallFunc_GetSkeletalMeshForPartType_ReturnValue;
@@ -87,12 +115,14 @@ void AGC_Abilities_Death_FadeCapsule_Athena_C::SkeletalMeshSetup(class AFortPlay
 
 void AGC_Abilities_Death_FadeCapsule_Athena_C::CapsuleFadeTL__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "CapsuleFadeTL__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Abilities_Death_FadeCapsule_Athena_C_CapsuleFadeTL__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "CapsuleFadeTL__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -103,12 +133,14 @@ void AGC_Abilities_Death_FadeCapsule_Athena_C::CapsuleFadeTL__FinishedFunc()
 
 void AGC_Abilities_Death_FadeCapsule_Athena_C::CapsuleFadeTL__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "CapsuleFadeTL__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Abilities_Death_FadeCapsule_Athena_C_CapsuleFadeTL__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "CapsuleFadeTL__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -122,9 +154,12 @@ void AGC_Abilities_Death_FadeCapsule_Athena_C::CapsuleFadeTL__UpdateFunc()
 
 void AGC_Abilities_Death_FadeCapsule_Athena_C::K2_HandleGameplayCue(class AActor* MyTarget, enum class EGameplayCueEvent EventType, struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "K2_HandleGameplayCue");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Abilities_Death_FadeCapsule_Athena_C_K2_HandleGameplayCue_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "K2_HandleGameplayCue");
+
+	Params::AGC_Abilities_Death_FadeCapsule_Athena_C_K2_HandleGameplayCue_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.EventType = EventType;
@@ -156,9 +191,12 @@ void AGC_Abilities_Death_FadeCapsule_Athena_C::K2_HandleGameplayCue(class AActor
 
 void AGC_Abilities_Death_FadeCapsule_Athena_C::ExecuteUbergraph_GC_Abilities_Death_FadeCapsule_Athena(int32 EntryPoint, bool CallFunc_IsDedicatedServer_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, class AActor* K2Node_Event_MyTarget, enum class EGameplayCueEvent K2Node_Event_EventType, const struct FGameplayCueParameters& K2Node_Event_Parameters, bool K2Node_SwitchEnum_CmpSuccess, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, float CallFunc_Lerp_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class USkeletalMeshComponent* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "ExecuteUbergraph_GC_Abilities_Death_FadeCapsule_Athena");
+	static class UFunction* Func = nullptr;
 
-	Params::AGC_Abilities_Death_FadeCapsule_Athena_C_ExecuteUbergraph_GC_Abilities_Death_FadeCapsule_Athena_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GC_Abilities_Death_FadeCapsule_Athena_C", "ExecuteUbergraph_GC_Abilities_Death_FadeCapsule_Athena");
+
+	Params::AGC_Abilities_Death_FadeCapsule_Athena_C_ExecuteUbergraph_GC_Abilities_Death_FadeCapsule_Athena_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
@@ -182,6 +220,4 @@ void AGC_Abilities_Death_FadeCapsule_Athena_C::ExecuteUbergraph_GC_Abilities_Dea
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

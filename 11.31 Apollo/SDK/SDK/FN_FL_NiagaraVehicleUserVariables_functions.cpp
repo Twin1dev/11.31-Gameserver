@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass FL_NiagaraVehicleUserVariables.FL_NiagaraVehicleUserVariables_C
+// (None)
+
+class UClass* UFL_NiagaraVehicleUserVariables_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FL_NiagaraVehicleUserVariables_C");
+
+	return Clss;
+}
+
+
+// FL_NiagaraVehicleUserVariables_C FL_NiagaraVehicleUserVariables.Default__FL_NiagaraVehicleUserVariables_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UFL_NiagaraVehicleUserVariables_C* UFL_NiagaraVehicleUserVariables_C::GetDefaultObj()
+{
+	static class UFL_NiagaraVehicleUserVariables_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UFL_NiagaraVehicleUserVariables_C*>(UFL_NiagaraVehicleUserVariables_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function FL_NiagaraVehicleUserVariables.FL_NiagaraVehicleUserVariables_C.setNiagaraSkydiveUserVariables
@@ -27,9 +52,12 @@ namespace SDK
 
 void UFL_NiagaraVehicleUserVariables_C::SetNiagaraSkydiveUserVariables(class UNiagaraComponent* Niagara, const struct FVector& Velocity, class UObject* __WorldContext, float AccumulatedSpeed, float CallFunc_VSize_ReturnValue, float CallFunc_MapRangeClamped_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FL_NiagaraVehicleUserVariables_C", "setNiagaraSkydiveUserVariables");
+	static class UFunction* Func = nullptr;
 
-	Params::UFL_NiagaraVehicleUserVariables_C_SetNiagaraSkydiveUserVariables_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FL_NiagaraVehicleUserVariables_C", "setNiagaraSkydiveUserVariables");
+
+	Params::UFL_NiagaraVehicleUserVariables_C_SetNiagaraSkydiveUserVariables_Params Parms{};
 
 	Parms.Niagara = Niagara;
 	Parms.Velocity = Velocity;
@@ -72,9 +100,12 @@ void UFL_NiagaraVehicleUserVariables_C::SetNiagaraSkydiveUserVariables(class UNi
 
 void UFL_NiagaraVehicleUserVariables_C::NiagaraPontoonModule(class UNiagaraComponent* Niagara, const struct FVehicleSphericalPontoon& Pontoon, class UObject* __WorldContext, class UNiagaraComponent* NS, const class FString& CallFunc_Conv_NameToString_ReturnValue, const class FString& CallFunc_Conv_NameToString_ReturnValue_1, const class FString& CallFunc_Concat_StrStr_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_1, const class FString& CallFunc_Concat_StrStr_ReturnValue_2, const class FString& CallFunc_Concat_StrStr_ReturnValue_3, class FName CallFunc_Conv_StringToName_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue_1, const class FString& CallFunc_Conv_NameToString_ReturnValue_2, const class FString& CallFunc_Conv_NameToString_ReturnValue_3, const class FString& CallFunc_Concat_StrStr_ReturnValue_4, const class FString& CallFunc_Concat_StrStr_ReturnValue_5, const class FString& CallFunc_Concat_StrStr_ReturnValue_6, const class FString& CallFunc_Concat_StrStr_ReturnValue_7, const class FString& CallFunc_Conv_NameToString_ReturnValue_4, class FName CallFunc_Conv_StringToName_ReturnValue_2, const class FString& CallFunc_Concat_StrStr_ReturnValue_8, const class FString& CallFunc_Concat_StrStr_ReturnValue_9, class FName CallFunc_Conv_StringToName_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("FL_NiagaraVehicleUserVariables_C", "niagaraPontoonModule");
+	static class UFunction* Func = nullptr;
 
-	Params::UFL_NiagaraVehicleUserVariables_C_NiagaraPontoonModule_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FL_NiagaraVehicleUserVariables_C", "niagaraPontoonModule");
+
+	Params::UFL_NiagaraVehicleUserVariables_C_NiagaraPontoonModule_Params Parms{};
 
 	Parms.Niagara = Niagara;
 	Parms.Pontoon = Pontoon;
@@ -115,9 +146,12 @@ void UFL_NiagaraVehicleUserVariables_C::NiagaraPontoonModule(class UNiagaraCompo
 
 void UFL_NiagaraVehicleUserVariables_C::SetNiagaraPontoonUserVariables(class UNiagaraComponent* Niagara, const struct FVehicleSphericalPontoon& Pontoon, class UObject* __WorldContext, class UNiagaraComponent* NS)
 {
-	static auto Func = Class->GetFunction("FL_NiagaraVehicleUserVariables_C", "setNiagaraPontoonUserVariables");
+	static class UFunction* Func = nullptr;
 
-	Params::UFL_NiagaraVehicleUserVariables_C_SetNiagaraPontoonUserVariables_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FL_NiagaraVehicleUserVariables_C", "setNiagaraPontoonUserVariables");
+
+	Params::UFL_NiagaraVehicleUserVariables_C_SetNiagaraPontoonUserVariables_Params Parms{};
 
 	Parms.Niagara = Niagara;
 	Parms.Pontoon = Pontoon;
@@ -148,9 +182,12 @@ void UFL_NiagaraVehicleUserVariables_C::SetNiagaraPontoonUserVariables(class UNi
 
 void UFL_NiagaraVehicleUserVariables_C::SetNiagaraVehicleUserVariables(class UNiagaraComponent* NiagaraSystem, bool EnableSpawning, bool InWater, bool InAir, bool HasDriver, float Boost, float ForwardSpeed, float TurnDirection, float TurnSpeed, float TurningAngle, class UObject* __WorldContext, class UNiagaraComponent* NS, bool EnableSpawn)
 {
-	static auto Func = Class->GetFunction("FL_NiagaraVehicleUserVariables_C", "setNiagaraVehicleUserVariables");
+	static class UFunction* Func = nullptr;
 
-	Params::UFL_NiagaraVehicleUserVariables_C_SetNiagaraVehicleUserVariables_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FL_NiagaraVehicleUserVariables_C", "setNiagaraVehicleUserVariables");
+
+	Params::UFL_NiagaraVehicleUserVariables_C_SetNiagaraVehicleUserVariables_Params Parms{};
 
 	Parms.NiagaraSystem = NiagaraSystem;
 	Parms.EnableSpawning = EnableSpawning;
@@ -172,6 +209,4 @@ void UFL_NiagaraVehicleUserVariables_C::SetNiagaraVehicleUserVariables(class UNi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

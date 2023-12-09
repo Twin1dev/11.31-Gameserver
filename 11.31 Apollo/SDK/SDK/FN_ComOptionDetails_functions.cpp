@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ComOptionDetails.ComOptionDetails_C
+// (None)
+
+class UClass* UComOptionDetails_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ComOptionDetails_C");
+
+	return Clss;
+}
+
+
+// ComOptionDetails_C ComOptionDetails.Default__ComOptionDetails_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UComOptionDetails_C* UComOptionDetails_C::GetDefaultObj()
+{
+	static class UComOptionDetails_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UComOptionDetails_C*>(UComOptionDetails_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ComOptionDetails.ComOptionDetails_C.PlayeFadeOut
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UComOptionDetails_C::PlayeFadeOut(class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ComOptionDetails_C", "PlayeFadeOut");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionDetails_C_PlayeFadeOut_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionDetails_C", "PlayeFadeOut");
+
+	Params::UComOptionDetails_C_PlayeFadeOut_Params Parms{};
 
 	Parms.CallFunc_PlayAnimationForward_ReturnValue = CallFunc_PlayAnimationForward_ReturnValue;
 
@@ -40,9 +68,12 @@ void UComOptionDetails_C::PlayeFadeOut(class UUMGSequencePlayer* CallFunc_PlayAn
 
 void UComOptionDetails_C::PlayeFadeIn(class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ComOptionDetails_C", "PlayeFadeIn");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionDetails_C_PlayeFadeIn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionDetails_C", "PlayeFadeIn");
+
+	Params::UComOptionDetails_C_PlayeFadeIn_Params Parms{};
 
 	Parms.CallFunc_PlayAnimationForward_ReturnValue = CallFunc_PlayAnimationForward_ReturnValue;
 
@@ -57,12 +88,14 @@ void UComOptionDetails_C::PlayeFadeIn(class UUMGSequencePlayer* CallFunc_PlayAni
 
 void UComOptionDetails_C::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("ComOptionDetails_C", "BP_OnEntryReleased");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionDetails_C_BP_OnEntryReleased_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionDetails_C", "BP_OnEntryReleased");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -74,9 +107,12 @@ void UComOptionDetails_C::BP_OnEntryReleased()
 
 void UComOptionDetails_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("ComOptionDetails_C", "BP_OnItemExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionDetails_C_BP_OnItemExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionDetails_C", "BP_OnItemExpansionChanged");
+
+	Params::UComOptionDetails_C_BP_OnItemExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -92,9 +128,12 @@ void UComOptionDetails_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 
 void UComOptionDetails_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("ComOptionDetails_C", "BP_OnItemSelectionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionDetails_C_BP_OnItemSelectionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionDetails_C", "BP_OnItemSelectionChanged");
+
+	Params::UComOptionDetails_C_BP_OnItemSelectionChanged_Params Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
@@ -110,9 +149,12 @@ void UComOptionDetails_C::BP_OnItemSelectionChanged(bool bIsSelected)
 
 void UComOptionDetails_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("ComOptionDetails_C", "OnListItemObjectSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionDetails_C_OnListItemObjectSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionDetails_C", "OnListItemObjectSet");
+
+	Params::UComOptionDetails_C_OnListItemObjectSet_Params Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
@@ -127,12 +169,14 @@ void UComOptionDetails_C::OnListItemObjectSet(class UObject* ListItemObject)
 
 void UComOptionDetails_C::FadeOutFinished()
 {
-	static auto Func = Class->GetFunction("ComOptionDetails_C", "FadeOutFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionDetails_C_FadeOutFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionDetails_C", "FadeOutFinished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -143,12 +187,14 @@ void UComOptionDetails_C::FadeOutFinished()
 
 void UComOptionDetails_C::Construct()
 {
-	static auto Func = Class->GetFunction("ComOptionDetails_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionDetails_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionDetails_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -164,9 +210,12 @@ void UComOptionDetails_C::Construct()
 
 void UComOptionDetails_C::ExecuteUbergraph_ComOptionDetails(int32 EntryPoint, bool K2Node_Event_bIsExpanded, bool K2Node_Event_bIsSelected, class UObject* K2Node_Event_ListItemObject, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
-	static auto Func = Class->GetFunction("ComOptionDetails_C", "ExecuteUbergraph_ComOptionDetails");
+	static class UFunction* Func = nullptr;
 
-	Params::UComOptionDetails_C_ExecuteUbergraph_ComOptionDetails_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComOptionDetails_C", "ExecuteUbergraph_ComOptionDetails");
+
+	Params::UComOptionDetails_C_ExecuteUbergraph_ComOptionDetails_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bIsExpanded = K2Node_Event_bIsExpanded;
@@ -180,6 +229,4 @@ void UComOptionDetails_C::ExecuteUbergraph_ComOptionDetails(int32 EntryPoint, bo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

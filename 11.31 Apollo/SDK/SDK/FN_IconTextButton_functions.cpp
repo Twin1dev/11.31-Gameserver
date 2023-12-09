@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass IconTextButton.IconTextButton_C
+// (None)
+
+class UClass* UIconTextButton_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("IconTextButton_C");
+
+	return Clss;
+}
+
+
+// IconTextButton_C IconTextButton.Default__IconTextButton_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UIconTextButton_C* UIconTextButton_C::GetDefaultObj()
+{
+	static class UIconTextButton_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UIconTextButton_C*>(UIconTextButton_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function IconTextButton.IconTextButton_C.Get Dynamic Material
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void UIconTextButton_C::Get_Dynamic_Material(class UMaterialInstanceDynamic** Ret_Material, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "Get Dynamic Material");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_Get_Dynamic_Material_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "Get Dynamic Material");
+
+	Params::UIconTextButton_C_Get_Dynamic_Material_Params Parms{};
 
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
 
@@ -44,9 +72,12 @@ void UIconTextButton_C::Get_Dynamic_Material(class UMaterialInstanceDynamic** Re
 
 void UIconTextButton_C::ShowIcon(bool bShouldShow)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "ShowIcon");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_ShowIcon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "ShowIcon");
+
+	Params::UIconTextButton_C_ShowIcon_Params Parms{};
 
 	Parms.bShouldShow = bShouldShow;
 
@@ -67,9 +98,12 @@ void UIconTextButton_C::ShowIcon(bool bShouldShow)
 
 void UIconTextButton_C::SetTextInternal(class FText InButtonText, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_TextIsEmpty_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "SetTextInternal");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_SetTextInternal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "SetTextInternal");
+
+	Params::UIconTextButton_C_SetTextInternal_Params Parms{};
 
 	Parms.InButtonText = InButtonText;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -89,12 +123,14 @@ void UIconTextButton_C::SetTextInternal(class FText InButtonText, bool Temp_bool
 
 void UIconTextButton_C::SetInitialMouseKeyboardStyle()
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "SetInitialMouseKeyboardStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_SetInitialMouseKeyboardStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "SetInitialMouseKeyboardStyle");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -106,9 +142,12 @@ void UIconTextButton_C::SetInitialMouseKeyboardStyle()
 
 void UIconTextButton_C::UpdateTextStyle(class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "UpdateTextStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_UpdateTextStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "UpdateTextStyle");
+
+	Params::UIconTextButton_C_UpdateTextStyle_Params Parms{};
 
 	Parms.CallFunc_GetCurrentTextStyleClass_ReturnValue = CallFunc_GetCurrentTextStyleClass_ReturnValue;
 
@@ -124,9 +163,12 @@ void UIconTextButton_C::UpdateTextStyle(class UClass* CallFunc_GetCurrentTextSty
 
 void UIconTextButton_C::SetContentAlignment(enum class EHorizontalAlignment ContentAlignment)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "SetContentAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_SetContentAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "SetContentAlignment");
+
+	Params::UIconTextButton_C_SetContentAlignment_Params Parms{};
 
 	Parms.ContentAlignment = ContentAlignment;
 
@@ -144,9 +186,12 @@ void UIconTextButton_C::SetContentAlignment(enum class EHorizontalAlignment Cont
 
 void UIconTextButton_C::UpdateContentAlignment(class UPanelSlot* CallFunc_GetContentSlot_ReturnValue, class UBorderSlot* K2Node_DynamicCast_AsBorder_Slot, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "UpdateContentAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_UpdateContentAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "UpdateContentAlignment");
+
+	Params::UIconTextButton_C_UpdateContentAlignment_Params Parms{};
 
 	Parms.CallFunc_GetContentSlot_ReturnValue = CallFunc_GetContentSlot_ReturnValue;
 	Parms.K2Node_DynamicCast_AsBorder_Slot = K2Node_DynamicCast_AsBorder_Slot;
@@ -167,9 +212,12 @@ void UIconTextButton_C::UpdateContentAlignment(class UPanelSlot* CallFunc_GetCon
 
 void UIconTextButton_C::SetMouseKeyboardStyle(class UClass* ControllerInputStyle, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "SetMouseKeyboardStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_SetMouseKeyboardStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "SetMouseKeyboardStyle");
+
+	Params::UIconTextButton_C_SetMouseKeyboardStyle_Params Parms{};
 
 	Parms.ControllerInputStyle = ControllerInputStyle;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -190,9 +238,12 @@ void UIconTextButton_C::SetMouseKeyboardStyle(class UClass* ControllerInputStyle
 
 void UIconTextButton_C::UpdateStyle(bool UsingGamepad, bool CallFunc_IsErebus_ReturnValue, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "UpdateStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_UpdateStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "UpdateStyle");
+
+	Params::UIconTextButton_C_UpdateStyle_Params Parms{};
 
 	Parms.UsingGamepad = UsingGamepad;
 	Parms.CallFunc_IsErebus_ReturnValue = CallFunc_IsErebus_ReturnValue;
@@ -209,17 +260,20 @@ void UIconTextButton_C::UpdateStyle(bool UsingGamepad, bool CallFunc_IsErebus_Re
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_TextIsEmpty_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetDisplayText_ReturnValue                              ()
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        CallFunc_GetDisplayText_ReturnValue                              (None)
+// class FText                        K2Node_Select_Default                                            (None)
 // bool                               CallFunc_TextIsEmpty_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default_1                                          ()
+// class FText                        K2Node_Select_Default_1                                          (None)
 
 void UIconTextButton_C::UpdateText(bool Temp_bool_Variable, bool Temp_bool_Variable_1, bool CallFunc_TextIsEmpty_ReturnValue, class FText CallFunc_GetDisplayText_ReturnValue, class FText K2Node_Select_Default, bool CallFunc_TextIsEmpty_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, class FText K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "UpdateText");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_UpdateText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "UpdateText");
+
+	Params::UIconTextButton_C_UpdateText_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_bool_Variable_1 = Temp_bool_Variable_1;
@@ -245,9 +299,12 @@ void UIconTextButton_C::UpdateText(bool Temp_bool_Variable, bool Temp_bool_Varia
 
 void UIconTextButton_C::SetControllerStyle(class UClass* ControllerInputStyle, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "SetControllerStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_SetControllerStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "SetControllerStyle");
+
+	Params::UIconTextButton_C_SetControllerStyle_Params Parms{};
 
 	Parms.ControllerInputStyle = ControllerInputStyle;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -267,9 +324,12 @@ void UIconTextButton_C::SetControllerStyle(class UClass* ControllerInputStyle, c
 
 void UIconTextButton_C::UpdateTextAndStyle(enum class ECommonInputType InputType, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "UpdateTextAndStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_UpdateTextAndStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "UpdateTextAndStyle");
+
+	Params::UIconTextButton_C_UpdateTextAndStyle_Params Parms{};
 
 	Parms.InputType = InputType;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
@@ -288,9 +348,12 @@ void UIconTextButton_C::UpdateTextAndStyle(enum class ECommonInputType InputType
 
 void UIconTextButton_C::InitializeButton(class UObject* CallFunc_GetBrushResource_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "InitializeButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_InitializeButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "InitializeButton");
+
+	Params::UIconTextButton_C_InitializeButton_Params Parms{};
 
 	Parms.CallFunc_GetBrushResource_ReturnValue = CallFunc_GetBrushResource_ReturnValue;
 	Parms.CallFunc_NotEqual_ByteByte_ReturnValue = CallFunc_NotEqual_ByteByte_ReturnValue;
@@ -308,9 +371,12 @@ void UIconTextButton_C::InitializeButton(class UObject* CallFunc_GetBrushResourc
 
 void UIconTextButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "Set Icon");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_Set_Icon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "Set Icon");
+
+	Params::UIconTextButton_C_Set_Icon_Params Parms{};
 
 	Parms.IconBrush = IconBrush;
 
@@ -326,9 +392,12 @@ void UIconTextButton_C::Set_Icon(const struct FSlateBrush& IconBrush)
 
 void UIconTextButton_C::Set_Text(class FText ButtonText)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "Set Text");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_Set_Text_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "Set Text");
+
+	Params::UIconTextButton_C_Set_Text_Params Parms{};
 
 	Parms.ButtonText = ButtonText;
 
@@ -343,12 +412,14 @@ void UIconTextButton_C::Set_Text(class FText ButtonText)
 
 void UIconTextButton_C::OnCurrentTextStyleChanged()
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "OnCurrentTextStyleChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_OnCurrentTextStyleChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "OnCurrentTextStyleChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -360,9 +431,12 @@ void UIconTextButton_C::OnCurrentTextStyleChanged()
 
 void UIconTextButton_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "PreConstruct");
+
+	Params::UIconTextButton_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -378,9 +452,12 @@ void UIconTextButton_C::PreConstruct(bool IsDesignTime)
 
 void UIconTextButton_C::SetTabLabelInfo(struct FFortTabButtonLabelInfo& TabLabelInfo)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "SetTabLabelInfo");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_SetTabLabelInfo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "SetTabLabelInfo");
+
+	Params::UIconTextButton_C_SetTabLabelInfo_Params Parms{};
 
 	Parms.TabLabelInfo = TabLabelInfo;
 
@@ -396,9 +473,12 @@ void UIconTextButton_C::SetTabLabelInfo(struct FFortTabButtonLabelInfo& TabLabel
 
 void UIconTextButton_C::OnTriggeredInputActionChanged(struct FDataTableRowHandle& NewTriggeredAction)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "OnTriggeredInputActionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_OnTriggeredInputActionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "OnTriggeredInputActionChanged");
+
+	Params::UIconTextButton_C_OnTriggeredInputActionChanged_Params Parms{};
 
 	Parms.NewTriggeredAction = NewTriggeredAction;
 
@@ -414,9 +494,12 @@ void UIconTextButton_C::OnTriggeredInputActionChanged(struct FDataTableRowHandle
 
 void UIconTextButton_C::OnActionProgress(float HeldPercent)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "OnActionProgress");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_OnActionProgress_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "OnActionProgress");
+
+	Params::UIconTextButton_C_OnActionProgress_Params Parms{};
 
 	Parms.HeldPercent = HeldPercent;
 
@@ -431,12 +514,14 @@ void UIconTextButton_C::OnActionProgress(float HeldPercent)
 
 void UIconTextButton_C::OnActionComplete()
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "OnActionComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_OnActionComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "OnActionComplete");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -447,12 +532,14 @@ void UIconTextButton_C::OnActionComplete()
 
 void UIconTextButton_C::Construct()
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -463,12 +550,14 @@ void UIconTextButton_C::Construct()
 
 void UIconTextButton_C::Destruct()
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -501,9 +590,12 @@ void UIconTextButton_C::Destruct()
 
 void UIconTextButton_C::ExecuteUbergraph_IconTextButton(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool K2Node_Event_IsDesignTime, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_1, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_2, bool CallFunc_HasAnyChildren_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue_3, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, const struct FFortTabButtonLabelInfo& K2Node_Event_TabLabelInfo, const struct FDataTableRowHandle& K2Node_Event_NewTriggeredAction, float K2Node_Event_HeldPercent, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_2, bool CallFunc_EqualEqual_SlateBrush_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility K2Node_Select_Default, bool Temp_bool_Variable_1, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("IconTextButton_C", "ExecuteUbergraph_IconTextButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UIconTextButton_C_ExecuteUbergraph_IconTextButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("IconTextButton_C", "ExecuteUbergraph_IconTextButton");
+
+	Params::UIconTextButton_C_ExecuteUbergraph_IconTextButton_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -534,6 +626,4 @@ void UIconTextButton_C::ExecuteUbergraph_IconTextButton(int32 EntryPoint, UDeleg
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

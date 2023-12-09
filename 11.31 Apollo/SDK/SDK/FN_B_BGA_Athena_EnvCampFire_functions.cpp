@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C
+// (Actor)
+
+class UClass* AB_BGA_Athena_EnvCampFire_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_BGA_Athena_EnvCampFire_C");
+
+	return Clss;
+}
+
+
+// B_BGA_Athena_EnvCampFire_C B_BGA_Athena_EnvCampFire.Default__B_BGA_Athena_EnvCampFire_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_BGA_Athena_EnvCampFire_C* AB_BGA_Athena_EnvCampFire_C::GetDefaultObj()
+{
+	static class AB_BGA_Athena_EnvCampFire_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_BGA_Athena_EnvCampFire_C*>(AB_BGA_Athena_EnvCampFire_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C.OnRep_Stoked
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void AB_BGA_Athena_EnvCampFire_C::OnRep_Stoked()
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnRep_Stoked");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_OnRep_Stoked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnRep_Stoked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -46,21 +73,24 @@ void AB_BGA_Athena_EnvCampFire_C::OnRep_Stoked()
 // class FString                      CallFunc_Concat_StrStr_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue_1                             (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // float                              CallFunc_GetValueAtLevel_ReturnValue_1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue_1                         (ZeroConstructor, HasGetValueTypeHash)
 // int32                              CallFunc_FCeil_ReturnValue_1                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Conv_IntToString_ReturnValue_1                          (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue_2                             (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue_3                             (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         ()
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
+// class FText                        K2Node_Select_Default                                            (None)
 
 class FText AB_BGA_Athena_EnvCampFire_C::BlueprintGetFailedInteractionString(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted, bool Temp_bool_Variable, float CallFunc_GetValueAtLevel_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, int32 CallFunc_FCeil_ReturnValue, const class FString& CallFunc_Conv_IntToString_ReturnValue, bool CallFunc_NotEqual_IntInt_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, int32 CallFunc_FCeil_ReturnValue_1, const class FString& CallFunc_Conv_IntToString_ReturnValue_1, const class FString& CallFunc_Concat_StrStr_ReturnValue_2, const class FString& CallFunc_Concat_StrStr_ReturnValue_3, class FText CallFunc_Conv_StringToText_ReturnValue_1, class FText K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BlueprintGetFailedInteractionString");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BlueprintGetFailedInteractionString");
+
+	Params::AB_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -99,9 +129,12 @@ class FText AB_BGA_Athena_EnvCampFire_C::BlueprintGetFailedInteractionString(cla
 
 int32 AB_BGA_Athena_EnvCampFire_C::GetCostReActivate(float CallFunc_GetValueAtLevel_ReturnValue, int32 CallFunc_FCeil_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "GetCostReActivate");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_GetCostReActivate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "GetCostReActivate");
+
+	Params::AB_BGA_Athena_EnvCampFire_C_GetCostReActivate_Params Parms{};
 
 	Parms.CallFunc_GetValueAtLevel_ReturnValue = CallFunc_GetValueAtLevel_ReturnValue;
 	Parms.CallFunc_FCeil_ReturnValue = CallFunc_FCeil_ReturnValue;
@@ -120,9 +153,12 @@ int32 AB_BGA_Athena_EnvCampFire_C::GetCostReActivate(float CallFunc_GetValueAtLe
 
 void AB_BGA_Athena_EnvCampFire_C::OnRep_LitRepBool(bool CallFunc_Conv_IntToBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnRep_LitRepBool");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_OnRep_LitRepBool_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnRep_LitRepBool");
+
+	Params::AB_BGA_Athena_EnvCampFire_C_OnRep_LitRepBool_Params Parms{};
 
 	Parms.CallFunc_Conv_IntToBool_ReturnValue = CallFunc_Conv_IntToBool_ReturnValue;
 
@@ -137,12 +173,14 @@ void AB_BGA_Athena_EnvCampFire_C::OnRep_LitRepBool(bool CallFunc_Conv_IntToBool_
 
 void AB_BGA_Athena_EnvCampFire_C::OnRep_Destroyed()
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnRep_Destroyed");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_OnRep_Destroyed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnRep_Destroyed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -152,17 +190,20 @@ void AB_BGA_Athena_EnvCampFire_C::OnRep_Destroyed()
 // Parameters:
 // class AFortPawn*                   PawnWhoLitFire                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               UserIsSpecial                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayTagContainer       Temp_struct_Variable                                             ()
+// struct FGameplayTagContainer       Temp_struct_Variable                                             (None)
 // TScriptInterface<class IGameplayTagAssetInterface>K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayTagContainer       CallFunc_GetOwnedGameplayTags_TagContainer                       ()
+// struct FGameplayTagContainer       CallFunc_GetOwnedGameplayTags_TagContainer                       (None)
 // bool                               CallFunc_HasAllTags_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void AB_BGA_Athena_EnvCampFire_C::CheckIfUserIsSpecialS7(class AFortPawn* PawnWhoLitFire, bool* UserIsSpecial, const struct FGameplayTagContainer& Temp_struct_Variable, TScriptInterface<class IGameplayTagAssetInterface> K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface, bool K2Node_DynamicCast_bSuccess, const struct FGameplayTagContainer& CallFunc_GetOwnedGameplayTags_TagContainer, bool CallFunc_HasAllTags_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "CheckIfUserIsSpecialS7");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "CheckIfUserIsSpecialS7");
+
+	Params::AB_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7_Params Parms{};
 
 	Parms.PawnWhoLitFire = PawnWhoLitFire;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
@@ -190,9 +231,12 @@ void AB_BGA_Athena_EnvCampFire_C::CheckIfUserIsSpecialS7(class AFortPawn* PawnWh
 
 bool AB_BGA_Athena_EnvCampFire_C::RowToBool(struct FScalableFloat& Input, float CallFunc_GetValueAtLevel_ReturnValue, int32 CallFunc_FTrunc_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "RowToBool");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_RowToBool_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "RowToBool");
+
+	Params::AB_BGA_Athena_EnvCampFire_C_RowToBool_Params Parms{};
 
 	Parms.Input = Input;
 	Parms.CallFunc_GetValueAtLevel_ReturnValue = CallFunc_GetValueAtLevel_ReturnValue;
@@ -214,9 +258,12 @@ bool AB_BGA_Athena_EnvCampFire_C::RowToBool(struct FScalableFloat& Input, float 
 
 void AB_BGA_Athena_EnvCampFire_C::SetSheetValues(bool CallFunc_RowToBool_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "SetSheetValues");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_SetSheetValues_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "SetSheetValues");
+
+	Params::AB_BGA_Athena_EnvCampFire_C_SetSheetValues_Params Parms{};
 
 	Parms.CallFunc_RowToBool_ReturnValue = CallFunc_RowToBool_ReturnValue;
 	Parms.CallFunc_GetValueAtLevel_ReturnValue = CallFunc_GetValueAtLevel_ReturnValue;
@@ -237,13 +284,13 @@ void AB_BGA_Athena_EnvCampFire_C::SetSheetValues(bool CallFunc_RowToBool_ReturnV
 // int32                              CallFunc_FCeil_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                      CallFunc_Conv_IntToString_ReturnValue                            (ZeroConstructor, HasGetValueTypeHash)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue                               (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue_1                             (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue_1                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue_1                         (ZeroConstructor, HasGetValueTypeHash)
@@ -256,14 +303,17 @@ void AB_BGA_Athena_EnvCampFire_C::SetSheetValues(bool CallFunc_RowToBool_ReturnV
 // class FString                      CallFunc_Concat_StrStr_ReturnValue_2                             (ZeroConstructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Concat_StrStr_ReturnValue_3                             (ZeroConstructor, HasGetValueTypeHash)
 // int32                              CallFunc_K2_GetItemQuantityOnPlayer_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 class FText AB_BGA_Athena_EnvCampFire_C::BlueprintGetInteractionString(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue, int32 CallFunc_FCeil_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const class FString& CallFunc_Conv_IntToString_ReturnValue, class FText CallFunc_MakeLiteralText_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue, const class FString& CallFunc_Concat_StrStr_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue_1, class FText CallFunc_Conv_StringToText_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, const class FString& CallFunc_Conv_TextToString_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_2, float CallFunc_GetValueAtLevel_ReturnValue_1, int32 CallFunc_FCeil_ReturnValue_1, float CallFunc_GetValueAtLevel_ReturnValue_2, const class FString& CallFunc_Conv_IntToString_ReturnValue_1, int32 CallFunc_FCeil_ReturnValue_2, const class FString& CallFunc_Concat_StrStr_ReturnValue_2, const class FString& CallFunc_Concat_StrStr_ReturnValue_3, int32 CallFunc_K2_GetItemQuantityOnPlayer_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue_1, bool CallFunc_GreaterEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BlueprintGetInteractionString");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BlueprintGetInteractionString");
+
+	Params::AB_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -324,9 +374,12 @@ class FText AB_BGA_Athena_EnvCampFire_C::BlueprintGetInteractionString(class AFo
 
 bool AB_BGA_Athena_EnvCampFire_C::BlueprintCanInteract(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue, int32 CallFunc_FCeil_ReturnValue, bool CallFunc_RowToBool_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue_1, int32 CallFunc_K2_GetItemQuantityOnPlayer_ReturnValue, int32 CallFunc_FCeil_ReturnValue_1, int32 CallFunc_SelectInt_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BlueprintCanInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_BlueprintCanInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BlueprintCanInteract");
+
+	Params::AB_BGA_Athena_EnvCampFire_C_BlueprintCanInteract_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -361,9 +414,12 @@ bool AB_BGA_Athena_EnvCampFire_C::BlueprintCanInteract(class AFortPawn* Interact
 
 void AB_BGA_Athena_EnvCampFire_C::OnReady_9F4554BE40FCB41157835B9AD897EE69(class AFortGameStateAthena* GameState, class UFortPlaylist* Playlist, struct FGameplayTagContainer& PlaylistContextTags)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnReady_9F4554BE40FCB41157835B9AD897EE69");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_OnReady_9F4554BE40FCB41157835B9AD897EE69_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "OnReady_9F4554BE40FCB41157835B9AD897EE69");
+
+	Params::AB_BGA_Athena_EnvCampFire_C_OnReady_9F4554BE40FCB41157835B9AD897EE69_Params Parms{};
 
 	Parms.GameState = GameState;
 	Parms.Playlist = Playlist;
@@ -380,12 +436,14 @@ void AB_BGA_Athena_EnvCampFire_C::OnReady_9F4554BE40FCB41157835B9AD897EE69(class
 
 void AB_BGA_Athena_EnvCampFire_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -396,12 +454,14 @@ void AB_BGA_Athena_EnvCampFire_C::ReceiveBeginPlay()
 
 void AB_BGA_Athena_EnvCampFire_C::Start()
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "Start");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_Start_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "Start");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -420,9 +480,12 @@ void AB_BGA_Athena_EnvCampFire_C::Start()
 
 void AB_BGA_Athena_EnvCampFire_C::BuildingActorDestroyedCleanUp(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BuildingActorDestroyedCleanUp");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BuildingActorDestroyedCleanUp");
+
+	Params::AB_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp_Params Parms{};
 
 	Parms.DamagedActor = DamagedActor;
 	Parms.Damage = Damage;
@@ -444,12 +507,14 @@ void AB_BGA_Athena_EnvCampFire_C::BuildingActorDestroyedCleanUp(class AActor* Da
 
 void AB_BGA_Athena_EnvCampFire_C::BindToFloor()
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BindToFloor");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_BindToFloor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BindToFloor");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -460,12 +525,14 @@ void AB_BGA_Athena_EnvCampFire_C::BindToFloor()
 
 void AB_BGA_Athena_EnvCampFire_C::HandleBoundDestroyed()
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "HandleBoundDestroyed");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_HandleBoundDestroyed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "HandleBoundDestroyed");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -476,12 +543,14 @@ void AB_BGA_Athena_EnvCampFire_C::HandleBoundDestroyed()
 
 void AB_BGA_Athena_EnvCampFire_C::CheckDestroyDisabled()
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "CheckDestroyDisabled");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_CheckDestroyDisabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "CheckDestroyDisabled");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -492,12 +561,14 @@ void AB_BGA_Athena_EnvCampFire_C::CheckDestroyDisabled()
 
 void AB_BGA_Athena_EnvCampFire_C::GoOut()
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "GoOut");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_GoOut_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "GoOut");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -508,12 +579,14 @@ void AB_BGA_Athena_EnvCampFire_C::GoOut()
 
 void AB_BGA_Athena_EnvCampFire_C::Light()
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "Light");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_Light_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "Light");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -526,9 +599,12 @@ void AB_BGA_Athena_EnvCampFire_C::Light()
 
 void AB_BGA_Athena_EnvCampFire_C::BlueprintOnInteract(class AFortPawn* InteractingPawn, enum class EInteractionBeingAttempted InteractionBeingAttempted)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BlueprintOnInteract");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_BlueprintOnInteract_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "BlueprintOnInteract");
+
+	Params::AB_BGA_Athena_EnvCampFire_C_BlueprintOnInteract_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.InteractionBeingAttempted = InteractionBeingAttempted;
@@ -544,12 +620,14 @@ void AB_BGA_Athena_EnvCampFire_C::BlueprintOnInteract(class AFortPawn* Interacti
 
 void AB_BGA_Athena_EnvCampFire_C::SpecialS7LightsFireAfterOut()
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "SpecialS7LightsFireAfterOut");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_SpecialS7LightsFireAfterOut_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "SpecialS7LightsFireAfterOut");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -560,12 +638,14 @@ void AB_BGA_Athena_EnvCampFire_C::SpecialS7LightsFireAfterOut()
 
 void AB_BGA_Athena_EnvCampFire_C::KillDouseSmokeWisp()
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "KillDouseSmokeWisp");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_KillDouseSmokeWisp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "KillDouseSmokeWisp");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -582,9 +662,12 @@ void AB_BGA_Athena_EnvCampFire_C::KillDouseSmokeWisp()
 
 void AB_BGA_Athena_EnvCampFire_C::Server_QuestObjectiveUpdated(class AFortPlayerController* Controller, class UFortQuestItemDefinition* QuestDef, class FName BackendName, int32 CompletionCount, bool ObjectiveCompleted, bool QuestCompleted)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "Server_QuestObjectiveUpdated");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "Server_QuestObjectiveUpdated");
+
+	Params::AB_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated_Params Parms{};
 
 	Parms.Controller = Controller;
 	Parms.QuestDef = QuestDef;
@@ -605,9 +688,12 @@ void AB_BGA_Athena_EnvCampFire_C::Server_QuestObjectiveUpdated(class AFortPlayer
 
 void AB_BGA_Athena_EnvCampFire_C::HandleCharacterVariantTransition(class AFortPawn* TransitioningPawn)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "HandleCharacterVariantTransition");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_HandleCharacterVariantTransition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "HandleCharacterVariantTransition");
+
+	Params::AB_BGA_Athena_EnvCampFire_C_HandleCharacterVariantTransition_Params Parms{};
 
 	Parms.TransitioningPawn = TransitioningPawn;
 
@@ -623,9 +709,12 @@ void AB_BGA_Athena_EnvCampFire_C::HandleCharacterVariantTransition(class AFortPa
 
 void AB_BGA_Athena_EnvCampFire_C::PayLightCost(class AFortPawn* InteractingPawn)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "PayLightCost");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_PayLightCost_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "PayLightCost");
+
+	Params::AB_BGA_Athena_EnvCampFire_C_PayLightCost_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 
@@ -641,9 +730,12 @@ void AB_BGA_Athena_EnvCampFire_C::PayLightCost(class AFortPawn* InteractingPawn)
 
 void AB_BGA_Athena_EnvCampFire_C::PayStokeCost(class AFortPawn* InteractingPawn)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "PayStokeCost");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_PayStokeCost_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "PayStokeCost");
+
+	Params::AB_BGA_Athena_EnvCampFire_C_PayStokeCost_Params Parms{};
 
 	Parms.InteractingPawn = InteractingPawn;
 
@@ -656,7 +748,7 @@ void AB_BGA_Athena_EnvCampFire_C::PayStokeCost(class AFortPawn* InteractingPawn)
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTagContainer       Temp_struct_Variable                                             ()
+// struct FGameplayTagContainer       Temp_struct_Variable                                             (None)
 // class UFortPlaylist*               Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortGameStateAthena*        Temp_object_Variable_1                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortAsyncAction_CurrentPlaylistReady*CallFunc_PlaylistDataReadyAsync_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -713,8 +805,8 @@ void AB_BGA_Athena_EnvCampFire_C::PayStokeCost(class AFortPawn* InteractingPawn)
 // int32                              CallFunc_GetCostReActivate_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_K2_RemoveItemFromPlayer_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue_1                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
-// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData_1                            ()
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              (None)
+// struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData_1                            (None)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_4                           (ZeroConstructor, NoDestructor)
 // struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetValueAtLevel_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -746,9 +838,12 @@ void AB_BGA_Athena_EnvCampFire_C::PayStokeCost(class AFortPawn* InteractingPawn)
 
 void AB_BGA_Athena_EnvCampFire_C::ExecuteUbergraph_B_BGA_Athena_EnvCampFire(int32 EntryPoint, const struct FGameplayTagContainer& Temp_struct_Variable, class UFortPlaylist* Temp_object_Variable, class AFortGameStateAthena* Temp_object_Variable_1, class UFortAsyncAction_CurrentPlaylistReady* CallFunc_PlaylistDataReadyAsync_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class AActor* K2Node_CustomEvent_DamagedActor, float K2Node_CustomEvent_Damage, class AController* K2Node_CustomEvent_InstigatedBy, class AActor* K2Node_CustomEvent_DamageCauser, const struct FVector& K2Node_CustomEvent_HitLocation, class UPrimitiveComponent* K2Node_CustomEvent_FHitComponent, class FName K2Node_CustomEvent_BoneName, const struct FVector& K2Node_CustomEvent_Momentum, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class AFortPawn* K2Node_Event_InteractingPawn, enum class EInteractionBeingAttempted K2Node_Event_InteractionBeingAttempted, bool CallFunc_CheckIfUserIsSpecialS7_UserIsSpecial, class AFortPlayerController* K2Node_CustomEvent_Controller, class UFortQuestItemDefinition* K2Node_CustomEvent_QuestDef, class FName K2Node_CustomEvent_BackendName, int32 K2Node_CustomEvent_CompletionCount, bool K2Node_CustomEvent_ObjectiveCompleted, bool K2Node_CustomEvent_QuestCompleted, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue, const class FString& CallFunc_GetPersistentName_ReturnValue, bool CallFunc_EqualEqual_StrStr_ReturnValue, class AFortPlayerPawn* CallFunc_GetPlayerPawn_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, class AFortGameStateAthena* K2Node_CustomEvent_GameState, class UFortPlaylist* K2Node_CustomEvent_Playlist, const struct FGameplayTagContainer& K2Node_CustomEvent_PlaylistContextTags, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AFortPawn* K2Node_CustomEvent_TransitioningPawn, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, bool CallFunc_IsValid_ReturnValue_1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, bool CallFunc_IsValid_ReturnValue_4, bool CallFunc_CheckIfUserIsSpecialS7_UserIsSpecial_1, class AController* CallFunc_GetController_ReturnValue, class AAthena_PlayerController_C* K2Node_DynamicCast_AsAthena_Player_Controller, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, bool CallFunc_EqualEqual_IntInt_ReturnValue, class AFortPawn* K2Node_CustomEvent_InteractingPawn_1, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue, int32 CallFunc_GetCostReActivate_ReturnValue, int32 CallFunc_K2_RemoveItemFromPlayer_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue_1, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue, int32 CallFunc_FCeil_ReturnValue, class AFortPawn* K2Node_CustomEvent_InteractingPawn, class AFortPlayerController* CallFunc_GetFortPlayerControllerFromActor_ReturnValue_1, TArray<class AActor*>& Temp_object_Variable_2, int32 CallFunc_K2_RemoveItemFromPlayer_ReturnValue_1, const struct FHitResult& CallFunc_LineTraceSingle_OutHit, bool CallFunc_LineTraceSingle_ReturnValue, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, class ABuildingActor* K2Node_DynamicCast_AsBuilding_Actor, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "ExecuteUbergraph_B_BGA_Athena_EnvCampFire");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_BGA_Athena_EnvCampFire_C", "ExecuteUbergraph_B_BGA_Athena_EnvCampFire");
+
+	Params::AB_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
@@ -845,6 +940,4 @@ void AB_BGA_Athena_EnvCampFire_C::ExecuteUbergraph_B_BGA_Athena_EnvCampFire(int3
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

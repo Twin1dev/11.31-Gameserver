@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass HBOnboardingFlow.HBOnboardingFlow_C
+// (Actor)
+
+class UClass* AHBOnboardingFlow_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("HBOnboardingFlow_C");
+
+	return Clss;
+}
+
+
+// HBOnboardingFlow_C HBOnboardingFlow.Default__HBOnboardingFlow_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AHBOnboardingFlow_C* AHBOnboardingFlow_C::GetDefaultObj()
+{
+	static class AHBOnboardingFlow_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AHBOnboardingFlow_C*>(AHBOnboardingFlow_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function HBOnboardingFlow.HBOnboardingFlow_C.GetCampaignQuestManager
@@ -24,9 +49,12 @@ namespace SDK
 
 void AHBOnboardingFlow_C::GetCampaignQuestManager(class UFortQuestManager** QuestManager, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HBOnboardingFlow_C", "GetCampaignQuestManager");
+	static class UFunction* Func = nullptr;
 
-	Params::AHBOnboardingFlow_C_GetCampaignQuestManager_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HBOnboardingFlow_C", "GetCampaignQuestManager");
+
+	Params::AHBOnboardingFlow_C_GetCampaignQuestManager_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetQuestManager_ReturnValue = CallFunc_GetQuestManager_ReturnValue;
@@ -51,9 +79,12 @@ void AHBOnboardingFlow_C::GetCampaignQuestManager(class UFortQuestManager** Ques
 
 void AHBOnboardingFlow_C::RecheckNeedToPlayEventMovie(bool* WaitingToCheckAgain, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HBOnboardingFlow_C", "RecheckNeedToPlayEventMovie");
+	static class UFunction* Func = nullptr;
 
-	Params::AHBOnboardingFlow_C_RecheckNeedToPlayEventMovie_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HBOnboardingFlow_C", "RecheckNeedToPlayEventMovie");
+
+	Params::AHBOnboardingFlow_C_RecheckNeedToPlayEventMovie_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_K2_SetTimerDelegate_ReturnValue = CallFunc_K2_SetTimerDelegate_ReturnValue;
@@ -84,9 +115,12 @@ void AHBOnboardingFlow_C::RecheckNeedToPlayEventMovie(bool* WaitingToCheckAgain,
 
 bool AHBOnboardingFlow_C::NeedsToPlayEventMovie(class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsMobileApp_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, bool CallFunc_IsQuestInProgress_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("HBOnboardingFlow_C", "NeedsToPlayEventMovie");
+	static class UFunction* Func = nullptr;
 
-	Params::AHBOnboardingFlow_C_NeedsToPlayEventMovie_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HBOnboardingFlow_C", "NeedsToPlayEventMovie");
+
+	Params::AHBOnboardingFlow_C_NeedsToPlayEventMovie_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_IsMobileApp_ReturnValue = CallFunc_IsMobileApp_ReturnValue;
@@ -110,12 +144,14 @@ bool AHBOnboardingFlow_C::NeedsToPlayEventMovie(class UFortGlobalUIContext* Call
 
 void AHBOnboardingFlow_C::OnCanceled_856A325D44ECC73B857CE5B301E90D33()
 {
-	static auto Func = Class->GetFunction("HBOnboardingFlow_C", "OnCanceled_856A325D44ECC73B857CE5B301E90D33");
+	static class UFunction* Func = nullptr;
 
-	Params::AHBOnboardingFlow_C_OnCanceled_856A325D44ECC73B857CE5B301E90D33_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HBOnboardingFlow_C", "OnCanceled_856A325D44ECC73B857CE5B301E90D33");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -126,12 +162,14 @@ void AHBOnboardingFlow_C::OnCanceled_856A325D44ECC73B857CE5B301E90D33()
 
 void AHBOnboardingFlow_C::OnAllClientsReady_856A325D44ECC73B857CE5B301E90D33()
 {
-	static auto Func = Class->GetFunction("HBOnboardingFlow_C", "OnAllClientsReady_856A325D44ECC73B857CE5B301E90D33");
+	static class UFunction* Func = nullptr;
 
-	Params::AHBOnboardingFlow_C_OnAllClientsReady_856A325D44ECC73B857CE5B301E90D33_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HBOnboardingFlow_C", "OnAllClientsReady_856A325D44ECC73B857CE5B301E90D33");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -142,12 +180,14 @@ void AHBOnboardingFlow_C::OnAllClientsReady_856A325D44ECC73B857CE5B301E90D33()
 
 void AHBOnboardingFlow_C::OnFailure_50CD26324B96B121A5B49DA66113AE5D()
 {
-	static auto Func = Class->GetFunction("HBOnboardingFlow_C", "OnFailure_50CD26324B96B121A5B49DA66113AE5D");
+	static class UFunction* Func = nullptr;
 
-	Params::AHBOnboardingFlow_C_OnFailure_50CD26324B96B121A5B49DA66113AE5D_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HBOnboardingFlow_C", "OnFailure_50CD26324B96B121A5B49DA66113AE5D");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -158,12 +198,14 @@ void AHBOnboardingFlow_C::OnFailure_50CD26324B96B121A5B49DA66113AE5D()
 
 void AHBOnboardingFlow_C::OnIgnored_50CD26324B96B121A5B49DA66113AE5D()
 {
-	static auto Func = Class->GetFunction("HBOnboardingFlow_C", "OnIgnored_50CD26324B96B121A5B49DA66113AE5D");
+	static class UFunction* Func = nullptr;
 
-	Params::AHBOnboardingFlow_C_OnIgnored_50CD26324B96B121A5B49DA66113AE5D_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HBOnboardingFlow_C", "OnIgnored_50CD26324B96B121A5B49DA66113AE5D");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -174,12 +216,14 @@ void AHBOnboardingFlow_C::OnIgnored_50CD26324B96B121A5B49DA66113AE5D()
 
 void AHBOnboardingFlow_C::OnSuccess_50CD26324B96B121A5B49DA66113AE5D()
 {
-	static auto Func = Class->GetFunction("HBOnboardingFlow_C", "OnSuccess_50CD26324B96B121A5B49DA66113AE5D");
+	static class UFunction* Func = nullptr;
 
-	Params::AHBOnboardingFlow_C_OnSuccess_50CD26324B96B121A5B49DA66113AE5D_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HBOnboardingFlow_C", "OnSuccess_50CD26324B96B121A5B49DA66113AE5D");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -190,12 +234,14 @@ void AHBOnboardingFlow_C::OnSuccess_50CD26324B96B121A5B49DA66113AE5D()
 
 void AHBOnboardingFlow_C::HandlePlayEventCine()
 {
-	static auto Func = Class->GetFunction("HBOnboardingFlow_C", "HandlePlayEventCine");
+	static class UFunction* Func = nullptr;
 
-	Params::AHBOnboardingFlow_C_HandlePlayEventCine_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HBOnboardingFlow_C", "HandlePlayEventCine");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -209,9 +255,12 @@ void AHBOnboardingFlow_C::HandlePlayEventCine()
 
 void AHBOnboardingFlow_C::HandleClientEvent_PlayEventMovie(class UObject* EventSource, class UObject* EventFocus, struct FFortClientEvent& ClientEvent)
 {
-	static auto Func = Class->GetFunction("HBOnboardingFlow_C", "HandleClientEvent_PlayEventMovie");
+	static class UFunction* Func = nullptr;
 
-	Params::AHBOnboardingFlow_C_HandleClientEvent_PlayEventMovie_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HBOnboardingFlow_C", "HandleClientEvent_PlayEventMovie");
+
+	Params::AHBOnboardingFlow_C_HandleClientEvent_PlayEventMovie_Params Parms{};
 
 	Parms.EventSource = EventSource;
 	Parms.EventFocus = EventFocus;
@@ -228,12 +277,14 @@ void AHBOnboardingFlow_C::HandleClientEvent_PlayEventMovie(class UObject* EventS
 
 void AHBOnboardingFlow_C::StartFlow()
 {
-	static auto Func = Class->GetFunction("HBOnboardingFlow_C", "StartFlow");
+	static class UFunction* Func = nullptr;
 
-	Params::AHBOnboardingFlow_C_StartFlow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HBOnboardingFlow_C", "StartFlow");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -275,9 +326,12 @@ void AHBOnboardingFlow_C::StartFlow()
 
 void AHBOnboardingFlow_C::ExecuteUbergraph_HBOnboardingFlow(int32 EntryPoint, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, enum class EFortUIFeatureState CallFunc_GetFeatureState_OutFeatureState, enum class EFortUIFeatureStateReason CallFunc_GetFeatureState_OutReason, bool CallFunc_EqualEqual_ByteByte_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTransform& CallFunc_MakeTransform_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsValid_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, TArray<class AFortPlayerController*>& K2Node_MakeArray_Array, bool CallFunc_NeedsToPlayEventMovie_ReturnValue, bool CallFunc_RecheckNeedToPlayEventMovie_WaitingToCheckAgain, bool CallFunc_RecheckNeedToPlayEventMovie_WaitingToCheckAgain_1, class UObject* K2Node_HandleClientEvent_EventSource, class UObject* K2Node_HandleClientEvent_EventFocus, const struct FFortClientEvent& K2Node_HandleClientEvent_ClientEvent, class UFortQuestManager* CallFunc_GetCampaignQuestManager_QuestManager, class UFortAsyncAction_SendQuestStatEvent* CallFunc_SendClientStatEvent_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class AFortClientAnnouncement* CallFunc_FinishSpawningActor_ReturnValue, class UFortAsyncAction_WaitForClientAnnouncement* CallFunc_WaitForClientAnnouncement_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, bool CallFunc_ClassIsChildOf_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_4)
 {
-	static auto Func = Class->GetFunction("HBOnboardingFlow_C", "ExecuteUbergraph_HBOnboardingFlow");
+	static class UFunction* Func = nullptr;
 
-	Params::AHBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HBOnboardingFlow_C", "ExecuteUbergraph_HBOnboardingFlow");
+
+	Params::AHBOnboardingFlow_C_ExecuteUbergraph_HBOnboardingFlow_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -317,6 +371,4 @@ void AHBOnboardingFlow_C::ExecuteUbergraph_HBOnboardingFlow(int32 EntryPoint, cl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

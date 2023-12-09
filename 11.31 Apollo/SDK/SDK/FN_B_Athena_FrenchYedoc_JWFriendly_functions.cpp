@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass B_Athena_FrenchYedoc_JWFriendly.B_Athena_FrenchYedoc_JWFriendly_C
+// (Actor)
+
+class UClass* AB_Athena_FrenchYedoc_JWFriendly_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Athena_FrenchYedoc_JWFriendly_C");
+
+	return Clss;
+}
+
+
+// B_Athena_FrenchYedoc_JWFriendly_C B_Athena_FrenchYedoc_JWFriendly.Default__B_Athena_FrenchYedoc_JWFriendly_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Athena_FrenchYedoc_JWFriendly_C* AB_Athena_FrenchYedoc_JWFriendly_C::GetDefaultObj()
+{
+	static class AB_Athena_FrenchYedoc_JWFriendly_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Athena_FrenchYedoc_JWFriendly_C*>(AB_Athena_FrenchYedoc_JWFriendly_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function B_Athena_FrenchYedoc_JWFriendly.B_Athena_FrenchYedoc_JWFriendly_C.SetBotWeaponsHiddenInGame
@@ -31,9 +56,12 @@ namespace SDK
 
 void AB_Athena_FrenchYedoc_JWFriendly_C::SetBotWeaponsHiddenInGame(class AFortPawn* BotPawn, bool NewHidden, bool bPropagateToChildren, int32 Temp_int_Array_Index_Variable, TArray<class USkeletalMeshComponentBudgeted*>& CallFunc_GetWeaponMeshes_WeaponMeshes, int32 Temp_int_Loop_Counter_Variable, class USkeletalMeshComponentBudgeted* CallFunc_Array_Get_Item, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Athena_FrenchYedoc_JWFriendly_C", "SetBotWeaponsHiddenInGame");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_FrenchYedoc_JWFriendly_C_SetBotWeaponsHiddenInGame_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_FrenchYedoc_JWFriendly_C", "SetBotWeaponsHiddenInGame");
+
+	Params::AB_Athena_FrenchYedoc_JWFriendly_C_SetBotWeaponsHiddenInGame_Params Parms{};
 
 	Parms.BotPawn = BotPawn;
 	Parms.NewHidden = NewHidden;
@@ -58,9 +86,12 @@ void AB_Athena_FrenchYedoc_JWFriendly_C::SetBotWeaponsHiddenInGame(class AFortPa
 
 void AB_Athena_FrenchYedoc_JWFriendly_C::OnRep_BotPawn(bool CallFunc_IsDedicatedServer_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Athena_FrenchYedoc_JWFriendly_C", "OnRep_BotPawn");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_FrenchYedoc_JWFriendly_C_OnRep_BotPawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_FrenchYedoc_JWFriendly_C", "OnRep_BotPawn");
+
+	Params::AB_Athena_FrenchYedoc_JWFriendly_C_OnRep_BotPawn_Params Parms{};
 
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 
@@ -75,12 +106,14 @@ void AB_Athena_FrenchYedoc_JWFriendly_C::OnRep_BotPawn(bool CallFunc_IsDedicated
 
 void AB_Athena_FrenchYedoc_JWFriendly_C::StartBotSpawnInVisuals()
 {
-	static auto Func = Class->GetFunction("B_Athena_FrenchYedoc_JWFriendly_C", "StartBotSpawnInVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_FrenchYedoc_JWFriendly_C_StartBotSpawnInVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_FrenchYedoc_JWFriendly_C", "StartBotSpawnInVisuals");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -91,12 +124,14 @@ void AB_Athena_FrenchYedoc_JWFriendly_C::StartBotSpawnInVisuals()
 
 void AB_Athena_FrenchYedoc_JWFriendly_C::RevealWeapon()
 {
-	static auto Func = Class->GetFunction("B_Athena_FrenchYedoc_JWFriendly_C", "RevealWeapon");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_FrenchYedoc_JWFriendly_C_RevealWeapon_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_FrenchYedoc_JWFriendly_C", "RevealWeapon");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -107,12 +142,14 @@ void AB_Athena_FrenchYedoc_JWFriendly_C::RevealWeapon()
 
 void AB_Athena_FrenchYedoc_JWFriendly_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Athena_FrenchYedoc_JWFriendly_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_FrenchYedoc_JWFriendly_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_FrenchYedoc_JWFriendly_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -123,12 +160,14 @@ void AB_Athena_FrenchYedoc_JWFriendly_C::ReceiveBeginPlay()
 
 void AB_Athena_FrenchYedoc_JWFriendly_C::UnhideBotPawn()
 {
-	static auto Func = Class->GetFunction("B_Athena_FrenchYedoc_JWFriendly_C", "UnhideBotPawn");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_FrenchYedoc_JWFriendly_C_UnhideBotPawn_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_FrenchYedoc_JWFriendly_C", "UnhideBotPawn");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -173,9 +212,12 @@ void AB_Athena_FrenchYedoc_JWFriendly_C::UnhideBotPawn()
 
 void AB_Athena_FrenchYedoc_JWFriendly_C::ExecuteUbergraph_B_Athena_FrenchYedoc_JWFriendly(int32 EntryPoint, bool CallFunc_IsValid_ReturnValue, const struct FRotator& CallFunc_K2_GetActorRotation_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, class AActor* CallFunc_GetOwner_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess_1, uint8 CallFunc_GetActorTeam_ReturnValue, float Temp_float_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, float Temp_float_Variable_1, bool Temp_bool_Variable, uint8 Temp_byte_Variable, bool Temp_bool_Variable_1, uint8 K2Node_Select_Default, float K2Node_Select_Default_1, class AGameModeBase* CallFunc_GetGameMode_ReturnValue, class AAthena_GameMode_C* K2Node_DynamicCast_AsAthena_Game_Mode, bool K2Node_DynamicCast_bSuccess_2, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, class UFortServerBotManagerAthena* CallFunc_GetServerBotManager_ReturnValue, class AFortPlayerPawnAthena* CallFunc_SpawnBot_ReturnValue, const struct FGameplayCueParameters& CallFunc_MakeGameplayCueParameters_ReturnValue, class AController* CallFunc_GetController_ReturnValue, class AFortAthenaAIBotController* K2Node_DynamicCast_AsFort_Athena_AIBot_Controller, bool K2Node_DynamicCast_bSuccess_3, bool CallFunc_IsValid_ReturnValue_1, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena_1, bool K2Node_DynamicCast_bSuccess_4, const struct FTransform& CallFunc_GetTransform_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class ABP_VictoryDrone_C* CallFunc_FinishSpawningActor_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Athena_FrenchYedoc_JWFriendly_C", "ExecuteUbergraph_B_Athena_FrenchYedoc_JWFriendly");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Athena_FrenchYedoc_JWFriendly_C_ExecuteUbergraph_B_Athena_FrenchYedoc_JWFriendly_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Athena_FrenchYedoc_JWFriendly_C", "ExecuteUbergraph_B_Athena_FrenchYedoc_JWFriendly");
+
+	Params::AB_Athena_FrenchYedoc_JWFriendly_C_ExecuteUbergraph_B_Athena_FrenchYedoc_JWFriendly_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -218,6 +260,4 @@ void AB_Athena_FrenchYedoc_JWFriendly_C::ExecuteUbergraph_B_Athena_FrenchYedoc_J
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

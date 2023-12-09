@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass LetoPlayerAvatar.LetoPlayerAvatar_C
+// (None)
+
+class UClass* ULetoPlayerAvatar_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LetoPlayerAvatar_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// LetoPlayerAvatar_C LetoPlayerAvatar.Default__LetoPlayerAvatar_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULetoPlayerAvatar_C* ULetoPlayerAvatar_C::GetDefaultObj()
+{
+	static class ULetoPlayerAvatar_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULetoPlayerAvatar_C*>(ULetoPlayerAvatar_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

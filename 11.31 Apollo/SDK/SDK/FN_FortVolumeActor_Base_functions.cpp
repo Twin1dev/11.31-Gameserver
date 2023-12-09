@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass FortVolumeActor_Base.FortVolumeActor_Base_C
+// (Actor)
+
+class UClass* AFortVolumeActor_Base_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("FortVolumeActor_Base_C");
+
+	return Clss;
+}
+
+
+// FortVolumeActor_Base_C FortVolumeActor_Base.Default__FortVolumeActor_Base_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AFortVolumeActor_Base_C* AFortVolumeActor_Base_C::GetDefaultObj()
+{
+	static class AFortVolumeActor_Base_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AFortVolumeActor_Base_C*>(AFortVolumeActor_Base_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function FortVolumeActor_Base.FortVolumeActor_Base_C.UserConstructionScript
@@ -24,9 +49,12 @@ namespace SDK
 
 void AFortVolumeActor_Base_C::UserConstructionScript(bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue)
 {
-	static auto Func = Class->GetFunction("FortVolumeActor_Base_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortVolumeActor_Base_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortVolumeActor_Base_C", "UserConstructionScript");
+
+	Params::AFortVolumeActor_Base_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -43,12 +71,14 @@ void AFortVolumeActor_Base_C::UserConstructionScript(bool CallFunc_IsDedicatedSe
 
 void AFortVolumeActor_Base_C::TransitionTL__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("FortVolumeActor_Base_C", "TransitionTL__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortVolumeActor_Base_C_TransitionTL__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortVolumeActor_Base_C", "TransitionTL__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -59,12 +89,14 @@ void AFortVolumeActor_Base_C::TransitionTL__FinishedFunc()
 
 void AFortVolumeActor_Base_C::TransitionTL__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("FortVolumeActor_Base_C", "TransitionTL__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortVolumeActor_Base_C_TransitionTL__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortVolumeActor_Base_C", "TransitionTL__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -75,12 +107,14 @@ void AFortVolumeActor_Base_C::TransitionTL__UpdateFunc()
 
 void AFortVolumeActor_Base_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("FortVolumeActor_Base_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortVolumeActor_Base_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortVolumeActor_Base_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -98,9 +132,12 @@ void AFortVolumeActor_Base_C::ReceiveBeginPlay()
 
 void AFortVolumeActor_Base_C::OnDeathPlayEffects(float Damage, struct FGameplayTagContainer& DamageTags, const struct FVector& Momentum, struct FHitResult& HitInfo, class AFortPawn* InstigatedBy, class AActor* DamageCauser, const struct FGameplayEffectContextHandle& EffectContext)
 {
-	static auto Func = Class->GetFunction("FortVolumeActor_Base_C", "OnDeathPlayEffects");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortVolumeActor_Base_C_OnDeathPlayEffects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortVolumeActor_Base_C", "OnDeathPlayEffects");
+
+	Params::AFortVolumeActor_Base_C_OnDeathPlayEffects_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageTags = DamageTags;
@@ -127,13 +164,16 @@ void AFortVolumeActor_Base_C::OnDeathPlayEffects(float Damage, struct FGameplayT
 // struct FHitResult                  K2Node_Event_HitInfo                                             (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AFortPawn*                   K2Node_Event_InstigatedBy                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       ()
+// struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       (None)
 
 void AFortVolumeActor_Base_C::ExecuteUbergraph_FortVolumeActor_Base(int32 EntryPoint, bool CallFunc_IsDedicatedServer_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, float K2Node_Event_Damage, const struct FGameplayTagContainer& K2Node_Event_DamageTags, const struct FVector& K2Node_Event_Momentum, const struct FHitResult& K2Node_Event_HitInfo, class AFortPawn* K2Node_Event_InstigatedBy, class AActor* K2Node_Event_DamageCauser, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext)
 {
-	static auto Func = Class->GetFunction("FortVolumeActor_Base_C", "ExecuteUbergraph_FortVolumeActor_Base");
+	static class UFunction* Func = nullptr;
 
-	Params::AFortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("FortVolumeActor_Base_C", "ExecuteUbergraph_FortVolumeActor_Base");
+
+	Params::AFortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
@@ -152,6 +192,4 @@ void AFortVolumeActor_Base_C::ExecuteUbergraph_FortVolumeActor_Base(int32 EntryP
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

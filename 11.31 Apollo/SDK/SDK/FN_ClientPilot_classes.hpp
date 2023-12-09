@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,11 +15,8 @@ class UClientPilotComponent : public UObject
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClientPilotComponent");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClientPilotComponent* GetDefaultObj();
 
 };
 
@@ -31,13 +25,10 @@ public:
 class UClientPilotBlackboard : public UObject
 {
 public:
-	uint8                                        Pad_413D[0x50];                                    // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1B17[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClientPilotBlackboard");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClientPilotBlackboard* GetDefaultObj();
 
 };
 
@@ -48,16 +39,11 @@ class UClientPilotBlackboardManager : public UObject
 public:
 	class UClientPilotBlackboard*                PilotBlackboard;                                   // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ClientPilotBlackboardManager");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UClientPilotBlackboardManager* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

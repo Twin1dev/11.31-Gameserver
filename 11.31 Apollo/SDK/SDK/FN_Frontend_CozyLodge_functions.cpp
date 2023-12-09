@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Frontend_CozyLodge.Frontend_CozyLodge_C
+// (Actor)
+
+class UClass* AFrontend_CozyLodge_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Frontend_CozyLodge_C");
+
+	return Clss;
+}
+
+
+// Frontend_CozyLodge_C Frontend_CozyLodge.Default__Frontend_CozyLodge_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AFrontend_CozyLodge_C* AFrontend_CozyLodge_C::GetDefaultObj()
+{
+	static class AFrontend_CozyLodge_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AFrontend_CozyLodge_C*>(AFrontend_CozyLodge_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function Frontend_CozyLodge.Frontend_CozyLodge_C.SetUpHiddenObjectPairing
@@ -25,9 +50,12 @@ namespace SDK
 
 void AFrontend_CozyLodge_C::SetUpHiddenObjectPairing(class AActor* Actor, const struct FGameplayTag& RewardGraphNodeTag, const struct FFrontendEventHiddenObject& K2Node_MakeStruct_FrontendEventHiddenObject, int32 CallFunc_Array_Add_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Frontend_CozyLodge_C", "SetUpHiddenObjectPairing");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontend_CozyLodge_C_SetUpHiddenObjectPairing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Frontend_CozyLodge_C", "SetUpHiddenObjectPairing");
+
+	Params::AFrontend_CozyLodge_C_SetUpHiddenObjectPairing_Params Parms{};
 
 	Parms.Actor = Actor;
 	Parms.RewardGraphNodeTag = RewardGraphNodeTag;
@@ -49,9 +77,12 @@ void AFrontend_CozyLodge_C::SetUpHiddenObjectPairing(class AActor* Actor, const 
 
 void AFrontend_CozyLodge_C::SetupNavObjectPairing(class AFortEventLevelNavigationActor* Object, const struct FGameplayTagContainer& Camera, const struct FFrontendEventNavObject& K2Node_MakeStruct_FrontendEventNavObject, int32 CallFunc_Array_Add_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Frontend_CozyLodge_C", "SetupNavObjectPairing");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontend_CozyLodge_C_SetupNavObjectPairing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Frontend_CozyLodge_C", "SetupNavObjectPairing");
+
+	Params::AFrontend_CozyLodge_C_SetupNavObjectPairing_Params Parms{};
 
 	Parms.Object = Object;
 	Parms.Camera = Camera;
@@ -73,9 +104,12 @@ void AFrontend_CozyLodge_C::SetupNavObjectPairing(class AFortEventLevelNavigatio
 
 void AFrontend_CozyLodge_C::SetUpCameraPairing(class AFortCameraBase* Camera, const struct FGameplayTag& Tag, const struct FFrontendEventCamera& K2Node_MakeStruct_FrontendEventCamera, int32 CallFunc_Array_Add_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Frontend_CozyLodge_C", "SetUpCameraPairing");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontend_CozyLodge_C_SetUpCameraPairing_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Frontend_CozyLodge_C", "SetUpCameraPairing");
+
+	Params::AFrontend_CozyLodge_C_SetUpCameraPairing_Params Parms{};
 
 	Parms.Camera = Camera;
 	Parms.Tag = Tag;
@@ -93,12 +127,14 @@ void AFrontend_CozyLodge_C::SetUpCameraPairing(class AFortCameraBase* Camera, co
 
 void AFrontend_CozyLodge_C::OnFailure_6A99741E47F07D31E84968A87E978BED()
 {
-	static auto Func = Class->GetFunction("Frontend_CozyLodge_C", "OnFailure_6A99741E47F07D31E84968A87E978BED");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontend_CozyLodge_C_OnFailure_6A99741E47F07D31E84968A87E978BED_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Frontend_CozyLodge_C", "OnFailure_6A99741E47F07D31E84968A87E978BED");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -109,12 +145,14 @@ void AFrontend_CozyLodge_C::OnFailure_6A99741E47F07D31E84968A87E978BED()
 
 void AFrontend_CozyLodge_C::OnIgnored_6A99741E47F07D31E84968A87E978BED()
 {
-	static auto Func = Class->GetFunction("Frontend_CozyLodge_C", "OnIgnored_6A99741E47F07D31E84968A87E978BED");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontend_CozyLodge_C_OnIgnored_6A99741E47F07D31E84968A87E978BED_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Frontend_CozyLodge_C", "OnIgnored_6A99741E47F07D31E84968A87E978BED");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -125,12 +163,14 @@ void AFrontend_CozyLodge_C::OnIgnored_6A99741E47F07D31E84968A87E978BED()
 
 void AFrontend_CozyLodge_C::OnSuccess_6A99741E47F07D31E84968A87E978BED()
 {
-	static auto Func = Class->GetFunction("Frontend_CozyLodge_C", "OnSuccess_6A99741E47F07D31E84968A87E978BED");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontend_CozyLodge_C_OnSuccess_6A99741E47F07D31E84968A87E978BED_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Frontend_CozyLodge_C", "OnSuccess_6A99741E47F07D31E84968A87E978BED");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -141,12 +181,14 @@ void AFrontend_CozyLodge_C::OnSuccess_6A99741E47F07D31E84968A87E978BED()
 
 void AFrontend_CozyLodge_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("Frontend_CozyLodge_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontend_CozyLodge_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Frontend_CozyLodge_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -157,12 +199,14 @@ void AFrontend_CozyLodge_C::ReceiveBeginPlay()
 
 void AFrontend_CozyLodge_C::FillOutSceneCameraArray()
 {
-	static auto Func = Class->GetFunction("Frontend_CozyLodge_C", "FillOutSceneCameraArray");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontend_CozyLodge_C_FillOutSceneCameraArray_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Frontend_CozyLodge_C", "FillOutSceneCameraArray");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -173,12 +217,14 @@ void AFrontend_CozyLodge_C::FillOutSceneCameraArray()
 
 void AFrontend_CozyLodge_C::RegisterSceneCameras()
 {
-	static auto Func = Class->GetFunction("Frontend_CozyLodge_C", "RegisterSceneCameras");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontend_CozyLodge_C_RegisterSceneCameras_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Frontend_CozyLodge_C", "RegisterSceneCameras");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -189,12 +235,14 @@ void AFrontend_CozyLodge_C::RegisterSceneCameras()
 
 void AFrontend_CozyLodge_C::RegisterNavObjects()
 {
-	static auto Func = Class->GetFunction("Frontend_CozyLodge_C", "RegisterNavObjects");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontend_CozyLodge_C_RegisterNavObjects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Frontend_CozyLodge_C", "RegisterNavObjects");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -205,12 +253,14 @@ void AFrontend_CozyLodge_C::RegisterNavObjects()
 
 void AFrontend_CozyLodge_C::FillOutNavObjects()
 {
-	static auto Func = Class->GetFunction("Frontend_CozyLodge_C", "FillOutNavObjects");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontend_CozyLodge_C_FillOutNavObjects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Frontend_CozyLodge_C", "FillOutNavObjects");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -221,12 +271,14 @@ void AFrontend_CozyLodge_C::FillOutNavObjects()
 
 void AFrontend_CozyLodge_C::FilloutHidenObjects()
 {
-	static auto Func = Class->GetFunction("Frontend_CozyLodge_C", "FilloutHidenObjects");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontend_CozyLodge_C_FilloutHidenObjects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Frontend_CozyLodge_C", "FilloutHidenObjects");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -237,12 +289,14 @@ void AFrontend_CozyLodge_C::FilloutHidenObjects()
 
 void AFrontend_CozyLodge_C::RegisterHiddenObjects()
 {
-	static auto Func = Class->GetFunction("Frontend_CozyLodge_C", "RegisterHiddenObjects");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontend_CozyLodge_C_RegisterHiddenObjects_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Frontend_CozyLodge_C", "RegisterHiddenObjects");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -256,9 +310,12 @@ void AFrontend_CozyLodge_C::RegisterHiddenObjects()
 
 void AFrontend_CozyLodge_C::OnSpecialInteraction(const struct FGameplayTag& InteractionTag, const struct FGameplayTag& CameraTag, class AFortEventLevelNavigationActor* InActor)
 {
-	static auto Func = Class->GetFunction("Frontend_CozyLodge_C", "OnSpecialInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontend_CozyLodge_C_OnSpecialInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Frontend_CozyLodge_C", "OnSpecialInteraction");
+
+	Params::AFrontend_CozyLodge_C_OnSpecialInteraction_Params Parms{};
 
 	Parms.InteractionTag = InteractionTag;
 	Parms.CameraTag = CameraTag;
@@ -345,9 +402,12 @@ void AFrontend_CozyLodge_C::OnSpecialInteraction(const struct FGameplayTag& Inte
 
 void AFrontend_CozyLodge_C::ExecuteUbergraph_Frontend_CozyLodge(int32 EntryPoint, int32 Temp_int_Array_Index_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, int32 Temp_int_Loop_Counter_Variable, int32 Temp_int_Loop_Counter_Variable_1, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue_1, int32 Temp_int_Loop_Counter_Variable_2, int32 CallFunc_Add_IntInt_ReturnValue_2, int32 Temp_int_Array_Index_Variable_1, int32 Temp_int_Loop_Counter_Variable_3, int32 CallFunc_Add_IntInt_ReturnValue_3, int32 Temp_int_Array_Index_Variable_2, int32 Temp_int_Loop_Counter_Variable_4, int32 CallFunc_Add_IntInt_ReturnValue_4, int32 Temp_int_Array_Index_Variable_3, class AGameStateBase* CallFunc_GetGameState_ReturnValue, TArray<class UGSC_DynamicLevelStreaming_C*>& CallFunc_K2_GetComponentsByClass_ReturnValue, int32 Temp_int_Array_Index_Variable_4, int32 CallFunc_Array_Length_ReturnValue, class UGSC_DynamicLevelStreaming_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue, class AGameStateBase* CallFunc_GetGameState_ReturnValue_1, TArray<class UGSC_DynamicLevelStreaming_C*>& CallFunc_K2_GetComponentsByClass_ReturnValue_1, int32 CallFunc_Array_Length_ReturnValue_2, const struct FFrontendEventNavObject& CallFunc_Array_Get_Item_1, int32 CallFunc_Array_Length_ReturnValue_3, int32 Temp_int_Array_Index_Variable_5, class AGameStateBase* CallFunc_GetGameState_ReturnValue_2, TArray<class UGSC_DynamicLevelStreaming_C*>& CallFunc_K2_GetComponentsByClass_ReturnValue_2, class UGSC_DynamicLevelStreaming_C* CallFunc_Array_Get_Item_2, int32 CallFunc_Array_Length_ReturnValue_4, int32 Temp_int_Loop_Counter_Variable_5, bool CallFunc_Less_IntInt_ReturnValue_1, bool CallFunc_Less_IntInt_ReturnValue_2, int32 CallFunc_Add_IntInt_ReturnValue_5, int32 Temp_int_Loop_Counter_Variable_6, bool CallFunc_Less_IntInt_ReturnValue_3, int32 CallFunc_Add_IntInt_ReturnValue_6, class AGameStateBase* CallFunc_GetGameState_ReturnValue_3, TArray<class UGSC_DynamicLevelStreaming_C*>& CallFunc_K2_GetComponentsByClass_ReturnValue_3, const struct FFrontendEventHiddenObject& CallFunc_Array_Get_Item_3, class UGSC_DynamicLevelStreaming_C* CallFunc_Array_Get_Item_4, int32 CallFunc_Array_Length_ReturnValue_5, bool CallFunc_Less_IntInt_ReturnValue_4, int32 CallFunc_Array_Length_ReturnValue_6, bool CallFunc_Less_IntInt_ReturnValue_5, int32 Temp_int_Array_Index_Variable_6, const struct FDataTableRowHandle& K2Node_MakeStruct_DataTableRowHandle, class UGSC_DynamicLevelStreaming_C* CallFunc_Array_Get_Item_5, TArray<class AFortPlayerController*>& CallFunc_GetAllFortPlayerControllers_ReturnValue, class AFortPlayerController* CallFunc_Array_Get_Item_6, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, int32 CallFunc_Array_Length_ReturnValue_7, class UFortAsyncAction_SendQuestStatEvent* CallFunc_SendClientStatEvent_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue_6, bool CallFunc_IsValid_ReturnValue, const struct FGameplayTag& K2Node_CustomEvent_InteractionTag, const struct FGameplayTag& K2Node_CustomEvent_CameraTag, class AFortEventLevelNavigationActor* K2Node_CustomEvent_InActor, bool CallFunc_EqualEqual_GameplayTag_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, int32 Temp_int_Loop_Counter_Variable_7, bool CallFunc_Less_IntInt_ReturnValue_7, int32 CallFunc_Add_IntInt_ReturnValue_7, int32 Temp_int_Array_Index_Variable_7, const struct FFrontendEventCamera& CallFunc_Array_Get_Item_7)
 {
-	static auto Func = Class->GetFunction("Frontend_CozyLodge_C", "ExecuteUbergraph_Frontend_CozyLodge");
+	static class UFunction* Func = nullptr;
 
-	Params::AFrontend_CozyLodge_C_ExecuteUbergraph_Frontend_CozyLodge_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Frontend_CozyLodge_C", "ExecuteUbergraph_Frontend_CozyLodge");
+
+	Params::AFrontend_CozyLodge_C_ExecuteUbergraph_Frontend_CozyLodge_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -426,6 +486,4 @@ void AFrontend_CozyLodge_C::ExecuteUbergraph_Frontend_CozyLodge(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

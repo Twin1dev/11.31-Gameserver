@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -79,11 +76,11 @@ struct FSmartObjectExecutionSlot
 {
 public:
 	enum class ESmartObjectSlotState             State;                                             // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2359[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_17BC[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                UserAvatar;                                        // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UGameplayBehavior*                     AssignedBehavior;                                  // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        SlotIndex;                                         // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_235A[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_17BD[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -91,9 +88,9 @@ public:
 struct FSmartObjectUse
 {
 public:
-	uint8                                        Pad_235B[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_17BF[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSmartObjectExecutionSlot             Slot;                                              // 0x8(0x20)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_235C[0x8];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_17C0[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -111,11 +108,9 @@ public:
 struct FSmartObjectID
 {
 public:
-	uint8                                        Pad_235D[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_17C2[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

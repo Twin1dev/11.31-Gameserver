@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -22,11 +19,8 @@ public:
 	struct FTransform                            SavedTransform;                                    // 0x7D0(0x30)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor)
 	bool                                         Active;                                            // 0x800(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("FortnitePartyBackdrop_Camera_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class AFortnitePartyBackdrop_Camera_C* GetDefaultObj();
 
 	void OnActivated();
 	void OnDeactivated();
@@ -37,6 +31,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

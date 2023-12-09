@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_FrontendBackPlate.BP_FrontendBackPlate_C
+// (Actor)
+
+class UClass* ABP_FrontendBackPlate_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_FrontendBackPlate_C");
+
+	return Clss;
+}
+
+
+// BP_FrontendBackPlate_C BP_FrontendBackPlate.Default__BP_FrontendBackPlate_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_FrontendBackPlate_C* ABP_FrontendBackPlate_C::GetDefaultObj()
+{
+	static class ABP_FrontendBackPlate_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_FrontendBackPlate_C*>(ABP_FrontendBackPlate_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_FrontendBackPlate.BP_FrontendBackPlate_C.HasMatcmakingInteraction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void ABP_FrontendBackPlate_C::HasMatcmakingInteraction(bool* HasInteraction)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "HasMatcmakingInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_HasMatcmakingInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "HasMatcmakingInteraction");
+
+	Params::ABP_FrontendBackPlate_C_HasMatcmakingInteraction_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -50,9 +78,12 @@ void ABP_FrontendBackPlate_C::HasMatcmakingInteraction(bool* HasInteraction)
 
 void ABP_FrontendBackPlate_C::SetFloatingShapeVisibility(bool Show, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class AActor* CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "SetFloatingShapeVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_SetFloatingShapeVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "SetFloatingShapeVisibility");
+
+	Params::ABP_FrontendBackPlate_C_SetFloatingShapeVisibility_Params Parms{};
 
 	Parms.Show = Show;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
@@ -84,9 +115,12 @@ void ABP_FrontendBackPlate_C::SetFloatingShapeVisibility(bool Show, bool CallFun
 
 void ABP_FrontendBackPlate_C::SetSpecialEventUIColorScheme(bool SetUIPanelColors, const struct FLinearColor& Backing, const struct FLinearColor& Backing_Hover, const struct FLinearColor& Backing_Selection, bool SetFontColors, const struct FLinearColor& Primary, const struct FLinearColor& Secondary, const struct FLinearColor& Tertiary, const struct FLinearColor& Quaternary)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "SetSpecialEventUIColorScheme");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_SetSpecialEventUIColorScheme_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "SetSpecialEventUIColorScheme");
+
+	Params::ABP_FrontendBackPlate_C_SetSpecialEventUIColorScheme_Params Parms{};
 
 	Parms.SetUIPanelColors = SetUIPanelColors;
 	Parms.Backing = Backing;
@@ -110,9 +144,12 @@ void ABP_FrontendBackPlate_C::SetSpecialEventUIColorScheme(bool SetUIPanelColors
 
 void ABP_FrontendBackPlate_C::HasUIColorOverride(bool* HasUIColorOverride)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "HasUIColorOverride");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_HasUIColorOverride_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "HasUIColorOverride");
+
+	Params::ABP_FrontendBackPlate_C_HasUIColorOverride_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -130,9 +167,12 @@ void ABP_FrontendBackPlate_C::HasUIColorOverride(bool* HasUIColorOverride)
 
 void ABP_FrontendBackPlate_C::ResetUIColorScheme(bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "ResetUIColorScheme");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_ResetUIColorScheme_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "ResetUIColorScheme");
+
+	Params::ABP_FrontendBackPlate_C_ResetUIColorScheme_Params Parms{};
 
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 
@@ -149,15 +189,18 @@ void ABP_FrontendBackPlate_C::ResetUIColorScheme(bool CallFunc_Not_PreBool_Retur
 
 void ABP_FrontendBackPlate_C::GetUIColorScheme(struct FLinearColor* ColorScheme, bool* bHasOverride)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "GetUIColorScheme");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_GetUIColorScheme_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "GetUIColorScheme");
+
+	Params::ABP_FrontendBackPlate_C_GetUIColorScheme_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (ColorScheme != nullptr)
-		*ColorScheme = Parms.ColorScheme;
+		*ColorScheme = std::move(Parms.ColorScheme);
 
 	if (bHasOverride != nullptr)
 		*bHasOverride = Parms.bHasOverride;
@@ -173,9 +216,12 @@ void ABP_FrontendBackPlate_C::GetUIColorScheme(struct FLinearColor* ColorScheme,
 
 void ABP_FrontendBackPlate_C::RequestUIColorScheme(const struct FLinearColor& MainUIColor, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "RequestUIColorScheme");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_RequestUIColorScheme_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "RequestUIColorScheme");
+
+	Params::ABP_FrontendBackPlate_C_RequestUIColorScheme_Params Parms{};
 
 	Parms.MainUIColor = MainUIColor;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
@@ -191,12 +237,14 @@ void ABP_FrontendBackPlate_C::RequestUIColorScheme(const struct FLinearColor& Ma
 
 void ABP_FrontendBackPlate_C::UpdateRenderTargetRealtime()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "UpdateRenderTargetRealtime");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_UpdateRenderTargetRealtime_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "UpdateRenderTargetRealtime");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -210,9 +258,12 @@ void ABP_FrontendBackPlate_C::UpdateRenderTargetRealtime()
 
 void ABP_FrontendBackPlate_C::EnableRealtimeUpdate(bool Enabled, bool Temp_bool_Variable, class UTexture* K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "EnableRealtimeUpdate");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_EnableRealtimeUpdate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "EnableRealtimeUpdate");
+
+	Params::ABP_FrontendBackPlate_C_EnableRealtimeUpdate_Params Parms{};
 
 	Parms.Enabled = Enabled;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -229,12 +280,14 @@ void ABP_FrontendBackPlate_C::EnableRealtimeUpdate(bool Enabled, bool Temp_bool_
 
 void ABP_FrontendBackPlate_C::UpdateRenderTarget()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "UpdateRenderTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_UpdateRenderTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "UpdateRenderTarget");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -262,9 +315,12 @@ void ABP_FrontendBackPlate_C::UpdateRenderTarget()
 
 void ABP_FrontendBackPlate_C::SetBackgroundTexture(class UTexture* Texture, class UMaterialInterface* Material, class UMaterialInterface* PreBlurMaterial, class UMaterialInterface* Temp_object_Variable, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_3, bool Temp_bool_Variable, bool Temp_bool_Variable_1, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInterface* K2Node_Select_Default, bool Temp_bool_Variable_2, class UTexture* K2Node_Select_Default_1, class UMaterialInterface* K2Node_Select_Default_2, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "SetBackgroundTexture");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_SetBackgroundTexture_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "SetBackgroundTexture");
+
+	Params::ABP_FrontendBackPlate_C_SetBackgroundTexture_Params Parms{};
 
 	Parms.Texture = Texture;
 	Parms.Material = Material;
@@ -299,9 +355,12 @@ void ABP_FrontendBackPlate_C::SetBackgroundTexture(class UTexture* Texture, clas
 
 void ABP_FrontendBackPlate_C::UserConstructionScript(class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1, TArray<class AActor*>& CallFunc_GetAllActorsWithTag_OutActors, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "UserConstructionScript");
+
+	Params::ABP_FrontendBackPlate_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue_1 = CallFunc_CreateDynamicMaterialInstance_ReturnValue_1;
@@ -319,12 +378,14 @@ void ABP_FrontendBackPlate_C::UserConstructionScript(class UMaterialInstanceDyna
 
 void ABP_FrontendBackPlate_C::UISpecailEventTransition__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "UISpecailEventTransition__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_UISpecailEventTransition__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "UISpecailEventTransition__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -335,12 +396,14 @@ void ABP_FrontendBackPlate_C::UISpecailEventTransition__FinishedFunc()
 
 void ABP_FrontendBackPlate_C::UISpecailEventTransition__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "UISpecailEventTransition__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_UISpecailEventTransition__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "UISpecailEventTransition__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -351,12 +414,14 @@ void ABP_FrontendBackPlate_C::UISpecailEventTransition__UpdateFunc()
 
 void ABP_FrontendBackPlate_C::HyperSpace__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "HyperSpace__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_HyperSpace__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "HyperSpace__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -367,12 +432,14 @@ void ABP_FrontendBackPlate_C::HyperSpace__FinishedFunc()
 
 void ABP_FrontendBackPlate_C::HyperSpace__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "HyperSpace__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_HyperSpace__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "HyperSpace__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -383,12 +450,14 @@ void ABP_FrontendBackPlate_C::HyperSpace__UpdateFunc()
 
 void ABP_FrontendBackPlate_C::StopHyperSpeed__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "StopHyperSpeed__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_StopHyperSpeed__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "StopHyperSpeed__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -399,12 +468,14 @@ void ABP_FrontendBackPlate_C::StopHyperSpeed__FinishedFunc()
 
 void ABP_FrontendBackPlate_C::StopHyperSpeed__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "StopHyperSpeed__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_StopHyperSpeed__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "StopHyperSpeed__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -415,12 +486,14 @@ void ABP_FrontendBackPlate_C::StopHyperSpeed__UpdateFunc()
 
 void ABP_FrontendBackPlate_C::UpdateSettings()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "UpdateSettings");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_UpdateSettings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "UpdateSettings");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -432,9 +505,12 @@ void ABP_FrontendBackPlate_C::UpdateSettings()
 
 void ABP_FrontendBackPlate_C::SetEnableBlackMondayFX(bool IsEnabled)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "SetEnableBlackMondayFX");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_SetEnableBlackMondayFX_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "SetEnableBlackMondayFX");
+
+	Params::ABP_FrontendBackPlate_C_SetEnableBlackMondayFX_Params Parms{};
 
 	Parms.IsEnabled = IsEnabled;
 
@@ -450,9 +526,12 @@ void ABP_FrontendBackPlate_C::SetEnableBlackMondayFX(bool IsEnabled)
 
 void ABP_FrontendBackPlate_C::PlayUISpecialEventTransition(bool bTransitionToSpecialEvent)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "PlayUISpecialEventTransition");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_PlayUISpecialEventTransition_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "PlayUISpecialEventTransition");
+
+	Params::ABP_FrontendBackPlate_C_PlayUISpecialEventTransition_Params Parms{};
 
 	Parms.bTransitionToSpecialEvent = bTransitionToSpecialEvent;
 
@@ -468,9 +547,12 @@ void ABP_FrontendBackPlate_C::PlayUISpecialEventTransition(bool bTransitionToSpe
 
 void ABP_FrontendBackPlate_C::ReceiveTick(float DeltaSeconds)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "ReceiveTick");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_ReceiveTick_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "ReceiveTick");
+
+	Params::ABP_FrontendBackPlate_C_ReceiveTick_Params Parms{};
 
 	Parms.DeltaSeconds = DeltaSeconds;
 
@@ -485,12 +567,14 @@ void ABP_FrontendBackPlate_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_FrontendBackPlate_C::PlayEnterMatchmakingAnim()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "PlayEnterMatchmakingAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_PlayEnterMatchmakingAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "PlayEnterMatchmakingAnim");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -501,12 +585,14 @@ void ABP_FrontendBackPlate_C::PlayEnterMatchmakingAnim()
 
 void ABP_FrontendBackPlate_C::ResetMatchmakingAnim()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "ResetMatchmakingAnim");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_ResetMatchmakingAnim_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "ResetMatchmakingAnim");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -518,9 +604,12 @@ void ABP_FrontendBackPlate_C::ResetMatchmakingAnim()
 
 void ABP_FrontendBackPlate_C::SetAllowMatchmakingInteraction(bool AllowInteraction)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "SetAllowMatchmakingInteraction");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_SetAllowMatchmakingInteraction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "SetAllowMatchmakingInteraction");
+
+	Params::ABP_FrontendBackPlate_C_SetAllowMatchmakingInteraction_Params Parms{};
 
 	Parms.AllowInteraction = AllowInteraction;
 
@@ -535,12 +624,14 @@ void ABP_FrontendBackPlate_C::SetAllowMatchmakingInteraction(bool AllowInteracti
 
 void ABP_FrontendBackPlate_C::TestBlur()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "TestBlur");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_TestBlur_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "TestBlur");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -552,9 +643,12 @@ void ABP_FrontendBackPlate_C::TestBlur()
 
 void ABP_FrontendBackPlate_C::HandleSpecialEventAudioOnMatchmakingEnd(bool Success)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "HandleSpecialEventAudioOnMatchmakingEnd");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_HandleSpecialEventAudioOnMatchmakingEnd_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "HandleSpecialEventAudioOnMatchmakingEnd");
+
+	Params::ABP_FrontendBackPlate_C_HandleSpecialEventAudioOnMatchmakingEnd_Params Parms{};
 
 	Parms.Success = Success;
 
@@ -569,12 +663,14 @@ void ABP_FrontendBackPlate_C::HandleSpecialEventAudioOnMatchmakingEnd(bool Succe
 
 void ABP_FrontendBackPlate_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -586,9 +682,12 @@ void ABP_FrontendBackPlate_C::ReceiveBeginPlay()
 
 void ABP_FrontendBackPlate_C::MatchmakingEnded(bool bWasSuccess)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "MatchmakingEnded");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_MatchmakingEnded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "MatchmakingEnded");
+
+	Params::ABP_FrontendBackPlate_C_MatchmakingEnded_Params Parms{};
 
 	Parms.bWasSuccess = bWasSuccess;
 
@@ -603,12 +702,14 @@ void ABP_FrontendBackPlate_C::MatchmakingEnded(bool bWasSuccess)
 
 void ABP_FrontendBackPlate_C::EnteringMatchmaking()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "EnteringMatchmaking");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_EnteringMatchmaking_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "EnteringMatchmaking");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -645,9 +746,12 @@ void ABP_FrontendBackPlate_C::EnteringMatchmaking()
 
 void ABP_FrontendBackPlate_C::ExecuteUbergraph_BP_FrontendBackPlate(int32 EntryPoint, bool Temp_bool_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, float CallFunc_Subtract_FloatFloat_ReturnValue, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue, int32 CallFunc_GetVisualEffectQuality_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue_1, float CallFunc_SelectFloat_ReturnValue, int32 CallFunc_GetVisualEffectQuality_ReturnValue_1, bool CallFunc_LessEqual_IntInt_ReturnValue_1, float CallFunc_SelectFloat_ReturnValue_1, bool K2Node_CustomEvent_IsEnabled, bool K2Node_Select_Default, bool K2Node_CustomEvent_bTransitionToSpecialEvent, float K2Node_Event_DeltaSeconds, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool K2Node_CustomEvent_AllowInteraction, bool K2Node_CustomEvent_Success, bool CallFunc_IsValid_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_2, class UAudioComponent* CallFunc_CreateSound2D_ReturnValue, bool K2Node_Event_bWasSuccess)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "ExecuteUbergraph_BP_FrontendBackPlate");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_ExecuteUbergraph_BP_FrontendBackPlate_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "ExecuteUbergraph_BP_FrontendBackPlate");
+
+	Params::ABP_FrontendBackPlate_C_ExecuteUbergraph_BP_FrontendBackPlate_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -689,9 +793,12 @@ void ABP_FrontendBackPlate_C::ExecuteUbergraph_BP_FrontendBackPlate(int32 EntryP
 
 void ABP_FrontendBackPlate_C::RequestLobbyColorChanges__DelegateSignature(const struct FLinearColor& Color_A, bool UseDefaultScheme)
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "RequestLobbyColorChanges__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_RequestLobbyColorChanges__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "RequestLobbyColorChanges__DelegateSignature");
+
+	Params::ABP_FrontendBackPlate_C_RequestLobbyColorChanges__DelegateSignature_Params Parms{};
 
 	Parms.Color_A = Color_A;
 	Parms.UseDefaultScheme = UseDefaultScheme;
@@ -707,12 +814,14 @@ void ABP_FrontendBackPlate_C::RequestLobbyColorChanges__DelegateSignature(const 
 
 void ABP_FrontendBackPlate_C::HidePlayer__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "HidePlayer__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_HidePlayer__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "HidePlayer__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -723,12 +832,14 @@ void ABP_FrontendBackPlate_C::HidePlayer__DelegateSignature()
 
 void ABP_FrontendBackPlate_C::OnRockyRidgeFinished__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "OnRockyRidgeFinished__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_OnRockyRidgeFinished__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "OnRockyRidgeFinished__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -739,17 +850,17 @@ void ABP_FrontendBackPlate_C::OnRockyRidgeFinished__DelegateSignature()
 
 void ABP_FrontendBackPlate_C::BeginRockyRidge__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BP_FrontendBackPlate_C", "BeginRockyRidge__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_FrontendBackPlate_C_BeginRockyRidge__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_FrontendBackPlate_C", "BeginRockyRidge__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

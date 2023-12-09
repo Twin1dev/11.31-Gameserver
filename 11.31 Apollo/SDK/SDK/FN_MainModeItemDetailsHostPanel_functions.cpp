@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass MainModeItemDetailsHostPanel.MainModeItemDetailsHostPanel_C
+// (None)
+
+class UClass* UMainModeItemDetailsHostPanel_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MainModeItemDetailsHostPanel_C");
+
+	return Clss;
+}
+
+
+// MainModeItemDetailsHostPanel_C MainModeItemDetailsHostPanel.Default__MainModeItemDetailsHostPanel_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMainModeItemDetailsHostPanel_C* UMainModeItemDetailsHostPanel_C::GetDefaultObj()
+{
+	static class UMainModeItemDetailsHostPanel_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMainModeItemDetailsHostPanel_C*>(UMainModeItemDetailsHostPanel_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function MainModeItemDetailsHostPanel.MainModeItemDetailsHostPanel_C.UpdateDescriptionVisibility
@@ -25,9 +50,12 @@ namespace SDK
 
 void UMainModeItemDetailsHostPanel_C::UpdateDescriptionVisibility(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("MainModeItemDetailsHostPanel_C", "UpdateDescriptionVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainModeItemDetailsHostPanel_C_UpdateDescriptionVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainModeItemDetailsHostPanel_C", "UpdateDescriptionVisibility");
+
+	Params::UMainModeItemDetailsHostPanel_C_UpdateDescriptionVisibility_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -45,12 +73,14 @@ void UMainModeItemDetailsHostPanel_C::UpdateDescriptionVisibility(bool Temp_bool
 
 void UMainModeItemDetailsHostPanel_C::HandleHasItemMarkedForMulchingChanged()
 {
-	static auto Func = Class->GetFunction("MainModeItemDetailsHostPanel_C", "HandleHasItemMarkedForMulchingChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainModeItemDetailsHostPanel_C_HandleHasItemMarkedForMulchingChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainModeItemDetailsHostPanel_C", "HandleHasItemMarkedForMulchingChanged");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -61,12 +91,14 @@ void UMainModeItemDetailsHostPanel_C::HandleHasItemMarkedForMulchingChanged()
 
 void UMainModeItemDetailsHostPanel_C::Construct()
 {
-	static auto Func = Class->GetFunction("MainModeItemDetailsHostPanel_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainModeItemDetailsHostPanel_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainModeItemDetailsHostPanel_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -90,9 +122,12 @@ void UMainModeItemDetailsHostPanel_C::Construct()
 
 void UMainModeItemDetailsHostPanel_C::ExecuteUbergraph_MainModeItemDetailsHostPanel(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_2, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, enum class ESlateVisibility K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("MainModeItemDetailsHostPanel_C", "ExecuteUbergraph_MainModeItemDetailsHostPanel");
+	static class UFunction* Func = nullptr;
 
-	Params::UMainModeItemDetailsHostPanel_C_ExecuteUbergraph_MainModeItemDetailsHostPanel_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("MainModeItemDetailsHostPanel_C", "ExecuteUbergraph_MainModeItemDetailsHostPanel");
+
+	Params::UMainModeItemDetailsHostPanel_C_ExecuteUbergraph_MainModeItemDetailsHostPanel_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -114,6 +149,4 @@ void UMainModeItemDetailsHostPanel_C::ExecuteUbergraph_MainModeItemDetailsHostPa
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

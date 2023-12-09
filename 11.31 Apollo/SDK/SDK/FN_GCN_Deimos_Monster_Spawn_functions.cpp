@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass GCN_Deimos_Monster_Spawn.GCN_Deimos_Monster_Spawn_C
+// (None)
+
+class UClass* UGCN_Deimos_Monster_Spawn_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GCN_Deimos_Monster_Spawn_C");
+
+	return Clss;
+}
+
+
+// GCN_Deimos_Monster_Spawn_C GCN_Deimos_Monster_Spawn.Default__GCN_Deimos_Monster_Spawn_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGCN_Deimos_Monster_Spawn_C* UGCN_Deimos_Monster_Spawn_C::GetDefaultObj()
+{
+	static class UGCN_Deimos_Monster_Spawn_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGCN_Deimos_Monster_Spawn_C*>(UGCN_Deimos_Monster_Spawn_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function GCN_Deimos_Monster_Spawn.GCN_Deimos_Monster_Spawn_C.OnExecute
@@ -25,9 +50,12 @@ namespace SDK
 
 bool UGCN_Deimos_Monster_Spawn_C::OnExecute(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, bool CallFunc_OnExecute_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCN_Deimos_Monster_Spawn_C", "OnExecute");
+	static class UFunction* Func = nullptr;
 
-	Params::UGCN_Deimos_Monster_Spawn_C_OnExecute_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Deimos_Monster_Spawn_C", "OnExecute");
+
+	Params::UGCN_Deimos_Monster_Spawn_C_OnExecute_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -56,9 +84,12 @@ bool UGCN_Deimos_Monster_Spawn_C::OnExecute(class AActor* MyTarget, struct FGame
 
 void UGCN_Deimos_Monster_Spawn_C::OnBurst(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<class UParticleSystemComponent*>& ParticleComponents, TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance, class UParticleSystemComponent* CallFunc_Array_Get_Item, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_K2_AttachToComponent_ReturnValue)
 {
-	static auto Func = Class->GetFunction("GCN_Deimos_Monster_Spawn_C", "OnBurst");
+	static class UFunction* Func = nullptr;
 
-	Params::UGCN_Deimos_Monster_Spawn_C_OnBurst_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GCN_Deimos_Monster_Spawn_C", "OnBurst");
+
+	Params::UGCN_Deimos_Monster_Spawn_C_OnBurst_Params Parms{};
 
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
@@ -77,6 +108,4 @@ void UGCN_Deimos_Monster_Spawn_C::OnBurst(class AActor* MyTarget, struct FGamepl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

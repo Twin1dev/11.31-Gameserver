@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ShowdownEventTileInfo.ShowdownEventTileInfo_C
+// (None)
+
+class UClass* UShowdownEventTileInfo_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ShowdownEventTileInfo_C");
+
+	return Clss;
+}
+
+
+// ShowdownEventTileInfo_C ShowdownEventTileInfo.Default__ShowdownEventTileInfo_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UShowdownEventTileInfo_C* UShowdownEventTileInfo_C::GetDefaultObj()
+{
+	static class UShowdownEventTileInfo_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UShowdownEventTileInfo_C*>(UShowdownEventTileInfo_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ShowdownEventTileInfo.ShowdownEventTileInfo_C.RefreshDataBP
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UShowdownEventTileInfo_C::RefreshDataBP()
 {
-	static auto Func = Class->GetFunction("ShowdownEventTileInfo_C", "RefreshDataBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTileInfo_C_RefreshDataBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTileInfo_C", "RefreshDataBP");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UShowdownEventTileInfo_C::RefreshDataBP()
 
 void UShowdownEventTileInfo_C::EventAnimFocus(bool In)
 {
-	static auto Func = Class->GetFunction("ShowdownEventTileInfo_C", "EventAnimFocus");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTileInfo_C_EventAnimFocus_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTileInfo_C", "EventAnimFocus");
+
+	Params::UShowdownEventTileInfo_C_EventAnimFocus_Params Parms{};
 
 	Parms.In = In;
 
@@ -55,12 +85,14 @@ void UShowdownEventTileInfo_C::EventAnimFocus(bool In)
 
 void UShowdownEventTileInfo_C::EventStyleSocket()
 {
-	static auto Func = Class->GetFunction("ShowdownEventTileInfo_C", "EventStyleSocket");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTileInfo_C_EventStyleSocket_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTileInfo_C", "EventStyleSocket");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -72,9 +104,12 @@ void UShowdownEventTileInfo_C::EventStyleSocket()
 
 void UShowdownEventTileInfo_C::EventAnimHover(bool In)
 {
-	static auto Func = Class->GetFunction("ShowdownEventTileInfo_C", "EventAnimHover");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTileInfo_C_EventAnimHover_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTileInfo_C", "EventAnimHover");
+
+	Params::UShowdownEventTileInfo_C_EventAnimHover_Params Parms{};
 
 	Parms.In = In;
 
@@ -89,12 +124,14 @@ void UShowdownEventTileInfo_C::EventAnimHover(bool In)
 
 void UShowdownEventTileInfo_C::Construct()
 {
-	static auto Func = Class->GetFunction("ShowdownEventTileInfo_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTileInfo_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTileInfo_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,12 +142,14 @@ void UShowdownEventTileInfo_C::Construct()
 
 void UShowdownEventTileInfo_C::EventColorize()
 {
-	static auto Func = Class->GetFunction("ShowdownEventTileInfo_C", "EventColorize");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTileInfo_C_EventColorize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTileInfo_C", "EventColorize");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -122,13 +161,13 @@ void UShowdownEventTileInfo_C::EventColorize()
 // class FString                      CallFunc_GetTournamentSeriesId_ReturnValue                       (ZeroConstructor, HasGetValueTypeHash)
 // float                              Temp_float_Variable                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortShowdownEventState Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
-// class FText                        Temp_text_Variable_2                                             ()
-// class FText                        Temp_text_Variable_3                                             ()
-// class FText                        Temp_text_Variable_4                                             ()
-// class FText                        Temp_text_Variable_5                                             ()
-// class FText                        Temp_text_Variable_6                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
+// class FText                        Temp_text_Variable_2                                             (None)
+// class FText                        Temp_text_Variable_3                                             (None)
+// class FText                        Temp_text_Variable_4                                             (None)
+// class FText                        Temp_text_Variable_5                                             (None)
+// class FText                        Temp_text_Variable_6                                             (None)
 // enum class EFortEventWindowEligibilityTemp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable_1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -149,18 +188,18 @@ void UShowdownEventTileInfo_C::EventColorize()
 // enum class ESlateVisibility        Temp_byte_Variable_8                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_9                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable_7                                             ()
-// class FText                        Temp_text_Variable_8                                             ()
-// class FText                        Temp_text_Variable_9                                             ()
-// class FText                        Temp_text_Variable_10                                            ()
-// class FText                        Temp_text_Variable_11                                            ()
-// class FText                        Temp_text_Variable_12                                            ()
+// class FText                        Temp_text_Variable_7                                             (None)
+// class FText                        Temp_text_Variable_8                                             (None)
+// class FText                        Temp_text_Variable_9                                             (None)
+// class FText                        Temp_text_Variable_10                                            (None)
+// class FText                        Temp_text_Variable_11                                            (None)
+// class FText                        Temp_text_Variable_12                                            (None)
 // float                              Temp_float_Variable_2                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_13                                            ()
-// class FText                        Temp_text_Variable_14                                            ()
-// class FText                        Temp_text_Variable_15                                            ()
-// class FText                        Temp_text_Variable_16                                            ()
-// class FText                        Temp_text_Variable_17                                            ()
+// class FText                        Temp_text_Variable_13                                            (None)
+// class FText                        Temp_text_Variable_14                                            (None)
+// class FText                        Temp_text_Variable_15                                            (None)
+// class FText                        Temp_text_Variable_16                                            (None)
+// class FText                        Temp_text_Variable_17                                            (None)
 // bool                               Temp_bool_Variable_2                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortShowdownEventState Temp_byte_Variable_10                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable_4                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -185,10 +224,10 @@ void UShowdownEventTileInfo_C::EventColorize()
 // enum class ESlateVisibility        Temp_byte_Variable_20                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_21                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortShowdownEventState Temp_byte_Variable_22                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_18                                            ()
-// class FText                        Temp_text_Variable_19                                            ()
+// class FText                        Temp_text_Variable_18                                            (None)
+// class FText                        Temp_text_Variable_19                                            (None)
 // bool                               K2Node_CustomEvent_In_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable_20                                            ()
+// class FText                        Temp_text_Variable_20                                            (None)
 // int32                              K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidgetAnimation*            K2Node_Select_Default_2                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_PauseAnimation_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -212,7 +251,7 @@ void UShowdownEventTileInfo_C::EventColorize()
 // float                              K2Node_Select_Default_4                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_3                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_21                                            ()
+// class FText                        Temp_text_Variable_21                                            (None)
 // class UWidgetAnimation*            K2Node_Select_Default_5                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetStartTime_ReturnValue_2                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_PauseAnimation_ReturnValue_4                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -230,7 +269,7 @@ void UShowdownEventTileInfo_C::EventColorize()
 // float                              CallFunc_Subtract_FloatFloat_ReturnValue_3                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Add_FloatFloat_ReturnValue_3                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_5                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_22                                            ()
+// class FText                        Temp_text_Variable_22                                            (None)
 // class FString                      CallFunc_GetEventId_ReturnValue                                  (ZeroConstructor, HasGetValueTypeHash)
 // float                              CallFunc_PauseAnimation_ReturnValue_8                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetStartTime_ReturnValue_4                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -269,14 +308,14 @@ void UShowdownEventTileInfo_C::EventColorize()
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_10                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Subtract_FloatFloat_ReturnValue_7                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_CustomEvent_In                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable_23                                            ()
+// class FText                        Temp_text_Variable_23                                            (None)
 // struct FDateTime                   CallFunc_GetEventBeginTime_ReturnValue                           (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetCurrentEventScore_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetEventDateAsText_ReturnValue                          ()
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
+// class FText                        CallFunc_GetEventDateAsText_ReturnValue                          (None)
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
 // int32                              CallFunc_GetBestEventScore_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            ()
-// class FText                        Temp_text_Variable_24                                            ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            (None)
+// class FText                        Temp_text_Variable_24                                            (None)
 // float                              CallFunc_RGBToHSV_H                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_RGBToHSV_S                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_RGBToHSV_V                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -293,7 +332,7 @@ void UShowdownEventTileInfo_C::EventColorize()
 // float                              CallFunc_BreakColor_G                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakColor_B                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakColor_A                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_25                                            ()
+// class FText                        Temp_text_Variable_25                                            (None)
 // float                              CallFunc_Add_FloatFloat_ReturnValue_9                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Add_FloatFloat_ReturnValue_10                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Add_FloatFloat_ReturnValue_11                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -302,21 +341,21 @@ void UShowdownEventTileInfo_C::EventColorize()
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicFontMaterial_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateFontInfo              K2Node_MakeStruct_SlateFontInfo                                  (HasGetValueTypeHash)
 // struct FSlateFontInfo              K2Node_MakeStruct_SlateFontInfo_1                                (HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_26                                            ()
-// class FText                        Temp_text_Variable_27                                            ()
-// class FText                        Temp_text_Variable_28                                            ()
-// class FText                        Temp_text_Variable_29                                            ()
+// class FText                        Temp_text_Variable_26                                            (None)
+// class FText                        Temp_text_Variable_27                                            (None)
+// class FText                        Temp_text_Variable_28                                            (None)
+// class FText                        Temp_text_Variable_29                                            (None)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue_1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_30                                            ()
-// class FText                        Temp_text_Variable_31                                            ()
-// class FText                        Temp_text_Variable_32                                            ()
-// class FText                        Temp_text_Variable_33                                            ()
-// class FText                        Temp_text_Variable_34                                            ()
+// class FText                        Temp_text_Variable_30                                            (None)
+// class FText                        Temp_text_Variable_31                                            (None)
+// class FText                        Temp_text_Variable_32                                            (None)
+// class FText                        Temp_text_Variable_33                                            (None)
+// class FText                        Temp_text_Variable_34                                            (None)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicFontMaterial_ReturnValue_1                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateFontInfo              K2Node_MakeStruct_SlateFontInfo_2                                (HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_35                                            ()
+// class FText                        Temp_text_Variable_35                                            (None)
 // struct FSlateFontInfo              K2Node_MakeStruct_SlateFontInfo_3                                (HasGetValueTypeHash)
-// class FText                        Temp_text_Variable_36                                            ()
+// class FText                        Temp_text_Variable_36                                            (None)
 // enum class EFortShowdownEventState Temp_byte_Variable_24                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Temp_float_Variable_5                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_8                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -327,7 +366,7 @@ void UShowdownEventTileInfo_C::EventColorize()
 // float                              K2Node_Select_Default_8                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue_12                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FDateTime                   CallFunc_GetEventEndTime_ReturnValue                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetEventDateAsText_ReturnValue_1                        ()
+// class FText                        CallFunc_GetEventDateAsText_ReturnValue_1                        (None)
 // float                              Temp_float_Variable_7                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_10                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_GetEventWindowRoundNumber_ReturnValue                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -352,10 +391,10 @@ void UShowdownEventTileInfo_C::EventColorize()
 // enum class EFortEventWindowEligibilityCallFunc_GetEventWindowEligibility_ReturnValue_1                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortShowdownEventState CallFunc_GetEventTimeState_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInterface*          K2Node_Select_Default_14                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_15                                         ()
+// class FText                        K2Node_Select_Default_15                                         (None)
 // enum class EFortShowdownEventState CallFunc_GetEventPlayerParticipationState_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_16                                         ()
-// class FText                        K2Node_Select_Default_17                                         ()
+// class FText                        K2Node_Select_Default_16                                         (None)
+// class FText                        K2Node_Select_Default_17                                         (None)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue_1                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default_18                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue_2                       (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -365,14 +404,17 @@ void UShowdownEventTileInfo_C::EventColorize()
 // enum class ESlateVisibility        K2Node_Select_Default_19                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_BooleanOR_ReturnValue_1                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue_5                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default_20                                         ()
+// class FText                        K2Node_Select_Default_20                                         (None)
 // bool                               CallFunc_BooleanOR_ReturnValue_2                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UShowdownEventTileInfo_C::ExecuteUbergraph_ShowdownEventTileInfo(int32 EntryPoint, const class FString& CallFunc_GetTournamentSeriesId_ReturnValue, float Temp_float_Variable, enum class EFortShowdownEventState Temp_byte_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class FText Temp_text_Variable_2, class FText Temp_text_Variable_3, class FText Temp_text_Variable_4, class FText Temp_text_Variable_5, class FText Temp_text_Variable_6, enum class EFortEventWindowEligibility Temp_byte_Variable_1, int32 Temp_int_Variable, int32 Temp_int_Variable_1, int32 Temp_int_Variable_2, int32 Temp_int_Variable_3, enum class EFortEventWindowEligibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, enum class ESlateVisibility Temp_byte_Variable_6, enum class EFortEventWindowEligibility Temp_byte_Variable_7, class UMaterialInterface* Temp_object_Variable, class UMaterialInterface* Temp_object_Variable_1, class UMaterialInterface* Temp_object_Variable_2, class UMaterialInterface* Temp_object_Variable_3, float Temp_float_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_8, enum class ESlateVisibility Temp_byte_Variable_9, bool Temp_bool_Variable_1, class FText Temp_text_Variable_7, class FText Temp_text_Variable_8, class FText Temp_text_Variable_9, class FText Temp_text_Variable_10, class FText Temp_text_Variable_11, class FText Temp_text_Variable_12, float Temp_float_Variable_2, class FText Temp_text_Variable_13, class FText Temp_text_Variable_14, class FText Temp_text_Variable_15, class FText Temp_text_Variable_16, class FText Temp_text_Variable_17, bool Temp_bool_Variable_2, enum class EFortShowdownEventState Temp_byte_Variable_10, int32 Temp_int_Variable_4, int32 Temp_int_Variable_5, bool Temp_bool_Variable_3, bool Temp_bool_Variable_4, float Temp_float_Variable_3, bool Temp_bool_Variable_5, float Temp_float_Variable_4, bool Temp_bool_Variable_6, float K2Node_Select_Default, enum class ESlateVisibility Temp_byte_Variable_11, enum class ESlateVisibility Temp_byte_Variable_12, enum class ESlateVisibility Temp_byte_Variable_13, enum class ESlateVisibility Temp_byte_Variable_14, enum class ESlateVisibility Temp_byte_Variable_15, enum class ESlateVisibility Temp_byte_Variable_16, enum class ESlateVisibility Temp_byte_Variable_17, bool Temp_bool_Variable_7, enum class ESlateVisibility Temp_byte_Variable_18, enum class ESlateVisibility Temp_byte_Variable_19, enum class ESlateVisibility Temp_byte_Variable_20, enum class ESlateVisibility Temp_byte_Variable_21, enum class EFortShowdownEventState Temp_byte_Variable_22, class FText Temp_text_Variable_18, class FText Temp_text_Variable_19, bool K2Node_CustomEvent_In_1, class FText Temp_text_Variable_20, int32 K2Node_Select_Default_1, class UWidgetAnimation* K2Node_Select_Default_2, float CallFunc_PauseAnimation_ReturnValue, float CallFunc_GetStartTime_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, float CallFunc_GetEndTime_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_2, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_GetStartTime_ReturnValue_1, float K2Node_Select_Default_3, bool CallFunc_LessEqual_FloatFloat_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, float CallFunc_PauseAnimation_ReturnValue_3, float CallFunc_GetEndTime_ReturnValue_1, float CallFunc_Add_FloatFloat_ReturnValue_1, float CallFunc_Subtract_FloatFloat_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, float K2Node_Select_Default_4, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class FText Temp_text_Variable_21, class UWidgetAnimation* K2Node_Select_Default_5, float CallFunc_GetStartTime_ReturnValue_2, float CallFunc_PauseAnimation_ReturnValue_4, float CallFunc_PauseAnimation_ReturnValue_5, float CallFunc_PauseAnimation_ReturnValue_6, float CallFunc_PauseAnimation_ReturnValue_7, bool CallFunc_LessEqual_FloatFloat_ReturnValue_2, float CallFunc_Add_FloatFloat_ReturnValue_2, float CallFunc_GetEndTime_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_4, float CallFunc_Subtract_FloatFloat_ReturnValue_2, float CallFunc_GetStartTime_ReturnValue_3, float CallFunc_GetEndTime_ReturnValue_3, bool CallFunc_LessEqual_FloatFloat_ReturnValue_3, float CallFunc_Subtract_FloatFloat_ReturnValue_3, float CallFunc_Add_FloatFloat_ReturnValue_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_5, class FText Temp_text_Variable_22, const class FString& CallFunc_GetEventId_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_8, float CallFunc_GetStartTime_ReturnValue_4, float CallFunc_PauseAnimation_ReturnValue_9, bool CallFunc_LessEqual_FloatFloat_ReturnValue_4, float CallFunc_Add_FloatFloat_ReturnValue_4, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_6, float CallFunc_GetEndTime_ReturnValue_4, float CallFunc_PauseAnimation_ReturnValue_10, float CallFunc_Subtract_FloatFloat_ReturnValue_4, float CallFunc_GetStartTime_ReturnValue_5, float K2Node_Select_Default_6, bool CallFunc_LessEqual_FloatFloat_ReturnValue_5, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_7, float CallFunc_PauseAnimation_ReturnValue_11, float CallFunc_GetEndTime_ReturnValue_5, float CallFunc_Add_FloatFloat_ReturnValue_5, float CallFunc_Subtract_FloatFloat_ReturnValue_5, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_8, enum class EFortShowdownPinState CallFunc_GetEventPinState_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, float CallFunc_PauseAnimation_ReturnValue_12, float CallFunc_GetStartTime_ReturnValue_6, float CallFunc_PauseAnimation_ReturnValue_13, bool CallFunc_LessEqual_FloatFloat_ReturnValue_6, float CallFunc_Add_FloatFloat_ReturnValue_6, float CallFunc_GetEndTime_ReturnValue_6, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_9, float CallFunc_Subtract_FloatFloat_ReturnValue_6, float CallFunc_PauseAnimation_ReturnValue_14, float CallFunc_GetStartTime_ReturnValue_7, float CallFunc_PauseAnimation_ReturnValue_15, bool CallFunc_LessEqual_FloatFloat_ReturnValue_7, float CallFunc_Add_FloatFloat_ReturnValue_7, float CallFunc_GetEndTime_ReturnValue_7, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_10, float CallFunc_Subtract_FloatFloat_ReturnValue_7, bool K2Node_CustomEvent_In, class FText Temp_text_Variable_23, const struct FDateTime& CallFunc_GetEventBeginTime_ReturnValue, int32 CallFunc_GetCurrentEventScore_ReturnValue, class FText CallFunc_GetEventDateAsText_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, int32 CallFunc_GetBestEventScore_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue_1, class FText Temp_text_Variable_24, float CallFunc_RGBToHSV_H, float CallFunc_RGBToHSV_S, float CallFunc_RGBToHSV_V, float CallFunc_RGBToHSV_A, float CallFunc_RGBToHSV_H_1, float CallFunc_RGBToHSV_S_1, float CallFunc_RGBToHSV_V_1, float CallFunc_RGBToHSV_A_1, float CallFunc_Add_FloatFloat_ReturnValue_8, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FLinearColor& CallFunc_HSVToRGB_ReturnValue, const struct FLinearColor& CallFunc_HSVToRGB_ReturnValue_1, float CallFunc_BreakColor_R, float CallFunc_BreakColor_G, float CallFunc_BreakColor_B, float CallFunc_BreakColor_A, class FText Temp_text_Variable_25, float CallFunc_Add_FloatFloat_ReturnValue_9, float CallFunc_Add_FloatFloat_ReturnValue_10, float CallFunc_Add_FloatFloat_ReturnValue_11, enum class EFortShowdownEventState Temp_byte_Variable_23, const struct FLinearColor& CallFunc_MakeColor_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicFontMaterial_ReturnValue, const struct FSlateFontInfo& K2Node_MakeStruct_SlateFontInfo, const struct FSlateFontInfo& K2Node_MakeStruct_SlateFontInfo_1, class FText Temp_text_Variable_26, class FText Temp_text_Variable_27, class FText Temp_text_Variable_28, class FText Temp_text_Variable_29, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, class FText Temp_text_Variable_30, class FText Temp_text_Variable_31, class FText Temp_text_Variable_32, class FText Temp_text_Variable_33, class FText Temp_text_Variable_34, class UMaterialInstanceDynamic* CallFunc_GetDynamicFontMaterial_ReturnValue_1, const struct FSlateFontInfo& K2Node_MakeStruct_SlateFontInfo_2, class FText Temp_text_Variable_35, const struct FSlateFontInfo& K2Node_MakeStruct_SlateFontInfo_3, class FText Temp_text_Variable_36, enum class EFortShowdownEventState Temp_byte_Variable_24, float Temp_float_Variable_5, bool Temp_bool_Variable_8, float Temp_float_Variable_6, float K2Node_Select_Default_7, bool Temp_bool_Variable_9, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_11, float K2Node_Select_Default_8, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_12, const struct FDateTime& CallFunc_GetEventEndTime_ReturnValue, class FText CallFunc_GetEventDateAsText_ReturnValue_1, float Temp_float_Variable_7, bool Temp_bool_Variable_10, int32 CallFunc_GetEventWindowRoundNumber_ReturnValue, float K2Node_Select_Default_9, bool CallFunc_Greater_IntInt_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_13, int32 CallFunc_GetEventWindowSessionNumber_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, float Temp_float_Variable_8, bool CallFunc_BooleanAND_ReturnValue, bool Temp_bool_Variable_11, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_2, float K2Node_Select_Default_10, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_14, float Temp_float_Variable_9, bool Temp_bool_Variable_12, enum class EFortEventWindowEligibility CallFunc_GetEventWindowEligibility_ReturnValue, float K2Node_Select_Default_11, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_15, int32 K2Node_Select_Default_12, enum class ESlateVisibility K2Node_Select_Default_13, enum class EFortEventWindowEligibility CallFunc_GetEventWindowEligibility_ReturnValue_1, enum class EFortShowdownEventState CallFunc_GetEventTimeState_ReturnValue, class UMaterialInterface* K2Node_Select_Default_14, class FText K2Node_Select_Default_15, enum class EFortShowdownEventState CallFunc_GetEventPlayerParticipationState_ReturnValue, class FText K2Node_Select_Default_16, class FText K2Node_Select_Default_17, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default_18, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_3, bool CallFunc_EqualEqual_ByteByte_ReturnValue_4, enum class ESlateVisibility K2Node_Select_Default_19, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_5, class FText K2Node_Select_Default_20, bool CallFunc_BooleanOR_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("ShowdownEventTileInfo_C", "ExecuteUbergraph_ShowdownEventTileInfo");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTileInfo_C_ExecuteUbergraph_ShowdownEventTileInfo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTileInfo_C", "ExecuteUbergraph_ShowdownEventTileInfo");
+
+	Params::UShowdownEventTileInfo_C_ExecuteUbergraph_ShowdownEventTileInfo_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetTournamentSeriesId_ReturnValue = CallFunc_GetTournamentSeriesId_ReturnValue;
@@ -635,12 +677,14 @@ void UShowdownEventTileInfo_C::ExecuteUbergraph_ShowdownEventTileInfo(int32 Entr
 
 void UShowdownEventTileInfo_C::MultiRoundSession__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("ShowdownEventTileInfo_C", "MultiRoundSession__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTileInfo_C_MultiRoundSession__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTileInfo_C", "MultiRoundSession__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -652,9 +696,12 @@ void UShowdownEventTileInfo_C::MultiRoundSession__DelegateSignature()
 
 void UShowdownEventTileInfo_C::SetDisplayInfo__DelegateSignature(const struct FFortTournamentDisplayInfo& DisplayInfo)
 {
-	static auto Func = Class->GetFunction("ShowdownEventTileInfo_C", "SetDisplayInfo__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTileInfo_C_SetDisplayInfo__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTileInfo_C", "SetDisplayInfo__DelegateSignature");
+
+	Params::UShowdownEventTileInfo_C_SetDisplayInfo__DelegateSignature_Params Parms{};
 
 	Parms.DisplayInfo = DisplayInfo;
 
@@ -670,9 +717,12 @@ void UShowdownEventTileInfo_C::SetDisplayInfo__DelegateSignature(const struct FF
 
 void UShowdownEventTileInfo_C::SetEventState__DelegateSignature(enum class EFortShowdownEventState EventState)
 {
-	static auto Func = Class->GetFunction("ShowdownEventTileInfo_C", "SetEventState__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UShowdownEventTileInfo_C_SetEventState__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ShowdownEventTileInfo_C", "SetEventState__DelegateSignature");
+
+	Params::UShowdownEventTileInfo_C_SetEventState__DelegateSignature_Params Parms{};
 
 	Parms.EventState = EventState;
 
@@ -682,6 +732,4 @@ void UShowdownEventTileInfo_C::SetEventState__DelegateSignature(enum class EFort
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

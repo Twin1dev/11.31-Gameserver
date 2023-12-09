@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -18,14 +15,11 @@ class UTimeSynchronizationSource : public UObject
 {
 public:
 	bool                                         bUseForSynchronization;                            // 0x28(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_194F[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4FF[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        FrameOffset;                                       // 0x2C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("TimeSynchronizationSource");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UTimeSynchronizationSource* GetDefaultObj();
 
 };
 
@@ -36,11 +30,8 @@ class UFixedFrameRateCustomTimeStep : public UEngineCustomTimeStep
 public:
 	struct FFrameRate                            FixedFrameRate;                                    // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("FixedFrameRateCustomTimeStep");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UFixedFrameRateCustomTimeStep* GetDefaultObj();
 
 };
 
@@ -50,11 +41,8 @@ class UTimeManagementBlueprintLibrary : public UBlueprintFunctionLibrary
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("TimeManagementBlueprintLibrary");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UTimeManagementBlueprintLibrary* GetDefaultObj();
 
 	struct FFrameTime TransformTime(struct FFrameTime& SourceTime, struct FFrameRate& SourceRate, struct FFrameRate& DestinationRate);
 	struct FFrameNumber Subtract_FrameNumberInteger(const struct FFrameNumber& A, int32 B);
@@ -76,6 +64,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

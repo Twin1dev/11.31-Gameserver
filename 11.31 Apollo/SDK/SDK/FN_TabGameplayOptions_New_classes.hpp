@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,11 +16,8 @@ class UTabGameplayOptions_New_C : public UFortTabGameplayOptions_TempNew
 public:
 	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x330(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("TabGameplayOptions_New_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UTabGameplayOptions_New_C* GetDefaultObj();
 
 	void SettingValueChanged(float Value);
 	void CenterOnTab();
@@ -32,6 +26,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

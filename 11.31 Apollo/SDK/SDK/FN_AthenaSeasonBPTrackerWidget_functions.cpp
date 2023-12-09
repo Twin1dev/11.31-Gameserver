@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaSeasonBPTrackerWidget.AthenaSeasonBPTrackerWidget_C
+// (None)
+
+class UClass* UAthenaSeasonBPTrackerWidget_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaSeasonBPTrackerWidget_C");
+
+	return Clss;
+}
+
+
+// AthenaSeasonBPTrackerWidget_C AthenaSeasonBPTrackerWidget.Default__AthenaSeasonBPTrackerWidget_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaSeasonBPTrackerWidget_C* UAthenaSeasonBPTrackerWidget_C::GetDefaultObj()
+{
+	static class UAthenaSeasonBPTrackerWidget_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaSeasonBPTrackerWidget_C*>(UAthenaSeasonBPTrackerWidget_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaSeasonBPTrackerWidget.AthenaSeasonBPTrackerWidget_C.FadOutHowToMission
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAthenaSeasonBPTrackerWidget_C::FadOutHowToMission(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonBPTrackerWidget_C", "FadOutHowToMission");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonBPTrackerWidget_C_FadOutHowToMission_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonBPTrackerWidget_C", "FadOutHowToMission");
+
+	Params::UAthenaSeasonBPTrackerWidget_C_FadOutHowToMission_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -40,9 +68,12 @@ void UAthenaSeasonBPTrackerWidget_C::FadOutHowToMission(class UUMGSequencePlayer
 
 void UAthenaSeasonBPTrackerWidget_C::ShowHowToMission(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonBPTrackerWidget_C", "ShowHowToMission");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonBPTrackerWidget_C_ShowHowToMission_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonBPTrackerWidget_C", "ShowHowToMission");
+
+	Params::UAthenaSeasonBPTrackerWidget_C_ShowHowToMission_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -58,9 +89,12 @@ void UAthenaSeasonBPTrackerWidget_C::ShowHowToMission(class UUMGSequencePlayer* 
 
 void UAthenaSeasonBPTrackerWidget_C::OnAccountInfoChanged(struct FFortPublicAccountInfo& Result)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonBPTrackerWidget_C", "OnAccountInfoChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonBPTrackerWidget_C_OnAccountInfoChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonBPTrackerWidget_C", "OnAccountInfoChanged");
+
+	Params::UAthenaSeasonBPTrackerWidget_C_OnAccountInfoChanged_Params Parms{};
 
 	Parms.Result = Result;
 
@@ -82,14 +116,17 @@ void UAthenaSeasonBPTrackerWidget_C::OnAccountInfoChanged(struct FFortPublicAcco
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_Divide_FloatFloat_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
-// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
+// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            (None)
 
 void UAthenaSeasonBPTrackerWidget_C::ExecuteUbergraph_AthenaSeasonBPTrackerWidget(int32 EntryPoint, const struct FFortPublicAccountInfo& K2Node_Event_Result, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, int32 CallFunc_Clamp_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue_1, bool CallFunc_GreaterEqual_IntInt_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaSeasonBPTrackerWidget_C", "ExecuteUbergraph_AthenaSeasonBPTrackerWidget");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaSeasonBPTrackerWidget_C", "ExecuteUbergraph_AthenaSeasonBPTrackerWidget");
+
+	Params::UAthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_Result = K2Node_Event_Result;
@@ -110,6 +147,4 @@ void UAthenaSeasonBPTrackerWidget_C::ExecuteUbergraph_AthenaSeasonBPTrackerWidge
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

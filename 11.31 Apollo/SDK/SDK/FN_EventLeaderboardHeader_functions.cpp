@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass EventLeaderboardHeader.EventLeaderboardHeader_C
+// (None)
+
+class UClass* UEventLeaderboardHeader_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("EventLeaderboardHeader_C");
+
+	return Clss;
+}
+
+
+// EventLeaderboardHeader_C EventLeaderboardHeader.Default__EventLeaderboardHeader_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UEventLeaderboardHeader_C* UEventLeaderboardHeader_C::GetDefaultObj()
+{
+	static class UEventLeaderboardHeader_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UEventLeaderboardHeader_C*>(UEventLeaderboardHeader_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function EventLeaderboardHeader.EventLeaderboardHeader_C.RefreshDataBP
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UEventLeaderboardHeader_C::RefreshDataBP()
 {
-	static auto Func = Class->GetFunction("EventLeaderboardHeader_C", "RefreshDataBP");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardHeader_C_RefreshDataBP_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardHeader_C", "RefreshDataBP");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -35,14 +62,17 @@ void UEventLeaderboardHeader_C::RefreshDataBP()
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetWindowRoundDisplayString_ReturnValue                 ()
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
+// class FText                        CallFunc_GetWindowRoundDisplayString_ReturnValue                 (None)
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     (None)
 
 void UEventLeaderboardHeader_C::ExecuteUbergraph_EventLeaderboardHeader(int32 EntryPoint, class FText CallFunc_GetWindowRoundDisplayString_ReturnValue, const struct FSlateColor& K2Node_MakeStruct_SlateColor)
 {
-	static auto Func = Class->GetFunction("EventLeaderboardHeader_C", "ExecuteUbergraph_EventLeaderboardHeader");
+	static class UFunction* Func = nullptr;
 
-	Params::UEventLeaderboardHeader_C_ExecuteUbergraph_EventLeaderboardHeader_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("EventLeaderboardHeader_C", "ExecuteUbergraph_EventLeaderboardHeader");
+
+	Params::UEventLeaderboardHeader_C_ExecuteUbergraph_EventLeaderboardHeader_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetWindowRoundDisplayString_ReturnValue = CallFunc_GetWindowRoundDisplayString_ReturnValue;
@@ -54,6 +84,4 @@ void UEventLeaderboardHeader_C::ExecuteUbergraph_EventLeaderboardHeader(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

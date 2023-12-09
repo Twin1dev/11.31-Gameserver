@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass AthenaDirectAcquisitionMTXDetails.AthenaDirectAcquisitionMTXDetails_C
+// (None)
+
+class UClass* UAthenaDirectAcquisitionMTXDetails_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaDirectAcquisitionMTXDetails_C");
+
+	return Clss;
+}
+
+
+// AthenaDirectAcquisitionMTXDetails_C AthenaDirectAcquisitionMTXDetails.Default__AthenaDirectAcquisitionMTXDetails_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaDirectAcquisitionMTXDetails_C* UAthenaDirectAcquisitionMTXDetails_C::GetDefaultObj()
+{
+	static class UAthenaDirectAcquisitionMTXDetails_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaDirectAcquisitionMTXDetails_C*>(UAthenaDirectAcquisitionMTXDetails_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AthenaDirectAcquisitionMTXDetails.AthenaDirectAcquisitionMTXDetails_C.InitAffiliateInfo
@@ -26,7 +51,7 @@ namespace SDK
 // enum class ESubGame                CallFunc_GetCurrentSubGame_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetAffiliateName_ReturnValue                            (ConstParm, ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Len_ReturnValue                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortRuntimeOptions*         CallFunc_GetRuntimeOptions_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -37,9 +62,12 @@ namespace SDK
 
 void UAthenaDirectAcquisitionMTXDetails_C::InitAffiliateInfo(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_Not_PreBool_ReturnValue, class UFortMcpContext* CallFunc_GetContext_ReturnValue, enum class ESubGame CallFunc_GetCurrentSubGame_ReturnValue, const class FString& CallFunc_GetAffiliateName_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, int32 CallFunc_Len_ReturnValue, class UFortRuntimeOptions* CallFunc_GetRuntimeOptions_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_BooleanAND_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "InitAffiliateInfo");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionMTXDetails_C_InitAffiliateInfo_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "InitAffiliateInfo");
+
+	Params::UAthenaDirectAcquisitionMTXDetails_C_InitAffiliateInfo_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -70,9 +98,12 @@ void UAthenaDirectAcquisitionMTXDetails_C::InitAffiliateInfo(bool Temp_bool_Vari
 
 class UWidget* UAthenaDirectAcquisitionMTXDetails_C::GetWidgetForFramingViewedItem()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "GetWidgetForFramingViewedItem");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionMTXDetails_C_GetWidgetForFramingViewedItem_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "GetWidgetForFramingViewedItem");
+
+	Params::UAthenaDirectAcquisitionMTXDetails_C_GetWidgetForFramingViewedItem_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -99,9 +130,12 @@ class UWidget* UAthenaDirectAcquisitionMTXDetails_C::GetWidgetForFramingViewedIt
 
 void UAthenaDirectAcquisitionMTXDetails_C::InitPurchaseButton(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, class UFortMcpContext* CallFunc_GetContext_ReturnValue, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, bool CallFunc_IsPriceInMTX_ReturnValue, const class FString& CallFunc_GetOfferId_ReturnValue, bool CallFunc_IsOfferCompletelyFree_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, enum class EOfferPurchaseError CallFunc_CanPurchaseOffer_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "InitPurchaseButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionMTXDetails_C_InitPurchaseButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "InitPurchaseButton");
+
+	Params::UAthenaDirectAcquisitionMTXDetails_C_InitPurchaseButton_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
@@ -126,12 +160,14 @@ void UAthenaDirectAcquisitionMTXDetails_C::InitPurchaseButton(enum class ESlateV
 
 void UAthenaDirectAcquisitionMTXDetails_C::PopDetails()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "PopDetails");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionMTXDetails_C_PopDetails_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "PopDetails");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -143,7 +179,7 @@ void UAthenaDirectAcquisitionMTXDetails_C::PopDetails()
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortMtxDetailsAttribute    CallFunc_Array_Get_Item                                          ()
+// struct FFortMtxDetailsAttribute    CallFunc_Array_Get_Item                                          (None)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -155,8 +191,8 @@ void UAthenaDirectAcquisitionMTXDetails_C::PopDetails()
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetBonusQuantity_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetBaseQuantity_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
-// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
+// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            (None)
 // int32                              CallFunc_GetBonusQuantity_ReturnValue_1                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortMtxStoreOfferType  CallFunc_GetFortStoreOfferType_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -167,13 +203,13 @@ void UAthenaDirectAcquisitionMTXDetails_C::PopDetails()
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue_2                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue_3                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetDescription_ReturnValue                              ()
-// class FText                        CallFunc_GetSalePrice_SalePrice                                  ()
+// class FText                        CallFunc_GetDescription_ReturnValue                              (None)
+// class FText                        CallFunc_GetSalePrice_SalePrice                                  (None)
 // bool                               CallFunc_GetSalePrice_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetNormalPrice_ReturnValue                              ()
-// class FText                        CallFunc_GetName_ReturnValue                                     ()
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        CallFunc_GetNormalPrice_ReturnValue                              (None)
+// class FText                        CallFunc_GetName_ReturnValue                                     (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 // enum class ESlateVisibility        Temp_byte_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable_4                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -189,9 +225,12 @@ void UAthenaDirectAcquisitionMTXDetails_C::PopDetails()
 
 void UAthenaDirectAcquisitionMTXDetails_C::Init(class UFortMtxOfferData* DisplayAsset, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, const struct FFortMtxDetailsAttribute& CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, class UFortMtxOfferData* CallFunc_GetOfferDisplayAsset_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_2, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_1, int32 CallFunc_GetBonusQuantity_ReturnValue, int32 CallFunc_GetBaseQuantity_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue_1, int32 CallFunc_GetBonusQuantity_ReturnValue_1, enum class EFortMtxStoreOfferType CallFunc_GetFortStoreOfferType_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_2, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_3, class FText CallFunc_GetDescription_ReturnValue, class FText CallFunc_GetSalePrice_SalePrice, bool CallFunc_GetSalePrice_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, class FText CallFunc_GetNormalPrice_ReturnValue, class FText CallFunc_GetName_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility K2Node_Select_Default_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UStoreMain_OfferDetailsAttribute_C* CallFunc_Create_ReturnValue, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue, enum class ESlateVisibility Temp_byte_Variable_5, bool Temp_bool_Variable_2, enum class ESlateVisibility K2Node_Select_Default_2, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "Init");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionMTXDetails_C_Init_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "Init");
+
+	Params::UAthenaDirectAcquisitionMTXDetails_C_Init_Params Parms{};
 
 	Parms.DisplayAsset = DisplayAsset;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
@@ -253,9 +292,12 @@ void UAthenaDirectAcquisitionMTXDetails_C::Init(class UFortMtxOfferData* Display
 
 void UAthenaDirectAcquisitionMTXDetails_C::HandleBack(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "HandleBack");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionMTXDetails_C_HandleBack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "HandleBack");
+
+	Params::UAthenaDirectAcquisitionMTXDetails_C_HandleBack_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -275,9 +317,12 @@ void UAthenaDirectAcquisitionMTXDetails_C::HandleBack(bool* PassThrough)
 
 void UAthenaDirectAcquisitionMTXDetails_C::HandlePurchaseComplete(bool bSuccess, TArray<struct FPurchasedItemInfo>& PurchasedItems, const class FString& OfferId)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "HandlePurchaseComplete");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionMTXDetails_C_HandlePurchaseComplete_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "HandlePurchaseComplete");
+
+	Params::UAthenaDirectAcquisitionMTXDetails_C_HandlePurchaseComplete_Params Parms{};
 
 	Parms.bSuccess = bSuccess;
 	Parms.PurchasedItems = PurchasedItems;
@@ -295,9 +340,12 @@ void UAthenaDirectAcquisitionMTXDetails_C::HandlePurchaseComplete(bool bSuccess,
 
 void UAthenaDirectAcquisitionMTXDetails_C::BndEvt__PanelButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BndEvt__PanelButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionMTXDetails_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BndEvt__PanelButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaDirectAcquisitionMTXDetails_C_BndEvt__PanelButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -313,9 +361,12 @@ void UAthenaDirectAcquisitionMTXDetails_C::BndEvt__PanelButton_K2Node_ComponentB
 
 void UAthenaDirectAcquisitionMTXDetails_C::BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionMTXDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaDirectAcquisitionMTXDetails_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -331,9 +382,12 @@ void UAthenaDirectAcquisitionMTXDetails_C::BndEvt__PurchaseButton_K2Node_Compone
 
 void UAthenaDirectAcquisitionMTXDetails_C::BndEvt__GiftButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BndEvt__GiftButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionMTXDetails_C_BndEvt__GiftButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BndEvt__GiftButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaDirectAcquisitionMTXDetails_C_BndEvt__GiftButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -348,12 +402,14 @@ void UAthenaDirectAcquisitionMTXDetails_C::BndEvt__GiftButton_K2Node_ComponentBo
 
 void UAthenaDirectAcquisitionMTXDetails_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionMTXDetails_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -364,8 +420,8 @@ void UAthenaDirectAcquisitionMTXDetails_C::BP_OnActivated()
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAthenaAccountContext*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAthenaAccountContext*       CallFunc_GetContext_ReturnValue_1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetCurrentSeasonNumberAsText_ReturnValue                ()
-// class FText                        CallFunc_GetCurrentSeasonNumberAsText_ReturnValue_1              ()
+// class FText                        CallFunc_GetCurrentSeasonNumberAsText_ReturnValue                (None)
+// class FText                        CallFunc_GetCurrentSeasonNumberAsText_ReturnValue_1              (None)
 // bool                               K2Node_CustomEvent_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<struct FPurchasedItemInfo>  K2Node_CustomEvent_PurchasedItems                                (ConstParm, ZeroConstructor, ReferenceParm)
 // class FString                      K2Node_CustomEvent_OfferId                                       (ZeroConstructor, HasGetValueTypeHash)
@@ -373,7 +429,7 @@ void UAthenaDirectAcquisitionMTXDetails_C::BP_OnActivated()
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // class UAthenaAccountContext*       CallFunc_GetContext_ReturnValue_2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetCurrentChapterNumberAsText_ReturnValue               ()
+// class FText                        CallFunc_GetCurrentChapterNumberAsText_ReturnValue               (None)
 // class FString                      CallFunc_GetOfferId_ReturnValue                                  (ZeroConstructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate_1                           (ZeroConstructor, NoDestructor)
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue_1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -405,9 +461,12 @@ void UAthenaDirectAcquisitionMTXDetails_C::BP_OnActivated()
 
 void UAthenaDirectAcquisitionMTXDetails_C::ExecuteUbergraph_AthenaDirectAcquisitionMTXDetails(int32 EntryPoint, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue_1, class FText CallFunc_GetCurrentSeasonNumberAsText_ReturnValue, class FText CallFunc_GetCurrentSeasonNumberAsText_ReturnValue_1, bool K2Node_CustomEvent_bSuccess, TArray<struct FPurchasedItemInfo>& K2Node_CustomEvent_PurchasedItems, const class FString& K2Node_CustomEvent_OfferId, const struct FDataTableRowHandle& K2Node_MakeStruct_DataTableRowHandle, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue_2, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, class FText CallFunc_GetCurrentChapterNumberAsText_ReturnValue, const class FString& CallFunc_GetOfferId_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_1, class UFortMcpContext* CallFunc_GetContext_ReturnValue_3, const class FString& CallFunc_GetOfferId_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable, class UCommonButton* K2Node_ComponentBoundEvent_Button_2, bool CallFunc_HandleBack_PassThrough, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, bool CallFunc_IsMobileGame_ReturnValue, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_2, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_IsGiftable_ReturnValue, const class FString& CallFunc_GetOfferId_ReturnValue_2, class UCommonButton* K2Node_ComponentBoundEvent_Button, enum class EOfferPurchaseError CallFunc_CanGiftOffer_ReturnValue, class UFortMcpContext* CallFunc_GetContext_ReturnValue_4, bool K2Node_SwitchEnum_CmpSuccess, enum class EOfferPurchaseError CallFunc_PurchaseOffer_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue_1, class UGiftingScreen_C* CallFunc_Create_ReturnValue, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_3, bool Temp_bool_Variable, class UFortMcpContext* CallFunc_GetContext_ReturnValue_5, enum class EOfferPurchaseError CallFunc_CanPurchaseOffer_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "ExecuteUbergraph_AthenaDirectAcquisitionMTXDetails");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionMTXDetails_C_ExecuteUbergraph_AthenaDirectAcquisitionMTXDetails_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "ExecuteUbergraph_AthenaDirectAcquisitionMTXDetails");
+
+	Params::UAthenaDirectAcquisitionMTXDetails_C_ExecuteUbergraph_AthenaDirectAcquisitionMTXDetails_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -457,6 +516,4 @@ void UAthenaDirectAcquisitionMTXDetails_C::ExecuteUbergraph_AthenaDirectAcquisit
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass PlayerSurveyMultipleChoiceListItemWidgetInterface.PlayerSurveyMultipleChoiceListItemWidgetInterface_C
+// (None)
+
+class UClass* IPlayerSurveyMultipleChoiceListItemWidgetInterface_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("PlayerSurveyMultipleChoiceListItemWidgetInterface_C");
+
+	return Clss;
+}
+
+
+// PlayerSurveyMultipleChoiceListItemWidgetInterface_C PlayerSurveyMultipleChoiceListItemWidgetInterface.Default__PlayerSurveyMultipleChoiceListItemWidgetInterface_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class IPlayerSurveyMultipleChoiceListItemWidgetInterface_C* IPlayerSurveyMultipleChoiceListItemWidgetInterface_C::GetDefaultObj()
+{
+	static class IPlayerSurveyMultipleChoiceListItemWidgetInterface_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<IPlayerSurveyMultipleChoiceListItemWidgetInterface_C*>(IPlayerSurveyMultipleChoiceListItemWidgetInterface_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PlayerSurveyMultipleChoiceListItemWidgetInterface.PlayerSurveyMultipleChoiceListItemWidgetInterface_C.SetIndex
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void IPlayerSurveyMultipleChoiceListItemWidgetInterface_C::SetIndex(int32 Value)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyMultipleChoiceListItemWidgetInterface_C", "SetIndex");
+	static class UFunction* Func = nullptr;
 
-	Params::IPlayerSurveyMultipleChoiceListItemWidgetInterface_C_SetIndex_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyMultipleChoiceListItemWidgetInterface_C", "SetIndex");
+
+	Params::IPlayerSurveyMultipleChoiceListItemWidgetInterface_C_SetIndex_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -40,9 +68,12 @@ void IPlayerSurveyMultipleChoiceListItemWidgetInterface_C::SetIndex(int32 Value)
 
 void IPlayerSurveyMultipleChoiceListItemWidgetInterface_C::SetChoiceData(const struct FFortPlayerSurveyQuestionChoice& Value)
 {
-	static auto Func = Class->GetFunction("PlayerSurveyMultipleChoiceListItemWidgetInterface_C", "SetChoiceData");
+	static class UFunction* Func = nullptr;
 
-	Params::IPlayerSurveyMultipleChoiceListItemWidgetInterface_C_SetChoiceData_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("PlayerSurveyMultipleChoiceListItemWidgetInterface_C", "SetChoiceData");
+
+	Params::IPlayerSurveyMultipleChoiceListItemWidgetInterface_C_SetChoiceData_Params Parms{};
 
 	Parms.Value = Value;
 
@@ -52,6 +83,4 @@ void IPlayerSurveyMultipleChoiceListItemWidgetInterface_C::SetChoiceData(const s
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

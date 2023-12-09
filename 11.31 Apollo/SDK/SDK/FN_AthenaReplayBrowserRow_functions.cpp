@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaReplayBrowserRow.AthenaReplayBrowserRow_C
+// (None)
+
+class UClass* UAthenaReplayBrowserRow_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaReplayBrowserRow_C");
+
+	return Clss;
+}
+
+
+// AthenaReplayBrowserRow_C AthenaReplayBrowserRow.Default__AthenaReplayBrowserRow_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaReplayBrowserRow_C* UAthenaReplayBrowserRow_C::GetDefaultObj()
+{
+	static class UAthenaReplayBrowserRow_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaReplayBrowserRow_C*>(UAthenaReplayBrowserRow_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaReplayBrowserRow.AthenaReplayBrowserRow_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UAthenaReplayBrowserRow_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("AthenaReplayBrowserRow_C", "BP_OnSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaReplayBrowserRow_C_BP_OnSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaReplayBrowserRow_C", "BP_OnSelected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UAthenaReplayBrowserRow_C::BP_OnSelected()
 
 void UAthenaReplayBrowserRow_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("AthenaReplayBrowserRow_C", "BP_OnDeselected");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaReplayBrowserRow_C_BP_OnDeselected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaReplayBrowserRow_C", "BP_OnDeselected");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UAthenaReplayBrowserRow_C::BP_OnDeselected()
 
 void UAthenaReplayBrowserRow_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("AthenaReplayBrowserRow_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaReplayBrowserRow_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaReplayBrowserRow_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void UAthenaReplayBrowserRow_C::BP_OnHovered()
 
 void UAthenaReplayBrowserRow_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("AthenaReplayBrowserRow_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaReplayBrowserRow_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaReplayBrowserRow_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -88,9 +121,12 @@ void UAthenaReplayBrowserRow_C::BP_OnUnhovered()
 
 void UAthenaReplayBrowserRow_C::BP_HandleReplayStateSet(bool bSaved, bool Bold, bool bCorrupt)
 {
-	static auto Func = Class->GetFunction("AthenaReplayBrowserRow_C", "BP_HandleReplayStateSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaReplayBrowserRow_C_BP_HandleReplayStateSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaReplayBrowserRow_C", "BP_HandleReplayStateSet");
+
+	Params::UAthenaReplayBrowserRow_C_BP_HandleReplayStateSet_Params Parms{};
 
 	Parms.bSaved = bSaved;
 	Parms.Bold = Bold;
@@ -129,9 +165,12 @@ void UAthenaReplayBrowserRow_C::BP_HandleReplayStateSet(bool bSaved, bool Bold, 
 
 void UAthenaReplayBrowserRow_C::ExecuteUbergraph_AthenaReplayBrowserRow(int32 EntryPoint, bool K2Node_Event_bSaved, bool K2Node_Event_bOld, bool K2Node_Event_bCorrupt, bool Temp_bool_Variable, bool CallFunc_BooleanOR_ReturnValue, bool Temp_bool_Variable_1, const struct FLinearColor& Temp_struct_Variable, bool Temp_bool_Variable_2, const struct FLinearColor& Temp_struct_Variable_1, const struct FLinearColor& Temp_struct_Variable_2, const struct FLinearColor& K2Node_Select_Default, const struct FLinearColor& K2Node_Select_Default_1, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, bool CallFunc_GetSelected_ReturnValue, bool CallFunc_IsHovered_ReturnValue, bool CallFunc_GetSelected_ReturnValue_1, class UWidgetAnimation* K2Node_Select_Default_2, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("AthenaReplayBrowserRow_C", "ExecuteUbergraph_AthenaReplayBrowserRow");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaReplayBrowserRow_C", "ExecuteUbergraph_AthenaReplayBrowserRow");
+
+	Params::UAthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_bSaved = K2Node_Event_bSaved;
@@ -162,6 +201,4 @@ void UAthenaReplayBrowserRow_C::ExecuteUbergraph_AthenaReplayBrowserRow(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

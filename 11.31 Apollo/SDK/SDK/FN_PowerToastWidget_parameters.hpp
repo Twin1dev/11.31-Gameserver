@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,13 +12,6 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
-
-// 0x0 (0x0 - 0x0)
-// Function PowerToastWidget.PowerToastWidget_C.HandleAnimationDelay
-struct UPowerToastWidget_C_HandleAnimationDelay_Params
-{
-public:
-};
 
 // 0xA8 (0xA8 - 0x0)
 // Function PowerToastWidget.PowerToastWidget_C.OnMouseEnter
@@ -40,34 +30,6 @@ public:
 	struct FPointerEvent                         MouseEvent;                                        // 0x0(0x70)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function PowerToastWidget.PowerToastWidget_C.WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_0
-struct UPowerToastWidget_C_WidgetAnimationEvt_Intro_K2Node_WidgetAnimationEvent_0_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function PowerToastWidget.PowerToastWidget_C.WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_1
-struct UPowerToastWidget_C_WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_1_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function PowerToastWidget.PowerToastWidget_C.WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_2
-struct UPowerToastWidget_C_WidgetAnimationEvt_Outro_K2Node_WidgetAnimationEvent_2_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function PowerToastWidget.PowerToastWidget_C.ShowToast
-struct UPowerToastWidget_C_ShowToast_Params
-{
-public:
-};
-
 // 0x151 (0x151 - 0x0)
 // Function PowerToastWidget.PowerToastWidget_C.ExecuteUbergraph_PowerToastWidget
 struct UPowerToastWidget_C_ExecuteUbergraph_PowerToastWidget_Params
@@ -75,7 +37,7 @@ struct UPowerToastWidget_C_ExecuteUbergraph_PowerToastWidget_Params
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x4(0x10)(ZeroConstructor, NoDestructor)
-	uint8                                        Pad_5389[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_6399[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FTimerHandle                          CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x18(0x8)(NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGeometry                             K2Node_Event_MyGeometry;                           // 0x28(0x38)(IsPlainOldData, NoDestructor)
@@ -89,6 +51,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// Class ProceduralMeshComponent.KismetProceduralMeshLibrary
+// (None)
+
+class UClass* UKismetProceduralMeshLibrary::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("KismetProceduralMeshLibrary");
+
+	return Clss;
+}
+
+
+// KismetProceduralMeshLibrary ProceduralMeshComponent.Default__KismetProceduralMeshLibrary
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UKismetProceduralMeshLibrary* UKismetProceduralMeshLibrary::GetDefaultObj()
+{
+	static class UKismetProceduralMeshLibrary* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UKismetProceduralMeshLibrary*>(UKismetProceduralMeshLibrary::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ProceduralMeshComponent.KismetProceduralMeshLibrary.SliceProceduralMesh
@@ -28,9 +53,12 @@ namespace SDK
 
 void UKismetProceduralMeshLibrary::SliceProceduralMesh(class UProceduralMeshComponent* InProcMesh, const struct FVector& PlanePosition, const struct FVector& PlaneNormal, bool bCreateOtherHalf, class UProceduralMeshComponent** OutOtherHalfProcMesh, enum class EProcMeshSliceCapOption CapOption, class UMaterialInterface* CapMaterial)
 {
-	static auto Func = Class->GetFunction("KismetProceduralMeshLibrary", "SliceProceduralMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::UKismetProceduralMeshLibrary_SliceProceduralMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KismetProceduralMeshLibrary", "SliceProceduralMesh");
+
+	Params::UKismetProceduralMeshLibrary_SliceProceduralMesh_Params Parms{};
 
 	Parms.InProcMesh = InProcMesh;
 	Parms.PlanePosition = PlanePosition;
@@ -39,13 +67,13 @@ void UKismetProceduralMeshLibrary::SliceProceduralMesh(class UProceduralMeshComp
 	Parms.CapOption = CapOption;
 	Parms.CapMaterial = CapMaterial;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (OutOtherHalfProcMesh != nullptr)
 		*OutOtherHalfProcMesh = Parms.OutOtherHalfProcMesh;
@@ -67,36 +95,39 @@ void UKismetProceduralMeshLibrary::SliceProceduralMesh(class UProceduralMeshComp
 
 void UKismetProceduralMeshLibrary::GetSectionFromStaticMesh(class UStaticMesh* InMesh, int32 LODIndex, int32 SectionIndex, TArray<struct FVector>* Vertices, TArray<int32>* Triangles, TArray<struct FVector>* Normals, TArray<struct FVector2D>* UVs, TArray<struct FProcMeshTangent>* Tangents)
 {
-	static auto Func = Class->GetFunction("KismetProceduralMeshLibrary", "GetSectionFromStaticMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::UKismetProceduralMeshLibrary_GetSectionFromStaticMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KismetProceduralMeshLibrary", "GetSectionFromStaticMesh");
+
+	Params::UKismetProceduralMeshLibrary_GetSectionFromStaticMesh_Params Parms{};
 
 	Parms.InMesh = InMesh;
 	Parms.LODIndex = LODIndex;
 	Parms.SectionIndex = SectionIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Vertices != nullptr)
-		*Vertices = Parms.Vertices;
+		*Vertices = std::move(Parms.Vertices);
 
 	if (Triangles != nullptr)
-		*Triangles = Parms.Triangles;
+		*Triangles = std::move(Parms.Triangles);
 
 	if (Normals != nullptr)
-		*Normals = Parms.Normals;
+		*Normals = std::move(Parms.Normals);
 
 	if (UVs != nullptr)
-		*UVs = Parms.UVs;
+		*UVs = std::move(Parms.UVs);
 
 	if (Tangents != nullptr)
-		*Tangents = Parms.Tangents;
+		*Tangents = std::move(Parms.Tangents);
 
 }
 
@@ -114,35 +145,38 @@ void UKismetProceduralMeshLibrary::GetSectionFromStaticMesh(class UStaticMesh* I
 
 void UKismetProceduralMeshLibrary::GetSectionFromProceduralMesh(class UProceduralMeshComponent* InProcMesh, int32 SectionIndex, TArray<struct FVector>* Vertices, TArray<int32>* Triangles, TArray<struct FVector>* Normals, TArray<struct FVector2D>* UVs, TArray<struct FProcMeshTangent>* Tangents)
 {
-	static auto Func = Class->GetFunction("KismetProceduralMeshLibrary", "GetSectionFromProceduralMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::UKismetProceduralMeshLibrary_GetSectionFromProceduralMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KismetProceduralMeshLibrary", "GetSectionFromProceduralMesh");
+
+	Params::UKismetProceduralMeshLibrary_GetSectionFromProceduralMesh_Params Parms{};
 
 	Parms.InProcMesh = InProcMesh;
 	Parms.SectionIndex = SectionIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Vertices != nullptr)
-		*Vertices = Parms.Vertices;
+		*Vertices = std::move(Parms.Vertices);
 
 	if (Triangles != nullptr)
-		*Triangles = Parms.Triangles;
+		*Triangles = std::move(Parms.Triangles);
 
 	if (Normals != nullptr)
-		*Normals = Parms.Normals;
+		*Normals = std::move(Parms.Normals);
 
 	if (UVs != nullptr)
-		*UVs = Parms.UVs;
+		*UVs = std::move(Parms.UVs);
 
 	if (Tangents != nullptr)
-		*Tangents = Parms.Tangents;
+		*Tangents = std::move(Parms.Tangents);
 
 }
 
@@ -159,34 +193,37 @@ void UKismetProceduralMeshLibrary::GetSectionFromProceduralMesh(class UProcedura
 
 void UKismetProceduralMeshLibrary::GenerateBoxMesh(const struct FVector& BoxRadius, TArray<struct FVector>* Vertices, TArray<int32>* Triangles, TArray<struct FVector>* Normals, TArray<struct FVector2D>* UVs, TArray<struct FProcMeshTangent>* Tangents)
 {
-	static auto Func = Class->GetFunction("KismetProceduralMeshLibrary", "GenerateBoxMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::UKismetProceduralMeshLibrary_GenerateBoxMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KismetProceduralMeshLibrary", "GenerateBoxMesh");
+
+	Params::UKismetProceduralMeshLibrary_GenerateBoxMesh_Params Parms{};
 
 	Parms.BoxRadius = BoxRadius;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Vertices != nullptr)
-		*Vertices = Parms.Vertices;
+		*Vertices = std::move(Parms.Vertices);
 
 	if (Triangles != nullptr)
-		*Triangles = Parms.Triangles;
+		*Triangles = std::move(Parms.Triangles);
 
 	if (Normals != nullptr)
-		*Normals = Parms.Normals;
+		*Normals = std::move(Parms.Normals);
 
 	if (UVs != nullptr)
-		*UVs = Parms.UVs;
+		*UVs = std::move(Parms.UVs);
 
 	if (Tangents != nullptr)
-		*Tangents = Parms.Tangents;
+		*Tangents = std::move(Parms.Tangents);
 
 }
 
@@ -203,30 +240,33 @@ void UKismetProceduralMeshLibrary::GenerateBoxMesh(const struct FVector& BoxRadi
 
 void UKismetProceduralMeshLibrary::CreateGridMeshWelded(int32 NumX, int32 NumY, TArray<int32>* Triangles, TArray<struct FVector>* Vertices, TArray<struct FVector2D>* UVs, float GridSpacing)
 {
-	static auto Func = Class->GetFunction("KismetProceduralMeshLibrary", "CreateGridMeshWelded");
+	static class UFunction* Func = nullptr;
 
-	Params::UKismetProceduralMeshLibrary_CreateGridMeshWelded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KismetProceduralMeshLibrary", "CreateGridMeshWelded");
+
+	Params::UKismetProceduralMeshLibrary_CreateGridMeshWelded_Params Parms{};
 
 	Parms.NumX = NumX;
 	Parms.NumY = NumY;
 	Parms.GridSpacing = GridSpacing;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Triangles != nullptr)
-		*Triangles = Parms.Triangles;
+		*Triangles = std::move(Parms.Triangles);
 
 	if (Vertices != nullptr)
-		*Vertices = Parms.Vertices;
+		*Vertices = std::move(Parms.Vertices);
 
 	if (UVs != nullptr)
-		*UVs = Parms.UVs;
+		*UVs = std::move(Parms.UVs);
 
 }
 
@@ -241,24 +281,27 @@ void UKismetProceduralMeshLibrary::CreateGridMeshWelded(int32 NumX, int32 NumY, 
 
 void UKismetProceduralMeshLibrary::CreateGridMeshTriangles(int32 NumX, int32 NumY, bool bWinding, TArray<int32>* Triangles)
 {
-	static auto Func = Class->GetFunction("KismetProceduralMeshLibrary", "CreateGridMeshTriangles");
+	static class UFunction* Func = nullptr;
 
-	Params::UKismetProceduralMeshLibrary_CreateGridMeshTriangles_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KismetProceduralMeshLibrary", "CreateGridMeshTriangles");
+
+	Params::UKismetProceduralMeshLibrary_CreateGridMeshTriangles_Params Parms{};
 
 	Parms.NumX = NumX;
 	Parms.NumY = NumY;
 	Parms.bWinding = bWinding;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Triangles != nullptr)
-		*Triangles = Parms.Triangles;
+		*Triangles = std::move(Parms.Triangles);
 
 }
 
@@ -276,33 +319,36 @@ void UKismetProceduralMeshLibrary::CreateGridMeshTriangles(int32 NumX, int32 Num
 
 void UKismetProceduralMeshLibrary::CreateGridMeshSplit(int32 NumX, int32 NumY, TArray<int32>* Triangles, TArray<struct FVector>* Vertices, TArray<struct FVector2D>* UVs, TArray<struct FVector2D>* UV1s, float GridSpacing)
 {
-	static auto Func = Class->GetFunction("KismetProceduralMeshLibrary", "CreateGridMeshSplit");
+	static class UFunction* Func = nullptr;
 
-	Params::UKismetProceduralMeshLibrary_CreateGridMeshSplit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KismetProceduralMeshLibrary", "CreateGridMeshSplit");
+
+	Params::UKismetProceduralMeshLibrary_CreateGridMeshSplit_Params Parms{};
 
 	Parms.NumX = NumX;
 	Parms.NumY = NumY;
 	Parms.GridSpacing = GridSpacing;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Triangles != nullptr)
-		*Triangles = Parms.Triangles;
+		*Triangles = std::move(Parms.Triangles);
 
 	if (Vertices != nullptr)
-		*Vertices = Parms.Vertices;
+		*Vertices = std::move(Parms.Vertices);
 
 	if (UVs != nullptr)
-		*UVs = Parms.UVs;
+		*UVs = std::move(Parms.UVs);
 
 	if (UV1s != nullptr)
-		*UV1s = Parms.UV1s;
+		*UV1s = std::move(Parms.UV1s);
 
 }
 
@@ -317,22 +363,25 @@ void UKismetProceduralMeshLibrary::CreateGridMeshSplit(int32 NumX, int32 NumY, T
 
 void UKismetProceduralMeshLibrary::CopyProceduralMeshFromStaticMeshComponent(class UStaticMeshComponent* StaticMeshComponent, int32 LODIndex, class UProceduralMeshComponent* ProcMeshComponent, bool bCreateCollision)
 {
-	static auto Func = Class->GetFunction("KismetProceduralMeshLibrary", "CopyProceduralMeshFromStaticMeshComponent");
+	static class UFunction* Func = nullptr;
 
-	Params::UKismetProceduralMeshLibrary_CopyProceduralMeshFromStaticMeshComponent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KismetProceduralMeshLibrary", "CopyProceduralMeshFromStaticMeshComponent");
+
+	Params::UKismetProceduralMeshLibrary_CopyProceduralMeshFromStaticMeshComponent_Params Parms{};
 
 	Parms.StaticMeshComponent = StaticMeshComponent;
 	Parms.LODIndex = LODIndex;
 	Parms.ProcMeshComponent = ProcMeshComponent;
 	Parms.bCreateCollision = bCreateCollision;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -348,9 +397,12 @@ void UKismetProceduralMeshLibrary::CopyProceduralMeshFromStaticMeshComponent(cla
 
 void UKismetProceduralMeshLibrary::ConvertQuadToTriangles(TArray<int32>& Triangles, int32 Vert0, int32 Vert1, int32 Vert2, int32 Vert3)
 {
-	static auto Func = Class->GetFunction("KismetProceduralMeshLibrary", "ConvertQuadToTriangles");
+	static class UFunction* Func = nullptr;
 
-	Params::UKismetProceduralMeshLibrary_ConvertQuadToTriangles_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KismetProceduralMeshLibrary", "ConvertQuadToTriangles");
+
+	Params::UKismetProceduralMeshLibrary_ConvertQuadToTriangles_Params Parms{};
 
 	Parms.Triangles = Triangles;
 	Parms.Vert0 = Vert0;
@@ -358,13 +410,13 @@ void UKismetProceduralMeshLibrary::ConvertQuadToTriangles(TArray<int32>& Triangl
 	Parms.Vert2 = Vert2;
 	Parms.Vert3 = Vert3;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -380,28 +432,59 @@ void UKismetProceduralMeshLibrary::ConvertQuadToTriangles(TArray<int32>& Triangl
 
 void UKismetProceduralMeshLibrary::CalculateTangentsForMesh(TArray<struct FVector>& Vertices, TArray<int32>& Triangles, TArray<struct FVector2D>& UVs, TArray<struct FVector>* Normals, TArray<struct FProcMeshTangent>* Tangents)
 {
-	static auto Func = Class->GetFunction("KismetProceduralMeshLibrary", "CalculateTangentsForMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::UKismetProceduralMeshLibrary_CalculateTangentsForMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("KismetProceduralMeshLibrary", "CalculateTangentsForMesh");
+
+	Params::UKismetProceduralMeshLibrary_CalculateTangentsForMesh_Params Parms{};
 
 	Parms.Vertices = Vertices;
 	Parms.Triangles = Triangles;
 	Parms.UVs = UVs;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	if (Normals != nullptr)
-		*Normals = Parms.Normals;
+		*Normals = std::move(Parms.Normals);
 
 	if (Tangents != nullptr)
-		*Tangents = Parms.Tangents;
+		*Tangents = std::move(Parms.Tangents);
 
+}
+
+
+// Class ProceduralMeshComponent.ProceduralMeshComponent
+// (SceneComponent, PrimitiveComponent)
+
+class UClass* UProceduralMeshComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ProceduralMeshComponent");
+
+	return Clss;
+}
+
+
+// ProceduralMeshComponent ProceduralMeshComponent.Default__ProceduralMeshComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UProceduralMeshComponent* UProceduralMeshComponent::GetDefaultObj()
+{
+	static class UProceduralMeshComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UProceduralMeshComponent*>(UProceduralMeshComponent::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -420,9 +503,12 @@ void UKismetProceduralMeshLibrary::CalculateTangentsForMesh(TArray<struct FVecto
 
 void UProceduralMeshComponent::UpdateMeshSection_LinearColor(int32 SectionIndex, TArray<struct FVector>& Vertices, TArray<struct FVector>& Normals, TArray<struct FVector2D>& UV0, TArray<struct FVector2D>& UV1, TArray<struct FVector2D>& UV2, TArray<struct FVector2D>& UV3, TArray<struct FLinearColor>& VertexColors, TArray<struct FProcMeshTangent>& Tangents)
 {
-	static auto Func = Class->GetFunction("ProceduralMeshComponent", "UpdateMeshSection_LinearColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UProceduralMeshComponent_UpdateMeshSection_LinearColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProceduralMeshComponent", "UpdateMeshSection_LinearColor");
+
+	Params::UProceduralMeshComponent_UpdateMeshSection_LinearColor_Params Parms{};
 
 	Parms.SectionIndex = SectionIndex;
 	Parms.Vertices = Vertices;
@@ -434,13 +520,13 @@ void UProceduralMeshComponent::UpdateMeshSection_LinearColor(int32 SectionIndex,
 	Parms.VertexColors = VertexColors;
 	Parms.Tangents = Tangents;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -457,9 +543,12 @@ void UProceduralMeshComponent::UpdateMeshSection_LinearColor(int32 SectionIndex,
 
 void UProceduralMeshComponent::UpdateMeshSection(int32 SectionIndex, TArray<struct FVector>& Vertices, TArray<struct FVector>& Normals, TArray<struct FVector2D>& UV0, TArray<struct FColor>& VertexColors, TArray<struct FProcMeshTangent>& Tangents)
 {
-	static auto Func = Class->GetFunction("ProceduralMeshComponent", "UpdateMeshSection");
+	static class UFunction* Func = nullptr;
 
-	Params::UProceduralMeshComponent_UpdateMeshSection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProceduralMeshComponent", "UpdateMeshSection");
+
+	Params::UProceduralMeshComponent_UpdateMeshSection_Params Parms{};
 
 	Parms.SectionIndex = SectionIndex;
 	Parms.Vertices = Vertices;
@@ -468,13 +557,13 @@ void UProceduralMeshComponent::UpdateMeshSection(int32 SectionIndex, TArray<stru
 	Parms.VertexColors = VertexColors;
 	Parms.Tangents = Tangents;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -487,20 +576,23 @@ void UProceduralMeshComponent::UpdateMeshSection(int32 SectionIndex, TArray<stru
 
 void UProceduralMeshComponent::SetMeshSectionVisible(int32 SectionIndex, bool bNewVisibility)
 {
-	static auto Func = Class->GetFunction("ProceduralMeshComponent", "SetMeshSectionVisible");
+	static class UFunction* Func = nullptr;
 
-	Params::UProceduralMeshComponent_SetMeshSectionVisible_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProceduralMeshComponent", "SetMeshSectionVisible");
+
+	Params::UProceduralMeshComponent_SetMeshSectionVisible_Params Parms{};
 
 	Parms.SectionIndex = SectionIndex;
 	Parms.bNewVisibility = bNewVisibility;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -513,19 +605,22 @@ void UProceduralMeshComponent::SetMeshSectionVisible(int32 SectionIndex, bool bN
 
 bool UProceduralMeshComponent::IsMeshSectionVisible(int32 SectionIndex)
 {
-	static auto Func = Class->GetFunction("ProceduralMeshComponent", "IsMeshSectionVisible");
+	static class UFunction* Func = nullptr;
 
-	Params::UProceduralMeshComponent_IsMeshSectionVisible_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProceduralMeshComponent", "IsMeshSectionVisible");
+
+	Params::UProceduralMeshComponent_IsMeshSectionVisible_Params Parms{};
 
 	Parms.SectionIndex = SectionIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -539,18 +634,21 @@ bool UProceduralMeshComponent::IsMeshSectionVisible(int32 SectionIndex)
 
 int32 UProceduralMeshComponent::GetNumSections()
 {
-	static auto Func = Class->GetFunction("ProceduralMeshComponent", "GetNumSections");
+	static class UFunction* Func = nullptr;
 
-	Params::UProceduralMeshComponent_GetNumSections_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProceduralMeshComponent", "GetNumSections");
+
+	Params::UProceduralMeshComponent_GetNumSections_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -574,9 +672,12 @@ int32 UProceduralMeshComponent::GetNumSections()
 
 void UProceduralMeshComponent::CreateMeshSection_LinearColor(int32 SectionIndex, TArray<struct FVector>& Vertices, TArray<int32>& Triangles, TArray<struct FVector>& Normals, TArray<struct FVector2D>& UV0, TArray<struct FVector2D>& UV1, TArray<struct FVector2D>& UV2, TArray<struct FVector2D>& UV3, TArray<struct FLinearColor>& VertexColors, TArray<struct FProcMeshTangent>& Tangents, bool bCreateCollision)
 {
-	static auto Func = Class->GetFunction("ProceduralMeshComponent", "CreateMeshSection_LinearColor");
+	static class UFunction* Func = nullptr;
 
-	Params::UProceduralMeshComponent_CreateMeshSection_LinearColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProceduralMeshComponent", "CreateMeshSection_LinearColor");
+
+	Params::UProceduralMeshComponent_CreateMeshSection_LinearColor_Params Parms{};
 
 	Parms.SectionIndex = SectionIndex;
 	Parms.Vertices = Vertices;
@@ -590,13 +691,13 @@ void UProceduralMeshComponent::CreateMeshSection_LinearColor(int32 SectionIndex,
 	Parms.Tangents = Tangents;
 	Parms.bCreateCollision = bCreateCollision;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -615,9 +716,12 @@ void UProceduralMeshComponent::CreateMeshSection_LinearColor(int32 SectionIndex,
 
 void UProceduralMeshComponent::CreateMeshSection(int32 SectionIndex, TArray<struct FVector>& Vertices, TArray<int32>& Triangles, TArray<struct FVector>& Normals, TArray<struct FVector2D>& UV0, TArray<struct FColor>& VertexColors, TArray<struct FProcMeshTangent>& Tangents, bool bCreateCollision)
 {
-	static auto Func = Class->GetFunction("ProceduralMeshComponent", "CreateMeshSection");
+	static class UFunction* Func = nullptr;
 
-	Params::UProceduralMeshComponent_CreateMeshSection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProceduralMeshComponent", "CreateMeshSection");
+
+	Params::UProceduralMeshComponent_CreateMeshSection_Params Parms{};
 
 	Parms.SectionIndex = SectionIndex;
 	Parms.Vertices = Vertices;
@@ -628,13 +732,13 @@ void UProceduralMeshComponent::CreateMeshSection(int32 SectionIndex, TArray<stru
 	Parms.Tangents = Tangents;
 	Parms.bCreateCollision = bCreateCollision;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -646,19 +750,22 @@ void UProceduralMeshComponent::CreateMeshSection(int32 SectionIndex, TArray<stru
 
 void UProceduralMeshComponent::ClearMeshSection(int32 SectionIndex)
 {
-	static auto Func = Class->GetFunction("ProceduralMeshComponent", "ClearMeshSection");
+	static class UFunction* Func = nullptr;
 
-	Params::UProceduralMeshComponent_ClearMeshSection_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProceduralMeshComponent", "ClearMeshSection");
+
+	Params::UProceduralMeshComponent_ClearMeshSection_Params Parms{};
 
 	Parms.SectionIndex = SectionIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -669,18 +776,20 @@ void UProceduralMeshComponent::ClearMeshSection(int32 SectionIndex)
 
 void UProceduralMeshComponent::ClearCollisionConvexMeshes()
 {
-	static auto Func = Class->GetFunction("ProceduralMeshComponent", "ClearCollisionConvexMeshes");
+	static class UFunction* Func = nullptr;
 
-	Params::UProceduralMeshComponent_ClearCollisionConvexMeshes_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProceduralMeshComponent", "ClearCollisionConvexMeshes");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -691,18 +800,20 @@ void UProceduralMeshComponent::ClearCollisionConvexMeshes()
 
 void UProceduralMeshComponent::ClearAllMeshSections()
 {
-	static auto Func = Class->GetFunction("ProceduralMeshComponent", "ClearAllMeshSections");
+	static class UFunction* Func = nullptr;
 
-	Params::UProceduralMeshComponent_ClearAllMeshSections_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProceduralMeshComponent", "ClearAllMeshSections");
 
 
-	auto Flags = Func->FunctionFlags;
+
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -714,24 +825,25 @@ void UProceduralMeshComponent::ClearAllMeshSections()
 
 void UProceduralMeshComponent::AddCollisionConvexMesh(const TArray<struct FVector>& ConvexVerts)
 {
-	static auto Func = Class->GetFunction("ProceduralMeshComponent", "AddCollisionConvexMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::UProceduralMeshComponent_AddCollisionConvexMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ProceduralMeshComponent", "AddCollisionConvexMesh");
+
+	Params::UProceduralMeshComponent_AddCollisionConvexMesh_Params Parms{};
 
 	Parms.ConvexVerts = ConvexVerts;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

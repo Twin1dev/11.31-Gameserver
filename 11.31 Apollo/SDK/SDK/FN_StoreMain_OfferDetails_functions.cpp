@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass StoreMain_OfferDetails.StoreMain_OfferDetails_C
+// (None)
+
+class UClass* UStoreMain_OfferDetails_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("StoreMain_OfferDetails_C");
+
+	return Clss;
+}
+
+
+// StoreMain_OfferDetails_C StoreMain_OfferDetails.Default__StoreMain_OfferDetails_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UStoreMain_OfferDetails_C* UStoreMain_OfferDetails_C::GetDefaultObj()
+{
+	static class UStoreMain_OfferDetails_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UStoreMain_OfferDetails_C*>(UStoreMain_OfferDetails_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function StoreMain_OfferDetails.StoreMain_OfferDetails_C.SetupCurrencyImage
@@ -33,9 +58,12 @@ namespace SDK
 
 void UStoreMain_OfferDetails_C::SetupCurrencyImage(class UFortAccountItemDefinition* PriceItem, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, TSoftObjectPtr<class UTexture2D> CallFunc_GetSmallPreviewImage_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, int32 CallFunc_GetPriceItem_RequiredItemCount, class UFortAccountItemDefinition* CallFunc_GetPriceItem_ReturnValue, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_1, bool CallFunc_IsPriceInRealMoney_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "SetupCurrencyImage");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_SetupCurrencyImage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "SetupCurrencyImage");
+
+	Params::UStoreMain_OfferDetails_C_SetupCurrencyImage_Params Parms{};
 
 	Parms.PriceItem = PriceItem;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -59,20 +87,23 @@ void UStoreMain_OfferDetails_C::SetupCurrencyImage(class UFortAccountItemDefinit
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        Temp_text_Variable_1                                             ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        Temp_text_Variable_1                                             (None)
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UIconTextButton_C*           K2Node_DynamicCast_AsIcon_Text_Button                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_AreGrantedItemsOwned_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default                                            ()
+// class FText                        K2Node_Select_Default                                            (None)
 
 void UStoreMain_OfferDetails_C::UpdatePurchaseButton(bool Temp_bool_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable_1, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess, bool CallFunc_AreGrantedItemsOwned_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class FText K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "UpdatePurchaseButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_UpdatePurchaseButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "UpdatePurchaseButton");
+
+	Params::UStoreMain_OfferDetails_C_UpdatePurchaseButton_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_text_Variable = Temp_text_Variable;
@@ -99,16 +130,19 @@ void UStoreMain_OfferDetails_C::UpdatePurchaseButton(bool Temp_bool_Variable, cl
 // class UFortMtxOfferData*           CallFunc_GetOfferDisplayAsset_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UStoreMain_OfferDetailsAttribute_C*CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFortMtxDetailsAttribute    CallFunc_Array_Get_Item                                          ()
+// struct FFortMtxDetailsAttribute    CallFunc_Array_Get_Item                                          (None)
 // class UVerticalBoxSlot*            CallFunc_AddChildToVerticalBox_ReturnValue                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UStoreMain_OfferDetails_C::InitDetailAttributes(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, class UFortMtxOfferData* CallFunc_GetOfferDisplayAsset_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UStoreMain_OfferDetailsAttribute_C* CallFunc_Create_ReturnValue, const struct FFortMtxDetailsAttribute& CallFunc_Array_Get_Item, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "InitDetailAttributes");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_InitDetailAttributes_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "InitDetailAttributes");
+
+	Params::UStoreMain_OfferDetails_C_InitDetailAttributes_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -136,9 +170,12 @@ void UStoreMain_OfferDetails_C::InitDetailAttributes(int32 Temp_int_Array_Index_
 
 void UStoreMain_OfferDetails_C::SetPurchaseButtonText(class FText ButtonText, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "SetPurchaseButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_SetPurchaseButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "SetPurchaseButtonText");
+
+	Params::UStoreMain_OfferDetails_C_SetPurchaseButtonText_Params Parms{};
 
 	Parms.ButtonText = ButtonText;
 	Parms.K2Node_DynamicCast_AsIcon_Text_Button = K2Node_DynamicCast_AsIcon_Text_Button;
@@ -158,9 +195,12 @@ void UStoreMain_OfferDetails_C::SetPurchaseButtonText(class FText ButtonText, cl
 
 bool UStoreMain_OfferDetails_C::IsGiftingStorefrontOffer(class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, bool CallFunc_IsGiftingStorefrontOffer_ReturnValue)
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "IsGiftingStorefrontOffer");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_IsGiftingStorefrontOffer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "IsGiftingStorefrontOffer");
+
+	Params::UStoreMain_OfferDetails_C_IsGiftingStorefrontOffer_Params Parms{};
 
 	Parms.CallFunc_GetOfferInfo_ReturnValue = CallFunc_GetOfferInfo_ReturnValue;
 	Parms.CallFunc_IsGiftingStorefrontOffer_ReturnValue = CallFunc_IsGiftingStorefrontOffer_ReturnValue;
@@ -182,9 +222,12 @@ bool UStoreMain_OfferDetails_C::IsGiftingStorefrontOffer(class UFortStoreFrontOf
 
 void UStoreMain_OfferDetails_C::GetCurrencyABAssetFromQuantity(int32 Quantity, class UFortMtxOfferData** DataAsset, class UFortMtxOfferData* CallFunc_Map_Find_Value, bool CallFunc_Map_Find_ReturnValue)
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "GetCurrencyABAssetFromQuantity");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_GetCurrencyABAssetFromQuantity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "GetCurrencyABAssetFromQuantity");
+
+	Params::UStoreMain_OfferDetails_C_GetCurrencyABAssetFromQuantity_Params Parms{};
 
 	Parms.Quantity = Quantity;
 	Parms.CallFunc_Map_Find_Value = CallFunc_Map_Find_Value;
@@ -220,11 +263,11 @@ void UStoreMain_OfferDetails_C::GetCurrencyABAssetFromQuantity(int32 Quantity, c
 // enum class ESlateVisibility        K2Node_Select_Default_1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue_2                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue_3                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetDescription_ReturnValue                              ()
+// class FText                        CallFunc_GetDescription_ReturnValue                              (None)
 // int32                              CallFunc_GetBonusQuantity_ReturnValue_1                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetBaseQuantity_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
-// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            ()
+// class FText                        CallFunc_Conv_IntToText_ReturnValue                              (None)
+// class FText                        CallFunc_Conv_IntToText_ReturnValue_1                            (None)
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue_4                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetTotalQuantity_ReturnValue_1                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_IntInt_ReturnValue_2                            (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -232,9 +275,12 @@ void UStoreMain_OfferDetails_C::GetCurrencyABAssetFromQuantity(int32 Quantity, c
 
 void UStoreMain_OfferDetails_C::InitCurrency(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_4, enum class ESlateVisibility Temp_byte_Variable_5, bool Temp_bool_Variable_2, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_1, int32 CallFunc_GetBonusQuantity_ReturnValue, int32 CallFunc_GetTotalQuantity_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_2, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_3, class FText CallFunc_GetDescription_ReturnValue, int32 CallFunc_GetBonusQuantity_ReturnValue_1, int32 CallFunc_GetBaseQuantity_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue_1, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_4, int32 CallFunc_GetTotalQuantity_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue_2, enum class ESlateVisibility K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "InitCurrency");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_InitCurrency_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "InitCurrency");
+
+	Params::UStoreMain_OfferDetails_C_InitCurrency_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
@@ -288,9 +334,12 @@ void UStoreMain_OfferDetails_C::InitCurrency(enum class ESlateVisibility Temp_by
 
 void UStoreMain_OfferDetails_C::InitStoreTypeVisuals(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, bool Temp_bool_Variable_1, enum class EFortMtxStoreOfferType CallFunc_GetFortStoreOfferType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "InitStoreTypeVisuals");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_InitStoreTypeVisuals_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "InitStoreTypeVisuals");
+
+	Params::UStoreMain_OfferDetails_C_InitStoreTypeVisuals_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
@@ -316,12 +365,14 @@ void UStoreMain_OfferDetails_C::InitStoreTypeVisuals(enum class ESlateVisibility
 
 void UStoreMain_OfferDetails_C::UnregisterInput()
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "UnregisterInput");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_UnregisterInput_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "UnregisterInput");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -334,9 +385,12 @@ void UStoreMain_OfferDetails_C::UnregisterInput()
 
 void UStoreMain_OfferDetails_C::RegisterInput(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FDataTableRowHandle& K2Node_MakeStruct_DataTableRowHandle)
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "RegisterInput");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_RegisterInput_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "RegisterInput");
+
+	Params::UStoreMain_OfferDetails_C_RegisterInput_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_MakeStruct_DataTableRowHandle = K2Node_MakeStruct_DataTableRowHandle;
@@ -353,9 +407,12 @@ void UStoreMain_OfferDetails_C::RegisterInput(UDelegateProperty_ K2Node_CreateDe
 
 void UStoreMain_OfferDetails_C::PopDetails(bool CallFunc_BP_HasValidMOTDParent_ReturnValue)
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "PopDetails");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_PopDetails_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "PopDetails");
+
+	Params::UStoreMain_OfferDetails_C_PopDetails_Params Parms{};
 
 	Parms.CallFunc_BP_HasValidMOTDParent_ReturnValue = CallFunc_BP_HasValidMOTDParent_ReturnValue;
 
@@ -393,11 +450,11 @@ void UStoreMain_OfferDetails_C::PopDetails(bool CallFunc_BP_HasValidMOTDParent_R
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue_3                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetSalePrice_SalePrice                                  ()
+// class FText                        CallFunc_GetSalePrice_SalePrice                                  (None)
 // bool                               CallFunc_GetSalePrice_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetNormalPrice_ReturnValue                              ()
-// class FText                        CallFunc_GetName_ReturnValue                                     ()
+// class FText                        CallFunc_GetNormalPrice_ReturnValue                              (None)
+// class FText                        CallFunc_GetName_ReturnValue                                     (None)
 // class UMaterialInterface*          Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInterface*          Temp_object_Variable_1                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue_2                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -410,9 +467,12 @@ void UStoreMain_OfferDetails_C::PopDetails(bool CallFunc_BP_HasValidMOTDParent_R
 
 void UStoreMain_OfferDetails_C::Init(class UFortMtxOfferData* DisplayAsset, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, class UFortMtxOfferData* CallFunc_GetOfferDisplayAsset_ReturnValue, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_1, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_2, int32 CallFunc_GetTotalQuantity_ReturnValue, int32 CallFunc_GetTotalQuantity_ReturnValue_1, class UFortMtxOfferData* CallFunc_GetCurrencyABAssetFromQuantity_DataAsset, class UFortMtxOfferData* CallFunc_GetCurrencyABAssetFromQuantity_DataAsset_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, enum class EFortMtxStoreOfferType CallFunc_GetFortStoreOfferType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, enum class EFortMtxStoreOfferType CallFunc_GetFortStoreOfferType_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable, class UFortExperimentContext* CallFunc_GetContext_ReturnValue, bool CallFunc_ShouldShowNewVBuckColorsJuly2019_ReturnValue, class UFortExperimentContext* CallFunc_GetContext_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_ShouldShowNewVBuckColorsJuly2019_ReturnValue_1, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue_3, class FText CallFunc_GetSalePrice_SalePrice, bool CallFunc_GetSalePrice_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, class FText CallFunc_GetNormalPrice_ReturnValue, class FText CallFunc_GetName_ReturnValue, class UMaterialInterface* Temp_object_Variable, class UMaterialInterface* Temp_object_Variable_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_2, bool Temp_bool_Variable_1, class UFortExperimentContext* CallFunc_GetContext_ReturnValue_2, bool CallFunc_ShouldShowNewVBuckCoinAssetsJuly2019_ReturnValue, class UMaterialInterface* K2Node_Select_Default_1, bool CallFunc_BooleanAND_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "Init");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_Init_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "Init");
+
+	Params::UStoreMain_OfferDetails_C_Init_Params Parms{};
 
 	Parms.DisplayAsset = DisplayAsset;
 	Parms.CallFunc_GetOfferInfo_ReturnValue = CallFunc_GetOfferInfo_ReturnValue;
@@ -467,9 +527,12 @@ void UStoreMain_OfferDetails_C::Init(class UFortMtxOfferData* DisplayAsset, clas
 
 void UStoreMain_OfferDetails_C::HandleBack(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "HandleBack");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_HandleBack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "HandleBack");
+
+	Params::UStoreMain_OfferDetails_C_HandleBack_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -486,12 +549,14 @@ void UStoreMain_OfferDetails_C::HandleBack(bool* PassThrough)
 
 void UStoreMain_OfferDetails_C::ResetPurchaseButtonText()
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "ResetPurchaseButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_ResetPurchaseButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "ResetPurchaseButtonText");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -502,12 +567,14 @@ void UStoreMain_OfferDetails_C::ResetPurchaseButtonText()
 
 void UStoreMain_OfferDetails_C::OnPurchasingStarted()
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "OnPurchasingStarted");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_OnPurchasingStarted_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "OnPurchasingStarted");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -518,12 +585,14 @@ void UStoreMain_OfferDetails_C::OnPurchasingStarted()
 
 void UStoreMain_OfferDetails_C::OnOfferSet()
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "OnOfferSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_OnOfferSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "OnOfferSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -535,9 +604,12 @@ void UStoreMain_OfferDetails_C::OnOfferSet()
 
 void UStoreMain_OfferDetails_C::ExecuteUbergraph_StoreMain_OfferDetails(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("StoreMain_OfferDetails_C", "ExecuteUbergraph_StoreMain_OfferDetails");
+	static class UFunction* Func = nullptr;
 
-	Params::UStoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("StoreMain_OfferDetails_C", "ExecuteUbergraph_StoreMain_OfferDetails");
+
+	Params::UStoreMain_OfferDetails_C_ExecuteUbergraph_StoreMain_OfferDetails_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -547,6 +619,4 @@ void UStoreMain_OfferDetails_C::ExecuteUbergraph_StoreMain_OfferDetails(int32 En
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

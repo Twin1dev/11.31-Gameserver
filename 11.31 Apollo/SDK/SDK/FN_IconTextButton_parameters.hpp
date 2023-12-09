@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -44,13 +41,6 @@ public:
 	enum class ESlateVisibility                  Temp_byte_Variable_1;                              // 0x1A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_TextIsEmpty_ReturnValue;                  // 0x1B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function IconTextButton.IconTextButton_C.SetInitialMouseKeyboardStyle
-struct UIconTextButton_C_SetInitialMouseKeyboardStyle_Params
-{
-public:
 };
 
 // 0x8 (0x8 - 0x0)
@@ -108,13 +98,13 @@ public:
 	bool                                         Temp_bool_Variable;                                // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Temp_bool_Variable_1;                              // 0x1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_TextIsEmpty_ReturnValue;                  // 0x2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4B24[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  CallFunc_GetDisplayText_ReturnValue;               // 0x8(0x18)()
-	class FText                                  K2Node_Select_Default;                             // 0x20(0x18)()
+	uint8                                        Pad_DFE[0x5];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_GetDisplayText_ReturnValue;               // 0x8(0x18)(None)
+	class FText                                  K2Node_Select_Default;                             // 0x20(0x18)(None)
 	bool                                         CallFunc_TextIsEmpty_ReturnValue_1;                // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x39(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4B25[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	class FText                                  K2Node_Select_Default_1;                           // 0x40(0x18)()
+	uint8                                        Pad_E02[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  K2Node_Select_Default_1;                           // 0x40(0x18)(None)
 };
 
 // 0x12 (0x12 - 0x0)
@@ -163,13 +153,6 @@ public:
 	class FText                                  ButtonText;                                        // 0x0(0x18)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function IconTextButton.IconTextButton_C.OnCurrentTextStyleChanged
-struct UIconTextButton_C_OnCurrentTextStyleChanged_Params
-{
-public:
-};
-
 // 0x1 (0x1 - 0x0)
 // Function IconTextButton.IconTextButton_C.PreConstruct
 struct UIconTextButton_C_PreConstruct_Params
@@ -202,27 +185,6 @@ public:
 	float                                        HeldPercent;                                       // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function IconTextButton.IconTextButton_C.OnActionComplete
-struct UIconTextButton_C_OnActionComplete_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function IconTextButton.IconTextButton_C.Construct
-struct UIconTextButton_C_Construct_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function IconTextButton.IconTextButton_C.Destruct
-struct UIconTextButton_C_Destruct_Params
-{
-public:
-};
-
 // 0x103 (0x103 - 0x0)
 // Function IconTextButton.IconTextButton_C.ExecuteUbergraph_IconTextButton
 struct UIconTextButton_C_ExecuteUbergraph_IconTextButton_Params
@@ -231,18 +193,18 @@ public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x4(0x10)(ZeroConstructor, NoDestructor)
 	bool                                         K2Node_Event_IsDesignTime;                         // 0x14(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4B26[0x3];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_E46[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonInputSubsystem*                 CallFunc_GetContext_ReturnValue;                   // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputSubsystem*                 CallFunc_GetContext_ReturnValue_1;                 // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputSubsystem*                 CallFunc_GetContext_ReturnValue_2;                 // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAnyChildren_ReturnValue;               // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ECommonInputType                  CallFunc_GetCurrentInputType_ReturnValue;          // 0x31(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4B27[0x6];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_E49[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonInputSubsystem*                 CallFunc_GetContext_ReturnValue_3;                 // 0x38(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ECommonInputType                  CallFunc_GetCurrentInputType_ReturnValue_1;        // 0x40(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable;                                // 0x41(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable_1;                              // 0x42(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4B28[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_E4C[0x5];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortTabButtonLabelInfo               K2Node_Event_TabLabelInfo;                         // 0x48(0xA0)(ConstParm)
 	struct FDataTableRowHandle                   K2Node_Event_NewTriggeredAction;                   // 0xE8(0x10)(ConstParm, NoDestructor)
 	float                                        K2Node_Event_HeldPercent;                          // 0xF8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -258,6 +220,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

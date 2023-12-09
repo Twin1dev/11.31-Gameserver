@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass WeakSpot.WeakSpot_C
+// (Actor)
+
+class UClass* AWeakSpot_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WeakSpot_C");
+
+	return Clss;
+}
+
+
+// WeakSpot_C WeakSpot.Default__WeakSpot_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AWeakSpot_C* AWeakSpot_C::GetDefaultObj()
+{
+	static class AWeakSpot_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AWeakSpot_C*>(AWeakSpot_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function WeakSpot.WeakSpot_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void AWeakSpot_C::UserConstructionScript(class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue)
 {
-	static auto Func = Class->GetFunction("WeakSpot_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::AWeakSpot_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WeakSpot_C", "UserConstructionScript");
+
+	Params::AWeakSpot_C_UserConstructionScript_Params Parms{};
 
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
 
@@ -39,12 +67,14 @@ void AWeakSpot_C::UserConstructionScript(class UMaterialInstanceDynamic* CallFun
 
 void AWeakSpot_C::ScaleDownParticleTL__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("WeakSpot_C", "ScaleDownParticleTL__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AWeakSpot_C_ScaleDownParticleTL__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WeakSpot_C", "ScaleDownParticleTL__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void AWeakSpot_C::ScaleDownParticleTL__FinishedFunc()
 
 void AWeakSpot_C::ScaleDownParticleTL__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("WeakSpot_C", "ScaleDownParticleTL__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::AWeakSpot_C_ScaleDownParticleTL__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WeakSpot_C", "ScaleDownParticleTL__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -71,12 +103,14 @@ void AWeakSpot_C::ScaleDownParticleTL__UpdateFunc()
 
 void AWeakSpot_C::OnHit()
 {
-	static auto Func = Class->GetFunction("WeakSpot_C", "OnHit");
+	static class UFunction* Func = nullptr;
 
-	Params::AWeakSpot_C_OnHit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WeakSpot_C", "OnHit");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -87,12 +121,14 @@ void AWeakSpot_C::OnHit()
 
 void AWeakSpot_C::HideMesh()
 {
-	static auto Func = Class->GetFunction("WeakSpot_C", "HideMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::AWeakSpot_C_HideMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WeakSpot_C", "HideMesh");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -103,12 +139,14 @@ void AWeakSpot_C::HideMesh()
 
 void AWeakSpot_C::OnFadeOut()
 {
-	static auto Func = Class->GetFunction("WeakSpot_C", "OnFadeOut");
+	static class UFunction* Func = nullptr;
 
-	Params::AWeakSpot_C_OnFadeOut_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WeakSpot_C", "OnFadeOut");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -119,12 +157,14 @@ void AWeakSpot_C::OnFadeOut()
 
 void AWeakSpot_C::OnStartDirectionEffect()
 {
-	static auto Func = Class->GetFunction("WeakSpot_C", "OnStartDirectionEffect");
+	static class UFunction* Func = nullptr;
 
-	Params::AWeakSpot_C_OnStartDirectionEffect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WeakSpot_C", "OnStartDirectionEffect");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -168,9 +208,12 @@ void AWeakSpot_C::OnStartDirectionEffect()
 
 void AWeakSpot_C::ExecuteUbergraph_WeakSpot(int32 EntryPoint, const struct FVector& CallFunc_Conv_FloatToVector_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FRotator& CallFunc_Conv_VectorToRotator_ReturnValue, float CallFunc_VSize_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_LessEqual_FloatFloat_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, int32 CallFunc_FFloor_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_FMax_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_FClamp_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue_1, const struct FTransform& CallFunc_MakeTransform_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldTransform_SweepHitResult, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_1, int32 CallFunc_Array_LastIndex_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue_2, int32 CallFunc_Clamp_ReturnValue, class USoundBase* CallFunc_Array_Get_Item)
 {
-	static auto Func = Class->GetFunction("WeakSpot_C", "ExecuteUbergraph_WeakSpot");
+	static class UFunction* Func = nullptr;
 
-	Params::AWeakSpot_C_ExecuteUbergraph_WeakSpot_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WeakSpot_C", "ExecuteUbergraph_WeakSpot");
+
+	Params::AWeakSpot_C_ExecuteUbergraph_WeakSpot_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_Conv_FloatToVector_ReturnValue = CallFunc_Conv_FloatToVector_ReturnValue;
@@ -212,6 +255,4 @@ void AWeakSpot_C::ExecuteUbergraph_WeakSpot(int32 EntryPoint, const struct FVect
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

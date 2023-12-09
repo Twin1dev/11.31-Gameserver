@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -23,17 +20,17 @@ struct FStructSerializerNumericTestStruct
 {
 public:
 	int8                                         Int8;                                              // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_445A[0x1];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28EC[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int16                                        Int16;                                             // 0x2(0x2)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        Int32;                                             // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int64                                        Int64;                                             // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                        UInt8;                                             // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_445B[0x1];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28EE[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	uint16                                       UInt16;                                            // 0x12(0x2)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint32                                       UInt32;                                            // 0x14(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint64                                       UInt64;                                            // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        Float;                                             // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_445C[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28EF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	double                                       Double;                                            // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -64,13 +61,13 @@ public:
 	class FString                                String;                                            // 0x18(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                  Text;                                              // 0x28(0x18)(NativeAccessSpecifierPublic)
 	struct FVector                               Vector;                                            // 0x40(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_445D[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28F2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FVector4                              Vector4;                                           // 0x50(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FRotator                              Rotator;                                           // 0x60(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_445E[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28F3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FQuat                                 Quat;                                              // 0x70(0x10)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	struct FColor                                Color;                                             // 0x80(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_445F[0xC];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_28F4[0xC];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x140 (0x140 - 0x0)
@@ -108,7 +105,7 @@ public:
 	int32                                        StaticSingleElement;                               // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        StaticInt32Array[0x3];                             // 0x14(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        StaticFloatArray[0x3];                             // 0x20(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4460[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28F7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FVector>                       VectorArray;                                       // 0x30(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FStructSerializerBuiltinTestStruct> StructArray;                                       // 0x40(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
@@ -131,9 +128,9 @@ struct FStructSerializerTestStruct
 public:
 	struct FStructSerializerNumericTestStruct    Numerics;                                          // 0x0(0x30)(NoDestructor, NativeAccessSpecifierPublic)
 	struct FStructSerializerBooleanTestStruct    Booleans;                                          // 0x30(0x3)(NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4461[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28F8[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructSerializerObjectTestStruct     Objects;                                           // 0x38(0xA0)(NativeAccessSpecifierPublic)
-	uint8                                        Pad_4462[0x8];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_28F9[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FStructSerializerBuiltinTestStruct    Builtins;                                          // 0xE0(0x90)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FStructSerializerArrayTestStruct      Arrays;                                            // 0x170(0x50)(NativeAccessSpecifierPublic)
 	struct FStructSerializerMapTestStruct        Maps;                                              // 0x1C0(0x140)(NativeAccessSpecifierPublic)
@@ -142,6 +139,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

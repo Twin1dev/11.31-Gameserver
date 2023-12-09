@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass BP_Creative_Billboard.BP_Creative_Billboard_C
+// (Actor)
+
+class UClass* ABP_Creative_Billboard_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BP_Creative_Billboard_C");
+
+	return Clss;
+}
+
+
+// BP_Creative_Billboard_C BP_Creative_Billboard.Default__BP_Creative_Billboard_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ABP_Creative_Billboard_C* ABP_Creative_Billboard_C::GetDefaultObj()
+{
+	static class ABP_Creative_Billboard_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ABP_Creative_Billboard_C*>(ABP_Creative_Billboard_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.GetCollisionStaticMesh
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 class UStaticMesh* ABP_Creative_Billboard_C::GetCollisionStaticMesh()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "GetCollisionStaticMesh");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_GetCollisionStaticMesh_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "GetCollisionStaticMesh");
+
+	Params::ABP_Creative_Billboard_C_GetCollisionStaticMesh_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -42,9 +70,12 @@ class UStaticMesh* ABP_Creative_Billboard_C::GetCollisionStaticMesh()
 
 TArray<class UMeshComponent*> ABP_Creative_Billboard_C::GetMeshComponents(TArray<class UMeshComponent*>& K2Node_MakeArray_Array)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "GetMeshComponents");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_GetMeshComponents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "GetMeshComponents");
+
+	Params::ABP_Creative_Billboard_C_GetMeshComponents_Params Parms{};
 
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 
@@ -64,9 +95,12 @@ TArray<class UMeshComponent*> ABP_Creative_Billboard_C::GetMeshComponents(TArray
 
 void ABP_Creative_Billboard_C::SetTextFont(class UUserWidget* CallFunc_GetUserWidgetObject_ReturnValue, class UCreative_Background_Widget_C* K2Node_DynamicCast_AsCreative_Background_Widget, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextFont");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_SetTextFont_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextFont");
+
+	Params::ABP_Creative_Billboard_C_SetTextFont_Params Parms{};
 
 	Parms.CallFunc_GetUserWidgetObject_ReturnValue = CallFunc_GetUserWidgetObject_ReturnValue;
 	Parms.K2Node_DynamicCast_AsCreative_Background_Widget = K2Node_DynamicCast_AsCreative_Background_Widget;
@@ -83,12 +117,14 @@ void ABP_Creative_Billboard_C::SetTextFont(class UUserWidget* CallFunc_GetUserWi
 
 void ABP_Creative_Billboard_C::OnRep_TextFont()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "OnRep_TextFont");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_OnRep_TextFont_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "OnRep_TextFont");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -105,9 +141,12 @@ void ABP_Creative_Billboard_C::OnRep_TextFont()
 
 void ABP_Creative_Billboard_C::SetVisibilityBasedOnState(enum class EFortMinigameState MinigameState, enum class EFortMinigameState CachedMinigameState, bool CallFunc_NotEqual_ByteByte_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue_1, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool K2Node_SwitchInteger_CmpSuccess)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "SetVisibilityBasedOnState");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_SetVisibilityBasedOnState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetVisibilityBasedOnState");
+
+	Params::ABP_Creative_Billboard_C_SetVisibilityBasedOnState_Params Parms{};
 
 	Parms.MinigameState = MinigameState;
 	Parms.CachedMinigameState = CachedMinigameState;
@@ -127,12 +166,14 @@ void ABP_Creative_Billboard_C::SetVisibilityBasedOnState(enum class EFortMinigam
 
 void ABP_Creative_Billboard_C::OnRep_bIsTextVisible()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "OnRep_bIsTextVisible");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_OnRep_bIsTextVisible_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "OnRep_bIsTextVisible");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -147,9 +188,12 @@ void ABP_Creative_Billboard_C::OnRep_bIsTextVisible()
 
 void ABP_Creative_Billboard_C::SetTextVisibility(bool Visible, class UUserWidget* CallFunc_GetUserWidgetObject_ReturnValue, class UCreative_Background_Widget_C* K2Node_DynamicCast_AsCreative_Background_Widget, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_SetTextVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextVisibility");
+
+	Params::ABP_Creative_Billboard_C_SetTextVisibility_Params Parms{};
 
 	Parms.Visible = Visible;
 	Parms.CallFunc_GetUserWidgetObject_ReturnValue = CallFunc_GetUserWidgetObject_ReturnValue;
@@ -167,12 +211,14 @@ void ABP_Creative_Billboard_C::SetTextVisibility(bool Visible, class UUserWidget
 
 void ABP_Creative_Billboard_C::OnRep_TextColor()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "OnRep_TextColor");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_OnRep_TextColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "OnRep_TextColor");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -183,12 +229,14 @@ void ABP_Creative_Billboard_C::OnRep_TextColor()
 
 void ABP_Creative_Billboard_C::OnRep_TextSize()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "OnRep_TextSize");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_OnRep_TextSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "OnRep_TextSize");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -199,12 +247,14 @@ void ABP_Creative_Billboard_C::OnRep_TextSize()
 
 void ABP_Creative_Billboard_C::OnRep_HorizontalTextAlignment()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "OnRep_HorizontalTextAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_OnRep_HorizontalTextAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "OnRep_HorizontalTextAlignment");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -215,12 +265,14 @@ void ABP_Creative_Billboard_C::OnRep_HorizontalTextAlignment()
 
 void ABP_Creative_Billboard_C::OnRep_BackgroundColor()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "OnRep_BackgroundColor");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_OnRep_BackgroundColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "OnRep_BackgroundColor");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -231,12 +283,14 @@ void ABP_Creative_Billboard_C::OnRep_BackgroundColor()
 
 void ABP_Creative_Billboard_C::OnRep_bShowBorder()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "OnRep_bShowBorder");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_OnRep_bShowBorder_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "OnRep_bShowBorder");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -249,9 +303,12 @@ void ABP_Creative_Billboard_C::OnRep_bShowBorder()
 
 void ABP_Creative_Billboard_C::SetViewDistance(float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "SetViewDistance");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_SetViewDistance_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetViewDistance");
+
+	Params::ABP_Creative_Billboard_C_SetViewDistance_Params Parms{};
 
 	Parms.CallFunc_Multiply_FloatFloat_ReturnValue = CallFunc_Multiply_FloatFloat_ReturnValue;
 	Parms.CallFunc_Subtract_FloatFloat_ReturnValue = CallFunc_Subtract_FloatFloat_ReturnValue;
@@ -270,9 +327,12 @@ void ABP_Creative_Billboard_C::SetViewDistance(float CallFunc_Multiply_FloatFloa
 
 void ABP_Creative_Billboard_C::SetTextColor(class UUserWidget* CallFunc_GetUserWidgetObject_ReturnValue, class UCreative_Background_Widget_C* K2Node_DynamicCast_AsCreative_Background_Widget, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextColor");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_SetTextColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextColor");
+
+	Params::ABP_Creative_Billboard_C_SetTextColor_Params Parms{};
 
 	Parms.CallFunc_GetUserWidgetObject_ReturnValue = CallFunc_GetUserWidgetObject_ReturnValue;
 	Parms.K2Node_DynamicCast_AsCreative_Background_Widget = K2Node_DynamicCast_AsCreative_Background_Widget;
@@ -290,26 +350,29 @@ void ABP_Creative_Billboard_C::SetTextColor(class UUserWidget* CallFunc_GetUserW
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_ColorToText_ReturnValue                            ()
+// class FText                        CallFunc_Conv_ColorToText_ReturnValue                            (None)
 // class FString                      CallFunc_Conv_ByteToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_2                           (HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_3                           (HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_ColorToText_ReturnValue_1                          ()
+// class FText                        CallFunc_Conv_ColorToText_ReturnValue_1                          (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_4                           (HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_BoolToText_ReturnValue                             ()
+// class FText                        CallFunc_Conv_BoolToText_ReturnValue                             (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_5                           (HasGetValueTypeHash)
-// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         ()
+// class FText                        CallFunc_Conv_StringToText_ReturnValue_1                         (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_6                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 
 void ABP_Creative_Billboard_C::UpdateProperties(bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, class FText CallFunc_Conv_ColorToText_ReturnValue, const class FString& CallFunc_Conv_ByteToString_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_2, class FText CallFunc_Conv_StringToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_3, class FText CallFunc_Conv_ColorToText_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_4, class FText CallFunc_Conv_BoolToText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_5, class FText CallFunc_Conv_StringToText_ReturnValue_1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_6, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "UpdateProperties");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_UpdateProperties_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "UpdateProperties");
+
+	Params::ABP_Creative_Billboard_C_UpdateProperties_Params Parms{};
 
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -344,9 +407,12 @@ void ABP_Creative_Billboard_C::UpdateProperties(bool CallFunc_IsDedicatedServer_
 
 void ABP_Creative_Billboard_C::SetTextAlignment(class UUserWidget* CallFunc_GetUserWidgetObject_ReturnValue, class UCreative_Background_Widget_C* K2Node_DynamicCast_AsCreative_Background_Widget, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextAlignment");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_SetTextAlignment_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextAlignment");
+
+	Params::ABP_Creative_Billboard_C_SetTextAlignment_Params Parms{};
 
 	Parms.CallFunc_GetUserWidgetObject_ReturnValue = CallFunc_GetUserWidgetObject_ReturnValue;
 	Parms.K2Node_DynamicCast_AsCreative_Background_Widget = K2Node_DynamicCast_AsCreative_Background_Widget;
@@ -367,15 +433,18 @@ void ABP_Creative_Billboard_C::SetTextAlignment(class UUserWidget* CallFunc_GetU
 // int32                              CallFunc_Conv_ByteToInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // class FString                      CallFunc_Conv_TextToString_ReturnValue                           (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void ABP_Creative_Billboard_C::ShowBorder(enum class ECollisionEnabled CollisionSetting, bool Temp_bool_Variable, const struct FRotator& K2Node_Select_Default, const struct FHitResult& CallFunc_K2_SetRelativeRotation_SweepHitResult, int32 CallFunc_Conv_ByteToInt_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, const class FString& CallFunc_Conv_TextToString_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "ShowBorder");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_ShowBorder_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "ShowBorder");
+
+	Params::ABP_Creative_Billboard_C_ShowBorder_Params Parms{};
 
 	Parms.CollisionSetting = CollisionSetting;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -402,9 +471,12 @@ void ABP_Creative_Billboard_C::ShowBorder(enum class ECollisionEnabled Collision
 
 void ABP_Creative_Billboard_C::SetTextSize(class UUserWidget* CallFunc_GetUserWidgetObject_ReturnValue, class UCreative_Background_Widget_C* K2Node_DynamicCast_AsCreative_Background_Widget, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextSize");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_SetTextSize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetTextSize");
+
+	Params::ABP_Creative_Billboard_C_SetTextSize_Params Parms{};
 
 	Parms.CallFunc_GetUserWidgetObject_ReturnValue = CallFunc_GetUserWidgetObject_ReturnValue;
 	Parms.K2Node_DynamicCast_AsCreative_Background_Widget = K2Node_DynamicCast_AsCreative_Background_Widget;
@@ -424,9 +496,12 @@ void ABP_Creative_Billboard_C::SetTextSize(class UUserWidget* CallFunc_GetUserWi
 
 void ABP_Creative_Billboard_C::SetDisplayText(class UUserWidget* CallFunc_GetUserWidgetObject_ReturnValue, class UCreative_Background_Widget_C* K2Node_DynamicCast_AsCreative_Background_Widget, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "SetDisplayText");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_SetDisplayText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetDisplayText");
+
+	Params::ABP_Creative_Billboard_C_SetDisplayText_Params Parms{};
 
 	Parms.CallFunc_GetUserWidgetObject_ReturnValue = CallFunc_GetUserWidgetObject_ReturnValue;
 	Parms.K2Node_DynamicCast_AsCreative_Background_Widget = K2Node_DynamicCast_AsCreative_Background_Widget;
@@ -449,9 +524,12 @@ void ABP_Creative_Billboard_C::SetDisplayText(class UUserWidget* CallFunc_GetUse
 
 void ABP_Creative_Billboard_C::SetBackgroundColor(class UUserWidget* CallFunc_GetUserWidgetObject_ReturnValue, class UCreative_Background_Widget_C* K2Node_DynamicCast_AsCreative_Background_Widget, bool K2Node_DynamicCast_bSuccess, class UUserWidget* CallFunc_GetUserWidgetObject_ReturnValue_1, class UCreative_Background_Widget_C* K2Node_DynamicCast_AsCreative_Background_Widget_1, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "SetBackgroundColor");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_SetBackgroundColor_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "SetBackgroundColor");
+
+	Params::ABP_Creative_Billboard_C_SetBackgroundColor_Params Parms{};
 
 	Parms.CallFunc_GetUserWidgetObject_ReturnValue = CallFunc_GetUserWidgetObject_ReturnValue;
 	Parms.K2Node_DynamicCast_AsCreative_Background_Widget = K2Node_DynamicCast_AsCreative_Background_Widget;
@@ -471,12 +549,14 @@ void ABP_Creative_Billboard_C::SetBackgroundColor(class UUserWidget* CallFunc_Ge
 
 void ABP_Creative_Billboard_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -487,12 +567,14 @@ void ABP_Creative_Billboard_C::ReceiveBeginPlay()
 
 void ABP_Creative_Billboard_C::PostUpdateProperties()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "PostUpdateProperties");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_PostUpdateProperties_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "PostUpdateProperties");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -503,12 +585,14 @@ void ABP_Creative_Billboard_C::PostUpdateProperties()
 
 void ABP_Creative_Billboard_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_0_AnyPropertyChangedDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -519,12 +603,14 @@ void ABP_Creative_Billboard_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBound
 
 void ABP_Creative_Billboard_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__ToyOptionsComponent_K2Node_ComponentBoundEvent_1_AnyPropertyChangedDelegate__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -535,12 +621,14 @@ void ABP_Creative_Billboard_C::BndEvt__ToyOptionsComponent_K2Node_ComponentBound
 
 void ABP_Creative_Billboard_C::PostFinishSpawning()
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "PostFinishSpawning");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_PostFinishSpawning_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "PostFinishSpawning");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -552,9 +640,12 @@ void ABP_Creative_Billboard_C::PostFinishSpawning()
 
 void ABP_Creative_Billboard_C::BndEvt__ShowTextReceiverComponent_K2Node_ComponentBoundEvent_2_OnGameplayMessageReceived__DelegateSignature(class AController* TriggerInstigator)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__ShowTextReceiverComponent_K2Node_ComponentBoundEvent_2_OnGameplayMessageReceived__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_BndEvt__ShowTextReceiverComponent_K2Node_ComponentBoundEvent_2_OnGameplayMessageReceived__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__ShowTextReceiverComponent_K2Node_ComponentBoundEvent_2_OnGameplayMessageReceived__DelegateSignature");
+
+	Params::ABP_Creative_Billboard_C_BndEvt__ShowTextReceiverComponent_K2Node_ComponentBoundEvent_2_OnGameplayMessageReceived__DelegateSignature_Params Parms{};
 
 	Parms.TriggerInstigator = TriggerInstigator;
 
@@ -570,9 +661,12 @@ void ABP_Creative_Billboard_C::BndEvt__ShowTextReceiverComponent_K2Node_Componen
 
 void ABP_Creative_Billboard_C::BndEvt__HideTextReceiverComponent_K2Node_ComponentBoundEvent_3_OnGameplayMessageReceived__DelegateSignature(class AController* TriggerInstigator)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__HideTextReceiverComponent_K2Node_ComponentBoundEvent_3_OnGameplayMessageReceived__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_BndEvt__HideTextReceiverComponent_K2Node_ComponentBoundEvent_3_OnGameplayMessageReceived__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__HideTextReceiverComponent_K2Node_ComponentBoundEvent_3_OnGameplayMessageReceived__DelegateSignature");
+
+	Params::ABP_Creative_Billboard_C_BndEvt__HideTextReceiverComponent_K2Node_ComponentBoundEvent_3_OnGameplayMessageReceived__DelegateSignature_Params Parms{};
 
 	Parms.TriggerInstigator = TriggerInstigator;
 
@@ -589,9 +683,12 @@ void ABP_Creative_Billboard_C::BndEvt__HideTextReceiverComponent_K2Node_Componen
 
 void ABP_Creative_Billboard_C::BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature(class AFortMinigame* Minigame, enum class EFortMinigameState NewMinigameState)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature");
+
+	Params::ABP_Creative_Billboard_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature_Params Parms{};
 
 	Parms.Minigame = Minigame;
 	Parms.NewMinigameState = NewMinigameState;
@@ -621,9 +718,12 @@ void ABP_Creative_Billboard_C::BndEvt__FortMinigameLogic_K2Node_ComponentBoundEv
 
 void ABP_Creative_Billboard_C::ExecuteUbergraph_BP_Creative_Billboard(int32 EntryPoint, bool CallFunc_NearlyEqual_FloatFloat_ReturnValue, bool Temp_bool_Variable, enum class ECollisionResponse Temp_byte_Variable, bool Temp_bool_Variable_1, enum class ECollisionResponse Temp_byte_Variable_1, enum class ECollisionResponse Temp_byte_Variable_2, enum class ECollisionResponse K2Node_Select_Default, class AController* K2Node_ComponentBoundEvent_TriggerInstigator_1, class AController* K2Node_ComponentBoundEvent_TriggerInstigator, class AFortMinigame* K2Node_ComponentBoundEvent_Minigame, enum class EFortMinigameState K2Node_ComponentBoundEvent_NewMinigameState, bool CallFunc_EqualEqual_ByteByte_ReturnValue, enum class ECollisionResponse K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("BP_Creative_Billboard_C", "ExecuteUbergraph_BP_Creative_Billboard");
+	static class UFunction* Func = nullptr;
 
-	Params::ABP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BP_Creative_Billboard_C", "ExecuteUbergraph_BP_Creative_Billboard");
+
+	Params::ABP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_NearlyEqual_FloatFloat_ReturnValue = CallFunc_NearlyEqual_FloatFloat_ReturnValue;
@@ -646,6 +746,4 @@ void ABP_Creative_Billboard_C::ExecuteUbergraph_BP_Creative_Billboard(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

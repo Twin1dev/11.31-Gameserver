@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SocialPanelView_UserLists.SocialPanelView_UserLists_C
+// (None)
+
+class UClass* USocialPanelView_UserLists_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SocialPanelView_UserLists_C");
+
+	return Clss;
+}
+
+
+// SocialPanelView_UserLists_C SocialPanelView_UserLists.Default__SocialPanelView_UserLists_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USocialPanelView_UserLists_C* USocialPanelView_UserLists_C::GetDefaultObj()
+{
+	static class USocialPanelView_UserLists_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USocialPanelView_UserLists_C*>(USocialPanelView_UserLists_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SocialPanelView_UserLists.SocialPanelView_UserLists_C.BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void USocialPanelView_UserLists_C::BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)
 {
-	static auto Func = Class->GetFunction("SocialPanelView_UserLists_C", "BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanelView_UserLists_C_BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanelView_UserLists_C", "BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature");
+
+	Params::USocialPanelView_UserLists_C_BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature_Params Parms{};
 
 	Parms.ActiveWidget = ActiveWidget;
 	Parms.ActiveWidgetIndex = ActiveWidgetIndex;
@@ -42,9 +70,12 @@ void USocialPanelView_UserLists_C::BndEvt__Switcher_UserLists_K2Node_ComponentBo
 
 void USocialPanelView_UserLists_C::OnSetVoiceChannelButtonText(class FText& ButtonText)
 {
-	static auto Func = Class->GetFunction("SocialPanelView_UserLists_C", "OnSetVoiceChannelButtonText");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanelView_UserLists_C_OnSetVoiceChannelButtonText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanelView_UserLists_C", "OnSetVoiceChannelButtonText");
+
+	Params::USocialPanelView_UserLists_C_OnSetVoiceChannelButtonText_Params Parms{};
 
 	Parms.ButtonText = ButtonText;
 
@@ -59,12 +90,14 @@ void USocialPanelView_UserLists_C::OnSetVoiceChannelButtonText(class FText& Butt
 
 void USocialPanelView_UserLists_C::Construct()
 {
-	static auto Func = Class->GetFunction("SocialPanelView_UserLists_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanelView_UserLists_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanelView_UserLists_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -76,9 +109,12 @@ void USocialPanelView_UserLists_C::Construct()
 
 void USocialPanelView_UserLists_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("SocialPanelView_UserLists_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanelView_UserLists_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanelView_UserLists_C", "PreConstruct");
+
+	Params::USocialPanelView_UserLists_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -102,9 +138,12 @@ void USocialPanelView_UserLists_C::PreConstruct(bool IsDesignTime)
 
 void USocialPanelView_UserLists_C::ExecuteUbergraph_SocialPanelView_UserLists(int32 EntryPoint, bool K2Node_Event_IsDesignTime, class UWidget* K2Node_ComponentBoundEvent_ActiveWidget, int32 K2Node_ComponentBoundEvent_ActiveWidgetIndex, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class FText K2Node_Event_ButtonText, class ULeavePlatformPartyButton_C* K2Node_DynamicCast_AsLeave_Platform_Party_Button, bool K2Node_DynamicCast_bSuccess, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
-	static auto Func = Class->GetFunction("SocialPanelView_UserLists_C", "ExecuteUbergraph_SocialPanelView_UserLists");
+	static class UFunction* Func = nullptr;
 
-	Params::USocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SocialPanelView_UserLists_C", "ExecuteUbergraph_SocialPanelView_UserLists");
+
+	Params::USocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -122,6 +161,4 @@ void USocialPanelView_UserLists_C::ExecuteUbergraph_SocialPanelView_UserLists(in
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

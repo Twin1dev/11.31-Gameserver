@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass BattlePassLeaderboard.BattlePassLeaderboard_C
+// (None)
+
+class UClass* UBattlePassLeaderboard_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("BattlePassLeaderboard_C");
+
+	return Clss;
+}
+
+
+// BattlePassLeaderboard_C BattlePassLeaderboard.Default__BattlePassLeaderboard_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBattlePassLeaderboard_C* UBattlePassLeaderboard_C::GetDefaultObj()
+{
+	static class UBattlePassLeaderboard_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBattlePassLeaderboard_C*>(UBattlePassLeaderboard_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function BattlePassLeaderboard.BattlePassLeaderboard_C.BP_GetDesiredFocusTarget
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 class UWidget* UBattlePassLeaderboard_C::BP_GetDesiredFocusTarget()
 {
-	static auto Func = Class->GetFunction("BattlePassLeaderboard_C", "BP_GetDesiredFocusTarget");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassLeaderboard_C_BP_GetDesiredFocusTarget_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassLeaderboard_C", "BP_GetDesiredFocusTarget");
+
+	Params::UBattlePassLeaderboard_C_BP_GetDesiredFocusTarget_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -41,9 +69,12 @@ class UWidget* UBattlePassLeaderboard_C::BP_GetDesiredFocusTarget()
 
 void UBattlePassLeaderboard_C::HandleBack(bool* PassThrough)
 {
-	static auto Func = Class->GetFunction("BattlePassLeaderboard_C", "HandleBack");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassLeaderboard_C_HandleBack_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassLeaderboard_C", "HandleBack");
+
+	Params::UBattlePassLeaderboard_C_HandleBack_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -60,12 +91,14 @@ void UBattlePassLeaderboard_C::HandleBack(bool* PassThrough)
 
 void UBattlePassLeaderboard_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("BattlePassLeaderboard_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassLeaderboard_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassLeaderboard_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -77,9 +110,12 @@ void UBattlePassLeaderboard_C::BP_OnActivated()
 
 void UBattlePassLeaderboard_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("BattlePassLeaderboard_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassLeaderboard_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassLeaderboard_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UBattlePassLeaderboard_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -102,9 +138,12 @@ void UBattlePassLeaderboard_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEv
 
 void UBattlePassLeaderboard_C::ExecuteUbergraph_BattlePassLeaderboard(int32 EntryPoint, bool CallFunc_HandleBack_PassThrough, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_IsMobileGame_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, class UCommonButton* K2Node_ComponentBoundEvent_Button)
 {
-	static auto Func = Class->GetFunction("BattlePassLeaderboard_C", "ExecuteUbergraph_BattlePassLeaderboard");
+	static class UFunction* Func = nullptr;
 
-	Params::UBattlePassLeaderboard_C_ExecuteUbergraph_BattlePassLeaderboard_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("BattlePassLeaderboard_C", "ExecuteUbergraph_BattlePassLeaderboard");
+
+	Params::UBattlePassLeaderboard_C_ExecuteUbergraph_BattlePassLeaderboard_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_HandleBack_PassThrough = CallFunc_HandleBack_PassThrough;
@@ -121,6 +160,4 @@ void UBattlePassLeaderboard_C::ExecuteUbergraph_BattlePassLeaderboard(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

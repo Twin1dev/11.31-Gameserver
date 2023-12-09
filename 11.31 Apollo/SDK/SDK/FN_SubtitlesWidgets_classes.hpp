@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -17,15 +14,12 @@ namespace SDK
 class UFortMediaSubtitlesPlayer : public UObject
 {
 public:
-	uint8                                        Pad_40[0x8];                                       // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_46[0x8];                                       // Fixing Size After Last Property  [ Dumper-7 ]
 	class UOverlays*                             SourceSubtitles;                                   // 0x30(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_41[0x10];                                      // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_47[0x10];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("FortMediaSubtitlesPlayer");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UFortMediaSubtitlesPlayer* GetDefaultObj();
 
 	void Stop();
 	void SetSubtitles(class UOverlays* Subtitles);
@@ -42,19 +36,14 @@ public:
 	struct FSlateFontInfo                        FontInfo;                                          // 0x118(0x50)(Edit, BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                          ColorAndOpacity;                                   // 0x168(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        WrapTextAt;                                        // 0x178(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_42[0x294];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_48[0x294];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SubtitleDisplay");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USubtitleDisplay* GetDefaultObj();
 
 	bool HasSubtitles();
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

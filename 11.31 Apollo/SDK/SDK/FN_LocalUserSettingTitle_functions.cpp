@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass LocalUserSettingTitle.LocalUserSettingTitle_C
+// (None)
+
+class UClass* ULocalUserSettingTitle_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LocalUserSettingTitle_C");
+
+	return Clss;
+}
+
+
+// LocalUserSettingTitle_C LocalUserSettingTitle.Default__LocalUserSettingTitle_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULocalUserSettingTitle_C* ULocalUserSettingTitle_C::GetDefaultObj()
+{
+	static class ULocalUserSettingTitle_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULocalUserSettingTitle_C*>(ULocalUserSettingTitle_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function LocalUserSettingTitle.LocalUserSettingTitle_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void ULocalUserSettingTitle_C::Construct()
 {
-	static auto Func = Class->GetFunction("LocalUserSettingTitle_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::ULocalUserSettingTitle_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LocalUserSettingTitle_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void ULocalUserSettingTitle_C::Construct()
 
 void ULocalUserSettingTitle_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("LocalUserSettingTitle_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::ULocalUserSettingTitle_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LocalUserSettingTitle_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void ULocalUserSettingTitle_C::BP_OnUnhovered()
 
 void ULocalUserSettingTitle_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("LocalUserSettingTitle_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::ULocalUserSettingTitle_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LocalUserSettingTitle_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -70,9 +101,12 @@ void ULocalUserSettingTitle_C::BP_OnHovered()
 
 void ULocalUserSettingTitle_C::OnExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("LocalUserSettingTitle_C", "OnExpansionChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ULocalUserSettingTitle_C_OnExpansionChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LocalUserSettingTitle_C", "OnExpansionChanged");
+
+	Params::ULocalUserSettingTitle_C_OnExpansionChanged_Params Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
@@ -106,9 +140,12 @@ void ULocalUserSettingTitle_C::OnExpansionChanged(bool bIsExpanded)
 
 void ULocalUserSettingTitle_C::ExecuteUbergraph_LocalUserSettingTitle(int32 EntryPoint, bool Temp_bool_Variable, enum class EUMGSequencePlayMode Temp_byte_Variable, enum class EUMGSequencePlayMode Temp_byte_Variable_1, bool Temp_bool_Variable_1, float Temp_float_Variable, float Temp_float_Variable_1, bool Temp_bool_Variable_2, int32 Temp_int_Variable, int32 Temp_int_Variable_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, bool CallFunc_IsMobileGame_ReturnValue, float K2Node_Select_Default, int32 K2Node_Select_Default_1, const struct FSlateFontInfo& K2Node_MakeStruct_SlateFontInfo, bool K2Node_Event_bIsExpanded, enum class EUMGSequencePlayMode K2Node_Select_Default_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("LocalUserSettingTitle_C", "ExecuteUbergraph_LocalUserSettingTitle");
+	static class UFunction* Func = nullptr;
 
-	Params::ULocalUserSettingTitle_C_ExecuteUbergraph_LocalUserSettingTitle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LocalUserSettingTitle_C", "ExecuteUbergraph_LocalUserSettingTitle");
+
+	Params::ULocalUserSettingTitle_C_ExecuteUbergraph_LocalUserSettingTitle_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -136,6 +173,4 @@ void ULocalUserSettingTitle_C::ExecuteUbergraph_LocalUserSettingTitle(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

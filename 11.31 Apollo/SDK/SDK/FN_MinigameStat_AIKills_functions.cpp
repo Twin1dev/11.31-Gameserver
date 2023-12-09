@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass MinigameStat_AIKills.MinigameStat_AIKills_C
+// (None)
+
+class UClass* UMinigameStat_AIKills_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MinigameStat_AIKills_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// MinigameStat_AIKills_C MinigameStat_AIKills.Default__MinigameStat_AIKills_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMinigameStat_AIKills_C* UMinigameStat_AIKills_C::GetDefaultObj()
+{
+	static class UMinigameStat_AIKills_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMinigameStat_AIKills_C*>(UMinigameStat_AIKills_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

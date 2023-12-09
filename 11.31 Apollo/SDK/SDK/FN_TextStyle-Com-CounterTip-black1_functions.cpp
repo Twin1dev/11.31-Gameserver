@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TextStyle-Com-CounterTip-black1.TextStyle-Com-CounterTip-black1_C
+// (None)
+
+class UClass* UTextStyleMinusComMinusCounterTipMinusblack1_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TextStyle-Com-CounterTip-black1_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// TextStyle-Com-CounterTip-black1_C TextStyle-Com-CounterTip-black1.Default__TextStyle-Com-CounterTip-black1_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTextStyleMinusComMinusCounterTipMinusblack1_C* UTextStyleMinusComMinusCounterTipMinusblack1_C::GetDefaultObj()
+{
+	static class UTextStyleMinusComMinusCounterTipMinusblack1_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTextStyleMinusComMinusCounterTipMinusblack1_C*>(UTextStyleMinusComMinusCounterTipMinusblack1_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

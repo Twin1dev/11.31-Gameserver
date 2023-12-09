@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass AnimNotify_Player_HandSplash_R.AnimNotify_Player_HandSplash_R_C
+// (None)
+
+class UClass* UAnimNotify_Player_HandSplash_R_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AnimNotify_Player_HandSplash_R_C");
+
+	return Clss;
+}
+
+
+// AnimNotify_Player_HandSplash_R_C AnimNotify_Player_HandSplash_R.Default__AnimNotify_Player_HandSplash_R_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAnimNotify_Player_HandSplash_R_C* UAnimNotify_Player_HandSplash_R_C::GetDefaultObj()
+{
+	static class UAnimNotify_Player_HandSplash_R_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAnimNotify_Player_HandSplash_R_C*>(UAnimNotify_Player_HandSplash_R_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function AnimNotify_Player_HandSplash_R.AnimNotify_Player_HandSplash_R_C.Received_Notify
@@ -32,9 +57,12 @@ namespace SDK
 
 bool UAnimNotify_Player_HandSplash_R_C::Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, class AActor* CallFunc_GetOwner_ReturnValue, const class FString& CallFunc_GetDisplayName_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, const class FString& CallFunc_Concat_StrStr_ReturnValue, class UFXSystemComponent* CallFunc_GetActivePlayerHandSplashInWaterComponent_ReturnValue, class UNiagaraComponent* K2Node_DynamicCast_AsNiagara_Particle_System, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("AnimNotify_Player_HandSplash_R_C", "Received_Notify");
+	static class UFunction* Func = nullptr;
 
-	Params::UAnimNotify_Player_HandSplash_R_C_Received_Notify_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AnimNotify_Player_HandSplash_R_C", "Received_Notify");
+
+	Params::UAnimNotify_Player_HandSplash_R_C_Received_Notify_Params Parms{};
 
 	Parms.MeshComp = MeshComp;
 	Parms.Animation = Animation;
@@ -55,6 +83,4 @@ bool UAnimNotify_Player_HandSplash_R_C::Received_Notify(class USkeletalMeshCompo
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

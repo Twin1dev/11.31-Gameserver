@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Class PhysXVehicles.WheeledVehicleMovementComponent
+// (None)
+
+class UClass* UWheeledVehicleMovementComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WheeledVehicleMovementComponent");
+
+	return Clss;
+}
+
+
+// WheeledVehicleMovementComponent PhysXVehicles.Default__WheeledVehicleMovementComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWheeledVehicleMovementComponent* UWheeledVehicleMovementComponent::GetDefaultObj()
+{
+	static class UWheeledVehicleMovementComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWheeledVehicleMovementComponent*>(UWheeledVehicleMovementComponent::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetUseAutoGears
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
@@ -22,19 +47,22 @@ namespace SDK
 
 void UWheeledVehicleMovementComponent::SetUseAutoGears(bool bUseAuto)
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetUseAutoGears");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_SetUseAutoGears_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetUseAutoGears");
+
+	Params::UWheeledVehicleMovementComponent_SetUseAutoGears_Params Parms{};
 
 	Parms.bUseAuto = bUseAuto;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -46,19 +74,22 @@ void UWheeledVehicleMovementComponent::SetUseAutoGears(bool bUseAuto)
 
 void UWheeledVehicleMovementComponent::SetThrottleInput(float Throttle)
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetThrottleInput");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_SetThrottleInput_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetThrottleInput");
+
+	Params::UWheeledVehicleMovementComponent_SetThrottleInput_Params Parms{};
 
 	Parms.Throttle = Throttle;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -71,20 +102,23 @@ void UWheeledVehicleMovementComponent::SetThrottleInput(float Throttle)
 
 void UWheeledVehicleMovementComponent::SetTargetGear(int32 GearNum, bool bImmediate)
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetTargetGear");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_SetTargetGear_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetTargetGear");
+
+	Params::UWheeledVehicleMovementComponent_SetTargetGear_Params Parms{};
 
 	Parms.GearNum = GearNum;
 	Parms.bImmediate = bImmediate;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -96,19 +130,22 @@ void UWheeledVehicleMovementComponent::SetTargetGear(int32 GearNum, bool bImmedi
 
 void UWheeledVehicleMovementComponent::SetSteeringInput(float Steering)
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetSteeringInput");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_SetSteeringInput_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetSteeringInput");
+
+	Params::UWheeledVehicleMovementComponent_SetSteeringInput_Params Parms{};
 
 	Parms.Steering = Steering;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -120,19 +157,22 @@ void UWheeledVehicleMovementComponent::SetSteeringInput(float Steering)
 
 void UWheeledVehicleMovementComponent::SetHandbrakeInput(bool bNewHandbrake)
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetHandbrakeInput");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_SetHandbrakeInput_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetHandbrakeInput");
+
+	Params::UWheeledVehicleMovementComponent_SetHandbrakeInput_Params Parms{};
 
 	Parms.bNewHandbrake = bNewHandbrake;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -144,19 +184,22 @@ void UWheeledVehicleMovementComponent::SetHandbrakeInput(bool bNewHandbrake)
 
 void UWheeledVehicleMovementComponent::SetGroupsToIgnoreMask(struct FNavAvoidanceMask& GroupMask)
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGroupsToIgnoreMask");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_SetGroupsToIgnoreMask_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGroupsToIgnoreMask");
+
+	Params::UWheeledVehicleMovementComponent_SetGroupsToIgnoreMask_Params Parms{};
 
 	Parms.GroupMask = GroupMask;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -168,19 +211,22 @@ void UWheeledVehicleMovementComponent::SetGroupsToIgnoreMask(struct FNavAvoidanc
 
 void UWheeledVehicleMovementComponent::SetGroupsToIgnore(int32 GroupFlags)
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGroupsToIgnore");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_SetGroupsToIgnore_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGroupsToIgnore");
+
+	Params::UWheeledVehicleMovementComponent_SetGroupsToIgnore_Params Parms{};
 
 	Parms.GroupFlags = GroupFlags;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -192,19 +238,22 @@ void UWheeledVehicleMovementComponent::SetGroupsToIgnore(int32 GroupFlags)
 
 void UWheeledVehicleMovementComponent::SetGroupsToAvoidMask(struct FNavAvoidanceMask& GroupMask)
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGroupsToAvoidMask");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_SetGroupsToAvoidMask_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGroupsToAvoidMask");
+
+	Params::UWheeledVehicleMovementComponent_SetGroupsToAvoidMask_Params Parms{};
 
 	Parms.GroupMask = GroupMask;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -216,19 +265,22 @@ void UWheeledVehicleMovementComponent::SetGroupsToAvoidMask(struct FNavAvoidance
 
 void UWheeledVehicleMovementComponent::SetGroupsToAvoid(int32 GroupFlags)
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGroupsToAvoid");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_SetGroupsToAvoid_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGroupsToAvoid");
+
+	Params::UWheeledVehicleMovementComponent_SetGroupsToAvoid_Params Parms{};
 
 	Parms.GroupFlags = GroupFlags;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -240,19 +292,22 @@ void UWheeledVehicleMovementComponent::SetGroupsToAvoid(int32 GroupFlags)
 
 void UWheeledVehicleMovementComponent::SetGearUp(bool bNewGearUp)
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGearUp");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_SetGearUp_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGearUp");
+
+	Params::UWheeledVehicleMovementComponent_SetGearUp_Params Parms{};
 
 	Parms.bNewGearUp = bNewGearUp;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -264,19 +319,22 @@ void UWheeledVehicleMovementComponent::SetGearUp(bool bNewGearUp)
 
 void UWheeledVehicleMovementComponent::SetGearDown(bool bNewGearDown)
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGearDown");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_SetGearDown_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetGearDown");
+
+	Params::UWheeledVehicleMovementComponent_SetGearDown_Params Parms{};
 
 	Parms.bNewGearDown = bNewGearDown;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -288,19 +346,22 @@ void UWheeledVehicleMovementComponent::SetGearDown(bool bNewGearDown)
 
 void UWheeledVehicleMovementComponent::SetBrakeInput(float Brake)
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetBrakeInput");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_SetBrakeInput_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetBrakeInput");
+
+	Params::UWheeledVehicleMovementComponent_SetBrakeInput_Params Parms{};
 
 	Parms.Brake = Brake;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -312,19 +373,22 @@ void UWheeledVehicleMovementComponent::SetBrakeInput(float Brake)
 
 void UWheeledVehicleMovementComponent::SetAvoidanceGroupMask(struct FNavAvoidanceMask& GroupMask)
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetAvoidanceGroupMask");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_SetAvoidanceGroupMask_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetAvoidanceGroupMask");
+
+	Params::UWheeledVehicleMovementComponent_SetAvoidanceGroupMask_Params Parms{};
 
 	Parms.GroupMask = GroupMask;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -336,19 +400,22 @@ void UWheeledVehicleMovementComponent::SetAvoidanceGroupMask(struct FNavAvoidanc
 
 void UWheeledVehicleMovementComponent::SetAvoidanceGroup(int32 GroupFlags)
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetAvoidanceGroup");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_SetAvoidanceGroup_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetAvoidanceGroup");
+
+	Params::UWheeledVehicleMovementComponent_SetAvoidanceGroup_Params Parms{};
 
 	Parms.GroupFlags = GroupFlags;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -360,19 +427,22 @@ void UWheeledVehicleMovementComponent::SetAvoidanceGroup(int32 GroupFlags)
 
 void UWheeledVehicleMovementComponent::SetAvoidanceEnabled(bool bEnable)
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetAvoidanceEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_SetAvoidanceEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "SetAvoidanceEnabled");
+
+	Params::UWheeledVehicleMovementComponent_SetAvoidanceEnabled_Params Parms{};
 
 	Parms.bEnable = bEnable;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -388,9 +458,12 @@ void UWheeledVehicleMovementComponent::SetAvoidanceEnabled(bool bEnable)
 
 void UWheeledVehicleMovementComponent::ServerUpdateState(float InSteeringInput, float InThrottleInput, float InBrakeInput, float InHandbrakeInput, int32 CurrentGear)
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "ServerUpdateState");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_ServerUpdateState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "ServerUpdateState");
+
+	Params::UWheeledVehicleMovementComponent_ServerUpdateState_Params Parms{};
 
 	Parms.InSteeringInput = InSteeringInput;
 	Parms.InThrottleInput = InThrottleInput;
@@ -398,13 +471,13 @@ void UWheeledVehicleMovementComponent::ServerUpdateState(float InSteeringInput, 
 	Parms.InHandbrakeInput = InHandbrakeInput;
 	Parms.CurrentGear = CurrentGear;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -416,18 +489,21 @@ void UWheeledVehicleMovementComponent::ServerUpdateState(float InSteeringInput, 
 
 bool UWheeledVehicleMovementComponent::GetUseAutoGears()
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetUseAutoGears");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_GetUseAutoGears_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetUseAutoGears");
+
+	Params::UWheeledVehicleMovementComponent_GetUseAutoGears_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -441,18 +517,21 @@ bool UWheeledVehicleMovementComponent::GetUseAutoGears()
 
 int32 UWheeledVehicleMovementComponent::GetTargetGear()
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetTargetGear");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_GetTargetGear_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetTargetGear");
+
+	Params::UWheeledVehicleMovementComponent_GetTargetGear_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -466,18 +545,21 @@ int32 UWheeledVehicleMovementComponent::GetTargetGear()
 
 float UWheeledVehicleMovementComponent::GetForwardSpeed()
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetForwardSpeed");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_GetForwardSpeed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetForwardSpeed");
+
+	Params::UWheeledVehicleMovementComponent_GetForwardSpeed_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -491,18 +573,21 @@ float UWheeledVehicleMovementComponent::GetForwardSpeed()
 
 float UWheeledVehicleMovementComponent::GetEngineRotationSpeed()
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetEngineRotationSpeed");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_GetEngineRotationSpeed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetEngineRotationSpeed");
+
+	Params::UWheeledVehicleMovementComponent_GetEngineRotationSpeed_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -516,18 +601,21 @@ float UWheeledVehicleMovementComponent::GetEngineRotationSpeed()
 
 float UWheeledVehicleMovementComponent::GetEngineMaxRotationSpeed()
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetEngineMaxRotationSpeed");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_GetEngineMaxRotationSpeed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetEngineMaxRotationSpeed");
+
+	Params::UWheeledVehicleMovementComponent_GetEngineMaxRotationSpeed_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -541,21 +629,52 @@ float UWheeledVehicleMovementComponent::GetEngineMaxRotationSpeed()
 
 int32 UWheeledVehicleMovementComponent::GetCurrentGear()
 {
-	static auto Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetCurrentGear");
+	static class UFunction* Func = nullptr;
 
-	Params::UWheeledVehicleMovementComponent_GetCurrentGear_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("WheeledVehicleMovementComponent", "GetCurrentGear");
+
+	Params::UWheeledVehicleMovementComponent_GetCurrentGear_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class PhysXVehicles.SimpleWheeledVehicleMovementComponent
+// (None)
+
+class UClass* USimpleWheeledVehicleMovementComponent::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SimpleWheeledVehicleMovementComponent");
+
+	return Clss;
+}
+
+
+// SimpleWheeledVehicleMovementComponent PhysXVehicles.Default__SimpleWheeledVehicleMovementComponent
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class USimpleWheeledVehicleMovementComponent* USimpleWheeledVehicleMovementComponent::GetDefaultObj()
+{
+	static class USimpleWheeledVehicleMovementComponent* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USimpleWheeledVehicleMovementComponent*>(USimpleWheeledVehicleMovementComponent::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -567,20 +686,23 @@ int32 UWheeledVehicleMovementComponent::GetCurrentGear()
 
 void USimpleWheeledVehicleMovementComponent::SetSteerAngle(float SteerAngle, int32 WheelIndex)
 {
-	static auto Func = Class->GetFunction("SimpleWheeledVehicleMovementComponent", "SetSteerAngle");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleWheeledVehicleMovementComponent_SetSteerAngle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleWheeledVehicleMovementComponent", "SetSteerAngle");
+
+	Params::USimpleWheeledVehicleMovementComponent_SetSteerAngle_Params Parms{};
 
 	Parms.SteerAngle = SteerAngle;
 	Parms.WheelIndex = WheelIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -593,20 +715,23 @@ void USimpleWheeledVehicleMovementComponent::SetSteerAngle(float SteerAngle, int
 
 void USimpleWheeledVehicleMovementComponent::SetDriveTorque(float DriveTorque, int32 WheelIndex)
 {
-	static auto Func = Class->GetFunction("SimpleWheeledVehicleMovementComponent", "SetDriveTorque");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleWheeledVehicleMovementComponent_SetDriveTorque_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleWheeledVehicleMovementComponent", "SetDriveTorque");
+
+	Params::USimpleWheeledVehicleMovementComponent_SetDriveTorque_Params Parms{};
 
 	Parms.DriveTorque = DriveTorque;
 	Parms.WheelIndex = WheelIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 }
 
@@ -619,21 +744,80 @@ void USimpleWheeledVehicleMovementComponent::SetDriveTorque(float DriveTorque, i
 
 void USimpleWheeledVehicleMovementComponent::SetBrakeTorque(float BrakeTorque, int32 WheelIndex)
 {
-	static auto Func = Class->GetFunction("SimpleWheeledVehicleMovementComponent", "SetBrakeTorque");
+	static class UFunction* Func = nullptr;
 
-	Params::USimpleWheeledVehicleMovementComponent_SetBrakeTorque_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SimpleWheeledVehicleMovementComponent", "SetBrakeTorque");
+
+	Params::USimpleWheeledVehicleMovementComponent_SetBrakeTorque_Params Parms{};
 
 	Parms.BrakeTorque = BrakeTorque;
 	Parms.WheelIndex = WheelIndex;
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
+}
+
+
+// Class PhysXVehicles.TireConfig
+// (None)
+
+class UClass* UTireConfig::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TireConfig");
+
+	return Clss;
+}
+
+
+// TireConfig PhysXVehicles.Default__TireConfig
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UTireConfig* UTireConfig::GetDefaultObj()
+{
+	static class UTireConfig* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTireConfig*>(UTireConfig::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class PhysXVehicles.VehicleAnimInstance
+// (None)
+
+class UClass* UVehicleAnimInstance::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VehicleAnimInstance");
+
+	return Clss;
+}
+
+
+// VehicleAnimInstance PhysXVehicles.Default__VehicleAnimInstance
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UVehicleAnimInstance* UVehicleAnimInstance::GetDefaultObj()
+{
+	static class UVehicleAnimInstance* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UVehicleAnimInstance*>(UVehicleAnimInstance::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -644,21 +828,52 @@ void USimpleWheeledVehicleMovementComponent::SetBrakeTorque(float BrakeTorque, i
 
 class AWheeledVehicle* UVehicleAnimInstance::GetVehicle()
 {
-	static auto Func = Class->GetFunction("VehicleAnimInstance", "GetVehicle");
+	static class UFunction* Func = nullptr;
 
-	Params::UVehicleAnimInstance_GetVehicle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VehicleAnimInstance", "GetVehicle");
+
+	Params::UVehicleAnimInstance_GetVehicle_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
+}
+
+
+// Class PhysXVehicles.VehicleWheel
+// (None)
+
+class UClass* UVehicleWheel::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("VehicleWheel");
+
+	return Clss;
+}
+
+
+// VehicleWheel PhysXVehicles.Default__VehicleWheel
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UVehicleWheel* UVehicleWheel::GetDefaultObj()
+{
+	static class UVehicleWheel* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UVehicleWheel*>(UVehicleWheel::StaticClass()->DefaultObject);
+
+	return Default;
 }
 
 
@@ -669,18 +884,21 @@ class AWheeledVehicle* UVehicleAnimInstance::GetVehicle()
 
 bool UVehicleWheel::IsInAir()
 {
-	static auto Func = Class->GetFunction("VehicleWheel", "IsInAir");
+	static class UFunction* Func = nullptr;
 
-	Params::UVehicleWheel_IsInAir_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VehicleWheel", "IsInAir");
+
+	Params::UVehicleWheel_IsInAir_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -694,18 +912,21 @@ bool UVehicleWheel::IsInAir()
 
 float UVehicleWheel::GetSuspensionOffset()
 {
-	static auto Func = Class->GetFunction("VehicleWheel", "GetSuspensionOffset");
+	static class UFunction* Func = nullptr;
 
-	Params::UVehicleWheel_GetSuspensionOffset_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VehicleWheel", "GetSuspensionOffset");
+
+	Params::UVehicleWheel_GetSuspensionOffset_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -719,18 +940,21 @@ float UVehicleWheel::GetSuspensionOffset()
 
 float UVehicleWheel::GetSteerAngle()
 {
-	static auto Func = Class->GetFunction("VehicleWheel", "GetSteerAngle");
+	static class UFunction* Func = nullptr;
 
-	Params::UVehicleWheel_GetSteerAngle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VehicleWheel", "GetSteerAngle");
+
+	Params::UVehicleWheel_GetSteerAngle_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
@@ -744,25 +968,82 @@ float UVehicleWheel::GetSteerAngle()
 
 float UVehicleWheel::GetRotationAngle()
 {
-	static auto Func = Class->GetFunction("VehicleWheel", "GetRotationAngle");
+	static class UFunction* Func = nullptr;
 
-	Params::UVehicleWheel_GetRotationAngle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("VehicleWheel", "GetRotationAngle");
+
+	Params::UVehicleWheel_GetRotationAngle_Params Parms{};
 
 
-	auto Flags = Func->FunctionFlags;
+	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 
-	Func->FunctionFlags = Flags;
+	Func->FunctionFlags = Flgs;
 
 	return Parms.ReturnValue;
 
 }
 
+
+// Class PhysXVehicles.WheeledVehicle
+// (Actor, Pawn)
+
+class UClass* AWheeledVehicle::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WheeledVehicle");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// WheeledVehicle PhysXVehicles.Default__WheeledVehicle
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class AWheeledVehicle* AWheeledVehicle::GetDefaultObj()
+{
+	static class AWheeledVehicle* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AWheeledVehicle*>(AWheeledVehicle::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
+// Class PhysXVehicles.WheeledVehicleMovementComponent4W
+// (None)
+
+class UClass* UWheeledVehicleMovementComponent4W::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("WheeledVehicleMovementComponent4W");
+
+	return Clss;
+}
+
+
+// WheeledVehicleMovementComponent4W PhysXVehicles.Default__WheeledVehicleMovementComponent4W
+// (Public, ClassDefaultObject, ArchetypeObject)
+
+class UWheeledVehicleMovementComponent4W* UWheeledVehicleMovementComponent4W::GetDefaultObj()
+{
+	static class UWheeledVehicleMovementComponent4W* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UWheeledVehicleMovementComponent4W*>(UWheeledVehicleMovementComponent4W::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

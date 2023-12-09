@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass MissionGen_Respawn.MissionGen_Respawn_C
+// (None)
+
+class UClass* UMissionGen_Respawn_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("MissionGen_Respawn_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// MissionGen_Respawn_C MissionGen_Respawn.Default__MissionGen_Respawn_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UMissionGen_Respawn_C* UMissionGen_Respawn_C::GetDefaultObj()
+{
+	static class UMissionGen_Respawn_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UMissionGen_Respawn_C*>(UMissionGen_Respawn_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

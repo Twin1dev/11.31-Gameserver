@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -25,15 +22,12 @@ public:
 	class UCommonWidgetSwitcher*                 CommonWidgetSwitcher_EntryType;                    // 0x638(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                Image_Strkethrough;                                // 0x640(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         IsTitle;                                           // 0x648(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6566[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_68DE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  Title;                                             // 0x650(0x18)(Edit, BlueprintVisible)
-	bool                                         _24HourFormat;                                     // 0x668(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                         Two4HourFormat;                                    // 0x668(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("TournamentDateEntry_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UTournamentDateEntry_C* GetDefaultObj();
 
 	void PreConstruct(bool IsDesignTime);
 	void EventColor(struct FFortTournamentDisplayInfo& ShowdownData);
@@ -43,6 +37,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

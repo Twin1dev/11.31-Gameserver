@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass AthenaDirectAcquisitionConfirmation.AthenaDirectAcquisitionConfirmation_C
+// (None)
+
+class UClass* UAthenaDirectAcquisitionConfirmation_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("AthenaDirectAcquisitionConfirmation_C");
+
+	return Clss;
+}
+
+
+// AthenaDirectAcquisitionConfirmation_C AthenaDirectAcquisitionConfirmation.Default__AthenaDirectAcquisitionConfirmation_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UAthenaDirectAcquisitionConfirmation_C* UAthenaDirectAcquisitionConfirmation_C::GetDefaultObj()
+{
+	static class UAthenaDirectAcquisitionConfirmation_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UAthenaDirectAcquisitionConfirmation_C*>(UAthenaDirectAcquisitionConfirmation_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function AthenaDirectAcquisitionConfirmation.AthenaDirectAcquisitionConfirmation_C.SetPurchaseNumber
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UAthenaDirectAcquisitionConfirmation_C::SetPurchaseNumber(int32 InNumToPurchse)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "SetPurchaseNumber");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionConfirmation_C_SetPurchaseNumber_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "SetPurchaseNumber");
+
+	Params::UAthenaDirectAcquisitionConfirmation_C_SetPurchaseNumber_Params Parms{};
 
 	Parms.InNumToPurchse = InNumToPurchse;
 
@@ -37,14 +65,17 @@ void UAthenaDirectAcquisitionConfirmation_C::SetPurchaseNumber(int32 InNumToPurc
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetName_ReturnValue                                     ()
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
+// class FText                        CallFunc_GetName_ReturnValue                                     (None)
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 (None)
 
 void UAthenaDirectAcquisitionConfirmation_C::UpdateCatalogOfferName(class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, class FText CallFunc_GetName_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "UpdateCatalogOfferName");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionConfirmation_C_UpdateCatalogOfferName_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "UpdateCatalogOfferName");
+
+	Params::UAthenaDirectAcquisitionConfirmation_C_UpdateCatalogOfferName_Params Parms{};
 
 	Parms.CallFunc_GetOfferInfo_ReturnValue = CallFunc_GetOfferInfo_ReturnValue;
 	Parms.CallFunc_GetName_ReturnValue = CallFunc_GetName_ReturnValue;
@@ -79,9 +110,12 @@ void UAthenaDirectAcquisitionConfirmation_C::UpdateCatalogOfferName(class UFortS
 
 void UAthenaDirectAcquisitionConfirmation_C::UpdateItemList(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, class UAthenaStoreReward_C* CallFunc_Create_ReturnValue, TArray<class UFortAccountItemDefinition*>& CallFunc_GetGrantedItemDefinitions_GrantedItems, class UFortAccountItemDefinition* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, const class FString& CallFunc_GetPersistentName_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_GetItemQuantity_ReturnValue, int32 CallFunc_Multiply_IntInt_ReturnValue, class UPanelSlot* CallFunc_AddChild_ReturnValue, class UFortItem* CallFunc_CreateTemporaryItemInstanceBP_ReturnValue, class UScrollBoxSlot* K2Node_DynamicCast_AsScroll_Box_Slot, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "UpdateItemList");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionConfirmation_C_UpdateItemList_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "UpdateItemList");
+
+	Params::UAthenaDirectAcquisitionConfirmation_C_UpdateItemList_Params Parms{};
 
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
@@ -116,12 +150,12 @@ void UAthenaDirectAcquisitionConfirmation_C::UpdateItemList(int32 Temp_int_Array
 // class UTextBlock*                  SalePriceText                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UImage*                      CurrencyImage                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortStoreFrontOfferInfo*    CallFunc_GetOfferInfo_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetSalePrice_SalePrice                                  ()
+// class FText                        CallFunc_GetSalePrice_SalePrice                                  (None)
 // bool                               CallFunc_GetSalePrice_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_GetNormalPrice_ReturnValue                              ()
+// class FText                        CallFunc_GetNormalPrice_ReturnValue                              (None)
 // int32                              CallFunc_GetPriceItem_RequiredItemCount                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortAccountItemDefinition*  CallFunc_GetPriceItem_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateBrush                 CallFunc_GetSmallPreviewImageBrush_ReturnValue                   ()
+// struct FSlateBrush                 CallFunc_GetSmallPreviewImageBrush_ReturnValue                   (None)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -130,9 +164,12 @@ void UAthenaDirectAcquisitionConfirmation_C::UpdateItemList(int32 Temp_int_Array
 
 void UAthenaDirectAcquisitionConfirmation_C::SetupPrice(class UWidget* PriceContainer, class UTextBlock* NormalPriceText, class UWidget* SalePriceContainer, class UTextBlock* SalePriceText, class UImage* CurrencyImage, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, class FText CallFunc_GetSalePrice_SalePrice, bool CallFunc_GetSalePrice_ReturnValue, class FText CallFunc_GetNormalPrice_ReturnValue, int32 CallFunc_GetPriceItem_RequiredItemCount, class UFortAccountItemDefinition* CallFunc_GetPriceItem_ReturnValue, const struct FSlateBrush& CallFunc_GetSmallPreviewImageBrush_ReturnValue, bool CallFunc_IsValid_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "SetupPrice");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionConfirmation_C_SetupPrice_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "SetupPrice");
+
+	Params::UAthenaDirectAcquisitionConfirmation_C_SetupPrice_Params Parms{};
 
 	Parms.PriceContainer = PriceContainer;
 	Parms.NormalPriceText = NormalPriceText;
@@ -172,9 +209,12 @@ void UAthenaDirectAcquisitionConfirmation_C::SetupPrice(class UWidget* PriceCont
 
 void UAthenaDirectAcquisitionConfirmation_C::UpdateFromOffer(const TArray<class FString>& PlaceholderOneRecipient, TArray<class FString>& K2Node_MakeArray_Array, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, enum class ESubGame CallFunc_GetSubGame_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UFortStoreFrontOfferInfo* CallFunc_GetOfferInfo_ReturnValue, bool CallFunc_IsRefundable_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "UpdateFromOffer");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionConfirmation_C_UpdateFromOffer_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "UpdateFromOffer");
+
+	Params::UAthenaDirectAcquisitionConfirmation_C_UpdateFromOffer_Params Parms{};
 
 	Parms.PlaceholderOneRecipient = PlaceholderOneRecipient;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
@@ -197,12 +237,14 @@ void UAthenaDirectAcquisitionConfirmation_C::UpdateFromOffer(const TArray<class 
 
 void UAthenaDirectAcquisitionConfirmation_C::OnOfferSet()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "OnOfferSet");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionConfirmation_C_OnOfferSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "OnOfferSet");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -213,12 +255,14 @@ void UAthenaDirectAcquisitionConfirmation_C::OnOfferSet()
 
 void UAthenaDirectAcquisitionConfirmation_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionConfirmation_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -230,9 +274,12 @@ void UAthenaDirectAcquisitionConfirmation_C::BP_OnActivated()
 
 void UAthenaDirectAcquisitionConfirmation_C::BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionConfirmation_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaDirectAcquisitionConfirmation_C_BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -247,12 +294,14 @@ void UAthenaDirectAcquisitionConfirmation_C::BndEvt__PurchaseButton_K2Node_Compo
 
 void UAthenaDirectAcquisitionConfirmation_C::Construct()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionConfirmation_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -264,9 +313,12 @@ void UAthenaDirectAcquisitionConfirmation_C::Construct()
 
 void UAthenaDirectAcquisitionConfirmation_C::BndEvt__CancelButton_K2Node_ComponentBoundEvent_171_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "BndEvt__CancelButton_K2Node_ComponentBoundEvent_171_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionConfirmation_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_171_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "BndEvt__CancelButton_K2Node_ComponentBoundEvent_171_CommonButtonClicked__DelegateSignature");
+
+	Params::UAthenaDirectAcquisitionConfirmation_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_171_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -284,9 +336,12 @@ void UAthenaDirectAcquisitionConfirmation_C::BndEvt__CancelButton_K2Node_Compone
 
 void UAthenaDirectAcquisitionConfirmation_C::ExecuteUbergraph_AthenaDirectAcquisitionConfirmation(int32 EntryPoint, class UCommonButton* K2Node_ComponentBoundEvent_Button_1, class UCommonButton* K2Node_ComponentBoundEvent_Button)
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "ExecuteUbergraph_AthenaDirectAcquisitionConfirmation");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionConfirmation_C_ExecuteUbergraph_AthenaDirectAcquisitionConfirmation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "ExecuteUbergraph_AthenaDirectAcquisitionConfirmation");
+
+	Params::UAthenaDirectAcquisitionConfirmation_C_ExecuteUbergraph_AthenaDirectAcquisitionConfirmation_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_ComponentBoundEvent_Button_1 = K2Node_ComponentBoundEvent_Button_1;
@@ -303,12 +358,14 @@ void UAthenaDirectAcquisitionConfirmation_C::ExecuteUbergraph_AthenaDirectAcquis
 
 void UAthenaDirectAcquisitionConfirmation_C::Decline__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "Decline__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionConfirmation_C_Decline__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "Decline__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -319,17 +376,17 @@ void UAthenaDirectAcquisitionConfirmation_C::Decline__DelegateSignature()
 
 void UAthenaDirectAcquisitionConfirmation_C::Confirm__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "Confirm__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UAthenaDirectAcquisitionConfirmation_C_Confirm__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("AthenaDirectAcquisitionConfirmation_C", "Confirm__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

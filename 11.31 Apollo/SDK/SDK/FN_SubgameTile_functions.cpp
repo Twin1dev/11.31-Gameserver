@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SubgameTile.SubgameTile_C
+// (None)
+
+class UClass* USubgameTile_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SubgameTile_C");
+
+	return Clss;
+}
+
+
+// SubgameTile_C SubgameTile.Default__SubgameTile_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USubgameTile_C* USubgameTile_C::GetDefaultObj()
+{
+	static class USubgameTile_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USubgameTile_C*>(USubgameTile_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SubgameTile.SubgameTile_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void USubgameTile_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("SubgameTile_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameTile_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameTile_C", "PreConstruct");
+
+	Params::USubgameTile_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -39,12 +67,14 @@ void USubgameTile_C::PreConstruct(bool IsDesignTime)
 
 void USubgameTile_C::Construct()
 {
-	static auto Func = Class->GetFunction("SubgameTile_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameTile_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameTile_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void USubgameTile_C::Construct()
 
 void USubgameTile_C::BndEvt__Image_KeyArt_K2Node_ComponentBoundEvent_1_onLoadingCompleted__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("SubgameTile_C", "BndEvt__Image_KeyArt_K2Node_ComponentBoundEvent_1_onLoadingCompleted__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameTile_C_BndEvt__Image_KeyArt_K2Node_ComponentBoundEvent_1_onLoadingCompleted__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameTile_C", "BndEvt__Image_KeyArt_K2Node_ComponentBoundEvent_1_onLoadingCompleted__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -71,12 +103,14 @@ void USubgameTile_C::BndEvt__Image_KeyArt_K2Node_ComponentBoundEvent_1_onLoading
 
 void USubgameTile_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("SubgameTile_C", "BP_OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameTile_C_BP_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameTile_C", "BP_OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -87,12 +121,14 @@ void USubgameTile_C::BP_OnHovered()
 
 void USubgameTile_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("SubgameTile_C", "BP_OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameTile_C_BP_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameTile_C", "BP_OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -121,9 +157,12 @@ void USubgameTile_C::BP_OnUnhovered()
 
 void USubgameTile_C::ExecuteUbergraph_SubgameTile(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue, float CallFunc_GetEndTime_ReturnValue, bool K2Node_Event_IsDesignTime, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue_2, float CallFunc_GetEndTime_ReturnValue_1, float CallFunc_GetEndTime_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_2, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue_2, float CallFunc_GetEndTime_ReturnValue_3, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_3, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue_4)
 {
-	static auto Func = Class->GetFunction("SubgameTile_C", "ExecuteUbergraph_SubgameTile");
+	static class UFunction* Func = nullptr;
 
-	Params::USubgameTile_C_ExecuteUbergraph_SubgameTile_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SubgameTile_C", "ExecuteUbergraph_SubgameTile");
+
+	Params::USubgameTile_C_ExecuteUbergraph_SubgameTile_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_PlayAnimationForward_ReturnValue = CallFunc_PlayAnimationForward_ReturnValue;
@@ -150,6 +189,4 @@ void USubgameTile_C::ExecuteUbergraph_SubgameTile(int32 EntryPoint, class UUMGSe
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -23,7 +20,7 @@ struct UAnalyticsBlueprintLibrary_StartSessionWithAttributes_Params
 public:
 	TArray<struct FAnalyticsEventAttr>           Attributes;                                        // 0x0(0x10)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4355[0x7];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_24E8[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -89,7 +86,7 @@ struct UAnalyticsBlueprintLibrary_RecordSimpleItemPurchaseWithAttributes_Params
 public:
 	class FString                                ItemId;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ItemQuantity;                                      // 0x10(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4356[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_24F8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FAnalyticsEventAttr>           Attributes;                                        // 0x18(0x10)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
 
@@ -100,7 +97,7 @@ struct UAnalyticsBlueprintLibrary_RecordSimpleItemPurchase_Params
 public:
 	class FString                                ItemId;                                            // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ItemQuantity;                                      // 0x10(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4357[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_24FB[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -110,7 +107,7 @@ struct UAnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchaseWithAttributes_Par
 public:
 	class FString                                GameCurrencyType;                                  // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        GameCurrencyAmount;                                // 0x10(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4358[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_24FC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FAnalyticsEventAttr>           Attributes;                                        // 0x18(0x10)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
 
@@ -121,7 +118,7 @@ struct UAnalyticsBlueprintLibrary_RecordSimpleCurrencyPurchase_Params
 public:
 	class FString                                GameCurrencyType;                                  // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        GameCurrencyAmount;                                // 0x10(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4359[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_2500[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x30 (0x30 - 0x0)
@@ -215,10 +212,10 @@ struct UAnalyticsBlueprintLibrary_RecordCurrencyPurchase_Params
 public:
 	class FString                                GameCurrencyType;                                  // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        GameCurrencyAmount;                                // 0x10(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_435A[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2525[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                RealCurrencyType;                                  // 0x18(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                        RealMoneyCost;                                     // 0x28(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_435B[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2526[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FString                                PaymentProvider;                                   // 0x30(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -229,7 +226,7 @@ struct UAnalyticsBlueprintLibrary_RecordCurrencyGivenWithAttributes_Params
 public:
 	class FString                                GameCurrencyType;                                  // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        GameCurrencyAmount;                                // 0x10(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_435C[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_2529[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FAnalyticsEventAttr>           Attributes;                                        // 0x18(0x10)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 };
 
@@ -240,7 +237,7 @@ struct UAnalyticsBlueprintLibrary_RecordCurrencyGiven_Params
 public:
 	class FString                                GameCurrencyType;                                  // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        GameCurrencyAmount;                                // 0x10(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_435D[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_252E[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x40 (0x40 - 0x0)
@@ -269,23 +266,7 @@ public:
 	class FString                                ReturnValue;                                       // 0x0(0x10)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.FlushEvents
-struct UAnalyticsBlueprintLibrary_FlushEvents_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function AnalyticsBlueprintLibrary.AnalyticsBlueprintLibrary.EndSession
-struct UAnalyticsBlueprintLibrary_EndSession_Params
-{
-public:
-};
-
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass SettingsRotator.SettingsRotator_C
+// (None)
+
+class UClass* USettingsRotator_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("SettingsRotator_C");
+
+	return Clss;
+}
+
+
+// SettingsRotator_C SettingsRotator.Default__SettingsRotator_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class USettingsRotator_C* USettingsRotator_C::GetDefaultObj()
+{
+	static class USettingsRotator_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<USettingsRotator_C*>(USettingsRotator_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function SettingsRotator.SettingsRotator_C.BP_OnOptionsPopulated
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void USettingsRotator_C::BP_OnOptionsPopulated(int32 Count)
 {
-	static auto Func = Class->GetFunction("SettingsRotator_C", "BP_OnOptionsPopulated");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingsRotator_C_BP_OnOptionsPopulated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingsRotator_C", "BP_OnOptionsPopulated");
+
+	Params::USettingsRotator_C_BP_OnOptionsPopulated_Params Parms{};
 
 	Parms.Count = Count;
 
@@ -40,9 +68,12 @@ void USettingsRotator_C::BP_OnOptionsPopulated(int32 Count)
 
 void USettingsRotator_C::BP_OnOptionSelected(int32 Index)
 {
-	static auto Func = Class->GetFunction("SettingsRotator_C", "BP_OnOptionSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingsRotator_C_BP_OnOptionSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingsRotator_C", "BP_OnOptionSelected");
+
+	Params::USettingsRotator_C_BP_OnOptionSelected_Params Parms{};
 
 	Parms.Index = Index;
 
@@ -58,9 +89,12 @@ void USettingsRotator_C::BP_OnOptionSelected(int32 Index)
 
 void USettingsRotator_C::BP_OnDefaultOptionSpecified(int32 DefaultOptionIndex)
 {
-	static auto Func = Class->GetFunction("SettingsRotator_C", "BP_OnDefaultOptionSpecified");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingsRotator_C_BP_OnDefaultOptionSpecified_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingsRotator_C", "BP_OnDefaultOptionSpecified");
+
+	Params::USettingsRotator_C_BP_OnDefaultOptionSpecified_Params Parms{};
 
 	Parms.DefaultOptionIndex = DefaultOptionIndex;
 
@@ -85,9 +119,12 @@ void USettingsRotator_C::BP_OnDefaultOptionSpecified(int32 DefaultOptionIndex)
 
 void USettingsRotator_C::ExecuteUbergraph_SettingsRotator(int32 EntryPoint, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, int32 K2Node_Event_Count, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_1, float CallFunc_Conv_IntToFloat_ReturnValue, int32 K2Node_Event_Index, float CallFunc_Conv_IntToFloat_ReturnValue_1, int32 K2Node_Event_DefaultOptionIndex, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue_2, float CallFunc_Conv_IntToFloat_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("SettingsRotator_C", "ExecuteUbergraph_SettingsRotator");
+	static class UFunction* Func = nullptr;
 
-	Params::USettingsRotator_C_ExecuteUbergraph_SettingsRotator_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("SettingsRotator_C", "ExecuteUbergraph_SettingsRotator");
+
+	Params::USettingsRotator_C_ExecuteUbergraph_SettingsRotator_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
@@ -106,6 +143,4 @@ void USettingsRotator_C::ExecuteUbergraph_SettingsRotator(int32 EntryPoint, clas
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

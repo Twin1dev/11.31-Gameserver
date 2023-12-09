@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass Announce_NameHomeBase.Announce_NameHomeBase_C
+// (Actor)
+
+class UClass* AAnnounce_NameHomeBase_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Announce_NameHomeBase_C");
+
+	return Clss;
+}
+
+
+// Announce_NameHomeBase_C Announce_NameHomeBase.Default__Announce_NameHomeBase_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AAnnounce_NameHomeBase_C* AAnnounce_NameHomeBase_C::GetDefaultObj()
+{
+	static class AAnnounce_NameHomeBase_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AAnnounce_NameHomeBase_C*>(AAnnounce_NameHomeBase_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function Announce_NameHomeBase.Announce_NameHomeBase_C.InitAnnouncement
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void AAnnounce_NameHomeBase_C::InitAnnouncement()
 {
-	static auto Func = Class->GetFunction("Announce_NameHomeBase_C", "InitAnnouncement");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_NameHomeBase_C_InitAnnouncement_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_NameHomeBase_C", "InitAnnouncement");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void AAnnounce_NameHomeBase_C::InitAnnouncement()
 
 void AAnnounce_NameHomeBase_C::HandleSentenceStart_UI(int32 SentenceIdx)
 {
-	static auto Func = Class->GetFunction("Announce_NameHomeBase_C", "HandleSentenceStart_UI");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_NameHomeBase_C_HandleSentenceStart_UI_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_NameHomeBase_C", "HandleSentenceStart_UI");
+
+	Params::AAnnounce_NameHomeBase_C_HandleSentenceStart_UI_Params Parms{};
 
 	Parms.SentenceIdx = SentenceIdx;
 
@@ -56,9 +86,12 @@ void AAnnounce_NameHomeBase_C::HandleSentenceStart_UI(int32 SentenceIdx)
 
 void AAnnounce_NameHomeBase_C::HandleSentenceStop_UI(int32 SentenceIdx)
 {
-	static auto Func = Class->GetFunction("Announce_NameHomeBase_C", "HandleSentenceStop_UI");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_NameHomeBase_C_HandleSentenceStop_UI_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_NameHomeBase_C", "HandleSentenceStop_UI");
+
+	Params::AAnnounce_NameHomeBase_C_HandleSentenceStop_UI_Params Parms{};
 
 	Parms.SentenceIdx = SentenceIdx;
 
@@ -82,9 +115,12 @@ void AAnnounce_NameHomeBase_C::HandleSentenceStop_UI(int32 SentenceIdx)
 
 void AAnnounce_NameHomeBase_C::ExecuteUbergraph_Announce_NameHomeBase(int32 EntryPoint, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, int32 K2Node_Event_SentenceIdx_1, bool K2Node_SwitchInteger_CmpSuccess, int32 K2Node_Event_SentenceIdx, TArray<class AFort_Entry_Music_Controller_BP_C*>& CallFunc_GetAllActorsOfClass_OutActors, bool K2Node_SwitchInteger_CmpSuccess_1, class AFort_Entry_Music_Controller_BP_C* CallFunc_Array_Get_Item, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("Announce_NameHomeBase_C", "ExecuteUbergraph_Announce_NameHomeBase");
+	static class UFunction* Func = nullptr;
 
-	Params::AAnnounce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("Announce_NameHomeBase_C", "ExecuteUbergraph_Announce_NameHomeBase");
+
+	Params::AAnnounce_NameHomeBase_C_ExecuteUbergraph_Announce_NameHomeBase_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -102,6 +138,4 @@ void AAnnounce_NameHomeBase_C::ExecuteUbergraph_Announce_NameHomeBase(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

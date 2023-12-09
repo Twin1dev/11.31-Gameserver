@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -24,24 +21,21 @@ public:
 	class UHorizontalBox*                        HorizontalBox_Info;                                // 0x280(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                Image_Selected;                                    // 0x288(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                         bUseOverrideStyle;                                 // 0x290(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                        Pad_61A1[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5181[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FEditableTextBoxStyle                 OverrideStyle;                                     // 0x298(0x7F0)(Edit, BlueprintVisible, ExposeOnSpawn)
 	bool                                         bHideValidationInfo;                               // 0xA88(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 	enum class ETextJustify                      Justification;                                     // 0xA89(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                         ShowTextPrompt;                                    // 0xA8A(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                        Pad_61A2[0x5];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5182[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                PromptTextStyle;                                   // 0xA90(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class FText                                  PromptText;                                        // 0xA98(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
 	UMulticastInlineDelegateProperty_            OnTextChanged;                                     // 0xAB0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                         bUseHintText;                                      // 0xAC0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_61A3[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_5183[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  HintText;                                          // 0xAC8(0x18)(Edit, BlueprintVisible)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("FilteredTextEntryWidget_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UFilteredTextEntryWidget_C* GetDefaultObj();
 
 	void GetCurrentText(class FText* Text, class FText CallFunc_GetText_ReturnValue);
 	void HandleShowPrompt(class FText& CurrentText, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class FText CallFunc_GetEmptyText_ReturnValue, bool CallFunc_EqualEqual_TextText_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, enum class ESlateVisibility K2Node_Select_Default);
@@ -57,6 +51,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

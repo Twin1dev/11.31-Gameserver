@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GA_Athena_HidingProp_BlockMovement.GA_Athena_HidingProp_BlockMovement_C
+// (None)
+
+class UClass* UGA_Athena_HidingProp_BlockMovement_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GA_Athena_HidingProp_BlockMovement_C");
+
+	return Clss;
+}
+
+
+// GA_Athena_HidingProp_BlockMovement_C GA_Athena_HidingProp_BlockMovement.Default__GA_Athena_HidingProp_BlockMovement_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGA_Athena_HidingProp_BlockMovement_C* UGA_Athena_HidingProp_BlockMovement_C::GetDefaultObj()
+{
+	static class UGA_Athena_HidingProp_BlockMovement_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGA_Athena_HidingProp_BlockMovement_C*>(UGA_Athena_HidingProp_BlockMovement_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GA_Athena_HidingProp_BlockMovement.GA_Athena_HidingProp_BlockMovement_C.K2_ActivateAbility
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
 void UGA_Athena_HidingProp_BlockMovement_C::K2_ActivateAbility()
 {
-	static auto Func = Class->GetFunction("GA_Athena_HidingProp_BlockMovement_C", "K2_ActivateAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_HidingProp_BlockMovement_C_K2_ActivateAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_HidingProp_BlockMovement_C", "K2_ActivateAbility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -38,9 +65,12 @@ void UGA_Athena_HidingProp_BlockMovement_C::K2_ActivateAbility()
 
 void UGA_Athena_HidingProp_BlockMovement_C::ExecuteUbergraph_GA_Athena_HidingProp_BlockMovement(int32 EntryPoint)
 {
-	static auto Func = Class->GetFunction("GA_Athena_HidingProp_BlockMovement_C", "ExecuteUbergraph_GA_Athena_HidingProp_BlockMovement");
+	static class UFunction* Func = nullptr;
 
-	Params::UGA_Athena_HidingProp_BlockMovement_C_ExecuteUbergraph_GA_Athena_HidingProp_BlockMovement_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GA_Athena_HidingProp_BlockMovement_C", "ExecuteUbergraph_GA_Athena_HidingProp_BlockMovement");
+
+	Params::UGA_Athena_HidingProp_BlockMovement_C_ExecuteUbergraph_GA_Athena_HidingProp_BlockMovement_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
@@ -50,6 +80,4 @@ void UGA_Athena_HidingProp_BlockMovement_C::ExecuteUbergraph_GA_Athena_HidingPro
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -24,16 +21,13 @@ public:
 	TArray<class UIconTextButton_C*>             CreatedButtons;                                    // 0x258(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 	UMulticastInlineDelegateProperty_            RadioButtonClicked_Event;                          // 0x268(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	float                                        WidthOverride;                                     // 0x278(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_530F[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
+	uint8                                        Pad_4322[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonButtonGroup*                    CreatedButtonsGroup;                               // 0x280(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                CommonButtonGroup;                                 // 0x288(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        HeightOverride;                                    // 0x290(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("FortRadioButtonGroup_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UFortRadioButtonGroup_C* GetDefaultObj();
 
 	void CenterOnWidget(class UIconTextButton_C* CallFunc_Array_Get_Item);
 	void OnButtonClicked_Bind(class UCommonButton* AssociatedButton, int32 ButtonIndex);
@@ -45,6 +39,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

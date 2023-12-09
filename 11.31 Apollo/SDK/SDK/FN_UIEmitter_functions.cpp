@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass UIEmitter.UIEmitter_C
+// (None)
+
+class UClass* UUIEmitter_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("UIEmitter_C");
+
+	return Clss;
+}
+
+
+// UIEmitter_C UIEmitter.Default__UIEmitter_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UUIEmitter_C* UUIEmitter_C::GetDefaultObj()
+{
+	static class UUIEmitter_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UUIEmitter_C*>(UUIEmitter_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function UIEmitter.UIEmitter_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void UUIEmitter_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("UIEmitter_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UUIEmitter_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UIEmitter_C", "PreConstruct");
+
+	Params::UUIEmitter_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -39,12 +67,14 @@ void UUIEmitter_C::PreConstruct(bool IsDesignTime)
 
 void UUIEmitter_C::Construct()
 {
-	static auto Func = Class->GetFunction("UIEmitter_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UUIEmitter_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UIEmitter_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -55,12 +85,14 @@ void UUIEmitter_C::Construct()
 
 void UUIEmitter_C::CreateEmitterElement()
 {
-	static auto Func = Class->GetFunction("UIEmitter_C", "CreateEmitterElement");
+	static class UFunction* Func = nullptr;
 
-	Params::UUIEmitter_C_CreateEmitterElement_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UIEmitter_C", "CreateEmitterElement");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -72,9 +104,12 @@ void UUIEmitter_C::CreateEmitterElement()
 
 void UUIEmitter_C::SetImage(class UUIEmitterElement_C* EmitterElement)
 {
-	static auto Func = Class->GetFunction("UIEmitter_C", "SetImage");
+	static class UFunction* Func = nullptr;
 
-	Params::UUIEmitter_C_SetImage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UIEmitter_C", "SetImage");
+
+	Params::UUIEmitter_C_SetImage_Params Parms{};
 
 	Parms.EmitterElement = EmitterElement;
 
@@ -89,12 +124,14 @@ void UUIEmitter_C::SetImage(class UUIEmitterElement_C* EmitterElement)
 
 void UUIEmitter_C::StartEmitter()
 {
-	static auto Func = Class->GetFunction("UIEmitter_C", "StartEmitter");
+	static class UFunction* Func = nullptr;
 
-	Params::UUIEmitter_C_StartEmitter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UIEmitter_C", "StartEmitter");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -148,9 +185,12 @@ void UUIEmitter_C::StartEmitter()
 
 void UUIEmitter_C::ExecuteUbergraph_UIEmitter(int32 EntryPoint, int32 Temp_int_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, class UUIEmitterElement_C* CallFunc_Create_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue, class UOverlaySlot* CallFunc_SlotAsOverlaySlot_ReturnValue_1, float CallFunc_BreakVector2D_X_1, float CallFunc_BreakVector2D_Y_1, float CallFunc_BreakVector2D_X_2, float CallFunc_BreakVector2D_Y_2, float CallFunc_RandomFloatInRange_ReturnValue_1, float CallFunc_RandomFloatInRange_ReturnValue_2, float CallFunc_Multiply_IntFloat_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin_1, bool K2Node_Event_IsDesignTime, class UOverlaySlot* CallFunc_AddChildToOverlay_ReturnValue, int32 CallFunc_GetChildrenCount_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, class UUIEmitterElement_C* K2Node_CustomEvent_EmitterElement, int32 CallFunc_Subtract_IntInt_ReturnValue, int32 CallFunc_RandomIntegerInRange_ReturnValue, class UMaterialInstance* CallFunc_Array_Get_Item, float CallFunc_BreakVector2D_X_3, float CallFunc_BreakVector2D_Y_3, float CallFunc_RandomFloatInRange_ReturnValue_3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, int32 CallFunc_Subtract_IntInt_ReturnValue_1, bool CallFunc_LessEqual_IntInt_ReturnValue, float CallFunc_BreakVector2D_X_4, float CallFunc_BreakVector2D_Y_4, float CallFunc_RandomFloatInRange_ReturnValue_4, bool CallFunc_NotEqual_Vector2DVector2D_ReturnValue, float CallFunc_BreakVector2D_X_5, float CallFunc_BreakVector2D_Y_5, float CallFunc_RandomFloatInRange_ReturnValue_5)
 {
-	static auto Func = Class->GetFunction("UIEmitter_C", "ExecuteUbergraph_UIEmitter");
+	static class UFunction* Func = nullptr;
 
-	Params::UUIEmitter_C_ExecuteUbergraph_UIEmitter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("UIEmitter_C", "ExecuteUbergraph_UIEmitter");
+
+	Params::UUIEmitter_C_ExecuteUbergraph_UIEmitter_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_int_Variable = Temp_int_Variable;
@@ -202,6 +242,4 @@ void UUIEmitter_C::ExecuteUbergraph_UIEmitter(int32 EntryPoint, int32 Temp_int_V
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

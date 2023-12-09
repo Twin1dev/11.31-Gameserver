@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass LoginCredentialSelect.LoginCredentialSelect_C
+// (None)
+
+class UClass* ULoginCredentialSelect_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("LoginCredentialSelect_C");
+
+	return Clss;
+}
+
+
+// LoginCredentialSelect_C LoginCredentialSelect.Default__LoginCredentialSelect_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ULoginCredentialSelect_C* ULoginCredentialSelect_C::GetDefaultObj()
+{
+	static class ULoginCredentialSelect_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ULoginCredentialSelect_C*>(ULoginCredentialSelect_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function LoginCredentialSelect.LoginCredentialSelect_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void ULoginCredentialSelect_C::Construct()
 {
-	static auto Func = Class->GetFunction("LoginCredentialSelect_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::ULoginCredentialSelect_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LoginCredentialSelect_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -39,9 +66,12 @@ void ULoginCredentialSelect_C::Construct()
 
 void ULoginCredentialSelect_C::ExecuteUbergraph_LoginCredentialSelect(int32 EntryPoint, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue)
 {
-	static auto Func = Class->GetFunction("LoginCredentialSelect_C", "ExecuteUbergraph_LoginCredentialSelect");
+	static class UFunction* Func = nullptr;
 
-	Params::ULoginCredentialSelect_C_ExecuteUbergraph_LoginCredentialSelect_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("LoginCredentialSelect_C", "ExecuteUbergraph_LoginCredentialSelect");
+
+	Params::ULoginCredentialSelect_C_ExecuteUbergraph_LoginCredentialSelect_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
@@ -52,6 +82,4 @@ void ULoginCredentialSelect_C::ExecuteUbergraph_LoginCredentialSelect(int32 Entr
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass ComScreen.ComScreen_C
+// (None)
+
+class UClass* UComScreen_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ComScreen_C");
+
+	return Clss;
+}
+
+
+// ComScreen_C ComScreen.Default__ComScreen_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UComScreen_C* UComScreen_C::GetDefaultObj()
+{
+	static class UComScreen_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UComScreen_C*>(UComScreen_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function ComScreen.ComScreen_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
 
 void UComScreen_C::Construct()
 {
-	static auto Func = Class->GetFunction("ComScreen_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UComScreen_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComScreen_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UComScreen_C::Construct()
 
 void UComScreen_C::FadeOutScreen()
 {
-	static auto Func = Class->GetFunction("ComScreen_C", "FadeOutScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UComScreen_C_FadeOutScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComScreen_C", "FadeOutScreen");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -57,9 +86,12 @@ void UComScreen_C::FadeOutScreen()
 
 void UComScreen_C::ExecuteUbergraph_ComScreen(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimationReverse_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ComScreen_C", "ExecuteUbergraph_ComScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::UComScreen_C_ExecuteUbergraph_ComScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ComScreen_C", "ExecuteUbergraph_ComScreen");
+
+	Params::UComScreen_C_ExecuteUbergraph_ComScreen_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -72,6 +104,4 @@ void UComScreen_C::ExecuteUbergraph_ComScreen(int32 EntryPoint, UDelegatePropert
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

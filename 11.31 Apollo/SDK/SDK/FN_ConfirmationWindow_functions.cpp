@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ConfirmationWindow.ConfirmationWindow_C
+// (None)
+
+class UClass* UConfirmationWindow_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ConfirmationWindow_C");
+
+	return Clss;
+}
+
+
+// ConfirmationWindow_C ConfirmationWindow.Default__ConfirmationWindow_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UConfirmationWindow_C* UConfirmationWindow_C::GetDefaultObj()
+{
+	static class UConfirmationWindow_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UConfirmationWindow_C*>(UConfirmationWindow_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ConfirmationWindow.ConfirmationWindow_C.HandleConfigureDeclineButton
@@ -29,9 +54,12 @@ namespace SDK
 
 void UConfirmationWindow_C::HandleConfigureDeclineButton(class UCommonButton* New_Button, class UIconTextButton_C* Icon_Text_Button, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess, const struct FFortDialogDescription_NUI& CallFunc_GetConfirmationDescription_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, const struct FDataTableRowHandle& K2Node_MakeStruct_DataTableRowHandle, int32 CallFunc_GetInputPriority_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ConfirmationWindow_C", "HandleConfigureDeclineButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UConfirmationWindow_C_HandleConfigureDeclineButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ConfirmationWindow_C", "HandleConfigureDeclineButton");
+
+	Params::UConfirmationWindow_C_HandleConfigureDeclineButton_Params Parms{};
 
 	Parms.New_Button = New_Button;
 	Parms.Icon_Text_Button = Icon_Text_Button;
@@ -62,9 +90,12 @@ void UConfirmationWindow_C::HandleConfigureDeclineButton(class UCommonButton* Ne
 
 void UConfirmationWindow_C::ConfigureConfirmationButton(class UCommonButton* Button, struct FConfirmationDialogAction& Action, bool bSimpleConfirm, class UIconTextButton_C* IconTextButton, class UIconTextButton_C* K2Node_DynamicCast_AsIcon_Text_Button, bool K2Node_DynamicCast_bSuccess, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, int32 CallFunc_GetInputPriority_ReturnValue, const struct FDataTableRowHandle& CallFunc_GetInputAction_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ConfirmationWindow_C", "ConfigureConfirmationButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UConfirmationWindow_C_ConfigureConfirmationButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ConfirmationWindow_C", "ConfigureConfirmationButton");
+
+	Params::UConfirmationWindow_C_ConfigureConfirmationButton_Params Parms{};
 
 	Parms.Button = Button;
 	Parms.Action = Action;
@@ -89,9 +120,12 @@ void UConfirmationWindow_C::ConfigureConfirmationButton(class UCommonButton* But
 
 void UConfirmationWindow_C::PlayShowSound(const struct FFortDialogDescription_NUI& CallFunc_GetConfirmationDescription_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ConfirmationWindow_C", "PlayShowSound");
+	static class UFunction* Func = nullptr;
 
-	Params::UConfirmationWindow_C_PlayShowSound_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ConfirmationWindow_C", "PlayShowSound");
+
+	Params::UConfirmationWindow_C_PlayShowSound_Params Parms{};
 
 	Parms.CallFunc_GetConfirmationDescription_ReturnValue = CallFunc_GetConfirmationDescription_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -112,16 +146,19 @@ void UConfirmationWindow_C::PlayShowSound(const struct FFortDialogDescription_NU
 // bool                               CallFunc_EqualEqual_KeyKey_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     (None)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
-// struct FEventReply                 K2Node_Select_Default                                            ()
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   (None)
+// struct FEventReply                 K2Node_Select_Default                                            (None)
 
 struct FEventReply UConfirmationWindow_C::TapToClose(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FKey& CallFunc_PointerEvent_GetEffectingButton_ReturnValue, bool CallFunc_PointerEvent_IsTouchEvent_ReturnValue, bool CallFunc_EqualEqual_KeyKey_ReturnValue, bool Temp_bool_Variable, bool CallFunc_BooleanOR_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, const struct FEventReply& CallFunc_Unhandled_ReturnValue, const struct FEventReply& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ConfirmationWindow_C", "TapToClose");
+	static class UFunction* Func = nullptr;
 
-	Params::UConfirmationWindow_C_TapToClose_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ConfirmationWindow_C", "TapToClose");
+
+	Params::UConfirmationWindow_C_TapToClose_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -148,12 +185,14 @@ struct FEventReply UConfirmationWindow_C::TapToClose(const struct FGeometry& MyG
 
 void UConfirmationWindow_C::SetupNonInteractiveContent()
 {
-	static auto Func = Class->GetFunction("ConfirmationWindow_C", "SetupNonInteractiveContent");
+	static class UFunction* Func = nullptr;
 
-	Params::UConfirmationWindow_C_SetupNonInteractiveContent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ConfirmationWindow_C", "SetupNonInteractiveContent");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -171,9 +210,12 @@ void UConfirmationWindow_C::SetupNonInteractiveContent()
 
 struct FDataTableRowHandle UConfirmationWindow_C::GetInputAction(class FName RowName, bool UseInputAction, bool Temp_bool_Variable, const struct FDataTableRowHandle& K2Node_MakeStruct_DataTableRowHandle, const struct FDataTableRowHandle& Temp_struct_Variable, const struct FDataTableRowHandle& K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ConfirmationWindow_C", "GetInputAction");
+	static class UFunction* Func = nullptr;
 
-	Params::UConfirmationWindow_C_GetInputAction_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ConfirmationWindow_C", "GetInputAction");
+
+	Params::UConfirmationWindow_C_GetInputAction_Params Parms{};
 
 	Parms.RowName = RowName;
 	Parms.UseInputAction = UseInputAction;
@@ -195,12 +237,14 @@ struct FDataTableRowHandle UConfirmationWindow_C::GetInputAction(class FName Row
 
 void UConfirmationWindow_C::Initialize()
 {
-	static auto Func = Class->GetFunction("ConfirmationWindow_C", "Initialize");
+	static class UFunction* Func = nullptr;
 
-	Params::UConfirmationWindow_C_Initialize_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ConfirmationWindow_C", "Initialize");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -211,12 +255,14 @@ void UConfirmationWindow_C::Initialize()
 
 void UConfirmationWindow_C::Construct()
 {
-	static auto Func = Class->GetFunction("ConfirmationWindow_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UConfirmationWindow_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ConfirmationWindow_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -227,12 +273,14 @@ void UConfirmationWindow_C::Construct()
 
 void UConfirmationWindow_C::OnBeginOutro()
 {
-	static auto Func = Class->GetFunction("ConfirmationWindow_C", "OnBeginOutro");
+	static class UFunction* Func = nullptr;
 
-	Params::UConfirmationWindow_C_OnBeginOutro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ConfirmationWindow_C", "OnBeginOutro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -244,9 +292,12 @@ void UConfirmationWindow_C::OnBeginOutro()
 
 void UConfirmationWindow_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ConfirmationWindow_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UConfirmationWindow_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ConfirmationWindow_C", "BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
+
+	Params::UConfirmationWindow_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -262,9 +313,12 @@ void UConfirmationWindow_C::BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent
 
 void UConfirmationWindow_C::ConfigureDeclineButton(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ConfirmationWindow_C", "ConfigureDeclineButton");
+	static class UFunction* Func = nullptr;
 
-	Params::UConfirmationWindow_C_ConfigureDeclineButton_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ConfirmationWindow_C", "ConfigureDeclineButton");
+
+	Params::UConfirmationWindow_C_ConfigureDeclineButton_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -279,12 +333,14 @@ void UConfirmationWindow_C::ConfigureDeclineButton(class UCommonButton* Button)
 
 void UConfirmationWindow_C::BP_OnActivated()
 {
-	static auto Func = Class->GetFunction("ConfirmationWindow_C", "BP_OnActivated");
+	static class UFunction* Func = nullptr;
 
-	Params::UConfirmationWindow_C_BP_OnActivated_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ConfirmationWindow_C", "BP_OnActivated");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -304,9 +360,12 @@ void UConfirmationWindow_C::BP_OnActivated()
 
 void UConfirmationWindow_C::ExecuteUbergraph_ConfirmationWindow(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool CallFunc_IsMobileGame_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, const struct FFortDialogDescription_NUI& CallFunc_GetConfirmationDescription_ReturnValue, class UCommonButton* K2Node_Event_Button)
 {
-	static auto Func = Class->GetFunction("ConfirmationWindow_C", "ExecuteUbergraph_ConfirmationWindow");
+	static class UFunction* Func = nullptr;
 
-	Params::UConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ConfirmationWindow_C", "ExecuteUbergraph_ConfirmationWindow");
+
+	Params::UConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -324,6 +383,4 @@ void UConfirmationWindow_C::ExecuteUbergraph_ConfirmationWindow(int32 EntryPoint
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

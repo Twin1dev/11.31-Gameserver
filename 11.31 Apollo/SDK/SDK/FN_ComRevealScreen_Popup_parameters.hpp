@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -29,19 +26,12 @@ public:
 	bool                                         CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x179(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Temp_bool_Variable;                                // 0x17A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_BooleanOR_ReturnValue;                    // 0x17B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6567[0x4];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	struct FEventReply                           CallFunc_Handled_ReturnValue;                      // 0x180(0xB8)()
+	uint8                                        Pad_4F06[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FEventReply                           CallFunc_Handled_ReturnValue;                      // 0x180(0xB8)(None)
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x238(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_6568[0x7];                                     // Fixing Size After Last Property  [ Dumper-8 ]
-	struct FEventReply                           CallFunc_Unhandled_ReturnValue;                    // 0x240(0xB8)()
-	struct FEventReply                           K2Node_Select_Default;                             // 0x2F8(0xB8)()
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ComRevealScreen_Popup.ComRevealScreen_Popup_C.StartFinalAnimation
-struct UComRevealScreen_Popup_C_StartFinalAnimation_Params
-{
-public:
+	uint8                                        Pad_4F07[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FEventReply                           CallFunc_Unhandled_ReturnValue;                    // 0x240(0xB8)(None)
+	struct FEventReply                           K2Node_Select_Default;                             // 0x2F8(0xB8)(None)
 };
 
 // 0x4 (0x4 - 0x0)
@@ -50,13 +40,6 @@ struct UComRevealScreen_Popup_C_StartFadeOutScreen_Params
 {
 public:
 	float                                        Delay;                                             // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function ComRevealScreen_Popup.ComRevealScreen_Popup_C.Construct
-struct UComRevealScreen_Popup_C_Construct_Params
-{
-public:
 };
 
 // 0x40 (0x40 - 0x0)
@@ -76,6 +59,4 @@ public:
 }
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

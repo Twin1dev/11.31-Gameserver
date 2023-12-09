@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -19,11 +16,8 @@ class UChatColorSchemeDataAsset : public UDataAsset
 public:
 	struct FChatColorScheme                      ChatColorData;                                     // 0x30(0x120)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ChatColorSchemeDataAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UChatColorSchemeDataAsset* GetDefaultObj();
 
 };
 
@@ -34,11 +28,8 @@ class USocialActionButtonStyleDataAsset : public UDataAsset
 public:
 	struct FButtonStyle                          Style;                                             // 0x30(0x278)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialActionButtonStyleDataAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialActionButtonStyleDataAsset* GetDefaultObj();
 
 };
 
@@ -49,11 +40,8 @@ class USocialChatChromeColorSchemeDataAsset : public UDataAsset
 public:
 	struct FChatChromeColorScheme                Style;                                             // 0x30(0x50)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialChatChromeColorSchemeDataAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialChatChromeColorSchemeDataAsset* GetDefaultObj();
 
 };
 
@@ -63,13 +51,10 @@ class USocialChatChromeMarginsDataAsset : public UDataAsset
 {
 public:
 	struct FChatChromeMargins                    Style;                                             // 0x30(0x64)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_428F[0x4];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_21DB[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialChatChromeMarginsDataAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialChatChromeMarginsDataAsset* GetDefaultObj();
 
 };
 
@@ -80,11 +65,8 @@ class USocialChatChromeStyleDataAsset : public UDataAsset
 public:
 	struct FChatChromeStyle                      Style;                                             // 0x30(0x7C8)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialChatChromeStyleDataAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialChatChromeStyleDataAsset* GetDefaultObj();
 
 };
 
@@ -95,11 +77,8 @@ class USocialChatMarkupStyleDataAsset : public UDataAsset
 public:
 	struct FChatMarkupStyle                      Style;                                             // 0x30(0x690)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialChatMarkupStyleDataAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialChatMarkupStyleDataAsset* GetDefaultObj();
 
 };
 
@@ -110,11 +89,8 @@ class USocialChatStyleDataAsset : public UDataAsset
 public:
 	struct FChatStyle                            Style;                                             // 0x30(0x1360)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialChatStyleDataAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialChatStyleDataAsset* GetDefaultObj();
 
 };
 
@@ -125,11 +101,8 @@ class USocialCheckBoxStyleDataAsset : public UDataAsset
 public:
 	struct FCheckBoxStyle                        Style;                                             // 0x30(0x580)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialCheckBoxStyleDataAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialCheckBoxStyleDataAsset* GetDefaultObj();
 
 };
 
@@ -140,11 +113,8 @@ class USocialFontStyleDataAsset : public UDataAsset
 public:
 	struct FSocialFontStyle                      Style;                                             // 0x30(0x210)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialFontStyleDataAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialFontStyleDataAsset* GetDefaultObj();
 
 };
 
@@ -155,11 +125,8 @@ class USocialListMarginsDataAsset : public UDataAsset
 public:
 	struct FSocialListMargins                    Style;                                             // 0x30(0x200)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialListMarginsDataAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialListMarginsDataAsset* GetDefaultObj();
 
 };
 
@@ -170,11 +137,8 @@ class USocialListStyleDataAsset : public UDataAsset
 public:
 	struct FSocialListStyle                      Style;                                             // 0x30(0x26F8)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialListStyleDataAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialListStyleDataAsset* GetDefaultObj();
 
 };
 
@@ -185,11 +149,8 @@ class USocialProfanityDataAsset : public UDataAsset
 public:
 	TArray<struct FProfanityData>                ProfanityData;                                     // 0x30(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialProfanityDataAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialProfanityDataAsset* GetDefaultObj();
 
 };
 
@@ -200,11 +161,8 @@ class USocialRadioBoxStyleDataAsset : public UDataAsset
 public:
 	struct FCheckBoxStyle                        Style;                                             // 0x30(0x580)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialRadioBoxStyleDataAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialRadioBoxStyleDataAsset* GetDefaultObj();
 
 };
 
@@ -215,11 +173,8 @@ class USocialScrollBarStyleDataAsset : public UDataAsset
 public:
 	struct FScrollBarStyle                       Style;                                             // 0x30(0x4D0)(Edit, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialScrollBarStyleDataAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialScrollBarStyleDataAsset* GetDefaultObj();
 
 };
 
@@ -230,11 +185,8 @@ class USocialSoundSchemaDataAsset : public UDataAsset
 public:
 	struct FSocialSoundSchema                    SoundSchema;                                       // 0x30(0x48)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialSoundSchemaDataAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialSoundSchemaDataAsset* GetDefaultObj();
 
 };
 
@@ -261,18 +213,13 @@ public:
 	class USocialScrollBarStyleDataAsset*        ScrollBoxStyle;                                    // 0xA8(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USocialChatMarkupStyleDataAsset*       MarkupStyle;                                       // 0xB0(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USocialProfanityDataAsset*             ProfanityDataAsset;                                // 0xB8(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_4290[0x6758];                                  // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_21F7[0x6758];                                  // Fixing Size Of Struct [ Dumper-7 ]
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("SocialStyleDataAsset");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class USocialStyleDataAsset* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

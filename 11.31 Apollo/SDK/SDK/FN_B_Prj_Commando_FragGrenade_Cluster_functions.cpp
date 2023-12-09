@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass B_Prj_Commando_FragGrenade_Cluster.B_Prj_Commando_FragGrenade_Cluster_C
+// (Actor)
+
+class UClass* AB_Prj_Commando_FragGrenade_Cluster_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("B_Prj_Commando_FragGrenade_Cluster_C");
+
+	return Clss;
+}
+
+
+// B_Prj_Commando_FragGrenade_Cluster_C B_Prj_Commando_FragGrenade_Cluster.Default__B_Prj_Commando_FragGrenade_Cluster_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class AB_Prj_Commando_FragGrenade_Cluster_C* AB_Prj_Commando_FragGrenade_Cluster_C::GetDefaultObj()
+{
+	static class AB_Prj_Commando_FragGrenade_Cluster_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<AB_Prj_Commando_FragGrenade_Cluster_C*>(AB_Prj_Commando_FragGrenade_Cluster_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function B_Prj_Commando_FragGrenade_Cluster.B_Prj_Commando_FragGrenade_Cluster_C.OnStop
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -22,9 +47,12 @@ namespace SDK
 
 void AB_Prj_Commando_FragGrenade_Cluster_C::OnStop(struct FHitResult& Hit)
 {
-	static auto Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "OnStop");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Commando_FragGrenade_Cluster_C_OnStop_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "OnStop");
+
+	Params::AB_Prj_Commando_FragGrenade_Cluster_C_OnStop_Params Parms{};
 
 	Parms.Hit = Hit;
 
@@ -43,9 +71,12 @@ void AB_Prj_Commando_FragGrenade_Cluster_C::OnStop(struct FHitResult& Hit)
 
 void AB_Prj_Commando_FragGrenade_Cluster_C::ReceiveAnyDamage(float Damage, class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
 {
-	static auto Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "ReceiveAnyDamage");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Commando_FragGrenade_Cluster_C_ReceiveAnyDamage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "ReceiveAnyDamage");
+
+	Params::AB_Prj_Commando_FragGrenade_Cluster_C_ReceiveAnyDamage_Params Parms{};
 
 	Parms.Damage = Damage;
 	Parms.DamageType = DamageType;
@@ -63,12 +94,14 @@ void AB_Prj_Commando_FragGrenade_Cluster_C::ReceiveAnyDamage(float Damage, class
 
 void AB_Prj_Commando_FragGrenade_Cluster_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Commando_FragGrenade_Cluster_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -81,9 +114,12 @@ void AB_Prj_Commando_FragGrenade_Cluster_C::ReceiveBeginPlay()
 
 void AB_Prj_Commando_FragGrenade_Cluster_C::OnExploded(TArray<class AActor*>& HitActors, TArray<struct FHitResult>& HitResults)
 {
-	static auto Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "OnExploded");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Commando_FragGrenade_Cluster_C_OnExploded_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "OnExploded");
+
+	Params::AB_Prj_Commando_FragGrenade_Cluster_C_OnExploded_Params Parms{};
 
 	Parms.HitActors = HitActors;
 	Parms.HitResults = HitResults;
@@ -132,9 +168,12 @@ void AB_Prj_Commando_FragGrenade_Cluster_C::OnExploded(TArray<class AActor*>& Hi
 
 void AB_Prj_Commando_FragGrenade_Cluster_C::ExecuteUbergraph_B_Prj_Commando_FragGrenade_Cluster(int32 EntryPoint, bool CallFunc_HasAuthority_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable, bool Temp_bool_IsClosed_Variable, bool Temp_bool_Has_Been_Initd_Variable_1, bool CallFunc_IsDedicatedServer_ReturnValue, const struct FHitResult& K2Node_Event_Hit, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, float K2Node_Event_Damage, class UDamageType* K2Node_Event_DamageType, class AController* K2Node_Event_InstigatedBy, class AActor* K2Node_Event_DamageCauser, bool Temp_bool_IsClosed_Variable_1, TArray<class AActor*>& K2Node_Event_HitActors, TArray<struct FHitResult>& K2Node_Event_HitResults, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue)
 {
-	static auto Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "ExecuteUbergraph_B_Prj_Commando_FragGrenade_Cluster");
+	static class UFunction* Func = nullptr;
 
-	Params::AB_Prj_Commando_FragGrenade_Cluster_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade_Cluster_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("B_Prj_Commando_FragGrenade_Cluster_C", "ExecuteUbergraph_B_Prj_Commando_FragGrenade_Cluster");
+
+	Params::AB_Prj_Commando_FragGrenade_Cluster_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade_Cluster_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
@@ -176,6 +215,4 @@ void AB_Prj_Commando_FragGrenade_Cluster_C::ExecuteUbergraph_B_Prj_Commando_Frag
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

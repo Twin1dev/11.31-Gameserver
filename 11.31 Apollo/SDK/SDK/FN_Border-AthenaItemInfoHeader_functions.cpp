@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass Border-AthenaItemInfoHeader.Border-AthenaItemInfoHeader_C
+// (None)
+
+class UClass* UBorderMinusAthenaItemInfoHeader_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("Border-AthenaItemInfoHeader_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// Border-AthenaItemInfoHeader_C Border-AthenaItemInfoHeader.Default__Border-AthenaItemInfoHeader_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UBorderMinusAthenaItemInfoHeader_C* UBorderMinusAthenaItemInfoHeader_C::GetDefaultObj()
+{
+	static class UBorderMinusAthenaItemInfoHeader_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UBorderMinusAthenaItemInfoHeader_C*>(UBorderMinusAthenaItemInfoHeader_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

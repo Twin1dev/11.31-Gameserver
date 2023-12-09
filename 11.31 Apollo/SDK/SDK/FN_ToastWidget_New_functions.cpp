@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -13,6 +10,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 // FUNCTIONS
 //---------------------------------------------------------------------------------------------------------------------
+
+
+// WidgetBlueprintGeneratedClass ToastWidget_New.ToastWidget_New_C
+// (None)
+
+class UClass* UToastWidget_New_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("ToastWidget_New_C");
+
+	return Clss;
+}
+
+
+// ToastWidget_New_C ToastWidget_New.Default__ToastWidget_New_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UToastWidget_New_C* UToastWidget_New_C::GetDefaultObj()
+{
+	static class UToastWidget_New_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UToastWidget_New_C*>(UToastWidget_New_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
 
 
 // Function ToastWidget_New.ToastWidget_New_C.SetupAnimBindings
@@ -26,9 +51,12 @@ namespace SDK
 
 void UToastWidget_New_C::SetupAnimBindings(bool Unbind, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3)
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "SetupAnimBindings");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_SetupAnimBindings_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "SetupAnimBindings");
+
+	Params::UToastWidget_New_C_SetupAnimBindings_Params Parms{};
 
 	Parms.Unbind = Unbind;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -60,9 +88,12 @@ void UToastWidget_New_C::SetupAnimBindings(bool Unbind, UDelegateProperty_ K2Nod
 
 void UToastWidget_New_C::ApplyAdditionalStyling(class UClass* Temp_class_Variable, bool Temp_bool_Variable, class UClass* Temp_class_Variable_1, class UClass* Temp_class_Variable_2, bool Temp_bool_Variable_1, class UClass* Temp_class_Variable_3, class UClass* Temp_class_Variable_4, class UClass* Temp_class_Variable_5, bool Temp_bool_Variable_2, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UClass* K2Node_Select_Default, class UClass* K2Node_Select_Default_1, class UClass* K2Node_Select_Default_2)
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "ApplyAdditionalStyling");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_ApplyAdditionalStyling_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "ApplyAdditionalStyling");
+
+	Params::UToastWidget_New_C_ApplyAdditionalStyling_Params Parms{};
 
 	Parms.Temp_class_Variable = Temp_class_Variable;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -93,9 +124,12 @@ void UToastWidget_New_C::ApplyAdditionalStyling(class UClass* Temp_class_Variabl
 
 void UToastWidget_New_C::SetImage(TSoftObjectPtr<class UObject> CallFunc_GetImageOverride_ReturnValue, bool CallFunc_IsValidSoftObjectReference_ReturnValue, class UTwitchNotification_C* K2Node_DynamicCast_AsTwitch_Notification, bool K2Node_DynamicCast_bSuccess)
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "SetImage");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_SetImage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "SetImage");
+
+	Params::UToastWidget_New_C_SetImage_Params Parms{};
 
 	Parms.CallFunc_GetImageOverride_ReturnValue = CallFunc_GetImageOverride_ReturnValue;
 	Parms.CallFunc_IsValidSoftObjectReference_ReturnValue = CallFunc_IsValidSoftObjectReference_ReturnValue;
@@ -122,9 +156,12 @@ void UToastWidget_New_C::SetImage(TSoftObjectPtr<class UObject> CallFunc_GetImag
 
 enum class ESlateVisibility UToastWidget_New_C::GetOpenButtonVisibility(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, class UFortGlobalUIContext* CallFunc_GetLocalPlayerSubsystem_ReturnValue, bool CallFunc_IsInZone_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "GetOpenButtonVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_GetOpenButtonVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "GetOpenButtonVisibility");
+
+	Params::UToastWidget_New_C_GetOpenButtonVisibility_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
@@ -149,9 +186,12 @@ enum class ESlateVisibility UToastWidget_New_C::GetOpenButtonVisibility(bool Tem
 
 void UToastWidget_New_C::StartIntro(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "StartIntro");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_StartIntro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "StartIntro");
+
+	Params::UToastWidget_New_C_StartIntro_Params Parms{};
 
 	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
@@ -171,9 +211,12 @@ void UToastWidget_New_C::StartIntro(class UUMGSequencePlayer* CallFunc_PlayAnima
 
 void UToastWidget_New_C::ShowText(class FText Text, class UCommonTextBlock* TextBlock, class UCommonTextBlock* LocalTextBlock, class FText LocalText, bool CallFunc_TextIsEmpty_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "ShowText");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_ShowText_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "ShowText");
+
+	Params::UToastWidget_New_C_ShowText_Params Parms{};
 
 	Parms.Text = Text;
 	Parms.TextBlock = TextBlock;
@@ -196,17 +239,20 @@ void UToastWidget_New_C::ShowText(class FText Text, class UCommonTextBlock* Text
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortGlobalUIContext*        CallFunc_GetLocalPlayerSubsystem_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsInZone_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
+// class FText                        CallFunc_MakeLiteralText_ReturnValue                             (None)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData_1                           (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_Format_ReturnValue                                      ()
+// class FText                        CallFunc_Format_ReturnValue                                      (None)
 // enum class ESlateVisibility        CallFunc_GetOpenButtonVisibility_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UToastWidget_New_C::SetToast(class UFortUINotification* Toast, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class UFortUIFriendNotification* K2Node_DynamicCast_AsFort_UIFriend_Notification, bool K2Node_DynamicCast_bSuccess, bool K2Node_SwitchEnum_CmpSuccess, class UFortGlobalUIContext* CallFunc_GetLocalPlayerSubsystem_ReturnValue, bool CallFunc_IsInZone_ReturnValue, class FText CallFunc_MakeLiteralText_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData_1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, enum class ESlateVisibility CallFunc_GetOpenButtonVisibility_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "SetToast");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_SetToast_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "SetToast");
+
+	Params::UToastWidget_New_C_SetToast_Params Parms{};
 
 	Parms.Toast = Toast;
 	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
@@ -232,12 +278,14 @@ void UToastWidget_New_C::SetToast(class UFortUINotification* Toast, const struct
 
 void UToastWidget_New_C::PlayOutro()
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "PlayOutro");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_PlayOutro_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "PlayOutro");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -250,9 +298,12 @@ void UToastWidget_New_C::PlayOutro()
 
 void UToastWidget_New_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "OnMouseEnter");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_OnMouseEnter_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "OnMouseEnter");
+
+	Params::UToastWidget_New_C_OnMouseEnter_Params Parms{};
 
 	Parms.MyGeometry = MyGeometry;
 	Parms.MouseEvent = MouseEvent;
@@ -269,9 +320,12 @@ void UToastWidget_New_C::OnMouseEnter(const struct FGeometry& MyGeometry, struct
 
 void UToastWidget_New_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "OnMouseLeave");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_OnMouseLeave_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "OnMouseLeave");
+
+	Params::UToastWidget_New_C_OnMouseLeave_Params Parms{};
 
 	Parms.MouseEvent = MouseEvent;
 
@@ -287,9 +341,12 @@ void UToastWidget_New_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 
 void UToastWidget_New_C::BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
+
+	Params::UToastWidget_New_C_BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature_Params Parms{};
 
 	Parms.Button = Button;
 
@@ -304,12 +361,14 @@ void UToastWidget_New_C::BndEvt__OpenButton_K2Node_ComponentBoundEvent_5_CommonB
 
 void UToastWidget_New_C::HandleOutroFinished()
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "HandleOutroFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_HandleOutroFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "HandleOutroFinished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -320,12 +379,14 @@ void UToastWidget_New_C::HandleOutroFinished()
 
 void UToastWidget_New_C::HandleIntroFinished()
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "HandleIntroFinished");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_HandleIntroFinished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "HandleIntroFinished");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -336,12 +397,14 @@ void UToastWidget_New_C::HandleIntroFinished()
 
 void UToastWidget_New_C::Construct()
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -352,12 +415,14 @@ void UToastWidget_New_C::Construct()
 
 void UToastWidget_New_C::Destruct()
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "Destruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_Destruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "Destruct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -376,9 +441,12 @@ void UToastWidget_New_C::Destruct()
 
 void UToastWidget_New_C::ExecuteUbergraph_ToastWidget_New(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent_1, const struct FPointerEvent& K2Node_Event_MouseEvent, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "ExecuteUbergraph_ToastWidget_New");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_ExecuteUbergraph_ToastWidget_New_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "ExecuteUbergraph_ToastWidget_New");
+
+	Params::UToastWidget_New_C_ExecuteUbergraph_ToastWidget_New_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
@@ -400,17 +468,17 @@ void UToastWidget_New_C::ExecuteUbergraph_ToastWidget_New(int32 EntryPoint, UDel
 
 void UToastWidget_New_C::OnFinishedToast__DelegateSignature()
 {
-	static auto Func = Class->GetFunction("ToastWidget_New_C", "OnFinishedToast__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::UToastWidget_New_C_OnFinishedToast__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("ToastWidget_New_C", "OnFinishedToast__DelegateSignature");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

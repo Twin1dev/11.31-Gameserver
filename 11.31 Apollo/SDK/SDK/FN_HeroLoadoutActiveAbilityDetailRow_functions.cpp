@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// WidgetBlueprintGeneratedClass HeroLoadoutActiveAbilityDetailRow.HeroLoadoutActiveAbilityDetailRow_C
+// (None)
+
+class UClass* UHeroLoadoutActiveAbilityDetailRow_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("HeroLoadoutActiveAbilityDetailRow_C");
+
+	return Clss;
+}
+
+
+// HeroLoadoutActiveAbilityDetailRow_C HeroLoadoutActiveAbilityDetailRow.Default__HeroLoadoutActiveAbilityDetailRow_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UHeroLoadoutActiveAbilityDetailRow_C* UHeroLoadoutActiveAbilityDetailRow_C::GetDefaultObj()
+{
+	static class UHeroLoadoutActiveAbilityDetailRow_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UHeroLoadoutActiveAbilityDetailRow_C*>(UHeroLoadoutActiveAbilityDetailRow_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function HeroLoadoutActiveAbilityDetailRow.HeroLoadoutActiveAbilityDetailRow_C.SetBorderVisibility
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UHeroLoadoutActiveAbilityDetailRow_C::SetBorderVisibility()
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "SetBorderVisibility");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailRow_C_SetBorderVisibility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "SetBorderVisibility");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -52,9 +79,12 @@ void UHeroLoadoutActiveAbilityDetailRow_C::SetBorderVisibility()
 
 void UHeroLoadoutActiveAbilityDetailRow_C::GetTierImage(TSoftObjectPtr<class UTexture2D>* NewParam, enum class EFortItemTier Temp_byte_Variable, TSoftObjectPtr<class UTexture2D> Temp_softobject_Variable, TSoftObjectPtr<class UTexture2D> Temp_softobject_Variable_1, TSoftObjectPtr<class UTexture2D> Temp_softobject_Variable_2, TSoftObjectPtr<class UTexture2D> Temp_softobject_Variable_3, TSoftObjectPtr<class UTexture2D> Temp_softobject_Variable_4, TSoftObjectPtr<class UTexture2D> Temp_softobject_Variable_5, TSoftObjectPtr<class UTexture2D> Temp_softobject_Variable_6, TSoftObjectPtr<class UTexture2D> Temp_softobject_Variable_7, TSoftObjectPtr<class UTexture2D> Temp_softobject_Variable_8, TSoftObjectPtr<class UTexture2D> Temp_softobject_Variable_9, TSoftObjectPtr<class UTexture2D> Temp_softobject_Variable_10, enum class EFortItemTier CallFunc_GetAbilityKitUnlockTierForHero_ReturnValue, TSoftObjectPtr<class UTexture2D> K2Node_Select_Default)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "GetTierImage");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailRow_C_GetTierImage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "GetTierImage");
+
+	Params::UHeroLoadoutActiveAbilityDetailRow_C_GetTierImage_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_softobject_Variable = Temp_softobject_Variable;
@@ -88,9 +118,12 @@ void UHeroLoadoutActiveAbilityDetailRow_C::GetTierImage(TSoftObjectPtr<class UTe
 
 void UHeroLoadoutActiveAbilityDetailRow_C::SetDisplayState(bool ShowName, bool ShowDescription, bool UseVerboseDescription)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "SetDisplayState");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailRow_C_SetDisplayState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "SetDisplayState");
+
+	Params::UHeroLoadoutActiveAbilityDetailRow_C_SetDisplayState_Params Parms{};
 
 	Parms.ShowName = ShowName;
 	Parms.ShowDescription = ShowDescription;
@@ -108,9 +141,12 @@ void UHeroLoadoutActiveAbilityDetailRow_C::SetDisplayState(bool ShowName, bool S
 
 void UHeroLoadoutActiveAbilityDetailRow_C::SetAbilityKit(class UFortAbilityKit* AbilityKit)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "SetAbilityKit");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailRow_C_SetAbilityKit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "SetAbilityKit");
+
+	Params::UHeroLoadoutActiveAbilityDetailRow_C_SetAbilityKit_Params Parms{};
 
 	Parms.AbilityKit = AbilityKit;
 
@@ -127,9 +163,12 @@ void UHeroLoadoutActiveAbilityDetailRow_C::SetAbilityKit(class UFortAbilityKit* 
 
 bool UHeroLoadoutActiveAbilityDetailRow_C::IsAbilityUnlocked(bool CallFunc_IsAbilityKitUnlockedForHero_ReturnValue)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "IsAbilityUnlocked");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailRow_C_IsAbilityUnlocked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "IsAbilityUnlocked");
+
+	Params::UHeroLoadoutActiveAbilityDetailRow_C_IsAbilityUnlocked_Params Parms{};
 
 	Parms.CallFunc_IsAbilityKitUnlockedForHero_ReturnValue = CallFunc_IsAbilityKitUnlockedForHero_ReturnValue;
 
@@ -147,9 +186,12 @@ bool UHeroLoadoutActiveAbilityDetailRow_C::IsAbilityUnlocked(bool CallFunc_IsAbi
 
 class UFortAbilityKit* UHeroLoadoutActiveAbilityDetailRow_C::GetAbilityKit()
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "GetAbilityKit");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailRow_C_GetAbilityKit_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "GetAbilityKit");
+
+	Params::UHeroLoadoutActiveAbilityDetailRow_C_GetAbilityKit_Params Parms{};
 
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -166,9 +208,12 @@ class UFortAbilityKit* UHeroLoadoutActiveAbilityDetailRow_C::GetAbilityKit()
 
 void UHeroLoadoutActiveAbilityDetailRow_C::SetHero(class UFortHero* Hero)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "SetHero");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailRow_C_SetHero_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "SetHero");
+
+	Params::UHeroLoadoutActiveAbilityDetailRow_C_SetHero_Params Parms{};
 
 	Parms.Hero = Hero;
 
@@ -189,9 +234,12 @@ void UHeroLoadoutActiveAbilityDetailRow_C::SetHero(class UFortHero* Hero)
 
 void UHeroLoadoutActiveAbilityDetailRow_C::UpdateTextStyles(bool Temp_bool_Variable, bool CallFunc_IsAbilityUnlocked_ReturnValue, bool CallFunc_IsAbilityUnlocked_ReturnValue_1, bool Temp_bool_Variable_1, class UClass* K2Node_Select_Default, class UClass* K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "UpdateTextStyles");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailRow_C_UpdateTextStyles_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "UpdateTextStyles");
+
+	Params::UHeroLoadoutActiveAbilityDetailRow_C_UpdateTextStyles_Params Parms{};
 
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.CallFunc_IsAbilityUnlocked_ReturnValue = CallFunc_IsAbilityUnlocked_ReturnValue;
@@ -220,9 +268,9 @@ void UHeroLoadoutActiveAbilityDetailRow_C::UpdateTextStyles(bool Temp_bool_Varia
 // class UFortAbilityKit*             CallFunc_GetAbilityKit_ReturnValue_2                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue_2                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortTooltipUIContext*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateBrush                 CallFunc_NoResourceBrush_ReturnValue                             ()
-// struct FSlateBrush                 CallFunc_ResizeBrush_ResizedBrush                                ()
-// struct FSlateBrush                 CallFunc_ResizeBrush_ResizedBrush_1                              ()
+// struct FSlateBrush                 CallFunc_NoResourceBrush_ReturnValue                             (None)
+// struct FSlateBrush                 CallFunc_ResizeBrush_ResizedBrush                                (None)
+// struct FSlateBrush                 CallFunc_ResizeBrush_ResizedBrush_1                              (None)
 // bool                               Temp_bool_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable_1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -230,21 +278,24 @@ void UHeroLoadoutActiveAbilityDetailRow_C::UpdateTextStyles(bool Temp_bool_Varia
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortTooltipContext*         CallFunc_SpawnTooltipContextWithSource_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Temp_text_Variable                                               ()
-// class FText                        CallFunc_GetCombinedDescription_OutDescription                   ()
+// class FText                        Temp_text_Variable                                               (None)
+// class FText                        CallFunc_GetCombinedDescription_OutDescription                   (None)
 // bool                               CallFunc_GetCombinedDescription_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable_3                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        K2Node_Select_Default_1                                          ()
+// class FText                        K2Node_Select_Default_1                                          (None)
 // struct FLinearColor                Temp_struct_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        K2Node_Select_Default_2                                          ()
+// class FText                        K2Node_Select_Default_2                                          (None)
 // struct FLinearColor                Temp_struct_Variable_1                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FLinearColor                K2Node_Select_Default_3                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UHeroLoadoutActiveAbilityDetailRow_C::UpdateFromState(enum class ESlateVisibility LockedVisibility, bool Temp_bool_Variable, bool CallFunc_IsAbilityUnlocked_ReturnValue, TSoftObjectPtr<class UTexture2D> CallFunc_GetTierImage_NewParam, bool CallFunc_IsAbilityUnlocked_ReturnValue_1, class UFortAbilityKit* CallFunc_GetAbilityKit_ReturnValue, class UFortAbilityKit* CallFunc_GetAbilityKit_ReturnValue_1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UFortAbilityKit* CallFunc_GetAbilityKit_ReturnValue_2, bool CallFunc_IsValid_ReturnValue_2, class UFortTooltipUIContext* CallFunc_GetContext_ReturnValue, const struct FSlateBrush& CallFunc_NoResourceBrush_ReturnValue, const struct FSlateBrush& CallFunc_ResizeBrush_ResizedBrush, const struct FSlateBrush& CallFunc_ResizeBrush_ResizedBrush_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_2, enum class ESlateVisibility K2Node_Select_Default, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UFortTooltipContext* CallFunc_SpawnTooltipContextWithSource_ReturnValue, class FText Temp_text_Variable, class FText CallFunc_GetCombinedDescription_OutDescription, bool CallFunc_GetCombinedDescription_ReturnValue, bool Temp_bool_Variable_3, class FText K2Node_Select_Default_1, const struct FLinearColor& Temp_struct_Variable, class FText K2Node_Select_Default_2, const struct FLinearColor& Temp_struct_Variable_1, const struct FLinearColor& K2Node_Select_Default_3)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "UpdateFromState");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailRow_C_UpdateFromState_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "UpdateFromState");
+
+	Params::UHeroLoadoutActiveAbilityDetailRow_C_UpdateFromState_Params Parms{};
 
 	Parms.LockedVisibility = LockedVisibility;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -298,9 +349,12 @@ void UHeroLoadoutActiveAbilityDetailRow_C::UpdateFromState(enum class ESlateVisi
 
 void UHeroLoadoutActiveAbilityDetailRow_C::UpdateFromStyle(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable, const struct FVector2D& CallFunc_GetStandardBrushSize_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, bool Temp_bool_Variable_1, class UWidget* K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "UpdateFromStyle");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailRow_C_UpdateFromStyle_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "UpdateFromStyle");
+
+	Params::UHeroLoadoutActiveAbilityDetailRow_C_UpdateFromStyle_Params Parms{};
 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable_1 = Temp_byte_Variable_1;
@@ -324,9 +378,12 @@ void UHeroLoadoutActiveAbilityDetailRow_C::UpdateFromStyle(enum class ESlateVisi
 
 void UHeroLoadoutActiveAbilityDetailRow_C::PreConstruct(bool IsDesignTime)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "PreConstruct");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailRow_C_PreConstruct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "PreConstruct");
+
+	Params::UHeroLoadoutActiveAbilityDetailRow_C_PreConstruct_Params Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
 
@@ -341,12 +398,14 @@ void UHeroLoadoutActiveAbilityDetailRow_C::PreConstruct(bool IsDesignTime)
 
 void UHeroLoadoutActiveAbilityDetailRow_C::Construct()
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "Construct");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailRow_C_Construct_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "Construct");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -359,9 +418,12 @@ void UHeroLoadoutActiveAbilityDetailRow_C::Construct()
 
 void UHeroLoadoutActiveAbilityDetailRow_C::ExecuteUbergraph_HeroLoadoutActiveAbilityDetailRow(int32 EntryPoint, bool K2Node_Event_IsDesignTime)
 {
-	static auto Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "ExecuteUbergraph_HeroLoadoutActiveAbilityDetailRow");
+	static class UFunction* Func = nullptr;
 
-	Params::UHeroLoadoutActiveAbilityDetailRow_C_ExecuteUbergraph_HeroLoadoutActiveAbilityDetailRow_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "ExecuteUbergraph_HeroLoadoutActiveAbilityDetailRow");
+
+	Params::UHeroLoadoutActiveAbilityDetailRow_C_ExecuteUbergraph_HeroLoadoutActiveAbilityDetailRow_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
@@ -372,6 +434,4 @@ void UHeroLoadoutActiveAbilityDetailRow_C::ExecuteUbergraph_HeroLoadoutActiveAbi
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

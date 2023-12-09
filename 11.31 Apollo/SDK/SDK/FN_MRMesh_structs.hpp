@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -30,11 +27,9 @@ enum class EMeshTrackerVertexColorMode : uint8
 struct FMRMeshConfiguration
 {
 public:
-	uint8                                        Pad_1F50[0x1];                                     // Fixing Size Of Struct [ Dumper-8 ]
+	uint8                                        Pad_1083[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

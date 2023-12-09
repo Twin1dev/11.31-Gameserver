@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -27,11 +24,8 @@ public:
 	struct FLinearColor                          Error;                                             // 0x358(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                          Paused;                                            // 0x368(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("GameFeatureStatus_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UGameFeatureStatus_C* GetDefaultObj();
 
 	void HandleStatusChanged(enum class EAthenaGameFeatureStatus CurrentStatus, bool K2Node_SwitchEnum_CmpSuccess, enum class EAthenaGameFeatureStatus Temp_byte_Variable, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, enum class EAthenaGameFeatureStatus Temp_byte_Variable_1, const struct FLinearColor& K2Node_Select_Default, class UUMGSequencePlayer* CallFunc_PlayAnimationForward_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UWidget* K2Node_Select_Default_1, bool CallFunc_IsAnimationPlaying_ReturnValue);
 	void OnStatusChanged(enum class EAthenaGameFeatureStatus NewStatus);
@@ -40,6 +34,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -24,11 +21,8 @@ public:
 	class UWidgetSwitcher*                       InputReflectorButtonStyle;                         // 0x278(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FSlateBrush                           MobileBackground;                                  // 0x280(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("BottomBarWidget_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UBottomBarWidget_C* GetDefaultObj();
 
 	void SetupBottomBarStyle(enum class ESubGame Temp_byte_Variable, class UMaterialInterface* Temp_object_Variable, class UMaterialInterface* Temp_object_Variable_1, class UMaterialInterface* Temp_object_Variable_2, class UMaterialInterface* Temp_object_Variable_3, enum class ESubGame Temp_byte_Variable_1, class UWidget* Temp_object_Variable_4, class UWidget* Temp_object_Variable_5, enum class ESubGame CallFunc_GetCurrentSubGame_ReturnValue, class UWidget* K2Node_Select_Default, class UMaterialInterface* K2Node_Select_Default_1);
 	void Construct();
@@ -37,6 +31,4 @@ public:
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

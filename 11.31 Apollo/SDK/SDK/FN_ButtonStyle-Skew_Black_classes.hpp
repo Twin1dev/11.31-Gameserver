@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 namespace SDK
 {
@@ -14,20 +11,15 @@ namespace SDK
 
 // 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-Skew_Black.ButtonStyle-Skew_Black_C
-class UButtonStyle_Skew_Black_C : public UCommonButtonStyle
+class UButtonStyleMinusSkew_Black_C : public UCommonButtonStyle
 {
 public:
 
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("ButtonStyle-Skew_Black_C");
-		return Clss;
-	}
+	static class UClass* StaticClass();
+	static class UButtonStyleMinusSkew_Black_C* GetDefaultObj();
 
 };
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

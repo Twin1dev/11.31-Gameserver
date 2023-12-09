@@ -1,17 +1,44 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
 namespace SDK
 {
+//---------------------------------------------------------------------------------------------------------------------
+// FUNCTIONS
+//---------------------------------------------------------------------------------------------------------------------
+
+
+// BlueprintGeneratedClass TeamID_PvP_32.TeamID_PvP_32_C
+// (None)
+
+class UClass* UTeamID_PvP_32_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TeamID_PvP_32_C");
+
+	return Clss;
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
+// TeamID_PvP_32_C TeamID_PvP_32.Default__TeamID_PvP_32_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UTeamID_PvP_32_C* UTeamID_PvP_32_C::GetDefaultObj()
+{
+	static class UTeamID_PvP_32_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UTeamID_PvP_32_C*>(UTeamID_PvP_32_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+}
+
+

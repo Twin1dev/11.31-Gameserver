@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,18 +12,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass GAB_GenericDeath_NoMontage.GAB_GenericDeath_NoMontage_C
+// (None)
+
+class UClass* UGAB_GenericDeath_NoMontage_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("GAB_GenericDeath_NoMontage_C");
+
+	return Clss;
+}
+
+
+// GAB_GenericDeath_NoMontage_C GAB_GenericDeath_NoMontage.Default__GAB_GenericDeath_NoMontage_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class UGAB_GenericDeath_NoMontage_C* UGAB_GenericDeath_NoMontage_C::GetDefaultObj()
+{
+	static class UGAB_GenericDeath_NoMontage_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<UGAB_GenericDeath_NoMontage_C*>(UGAB_GenericDeath_NoMontage_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function GAB_GenericDeath_NoMontage.GAB_GenericDeath_NoMontage_C.OnCancelled_878A944E4E232FA54BF973ACBC126DA3
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 
 void UGAB_GenericDeath_NoMontage_C::OnCancelled_878A944E4E232FA54BF973ACBC126DA3()
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_NoMontage_C", "OnCancelled_878A944E4E232FA54BF973ACBC126DA3");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_NoMontage_C_OnCancelled_878A944E4E232FA54BF973ACBC126DA3_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_NoMontage_C", "OnCancelled_878A944E4E232FA54BF973ACBC126DA3");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -37,12 +64,14 @@ void UGAB_GenericDeath_NoMontage_C::OnCancelled_878A944E4E232FA54BF973ACBC126DA3
 
 void UGAB_GenericDeath_NoMontage_C::OnInterrupted_878A944E4E232FA54BF973ACBC126DA3()
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_NoMontage_C", "OnInterrupted_878A944E4E232FA54BF973ACBC126DA3");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_NoMontage_C_OnInterrupted_878A944E4E232FA54BF973ACBC126DA3_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_NoMontage_C", "OnInterrupted_878A944E4E232FA54BF973ACBC126DA3");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -53,12 +82,14 @@ void UGAB_GenericDeath_NoMontage_C::OnInterrupted_878A944E4E232FA54BF973ACBC126D
 
 void UGAB_GenericDeath_NoMontage_C::OnBlendOut_878A944E4E232FA54BF973ACBC126DA3()
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_NoMontage_C", "OnBlendOut_878A944E4E232FA54BF973ACBC126DA3");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_NoMontage_C_OnBlendOut_878A944E4E232FA54BF973ACBC126DA3_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_NoMontage_C", "OnBlendOut_878A944E4E232FA54BF973ACBC126DA3");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -69,12 +100,14 @@ void UGAB_GenericDeath_NoMontage_C::OnBlendOut_878A944E4E232FA54BF973ACBC126DA3(
 
 void UGAB_GenericDeath_NoMontage_C::OnCompleted_878A944E4E232FA54BF973ACBC126DA3()
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_NoMontage_C", "OnCompleted_878A944E4E232FA54BF973ACBC126DA3");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_NoMontage_C_OnCompleted_878A944E4E232FA54BF973ACBC126DA3_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_NoMontage_C", "OnCompleted_878A944E4E232FA54BF973ACBC126DA3");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -86,9 +119,12 @@ void UGAB_GenericDeath_NoMontage_C::OnCompleted_878A944E4E232FA54BF973ACBC126DA3
 
 void UGAB_GenericDeath_NoMontage_C::K2_OnEndAbility(bool bWasCancelled)
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_NoMontage_C", "K2_OnEndAbility");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_NoMontage_C_K2_OnEndAbility_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_NoMontage_C", "K2_OnEndAbility");
+
+	Params::UGAB_GenericDeath_NoMontage_C_K2_OnEndAbility_Params Parms{};
 
 	Parms.bWasCancelled = bWasCancelled;
 
@@ -104,9 +140,12 @@ void UGAB_GenericDeath_NoMontage_C::K2_OnEndAbility(bool bWasCancelled)
 
 void UGAB_GenericDeath_NoMontage_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& EventData)
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_NoMontage_C", "K2_ActivateAbilityFromEvent");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_NoMontage_C_K2_ActivateAbilityFromEvent_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_NoMontage_C", "K2_ActivateAbilityFromEvent");
+
+	Params::UGAB_GenericDeath_NoMontage_C_K2_ActivateAbilityFromEvent_Params Parms{};
 
 	Parms.EventData = EventData;
 
@@ -131,9 +170,12 @@ void UGAB_GenericDeath_NoMontage_C::K2_ActivateAbilityFromEvent(struct FGameplay
 
 void UGAB_GenericDeath_NoMontage_C::ExecuteUbergraph_GAB_GenericDeath_NoMontage(int32 EntryPoint, class UFortAbilityTask_PlayAnimAndWait* CallFunc_CreatePlayAnimAndWaitProxy_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_IsValid_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_3, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue, bool K2Node_Event_bWasCancelled, const struct FGameplayEventData& K2Node_Event_EventData)
 {
-	static auto Func = Class->GetFunction("GAB_GenericDeath_NoMontage_C", "ExecuteUbergraph_GAB_GenericDeath_NoMontage");
+	static class UFunction* Func = nullptr;
 
-	Params::UGAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("GAB_GenericDeath_NoMontage_C", "ExecuteUbergraph_GAB_GenericDeath_NoMontage");
+
+	Params::UGAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_CreatePlayAnimAndWaitProxy_ReturnValue = CallFunc_CreatePlayAnimAndWaitProxy_ReturnValue;
@@ -152,6 +194,4 @@ void UGAB_GenericDeath_NoMontage_C::ExecuteUbergraph_GAB_GenericDeath_NoMontage(
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+

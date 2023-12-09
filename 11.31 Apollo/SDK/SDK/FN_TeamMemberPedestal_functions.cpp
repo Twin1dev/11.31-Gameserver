@@ -1,10 +1,7 @@
 #pragma once
 
-// Dumped by Twin1dev || Dumper-8
+// Dumped with Dumper-7!
 
-#ifdef _MSC_VER
-	#pragma pack(push, 0x01)
-#endif
 
 #include "../SDK.hpp"
 
@@ -15,6 +12,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// BlueprintGeneratedClass TeamMemberPedestal.TeamMemberPedestal_C
+// (Actor)
+
+class UClass* ATeamMemberPedestal_C::StaticClass()
+{
+	static class UClass* Clss = nullptr;
+
+	if (!Clss)
+		Clss = UObject::FindClassFast("TeamMemberPedestal_C");
+
+	return Clss;
+}
+
+
+// TeamMemberPedestal_C TeamMemberPedestal.Default__TeamMemberPedestal_C
+// (Public, ClassDefaultObject, ArchetypeObject, WasLoaded, LoadCompleted)
+
+class ATeamMemberPedestal_C* ATeamMemberPedestal_C::GetDefaultObj()
+{
+	static class ATeamMemberPedestal_C* Default = nullptr;
+
+	if (!Default)
+		Default = static_cast<ATeamMemberPedestal_C*>(ATeamMemberPedestal_C::StaticClass()->DefaultObject);
+
+	return Default;
+}
+
+
 // Function TeamMemberPedestal.TeamMemberPedestal_C.SetSparkleParticlesEnabled
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,9 +48,12 @@ namespace SDK
 
 void ATeamMemberPedestal_C::SetSparkleParticlesEnabled(bool IsEnabled, bool CallFunc_Not_PreBool_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "SetSparkleParticlesEnabled");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_SetSparkleParticlesEnabled_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "SetSparkleParticlesEnabled");
+
+	Params::ATeamMemberPedestal_C_SetSparkleParticlesEnabled_Params Parms{};
 
 	Parms.IsEnabled = IsEnabled;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
@@ -45,9 +73,12 @@ void ATeamMemberPedestal_C::SetSparkleParticlesEnabled(bool IsEnabled, bool Call
 
 void ATeamMemberPedestal_C::StopLobbyAnimation(bool CallFunc_IsInAthena_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue_1, class UAnimInstance* CallFunc_GetAnimInstance_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "StopLobbyAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_StopLobbyAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "StopLobbyAnimation");
+
+	Params::ATeamMemberPedestal_C_StopLobbyAnimation_Params Parms{};
 
 	Parms.CallFunc_IsInAthena_ReturnValue = CallFunc_IsInAthena_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
@@ -75,9 +106,12 @@ void ATeamMemberPedestal_C::StopLobbyAnimation(bool CallFunc_IsInAthena_ReturnVa
 
 void ATeamMemberPedestal_C::SetFakeBlobShadowVisiblity(bool Visible, bool CallFunc_IsMobilePlatform_ReturnValue, bool CallFunc_IsErebus_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, class UGameUserSettings* CallFunc_GetGameUserSettings_ReturnValue, int32 CallFunc_GetVisualEffectQuality_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, bool CallFunc_BooleanOR_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, float CallFunc_SelectFloat_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "SetFakeBlobShadowVisiblity");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_SetFakeBlobShadowVisiblity_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "SetFakeBlobShadowVisiblity");
+
+	Params::ATeamMemberPedestal_C_SetFakeBlobShadowVisiblity_Params Parms{};
 
 	Parms.Visible = Visible;
 	Parms.CallFunc_IsMobilePlatform_ReturnValue = CallFunc_IsMobilePlatform_ReturnValue;
@@ -102,9 +136,12 @@ void ATeamMemberPedestal_C::SetFakeBlobShadowVisiblity(bool Visible, bool CallFu
 
 void ATeamMemberPedestal_C::OnPartyDataChanged(struct FFortTeamMemberInfo& Member_Info)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnPartyDataChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnPartyDataChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnPartyDataChanged");
+
+	Params::ATeamMemberPedestal_C_OnPartyDataChanged_Params Parms{};
 
 	Parms.Member_Info = Member_Info;
 
@@ -121,9 +158,12 @@ void ATeamMemberPedestal_C::OnPartyDataChanged(struct FFortTeamMemberInfo& Membe
 
 void ATeamMemberPedestal_C::OnTeamMemberStateChanged(const struct FFortTeamMemberInfo& Team_Member_Info, bool CallFunc_EqualEqual_IntInt_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnTeamMemberStateChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnTeamMemberStateChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnTeamMemberStateChanged");
+
+	Params::ATeamMemberPedestal_C_OnTeamMemberStateChanged_Params Parms{};
 
 	Parms.Team_Member_Info = Team_Member_Info;
 	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
@@ -136,20 +176,23 @@ void ATeamMemberPedestal_C::OnTeamMemberStateChanged(const struct FFortTeamMembe
 // Function TeamMemberPedestal.TeamMemberPedestal_C.PlayLobbyAnimation
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGameplayTagQuery           CallFunc_MakeGameplayTagQuery_ReturnValue                        ()
+// struct FGameplayTagQuery           CallFunc_MakeGameplayTagQuery_ReturnValue                        (None)
 // bool                               CallFunc_IsInAthena_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TScriptInterface<class ICustomCharacterPartOwnerInterface>K2Node_DynamicCast_AsCustom_Character_Part_Owner_Interface       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TScriptInterface<class ICustomCharacterPartOwnerInterface>K2Node_DynamicCast_AsCustom_Character_Part_Owner_Interface_1     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_DynamicCast_bSuccess_1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayTagQuery           CallFunc_MakeGameplayTagQuery_ReturnValue_1                      ()
+// struct FGameplayTagQuery           CallFunc_MakeGameplayTagQuery_ReturnValue_1                      (None)
 
 void ATeamMemberPedestal_C::PlayLobbyAnimation(const struct FGameplayTagQuery& CallFunc_MakeGameplayTagQuery_ReturnValue, bool CallFunc_IsInAthena_ReturnValue, TScriptInterface<class ICustomCharacterPartOwnerInterface> K2Node_DynamicCast_AsCustom_Character_Part_Owner_Interface, bool K2Node_DynamicCast_bSuccess, TScriptInterface<class ICustomCharacterPartOwnerInterface> K2Node_DynamicCast_AsCustom_Character_Part_Owner_Interface_1, bool K2Node_DynamicCast_bSuccess_1, bool CallFunc_IsValid_ReturnValue, const struct FGameplayTagQuery& CallFunc_MakeGameplayTagQuery_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "PlayLobbyAnimation");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_PlayLobbyAnimation_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "PlayLobbyAnimation");
+
+	Params::ATeamMemberPedestal_C_PlayLobbyAnimation_Params Parms{};
 
 	Parms.CallFunc_MakeGameplayTagQuery_ReturnValue = CallFunc_MakeGameplayTagQuery_ReturnValue;
 	Parms.CallFunc_IsInAthena_ReturnValue = CallFunc_IsInAthena_ReturnValue;
@@ -195,9 +238,12 @@ void ATeamMemberPedestal_C::PlayLobbyAnimation(const struct FGameplayTagQuery& C
 
 void ATeamMemberPedestal_C::RefreshWidgets(class UFortMatchmakingContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_Variable, bool CallFunc_IsInLobby_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool CallFunc_IsInLocalSquadGroup_ReturnValue, bool CallFunc_IsValidTeamMember_ReturnValue, bool CallFunc_IsCurrentMemberLocal_ReturnValue, bool CallFunc_IsInLocalSquadGroup_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_1, bool CallFunc_IsValidTeamMember_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, class UFortStoreContext* CallFunc_GetContext_ReturnValue_1, enum class EFortStoreState CallFunc_GetStoreState_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue_2, bool CallFunc_EqualEqual_ByteByte_ReturnValue, enum class EFrontEndCamera CallFunc_GetFrontEndCamera_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_2, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_EqualEqual_ByteByte_ReturnValue_2, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanAND_ReturnValue_3)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "RefreshWidgets");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_RefreshWidgets_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "RefreshWidgets");
+
+	Params::ATeamMemberPedestal_C_RefreshWidgets_Params Parms{};
 
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -242,9 +288,12 @@ void ATeamMemberPedestal_C::RefreshWidgets(class UFortMatchmakingContext* CallFu
 
 void ATeamMemberPedestal_C::OnFrontEndCameraChanged(enum class EFrontEndCamera New_Camera, enum class EFrontEndCamera Old_Camera, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue_1, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_NotEqual_ObjectObject_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnFrontEndCameraChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnFrontEndCameraChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnFrontEndCameraChanged");
+
+	Params::ATeamMemberPedestal_C_OnFrontEndCameraChanged_Params Parms{};
 
 	Parms.New_Camera = New_Camera;
 	Parms.Old_Camera = Old_Camera;
@@ -272,9 +321,12 @@ void ATeamMemberPedestal_C::OnFrontEndCameraChanged(enum class EFrontEndCamera N
 
 void ATeamMemberPedestal_C::InitializeContextEvents(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_1, class UFortPartyContext* CallFunc_GetContext_ReturnValue_1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate_2, class UFortUITeamInfo* CallFunc_GetLocalPlayerTeam_ReturnValue, class UFortPartyContext* CallFunc_GetContext_ReturnValue_2)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "InitializeContextEvents");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_InitializeContextEvents_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "InitializeContextEvents");
+
+	Params::ATeamMemberPedestal_C_InitializeContextEvents_Params Parms{};
 
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
@@ -305,9 +357,12 @@ void ATeamMemberPedestal_C::InitializeContextEvents(UDelegateProperty_ K2Node_Cr
 
 void ATeamMemberPedestal_C::HandleHoverInputActions(bool bIsHovered, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable_1, bool Temp_bool_Variable_1, enum class ESlateVisibility Temp_byte_Variable_2, enum class ESlateVisibility Temp_byte_Variable_3, bool CallFunc_IsValid_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select_Default_1)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "HandleHoverInputActions");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_HandleHoverInputActions_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "HandleHoverInputActions");
+
+	Params::ATeamMemberPedestal_C_HandleHoverInputActions_Params Parms{};
 
 	Parms.bIsHovered = bIsHovered;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -337,9 +392,12 @@ void ATeamMemberPedestal_C::HandleHoverInputActions(bool bIsHovered, bool Temp_b
 
 void ATeamMemberPedestal_C::InitializeInputActionRefs(class UUserWidget* CallFunc_GetUserWidgetObject_ReturnValue, class UTeamMemberPedestal_Nameplate_C* K2Node_DynamicCast_AsTeam_Member_Pedestal_Nameplate, bool K2Node_DynamicCast_bSuccess, class UUserWidget* CallFunc_GetUserWidgetObject_ReturnValue_1, class ULobbyPlayerAddPlayer_C* K2Node_DynamicCast_AsLobby_Player_Add_Player, bool K2Node_DynamicCast_bSuccess_1)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "InitializeInputActionRefs");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_InitializeInputActionRefs_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "InitializeInputActionRefs");
+
+	Params::ATeamMemberPedestal_C_InitializeInputActionRefs_Params Parms{};
 
 	Parms.CallFunc_GetUserWidgetObject_ReturnValue = CallFunc_GetUserWidgetObject_ReturnValue;
 	Parms.K2Node_DynamicCast_AsTeam_Member_Pedestal_Nameplate = K2Node_DynamicCast_AsTeam_Member_Pedestal_Nameplate;
@@ -374,9 +432,12 @@ void ATeamMemberPedestal_C::InitializeInputActionRefs(class UUserWidget* CallFun
 
 void ATeamMemberPedestal_C::UserConstructionScript(const struct FLinearColor& NewLocalVar_2, const struct FLinearColor& NewLocalVar_1, const struct FLinearColor& NewLocalVar_0, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_2, float CallFunc_Multiply_FloatFloat_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_3, float CallFunc_SelectFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_SelectFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_2, float CallFunc_SelectFloat_ReturnValue_2, float CallFunc_Multiply_FloatFloat_ReturnValue_3, bool CallFunc_SetStaticMesh_ReturnValue)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "UserConstructionScript");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_UserConstructionScript_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "UserConstructionScript");
+
+	Params::ATeamMemberPedestal_C_UserConstructionScript_Params Parms{};
 
 	Parms.NewLocalVar_2 = NewLocalVar_2;
 	Parms.NewLocalVar_1 = NewLocalVar_1;
@@ -405,12 +466,14 @@ void ATeamMemberPedestal_C::UserConstructionScript(const struct FLinearColor& Ne
 
 void ATeamMemberPedestal_C::FadeInPodium__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "FadeInPodium__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_FadeInPodium__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "FadeInPodium__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -421,12 +484,14 @@ void ATeamMemberPedestal_C::FadeInPodium__FinishedFunc()
 
 void ATeamMemberPedestal_C::FadeInPodium__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "FadeInPodium__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_FadeInPodium__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "FadeInPodium__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -437,12 +502,14 @@ void ATeamMemberPedestal_C::FadeInPodium__UpdateFunc()
 
 void ATeamMemberPedestal_C::Timeline_0__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_0__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_Timeline_0__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_0__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -453,12 +520,14 @@ void ATeamMemberPedestal_C::Timeline_0__FinishedFunc()
 
 void ATeamMemberPedestal_C::Timeline_0__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_0__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_Timeline_0__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_0__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -469,12 +538,14 @@ void ATeamMemberPedestal_C::Timeline_0__UpdateFunc()
 
 void ATeamMemberPedestal_C::Timeline_1__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_1__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_Timeline_1__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_1__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -485,12 +556,14 @@ void ATeamMemberPedestal_C::Timeline_1__FinishedFunc()
 
 void ATeamMemberPedestal_C::Timeline_1__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_1__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_Timeline_1__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_1__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -501,12 +574,14 @@ void ATeamMemberPedestal_C::Timeline_1__UpdateFunc()
 
 void ATeamMemberPedestal_C::Timeline_2__FinishedFunc()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_2__FinishedFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_Timeline_2__FinishedFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_2__FinishedFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -517,12 +592,14 @@ void ATeamMemberPedestal_C::Timeline_2__FinishedFunc()
 
 void ATeamMemberPedestal_C::Timeline_2__UpdateFunc()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_2__UpdateFunc");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_Timeline_2__UpdateFunc_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "Timeline_2__UpdateFunc");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -534,9 +611,12 @@ void ATeamMemberPedestal_C::Timeline_2__UpdateFunc()
 
 void ATeamMemberPedestal_C::OnLoaded_D1FFD29E4F2735025D7C19B62CBA97B9(class UObject* Loaded)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnLoaded_D1FFD29E4F2735025D7C19B62CBA97B9");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnLoaded_D1FFD29E4F2735025D7C19B62CBA97B9_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnLoaded_D1FFD29E4F2735025D7C19B62CBA97B9");
+
+	Params::ATeamMemberPedestal_C_OnLoaded_D1FFD29E4F2735025D7C19B62CBA97B9_Params Parms{};
 
 	Parms.Loaded = Loaded;
 
@@ -551,12 +631,14 @@ void ATeamMemberPedestal_C::OnLoaded_D1FFD29E4F2735025D7C19B62CBA97B9(class UObj
 
 void ATeamMemberPedestal_C::ReceiveBeginPlay()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "ReceiveBeginPlay");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_ReceiveBeginPlay_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "ReceiveBeginPlay");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -570,9 +652,12 @@ void ATeamMemberPedestal_C::ReceiveBeginPlay()
 
 void ATeamMemberPedestal_C::HandleClientEvent_StoreTabClosed(class UObject* EventSource, class UObject* EventFocus, struct FFortClientEvent& ClientEvent)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "HandleClientEvent_StoreTabClosed");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_HandleClientEvent_StoreTabClosed_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "HandleClientEvent_StoreTabClosed");
+
+	Params::ATeamMemberPedestal_C_HandleClientEvent_StoreTabClosed_Params Parms{};
 
 	Parms.EventSource = EventSource;
 	Parms.EventFocus = EventFocus;
@@ -592,9 +677,12 @@ void ATeamMemberPedestal_C::HandleClientEvent_StoreTabClosed(class UObject* Even
 
 void ATeamMemberPedestal_C::HandleClientEvent_StoreTabSelected(class UObject* EventSource, class UObject* EventFocus, struct FFortClientEvent& ClientEvent)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "HandleClientEvent_StoreTabSelected");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_HandleClientEvent_StoreTabSelected_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "HandleClientEvent_StoreTabSelected");
+
+	Params::ATeamMemberPedestal_C_HandleClientEvent_StoreTabSelected_Params Parms{};
 
 	Parms.EventSource = EventSource;
 	Parms.EventFocus = EventFocus;
@@ -612,9 +700,12 @@ void ATeamMemberPedestal_C::HandleClientEvent_StoreTabSelected(class UObject* Ev
 
 void ATeamMemberPedestal_C::OnIsCurrentlyInMatchChanged(bool bIsInMatch)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnIsCurrentlyInMatchChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnIsCurrentlyInMatchChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnIsCurrentlyInMatchChanged");
+
+	Params::ATeamMemberPedestal_C_OnIsCurrentlyInMatchChanged_Params Parms{};
 
 	Parms.bIsInMatch = bIsInMatch;
 
@@ -631,9 +722,12 @@ void ATeamMemberPedestal_C::OnIsCurrentlyInMatchChanged(bool bIsInMatch)
 
 void ATeamMemberPedestal_C::OnPedestalIsPopulatedChanged(bool bIsPopulated, bool bOwningSquadContainsLocalPlayer)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnPedestalIsPopulatedChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnPedestalIsPopulatedChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnPedestalIsPopulatedChanged");
+
+	Params::ATeamMemberPedestal_C_OnPedestalIsPopulatedChanged_Params Parms{};
 
 	Parms.bIsPopulated = bIsPopulated;
 	Parms.bOwningSquadContainsLocalPlayer = bOwningSquadContainsLocalPlayer;
@@ -649,12 +743,14 @@ void ATeamMemberPedestal_C::OnPedestalIsPopulatedChanged(bool bIsPopulated, bool
 
 void ATeamMemberPedestal_C::SpawnPad()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "SpawnPad");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_SpawnPad_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "SpawnPad");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -665,12 +761,14 @@ void ATeamMemberPedestal_C::SpawnPad()
 
 void ATeamMemberPedestal_C::HidePad()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "HidePad");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_HidePad_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "HidePad");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -682,9 +780,12 @@ void ATeamMemberPedestal_C::HidePad()
 
 void ATeamMemberPedestal_C::OnGameReadinessChanged(enum class EGameReadiness GameReadiness)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnGameReadinessChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnGameReadinessChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnGameReadinessChanged");
+
+	Params::ATeamMemberPedestal_C_OnGameReadinessChanged_Params Parms{};
 
 	Parms.GameReadiness = GameReadiness;
 
@@ -702,9 +803,12 @@ void ATeamMemberPedestal_C::OnGameReadinessChanged(enum class EGameReadiness Gam
 
 void ATeamMemberPedestal_C::OnNewSquadEstablished(bool bMultipleSquadsPopulated, bool bOwningSquadContainsLocalPlayer, struct FAthenaTeamDisplayInfo& OwningSquadStyle)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnNewSquadEstablished");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnNewSquadEstablished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnNewSquadEstablished");
+
+	Params::ATeamMemberPedestal_C_OnNewSquadEstablished_Params Parms{};
 
 	Parms.bMultipleSquadsPopulated = bMultipleSquadsPopulated;
 	Parms.bOwningSquadContainsLocalPlayer = bOwningSquadContainsLocalPlayer;
@@ -724,9 +828,12 @@ void ATeamMemberPedestal_C::OnNewSquadEstablished(bool bMultipleSquadsPopulated,
 
 void ATeamMemberPedestal_C::OnOwningPedestalGroupEstablished(int32 SquadIdx, bool bSquadHasLocalPlayer, bool bIsPopulated)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnOwningPedestalGroupEstablished");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnOwningPedestalGroupEstablished_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnOwningPedestalGroupEstablished");
+
+	Params::ATeamMemberPedestal_C_OnOwningPedestalGroupEstablished_Params Parms{};
 
 	Parms.SquadIdx = SquadIdx;
 	Parms.bSquadHasLocalPlayer = bSquadHasLocalPlayer;
@@ -743,12 +850,14 @@ void ATeamMemberPedestal_C::OnOwningPedestalGroupEstablished(int32 SquadIdx, boo
 
 void ATeamMemberPedestal_C::OnConnectedToCampaignLobby()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnConnectedToCampaignLobby");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnConnectedToCampaignLobby_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnConnectedToCampaignLobby");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -759,12 +868,14 @@ void ATeamMemberPedestal_C::OnConnectedToCampaignLobby()
 
 void ATeamMemberPedestal_C::OnItemClicked()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnItemClicked");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnItemClicked_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnItemClicked");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -776,9 +887,12 @@ void ATeamMemberPedestal_C::OnItemClicked()
 
 void ATeamMemberPedestal_C::OnTeamMemberSet(bool bHasValidTeamMember)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnTeamMemberSet");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnTeamMemberSet_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnTeamMemberSet");
+
+	Params::ATeamMemberPedestal_C_OnTeamMemberSet_Params Parms{};
 
 	Parms.bHasValidTeamMember = bHasValidTeamMember;
 
@@ -793,12 +907,14 @@ void ATeamMemberPedestal_C::OnTeamMemberSet(bool bHasValidTeamMember)
 
 void ATeamMemberPedestal_C::OnHovered()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnHovered");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnHovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnHovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -809,12 +925,14 @@ void ATeamMemberPedestal_C::OnHovered()
 
 void ATeamMemberPedestal_C::OnUnhovered()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnUnhovered");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnUnhovered_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnUnhovered");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -825,12 +943,14 @@ void ATeamMemberPedestal_C::OnUnhovered()
 
 void ATeamMemberPedestal_C::OnPreviewActorSpawned()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnPreviewActorSpawned");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnPreviewActorSpawned_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnPreviewActorSpawned");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -844,9 +964,12 @@ void ATeamMemberPedestal_C::OnPreviewActorSpawned()
 
 void ATeamMemberPedestal_C::OnAvatarChanged(class UTexture2D* AvatarImage, const struct FColor& AvatarBackground, const struct FColor& HighlightColor)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnAvatarChanged");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnAvatarChanged_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnAvatarChanged");
+
+	Params::ATeamMemberPedestal_C_OnAvatarChanged_Params Parms{};
 
 	Parms.AvatarImage = AvatarImage;
 	Parms.AvatarBackground = AvatarBackground;
@@ -864,9 +987,12 @@ void ATeamMemberPedestal_C::OnAvatarChanged(class UTexture2D* AvatarImage, const
 
 void ATeamMemberPedestal_C::TransitionToCharacterScreen(bool Bool)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "TransitionToCharacterScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_TransitionToCharacterScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "TransitionToCharacterScreen");
+
+	Params::ATeamMemberPedestal_C_TransitionToCharacterScreen_Params Parms{};
 
 	Parms.Bool = Bool;
 
@@ -882,9 +1008,12 @@ void ATeamMemberPedestal_C::TransitionToCharacterScreen(bool Bool)
 
 void ATeamMemberPedestal_C::TransitionToLoadingScreen(bool Bool)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "TransitionToLoadingScreen");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_TransitionToLoadingScreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "TransitionToLoadingScreen");
+
+	Params::ATeamMemberPedestal_C_TransitionToLoadingScreen_Params Parms{};
 
 	Parms.Bool = Bool;
 
@@ -900,9 +1029,12 @@ void ATeamMemberPedestal_C::TransitionToLoadingScreen(bool Bool)
 
 void ATeamMemberPedestal_C::TransitionfromCharactertoLoadingscreen(bool Bool)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "TransitionfromCharactertoLoadingscreen");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_TransitionfromCharactertoLoadingscreen_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "TransitionfromCharactertoLoadingscreen");
+
+	Params::ATeamMemberPedestal_C_TransitionfromCharactertoLoadingscreen_Params Parms{};
 
 	Parms.Bool = Bool;
 
@@ -917,12 +1049,14 @@ void ATeamMemberPedestal_C::TransitionfromCharactertoLoadingscreen(bool Bool)
 
 void ATeamMemberPedestal_C::OnDisconnectedToCampaignLobby()
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "OnDisconnectedToCampaignLobby");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_OnDisconnectedToCampaignLobby_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "OnDisconnectedToCampaignLobby");
 
 
-	UObject::ProcessEvent(Func, &Parms);
+
+	UObject::ProcessEvent(Func, nullptr);
 
 }
 
@@ -1039,9 +1173,12 @@ void ATeamMemberPedestal_C::OnDisconnectedToCampaignLobby()
 
 void ATeamMemberPedestal_C::ExecuteUbergraph_TeamMemberPedestal(int32 EntryPoint, const struct FVector& CallFunc_MakeVector_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class EGameReadiness Temp_byte_Variable, float Temp_float_Variable, float Temp_float_Variable_1, float Temp_float_Variable_2, enum class ETimelineDirection Temp_byte_Variable_1, bool Temp_bool_Variable, bool Temp_bool_Variable_1, bool Temp_bool_Variable_2, const struct FLinearColor& Temp_struct_Variable, bool K2Node_Select_Default, class UObject* K2Node_CustomEvent_Loaded, class UObject* Temp_object_Variable, class UTexture* K2Node_DynamicCast_AsTexture, bool K2Node_DynamicCast_bSuccess, bool Temp_bool_Variable_3, const struct FLinearColor& Temp_struct_Variable_1, bool Temp_bool_Variable_4, float Temp_float_Variable_3, float Temp_float_Variable_4, bool Temp_bool_Variable_5, float Temp_float_Variable_5, float Temp_float_Variable_6, int32 CallFunc_GetCurrentTeamSize_ReturnValue, class UObject* K2Node_HandleClientEvent_EventSource_1, class UObject* K2Node_HandleClientEvent_EventFocus_1, const struct FFortClientEvent& K2Node_HandleClientEvent_ClientEvent_1, bool CallFunc_Greater_IntInt_ReturnValue, class UObject* K2Node_HandleClientEvent_EventSource, class UObject* K2Node_HandleClientEvent_EventFocus, const struct FFortClientEvent& K2Node_HandleClientEvent_ClientEvent, float K2Node_Select_Default_1, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_1, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_1, int32 CallFunc_GetCurrentTeamSize_ReturnValue_1, bool CallFunc_Greater_IntInt_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Array_Index_Variable, const struct FHitResult& CallFunc_K2_SetRelativeLocation_SweepHitResult, bool K2Node_Event_bIsInMatch, bool K2Node_Event_bIsPopulated_1, bool K2Node_Event_bOwningSquadContainsLocalPlayer_1, bool CallFunc_IsValid_ReturnValue, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess_1, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena_1, bool K2Node_DynamicCast_bSuccess_2, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue_1, float CallFunc_Multiply_FloatFloat_ReturnValue_2, float CallFunc_Multiply_FloatFloat_ReturnValue_3, float CallFunc_Multiply_FloatFloat_ReturnValue_4, float CallFunc_Multiply_FloatFloat_ReturnValue_5, bool CallFunc_IsInFrontend_ReturnValue, class APlayerPawn_Athena_Generic_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena_Generic, bool K2Node_DynamicCast_bSuccess_3, class APlayerPawn_Athena_Generic_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena_Generic_1, bool K2Node_DynamicCast_bSuccess_4, enum class EGameReadiness K2Node_Event_GameReadiness, float K2Node_Select_Default_2, TArray<class ACameraAnimationTransition_C*>& CallFunc_GetAllActorsOfClass_OutActors, class ACameraAnimationTransition_C* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool K2Node_Event_bMultipleSquadsPopulated, bool K2Node_Event_bOwningSquadContainsLocalPlayer, const struct FAthenaTeamDisplayInfo& K2Node_Event_OwningSquadStyle, bool CallFunc_IsInLocalSquadGroup_ReturnValue, const struct FLinearColor& K2Node_Select_Default_3, bool CallFunc_IsInLocalSquadGroup_ReturnValue_1, bool CallFunc_IsInLocalSquadGroup_ReturnValue_2, int32 K2Node_Event_SquadIdx, bool K2Node_Event_bSquadHasLocalPlayer, bool K2Node_Event_bIsPopulated, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_IsInLocalSquadGroup_ReturnValue_3, bool CallFunc_IsInLocalSquadGroup_ReturnValue_4, bool CallFunc_IsInLocalSquadGroup_ReturnValue_5, bool K2Node_Event_bHasValidTeamMember, bool CallFunc_IsPlayingFortnite_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue_1, bool CallFunc_BooleanAND_ReturnValue, const struct FLinearColor& CallFunc_K2_GetVectorParameterValue_ReturnValue, bool CallFunc_IsInLocalSquadGroup_ReturnValue_6, const struct FLinearColor& K2Node_Select_Default_4, float K2Node_Select_Default_5, bool CallFunc_IsInFrontend_ReturnValue_1, class UTexture2D* K2Node_Event_AvatarImage, const struct FColor& K2Node_Event_AvatarBackground, const struct FColor& K2Node_Event_HighlightColor, const struct FLinearColor& CallFunc_Conv_ColorToLinearColor_ReturnValue, int32 CallFunc_GetMaterialIndex_ReturnValue, class UMaterialInterface* CallFunc_GetMaterial_ReturnValue_2, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_2, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue_3, bool K2Node_CustomEvent_bool_2, bool K2Node_CustomEvent_bool_1, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool K2Node_CustomEvent_bool, bool CallFunc_EqualEqual_IntInt_ReturnValue_1)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "ExecuteUbergraph_TeamMemberPedestal");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_ExecuteUbergraph_TeamMemberPedestal_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "ExecuteUbergraph_TeamMemberPedestal");
+
+	Params::ATeamMemberPedestal_C_ExecuteUbergraph_TeamMemberPedestal_Params Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_MakeVector_ReturnValue = CallFunc_MakeVector_ReturnValue;
@@ -1162,9 +1299,12 @@ void ATeamMemberPedestal_C::ExecuteUbergraph_TeamMemberPedestal(int32 EntryPoint
 
 void ATeamMemberPedestal_C::Debug_OnFriendLFGRequest__DelegateSignature(int32 PlayerIndex)
 {
-	static auto Func = Class->GetFunction("TeamMemberPedestal_C", "Debug_OnFriendLFGRequest__DelegateSignature");
+	static class UFunction* Func = nullptr;
 
-	Params::ATeamMemberPedestal_C_Debug_OnFriendLFGRequest__DelegateSignature_Params Parms;
+	if (!Func)
+		Func = Class->GetFunction("TeamMemberPedestal_C", "Debug_OnFriendLFGRequest__DelegateSignature");
+
+	Params::ATeamMemberPedestal_C_Debug_OnFriendLFGRequest__DelegateSignature_Params Parms{};
 
 	Parms.PlayerIndex = PlayerIndex;
 
@@ -1174,6 +1314,4 @@ void ATeamMemberPedestal_C::Debug_OnFriendLFGRequest__DelegateSignature(int32 Pl
 
 }
 
-#ifdef _MSC_VER
-	#pragma pack(pop)
-#endif
+
