@@ -2,5 +2,4 @@
 Will be updated (not frequently cuz i have a life)
 
 ## Features
-
-- you can join the game..
+- err uhh hmm
