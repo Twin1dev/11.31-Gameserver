@@ -13,6 +13,110 @@ UFortWorldItem* FindItemInstanceByDef(AFortPlayerController* PC, UFortItemDefini
 	return nullptr;
 }
 
+void UpdateInventory(AFortPlayerControllerAthena* PC, FFortItemEntry* Entry)
+{
+	PC->WorldInventory->bRequiresLocalUpdate = true;
+	PC->WorldInventory->HandleInventoryLocalUpdate();
+
+	if (Entry)
+	{
+		PC->WorldInventory->Inventory.MarkItemDirty(*Entry);
+	}
+	else
+	{
+		PC->WorldInventory->Inventory.MarkArrayDirty();
+	}
+}
+
+void ModifyEntry(AFortPlayerControllerAthena* PC, FFortItemEntry& Entry)
+{
+	for (int32 /*size_t*/ i = 0; i < PC->WorldInventory->Inventory.ItemInstances.Num(); i++)
+	{
+		if (PC->WorldInventory->Inventory.ItemInstances[i]->ItemEntry.ItemGuid == Entry.ItemGuid)
+		{
+			PC->WorldInventory->Inventory.ItemInstances[i]->ItemEntry = Entry;
+			break;
+		}
+	}
+}
+
+void UpdateLoadedAmmo(AFortPlayerController* PC, AFortWeapon* Weapon)
+{
+	for (int32 /*size_t*/ i = 0; i < PC->WorldInventory->Inventory.ReplicatedEntries.Num(); i++)
+	{
+		if (PC->WorldInventory->Inventory.ReplicatedEntries[i].ItemGuid == Weapon->ItemEntryGuid)
+		{
+			PC->WorldInventory->Inventory.ReplicatedEntries[i].LoadedAmmo = Weapon->AmmoCount;
+			ModifyEntry((AFortPlayerControllerAthena*)PC, PC->WorldInventory->Inventory.ReplicatedEntries[i]);
+			UpdateInventory((AFortPlayerControllerAthena*)PC, &PC->WorldInventory->Inventory.ReplicatedEntries[i]);
+			break;
+		}
+	}
+}
+
+
+void Remove(AFortPlayerController* PC, FGuid Guid)
+{
+	for (int32 /*size_t*/ i = 0; i < PC->WorldInventory->Inventory.ReplicatedEntries.Num(); i++)
+	{
+		if (PC->WorldInventory->Inventory.ReplicatedEntries[i].ItemGuid == Guid)
+		{
+			break;
+		}
+	}
+
+	for (int32 /*size_t*/ i = 0; i < PC->WorldInventory->Inventory.ItemInstances.Num(); i++)
+	{
+		if (!PC->WorldInventory->Inventory.ItemInstances[i])
+			continue;
+		if (PC->WorldInventory->Inventory.ItemInstances[i]->ItemEntry.ItemGuid == Guid)
+		{
+			break;
+		}
+	}
+
+	UpdateInventory((AFortPlayerControllerAthena*)PC, nullptr);
+}
+
+
+void Remove(AFortPlayerController* PC, UFortItemDefinition* Def, int Count = 1)
+{
+	for (int32 /*size_t*/ i = 0; i < PC->WorldInventory->Inventory.ReplicatedEntries.Num(); i++)
+	{
+		if (PC->WorldInventory->Inventory.ReplicatedEntries[i].ItemDefinition == Def)
+		{
+			PC->WorldInventory->Inventory.ReplicatedEntries[i].Count -= Count;
+			if (PC->WorldInventory->Inventory.ReplicatedEntries[i].Count <= 0)
+			{
+				Remove(PC, PC->WorldInventory->Inventory.ReplicatedEntries[i].ItemGuid);
+				break;
+			}
+			ModifyEntry((AFortPlayerControllerAthena*)PC, PC->WorldInventory->Inventory.ReplicatedEntries[i]);
+			UpdateInventory((AFortPlayerControllerAthena*)PC, &PC->WorldInventory->Inventory.ReplicatedEntries[i]);
+			break;
+		}
+	}
+}
+
+void Remove(AFortPlayerController* PC, FFortItemEntry* Entry, int Count = 1)
+{
+	for (int32 /*size_t*/ i = 0; i < PC->WorldInventory->Inventory.ReplicatedEntries.Num(); i++)
+	{
+		if (&PC->WorldInventory->Inventory.ReplicatedEntries[i] == Entry)
+		{
+			PC->WorldInventory->Inventory.ReplicatedEntries[i].Count -= Count;
+			if (PC->WorldInventory->Inventory.ReplicatedEntries[i].Count <= 0)
+			{
+				Remove(PC, PC->WorldInventory->Inventory.ReplicatedEntries[i].ItemGuid);
+				break;
+			}
+			ModifyEntry((AFortPlayerControllerAthena*)PC, PC->WorldInventory->Inventory.ReplicatedEntries[i]);
+			UpdateInventory((AFortPlayerControllerAthena*)PC, &PC->WorldInventory->Inventory.ReplicatedEntries[i]);
+			break;
+		}
+	}
+}
+
 FFortItemEntry* FindItemEntryByGUID(AFortPlayerController* PC, FGuid ItemGuid)
 {
 	for (int i = 0; i < PC->WorldInventory->Inventory.ItemInstances.Num(); i++)
