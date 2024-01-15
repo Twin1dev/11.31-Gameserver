@@ -20,6 +20,20 @@ namespace looting
 }
 
 
+struct FUObjectItem
+{
+	UObject* Object;
+	int32 Flags;
+	int32 ClusterRootIndex;
+	int32 SerialNumber;
+
+	bool IsPendingKill() const
+	{
+
+	}
+	}
+};
+
 if (IsFactionChest)
 {
 	/*for (size_t i = 0; i < 2 /*3* /; i++)
@@ -44,3 +58,4 @@ if (IsFactionChest)
 	}
 	}
 }
+Object->bAlreadySearched = true;
