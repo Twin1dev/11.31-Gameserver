@@ -94,7 +94,7 @@ DWORD WINAPI Main(LPVOID)
 
     CREATEHOOK(BaseAddress() + 0x3883cd0, TickFlushHook, &TickFlush);
 
-
+    MH_EnableHook(MH_ALL_HOOKS);
 
     return 0;
 }
