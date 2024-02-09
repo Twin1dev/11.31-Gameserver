@@ -60,3 +60,13 @@ void InternalServerTryActivateAbilityHook(UAbilitySystemComponent* ASC, FGamepla
 	}
 
 }
+
+
+namespace Abilities
+{
+	void InitHooks()
+	{
+		// todo
+
+	}
+}

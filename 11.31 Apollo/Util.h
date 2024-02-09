@@ -15,7 +15,11 @@ inline AFortGameModeAthena* GetGameMode()
 
 static __forceinline uintptr_t BaseAddress()
 {
-	return reinterpret_cast<uintptr_t>(GetModuleHandle(0));
+	static uintptr_t BaseAddr = 0;
+
+	if (BaseAddr == 0) BaseAddr = reinterpret_cast<uintptr_t>(GetModuleHandle(0));
+
+	return BaseAddr;
 }
 
 // probably should forceinline but wtv!

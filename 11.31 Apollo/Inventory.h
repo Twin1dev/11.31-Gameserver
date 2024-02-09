@@ -109,3 +109,12 @@ static __forceinline void Update(AFortPlayerController* PC, bool bMark = true)
 	if (bMark)
 		PC->WorldInventory->Inventory.MarkArrayDirty();
 }
+
+namespace Inventory
+{
+	void InitHooks()
+	{
+		// todo
+
+	}
+}

@@ -14,6 +14,14 @@
 
 bool rettrue() { return true; }
 
+/*
+TODO:
+    - Fix Some Crashes
+    - Clean up dllmain (wtf was i doing)
+    - make fully playable
+    - make lategame
+*/
+
 DWORD WINAPI Main(LPVOID)
 {
     AllocConsole();
@@ -38,6 +46,7 @@ DWORD WINAPI Main(LPVOID)
 
     CREATEHOOK(BaseAddress() + 0x34af6c0, GetNetModeActor, nullptr);
 
+    // i should figure out a better way for this..
     UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
 
     GetDefaultObject<UKismetSystemLibrary>()->ExecuteConsoleCommand(UWorld::GetWorld(), L"open Apollo_Terrain", nullptr);
@@ -69,12 +78,12 @@ DWORD WINAPI Main(LPVOID)
 
     CREATEHOOK(BaseAddress() + 0x2176a20, OnDamageServerHook, &OnDamageServer);
 
-    static auto ServerCreateBuildingActorFn = StaticFindObject<UFunction>("/Script/FortniteGame.FortPlayerController.ServerCreateBuildingActor");
+    auto ServerCreateBuildingActorFn = StaticFindObject<UFunction>("/Script/FortniteGame.FortPlayerController.ServerCreateBuildingActor");
     HookExec(ServerCreateBuildingActorFn, ServerCreateBuildingActorHook, (PVOID*)&ServerCreateBuildingActor);
 
     VirtualHook(DefaultFortPlayerController->Vft, 567, ServerBeginEditingBuildingActorHook);
 
-    static auto ServerEditBuildingActorFn = StaticFindObject<UFunction>("/Script/FortniteGame.FortPlayerController.ServerEditBuildingActor");
+    auto ServerEditBuildingActorFn = StaticFindObject<UFunction>("/Script/FortniteGame.FortPlayerController.ServerEditBuildingActor");
     HookExec(ServerEditBuildingActorFn, ServerEditBuildingActorHook, (PVOID*)&ServerEditBuildingActor);
 
     VirtualHook(DefaultFortPlayerController->Vft, 565, ServerEndEditingBuildingActor);

@@ -11,6 +11,7 @@ void ProcessEventHook(UObject* pObject, UFunction* pFunction, void* pParams)
 	auto FuncName = pFunction->GetName();
 	auto FullName = pFunction->GetFullName();
 
+
 	
 	if (FuncName == "ServerExecuteInventoryItem")
 	{

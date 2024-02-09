@@ -197,3 +197,11 @@ static void ServerEndEditingBuildingActor(AFortPlayerController* PlayerControlle
 
 
 }
+namespace Player
+{
+	void InitHooks()
+	{
+		// todo
+
+	}
+}

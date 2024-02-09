@@ -34,8 +34,8 @@ inline void (*ServerReplicateActors)(UReplicationDriver*);
 void (*TickFlush)(UNetDriver*);
 void TickFlushHook(UNetDriver* Driver)
 {
-	if (Driver->ReplicationDriver)
-		reinterpret_cast<void(*)(UReplicationDriver*)>(Driver->ReplicationDriver->Vft[0x59])(Driver->ReplicationDriver);
+	if (auto RepDriver = Driver->ReplicationDriver)
+		ServerReplicateActors(RepDriver);
 
 	return TickFlush(Driver);
 }

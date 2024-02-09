@@ -41,6 +41,8 @@ bool ReadyToStartMatchHook(AFortGameModeAthena* GameMode)
 			InitListen(UWorld::GetWorld()->NetDriver, UWorld::GetWorld(), URL, true, Err);
 			SetWorld(UWorld::GetWorld()->NetDriver, UWorld::GetWorld());
 
+			ServerReplicateActors = decltype(ServerReplicateActors)(UWorld::GetWorld()->NetDriver->ReplicationDriver->Vft[0x59]);
+
 			GetGameMode()->GameSession->MaxPlayers = 100;
 
 			UWorld::GetWorld()->LevelCollections[0].NetDriver = UWorld::GetWorld()->NetDriver;
@@ -189,4 +191,13 @@ void OnDamageServerHook(ABuildingActor* BuildingActor, float Damage, FGameplayTa
 	Update(PlayerController);
 
 	return OnDamageServer(BuildingActor, Damage, DamageTags, Momentum, HitInfo, InstigatedBy, DamageCauser, EffectContext);
+}
+
+namespace GameMode
+{
+	void InitHooks()
+	{
+		// todo
+
+	}
 }
