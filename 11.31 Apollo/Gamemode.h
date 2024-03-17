@@ -20,6 +20,8 @@ bool ReadyToStartMatchHook(AFortGameModeAthena* GameMode)
 		bRTSM = true;
 
 		UFortPlaylistAthena* Playlist = StaticFindObject<UFortPlaylistAthena>("/Game/Athena/Playlists/Playlist_DefaultSolo.Playlist_DefaultSolo");
+		
+		GameMode->WarmupRequiredPlayerCount = 1;
 
 		GetGameState()->CurrentPlaylistInfo.BasePlaylist = Playlist;
 		GetGameState()->CurrentPlaylistInfo.OverridePlaylist = Playlist;
@@ -54,17 +56,6 @@ bool ReadyToStartMatchHook(AFortGameModeAthena* GameMode)
 		GetGameState()->PlayersLeft--;
 		GetGameState()->OnRep_PlayersLeft();
 		GetGameMode()->bWorldIsReady = true;
-
-		auto BRIsland_FloorLoot = StaticFindObject<UBlueprintGeneratedClass>("/Game/Athena/Environments/Blueprints/Tiered_Athena_FloorLoot_01.Tiered_Athena_FloorLoot_01_C");
-		auto SpawnIsland_FloorLoot = StaticFindObject<UBlueprintGeneratedClass>("/Game/Athena/Environments/Blueprints/Tiered_Athena_FloorLoot_Warmup.Tiered_Athena_FloorLoot_Warmup_C");
-
-		TArray<AActor*> SpawnIslandActors;
-		TArray<AActor*> BRIslandActors;
-
-		GetDefaultObject<UGameplayStatics>()->GetAllActorsOfClass(UWorld::GetWorld(), SpawnIsland_FloorLoot, &SpawnIslandActors);
-		GetDefaultObject<UGameplayStatics>()->GetAllActorsOfClass(UWorld::GetWorld(), BRIsland_FloorLoot, &BRIslandActors);
-
-		GetGameMode()->WarmupRequiredPlayerCount = 1;
 	}
 
 	bool ret = true;
