@@ -167,7 +167,7 @@ void OnDamageServerHook(ABuildingActor* BuildingActor, float Damage, FGameplayTa
 
 	if (BuildingSMActor->BuildingResourceAmountOverride.RowName.ComparisonIndex > 0)
 	{
-		auto AthenaResourceRates = StaticFindObject<UCurveTable>("/Game/Athena/Balance/DataTables/AthenaResourceRates.AthenaResourceRates");
+		static UCurveTable* AthenaResourceRates = StaticFindObject<UCurveTable>("/Game/Athena/Balance/DataTables/AthenaResourceRates.AthenaResourceRates");
 
 		EEvaluateCurveTableResult shutthefuckup{};
 		float OutXY{};
