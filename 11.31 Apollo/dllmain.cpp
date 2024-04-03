@@ -59,8 +59,6 @@ DWORD WINAPI Main(LPVOID)
     DWORD dwTemp;
     VirtualProtect((PVOID)func, 1, dwProtection, &dwTemp);
 
-    //
-
     GameMode::InitHooks();
     Player::InitHooks();
 
@@ -82,6 +80,9 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     {
     case DLL_PROCESS_ATTACH:
         CreateThread(0, 0, Main, 0, 0, 0);
+        break;
+    case DLL_PROCESS_DETACH:
+        break;
     }
     return TRUE;
 }
