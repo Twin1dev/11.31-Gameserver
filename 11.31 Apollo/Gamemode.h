@@ -128,6 +128,7 @@ APawn* SpawnDefaultPawnForHook(AGameModeBase* GameMode, AController* NewPlayer, 
 	return NewPawn;
 }
 
+
 static inline void (*OnDamageServer)(ABuildingActor* BuildingActor, float Damage, FGameplayTagContainer DamageTags, FVector Momentum, __int64 HitInfo, APlayerController* InstigatedBy, AActor* DamageCauser, __int64 EffectContext);
 void OnDamageServerHook(ABuildingActor* BuildingActor, float Damage, FGameplayTagContainer DamageTags, FVector Momentum, __int64 HitInfo, APlayerController* InstigatedBy, AActor* DamageCauser, __int64 EffectContext)
 {
@@ -188,7 +189,12 @@ namespace GameMode
 {
 	void InitHooks()
 	{
-		// todo
+		auto DefaultGameMode = StaticFindObject<AFortGameModeAthena>("/Script/FortniteGame.Default__FortGameModeAthena");
 
+		VirtualHook(DefaultGameMode->Vft, 254, ReadyToStartMatchHook, (PVOID*)&ReadyToStartMatch);
+		VirtualHook(DefaultGameMode->Vft, 197, SpawnDefaultPawnForHook);
+		VirtualHook(DefaultGameMode->Vft, 203, HandleStartingNewPlayerHook, (PVOID*)&HandleStartingNewPlayer);
+
+		CREATEHOOK(BaseAddress() + 0x2176a20, OnDamageServerHook, &OnDamageServer);
 	}
 }

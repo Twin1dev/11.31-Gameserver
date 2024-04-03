@@ -144,7 +144,6 @@ static void ServerEditBuildingActorHook(UObject* Context, FFrame& Stack, void* R
 		return ServerEditBuildingActor(Context, Stack, Ret);
 	}
 
-
 	Params->BuildingActorToEdit->EditingPlayer = nullptr;
 
 
@@ -160,6 +159,97 @@ static void ServerEditBuildingActorHook(UObject* Context, FFrame& Stack, void* R
 	}
 
 	return ServerEditBuildingActor(Context, Stack, Ret);
+}
+
+
+static inline void (*ClientOnPawnDied)(AFortPlayerController*, FFortPlayerDeathReport);
+void ClientOnPawnDiedHook(AFortPlayerController* DeadPlayerController, FFortPlayerDeathReport DeathReport)
+{
+	auto DeadPawn = (AFortPlayerPawnAthena*)(DeadPlayerController->Pawn);
+	auto DeadPlayerState = (AFortPlayerStateAthena*)(DeadPlayerController->PlayerState);
+
+	static bool bFirstDeath = false;
+
+	if (!DeadPawn || !DeadPlayerState || !DeadPlayerController->WorldInventory)
+		return ClientOnPawnDied(DeadPlayerController, DeathReport);
+
+	auto CorrectTags = *(FGameplayTagContainer*)(__int64(DeadPawn) + 0x1530);
+
+	FGameplayTagContainer Tags;
+
+	for (int i = 0; i < CorrectTags.GameplayTags.Num(); ++i)
+	{
+		Tags.GameplayTags.Add(CorrectTags.GameplayTags[i]);
+	}
+
+	for (int i = 0; i < CorrectTags.ParentTags.Num(); ++i)
+	{
+		Tags.ParentTags.Add(CorrectTags.ParentTags[i]);
+	}
+
+	FDeathInfo DeathInfo;
+	DeathInfo.bDBNO = DeadPawn->bIsDBNO;
+	DeathInfo.DeathLocation = DeadPawn->K2_GetActorLocation();
+	DeathInfo.DeathTags = Tags;
+	DeathInfo.bInitialized = true;
+	DeathInfo.DeathCause = AFortPlayerStateAthena::GetDefaultObj()->ToDeathCause(CorrectTags, false);
+	DeathInfo.FinisherOrDowner = DeathReport.KillerPlayerState ? DeathReport.KillerPlayerState : DeadPlayerState;
+	DeathInfo.Distance = DeathInfo.DeathCause == EDeathCause::FallDamage ? DeadPawn->LastFallDistance : (DeathReport.KillerPawn ? DeathReport.KillerPawn->GetDistanceTo(DeadPawn) : 0);
+
+	DeadPlayerState->PawnDeathLocation = DeathInfo.DeathLocation;
+	DeadPlayerState->DeathInfo = DeathInfo;
+	DeadPlayerState->OnRep_DeathInfo();
+
+	if (DeathReport.KillerPlayerState && DeathReport.KillerPlayerState != DeadPlayerState)
+	{
+		((AFortPlayerStateAthena*)DeathReport.KillerPlayerState)->KillScore++;
+		((AFortPlayerStateAthena*)DeathReport.KillerPlayerState)->TeamKillScore++;
+
+		((AFortPlayerStateAthena*)DeathReport.KillerPlayerState)->ClientReportKill(DeadPlayerState);
+		((AFortPlayerStateAthena*)DeathReport.KillerPlayerState)->OnRep_Kills();
+	}
+
+	for (int i = 0; i < DeadPlayerController->WorldInventory->Inventory.ItemInstances.Num(); i++)
+	{
+		auto CurrentInstance = DeadPlayerController->WorldInventory->Inventory.ItemInstances[i];
+
+		if (!CurrentInstance)
+			continue;
+
+		if (!CurrentInstance->ItemEntry.ItemDefinition)
+			continue;
+
+		if (((UFortWorldItemDefinition*)CurrentInstance->ItemEntry.ItemDefinition)->bCanBeDropped)
+		{
+			SpawnPickup(CurrentInstance->ItemEntry.ItemDefinition, DeathInfo.DeathLocation, CurrentInstance->ItemEntry.Count, 0, EFortPickupSourceTypeFlag::Player, EFortPickupSpawnSource::PlayerElimination);
+
+			if (CurrentInstance->ItemEntry.Count != 0)
+			{
+				RemoveItemFromPC(DeadPlayerController, CurrentInstance->ItemEntry.ItemGuid, CurrentInstance->ItemEntry.Count);
+			}
+		}
+	}
+
+	Update(DeadPlayerController);
+
+	if (!DeadPawn->bIsDBNO)
+	{
+		static void (*removeFromAlivePlayers)(AFortGameModeAthena * GameMode, AFortPlayerControllerAthena * PlayerController, APlayerState * PlayerState, APawn * FinisherPawn,
+			UFortWeaponItemDefinition * FinishingWeapon, EDeathCause DeathCause, char a7)
+			= decltype(removeFromAlivePlayers)(BaseAddress() + 0x15413f0);
+
+		AActor* DamageCauser = DeathReport.DamageCauser;
+		UFortWeaponItemDefinition* KillerWeaponDef = nullptr;
+
+		if (auto ProjectileBase = Cast<AFortProjectileBase>(DamageCauser))
+			KillerWeaponDef = ((AFortWeapon*)ProjectileBase->GetOwner())->WeaponData;
+		if (auto Weapon = Cast<AFortWeapon>(DamageCauser))
+			KillerWeaponDef = Weapon->WeaponData;
+
+		removeFromAlivePlayers(GetGameMode(), (AFortPlayerControllerAthena*)DeadPlayerController, ((AFortPlayerStateAthena*)DeathReport.KillerPlayerState) == DeadPlayerState ? nullptr : ((AFortPlayerStateAthena*)DeathReport.KillerPlayerState), DeathReport.KillerPawn, KillerWeaponDef, DeathInfo.DeathCause, 0);
+	}
+
+	return ClientOnPawnDied(DeadPlayerController, DeathReport);
 }
 
 static void ServerEndEditingBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* BuildingActorToStopEditing)
@@ -201,7 +291,21 @@ namespace Player
 {
 	void InitHooks()
 	{
-		// todo
+		auto DefaultFortPlayerController = StaticFindObject<AFortPlayerController>("/Script/FortniteGame.Default__FortPlayerControllerAthena");
 
+		VirtualHook(DefaultFortPlayerController->Vft, 617, ServerReadyToStartMatchHook, (PVOID*)&ServerReadyToStartMatch);
+		VirtualHook(GetDefaultObject<UFortControllerComponent_Aircraft>()->Vft, 130, ServerAttemptAircraftJumpHook);
+
+		auto ServerCreateBuildingActorFn = StaticFindObject<UFunction>("/Script/FortniteGame.FortPlayerController.ServerCreateBuildingActor");
+		HookExec(ServerCreateBuildingActorFn, ServerCreateBuildingActorHook, (PVOID*)&ServerCreateBuildingActor);
+
+		VirtualHook(DefaultFortPlayerController->Vft, 567, ServerBeginEditingBuildingActorHook);
+
+		auto ServerEditBuildingActorFn = StaticFindObject<UFunction>("/Script/FortniteGame.FortPlayerController.ServerEditBuildingActor");
+		HookExec(ServerEditBuildingActorFn, ServerEditBuildingActorHook, (PVOID*)&ServerEditBuildingActor);
+
+		CREATEHOOK(BaseAddress() + 0x2446300, ClientOnPawnDiedHook, &ClientOnPawnDied);
+
+		VirtualHook(DefaultFortPlayerController->Vft, 565, ServerEndEditingBuildingActor);
 	}
 }

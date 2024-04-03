@@ -16,10 +16,7 @@ bool rettrue() { return true; }
 
 /*
 TODO:
-    - Fix Some Crashes
-    - Clean up dllmain (wtf was i doing)
-    - make fully playable
-    - make lategame
+    - add looting
 */
 
 DWORD WINAPI Main(LPVOID)
@@ -64,34 +61,12 @@ DWORD WINAPI Main(LPVOID)
 
     //
 
-
- 
-    auto DefaultFortPlayerController = StaticFindObject<AFortPlayerController>("/Script/FortniteGame.Default__FortPlayerControllerAthena");
-    auto DefaultGameMode = StaticFindObject<AFortGameModeAthena>("/Script/FortniteGame.Default__FortGameModeAthena");
+    GameMode::InitHooks();
+    Player::InitHooks();
 
     CREATEHOOK(BaseAddress() + Offsets::ProcessEvent, ProcessEventHook, &ProcessEvent);
-    VirtualHook(DefaultGameMode->Vft, 254, ReadyToStartMatchHook, (PVOID*)&ReadyToStartMatch);
-    VirtualHook(DefaultGameMode->Vft, 197, SpawnDefaultPawnForHook);
-    VirtualHook(DefaultGameMode->Vft, 203, HandleStartingNewPlayerHook, (PVOID*)&HandleStartingNewPlayer);
-    VirtualHook(DefaultFortPlayerController->Vft, 617, ServerReadyToStartMatchHook, (PVOID*)&ServerReadyToStartMatch);
-    VirtualHook(GetDefaultObject<UFortControllerComponent_Aircraft>()->Vft, 130, ServerAttemptAircraftJumpHook);
-
-    CREATEHOOK(BaseAddress() + 0x2176a20, OnDamageServerHook, &OnDamageServer);
-
-    auto ServerCreateBuildingActorFn = StaticFindObject<UFunction>("/Script/FortniteGame.FortPlayerController.ServerCreateBuildingActor");
-    HookExec(ServerCreateBuildingActorFn, ServerCreateBuildingActorHook, (PVOID*)&ServerCreateBuildingActor);
-
-    VirtualHook(DefaultFortPlayerController->Vft, 567, ServerBeginEditingBuildingActorHook);
-
-    auto ServerEditBuildingActorFn = StaticFindObject<UFunction>("/Script/FortniteGame.FortPlayerController.ServerEditBuildingActor");
-    HookExec(ServerEditBuildingActorFn, ServerEditBuildingActorHook, (PVOID*)&ServerEditBuildingActor);
-
-    VirtualHook(DefaultFortPlayerController->Vft, 565, ServerEndEditingBuildingActor);
-
     VirtualHook(GetDefaultObject<UFortAbilitySystemComponentAthena>()->Vft, 0xF7, InternalServerTryActivateAbilityHook);
-
     CREATEHOOK(BaseAddress() + 0xe2bf70, DispatchRequestHook, &DispatchRequest);
-
     CREATEHOOK(BaseAddress() + 0x3883cd0, TickFlushHook, &TickFlush);
 
     MH_EnableHook(MH_ALL_HOOKS);

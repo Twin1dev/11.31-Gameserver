@@ -13,6 +13,17 @@ UFortWorldItem* FindItemInstanceByDef(AFortPlayerController* PC, UFortItemDefini
 	return nullptr;
 }
 
+UFortWorldItem* FindItemInstanceByGUID(AFortPlayerController* PC, FGuid Guid)
+{
+	for (int i = 0; i < PC->WorldInventory->Inventory.ItemInstances.Num(); i++)
+	{
+		if (PC->WorldInventory->Inventory.ItemInstances[i]->ItemEntry.ItemGuid == Guid)
+			return PC->WorldInventory->Inventory.ItemInstances[i];
+	}
+
+	return nullptr;
+}
+
 FFortItemEntry* FindItemEntryByGUID(AFortPlayerController* PC, FGuid ItemGuid)
 {
 	for (int i = 0; i < PC->WorldInventory->Inventory.ItemInstances.Num(); i++)
@@ -88,6 +99,49 @@ static UFortWorldItem* GivePCItem(AFortPlayerController* PC, UFortItemDefinition
 	return NewItem;
 }
 
+static void RemoveItemFromPC(AFortPlayerController* PC, FGuid Item, int Count)
+{
+	auto ItemEntry = FindItemEntryByGUID(PC, Item);
+
+	auto NewCount = ItemEntry->Count - Count;
+
+	if (NewCount <= 0)
+	{
+		for (int i = 0; i < PC->WorldInventory->Inventory.ItemInstances.Num(); i++)
+		{
+			auto ItemInstance = PC->WorldInventory->Inventory.ItemInstances[i];
+			auto CurrentGuid = ItemInstance->GetItemGuid();
+
+			if (CurrentGuid == Item)
+			{
+				PC->WorldInventory->Inventory.ReplicatedEntries.Remove(i);
+				break;
+			}
+		}
+
+		for (int i = 0; i < PC->WorldInventory->Inventory.ReplicatedEntries.Num(); i++)
+		{
+			auto ItemEntry = PC->WorldInventory->Inventory.ReplicatedEntries[i];
+			auto CurrentGuid = ItemEntry.ItemGuid;
+
+			if (CurrentGuid == Item)
+			{
+				PC->WorldInventory->Inventory.ReplicatedEntries.Remove(i);
+				break;
+			}
+		}
+	}
+	else {
+		ItemEntry->Count = NewCount;
+
+		auto ItemInstance = FindItemInstanceByGUID(PC, Item);
+
+		ItemInstance->ItemEntry.Count = NewCount;
+
+		PC->WorldInventory->Inventory.MarkItemDirty(ItemInstance->ItemEntry);
+		PC->WorldInventory->Inventory.MarkItemDirty(*ItemEntry);
+	}
+}
 
 UFortItemDefinition* FindItemDefFromGuid(FGuid Guid, AFortPlayerController* PC)
 {

@@ -11,8 +11,6 @@ void ProcessEventHook(UObject* pObject, UFunction* pFunction, void* pParams)
 	auto FuncName = pFunction->GetName();
 	auto FullName = pFunction->GetFullName();
 
-
-	
 	if (FuncName == "ServerExecuteInventoryItem")
 	{
 		auto Params = (AFortPlayerController_ServerExecuteInventoryItem_Params*)pParams;
@@ -39,31 +37,6 @@ void ProcessEventHook(UObject* pObject, UFunction* pFunction, void* pParams)
 		Pawn->CosmeticLoadout = PC->CosmeticLoadoutPC;
 		Pawn->OnRep_CosmeticLoadout();
 	}
-
-	//if (FuncName == "OnBuildingActorInitialized")
-	//{
-	//	auto Params = (ABuildingActor_OnBuildingActorInitialized_Params*)pParams;
-	//	auto BuildingActor = (ABuildingActor*)pObject;
-
-	//	
-
-	//	if (BuildingActor->GetFullName().contains("FloorLoot"))
-	//	{
-	//		auto BuildingContainer = (ABuildingContainer*)BuildingActor;
-
-	//		std::vector<FFortItemEntry> LootDrops = PickLootDrops(BuildingContainer->SearchLootTierGroup);
-
-	//		auto Location = BuildingContainer->K2_GetActorLocation();
-	//		Location.Z += 50;
-
-	//		if (LootDrops.size())
-	//		{
-	//			for (auto& LootDrop : LootDrops)
-	//				SpawnPickup(LootDrop.ItemDefinition, Location, LootDrop.Count, 0, EFortPickupSourceTypeFlag::FloorLoot);
-	//		}
-	//	}
-	//}
-
 
 	if (FuncName == "ServerLoadingScreenDropped")
 	{
